@@ -54,13 +54,25 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
 
 - **Framework**: Python + Streamlit
 - **Port**: 5000
-- **Workflow**: "Football Dashboard"
+- **Workflow**: "artifacts/football-dashboard: web"
 - **Data source**: TheStatsAPI (`https://api.thestatsapi.com/api`) — football data (teams, players, competitions, matches)
 - **API key**: stored as `STATS_API_KEY` secret; base URL as `STATS_API_URL` env var
-- **Pages**:
-  - Competitions & Teams: country breakdown, team explorer per competition
-  - Player Explorer: age/height/position/nationality visualizations
-  - Match Results: goal distribution, outcome analysis, match list
+- **Pre-filter**: Only curated major competitions shown (not all 12,000+ in the API)
+- **Competition categories** (sidebar filter):
+  - UEFA Club Competitions (Champions League, Europa League, Conference League, Women's CL)
+  - International National Teams (Nations League, Copa América, AFCON, CONCACAF)
+  - Continental Club Competitions (Libertadores, Sudamericana, CAF CL, CONCACAF CC)
+  - Top Domestic Leagues (Premier League, Bundesliga, Ligue 1, Serie A, 2. Bundesliga)
+- **Key competition IDs**:
+  - `comp_3498` UEFA Champions League, `comp_7739` UEFA Europa League, `comp_408698` Conference League
+  - `comp_574977` UEFA Nations League, `comp_5749` Copa América, `comp_1554` AFCON
+  - `comp_1376` CONCACAF Gold Cup, `comp_0499` CONMEBOL Libertadores, `comp_1615` Sudamericana
+  - `comp_08478` CAF Champions League, `comp_8649` CONCACAF Champions Cup
+  - `comp_3039` Premier League, `comp_4643` Bundesliga, `comp_0256` Ligue 1, `comp_5840` Serie A
+- **Sections**:
+  - Match Results: filter by competition & status, goal distribution charts, outcome pie chart, match list
+  - Teams: team nationalities chart, full team table per competition
+  - Players: age/height/position/nationality visualizations per team
 
 ## Packages
 

@@ -1,0 +1,35 @@
+mportError: `Import matplotlib` failed. Styler.background_gradient requires matplotlib. Use pip or conda to install the matplotlib package.
+Traceback:
+File "/home/runner/workspace/artifacts/football-dashboard/app.py", line 846, in <module>
+    st.dataframe(
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/metrics_util.py", line 563, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/elements/arrow.py", line 928, in dataframe
+    marshall_styler(proto.arrow_data, data, default_uuid)
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/elements/lib/pandas_styler_utils.py", line 65, in marshall_styler
+    styler._compute()  # type: ignore
+    ^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/io/formats/style_render.py", line 282, in _compute
+    r = func(self)(*args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/io/formats/style.py", line 1955, in _apply
+    result = data.apply(func, axis=0, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/frame.py", line 12423, in apply
+    return op.apply().__finalize__(self, method="apply")
+           ^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/apply.py", line 1015, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/apply.py", line 1167, in apply_standard
+    results, res_index = self.apply_series_generator()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/apply.py", line 1183, in apply_series_generator
+    results[i] = self.func(v, *self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/io/formats/style.py", line 4205, in _background_gradient
+    _matplotlib = import_optional_dependency(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/compat/_optional.py", line 161, in import_optional_dependency
+    raise ImportError(msg) from err

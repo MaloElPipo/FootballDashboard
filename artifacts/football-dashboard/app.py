@@ -218,10 +218,120 @@ def get_all_national_scheduled():
     return combined
 
 
-def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500):
+ELO_CODE_TO_NAME = {
+    "ES": "Spain", "AR": "Argentina", "FR": "France", "EN": "England", "BR": "Brazil",
+    "PT": "Portugal", "CO": "Colombia", "NL": "Netherlands", "EC": "Ecuador", "HR": "Croatia",
+    "DE": "Germany", "NO": "Norway", "JP": "Japan", "TR": "Turkey", "UY": "Uruguay",
+    "CH": "Switzerland", "SN": "Senegal", "DK": "Denmark", "BE": "Belgium", "MX": "Mexico",
+    "IT": "Italy", "PY": "Paraguay", "AT": "Austria", "MA": "Morocco", "CA": "Canada",
+    "AU": "Australia", "RU": "Russia", "RS": "Serbia", "SQ": "Albania", "UA": "Ukraine",
+    "IR": "Iran", "KR": "South Korea", "NG": "Nigeria", "GR": "Greece", "DZ": "Algeria",
+    "PA": "Panama", "PL": "Poland", "UZ": "Uzbekistan", "VE": "Venezuela", "CZ": "Czechia",
+    "US": "United States", "KO": "Kosovo", "SE": "Sweden", "CL": "Chile", "HU": "Hungary",
+    "WA": "Wales", "PE": "Peru", "SI": "Slovenia", "IE": "Republic of Ireland", "JO": "Jordan",
+    "EG": "Egypt", "CI": "Côte d'Ivoire", "SK": "Slovakia", "CD": "DR Congo", "GE": "Georgia",
+    "AL": "Armenia", "BO": "Bolivia", "TN": "Tunisia", "IL": "Israel", "RO": "Romania",
+    "CM": "Cameroon", "CR": "Costa Rica", "IQ": "Iraq", "EI": "Ireland", "ML": "Mali",
+    "BA": "Bosnia & Herzegovina", "NM": "North Macedonia", "NZ": "New Zealand",
+    "HN": "Honduras", "IS": "Iceland", "SA": "Saudi Arabia", "CV": "Cape Verde",
+    "AO": "Angola", "FI": "Finland", "AE": "United Arab Emirates", "JM": "Jamaica",
+    "HT": "Haiti", "BF": "Burkina Faso", "ZA": "South Africa", "GT": "Guatemala",
+    "BY": "Belarus", "GH": "Ghana", "SY": "Syria", "OM": "Oman", "BG": "Bulgaria",
+    "GN": "Guinea", "PS": "Palestine", "NS": "Northern Ireland", "ME": "Montenegro",
+    "CW": "Curaçao", "LU": "Luxembourg", "SR": "Suriname", "KZ": "Kazakhstan",
+    "BJ": "Benin", "QA": "Qatar", "KD": "Kyrgyzstan", "CN": "China", "GM": "Gambia",
+    "LY": "Libya", "BH": "Bahrain", "GA": "Gabon", "UG": "Uganda", "NE": "Niger",
+    "TT": "Trinidad & Tobago", "GQ": "Equatorial Guinea", "MG": "Madagascar",
+    "FO": "Faroe Islands", "AM": "Armenia", "TH": "Thailand", "KP": "North Korea",
+    "MZ": "Mozambique", "ZW": "Zimbabwe", "ZM": "Zambia", "KM": "Comoros",
+    "TG": "Togo", "KE": "Kenya", "VN": "Vietnam", "SD": "Sudan", "SL": "Sierra Leone",
+    "SV": "El Salvador", "AZ": "Azerbaijan", "EE": "Estonia", "RW": "Rwanda",
+    "LB": "Lebanon", "ID": "Indonesia", "KW": "Kuwait", "NI": "Nicaragua",
+    "TZ": "Tanzania", "MR": "Mauritania", "NA": "Namibia", "LV": "Latvia",
+    "CY": "Cyprus", "LR": "Liberia", "MY": "Malaysia", "GY": "Guyana", "LT": "Lithuania",
+    "KG": "Kyrgyzstan", "BI": "Burundi", "TJ": "Tajikistan", "ET": "Ethiopia",
+    "DO": "Dominican Republic", "BW": "Botswana", "MD": "Moldova", "GW": "Guinea-Bissau",
+    "MW": "Malawi", "CU": "Cuba", "CF": "Central African Republic", "MT": "Malta",
+    "TM": "Turkmenistan", "CG": "Congo", "LS": "Lesotho", "PH": "Philippines",
+    "YE": "Yemen", "VC": "Saint Vincent & the Grenadines", "IN": "India",
+    "SG": "Singapore", "FJ": "Fiji", "GD": "Grenada", "AD": "Andorra",
+    "TD": "Chad", "BZ": "Belize", "SM": "San Marino", "LI": "Liechtenstein",
+    "MC": "Monaco", "BB": "Barbados", "NP": "Nepal", "MN": "Mongolia",
+    "SS": "South Sudan", "TL": "Timor-Leste", "BT": "Bhutan", "BN": "Brunei",
+    "ZN": "Zanzibar", "NC": "New Caledonia", "GP": "Guadeloupe", "MQ": "Martinique",
+    "GF": "French Guiana", "RE": "Réunion", "MF": "Montserrat",
+    "KN": "Saint Kitts & Nevis", "AF": "Afghanistan", "LC": "Saint Lucia",
+    "GI": "Gibraltar", "MM": "Myanmar", "SO": "Somalia", "DJ": "Djibouti",
+    "BD": "Bangladesh", "SC": "Seychelles", "MV": "Maldives", "KH": "Cambodia",
+    "LK": "Sri Lanka", "PK": "Pakistan", "WS": "Samoa", "TO": "Tonga",
+    "TV": "Tuvalu", "KI": "Kiribati", "MH": "Marshall Islands", "PW": "Palau",
+    "AS": "American Samoa", "CK": "Cook Islands", "NU": "Niue", "PG": "Papua New Guinea",
+    "VU": "Vanuatu", "SB": "Solomon Islands", "ST": "São Tomé & Príncipe",
+}
+
+API_TO_ELO_NAME = {
+    "Czech Republic": "Czechia", "Korea Republic": "South Korea",
+    "Republic of Korea": "South Korea", "USA": "United States",
+    "Ivory Coast": "Côte d'Ivoire", "Bosnia and Herzegovina": "Bosnia & Herzegovina",
+    "Bosnia-Herzegovina": "Bosnia & Herzegovina", "DR Congo": "DR Congo",
+    "Democratic Republic of Congo": "DR Congo", "Congo DR": "DR Congo",
+    "Rep. of Ireland": "Republic of Ireland", "Trinidad and Tobago": "Trinidad & Tobago",
+    "Cote d'Ivoire": "Côte d'Ivoire", "North Macedonia": "North Macedonia",
+    "Republic of North Macedonia": "North Macedonia",
+    "Türkiye": "Turkey", "Korea DPR": "North Korea",
+    "Cape Verde Islands": "Cape Verde", "São Tomé and Príncipe": "São Tomé & Príncipe",
+    "Saint Kitts and Nevis": "Saint Kitts & Nevis",
+    "Saint Vincent and the Grenadines": "Saint Vincent & the Grenadines",
+    "Antigua and Barbuda": "Antigua & Barbuda",
+    "Trinidad & Tobago": "Trinidad & Tobago",
+    "Kyrgyz Republic": "Kyrgyzstan",
+}
+
+
+@st.cache_data(ttl=3600)
+def fetch_elorating_base():
+    """Fetch current ELO base ratings from EloRating.net World.tsv."""
+    try:
+        r = requests.get(
+            "https://www.eloratings.net/World.tsv",
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=15,
+        )
+        result = {}
+        for line in r.text.split("\n"):
+            parts = line.split("\t")
+            if len(parts) >= 4:
+                try:
+                    code = parts[2].strip()
+                    elo = int(parts[3])
+                    name = ELO_CODE_TO_NAME.get(code)
+                    if name:
+                        result[name] = elo
+                except Exception:
+                    pass
+        return result
+    except Exception:
+        return {}
+
+
+def resolve_team_elo_name(api_name, base_ratings):
+    """Map an API team name to its EloRating.net name."""
+    if api_name in base_ratings:
+        return api_name
+    mapped = API_TO_ELO_NAME.get(api_name)
+    if mapped and mapped in base_ratings:
+        return mapped
+    for elo_name in base_ratings:
+        if elo_name.lower() == api_name.lower():
+            return elo_name
+    return None
+
+
+def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500, base_ratings=None):
     """Compute ELO ratings from a list of finished match dicts. Returns (ratings_dict, history_list)."""
     ratings = {}
     history = []
+    median_base = round(sum(base_ratings.values()) / len(base_ratings)) if base_ratings else initial_rating
 
     sorted_matches = sorted(matches, key=lambda m: m.get("utc_date", ""))
 
@@ -238,9 +348,17 @@ def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500):
             continue
 
         if home not in ratings:
-            ratings[home] = initial_rating
+            if base_ratings:
+                elo_name = resolve_team_elo_name(home, base_ratings)
+                ratings[home] = base_ratings.get(elo_name, median_base) if elo_name else median_base
+            else:
+                ratings[home] = initial_rating
         if away not in ratings:
-            ratings[away] = initial_rating
+            if base_ratings:
+                elo_name = resolve_team_elo_name(away, base_ratings)
+                ratings[away] = base_ratings.get(elo_name, median_base) if elo_name else median_base
+            else:
+                ratings[away] = initial_rating
 
         ra = ratings[home] + home_advantage
         rb = ratings[away]
@@ -668,6 +786,11 @@ elif page == "🏅 Classement ELO":
         home_adv = st.slider("Avantage domicile (pts)", 0, 200, 100, help="Points ajoutés à l'équipe à domicile dans le calcul ELO")
         top_n = st.slider("Top N équipes à afficher", 5, 50, 20)
 
+    is_national_comp = (
+        selected_comp_name_elo == ALL_NATIONAL_OPTION
+        or comp_by_name.get(selected_comp_name_elo, {}).get("type") == "national"
+    )
+
     if selected_comp_name_elo == ALL_NATIONAL_OPTION:
         with st.spinner("Agrégation des matchs de toutes les compétitions nationales..."):
             all_finished = get_all_national_matches()
@@ -678,42 +801,82 @@ elif page == "🏅 Classement ELO":
             all_finished = get_all_matches_for_competition(selected_comp_id_elo)
         elo_label = selected_comp_name_elo
 
+    base_ratings = None
+    elorating_base = {}
+    if is_national_comp:
+        with st.spinner("Récupération des ratings de base depuis EloRating.net..."):
+            elorating_base = fetch_elorating_base()
+        base_ratings = elorating_base if elorating_base else None
+
     if not all_finished:
         st.warning("Aucun match terminé trouvé pour cette compétition.")
     else:
-        elo_ratings, elo_history = compute_elo(all_finished, k_base=k_factor, home_advantage=home_adv)
+        elo_ratings, elo_history = compute_elo(
+            all_finished, k_base=k_factor, home_advantage=home_adv, base_ratings=base_ratings
+        )
         n_matches = len(all_finished)
         n_teams = len(elo_ratings)
 
         with col_main:
-            m1, m2, m3 = st.columns(3)
+            m1, m2, m3, m4 = st.columns(4)
             m1.metric("Matchs analysés", n_matches)
             m2.metric("Équipes classées", n_teams)
             m3.metric("Meilleur rating", f"{max(elo_ratings.values()):.0f}" if elo_ratings else "—")
+            if base_ratings:
+                matched = sum(
+                    1 for t in elo_ratings
+                    if resolve_team_elo_name(t, base_ratings) is not None
+                )
+                m4.metric("Ancrées EloRating.net", f"{matched}/{n_teams}")
+
+        if base_ratings:
+            st.info(
+                f"📡 Base EloRating.net chargée ({len(elorating_base)} équipes). "
+                "Les ratings de départ sont ceux de EloRating.net, puis ajustés avec les matchs récents de l'API."
+            )
 
         st.markdown("---")
         tab_rank, tab_hist, tab_h2h = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête"])
 
+        ref_line = round(sum(base_ratings.values()) / len(base_ratings)) if base_ratings else 1500
+        ref_label = f"Médiane EloRating.net ({ref_line})" if base_ratings else "Base 1500"
+
         with tab_rank:
             sorted_teams = sorted(elo_ratings.items(), key=lambda x: x[1], reverse=True)
-            rank_df = pd.DataFrame(sorted_teams[:top_n], columns=["Équipe", "ELO"])
+            rank_df = pd.DataFrame(sorted_teams[:top_n], columns=["Équipe", "ELO ajusté"])
             rank_df.insert(0, "Rang", range(1, len(rank_df) + 1))
-            rank_df["ELO"] = rank_df["ELO"].round(0).astype(int)
-            rank_df["Écart vs base"] = rank_df["ELO"] - 1500
+            rank_df["ELO ajusté"] = rank_df["ELO ajusté"].round(0).astype(int)
+
+            if base_ratings:
+                def get_base(team_name):
+                    elo_name = resolve_team_elo_name(team_name, base_ratings)
+                    return base_ratings.get(elo_name, ref_line) if elo_name else ref_line
+
+                rank_df["Base EloRating.net"] = rank_df["Équipe"].apply(get_base)
+                rank_df["Variation"] = rank_df["ELO ajusté"] - rank_df["Base EloRating.net"]
+                rank_df["Variation"] = rank_df["Variation"].apply(lambda x: f"+{x}" if x > 0 else str(x))
+            else:
+                rank_df["Écart vs base"] = rank_df["ELO ajusté"] - 1500
 
             col_a, col_b = st.columns([1, 1])
             with col_a:
                 fig = px.bar(
-                    rank_df, x="ELO", y="Équipe", orientation="h",
-                    color="ELO", color_continuous_scale="RdYlGn",
-                    title=f"Top {top_n} — Rating ELO",
-                    labels={"ELO": "Rating ELO"},
+                    rank_df, x="ELO ajusté", y="Équipe", orientation="h",
+                    color="ELO ajusté", color_continuous_scale="RdYlGn",
+                    title=f"Top {top_n} — Rating ELO ajusté",
+                    labels={"ELO ajusté": "Rating ELO"},
                 )
                 fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
-                fig.add_vline(x=1500, line_dash="dash", line_color="gray", annotation_text="Base 1500")
+                fig.add_vline(x=ref_line, line_dash="dash", line_color="gray", annotation_text=ref_label)
                 st.plotly_chart(fig, width="stretch")
             with col_b:
-                st.dataframe(rank_df[["Rang", "Équipe", "ELO", "Écart vs base"]], width="stretch", hide_index=True)
+                if base_ratings:
+                    st.dataframe(
+                        rank_df[["Rang", "Équipe", "ELO ajusté", "Base EloRating.net", "Variation"]],
+                        width="stretch", hide_index=True
+                    )
+                else:
+                    st.dataframe(rank_df[["Rang", "Équipe", "ELO ajusté", "Écart vs base"]], width="stretch", hide_index=True)
 
         with tab_hist:
             if elo_history:
@@ -732,7 +895,7 @@ elif page == "🏅 Classement ELO":
                         labels={"date": "Date", "elo": "Rating ELO", "team": "Équipe"},
                         hover_data=["match"],
                     )
-                    fig.add_hline(y=1500, line_dash="dash", line_color="gray", annotation_text="Base 1500")
+                    fig.add_hline(y=ref_line, line_dash="dash", line_color="gray", annotation_text=ref_label)
                     st.plotly_chart(fig, width="stretch")
 
         with tab_h2h:
@@ -746,8 +909,8 @@ elif page == "🏅 Classement ELO":
                 team_b = st.selectbox("Équipe B", all_team_names_sorted, index=1, key="h2h_b")
 
             if team_a and team_b and team_a != team_b:
-                ra = elo_ratings.get(team_a, 1500)
-                rb = elo_ratings.get(team_b, 1500)
+                ra = elo_ratings.get(team_a, ref_line)
+                rb = elo_ratings.get(team_b, ref_line)
                 rank_a = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_a) + 1
                 rank_b = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_b) + 1
 
@@ -755,10 +918,21 @@ elif page == "🏅 Classement ELO":
                 ea = 1 / (1 + 10 ** ((rb - ra_home) / 400))
                 eb = 1 - ea
 
-                mc1, mc2, mc3 = st.columns(3)
-                mc1.metric(f"ELO {team_a}", f"{ra:.0f}", f"#{rank_a}")
-                mc2.metric(f"ELO {team_b}", f"{rb:.0f}", f"#{rank_b}")
-                mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
+                if base_ratings:
+                    base_a = base_ratings.get(resolve_team_elo_name(team_a, base_ratings), ref_line) if resolve_team_elo_name(team_a, base_ratings) else ref_line
+                    base_b = base_ratings.get(resolve_team_elo_name(team_b, base_ratings), ref_line) if resolve_team_elo_name(team_b, base_ratings) else ref_line
+                    delta_a = f"{ra - base_a:+.0f} vs base"
+                    delta_b = f"{rb - base_b:+.0f} vs base"
+                    mc1, mc2, mc3 = st.columns(3)
+                    mc1.metric(f"ELO ajusté {team_a}", f"{ra:.0f}", delta_a)
+                    mc2.metric(f"ELO ajusté {team_b}", f"{rb:.0f}", delta_b)
+                    mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
+                    st.caption(f"Base EloRating.net → {team_a}: **{base_a:.0f}** | {team_b}: **{base_b:.0f}**")
+                else:
+                    mc1, mc2, mc3 = st.columns(3)
+                    mc1.metric(f"ELO {team_a}", f"{ra:.0f}", f"#{rank_a}")
+                    mc2.metric(f"ELO {team_b}", f"{rb:.0f}", f"#{rank_b}")
+                    mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
 
                 st.markdown(f"**Si {team_a} joue à domicile contre {team_b} :**")
                 pc1, pc2, pc3 = st.columns(3)

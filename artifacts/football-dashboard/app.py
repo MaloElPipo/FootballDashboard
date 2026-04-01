@@ -122,6 +122,30 @@ def get_matches(competition_id=None, status=None, per_page=50, page=1):
     return data.get("data", []), data.get("meta", {})
 
 
+@st.cache_data(ttl=600)
+def get_all_teams_from_matches(competition_id):
+    """Extract unique teams by scanning all match pages for a competition."""
+    all_teams = {}
+    for page in range(1, 20):
+        params = {"competition_id": competition_id, "per_page": 50, "page": page}
+        try:
+            data = fetch("matches", params)
+        except Exception:
+            break
+        matches = data.get("data", [])
+        if not matches:
+            break
+        for m in matches:
+            for side in ("home_team", "away_team"):
+                t = m.get(side)
+                if t and isinstance(t, dict) and t.get("id"):
+                    all_teams[t["id"]] = t["name"]
+        meta = data.get("meta", {})
+        if meta.get("page", page) >= meta.get("total_pages", 1):
+            break
+    return sorted(all_teams.values())
+
+
 st.title("⚽ Football Analytics Dashboard")
 st.caption("International competitions & top leagues — powered by TheStatsAPI")
 
@@ -185,12 +209,12 @@ if page == "🗓️ Match Results":
     if selected_comp_id:
         comp_type = comp_by_name[selected_comp_name].get("type", "club")
 
-        with st.spinner(f"Chargement des équipes de {selected_comp_name}..."):
-            teams_for_filter, _ = get_teams(competition_id=selected_comp_id, per_page=100)
-
-        team_filter_options = ["Toutes les équipes"] + sorted([t["name"] for t in teams_for_filter])
         team_label = "Équipe nationale" if comp_type == "national" else "Club"
-        selected_team_filter = st.selectbox(f"Filtrer par {team_label}", team_filter_options)
+        with st.spinner(f"Chargement de toutes les équipes de {selected_comp_name}..."):
+            teams_from_matches = get_all_teams_from_matches(selected_comp_id)
+
+        team_filter_options = ["Toutes les équipes"] + teams_from_matches
+        selected_team_filter = st.selectbox(f"Filtrer par {team_label} ({len(teams_from_matches)} disponibles)", team_filter_options)
 
         with st.spinner(f"Chargement des matchs..."):
             matches, meta = get_matches(competition_id=selected_comp_id, status=status, per_page=50, page=page_num)

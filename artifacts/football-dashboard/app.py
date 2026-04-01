@@ -93,6 +93,27 @@ def fetch(endpoint, params=None):
     return resp.json()
 
 
+def fetch_raw(endpoint, params=None):
+    """Non-cached fetch for internal use in multi-page loops."""
+    url = f"{API_BASE}/football/{endpoint}"
+    resp = requests.get(url, headers=HEADERS, params=params or {}, timeout=20)
+    resp.raise_for_status()
+    return resp.json()
+
+
+@st.cache_data(ttl=86400)
+def fetch_competition_info(comp_id):
+    """Fetch competition metadata (current_season_id, etc.). Cached 24h."""
+    try:
+        url = f"{API_BASE}/football/competitions/{comp_id}"
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        if resp.status_code == 200:
+            return resp.json().get("data", {})
+    except Exception:
+        pass
+    return {}
+
+
 @st.cache_data(ttl=300)
 def get_teams(competition_id=None, per_page=50):
     params = {"per_page": per_page}
@@ -150,29 +171,77 @@ ALL_NATIONAL_IDS = [c["id"] for group, comps in COMPETITION_GROUPS.items() if gr
 ALL_NATIONAL_OPTION = "🌍 Toutes équipes nationales (toutes compétitions)"
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=86400)
 def get_all_matches_for_competition(competition_id):
-    """Fetch ALL finished matches for a competition across all pages (for ELO/prediction)."""
+    """Fetch ALL finished matches for a competition — current season + all discoverable historical seasons.
+    
+    Strategy:
+    1. Fetch with status=finished across all pages (gets everything the API returns without season filter).
+    2. Use the competition's current_season_id to discover older season IDs by decrementing,
+       fetching each historical season until we hit 5 consecutive empty seasons.
+    Cached for 24h since historical data never changes.
+    """
+    seen_ids = set()
     all_matches = []
-    for page in range(1, 60):
-        params = {"competition_id": competition_id, "per_page": 50, "page": page, "status": "finished"}
+
+    def _fetch_season(season_id=None):
+        """Fetch all finished matches for one season (or no season filter if None)."""
+        collected = []
+        for page in range(1, 500):
+            params = {
+                "competition_id": competition_id,
+                "per_page": 50,
+                "page": page,
+                "status": "finished",
+            }
+            if season_id:
+                params["season_id"] = season_id
+            try:
+                data = fetch_raw("matches", params)
+            except Exception:
+                break
+            matches = data.get("data", [])
+            if not matches:
+                break
+            for m in matches:
+                mid = m.get("id")
+                if mid and mid not in seen_ids:
+                    seen_ids.add(mid)
+                    all_matches.append(m)
+                    collected.append(m)
+            meta = data.get("meta", {})
+            if meta.get("page", page) >= meta.get("total_pages", 1):
+                break
+        return len(collected)
+
+    # Pass 1: fetch without season filter (catches all seasons API exposes by default)
+    _fetch_season(season_id=None)
+
+    # Pass 2: discover and fetch older seasons via sequential season IDs
+    comp_info = fetch_competition_info(competition_id)
+    current_season_id = comp_info.get("current_season_id", "")
+    if current_season_id and current_season_id.startswith("sn_"):
         try:
-            data = fetch("matches", params)
-        except Exception:
-            break
-        matches = data.get("data", [])
-        if not matches:
-            break
-        all_matches.extend(matches)
-        meta = data.get("meta", {})
-        if meta.get("page", page) >= meta.get("total_pages", 1):
-            break
+            current_num = int(current_season_id[3:])
+            consecutive_misses = 0
+            for delta in range(1, 200):
+                if consecutive_misses >= 5:
+                    break
+                old_season_id = f"sn_{current_num - delta}"
+                found = _fetch_season(season_id=old_season_id)
+                if found == 0:
+                    consecutive_misses += 1
+                else:
+                    consecutive_misses = 0
+        except (ValueError, Exception):
+            pass
+
     return all_matches
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=86400)
 def get_all_national_matches():
-    """Aggregate ALL finished matches from every national team competition."""
+    """Aggregate ALL finished matches from every national team competition. Cached 24h."""
     seen = set()
     combined = []
     for comp_id in ALL_NATIONAL_IDS:
@@ -184,14 +253,14 @@ def get_all_national_matches():
     return combined
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=900)
 def get_scheduled_matches_for_competition(competition_id):
     """Fetch upcoming scheduled matches for a competition."""
     all_matches = []
-    for page in range(1, 10):
+    for page in range(1, 20):
         params = {"competition_id": competition_id, "per_page": 50, "page": page, "status": "scheduled"}
         try:
-            data = fetch("matches", params)
+            data = fetch_raw("matches", params)
         except Exception:
             break
         matches = data.get("data", [])
@@ -204,7 +273,7 @@ def get_scheduled_matches_for_competition(competition_id):
     return all_matches
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=900)
 def get_all_national_scheduled():
     """Aggregate ALL upcoming matches from every national team competition."""
     seen = set()
@@ -817,6 +886,22 @@ elif page == "🏅 Classement ELO":
         n_matches = len(all_finished)
         n_teams = len(elo_ratings)
 
+        dates = sorted([m.get("utc_date", "")[:10] for m in all_finished if m.get("utc_date")])
+        oldest_date = dates[0] if dates else "—"
+        newest_date = dates[-1] if dates else "—"
+        if dates:
+            from datetime import date
+            try:
+                y_old = int(oldest_date[:4])
+                y_new = int(newest_date[:4])
+                n_years = y_new - y_old + 1
+                period_str = f"{oldest_date[:7]} → {newest_date[:7]}"
+            except Exception:
+                n_years = 0
+                period_str = "—"
+        else:
+            n_years, period_str = 0, "—"
+
         with col_main:
             m1, m2, m3, m4 = st.columns(4)
             m1.metric("Matchs analysés", n_matches)
@@ -828,12 +913,15 @@ elif page == "🏅 Classement ELO":
                     if resolve_team_elo_name(t, base_ratings) is not None
                 )
                 m4.metric("Ancrées EloRating.net", f"{matched}/{n_teams}")
+            else:
+                m4.metric("Période couverte", f"~{n_years} ans" if n_years else "—")
 
+        info_parts = [f"📅 Données du **{period_str}** ({n_matches} matchs)"]
         if base_ratings:
-            st.info(
-                f"📡 Base EloRating.net chargée ({len(elorating_base)} équipes). "
-                "Les ratings de départ sont ceux de EloRating.net, puis ajustés avec les matchs récents de l'API."
+            info_parts.append(
+                f"📡 Base EloRating.net ({len(elorating_base)} équipes) — ratings initiaux officiels, ajustés avec les résultats récents."
             )
+        st.info("  \n".join(info_parts))
 
         st.markdown("---")
         tab_rank, tab_hist, tab_h2h = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête"])

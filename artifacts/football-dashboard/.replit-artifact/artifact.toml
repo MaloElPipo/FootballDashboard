@@ -17,5 +17,8 @@ localPort = 5000
 [services.development]
 run = "cd /home/runner/workspace/artifacts/football-dashboard && streamlit run app.py --server.port 5000"
 
+[services.production]
+run = "cd /home/runner/workspace/artifacts/football-dashboard && streamlit run app.py --server.port 5000 --server.headless true --server.address 0.0.0.0 --server.enableCORS false --server.enableXsrfProtection false"
+
 [services.env]
 PORT = "5000"

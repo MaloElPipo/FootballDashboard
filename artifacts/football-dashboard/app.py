@@ -295,28 +295,34 @@ elif page == "🏟️ Teams":
 
 
 elif page == "👤 Players":
-    st.header("👤 Player Explorer")
+    st.header("👤 Effectifs & Profils Joueurs")
 
     col_left, col_right = st.columns([1, 3])
 
     with col_left:
-        st.subheader("Filter")
+        st.subheader("Filtres")
 
         comp_choices = [c["name"] for c in active_competitions]
-        selected_comp_name = st.selectbox("Competition (for team list)", comp_choices)
+        selected_comp_name = st.selectbox("Compétition", comp_choices)
         selected_comp_id = comp_by_name[selected_comp_name]["id"]
 
-        with st.spinner("Loading teams..."):
+        with st.spinner("Chargement des équipes..."):
             teams, _ = get_teams(competition_id=selected_comp_id, per_page=50)
 
-        team_options = {"All teams in competition": None}
+        team_options = {"Toutes les équipes": None}
         team_options.update({t["name"]: t["id"] for t in teams})
 
-        selected_team_name = st.selectbox("Select team", list(team_options.keys()))
+        selected_team_name = st.selectbox("Équipe", list(team_options.keys()))
         selected_team_id = team_options[selected_team_name]
+
+        pos_filter = st.multiselect(
+            "Filtrer par poste",
+            ["Goalkeeper", "Defender", "Midfielder", "Forward"],
+            default=[],
+        )
         page_num = st.number_input("Page", min_value=1, max_value=100, value=1)
 
-    with st.spinner("Loading players..."):
+    with st.spinner("Chargement des joueurs..."):
         players, meta = get_players(team_id=selected_team_id, per_page=50, page=page_num)
 
     if players:
@@ -325,54 +331,138 @@ elif page == "👤 Players":
         df["age"] = pd.to_numeric(df["age"], errors="coerce")
         df["height_cm"] = pd.to_numeric(df["height_cm"], errors="coerce").replace(0, pd.NA)
 
+        if "current_team" in df.columns:
+            df["team_name"] = df["current_team"].apply(lambda x: x.get("name","") if isinstance(x, dict) else "")
+            df["jersey"] = df["current_team"].apply(lambda x: x.get("jersey_number","") if isinstance(x, dict) else "")
+        else:
+            df["team_name"] = ""
+            df["jersey"] = ""
+
+        if pos_filter:
+            df = df[df["position_label"].isin(pos_filter)]
+
+        total = meta.get("total", len(df))
+        avg_age = df["age"].dropna().mean()
+        avg_height = df["height_cm"].dropna().mean()
+        n_nat = df["nationality"].nunique()
+
         with col_right:
-            st.metric("Players Found", meta.get("total", len(df)))
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric("Joueurs", total)
+            m2.metric("Âge moyen", f"{avg_age:.1f}" if pd.notna(avg_age) else "—")
+            m3.metric("Taille moy.", f"{avg_height:.0f} cm" if pd.notna(avg_height) else "—")
+            m4.metric("Nationalités", n_nat)
 
         st.markdown("---")
-        col1, col2, col3 = st.columns(3)
 
-        with col1:
-            pos_counts = df["position_label"].value_counts().reset_index()
-            pos_counts.columns = ["Position", "Count"]
-            fig = px.pie(pos_counts, names="Position", values="Count", title="By Position", hole=0.4)
-            st.plotly_chart(fig, width="stretch")
+        tab1, tab2, tab3 = st.tabs(["📊 Analyse de l'effectif", "🗂️ Effectif par poste", "📋 Liste complète"])
 
-        with col2:
-            age_df = df.dropna(subset=["age"])
-            if not age_df.empty:
-                fig = px.histogram(
-                    age_df, x="age", nbins=20, title="Age Distribution",
-                    color_discrete_sequence=["#3b82f6"],
-                )
+        with tab1:
+            col1, col2, col3 = st.columns(3)
+
+            with col1:
+                pos_counts = df["position_label"].value_counts().reset_index()
+                pos_counts.columns = ["Poste", "Joueurs"]
+                fig = px.pie(pos_counts, names="Poste", values="Joueurs", title="Répartition par poste", hole=0.4,
+                             color_discrete_map={"Goalkeeper":"#f59e0b","Defender":"#3b82f6","Midfielder":"#22c55e","Forward":"#ef4444"})
                 st.plotly_chart(fig, width="stretch")
 
-        with col3:
-            nat_counts = df["nationality"].value_counts().reset_index().head(10)
-            nat_counts.columns = ["Nationality", "Players"]
-            fig = px.bar(
-                nat_counts, x="Players", y="Nationality", orientation="h",
-                color="Players", color_continuous_scale="Purples", title="Top Nationalities",
-            )
-            fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
-            st.plotly_chart(fig, width="stretch")
+            with col2:
+                age_df = df.dropna(subset=["age"])
+                if not age_df.empty:
+                    fig = px.histogram(
+                        age_df, x="age", nbins=20, title="Distribution des âges",
+                        color_discrete_sequence=["#3b82f6"],
+                        labels={"age": "Âge", "count": "Joueurs"},
+                    )
+                    fig.update_layout(bargap=0.1)
+                    st.plotly_chart(fig, width="stretch")
 
-        height_df = df.dropna(subset=["height_cm", "age"])
-        if not height_df.empty and len(height_df) > 5:
-            st.markdown("---")
-            fig = px.scatter(
-                height_df, x="age", y="height_cm", color="position_label",
-                hover_data=["name", "nationality"],
-                labels={"age": "Age", "height_cm": "Height (cm)", "position_label": "Position"},
-                title="Height vs. Age by Position",
-            )
-            st.plotly_chart(fig, width="stretch")
+            with col3:
+                nat_counts = df["nationality"].value_counts().reset_index().head(10)
+                nat_counts.columns = ["Nationalité", "Joueurs"]
+                fig = px.bar(
+                    nat_counts, x="Joueurs", y="Nationalité", orientation="h",
+                    color="Joueurs", color_continuous_scale="Purples", title="Top nationalités",
+                )
+                fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
+                st.plotly_chart(fig, width="stretch")
 
-        st.markdown("---")
-        display_df = df[["name", "position_label", "age", "height_cm", "nationality"]].copy()
-        display_df.columns = ["Name", "Position", "Age", "Height (cm)", "Nationality"]
-        st.dataframe(display_df, width="stretch", hide_index=True)
+            col4, col5 = st.columns(2)
+
+            with col4:
+                height_df = df.dropna(subset=["height_cm", "position_label"])
+                if not height_df.empty:
+                    avg_by_pos = height_df.groupby("position_label")["height_cm"].mean().reset_index()
+                    avg_by_pos.columns = ["Poste", "Taille moy. (cm)"]
+                    fig = px.bar(avg_by_pos, x="Poste", y="Taille moy. (cm)",
+                                 color="Poste", title="Taille moyenne par poste",
+                                 color_discrete_map={"Goalkeeper":"#f59e0b","Defender":"#3b82f6","Midfielder":"#22c55e","Forward":"#ef4444"})
+                    fig.update_layout(showlegend=False)
+                    st.plotly_chart(fig, width="stretch")
+
+            with col5:
+                age_pos_df = df.dropna(subset=["age", "position_label"])
+                if not age_pos_df.empty:
+                    avg_age_pos = age_pos_df.groupby("position_label")["age"].mean().reset_index()
+                    avg_age_pos.columns = ["Poste", "Âge moyen"]
+                    fig = px.bar(avg_age_pos, x="Poste", y="Âge moyen",
+                                 color="Poste", title="Âge moyen par poste",
+                                 color_discrete_map={"Goalkeeper":"#f59e0b","Defender":"#3b82f6","Midfielder":"#22c55e","Forward":"#ef4444"})
+                    fig.update_layout(showlegend=False)
+                    st.plotly_chart(fig, width="stretch")
+
+            height_age_df = df.dropna(subset=["height_cm", "age"])
+            if not height_age_df.empty and len(height_age_df) > 5:
+                fig = px.scatter(
+                    height_age_df, x="age", y="height_cm", color="position_label",
+                    hover_data=["name", "nationality"],
+                    labels={"age": "Âge", "height_cm": "Taille (cm)", "position_label": "Poste"},
+                    title="Taille vs Âge par poste",
+                    color_discrete_map={"Goalkeeper":"#f59e0b","Defender":"#3b82f6","Midfielder":"#22c55e","Forward":"#ef4444"},
+                )
+                fig.update_layout(legend_title="Poste")
+                st.plotly_chart(fig, width="stretch")
+
+        with tab2:
+            pos_order = ["Goalkeeper", "Defender", "Midfielder", "Forward", "Unknown"]
+            pos_colors = {"Goalkeeper": "🟡", "Defender": "🔵", "Midfielder": "🟢", "Forward": "🔴", "Unknown": "⚪"}
+
+            for pos in pos_order:
+                pos_df = df[df["position_label"] == pos]
+                if pos_df.empty:
+                    continue
+                st.markdown(f"### {pos_colors.get(pos,'⚪')} {pos}s ({len(pos_df)})")
+                cols = st.columns(min(len(pos_df), 4))
+                for i, (_, player) in enumerate(pos_df.iterrows()):
+                    with cols[i % 4]:
+                        jersey = f"#{player['jersey']}" if player.get('jersey') else ""
+                        age = f"{int(player['age'])} ans" if pd.notna(player.get('age')) else "—"
+                        height = f"{int(player['height_cm'])} cm" if pd.notna(player.get('height_cm')) else "—"
+                        st.markdown(
+                            f"""<div style='border:1px solid #e2e8f0;border-radius:8px;padding:10px;margin:4px 0;background:#f8fafc'>
+                            <b>{player['name']}</b> <span style='color:#94a3b8'>{jersey}</span><br>
+                            <span style='font-size:0.85em;color:#64748b'>{player.get('nationality','—')} · {age} · {height}</span>
+                            </div>""",
+                            unsafe_allow_html=True,
+                        )
+                st.markdown("")
+
+        with tab3:
+            cols_show = ["name", "jersey", "position_label", "age", "height_cm", "nationality"]
+            if "team_name" in df.columns and df["team_name"].any():
+                cols_show.append("team_name")
+            cols_show = [c for c in cols_show if c in df.columns]
+            display_df = df[cols_show].copy()
+            display_df.columns = [
+                {"name": "Nom", "jersey": "Maillot", "position_label": "Poste",
+                 "age": "Âge", "height_cm": "Taille (cm)", "nationality": "Nationalité",
+                 "team_name": "Équipe"}.get(c, c)
+                for c in cols_show
+            ]
+            st.dataframe(display_df, width="stretch", hide_index=True)
     else:
-        st.warning("No players found.")
+        st.info("Aucun joueur trouvé. Sélectionne une équipe dans les filtres.")
 
 elif page == "🤖 Assistant IA":
     st.header("🤖 Assistant Football IA")

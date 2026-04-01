@@ -146,6 +146,10 @@ def get_all_teams_from_matches(competition_id):
     return sorted(all_teams.values())
 
 
+ALL_NATIONAL_IDS = [c["id"] for group, comps in COMPETITION_GROUPS.items() if group in NATIONAL_GROUPS for c in comps]
+ALL_NATIONAL_OPTION = "🌍 Toutes équipes nationales (toutes compétitions)"
+
+
 @st.cache_data(ttl=3600)
 def get_all_matches_for_competition(competition_id):
     """Fetch ALL finished matches for a competition across all pages (for ELO/prediction)."""
@@ -167,6 +171,20 @@ def get_all_matches_for_competition(competition_id):
 
 
 @st.cache_data(ttl=3600)
+def get_all_national_matches():
+    """Aggregate ALL finished matches from every national team competition."""
+    seen = set()
+    combined = []
+    for comp_id in ALL_NATIONAL_IDS:
+        for m in get_all_matches_for_competition(comp_id):
+            mid = m.get("id")
+            if mid not in seen:
+                seen.add(mid)
+                combined.append(m)
+    return combined
+
+
+@st.cache_data(ttl=3600)
 def get_scheduled_matches_for_competition(competition_id):
     """Fetch upcoming scheduled matches for a competition."""
     all_matches = []
@@ -184,6 +202,20 @@ def get_scheduled_matches_for_competition(competition_id):
         if meta.get("page", page) >= meta.get("total_pages", 1):
             break
     return all_matches
+
+
+@st.cache_data(ttl=3600)
+def get_all_national_scheduled():
+    """Aggregate ALL upcoming matches from every national team competition."""
+    seen = set()
+    combined = []
+    for comp_id in ALL_NATIONAL_IDS:
+        for m in get_scheduled_matches_for_competition(comp_id):
+            mid = m.get("id")
+            if mid not in seen:
+                seen.add(mid)
+                combined.append(m)
+    return combined
 
 
 def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500):
@@ -627,9 +659,8 @@ elif page == "🏅 Classement ELO":
     st.header("🏅 Classement ELO")
     st.caption("Ratings cumulatifs calculés sur l'ensemble des matchs terminés — basé sur l'algorithme ELO avec avantage domicile et multiplicateur de goal difference.")
 
-    comp_choices = [c["name"] for c in active_competitions]
-    selected_comp_name_elo = st.selectbox("Compétition pour le calcul ELO", comp_choices, key="elo_comp")
-    selected_comp_id_elo = comp_by_name[selected_comp_name_elo]["id"]
+    comp_choices_elo = [ALL_NATIONAL_OPTION] + [c["name"] for c in active_competitions]
+    selected_comp_name_elo = st.selectbox("Compétition pour le calcul ELO", comp_choices_elo, key="elo_comp")
 
     col_settings, col_main = st.columns([1, 3])
     with col_settings:
@@ -637,8 +668,15 @@ elif page == "🏅 Classement ELO":
         home_adv = st.slider("Avantage domicile (pts)", 0, 200, 100, help="Points ajoutés à l'équipe à domicile dans le calcul ELO")
         top_n = st.slider("Top N équipes à afficher", 5, 50, 20)
 
-    with st.spinner(f"Calcul ELO sur tous les matchs de {selected_comp_name_elo}..."):
-        all_finished = get_all_matches_for_competition(selected_comp_id_elo)
+    if selected_comp_name_elo == ALL_NATIONAL_OPTION:
+        with st.spinner("Agrégation des matchs de toutes les compétitions nationales..."):
+            all_finished = get_all_national_matches()
+        elo_label = "Toutes équipes nationales"
+    else:
+        selected_comp_id_elo = comp_by_name[selected_comp_name_elo]["id"]
+        with st.spinner(f"Calcul ELO sur tous les matchs de {selected_comp_name_elo}..."):
+            all_finished = get_all_matches_for_competition(selected_comp_id_elo)
+        elo_label = selected_comp_name_elo
 
     if not all_finished:
         st.warning("Aucun match terminé trouvé pour cette compétition.")
@@ -751,13 +789,19 @@ elif page == "🎯 Prédiction de Matchs":
     st.header("🎯 Prédiction de Matchs")
     st.caption("Système de prédiction basé sur la supériorité de buts des 6 derniers matchs — formules de conversion probabilité tirées du document Football-Data © 2003.")
 
-    comp_choices = [c["name"] for c in active_competitions]
-    selected_comp_name_pred = st.selectbox("Compétition", comp_choices, key="pred_comp")
-    selected_comp_id_pred = comp_by_name[selected_comp_name_pred]["id"]
+    comp_choices_pred = [ALL_NATIONAL_OPTION] + [c["name"] for c in active_competitions]
+    selected_comp_name_pred = st.selectbox("Compétition", comp_choices_pred, key="pred_comp")
 
-    with st.spinner("Chargement de l'historique des matchs..."):
-        all_finished_pred = get_all_matches_for_competition(selected_comp_id_pred)
-        scheduled_matches = get_scheduled_matches_for_competition(selected_comp_id_pred)
+    if selected_comp_name_pred == ALL_NATIONAL_OPTION:
+        with st.spinner("Agrégation de toutes les compétitions nationales..."):
+            all_finished_pred = get_all_national_matches()
+            scheduled_matches = get_all_national_scheduled()
+        st.info(f"Pool global : {len(all_finished_pred)} matchs de toutes les compétitions nationales")
+    else:
+        selected_comp_id_pred = comp_by_name[selected_comp_name_pred]["id"]
+        with st.spinner("Chargement de l'historique des matchs..."):
+            all_finished_pred = get_all_matches_for_competition(selected_comp_id_pred)
+            scheduled_matches = get_scheduled_matches_for_competition(selected_comp_id_pred)
 
     tab_upcoming, tab_custom = st.tabs(["📅 Matchs à venir", "🔧 Prédiction personnalisée"])
 
@@ -876,12 +920,17 @@ elif page == "💰 Comparaison de Cotes":
     st.header("💰 Comparaison de Cotes")
     st.caption("Compare les cotes équitables calculées par le modèle de supériorité de buts avec les cotes de ton bookmaker. Une cote bookmaker supérieure à la cote équitable indique un pari potentiellement à valeur.")
 
-    comp_choices = [c["name"] for c in active_competitions]
-    selected_comp_name_cotes = st.selectbox("Compétition", comp_choices, key="cotes_comp")
-    selected_comp_id_cotes = comp_by_name[selected_comp_name_cotes]["id"]
+    comp_choices_cotes = [ALL_NATIONAL_OPTION] + [c["name"] for c in active_competitions]
+    selected_comp_name_cotes = st.selectbox("Compétition", comp_choices_cotes, key="cotes_comp")
 
-    with st.spinner("Chargement des données..."):
-        all_finished_cotes = get_all_matches_for_competition(selected_comp_id_cotes)
+    if selected_comp_name_cotes == ALL_NATIONAL_OPTION:
+        with st.spinner("Agrégation de toutes les compétitions nationales..."):
+            all_finished_cotes = get_all_national_matches()
+        st.info(f"Pool global : {len(all_finished_cotes)} matchs de toutes les compétitions nationales")
+    else:
+        selected_comp_id_cotes = comp_by_name[selected_comp_name_cotes]["id"]
+        with st.spinner("Chargement des données..."):
+            all_finished_cotes = get_all_matches_for_competition(selected_comp_id_cotes)
 
     all_cotes_teams = sorted(set(
         (m.get("home_team") or {}).get("name", "")

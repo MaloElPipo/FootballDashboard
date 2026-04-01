@@ -26,42 +26,45 @@ st.set_page_config(
 )
 
 COMPETITION_GROUPS = {
-    "UEFA Club Competitions": [
-        {"id": "comp_3498",   "name": "UEFA Champions League",    "region": "Europe"},
-        {"id": "comp_7739",   "name": "UEFA Europa League",       "region": "Europe"},
-        {"id": "comp_408698", "name": "UEFA Conference League",   "region": "Europe"},
-        {"id": "comp_6694",   "name": "UEFA Women's Champions League", "region": "Europe"},
+    "🏆 Clubs — UEFA": [
+        {"id": "comp_3498",   "name": "UEFA Champions League",         "region": "Europe", "type": "club"},
+        {"id": "comp_7739",   "name": "UEFA Europa League",            "region": "Europe", "type": "club"},
+        {"id": "comp_408698", "name": "UEFA Conference League",        "region": "Europe", "type": "club"},
+        {"id": "comp_6694",   "name": "UEFA Women's Champions League", "region": "Europe", "type": "club"},
     ],
-    "International National Teams": [
-        {"id": "comp_574977", "name": "UEFA Nations League",              "region": "Europe"},
-        {"id": "comp_5749",   "name": "Copa América",                     "region": "South America"},
-        {"id": "comp_1554",   "name": "Africa Cup of Nations",            "region": "Africa"},
-        {"id": "comp_1376",   "name": "CONCACAF Gold Cup",                "region": "N&C America"},
-        {"id": "comp_193547", "name": "CONCACAF Nations League",          "region": "N&C America"},
-        {"id": "comp_29967",  "name": "International Friendly Games",     "region": "World"},
+    "🏆 Clubs — Continentaux": [
+        {"id": "comp_0499",   "name": "CONMEBOL Libertadores",         "region": "South America", "type": "club"},
+        {"id": "comp_1615",   "name": "CONMEBOL Sudamericana",         "region": "South America", "type": "club"},
+        {"id": "comp_08478",  "name": "CAF Champions League",          "region": "Africa",        "type": "club"},
+        {"id": "comp_8649",   "name": "CONCACAF Champions Cup",        "region": "N&C America",   "type": "club"},
     ],
-    "World Cup Qualifiers": [
-        {"id": "comp_2954",   "name": "WC Qual. — UEFA (Europe)",         "region": "Europe"},
-        {"id": "comp_8973",   "name": "WC Qual. — AFC (Asia)",            "region": "Asia"},
-        {"id": "comp_4682",   "name": "WC Qual. — CONMEBOL (S. America)", "region": "South America"},
-        {"id": "comp_5720",   "name": "WC Qual. — CAF (Africa)",          "region": "Africa"},
-        {"id": "comp_7363",   "name": "WC Qual. — OFC (Oceania)",         "region": "Oceania"},
-        {"id": "comp_0836",   "name": "WC Qual. — CONCACAF (N&C America)","region": "N&C America"},
+    "🏆 Clubs — Ligues Domestiques": [
+        {"id": "comp_3039",   "name": "Premier League",                "region": "Angleterre",    "type": "club"},
+        {"id": "comp_4643",   "name": "Bundesliga",                    "region": "Allemagne",     "type": "club"},
+        {"id": "comp_0256",   "name": "Ligue 1",                       "region": "France",        "type": "club"},
+        {"id": "comp_5840",   "name": "Serie A",                       "region": "Italie",        "type": "club"},
+        {"id": "comp_0406",   "name": "2. Bundesliga",                 "region": "Allemagne",     "type": "club"},
     ],
-    "Continental Club Competitions": [
-        {"id": "comp_0499",   "name": "CONMEBOL Libertadores",    "region": "South America"},
-        {"id": "comp_1615",   "name": "CONMEBOL Sudamericana",    "region": "South America"},
-        {"id": "comp_08478",  "name": "CAF Champions League",     "region": "Africa"},
-        {"id": "comp_8649",   "name": "CONCACAF Champions Cup",   "region": "N&C America"},
+    "🌍 Équipes Nationales — Tournois": [
+        {"id": "comp_574977", "name": "UEFA Nations League",           "region": "Europe",        "type": "national"},
+        {"id": "comp_5749",   "name": "Copa América",                  "region": "Amér. du Sud",  "type": "national"},
+        {"id": "comp_1554",   "name": "Africa Cup of Nations",         "region": "Afrique",       "type": "national"},
+        {"id": "comp_1376",   "name": "CONCACAF Gold Cup",             "region": "N&C Amér.",     "type": "national"},
+        {"id": "comp_193547", "name": "CONCACAF Nations League",       "region": "N&C Amér.",     "type": "national"},
+        {"id": "comp_29967",  "name": "Matchs Amicaux Internationaux", "region": "Monde",         "type": "national"},
     ],
-    "Top Domestic Leagues": [
-        {"id": "comp_3039",   "name": "Premier League",           "region": "England"},
-        {"id": "comp_4643",   "name": "Bundesliga",               "region": "Germany"},
-        {"id": "comp_0256",   "name": "Ligue 1",                  "region": "France"},
-        {"id": "comp_5840",   "name": "Serie A",                  "region": "Italy"},
-        {"id": "comp_0406",   "name": "2. Bundesliga",            "region": "Germany"},
+    "🌍 Équipes Nationales — Qualif. Coupe du Monde": [
+        {"id": "comp_2954",   "name": "Qualif. CM — UEFA (Europe)",    "region": "Europe",        "type": "national"},
+        {"id": "comp_8973",   "name": "Qualif. CM — AFC (Asie)",       "region": "Asie",          "type": "national"},
+        {"id": "comp_4682",   "name": "Qualif. CM — CONMEBOL",         "region": "Amér. du Sud",  "type": "national"},
+        {"id": "comp_5720",   "name": "Qualif. CM — CAF (Afrique)",    "region": "Afrique",       "type": "national"},
+        {"id": "comp_7363",   "name": "Qualif. CM — OFC (Océanie)",    "region": "Océanie",       "type": "national"},
+        {"id": "comp_0836",   "name": "Qualif. CM — CONCACAF",         "region": "N&C Amér.",     "type": "national"},
     ],
 }
+
+CLUB_GROUPS = {k for k, v in COMPETITION_GROUPS.items() if v and v[0].get("type") == "club"}
+NATIONAL_GROUPS = {k for k, v in COMPETITION_GROUPS.items() if v and v[0].get("type") == "national"}
 
 ALL_CURATED = [c for comps in COMPETITION_GROUPS.values() for c in comps]
 
@@ -126,19 +129,28 @@ st.sidebar.header("Filters")
 
 page = st.sidebar.radio(
     "Section",
-    ["🗓️ Match Results", "🏟️ Teams", "👤 Players", "🤖 Assistant IA"],
+    ["🗓️ Match Results", "👤 Players", "🤖 Assistant IA"],
     label_visibility="visible",
 )
 
 active_competitions = ALL_CURATED
-selected_group = "All International & Top Leagues"
+selected_group = "Toutes les compétitions"
 
 if page != "🤖 Assistant IA":
     st.sidebar.markdown("---")
-    st.sidebar.subheader("Competition Category")
-    group_options = ["All International & Top Leagues"] + list(COMPETITION_GROUPS.keys())
-    selected_group = st.sidebar.radio("Competition Category", group_options, label_visibility="collapsed")
-    if selected_group == "All International & Top Leagues":
+    st.sidebar.subheader("Catégorie")
+
+    club_options = [k for k in COMPETITION_GROUPS if k in CLUB_GROUPS]
+    national_options = [k for k in COMPETITION_GROUPS if k in NATIONAL_GROUPS]
+    group_options = ["Toutes les compétitions"] + club_options + national_options
+
+    selected_group = st.sidebar.radio(
+        "Catégorie de compétition",
+        group_options,
+        label_visibility="collapsed",
+    )
+
+    if selected_group == "Toutes les compétitions":
         active_competitions = ALL_CURATED
     else:
         active_competitions = COMPETITION_GROUPS[selected_group]
@@ -150,28 +162,37 @@ st.sidebar.markdown("---")
 st.sidebar.caption("Data refreshes every 5 minutes.")
 
 if page == "🗓️ Match Results":
-    st.header("🗓️ Match Results")
+    st.header("🗓️ Résultats de Matchs")
 
     col1, col2, col3 = st.columns([2, 1, 1])
 
     with col1:
-        comp_choices = ["All selected competitions"] + [c["name"] for c in active_competitions]
-        selected_comp_name = st.selectbox("Competition", comp_choices)
+        comp_choices = ["— Sélectionner une compétition —"] + [c["name"] for c in active_competitions]
+        selected_comp_name = st.selectbox("Compétition", comp_choices)
 
     with col2:
-        status_filter = st.selectbox("Status", ["All", "finished", "scheduled", "in_progress"])
+        status_filter = st.selectbox("Statut", ["Tous", "finished", "scheduled", "in_progress"])
 
     with col3:
         page_num = st.number_input("Page", min_value=1, max_value=500, value=1)
 
     selected_comp_id = None
-    if selected_comp_name != "All selected competitions":
+    if selected_comp_name != "— Sélectionner une compétition —":
         selected_comp_id = comp_by_name[selected_comp_name]["id"]
 
-    status = None if status_filter == "All" else status_filter
+    status = None if status_filter == "Tous" else status_filter
 
     if selected_comp_id:
-        with st.spinner(f"Loading matches for {selected_comp_name}..."):
+        comp_type = comp_by_name[selected_comp_name].get("type", "club")
+
+        with st.spinner(f"Chargement des équipes de {selected_comp_name}..."):
+            teams_for_filter, _ = get_teams(competition_id=selected_comp_id, per_page=100)
+
+        team_filter_options = ["Toutes les équipes"] + sorted([t["name"] for t in teams_for_filter])
+        team_label = "Équipe nationale" if comp_type == "national" else "Club"
+        selected_team_filter = st.selectbox(f"Filtrer par {team_label}", team_filter_options)
+
+        with st.spinner(f"Chargement des matchs..."):
             matches, meta = get_matches(competition_id=selected_comp_id, status=status, per_page=50, page=page_num)
 
         if matches:
@@ -183,52 +204,74 @@ if page == "🗓️ Match Results":
             df["total_goals"] = df["home_score"] + df["away_score"]
             df["date"] = pd.to_datetime(df["utc_date"]).dt.date
 
+            if selected_team_filter != "Toutes les équipes":
+                df = df[(df["home_team_name"] == selected_team_filter) | (df["away_team_name"] == selected_team_filter)]
+
             c1, c2, c3, c4 = st.columns(4)
-            c1.metric("Total Matches", meta.get("total", len(df)))
-            c2.metric("Shown", len(df))
-            if status == "finished":
-                c3.metric("Avg Goals/Match", f"{df['total_goals'].mean():.1f}")
-                c4.metric("High-scoring (4+ goals)", int((df["total_goals"] >= 4).sum()))
+            c1.metric("Total matchs", meta.get("total", len(df)))
+            c2.metric("Affichés", len(df))
+            if status == "finished" and not df.empty:
+                c3.metric("Buts moy./match", f"{df['total_goals'].mean():.1f}")
+                c4.metric("≥ 4 buts", int((df["total_goals"] >= 4).sum()))
+
+            if selected_team_filter != "Toutes les équipes":
+                fin = df[df.apply(lambda r: r.get("status") == "finished" or True, axis=1)]
+                wins = int(((fin["home_team_name"] == selected_team_filter) & (fin["home_score"] > fin["away_score"])).sum()
+                           + ((fin["away_team_name"] == selected_team_filter) & (fin["away_score"] > fin["home_score"])).sum())
+                draws = int(((fin["home_score"] == fin["away_score"]) & ((fin["home_team_name"] == selected_team_filter) | (fin["away_team_name"] == selected_team_filter))).sum())
+                losses = len(fin) - wins - draws
+                goals_for = int(((fin["home_team_name"] == selected_team_filter) * fin["home_score"]).sum()
+                                + ((fin["away_team_name"] == selected_team_filter) * fin["away_score"]).sum())
+                goals_against = int(((fin["home_team_name"] == selected_team_filter) * fin["away_score"]).sum()
+                                    + ((fin["away_team_name"] == selected_team_filter) * fin["home_score"]).sum())
+
+                st.markdown(f"### 📊 Bilan de **{selected_team_filter}**")
+                s1, s2, s3, s4, s5 = st.columns(5)
+                s1.metric("Victoires", wins)
+                s2.metric("Nuls", draws)
+                s3.metric("Défaites", losses)
+                s4.metric("Buts marqués", goals_for)
+                s5.metric("Buts encaissés", goals_against)
 
             st.markdown("---")
 
             if status == "finished" and not df.empty:
-                tab1, tab2 = st.tabs(["📊 Analysis", "📋 Match List"])
+                tab1, tab2 = st.tabs(["📊 Analyse", "📋 Liste des matchs"])
 
                 with tab1:
                     col_a, col_b = st.columns(2)
                     with col_a:
                         goals_dist = df["total_goals"].value_counts().sort_index().reset_index()
-                        goals_dist.columns = ["Total Goals", "Matches"]
+                        goals_dist.columns = ["Buts", "Matchs"]
                         fig = px.bar(
-                            goals_dist, x="Total Goals", y="Matches",
-                            color="Matches", color_continuous_scale="Reds",
-                            title="Goals per Match Distribution",
+                            goals_dist, x="Buts", y="Matchs",
+                            color="Matchs", color_continuous_scale="Reds",
+                            title="Distribution des buts par match",
                         )
                         fig.update_layout(showlegend=False)
                         st.plotly_chart(fig, width="stretch")
 
                     with col_b:
                         df["result"] = df.apply(
-                            lambda r: "Home Win" if r["home_score"] > r["away_score"]
-                            else ("Away Win" if r["away_score"] > r["home_score"] else "Draw"),
+                            lambda r: "Victoire domicile" if r["home_score"] > r["away_score"]
+                            else ("Victoire extérieur" if r["away_score"] > r["home_score"] else "Nul"),
                             axis=1,
                         )
                         result_counts = df["result"].value_counts().reset_index()
-                        result_counts.columns = ["Result", "Count"]
+                        result_counts.columns = ["Résultat", "Matchs"]
                         fig = px.pie(
-                            result_counts, names="Result", values="Count",
-                            title="Match Outcomes", hole=0.4,
-                            color_discrete_map={"Home Win": "#22c55e", "Away Win": "#ef4444", "Draw": "#f59e0b"},
+                            result_counts, names="Résultat", values="Matchs",
+                            title="Répartition des résultats", hole=0.4,
+                            color_discrete_map={"Victoire domicile": "#22c55e", "Victoire extérieur": "#ef4444", "Nul": "#f59e0b"},
                         )
                         st.plotly_chart(fig, width="stretch")
 
                     goals_by_day = df.groupby("date")["total_goals"].mean().reset_index()
-                    goals_by_day.columns = ["Date", "Avg Goals"]
+                    goals_by_day.columns = ["Date", "Buts moy."]
                     if len(goals_by_day) > 1:
                         fig = px.line(
-                            goals_by_day, x="Date", y="Avg Goals",
-                            title="Average Goals per Match over Time", markers=True,
+                            goals_by_day, x="Date", y="Buts moy.",
+                            title="Buts moyens par match dans le temps", markers=True,
                         )
                         st.plotly_chart(fig, width="stretch")
 
@@ -237,61 +280,12 @@ if page == "🗓️ Match Results":
             else:
                 _display(df)
         else:
-            st.info("No matches found for the selected filters.")
+            st.info("Aucun match trouvé pour ces filtres.")
     else:
-        st.info("Please select a specific competition from the dropdown above to browse matches.")
-        st.markdown("### Curated Competitions in This Group")
-        rows = []
-        for c in active_competitions:
-            rows.append({"Competition": c["name"], "Region": c["region"]})
+        st.info("Sélectionne une compétition ci-dessus pour afficher les matchs.")
+        st.markdown("### Compétitions disponibles dans cette catégorie")
+        rows = [{"Compétition": c["name"], "Type": "🏆 Club" if c.get("type") == "club" else "🌍 Équipe Nationale", "Région": c["region"]} for c in active_competitions]
         st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
-
-
-elif page == "🏟️ Teams":
-    st.header("🏟️ Teams")
-
-    comp_choices = [c["name"] for c in active_competitions]
-    selected_comp_name = st.selectbox("Select a competition to explore its teams", comp_choices)
-    selected_comp_id = comp_by_name[selected_comp_name]["id"]
-
-    with st.spinner(f"Loading teams for {selected_comp_name}..."):
-        teams, meta = get_teams(competition_id=selected_comp_id, per_page=50)
-
-    if teams:
-        teams_df = pd.DataFrame(teams)
-        st.write(f"**{meta.get('total', len(teams))} teams** in {selected_comp_name}")
-
-        country_team_counts = teams_df["country"].value_counts().reset_index()
-        country_team_counts.columns = ["Country", "Teams"]
-
-        if len(country_team_counts) > 1:
-            col1, col2 = st.columns(2)
-            with col1:
-                fig = px.bar(
-                    country_team_counts.head(20),
-                    x="Teams", y="Country", orientation="h",
-                    color="Teams", color_continuous_scale="Greens",
-                    title="Teams by Nation",
-                )
-                fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
-                st.plotly_chart(fig, width="stretch")
-            with col2:
-                fig = px.pie(
-                    country_team_counts.head(10),
-                    names="Country", values="Teams",
-                    title="Top 10 Nations (by team count)", hole=0.4,
-                )
-                st.plotly_chart(fig, width="stretch")
-
-        st.markdown("---")
-        st.subheader("All Teams")
-        cols_available = [c for c in ["name", "short_name", "country"] if c in teams_df.columns]
-        st.dataframe(
-            teams_df[cols_available].rename(columns={"name": "Team", "short_name": "Short Name", "country": "Country"}),
-            width="stretch", hide_index=True,
-        )
-    else:
-        st.info("No team data available for this competition.")
 
 
 elif page == "👤 Players":

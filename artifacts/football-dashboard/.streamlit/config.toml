@@ -3,3 +3,10 @@ headless = true
 address = "0.0.0.0"
 enableCORS = false
 enableXsrfProtection = false
+port = 5000
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

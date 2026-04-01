@@ -48,6 +48,20 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Football Analytics Dashboard
+
+A Streamlit-based data visualization app located at `artifacts/football-dashboard/`.
+
+- **Framework**: Python + Streamlit
+- **Port**: 5000
+- **Workflow**: "Football Dashboard"
+- **Data source**: TheStatsAPI (`https://api.thestatsapi.com/api`) — football data (teams, players, competitions, matches)
+- **API key**: stored as `STATS_API_KEY` secret; base URL as `STATS_API_URL` env var
+- **Pages**:
+  - Competitions & Teams: country breakdown, team explorer per competition
+  - Player Explorer: age/height/position/nationality visualizations
+  - Match Results: goal distribution, outcome analysis, match list
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)

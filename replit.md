@@ -60,7 +60,8 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
 - **Pre-filter**: Only curated major competitions shown (not all 12,000+ in the API)
 - **Competition categories** (sidebar filter):
   - UEFA Club Competitions (Champions League, Europa League, Conference League, Women's CL)
-  - International National Teams (Nations League, Copa América, AFCON, CONCACAF)
+  - International National Teams (Nations League, Copa América, AFCON, CONCACAF, International Friendlies)
+  - World Cup Qualifiers (UEFA/AFC/CONMEBOL/CAF/OFC/CONCACAF)
   - Continental Club Competitions (Libertadores, Sudamericana, CAF CL, CONCACAF CC)
   - Top Domestic Leagues (Premier League, Bundesliga, Ligue 1, Serie A, 2. Bundesliga)
 - **Key competition IDs**:
@@ -69,6 +70,8 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - `comp_1376` CONCACAF Gold Cup, `comp_0499` CONMEBOL Libertadores, `comp_1615` Sudamericana
   - `comp_08478` CAF Champions League, `comp_8649` CONCACAF Champions Cup
   - `comp_3039` Premier League, `comp_4643` Bundesliga, `comp_0256` Ligue 1, `comp_5840` Serie A
+  - `comp_29967` International Friendly Games (World)
+  - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
 - **Sections**:
   - Match Results: filter by competition & status, goal distribution charts, outcome pie chart, match list
   - Teams: team nationalities chart, full team table per competition

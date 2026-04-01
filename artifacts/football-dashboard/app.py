@@ -1017,8 +1017,19 @@ elif page == "🎯 Prédiction de Matchs":
 
             if pred_rows:
                 pred_df = pd.DataFrame(pred_rows)
+
+                def color_pct(val):
+                    if not isinstance(val, (int, float)):
+                        return ""
+                    if val >= 50:
+                        intensity = int(80 + (val - 50) / 50 * 120)
+                        return f"background-color: rgb(50,{intensity},50); color: white"
+                    else:
+                        intensity = int(80 + (50 - val) / 50 * 120)
+                        return f"background-color: rgb({intensity},50,50); color: white"
+
                 st.dataframe(
-                    pred_df.style.background_gradient(subset=["% Victoire dom.", "% Victoire ext."], cmap="RdYlGn"),
+                    pred_df.style.applymap(color_pct, subset=["% Victoire dom.", "% Victoire ext."]),
                     width="stretch", hide_index=True,
                 )
             else:

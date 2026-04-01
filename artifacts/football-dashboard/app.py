@@ -146,6 +146,147 @@ def get_all_teams_from_matches(competition_id):
     return sorted(all_teams.values())
 
 
+@st.cache_data(ttl=3600)
+def get_all_matches_for_competition(competition_id):
+    """Fetch ALL finished matches for a competition across all pages (for ELO/prediction)."""
+    all_matches = []
+    for page in range(1, 60):
+        params = {"competition_id": competition_id, "per_page": 50, "page": page, "status": "finished"}
+        try:
+            data = fetch("matches", params)
+        except Exception:
+            break
+        matches = data.get("data", [])
+        if not matches:
+            break
+        all_matches.extend(matches)
+        meta = data.get("meta", {})
+        if meta.get("page", page) >= meta.get("total_pages", 1):
+            break
+    return all_matches
+
+
+@st.cache_data(ttl=3600)
+def get_scheduled_matches_for_competition(competition_id):
+    """Fetch upcoming scheduled matches for a competition."""
+    all_matches = []
+    for page in range(1, 10):
+        params = {"competition_id": competition_id, "per_page": 50, "page": page, "status": "scheduled"}
+        try:
+            data = fetch("matches", params)
+        except Exception:
+            break
+        matches = data.get("data", [])
+        if not matches:
+            break
+        all_matches.extend(matches)
+        meta = data.get("meta", {})
+        if meta.get("page", page) >= meta.get("total_pages", 1):
+            break
+    return all_matches
+
+
+def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500):
+    """Compute ELO ratings from a list of finished match dicts. Returns (ratings_dict, history_list)."""
+    ratings = {}
+    history = []
+
+    sorted_matches = sorted(matches, key=lambda m: m.get("utc_date", ""))
+
+    for match in sorted_matches:
+        home_t = match.get("home_team") or {}
+        away_t = match.get("away_team") or {}
+        score = match.get("score") or {}
+        home = home_t.get("name", "") if isinstance(home_t, dict) else ""
+        away = away_t.get("name", "") if isinstance(away_t, dict) else ""
+        hs = score.get("home") if isinstance(score, dict) else None
+        as_ = score.get("away") if isinstance(score, dict) else None
+
+        if not home or not away or hs is None or as_ is None:
+            continue
+
+        if home not in ratings:
+            ratings[home] = initial_rating
+        if away not in ratings:
+            ratings[away] = initial_rating
+
+        ra = ratings[home] + home_advantage
+        rb = ratings[away]
+        ea = 1 / (1 + 10 ** ((rb - ra) / 400))
+
+        if hs > as_:
+            sa, sb = 1, 0
+        elif hs < as_:
+            sa, sb = 0, 1
+        else:
+            sa, sb = 0.5, 0.5
+
+        gd = abs(int(hs) - int(as_))
+        gd_mult = 1 if gd <= 1 else (1.5 if gd == 2 else (11 + gd) / 8)
+
+        delta = k_base * gd_mult * (sa - ea)
+        ratings[home] = round(ratings[home] + delta, 1)
+        ratings[away] = round(ratings[away] - delta, 1)
+
+        date_str = match.get("utc_date", "")[:10]
+        history.append({"date": date_str, "team": home, "elo": ratings[home],
+                         "match": f"{home} {int(hs)}-{int(as_)} {away}"})
+        history.append({"date": date_str, "team": away, "elo": ratings[away],
+                         "match": f"{home} {int(hs)}-{int(as_)} {away}"})
+
+    return ratings, history
+
+
+def goals_supremacy_rating(team, all_matches, n=6):
+    """Calculate goals supremacy rating for a team over their last n matches."""
+    team_matches = [
+        m for m in all_matches
+        if (isinstance(m.get("home_team"), dict) and m["home_team"].get("name") == team)
+        or (isinstance(m.get("away_team"), dict) and m["away_team"].get("name") == team)
+    ]
+    team_matches = sorted(team_matches, key=lambda m: m.get("utc_date", ""), reverse=True)[:n]
+
+    if not team_matches:
+        return None, 0, 0
+
+    scored = 0
+    conceded = 0
+    for m in team_matches:
+        score = m.get("score") or {}
+        hs = score.get("home", 0) or 0
+        as_ = score.get("away", 0) or 0
+        home_name = (m.get("home_team") or {}).get("name", "")
+        if home_name == team:
+            scored += hs
+            conceded += as_
+        else:
+            scored += as_
+            conceded += hs
+
+    rating = scored - conceded
+    return rating, scored, conceded
+
+
+def supremacy_to_probs(match_rating):
+    """Convert goals supremacy match rating to result probabilities (from PDF formulas)."""
+    x = match_rating
+    p_home = 1.56 * x + 46.47
+    p_away = 0.03 * x ** 2 - 1.27 * x + 23.65
+    p_draw = -0.03 * x ** 2 - 0.29 * x + 29.48
+    p_home = max(1, min(95, p_home))
+    p_away = max(1, min(95, p_away))
+    p_draw = max(1, min(95, p_draw))
+    total = p_home + p_draw + p_away
+    return round(p_home / total * 100, 1), round(p_draw / total * 100, 1), round(p_away / total * 100, 1)
+
+
+def fair_odds(prob_pct):
+    """Convert probability percentage to decimal fair odds."""
+    if prob_pct <= 0:
+        return None
+    return round(100 / prob_pct, 2)
+
+
 st.title("⚽ Football Analytics Dashboard")
 st.caption("International competitions & top leagues — powered by TheStatsAPI")
 
@@ -153,7 +294,7 @@ st.sidebar.header("Filters")
 
 page = st.sidebar.radio(
     "Section",
-    ["🗓️ Match Results", "👤 Players", "🤖 Assistant IA"],
+    ["🗓️ Match Results", "👤 Players", "🏅 Classement ELO", "🎯 Prédiction de Matchs", "💰 Comparaison de Cotes", "🤖 Assistant IA"],
     label_visibility="visible",
 )
 
@@ -481,6 +622,369 @@ elif page == "👤 Players":
             st.dataframe(display_df, width="stretch", hide_index=True)
     else:
         st.info("Aucun joueur trouvé. Sélectionne une équipe dans les filtres.")
+
+elif page == "🏅 Classement ELO":
+    st.header("🏅 Classement ELO")
+    st.caption("Ratings cumulatifs calculés sur l'ensemble des matchs terminés — basé sur l'algorithme ELO avec avantage domicile et multiplicateur de goal difference.")
+
+    comp_choices = [c["name"] for c in active_competitions]
+    selected_comp_name_elo = st.selectbox("Compétition pour le calcul ELO", comp_choices, key="elo_comp")
+    selected_comp_id_elo = comp_by_name[selected_comp_name_elo]["id"]
+
+    col_settings, col_main = st.columns([1, 3])
+    with col_settings:
+        k_factor = st.slider("Facteur K (sensibilité)", 10, 60, 32, help="K élevé = ratings plus volatils, K faible = plus stables")
+        home_adv = st.slider("Avantage domicile (pts)", 0, 200, 100, help="Points ajoutés à l'équipe à domicile dans le calcul ELO")
+        top_n = st.slider("Top N équipes à afficher", 5, 50, 20)
+
+    with st.spinner(f"Calcul ELO sur tous les matchs de {selected_comp_name_elo}..."):
+        all_finished = get_all_matches_for_competition(selected_comp_id_elo)
+
+    if not all_finished:
+        st.warning("Aucun match terminé trouvé pour cette compétition.")
+    else:
+        elo_ratings, elo_history = compute_elo(all_finished, k_base=k_factor, home_advantage=home_adv)
+        n_matches = len(all_finished)
+        n_teams = len(elo_ratings)
+
+        with col_main:
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Matchs analysés", n_matches)
+            m2.metric("Équipes classées", n_teams)
+            m3.metric("Meilleur rating", f"{max(elo_ratings.values()):.0f}" if elo_ratings else "—")
+
+        st.markdown("---")
+        tab_rank, tab_hist, tab_h2h = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête"])
+
+        with tab_rank:
+            sorted_teams = sorted(elo_ratings.items(), key=lambda x: x[1], reverse=True)
+            rank_df = pd.DataFrame(sorted_teams[:top_n], columns=["Équipe", "ELO"])
+            rank_df.insert(0, "Rang", range(1, len(rank_df) + 1))
+            rank_df["ELO"] = rank_df["ELO"].round(0).astype(int)
+            rank_df["Écart vs base"] = rank_df["ELO"] - 1500
+
+            col_a, col_b = st.columns([1, 1])
+            with col_a:
+                fig = px.bar(
+                    rank_df, x="ELO", y="Équipe", orientation="h",
+                    color="ELO", color_continuous_scale="RdYlGn",
+                    title=f"Top {top_n} — Rating ELO",
+                    labels={"ELO": "Rating ELO"},
+                )
+                fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
+                fig.add_vline(x=1500, line_dash="dash", line_color="gray", annotation_text="Base 1500")
+                st.plotly_chart(fig, width="stretch")
+            with col_b:
+                st.dataframe(rank_df[["Rang", "Équipe", "ELO", "Écart vs base"]], width="stretch", hide_index=True)
+
+        with tab_hist:
+            if elo_history:
+                hist_df = pd.DataFrame(elo_history)
+                hist_df["date"] = pd.to_datetime(hist_df["date"])
+                all_team_names = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
+                default_teams = all_team_names[:5]
+                selected_teams_hist = st.multiselect(
+                    "Équipes à afficher", all_team_names, default=default_teams, key="elo_hist_teams"
+                )
+                if selected_teams_hist:
+                    hist_filtered = hist_df[hist_df["team"].isin(selected_teams_hist)]
+                    fig = px.line(
+                        hist_filtered, x="date", y="elo", color="team",
+                        title="Évolution du rating ELO dans le temps",
+                        labels={"date": "Date", "elo": "Rating ELO", "team": "Équipe"},
+                        hover_data=["match"],
+                    )
+                    fig.add_hline(y=1500, line_dash="dash", line_color="gray", annotation_text="Base 1500")
+                    st.plotly_chart(fig, width="stretch")
+
+        with tab_h2h:
+            st.markdown("#### Comparaison Tête-à-tête")
+            all_team_names_sorted = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
+            c1, c2 = st.columns(2)
+            with c1:
+                team_a = st.selectbox("Équipe A", all_team_names_sorted, key="h2h_a")
+            with c2:
+                default_b = all_team_names_sorted[1] if len(all_team_names_sorted) > 1 else all_team_names_sorted[0]
+                team_b = st.selectbox("Équipe B", all_team_names_sorted, index=1, key="h2h_b")
+
+            if team_a and team_b and team_a != team_b:
+                ra = elo_ratings.get(team_a, 1500)
+                rb = elo_ratings.get(team_b, 1500)
+                rank_a = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_a) + 1
+                rank_b = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_b) + 1
+
+                ra_home = ra + home_adv
+                ea = 1 / (1 + 10 ** ((rb - ra_home) / 400))
+                eb = 1 - ea
+
+                mc1, mc2, mc3 = st.columns(3)
+                mc1.metric(f"ELO {team_a}", f"{ra:.0f}", f"#{rank_a}")
+                mc2.metric(f"ELO {team_b}", f"{rb:.0f}", f"#{rank_b}")
+                mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
+
+                st.markdown(f"**Si {team_a} joue à domicile contre {team_b} :**")
+                pc1, pc2, pc3 = st.columns(3)
+                pc1.metric(f"Victoire {team_a}", f"{ea*100:.1f}%", f"Cote équitable: {fair_odds(ea*100)}")
+                pc2.metric("Nul (approx.)", "≈ ?", "Non calculé par l'ELO seul")
+                pc3.metric(f"Victoire {team_b}", f"{eb*100:.1f}%", f"Cote équitable: {fair_odds(eb*100)}")
+
+                h2h_matches = [
+                    m for m in all_finished
+                    if (isinstance(m.get("home_team"), dict) and isinstance(m.get("away_team"), dict))
+                    and ((m["home_team"].get("name") == team_a and m["away_team"].get("name") == team_b)
+                         or (m["home_team"].get("name") == team_b and m["away_team"].get("name") == team_a))
+                ]
+                if h2h_matches:
+                    st.markdown(f"**Historique direct ({len(h2h_matches)} matchs) :**")
+                    h2h_df = pd.DataFrame([{
+                        "Date": m.get("utc_date", "")[:10],
+                        "Domicile": m["home_team"]["name"],
+                        "Score": f"{(m.get('score') or {}).get('home', '?')} - {(m.get('score') or {}).get('away', '?')}",
+                        "Extérieur": m["away_team"]["name"],
+                    } for m in sorted(h2h_matches, key=lambda x: x.get("utc_date", ""), reverse=True)])
+                    st.dataframe(h2h_df, width="stretch", hide_index=True)
+                else:
+                    st.info("Aucun match direct entre ces deux équipes dans les données disponibles.")
+
+
+elif page == "🎯 Prédiction de Matchs":
+    st.header("🎯 Prédiction de Matchs")
+    st.caption("Système de prédiction basé sur la supériorité de buts des 6 derniers matchs — formules de conversion probabilité tirées du document Football-Data © 2003.")
+
+    comp_choices = [c["name"] for c in active_competitions]
+    selected_comp_name_pred = st.selectbox("Compétition", comp_choices, key="pred_comp")
+    selected_comp_id_pred = comp_by_name[selected_comp_name_pred]["id"]
+
+    with st.spinner("Chargement de l'historique des matchs..."):
+        all_finished_pred = get_all_matches_for_competition(selected_comp_id_pred)
+        scheduled_matches = get_scheduled_matches_for_competition(selected_comp_id_pred)
+
+    tab_upcoming, tab_custom = st.tabs(["📅 Matchs à venir", "🔧 Prédiction personnalisée"])
+
+    with tab_upcoming:
+        if not scheduled_matches:
+            st.info("Aucun match à venir trouvé. Tu peux utiliser la prédiction personnalisée ci-dessous.")
+        else:
+            st.markdown(f"**{len(scheduled_matches)} matchs à venir** — prédictions basées sur les 6 derniers matchs joués")
+            pred_rows = []
+            for m in sorted(scheduled_matches, key=lambda x: x.get("utc_date", ""))[:30]:
+                home = (m.get("home_team") or {}).get("name", "")
+                away = (m.get("away_team") or {}).get("name", "")
+                date = m.get("utc_date", "")[:10]
+                if not home or not away:
+                    continue
+
+                h_rat, h_sc, h_cc = goals_supremacy_rating(home, all_finished_pred)
+                a_rat, a_sc, a_cc = goals_supremacy_rating(away, all_finished_pred)
+
+                if h_rat is None or a_rat is None:
+                    continue
+
+                match_rating = h_rat - a_rat
+                ph, pd_, pa = supremacy_to_probs(match_rating)
+                pred_rows.append({
+                    "Date": date,
+                    "Domicile": home,
+                    "Extérieur": away,
+                    "Rating dom.": h_rat,
+                    "Rating ext.": a_rat,
+                    "Match rating": round(match_rating, 1),
+                    "% Victoire dom.": ph,
+                    "% Nul": pd_,
+                    "% Victoire ext.": pa,
+                    "Cote dom.": fair_odds(ph),
+                    "Cote nul": fair_odds(pd_),
+                    "Cote ext.": fair_odds(pa),
+                })
+
+            if pred_rows:
+                pred_df = pd.DataFrame(pred_rows)
+                st.dataframe(
+                    pred_df.style.background_gradient(subset=["% Victoire dom.", "% Victoire ext."], cmap="RdYlGn"),
+                    width="stretch", hide_index=True,
+                )
+            else:
+                st.info("Pas assez de données pour calculer les prédictions (6 matchs min. requis par équipe).")
+
+    with tab_custom:
+        st.markdown("#### Prédiction pour un match spécifique")
+        all_pred_teams = sorted(set(
+            (m.get("home_team") or {}).get("name", "")
+            for m in all_finished_pred
+            if (m.get("home_team") or {}).get("name")
+        ) | set(
+            (m.get("away_team") or {}).get("name", "")
+            for m in all_finished_pred
+            if (m.get("away_team") or {}).get("name")
+        ))
+
+        if len(all_pred_teams) < 2:
+            st.info("Pas assez de données pour cette compétition.")
+        else:
+            c1, c2 = st.columns(2)
+            with c1:
+                home_team_pred = st.selectbox("Équipe Domicile", all_pred_teams, key="pred_home")
+            with c2:
+                away_team_pred = st.selectbox("Équipe Extérieur", all_pred_teams, index=min(1, len(all_pred_teams)-1), key="pred_away")
+
+            n_matches_pred = st.slider("Nombre de matchs récents à analyser", 3, 10, 6, key="pred_n")
+
+            if home_team_pred != away_team_pred:
+                h_rat, h_sc, h_cc = goals_supremacy_rating(home_team_pred, all_finished_pred, n=n_matches_pred)
+                a_rat, a_sc, a_cc = goals_supremacy_rating(away_team_pred, all_finished_pred, n=n_matches_pred)
+
+                if h_rat is not None and a_rat is not None:
+                    match_rating = h_rat - a_rat
+                    ph, pd_, pa = supremacy_to_probs(match_rating)
+
+                    st.markdown("---")
+                    st.markdown(f"### {home_team_pred} vs {away_team_pred}")
+
+                    col_stats, col_probs = st.columns(2)
+                    with col_stats:
+                        st.markdown("**Forme récente (supériorité de buts)**")
+                        st.markdown(f"- **{home_team_pred}** : {h_sc} buts pour / {h_cc} contre → rating **{h_rat:+d}**")
+                        st.markdown(f"- **{away_team_pred}** : {a_sc} buts pour / {a_cc} contre → rating **{a_rat:+d}**")
+                        st.markdown(f"- **Match rating** : {h_rat:+d} − ({a_rat:+d}) = **{match_rating:+.1f}**")
+
+                    with col_probs:
+                        st.markdown("**Probabilités prédites**")
+                        p1, p2, p3 = st.columns(3)
+                        p1.metric(f"Victoire {home_team_pred}", f"{ph}%", f"Cote: {fair_odds(ph)}")
+                        p2.metric("Nul", f"{pd_}%", f"Cote: {fair_odds(pd_)}")
+                        p3.metric(f"Victoire {away_team_pred}", f"{pa}%", f"Cote: {fair_odds(pa)}")
+
+                    fig = px.bar(
+                        pd.DataFrame({"Résultat": [f"Victoire {home_team_pred}", "Nul", f"Victoire {away_team_pred}"],
+                                      "Probabilité (%)": [ph, pd_, pa]}),
+                        x="Résultat", y="Probabilité (%)",
+                        color="Résultat",
+                        color_discrete_map={
+                            f"Victoire {home_team_pred}": "#22c55e",
+                            "Nul": "#f59e0b",
+                            f"Victoire {away_team_pred}": "#ef4444",
+                        },
+                        title="Distribution des probabilités",
+                    )
+                    fig.update_layout(showlegend=False)
+                    st.plotly_chart(fig, width="stretch")
+                else:
+                    st.warning("Pas assez de matchs joués pour calculer les ratings de ces équipes.")
+
+
+elif page == "💰 Comparaison de Cotes":
+    st.header("💰 Comparaison de Cotes")
+    st.caption("Compare les cotes équitables calculées par le modèle de supériorité de buts avec les cotes de ton bookmaker. Une cote bookmaker supérieure à la cote équitable indique un pari potentiellement à valeur.")
+
+    comp_choices = [c["name"] for c in active_competitions]
+    selected_comp_name_cotes = st.selectbox("Compétition", comp_choices, key="cotes_comp")
+    selected_comp_id_cotes = comp_by_name[selected_comp_name_cotes]["id"]
+
+    with st.spinner("Chargement des données..."):
+        all_finished_cotes = get_all_matches_for_competition(selected_comp_id_cotes)
+
+    all_cotes_teams = sorted(set(
+        (m.get("home_team") or {}).get("name", "")
+        for m in all_finished_cotes
+        if (m.get("home_team") or {}).get("name")
+    ) | set(
+        (m.get("away_team") or {}).get("name", "")
+        for m in all_finished_cotes
+        if (m.get("away_team") or {}).get("name")
+    ))
+
+    if len(all_cotes_teams) < 2:
+        st.info("Pas assez de données pour cette compétition.")
+    else:
+        c1, c2 = st.columns(2)
+        with c1:
+            home_cotes = st.selectbox("Équipe Domicile", all_cotes_teams, key="cotes_home")
+        with c2:
+            away_cotes = st.selectbox("Équipe Extérieur", all_cotes_teams, index=min(1, len(all_cotes_teams)-1), key="cotes_away")
+
+        n_cotes = st.slider("Matchs récents à analyser", 3, 10, 6, key="cotes_n")
+
+        if home_cotes != away_cotes:
+            h_rat, h_sc, h_cc = goals_supremacy_rating(home_cotes, all_finished_cotes, n=n_cotes)
+            a_rat, a_sc, a_cc = goals_supremacy_rating(away_cotes, all_finished_cotes, n=n_cotes)
+
+            if h_rat is not None and a_rat is not None:
+                match_rating = h_rat - a_rat
+                ph, pd_, pa = supremacy_to_probs(match_rating)
+                fo_home = fair_odds(ph)
+                fo_draw = fair_odds(pd_)
+                fo_away = fair_odds(pa)
+
+                st.markdown("---")
+                st.markdown(f"### {home_cotes} vs {away_cotes}")
+                st.markdown(f"Match rating : **{match_rating:+.1f}** (dom. {h_rat:+d} vs ext. {a_rat:+d})")
+
+                st.markdown("#### Cotes équitables calculées par le modèle")
+                eq1, eq2, eq3 = st.columns(3)
+                eq1.metric(f"Victoire {home_cotes}", f"{ph}%", f"Cote équitable : **{fo_home}**")
+                eq2.metric("Nul", f"{pd_}%", f"Cote équitable : **{fo_draw}**")
+                eq3.metric(f"Victoire {away_cotes}", f"{pa}%", f"Cote équitable : **{fo_away}**")
+
+                st.markdown("---")
+                st.markdown("#### Saisie des cotes bookmaker")
+                st.caption("Entre les cotes décimales de ton bookmaker (ex: 2.10, 3.20, 3.80)")
+                b1, b2, b3 = st.columns(3)
+                with b1:
+                    bk_home = st.number_input(f"Cote {home_cotes}", min_value=1.01, max_value=100.0,
+                                               value=float(fo_home) if fo_home else 2.0, step=0.05, format="%.2f", key="bk_home")
+                with b2:
+                    bk_draw = st.number_input("Cote Nul", min_value=1.01, max_value=100.0,
+                                               value=float(fo_draw) if fo_draw else 3.0, step=0.05, format="%.2f", key="bk_draw")
+                with b3:
+                    bk_away = st.number_input(f"Cote {away_cotes}", min_value=1.01, max_value=100.0,
+                                               value=float(fo_away) if fo_away else 4.0, step=0.05, format="%.2f", key="bk_away")
+
+                st.markdown("---")
+                st.markdown("#### Analyse de valeur")
+
+                bk_implied_home = round(100 / bk_home, 1)
+                bk_implied_draw = round(100 / bk_draw, 1)
+                bk_implied_away = round(100 / bk_away, 1)
+                overround = round(bk_implied_home + bk_implied_draw + bk_implied_away - 100, 1)
+
+                def value_analysis(result_label, model_prob, bk_odd, bk_implied):
+                    edge = round(model_prob - bk_implied, 1)
+                    is_value = bk_odd > fair_odds(model_prob) if fair_odds(model_prob) else False
+                    status = "✅ Valeur !" if is_value else "❌ Pas de valeur"
+                    return {
+                        "Résultat": result_label,
+                        "Prob. modèle": f"{model_prob}%",
+                        "Prob. implicite bookmaker": f"{bk_implied}%",
+                        "Cote bookmaker": bk_odd,
+                        "Cote équitable": fair_odds(model_prob),
+                        "Avantage modèle": f"{edge:+.1f}%",
+                        "Valeur ?": status,
+                    }
+
+                analysis_data = [
+                    value_analysis(f"Victoire {home_cotes}", ph, bk_home, bk_implied_home),
+                    value_analysis("Nul", pd_, bk_draw, bk_implied_draw),
+                    value_analysis(f"Victoire {away_cotes}", pa, bk_away, bk_implied_away),
+                ]
+                analysis_df = pd.DataFrame(analysis_data)
+                st.dataframe(analysis_df, width="stretch", hide_index=True)
+
+                st.markdown(f"**Overround bookmaker :** {overround:+.1f}% (marge prélevée par le bookmaker)")
+
+                fig = px.bar(
+                    pd.DataFrame({
+                        "Résultat": [f"Vic. {home_cotes}", "Nul", f"Vic. {away_cotes}"],
+                        "Modèle (%)": [ph, pd_, pa],
+                        "Bookmaker (%)": [bk_implied_home, bk_implied_draw, bk_implied_away],
+                    }).melt(id_vars="Résultat", var_name="Source", value_name="Probabilité (%)"),
+                    x="Résultat", y="Probabilité (%)", color="Source", barmode="group",
+                    title="Probabilités : modèle vs bookmaker",
+                    color_discrete_map={"Modèle (%)": "#3b82f6", "Bookmaker (%)": "#f59e0b"},
+                )
+                st.plotly_chart(fig, width="stretch")
+            else:
+                st.warning("Pas assez de données pour calculer les ratings.")
+
 
 elif page == "🤖 Assistant IA":
     st.header("🤖 Assistant Football IA")

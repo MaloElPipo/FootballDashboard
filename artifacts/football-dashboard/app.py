@@ -3,10 +3,20 @@ import requests
 import pandas as pd
 import plotly.express as px
 import os
+import anthropic
 
 API_BASE = os.environ.get("STATS_API_URL", "https://api.thestatsapi.com/api")
 API_KEY = os.environ.get("STATS_API_KEY", "")
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
+
+ANTHROPIC_BASE_URL = os.environ.get("AI_INTEGRATIONS_ANTHROPIC_BASE_URL", "")
+ANTHROPIC_API_KEY = os.environ.get("AI_INTEGRATIONS_ANTHROPIC_API_KEY", "")
+
+def get_claude_client():
+    return anthropic.Anthropic(
+        api_key=ANTHROPIC_API_KEY,
+        base_url=ANTHROPIC_BASE_URL if ANTHROPIC_BASE_URL else None,
+    )
 
 st.set_page_config(
     page_title="Football Analytics Dashboard",
@@ -116,20 +126,22 @@ st.sidebar.header("Filters")
 
 page = st.sidebar.radio(
     "Section",
-    ["🗓️ Match Results", "🏟️ Teams", "👤 Players"],
+    ["🗓️ Match Results", "🏟️ Teams", "👤 Players", "🤖 Assistant IA"],
     label_visibility="visible",
 )
 
-st.sidebar.markdown("---")
-st.sidebar.subheader("Competition Category")
+active_competitions = ALL_CURATED
+selected_group = "All International & Top Leagues"
 
-group_options = ["All International & Top Leagues"] + list(COMPETITION_GROUPS.keys())
-selected_group = st.sidebar.radio("Competition Category", group_options, label_visibility="collapsed")
-
-if selected_group == "All International & Top Leagues":
-    active_competitions = ALL_CURATED
-else:
-    active_competitions = COMPETITION_GROUPS[selected_group]
+if page != "🤖 Assistant IA":
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Competition Category")
+    group_options = ["All International & Top Leagues"] + list(COMPETITION_GROUPS.keys())
+    selected_group = st.sidebar.radio("Competition Category", group_options, label_visibility="collapsed")
+    if selected_group == "All International & Top Leagues":
+        active_competitions = ALL_CURATED
+    else:
+        active_competitions = COMPETITION_GROUPS[selected_group]
 
 comp_by_name = {c["name"]: c for c in active_competitions}
 comp_by_id = {c["id"]: c for c in active_competitions}
@@ -361,3 +373,88 @@ elif page == "👤 Players":
         st.dataframe(display_df, width="stretch", hide_index=True)
     else:
         st.warning("No players found.")
+
+elif page == "🤖 Assistant IA":
+    st.header("🤖 Assistant Football IA")
+    st.caption("Posez vos questions sur le football, les stats, les équipes ou les compétitions. Alimenté par Claude (Anthropic).")
+
+    SYSTEM_PROMPT = """Tu es un expert en football et en analyse sportive. 
+Tu connais les compétitions internationales (Ligue des Champions, Europa League, Copa América, Coupe du Monde, qualifications, etc.), 
+les ligues domestiques majeures (Premier League, Bundesliga, Ligue 1, Serie A), 
+les statistiques, les tactiques, et l'histoire du football.
+Réponds de manière concise, précise et engageante.
+Si l'utilisateur pose une question en français, réponds en français. 
+Si la question est en anglais, réponds en anglais."""
+
+    if "chat_messages" not in st.session_state:
+        st.session_state.chat_messages = []
+
+    col_chat, col_info = st.columns([3, 1])
+
+    with col_info:
+        st.markdown("**Exemples de questions**")
+        examples = [
+            "Qui a gagné la Champions League 2024 ?",
+            "Explique-moi le système de qualification pour la Coupe du Monde.",
+            "Quelles sont les meilleures équipes du groupe A ?",
+            "Compare le style de jeu du Bayern et de Manchester City.",
+            "Qu'est-ce que l'expected goals (xG) ?",
+        ]
+        for ex in examples:
+            if st.button(ex, key=f"ex_{ex[:20]}", use_container_width=True):
+                st.session_state.pending_example = ex
+                st.rerun()
+
+        st.markdown("---")
+        if st.button("Effacer la conversation", use_container_width=True):
+            st.session_state.chat_messages = []
+            st.rerun()
+
+    with col_chat:
+        chat_container = st.container()
+        with chat_container:
+            for msg in st.session_state.chat_messages:
+                with st.chat_message(msg["role"]):
+                    st.markdown(msg["content"])
+
+        user_input = st.chat_input("Posez votre question football...")
+
+        if "pending_example" in st.session_state:
+            user_input = st.session_state.pending_example
+            del st.session_state.pending_example
+
+        if user_input:
+            st.session_state.chat_messages.append({"role": "user", "content": user_input})
+            with chat_container:
+                with st.chat_message("user"):
+                    st.markdown(user_input)
+
+            with chat_container:
+                with st.chat_message("assistant"):
+                    placeholder = st.empty()
+                    full_response = ""
+
+                    try:
+                        client = get_claude_client()
+                        history = [
+                            {"role": m["role"], "content": m["content"]}
+                            for m in st.session_state.chat_messages[:-1]
+                        ]
+                        history.append({"role": "user", "content": user_input})
+
+                        with client.messages.stream(
+                            model="claude-sonnet-4-6",
+                            max_tokens=1024,
+                            system=SYSTEM_PROMPT,
+                            messages=history,
+                        ) as stream:
+                            for text in stream.text_stream:
+                                full_response += text
+                                placeholder.markdown(full_response + "▌")
+                        placeholder.markdown(full_response)
+
+                    except Exception as e:
+                        full_response = f"Erreur lors de la connexion à Claude : {e}"
+                        placeholder.error(full_response)
+
+            st.session_state.chat_messages.append({"role": "assistant", "content": full_response})

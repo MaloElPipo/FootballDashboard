@@ -1837,13 +1837,13 @@ elif page == "📅 Calendrier CDM 2026":
 
                         match_cols = st.columns([3, 1, 3])
                         with match_cols[0]:
-                            st.markdown(f"<div style='text-align:right;font-size:1.05em'>{h_flag} {home}</div>",
+                            st.markdown(f"<div style='text-align:right;font-size:1.25em;font-weight:600'>{h_flag} {home}</div>",
                                         unsafe_allow_html=True)
                         with match_cols[1]:
-                            st.markdown(f"<div style='text-align:center;font-size:1.05em'>{score_display}</div>",
+                            st.markdown(f"<div style='text-align:center;font-size:1.15em'>{score_display}</div>",
                                         unsafe_allow_html=True)
                         with match_cols[2]:
-                            st.markdown(f"<div style='text-align:left;font-size:1.05em'>{away} {a_flag}</div>",
+                            st.markdown(f"<div style='text-align:left;font-size:1.25em;font-weight:600'>{away} {a_flag}</div>",
                                         unsafe_allow_html=True)
 
                         mkey = _match_key_from_bsd(home, away)

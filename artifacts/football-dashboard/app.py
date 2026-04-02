@@ -1567,7 +1567,6 @@ elif page == "🌍 Effectifs CM 2026":
             rows.append({
                 "Actif": active_status.get(p.get("name", ""), True),
                 "Joueur": p.get("name", "—"),
-                "Poste": p.get("position", "—"),
                 "Club": p.get("club", "—"),
                 "Matchs (5 dern.)": p.get("appearances", 0) or 0,
             })
@@ -1596,7 +1595,7 @@ elif page == "🌍 Effectifs CM 2026":
         # ── Formulaire avec validation explicite ─────────────────────
         with st.form(key=f"form_squad_{nation_code}"):
             edited_df = st.data_editor(
-                df_edit[["Actif", "Joueur", "Poste", "Club", "Matchs (5 dern.)"]],
+                df_edit[["Actif", "Joueur", "Club", "Matchs (5 dern.)"]],
                 column_config={
                     "Actif": st.column_config.CheckboxColumn(
                         "✅ Actif",
@@ -1605,11 +1604,10 @@ elif page == "🌍 Effectifs CM 2026":
                         width="small",
                     ),
                     "Joueur": st.column_config.TextColumn("Joueur", width="medium"),
-                    "Poste": st.column_config.TextColumn("Poste", width="small"),
                     "Club": st.column_config.TextColumn("Club", width="medium"),
                     "Matchs (5 dern.)": st.column_config.NumberColumn("⚽ Matchs", width="small"),
                 },
-                disabled=["Joueur", "Poste", "Club", "Matchs (5 dern.)"],
+                disabled=["Joueur", "Club", "Matchs (5 dern.)"],
                 hide_index=True,
                 height=min(700, 50 + len(df_edit) * 37),
                 key=f"editor_{nation_code}",

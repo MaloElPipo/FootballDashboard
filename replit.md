@@ -72,10 +72,40 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - `comp_3039` Premier League, `comp_4643` Bundesliga, `comp_0256` Ligue 1, `comp_5840` Serie A
   - `comp_29967` International Friendly Games (World)
   - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
+- **AI Assistant**: Claude (Anthropic) integration via `ANTHROPIC_API_KEY`, streaming responses
+- **ELO Ranking**: manual ELO blending (0.75×manual + 0.25×EloRating.net)
 - **Sections**:
   - Match Results: filter by competition & status, goal distribution charts, outcome pie chart, match list
   - Teams: team nationalities chart, full team table per competition
   - Players: age/height/position/nationality visualizations per team
+  - ELO Ranking: blended ELO scores for national teams
+  - Prédiction de Matchs: ELO-based win probability
+  - Comparaison de Cotes: bookmaker odds scraping
+  - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
+
+## Squad Scraper (`squad_scraper.py`)
+
+Scrapes Transfermarkt for WC 2026 national team squads.
+
+### Pipeline
+1. `get_recent_match_ids(slug, tm_id, n=5)` — fixture page → last N match IDs
+2. `get_match_lineup(match_id, nation_tm_id)` — match sheet page → player list for the specific team
+3. `get_player_profile(player_tm_id)` — profile page → club, market value, position
+4. `build_squad(nation, n_matches=5)` — full pipeline, deduplicates players, returns top 30 by appearances
+5. `get_squad_cached(nation, force_refresh=False)` — disk cache (48h TTL) wrapper
+
+### Key HTML parsing
+- Fixture URL: `https://www.transfermarkt.fr/{slug}/spielplandatum/verein/{tm_id}/saison_id/2025`
+- Lineup URL: `https://www.transfermarkt.fr/x/aufstellung/spielbericht/{match_id}`
+- **Team splitting**: TM match sheet has 4 `class="large-6 columns"` blocks: [0]=home starters, [1]=away starters, [2]=home bench, [3]=away bench. Home/away determined by `class="sb-team sb-heim/sb-gast"` in page header.
+- **Player name**: extracted from `alt` attribute of `<img>` inside `/profil/spieler/{id}` links
+- **Market value**: regex `(\d+[,.]?\d*)\s*(?:mio\.|Mio\.)\s*€`
+- REQUEST_DELAY = 0.6s; cache TTL = 48h; cache file: `squads_cache.json`
+
+### Nations data (`nations_data.py`)
+- 48 WC 2026 nations with TM IDs, slugs, FR names, confederations
+- Structure: `WC2026_NATIONS` dict by confederation (UEFA, CONMEBOL, CONCACAF, AFC, CAF, OFC)
+- Access: `get_nation_by_code('FRA')`, `get_all_nations()`
 
 ## Packages
 

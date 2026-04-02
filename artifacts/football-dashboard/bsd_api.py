@@ -43,22 +43,31 @@ def _norm(s: str) -> str:
     return " ".join(s.split())
 
 
-# ── TM nation code → BSD nationality name ─────────────────────────────────────
-# Les noms de nationalité exacts tels qu'utilisés dans l'API BSD
+# ── TM nation code (FIFA) → BSD nationality name ─────────────────────────────
+# Codes FIFA tels qu'utilisés dans nations_data.py → noms BSD exacts (vérifiés)
 TM_CODE_TO_BSD_NATIONALITY = {
-    "FRA": "France",   "ESP": "Spain",    "DEU": "Germany",  "ENG": "England",
-    "ITA": "Italy",    "BRA": "Brazil",   "ARG": "Argentina","PRT": "Portugal",
-    "NLD": "Netherlands", "BEL": "Belgium",  "HRV": "Croatia",  "URU": "Uruguay",
-    "COL": "Colombia", "MEX": "Mexico",   "USA": "United States", "CAN": "Canada",
-    "SEN": "Senegal",  "MAR": "Morocco",  "GHA": "Ghana",    "NGR": "Nigeria",
-    "CMR": "Cameroon", "CIV": "Ivory Coast", "TUN": "Tunisia","EGY": "Egypt",
-    "ALG": "Algeria",  "JPN": "Japan",    "KOR": "South Korea","AUS": "Australia",
-    "IRN": "Iran",     "SAU": "Saudi Arabia", "QAT": "Qatar","MAS": "Malaysia",
-    "SRB": "Serbia",   "AUT": "Austria",  "SUI": "Switzerland","DEN": "Denmark",
-    "SWE": "Sweden",   "NOR": "Norway",   "POL": "Poland",   "CZE": "Czech Republic",
-    "SVK": "Slovakia", "HUN": "Hungary",  "ROU": "Romania",  "UKR": "Ukraine",
-    "TUR": "Turkey",   "GRE": "Greece",   "SCO": "Scotland", "WAL": "Wales",
-    "IRL": "Ireland",  "NZL": "New Zealand",
+    # UEFA (16)
+    "FRA": "France",    "ESP": "Spain",     "GER": "Germany",   "ENG": "England",
+    "POR": "Portugal",  "NED": "Netherlands","BEL": "Belgium",  "CRO": "Croatia",
+    "AUT": "Austria",   "SUI": "Switzerland","NOR": "Norway",   "SWE": "Sweden",
+    "CZE": "Czechia",  "TUR": "Türkiye",   "SCO": "Scotland",
+    # BIH + QAT: 0 joueurs dans BSD, pas de mapping possible
+    # CONMEBOL (6)
+    "ARG": "Argentina", "BRA": "Brazil",    "COL": "Colombia",  "URU": "Uruguay",
+    "ECU": "Ecuador",   "PAR": "Paraguay",
+    # CONCACAF (6)
+    "USA": "USA",       "MEX": "Mexico",    "CAN": "Canada",    "PAN": "Panama",
+    "CUW": "Curacao",   "HAI": "Haiti",
+    # AFC (8)
+    "JPN": "Japan",     "KOR": "South Korea","IRN": "Iran",     "KSA": "Saudi Arabia",
+    "AUS": "Australia", "QAT": "Qatar",     "IRQ": "Iraq",      "JOR": "Jordan",
+    "UZB": "Uzbekistan",
+    # CAF (9)
+    "MAR": "Morocco",   "SEN": "Senegal",   "EGY": "Egypt",     "ALG": "Algeria",
+    "TUN": "Tunisia",   "CIV": "Côte d'Ivoire","GHA": "Ghana", "COD": "DR Congo",
+    "RSA": "South Africa","CPV": "Cape Verde",
+    # OFC (1)
+    "NZL": "New Zealand",
 }
 
 

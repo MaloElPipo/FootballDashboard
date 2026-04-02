@@ -1632,6 +1632,17 @@ elif page == "📅 Calendrier CDM 2026":
         "Congo": "🇨🇬", "Sudan": "🇸🇩",
     }
 
+    ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
+    ODDS_API_BASE = "https://api.the-odds-api.com/v4"
+    SELECTED_BOOKMAKERS = {
+        "pinnacle":      "Pinnacle",
+        "betfair_ex_eu": "Betfair Exch.",
+        "unibet_fr":     "Unibet FR",
+        "pmu_fr":        "PMU FR",
+    }
+    BK_KEYS = list(SELECTED_BOOKMAKERS.keys())
+    BK_LABELS = list(SELECTED_BOOKMAKERS.values())
+
     def _flag(team_name: str) -> str:
         return COUNTRY_FLAGS.get(team_name, "🏳️")
 
@@ -1653,17 +1664,101 @@ elif page == "📅 Calendrier CDM 2026":
             page_num += 1
         return all_events
 
+    @st.cache_data(ttl=1800)
+    def fetch_odds_api_h2h():
+        if not ODDS_API_KEY:
+            return {}
+        try:
+            r = requests.get(f"{ODDS_API_BASE}/sports/soccer_fifa_world_cup/odds/", params={
+                "apiKey": ODDS_API_KEY,
+                "regions": "eu,uk",
+                "markets": "h2h",
+                "oddsFormat": "decimal",
+                "bookmakers": ",".join(BK_KEYS),
+            }, timeout=15)
+            if r.status_code != 200:
+                return {}
+            data = r.json()
+            odds_map = {}
+            for match in data:
+                home = match.get("home_team", "")
+                away = match.get("away_team", "")
+                key = f"{home} vs {away}"
+                bk_odds = {}
+                for bk in match.get("bookmakers", []):
+                    bk_key = bk.get("key", "")
+                    if bk_key not in SELECTED_BOOKMAKERS:
+                        continue
+                    market = bk.get("markets", [{}])[0]
+                    outcomes = {o["name"]: o["price"] for o in market.get("outcomes", [])}
+                    bk_odds[bk_key] = {
+                        "home": outcomes.get(home),
+                        "draw": outcomes.get("Draw"),
+                        "away": outcomes.get(away),
+                    }
+                if bk_odds:
+                    odds_map[key] = bk_odds
+            return odds_map
+        except Exception:
+            return {}
+
+    @st.cache_data(ttl=3600)
+    def fetch_odds_api_outright():
+        if not ODDS_API_KEY:
+            return {}
+        try:
+            r = requests.get(f"{ODDS_API_BASE}/sports/soccer_fifa_world_cup_winner/odds/", params={
+                "apiKey": ODDS_API_KEY,
+                "regions": "eu,uk",
+                "markets": "outrights",
+                "oddsFormat": "decimal",
+            }, timeout=15)
+            if r.status_code != 200:
+                return {}
+            data = r.json()
+            outright = {}
+            for match in data:
+                for bk in match.get("bookmakers", []):
+                    bk_key = bk.get("key", "")
+                    if bk_key not in SELECTED_BOOKMAKERS:
+                        continue
+                    market = bk.get("markets", [{}])[0]
+                    for o in market.get("outcomes", []):
+                        name = o["name"]
+                        price = o["price"]
+                        if name not in outright:
+                            outright[name] = {}
+                        outright[name][bk_key] = price
+            return outright
+        except Exception:
+            return {}
+
+    BSD_TO_ODDS_TEAM = {
+        "South Korea": "Korea Republic",
+        "Türkiye": "Turkey",
+        "Côte d'Ivoire": "Ivory Coast",
+        "Bosnia & Herzegovina": "Bosnia and Herzegovina",
+    }
+
+    def _match_key_from_bsd(home: str, away: str) -> str:
+        h = BSD_TO_ODDS_TEAM.get(home, home)
+        a = BSD_TO_ODDS_TEAM.get(away, away)
+        return f"{h} vs {a}"
+
     try:
         events = fetch_wc_events()
     except Exception as exc:
         st.error(f"Erreur de récupération des matchs : {exc}")
         events = []
 
+    odds_h2h = fetch_odds_api_h2h()
+    outright_odds = fetch_odds_api_outright()
+
     if not events:
         st.warning("Aucun match trouvé pour la Coupe du Monde 2026.")
     else:
         total_matches = len(events)
-        matches_with_odds = sum(1 for e in events if e.get("odds_home"))
+        matches_with_odds = sum(1 for e in events if _match_key_from_bsd(e.get("home_team",""), e.get("away_team","")) in odds_h2h or e.get("odds_home"))
         finished = sum(1 for e in events if e.get("status") == "finished")
 
         c1, c2, c3, c4 = st.columns(4)
@@ -1750,11 +1845,7 @@ elif page == "📅 Calendrier CDM 2026":
                         else:
                             score_display = f"🕐 {kick_time}"
 
-                        oh = ev.get("odds_home")
-                        od = ev.get("odds_draw")
-                        oa = ev.get("odds_away")
-
-                        match_cols = st.columns([3, 1, 3, 4])
+                        match_cols = st.columns([3, 1, 3])
                         with match_cols[0]:
                             st.markdown(f"<div style='text-align:right;font-size:1.05em'>{h_flag} {home}</div>",
                                         unsafe_allow_html=True)
@@ -1764,14 +1855,65 @@ elif page == "📅 Calendrier CDM 2026":
                         with match_cols[2]:
                             st.markdown(f"<div style='text-align:left;font-size:1.05em'>{away} {a_flag}</div>",
                                         unsafe_allow_html=True)
-                        with match_cols[3]:
+
+                        mkey = _match_key_from_bsd(home, away)
+                        match_odds = odds_h2h.get(mkey, {})
+
+                        if match_odds:
+                            header_html = (
+                                "<table style='width:100%;border-collapse:collapse;margin:4px 0;font-size:0.85em'>"
+                                "<thead><tr style='border-bottom:1px solid #444'>"
+                                "<th style='text-align:left;padding:2px 6px;color:#888'>Bookmaker</th>"
+                                "<th style='text-align:center;padding:2px 6px;color:#2ecc71'>1</th>"
+                                "<th style='text-align:center;padding:2px 6px;color:#f39c12'>N</th>"
+                                "<th style='text-align:center;padding:2px 6px;color:#e74c3c'>2</th>"
+                                "</tr></thead><tbody>"
+                            )
+                            best = {"home": 0, "draw": 0, "away": 0}
+                            for bk_key in BK_KEYS:
+                                bk_data = match_odds.get(bk_key, {})
+                                for col in ("home", "draw", "away"):
+                                    v = bk_data.get(col) or 0
+                                    if v > best[col]:
+                                        best[col] = v
+
+                            rows_html = ""
+                            for bk_key in BK_KEYS:
+                                bk_data = match_odds.get(bk_key)
+                                if not bk_data:
+                                    continue
+                                bk_label = SELECTED_BOOKMAKERS[bk_key]
+                                oh = bk_data.get("home")
+                                od = bk_data.get("draw")
+                                oa = bk_data.get("away")
+
+                                def _cell(val, best_val):
+                                    if val is None:
+                                        return "<td style='text-align:center;padding:2px 6px;color:#555'>—</td>"
+                                    bold = "font-weight:bold;color:#00ff88" if val == best_val and best_val > 0 else ""
+                                    return f"<td style='text-align:center;padding:2px 6px;{bold}'>{val:.2f}</td>"
+
+                                rows_html += (
+                                    f"<tr>"
+                                    f"<td style='text-align:left;padding:2px 6px;font-size:0.9em'>{bk_label}</td>"
+                                    f"{_cell(oh, best['home'])}"
+                                    f"{_cell(od, best['draw'])}"
+                                    f"{_cell(oa, best['away'])}"
+                                    f"</tr>"
+                                )
+
+                            if rows_html:
+                                st.markdown(header_html + rows_html + "</tbody></table>", unsafe_allow_html=True)
+                        else:
+                            oh = ev.get("odds_home")
+                            od = ev.get("odds_draw")
+                            oa = ev.get("odds_away")
                             if oh and od and oa:
                                 st.markdown(
                                     f"<div style='text-align:center;font-size:0.85em;color:#888'>"
-                                    f"<span style='color:#2ecc71'>1: {oh:.2f}</span> · "
+                                    f"BSD · <span style='color:#2ecc71'>1: {oh:.2f}</span> · "
                                     f"<span style='color:#f39c12'>N: {od:.2f}</span> · "
-                                    f"<span style='color:#e74c3c'>2: {oa:.2f}</span>"
-                                    f"</div>",
+                                    f"<span style='color:#e74c3c'>2: {oa:.2f}</span></div>",
                                     unsafe_allow_html=True,
                                 )
                             else:
@@ -1780,65 +1922,70 @@ elif page == "📅 Calendrier CDM 2026":
                                     unsafe_allow_html=True,
                                 )
 
-                        o25 = ev.get("odds_over_25")
-                        u25 = ev.get("odds_under_25")
-                        btts_y = ev.get("odds_btts_yes")
-                        btts_n = ev.get("odds_btts_no")
-                        if o25 or u25 or btts_y or btts_n:
-                            extra_parts = []
-                            if o25 and u25:
-                                extra_parts.append(f"O2.5: {o25:.2f} / U2.5: {u25:.2f}")
-                            if btts_y and btts_n:
-                                extra_parts.append(f"BTTS Oui: {btts_y:.2f} / Non: {btts_n:.2f}")
-                            if extra_parts:
-                                st.caption("   ".join(extra_parts))
-
-                        st.markdown("<hr style='margin:2px 0;border-color:#333'>", unsafe_allow_html=True)
+                        st.markdown("<hr style='margin:4px 0;border-color:#333'>", unsafe_allow_html=True)
 
         st.markdown("---")
 
-        st.subheader("📊 Résumé des cotes disponibles")
-        odds_events = [e for e in events if e.get("odds_home")]
-        if odds_events:
-            odds_rows = []
-            for ev in sorted(odds_events, key=lambda e: e.get("event_date", "")):
-                oh = ev.get("odds_home", 0)
-                od = ev.get("odds_draw", 0)
-                oa = ev.get("odds_away", 0)
+        st.subheader("📊 Résumé des cotes — Multi-bookmakers")
+        if odds_h2h:
+            summary_rows = []
+            for ev in sorted(events, key=lambda e: e.get("event_date", "")):
                 home = ev.get("home_team", "?")
                 away = ev.get("away_team", "?")
                 rnd = ev.get("round_number", 0)
-
-                if oh and od and oa:
-                    if oh <= od and oh <= oa:
-                        fav = home
-                    elif oa <= od and oa <= oh:
-                        fav = away
-                    else:
-                        fav = "Match nul"
-                else:
-                    fav = "—"
-
+                mkey = _match_key_from_bsd(home, away)
+                modd = odds_h2h.get(mkey, {})
+                if not modd:
+                    continue
                 try:
-                    raw_dt = ev.get("event_date", "")
-                    d_str = raw_dt[:10] if raw_dt else "—"
+                    d_str = ev.get("event_date", "")[:10]
                 except Exception:
                     d_str = "—"
 
-                odds_rows.append({
+                row = {
                     "Date": d_str,
                     "Phase": ROUND_LABELS.get(rnd, f"Tour {rnd}"),
                     "Match": f"{_flag(home)} {home}  vs  {away} {_flag(away)}",
-                    "1 (Dom)": oh,
-                    "N (Nul)": od,
-                    "2 (Ext)": oa,
-                    "Favori": f"{_flag(fav)} {fav}" if fav not in ("—", "Match nul") else fav,
-                })
+                }
+                best_home = 0
+                best_fav = "—"
+                for bk_key in BK_KEYS:
+                    bk_data = modd.get(bk_key, {})
+                    bk_label = SELECTED_BOOKMAKERS[bk_key]
+                    oh = bk_data.get("home")
+                    od = bk_data.get("draw")
+                    oa = bk_data.get("away")
+                    row[f"1 {bk_label}"] = oh if oh else None
+                    row[f"N {bk_label}"] = od if od else None
+                    row[f"2 {bk_label}"] = oa if oa else None
 
-            df_odds = pd.DataFrame(odds_rows)
-            st.dataframe(df_odds, use_container_width=True, hide_index=True)
+                summary_rows.append(row)
+
+            if summary_rows:
+                df_summary = pd.DataFrame(summary_rows)
+                st.dataframe(df_summary, use_container_width=True, hide_index=True)
+            else:
+                st.info("Aucune cote multi-bookmakers disponible.")
         else:
-            st.info("Aucune cote disponible pour le moment.")
+            st.info("Impossible de charger les cotes multi-bookmakers (clé API manquante ou erreur).")
+
+        st.markdown("---")
+
+        st.subheader("🏆 Cotes vainqueur — Coupe du Monde 2026")
+        if outright_odds:
+            outright_rows = []
+            for nation, bk_odds in sorted(outright_odds.items(), key=lambda x: min(x[1].values())):
+                row = {"Nation": f"{_flag(nation)} {nation}"}
+                for bk_key in BK_KEYS:
+                    bk_label = SELECTED_BOOKMAKERS[bk_key]
+                    row[bk_label] = bk_odds.get(bk_key)
+                best_val = min(bk_odds.values())
+                row["Meilleure"] = best_val
+                outright_rows.append(row)
+            df_out = pd.DataFrame(outright_rows)
+            st.dataframe(df_out, use_container_width=True, hide_index=True)
+        else:
+            st.info("Cotes vainqueur indisponibles pour le moment.")
 
 
 # ═══════════════════════════════════════════════════════════════════

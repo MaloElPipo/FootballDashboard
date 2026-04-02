@@ -74,6 +74,9 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
 - **AI Assistant**: Claude (Anthropic) integration via `ANTHROPIC_API_KEY`, streaming responses
 - **ELO Ranking**: manual ELO blending (0.75×manual + 0.25×EloRating.net)
+- **Odds API**: The Odds API (`the-odds-api.com`) for multi-bookmaker odds; key stored as `ODDS_API_KEY`
+  - Selected bookmakers: Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR
+  - BSD API odds source: AllSportsAPI (likely Bet365 as default bookmaker)
 - **Sections**:
   - Match Results: filter by competition & status, goal distribution charts, outcome pie chart, match list
   - Teams: team nationalities chart, full team table per competition
@@ -81,6 +84,7 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - ELO Ranking: blended ELO scores for national teams
   - Prédiction de Matchs: ELO-based win probability
   - Comparaison de Cotes: bookmaker odds scraping
+  - **Calendrier CDM 2026**: World Cup 2026 match calendar with multi-bookmaker 1X2 odds (Pinnacle, Betfair, Unibet FR, PMU), outright winner odds, phase filtering
   - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
 
 ## Squad Scraper (`squad_scraper.py`)

@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import os
 import anthropic
-from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS
+from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS, get_nation_by_code
 from squad_scraper import (
     get_squad_cached, get_cache_status, clear_cache_for, clear_all_cache,
     get_static_squad, get_static_db_status,
@@ -547,14 +547,23 @@ st.caption("International competitions & top leagues — powered by TheStatsAPI"
 
 st.sidebar.header("Filters")
 
+_PAGE_LIST = [
+    "📅 Calendrier CDM 2026",
+    "🌍 Effectifs CM 2026",
+    "🏅 Classement ELO",
+    "🤖 Assistant IA",
+]
+_qp = st.query_params
+_nav_page = _qp.get("page", None)
+_nav_nation = _qp.get("nation", None)
+_page_index = 0
+if _nav_page == "effectifs":
+    _page_index = 1
+
 page = st.sidebar.radio(
     "Section",
-    [
-        "📅 Calendrier CDM 2026",
-        "🌍 Effectifs CM 2026",
-        "🏅 Classement ELO",
-        "🤖 Assistant IA",
-    ],
+    _PAGE_LIST,
+    index=_page_index,
     label_visibility="visible",
 )
 
@@ -1625,11 +1634,26 @@ elif page == "📅 Calendrier CDM 2026":
     BK_KEYS = list(SELECTED_BOOKMAKERS.keys())
     BK_LABELS = list(SELECTED_BOOKMAKERS.values())
 
+    _BSD_TO_NATION = {}
+    for _conf, _nations in WC2026_NATIONS.items():
+        for _n in _nations:
+            _BSD_TO_NATION[_n["name"]] = _n["code"]
+
     def _flag(team_name: str) -> str:
         iso = COUNTRY_ISO.get(team_name, "")
         if iso:
             return f"<img src='https://flagcdn.com/24x18/{iso}.png' style='vertical-align:middle;margin:0 4px' alt='{team_name}'>"
         return ""
+
+    def _team_display(team_name: str) -> str:
+        code = _BSD_TO_NATION.get(team_name)
+        if code:
+            return (
+                f"<a href='?page=effectifs&nation={code}' "
+                f"style='color:inherit;text-decoration:none;border-bottom:1px dashed rgba(136,136,136,0.6)' "
+                f"title='Voir l&#39;effectif {team_name}'>{team_name}</a>"
+            )
+        return team_name
 
     @st.cache_data(ttl=3600)
     def fetch_wc_events():
@@ -1836,15 +1860,18 @@ elif page == "📅 Calendrier CDM 2026":
                         else:
                             score_display = f"🕐 {kick_time}"
 
+                        h_link = _team_display(home)
+                        a_link = _team_display(away)
+
                         match_cols = st.columns([3, 1, 3])
                         with match_cols[0]:
-                            st.markdown(f"<div style='text-align:right;font-size:1.25em;font-weight:600'>{h_flag} {home}</div>",
+                            st.markdown(f"<div style='text-align:right;font-size:1.25em;font-weight:600'>{h_flag} {h_link}</div>",
                                         unsafe_allow_html=True)
                         with match_cols[1]:
                             st.markdown(f"<div style='text-align:center;font-size:1.15em'>{score_display}</div>",
                                         unsafe_allow_html=True)
                         with match_cols[2]:
-                            st.markdown(f"<div style='text-align:left;font-size:1.25em;font-weight:600'>{away} {a_flag}</div>",
+                            st.markdown(f"<div style='text-align:left;font-size:1.25em;font-weight:600'>{a_link} {a_flag}</div>",
                                         unsafe_allow_html=True)
 
                         mkey = _match_key_from_bsd(home, away)
@@ -2110,6 +2137,31 @@ elif page == "🌍 Effectifs CM 2026":
             with st.expander(f"👁 {n_inactive} joueur(s) non retenu(s)", expanded=False):
                 st.markdown(", ".join(inactive_names))
 
+    _linked_nation = None
+    if _nav_nation:
+        _linked_nation = get_nation_by_code(_nav_nation)
+    if _linked_nation:
+        _ln_code = _linked_nation["code"]
+        _ln_fr = _linked_nation["fr"]
+        st.markdown(f"### 📌 {_ln_fr}")
+        if st.button("← Retour à tous les effectifs"):
+            st.query_params.clear()
+            st.rerun()
+
+        _ln_live = cache_status.get(_ln_code, {})
+        _ln_has_live = bool(_ln_live and _ln_live.get("valid"))
+        if _ln_has_live:
+            from squad_scraper import _load_cache as _sc_load
+            _ln_players = _sc_load().get(_ln_code, {}).get("players", [])
+        else:
+            _ln_players = get_static_squad(_ln_code)
+
+        if _ln_players:
+            _show_squad_editor(_ln_players, _ln_code)
+        else:
+            st.info("Aucune donnée disponible pour cette nation.")
+        st.markdown("---")
+
     # ── Tabs par confédération ──────────────────────────────────────
     conf_keys = list(WC2026_NATIONS.keys())
     tab_labels = [f"{CONF_LABELS[c]} ({CONF_COUNTS[c]})" for c in conf_keys]
@@ -2120,11 +2172,19 @@ elif page == "🌍 Effectifs CM 2026":
             nations = WC2026_NATIONS[conf]
             nation_names_fr = [n["fr"] for n in nations]
 
+            _sel_index = 0
+            if _linked_nation and _linked_nation.get("conf") == conf:
+                try:
+                    _sel_index = nation_names_fr.index(_linked_nation["fr"])
+                except ValueError:
+                    _sel_index = 0
+
             col_sel, col_btn = st.columns([3, 1])
             with col_sel:
                 selected_fr = st.selectbox(
                     "Sélectionner une nation",
                     nation_names_fr,
+                    index=_sel_index,
                     key=f"sel_{conf}",
                 )
             nation = next((n for n in nations if n["fr"] == selected_fr), nations[0])

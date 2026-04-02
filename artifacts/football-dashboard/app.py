@@ -1553,20 +1553,6 @@ elif page == "🌍 Effectifs CM 2026":
             icon="⚠️",
         )
 
-    # ── Helper : calcul du Power Index ──────────────────────────────
-    def _compute_power_index(players_active: list[dict]) -> float:
-        """Score composite normalisé sur 100 basé sur valeur marchande + forme."""
-        if not players_active:
-            return 0.0
-        scores = []
-        for p in players_active:
-            mv = p.get("market_value_eur", 0) or 0
-            apps = p.get("appearances", 0) or 0
-            mv_score = min(mv / 80_000_000, 1.0) * 60   # 60 pts max (valeur)
-            form_score = min(apps / 5, 1.0) * 40         # 40 pts max (forme)
-            scores.append(mv_score + form_score)
-        return round(sum(scores) / len(scores), 1)
-
     # ── Helper d'affichage/édition du tableau ────────────────────────
     def _show_squad_editor(players_raw: list[dict], nation_code: str):
         if not players_raw:
@@ -1575,115 +1561,83 @@ elif page == "🌍 Effectifs CM 2026":
         # Charger l'état actif/inactif persisté
         active_status = get_nation_active_status(nation_code, players_raw)
 
-        # Construire le DataFrame avec colonne "Actif"
+        # Construire le DataFrame (sans valeur marchande)
         rows = []
         for p in players_raw:
-            mv = p.get("market_value_eur", 0) or 0
-            mv_str = (
-                f"{mv/1_000_000:.1f}M €" if mv >= 1_000_000
-                else (f"{int(mv/1000)}k €" if mv > 0 else "—")
-            )
             rows.append({
                 "Actif": active_status.get(p.get("name", ""), True),
                 "Joueur": p.get("name", "—"),
                 "Poste": p.get("position", "—"),
                 "Club": p.get("club", "—"),
-                "Valeur marchande": mv_str,
-                "_mv_raw": mv,
                 "Matchs (5 dern.)": p.get("appearances", 0) or 0,
-                "_apps_raw": p.get("appearances", 0) or 0,
             })
 
         df_edit = pd.DataFrame(rows).sort_values("Matchs (5 dern.)", ascending=False).reset_index(drop=True)
+        n_active_saved = int(df_edit["Actif"].sum())
 
-        n_active_before = int(df_edit["Actif"].sum())
-
-        # Boutons de sélection rapide
-        btn_col1, btn_col2, btn_col3 = st.columns([1, 1, 4])
+        # ── Boutons rapides (hors formulaire) ────────────────────────
+        btn_col1, btn_col2, info_col = st.columns([1, 1, 5])
         with btn_col1:
-            if st.button("✅ Tout activer", key=f"all_on_{nation_code}", help="Marquer tous les joueurs comme actifs"):
-                all_active = {p["name"]: True for p in players_raw}
-                save_player_selection(nation_code, all_active)
+            if st.button("✅ Tout activer", key=f"all_on_{nation_code}",
+                         help="Marquer tous les joueurs comme actifs"):
+                save_player_selection(nation_code, {p["name"]: True for p in players_raw})
                 st.rerun()
         with btn_col2:
-            if st.button("❌ Tout désactiver", key=f"all_off_{nation_code}", help="Marquer tous les joueurs comme inactifs"):
-                all_inactive = {p["name"]: False for p in players_raw}
-                save_player_selection(nation_code, all_inactive)
+            if st.button("❌ Tout désactiver", key=f"all_off_{nation_code}",
+                         help="Marquer tous les joueurs comme inactifs"):
+                save_player_selection(nation_code, {p["name"]: False for p in players_raw})
                 st.rerun()
-        with btn_col3:
+        with info_col:
             st.markdown(
-                f"**{n_active_before} joueur(s) actif(s)** sur {len(df_edit)} recensés. "
-                "Cochez/décochez la colonne **✅ Actif** pour gérer la liste définitive."
+                f"**{n_active_saved} / {len(df_edit)} joueur(s) actif(s).** "
+                "Modifiez les cases puis cliquez **Valider** (ou appuyez sur **Entrée**)."
             )
 
-        edited_df = st.data_editor(
-            df_edit[["Actif", "Joueur", "Poste", "Club", "Valeur marchande", "Matchs (5 dern.)"]],
-            column_config={
-                "Actif": st.column_config.CheckboxColumn(
-                    "✅ Actif",
-                    help="Cocher = joueur retenu pour la Coupe du Monde",
-                    default=True,
-                    width="small",
-                ),
-                "Joueur": st.column_config.TextColumn("Joueur", width="medium"),
-                "Poste": st.column_config.TextColumn("Poste", width="small"),
-                "Club": st.column_config.TextColumn("Club", width="medium"),
-                "Valeur marchande": st.column_config.TextColumn("Valeur", width="small"),
-                "Matchs (5 dern.)": st.column_config.NumberColumn("⚽ Matchs", width="small"),
-            },
-            disabled=["Joueur", "Poste", "Club", "Valeur marchande", "Matchs (5 dern.)"],
-            hide_index=True,
-            height=min(700, 50 + len(df_edit) * 37),
-            key=f"editor_{nation_code}",
-            use_container_width=True,
-        )
+        # ── Formulaire avec validation explicite ─────────────────────
+        with st.form(key=f"form_squad_{nation_code}"):
+            edited_df = st.data_editor(
+                df_edit[["Actif", "Joueur", "Poste", "Club", "Matchs (5 dern.)"]],
+                column_config={
+                    "Actif": st.column_config.CheckboxColumn(
+                        "✅ Actif",
+                        help="Cocher = joueur retenu pour la Coupe du Monde",
+                        default=True,
+                        width="small",
+                    ),
+                    "Joueur": st.column_config.TextColumn("Joueur", width="medium"),
+                    "Poste": st.column_config.TextColumn("Poste", width="small"),
+                    "Club": st.column_config.TextColumn("Club", width="medium"),
+                    "Matchs (5 dern.)": st.column_config.NumberColumn("⚽ Matchs", width="small"),
+                },
+                disabled=["Joueur", "Poste", "Club", "Matchs (5 dern.)"],
+                hide_index=True,
+                height=min(700, 50 + len(df_edit) * 37),
+                key=f"editor_{nation_code}",
+                use_container_width=True,
+            )
 
-        # Persister si changement détecté (conversion numpy bool → Python bool)
-        new_selection = {name: bool(val) for name, val in zip(edited_df["Joueur"], edited_df["Actif"])}
-        if new_selection != active_status:
+            submitted = st.form_submit_button(
+                "💾 Valider la sélection",
+                type="primary",
+                use_container_width=False,
+            )
+
+        if submitted:
+            new_selection = {
+                name: bool(val)
+                for name, val in zip(edited_df["Joueur"], edited_df["Actif"])
+            }
             save_player_selection(nation_code, new_selection)
+            n_new = sum(new_selection.values())
+            st.success(f"✅ Sélection enregistrée — **{n_new}** joueur(s) actif(s).")
+            st.rerun()
 
-        # ── Métriques séparées actifs / inactifs ─────────────────────
-        st.markdown("---")
-        active_names = set(edited_df.loc[edited_df["Actif"], "Joueur"])
-        players_active = [p for p in players_raw if p.get("name") in active_names]
-        players_inactive = [p for p in players_raw if p.get("name") not in active_names]
-
-        n_active = len(players_active)
-        n_inactive = len(players_inactive)
-
-        mv_active = [p.get("market_value_eur", 0) or 0 for p in players_active if (p.get("market_value_eur") or 0) > 0]
-        mv_all = [p.get("market_value_eur", 0) or 0 for p in players_raw if (p.get("market_value_eur") or 0) > 0]
-
-        total_val_active = sum(mv_active)
-        total_val_all = sum(mv_all)
-
-        pi_active = _compute_power_index(players_active)
-        pi_all = _compute_power_index(players_raw)
-
-        col_a, col_b, col_c, col_d = st.columns(4)
-        col_a.metric(
-            "Joueurs actifs / total",
-            f"{n_active} / {len(players_raw)}",
-            delta=f"{n_inactive} inactif(s)" if n_inactive else "Tous actifs",
-            delta_color="off" if n_inactive == 0 else "inverse",
-        )
-        col_b.metric(
-            "Valeur totale (actifs)",
-            f"{total_val_active/1_000_000:.0f}M €",
-            delta=f"−{(total_val_all - total_val_active)/1_000_000:.0f}M vs tout l'effectif" if n_inactive else None,
-            delta_color="off",
-        )
-        col_c.metric(
-            "Valeur moy. / actif",
-            f"{total_val_active/len(mv_active)/1_000_000:.1f}M €" if mv_active else "—",
-        )
-        col_d.metric(
-            "⚡ Power Index (actifs)",
-            f"{pi_active:.1f} / 100",
-            delta=f"{pi_active - pi_all:+.1f} vs effectif complet" if n_inactive else None,
-            delta_color="normal",
-        )
+        # ── Résumé simple sous le tableau ────────────────────────────
+        n_inactive = len(df_edit) - n_active_saved
+        if n_inactive > 0:
+            inactive_names = df_edit.loc[~df_edit["Actif"], "Joueur"].tolist()
+            with st.expander(f"👁 {n_inactive} joueur(s) non retenu(s)", expanded=False):
+                st.markdown(", ".join(inactive_names))
 
     # ── Tabs par confédération ──────────────────────────────────────
     conf_keys = list(WC2026_NATIONS.keys())

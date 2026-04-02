@@ -6,7 +6,8 @@ import os
 import anthropic
 from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS
 from squad_scraper import (
-    get_squad_cached, get_cache_status, clear_cache_for, clear_all_cache
+    get_squad_cached, get_cache_status, clear_cache_for, clear_all_cache,
+    get_static_squad, get_static_db_status
 )
 
 API_BASE = os.environ.get("STATS_API_URL", "https://api.thestatsapi.com/api")
@@ -1531,15 +1532,77 @@ elif page == "🌍 Effectifs CM 2026":
     st.header("🌍 Effectifs — Coupe du Monde 2026")
     st.caption(
         "Données issues de Transfermarkt · 5 derniers matchs par nation · "
-        "Mise en cache 48 h"
+        "Base statique pré-chargée — rafraîchissement en direct disponible"
     )
 
+    # ── Statut des sources de données ───────────────────────────────
+    static_status = get_static_db_status()
     cache_status = get_cache_status()
-    n_cached = sum(1 for v in cache_status.values() if v.get("valid"))
-    st.info(
-        f"**{n_cached} / 48** nations chargées en cache.",
-        icon="📦",
-    )
+    n_static = len(static_status)
+
+    if n_static > 0:
+        st.success(
+            f"**{n_static} / 48** nations disponibles instantanément depuis la base statique.",
+            icon="⚡",
+        )
+    else:
+        st.warning(
+            "La base statique est vide. Utilisez **Rafraîchir depuis TM** "
+            "pour charger un effectif à la demande.",
+            icon="⚠️",
+        )
+
+    # ── Helper d'affichage du tableau ───────────────────────────────
+    def _show_squad_table(players_raw: list[dict]):
+        if not players_raw:
+            return
+        df = pd.DataFrame(players_raw)
+        rename_map = {
+            "name": "Joueur",
+            "position": "Poste",
+            "club": "Club",
+            "market_value_eur": "Valeur marchande",
+            "appearances": "Matchs (5 dern.)",
+        }
+        cols_to_show = [c for c in rename_map if c in df.columns]
+        df = df[cols_to_show].rename(columns=rename_map)
+        if "Valeur marchande" in df.columns:
+            df["Valeur marchande"] = df["Valeur marchande"].apply(
+                lambda v: (
+                    f"{v/1_000_000:.1f}M €"
+                    if isinstance(v, (int, float)) and v >= 1_000_000
+                    else (
+                        f"{int(v/1000)}k €"
+                        if isinstance(v, (int, float)) and v > 0
+                        else "—"
+                    )
+                )
+            )
+        if "Matchs (5 dern.)" in df.columns:
+            df = df.sort_values("Matchs (5 dern.)", ascending=False)
+
+        st.dataframe(
+            df,
+            use_container_width=True,
+            hide_index=True,
+            height=min(650, 45 + len(df) * 37),
+        )
+
+        st.markdown("---")
+        mc1, mc2, mc3 = st.columns(3)
+        mc1.metric("Joueurs recensés", len(df))
+        players_with_val = [
+            p for p in players_raw
+            if isinstance(p.get("market_value_eur"), (int, float))
+            and p["market_value_eur"] > 0
+        ]
+        if players_with_val:
+            total_val = sum(p["market_value_eur"] for p in players_with_val)
+            mc2.metric("Valeur totale (estimée)", f"{total_val/1_000_000:.0f}M €")
+            mc3.metric(
+                "Valeur moyenne/joueur",
+                f"{total_val/len(players_with_val)/1_000_000:.1f}M €",
+            )
 
     # ── Tabs par confédération ──────────────────────────────────────
     conf_keys = list(WC2026_NATIONS.keys())
@@ -1561,52 +1624,58 @@ elif page == "🌍 Effectifs CM 2026":
             nation = next((n for n in nations if n["fr"] == selected_fr), nations[0])
             code = nation["code"]
 
-            # Cache info
-            entry = cache_status.get(code, {})
-            has_cache = bool(entry and entry.get("valid"))
-            n_players = entry.get("n_players", 0) if has_cache else 0
+            # Chercher les données : cache live > base statique
+            live_entry = cache_status.get(code, {})
+            has_live_cache = bool(live_entry and live_entry.get("valid"))
+
+            if has_live_cache:
+                from squad_scraper import _load_cache as _sc_load
+                players_raw = _sc_load().get(code, {}).get("players", [])
+                data_source = "live"
+            else:
+                players_raw = get_static_squad(code)
+                data_source = "static" if players_raw else "none"
 
             with col_btn:
                 st.markdown("<br>", unsafe_allow_html=True)
-                load_btn = st.button(
-                    "🔄 Charger" if not has_cache else "🔄 Rafraîchir",
+                refresh_btn = st.button(
+                    "🔄 Rafraîchir depuis TM",
                     key=f"btn_{conf}_{code}",
+                    help="Scrape Transfermarkt en direct (~3-5 min)",
                 )
 
-            # Status badges
-            if has_cache:
-                fetched = entry.get("fetched_at", "")[:19].replace("T", " ")
+            # Badge de statut
+            if data_source == "live":
+                fetched = live_entry.get("fetched_at", "")[:19].replace("T", " ")
                 st.success(
-                    f"✅ Effectif disponible — {n_players} joueurs · "
-                    f"Mis à jour le {fetched}",
+                    f"✅ Mis à jour en direct — {len(players_raw)} joueurs · {fetched}",
                     icon="✅",
                 )
-            elif nation["tm_id"] is None:
-                st.warning(
-                    "⚠️ ID Transfermarkt non trouvé pour cette nation. "
-                    "Les données ne peuvent pas encore être récupérées.",
-                    icon="⚠️",
+            elif data_source == "static":
+                st.info(
+                    f"⚡ Base statique — {len(players_raw)} joueurs · "
+                    "Cliquez **Rafraîchir** pour des données en temps réel.",
+                    icon="⚡",
                 )
+            elif nation["tm_id"] is None:
+                st.warning("⚠️ ID Transfermarkt non disponible pour cette nation.", icon="⚠️")
             else:
                 st.info(
-                    "ℹ️ Données non chargées. Cliquez sur **Charger** pour "
-                    "récupérer l'effectif depuis Transfermarkt (~3-5 min).",
+                    "ℹ️ Aucune donnée. Cliquez sur **Rafraîchir depuis TM** (~3-5 min).",
                     icon="ℹ️",
                 )
 
-            # ── Bouton Charger ──────────────────────────────────────
-            if load_btn and nation["tm_id"] is not None:
+            # ── Rafraîchissement live depuis TM ──────────────────────
+            if refresh_btn and nation["tm_id"] is not None:
                 progress_bar = st.progress(0, text="Initialisation…")
 
                 def _progress(step, total, msg, _bar=progress_bar):
-                    pct = int(step)
-                    _bar.progress(min(pct, 100), text=msg)
+                    _bar.progress(min(int(step), 100), text=msg)
 
-                with st.spinner(f"Chargement de l'effectif de {selected_fr}…"):
+                with st.spinner(f"Chargement de {selected_fr} depuis Transfermarkt…"):
                     try:
                         players = get_squad_cached(
-                            nation,
-                            force_refresh=True,
+                            nation, force_refresh=True,
                             progress_callback=_progress,
                         )
                         progress_bar.progress(100, text="Terminé ✅")
@@ -1626,84 +1695,22 @@ elif page == "🌍 Effectifs CM 2026":
                         progress_bar.empty()
                         st.error(f"Erreur lors du chargement : {e}")
 
-            # ── Affichage du tableau ────────────────────────────────
-            if has_cache and n_players > 0:
-                from squad_scraper import _load_cache as _sc_load
-                full_cache = _sc_load()
-                players_raw = full_cache.get(code, {}).get("players", [])
-
-                if players_raw:
-                    df = pd.DataFrame(players_raw)
-
-                    # Colonnes et formatage
-                    rename_map = {
-                        "name": "Joueur",
-                        "position": "Poste",
-                        "club": "Club",
-                        "market_value_eur": "Valeur marchande",
-                        "appearances": "Matchs (5 dern.)",
-                    }
-                    cols_to_show = [c for c in rename_map if c in df.columns]
-                    df = df[cols_to_show].rename(columns=rename_map)
-
-                    if "Valeur marchande" in df.columns:
-                        df["Valeur marchande"] = df["Valeur marchande"].apply(
-                            lambda v: (
-                                f"{v/1_000_000:.1f}M €"
-                                if isinstance(v, (int, float)) and v >= 1_000_000
-                                else (
-                                    f"{int(v/1000)}k €"
-                                    if isinstance(v, (int, float)) and v > 0
-                                    else "—"
-                                )
-                            )
-                        )
-
-                    # Trier par apparitions décroissantes
-                    if "Matchs (5 dern.)" in df.columns:
-                        df = df.sort_values("Matchs (5 dern.)", ascending=False)
-
-                    st.dataframe(
-                        df,
-                        use_container_width=True,
-                        hide_index=True,
-                        height=min(600, 45 + len(df) * 37),
-                    )
-
-                    # Statistiques de l'effectif
-                    st.markdown("---")
-                    mc1, mc2, mc3 = st.columns(3)
-                    mc1.metric("Joueurs recensés", len(df))
-                    players_with_val = [
-                        p for p in players_raw
-                        if isinstance(p.get("market_value_eur"), (int, float))
-                        and p["market_value_eur"] > 0
-                    ]
-                    if players_with_val:
-                        total_val = sum(
-                            p["market_value_eur"] for p in players_with_val
-                        )
-                        mc2.metric(
-                            "Valeur totale (estimée)",
-                            f"{total_val/1_000_000:.0f}M €",
-                        )
-                        mc3.metric(
-                            "Valeur moyenne/joueur",
-                            f"{total_val/len(players_with_val)/1_000_000:.1f}M €",
-                        )
+            # ── Affichage du tableau ─────────────────────────────────
+            if players_raw:
+                _show_squad_table(players_raw)
+            elif data_source == "none" and nation["tm_id"] is not None:
+                st.info("Cliquez sur **Rafraîchir depuis TM** pour charger cet effectif.")
 
     # ── Admin : gestion du cache ────────────────────────────────────
-    with st.expander("⚙️ Gestion du cache"):
-        st.markdown(
-            "Le cache est stocké localement (48 h de validité). "
-            "Vous pouvez vider un effectif ou tout le cache."
-        )
+    with st.expander("⚙️ Gestion du cache live"):
+        cache_status2 = get_cache_status()
+        st.markdown("Vider le cache live force un re-scrape depuis TM à la prochaine demande.")
         all_codes = [n["code"] for conf in WC2026_NATIONS.values() for n in conf]
-        cached_codes = [c for c in all_codes if cache_status.get(c, {}).get("valid")]
+        cached_codes = [c for c in all_codes if cache_status2.get(c, {}).get("valid")]
 
         if cached_codes:
             nation_to_clear = st.selectbox(
-                "Nation à vider",
+                "Nation à vider du cache live",
                 ["— Choisir —"] + cached_codes,
                 key="clear_sel",
             )
@@ -1711,12 +1718,12 @@ elif page == "🌍 Effectifs CM 2026":
             with ccol1:
                 if st.button("🗑️ Vider cette nation") and nation_to_clear != "— Choisir —":
                     clear_cache_for(nation_to_clear)
-                    st.success(f"Cache de {nation_to_clear} vidé.")
+                    st.success(f"Cache live de {nation_to_clear} vidé.")
                     st.rerun()
             with ccol2:
-                if st.button("🗑️ Vider tout le cache", type="secondary"):
+                if st.button("🗑️ Vider tout le cache live", type="secondary"):
                     clear_all_cache()
-                    st.success("Cache entièrement vidé.")
+                    st.success("Cache live entièrement vidé.")
                     st.rerun()
         else:
-            st.info("Aucune donnée en cache pour le moment.")
+            st.info("Aucun cache live actif.")

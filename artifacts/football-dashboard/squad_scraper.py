@@ -13,6 +13,7 @@ from datetime import datetime
 from html import unescape
 
 CACHE_FILE = os.path.join(os.path.dirname(__file__), "squads_cache.json")
+STATIC_DB_FILE = os.path.join(os.path.dirname(__file__), "squads_static.json")
 CACHE_TTL_HOURS = 48
 
 TM_HEADERS = {
@@ -66,6 +67,36 @@ def _is_cache_valid(entry: dict) -> bool:
         return age_h < CACHE_TTL_HOURS
     except Exception:
         return False
+
+
+def _load_static_db() -> dict:
+    """Charge la base de données statique pré-scrappée."""
+    if not os.path.exists(STATIC_DB_FILE):
+        return {}
+    try:
+        with open(STATIC_DB_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def get_static_squad(code: str) -> list[dict]:
+    """Renvoie l'effectif depuis la base statique (sans scraping)."""
+    db = _load_static_db()
+    return db.get(code, {}).get("players", [])
+
+
+def get_static_db_status() -> dict:
+    """Retourne le statut de la base statique : {code: {n_players, scraped_at}}."""
+    db = _load_static_db()
+    return {
+        code: {
+            "n_players": len(entry.get("players", [])),
+            "scraped_at": entry.get("scraped_at", ""),
+        }
+        for code, entry in db.items()
+        if entry.get("players")
+    }
 
 
 # ─────────────────────────────────────────────
@@ -320,10 +351,10 @@ def build_squad(nation: dict, n_matches: int = 5,
     if not player_appearances:
         return []
 
-    # Enrich with club + market value (top ~25 most frequent players)
+    # Enrich with club + market value — tous les joueurs ayant au moins 1 apparition
     sorted_players = sorted(
         player_appearances.items(), key=lambda x: -x[1]
-    )[:30]
+    )
 
     squad = []
     for idx, (pid, appearances) in enumerate(sorted_players):

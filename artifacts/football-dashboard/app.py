@@ -550,9 +550,9 @@ st.sidebar.header("Filters")
 page = st.sidebar.radio(
     "Section",
     [
-        "🏅 Classement ELO",
         "📅 Calendrier CDM 2026",
         "🌍 Effectifs CM 2026",
+        "🏅 Classement ELO",
         "🤖 Assistant IA",
     ],
     label_visibility="visible",

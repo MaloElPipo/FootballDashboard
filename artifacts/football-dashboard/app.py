@@ -396,6 +396,25 @@ def resolve_team_elo_name(api_name, base_ratings):
     return None
 
 
+def blend_base_ratings(base_ratings, manual_elos, weight=0.75):
+    """Return a copy of base_ratings where teams with a manual ELO are blended:
+       final = weight * manual + (1-weight) * elorating_net.
+    Teams not in manual_elos are untouched.
+    """
+    if not manual_elos:
+        return base_ratings or {}
+    median = round(sum(base_ratings.values()) / len(base_ratings)) if base_ratings else 1500
+    blended = dict(base_ratings or {})
+    for team, manual_elo in manual_elos.items():
+        ext = blended.get(team)
+        if ext is None and base_ratings:
+            elo_name = resolve_team_elo_name(team, base_ratings)
+            ext = base_ratings.get(elo_name, median) if elo_name else median
+        ext = ext or median
+        blended[team] = round(weight * manual_elo + (1 - weight) * ext)
+    return blended
+
+
 def compute_elo(matches, k_base=32, home_advantage=100, initial_rating=1500, base_ratings=None):
     """Compute ELO ratings from a list of finished match dicts. Returns (ratings_dict, history_list)."""
     ratings = {}
@@ -846,6 +865,9 @@ elif page == "🏅 Classement ELO":
     st.header("🏅 Classement ELO")
     st.caption("Ratings cumulatifs calculés sur l'ensemble des matchs terminés — basé sur l'algorithme ELO avec avantage domicile et multiplicateur de goal difference.")
 
+    if "manual_elos" not in st.session_state:
+        st.session_state.manual_elos = {}
+
     comp_choices_elo = [ALL_NATIONAL_OPTION] + [c["name"] for c in active_competitions]
     selected_comp_name_elo = st.selectbox("Compétition pour le calcul ELO", comp_choices_elo, key="elo_comp")
 
@@ -877,11 +899,13 @@ elif page == "🏅 Classement ELO":
             elorating_base = fetch_elorating_base()
         base_ratings = elorating_base if elorating_base else None
 
+    effective_base = blend_base_ratings(base_ratings, st.session_state.get("manual_elos", {}))
+
     if not all_finished:
         st.warning("Aucun match terminé trouvé pour cette compétition.")
     else:
         elo_ratings, elo_history = compute_elo(
-            all_finished, k_base=k_factor, home_advantage=home_adv, base_ratings=base_ratings
+            all_finished, k_base=k_factor, home_advantage=home_adv, base_ratings=effective_base
         )
         n_matches = len(all_finished)
         n_teams = len(elo_ratings)
@@ -924,10 +948,11 @@ elif page == "🏅 Classement ELO":
         st.info("  \n".join(info_parts))
 
         st.markdown("---")
-        tab_rank, tab_hist, tab_h2h = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête"])
+        tab_rank, tab_hist, tab_h2h, tab_manual = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête", "⚙️ ELO Manuels"])
 
-        ref_line = round(sum(base_ratings.values()) / len(base_ratings)) if base_ratings else 1500
+        ref_line = round(sum(effective_base.values()) / len(effective_base)) if effective_base else 1500
         ref_label = f"Médiane EloRating.net ({ref_line})" if base_ratings else "Base 1500"
+        n_manual_active = len(st.session_state.get("manual_elos", {}))
 
         with tab_rank:
             sorted_teams = sorted(elo_ratings.items(), key=lambda x: x[1], reverse=True)
@@ -993,36 +1018,58 @@ elif page == "🏅 Classement ELO":
             with c1:
                 team_a = st.selectbox("Équipe A", all_team_names_sorted, key="h2h_a")
             with c2:
-                default_b = all_team_names_sorted[1] if len(all_team_names_sorted) > 1 else all_team_names_sorted[0]
                 team_b = st.selectbox("Équipe B", all_team_names_sorted, index=1, key="h2h_b")
 
             if team_a and team_b and team_a != team_b:
-                ra = elo_ratings.get(team_a, ref_line)
-                rb = elo_ratings.get(team_b, ref_line)
-                rank_a = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_a) + 1
-                rank_b = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t]).index(team_b) + 1
+                ra_computed = elo_ratings.get(team_a, ref_line)
+                rb_computed = elo_ratings.get(team_b, ref_line)
+                rank_a = all_team_names_sorted.index(team_a) + 1
+                rank_b = all_team_names_sorted.index(team_b) + 1
 
-                ra_home = ra + home_adv
+                st.markdown("##### ⚙️ Ajustements pour ce match")
+                adj1, adj2, adj3 = st.columns(3)
+                with adj1:
+                    ra = st.number_input(
+                        f"ELO {team_a}",
+                        min_value=500, max_value=2500,
+                        value=int(ra_computed), step=1, key="h2h_ra_override",
+                        help=f"ELO calculé par simulation : {int(ra_computed)}"
+                    )
+                with adj2:
+                    rb = st.number_input(
+                        f"ELO {team_b}",
+                        min_value=500, max_value=2500,
+                        value=int(rb_computed), step=1, key="h2h_rb_override",
+                        help=f"ELO calculé par simulation : {int(rb_computed)}"
+                    )
+                with adj3:
+                    home_adv_h2h = st.slider(
+                        "Avantage domicile (match)",
+                        0, 300, int(home_adv), step=5, key="h2h_home_adv",
+                        help="Override l'avantage domicile global pour cette confrontation"
+                    )
+                if ra != int(ra_computed) or rb != int(rb_computed) or home_adv_h2h != home_adv:
+                    st.caption(f"🔧 Valeurs modifiées — simulation : {team_a} {int(ra_computed)} | {team_b} {int(rb_computed)} | avantage dom. global {home_adv}")
+
+                ra_home = ra + home_adv_h2h
                 ea = 1 / (1 + 10 ** ((rb - ra_home) / 400))
                 eb = 1 - ea
 
                 if base_ratings:
                     base_a = base_ratings.get(resolve_team_elo_name(team_a, base_ratings), ref_line) if resolve_team_elo_name(team_a, base_ratings) else ref_line
                     base_b = base_ratings.get(resolve_team_elo_name(team_b, base_ratings), ref_line) if resolve_team_elo_name(team_b, base_ratings) else ref_line
-                    delta_a = f"{ra - base_a:+.0f} vs base"
-                    delta_b = f"{rb - base_b:+.0f} vs base"
                     mc1, mc2, mc3 = st.columns(3)
-                    mc1.metric(f"ELO ajusté {team_a}", f"{ra:.0f}", delta_a)
-                    mc2.metric(f"ELO ajusté {team_b}", f"{rb:.0f}", delta_b)
+                    mc1.metric(f"ELO final {team_a}", f"{ra}", f"{ra - base_a:+.0f} vs EloRating.net")
+                    mc2.metric(f"ELO final {team_b}", f"{rb}", f"{rb - base_b:+.0f} vs EloRating.net")
                     mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
                     st.caption(f"Base EloRating.net → {team_a}: **{base_a:.0f}** | {team_b}: **{base_b:.0f}**")
                 else:
                     mc1, mc2, mc3 = st.columns(3)
-                    mc1.metric(f"ELO {team_a}", f"{ra:.0f}", f"#{rank_a}")
-                    mc2.metric(f"ELO {team_b}", f"{rb:.0f}", f"#{rank_b}")
+                    mc1.metric(f"ELO {team_a}", f"{ra}", f"#{rank_a}")
+                    mc2.metric(f"ELO {team_b}", f"{rb}", f"#{rank_b}")
                     mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
 
-                st.markdown(f"**Si {team_a} joue à domicile contre {team_b} :**")
+                st.markdown(f"**Si {team_a} joue à domicile contre {team_b} (avantage dom. {home_adv_h2h} pts) :**")
                 pc1, pc2, pc3 = st.columns(3)
                 pc1.metric(f"Victoire {team_a}", f"{ea*100:.1f}%", f"Cote équitable: {fair_odds(ea*100)}")
                 pc2.metric("Nul (approx.)", "≈ ?", "Non calculé par l'ELO seul")
@@ -1045,6 +1092,76 @@ elif page == "🏅 Classement ELO":
                     st.dataframe(h2h_df, width="stretch", hide_index=True)
                 else:
                     st.info("Aucun match direct entre ces deux équipes dans les données disponibles.")
+
+        with tab_manual:
+            st.markdown("#### ⚙️ ELO Manuels")
+            st.caption(
+                "Saisir un ELO manuel pour une équipe. "
+                "L'ELO de départ final est calculé comme : **75% ELO manuel + 25% EloRating.net**. "
+                "Ces valeurs affectent l'ensemble de la simulation (classement, historique, tête-à-tête)."
+            )
+
+            n_active = len(st.session_state.get("manual_elos", {}))
+            if n_active:
+                st.success(f"✅ {n_active} équipe(s) avec ELO manuel actif — simulation recalculée avec ces valeurs.")
+
+            all_teams_for_manual = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
+            manual_rows = []
+            for team in all_teams_for_manual:
+                elo_net_val = ref_line
+                if base_ratings:
+                    elo_name = resolve_team_elo_name(team, base_ratings)
+                    elo_net_val = int(base_ratings.get(elo_name, ref_line)) if elo_name else ref_line
+                manual_val = st.session_state.get("manual_elos", {}).get(team, None)
+                elo_final = round(0.75 * manual_val + 0.25 * elo_net_val) if manual_val else elo_net_val
+                manual_rows.append({
+                    "Équipe": team,
+                    "ELO EloRating.net": elo_net_val,
+                    "ELO Manuel": manual_val if manual_val else None,
+                    "ELO de départ (75/25)": elo_final,
+                    "ELO simulé final": int(elo_ratings.get(team, ref_line)),
+                })
+
+            manual_df_input = pd.DataFrame(manual_rows)
+
+            with st.form("form_manual_elos"):
+                st.markdown("**Modifie la colonne « ELO Manuel » puis clique sur Appliquer.**")
+                edited = st.data_editor(
+                    manual_df_input,
+                    column_config={
+                        "Équipe": st.column_config.TextColumn("Équipe", disabled=True),
+                        "ELO EloRating.net": st.column_config.NumberColumn("EloRating.net", disabled=True),
+                        "ELO Manuel": st.column_config.NumberColumn(
+                            "ELO Manuel ✏️",
+                            min_value=500, max_value=2500, step=1,
+                            help="Laisser vide pour utiliser uniquement EloRating.net"
+                        ),
+                        "ELO de départ (75/25)": st.column_config.NumberColumn("Départ simulé (75/25)", disabled=True),
+                        "ELO simulé final": st.column_config.NumberColumn("ELO après simulation", disabled=True),
+                    },
+                    hide_index=True,
+                    use_container_width=True,
+                    key="manual_elo_editor_form",
+                    num_rows="fixed",
+                )
+                col_apply, col_reset = st.columns([1, 1])
+                with col_apply:
+                    submitted = st.form_submit_button("✅ Appliquer les ELO manuels", type="primary")
+                with col_reset:
+                    reset = st.form_submit_button("🗑️ Réinitialiser tout")
+
+            if submitted:
+                new_manual = {}
+                for _, row in edited.iterrows():
+                    val = row["ELO Manuel"]
+                    if val is not None and not (isinstance(val, float) and pd.isna(val)):
+                        new_manual[row["Équipe"]] = int(val)
+                st.session_state.manual_elos = new_manual
+                st.rerun()
+
+            if reset:
+                st.session_state.manual_elos = {}
+                st.rerun()
 
 
 elif page == "🎯 Prédiction de Matchs":

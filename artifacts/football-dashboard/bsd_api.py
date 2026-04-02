@@ -239,10 +239,12 @@ def aggregate_bsd_season_stats(player_id: int):
 
     minutes = _sum("minutes_played")
     appearances = sum(1 for r in records if (r.get("minutes_played") or 0) > 0)
+    full_90 = sum(1 for r in records if (r.get("minutes_played") or 0) >= 90)
 
     return {
         "appearances":       appearances,
         "minutes_played":    minutes,
+        "full_90":           full_90,
         "rating":            _avg("rating"),
         "goals":             _sum("goals"),
         "assists":           _sum("goal_assist"),

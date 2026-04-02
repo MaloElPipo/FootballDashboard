@@ -177,9 +177,12 @@ def build_full_cache():
                         return round(sum(vals) / len(vals), 2) if vals else None
 
                     appearances = sum(1 for rec in records if (rec.get("minutes_played") or 0) > 0)
+                    total_mins = _sum("minutes_played")
+                    full_90 = sum(1 for rec in records if (rec.get("minutes_played") or 0) >= 90)
                     player_stats[str(pid)] = {
                         "appearances": appearances,
-                        "minutes_played": _sum("minutes_played"),
+                        "minutes_played": total_mins,
+                        "full_90": full_90,
                         "rating": _avg("rating"),
                         "goals": _sum("goals"),
                         "assists": _sum("goal_assist"),

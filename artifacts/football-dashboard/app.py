@@ -1841,15 +1841,30 @@ elif page == "🌍 Effectifs CM 2026":
                                 score_comp = float(rating_comp) if rating_comp is not None else 0.0
                             except (ValueError, TypeError):
                                 score_comp = 0.0
+                            total_mins = int(s.get("minutes_played", 0) or 0)
+                            apps = int(s.get("appearances", 0) or 0)
+                            full_90_count = int(s.get("full_90", 0) or 0)
+                            avg_mins = round(total_mins / apps, 1) if apps > 0 else 0.0
+                            xg_val = float(s.get("xg", 0) or 0)
+                            xa_val = float(s.get("xa", 0) or 0)
+                            nineties = total_mins / 90.0 if total_mins > 0 else 0
+                            xg_per90 = round(xg_val / nineties, 2) if nineties > 0 else 0.0
+                            xa_per90 = round(xa_val / nineties, 2) if nineties > 0 else 0.0
+
                             bsd_rows.append({
                                 "Joueur": pname,
                                 "Club": p.get("club", "—"),
                                 "Note moy.": note,
-                                "Matchs": int(s.get("appearances", 0) or 0),
+                                "Matchs": apps,
+                                "Min.": total_mins,
+                                "Min./match": avg_mins,
+                                "90 min": full_90_count,
                                 "Buts": int(s.get("goals", 0) or 0),
                                 "Passes D.": int(s.get("assists", 0) or 0),
-                                "xG": float(s.get("xg", 0) or 0),
-                                "xA": float(s.get("xa", 0) or 0),
+                                "xG": xg_val,
+                                "xG/90": xg_per90,
+                                "xA": xa_val,
+                                "xA/90": xa_per90,
                                 "% Duels": f"{s.get('duel_pct', 0)}%",
                                 "⭐ Score composite": score_comp,
                             })
@@ -1866,8 +1881,16 @@ elif page == "🌍 Effectifs CM 2026":
                                     "Note moy.": st.column_config.NumberColumn(
                                         "Note moy.", format="%.2f", width="small"
                                     ),
+                                    "Min.": st.column_config.NumberColumn("Min.", format="%d"),
+                                    "Min./match": st.column_config.NumberColumn("Min./match", format="%.1f"),
+                                    "90 min": st.column_config.NumberColumn("90 min", format="%d",
+                                        help="Nombre de matchs complets (≥90 min)"),
                                     "xG": st.column_config.NumberColumn("xG", format="%.2f"),
+                                    "xG/90": st.column_config.NumberColumn("xG/90", format="%.2f",
+                                        help="Expected Goals par 90 minutes"),
                                     "xA": st.column_config.NumberColumn("xA", format="%.2f"),
+                                    "xA/90": st.column_config.NumberColumn("xA/90", format="%.2f",
+                                        help="Expected Assists par 90 minutes"),
                                     "⭐ Score composite": st.column_config.NumberColumn(
                                         "⭐ Score", format="%.1f", width="small",
                                         help="Score composite 0-100 (note + valeur marchande + forme)"

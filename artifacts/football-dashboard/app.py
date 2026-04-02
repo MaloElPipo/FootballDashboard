@@ -1586,34 +1586,32 @@ elif page == "📅 Calendrier CDM 2026":
 
     ROUND_ORDER = [1, 2, 3, 6, 5, 27, 50, 28, 29]
 
-    COUNTRY_FLAGS = {
-        "Mexico": "🇲🇽", "South Africa": "🇿🇦", "Canada": "🇨🇦", "USA": "🇺🇸",
-        "France": "🇫🇷", "Spain": "🇪🇸", "Germany": "🇩🇪", "England": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "Portugal": "🇵🇹", "Netherlands": "🇳🇱", "Belgium": "🇧🇪", "Croatia": "🇭🇷",
-        "Austria": "🇦🇹", "Switzerland": "🇨🇭", "Norway": "🇳🇴", "Sweden": "🇸🇪",
-        "Czechia": "🇨🇿", "Türkiye": "🇹🇷", "Turkey": "🇹🇷", "Scotland": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-        "Bosnia & Herzegovina": "🇧🇦", "Bosnia and Herzegovina": "🇧🇦",
-        "Argentina": "🇦🇷", "Brazil": "🇧🇷", "Colombia": "🇨🇴", "Uruguay": "🇺🇾",
-        "Ecuador": "🇪🇨", "Paraguay": "🇵🇾", "Panama": "🇵🇦", "Curacao": "🇨🇼",
-        "Haiti": "🇭🇹", "Japan": "🇯🇵", "South Korea": "🇰🇷", "Iran": "🇮🇷",
-        "Saudi Arabia": "🇸🇦", "Australia": "🇦🇺", "Qatar": "🇶🇦", "Iraq": "🇮🇶",
-        "Jordan": "🇯🇴", "Uzbekistan": "🇺🇿", "Morocco": "🇲🇦", "Senegal": "🇸🇳",
-        "Egypt": "🇪🇬", "Algeria": "🇩🇿", "Tunisia": "🇹🇳", "Ivory Coast": "🇨🇮",
-        "Côte d'Ivoire": "🇨🇮", "Ghana": "🇬🇭", "DR Congo": "🇨🇩",
-        "Cape Verde": "🇨🇻", "New Zealand": "🇳🇿", "Italy": "🇮🇹",
-        "Denmark": "🇩🇰", "Poland": "🇵🇱", "Serbia": "🇷🇸", "Wales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-        "Ukraine": "🇺🇦", "Romania": "🇷🇴", "Greece": "🇬🇷", "Hungary": "🇭🇺",
-        "Republic of Ireland": "🇮🇪", "Iceland": "🇮🇸", "Georgia": "🇬🇪",
-        "Slovenia": "🇸🇮", "Slovakia": "🇸🇰", "North Macedonia": "🇲🇰",
-        "Chile": "🇨🇱", "Peru": "🇵🇪", "Bolivia": "🇧🇴", "Venezuela": "🇻🇪",
-        "Costa Rica": "🇨🇷", "Honduras": "🇭🇳", "Jamaica": "🇯🇲",
-        "China": "🇨🇳", "Thailand": "🇹🇭", "Vietnam": "🇻🇳",
-        "Indonesia": "🇮🇩", "Malaysia": "🇲🇾", "Bahrain": "🇧🇭",
-        "Oman": "🇴🇲", "Palestine": "🇵🇸", "Cameroon": "🇨🇲", "Nigeria": "🇳🇬",
-        "Mali": "🇲🇱", "Burkina Faso": "🇧🇫", "Tanzania": "🇹🇿",
-        "Mozambique": "🇲🇿", "Zambia": "🇿🇲", "Uganda": "🇺🇬",
-        "Benin": "🇧🇯", "Comoros": "🇰🇲", "Gabon": "🇬🇦",
-        "Congo": "🇨🇬", "Sudan": "🇸🇩",
+    COUNTRY_ISO = {
+        "Mexico": "mx", "South Africa": "za", "Canada": "ca", "USA": "us",
+        "France": "fr", "Spain": "es", "Germany": "de", "England": "gb-eng",
+        "Portugal": "pt", "Netherlands": "nl", "Belgium": "be", "Croatia": "hr",
+        "Austria": "at", "Switzerland": "ch", "Norway": "no", "Sweden": "se",
+        "Czechia": "cz", "Türkiye": "tr", "Turkey": "tr", "Scotland": "gb-sct",
+        "Bosnia & Herzegovina": "ba", "Bosnia and Herzegovina": "ba",
+        "Argentina": "ar", "Brazil": "br", "Colombia": "co", "Uruguay": "uy",
+        "Ecuador": "ec", "Paraguay": "py", "Panama": "pa", "Curacao": "cw",
+        "Haiti": "ht", "Japan": "jp", "South Korea": "kr", "Korea Republic": "kr",
+        "Iran": "ir", "Saudi Arabia": "sa", "Australia": "au", "Qatar": "qa",
+        "Iraq": "iq", "Jordan": "jo", "Uzbekistan": "uz",
+        "Morocco": "ma", "Senegal": "sn", "Egypt": "eg", "Algeria": "dz",
+        "Tunisia": "tn", "Ivory Coast": "ci", "Côte d'Ivoire": "ci",
+        "Ghana": "gh", "DR Congo": "cd", "Cape Verde": "cv",
+        "New Zealand": "nz", "Italy": "it", "Denmark": "dk", "Poland": "pl",
+        "Serbia": "rs", "Wales": "gb-wls", "Ukraine": "ua", "Romania": "ro",
+        "Greece": "gr", "Hungary": "hu", "Republic of Ireland": "ie",
+        "Iceland": "is", "Georgia": "ge", "Slovenia": "si", "Slovakia": "sk",
+        "North Macedonia": "mk", "Chile": "cl", "Peru": "pe", "Bolivia": "bo",
+        "Venezuela": "ve", "Costa Rica": "cr", "Honduras": "hn", "Jamaica": "jm",
+        "China": "cn", "Thailand": "th", "Vietnam": "vn", "Indonesia": "id",
+        "Malaysia": "my", "Bahrain": "bh", "Oman": "om", "Palestine": "ps",
+        "Cameroon": "cm", "Nigeria": "ng", "Mali": "ml", "Burkina Faso": "bf",
+        "Tanzania": "tz", "Mozambique": "mz", "Zambia": "zm", "Uganda": "ug",
+        "Benin": "bj", "Comoros": "km", "Gabon": "ga", "Congo": "cg", "Sudan": "sd",
     }
 
     ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
@@ -1628,7 +1626,10 @@ elif page == "📅 Calendrier CDM 2026":
     BK_LABELS = list(SELECTED_BOOKMAKERS.values())
 
     def _flag(team_name: str) -> str:
-        return COUNTRY_FLAGS.get(team_name, "🏳️")
+        iso = COUNTRY_ISO.get(team_name, "")
+        if iso:
+            return f"<img src='https://flagcdn.com/24x18/{iso}.png' style='vertical-align:middle;margin:0 4px' alt='{team_name}'>"
+        return ""
 
     @st.cache_data(ttl=3600)
     def fetch_wc_events():
@@ -1935,7 +1936,7 @@ elif page == "📅 Calendrier CDM 2026":
                 row = {
                     "Date": d_str,
                     "Phase": ROUND_LABELS.get(rnd, f"Tour {rnd}"),
-                    "Match": f"{_flag(home)} {home}  vs  {away} {_flag(away)}",
+                    "Match": f"{home}  vs  {away}",
                 }
                 best_home = 0
                 best_fav = "—"
@@ -1965,7 +1966,7 @@ elif page == "📅 Calendrier CDM 2026":
         if outright_odds:
             outright_rows = []
             for nation, bk_odds in sorted(outright_odds.items(), key=lambda x: min(x[1].values())):
-                row = {"Nation": f"{_flag(nation)} {nation}"}
+                row = {"Nation": nation}
                 for bk_key in BK_KEYS:
                     bk_label = SELECTED_BOOKMAKERS[bk_key]
                     row[bk_label] = bk_odds.get(bk_key)

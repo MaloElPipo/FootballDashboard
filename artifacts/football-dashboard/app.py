@@ -555,6 +555,7 @@ page = st.sidebar.radio(
         "🏅 Classement ELO",
         "🎯 Prédiction de Matchs",
         "💰 Comparaison de Cotes",
+        "📅 Calendrier CDM 2026",
         "🌍 Effectifs CM 2026",
         "🤖 Assistant IA",
     ],
@@ -564,7 +565,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -1583,6 +1584,263 @@ Si la question est en anglais, réponds en anglais."""
 
 # ═══════════════════════════════════════════════════════════════════
 # PAGE : 🌍 Effectifs CM 2026
+# ═══════════════════════════════════════════════════════════════════
+elif page == "📅 Calendrier CDM 2026":
+    st.header("📅 Calendrier — Coupe du Monde 2026")
+    st.caption("🇺🇸🇨🇦🇲🇽 États-Unis · Canada · Mexique — 11 juin au 19 juillet 2026 — Données BSD Sports")
+
+    BSD_BASE_URL = "https://sports.bzzoiro.com/api"
+    BSD_KEY = os.environ.get("BSD_API_KEY", "")
+    BSD_HEADERS = {"Authorization": f"Token {BSD_KEY}"}
+
+    ROUND_LABELS = {
+        1: "Journée 1", 2: "Journée 2", 3: "Journée 3",
+        6: "🏆 Huitièmes de finale", 5: "🏆 Quarts de finale",
+        27: "🏆 Demi-finales", 50: "🥉 Match pour la 3e place",
+        28: "🥇 Finale", 29: "🥇 Finale",
+    }
+
+    ROUND_ORDER = [1, 2, 3, 6, 5, 27, 50, 28, 29]
+
+    COUNTRY_FLAGS = {
+        "Mexico": "🇲🇽", "South Africa": "🇿🇦", "Canada": "🇨🇦", "USA": "🇺🇸",
+        "France": "🇫🇷", "Spain": "🇪🇸", "Germany": "🇩🇪", "England": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "Portugal": "🇵🇹", "Netherlands": "🇳🇱", "Belgium": "🇧🇪", "Croatia": "🇭🇷",
+        "Austria": "🇦🇹", "Switzerland": "🇨🇭", "Norway": "🇳🇴", "Sweden": "🇸🇪",
+        "Czechia": "🇨🇿", "Türkiye": "🇹🇷", "Turkey": "🇹🇷", "Scotland": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "Bosnia & Herzegovina": "🇧🇦", "Bosnia and Herzegovina": "🇧🇦",
+        "Argentina": "🇦🇷", "Brazil": "🇧🇷", "Colombia": "🇨🇴", "Uruguay": "🇺🇾",
+        "Ecuador": "🇪🇨", "Paraguay": "🇵🇾", "Panama": "🇵🇦", "Curacao": "🇨🇼",
+        "Haiti": "🇭🇹", "Japan": "🇯🇵", "South Korea": "🇰🇷", "Iran": "🇮🇷",
+        "Saudi Arabia": "🇸🇦", "Australia": "🇦🇺", "Qatar": "🇶🇦", "Iraq": "🇮🇶",
+        "Jordan": "🇯🇴", "Uzbekistan": "🇺🇿", "Morocco": "🇲🇦", "Senegal": "🇸🇳",
+        "Egypt": "🇪🇬", "Algeria": "🇩🇿", "Tunisia": "🇹🇳", "Ivory Coast": "🇨🇮",
+        "Côte d'Ivoire": "🇨🇮", "Ghana": "🇬🇭", "DR Congo": "🇨🇩",
+        "Cape Verde": "🇨🇻", "New Zealand": "🇳🇿", "Italy": "🇮🇹",
+        "Denmark": "🇩🇰", "Poland": "🇵🇱", "Serbia": "🇷🇸", "Wales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+        "Ukraine": "🇺🇦", "Romania": "🇷🇴", "Greece": "🇬🇷", "Hungary": "🇭🇺",
+        "Republic of Ireland": "🇮🇪", "Iceland": "🇮🇸", "Georgia": "🇬🇪",
+        "Slovenia": "🇸🇮", "Slovakia": "🇸🇰", "North Macedonia": "🇲🇰",
+        "Chile": "🇨🇱", "Peru": "🇵🇪", "Bolivia": "🇧🇴", "Venezuela": "🇻🇪",
+        "Costa Rica": "🇨🇷", "Honduras": "🇭🇳", "Jamaica": "🇯🇲",
+        "China": "🇨🇳", "Thailand": "🇹🇭", "Vietnam": "🇻🇳",
+        "Indonesia": "🇮🇩", "Malaysia": "🇲🇾", "Bahrain": "🇧🇭",
+        "Oman": "🇴🇲", "Palestine": "🇵🇸", "Cameroon": "🇨🇲", "Nigeria": "🇳🇬",
+        "Mali": "🇲🇱", "Burkina Faso": "🇧🇫", "Tanzania": "🇹🇿",
+        "Mozambique": "🇲🇿", "Zambia": "🇿🇲", "Uganda": "🇺🇬",
+        "Benin": "🇧🇯", "Comoros": "🇰🇲", "Gabon": "🇬🇦",
+        "Congo": "🇨🇬", "Sudan": "🇸🇩",
+    }
+
+    def _flag(team_name: str) -> str:
+        return COUNTRY_FLAGS.get(team_name, "🏳️")
+
+    @st.cache_data(ttl=3600)
+    def fetch_wc_events():
+        all_events = []
+        page_num = 1
+        while True:
+            r = requests.get(f"{BSD_BASE_URL}/events/", params={
+                "league": 27, "date_from": "2026-06-11", "date_to": "2026-07-19",
+                "per_page": 100, "page": page_num,
+            }, headers=BSD_HEADERS, timeout=15)
+            if r.status_code != 200:
+                break
+            data = r.json()
+            all_events.extend(data.get("results", []))
+            if not data.get("next"):
+                break
+            page_num += 1
+        return all_events
+
+    try:
+        events = fetch_wc_events()
+    except Exception as exc:
+        st.error(f"Erreur de récupération des matchs : {exc}")
+        events = []
+
+    if not events:
+        st.warning("Aucun match trouvé pour la Coupe du Monde 2026.")
+    else:
+        total_matches = len(events)
+        matches_with_odds = sum(1 for e in events if e.get("odds_home"))
+        finished = sum(1 for e in events if e.get("status") == "finished")
+
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("🏟️ Matchs", total_matches)
+        c2.metric("✅ Terminés", finished)
+        c3.metric("⏳ À venir", total_matches - finished)
+        c4.metric("📊 Avec cotes", matches_with_odds)
+
+        st.markdown("---")
+
+        phase_filter = st.radio(
+            "Phase",
+            ["Tout", "Phase de groupes", "Phase finale"],
+            horizontal=True,
+            key="wc_phase_filter",
+        )
+
+        group_rounds = {1, 2, 3}
+        ko_rounds = {5, 6, 27, 28, 29, 50}
+
+        if phase_filter == "Phase de groupes":
+            filtered = [e for e in events if e.get("round_number") in group_rounds]
+        elif phase_filter == "Phase finale":
+            filtered = [e for e in events if e.get("round_number") in ko_rounds]
+        else:
+            filtered = events
+
+        rounds_in_data = sorted(set(e.get("round_number", 0) for e in filtered),
+                                key=lambda r: ROUND_ORDER.index(r) if r in ROUND_ORDER else 99)
+
+        for rnd in rounds_in_data:
+            label = ROUND_LABELS.get(rnd, f"Tour {rnd}")
+            if rnd in group_rounds:
+                label = f"⚽ Phase de groupes — {label}"
+
+            rnd_events = [e for e in filtered if e.get("round_number") == rnd]
+            rnd_events.sort(key=lambda e: e.get("event_date", ""))
+
+            with st.expander(f"{label}  ({len(rnd_events)} matchs)", expanded=(rnd == rounds_in_data[0])):
+                dates_in_round = sorted(set(e.get("event_date", "")[:10] for e in rnd_events))
+                for date_str in dates_in_round:
+                    from datetime import datetime
+                    try:
+                        dt = datetime.strptime(date_str, "%Y-%m-%d")
+                        jour_fr = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"][dt.weekday()]
+                        mois_fr = ["janv.", "fév.", "mars", "avr.", "mai", "juin",
+                                   "juil.", "août", "sept.", "oct.", "nov.", "déc."][dt.month - 1]
+                        display_date = f"{jour_fr} {dt.day} {mois_fr} {dt.year}"
+                    except Exception:
+                        display_date = date_str
+
+                    st.markdown(f"**📆 {display_date}**")
+
+                    day_events = [e for e in rnd_events if e.get("event_date", "")[:10] == date_str]
+
+                    for ev in day_events:
+                        home = ev.get("home_team", "?")
+                        away = ev.get("away_team", "?")
+                        h_flag = _flag(home)
+                        a_flag = _flag(away)
+
+                        try:
+                            raw_dt = ev.get("event_date", "")
+                            if "T" in raw_dt:
+                                from datetime import timezone, timedelta
+                                ev_dt = datetime.fromisoformat(raw_dt)
+                                paris_offset = timedelta(hours=2)
+                                ev_local = ev_dt.astimezone(timezone(paris_offset))
+                                kick_time = ev_local.strftime("%H:%M")
+                            else:
+                                kick_time = "—"
+                        except Exception:
+                            kick_time = "—"
+
+                        status = ev.get("status", "notstarted")
+                        hs = ev.get("home_score")
+                        as_ = ev.get("away_score")
+
+                        if status == "finished" and hs is not None:
+                            score_display = f"**{hs} — {as_}**"
+                        elif status == "inprogress":
+                            minute = ev.get("current_minute", "?")
+                            score_display = f"🔴 {hs} — {as_} ({minute}')"
+                        else:
+                            score_display = f"🕐 {kick_time}"
+
+                        oh = ev.get("odds_home")
+                        od = ev.get("odds_draw")
+                        oa = ev.get("odds_away")
+
+                        match_cols = st.columns([3, 1, 3, 4])
+                        with match_cols[0]:
+                            st.markdown(f"<div style='text-align:right;font-size:1.05em'>{h_flag} {home}</div>",
+                                        unsafe_allow_html=True)
+                        with match_cols[1]:
+                            st.markdown(f"<div style='text-align:center;font-size:1.05em'>{score_display}</div>",
+                                        unsafe_allow_html=True)
+                        with match_cols[2]:
+                            st.markdown(f"<div style='text-align:left;font-size:1.05em'>{away} {a_flag}</div>",
+                                        unsafe_allow_html=True)
+                        with match_cols[3]:
+                            if oh and od and oa:
+                                st.markdown(
+                                    f"<div style='text-align:center;font-size:0.85em;color:#888'>"
+                                    f"<span style='color:#2ecc71'>1: {oh:.2f}</span> · "
+                                    f"<span style='color:#f39c12'>N: {od:.2f}</span> · "
+                                    f"<span style='color:#e74c3c'>2: {oa:.2f}</span>"
+                                    f"</div>",
+                                    unsafe_allow_html=True,
+                                )
+                            else:
+                                st.markdown(
+                                    "<div style='text-align:center;font-size:0.8em;color:#555'>Cotes indisponibles</div>",
+                                    unsafe_allow_html=True,
+                                )
+
+                        o25 = ev.get("odds_over_25")
+                        u25 = ev.get("odds_under_25")
+                        btts_y = ev.get("odds_btts_yes")
+                        btts_n = ev.get("odds_btts_no")
+                        if o25 or u25 or btts_y or btts_n:
+                            extra_parts = []
+                            if o25 and u25:
+                                extra_parts.append(f"O2.5: {o25:.2f} / U2.5: {u25:.2f}")
+                            if btts_y and btts_n:
+                                extra_parts.append(f"BTTS Oui: {btts_y:.2f} / Non: {btts_n:.2f}")
+                            if extra_parts:
+                                st.caption("   ".join(extra_parts))
+
+                        st.markdown("<hr style='margin:2px 0;border-color:#333'>", unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        st.subheader("📊 Résumé des cotes disponibles")
+        odds_events = [e for e in events if e.get("odds_home")]
+        if odds_events:
+            odds_rows = []
+            for ev in sorted(odds_events, key=lambda e: e.get("event_date", "")):
+                oh = ev.get("odds_home", 0)
+                od = ev.get("odds_draw", 0)
+                oa = ev.get("odds_away", 0)
+                home = ev.get("home_team", "?")
+                away = ev.get("away_team", "?")
+                rnd = ev.get("round_number", 0)
+
+                if oh and od and oa:
+                    if oh <= od and oh <= oa:
+                        fav = home
+                    elif oa <= od and oa <= oh:
+                        fav = away
+                    else:
+                        fav = "Match nul"
+                else:
+                    fav = "—"
+
+                try:
+                    raw_dt = ev.get("event_date", "")
+                    d_str = raw_dt[:10] if raw_dt else "—"
+                except Exception:
+                    d_str = "—"
+
+                odds_rows.append({
+                    "Date": d_str,
+                    "Phase": ROUND_LABELS.get(rnd, f"Tour {rnd}"),
+                    "Match": f"{_flag(home)} {home}  vs  {away} {_flag(away)}",
+                    "1 (Dom)": oh,
+                    "N (Nul)": od,
+                    "2 (Ext)": oa,
+                    "Favori": f"{_flag(fav)} {fav}" if fav not in ("—", "Match nul") else fav,
+                })
+
+            df_odds = pd.DataFrame(odds_rows)
+            st.dataframe(df_odds, use_container_width=True, hide_index=True)
+        else:
+            st.info("Aucune cote disponible pour le moment.")
+
+
 # ═══════════════════════════════════════════════════════════════════
 elif page == "🌍 Effectifs CM 2026":
     st.header("🌍 Effectifs — Coupe du Monde 2026")

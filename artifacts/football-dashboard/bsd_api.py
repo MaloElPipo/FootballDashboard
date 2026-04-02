@@ -271,8 +271,15 @@ def get_squad_bsd_stats(players_raw: list, nation_code: str = None):
     """
     For a list of TM squad players (dicts with 'name' and 'club'),
     return a dict: player_name → aggregated BSD stats (or None).
-    If nation_code is provided (e.g. 'FRA'), uses nationality-based player lookup.
+    Uses local cache first (instant), falls back to live API.
     """
+    from bsd_cache import is_cache_fresh, get_cached_squad_stats
+
+    if nation_code and is_cache_fresh():
+        cached = get_cached_squad_stats(nation_code, players_raw)
+        if any(v is not None for v in cached.values()):
+            return cached
+
     results = {}
     for p in players_raw:
         name = p.get("name", "")

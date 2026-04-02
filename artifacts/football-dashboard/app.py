@@ -18,6 +18,9 @@ from bsd_api import (
     aggregate_bsd_season_stats,
     TM_TO_BSD_TEAM,
 )
+from bsd_cache import ensure_cache_ready, cache_summary
+
+ensure_cache_ready()
 
 API_BASE = os.environ.get("STATS_API_URL", "https://api.thestatsapi.com/api")
 API_KEY = os.environ.get("STATS_API_KEY", "")
@@ -1605,6 +1608,28 @@ elif page == "🌍 Effectifs CM 2026":
             icon="⚠️",
         )
 
+    # ── Statut cache BSD ─────────────────────────────────────────────
+    bsd_cache_info = cache_summary()
+    if bsd_cache_info.get("exists") and bsd_cache_info.get("fresh"):
+        age_h = bsd_cache_info.get("age_hours", 0)
+        n_stats = bsd_cache_info.get("player_stats", 0)
+        updated = bsd_cache_info.get("updated_at", "")[:19].replace("T", " ")
+        st.info(
+            f"📊 **Cache BSD actif** — {n_stats} joueurs pré-chargés · "
+            f"Mis à jour : {updated} UTC (il y a {age_h:.0f}h) · "
+            f"Prochain rafraîchissement : 05:00 UTC",
+            icon="📊",
+        )
+    else:
+        from bsd_cache import is_cache_fresh
+        if not is_cache_fresh():
+            st.warning(
+                "⏳ Cache BSD en cours de construction en arrière-plan… "
+                "Les stats seront disponibles d'ici quelques minutes. "
+                "En attendant, les données sont chargées en direct depuis l'API.",
+                icon="⏳",
+            )
+
     # ── Helper d'affichage/édition du tableau ────────────────────────
     def _show_squad_editor(players_raw: list[dict], nation_code: str):
         if not players_raw:
@@ -1863,7 +1888,30 @@ elif page == "🌍 Effectifs CM 2026":
                 st.info("Cliquez sur **Rafraîchir depuis TM** pour charger cet effectif.")
 
     # ── Admin : gestion du cache ────────────────────────────────────
-    with st.expander("⚙️ Gestion du cache live"):
+    with st.expander("⚙️ Gestion des caches"):
+        # ── Cache BSD API ─────────────────────────────────────────
+        st.markdown("##### Cache BSD API (stats joueurs)")
+        bsd_info = cache_summary()
+        if bsd_info.get("exists"):
+            bc1, bc2, bc3 = st.columns(3)
+            bc1.metric("Joueurs avec stats", bsd_info.get("player_stats", 0))
+            bc2.metric("Nations couvertes", bsd_info.get("squads_matched", 0))
+            age = bsd_info.get("age_hours", 0)
+            bc3.metric("Ancienneté", f"{age:.0f}h", "Frais" if bsd_info.get("fresh") else "Périmé")
+        else:
+            st.info("Cache BSD non encore construit.")
+
+        if st.button("🔄 Reconstruire le cache BSD maintenant", key="rebuild_bsd"):
+            import threading
+            from bsd_cache import build_full_cache
+            st.info("Construction du cache BSD lancée en arrière-plan (~10-15 min)…")
+            t = threading.Thread(target=build_full_cache, daemon=True)
+            t.start()
+
+        st.markdown("---")
+
+        # ── Cache TM live ─────────────────────────────────────────
+        st.markdown("##### Cache TM live (scrape Transfermarkt)")
         cache_status2 = get_cache_status()
         st.markdown("Vider le cache live force un re-scrape depuis TM à la prochaine demande.")
         all_codes = [n["code"] for conf in WC2026_NATIONS.values() for n in conf]

@@ -2137,30 +2137,8 @@ elif page == "🌍 Effectifs CM 2026":
             with st.expander(f"👁 {n_inactive} joueur(s) non retenu(s)", expanded=False):
                 st.markdown(", ".join(inactive_names))
 
-    _linked_nation = None
-    if _nav_nation:
-        _linked_nation = get_nation_by_code(_nav_nation)
-    if _linked_nation:
-        _ln_code = _linked_nation["code"]
-        _ln_fr = _linked_nation["fr"]
-        st.markdown(f"### 📌 {_ln_fr}")
-        if st.button("← Retour à tous les effectifs"):
-            st.query_params.clear()
-            st.rerun()
-
-        _ln_live = cache_status.get(_ln_code, {})
-        _ln_has_live = bool(_ln_live and _ln_live.get("valid"))
-        if _ln_has_live:
-            from squad_scraper import _load_cache as _sc_load
-            _ln_players = _sc_load().get(_ln_code, {}).get("players", [])
-        else:
-            _ln_players = get_static_squad(_ln_code)
-
-        if _ln_players:
-            _show_squad_editor(_ln_players, _ln_code)
-        else:
-            st.info("Aucune donnée disponible pour cette nation.")
-        st.markdown("---")
+    _linked_nation = get_nation_by_code(_nav_nation) if _nav_nation else None
+    _linked_conf = _linked_nation.get("conf") if _linked_nation else None
 
     # ── Tabs par confédération ──────────────────────────────────────
     conf_keys = list(WC2026_NATIONS.keys())
@@ -2173,7 +2151,7 @@ elif page == "🌍 Effectifs CM 2026":
             nation_names_fr = [n["fr"] for n in nations]
 
             _sel_index = 0
-            if _linked_nation and _linked_nation.get("conf") == conf:
+            if _linked_nation and _linked_conf == conf:
                 try:
                     _sel_index = nation_names_fr.index(_linked_nation["fr"])
                 except ValueError:

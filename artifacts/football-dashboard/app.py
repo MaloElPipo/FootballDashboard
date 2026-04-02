@@ -10,6 +10,14 @@ from squad_scraper import (
     get_static_squad, get_static_db_status,
     load_player_selection, save_player_selection, get_nation_active_status,
 )
+from bsd_api import (
+    get_bsd_odds_for_match,
+    get_squad_bsd_stats,
+    compute_player_rating,
+    find_bsd_player,
+    aggregate_bsd_season_stats,
+    TM_TO_BSD_TEAM,
+)
 
 API_BASE = os.environ.get("STATS_API_URL", "https://api.thestatsapi.com/api")
 API_KEY = os.environ.get("STATS_API_KEY", "")
@@ -1381,18 +1389,62 @@ elif page == "💰 Comparaison de Cotes":
                 eq3.metric(f"Victoire {away_cotes}", f"{pa}%", f"Cote équitable : **{fo_away}**")
 
                 st.markdown("---")
-                st.markdown("#### Saisie des cotes bookmaker")
-                st.caption("Entre les cotes décimales de ton bookmaker (ex: 2.10, 3.20, 3.80)")
+
+                # ── BSD API : cotes réelles en direct ──────────────────
+                bsd_odds = get_bsd_odds_for_match(home_cotes, away_cotes)
+
+                if bsd_odds:
+                    st.success(
+                        f"📡 **Cotes BSD API trouvées** — Match du {bsd_odds.get('event_date', 'N/A')} "
+                        f"({bsd_odds.get('league', 'N/A')}) — pré-chargées automatiquement",
+                        icon="📡",
+                    )
+                    bsd_default_home = float(bsd_odds.get("home") or fo_home or 2.0)
+                    bsd_default_draw = float(bsd_odds.get("draw") or fo_draw or 3.0)
+                    bsd_default_away = float(bsd_odds.get("away") or fo_away or 4.0)
+
+                    # Afficher les cotes O/U et BTTS si disponibles
+                    with st.expander("📊 Plus de cotes BSD (O/U, BTTS, xG)", expanded=False):
+                        bc1, bc2, bc3 = st.columns(3)
+                        if bsd_odds.get("over25"):
+                            bc1.metric("+ 2.5 buts", f"{bsd_odds['over25']}")
+                        if bsd_odds.get("under25"):
+                            bc1.metric("- 2.5 buts", f"{bsd_odds['under25']}")
+                        if bsd_odds.get("over15"):
+                            bc2.metric("+ 1.5 buts", f"{bsd_odds['over15']}")
+                        if bsd_odds.get("over35"):
+                            bc2.metric("+ 3.5 buts", f"{bsd_odds['over35']}")
+                        if bsd_odds.get("btts_yes"):
+                            bc3.metric("Les deux équipes marquent (oui)", f"{bsd_odds['btts_yes']}")
+                        if bsd_odds.get("btts_no"):
+                            bc3.metric("Les deux équipes marquent (non)", f"{bsd_odds['btts_no']}")
+                        if bsd_odds.get("xg_home") or bsd_odds.get("xg_away"):
+                            xgc1, xgc2 = st.columns(2)
+                            xgc1.metric("xG Domicile", f"{bsd_odds.get('xg_home', '—')}")
+                            xgc2.metric("xG Extérieur", f"{bsd_odds.get('xg_away', '—')}")
+                else:
+                    st.info(
+                        "ℹ️ Aucune cote BSD API disponible pour ce match "
+                        "(match non programmé dans les 2-3 prochains jours). "
+                        "Saisis les cotes manuellement.",
+                        icon="ℹ️",
+                    )
+                    bsd_default_home = float(fo_home) if fo_home else 2.0
+                    bsd_default_draw = float(fo_draw) if fo_draw else 3.0
+                    bsd_default_away = float(fo_away) if fo_away else 4.0
+
+                st.markdown("#### Cotes bookmaker (modifiables)")
+                st.caption("Pré-remplies depuis BSD API si disponible, sinon depuis le modèle. Modifie si besoin.")
                 b1, b2, b3 = st.columns(3)
                 with b1:
                     bk_home = st.number_input(f"Cote {home_cotes}", min_value=1.01, max_value=100.0,
-                                               value=float(fo_home) if fo_home else 2.0, step=0.05, format="%.2f", key="bk_home")
+                                               value=max(1.01, bsd_default_home), step=0.05, format="%.2f", key="bk_home")
                 with b2:
                     bk_draw = st.number_input("Cote Nul", min_value=1.01, max_value=100.0,
-                                               value=float(fo_draw) if fo_draw else 3.0, step=0.05, format="%.2f", key="bk_draw")
+                                               value=max(1.01, bsd_default_draw), step=0.05, format="%.2f", key="bk_draw")
                 with b3:
                     bk_away = st.number_input(f"Cote {away_cotes}", min_value=1.01, max_value=100.0,
-                                               value=float(fo_away) if fo_away else 4.0, step=0.05, format="%.2f", key="bk_away")
+                                               value=max(1.01, bsd_default_away), step=0.05, format="%.2f", key="bk_away")
 
                 st.markdown("---")
                 st.markdown("#### Analyse de valeur")
@@ -1731,6 +1783,82 @@ elif page == "🌍 Effectifs CM 2026":
             # ── Affichage/édition du tableau ─────────────────────────
             if players_raw:
                 _show_squad_editor(players_raw, code)
+
+                # ── Stats BSD API ──────────────────────────────────────
+                from bsd_api import TM_CODE_TO_BSD_NATIONALITY
+                nat_name = TM_CODE_TO_BSD_NATIONALITY.get(code)
+                if nat_name or any(p.get("club") in TM_TO_BSD_TEAM for p in players_raw):
+                    with st.expander(
+                        f"📊 Stats BSD API — Saison 2025/26"
+                        + (f" · Nationalité : {nat_name}" if nat_name else ""),
+                        expanded=False,
+                    ):
+                        st.caption(
+                            "Notes moyennes, buts, passes décisives, xG et valeur marchande "
+                            "via BSD API (saison 2025/26). Chargement ~10-20 sec à la première ouverture."
+                        )
+                        with st.spinner("Récupération des stats clubs…"):
+                            bsd_stats_map = get_squad_bsd_stats(players_raw, nation_code=code)
+
+                        bsd_rows = []
+                        for p in players_raw:
+                            pname = p.get("name", "")
+                            s = bsd_stats_map.get(pname)
+                            if not s:
+                                continue
+                            rating_comp = compute_player_rating(s, p.get("market_value_eur", 0))
+                            bsd_rows.append({
+                                "Joueur": pname,
+                                "Club": p.get("club", "—"),
+                                "Note moy.": s.get("rating") or "—",
+                                "Matchs": s.get("appearances", 0),
+                                "Buts": s.get("goals", 0),
+                                "Passes D.": s.get("assists", 0),
+                                "xG": s.get("xg", 0),
+                                "xA": s.get("xa", 0),
+                                "% Duels": f"{s.get('duel_pct', 0)}%",
+                                "⭐ Score composite": rating_comp or "—",
+                            })
+
+                        if bsd_rows:
+                            df_bsd = pd.DataFrame(bsd_rows).sort_values(
+                                "Note moy.", ascending=False
+                            ).reset_index(drop=True)
+                            st.dataframe(
+                                df_bsd,
+                                hide_index=True,
+                                use_container_width=True,
+                                column_config={
+                                    "Note moy.": st.column_config.NumberColumn(
+                                        "Note moy.", format="%.2f", width="small"
+                                    ),
+                                    "xG": st.column_config.NumberColumn("xG", format="%.2f"),
+                                    "xA": st.column_config.NumberColumn("xA", format="%.2f"),
+                                    "⭐ Score composite": st.column_config.NumberColumn(
+                                        "⭐ Score", format="%.1f", width="small",
+                                        help="Score composite 0-100 (note + valeur marchande + forme)"
+                                    ),
+                                },
+                            )
+
+                            # Top 3 de la sélection
+                            top3 = df_bsd.head(3)
+                            st.markdown("**🏆 Top 3 joueurs de la sélection (note BSD)**")
+                            tcol1, tcol2, tcol3 = st.columns(3)
+                            for i, (col, (_, row)) in enumerate(
+                                zip([tcol1, tcol2, tcol3], top3.iterrows())
+                            ):
+                                medal = ["🥇", "🥈", "🥉"][i]
+                                col.metric(
+                                    f"{medal} {row['Joueur']}",
+                                    f"{row['Note moy.']:.2f}" if isinstance(row['Note moy.'], float) else "—",
+                                    f"{row['Buts']}G / {row['Passes D.']}A — xG {row['xG']:.2f}",
+                                )
+                        else:
+                            st.info(
+                                "Aucun joueur de cette sélection n'a pu être "
+                                "identifié dans la BSD API pour la saison en cours."
+                            )
             elif data_source == "none" and nation["tm_id"] is not None:
                 st.info("Cliquez sur **Rafraîchir depuis TM** pour charger cet effectif.")
 

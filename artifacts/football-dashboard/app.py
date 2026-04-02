@@ -1832,17 +1832,26 @@ elif page == "🌍 Effectifs CM 2026":
                             if not s:
                                 continue
                             rating_comp = compute_player_rating(s, p.get("market_value_eur", 0))
+                            raw_rating = s.get("rating")
+                            try:
+                                note = float(raw_rating) if raw_rating is not None else 0.0
+                            except (ValueError, TypeError):
+                                note = 0.0
+                            try:
+                                score_comp = float(rating_comp) if rating_comp is not None else 0.0
+                            except (ValueError, TypeError):
+                                score_comp = 0.0
                             bsd_rows.append({
                                 "Joueur": pname,
                                 "Club": p.get("club", "—"),
-                                "Note moy.": s.get("rating") or "—",
-                                "Matchs": s.get("appearances", 0),
-                                "Buts": s.get("goals", 0),
-                                "Passes D.": s.get("assists", 0),
-                                "xG": s.get("xg", 0),
-                                "xA": s.get("xa", 0),
+                                "Note moy.": note,
+                                "Matchs": int(s.get("appearances", 0) or 0),
+                                "Buts": int(s.get("goals", 0) or 0),
+                                "Passes D.": int(s.get("assists", 0) or 0),
+                                "xG": float(s.get("xg", 0) or 0),
+                                "xA": float(s.get("xa", 0) or 0),
                                 "% Duels": f"{s.get('duel_pct', 0)}%",
-                                "⭐ Score composite": rating_comp or "—",
+                                "⭐ Score composite": score_comp,
                             })
 
                         if bsd_rows:

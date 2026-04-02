@@ -36,6 +36,25 @@ TM_TO_BSD_TEAM = {
     "Monaco":       101,  "OGC Nice":  103,  "Paris SG":   114,
     "RC Lens":       99,  "Real Madrid": 57, "Stade Rennais": 97,
     "Tottenham":      9,
+    "FC Porto":      35,  "Celta de Vigo": 49, "Real Betis": 56,
+    "Athletic Bilbao": 51, "Real Sociedad": 48, "Villarreal": 41,
+    "Séville FC":    52,  "Getafe":     50,  "Rayo Vallecano": 40,
+    "Gérone FC":     39,  "RCD Majorque": 43, "Valence CF": 47,
+    "Dortmund":      84,  "RB Leipzig": 82,  "Wolfsbourg": 80,
+    "Fribourg":      87,  "Eint. Francfort": 86, "Stuttgart": 88,
+    "Naples":        70,  "Atalanta":   67,  "Lazio":      64,
+    "Fiorentina":    68,  "Bologne FC": 71,  "Udinese":    78,
+    "Man Utd":        2,  "Newcastle":  15,  "Brighton":   10,
+    "West Ham":       4,  "Everton":    11,  "Wolverhampton": 17,
+    "Nottingham":     8,  "Bournemouth": 6,  "Fulham":      7,
+    "Brentford":      5,  "Ipswich Town": 19, "Southampton": 16,
+    "Leicester":     20,  "Ajax":      122,  "PSV":       123,
+    "Feyenoord":    124,  "Benfica":    30,  "Sporting CP": 32,
+    "Galatasaray":  132,  "Besiktas":  133,  "Como":       76,
+    "Strasbourg":   107,  "Lyon":       96,  "LOSC Lille": 102,
+    "Montpellier":  100,  "Nantes":    106,  "Saint-Étienne": 108,
+    "Toulouse FC":  112,  "AJ Auxerre": 110, "Angers SCO": 109,
+    "Stade Brestois": 104, "Le Havre AC": 111, "Stade de Reims": 105,
 }
 
 def _norm(s: str) -> str:
@@ -166,21 +185,43 @@ def _match_player_in_list(player_name: str, candidates: list):
     """Fuzzy name match of player_name against a list of BSD player dicts."""
     target = _norm(player_name)
     parts_t = target.split()
-    # 1. Exact normalised match
+    if not parts_t:
+        return None
+
     for p in candidates:
         if _norm(p.get("name", "")) == target:
             return p
-    # 2. Last-name + first initial
+
+    if len(parts_t) >= 2:
+        for p in candidates:
+            pn = _norm(p.get("name", "")).split()
+            if len(pn) >= 2 and parts_t[0] == pn[0] and parts_t[-1] == pn[-1]:
+                return p
+
     for p in candidates:
         pn = _norm(p.get("name", "")).split()
         if parts_t and pn and parts_t[-1] == pn[-1]:
             if len(parts_t) > 1 and len(pn) > 1 and parts_t[0][0] == pn[0][0]:
                 return p
-    # 3. Last name only (>= 5 chars to avoid false positives)
+
+    if len(parts_t) >= 2:
+        compound = " ".join(parts_t[-2:])
+        for p in candidates:
+            pn_full = _norm(p.get("name", ""))
+            if compound in pn_full and len(compound) >= 8:
+                return p
+
     for p in candidates:
         pn = _norm(p.get("name", "")).split()
         if parts_t and pn and parts_t[-1] == pn[-1] and len(parts_t[-1]) >= 5:
             return p
+
+    if len(parts_t) == 1 and len(target) >= 4:
+        for p in candidates:
+            pn = _norm(p.get("name", "")).split()
+            if target in pn:
+                return p
+
     return None
 
 

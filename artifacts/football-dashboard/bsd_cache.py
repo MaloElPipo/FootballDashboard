@@ -13,6 +13,7 @@ logger = logging.getLogger("bsd_cache")
 CACHE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_FILE = os.path.join(CACHE_DIR, "bsd_data_cache.json")
 LOCK = threading.Lock()
+_building = False
 
 MAX_CACHE_AGE_HOURS = 26
 
@@ -58,9 +59,22 @@ def build_full_cache():
     """
     Construit le cache complet :
       1. Joueurs par nationalité (47 nations CM2026)
-      2. Matching squad TM → BSD player IDs
+      2. Matching squad TM → BSD player IDs (+ fallback club)
       3. Stats agrégées pour chaque joueur matché
     """
+    global _building
+    if _building:
+        logger.info("Build déjà en cours, skip")
+        return None
+    _building = True
+
+    try:
+        return _do_build()
+    finally:
+        _building = False
+
+
+def _do_build():
     import requests
     import unicodedata
 
@@ -121,34 +135,91 @@ def build_full_cache():
     def _match_in_list(player_name, candidates):
         target = _norm(player_name)
         parts_t = target.split()
+        if not parts_t:
+            return None
+
         for p in candidates:
             if _norm(p.get("name", "")) == target:
                 return p
+
+        if len(parts_t) >= 2:
+            for p in candidates:
+                pn = _norm(p.get("name", "")).split()
+                if len(pn) >= 2 and parts_t[0] == pn[0] and parts_t[-1] == pn[-1]:
+                    return p
+
         for p in candidates:
             pn = _norm(p.get("name", "")).split()
             if parts_t and pn and parts_t[-1] == pn[-1]:
                 if len(parts_t) > 1 and len(pn) > 1 and parts_t[0][0] == pn[0][0]:
                     return p
+
+        if len(parts_t) >= 2:
+            compound = " ".join(parts_t[-2:])
+            for p in candidates:
+                pn_full = _norm(p.get("name", ""))
+                if compound in pn_full and len(compound) >= 8:
+                    return p
+
         for p in candidates:
             pn = _norm(p.get("name", "")).split()
             if parts_t and pn and parts_t[-1] == pn[-1] and len(parts_t[-1]) >= 5:
                 return p
+
+        if len(parts_t) == 1 and len(target) >= 4:
+            for p in candidates:
+                pn = _norm(p.get("name", "")).split()
+                if target in pn:
+                    return p
+
         return None
 
     squad_matches = {}
     all_bsd_ids_to_fetch = set()
 
+    from bsd_api import TM_TO_BSD_TEAM
+
     for code in squads:
         nat_pool = nationality_players.get(code, [])
-        if not nat_pool:
-            continue
         matches = {}
+        unmatched_players = []
         for p in squads[code].get("players", []):
             name = p.get("name", "")
-            bsd_p = _match_in_list(name, nat_pool)
+            bsd_p = _match_in_list(name, nat_pool) if nat_pool else None
             if bsd_p and bsd_p.get("id"):
                 matches[name] = bsd_p["id"]
                 all_bsd_ids_to_fetch.add(bsd_p["id"])
+            else:
+                unmatched_players.append(p)
+
+        if unmatched_players:
+            club_players_cache = {}
+            for p in unmatched_players:
+                club = p.get("club", "")
+                if club not in club_players_cache:
+                    team_id = TM_TO_BSD_TEAM.get(club)
+                    if team_id:
+                        try:
+                            r = requests.get(
+                                f"{BASE}/players/",
+                                params={"team": team_id, "per_page": 100},
+                                headers=HEADERS, timeout=15,
+                            )
+                            club_players_cache[club] = r.json().get("results", []) if r.status_code == 200 else []
+                        except Exception:
+                            club_players_cache[club] = []
+                        time.sleep(0.05)
+                    else:
+                        club_players_cache[club] = []
+
+                club_pool = club_players_cache.get(club, [])
+                if club_pool:
+                    bsd_p = _match_in_list(p.get("name", ""), club_pool)
+                    if bsd_p and bsd_p.get("id"):
+                        matches[p["name"]] = bsd_p["id"]
+                        all_bsd_ids_to_fetch.add(bsd_p["id"])
+                        logger.info(f"    Club fallback: {p['name']} → {bsd_p.get('name')} (ID {bsd_p['id']})")
+
         squad_matches[code] = matches
 
     total_matched = sum(len(v) for v in squad_matches.values())

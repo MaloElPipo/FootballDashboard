@@ -51,7 +51,8 @@ TM_CODE_TO_BSD_NATIONALITY = {
     "POR": "Portugal",  "NED": "Netherlands","BEL": "Belgium",  "CRO": "Croatia",
     "AUT": "Austria",   "SUI": "Switzerland","NOR": "Norway",   "SWE": "Sweden",
     "CZE": "Czechia",  "TUR": "Türkiye",   "SCO": "Scotland",
-    # BIH + QAT: 0 joueurs dans BSD, pas de mapping possible
+    "BIH": "Bosnia & Herzegovina",
+    # QAT: 0 joueurs dans BSD, pas de mapping possible
     # CONMEBOL (6)
     "ARG": "Argentina", "BRA": "Brazil",    "COL": "Colombia",  "URU": "Uruguay",
     "ECU": "Ecuador",   "PAR": "Paraguay",

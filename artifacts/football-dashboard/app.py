@@ -1745,6 +1745,12 @@ elif page == "📅 Calendrier CDM 2026":
         a = BSD_TO_ODDS_TEAM.get(away, away)
         return f"{h} vs {a}"
 
+    if st.button("🔄 Rafraîchir toutes les cotes", type="primary", key="refresh_all_odds"):
+        fetch_wc_events.clear()
+        fetch_odds_api_h2h.clear()
+        fetch_odds_api_outright.clear()
+        st.rerun()
+
     try:
         events = fetch_wc_events()
     except Exception as exc:

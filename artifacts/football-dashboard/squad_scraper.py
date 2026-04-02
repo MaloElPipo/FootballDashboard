@@ -14,6 +14,7 @@ from html import unescape
 
 CACHE_FILE = os.path.join(os.path.dirname(__file__), "squads_cache.json")
 STATIC_DB_FILE = os.path.join(os.path.dirname(__file__), "squads_static.json")
+SELECTION_FILE = os.path.join(os.path.dirname(__file__), "players_selection.json")
 CACHE_TTL_HOURS = 48
 
 TM_HEADERS = {
@@ -97,6 +98,40 @@ def get_static_db_status() -> dict:
         for code, entry in db.items()
         if entry.get("players")
     }
+
+
+# ── Sélection des joueurs actifs ──────────────────────────────────────────────
+
+def load_player_selection() -> dict:
+    """Charge le fichier de sélection des joueurs actifs/inactifs."""
+    try:
+        with open(SELECTION_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def save_player_selection(code: str, selection: dict):
+    """Sauvegarde le statut actif/inactif des joueurs d'une nation.
+    
+    Args:
+        code: code ISO de la nation (ex: "FRA")
+        selection: {player_name: bool} — True = actif, False = inactif
+    """
+    all_sel = load_player_selection()
+    all_sel[code] = selection
+    with open(SELECTION_FILE, "w", encoding="utf-8") as f:
+        json.dump(all_sel, f, ensure_ascii=False, indent=2)
+
+
+def get_nation_active_status(code: str, players: list[dict]) -> dict:
+    """Retourne {player_name: bool} pour une nation.
+    
+    Par défaut, tous les joueurs sont actifs (True) si pas encore définis.
+    """
+    all_sel = load_player_selection()
+    nation_sel = all_sel.get(code, {})
+    return {p["name"]: nation_sel.get(p["name"], True) for p in players}
 
 
 # ─────────────────────────────────────────────

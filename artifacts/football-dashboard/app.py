@@ -2137,221 +2137,219 @@ elif page == "🌍 Effectifs CM 2026":
             with st.expander(f"👁 {n_inactive} joueur(s) non retenu(s)", expanded=False):
                 st.markdown(", ".join(inactive_names))
 
-    _linked_nation = get_nation_by_code(_nav_nation) if _nav_nation else None
-    _linked_conf = _linked_nation.get("conf") if _linked_nation else None
+    def _render_nation_content(nation, code, selected_fr, key_prefix):
+        live_entry = cache_status.get(code, {})
+        has_live_cache = bool(live_entry and live_entry.get("valid"))
 
-    # ── Tabs par confédération ──────────────────────────────────────
-    conf_keys = list(WC2026_NATIONS.keys())
-    tab_labels = [f"{CONF_LABELS[c]} ({CONF_COUNTS[c]})" for c in conf_keys]
-    tabs = st.tabs(tab_labels)
+        if has_live_cache:
+            from squad_scraper import _load_cache as _sc_load
+            players_raw = _sc_load().get(code, {}).get("players", [])
+            data_source = "live"
+        else:
+            players_raw = get_static_squad(code)
+            data_source = "static" if players_raw else "none"
 
-    for tab, conf in zip(tabs, conf_keys):
-        with tab:
-            nations = WC2026_NATIONS[conf]
-            nation_names_fr = [n["fr"] for n in nations]
+        refresh_btn = st.button(
+            "🔄 Rafraîchir depuis TM",
+            key=f"btn_{key_prefix}_{code}",
+            help="Scrape Transfermarkt en direct (~3-5 min)",
+        )
 
-            _sel_index = 0
-            if _linked_nation and _linked_conf == conf:
+        if data_source == "live":
+            fetched = live_entry.get("fetched_at", "")[:19].replace("T", " ")
+            st.success(
+                f"✅ Mis à jour en direct — {len(players_raw)} joueurs · {fetched}",
+                icon="✅",
+            )
+        elif data_source == "static":
+            st.info(
+                f"⚡ Base statique — {len(players_raw)} joueurs · "
+                "Cliquez **Rafraîchir** pour des données en temps réel.",
+                icon="⚡",
+            )
+        elif nation["tm_id"] is None:
+            st.warning("⚠️ ID Transfermarkt non disponible pour cette nation.", icon="⚠️")
+        else:
+            st.info(
+                "ℹ️ Aucune donnée. Cliquez sur **Rafraîchir depuis TM** (~3-5 min).",
+                icon="ℹ️",
+            )
+
+        if refresh_btn and nation["tm_id"] is not None:
+            progress_bar = st.progress(0, text="Initialisation…")
+
+            def _progress(step, total, msg, _bar=progress_bar):
+                _bar.progress(min(int(step), 100), text=msg)
+
+            with st.spinner(f"Chargement de {selected_fr} depuis Transfermarkt…"):
                 try:
-                    _sel_index = nation_names_fr.index(_linked_nation["fr"])
-                except ValueError:
-                    _sel_index = 0
-
-            col_sel, col_btn = st.columns([3, 1])
-            with col_sel:
-                selected_fr = st.selectbox(
-                    "Sélectionner une nation",
-                    nation_names_fr,
-                    index=_sel_index,
-                    key=f"sel_{conf}",
-                )
-            nation = next((n for n in nations if n["fr"] == selected_fr), nations[0])
-            code = nation["code"]
-
-            # Chercher les données : cache live > base statique
-            live_entry = cache_status.get(code, {})
-            has_live_cache = bool(live_entry and live_entry.get("valid"))
-
-            if has_live_cache:
-                from squad_scraper import _load_cache as _sc_load
-                players_raw = _sc_load().get(code, {}).get("players", [])
-                data_source = "live"
-            else:
-                players_raw = get_static_squad(code)
-                data_source = "static" if players_raw else "none"
-
-            with col_btn:
-                st.markdown("<br>", unsafe_allow_html=True)
-                refresh_btn = st.button(
-                    "🔄 Rafraîchir depuis TM",
-                    key=f"btn_{conf}_{code}",
-                    help="Scrape Transfermarkt en direct (~3-5 min)",
-                )
-
-            # Badge de statut
-            if data_source == "live":
-                fetched = live_entry.get("fetched_at", "")[:19].replace("T", " ")
-                st.success(
-                    f"✅ Mis à jour en direct — {len(players_raw)} joueurs · {fetched}",
-                    icon="✅",
-                )
-            elif data_source == "static":
-                st.info(
-                    f"⚡ Base statique — {len(players_raw)} joueurs · "
-                    "Cliquez **Rafraîchir** pour des données en temps réel.",
-                    icon="⚡",
-                )
-            elif nation["tm_id"] is None:
-                st.warning("⚠️ ID Transfermarkt non disponible pour cette nation.", icon="⚠️")
-            else:
-                st.info(
-                    "ℹ️ Aucune donnée. Cliquez sur **Rafraîchir depuis TM** (~3-5 min).",
-                    icon="ℹ️",
-                )
-
-            # ── Rafraîchissement live depuis TM ──────────────────────
-            if refresh_btn and nation["tm_id"] is not None:
-                progress_bar = st.progress(0, text="Initialisation…")
-
-                def _progress(step, total, msg, _bar=progress_bar):
-                    _bar.progress(min(int(step), 100), text=msg)
-
-                with st.spinner(f"Chargement de {selected_fr} depuis Transfermarkt…"):
-                    try:
-                        players = get_squad_cached(
-                            nation, force_refresh=True,
-                            progress_callback=_progress,
+                    players = get_squad_cached(
+                        nation, force_refresh=True,
+                        progress_callback=_progress,
+                    )
+                    progress_bar.progress(100, text="Terminé ✅")
+                    if players:
+                        st.success(
+                            f"✅ {len(players)} joueurs récupérés pour {selected_fr}.",
+                            icon="✅",
                         )
-                        progress_bar.progress(100, text="Terminé ✅")
-                        if players:
-                            st.success(
-                                f"✅ {len(players)} joueurs récupérés pour {selected_fr}.",
-                                icon="✅",
-                            )
-                        else:
-                            st.error(
-                                "❌ Aucun joueur trouvé. TM bloque peut-être "
-                                "les requêtes. Réessayez plus tard.",
-                                icon="❌",
-                            )
-                        st.rerun()
-                    except Exception as e:
-                        progress_bar.empty()
-                        st.error(f"Erreur lors du chargement : {e}")
-
-            # ── Affichage/édition du tableau ─────────────────────────
-            if players_raw:
-                _show_squad_editor(players_raw, code)
-
-                # ── Stats BSD API ──────────────────────────────────────
-                from bsd_api import TM_CODE_TO_BSD_NATIONALITY
-                nat_name = TM_CODE_TO_BSD_NATIONALITY.get(code)
-                if nat_name or any(p.get("club") in TM_TO_BSD_TEAM for p in players_raw):
-                    with st.expander(
-                        f"📊 Stats BSD API — Saison 2025/26"
-                        + (f" · Nationalité : {nat_name}" if nat_name else ""),
-                        expanded=False,
-                    ):
-                        st.caption(
-                            "Notes moyennes, buts, passes décisives, xG et valeur marchande "
-                            "via BSD API (saison 2025/26). Chargement ~10-20 sec à la première ouverture."
+                    else:
+                        st.error(
+                            "❌ Aucun joueur trouvé. TM bloque peut-être "
+                            "les requêtes. Réessayez plus tard.",
+                            icon="❌",
                         )
-                        with st.spinner("Récupération des stats clubs…"):
-                            bsd_stats_map = get_squad_bsd_stats(players_raw, nation_code=code)
+                    st.rerun()
+                except Exception as e:
+                    progress_bar.empty()
+                    st.error(f"Erreur lors du chargement : {e}")
 
-                        bsd_rows = []
-                        for p in players_raw:
-                            pname = p.get("name", "")
-                            s = bsd_stats_map.get(pname)
-                            if not s:
-                                continue
-                            rating_comp = compute_player_rating(s, p.get("market_value_eur", 0))
-                            raw_rating = s.get("rating")
-                            try:
-                                note = float(raw_rating) if raw_rating is not None else 0.0
-                            except (ValueError, TypeError):
-                                note = 0.0
-                            try:
-                                score_comp = float(rating_comp) if rating_comp is not None else 0.0
-                            except (ValueError, TypeError):
-                                score_comp = 0.0
-                            total_mins = int(s.get("minutes_played", 0) or 0)
-                            apps = int(s.get("appearances", 0) or 0)
-                            full_90_count = int(s.get("full_90", 0) or 0)
-                            avg_mins = round(total_mins / apps, 1) if apps > 0 else 0.0
-                            xg_val = float(s.get("xg", 0) or 0)
-                            xa_val = float(s.get("xa", 0) or 0)
-                            nineties = total_mins / 90.0 if total_mins > 0 else 0
-                            xg_per90 = round(xg_val / nineties, 2) if nineties > 0 else 0.0
-                            xa_per90 = round(xa_val / nineties, 2) if nineties > 0 else 0.0
+        if players_raw:
+            _show_squad_editor(players_raw, code)
 
-                            bsd_rows.append({
-                                "Joueur": pname,
-                                "Club": p.get("club", "—"),
-                                "Note moy.": note,
-                                "Matchs": apps,
-                                "Min.": total_mins,
-                                "Min./match": avg_mins,
-                                "90 min": full_90_count,
-                                "Buts": int(s.get("goals", 0) or 0),
-                                "Passes D.": int(s.get("assists", 0) or 0),
-                                "xG": xg_val,
-                                "xG/90": xg_per90,
-                                "xA": xa_val,
-                                "xA/90": xa_per90,
-                                "% Duels": f"{s.get('duel_pct', 0)}%",
-                                "⭐ Score composite": score_comp,
-                            })
+            from bsd_api import TM_CODE_TO_BSD_NATIONALITY
+            nat_name = TM_CODE_TO_BSD_NATIONALITY.get(code)
+            if nat_name or any(p.get("club") in TM_TO_BSD_TEAM for p in players_raw):
+                with st.expander(
+                    f"📊 Stats BSD API — Saison 2025/26"
+                    + (f" · Nationalité : {nat_name}" if nat_name else ""),
+                    expanded=False,
+                ):
+                    st.caption(
+                        "Notes moyennes, buts, passes décisives, xG et valeur marchande "
+                        "via BSD API (saison 2025/26). Chargement ~10-20 sec à la première ouverture."
+                    )
+                    with st.spinner("Récupération des stats clubs…"):
+                        bsd_stats_map = get_squad_bsd_stats(players_raw, nation_code=code)
 
-                        if bsd_rows:
-                            df_bsd = pd.DataFrame(bsd_rows).sort_values(
-                                "Note moy.", ascending=False
-                            ).reset_index(drop=True)
-                            st.dataframe(
-                                df_bsd,
-                                hide_index=True,
-                                use_container_width=True,
-                                column_config={
-                                    "Note moy.": st.column_config.NumberColumn(
-                                        "Note moy.", format="%.2f", width="small"
-                                    ),
-                                    "Min.": st.column_config.NumberColumn("Min.", format="%d"),
-                                    "Min./match": st.column_config.NumberColumn("Min./match", format="%.1f"),
-                                    "90 min": st.column_config.NumberColumn("90 min", format="%d",
-                                        help="Nombre de matchs complets (≥90 min)"),
-                                    "xG": st.column_config.NumberColumn("xG", format="%.2f"),
-                                    "xG/90": st.column_config.NumberColumn("xG/90", format="%.2f",
-                                        help="Expected Goals par 90 minutes"),
-                                    "xA": st.column_config.NumberColumn("xA", format="%.2f"),
-                                    "xA/90": st.column_config.NumberColumn("xA/90", format="%.2f",
-                                        help="Expected Assists par 90 minutes"),
-                                    "⭐ Score composite": st.column_config.NumberColumn(
-                                        "⭐ Score", format="%.1f", width="small",
-                                        help="Score composite 0-100 (note + valeur marchande + forme)"
-                                    ),
-                                },
+                    bsd_rows = []
+                    for p in players_raw:
+                        pname = p.get("name", "")
+                        s = bsd_stats_map.get(pname)
+                        if not s:
+                            continue
+                        rating_comp = compute_player_rating(s, p.get("market_value_eur", 0))
+                        raw_rating = s.get("rating")
+                        try:
+                            note = float(raw_rating) if raw_rating is not None else 0.0
+                        except (ValueError, TypeError):
+                            note = 0.0
+                        try:
+                            score_comp = float(rating_comp) if rating_comp is not None else 0.0
+                        except (ValueError, TypeError):
+                            score_comp = 0.0
+                        total_mins = int(s.get("minutes_played", 0) or 0)
+                        apps = int(s.get("appearances", 0) or 0)
+                        full_90_count = int(s.get("full_90", 0) or 0)
+                        avg_mins = round(total_mins / apps, 1) if apps > 0 else 0.0
+                        xg_val = float(s.get("xg", 0) or 0)
+                        xa_val = float(s.get("xa", 0) or 0)
+                        nineties = total_mins / 90.0 if total_mins > 0 else 0
+                        xg_per90 = round(xg_val / nineties, 2) if nineties > 0 else 0.0
+                        xa_per90 = round(xa_val / nineties, 2) if nineties > 0 else 0.0
+
+                        bsd_rows.append({
+                            "Joueur": pname,
+                            "Club": p.get("club", "—"),
+                            "Note moy.": note,
+                            "Matchs": apps,
+                            "Min.": total_mins,
+                            "Min./match": avg_mins,
+                            "90 min": full_90_count,
+                            "Buts": int(s.get("goals", 0) or 0),
+                            "Passes D.": int(s.get("assists", 0) or 0),
+                            "xG": xg_val,
+                            "xG/90": xg_per90,
+                            "xA": xa_val,
+                            "xA/90": xa_per90,
+                            "% Duels": f"{s.get('duel_pct', 0)}%",
+                            "⭐ Score composite": score_comp,
+                        })
+
+                    if bsd_rows:
+                        df_bsd = pd.DataFrame(bsd_rows).sort_values(
+                            "Note moy.", ascending=False
+                        ).reset_index(drop=True)
+                        st.dataframe(
+                            df_bsd,
+                            hide_index=True,
+                            use_container_width=True,
+                            column_config={
+                                "Note moy.": st.column_config.NumberColumn(
+                                    "Note moy.", format="%.2f", width="small"
+                                ),
+                                "Min.": st.column_config.NumberColumn("Min.", format="%d"),
+                                "Min./match": st.column_config.NumberColumn("Min./match", format="%.1f"),
+                                "90 min": st.column_config.NumberColumn("90 min", format="%d",
+                                    help="Nombre de matchs complets (≥90 min)"),
+                                "xG": st.column_config.NumberColumn("xG", format="%.2f"),
+                                "xG/90": st.column_config.NumberColumn("xG/90", format="%.2f",
+                                    help="Expected Goals par 90 minutes"),
+                                "xA": st.column_config.NumberColumn("xA", format="%.2f"),
+                                "xA/90": st.column_config.NumberColumn("xA/90", format="%.2f",
+                                    help="Expected Assists par 90 minutes"),
+                                "⭐ Score composite": st.column_config.NumberColumn(
+                                    "⭐ Score", format="%.1f", width="small",
+                                    help="Score composite 0-100 (note + valeur marchande + forme)"
+                                ),
+                            },
+                        )
+
+                        top3 = df_bsd.head(3)
+                        st.markdown("**🏆 Top 3 joueurs de la sélection (note BSD)**")
+                        tcol1, tcol2, tcol3 = st.columns(3)
+                        for i, (col, (_, row)) in enumerate(
+                            zip([tcol1, tcol2, tcol3], top3.iterrows())
+                        ):
+                            medal = ["🥇", "🥈", "🥉"][i]
+                            col.metric(
+                                f"{medal} {row['Joueur']}",
+                                f"{row['Note moy.']:.2f}" if isinstance(row['Note moy.'], float) else "—",
+                                f"{row['Buts']}G / {row['Passes D.']}A — xG {row['xG']:.2f}",
                             )
+                    else:
+                        st.info(
+                            "Aucun joueur de cette sélection n'a pu être "
+                            "identifié dans la BSD API pour la saison en cours."
+                        )
+        elif data_source == "none" and nation["tm_id"] is not None:
+            st.info("Cliquez sur **Rafraîchir depuis TM** pour charger cet effectif.")
 
-                            # Top 3 de la sélection
-                            top3 = df_bsd.head(3)
-                            st.markdown("**🏆 Top 3 joueurs de la sélection (note BSD)**")
-                            tcol1, tcol2, tcol3 = st.columns(3)
-                            for i, (col, (_, row)) in enumerate(
-                                zip([tcol1, tcol2, tcol3], top3.iterrows())
-                            ):
-                                medal = ["🥇", "🥈", "🥉"][i]
-                                col.metric(
-                                    f"{medal} {row['Joueur']}",
-                                    f"{row['Note moy.']:.2f}" if isinstance(row['Note moy.'], float) else "—",
-                                    f"{row['Buts']}G / {row['Passes D.']}A — xG {row['xG']:.2f}",
-                                )
-                        else:
-                            st.info(
-                                "Aucun joueur de cette sélection n'a pu être "
-                                "identifié dans la BSD API pour la saison en cours."
-                            )
-            elif data_source == "none" and nation["tm_id"] is not None:
-                st.info("Cliquez sur **Rafraîchir depuis TM** pour charger cet effectif.")
+    _linked_nation = get_nation_by_code(_nav_nation) if _nav_nation else None
+
+    if _linked_nation:
+        st.markdown(f"### 📌 {_linked_nation['fr']}")
+        if st.button("← Retour à tous les effectifs"):
+            st.query_params.clear()
+            st.rerun()
+        _render_nation_content(
+            _linked_nation, _linked_nation["code"],
+            _linked_nation["fr"], key_prefix="linked",
+        )
+    else:
+        conf_keys = list(WC2026_NATIONS.keys())
+        tab_labels = [f"{CONF_LABELS[c]} ({CONF_COUNTS[c]})" for c in conf_keys]
+        tabs = st.tabs(tab_labels)
+
+        for tab, conf in zip(tabs, conf_keys):
+            with tab:
+                nations = WC2026_NATIONS[conf]
+                nation_names_fr = [n["fr"] for n in nations]
+
+                col_sel, col_btn = st.columns([3, 1])
+                with col_sel:
+                    selected_fr = st.selectbox(
+                        "Sélectionner une nation",
+                        nation_names_fr,
+                        key=f"sel_{conf}",
+                    )
+                nation = next((n for n in nations if n["fr"] == selected_fr), nations[0])
+                code = nation["code"]
+
+                with col_btn:
+                    st.markdown("<br>", unsafe_allow_html=True)
+
+                _render_nation_content(nation, code, selected_fr, key_prefix=conf)
 
     # ── Admin : gestion du cache ────────────────────────────────────
     with st.expander("⚙️ Gestion des caches"):

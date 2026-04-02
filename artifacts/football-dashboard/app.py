@@ -550,11 +550,7 @@ st.sidebar.header("Filters")
 page = st.sidebar.radio(
     "Section",
     [
-        "🗓️ Match Results",
-        "👤 Players",
         "🏅 Classement ELO",
-        "🎯 Prédiction de Matchs",
-        "💰 Comparaison de Cotes",
         "📅 Calendrier CDM 2026",
         "🌍 Effectifs CM 2026",
         "🤖 Assistant IA",
@@ -999,25 +995,13 @@ elif page == "🏅 Classement ELO":
             else:
                 rank_df["Écart vs base"] = rank_df["ELO ajusté"] - 1500
 
-            col_a, col_b = st.columns([1, 1])
-            with col_a:
-                fig = px.bar(
-                    rank_df, x="ELO ajusté", y="Équipe", orientation="h",
-                    color="ELO ajusté", color_continuous_scale="RdYlGn",
-                    title=f"Top {top_n} — Rating ELO ajusté",
-                    labels={"ELO ajusté": "Rating ELO"},
+            if base_ratings:
+                st.dataframe(
+                    rank_df[["Rang", "Équipe", "ELO ajusté", "Base EloRating.net", "Variation"]],
+                    use_container_width=True, hide_index=True
                 )
-                fig.update_layout(yaxis={"categoryorder": "total ascending"}, showlegend=False)
-                fig.add_vline(x=ref_line, line_dash="dash", line_color="gray", annotation_text=ref_label)
-                st.plotly_chart(fig, width="stretch")
-            with col_b:
-                if base_ratings:
-                    st.dataframe(
-                        rank_df[["Rang", "Équipe", "ELO ajusté", "Base EloRating.net", "Variation"]],
-                        width="stretch", hide_index=True
-                    )
-                else:
-                    st.dataframe(rank_df[["Rang", "Équipe", "ELO ajusté", "Écart vs base"]], width="stretch", hide_index=True)
+            else:
+                st.dataframe(rank_df[["Rang", "Équipe", "ELO ajusté", "Écart vs base"]], use_container_width=True, hide_index=True)
 
         with tab_hist:
             if elo_history:

@@ -570,7 +570,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -895,294 +895,288 @@ elif page == "👤 Players":
         st.info("Aucun joueur trouvé. Sélectionne une équipe dans les filtres.")
 
 elif page == "🏅 Classement ELO":
-    st.header("🏅 Classement ELO")
-    st.caption("Ratings cumulatifs calculés sur l'ensemble des matchs terminés — basé sur l'algorithme ELO avec avantage domicile et multiplicateur de goal difference.")
+    from elo_engine import (
+        fetch_elorating_base as elo_fetch_base,
+        compute_all_nations_elo,
+        compute_composite_elo,
+        WEIGHTS as ELO_WEIGHTS,
+    )
 
-    if "manual_elos" not in st.session_state:
-        st.session_state.manual_elos = {}
-
-    comp_choices_elo = [ALL_NATIONAL_OPTION] + [c["name"] for c in active_competitions]
-    selected_comp_name_elo = st.selectbox("Compétition pour le calcul ELO", comp_choices_elo, key="elo_comp")
+    st.header("🏅 Classement ELO — Coupe du Monde 2026")
+    st.caption(
+        "Classement composite des 48 nations qualifiées. "
+        "3 piliers : **Résultats ELO** (EloRating.net) × **Force de l'effectif** (BSD) × **Performance collective** (BSD). "
+        "Les poids sont ajustables."
+    )
 
     col_settings, col_main = st.columns([1, 3])
     with col_settings:
-        k_factor = st.slider("Facteur K (sensibilité)", 10, 60, 32, help="K élevé = ratings plus volatils, K faible = plus stables")
-        home_adv = st.slider("Avantage domicile (pts)", 0, 200, 100, help="Points ajoutés à l'équipe à domicile dans le calcul ELO")
-        top_n = st.slider("Top N équipes à afficher", 5, 50, 20)
+        st.markdown("#### Pondération")
+        w_results = st.slider("Résultats ELO (%)", 0, 100, 55, key="w_results")
+        w_squad = st.slider("Force effectif (%)", 0, 100, 30, key="w_squad")
+        w_perf = st.slider("Performance collective (%)", 0, 100, 15, key="w_perf")
+        w_total = w_results + w_squad + w_perf
+        if w_total != 100:
+            st.warning(f"Total = {w_total}% (doit faire 100%)")
+        custom_weights = {
+            "results": w_results / 100,
+            "squad": w_squad / 100,
+            "performance": w_perf / 100,
+        }
 
-    is_national_comp = (
-        selected_comp_name_elo == ALL_NATIONAL_OPTION
-        or comp_by_name.get(selected_comp_name_elo, {}).get("type") == "national"
+    with st.spinner("Calcul du classement ELO composite (48 nations)..."):
+        elorating_base = elo_fetch_base()
+        all_elo_data = compute_all_nations_elo(
+            elorating_base=elorating_base,
+            custom_weights=custom_weights if w_total == 100 else None,
+        )
+
+    with col_main:
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Nations classées", len(all_elo_data))
+        best = all_elo_data[0] if all_elo_data else None
+        m2.metric("N°1", f"{best['fr']}" if best else "—")
+        m3.metric("Meilleur ELO", f"{best['elo']}" if best else "—")
+        n_elo_matched = sum(1 for r in all_elo_data if r["results_detail"].get("elo_source") is not None)
+        m4.metric("Ancrées EloRating.net", f"{n_elo_matched}/48")
+
+    st.info(
+        f"📡 **EloRating.net** : {len(elorating_base)} équipes chargées  \n"
+        f"⚽ **BSD** : stats joueurs saison en cours (48 nations)  \n"
+        f"⚖️ **Pondération** : Résultats {w_results}% | Effectif {w_squad}% | Performance {w_perf}%"
     )
 
-    if selected_comp_name_elo == ALL_NATIONAL_OPTION:
-        with st.spinner("Agrégation des matchs de toutes les compétitions nationales..."):
-            all_finished = get_all_national_matches()
-        elo_label = "Toutes équipes nationales"
-    else:
-        selected_comp_id_elo = comp_by_name[selected_comp_name_elo]["id"]
-        with st.spinner(f"Calcul ELO sur tous les matchs de {selected_comp_name_elo}..."):
-            all_finished = get_all_matches_for_competition(selected_comp_id_elo)
-        elo_label = selected_comp_name_elo
+    st.markdown("---")
+    tab_rank, tab_detail, tab_h2h, tab_conf = st.tabs([
+        "🏆 Classement", "🔍 Détail par nation", "⚔️ Tête-à-tête", "🌍 Par confédération"
+    ])
 
-    base_ratings = None
-    elorating_base = {}
-    if is_national_comp:
-        with st.spinner("Récupération des ratings de base depuis EloRating.net..."):
-            elorating_base = fetch_elorating_base()
-        base_ratings = elorating_base if elorating_base else None
+    with tab_rank:
+        rank_rows = []
+        for r in all_elo_data:
+            iso = r["code"].lower()
+            iso_map = {
+                "eng": "gb-eng", "sco": "gb-sct", "ger": "de", "por": "pt",
+                "sui": "ch", "cro": "hr", "ned": "nl", "kor": "kr",
+                "ksa": "sa", "alg": "dz", "rsa": "za", "civ": "ci",
+                "cod": "cd", "cpv": "cv", "bih": "ba", "cze": "cz",
+                "par": "py", "uru": "uy", "pan": "pa", "hai": "ht",
+                "cuw": "cw", "uzb": "uz", "irn": "ir", "irq": "iq",
+                "jor": "jo", "tun": "tn", "gha": "gh", "sen": "sn",
+                "egy": "eg", "mar": "ma", "nzl": "nz",
+            }
+            flag_iso = iso_map.get(iso, iso)
+            flag_html = f"<img src='https://flagcdn.com/24x18/{flag_iso}.png' style='vertical-align:middle'>"
+            elo_src = r["results_detail"].get("elo_source", "—")
+            rank_rows.append({
+                "Rang": r["rank"],
+                "Nation": f"{flag_html} {r['fr']}",
+                "ELO": r["elo"],
+                "Composite": round(r["composite_score"], 1),
+                "Résultats": round(r["results_score"], 1),
+                "Effectif": round(r["squad_score"], 1),
+                "Performance": round(r["performance_score"], 1),
+                "EloRating.net": elo_src if elo_src else "—",
+            })
 
-    effective_base = blend_base_ratings(base_ratings, st.session_state.get("manual_elos", {}))
-
-    if not all_finished:
-        st.warning("Aucun match terminé trouvé pour cette compétition.")
-    else:
-        elo_ratings, elo_history = compute_elo(
-            all_finished, k_base=k_factor, home_advantage=home_adv, base_ratings=effective_base
+        rank_df = pd.DataFrame(rank_rows)
+        st.markdown(
+            rank_df.to_html(escape=False, index=False),
+            unsafe_allow_html=True,
         )
-        n_matches = len(all_finished)
-        n_teams = len(elo_ratings)
 
-        dates = sorted([m.get("utc_date", "")[:10] for m in all_finished if m.get("utc_date")])
-        oldest_date = dates[0] if dates else "—"
-        newest_date = dates[-1] if dates else "—"
-        if dates:
-            from datetime import date
-            try:
-                y_old = int(oldest_date[:4])
-                y_new = int(newest_date[:4])
-                n_years = y_new - y_old + 1
-                period_str = f"{oldest_date[:7]} → {newest_date[:7]}"
-            except Exception:
-                n_years = 0
-                period_str = "—"
-        else:
-            n_years, period_str = 0, "—"
+    with tab_detail:
+        nation_options = [f"{r['fr']} ({r['code']})" for r in all_elo_data]
+        selected_nation_str = st.selectbox("Sélectionner une nation", nation_options, key="elo_detail_nation")
+        selected_code = selected_nation_str.split("(")[-1].rstrip(")")
 
-        with col_main:
-            m1, m2, m3, m4 = st.columns(4)
-            m1.metric("Matchs analysés", n_matches)
-            m2.metric("Équipes classées", n_teams)
-            m3.metric("Meilleur rating", f"{max(elo_ratings.values()):.0f}" if elo_ratings else "—")
-            if base_ratings:
-                matched = sum(
-                    1 for t in elo_ratings
-                    if resolve_team_elo_name(t, base_ratings) is not None
-                )
-                m4.metric("Ancrées EloRating.net", f"{matched}/{n_teams}")
-            else:
-                m4.metric("Période couverte", f"~{n_years} ans" if n_years else "—")
+        nation_data = next((r for r in all_elo_data if r["code"] == selected_code), None)
+        if nation_data:
+            st.markdown(f"### {nation_data['fr']} — ELO {nation_data['elo']} (Rang #{nation_data['rank']})")
 
-        info_parts = [f"📅 Données du **{period_str}** ({n_matches} matchs)"]
-        if base_ratings:
-            info_parts.append(
-                f"📡 Base EloRating.net ({len(elorating_base)} équipes) — ratings initiaux officiels, ajustés avec les résultats récents."
+            sc1, sc2, sc3 = st.columns(3)
+            sc1.metric(
+                f"Résultats ({int(custom_weights['results']*100)}%)",
+                f"{nation_data['results_score']:.1f}/100",
+                f"EloRating.net: {nation_data['results_detail'].get('elo_source', '—')}"
             )
-        st.info("  \n".join(info_parts))
-
-        st.markdown("---")
-        tab_rank, tab_hist, tab_h2h, tab_manual = st.tabs(["🏆 Classement", "📈 Évolution ELO", "⚔️ Tête-à-tête", "⚙️ ELO Manuels"])
-
-        ref_line = round(sum(effective_base.values()) / len(effective_base)) if effective_base else 1500
-        ref_label = f"Médiane EloRating.net ({ref_line})" if base_ratings else "Base 1500"
-        n_manual_active = len(st.session_state.get("manual_elos", {}))
-
-        with tab_rank:
-            sorted_teams = sorted(elo_ratings.items(), key=lambda x: x[1], reverse=True)
-            rank_df = pd.DataFrame(sorted_teams[:top_n], columns=["Équipe", "ELO ajusté"])
-            rank_df.insert(0, "Rang", range(1, len(rank_df) + 1))
-            rank_df["ELO ajusté"] = rank_df["ELO ajusté"].round(0).astype(int)
-
-            if base_ratings:
-                def get_base(team_name):
-                    elo_name = resolve_team_elo_name(team_name, base_ratings)
-                    return base_ratings.get(elo_name, ref_line) if elo_name else ref_line
-
-                rank_df["Base EloRating.net"] = rank_df["Équipe"].apply(get_base)
-                rank_df["Variation"] = rank_df["ELO ajusté"] - rank_df["Base EloRating.net"]
-                rank_df["Variation"] = rank_df["Variation"].apply(lambda x: f"+{x}" if x > 0 else str(x))
-            else:
-                rank_df["Écart vs base"] = rank_df["ELO ajusté"] - 1500
-
-            if base_ratings:
-                st.dataframe(
-                    rank_df[["Rang", "Équipe", "ELO ajusté", "Base EloRating.net", "Variation"]],
-                    use_container_width=True, hide_index=True
-                )
-            else:
-                st.dataframe(rank_df[["Rang", "Équipe", "ELO ajusté", "Écart vs base"]], use_container_width=True, hide_index=True)
-
-        with tab_hist:
-            if elo_history:
-                hist_df = pd.DataFrame(elo_history)
-                hist_df["date"] = pd.to_datetime(hist_df["date"])
-                all_team_names = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
-                default_teams = all_team_names[:5]
-                selected_teams_hist = st.multiselect(
-                    "Équipes à afficher", all_team_names, default=default_teams, key="elo_hist_teams"
-                )
-                if selected_teams_hist:
-                    hist_filtered = hist_df[hist_df["team"].isin(selected_teams_hist)]
-                    fig = px.line(
-                        hist_filtered, x="date", y="elo", color="team",
-                        title="Évolution du rating ELO dans le temps",
-                        labels={"date": "Date", "elo": "Rating ELO", "team": "Équipe"},
-                        hover_data=["match"],
-                    )
-                    fig.add_hline(y=ref_line, line_dash="dash", line_color="gray", annotation_text=ref_label)
-                    st.plotly_chart(fig, width="stretch")
-
-        with tab_h2h:
-            st.markdown("#### Comparaison Tête-à-tête")
-            all_team_names_sorted = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
-            c1, c2 = st.columns(2)
-            with c1:
-                team_a = st.selectbox("Équipe A", all_team_names_sorted, key="h2h_a")
-            with c2:
-                team_b = st.selectbox("Équipe B", all_team_names_sorted, index=1, key="h2h_b")
-
-            if team_a and team_b and team_a != team_b:
-                ra_computed = elo_ratings.get(team_a, ref_line)
-                rb_computed = elo_ratings.get(team_b, ref_line)
-                rank_a = all_team_names_sorted.index(team_a) + 1
-                rank_b = all_team_names_sorted.index(team_b) + 1
-
-                st.markdown("##### ⚙️ Ajustements pour ce match")
-                adj1, adj2, adj3 = st.columns(3)
-                with adj1:
-                    ra = st.number_input(
-                        f"ELO {team_a}",
-                        min_value=500, max_value=2500,
-                        value=int(ra_computed), step=1, key="h2h_ra_override",
-                        help=f"ELO calculé par simulation : {int(ra_computed)}"
-                    )
-                with adj2:
-                    rb = st.number_input(
-                        f"ELO {team_b}",
-                        min_value=500, max_value=2500,
-                        value=int(rb_computed), step=1, key="h2h_rb_override",
-                        help=f"ELO calculé par simulation : {int(rb_computed)}"
-                    )
-                with adj3:
-                    home_adv_h2h = st.slider(
-                        "Avantage domicile (match)",
-                        0, 300, int(home_adv), step=5, key="h2h_home_adv",
-                        help="Override l'avantage domicile global pour cette confrontation"
-                    )
-                if ra != int(ra_computed) or rb != int(rb_computed) or home_adv_h2h != home_adv:
-                    st.caption(f"🔧 Valeurs modifiées — simulation : {team_a} {int(ra_computed)} | {team_b} {int(rb_computed)} | avantage dom. global {home_adv}")
-
-                ra_home = ra + home_adv_h2h
-                ea = 1 / (1 + 10 ** ((rb - ra_home) / 400))
-                eb = 1 - ea
-
-                if base_ratings:
-                    base_a = base_ratings.get(resolve_team_elo_name(team_a, base_ratings), ref_line) if resolve_team_elo_name(team_a, base_ratings) else ref_line
-                    base_b = base_ratings.get(resolve_team_elo_name(team_b, base_ratings), ref_line) if resolve_team_elo_name(team_b, base_ratings) else ref_line
-                    mc1, mc2, mc3 = st.columns(3)
-                    mc1.metric(f"ELO final {team_a}", f"{ra}", f"{ra - base_a:+.0f} vs EloRating.net")
-                    mc2.metric(f"ELO final {team_b}", f"{rb}", f"{rb - base_b:+.0f} vs EloRating.net")
-                    mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
-                    st.caption(f"Base EloRating.net → {team_a}: **{base_a:.0f}** | {team_b}: **{base_b:.0f}**")
-                else:
-                    mc1, mc2, mc3 = st.columns(3)
-                    mc1.metric(f"ELO {team_a}", f"{ra}", f"#{rank_a}")
-                    mc2.metric(f"ELO {team_b}", f"{rb}", f"#{rank_b}")
-                    mc3.metric("Différence", f"{abs(ra - rb):.0f} pts", f"{'Avantage ' + team_a if ra > rb else 'Avantage ' + team_b}")
-
-                st.markdown(f"**Si {team_a} joue à domicile contre {team_b} (avantage dom. {home_adv_h2h} pts) :**")
-                pc1, pc2, pc3 = st.columns(3)
-                pc1.metric(f"Victoire {team_a}", f"{ea*100:.1f}%", f"Cote équitable: {fair_odds(ea*100)}")
-                pc2.metric("Nul (approx.)", "≈ ?", "Non calculé par l'ELO seul")
-                pc3.metric(f"Victoire {team_b}", f"{eb*100:.1f}%", f"Cote équitable: {fair_odds(eb*100)}")
-
-                h2h_matches = [
-                    m for m in all_finished
-                    if (isinstance(m.get("home_team"), dict) and isinstance(m.get("away_team"), dict))
-                    and ((m["home_team"].get("name") == team_a and m["away_team"].get("name") == team_b)
-                         or (m["home_team"].get("name") == team_b and m["away_team"].get("name") == team_a))
-                ]
-                if h2h_matches:
-                    st.markdown(f"**Historique direct ({len(h2h_matches)} matchs) :**")
-                    h2h_df = pd.DataFrame([{
-                        "Date": m.get("utc_date", "")[:10],
-                        "Domicile": m["home_team"]["name"],
-                        "Score": f"{(m.get('score') or {}).get('home', '?')} - {(m.get('score') or {}).get('away', '?')}",
-                        "Extérieur": m["away_team"]["name"],
-                    } for m in sorted(h2h_matches, key=lambda x: x.get("utc_date", ""), reverse=True)])
-                    st.dataframe(h2h_df, width="stretch", hide_index=True)
-                else:
-                    st.info("Aucun match direct entre ces deux équipes dans les données disponibles.")
-
-        with tab_manual:
-            st.markdown("#### ⚙️ ELO Manuels")
-            st.caption(
-                "Saisir un ELO manuel pour une équipe. "
-                "L'ELO de départ final est calculé comme : **75% ELO manuel + 25% EloRating.net**. "
-                "Ces valeurs affectent l'ensemble de la simulation (classement, historique, tête-à-tête)."
+            sc2.metric(
+                f"Effectif ({int(custom_weights['squad']*100)}%)",
+                f"{nation_data['squad_score']:.1f}/100",
+            )
+            sc3.metric(
+                f"Performance ({int(custom_weights['performance']*100)}%)",
+                f"{nation_data['performance_score']:.1f}/100",
             )
 
-            n_active = len(st.session_state.get("manual_elos", {}))
-            if n_active:
-                st.success(f"✅ {n_active} équipe(s) avec ELO manuel actif — simulation recalculée avec ces valeurs.")
+            sd = nation_data.get("squad_detail", {})
+            pd_detail = nation_data.get("performance_detail", {})
 
-            all_teams_for_manual = sorted(elo_ratings.keys(), key=lambda t: -elo_ratings[t])
-            manual_rows = []
-            for team in all_teams_for_manual:
-                elo_net_val = ref_line
-                if base_ratings:
-                    elo_name = resolve_team_elo_name(team, base_ratings)
-                    elo_net_val = int(base_ratings.get(elo_name, ref_line)) if elo_name else ref_line
-                manual_val = st.session_state.get("manual_elos", {}).get(team, None)
-                elo_final = round(0.75 * manual_val + 0.25 * elo_net_val) if manual_val else elo_net_val
-                manual_rows.append({
-                    "Équipe": team,
-                    "ELO EloRating.net": elo_net_val,
-                    "ELO Manuel": manual_val if manual_val else None,
-                    "ELO de départ (75/25)": elo_final,
-                    "ELO simulé final": int(elo_ratings.get(team, ref_line)),
-                })
+            if sd:
+                st.markdown("#### Force de l'effectif")
+                sq1, sq2, sq3, sq4 = st.columns(4)
+                sq1.metric("Top 11 — Note moy.", f"{sd.get('top11_avg', 0):.2f}")
+                sq2.metric("Banc — Note moy.", f"{sd.get('bench_avg', 0):.2f}")
+                sq3.metric("xG/90 (effectif)", f"{sd.get('xg_per90', 0):.2f}")
+                sq4.metric("xA/90 (effectif)", f"{sd.get('xa_per90', 0):.2f}")
 
-            manual_df_input = pd.DataFrame(manual_rows)
-
-            with st.form("form_manual_elos"):
-                st.markdown("**Modifie la colonne « ELO Manuel » puis clique sur Appliquer.**")
-                edited = st.data_editor(
-                    manual_df_input,
-                    column_config={
-                        "Équipe": st.column_config.TextColumn("Équipe", disabled=True),
-                        "ELO EloRating.net": st.column_config.NumberColumn("EloRating.net", disabled=True),
-                        "ELO Manuel": st.column_config.NumberColumn(
-                            "ELO Manuel ✏️",
-                            min_value=500, max_value=2500, step=1,
-                            help="Laisser vide pour utiliser uniquement EloRating.net"
-                        ),
-                        "ELO de départ (75/25)": st.column_config.NumberColumn("Départ simulé (75/25)", disabled=True),
-                        "ELO simulé final": st.column_config.NumberColumn("ELO après simulation", disabled=True),
-                    },
-                    hide_index=True,
-                    use_container_width=True,
-                    key="manual_elo_editor_form",
-                    num_rows="fixed",
+                sub_scores_sq = {
+                    "Note (45%)": sd.get("rating_score", 0),
+                    "Profondeur (20%)": sd.get("depth_score", 0),
+                    "xG (20%)": sd.get("xg_score", 0),
+                    "xA (15%)": sd.get("xa_score", 0),
+                }
+                fig_sq = px.bar(
+                    x=list(sub_scores_sq.keys()),
+                    y=list(sub_scores_sq.values()),
+                    title="Décomposition — Force effectif",
+                    labels={"x": "", "y": "Score /100"},
+                    color=list(sub_scores_sq.keys()),
                 )
-                col_apply, col_reset = st.columns([1, 1])
-                with col_apply:
-                    submitted = st.form_submit_button("✅ Appliquer les ELO manuels", type="primary")
-                with col_reset:
-                    reset = st.form_submit_button("🗑️ Réinitialiser tout")
+                fig_sq.update_layout(showlegend=False, yaxis_range=[0, 100])
+                st.plotly_chart(fig_sq, width="stretch")
 
-            if submitted:
-                new_manual = {}
-                for _, row in edited.iterrows():
-                    val = row["ELO Manuel"]
-                    if val is not None and not (isinstance(val, float) and pd.isna(val)):
-                        new_manual[row["Équipe"]] = int(val)
-                st.session_state.manual_elos = new_manual
-                st.rerun()
+            if pd_detail:
+                st.markdown("#### Performance collective")
+                pf1, pf2, pf3, pf4 = st.columns(4)
+                pf1.metric("xG/90", f"{pd_detail.get('xg_per90', 0):.2f}")
+                pf2.metric("Tirs cadrés/90", f"{pd_detail.get('shots_on_target_per90', 0):.2f}")
+                pf3.metric("Duels gagnés (%)", f"{pd_detail.get('duel_pct', 0):.1f}%")
+                pf4.metric("Passes clés/90", f"{pd_detail.get('key_passes_per90', 0):.2f}")
 
-            if reset:
-                st.session_state.manual_elos = {}
-                st.rerun()
+                sub_scores_pf = {
+                    "xG (40%)": pd_detail.get("xg_score", 0),
+                    "Duels (25%)": pd_detail.get("duels_score", 0),
+                    "Tirs cadrés (20%)": pd_detail.get("shots_score", 0),
+                    "Créativité (15%)": pd_detail.get("creativity_score", 0),
+                }
+                fig_pf = px.bar(
+                    x=list(sub_scores_pf.keys()),
+                    y=list(sub_scores_pf.values()),
+                    title="Décomposition — Performance collective",
+                    labels={"x": "", "y": "Score /100"},
+                    color=list(sub_scores_pf.keys()),
+                )
+                fig_pf.update_layout(showlegend=False, yaxis_range=[0, 100])
+                st.plotly_chart(fig_pf, width="stretch")
+
+            st.markdown("#### Radar des 3 piliers")
+            import plotly.graph_objects as go
+            radar_fig = go.Figure(data=go.Scatterpolar(
+                r=[nation_data["results_score"], nation_data["squad_score"],
+                   nation_data["performance_score"], nation_data["results_score"]],
+                theta=["Résultats", "Effectif", "Performance", "Résultats"],
+                fill="toself",
+                name=nation_data["fr"],
+            ))
+            radar_fig.update_layout(
+                polar=dict(radialaxis=dict(visible=True, range=[0, 100])),
+                showlegend=False,
+                title=f"Profil — {nation_data['fr']}",
+            )
+            st.plotly_chart(radar_fig, width="stretch")
+
+    with tab_h2h:
+        st.markdown("#### Comparaison Tête-à-tête")
+        nation_names_sorted = [f"{r['fr']} ({r['code']})" for r in all_elo_data]
+        c1, c2 = st.columns(2)
+        with c1:
+            h2h_a_str = st.selectbox("Équipe A", nation_names_sorted, index=0, key="elo_h2h_a")
+        with c2:
+            h2h_b_str = st.selectbox("Équipe B", nation_names_sorted, index=1, key="elo_h2h_b")
+
+        code_a = h2h_a_str.split("(")[-1].rstrip(")")
+        code_b = h2h_b_str.split("(")[-1].rstrip(")")
+
+        data_a = next((r for r in all_elo_data if r["code"] == code_a), None)
+        data_b = next((r for r in all_elo_data if r["code"] == code_b), None)
+
+        if data_a and data_b and code_a != code_b:
+            home_adv_h2h = st.slider("Avantage domicile (pts ELO)", 0, 200, 100, key="elo_h2h_home")
+
+            elo_a = data_a["elo"] + home_adv_h2h
+            elo_b = data_b["elo"]
+            ea = 1 / (1 + 10 ** ((elo_b - elo_a) / 400))
+            eb = 1 - ea
+
+            mc1, mc2, mc3 = st.columns(3)
+            mc1.metric(
+                f"{data_a['fr']} (dom.)",
+                f"ELO {data_a['elo']}",
+                f"#{data_a['rank']}"
+            )
+            mc2.metric(
+                f"{data_b['fr']} (ext.)",
+                f"ELO {data_b['elo']}",
+                f"#{data_b['rank']}"
+            )
+            mc3.metric("Écart", f"{abs(data_a['elo'] - data_b['elo'])} pts")
+
+            st.markdown(f"**Probabilités ELO ({data_a['fr']} à domicile, avantage {home_adv_h2h} pts) :**")
+            pc1, pc2, pc3 = st.columns(3)
+            pc1.metric(f"Victoire {data_a['fr']}", f"{ea*100:.1f}%", f"Cote: {fair_odds(ea*100)}")
+            pc2.metric("Nul (approx.)", "—")
+            pc3.metric(f"Victoire {data_b['fr']}", f"{eb*100:.1f}%", f"Cote: {fair_odds(eb*100)}")
+
+            st.markdown("---")
+            st.markdown("#### Comparaison des profils")
+            comp_df = pd.DataFrame({
+                "Pilier": ["Résultats", "Effectif", "Performance", "Composite", "ELO"],
+                data_a["fr"]: [
+                    data_a["results_score"], data_a["squad_score"],
+                    data_a["performance_score"], data_a["composite_score"], data_a["elo"]
+                ],
+                data_b["fr"]: [
+                    data_b["results_score"], data_b["squad_score"],
+                    data_b["performance_score"], data_b["composite_score"], data_b["elo"]
+                ],
+            })
+            st.dataframe(comp_df, width="stretch", hide_index=True)
+
+            import plotly.graph_objects as go
+            radar_cmp = go.Figure()
+            for d in [data_a, data_b]:
+                radar_cmp.add_trace(go.Scatterpolar(
+                    r=[d["results_score"], d["squad_score"],
+                       d["performance_score"], d["results_score"]],
+                    theta=["Résultats", "Effectif", "Performance", "Résultats"],
+                    fill="toself",
+                    name=d["fr"],
+                ))
+            radar_cmp.update_layout(
+                polar=dict(radialaxis=dict(visible=True, range=[0, 100])),
+                title=f"{data_a['fr']} vs {data_b['fr']}",
+            )
+            st.plotly_chart(radar_cmp, width="stretch")
+
+    with tab_conf:
+        st.markdown("#### Classement par confédération")
+        conf_labels = {
+            "UEFA": "UEFA (Europe)",
+            "CONMEBOL": "CONMEBOL (Amérique du Sud)",
+            "CONCACAF": "CONCACAF (Amérique du Nord)",
+            "AFC": "AFC (Asie)",
+            "CAF": "CAF (Afrique)",
+            "OFC": "OFC (Océanie)",
+        }
+        for conf_key in ["UEFA", "CONMEBOL", "CONCACAF", "AFC", "CAF", "OFC"]:
+            conf_nations = [r for r in all_elo_data if r["conf"] == conf_key]
+            if not conf_nations:
+                continue
+            conf_nations.sort(key=lambda x: x["elo"], reverse=True)
+            with st.expander(f"{conf_labels.get(conf_key, conf_key)} — {len(conf_nations)} nations", expanded=(conf_key == "UEFA")):
+                conf_rows = []
+                for i, r in enumerate(conf_nations):
+                    conf_rows.append({
+                        "Rang conf.": i + 1,
+                        "Rang mondial": r["rank"],
+                        "Nation": r["fr"],
+                        "ELO": r["elo"],
+                        "Résultats": round(r["results_score"], 1),
+                        "Effectif": round(r["squad_score"], 1),
+                        "Performance": round(r["performance_score"], 1),
+                    })
+                st.dataframe(pd.DataFrame(conf_rows), width="stretch", hide_index=True)
 
 
 elif page == "🎯 Prédiction de Matchs":
@@ -1517,12 +1511,12 @@ Si la question est en anglais, réponds en anglais."""
             "Qu'est-ce que l'expected goals (xG) ?",
         ]
         for ex in examples:
-            if st.button(ex, key=f"ex_{ex[:20]}", use_container_width=True):
+            if st.button(ex, key=f"ex_{ex[:20]}", width="stretch"):
                 st.session_state.pending_example = ex
                 st.rerun()
 
         st.markdown("---")
-        if st.button("Effacer la conversation", use_container_width=True):
+        if st.button("Effacer la conversation", width="stretch"):
             st.session_state.chat_messages = []
             st.rerun()
 
@@ -1954,7 +1948,7 @@ elif page == "📅 Calendrier CDM 2026":
                 row["Meilleure"] = best_val
                 outright_rows.append(row)
             df_out = pd.DataFrame(outright_rows)
-            st.dataframe(df_out, use_container_width=True, hide_index=True)
+            st.dataframe(df_out, width="stretch", hide_index=True)
         else:
             st.info("Cotes vainqueur indisponibles pour le moment.")
 
@@ -2064,13 +2058,13 @@ elif page == "🌍 Effectifs CM 2026":
                 hide_index=True,
                 height=min(700, 50 + len(df_edit) * 37),
                 key=f"editor_{nation_code}",
-                use_container_width=True,
+                width="stretch",
             )
 
             submitted = st.form_submit_button(
                 "💾 Valider la sélection",
                 type="primary",
-                use_container_width=False,
+                width="content",
             )
 
         if submitted:
@@ -2226,7 +2220,7 @@ elif page == "🌍 Effectifs CM 2026":
                         st.dataframe(
                             df_bsd,
                             hide_index=True,
-                            use_container_width=True,
+                            width="stretch",
                             column_config={
                                 "Note moy.": st.column_config.NumberColumn(
                                     "Note moy.", format="%.2f", width="small"

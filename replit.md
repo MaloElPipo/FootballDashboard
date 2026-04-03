@@ -73,7 +73,7 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - `comp_29967` International Friendly Games (World)
   - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
 - **AI Assistant**: Claude (Anthropic) integration via `ANTHROPIC_API_KEY`, streaming responses
-- **ELO Ranking**: manual ELO blending (0.75×manual + 0.25×EloRating.net)
+- **ELO Ranking**: 3-pillar composite system (55% EloRating.net results + 30% BSD squad strength + 15% BSD collective performance), module in `elo_engine.py`
 - **Odds API**: The Odds API (`the-odds-api.com`) for multi-bookmaker odds; key stored as `ODDS_API_KEY`
   - Selected bookmakers: Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR
   - BSD API odds source: AllSportsAPI (likely Bet365 as default bookmaker)

@@ -155,10 +155,10 @@ def _build_elo_map(forced_weight=None):
     return {r["code"]: r["elo"] for r in all_elo}
 
 
-def simulate_match_1x2(elo_h, elo_a, home_code=None, away_code=None):
+def simulate_match_1x2(elo_h, elo_a, home_code=None, away_code=None, phase="G"):
     delta = elo_h - elo_a
     elo_avg = (elo_h + elo_a) / 2
-    ph, pd, pa = sigmoid_v6_1x2(delta, elo_avg=elo_avg)
+    ph, pd, pa = sigmoid_v8_1x2(delta, elo_avg=elo_avg, phase=phase)
     r = random.random()
     if r < ph:
         return "H"
@@ -195,9 +195,6 @@ def simulate_knockout_match(elo_h, elo_a, home_code=None, away_code=None):
     if gh != ga:
         return ("H", gh, ga) if gh > ga else ("A", gh, ga)
     delta = elo_h - elo_a
-    elo_avg_ko = (elo_h + elo_a) / 2
-    ph, _, _ = sigmoid_v6_1x2(delta, elo_avg=elo_avg_ko)
-    pk = ph / (ph + (1.0 - ph - 0.0))
     pk = max(0.15, min(0.85, 0.5 + delta / 1200.0))
     if random.random() < pk:
         return ("H", gh + 1, ga)
@@ -457,7 +454,7 @@ def get_group_predictions(elo_map=None, params=None):
                 elo_a = elo_map.get(a_code, 1500)
                 delta = elo_h - elo_a
                 ea = (elo_h + elo_a) / 2
-                ph, pd, pa = sigmoid_v6_1x2(delta, params, elo_avg=ea)
+                ph, pd, pa = sigmoid_v8_1x2(delta, elo_avg=ea, phase="G")
                 nation_h = get_nation_by_code(h_code)
                 nation_a = get_nation_by_code(a_code)
                 matches.append({

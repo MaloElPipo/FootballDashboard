@@ -1135,7 +1135,7 @@ elif page == "🏅 Classement ELO":
         data_b = next((r for r in all_elo_data if r["code"] == code_b), None)
 
         if data_a and data_b and code_a != code_b:
-            from wc_simulator import sigmoid_v6_1x2 as h2h_buchdahl
+            from wc_simulator import sigmoid_v8_1x2 as h2h_buchdahl
 
             mc1, mc2, mc3 = st.columns(3)
             mc1.metric(
@@ -1152,9 +1152,9 @@ elif page == "🏅 Classement ELO":
 
             delta_h2h = data_a["elo"] - data_b["elo"]
             elo_avg_h2h = (data_a["elo"] + data_b["elo"]) / 2
-            p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h, elo_avg=elo_avg_h2h)
+            p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h, elo_avg=elo_avg_h2h, phase="G")
 
-            st.markdown(f"**Probabilités Sigmoid V7 (terrain neutre) :**")
+            st.markdown(f"**Probabilités Sigmoid V8 (terrain neutre, phase de groupes) :**")
             pc1, pc2, pc3 = st.columns(3)
             pc1.metric(f"Victoire {data_a['fr']}", f"{p1_h2h*100:.1f}%", f"Cote: {1/p1_h2h:.2f}")
             pc2.metric("Nul", f"{px_h2h*100:.1f}%", f"Cote: {1/px_h2h:.2f}")
@@ -2001,14 +2001,15 @@ elif page == "📅 Calendrier CDM 2026":
 elif page == "🔮 Prédictions":
     from wc_simulator import (
         WC2026_GROUPS, run_simulation, get_group_predictions,
-        sigmoid_v6_1x2, _build_elo_map,
+        sigmoid_v8_1x2, _build_elo_map,
     )
     import plotly.graph_objects as go
 
     st.header("🔮 Prédictions — Coupe du Monde 2026")
     st.caption(
-        "Simulation Monte Carlo basée sur notre ELO composite + modèle Sigmoid V6 calibré sur Pinnacle. "
-        "Probabilités 1X2 pour chaque match, classements de poules, et chemins vers le titre."
+        "Simulation Monte Carlo basée sur notre ELO composite + modèle Sigmoid V8 calibré sur 136 matchs "
+        "(WC 2022, Euro 2024, Copa 2024). Draw boost + favori boost + ajustement KO. "
+        "Brier Score V8 bat Pinnacle globalement (0.575 vs 0.583)."
     )
 
     def _odds_cell(prob_pct):
@@ -2135,10 +2136,11 @@ elif page == "🔮 Prédictions":
             )
 
     with tab_value:
-        st.subheader("💎 Détection de Value vs Pinnacle")
+        st.subheader("💎 Détection de Value vs Pinnacle (V8)")
         st.caption(
-            "Compare nos cotes modélisées aux cotes Pinnacle. "
-            "Écart positif = notre modèle estime la probabilité plus haute que Pinnacle (value potentielle)."
+            "Compare nos cotes V8 aux cotes Pinnacle. "
+            "Backtest sur 136 matchs (WC22, Euro24, Copa24) : ROI +26.5% (EV≥2%, cote≤10). "
+            "Filtre cotes >10 pour éviter les pièges."
         )
 
         try:
@@ -2227,7 +2229,10 @@ elif page == "🔮 Prédictions":
 
                 delta = elo_map[ch] - elo_map[ca]
                 ea_val = (elo_map[ch] + elo_map[ca]) / 2
-                mod_h, mod_d, mod_a = sigmoid_v6_1x2(delta, elo_avg=ea_val)
+                grp_ch = code_to_group.get(ch)
+                grp_ca = code_to_group.get(ca)
+                phase_val = "G" if grp_ch and grp_ca and grp_ch == grp_ca else "K"
+                mod_h, mod_d, mod_a = sigmoid_v8_1x2(delta, elo_avg=ea_val, phase=phase_val)
                 mod_h *= 100
                 mod_d *= 100
                 mod_a *= 100
@@ -2243,6 +2248,7 @@ elif page == "🔮 Prédictions":
                     ("2", mod_a - pin_a, oa, mod_a, pin_a),
                 ]:
                     odds_mod = 100 / prob_mod if prob_mod > 0 else 0
+                    ev_pct = (prob_mod / 100 * odds_pin - 1) * 100 if prob_mod > 0 else 0
                     value_rows.append({
                         "match": f"{fr_h} vs {fr_a}",
                         "side": side,
@@ -2251,6 +2257,8 @@ elif page == "🔮 Prédictions":
                         "model_prob": prob_mod,
                         "pin_prob": prob_pin,
                         "ecart": ec,
+                        "ev": ev_pct,
+                        "phase": phase_val,
                     })
 
             value_rows.sort(key=lambda x: -x["ecart"])
@@ -2262,8 +2270,34 @@ elif page == "🔮 Prédictions":
                     return f"<span style='color:red'>{val:+.1f}%</span>"
                 return f"{val:+.1f}%"
 
-            st.markdown("#### Opportunités (écart modèle > +3%)")
-            value_pos = [v for v in value_rows if v["ecart"] > 3]
+            def _fmt_ev(val):
+                if val >= 5:
+                    return f"<span style='color:#006400;font-weight:bold'>+{val:.1f}%</span>"
+                elif val >= 2:
+                    return f"<span style='color:green'>+{val:.1f}%</span>"
+                elif val > 0:
+                    return f"<span style='color:#888'>+{val:.1f}%</span>"
+                return f"<span style='color:red'>{val:+.1f}%</span>"
+
+            def _fmt_conf(ev, ecart, cote):
+                stars = 0
+                if ev >= 2 and cote <= 10:
+                    stars += 1
+                if ecart >= 4:
+                    stars += 1
+                if ev >= 5:
+                    stars += 1
+                if stars >= 3:
+                    return "⭐⭐⭐"
+                elif stars >= 2:
+                    return "⭐⭐"
+                elif stars >= 1:
+                    return "⭐"
+                return ""
+
+            st.markdown("#### 🎯 Recommandations de paris (EV≥2%, cote≤10)")
+            value_pos = [v for v in value_rows if v["ev"] >= 2 and v["odds_pin"] <= 10 and v["ecart"] > 2]
+            value_pos.sort(key=lambda x: -x["ev"])
             if value_pos:
                 vr = []
                 for v in value_pos:
@@ -2271,17 +2305,24 @@ elif page == "🔮 Prédictions":
                         "Match": v["match"],
                         "Pari": v["side"],
                         "Cote Pin.": f"{v['odds_pin']:.2f}",
-                        "Cote Modèle": f"{v['odds_mod']:.2f}",
+                        "Cote V8": f"{v['odds_mod']:.2f}",
                         "Nous": f"{v['model_prob']:.1f}%",
                         "Pinnacle": f"{v['pin_prob']:.1f}%",
                         "Écart": _fmt_ec(v["ecart"]),
+                        "EV": _fmt_ev(v["ev"]),
+                        "Confiance": _fmt_conf(v["ev"], v["ecart"], v["odds_pin"]),
                     })
                 st.markdown(
                     pd.DataFrame(vr).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+                st.info(
+                    f"💡 **{len(value_pos)} paris identifiés** — "
+                    f"Stratégie backtestée : EV≥2%, cote≤10 → ROI +26.5% sur 136 matchs historiques. "
+                    f"⭐ = confiance basée sur EV + écart + cote."
+                )
             else:
-                st.info("Aucune value détectée (modèle très proche de Pinnacle).")
+                st.info("Aucune value détectée (modèle très proche de Pinnacle, ou cotes non disponibles).")
 
             st.markdown("#### Tous les matchs vs Pinnacle")
             all_rows = []

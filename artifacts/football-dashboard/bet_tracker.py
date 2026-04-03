@@ -38,7 +38,7 @@ def save_bets(bets):
         json.dump(bets, f, indent=2, ensure_ascii=False)
 
 
-def add_bet(match, side, odds, stake, model_prob=None, ev=None, notes=""):
+def add_bet(match, side, odds, stake, odds_v8=None, closing_odds_pin=None, notes=""):
     bets = load_bets()
     bet = {
         "id": len(bets) + 1,
@@ -47,8 +47,8 @@ def add_bet(match, side, odds, stake, model_prob=None, ev=None, notes=""):
         "side": side,
         "odds": round(odds, 2),
         "stake": round(stake, 2),
-        "model_prob": round(model_prob, 1) if model_prob else None,
-        "ev": round(ev, 1) if ev else None,
+        "odds_v8": round(odds_v8, 2) if odds_v8 else None,
+        "closing_odds_pin": round(closing_odds_pin, 2) if closing_odds_pin else None,
         "result": "pending",
         "notes": notes,
     }
@@ -74,10 +74,25 @@ def update_bet_result(bet_id, result):
     save_bets(bets)
 
 
+def update_bet_closing_odds(bet_id, closing_odds_pin):
+    bets = load_bets()
+    for b in bets:
+        if b["id"] == bet_id:
+            b["closing_odds_pin"] = round(closing_odds_pin, 2)
+            break
+    save_bets(bets)
+
+
 def delete_bet(bet_id):
     bets = load_bets()
     bets = [b for b in bets if b["id"] != bet_id]
     save_bets(bets)
+
+
+def compute_clv(odds_taken, closing_odds_pin):
+    if not closing_odds_pin or closing_odds_pin <= 1:
+        return None
+    return (1 / closing_odds_pin - 1 / odds_taken) * 100
 
 
 def get_stats():
@@ -97,6 +112,15 @@ def get_stats():
     current_bankroll = config["initial"] + total_profit
     pending_exposure = sum(b["stake"] for b in pending)
 
+    clv_values = []
+    for b in settled:
+        c = compute_clv(b["odds"], b.get("closing_odds_pin"))
+        if c is not None:
+            clv_values.append(c)
+    avg_clv = sum(clv_values) / len(clv_values) if clv_values else None
+    clv_positive = sum(1 for c in clv_values if c > 0)
+    clv_count = len(clv_values)
+
     return {
         "total_bets": len(bets),
         "settled": len(settled),
@@ -113,6 +137,9 @@ def get_stats():
         "pending_exposure": pending_exposure,
         "available": current_bankroll - pending_exposure,
         "unit": config.get("unit", "€"),
+        "avg_clv": avg_clv,
+        "clv_positive": clv_positive,
+        "clv_count": clv_count,
     }
 
 

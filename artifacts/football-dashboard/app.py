@@ -899,37 +899,32 @@ elif page == "🏅 Classement ELO":
     from elo_engine import (
         fetch_elorating_base as elo_fetch_base,
         compute_all_nations_elo,
-        compute_composite_elo,
-        WEIGHTS as ELO_WEIGHTS,
+        load_elo_overrides,
+        save_elo_overrides,
+        FORCED_ELO_WEIGHT_DEFAULT,
     )
 
     st.header("🏅 Classement ELO — Coupe du Monde 2026")
     st.caption(
-        "Classement composite des 48 nations qualifiées. "
-        "3 piliers : **Résultats ELO** (EloRating.net) × **Force de l'effectif** (BSD) × **Performance collective** (BSD). "
-        "Les poids sont ajustables."
+        "ELO = EloRating.net (base) + ajustement BSD (±50 pts effectif/performance). "
+        "Tu peux forcer un ELO manuellement pour corriger les aberrations."
     )
 
     col_settings, col_main = st.columns([1, 3])
     with col_settings:
-        st.markdown("#### Pondération")
-        w_results = st.slider("Résultats ELO (%)", 0, 100, 55, key="w_results")
-        w_squad = st.slider("Force effectif (%)", 0, 100, 30, key="w_squad")
-        w_perf = st.slider("Performance collective (%)", 0, 100, 15, key="w_perf")
-        w_total = w_results + w_squad + w_perf
-        if w_total != 100:
-            st.warning(f"Total = {w_total}% (doit faire 100%)")
-        custom_weights = {
-            "results": w_results / 100,
-            "squad": w_squad / 100,
-            "performance": w_perf / 100,
-        }
+        st.markdown("#### Réglages")
+        forced_weight_pct = st.slider(
+            "Poids ELO forcé (%)", 0, 100,
+            int(FORCED_ELO_WEIGHT_DEFAULT * 100), key="forced_weight",
+            help="Quand un ELO forcé est renseigné : ELO final = forcé × poids + calculé × (1−poids)"
+        )
+        forced_weight = forced_weight_pct / 100.0
 
-    with st.spinner("Calcul du classement ELO composite (48 nations)..."):
+    with st.spinner("Calcul du classement ELO (48 nations)..."):
         elorating_base = elo_fetch_base()
         all_elo_data = compute_all_nations_elo(
             elorating_base=elorating_base,
-            custom_weights=custom_weights if w_total == 100 else None,
+            forced_weight=forced_weight,
         )
 
     with col_main:
@@ -938,34 +933,35 @@ elif page == "🏅 Classement ELO":
         best = all_elo_data[0] if all_elo_data else None
         m2.metric("N°1", f"{best['fr']}" if best else "—")
         m3.metric("Meilleur ELO", f"{best['elo']}" if best else "—")
-        n_elo_matched = sum(1 for r in all_elo_data if r["results_detail"].get("elo_source") is not None)
-        m4.metric("Ancrées EloRating.net", f"{n_elo_matched}/48")
+        n_forced = sum(1 for r in all_elo_data if r.get("elo_forced") is not None)
+        m4.metric("ELO forcés", f"{n_forced}/48")
 
     st.info(
         f"📡 **EloRating.net** : {len(elorating_base)} équipes chargées  \n"
-        f"⚽ **BSD** : stats joueurs saison en cours (48 nations)  \n"
-        f"⚖️ **Pondération** : Résultats {w_results}% | Effectif {w_squad}% | Performance {w_perf}%"
+        f"⚽ **BSD** : ajustement ±50 pts (effectif 70% + performance 30%)  \n"
+        f"⚖️ **Poids ELO forcé** : {forced_weight_pct}% (quand renseigné)"
     )
 
     st.markdown("---")
-    tab_rank, tab_detail, tab_h2h, tab_conf = st.tabs([
-        "🏆 Classement", "🔍 Détail par nation", "⚔️ Tête-à-tête", "🌍 Par confédération"
+    tab_rank, tab_override, tab_detail, tab_h2h, tab_conf = st.tabs([
+        "🏆 Classement", "✏️ ELO forcé", "🔍 Détail par nation", "⚔️ Tête-à-tête", "🌍 Par confédération"
     ])
 
     with tab_rank:
         rank_rows = []
         for r in all_elo_data:
-            flag_html = flag_img(r["code"])
-            elo_src = r["results_detail"].get("elo_source", "—")
+            fhtml = flag_img(r["code"])
+            forced_display = str(r["elo_forced"]) if r.get("elo_forced") is not None else "—"
             rank_rows.append({
                 "Rang": r["rank"],
-                "Nation": f"{flag_html} {r['fr']}",
-                "ELO": r["elo"],
-                "Composite": round(r["composite_score"], 1),
-                "Résultats": round(r["results_score"], 1),
+                "Nation": f"{fhtml} {r['fr']}",
+                "ELO final": r["elo"],
+                "Base": r["elo_base"],
+                "Adj. BSD": f"{r['bsd_adj']:+d}",
+                "Calculé": r["elo_calculated"],
+                "ELO forcé": forced_display,
                 "Effectif": round(r["squad_score"], 1),
-                "Performance": round(r["performance_score"], 1),
-                "EloRating.net": elo_src if elo_src else "—",
+                "Perf.": round(r["performance_score"], 1),
             })
 
         rank_df = pd.DataFrame(rank_rows)
@@ -973,6 +969,63 @@ elif page == "🏅 Classement ELO":
             rank_df.to_html(escape=False, index=False),
             unsafe_allow_html=True,
         )
+
+    with tab_override:
+        st.markdown("#### Ajustements manuels d'ELO")
+        st.caption(
+            "Renseigne un ELO forcé pour corriger les nations mal évaluées par EloRating.net. "
+            f"L'ELO final sera : **forcé × {forced_weight_pct}% + calculé × {100-forced_weight_pct}%**. "
+            "Laisse vide pour utiliser l'ELO calculé."
+        )
+
+        current_overrides = load_elo_overrides()
+
+        sorted_for_edit = sorted(all_elo_data, key=lambda x: x["fr"])
+
+        edit_rows = []
+        for r in sorted_for_edit:
+            edit_rows.append({
+                "code": r["code"],
+                "Nation": r["fr"],
+                "Base EloRating": r["elo_base"],
+                "Adj. BSD": r["bsd_adj"],
+                "Calculé": r["elo_calculated"],
+                "ELO forcé": current_overrides.get(r["code"], None),
+                "ELO final": r["elo"],
+            })
+
+        edit_df = pd.DataFrame(edit_rows)
+
+        edited = st.data_editor(
+            edit_df,
+            column_config={
+                "code": st.column_config.TextColumn("Code", disabled=True, width="small"),
+                "Nation": st.column_config.TextColumn("Nation", disabled=True),
+                "Base EloRating": st.column_config.NumberColumn("Base", disabled=True, format="%d"),
+                "Adj. BSD": st.column_config.NumberColumn("Adj. BSD", disabled=True, format="%+d"),
+                "Calculé": st.column_config.NumberColumn("Calculé", disabled=True, format="%d"),
+                "ELO forcé": st.column_config.NumberColumn(
+                    "ELO forcé",
+                    min_value=800, max_value=2500, step=1,
+                    help="Valeur ELO que tu veux forcer. Laisse vide pour garder le calculé.",
+                ),
+                "ELO final": st.column_config.NumberColumn("ELO final", disabled=True, format="%d"),
+            },
+            hide_index=True,
+            use_container_width=True,
+            key="elo_override_editor",
+        )
+
+        if st.button("💾 Sauvegarder les ELO forcés", type="primary"):
+            new_overrides = {}
+            for _, row in edited.iterrows():
+                code = row["code"]
+                val = row["ELO forcé"]
+                if pd.notna(val) and val is not None:
+                    new_overrides[code] = int(val)
+            save_elo_overrides(new_overrides)
+            st.success(f"✅ {len(new_overrides)} ELO forcé(s) sauvegardé(s). Recharge la page pour voir l'effet.")
+            st.cache_data.clear()
 
     with tab_detail:
         nation_options = [f"{r['fr']} ({r['code']})" for r in all_elo_data]
@@ -983,20 +1036,20 @@ elif page == "🏅 Classement ELO":
         if nation_data:
             st.markdown(f"### {nation_data['fr']} — ELO {nation_data['elo']} (Rang #{nation_data['rank']})")
 
-            sc1, sc2, sc3 = st.columns(3)
-            sc1.metric(
-                f"Résultats ({int(custom_weights['results']*100)}%)",
-                f"{nation_data['results_score']:.1f}/100",
-                f"EloRating.net: {nation_data['results_detail'].get('elo_source', '—')}"
-            )
-            sc2.metric(
-                f"Effectif ({int(custom_weights['squad']*100)}%)",
-                f"{nation_data['squad_score']:.1f}/100",
-            )
-            sc3.metric(
-                f"Performance ({int(custom_weights['performance']*100)}%)",
-                f"{nation_data['performance_score']:.1f}/100",
-            )
+            sc1, sc2, sc3, sc4 = st.columns(4)
+            sc1.metric("Base EloRating.net", f"{nation_data['elo_base']}")
+            sc2.metric("Ajust. BSD", f"{nation_data['bsd_adj']:+d}")
+            sc3.metric("ELO calculé", f"{nation_data['elo_calculated']}")
+            forced_val = nation_data.get("elo_forced")
+            sc4.metric("ELO forcé", f"{forced_val}" if forced_val else "—")
+
+            st.markdown("---")
+
+            sq1, sq2 = st.columns(2)
+            with sq1:
+                st.metric("Force effectif (BSD)", f"{nation_data['squad_score']:.1f}/100")
+            with sq2:
+                st.metric("Performance collective (BSD)", f"{nation_data['performance_score']:.1f}/100")
 
             sd = nation_data.get("squad_detail", {})
             pd_detail = nation_data.get("performance_detail", {})
@@ -1049,12 +1102,13 @@ elif page == "🏅 Classement ELO":
                 fig_pf.update_layout(showlegend=False, yaxis_range=[0, 100])
                 st.plotly_chart(fig_pf, width="stretch")
 
-            st.markdown("#### Radar des 3 piliers")
+            st.markdown("#### Radar")
             import plotly.graph_objects as go
             radar_fig = go.Figure(data=go.Scatterpolar(
-                r=[nation_data["results_score"], nation_data["squad_score"],
-                   nation_data["performance_score"], nation_data["results_score"]],
-                theta=["Résultats", "Effectif", "Performance", "Résultats"],
+                r=[nation_data["squad_score"],
+                   nation_data["performance_score"],
+                   nation_data["squad_score"]],
+                theta=["Effectif", "Performance", "Effectif"],
                 fill="toself",
                 name=nation_data["fr"],
             ))
@@ -1081,43 +1135,41 @@ elif page == "🏅 Classement ELO":
         data_b = next((r for r in all_elo_data if r["code"] == code_b), None)
 
         if data_a and data_b and code_a != code_b:
-            home_adv_h2h = st.slider("Avantage domicile (pts ELO)", 0, 200, 100, key="elo_h2h_home")
-
-            elo_a = data_a["elo"] + home_adv_h2h
-            elo_b = data_b["elo"]
-            ea = 1 / (1 + 10 ** ((elo_b - elo_a) / 400))
-            eb = 1 - ea
+            from wc_simulator import buchdahl_1x2 as h2h_buchdahl
 
             mc1, mc2, mc3 = st.columns(3)
             mc1.metric(
-                f"{data_a['fr']} (dom.)",
+                f"{data_a['fr']}",
                 f"ELO {data_a['elo']}",
                 f"#{data_a['rank']}"
             )
             mc2.metric(
-                f"{data_b['fr']} (ext.)",
+                f"{data_b['fr']}",
                 f"ELO {data_b['elo']}",
                 f"#{data_b['rank']}"
             )
             mc3.metric("Écart", f"{abs(data_a['elo'] - data_b['elo'])} pts")
 
-            st.markdown(f"**Probabilités ELO ({data_a['fr']} à domicile, avantage {home_adv_h2h} pts) :**")
+            delta_h2h = data_a["elo"] - data_b["elo"]
+            p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h)
+
+            st.markdown(f"**Probabilités Buchdahl+tanh (terrain neutre) :**")
             pc1, pc2, pc3 = st.columns(3)
-            pc1.metric(f"Victoire {data_a['fr']}", f"{ea*100:.1f}%", f"Cote: {fair_odds(ea*100)}")
-            pc2.metric("Nul (approx.)", "—")
-            pc3.metric(f"Victoire {data_b['fr']}", f"{eb*100:.1f}%", f"Cote: {fair_odds(eb*100)}")
+            pc1.metric(f"Victoire {data_a['fr']}", f"{p1_h2h*100:.1f}%", f"Cote: {1/p1_h2h:.2f}")
+            pc2.metric("Nul", f"{px_h2h*100:.1f}%", f"Cote: {1/px_h2h:.2f}")
+            pc3.metric(f"Victoire {data_b['fr']}", f"{p2_h2h*100:.1f}%", f"Cote: {1/p2_h2h:.2f}")
 
             st.markdown("---")
             st.markdown("#### Comparaison des profils")
             comp_df = pd.DataFrame({
-                "Pilier": ["Résultats", "Effectif", "Performance", "Composite", "ELO"],
+                "Attribut": ["ELO final", "Base EloRating", "Adj. BSD", "Effectif", "Performance"],
                 data_a["fr"]: [
-                    data_a["results_score"], data_a["squad_score"],
-                    data_a["performance_score"], data_a["composite_score"], data_a["elo"]
+                    data_a["elo"], data_a["elo_base"],
+                    data_a["bsd_adj"], data_a["squad_score"], data_a["performance_score"],
                 ],
                 data_b["fr"]: [
-                    data_b["results_score"], data_b["squad_score"],
-                    data_b["performance_score"], data_b["composite_score"], data_b["elo"]
+                    data_b["elo"], data_b["elo_base"],
+                    data_b["bsd_adj"], data_b["squad_score"], data_b["performance_score"],
                 ],
             })
             st.dataframe(comp_df, width="stretch", hide_index=True)
@@ -1126,9 +1178,10 @@ elif page == "🏅 Classement ELO":
             radar_cmp = go.Figure()
             for d in [data_a, data_b]:
                 radar_cmp.add_trace(go.Scatterpolar(
-                    r=[d["results_score"], d["squad_score"],
-                       d["performance_score"], d["results_score"]],
-                    theta=["Résultats", "Effectif", "Performance", "Résultats"],
+                    r=[d["squad_score"],
+                       d["performance_score"],
+                       d["squad_score"]],
+                    theta=["Effectif", "Performance", "Effectif"],
                     fill="toself",
                     name=d["fr"],
                 ))
@@ -1160,8 +1213,9 @@ elif page == "🏅 Classement ELO":
                         "Rang conf.": i + 1,
                         "Rang mondial": r["rank"],
                         "Nation": r["fr"],
-                        "ELO": r["elo"],
-                        "Résultats": round(r["results_score"], 1),
+                        "ELO final": r["elo"],
+                        "Base": r["elo_base"],
+                        "Adj. BSD": r["bsd_adj"],
                         "Effectif": round(r["squad_score"], 1),
                         "Performance": round(r["performance_score"], 1),
                     })

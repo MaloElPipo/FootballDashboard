@@ -73,7 +73,7 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - `comp_29967` International Friendly Games (World)
   - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
 - **AI Assistant**: Claude (Anthropic) integration via `ANTHROPIC_API_KEY`, streaming responses
-- **ELO Ranking**: 3-pillar composite system (55% EloRating.net results + 30% BSD squad strength + 15% BSD collective performance), module in `elo_engine.py`
+- **ELO Ranking**: EloRating.net base + BSD ±50pts adjustment (effectif 70% + performance 30%). Supports manual "ELO forcé" overrides with configurable weight (default 80%). Persisted in `elo_overrides.json`. Module: `elo_engine.py`
 - **Odds API**: The Odds API (`the-odds-api.com`) for multi-bookmaker odds; key stored as `ODDS_API_KEY`
   - Selected bookmakers: Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR
   - BSD API odds source: AllSportsAPI (likely Bet365 as default bookmaker)
@@ -93,8 +93,9 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
 Monte Carlo engine for FIFA World Cup 2026 predictions.
 
 ### Core Model
-- **Buchdahl 1X2**: P(1)=0.1603×ΔElo+42.85, P(2)=0.000187×ΔElo²–0.150×ΔElo+30.44, P(X)=100–P(1)–P(2)
-- Calibrated on 55 WC matches (WC2022 + WC2026 qualifiers) vs Pinnacle lines: R²=0.80, RMSE=5.85%
+- **Buchdahl+tanh**: d_eff=263×tanh(Δ/263), P(1)=0.113×d_eff+42.28, P(2)=0.00014×d_eff²–0.110×d_eff+30.11, P(X)=100–P(1)–P(2)
+- Recalibrated on 19 Pinnacle WC2026 matches: RMSE=7.29% (56% improvement over linear Buchdahl)
+- tanh compression prevents extreme odds at large deltas (Δ=400 → 1.44, Δ=800 → 1.39)
 - Goal model: Poisson with λ calibrated from 1X2 probabilities (avg ~2.5 goals)
 
 ### Simulation Pipeline

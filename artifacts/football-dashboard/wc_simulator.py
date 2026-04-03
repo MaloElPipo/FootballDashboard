@@ -1,5 +1,6 @@
 import math
 import random
+import numpy as np
 from collections import defaultdict
 from elo_engine import compute_all_nations_elo, fetch_elorating_base
 from nations_data import get_nation_by_code
@@ -57,29 +58,29 @@ SF_PAIRINGS = [(0, 1), (2, 3)]
 
 HOST_NATIONS = {"USA", "MEX", "CAN"}
 
-BUCHDAHL_PARAMS = [0.1603, 42.85, 0.000187, -0.1500, 30.44]
+TANH_L = 263.0
+BUCHDAHL_PARAMS = [TANH_L, 0.113126, 42.28, 0.000140, -0.109525, 30.11]
 
 
 def buchdahl_1x2(delta_elo, params=None):
     if params is None:
         params = BUCHDAHL_PARAMS
-    a1, b1, a2, b2, c2 = params
-    p1 = a1 * delta_elo + b1
-    p2 = a2 * delta_elo**2 + b2 * delta_elo + c2
-    p1 = max(2.0, min(95.0, p1))
-    p2 = max(2.0, min(95.0, p2))
-    pd = 100.0 - p1 - p2
-    if pd < 2.0:
-        pd = 2.0
-        excess = p1 + p2 + pd - 100.0
-        p1 -= excess / 2
-        p2 -= excess / 2
-    return p1 / 100.0, pd / 100.0, p2 / 100.0
+    L, a1, a0, b2, b1, b0 = params
+    L = max(L, 50)
+    d_eff = L * np.tanh(delta_elo / L)
+    p1 = a1 * d_eff + a0
+    p2 = b2 * d_eff**2 + b1 * d_eff + b0
+    px = 100 - p1 - p2
+    p1 = float(np.clip(p1, 1, 98))
+    p2 = float(np.clip(p2, 1, 98))
+    px = float(np.clip(px, 1, 98))
+    total = p1 + px + p2
+    return p1 / total, px / total, p2 / total
 
 
-def _build_elo_map():
+def _build_elo_map(forced_weight=None):
     elo_base = fetch_elorating_base()
-    all_elo = compute_all_nations_elo(elorating_base=elo_base)
+    all_elo = compute_all_nations_elo(elorating_base=elo_base, forced_weight=forced_weight)
     return {r["code"]: r["elo"] for r in all_elo}
 
 
@@ -165,11 +166,6 @@ def _resolve_3rd_slot(slot_groups, qualified_thirds):
 
 
 def simulate_tournament(elo_map, params=None):
-    global BUCHDAHL_PARAMS
-    if params is not None:
-        BUCHDAHL_PARAMS_backup = BUCHDAHL_PARAMS
-        BUCHDAHL_PARAMS = params
-
     tracker = defaultdict(lambda: {
         "group_pos": 0, "group_pts": 0,
         "r32": False, "r16": False, "qf": False,
@@ -317,9 +313,6 @@ def simulate_tournament(elo_map, params=None):
     result, _, _ = simulate_knockout_match(elo_h, elo_a, f_h, f_a)
     champion = f_h if result == "H" else f_a
     tracker[champion]["winner"] = True
-
-    if params is not None:
-        BUCHDAHL_PARAMS = BUCHDAHL_PARAMS_backup
 
     return dict(tracker)
 

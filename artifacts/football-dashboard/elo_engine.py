@@ -1,20 +1,22 @@
 import json
 import math
 import os
+import numpy as np
 import requests
 from pathlib import Path
 from nations_data import WC2026_NATIONS, get_all_nations, get_nation_by_code
 
 BSD_CACHE_PATH = Path(__file__).parent / "bsd_data_cache.json"
+OVERRIDES_PATH = Path(__file__).parent / "elo_overrides.json"
+SELECTION_FILE = Path(__file__).parent / "players_selection.json"
 
-WEIGHTS = {
-    "results": 0.55,
-    "squad": 0.30,
-    "performance": 0.15,
+FORCED_ELO_WEIGHT_DEFAULT = 0.80
+
+ELORATING_FALLBACKS = {
+    "SCO": 1700,
+    "CUW": 1350,
+    "CIV": 1750,
 }
-
-BASE_ELO = 1500
-ELO_RANGE = 600
 
 ELO_CODE_TO_NAME = {
     "ES": "Spain", "AR": "Argentina", "FR": "France", "EN": "England", "BR": "Brazil",
@@ -42,6 +44,22 @@ ELO_CODE_TO_NAME = {
     "TT": "Trinidad & Tobago", "GQ": "Equatorial Guinea", "MG": "Madagascar",
     "FO": "Faroe Islands", "AM": "Armenia", "TH": "Thailand", "KP": "North Korea",
     "MZ": "Mozambique", "ZW": "Zimbabwe", "ZM": "Zambia", "KM": "Comoros",
+}
+
+NATION_NAME_TO_FIFA = {
+    "Spain": "ESP", "Argentina": "ARG", "France": "FRA", "England": "ENG",
+    "Brazil": "BRA", "Portugal": "POR", "Colombia": "COL", "Netherlands": "NED",
+    "Ecuador": "ECU", "Croatia": "CRO", "Germany": "GER", "Norway": "NOR",
+    "Japan": "JPN", "Turkey": "TUR", "Uruguay": "URU", "Switzerland": "SUI",
+    "Senegal": "SEN", "Belgium": "BEL", "Mexico": "MEX", "Paraguay": "PAR",
+    "Austria": "AUT", "Morocco": "MAR", "Canada": "CAN", "Australia": "AUS",
+    "Iran": "IRN", "South Korea": "KOR", "Algeria": "ALG", "Panama": "PAN",
+    "Uzbekistan": "UZB", "Czechia": "CZE", "Sweden": "SWE", "Jordan": "JOR",
+    "Egypt": "EGY", "DR Congo": "COD", "Tunisia": "TUN", "Iraq": "IRQ",
+    "Bosnia & Herzegovina": "BIH", "New Zealand": "NZL", "Saudi Arabia": "KSA",
+    "Cape Verde": "CPV", "Haiti": "HAI", "South Africa": "RSA", "Ghana": "GHA",
+    "Qatar": "QAT", "Scotland": "SCO", "Curaçao": "CUW", "Côte d'Ivoire": "CIV",
+    "United States": "USA", "Ivory Coast": "CIV",
 }
 
 NATION_TO_ELO_NAME = {
@@ -76,7 +94,33 @@ def fetch_elorating_base():
         return {}
 
 
-SELECTION_FILE = Path(__file__).parent / "players_selection.json"
+def _elorating_to_fifa_map(elorating_base):
+    elo_by_fifa = {}
+    for name, elo_val in elorating_base.items():
+        fifa_code = NATION_NAME_TO_FIFA.get(name)
+        if fifa_code and isinstance(elo_val, (int, float)):
+            elo_by_fifa[fifa_code] = elo_val
+    for code, fallback in ELORATING_FALLBACKS.items():
+        if code not in elo_by_fifa:
+            elo_by_fifa[code] = fallback
+    return elo_by_fifa
+
+
+def load_elo_overrides():
+    if not OVERRIDES_PATH.exists():
+        return {}
+    try:
+        with open(OVERRIDES_PATH) as f:
+            data = json.load(f)
+        return {k: int(v) for k, v in data.items() if v is not None and str(v).strip() != ""}
+    except Exception:
+        return {}
+
+
+def save_elo_overrides(overrides):
+    clean = {k: int(v) for k, v in overrides.items() if v is not None and str(v).strip() != ""}
+    with open(OVERRIDES_PATH, "w") as f:
+        json.dump(clean, f, indent=2)
 
 
 def _load_bsd_cache():
@@ -217,84 +261,79 @@ def compute_performance_score(nation_code, cache=None):
     return round(max(0, min(100, composite)), 1), details
 
 
-def compute_results_score(nation_code, elorating_base=None):
-    if not elorating_base:
-        return 50.0, {}
-
-    nation = get_nation_by_code(nation_code)
-    if not nation:
-        return 50.0, {}
-
-    team_name = nation["name"]
-    lookup = NATION_TO_ELO_NAME.get(team_name, team_name)
-
-    elo_val = elorating_base.get(lookup)
-    if elo_val is None:
-        for name, val in elorating_base.items():
-            if name.lower() == lookup.lower():
-                elo_val = val
-                break
-
-    if elo_val is None:
-        return 50.0, {"elo_source": None}
-
-    all_elos = list(elorating_base.values())
-    min_elo = min(all_elos)
-    max_elo = max(all_elos)
-    score = (elo_val - min_elo) / (max_elo - min_elo) * 100 if max_elo > min_elo else 50
-
-    return round(max(0, min(100, score)), 1), {
-        "elo_source": elo_val,
-        "elo_name": lookup,
-    }
-
-
-def compute_composite_elo(nation_code, elorating_base=None, cache=None, custom_weights=None):
+def compute_nation_elo(nation_code, elorating_by_fifa, cache=None):
     if cache is None:
         cache = _load_bsd_cache()
 
-    w = custom_weights or WEIGHTS
+    base_elo = elorating_by_fifa.get(nation_code)
+    if base_elo is None:
+        base_elo = 1500
 
-    results_score, results_detail = compute_results_score(nation_code, elorating_base)
     squad_score, squad_detail = compute_squad_score(nation_code, cache)
     perf_score, perf_detail = compute_performance_score(nation_code, cache)
 
-    composite_score = (
-        results_score * w["results"]
-        + squad_score * w["squad"]
-        + perf_score * w["performance"]
-    )
-
-    elo_final = BASE_ELO + (composite_score / 100) * ELO_RANGE
-
     return {
         "code": nation_code,
-        "elo": round(elo_final),
-        "composite_score": round(composite_score, 1),
-        "results_score": results_score,
+        "elo_base": base_elo,
         "squad_score": squad_score,
         "performance_score": perf_score,
-        "results_detail": results_detail,
         "squad_detail": squad_detail,
         "performance_detail": perf_detail,
-        "weights": w,
     }
 
 
-def compute_all_nations_elo(elorating_base=None, custom_weights=None):
+def compute_bsd_adjustment(squad_score, perf_score, all_squad_scores, all_perf_scores):
+    sq_arr = np.array(all_squad_scores)
+    pf_arr = np.array(all_perf_scores)
+    sq_mean, sq_std = sq_arr.mean(), sq_arr.std()
+    pf_mean, pf_std = pf_arr.mean(), pf_arr.std()
+
+    sq_z = (squad_score - sq_mean) / sq_std if sq_std > 0 else 0
+    pf_z = (perf_score - pf_mean) / pf_std if pf_std > 0 else 0
+
+    adj = np.clip(sq_z, -2, 2) * 25 * 0.7 + np.clip(pf_z, -2, 2) * 25 * 0.3
+    return int(round(adj))
+
+
+def compute_all_nations_elo(elorating_base=None, forced_weight=None):
+    if elorating_base is None:
+        elorating_base = fetch_elorating_base()
+
+    if forced_weight is None:
+        forced_weight = FORCED_ELO_WEIGHT_DEFAULT
+
     cache = _load_bsd_cache()
+    elorating_by_fifa = _elorating_to_fifa_map(elorating_base)
+    overrides = load_elo_overrides()
+
     all_nations = get_all_nations()
-    results = []
+    nation_data_list = []
     for nation in all_nations:
         code = nation["code"]
-        data = compute_composite_elo(code, elorating_base, cache, custom_weights)
+        data = compute_nation_elo(code, elorating_by_fifa, cache)
         data["name"] = nation["name"]
         data["fr"] = nation["fr"]
         data["conf"] = nation["conf"]
-        results.append(data)
+        nation_data_list.append(data)
 
-    results.sort(key=lambda x: x["elo"], reverse=True)
-    for i, r in enumerate(results):
+    all_sq = [d["squad_score"] for d in nation_data_list]
+    all_pf = [d["performance_score"] for d in nation_data_list]
+
+    for data in nation_data_list:
+        adj = compute_bsd_adjustment(data["squad_score"], data["performance_score"], all_sq, all_pf)
+        data["bsd_adj"] = adj
+        data["elo_calculated"] = data["elo_base"] + adj
+
+        forced_val = overrides.get(data["code"])
+        data["elo_forced"] = forced_val
+
+        if forced_val is not None:
+            data["elo"] = int(round(forced_val * forced_weight + data["elo_calculated"] * (1 - forced_weight)))
+        else:
+            data["elo"] = data["elo_calculated"]
+
+    nation_data_list.sort(key=lambda x: x["elo"], reverse=True)
+    for i, r in enumerate(nation_data_list):
         r["rank"] = i + 1
 
-    return results
+    return nation_data_list

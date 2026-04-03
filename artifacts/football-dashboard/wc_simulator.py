@@ -64,6 +64,14 @@ V7_D_HALF = 540.0
 V7_POWER = 2.6
 V7_QUALITY = -0.70
 
+V8_DRAW_BOOST_CLOSE = 5.0
+V8_DRAW_BOOST_MID = 3.0
+V8_DRAW_BOOST_KO = 8.0
+V8_DRAW_BOOST_MAX = 10.0
+V8_FAV_BOOST_GROUP = 5.0
+V8_FAV_BOOST_KO = 2.0
+V8_FAV_DELTA_THRESHOLD = 300
+
 
 def sigmoid_v6_1x2(delta_elo, params=None, elo_avg=None):
     if params is None:
@@ -88,6 +96,57 @@ def sigmoid_v6_1x2(delta_elo, params=None, elo_avg=None):
     draw = float(np.clip(draw, 0.5, 99.0))
     total = p1 + draw + p2
     return p1 / total, draw / total, p2 / total
+
+
+def sigmoid_v8_1x2(delta_elo, elo_avg=None, phase="G"):
+    p1, px, p2 = sigmoid_v6_1x2(delta_elo, elo_avg=elo_avg)
+
+    abs_d = abs(delta_elo)
+    draw_boost = 0.0
+    if abs_d < 100:
+        draw_boost += V8_DRAW_BOOST_CLOSE / 100.0
+    elif abs_d < 200:
+        draw_boost += V8_DRAW_BOOST_MID / 100.0
+
+    if phase == "K":
+        draw_boost += V8_DRAW_BOOST_KO / 100.0
+
+    draw_boost = min(draw_boost, V8_DRAW_BOOST_MAX / 100.0)
+
+    fav_boost = 0.0
+    if abs_d >= V8_FAV_DELTA_THRESHOLD:
+        if phase == "K":
+            fav_boost = V8_FAV_BOOST_KO / 100.0
+        else:
+            fav_boost = V8_FAV_BOOST_GROUP / 100.0
+
+    net_draw = draw_boost - fav_boost * 0.7
+    net_draw = max(net_draw, 0.0)
+
+    px_new = px + net_draw
+    surplus_h_a = net_draw
+    if p1 + p2 > 0:
+        p1_new = p1 - surplus_h_a * (p1 / (p1 + p2))
+        p2_new = p2 - surplus_h_a * (p2 / (p1 + p2))
+    else:
+        p1_new = p1
+        p2_new = p2
+
+    if fav_boost > 0:
+        if delta_elo >= 0:
+            p1_new += fav_boost
+            px_new -= fav_boost * 0.7
+            p2_new -= fav_boost * 0.3
+        else:
+            p2_new += fav_boost
+            px_new -= fav_boost * 0.7
+            p1_new -= fav_boost * 0.3
+
+    p1_new = max(p1_new, 0.005)
+    p2_new = max(p2_new, 0.005)
+    px_new = max(px_new, 0.005)
+    total = p1_new + px_new + p2_new
+    return p1_new / total, px_new / total, p2_new / total
 
 
 def _build_elo_map(forced_weight=None):

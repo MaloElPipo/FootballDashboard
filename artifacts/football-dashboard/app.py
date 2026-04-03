@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import os
 import anthropic
-from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS, get_nation_by_code
+from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS, get_nation_by_code, FIFA_TO_ISO, flag_img
 from squad_scraper import (
     get_squad_cached, get_cache_status, clear_cache_for, clear_all_cache,
     get_static_squad, get_static_db_status,
@@ -955,19 +955,7 @@ elif page == "🏅 Classement ELO":
     with tab_rank:
         rank_rows = []
         for r in all_elo_data:
-            iso = r["code"].lower()
-            iso_map = {
-                "eng": "gb-eng", "sco": "gb-sct", "ger": "de", "por": "pt",
-                "sui": "ch", "cro": "hr", "ned": "nl", "kor": "kr",
-                "ksa": "sa", "alg": "dz", "rsa": "za", "civ": "ci",
-                "cod": "cd", "cpv": "cv", "bih": "ba", "cze": "cz",
-                "par": "py", "uru": "uy", "pan": "pa", "hai": "ht",
-                "cuw": "cw", "uzb": "uz", "irn": "ir", "irq": "iq",
-                "jor": "jo", "tun": "tn", "gha": "gh", "sen": "sn",
-                "egy": "eg", "mar": "ma", "nzl": "nz",
-            }
-            flag_iso = iso_map.get(iso, iso)
-            flag_html = f"<img src='https://flagcdn.com/24x18/{flag_iso}.png' style='vertical-align:middle'>"
+            flag_html = flag_img(r["code"])
             elo_src = r["results_detail"].get("elo_source", "—")
             rank_rows.append({
                 "Rang": r["rank"],
@@ -1968,9 +1956,14 @@ elif page == "🔮 Prédictions":
         "Probabilités 1X2 pour chaque match, classements de poules, et chemins vers le titre."
     )
 
-    tab_sim, tab_groups, tab_matches, tab_value = st.tabs([
+    def _odds_cell(prob_pct):
+        if prob_pct <= 0:
+            return "—"
+        odds = 100 / prob_pct
+        return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
+
+    tab_sim, tab_matches, tab_value = st.tabs([
         "🏆 Simulation globale",
-        "📊 Classements de poules",
         "⚽ Matchs 1X2",
         "💎 Détection de Value",
     ])
@@ -1993,22 +1986,18 @@ elif page == "🔮 Prédictions":
         if view_mode == "Classement général":
             rows = []
             for i, r in enumerate(sim_data):
-                iso = r["code"].lower()
-                if iso == "sco":
-                    iso = "gb-sct"
-                flag = f"<img src='https://flagcdn.com/24x18/{iso}.png' style='vertical-align:middle'>"
                 rows.append({
                     "#": i + 1,
-                    "Nation": f"{flag} {r['fr']}",
+                    "Nation": f"{flag_img(r['code'])} {r['fr']}",
                     "Poule": r["group"],
                     "ELO": r["elo"],
                     "Pts moy.": f"{r['avg_pts']:.1f}",
-                    "1/32": f"{r['p_r32']:.1f}%",
-                    "1/16": f"{r['p_r16']:.1f}%",
-                    "1/4": f"{r['p_qf']:.1f}%",
-                    "1/2": f"{r['p_sf']:.1f}%",
-                    "Finale": f"{r['p_final']:.1f}%",
-                    "🏆 Titre": f"{r['p_winner']:.1f}%",
+                    "1/32": _odds_cell(r["p_r32"]),
+                    "1/16": _odds_cell(r["p_r16"]),
+                    "1/4": _odds_cell(r["p_qf"]),
+                    "1/2": _odds_cell(r["p_sf"]),
+                    "Finale": _odds_cell(r["p_final"]),
+                    "🏆 Titre": _odds_cell(r["p_winner"]),
                 })
             df_sim = pd.DataFrame(rows)
             st.markdown(
@@ -2044,52 +2033,21 @@ elif page == "🔮 Prédictions":
                 st.markdown(f"#### Poule {grp_letter}")
                 rows = []
                 for r in grp_teams:
-                    iso = r["code"].lower()
-                    if iso == "sco":
-                        iso = "gb-sct"
-                    flag = f"<img src='https://flagcdn.com/24x18/{iso}.png' style='vertical-align:middle'>"
                     rows.append({
-                        "Nation": f"{flag} {r['fr']}",
+                        "Nation": f"{flag_img(r['code'])} {r['fr']}",
                         "ELO": r["elo"],
                         "Pts moy.": f"{r['avg_pts']:.1f}",
                         "1er": f"{r['p_1st']:.0f}%",
                         "2e": f"{r['p_2nd']:.0f}%",
                         "3e": f"{r['p_3rd']:.0f}%",
                         "4e": f"{r['p_4th']:.0f}%",
-                        "Qualif.": f"{r['p_r32']:.1f}%",
-                        "Titre": f"{r['p_winner']:.1f}%",
+                        "Qualif.": _odds_cell(r["p_r32"]),
+                        "Titre": _odds_cell(r["p_winner"]),
                     })
                 st.markdown(
                     pd.DataFrame(rows).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
-
-    with tab_groups:
-        st.subheader("Classements simulés des poules")
-        sim_data_g = _cached_simulation(n_sims if 'n_sims' in dir() else 10000)
-
-        cols = st.columns(3)
-        for idx, grp_letter in enumerate(sorted(WC2026_GROUPS.keys())):
-            col = cols[idx % 3]
-            grp_teams = [r for r in sim_data_g if r["group"] == grp_letter]
-            grp_teams.sort(key=lambda x: (-x["avg_pts"], -x["p_1st"]))
-
-            with col:
-                st.markdown(f"**Poule {grp_letter}**")
-                for r in grp_teams:
-                    iso = r["code"].lower()
-                    if iso == "sco":
-                        iso = "gb-sct"
-                    bar_len = int(r["p_r32"] / 2)
-                    bar = "█" * bar_len + "░" * (50 - bar_len)
-                    flag_url = f"https://flagcdn.com/16x12/{iso}.png"
-                    st.markdown(
-                        f"<img src='{flag_url}' style='vertical-align:middle'> "
-                        f"**{r['fr']}** — {r['avg_pts']:.1f} pts — "
-                        f"Qualif: {r['p_r32']:.0f}%",
-                        unsafe_allow_html=True,
-                    )
-                st.markdown("---")
 
     with tab_matches:
         st.subheader("Probabilités 1X2 — Tous les matchs de poules")
@@ -2106,28 +2064,15 @@ elif page == "🔮 Prédictions":
             matches = preds[grp_letter]
             rows = []
             for m in matches:
-                iso_h = m["home_code"].lower()
-                iso_a = m["away_code"].lower()
-                if iso_h == "sco": iso_h = "gb-sct"
-                if iso_a == "sco": iso_a = "gb-sct"
-                flag_h = f"<img src='https://flagcdn.com/20x15/{iso_h}.png' style='vertical-align:middle'>"
-                flag_a = f"<img src='https://flagcdn.com/20x15/{iso_a}.png' style='vertical-align:middle'>"
-
-                best = max(m["p_home"], m["p_draw"], m["p_away"])
-                def fmt_p(val):
-                    if val == best:
-                        return f"<b>{val:.1f}%</b>"
-                    return f"{val:.1f}%"
+                fh = flag_img(m["home_code"], "20x15")
+                fa = flag_img(m["away_code"], "20x15")
 
                 rows.append({
-                    "Match": f"{flag_h} {m['home_fr']} vs {m['away_fr']} {flag_a}",
+                    "Match": f"{fh} {m['home_fr']} vs {m['away_fr']} {fa}",
                     "ΔElo": f"{m['delta']:+d}",
-                    "1": fmt_p(m["p_home"]),
-                    "X": fmt_p(m["p_draw"]),
-                    "2": fmt_p(m["p_away"]),
-                    "Cote 1": f"{m['odds_home']:.2f}",
-                    "Cote X": f"{m['odds_draw']:.2f}",
-                    "Cote 2": f"{m['odds_away']:.2f}",
+                    "1": _odds_cell(m["p_home"]),
+                    "X": _odds_cell(m["p_draw"]),
+                    "2": _odds_cell(m["p_away"]),
                 })
             st.markdown(
                 pd.DataFrame(rows).to_html(escape=False, index=False),
@@ -2137,8 +2082,8 @@ elif page == "🔮 Prédictions":
     with tab_value:
         st.subheader("💎 Détection de Value vs Pinnacle")
         st.caption(
-            "Compare nos probabilités modélisées aux cotes implicites Pinnacle. "
-            "Écart positif = notre modèle donne plus de chances que le marché."
+            "Compare nos cotes modélisées aux cotes Pinnacle. "
+            "Écart positif = notre modèle estime la probabilité plus haute que Pinnacle (value potentielle)."
         )
 
         try:
@@ -2217,40 +2162,49 @@ elif page == "🔮 Prédictions":
                 fr_h = nation_h["fr"] if nation_h else home
                 fr_a = nation_a["fr"] if nation_a else away
 
-                for side, ec, odds, prob, pin_p in [
+                for side, ec, odds_pin, prob_mod, prob_pin in [
                     ("1", mod_h - pin_h, oh, mod_h, pin_h),
                     ("X", mod_d - pin_d, od, mod_d, pin_d),
                     ("2", mod_a - pin_a, oa, mod_a, pin_a),
                 ]:
-                    ev = (prob / 100) * odds - 1
+                    odds_mod = 100 / prob_mod if prob_mod > 0 else 0
                     value_rows.append({
                         "match": f"{fr_h} vs {fr_a}",
                         "side": side,
-                        "odds": odds,
-                        "model_prob": prob,
-                        "pin_prob": pin_p,
+                        "odds_pin": odds_pin,
+                        "odds_mod": odds_mod,
+                        "model_prob": prob_mod,
+                        "pin_prob": prob_pin,
                         "ecart": ec,
-                        "ev": ev * 100,
                     })
 
             value_rows.sort(key=lambda x: -x["ecart"])
+
+            def _fmt_ec(val):
+                if val > 3:
+                    return f"<span style='color:green;font-weight:bold'>+{val:.1f}%</span>"
+                elif val < -3:
+                    return f"<span style='color:red'>{val:+.1f}%</span>"
+                return f"{val:+.1f}%"
 
             st.markdown("#### Opportunités (écart modèle > +3%)")
             value_pos = [v for v in value_rows if v["ecart"] > 3]
             if value_pos:
                 vr = []
                 for v in value_pos:
-                    color = "🟢" if v["ev"] > 0 else "🔴"
                     vr.append({
                         "Match": v["match"],
                         "Pari": v["side"],
-                        "Cote": f"{v['odds']:.2f}",
+                        "Cote Pin.": f"{v['odds_pin']:.2f}",
+                        "Cote Modèle": f"{v['odds_mod']:.2f}",
                         "Nous": f"{v['model_prob']:.1f}%",
                         "Pinnacle": f"{v['pin_prob']:.1f}%",
-                        "Écart": f"+{v['ecart']:.1f}%",
-                        "EV": f"{color} {v['ev']:+.1f}%",
+                        "Écart": _fmt_ec(v["ecart"]),
                     })
-                st.dataframe(pd.DataFrame(vr), hide_index=True, use_container_width=True)
+                st.markdown(
+                    pd.DataFrame(vr).to_html(escape=False, index=False),
+                    unsafe_allow_html=True,
+                )
             else:
                 st.info("Aucune value détectée (modèle très proche de Pinnacle).")
 
@@ -2265,22 +2219,16 @@ elif page == "🔮 Prédictions":
                     dx = next((x for x in m_data if x["side"] == "X"), None)
                     d2 = next((x for x in m_data if x["side"] == "2"), None)
                     if d1 and dx and d2:
-                        def _fmt_ec(val):
-                            if val > 3:
-                                return f"<span style='color:green;font-weight:bold'>+{val:.1f}%</span>"
-                            elif val < -3:
-                                return f"<span style='color:red'>{val:+.1f}%</span>"
-                            return f"{val:+.1f}%"
                         all_rows.append({
                             "Match": v["match"],
-                            "Mod. 1": f"{d1['model_prob']:.1f}%",
-                            "Pin. 1": f"{d1['pin_prob']:.1f}%",
+                            "Mod. 1": f"{d1['odds_mod']:.2f}",
+                            "Pin. 1": f"{d1['odds_pin']:.2f}",
                             "Éc. 1": _fmt_ec(d1["ecart"]),
-                            "Mod. X": f"{dx['model_prob']:.1f}%",
-                            "Pin. X": f"{dx['pin_prob']:.1f}%",
+                            "Mod. X": f"{dx['odds_mod']:.2f}",
+                            "Pin. X": f"{dx['odds_pin']:.2f}",
                             "Éc. X": _fmt_ec(dx["ecart"]),
-                            "Mod. 2": f"{d2['model_prob']:.1f}%",
-                            "Pin. 2": f"{d2['pin_prob']:.1f}%",
+                            "Mod. 2": f"{d2['odds_mod']:.2f}",
+                            "Pin. 2": f"{d2['odds_pin']:.2f}",
                             "Éc. 2": _fmt_ec(d2["ecart"]),
                         })
             if all_rows:

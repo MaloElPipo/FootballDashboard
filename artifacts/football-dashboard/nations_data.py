@@ -91,6 +91,30 @@ def get_all_nations():
     return result
 
 
+FIFA_TO_ISO = {
+    "FRA": "fr", "ESP": "es", "GER": "de", "ENG": "gb-eng", "POR": "pt",
+    "NED": "nl", "BEL": "be", "CRO": "hr", "AUT": "at", "SUI": "ch",
+    "NOR": "no", "SWE": "se", "CZE": "cz", "TUR": "tr", "SCO": "gb-sct",
+    "BIH": "ba", "ARG": "ar", "BRA": "br", "COL": "co", "URU": "uy",
+    "ECU": "ec", "PAR": "py", "USA": "us", "MEX": "mx", "CAN": "ca",
+    "PAN": "pa", "CUW": "cw", "HAI": "ht", "JPN": "jp", "KOR": "kr",
+    "IRN": "ir", "KSA": "sa", "AUS": "au", "QAT": "qa", "IRQ": "iq",
+    "JOR": "jo", "UZB": "uz", "MAR": "ma", "SEN": "sn", "EGY": "eg",
+    "ALG": "dz", "TUN": "tn", "CIV": "ci", "GHA": "gh", "COD": "cd",
+    "RSA": "za", "CPV": "cv", "NZL": "nz",
+}
+
+
+def flag_url(fifa_code, size="24x18"):
+    iso = FIFA_TO_ISO.get(fifa_code, fifa_code.lower())
+    return f"https://flagcdn.com/{size}/{iso}.png"
+
+
+def flag_img(fifa_code, size="24x18"):
+    url = flag_url(fifa_code, size)
+    return f"<img src='{url}' style='vertical-align:middle'>"
+
+
 def get_nation_by_code(code):
     for conf, nations in WC2026_NATIONS.items():
         for n in nations:

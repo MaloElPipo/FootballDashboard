@@ -2163,11 +2163,12 @@ elif page == "🔮 Prédictions":
                 "France":"FRA","Spain":"ESP","Germany":"GER","England":"ENG",
                 "Portugal":"POR","Netherlands":"NED","Belgium":"BEL","Croatia":"CRO",
                 "Austria":"AUT","Switzerland":"SUI","Norway":"NOR","Sweden":"SWE",
-                "Czech Republic":"CZE","Turkey":"TUR","Scotland":"SCO",
-                "Bosnia and Herzegovina":"BIH","Argentina":"ARG","Brazil":"BRA",
+                "Czech Republic":"CZE","Czechia":"CZE","Turkey":"TUR","Scotland":"SCO",
+                "Bosnia and Herzegovina":"BIH","Bosnia & Herzegovina":"BIH",
+                "Argentina":"ARG","Brazil":"BRA",
                 "Colombia":"COL","Uruguay":"URU","Ecuador":"ECU","Paraguay":"PAR",
-                "United States":"USA","Mexico":"MEX","Canada":"CAN",
-                "Panama":"PAN","Curacao":"CUW","Haiti":"HAI",
+                "United States":"USA","USA":"USA","Mexico":"MEX","Canada":"CAN",
+                "Panama":"PAN","Curacao":"CUW","Curaçao":"CUW","Haiti":"HAI",
                 "Japan":"JPN","South Korea":"KOR","Korea Republic":"KOR",
                 "Iran":"IRN","Saudi Arabia":"KSA","Australia":"AUS",
                 "Qatar":"QAT","Iraq":"IRQ","Jordan":"JOR","Uzbekistan":"UZB",
@@ -2175,6 +2176,22 @@ elif page == "🔮 Prédictions":
                 "Tunisia":"TUN","Ivory Coast":"CIV","Ghana":"GHA",
                 "DR Congo":"COD","South Africa":"RSA","Cape Verde":"CPV","New Zealand":"NZL",
             }
+
+            code_to_group = {}
+            for g, t in WC2026_GROUPS.items():
+                for c in t:
+                    code_to_group[c] = g
+
+            def resolve_odds_code(name, opponent_code):
+                code = ODDS_TO_CODE.get(name)
+                if code and opponent_code:
+                    grp_c = code_to_group.get(code)
+                    grp_o = code_to_group.get(opponent_code)
+                    if grp_c and grp_o and grp_c != grp_o:
+                        if code == "AUS" and code_to_group.get("AUT") == grp_o:
+                            return "AUT"
+                return code
+
             elo_map = _build_elo_map()
 
             value_rows = []
@@ -2190,8 +2207,10 @@ elif page == "🔮 Prédictions":
                 if not pin:
                     continue
 
-                ch = ODDS_TO_CODE.get(home)
-                ca = ODDS_TO_CODE.get(away)
+                ch_raw = ODDS_TO_CODE.get(home)
+                ca_raw = ODDS_TO_CODE.get(away)
+                ch = resolve_odds_code(home, ca_raw)
+                ca = resolve_odds_code(away, ch)
                 if not ch or not ca or ch not in elo_map or ca not in elo_map:
                     continue
 

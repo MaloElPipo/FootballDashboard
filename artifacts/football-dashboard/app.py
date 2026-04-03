@@ -2018,10 +2018,11 @@ elif page == "🔮 Prédictions":
         odds = 100 / prob_pct
         return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
 
-    tab_sim, tab_matches, tab_value = st.tabs([
+    tab_sim, tab_matches, tab_value, tab_tracker = st.tabs([
         "🏆 Simulation globale",
         "⚽ Matchs 1X2",
         "💎 Détection de Value",
+        "📊 Suivi des paris",
     ])
 
     @st.cache_data(ttl=600)
@@ -2295,31 +2296,58 @@ elif page == "🔮 Prédictions":
                     return "⭐"
                 return ""
 
+            from bet_tracker import load_bankroll_config, kelly_stake, get_stats as bt_stats
+
+            bk_config = load_bankroll_config()
+            bt_s = bt_stats()
+            current_bank = bt_s["available"]
+
             st.markdown("#### 🎯 Recommandations de paris (EV≥2%, cote≤10)")
+            st.caption(
+                f"Bankroll disponible : **{current_bank:.0f}{bt_s['unit']}** · "
+                f"Kelly fraction : {bk_config['kelly_fraction']:.0%} · "
+                f"Mise max : {bk_config['max_stake_pct']}% de la bankroll"
+            )
+
             value_pos = [v for v in value_rows if v["ev"] >= 2 and v["odds_pin"] <= 10 and v["ecart"] > 2]
             value_pos.sort(key=lambda x: -x["ev"])
             if value_pos:
                 vr = []
                 for v in value_pos:
+                    prob_dec = v["model_prob"] / 100
+                    k_stake = kelly_stake(
+                        prob_dec, v["odds_pin"], current_bank,
+                        fraction=bk_config["kelly_fraction"],
+                        max_pct=bk_config["max_stake_pct"],
+                        min_stake=bk_config["min_stake"],
+                    )
                     vr.append({
                         "Match": v["match"],
                         "Pari": v["side"],
-                        "Cote Pin.": f"{v['odds_pin']:.2f}",
-                        "Cote V8": f"{v['odds_mod']:.2f}",
-                        "Nous": f"{v['model_prob']:.1f}%",
-                        "Pinnacle": f"{v['pin_prob']:.1f}%",
+                        "Cote": f"{v['odds_pin']:.2f}",
+                        "V8": f"{v['model_prob']:.1f}%",
+                        "Pin.": f"{v['pin_prob']:.1f}%",
                         "Écart": _fmt_ec(v["ecart"]),
                         "EV": _fmt_ev(v["ev"]),
+                        "Mise Kelly": f"{k_stake:.1f}{bt_s['unit']}" if k_stake > 0 else "—",
                         "Confiance": _fmt_conf(v["ev"], v["ecart"], v["odds_pin"]),
                     })
                 st.markdown(
                     pd.DataFrame(vr).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+                total_kelly = sum(
+                    kelly_stake(v["model_prob"]/100, v["odds_pin"], current_bank,
+                                fraction=bk_config["kelly_fraction"],
+                                max_pct=bk_config["max_stake_pct"],
+                                min_stake=bk_config["min_stake"])
+                    for v in value_pos
+                )
                 st.info(
-                    f"💡 **{len(value_pos)} paris identifiés** — "
-                    f"Stratégie backtestée : EV≥2%, cote≤10 → ROI +26.5% sur 136 matchs historiques. "
-                    f"⭐ = confiance basée sur EV + écart + cote."
+                    f"💡 **{len(value_pos)} paris identifiés** · "
+                    f"Exposition totale Kelly : {total_kelly:.1f}{bt_s['unit']} "
+                    f"({total_kelly/current_bank*100:.1f}% de la bankroll)" if current_bank > 0 else
+                    f"💡 **{len(value_pos)} paris identifiés**"
                 )
             else:
                 st.info("Aucune value détectée (modèle très proche de Pinnacle, ou cotes non disponibles).")
@@ -2352,6 +2380,195 @@ elif page == "🔮 Prédictions":
                     pd.DataFrame(all_rows).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+
+    with tab_tracker:
+        from bet_tracker import (
+            load_bets, add_bet, update_bet_result, delete_bet,
+            load_bankroll_config, save_bankroll_config, get_stats as bt_get_stats,
+            kelly_stake as bt_kelly,
+        )
+
+        st.subheader("📊 Suivi des paris — CDM 2026")
+
+        stats = bt_get_stats()
+        bk_cfg = load_bankroll_config()
+
+        with st.expander("⚙️ Configuration bankroll", expanded=False):
+            cfg_c1, cfg_c2, cfg_c3, cfg_c4 = st.columns(4)
+            new_initial = cfg_c1.number_input(
+                "Bankroll initiale", value=float(bk_cfg["initial"]),
+                min_value=1.0, step=10.0, key="cfg_initial"
+            )
+            new_unit = cfg_c2.text_input("Devise", value=bk_cfg.get("unit", "€"), key="cfg_unit")
+            new_kelly = cfg_c3.number_input(
+                "Kelly fraction", value=float(bk_cfg["kelly_fraction"]),
+                min_value=0.05, max_value=1.0, step=0.05, key="cfg_kelly"
+            )
+            new_max_pct = cfg_c4.number_input(
+                "Mise max (%)", value=float(bk_cfg["max_stake_pct"]),
+                min_value=1.0, max_value=20.0, step=0.5, key="cfg_maxpct"
+            )
+            if st.button("💾 Sauvegarder config", key="save_cfg"):
+                save_bankroll_config({
+                    "initial": new_initial,
+                    "unit": new_unit,
+                    "kelly_fraction": new_kelly,
+                    "max_stake_pct": new_max_pct,
+                    "min_stake": bk_cfg.get("min_stake", 1.0),
+                })
+                st.success("Configuration sauvegardée !")
+                st.rerun()
+
+        u = stats["unit"]
+        mc1, mc2, mc3, mc4, mc5 = st.columns(5)
+        mc1.metric("Bankroll", f"{stats['current_bankroll']:.0f}{u}",
+                   f"{stats['total_profit']:+.1f}{u}")
+        mc2.metric("Paris", f"{stats['total_bets']}",
+                   f"{stats['pending']} en cours")
+        mc3.metric("Bilan", f"{stats['wins']}W / {stats['losses']}L",
+                   f"{stats['win_rate']:.0f}% win rate" if stats['settled'] > 0 else "—")
+        mc4.metric("ROI", f"{stats['roi']:+.1f}%" if stats['settled'] > 0 else "—",
+                   f"sur {stats['total_staked']:.0f}{u} misés")
+        mc5.metric("Disponible", f"{stats['available']:.0f}{u}",
+                   f"-{stats['pending_exposure']:.0f}{u} en jeu" if stats['pending_exposure'] > 0 else "—")
+
+        st.markdown("---")
+
+        with st.expander("➕ Ajouter un pari", expanded=True):
+            ac1, ac2 = st.columns(2)
+            with ac1:
+                new_match = st.text_input("Match", placeholder="France vs Allemagne", key="new_match")
+                new_side = st.selectbox("Pari", ["1 (Domicile)", "X (Nul)", "2 (Extérieur)"], key="new_side")
+            with ac2:
+                new_odds = st.number_input("Cote prise", min_value=1.01, value=2.00, step=0.01, key="new_odds")
+                new_stake = st.number_input(
+                    f"Mise ({u})", min_value=0.5, value=float(bk_cfg.get("min_stake", 1.0)),
+                    step=0.5, key="new_stake"
+                )
+            ac3, ac4 = st.columns(2)
+            with ac3:
+                new_prob = st.number_input("Prob. V8 (%)", min_value=0.0, max_value=100.0,
+                                          value=0.0, step=0.1, key="new_prob",
+                                          help="Optionnel — probabilité du modèle V8")
+            with ac4:
+                new_notes = st.text_input("Notes", placeholder="Opening Pinnacle, EV +5%", key="new_notes")
+
+            if st.button("✅ Enregistrer le pari", key="add_bet", type="primary"):
+                if new_match.strip():
+                    side_map = {"1 (Domicile)": "1", "X (Nul)": "X", "2 (Extérieur)": "2"}
+                    ev_val = None
+                    if new_prob > 0:
+                        ev_val = (new_prob / 100 * new_odds - 1) * 100
+                    add_bet(
+                        match=new_match.strip(),
+                        side=side_map[new_side],
+                        odds=new_odds,
+                        stake=new_stake,
+                        model_prob=new_prob if new_prob > 0 else None,
+                        ev=ev_val,
+                        notes=new_notes,
+                    )
+                    st.success(f"Pari enregistré : {new_match} — {side_map[new_side]} @ {new_odds:.2f}")
+                    st.rerun()
+                else:
+                    st.error("Le nom du match est requis.")
+
+        st.markdown("---")
+
+        all_bets = load_bets()
+        if all_bets:
+            pending_bets = [b for b in all_bets if b["result"] == "pending"]
+            settled_bets = [b for b in all_bets if b["result"] != "pending"]
+
+            if pending_bets:
+                st.markdown("#### ⏳ Paris en cours")
+                for b in pending_bets:
+                    with st.container():
+                        bc1, bc2, bc3, bc4, bc5 = st.columns([3, 1, 1, 1, 2])
+                        bc1.markdown(f"**{b['match']}** — {b['side']}")
+                        bc2.markdown(f"Cote **{b['odds']:.2f}**")
+                        bc3.markdown(f"Mise **{b['stake']:.1f}{u}**")
+                        gain_pot = b['stake'] * (b['odds'] - 1)
+                        bc4.markdown(f"Gain pot. **{gain_pot:.1f}{u}**")
+                        with bc5:
+                            rc1, rc2, rc3, rc4 = st.columns(4)
+                            if rc1.button("✅", key=f"win_{b['id']}", help="Gagné"):
+                                update_bet_result(b["id"], "won")
+                                st.rerun()
+                            if rc2.button("❌", key=f"lose_{b['id']}", help="Perdu"):
+                                update_bet_result(b["id"], "lost")
+                                st.rerun()
+                            if rc3.button("↩️", key=f"void_{b['id']}", help="Annulé"):
+                                update_bet_result(b["id"], "void")
+                                st.rerun()
+                            if rc4.button("🗑️", key=f"del_{b['id']}", help="Supprimer"):
+                                delete_bet(b["id"])
+                                st.rerun()
+                        if b.get("notes"):
+                            st.caption(f"📝 {b['notes']}")
+                        if b.get("model_prob"):
+                            st.caption(f"V8: {b['model_prob']:.1f}% · EV: {b.get('ev', 0):+.1f}%")
+                        st.markdown("---")
+
+            if settled_bets:
+                st.markdown("#### 📋 Historique des paris")
+
+                hist_rows = []
+                running_profit = 0
+                for b in settled_bets:
+                    profit = b.get("profit", 0)
+                    running_profit += profit
+                    result_icon = {"won": "✅", "lost": "❌", "void": "↩️"}.get(b["result"], "?")
+                    profit_fmt = f"<span style='color:{'green' if profit > 0 else 'red' if profit < 0 else '#888'}'>{profit:+.1f}{u}</span>"
+                    cumul_fmt = f"<span style='color:{'green' if running_profit > 0 else 'red' if running_profit < 0 else '#888'}'>{running_profit:+.1f}{u}</span>"
+                    row = {
+                        "Date": b.get("date", ""),
+                        "Match": b["match"],
+                        "Pari": b["side"],
+                        "Cote": f"{b['odds']:.2f}",
+                        "Mise": f"{b['stake']:.1f}{u}",
+                        "Résultat": result_icon,
+                        "P&L": profit_fmt,
+                        "Cumul": cumul_fmt,
+                    }
+                    if b.get("model_prob"):
+                        row["V8%"] = f"{b['model_prob']:.0f}%"
+                    hist_rows.append(row)
+
+                hist_rows.reverse()
+                st.markdown(
+                    pd.DataFrame(hist_rows).to_html(escape=False, index=False),
+                    unsafe_allow_html=True,
+                )
+
+            if settled_bets and len(settled_bets) >= 3:
+                st.markdown("#### 📈 Évolution de la bankroll")
+                import plotly.graph_objects as _go_tracker
+                bank_vals = [stats["initial_bankroll"]]
+                dates_lbl = ["Départ"]
+                running = stats["initial_bankroll"]
+                for b in settled_bets:
+                    running += b.get("profit", 0)
+                    bank_vals.append(running)
+                    dates_lbl.append(b.get("date", f"#{b['id']}"))
+                fig_bank = _go_tracker.Figure()
+                fig_bank.add_trace(_go_tracker.Scatter(
+                    x=list(range(len(bank_vals))), y=bank_vals,
+                    mode="lines+markers", name="Bankroll",
+                    line=dict(color="green" if bank_vals[-1] >= bank_vals[0] else "red", width=2),
+                    fill="tozeroy", fillcolor="rgba(0,200,0,0.1)" if bank_vals[-1] >= bank_vals[0] else "rgba(200,0,0,0.1)",
+                ))
+                fig_bank.add_hline(y=stats["initial_bankroll"], line_dash="dash",
+                                   line_color="gray", annotation_text="Bankroll initiale")
+                fig_bank.update_layout(
+                    xaxis_title="Paris réglés",
+                    yaxis_title=f"Bankroll ({u})",
+                    height=350,
+                    margin=dict(l=0, r=20, t=20, b=40),
+                )
+                st.plotly_chart(fig_bank, use_container_width=True)
+        else:
+            st.info("Aucun pari enregistré. Utilisez le formulaire ci-dessus pour commencer le suivi.")
 
 
 # ═══════════════════════════════════════════════════════════════════

@@ -86,6 +86,29 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - Comparaison de Cotes: bookmaker odds scraping
   - **Calendrier CDM 2026**: World Cup 2026 match calendar with multi-bookmaker 1X2 odds (Pinnacle, Betfair, Unibet FR, PMU), outright winner odds, phase filtering
   - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
+  - **Prédictions**: Monte Carlo simulation (Buchdahl 1X2 model calibrated on Pinnacle) — global rankings, group stage probabilities, match-by-match 1X2 predictions with fair odds, value detection vs Pinnacle live lines
+
+## WC 2026 Simulator (`wc_simulator.py`)
+
+Monte Carlo engine for FIFA World Cup 2026 predictions.
+
+### Core Model
+- **Buchdahl 1X2**: P(1)=0.1603×ΔElo+42.85, P(2)=0.000187×ΔElo²–0.150×ΔElo+30.44, P(X)=100–P(1)–P(2)
+- Calibrated on 55 WC matches (WC2022 + WC2026 qualifiers) vs Pinnacle lines: R²=0.80, RMSE=5.85%
+- Goal model: Poisson with λ calibrated from 1X2 probabilities (avg ~2.5 goals)
+
+### Simulation Pipeline
+1. Build ELO map from `elo_engine.py` composite scores
+2. Simulate 3 group-stage matches per group (12 groups × 6 matches = 72 matches)
+3. Rank groups: pts > GD > GF; qualify top 2 + best 8 of 12 third-place teams
+4. Bracket: R32 → R16 → QF → SF → Final (matches 73–88 mapped from FIFA bracket)
+5. Output: per-nation probabilities (avg_pts, p_1st/2nd/3rd/4th, p_r32/r16/qf/sf/final/winner)
+
+### Key Functions
+- `run_simulation(n_sims)` — returns sorted list of nation results
+- `get_group_predictions()` — returns 1X2 predictions for all 72 group matches
+- `buchdahl_1x2(delta)` — raw probability calculation from ELO delta
+- `_build_elo_map()` — builds nation_code→ELO dict from composite engine
 
 ## Squad Scraper (`squad_scraper.py`)
 

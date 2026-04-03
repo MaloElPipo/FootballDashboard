@@ -58,24 +58,27 @@ SF_PAIRINGS = [(0, 1), (2, 3)]
 
 HOST_NATIONS = {"USA", "MEX", "CAN"}
 
-TANH_L = 263.0
-BUCHDAHL_PARAMS = [TANH_L, 0.113126, 42.28, 0.000140, -0.109525, 30.11]
+V6_SCALE = 408.5
+V6_DRAW_BASE = 24.04
+V6_D_HALF = 480.0
+V6_POWER = 14.8
 
 
-def buchdahl_1x2(delta_elo, params=None):
+def sigmoid_v6_1x2(delta_elo, params=None):
     if params is None:
-        params = BUCHDAHL_PARAMS
-    L, a1, a0, b2, b1, b0 = params
-    L = max(L, 50)
-    d_eff = L * np.tanh(delta_elo / L)
-    p1 = a1 * d_eff + a0
-    p2 = b2 * d_eff**2 + b1 * d_eff + b0
-    px = 100 - p1 - p2
-    p1 = float(np.clip(p1, 1, 98))
-    p2 = float(np.clip(p2, 1, 98))
-    px = float(np.clip(px, 1, 98))
-    total = p1 + px + p2
-    return p1 / total, px / total, p2 / total
+        params = (V6_SCALE, V6_DRAW_BASE, V6_D_HALF, V6_POWER)
+    scale, draw_base, d_half, power = params
+    d_half = max(d_half, 1.0)
+    draw = draw_base / (1.0 + (abs(delta_elo) / d_half) ** power)
+    draw = max(draw, 0.5)
+    sig = 1.0 / (1.0 + 10.0 ** (-delta_elo / scale))
+    p1 = (100.0 - draw) * sig
+    p2 = (100.0 - draw) * (1.0 - sig)
+    p1 = float(np.clip(p1, 0.5, 99.0))
+    p2 = float(np.clip(p2, 0.5, 99.0))
+    draw = float(np.clip(draw, 0.5, 99.0))
+    total = p1 + draw + p2
+    return p1 / total, draw / total, p2 / total
 
 
 def _build_elo_map(forced_weight=None):
@@ -86,7 +89,7 @@ def _build_elo_map(forced_weight=None):
 
 def simulate_match_1x2(elo_h, elo_a, home_code=None, away_code=None):
     delta = elo_h - elo_a
-    ph, pd, pa = buchdahl_1x2(delta)
+    ph, pd, pa = sigmoid_v6_1x2(delta)
     r = random.random()
     if r < ph:
         return "H"
@@ -123,7 +126,7 @@ def simulate_knockout_match(elo_h, elo_a, home_code=None, away_code=None):
     if gh != ga:
         return ("H", gh, ga) if gh > ga else ("A", gh, ga)
     delta = elo_h - elo_a
-    ph, _, _ = buchdahl_1x2(delta)
+    ph, _, _ = sigmoid_v6_1x2(delta)
     pk = ph / (ph + (1.0 - ph - 0.0))
     pk = max(0.15, min(0.85, 0.5 + delta / 1200.0))
     if random.random() < pk:
@@ -383,7 +386,7 @@ def get_group_predictions(elo_map=None, params=None):
                 elo_h = elo_map.get(h_code, 1500)
                 elo_a = elo_map.get(a_code, 1500)
                 delta = elo_h - elo_a
-                ph, pd, pa = buchdahl_1x2(delta, params)
+                ph, pd, pa = sigmoid_v6_1x2(delta, params)
                 nation_h = get_nation_by_code(h_code)
                 nation_a = get_nation_by_code(a_code)
                 matches.append({

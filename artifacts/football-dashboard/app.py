@@ -1135,7 +1135,7 @@ elif page == "🏅 Classement ELO":
         data_b = next((r for r in all_elo_data if r["code"] == code_b), None)
 
         if data_a and data_b and code_a != code_b:
-            from wc_simulator import buchdahl_1x2 as h2h_buchdahl
+            from wc_simulator import sigmoid_v6_1x2 as h2h_buchdahl
 
             mc1, mc2, mc3 = st.columns(3)
             mc1.metric(
@@ -1153,7 +1153,7 @@ elif page == "🏅 Classement ELO":
             delta_h2h = data_a["elo"] - data_b["elo"]
             p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h)
 
-            st.markdown(f"**Probabilités Buchdahl+tanh (terrain neutre) :**")
+            st.markdown(f"**Probabilités Sigmoid V6 (terrain neutre) :**")
             pc1, pc2, pc3 = st.columns(3)
             pc1.metric(f"Victoire {data_a['fr']}", f"{p1_h2h*100:.1f}%", f"Cote: {1/p1_h2h:.2f}")
             pc2.metric("Nul", f"{px_h2h*100:.1f}%", f"Cote: {1/px_h2h:.2f}")
@@ -2000,13 +2000,13 @@ elif page == "📅 Calendrier CDM 2026":
 elif page == "🔮 Prédictions":
     from wc_simulator import (
         WC2026_GROUPS, run_simulation, get_group_predictions,
-        buchdahl_1x2, BUCHDAHL_PARAMS, _build_elo_map,
+        sigmoid_v6_1x2, _build_elo_map,
     )
     import plotly.graph_objects as go
 
     st.header("🔮 Prédictions — Coupe du Monde 2026")
     st.caption(
-        "Simulation Monte Carlo basée sur notre ELO composite + modèle Buchdahl calibré sur Pinnacle. "
+        "Simulation Monte Carlo basée sur notre ELO composite + modèle Sigmoid V6 calibré sur Pinnacle. "
         "Probabilités 1X2 pour chaque match, classements de poules, et chemins vers le titre."
     )
 
@@ -2206,7 +2206,7 @@ elif page == "🔮 Prédictions":
                 pin_a = (1/oa)/mg * 100
 
                 delta = elo_map[ch] - elo_map[ca]
-                mod_h, mod_d, mod_a = buchdahl_1x2(delta)
+                mod_h, mod_d, mod_a = sigmoid_v6_1x2(delta)
                 mod_h *= 100
                 mod_d *= 100
                 mod_a *= 100

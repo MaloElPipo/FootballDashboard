@@ -92,11 +92,13 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
 
 Monte Carlo engine for FIFA World Cup 2026 predictions.
 
-### Core Model
-- **Buchdahl+tanh**: d_eff=263×tanh(Δ/263), P(1)=0.113×d_eff+42.28, P(2)=0.00014×d_eff²–0.110×d_eff+30.11, P(X)=100–P(1)–P(2)
-- Recalibrated on 19 Pinnacle WC2026 matches: RMSE=7.29% (56% improvement over linear Buchdahl)
-- tanh compression prevents extreme odds at large deltas (Δ=400 → 1.44, Δ=800 → 1.39)
-- Goal model: Poisson with λ calibrated from 1X2 probabilities (avg ~2.5 goals)
+### Core Model — Sigmoid V6
+- **Sigmoid + Power-law Draw**: P(draw) = 24.04% / (1 + (|Δ|/480)^14.8), P(1) = (100-draw) × sigmoid(Δ/408.5), P(2) = (100-draw) × (1-sigmoid)
+- Calibrated on 19 Pinnacle WC2026 matches + GER-CUW bookmaker anchor: RMSE=6.09%
+- Perfectly symmetric at Δ=0 (38%/24%/38%), home bias neutralized before calibration
+- Draw stays ~24% for small deltas, drops sharply above Δ~400 (3.4% at Δ=542, <1% at Δ=600+)
+- No saturation: Δ=542 → 92.2% (cote 1.08), Δ=800 → 91.8% (cote 1.09)
+- Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
 
 ### Simulation Pipeline
 1. Build ELO map from `elo_engine.py` composite scores
@@ -108,7 +110,7 @@ Monte Carlo engine for FIFA World Cup 2026 predictions.
 ### Key Functions
 - `run_simulation(n_sims)` — returns sorted list of nation results
 - `get_group_predictions()` — returns 1X2 predictions for all 72 group matches
-- `buchdahl_1x2(delta)` — raw probability calculation from ELO delta
+- `sigmoid_v6_1x2(delta)` — raw probability calculation from ELO delta (Sigmoid V6 model)
 - `_build_elo_map()` — builds nation_code→ELO dict from composite engine
 
 ## Squad Scraper (`squad_scraper.py`)

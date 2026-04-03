@@ -76,6 +76,9 @@ def fetch_elorating_base():
         return {}
 
 
+SELECTION_FILE = Path(__file__).parent / "players_selection.json"
+
+
 def _load_bsd_cache():
     if not BSD_CACHE_PATH.exists():
         return {}
@@ -83,12 +86,29 @@ def _load_bsd_cache():
         return json.load(f)
 
 
-def _get_squad_players(cache, nation_code):
+def _load_player_selection():
+    if not SELECTION_FILE.exists():
+        return {}
+    with open(SELECTION_FILE) as f:
+        return json.load(f)
+
+
+def _get_squad_players(cache, nation_code, active_only=True):
     squad_map = cache.get("squad_matches", {})
     player_stats = cache.get("player_stats", {})
     squad = squad_map.get(nation_code, {})
+
+    active_filter = None
+    if active_only:
+        all_sel = _load_player_selection()
+        nation_sel = all_sel.get(nation_code, {})
+        if nation_sel:
+            active_filter = {name for name, status in nation_sel.items() if status}
+
     players = []
     for name, api_id in squad.items():
+        if active_filter is not None and name not in active_filter:
+            continue
         s = player_stats.get(str(api_id), {})
         if s and s.get("appearances"):
             players.append({"name": name, **s})

@@ -1877,7 +1877,12 @@ elif page == "📅 Calendrier CDM 2026":
                         mkey = _match_key_from_bsd(home, away)
                         match_odds = odds_h2h.get(mkey, {})
 
-                        if match_odds:
+                        bsd_oh = ev.get("odds_home")
+                        bsd_od = ev.get("odds_draw")
+                        bsd_oa = ev.get("odds_away")
+                        has_bsd = bsd_oh and bsd_od and bsd_oa
+
+                        if match_odds or has_bsd:
                             header_html = (
                                 "<table style='width:100%;border-collapse:collapse;margin:4px 0;font-size:0.85em'>"
                                 "<thead><tr style='border-bottom:1px solid #444'>"
@@ -1887,20 +1892,25 @@ elif page == "📅 Calendrier CDM 2026":
                                 "<th style='text-align:center;padding:2px 6px;color:#e74c3c'>2</th>"
                                 "</tr></thead><tbody>"
                             )
-                            best = {"home": 0, "draw": 0, "away": 0}
+                            all_odds = {}
+                            if has_bsd:
+                                all_odds["bet365"] = {"home": float(bsd_oh), "draw": float(bsd_od), "away": float(bsd_oa)}
                             for bk_key in BK_KEYS:
                                 bk_data = match_odds.get(bk_key, {})
+                                if bk_data:
+                                    all_odds[bk_key] = bk_data
+
+                            best = {"home": 0, "draw": 0, "away": 0}
+                            for bk_data in all_odds.values():
                                 for col in ("home", "draw", "away"):
                                     v = bk_data.get(col) or 0
                                     if v > best[col]:
                                         best[col] = v
 
+                            ALL_BK_LABELS = {"bet365": "Bet365", **SELECTED_BOOKMAKERS}
                             rows_html = ""
-                            for bk_key in BK_KEYS:
-                                bk_data = match_odds.get(bk_key)
-                                if not bk_data:
-                                    continue
-                                bk_label = SELECTED_BOOKMAKERS[bk_key]
+                            for bk_key, bk_data in all_odds.items():
+                                bk_label = ALL_BK_LABELS.get(bk_key, bk_key)
                                 oh = bk_data.get("home")
                                 od = bk_data.get("draw")
                                 oa = bk_data.get("away")
@@ -1923,69 +1933,12 @@ elif page == "📅 Calendrier CDM 2026":
                             if rows_html:
                                 st.markdown(header_html + rows_html + "</tbody></table>", unsafe_allow_html=True)
                         else:
-                            oh = ev.get("odds_home")
-                            od = ev.get("odds_draw")
-                            oa = ev.get("odds_away")
-                            if oh and od and oa:
-                                st.markdown(
-                                    f"<div style='text-align:center;font-size:0.85em;color:#888'>"
-                                    f"BSD · <span style='color:#2ecc71'>1: {oh:.2f}</span> · "
-                                    f"<span style='color:#f39c12'>N: {od:.2f}</span> · "
-                                    f"<span style='color:#e74c3c'>2: {oa:.2f}</span></div>",
-                                    unsafe_allow_html=True,
-                                )
-                            else:
-                                st.markdown(
-                                    "<div style='text-align:center;font-size:0.8em;color:#555'>Cotes indisponibles</div>",
-                                    unsafe_allow_html=True,
-                                )
+                            st.markdown(
+                                "<div style='text-align:center;font-size:0.8em;color:#555'>Cotes indisponibles</div>",
+                                unsafe_allow_html=True,
+                            )
 
                         st.markdown("<hr style='margin:4px 0;border-color:#333'>", unsafe_allow_html=True)
-
-        st.markdown("---")
-
-        st.subheader("📊 Résumé des cotes — Multi-bookmakers")
-        if odds_h2h:
-            summary_rows = []
-            for ev in sorted(events, key=lambda e: e.get("event_date", "")):
-                home = ev.get("home_team", "?")
-                away = ev.get("away_team", "?")
-                rnd = ev.get("round_number", 0)
-                mkey = _match_key_from_bsd(home, away)
-                modd = odds_h2h.get(mkey, {})
-                if not modd:
-                    continue
-                try:
-                    d_str = ev.get("event_date", "")[:10]
-                except Exception:
-                    d_str = "—"
-
-                row = {
-                    "Date": d_str,
-                    "Phase": ROUND_LABELS.get(rnd, f"Tour {rnd}"),
-                    "Match": f"{home}  vs  {away}",
-                }
-                best_home = 0
-                best_fav = "—"
-                for bk_key in BK_KEYS:
-                    bk_data = modd.get(bk_key, {})
-                    bk_label = SELECTED_BOOKMAKERS[bk_key]
-                    oh = bk_data.get("home")
-                    od = bk_data.get("draw")
-                    oa = bk_data.get("away")
-                    row[f"1 {bk_label}"] = oh if oh else None
-                    row[f"N {bk_label}"] = od if od else None
-                    row[f"2 {bk_label}"] = oa if oa else None
-
-                summary_rows.append(row)
-
-            if summary_rows:
-                df_summary = pd.DataFrame(summary_rows)
-                st.dataframe(df_summary, use_container_width=True, hide_index=True)
-            else:
-                st.info("Aucune cote multi-bookmakers disponible.")
-        else:
-            st.info("Impossible de charger les cotes multi-bookmakers (clé API manquante ou erreur).")
 
         st.markdown("---")
 

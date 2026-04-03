@@ -1151,9 +1151,10 @@ elif page == "🏅 Classement ELO":
             mc3.metric("Écart", f"{abs(data_a['elo'] - data_b['elo'])} pts")
 
             delta_h2h = data_a["elo"] - data_b["elo"]
-            p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h)
+            elo_avg_h2h = (data_a["elo"] + data_b["elo"]) / 2
+            p1_h2h, px_h2h, p2_h2h = h2h_buchdahl(delta_h2h, elo_avg=elo_avg_h2h)
 
-            st.markdown(f"**Probabilités Sigmoid V6 (terrain neutre) :**")
+            st.markdown(f"**Probabilités Sigmoid V7 (terrain neutre) :**")
             pc1, pc2, pc3 = st.columns(3)
             pc1.metric(f"Victoire {data_a['fr']}", f"{p1_h2h*100:.1f}%", f"Cote: {1/p1_h2h:.2f}")
             pc2.metric("Nul", f"{px_h2h*100:.1f}%", f"Cote: {1/px_h2h:.2f}")
@@ -2206,7 +2207,8 @@ elif page == "🔮 Prédictions":
                 pin_a = (1/oa)/mg * 100
 
                 delta = elo_map[ch] - elo_map[ca]
-                mod_h, mod_d, mod_a = sigmoid_v6_1x2(delta)
+                ea_val = (elo_map[ch] + elo_map[ca]) / 2
+                mod_h, mod_d, mod_a = sigmoid_v6_1x2(delta, elo_avg=ea_val)
                 mod_h *= 100
                 mod_d *= 100
                 mod_a *= 100

@@ -58,18 +58,27 @@ SF_PAIRINGS = [(0, 1), (2, 3)]
 
 HOST_NATIONS = {"USA", "MEX", "CAN"}
 
-V6_SCALE = 408.5
-V6_DRAW_BASE = 24.04
-V6_D_HALF = 480.0
-V6_POWER = 14.8
+V7_SCALE = 431.3
+V7_DRAW_BASE = 27.9
+V7_D_HALF = 540.0
+V7_POWER = 2.6
+V7_QUALITY = -0.70
 
 
-def sigmoid_v6_1x2(delta_elo, params=None):
+def sigmoid_v6_1x2(delta_elo, params=None, elo_avg=None):
     if params is None:
-        params = (V6_SCALE, V6_DRAW_BASE, V6_D_HALF, V6_POWER)
-    scale, draw_base, d_half, power = params
+        params = (V7_SCALE, V7_DRAW_BASE, V7_D_HALF, V7_POWER, V7_QUALITY)
+    if len(params) == 4:
+        scale, draw_base, d_half, power = params
+        quality = V7_QUALITY
+    else:
+        scale, draw_base, d_half, power, quality = params
     d_half = max(d_half, 1.0)
-    draw = draw_base / (1.0 + (abs(delta_elo) / d_half) ** power)
+    draw_adj = draw_base
+    if elo_avg is not None:
+        draw_adj = draw_base + quality * (elo_avg - 1800) / 100
+        draw_adj = max(draw_adj, 5.0)
+    draw = draw_adj / (1.0 + (abs(delta_elo) / d_half) ** power)
     draw = max(draw, 0.5)
     sig = 1.0 / (1.0 + 10.0 ** (-delta_elo / scale))
     p1 = (100.0 - draw) * sig
@@ -89,7 +98,8 @@ def _build_elo_map(forced_weight=None):
 
 def simulate_match_1x2(elo_h, elo_a, home_code=None, away_code=None):
     delta = elo_h - elo_a
-    ph, pd, pa = sigmoid_v6_1x2(delta)
+    elo_avg = (elo_h + elo_a) / 2
+    ph, pd, pa = sigmoid_v6_1x2(delta, elo_avg=elo_avg)
     r = random.random()
     if r < ph:
         return "H"
@@ -126,7 +136,8 @@ def simulate_knockout_match(elo_h, elo_a, home_code=None, away_code=None):
     if gh != ga:
         return ("H", gh, ga) if gh > ga else ("A", gh, ga)
     delta = elo_h - elo_a
-    ph, _, _ = sigmoid_v6_1x2(delta)
+    elo_avg_ko = (elo_h + elo_a) / 2
+    ph, _, _ = sigmoid_v6_1x2(delta, elo_avg=elo_avg_ko)
     pk = ph / (ph + (1.0 - ph - 0.0))
     pk = max(0.15, min(0.85, 0.5 + delta / 1200.0))
     if random.random() < pk:
@@ -386,7 +397,8 @@ def get_group_predictions(elo_map=None, params=None):
                 elo_h = elo_map.get(h_code, 1500)
                 elo_a = elo_map.get(a_code, 1500)
                 delta = elo_h - elo_a
-                ph, pd, pa = sigmoid_v6_1x2(delta, params)
+                ea = (elo_h + elo_a) / 2
+                ph, pd, pa = sigmoid_v6_1x2(delta, params, elo_avg=ea)
                 nation_h = get_nation_by_code(h_code)
                 nation_a = get_nation_by_code(a_code)
                 matches.append({

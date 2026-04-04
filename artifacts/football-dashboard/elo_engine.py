@@ -102,6 +102,27 @@ NATION_TO_ELO_NAME = {
 }
 
 
+ELO_CACHE_PATH = Path(__file__).parent / "elorating_cache.json"
+
+
+def _save_elo_cache(data):
+    try:
+        with open(ELO_CACHE_PATH, "w") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception:
+        pass
+
+
+def _load_elo_cache():
+    if not ELO_CACHE_PATH.exists():
+        return {}
+    try:
+        with open(ELO_CACHE_PATH) as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
 def fetch_elorating_base():
     try:
         r = requests.get(
@@ -121,8 +142,13 @@ def fetch_elorating_base():
                         result[name] = elo
                 except Exception:
                     pass
+        if result:
+            _save_elo_cache(result)
         return result
     except Exception:
+        cached = _load_elo_cache()
+        if cached:
+            return cached
         return {}
 
 

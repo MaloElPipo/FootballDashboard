@@ -1,0 +1,48 @@
+C:\Users\phili> oddsharvester historic -s football -l world-cup --season 2026 --max-pages 1 --headless -m 1x2 --locale en-GB --timezone Europe/London --bookies-filter all -f json -o "C:\Users\phili\OneDrive\Documents\Cotes Historiques\test_wc2026_allbooks"
+2026-04-04 16:21:39,851 - root - INFO - Logging initialized. Log level: INFO (No file output)
+2026-04-04 16:21:39,856 - oddsharvester.utils.utils - INFO - No period specified, using default for football: 'full_time'
+2026-04-04 16:21:39,857 - ScraperApp - INFO - Starting scraper with parameters: command=scrape_historic, match_links=None, sport=football, date=None, leagues=['world-cup'], season=2026, markets=['1x2'], max_pages=1, proxy_url=None, browser_user_agent=None, browser_locale_timezone=en-GB, browser_timezone_id=Europe/London, scrape_odds_history=False, target_bookmaker=None, headless=True, preview_submarkets_only=False, bookies_filter=all, period=None
+2026-04-04 16:21:39,857 - ProxyManager - INFO - No proxy provided, running without proxy.
+2026-04-04 16:21:39,860 - ProxyManager - INFO - No proxy available, using direct connection.
+2026-04-04 16:21:39,860 - PlaywrightManager - INFO - Starting Playwright...
+2026-04-04 16:21:40,599 - PlaywrightManager - INFO - Playwright initialized successfully.
+2026-04-04 16:21:40,599 - ScraperApp - INFO -
+                Scraping historical odds for sport=football, leagues=['world-cup'], season=2026, markets=['1x2'], scrape_odds_history=False, target_bookmaker=None, max_pages=1
+
+2026-04-04 16:21:40,600 - OddsPortalScraper - INFO - Starting historic scraping for football - world-cup - 2026
+2026-04-04 16:21:40,600 - OddsPortalScraper - INFO - Base URL: https://www.oddsportal.com/football/world/world-cup-2026/results/
+2026-04-04 16:21:40,600 - OddsPortalScraper - INFO - Max pages parameter: 1
+2026-04-04 16:21:40,600 - OddsPortalScraper - INFO - Navigating to base URL...
+2026-04-04 16:21:50,165 - OddsPortalScraper - INFO - Setting odds format: Decimal Odds
+2026-04-04 16:21:58,186 - OddsPortalScraper - ERROR - Timeout while setting odds format. Dropdown may not have loaded.
+2026-04-04 16:21:58,186 - BrowserHelper - INFO - Checking for cookie banner...
+2026-04-04 16:21:58,203 - BrowserHelper - INFO - Cookie banner found. Dismissing it.
+2026-04-04 16:21:58,335 - OddsPortalScraper - INFO - Step 1: Analyzing pagination information...
+2026-04-04 16:21:58,336 - OddsPortalScraper - INFO - Analyzing pagination information...
+2026-04-04 16:21:58,344 - OddsPortalScraper - INFO - Found 0 pagination links
+2026-04-04 16:21:58,344 - OddsPortalScraper - INFO - No pagination found; scraping only the current page.
+2026-04-04 16:21:58,345 - OddsPortalScraper - INFO - Step 2: Collecting match links from all pages...
+2026-04-04 16:21:58,345 - OddsPortalScraper - INFO - Starting collection of match links from 1 pages
+2026-04-04 16:21:58,345 - OddsPortalScraper - INFO - Pages to process: [1]
+2026-04-04 16:21:58,346 - OddsPortalScraper - INFO - Processing page 1/1: 1
+2026-04-04 16:21:58,408 - OddsPortalScraper - INFO - Navigating to: https://www.oddsportal.com/football/world/world-cup-2026/results/#/page/1
+2026-04-04 16:22:08,419 - OddsPortalScraper - ERROR - Error processing page 1: Page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.oddsportal.com/football/world/world-cup-2026/results/#/page/1", waiting until "domcontentloaded"
+
+2026-04-04 16:22:08,427 - OddsPortalScraper - INFO - Collection Summary:
+2026-04-04 16:22:08,427 - OddsPortalScraper - INFO -    - Total pages processed: 1
+2026-04-04 16:22:08,427 - OddsPortalScraper - INFO -    - Successful pages: 0
+2026-04-04 16:22:08,427 - OddsPortalScraper - INFO -    - Failed pages: 1
+2026-04-04 16:22:08,428 - OddsPortalScraper - INFO -    - Total links found: 0
+2026-04-04 16:22:08,428 - OddsPortalScraper - INFO -    - Unique links: 0
+2026-04-04 16:22:08,428 - OddsPortalScraper - WARNING - Failed to collect links from pages: [1]
+2026-04-04 16:22:08,428 - OddsPortalScraper - WARNING - Failed to collect links from pages: [1]
+2026-04-04 16:22:08,428 - OddsPortalScraper - INFO - Step 3: Extracting odds from collected match links...
+2026-04-04 16:22:08,428 - OddsPortalScraper - INFO - Total unique matches to process: 0
+2026-04-04 16:22:08,429 - OddsPortalScraper - INFO - Starting to scrape odds for 0 match links...
+2026-04-04 16:22:08,429 - OddsPortalScraper - INFO - Scraping complete: 0/0 successful (0.0%)
+2026-04-04 16:22:08,429 - PlaywrightManager - INFO - Cleaning up Playwright resources...
+2026-04-04 16:22:08,548 - PlaywrightManager - INFO - Playwright resources cleanup complete.
+2026-04-04 16:22:08,549 - oddsharvester.cli.commands.historic - ERROR - Scraper did not return valid data.
+PS C:\Users\phili>

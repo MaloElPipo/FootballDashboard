@@ -494,17 +494,25 @@ def build_backtest_dataset():
 
     matches = []
 
+    _code_to_name_wc22 = {v: k for k, v in NTC_WC22.items() if k != "Korea Republic"}
+
     for (h, a), res in RESULTS_WC22_GROUP.items():
         pin = PIN_WC2022.get((h, a), (0, 0, 0))
+        h_name = _code_to_name_wc22.get(h, h)
+        a_name = _code_to_name_wc22.get(a, a)
         matches.append({
-            "comp": "WC2022", "home": h, "away": a, "result": res, "phase": "G",
+            "comp": "WC2022", "home": h_name, "away": a_name, "result": res, "phase": "G",
+            "date": "2022-11-26 16:00:00 UTC",
             "elo_h": ELO_WC2022.get(h, 1500), "elo_a": ELO_WC2022.get(a, 1500),
             "pin_h": pin[0], "pin_d": pin[1], "pin_a": pin[2],
         })
     for (h, a), res in RESULTS_WC22_KO.items():
         pin = PIN_WC2022.get((h, a), (0, 0, 0))
+        h_name = _code_to_name_wc22.get(h, h)
+        a_name = _code_to_name_wc22.get(a, a)
         matches.append({
-            "comp": "WC2022", "home": h, "away": a, "result": res, "phase": "K",
+            "comp": "WC2022", "home": h_name, "away": a_name, "result": res, "phase": "K",
+            "date": "2022-12-10 16:00:00 UTC",
             "elo_h": ELO_WC2022.get(h, 1500), "elo_a": ELO_WC2022.get(a, 1500),
             "pin_h": pin[0], "pin_d": pin[1], "pin_a": pin[2],
         })
@@ -515,6 +523,7 @@ def build_backtest_dataset():
             continue
         matches.append({
             "comp": "EURO2024", "home": h, "away": a, "result": res, "phase": "G",
+            "date": om.get("date", "2024-06-20 18:00:00 UTC"),
             "elo_h": ELO_EURO2024.get(h, 1700), "elo_a": ELO_EURO2024.get(a, 1700),
             "pin_h": om["odds_h"], "pin_d": om["odds_d"], "pin_a": om["odds_a"],
         })
@@ -524,6 +533,7 @@ def build_backtest_dataset():
             continue
         matches.append({
             "comp": "EURO2024", "home": h, "away": a, "result": res, "phase": "K",
+            "date": om.get("date", "2024-07-05 18:00:00 UTC"),
             "elo_h": ELO_EURO2024.get(h, 1700), "elo_a": ELO_EURO2024.get(a, 1700),
             "pin_h": om["odds_h"], "pin_d": om["odds_d"], "pin_a": om["odds_a"],
         })
@@ -534,6 +544,7 @@ def build_backtest_dataset():
             continue
         matches.append({
             "comp": "COPA2024", "home": h, "away": a, "result": res, "phase": "G",
+            "date": om.get("date", "2024-06-25 00:00:00 UTC"),
             "elo_h": ELO_COPA2024.get(h, 1700), "elo_a": ELO_COPA2024.get(a, 1700),
             "pin_h": om["odds_h"], "pin_d": om["odds_d"], "pin_a": om["odds_a"],
         })
@@ -543,6 +554,7 @@ def build_backtest_dataset():
             continue
         matches.append({
             "comp": "COPA2024", "home": h, "away": a, "result": res, "phase": "K",
+            "date": om.get("date", "2024-07-11 00:00:00 UTC"),
             "elo_h": ELO_COPA2024.get(h, 1700), "elo_a": ELO_COPA2024.get(a, 1700),
             "pin_h": om["odds_h"], "pin_d": om["odds_d"], "pin_a": om["odds_a"],
         })
@@ -593,9 +605,31 @@ def _elo_actual_score(result, is_home):
         return 0.5
 
 
-def update_elo_after_match(elo_h, elo_a, result, comp="DEFAULT", k_override=None):
+def _compute_time_decay(match_date_str, half_life_years, ref_date=None):
+    if half_life_years is None or half_life_years <= 0:
+        return 1.0
+    try:
+        if ref_date is None:
+            from datetime import datetime as _dt
+            ref_date = _dt.utcnow()
+        if isinstance(match_date_str, str):
+            date_part = match_date_str[:10]
+            from datetime import datetime as _dt2
+            match_date = _dt2.strptime(date_part, "%Y-%m-%d")
+        else:
+            match_date = match_date_str
+        years_ago = (ref_date - match_date).days / 365.25
+        if years_ago < 0:
+            years_ago = 0
+        return 0.5 ** (years_ago / half_life_years)
+    except Exception:
+        return 1.0
+
+
+def update_elo_after_match(elo_h, elo_a, result, comp="DEFAULT", k_override=None, time_decay=1.0):
     k_type = COMP_TO_KTYPE.get(comp, "DEFAULT")
     k = k_override if k_override is not None else ELO_K_FACTORS.get(k_type, ELO_K_FACTORS["DEFAULT"])
+    k = k * time_decay
 
     exp_h = _elo_expected_score(elo_h, elo_a)
     exp_a = 1.0 - exp_h
@@ -608,23 +642,48 @@ def update_elo_after_match(elo_h, elo_a, result, comp="DEFAULT", k_override=None
     return round(new_h, 1), round(new_a, 1)
 
 
-def run_backtest_dynamic(matches, params, k_override=None):
-    live_elo = {}
+def run_backtest_dynamic(matches, params, k_override=None, time_decay_half_life=None):
+    MEAN_ELO = 1800.0
+    REGRESSION_RATE = 0.15
 
+    live_elo = {}
+    last_match_date = {}
+
+    def _parse_date(d):
+        if not d or d == "N/A":
+            return None
+        try:
+            from datetime import datetime as _dt
+            return _dt.strptime(str(d)[:10], "%Y-%m-%d")
+        except Exception:
+            return None
+
+    def _regress_elo(team, match_date_str):
+        if time_decay_half_life is None or team not in last_match_date:
+            return
+        md = _parse_date(match_date_str)
+        ld = last_match_date[team]
+        if md and ld and md > ld:
+            years_gap = (md - ld).days / 365.25
+            pull = REGRESSION_RATE * years_gap
+            pull = min(pull, 0.5)
+            live_elo[team] = live_elo[team] + pull * (MEAN_ELO - live_elo[team])
+
+    results = []
     for m in matches:
         h, a = m["home"], m["away"]
         if h not in live_elo:
             live_elo[h] = m["elo_h"]
         if a not in live_elo:
             live_elo[a] = m["elo_a"]
-        m["elo_h_dynamic"] = live_elo[h]
-        m["elo_a_dynamic"] = live_elo[a]
 
-    results = []
-    for m in matches:
-        h, a = m["home"], m["away"]
-        elo_h = m["elo_h_dynamic"]
-        elo_a = m["elo_a_dynamic"]
+        _regress_elo(h, m.get("date"))
+        _regress_elo(a, m.get("date"))
+
+        elo_h = live_elo[h]
+        elo_a = live_elo[a]
+        m["elo_h_dynamic"] = elo_h
+        m["elo_a_dynamic"] = elo_a
 
         delta = elo_h - elo_a
         elo_avg = (elo_h + elo_a) / 2
@@ -695,9 +754,15 @@ def run_backtest_dynamic(matches, params, k_override=None):
             "ref_book": m.get("ref_book", ""),
         })
 
-        new_h, new_a = update_elo_after_match(elo_h, elo_a, actual, m["comp"], k_override)
+        decay = _compute_time_decay(m.get("date", ""), time_decay_half_life)
+        new_h, new_a = update_elo_after_match(elo_h, elo_a, actual, m["comp"], k_override, time_decay=decay)
         live_elo[h] = new_h
         live_elo[a] = new_a
+
+        md = _parse_date(m.get("date"))
+        if md:
+            last_match_date[h] = md
+            last_match_date[a] = md
 
     return results, live_elo
 

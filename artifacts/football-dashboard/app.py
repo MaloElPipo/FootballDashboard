@@ -2583,9 +2583,18 @@ elif page == "🔬 Backtest V8":
     st.subheader("⚙️ Paramètres du modèle")
 
     _presets = {"V8-Pin (optimisé)": V8PIN_PARAMS, "V7 (défaut)": DEFAULT_PARAMS}
-    _pc1, _pc2 = st.columns([2, 2])
+    _pc1, _pc2, _pc3 = st.columns([2, 2, 2])
     preset_choice = _pc1.radio("Preset", list(_presets.keys()), horizontal=True, index=0)
     use_dynamic_elo = _pc2.toggle("ELO Dynamiques", value=False, help="Met à jour les ELO match par match pendant le backtest. Chaque résultat ajuste les forces relatives des équipes pour les matchs suivants.")
+    time_decay_half_life = None
+    if use_dynamic_elo:
+        time_decay_half_life = _pc3.slider(
+            "⏳ Demi-vie (années)", 0.5, 4.0, 1.5, 0.1,
+            help="Demi-vie de la décroissance temporelle du K-factor. "
+                 "Ex: 1.5 ans → un match d'il y a 1.5 an aura 50% du poids d'un match récent. "
+                 "Plus c'est bas, plus les matchs anciens sont ignorés.",
+            key="bt_time_decay",
+        )
     _active_preset = _presets[preset_choice]
 
     with st.expander("🔧 Ajuster les paramètres manuellement", expanded=False):
@@ -2639,14 +2648,14 @@ elif page == "🔬 Backtest V8":
 
     if use_dynamic_elo:
         bt_dataset_sorted = sorted(bt_dataset, key=lambda m: m.get("date", "9999"))
-        bt_results, _final_elo = run_backtest_dynamic(bt_dataset_sorted, current_params)
+        bt_results, _final_elo = run_backtest_dynamic(bt_dataset_sorted, current_params, time_decay_half_life=time_decay_half_life)
     else:
         bt_results = run_backtest(bt_dataset, current_params)
     bt_metrics = compute_metrics(bt_results)
 
     if not is_preset:
         if use_dynamic_elo:
-            bt_results_default, _ = run_backtest_dynamic(bt_dataset_sorted, _active_preset)
+            bt_results_default, _ = run_backtest_dynamic(bt_dataset_sorted, _active_preset, time_decay_half_life=time_decay_half_life)
         else:
             bt_results_default = run_backtest(bt_dataset, _active_preset)
         bt_metrics_default = compute_metrics(bt_results_default)
@@ -2854,7 +2863,10 @@ elif page == "🔬 Backtest V8":
     if use_dynamic_elo and _final_elo:
         st.markdown("---")
         st.subheader("📈 ELO Dynamiques — Classement final (CDM 2026)")
-        st.caption("ELO après mise à jour match par match sur l'ensemble du backtest. Seules les 48 nations qualifiées pour la CDM 2026 sont affichées.")
+        _decay_msg = ""
+        if time_decay_half_life:
+            _decay_msg = f" | ⏳ Décroissance temporelle active (demi-vie = {time_decay_half_life:.1f} ans)"
+        st.caption(f"ELO après mise à jour match par match sur l'ensemble du backtest. Seules les 48 nations CDM 2026 sont affichées.{_decay_msg}")
 
         from nations_data import get_all_nations as _get_all_nations_bt
         _wc_codes = {n["code"] for n in _get_all_nations_bt()}

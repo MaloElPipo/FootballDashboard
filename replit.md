@@ -112,11 +112,15 @@ Monte Carlo engine for FIFA World Cup 2026 predictions.
 - Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
 
 ### Dynamic ELO System
-- `update_elo_after_match(elo_h, elo_a, result, comp, k_override)` — standard ELO update with competition-specific K-factors
+- `update_elo_after_match(elo_h, elo_a, result, comp, k_override, time_decay)` — standard ELO update with competition-specific K-factors and optional time decay
 - K-factors: WC=60, EURO/COPA=50, NL=40, QUALIF=35, FRIENDLY=20, CAN/GOLD_CUP=40
-- `run_backtest_dynamic(matches, params, k_override)` — runs backtest updating ELO after each match
+- `run_backtest_dynamic(matches, params, k_override, time_decay_half_life, pin_anchor_elo, months_window)` — dynamic ELO backtest
 - Returns `(results, final_elo_dict)` — final_elo contains end-state ELO for all teams
-- Toggle in Backtest UI: "ELO Dynamiques" switch
+- **Two modes** in Backtest UI:
+  - **Classique**: Part des ELO historiques (WC2022/EURO2024), traite tous les matchs. Écart moyen vs Pinnacle: ~54 pts
+  - **Ancrage Pinnacle** (recommended): Part des ELO calibrés Pinnacle, ne traite que les matchs des N derniers mois. Écart moyen vs Pinnacle: ~12 pts
+- Time decay: K-factor multiplied by `0.5^(years_ago / half_life)` to weight recent matches more
+- WC2022 team names normalized from FIFA codes (BRA→Brazil) via NTC_WC22 reverse mapping
 
 ### Backtest Engine (`backtest_engine.py`)
 - Hardcoded historical ELO + Pinnacle closing odds for WC2022, EURO2024, COPA2024 (527+ matches total)

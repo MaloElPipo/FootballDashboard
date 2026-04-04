@@ -642,10 +642,8 @@ def update_elo_after_match(elo_h, elo_a, result, comp="DEFAULT", k_override=None
     return round(new_h, 1), round(new_a, 1)
 
 
-def run_backtest_dynamic(matches, params, k_override=None, time_decay_half_life=None):
-    MEAN_ELO = 1800.0
-    REGRESSION_RATE = 0.15
-
+def run_backtest_dynamic(matches, params, k_override=None, time_decay_half_life=None,
+                         pin_anchor_elo=None, months_window=None):
     live_elo = {}
     last_match_date = {}
 
@@ -658,16 +656,19 @@ def run_backtest_dynamic(matches, params, k_override=None, time_decay_half_life=
         except Exception:
             return None
 
-    def _regress_elo(team, match_date_str):
-        if time_decay_half_life is None or team not in last_match_date:
-            return
-        md = _parse_date(match_date_str)
-        ld = last_match_date[team]
-        if md and ld and md > ld:
-            years_gap = (md - ld).days / 365.25
-            pull = REGRESSION_RATE * years_gap
-            pull = min(pull, 0.5)
-            live_elo[team] = live_elo[team] + pull * (MEAN_ELO - live_elo[team])
+    if pin_anchor_elo:
+        for team, elo_val in pin_anchor_elo.items():
+            live_elo[team] = elo_val
+
+    if months_window and months_window > 0:
+        from datetime import datetime as _dtw, timedelta as _tdw
+        cutoff = _dtw.utcnow() - _tdw(days=int(months_window * 30.44))
+        filtered = []
+        for m in matches:
+            md = _parse_date(m.get("date"))
+            if md and md >= cutoff:
+                filtered.append(m)
+        matches = filtered
 
     results = []
     for m in matches:
@@ -676,9 +677,6 @@ def run_backtest_dynamic(matches, params, k_override=None, time_decay_half_life=
             live_elo[h] = m["elo_h"]
         if a not in live_elo:
             live_elo[a] = m["elo_a"]
-
-        _regress_elo(h, m.get("date"))
-        _regress_elo(a, m.get("date"))
 
         elo_h = live_elo[h]
         elo_a = live_elo[a]

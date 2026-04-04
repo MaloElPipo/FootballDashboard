@@ -2583,18 +2583,52 @@ elif page == "🔬 Backtest V8":
     st.subheader("⚙️ Paramètres du modèle")
 
     _presets = {"V8-Pin (optimisé)": V8PIN_PARAMS, "V7 (défaut)": DEFAULT_PARAMS}
-    _pc1, _pc2, _pc3 = st.columns([2, 2, 2])
+    _pc1, _pc2 = st.columns([2, 2])
     preset_choice = _pc1.radio("Preset", list(_presets.keys()), horizontal=True, index=0)
     use_dynamic_elo = _pc2.toggle("ELO Dynamiques", value=False, help="Met à jour les ELO match par match pendant le backtest. Chaque résultat ajuste les forces relatives des équipes pour les matchs suivants.")
     time_decay_half_life = None
+    pin_anchor_elo = None
+    months_window = None
     if use_dynamic_elo:
-        time_decay_half_life = _pc3.slider(
-            "⏳ Demi-vie (années)", 0.5, 4.0, 1.5, 0.1,
-            help="Demi-vie de la décroissance temporelle du K-factor. "
-                 "Ex: 1.5 ans → un match d'il y a 1.5 an aura 50% du poids d'un match récent. "
-                 "Plus c'est bas, plus les matchs anciens sont ignorés.",
-            key="bt_time_decay",
+        _dyn_mode = st.radio(
+            "Mode ELO Dynamique",
+            ["Classique (ELO historiques)", "Ancrage Pinnacle"],
+            index=1, horizontal=True,
+            help="Classique: part des ELO de chaque compétition. Ancrage: part des ELO calibrés Pinnacle et ne traite que les matchs récents.",
         )
+        if _dyn_mode == "Ancrage Pinnacle":
+            from elo_engine import load_pin_calibrated_elo as _load_pin_dyn, compute_all_nations_elo as _compute_elo_dyn, fetch_elorating_base as _fetch_base_dyn
+            _pin_data_dyn = _load_pin_dyn()
+            if _pin_data_dyn and _pin_data_dyn.get("elo"):
+                _base_dyn = _fetch_base_dyn()
+                _elo_list_dyn = _compute_elo_dyn(elorating_base=_base_dyn, pin_weight=1.0, forced_weight=0)
+                _code_to_elo = {r["code"]: r["elo"] for r in _elo_list_dyn}
+                from nations_data import get_all_nations as _gan_dyn
+                pin_anchor_elo = {}
+                for n in _gan_dyn():
+                    pin_anchor_elo[n["name"]] = _code_to_elo.get(n["code"], 1700)
+                _dc1, _dc2 = st.columns(2)
+                months_window = _dc1.slider(
+                    "📅 Fenêtre (mois)", 3, 48, 12, 1,
+                    help="N'appliquer que les matchs des N derniers mois sur la base Pinnacle.",
+                    key="bt_months_window",
+                )
+                time_decay_half_life = _dc2.slider(
+                    "⏳ Demi-vie K (années)", 0.5, 4.0, 2.0, 0.1,
+                    help="Demi-vie du K-factor. Les matchs plus anciens dans la fenêtre auront un K réduit.",
+                    key="bt_time_decay_pin",
+                )
+                st.info(f"🎯 Base: ELO Pinnacle ({len(pin_anchor_elo)} nations) + ajustements des {months_window} derniers mois")
+            else:
+                st.warning("Pas de calibration Pinnacle disponible. Va dans Classement ELO → Recalibrer.")
+                _dyn_mode = "Classique (ELO historiques)"
+        if _dyn_mode == "Classique (ELO historiques)":
+            _dc_classic = st.columns(1)[0]
+            time_decay_half_life = _dc_classic.slider(
+                "⏳ Demi-vie (années)", 0.5, 4.0, 1.5, 0.1,
+                help="Demi-vie de la décroissance temporelle du K-factor.",
+                key="bt_time_decay_classic",
+            )
     _active_preset = _presets[preset_choice]
 
     with st.expander("🔧 Ajuster les paramètres manuellement", expanded=False):
@@ -2648,14 +2682,24 @@ elif page == "🔬 Backtest V8":
 
     if use_dynamic_elo:
         bt_dataset_sorted = sorted(bt_dataset, key=lambda m: m.get("date", "9999"))
-        bt_results, _final_elo = run_backtest_dynamic(bt_dataset_sorted, current_params, time_decay_half_life=time_decay_half_life)
+        bt_results, _final_elo = run_backtest_dynamic(
+            bt_dataset_sorted, current_params,
+            time_decay_half_life=time_decay_half_life,
+            pin_anchor_elo=pin_anchor_elo,
+            months_window=months_window,
+        )
     else:
         bt_results = run_backtest(bt_dataset, current_params)
     bt_metrics = compute_metrics(bt_results)
 
     if not is_preset:
         if use_dynamic_elo:
-            bt_results_default, _ = run_backtest_dynamic(bt_dataset_sorted, _active_preset, time_decay_half_life=time_decay_half_life)
+            bt_results_default, _ = run_backtest_dynamic(
+                bt_dataset_sorted, _active_preset,
+                time_decay_half_life=time_decay_half_life,
+                pin_anchor_elo=pin_anchor_elo,
+                months_window=months_window,
+            )
         else:
             bt_results_default = run_backtest(bt_dataset, _active_preset)
         bt_metrics_default = compute_metrics(bt_results_default)
@@ -2864,9 +2908,11 @@ elif page == "🔬 Backtest V8":
         st.markdown("---")
         st.subheader("📈 ELO Dynamiques — Classement final (CDM 2026)")
         _decay_msg = ""
-        if time_decay_half_life:
-            _decay_msg = f" | ⏳ Décroissance temporelle active (demi-vie = {time_decay_half_life:.1f} ans)"
-        st.caption(f"ELO après mise à jour match par match sur l'ensemble du backtest. Seules les 48 nations CDM 2026 sont affichées.{_decay_msg}")
+        if pin_anchor_elo:
+            _decay_msg = f" | 🎯 Ancrage Pinnacle + {months_window or 12} mois de résultats"
+        elif time_decay_half_life:
+            _decay_msg = f" | ⏳ Décroissance temporelle (demi-vie = {time_decay_half_life:.1f} ans)"
+        st.caption(f"ELO après mise à jour match par match. Seules les 48 nations CDM 2026 sont affichées.{_decay_msg}")
 
         from nations_data import get_all_nations as _get_all_nations_bt
         _wc_codes = {n["code"] for n in _get_all_nations_bt()}

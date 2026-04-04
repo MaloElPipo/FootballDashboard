@@ -149,9 +149,9 @@ def sigmoid_v8_1x2(delta_elo, elo_avg=None, phase="G"):
     return p1_new / total, px_new / total, p2_new / total
 
 
-def _build_elo_map(forced_weight=None):
+def _build_elo_map(forced_weight=None, pin_weight=None):
     elo_base = fetch_elorating_base()
-    all_elo = compute_all_nations_elo(elorating_base=elo_base, forced_weight=forced_weight)
+    all_elo = compute_all_nations_elo(elorating_base=elo_base, forced_weight=forced_weight, pin_weight=pin_weight)
     return {r["code"]: r["elo"] for r in all_elo}
 
 

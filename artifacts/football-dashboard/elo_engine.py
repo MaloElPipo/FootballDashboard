@@ -9,8 +9,40 @@ from nations_data import WC2026_NATIONS, get_all_nations, get_nation_by_code
 BSD_CACHE_PATH = Path(__file__).parent / "bsd_data_cache.json"
 OVERRIDES_PATH = Path(__file__).parent / "elo_overrides.json"
 SELECTION_FILE = Path(__file__).parent / "players_selection.json"
+PIN_CALIBRATED_PATH = Path(__file__).parent / "pin_calibrated_elo.json"
 
 FORCED_ELO_WEIGHT_DEFAULT = 0.80
+PIN_WEIGHT_DEFAULT = 1.0
+
+ODDS_API_NAME_MAP = {
+    "Bosnia and Herzegovina": "BIH",
+    "DR Congo": "COD",
+    "Republic of Ireland": "IRL",
+    "South Korea": "KOR",
+    "Ivory Coast": "CIV",
+    "Czech Republic": "CZE",
+    "United States": "USA",
+}
+
+ODDS_API_TO_FIFA = {
+    "Mexico": "MEX", "South Africa": "RSA", "South Korea": "KOR",
+    "Czech Republic": "CZE", "Canada": "CAN",
+    "Bosnia and Herzegovina": "BIH", "USA": "USA", "United States": "USA",
+    "Paraguay": "PAR", "Qatar": "QAT", "Switzerland": "SUI",
+    "Brazil": "BRA", "Morocco": "MAR", "Haiti": "HAI", "Scotland": "SCO",
+    "Australia": "AUS", "Turkey": "TUR", "Netherlands": "NED",
+    "Japan": "JPN", "Ivory Coast": "CIV", "Ecuador": "ECU",
+    "Sweden": "SWE", "Tunisia": "TUN", "Belgium": "BEL", "Egypt": "EGY",
+    "Saudi Arabia": "KSA", "Uruguay": "URU", "France": "FRA",
+    "Senegal": "SEN", "Iraq": "IRQ", "Norway": "NOR",
+    "Argentina": "ARG", "Algeria": "ALG", "Jordan": "JOR",
+    "Portugal": "POR", "DR Congo": "COD", "England": "ENG",
+    "Croatia": "CRO", "Ghana": "GHA", "Panama": "PAN",
+    "Uzbekistan": "UZB", "Colombia": "COL", "Spain": "ESP",
+    "Germany": "GER", "Denmark": "DEN", "Serbia": "SRB",
+    "Iran": "IRN", "New Zealand": "NZL", "Cape Verde": "CPV",
+    "Curaçao": "CUW", "Curacao": "CUW",
+}
 
 ELORATING_FALLBACKS = {
     "SCO": 1700,
@@ -295,16 +327,135 @@ def compute_bsd_adjustment(squad_score, perf_score, all_squad_scores, all_perf_s
     return int(round(adj))
 
 
-def compute_all_nations_elo(elorating_base=None, forced_weight=None):
+def load_pin_calibrated_elo():
+    if not PIN_CALIBRATED_PATH.exists():
+        return {}
+    try:
+        with open(PIN_CALIBRATED_PATH) as f:
+            data = json.load(f)
+        return data
+    except Exception:
+        return {}
+
+
+def save_pin_calibrated_elo(data):
+    with open(PIN_CALIBRATED_PATH, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+def _pinnacle_implied_delta(pin_h, pin_d, pin_a, params):
+    from backtest_engine import _sigmoid_custom
+    margin = 1/pin_h + 1/pin_d + 1/pin_a
+    target_ph = (1/pin_h) / margin
+    target_pd = (1/pin_d) / margin
+    target_pa = (1/pin_a) / margin
+
+    best_delta = 0
+    best_err = float('inf')
+    for delta in range(-800, 801, 1):
+        p1, px, p2 = _sigmoid_custom(
+            delta, params["scale"], params["draw_base"], params["d_half"],
+            params["power"], params["quality"], elo_avg=1800, phase="G",
+            db_close=params["db_close"], db_mid=params["db_mid"],
+            db_ko=params["db_ko"], db_max=params["db_max"],
+            fb_group=params["fb_group"], fb_ko=params["fb_ko"],
+            fav_threshold=params["fav_threshold"],
+        )
+        err = (p1 - target_ph)**2 + (px - target_pd)**2 + (p2 - target_pa)**2
+        if err < best_err:
+            best_err = err
+            best_delta = delta
+    return best_delta
+
+
+def calibrate_elo_from_pinnacle(current_elo_by_code):
+    from backtest_engine import V8PIN_PARAMS
+    import datetime
+
+    api_key = os.environ.get("ODDS_API_KEY")
+    if not api_key:
+        return None, "ODDS_API_KEY manquante"
+
+    r = requests.get(
+        "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds",
+        params={
+            "apiKey": api_key, "regions": "eu", "markets": "h2h",
+            "bookmakers": "pinnacle", "oddsFormat": "decimal",
+        },
+        timeout=20,
+    )
+    if r.status_code != 200:
+        return None, f"Erreur API: {r.status_code}"
+
+    wc_odds = r.json()
+    remaining = r.headers.get("x-requests-remaining", "?")
+
+    corrections_by_code = {}
+
+    for m in wc_odds:
+        home = m["home_team"]
+        away = m["away_team"]
+        bm = m.get("bookmakers", [])
+        if not bm:
+            continue
+        outcomes = bm[0]["markets"][0]["outcomes"]
+        odds_map = {o["name"]: o["price"] for o in outcomes}
+        pin_h = odds_map.get(home, 0)
+        pin_d = odds_map.get("Draw", 0)
+        pin_a = odds_map.get(away, 0)
+        if not pin_h or not pin_d or not pin_a:
+            continue
+
+        code_h = ODDS_API_TO_FIFA.get(home)
+        code_a = ODDS_API_TO_FIFA.get(away)
+        if not code_h or not code_a:
+            continue
+
+        elo_h = current_elo_by_code.get(code_h, 1500)
+        elo_a = current_elo_by_code.get(code_a, 1500)
+
+        pin_delta = _pinnacle_implied_delta(pin_h, pin_d, pin_a, V8PIN_PARAMS)
+        mid = (elo_h + elo_a) / 2
+        corr_h = mid + pin_delta / 2
+        corr_a = mid - pin_delta / 2
+
+        if code_h not in corrections_by_code:
+            corrections_by_code[code_h] = []
+        corrections_by_code[code_h].append(corr_h)
+        if code_a not in corrections_by_code:
+            corrections_by_code[code_a] = []
+        corrections_by_code[code_a].append(corr_a)
+
+    pin_elo = {}
+    for code, vals in corrections_by_code.items():
+        pin_elo[code] = int(round(np.mean(vals)))
+
+    result = {
+        "calibrated_at": datetime.datetime.now().isoformat(),
+        "n_matches": len(wc_odds),
+        "n_nations": len(pin_elo),
+        "api_remaining": remaining,
+        "elo": pin_elo,
+    }
+    save_pin_calibrated_elo(result)
+    return result, None
+
+
+def compute_all_nations_elo(elorating_base=None, forced_weight=None, pin_weight=None):
     if elorating_base is None:
         elorating_base = fetch_elorating_base()
 
     if forced_weight is None:
         forced_weight = FORCED_ELO_WEIGHT_DEFAULT
 
+    if pin_weight is None:
+        pin_weight = PIN_WEIGHT_DEFAULT
+
     cache = _load_bsd_cache()
     elorating_by_fifa = _elorating_to_fifa_map(elorating_base)
     overrides = load_elo_overrides()
+    pin_data = load_pin_calibrated_elo()
+    pin_elo = pin_data.get("elo", {}) if pin_data else {}
 
     all_nations = get_all_nations()
     nation_data_list = []
@@ -322,13 +473,24 @@ def compute_all_nations_elo(elorating_base=None, forced_weight=None):
     for data in nation_data_list:
         adj = compute_bsd_adjustment(data["squad_score"], data["performance_score"], all_sq, all_pf)
         data["bsd_adj"] = adj
-        data["elo_calculated"] = data["elo_base"] + adj
+        data["elo_system"] = data["elo_base"] + adj
+        data["elo_calculated"] = data["elo_system"]
+
+        pin_val = pin_elo.get(data["code"])
+        data["elo_pin"] = pin_val
+
+        if pin_val is not None and pin_weight > 0:
+            data["elo_calculated"] = int(round(
+                pin_val * pin_weight + data["elo_system"] * (1 - pin_weight)
+            ))
 
         forced_val = overrides.get(data["code"])
         data["elo_forced"] = forced_val
 
         if forced_val is not None:
-            data["elo"] = int(round(forced_val * forced_weight + data["elo_calculated"] * (1 - forced_weight)))
+            data["elo"] = int(round(
+                forced_val * forced_weight + data["elo_calculated"] * (1 - forced_weight)
+            ))
         else:
             data["elo"] = data["elo_calculated"]
 

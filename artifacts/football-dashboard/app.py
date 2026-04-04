@@ -903,45 +903,87 @@ elif page == "🏅 Classement ELO":
         compute_all_nations_elo,
         load_elo_overrides,
         save_elo_overrides,
+        load_pin_calibrated_elo,
+        calibrate_elo_from_pinnacle,
         FORCED_ELO_WEIGHT_DEFAULT,
+        PIN_WEIGHT_DEFAULT,
     )
 
     st.header("🏅 Classement ELO — Coupe du Monde 2026")
     st.caption(
-        "ELO = EloRating.net (base) + ajustement BSD (±50 pts effectif/performance). "
-        "Tu peux forcer un ELO manuellement pour corriger les aberrations."
+        "ELO Système = EloRating.net + BSD. ELO Pinnacle = calibré via cotes Pinnacle WC2026. "
+        "ELO Final = blend des deux + override manuel possible."
     )
+
+    pin_data = load_pin_calibrated_elo()
+    pin_date = pin_data.get("calibrated_at", "jamais")[:16].replace("T", " ") if pin_data else "jamais"
+    pin_n_matches = pin_data.get("n_matches", 0) if pin_data else 0
+    pin_n_nations = pin_data.get("n_nations", 0) if pin_data else 0
 
     col_settings, col_main = st.columns([1, 3])
     with col_settings:
-        st.markdown("#### Réglages")
+        st.markdown("#### ⚙️ Réglages")
+        pin_weight_pct = st.slider(
+            "Poids ELO Pinnacle (%)", 0, 100,
+            int(PIN_WEIGHT_DEFAULT * 100), key="pin_weight",
+            help="ELO = Pinnacle × poids + Système × (1−poids). 100% = full Pinnacle."
+        )
+        pin_weight = pin_weight_pct / 100.0
+
         forced_weight_pct = st.slider(
             "Poids ELO forcé (%)", 0, 100,
             int(FORCED_ELO_WEIGHT_DEFAULT * 100), key="forced_weight",
-            help="Quand un ELO forcé est renseigné : ELO final = forcé × poids + calculé × (1−poids)"
+            help="Quand un ELO forcé est renseigné, il remplace l'ELO calculé avec ce poids."
         )
         forced_weight = forced_weight_pct / 100.0
+
+        st.markdown("---")
+        st.markdown("#### 📡 Calibration Pinnacle")
+        st.caption(f"Dernière calibration : **{pin_date}**  \n{pin_n_matches} matchs · {pin_n_nations} nations")
+        if st.button("🔄 Recalibrer ELO Pinnacle", type="primary", use_container_width=True):
+            with st.spinner("Récupération des cotes Pinnacle et inversion sigmoid..."):
+                elorating_base_tmp = elo_fetch_base()
+                all_tmp = compute_all_nations_elo(
+                    elorating_base=elorating_base_tmp,
+                    forced_weight=0,
+                    pin_weight=0,
+                )
+                current_system_elo = {r["code"]: r["elo_system"] for r in all_tmp}
+                result, err = calibrate_elo_from_pinnacle(current_system_elo)
+            if err:
+                st.error(f"❌ {err}")
+            else:
+                st.success(
+                    f"✅ Calibration terminée — {result['n_matches']} matchs, "
+                    f"{result['n_nations']} nations. API restant : {result['api_remaining']}"
+                )
+                st.cache_data.clear()
+                st.rerun()
 
     with st.spinner("Calcul du classement ELO (48 nations)..."):
         elorating_base = elo_fetch_base()
         all_elo_data = compute_all_nations_elo(
             elorating_base=elorating_base,
             forced_weight=forced_weight,
+            pin_weight=pin_weight,
         )
 
     with col_main:
-        m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Nations classées", len(all_elo_data))
+        m1, m2, m3, m4, m5 = st.columns(5)
+        m1.metric("Nations", len(all_elo_data))
         best = all_elo_data[0] if all_elo_data else None
         m2.metric("N°1", f"{best['fr']}" if best else "—")
         m3.metric("Meilleur ELO", f"{best['elo']}" if best else "—")
+        n_pin = sum(1 for r in all_elo_data if r.get("elo_pin") is not None)
+        m4.metric("ELO Pinnacle", f"{n_pin}/48")
         n_forced = sum(1 for r in all_elo_data if r.get("elo_forced") is not None)
-        m4.metric("ELO forcés", f"{n_forced}/48")
+        m5.metric("ELO forcés", f"{n_forced}/48")
 
     st.info(
-        f"📡 **EloRating.net** : {len(elorating_base)} équipes chargées  \n"
-        f"⚽ **BSD** : ajustement ±50 pts (effectif 70% + performance 30%)  \n"
-        f"⚖️ **Poids ELO forcé** : {forced_weight_pct}% (quand renseigné)"
+        f"📡 **EloRating.net** : {len(elorating_base)} équipes  \n"
+        f"⚽ **BSD** : ajustement ±50 pts  \n"
+        f"📌 **Pinnacle** : {pin_n_nations} nations calibrées ({pin_n_matches} matchs) — poids {pin_weight_pct}%  \n"
+        f"⚖️ **ELO forcé** : poids {forced_weight_pct}% (quand renseigné)"
     )
 
     st.markdown("---")
@@ -953,17 +995,17 @@ elif page == "🏅 Classement ELO":
         rank_rows = []
         for r in all_elo_data:
             fhtml = flag_img(r["code"])
+            pin_display = str(r["elo_pin"]) if r.get("elo_pin") is not None else "—"
             forced_display = str(r["elo_forced"]) if r.get("elo_forced") is not None else "—"
             rank_rows.append({
                 "Rang": r["rank"],
                 "Nation": f"{fhtml} {r['fr']}",
-                "ELO final": r["elo"],
+                "ELO Final": r["elo"],
                 "Base": r["elo_base"],
-                "Adj. BSD": f"{r['bsd_adj']:+d}",
-                "Calculé": r["elo_calculated"],
-                "ELO forcé": forced_display,
-                "Effectif": round(r["squad_score"], 1),
-                "Perf.": round(r["performance_score"], 1),
+                "BSD": f"{r['bsd_adj']:+d}",
+                "Système": r["elo_system"],
+                "Pinnacle": pin_display,
+                "Forcé": forced_display,
             })
 
         rank_df = pd.DataFrame(rank_rows)
@@ -991,7 +1033,8 @@ elif page == "🏅 Classement ELO":
                 "Nation": r["fr"],
                 "Base EloRating": r["elo_base"],
                 "Adj. BSD": r["bsd_adj"],
-                "Calculé": r["elo_calculated"],
+                "Système": r["elo_system"],
+                "Pinnacle": r.get("elo_pin"),
                 "ELO forcé": current_overrides.get(r["code"], None),
                 "ELO final": r["elo"],
             })
@@ -1038,12 +1081,15 @@ elif page == "🏅 Classement ELO":
         if nation_data:
             st.markdown(f"### {nation_data['fr']} — ELO {nation_data['elo']} (Rang #{nation_data['rank']})")
 
-            sc1, sc2, sc3, sc4 = st.columns(4)
-            sc1.metric("Base EloRating.net", f"{nation_data['elo_base']}")
+            sc1, sc2, sc3, sc4, sc5, sc6 = st.columns(6)
+            sc1.metric("Base EloRating", f"{nation_data['elo_base']}")
             sc2.metric("Ajust. BSD", f"{nation_data['bsd_adj']:+d}")
-            sc3.metric("ELO calculé", f"{nation_data['elo_calculated']}")
+            sc3.metric("ELO Système", f"{nation_data['elo_system']}")
+            pin_val = nation_data.get("elo_pin")
+            sc4.metric("ELO Pinnacle", f"{pin_val}" if pin_val else "—")
             forced_val = nation_data.get("elo_forced")
-            sc4.metric("ELO forcé", f"{forced_val}" if forced_val else "—")
+            sc5.metric("ELO Forcé", f"{forced_val}" if forced_val else "—")
+            sc6.metric("ELO Final", f"{nation_data['elo']}")
 
             st.markdown("---")
 

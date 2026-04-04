@@ -1936,11 +1936,30 @@ elif page == "📅 Calendrier CDM 2026":
         except Exception:
             return {}
 
+    PLAYOFF_TEAM_MAP = {
+        "UEFA Play-Off A": "Bosnia & Herzegovina",
+        "UEFA Play-Off B": "Sweden",
+        "UEFA Play-Off C": "Türkiye",
+        "UEFA Play-Off D": "Czechia",
+        "FIFA Play-Off 1": "DR Congo",
+        "FIFA Play-Off 2": "Iraq",
+    }
+
+    def _resolve_playoff_names(events):
+        for ev in events:
+            for side in ("home_team", "away_team"):
+                val = ev.get(side, "")
+                if val in PLAYOFF_TEAM_MAP:
+                    ev[side] = PLAYOFF_TEAM_MAP[val]
+                obj = ev.get(f"{side}_obj")
+                if isinstance(obj, dict) and obj.get("name", "") in PLAYOFF_TEAM_MAP:
+                    obj["name"] = PLAYOFF_TEAM_MAP[obj["name"]]
+        return events
+
     BSD_TO_ODDS_TEAM = {
-        "South Korea": "Korea Republic",
         "Türkiye": "Turkey",
         "Côte d'Ivoire": "Ivory Coast",
-        "Bosnia & Herzegovina": "Bosnia and Herzegovina",
+        "Czechia": "Czech Republic",
     }
 
     def _match_key_from_bsd(home: str, away: str) -> str:
@@ -1956,6 +1975,7 @@ elif page == "📅 Calendrier CDM 2026":
 
     try:
         events = fetch_wc_events()
+        events = _resolve_playoff_names(events)
     except Exception as exc:
         st.error(f"Erreur de récupération des matchs : {exc}")
         events = []

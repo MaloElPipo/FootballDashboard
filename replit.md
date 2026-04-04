@@ -137,8 +137,11 @@ Monte Carlo engine for FIFA World Cup 2026 predictions.
 1. Build ELO map from `elo_engine.py` composite scores
 2. Simulate 3 group-stage matches per group (12 groups × 6 matches = 72 matches)
 3. Rank groups: pts > GD > GF; qualify top 2 + best 8 of 12 third-place teams
-4. Bracket: R32 → R16 → QF → SF → Final (matches 73–88 mapped from FIFA bracket)
+4. Bracket: R32 → R16 → QF → SF → Final (matches 73–88 mapped from official FIFA 2026 bracket)
+   - R16 pairings: (74,77), (73,75), (83,84), (81,82), (76,78), (79,80), (86,88), (85,87) — ensures same-group teams can't meet before QF
+   - 3rd-place assignment: backtracking algorithm respecting FIFA slot constraints (no same-group R32 matchups, each 3rd used once)
 5. Output: per-nation probabilities (avg_pts, p_1st/2nd/3rd/4th, p_r32/r16/qf/sf/final/winner)
+6. Play-off resolution: PLAYOFF_TEAM_MAP in app.py replaces "UEFA Play-Off A/B/C/D" and "FIFA Play-Off 1/2" with actual qualified teams (BIH, SWE, TUR, CZE, COD, IRQ)
 
 ### Key Functions
 - `run_simulation(n_sims)` — returns sorted list of nation results

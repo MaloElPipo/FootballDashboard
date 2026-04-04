@@ -96,7 +96,8 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - **Calendrier CDM 2026**: World Cup 2026 match calendar with multi-bookmaker 1X2 odds (Pinnacle, Betfair, Unibet FR, PMU), outright winner odds, phase filtering
   - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
   - **Prédictions**: Monte Carlo simulation (Buchdahl 1X2 model calibrated on Pinnacle) — global rankings, group stage probabilities, match-by-match 1X2 predictions with fair odds, value detection vs Pinnacle live lines
-  - **Backtest V8**: Interactive backtesting of V8 model on 136 historical matches (WC2022, Euro2024, Copa2024) with adjustable parameters (sliders), real-time Brier/LogLoss/divergence metrics vs Pinnacle closing, proximity analysis, per-competition/phase breakdown, match detail table, divergence histogram & scatter charts, technical lexicon
+  - **Backtest V8**: Interactive backtesting of V8 model on 136 historical matches (WC2022, Euro2024, Copa2024) with adjustable parameters (sliders), real-time Brier/LogLoss/divergence metrics vs Pinnacle closing, proximity analysis, per-competition/phase breakdown, match detail table, divergence histogram & scatter charts, technical lexicon, **ROI value betting simulation** (edge threshold sweep 0-20%, sweet spot detection, per-bet detail table)
+  - **ELO Dynamique** (tab in Classement ELO): dynamic ELO adjustment with Pinnacle anchor or classic mode, configurable time window and decay
 
 ## WC 2026 Simulator (`wc_simulator.py`)
 

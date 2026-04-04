@@ -2952,6 +2952,187 @@ elif page == "🔬 Backtest V8":
     else:
         st.info("Aucune cote de référence disponible dans le dataset pour les graphiques de divergence.")
 
+    if bt_metrics.get("n_with_pin"):
+        st.markdown("---")
+        st.subheader("💰 ROI — Simulation Value Betting")
+        st.caption(
+            "Simule une stratégie de value betting : on parie quand V8 estime une probabilité supérieure "
+            "à celle impliquée par la cote de référence (= edge positif). Mise plate 1u par pari."
+        )
+
+        with st.expander("📖 Comment ça marche ?", expanded=False):
+            st.markdown("""
+**Principe** : Si V8 donne une probabilité `p_v8` pour une issue et que la cote du bookmaker est `c_ref`, alors :
+- Probabilité impliquée du book : `p_book = 1/c_ref`
+- Edge V8 : `(p_v8 / p_book − 1) × 100%`
+- Si l'edge dépasse le seuil choisi → on parie 1 unité sur cette issue à la cote `c_ref`
+- Profit si ça gagne : `c_ref − 1`. Perte si ça perd : `−1`.
+- **ROI** = Profit total ÷ Mises totales × 100%
+
+**Sweet spot** : Le seuil d'edge optimal est celui qui maximise le ROI tout en gardant assez de volume de paris.
+Un edge trop bas → beaucoup de paris mais peu de valeur. Un edge trop haut → peu de paris, variance élevée.
+            """)
+
+        _roi_with_ref = [r for r in bt_results if r["has_pin"]]
+
+        _edge_thresholds = [round(x * 0.5, 1) for x in range(0, 41)]
+
+        _roi_curve = []
+        for _thr in _edge_thresholds:
+            _total_staked = 0
+            _total_profit = 0.0
+            _n_bets = 0
+            _wins = 0
+            for r in _roi_with_ref:
+                for _pv8, _cref, _outcome_key in [
+                    (r["p1"], r["pin_h"], "H"),
+                    (r["px"], r["pin_d"], "D"),
+                    (r["p2"], r["pin_a"], "A"),
+                ]:
+                    if _cref <= 0:
+                        continue
+                    _p_book = 1.0 / _cref
+                    if _p_book < 0.001:
+                        continue
+                    _edge = (_pv8 / _p_book - 1) * 100
+                    if _edge >= _thr:
+                        _total_staked += 1
+                        _n_bets += 1
+                        if r["result"] == _outcome_key:
+                            _total_profit += _cref - 1
+                            _wins += 1
+                        else:
+                            _total_profit -= 1
+            _roi_pct = (_total_profit / _total_staked * 100) if _total_staked > 0 else 0
+            _roi_curve.append({
+                "Seuil edge (%)": _thr,
+                "Paris": _n_bets,
+                "Gagnés": _wins,
+                "Win rate (%)": round(_wins / _n_bets * 100, 1) if _n_bets > 0 else 0,
+                "Profit (u)": round(_total_profit, 2),
+                "ROI (%)": round(_roi_pct, 2),
+            })
+
+        _roi_df = pd.DataFrame(_roi_curve)
+
+        _best_roi_row = max(_roi_curve, key=lambda x: x["ROI (%)"] if x["Paris"] >= 5 else -999)
+        _best_vol_roi = max(
+            [x for x in _roi_curve if x["Paris"] >= 10],
+            key=lambda x: x["ROI (%)"],
+            default=_best_roi_row,
+        )
+
+        _rc1, _rc2, _rc3, _rc4 = st.columns(4)
+        _zero_edge = next((x for x in _roi_curve if x["Seuil edge (%)"] == 0), _roi_curve[0])
+        _rc1.metric("🎯 ROI (edge ≥ 0%)", f"{_zero_edge['ROI (%)']:+.1f}%",
+                     help="ROI si on parie sur toute issue où V8 voit de la valeur (même minime)")
+        _rc2.metric("📊 Paris (edge ≥ 0%)", f"{_zero_edge['Paris']} ({_zero_edge['Win rate (%)']}% win)")
+        _rc3.metric("🏆 Sweet spot", f"edge ≥ {_best_vol_roi['Seuil edge (%)']}%",
+                     help="Seuil d'edge optimal (min. 10 paris) maximisant le ROI")
+        _rc4.metric("💰 ROI sweet spot", f"{_best_vol_roi['ROI (%)']:+.1f}%",
+                     f"{_best_vol_roi['Paris']} paris, {_best_vol_roi['Profit (u)']:+.1f}u")
+
+        fig_roi = _go_bt.Figure()
+        fig_roi.add_trace(_go_bt.Scatter(
+            x=_roi_df["Seuil edge (%)"], y=_roi_df["ROI (%)"],
+            mode="lines+markers", name="ROI (%)",
+            line=dict(color="#2196F3", width=2),
+            marker=dict(size=5),
+            yaxis="y1",
+        ))
+        fig_roi.add_trace(_go_bt.Bar(
+            x=_roi_df["Seuil edge (%)"], y=_roi_df["Paris"],
+            name="Nombre de paris",
+            marker=dict(color="rgba(255, 152, 0, 0.4)"),
+            yaxis="y2",
+        ))
+        fig_roi.add_hline(y=0, line_dash="dash", line_color="red", line_width=1)
+        _sw_x = _best_vol_roi["Seuil edge (%)"]
+        _sw_y = _best_vol_roi["ROI (%)"]
+        fig_roi.add_trace(_go_bt.Scatter(
+            x=[_sw_x], y=[_sw_y],
+            mode="markers+text", name="Sweet spot",
+            marker=dict(color="green", size=14, symbol="star"),
+            text=[f"  {_sw_y:+.1f}% ({_best_vol_roi['Paris']} paris)"],
+            textposition="middle right",
+            textfont=dict(color="green", size=12),
+            yaxis="y1",
+        ))
+        fig_roi.update_layout(
+            title="ROI vs Seuil d'Edge — Où se trouve la rentabilité ?",
+            xaxis_title="Seuil d'edge minimum (%)",
+            yaxis=dict(title="ROI (%)", side="left", showgrid=True),
+            yaxis2=dict(title="Nombre de paris", side="right", overlaying="y", showgrid=False),
+            height=450,
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+            hovermode="x unified",
+        )
+        st.plotly_chart(fig_roi, use_container_width=True)
+
+        st.caption(
+            "📌 **Lecture** : La ligne bleue montre le ROI en fonction du seuil d'edge minimum requis. "
+            "Les barres orange montrent le volume de paris. L'étoile verte indique le sweet spot "
+            "(meilleur ROI avec au moins 10 paris). La ligne rouge = breakeven (0%)."
+        )
+
+        with st.expander("📊 Tableau détaillé ROI par seuil d'edge", expanded=False):
+            _roi_display = _roi_df[_roi_df["Paris"] > 0].copy()
+            _roi_display["Profit (u)"] = _roi_display["Profit (u)"].apply(lambda x: f"{x:+.2f}")
+            _roi_display["ROI (%)"] = _roi_display["ROI (%)"].apply(lambda x: f"{x:+.2f}%")
+            st.dataframe(_roi_display, hide_index=True, use_container_width=True)
+
+        st.markdown("---")
+        st.markdown("##### 🔎 Détail des paris value (edge ≥ seuil)")
+        _detail_edge_thr = st.slider(
+            "Seuil d'edge minimum (%)", 0.0, 20.0, float(_best_vol_roi["Seuil edge (%)"]), 0.5,
+            help="Affiche les paris qui auraient été placés avec ce seuil d'edge minimum.",
+            key="roi_detail_edge",
+        )
+
+        _value_bets = []
+        for r in _roi_with_ref:
+            for _label, _pv8, _cref, _outcome_key in [
+                ("1 (Dom)", r["p1"], r["pin_h"], "H"),
+                ("X (Nul)", r["px"], r["pin_d"], "D"),
+                ("2 (Ext)", r["p2"], r["pin_a"], "A"),
+            ]:
+                if _cref <= 0:
+                    continue
+                _p_book = 1.0 / _cref
+                if _p_book < 0.001:
+                    continue
+                _edge = (_pv8 / _p_book - 1) * 100
+                if _edge >= _detail_edge_thr:
+                    _won = r["result"] == _outcome_key
+                    _profit = (_cref - 1) if _won else -1
+                    _value_bets.append({
+                        "Match": f"{r['home']} vs {r['away']}",
+                        "Comp.": COMP_LABELS.get(r["comp"], r["comp"]),
+                        "Issue": _label,
+                        "Prob V8": f"{_pv8*100:.1f}%",
+                        "Cote Réf": round(_cref, 2),
+                        "Edge": f"{_edge:+.1f}%",
+                        "Résultat": "✅ Gagné" if _won else "❌ Perdu",
+                        "P/L": f"{_profit:+.2f}u",
+                    })
+
+        if _value_bets:
+            _vb_df = pd.DataFrame(_value_bets)
+            _n_vb = len(_value_bets)
+            _n_won = sum(1 for v in _value_bets if "✅" in v["Résultat"])
+            _total_pl = sum(float(v["P/L"].replace("u", "").replace("+", "")) for v in _value_bets)
+            _roi_detail = _total_pl / _n_vb * 100
+
+            _vc1, _vc2, _vc3, _vc4 = st.columns(4)
+            _vc1.metric("Paris placés", _n_vb)
+            _vc2.metric("Gagnés", f"{_n_won} ({_n_won/_n_vb*100:.0f}%)")
+            _vc3.metric("Profit", f"{_total_pl:+.2f}u")
+            _vc4.metric("ROI", f"{_roi_detail:+.1f}%")
+
+            st.dataframe(_vb_df, hide_index=True, use_container_width=True, height=400)
+        else:
+            st.info(f"Aucun pari value trouvé avec un edge ≥ {_detail_edge_thr}%.")
+
     if not is_preset:
         st.markdown("---")
         st.info(

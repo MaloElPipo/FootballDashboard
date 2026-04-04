@@ -1,0 +1,26 @@
+2026-04-04 16:19:54,855 - ScraperApp - INFO - Starting scraper with parameters: command=scrape_upcoming, match_links=['https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/'], sport=football, date=None, leagues=None, season=None, markets=['1x2'], max_pages=None, proxy_url=None, browser_user_agent=None, browser_locale_timezone=en-GB, browser_timezone_id=Europe/London, scrape_odds_history=False, target_bookmaker=None, headless=True, preview_submarkets_only=False, bookies_filter=all, period=None
+2026-04-04 16:19:54,855 - ProxyManager - INFO - No proxy provided, running without proxy.
+2026-04-04 16:19:54,859 - ProxyManager - INFO - No proxy available, using direct connection.
+2026-04-04 16:19:54,859 - PlaywrightManager - INFO - Starting Playwright...
+2026-04-04 16:19:55,624 - PlaywrightManager - INFO - Playwright initialized successfully.
+2026-04-04 16:19:55,624 - ScraperApp - INFO -
+                Scraping specific matches: ['https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/'] for sport: football, markets=['1x2'],
+                scrape_odds_history=False, target_bookmaker=None,
+                bookies_filter=all, period=None
+
+2026-04-04 16:19:56,170 - OddsPortalScraper - INFO - Setting odds format: Decimal Odds
+2026-04-04 16:20:04,187 - OddsPortalScraper - ERROR - Timeout while setting odds format. Dropdown may not have loaded.
+2026-04-04 16:20:04,187 - BrowserHelper - INFO - Checking for cookie banner...
+2026-04-04 16:20:04,204 - BrowserHelper - INFO - Cookie banner found. Dismissing it.
+2026-04-04 16:20:04,258 - OddsPortalScraper - INFO - Starting to scrape odds for 1 match links...
+2026-04-04 16:20:04,321 - OddsPortalScraper - INFO - Scraping match: https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/
+2026-04-04 16:20:19,331 - OddsPortalScraper - ERROR - Error scraping match data from https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/", waiting until "domcontentloaded"
+
+2026-04-04 16:20:19,331 - OddsPortalScraper - WARNING - Failed to scrape https://www.oddsportal.com/football/h2h/d-r-congo-phn9mm8H/nigeria-EBE2Xb3l/ after 1 attempts: None
+2026-04-04 16:20:19,340 - OddsPortalScraper - INFO - Scraping complete: 0/1 successful (0.0%)
+2026-04-04 16:20:19,340 - OddsPortalScraper - WARNING - Failed to scrape 1 URLs (0 retryable, 1 permanent)
+2026-04-04 16:20:19,340 - PlaywrightManager - INFO - Cleaning up Playwright resources...
+2026-04-04 16:20:19,447 - PlaywrightManager - INFO - Playwright resources cleanup complete.
+2026-04-04 16:20:19,448 - oddsharvester.cli.commands.upcoming - ERROR - Scraper did not return valid data.

@@ -4,6 +4,122 @@ import numpy as np
 from pathlib import Path
 
 HIST_ODDS_PATH = Path(__file__).parent / "historical_odds.json"
+SCRAPED_ODDS_PATH = Path(__file__).parent / "scraped_odds.json"
+
+TEAM_NAME_TO_ELO_KEY = {
+    "Afghanistan": "AFG", "Albania": "ALB", "Algeria": "ALG",
+    "Andorra": "AND", "Angola": "ANG", "Anguilla": "AIA",
+    "Antigua and Barbuda": "ATG", "Argentina": "ARG", "Armenia": "ARM",
+    "Aruba": "ARU", "Australia": "AUS", "Austria": "AUT",
+    "Azerbaijan": "AZE", "Bahamas": "BAH", "Bahrain": "BHR",
+    "Bangladesh": "BAN", "Barbados": "BRB", "Belarus": "BLR",
+    "Belgium": "BEL", "Belize": "BLZ", "Benin": "BEN",
+    "Bermuda": "BER", "Bhutan": "BHU", "Bolivia": "BOL",
+    "Bosnia & Herzegovina": "BIH", "Botswana": "BOT", "Brazil": "BRA",
+    "British Virgin Islands": "VGB", "Brunei": "BRU", "Bulgaria": "BUL",
+    "Burkina Faso": "BFA", "Burundi": "BDI", "Cambodia": "CAM",
+    "Cameroon": "CMR", "Canada": "CAN", "Cape Verde": "CPV",
+    "Cayman Islands": "CAY", "Central Africa": "CTA",
+    "Chad": "CHA", "Chile": "CHI", "China": "CHN",
+    "Chinese Taipei": "TPE", "Colombia": "COL", "Comoros": "COM",
+    "Congo": "CGO", "Costa Rica": "CRC", "Croatia": "CRO",
+    "Cuba": "CUB", "Curacao": "CUW", "Cyprus": "CYP",
+    "Czech Republic": "CZE", "D.R. Congo": "COD",
+    "Denmark": "DEN", "Djibouti": "DJI", "Dominican Republic": "DOM",
+    "Ecuador": "ECU", "Egypt": "EGY", "El Salvador": "SLV",
+    "England": "ENG", "Equatorial Guinea": "EQG", "Eritrea": "ERI",
+    "Estonia": "EST", "Eswatini": "SWZ", "Ethiopia": "ETH",
+    "Faroe Islands": "FRO", "Finland": "FIN", "France": "FRA",
+    "Gabon": "GAB", "Gambia": "GAM", "Georgia": "GEO",
+    "Germany": "GER", "Ghana": "GHA", "Gibraltar": "GIB",
+    "Greece": "GRE", "Grenada": "GRN", "Guadeloupe": "GLP",
+    "Guatemala": "GUA", "Guinea": "GUI", "Guinea Bissau": "GNB",
+    "Guyana": "GUY", "Haiti": "HAI", "Honduras": "HON",
+    "Hong Kong": "HKG", "Hungary": "HUN", "Iceland": "ISL",
+    "India": "IND", "Indonesia": "IDN", "Iran": "IRN",
+    "Iraq": "IRQ", "Ireland": "IRL", "Israel": "ISR",
+    "Italy": "ITA", "Ivory Coast": "CIV", "Jamaica": "JAM",
+    "Japan": "JPN", "Jordan": "JOR", "Kazakhstan": "KAZ",
+    "Kenya": "KEN", "Kosovo": "KVX", "Kuwait": "KUW",
+    "Kyrgyzstan": "KGZ", "Latvia": "LVA", "Lebanon": "LBN",
+    "Lesotho": "LES", "Liberia": "LBR", "Libya": "LBY",
+    "Liechtenstein": "LIE", "Lithuania": "LTU", "Luxembourg": "LUX",
+    "Macau": "MAC", "Madagascar": "MAD", "Malawi": "MWI",
+    "Malaysia": "MAS", "Maldives": "MDV", "Mali": "MLI",
+    "Malta": "MLT", "Martinique": "MTQ", "Mauritania": "MTN",
+    "Mauritius": "MRI", "Mexico": "MEX", "Moldova": "MDA",
+    "Mongolia": "MNG", "Montenegro": "MNE", "Montserrat": "MSR",
+    "Morocco": "MAR", "Mozambique": "MOZ", "Myanmar": "MYA",
+    "Namibia": "NAM", "Nepal": "NEP", "Netherlands": "NED",
+    "New Caledonia": "NCL", "Nicaragua": "NCA", "Niger": "NIG",
+    "Nigeria": "NGA", "North Korea": "PRK", "North Macedonia": "MKD",
+    "Northern Ireland": "NIR", "Norway": "NOR", "Oman": "OMA",
+    "Pakistan": "PAK", "Palestine": "PLE", "Panama": "PAN",
+    "Paraguay": "PAR", "Peru": "PER", "Philippines": "PHI",
+    "Poland": "POL", "Portugal": "POR", "Puerto Rico": "PUR",
+    "Qatar": "QAT", "Romania": "ROU", "Russia": "RUS",
+    "Rwanda": "RWA", "Saint Kitts and Nevis": "SKN",
+    "Saint Lucia": "LCA", "Saint Vincent and the Grenadines": "VIN",
+    "San Marino": "SMR", "Sao Tome and Principe": "STP",
+    "Saudi Arabia": "KSA", "Scotland": "SCO", "Senegal": "SEN",
+    "Serbia": "SRB", "Seychelles": "SEY", "Sierra Leone": "SLE",
+    "Singapore": "SIN", "Slovakia": "SVK", "Slovenia": "SVN",
+    "Somalia": "SOM", "South Africa": "RSA", "South Korea": "KOR",
+    "Korea Republic": "KOR", "South Sudan": "SSD", "Spain": "ESP",
+    "Sri Lanka": "SRI", "Sudan": "SDN", "Suriname": "SUR",
+    "Sweden": "SWE", "Switzerland": "SUI", "Syria": "SYR",
+    "Tanzania": "TAN", "Togo": "TOG",
+    "Trinidad & Tobago": "TRI", "Tunisia": "TUN", "Turkey": "TUR",
+    "USA": "USA", "United States": "USA",
+    "Uganda": "UGA", "Ukraine": "UKR", "United Arab Emirates": "UAE",
+    "Uruguay": "URU", "Uzbekistan": "UZB", "Venezuela": "VEN",
+    "Vietnam": "VIE", "Wales": "WAL", "Yemen": "YEM",
+    "Zambia": "ZAM", "Zimbabwe": "ZIM", "Timor-Leste": "TLS",
+}
+
+DEFAULT_ELO = {
+    "ESP": 2090, "ARG": 2140, "FRA": 2090, "ENG": 2050, "BRA": 2130,
+    "POR": 2040, "COL": 1870, "NED": 2055, "ECU": 1830, "CRO": 1940,
+    "GER": 2040, "NOR": 1840, "JPN": 1843, "TUR": 1800, "URU": 1900,
+    "SUI": 1915, "SEN": 1811, "BEL": 1920, "MEX": 1810, "PAR": 1730,
+    "AUT": 1880, "MAR": 1845, "CAN": 1750, "AUS": 1735, "IRN": 1768,
+    "KOR": 1815, "ALG": 1730, "PAN": 1640, "UZB": 1690, "CZE": 1825,
+    "SWE": 1830, "JOR": 1580, "EGY": 1700, "COD": 1630, "TUN": 1699,
+    "IRQ": 1640, "BIH": 1760, "NZL": 1530, "KSA": 1585, "CPV": 1530,
+    "HAI": 1510, "RSA": 1610, "GHA": 1600, "QAT": 1554, "SCO": 1795,
+    "CUW": 1350, "CIV": 1750, "USA": 1800, "ITA": 1945, "DEN": 1960,
+    "SRB": 1845, "POL": 1830, "HUN": 1855, "SVK": 1770, "ROU": 1785,
+    "UKR": 1840, "GEO": 1680, "ALB": 1700, "SVN": 1775, "WAL": 1790,
+    "CRC": 1640, "BOL": 1520, "PER": 1740, "CHI": 1810, "VEN": 1750,
+    "JAM": 1530, "CMR": 1595,
+    "NIR": 1640, "ISL": 1700, "FIN": 1700, "BUL": 1620, "GRE": 1700,
+    "ISR": 1680, "IRL": 1720, "MNE": 1660, "ARM": 1560, "KAZ": 1520,
+    "LVA": 1490, "LTU": 1490, "LUX": 1490, "EST": 1460, "FRO": 1380,
+    "GIB": 1200, "AND": 1270, "SMR": 1100, "LIE": 1350, "MLT": 1370,
+    "MDA": 1440, "BLR": 1530, "CYP": 1480, "MKD": 1600, "KVX": 1640,
+    "NGA": 1740, "BFA": 1560, "MLI": 1620, "GAB": 1470, "BEN": 1500,
+    "GUI": 1480, "MAD": 1400, "MOZ": 1360, "SLE": 1400, "TOG": 1420,
+    "TAN": 1400, "UGA": 1400, "NAM": 1350, "ZAM": 1500, "ZIM": 1430,
+    "ANG": 1470, "GAM": 1470, "MTN": 1430, "RWA": 1380, "NIG": 1370,
+    "EQG": 1410, "LBR": 1380, "COM": 1370, "LBY": 1430, "SDN": 1370,
+    "GNB": 1370, "ETH": 1350, "ERI": 1250, "SOM": 1200, "DJI": 1150,
+    "SWZ": 1300, "LES": 1280, "BOT": 1370, "CTA": 1300, "CHA": 1250,
+    "STP": 1150, "SEY": 1200, "MWI": 1350, "MRI": 1250, "SSD": 1200,
+    "HON": 1550, "SLV": 1530, "GUA": 1540, "NCA": 1420, "TRI": 1430,
+    "SUR": 1400, "BLZ": 1300, "DOM": 1380, "CUB": 1420, "GUY": 1300,
+    "BRB": 1280, "ATG": 1260, "GRN": 1270, "SKN": 1240, "LCA": 1220,
+    "VIN": 1230, "AIA": 1100, "MSR": 1100, "VGB": 1100, "BER": 1300,
+    "CAY": 1200, "PUR": 1300, "ARU": 1250,
+    "CHN": 1560, "IND": 1420, "IDN": 1450, "PHI": 1400, "VIE": 1440,
+    "MAS": 1380, "SIN": 1370, "MYA": 1370, "CAM": 1320, "BAN": 1300,
+    "NEP": 1290, "MDV": 1260, "SRI": 1250, "PAK": 1250, "MNG": 1250,
+    "BHU": 1200, "BRU": 1180, "TLS": 1200, "MAC": 1200, "TPE": 1300,
+    "HKG": 1350, "OMA": 1520, "BHR": 1480, "KUW": 1460, "UAE": 1560,
+    "LBN": 1430, "SYR": 1470, "PLE": 1420, "YEM": 1280,
+    "PRK": 1560, "KGZ": 1440,
+    "NCL": 1350, "GLP": 1350, "MTQ": 1350, "BAH": 1250, "AFG": 1300,
+    "RUS": 1800, "NOR": 1840,
+}
 
 ELO_WC2022 = {
     "QAT": 1554, "ECU": 1833, "ENG": 2035, "IRN": 1768, "SEN": 1811,
@@ -153,6 +269,102 @@ RESULTS_COPA24_KO = {
     ("Colombia", "Uruguay"): "H", ("Argentina", "Colombia"): "D",
 }
 
+ALL_COMPS = [
+    "WC2022", "EURO2024", "COPA2024",
+    "QUALIF_WC2026", "NL_2022_23", "NL_2024_25",
+    "GOLD_CUP_2025", "CAN2025", "FRIENDLIES", "CONCACAF_NL",
+]
+
+COMP_LABELS = {
+    "WC2022": "CM 2022",
+    "EURO2024": "Euro 2024",
+    "COPA2024": "Copa 2024",
+    "QUALIF_WC2026": "Qualif. CM 2026",
+    "NL_2022_23": "Nations League 22-23",
+    "NL_2024_25": "Nations League 24-25",
+    "GOLD_CUP_2025": "Gold Cup 2025",
+    "CAN2025": "CAN 2025",
+    "FRIENDLIES": "Amicaux",
+    "CONCACAF_NL": "CONCACAF NL",
+}
+
+
+def _resolve_elo(team_name, comp_elo_dict=None):
+    if comp_elo_dict and team_name in comp_elo_dict:
+        return comp_elo_dict[team_name]
+
+    code = TEAM_NAME_TO_ELO_KEY.get(team_name)
+    if code and code in DEFAULT_ELO:
+        return DEFAULT_ELO[code]
+
+    base = team_name.split(" U")[0].split(" u")[0]
+    if base != team_name:
+        code2 = TEAM_NAME_TO_ELO_KEY.get(base)
+        if code2 and code2 in DEFAULT_ELO:
+            return max(DEFAULT_ELO[code2] - 200, 1100)
+
+    return 1400
+
+
+def _load_scraped_matches():
+    if not SCRAPED_ODDS_PATH.exists():
+        return []
+    try:
+        with open(SCRAPED_ODDS_PATH) as f:
+            raw = json.load(f)
+    except Exception:
+        return []
+
+    existing_keys = set()
+    for (h, a) in RESULTS_WC22_GROUP:
+        existing_keys.add((h, a))
+    for (h, a) in RESULTS_WC22_KO:
+        existing_keys.add((h, a))
+    for (h, a) in RESULTS_EURO24_GROUP:
+        existing_keys.add((h, a))
+    for (h, a) in RESULTS_EURO24_KO:
+        existing_keys.add((h, a))
+    for (h, a) in RESULTS_COPA24_GROUP:
+        existing_keys.add((h, a))
+    for (h, a) in RESULTS_COPA24_KO:
+        existing_keys.add((h, a))
+
+    matches = []
+    seen = set()
+    for m in raw:
+        if m.get("comp") in ("WC2022", "EURO2024", "COPA2024"):
+            if (m["home"], m["away"]) in existing_keys:
+                continue
+
+        key = (m["home"], m["away"], m.get("date", ""))
+        if key in seen:
+            continue
+        seen.add(key)
+
+        pin_h = m.get("fair_h", 0)
+        pin_d = m.get("fair_d", 0)
+        pin_a = m.get("fair_a", 0)
+
+        elo_h = _resolve_elo(m["home"])
+        elo_a = _resolve_elo(m["away"])
+
+        matches.append({
+            "comp": m["comp"],
+            "phase": m.get("phase", "G"),
+            "home": m["home"],
+            "away": m["away"],
+            "result": m["result"],
+            "elo_h": elo_h,
+            "elo_a": elo_a,
+            "pin_h": pin_h,
+            "pin_d": pin_d,
+            "pin_a": pin_a,
+            "ref_book": m.get("ref_book", ""),
+            "date": m.get("date", ""),
+        })
+
+    return matches
+
 
 def _sigmoid_custom(delta_elo, scale, draw_base, d_half, power, quality,
                     elo_avg=None, phase="G",
@@ -279,6 +491,9 @@ def build_backtest_dataset():
             "pin_h": om["odds_h"], "pin_d": om["odds_d"], "pin_a": om["odds_a"],
         })
 
+    scraped = _load_scraped_matches()
+    matches.extend(scraped)
+
     return matches
 
 
@@ -359,6 +574,7 @@ def run_backtest(matches, params):
             "has_pin": has_pin,
             "correct": correct_side,
             "delta": m["elo_h"] - m["elo_a"],
+            "ref_book": m.get("ref_book", ""),
         })
 
     return results
@@ -435,8 +651,9 @@ def compute_metrics(results):
             "total_outcomes": total_outcomes,
         })
 
+    comps_in_data = sorted(set(r["comp"] for r in results))
     by_comp = {}
-    for comp in ["WC2022", "EURO2024", "COPA2024"]:
+    for comp in comps_in_data:
         sub = [r for r in results if r["comp"] == comp]
         if not sub:
             continue
@@ -453,9 +670,10 @@ def compute_metrics(results):
                     if dv is not None:
                         divs.append(abs(dv))
             by_comp[comp]["div_abs"] = round(np.mean(divs), 3) if divs else 0
+            by_comp[comp]["n_with_ref"] = len(sub_pin)
 
     by_phase = {}
-    for phase, label in [("G", "Groupes"), ("K", "KO")]:
+    for phase, label in [("G", "Groupes"), ("Q", "Qualifs"), ("K", "KO")]:
         sub = [r for r in results if r["phase"] == phase]
         if not sub:
             continue

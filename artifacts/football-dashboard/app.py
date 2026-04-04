@@ -2384,14 +2384,14 @@ elif page == "🔮 Prédictions":
 
 # ═══════════════════════════════════════════════════════════════════
 elif page == "🔬 Backtest V8":
-    from backtest_engine import build_backtest_dataset, run_backtest, compute_metrics, DEFAULT_PARAMS
+    from backtest_engine import build_backtest_dataset, run_backtest, compute_metrics, DEFAULT_PARAMS, ALL_COMPS, COMP_LABELS
     import plotly.graph_objects as _go_bt
     import numpy as np
 
     st.header("🔬 Backtest V8 — Calibration du modèle")
     st.caption(
-        "Ajustez les paramètres du modèle V8 et observez l'impact en temps réel sur 136 matchs historiques "
-        "(WC 2022, Euro 2024, Copa 2024). Objectif : se rapprocher au maximum des cotes de clôture Pinnacle."
+        "Ajustez les paramètres du modèle V8 et observez l'impact en temps réel sur les matchs historiques. "
+        "Cotes de référence : Roobet/Winamax dé-marginées (proxy sharp closing)."
     )
 
     with st.expander("📖 Lexique — Notions techniques", expanded=False):
@@ -2405,15 +2405,17 @@ elif page == "🔬 Backtest V8":
 - **Plus c'est bas, mieux c'est** (0 = parfait)
 - Plus sensible que le Brier aux erreurs "confiantes"
 
-**Divergence absolue** — Écart moyen en cotes décimales entre V8 et Pinnacle. Par exemple, V8 donne 2.50 et Pin donne 2.30 → divergence = 0.20.
-- **Plus c'est bas, plus on est proche de Pinnacle**
+**Divergence absolue** — Écart moyen en cotes décimales entre V8 et les cotes de référence (Roobet/Winamax dé-marginées). Par exemple, V8 donne 2.50 et Ref donne 2.30 → divergence = 0.20.
+- **Plus c'est bas, plus on est proche du marché sharp**
 
-**Divergence en %** — Même concept mais en pourcentage relatif : `(cote_V8 / cote_Pin − 1) × 100`. Utile pour comparer des écarts sur des cotes de magnitudes différentes.
+**Divergence en %** — Même concept mais en pourcentage relatif : `(cote_V8 / cote_Ref − 1) × 100`. Utile pour comparer des écarts sur des cotes de magnitudes différentes.
 
 **Précision (%)** — Pourcentage de matchs où l'issue la plus probable selon V8 correspond au résultat réel.
 - ⚠️ Attention : une précision de 50% ne veut pas dire que le modèle est mauvais — au football, même le meilleur modèle ne dépasse guère 55% car les nuls et surprises sont fréquents.
 
-**Proximité ±0.10 / ±0.20 / ±0.50** — Pourcentage d'issues (1/X/2) où notre cote V8 est à moins de 0.10, 0.20 ou 0.50 de la cote Pinnacle. Plus c'est haut, plus on "colle" au marché.
+**Proximité ±0.10 / ±0.20 / ±0.50** — Pourcentage d'issues (1/X/2) où notre cote V8 est à moins de 0.10, 0.20 ou 0.50 de la cote de référence. Plus c'est haut, plus on "colle" au marché.
+
+**Cotes de référence** — Roobet (prioritaire, ~6.3% marge) et Winamax (fallback, ~9.4% marge) dé-marginées via `cote_fair = cote × (1 + marge)`. Proxy des closing lines sharp en l'absence de Pinnacle sur les .fr.
         """)
 
     @st.cache_data(ttl=86400)
@@ -2512,11 +2514,11 @@ elif page == "🔬 Backtest V8":
     mg4.metric("🎯 Précision", f"{bt_metrics['accuracy']:.1f}%", _acc_delta or None, help=_h_acc)
 
     if bt_metrics.get("n_with_pin"):
-        st.markdown("##### V8 vs Pinnacle Closing")
-        st.caption(f"Comparaison sur {bt_metrics['n_with_pin']} matchs avec cotes Pinnacle disponibles")
+        st.markdown("##### V8 vs Cotes de Référence (Roobet/Winamax dé-marginées)")
+        st.caption(f"Comparaison sur {bt_metrics['n_with_pin']} matchs avec cotes de référence disponibles")
 
-        _h_brier_cmp = "Brier Score comparé : V8 vs Pinnacle. Si V8 < Pinnacle, notre modèle est plus précis que le marché."
-        _h_div = "Écart moyen absolu entre cotes V8 et Pinnacle (en cotes décimales). Plus c'est bas, plus on colle au marché."
+        _h_brier_cmp = "Brier Score comparé : V8 vs marché de référence. Si V8 < Ref, notre modèle est plus précis que le marché."
+        _h_div = "Écart moyen absolu entre cotes V8 et Ref (en cotes décimales). Plus c'est bas, plus on colle au marché."
         _h_div_pct = "Même écart mais en % relatif. Utile pour comparer des écarts sur des cotes de magnitudes différentes."
 
         vp1, vp2, vp3, vp4 = st.columns(4)
@@ -2524,7 +2526,7 @@ elif page == "🔬 Backtest V8":
         _b_pin = bt_metrics["brier_pin"]
         _beat = "✅" if _b_v8 < _b_pin else "❌"
         vp1.metric(f"Brier V8 {_beat}", f"{_b_v8:.4f}", help=_h_brier_cmp)
-        vp2.metric("Brier Pinnacle", f"{_b_pin:.4f}")
+        vp2.metric("Brier Réf.", f"{_b_pin:.4f}")
 
         _dv_delta = ""
         if not is_default:
@@ -2536,8 +2538,8 @@ elif page == "🔬 Backtest V8":
             _dvp_delta = f"{bt_metrics['div_pct_abs_mean'] - bt_metrics_default['div_pct_abs_mean']:+.2f}%"
         vp4.metric("📏 Div. moy. |%|", f"{bt_metrics['div_pct_abs_mean']:.2f}%", _dvp_delta or None, delta_color="inverse", help=_h_div_pct)
 
-        st.markdown("##### Proximité V8 ↔ Pinnacle")
-        st.caption("Pourcentage d'issues (1/X/2) où notre cote V8 est proche de Pinnacle. Plus c'est haut, mieux c'est.")
+        st.markdown("##### Proximité V8 ↔ Réf.")
+        st.caption("Pourcentage d'issues (1/X/2) où notre cote V8 est proche de la référence. Plus c'est haut, mieux c'est.")
         _total_o = bt_metrics["total_outcomes"]
         px1, px2, px3, px4 = st.columns(4)
 
@@ -2558,9 +2560,11 @@ elif page == "🔬 Backtest V8":
     st.markdown("##### Détail par compétition")
     comp_rows = []
     for comp, data in bt_metrics.get("by_comp", {}).items():
-        row = {"Compétition": comp, "Matchs": data["n"], "Brier": data["brier"], "Précision": f"{data['accuracy']}%"}
+        row = {"Compétition": COMP_LABELS.get(comp, comp), "Matchs": data["n"], "Brier": data["brier"], "Précision": f"{data['accuracy']}%"}
         if "div_abs" in data:
             row["|Div.| moy."] = data["div_abs"]
+        if "n_with_ref" in data:
+            row["Avec cotes réf."] = data["n_with_ref"]
         comp_rows.append(row)
     if comp_rows:
         st.dataframe(pd.DataFrame(comp_rows), hide_index=True, use_container_width=True)
@@ -2574,24 +2578,36 @@ elif page == "🔬 Backtest V8":
 
     st.markdown("---")
     st.subheader("📋 Détail par match")
-    st.caption("Cliquez sur une colonne pour trier. Les matchs avec cotes Pinnacle montrent les divergences.")
+    st.caption("Cliquez sur une colonne pour trier. Les matchs avec cotes de référence montrent les divergences.")
 
-    _bt_filter_comp = st.multiselect("Filtrer par compétition", ["WC2022", "EURO2024", "COPA2024"], default=["WC2022", "EURO2024", "COPA2024"], key="bt_fcomp")
-    _bt_filter_phase = st.radio("Phase", ["Tout", "Groupes", "KO"], horizontal=True, key="bt_fphase")
+    _available_comps = sorted(set(r["comp"] for r in bt_results))
+    _comp_options = [c for c in ALL_COMPS if c in _available_comps]
+    _comp_display = {c: f"{COMP_LABELS.get(c, c)} ({sum(1 for r in bt_results if r['comp'] == c)})" for c in _comp_options}
+    _bt_filter_comp = st.multiselect(
+        "Filtrer par compétition",
+        _comp_options,
+        default=_comp_options,
+        format_func=lambda x: _comp_display.get(x, x),
+        key="bt_fcomp",
+    )
+    _bt_filter_phase = st.radio("Phase", ["Tout", "Groupes", "Qualifs", "KO"], horizontal=True, key="bt_fphase")
 
     filtered = bt_results
     if _bt_filter_comp:
         filtered = [r for r in filtered if r["comp"] in _bt_filter_comp]
     if _bt_filter_phase == "Groupes":
         filtered = [r for r in filtered if r["phase"] == "G"]
+    elif _bt_filter_phase == "Qualifs":
+        filtered = [r for r in filtered if r["phase"] == "Q"]
     elif _bt_filter_phase == "KO":
         filtered = [r for r in filtered if r["phase"] == "K"]
 
     detail_rows = []
+    _phase_labels = {"G": "Gr.", "K": "KO", "Q": "Qual."}
     for r in filtered:
         row = {
-            "Comp.": r["comp"],
-            "Phase": "Gr." if r["phase"] == "G" else "KO",
+            "Comp.": COMP_LABELS.get(r["comp"], r["comp"]),
+            "Phase": _phase_labels.get(r["phase"], r["phase"]),
             "Match": f"{r['home']} vs {r['away']}",
             "Rés.": r["result"],
             "Δ ELO": r["delta"],
@@ -2601,16 +2617,16 @@ elif page == "🔬 Backtest V8":
             "Brier": round(r["brier"], 3),
         }
         if r["has_pin"]:
-            row["Pin 1"] = r["pin_h"]
-            row["Pin X"] = r["pin_d"]
-            row["Pin 2"] = r["pin_a"]
+            row["Réf 1"] = r["pin_h"]
+            row["Réf X"] = r["pin_d"]
+            row["Réf 2"] = r["pin_a"]
             row["Div 1"] = round(r["div_h"], 2) if r["div_h"] is not None else ""
             row["Div X"] = round(r["div_d"], 2) if r["div_d"] is not None else ""
             row["Div 2"] = round(r["div_a"], 2) if r["div_a"] is not None else ""
         else:
-            row["Pin 1"] = "—"
-            row["Pin X"] = "—"
-            row["Pin 2"] = "—"
+            row["Réf 1"] = "—"
+            row["Réf X"] = "—"
+            row["Réf 2"] = "—"
             row["Div 1"] = "—"
             row["Div X"] = "—"
             row["Div 2"] = "—"
@@ -2635,14 +2651,14 @@ elif page == "🔬 Backtest V8":
         df_divs = pd.DataFrame(all_divs_plot)
         fig_hist = px.histogram(
             df_divs, x="Divergence", color="Issue", nbins=40,
-            title="Distribution des divergences V8 − Pinnacle (en cotes)",
+            title="Distribution des divergences V8 − Réf. (en cotes)",
             barmode="overlay", opacity=0.6,
             color_discrete_map={"Domicile (1)": "#2196F3", "Nul (X)": "#FF9800", "Extérieur (2)": "#4CAF50"},
         )
         fig_hist.add_vline(x=0, line_dash="dash", line_color="red", annotation_text="Aligné")
-        fig_hist.update_layout(height=400, xaxis_title="Divergence (cote V8 − cote Pin)", yaxis_title="Nombre d'issues")
+        fig_hist.update_layout(height=400, xaxis_title="Divergence (cote V8 − cote Réf.)", yaxis_title="Nombre d'issues")
         st.plotly_chart(fig_hist, use_container_width=True)
-        st.caption("La ligne rouge représente l'alignement parfait (divergence = 0). Une distribution centrée sur 0 signifie que V8 ne sur- ni sous-estime systématiquement.")
+        st.caption("La ligne rouge représente l'alignement parfait. Une distribution centrée sur 0 signifie que V8 ne sur- ni sous-estime systématiquement par rapport au marché de référence.")
 
         abs_div_by_delta = []
         for r in with_pin_results:
@@ -2655,9 +2671,9 @@ elif page == "🔬 Backtest V8":
         )
         fig_scatter.update_layout(height=400)
         st.plotly_chart(fig_scatter, use_container_width=True)
-        st.caption("Plus le Δ ELO est élevé (matchs déséquilibrés), plus V8 tend à diverger de Pinnacle. C'est le maillon faible actuel du modèle.")
+        st.caption("Plus le Δ ELO est élevé (matchs déséquilibrés), plus V8 tend à diverger du marché. C'est le maillon faible actuel du modèle.")
     else:
-        st.info("Aucune cote Pinnacle disponible dans le dataset pour les graphiques de divergence.")
+        st.info("Aucune cote de référence disponible dans le dataset pour les graphiques de divergence.")
 
     if not is_default:
         st.markdown("---")

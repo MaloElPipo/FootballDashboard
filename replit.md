@@ -21,7 +21,16 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 ```text
 artifacts-monorepo/
 ├── artifacts/              # Deployable applications
-│   └── api-server/         # Express API server
+│   ├── api-server/         # Express API server
+│   └── football-dashboard/ # Streamlit football analytics (CDM 2026)
+│       ├── app.py              # Main Streamlit app (7 sections)
+│       ├── backtest_engine.py  # V8 model backtest (541 matchs, 10 compétitions)
+│       ├── scraped_odds.json   # 426 matchs scraped (OddsPortal via OddsHarvester)
+│       ├── historical_odds.json # Euro2024/Copa2024 Pinnacle odds (legacy)
+│       ├── elo_engine.py       # ELO computation (eloratings.net + BSD adjustments)
+│       ├── wc_simulator.py     # WC2026 tournament simulator
+│       ├── bet_tracker.py      # Bet tracking with Kelly sizing
+│       └── nations_data.py     # 48 WC2026 nations data
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config
 │   ├── api-client-react/   # Generated React Query hooks

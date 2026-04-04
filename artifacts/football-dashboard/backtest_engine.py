@@ -5,6 +5,7 @@ from pathlib import Path
 
 HIST_ODDS_PATH = Path(__file__).parent / "historical_odds.json"
 SCRAPED_ODDS_PATH = Path(__file__).parent / "scraped_odds.json"
+IMPLIED_ELO_PATH = Path(__file__).parent / "implied_elo.json"
 
 TEAM_NAME_TO_ELO_KEY = {
     "Afghanistan": "AFG", "Albania": "ALB", "Algeria": "ALG",
@@ -289,19 +290,33 @@ COMP_LABELS = {
 }
 
 
+_IMPLIED_ELO_CACHE = None
+
+def _load_implied_elo():
+    global _IMPLIED_ELO_CACHE
+    if _IMPLIED_ELO_CACHE is not None:
+        return _IMPLIED_ELO_CACHE
+    if IMPLIED_ELO_PATH.exists():
+        try:
+            with open(IMPLIED_ELO_PATH) as f:
+                _IMPLIED_ELO_CACHE = json.load(f)
+                return _IMPLIED_ELO_CACHE
+        except Exception:
+            pass
+    _IMPLIED_ELO_CACHE = {}
+    return _IMPLIED_ELO_CACHE
+
 def _resolve_elo(team_name, comp_elo_dict=None):
     if comp_elo_dict and team_name in comp_elo_dict:
         return comp_elo_dict[team_name]
 
+    implied = _load_implied_elo()
+    if team_name in implied:
+        return implied[team_name]
+
     code = TEAM_NAME_TO_ELO_KEY.get(team_name)
     if code and code in DEFAULT_ELO:
         return DEFAULT_ELO[code]
-
-    base = team_name.split(" U")[0].split(" u")[0]
-    if base != team_name:
-        code2 = TEAM_NAME_TO_ELO_KEY.get(base)
-        if code2 and code2 in DEFAULT_ELO:
-            return max(DEFAULT_ELO[code2] - 200, 1100)
 
     return 1400
 

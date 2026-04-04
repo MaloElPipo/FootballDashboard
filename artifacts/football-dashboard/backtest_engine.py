@@ -306,6 +306,13 @@ def _resolve_elo(team_name, comp_elo_dict=None):
     return 1400
 
 
+_YOUTH_SUFFIXES = (" U17", " U18", " U19", " U20", " U21", " U23")
+
+
+def _is_youth_team(name):
+    return any(name.endswith(s) for s in _YOUTH_SUFFIXES)
+
+
 def _load_scraped_matches():
     if not SCRAPED_ODDS_PATH.exists():
         return []
@@ -332,6 +339,9 @@ def _load_scraped_matches():
     matches = []
     seen = set()
     for m in raw:
+        if _is_youth_team(m["home"]) or _is_youth_team(m["away"]):
+            continue
+
         if m.get("comp") in ("WC2022", "EURO2024", "COPA2024"):
             if (m["home"], m["away"]) in existing_keys:
                 continue

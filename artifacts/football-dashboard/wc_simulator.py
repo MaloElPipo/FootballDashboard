@@ -240,6 +240,7 @@ def simulate_tournament(elo_map, params=None):
         "group_pos": 0, "group_pts": 0,
         "r32": False, "r16": False, "qf": False,
         "sf": False, "final": False, "winner": False,
+        "opponents": {},
     })
 
     group_results = {}
@@ -329,6 +330,9 @@ def simulate_tournament(elo_map, params=None):
         if a_code is None:
             a_code = "UNK"
 
+        tracker[h_code]["opponents"]["r32"] = a_code
+        tracker[a_code]["opponents"]["r32"] = h_code
+
         elo_h = elo_map.get(h_code, 1500)
         elo_a = elo_map.get(a_code, 1500)
         result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
@@ -341,6 +345,8 @@ def simulate_tournament(elo_map, params=None):
         a_code = r32_results[m2]
         tracker[h_code]["r16"] = True
         tracker[a_code]["r16"] = True
+        tracker[h_code]["opponents"]["r16"] = a_code
+        tracker[a_code]["opponents"]["r16"] = h_code
         elo_h = elo_map.get(h_code, 1500)
         elo_a = elo_map.get(a_code, 1500)
         result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
@@ -353,6 +359,8 @@ def simulate_tournament(elo_map, params=None):
         a_code = r16_winners[m2]
         tracker[h_code]["qf"] = True
         tracker[a_code]["qf"] = True
+        tracker[h_code]["opponents"]["qf"] = a_code
+        tracker[a_code]["opponents"]["qf"] = h_code
         elo_h = elo_map.get(h_code, 1500)
         elo_a = elo_map.get(a_code, 1500)
         result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
@@ -366,6 +374,8 @@ def simulate_tournament(elo_map, params=None):
         a_code = qf_winners[m2]
         tracker[h_code]["sf"] = True
         tracker[a_code]["sf"] = True
+        tracker[h_code]["opponents"]["sf"] = a_code
+        tracker[a_code]["opponents"]["sf"] = h_code
         elo_h = elo_map.get(h_code, 1500)
         elo_a = elo_map.get(a_code, 1500)
         result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
@@ -378,6 +388,8 @@ def simulate_tournament(elo_map, params=None):
     f_a = sf_winners[1]
     tracker[f_h]["final"] = True
     tracker[f_a]["final"] = True
+    tracker[f_h]["opponents"]["final"] = f_a
+    tracker[f_a]["opponents"]["final"] = f_h
     elo_h = elo_map.get(f_h, 1500)
     elo_a = elo_map.get(f_a, 1500)
     result, _, _ = simulate_knockout_match(elo_h, elo_a, f_h, f_a)
@@ -394,6 +406,9 @@ def run_simulation(n_sims=10000, params=None):
         "group_pts_total": 0,
         "group_pos_counts": defaultdict(int),
         "r32": 0, "r16": 0, "qf": 0, "sf": 0, "final": 0, "winner": 0,
+        "opponents": {"r32": defaultdict(int), "r16": defaultdict(int),
+                       "qf": defaultdict(int), "sf": defaultdict(int),
+                       "final": defaultdict(int)},
     })
 
     for _ in range(n_sims):
@@ -405,6 +420,9 @@ def run_simulation(n_sims=10000, params=None):
             for stage in ["r32", "r16", "qf", "sf", "final", "winner"]:
                 if data[stage]:
                     a[stage] += 1
+            for stage, opp_code in data.get("opponents", {}).items():
+                if opp_code and opp_code != "UNK":
+                    a["opponents"][stage][opp_code] += 1
 
     output = []
     for code, a in agg.items():
@@ -416,6 +434,20 @@ def run_simulation(n_sims=10000, params=None):
             if code in teams:
                 grp = g
                 break
+
+        opp_pcts = {}
+        for stage in ["r32", "r16", "qf", "sf", "final"]:
+            stage_opps = {}
+            for opp, cnt in a["opponents"][stage].items():
+                stage_opps[opp] = cnt / n_sims * 100
+            opp_pcts[stage] = stage_opps
+
+        elim_group = (1 - a["r32"] / n_sims) * 100
+        elim_r32 = (a["r32"] - a["r16"]) / n_sims * 100
+        elim_r16 = (a["r16"] - a["qf"]) / n_sims * 100
+        elim_qf = (a["qf"] - a["sf"]) / n_sims * 100
+        elim_sf = (a["sf"] - a["final"]) / n_sims * 100
+        elim_final = (a["final"] - a["winner"]) / n_sims * 100
 
         output.append({
             "code": code,
@@ -434,6 +466,13 @@ def run_simulation(n_sims=10000, params=None):
             "p_sf": a["sf"] / n_sims * 100,
             "p_final": a["final"] / n_sims * 100,
             "p_winner": a["winner"] / n_sims * 100,
+            "opponents": opp_pcts,
+            "elim_group": elim_group,
+            "elim_r32": elim_r32,
+            "elim_r16": elim_r16,
+            "elim_qf": elim_qf,
+            "elim_sf": elim_sf,
+            "elim_final": elim_final,
         })
 
     output.sort(key=lambda x: -x["p_winner"])

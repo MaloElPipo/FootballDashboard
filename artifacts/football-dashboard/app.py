@@ -2066,12 +2066,6 @@ elif page == "🔮 Prédictions":
         odds = 100 / prob_pct
         return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
 
-    tab_sim, tab_matches, tab_value = st.tabs([
-        "🏆 Simulation globale",
-        "⚽ Matchs 1X2",
-        "💎 Détection de Value",
-    ])
-
     @st.cache_data(ttl=600)
     def _cached_simulation(n):
         return run_simulation(n_sims=n)
@@ -2080,10 +2074,19 @@ elif page == "🔮 Prédictions":
     def _cached_group_preds():
         return get_group_predictions()
 
+    n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2, key="pred_n_sims")
+    sim_data = _cached_simulation(n_sims)
+
+    tab_sim, tab_bracket, tab_elim, tab_matches, tab_value = st.tabs([
+        "🏆 Simulation globale",
+        "🔀 Bracket / Adversaires",
+        "📉 Stade d'élimination",
+        "⚽ Matchs 1X2",
+        "💎 Détection de Value",
+    ])
+
     with tab_sim:
         st.subheader("Probabilités de parcours — 48 nations")
-        n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2)
-        sim_data = _cached_simulation(n_sims)
 
         view_mode = st.radio("Vue", ["Classement général", "Par poule"], horizontal=True, key="sim_view")
 
@@ -2152,6 +2155,112 @@ elif page == "🔮 Prédictions":
                     pd.DataFrame(rows).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+
+    with tab_bracket:
+        st.subheader("🔀 Bracket — Adversaires probables par tour")
+        sim_data_bracket = sim_data
+
+        nation_options_bracket = [f"{r['fr']} ({r['code']})" for r in sim_data_bracket]
+        selected_bracket = st.selectbox("Sélectionner une nation", nation_options_bracket, key="bracket_nation")
+        sel_code = selected_bracket.split("(")[-1].rstrip(")")
+        sel_data = next((r for r in sim_data_bracket if r["code"] == sel_code), None)
+
+        if sel_data:
+            st.markdown(f"### {flag_img(sel_code)} {sel_data['fr']} — Poule {sel_data['group']} — ELO {sel_data['elo']}")
+
+            stages = [
+                ("r32", "1/32e", sel_data["p_r32"]),
+                ("r16", "1/16e", sel_data["p_r16"]),
+                ("qf", "1/4 finale", sel_data["p_qf"]),
+                ("sf", "1/2 finale", sel_data["p_sf"]),
+                ("final", "Finale", sel_data["p_final"]),
+            ]
+
+            for stage_key, stage_label, p_reach in stages:
+                opps = sel_data.get("opponents", {}).get(stage_key, {})
+                if not opps:
+                    continue
+
+                st.markdown(f"#### {stage_label} (atteint dans {p_reach:.1f}% des simulations)")
+
+                sorted_opps = sorted(opps.items(), key=lambda x: -x[1])
+                opp_rows = []
+                for opp_code, pct in sorted_opps:
+                    if pct < 0.5:
+                        continue
+                    opp_nation = get_nation_by_code(opp_code)
+                    opp_name = opp_nation["fr"] if opp_nation else opp_code
+                    opp_grp = None
+                    for g, t in WC2026_GROUPS.items():
+                        if opp_code in t:
+                            opp_grp = g
+                            break
+                    opp_rows.append({
+                        "Adversaire": f"{flag_img(opp_code)} {opp_name}",
+                        "Poule": opp_grp or "—",
+                        "% de chance": f"{pct:.1f}%",
+                    })
+
+                if opp_rows:
+                    st.markdown(
+                        pd.DataFrame(opp_rows).to_html(escape=False, index=False),
+                        unsafe_allow_html=True,
+                    )
+                else:
+                    st.caption("Aucun adversaire significatif (< 0.5%)")
+
+    with tab_elim:
+        st.subheader("📉 Stade d'élimination — Toutes les nations")
+        sim_data_elim = sim_data
+
+        elim_rows = []
+        for r in sim_data_elim:
+            elim_rows.append({
+                "#": sim_data_elim.index(r) + 1,
+                "Nation": f"{flag_img(r['code'])} {r['fr']}",
+                "Poule": r["group"],
+                "Élim. Poules": f"{r['elim_group']:.1f}%",
+                "Élim. 1/32": f"{r['elim_r32']:.1f}%",
+                "Élim. 1/16": f"{r['elim_r16']:.1f}%",
+                "Élim. 1/4": f"{r['elim_qf']:.1f}%",
+                "Élim. 1/2": f"{r['elim_sf']:.1f}%",
+                "Élim. Finale": f"{r['elim_final']:.1f}%",
+                "🏆 Titre": f"{r['p_winner']:.1f}%",
+            })
+
+        st.markdown(
+            pd.DataFrame(elim_rows).to_html(escape=False, index=False),
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("---")
+        st.subheader("Top 20 — Répartition des stades d'élimination")
+        import plotly.graph_objects as go_elim
+        top20_elim = sim_data_elim[:20]
+        fig_elim = go_elim.Figure()
+        stage_colors = {
+            "Poules": "#d62728", "1/32": "#ff7f0e", "1/16": "#ffbb78",
+            "1/4": "#98df8a", "1/2": "#2ca02c", "Finale": "#1f77b4", "Titre": "#FFD700",
+        }
+        for stage_name, key in [
+            ("Poules", "elim_group"), ("1/32", "elim_r32"), ("1/16", "elim_r16"),
+            ("1/4", "elim_qf"), ("1/2", "elim_sf"), ("Finale", "elim_final"),
+            ("Titre", "p_winner"),
+        ]:
+            fig_elim.add_trace(go_elim.Bar(
+                y=[r["fr"] for r in reversed(top20_elim)],
+                x=[r[key] for r in reversed(top20_elim)],
+                name=stage_name,
+                orientation="h",
+                marker_color=stage_colors[stage_name],
+            ))
+        fig_elim.update_layout(
+            barmode="stack",
+            xaxis_title="Répartition (%)",
+            height=600, margin=dict(l=0, r=50),
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+        )
+        st.plotly_chart(fig_elim, use_container_width=True)
 
     with tab_matches:
         st.subheader("Probabilités 1X2 — Tous les matchs de poules")

@@ -552,6 +552,7 @@ _PAGE_LIST = [
     "🌍 Effectifs CM 2026",
     "🏅 Classement ELO",
     "🔮 Prédictions",
+    "🔬 Backtest V8",
     "📊 Suivi des paris",
     "🤖 Assistant IA",
 ]
@@ -572,7 +573,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "📊 Suivi des paris"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📊 Suivi des paris"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -2379,6 +2380,291 @@ elif page == "🔮 Prédictions":
                     pd.DataFrame(all_rows).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "🔬 Backtest V8":
+    from backtest_engine import build_backtest_dataset, run_backtest, compute_metrics, DEFAULT_PARAMS
+    import plotly.graph_objects as _go_bt
+    import numpy as np
+
+    st.header("🔬 Backtest V8 — Calibration du modèle")
+    st.caption(
+        "Ajustez les paramètres du modèle V8 et observez l'impact en temps réel sur 136 matchs historiques "
+        "(WC 2022, Euro 2024, Copa 2024). Objectif : se rapprocher au maximum des cotes de clôture Pinnacle."
+    )
+
+    with st.expander("📖 Lexique — Notions techniques", expanded=False):
+        st.markdown("""
+**Brier Score** — Mesure la précision d'une prédiction probabiliste. C'est la moyenne des carrés des écarts entre les probabilités prédites et le résultat réel (0 ou 1).
+- Formule : `(p_prédit − résultat)²` moyenné sur toutes les issues (1/X/2)
+- **Plus c'est bas, mieux c'est** (0 = parfait, 2 = pire possible)
+- Exemple : si on prédit 70% victoire dom. et le dom. gagne → Brier = (0.70−1)² + (0.15−0)² + (0.15−0)² = 0.135
+
+**Log Loss** — Mesure similaire au Brier mais pénalise beaucoup plus les erreurs de confiance élevée. Si vous prédisez 95% pour une issue qui ne se produit pas, la pénalité est sévère.
+- **Plus c'est bas, mieux c'est** (0 = parfait)
+- Plus sensible que le Brier aux erreurs "confiantes"
+
+**Divergence absolue** — Écart moyen en cotes décimales entre V8 et Pinnacle. Par exemple, V8 donne 2.50 et Pin donne 2.30 → divergence = 0.20.
+- **Plus c'est bas, plus on est proche de Pinnacle**
+
+**Divergence en %** — Même concept mais en pourcentage relatif : `(cote_V8 / cote_Pin − 1) × 100`. Utile pour comparer des écarts sur des cotes de magnitudes différentes.
+
+**Précision (%)** — Pourcentage de matchs où l'issue la plus probable selon V8 correspond au résultat réel.
+- ⚠️ Attention : une précision de 50% ne veut pas dire que le modèle est mauvais — au football, même le meilleur modèle ne dépasse guère 55% car les nuls et surprises sont fréquents.
+
+**Proximité ±0.10 / ±0.20 / ±0.50** — Pourcentage d'issues (1/X/2) où notre cote V8 est à moins de 0.10, 0.20 ou 0.50 de la cote Pinnacle. Plus c'est haut, plus on "colle" au marché.
+        """)
+
+    @st.cache_data(ttl=86400)
+    def _cached_bt_dataset():
+        return build_backtest_dataset()
+
+    bt_dataset = _cached_bt_dataset()
+    bt_with_pin = [m for m in bt_dataset if m["pin_h"] > 0 and m["pin_d"] > 0 and m["pin_a"] > 0]
+
+    st.subheader("⚙️ Paramètres du modèle")
+
+    st.markdown("**Paramètres de base (Sigmoid V7)**")
+    _help_scale = "Contrôle la sensibilité au Δ ELO. Plus c'est élevé, plus la courbe est douce (moins de différence entre favori et outsider)."
+    _help_draw_base = "Pourcentage de nul de base quand le Δ ELO est nul. Plus c'est haut, plus le modèle prédit de nuls."
+    _help_d_half = "Vitesse de décroissance du nul quand le Δ ELO augmente. Plus c'est bas, plus vite le nul diminue avec l'écart."
+    _help_power = "Exposant de la courbe de décroissance du nul. Plus c'est élevé, plus la transition est abrupte."
+    _help_quality = "Ajustement qualité : modifie le % de nul selon le niveau moyen des équipes. Négatif = moins de nuls entre top teams."
+
+    bc1, bc2, bc3 = st.columns(3)
+    p_scale = bc1.slider("SCALE", 200.0, 800.0, DEFAULT_PARAMS["scale"], 0.1, help=_help_scale, key="bt_scale")
+    p_draw_base = bc2.slider("DRAW_BASE (%)", 15.0, 40.0, DEFAULT_PARAMS["draw_base"], 0.1, help=_help_draw_base, key="bt_draw_base")
+    p_d_half = bc3.slider("D_HALF", 100.0, 1000.0, DEFAULT_PARAMS["d_half"], 1.0, help=_help_d_half, key="bt_d_half")
+    bc4, bc5 = st.columns(2)
+    p_power = bc4.slider("POWER", 1.0, 5.0, DEFAULT_PARAMS["power"], 0.1, help=_help_power, key="bt_power")
+    p_quality = bc5.slider("QUALITY", -3.0, 1.0, DEFAULT_PARAMS["quality"], 0.05, help=_help_quality, key="bt_quality")
+
+    st.markdown("---")
+    st.markdown("**Ajustements V8 — Draw Boost**")
+    _help_db_close = "Boost du nul (en points de %) quand le Δ ELO < 100. Les matchs serrés produisent plus de nuls."
+    _help_db_mid = "Boost du nul quand 100 ≤ Δ ELO < 200."
+    _help_db_ko = "Boost supplémentaire du nul en phase KO (les équipes jouent plus prudemment)."
+    _help_db_max = "Plafond maximal du draw boost cumulé."
+
+    dc1, dc2, dc3, dc4 = st.columns(4)
+    p_db_close = dc1.slider("DB_CLOSE", 0.0, 15.0, DEFAULT_PARAMS["db_close"], 0.5, help=_help_db_close, key="bt_db_close")
+    p_db_mid = dc2.slider("DB_MID", 0.0, 10.0, DEFAULT_PARAMS["db_mid"], 0.5, help=_help_db_mid, key="bt_db_mid")
+    p_db_ko = dc3.slider("DB_KO", 0.0, 15.0, DEFAULT_PARAMS["db_ko"], 0.5, help=_help_db_ko, key="bt_db_ko")
+    p_db_max = dc4.slider("DB_MAX", 0.0, 20.0, DEFAULT_PARAMS["db_max"], 0.5, help=_help_db_max, key="bt_db_max")
+
+    st.markdown("---")
+    st.markdown("**Ajustements V8 — Favori Boost**")
+    _help_fb_group = "Boost du favori en phase de groupes (en points de %) quand le Δ ELO dépasse le seuil. Les gros favoris surperforment en poules."
+    _help_fb_ko = "Boost du favori en phase KO. Généralement plus faible qu'en groupes car les outsiders résistent mieux en KO."
+    _help_fav_thr = "Seuil de Δ ELO à partir duquel le boost favori s'active."
+
+    fc1, fc2, fc3 = st.columns(3)
+    p_fb_group = fc1.slider("FAV_GROUP", 0.0, 15.0, DEFAULT_PARAMS["fb_group"], 0.5, help=_help_fb_group, key="bt_fb_group")
+    p_fb_ko = fc2.slider("FAV_KO", 0.0, 10.0, DEFAULT_PARAMS["fb_ko"], 0.5, help=_help_fb_ko, key="bt_fb_ko")
+    p_fav_thr = fc3.slider("FAV_SEUIL Δ", 100, 600, int(DEFAULT_PARAMS["fav_threshold"]), 10, help=_help_fav_thr, key="bt_fav_thr")
+
+    current_params = {
+        "scale": p_scale, "draw_base": p_draw_base, "d_half": p_d_half,
+        "power": p_power, "quality": p_quality,
+        "db_close": p_db_close, "db_mid": p_db_mid, "db_ko": p_db_ko, "db_max": p_db_max,
+        "fb_group": p_fb_group, "fb_ko": p_fb_ko, "fav_threshold": p_fav_thr,
+    }
+
+    is_default = all(abs(current_params[k] - DEFAULT_PARAMS[k]) < 0.01 for k in DEFAULT_PARAMS)
+
+    bt_results = run_backtest(bt_dataset, current_params)
+    bt_metrics = compute_metrics(bt_results)
+
+    if not is_default:
+        bt_results_default = run_backtest(bt_dataset, DEFAULT_PARAMS)
+        bt_metrics_default = compute_metrics(bt_results_default)
+
+    st.markdown("---")
+    st.subheader("📊 Résultats du backtest")
+
+    def _delta_str(val, ref, lower_is_better=True):
+        diff = val - ref
+        if abs(diff) < 0.0001:
+            return ""
+        arrow = "↓" if diff < 0 else "↑"
+        color = "green" if (diff < 0 and lower_is_better) or (diff > 0 and not lower_is_better) else "red"
+        return f" :{color}[{arrow} {abs(diff):.4f}]"
+
+    st.markdown("##### Métriques globales")
+    _h_brier = "Erreur quadratique moyenne des probabilités prédites. Plus c'est bas, mieux c'est. Référence : un modèle naïf (33/33/33) donne ~0.667."
+    _h_ll = "Pénalise les prédictions confiantes et fausses. Plus c'est bas, mieux c'est."
+    _h_acc = "% de matchs où l'issue la plus probable V8 correspond au résultat réel."
+
+    mg1, mg2, mg3, mg4 = st.columns(4)
+    mg1.metric("📐 Matchs analysés", bt_metrics["n_matches"])
+    _brier_delta = ""
+    if not is_default:
+        _brier_delta = f"{bt_metrics['brier_v8'] - bt_metrics_default['brier_v8']:+.4f}"
+    mg2.metric("📉 Brier Score V8", f"{bt_metrics['brier_v8']:.4f}", _brier_delta or None, delta_color="inverse", help=_h_brier)
+    _ll_delta = ""
+    if not is_default:
+        _ll_delta = f"{bt_metrics['log_loss_v8'] - bt_metrics_default['log_loss_v8']:+.4f}"
+    mg3.metric("📉 Log Loss V8", f"{bt_metrics['log_loss_v8']:.4f}", _ll_delta or None, delta_color="inverse", help=_h_ll)
+    _acc_delta = ""
+    if not is_default:
+        _acc_delta = f"{bt_metrics['accuracy'] - bt_metrics_default['accuracy']:+.1f}%"
+    mg4.metric("🎯 Précision", f"{bt_metrics['accuracy']:.1f}%", _acc_delta or None, help=_h_acc)
+
+    if bt_metrics.get("n_with_pin"):
+        st.markdown("##### V8 vs Pinnacle Closing")
+        st.caption(f"Comparaison sur {bt_metrics['n_with_pin']} matchs avec cotes Pinnacle disponibles")
+
+        _h_brier_cmp = "Brier Score comparé : V8 vs Pinnacle. Si V8 < Pinnacle, notre modèle est plus précis que le marché."
+        _h_div = "Écart moyen absolu entre cotes V8 et Pinnacle (en cotes décimales). Plus c'est bas, plus on colle au marché."
+        _h_div_pct = "Même écart mais en % relatif. Utile pour comparer des écarts sur des cotes de magnitudes différentes."
+
+        vp1, vp2, vp3, vp4 = st.columns(4)
+        _b_v8 = bt_metrics["brier_v8_sub"]
+        _b_pin = bt_metrics["brier_pin"]
+        _beat = "✅" if _b_v8 < _b_pin else "❌"
+        vp1.metric(f"Brier V8 {_beat}", f"{_b_v8:.4f}", help=_h_brier_cmp)
+        vp2.metric("Brier Pinnacle", f"{_b_pin:.4f}")
+
+        _dv_delta = ""
+        if not is_default:
+            _dv_delta = f"{bt_metrics['div_abs_mean'] - bt_metrics_default['div_abs_mean']:+.3f}"
+        vp3.metric("📏 Div. moy. |absolue|", f"{bt_metrics['div_abs_mean']:.3f}", _dv_delta or None, delta_color="inverse", help=_h_div)
+
+        _dvp_delta = ""
+        if not is_default:
+            _dvp_delta = f"{bt_metrics['div_pct_abs_mean'] - bt_metrics_default['div_pct_abs_mean']:+.2f}%"
+        vp4.metric("📏 Div. moy. |%|", f"{bt_metrics['div_pct_abs_mean']:.2f}%", _dvp_delta or None, delta_color="inverse", help=_h_div_pct)
+
+        st.markdown("##### Proximité V8 ↔ Pinnacle")
+        st.caption("Pourcentage d'issues (1/X/2) où notre cote V8 est proche de Pinnacle. Plus c'est haut, mieux c'est.")
+        _total_o = bt_metrics["total_outcomes"]
+        px1, px2, px3, px4 = st.columns(4)
+
+        def _prox_delta(key):
+            if is_default:
+                return None
+            diff = bt_metrics[key] / _total_o * 100 - bt_metrics_default[key] / bt_metrics_default["total_outcomes"] * 100
+            if abs(diff) < 0.01:
+                return None
+            return f"{diff:+.1f}%"
+
+        px1.metric("À ±0.10", f"{bt_metrics['close_010']}/{_total_o} ({bt_metrics['close_010']/_total_o*100:.1f}%)", _prox_delta("close_010"))
+        px2.metric("À ±0.20", f"{bt_metrics['close_020']}/{_total_o} ({bt_metrics['close_020']/_total_o*100:.1f}%)", _prox_delta("close_020"))
+        px3.metric("À ±0.50", f"{bt_metrics['close_050']}/{_total_o} ({bt_metrics['close_050']/_total_o*100:.1f}%)", _prox_delta("close_050"))
+        px4.metric("À ±1.00", f"{bt_metrics['close_100']}/{_total_o} ({bt_metrics['close_100']/_total_o*100:.1f}%)", _prox_delta("close_100"))
+
+    st.markdown("---")
+    st.markdown("##### Détail par compétition")
+    comp_rows = []
+    for comp, data in bt_metrics.get("by_comp", {}).items():
+        row = {"Compétition": comp, "Matchs": data["n"], "Brier": data["brier"], "Précision": f"{data['accuracy']}%"}
+        if "div_abs" in data:
+            row["|Div.| moy."] = data["div_abs"]
+        comp_rows.append(row)
+    if comp_rows:
+        st.dataframe(pd.DataFrame(comp_rows), hide_index=True, use_container_width=True)
+
+    st.markdown("##### Détail par phase")
+    phase_rows = []
+    for phase, data in bt_metrics.get("by_phase", {}).items():
+        phase_rows.append({"Phase": phase, "Matchs": data["n"], "Brier": data["brier"], "Précision": f"{data['accuracy']}%"})
+    if phase_rows:
+        st.dataframe(pd.DataFrame(phase_rows), hide_index=True, use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("📋 Détail par match")
+    st.caption("Cliquez sur une colonne pour trier. Les matchs avec cotes Pinnacle montrent les divergences.")
+
+    _bt_filter_comp = st.multiselect("Filtrer par compétition", ["WC2022", "EURO2024", "COPA2024"], default=["WC2022", "EURO2024", "COPA2024"], key="bt_fcomp")
+    _bt_filter_phase = st.radio("Phase", ["Tout", "Groupes", "KO"], horizontal=True, key="bt_fphase")
+
+    filtered = bt_results
+    if _bt_filter_comp:
+        filtered = [r for r in filtered if r["comp"] in _bt_filter_comp]
+    if _bt_filter_phase == "Groupes":
+        filtered = [r for r in filtered if r["phase"] == "G"]
+    elif _bt_filter_phase == "KO":
+        filtered = [r for r in filtered if r["phase"] == "K"]
+
+    detail_rows = []
+    for r in filtered:
+        row = {
+            "Comp.": r["comp"],
+            "Phase": "Gr." if r["phase"] == "G" else "KO",
+            "Match": f"{r['home']} vs {r['away']}",
+            "Rés.": r["result"],
+            "Δ ELO": r["delta"],
+            "V8 1": round(r["v8_h"], 2),
+            "V8 X": round(r["v8_d"], 2),
+            "V8 2": round(r["v8_a"], 2),
+            "Brier": round(r["brier"], 3),
+        }
+        if r["has_pin"]:
+            row["Pin 1"] = r["pin_h"]
+            row["Pin X"] = r["pin_d"]
+            row["Pin 2"] = r["pin_a"]
+            row["Div 1"] = round(r["div_h"], 2) if r["div_h"] is not None else ""
+            row["Div X"] = round(r["div_d"], 2) if r["div_d"] is not None else ""
+            row["Div 2"] = round(r["div_a"], 2) if r["div_a"] is not None else ""
+        else:
+            row["Pin 1"] = "—"
+            row["Pin X"] = "—"
+            row["Pin 2"] = "—"
+            row["Div 1"] = "—"
+            row["Div X"] = "—"
+            row["Div 2"] = "—"
+        detail_rows.append(row)
+
+    if detail_rows:
+        st.dataframe(pd.DataFrame(detail_rows), hide_index=True, use_container_width=True, height=500)
+
+    st.markdown("---")
+    st.subheader("📈 Distribution des divergences")
+    if bt_metrics.get("n_with_pin"):
+        with_pin_results = [r for r in bt_results if r["has_pin"]]
+        all_divs_plot = []
+        for r in with_pin_results:
+            if r["div_h"] is not None:
+                all_divs_plot.append({"Issue": "Domicile (1)", "Divergence": r["div_h"]})
+            if r["div_d"] is not None:
+                all_divs_plot.append({"Issue": "Nul (X)", "Divergence": r["div_d"]})
+            if r["div_a"] is not None:
+                all_divs_plot.append({"Issue": "Extérieur (2)", "Divergence": r["div_a"]})
+
+        df_divs = pd.DataFrame(all_divs_plot)
+        fig_hist = px.histogram(
+            df_divs, x="Divergence", color="Issue", nbins=40,
+            title="Distribution des divergences V8 − Pinnacle (en cotes)",
+            barmode="overlay", opacity=0.6,
+            color_discrete_map={"Domicile (1)": "#2196F3", "Nul (X)": "#FF9800", "Extérieur (2)": "#4CAF50"},
+        )
+        fig_hist.add_vline(x=0, line_dash="dash", line_color="red", annotation_text="Aligné")
+        fig_hist.update_layout(height=400, xaxis_title="Divergence (cote V8 − cote Pin)", yaxis_title="Nombre d'issues")
+        st.plotly_chart(fig_hist, use_container_width=True)
+        st.caption("La ligne rouge représente l'alignement parfait (divergence = 0). Une distribution centrée sur 0 signifie que V8 ne sur- ni sous-estime systématiquement.")
+
+        abs_div_by_delta = []
+        for r in with_pin_results:
+            avg_abs = np.mean([abs(r["div_h"]), abs(r["div_d"]), abs(r["div_a"])])
+            abs_div_by_delta.append({"Δ ELO (absolu)": abs(r["delta"]), "Div. moy. |absolue|": avg_abs})
+        df_scatter = pd.DataFrame(abs_div_by_delta)
+        fig_scatter = px.scatter(
+            df_scatter, x="Δ ELO (absolu)", y="Div. moy. |absolue|",
+            title="Divergence vs Δ ELO — Où V8 diverge le plus ?",
+        )
+        fig_scatter.update_layout(height=400)
+        st.plotly_chart(fig_scatter, use_container_width=True)
+        st.caption("Plus le Δ ELO est élevé (matchs déséquilibrés), plus V8 tend à diverger de Pinnacle. C'est le maillon faible actuel du modèle.")
+    else:
+        st.info("Aucune cote Pinnacle disponible dans le dataset pour les graphiques de divergence.")
+
+    if not is_default:
+        st.markdown("---")
+        st.info(
+            "💡 **Paramètres modifiés** — Les deltas affichés (↑↓ en vert/rouge) comparent vos paramètres actuels "
+            "aux paramètres V8 par défaut. Vert = amélioration, Rouge = dégradation."
+        )
 
 
 # ═══════════════════════════════════════════════════════════════════

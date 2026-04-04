@@ -87,6 +87,7 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
   - **Calendrier CDM 2026**: World Cup 2026 match calendar with multi-bookmaker 1X2 odds (Pinnacle, Betfair, Unibet FR, PMU), outright winner odds, phase filtering
   - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
   - **Prédictions**: Monte Carlo simulation (Buchdahl 1X2 model calibrated on Pinnacle) — global rankings, group stage probabilities, match-by-match 1X2 predictions with fair odds, value detection vs Pinnacle live lines
+  - **Backtest V8**: Interactive backtesting of V8 model on 136 historical matches (WC2022, Euro2024, Copa2024) with adjustable parameters (sliders), real-time Brier/LogLoss/divergence metrics vs Pinnacle closing, proximity analysis, per-competition/phase breakdown, match detail table, divergence histogram & scatter charts, technical lexicon
 
 ## WC 2026 Simulator (`wc_simulator.py`)
 
@@ -98,6 +99,15 @@ Monte Carlo engine for FIFA World Cup 2026 predictions.
 - Calibrated on 79 points (19 WC2026 + 59 WC2022 Pinnacle + anchor): RMSE=5.76%
 - Smooth draw decline: Δ=0→27.9%, Δ=200→25.5%, Δ=400→19%, Δ=542→13.7%
 - Backtest WC 2022 (63 matchs): Brier=0.595 vs Pinnacle=0.597, ROI=+20.1% flat betting
+- V8 full backtest (136 matchs WC2022+EURO2024+COPA2024): Brier V8=0.5751 vs Pinnacle=0.5820, accuracy=51.5%, avg |div|=0.989 cotes
+
+### Backtest Engine (`backtest_engine.py`)
+- Hardcoded historical ELO + Pinnacle closing odds for WC2022, EURO2024, COPA2024 (136 matches total)
+- `_sigmoid_custom()`: parametric V8 model with all 12 adjustable constants
+- `build_backtest_dataset()`: loads matches + Pinnacle odds from embedded data + historical_odds.json
+- `run_backtest(matches, params)`: runs model on dataset, returns per-match Brier/LogLoss/divergences
+- `compute_metrics(results)`: aggregates global + per-comp + per-phase metrics
+- `DEFAULT_PARAMS`: V8 production defaults
 - Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
 
 ### Simulation Pipeline

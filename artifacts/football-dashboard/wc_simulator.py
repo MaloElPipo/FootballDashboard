@@ -46,8 +46,8 @@ R32_BRACKET = [
 ]
 
 R16_PAIRINGS = [
-    (73, 74), (75, 76), (77, 78), (79, 80),
-    (81, 82), (83, 84), (85, 86), (87, 88),
+    (74, 77), (73, 75), (83, 84), (81, 82),
+    (76, 78), (79, 80), (86, 88), (85, 87),
 ]
 
 QF_PAIRINGS = [
@@ -224,15 +224,55 @@ def _pick_best_thirds(group_results, n=8):
     return thirds[:n]
 
 
-def _resolve_3rd_slot(slot_groups, qualified_thirds):
-    qualified_group_letters = sorted([t[0] for t in qualified_thirds])
-    for t in qualified_thirds:
-        grp_letter = t[0]
-        if grp_letter in slot_groups.split("/"):
-            return t[1]
-    for t in qualified_thirds:
-        return t[1]
-    return None
+THIRD_PLACE_SLOTS = [
+    {"match": 74, "allowed": "A/B/C/D/F"},
+    {"match": 77, "allowed": "C/D/F/G/H"},
+    {"match": 79, "allowed": "C/E/F/H/I"},
+    {"match": 80, "allowed": "E/H/I/J/K"},
+    {"match": 81, "allowed": "B/E/F/I/J"},
+    {"match": 82, "allowed": "A/E/H/I/J"},
+    {"match": 85, "allowed": "E/F/G/I/J"},
+    {"match": 87, "allowed": "D/E/I/J/L"},
+]
+
+
+def _assign_thirds_to_slots(qualified_thirds):
+    third_by_group = {t[0]: t[1] for t in qualified_thirds}
+    qualifying_groups = sorted(third_by_group.keys())
+    slots = THIRD_PLACE_SLOTS
+    n = len(slots)
+
+    def backtrack(idx, assignment):
+        if idx == n:
+            return dict(assignment)
+        slot = slots[idx]
+        allowed = slot["allowed"].split("/")
+        for grp in allowed:
+            if grp in qualifying_groups and grp not in [a[1] for a in assignment]:
+                if grp in third_by_group:
+                    assignment.append((slot["match"], grp))
+                    result = backtrack(idx + 1, assignment)
+                    if result is not None:
+                        return result
+                    assignment.pop()
+        return None
+
+    result = backtrack(0, [])
+    if result is None:
+        result = {}
+        used = set()
+        for slot in slots:
+            allowed = slot["allowed"].split("/")
+            for grp in allowed:
+                if grp in third_by_group and grp not in used:
+                    result[slot["match"]] = grp
+                    used.add(grp)
+                    break
+
+    assignment = {}
+    for match_num, grp in result.items():
+        assignment[match_num] = third_by_group[grp]
+    return assignment
 
 
 def simulate_tournament(elo_map, params=None):
@@ -301,6 +341,8 @@ def simulate_tournament(elo_map, params=None):
         group_winners[grp_letter] = ranked[0][0]
         group_runners[grp_letter] = ranked[1][0]
 
+    third_assignments = _assign_thirds_to_slots(best_thirds)
+
     r32_results = {}
     for slot in R32_BRACKET:
         mn = slot["match"]
@@ -312,7 +354,7 @@ def simulate_tournament(elo_map, params=None):
         elif h_type == "2":
             h_code = group_runners[h_grp]
         elif h_type == "3rd":
-            h_code = _resolve_3rd_slot(h_grp, best_thirds)
+            h_code = third_assignments.get(mn, "UNK")
         else:
             h_code = group_winners.get(h_grp, "UNK")
 
@@ -321,7 +363,7 @@ def simulate_tournament(elo_map, params=None):
         elif a_type == "2":
             a_code = group_runners[a_grp]
         elif a_type == "3rd":
-            a_code = _resolve_3rd_slot(a_grp, best_thirds)
+            a_code = third_assignments.get(mn, "UNK")
         else:
             a_code = group_winners.get(a_grp, "UNK")
 

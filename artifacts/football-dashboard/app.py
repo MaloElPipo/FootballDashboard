@@ -2853,18 +2853,137 @@ elif page == "🔬 Backtest V8":
 
     if use_dynamic_elo and _final_elo:
         st.markdown("---")
-        st.subheader("📈 ELO Dynamiques — Classement final")
-        st.caption("ELO après mise à jour match par match sur l'ensemble du backtest. Reflète la trajectoire historique de chaque équipe.")
+        st.subheader("📈 ELO Dynamiques — Classement final (CDM 2026)")
+        st.caption("ELO après mise à jour match par match sur l'ensemble du backtest. Seules les 48 nations qualifiées pour la CDM 2026 sont affichées.")
+
+        from nations_data import get_all_nations as _get_all_nations_bt
+        _wc_codes = {n["code"] for n in _get_all_nations_bt()}
+        _wc_name_to_code = {}
+        for n in _get_all_nations_bt():
+            _wc_name_to_code[n["name"]] = n["code"]
+            _wc_name_to_code[n["fr"]] = n["code"]
 
         sorted_elo = sorted(_final_elo.items(), key=lambda x: -x[1])
         elo_rows = []
-        for rank, (team, elo) in enumerate(sorted_elo[:40], 1):
-            elo_rows.append({"#": rank, "Équipe": team, "ELO dynamique": round(elo, 1)})
-        import pandas as pd
+        for team, elo in sorted_elo:
+            team_code = _wc_name_to_code.get(team)
+            if team_code and team_code in _wc_codes:
+                elo_rows.append({"#": len(elo_rows) + 1, "Équipe": team, "ELO dynamique": round(elo, 1)})
+
         _elo_c1, _elo_c2 = st.columns(2)
         half = len(elo_rows) // 2
         _elo_c1.dataframe(pd.DataFrame(elo_rows[:half]), hide_index=True, use_container_width=True)
         _elo_c2.dataframe(pd.DataFrame(elo_rows[half:]), hide_index=True, use_container_width=True)
+
+    st.markdown("---")
+    st.subheader("📡 Test V8 + ELO Pinnacle vs Pinnacle WC2026")
+    st.caption("Divergence entre le modèle V8 (avec les ELO calibrés Pinnacle) et les cotes Pinnacle live sur les matchs CDM 2026 déjà cotés.")
+
+    from elo_engine import load_pin_calibrated_elo as _load_pin_bt, compute_all_nations_elo as _compute_elo_bt, fetch_elorating_base as _fetch_base_bt
+    _pin_data_bt = _load_pin_bt()
+    if _pin_data_bt and _pin_data_bt.get("elo"):
+        import os as _os_bt
+        _ODDS_KEY_BT = _os_bt.environ.get("ODDS_API_KEY", "")
+        try:
+            _r_bt = requests.get(
+                "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/",
+                params={"apiKey": _ODDS_KEY_BT, "regions": "eu", "markets": "h2h",
+                        "bookmakers": "pinnacle", "oddsFormat": "decimal"},
+                timeout=15,
+            )
+            _pin_live = _r_bt.json() if _r_bt.status_code == 200 else []
+        except Exception:
+            _pin_live = []
+
+        if _pin_live:
+            from backtest_engine import _sigmoid_custom as _sig_bt
+            from elo_engine import ODDS_API_TO_FIFA as _OAF
+
+            _base_bt = _fetch_base_bt()
+            _elo_sys = _compute_elo_bt(elorating_base=_base_bt, pin_weight=0, forced_weight=0)
+            _elo_pin = _compute_elo_bt(elorating_base=_base_bt, pin_weight=1.0, forced_weight=0)
+            _sys_map = {r["code"]: r["elo"] for r in _elo_sys}
+            _pin_map = {r["code"]: r["elo"] for r in _elo_pin}
+
+            _divs_sys, _divs_pin = [], []
+            _test_rows = []
+            for _m in _pin_live:
+                _bms = _m.get("bookmakers", [])
+                if not _bms:
+                    continue
+                _oc = {o["name"]: o["price"] for o in _bms[0]["markets"][0]["outcomes"]}
+                _ph = _oc.get(_m["home_team"], 0)
+                _pd = _oc.get("Draw", 0)
+                _pa = _oc.get(_m["away_team"], 0)
+                if not _ph or not _pd or not _pa:
+                    continue
+                _ch = _OAF.get(_m["home_team"])
+                _ca = _OAF.get(_m["away_team"])
+                if not _ch or not _ca:
+                    continue
+
+                for _label, _emap, _divs in [("Système", _sys_map, _divs_sys), ("Pinnacle", _pin_map, _divs_pin)]:
+                    _eh = _emap.get(_ch, 1500)
+                    _ea = _emap.get(_ca, 1500)
+                    _d = _eh - _ea
+                    _avg = (_eh + _ea) / 2
+                    _p1, _px, _p2 = _sig_bt(
+                        _d, current_params["scale"], current_params["draw_base"],
+                        current_params["d_half"], current_params["power"], current_params["quality"],
+                        elo_avg=_avg, phase="G",
+                        db_close=current_params["db_close"], db_mid=current_params["db_mid"],
+                        db_ko=current_params["db_ko"], db_max=current_params["db_max"],
+                        fb_group=current_params["fb_group"], fb_ko=current_params["fb_ko"],
+                        fav_threshold=current_params["fav_threshold"],
+                    )
+                    _v8h, _v8d, _v8a = 1/_p1, 1/_px, 1/_p2
+                    for _v8, _pin in [(_v8h, _ph), (_v8d, _pd), (_v8a, _pa)]:
+                        _divs.append(abs(_v8/_pin - 1) * 100)
+
+                _eh_s = _sys_map.get(_ch, 1500)
+                _ea_s = _sys_map.get(_ca, 1500)
+                _eh_p = _pin_map.get(_ch, 1500)
+                _ea_p = _pin_map.get(_ca, 1500)
+                _p1s, _pxs, _p2s = _sig_bt(
+                    _eh_s - _ea_s, current_params["scale"], current_params["draw_base"],
+                    current_params["d_half"], current_params["power"], current_params["quality"],
+                    elo_avg=(_eh_s+_ea_s)/2, phase="G",
+                    db_close=current_params["db_close"], db_mid=current_params["db_mid"],
+                    db_ko=current_params["db_ko"], db_max=current_params["db_max"],
+                    fb_group=current_params["fb_group"], fb_ko=current_params["fb_ko"],
+                    fav_threshold=current_params["fav_threshold"])
+                _p1p, _pxp, _p2p = _sig_bt(
+                    _eh_p - _ea_p, current_params["scale"], current_params["draw_base"],
+                    current_params["d_half"], current_params["power"], current_params["quality"],
+                    elo_avg=(_eh_p+_ea_p)/2, phase="G",
+                    db_close=current_params["db_close"], db_mid=current_params["db_mid"],
+                    db_ko=current_params["db_ko"], db_max=current_params["db_max"],
+                    fb_group=current_params["fb_group"], fb_ko=current_params["fb_ko"],
+                    fav_threshold=current_params["fav_threshold"])
+
+                _n_h = get_nation_by_code(_ch)
+                _n_a = get_nation_by_code(_ca)
+                _test_rows.append({
+                    "Match": f"{_n_h['fr'] if _n_h else _ch} vs {_n_a['fr'] if _n_a else _ca}",
+                    "Pin 1": f"{_ph:.2f}", "Pin X": f"{_pd:.2f}", "Pin 2": f"{_pa:.2f}",
+                    "V8 Sys 1": f"{1/_p1s:.2f}", "V8 Sys X": f"{1/_pxs:.2f}", "V8 Sys 2": f"{1/_p2s:.2f}",
+                    "V8 Pin 1": f"{1/_p1p:.2f}", "V8 Pin X": f"{1/_pxp:.2f}", "V8 Pin 2": f"{1/_p2p:.2f}",
+                })
+
+            _tc1, _tc2 = st.columns(2)
+            _tc1.metric("Div% moy. (ELO Système)", f"{np.mean(_divs_sys):.1f}%")
+            _tc2.metric("Div% moy. (ELO Pinnacle)", f"{np.mean(_divs_pin):.1f}%")
+
+            _td1, _td2 = st.columns(2)
+            _td1.metric("Div% médiane (Système)", f"{np.median(_divs_sys):.1f}%")
+            _td2.metric("Div% médiane (Pinnacle)", f"{np.median(_divs_pin):.1f}%")
+
+            if _test_rows:
+                st.dataframe(pd.DataFrame(_test_rows), hide_index=True, use_container_width=True)
+        else:
+            st.warning("Impossible de récupérer les cotes Pinnacle live.")
+    else:
+        st.info("Aucune calibration Pinnacle disponible. Va dans Classement ELO → Recalibrer.")
 
 
 # ═══════════════════════════════════════════════════════════════════

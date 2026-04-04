@@ -2573,11 +2573,19 @@ elif page == "🔮 Prédictions":
                 f"Mise max : {bk_config['max_stake_pct']}% de la bankroll"
             )
 
+            from bet_tracker import add_bet as _add_bet_fn, load_bets as _load_bets_fn
+
             value_pos = [v for v in value_rows if v["ev"] >= 2 and v["odds_pin"] <= 10 and v["ecart"] > 2]
             value_pos.sort(key=lambda x: -x["ev"])
             if value_pos:
-                vr = []
-                for v in value_pos:
+                _existing_bets = _load_bets_fn()
+                _existing_keys = set()
+                for _eb in _existing_bets:
+                    _existing_keys.add((_eb.get("match", ""), _eb.get("side", "")))
+
+                _side_labels = {"1": "Dom.", "X": "Nul", "2": "Ext."}
+                total_kelly = 0
+                for _vi, v in enumerate(value_pos):
                     prob_dec = v["model_prob"] / 100
                     k_stake = kelly_stake(
                         prob_dec, v["odds_pin"], current_bank,
@@ -2585,27 +2593,41 @@ elif page == "🔮 Prédictions":
                         max_pct=bk_config["max_stake_pct"],
                         min_stake=bk_config["min_stake"],
                     )
-                    vr.append({
-                        "Match": v["match"],
-                        "Pari": v["side"],
-                        "Cote Pin.": f"{v['odds_pin']:.2f}",
-                        "Cote V8": f"{v['odds_mod']:.2f}",
-                        "Écart": _fmt_ec(v["ecart"]),
-                        "EV": _fmt_ev(v["ev"]),
-                        "Mise Kelly": f"{k_stake:.1f}{bt_s['unit']}" if k_stake > 0 else "—",
-                        "Confiance": _fmt_conf(v["ev"], v["ecart"], v["odds_pin"]),
-                    })
-                st.markdown(
-                    pd.DataFrame(vr).to_html(escape=False, index=False),
-                    unsafe_allow_html=True,
-                )
-                total_kelly = sum(
-                    kelly_stake(v["model_prob"]/100, v["odds_pin"], current_bank,
-                                fraction=bk_config["kelly_fraction"],
-                                max_pct=bk_config["max_stake_pct"],
-                                min_stake=bk_config["min_stake"])
-                    for v in value_pos
-                )
+                    total_kelly += k_stake
+
+                    _bet_key = (v["match"], _side_labels.get(v["side"], v["side"]))
+                    _already_tracked = _bet_key in _existing_keys
+
+                    _col_info, _col_btn = st.columns([5, 1])
+                    with _col_info:
+                        _conf_str = _fmt_conf(v["ev"], v["ecart"], v["odds_pin"])
+                        _kelly_str = f"{k_stake:.1f}{bt_s['unit']}" if k_stake > 0 else "—"
+                        st.markdown(
+                            f"**{v['match']}** · Pari **{v['side']}** · "
+                            f"Cote Pin. **{v['odds_pin']:.2f}** · V8 {v['odds_mod']:.2f} · "
+                            f"Écart {_fmt_ec(v['ecart'])} · EV {_fmt_ev(v['ev'])} · "
+                            f"Kelly {_kelly_str} · {_conf_str}",
+                            unsafe_allow_html=True,
+                        )
+                    with _col_btn:
+                        if _already_tracked:
+                            st.markdown("✅ Suivi")
+                        else:
+                            if st.button("📥 Suivi", key=f"add_bet_{_vi}", help="Ajouter ce pari au suivi des paris"):
+                                _new_bet = _add_bet_fn(
+                                    match=v["match"],
+                                    side=_side_labels.get(v["side"], v["side"]),
+                                    odds=v["odds_pin"],
+                                    stake=k_stake if k_stake > 0 else bk_config.get("min_stake", 1),
+                                    odds_v8=v["odds_mod"],
+                                    closing_odds_pin=v["odds_pin"],
+                                    notes=f"EV={v['ev']:.1f}% | Écart={v['ecart']:+.1f}% | Auto-ajouté depuis Prédictions",
+                                )
+                                st.success(f"✅ Pari ajouté ! #{_new_bet['id']} — {v['match']} {v['side']} @ {v['odds_pin']:.2f}")
+                                st.rerun()
+                    if _vi < len(value_pos) - 1:
+                        st.divider()
+
                 st.info(
                     f"💡 **{len(value_pos)} paris identifiés** · "
                     f"Exposition totale Kelly : {total_kelly:.1f}{bt_s['unit']} "

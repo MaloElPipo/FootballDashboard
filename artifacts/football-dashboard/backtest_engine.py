@@ -290,6 +290,29 @@ COMP_LABELS = {
 }
 
 
+OPTA_ELO = {
+    "Spain": 2197, "Argentina": 2158, "France": 2140, "England": 2064,
+    "Brazil": 2027, "Colombia": 2019, "Netherlands": 1994, "Portugal": 1964,
+    "Germany": 2040, "Croatia": 1899, "Belgium": 1897, "Uruguay": 1884,
+    "Morocco": 1879, "Japan": 1859, "Denmark": 1818, "Turkey": 1805,
+    "Norway": 1794, "Mexico": 1787, "Iran": 1773, "Senegal": 1768,
+    "Australia": 1759, "Paraguay": 1755, "Austria": 1753, "Ukraine": 1742,
+    "South Korea": 1741, "USA": 1714, "Algeria": 1697, "Scotland": 1669,
+    "Poland": 1667, "Uzbekistan": 1665, "Czech Republic": 1658,
+    "Slovakia": 1636, "Panama": 1627, "Tunisia": 1627, "Egypt": 1616,
+    "Ireland": 1584, "Sweden": 1575, "D.R. Congo": 1568, "South Africa": 1564,
+    "Romania": 1561, "Iraq": 1535, "Jordan": 1534, "Bolivia": 1532,
+    "Kosovo": 1526, "Albania": 1517, "Saudi Arabia": 1508,
+    "New Zealand": 1494, "Ghana": 1467, "North Macedonia": 1460,
+    "Jamaica": 1368, "Haiti": 1339, "Suriname": 1159,
+    "Ivory Coast": 1750, "Switzerland": 1915,
+    "Bosnia & Herzegovina": 1702, "Ecuador": 1830,
+    "Cape Verde": 1474, "Cabo Verde": 1474, "Curacao": 1375,
+    "Italy": 1945,
+}
+
+OPTA_WEIGHT = 0.2
+
 _IMPLIED_ELO_CACHE = None
 
 def _load_implied_elo():
@@ -311,14 +334,22 @@ def _resolve_elo(team_name, comp_elo_dict=None):
         return comp_elo_dict[team_name]
 
     implied = _load_implied_elo()
+    base_elo = None
+
     if team_name in implied:
-        return implied[team_name]
+        base_elo = implied[team_name]
+    else:
+        code = TEAM_NAME_TO_ELO_KEY.get(team_name)
+        if code and code in DEFAULT_ELO:
+            base_elo = DEFAULT_ELO[code]
 
-    code = TEAM_NAME_TO_ELO_KEY.get(team_name)
-    if code and code in DEFAULT_ELO:
-        return DEFAULT_ELO[code]
+    if base_elo is None:
+        base_elo = 1400
 
-    return 1400
+    if team_name in OPTA_ELO:
+        return base_elo * (1 - OPTA_WEIGHT) + OPTA_ELO[team_name] * OPTA_WEIGHT
+
+    return base_elo
 
 
 _YOUTH_SUFFIXES = (" U17", " U18", " U19", " U20", " U21", " U23")
@@ -520,6 +551,155 @@ def build_backtest_dataset():
     matches.extend(scraped)
 
     return matches
+
+
+ELO_K_FACTORS = {
+    "WC": 60,
+    "EURO": 50,
+    "COPA": 50,
+    "NL": 40,
+    "QUALIF": 35,
+    "FRIENDLY": 20,
+    "CAN": 40,
+    "GOLD_CUP": 40,
+    "CONCACAF_NL": 35,
+    "DEFAULT": 30,
+}
+
+COMP_TO_KTYPE = {
+    "WC2022": "WC",
+    "EURO2024": "EURO",
+    "COPA2024": "COPA",
+    "NL_22_23": "NL",
+    "NL_24_25": "NL",
+    "QUALIF_WC26": "QUALIF",
+    "FRIENDLY": "FRIENDLY",
+    "CAN2025": "CAN",
+    "GOLD_CUP_2025": "GOLD_CUP",
+    "CONCACAF_NL": "CONCACAF_NL",
+}
+
+
+def _elo_expected_score(elo_a, elo_b):
+    return 1.0 / (1.0 + 10.0 ** ((elo_b - elo_a) / 400.0))
+
+
+def _elo_actual_score(result, is_home):
+    if result == "H":
+        return 1.0 if is_home else 0.0
+    elif result == "A":
+        return 0.0 if is_home else 1.0
+    else:
+        return 0.5
+
+
+def update_elo_after_match(elo_h, elo_a, result, comp="DEFAULT", k_override=None):
+    k_type = COMP_TO_KTYPE.get(comp, "DEFAULT")
+    k = k_override if k_override is not None else ELO_K_FACTORS.get(k_type, ELO_K_FACTORS["DEFAULT"])
+
+    exp_h = _elo_expected_score(elo_h, elo_a)
+    exp_a = 1.0 - exp_h
+
+    actual_h = _elo_actual_score(result, True)
+    actual_a = 1.0 - actual_h
+
+    new_h = elo_h + k * (actual_h - exp_h)
+    new_a = elo_a + k * (actual_a - exp_a)
+    return round(new_h, 1), round(new_a, 1)
+
+
+def run_backtest_dynamic(matches, params, k_override=None):
+    live_elo = {}
+
+    for m in matches:
+        h, a = m["home"], m["away"]
+        if h not in live_elo:
+            live_elo[h] = m["elo_h"]
+        if a not in live_elo:
+            live_elo[a] = m["elo_a"]
+        m["elo_h_dynamic"] = live_elo[h]
+        m["elo_a_dynamic"] = live_elo[a]
+
+    results = []
+    for m in matches:
+        h, a = m["home"], m["away"]
+        elo_h = m["elo_h_dynamic"]
+        elo_a = m["elo_a_dynamic"]
+
+        delta = elo_h - elo_a
+        elo_avg = (elo_h + elo_a) / 2
+
+        p1, px, p2 = _sigmoid_custom(
+            delta, params["scale"], params["draw_base"], params["d_half"],
+            params["power"], params["quality"],
+            elo_avg=elo_avg, phase=m["phase"],
+            db_close=params["db_close"], db_mid=params["db_mid"],
+            db_ko=params["db_ko"], db_max=params["db_max"],
+            fb_group=params["fb_group"], fb_ko=params["fb_ko"],
+            fav_threshold=params["fav_threshold"],
+        )
+
+        v8_h = 1 / p1 if p1 > 0.001 else 999
+        v8_d = 1 / px if px > 0.001 else 999
+        v8_a = 1 / p2 if p2 > 0.001 else 999
+
+        actual = m["result"]
+        actual_vec = [1 if actual == "H" else 0, 1 if actual == "D" else 0, 1 if actual == "A" else 0]
+        brier = (p1 - actual_vec[0]) ** 2 + (px - actual_vec[1]) ** 2 + (p2 - actual_vec[2]) ** 2
+        eps = 1e-15
+        log_loss = -(
+            actual_vec[0] * math.log(max(p1, eps))
+            + actual_vec[1] * math.log(max(px, eps))
+            + actual_vec[2] * math.log(max(p2, eps))
+        )
+
+        pin_brier = None
+        pin_log_loss = None
+        div_h = div_d = div_a = None
+        has_pin = m["pin_h"] > 0 and m["pin_d"] > 0 and m["pin_a"] > 0
+        if has_pin:
+            margin = 1 / m["pin_h"] + 1 / m["pin_d"] + 1 / m["pin_a"]
+            pp1 = (1 / m["pin_h"]) / margin
+            ppx = (1 / m["pin_d"]) / margin
+            pp2 = (1 / m["pin_a"]) / margin
+            pin_brier = (pp1 - actual_vec[0]) ** 2 + (ppx - actual_vec[1]) ** 2 + (pp2 - actual_vec[2]) ** 2
+            pin_log_loss = -(
+                actual_vec[0] * math.log(max(pp1, eps))
+                + actual_vec[1] * math.log(max(ppx, eps))
+                + actual_vec[2] * math.log(max(pp2, eps))
+            )
+            div_h = v8_h - m["pin_h"]
+            div_d = v8_d - m["pin_d"]
+            div_a = v8_a - m["pin_a"]
+
+        correct_side = (
+            (actual == "H" and p1 >= px and p1 >= p2)
+            or (actual == "D" and px >= p1 and px >= p2)
+            or (actual == "A" and p2 >= p1 and p2 >= px)
+        )
+
+        results.append({
+            "comp": m["comp"], "phase": m["phase"],
+            "home": h, "away": a,
+            "result": actual,
+            "p1": p1, "px": px, "p2": p2,
+            "v8_h": v8_h, "v8_d": v8_d, "v8_a": v8_a,
+            "pin_h": m["pin_h"], "pin_d": m["pin_d"], "pin_a": m["pin_a"],
+            "brier": brier, "log_loss": log_loss,
+            "pin_brier": pin_brier, "pin_log_loss": pin_log_loss,
+            "div_h": div_h, "div_d": div_d, "div_a": div_a,
+            "has_pin": has_pin,
+            "correct": correct_side,
+            "delta": elo_h - elo_a,
+            "elo_h": elo_h, "elo_a": elo_a,
+            "ref_book": m.get("ref_book", ""),
+        })
+
+        new_h, new_a = update_elo_after_match(elo_h, elo_a, actual, m["comp"], k_override)
+        live_elo[h] = new_h
+        live_elo[a] = new_a
+
+    return results, live_elo
 
 
 def run_backtest(matches, params):
@@ -727,4 +907,19 @@ DEFAULT_PARAMS = {
     "fb_group": 5.0,
     "fb_ko": 2.0,
     "fav_threshold": 300,
+}
+
+V8PIN_PARAMS = {
+    "scale": 441.952,
+    "draw_base": 24.09,
+    "d_half": 463.648,
+    "power": 3.56,
+    "quality": 0.035,
+    "db_close": 4.312,
+    "db_mid": 2.555,
+    "db_ko": 3.37,
+    "db_max": 36.049,
+    "fb_group": -2.446,
+    "fb_ko": 2.746,
+    "fav_threshold": 380.332,
 }

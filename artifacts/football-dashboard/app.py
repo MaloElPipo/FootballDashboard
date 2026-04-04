@@ -2384,7 +2384,7 @@ elif page == "🔮 Prédictions":
 
 # ═══════════════════════════════════════════════════════════════════
 elif page == "🔬 Backtest V8":
-    from backtest_engine import build_backtest_dataset, run_backtest, compute_metrics, DEFAULT_PARAMS, ALL_COMPS, COMP_LABELS
+    from backtest_engine import build_backtest_dataset, run_backtest, run_backtest_dynamic, compute_metrics, DEFAULT_PARAMS, V8PIN_PARAMS, ALL_COMPS, COMP_LABELS
     import plotly.graph_objects as _go_bt
     import numpy as np
 
@@ -2427,44 +2427,51 @@ elif page == "🔬 Backtest V8":
 
     st.subheader("⚙️ Paramètres du modèle")
 
-    st.markdown("**Paramètres de base (Sigmoid V7)**")
-    _help_scale = "Contrôle la sensibilité au Δ ELO. Plus c'est élevé, plus la courbe est douce (moins de différence entre favori et outsider)."
-    _help_draw_base = "Pourcentage de nul de base quand le Δ ELO est nul. Plus c'est haut, plus le modèle prédit de nuls."
-    _help_d_half = "Vitesse de décroissance du nul quand le Δ ELO augmente. Plus c'est bas, plus vite le nul diminue avec l'écart."
-    _help_power = "Exposant de la courbe de décroissance du nul. Plus c'est élevé, plus la transition est abrupte."
-    _help_quality = "Ajustement qualité : modifie le % de nul selon le niveau moyen des équipes. Négatif = moins de nuls entre top teams."
+    _presets = {"V8-Pin (optimisé)": V8PIN_PARAMS, "V7 (défaut)": DEFAULT_PARAMS}
+    _pc1, _pc2 = st.columns([2, 2])
+    preset_choice = _pc1.radio("Preset", list(_presets.keys()), horizontal=True, index=0)
+    use_dynamic_elo = _pc2.toggle("ELO Dynamiques", value=False, help="Met à jour les ELO match par match pendant le backtest. Chaque résultat ajuste les forces relatives des équipes pour les matchs suivants.")
+    _active_preset = _presets[preset_choice]
 
-    bc1, bc2, bc3 = st.columns(3)
-    p_scale = bc1.slider("SCALE", 200.0, 800.0, DEFAULT_PARAMS["scale"], 0.1, help=_help_scale, key="bt_scale")
-    p_draw_base = bc2.slider("DRAW_BASE (%)", 15.0, 40.0, DEFAULT_PARAMS["draw_base"], 0.1, help=_help_draw_base, key="bt_draw_base")
-    p_d_half = bc3.slider("D_HALF", 100.0, 1000.0, DEFAULT_PARAMS["d_half"], 1.0, help=_help_d_half, key="bt_d_half")
-    bc4, bc5 = st.columns(2)
-    p_power = bc4.slider("POWER", 1.0, 5.0, DEFAULT_PARAMS["power"], 0.1, help=_help_power, key="bt_power")
-    p_quality = bc5.slider("QUALITY", -3.0, 1.0, DEFAULT_PARAMS["quality"], 0.05, help=_help_quality, key="bt_quality")
+    with st.expander("🔧 Ajuster les paramètres manuellement", expanded=False):
+        st.markdown("**Paramètres de base (Sigmoid V7)**")
+        _help_scale = "Contrôle la sensibilité au Δ ELO. Plus c'est élevé, plus la courbe est douce (moins de différence entre favori et outsider)."
+        _help_draw_base = "Pourcentage de nul de base quand le Δ ELO est nul. Plus c'est haut, plus le modèle prédit de nuls."
+        _help_d_half = "Vitesse de décroissance du nul quand le Δ ELO augmente. Plus c'est bas, plus vite le nul diminue avec l'écart."
+        _help_power = "Exposant de la courbe de décroissance du nul. Plus c'est élevé, plus la transition est abrupte."
+        _help_quality = "Ajustement qualité : modifie le % de nul selon le niveau moyen des équipes. Négatif = moins de nuls entre top teams."
 
-    st.markdown("---")
-    st.markdown("**Ajustements V8 — Draw Boost**")
-    _help_db_close = "Boost du nul (en points de %) quand le Δ ELO < 100. Les matchs serrés produisent plus de nuls."
-    _help_db_mid = "Boost du nul quand 100 ≤ Δ ELO < 200."
-    _help_db_ko = "Boost supplémentaire du nul en phase KO (les équipes jouent plus prudemment)."
-    _help_db_max = "Plafond maximal du draw boost cumulé."
+        bc1, bc2, bc3 = st.columns(3)
+        p_scale = bc1.slider("SCALE", 200.0, 800.0, _active_preset["scale"], 0.1, help=_help_scale, key="bt_scale")
+        p_draw_base = bc2.slider("DRAW_BASE (%)", 15.0, 40.0, _active_preset["draw_base"], 0.1, help=_help_draw_base, key="bt_draw_base")
+        p_d_half = bc3.slider("D_HALF", 100.0, 1000.0, _active_preset["d_half"], 1.0, help=_help_d_half, key="bt_d_half")
+        bc4, bc5 = st.columns(2)
+        p_power = bc4.slider("POWER", 1.0, 5.0, _active_preset["power"], 0.1, help=_help_power, key="bt_power")
+        p_quality = bc5.slider("QUALITY", -3.0, 1.0, _active_preset["quality"], 0.05, help=_help_quality, key="bt_quality")
 
-    dc1, dc2, dc3, dc4 = st.columns(4)
-    p_db_close = dc1.slider("DB_CLOSE", 0.0, 15.0, DEFAULT_PARAMS["db_close"], 0.5, help=_help_db_close, key="bt_db_close")
-    p_db_mid = dc2.slider("DB_MID", 0.0, 10.0, DEFAULT_PARAMS["db_mid"], 0.5, help=_help_db_mid, key="bt_db_mid")
-    p_db_ko = dc3.slider("DB_KO", 0.0, 15.0, DEFAULT_PARAMS["db_ko"], 0.5, help=_help_db_ko, key="bt_db_ko")
-    p_db_max = dc4.slider("DB_MAX", 0.0, 20.0, DEFAULT_PARAMS["db_max"], 0.5, help=_help_db_max, key="bt_db_max")
+        st.markdown("---")
+        st.markdown("**Ajustements V8 — Draw Boost**")
+        _help_db_close = "Boost du nul (en points de %) quand le Δ ELO < 100. Les matchs serrés produisent plus de nuls."
+        _help_db_mid = "Boost du nul quand 100 ≤ Δ ELO < 200."
+        _help_db_ko = "Boost supplémentaire du nul en phase KO (les équipes jouent plus prudemment)."
+        _help_db_max = "Plafond maximal du draw boost cumulé."
 
-    st.markdown("---")
-    st.markdown("**Ajustements V8 — Favori Boost**")
-    _help_fb_group = "Boost du favori en phase de groupes (en points de %) quand le Δ ELO dépasse le seuil. Les gros favoris surperforment en poules."
-    _help_fb_ko = "Boost du favori en phase KO. Généralement plus faible qu'en groupes car les outsiders résistent mieux en KO."
-    _help_fav_thr = "Seuil de Δ ELO à partir duquel le boost favori s'active."
+        dc1, dc2, dc3, dc4 = st.columns(4)
+        p_db_close = dc1.slider("DB_CLOSE", 0.0, 15.0, _active_preset["db_close"], 0.5, help=_help_db_close, key="bt_db_close")
+        p_db_mid = dc2.slider("DB_MID", 0.0, 10.0, _active_preset["db_mid"], 0.5, help=_help_db_mid, key="bt_db_mid")
+        p_db_ko = dc3.slider("DB_KO", 0.0, 15.0, _active_preset["db_ko"], 0.5, help=_help_db_ko, key="bt_db_ko")
+        p_db_max = dc4.slider("DB_MAX", 0.0, 50.0, _active_preset["db_max"], 0.5, help=_help_db_max, key="bt_db_max")
 
-    fc1, fc2, fc3 = st.columns(3)
-    p_fb_group = fc1.slider("FAV_GROUP", 0.0, 15.0, DEFAULT_PARAMS["fb_group"], 0.5, help=_help_fb_group, key="bt_fb_group")
-    p_fb_ko = fc2.slider("FAV_KO", 0.0, 10.0, DEFAULT_PARAMS["fb_ko"], 0.5, help=_help_fb_ko, key="bt_fb_ko")
-    p_fav_thr = fc3.slider("FAV_SEUIL Δ", 100, 600, int(DEFAULT_PARAMS["fav_threshold"]), 10, help=_help_fav_thr, key="bt_fav_thr")
+        st.markdown("---")
+        st.markdown("**Ajustements V8 — Favori Boost**")
+        _help_fb_group = "Boost du favori en phase de groupes (en points de %) quand le Δ ELO dépasse le seuil. Les gros favoris surperforment en poules."
+        _help_fb_ko = "Boost du favori en phase KO. Généralement plus faible qu'en groupes car les outsiders résistent mieux en KO."
+        _help_fav_thr = "Seuil de Δ ELO à partir duquel le boost favori s'active."
+
+        fc1, fc2, fc3 = st.columns(3)
+        p_fb_group = fc1.slider("FAV_GROUP", -5.0, 15.0, _active_preset["fb_group"], 0.5, help=_help_fb_group, key="bt_fb_group")
+        p_fb_ko = fc2.slider("FAV_KO", 0.0, 10.0, _active_preset["fb_ko"], 0.5, help=_help_fb_ko, key="bt_fb_ko")
+        p_fav_thr = fc3.slider("FAV_SEUIL Δ", 100, 600, int(_active_preset["fav_threshold"]), 10, help=_help_fav_thr, key="bt_fav_thr")
 
     current_params = {
         "scale": p_scale, "draw_base": p_draw_base, "d_half": p_d_half,
@@ -2473,13 +2480,20 @@ elif page == "🔬 Backtest V8":
         "fb_group": p_fb_group, "fb_ko": p_fb_ko, "fav_threshold": p_fav_thr,
     }
 
-    is_default = all(abs(current_params[k] - DEFAULT_PARAMS[k]) < 0.01 for k in DEFAULT_PARAMS)
+    is_preset = all(abs(current_params[k] - _active_preset[k]) < 0.01 for k in _active_preset)
 
-    bt_results = run_backtest(bt_dataset, current_params)
+    if use_dynamic_elo:
+        bt_dataset_sorted = sorted(bt_dataset, key=lambda m: m.get("date", "9999"))
+        bt_results, _final_elo = run_backtest_dynamic(bt_dataset_sorted, current_params)
+    else:
+        bt_results = run_backtest(bt_dataset, current_params)
     bt_metrics = compute_metrics(bt_results)
 
-    if not is_default:
-        bt_results_default = run_backtest(bt_dataset, DEFAULT_PARAMS)
+    if not is_preset:
+        if use_dynamic_elo:
+            bt_results_default, _ = run_backtest_dynamic(bt_dataset_sorted, _active_preset)
+        else:
+            bt_results_default = run_backtest(bt_dataset, _active_preset)
         bt_metrics_default = compute_metrics(bt_results_default)
 
     st.markdown("---")
@@ -2501,15 +2515,15 @@ elif page == "🔬 Backtest V8":
     mg1, mg2, mg3, mg4 = st.columns(4)
     mg1.metric("📐 Matchs analysés", bt_metrics["n_matches"])
     _brier_delta = ""
-    if not is_default:
+    if not is_preset:
         _brier_delta = f"{bt_metrics['brier_v8'] - bt_metrics_default['brier_v8']:+.4f}"
     mg2.metric("📉 Brier Score V8", f"{bt_metrics['brier_v8']:.4f}", _brier_delta or None, delta_color="inverse", help=_h_brier)
     _ll_delta = ""
-    if not is_default:
+    if not is_preset:
         _ll_delta = f"{bt_metrics['log_loss_v8'] - bt_metrics_default['log_loss_v8']:+.4f}"
     mg3.metric("📉 Log Loss V8", f"{bt_metrics['log_loss_v8']:.4f}", _ll_delta or None, delta_color="inverse", help=_h_ll)
     _acc_delta = ""
-    if not is_default:
+    if not is_preset:
         _acc_delta = f"{bt_metrics['accuracy'] - bt_metrics_default['accuracy']:+.1f}%"
     mg4.metric("🎯 Précision", f"{bt_metrics['accuracy']:.1f}%", _acc_delta or None, help=_h_acc)
 
@@ -2529,12 +2543,12 @@ elif page == "🔬 Backtest V8":
         vp2.metric("Brier Réf.", f"{_b_pin:.4f}")
 
         _dv_delta = ""
-        if not is_default:
+        if not is_preset:
             _dv_delta = f"{bt_metrics['div_abs_mean'] - bt_metrics_default['div_abs_mean']:+.3f}"
         vp3.metric("📏 Div. moy. |absolue|", f"{bt_metrics['div_abs_mean']:.3f}", _dv_delta or None, delta_color="inverse", help=_h_div)
 
         _dvp_delta = ""
-        if not is_default:
+        if not is_preset:
             _dvp_delta = f"{bt_metrics['div_pct_abs_mean'] - bt_metrics_default['div_pct_abs_mean']:+.2f}%"
         vp4.metric("📏 Div. moy. |%|", f"{bt_metrics['div_pct_abs_mean']:.2f}%", _dvp_delta or None, delta_color="inverse", help=_h_div_pct)
 
@@ -2544,7 +2558,7 @@ elif page == "🔬 Backtest V8":
         px1, px2, px3, px4 = st.columns(4)
 
         def _prox_delta(key):
-            if is_default:
+            if is_preset:
                 return None
             diff = bt_metrics[key] / _total_o * 100 - bt_metrics_default[key] / bt_metrics_default["total_outcomes"] * 100
             if abs(diff) < 0.01:
@@ -2675,12 +2689,27 @@ elif page == "🔬 Backtest V8":
     else:
         st.info("Aucune cote de référence disponible dans le dataset pour les graphiques de divergence.")
 
-    if not is_default:
+    if not is_preset:
         st.markdown("---")
         st.info(
             "💡 **Paramètres modifiés** — Les deltas affichés (↑↓ en vert/rouge) comparent vos paramètres actuels "
             "aux paramètres V8 par défaut. Vert = amélioration, Rouge = dégradation."
         )
+
+    if use_dynamic_elo and _final_elo:
+        st.markdown("---")
+        st.subheader("📈 ELO Dynamiques — Classement final")
+        st.caption("ELO après mise à jour match par match sur l'ensemble du backtest. Reflète la trajectoire historique de chaque équipe.")
+
+        sorted_elo = sorted(_final_elo.items(), key=lambda x: -x[1])
+        elo_rows = []
+        for rank, (team, elo) in enumerate(sorted_elo[:40], 1):
+            elo_rows.append({"#": rank, "Équipe": team, "ELO dynamique": round(elo, 1)})
+        import pandas as pd
+        _elo_c1, _elo_c2 = st.columns(2)
+        half = len(elo_rows) // 2
+        _elo_c1.dataframe(pd.DataFrame(elo_rows[:half]), hide_index=True, use_container_width=True)
+        _elo_c2.dataframe(pd.DataFrame(elo_rows[half:]), hide_index=True, use_container_width=True)
 
 
 # ═══════════════════════════════════════════════════════════════════

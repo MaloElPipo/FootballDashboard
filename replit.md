@@ -102,22 +102,31 @@ A Streamlit-based data visualization app located at `artifacts/football-dashboar
 
 Monte Carlo engine for FIFA World Cup 2026 predictions.
 
-### Core Model — Sigmoid V7
-- **Sigmoid + Power-law Draw + Quality factor**: `draw_adj = 27.9% + (-0.70) × (elo_avg-1800)/100`, `P(draw) = draw_adj / (1 + (|Δ|/540)^2.6)`, `P(1) = (100-draw) × sigmoid(Δ/431.3)`
-- Quality effect: avg=1600 → 29.3% draw base, avg=2100 → 26.0% (top teams draw less)
-- Calibrated on 79 points (19 WC2026 + 59 WC2022 Pinnacle + anchor): RMSE=5.76%
-- Smooth draw decline: Δ=0→27.9%, Δ=200→25.5%, Δ=400→19%, Δ=542→13.7%
-- Backtest WC 2022 (63 matchs): Brier=0.595 vs Pinnacle=0.597, ROI=+20.1% flat betting
-- V8 full backtest (136 matchs WC2022+EURO2024+COPA2024): Brier V8=0.5751 vs Pinnacle=0.5820, accuracy=51.5%, avg |div|=0.989 cotes
+### Core Model — V8-Pin (optimisé)
+- **V8-Pin optimized params** (500-iter random search minimizing Pinnacle divergence): scale=441.95, draw_base=24.09, d_half=463.65, power=3.56, quality=0.035, db_close=4.31, db_mid=2.56, db_ko=3.37, db_max=36.05, fb_group=-2.45, fb_ko=2.75, fav_threshold=380.3
+- V8-Pin backtest (527 matchs): Brier=0.5604, Div%=25.5%, Accuracy=56.5%
+- ELO blend: 80% Implied (from historical odds) + 20% OPTA Power Ratings (53 nations calibrated to ELO scale)
+- OPTA ELO stored in `backtest_engine.OPTA_ELO` dict and `elo_overrides.json` for WC2026 pricing
+- `V8PIN_PARAMS` dict in backtest_engine.py — used as default preset in UI
+- `DEFAULT_PARAMS` — legacy V7 defaults (kept for comparison)
+- Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
+
+### Dynamic ELO System
+- `update_elo_after_match(elo_h, elo_a, result, comp, k_override)` — standard ELO update with competition-specific K-factors
+- K-factors: WC=60, EURO/COPA=50, NL=40, QUALIF=35, FRIENDLY=20, CAN/GOLD_CUP=40
+- `run_backtest_dynamic(matches, params, k_override)` — runs backtest updating ELO after each match
+- Returns `(results, final_elo_dict)` — final_elo contains end-state ELO for all teams
+- Toggle in Backtest UI: "ELO Dynamiques" switch
 
 ### Backtest Engine (`backtest_engine.py`)
-- Hardcoded historical ELO + Pinnacle closing odds for WC2022, EURO2024, COPA2024 (136 matches total)
+- Hardcoded historical ELO + Pinnacle closing odds for WC2022, EURO2024, COPA2024 (527+ matches total)
 - `_sigmoid_custom()`: parametric V8 model with all 12 adjustable constants
-- `build_backtest_dataset()`: loads matches + Pinnacle odds from embedded data + historical_odds.json
-- `run_backtest(matches, params)`: runs model on dataset, returns per-match Brier/LogLoss/divergences
+- `build_backtest_dataset()`: loads matches + Pinnacle odds from embedded data + historical_odds.json + scraped_odds.json
+- `run_backtest(matches, params)`: static backtest, returns per-match metrics
+- `run_backtest_dynamic(matches, params, k_override)`: dynamic ELO backtest
 - `compute_metrics(results)`: aggregates global + per-comp + per-phase metrics
-- `DEFAULT_PARAMS`: V8 production defaults
-- Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
+- `OPTA_ELO` dict: 57 nations with OPTA Power Ratings calibrated to ELO scale
+- `OPTA_WEIGHT = 0.2`: blend weight for OPTA in ELO resolution
 
 ### Simulation Pipeline
 1. Build ELO map from `elo_engine.py` composite scores

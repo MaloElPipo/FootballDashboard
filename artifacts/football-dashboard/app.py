@@ -2975,6 +2975,21 @@ Un edge trop bas → beaucoup de paris mais peu de valeur. Un edge trop haut →
 
         _roi_with_ref = [r for r in bt_results if r["has_pin"]]
 
+        st.markdown("##### ⚙️ Filtres de sécurité")
+        _fc1, _fc2 = st.columns(2)
+        _max_cote = _fc1.slider(
+            "🎰 Cote max", 3.0, 50.0, 15.0, 0.5,
+            help="Ignore les issues avec une cote de référence supérieure à ce seuil. "
+            "Les cotes très élevées (>15) sont souvent des erreurs de données ou des matchs trop déséquilibrés pour être fiables.",
+            key="roi_max_cote",
+        )
+        _max_edge = _fc2.slider(
+            "📏 Edge max (%)", 10.0, 100.0, 50.0, 5.0,
+            help="Ignore les paris avec un edge supérieur à ce seuil. "
+            "Un edge >50% est probablement une erreur du modèle (ELO faux) plutôt qu'une vraie opportunité.",
+            key="roi_max_edge",
+        )
+
         _edge_thresholds = [round(x * 0.5, 1) for x in range(0, 41)]
 
         _roi_curve = []
@@ -2989,12 +3004,14 @@ Un edge trop bas → beaucoup de paris mais peu de valeur. Un edge trop haut →
                     (r["px"], r["pin_d"], "D"),
                     (r["p2"], r["pin_a"], "A"),
                 ]:
-                    if _cref <= 0:
+                    if _cref <= 0 or _cref > _max_cote:
                         continue
                     _p_book = 1.0 / _cref
                     if _p_book < 0.001:
                         continue
                     _edge = (_pv8 / _p_book - 1) * 100
+                    if _edge > _max_edge:
+                        continue
                     if _edge >= _thr:
                         _total_staked += 1
                         _n_bets += 1
@@ -3096,12 +3113,14 @@ Un edge trop bas → beaucoup de paris mais peu de valeur. Un edge trop haut →
                 ("X (Nul)", r["px"], r["pin_d"], "D"),
                 ("2 (Ext)", r["p2"], r["pin_a"], "A"),
             ]:
-                if _cref <= 0:
+                if _cref <= 0 or _cref > _max_cote:
                     continue
                 _p_book = 1.0 / _cref
                 if _p_book < 0.001:
                     continue
                 _edge = (_pv8 / _p_book - 1) * 100
+                if _edge > _max_edge:
+                    continue
                 if _edge >= _detail_edge_thr:
                     _won = r["result"] == _outcome_key
                     _profit = (_cref - 1) if _won else -1

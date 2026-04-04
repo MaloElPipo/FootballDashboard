@@ -359,6 +359,55 @@ def _is_youth_team(name):
     return any(name.endswith(s) for s in _YOUTH_SUFFIXES)
 
 
+def _get_base_elo(team_name):
+    """Get reliable base ELO from DEFAULT_ELO (eloratings.net), ignoring implied ELO.
+
+    Used for odds inversion detection where implied ELO might be polluted.
+    """
+    code = TEAM_NAME_TO_ELO_KEY.get(team_name)
+    if code and code in DEFAULT_ELO:
+        base = DEFAULT_ELO[code]
+    else:
+        base = 1400
+    if team_name in OPTA_ELO:
+        return base * (1 - OPTA_WEIGHT) + OPTA_ELO[team_name] * OPTA_WEIGHT
+    return base
+
+
+def _detect_odds_inversion(home, away, fair_h, fair_d, fair_a):
+    """Detect and fix inverted home/away odds using reliable base ELO.
+
+    Returns (fair_h, fair_d, fair_a, swapped_flag).
+    Swaps odds when base ELO clearly contradicts the odds direction.
+    """
+    if fair_h <= 0 or fair_a <= 0:
+        return fair_h, fair_d, fair_a, False
+
+    elo_h = _get_base_elo(home)
+    elo_a = _get_base_elo(away)
+    elo_delta = elo_h - elo_a
+
+    odds_implies_home_fav = fair_h < fair_a
+
+    prob_h_odds = 1.0 / fair_h
+    prob_a_odds = 1.0 / fair_a
+    odds_ratio = max(prob_h_odds, prob_a_odds) / max(min(prob_h_odds, prob_a_odds), 0.001)
+
+    if odds_ratio >= 8.0:
+        if odds_implies_home_fav and elo_delta < -80:
+            return fair_a, fair_d, fair_h, True
+        if not odds_implies_home_fav and elo_delta > 80:
+            return fair_a, fair_d, fair_h, True
+
+    if odds_ratio >= 3.0:
+        if odds_implies_home_fav and elo_delta < -200:
+            return fair_a, fair_d, fair_h, True
+        if not odds_implies_home_fav and elo_delta > 200:
+            return fair_a, fair_d, fair_h, True
+
+    return fair_h, fair_d, fair_a, False
+
+
 def _load_scraped_matches():
     if not SCRAPED_ODDS_PATH.exists():
         return []
@@ -403,6 +452,10 @@ def _load_scraped_matches():
 
         elo_h = _resolve_elo(m["home"])
         elo_a = _resolve_elo(m["away"])
+
+        pin_h, pin_d, pin_a, _swapped = _detect_odds_inversion(
+            m["home"], m["away"], pin_h, pin_d, pin_a
+        )
 
         matches.append({
             "comp": m["comp"],

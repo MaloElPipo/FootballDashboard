@@ -898,6 +898,7 @@ elif page == "👤 Players":
         st.info("Aucun joueur trouvé. Sélectionne une équipe dans les filtres.")
 
 elif page == "🏅 Classement ELO":
+    from nations_data import get_all_nations
     from elo_engine import (
         fetch_elorating_base as elo_fetch_base,
         compute_all_nations_elo,

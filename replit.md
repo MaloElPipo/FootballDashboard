@@ -61,12 +61,19 @@ The dashboard is built with Streamlit, providing an interactive web interface. I
         - **Betclic Scraper:** Pure HTTP scraper for Betclic odds (1X2, goalscorer, outrights, Garantie 2 Buts) using gRPC-web.
             - **Garantie 2 Buts (Early Win) scraping path:** gRPC match response → market with label containing "2 buts d'avance" → selections in **field 16** (not field 11 like other markets) → team name in sub-field 10, odds in sub-field 12 (double, 8 bytes). Market state=8 does NOT mean no data — selections can still be present in field 16.
         - **Squad Scraper:** Scrapes Transfermarkt for WC 2026 national team squad data, including player profiles, market values, and positions.
-    - **Garantie 2+ Section (planned):**
-        - **Inputs:** Match selection (Betclic dropdown), target team, 3 manual Betfair Exchange lays (1X2 lay, Under 0.5 team goals lay, 0-0 correct score). Optional: Betfair exact score lines for MLE lambda fit.
-        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping.
-        - **Lambda derivation:** λ_team = -ln(P(0 team goals)), λ_opp from P(0-0). If exact scores provided, MLE fit on all data points for better precision.
-        - **G2+ probability:** Monte Carlo simulation (10K iterations, minute-by-minute) — team wins if it led by 2+ goals at any point OR wins at full time. Also show fixed-fraction method (Sheets legacy) for comparison.
-        - **Output:** xG team, xG opponent, xG match, P(G2+) MC, P(G2+) fractions, fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator.
+    - **Garantie 2+ Section:**
+        - **Inputs:** Match selection (Betclic dropdown), target team, Lay 1X2 (auto via Odds API or manual). Optional: Betfair Exchange scraping for enriched markets.
+        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping. Betfair Exchange scraping via Playwright + Webshare EU proxy for 1X2, BTTS, O/U 2.5, O/U 0.5, and 16 Correct Score markets.
+        - **Betfair data extraction:** For each market selection, captures Back price + volume and Lay price + volume. Computes volume-weighted mid-price: `mid = back × (back_vol/total_vol) + lay × (lay_vol/total_vol)`.
+        - **Lambda derivation — Cascade approach:** Multi-constraint weighted optimization using scipy Nelder-Mead. Each available market adds precision:
+            - Level 1 (always): 1X2 Lay → P(team wins) = 1/lay (weight=10)
+            - Level 2: O/U 2.5 Under mid → P(Under 2.5) constrains λ_total (weight=50)
+            - Level 3: BTTS Yes mid → P(BTTS) = (1-e^-λA)(1-e^-λB) splits λA/λB (weight=30)
+            - Level 4: O/U 0.5 Under mid → validates λ_total (weight=20)
+            - Level 5: CS mid-prices → MLE refinement on 16 scores (weight=5)
+        - **G2+ probability:** Monte Carlo simulation (50K iterations, minute-by-minute) — team wins if it led by 2+ goals at any point OR wins at full time. Also fixed-fraction method for comparison.
+        - **Output:** xG team, xG opponent, xG match, P(G2+) MC, P(G2+) fractions, fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator, cascade method used.
+        - **Manual fallback:** All market fields are editable. Tool works with just Lay 1X2 (minimum), additional markets improve precision progressively.
     - **Workflow:** Runs on port 5000 via a Streamlit web application.
 
 # External Dependencies

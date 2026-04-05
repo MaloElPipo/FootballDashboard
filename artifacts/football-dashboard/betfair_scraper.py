@@ -5,7 +5,6 @@ import os
 import re
 import time
 from dataclasses import dataclass, field
-from difflib import SequenceMatcher
 
 from playwright.async_api import async_playwright
 
@@ -36,11 +35,38 @@ _BF_COMPETITION_IDS = {
 
 
 @dataclass
+class BetfairSelection:
+    name: str = ""
+    back: float = 0.0
+    back_vol: float = 0.0
+    lay: float = 0.0
+    lay_vol: float = 0.0
+
+    @property
+    def mid_price(self) -> float:
+        if self.back <= 0 and self.lay <= 0:
+            return 0.0
+        if self.back <= 0:
+            return self.lay
+        if self.lay <= 0:
+            return self.back
+        total = self.back_vol + self.lay_vol
+        if total <= 0:
+            return (self.back + self.lay) / 2
+        w_back = self.back_vol / total
+        return self.back * w_back + self.lay * (1 - w_back)
+
+
+@dataclass
 class BetfairCSData:
     home_team: str = ""
     away_team: str = ""
     correct_scores: dict[str, float] = field(default_factory=dict)
-    match_odds: dict[str, float] = field(default_factory=dict)
+    cs_detail: dict[str, BetfairSelection] = field(default_factory=dict)
+    match_odds_1x2: dict[str, float] = field(default_factory=dict)
+    btts: dict[str, BetfairSelection] = field(default_factory=dict)
+    ou25: dict[str, BetfairSelection] = field(default_factory=dict)
+    ou05: dict[str, BetfairSelection] = field(default_factory=dict)
     over_under: dict[str, float] = field(default_factory=dict)
     timestamp: float = 0.0
     match_url: str = ""
@@ -113,65 +139,156 @@ async def _find_match_url(page, competition_key: str, home: str, away: str) -> s
     return None
 
 
+_EXTRACT_JS = r"""() => {
+    const text = document.body.innerText;
+    const rawLines = text.split('\n');
+    const L = [];
+    for (const l of rawLines) { const t = l.trim(); if (t) L.push(t); }
+
+    const R = { mo: [], btts: [], ou25: [], ou05: [], cs: [], home: '', away: '' };
+
+    const title = document.title || '';
+    const tm = title.match(/(?:Best\s+)?(.+?)\s+v\s+(.+?)\s+(Odds|Betting)/i);
+    R.home = tm ? tm[1].trim() : '';
+    R.away = tm ? tm[2].trim() : '';
+
+    function ep(si, mx) {
+        const ps = [];
+        let i = si;
+        while (i < L.length && ps.length < mx) {
+            const m = L[i].match(/^(\d+\.?\d*)$/);
+            if (m) {
+                const p = parseFloat(m[1]);
+                if (p >= 1.01) {
+                    let v = 0;
+                    if (i + 1 < L.length) {
+                        const vm = L[i + 1].match(/^£([\d,]+)$/);
+                        if (vm) { v = parseFloat(vm[1].replace(/,/g, '')); i += 2; }
+                        else { i++; }
+                    } else { i++; }
+                    ps.push({ p, v });
+                    continue;
+                }
+            }
+            if (L[i].match(/^£/) || (m && parseFloat(m[1]) < 1.01)) { i++; continue; }
+            break;
+        }
+        return { ps, ni: i };
+    }
+
+    // 1X2 Match Odds
+    const bai = L.indexOf('Back all');
+    if (bai >= 0) {
+        let i = bai + 1;
+        while (i < L.length && i < bai + 6) {
+            if (L[i] === 'Lay all' || L[i].match(/^\d+\.?\d*%$/) || L[i].includes('selections')) { i++; }
+            else break;
+        }
+        for (let s = 0; s < 3 && i < L.length; s++) {
+            const nm = L[i];
+            if (nm && !nm.match(/^\d/) && !nm.match(/^£/) && nm !== 'Other Markets') {
+                i++;
+                const { ps, ni } = ep(i, 6);
+                if (ps.length >= 6) {
+                    R.mo.push({ n: nm, bb: ps[2].p, bbv: ps[2].v, bl: ps[3].p, blv: ps[3].v });
+                } else if (ps.length >= 4) {
+                    const mid = Math.floor(ps.length / 2);
+                    R.mo.push({ n: nm, bb: ps[mid - 1].p, bbv: ps[mid - 1].v, bl: ps[mid].p, blv: ps[mid].v });
+                } else if (ps.length >= 2) {
+                    R.mo.push({ n: nm, bb: ps[0].p, bbv: ps[0].v, bl: ps[1].p, blv: ps[1].v });
+                }
+                i = ni;
+            } else { i++; }
+        }
+    }
+
+    // Generic 2-selection market parser
+    function p2m(hdr) {
+        const res = [];
+        let si = -1;
+        for (let i = 0; i < L.length; i++) {
+            if (L[i] === hdr || L[i] === hdr + '?') {
+                for (let j = i + 1; j < Math.min(i + 5, L.length); j++) {
+                    if (L[j] === 'Rules' || L[j].startsWith('Matched:')) { si = i; break; }
+                }
+                if (si >= 0) break;
+            }
+        }
+        if (si < 0) return res;
+        let i = si;
+        while (i < L.length && i < si + 10) {
+            if (L[i] === 'Lay' || L[i] === 'Lay all') { i++; break; }
+            i++;
+        }
+        for (let s = 0; s < 4 && i < L.length; s++) {
+            const nm = L[i];
+            if (nm === 'View full market' || nm === 'Rules' || nm.startsWith('Matched:')) break;
+            if (nm && !nm.match(/^\d/) && !nm.match(/^£/)) {
+                i++;
+                const { ps, ni } = ep(i, 2);
+                if (ps.length >= 2) {
+                    res.push({ n: nm, b: ps[0].p, bv: ps[0].v, l: ps[1].p, lv: ps[1].v });
+                } else if (ps.length === 1) {
+                    res.push({ n: nm, b: ps[0].p, bv: ps[0].v, l: 0, lv: 0 });
+                }
+                i = ni;
+            } else { i++; }
+        }
+        return res;
+    }
+
+    R.btts = p2m('Both teams to Score?');
+    if (R.btts.length === 0) R.btts = p2m('Both teams to Score');
+    R.ou25 = p2m('Over/Under 2.5 Goals');
+    R.ou05 = p2m('Over/Under 0.5 Goals');
+
+    // Correct Score
+    let csStart = -1;
+    for (let i = 0; i < L.length; i++) {
+        if (L[i] === 'Correct Score') {
+            for (let j = i + 1; j < Math.min(i + 5, L.length); j++) {
+                if (L[j] === 'Rules' || L[j].startsWith('Matched:')) { csStart = i; break; }
+            }
+            if (csStart >= 0) break;
+        }
+    }
+    if (csStart >= 0) {
+        let i = csStart;
+        while (i < L.length && i < csStart + 10) {
+            if (L[i] === 'Lay') { i++; break; }
+            i++;
+        }
+        while (i < L.length) {
+            const nm = L[i];
+            if (nm === 'View full market' || nm === 'Rules' || nm.startsWith('Matched:') ||
+                nm.startsWith('First Half') || nm.startsWith('Half Time')) break;
+            const sm = nm.match(/^(\d+)\s*-\s*(\d+)$/);
+            if (sm) {
+                const key = sm[1] + '-' + sm[2];
+                i++;
+                const { ps, ni } = ep(i, 2);
+                if (ps.length >= 2) {
+                    R.cs.push({ n: key, b: ps[0].p, bv: ps[0].v, l: ps[1].p, lv: ps[1].v });
+                } else if (ps.length === 1) {
+                    R.cs.push({ n: key, b: ps[0].p, bv: ps[0].v, l: 0, lv: 0 });
+                }
+                i = ni;
+            } else if (nm.startsWith('Any Other')) {
+                i++;
+                const { ps, ni } = ep(i, 2);
+                i = ni;
+            } else {
+                i++;
+            }
+        }
+    }
+
+    return R;
+}"""
+
+
 async def _extract_match_data(page) -> dict:
-    return await page.evaluate(r"""() => {
-        const text = document.body.innerText;
-        const lines = text.split('\n');
-        const scores = {};
-        const overUnder = {};
-        const matchOdds = {};
-
-        for (let i = 0; i < lines.length; i++) {
-            const t = lines[i].trim();
-            const scoreMatch = t.match(/^(\d+)\s*-\s*(\d+)$/);
-            if (scoreMatch) {
-                const key = scoreMatch[1] + "-" + scoreMatch[2];
-                if (scores[key]) continue;
-                for (let j = i + 1; j < Math.min(i + 6, lines.length); j++) {
-                    const odds = lines[j].trim();
-                    const oMatch = odds.match(/^(\d+\.?\d*)$/);
-                    if (oMatch) {
-                        const v = parseFloat(oMatch[1]);
-                        if (v >= 1.01) { scores[key] = v; break; }
-                    }
-                    const moneyMatch = odds.match(/^£[\d,]+$/);
-                    if (moneyMatch) continue;
-                    if (odds && !/^£/.test(odds) && !/^\d+\.?\d*$/.test(odds)) break;
-                }
-            }
-        }
-
-        for (let i = 0; i < lines.length; i++) {
-            const t = lines[i].trim();
-            for (const th of ["0.5", "1.5", "2.5", "3.5", "4.5", "5.5"]) {
-                if (t.includes("Over/Under " + th)) {
-                    for (let j = i + 1; j < Math.min(i + 15, lines.length); j++) {
-                        const lt = lines[j].trim();
-                        if (lt.startsWith("Under") && lt.includes(th)) {
-                            for (let k = j + 1; k < Math.min(j + 4, lines.length); k++) {
-                                const m = lines[k].trim().match(/^(\d+\.?\d*)$/);
-                                if (m) { overUnder["under_" + th] = parseFloat(m[1]); break; }
-                            }
-                        }
-                        if (lt.startsWith("Over") && lt.includes(th)) {
-                            for (let k = j + 1; k < Math.min(j + 4, lines.length); k++) {
-                                const m = lines[k].trim().match(/^(\d+\.?\d*)$/);
-                                if (m) { overUnder["over_" + th] = parseFloat(m[1]); break; }
-                            }
-                        }
-                    }
-                    break;
-                }
-            }
-        }
-
-        const title = document.title || "";
-        const tm = title.match(/(?:Best\s+)?(.+?)\s+v\s+(.+?)\s+(Odds|Betting)/i);
-        const home = tm ? tm[1].trim() : "";
-        const away = tm ? tm[2].trim() : "";
-
-        return {scores, overUnder, matchOdds, home, away};
-    }""")
+    return await page.evaluate(_EXTRACT_JS)
 
 
 async def _scrape_betfair_match(
@@ -237,19 +354,48 @@ async def _scrape_betfair_match(
                 await browser.close()
                 return result
 
-            await asyncio.sleep(6)
+            await asyncio.sleep(7)
 
             data = await _extract_match_data(page)
 
-            for score_key, odds_val in data.get("scores", {}).items():
-                result.correct_scores[score_key] = odds_val
-            for ou_key, ou_val in data.get("overUnder", {}).items():
-                result.over_under[ou_key] = ou_val
-            for mo_key, mo_val in data.get("matchOdds", {}).items():
-                result.match_odds[mo_key] = mo_val
-
             result.home_team = data.get("home", "") or home_team
             result.away_team = data.get("away", "") or away_team
+
+            for item in data.get("mo", []):
+                result.match_odds_1x2[item["n"]] = item["bl"]
+
+            for item in data.get("btts", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.btts[item["n"]] = sel
+
+            for item in data.get("ou25", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.ou25[item["n"]] = sel
+
+            for item in data.get("ou05", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.ou05[item["n"]] = sel
+
+            for item in data.get("cs", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.cs_detail[item["n"]] = sel
+                result.correct_scores[item["n"]] = sel.mid_price
 
         except Exception as e:
             result.error = f"Scraping error: {e}"
@@ -283,12 +429,12 @@ def fetch_betfair_cs(
         )
 
 
-def cs_to_exact_score_odds(
+def cs_to_exact_score_mids(
     cs_data: BetfairCSData,
     team_is_home: bool,
 ) -> dict[tuple[int, int], float]:
     result = {}
-    for score_str, odds in cs_data.correct_scores.items():
+    for score_str, sel in cs_data.cs_detail.items():
         parts = score_str.split("-")
         if len(parts) != 2:
             continue
@@ -296,11 +442,88 @@ def cs_to_exact_score_odds(
             h, a = int(parts[0].strip()), int(parts[1].strip())
         except ValueError:
             continue
+        mid = sel.mid_price
+        if mid <= 1.0:
+            continue
         if team_is_home:
-            result[(h, a)] = odds
+            result[(h, a)] = mid
         else:
-            result[(a, h)] = odds
+            result[(a, h)] = mid
     return result
+
+
+def cs_to_exact_score_odds(
+    cs_data: BetfairCSData,
+    team_is_home: bool,
+) -> dict[tuple[int, int], float]:
+    result = {}
+    source = cs_data.cs_detail if cs_data.cs_detail else {}
+    if not source and cs_data.correct_scores:
+        for score_str, odds in cs_data.correct_scores.items():
+            parts = score_str.split("-")
+            if len(parts) != 2:
+                continue
+            try:
+                h, a = int(parts[0].strip()), int(parts[1].strip())
+            except ValueError:
+                continue
+            if team_is_home:
+                result[(h, a)] = odds
+            else:
+                result[(a, h)] = odds
+        return result
+
+    for score_str, sel in source.items():
+        parts = score_str.split("-")
+        if len(parts) != 2:
+            continue
+        try:
+            h, a = int(parts[0].strip()), int(parts[1].strip())
+        except ValueError:
+            continue
+        mid = sel.mid_price
+        if mid <= 1.0:
+            continue
+        if team_is_home:
+            result[(h, a)] = mid
+        else:
+            result[(a, h)] = mid
+    return result
+
+
+def get_btts_yes_mid(cs_data: BetfairCSData) -> float | None:
+    for key in ("Yes", "yes", "YES"):
+        if key in cs_data.btts:
+            mid = cs_data.btts[key].mid_price
+            if mid > 1.0:
+                return round(mid, 3)
+    return None
+
+
+def get_ou25_under_mid(cs_data: BetfairCSData) -> float | None:
+    for key, sel in cs_data.ou25.items():
+        if "under" in key.lower():
+            mid = sel.mid_price
+            if mid > 1.0:
+                return round(mid, 3)
+    return None
+
+
+def get_ou05_under_mid(cs_data: BetfairCSData) -> float | None:
+    for key, sel in cs_data.ou05.items():
+        if "under" in key.lower():
+            mid = sel.mid_price
+            if mid > 1.0:
+                return round(mid, 3)
+    return None
+
+
+def get_1x2_lay_team(cs_data: BetfairCSData, team_name: str) -> float | None:
+    for name, lay_price in cs_data.match_odds_1x2.items():
+        if team_name.lower()[:4] in name.lower() or name.lower()[:4] in team_name.lower():
+            if lay_price > 1.0:
+                return round(lay_price, 2)
+    return None
 
 
 def derive_team_u05_from_cs(
@@ -308,17 +531,32 @@ def derive_team_u05_from_cs(
     team_is_home: bool,
 ) -> float | None:
     zero_scores = []
-    for score_str, odds in cs_data.correct_scores.items():
-        parts = score_str.split("-")
-        if len(parts) != 2:
-            continue
-        try:
-            h, a = int(parts[0].strip()), int(parts[1].strip())
-        except ValueError:
-            continue
-        team_goals = h if team_is_home else a
-        if team_goals == 0:
-            zero_scores.append(1.0 / odds)
+    source = cs_data.cs_detail if cs_data.cs_detail else {}
+    if source:
+        for score_str, sel in source.items():
+            parts = score_str.split("-")
+            if len(parts) != 2:
+                continue
+            try:
+                h, a = int(parts[0].strip()), int(parts[1].strip())
+            except ValueError:
+                continue
+            team_goals = h if team_is_home else a
+            mid = sel.mid_price
+            if team_goals == 0 and mid > 1.0:
+                zero_scores.append(1.0 / mid)
+    else:
+        for score_str, odds in cs_data.correct_scores.items():
+            parts = score_str.split("-")
+            if len(parts) != 2:
+                continue
+            try:
+                h, a = int(parts[0].strip()), int(parts[1].strip())
+            except ValueError:
+                continue
+            team_goals = h if team_is_home else a
+            if team_goals == 0:
+                zero_scores.append(1.0 / odds)
 
     if not zero_scores:
         return None
@@ -329,6 +567,10 @@ def derive_team_u05_from_cs(
 
 
 def derive_00_from_cs(cs_data: BetfairCSData) -> float | None:
+    if "0-0" in cs_data.cs_detail:
+        mid = cs_data.cs_detail["0-0"].mid_price
+        if mid > 1.0:
+            return round(mid, 2)
     odds = cs_data.correct_scores.get("0-0")
     if odds and odds > 1.0:
         return odds

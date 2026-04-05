@@ -30,6 +30,7 @@ timeoutMs = 20000
 [userenv.shared]
 STATS_API_URL = "https://api.thestatsapi.com/api"
 WEBSHARE_PROXY_URL = "http://thosxyue:sunvk9xa5oox@31.59.20.176:6754"
+BETCLIC_PROXY_URL = "http://thosxyue:sunvk9xa5oox@204.93.187.213:8223/"
 
 [nix]
 channel = "stable-25_05"

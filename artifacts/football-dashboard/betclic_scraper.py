@@ -397,22 +397,17 @@ class BetclicScraper:
         self._grpc_client: httpx.AsyncClient | None = None
 
     async def __aenter__(self) -> "BetclicScraper":
+        _proxy_url = os.environ.get("BETCLIC_PROXY_URL", "") or None
         self._page_client = httpx.AsyncClient(
             headers=_PAGE_HEADERS, follow_redirects=True,
+            proxy=_proxy_url,
         )
         self._grpc_client = httpx.AsyncClient(
             headers=_GRPC_HEADERS, follow_redirects=True,
+            proxy=_proxy_url,
         )
-        _proxy_url = os.environ.get("WEBSHARE_PROXY_URL", "") or None
-        self._proxy_page_client: httpx.AsyncClient | None = None
-        self._proxy_grpc_client: httpx.AsyncClient | None = None
         if _proxy_url:
-            self._proxy_page_client = httpx.AsyncClient(
-                headers=_PAGE_HEADERS, follow_redirects=True, proxy=_proxy_url,
-            )
-            self._proxy_grpc_client = httpx.AsyncClient(
-                headers=_GRPC_HEADERS, follow_redirects=True, proxy=_proxy_url,
-            )
+            logger.info("Betclic: all requests routed via BETCLIC_PROXY_URL")
         return self
 
     async def __aexit__(self, *args: Any) -> None:
@@ -420,18 +415,6 @@ class BetclicScraper:
             await self._page_client.aclose()
         if self._grpc_client:
             await self._grpc_client.aclose()
-        if self._proxy_page_client:
-            await self._proxy_page_client.aclose()
-        if self._proxy_grpc_client:
-            await self._proxy_grpc_client.aclose()
-
-    async def _page_get(self, url: str, **kwargs: Any) -> httpx.Response:
-        assert self._page_client
-        r = await self._page_client.get(url, **kwargs)
-        if r.status_code == 403 and self._proxy_page_client:
-            logger.info("Direct request 403, retrying via proxy: %s", url)
-            r = await self._proxy_page_client.get(url, **kwargs)
-        return r
 
     def _comp_url(self, comp_key: str) -> str:
         comp = COMPETITIONS[comp_key]
@@ -445,7 +428,7 @@ class BetclicScraper:
         url = self._comp_url(comp_key)
 
         try:
-            r = await self._page_get(url, timeout=20)
+            r = await self._page_client.get(url, timeout=20)
             r.raise_for_status()
         except Exception as exc:
             logger.warning("Betclic page fetch failed %s: %s", url, exc)
@@ -544,16 +527,8 @@ class BetclicScraper:
         try:
             raw = await _stream_grpc_frame(self._grpc_client, body)
         except Exception as exc:
-            if self._proxy_grpc_client:
-                logger.info("gRPC direct failed, retrying via proxy: match %d", match_id)
-                try:
-                    raw = await _stream_grpc_frame(self._proxy_grpc_client, body)
-                except Exception as exc2:
-                    logger.warning("Betclic gRPC match %d (proxy): %s", match_id, exc2)
-                    return []
-            else:
-                logger.warning("Betclic gRPC match %d: %s", match_id, exc)
-                return []
+            logger.warning("Betclic gRPC match %d: %s", match_id, exc)
+            return []
         return _parse_grpc_markets(raw, market_filter) if raw else []
 
     async def fetch_outright(
@@ -571,7 +546,7 @@ class BetclicScraper:
         url = f"{_BASE_URL}/{sport_prefix}/{slug}/{comp_name_slug}-m{mid}"
 
         try:
-            r = await self._page_get(url, timeout=20)
+            r = await self._page_client.get(url, timeout=20)
             r.raise_for_status()
         except Exception as exc:
             logger.warning("Betclic outright fetch failed %s: %s", url, exc)

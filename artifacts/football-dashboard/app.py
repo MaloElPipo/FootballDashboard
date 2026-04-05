@@ -3665,10 +3665,62 @@ elif page == "🎯 Garantie 2+":
         "Serie A": "serie_a",
     }
 
+    _G2_ODDS_API_SPORT = {
+        "world_cup_2026": "soccer_fifa_world_cup",
+        "champions_league": "soccer_uefa_champs_league",
+        "europa_league": "soccer_uefa_europa_league",
+        "ligue_1": "soccer_france_ligue_one",
+        "premier_league": "soccer_epl",
+        "la_liga": "soccer_spain_la_liga",
+        "bundesliga": "soccer_germany_bundesliga",
+        "serie_a": "soccer_italy_serie_a",
+    }
+
     g2_col_comp, g2_col_refresh = st.columns([3, 1])
     with g2_col_comp:
         g2_comp_label = st.selectbox("Compétition", list(_G2_COMPETITIONS.keys()), key="g2_comp")
     g2_comp_key = _G2_COMPETITIONS[g2_comp_label]
+
+    @st.cache_data(ttl=300, show_spinner="Fetching Betfair Exchange lay odds...")
+    def _fetch_betfair_lay(sport_key: str) -> dict:
+        odds_key = os.environ.get("ODDS_API_KEY", "")
+        if not odds_key or not sport_key:
+            return {}
+        try:
+            r = requests.get(
+                f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/",
+                params={
+                    "apiKey": odds_key,
+                    "regions": "uk,eu",
+                    "markets": "h2h,h2h_lay",
+                    "bookmakers": "betfair_ex_eu",
+                    "oddsFormat": "decimal",
+                },
+                timeout=15,
+            )
+            r.raise_for_status()
+            data = r.json()
+        except Exception:
+            return {}
+        result = {}
+        for m in data:
+            ht = m.get("home_team", "")
+            at = m.get("away_team", "")
+            key = f"{ht} vs {at}".lower()
+            bf = {}
+            for bk in m.get("bookmakers", []):
+                if bk["key"] != "betfair_ex_eu":
+                    continue
+                for mkt in bk.get("markets", []):
+                    for o in mkt.get("outcomes", []):
+                        name = o.get("name", "")
+                        price = o.get("price", 0)
+                        if mkt["key"] == "h2h_lay":
+                            bf[f"lay_{name}"] = price
+                        elif mkt["key"] == "h2h":
+                            bf[f"back_{name}"] = price
+            result[key] = {"home": ht, "away": at, **bf}
+        return result
 
     @st.cache_data(ttl=300, show_spinner="Scraping Betclic G2+...")
     def _fetch_g2_matches(comp_key: str):
@@ -3696,9 +3748,29 @@ elif page == "🎯 Garantie 2+":
         st.markdown("<br>", unsafe_allow_html=True)
         if st.button("🔄 Refresh", key="g2_refresh"):
             _fetch_g2_matches.clear()
+            _fetch_betfair_lay.clear()
             st.rerun()
 
     g2_matches = _fetch_g2_matches(g2_comp_key)
+
+    bf_sport_key = _G2_ODDS_API_SPORT.get(g2_comp_key, "")
+    bf_data = _fetch_betfair_lay(bf_sport_key) if bf_sport_key else {}
+
+    def _find_betfair_for_match(home_betclic: str, away_betclic: str) -> dict:
+        h_low = home_betclic.lower().strip()
+        a_low = away_betclic.lower().strip()
+        for _bfk, bfv in bf_data.items():
+            bf_h = bfv.get("home", "").lower()
+            bf_a = bfv.get("away", "").lower()
+            if (h_low in bf_h or bf_h in h_low or
+                h_low[:4] == bf_h[:4]) and \
+               (a_low in bf_a or bf_a in a_low or
+                a_low[:4] == bf_a[:4]):
+                return bfv
+            if (a_low in bf_h or bf_h in a_low) and \
+               (h_low in bf_a or bf_a in h_low):
+                return bfv
+        return {}
 
     if not g2_matches:
         st.info(f"Aucun match trouvé pour {g2_comp_label} sur Betclic.")
@@ -3723,6 +3795,8 @@ elif page == "🎯 Garantie 2+":
                                    format_func=lambda i: match_labels[i], key="g2_match")
         g2_match = g2_matches[g2_sel_idx]
 
+        bf_match = _find_betfair_for_match(g2_match["home"], g2_match["away"])
+
         st.markdown("---")
 
         g2_team_options = [g2_match["home"], g2_match["away"]]
@@ -3735,14 +3809,52 @@ elif page == "🎯 Garantie 2+":
         else:
             st.warning(f"⚠️ Pas de cote G2+ Betclic trouvée pour {g2_team_choice}")
 
+        bf_lay_default = 2.50
+        bf_lay_source = ""
+        if bf_match:
+            bf_h = bf_match.get("home", "")
+            bf_a = bf_match.get("away", "")
+            is_home = g2_team_choice.lower()[:4] in bf_h.lower() or bf_h.lower()[:4] in g2_team_choice.lower()
+            if is_home and f"lay_{bf_h}" in bf_match:
+                bf_lay_default = bf_match[f"lay_{bf_h}"]
+                bf_lay_source = f"(auto Betfair: {bf_h})"
+            elif not is_home and f"lay_{bf_a}" in bf_match:
+                bf_lay_default = bf_match[f"lay_{bf_a}"]
+                bf_lay_source = f"(auto Betfair: {bf_a})"
+            else:
+                for k, v in bf_match.items():
+                    if k.startswith("lay_") and isinstance(v, (int, float)):
+                        team_in_key = k[4:]
+                        if g2_team_choice.lower()[:4] in team_in_key.lower() or team_in_key.lower()[:4] in g2_team_choice.lower():
+                            bf_lay_default = v
+                            bf_lay_source = f"(auto Betfair: {team_in_key})"
+                            break
+
         st.subheader("📊 Paramètres Betfair Exchange")
-        st.caption("Saisissez les 3 cotes Betfair Exchange pour calculer les xG via Poisson.")
+        if bf_lay_source:
+            st.caption(f"Lay 1X2 pré-rempli via The Odds API {bf_lay_source}. Under 0.5 et 0-0 à saisir manuellement.")
+        else:
+            st.caption("Saisissez les 3 cotes Betfair Exchange pour calculer les xG via Poisson.")
+
+        if bf_match:
+            bf_display_parts = []
+            for k, v in sorted(bf_match.items()):
+                if k.startswith("lay_") or k.startswith("back_"):
+                    bf_display_parts.append(f"{k}: {v}")
+            if bf_display_parts:
+                with st.expander("📡 Données Betfair Exchange détectées", expanded=False):
+                    st.text(" | ".join(bf_display_parts))
+
+        _bf_state_key = f"_g2_bf_last_{g2_comp_key}_{g2_sel_idx}_{g2_team_choice}"
+        if st.session_state.get("_g2_bf_auto_key") != _bf_state_key:
+            st.session_state["g2_lay1x2"] = round(bf_lay_default, 2)
+            st.session_state["_g2_bf_auto_key"] = _bf_state_key
 
         bf_col1, bf_col2, bf_col3 = st.columns(3)
         with bf_col1:
             g2_lay_1x2 = st.number_input(
                 f"Lay 1X2 {g2_team_choice}",
-                min_value=1.01, max_value=100.0, value=2.50, step=0.01,
+                min_value=1.01, max_value=100.0, value=round(bf_lay_default, 2), step=0.01,
                 key="g2_lay1x2",
                 help="Cote lay Betfair Exchange du 1X2 de l'équipe cible"
             )

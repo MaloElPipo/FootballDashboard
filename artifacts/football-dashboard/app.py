@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import os
 import anthropic
-from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS, get_nation_by_code, FIFA_TO_ISO, flag_img
+from nations_data import WC2026_NATIONS, CONF_LABELS, CONF_COUNTS, get_nation_by_code, get_all_nations, FIFA_TO_ISO, flag_img
 from squad_scraper import (
     get_squad_cached, get_cache_status, clear_cache_for, clear_all_cache,
     get_static_squad, get_static_db_status,
@@ -3326,7 +3326,7 @@ elif page == "📡 Cotes Betclic":
     )
 
     BETCLIC_FR_TO_CODE = {}
-    for _n in WC2026_NATIONS:
+    for _n in get_all_nations():
         BETCLIC_FR_TO_CODE[_n["fr"]] = _n["code"]
     BETCLIC_FR_TO_CODE["Tchéquie"] = "CZE"
     BETCLIC_FR_TO_CODE["USA"] = "USA"

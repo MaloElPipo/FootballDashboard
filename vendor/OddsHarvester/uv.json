@@ -1,0 +1,12 @@
+{
+    "venv": ".venv",
+    "python": "python3.12",
+    "env": {
+        "PYTHONPATH": "./src"
+    },
+    "activate": true,
+    "scripts": {
+        "post-install": "playwright install chromium",
+        "post-sync": "source .venv/bin/activate"
+    }
+}

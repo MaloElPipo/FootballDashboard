@@ -24,6 +24,62 @@ from betclic_scraper import scrape_betclic, quick_outright, COMPETITIONS
 
 ensure_cache_ready()
 
+def _run_async(coro):
+    try:
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        loop = None
+    if loop and loop.is_running():
+        import concurrent.futures
+        with concurrent.futures.ThreadPoolExecutor() as pool:
+            return pool.submit(asyncio.run, coro).result(timeout=60)
+    else:
+        return asyncio.run(coro)
+
+BETCLIC_FR_TO_CODE = {}
+for _n in get_all_nations():
+    BETCLIC_FR_TO_CODE[_n["fr"]] = _n["code"]
+BETCLIC_FR_TO_CODE["Tchéquie"] = "CZE"
+BETCLIC_FR_TO_CODE["USA"] = "USA"
+BETCLIC_FR_TO_CODE["Cap Vert"] = "CPV"
+BETCLIC_FR_TO_CODE["Côte d'Ivoire"] = "CIV"
+
+BETCLIC_FR_TO_BSD = {}
+for _n in get_all_nations():
+    BETCLIC_FR_TO_BSD[_n["fr"]] = _n["name"]
+BETCLIC_FR_TO_BSD["Tchéquie"] = "Czech Republic"
+BETCLIC_FR_TO_BSD["USA"] = "United States"
+BETCLIC_FR_TO_BSD["Cap Vert"] = "Cape Verde"
+BETCLIC_FR_TO_BSD["Côte d'Ivoire"] = "Ivory Coast"
+
+def _code_from_betclic(name):
+    if name in BETCLIC_FR_TO_CODE:
+        return BETCLIC_FR_TO_CODE[name]
+    for _n in get_all_nations():
+        if _n["fr"].lower() == name.lower() or _n["name"].lower() == name.lower():
+            return _n["code"]
+    return None
+
+@st.cache_data(ttl=300, show_spinner="Scraping Betclic...")
+def _fetch_betclic_wc():
+    try:
+        data = _run_async(scrape_betclic(
+            ["world_cup_2026"],
+            include_1x2=True,
+            include_goalscorer=False,
+            include_assist=False,
+            include_outright=True,
+        ))
+        if data:
+            d = data[0]
+            matches = [m.to_dict() for m in d["matches"]]
+            outrights = [o.to_dict() for o in d["outrights"]]
+            return {"matches": matches, "outrights": outrights}
+    except Exception as e:
+        st.error(f"Erreur scraping Betclic: {e}")
+        raise
+    return {"matches": [], "outrights": []}
+
 API_BASE = os.environ.get("STATS_API_URL", "https://api.thestatsapi.com/api")
 API_KEY = os.environ.get("STATS_API_KEY", "")
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
@@ -1974,6 +2030,7 @@ elif page == "📅 Calendrier CDM 2026":
         fetch_wc_events.clear()
         fetch_odds_api_h2h.clear()
         fetch_odds_api_outright.clear()
+        _fetch_betclic_wc.clear()
         st.rerun()
 
     try:
@@ -1986,11 +2043,33 @@ elif page == "📅 Calendrier CDM 2026":
     odds_h2h = fetch_odds_api_h2h()
     outright_odds = fetch_odds_api_outright()
 
+    try:
+        betclic_cal = _fetch_betclic_wc()
+    except Exception:
+        betclic_cal = {"matches": [], "outrights": []}
+    betclic_h2h_map = {}
+    for _bm in betclic_cal.get("matches", []):
+        _bm_sels = _bm.get("selections", [])
+        _bm_h = next((s["odds"] for s in _bm_sels if s["market_type"] == "1x2_home"), None)
+        _bm_d = next((s["odds"] for s in _bm_sels if s["market_type"] == "1x2_draw"), None)
+        _bm_a = next((s["odds"] for s in _bm_sels if s["market_type"] == "1x2_away"), None)
+        if _bm_h and _bm_d and _bm_a:
+            h_bsd = BETCLIC_FR_TO_BSD.get(_bm["home_team"], _bm["home_team"])
+            a_bsd = BETCLIC_FR_TO_BSD.get(_bm["away_team"], _bm["away_team"])
+            _bkey = f"{h_bsd} vs {a_bsd}"
+            betclic_h2h_map[_bkey] = {"home": _bm_h, "draw": _bm_d, "away": _bm_a}
+    betclic_outright_map = {}
+    for _bo in betclic_cal.get("outrights", []):
+        if "vainqueur" in _bo.get("market_name", "").lower():
+            for _bs in _bo.get("selections", []):
+                bsd_name = BETCLIC_FR_TO_BSD.get(_bs["selection_name"], _bs["selection_name"])
+                betclic_outright_map[bsd_name] = _bs["odds"]
+
     if not events:
         st.warning("Aucun match trouvé pour la Coupe du Monde 2026.")
     else:
         total_matches = len(events)
-        matches_with_odds = sum(1 for e in events if _match_key_from_bsd(e.get("home_team",""), e.get("away_team","")) in odds_h2h or e.get("odds_home"))
+        matches_with_odds = sum(1 for e in events if _match_key_from_bsd(e.get("home_team",""), e.get("away_team","")) in odds_h2h or _match_key_from_bsd(e.get("home_team",""), e.get("away_team","")) in betclic_h2h_map or e.get("odds_home"))
         finished = sum(1 for e in events if e.get("status") == "finished")
 
         c1, c2, c3, c4 = st.columns(4)
@@ -2093,13 +2172,14 @@ elif page == "📅 Calendrier CDM 2026":
 
                         mkey = _match_key_from_bsd(home, away)
                         match_odds = odds_h2h.get(mkey, {})
+                        betclic_match = betclic_h2h_map.get(mkey, {})
 
                         bsd_oh = ev.get("odds_home")
                         bsd_od = ev.get("odds_draw")
                         bsd_oa = ev.get("odds_away")
                         has_bsd = bsd_oh and bsd_od and bsd_oa
 
-                        if match_odds or has_bsd:
+                        if match_odds or has_bsd or betclic_match:
                             header_html = (
                                 "<table style='width:100%;border-collapse:collapse;margin:4px 0;font-size:0.85em'>"
                                 "<thead><tr style='border-bottom:1px solid #444'>"
@@ -2116,6 +2196,8 @@ elif page == "📅 Calendrier CDM 2026":
                                 bk_data = match_odds.get(bk_key, {})
                                 if bk_data:
                                     all_odds[bk_key] = bk_data
+                            if betclic_match:
+                                all_odds["betclic"] = betclic_match
 
                             best = {"home": 0, "draw": 0, "away": 0}
                             for bk_data in all_odds.values():
@@ -2124,7 +2206,7 @@ elif page == "📅 Calendrier CDM 2026":
                                     if v > best[col]:
                                         best[col] = v
 
-                            ALL_BK_LABELS = {"bet365": "Bet365", **SELECTED_BOOKMAKERS}
+                            ALL_BK_LABELS = {"bet365": "Bet365", **SELECTED_BOOKMAKERS, "betclic": "Betclic"}
                             rows_html = ""
                             for bk_key, bk_data in all_odds.items():
                                 bk_label = ALL_BK_LABELS.get(bk_key, bk_key)
@@ -2160,18 +2242,62 @@ elif page == "📅 Calendrier CDM 2026":
         st.markdown("---")
 
         st.subheader("🏆 Cotes vainqueur — Coupe du Monde 2026")
+
+        from wc_simulator import run_simulation as _run_sim_cal
+        @st.cache_data(ttl=600, show_spinner="Simulation V-Pin...")
+        def _sim_winner_odds():
+            sim = _run_sim_cal(n_sims=10000)
+            return {r["name"]: r["p_winner"] for r in sim}
+        model_winner_pcts = _sim_winner_odds()
+
+        all_nations_out = set()
         if outright_odds:
+            all_nations_out.update(outright_odds.keys())
+        all_nations_out.update(betclic_outright_map.keys())
+        for n_name, pct in model_winner_pcts.items():
+            if pct >= 0.5:
+                all_nations_out.add(n_name)
+
+        if all_nations_out:
             outright_rows = []
-            for nation, bk_odds in sorted(outright_odds.items(), key=lambda x: min(x[1].values())):
+            for nation in sorted(all_nations_out):
                 row = {"Nation": nation}
-                for bk_key in BK_KEYS:
-                    bk_label = SELECTED_BOOKMAKERS[bk_key]
-                    row[bk_label] = bk_odds.get(bk_key)
-                best_val = min(bk_odds.values())
-                row["Meilleure"] = best_val
+                all_vals = []
+                if outright_odds and nation in outright_odds:
+                    bk_odds = outright_odds[nation]
+                    for bk_key in BK_KEYS:
+                        bk_label = SELECTED_BOOKMAKERS[bk_key]
+                        v = bk_odds.get(bk_key)
+                        row[bk_label] = v
+                        if v:
+                            all_vals.append(v)
+                else:
+                    for bk_key in BK_KEYS:
+                        row[SELECTED_BOOKMAKERS[bk_key]] = None
+
+                bc_val = betclic_outright_map.get(nation)
+                row["Betclic"] = bc_val
+                if bc_val:
+                    all_vals.append(bc_val)
+
+                model_pct = model_winner_pcts.get(nation, 0)
+                if model_pct > 0:
+                    model_fair = round(100 / model_pct, 1)
+                    row["V-Pin"] = model_fair
+                    row["Prob. V-Pin"] = f"{model_pct:.1f}%"
+                else:
+                    row["V-Pin"] = None
+                    row["Prob. V-Pin"] = "—"
+
+                row["Meilleure"] = min(all_vals) if all_vals else None
+                row["_sort"] = min(all_vals) if all_vals else 9999
                 outright_rows.append(row)
+
+            outright_rows.sort(key=lambda x: x["_sort"])
+            for r in outright_rows:
+                del r["_sort"]
             df_out = pd.DataFrame(outright_rows)
-            st.dataframe(df_out, width="stretch", hide_index=True)
+            st.dataframe(df_out, use_container_width=True, hide_index=True)
         else:
             st.info("Cotes vainqueur indisponibles pour le moment.")
 
@@ -3322,61 +3448,13 @@ elif page == "📡 Cotes Betclic":
     st.header("📡 Cotes Betclic — Coupe du Monde 2026")
     st.caption(
         "Scraping live des cotes Betclic via gRPC-web. "
-        "Comparaison automatique avec le modèle V8 pour détecter les value bets."
+        "Comparaison automatique avec le modèle V-Pin (proxy closing Pinnacle) pour détecter les value bets."
     )
-
-    BETCLIC_FR_TO_CODE = {}
-    for _n in get_all_nations():
-        BETCLIC_FR_TO_CODE[_n["fr"]] = _n["code"]
-    BETCLIC_FR_TO_CODE["Tchéquie"] = "CZE"
-    BETCLIC_FR_TO_CODE["USA"] = "USA"
-    BETCLIC_FR_TO_CODE["Cap Vert"] = "CPV"
-    BETCLIC_FR_TO_CODE["Côte d'Ivoire"] = "CIV"
-
-    def _run_async(coro):
-        try:
-            loop = asyncio.get_running_loop()
-        except RuntimeError:
-            loop = None
-        if loop and loop.is_running():
-            import concurrent.futures
-            with concurrent.futures.ThreadPoolExecutor() as pool:
-                return pool.submit(asyncio.run, coro).result(timeout=60)
-        else:
-            return asyncio.run(coro)
-
-    @st.cache_data(ttl=300, show_spinner="Scraping Betclic...")
-    def _fetch_betclic_wc():
-        try:
-            data = _run_async(scrape_betclic(
-                ["world_cup_2026"],
-                include_1x2=True,
-                include_goalscorer=False,
-                include_assist=False,
-                include_outright=True,
-            ))
-            if data:
-                d = data[0]
-                matches = [m.to_dict() for m in d["matches"]]
-                outrights = [o.to_dict() for o in d["outrights"]]
-                return {"matches": matches, "outrights": outrights}
-        except Exception as e:
-            st.error(f"Erreur scraping Betclic: {e}")
-            raise
-        return {"matches": [], "outrights": []}
-
-    def _code_from_betclic(name):
-        if name in BETCLIC_FR_TO_CODE:
-            return BETCLIC_FR_TO_CODE[name]
-        for _n in WC2026_NATIONS:
-            if _n["fr"].lower() == name.lower() or _n["name"].lower() == name.lower():
-                return _n["code"]
-        return None
 
     tab_1x2, tab_outright, tab_value = st.tabs([
         "⚽ Cotes 1X2 Matchs",
         "🏆 Outrights (Vainqueur / Finale)",
-        "💎 Value Bets V8 vs Betclic",
+        "💎 Value Bets V-Pin vs Betclic",
     ])
 
     betclic_data = _fetch_betclic_wc()
@@ -3401,18 +3479,13 @@ elif page == "📡 Cotes Betclic":
                     except Exception:
                         pass
 
-                h_code = _code_from_betclic(m["home_team"])
-                a_code = _code_from_betclic(m["away_team"])
-                h_flag = flag_img(h_code) if h_code else ""
-                a_flag = flag_img(a_code) if a_code else ""
-
                 rows_1x2.append({
                     "Date": ko,
-                    "Domicile": f"{h_flag} {m['home_team']}",
+                    "Domicile": m['home_team'],
                     "1": h_odds if h_odds else "—",
                     "X": d_odds if d_odds else "—",
                     "2": a_odds if a_odds else "—",
-                    "Extérieur": f"{a_flag} {m['away_team']}",
+                    "Extérieur": m['away_team'],
                 })
 
             has_odds = [r for r in rows_1x2 if r["1"] != "—"]
@@ -3438,10 +3511,8 @@ elif page == "📡 Cotes Betclic":
                 st.subheader(f"🏆 {out['market_name']}")
                 rows_out = []
                 for s in out.get("selections", []):
-                    code = _code_from_betclic(s["selection_name"])
-                    flag = flag_img(code) if code else ""
                     rows_out.append({
-                        "Nation": f"{flag} {s['selection_name']}",
+                        "Nation": s['selection_name'],
                         "Cote Betclic": s["odds"],
                         "Prob. implicite": f"{100/s['odds']:.1f}%",
                     })
@@ -3450,10 +3521,10 @@ elif page == "📡 Cotes Betclic":
                     st.dataframe(df_out, use_container_width=True, hide_index=True)
 
     with tab_value:
-        st.subheader("💎 Détection de Value — V8 vs Betclic")
+        st.subheader("💎 Détection de Value — V-Pin vs Betclic")
         st.caption(
-            "Compare les probabilités du modèle V8 (calibré Pinnacle) "
-            "avec les cotes Betclic. Un edge positif = value bet potentiel."
+            "Compare les probabilités du modèle V-Pin (proxy closing Pinnacle) "
+            "avec les cotes d'ouverture Betclic. Un edge positif = value bet potentiel (CLV attendu)."
         )
 
         matches_v = betclic_data["matches"]
@@ -3463,7 +3534,7 @@ elif page == "📡 Cotes Betclic":
         ]
 
         if not matches_with_odds:
-            st.info("Pas encore de cotes 1X2 Betclic pour comparer avec V8.")
+            st.info("Pas encore de cotes 1X2 Betclic pour comparer avec V-Pin.")
         else:
             try:
                 elo_map = _build_elo_map()
@@ -3474,6 +3545,7 @@ elif page == "📡 Cotes Betclic":
                 st.warning("ELO map non disponible. Recalibre d'abord dans Classement ELO.")
             else:
                 value_rows = []
+                all_edges = []
                 for m in matches_with_odds:
                     sels = m.get("selections", [])
                     h_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_home"), None)
@@ -3495,9 +3567,9 @@ elif page == "📡 Cotes Betclic":
                     avg_elo = (h_elo + a_elo) / 2
                     p1, px, p2 = sigmoid_v8_1x2(delta, elo_avg=avg_elo, phase="G")
 
-                    v8_fair_h = round(1 / p1, 2) if p1 > 0 else 999
-                    v8_fair_d = round(1 / px, 2) if px > 0 else 999
-                    v8_fair_a = round(1 / p2, 2) if p2 > 0 else 999
+                    fair_h = round(1 / p1, 2) if p1 > 0 else 999
+                    fair_d = round(1 / px, 2) if px > 0 else 999
+                    fair_a = round(1 / p2, 2) if p2 > 0 else 999
 
                     edge_h = round((p1 - 1 / h_odds) * 100, 1)
                     edge_d = round((px - 1 / d_odds) * 100, 1)
@@ -3506,36 +3578,29 @@ elif page == "📡 Cotes Betclic":
                     best_edge = max(edge_h, edge_d, edge_a)
                     if edge_h == best_edge:
                         best_side = f"1 ({m['home_team']})"
-                        best_odds = h_odds
-                        best_fair = v8_fair_h
                     elif edge_d == best_edge:
                         best_side = "X (Nul)"
-                        best_odds = d_odds
-                        best_fair = v8_fair_d
                     else:
                         best_side = f"2 ({m['away_team']})"
-                        best_odds = a_odds
-                        best_fair = v8_fair_a
 
-                    h_flag = flag_img(h_code)
-                    a_flag = flag_img(a_code)
-
+                    match_label = f"{m['home_team']} vs {m['away_team']}"
                     value_rows.append({
-                        "Match": f"{h_flag} {m['home_team']} vs {a_flag} {m['away_team']}",
+                        "Match": match_label,
                         "ELO Δ": f"{delta:+.0f}",
                         "Betclic 1": h_odds,
-                        "V8 fair 1": v8_fair_h,
+                        "V-Pin 1": fair_h,
                         "Edge 1": f"{edge_h:+.1f}%",
                         "Betclic X": d_odds,
-                        "V8 fair X": v8_fair_d,
+                        "V-Pin X": fair_d,
                         "Edge X": f"{edge_d:+.1f}%",
                         "Betclic 2": a_odds,
-                        "V8 fair 2": v8_fair_a,
+                        "V-Pin 2": fair_a,
                         "Edge 2": f"{edge_a:+.1f}%",
-                        "Meilleur edge": f"{best_edge:+.1f}%",
+                        "Best edge": f"{best_edge:+.1f}%",
                         "Côté": best_side,
                         "_sort_edge": best_edge,
                     })
+                    all_edges.extend([edge_h, edge_d, edge_a])
 
                 if value_rows:
                     value_rows.sort(key=lambda x: x["_sort_edge"], reverse=True)
@@ -3543,30 +3608,36 @@ elif page == "📡 Cotes Betclic":
                         del r["_sort_edge"]
                     df_value = pd.DataFrame(value_rows)
 
-                    n_value = sum(1 for r in value_rows if float(r["Meilleur edge"].replace("+","").replace("%","")) > 0)
+                    n_value = sum(1 for r in value_rows if float(r["Best edge"].replace("+","").replace("%","")) > 0)
                     st.success(f"**{n_value} value bets** détectés sur {len(value_rows)} matchs CDM 2026")
 
                     st.dataframe(df_value, use_container_width=True, hide_index=True)
 
                     st.markdown("---")
                     st.subheader("📊 Distribution des edges")
-                    edges_data = []
-                    for r in value_rows:
-                        m_name = r["Match"]
-                        for side in ["1", "X", "2"]:
-                            edge_val = float(r[f"Edge {side}"].replace("+","").replace("%",""))
-                            edges_data.append({"Match": m_name, "Côté": side, "Edge (%)": edge_val})
-
-                    fig_edge = px.bar(
-                        pd.DataFrame(edges_data),
-                        x="Match", y="Edge (%)", color="Côté",
-                        barmode="group",
-                        title="Edge V8 vs Betclic par match",
-                        color_discrete_map={"1": "#3b82f6", "X": "#f59e0b", "2": "#ef4444"},
+                    import plotly.graph_objects as _go_edge
+                    fig_hist = _go_edge.Figure()
+                    fig_hist.add_trace(_go_edge.Histogram(
+                        x=all_edges, nbinsx=30,
+                        marker_color="#3b82f6", opacity=0.8,
+                        name="Edges"
+                    ))
+                    fig_hist.add_vline(x=0, line_dash="dash", line_color="red", line_width=2)
+                    fig_hist.update_layout(
+                        xaxis_title="Edge V-Pin vs Betclic (%)",
+                        yaxis_title="Nombre de paris",
+                        height=400,
+                        showlegend=False,
                     )
-                    fig_edge.update_layout(xaxis_tickangle=-45, height=500)
-                    fig_edge.add_hline(y=0, line_dash="dash", line_color="gray")
-                    st.plotly_chart(fig_edge, use_container_width=True)
+                    st.plotly_chart(fig_hist, use_container_width=True)
+
+                    avg_edge = sum(all_edges) / len(all_edges) if all_edges else 0
+                    pos_edges = [e for e in all_edges if e > 0]
+                    st.caption(
+                        f"Edge moyen : **{avg_edge:+.1f}%** · "
+                        f"Edges positifs : **{len(pos_edges)}/{len(all_edges)}** · "
+                        f"Edge max : **{max(all_edges):+.1f}%**"
+                    )
                 else:
                     st.info("Aucune comparaison possible (codes nations non trouvés).")
 

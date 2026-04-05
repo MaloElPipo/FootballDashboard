@@ -58,8 +58,15 @@ The dashboard is built with Streamlit, providing an interactive web interface. I
         - **Monte Carlo Simulation:** For WC 2026 predictions, simulating group stages, knockout rounds, and providing nation-specific probabilities.
     - **Data Processing:** Handles historical odds, scraped odds, and ELO computations.
     - **Scraping:**
-        - **Betclic Scraper:** Pure HTTP scraper for Betclic odds (1X2, goalscorer, outrights) using gRPC-web.
+        - **Betclic Scraper:** Pure HTTP scraper for Betclic odds (1X2, goalscorer, outrights, Garantie 2 Buts) using gRPC-web.
+            - **Garantie 2 Buts (Early Win) scraping path:** gRPC match response → market with label containing "2 buts d'avance" → selections in **field 16** (not field 11 like other markets) → team name in sub-field 10, odds in sub-field 12 (double, 8 bytes). Market state=8 does NOT mean no data — selections can still be present in field 16.
         - **Squad Scraper:** Scrapes Transfermarkt for WC 2026 national team squad data, including player profiles, market values, and positions.
+    - **Garantie 2+ Section (planned):**
+        - **Inputs:** Match selection (Betclic dropdown), target team, 3 manual Betfair Exchange lays (1X2 lay, Under 0.5 team goals lay, 0-0 correct score). Optional: Betfair exact score lines for MLE lambda fit.
+        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping.
+        - **Lambda derivation:** λ_team = -ln(P(0 team goals)), λ_opp from P(0-0). If exact scores provided, MLE fit on all data points for better precision.
+        - **G2+ probability:** Monte Carlo simulation (10K iterations, minute-by-minute) — team wins if it led by 2+ goals at any point OR wins at full time. Also show fixed-fraction method (Sheets legacy) for comparison.
+        - **Output:** xG team, xG opponent, xG match, P(G2+) MC, P(G2+) fractions, fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator.
     - **Workflow:** Runs on port 5000 via a Streamlit web application.
 
 # External Dependencies

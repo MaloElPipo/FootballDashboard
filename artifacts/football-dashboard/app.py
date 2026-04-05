@@ -3842,6 +3842,9 @@ elif page == "🎯 Garantie 2+":
         _bf_state_key = f"_g2_bf_last_{g2_comp_key}_{g2_sel_idx}_{g2_team_choice}"
         if st.session_state.get("_g2_bf_auto_key") != _bf_state_key:
             st.session_state["g2_lay1x2"] = round(bf_lay_default, 2)
+            st.session_state["g2_ou25"] = 0.0
+            st.session_state["g2_btts"] = 0.0
+            st.session_state["g2_ou05"] = 0.0
             st.session_state["_g2_bf_auto_key"] = _bf_state_key
 
         _cs_state_key = f"_g2_cs_{g2_comp_key}_{g2_sel_idx}"
@@ -3952,6 +3955,11 @@ elif page == "🎯 Garantie 2+":
         elif cs_data and cs_data.error:
             st.warning(f"⚠️ Betfair: {cs_data.error}")
 
+        if cs_data and not cs_data.error and scraped_ou05 == 0.0:
+            cs00_sel = cs_data.cs_detail.get("0 - 0") or cs_data.cs_detail.get("0-0")
+            if cs00_sel and cs00_sel.mid_price > 1.0:
+                scraped_ou05 = round(cs00_sel.mid_price, 3)
+
         _mkt_state_key = f"_g2_mkt_auto_{_cs_state_key}_{g2_team_choice}"
         if st.session_state.get("_g2_mkt_auto_key") != _mkt_state_key and cs_data and not cs_data.error:
             if scraped_lay:
@@ -3969,25 +3977,34 @@ elif page == "🎯 Garantie 2+":
         elif not scrape_info_parts:
             st.caption("Saisissez le Lay 1X2 minimum, puis scrapez Betfair pour O/U 2.5 et BTTS. Chaque marché améliore la précision.")
 
+        if "g2_lay1x2" not in st.session_state:
+            st.session_state["g2_lay1x2"] = round(bf_lay_default, 2)
+        if "g2_ou25" not in st.session_state:
+            st.session_state["g2_ou25"] = scraped_ou25
+        if "g2_btts" not in st.session_state:
+            st.session_state["g2_btts"] = scraped_btts
+        if "g2_ou05" not in st.session_state:
+            st.session_state["g2_ou05"] = scraped_ou05
+
         bf_col1, bf_col2, bf_col3 = st.columns(3)
         with bf_col1:
             g2_lay_1x2 = st.number_input(
                 f"Lay 1X2 {g2_team_choice}",
-                min_value=1.01, max_value=100.0, value=round(bf_lay_default, 2), step=0.01,
+                min_value=1.01, max_value=100.0, step=0.01,
                 key="g2_lay1x2",
                 help="Cote Lay All Betfair Exchange du 1X2 de l'équipe cible"
             )
         with bf_col2:
             g2_ou25 = st.number_input(
                 "O/U 2.5 Under mid-price",
-                min_value=0.0, max_value=50.0, value=scraped_ou25, step=0.01,
+                min_value=0.0, max_value=50.0, step=0.01,
                 key="g2_ou25",
                 help="Mid-price volume-weighted du Under 2.5 Goals. 0 = désactivé."
             )
         with bf_col3:
             g2_btts = st.number_input(
                 "BTTS Yes mid-price",
-                min_value=0.0, max_value=50.0, value=scraped_btts, step=0.01,
+                min_value=0.0, max_value=50.0, step=0.01,
                 key="g2_btts",
                 help="Mid-price volume-weighted du Both Teams To Score Yes. 0 = désactivé."
             )
@@ -3996,9 +4013,9 @@ elif page == "🎯 Garantie 2+":
         with bf_col4:
             g2_ou05 = st.number_input(
                 "O/U 0.5 Under mid-price",
-                min_value=0.0, max_value=50.0, value=scraped_ou05, step=0.01,
+                min_value=0.0, max_value=50.0, step=0.01,
                 key="g2_ou05",
-                help="Mid-price volume-weighted du Under 0.5 Goals. 0 = désactivé. Prioritaire sur le 0-0 CS."
+                help="Mid-price volume-weighted du Under 0.5 Goals. 0 = désactivé. Fallback: mid du 0-0 CS."
             )
 
         st.markdown("---")

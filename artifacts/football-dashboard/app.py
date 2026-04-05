@@ -3884,6 +3884,34 @@ elif page == "🎯 Garantie 2+":
                     )
                     st.session_state["_g2_cs_data"] = cs_data
                     st.session_state["_g2_cs_cache_key"] = _cs_state_key
+
+                    _lay_val = get_1x2_lay_team(cs_data, g2_team_choice)
+                    if _lay_val:
+                        st.session_state["g2_lay1x2"] = _lay_val
+                    _ou25_v = get_ou25_under_mid(cs_data)
+                    if _ou25_v:
+                        st.session_state["g2_ou25"] = _ou25_v
+                    _btts_v = get_btts_yes_mid(cs_data)
+                    if _btts_v:
+                        st.session_state["g2_btts"] = _btts_v
+                    _ou05_v = get_ou05_under_mid(cs_data)
+                    if not _ou05_v:
+                        _cs00 = cs_data.cs_detail.get("0 - 0") or cs_data.cs_detail.get("0-0")
+                        if _cs00 and _cs00.mid_price > 1.0:
+                            _ou05_v = round(_cs00.mid_price, 3)
+                    if _ou05_v:
+                        st.session_state["g2_ou05"] = _ou05_v
+
+                    _team_home = g2_team_choice == g2_match["home"]
+                    _cs_mids = cs_to_exact_score_mids(cs_data, _team_home)
+                    _old_cs_keys = [k for k in st.session_state if k.startswith("g2_cs_")]
+                    for k in _old_cs_keys:
+                        del st.session_state[k]
+                    for (gt, go), mid in _cs_mids.items():
+                        st.session_state[f"g2_cs_{gt}_{go}"] = round(float(mid), 2)
+
+                    st.session_state["_g2_mkt_auto_key"] = f"_g2_mkt_auto_{_cs_state_key}_{g2_team_choice}"
+                    st.rerun()
                 except Exception as e:
                     st.error(f"Erreur scraping Betfair: {e}")
 
@@ -4026,6 +4054,10 @@ elif page == "🎯 Garantie 2+":
 
         if cs_data and cs_data.cs_detail and not cs_data.error:
             cs_mids = cs_to_exact_score_mids(cs_data, team_is_home)
+            for (gt, go), mid_val in cs_mids.items():
+                _cs_key = f"g2_cs_{gt}_{go}"
+                if _cs_key not in st.session_state:
+                    st.session_state[_cs_key] = round(float(mid_val), 2)
             with st.expander(f"📐 Scores exacts — mid-prices ({len(cs_mids)} scores)", expanded=True):
                 st.caption("Mid-prices calculés automatiquement (Back × w_back + Lay × w_lay). Modifiables.")
                 sorted_scores = sorted(cs_mids.items(), key=lambda x: (x[0][1], x[0][0]))
@@ -4038,7 +4070,7 @@ elif page == "🎯 Garantie 2+":
                             label = f"{g2_team_choice} {gt} - {go} {opp_name}"
                             v = st.number_input(
                                 label, min_value=1.5, max_value=1000.0,
-                                value=round(float(mid_val), 2), step=0.5,
+                                step=0.5,
                                 key=f"g2_cs_{gt}_{go}",
                             )
                             exact_scores[(gt, go)] = v
@@ -4048,6 +4080,10 @@ elif page == "🎯 Garantie 2+":
                 (1, 1), (2, 2), (3, 3),
                 (0, 1), (0, 2), (0, 3),
             ]
+            for gt, go in _DEFAULT_SCORES:
+                _cs_key = f"g2_cs_{gt}_{go}"
+                if _cs_key not in st.session_state:
+                    st.session_state[_cs_key] = 8.0
             with st.expander("📐 Scores exacts (optionnel — Scraper Betfair pour auto-remplir)", expanded=False):
                 st.caption(
                     "Valeurs par défaut. Scrapez Betfair pour obtenir les vrais mid-prices, "
@@ -4062,7 +4098,7 @@ elif page == "🎯 Garantie 2+":
                             label = f"{g2_team_choice} {gt} - {go} {opp_name}"
                             v = st.number_input(
                                 label, min_value=1.5, max_value=1000.0,
-                                value=8.0, step=0.5,
+                                step=0.5,
                                 key=f"g2_cs_{gt}_{go}",
                             )
                             if v != 8.0:

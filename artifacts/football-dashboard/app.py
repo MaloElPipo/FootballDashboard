@@ -612,6 +612,7 @@ _PAGE_LIST = [
     "🔮 Prédictions",
     "🔬 Backtest V8",
     "📡 Cotes Betclic",
+    "🎯 Garantie 2+",
     "📊 Suivi des paris",
     "🤖 Assistant IA",
 ]
@@ -632,7 +633,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "📊 Suivi des paris"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "🎯 Garantie 2+", "📊 Suivi des paris"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -3641,6 +3642,254 @@ elif page == "📡 Cotes Betclic":
                 else:
                     st.info("Aucune comparaison possible (codes nations non trouvés).")
 
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "🎯 Garantie 2+":
+    from g2_engine import compute_g2, edge_percent, ev0, build_poisson_matrix
+    from betclic_scraper import BetclicScraper
+
+    st.header("🎯 Garantie 2 Buts d'Écart")
+    st.caption(
+        "Calcul de l'EV0 sur le marché \"Early Win\" — l'équipe mène de 2 buts à un moment du match OU gagne. "
+        "Cotes Betclic scrapées automatiquement, lambdas dérivés des cotes Betfair Exchange."
+    )
+
+    _G2_COMPETITIONS = {
+        "Coupe du Monde 2026": "world_cup_2026",
+        "Champions League": "champions_league",
+        "Europa League": "europa_league",
+        "Ligue 1": "ligue_1",
+        "Premier League": "premier_league",
+        "La Liga": "la_liga",
+        "Bundesliga": "bundesliga",
+        "Serie A": "serie_a",
+    }
+
+    g2_col_comp, g2_col_refresh = st.columns([3, 1])
+    with g2_col_comp:
+        g2_comp_label = st.selectbox("Compétition", list(_G2_COMPETITIONS.keys()), key="g2_comp")
+    g2_comp_key = _G2_COMPETITIONS[g2_comp_label]
+
+    @st.cache_data(ttl=300, show_spinner="Scraping Betclic G2+...")
+    def _fetch_g2_matches(comp_key: str):
+        async def _do():
+            async with BetclicScraper() as scraper:
+                matches, _ = await scraper.fetch_competition_matches(comp_key)
+                results = []
+                for m in matches:
+                    sels = await scraper.fetch_match_grpc(m.match_id, {"early_win"})
+                    ew = {}
+                    for s in sels:
+                        ew[s.selection_name] = s.odds
+                    results.append({
+                        "home": m.home_team,
+                        "away": m.away_team,
+                        "match_id": m.match_id,
+                        "kickoff": m.kickoff_utc.isoformat() if m.kickoff_utc else "",
+                        "early_win": ew,
+                    })
+                    await asyncio.sleep(0.3)
+                return results
+        return _run_async(_do())
+
+    with g2_col_refresh:
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("🔄 Refresh", key="g2_refresh"):
+            _fetch_g2_matches.clear()
+            st.rerun()
+
+    g2_matches = _fetch_g2_matches(g2_comp_key)
+
+    if not g2_matches:
+        st.info(f"Aucun match trouvé pour {g2_comp_label} sur Betclic.")
+    else:
+        match_labels = []
+        for m in g2_matches:
+            ko = m["kickoff"]
+            if ko:
+                try:
+                    from datetime import datetime as _dt
+                    _ko_dt = _dt.fromisoformat(ko.replace("Z", "+00:00"))
+                    ko = _ko_dt.strftime("%d/%m %H:%M")
+                except Exception:
+                    pass
+            ew_info = ""
+            if m["early_win"]:
+                odds_parts = [f"{t}: {o}" for t, o in m["early_win"].items()]
+                ew_info = f" — G2+: {' / '.join(odds_parts)}"
+            match_labels.append(f"{ko} | {m['home']} vs {m['away']}{ew_info}")
+
+        g2_sel_idx = st.selectbox("Match", range(len(match_labels)),
+                                   format_func=lambda i: match_labels[i], key="g2_match")
+        g2_match = g2_matches[g2_sel_idx]
+
+        st.markdown("---")
+
+        g2_team_options = [g2_match["home"], g2_match["away"]]
+        g2_team_choice = st.radio("Équipe cible", g2_team_options, horizontal=True, key="g2_team")
+
+        betclic_g2_odds = g2_match["early_win"].get(g2_team_choice)
+
+        if betclic_g2_odds:
+            st.success(f"✅ Cote Betclic G2+ **{g2_team_choice}** : **{betclic_g2_odds}**")
+        else:
+            st.warning(f"⚠️ Pas de cote G2+ Betclic trouvée pour {g2_team_choice}")
+
+        st.subheader("📊 Paramètres Betfair Exchange")
+        st.caption("Saisissez les 3 cotes Betfair Exchange pour calculer les xG via Poisson.")
+
+        bf_col1, bf_col2, bf_col3 = st.columns(3)
+        with bf_col1:
+            g2_lay_1x2 = st.number_input(
+                f"Lay 1X2 {g2_team_choice}",
+                min_value=1.01, max_value=100.0, value=2.50, step=0.01,
+                key="g2_lay1x2",
+                help="Cote lay Betfair Exchange du 1X2 de l'équipe cible"
+            )
+        with bf_col2:
+            g2_lay_u05 = st.number_input(
+                f"Lay Under 0.5 buts {g2_team_choice}",
+                min_value=1.01, max_value=50.0, value=3.00, step=0.01,
+                key="g2_layu05",
+                help="Cote lay du Under 0.5 buts de l'équipe (= P(0 but) = 1/cote)"
+            )
+        with bf_col3:
+            g2_odds_00 = st.number_input(
+                "Cote score exact 0-0",
+                min_value=1.5, max_value=200.0, value=10.0, step=0.5,
+                key="g2_odds00",
+                help="Cote Betfair Exchange du score exact 0-0"
+            )
+
+        st.markdown("---")
+        with st.expander("📐 Scores exacts (optionnel — améliore la précision des xG)", expanded=False):
+            st.caption(
+                "Ajoutez des cotes de scores exacts Betfair pour affiner les lambdas par maximum likelihood (MLE). "
+                "Plus de lignes = meilleure précision."
+            )
+            n_scores = st.number_input("Nombre de scores exacts", min_value=0, max_value=20, value=0, key="g2_nscores")
+            exact_scores: dict[tuple[int, int], float] = {}
+            if n_scores > 0:
+                for sc_i in range(int(n_scores)):
+                    sc_cols = st.columns(3)
+                    with sc_cols[0]:
+                        sc_team = st.number_input(f"Buts {g2_team_choice}", min_value=0, max_value=9,
+                                                   value=1, key=f"g2_sc_t_{sc_i}")
+                    with sc_cols[1]:
+                        opp_name = g2_match["away"] if g2_team_choice == g2_match["home"] else g2_match["home"]
+                        sc_opp = st.number_input(f"Buts {opp_name}", min_value=0, max_value=9,
+                                                  value=0, key=f"g2_sc_o_{sc_i}")
+                    with sc_cols[2]:
+                        sc_odds = st.number_input("Cote Betfair", min_value=1.5, max_value=1000.0,
+                                                   value=8.0, step=0.5, key=f"g2_sc_odds_{sc_i}")
+                    exact_scores[(int(sc_team), int(sc_opp))] = sc_odds
+
+        st.markdown("---")
+
+        if st.button("🧮 Calculer EV0", type="primary", key="g2_calc"):
+            with st.spinner("Simulation Monte Carlo en cours (50 000 itérations)..."):
+                g2_result = compute_g2(
+                    lay_1x2=g2_lay_1x2,
+                    lay_u05_team=g2_lay_u05,
+                    odds_00=g2_odds_00,
+                    betclic_odds=betclic_g2_odds,
+                    exact_score_odds=exact_scores if exact_scores else None,
+                    n_sims=50_000,
+                )
+
+            st.subheader("📈 Résultats")
+
+            res_col1, res_col2, res_col3 = st.columns(3)
+            with res_col1:
+                st.metric(f"xG {g2_team_choice}", f"{g2_result.lambda_team:.3f}")
+            with res_col2:
+                opp_name = g2_match["away"] if g2_team_choice == g2_match["home"] else g2_match["home"]
+                st.metric(f"xG {opp_name}", f"{g2_result.lambda_opp:.3f}")
+            with res_col3:
+                st.metric("xG Match", f"{g2_result.xg_match:.3f}")
+
+            st.caption(f"Méthode λ : {g2_result.method}")
+
+            st.markdown("---")
+
+            mc_col1, mc_col2, mc_col3, mc_col4 = st.columns(4)
+            with mc_col1:
+                st.metric("P(G2+) Monte Carlo", f"{g2_result.prob_g2_mc*100:.2f}%")
+            with mc_col2:
+                st.metric("Cote fair (MC)", f"{g2_result.fair_odds_mc:.3f}")
+            with mc_col3:
+                st.metric("P(G2+) Fractions", f"{g2_result.prob_g2_fractions*100:.2f}%")
+            with mc_col4:
+                st.metric("Cote fair (Frac)", f"{g2_result.fair_odds_fractions:.3f}")
+
+            if betclic_g2_odds:
+                st.markdown("---")
+                st.subheader("💰 Value Analysis")
+
+                edge_mc = edge_percent(g2_result.fair_odds_mc, betclic_g2_odds)
+                ev0_mc = ev0(g2_result.prob_g2_mc, betclic_g2_odds)
+                edge_frac = edge_percent(g2_result.fair_odds_fractions, betclic_g2_odds)
+
+                val_col1, val_col2, val_col3 = st.columns(3)
+                with val_col1:
+                    st.metric("Cote Betclic", f"{betclic_g2_odds}")
+                with val_col2:
+                    color = "🟢" if edge_mc > 0 else "🔴"
+                    st.metric(f"{color} Edge MC", f"{edge_mc:+.2f}%")
+                with val_col3:
+                    color2 = "🟢" if edge_frac > 0 else "🔴"
+                    st.metric(f"{color2} Edge Fractions", f"{edge_frac:+.2f}%")
+
+                if edge_mc > 0:
+                    st.success(
+                        f"✅ **VALUE DÉTECTÉE** — EV0 = {ev0_mc:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_mc:.3f}"
+                    )
+                else:
+                    st.error(
+                        f"❌ Pas de value — EV0 = {ev0_mc:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_mc:.3f}"
+                    )
+
+                betclic_manual = st.number_input(
+                    "Cote bookmaker manuelle (optionnel)",
+                    min_value=1.01, max_value=500.0, value=betclic_g2_odds,
+                    step=0.01, key="g2_manual_odds",
+                    help="Si vous voulez tester une autre cote (Winamax, etc.)"
+                )
+                if betclic_manual != betclic_g2_odds:
+                    edge_manual = edge_percent(g2_result.fair_odds_mc, betclic_manual)
+                    ev0_manual = ev0(g2_result.prob_g2_mc, betclic_manual)
+                    color_m = "🟢" if edge_manual > 0 else "🔴"
+                    st.info(f"{color_m} Cote manuelle {betclic_manual} → Edge MC: {edge_manual:+.2f}% | EV0: {ev0_manual:+.2f}%")
+
+            st.markdown("---")
+            st.subheader("🔢 Matrice Poisson")
+
+            max_display = 7
+            matrix = g2_result.poisson_matrix[:max_display, :max_display]
+            opp_name = g2_match["away"] if g2_team_choice == g2_match["home"] else g2_match["home"]
+            idx_labels = [str(i) for i in range(max_display)]
+
+            import plotly.graph_objects as _go_g2
+            fig_matrix = _go_g2.Figure(data=_go_g2.Heatmap(
+                z=matrix * 100,
+                x=idx_labels,
+                y=idx_labels,
+                text=[[f"{matrix[i,j]*100:.2f}%" for j in range(max_display)] for i in range(max_display)],
+                texttemplate="%{text}",
+                colorscale="Blues",
+                showscale=True,
+                colorbar=dict(title="%"),
+            ))
+            fig_matrix.update_layout(
+                title=f"P(score) — {g2_team_choice} (lignes) vs {opp_name} (colonnes)",
+                xaxis_title=f"Buts {opp_name}",
+                yaxis_title=f"Buts {g2_team_choice}",
+                height=450,
+                yaxis=dict(autorange="reversed"),
+            )
+            st.plotly_chart(fig_matrix, use_container_width=True)
 
 # ═══════════════════════════════════════════════════════════════════
 elif page == "📊 Suivi des paris":

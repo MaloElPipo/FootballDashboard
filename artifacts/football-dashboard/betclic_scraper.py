@@ -245,10 +245,13 @@ _MATCH_RESULT_LABELS = ("résultat du match", "match result", "1x2")
 _DOUBLE_CHANCE_LABELS = ("double chance",)
 _TOTAL_GOALS_LABELS = ("nombre total de buts", "total goals", "plus/moins")
 _BTTS_LABELS = ("2 équipes marquent", "both teams to score", "les deux équipes marquent")
+_EARLY_WIN_LABELS = ("2 buts d'avance", "possède 2 buts", "early win")
 
 
 def _classify_grpc_market(name: str) -> str | None:
     lower = name.lower()
+    if any(x in lower for x in _EARLY_WIN_LABELS):
+        return "early_win"
     if any(x in lower for x in _GOALSCORER_LABELS):
         return "goalscorer"
     if any(x in lower for x in _ASSIST_LABELS):
@@ -322,6 +325,35 @@ def _parse_grpc_markets(
 
         state = market.get(9, [0])[0]
         if state == 3:
+            continue
+
+        if market_type == "early_win":
+            for sel_bytes in market.get(16, []):
+                try:
+                    sel = _proto_fields(sel_bytes)
+                except Exception:
+                    continue
+                name_b = (sel.get(10) or sel.get(11) or [None])[0]
+                if not name_b:
+                    continue
+                sel_name = name_b.decode("utf-8", errors="replace").strip()
+                if not sel_name:
+                    continue
+                odds_raw = (sel.get(12) or [None])[0]
+                if not odds_raw or len(odds_raw) != 8:
+                    continue
+                try:
+                    odds_val = struct.unpack("<d", odds_raw)[0]
+                    if not (1.01 <= odds_val <= 1000.0):
+                        continue
+                    selections.append(BetclicSelection(
+                        market_type="early_win",
+                        selection_name=sel_name,
+                        odds=round(odds_val, 2),
+                        market_name=market_name,
+                    ))
+                except struct.error:
+                    continue
             continue
 
         for group_bytes in market.get(11, []):

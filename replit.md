@@ -1,221 +1,75 @@
-# Workspace
+# Overview
 
-## Overview
+This is a pnpm workspace monorepo using TypeScript, designed for building and deploying applications, primarily focusing on a football analytics dashboard and its supporting API. The project aims to provide comprehensive data visualization and prediction capabilities for football events, including the FIFA World Cup 2026.
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+**Key Capabilities:**
+- **Football Analytics Dashboard:** A Streamlit app offering detailed analysis, ELO rankings, match predictions, odds comparison, and World Cup 2026 simulations.
+- **API Server:** An Express.js backend serving data and handling business logic.
+- **Data Scraping:** Tools for gathering odds data from various bookmakers and national squad information from Transfermarkt.
 
-## Stack
+**Business Vision & Market Potential:**
+The project taps into the growing market for sports analytics and betting insights, offering a sophisticated tool for enthusiasts and potentially professional analysts. The focus on the upcoming World Cup 2026 positions it to capture significant user interest during a major global sporting event.
 
-- **Monorepo tool**: pnpm workspaces
-- **Node.js version**: 24
-- **Package manager**: pnpm
-- **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod (`zod/v4`), `drizzle-zod`
-- **API codegen**: Orval (from OpenAPI spec)
-- **Build**: esbuild (CJS bundle)
+# User Preferences
 
-## Structure
+I prefer iterative development, focusing on one feature or bug fix at a time. Please ask for confirmation before making significant architectural changes or adding new external dependencies. For any new features, prioritize robust error handling and clear logging. I value detailed explanations of complex logic, especially in prediction models or data processing.
 
-```text
-artifacts-monorepo/
-├── artifacts/              # Deployable applications
-│   ├── api-server/         # Express API server
-│   └── football-dashboard/ # Streamlit football analytics (CDM 2026)
-│       ├── app.py              # Main Streamlit app (7 sections)
-│       ├── backtest_engine.py  # V8 model backtest (541 matchs, 10 compétitions)
-│       ├── scraped_odds.json   # 426 matchs scraped (OddsPortal via OddsHarvester)
-│       ├── historical_odds.json # Euro2024/Copa2024 Pinnacle odds (legacy)
-│       ├── elo_engine.py       # ELO computation (eloratings.net + BSD adjustments)
-│       ├── wc_simulator.py     # WC2026 tournament simulator
-│       ├── bet_tracker.py      # Bet tracking with Kelly sizing
-│       └── nations_data.py     # 48 WC2026 nations data
-├── lib/                    # Shared libraries
-│   ├── api-spec/           # OpenAPI spec + Orval codegen config
-│   ├── api-client-react/   # Generated React Query hooks
-│   ├── api-zod/            # Generated Zod schemas from OpenAPI
-│   └── db/                 # Drizzle ORM schema + DB connection
-├── scripts/                # Utility scripts (single workspace package)
-│   └── src/                # Individual .ts scripts, run via `pnpm --filter @workspace/scripts run <script>`
-├── pnpm-workspace.yaml     # pnpm workspace (artifacts/*, lib/*, lib/integrations/*, scripts)
-├── tsconfig.base.json      # Shared TS options (composite, bundler resolution, es2022)
-├── tsconfig.json           # Root TS project references
-└── package.json            # Root package with hoisted devDeps
-```
+# System Architecture
 
-## TypeScript & Composite Projects
+The project is structured as a pnpm workspace monorepo, facilitating shared code and independent deployment of applications.
 
-Every package extends `tsconfig.base.json` which sets `composite: true`. The root `tsconfig.json` lists all packages as project references. This means:
+**Core Technologies:**
+- **Monorepo Tool:** pnpm workspaces
+- **Node.js:** v24
+- **TypeScript:** v5.9
+- **API Framework:** Express v5
+- **Database:** PostgreSQL with Drizzle ORM
+- **Validation:** Zod (`zod/v4`), `drizzle-zod`
+- **API Codegen:** Orval (from OpenAPI spec)
+- **Build Tool:** esbuild (CJS bundle)
+- **Frontend (Dashboard):** Python + Streamlit
 
-- **Always typecheck from the root** — run `pnpm run typecheck` (which runs `tsc --build --emitDeclarationOnly`). This builds the full dependency graph so that cross-package imports resolve correctly. Running `tsc` inside a single package will fail if its dependencies haven't been built yet.
-- **`emitDeclarationOnly`** — we only emit `.d.ts` files during typecheck; actual JS bundling is handled by esbuild/tsx/vite...etc, not `tsc`.
-- **Project references** — when package A depends on package B, A's `tsconfig.json` must list B in its `references` array. `tsc --build` uses this to determine build order and skip up-to-date packages.
+**Monorepo Structure:**
+- `artifacts/`: Deployable applications (e.g., `api-server`, `football-dashboard`).
+- `lib/`: Shared libraries (e.g., `api-spec`, `api-client-react`, `api-zod`, `db`).
+- `scripts/`: Utility scripts.
 
-## Root Scripts
+**TypeScript & Composite Projects:**
+All packages extend a base `tsconfig.base.json` with `composite: true`. The root `tsconfig.json` references all packages, enabling cross-package type-checking and dependency graph resolution. `tsc --build --emitDeclarationOnly` is used for type-checking, with actual JS bundling handled by esbuild/tsx.
 
-- `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
-- `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
+**UI/UX (Football Analytics Dashboard):**
+The dashboard is built with Streamlit, providing an interactive web interface. It features:
+- Multiple sections for match results, team/player data, ELO rankings, match predictions, and odds comparisons.
+- Dedicated sections for World Cup 2026 calendar, squad analysis, and Monte Carlo simulations.
+- Interactive elements like filters, charts, and tables for data visualization.
+- Integration of an AI Assistant (Claude) for enhanced user interaction.
 
-## Football Analytics Dashboard
+**Technical Implementations & Feature Specifications:**
 
-A Streamlit-based data visualization app located at `artifacts/football-dashboard/`.
+- **API Server (`@workspace/api-server`):** An Express.js server with routes defined in `src/routes/`. It uses `@workspace/api-zod` for request/response validation and `@workspace/db` for database interactions.
+- **Database Layer (`@workspace/db`):** Utilizes Drizzle ORM for PostgreSQL, defining schema models and managing database connections.
+- **API Specification & Codegen (`@workspace/api-spec`):** Defines the OpenAPI 3.1 specification and uses Orval to generate:
+    - React Query hooks and a fetch client (`lib/api-client-react`).
+    - Zod schemas for validation (`lib/api-zod`).
+- **Football Analytics Dashboard (`artifacts/football-dashboard`):**
+    - **Prediction Models:**
+        - **V8-Pin Optimized Model:** A core prediction model calibrated to minimize divergence from Pinnacle odds, with configurable parameters.
+        - **Dynamic ELO System:** Calculates and updates ELO ratings with competition-specific K-factors and time decay. Supports both classic ELO and Pinnacle-anchored ELO.
+        - **Monte Carlo Simulation:** For WC 2026 predictions, simulating group stages, knockout rounds, and providing nation-specific probabilities.
+    - **Data Processing:** Handles historical odds, scraped odds, and ELO computations.
+    - **Scraping:**
+        - **Betclic Scraper:** Pure HTTP scraper for Betclic odds (1X2, goalscorer, outrights) using gRPC-web.
+        - **Squad Scraper:** Scrapes Transfermarkt for WC 2026 national team squad data, including player profiles, market values, and positions.
+    - **Workflow:** Runs on port 5000 via a Streamlit web application.
 
-- **Framework**: Python + Streamlit
-- **Port**: 5000
-- **Workflow**: "artifacts/football-dashboard: web"
-- **Data source**: TheStatsAPI (`https://api.thestatsapi.com/api`) — football data (teams, players, competitions, matches)
-- **API key**: stored as `STATS_API_KEY` secret; base URL as `STATS_API_URL` env var
-- **Pre-filter**: Only curated major competitions shown (not all 12,000+ in the API)
-- **Competition categories** (sidebar filter):
-  - UEFA Club Competitions (Champions League, Europa League, Conference League, Women's CL)
-  - International National Teams (Nations League, Copa América, AFCON, CONCACAF, International Friendlies)
-  - World Cup Qualifiers (UEFA/AFC/CONMEBOL/CAF/OFC/CONCACAF)
-  - Continental Club Competitions (Libertadores, Sudamericana, CAF CL, CONCACAF CC)
-  - Top Domestic Leagues (Premier League, Bundesliga, Ligue 1, Serie A, 2. Bundesliga)
-- **Key competition IDs**:
-  - `comp_3498` UEFA Champions League, `comp_7739` UEFA Europa League, `comp_408698` Conference League
-  - `comp_574977` UEFA Nations League, `comp_5749` Copa América, `comp_1554` AFCON
-  - `comp_1376` CONCACAF Gold Cup, `comp_0499` CONMEBOL Libertadores, `comp_1615` Sudamericana
-  - `comp_08478` CAF Champions League, `comp_8649` CONCACAF Champions Cup
-  - `comp_3039` Premier League, `comp_4643` Bundesliga, `comp_0256` Ligue 1, `comp_5840` Serie A
-  - `comp_29967` International Friendly Games (World)
-  - WC Qualifiers: `comp_2954` UEFA, `comp_8973` AFC, `comp_4682` CONMEBOL, `comp_5720` CAF, `comp_7363` OFC, `comp_0836` CONCACAF
-- **AI Assistant**: Claude (Anthropic) integration via `ANTHROPIC_API_KEY`, streaming responses
-- **ELO Ranking**: EloRating.net base + BSD ±50pts adjustment (effectif 70% + performance 30%). Supports manual "ELO forcé" overrides with configurable weight (default 80%). Persisted in `elo_overrides.json`. Module: `elo_engine.py`
-- **Odds API**: The Odds API (`the-odds-api.com`) for multi-bookmaker odds; key stored as `ODDS_API_KEY`
-  - Selected bookmakers: Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR
-  - BSD API odds source: AllSportsAPI (likely Bet365 as default bookmaker)
-- **Sections**:
-  - Match Results: filter by competition & status, goal distribution charts, outcome pie chart, match list
-  - Teams: team nationalities chart, full team table per competition
-  - Players: age/height/position/nationality visualizations per team
-  - ELO Ranking: blended ELO scores for national teams
-  - Prédiction de Matchs: ELO-based win probability
-  - Comparaison de Cotes: bookmaker odds scraping
-  - **Calendrier CDM 2026**: World Cup 2026 match calendar with multi-bookmaker 1X2 odds (Pinnacle, Betfair, Unibet FR, PMU), outright winner odds, phase filtering
-  - **Effectifs CM 2026**: squads for all 48 WC 2026 nations via Transfermarkt scraping
-  - **Prédictions**: Monte Carlo simulation (Buchdahl 1X2 model calibrated on Pinnacle) — global rankings, group stage probabilities, match-by-match 1X2 predictions with fair odds, value detection vs Pinnacle live lines
-  - **Backtest V8**: Interactive backtesting of V8 model on 136 historical matches (WC2022, Euro2024, Copa2024) with adjustable parameters (sliders), real-time Brier/LogLoss/divergence metrics vs Pinnacle closing, proximity analysis, per-competition/phase breakdown, match detail table, divergence histogram & scatter charts, technical lexicon, **ROI value betting simulation** (edge threshold sweep 0-20%, sweet spot detection, per-bet detail table)
-  - **ELO Dynamique** (tab in Classement ELO): dynamic ELO adjustment with Pinnacle anchor or classic mode, configurable time window and decay
+# External Dependencies
 
-## WC 2026 Simulator (`wc_simulator.py`)
-
-Monte Carlo engine for FIFA World Cup 2026 predictions.
-
-### Core Model — V8-Pin (optimisé)
-- **V8-Pin optimized params** (500-iter random search minimizing Pinnacle divergence): scale=441.95, draw_base=24.09, d_half=463.65, power=3.56, quality=0.035, db_close=4.31, db_mid=2.56, db_ko=3.37, db_max=36.05, fb_group=-2.45, fb_ko=2.75, fav_threshold=380.3
-- V8-Pin backtest (527 matchs): Brier=0.5604, Div%=25.5%, Accuracy=56.5%
-- ELO blend: 80% Implied (from historical odds) + 20% OPTA Power Ratings (53 nations calibrated to ELO scale)
-- OPTA ELO stored in `backtest_engine.OPTA_ELO` dict and `elo_overrides.json` for WC2026 pricing
-- `V8PIN_PARAMS` dict in backtest_engine.py — used as default preset in UI
-- `DEFAULT_PARAMS` — legacy V7 defaults (kept for comparison)
-- Goal model: Poisson with λ calibrated from ELO delta (avg ~2.5 goals)
-
-### Dynamic ELO System
-- `update_elo_after_match(elo_h, elo_a, result, comp, k_override, time_decay)` — standard ELO update with competition-specific K-factors and optional time decay
-- K-factors: WC=60, EURO/COPA=50, NL=40, QUALIF=35, FRIENDLY=20, CAN/GOLD_CUP=40
-- `run_backtest_dynamic(matches, params, k_override, time_decay_half_life, pin_anchor_elo, months_window)` — dynamic ELO backtest
-- Returns `(results, final_elo_dict)` — final_elo contains end-state ELO for all teams
-- **Two modes** in Backtest UI:
-  - **Classique**: Part des ELO historiques (WC2022/EURO2024), traite tous les matchs. Écart moyen vs Pinnacle: ~54 pts
-  - **Ancrage Pinnacle** (recommended): Part des ELO calibrés Pinnacle, ne traite que les matchs des N derniers mois. Écart moyen vs Pinnacle: ~12 pts
-- Time decay: K-factor multiplied by `0.5^(years_ago / half_life)` to weight recent matches more
-- WC2022 team names normalized from FIFA codes (BRA→Brazil) via NTC_WC22 reverse mapping
-
-### Backtest Engine (`backtest_engine.py`)
-- Hardcoded historical ELO + Pinnacle closing odds for WC2022, EURO2024, COPA2024 (527+ matches total)
-- `_sigmoid_custom()`: parametric V8 model with all 12 adjustable constants
-- `build_backtest_dataset()`: loads matches + Pinnacle odds from embedded data + historical_odds.json + scraped_odds.json
-- `run_backtest(matches, params)`: static backtest, returns per-match metrics
-- `run_backtest_dynamic(matches, params, k_override)`: dynamic ELO backtest
-- `compute_metrics(results)`: aggregates global + per-comp + per-phase metrics
-- `OPTA_ELO` dict: 57 nations with OPTA Power Ratings calibrated to ELO scale
-- `OPTA_WEIGHT = 0.2`: blend weight for OPTA in ELO resolution
-
-### Simulation Pipeline
-1. Build ELO map from `elo_engine.py` composite scores
-2. Simulate 3 group-stage matches per group (12 groups × 6 matches = 72 matches)
-3. Rank groups: pts > GD > GF; qualify top 2 + best 8 of 12 third-place teams
-4. Bracket: R32 → R16 → QF → SF → Final (matches 73–88 mapped from official FIFA 2026 bracket)
-   - R16 pairings: (74,77), (73,75), (83,84), (81,82), (76,78), (79,80), (86,88), (85,87) — ensures same-group teams can't meet before QF
-   - 3rd-place assignment: backtracking algorithm respecting FIFA slot constraints (no same-group R32 matchups, each 3rd used once)
-5. Output: per-nation probabilities (avg_pts, p_1st/2nd/3rd/4th, p_r32/r16/qf/sf/final/winner)
-6. Play-off resolution: PLAYOFF_TEAM_MAP in app.py replaces "UEFA Play-Off A/B/C/D" and "FIFA Play-Off 1/2" with actual qualified teams (BIH, SWE, TUR, CZE, COD, IRQ)
-
-### Key Functions
-- `run_simulation(n_sims)` — returns sorted list of nation results
-- `get_group_predictions()` — returns 1X2 predictions for all 72 group matches
-- `sigmoid_v6_1x2(delta, elo_avg=None)` — probability calculation from ELO delta + quality factor (Sigmoid V7 model)
-- `_build_elo_map()` — builds nation_code→ELO dict from composite engine
-
-## Squad Scraper (`squad_scraper.py`)
-
-Scrapes Transfermarkt for WC 2026 national team squads.
-
-### Pipeline
-1. `get_recent_match_ids(slug, tm_id, n=5)` — fixture page → last N match IDs
-2. `get_match_lineup(match_id, nation_tm_id)` — match sheet page → player list for the specific team
-3. `get_player_profile(player_tm_id)` — profile page → club, market value, position
-4. `build_squad(nation, n_matches=5)` — full pipeline, deduplicates players, returns top 30 by appearances
-5. `get_squad_cached(nation, force_refresh=False)` — disk cache (48h TTL) wrapper
-
-### Key HTML parsing
-- Fixture URL: `https://www.transfermarkt.fr/{slug}/spielplandatum/verein/{tm_id}/saison_id/2025`
-- Lineup URL: `https://www.transfermarkt.fr/x/aufstellung/spielbericht/{match_id}`
-- **Team splitting**: TM match sheet has 4 `class="large-6 columns"` blocks: [0]=home starters, [1]=away starters, [2]=home bench, [3]=away bench. Home/away determined by `class="sb-team sb-heim/sb-gast"` in page header.
-- **Player name**: extracted from `alt` attribute of `<img>` inside `/profil/spieler/{id}` links
-- **Market value**: regex `(\d+[,.]?\d*)\s*(?:mio\.|Mio\.)\s*€`
-- REQUEST_DELAY = 0.6s; cache TTL = 48h; cache file: `squads_cache.json`
-
-### Nations data (`nations_data.py`)
-- 48 WC 2026 nations with TM IDs, slugs, FR names, confederations
-- Structure: `WC2026_NATIONS` dict by confederation (UEFA, CONMEBOL, CONCACAF, AFC, CAF, OFC)
-- Access: `get_nation_by_code('FRA')`, `get_all_nations()`
-
-## Packages
-
-### `artifacts/api-server` (`@workspace/api-server`)
-
-Express 5 API server. Routes live in `src/routes/` and use `@workspace/api-zod` for request and response validation and `@workspace/db` for persistence.
-
-- Entry: `src/index.ts` — reads `PORT`, starts Express
-- App setup: `src/app.ts` — mounts CORS, JSON/urlencoded parsing, routes at `/api`
-- Routes: `src/routes/index.ts` mounts sub-routers; `src/routes/health.ts` exposes `GET /health` (full path: `/api/health`)
-- Depends on: `@workspace/db`, `@workspace/api-zod`
-- `pnpm --filter @workspace/api-server run dev` — run the dev server
-- `pnpm --filter @workspace/api-server run build` — production esbuild bundle (`dist/index.cjs`)
-- Build bundles an allowlist of deps (express, cors, pg, drizzle-orm, zod, etc.) and externalizes the rest
-
-### `lib/db` (`@workspace/db`)
-
-Database layer using Drizzle ORM with PostgreSQL. Exports a Drizzle client instance and schema models.
-
-- `src/index.ts` — creates a `Pool` + Drizzle instance, exports schema
-- `src/schema/index.ts` — barrel re-export of all models
-- `src/schema/<modelname>.ts` — table definitions with `drizzle-zod` insert schemas (no models definitions exist right now)
-- `drizzle.config.ts` — Drizzle Kit config (requires `DATABASE_URL`, automatically provided by Replit)
-- Exports: `.` (pool, db, schema), `./schema` (schema only)
-
-Production migrations are handled by Replit when publishing. In development, we just use `pnpm --filter @workspace/db run push`, and we fallback to `pnpm --filter @workspace/db run push-force`.
-
-### `lib/api-spec` (`@workspace/api-spec`)
-
-Owns the OpenAPI 3.1 spec (`openapi.yaml`) and the Orval config (`orval.config.ts`). Running codegen produces output into two sibling packages:
-
-1. `lib/api-client-react/src/generated/` — React Query hooks + fetch client
-2. `lib/api-zod/src/generated/` — Zod schemas
-
-Run codegen: `pnpm --filter @workspace/api-spec run codegen`
-
-### `lib/api-zod` (`@workspace/api-zod`)
-
-Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used by `api-server` for response validation.
-
-### `lib/api-client-react` (`@workspace/api-client-react`)
-
-Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
-
-### `scripts` (`@workspace/scripts`)
-
-Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
+- **Database:** PostgreSQL (managed via Drizzle ORM)
+- **Football Data API:** TheStatsAPI (`https://api.thestatsapi.com/api`) - for football data (teams, players, competitions, matches). API key and base URL are managed via environment variables.
+- **Odds API:** The Odds API (`the-odds-api.com`) - for multi-bookmaker odds. API key managed via environment variables.
+- **AI Assistant:** Claude (Anthropic) - integrated for AI assistant functionalities within the dashboard. API key managed via environment variables.
+- **Transfermarkt:** Used for scraping national team squad data.
+- **Betclic:** Scraped directly for live odds using gRPC-web.
+- **Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR:** Specific bookmakers whose odds are integrated and analyzed.
+- **AllSportsAPI:** Used as a source for BSD API odds (likely Bet365 as default).
+- **OPTA Power Ratings:** Used in conjunction with ELO calculations.

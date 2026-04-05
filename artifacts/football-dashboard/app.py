@@ -19,6 +19,8 @@ from bsd_api import (
     TM_TO_BSD_TEAM,
 )
 from bsd_cache import ensure_cache_ready, cache_summary
+import asyncio
+from betclic_scraper import scrape_betclic, quick_outright, COMPETITIONS
 
 ensure_cache_ready()
 
@@ -553,6 +555,7 @@ _PAGE_LIST = [
     "🏅 Classement ELO",
     "🔮 Prédictions",
     "🔬 Backtest V8",
+    "📡 Cotes Betclic",
     "📊 Suivi des paris",
     "🤖 Assistant IA",
 ]
@@ -573,7 +576,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📊 Suivi des paris"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "📊 Suivi des paris"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -3310,6 +3313,262 @@ Un edge trop bas → beaucoup de paris mais peu de valeur. Un edge trop haut →
             st.warning("Impossible de récupérer les cotes Pinnacle live.")
     else:
         st.info("Aucune calibration Pinnacle disponible. Va dans Classement ELO → Recalibrer.")
+
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "📡 Cotes Betclic":
+    from wc_simulator import sigmoid_v8_1x2, _build_elo_map, WC2026_GROUPS
+
+    st.header("📡 Cotes Betclic — Coupe du Monde 2026")
+    st.caption(
+        "Scraping live des cotes Betclic via gRPC-web. "
+        "Comparaison automatique avec le modèle V8 pour détecter les value bets."
+    )
+
+    BETCLIC_FR_TO_CODE = {}
+    for _n in WC2026_NATIONS:
+        BETCLIC_FR_TO_CODE[_n["fr"]] = _n["code"]
+    BETCLIC_FR_TO_CODE["Tchéquie"] = "CZE"
+    BETCLIC_FR_TO_CODE["USA"] = "USA"
+    BETCLIC_FR_TO_CODE["Cap Vert"] = "CPV"
+    BETCLIC_FR_TO_CODE["Côte d'Ivoire"] = "CIV"
+
+    def _run_async(coro):
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = None
+        if loop and loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as pool:
+                return pool.submit(asyncio.run, coro).result(timeout=60)
+        else:
+            return asyncio.run(coro)
+
+    @st.cache_data(ttl=300, show_spinner="Scraping Betclic...")
+    def _fetch_betclic_wc():
+        try:
+            data = _run_async(scrape_betclic(
+                ["world_cup_2026"],
+                include_1x2=True,
+                include_goalscorer=False,
+                include_assist=False,
+                include_outright=True,
+            ))
+            if data:
+                d = data[0]
+                matches = [m.to_dict() for m in d["matches"]]
+                outrights = [o.to_dict() for o in d["outrights"]]
+                return {"matches": matches, "outrights": outrights}
+        except Exception as e:
+            st.error(f"Erreur scraping Betclic: {e}")
+            raise
+        return {"matches": [], "outrights": []}
+
+    def _code_from_betclic(name):
+        if name in BETCLIC_FR_TO_CODE:
+            return BETCLIC_FR_TO_CODE[name]
+        for _n in WC2026_NATIONS:
+            if _n["fr"].lower() == name.lower() or _n["name"].lower() == name.lower():
+                return _n["code"]
+        return None
+
+    tab_1x2, tab_outright, tab_value = st.tabs([
+        "⚽ Cotes 1X2 Matchs",
+        "🏆 Outrights (Vainqueur / Finale)",
+        "💎 Value Bets V8 vs Betclic",
+    ])
+
+    betclic_data = _fetch_betclic_wc()
+
+    with tab_1x2:
+        matches = betclic_data["matches"]
+        if not matches:
+            st.info("Aucun match CDM 2026 trouvé sur Betclic pour l'instant.")
+        else:
+            rows_1x2 = []
+            for m in matches:
+                sels = m.get("selections", [])
+                h_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_home"), None)
+                d_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_draw"), None)
+                a_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_away"), None)
+                ko = m.get("kickoff_utc", "")
+                if ko:
+                    try:
+                        from datetime import datetime as _dt
+                        ko_dt = _dt.fromisoformat(ko.replace("Z", "+00:00"))
+                        ko = ko_dt.strftime("%d/%m %H:%M")
+                    except Exception:
+                        pass
+
+                h_code = _code_from_betclic(m["home_team"])
+                a_code = _code_from_betclic(m["away_team"])
+                h_flag = flag_img(h_code) if h_code else ""
+                a_flag = flag_img(a_code) if a_code else ""
+
+                rows_1x2.append({
+                    "Date": ko,
+                    "Domicile": f"{h_flag} {m['home_team']}",
+                    "1": h_odds if h_odds else "—",
+                    "X": d_odds if d_odds else "—",
+                    "2": a_odds if a_odds else "—",
+                    "Extérieur": f"{a_flag} {m['away_team']}",
+                })
+
+            has_odds = [r for r in rows_1x2 if r["1"] != "—"]
+            no_odds = [r for r in rows_1x2 if r["1"] == "—"]
+
+            st.subheader(f"Cotes 1X2 — {len(has_odds)} matchs avec cotes / {len(rows_1x2)} total")
+
+            if has_odds:
+                df_odds = pd.DataFrame(has_odds)
+                st.dataframe(df_odds, use_container_width=True, hide_index=True)
+
+            if no_odds:
+                with st.expander(f"⏳ {len(no_odds)} matchs sans cotes (pas encore ouverts)"):
+                    df_no = pd.DataFrame(no_odds)
+                    st.dataframe(df_no, use_container_width=True, hide_index=True)
+
+    with tab_outright:
+        outrights = betclic_data["outrights"]
+        if not outrights:
+            st.info("Aucun outright CDM 2026 trouvé sur Betclic.")
+        else:
+            for out in outrights:
+                st.subheader(f"🏆 {out['market_name']}")
+                rows_out = []
+                for s in out.get("selections", []):
+                    code = _code_from_betclic(s["selection_name"])
+                    flag = flag_img(code) if code else ""
+                    rows_out.append({
+                        "Nation": f"{flag} {s['selection_name']}",
+                        "Cote Betclic": s["odds"],
+                        "Prob. implicite": f"{100/s['odds']:.1f}%",
+                    })
+                if rows_out:
+                    df_out = pd.DataFrame(rows_out)
+                    st.dataframe(df_out, use_container_width=True, hide_index=True)
+
+    with tab_value:
+        st.subheader("💎 Détection de Value — V8 vs Betclic")
+        st.caption(
+            "Compare les probabilités du modèle V8 (calibré Pinnacle) "
+            "avec les cotes Betclic. Un edge positif = value bet potentiel."
+        )
+
+        matches_v = betclic_data["matches"]
+        matches_with_odds = [
+            m for m in matches_v
+            if any(s["market_type"] == "1x2_home" for s in m.get("selections", []))
+        ]
+
+        if not matches_with_odds:
+            st.info("Pas encore de cotes 1X2 Betclic pour comparer avec V8.")
+        else:
+            try:
+                elo_map = _build_elo_map()
+            except Exception:
+                elo_map = {}
+
+            if not elo_map:
+                st.warning("ELO map non disponible. Recalibre d'abord dans Classement ELO.")
+            else:
+                value_rows = []
+                for m in matches_with_odds:
+                    sels = m.get("selections", [])
+                    h_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_home"), None)
+                    d_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_draw"), None)
+                    a_odds = next((s["odds"] for s in sels if s["market_type"] == "1x2_away"), None)
+                    if not h_odds or not d_odds or not a_odds:
+                        continue
+
+                    h_code = _code_from_betclic(m["home_team"])
+                    a_code = _code_from_betclic(m["away_team"])
+                    if not h_code or not a_code:
+                        continue
+                    h_elo = elo_map.get(h_code)
+                    a_elo = elo_map.get(a_code)
+                    if not h_elo or not a_elo:
+                        continue
+
+                    delta = h_elo - a_elo
+                    avg_elo = (h_elo + a_elo) / 2
+                    p1, px, p2 = sigmoid_v8_1x2(delta, elo_avg=avg_elo, phase="G")
+
+                    v8_fair_h = round(1 / p1, 2) if p1 > 0 else 999
+                    v8_fair_d = round(1 / px, 2) if px > 0 else 999
+                    v8_fair_a = round(1 / p2, 2) if p2 > 0 else 999
+
+                    edge_h = round((p1 - 1 / h_odds) * 100, 1)
+                    edge_d = round((px - 1 / d_odds) * 100, 1)
+                    edge_a = round((p2 - 1 / a_odds) * 100, 1)
+
+                    best_edge = max(edge_h, edge_d, edge_a)
+                    if edge_h == best_edge:
+                        best_side = f"1 ({m['home_team']})"
+                        best_odds = h_odds
+                        best_fair = v8_fair_h
+                    elif edge_d == best_edge:
+                        best_side = "X (Nul)"
+                        best_odds = d_odds
+                        best_fair = v8_fair_d
+                    else:
+                        best_side = f"2 ({m['away_team']})"
+                        best_odds = a_odds
+                        best_fair = v8_fair_a
+
+                    h_flag = flag_img(h_code)
+                    a_flag = flag_img(a_code)
+
+                    value_rows.append({
+                        "Match": f"{h_flag} {m['home_team']} vs {a_flag} {m['away_team']}",
+                        "ELO Δ": f"{delta:+.0f}",
+                        "Betclic 1": h_odds,
+                        "V8 fair 1": v8_fair_h,
+                        "Edge 1": f"{edge_h:+.1f}%",
+                        "Betclic X": d_odds,
+                        "V8 fair X": v8_fair_d,
+                        "Edge X": f"{edge_d:+.1f}%",
+                        "Betclic 2": a_odds,
+                        "V8 fair 2": v8_fair_a,
+                        "Edge 2": f"{edge_a:+.1f}%",
+                        "Meilleur edge": f"{best_edge:+.1f}%",
+                        "Côté": best_side,
+                        "_sort_edge": best_edge,
+                    })
+
+                if value_rows:
+                    value_rows.sort(key=lambda x: x["_sort_edge"], reverse=True)
+                    for r in value_rows:
+                        del r["_sort_edge"]
+                    df_value = pd.DataFrame(value_rows)
+
+                    n_value = sum(1 for r in value_rows if float(r["Meilleur edge"].replace("+","").replace("%","")) > 0)
+                    st.success(f"**{n_value} value bets** détectés sur {len(value_rows)} matchs CDM 2026")
+
+                    st.dataframe(df_value, use_container_width=True, hide_index=True)
+
+                    st.markdown("---")
+                    st.subheader("📊 Distribution des edges")
+                    edges_data = []
+                    for r in value_rows:
+                        m_name = r["Match"]
+                        for side in ["1", "X", "2"]:
+                            edge_val = float(r[f"Edge {side}"].replace("+","").replace("%",""))
+                            edges_data.append({"Match": m_name, "Côté": side, "Edge (%)": edge_val})
+
+                    fig_edge = px.bar(
+                        pd.DataFrame(edges_data),
+                        x="Match", y="Edge (%)", color="Côté",
+                        barmode="group",
+                        title="Edge V8 vs Betclic par match",
+                        color_discrete_map={"1": "#3b82f6", "X": "#f59e0b", "2": "#ef4444"},
+                    )
+                    fig_edge.update_layout(xaxis_tickangle=-45, height=500)
+                    fig_edge.add_hline(y=0, line_dash="dash", line_color="gray")
+                    st.plotly_chart(fig_edge, use_container_width=True)
+                else:
+                    st.info("Aucune comparaison possible (codes nations non trouvés).")
 
 
 # ═══════════════════════════════════════════════════════════════════

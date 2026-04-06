@@ -164,51 +164,14 @@ def lambdas_from_betfair(
     btts_yes_mid: float | None = None,
 ) -> tuple[float, float, str]:
     p0_team = 1.0 / lay_u05_team
-    lam_t_init = -math.log(max(p0_team, 0.01))
+    lam_t = -math.log(max(p0_team, 0.01))
 
     p00 = 1.0 / odds_00
-    p0_opp = p00 / max(p0_team, 0.01)
-    p0_opp = max(0.01, min(0.99, p0_opp))
-    lam_o_init = -math.log(p0_opp)
+    lam_total = -math.log(max(p00, 0.001))
+    lam_o = lam_total - lam_t
+    lam_o = max(0.05, lam_o)
 
-    p_win_target = 1.0 / lay_1x2
-
-    has_ou25 = ou25_under_mid is not None and ou25_under_mid > 1.0
-    has_btts = btts_yes_mid is not None and btts_yes_mid > 1.0
-
-    def objective(params: np.ndarray) -> float:
-        lt, lo = params
-        if lt <= 0 or lo <= 0:
-            return 1e10
-        p0_t = math.exp(-lt)
-        p0_o = math.exp(-lo)
-        err_u05 = (p0_t - p0_team) ** 2
-        err_00 = (p0_t * p0_o - p00) ** 2
-        p_win = _poisson_win_prob(lt, lo)
-        err_win = (p_win - p_win_target) ** 2
-        total = err_u05 * 100 + err_00 * 100 + err_win * 10
-        if has_ou25:
-            s = lt + lo
-            pu25 = math.exp(-s) * (1 + s + s * s / 2)
-            total += 50.0 * (pu25 - 1.0 / ou25_under_mid) ** 2
-        if has_btts:
-            pbtts = (1 - math.exp(-lt)) * (1 - math.exp(-lo))
-            total += 30.0 * (pbtts - 1.0 / btts_yes_mid) ** 2
-        return total
-
-    res = minimize(objective, np.array([lam_t_init, lam_o_init]),
-                   method="Nelder-Mead",
-                   options={"maxiter": 15000, "xatol": 1e-8, "fatol": 1e-12})
-    lt_opt, lo_opt = float(res.x[0]), float(res.x[1])
-    if lt_opt <= 0 or lo_opt <= 0:
-        lt_opt, lo_opt = lam_t_init, lam_o_init
-
-    parts = ["BF P(0)team", "BF 0-0", "BF 1X2"]
-    if has_ou25:
-        parts.append("BF O/U 2.5")
-    if has_btts:
-        parts.append("BF BTTS")
-    return lt_opt, lo_opt, " + ".join(parts)
+    return lam_t, lam_o, "P(0) direct"
 
 
 def lambdas_mle_from_scores(
@@ -249,45 +212,31 @@ def build_poisson_matrix(
     return matrix
 
 
-_LED2_FRACTIONS: dict[tuple[int, int], float] = {}
-
-for _i in range(9):
-    for _j in range(9):
-        _LED2_FRACTIONS[(_i, _j)] = 0.0
-
-for _i in range(2, 9):
-    _LED2_FRACTIONS[(_i, 0)] = 1.0
-for _i in range(9):
-    for _j in range(9):
-        if _i >= _j + 2:
-            _LED2_FRACTIONS[(_i, _j)] = 1.0
-
-_LED2_FRACTIONS[(2, 1)] = 1.0 / 3.0
-_LED2_FRACTIONS[(3, 2)] = 1.0 / 3.0
-_LED2_FRACTIONS[(4, 3)] = 1.0 / 3.0
-_LED2_FRACTIONS[(5, 4)] = 1.0 / 3.0
-_LED2_FRACTIONS[(6, 5)] = 1.0 / 3.0
-
-_LED2_FRACTIONS[(2, 2)] = 1.0 / 6.0
-_LED2_FRACTIONS[(3, 3)] = 1.0 / 6.0
-_LED2_FRACTIONS[(4, 4)] = 1.0 / 6.0
-_LED2_FRACTIONS[(5, 5)] = 1.0 / 6.0
+def _led2_fraction(i: int, j: int) -> float:
+    if i < 2:
+        return 0.0
+    if i >= j + 2:
+        return 1.0
+    return (i * (i - 1)) / ((j + 2) * (j + 1))
 
 
 def prob_g2_fixed_fractions(
-    lambda_team: float, lambda_opp: float, max_goals: int = 8
+    lambda_team: float, lambda_opp: float, max_goals: int = 8,
+    p_win_market: float | None = None,
 ) -> float:
     matrix = build_poisson_matrix(lambda_team, lambda_opp, max_goals)
-    total = 0.0
+    insurance = 0.0
+    p_win_poisson = 0.0
     for i in range(max_goals + 1):
         for j in range(max_goals + 1):
             if i > j:
-                total += matrix[i, j]
+                p_win_poisson += matrix[i, j]
             else:
-                frac = _LED2_FRACTIONS.get((i, j), 0.0)
+                frac = _led2_fraction(i, j)
                 if frac > 0:
-                    total += matrix[i, j] * frac
-    return total
+                    insurance += matrix[i, j] * frac
+    p_win = p_win_market if p_win_market is not None else p_win_poisson
+    return p_win + insurance
 
 
 def simulate_g2_monte_carlo(
@@ -348,8 +297,9 @@ def compute_g2(
     p0_opp = math.exp(-lambda_opp)
 
     matrix = build_poisson_matrix(lambda_team, lambda_opp)
+    p_win_market = 1.0 / lay_1x2 if lay_1x2 > 0 else None
     prob_mc = simulate_g2_monte_carlo(lambda_team, lambda_opp, n_sims=n_sims)
-    prob_frac = prob_g2_fixed_fractions(lambda_team, lambda_opp)
+    prob_frac = prob_g2_fixed_fractions(lambda_team, lambda_opp, p_win_market=p_win_market)
 
     fair_mc = 1.0 / prob_mc if prob_mc > 0 else 999.0
     fair_frac = 1.0 / prob_frac if prob_frac > 0 else 999.0

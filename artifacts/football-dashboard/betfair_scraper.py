@@ -123,7 +123,7 @@ async def _find_match_url(page, competition_key: str, home: str, away: str) -> s
 
     comp_url = f"https://www.betfair.com/exchange/plus/en/football/competition/{comp_id}"
     try:
-        await page.goto(comp_url, timeout=25000, wait_until="domcontentloaded")
+        await page.goto(comp_url, timeout=60000, wait_until="domcontentloaded")
     except Exception:
         return None
     await asyncio.sleep(6)
@@ -354,7 +354,7 @@ async def _scrape_betfair_match(
                     a_slug = _team_slug(away_team)
                     guess_url = f"https://www.betfair.com/exchange/plus/en/football/{comp_slug}/{h_slug}-v-{a_slug}"
                     try:
-                        resp = await page.goto(guess_url, timeout=20000, wait_until="domcontentloaded")
+                        resp = await page.goto(guess_url, timeout=60000, wait_until="domcontentloaded")
                         if resp and resp.status == 200:
                             await asyncio.sleep(4)
                             cur = page.url
@@ -369,7 +369,7 @@ async def _scrape_betfair_match(
                 return result
 
             result.match_url = target_url
-            resp = await page.goto(target_url, timeout=30000, wait_until="domcontentloaded")
+            resp = await page.goto(target_url, timeout=60000, wait_until="domcontentloaded")
             if not resp or resp.status != 200:
                 result.error = f"HTTP {resp.status if resp else 'no response'}"
                 await browser.close()

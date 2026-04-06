@@ -83,6 +83,7 @@ class BetfairCSData:
     correct_scores: dict[str, float] = field(default_factory=dict)
     cs_detail: dict[str, BetfairSelection] = field(default_factory=dict)
     match_odds_1x2: dict[str, float] = field(default_factory=dict)
+    match_odds_1x2_detail: dict[str, "BetfairSelection"] = field(default_factory=dict)
     btts: dict[str, BetfairSelection] = field(default_factory=dict)
     ou25: dict[str, BetfairSelection] = field(default_factory=dict)
     ou05: dict[str, BetfairSelection] = field(default_factory=dict)
@@ -402,6 +403,13 @@ async def _scrape_betfair_match(
 
             for item in data.get("mo", []):
                 result.match_odds_1x2[item["n"]] = item["bl"]
+                result.match_odds_1x2_detail[item["n"]] = BetfairSelection(
+                    name=item["n"],
+                    back=item.get("bb", 0.0),
+                    back_vol=item.get("bbv", 0.0),
+                    lay=item.get("bl", 0.0),
+                    lay_vol=item.get("blv", 0.0),
+                )
 
             for item in data.get("btts", []):
                 sel = BetfairSelection(

@@ -4104,10 +4104,18 @@ elif page == "🎯 Garantie 2+":
 
             with st.expander("📡 Données brutes Betfair (back / lay / volume)", expanded=False):
                 raw_rows = []
-                if cs_data.match_odds_1x2:
+                if cs_data.match_odds_1x2_detail:
+                    for name, sel in cs_data.match_odds_1x2_detail.items():
+                        raw_rows.append({
+                            "Marché": "1X2", "Sélection": name,
+                            "Back": f"{sel.back:.2f}", "£ Back": f"{sel.back_vol:.0f}",
+                            "Lay": f"{sel.lay:.2f}", "£ Lay": f"{sel.lay_vol:.0f}",
+                            "Mid": f"{sel.mid_price:.3f}",
+                        })
+                elif cs_data.match_odds_1x2:
                     for name, lay_p in cs_data.match_odds_1x2.items():
-                        raw_rows.append({"Marché": "1X2", "Sélection": name, "Lay All": f"{lay_p:.2f}"})
-                for label, mkt in [("BTTS", cs_data.btts), ("O/U 2.5", cs_data.ou25), ("O/U 0.5", cs_data.ou05)]:
+                        raw_rows.append({"Marché": "1X2", "Sélection": name, "Lay": f"{lay_p:.2f}"})
+                for label, mkt in [("BTTS", cs_data.btts), ("O/U 2.5", cs_data.ou25), ("O/U 0.5 Match", cs_data.ou05)]:
                     for name, sel in mkt.items():
                         raw_rows.append({
                             "Marché": label, "Sélection": name,
@@ -4353,29 +4361,29 @@ elif page == "🎯 Garantie 2+":
                 st.markdown("---")
                 st.subheader("💰 Value Analysis")
 
-                edge_mc = edge_percent(g2_result.fair_odds_mc, betclic_g2_odds)
-                ev0_mc = ev0(g2_result.prob_g2_mc, betclic_g2_odds)
                 edge_frac = edge_percent(g2_result.fair_odds_fractions, betclic_g2_odds)
+                ev0_frac = ev0(g2_result.prob_g2_fractions, betclic_g2_odds)
+                edge_mc = edge_percent(g2_result.fair_odds_mc, betclic_g2_odds)
 
                 val_col1, val_col2, val_col3 = st.columns(3)
                 with val_col1:
                     st.metric("Cote Betclic", f"{betclic_g2_odds}")
                 with val_col2:
-                    _color = "🟢" if edge_mc > 0 else "🔴"
-                    st.metric(f"{_color} Edge MC", f"{edge_mc:+.2f}%")
-                with val_col3:
                     _color2 = "🟢" if edge_frac > 0 else "🔴"
                     st.metric(f"{_color2} Edge Fractions", f"{edge_frac:+.2f}%")
+                with val_col3:
+                    _color = "🟢" if edge_mc > 0 else "🔴"
+                    st.metric(f"{_color} Edge MC", f"{edge_mc:+.2f}%")
 
-                if edge_mc > 0:
+                if edge_frac > 0:
                     st.success(
-                        f"✅ **VALUE DÉTECTÉE** — EV0 = {ev0_mc:+.2f}% | "
-                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_mc:.3f}"
+                        f"✅ **VALUE DÉTECTÉE** — EV0 = {ev0_frac:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_fractions:.3f}"
                     )
                 else:
                     st.error(
-                        f"❌ Pas de value — EV0 = {ev0_mc:+.2f}% | "
-                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_mc:.3f}"
+                        f"❌ Pas de value — EV0 = {ev0_frac:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_fractions:.3f}"
                     )
 
                 betclic_manual = st.number_input(
@@ -4385,10 +4393,10 @@ elif page == "🎯 Garantie 2+":
                     help="Si vous voulez tester une autre cote (Winamax, etc.)"
                 )
                 if betclic_manual != betclic_g2_odds:
-                    edge_manual = edge_percent(g2_result.fair_odds_mc, betclic_manual)
-                    ev0_manual = ev0(g2_result.prob_g2_mc, betclic_manual)
+                    edge_manual = edge_percent(g2_result.fair_odds_fractions, betclic_manual)
+                    ev0_manual = ev0(g2_result.prob_g2_fractions, betclic_manual)
                     color_m = "🟢" if edge_manual > 0 else "🔴"
-                    st.info(f"{color_m} Cote manuelle {betclic_manual} → Edge MC: {edge_manual:+.2f}% | EV0: {ev0_manual:+.2f}%")
+                    st.info(f"{color_m} Cote manuelle {betclic_manual} → Edge Frac: {edge_manual:+.2f}% | EV0: {ev0_manual:+.2f}%")
 
             st.markdown("---")
             st.subheader("🔢 Matrice Poisson")

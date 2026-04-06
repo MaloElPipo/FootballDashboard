@@ -618,10 +618,17 @@ def get_1x2_mids(cs_data: BetfairCSData) -> tuple[float, float, float] | None:
     det = cs_data.match_odds_1x2_detail
     if len(det) < 3:
         return None
-    names = list(det.keys())
-    mids = [det[n].mid_price for n in names]
-    if all(m > 1.0 for m in mids):
-        return (round(mids[0], 3), round(mids[1], 3), round(mids[2], 3))
+    home_mid, draw_mid, away_mid = 0.0, 0.0, 0.0
+    for name, sel in det.items():
+        low = name.lower()
+        if "draw" in low or "nul" in low or low == "the draw":
+            draw_mid = sel.mid_price
+        elif home_mid == 0.0:
+            home_mid = sel.mid_price
+        else:
+            away_mid = sel.mid_price
+    if home_mid > 1.0 and draw_mid > 1.0 and away_mid > 1.0:
+        return (round(home_mid, 3), round(draw_mid, 3), round(away_mid, 3))
     return None
 
 

@@ -87,6 +87,8 @@ class BetfairCSData:
     btts: dict[str, BetfairSelection] = field(default_factory=dict)
     ou25: dict[str, BetfairSelection] = field(default_factory=dict)
     ou05: dict[str, BetfairSelection] = field(default_factory=dict)
+    ou05_home: dict[str, BetfairSelection] = field(default_factory=dict)
+    ou05_away: dict[str, BetfairSelection] = field(default_factory=dict)
     over_under: dict[str, float] = field(default_factory=dict)
     timestamp: float = 0.0
     match_url: str = ""
@@ -178,7 +180,7 @@ _EXTRACT_JS = r"""() => {
     const L = [];
     for (const l of rawLines) { const t = l.trim(); if (t) L.push(t); }
 
-    const R = { mo: [], btts: [], ou25: [], ou05: [], cs: [], home: '', away: '' };
+    const R = { mo: [], btts: [], ou25: [], ou05: [], ou05h: [], ou05a: [], cs: [], home: '', away: '' };
 
     const title = document.title || '';
     const tm = title.match(/(?:Best\s+)?(.+?)\s+v\s+(.+?)\s+(Odds|Betting)/i);
@@ -274,6 +276,29 @@ _EXTRACT_JS = r"""() => {
     if (R.btts.length === 0) R.btts = p2m('Both teams to Score');
     R.ou25 = p2m('Over/Under 2.5 Goals');
     R.ou05 = p2m('Over/Under 0.5 Goals');
+
+    // Team-specific O/U 0.5
+    for (let i = 0; i < L.length; i++) {
+        const line = L[i];
+        const m05 = line.match(/Over\s*\/\s*Under\s+0\.5\s+(.+?)\s+Goals?/i);
+        if (!m05) continue;
+        const teamInHeader = m05[1].trim();
+        let isMarket = false;
+        for (let j = i + 1; j < Math.min(i + 5, L.length); j++) {
+            if (L[j] === 'Rules' || L[j].startsWith('Matched:')) { isMarket = true; break; }
+        }
+        if (!isMarket) continue;
+        const mkt = p2m(line);
+        if (mkt.length === 0) continue;
+        const hNorm = R.home.toLowerCase().replace(/[^a-z]/g, '');
+        const aNorm = R.away.toLowerCase().replace(/[^a-z]/g, '');
+        const tNorm = teamInHeader.toLowerCase().replace(/[^a-z]/g, '');
+        if (hNorm && (tNorm.includes(hNorm.slice(0,4)) || hNorm.includes(tNorm.slice(0,4)))) {
+            R.ou05h = mkt;
+        } else if (aNorm && (tNorm.includes(aNorm.slice(0,4)) || aNorm.includes(tNorm.slice(0,4)))) {
+            R.ou05a = mkt;
+        }
+    }
 
     // Correct Score
     let csStart = -1;
@@ -435,6 +460,22 @@ async def _scrape_betfair_match(
                 )
                 result.ou05[item["n"]] = sel
 
+            for item in data.get("ou05h", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.ou05_home[item["n"]] = sel
+
+            for item in data.get("ou05a", []):
+                sel = BetfairSelection(
+                    name=item["n"],
+                    back=item["b"], back_vol=item["bv"],
+                    lay=item["l"], lay_vol=item["lv"],
+                )
+                result.ou05_away[item["n"]] = sel
+
             for item in data.get("cs", []):
                 sel = BetfairSelection(
                     name=item["n"],
@@ -558,6 +599,16 @@ def get_ou25_under_mid(cs_data: BetfairCSData) -> float | None:
 
 def get_ou05_under_mid(cs_data: BetfairCSData) -> float | None:
     for key, sel in cs_data.ou05.items():
+        if "under" in key.lower():
+            mid = sel.mid_price
+            if mid > 1.0:
+                return round(mid, 3)
+    return None
+
+
+def get_ou05_team_under_mid(cs_data: BetfairCSData, team_is_home: bool) -> float | None:
+    mkt = cs_data.ou05_home if team_is_home else cs_data.ou05_away
+    for key, sel in mkt.items():
         if "under" in key.lower():
             mid = sel.mid_price
             if mid > 1.0:

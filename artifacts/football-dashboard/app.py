@@ -3963,7 +3963,7 @@ elif page == "🎯 Garantie 2+":
         from betfair_scraper import (
             fetch_betfair_cs, cs_to_exact_score_mids,
             get_btts_yes_mid, get_ou25_under_mid, get_ou05_under_mid,
-            get_1x2_lay_team,
+            get_ou05_team_under_mid, get_1x2_lay_team,
             derive_team_u05_from_cs, derive_00_from_cs,
             BetfairCSData, BetfairSelection,
         )
@@ -4036,9 +4036,13 @@ elif page == "🎯 Garantie 2+":
                         st.session_state["g2_ou05"] = _ou05_v
 
                     _team_home = g2_team_choice == g2_match["home"]
-                    _bf_u05_team = derive_team_u05_from_cs(cs_data, _team_home)
-                    if _bf_u05_team:
-                        st.session_state["g2_bf_u05_team"] = _bf_u05_team
+                    _bf_u05_direct = get_ou05_team_under_mid(cs_data, _team_home)
+                    if _bf_u05_direct:
+                        st.session_state["g2_bf_u05_team"] = _bf_u05_direct
+                    else:
+                        _bf_u05_team = derive_team_u05_from_cs(cs_data, _team_home)
+                        if _bf_u05_team:
+                            st.session_state["g2_bf_u05_team"] = _bf_u05_team
                     _bf_00 = derive_00_from_cs(cs_data)
                     if _bf_00:
                         st.session_state["g2_bf_00"] = _bf_00
@@ -4073,10 +4077,14 @@ elif page == "🎯 Garantie 2+":
             ou25_val = get_ou25_under_mid(cs_data)
             btts_val = get_btts_yes_mid(cs_data)
             ou05_val = get_ou05_under_mid(cs_data)
-            _bf_u05_t = derive_team_u05_from_cs(cs_data, team_is_home)
+            _bf_u05_direct = get_ou05_team_under_mid(cs_data, team_is_home)
+            if _bf_u05_direct:
+                scraped_bf_u05_team = _bf_u05_direct
+            else:
+                _bf_u05_t = derive_team_u05_from_cs(cs_data, team_is_home)
+                if _bf_u05_t:
+                    scraped_bf_u05_team = _bf_u05_t
             _bf_00_v = derive_00_from_cs(cs_data)
-            if _bf_u05_t:
-                scraped_bf_u05_team = _bf_u05_t
             if _bf_00_v:
                 scraped_bf_00 = _bf_00_v
 
@@ -4096,6 +4104,8 @@ elif page == "🎯 Garantie 2+":
                 parts_found.append("O/U 2.5")
             if cs_data.ou05:
                 parts_found.append("O/U 0.5")
+            if cs_data.ou05_home or cs_data.ou05_away:
+                parts_found.append("O/U 0.5 Team")
             if cs_data.cs_detail:
                 parts_found.append(f"CS ({len(cs_data.cs_detail)})")
             scrape_info_parts = parts_found
@@ -4104,18 +4114,29 @@ elif page == "🎯 Garantie 2+":
 
             with st.expander("📡 Données brutes Betfair (back / lay / volume)", expanded=False):
                 raw_rows = []
-                if cs_data.match_odds_1x2_detail:
-                    for name, sel in cs_data.match_odds_1x2_detail.items():
-                        raw_rows.append({
-                            "Marché": "1X2", "Sélection": name,
-                            "Back": f"{sel.back:.2f}", "£ Back": f"{sel.back_vol:.0f}",
-                            "Lay": f"{sel.lay:.2f}", "£ Lay": f"{sel.lay_vol:.0f}",
-                            "Mid": f"{sel.mid_price:.3f}",
-                        })
-                elif cs_data.match_odds_1x2:
+                if cs_data.match_odds_1x2:
                     for name, lay_p in cs_data.match_odds_1x2.items():
-                        raw_rows.append({"Marché": "1X2", "Sélection": name, "Lay": f"{lay_p:.2f}"})
-                for label, mkt in [("BTTS", cs_data.btts), ("O/U 2.5", cs_data.ou25), ("O/U 0.5 Match", cs_data.ou05)]:
+                        _det = cs_data.match_odds_1x2_detail.get(name)
+                        if _det:
+                            raw_rows.append({
+                                "Marché": "1X2", "Sélection": name,
+                                "Back": f"{_det.back:.2f}", "Lay": f"{_det.lay:.2f}",
+                                "Mid": f"{_det.mid_price:.3f}",
+                            })
+                        else:
+                            raw_rows.append({"Marché": "1X2", "Sélection": name, "Lay": f"{lay_p:.2f}"})
+                _ou05_markets = [
+                    ("BTTS", cs_data.btts),
+                    ("O/U 2.5", cs_data.ou25),
+                    ("O/U 0.5 Match", cs_data.ou05),
+                ]
+                _home_label = cs_data.home_team or g2_match.get("home", "Home")
+                _away_label = cs_data.away_team or g2_match.get("away", "Away")
+                if cs_data.ou05_home:
+                    _ou05_markets.append((f"O/U 0.5 {_home_label}", cs_data.ou05_home))
+                if cs_data.ou05_away:
+                    _ou05_markets.append((f"O/U 0.5 {_away_label}", cs_data.ou05_away))
+                for label, mkt in _ou05_markets:
                     for name, sel in mkt.items():
                         raw_rows.append({
                             "Marché": label, "Sélection": name,
@@ -4179,7 +4200,7 @@ elif page == "🎯 Garantie 2+":
 
         st.markdown("##### 🎯 P(0) — Probabilité de ne pas marquer (Buchdahl / Betfair)")
         st.caption(
-            "Dérivé automatiquement des scores exacts Betfair. "
+            "Priorité : marché O/U 0.5 Team Betfair (si disponible) → dérivation scores exacts → manuel. "
             "Si renseigné, utilise la méthode directe P(0) (plus précise) au lieu de l'optimisation cascade."
         )
 
@@ -4189,7 +4210,7 @@ elif page == "🎯 Garantie 2+":
                 f"U0.5 {g2_team_choice} (cote implicite)",
                 min_value=0.0, max_value=50.0, step=0.01,
                 key="g2_bf_u05_team",
-                help="Cote implicite Under 0.5 Goals de l'équipe cible, dérivée des scores exacts Betfair (somme des P(team=0)). 0 = désactivé."
+                help="Cote Under 0.5 Goals de l'équipe cible. Source prioritaire : marché Betfair O/U 0.5 Team direct. Fallback : dérivé des scores exacts (somme P(team=0)). 0 = désactivé."
             )
         with p0_col2:
             g2_bf_00 = st.number_input(

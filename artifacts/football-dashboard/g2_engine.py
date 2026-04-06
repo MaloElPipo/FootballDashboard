@@ -53,19 +53,57 @@ def _poisson_win_prob(lam_t: float, lam_o: float, max_g: int = 15) -> float:
     return total
 
 
-def lambdas_cascade(
-    lay_1x2_team: float,
-    ou25_under_mid: float | None = None,
-    btts_yes_mid: float | None = None,
-    ou05_under_mid: float | None = None,
+def _poisson_probs_full(lt: float, lo: float, max_g: int = 10):
+    pw, pd, pl, pu25 = 0.0, 0.0, 0.0, 0.0
+    for i in range(max_g):
+        pi = poisson.pmf(i, lt)
+        for j in range(max_g):
+            pj = poisson.pmf(j, lo)
+            p = pi * pj
+            if i > j:
+                pw += p
+            elif i == j:
+                pd += p
+            else:
+                pl += p
+            if i + j <= 2:
+                pu25 += p
+    pbtts = (1 - math.exp(-lt)) * (1 - math.exp(-lo))
+    return pw, pd, pl, pu25, pbtts
+
+
+def lambdas_buchdahl(
+    odds_h: float,
+    odds_d: float,
+    odds_a: float,
+    ou25_under: float | None = None,
+    ou25_over: float | None = None,
+    btts_yes: float | None = None,
+    btts_no: float | None = None,
     cs_mids: dict[tuple[int, int], float] | None = None,
 ) -> tuple[float, float, str]:
-    p_win = 1.0 / lay_1x2_team
+    fair_h, fair_d, fair_a = remove_margin_proportional(odds_h, odds_d, odds_a)
+    ph, pd_mkt, pa = 1.0 / fair_h, 1.0 / fair_d, 1.0 / fair_a
 
-    has_ou25 = ou25_under_mid is not None and ou25_under_mid > 1.0
-    has_btts = btts_yes_mid is not None and btts_yes_mid > 1.0
-    has_ou05 = ou05_under_mid is not None and ou05_under_mid > 1.0
+    has_ou25 = (
+        ou25_under is not None and ou25_under > 1.0
+        and ou25_over is not None and ou25_over > 1.0
+    )
+    has_btts = (
+        btts_yes is not None and btts_yes > 1.0
+        and btts_no is not None and btts_no > 1.0
+    )
     has_cs = cs_mids is not None and len(cs_mids) >= 3
+
+    p_u25 = None
+    if has_ou25:
+        fu, fo = remove_margin_2way(ou25_under, ou25_over)
+        p_u25 = 1.0 / fu
+
+    p_btts = None
+    if has_btts:
+        fy, fn = remove_margin_2way(btts_yes, btts_no)
+        p_btts = 1.0 / fy
 
     cs_norm = None
     if has_cs:
@@ -80,23 +118,16 @@ def lambdas_cascade(
         if lt < 0.05 or lo < 0.05 or lt > 6 or lo > 6:
             return 1e10
 
+        pw, pd_v, pl, pu25_v, pbtts_v = _poisson_probs_full(lt, lo)
+
         total = 0.0
+        total += 100.0 * ((pw - ph) ** 2 + (pd_v - pd_mkt) ** 2 + (pl - pa) ** 2)
 
-        pw = _poisson_win_prob(lt, lo)
-        total += 10.0 * (pw - p_win) ** 2
+        if has_ou25 and p_u25 is not None:
+            total += 50.0 * (pu25_v - p_u25) ** 2
 
-        if has_ou25:
-            s = lt + lo
-            pu25 = math.exp(-s) * (1 + s + s * s / 2)
-            total += 50.0 * (pu25 - 1.0 / ou25_under_mid) ** 2
-
-        if has_btts:
-            pbtts = (1 - math.exp(-lt)) * (1 - math.exp(-lo))
-            total += 30.0 * (pbtts - 1.0 / btts_yes_mid) ** 2
-
-        if has_ou05:
-            pu05 = math.exp(-(lt + lo))
-            total += 20.0 * (pu05 - 1.0 / ou05_under_mid) ** 2
+        if has_btts and p_btts is not None:
+            total += 30.0 * (pbtts_v - p_btts) ** 2
 
         if has_cs and cs_norm:
             ll = 0.0
@@ -104,12 +135,11 @@ def lambdas_cascade(
                 p_model = poisson.pmf(gi, lt) * poisson.pmf(gj, lo)
                 if p_model > 1e-20:
                     ll += p_mkt * math.log(p_model)
-            total += 5.0 * (-ll)
+            total += 20.0 * (-ll)
 
         return total
 
-    if has_ou25:
-        p_u25 = 1.0 / ou25_under_mid
+    if has_ou25 and p_u25 is not None:
         lo_t, hi_t = 0.5, 7.0
         for _ in range(60):
             mid_t = (lo_t + hi_t) / 2
@@ -119,17 +149,17 @@ def lambdas_cascade(
             else:
                 hi_t = mid_t
         total_xg = (lo_t + hi_t) / 2
-        if p_win > 0.5:
-            ratio = min(0.65, 0.5 + (p_win - 0.5) * 0.5)
-        elif p_win > 0.35:
+        if ph > 0.5:
+            ratio = min(0.65, 0.5 + (ph - 0.5) * 0.5)
+        elif ph > 0.35:
             ratio = 0.5
         else:
-            ratio = max(0.35, 0.5 - (0.35 - p_win) * 0.5)
+            ratio = max(0.35, 0.5 - (0.35 - ph) * 0.5)
         init = [total_xg * ratio, total_xg * (1 - ratio)]
     else:
-        if p_win > 0.5:
+        if ph > 0.5:
             init = [1.5, 1.0]
-        elif p_win > 0.35:
+        elif ph > 0.35:
             init = [1.3, 1.2]
         else:
             init = [1.0, 1.5]
@@ -138,68 +168,20 @@ def lambdas_cascade(
         objective,
         np.array(init),
         method="Nelder-Mead",
-        options={"maxiter": 15000, "xatol": 1e-8, "fatol": 1e-12},
+        options={"maxiter": 50000, "xatol": 1e-10, "fatol": 1e-14},
     )
     lt_opt = max(0.1, float(res.x[0]))
     lo_opt = max(0.1, float(res.x[1]))
 
-    parts = ["1X2 Lay"]
+    parts = ["Buchdahl 1X2"]
     if has_ou25:
         parts.append("O/U 2.5")
     if has_btts:
         parts.append("BTTS")
-    if has_ou05:
-        parts.append("O/U 0.5")
     if has_cs:
         parts.append(f"CS({len(cs_norm)})")
 
     return lt_opt, lo_opt, " + ".join(parts)
-
-
-def lambdas_from_betfair(
-    lay_1x2: float,
-    lay_u05_team: float,
-    odds_00: float,
-    ou25_under_mid: float | None = None,
-    btts_yes_mid: float | None = None,
-) -> tuple[float, float, str]:
-    p0_team = 1.0 / lay_u05_team
-    lam_t = -math.log(max(p0_team, 0.01))
-
-    p00 = 1.0 / odds_00
-    lam_total = -math.log(max(p00, 0.001))
-    lam_o = lam_total - lam_t
-    lam_o = max(0.05, lam_o)
-
-    return lam_t, lam_o, "P(0) direct"
-
-
-def lambdas_mle_from_scores(
-    exact_score_odds: dict[tuple[int, int], float],
-    lambda_init: tuple[float, float] | None = None,
-) -> tuple[float, float]:
-    if not exact_score_odds:
-        raise ValueError("No exact score odds provided")
-
-    scores = list(exact_score_odds.keys())
-    probs_market = np.array([1.0 / exact_score_odds[s] for s in scores])
-    probs_market = probs_market / probs_market.sum()
-
-    def neg_log_likelihood(params: np.ndarray) -> float:
-        lam_t, lam_o = params
-        if lam_t <= 0 or lam_o <= 0:
-            return 1e10
-        ll = 0.0
-        for (i, j), p_mkt in zip(scores, probs_market):
-            p_model = poisson.pmf(i, lam_t) * poisson.pmf(j, lam_o)
-            if p_model > 0:
-                ll += p_mkt * math.log(p_model)
-        return -ll
-
-    init = np.array(lambda_init if lambda_init else [1.3, 1.0])
-    res = minimize(neg_log_likelihood, init, method="Nelder-Mead",
-                   bounds=[(0.05, 5.0), (0.05, 5.0)])
-    return float(res.x[0]), float(res.x[1])
 
 
 def build_poisson_matrix(
@@ -267,37 +249,39 @@ def simulate_g2_monte_carlo(
 
 
 def compute_g2(
-    lay_1x2: float,
-    ou25_under_mid: float | None = None,
-    btts_yes_mid: float | None = None,
-    ou05_under_mid: float | None = None,
+    odds_h: float,
+    odds_d: float,
+    odds_a: float,
+    team_is_home: bool = True,
+    ou25_under: float | None = None,
+    ou25_over: float | None = None,
+    btts_yes: float | None = None,
+    btts_no: float | None = None,
     cs_mids: dict[tuple[int, int], float] | None = None,
     betclic_odds: float | None = None,
     n_sims: int = 50_000,
-    bf_u05_team: float | None = None,
-    bf_00: float | None = None,
 ) -> G2Result:
-    has_betfair_p0 = (
-        bf_u05_team is not None and bf_u05_team > 1.0
-        and bf_00 is not None and bf_00 > 1.0
+    lam_home, lam_away, method = lambdas_buchdahl(
+        odds_h, odds_d, odds_a,
+        ou25_under=ou25_under,
+        ou25_over=ou25_over,
+        btts_yes=btts_yes,
+        btts_no=btts_no,
+        cs_mids=cs_mids,
     )
 
-    if has_betfair_p0:
-        lambda_team, lambda_opp, method = lambdas_from_betfair(
-            lay_1x2, bf_u05_team, bf_00,
-            ou25_under_mid=ou25_under_mid,
-            btts_yes_mid=btts_yes_mid,
-        )
+    if team_is_home:
+        lambda_team, lambda_opp = lam_home, lam_away
     else:
-        lambda_team, lambda_opp, method = lambdas_cascade(
-            lay_1x2, ou25_under_mid, btts_yes_mid, ou05_under_mid, cs_mids
-        )
+        lambda_team, lambda_opp = lam_away, lam_home
 
     p0_team = math.exp(-lambda_team)
     p0_opp = math.exp(-lambda_opp)
 
+    fair_h, fair_d, fair_a = remove_margin_proportional(odds_h, odds_d, odds_a)
+    p_win_market = 1.0 / fair_h if team_is_home else 1.0 / fair_a
+
     matrix = build_poisson_matrix(lambda_team, lambda_opp)
-    p_win_market = 1.0 / lay_1x2 if lay_1x2 > 0 else None
     prob_mc = simulate_g2_monte_carlo(lambda_team, lambda_opp, n_sims=n_sims)
     prob_frac = prob_g2_fixed_fractions(lambda_team, lambda_opp, p_win_market=p_win_market)
 

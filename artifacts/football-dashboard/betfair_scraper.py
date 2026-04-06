@@ -606,16 +606,6 @@ def get_ou05_under_mid(cs_data: BetfairCSData) -> float | None:
     return None
 
 
-def get_ou05_team_under_mid(cs_data: BetfairCSData, team_is_home: bool) -> float | None:
-    mkt = cs_data.ou05_home if team_is_home else cs_data.ou05_away
-    for key, sel in mkt.items():
-        if "under" in key.lower():
-            mid = sel.mid_price
-            if mid > 1.0:
-                return round(mid, 3)
-    return None
-
-
 def get_1x2_lay_team(cs_data: BetfairCSData, team_name: str) -> float | None:
     for name, lay_price in cs_data.match_odds_1x2.items():
         if team_name.lower()[:4] in name.lower() or name.lower()[:4] in team_name.lower():
@@ -624,52 +614,36 @@ def get_1x2_lay_team(cs_data: BetfairCSData, team_name: str) -> float | None:
     return None
 
 
-def derive_team_u05_from_cs(
-    cs_data: BetfairCSData,
-    team_is_home: bool,
-) -> float | None:
-    zero_scores = []
-    source = cs_data.cs_detail if cs_data.cs_detail else {}
-    if source:
-        for score_str, sel in source.items():
-            parts = score_str.split("-")
-            if len(parts) != 2:
-                continue
-            try:
-                h, a = int(parts[0].strip()), int(parts[1].strip())
-            except ValueError:
-                continue
-            team_goals = h if team_is_home else a
-            mid = sel.mid_price
-            if team_goals == 0 and mid > 1.0:
-                zero_scores.append(1.0 / mid)
-    else:
-        for score_str, odds in cs_data.correct_scores.items():
-            parts = score_str.split("-")
-            if len(parts) != 2:
-                continue
-            try:
-                h, a = int(parts[0].strip()), int(parts[1].strip())
-            except ValueError:
-                continue
-            team_goals = h if team_is_home else a
-            if team_goals == 0:
-                zero_scores.append(1.0 / odds)
-
-    if not zero_scores:
+def get_1x2_mids(cs_data: BetfairCSData) -> tuple[float, float, float] | None:
+    det = cs_data.match_odds_1x2_detail
+    if len(det) < 3:
         return None
-    p_zero = sum(zero_scores)
-    if p_zero <= 0 or p_zero >= 1:
-        return None
-    return round(1.0 / p_zero, 2)
+    names = list(det.keys())
+    mids = [det[n].mid_price for n in names]
+    if all(m > 1.0 for m in mids):
+        return (round(mids[0], 3), round(mids[1], 3), round(mids[2], 3))
+    return None
 
 
-def derive_00_from_cs(cs_data: BetfairCSData) -> float | None:
-    if "0-0" in cs_data.cs_detail:
-        mid = cs_data.cs_detail["0-0"].mid_price
-        if mid > 1.0:
-            return round(mid, 2)
-    odds = cs_data.correct_scores.get("0-0")
-    if odds and odds > 1.0:
-        return odds
+def get_ou25_both_mids(cs_data: BetfairCSData) -> tuple[float, float] | None:
+    under_mid, over_mid = 0.0, 0.0
+    for key, sel in cs_data.ou25.items():
+        if "under" in key.lower():
+            under_mid = sel.mid_price
+        elif "over" in key.lower():
+            over_mid = sel.mid_price
+    if under_mid > 1.0 and over_mid > 1.0:
+        return (round(under_mid, 3), round(over_mid, 3))
+    return None
+
+
+def get_btts_both_mids(cs_data: BetfairCSData) -> tuple[float, float] | None:
+    yes_mid, no_mid = 0.0, 0.0
+    for key, sel in cs_data.btts.items():
+        if key.lower() in ("yes", "oui"):
+            yes_mid = sel.mid_price
+        elif key.lower() in ("no", "non"):
+            no_mid = sel.mid_price
+    if yes_mid > 1.0 and no_mid > 1.0:
+        return (round(yes_mid, 3), round(no_mid, 3))
     return None

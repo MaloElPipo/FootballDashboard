@@ -62,21 +62,21 @@ The dashboard is built with Streamlit, providing an interactive web interface. I
             - **Garantie 2 Buts (Early Win) scraping path:** gRPC match response → market with label containing "2 buts d'avance" → selections in **field 16** (not field 11 like other markets) → team name in sub-field 10, odds in sub-field 12 (double, 8 bytes). Market state=8 does NOT mean no data — selections can still be present in field 16.
         - **Squad Scraper:** Scrapes Transfermarkt for WC 2026 national team squad data, including player profiles, market values, and positions.
     - **Garantie 2+ Section:**
-        - **Inputs:** Match selection (Betclic dropdown), target team, Lay 1X2 (auto via Odds API or manual). Optional: Betfair Exchange scraping for enriched markets.
-        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping. Betfair Exchange scraping via Playwright + Webshare EU proxy for 1X2, BTTS, O/U 2.5, O/U 0.5, and 16 Correct Score markets.
+        - **Inputs:** Match selection (Betclic dropdown), target team, full 1X2 odds (H/D/A mid-prices). Optional: O/U 2.5 (Under+Over), BTTS (Yes+No), Correct Scores. Betfair Exchange scraping auto-fills all fields.
+        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping. Betfair Exchange scraping via Playwright + Webshare EU proxy for 1X2, BTTS, O/U 2.5, and 16 Correct Score markets.
         - **Betfair data extraction:** For each market selection, captures Back price + volume and Lay price + volume. Computes volume-weighted mid-price: `mid = back × (back_vol/total_vol) + lay × (lay_vol/total_vol)`.
-        - **Lambda derivation — 3-tier cascade (Buchdahl-inspired):**
-            - **Tier 1 — P(0) direct (best):** `lambdas_from_betfair()` — derives λ_team = -ln(1/cote_U0.5_team) and λ_total = -ln(1/cote_0-0), then λ_opp = λ_total - λ_team. No optimization — pure analytical derivation from P(0). Matches the Google Sheets reference exactly.
-            - **Tier 2 — Cascade optimization (fallback):** Multi-constraint weighted optimization using scipy Nelder-Mead when P(0) data unavailable:
-              - 1X2 Lay → P(team wins) = 1/lay (weight=10)
-              - O/U 2.5 Under mid → P(Under 2.5) constrains λ_total (weight=50)
-              - BTTS Yes mid → P(BTTS) = (1-e^-λA)(1-e^-λB) splits λA/λB (weight=30)
-              - O/U 0.5 Under mid → validates λ_total (weight=20)
-              - CS mid-prices → MLE refinement on 16 scores (weight=5)
+        - **Lambda derivation — Buchdahl method (`lambdas_buchdahl()`):**
+            - Removes margin from all markets using Buchdahl proportional method (`remove_margin_proportional` for 3-way, `remove_margin_2way` for 2-way).
+            - Multi-constraint weighted optimization using scipy Nelder-Mead:
+              - 1X2 fair → P(H), P(D), P(A) (weight=100)
+              - O/U 2.5 fair → P(Under 2.5) constrains λ_total (weight=50)
+              - BTTS fair → P(BTTS) = (1-e^-λA)(1-e^-λB) splits λA/λB (weight=30)
+              - CS mid-prices → MLE refinement on 16 scores (weight=20)
+            - Returns λ_home, λ_away (xG per team).
         - **Margin removal (Buchdahl method):** `remove_margin_proportional()` — fair odds = n×O/(n-M×O) for n-outcome market. Accounts for favourite-longshot bias. Available for 3-way and 2-way markets.
-        - **G2+ probability:** Two methods: (1) Monte Carlo simulation (50K iterations, minute-by-minute) — team wins if it led by 2+ at any point OR wins at full time. (2) Fixed-fraction analytical method using ballot problem formula: `fraction(i,j) = i(i-1)/((j+2)(j+1))` for i≥2. P(G2+) = P(win)_market + Σ(draws+losses) P(score) × fraction(score). When `p_win_market` is provided (from 1/Lay), uses the market P(win) instead of Poisson P(win) for better accuracy.
-        - **Output:** xG team, xG opponent, xG match, P(G2+) MC, P(G2+) fractions, fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator, cascade method used.
-        - **Manual fallback:** All market fields are editable. Tool works with just Lay 1X2 (minimum), additional markets improve precision progressively.
+        - **G2+ probability:** Two methods: (1) Monte Carlo simulation (50K iterations, minute-by-minute) — team wins if it led by 2+ at any point OR wins at full time. (2) Fixed-fraction analytical method using ballot problem formula: `fraction(i,j) = i(i-1)/((j+2)(j+1))` for i≥2. P(G2+) = P(win)_market + Σ(draws+losses) P(score) × fraction(score). Uses fair P(win) from Buchdahl margin removal for better accuracy.
+        - **Output:** xG team, xG opponent, xG match, P(G2+) MC, P(G2+) fractions, fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator, method used.
+        - **Manual fallback:** All market fields are editable. Tool works with just 1X2 (minimum), O/U 2.5 and BTTS improve precision progressively.
     - **Workflow:** Runs on port 5000 via a Streamlit web application.
 
 # External Dependencies

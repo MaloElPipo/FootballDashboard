@@ -2621,7 +2621,7 @@ elif page == "🔮 Prédictions":
         )
 
         import math as _m1x2_math
-        from g2_engine import lambdas_cascade as _m1x2_lambdas
+        from g2_engine import lambdas_buchdahl as _m1x2_lambdas
         from scipy.stats import poisson as _m1x2_poisson
 
         def _m1x2_calc_ou(lh, la, line):
@@ -2717,8 +2717,11 @@ elif page == "🔮 Prédictions":
                 if pd_pin and pd_pin.get("ou25_under") and pd_pin["ou25_under"] > 1.0:
                     try:
                         lt, lo, _method = _m1x2_lambdas(
-                            lay_1x2_team=pd_pin["oh"],
-                            ou25_under_mid=pd_pin["ou25_under"],
+                            odds_h=pd_pin["oh"],
+                            odds_d=pd_pin["od"],
+                            odds_a=pd_pin["oa"],
+                            ou25_under=pd_pin.get("ou25_under"),
+                            ou25_over=pd_pin.get("ou25_over"),
                         )
                         _o25, _u25 = _m1x2_calc_ou(lt, lo, 2.5)
                         _o35, _u35 = _m1x2_calc_ou(lt, lo, 3.5)
@@ -3962,9 +3965,8 @@ elif page == "🎯 Garantie 2+":
 
         from betfair_scraper import (
             fetch_betfair_cs, cs_to_exact_score_mids,
-            get_btts_yes_mid, get_ou25_under_mid, get_ou05_under_mid,
-            get_ou05_team_under_mid, get_1x2_lay_team,
-            derive_team_u05_from_cs, derive_00_from_cs,
+            get_1x2_mids, get_ou25_both_mids, get_btts_both_mids,
+            get_1x2_lay_team,
             BetfairCSData, BetfairSelection,
         )
 
@@ -3972,12 +3974,13 @@ elif page == "🎯 Garantie 2+":
 
         _bf_state_key = f"_g2_bf_last_{g2_comp_key}_{g2_sel_idx}_{g2_team_choice}"
         if st.session_state.get("_g2_bf_auto_key") != _bf_state_key:
-            st.session_state["g2_lay1x2"] = round(bf_lay_default, 2)
-            st.session_state["g2_ou25"] = 0.0
-            st.session_state["g2_btts"] = 0.0
-            st.session_state["g2_ou05"] = 0.0
-            st.session_state["g2_bf_u05_team"] = 0.0
-            st.session_state["g2_bf_00"] = 0.0
+            st.session_state["g2_odds_h"] = round(bf_lay_default, 2) if bf_lay_default > 1 else 2.0
+            st.session_state["g2_odds_d"] = 3.5
+            st.session_state["g2_odds_a"] = 2.0
+            st.session_state["g2_ou25_under"] = 0.0
+            st.session_state["g2_ou25_over"] = 0.0
+            st.session_state["g2_btts_yes"] = 0.0
+            st.session_state["g2_btts_no"] = 0.0
             st.session_state["_g2_bf_auto_key"] = _bf_state_key
 
         _cs_state_key = f"_g2_cs_{g2_comp_key}_{g2_sel_idx}"
@@ -4018,34 +4021,21 @@ elif page == "🎯 Garantie 2+":
                     st.session_state["_g2_cs_data"] = cs_data
                     st.session_state["_g2_cs_cache_key"] = _cs_state_key
 
-                    _lay_val = get_1x2_lay_team(cs_data, g2_team_choice)
-                    if _lay_val:
-                        st.session_state["g2_lay1x2"] = _lay_val
-                    _ou25_v = get_ou25_under_mid(cs_data)
-                    if _ou25_v:
-                        st.session_state["g2_ou25"] = _ou25_v
-                    _btts_v = get_btts_yes_mid(cs_data)
-                    if _btts_v:
-                        st.session_state["g2_btts"] = _btts_v
-                    _ou05_v = get_ou05_under_mid(cs_data)
-                    if not _ou05_v:
-                        _cs00 = cs_data.cs_detail.get("0 - 0") or cs_data.cs_detail.get("0-0")
-                        if _cs00 and _cs00.mid_price > 1.0:
-                            _ou05_v = round(_cs00.mid_price, 3)
-                    if _ou05_v:
-                        st.session_state["g2_ou05"] = _ou05_v
+                    _1x2_mids = get_1x2_mids(cs_data)
+                    if _1x2_mids:
+                        st.session_state["g2_odds_h"] = _1x2_mids[0]
+                        st.session_state["g2_odds_d"] = _1x2_mids[1]
+                        st.session_state["g2_odds_a"] = _1x2_mids[2]
+                    _ou25 = get_ou25_both_mids(cs_data)
+                    if _ou25:
+                        st.session_state["g2_ou25_under"] = _ou25[0]
+                        st.session_state["g2_ou25_over"] = _ou25[1]
+                    _btts = get_btts_both_mids(cs_data)
+                    if _btts:
+                        st.session_state["g2_btts_yes"] = _btts[0]
+                        st.session_state["g2_btts_no"] = _btts[1]
 
                     _team_home = g2_team_choice == g2_match["home"]
-                    _bf_u05_direct = get_ou05_team_under_mid(cs_data, _team_home)
-                    if _bf_u05_direct:
-                        st.session_state["g2_bf_u05_team"] = _bf_u05_direct
-                    else:
-                        _bf_u05_team = derive_team_u05_from_cs(cs_data, _team_home)
-                        if _bf_u05_team:
-                            st.session_state["g2_bf_u05_team"] = _bf_u05_team
-                    _bf_00 = derive_00_from_cs(cs_data)
-                    if _bf_00:
-                        st.session_state["g2_bf_00"] = _bf_00
                     _cs_mids = cs_to_exact_score_mids(cs_data, _team_home)
                     _old_cs_keys = [k for k in st.session_state if k.startswith("g2_cs_")]
                     for k in _old_cs_keys:
@@ -4060,40 +4050,11 @@ elif page == "🎯 Garantie 2+":
 
         cs_data: BetfairCSData | None = st.session_state.get("_g2_cs_data")
 
-        scraped_ou25 = 0.0
-        scraped_btts = 0.0
-        scraped_ou05 = 0.0
-        scraped_lay = None
-        scraped_bf_u05_team = 0.0
-        scraped_bf_00 = 0.0
         scrape_info_parts = []
 
         if cs_data and not cs_data.error:
-            team_is_home = g2_team_choice == g2_match["home"]
             from datetime import datetime as _dt_cs
             ts_str = _dt_cs.fromtimestamp(cs_data.timestamp).strftime("%H:%M:%S")
-
-            scraped_lay = get_1x2_lay_team(cs_data, g2_team_choice)
-            ou25_val = get_ou25_under_mid(cs_data)
-            btts_val = get_btts_yes_mid(cs_data)
-            ou05_val = get_ou05_under_mid(cs_data)
-            _bf_u05_direct = get_ou05_team_under_mid(cs_data, team_is_home)
-            if _bf_u05_direct:
-                scraped_bf_u05_team = _bf_u05_direct
-            else:
-                _bf_u05_t = derive_team_u05_from_cs(cs_data, team_is_home)
-                if _bf_u05_t:
-                    scraped_bf_u05_team = _bf_u05_t
-            _bf_00_v = derive_00_from_cs(cs_data)
-            if _bf_00_v:
-                scraped_bf_00 = _bf_00_v
-
-            if ou25_val:
-                scraped_ou25 = ou25_val
-            if btts_val:
-                scraped_btts = btts_val
-            if ou05_val:
-                scraped_ou05 = ou05_val
 
             parts_found = []
             if cs_data.match_odds_1x2:
@@ -4102,173 +4063,129 @@ elif page == "🎯 Garantie 2+":
                 parts_found.append("BTTS")
             if cs_data.ou25:
                 parts_found.append("O/U 2.5")
-            if cs_data.ou05:
-                parts_found.append("O/U 0.5")
-            if cs_data.ou05_home or cs_data.ou05_away:
-                parts_found.append("O/U 0.5 Team")
             if cs_data.cs_detail:
                 parts_found.append(f"CS ({len(cs_data.cs_detail)})")
             scrape_info_parts = parts_found
 
             st.success(f"✅ Scrape {ts_str} — {', '.join(parts_found)}")
 
-            with st.expander("📡 Données brutes Betfair (back / lay / volume)", expanded=False):
+            with st.expander("📡 Données brutes Betfair (back / lay / mid)", expanded=False):
                 raw_rows = []
-                if cs_data.match_odds_1x2:
-                    for name, lay_p in cs_data.match_odds_1x2.items():
-                        _det = cs_data.match_odds_1x2_detail.get(name)
-                        if _det:
-                            raw_rows.append({
-                                "Marché": "1X2", "Sélection": name,
-                                "Back": f"{_det.back:.2f}", "Lay": f"{_det.lay:.2f}",
-                                "Mid": f"{_det.mid_price:.3f}",
-                            })
-                        else:
-                            raw_rows.append({"Marché": "1X2", "Sélection": name, "Lay": f"{lay_p:.2f}"})
-                _ou05_markets = [
-                    ("BTTS", cs_data.btts),
+                if cs_data.match_odds_1x2_detail:
+                    for name, det in cs_data.match_odds_1x2_detail.items():
+                        raw_rows.append({
+                            "Marché": "1X2", "Sélection": name,
+                            "Back All": f"{det.back:.2f}",
+                            "Lay All": f"{det.lay:.2f}",
+                            "Mid": f"{det.mid_price:.3f}",
+                        })
+                _2way_markets = [
                     ("O/U 2.5", cs_data.ou25),
-                    ("O/U 0.5 Match", cs_data.ou05),
+                    ("BTTS", cs_data.btts),
                 ]
-                _home_label = cs_data.home_team or g2_match.get("home", "Home")
-                _away_label = cs_data.away_team or g2_match.get("away", "Away")
-                if cs_data.ou05_home:
-                    _ou05_markets.append((f"O/U 0.5 {_home_label}", cs_data.ou05_home))
-                if cs_data.ou05_away:
-                    _ou05_markets.append((f"O/U 0.5 {_away_label}", cs_data.ou05_away))
-                for label, mkt in _ou05_markets:
+                for label, mkt in _2way_markets:
                     for name, sel in mkt.items():
                         raw_rows.append({
                             "Marché": label, "Sélection": name,
-                            "Back": f"{sel.back:.2f}", "£ Back": f"{sel.back_vol:.0f}",
-                            "Lay": f"{sel.lay:.2f}", "£ Lay": f"{sel.lay_vol:.0f}",
+                            "Back All": f"{sel.back:.2f}",
+                            "Lay All": f"{sel.lay:.2f}",
                             "Mid": f"{sel.mid_price:.3f}",
                         })
                 if cs_data.cs_detail:
                     for name, sel in list(cs_data.cs_detail.items())[:16]:
                         raw_rows.append({
                             "Marché": "CS", "Sélection": name,
-                            "Back": f"{sel.back:.1f}", "£ Back": f"{sel.back_vol:.0f}",
-                            "Lay": f"{sel.lay:.1f}", "£ Lay": f"{sel.lay_vol:.0f}",
+                            "Back All": f"{sel.back:.1f}",
+                            "Lay All": f"{sel.lay:.1f}",
                             "Mid": f"{sel.mid_price:.2f}",
                         })
                 if raw_rows:
                     import pandas as _pd_raw
                     st.dataframe(_pd_raw.DataFrame(raw_rows), use_container_width=True, hide_index=True)
 
+            _mkt_state_key = f"_g2_mkt_auto_{_cs_state_key}_{g2_team_choice}"
+            if st.session_state.get("_g2_mkt_auto_key") != _mkt_state_key:
+                _1x2_mids = get_1x2_mids(cs_data)
+                if _1x2_mids:
+                    st.session_state["g2_odds_h"] = _1x2_mids[0]
+                    st.session_state["g2_odds_d"] = _1x2_mids[1]
+                    st.session_state["g2_odds_a"] = _1x2_mids[2]
+                _ou25 = get_ou25_both_mids(cs_data)
+                if _ou25:
+                    st.session_state["g2_ou25_under"] = _ou25[0]
+                    st.session_state["g2_ou25_over"] = _ou25[1]
+                _btts = get_btts_both_mids(cs_data)
+                if _btts:
+                    st.session_state["g2_btts_yes"] = _btts[0]
+                    st.session_state["g2_btts_no"] = _btts[1]
+                st.session_state["_g2_mkt_auto_key"] = _mkt_state_key
+
         elif cs_data and cs_data.error:
             st.warning(f"⚠️ Betfair: {cs_data.error}")
 
-        if cs_data and not cs_data.error and scraped_ou05 == 0.0:
-            cs00_sel = cs_data.cs_detail.get("0 - 0") or cs_data.cs_detail.get("0-0")
-            if cs00_sel and cs00_sel.mid_price > 1.0:
-                scraped_ou05 = round(cs00_sel.mid_price, 3)
+        if not scrape_info_parts:
+            st.caption("Saisissez les cotes 1X2 (mid-price), puis O/U 2.5 et BTTS pour plus de précision. Ou scrapez Betfair.")
 
-        _mkt_state_key = f"_g2_mkt_auto_{_cs_state_key}_{g2_team_choice}"
-        if st.session_state.get("_g2_mkt_auto_key") != _mkt_state_key and cs_data and not cs_data.error:
-            if scraped_lay:
-                st.session_state["g2_lay1x2"] = scraped_lay
-            if scraped_ou25 > 0:
-                st.session_state["g2_ou25"] = scraped_ou25
-            if scraped_btts > 0:
-                st.session_state["g2_btts"] = scraped_btts
-            if scraped_ou05 > 0:
-                st.session_state["g2_ou05"] = scraped_ou05
-            if scraped_bf_u05_team > 0:
-                st.session_state["g2_bf_u05_team"] = scraped_bf_u05_team
-            if scraped_bf_00 > 0:
-                st.session_state["g2_bf_00"] = scraped_bf_00
-            st.session_state["_g2_mkt_auto_key"] = _mkt_state_key
+        _home_label = g2_match.get("home", "Home")
+        _away_label = g2_match.get("away", "Away")
 
-        if bf_lay_source and not scrape_info_parts:
-            st.caption(f"Lay 1X2 pré-rempli via The Odds API {bf_lay_source}. Scraper Betfair pour les autres marchés.")
-        elif not scrape_info_parts:
-            st.caption("Saisissez le Lay 1X2 minimum, puis scrapez Betfair pour O/U 2.5 et BTTS. Chaque marché améliore la précision.")
-
-        if "g2_lay1x2" not in st.session_state:
-            st.session_state["g2_lay1x2"] = round(bf_lay_default, 2)
-        if "g2_ou25" not in st.session_state:
-            st.session_state["g2_ou25"] = scraped_ou25
-        if "g2_btts" not in st.session_state:
-            st.session_state["g2_btts"] = scraped_btts
-        if "g2_ou05" not in st.session_state:
-            st.session_state["g2_ou05"] = scraped_ou05
-        if "g2_bf_u05_team" not in st.session_state:
-            st.session_state["g2_bf_u05_team"] = scraped_bf_u05_team
-        if "g2_bf_00" not in st.session_state:
-            st.session_state["g2_bf_00"] = scraped_bf_00
-
-        st.markdown("##### 🎯 P(0) — Probabilité de ne pas marquer (Buchdahl / Betfair)")
-        st.caption(
-            "Priorité : marché O/U 0.5 Team Betfair (si disponible) → dérivation scores exacts → manuel. "
-            "Si renseigné, utilise la méthode directe P(0) (plus précise) au lieu de l'optimisation cascade."
-        )
-
-        p0_col1, p0_col2 = st.columns(2)
-        with p0_col1:
-            g2_bf_u05_team = st.number_input(
-                f"U0.5 {g2_team_choice} (cote implicite)",
-                min_value=0.0, max_value=50.0, step=0.01,
-                key="g2_bf_u05_team",
-                help="Cote Under 0.5 Goals de l'équipe cible. Source prioritaire : marché Betfair O/U 0.5 Team direct. Fallback : dérivé des scores exacts (somme P(team=0)). 0 = désactivé."
-            )
-        with p0_col2:
-            g2_bf_00 = st.number_input(
-                "Score 0-0 (mid-price)",
-                min_value=0.0, max_value=200.0, step=0.1,
-                key="g2_bf_00",
-                help="Mid-price du score exact 0-0 Betfair. 0 = désactivé."
-            )
-
-        _p0_active = g2_bf_u05_team > 1.0 and g2_bf_00 > 1.0
-        if _p0_active:
-            import math as _m_p0
-            _p0_t_display = 1.0 / g2_bf_u05_team
-            _lam_t_display = -_m_p0.log(max(_p0_t_display, 0.001))
-            _p0_00_display = 1.0 / g2_bf_00
-            _p0_o_display = _p0_00_display / max(_p0_t_display, 0.001)
-            _p0_o_display = max(0.001, min(0.999, _p0_o_display))
-            _lam_o_display = -_m_p0.log(_p0_o_display)
-            st.info(
-                f"✅ **Méthode Betfair P(0) active** — "
-                f"P(0) {g2_team_choice} = {_p0_t_display:.1%} (λ≈{_lam_t_display:.3f}) | "
-                f"P(0) adversaire ≈ {_p0_o_display:.1%} (λ≈{_lam_o_display:.3f})"
-            )
-        else:
-            st.caption("⚠️ P(0) non disponible — fallback sur optimisation cascade (1X2 + O/U + BTTS)")
-
-        st.markdown("##### 📊 Marchés complémentaires")
+        st.markdown("##### 🎯 1X2 — Cotes mid-price (Buchdahl)")
 
         bf_col1, bf_col2, bf_col3 = st.columns(3)
         with bf_col1:
-            g2_lay_1x2 = st.number_input(
-                f"Lay 1X2 {g2_team_choice}",
+            g2_odds_h = st.number_input(
+                f"1X2 {_home_label}",
                 min_value=1.01, max_value=100.0, step=0.01,
-                key="g2_lay1x2",
-                help="Cote Lay All Betfair Exchange du 1X2 de l'équipe cible"
+                key="g2_odds_h",
+                help="Mid-price 1X2 du Home."
             )
         with bf_col2:
-            g2_ou25 = st.number_input(
-                "O/U 2.5 Under mid-price",
-                min_value=0.0, max_value=50.0, step=0.01,
-                key="g2_ou25",
-                help="Mid-price volume-weighted du Under 2.5 Goals. 0 = désactivé."
+            g2_odds_d = st.number_input(
+                "1X2 Draw",
+                min_value=1.01, max_value=100.0, step=0.01,
+                key="g2_odds_d",
+                help="Mid-price 1X2 du Nul."
             )
         with bf_col3:
-            g2_btts = st.number_input(
-                "BTTS Yes mid-price",
-                min_value=0.0, max_value=50.0, step=0.01,
-                key="g2_btts",
-                help="Mid-price volume-weighted du Both Teams To Score Yes. 0 = désactivé."
+            g2_odds_a = st.number_input(
+                f"1X2 {_away_label}",
+                min_value=1.01, max_value=100.0, step=0.01,
+                key="g2_odds_a",
+                help="Mid-price 1X2 du Away."
             )
 
-        bf_col4, bf_col5, _ = st.columns(3)
+        st.markdown("##### 📊 Marchés complémentaires")
+
+        bf_col4, bf_col5 = st.columns(2)
         with bf_col4:
-            g2_ou05 = st.number_input(
-                "O/U 0.5 Under mid-price",
+            g2_ou25_under = st.number_input(
+                "O/U 2.5 Under",
                 min_value=0.0, max_value=50.0, step=0.01,
-                key="g2_ou05",
-                help="Mid-price volume-weighted du Under 0.5 Goals (match total). 0 = désactivé."
+                key="g2_ou25_under",
+                help="Mid-price Under 2.5 Goals. 0 = désactivé."
+            )
+        with bf_col5:
+            g2_ou25_over = st.number_input(
+                "O/U 2.5 Over",
+                min_value=0.0, max_value=50.0, step=0.01,
+                key="g2_ou25_over",
+                help="Mid-price Over 2.5 Goals. 0 = désactivé."
+            )
+
+        bf_col6, bf_col7 = st.columns(2)
+        with bf_col6:
+            g2_btts_yes = st.number_input(
+                "BTTS Yes",
+                min_value=0.0, max_value=50.0, step=0.01,
+                key="g2_btts_yes",
+                help="Mid-price BTTS Yes. 0 = désactivé."
+            )
+        with bf_col7:
+            g2_btts_no = st.number_input(
+                "BTTS No",
+                min_value=0.0, max_value=50.0, step=0.01,
+                key="g2_btts_no",
+                help="Mid-price BTTS No. 0 = désactivé."
             )
 
         st.markdown("---")
@@ -4334,15 +4251,17 @@ elif page == "🎯 Garantie 2+":
         if st.button("🧮 Calculer EV0", type="primary", key="g2_calc"):
             with st.spinner("Simulation Monte Carlo en cours (50 000 itérations)..."):
                 g2_result = compute_g2(
-                    lay_1x2=g2_lay_1x2,
-                    ou25_under_mid=g2_ou25 if g2_ou25 > 1.0 else None,
-                    btts_yes_mid=g2_btts if g2_btts > 1.0 else None,
-                    ou05_under_mid=g2_ou05 if g2_ou05 > 1.0 else None,
+                    odds_h=g2_odds_h,
+                    odds_d=g2_odds_d,
+                    odds_a=g2_odds_a,
+                    team_is_home=team_is_home,
+                    ou25_under=g2_ou25_under if g2_ou25_under > 1.0 else None,
+                    ou25_over=g2_ou25_over if g2_ou25_over > 1.0 else None,
+                    btts_yes=g2_btts_yes if g2_btts_yes > 1.0 else None,
+                    btts_no=g2_btts_no if g2_btts_no > 1.0 else None,
                     cs_mids=exact_scores if exact_scores else None,
                     betclic_odds=betclic_g2_odds,
                     n_sims=50_000,
-                    bf_u05_team=g2_bf_u05_team if g2_bf_u05_team > 1.0 else None,
-                    bf_00=g2_bf_00 if g2_bf_00 > 1.0 else None,
                 )
 
             st.subheader("📈 Résultats")

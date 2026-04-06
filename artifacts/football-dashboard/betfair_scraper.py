@@ -1,12 +1,31 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 import os
 import re
+import subprocess
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 
 from playwright.async_api import async_playwright
+
+_bf_logger = logging.getLogger(__name__)
+
+def _ensure_playwright_browsers() -> None:
+    cache_dir = Path.home() / ".cache" / "ms-playwright"
+    if any(cache_dir.glob("chromium*/chrome-linux/chrome")) or any(cache_dir.glob("chromium_headless_shell*/chrome-headless-shell-linux64/chrome-headless-shell")):
+        return
+    _bf_logger.info("Playwright Chromium not found, installing...")
+    try:
+        subprocess.run(
+            ["python", "-m", "playwright", "install", "chromium"],
+            check=True, capture_output=True, text=True, timeout=120,
+        )
+        _bf_logger.info("Playwright Chromium installed successfully")
+    except Exception as e:
+        _bf_logger.warning("Failed to install Playwright Chromium: %s", e)
 
 
 PROXY_URL = os.environ.get("WEBSHARE_PROXY_URL", "")
@@ -300,6 +319,8 @@ async def _scrape_betfair_match(
     proxy = _parse_proxy()
     if not proxy:
         return BetfairCSData(error="WEBSHARE_PROXY_URL non configuré", timestamp=time.time())
+
+    _ensure_playwright_browsers()
 
     result = BetfairCSData(timestamp=time.time())
 

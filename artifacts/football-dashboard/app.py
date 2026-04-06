@@ -2335,12 +2335,13 @@ elif page == "🔮 Prédictions":
     n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2, key="pred_n_sims")
     sim_data = _cached_simulation(n_sims)
 
-    tab_sim, tab_bracket, tab_elim, tab_matches, tab_value = st.tabs([
+    tab_sim, tab_bracket, tab_elim, tab_matches, tab_value, tab_xg = st.tabs([
         "🏆 Simulation globale",
         "🔀 Bracket / Adversaires",
         "📉 Stade d'élimination",
         "⚽ Matchs 1X2",
         "💎 Détection de Value",
+        "📊 xG & O/U",
     ])
 
     with tab_sim:
@@ -2815,6 +2816,266 @@ elif page == "🔮 Prédictions":
                     pd.DataFrame(all_rows).to_html(escape=False, index=False),
                     unsafe_allow_html=True,
                 )
+
+    with tab_xg:
+        st.subheader("📊 xG & Over/Under — Prédictions Poisson")
+        st.caption(
+            "Calcule les xG par équipe et les fair odds O/U + BTTS via le moteur Poisson (même méthode que Garantie 2+). "
+            "Inputs : cotes Pinnacle 1X2 (home) + ligne O/U 2.5 Pinnacle."
+        )
+
+        import math as _xg_math
+        from g2_engine import lambdas_cascade as _xg_lambdas
+        from scipy.stats import poisson as _xg_poisson
+
+        try:
+            import os as _xg_os
+            _XG_KEY = _xg_os.environ.get("ODDS_API_KEY", "")
+            _xg_r = requests.get(
+                "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/",
+                params={
+                    "apiKey": _XG_KEY, "regions": "eu", "markets": "h2h,totals",
+                    "bookmakers": "pinnacle", "oddsFormat": "decimal",
+                },
+                timeout=15,
+            )
+            _xg_pin_matches = _xg_r.json() if _xg_r.status_code == 200 else []
+        except Exception:
+            _xg_pin_matches = []
+
+        if not _xg_pin_matches:
+            st.warning("Impossible de récupérer les cotes Pinnacle (1X2 + O/U).")
+        else:
+            _XG_ODDS_TO_CODE = {
+                "France":"FRA","Spain":"ESP","Germany":"GER","England":"ENG",
+                "Portugal":"POR","Netherlands":"NED","Belgium":"BEL","Croatia":"CRO",
+                "Austria":"AUT","Switzerland":"SUI","Norway":"NOR","Sweden":"SWE",
+                "Czech Republic":"CZE","Czechia":"CZE","Turkey":"TUR","Scotland":"SCO",
+                "Bosnia and Herzegovina":"BIH","Bosnia & Herzegovina":"BIH",
+                "Argentina":"ARG","Brazil":"BRA",
+                "Colombia":"COL","Uruguay":"URU","Ecuador":"ECU","Paraguay":"PAR",
+                "United States":"USA","USA":"USA","Mexico":"MEX","Canada":"CAN",
+                "Panama":"PAN","Curacao":"CUW","Curaçao":"CUW","Haiti":"HAI",
+                "Japan":"JPN","South Korea":"KOR","Korea Republic":"KOR",
+                "Iran":"IRN","Saudi Arabia":"KSA","Australia":"AUS",
+                "Qatar":"QAT","Iraq":"IRQ","Jordan":"JOR","Uzbekistan":"UZB",
+                "Morocco":"MAR","Senegal":"SEN","Egypt":"EGY","Algeria":"ALG",
+                "Tunisia":"TUN","Ivory Coast":"CIV","Ghana":"GHA",
+                "DR Congo":"COD","South Africa":"RSA","Cape Verde":"CPV","New Zealand":"NZL",
+            }
+
+            _xg_code_to_group = {}
+            for _xg_g, _xg_t in WC2026_GROUPS.items():
+                for _xg_c in _xg_t:
+                    _xg_code_to_group[_xg_c] = _xg_g
+
+            _xg_elo_map = _build_elo_map()
+
+            def _xg_calc_ou(lh, la, line):
+                pu = 0.0
+                for i in range(9):
+                    for j in range(9):
+                        if i + j < line:
+                            pu += _xg_poisson.pmf(i, lh) * _xg_poisson.pmf(j, la)
+                return 1 - pu, pu
+
+            def _xg_calc_btts(lh, la):
+                return (1 - _xg_math.exp(-lh)) * (1 - _xg_math.exp(-la))
+
+            _xg_match_data = []
+            for _xg_pm in _xg_pin_matches:
+                _xg_home = _xg_pm.get("home_team", "")
+                _xg_away = _xg_pm.get("away_team", "")
+
+                _xg_pin_1x2 = {}
+                _xg_pin_ou25_over = None
+                _xg_pin_ou25_under = None
+                for _xg_bk in _xg_pm.get("bookmakers", []):
+                    if _xg_bk["key"] == "pinnacle":
+                        for _xg_mk in _xg_bk["markets"]:
+                            if _xg_mk["key"] == "h2h":
+                                _xg_pin_1x2 = {o["name"]: o["price"] for o in _xg_mk["outcomes"]}
+                            elif _xg_mk["key"] == "totals":
+                                for o in _xg_mk["outcomes"]:
+                                    if o.get("point") == 2.5:
+                                        if o["name"] == "Over":
+                                            _xg_pin_ou25_over = o["price"]
+                                        elif o["name"] == "Under":
+                                            _xg_pin_ou25_under = o["price"]
+
+                _xg_oh = _xg_pin_1x2.get(_xg_home)
+                _xg_od = _xg_pin_1x2.get("Draw")
+                _xg_oa = _xg_pin_1x2.get(_xg_away)
+                if not _xg_oh or not _xg_od or not _xg_oa:
+                    continue
+                if not _xg_pin_ou25_under or _xg_pin_ou25_under <= 1.0:
+                    continue
+
+                _xg_ch = _XG_ODDS_TO_CODE.get(_xg_home)
+                _xg_ca = _XG_ODDS_TO_CODE.get(_xg_away)
+                if not _xg_ch or not _xg_ca:
+                    continue
+
+                _xg_delta = _xg_elo_map.get(_xg_ch, 1500) - _xg_elo_map.get(_xg_ca, 1500)
+                _xg_ea = (_xg_elo_map.get(_xg_ch, 1500) + _xg_elo_map.get(_xg_ca, 1500)) / 2
+                _xg_grp_h = _xg_code_to_group.get(_xg_ch)
+                _xg_grp_a = _xg_code_to_group.get(_xg_ca)
+                _xg_phase = "G" if _xg_grp_h and _xg_grp_a and _xg_grp_h == _xg_grp_a else "K"
+
+                _xg_mod_h, _xg_mod_d, _xg_mod_a = sigmoid_v8_1x2(_xg_delta, elo_avg=_xg_ea, phase=_xg_phase)
+
+                _xg_lay_team = _xg_oh
+
+                try:
+                    _xg_lt, _xg_lo, _xg_method = _xg_lambdas(
+                        lay_1x2_team=_xg_lay_team,
+                        ou25_under_mid=_xg_pin_ou25_under,
+                    )
+                except Exception:
+                    continue
+
+                _xg_o15, _xg_u15 = _xg_calc_ou(_xg_lt, _xg_lo, 1.5)
+                _xg_o25, _xg_u25 = _xg_calc_ou(_xg_lt, _xg_lo, 2.5)
+                _xg_o35, _xg_u35 = _xg_calc_ou(_xg_lt, _xg_lo, 3.5)
+                _xg_btts = _xg_calc_btts(_xg_lt, _xg_lo)
+
+                _xg_mg = 1/_xg_oh + 1/_xg_od + 1/_xg_oa
+                _xg_pin_ph = (1/_xg_oh) / _xg_mg * 100
+                _xg_pin_pd = (1/_xg_od) / _xg_mg * 100
+                _xg_pin_pa = (1/_xg_oa) / _xg_mg * 100
+
+                _xg_nation_h = get_nation_by_code(_xg_ch)
+                _xg_nation_a = get_nation_by_code(_xg_ca)
+                _xg_fr_h = _xg_nation_h["fr"] if _xg_nation_h else _xg_home
+                _xg_fr_a = _xg_nation_a["fr"] if _xg_nation_a else _xg_away
+
+                _xg_match_data.append({
+                    "home": _xg_fr_h, "away": _xg_fr_a,
+                    "home_code": _xg_ch, "away_code": _xg_ca,
+                    "group": _xg_grp_h if _xg_phase == "G" else "KO",
+                    "delta": _xg_delta,
+                    "lambda_h": _xg_lt, "lambda_a": _xg_lo,
+                    "xg_total": _xg_lt + _xg_lo,
+                    "mod_h": _xg_mod_h * 100, "mod_d": _xg_mod_d * 100, "mod_a": _xg_mod_a * 100,
+                    "pin_h": _xg_pin_ph, "pin_d": _xg_pin_pd, "pin_a": _xg_pin_pa,
+                    "pin_oh": _xg_oh, "pin_od": _xg_od, "pin_oa": _xg_oa,
+                    "o15": _xg_o15 * 100, "o25": _xg_o25 * 100, "o35": _xg_o35 * 100,
+                    "u15": _xg_u15 * 100, "u25": _xg_u25 * 100, "u35": _xg_u35 * 100,
+                    "btts_yes": _xg_btts * 100, "btts_no": (1 - _xg_btts) * 100,
+                    "pin_ou25_over": _xg_pin_ou25_over,
+                    "pin_ou25_under": _xg_pin_ou25_under,
+                    "method": _xg_method,
+                })
+
+            if not _xg_match_data:
+                st.info("Aucun match WC2026 avec cotes Pinnacle disponibles.")
+            else:
+                st.success(f"**{len(_xg_match_data)} matchs** analysés — xG calculés via moteur Poisson (méthode G2+)")
+
+                _xg_grp_filter = st.selectbox(
+                    "Filtrer par poule",
+                    ["Tous"] + sorted(set(m["group"] for m in _xg_match_data)),
+                    key="xg_grp_filter",
+                )
+                _xg_filtered = _xg_match_data if _xg_grp_filter == "Tous" else [
+                    m for m in _xg_match_data if m["group"] == _xg_grp_filter
+                ]
+
+                for _xg_m in sorted(_xg_filtered, key=lambda x: -(x["xg_total"])):
+                    _xg_fh = flag_img(_xg_m["home_code"], "20x15")
+                    _xg_fa = flag_img(_xg_m["away_code"], "20x15")
+
+                    with st.expander(
+                        f"{_xg_m['home']} vs {_xg_m['away']}  ·  "
+                        f"xG {_xg_m['lambda_h']:.2f} - {_xg_m['lambda_a']:.2f}  ·  "
+                        f"Total {_xg_m['xg_total']:.2f}",
+                        expanded=False,
+                    ):
+                        _xg_c1, _xg_c2, _xg_c3 = st.columns(3)
+                        with _xg_c1:
+                            st.markdown(f"##### {_xg_fh} {_xg_m['home']}")
+                            st.metric("xG", f"{_xg_m['lambda_h']:.2f}")
+                            st.caption(f"V8: {_xg_m['mod_h']:.1f}% · Pin: {_xg_m['pin_h']:.1f}%")
+                        with _xg_c2:
+                            st.markdown("##### Total")
+                            st.metric("xG Match", f"{_xg_m['xg_total']:.2f}")
+                            st.caption(f"ΔElo: {_xg_m['delta']:+.0f}")
+                        with _xg_c3:
+                            st.markdown(f"##### {_xg_m['away']} {_xg_fa}")
+                            st.metric("xG", f"{_xg_m['lambda_a']:.2f}")
+                            st.caption(f"V8: {_xg_m['mod_a']:.1f}% · Pin: {_xg_m['pin_a']:.1f}%")
+
+                        st.markdown("---")
+
+                        def _xg_fair(prob_pct):
+                            return f"{100 / prob_pct:.2f}" if prob_pct > 0.5 else "—"
+
+                        _xg_ou_c1, _xg_ou_c2 = st.columns(2)
+                        with _xg_ou_c1:
+                            st.markdown("**Over/Under Fair**")
+                            _ou_rows = []
+                            for _xg_line, _xg_op, _xg_up in [
+                                ("O/U 1.5", _xg_m["o15"], _xg_m["u15"]),
+                                ("O/U 2.5", _xg_m["o25"], _xg_m["u25"]),
+                                ("O/U 3.5", _xg_m["o35"], _xg_m["u35"]),
+                            ]:
+                                _ou_rows.append({
+                                    "Ligne": _xg_line,
+                                    "Over": f"{_xg_op:.1f}%",
+                                    "Fair Over": _xg_fair(_xg_op),
+                                    "Under": f"{_xg_up:.1f}%",
+                                    "Fair Under": _xg_fair(_xg_up),
+                                })
+                            st.dataframe(pd.DataFrame(_ou_rows), hide_index=True, use_container_width=True)
+
+                        with _xg_ou_c2:
+                            st.markdown("**BTTS**")
+                            _btts_rows = [{
+                                "Marché": "BTTS Yes",
+                                "Proba": f"{_xg_m['btts_yes']:.1f}%",
+                                "Fair Odds": _xg_fair(_xg_m["btts_yes"]),
+                            }, {
+                                "Marché": "BTTS No",
+                                "Proba": f"{_xg_m['btts_no']:.1f}%",
+                                "Fair Odds": _xg_fair(_xg_m["btts_no"]),
+                            }]
+                            st.dataframe(pd.DataFrame(_btts_rows), hide_index=True, use_container_width=True)
+
+                            if _xg_m["pin_ou25_over"] and _xg_m["pin_ou25_under"]:
+                                _xg_pin_o25_mg = 1/_xg_m["pin_ou25_over"] + 1/_xg_m["pin_ou25_under"]
+                                _xg_pin_o25_fair = (1/_xg_m["pin_ou25_over"]) / _xg_pin_o25_mg * 100
+                                _xg_pin_u25_fair = (1/_xg_m["pin_ou25_under"]) / _xg_pin_o25_mg * 100
+                                _xg_ecart_o25 = _xg_m["o25"] - _xg_pin_o25_fair
+                                st.markdown("**O/U 2.5 vs Pinnacle**")
+                                _xg_color = "green" if abs(_xg_ecart_o25) < 3 else ("orange" if abs(_xg_ecart_o25) < 6 else "red")
+                                st.markdown(
+                                    f"V8: **{_xg_m['o25']:.1f}%** · Pin: **{_xg_pin_o25_fair:.1f}%** · "
+                                    f"Écart: <span style='color:{_xg_color}'>{_xg_ecart_o25:+.1f}%</span>",
+                                    unsafe_allow_html=True,
+                                )
+
+                st.markdown("---")
+                st.markdown("#### Tableau récapitulatif")
+
+                _xg_summary_rows = []
+                for _xg_m in sorted(_xg_filtered, key=lambda x: -(x["xg_total"])):
+                    _xg_fh = flag_img(_xg_m["home_code"], "16x12")
+                    _xg_fa = flag_img(_xg_m["away_code"], "16x12")
+                    _xg_summary_rows.append({
+                        "Match": f"{_xg_fh} {_xg_m['home']} vs {_xg_m['away']} {_xg_fa}",
+                        "xG Dom": f"<b>{_xg_m['lambda_h']:.2f}</b>",
+                        "xG Ext": f"<b>{_xg_m['lambda_a']:.2f}</b>",
+                        "Total": f"<b>{_xg_m['xg_total']:.2f}</b>",
+                        "O1.5": f"{_xg_m['o15']:.0f}%<br><span style='font-size:0.7em'>{_xg_fair(_xg_m['o15'])}</span>",
+                        "O2.5": f"{_xg_m['o25']:.0f}%<br><span style='font-size:0.7em'>{_xg_fair(_xg_m['o25'])}</span>",
+                        "O3.5": f"{_xg_m['o35']:.0f}%<br><span style='font-size:0.7em'>{_xg_fair(_xg_m['o35'])}</span>",
+                        "BTTS": f"{_xg_m['btts_yes']:.0f}%<br><span style='font-size:0.7em'>{_xg_fair(_xg_m['btts_yes'])}</span>",
+                    })
+                if _xg_summary_rows:
+                    st.markdown(
+                        pd.DataFrame(_xg_summary_rows).to_html(escape=False, index=False),
+                        unsafe_allow_html=True,
+                    )
 
 
 # ═══════════════════════════════════════════════════════════════════

@@ -93,7 +93,7 @@ class BetfairCSData:
 
 
 def _parse_proxy():
-    url = os.environ.get("WEBSHARE_PROXY_URL", "")
+    url = os.environ.get("BETFAIR_PROXY_URL", "") or os.environ.get("WEBSHARE_PROXY_URL", "")
     if not url:
         return None
     m = re.match(r"https?://([^:]+):([^@]+)@([^:]+):(\d+)", url)
@@ -107,6 +107,19 @@ def _parse_proxy():
     if m2:
         return {"server": f"http://{m2.group(1)}:{m2.group(2)}"}
     return None
+
+
+_BLOCKED_RESOURCE_TYPES = {"image", "media", "font"}
+_BLOCKED_URL_PATTERNS = ["google-analytics", "googletagmanager", "facebook", "doubleclick", "hotjar", "sentry"]
+
+async def _block_unnecessary(route):
+    req = route.request
+    if req.resource_type in _BLOCKED_RESOURCE_TYPES:
+        await route.abort()
+    elif any(p in req.url for p in _BLOCKED_URL_PATTERNS):
+        await route.abort()
+    else:
+        await route.continue_()
 
 
 def _team_slug(name: str) -> str:
@@ -126,7 +139,7 @@ async def _find_match_url(page, competition_key: str, home: str, away: str) -> s
         await page.goto(comp_url, timeout=60000, wait_until="domcontentloaded")
     except Exception:
         return None
-    await asyncio.sleep(6)
+    await asyncio.sleep(3)
 
     match_href = await page.evaluate(
         """(args) => {
@@ -318,7 +331,7 @@ async def _scrape_betfair_match(
 ) -> BetfairCSData:
     proxy = _parse_proxy()
     if not proxy:
-        return BetfairCSData(error="WEBSHARE_PROXY_URL non configuré", timestamp=time.time())
+        return BetfairCSData(error="BETFAIR_PROXY_URL non configuré", timestamp=time.time())
 
     _ensure_playwright_browsers()
 
@@ -326,7 +339,11 @@ async def _scrape_betfair_match(
 
     async with async_playwright() as p:
         try:
-            browser = await p.chromium.launch(headless=True, proxy=proxy)
+            browser = await p.chromium.launch(
+                headless=True,
+                proxy=proxy,
+                args=["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--disable-extensions"],
+            )
         except Exception as e:
             return BetfairCSData(error=f"Proxy connection failed: {e}", timestamp=time.time())
 
@@ -341,6 +358,7 @@ async def _scrape_betfair_match(
             timezone_id="Europe/London",
         )
         page = await context.new_page()
+        await page.route("**/*", _block_unnecessary)
 
         try:
             target_url = match_url
@@ -356,7 +374,7 @@ async def _scrape_betfair_match(
                     try:
                         resp = await page.goto(guess_url, timeout=60000, wait_until="domcontentloaded")
                         if resp and resp.status == 200:
-                            await asyncio.sleep(4)
+                            await asyncio.sleep(2)
                             cur = page.url
                             if "betting-" in cur:
                                 target_url = cur
@@ -375,7 +393,7 @@ async def _scrape_betfair_match(
                 await browser.close()
                 return result
 
-            await asyncio.sleep(7)
+            await asyncio.sleep(4)
 
             data = await _extract_match_data(page)
 

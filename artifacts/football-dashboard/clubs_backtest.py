@@ -550,6 +550,7 @@ def run_backtest(
 
     metrics["params_used"] = params
     metrics["final_elos_top20"] = dict(sorted(elo_sys.ratings.items(), key=lambda x: -x[1])[:20])
+    metrics["all_elos"] = dict(elo_sys.ratings)
 
     del metrics["match_details"]
     del metrics["calibration_bins"]

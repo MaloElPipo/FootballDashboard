@@ -3964,6 +3964,7 @@ elif page == "🎯 Garantie 2+":
             fetch_betfair_cs, cs_to_exact_score_mids,
             get_btts_yes_mid, get_ou25_under_mid, get_ou05_under_mid,
             get_1x2_lay_team,
+            derive_team_u05_from_cs, derive_00_from_cs,
             BetfairCSData, BetfairSelection,
         )
 
@@ -3975,6 +3976,8 @@ elif page == "🎯 Garantie 2+":
             st.session_state["g2_ou25"] = 0.0
             st.session_state["g2_btts"] = 0.0
             st.session_state["g2_ou05"] = 0.0
+            st.session_state["g2_bf_u05_team"] = 0.0
+            st.session_state["g2_bf_00"] = 0.0
             st.session_state["_g2_bf_auto_key"] = _bf_state_key
 
         _cs_state_key = f"_g2_cs_{g2_comp_key}_{g2_sel_idx}"
@@ -4033,6 +4036,12 @@ elif page == "🎯 Garantie 2+":
                         st.session_state["g2_ou05"] = _ou05_v
 
                     _team_home = g2_team_choice == g2_match["home"]
+                    _bf_u05_team = derive_team_u05_from_cs(cs_data, _team_home)
+                    if _bf_u05_team:
+                        st.session_state["g2_bf_u05_team"] = _bf_u05_team
+                    _bf_00 = derive_00_from_cs(cs_data)
+                    if _bf_00:
+                        st.session_state["g2_bf_00"] = _bf_00
                     _cs_mids = cs_to_exact_score_mids(cs_data, _team_home)
                     _old_cs_keys = [k for k in st.session_state if k.startswith("g2_cs_")]
                     for k in _old_cs_keys:
@@ -4051,6 +4060,8 @@ elif page == "🎯 Garantie 2+":
         scraped_btts = 0.0
         scraped_ou05 = 0.0
         scraped_lay = None
+        scraped_bf_u05_team = 0.0
+        scraped_bf_00 = 0.0
         scrape_info_parts = []
 
         if cs_data and not cs_data.error:
@@ -4062,6 +4073,12 @@ elif page == "🎯 Garantie 2+":
             ou25_val = get_ou25_under_mid(cs_data)
             btts_val = get_btts_yes_mid(cs_data)
             ou05_val = get_ou05_under_mid(cs_data)
+            _bf_u05_t = derive_team_u05_from_cs(cs_data, team_is_home)
+            _bf_00_v = derive_00_from_cs(cs_data)
+            if _bf_u05_t:
+                scraped_bf_u05_team = _bf_u05_t
+            if _bf_00_v:
+                scraped_bf_00 = _bf_00_v
 
             if ou25_val:
                 scraped_ou25 = ou25_val
@@ -4128,6 +4145,10 @@ elif page == "🎯 Garantie 2+":
                 st.session_state["g2_btts"] = scraped_btts
             if scraped_ou05 > 0:
                 st.session_state["g2_ou05"] = scraped_ou05
+            if scraped_bf_u05_team > 0:
+                st.session_state["g2_bf_u05_team"] = scraped_bf_u05_team
+            if scraped_bf_00 > 0:
+                st.session_state["g2_bf_00"] = scraped_bf_00
             st.session_state["_g2_mkt_auto_key"] = _mkt_state_key
 
         if bf_lay_source and not scrape_info_parts:
@@ -4143,6 +4164,51 @@ elif page == "🎯 Garantie 2+":
             st.session_state["g2_btts"] = scraped_btts
         if "g2_ou05" not in st.session_state:
             st.session_state["g2_ou05"] = scraped_ou05
+        if "g2_bf_u05_team" not in st.session_state:
+            st.session_state["g2_bf_u05_team"] = scraped_bf_u05_team
+        if "g2_bf_00" not in st.session_state:
+            st.session_state["g2_bf_00"] = scraped_bf_00
+
+        st.markdown("##### 🎯 P(0) — Probabilité de ne pas marquer (Buchdahl / Betfair)")
+        st.caption(
+            "Dérivé automatiquement des scores exacts Betfair. "
+            "Si renseigné, utilise la méthode directe P(0) (plus précise) au lieu de l'optimisation cascade."
+        )
+
+        p0_col1, p0_col2 = st.columns(2)
+        with p0_col1:
+            g2_bf_u05_team = st.number_input(
+                f"U0.5 {g2_team_choice} (cote implicite)",
+                min_value=0.0, max_value=50.0, step=0.01,
+                key="g2_bf_u05_team",
+                help="Cote implicite Under 0.5 Goals de l'équipe cible, dérivée des scores exacts Betfair (somme des P(team=0)). 0 = désactivé."
+            )
+        with p0_col2:
+            g2_bf_00 = st.number_input(
+                "Score 0-0 (mid-price)",
+                min_value=0.0, max_value=200.0, step=0.1,
+                key="g2_bf_00",
+                help="Mid-price du score exact 0-0 Betfair. 0 = désactivé."
+            )
+
+        _p0_active = g2_bf_u05_team > 1.0 and g2_bf_00 > 1.0
+        if _p0_active:
+            import math as _m_p0
+            _p0_t_display = 1.0 / g2_bf_u05_team
+            _lam_t_display = -_m_p0.log(max(_p0_t_display, 0.001))
+            _p0_00_display = 1.0 / g2_bf_00
+            _p0_o_display = _p0_00_display / max(_p0_t_display, 0.001)
+            _p0_o_display = max(0.001, min(0.999, _p0_o_display))
+            _lam_o_display = -_m_p0.log(_p0_o_display)
+            st.info(
+                f"✅ **Méthode Betfair P(0) active** — "
+                f"P(0) {g2_team_choice} = {_p0_t_display:.1%} (λ≈{_lam_t_display:.3f}) | "
+                f"P(0) adversaire ≈ {_p0_o_display:.1%} (λ≈{_lam_o_display:.3f})"
+            )
+        else:
+            st.caption("⚠️ P(0) non disponible — fallback sur optimisation cascade (1X2 + O/U + BTTS)")
+
+        st.markdown("##### 📊 Marchés complémentaires")
 
         bf_col1, bf_col2, bf_col3 = st.columns(3)
         with bf_col1:
@@ -4173,7 +4239,7 @@ elif page == "🎯 Garantie 2+":
                 "O/U 0.5 Under mid-price",
                 min_value=0.0, max_value=50.0, step=0.01,
                 key="g2_ou05",
-                help="Mid-price volume-weighted du Under 0.5 Goals. 0 = désactivé. Fallback: mid du 0-0 CS."
+                help="Mid-price volume-weighted du Under 0.5 Goals (match total). 0 = désactivé."
             )
 
         st.markdown("---")
@@ -4246,18 +4312,28 @@ elif page == "🎯 Garantie 2+":
                     cs_mids=exact_scores if exact_scores else None,
                     betclic_odds=betclic_g2_odds,
                     n_sims=50_000,
+                    bf_u05_team=g2_bf_u05_team if g2_bf_u05_team > 1.0 else None,
+                    bf_00=g2_bf_00 if g2_bf_00 > 1.0 else None,
                 )
 
             st.subheader("📈 Résultats")
+
+            opp_name = g2_match["away"] if g2_team_choice == g2_match["home"] else g2_match["home"]
 
             res_col1, res_col2, res_col3 = st.columns(3)
             with res_col1:
                 st.metric(f"xG {g2_team_choice}", f"{g2_result.lambda_team:.3f}")
             with res_col2:
-                opp_name = g2_match["away"] if g2_team_choice == g2_match["home"] else g2_match["home"]
                 st.metric(f"xG {opp_name}", f"{g2_result.lambda_opp:.3f}")
             with res_col3:
                 st.metric("xG Match", f"{g2_result.xg_match:.3f}")
+
+            if g2_result.p0_team > 0:
+                p0_col_a, p0_col_b = st.columns(2)
+                with p0_col_a:
+                    st.metric(f"P(0) {g2_team_choice}", f"{g2_result.p0_team:.1%}")
+                with p0_col_b:
+                    st.metric(f"P(0) {opp_name}", f"{g2_result.p0_opp:.1%}")
 
             st.caption(f"Méthode λ : {g2_result.method}")
 
@@ -4285,11 +4361,11 @@ elif page == "🎯 Garantie 2+":
                 with val_col1:
                     st.metric("Cote Betclic", f"{betclic_g2_odds}")
                 with val_col2:
-                    color = "🟢" if edge_mc > 0 else "🔴"
-                    st.metric(f"{color} Edge MC", f"{edge_mc:+.2f}%")
+                    _color = "🟢" if edge_mc > 0 else "🔴"
+                    st.metric(f"{_color} Edge MC", f"{edge_mc:+.2f}%")
                 with val_col3:
-                    color2 = "🟢" if edge_frac > 0 else "🔴"
-                    st.metric(f"{color2} Edge Fractions", f"{edge_frac:+.2f}%")
+                    _color2 = "🟢" if edge_frac > 0 else "🔴"
+                    st.metric(f"{_color2} Edge Fractions", f"{edge_frac:+.2f}%")
 
                 if edge_mc > 0:
                     st.success(

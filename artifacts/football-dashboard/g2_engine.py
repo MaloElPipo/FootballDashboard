@@ -20,6 +20,29 @@ class G2Result:
     fair_odds_fractions: float
     poisson_matrix: np.ndarray
     method: str
+    p0_team: float = 0.0
+    p0_opp: float = 0.0
+
+
+def remove_margin_proportional(odds_h: float, odds_d: float, odds_a: float) -> tuple[float, float, float]:
+    n = 3
+    margin = (1.0 / odds_h + 1.0 / odds_d + 1.0 / odds_a) - 1.0
+    if margin <= 0:
+        return odds_h, odds_d, odds_a
+    fair_h = n * odds_h / (n - margin * odds_h)
+    fair_d = n * odds_d / (n - margin * odds_d)
+    fair_a = n * odds_a / (n - margin * odds_a)
+    return fair_h, fair_d, fair_a
+
+
+def remove_margin_2way(odds_a: float, odds_b: float) -> tuple[float, float]:
+    n = 2
+    margin = (1.0 / odds_a + 1.0 / odds_b) - 1.0
+    if margin <= 0:
+        return odds_a, odds_b
+    fair_a = n * odds_a / (n - margin * odds_a)
+    fair_b = n * odds_b / (n - margin * odds_b)
+    return fair_a, fair_b
 
 
 def _poisson_win_prob(lam_t: float, lam_o: float, max_g: int = 15) -> float:
@@ -137,7 +160,9 @@ def lambdas_from_betfair(
     lay_1x2: float,
     lay_u05_team: float,
     odds_00: float,
-) -> tuple[float, float]:
+    ou25_under_mid: float | None = None,
+    btts_yes_mid: float | None = None,
+) -> tuple[float, float, str]:
     p0_team = 1.0 / lay_u05_team
     lam_t_init = -math.log(max(p0_team, 0.01))
 
@@ -147,6 +172,9 @@ def lambdas_from_betfair(
     lam_o_init = -math.log(p0_opp)
 
     p_win_target = 1.0 / lay_1x2
+
+    has_ou25 = ou25_under_mid is not None and ou25_under_mid > 1.0
+    has_btts = btts_yes_mid is not None and btts_yes_mid > 1.0
 
     def objective(params: np.ndarray) -> float:
         lt, lo = params
@@ -158,14 +186,29 @@ def lambdas_from_betfair(
         err_00 = (p0_t * p0_o - p00) ** 2
         p_win = _poisson_win_prob(lt, lo)
         err_win = (p_win - p_win_target) ** 2
-        return err_u05 * 100 + err_00 * 100 + err_win * 10
+        total = err_u05 * 100 + err_00 * 100 + err_win * 10
+        if has_ou25:
+            s = lt + lo
+            pu25 = math.exp(-s) * (1 + s + s * s / 2)
+            total += 50.0 * (pu25 - 1.0 / ou25_under_mid) ** 2
+        if has_btts:
+            pbtts = (1 - math.exp(-lt)) * (1 - math.exp(-lo))
+            total += 30.0 * (pbtts - 1.0 / btts_yes_mid) ** 2
+        return total
 
     res = minimize(objective, np.array([lam_t_init, lam_o_init]),
-                   method="Nelder-Mead")
+                   method="Nelder-Mead",
+                   options={"maxiter": 15000, "xatol": 1e-8, "fatol": 1e-12})
     lt_opt, lo_opt = float(res.x[0]), float(res.x[1])
     if lt_opt <= 0 or lo_opt <= 0:
-        return lam_t_init, lam_o_init
-    return lt_opt, lo_opt
+        lt_opt, lo_opt = lam_t_init, lam_o_init
+
+    parts = ["BF P(0)team", "BF 0-0", "BF 1X2"]
+    if has_ou25:
+        parts.append("BF O/U 2.5")
+    if has_btts:
+        parts.append("BF BTTS")
+    return lt_opt, lo_opt, " + ".join(parts)
 
 
 def lambdas_mle_from_scores(
@@ -282,10 +325,27 @@ def compute_g2(
     cs_mids: dict[tuple[int, int], float] | None = None,
     betclic_odds: float | None = None,
     n_sims: int = 50_000,
+    bf_u05_team: float | None = None,
+    bf_00: float | None = None,
 ) -> G2Result:
-    lambda_team, lambda_opp, method = lambdas_cascade(
-        lay_1x2, ou25_under_mid, btts_yes_mid, ou05_under_mid, cs_mids
+    has_betfair_p0 = (
+        bf_u05_team is not None and bf_u05_team > 1.0
+        and bf_00 is not None and bf_00 > 1.0
     )
+
+    if has_betfair_p0:
+        lambda_team, lambda_opp, method = lambdas_from_betfair(
+            lay_1x2, bf_u05_team, bf_00,
+            ou25_under_mid=ou25_under_mid,
+            btts_yes_mid=btts_yes_mid,
+        )
+    else:
+        lambda_team, lambda_opp, method = lambdas_cascade(
+            lay_1x2, ou25_under_mid, btts_yes_mid, ou05_under_mid, cs_mids
+        )
+
+    p0_team = math.exp(-lambda_team)
+    p0_opp = math.exp(-lambda_opp)
 
     matrix = build_poisson_matrix(lambda_team, lambda_opp)
     prob_mc = simulate_g2_monte_carlo(lambda_team, lambda_opp, n_sims=n_sims)
@@ -304,6 +364,8 @@ def compute_g2(
         fair_odds_fractions=round(fair_frac, 3),
         poisson_matrix=matrix,
         method=method,
+        p0_team=round(p0_team, 6),
+        p0_opp=round(p0_opp, 6),
     )
 
 

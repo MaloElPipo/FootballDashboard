@@ -608,6 +608,7 @@ st.sidebar.header("Filters")
 _PAGE_LIST = [
     "📅 Calendrier CDM 2026",
     "🌍 Effectifs CM 2026",
+    "⚽ Effectifs Clubs",
     "🏅 Classement ELO",
     "🔮 Prédictions",
     "🔬 Backtest V8",
@@ -633,7 +634,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "🎯 Garantie 2+", "📊 Suivi des paris"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "⚽ Effectifs Clubs", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "🎯 Garantie 2+", "📊 Suivi des paris"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -4579,6 +4580,332 @@ elif page == "📊 Suivi des paris":
             st.plotly_chart(fig_bank, use_container_width=True)
     else:
         st.info("Aucun pari enregistré. Utilisez le formulaire ci-dessus pour commencer le suivi.")
+
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "⚽ Effectifs Clubs":
+    import json as _json_clubs
+
+    COUNTRY_TO_LEAGUE = {
+        "England": "Premier League & EFL",
+        "Spain": "La Liga",
+        "France": "Ligue 1 & Ligue 2",
+        "Germany": "Bundesliga",
+        "Italy": "Serie A & Serie B",
+        "Portugal": "Liga Portugal",
+        "Netherlands": "Eredivisie",
+        "Belgium": "Pro League",
+        "Türkiye": "Süper Lig",
+        "Scotland": "Scottish Premiership",
+        "Brazil": "Brasileirão",
+        "Argentina": "Liga Profesional",
+        "USA": "MLS",
+        "Mexico": "Liga MX",
+        "Saudi Arabia": "Saudi Pro League",
+        "Poland": "Ekstraklasa",
+        "Romania": "SuperLiga",
+        "Bulgaria": "First League",
+        "Greece": "Super League",
+        "Sweden": "Allsvenskan",
+        "Switzerland": "Super League",
+        "Colombia": "Liga BetPlay",
+        "Ecuador": "Liga Pro",
+        "Chile": "Primera División",
+        "Peru": "Liga 1",
+        "Uruguay": "Primera División",
+        "Paraguay": "División de Honor",
+        "Venezuela": "Liga FUTVE",
+        "Bolivia": "División Profesional",
+        "Croatia": "HNL",
+        "Denmark": "Superligaen",
+        "Norway": "Eliteserien",
+        "Austria": "Bundesliga",
+        "Czechia": "Fortuna Liga",
+        "Serbia": "SuperLiga",
+        "Ukraine": "Premier League",
+        "Finland": "Veikkausliiga",
+        "Canada": "Canadian Premier League",
+        "Nigeria": "NPFL",
+        "Egypt": "Egyptian Premier League",
+        "South Africa": "PSL",
+        "Morocco": "Botola Pro",
+        "Algeria": "Ligue 1",
+        "Tunisia": "Ligue 1",
+        "Japan": "J-League",
+        "Australia": "A-League",
+        "China": "Chinese Super League",
+        "India": "ISL",
+        "Georgia": "Erovnuli Liga",
+        "Kosovo": "Superliga",
+        "DR Congo": "Linafoot",
+        "Kenya": "FKF Premier League",
+    }
+
+    @st.cache_data(ttl=3600)
+    def _load_clubs_cache():
+        cache_path = os.path.join(os.path.dirname(__file__), "clubs_data_cache.json")
+        with open(cache_path, "r", encoding="utf-8") as f:
+            return _json_clubs.load(f)
+
+    clubs_data = _load_clubs_cache()
+
+    countries_with_teams = {}
+    for team_id, team in clubs_data.items():
+        country = team.get("country", "").strip()
+        if not country:
+            continue
+        if country not in countries_with_teams:
+            countries_with_teams[country] = []
+        countries_with_teams[country].append(team)
+
+    for country in countries_with_teams:
+        countries_with_teams[country].sort(key=lambda t: t.get("name", ""))
+
+    all_countries_sorted = sorted(countries_with_teams.keys())
+
+    st.header("⚽ Effectifs Clubs — Saison 2025/26")
+    st.caption(
+        "Données BSD API · 729 clubs · 19 660 joueurs · "
+        "Stats saison 2025/26 (appearances, goals, assists, xG, xA, rating)"
+    )
+
+    total_teams = len(clubs_data)
+    total_players = sum(len(t.get("players", {})) for t in clubs_data.values())
+    total_countries = len(all_countries_sorted)
+    mc1, mc2, mc3 = st.columns(3)
+    mc1.metric("Pays couverts", total_countries)
+    mc2.metric("Clubs", total_teams)
+    mc3.metric("Joueurs", f"{total_players:,}".replace(",", " "))
+
+    st.markdown("---")
+
+    search_query = st.text_input(
+        "🔍 Rechercher un club ou un joueur",
+        placeholder="Ex: Arsenal, Mbappé, Vinicius...",
+        key="clubs_search",
+    )
+
+    if search_query and len(search_query) >= 2:
+        query_lower = search_query.lower()
+
+        matching_clubs = []
+        matching_players = []
+
+        for team_id, team in clubs_data.items():
+            team_name = team.get("name", "")
+            country = team.get("country", "")
+            league = COUNTRY_TO_LEAGUE.get(country, country)
+
+            if query_lower in team_name.lower():
+                matching_clubs.append({
+                    "team_id": team_id,
+                    "name": team_name,
+                    "country": country,
+                    "league": league,
+                    "nb_players": len(team.get("players", {})),
+                })
+
+            for pname, pdata in team.get("players", {}).items():
+                if query_lower in pname.lower():
+                    matching_players.append({
+                        "player": pname,
+                        "club": team_name,
+                        "country": country,
+                        "league": league,
+                        "nationality": pdata.get("nationality", "—"),
+                        "market_value": pdata.get("market_value"),
+                        "rating": pdata.get("stats", {}).get("rating"),
+                        "appearances": pdata.get("stats", {}).get("appearances", 0),
+                        "goals": pdata.get("stats", {}).get("goals", 0),
+                        "assists": pdata.get("stats", {}).get("assists", 0),
+                    })
+
+        if matching_clubs:
+            st.markdown(f"### 🏟️ Clubs trouvés ({len(matching_clubs)})")
+            df_clubs_search = pd.DataFrame(matching_clubs)
+            st.dataframe(
+                df_clubs_search[["name", "league", "country", "nb_players"]].rename(
+                    columns={"name": "Club", "league": "Championnat", "country": "Pays", "nb_players": "Joueurs"}
+                ),
+                hide_index=True, use_container_width=True,
+            )
+
+        if matching_players:
+            st.markdown(f"### 👤 Joueurs trouvés ({len(matching_players)})")
+            df_players_search = pd.DataFrame(matching_players)
+            for col_name in ["market_value"]:
+                df_players_search[col_name] = df_players_search[col_name].apply(
+                    lambda v: f"{v/1e6:.1f}M €" if v and v >= 1e6 else (f"{v/1e3:.0f}k €" if v else "—")
+                )
+            st.dataframe(
+                df_players_search[["player", "club", "league", "nationality", "market_value", "rating", "appearances", "goals", "assists"]].rename(
+                    columns={
+                        "player": "Joueur", "club": "Club", "league": "Championnat",
+                        "nationality": "Nationalité", "market_value": "Valeur",
+                        "rating": "Note", "appearances": "Matchs",
+                        "goals": "Buts", "assists": "Passes D.",
+                    }
+                ),
+                hide_index=True, use_container_width=True,
+            )
+
+        if not matching_clubs and not matching_players:
+            st.warning(f"Aucun résultat pour « {search_query} ».")
+
+    else:
+        selected_country = st.selectbox(
+            "🌍 Sélectionner un pays",
+            all_countries_sorted,
+            index=all_countries_sorted.index("France") if "France" in all_countries_sorted else 0,
+            key="clubs_country",
+        )
+
+        league_name = COUNTRY_TO_LEAGUE.get(selected_country, selected_country)
+        teams_in_country = countries_with_teams.get(selected_country, [])
+
+        st.subheader(f"🏆 {league_name} — {selected_country}")
+        st.caption(f"{len(teams_in_country)} club(s) disponible(s)")
+
+        team_names = [t["name"] for t in teams_in_country]
+        selected_team_name = st.selectbox(
+            "Sélectionner un club",
+            team_names,
+            key="clubs_team",
+        )
+
+        selected_team = next((t for t in teams_in_country if t["name"] == selected_team_name), None)
+
+        if selected_team:
+            players = selected_team.get("players", {})
+            st.markdown(f"### {selected_team_name}")
+            st.caption(f"{len(players)} joueur(s) · {selected_country}")
+
+            if players:
+                with st.expander("📊 Stats BSD API — Saison 2025/26", expanded=True):
+                    bsd_rows = []
+                    for pname, pdata in players.items():
+                        s = pdata.get("stats", {})
+                        raw_rating = s.get("rating")
+                        try:
+                            note = float(raw_rating) if raw_rating is not None else 0.0
+                        except (ValueError, TypeError):
+                            note = 0.0
+
+                        apps = int(s.get("appearances", 0) or 0)
+                        goals = int(s.get("goals", 0) or 0)
+                        assists = int(s.get("assists", 0) or 0)
+                        xg_val = float(s.get("xg", 0) or 0)
+                        xa_val = float(s.get("xa", 0) or 0)
+                        shots = int(s.get("shots", 0) or 0)
+                        key_passes = int(s.get("key_passes", 0) or 0)
+
+                        nineties = apps  # approximation: 1 appearance ≈ 1 x 90min
+                        xg_per90 = round(xg_val / nineties, 2) if nineties > 0 else 0.0
+                        xa_per90 = round(xa_val / nineties, 2) if nineties > 0 else 0.0
+                        goals_per90 = round(goals / nineties, 2) if nineties > 0 else 0.0
+                        assists_per90 = round(assists / nineties, 2) if nineties > 0 else 0.0
+                        shots_per90 = round(shots / nineties, 2) if nineties > 0 else 0.0
+                        kp_per90 = round(key_passes / nineties, 2) if nineties > 0 else 0.0
+
+                        mv = pdata.get("market_value")
+                        if mv and mv >= 1e6:
+                            mv_str = f"{mv/1e6:.1f}M €"
+                        elif mv and mv >= 1e3:
+                            mv_str = f"{mv/1e3:.0f}k €"
+                        elif mv:
+                            mv_str = f"{mv:,.0f} €"
+                        else:
+                            mv_str = "—"
+
+                        bsd_rows.append({
+                            "Joueur": pname,
+                            "Nationalité": pdata.get("nationality", "—"),
+                            "Valeur": mv_str,
+                            "Note moy.": note,
+                            "Matchs": apps,
+                            "Buts": goals,
+                            "Buts/90": goals_per90,
+                            "Passes D.": assists,
+                            "PD/90": assists_per90,
+                            "xG": xg_val,
+                            "xG/90": xg_per90,
+                            "xA": xa_val,
+                            "xA/90": xa_per90,
+                            "Tirs": shots,
+                            "Tirs/90": shots_per90,
+                            "Passes clés": key_passes,
+                            "PC/90": kp_per90,
+                        })
+
+                    if bsd_rows:
+                        df_bsd_clubs = pd.DataFrame(bsd_rows).sort_values(
+                            "Note moy.", ascending=False
+                        ).reset_index(drop=True)
+
+                        st.dataframe(
+                            df_bsd_clubs,
+                            hide_index=True,
+                            use_container_width=True,
+                            column_config={
+                                "Note moy.": st.column_config.NumberColumn("Note moy.", format="%.2f", width="small"),
+                                "Matchs": st.column_config.NumberColumn("Matchs", format="%d"),
+                                "Buts": st.column_config.NumberColumn("Buts", format="%d"),
+                                "Buts/90": st.column_config.NumberColumn("Buts/90", format="%.2f",
+                                    help="Buts par match"),
+                                "Passes D.": st.column_config.NumberColumn("PD", format="%d"),
+                                "PD/90": st.column_config.NumberColumn("PD/90", format="%.2f",
+                                    help="Passes décisives par match"),
+                                "xG": st.column_config.NumberColumn("xG", format="%.2f"),
+                                "xG/90": st.column_config.NumberColumn("xG/90", format="%.2f",
+                                    help="Expected Goals par match"),
+                                "xA": st.column_config.NumberColumn("xA", format="%.2f"),
+                                "xA/90": st.column_config.NumberColumn("xA/90", format="%.2f",
+                                    help="Expected Assists par match"),
+                                "Tirs": st.column_config.NumberColumn("Tirs", format="%d"),
+                                "Tirs/90": st.column_config.NumberColumn("Tirs/90", format="%.2f"),
+                                "Passes clés": st.column_config.NumberColumn("PC", format="%d"),
+                                "PC/90": st.column_config.NumberColumn("PC/90", format="%.2f"),
+                            },
+                        )
+
+                        top3 = df_bsd_clubs.head(3)
+                        st.markdown("**🏆 Top 3 joueurs du club (note BSD)**")
+                        tcol1, tcol2, tcol3 = st.columns(3)
+                        for i, (col, (_, row)) in enumerate(
+                            zip([tcol1, tcol2, tcol3], top3.iterrows())
+                        ):
+                            medal = ["🥇", "🥈", "🥉"][i]
+                            col.metric(
+                                f"{medal} {row['Joueur']}",
+                                f"{row['Note moy.']:.2f}" if isinstance(row['Note moy.'], float) and row['Note moy.'] > 0 else "—",
+                                f"{row['Buts']}G / {row['Passes D.']}A — xG {row['xG']:.2f}",
+                            )
+
+                        st.markdown("---")
+
+                        nat_counts = df_bsd_clubs["Nationalité"].value_counts().reset_index()
+                        nat_counts.columns = ["Nationalité", "Joueurs"]
+                        if len(nat_counts) > 1:
+                            fig_nat = px.pie(
+                                nat_counts.head(10), names="Nationalité", values="Joueurs",
+                                title="Répartition par nationalité (top 10)", hole=0.4,
+                            )
+                            st.plotly_chart(fig_nat, use_container_width=True)
+
+                        rated_players = df_bsd_clubs[df_bsd_clubs["Note moy."] > 0]
+                        if len(rated_players) >= 3:
+                            fig_rating = px.histogram(
+                                rated_players, x="Note moy.", nbins=15,
+                                title="Distribution des notes moyennes",
+                                color_discrete_sequence=["#3b82f6"],
+                                labels={"Note moy.": "Note", "count": "Joueurs"},
+                            )
+                            fig_rating.update_layout(bargap=0.1)
+                            st.plotly_chart(fig_rating, use_container_width=True)
+                    else:
+                        st.info("Aucune donnée de stats disponible pour ce club.")
+            else:
+                st.info("Aucun joueur dans ce club.")
 
 
 # ═══════════════════════════════════════════════════════════════════

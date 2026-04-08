@@ -91,9 +91,10 @@
     "odds": 2.77,
     "stake": 100.0,
     "odds_v8": 2.71,
-    "closing_odds_pin": null,
-    "result": "pending",
-    "notes": "Garantie 2 buts BUCHDAHL"
+    "closing_odds_pin": 2.55,
+    "result": "lost",
+    "notes": "Garantie 2 buts BUCHDAHL",
+    "profit": -100.0
   },
   {
     "id": 9,
@@ -103,7 +104,7 @@
     "odds": 4.3,
     "stake": 100.0,
     "odds_v8": 4.27,
-    "closing_odds_pin": null,
+    "closing_odds_pin": 4.02,
     "result": "pending",
     "notes": "G2+ BUCHDAHL"
   },
@@ -115,7 +116,7 @@
     "odds": 5.3,
     "stake": 100.0,
     "odds_v8": 4.99,
-    "closing_odds_pin": null,
+    "closing_odds_pin": 5.22,
     "result": "pending",
     "notes": "G2+"
   },
@@ -127,7 +128,7 @@
     "odds": 3.93,
     "stake": 100.0,
     "odds_v8": 3.89,
-    "closing_odds_pin": null,
+    "closing_odds_pin": 4.02,
     "result": "pending",
     "notes": "G2+"
   }

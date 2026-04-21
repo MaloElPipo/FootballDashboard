@@ -4782,24 +4782,62 @@ elif page == "⚽ Effectifs Clubs":
 
             if players:
                 with st.expander("📊 Stats BSD API — Saison 2025/26", expanded=True):
+                    from bsd_api import aggregate_bsd_season_stats
+
+                    @st.cache_data(ttl=3600, show_spinner=False)
+                    def _fetch_club_live_stats(team_id_key: str, player_ids: tuple):
+                        out = {}
+                        for pid in player_ids:
+                            try:
+                                out[pid] = aggregate_bsd_season_stats(pid)
+                            except Exception:
+                                out[pid] = None
+                        return out
+
+                    player_ids = tuple(int(p["id"]) for p in players.values() if p.get("id"))
+                    team_id_key = str(selected_team.get("id", selected_team_name))
+
+                    with st.spinner(
+                        f"Chargement des stats live pour {len(player_ids)} joueurs "
+                        f"(~{max(15, len(player_ids)*2)} sec à la première ouverture)…"
+                    ):
+                        live_stats = _fetch_club_live_stats(team_id_key, player_ids)
+
                     bsd_rows = []
                     for pname, pdata in players.items():
-                        s = pdata.get("stats", {})
-                        raw_rating = s.get("rating")
-                        try:
-                            note = float(raw_rating) if raw_rating is not None else 0.0
-                        except (ValueError, TypeError):
-                            note = 0.0
+                        pid = pdata.get("id")
+                        live = live_stats.get(pid) if pid else None
 
-                        apps = int(s.get("appearances", 0) or 0)
-                        goals = int(s.get("goals", 0) or 0)
-                        assists = int(s.get("assists", 0) or 0)
-                        xg_val = float(s.get("xg", 0) or 0)
-                        xa_val = float(s.get("xa", 0) or 0)
-                        shots = int(s.get("shots", 0) or 0)
-                        key_passes = int(s.get("key_passes", 0) or 0)
+                        if live:
+                            note = float(live.get("rating") or 0)
+                            apps = int(live.get("appearances") or 0)
+                            mins = int(live.get("minutes_played") or 0)
+                            full_90 = int(live.get("full_90") or 0)
+                            goals = int(live.get("goals") or 0)
+                            assists = int(live.get("assists") or 0)
+                            xg_val = float(live.get("xg") or 0)
+                            xa_val = float(live.get("xa") or 0)
+                            shots = int(live.get("total_shots") or 0)
+                            sot = int(live.get("shots_on_target") or 0)
+                            key_passes = int(live.get("key_passes") or 0)
+                            duel_pct = live.get("duel_pct", 0)
+                        else:
+                            s_fb = pdata.get("stats", {})
+                            note = float(s_fb.get("rating") or 0)
+                            apps = int(s_fb.get("appearances", 0) or 0)
+                            mins = 0
+                            full_90 = 0
+                            goals = int(s_fb.get("goals", 0) or 0)
+                            assists = int(s_fb.get("assists", 0) or 0)
+                            xg_val = 0.0
+                            xa_val = 0.0
+                            shots = 0
+                            sot = 0
+                            key_passes = 0
+                            duel_pct = 0
 
-                        nineties = apps  # approximation: 1 appearance ≈ 1 x 90min
+                        avg_mins = round(mins / apps, 1) if apps > 0 else 0.0
+                        nineties = mins / 90.0 if mins > 0 else 0
                         xg_per90 = round(xg_val / nineties, 2) if nineties > 0 else 0.0
                         xa_per90 = round(xa_val / nineties, 2) if nineties > 0 else 0.0
                         goals_per90 = round(goals / nineties, 2) if nineties > 0 else 0.0
@@ -4823,6 +4861,9 @@ elif page == "⚽ Effectifs Clubs":
                             "Valeur": mv_str,
                             "Note moy.": note,
                             "Matchs": apps,
+                            "Min.": mins,
+                            "Min./match": avg_mins,
+                            "90 min": full_90,
                             "Buts": goals,
                             "Buts/90": goals_per90,
                             "Passes D.": assists,
@@ -4833,8 +4874,10 @@ elif page == "⚽ Effectifs Clubs":
                             "xA/90": xa_per90,
                             "Tirs": shots,
                             "Tirs/90": shots_per90,
+                            "Tirs cadrés": sot,
                             "Passes clés": key_passes,
                             "PC/90": kp_per90,
+                            "% Duels": f"{duel_pct}%",
                         })
 
                     if bsd_rows:
@@ -4849,20 +4892,25 @@ elif page == "⚽ Effectifs Clubs":
                             column_config={
                                 "Note moy.": st.column_config.NumberColumn("Note moy.", format="%.2f", width="small"),
                                 "Matchs": st.column_config.NumberColumn("Matchs", format="%d"),
+                                "Min.": st.column_config.NumberColumn("Min.", format="%d"),
+                                "Min./match": st.column_config.NumberColumn("Min./match", format="%.1f"),
+                                "90 min": st.column_config.NumberColumn("90 min", format="%d",
+                                    help="Nombre de matchs complets (≥90 min)"),
                                 "Buts": st.column_config.NumberColumn("Buts", format="%d"),
                                 "Buts/90": st.column_config.NumberColumn("Buts/90", format="%.2f",
-                                    help="Buts par match"),
+                                    help="Buts par 90 minutes"),
                                 "Passes D.": st.column_config.NumberColumn("PD", format="%d"),
                                 "PD/90": st.column_config.NumberColumn("PD/90", format="%.2f",
-                                    help="Passes décisives par match"),
+                                    help="Passes décisives par 90 minutes"),
                                 "xG": st.column_config.NumberColumn("xG", format="%.2f"),
                                 "xG/90": st.column_config.NumberColumn("xG/90", format="%.2f",
-                                    help="Expected Goals par match"),
+                                    help="Expected Goals par 90 minutes"),
                                 "xA": st.column_config.NumberColumn("xA", format="%.2f"),
                                 "xA/90": st.column_config.NumberColumn("xA/90", format="%.2f",
-                                    help="Expected Assists par match"),
+                                    help="Expected Assists par 90 minutes"),
                                 "Tirs": st.column_config.NumberColumn("Tirs", format="%d"),
                                 "Tirs/90": st.column_config.NumberColumn("Tirs/90", format="%.2f"),
+                                "Tirs cadrés": st.column_config.NumberColumn("Tirs cadrés", format="%d"),
                                 "Passes clés": st.column_config.NumberColumn("PC", format="%d"),
                                 "PC/90": st.column_config.NumberColumn("PC/90", format="%.2f"),
                             },

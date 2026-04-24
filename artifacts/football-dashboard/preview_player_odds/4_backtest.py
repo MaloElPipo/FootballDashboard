@@ -38,8 +38,10 @@ shrunk_per90 = _m.shrunk_per90
 parse_event_date = _m.parse_event_date
 LEAGUE_PRIOR_XG90_OUTFIELD = _m.LEAGUE_PRIOR_XG90_OUTFIELD
 LEAGUE_PRIOR_XA90_OUTFIELD = _m.LEAGUE_PRIOR_XA90_OUTFIELD
-LEAGUE_PRIOR_XG90_GK = _m.LEAGUE_PRIOR_XG90_GK
-LEAGUE_PRIOR_XA90_GK = _m.LEAGUE_PRIOR_XA90_GK
+# Les anciennes constantes GK ont été remplacées par POSITION_PRIORS_XG90/XA90["GK"]
+# (refonte R001). On ré-expose ici sous l'ancien nom pour préserver l'API du backtest.
+LEAGUE_PRIOR_XG90_GK = _m.POSITION_PRIORS_XG90["GK"]
+LEAGUE_PRIOR_XA90_GK = _m.POSITION_PRIORS_XA90["GK"]
 _safe = _m._safe_float
 is_goalkeeper = _m.is_goalkeeper
 

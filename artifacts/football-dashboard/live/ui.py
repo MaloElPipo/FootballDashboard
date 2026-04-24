@@ -12,6 +12,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -678,57 +679,272 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
                     ret_s = f" — retour ~{ret}" if ret else ""
                     st.markdown(f"- {nm} _({rn}{ret_s})_")
 
-    # === Tableau buteurs prédits ===
+    # === Tableau buteurs prédits (interactif) ===
     st.markdown("---")
     st.markdown("### ⚽ Buteurs prédits (modèle propriétaire)")
-    market = st.radio("Marché à afficher", ["Buteur", "Passeur", "Les deux"],
-                      horizontal=True, key=f"market_{event_id}")
-    rows = []
+    _render_predictions_editor(event_id, sub, home_name, away_name)
+
+
+# ---------------------------------------------------------------------------
+# Helpers : éditeur interactif des prédictions buteurs (R004)
+# ---------------------------------------------------------------------------
+_AVAIL_EMOJI = {
+    "available": "",
+    "doubtful": "❓",
+    "injured": "🤕",
+    "suspended": "🟥",
+    "missing": "🤕",
+}
+
+
+def _safe_avail(value) -> str:
+    """Retourne availability normalisée en lower-case ; NaN/None → 'available'."""
+    if value is None:
+        return "available"
+    if isinstance(value, float) and pd.isna(value):
+        return "available"
+    s = str(value).strip().lower()
+    return s or "available"
+
+
+def _initial_inclusion_state(sub: pd.DataFrame) -> dict[int, bool]:
+    """Par défaut : on inclut tous les joueurs disponibles, on exclut les
+    blessés/suspendus. Les joueurs explicitement marqués `excluded` (BSD lineup
+    publiée + joueur indisponible) sont également exclus."""
+    state: dict[int, bool] = {}
     for _, r in sub.iterrows():
-        common = {
-            "Joueur": r.get("player_name", "?"),
+        pid = int(r["player_id"])
+        avail = _safe_avail(r.get("availability"))
+        excluded_val = r.get("excluded", False)
+        is_excluded_log = bool(excluded_val) and not (
+            isinstance(excluded_val, float) and pd.isna(excluded_val)
+        )
+        state[pid] = (avail == "available") and not is_excluded_log
+    return state
+
+
+def _recalculate_shares(sub: pd.DataFrame, included_pids: set[int]) -> pd.DataFrame:
+    """Recalcule xg_calibré, p_scorer, odd_scorer, edge pour chaque équipe en
+    se basant uniquement sur les joueurs cochés (`included_pids`).
+
+    Nécessite que le forward_log contienne `xg_per_90_used`, `xa_per_90_used`,
+    `minutes_expected`, `xg_team_home`, `xg_team_away`.
+    """
+    df = sub.copy()
+    df["_pid"] = df["player_id"].astype(int)
+    df["_in"] = df["_pid"].isin(included_pids)
+
+    # Première ligne pour récupérer xg_team
+    xg_h = float(df["xg_team_home"].dropna().iloc[0]) if df["xg_team_home"].notna().any() else 0.0
+    xg_a = float(df["xg_team_away"].dropna().iloc[0]) if df["xg_team_away"].notna().any() else 0.0
+    team_xg_target = {"home": xg_h, "away": xg_a}
+    team_xa_target = {"home": xg_h * 0.75, "away": xg_a * 0.75}
+
+    # Recalcul par équipe
+    for side in ("home", "away"):
+        mask = (df["team_side"] == side) & df["_in"]
+        if not mask.any():
+            continue
+        sub_team = df.loc[mask].copy()
+        # raw = xg_per_90_used * mins/90  (déjà historisé par le modèle)
+        raw_xg = (sub_team["xg_per_90_used"].fillna(0).astype(float)
+                  * sub_team["minutes_expected"].fillna(0).astype(float) / 90.0)
+        raw_xa = (sub_team["xa_per_90_used"].fillna(0).astype(float)
+                  * sub_team["minutes_expected"].fillna(0).astype(float) / 90.0)
+        total_xg = float(raw_xg.sum()) or 1e-9
+        total_xa = float(raw_xa.sum()) or 1e-9
+
+        xg_cal = team_xg_target[side] * (raw_xg / total_xg)
+        xa_cal = team_xa_target[side] * (raw_xa / total_xa)
+
+        p_scorer = 1.0 - np.exp(-xg_cal)
+        p_assist = 1.0 - np.exp(-xa_cal)
+
+        df.loc[mask, "xg_player"] = xg_cal.values
+        df.loc[mask, "xa_player"] = xa_cal.values
+        df.loc[mask, "p_model_scorer"] = p_scorer.values
+        df.loc[mask, "p_model_assist"] = p_assist.values
+        df.loc[mask, "fair_odd_scorer"] = np.where(p_scorer > 0, 1.0 / p_scorer, np.nan)
+        df.loc[mask, "fair_odd_assist"] = np.where(p_assist > 0, 1.0 / p_assist, np.nan)
+
+        # Edges
+        for col_p, col_bc, col_edge in [("p_model_scorer", "betclic_odd_scorer", "edge_scorer"),
+                                         ("p_model_assist", "betclic_odd_assist", "edge_assist")]:
+            bc = sub_team[col_bc].astype(float)
+            p = df.loc[mask, col_p].astype(float)
+            edge = p.values * bc.values - 1.0
+            edge = np.where(bc.isna().values | p.isna().values, np.nan, edge)
+            df.loc[mask, col_edge] = edge
+
+    # Joueurs décochés → on neutralise leurs prédictions (NaN)
+    excluded_mask = ~df["_in"]
+    for col in ("xg_player", "xa_player", "p_model_scorer", "p_model_assist",
+                "fair_odd_scorer", "fair_odd_assist", "edge_scorer", "edge_assist"):
+        df.loc[excluded_mask, col] = np.nan
+
+    return df.drop(columns=["_pid", "_in"])
+
+
+def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
+                                home_name: str, away_name: str) -> None:
+    """Tableau interactif `st.data_editor` :
+       checkbox Inclure → recalcul live des shares xG/équipe."""
+    if sub.empty:
+        st.warning("Aucune prédiction joueur pour ce match.")
+        return
+
+    state_key = f"includes_{event_id}"
+    default_state = _initial_inclusion_state(sub)
+    if state_key not in st.session_state:
+        st.session_state[state_key] = dict(default_state)
+
+    # Bouton réinitialisation
+    cols = st.columns([1, 1, 4])
+    with cols[0]:
+        if st.button("↩ Réinitialiser à BSD", key=f"reset_{event_id}",
+                     help="Remet les inclusions par défaut (blessés/suspendus exclus)."):
+            st.session_state[state_key] = dict(default_state)
+            st.rerun()
+    with cols[1]:
+        market = st.radio("Marché", ["Buteur", "Passeur", "Les deux"],
+                          horizontal=True, key=f"market_{event_id}")
+
+    # State courant (peut différer du défaut si l'user a touché)
+    state = st.session_state[state_key]
+    # S'assurer que tous les pids du sub sont représentés
+    for pid_int, default_val in default_state.items():
+        state.setdefault(pid_int, default_val)
+
+    included_pids = {int(pid) for pid, inc in state.items() if inc}
+    recalc = _recalculate_shares(sub, included_pids)
+    lineup_confirmed = bool(sub["lineup_confirmed"].dropna().iloc[0]) \
+        if sub["lineup_confirmed"].notna().any() else False
+
+    # Construction des lignes éditables
+    rows = []
+    for _, r in recalc.iterrows():
+        pid = int(r["player_id"])
+        avail = _safe_avail(r.get("availability"))
+        emoji = _AVAIL_EMOJI.get(avail, "")
+        # Nom (préfixé d'un ★ si titulaire et lineup confirmée — meilleur visuel
+        # qu'un gras Markdown que st.data_editor n'interprète pas)
+        nm_raw = r.get("player_name", "?")
+        nm = "?" if (isinstance(nm_raw, float) and pd.isna(nm_raw)) else str(nm_raw)
+        is_starter_val = r.get("is_starter")
+        is_starter = (lineup_confirmed and bool(is_starter_val)
+                      and not (isinstance(is_starter_val, float) and pd.isna(is_starter_val)))
+        if is_starter:
+            nm = f"★ {nm}"
+        joueur = (f"{emoji} {nm}" if emoji else nm).strip()
+
+        pos_raw = r.get("position")
+        pos_str = "" if (pos_raw is None or (isinstance(pos_raw, float) and pd.isna(pos_raw))) \
+                  else str(pos_raw)
+        mins_val = r.get("minutes_expected")
+        mins_int = int(float(mins_val)) if (mins_val is not None and not (
+            isinstance(mins_val, float) and pd.isna(mins_val))) else 0
+
+        common_pre = {
+            "Inclure": bool(state.get(pid, True)),
+            "Joueur": joueur,
             "Équipe": home_name if r.get("team_side") == "home" else away_name,
-            "Côté": "🏠" if r.get("team_side") == "home" else "🛫",
-            "Titu": "✓" if r.get("is_starter") else "Sub",
-            "Min att.": round(float(r.get("minutes_expected") or 0)),
+            "Pos": pos_str,
+            "Min": mins_int,
+            "Titu": "★" if is_starter else ("Sub" if lineup_confirmed else "—"),
         }
-        if market in ("Buteur", "Les deux") and pd.notna(r.get("p_model_scorer")):
-            rows.append({**common, "Marché": "⚽ Buteur",
-                         "p mod. %": round(float(r["p_model_scorer"]) * 100, 1),
-                         "Cote juste": round(float(r["fair_odd_scorer"]), 2)
-                            if pd.notna(r.get("fair_odd_scorer")) else None,
-                         "Cote Betclic": round(float(r["betclic_odd_scorer"]), 2)
-                            if pd.notna(r.get("betclic_odd_scorer")) else None,
-                         "Edge %": round(float(r["edge_scorer"]) * 100, 2)
-                            if pd.notna(r.get("edge_scorer")) else None})
-        if market in ("Passeur", "Les deux") and pd.notna(r.get("p_model_assist")):
-            rows.append({**common, "Marché": "🅰 Passeur",
-                         "p mod. %": round(float(r["p_model_assist"]) * 100, 1),
-                         "Cote juste": round(float(r["fair_odd_assist"]), 2)
-                            if pd.notna(r.get("fair_odd_assist")) else None,
-                         "Cote Betclic": round(float(r["betclic_odd_assist"]), 2)
-                            if pd.notna(r.get("betclic_odd_assist")) else None,
-                         "Edge %": round(float(r["edge_assist"]) * 100, 2)
-                            if pd.notna(r.get("edge_assist")) else None})
+        if market in ("Buteur", "Les deux"):
+            rows.append({
+                "_pid": pid, **common_pre, "Marché": "⚽ Buteur",
+                "p %": (round(float(r["p_model_scorer"]) * 100, 1)
+                        if pd.notna(r.get("p_model_scorer")) else None),
+                "Cote juste": (round(float(r["fair_odd_scorer"]), 2)
+                               if pd.notna(r.get("fair_odd_scorer")) else None),
+                "Cote Betclic": (round(float(r["betclic_odd_scorer"]), 2)
+                                 if pd.notna(r.get("betclic_odd_scorer")) else None),
+                "Edge %": (round(float(r["edge_scorer"]) * 100, 2)
+                           if pd.notna(r.get("edge_scorer")) else None),
+            })
+        if market in ("Passeur", "Les deux"):
+            rows.append({
+                "_pid": pid, **common_pre, "Marché": "🅰 Passeur",
+                "p %": (round(float(r["p_model_assist"]) * 100, 1)
+                        if pd.notna(r.get("p_model_assist")) else None),
+                "Cote juste": (round(float(r["fair_odd_assist"]), 2)
+                               if pd.notna(r.get("fair_odd_assist")) else None),
+                "Cote Betclic": (round(float(r["betclic_odd_assist"]), 2)
+                                 if pd.notna(r.get("betclic_odd_assist")) else None),
+                "Edge %": (round(float(r["edge_assist"]) * 100, 2)
+                           if pd.notna(r.get("edge_assist")) else None),
+            })
+
     if not rows:
         st.warning("Aucune prédiction joueur pour ce marché.")
         return
-    out = pd.DataFrame(rows).sort_values("p mod. %", ascending=False)
 
-    def color_edge(v):
-        if pd.isna(v):
-            return ""
-        if v >= 5:
-            return "background-color: #c6f6d5; color: #1a4d2e; font-weight: 600"
-        if v >= 0:
-            return "background-color: #fef9c3; color: #5b3a00"
-        return "color: #6b7280"
+    df_edit = pd.DataFrame(rows).sort_values(by=["p %"], ascending=False, na_position="last")
 
-    styled = out.style.map(color_edge, subset=["Edge %"]).format(
-        {"p mod. %": "{:.1f}", "Cote juste": "{:.2f}",
-         "Cote Betclic": "{:.2f}", "Edge %": "{:+.2f}"}, na_rep="—",
+    edited = st.data_editor(
+        df_edit,
+        column_config={
+            "_pid": None,  # caché
+            "Inclure": st.column_config.CheckboxColumn(
+                "✓", help="Inclure ce joueur dans la distribution xG/xA",
+                width="small"),
+            "Joueur": st.column_config.TextColumn(width="medium"),
+            "Pos": st.column_config.TextColumn(width="small"),
+            "Min": st.column_config.NumberColumn(width="small"),
+            "Titu": st.column_config.TextColumn(width="small"),
+            "p %": st.column_config.NumberColumn("p %", format="%.1f"),
+            "Cote juste": st.column_config.NumberColumn(format="%.2f"),
+            "Cote Betclic": st.column_config.NumberColumn(format="%.2f"),
+            "Edge %": st.column_config.NumberColumn(format="%+.2f"),
+        },
+        column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
+                      "Marché", "p %", "Cote juste", "Cote Betclic", "Edge %"],
+        hide_index=True,
+        use_container_width=True,
+        height=600,
+        key=f"editor_{event_id}",
+        disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
+                  "p %", "Cote juste", "Cote Betclic", "Edge %"],
     )
-    st.dataframe(styled, use_container_width=True, hide_index=True, height=600)
+
+    # Détection des changements de checkbox → MAJ session_state + rerun.
+    # En mode "Les deux", chaque player_id apparaît sur 2 lignes (buteur + passeur).
+    # On groupe par pid : si AU MOINS UNE des lignes diffère de l'état actuel, on
+    # adopte cette nouvelle valeur. La 2ᵉ ligne sera resynchronisée au rerun, ce
+    # qui évite l'effet "toggle écrasé par l'autre ligne du même joueur".
+    new_state = dict(state)
+    changed = False
+    for pid_e, group in edited.groupby("_pid"):
+        pid_e = int(pid_e)
+        old = bool(state.get(pid_e, True))
+        new_vals = [bool(v) for v in group["Inclure"].tolist()]
+        if all(v == old for v in new_vals):
+            continue  # rien à faire pour ce pid
+        # Au moins une ligne diffère : on prend la 1ʳᵉ qui diffère
+        for v in new_vals:
+            if v != old:
+                new_state[pid_e] = v
+                changed = True
+                break
+    if changed:
+        st.session_state[state_key] = new_state
+        st.rerun()
+
+    # Stats résumées
+    n_in = sum(1 for v in state.values() if v)
+    n_total = len(state)
+    n_blessed = sum(1 for _, r in sub.iterrows()
+                    if _safe_avail(r.get("availability")) != "available")
+    msg = f"📊 {n_in}/{n_total} joueurs inclus"
+    if n_blessed:
+        msg += f"  •  🤕 {n_blessed} indisponibles BSD"
+    if not lineup_confirmed:
+        msg += "  •  ⏳ Compos non confirmées (mins=90 partout)"
+    else:
+        msg += "  •  ✅ Compos confirmées"
+    st.caption(msg)
 
 
 def render_predictions_buteurs_page():

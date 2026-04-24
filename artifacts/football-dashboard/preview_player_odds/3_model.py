@@ -8,18 +8,68 @@ Fonctions principales:
   - poisson_anytime(lambda_) -> proba >= 1 occurrence
 """
 import math
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
 
 
 # Hyperparamètres calibrables
-MINUTES_STARTER_DEFAULT = 78.0   # minutes moyennes attendues pour un titulaire
-MINUTES_SUB_DEFAULT = 25.0       # minutes moyennes attendues pour un remplaçant
-SHRINKAGE_K = 8.0                # nb "matchs prior" pour shrinkage bayésien
-LEAGUE_PRIOR_XG90_OUTFIELD = 0.10  # xG/90 moyen joueur de champ Bundesliga (fallback)
-LEAGUE_PRIOR_XA90_OUTFIELD = 0.08  # xA/90 moyen
-LEAGUE_PRIOR_XG90_GK = 0.0
-LEAGUE_PRIOR_XA90_GK = 0.0
+MINUTES_DEFAULT_NO_LINEUP = 90.0   # tous les joueurs reçoivent 90 min tant que la compo n'est pas confirmée
+MINUTES_FLOOR_WHEN_STARTER = 80.0  # si un titulaire confirmé a avg_mins < 60 → on force 80
+MINUTES_FLOOR_THRESHOLD = 60.0     # seuil sous lequel on applique le floor
+MINUTES_STARTER_DEFAULT = 78.0     # backstop si avg_mins inconnu
+MINUTES_SUB_DEFAULT = 25.0         # remplaçant confirmé
+SHRINKAGE_K = 8.0                  # nb "matchs prior" pour shrinkage bayésien
+
+# === PRIORS BAYÉSIENS PAR POSTE (xG/90 et xA/90) ============================
+# Lus dans l'ordre : specific_position (ST, CAM, RB...), puis position générique
+# (F/M/D/G), puis fallback ligue.
+# Calibration : moyennes empiriques Top 5 européens (xG/90 par rôle).
+POSITION_PRIORS_XG90: dict[str, float] = {
+    # Spécifiques fins
+    "GK": 0.00,
+    "CB": 0.05,
+    "LB": 0.08, "RB": 0.08, "WB": 0.08, "LWB": 0.08, "RWB": 0.08,
+    "CDM": 0.07, "DM": 0.07,
+    "CM": 0.10, "MC": 0.10,
+    "LM": 0.18, "RM": 0.18,
+    "CAM": 0.20, "AM": 0.20,
+    "LW": 0.30, "RW": 0.30,
+    "SS": 0.35, "CF": 0.40,
+    "ST": 0.45,
+    # Specific_position BSD (codes 3 lettres, plus larges) — moyennes par catégorie
+    "DEF": 0.06,
+    "MID": 0.13,
+    "FWD": 0.35,
+    # Génériques (fallback BSD `position` si specific_position absente)
+    "G": 0.00,
+    "D": 0.06,
+    "M": 0.13,
+    "F": 0.35,
+}
+
+POSITION_PRIORS_XA90: dict[str, float] = {
+    "GK": 0.01,
+    "CB": 0.03,
+    "LB": 0.07, "RB": 0.07, "WB": 0.07, "LWB": 0.07, "RWB": 0.07,
+    "CDM": 0.07, "DM": 0.07,
+    "CM": 0.10, "MC": 0.10,
+    "LM": 0.15, "RM": 0.15,
+    "CAM": 0.18, "AM": 0.18,
+    "LW": 0.20, "RW": 0.20,
+    "SS": 0.15, "CF": 0.12,
+    "ST": 0.10,
+    "DEF": 0.05,
+    "MID": 0.11,
+    "FWD": 0.13,
+    "G": 0.01,
+    "D": 0.05,
+    "M": 0.11,
+    "F": 0.13,
+}
+
+# Fallback ligue si aucune position connue
+LEAGUE_PRIOR_XG90_OUTFIELD = 0.10
+LEAGUE_PRIOR_XA90_OUTFIELD = 0.08
 
 
 def _safe_float(x, default=0.0):
@@ -37,7 +87,6 @@ def parse_event_date(ev):
     if not s:
         return None
     try:
-        # format ISO avec offset
         return datetime.fromisoformat(s.replace("Z", "+00:00"))
     except ValueError:
         return None
@@ -52,17 +101,60 @@ def is_goalkeeper(stat_row):
     return saves > 0
 
 
-def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None):
+def _normalize_position(pos: str | None) -> str | None:
+    """Normalise un code position (uppercase, retire espaces, '/' premier élément)."""
+    if not pos:
+        return None
+    p = str(pos).upper().strip().split("/")[0].strip()
+    return p or None
+
+
+def position_prior(player: dict, fallback_xg: float = LEAGUE_PRIOR_XG90_OUTFIELD,
+                   fallback_xa: float = LEAGUE_PRIOR_XA90_OUTFIELD) -> tuple[float, float]:
+    """Retourne (prior_xg_p90, prior_xa_p90) pour un joueur.
+
+    Lecture en cascade :
+      1) `specific_position` (ST, CAM, RB, etc.)
+      2) `position` générique (F/M/D/G)
+      3) heuristique `is_gk`
+      4) fallback ligue (paramètres)
     """
-    Calcule pour chaque joueur ses stats roulées (toute la saison ou jusqu'à until_date exclu).
-    Returns: dict[player_id] -> {
-        'name', 'team_id', 'is_gk',
-        'minutes_total', 'matches_played', 'starts',
-        'xg_total', 'xa_total', 'shots_total', 'key_pass_total',
-        'goals_total', 'assists_total',
-        'xg_per_90', 'xa_per_90', 'shots_per_90',
-        'avg_mins_when_starter',
-    }
+    if not isinstance(player, dict):
+        return fallback_xg, fallback_xa
+
+    spec = _normalize_position(player.get("specific_position"))
+    if spec and spec in POSITION_PRIORS_XG90:
+        return POSITION_PRIORS_XG90[spec], POSITION_PRIORS_XA90[spec]
+
+    gen = _normalize_position(player.get("position"))
+    if gen and gen in POSITION_PRIORS_XG90:
+        return POSITION_PRIORS_XG90[gen], POSITION_PRIORS_XA90[gen]
+
+    if player.get("is_gk"):
+        return POSITION_PRIORS_XG90["GK"], POSITION_PRIORS_XA90["GK"]
+
+    return fallback_xg, fallback_xa
+
+
+def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
+                          prev_player_stats_by_event=None, prev_matches_by_id=None,
+                          alpha_prev=0.5):
+    """Calcule pour chaque joueur ses stats roulées (saison N).
+
+    Si `prev_player_stats_by_event` est fourni, pondère les stats de la saison N-1
+    par `alpha_prev` (0.5-0.7 selon la transition de championnat) et les agrège
+    avec les stats N. Le poids effectif d'un match N-1 = 1 × alpha_prev(pid).
+
+    `alpha_prev` peut être :
+      - un float (poids uniforme appliqué à tous les joueurs N-1) ;
+      - un Callable[[int], float] (alpha par player_id, ex. 0.7 si même équipe
+        N et N-1, 0.6 si transfert intra-Top5, 0.5 sinon).
+
+    Retourne dict[player_id] -> profil avec : name, team_id, is_gk,
+    minutes_total, matches_played, starts, xg_total, xa_total, shots_total,
+    key_pass_total, goals_total, assists_total, xg_per_90, xa_per_90,
+    shots_per_90, avg_mins_when_starter, position, specific_position,
+    matches_played_curr, matches_played_prev.
     """
     agg = defaultdict(lambda: {
         "name": None, "team_id": None, "is_gk": False,
@@ -70,48 +162,86 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None)
         "xg_total": 0.0, "xa_total": 0.0, "shots_total": 0.0, "key_pass_total": 0.0,
         "goals_total": 0.0, "assists_total": 0.0,
         "starter_minutes_sum": 0.0,
+        "matches_played_curr": 0, "matches_played_prev": 0,
+        "_pos_counts": Counter(), "_spec_pos_counts": Counter(),
     })
 
-    for eid_str, ev_block in player_stats_by_event.items():
-        eid = int(eid_str)
-        ev = matches_by_id.get(eid_str) or matches_by_id.get(eid)
-        if ev is None:
-            continue
-        ev_date = parse_event_date(ev)
-        if until_date and ev_date and ev_date >= until_date:
-            continue  # leave-one-out temporel
-
-        for s in ev_block.get("stats", []):
-            p = s.get("player")
-            if isinstance(p, dict):
-                pid = p.get("id"); pname = p.get("name")
-            else:
-                pid = p; pname = s.get("player_name")
-            if pid is None:
+    def _ingest(stats_by_event, matches_lookup, weight_fn, is_current: bool):
+        """`weight_fn` : callable(pid)→float renvoyant le poids pour ce joueur."""
+        if not stats_by_event:
+            return
+        for eid_str, ev_block in stats_by_event.items():
+            try:
+                eid_int = int(eid_str)
+            except (TypeError, ValueError):
+                eid_int = eid_str
+            ev = matches_lookup.get(str(eid_str)) or matches_lookup.get(eid_int)
+            if ev is None:
                 continue
-            mins = _safe_float(s.get("minutes_played"))
-            if mins <= 0:
-                continue  # n'a pas joué
+            ev_date = parse_event_date(ev)
+            if until_date and ev_date and ev_date >= until_date:
+                continue  # leave-one-out temporel
 
-            a = agg[pid]
-            a["name"] = a["name"] or pname
-            tid = s.get("team")
-            if isinstance(tid, dict): tid = tid.get("id")
-            a["team_id"] = a["team_id"] or tid
-            a["is_gk"] = a["is_gk"] or is_goalkeeper(s)
-            a["minutes_total"] += mins
-            a["matches_played"] += 1
-            if mins >= 60:
-                a["starts"] += 1
-                a["starter_minutes_sum"] += mins
-            a["xg_total"] += _safe_float(s.get("expected_goals"))
-            a["xa_total"] += _safe_float(s.get("expected_assists"))
-            a["shots_total"] += _safe_float(s.get("total_shots"))
-            a["key_pass_total"] += _safe_float(s.get("key_pass"))
-            a["goals_total"] += _safe_float(s.get("goals"))
-            a["assists_total"] += _safe_float(s.get("goal_assist"))
+            for s in ev_block.get("stats", []):
+                p = s.get("player")
+                if isinstance(p, dict):
+                    pid = p.get("id"); pname = p.get("name")
+                else:
+                    pid = p; pname = s.get("player_name")
+                if pid is None:
+                    continue
+                mins = _safe_float(s.get("minutes_played"))
+                if mins <= 0:
+                    continue
 
-    # Calcul derived stats
+                weight = float(weight_fn(pid))
+                if weight <= 0:
+                    continue
+
+                a = agg[pid]
+                a["name"] = a["name"] or pname
+                tid = s.get("team")
+                if isinstance(tid, dict): tid = tid.get("id")
+                if is_current:  # team_id : on garde celui de la saison courante uniquement
+                    a["team_id"] = a["team_id"] or tid
+                else:
+                    # Mémorise team_id N-1 (pour calcul alpha post-hoc)
+                    a.setdefault("team_id_prev", tid)
+                a["is_gk"] = a["is_gk"] or is_goalkeeper(s)
+
+                a["minutes_total"] += mins * weight
+                a["matches_played"] += 1 * weight
+                if mins >= 60:
+                    a["starts"] += 1 * weight
+                    a["starter_minutes_sum"] += mins * weight
+                a["xg_total"] += _safe_float(s.get("expected_goals")) * weight
+                a["xa_total"] += _safe_float(s.get("expected_assists")) * weight
+                a["shots_total"] += _safe_float(s.get("total_shots")) * weight
+                a["key_pass_total"] += _safe_float(s.get("key_pass")) * weight
+                a["goals_total"] += _safe_float(s.get("goals")) * weight
+                a["assists_total"] += _safe_float(s.get("goal_assist")) * weight
+
+                if is_current:
+                    a["matches_played_curr"] += 1
+                else:
+                    a["matches_played_prev"] += 1
+
+                pos_norm = _normalize_position(s.get("position"))
+                if pos_norm:
+                    a["_pos_counts"][pos_norm] += 1
+
+    _ingest(player_stats_by_event, matches_by_id,
+            weight_fn=lambda pid: 1.0, is_current=True)
+    if prev_player_stats_by_event is not None:
+        if callable(alpha_prev):
+            wfn = alpha_prev
+        else:
+            _alpha = float(alpha_prev)
+            wfn = lambda pid, _a=_alpha: _a
+        _ingest(prev_player_stats_by_event, prev_matches_by_id or {},
+                weight_fn=wfn, is_current=False)
+
+    # Calcul derived stats + position majoritaire
     for pid, a in agg.items():
         if a["minutes_total"] > 0:
             factor = 90.0 / a["minutes_total"]
@@ -123,11 +253,24 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None)
         a["avg_mins_when_starter"] = (
             a["starter_minutes_sum"] / a["starts"] if a["starts"] > 0 else MINUTES_STARTER_DEFAULT
         )
+        # Position majoritaire observée : mode des positions vues dans les player-stats
+        pos_counts = a.pop("_pos_counts", Counter())
+        a.pop("_spec_pos_counts", None)
+        if pos_counts:
+            a["position_observed"] = pos_counts.most_common(1)[0][0]
+            a["position_history"] = dict(pos_counts.most_common(5))
+        # arrondi des compteurs flottants
+        a["matches_played"] = round(a["matches_played"], 2)
+        a["starts"] = round(a["starts"], 2)
     return dict(agg)
 
 
 def shrunk_per90(player, metric, league_prior, k=SHRINKAGE_K):
-    """Shrinkage bayésien: combine observation joueur avec prior ligue."""
+    """Shrinkage bayésien: combine observation joueur avec prior position-aware.
+
+    `league_prior` est utilisé tel quel — l'appelant doit le calculer via
+    `position_prior(player)` pour bénéficier du prior par poste.
+    """
     matches = player.get("matches_played", 0)
     obs = player.get(metric, 0.0)
     if matches == 0:
@@ -164,25 +307,61 @@ def get_lineup_players(event):
     return out
 
 
-def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineup_players, pool):
+def _resolve_minutes(lp: dict, player: dict | None, lineup_confirmed: bool) -> float:
+    """Détermine les minutes attendues d'un joueur selon que la compo est confirmée.
+
+    - Compo non confirmée → 90 pour tout le monde (pas de notion starter/sub)
+    - Compo confirmée + titulaire → avg_mins_when_starter, floor 80 si <60
+    - Compo confirmée + remplaçant → MINUTES_SUB_DEFAULT
+    """
+    if not lineup_confirmed:
+        return MINUTES_DEFAULT_NO_LINEUP
+
+    if not lp.get("is_starter"):
+        return MINUTES_SUB_DEFAULT
+
+    avg = (player or {}).get("avg_mins_when_starter") or MINUTES_STARTER_DEFAULT
+    if avg < MINUTES_FLOOR_THRESHOLD:
+        return MINUTES_FLOOR_WHEN_STARTER
+    return float(avg)
+
+
+def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineup_players, pool,
+                             lineup_confirmed: bool | dict = False):
     """
     Pour chaque joueur de la lineup, calcule son xG_attendu et xA_attendu.
     Normalisation: somme des xG joueurs d'une équipe = xG_team.
 
+    Args:
+        lineup_confirmed: si True, applique avg_mins_when_starter pour titulaires
+            (floor 80) et MINUTES_SUB_DEFAULT pour subs. Si False, force 90 partout.
+            Peut aussi être un dict {"home": bool, "away": bool} pour piloter chaque
+            côté indépendamment (utile quand BSD n'a publié qu'une seule des 2 compos).
+
     Returns: dict[player_id] -> {
         'team_side', 'name', 'minutes_expected',
         'xg_raw', 'xa_raw', 'xg_calibrated', 'xa_calibrated',
-        'p_scorer', 'p_assist', 'odd_scorer', 'odd_assist'
+        'p_scorer', 'p_assist', 'odd_scorer', 'odd_assist',
+        'is_starter', 'is_gk', 'position_used', 'xg_per_90_used', 'xa_per_90_used'
     }
     """
     result = {}
+
+    # Normalise lineup_confirmed → dict par side
+    if isinstance(lineup_confirmed, dict):
+        confirmed_by_side = {"home": bool(lineup_confirmed.get("home", False)),
+                              "away": bool(lineup_confirmed.get("away", False))}
+    else:
+        b = bool(lineup_confirmed)
+        confirmed_by_side = {"home": b, "away": b}
 
     for side, team_xg, team_id in (("home", xg_home, home_team_id), ("away", xg_away, away_team_id)):
         team_lineup = [lp for lp in lineup_players if lp["side"] == side]
         if not team_lineup or team_xg is None:
             continue
+        side_confirmed = confirmed_by_side[side]
 
-        # 1. xG/xA bruts par joueur (avec shrinkage + minutes attendues)
+        # 1. xG/xA bruts par joueur (avec shrinkage position-aware + minutes attendues)
         raw_xg_per_player = {}
         raw_xa_per_player = {}
         for lp in team_lineup:
@@ -190,21 +369,27 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             if pid is None:
                 continue
             player = pool.get(pid)
+
+            # Prior position-aware. Si lineup BSD donne une position pour ce match
+            # (ex Maguire annoncé ST), elle prime — on construit un dict virtuel.
+            pos_for_prior = lp.get("position")
+            if pos_for_prior:
+                prior_player = {"specific_position": pos_for_prior, "position": pos_for_prior,
+                                "is_gk": (player or {}).get("is_gk", False)}
+            else:
+                prior_player = player or {}
+            prior_xg, prior_xa = position_prior(prior_player)
+
             if player is None:
-                # Joueur inconnu → utilise priors ligue
-                xg_p90 = LEAGUE_PRIOR_XG90_OUTFIELD
-                xa_p90 = LEAGUE_PRIOR_XA90_OUTFIELD
-                is_gk = False
-                avg_starter_min = MINUTES_STARTER_DEFAULT
+                xg_p90 = prior_xg
+                xa_p90 = prior_xa
+                is_gk = (pos_for_prior or "").upper() in ("GK", "G")
             else:
                 is_gk = player.get("is_gk", False)
-                prior_xg = LEAGUE_PRIOR_XG90_GK if is_gk else LEAGUE_PRIOR_XG90_OUTFIELD
-                prior_xa = LEAGUE_PRIOR_XA90_GK if is_gk else LEAGUE_PRIOR_XA90_OUTFIELD
                 xg_p90 = shrunk_per90(player, "xg_per_90", prior_xg)
                 xa_p90 = shrunk_per90(player, "xa_per_90", prior_xa)
-                avg_starter_min = player.get("avg_mins_when_starter", MINUTES_STARTER_DEFAULT)
 
-            mins_exp = avg_starter_min if lp["is_starter"] else MINUTES_SUB_DEFAULT
+            mins_exp = _resolve_minutes(lp, player, side_confirmed)
             raw_xg = xg_p90 * (mins_exp / 90.0)
             raw_xa = xa_p90 * (mins_exp / 90.0)
 
@@ -215,6 +400,8 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                 "name": (player or {}).get("name", f"id={pid}"),
                 "is_starter": lp["is_starter"], "is_gk": is_gk,
                 "minutes_expected": mins_exp,
+                "position_used": pos_for_prior or (player or {}).get("specific_position")
+                                 or (player or {}).get("position"),
                 "xg_per_90_used": xg_p90, "xa_per_90_used": xa_p90,
                 "xg_raw": raw_xg, "xa_raw": raw_xa,
             }

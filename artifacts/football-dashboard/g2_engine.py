@@ -68,7 +68,12 @@ def _poisson_home_win(lh: float, la: float, max_g: int = 20) -> float:
 def _lambdas_analytical(ph: float, pa: float,
                         ou25_under: float, ou25_over: float,
                         btts_yes: float, btts_no: float) -> tuple[float, float, str]:
-    """Mode A : formule fermée 1X2 + O/U 2.5 + BTTS (4 étapes)."""
+    """Mode A : formule fermée 1X2 + O/U 2.5 + BTTS (4 étapes).
+
+    Si le marché BTTS est incohérent avec O/U 2.5 sous Poisson indépendant
+    (corrélation positive réelle entre scores → BTTS_no < min Poisson),
+    fallback automatique sur Mode B avec annotation du label.
+    """
     fu, fo = remove_margin_2way(ou25_under, ou25_over)
     p_u25 = 1.0 / fu
     fy, fn = remove_margin_2way(btts_yes, btts_no)
@@ -78,8 +83,11 @@ def _lambdas_analytical(ph: float, pa: float,
     p00 = math.exp(-lambda_total)
     s = p_btts_no + p00
     disc = s * s - 4 * p00
+
     if disc < 0:
-        disc = 0.0
+        lh, la, _ = _lambdas_u25_only(ph, pa, ou25_under, ou25_over)
+        return lh, la, "Bissection 1X2 + O/U 2.5 (BTTS infaisable, fallback)"
+
     sqrt_disc = math.sqrt(disc)
     u_small = max(min((s - sqrt_disc) / 2, 0.999), 1e-6)
     u_large = max(min((s + sqrt_disc) / 2, 0.999), 1e-6)

@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from typing import Any
 
 import numpy as np
-from scipy.optimize import minimize
 from scipy.stats import poisson
 
 
@@ -14,10 +13,8 @@ class G2Result:
     lambda_team: float
     lambda_opp: float
     xg_match: float
-    prob_g2_mc: float
-    prob_g2_fractions: float
-    fair_odds_mc: float
-    fair_odds_fractions: float
+    prob_g2: float
+    fair_odds: float
     poisson_matrix: np.ndarray
     method: str
     p0_team: float = 0.0
@@ -45,31 +42,89 @@ def remove_margin_2way(odds_a: float, odds_b: float) -> tuple[float, float]:
     return fair_a, fair_b
 
 
-def _poisson_win_prob(lam_t: float, lam_o: float, max_g: int = 15) -> float:
-    total = 0.0
-    for i in range(max_g + 1):
+def _bisect_lambda_total_from_u25(p_u25: float) -> float:
+    lo, hi = 0.05, 7.0
+    for _ in range(40):
+        mid = (lo + hi) / 2
+        p_calc = math.exp(-mid) * (1 + mid + mid * mid / 2)
+        if p_calc > p_u25:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2
+
+
+def _poisson_home_win(lh: float, la: float, max_g: int = 20) -> float:
+    pw = 0.0
+    for i in range(1, max_g + 1):
+        pi = poisson.pmf(i, lh)
+        if pi < 1e-12:
+            continue
         for j in range(i):
-            total += poisson.pmf(i, lam_t) * poisson.pmf(j, lam_o)
-    return total
+            pw += pi * poisson.pmf(j, la)
+    return pw
 
 
-def _poisson_probs_full(lt: float, lo: float, max_g: int = 10):
-    pw, pd, pl, pu25 = 0.0, 0.0, 0.0, 0.0
-    for i in range(max_g):
-        pi = poisson.pmf(i, lt)
-        for j in range(max_g):
-            pj = poisson.pmf(j, lo)
-            p = pi * pj
-            if i > j:
-                pw += p
-            elif i == j:
-                pd += p
-            else:
-                pl += p
-            if i + j <= 2:
-                pu25 += p
-    pbtts = (1 - math.exp(-lt)) * (1 - math.exp(-lo))
-    return pw, pd, pl, pu25, pbtts
+def _lambdas_analytical(ph: float, pa: float,
+                        ou25_under: float, ou25_over: float,
+                        btts_yes: float, btts_no: float) -> tuple[float, float, str]:
+    """Mode A : formule fermée 1X2 + O/U 2.5 + BTTS (4 étapes)."""
+    fu, fo = remove_margin_2way(ou25_under, ou25_over)
+    p_u25 = 1.0 / fu
+    fy, fn = remove_margin_2way(btts_yes, btts_no)
+    p_btts_no = 1.0 / fn
+
+    lambda_total = _bisect_lambda_total_from_u25(p_u25)
+    p00 = math.exp(-lambda_total)
+    s = p_btts_no + p00
+    disc = s * s - 4 * p00
+    if disc < 0:
+        disc = 0.0
+    sqrt_disc = math.sqrt(disc)
+    u_small = max(min((s - sqrt_disc) / 2, 0.999), 1e-6)
+    u_large = max(min((s + sqrt_disc) / 2, 0.999), 1e-6)
+
+    if ph >= pa:
+        lh = -math.log(u_small)
+        la = -math.log(u_large)
+    else:
+        lh = -math.log(u_large)
+        la = -math.log(u_small)
+    return lh, la, "Analytique 1X2 + O/U 2.5 + BTTS"
+
+
+def _lambdas_u25_only(ph: float, pa: float,
+                     ou25_under: float, ou25_over: float) -> tuple[float, float, str]:
+    """Mode B : λ_total via O/U 2.5 + ratio via bissection P(home_win)=ph_marché."""
+    fu, fo = remove_margin_2way(ou25_under, ou25_over)
+    p_u25 = 1.0 / fu
+    lambda_total = _bisect_lambda_total_from_u25(p_u25)
+
+    lo_r, hi_r = 0.10, 0.90
+    for _ in range(25):
+        r = (lo_r + hi_r) / 2
+        lh_test = lambda_total * r
+        la_test = lambda_total * (1 - r)
+        pw_calc = _poisson_home_win(lh_test, la_test)
+        if pw_calc < ph:
+            lo_r = r
+        else:
+            hi_r = r
+    r_final = (lo_r + hi_r) / 2
+    lh = lambda_total * r_final
+    la = lambda_total * (1 - r_final)
+    return lh, la, "Bissection 1X2 + O/U 2.5"
+
+
+def _lambdas_supremacy_heuristic(ph: float, pa: float) -> tuple[float, float, str]:
+    """Mode C : 1X2 seul, heuristique simple."""
+    if ph > 0.5:
+        lh, la = 1.5, 1.0
+    elif ph > 0.35:
+        lh, la = 1.3, 1.2
+    else:
+        lh, la = 1.0, 1.5
+    return lh, la, "Heuristique 1X2 seul"
 
 
 def lambdas_buchdahl(
@@ -80,10 +135,15 @@ def lambdas_buchdahl(
     ou25_over: float | None = None,
     btts_yes: float | None = None,
     btts_no: float | None = None,
-    cs_mids: dict[tuple[int, int], float] | None = None,
 ) -> tuple[float, float, str]:
+    """
+    Calcule (λ_home, λ_away, method) selon les marchés disponibles.
+    - 1X2 + O/U 2.5 + BTTS → formule analytique fermée (méthode "G2+ adaptée")
+    - 1X2 + O/U 2.5         → bissection λ_total + bissection ratio
+    - 1X2 seul              → heuristique simple
+    """
     fair_h, fair_d, fair_a = remove_margin_proportional(odds_h, odds_d, odds_a)
-    ph, pd_mkt, pa = 1.0 / fair_h, 1.0 / fair_d, 1.0 / fair_a
+    ph, pa = 1.0 / fair_h, 1.0 / fair_a
 
     has_ou25 = (
         ou25_under is not None and ou25_under > 1.0
@@ -93,95 +153,12 @@ def lambdas_buchdahl(
         btts_yes is not None and btts_yes > 1.0
         and btts_no is not None and btts_no > 1.0
     )
-    has_cs = cs_mids is not None and len(cs_mids) >= 3
 
-    p_u25 = None
+    if has_ou25 and has_btts:
+        return _lambdas_analytical(ph, pa, ou25_under, ou25_over, btts_yes, btts_no)
     if has_ou25:
-        fu, fo = remove_margin_2way(ou25_under, ou25_over)
-        p_u25 = 1.0 / fu
-
-    p_btts = None
-    if has_btts:
-        fy, fn = remove_margin_2way(btts_yes, btts_no)
-        p_btts = 1.0 / fy
-
-    cs_norm = None
-    if has_cs:
-        total_p = sum(1.0 / v for v in cs_mids.values() if v > 1)
-        if total_p > 0:
-            cs_norm = {k: (1.0 / v) / total_p for k, v in cs_mids.items() if v > 1}
-        else:
-            has_cs = False
-
-    def objective(params):
-        lt, lo = params
-        if lt < 0.05 or lo < 0.05 or lt > 6 or lo > 6:
-            return 1e10
-
-        pw, pd_v, pl, pu25_v, pbtts_v = _poisson_probs_full(lt, lo)
-
-        total = 0.0
-        total += 100.0 * ((pw - ph) ** 2 + (pd_v - pd_mkt) ** 2 + (pl - pa) ** 2)
-
-        if has_ou25 and p_u25 is not None:
-            total += 50.0 * (pu25_v - p_u25) ** 2
-
-        if has_btts and p_btts is not None:
-            total += 30.0 * (pbtts_v - p_btts) ** 2
-
-        if has_cs and cs_norm:
-            ll = 0.0
-            for (gi, gj), p_mkt in cs_norm.items():
-                p_model = poisson.pmf(gi, lt) * poisson.pmf(gj, lo)
-                if p_model > 1e-20:
-                    ll += p_mkt * math.log(p_model)
-            total += 20.0 * (-ll)
-
-        return total
-
-    if has_ou25 and p_u25 is not None:
-        lo_t, hi_t = 0.5, 7.0
-        for _ in range(60):
-            mid_t = (lo_t + hi_t) / 2
-            p = math.exp(-mid_t) * (1 + mid_t + mid_t ** 2 / 2)
-            if p > p_u25:
-                lo_t = mid_t
-            else:
-                hi_t = mid_t
-        total_xg = (lo_t + hi_t) / 2
-        if ph > 0.5:
-            ratio = min(0.65, 0.5 + (ph - 0.5) * 0.5)
-        elif ph > 0.35:
-            ratio = 0.5
-        else:
-            ratio = max(0.35, 0.5 - (0.35 - ph) * 0.5)
-        init = [total_xg * ratio, total_xg * (1 - ratio)]
-    else:
-        if ph > 0.5:
-            init = [1.5, 1.0]
-        elif ph > 0.35:
-            init = [1.3, 1.2]
-        else:
-            init = [1.0, 1.5]
-
-    res = minimize(
-        objective,
-        np.array(init),
-        method="Nelder-Mead",
-        options={"maxiter": 50000, "xatol": 1e-10, "fatol": 1e-14},
-    )
-    lt_opt = max(0.1, float(res.x[0]))
-    lo_opt = max(0.1, float(res.x[1]))
-
-    parts = ["Buchdahl 1X2"]
-    if has_ou25:
-        parts.append("O/U 2.5")
-    if has_btts:
-        parts.append("BTTS")
-    if has_cs:
-        parts.append(f"CS({len(cs_norm)})")
-
-    return lt_opt, lo_opt, " + ".join(parts)
+        return _lambdas_u25_only(ph, pa, ou25_under, ou25_over)
+    return _lambdas_supremacy_heuristic(ph, pa)
 
 
 def build_poisson_matrix(
@@ -221,33 +198,6 @@ def prob_g2_fixed_fractions(
     return p_win + insurance
 
 
-def simulate_g2_monte_carlo(
-    lambda_team: float,
-    lambda_opp: float,
-    n_sims: int = 50_000,
-    n_minutes: int = 90,
-    seed: int | None = None,
-) -> float:
-    rng = np.random.default_rng(seed)
-    rate_team = lambda_team / n_minutes
-    rate_opp = lambda_opp / n_minutes
-
-    goals_team = rng.poisson(rate_team, size=(n_sims, n_minutes))
-    goals_opp = rng.poisson(rate_opp, size=(n_sims, n_minutes))
-
-    cum_team = np.cumsum(goals_team, axis=1)
-    cum_opp = np.cumsum(goals_opp, axis=1)
-
-    lead = cum_team - cum_opp
-    led_by_2 = np.any(lead >= 2, axis=1)
-    final_team = cum_team[:, -1]
-    final_opp = cum_opp[:, -1]
-    team_wins = final_team > final_opp
-
-    g2_wins = led_by_2 | team_wins
-    return float(g2_wins.mean())
-
-
 def compute_g2(
     odds_h: float,
     odds_d: float,
@@ -257,9 +207,7 @@ def compute_g2(
     ou25_over: float | None = None,
     btts_yes: float | None = None,
     btts_no: float | None = None,
-    cs_mids: dict[tuple[int, int], float] | None = None,
     betclic_odds: float | None = None,
-    n_sims: int = 50_000,
 ) -> G2Result:
     lam_home, lam_away, method = lambdas_buchdahl(
         odds_h, odds_d, odds_a,
@@ -267,7 +215,6 @@ def compute_g2(
         ou25_over=ou25_over,
         btts_yes=btts_yes,
         btts_no=btts_no,
-        cs_mids=cs_mids,
     )
 
     if team_is_home:
@@ -282,20 +229,15 @@ def compute_g2(
     p_win_market = 1.0 / fair_h if team_is_home else 1.0 / fair_a
 
     matrix = build_poisson_matrix(lambda_team, lambda_opp)
-    prob_mc = simulate_g2_monte_carlo(lambda_team, lambda_opp, n_sims=n_sims)
-    prob_frac = prob_g2_fixed_fractions(lambda_team, lambda_opp, p_win_market=p_win_market)
-
-    fair_mc = 1.0 / prob_mc if prob_mc > 0 else 999.0
-    fair_frac = 1.0 / prob_frac if prob_frac > 0 else 999.0
+    prob_g2 = prob_g2_fixed_fractions(lambda_team, lambda_opp, p_win_market=p_win_market)
+    fair_odds = 1.0 / prob_g2 if prob_g2 > 0 else 999.0
 
     return G2Result(
         lambda_team=round(lambda_team, 4),
         lambda_opp=round(lambda_opp, 4),
         xg_match=round(lambda_team + lambda_opp, 4),
-        prob_g2_mc=round(prob_mc, 6),
-        prob_g2_fractions=round(prob_frac, 6),
-        fair_odds_mc=round(fair_mc, 3),
-        fair_odds_fractions=round(fair_frac, 3),
+        prob_g2=round(prob_g2, 6),
+        fair_odds=round(fair_odds, 3),
         poisson_matrix=matrix,
         method=method,
         p0_team=round(p0_team, 6),

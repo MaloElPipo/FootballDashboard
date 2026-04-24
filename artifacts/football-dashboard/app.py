@@ -3986,7 +3986,7 @@ elif page == "🎯 Garantie 2+":
                             break
 
         from betfair_scraper import (
-            fetch_betfair_cs, cs_to_exact_score_mids,
+            fetch_betfair_cs,
             get_1x2_mids, get_ou25_both_mids, get_btts_both_mids,
             get_1x2_lay_team,
             BetfairCSData, BetfairSelection,
@@ -4032,7 +4032,7 @@ elif page == "🎯 Garantie 2+":
                     _bf_url = None
                     bf_cs_btn = False
             if bf_cs_btn:
-              with st.spinner("Scraping Betfair Exchange (1X2 + BTTS + O/U + CS)..."):
+              with st.spinner("Scraping Betfair Exchange (1X2 + BTTS + O/U)..."):
                 try:
                     cs_data = fetch_betfair_cs(
                         competition_key=g2_comp_key,
@@ -4057,14 +4057,6 @@ elif page == "🎯 Garantie 2+":
                         st.session_state["g2_btts_yes"] = _btts[0]
                         st.session_state["g2_btts_no"] = _btts[1]
 
-                    _team_home = g2_team_choice == g2_match["home"]
-                    _cs_mids = cs_to_exact_score_mids(cs_data, _team_home)
-                    _old_cs_keys = [k for k in st.session_state if k.startswith("g2_cs_")]
-                    for k in _old_cs_keys:
-                        del st.session_state[k]
-                    for (gt, go), mid in _cs_mids.items():
-                        st.session_state[f"g2_cs_{gt}_{go}"] = round(float(mid), 2)
-
                     st.session_state["_g2_mkt_auto_key"] = f"_g2_mkt_auto_{_cs_state_key}_{g2_team_choice}"
                     st.rerun()
                 except Exception as e:
@@ -4085,8 +4077,6 @@ elif page == "🎯 Garantie 2+":
                 parts_found.append("BTTS")
             if cs_data.ou25:
                 parts_found.append("O/U 2.5")
-            if cs_data.cs_detail:
-                parts_found.append(f"CS ({len(cs_data.cs_detail)})")
             scrape_info_parts = parts_found
 
             st.success(f"✅ Scrape {ts_str} — {', '.join(parts_found)}")
@@ -4112,14 +4102,6 @@ elif page == "🎯 Garantie 2+":
                             "Back All": f"{sel.back:.2f}",
                             "Lay All": f"{sel.lay:.2f}",
                             "Mid": f"{sel.mid_price:.3f}",
-                        })
-                if cs_data.cs_detail:
-                    for name, sel in list(cs_data.cs_detail.items())[:16]:
-                        raw_rows.append({
-                            "Marché": "CS", "Sélection": name,
-                            "Back All": f"{sel.back:.1f}",
-                            "Lay All": f"{sel.lay:.1f}",
-                            "Mid": f"{sel.mid_price:.2f}",
                         })
                 if raw_rows:
                     import pandas as _pd_raw
@@ -4212,66 +4194,11 @@ elif page == "🎯 Garantie 2+":
 
         st.markdown("---")
 
-        exact_scores: dict[tuple[int, int], float] = {}
         team_is_home = g2_team_choice == g2_match["home"]
         opp_name = g2_match["away"] if team_is_home else g2_match["home"]
 
-        if cs_data and cs_data.cs_detail and not cs_data.error:
-            cs_mids = cs_to_exact_score_mids(cs_data, team_is_home)
-            for (gt, go), mid_val in cs_mids.items():
-                _cs_key = f"g2_cs_{gt}_{go}"
-                if _cs_key not in st.session_state:
-                    st.session_state[_cs_key] = round(float(mid_val), 2)
-            with st.expander(f"📐 Scores exacts — mid-prices ({len(cs_mids)} scores)", expanded=True):
-                st.caption("Mid-prices calculés automatiquement (Back × w_back + Lay × w_lay). Modifiables.")
-                sorted_scores = sorted(cs_mids.items(), key=lambda x: (x[0][1], x[0][0]))
-                n_cols = 4
-                for row_start in range(0, len(sorted_scores), n_cols):
-                    row_scores = sorted_scores[row_start:row_start + n_cols]
-                    cols = st.columns(n_cols)
-                    for col_idx, ((gt, go), mid_val) in enumerate(row_scores):
-                        with cols[col_idx]:
-                            label = f"{g2_team_choice} {gt} - {go} {opp_name}"
-                            v = st.number_input(
-                                label, min_value=1.5, max_value=1000.0,
-                                step=0.5,
-                                key=f"g2_cs_{gt}_{go}",
-                            )
-                            exact_scores[(gt, go)] = v
-        else:
-            _DEFAULT_SCORES = [
-                (0, 0), (1, 0), (2, 0), (3, 0),
-                (1, 1), (2, 2), (3, 3),
-                (0, 1), (0, 2), (0, 3),
-            ]
-            for gt, go in _DEFAULT_SCORES:
-                _cs_key = f"g2_cs_{gt}_{go}"
-                if _cs_key not in st.session_state:
-                    st.session_state[_cs_key] = 8.0
-            with st.expander("📐 Scores exacts (optionnel — Scraper Betfair pour auto-remplir)", expanded=False):
-                st.caption(
-                    "Valeurs par défaut. Scrapez Betfair pour obtenir les vrais mid-prices, "
-                    "ou saisissez manuellement."
-                )
-                n_cols = 4
-                for row_start in range(0, len(_DEFAULT_SCORES), n_cols):
-                    row_scores = _DEFAULT_SCORES[row_start:row_start + n_cols]
-                    cols = st.columns(n_cols)
-                    for col_idx, (gt, go) in enumerate(row_scores):
-                        with cols[col_idx]:
-                            label = f"{g2_team_choice} {gt} - {go} {opp_name}"
-                            v = st.number_input(
-                                label, min_value=1.5, max_value=1000.0,
-                                step=0.5,
-                                key=f"g2_cs_{gt}_{go}",
-                            )
-                            if v != 8.0:
-                                exact_scores[(gt, go)] = v
-
-        st.markdown("---")
-
         if st.button("🧮 Calculer EV0", type="primary", key="g2_calc"):
-            with st.spinner("Simulation Monte Carlo en cours (50 000 itérations)..."):
+            with st.spinner("Calcul en cours..."):
                 g2_result = compute_g2(
                     odds_h=g2_odds_h,
                     odds_d=g2_odds_d,
@@ -4281,9 +4208,7 @@ elif page == "🎯 Garantie 2+":
                     ou25_over=g2_ou25_over if g2_ou25_over > 1.0 else None,
                     btts_yes=g2_btts_yes if g2_btts_yes > 1.0 else None,
                     btts_no=g2_btts_no if g2_btts_no > 1.0 else None,
-                    cs_mids=exact_scores if exact_scores else None,
                     betclic_odds=betclic_g2_odds,
-                    n_sims=50_000,
                 )
 
             st.subheader("📈 Résultats")
@@ -4309,43 +4234,35 @@ elif page == "🎯 Garantie 2+":
 
             st.markdown("---")
 
-            mc_col1, mc_col2, mc_col3, mc_col4 = st.columns(4)
-            with mc_col1:
-                st.metric("P(G2+) Monte Carlo", f"{g2_result.prob_g2_mc*100:.2f}%")
-            with mc_col2:
-                st.metric("Cote fair (MC)", f"{g2_result.fair_odds_mc:.3f}")
-            with mc_col3:
-                st.metric("P(G2+) Fractions", f"{g2_result.prob_g2_fractions*100:.2f}%")
-            with mc_col4:
-                st.metric("Cote fair (Frac)", f"{g2_result.fair_odds_fractions:.3f}")
+            res2_col1, res2_col2 = st.columns(2)
+            with res2_col1:
+                st.metric("P(G2+)", f"{g2_result.prob_g2*100:.2f}%")
+            with res2_col2:
+                st.metric("Cote fair", f"{g2_result.fair_odds:.3f}")
 
             if betclic_g2_odds:
                 st.markdown("---")
                 st.subheader("💰 Value Analysis")
 
-                edge_frac = edge_percent(g2_result.fair_odds_fractions, betclic_g2_odds)
-                ev0_frac = ev0(g2_result.prob_g2_fractions, betclic_g2_odds)
-                edge_mc = edge_percent(g2_result.fair_odds_mc, betclic_g2_odds)
+                edge_v = edge_percent(g2_result.fair_odds, betclic_g2_odds)
+                ev0_v = ev0(g2_result.prob_g2, betclic_g2_odds)
 
-                val_col1, val_col2, val_col3 = st.columns(3)
+                val_col1, val_col2 = st.columns(2)
                 with val_col1:
                     st.metric("Cote Betclic", f"{betclic_g2_odds}")
                 with val_col2:
-                    _color2 = "🟢" if edge_frac > 0 else "🔴"
-                    st.metric(f"{_color2} Edge Fractions", f"{edge_frac:+.2f}%")
-                with val_col3:
-                    _color = "🟢" if edge_mc > 0 else "🔴"
-                    st.metric(f"{_color} Edge MC", f"{edge_mc:+.2f}%")
+                    _color2 = "🟢" if edge_v > 0 else "🔴"
+                    st.metric(f"{_color2} Edge", f"{edge_v:+.2f}%")
 
-                if edge_frac > 0:
+                if edge_v > 0:
                     st.success(
-                        f"✅ **VALUE DÉTECTÉE** — EV0 = {ev0_frac:+.2f}% | "
-                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_fractions:.3f}"
+                        f"✅ **VALUE DÉTECTÉE** — EV0 = {ev0_v:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds:.3f}"
                     )
                 else:
                     st.error(
-                        f"❌ Pas de value — EV0 = {ev0_frac:+.2f}% | "
-                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds_fractions:.3f}"
+                        f"❌ Pas de value — EV0 = {ev0_v:+.2f}% | "
+                        f"Cote Betclic {betclic_g2_odds} vs Fair {g2_result.fair_odds:.3f}"
                     )
 
                 betclic_manual = st.number_input(
@@ -4355,10 +4272,10 @@ elif page == "🎯 Garantie 2+":
                     help="Si vous voulez tester une autre cote (Winamax, etc.)"
                 )
                 if betclic_manual != betclic_g2_odds:
-                    edge_manual = edge_percent(g2_result.fair_odds_fractions, betclic_manual)
-                    ev0_manual = ev0(g2_result.prob_g2_fractions, betclic_manual)
+                    edge_manual = edge_percent(g2_result.fair_odds, betclic_manual)
+                    ev0_manual = ev0(g2_result.prob_g2, betclic_manual)
                     color_m = "🟢" if edge_manual > 0 else "🔴"
-                    st.info(f"{color_m} Cote manuelle {betclic_manual} → Edge Frac: {edge_manual:+.2f}% | EV0: {ev0_manual:+.2f}%")
+                    st.info(f"{color_m} Cote manuelle {betclic_manual} → Edge: {edge_manual:+.2f}% | EV0: {ev0_manual:+.2f}%")
 
             st.markdown("---")
             st.subheader("🔢 Matrice Poisson")

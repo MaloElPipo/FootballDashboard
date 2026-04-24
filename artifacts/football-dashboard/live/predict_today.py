@@ -493,19 +493,38 @@ async def scrape_betclic_leagues(slugs: list[str]) -> dict[str, list[dict]]:
 # ---------------------------------------------------------------------------
 # Pipeline principal
 # ---------------------------------------------------------------------------
-def load_seen_keys() -> set[tuple[int, int]]:
-    """Retourne l'ensemble des (event_id, player_id) déjà loggés (toutes dates)."""
-    seen: set[tuple[int, int]] = set()
+def load_existing_log() -> tuple[list[dict], dict[tuple[int, int], int]]:
+    """Charge tout le forward_log et indexe par (event_id, player_id) → row index.
+
+    Permet l'upsert : on remplace les lignes pré-kickoff (sans `outcome_scored`)
+    par leur nouvelle version, et on protège strictement celles déjà enrichies
+    post-match. Évite les blocages de refresh quand les compos officielles
+    arrivent tardivement (ex. 1h avant kickoff).
+    """
+    rows: list[dict] = []
+    index: dict[tuple[int, int], int] = {}
     if not FORWARD_LOG.exists():
-        return seen
+        return rows, index
     with FORWARD_LOG.open() as f:
         for line in f:
             try:
                 d = json.loads(line)
-                seen.add((int(d["event_id"]), int(d["player_id"])))
+                key = (int(d["event_id"]), int(d["player_id"]))
             except (json.JSONDecodeError, KeyError, ValueError):
                 continue
-    return seen
+            # Si doublon (legacy), on garde la dernière (post-match wins)
+            if key in index:
+                rows[index[key]] = d
+            else:
+                index[key] = len(rows)
+                rows.append(d)
+    return rows, index
+
+
+def load_seen_keys() -> set[tuple[int, int]]:
+    """[DEPRECATED] Conservé pour compat ; préférer `load_existing_log`."""
+    _, idx = load_existing_log()
+    return set(idx.keys())
 
 
 def predict_one_event(ev: dict, slug: str, pool: dict,
@@ -745,28 +764,47 @@ def main():
         log.info("Aucune ligne candidate.")
         return
 
-    # Section critique : recharge seen sous lock + filtre + append en une seule
-    # transaction → résiste aux runs concurrents (2× clic UI / cron+manuel).
+    # Section critique : upsert pré-kickoff sous lock.
+    # - Lignes déjà enrichies post-match (outcome_scored != None) → IMMUABLES
+    # - Lignes pré-kickoff existantes → REMPLACÉES par la nouvelle version
+    #   (permet refresh quand les compos officielles tombent tardivement)
+    # - Nouvelles clés → ajoutées
     with log_lock(FORWARD_LOG_LOCK, timeout=30.0):
-        seen = load_seen_keys()
-        new_lines: list[dict] = []
+        rows, index = load_existing_log()
+        n_protected = n_upserted = n_inserted = 0
         local_seen: set[tuple[int, int]] = set()
+
         for ln in candidate_lines:
             key = (int(ln["event_id"]), int(ln["player_id"]))
-            if key in seen or key in local_seen:
-                continue
+            if key in local_seen:
+                continue  # doublon dans le batch
             local_seen.add(key)
-            new_lines.append(ln)
 
-        if not new_lines:
-            log.info("Aucune nouvelle prédiction à logger (toutes déjà présentes).")
+            if key in index:
+                existing = rows[index[key]]
+                if existing.get("outcome_scored") is not None:
+                    n_protected += 1  # post-match : on touche pas
+                    continue
+                rows[index[key]] = ln  # upsert pré-kickoff
+                n_upserted += 1
+            else:
+                index[key] = len(rows)
+                rows.append(ln)
+                n_inserted += 1
+
+        if not (n_upserted or n_inserted):
+            log.info("Forward log inchangé (%d candidates protégées post-match).",
+                     n_protected)
             return
 
-        with FORWARD_LOG.open("a") as f:
-            for ln in new_lines:
-                f.write(json.dumps(ln, ensure_ascii=False) + "\n")
-        log.info("✅ %d lignes appendées dans %s (%d candidates filtrées)",
-                 len(new_lines), FORWARD_LOG, len(candidate_lines) - len(new_lines))
+        # Réécriture atomique : tmp + rename
+        tmp_path = FORWARD_LOG.with_suffix(".jsonl.tmp")
+        with tmp_path.open("w") as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        tmp_path.replace(FORWARD_LOG)
+        log.info("✅ Forward log : %d insertions, %d upserts, %d protégées (post-match).",
+                 n_inserted, n_upserted, n_protected)
 
 
 if __name__ == "__main__":

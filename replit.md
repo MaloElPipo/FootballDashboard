@@ -75,6 +75,15 @@ The dashboard is built with Streamlit, providing an interactive web interface. I
         - **Output:** xG team, xG opponent, xG match, P(G2+), fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator, lambda derivation method label.
         - **Manual fallback:** All market fields are editable. Tool works with just 1X2 (minimum), O/U 2.5 and BTTS improve precision progressively (Mode A is the most accurate).
     - **Workflow:** Runs on port 5000 via a Streamlit web application.
+    - **Forward Test Live (Top 5 — `live/`):** Pipeline temps réel pour valider le modèle propriétaire buteurs/passeurs.
+        - **`live/bsd_helpers.py`:** Wrappers REST BSD (`get_upcoming_events`, `get_event_detail`, `get_match_incidents`, `get_team_squad`, `get_player_season_stats`).
+        - **`live/build_player_pool.py`:** Construit pool joueurs par ligue (Bundesliga, Premier League, La Liga, Serie A, Ligue 1) avec stats saison, cache 24h dans `live/data/{slug}_player_pool.json` + `{slug}_squads.json`.
+        - **`live/predict_today.py`:** Pour chaque match J/J+1 : (1) odds 1X2+O/U2.5+BTTS via BSD, (2) λ équipes via `g2_engine.lambdas_buchdahl`, (3) lineup BSD ou fallback top-17 par minutes, (4) distribution xG/xA via `_3_model_proxy.distribute_xg_to_players`, (5) odds buteur/passeur Betclic, (6) edge = (1/odd_book × p_modèle) − 1, (7) append `live/data/forward_log.jsonl`. Idempotent via clé `(event_id, player_id)`. Lineup dédupliquée par player_id (BSD met parfois starter+sub). Events dédupliqués par `event_id` à l'arrivée.
+        - **`live/enrich_results.py`:** Récupère outcomes BSD (player-stats + fallback incidents) hors lock, puis réécrit forward_log.jsonl en mode atomique (tmp + os.replace) avec `outcome_scored`/`outcome_assisted` pour matchs terminés.
+        - **`live/file_lock.py`:** Verrou `fcntl.flock` exclusif inter-process (`forward_log.lock`) partagé par predict + enrich → élimine TOCTOU sur `load_seen_keys`+append, et race condition perte d'append pendant rewrite enrich.
+        - **UI Streamlit (`live/ui.py`):**
+            - **🎯 Edges Live** (`?page=edges`) : tableau filtrable (ligue, marché scorer/assist, edge min %, titulaires uniquement), code couleur par edge, boutons "Lancer prédictions" / "Enrichir résultats", export CSV.
+            - **📈 Tracking Live** (`?page=tracking`) : KPIs (picks loggés, matchs enrichis, picks à edge>seuil), ROI 1u flat par tranche d'edge, courbe cumul.
 
 # External Dependencies
 

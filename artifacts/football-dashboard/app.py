@@ -614,6 +614,8 @@ _PAGE_LIST = [
     "🔬 Backtest V8",
     "📡 Cotes Betclic",
     "🎯 Garantie 2+",
+    "🎯 Edges Live",
+    "📈 Tracking Live",
     "📊 Suivi des paris",
     "🤖 Assistant IA",
 ]
@@ -623,6 +625,10 @@ _nav_nation = _qp.get("nation", None)
 _page_index = 0
 if _nav_page == "effectifs":
     _page_index = 1
+elif _nav_page == "edges":
+    _page_index = _PAGE_LIST.index("🎯 Edges Live")
+elif _nav_page == "tracking":
+    _page_index = _PAGE_LIST.index("📈 Tracking Live")
 
 page = st.sidebar.radio(
     "Section",
@@ -634,7 +640,7 @@ page = st.sidebar.radio(
 active_competitions = ALL_CURATED
 selected_group = "Toutes les compétitions"
 
-_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "⚽ Effectifs Clubs", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "🎯 Garantie 2+", "📊 Suivi des paris"}
+_PAGES_WITHOUT_COMP_FILTER = {"🤖 Assistant IA", "🌍 Effectifs CM 2026", "⚽ Effectifs Clubs", "📅 Calendrier CDM 2026", "🏅 Classement ELO", "🔮 Prédictions", "🔬 Backtest V8", "📡 Cotes Betclic", "🎯 Garantie 2+", "🎯 Edges Live", "📈 Tracking Live", "📊 Suivi des paris"}
 
 if page not in _PAGES_WITHOUT_COMP_FILTER:
     st.sidebar.markdown("---")
@@ -4304,6 +4310,16 @@ elif page == "🎯 Garantie 2+":
                 yaxis=dict(autorange="reversed"),
             )
             st.plotly_chart(fig_matrix, use_container_width=True)
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "🎯 Edges Live":
+    from live.ui import render_edges_page
+    render_edges_page()
+
+# ═══════════════════════════════════════════════════════════════════
+elif page == "📈 Tracking Live":
+    from live.ui import render_tracking_page
+    render_tracking_page()
 
 # ═══════════════════════════════════════════════════════════════════
 elif page == "📊 Suivi des paris":

@@ -1913,22 +1913,30 @@ elif page == "📅 Calendrier CDM 2026":
     @st.cache_data(ttl=3600)
     def fetch_wc_events():
         all_events = []
-        page_num = 1
+        offset = 0
+        limit = 50
         last_error = None
-        while True:
+        total_count = None
+        max_iterations = 20  # safety: max 1000 events
+        for _ in range(max_iterations):
             try:
                 r = requests.get(f"{BSD_BASE_URL}/events/", params={
                     "league": 27, "date_from": "2026-06-11", "date_to": "2026-07-19",
-                    "per_page": 100, "page": page_num,
+                    "limit": limit, "offset": offset,
                 }, headers=BSD_HEADERS, timeout=30)
                 if r.status_code != 200:
                     last_error = f"HTTP {r.status_code}"
                     break
                 data = r.json()
-                all_events.extend(data.get("results", []))
-                if not data.get("next"):
+                results = data.get("results", [])
+                if not results:
                     break
-                page_num += 1
+                all_events.extend(results)
+                if total_count is None:
+                    total_count = data.get("count", 0)
+                if len(all_events) >= total_count or len(results) < limit:
+                    break
+                offset += limit
             except Exception as e:
                 last_error = str(e)
                 break

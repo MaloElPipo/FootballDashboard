@@ -1,7 +1,8 @@
 """Pages Streamlit pour le pipeline forward-test live.
 
-- `render_edges_page()`     : edges buteurs/passeurs J/J+1
-- `render_tracking_page()`  : historique enrichi du forward log + métriques perf
+- `render_edges_page()`               : test edges buteurs/passeurs J/J+1
+- `render_tracking_page()`            : historique enrichi du forward log + métriques perf
+- `render_predictions_buteurs_page()` : liste matchs prévus + drill-down détail riche (BSD)
 """
 from __future__ import annotations
 
@@ -82,7 +83,7 @@ def _run_enrich_results() -> tuple[bool, str]:
 # Page : Edges Buteurs/Passeurs
 # ---------------------------------------------------------------------------
 def render_edges_page():
-    st.header("🎯 Edges Buteurs / Passeurs (Live Top 5)")
+    st.header("🎯 Test Edge Buteurs (Top 5)")
     st.caption(
         "Edges = (cote bookmaker × probabilité modèle) − 1. "
         "Modèle propriétaire : g2_engine (1X2+O/U+BTTS) → λ équipes → "
@@ -232,7 +233,7 @@ def render_edges_page():
 # Page : Tracking forward log (perf historique)
 # ---------------------------------------------------------------------------
 def render_tracking_page():
-    st.header("📈 Tracking Forward Test — Performance live")
+    st.header("📈 Tracking Test Edge Buteurs — Performance live")
     st.caption(
         "Historique de tous les picks loggés. ROI calculé en simulant 1u flat "
         "sur chaque pick avec edge > seuil (sélection theoretical, à mise sur cote bookmaker)."
@@ -322,3 +323,487 @@ def render_tracking_page():
         show["p_model"] = (show["p_model"] * 100).round(1)
         show["edge"] = (show["edge"] * 100).round(2)
         st.dataframe(show, use_container_width=True, hide_index=True)
+
+
+# ---------------------------------------------------------------------------
+# Page : Prédiction Buteurs (drill-down match → détail riche BSD)
+# ---------------------------------------------------------------------------
+@st.cache_data(ttl=300, show_spinner=False)
+def _bsd_event_detail_cached(event_id: int) -> dict:
+    """Cache 5 min sur le détail BSD pour éviter de re-fetch à chaque rerun.
+    Retour conventionné :
+      - dict normal : succès
+      - dict {"_error": str} : erreur réseau / API / payload vide
+    """
+    sys.path.insert(0, str(DASH_ROOT))
+    from live.bsd_helpers import get_event_detail
+    try:
+        d = get_event_detail(event_id)
+        if not d:
+            return {"_error": "BSD a renvoyé une réponse vide pour cet event."}
+        return d
+    except Exception as e:
+        return {"_error": str(e)}
+
+
+def _safe_float(v, default: float | None = None) -> float | None:
+    """Cast tolérant : renvoie default si v est None/NaN/non castable."""
+    if v is None:
+        return default
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return default
+    if f != f:  # NaN
+        return default
+    return f
+
+
+def _fmt_num(v, fmt: str = "{:.2f}", na: str = "—") -> str:
+    """Formate un nombre safe (renvoie na si None/NaN/non-numérique)."""
+    f = _safe_float(v)
+    if f is None:
+        return na
+    return fmt.format(f)
+
+
+def _format_form_string(form: str) -> str:
+    """LLWWW → coloré"""
+    if not form:
+        return ""
+    out = []
+    for c in form.upper():
+        if c == "W":
+            out.append("🟢")
+        elif c == "D":
+            out.append("⚪")
+        elif c == "L":
+            out.append("🔴")
+        else:
+            out.append(c)
+    return "".join(out)
+
+
+def _render_radar_compare(home_form: dict, away_form: dict, home_name: str, away_name: str):
+    """Radar comparatif des 2 équipes sur les KPIs disponibles dans home/away_form."""
+    if not home_form or not away_form:
+        return
+    metrics = [
+        ("avg_xg", "xG/match", 0, 3.0),
+        ("avg_xg_conceded", "xG concédé", 3.0, 0),  # inversé : moins = mieux
+        ("avg_shots", "Tirs/match", 0, 20.0),
+        ("avg_shots_on_target", "Tirs cadrés", 0, 8.0),
+        ("avg_pass_accuracy", "% passes", 50.0, 95.0),
+        ("duel_win_rate", "% duels gagnés", 0.30, 0.70),
+        ("aerial_win_rate", "% duels aériens", 0.30, 0.70),
+    ]
+    rows = []
+    for key, label, lo, hi in metrics:
+        h = home_form.get(key)
+        a = away_form.get(key)
+        if h is None or a is None:
+            continue
+        # normalisation 0-100 (gérée pour le sens inverse via lo > hi)
+        def norm(v):
+            if hi == lo:
+                return 50.0
+            x = (v - lo) / (hi - lo) * 100.0
+            return max(0.0, min(100.0, x))
+        rows.append({"métrique": label, home_name: round(norm(h), 1),
+                     away_name: round(norm(a), 1)})
+    if not rows:
+        return
+    df_radar = pd.DataFrame(rows).set_index("métrique")
+    try:
+        import plotly.graph_objects as go
+        fig = go.Figure()
+        cats = list(df_radar.index) + [df_radar.index[0]]
+        for col, color in [(home_name, "rgba(220,38,38,0.6)"),
+                           (away_name, "rgba(37,99,235,0.6)")]:
+            vals = df_radar[col].tolist() + [df_radar[col].iloc[0]]
+            fig.add_trace(go.Scatterpolar(r=vals, theta=cats, fill="toself",
+                                          name=col, line=dict(color=color)))
+        fig.update_layout(
+            polar=dict(radialaxis=dict(visible=True, range=[0, 100])),
+            showlegend=True, height=420, margin=dict(l=20, r=20, t=20, b=20),
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    except ImportError:
+        st.bar_chart(df_radar)
+
+
+def _coach_name(coach) -> str:
+    """Extrait le nom + nationalité depuis dict ou string."""
+    if not coach:
+        return ""
+    if isinstance(coach, str):
+        return coach
+    if isinstance(coach, dict):
+        nm = coach.get("name") or coach.get("short_name") or "?"
+        country = coach.get("country")
+        if country:
+            return f"{nm} ({country})"
+        return nm
+    return str(coach)
+
+
+def _coach_extras(coach) -> str | None:
+    """Tags supplémentaires (formation préférée, style)."""
+    if not isinstance(coach, dict):
+        return None
+    bits = []
+    pf = coach.get("preferred_formation")
+    if pf:
+        bits.append(f"⚙️ Formation préférée : `{pf}`")
+    styles = coach.get("top_styles") or []
+    if isinstance(styles, list) and styles:
+        bits.append(f"🎨 Styles : {', '.join(str(s) for s in styles[:3])}")
+    profile = coach.get("profile")
+    if profile:
+        bits.append(f"🧭 Profil : {profile}")
+    return " · ".join(bits) if bits else None
+
+
+def _render_lineup_column(side_block: dict, side_label: str, coach):
+    """Affiche une compo (1 colonne) : formation, coach, starters, subs."""
+    formation = (side_block.get("formation") or side_block.get("system")
+                 or side_block.get("tactical_formation"))
+    starters = side_block.get("starters") or side_block.get("starting") or []
+    subs = side_block.get("substitutes") or side_block.get("subs") or []
+
+    st.markdown(f"### {side_label}")
+    coach_str = _coach_name(coach)
+    if coach_str:
+        st.markdown(f"👤 **Coach :** {coach_str}")
+        extras = _coach_extras(coach)
+        if extras:
+            st.caption(extras)
+    if formation:
+        st.markdown(f"⚙️ **Système :** `{formation}`")
+    elif not starters:
+        st.caption("⏳ Compo non encore confirmée par BSD (publiée ~1h avant kick-off).")
+
+    if starters:
+        st.markdown("**Onze de départ**")
+        for p in starters:
+            if not isinstance(p, dict):
+                continue
+            name = (p.get("player") or {}).get("name") if isinstance(p.get("player"), dict) \
+                else p.get("name") or p.get("player_name") or "?"
+            pos = p.get("position") or p.get("role") or ""
+            num = p.get("jersey_number") or p.get("shirt_number") or ""
+            num_s = f"#{num} " if num else ""
+            pos_s = f" · {pos}" if pos else ""
+            st.markdown(f"- {num_s}{name}{pos_s}")
+    if subs:
+        with st.expander(f"🪑 Remplaçants ({len(subs)})"):
+            for p in subs:
+                if not isinstance(p, dict):
+                    continue
+                name = (p.get("player") or {}).get("name") if isinstance(p.get("player"), dict) \
+                    else p.get("name") or p.get("player_name") or "?"
+                pos = p.get("position") or ""
+                num = p.get("jersey_number") or ""
+                num_s = f"#{num} " if num else ""
+                pos_s = f" · {pos}" if pos else ""
+                st.markdown(f"- {num_s}{name}{pos_s}")
+
+
+def _render_match_detail(event_id: int, df_log: pd.DataFrame):
+    """Vue détail d'un match : header, odds, lineups, stats, buteurs prédits."""
+    sub = df_log[df_log["event_id"] == event_id]
+    if sub.empty:
+        st.warning("Aucune ligne dans le log pour cet event.")
+        return
+
+    head = sub.iloc[0]
+    detail = _bsd_event_detail_cached(int(event_id))
+    if detail.get("_error"):
+        st.warning(
+            f"⚠️ Détail BSD indisponible — affichage limité aux données du forward log. "
+            f"_Cause : {detail['_error']}_"
+        )
+        detail = {}
+
+    # === En-tête ===
+    home_name = head.get("home_team") or head["match"].split(" - ")[0]
+    away_name = head.get("away_team") or head["match"].split(" - ")[-1]
+    kickoff_str = head["kickoff"].tz_convert("Europe/Paris").strftime("%a %d %b — %H:%M") \
+        if pd.notna(head["kickoff"]) else "?"
+    st.subheader(f"⚽ {home_name} — {away_name}")
+    venue = detail.get("venue") or {}
+    venue_str = ""
+    if isinstance(venue, dict) and venue.get("name"):
+        venue_str = f"🏟️ {venue['name']}"
+        if venue.get("city"):
+            venue_str += f", {venue['city']}"
+    referee = detail.get("referee")
+    ref_str = ""
+    if isinstance(referee, dict):
+        ref_str = f"🟥 Arbitre : {referee.get('name', '?')}"
+    elif isinstance(referee, str) and referee:
+        ref_str = f"🟥 Arbitre : {referee}"
+    league_label = LEAGUE_LABELS.get(head["league_slug"], head["league_slug"])
+    season_obj = detail.get("season") or {}
+    season_str = season_obj.get("name", "") if isinstance(season_obj, dict) else ""
+    rd = detail.get("round_number")
+    rd_str = f" · J{rd}" if rd else ""
+    st.markdown(
+        f"**{league_label}** — {season_str}{rd_str}  \n"
+        f"🕒 {kickoff_str} (heure Paris)  \n"
+        f"{venue_str}  \n{ref_str}"
+    )
+
+    # === xG modèle vs Marché ===
+    st.markdown("---")
+    st.markdown("### 📊 xG attendus & marchés")
+    c1, c2, c3 = st.columns(3)
+    xh = _safe_float(head.get("xg_team_home"), 0.0) or 0.0
+    xa = _safe_float(head.get("xg_team_away"), 0.0) or 0.0
+    with c1:
+        st.metric(f"λ {home_name}", f"{xh:.2f}")
+    with c2:
+        st.metric(f"λ {away_name}", f"{xa:.2f}")
+    with c3:
+        st.metric("Total xG", f"{xh + xa:.2f}")
+    st.caption(f"Méthode dérivation λ : `{head.get('lambdas_method', '?')}`")
+
+    o_h, o_d, o_a = detail.get("odds_home"), detail.get("odds_draw"), detail.get("odds_away")
+    o_o25, o_u25 = detail.get("odds_over_25"), detail.get("odds_under_25")
+    o_btts_y, o_btts_n = detail.get("odds_btts_yes"), detail.get("odds_btts_no")
+    odds_rows = []
+    if o_h: odds_rows.append({"Marché": "1 (Home)", "Cote": o_h})
+    if o_d: odds_rows.append({"Marché": "X (Nul)", "Cote": o_d})
+    if o_a: odds_rows.append({"Marché": "2 (Away)", "Cote": o_a})
+    if o_o25: odds_rows.append({"Marché": "Over 2.5", "Cote": o_o25})
+    if o_u25: odds_rows.append({"Marché": "Under 2.5", "Cote": o_u25})
+    if o_btts_y: odds_rows.append({"Marché": "BTTS Oui", "Cote": o_btts_y})
+    if o_btts_n: odds_rows.append({"Marché": "BTTS Non", "Cote": o_btts_n})
+    if odds_rows:
+        st.dataframe(pd.DataFrame(odds_rows), use_container_width=True,
+                     hide_index=True, height=min(40 + 35 * len(odds_rows), 320))
+
+    # === Compositions ===
+    st.markdown("---")
+    st.markdown("### 👥 Compositions & système de jeu")
+    lineups = detail.get("lineups") or {}
+    if isinstance(lineups, dict) and (lineups.get("home") or lineups.get("away")):
+        cl, cr = st.columns(2)
+        with cl:
+            _render_lineup_column(lineups.get("home") or {}, f"🏠 {home_name}",
+                                  detail.get("home_coach"))
+        with cr:
+            _render_lineup_column(lineups.get("away") or {}, f"🛫 {away_name}",
+                                  detail.get("away_coach"))
+    else:
+        st.info("⏳ Compositions non encore confirmées par BSD (publiées ~1h avant le coup d'envoi).")
+        # Au moins afficher les coachs
+        cc1, cc2 = st.columns(2)
+        for col, coach_obj, label in [(cc1, detail.get("home_coach"), home_name),
+                                       (cc2, detail.get("away_coach"), away_name)]:
+            with col:
+                nm = _coach_name(coach_obj)
+                if nm:
+                    st.markdown(f"👤 **Coach {label} :** {nm}")
+                    extras = _coach_extras(coach_obj)
+                    if extras:
+                        st.caption(extras)
+
+    # === Forme + radar comparatif ===
+    home_form = detail.get("home_form") or {}
+    away_form = detail.get("away_form") or {}
+    if home_form or away_form:
+        st.markdown("---")
+        st.markdown("### 📈 Forme récente & comparatif des forces")
+        fc1, fc2 = st.columns(2)
+        for col, form, name, emoji in [(fc1, home_form, home_name, "🏠"),
+                                       (fc2, away_form, away_name, "🛫")]:
+            with col:
+                if not form:
+                    continue
+                fs = _format_form_string(form.get("form_string", ""))
+                st.markdown(f"**{emoji} {name}** — {fs}")
+                st.caption(
+                    f"{form.get('matches_played', 0)} matchs · "
+                    f"{form.get('wins', 0)}V {form.get('draws', 0)}N "
+                    f"{form.get('losses', 0)}D · "
+                    f"{form.get('goals_scored_last_n', 0)}-"
+                    f"{form.get('goals_conceded_last_n', 0)} buts · "
+                    f"xG {_fmt_num(form.get('avg_xg'))} | "
+                    f"xGA {_fmt_num(form.get('avg_xg_conceded'))}"
+                )
+        _render_radar_compare(home_form, away_form, home_name, away_name)
+
+    # === Head-to-head ===
+    h2h = detail.get("head_to_head") or {}
+    if isinstance(h2h, dict) and h2h.get("total_matches"):
+        st.markdown("---")
+        st.markdown(f"### 🤝 Confrontations directes ({h2h.get('total_matches', 0)} matchs)")
+        c1, c2, c3 = st.columns(3)
+        c1.metric(f"V {home_name}", h2h.get("home_wins", 0))
+        c2.metric("Nuls", h2h.get("draws", 0))
+        c3.metric(f"V {away_name}", h2h.get("away_wins", 0))
+        avg_g = _safe_float(h2h.get("avg_total_goals"))
+        if avg_g is not None:
+            st.caption(f"⚽ Moyenne buts/match : **{avg_g:.2f}**")
+        recent = h2h.get("recent_matches") or []
+        if recent:
+            with st.expander(f"📋 {len(recent)} derniers face-à-face"):
+                rec_df = pd.DataFrame([
+                    {
+                        "Date": (m.get("date") or "")[:10],
+                        "Domicile": m.get("home"),
+                        "Score": f"{m.get('home_score', '?')} - {m.get('away_score', '?')}",
+                        "Extérieur": m.get("away"),
+                    } for m in recent
+                ])
+                st.dataframe(rec_df, use_container_width=True, hide_index=True)
+
+    # === Blessés / suspendus ===
+    unav = detail.get("unavailable_players") or {}
+    if isinstance(unav, dict) and (unav.get("home") or unav.get("away")):
+        st.markdown("---")
+        st.markdown("### 🚑 Joueurs indisponibles")
+        uc1, uc2 = st.columns(2)
+        for col, side, name in [(uc1, "home", home_name), (uc2, "away", away_name)]:
+            with col:
+                lst = unav.get(side) or []
+                st.markdown(f"**{name}** ({len(lst)})")
+                if not lst:
+                    st.caption("—")
+                for p in lst[:15]:
+                    nm = p.get("name", "?")
+                    rn = p.get("reason") or p.get("status") or ""
+                    ret = p.get("expected_return")
+                    ret_s = f" — retour ~{ret}" if ret else ""
+                    st.markdown(f"- {nm} _({rn}{ret_s})_")
+
+    # === Tableau buteurs prédits ===
+    st.markdown("---")
+    st.markdown("### ⚽ Buteurs prédits (modèle propriétaire)")
+    market = st.radio("Marché à afficher", ["Buteur", "Passeur", "Les deux"],
+                      horizontal=True, key=f"market_{event_id}")
+    rows = []
+    for _, r in sub.iterrows():
+        common = {
+            "Joueur": r.get("player_name", "?"),
+            "Équipe": home_name if r.get("team_side") == "home" else away_name,
+            "Côté": "🏠" if r.get("team_side") == "home" else "🛫",
+            "Titu": "✓" if r.get("is_starter") else "Sub",
+            "Min att.": round(float(r.get("minutes_expected") or 0)),
+        }
+        if market in ("Buteur", "Les deux") and pd.notna(r.get("p_model_scorer")):
+            rows.append({**common, "Marché": "⚽ Buteur",
+                         "p mod. %": round(float(r["p_model_scorer"]) * 100, 1),
+                         "Cote juste": round(float(r["fair_odd_scorer"]), 2)
+                            if pd.notna(r.get("fair_odd_scorer")) else None,
+                         "Cote Betclic": round(float(r["betclic_odd_scorer"]), 2)
+                            if pd.notna(r.get("betclic_odd_scorer")) else None,
+                         "Edge %": round(float(r["edge_scorer"]) * 100, 2)
+                            if pd.notna(r.get("edge_scorer")) else None})
+        if market in ("Passeur", "Les deux") and pd.notna(r.get("p_model_assist")):
+            rows.append({**common, "Marché": "🅰 Passeur",
+                         "p mod. %": round(float(r["p_model_assist"]) * 100, 1),
+                         "Cote juste": round(float(r["fair_odd_assist"]), 2)
+                            if pd.notna(r.get("fair_odd_assist")) else None,
+                         "Cote Betclic": round(float(r["betclic_odd_assist"]), 2)
+                            if pd.notna(r.get("betclic_odd_assist")) else None,
+                         "Edge %": round(float(r["edge_assist"]) * 100, 2)
+                            if pd.notna(r.get("edge_assist")) else None})
+    if not rows:
+        st.warning("Aucune prédiction joueur pour ce marché.")
+        return
+    out = pd.DataFrame(rows).sort_values("p mod. %", ascending=False)
+
+    def color_edge(v):
+        if pd.isna(v):
+            return ""
+        if v >= 5:
+            return "background-color: #c6f6d5; color: #1a4d2e; font-weight: 600"
+        if v >= 0:
+            return "background-color: #fef9c3; color: #5b3a00"
+        return "color: #6b7280"
+
+    styled = out.style.map(color_edge, subset=["Edge %"]).format(
+        {"p mod. %": "{:.1f}", "Cote juste": "{:.2f}",
+         "Cote Betclic": "{:.2f}", "Edge %": "{:+.2f}"}, na_rep="—",
+    )
+    st.dataframe(styled, use_container_width=True, hide_index=True, height=600)
+
+
+def render_predictions_buteurs_page():
+    st.header("🔮 Prédiction Buteurs — Détail par match")
+    st.caption(
+        "Liste des matchs du week-end avec prédictions disponibles. "
+        "Sélectionne un match pour voir compositions, coachs, système de jeu, "
+        "stats des équipes, head-to-head, blessés et tous les buteurs prédits."
+    )
+
+    df = load_forward_log_df()
+    if df.empty:
+        st.info(
+            "Aucune prédiction encore loggée. Va sur **🎯 Test Edge Buteurs** "
+            "et clique sur **Lancer prédictions maintenant**."
+        )
+        return
+
+    # Liste matchs (groupby event_id) avec stats résumées
+    grouped = (df.groupby(["event_id", "league_slug", "match"], dropna=False)
+               .agg(kickoff=("kickoff", "first"),
+                    n_players=("player_id", "nunique"),
+                    n_with_book=("betclic_odd_scorer",
+                                 lambda s: int(s.notna().sum())))
+               .reset_index()
+               .sort_values("kickoff"))
+
+    grouped["Ligue"] = grouped["league_slug"].map(lambda s: LEAGUE_LABELS.get(s, s))
+    grouped["Kickoff (Paris)"] = grouped["kickoff"].dt.tz_convert("Europe/Paris").dt.strftime(
+        "%a %d/%m %H:%M")
+
+    # Sélection via query param OR session_state pour permettre URL partageable
+    qp = st.query_params
+    qp_eid = qp.get("event_id")
+    if qp_eid:
+        try:
+            current_eid = int(qp_eid)
+        except (TypeError, ValueError):
+            current_eid = None
+    else:
+        current_eid = st.session_state.get("predbut_selected_event_id")
+
+    # Sélecteur match
+    match_labels = {
+        int(r.event_id): f"{r['Ligue']} · {r['Kickoff (Paris)']} — {r['match']} "
+                         f"({int(r['n_players'])} joueurs, {int(r['n_with_book'])} cotes)"
+        for _, r in grouped.iterrows()
+    }
+    eid_list = list(match_labels.keys())
+
+    if current_eid not in eid_list:
+        current_eid = eid_list[0] if eid_list else None
+
+    selected = st.selectbox(
+        "📅 Choisir un match",
+        eid_list,
+        format_func=lambda eid: match_labels.get(eid, str(eid)),
+        index=eid_list.index(current_eid) if current_eid in eid_list else 0,
+        key="predbut_selectbox",
+    )
+
+    # Synchronise l'URL avec la sélection (dès le 1er affichage → URL partageable)
+    qp_current = st.query_params.get("event_id")
+    if selected is not None and str(selected) != qp_current:
+        st.session_state["predbut_selected_event_id"] = selected
+        st.query_params["page"] = "predictions_buteurs"
+        st.query_params["event_id"] = str(selected)
+
+    # Vue d'ensemble compacte sous le sélecteur
+    with st.expander(f"📋 Vue d'ensemble : {len(grouped)} matchs prédits"):
+        show = grouped[["Ligue", "Kickoff (Paris)", "match", "n_players", "n_with_book"]].rename(
+            columns={"match": "Match", "n_players": "Joueurs prédits",
+                     "n_with_book": "Cotes Betclic"})
+        st.dataframe(show, use_container_width=True, hide_index=True)
+
+    st.markdown("---")
+    if selected is not None:
+        _render_match_detail(int(selected), df)

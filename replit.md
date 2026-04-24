@@ -82,8 +82,9 @@ The dashboard is built with Streamlit, providing an interactive web interface. I
         - **`live/enrich_results.py`:** Récupère outcomes BSD (player-stats + fallback incidents) hors lock, puis réécrit forward_log.jsonl en mode atomique (tmp + os.replace) avec `outcome_scored`/`outcome_assisted` pour matchs terminés.
         - **`live/file_lock.py`:** Verrou `fcntl.flock` exclusif inter-process (`forward_log.lock`) partagé par predict + enrich → élimine TOCTOU sur `load_seen_keys`+append, et race condition perte d'append pendant rewrite enrich.
         - **UI Streamlit (`live/ui.py`):**
-            - **🎯 Edges Live** (`?page=edges`) : tableau filtrable (ligue, marché scorer/assist, edge min %, titulaires uniquement), code couleur par edge, boutons "Lancer prédictions" / "Enrichir résultats", export CSV.
-            - **📈 Tracking Live** (`?page=tracking`) : KPIs (picks loggés, matchs enrichis, picks à edge>seuil), ROI 1u flat par tranche d'edge, courbe cumul.
+            - **🔮 Prédiction Buteurs** (`?page=predictions_buteurs[&event_id=X]`) : sélecteur de match du week-end + vue détail riche par match — header (ligue/journée/stade/arbitre), λ équipes & marchés (1X2/O-U2.5/BTTS), compositions 2 colonnes avec coachs (nom + nationalité + formation préférée + style + profil) et système de jeu quand lineups confirmées par BSD, forme récente (form_string colorée 🟢⚪🔴 + KPIs xG/xGA/duels), radar Plotly comparatif des forces, head-to-head (V/N/D + moyenne buts + 10 derniers), joueurs indisponibles (blessés/suspendus avec retour estimé), tableau buteurs/passeurs prédits trié par p_modèle avec edge coloré. Cache BSD `get_event_detail` 5 min via `@st.cache_data(ttl=300)`.
+            - **🎯 Test Edge Buteurs (Top 5)** (`?page=edges`) : tableau filtrable (ligue, marché scorer/assist, edge min %, titulaires uniquement), code couleur par edge, boutons "Lancer prédictions" / "Enrichir résultats", export CSV.
+            - **📈 Tracking Test Edge Buteurs** (`?page=tracking`) : KPIs (picks loggés, matchs enrichis, picks à edge>seuil), ROI 1u flat par tranche d'edge, courbe cumul.
 
 # External Dependencies
 

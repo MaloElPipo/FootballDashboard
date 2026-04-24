@@ -1914,18 +1914,27 @@ elif page == "📅 Calendrier CDM 2026":
     def fetch_wc_events():
         all_events = []
         page_num = 1
+        last_error = None
         while True:
-            r = requests.get(f"{BSD_BASE_URL}/events/", params={
-                "league": 27, "date_from": "2026-06-11", "date_to": "2026-07-19",
-                "per_page": 100, "page": page_num,
-            }, headers=BSD_HEADERS, timeout=15)
-            if r.status_code != 200:
+            try:
+                r = requests.get(f"{BSD_BASE_URL}/events/", params={
+                    "league": 27, "date_from": "2026-06-11", "date_to": "2026-07-19",
+                    "per_page": 100, "page": page_num,
+                }, headers=BSD_HEADERS, timeout=30)
+                if r.status_code != 200:
+                    last_error = f"HTTP {r.status_code}"
+                    break
+                data = r.json()
+                all_events.extend(data.get("results", []))
+                if not data.get("next"):
+                    break
+                page_num += 1
+            except Exception as e:
+                last_error = str(e)
                 break
-            data = r.json()
-            all_events.extend(data.get("results", []))
-            if not data.get("next"):
-                break
-            page_num += 1
+        if not all_events and last_error:
+            # Don't cache empty results due to errors → raise to skip cache
+            raise RuntimeError(f"BSD API échec: {last_error}")
         return all_events
 
     @st.cache_data(ttl=1800)
@@ -1939,32 +1948,33 @@ elif page == "📅 Calendrier CDM 2026":
                 "markets": "h2h",
                 "oddsFormat": "decimal",
                 "bookmakers": ",".join(BK_KEYS),
-            }, timeout=15)
+            }, timeout=30)
             if r.status_code != 200:
-                return {}
+                raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
             data = r.json()
-            odds_map = {}
-            for match in data:
-                home = match.get("home_team", "")
-                away = match.get("away_team", "")
-                key = f"{home} vs {away}"
-                bk_odds = {}
-                for bk in match.get("bookmakers", []):
-                    bk_key = bk.get("key", "")
-                    if bk_key not in SELECTED_BOOKMAKERS:
-                        continue
-                    market = bk.get("markets", [{}])[0]
-                    outcomes = {o["name"]: o["price"] for o in market.get("outcomes", [])}
-                    bk_odds[bk_key] = {
-                        "home": outcomes.get(home),
-                        "draw": outcomes.get("Draw"),
-                        "away": outcomes.get(away),
-                    }
-                if bk_odds:
-                    odds_map[key] = bk_odds
-            return odds_map
-        except Exception:
-            return {}
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"Odds API timeout/erreur réseau : {e}") from e
+
+        odds_map = {}
+        for match in data:
+            home = match.get("home_team", "")
+            away = match.get("away_team", "")
+            key = f"{home} vs {away}"
+            bk_odds = {}
+            for bk in match.get("bookmakers", []):
+                bk_key = bk.get("key", "")
+                if bk_key not in SELECTED_BOOKMAKERS:
+                    continue
+                market = bk.get("markets", [{}])[0]
+                outcomes = {o["name"]: o["price"] for o in market.get("outcomes", [])}
+                bk_odds[bk_key] = {
+                    "home": outcomes.get(home),
+                    "draw": outcomes.get("Draw"),
+                    "away": outcomes.get(away),
+                }
+            if bk_odds:
+                odds_map[key] = bk_odds
+        return odds_map
 
     @st.cache_data(ttl=3600)
     def fetch_odds_api_outright():
@@ -1976,26 +1986,27 @@ elif page == "📅 Calendrier CDM 2026":
                 "regions": "eu,uk",
                 "markets": "outrights",
                 "oddsFormat": "decimal",
-            }, timeout=15)
+            }, timeout=30)
             if r.status_code != 200:
-                return {}
+                raise RuntimeError(f"HTTP {r.status_code}: {r.text[:200]}")
             data = r.json()
-            outright = {}
-            for match in data:
-                for bk in match.get("bookmakers", []):
-                    bk_key = bk.get("key", "")
-                    if bk_key not in SELECTED_BOOKMAKERS:
-                        continue
-                    market = bk.get("markets", [{}])[0]
-                    for o in market.get("outcomes", []):
-                        name = o["name"]
-                        price = o["price"]
-                        if name not in outright:
-                            outright[name] = {}
-                        outright[name][bk_key] = price
-            return outright
-        except Exception:
-            return {}
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"Odds API timeout/erreur réseau : {e}") from e
+
+        outright = {}
+        for match in data:
+            for bk in match.get("bookmakers", []):
+                bk_key = bk.get("key", "")
+                if bk_key not in SELECTED_BOOKMAKERS:
+                    continue
+                market = bk.get("markets", [{}])[0]
+                for o in market.get("outcomes", []):
+                    name = o["name"]
+                    price = o["price"]
+                    if name not in outright:
+                        outright[name] = {}
+                    outright[name][bk_key] = price
+        return outright
 
     PLAYOFF_TEAM_MAP = {
         "UEFA Play-Off A": "Bosnia & Herzegovina",
@@ -2368,22 +2379,24 @@ elif page == "🔮 Prédictions":
 
     @st.cache_data(ttl=300)
     def _cached_pinnacle_data():
+        import os as _os
+        _key = _os.environ.get("ODDS_API_KEY", "")
+        if not _key:
+            return {}
         try:
-            import os as _os
-            _key = _os.environ.get("ODDS_API_KEY", "")
             _r = requests.get(
                 "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/",
                 params={
                     "apiKey": _key, "regions": "eu", "markets": "h2h,totals",
                     "bookmakers": "pinnacle", "oddsFormat": "decimal",
                 },
-                timeout=15,
+                timeout=30,
             )
             if _r.status_code != 200:
-                return {}
+                raise RuntimeError(f"Odds API HTTP {_r.status_code}: {_r.text[:200]}")
             pin_matches = _r.json()
-        except Exception:
-            return {}
+        except requests.exceptions.RequestException as e:
+            raise RuntimeError(f"Pinnacle/Odds API timeout : {e}") from e
 
         result = {}
         for pm in pin_matches:

@@ -4783,25 +4783,35 @@ elif page == "⚽ Effectifs Clubs":
             if players:
                 with st.expander("📊 Stats BSD API — Saison 2025/26", expanded=True):
                     from bsd_api import aggregate_bsd_season_stats
+                    from concurrent.futures import ThreadPoolExecutor, as_completed
 
                     @st.cache_data(ttl=3600, show_spinner=False)
                     def _fetch_club_live_stats(team_id_key: str, player_ids: tuple):
                         out = {}
-                        for pid in player_ids:
+                        def _one(pid):
                             try:
-                                out[pid] = aggregate_bsd_season_stats(pid)
+                                return pid, aggregate_bsd_season_stats(pid)
                             except Exception:
-                                out[pid] = None
+                                return pid, None
+                        with ThreadPoolExecutor(max_workers=8) as ex:
+                            futures = [ex.submit(_one, pid) for pid in player_ids]
+                            for fut in as_completed(futures):
+                                pid, stats = fut.result()
+                                out[pid] = stats
                         return out
 
                     player_ids = tuple(int(p["id"]) for p in players.values() if p.get("id"))
                     team_id_key = str(selected_team.get("id", selected_team_name))
 
-                    with st.spinner(
-                        f"Chargement des stats live pour {len(player_ids)} joueurs "
-                        f"(~{max(15, len(player_ids)*2)} sec à la première ouverture)…"
-                    ):
-                        live_stats = _fetch_club_live_stats(team_id_key, player_ids)
+                    progress_placeholder = st.empty()
+                    with progress_placeholder.container():
+                        st.info(
+                            f"⏳ Chargement des stats live pour **{len(player_ids)} joueurs**… "
+                            f"(~{max(5, len(player_ids)//4)} sec à la première ouverture, "
+                            f"puis instantané grâce au cache 1h)"
+                        )
+                    live_stats = _fetch_club_live_stats(team_id_key, player_ids)
+                    progress_placeholder.empty()
 
                     bsd_rows = []
                     for pname, pdata in players.items():

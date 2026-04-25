@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "_doc": "Overrides manuels pour les transferts/prêts non encore reflétés par BSD. Chaque override marque le joueur comme indisponible côté predict_today.py (filtré du forward log) et l'ajoute à la section 'Joueurs indisponibles' de l'UI pour les matchs de l'équipe d'origine.",
+  "overrides": [
+    {
+      "player_id": 515,
+      "player_name": "Donyell Malen",
+      "from_team_id": 3,
+      "from_team_name": "Aston Villa",
+      "from_league": "premier_league",
+      "reason": "loan",
+      "detail": "Prêté à AS Roma (janvier 2026)",
+      "until": "2026-06-30"
+    }
+  ]
+}

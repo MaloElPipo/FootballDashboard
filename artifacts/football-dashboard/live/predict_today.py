@@ -219,15 +219,16 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
 # Pool joueurs
 # ---------------------------------------------------------------------------
 def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
-                                cache_path: Path) -> int:
+                                cache_path: Path,
+                                refresh_squads: bool = False) -> int:
     """Pour chaque équipe de la ligue, récupère l'effectif actuel via BSD
     `/players/?team={id}` et assigne `team_id` (résout transferts hiver).
     Aussi : propage `position`, `specific_position`, `availability`, `injury_type`.
-    Cache 24h dans `{league}_squads.json`.
+    Cache 24h dans `{league}_squads.json` (bypass via `refresh_squads=True`).
     """
     cache: dict[int, list[dict]] = {}
     use_cache = False
-    if cache_path.exists():
+    if cache_path.exists() and not refresh_squads:
         age_hours = (time.time() - cache_path.stat().st_mtime) / 3600
         if age_hours < 24:
             try:
@@ -368,7 +369,7 @@ def _build_alpha_fn_from_prev_stats(prev_stats: dict, prev_matches: dict, curren
     return out
 
 
-def load_pool(slug: str) -> dict:
+def load_pool(slug: str, refresh_squads: bool = False) -> dict:
     pool_file = DATA_DIR / f"{slug}_pool.json"
     if not pool_file.exists():
         log.warning("Pool manquant pour %s — exécute build_player_pool.py %s", slug, slug)
@@ -435,10 +436,17 @@ def load_pool(slug: str) -> dict:
         if a: team_ids.add(a)
 
     cache_path = DATA_DIR / f"{slug}_squads.json"
-    n_assigned = assign_team_ids_via_squads(pool, sorted(team_ids), cache_path)
+    n_assigned = assign_team_ids_via_squads(pool, sorted(team_ids), cache_path,
+                                             refresh_squads=refresh_squads)
     n_with_team = sum(1 for p in pool.values() if p.get("team_id") is not None)
     log.info("Pool %s : %d joueurs (%d/%d ont team_id, %d assignations via squads)",
              slug, len(pool), n_with_team, len(pool), n_assigned)
+
+    # Overrides manuels (transferts/prêts non reflétés par BSD)
+    from live.transfer_overrides import apply_to_pool as _apply_overrides
+    n_overrides = _apply_overrides(pool, slug)
+    if n_overrides:
+        log.info("Pool %s : %d joueur(s) marqué(s) indisponible(s) via overrides", slug, n_overrides)
     return pool
 
 
@@ -688,6 +696,8 @@ def main():
                     help="Skip scraping Betclic (utile en debug)")
     ap.add_argument("--dry-run", action="store_true",
                     help="Affiche sans écrire dans forward_log.jsonl")
+    ap.add_argument("--refresh-squads", action="store_true",
+                    help="Force le refetch des squads BSD (bypass cache 24h)")
     args = ap.parse_args()
 
     if args.leagues == "all":
@@ -703,7 +713,7 @@ def main():
     date_to = (today + timedelta(days=args.days)).isoformat()
 
     # 1. Pools (1× par ligue)
-    pools = {slug: load_pool(slug) for slug in slugs}
+    pools = {slug: load_pool(slug, refresh_squads=args.refresh_squads) for slug in slugs}
     for slug, pool in pools.items():
         log.info("Pool %s : %d joueurs", slug, len(pool))
 
@@ -764,22 +774,71 @@ def main():
         log.info("Aucune ligne candidate.")
         return
 
-    # Section critique : upsert pré-kickoff sous lock.
+    # Section critique : upsert pré-kickoff + purge des orphelins, sous lock.
     # - Lignes déjà enrichies post-match (outcome_scored != None) → IMMUABLES
-    # - Lignes pré-kickoff existantes → REMPLACÉES par la nouvelle version
-    #   (permet refresh quand les compos officielles tombent tardivement)
-    # - Nouvelles clés → ajoutées
+    # - Lignes pré-kickoff existantes (même event_id régénéré) :
+    #     • si pid dans les nouvelles prédictions → REMPLACÉES
+    #     • si pid absent (joueur transféré/blessé entre 2 runs) → SUPPRIMÉES
+    # - Lignes d'events non régénérés cette fois → CONSERVÉES intactes
+    # - Nouvelles clés → AJOUTÉES
     with log_lock(FORWARD_LOG_LOCK, timeout=30.0):
         rows, index = load_existing_log()
-        n_protected = n_upserted = n_inserted = 0
-        local_seen: set[tuple[int, int]] = set()
 
+        # Pids "frais" par event_id pour cette run
+        fresh_by_event: dict[int, set[int]] = {}
+        local_seen: set[tuple[int, int]] = set()
+        deduped_candidates: list[dict] = []
         for ln in candidate_lines:
             key = (int(ln["event_id"]), int(ln["player_id"]))
             if key in local_seen:
                 continue  # doublon dans le batch
             local_seen.add(key)
+            fresh_by_event.setdefault(int(ln["event_id"]), set()).add(int(ln["player_id"]))
+            deduped_candidates.append(ln)
 
+        # Purge des orphelins pré-kickoff pour les events régénérés.
+        # Garde-fou : si la nouvelle cardinalité d'un event est suspectement basse
+        # (run partiel, fetch BSD instable), on N'opère PAS la purge pour cet event
+        # afin d'éviter de supprimer des prédictions légitimes du run précédent.
+        # Seuil : 10 joueurs minimum (un effectif réel a > 25 actifs).
+        MIN_FRESH_PLAYERS_TO_PURGE = 10
+        events_safe_to_purge = {
+            eid for eid, pids in fresh_by_event.items()
+            if len(pids) >= MIN_FRESH_PLAYERS_TO_PURGE
+        }
+        events_skipped_purge = set(fresh_by_event) - events_safe_to_purge
+        if events_skipped_purge:
+            log.warning(
+                "⚠ Purge orphelins SKIPPÉE pour %d event(s) avec < %d joueurs frais "
+                "(suspect run partiel) : %s",
+                len(events_skipped_purge), MIN_FRESH_PLAYERS_TO_PURGE,
+                sorted(events_skipped_purge),
+            )
+
+        n_purged = 0
+        kept_rows: list[dict] = []
+        for r in rows:
+            try:
+                eid = int(r.get("event_id"))
+                pid = int(r.get("player_id"))
+            except (TypeError, ValueError):
+                kept_rows.append(r)
+                continue
+            if eid in events_safe_to_purge \
+                    and pid not in fresh_by_event[eid] \
+                    and r.get("outcome_scored") is None:
+                n_purged += 1
+                continue  # orphelin pré-kickoff
+            kept_rows.append(r)
+        rows = kept_rows
+        # Réindexation après purge
+        index = {(int(r["event_id"]), int(r["player_id"])): i
+                 for i, r in enumerate(rows)
+                 if r.get("event_id") is not None and r.get("player_id") is not None}
+
+        n_protected = n_upserted = n_inserted = 0
+        for ln in deduped_candidates:
+            key = (int(ln["event_id"]), int(ln["player_id"]))
             if key in index:
                 existing = rows[index[key]]
                 if existing.get("outcome_scored") is not None:
@@ -792,7 +851,7 @@ def main():
                 rows.append(ln)
                 n_inserted += 1
 
-        if not (n_upserted or n_inserted):
+        if not (n_upserted or n_inserted or n_purged):
             log.info("Forward log inchangé (%d candidates protégées post-match).",
                      n_protected)
             return
@@ -803,8 +862,8 @@ def main():
             for r in rows:
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
         tmp_path.replace(FORWARD_LOG)
-        log.info("✅ Forward log : %d insertions, %d upserts, %d protégées (post-match).",
-                 n_inserted, n_upserted, n_protected)
+        log.info("✅ Forward log : %d insertions, %d upserts, %d purgés (orphelins), %d protégées (post-match).",
+                 n_inserted, n_upserted, n_purged, n_protected)
 
 
 if __name__ == "__main__":

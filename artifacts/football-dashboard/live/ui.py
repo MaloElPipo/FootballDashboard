@@ -338,10 +338,20 @@ def _bsd_event_detail_cached(event_id: int) -> dict:
     """
     sys.path.insert(0, str(DASH_ROOT))
     from live.bsd_helpers import get_event_detail
+    from live.transfer_overrides import inject_into_event_detail
     try:
         d = get_event_detail(event_id)
         if not d:
             return {"_error": "BSD a renvoyé une réponse vide pour cet event."}
+        # Enrichit `unavailable_players` avec nos overrides manuels (transferts/prêts)
+        try:
+            home_id = (d.get("home_team_obj") or d.get("home_team") or {})
+            home_id = home_id.get("id") if isinstance(home_id, dict) else None
+            away_id = (d.get("away_team_obj") or d.get("away_team") or {})
+            away_id = away_id.get("id") if isinstance(away_id, dict) else None
+            inject_into_event_detail(d, home_id, away_id)
+        except Exception:
+            pass
         return d
     except Exception as e:
         return {"_error": str(e)}
@@ -962,6 +972,31 @@ def render_predictions_buteurs_page():
             "et clique sur **Lancer prédictions maintenant**."
         )
         return
+
+    # --- Toolbar : refresh prédictions + indicateur fraîcheur ---
+    last_logged = df["logged_at"].max() if "logged_at" in df.columns else None
+    tb1, tb2, tb3 = st.columns([1.2, 1.4, 2.4])
+    with tb1:
+        if st.button("🔄 Rafraîchir prédictions", key="predbut_refresh", type="primary"):
+            with st.spinner("Pipeline en cours (1-3 min selon le nombre de matchs)..."):
+                ok, log_txt = _run_predict_today(["--days", "2", "--refresh-squads"])
+            if ok:
+                st.success("Prédictions régénérées (squads BSD + overrides actualisés).")
+            else:
+                st.error("Échec du pipeline — vois les logs.")
+            with st.expander("Logs"):
+                st.code(log_txt[-4000:])
+            load_forward_log_df.clear()
+            _bsd_event_detail_cached.clear()
+            st.rerun()
+    with tb2:
+        if last_logged is not None and pd.notna(last_logged):
+            age_h = (pd.Timestamp.now(tz="UTC") - last_logged).total_seconds() / 3600
+            stamp = last_logged.tz_convert("Europe/Paris").strftime("%a %d/%m %H:%M")
+            color = "🟢" if age_h < 6 else ("🟡" if age_h < 24 else "🔴")
+            st.caption(f"{color} Dernière mise à jour : **{stamp}** (Paris) — il y a {age_h:.1f}h")
+        else:
+            st.caption("⚪ Pas de timestamp disponible")
 
     # Liste matchs (groupby event_id) avec stats résumées
     grouped = (df.groupby(["event_id", "league_slug", "match"], dropna=False)

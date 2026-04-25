@@ -301,14 +301,27 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
 def shrunk_per90(player, metric, league_prior, k=SHRINKAGE_K):
     """Shrinkage bayésien: combine observation joueur avec prior position-aware.
 
+    Poids de l'observation = `minutes_total / 90` (nb d'équivalents-matchs
+    complets) plutôt que `matches_played` brut. Évite que des cameos
+    (ex. 3 entrées de 10 min avec un tir chacun) ne pèsent autant que 3
+    matchs complets — bug observé sur les jeunes type Trey Nyoni / Rio
+    Ngumoha qui sortaient avec g90 ≈ 0.5 (= prior FWD) au lieu de g90
+    ≈ 0.13 (= prior MID shrunken).
+
+    Fallback `matches_played` si `minutes_total` absent (rétro-compat).
     `league_prior` est utilisé tel quel — l'appelant doit le calculer via
     `position_prior(player)` pour bénéficier du prior par poste.
     """
-    matches = player.get("matches_played", 0)
+    minutes = float(player.get("minutes_total", 0) or 0)
+    if minutes > 0:
+        weight = minutes / 90.0
+    else:
+        # Rétro-compat : si pas de minutes_total, retombe sur matches
+        weight = float(player.get("matches_played", 0) or 0)
     obs = player.get(metric, 0.0)
-    if matches == 0:
+    if weight <= 0:
         return league_prior
-    return (matches * obs + k * league_prior) / (matches + k)
+    return (weight * obs + k * league_prior) / (weight + k)
 
 
 def career_confidence_ratio(player: dict) -> float:
@@ -396,14 +409,20 @@ def get_lineup_players(event):
 def _resolve_minutes(lp: dict, player: dict | None, lineup_confirmed: bool) -> float:
     """Détermine les minutes attendues d'un joueur selon que la compo est confirmée.
 
-    - Compo non confirmée → 90 pour tout le monde (pas de notion starter/sub)
     - Compo confirmée + titulaire → avg_mins_when_starter, floor 80 si <60
     - Compo confirmée + remplaçant → MINUTES_SUB_DEFAULT
+    - Compo NON confirmée :
+        - le caller fournit une présomption (top-11 par minutes_total) via
+          `is_starter` du fallback. On l'utilise pour assigner :
+            * is_starter=True → avg_mins_when_starter (ou STARTER_DEFAULT)
+            * is_starter=False → MINUTES_SUB_DEFAULT
+        - Avant : tout le monde recevait 90 → DILUTION massive (17 joueurs ×
+          90 = 1530 player-min vs réalité 11×85 + 6×15 = 1025). Conséquence :
+          la part xG des stars (Salah, Haaland) tombait à ~15% au lieu de ~30%.
     """
-    if not lineup_confirmed:
-        return MINUTES_DEFAULT_NO_LINEUP
-
-    if not lp.get("is_starter"):
+    is_starter = lp.get("is_starter")
+    if not is_starter:
+        # Compo confirmée OU fallback : un non-titulaire reste un sub
         return MINUTES_SUB_DEFAULT
 
     avg = (player or {}).get("avg_mins_when_starter") or MINUTES_STARTER_DEFAULT

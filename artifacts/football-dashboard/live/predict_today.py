@@ -264,9 +264,13 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
                     pid = p.get("player_id") or p.get("id") or (p.get("player") or {}).get("id")
                     _add(pid, team_id, side, False, p.get("position"))
 
-        # Si pas de lineup confirmée pour ce côté → fallback : on prend tout le squad
-        # actif. distribute_xg_to_players verra confirmed_by_side[side]=False et
-        # forcera 90 minutes pour tout le monde côté fallback.
+        # Si pas de lineup confirmée pour ce côté → fallback : on prend les 17 joueurs
+        # avec le plus de minutes saison via build_lineup_fallback (top-11 starters
+        # + 6 subs présumés). distribute_xg_to_players → _resolve_minutes honore
+        # is_starter même si confirmed_by_side[side]=False : starters reçoivent
+        # avg_mins_when_starter (~85), subs reçoivent MINUTES_SUB_DEFAULT=25.
+        # Évite la dilution xG (17×90=1530 player-min vs réalité 11×85+6×15=1025)
+        # qui faisait tomber Salah à 15% au lieu de 25-30%.
         if not any(lp["side"] == side for lp in out):
             for lp in build_lineup_fallback(team_id, side, pool):
                 _add(lp["player_id"], team_id, side, lp["is_starter"], lp.get("position"))

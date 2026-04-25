@@ -509,6 +509,22 @@ def load_pool(slug: str, refresh_squads: bool = False) -> dict:
     n_overrides = _apply_overrides(pool, slug)
     if n_overrides:
         log.info("Pool %s : %d joueur(s) marqué(s) indisponible(s) via overrides", slug, n_overrides)
+
+    # T002+T003 — Enrichissement avec stats carrière (Understat archive 4 saisons
+    # + BSD increment courant). Pas bloquant : si le cache n'existe pas le pool
+    # reste utilisable et le moteur retombe sur le shrinkage saison courante.
+    try:
+        from live.career_stats import load_career_cache, enrich_pool_with_career
+        career_cache = load_career_cache()
+        if career_cache:
+            matched, total = enrich_pool_with_career(pool, career_cache)
+            log.info("Pool %s : carrière enrichie pour %d/%d joueurs", slug, matched, total)
+        else:
+            log.warning("Pool %s : pas de career_stats_cache.json (lance "
+                        "`python -m live.career_stats build`)", slug)
+    except Exception as e:
+        log.warning("Pool %s : enrichissement carrière échoué (%s)", slug, e)
+
     return pool
 
 
@@ -694,6 +710,11 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "xa_player": pred["xa_calibrated"],
             "xg_per_90_used": pred.get("xg_per_90_used"),
             "xa_per_90_used": pred.get("xa_per_90_used"),
+            # T003 — traçabilité du blend carrière
+            "confidence_ratio": pred.get("confidence_ratio", 0.0),
+            "career_used": bool(pred.get("career_used", False)),
+            "career_minutes": pred.get("career_minutes", 0.0),
+            "career_goals": pred.get("career_goals", 0.0),
             "p_model_scorer": pred["p_scorer"],
             "p_model_assist": pred["p_assist"],
             "fair_odd_scorer": pred["odd_scorer"],
@@ -796,6 +817,32 @@ def main():
     if not all_events:
         log.info("Aucun match upcoming — rien à faire.")
         return
+
+    # 2.b Construit team_id→name à partir des events upcoming + ré-enrichit
+    # les pools career avec ce mapping (résout désambiguation des homonymes
+    # type Emerson/Marquinhos/João Pedro). Idempotent : ne fait que ré-écrire
+    # career_* sur les joueurs des équipes effectivement en jeu cette semaine.
+    team_id_to_name: dict[int, str] = {}
+    for ev, _slug in all_events:
+        for side in ("home_team_obj", "away_team_obj"):
+            obj = ev.get(side) or {}
+            tid = obj.get("id")
+            if tid is None:
+                continue
+            tname = ev.get("home_team" if side == "home_team_obj" else "away_team")
+            if tname:
+                team_id_to_name[int(tid)] = tname
+    if team_id_to_name:
+        try:
+            from live.career_stats import load_career_cache, enrich_pool_with_career
+            career_cache = load_career_cache()
+            if career_cache:
+                for slug, pool in pools.items():
+                    enrich_pool_with_career(pool, career_cache, team_id_to_name=team_id_to_name)
+                log.info("  Ré-enrichissement carrière avec %d team names (désambiguation)",
+                         len(team_id_to_name))
+        except Exception as e:
+            log.warning("Ré-enrichissement carrière avec team_hint échoué : %s", e)
 
     # 3. Scrape Betclic en parallèle (1 fois pour toutes les ligues)
     betclic_by_slug: dict[str, list[dict]] = {}

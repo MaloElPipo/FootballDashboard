@@ -20,6 +20,12 @@ MINUTES_STARTER_DEFAULT = 78.0     # backstop si avg_mins inconnu
 MINUTES_SUB_DEFAULT = 25.0         # remplaçant confirmé
 SHRINKAGE_K = 8.0                  # nb "matchs prior" pour shrinkage bayésien
 
+# === Carrière (T003) ========================================================
+# Confidence ratio: pondération du signal carrière (Understat archive 4 saisons)
+# vs saison courante shrunken. cr=1 quand career_minutes >= CAREER_FULL_TRUST_MINUTES.
+CAREER_FULL_TRUST_MINUTES = 15000.0  # ~4.5 saisons pleines de titulaire
+CAREER_MIN_USABLE_MINUTES = 1500.0   # < 0.5 saison → on ignore le signal carrière
+
 # === Calibration anti-Poisson (méthode "Buteurs Maison 4.1") ================
 # La formule Poisson p = 1 - exp(-x) sur-estime systématiquement la proba marquer
 # pour les joueurs à faible xG (= cotes brutes hautes). Calibration empirique :
@@ -305,6 +311,59 @@ def shrunk_per90(player, metric, league_prior, k=SHRINKAGE_K):
     return (matches * obs + k * league_prior) / (matches + k)
 
 
+def career_confidence_ratio(player: dict) -> float:
+    """Retourne cr = min(career_minutes / CAREER_FULL_TRUST_MINUTES, 1.0).
+
+    Renvoie 0.0 si player n'a pas (assez de) minutes carrière.
+    """
+    if not isinstance(player, dict):
+        return 0.0
+    cm = float(player.get("career_minutes", 0.0) or 0.0)
+    if cm < CAREER_MIN_USABLE_MINUTES:
+        return 0.0
+    return min(cm / CAREER_FULL_TRUST_MINUTES, 1.0)
+
+
+def career_g90(player: dict) -> float | None:
+    """Buts par 90 carrière (Understat archive + BSD increment courant).
+    Renvoie None si pas assez de minutes carrière (< CAREER_MIN_USABLE_MINUTES)."""
+    if not isinstance(player, dict):
+        return None
+    cm = float(player.get("career_minutes", 0.0) or 0.0)
+    if cm < CAREER_MIN_USABLE_MINUTES:
+        return None
+    cg = float(player.get("career_goals", 0.0) or 0.0)
+    return cg * 90.0 / cm
+
+
+def career_blended_xg_per_90(player: dict, prior_xg: float) -> tuple[float, float, bool]:
+    """Calcule le xG/90 utilisé pour le pricing buteur, en blendant :
+      - signal carrière (Understat 4 saisons + BSD courante incrémentée)
+      - signal saison courante shrunken vers prior position-aware (existant)
+
+    Formule (inspirée Excel "Buteurs Maison 4.1") :
+      cr = min(career_minutes / 15000, 1.0)
+      g90_career = career_goals × 90 / career_minutes
+      g90_curr_shrunk = (matches × xg_per_90 + K × prior) / (matches + K)
+      g90_used = cr × g90_career + (1 - cr) × g90_curr_shrunk
+
+    Si career_minutes < CAREER_MIN_USABLE_MINUTES → comportement = shrunk_per90 actuel
+    (cr=0). Le saut « xG carrière vs goals carrière » : on prend `goals` car les vrais
+    buteurs sur-performent leur xG (Watkins, Salah, Haaland tous over-perform).
+
+    Returns: (g90_used, confidence_ratio, career_used)
+    """
+    g90_curr_shrunk = shrunk_per90(player or {}, "xg_per_90", prior_xg)
+    cr = career_confidence_ratio(player or {})
+    if cr <= 0.0:
+        return g90_curr_shrunk, 0.0, False
+    g90_carr = career_g90(player or {})
+    if g90_carr is None:
+        return g90_curr_shrunk, 0.0, False
+    g90_used = cr * g90_carr + (1.0 - cr) * g90_curr_shrunk
+    return g90_used, cr, True
+
+
 def get_lineup_players(event):
     """
     Extrait depuis event['lineups'] la liste des joueurs avec leur statut.
@@ -411,9 +470,14 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                 xg_p90 = prior_xg
                 xa_p90 = prior_xa
                 is_gk = (pos_for_prior or "").upper() in ("GK", "G")
+                cr = 0.0
+                career_used = False
             else:
                 is_gk = player.get("is_gk", False)
-                xg_p90 = shrunk_per90(player, "xg_per_90", prior_xg)
+                # T003 — xG: blend carrière (Understat) ↔ saison courante shrunken.
+                # cr = min(career_minutes/15000, 1) ; quand 0 → comportement legacy.
+                xg_p90, cr, career_used = career_blended_xg_per_90(player, prior_xg)
+                # xA reste sur le shrinkage actuel (pas de signal carrière passeurs)
                 xa_p90 = shrunk_per90(player, "xa_per_90", prior_xa)
 
             mins_exp = _resolve_minutes(lp, player, side_confirmed)
@@ -431,6 +495,10 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                                  or (player or {}).get("position"),
                 "xg_per_90_used": xg_p90, "xa_per_90_used": xa_p90,
                 "xg_raw": raw_xg, "xa_raw": raw_xa,
+                "confidence_ratio": cr,
+                "career_used": career_used,
+                "career_minutes": (player or {}).get("career_minutes", 0.0),
+                "career_goals":   (player or {}).get("career_goals", 0.0),
             }
 
         # 2. Normalisation: somme xG joueurs = xG team

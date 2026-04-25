@@ -21,6 +21,9 @@ sys.path.insert(0, str(PARENT))
 
 from live.bsd_helpers import get_event_detail, get_event_player_stats  # noqa: E402
 from live.file_lock import log_lock, atomic_rewrite  # noqa: E402
+from live.career_stats import (  # noqa: E402
+    load_career_cache, save_cache, apply_event_increment,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger("enrich_results")
@@ -179,6 +182,43 @@ def main():
         )
         log.info("✅ %d lignes enrichies dans %s (atomic rewrite)",
                  enriched_count, FORWARD_LOG)
+
+    # 4. T005 — MAJ incrémentale carrière (sans re-fetcher : on a déjà les
+    # outcomes_by_event, mais ils ne contiennent pas tous les joueurs du match.
+    # On utilise donc get_event_player_stats à nouveau ; idempotent grâce à
+    # events_seen côté career_stats).
+    update_career_cache_for_finished_events(list(outcomes_by_event.keys()))
+
+
+def update_career_cache_for_finished_events(event_ids: list[int]) -> None:
+    """Pour chaque event terminé, ajoute les stats joueurs (minutes/goals/...)
+    au cache career via `apply_event_increment` (idempotent par event_id).
+    """
+    if not event_ids:
+        return
+    cache = load_career_cache()
+    if not cache:
+        log.warning("MAJ carrière : cache absent (lance `python -m live.career_stats build`)")
+        return
+
+    total_updated = 0
+    events_processed = 0
+    for eid in event_ids:
+        try:
+            stats = get_event_player_stats(eid)
+        except Exception as e:
+            log.warning("MAJ carrière event=%s : fetch stats fail (%s)", eid, e)
+            continue
+        if not stats:
+            continue
+        n = apply_event_increment(cache, eid, stats)
+        total_updated += n
+        events_processed += 1
+
+    if events_processed:
+        save_cache(cache)
+        log.info("✅ MAJ carrière : %d events traités, %d player-rows incrémentées",
+                 events_processed, total_updated)
 
 
 if __name__ == "__main__":

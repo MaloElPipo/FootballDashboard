@@ -34,6 +34,64 @@ from preview_player_odds._3_model_proxy import (  # noqa: E402  (import via prox
     aggregate_player_pool,
     distribute_xg_to_players,
 )
+
+# === Codes positions BSD niveau "fin" (à conserver tels quels pour affichage) ==
+# Source: distribution observée dans squads BSD + spec_position retournés par /players.
+# Inclut variantes US (CAM/CDM/LWB/RWB/CF/SS) au cas où BSD les remonte.
+_BSD_FINE_POSITION_CODES: frozenset[str] = frozenset({
+    "GK",
+    # Defenders
+    "CB", "RB", "LB", "RWB", "LWB",
+    # Midfielders
+    "CM", "DM", "AM", "RM", "LM", "CAM", "CDM",
+    # Forwards
+    "ST", "CF", "SS", "RW", "LW",
+})
+# Codes "grossiers" qu'on garde tels quels en fallback (lisibles : MID/DEF/FWD)
+_BSD_COARSE_POSITION_CODES: frozenset[str] = frozenset({"GK", "DEF", "MID", "FWD"})
+
+
+def resolve_detailed_position(player: dict | None,
+                                lineup_position: str | None = None) -> str | None:
+    """Cascade de résolution de la position affichée :
+       1) `lineup_position` (annoncé par BSD pour CE match) si code fin,
+       2) `positions_detailed[0]` du squad si non vide,
+       3) `specific_position` si code fin (ST, CM, CB, …),
+       4) `specific_position` grossier (MID/DEF/FWD/GK),
+       5) `position` générique (M/D/F/G) en dernier recours.
+    """
+    # 1) Lineup explicite (peut être un code fin remonté par BSD)
+    if lineup_position:
+        lp = str(lineup_position).strip().upper()
+        if lp in _BSD_FINE_POSITION_CODES:
+            return lp
+
+    if not isinstance(player, dict):
+        return (str(lineup_position).upper() if lineup_position else None)
+
+    # 2) positions_detailed (le plus précis quand renseigné)
+    pdet = player.get("positions_detailed") or []
+    if isinstance(pdet, list) and pdet:
+        first = str(pdet[0]).strip().upper()
+        if first:
+            return first
+
+    # 3-4) specific_position (peut être fin OU grossier)
+    spec = player.get("specific_position")
+    if spec:
+        s = str(spec).strip().upper()
+        if s in _BSD_FINE_POSITION_CODES or s in _BSD_COARSE_POSITION_CODES:
+            return s
+        if s:
+            return s  # any non-empty value, rare
+
+    # 5) position générique 1 lettre
+    pos = player.get("position")
+    if pos:
+        return str(pos).strip().upper()
+    return None
+
+
 from live.bsd_helpers import (  # noqa: E402
     TOP5_LEAGUES,
     get_upcoming_events,
@@ -256,6 +314,7 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
             squad_injury_return = p.get("injury_expected_return")
             squad_jersey = p.get("jersey_number")
 
+            squad_positions_detailed = p.get("positions_detailed") or []
             if pid in pool:
                 # Squad = équipe actuelle, prioritaire sur tout
                 if pool[pid].get("team_id") != team_id:
@@ -266,6 +325,8 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                     pool[pid]["position"] = squad_position
                 if squad_spec_position:
                     pool[pid]["specific_position"] = squad_spec_position
+                if squad_positions_detailed:
+                    pool[pid]["positions_detailed"] = squad_positions_detailed
                 pool[pid]["is_gk"] = pool[pid].get("is_gk") or squad_position == "G"
                 pool[pid]["availability"] = squad_availability
                 pool[pid]["injury_type"] = squad_injury_type
@@ -282,6 +343,7 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                     "is_gk": squad_position == "G",
                     "position": squad_position,
                     "specific_position": squad_spec_position,
+                    "positions_detailed": squad_positions_detailed,
                     "availability": squad_availability,
                     "injury_type": squad_injury_type,
                     "injury_expected_return": squad_injury_return,
@@ -622,8 +684,7 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "lineup_confirmed": lineup_confirmed,
             "home_lineup_confirmed": home_confirmed,
             "away_lineup_confirmed": away_confirmed,
-            "position": pred.get("position_used") or pool_p.get("specific_position")
-                        or pool_p.get("position"),
+            "position": resolve_detailed_position(pool_p, pred.get("position_used")),
             "availability": pool_p.get("availability") or "available",
             "minutes_expected": pred.get("minutes_expected"),
             "xg_team_home": xg_h,
@@ -665,8 +726,7 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "is_starter": None,
             "is_gk": ex_pool.get("is_gk", False),
             "lineup_confirmed": lineup_confirmed,
-            "position": ex.get("position") or ex_pool.get("specific_position")
-                        or ex_pool.get("position"),
+            "position": resolve_detailed_position(ex_pool, ex.get("position")),
             "availability": ex.get("reason") or ex_pool.get("availability") or "missing",
             "injury_type": ex.get("injury_type"),
             "minutes_expected": 0,

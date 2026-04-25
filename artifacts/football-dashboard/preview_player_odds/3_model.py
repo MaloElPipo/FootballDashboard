@@ -20,6 +20,33 @@ MINUTES_STARTER_DEFAULT = 78.0     # backstop si avg_mins inconnu
 MINUTES_SUB_DEFAULT = 25.0         # remplaçant confirmé
 SHRINKAGE_K = 8.0                  # nb "matchs prior" pour shrinkage bayésien
 
+# === Calibration anti-Poisson (méthode "Buteurs Maison 4.1") ================
+# La formule Poisson p = 1 - exp(-x) sur-estime systématiquement la proba marquer
+# pour les joueurs à faible xG (= cotes brutes hautes). Calibration empirique :
+#     cote_finale = cote_brute × (1 - min((cote_brute - 1)/100, 0.75))
+# Effets : cotes ~2.0 → ~1% ajusté ; cotes ~10 → −9% ; cotes >75 → −75% (cap).
+ANTI_POISSON_SHRINK_CAP = 0.75     # plafond du shrink (compresse les outsiders extrêmes)
+ANTI_POISSON_SHRINK_DIVISOR = 100.0
+
+
+def apply_anti_poisson_calibration(odd_brut: float | None) -> float | None:
+    """Compression anti-overestimation des cotes scorer/assist issues de Poisson.
+
+    Pour cote brute B, retourne B × (1 - min((B-1)/100, 0.75)).
+    Reproduit la formule de l'Excel "Buteurs Maison 4.1" (HomeTeam!I2)."""
+    if odd_brut is None:
+        return None
+    try:
+        b = float(odd_brut)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(b) or b <= 1.0:
+        return b
+    shrink = min((b - 1.0) / ANTI_POISSON_SHRINK_DIVISOR, ANTI_POISSON_SHRINK_CAP)
+    if shrink < 0:
+        shrink = 0.0
+    return b * (1.0 - shrink)
+
 # === PRIORS BAYÉSIENS PAR POSTE (xG/90 et xA/90) ============================
 # Lus dans l'ordre : specific_position (ST, CAM, RB...), puis position générique
 # (F/M/D/G), puis fallback ligue.
@@ -415,14 +442,25 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
         for pid in raw_xg_per_player:
             xg_cal = team_xg * (raw_xg_per_player[pid] / total_raw_xg)
             xa_cal = team_xa_target * (raw_xa_per_player[pid] / total_raw_xa)
-            p_scorer = 1.0 - math.exp(-xg_cal)
-            p_assist = 1.0 - math.exp(-xa_cal)
+            # Cote brute Poisson (anytime)
+            p_scorer_brut = 1.0 - math.exp(-xg_cal)
+            p_assist_brut = 1.0 - math.exp(-xa_cal)
+            odd_scorer_brut = (1.0 / p_scorer_brut) if p_scorer_brut > 0 else None
+            odd_assist_brut = (1.0 / p_assist_brut) if p_assist_brut > 0 else None
+            # Calibration anti-Poisson (réduit la sur-estimation des outsiders)
+            odd_scorer = apply_anti_poisson_calibration(odd_scorer_brut)
+            odd_assist = apply_anti_poisson_calibration(odd_assist_brut)
+            # p_model = 1 / cote_calibrée pour rester cohérent avec edge = p × cote_book − 1
+            p_scorer = (1.0 / odd_scorer) if (odd_scorer and odd_scorer > 0) else 0.0
+            p_assist = (1.0 / odd_assist) if (odd_assist and odd_assist > 0) else 0.0
             result[pid]["xg_calibrated"] = xg_cal
             result[pid]["xa_calibrated"] = xa_cal
             result[pid]["p_scorer"] = p_scorer
             result[pid]["p_assist"] = p_assist
-            result[pid]["odd_scorer"] = (1.0 / p_scorer) if p_scorer > 0 else None
-            result[pid]["odd_assist"] = (1.0 / p_assist) if p_assist > 0 else None
+            result[pid]["odd_scorer"] = odd_scorer
+            result[pid]["odd_assist"] = odd_assist
+            result[pid]["odd_scorer_brut"] = odd_scorer_brut
+            result[pid]["odd_assist_brut"] = odd_assist_brut
 
     return result
 

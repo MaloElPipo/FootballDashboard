@@ -14,6 +14,7 @@ get_lineup_players = _mod.get_lineup_players
 shrunk_per90 = _mod.shrunk_per90
 is_goalkeeper = _mod.is_goalkeeper
 parse_event_date = _mod.parse_event_date
+apply_anti_poisson_calibration = _mod.apply_anti_poisson_calibration
 
 # Constantes utiles
 LEAGUE_PRIOR_XG90_OUTFIELD = _mod.LEAGUE_PRIOR_XG90_OUTFIELD

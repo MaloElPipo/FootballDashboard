@@ -20,6 +20,25 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 FORWARD_LOG = DATA_DIR / "forward_log.jsonl"
 DASH_ROOT = ROOT.parent
+sys.path.insert(0, str(DASH_ROOT))
+
+from preview_player_odds._3_model_proxy import apply_anti_poisson_calibration  # noqa: E402
+
+
+def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
+    """Version vectorisée pour Streamlit (mêmes formule que le moteur)."""
+    arr = np.asarray(odds, dtype=float)
+    out = np.full_like(arr, np.nan)
+    mask = np.isfinite(arr) & (arr > 1.0)
+    if mask.any():
+        b = arr[mask]
+        shrink = np.minimum((b - 1.0) / 100.0, 0.75)
+        shrink = np.where(shrink < 0, 0.0, shrink)
+        out[mask] = b * (1.0 - shrink)
+    # Recopie tel quel les cotes <= 1.0 (rien à compresser)
+    keep = np.isfinite(arr) & (arr <= 1.0)
+    out[keep] = arr[keep]
+    return out
 
 LEAGUE_LABELS = {
     "premier_league": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League",
@@ -767,15 +786,25 @@ def _recalculate_shares(sub: pd.DataFrame, included_pids: set[int]) -> pd.DataFr
         xg_cal = team_xg_target[side] * (raw_xg / total_xg)
         xa_cal = team_xa_target[side] * (raw_xa / total_xa)
 
-        p_scorer = 1.0 - np.exp(-xg_cal)
-        p_assist = 1.0 - np.exp(-xa_cal)
+        # Cotes brutes Poisson, puis calibration anti-Poisson "Buteurs Maison 4.1"
+        p_scorer_brut = 1.0 - np.exp(-xg_cal)
+        p_assist_brut = 1.0 - np.exp(-xa_cal)
+        odd_scorer_brut = np.where(p_scorer_brut > 0, 1.0 / p_scorer_brut, np.nan)
+        odd_assist_brut = np.where(p_assist_brut > 0, 1.0 / p_assist_brut, np.nan)
+        odd_scorer = _anti_poisson_calibrate_array(odd_scorer_brut)
+        odd_assist = _anti_poisson_calibrate_array(odd_assist_brut)
+        # p_model recohérencé avec cote calibrée (edge = p × cote_book − 1)
+        p_scorer = np.where(np.isfinite(odd_scorer) & (odd_scorer > 0),
+                            1.0 / odd_scorer, 0.0)
+        p_assist = np.where(np.isfinite(odd_assist) & (odd_assist > 0),
+                            1.0 / odd_assist, 0.0)
 
         df.loc[mask, "xg_player"] = xg_cal.values
         df.loc[mask, "xa_player"] = xa_cal.values
-        df.loc[mask, "p_model_scorer"] = p_scorer.values
-        df.loc[mask, "p_model_assist"] = p_assist.values
-        df.loc[mask, "fair_odd_scorer"] = np.where(p_scorer > 0, 1.0 / p_scorer, np.nan)
-        df.loc[mask, "fair_odd_assist"] = np.where(p_assist > 0, 1.0 / p_assist, np.nan)
+        df.loc[mask, "p_model_scorer"] = p_scorer
+        df.loc[mask, "p_model_assist"] = p_assist
+        df.loc[mask, "fair_odd_scorer"] = odd_scorer
+        df.loc[mask, "fair_odd_assist"] = odd_assist
 
         # Edges
         for col_p, col_bc, col_edge in [("p_model_scorer", "betclic_odd_scorer", "edge_scorer"),

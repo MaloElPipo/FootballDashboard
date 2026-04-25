@@ -944,6 +944,9 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         mins_int = int(float(mins_val)) if (mins_val is not None and not (
             isinstance(mins_val, float) and pd.isna(mins_val))) else 0
 
+        # T010 — expected shots & SoT (descriptifs, communs aux 2 marchés)
+        xshots = r.get("expected_shots")
+        xsot = r.get("expected_shots_on_target")
         common_pre = {
             "Inclure": bool(state.get(pid, True)),
             "Joueur": joueur,
@@ -951,6 +954,8 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Pos": pos_str,
             "Min": mins_int,
             "Titu": titu_label,
+            "xT": (round(float(xshots), 2) if pd.notna(xshots) else None),
+            "xT cad.": (round(float(xsot), 2) if pd.notna(xsot) else None),
         }
         if market in ("Buteur", "Les deux"):
             # T009 — la "Cote juste" est calculée à 90' théorique (best case
@@ -1005,18 +1010,30 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
                      "buteur FR (Betclic & co valident le bet même si le "
                      "joueur entre en cours de match). Directement comparable "
                      "à la cote bookmaker."),
+            "xT": st.column_config.NumberColumn(
+                "xT", format="%.2f", width="small",
+                help="Tirs attendus dans CE match = shots/90 carrière "
+                     "× minutes attendues / 90. Stat descriptive (pas une "
+                     "cote) — un sub à 25 min aura un xT proportionnellement "
+                     "plus faible qu'un titulaire à 85 min même rate."),
+            "xT cad.": st.column_config.NumberColumn(
+                "xT cad.", format="%.2f", width="small",
+                help="Tirs cadrés attendus = shots_on_target/90 × minutes "
+                     "attendues / 90. Idéalement xT cad. ≈ 30-40% de xT "
+                     "pour un attaquant Top 5."),
             "Cote Betclic": st.column_config.NumberColumn(format="%.2f"),
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },
         column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
                       "Marché", "p %", "Cote juste",
-                      "Cote Betclic", "Edge %"],
+                      "Cote Betclic", "Edge %", "xT", "xT cad."],
         hide_index=True,
         use_container_width=True,
         height=600,
         key=f"editor_{event_id}",
         disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
-                  "p %", "Cote juste", "Cote Betclic", "Edge %"],
+                  "p %", "Cote juste", "Cote Betclic", "Edge %",
+                  "xT", "xT cad."],
     )
 
     # Détection des changements de checkbox → MAJ session_state + rerun.

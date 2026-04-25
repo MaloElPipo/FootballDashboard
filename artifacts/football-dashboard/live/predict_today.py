@@ -434,10 +434,12 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                     "xg_total": 0.0,
                     "xa_total": 0.0,
                     "shots_total": 0,
+                    "shots_on_target_total": 0,
                     "key_pass_total": 0,
                     "starts": 0,
                     "starter_minutes_sum": 0,
                     "xg_per_90": 0.0, "xa_per_90": 0.0, "shots_per_90": 0.0,
+                    "shots_on_target_per_90": 0.0,
                     "avg_mins_when_starter": 78.0,
                 }
                 assigned += 1
@@ -814,6 +816,12 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "xa_player": pred["xa_calibrated"],
             "xg_per_90_used": pred.get("xg_per_90_used"),
             "xa_per_90_used": pred.get("xa_per_90_used"),
+            # T010 — expected shots & SoT (descriptifs, basés sur minutes_expected
+            # et shots_per_90 / shots_on_target_per_90 des stats roulées BSD).
+            "expected_shots": pred.get("expected_shots"),
+            "expected_shots_on_target": pred.get("expected_shots_on_target"),
+            "shots_per_90_used": pred.get("shots_per_90_used"),
+            "shots_on_target_per_90_used": pred.get("shots_on_target_per_90_used"),
             # T003 — traçabilité du blend carrière
             "confidence_ratio": pred.get("confidence_ratio", 0.0),
             "career_used": bool(pred.get("career_used", False)),

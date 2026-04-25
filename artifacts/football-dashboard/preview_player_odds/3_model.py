@@ -193,6 +193,7 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
         "name": None, "team_id": None, "is_gk": False,
         "minutes_total": 0.0, "matches_played": 0, "starts": 0,
         "xg_total": 0.0, "xa_total": 0.0, "shots_total": 0.0, "key_pass_total": 0.0,
+        "shots_on_target_total": 0.0,
         "goals_total": 0.0, "assists_total": 0.0,
         "starter_minutes_sum": 0.0,
         "matches_played_curr": 0, "matches_played_prev": 0,
@@ -250,6 +251,7 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
                 a["xg_total"] += _safe_float(s.get("expected_goals")) * weight
                 a["xa_total"] += _safe_float(s.get("expected_assists")) * weight
                 a["shots_total"] += _safe_float(s.get("total_shots")) * weight
+                a["shots_on_target_total"] += _safe_float(s.get("shots_on_target")) * weight
                 a["key_pass_total"] += _safe_float(s.get("key_pass")) * weight
                 a["goals_total"] += _safe_float(s.get("goals")) * weight
                 a["assists_total"] += _safe_float(s.get("goal_assist")) * weight
@@ -281,6 +283,7 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
             a["xg_per_90"] = a["xg_total"] * factor
             a["xa_per_90"] = a["xa_total"] * factor
             a["shots_per_90"] = a["shots_total"] * factor
+            a["shots_on_target_per_90"] = a["shots_on_target_total"] * factor
             # T007 — passage moteur 100% buts (Excel "Buteurs Maison 4.1") :
             # on expose aussi goals_per_90 / assists_per_90 saison courante,
             # qui remplacent xg_per_90 dans le blend de career_blended_xg_per_90.
@@ -288,6 +291,7 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
             a["assists_per_90"] = a["assists_total"] * factor
         else:
             a["xg_per_90"] = a["xa_per_90"] = a["shots_per_90"] = 0.0
+            a["shots_on_target_per_90"] = 0.0
             a["goals_per_90"] = a["assists_per_90"] = 0.0
         a["avg_mins_when_starter"] = (
             a["starter_minutes_sum"] / a["starts"] if a["starts"] > 0 else MINUTES_STARTER_DEFAULT
@@ -546,6 +550,17 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             raw_xa_starter_per_player[pid] = xa_p90 * (mins_starter_shadow / 90.0)
             mins_exp_by_pid[pid] = mins_exp
             mins_starter_shadow_by_pid[pid] = mins_starter_shadow
+
+            # T010 — expected shots & expected shots on target (descriptif).
+            # On utilise minutes_expected (et non 90' théorique) car ce sont des
+            # stats descriptives "à quoi s'attendre dans CE match", pas des
+            # cotes de pari. Pour un sub à 25min, son xShots reflète bien sa
+            # contribution attendue au volume de tirs sur ses minutes prévues.
+            shots_p90 = (player or {}).get("shots_per_90") or 0.0
+            sot_p90 = (player or {}).get("shots_on_target_per_90") or 0.0
+            expected_shots = float(shots_p90) * mins_exp / 90.0
+            expected_shots_on_target = float(sot_p90) * mins_exp / 90.0
+
             # Note (T007) : `xg_per_90_used` ci-dessous porte sémantiquement un
             # **g90 buts** (pas un xG/90) depuis la bascule moteur 100% buts.
             # Nom conservé pour rétro-compat avec le forward_log et l'UI.
@@ -558,6 +573,10 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                                  or (player or {}).get("position"),
                 "xg_per_90_used": xg_p90, "xa_per_90_used": xa_p90,
                 "xg_raw": raw_xg, "xa_raw": raw_xa,
+                "shots_per_90_used": float(shots_p90),
+                "shots_on_target_per_90_used": float(sot_p90),
+                "expected_shots": expected_shots,
+                "expected_shots_on_target": expected_shots_on_target,
                 "confidence_ratio": cr,
                 "career_used": career_used,
                 "career_minutes": (player or {}).get("career_minutes", 0.0),

@@ -510,13 +510,30 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                 continue
             player = pool.get(pid)
 
-            # Prior position-aware. Si lineup BSD donne une position pour ce match
-            # (ex Maguire annoncé ST), elle prime — on construit un dict virtuel.
-            pos_for_prior = lp.get("position")
-            if pos_for_prior:
-                prior_player = {"specific_position": pos_for_prior, "position": pos_for_prior,
+            # Prior position-aware. Cascade :
+            #   1) lp.position si code FIN (ST/RW/AM/CB/...) — lineup BSD officielle.
+            #   2) player.manual_position (T012 — override Excel "Buteurs Maison")
+            #      prime sur lp.position quand celle-ci est grossière (MID/DEF/FWD).
+            #   3) lp.position grossière si pas d'override Excel.
+            #   4) sinon player brut (specific_position/position via position_prior).
+            COARSE = {"MID", "DEF", "FWD", "GK", "M", "D", "F", "G"}
+            lp_pos = lp.get("position")
+            lp_pos_norm = (lp_pos or "").upper().strip() if lp_pos else ""
+            manual_pos = (player or {}).get("manual_position")
+            if lp_pos_norm and lp_pos_norm not in COARSE:
+                pos_for_prior = lp_pos
+                prior_player = {"specific_position": lp_pos, "position": lp_pos,
+                                "is_gk": (player or {}).get("is_gk", False)}
+            elif manual_pos:
+                pos_for_prior = manual_pos
+                prior_player = {"specific_position": manual_pos, "position": manual_pos,
+                                "is_gk": (player or {}).get("is_gk", False)}
+            elif lp_pos:
+                pos_for_prior = lp_pos
+                prior_player = {"specific_position": lp_pos, "position": lp_pos,
                                 "is_gk": (player or {}).get("is_gk", False)}
             else:
+                pos_for_prior = None
                 prior_player = player or {}
             prior_xg, prior_xa = position_prior(prior_player)
 

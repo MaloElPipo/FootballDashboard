@@ -35,6 +35,75 @@ from preview_player_odds._3_model_proxy import (  # noqa: E402  (import via prox
     distribute_xg_to_players,
 )
 
+# === Manual positions (overrides Excel "Buteurs Maison") ===================
+# Mapping league_slug → code pays utilisé dans manual_positions.json (Top 5).
+LEAGUE_TO_COUNTRY: dict[str, str] = {
+    "premier_league": "ENG",
+    "la_liga":        "ESP",
+    "serie_a":        "ITA",
+    "bundesliga":     "GER",
+    "ligue_1":        "FRA",
+}
+
+_MANUAL_POSITIONS_PATH = DATA_DIR / "manual_positions.json"
+_MANUAL_POSITIONS_CACHE: dict | None = None
+
+
+def _load_manual_positions() -> dict:
+    """Charge `manual_positions.json` (cache module). Retourne struct vide
+    si le fichier est absent (graceful : la cascade BSD reste fonctionnelle).
+    """
+    global _MANUAL_POSITIONS_CACHE
+    if _MANUAL_POSITIONS_CACHE is not None:
+        return _MANUAL_POSITIONS_CACHE
+    if not _MANUAL_POSITIONS_PATH.exists():
+        _MANUAL_POSITIONS_CACHE = {"by_key": {}, "by_name": {}, "metadata": {}}
+        return _MANUAL_POSITIONS_CACHE
+    try:
+        _MANUAL_POSITIONS_CACHE = json.loads(_MANUAL_POSITIONS_PATH.read_text())
+    except Exception:
+        _MANUAL_POSITIONS_CACHE = {"by_key": {}, "by_name": {}, "metadata": {}}
+    return _MANUAL_POSITIONS_CACHE
+
+
+def _norm_for_match(s: str | None) -> str:
+    """Normalisation pour matching nom/équipe (lowercase + sans accents)."""
+    if not s:
+        return ""
+    nfkd = unicodedata.normalize("NFKD", str(s).strip())
+    s = "".join(c for c in nfkd if not unicodedata.combining(c)).lower()
+    for ch in (".", ",", "'", "-"):
+        s = s.replace(ch, " ")
+    return " ".join(s.split())
+
+
+def lookup_manual_position(player_name: str | None,
+                            team_name: str | None,
+                            league_slug: str | None) -> str | None:
+    """Retourne le poste BSD (ST, SS, RW, CB, …) trouvé dans l'Excel manuel,
+    ou None. Matching à 2 niveaux :
+      1) clé exacte `nom|équipe|pays` (priorité — preuve forte)
+      2) nom seul + même pays si UN seul candidat (récupère les transferts
+         intra-ligue où l'Excel n'a pas encore été remis à jour).
+    """
+    if not player_name:
+        return None
+    country = LEAGUE_TO_COUNTRY.get(league_slug or "")
+    if not country:
+        return None
+    mp = _load_manual_positions()
+    nm = _norm_for_match(player_name)
+    team = _norm_for_match(team_name)
+    key = f"{nm}|{team}|{country}"
+    if key in mp["by_key"]:
+        return mp["by_key"][key]
+    cands = mp["by_name"].get(nm) or []
+    same_country = [c for c in cands if c.get("country") == country]
+    if len(same_country) == 1:
+        return same_country[0].get("poste")
+    return None
+
+
 # === Codes positions BSD niveau "fin" (à conserver tels quels pour affichage) ==
 # Source: distribution observée dans squads BSD + spec_position retournés par /players.
 # Inclut variantes US (CAM/CDM/LWB/RWB/CF/SS) au cas où BSD les remonte.
@@ -54,12 +123,25 @@ _BSD_COARSE_POSITION_CODES: frozenset[str] = frozenset({"GK", "DEF", "MID", "FWD
 def resolve_detailed_position(player: dict | None,
                                 lineup_position: str | None = None) -> str | None:
     """Cascade de résolution de la position affichée :
+       0) `manual_position` (override depuis l'Excel "Buteurs Maison") si présent,
        1) `lineup_position` (annoncé par BSD pour CE match) si code fin,
        2) `positions_detailed[0]` du squad si non vide,
        3) `specific_position` si code fin (ST, CM, CB, …),
        4) `specific_position` grossier (MID/DEF/FWD/GK),
        5) `position` générique (M/D/F/G) en dernier recours.
+
+    Le step 0 est prioritaire car l'Excel propriétaire de l'utilisateur
+    (~2 500 joueurs Top 5) annote des positions fines (ex: AT/SS pour
+    Griezmann, AD/RW pour Salah) que BSD remonte en grossier (FWD/MID).
     """
+    # 0) Override manuel Excel (priorité absolue)
+    if isinstance(player, dict):
+        mpos = player.get("manual_position")
+        if mpos:
+            mp = str(mpos).strip().upper()
+            if mp:
+                return mp
+
     # 1) Lineup explicite (peut être un code fin remonté par BSD)
     if lineup_position:
         lp = str(lineup_position).strip().upper()
@@ -390,10 +472,12 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
 # ---------------------------------------------------------------------------
 def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                                 cache_path: Path,
-                                refresh_squads: bool = False) -> int:
+                                refresh_squads: bool = False,
+                                league_slug: str | None = None) -> int:
     """Pour chaque équipe de la ligue, récupère l'effectif actuel via BSD
     `/players/?team={id}` et assigne `team_id` (résout transferts hiver).
-    Aussi : propage `position`, `specific_position`, `availability`, `injury_type`.
+    Aussi : propage `position`, `specific_position`, `availability`, `injury_type`,
+    et `manual_position` (override Excel "Buteurs Maison" si trouvé pour la ligue).
     Cache 24h dans `{league}_squads.json` (bypass via `refresh_squads=True`).
     """
     cache: dict[int, list[dict]] = {}
@@ -413,6 +497,7 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
         cache_path.write_text(json.dumps({str(k): v for k, v in cache.items()}))
 
     assigned = 0
+    n_manual_pos = 0  # joueurs ayant reçu un override Excel
     for team_id, squad in cache.items():
         for p in squad:
             pid = p.get("id")
@@ -425,8 +510,21 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
             squad_injury_type = p.get("injury_type") or ""
             squad_injury_return = p.get("injury_expected_return")
             squad_jersey = p.get("jersey_number")
-
             squad_positions_detailed = p.get("positions_detailed") or []
+
+            # Manual position override (Excel) — calcul via nom + équipe + ligue
+            ct = p.get("current_team")
+            team_name_for_match = ct.get("name") if isinstance(ct, dict) else (ct or None)
+            manual_pos = lookup_manual_position(
+                p.get("name"), team_name_for_match, league_slug,
+            )
+            # Auto-fallback : si pas d'override Excel et joueur est gardien
+            # connu de BSD, force "GK" (l'Excel ne renseigne pas les gardiens).
+            if not manual_pos and squad_position == "G":
+                manual_pos = "GK"
+            if manual_pos:
+                n_manual_pos += 1
+
             if pid in pool:
                 # Squad = équipe actuelle, prioritaire sur tout
                 if pool[pid].get("team_id") != team_id:
@@ -439,6 +537,8 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                     pool[pid]["specific_position"] = squad_spec_position
                 if squad_positions_detailed:
                     pool[pid]["positions_detailed"] = squad_positions_detailed
+                if manual_pos:
+                    pool[pid]["manual_position"] = manual_pos
                 pool[pid]["is_gk"] = pool[pid].get("is_gk") or squad_position == "G"
                 pool[pid]["availability"] = squad_availability
                 pool[pid]["injury_type"] = squad_injury_type
@@ -456,6 +556,7 @@ def assign_team_ids_via_squads(pool: dict, league_team_ids: list[int],
                     "position": squad_position,
                     "specific_position": squad_spec_position,
                     "positions_detailed": squad_positions_detailed,
+                    "manual_position": manual_pos,
                     "availability": squad_availability,
                     "injury_type": squad_injury_type,
                     "injury_expected_return": squad_injury_return,
@@ -613,10 +714,13 @@ def load_pool(slug: str, refresh_squads: bool = False) -> dict:
 
     cache_path = DATA_DIR / f"{slug}_squads.json"
     n_assigned = assign_team_ids_via_squads(pool, sorted(team_ids), cache_path,
-                                             refresh_squads=refresh_squads)
+                                             refresh_squads=refresh_squads,
+                                             league_slug=slug)
     n_with_team = sum(1 for p in pool.values() if p.get("team_id") is not None)
-    log.info("Pool %s : %d joueurs (%d/%d ont team_id, %d assignations via squads)",
-             slug, len(pool), n_with_team, len(pool), n_assigned)
+    n_manual = sum(1 for p in pool.values() if p.get("manual_position"))
+    log.info("Pool %s : %d joueurs (%d/%d ont team_id, %d assignations via squads, "
+             "%d positions Excel)",
+             slug, len(pool), n_with_team, len(pool), n_assigned, n_manual)
 
     # T008 — start_rate par joueur (saison courante) : sert de tri pour
     # build_lineup_fallback (compo probable basée sur l'historique de

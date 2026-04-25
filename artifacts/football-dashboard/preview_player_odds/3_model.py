@@ -534,15 +534,28 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                 # xA reste sur le shrinkage actuel (pas de signal carrière passeurs)
                 xa_p90 = shrunk_per90(player, "xa_per_90", prior_xa)
 
-            mins_exp = _resolve_minutes(lp, player, side_confirmed)
-            raw_xg = xg_p90 * (mins_exp / 90.0)
-            raw_xa = xa_p90 * (mins_exp / 90.0)
+            # T011 — joueur blessé / suspendu réinjecté pour affichage UI :
+            # mins_exp = mins_starter_shadow (≈ 85) pour permettre à
+            # `_recalculate_shares` de produire des cotes valables si l'user
+            # le réactive manuellement (rumeur "rétabli"), MAIS raw_xg/xa = 0
+            # → exclu de la normalisation team xG (pas de dilution des autres).
+            is_unav = bool(lp.get("is_unavailable"))
 
-            # Minutes "comme si titulaire" (sert au shadow odds des subs présumés)
+            # Minutes "comme si titulaire" (sert au shadow odds des subs présumés
+            # ET au mins_expected des blessés réinjectés T011).
             mins_starter_shadow = ((player or {}).get("avg_mins_when_starter")
                                    or MINUTES_STARTER_DEFAULT)
             if mins_starter_shadow < MINUTES_FLOOR_THRESHOLD:
                 mins_starter_shadow = MINUTES_FLOOR_WHEN_STARTER
+
+            if is_unav:
+                mins_exp = mins_starter_shadow
+                raw_xg = 0.0
+                raw_xa = 0.0
+            else:
+                mins_exp = _resolve_minutes(lp, player, side_confirmed)
+                raw_xg = xg_p90 * (mins_exp / 90.0)
+                raw_xa = xa_p90 * (mins_exp / 90.0)
 
             raw_xg_per_player[pid] = raw_xg
             raw_xa_per_player[pid] = raw_xa
@@ -568,6 +581,7 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                 "team_side": side, "team_id": team_id,
                 "name": (player or {}).get("name", f"id={pid}"),
                 "is_starter": lp["is_starter"], "is_gk": is_gk,
+                "is_unavailable": is_unav,
                 "minutes_expected": mins_exp,
                 "position_used": pos_for_prior or (player or {}).get("specific_position")
                                  or (player or {}).get("position"),
@@ -639,7 +653,14 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             # se diluent légèrement (mais ne sont pas exposées dans le shadow).
             # Conversion 90' théorique appliquée également au shadow (avec
             # mins_starter_shadow qui vaut typiquement 80-87, donc facteur ~1.05-1.13).
-            if result[pid]["is_starter"]:
+            # T011 : pour les blessés/suspendus, on neutralise le shadow (sémantique
+            # "il est indispo, ça n'a pas de sens de le simuler titulaire" — l'user
+            # peut toujours le réactiver via la checkbox UI pour recalcul live).
+            if result[pid].get("is_unavailable"):
+                xg_cal_sh, xa_cal_sh = 0.0, 0.0
+                p_s_sh, p_a_sh = 0.0, 0.0
+                os_sh, oa_sh = None, None
+            elif result[pid]["is_starter"]:
                 xg_cal_sh, xa_cal_sh = xg_cal, xa_cal
                 p_s_sh, p_a_sh = p_scorer, p_assist
                 os_sh, oa_sh = odd_scorer, odd_assist

@@ -302,14 +302,19 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
     seen_pids: set[int] = set()
     confirmed_by_side: dict[str, bool] = {"home": False, "away": False}
 
-    def _add(pid, team_id, side, is_starter, position):
+    def _add(pid, team_id, side, is_starter, position, force_include=False):
+        """Ajoute un joueur à `out`. Si `force_include=True` (cas BSD lineup
+        confirmée → ex: Sorloth annoncé blessé mais finalement titulaire),
+        on bypasse le filtre `is_player_unavailable` car BSD est source de
+        vérité. Sinon, joueur indispo → skip + entry dans `excluded` (sera
+        réinjecté plus loin avec is_unavailable=True pour affichage UI)."""
         if pid is None:
             return
         pid = int(pid)
         if pid in seen_pids:
             return
-        # Filtrage blessés / suspendus
-        if is_player_unavailable(pool.get(pid)):
+        # Filtrage blessés / suspendus (sauf override BSD)
+        if not force_include and is_player_unavailable(pool.get(pid)):
             excluded.append({
                 "player_id": pid, "team_id": team_id, "side": side,
                 "is_starter": is_starter, "position": position,
@@ -319,7 +324,8 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
             return
         seen_pids.add(pid)
         out.append({"player_id": pid, "team_id": team_id, "side": side,
-                    "is_starter": is_starter, "position": position})
+                    "is_starter": is_starter, "position": position,
+                    "is_unavailable": False})
 
     for side, team_id in (("home", home_id), ("away", away_id)):
         side_block = lineups.get(side) if isinstance(lineups, dict) else None
@@ -329,14 +335,16 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
             confirmed_by_side[side] = True
             starters = side_block.get("starters") or side_block.get("starting") or []
             subs = side_block.get("substitutes") or side_block.get("subs") or []
+            # T011 : force_include=True → BSD a confirmé sa présence, on outrepasse
+            # le flag `availability=injured` qui peut traîner du squad cache.
             for p in starters:
                 if isinstance(p, dict):
                     pid = p.get("player_id") or p.get("id") or (p.get("player") or {}).get("id")
-                    _add(pid, team_id, side, True, p.get("position"))
+                    _add(pid, team_id, side, True, p.get("position"), force_include=True)
             for p in subs:
                 if isinstance(p, dict):
                     pid = p.get("player_id") or p.get("id") or (p.get("player") or {}).get("id")
-                    _add(pid, team_id, side, False, p.get("position"))
+                    _add(pid, team_id, side, False, p.get("position"), force_include=True)
 
         # Si pas de lineup confirmée pour ce côté → fallback : on prend les 17 joueurs
         # avec le plus de minutes saison via build_lineup_fallback (top-11 starters
@@ -348,6 +356,32 @@ def get_lineup_for_event(ev_detail: dict, home_id: int, away_id: int, pool: dict
         if not any(lp["side"] == side for lp in out):
             for lp in build_lineup_fallback(team_id, side, pool):
                 _add(lp["player_id"], team_id, side, lp["is_starter"], lp.get("position"))
+
+    # T011 : ajout des joueurs blessés / suspendus du pool qui n'ont pas été
+    # inclus via BSD lineup ou fallback. Ils apparaissent dans la table de
+    # prédiction avec is_unavailable=True → checkbox UI décochée par défaut.
+    # L'utilisateur peut les réactiver manuellement (ex: rumeur "rétabli last
+    # minute") → recalcul live des shares xG via `_recalculate_shares`.
+    for pid, p in pool.items():
+        try:
+            pid_int = int(pid)
+        except (TypeError, ValueError):
+            continue
+        if pid_int in seen_pids:
+            continue
+        if not is_player_unavailable(p):
+            continue
+        tid = p.get("team_id")
+        if tid == home_id:
+            side_u = "home"
+        elif tid == away_id:
+            side_u = "away"
+        else:
+            continue
+        seen_pids.add(pid_int)
+        out.append({"player_id": pid_int, "team_id": tid, "side": side_u,
+                    "is_starter": False, "position": p.get("position"),
+                    "is_unavailable": True})
     return out, confirmed_by_side, excluded
 
 
@@ -808,6 +842,10 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "lineup_confidence_away": lineup_conf.get("away"),
             "position": resolve_detailed_position(pool_p, pred.get("position_used")),
             "availability": pool_p.get("availability") or "available",
+            # T011 — flag joueur indispo réinjecté pour affichage UI (décoché
+            # par défaut, mais cliquable pour réactivation manuelle).
+            "is_unavailable": bool(pred.get("is_unavailable", False)),
+            "injury_type": pool_p.get("injury_type") or None,
             "minutes_expected": pred.get("minutes_expected"),
             "xg_team_home": xg_h,
             "xg_team_away": xg_a,
@@ -855,42 +893,11 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "enriched_at": None,
         })
 
-    # Lignes "exclus" pour traçabilité côté UI (pas de prédictions, pas de pari)
-    for ex in excluded:
-        ex_pool = pool.get(ex["player_id"], {})
-        lines.append({
-            "logged_at": logged_at,
-            "league_slug": slug,
-            "league_name": TOP5_LEAGUES[slug]["name"],
-            "event_id": ev_id,
-            "match": f"{ev.get('home_team')} - {ev.get('away_team')}",
-            "kickoff": ev.get("event_date"),
-            "player_id": ex["player_id"],
-            "player_name": ex_pool.get("name", f"id={ex['player_id']}"),
-            "team_id": ex["team_id"],
-            "team_side": ex["side"],
-            "is_starter": None,
-            "is_gk": ex_pool.get("is_gk", False),
-            "lineup_confirmed": lineup_confirmed,
-            "position": resolve_detailed_position(ex_pool, ex.get("position")),
-            "availability": ex.get("reason") or ex_pool.get("availability") or "missing",
-            "injury_type": ex.get("injury_type"),
-            "minutes_expected": 0,
-            "xg_team_home": xg_h,
-            "xg_team_away": xg_a,
-            "lambdas_method": method,
-            "xg_player": None, "xa_player": None,
-            "xg_per_90_used": None, "xa_per_90_used": None,
-            "p_model_scorer": None, "p_model_assist": None,
-            "fair_odd_scorer": None, "fair_odd_assist": None,
-            "model_version": "t009_90min_theoretical",
-            "pricing_mode": "90min_theoretical",
-            "betclic_odd_scorer": None, "betclic_odd_assist": None,
-            "edge_scorer": None, "edge_assist": None,
-            "outcome_scored": None, "outcome_assisted": None,
-            "outcome_minutes_played": None, "enriched_at": None,
-            "excluded": True,
-        })
+    # T011 : ancien path "excluded" supprimé (était dead code après T011 — les
+    # blessés sont maintenant réinjectés directement dans `out` avec
+    # is_unavailable=True via resolve_match_lineup, et passent par le moteur
+    # `distribute_xg_to_players` pour produire une ligne forward log normale
+    # avec xg_per_90_used préservé → permet la réactivation manuelle UI).
     return lines
 
 

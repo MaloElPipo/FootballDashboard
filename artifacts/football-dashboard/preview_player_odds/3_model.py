@@ -281,8 +281,14 @@ def aggregate_player_pool(player_stats_by_event, matches_by_id, until_date=None,
             a["xg_per_90"] = a["xg_total"] * factor
             a["xa_per_90"] = a["xa_total"] * factor
             a["shots_per_90"] = a["shots_total"] * factor
+            # T007 — passage moteur 100% buts (Excel "Buteurs Maison 4.1") :
+            # on expose aussi goals_per_90 / assists_per_90 saison courante,
+            # qui remplacent xg_per_90 dans le blend de career_blended_xg_per_90.
+            a["goals_per_90"] = a["goals_total"] * factor
+            a["assists_per_90"] = a["assists_total"] * factor
         else:
             a["xg_per_90"] = a["xa_per_90"] = a["shots_per_90"] = 0.0
+            a["goals_per_90"] = a["assists_per_90"] = 0.0
         a["avg_mins_when_starter"] = (
             a["starter_minutes_sum"] / a["starts"] if a["starts"] > 0 else MINUTES_STARTER_DEFAULT
         )
@@ -350,24 +356,38 @@ def career_g90(player: dict) -> float | None:
 
 
 def career_blended_xg_per_90(player: dict, prior_xg: float) -> tuple[float, float, bool]:
-    """Calcule le xG/90 utilisé pour le pricing buteur, en blendant :
-      - signal carrière (Understat 4 saisons + BSD courante incrémentée)
-      - signal saison courante shrunken vers prior position-aware (existant)
+    """Calcule le g90 (buts par 90) utilisé pour le pricing buteur.
 
-    Formule (inspirée Excel "Buteurs Maison 4.1") :
+    T007 — Moteur 100% buts (Excel "Buteurs Maison 4.1") : on n'utilise plus
+    aucun signal xG ni en carrière ni en saison courante. Tout est buts marqués.
+
+    Formule :
       cr = min(career_minutes / 15000, 1.0)
-      g90_career = career_goals × 90 / career_minutes
-      g90_curr_shrunk = (matches × xg_per_90 + K × prior) / (matches + K)
+      g90_career   = career_goals × 90 / career_minutes
+      g90_curr_shrunk = (poids_min × goals_per_90 + K × prior_pos) / (poids_min + K)
+        où poids_min = minutes_total / 90 (équivalents-matchs complets)
       g90_used = cr × g90_career + (1 - cr) × g90_curr_shrunk
 
-    Si career_minutes < CAREER_MIN_USABLE_MINUTES → comportement = shrunk_per90 actuel
-    (cr=0). Le saut « xG carrière vs goals carrière » : on prend `goals` car les vrais
-    buteurs sur-performent leur xG (Watkins, Salah, Haaland tous over-perform).
+    Si career_minutes < CAREER_MIN_USABLE_MINUTES → cr=0, fallback sur le seul
+    signal saison courante (déjà 100% buts).
+
+    Le `prior_xg` reçu en argument reste un prior position-aware calibré sur
+    population xG/90 — ok comme prior bayésien car en moyenne population
+    goals_per_90 ≈ xg_per_90 (xG est non-biaisé). Les vrais buteurs qui
+    sur-performent (Salah, Watkins) sont captés via `g90_career` (buts réels).
 
     Returns: (g90_used, confidence_ratio, career_used)
     """
-    g90_curr_shrunk = shrunk_per90(player or {}, "xg_per_90", prior_xg)
-    cr = career_confidence_ratio(player or {})
+    p = player or {}
+    # Calcule goals_per_90 à la volée si absent (rétro-compat avec pools
+    # existants qui n'ont pas le champ). Goals_total et minutes_total sont
+    # toujours présents.
+    if "goals_per_90" not in p:
+        mins = float(p.get("minutes_total", 0) or 0)
+        goals = float(p.get("goals_total", 0) or 0)
+        p = {**p, "goals_per_90": (goals * 90.0 / mins) if mins > 0 else 0.0}
+    g90_curr_shrunk = shrunk_per90(p, "goals_per_90", prior_xg)
+    cr = career_confidence_ratio(p)
     if cr <= 0.0:
         return g90_curr_shrunk, 0.0, False
     g90_carr = career_g90(player or {})
@@ -505,6 +525,9 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
 
             raw_xg_per_player[pid] = raw_xg
             raw_xa_per_player[pid] = raw_xa
+            # Note (T007) : `xg_per_90_used` ci-dessous porte sémantiquement un
+            # **g90 buts** (pas un xG/90) depuis la bascule moteur 100% buts.
+            # Nom conservé pour rétro-compat avec le forward_log et l'UI.
             result[pid] = {
                 "team_side": side, "team_id": team_id,
                 "name": (player or {}).get("name", f"id={pid}"),

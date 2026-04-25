@@ -1125,9 +1125,37 @@ def render_predictions_buteurs_page():
                .reset_index()
                .sort_values("kickoff"))
 
+    # Filtre matchs futurs uniquement : une fois le coup d'envoi passé,
+    # les cotes Betclic ne sont plus actualisées et les prédictions perdent
+    # tout intérêt opérationnel. On masque donc les matchs déjà commencés.
+    now_utc = pd.Timestamp.now(tz="UTC")
+    n_total = len(grouped)
+    grouped = grouped[grouped["kickoff"].notna() & (grouped["kickoff"] > now_utc)].copy()
+    n_hidden = n_total - len(grouped)
+
     grouped["Ligue"] = grouped["league_slug"].map(lambda s: LEAGUE_LABELS.get(s, s))
     grouped["Kickoff (Paris)"] = grouped["kickoff"].dt.tz_convert("Europe/Paris").dt.strftime(
         "%a %d/%m %H:%M")
+
+    if grouped.empty:
+        if n_hidden > 0:
+            st.info(
+                f"⏱️ Aucun match à venir — {n_hidden} match(s) déjà commencé(s) "
+                "ont été masqué(s) (cotes Betclic figées, plus d'intérêt). "
+                "Reviens un peu avant le prochain week-end ou clique sur "
+                "**Rafraîchir prédictions**."
+            )
+        else:
+            st.info(
+                "Aucun match à prédire dans les jours à venir. "
+                "Clique sur **Rafraîchir prédictions** pour relancer le pipeline."
+            )
+        return
+    if n_hidden > 0:
+        st.caption(
+            f"⏱️ {n_hidden} match(s) déjà commencé(s) masqué(s) "
+            "(cotes Betclic figées une fois le coup d'envoi passé)."
+        )
 
     # Sélection via query param OR session_state pour permettre URL partageable
     qp = st.query_params

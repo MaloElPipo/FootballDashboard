@@ -737,10 +737,16 @@ def _safe_avail(value) -> str:
 
 
 def _initial_inclusion_state(sub: pd.DataFrame) -> dict[int, bool]:
-    """Par défaut : on inclut tous les joueurs disponibles, on exclut les
-    blessés/suspendus. Les joueurs explicitement marqués `excluded` (BSD lineup
-    publiée + joueur indisponible) sont également exclus."""
+    """Par défaut, on coche le **onze probable** :
+      - Si la compo BSD est confirmée pour le side → titulaires officiels cochés,
+        subs décochés (`is_starter` du log).
+      - Sinon, fallback heuristique sur `is_presumed_starter` (top-11 par
+        start_rate, T008). Pour rétro-compatibilité avec les anciennes lignes
+        de log (pas de champ `is_presumed_starter`), on coche tous les
+        disponibles → comportement T007 d'avant.
+    Joueurs blessés/suspendus → toujours décochés."""
     state: dict[int, bool] = {}
+    has_presumed = "is_presumed_starter" in sub.columns
     for _, r in sub.iterrows():
         pid = int(r["player_id"])
         avail = _safe_avail(r.get("availability"))
@@ -748,7 +754,25 @@ def _initial_inclusion_state(sub: pd.DataFrame) -> dict[int, bool]:
         is_excluded_log = bool(excluded_val) and not (
             isinstance(excluded_val, float) and pd.isna(excluded_val)
         )
-        state[pid] = (avail == "available") and not is_excluded_log
+        if avail != "available" or is_excluded_log:
+            state[pid] = False
+            continue
+        # Compo confirmée pour ce side ? → on suit `is_starter` officiel
+        side = r.get("team_side")
+        side_conf = r.get(f"{side}_lineup_confirmed") if side in ("home", "away") else None
+        if bool(side_conf):
+            v = r.get("is_starter")
+            state[pid] = bool(v) and not (isinstance(v, float) and pd.isna(v))
+            continue
+        # Compo non confirmée : on prend la compo probable (top-11 start_rate)
+        if has_presumed:
+            v = r.get("is_presumed_starter")
+            if v is None or (isinstance(v, float) and pd.isna(v)):
+                state[pid] = True  # joueur sans info → garder coché par défaut
+            else:
+                state[pid] = bool(v)
+        else:
+            state[pid] = True  # rétro-compat : pre-T008
     return state
 
 
@@ -858,6 +882,28 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
     recalc = _recalculate_shares(sub, included_pids)
     lineup_confirmed = bool(sub["lineup_confirmed"].dropna().iloc[0]) \
         if sub["lineup_confirmed"].notna().any() else False
+    home_conf = bool(sub["home_lineup_confirmed"].dropna().iloc[0]) \
+        if "home_lineup_confirmed" in sub.columns and sub["home_lineup_confirmed"].notna().any() else False
+    away_conf = bool(sub["away_lineup_confirmed"].dropna().iloc[0]) \
+        if "away_lineup_confirmed" in sub.columns and sub["away_lineup_confirmed"].notna().any() else False
+
+    # T008 — badge confiance compo probable. Affiché dès qu'un côté n'est pas
+    # confirmé par BSD (sinon l'info est inutile : on a la vraie compo).
+    def _conf_pct(col: str) -> str | None:
+        if col not in sub.columns or sub[col].dropna().empty:
+            return None
+        return f"{float(sub[col].dropna().iloc[0]) * 100:.0f}%"
+    home_cp = _conf_pct("lineup_confidence_home") if not home_conf else None
+    away_cp = _conf_pct("lineup_confidence_away") if not away_conf else None
+    badges = []
+    if home_cp is not None:
+        badges.append(f"**{home_name}** : compo probable (confiance {home_cp})")
+    if away_cp is not None:
+        badges.append(f"**{away_name}** : compo probable (confiance {away_cp})")
+    if badges:
+        st.caption(" · ".join(badges) +
+                   "  \n*100% = onze type qui ne change jamais. Les 11 cochés par "
+                   "défaut sont les plus titularisés sur la saison.*")
 
     # Construction des lignes éditables
     rows = []
@@ -865,13 +911,19 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         pid = int(r["player_id"])
         avail = _safe_avail(r.get("availability"))
         emoji = _AVAIL_EMOJI.get(avail, "")
-        # Nom (préfixé d'un ★ si titulaire et lineup confirmée — meilleur visuel
-        # qu'un gras Markdown que st.data_editor n'interprète pas)
+        # Nom : ★ si titulaire confirmé OU titulaire présumé (compo probable)
         nm_raw = r.get("player_name", "?")
         nm = "?" if (isinstance(nm_raw, float) and pd.isna(nm_raw)) else str(nm_raw)
-        is_starter_val = r.get("is_starter")
-        is_starter = (lineup_confirmed and bool(is_starter_val)
-                      and not (isinstance(is_starter_val, float) and pd.isna(is_starter_val)))
+        side = r.get("team_side")
+        side_conf = (home_conf if side == "home" else away_conf) if side in ("home", "away") else False
+        if side_conf:
+            v = r.get("is_starter")
+            is_starter = bool(v) and not (isinstance(v, float) and pd.isna(v))
+            titu_label = "★" if is_starter else "Sub"
+        else:
+            v = r.get("is_presumed_starter") if "is_presumed_starter" in recalc.columns else None
+            is_starter = bool(v) and not (isinstance(v, float) and pd.isna(v))
+            titu_label = "★?" if is_starter else "Sub?"
         if is_starter:
             nm = f"★ {nm}"
         joueur = (f"{emoji} {nm}" if emoji else nm).strip()
@@ -889,27 +941,38 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Équipe": home_name if r.get("team_side") == "home" else away_name,
             "Pos": pos_str,
             "Min": mins_int,
-            "Titu": "★" if is_starter else ("Sub" if lineup_confirmed else "—"),
+            "Titu": titu_label,
         }
         if market in ("Buteur", "Les deux"):
+            # T008 — Cote si tit. : pour les titulaires = même valeur que Cote
+            # juste ; pour les subs présumés = valeur shadow (snapshot du log,
+            # ne réagit PAS aux toggles user — c'est par design : référence fixe).
+            shadow_scorer = r.get("fair_odd_scorer_if_starter")
+            cote_si_tit = (round(float(shadow_scorer), 2)
+                           if pd.notna(shadow_scorer) and float(shadow_scorer) > 0 else None)
             rows.append({
                 "_pid": pid, **common_pre, "Marché": "⚽ Buteur",
                 "p %": (round(float(r["p_model_scorer"]) * 100, 1)
                         if pd.notna(r.get("p_model_scorer")) else None),
                 "Cote juste": (round(float(r["fair_odd_scorer"]), 2)
                                if pd.notna(r.get("fair_odd_scorer")) else None),
+                "Cote si tit.": cote_si_tit,
                 "Cote Betclic": (round(float(r["betclic_odd_scorer"]), 2)
                                  if pd.notna(r.get("betclic_odd_scorer")) else None),
                 "Edge %": (round(float(r["edge_scorer"]) * 100, 2)
                            if pd.notna(r.get("edge_scorer")) else None),
             })
         if market in ("Passeur", "Les deux"):
+            shadow_assist = r.get("fair_odd_assist_if_starter")
+            cote_si_tit_a = (round(float(shadow_assist), 2)
+                             if pd.notna(shadow_assist) and float(shadow_assist) > 0 else None)
             rows.append({
                 "_pid": pid, **common_pre, "Marché": "🅰 Passeur",
                 "p %": (round(float(r["p_model_assist"]) * 100, 1)
                         if pd.notna(r.get("p_model_assist")) else None),
                 "Cote juste": (round(float(r["fair_odd_assist"]), 2)
                                if pd.notna(r.get("fair_odd_assist")) else None),
+                "Cote si tit.": cote_si_tit_a,
                 "Cote Betclic": (round(float(r["betclic_odd_assist"]), 2)
                                  if pd.notna(r.get("betclic_odd_assist")) else None),
                 "Edge %": (round(float(r["edge_assist"]) * 100, 2)
@@ -935,17 +998,23 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Titu": st.column_config.TextColumn(width="small"),
             "p %": st.column_config.NumberColumn("p %", format="%.1f"),
             "Cote juste": st.column_config.NumberColumn(format="%.2f"),
+            "Cote si tit.": st.column_config.NumberColumn(
+                "Cote si tit.", format="%.2f",
+                help="Cote simulée si ce joueur était finalement titulaire "
+                     "(85min). Pour les titulaires, identique à Cote juste. "
+                     "Snapshot fixe : ne réagit PAS aux toggles user."),
             "Cote Betclic": st.column_config.NumberColumn(format="%.2f"),
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },
         column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
-                      "Marché", "p %", "Cote juste", "Cote Betclic", "Edge %"],
+                      "Marché", "p %", "Cote juste", "Cote si tit.",
+                      "Cote Betclic", "Edge %"],
         hide_index=True,
         use_container_width=True,
         height=600,
         key=f"editor_{event_id}",
         disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
-                  "p %", "Cote juste", "Cote Betclic", "Edge %"],
+                  "p %", "Cote juste", "Cote si tit.", "Cote Betclic", "Edge %"],
     )
 
     # Détection des changements de checkbox → MAJ session_state + rerun.

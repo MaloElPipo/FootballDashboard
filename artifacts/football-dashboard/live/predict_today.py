@@ -191,21 +191,95 @@ def is_player_unavailable(pool_entry: dict | None) -> bool:
     return av not in ("available", "")
 
 
+def compute_team_match_counts(events: dict) -> dict[int, int]:
+    """Pour chaque team_id, compte les matchs joués (= avec stats) dans la saison.
+    Sert de dénominateur pour `start_rate = starts / team_matches`."""
+    counts: dict[int, int] = {}
+    for ev in events.values():
+        for k in ("home_team_obj", "away_team_obj"):
+            tid = (ev.get(k) or {}).get("id") if isinstance(ev.get(k), dict) else None
+            if tid is not None:
+                counts[int(tid)] = counts.get(int(tid), 0) + 1
+    return counts
+
+
+def compute_start_rates(pool: dict, team_match_counts: dict[int, int]) -> None:
+    """Mute le pool : ajoute pool[pid]['start_rate'] = starts / team_matches.
+    Mesure de "régularité titulaire" sur la saison courante. Plafonné à 1.0 pour
+    se prémunir contre des arrondis du compteur de starts (T002 weights)."""
+    for p in pool.values():
+        tid = p.get("team_id")
+        n = team_match_counts.get(int(tid), 0) if tid is not None else 0
+        starts = p.get("starts", 0) or 0
+        p["start_rate"] = min(starts / n, 1.0) if n > 0 else 0.0
+
+
+def compute_lineup_confidence(lineup_players: list[dict], pool: dict) -> dict[str, float]:
+    """Pour chaque side, retourne la moyenne des `start_rate` des titulaires
+    présumés (top-11). 1.0 = onze type qui ne change jamais ; 0.5 = forte rotation."""
+    out: dict[str, float] = {"home": 0.0, "away": 0.0}
+    for side in ("home", "away"):
+        starters = [lp for lp in lineup_players
+                    if lp["side"] == side and lp.get("is_starter")]
+        if not starters:
+            continue
+        rates = [(pool.get(lp["player_id"]) or {}).get("start_rate", 0.0)
+                 for lp in starters[:11]]
+        if rates:
+            out[side] = sum(rates) / len(rates)
+    return out
+
+
 def build_lineup_fallback(team_id: int, team_side: str, pool: dict, n_starters: int = 11,
                           n_subs: int = 6) -> list[dict]:
-    """Si BSD n'a pas de lineup, on prend les 17 joueurs disponibles ayant le plus
-    de minutes dans la saison. Les joueurs non-disponibles (blessés / suspendus)
-    sont systématiquement exclus."""
+    """Si BSD n'a pas de lineup, on présume le onze probable via le **taux de
+    titularisation historique** (`start_rate = starts/team_matches`) plutôt que
+    via `minutes_total`. Avantage : un joueur qui a fait beaucoup de minutes en
+    rentrant (sub à 30min × 25 matchs = 750 min) ne supplante pas un titulaire
+    qui a manqué 5 matchs (10 starts × 85min = 850 min mais start_rate plus haut).
+    Tie-break sur `minutes_total` pour départager 2 joueurs au même rate.
+    Les joueurs non-disponibles (blessés / suspendus) sont systématiquement exclus.
+
+    H1 fix : on garantit qu'au moins 1 gardien (`is_gk=True`) figure parmi les
+    titulaires présumés. Sans cette contrainte, une équipe alternant 2 GK 50/50
+    pouvait se retrouver avec 11 joueurs de champ dans le top-11 (dilution xG +
+    `lineup_confidence` faussée)."""
     players = [(pid, p) for pid, p in pool.items()
                if p.get("team_id") == team_id and not is_player_unavailable(p)]
-    players.sort(key=lambda x: x[1].get("minutes_total", 0), reverse=True)
+    players.sort(key=lambda x: (x[1].get("start_rate", 0.0),
+                                x[1].get("minutes_total", 0.0)), reverse=True)
+    # H1 : sélection garantie d'1 GK parmi les titulaires si dispo dans le pool
+    gks = [(pid, p) for pid, p in players if p.get("is_gk")]
+    starters_picked: list[tuple] = []
+    if gks:
+        starters_picked.append(gks[0])  # GK le plus titularisé
+    # Compléter avec les meilleurs non-GK jusqu'à n_starters
+    for pid, p in players:
+        if len(starters_picked) >= n_starters:
+            break
+        if p.get("is_gk"):
+            continue  # GK déjà inclus (ou aucun)
+        starters_picked.append((pid, p))
+    starters_pids = {pid for pid, _ in starters_picked}
+    # Subs : suivants dans l'ordre du tri, hors titulaires déjà pris
+    subs_picked: list[tuple] = []
+    for pid, p in players:
+        if pid in starters_pids:
+            continue
+        if len(subs_picked) >= n_subs:
+            break
+        subs_picked.append((pid, p))
     out = []
-    for i, (pid, p) in enumerate(players[:n_starters + n_subs]):
+    for pid, p in starters_picked:
         out.append({
-            "player_id": pid,
-            "team_id": team_id,
-            "side": team_side,
-            "is_starter": i < n_starters,
+            "player_id": pid, "team_id": team_id, "side": team_side,
+            "is_starter": True,
+            "position": "G" if p.get("is_gk") else None,
+        })
+    for pid, p in subs_picked:
+        out.append({
+            "player_id": pid, "team_id": team_id, "side": team_side,
+            "is_starter": False,
             "position": "G" if p.get("is_gk") else None,
         })
     return out
@@ -508,6 +582,15 @@ def load_pool(slug: str, refresh_squads: bool = False) -> dict:
     log.info("Pool %s : %d joueurs (%d/%d ont team_id, %d assignations via squads)",
              slug, len(pool), n_with_team, len(pool), n_assigned)
 
+    # T008 — start_rate par joueur (saison courante) : sert de tri pour
+    # build_lineup_fallback (compo probable basée sur l'historique de
+    # titularisations) et de base au lineup_confidence par équipe.
+    team_match_counts = compute_team_match_counts(raw["events"])
+    compute_start_rates(pool, team_match_counts)
+    n_regulars = sum(1 for p in pool.values() if p.get("start_rate", 0) >= 0.7)
+    log.info("Pool %s : %d \"titulaires réguliers\" (start_rate >= 70%%)",
+             slug, n_regulars)
+
     # Overrides manuels (transferts/prêts non reflétés par BSD)
     from live.transfer_overrides import apply_to_pool as _apply_overrides
     n_overrides = _apply_overrides(pool, slug)
@@ -664,6 +747,9 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
     away_confirmed = bool(confirmed_by_side.get("away"))
     lineup_confirmed = home_confirmed or away_confirmed
 
+    # T008 — confiance compo probable (moyenne start_rate des 11 titulaires présumés)
+    lineup_conf = compute_lineup_confidence(lineup_players, pool)
+
     # Match Betclic (par équipes)
     bm = find_betclic_match(ev, betclic_matches)
     if bm:
@@ -700,10 +786,24 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             # Si lineup non confirmée, is_starter est dénué de sens → on remonte None
             # is_starter n'a de sens que si la compo du SIDE du joueur est confirmée
             "is_starter": pred.get("is_starter") if confirmed_by_side.get(pred["team_side"]) else None,
+            # T008 — onze probable basé sur historique titularisations (dispo
+            # aussi quand BSD n'a pas confirmé la compo). Permet à l'UI de cocher
+            # par défaut uniquement les 11 présumés titulaires.
+            # H2 : `is_presumed_starter` ne porte de l'information QUE quand la
+            # compo de ce side n'est pas encore confirmée par BSD. Sinon `None`
+            # pour éviter toute confusion à la relecture du log (sinon on
+            # mélangerait la valeur BSD officielle et le top-11 historique).
+            "is_presumed_starter": (
+                pred.get("is_starter")
+                if not confirmed_by_side.get(pred["team_side"]) else None
+            ),
+            "start_rate": pool_p.get("start_rate"),
             "is_gk": pred.get("is_gk"),
             "lineup_confirmed": lineup_confirmed,
             "home_lineup_confirmed": home_confirmed,
             "away_lineup_confirmed": away_confirmed,
+            "lineup_confidence_home": lineup_conf.get("home"),
+            "lineup_confidence_away": lineup_conf.get("away"),
             "position": resolve_detailed_position(pool_p, pred.get("position_used")),
             "availability": pool_p.get("availability") or "available",
             "minutes_expected": pred.get("minutes_expected"),
@@ -723,6 +823,14 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "p_model_assist": pred["p_assist"],
             "fair_odd_scorer": pred["odd_scorer"],
             "fair_odd_assist": pred["odd_assist"],
+            # T008 — shadow odds : cote-si-titulaire (= cote actuelle pour les
+            # titulaires, cote simulée à mins_starter pour les subs présumés).
+            # Sert à voir d'un coup d'œil quel sub serait dangereux s'il était
+            # finalement titulaire (cas Zirkzee MUFC).
+            "p_scorer_if_starter": pred.get("p_scorer_if_starter"),
+            "p_assist_if_starter": pred.get("p_assist_if_starter"),
+            "fair_odd_scorer_if_starter": pred.get("odd_scorer_if_starter"),
+            "fair_odd_assist_if_starter": pred.get("odd_assist_if_starter"),
             "betclic_odd_scorer": bc_scorer,
             "betclic_odd_assist": bc_assist,
             "edge_scorer": edge_scorer,

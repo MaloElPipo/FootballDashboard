@@ -1,14 +1,11 @@
 # Overview
 
-This is a pnpm workspace monorepo using TypeScript, designed for building and deploying applications, primarily focusing on a football analytics dashboard and its supporting API. The project aims to provide comprehensive data visualization and prediction capabilities for football events, including the FIFA World Cup 2026.
+This pnpm workspace monorepo, built with TypeScript, provides a football analytics dashboard and a supporting API. The project focuses on comprehensive data visualization, ELO rankings, match predictions, odds comparison, and World Cup 2026 simulations, targeting the sports analytics and betting insights market.
 
 **Key Capabilities:**
-- **Football Analytics Dashboard:** A Streamlit app offering detailed analysis, ELO rankings, match predictions, odds comparison, and World Cup 2026 simulations.
-- **API Server:** An Express.js backend serving data and handling business logic.
-- **Data Scraping:** Tools for gathering odds data from various bookmakers and national squad information from Transfermarkt.
-
-**Business Vision & Market Potential:**
-The project taps into the growing market for sports analytics and betting insights, offering a sophisticated tool for enthusiasts and potentially professional analysts. The focus on the upcoming World Cup 2026 positions it to capture significant user interest during a major global sporting event.
+- **Football Analytics Dashboard:** A Streamlit application for detailed analysis, ELO rankings, match predictions, and World Cup 2026 simulations.
+- **API Server:** An Express.js backend for data serving and business logic.
+- **Data Scraping:** Tools for collecting odds from bookmakers and national squad information.
 
 # User Preferences
 
@@ -16,7 +13,7 @@ I prefer iterative development, focusing on one feature or bug fix at a time. Pl
 
 # System Architecture
 
-The project is structured as a pnpm workspace monorepo, facilitating shared code and independent deployment of applications.
+The project uses a pnpm workspace monorepo for shared code and independent application deployment.
 
 **Core Technologies:**
 - **Monorepo Tool:** pnpm workspaces
@@ -24,9 +21,9 @@ The project is structured as a pnpm workspace monorepo, facilitating shared code
 - **TypeScript:** v5.9
 - **API Framework:** Express v5
 - **Database:** PostgreSQL with Drizzle ORM
-- **Validation:** Zod (`zod/v4`), `drizzle-zod`
+- **Validation:** Zod
 - **API Codegen:** Orval (from OpenAPI spec)
-- **Build Tool:** esbuild (CJS bundle)
+- **Build Tool:** esbuild
 - **Frontend (Dashboard):** Python + Streamlit
 
 **Monorepo Structure:**
@@ -35,73 +32,32 @@ The project is structured as a pnpm workspace monorepo, facilitating shared code
 - `scripts/`: Utility scripts.
 
 **TypeScript & Composite Projects:**
-All packages extend a base `tsconfig.base.json` with `composite: true`. The root `tsconfig.json` references all packages, enabling cross-package type-checking and dependency graph resolution. `tsc --build --emitDeclarationOnly` is used for type-checking, with actual JS bundling handled by esbuild/tsx.
+All packages extend a base `tsconfig.base.json` with `composite: true` for cross-package type-checking.
 
 **UI/UX (Football Analytics Dashboard):**
-The dashboard is built with Streamlit, providing an interactive web interface. It features:
-- Multiple sections for match results, team/player data, ELO rankings, match predictions, and odds comparisons.
-- Dedicated sections for World Cup 2026 calendar, squad analysis, and Monte Carlo simulations.
-- Interactive elements like filters, charts, and tables for data visualization.
-- Integration of an AI Assistant (Claude) for enhanced user interaction.
+The Streamlit dashboard offers an interactive interface with sections for match results, team/player data, ELO rankings, match predictions, odds comparisons, and World Cup 2026 simulations. It integrates an AI Assistant (Claude).
 
 **Technical Implementations & Feature Specifications:**
 
-- **API Server (`@workspace/api-server`):** An Express.js server with routes defined in `src/routes/`. It uses `@workspace/api-zod` for request/response validation and `@workspace/db` for database interactions.
-- **Database Layer (`@workspace/db`):** Utilizes Drizzle ORM for PostgreSQL, defining schema models and managing database connections.
-- **API Specification & Codegen (`@workspace/api-spec`):** Defines the OpenAPI 3.1 specification and uses Orval to generate:
-    - React Query hooks and a fetch client (`lib/api-client-react`).
-    - Zod schemas for validation (`lib/api-zod`).
+- **API Server (`@workspace/api-server`):** Express.js server with routes, validation via `@workspace/api-zod`, and database interaction via `@workspace/db`.
+- **Database Layer (`@workspace/db`):** Drizzle ORM for PostgreSQL schema and connections.
+- **API Specification & Codegen (`@workspace/api-spec`):** Defines OpenAPI 3.1 spec and generates React Query hooks, fetch clients, and Zod schemas.
 - **Football Analytics Dashboard (`artifacts/football-dashboard`):**
-    - **Prediction Models:**
-        - **V8-Pin Optimized Model:** A core prediction model calibrated to minimize divergence from Pinnacle odds, with configurable parameters.
-        - **Dynamic ELO System:** Calculates and updates ELO ratings with competition-specific K-factors and time decay. Supports both classic ELO and Pinnacle-anchored ELO.
-        - **Monte Carlo Simulation:** For WC 2026 predictions, simulating group stages, knockout rounds, and providing nation-specific probabilities.
+    - **Prediction Models:** Includes a V8-Pin Optimized Model, a Dynamic ELO System with competition-specific K-factors and time decay, and Monte Carlo Simulations for WC 2026.
     - **Data Processing:** Handles historical odds, scraped odds, and ELO computations.
-    - **Scraping:**
-        - **Betclic Scraper:** Pure HTTP scraper for Betclic odds (1X2, goalscorer, outrights, Garantie 2 Buts) using gRPC-web.
-            - **Garantie 2 Buts (Early Win) scraping path:** gRPC match response → market with label containing "2 buts d'avance" → selections in **field 16** (not field 11 like other markets) → team name in sub-field 10, odds in sub-field 12 (double, 8 bytes). Market state=8 does NOT mean no data — selections can still be present in field 16.
-        - **Squad Scraper:** Scrapes Transfermarkt for WC 2026 national team squad data, including player profiles, market values, and positions.
-    - **Garantie 2+ Section:**
-        - **Inputs:** Match selection (Betclic dropdown), target team, full 1X2 odds (H/D/A mid-prices). Optional: O/U 2.5 (Under+Over), BTTS (Yes+No). Betfair Exchange scraping auto-fills all fields.
-        - **Auto data:** Betclic G2+ odds via gRPC field 16 scraping. Betfair Exchange scraping via Playwright + Webshare EU proxy for 1X2, BTTS, O/U 2.5.
-        - **Betfair data extraction:** For each market selection, captures Back price + volume and Lay price + volume. Computes volume-weighted mid-price: `mid = back × (back_vol/total_vol) + lay × (lay_vol/total_vol)`.
-        - **Lambda derivation — closed-form analytical (`lambdas_buchdahl()`, migrated 2026-04-24):**
-            - Removes margin via Buchdahl proportional method (`remove_margin_proportional` for 3-way, `remove_margin_2way` for 2-way).
-            - **Mode A — Analytique 1X2 + O/U 2.5 + BTTS** (preferred when all 3 markets present): 4-step closed form — devig → bisect λ_total via U2.5 → quadratic on `u=e^-λh, v=e^-λa` from BTTS_no + p00 → 1X2 to disambiguate which root is home/away. Reconstructs U2.5 and BTTS exactly.
-            - **Mode B — Bissection 1X2 + O/U 2.5** (fallback when no BTTS): λ_total via U2.5 + bisection on ratio `r=λh/λ_total` to match market `P(home_win)` under independent Poisson (max_g=20).
-            - **Mode C — Heuristique 1X2 seul** (final fallback): simple supremacy heuristic.
-            - Returns `(λ_home, λ_away, method_label)`.
-        - **G2+ probability — fractions fixes anchored on market 1X2:** `prob_g2 = P(win)_market + Σ(draws+losses) P(score)_Poisson × fraction(score)` where `fraction(i,j) = i(i-1)/((j+2)(j+1))` for i≥2 (LED2 ballot problem). The `P(win)_market` term is dévigorisé 1X2 (anchors against Poisson drift). Validated against legacy method: median deviation 0.36%, max 0.73%.
-        - **Output:** xG team, xG opponent, xG match, P(G2+), fair odds, Betclic odds, edge %, EV0, Poisson matrix, value indicator, lambda derivation method label.
-        - **Manual fallback:** All market fields are editable. Tool works with just 1X2 (minimum), O/U 2.5 and BTTS improve precision progressively (Mode A is the most accurate).
-    - **Workflow:** Runs on port 5000 via a Streamlit web application.
-    - **Forward Test Live (Top 5 — `live/`):** Pipeline temps réel pour valider le modèle propriétaire buteurs/passeurs.
-        - **`live/bsd_helpers.py`:** Wrappers REST BSD (`get_upcoming_events`, `get_event_detail`, `get_match_incidents`, `get_team_squad`, `get_player_season_stats`).
-        - **`live/build_player_pool.py`:** Construit pool joueurs par ligue (Bundesliga, Premier League, La Liga, Serie A, Ligue 1) avec stats saison, cache 24h dans `live/data/{slug}_player_pool.json` + `{slug}_squads.json`.
-        - **`live/predict_today.py`:** Pour chaque match J/J+1 : (1) odds 1X2+O/U2.5+BTTS via BSD, (2) λ équipes via `g2_engine.lambdas_buchdahl`, (3) lineup BSD ou fallback top-17 par minutes, (4) distribution xG/xA via `_3_model_proxy.distribute_xg_to_players`, (5) odds buteur/passeur Betclic, (6) edge = (1/odd_book × p_modèle) − 1, (7) **upsert avec purge** dans `live/data/forward_log.jsonl`. Algorithme : on calcule `fresh_by_event` (set des player_ids prédits par event), puis on PURGE les rows pré-kickoff dont le pid n'est plus dans le batch (joueur transféré/parti). Garde-fou : purge skippée si `len(fresh_pids) < 10` pour cet event (suspect run partiel). Lignes post-match (`outcome_scored != None`) immuables. Flag CLI `--refresh-squads` bypasse le cache squads BSD 24h pour récupérer transferts récents.
-            - **`resolve_detailed_position(player, lineup_position)`** (helper) : cascade pour le label de position affiché dans le tableau récap — (1) `lineup_position` si code fin remonté par BSD pour ce match, (2) `positions_detailed[0]` du squad si non vide, (3) `specific_position` (fin ou grossier MID/DEF/FWD/GK), (4) `position` 1-lettre en dernier recours. Codes fins reconnus : ST, CB, RB, LB, RWB, LWB, CM, DM, AM, RM, LM, CAM, CDM, CF, SS, RW, LW, GK. Limite : ~80% des joueurs Premier League n'ont qu'un `specific_position` grossier dans BSD donc affichage reste FWD/MID/DEF pour eux ; codes fins effectifs surtout pour joueurs avec `positions_detailed` rempli (~20%) ou rares cas où BSD remonte directement ST/CM/etc.
-        - **Calibration anti-Poisson "Buteurs Maison 4.1"** (`preview_player_odds/3_model.py::apply_anti_poisson_calibration`) : compresse la cote brute Poisson `B = 1/(1 - exp(-xG))` selon `B_final = B × (1 - min((B-1)/100, 0.75))`. Effet : favoris (cote ~2) intacts à -1%, milieu (cote ~7) -6%, outsiders (cote >50) -50% à -75% (cap). Évite la sur-estimation systématique des low-xG players. Appliquée 2 fois : à la génération des prédictions (`distribute_xg_to_players`) et au runtime UI quand l'utilisateur (dé)coche un joueur (`ui.py::_recalculate_shares` via `_anti_poisson_calibrate_array` vectorisé). Loggue aussi `odd_scorer_brut`/`odd_assist_brut` pour traçabilité.
-        - **Cache stats carrière joueur** (`live/career_stats.py`, source: Understat archive) : POST sur `understat.com/main/getPlayersStats/` pour les 5 ligues × 4 saisons (2021-2024) → ~5048 joueurs en ~3.8s, écrit `live/data/career_stats_cache.json` (~9MB). Champs par joueur : minutes, goals, assists, xG, xA, matches, seasons_covered, team_hint (équipe la plus récente), career_archive (figé) + current_season_increment (mis à jour incrémentalement par `enrich_results.py` post-match, idempotent par `events_seen`). `name_index` est un **multi-map** `nom_normalisé → [pid...]` pour gérer les homonymes (Emerson West Ham vs Tottenham, Marquinhos PSG vs Arsenal, João Pedro Brighton vs Cagliari). `lookup_career(name, team_hint)` désambigue : (1) match team_hint → ce slot ; (2) sinon le slot avec le plus de minutes carrière (le plus famous). `enrich_pool_with_career(pool, cache, team_id_to_name)` accepte une map `team_id→team_name` construite depuis les events upcoming, propagée par `predict_today.py` après fetch des matchs.
-        - **Refonte distribute_xg_to_players sur base carrière** (`preview_player_odds/3_model.py::career_blended_xg_per_90`) : `confidence_ratio cr = min(career_minutes / 15000, 1.0)` (15k min ≈ 4 saisons titulaires). `g90_used = cr × g90_career + (1-cr) × g90_curr_shrunk`. Seuil minimum `CAREER_MIN_USABLE_MINUTES = 1500` (sous ce seuil, `cr=0` → fallback shrinkage saison courante). xA inchangé (système actuel). Effet typique : Salah cr=0.80 → xg/90=0.59 (était 0.82 sans blend) ; Buendía cr=0.31 → xg/90=0.21 (était 1.74 brut, avait sur-estimé sur faible échantillon courant). Champs ajoutés au forward_log : `confidence_ratio`, `career_used`, `career_minutes`, `career_goals`. La feature est rétro-compatible : `_recalculate_shares` recalcule depuis `xg_per_90_used`/`xa_per_90_used` figés dans le log, donc l'UI marche sans modification.
-        - **Shrinkage minutes-based** (`shrunk_per90`) : poids de l'observation = `minutes_total / 90` (équivalents-matchs complets) au lieu de `matches_played` brut. Évite que des cameos (ex. 3 entrées de 10 min avec 1 tir chacun) pèsent autant que 3 matchs complets — bug observé sur les jeunes type Trey Nyoni / Rio Ngumoha qui sortaient avec g90 ≈ 0.5 (= prior FWD) au lieu de g90 ≈ 0.13 (= prior MID shrunken). Fallback `matches_played` si `minutes_total` absent.
-        - **Présomption titulaire/sub quand compo non confirmée** (`_resolve_minutes`) : avant, tout joueur du squad recevait 90 min tant que BSD n'avait pas publié les compos officielles → 17 joueurs × 90 = 1530 player-min vs réalité 11×85 + 6×15 = 1025 → DILUTION massive (Salah à 15% au lieu de 30%, cote 3.37 au lieu de 2.35). Fix : `build_lineup_fallback` marque déjà le top-11 par `minutes_total` comme `is_starter=True` ; `_resolve_minutes` honore désormais ce flag même quand `lineup_confirmed=False` → titulaires présumés à `avg_mins_when_starter` (~85), subs présumés à `MINUTES_SUB_DEFAULT=25`. Effet : Salah passe de 3.37 → 2.35 sur Liverpool-Crystal Palace, Igor Thiago de 2.80 → 2.36, Mateta visible à 3.98.
-        - **T007 — Moteur 100% buts (alignement Excel "Buteurs Maison 4.1")** : le moteur buteurs n'utilise plus du tout de signal xG. La composante saison courante du blend `career_blended_xg_per_90` utilise désormais `goals_per_90` (= `goals_total × 90 / minutes_total`) au lieu de `xg_per_90`. La composante carrière utilisait déjà `career_goals` (Understat archive). Conséquence : `g90_used = cr × g90_career_buts + (1-cr) × g90_curr_buts_shrunk` — finition réelle uniquement, jamais d'xG. `aggregate_player_profiles` (3_model.py:280-294) expose maintenant `goals_per_90`/`assists_per_90` à côté des xG legacy ; `career_blended_xg_per_90` (3_model.py:384-392) calcule `goals_per_90` à la volée depuis `goals_total`/`minutes_total` quand le champ est absent (rétro-compat avec pools existants). Le prior position-aware reste calibré sur xG/90 — défendable car en moyenne population goals/90 ≈ xG/90 (xG est non-biaisé), et les sur-performers (Salah, Watkins) sont captés via `g90_career`. Le champ `xg_per_90_used` du forward log porte désormais sémantiquement un g90 (buts/90) — pas renommé pour rétro-compat UI. xA path inchangé (Excel n'a pas modifié les passeurs). Effet typique observé : Salah 2.35 (inchangé, marque ≈ son xG), Igor Thiago 2.36→2.10 (sur-performeur récompensé), Eze 3.99→3.70 (idem), Bruno Fernandes 4.38→4.61 (sous-performeur pénalisé). Évolution future possible : ajouter un facteur de forme via xG saison (boost ou malus modéré) — non-implémenté à ce stade.
-        - **`live/transfer_overrides.py` + `live/data/transfers_overrides.json`:** Système de patch manuel pour transferts non encore reflétés par BSD (ex: Donyell Malen prêté à AS Roma janvier 2026). Format JSON simple éditable (`player_id`, `from_team_id`, `reason`, `until`). `apply_to_pool(pool, slug)` marque availability="loan" → exclu des prédictions. `inject_into_event_detail(detail, home_id, away_id)` injecte le joueur dans `unavailable_players[side]` du payload BSD pour affichage UI "Joueurs indisponibles".
-        - **`live/enrich_results.py`:** Récupère outcomes BSD (player-stats + fallback incidents) hors lock, puis réécrit forward_log.jsonl en mode atomique (tmp + os.replace) avec `outcome_scored`/`outcome_assisted` pour matchs terminés.
-        - **`live/file_lock.py`:** Verrou `fcntl.flock` exclusif inter-process (`forward_log.lock`) partagé par predict + enrich → élimine TOCTOU sur `load_seen_keys`+append, et race condition perte d'append pendant rewrite enrich.
-        - **UI Streamlit (`live/ui.py`):**
-            - **🔮 Prédiction Buteurs** (`?page=predictions_buteurs[&event_id=X]`) : sélecteur de match du week-end + vue détail riche par match — header (ligue/journée/stade/arbitre), λ équipes & marchés (1X2/O-U2.5/BTTS), compositions 2 colonnes avec coachs (nom + nationalité + formation préférée + style + profil) et système de jeu quand lineups confirmées par BSD, forme récente (form_string colorée 🟢⚪🔴 + KPIs xG/xGA/duels), radar Plotly comparatif des forces, head-to-head (V/N/D + moyenne buts + 10 derniers), joueurs indisponibles (blessés/suspendus avec retour estimé), tableau buteurs/passeurs prédits trié par p_modèle avec edge coloré. Cache BSD `get_event_detail` 5 min via `@st.cache_data(ttl=300)`.
-            - **🎯 Test Edge Buteurs (Top 5)** (`?page=edges`) : tableau filtrable (ligue, marché scorer/assist, edge min %, titulaires uniquement), code couleur par edge, boutons "Lancer prédictions" / "Enrichir résultats", export CSV.
-            - **📈 Tracking Test Edge Buteurs** (`?page=tracking`) : KPIs (picks loggés, matchs enrichis, picks à edge>seuil), ROI 1u flat par tranche d'edge, courbe cumul.
+    - **Scraping:** Betclic odds (gRPC-web) and Transfermarkt national squad data.
+    - **Garantie 2+ Section:** Calculates G2+ probabilities based on market 1X2 odds, O/U 2.5, and BTTS using a closed-form analytical method (`lambdas_buchdahl`).
+    - **Forward Test Live (Top 5):** Real-time pipeline for validating proprietary scorer/assister models.
+        - **Player Pool & Stats:** Builds player pools with season stats, caches career stats, and handles transfer overrides.
+        - **Prediction Logic:** Predicts scorer/assister odds using a calibrated anti-Poisson model, resolving player positions and minutes, and managing lineup fallbacks. The scorer engine uses goals-per-90 instead of xG.
+        - **Probable Lineup (T008):** When BSD has not yet published the official lineup (~1h pre-kickoff), the pool computes a `start_rate` per player (starts/team_matches), and `build_lineup_fallback` selects the top-11 by start_rate (with mandatory GK guaranteed). Each player carries a "shadow odd" `fair_odd_scorer/assist_if_starter` simulating his odds if he were a starter — useful to spot value on presumed substitutes. The UI shows a "Compo prob. confiance X%" badge and a "Cote si tit." column.
+        - **Result Enrichment:** Retrieves outcomes and updates prediction logs.
+        - **UI Streamlit (`live/ui.py`):** Provides detailed match predictions, an edge testing table, and tracking KPIs for forward tests.
 
 # External Dependencies
 
-- **Database:** PostgreSQL (managed via Drizzle ORM)
-- **Football Data API:** TheStatsAPI (`https://api.thestatsapi.com/api`) - for football data (teams, players, competitions, matches). API key and base URL are managed via environment variables.
-- **Odds API:** The Odds API (`the-odds-api.com`) - for multi-bookmaker odds. API key managed via environment variables.
-- **AI Assistant:** Claude (Anthropic) - integrated for AI assistant functionalities within the dashboard. API key managed via environment variables.
-- **Transfermarkt:** Used for scraping national team squad data.
-- **Betclic:** Scraped directly for live odds using gRPC-web.
-- **Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR:** Specific bookmakers whose odds are integrated and analyzed.
-- **AllSportsAPI:** Used as a source for BSD API odds (likely Bet365 as default).
-- **OPTA Power Ratings:** Used in conjunction with ELO calculations.
+- **Database:** PostgreSQL
+- **Football Data API:** TheStatsAPI
+- **Odds API:** The Odds API
+- **AI Assistant:** Claude (Anthropic)
+- **Data Sources:** Transfermarkt, Betclic, Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR, AllSportsAPI (for BSD API odds), OPTA Power Ratings.

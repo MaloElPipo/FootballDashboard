@@ -487,8 +487,13 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
         side_confirmed = confirmed_by_side[side]
 
         # 1. xG/xA bruts par joueur (avec shrinkage position-aware + minutes attendues)
+        # `raw_*_per_player`            = avec minutes ACTUELLES (titu→85, sub→25)
+        # `raw_*_starter_per_player`    = "et si ce joueur jouait à mins_starter" (shadow)
+        # Le shadow sert à exposer fair_odd_scorer_if_starter pour les subs présumés.
         raw_xg_per_player = {}
         raw_xa_per_player = {}
+        raw_xg_starter_per_player = {}
+        raw_xa_starter_per_player = {}
         for lp in team_lineup:
             pid = lp["player_id"]
             if pid is None:
@@ -523,8 +528,16 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             raw_xg = xg_p90 * (mins_exp / 90.0)
             raw_xa = xa_p90 * (mins_exp / 90.0)
 
+            # Minutes "comme si titulaire" (sert au shadow odds des subs présumés)
+            mins_starter_shadow = ((player or {}).get("avg_mins_when_starter")
+                                   or MINUTES_STARTER_DEFAULT)
+            if mins_starter_shadow < MINUTES_FLOOR_THRESHOLD:
+                mins_starter_shadow = MINUTES_FLOOR_WHEN_STARTER
+
             raw_xg_per_player[pid] = raw_xg
             raw_xa_per_player[pid] = raw_xa
+            raw_xg_starter_per_player[pid] = xg_p90 * (mins_starter_shadow / 90.0)
+            raw_xa_starter_per_player[pid] = xa_p90 * (mins_starter_shadow / 90.0)
             # Note (T007) : `xg_per_90_used` ci-dessous porte sémantiquement un
             # **g90 buts** (pas un xG/90) depuis la bascule moteur 100% buts.
             # Nom conservé pour rétro-compat avec le forward_log et l'UI.
@@ -549,20 +562,23 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
         # xA total ≈ goals - solo_goals ≈ ~0.75 * team_xg (75% des buts ont une passe dec)
         team_xa_target = team_xg * 0.75
 
+        def _odds_from_xg_xa(xg_v: float, xa_v: float):
+            """Retourne (p_s, p_a, odd_s, odd_a, odd_s_brut, odd_a_brut)."""
+            ps_b = 1.0 - math.exp(-xg_v)
+            pa_b = 1.0 - math.exp(-xa_v)
+            os_b = (1.0 / ps_b) if ps_b > 0 else None
+            oa_b = (1.0 / pa_b) if pa_b > 0 else None
+            os_c = apply_anti_poisson_calibration(os_b)
+            oa_c = apply_anti_poisson_calibration(oa_b)
+            ps_c = (1.0 / os_c) if (os_c and os_c > 0) else 0.0
+            pa_c = (1.0 / oa_c) if (oa_c and oa_c > 0) else 0.0
+            return ps_c, pa_c, os_c, oa_c, os_b, oa_b
+
         for pid in raw_xg_per_player:
             xg_cal = team_xg * (raw_xg_per_player[pid] / total_raw_xg)
             xa_cal = team_xa_target * (raw_xa_per_player[pid] / total_raw_xa)
-            # Cote brute Poisson (anytime)
-            p_scorer_brut = 1.0 - math.exp(-xg_cal)
-            p_assist_brut = 1.0 - math.exp(-xa_cal)
-            odd_scorer_brut = (1.0 / p_scorer_brut) if p_scorer_brut > 0 else None
-            odd_assist_brut = (1.0 / p_assist_brut) if p_assist_brut > 0 else None
-            # Calibration anti-Poisson (réduit la sur-estimation des outsiders)
-            odd_scorer = apply_anti_poisson_calibration(odd_scorer_brut)
-            odd_assist = apply_anti_poisson_calibration(odd_assist_brut)
-            # p_model = 1 / cote_calibrée pour rester cohérent avec edge = p × cote_book − 1
-            p_scorer = (1.0 / odd_scorer) if (odd_scorer and odd_scorer > 0) else 0.0
-            p_assist = (1.0 / odd_assist) if (odd_assist and odd_assist > 0) else 0.0
+            p_scorer, p_assist, odd_scorer, odd_assist, odd_scorer_brut, odd_assist_brut = \
+                _odds_from_xg_xa(xg_cal, xa_cal)
             result[pid]["xg_calibrated"] = xg_cal
             result[pid]["xa_calibrated"] = xa_cal
             result[pid]["p_scorer"] = p_scorer
@@ -571,6 +587,33 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             result[pid]["odd_assist"] = odd_assist
             result[pid]["odd_scorer_brut"] = odd_scorer_brut
             result[pid]["odd_assist_brut"] = odd_assist_brut
+
+            # === Shadow odds : "et si CE joueur jouait à mins_starter ?" ===
+            # Pour les titulaires actuels, shadow = actuel (rien à simuler).
+            # Pour les subs présumés, on simule sa "promotion" : son raw passe
+            # de raw_actual à raw_starter ; les autres restent inchangés ;
+            # on renormalise sur la team_xg cible. Sa share grossit, les autres
+            # se diluent légèrement (mais ne sont pas exposées dans le shadow).
+            if result[pid]["is_starter"]:
+                xg_cal_sh, xa_cal_sh = xg_cal, xa_cal
+                p_s_sh, p_a_sh = p_scorer, p_assist
+                os_sh, oa_sh = odd_scorer, odd_assist
+            else:
+                delta_xg = raw_xg_starter_per_player[pid] - raw_xg_per_player[pid]
+                delta_xa = raw_xa_starter_per_player[pid] - raw_xa_per_player[pid]
+                new_total_xg = total_raw_xg + delta_xg
+                new_total_xa = total_raw_xa + delta_xa
+                xg_cal_sh = team_xg * (raw_xg_starter_per_player[pid] / new_total_xg) \
+                    if new_total_xg > 0 else 0.0
+                xa_cal_sh = team_xa_target * (raw_xa_starter_per_player[pid] / new_total_xa) \
+                    if new_total_xa > 0 else 0.0
+                p_s_sh, p_a_sh, os_sh, oa_sh, _, _ = _odds_from_xg_xa(xg_cal_sh, xa_cal_sh)
+            result[pid]["xg_player_if_starter"] = xg_cal_sh
+            result[pid]["xa_player_if_starter"] = xa_cal_sh
+            result[pid]["p_scorer_if_starter"] = p_s_sh
+            result[pid]["p_assist_if_starter"] = p_a_sh
+            result[pid]["odd_scorer_if_starter"] = os_sh
+            result[pid]["odd_assist_if_starter"] = oa_sh
 
     return result
 

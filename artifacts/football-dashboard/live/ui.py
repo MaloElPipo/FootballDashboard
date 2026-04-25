@@ -953,35 +953,27 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Titu": titu_label,
         }
         if market in ("Buteur", "Les deux"):
-            # T008 — Cote si tit. : pour les titulaires = même valeur que Cote
-            # juste ; pour les subs présumés = valeur shadow (snapshot du log,
-            # ne réagit PAS aux toggles user — c'est par design : référence fixe).
-            shadow_scorer = r.get("fair_odd_scorer_if_starter")
-            cote_si_tit = (round(float(shadow_scorer), 2)
-                           if pd.notna(shadow_scorer) and float(shadow_scorer) > 0 else None)
+            # T009 — la "Cote juste" est calculée à 90' théorique (best case
+            # garantie buteur FR) → la colonne "Cote si tit." est devenue
+            # redondante et a été supprimée.
             rows.append({
                 "_pid": pid, **common_pre, "Marché": "⚽ Buteur",
                 "p %": (round(float(r["p_model_scorer"]) * 100, 1)
                         if pd.notna(r.get("p_model_scorer")) else None),
                 "Cote juste": (round(float(r["fair_odd_scorer"]), 2)
                                if pd.notna(r.get("fair_odd_scorer")) else None),
-                "Cote si tit.": cote_si_tit,
                 "Cote Betclic": (round(float(r["betclic_odd_scorer"]), 2)
                                  if pd.notna(r.get("betclic_odd_scorer")) else None),
                 "Edge %": (round(float(r["edge_scorer"]) * 100, 2)
                            if pd.notna(r.get("edge_scorer")) else None),
             })
         if market in ("Passeur", "Les deux"):
-            shadow_assist = r.get("fair_odd_assist_if_starter")
-            cote_si_tit_a = (round(float(shadow_assist), 2)
-                             if pd.notna(shadow_assist) and float(shadow_assist) > 0 else None)
             rows.append({
                 "_pid": pid, **common_pre, "Marché": "🅰 Passeur",
                 "p %": (round(float(r["p_model_assist"]) * 100, 1)
                         if pd.notna(r.get("p_model_assist")) else None),
                 "Cote juste": (round(float(r["fair_odd_assist"]), 2)
                                if pd.notna(r.get("fair_odd_assist")) else None),
-                "Cote si tit.": cote_si_tit_a,
                 "Cote Betclic": (round(float(r["betclic_odd_assist"]), 2)
                                  if pd.notna(r.get("betclic_odd_assist")) else None),
                 "Edge %": (round(float(r["edge_assist"]) * 100, 2)
@@ -1008,33 +1000,23 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "p %": st.column_config.NumberColumn("p %", format="%.1f"),
             "Cote juste": st.column_config.NumberColumn(
                 "Cote juste", format="%.2f",
-                help="Cote théorique du modèle calculée à 90' théorique de "
-                     "temps de jeu (garantie buteur FR : Betclic & co valident "
-                     "le bet même pour un sub entré en cours de match). "
-                     "Comparable directement à la cote bookmaker."),
-            "Cote si tit.": st.column_config.NumberColumn(
-                "Cote si tit.", format="%.2f",
-                help="Scénario alternatif : cote théorique si ce joueur était "
-                     "finalement titulaire (sa part xG est recalculée pour ~80 "
-                     "min, les autres joueurs voient leur part diluée). "
-                     "Toujours à 90' théorique. Pour un titulaire présumé : "
-                     "identique à Cote juste. NB : pour un sub, cette cote "
-                     "peut être LÉGÈREMENT supérieure à la Cote juste — c'est "
-                     "normal, sa part de l'xG d'équipe étant diluée par les "
-                     "minutes accrues. Snapshot fixe : ne réagit PAS aux "
-                     "toggles."),
+                help="Cote théorique du modèle, calculée à 90' théorique de "
+                     "temps de jeu — best case correspondant à la garantie "
+                     "buteur FR (Betclic & co valident le bet même si le "
+                     "joueur entre en cours de match). Directement comparable "
+                     "à la cote bookmaker."),
             "Cote Betclic": st.column_config.NumberColumn(format="%.2f"),
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },
         column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
-                      "Marché", "p %", "Cote juste", "Cote si tit.",
+                      "Marché", "p %", "Cote juste",
                       "Cote Betclic", "Edge %"],
         hide_index=True,
         use_container_width=True,
         height=600,
         key=f"editor_{event_id}",
         disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
-                  "p %", "Cote juste", "Cote si tit.", "Cote Betclic", "Edge %"],
+                  "p %", "Cote juste", "Cote Betclic", "Edge %"],
     )
 
     # Détection des changements de checkbox → MAJ session_state + rerun.

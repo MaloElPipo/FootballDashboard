@@ -810,9 +810,18 @@ def _recalculate_shares(sub: pd.DataFrame, included_pids: set[int]) -> pd.DataFr
         xg_cal = team_xg_target[side] * (raw_xg / total_xg)
         xa_cal = team_xa_target[side] * (raw_xa / total_xa)
 
+        # T009 — Conversion 90' théorique pour le calcul des cotes (garantie
+        # buteur FR : la cote bookmaker valide aussi pour un joueur entré en
+        # cours de match → on price à 90' théorique pour rester comparable).
+        # `xg_cal` reste l'xG attendu sur les minutes prévues (utilisé pour
+        # la normalisation team), MAIS la cote vient de xg_for_90 = xg_cal × 90/mins.
+        mins_safe = sub_team["minutes_expected"].fillna(0).astype(float).clip(lower=1.0)
+        xg_for_90 = xg_cal * 90.0 / mins_safe.values
+        xa_for_90 = xa_cal * 90.0 / mins_safe.values
+
         # Cotes brutes Poisson, puis calibration anti-Poisson "Buteurs Maison 4.1"
-        p_scorer_brut = 1.0 - np.exp(-xg_cal)
-        p_assist_brut = 1.0 - np.exp(-xa_cal)
+        p_scorer_brut = 1.0 - np.exp(-xg_for_90)
+        p_assist_brut = 1.0 - np.exp(-xa_for_90)
         odd_scorer_brut = np.where(p_scorer_brut > 0, 1.0 / p_scorer_brut, np.nan)
         odd_assist_brut = np.where(p_assist_brut > 0, 1.0 / p_assist_brut, np.nan)
         odd_scorer = _anti_poisson_calibrate_array(odd_scorer_brut)
@@ -997,12 +1006,23 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Min": st.column_config.NumberColumn(width="small"),
             "Titu": st.column_config.TextColumn(width="small"),
             "p %": st.column_config.NumberColumn("p %", format="%.1f"),
-            "Cote juste": st.column_config.NumberColumn(format="%.2f"),
+            "Cote juste": st.column_config.NumberColumn(
+                "Cote juste", format="%.2f",
+                help="Cote théorique du modèle calculée à 90' théorique de "
+                     "temps de jeu (garantie buteur FR : Betclic & co valident "
+                     "le bet même pour un sub entré en cours de match). "
+                     "Comparable directement à la cote bookmaker."),
             "Cote si tit.": st.column_config.NumberColumn(
                 "Cote si tit.", format="%.2f",
-                help="Cote simulée si ce joueur était finalement titulaire "
-                     "(85min). Pour les titulaires, identique à Cote juste. "
-                     "Snapshot fixe : ne réagit PAS aux toggles user."),
+                help="Scénario alternatif : cote théorique si ce joueur était "
+                     "finalement titulaire (sa part xG est recalculée pour ~80 "
+                     "min, les autres joueurs voient leur part diluée). "
+                     "Toujours à 90' théorique. Pour un titulaire présumé : "
+                     "identique à Cote juste. NB : pour un sub, cette cote "
+                     "peut être LÉGÈREMENT supérieure à la Cote juste — c'est "
+                     "normal, sa part de l'xG d'équipe étant diluée par les "
+                     "minutes accrues. Snapshot fixe : ne réagit PAS aux "
+                     "toggles."),
             "Cote Betclic": st.column_config.NumberColumn(format="%.2f"),
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },

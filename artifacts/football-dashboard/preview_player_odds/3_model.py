@@ -494,6 +494,12 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
         raw_xa_per_player = {}
         raw_xg_starter_per_player = {}
         raw_xa_starter_per_player = {}
+        # Pour la conversion 90' théorique des cotes (garantie buteur FR : la cote
+        # bookmaker valide même si le joueur entre en cours de match → on price
+        # à 90' théorique pour rester comparable). On garde mins_expected/mins_starter
+        # pour la normalisation de team_xg, mais on remonte une proba "P(scorer | 90')".
+        mins_exp_by_pid: dict[int, float] = {}
+        mins_starter_shadow_by_pid: dict[int, float] = {}
         for lp in team_lineup:
             pid = lp["player_id"]
             if pid is None:
@@ -538,6 +544,8 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             raw_xa_per_player[pid] = raw_xa
             raw_xg_starter_per_player[pid] = xg_p90 * (mins_starter_shadow / 90.0)
             raw_xa_starter_per_player[pid] = xa_p90 * (mins_starter_shadow / 90.0)
+            mins_exp_by_pid[pid] = mins_exp
+            mins_starter_shadow_by_pid[pid] = mins_starter_shadow
             # Note (T007) : `xg_per_90_used` ci-dessous porte sémantiquement un
             # **g90 buts** (pas un xG/90) depuis la bascule moteur 100% buts.
             # Nom conservé pour rétro-compat avec le forward_log et l'UI.
@@ -577,10 +585,26 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
         for pid in raw_xg_per_player:
             xg_cal = team_xg * (raw_xg_per_player[pid] / total_raw_xg)
             xa_cal = team_xa_target * (raw_xa_per_player[pid] / total_raw_xa)
+
+            # === Conversion 90' théorique pour le calcul des cotes ===
+            # `xg_cal` reste l'xG attendu sur les minutes prévues (titu→85, sub→25)
+            # → utilisé pour le contrôle "sum joueurs ≈ team_xg".
+            # MAIS la cote remontée à l'UI est calculée à 90' théorique pour
+            # correspondre à la garantie buteur FR (Betclic & co valident le bet
+            # même si le joueur entre en cours de match). Mathématiquement :
+            #   xg_for_90 = xg_cal × 90 / mins_expected
+            # Pour un sub à 25min, ça inflate l'xG d'un facteur 3.6 → cote
+            # divisée par ~3 → comparable à la cote bookmaker "any-time".
+            mins_norm = max(mins_exp_by_pid[pid], 1.0)
+            xg_for_90 = xg_cal * 90.0 / mins_norm
+            xa_for_90 = xa_cal * 90.0 / mins_norm
             p_scorer, p_assist, odd_scorer, odd_assist, odd_scorer_brut, odd_assist_brut = \
-                _odds_from_xg_xa(xg_cal, xa_cal)
+                _odds_from_xg_xa(xg_for_90, xa_for_90)
             result[pid]["xg_calibrated"] = xg_cal
             result[pid]["xa_calibrated"] = xa_cal
+            # T009 : exposés pour audit / debug — l'xG ramené à 90' qui sert au calcul cote.
+            result[pid]["xg_for_90"] = xg_for_90
+            result[pid]["xa_for_90"] = xa_for_90
             result[pid]["p_scorer"] = p_scorer
             result[pid]["p_assist"] = p_assist
             result[pid]["odd_scorer"] = odd_scorer
@@ -594,6 +618,8 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
             # de raw_actual à raw_starter ; les autres restent inchangés ;
             # on renormalise sur la team_xg cible. Sa share grossit, les autres
             # se diluent légèrement (mais ne sont pas exposées dans le shadow).
+            # Conversion 90' théorique appliquée également au shadow (avec
+            # mins_starter_shadow qui vaut typiquement 80-87, donc facteur ~1.05-1.13).
             if result[pid]["is_starter"]:
                 xg_cal_sh, xa_cal_sh = xg_cal, xa_cal
                 p_s_sh, p_a_sh = p_scorer, p_assist
@@ -607,7 +633,10 @@ def distribute_xg_to_players(xg_home, xg_away, home_team_id, away_team_id, lineu
                     if new_total_xg > 0 else 0.0
                 xa_cal_sh = team_xa_target * (raw_xa_starter_per_player[pid] / new_total_xa) \
                     if new_total_xa > 0 else 0.0
-                p_s_sh, p_a_sh, os_sh, oa_sh, _, _ = _odds_from_xg_xa(xg_cal_sh, xa_cal_sh)
+                mins_norm_sh = max(mins_starter_shadow_by_pid[pid], 1.0)
+                xg_for_90_sh = xg_cal_sh * 90.0 / mins_norm_sh
+                xa_for_90_sh = xa_cal_sh * 90.0 / mins_norm_sh
+                p_s_sh, p_a_sh, os_sh, oa_sh, _, _ = _odds_from_xg_xa(xg_for_90_sh, xa_for_90_sh)
             result[pid]["xg_player_if_starter"] = xg_cal_sh
             result[pid]["xa_player_if_starter"] = xa_cal_sh
             result[pid]["p_scorer_if_starter"] = p_s_sh

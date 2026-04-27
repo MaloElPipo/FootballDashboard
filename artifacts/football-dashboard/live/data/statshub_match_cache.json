@@ -519,7 +519,7 @@
       }
     ],
     "source": "statshub",
-    "_fetched_at": 1777313185.6380079
+    "_fetched_at": 1777315197.8336625
   },
   "bsd:340": {
     "external_id": 14023926,
@@ -760,6 +760,267 @@
       }
     ],
     "source": "statshub",
-    "_fetched_at": 1777313251.0040383
+    "_fetched_at": 1777315229.8783154
+  },
+  "bsd:1003": {
+    "external_id": 14083221,
+    "slug": "espanyol-vs-levante-ud-moh9s7",
+    "match_score": 1.0,
+    "home": [
+      {
+        "playerId": 877262,
+        "playerInternalId": 20288,
+        "name": "E. Expósito",
+        "jerseyNo": 8,
+        "position": "LST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 84972,
+        "playerInternalId": 2278,
+        "name": "K. García",
+        "jerseyNo": 19,
+        "position": "RST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 175185,
+        "playerInternalId": 5532,
+        "name": "P. Milla",
+        "jerseyNo": 11,
+        "position": "LM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1064009,
+        "playerInternalId": 39247,
+        "name": "U. González",
+        "jerseyNo": 4,
+        "position": "LCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1088565,
+        "playerInternalId": 40927,
+        "name": "R. Terrats",
+        "jerseyNo": 14,
+        "position": "RCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 877037,
+        "playerInternalId": 20260,
+        "name": "C. Ngonge",
+        "jerseyNo": 26,
+        "position": "RM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1396048,
+        "playerInternalId": 54350,
+        "name": "C. Romero",
+        "jerseyNo": 22,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 81992,
+        "playerInternalId": 2224,
+        "name": "L. Cabrera",
+        "jerseyNo": 6,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 857205,
+        "playerInternalId": 18160,
+        "name": "F. Calero",
+        "jerseyNo": 5,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1064026,
+        "playerInternalId": 39250,
+        "name": "O. E. Hilali",
+        "jerseyNo": 23,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 94527,
+        "playerInternalId": 2479,
+        "name": "M. Dmitrović",
+        "jerseyNo": 13,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1063015,
+        "playerInternalId": 39153,
+        "name": "T. Dolan",
+        "jerseyNo": 24,
+        "position": "LM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "predicted"
+      },
+      {
+        "playerId": 1129360,
+        "playerInternalId": 45281,
+        "name": "C. Riedel",
+        "jerseyNo": 38,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "predicted"
+      }
+    ],
+    "away": [
+      {
+        "playerId": 1869106,
+        "playerInternalId": 70561,
+        "name": "P. Cortés",
+        "jerseyNo": 11,
+        "position": "LST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1649918,
+        "playerInternalId": 67679,
+        "name": "C. Espí",
+        "jerseyNo": 19,
+        "position": "RST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 927066,
+        "playerInternalId": 25199,
+        "name": "P. Martínez",
+        "jerseyNo": 10,
+        "position": "LM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1010383,
+        "playerInternalId": 35349,
+        "name": "J. A. Olasagasti",
+        "jerseyNo": 8,
+        "position": "LCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1170694,
+        "playerInternalId": 49592,
+        "name": "U. Raghouber",
+        "jerseyNo": 28,
+        "position": "RCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 952222,
+        "playerInternalId": 27847,
+        "name": "V. García",
+        "jerseyNo": 17,
+        "position": "RM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 984789,
+        "playerInternalId": 30992,
+        "name": "M. Sánchez",
+        "jerseyNo": 23,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1496360,
+        "playerInternalId": 60810,
+        "name": "M. Moreno",
+        "jerseyNo": 2,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 997244,
+        "playerInternalId": 33102,
+        "name": "Adri",
+        "jerseyNo": 4,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 149606,
+        "playerInternalId": 4664,
+        "name": "J. Toljan",
+        "jerseyNo": 22,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 134029,
+        "playerInternalId": 3841,
+        "name": "M. Ryan",
+        "jerseyNo": 13,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1010656,
+        "playerInternalId": 35422,
+        "name": "C. Álvarez",
+        "jerseyNo": 24,
+        "position": "RM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "predicted"
+      }
+    ],
+    "source": "statshub",
+    "_fetched_at": 1777315245.0525334
   }
 }

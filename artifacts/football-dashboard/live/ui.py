@@ -24,7 +24,13 @@ sys.path.insert(0, str(DASH_ROOT))
 
 from preview_player_odds._3_model_proxy import apply_anti_poisson_calibration  # noqa: E402
 from live.statshub_helpers import get_predicted_lineup_for_bsd_event  # noqa: E402
-from bet_tracker import add_bet  # noqa: E402
+from live.forward_bets import (  # noqa: E402
+    add_forward_bet,
+    clear_all_forward_bets,
+    delete_forward_bet,
+    load_forward_bets,
+    update_forward_bet_result,
+)
 
 
 def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
@@ -100,99 +106,237 @@ def _run_enrich_results() -> tuple[bool, str]:
     except subprocess.TimeoutExpired:
         return False, "TIMEOUT"
 
-# Page : Tracking forward log (perf historique)
+# Page : Tracking Test Edge Buteurs (bets validés via le bouton 1-clic)
 # ---------------------------------------------------------------------------
+def _safe_int(v):
+    """Cast tolérant : retourne None si NaN, str invalide, etc."""
+    try:
+        if v is None or (isinstance(v, float) and pd.isna(v)):
+            return None
+        return int(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _auto_resolve_status_from_log(bets: list[dict], log_df: pd.DataFrame) -> list[dict]:
+    """Si un bet est encore 'pending' mais que le forward_log a un outcome
+    pour ce (event_id, player_id), on le résout automatiquement en lisant
+    la colonne outcome correspondant au market du bet (outcome_scored pour
+    Buteur, outcome_assisted pour Passeur). Le forward_log a UNE row par
+    (event_id, player_id) avec scorer/assist côte à côte, donc cette clé
+    suffit ; le market discrimine la colonne d'outcome.
+    Ne touche pas aux bets déjà résolus manuellement (won/lost/void)."""
+    if log_df.empty:
+        return bets
+    # Indexation défensive : skip silencieusement les rows mal formées
+    log_keyed: dict = {}
+    for _, r in log_df.iterrows():
+        ev_id = _safe_int(r.get("event_id"))
+        pid = _safe_int(r.get("player_id"))
+        if ev_id is None or pid is None:
+            continue
+        log_keyed[(ev_id, pid)] = r
+    changed = False
+    for b in bets:
+        if b.get("result") != "pending":
+            continue
+        ev_id = _safe_int(b.get("event_id"))
+        pid = _safe_int(b.get("player_id"))
+        if ev_id is None or pid is None:
+            continue
+        ref = log_keyed.get((ev_id, pid))
+        if ref is None:
+            continue
+        outcome_col = "outcome_scored" if b.get("market") == "Buteur" else "outcome_assisted"
+        outcome = ref.get(outcome_col)
+        if pd.isna(outcome):
+            continue  # match pas encore enrichi
+        new_result = "won" if bool(outcome) else "lost"
+        b["result"] = new_result
+        stake = float(b.get("stake") or 0)
+        odd = float(b.get("betclic_odd") or 0)
+        b["profit_units"] = round(
+            stake * (odd - 1) if new_result == "won" else -stake, 2
+        )
+        changed = True
+    if changed:
+        from live.forward_bets import save_forward_bets
+        save_forward_bets(bets)
+    return bets
+
+
 def render_tracking_page():
-    st.header("📈 Tracking Test Edge Buteurs — Performance live")
+    st.header("📈 Tracking Test Edge Buteurs")
     st.caption(
-        "Historique de tous les picks loggés. ROI calculé en simulant 1u flat "
-        "sur chaque pick avec edge > seuil (sélection theoretical, à mise sur cote bookmaker)."
+        "Tous les bets validés depuis **🔮 Prédiction Buteurs** (bouton "
+        "« Ajouter au tracking ») arrivent ici. Les résultats sont résolus "
+        "automatiquement quand le match est terminé et enrichi."
     )
 
-    df = load_forward_log_df()
-    if df.empty:
-        st.info("Pas encore de log forward. Va dans la page Edges et lance le pipeline.")
+    bets = load_forward_bets()
+
+    # Auto-résolution depuis le forward log enrichi
+    log_df = load_forward_log_df()
+    if bets:
+        bets = _auto_resolve_status_from_log(bets, log_df)
+
+    # Toolbar : reset
+    tb1, _ = st.columns([1.4, 4])
+    with tb1:
+        if st.button("🗑 Tout effacer", help="Vide complètement le tracking",
+                     key="forward_clear_btn"):
+            st.session_state["_forward_clear_confirm"] = True
+        if st.session_state.get("_forward_clear_confirm"):
+            st.warning(
+                f"Tu es sûr ? Cela supprimera **{len(bets)}** bet(s) trackés "
+                "(action irréversible).",
+                icon="⚠️",
+            )
+            cc1, cc2 = st.columns(2)
+            with cc1:
+                if st.button("Oui, tout effacer", key="forward_clear_yes",
+                             type="primary"):
+                    clear_all_forward_bets()
+                    st.session_state["_forward_clear_confirm"] = False
+                    st.success("Tracking vidé.")
+                    st.rerun()
+            with cc2:
+                if st.button("Annuler", key="forward_clear_no"):
+                    st.session_state["_forward_clear_confirm"] = False
+                    st.rerun()
+
+    if not bets:
+        st.info(
+            "Aucun bet tracké pour l'instant. Va sur **🔮 Prédiction Buteurs**, "
+            "sélectionne un match, et utilise le bouton **« ➕ Ajouter au tracking »** "
+            "sous le tableau des prédictions pour commencer le forward test."
+        )
         return
-
-    # Construction long (idem)
-    rows = []
-    for _, r in df.iterrows():
-        for kind, p_col, fair_col, book_col, outcome_col, edge_col in [
-            ("scorer", "p_model_scorer", "fair_odd_scorer", "betclic_odd_scorer",
-             "outcome_scored", "edge_scorer"),
-            ("assist", "p_model_assist", "fair_odd_assist", "betclic_odd_assist",
-             "outcome_assisted", "edge_assist"),
-        ]:
-            if pd.isna(r.get(p_col)):
-                continue
-            rows.append({
-                "league": r["league_slug"],
-                "match": r["match"],
-                "kickoff": r["kickoff"],
-                "player": r["player_name"],
-                "marche": kind,
-                "p_model": r[p_col],
-                "fair_odd": r[fair_col],
-                "book_odd": r.get(book_col),
-                "edge": r.get(edge_col),
-                "outcome": r.get(outcome_col),
-                "enriched": pd.notna(r.get("enriched_at")),
-            })
-
-    pdf = pd.DataFrame(rows)
 
     # KPIs globaux
-    enriched = pdf[pdf["enriched"]]
-    pending = pdf[~pdf["enriched"]]
-    valued = enriched[(enriched["edge"].notna()) & (enriched["edge"] > 0) & (enriched["book_odd"].notna())]
+    df_b = pd.DataFrame(bets)
+    n_total = len(df_b)
+    n_pending = int((df_b["result"] == "pending").sum())
+    n_won = int((df_b["result"] == "won").sum())
+    n_lost = int((df_b["result"] == "lost").sum())
+    n_void = int((df_b["result"] == "void").sum())
+    n_settled = n_won + n_lost  # void exclu du ROI
+    stake_total = float(df_b["stake"].sum())
+    profit_total = float(df_b["profit_units"].fillna(0).sum())
+    stake_settled = float(df_b[df_b["result"].isin(["won", "lost"])]["stake"].sum())
+    roi_pct = (profit_total / stake_settled * 100) if stake_settled > 0 else 0.0
+    hit_rate = (n_won / n_settled * 100) if n_settled > 0 else 0.0
+    edge_avg = float(df_b["edge_pct"].mean()) if n_total > 0 else 0.0
 
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Picks loggés", len(pdf))
-    c2.metric("Matches finis (enrichis)", len(enriched))
-    c3.metric("En attente résultat", len(pending))
-    c4.metric("Picks à edge > 0% (joués)", len(valued))
+    k1, k2, k3, k4, k5 = st.columns(5)
+    k1.metric("Bets trackés", n_total, delta=f"{n_pending} en attente")
+    k2.metric("Mise totale", f"{stake_total:.1f} u")
+    k3.metric("P/L réalisé", f"{profit_total:+.2f} u",
+              delta=f"{roi_pct:+.1f}% ROI" if n_settled else None)
+    k4.metric("Hit rate", f"{hit_rate:.1f}%" if n_settled else "—",
+              delta=f"{n_won}W / {n_lost}L" if n_settled else None)
+    k5.metric("Edge moyen", f"{edge_avg:+.1f}%")
 
-    if valued.empty:
-        st.info("Pas encore de picks à edge > 0% sur des matchs finis. Patience !")
-        return
+    if n_void:
+        st.caption(f"({n_void} bet(s) void exclus du calcul ROI/hit rate)")
 
-    # ROI par tranche d'edge
-    valued = valued.copy()
-    valued["pnl"] = valued.apply(
-        lambda r: (r["book_odd"] - 1.0) if r["outcome"] else -1.0, axis=1
+    st.markdown("---")
+    st.markdown("### 📋 Détail des bets trackés")
+
+    # Construction du tableau d'affichage
+    def _kickoff_str(s):
+        if not s or pd.isna(s):
+            return "—"
+        try:
+            ts = pd.to_datetime(s, utc=True).tz_convert("Europe/Paris")
+            return ts.strftime("%a %d/%m %H:%M")
+        except Exception:
+            return str(s)[:16]
+
+    def _result_label(r):
+        return {
+            "pending": "⏳ En attente",
+            "won": "✅ Gagné",
+            "lost": "❌ Perdu",
+            "void": "↩ Annulé",
+        }.get(r, r)
+
+    show_rows = []
+    for b in sorted(bets, key=lambda x: x.get("added_at", ""), reverse=True):
+        show_rows.append({
+            "id": b["id"],
+            "Ajouté": (b.get("added_at") or "")[:16].replace("T", " "),
+            "Kickoff": _kickoff_str(b.get("kickoff")),
+            "Ligue": b.get("league_name") or b.get("league_slug") or "—",
+            "Match": b.get("match", "—"),
+            "Pick": f"{b['player_name']} ({b['market']})",
+            "p %": (round(b["p_model"] * 100, 1)
+                    if b.get("p_model") is not None else None),
+            "Cote juste": b.get("fair_odd"),
+            "Cote prise": b.get("betclic_odd"),
+            "Edge %": b.get("edge_pct"),
+            "Mise": b.get("stake"),
+            "Statut": _result_label(b.get("result", "pending")),
+            "P/L u": b.get("profit_units"),
+        })
+    df_show = pd.DataFrame(show_rows)
+
+    st.dataframe(
+        df_show.drop(columns=["id"]),
+        use_container_width=True,
+        hide_index=True,
+        height=min(620, 80 + 36 * len(df_show)),
+        column_config={
+            "p %": st.column_config.NumberColumn("p %", format="%.1f"),
+            "Cote juste": st.column_config.NumberColumn("Cote juste", format="%.2f"),
+            "Cote prise": st.column_config.NumberColumn("Cote prise", format="%.2f"),
+            "Edge %": st.column_config.NumberColumn("Edge %", format="%+.2f"),
+            "Mise": st.column_config.NumberColumn("Mise", format="%.2f"),
+            "P/L u": st.column_config.NumberColumn("P/L u", format="%+.2f"),
+        },
     )
-    valued["edge_bin"] = pd.cut(
-        valued["edge"] * 100,
-        bins=[0, 2, 5, 10, 20, 100],
-        labels=["0-2%", "2-5%", "5-10%", "10-20%", ">20%"],
-        include_lowest=True,
+
+    # Actions par bet : MAJ statut manuel + suppression
+    st.markdown("---")
+    st.markdown("### ⚙️ Actions sur un bet")
+    st.caption(
+        "Forcer un statut manuellement (utile si le résultat du match n'a pas "
+        "encore été enrichi automatiquement) ou supprimer un bet."
     )
 
-    st.markdown("### Performance par tranche d'edge")
-    perf = (valued.groupby(["marche", "edge_bin"], observed=True)
-            .agg(picks=("pnl", "size"),
-                 wins=("outcome", "sum"),
-                 pnl=("pnl", "sum"),
-                 stake=("pnl", "size"))
-            .reset_index())
-    perf["roi_%"] = (perf["pnl"] / perf["stake"] * 100).round(2)
-    perf["hit_rate_%"] = (perf["wins"] / perf["picks"] * 100).round(1)
-    st.dataframe(perf[["marche", "edge_bin", "picks", "wins", "hit_rate_%", "pnl", "roi_%"]],
-                 use_container_width=True, hide_index=True)
-
-    # ROI cumulé
-    st.markdown("### ROI cumulé")
-    cumul = valued.sort_values("kickoff").reset_index(drop=True)
-    cumul["pnl_cum"] = cumul["pnl"].cumsum()
-    cumul["pick_id"] = range(1, len(cumul) + 1)
-    st.line_chart(cumul.set_index("pick_id")["pnl_cum"], height=300)
-
-    with st.expander("📋 Détail des picks joués"):
-        show = cumul[["kickoff", "league", "match", "player", "marche", "p_model",
-                      "fair_odd", "book_odd", "edge", "outcome", "pnl"]].copy()
-        show["p_model"] = (show["p_model"] * 100).round(1)
-        show["edge"] = (show["edge"] * 100).round(2)
-        st.dataframe(show, use_container_width=True, hide_index=True)
+    bet_options = {
+        f"#{b['id']} · {b['player_name']} ({b['market']}) · {b['match']}": b["id"]
+        for b in sorted(bets, key=lambda x: x.get("added_at", ""), reverse=True)
+    }
+    ac1, ac2, ac3, ac4 = st.columns([3, 1.3, 1.3, 1.3])
+    with ac1:
+        sel_label = st.selectbox(
+            "Bet à modifier",
+            options=list(bet_options.keys()),
+            key="forward_action_pick",
+        )
+        sel_bet_id = bet_options[sel_label]
+    with ac2:
+        new_status = st.selectbox(
+            "Forcer statut",
+            options=["pending", "won", "lost", "void"],
+            format_func=_result_label,
+            key=f"forward_status_{sel_bet_id}",
+        )
+    with ac3:
+        st.write("")
+        if st.button("Mettre à jour", key=f"forward_update_{sel_bet_id}",
+                     use_container_width=True):
+            update_forward_bet_result(sel_bet_id, new_status)
+            st.success(f"Bet #{sel_bet_id} → {_result_label(new_status)}")
+            st.rerun()
+    with ac4:
+        st.write("")
+        if st.button("🗑 Supprimer", key=f"forward_delete_{sel_bet_id}",
+                     use_container_width=True):
+            delete_forward_bet(sel_bet_id)
+            st.success(f"Bet #{sel_bet_id} supprimé")
+            st.rerun()
 
 
 # ---------------------------------------------------------------------------
@@ -1081,27 +1225,47 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         if do_add:
             row = candidates.iloc[sel_idx]
             joueur_clean = str(row["Joueur"]).replace("★ ", "").strip()
-            marche_clean = row["_marche"]
+            marche_clean = row["_marche"]  # "Buteur" ou "Passeur"
             match_str = f"{home_name} - {away_name}"
             cote_book = float(row["Cote Betclic"])
             cote_juste = (float(row["Cote juste"])
                           if pd.notna(row.get("Cote juste")) else None)
             edge_pct = float(row["Edge %"])
+            pid = int(row["_pid"])
+
+            # Lookup contexte enrichi dans le forward log (sub) via pid
+            ref_row = sub[sub["player_id"] == pid].iloc[0] if not sub[sub["player_id"] == pid].empty else None
+            league_slug = ref_row.get("league_slug") if ref_row is not None else None
+            league_name = ref_row.get("league_name") if ref_row is not None else None
+            kickoff_iso = (ref_row.get("kickoff").isoformat()
+                           if ref_row is not None and pd.notna(ref_row.get("kickoff"))
+                           else None)
+            p_model = (float(ref_row["p_model_scorer"])
+                       if marche_clean == "Buteur" and ref_row is not None and pd.notna(ref_row.get("p_model_scorer"))
+                       else (float(ref_row["p_model_assist"])
+                             if marche_clean == "Passeur" and ref_row is not None and pd.notna(ref_row.get("p_model_assist"))
+                             else None))
+
             try:
-                bet = add_bet(
+                bet = add_forward_bet(
+                    event_id=event_id,
                     match=match_str,
-                    side=f"{joueur_clean} ({marche_clean})",
-                    odds=cote_book,
+                    league_slug=league_slug,
+                    league_name=league_name,
+                    kickoff=kickoff_iso,
+                    player_id=pid,
+                    player_name=joueur_clean,
+                    market=marche_clean,
+                    p_model=p_model,
+                    fair_odd=cote_juste,
+                    betclic_odd=cote_book,
+                    edge_pct=edge_pct,
                     stake=float(stake),
-                    odds_v8=cote_juste,
-                    closing_odds_pin=None,
-                    notes=(f"Forward test edge buteurs · ev_id={event_id} · "
-                           f"edge {edge_pct:+.1f}%"),
                 )
                 st.success(
                     f"Bet #{bet['id']} ajouté : **{joueur_clean}** "
                     f"({marche_clean}) @ {cote_book:.2f} — mise {float(stake):.2f}u. "
-                    f"Visible dans **📊 Suivi des paris**."
+                    f"Visible dans **📈 Tracking Test Edge Buteurs**."
                 )
             except Exception as e:
                 st.error(f"Erreur lors de l'ajout : {e}")

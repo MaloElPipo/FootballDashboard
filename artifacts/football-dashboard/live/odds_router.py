@@ -10,7 +10,12 @@ Sortie normalisée :
       "1x2":   (home, draw, away),
       "ou25":  (over, under),                 # peut être None
       "btts":  (yes, no),                     # peut être None
-      "source": "bsd" | "theoddsapi" | "betclic" | "bsd_event",
+      "source": "bsd_event"   (odds inline payload BSD)
+              | "bsd_bet365"  (compareOdds, 100% Bet365 — λ équipe le plus précis)
+              | "bsd_mix"     (compareOdds, mix Bet365 + best_odds)
+              | "bsd"         (compareOdds, 100% best_odds tous bookmakers)
+              | "theoddsapi"  (TheOddsAPI, 1X2+OU sans BTTS)
+              | "betclic"     (scrape Betclic),
       "mode":   "A" (3 marchés) | "B" (1X2+OU) | "C" (1X2 seul),
       "fetched_at": iso timestamp,
     }
@@ -112,9 +117,58 @@ def _try_bsd_event_inline(ev: dict | None) -> dict | None:
     }
 
 
+PREFERRED_BOOKMAKER_PREFIXES = ("Bet365",)
+
+
+def _bet365_odd(market: dict | None, selection_keys: list[str]) -> float | None:
+    """Cherche la première cote d'un bookmaker préféré (Bet365 toutes variantes
+    régionales) dans `market[sk]["bookmakers"]`.
+
+    Renvoie None si Bet365 absent → l'appelant pourra fallback sur best_odds.
+    """
+    if not isinstance(market, dict):
+        return None
+    for sk in selection_keys:
+        sel = market.get(sk)
+        if not isinstance(sel, dict):
+            continue
+        bookmakers = sel.get("bookmakers") or {}
+        if not isinstance(bookmakers, dict):
+            continue
+        for bm_name, bm_data in bookmakers.items():
+            if not isinstance(bm_name, str):
+                continue
+            if not any(bm_name.startswith(pfx) for pfx in PREFERRED_BOOKMAKER_PREFIXES):
+                continue
+            v = (bm_data or {}).get("decimal") if isinstance(bm_data, dict) else None
+            if isinstance(v, (int, float)) and v > 1.0:
+                return float(v)
+    return None
+
+
+def _best_odd(market: dict | None, selection_keys: list[str]) -> float | None:
+    """Meilleure cote tous bookmakers confondus (fallback historique)."""
+    if not isinstance(market, dict):
+        return None
+    for sk in selection_keys:
+        sel = market.get(sk)
+        if isinstance(sel, dict):
+            v = sel.get("best_odds")
+            if isinstance(v, (int, float)) and v > 1.0:
+                return float(v)
+    return None
+
+
 def _try_bsd_compare_via_helpers(bsd_event_id: int | None) -> dict | None:
     """Tente l'endpoint BSD compareOdds via REST direct (sans MCP).
     Format attendu : {"markets": {"1x2": {...}, "over_under_25": {...}, "btts": {...}}}.
+
+    Stratégie : Bet365 prioritaire si disponible sur les 3 marchés (cohérence
+    cross-market = λ équipe plus précis). Fallback sur best_odds par marché
+    quand Bet365 manque. Le champ `source` reflète la source effective :
+        "bsd_bet365"     → 3 marchés Bet365 (idéal)
+        "bsd_mix"        → mix Bet365 + best_odds
+        "bsd"            → aucun marché Bet365, 100 % best_odds
     """
     if not bsd_event_id:
         return None
@@ -137,41 +191,61 @@ def _try_bsd_compare_via_helpers(bsd_event_id: int | None) -> dict | None:
     if not isinstance(markets, dict):
         return None
 
-    def _best_odd(market: dict | None, selection_keys: list[str]) -> float | None:
-        if not isinstance(market, dict):
-            return None
-        for sk in selection_keys:
-            sel = market.get(sk)
-            if isinstance(sel, dict):
-                v = sel.get("best_odds")
-                if isinstance(v, (int, float)) and v > 1.0:
-                    return float(v)
-        return None
-
     m_1x2 = markets.get("1x2") or {}
     home_team = payload.get("home_team", "")
     away_team = payload.get("away_team", "")
-    h = _best_odd(m_1x2, [home_team, "1", "Home"])
-    d = _best_odd(m_1x2, ["Draw", "X", "draw"])
-    a = _best_odd(m_1x2, [away_team, "2", "Away"])
+    h_keys = [home_team, "1", "Home"]
+    d_keys = ["Draw", "X", "draw"]
+    a_keys = [away_team, "2", "Away"]
+
+    m_ou = markets.get("over_under_25") or {}
+    over_keys = ["Over 2.5", "over_2_5", "Plus de 2,5"]
+    under_keys = ["Under 2.5", "under_2_5", "Moins de 2,5"]
+
+    m_bt = markets.get("btts") or {}
+    yes_keys = ["Yes", "yes", "Oui"]
+    no_keys = ["No", "no", "Non"]
+
+    bet365_used = 0
+    fallback_used = 0
+
+    def _pick(market: dict, keys: list[str]) -> float | None:
+        nonlocal bet365_used, fallback_used
+        v = _bet365_odd(market, keys)
+        if v is not None:
+            bet365_used += 1
+            return v
+        v = _best_odd(market, keys)
+        if v is not None:
+            fallback_used += 1
+        return v
+
+    h = _pick(m_1x2, h_keys)
+    d = _pick(m_1x2, d_keys)
+    a = _pick(m_1x2, a_keys)
     if not (h and d and a):
         return None
 
-    m_ou = markets.get("over_under_25") or {}
-    over = _best_odd(m_ou, ["Over 2.5", "over_2_5", "Plus de 2,5"])
-    under = _best_odd(m_ou, ["Under 2.5", "under_2_5", "Moins de 2,5"])
-
-    m_bt = markets.get("btts") or {}
-    btts_yes = _best_odd(m_bt, ["Yes", "yes", "Oui"])
-    btts_no = _best_odd(m_bt, ["No", "no", "Non"])
+    over = _pick(m_ou, over_keys)
+    under = _pick(m_ou, under_keys)
+    btts_yes = _pick(m_bt, yes_keys)
+    btts_no = _pick(m_bt, no_keys)
 
     has_ou = bool(over and under)
     has_bt = bool(btts_yes and btts_no)
+
+    if bet365_used > 0 and fallback_used == 0:
+        source = "bsd_bet365"
+    elif bet365_used > 0 and fallback_used > 0:
+        source = "bsd_mix"
+    else:
+        source = "bsd"
+
     return {
         "1x2": (h, d, a),
         "ou25": (over, under) if has_ou else None,
         "btts": (btts_yes, btts_no) if has_bt else None,
-        "source": "bsd",
+        "source": source,
         "mode": "A" if (has_ou and has_bt) else ("B" if has_ou else "C"),
     }
 

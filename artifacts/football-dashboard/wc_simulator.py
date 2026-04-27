@@ -209,7 +209,28 @@ def _rank_group(standings):
     return sorted(standings.items(), key=sort_key)
 
 
-def _pick_best_thirds(group_results, n=8):
+def _pick_best_thirds(group_results, elo_map=None, n=8, sim_seed=None):
+    """Sélectionne les meilleurs `n` troisièmes des poules (CDM 2026 = 8 sur 12).
+
+    Règle de départage adaptée du règlement FIFA, avec adaptations Monte-Carlo :
+        1. Plus grand nombre de points
+        2. Meilleure différence de buts
+        3. Plus grand nombre de buts marqués
+        4. Position au ranking pré-tournoi (PROXY = Elo, plus fort gagne)
+           — équivalent fonctionnel du critère FIFA "position au classement
+           mondial FIFA". Le critère officiel "fair-play" (cartons) est OMIS
+           car la simulation Monte-Carlo ne modélise pas les cartons : l'Elo
+           le remplace pragmatiquement (modèle, NON conforme strict FIFA).
+        5. Tirage au sort
+           — `sim_seed=None` (défaut) : RNG vrai aléatoire (entropie OS), donc
+             chaque simulation Monte-Carlo a un tirage différent → pas de biais.
+           — `sim_seed=int` : reproductible (utile en debug/tests), une seed
+             différente par sim doit être passée par la boucle Monte-Carlo
+             pour préserver la diversité du tirage.
+    """
+    import random
+
+    elo_map = elo_map or {}
     thirds = []
     for grp_letter, ranked in group_results.items():
         if len(ranked) >= 3:
@@ -217,9 +238,18 @@ def _pick_best_thirds(group_results, n=8):
             s = ranked[2][1]
             thirds.append((grp_letter, code, s))
 
+    rng = random.Random(sim_seed) if sim_seed is not None else random.Random()
+    draw_tokens = {code: rng.random() for _, code, _ in thirds}
+
     def sort_key(item):
-        _, _, s = item
-        return (-s["pts"], -(s["gf"] - s["ga"]), -s["gf"])
+        grp, code, s = item
+        return (
+            -s["pts"],
+            -(s["gf"] - s["ga"]),
+            -s["gf"],
+            -float(elo_map.get(code, 1500.0)),
+            draw_tokens[code],
+        )
     thirds.sort(key=sort_key)
     return thirds[:n]
 
@@ -324,7 +354,8 @@ def simulate_tournament(elo_map, params=None):
             tracker[code]["group_pos"] = pos + 1
             tracker[code]["group_pts"] = s["pts"]
 
-    best_thirds = _pick_best_thirds(group_results, n=8)
+    sim_seed = (params or {}).get("sim_seed") if params else None
+    best_thirds = _pick_best_thirds(group_results, elo_map=elo_map, n=8, sim_seed=sim_seed)
     qualified_thirds_map = {t[1]: t[0] for t in best_thirds}
 
     for grp_letter, ranked in group_results.items():

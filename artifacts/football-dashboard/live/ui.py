@@ -1353,6 +1353,51 @@ def render_predictions_buteurs_page():
             "(cotes Betclic figées une fois le coup d'envoi passé)."
         )
 
+    # Filtre rapide par compétition (au-dessus du sélecteur match)
+    # Permet de naviguer rapidement « tous les matchs d'une ligue » sans
+    # scroller un long selectbox mélangeant les 5 championnats.
+    counts_by_slug = grouped["league_slug"].value_counts().to_dict()
+    comp_slugs = list(counts_by_slug.keys())  # déjà triés par fréquence
+    if len(comp_slugs) > 1:  # filtre inutile si une seule ligue présente
+        comp_options = ["Toutes"] + [
+            f"{LEAGUE_LABELS.get(s, s)} ({counts_by_slug[s]})" for s in comp_slugs
+        ]
+        slug_by_label = {
+            f"{LEAGUE_LABELS.get(s, s)} ({counts_by_slug[s]})": s for s in comp_slugs
+        }
+
+        # Persistance via query param (URL partageable / bookmark par ligue)
+        qp_comp = st.query_params.get("comp")
+        default_idx = 0
+        if qp_comp and qp_comp in comp_slugs:
+            for i, lab in enumerate(comp_options[1:], start=1):
+                if slug_by_label[lab] == qp_comp:
+                    default_idx = i
+                    break
+
+        selected_comp = st.radio(
+            "🏆 Filtrer par compétition",
+            comp_options,
+            index=default_idx,
+            horizontal=True,
+            key="predbut_comp_filter",
+        )
+
+        if selected_comp != "Toutes":
+            target_slug = slug_by_label[selected_comp]
+            grouped = grouped[grouped["league_slug"] == target_slug].copy()
+            if st.query_params.get("comp") != target_slug:
+                st.query_params["comp"] = target_slug
+            if grouped.empty:
+                st.info(
+                    f"Aucun match prévu dans cette compétition pour l'instant. "
+                    "Reviens un peu avant le prochain week-end."
+                )
+                return
+        else:
+            if "comp" in st.query_params:
+                del st.query_params["comp"]
+
     # Sélection via query param OR session_state pour permettre URL partageable
     qp = st.query_params
     qp_eid = qp.get("event_id")

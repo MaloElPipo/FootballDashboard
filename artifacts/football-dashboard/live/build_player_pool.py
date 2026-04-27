@@ -35,6 +35,23 @@ from live.bsd_helpers import (  # noqa: E402
     get_finished_events,
     fetch_events_player_stats_parallel,
 )
+from live.leagues_config import LEAGUES as REGISTRY_LEAGUES  # noqa: E402
+
+
+def _extend_top5_with_registry() -> None:
+    """T017 — Étend TOP5_LEAGUES (dict en mémoire) avec le registre central
+    pour permettre à build_player_pool de construire les pools UCL/UEL et des
+    ~25 ligues secondaires sans toucher au dict figé de bsd_helpers/predict_today.
+    Mutation locale au process uniquement.
+    """
+    for slug, cfg in REGISTRY_LEAGUES.items():
+        if not cfg.bsd_id or slug in TOP5_LEAGUES:
+            continue
+        TOP5_LEAGUES[slug] = {
+            "bsd_id": cfg.bsd_id,
+            "name": cfg.name,
+            "country": cfg.country,
+        }
 
 
 def build_pool_for_league(slug: str, season_start: str, season_end: str) -> dict:
@@ -91,8 +108,13 @@ def main():
                     help="Fetch aussi la saison N-1 dans {slug}_pool_prev.json")
     args = ap.parse_args()
 
+    # T017 — Étend TOP5_LEAGUES avec le registre AVANT toute résolution de slug
+    _extend_top5_with_registry()
+
     if args.leagues == "all":
-        slugs = list(TOP5_LEAGUES.keys())
+        # Par défaut, on garde le comportement legacy = Top 5 only.
+        # Pour construire les autres ligues, passer explicitement leurs slugs.
+        slugs = ["premier_league", "la_liga", "serie_a", "bundesliga", "ligue_1"]
     else:
         slugs = [s.strip() for s in args.leagues.split(",")]
 

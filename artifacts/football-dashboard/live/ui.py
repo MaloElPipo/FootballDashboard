@@ -957,16 +957,31 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "xT": (round(float(xshots), 2) if pd.notna(xshots) else None),
             "xT cad.": (round(float(xsot), 2) if pd.notna(xsot) else None),
         }
+        # T008 — "Cote si tit." : pour un titulaire (confirmé OU présumé), c'est
+        # exactement la cote juste actuelle. Pour un sub présumé, c'est la cote
+        # shadow pré-calculée par le modèle (`fair_odd_*_if_starter`) qui simule
+        # la promotion de ce joueur en titulaire (autres lineup inchangés). Ça
+        # permet de repérer instantanément quel sub serait dangereux s'il était
+        # finalement aligné (cas Zirkzee MUFC : cote juste sub ≈ 10, cote si tit
+        # ≈ 4-6). Note : le shadow vient du forward log, il n'est PAS recalculé
+        # quand l'user décoche d'autres joueurs (c'est une projection figée
+        # "single change" au moment de la prédiction).
+        def _cote_si_tit(fair_actual, fair_shadow):
+            if is_starter:
+                return (round(float(fair_actual), 2)
+                        if pd.notna(fair_actual) else None)
+            return (round(float(fair_shadow), 2)
+                    if pd.notna(fair_shadow) else None)
+
         if market in ("Buteur", "Les deux"):
-            # T009 — la "Cote juste" est calculée à 90' théorique (best case
-            # garantie buteur FR) → la colonne "Cote si tit." est devenue
-            # redondante et a été supprimée.
             rows.append({
                 "_pid": pid, **common_pre, "Marché": "⚽ Buteur",
                 "p %": (round(float(r["p_model_scorer"]) * 100, 1)
                         if pd.notna(r.get("p_model_scorer")) else None),
                 "Cote juste": (round(float(r["fair_odd_scorer"]), 2)
                                if pd.notna(r.get("fair_odd_scorer")) else None),
+                "Cote si tit.": _cote_si_tit(r.get("fair_odd_scorer"),
+                                              r.get("fair_odd_scorer_if_starter")),
                 "Cote Betclic": (round(float(r["betclic_odd_scorer"]), 2)
                                  if pd.notna(r.get("betclic_odd_scorer")) else None),
                 "Edge %": (round(float(r["edge_scorer"]) * 100, 2)
@@ -979,6 +994,8 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
                         if pd.notna(r.get("p_model_assist")) else None),
                 "Cote juste": (round(float(r["fair_odd_assist"]), 2)
                                if pd.notna(r.get("fair_odd_assist")) else None),
+                "Cote si tit.": _cote_si_tit(r.get("fair_odd_assist"),
+                                              r.get("fair_odd_assist_if_starter")),
                 "Cote Betclic": (round(float(r["betclic_odd_assist"]), 2)
                                  if pd.notna(r.get("betclic_odd_assist")) else None),
                 "Edge %": (round(float(r["edge_assist"]) * 100, 2)
@@ -1010,6 +1027,19 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
                      "buteur FR (Betclic & co valident le bet même si le "
                      "joueur entre en cours de match). Directement comparable "
                      "à la cote bookmaker."),
+            "Cote si tit.": st.column_config.NumberColumn(
+                "Cote si tit.", format="%.2f",
+                help="Cote shadow — 'et si CE joueur était finalement titulaire ?'. "
+                     "Pour un titulaire (★/★?) c'est égal à la Cote juste. Pour "
+                     "un sub présumé (Sub?), on simule sa promotion en titulaire "
+                     "(reste de la compo inchangée) et on renormalise la part xG : "
+                     "la cote peut baisser (parfois nettement) selon la valeur "
+                     "intrinsèque du joueur. NB : la Cote juste d'un sub est déjà "
+                     "calculée à 90' théorique (garantie buteur FR), donc l'écart "
+                     "shadow vs cote juste est souvent modéré. La valeur shadow "
+                     "est figée au moment de la prédiction et ne se recalcule "
+                     "PAS quand vous décochez d'autres joueurs (c'est une "
+                     "projection 'single change')."),
             "xT": st.column_config.NumberColumn(
                 "xT", format="%.2f", width="small",
                 help="Tirs attendus dans CE match = shots/90 carrière "
@@ -1025,15 +1055,15 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },
         column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
-                      "Marché", "p %", "Cote juste",
+                      "Marché", "p %", "Cote juste", "Cote si tit.",
                       "Cote Betclic", "Edge %", "xT", "xT cad."],
         hide_index=True,
         use_container_width=True,
         height=600,
         key=f"editor_{event_id}",
         disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
-                  "p %", "Cote juste", "Cote Betclic", "Edge %",
-                  "xT", "xT cad."],
+                  "p %", "Cote juste", "Cote si tit.", "Cote Betclic",
+                  "Edge %", "xT", "xT cad."],
     )
 
     # Détection des changements de checkbox → MAJ session_state + rerun.

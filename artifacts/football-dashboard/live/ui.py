@@ -31,6 +31,13 @@ from live.forward_bets import (  # noqa: E402
     load_forward_bets,
     update_forward_bet_result,
 )
+from live.leagues_config import (  # noqa: E402
+    LEAGUES,
+    REGION_LABELS,
+    REGION_ORDER,
+    group_by_region,
+    league_labels_dict,
+)
 
 
 def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
@@ -48,12 +55,12 @@ def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
     out[keep] = arr[keep]
     return out
 
-LEAGUE_LABELS = {
+# LEAGUE_LABELS est désormais auto-généré depuis le registre central
+# `live.leagues_config` (T017) ; on conserve un override pour Premier League
+# afin de garder le drapeau d'Angleterre (régional) plutôt que celui de l'UK.
+LEAGUE_LABELS: dict[str, str] = {
+    **league_labels_dict(),
     "premier_league": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League",
-    "la_liga": "🇪🇸 La Liga",
-    "serie_a": "🇮🇹 Serie A",
-    "bundesliga": "🇩🇪 Bundesliga",
-    "ligue_1": "🇫🇷 Ligue 1",
 }
 
 
@@ -1353,50 +1360,90 @@ def render_predictions_buteurs_page():
             "(cotes Betclic figées une fois le coup d'envoi passé)."
         )
 
-    # Filtre rapide par compétition (au-dessus du sélecteur match)
-    # Permet de naviguer rapidement « tous les matchs d'une ligue » sans
-    # scroller un long selectbox mélangeant les 5 championnats.
+    # T017e — Nav Flashscore-like : sidebar arborescente par région avec
+    # expanders + 2 toggles (Top 5 uniquement / Edge > 5%).
+    # On expose dans la sidebar *uniquement les ligues présentes dans le log*
+    # pour éviter une navigation creuse vers des ligues sans données.
     counts_by_slug = grouped["league_slug"].value_counts().to_dict()
-    comp_slugs = list(counts_by_slug.keys())  # déjà triés par fréquence
-    if len(comp_slugs) > 1:  # filtre inutile si une seule ligue présente
-        comp_options = ["Toutes"] + [
-            f"{LEAGUE_LABELS.get(s, s)} ({counts_by_slug[s]})" for s in comp_slugs
-        ]
-        slug_by_label = {
-            f"{LEAGUE_LABELS.get(s, s)} ({counts_by_slug[s]})": s for s in comp_slugs
-        }
+    comp_slugs_in_log = list(counts_by_slug.keys())
 
-        # Persistance via query param (URL partageable / bookmark par ligue)
-        qp_comp = st.query_params.get("comp")
-        default_idx = 0
-        if qp_comp and qp_comp in comp_slugs:
-            for i, lab in enumerate(comp_options[1:], start=1):
-                if slug_by_label[lab] == qp_comp:
-                    default_idx = i
-                    break
+    # Calcul "matchs avec au moins 1 edge ≥ 5%" : max sur (scorer, assist)
+    # par event_id puis filtre seuil. Robuste si une seule des 2 colonnes existe.
+    edge_cols = [c for c in ("edge_scorer", "edge_assist") if c in df.columns]
+    if edge_cols and "event_id" in df.columns:
+        edge_per_event = df.groupby("event_id")[edge_cols].max().max(axis=1)
+        events_with_edge = set(
+            int(eid) for eid, v in edge_per_event.items()
+            if pd.notna(v) and float(v) >= 0.05
+        )
+    else:
+        events_with_edge = set()
 
-        selected_comp = st.radio(
-            "🏆 Filtrer par compétition",
-            comp_options,
-            index=default_idx,
-            horizontal=True,
-            key="predbut_comp_filter",
+    qp_comp = st.query_params.get("comp")
+    selected_slug: str | None = qp_comp if qp_comp in comp_slugs_in_log else None
+
+    with st.sidebar:
+        st.markdown("### 🧭 Navigation compétitions")
+
+        # Toggles globaux
+        only_top5 = st.toggle(
+            "⭐ Top 5 uniquement", value=False, key="predbut_only_top5",
+            help="Masque toutes les compétitions hors Top 5 (Premier League, La Liga, Serie A, Bundesliga, Ligue 1).",
+        )
+        only_edge = st.toggle(
+            "💰 Edge ≥ 5% uniquement", value=False, key="predbut_only_edge",
+            help="N'affiche que les matchs avec au moins une cote dont l'edge modèle ≥ 5%.",
         )
 
-        if selected_comp != "Toutes":
-            target_slug = slug_by_label[selected_comp]
-            grouped = grouped[grouped["league_slug"] == target_slug].copy()
-            if st.query_params.get("comp") != target_slug:
-                st.query_params["comp"] = target_slug
-            if grouped.empty:
-                st.info(
-                    f"Aucun match prévu dans cette compétition pour l'instant. "
-                    "Reviens un peu avant le prochain week-end."
-                )
-                return
-        else:
+        if st.button("🔄 Toutes les compétitions", key="predbut_reset_comp",
+                     use_container_width=True):
+            selected_slug = None
             if "comp" in st.query_params:
                 del st.query_params["comp"]
+            st.rerun()
+
+        groups = group_by_region(include_tier2=False)
+        for region in REGION_ORDER:
+            cfgs = [c for c in groups.get(region, [])
+                    if c.slug in counts_by_slug
+                    and (not only_top5 or c.region == "top5")]
+            if not cfgs:
+                continue
+            region_total = sum(counts_by_slug[c.slug] for c in cfgs)
+            with st.expander(f"{REGION_LABELS.get(region, region)} ({region_total})",
+                             expanded=region in ("uefa", "top5")):
+                for c in cfgs:
+                    n = counts_by_slug.get(c.slug, 0)
+                    label = f"{LEAGUE_LABELS.get(c.slug, c.name)} · {n}"
+                    is_active = (selected_slug == c.slug)
+                    btn_label = ("✓ " + label) if is_active else label
+                    if st.button(btn_label, key=f"predbut_nav_{c.slug}",
+                                 use_container_width=True):
+                        st.query_params["comp"] = c.slug
+                        st.query_params["page"] = "predictions_buteurs"
+                        st.rerun()
+
+    # Application des filtres au DataFrame grouped
+    if only_top5:
+        top5_set = {"premier_league", "la_liga", "serie_a", "bundesliga", "ligue_1"}
+        grouped = grouped[grouped["league_slug"].isin(top5_set)].copy()
+    if only_edge and events_with_edge:
+        grouped = grouped[grouped["event_id"].astype(int).isin(events_with_edge)].copy()
+    if selected_slug:
+        grouped = grouped[grouped["league_slug"] == selected_slug].copy()
+
+    if selected_slug:
+        st.caption(
+            f"🏆 Compétition sélectionnée : **{LEAGUE_LABELS.get(selected_slug, selected_slug)}** "
+            f"— {len(grouped)} match(s)."
+        )
+
+    if grouped.empty:
+        st.info(
+            "Aucun match ne correspond à tes filtres. Élargis la sélection "
+            "dans la barre latérale ou clique sur **🔄 Toutes les compétitions**."
+        )
+        return
 
     # Sélection via query param OR session_state pour permettre URL partageable
     qp = st.query_params

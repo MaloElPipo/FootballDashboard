@@ -1,0 +1,395 @@
+"""Router odds 3 marchés (1X2 + O/U 2.5 + BTTS) avec cascade BSD → TheOddsAPI → Betclic.
+
+Architecture validée 27/04/2026 :
+- BSD `compareOdds` : 22+ bookmakers, 3 marchés, couvre 47 compétitions du catalogue BSD.
+- TheOddsAPI : 53 compétitions soccer dont UECL ; pas de BTTS sur soccer (mode B = sans BTTS).
+- Betclic : fallback du fallback (scrape ponctuel).
+
+Sortie normalisée :
+    {
+      "1x2":   (home, draw, away),
+      "ou25":  (over, under),                 # peut être None
+      "btts":  (yes, no),                     # peut être None
+      "source": "bsd" | "theoddsapi" | "betclic" | "bsd_event",
+      "mode":   "A" (3 marchés) | "B" (1X2+OU) | "C" (1X2 seul),
+      "fetched_at": iso timestamp,
+    }
+
+READ-ONLY : ce module ne modifie ni `predict_today.py`, ni `g2_engine.py`,
+ni le scraping Betclic existant. Il les *utilise*.
+"""
+from __future__ import annotations
+
+import json
+import os
+import time
+from pathlib import Path
+from typing import Any, Optional
+
+import requests
+
+from live.leagues_config import LeagueConfig, get_by_bsd_id
+
+ROOT = Path(__file__).resolve().parent
+_CACHE_DIR = ROOT / "data"
+_CACHE_FILE = _CACHE_DIR / "odds_router_cache.json"
+CACHE_TTL_SECONDS = 30 * 60  # 30 min
+
+THEODDSAPI_BASE = "https://api.the-odds-api.com/v4"
+DEFAULT_TIMEOUT = 12
+
+
+# --------------------------------------------------------------------- cache
+
+def _load_cache() -> dict[str, Any]:
+    if not _CACHE_FILE.exists():
+        return {}
+    try:
+        with _CACHE_FILE.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _save_cache(cache: dict[str, Any]) -> None:
+    try:
+        _CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        tmp = _CACHE_FILE.with_suffix(_CACHE_FILE.suffix + ".tmp")
+        with tmp.open("w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+        os.replace(tmp, _CACHE_FILE)
+    except Exception:
+        pass
+
+
+def _cache_key(bsd_event_id: int | None, league_slug: str,
+               home: str | None, away: str | None) -> str:
+    if bsd_event_id:
+        return f"bsd:{bsd_event_id}"
+    return f"meta:{league_slug}:{(home or '').lower()}:{(away or '').lower()}"
+
+
+def _cache_get(key: str) -> dict | None:
+    cache = _load_cache()
+    entry = cache.get(key)
+    if not entry:
+        return None
+    if time.time() - entry.get("fetched_ts", 0) > CACHE_TTL_SECONDS:
+        return None
+    return entry
+
+
+def _cache_put(key: str, payload: dict) -> None:
+    cache = _load_cache()
+    payload = dict(payload)
+    payload["fetched_ts"] = time.time()
+    cache[key] = payload
+    _save_cache(cache)
+
+
+# --------------------------------------------------------------------- BSD source
+
+def _try_bsd_event_inline(ev: dict | None) -> dict | None:
+    """Essaye d'abord les odds inline du payload BSD event (format
+    historique : odds_home/odds_draw/odds_away/odds_over_25/odds_under_25/...).
+    Couvre Top 5 + UCL/UEL pour lesquels les odds sont déjà dans l'event detail.
+    """
+    if not ev:
+        return None
+    h, d, a = ev.get("odds_home"), ev.get("odds_draw"), ev.get("odds_away")
+    if not (h and d and a):
+        return None
+    over, under = ev.get("odds_over_25"), ev.get("odds_under_25")
+    btts_y, btts_n = ev.get("odds_btts_yes"), ev.get("odds_btts_no")
+    has_ou = bool(over and under)
+    has_bt = bool(btts_y and btts_n)
+    return {
+        "1x2": (float(h), float(d), float(a)),
+        "ou25": (float(over), float(under)) if has_ou else None,
+        "btts": (float(btts_y), float(btts_n)) if has_bt else None,
+        "source": "bsd_event",
+        "mode": "A" if (has_ou and has_bt) else ("B" if has_ou else "C"),
+    }
+
+
+def _try_bsd_compare_via_helpers(bsd_event_id: int | None) -> dict | None:
+    """Tente l'endpoint BSD compareOdds via REST direct (sans MCP).
+    Format attendu : {"markets": {"1x2": {...}, "over_under_25": {...}, "btts": {...}}}.
+    """
+    if not bsd_event_id:
+        return None
+    key = os.environ.get("BSD_API_KEY", "")
+    if not key:
+        return None
+    try:
+        r = requests.get(
+            f"https://sports.bzzoiro.com/api/events/{int(bsd_event_id)}/compare-odds/",
+            headers={"Authorization": f"Token {key}"},
+            timeout=DEFAULT_TIMEOUT,
+        )
+        if r.status_code != 200:
+            return None
+        payload = r.json()
+    except Exception:
+        return None
+
+    markets = payload.get("markets") or {}
+    if not isinstance(markets, dict):
+        return None
+
+    def _best_odd(market: dict | None, selection_keys: list[str]) -> float | None:
+        if not isinstance(market, dict):
+            return None
+        for sk in selection_keys:
+            sel = market.get(sk)
+            if isinstance(sel, dict):
+                v = sel.get("best_odds")
+                if isinstance(v, (int, float)) and v > 1.0:
+                    return float(v)
+        return None
+
+    m_1x2 = markets.get("1x2") or {}
+    home_team = payload.get("home_team", "")
+    away_team = payload.get("away_team", "")
+    h = _best_odd(m_1x2, [home_team, "1", "Home"])
+    d = _best_odd(m_1x2, ["Draw", "X", "draw"])
+    a = _best_odd(m_1x2, [away_team, "2", "Away"])
+    if not (h and d and a):
+        return None
+
+    m_ou = markets.get("over_under_25") or {}
+    over = _best_odd(m_ou, ["Over 2.5", "over_2_5", "Plus de 2,5"])
+    under = _best_odd(m_ou, ["Under 2.5", "under_2_5", "Moins de 2,5"])
+
+    m_bt = markets.get("btts") or {}
+    btts_yes = _best_odd(m_bt, ["Yes", "yes", "Oui"])
+    btts_no = _best_odd(m_bt, ["No", "no", "Non"])
+
+    has_ou = bool(over and under)
+    has_bt = bool(btts_yes and btts_no)
+    return {
+        "1x2": (h, d, a),
+        "ou25": (over, under) if has_ou else None,
+        "btts": (btts_yes, btts_no) if has_bt else None,
+        "source": "bsd",
+        "mode": "A" if (has_ou and has_bt) else ("B" if has_ou else "C"),
+    }
+
+
+# --------------------------------------------------------------------- TheOddsAPI source
+
+def _try_theoddsapi(league_cfg: LeagueConfig, home: str, away: str,
+                    kickoff_iso: str | None) -> dict | None:
+    """Récupère 1X2 + O/U via TheOddsAPI (mode B garanti ; pas de BTTS soccer).
+
+    Match resolution = home_team + away_team substrings (tolérant accents).
+    """
+    if not league_cfg.theoddsapi_key:
+        return None
+    api_key = os.environ.get("ODDS_API_KEY")
+    if not api_key:
+        return None
+
+    try:
+        r = requests.get(
+            f"{THEODDSAPI_BASE}/sports/{league_cfg.theoddsapi_key}/odds",
+            params={
+                "regions": "eu",
+                "markets": "h2h,totals",
+                "oddsFormat": "decimal",
+                "apiKey": api_key,
+            },
+            timeout=DEFAULT_TIMEOUT,
+        )
+        if r.status_code != 200:
+            return None
+        events = r.json()
+    except Exception:
+        return None
+
+    if not isinstance(events, list) or not events:
+        return None
+
+    def _norm(s: str) -> str:
+        import unicodedata
+        if not s:
+            return ""
+        s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+        return s.lower().strip()
+
+    nh, na = _norm(home), _norm(away)
+    target = None
+    for ev in events:
+        eh, ea = _norm(ev.get("home_team", "")), _norm(ev.get("away_team", ""))
+        if (nh in eh or eh in nh) and (na in ea or ea in na):
+            target = ev
+            break
+    if target is None:
+        return None
+
+    h = d = a = None
+    over = under = None
+    for bk in target.get("bookmakers", []):
+        for mk in bk.get("markets", []):
+            mk_key = mk.get("key")
+            outs = mk.get("outcomes", [])
+            if mk_key == "h2h" and h is None:
+                for o in outs:
+                    name = _norm(o.get("name", ""))
+                    if name == _norm(target.get("home_team", "")):
+                        h = float(o["price"])
+                    elif name == _norm(target.get("away_team", "")):
+                        a = float(o["price"])
+                    elif name in ("draw", "tie"):
+                        d = float(o["price"])
+            elif mk_key == "totals" and over is None:
+                for o in outs:
+                    if abs(float(o.get("point", 0)) - 2.5) < 0.01:
+                        if o.get("name", "").lower() == "over":
+                            over = float(o["price"])
+                        elif o.get("name", "").lower() == "under":
+                            under = float(o["price"])
+        if h and d and a and over and under:
+            break
+
+    if not (h and d and a):
+        return None
+
+    has_ou = bool(over and under)
+    return {
+        "1x2": (h, d, a),
+        "ou25": (over, under) if has_ou else None,
+        "btts": None,
+        "source": "theoddsapi",
+        "mode": "B" if has_ou else "C",
+    }
+
+
+# --------------------------------------------------------------------- Betclic source
+
+def _try_betclic(league_cfg: LeagueConfig, betclic_matches: list[dict] | None,
+                 home: str, away: str) -> dict | None:
+    """Essaye de retrouver les odds 1X2 + O/U + BTTS dans le scrape Betclic
+    déjà fait par predict_today.py (passé en argument).
+
+    Note : `betclic_matches` provient de scrape_betclic_leagues() — chaque
+    entrée a une `selections: list[dict]` avec market_type (`1x2_home`,
+    `1x2_draw`, `1x2_away`, `total_over_2_5`, `total_under_2_5`,
+    `btts_yes`, `btts_no`, ...).
+    """
+    if not betclic_matches:
+        return None
+
+    def _norm(s: str) -> str:
+        import unicodedata
+        if not s:
+            return ""
+        s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+        return s.lower().strip()
+
+    nh, na = _norm(home), _norm(away)
+    target = None
+    for bm in betclic_matches:
+        bh, ba = _norm(bm.get("home_team", "")), _norm(bm.get("away_team", ""))
+        if (nh in bh or bh in nh) and (na in ba or ba in na):
+            target = bm
+            break
+    if target is None:
+        return None
+
+    odds: dict[str, float] = {}
+    for sel in target.get("selections", []):
+        mt = sel.get("market_type", "")
+        v = sel.get("odds")
+        if isinstance(v, (int, float)) and v > 1.0:
+            odds[mt] = float(v)
+
+    h = odds.get("1x2_home")
+    d = odds.get("1x2_draw")
+    a = odds.get("1x2_away")
+    if not (h and d and a):
+        return None
+
+    over = odds.get("total_over_2_5")
+    under = odds.get("total_under_2_5")
+    btts_y = odds.get("btts_yes")
+    btts_n = odds.get("btts_no")
+    has_ou = bool(over and under)
+    has_bt = bool(btts_y and btts_n)
+    return {
+        "1x2": (h, d, a),
+        "ou25": (over, under) if has_ou else None,
+        "btts": (btts_y, btts_n) if has_bt else None,
+        "source": "betclic",
+        "mode": "A" if (has_ou and has_bt) else ("B" if has_ou else "C"),
+    }
+
+
+# --------------------------------------------------------------------- public API
+
+def get_match_odds_3markets(
+    bsd_event_id: int | None,
+    league_cfg: LeagueConfig,
+    home_team: str,
+    away_team: str,
+    kickoff_iso: str | None = None,
+    bsd_event_payload: dict | None = None,
+    betclic_matches: list[dict] | None = None,
+) -> dict | None:
+    """Cascade BSD inline → BSD compareOdds → TheOddsAPI → Betclic.
+    Renvoie None si aucune source ne fournit au moins le 1X2.
+    """
+    cache_key = _cache_key(bsd_event_id, league_cfg.slug, home_team, away_team)
+    cached = _cache_get(cache_key)
+    if cached and cached.get("1x2"):
+        cached["1x2"] = tuple(cached["1x2"])
+        if cached.get("ou25"):
+            cached["ou25"] = tuple(cached["ou25"])
+        if cached.get("btts"):
+            cached["btts"] = tuple(cached["btts"])
+        return cached
+
+    # 1) Inline BSD event (toujours essayé en premier si payload dispo)
+    res = _try_bsd_event_inline(bsd_event_payload)
+    if res and res["1x2"]:
+        _cache_put(cache_key, res)
+        return res
+
+    # 2) BSD compareOdds (uniquement si on a un BSD event id)
+    res = _try_bsd_compare_via_helpers(bsd_event_id)
+    if res and res["1x2"]:
+        _cache_put(cache_key, res)
+        return res
+
+    # 3) TheOddsAPI
+    res = _try_theoddsapi(league_cfg, home_team, away_team, kickoff_iso)
+    if res and res["1x2"]:
+        _cache_put(cache_key, res)
+        return res
+
+    # 4) Betclic (fallback du fallback)
+    res = _try_betclic(league_cfg, betclic_matches, home_team, away_team)
+    if res and res["1x2"]:
+        _cache_put(cache_key, res)
+        return res
+
+    return None
+
+
+def to_predict_today_format(routed: dict | None) -> dict[str, float | None]:
+    """Adapte la sortie du router au format que `predict_today.extract_odds`
+    historique produit. Permet une intégration drop-in."""
+    if not routed:
+        return {
+            "odds_h": None, "odds_d": None, "odds_a": None,
+            "ou25_under": None, "ou25_over": None,
+            "btts_yes": None, "btts_no": None,
+        }
+    h, d, a = routed["1x2"]
+    over, under = (routed["ou25"] or (None, None))
+    btts_y, btts_n = (routed["btts"] or (None, None))
+    return {
+        "odds_h": h, "odds_d": d, "odds_a": a,
+        "ou25_under": under, "ou25_over": over,
+        "btts_yes": btts_y, "btts_no": btts_n,
+    }

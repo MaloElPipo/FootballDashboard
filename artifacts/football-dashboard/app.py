@@ -2070,8 +2070,23 @@ elif page == "📅 Calendrier CDM 2026":
         st.error(f"Erreur de récupération des matchs : {exc}")
         events = []
 
-    odds_h2h = fetch_odds_api_h2h()
-    outright_odds = fetch_odds_api_outright()
+    _odds_api_warning = None
+    try:
+        odds_h2h = fetch_odds_api_h2h()
+    except RuntimeError as _e:
+        odds_h2h = {}
+        _msg = str(_e)
+        if "401" in _msg or "OUT_OF_USAGE_CREDITS" in _msg or "quota" in _msg.lower():
+            _odds_api_warning = "⚠️ Quota mensuel TheOddsAPI dépassé — cotes bookmakers indisponibles jusqu'au renouvellement du quota. Les autres sources (BSD, Betclic) restent actives."
+        else:
+            _odds_api_warning = f"Cotes TheOddsAPI indisponibles : {_msg[:120]}"
+    try:
+        outright_odds = fetch_odds_api_outright()
+    except RuntimeError:
+        outright_odds = {}
+
+    if _odds_api_warning:
+        st.warning(_odds_api_warning)
 
     try:
         betclic_cal = _fetch_betclic_wc()
@@ -2399,7 +2414,7 @@ elif page == "🔮 Prédictions":
         import os as _os
         _key = _os.environ.get("ODDS_API_KEY", "")
         if not _key:
-            return {}
+            return {"_status": "no_key", "_data": {}}
         try:
             _r = requests.get(
                 "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/",
@@ -2409,11 +2424,13 @@ elif page == "🔮 Prédictions":
                 },
                 timeout=30,
             )
+            if _r.status_code == 401 or _r.status_code == 429:
+                return {"_status": "quota_exceeded", "_data": {}, "_http": _r.status_code}
             if _r.status_code != 200:
-                raise RuntimeError(f"Odds API HTTP {_r.status_code}: {_r.text[:200]}")
+                return {"_status": "http_error", "_data": {}, "_http": _r.status_code, "_msg": _r.text[:200]}
             pin_matches = _r.json()
         except requests.exceptions.RequestException as e:
-            raise RuntimeError(f"Pinnacle/Odds API timeout : {e}") from e
+            return {"_status": "network_error", "_data": {}, "_msg": str(e)}
 
         result = {}
         for pm in pin_matches:
@@ -2454,7 +2471,7 @@ elif page == "🔮 Prédictions":
                 "pin_h": (1/oh)/mg*100, "pin_d": (1/od)/mg*100, "pin_a": (1/oa)/mg*100,
                 "ou25_over": ou25_over, "ou25_under": ou25_under,
             }
-        return result
+        return {"_status": "ok", "_data": result}
 
     n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2, key="pred_n_sims")
     sim_data = _cached_simulation(n_sims)
@@ -2707,11 +2724,23 @@ elif page == "🔮 Prédictions":
             return base
 
         preds = _cached_group_preds()
-        pin_data = _cached_pinnacle_data()
+        _pin_resp = _cached_pinnacle_data()
+        pin_data = _pin_resp.get("_data", {}) if isinstance(_pin_resp, dict) else {}
+        _pin_status = _pin_resp.get("_status", "ok") if isinstance(_pin_resp, dict) else "ok"
 
-        _pin_count = sum(1 for m_list in preds.values() for m in m_list
-                         if (m["home_code"], m["away_code"]) in pin_data)
-        if pin_data:
+        if _pin_status == "quota_exceeded":
+            st.warning(
+                "⚠️ Quota mensuel TheOddsAPI dépassé — affichage V8 uniquement (cotes Pinnacle indisponibles jusqu'au renouvellement du quota)."
+            )
+        elif _pin_status == "no_key":
+            st.warning("Clé ODDS_API_KEY non configurée — affichage V8 uniquement.")
+        elif _pin_status in ("http_error", "network_error"):
+            st.warning(
+                f"Cotes Pinnacle indisponibles ({_pin_status}) — affichage V8 uniquement."
+            )
+        elif pin_data:
+            _pin_count = sum(1 for m_list in preds.values() for m in m_list
+                             if (m["home_code"], m["away_code"]) in pin_data)
             st.info(f"📡 **{_pin_count}** matchs avec cotes Pinnacle disponibles sur **{sum(len(v) for v in preds.values())}** matchs de poules")
         else:
             st.warning("Cotes Pinnacle non disponibles — affichage V8 uniquement.")
@@ -2791,9 +2820,17 @@ elif page == "🔮 Prédictions":
             "Filtre cotes >10 pour éviter les pièges."
         )
 
-        _val_pin = _cached_pinnacle_data()
+        _val_pin_resp = _cached_pinnacle_data()
+        _val_pin = _val_pin_resp.get("_data", {}) if isinstance(_val_pin_resp, dict) else {}
+        _val_pin_status = _val_pin_resp.get("_status", "ok") if isinstance(_val_pin_resp, dict) else "ok"
 
-        if not _val_pin:
+        if _val_pin_status == "quota_exceeded":
+            st.warning(
+                "⚠️ Quota mensuel TheOddsAPI dépassé — détection de value indisponible jusqu'au renouvellement du quota."
+            )
+        elif _val_pin_status == "no_key":
+            st.warning("Clé ODDS_API_KEY non configurée — détection de value indisponible.")
+        elif not _val_pin:
             st.warning("Impossible de récupérer les cotes Pinnacle actuelles.")
         else:
             _val_elo_map = _build_elo_map()

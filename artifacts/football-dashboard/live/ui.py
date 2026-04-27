@@ -1094,6 +1094,23 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
     n_total = len(state)
     n_blessed = sum(1 for _, r in sub.iterrows()
                     if _safe_avail(r.get("availability")) != "available")
+    # Détecte si l'utilisateur a touché aux checkboxes (différent du défaut).
+    # Sert à afficher un bandeau persistant rappelant que "Cote juste" est
+    # recalculée live mais "Cote si tit." reste figée à la valeur prédite.
+    n_user_changes = sum(
+        1 for pid_d, default_val in default_state.items()
+        if bool(state.get(pid_d, default_val)) != bool(default_val)
+    )
+    if n_user_changes > 0:
+        st.info(
+            f"💡 Vous avez modifié {n_user_changes} inclusion(s) par rapport au "
+            "onze probable. La colonne **Cote juste** est recalculée live à "
+            "partir des joueurs cochés. La colonne **Cote si tit.** reste "
+            "figée à la valeur d'origine de la prédiction (projection "
+            "_'single change'_ : un seul joueur passe titulaire à la fois, "
+            "le reste de la compo n'est pas modifié).",
+            icon="ℹ️",
+        )
     msg = f"📊 {n_in}/{n_total} joueurs inclus"
     if n_blessed:
         msg += f"  •  🤕 {n_blessed} indisponibles BSD"

@@ -23,6 +23,7 @@ DASH_ROOT = ROOT.parent
 sys.path.insert(0, str(DASH_ROOT))
 
 from preview_player_odds._3_model_proxy import apply_anti_poisson_calibration  # noqa: E402
+from live.statshub_helpers import get_predicted_lineup_for_bsd_event  # noqa: E402
 
 
 def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
@@ -539,6 +540,98 @@ def _render_lineup_column(side_block: dict, side_label: str, coach):
                 st.markdown(f"- {num_s}{name}{pos_s}")
 
 
+def _render_statshub_lineup_column(players: list[dict], label: str) -> None:
+    """Affiche une colonne de joueurs StatsHub (titulaires + remplaçants)."""
+    starters = [p for p in players if isinstance(p, dict) and p.get("predictionType") in (None, "predicted") and not p.get("isSubstitute")]
+    subs = [p for p in players if isinstance(p, dict) and p.get("isSubstitute")]
+    # Fallback : la plupart des payloads StatsHub mettent tout dans `data`,
+    # le titulaire vs sub est implicite (les 11 premiers = titulaires)
+    if not subs and len(players) > 11:
+        starters = players[:11]
+        subs = players[11:]
+    elif not starters:
+        starters = players[:11]
+
+    st.markdown(f"### {label}")
+    if starters:
+        st.markdown("**Onze probable**")
+        for p in starters:
+            if not isinstance(p, dict):
+                continue
+            name = p.get("name") or "?"
+            pos = p.get("position") or ""
+            num = p.get("jerseyNo") or ""
+            num_s = f"#{num} " if num else ""
+            pos_s = f" · {pos}" if pos else ""
+            st.markdown(f"- {num_s}{name}{pos_s}")
+    if subs:
+        with st.expander(f"🪑 Remplaçants probables ({len(subs)})"):
+            for p in subs:
+                if not isinstance(p, dict):
+                    continue
+                name = p.get("name") or "?"
+                pos = p.get("position") or ""
+                num = p.get("jerseyNo") or ""
+                num_s = f"#{num} " if num else ""
+                pos_s = f" · {pos}" if pos else ""
+                st.markdown(f"- {num_s}{name}{pos_s}")
+
+
+def _render_statshub_predicted_lineup(head, home_name: str, away_name: str) -> None:
+    """Affiche la compo prédite StatsHub si dispo (complément à BSD).
+
+    Silencieux et non-bloquant: si StatsHub indisponible ou match non trouvé,
+    on n'affiche rien (zéro impact sur l'UI existante).
+    """
+    try:
+        bsd_event_id = int(head.get("event_id"))
+    except (TypeError, ValueError, KeyError):
+        return
+
+    # Convertit kickoff (Timestamp pandas) en unix ts si dispo
+    kickoff_ts = None
+    try:
+        ko = head.get("kickoff")
+        if ko is not None and pd.notna(ko):
+            kickoff_ts = int(ko.timestamp())
+    except Exception:
+        kickoff_ts = None
+
+    league_slug = head.get("league_slug")
+
+    try:
+        result = get_predicted_lineup_for_bsd_event(
+            bsd_event_id=bsd_event_id,
+            home_team=home_name,
+            away_team=away_name,
+            kickoff_ts=kickoff_ts,
+            league_slug=league_slug,
+        )
+    except Exception:
+        return  # silent fail
+
+    if not result or (not result.get("home") and not result.get("away")):
+        return
+
+    st.markdown("---")
+    score = result.get("match_score", 0.0)
+    score_pct = int(round(score * 100))
+    with st.expander(
+        f"🔮 Compo prédite (StatsHub) — confiance match {score_pct}%",
+        expanded=False,
+    ):
+        st.caption(
+            "Source complémentaire : StatsHub.com · "
+            "Affichée à côté de BSD pour comparaison. "
+            "Le moteur Buteurs Maison 4.1 ne s'appuie PAS sur cette source."
+        )
+        cl, cr = st.columns(2)
+        with cl:
+            _render_statshub_lineup_column(result.get("home", []), f"🏠 {home_name}")
+        with cr:
+            _render_statshub_lineup_column(result.get("away", []), f"🛫 {away_name}")
+
+
 def _render_match_detail(event_id: int, df_log: pd.DataFrame):
     """Vue détail d'un match : header, odds, lineups, stats, buteurs prédits."""
     sub = df_log[df_log["event_id"] == event_id]
@@ -638,6 +731,9 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
                     extras = _coach_extras(coach_obj)
                     if extras:
                         st.caption(extras)
+
+    # === Compo prédite StatsHub (complément, source externe) ===
+    _render_statshub_predicted_lineup(head, home_name, away_name)
 
     # === Forme + radar comparatif ===
     home_form = detail.get("home_form") or {}

@@ -1,8 +1,8 @@
 """Pages Streamlit pour le pipeline forward-test live.
 
-- `render_edges_page()`               : test edges buteurs/passeurs J/J+1
 - `render_tracking_page()`            : historique enrichi du forward log + métriques perf
 - `render_predictions_buteurs_page()` : liste matchs prévus + drill-down détail riche (BSD)
+  + bouton 1-clic "Ajouter au tracking" depuis chaque match (vers bets_tracker.json)
 """
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ sys.path.insert(0, str(DASH_ROOT))
 
 from preview_player_odds._3_model_proxy import apply_anti_poisson_calibration  # noqa: E402
 from live.statshub_helpers import get_predicted_lineup_for_bsd_event  # noqa: E402
+from bet_tracker import add_bet  # noqa: E402
 
 
 def _anti_poisson_calibrate_array(odds: np.ndarray) -> np.ndarray:
@@ -99,158 +100,6 @@ def _run_enrich_results() -> tuple[bool, str]:
     except subprocess.TimeoutExpired:
         return False, "TIMEOUT"
 
-
-# ---------------------------------------------------------------------------
-# Page : Edges Buteurs/Passeurs
-# ---------------------------------------------------------------------------
-def render_edges_page():
-    st.header("🎯 Test Edge Buteurs (Top 5)")
-    st.caption(
-        "Edges = (cote bookmaker × probabilité modèle) − 1. "
-        "Modèle propriétaire : g2_engine (1X2+O/U+BTTS) → λ équipes → "
-        "distribution Poisson individuelle (xG/xA shrinkés vs prior ligue)."
-    )
-
-    # --- Toolbar : actions ---
-    col_a, col_b, col_c = st.columns([1, 1, 2])
-    with col_a:
-        if st.button("🔄 Lancer prédictions maintenant", type="primary"):
-            with st.spinner("Pipeline en cours (1-3 min selon le nombre de matchs)..."):
-                ok, log_txt = _run_predict_today(["--days", "2"])
-            if ok:
-                st.success("Prédictions générées et appendées au log.")
-            else:
-                st.error("Échec du pipeline.")
-            with st.expander("Logs"):
-                st.code(log_txt[-4000:])
-            load_forward_log_df.clear()  # invalide le cache
-    with col_b:
-        if st.button("🧮 Enrichir résultats matchs finis"):
-            with st.spinner("Enrichissement..."):
-                ok, log_txt = _run_enrich_results()
-            (st.success if ok else st.error)("Enrichissement terminé." if ok else "Échec.")
-            with st.expander("Logs"):
-                st.code(log_txt[-4000:])
-            load_forward_log_df.clear()
-
-    df = load_forward_log_df()
-    if df.empty:
-        st.info(
-            "Aucune prédiction encore loggée. Clique sur **Lancer prédictions maintenant** "
-            "pour générer les edges du week-end."
-        )
-        return
-
-    st.markdown("---")
-
-    # --- Filtres ---
-    fcols = st.columns(5)
-    with fcols[0]:
-        ligues_dispo = sorted(df["league_slug"].dropna().unique())
-        sel_ligues = st.multiselect(
-            "Ligue", ligues_dispo,
-            default=ligues_dispo,
-            format_func=lambda s: LEAGUE_LABELS.get(s, s),
-        )
-    with fcols[1]:
-        marche = st.radio("Marché", ["Buteur", "Passeur", "Les deux"], horizontal=False)
-    with fcols[2]:
-        edge_min = st.number_input("Edge min %", -50.0, 100.0, 0.0, 0.5)
-    with fcols[3]:
-        only_with_book = st.checkbox("Uniquement avec cote book", value=True)
-    with fcols[4]:
-        only_starters = st.checkbox("Uniquement titulaires probables", value=False)
-
-    df_f = df[df["league_slug"].isin(sel_ligues)].copy()
-    if only_starters:
-        df_f = df_f[df_f["is_starter"] == True]  # noqa: E712
-
-    # --- Construction du tableau long (1 ligne = 1 marché plat par joueur) ---
-    long_rows = []
-    for _, r in df_f.iterrows():
-        common = {
-            "Ligue": LEAGUE_LABELS.get(r["league_slug"], r["league_slug"]),
-            "Match": r["match"],
-            "Kickoff": r["kickoff"].tz_convert("Europe/Paris").strftime("%a %d/%m %H:%M")
-                       if pd.notna(r["kickoff"]) else "",
-            "Joueur": r["player_name"],
-            "Side": "🏠" if r["team_side"] == "home" else "🛫",
-            "Titu": "✓" if r.get("is_starter") else "Sub",
-            "Min att.": round(float(r.get("minutes_expected") or 0)),
-        }
-        if marche in ("Buteur", "Les deux") and pd.notna(r.get("p_model_scorer")):
-            long_rows.append({**common,
-                "Marché": "⚽ Buteur",
-                "p modèle": r["p_model_scorer"],
-                "Cote juste": r["fair_odd_scorer"],
-                "Cote Betclic": r.get("betclic_odd_scorer"),
-                "Edge %": (r["edge_scorer"] * 100) if pd.notna(r.get("edge_scorer")) else None,
-                "_outcome": r.get("outcome_scored"),
-            })
-        if marche in ("Passeur", "Les deux") and pd.notna(r.get("p_model_assist")):
-            long_rows.append({**common,
-                "Marché": "🅰 Passeur",
-                "p modèle": r["p_model_assist"],
-                "Cote juste": r["fair_odd_assist"],
-                "Cote Betclic": r.get("betclic_odd_assist"),
-                "Edge %": (r["edge_assist"] * 100) if pd.notna(r.get("edge_assist")) else None,
-                "_outcome": r.get("outcome_assisted"),
-            })
-
-    if not long_rows:
-        st.warning("Aucune ligne après filtres.")
-        return
-
-    out = pd.DataFrame(long_rows)
-
-    if only_with_book:
-        out = out[out["Cote Betclic"].notna()]
-
-    if not out.empty:
-        out = out[(out["Edge %"].fillna(-999) >= edge_min)]
-
-    if out.empty:
-        st.warning("Aucun edge ne passe le seuil.")
-        return
-
-    # Tri par edge descendant
-    out = out.sort_values("Edge %", ascending=False, na_position="last")
-
-    # Formatage
-    out_show = out.drop(columns=["_outcome"]).copy()
-    out_show["p modèle"] = (out_show["p modèle"] * 100).round(1)
-    out_show["Cote juste"] = out_show["Cote juste"].round(2)
-    out_show["Cote Betclic"] = out_show["Cote Betclic"].round(2)
-    out_show["Edge %"] = out_show["Edge %"].round(2)
-    out_show.rename(columns={"p modèle": "p mod. %"}, inplace=True)
-
-    def color_edge(v):
-        if pd.isna(v):
-            return ""
-        if v >= 5:
-            return "background-color: #c6f6d5; color: #1a4d2e; font-weight: 600"
-        if v >= 0:
-            return "background-color: #fef9c3; color: #5b3a00"
-        return "color: #6b7280"
-
-    styled = (out_show.style
-              .map(color_edge, subset=["Edge %"])
-              .format({"p mod. %": "{:.1f}", "Cote juste": "{:.2f}",
-                       "Cote Betclic": "{:.2f}", "Edge %": "{:+.2f}"}, na_rep="—"))
-
-    st.markdown(f"**{len(out_show)} edges** triés par valeur décroissante")
-    st.dataframe(styled, use_container_width=True, hide_index=True, height=600)
-
-    # Export
-    st.download_button(
-        "💾 Exporter CSV",
-        out_show.to_csv(index=False).encode("utf-8"),
-        file_name=f"edges_{datetime.now():%Y%m%d_%H%M}.csv",
-        mime="text/csv",
-    )
-
-
-# ---------------------------------------------------------------------------
 # Page : Tracking forward log (perf historique)
 # ---------------------------------------------------------------------------
 def render_tracking_page():
@@ -1053,31 +902,13 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "xT": (round(float(xshots), 2) if pd.notna(xshots) else None),
             "xT cad.": (round(float(xsot), 2) if pd.notna(xsot) else None),
         }
-        # T008 — "Cote si tit." : pour un titulaire (confirmé OU présumé), c'est
-        # exactement la cote juste actuelle. Pour un sub présumé, c'est la cote
-        # shadow pré-calculée par le modèle (`fair_odd_*_if_starter`) qui simule
-        # la promotion de ce joueur en titulaire (autres lineup inchangés). Ça
-        # permet de repérer instantanément quel sub serait dangereux s'il était
-        # finalement aligné (cas Zirkzee MUFC : cote juste sub ≈ 10, cote si tit
-        # ≈ 4-6). Note : le shadow vient du forward log, il n'est PAS recalculé
-        # quand l'user décoche d'autres joueurs (c'est une projection figée
-        # "single change" au moment de la prédiction).
-        def _cote_si_tit(fair_actual, fair_shadow):
-            if is_starter:
-                return (round(float(fair_actual), 2)
-                        if pd.notna(fair_actual) else None)
-            return (round(float(fair_shadow), 2)
-                    if pd.notna(fair_shadow) else None)
-
         if market in ("Buteur", "Les deux"):
             rows.append({
-                "_pid": pid, **common_pre, "Marché": "⚽ Buteur",
+                "_pid": pid, **common_pre, "_marche": "Buteur",
                 "p %": (round(float(r["p_model_scorer"]) * 100, 1)
                         if pd.notna(r.get("p_model_scorer")) else None),
                 "Cote juste": (round(float(r["fair_odd_scorer"]), 2)
                                if pd.notna(r.get("fair_odd_scorer")) else None),
-                "Cote si tit.": _cote_si_tit(r.get("fair_odd_scorer"),
-                                              r.get("fair_odd_scorer_if_starter")),
                 "Cote Betclic": (round(float(r["betclic_odd_scorer"]), 2)
                                  if pd.notna(r.get("betclic_odd_scorer")) else None),
                 "Edge %": (round(float(r["edge_scorer"]) * 100, 2)
@@ -1085,13 +916,11 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             })
         if market in ("Passeur", "Les deux"):
             rows.append({
-                "_pid": pid, **common_pre, "Marché": "🅰 Passeur",
+                "_pid": pid, **common_pre, "_marche": "Passeur",
                 "p %": (round(float(r["p_model_assist"]) * 100, 1)
                         if pd.notna(r.get("p_model_assist")) else None),
                 "Cote juste": (round(float(r["fair_odd_assist"]), 2)
                                if pd.notna(r.get("fair_odd_assist")) else None),
-                "Cote si tit.": _cote_si_tit(r.get("fair_odd_assist"),
-                                              r.get("fair_odd_assist_if_starter")),
                 "Cote Betclic": (round(float(r["betclic_odd_assist"]), 2)
                                  if pd.notna(r.get("betclic_odd_assist")) else None),
                 "Edge %": (round(float(r["edge_assist"]) * 100, 2)
@@ -1108,6 +937,7 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         df_edit,
         column_config={
             "_pid": None,  # caché
+            "_marche": None,  # caché — utilisé en interne pour tracking
             "Inclure": st.column_config.CheckboxColumn(
                 "✓", help="Inclure ce joueur dans la distribution xG/xA",
                 width="small"),
@@ -1123,19 +953,6 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
                      "buteur FR (Betclic & co valident le bet même si le "
                      "joueur entre en cours de match). Directement comparable "
                      "à la cote bookmaker."),
-            "Cote si tit.": st.column_config.NumberColumn(
-                "Cote si tit.", format="%.2f",
-                help="Cote shadow — 'et si CE joueur était finalement titulaire ?'. "
-                     "Pour un titulaire (★/★?) c'est égal à la Cote juste. Pour "
-                     "un sub présumé (Sub?), on simule sa promotion en titulaire "
-                     "(reste de la compo inchangée) et on renormalise la part xG : "
-                     "la cote peut baisser (parfois nettement) selon la valeur "
-                     "intrinsèque du joueur. NB : la Cote juste d'un sub est déjà "
-                     "calculée à 90' théorique (garantie buteur FR), donc l'écart "
-                     "shadow vs cote juste est souvent modéré. La valeur shadow "
-                     "est figée au moment de la prédiction et ne se recalcule "
-                     "PAS quand vous décochez d'autres joueurs (c'est une "
-                     "projection 'single change')."),
             "xT": st.column_config.NumberColumn(
                 "xT", format="%.2f", width="small",
                 help="Tirs attendus dans CE match = shots/90 carrière "
@@ -1151,14 +968,14 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
             "Edge %": st.column_config.NumberColumn(format="%+.2f"),
         },
         column_order=["Inclure", "Joueur", "Équipe", "Pos", "Min", "Titu",
-                      "Marché", "p %", "Cote juste", "Cote si tit.",
+                      "p %", "Cote juste",
                       "Cote Betclic", "Edge %", "xT", "xT cad."],
         hide_index=True,
         use_container_width=True,
         height=600,
         key=f"editor_{event_id}",
-        disabled=["Joueur", "Équipe", "Pos", "Min", "Titu", "Marché",
-                  "p %", "Cote juste", "Cote si tit.", "Cote Betclic",
+        disabled=["Joueur", "Équipe", "Pos", "Min", "Titu",
+                  "p %", "Cote juste", "Cote Betclic",
                   "Edge %", "xT", "xT cad."],
     )
 
@@ -1191,8 +1008,7 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
     n_blessed = sum(1 for _, r in sub.iterrows()
                     if _safe_avail(r.get("availability")) != "available")
     # Détecte si l'utilisateur a touché aux checkboxes (différent du défaut).
-    # Sert à afficher un bandeau persistant rappelant que "Cote juste" est
-    # recalculée live mais "Cote si tit." reste figée à la valeur prédite.
+    # Sert à afficher un bandeau rappelant que "Cote juste" est recalculée live.
     n_user_changes = sum(
         1 for pid_d, default_val in default_state.items()
         if bool(state.get(pid_d, default_val)) != bool(default_val)
@@ -1201,10 +1017,7 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         st.info(
             f"💡 Vous avez modifié {n_user_changes} inclusion(s) par rapport au "
             "onze probable. La colonne **Cote juste** est recalculée live à "
-            "partir des joueurs cochés. La colonne **Cote si tit.** reste "
-            "figée à la valeur d'origine de la prédiction (projection "
-            "_'single change'_ : un seul joueur passe titulaire à la fois, "
-            "le reste de la compo n'est pas modifié).",
+            "partir des joueurs cochés.",
             icon="ℹ️",
         )
     msg = f"📊 {n_in}/{n_total} joueurs inclus"
@@ -1215,6 +1028,83 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
     else:
         msg += "  •  ✅ Compos confirmées"
     st.caption(msg)
+
+    # ── Bloc "Ajouter au tracking forward test" ──
+    # T014 — bouton 1-clic pour pousser un pick à edge positif vers
+    # bets_tracker.json (consommé par la page "📊 Suivi des paris").
+    st.markdown("---")
+    st.markdown("### 💰 Ajouter au tracking forward test")
+
+    candidates = df_edit[
+        df_edit["Edge %"].notna()
+        & (df_edit["Edge %"] > 0)
+        & df_edit["Cote Betclic"].notna()
+    ].sort_values("Edge %", ascending=False).reset_index(drop=True)
+
+    if candidates.empty:
+        st.caption(
+            "Aucun edge positif avec cote Betclic disponible pour ce match — "
+            "rien à tracker pour l'instant."
+        )
+    else:
+        def _label_for(row) -> str:
+            joueur = str(row["Joueur"]).replace("★ ", "").strip()
+            marche = row["_marche"]
+            return (
+                f"{joueur}  ·  {marche}  ·  cote {row['Cote Betclic']:.2f}  "
+                f"·  edge {row['Edge %']:+.1f}%"
+            )
+
+        bc1, bc2, bc3 = st.columns([3, 1, 1.2])
+        with bc1:
+            sel_idx = st.selectbox(
+                "Pick à tracker",
+                options=list(range(len(candidates))),
+                format_func=lambda i: _label_for(candidates.iloc[i]),
+                key=f"track_pick_{event_id}",
+            )
+        with bc2:
+            stake = st.number_input(
+                "Mise (u)",
+                min_value=0.1, max_value=100.0, value=1.0, step=0.5,
+                key=f"track_stake_{event_id}",
+            )
+        with bc3:
+            st.write("")  # spacer pour aligner le bouton verticalement
+            do_add = st.button(
+                "➕ Ajouter au tracking",
+                key=f"track_add_{event_id}",
+                type="primary",
+                use_container_width=True,
+            )
+
+        if do_add:
+            row = candidates.iloc[sel_idx]
+            joueur_clean = str(row["Joueur"]).replace("★ ", "").strip()
+            marche_clean = row["_marche"]
+            match_str = f"{home_name} - {away_name}"
+            cote_book = float(row["Cote Betclic"])
+            cote_juste = (float(row["Cote juste"])
+                          if pd.notna(row.get("Cote juste")) else None)
+            edge_pct = float(row["Edge %"])
+            try:
+                bet = add_bet(
+                    match=match_str,
+                    side=f"{joueur_clean} ({marche_clean})",
+                    odds=cote_book,
+                    stake=float(stake),
+                    odds_v8=cote_juste,
+                    closing_odds_pin=None,
+                    notes=(f"Forward test edge buteurs · ev_id={event_id} · "
+                           f"edge {edge_pct:+.1f}%"),
+                )
+                st.success(
+                    f"Bet #{bet['id']} ajouté : **{joueur_clean}** "
+                    f"({marche_clean}) @ {cote_book:.2f} — mise {float(stake):.2f}u. "
+                    f"Visible dans **📊 Suivi des paris**."
+                )
+            except Exception as e:
+                st.error(f"Erreur lors de l'ajout : {e}")
 
 
 def render_predictions_buteurs_page():
@@ -1228,8 +1118,8 @@ def render_predictions_buteurs_page():
     df = load_forward_log_df()
     if df.empty:
         st.info(
-            "Aucune prédiction encore loggée. Va sur **🎯 Test Edge Buteurs** "
-            "et clique sur **Lancer prédictions maintenant**."
+            "Aucune prédiction encore loggée. Clique sur **🔄 Rafraîchir prédictions** "
+            "ci-dessous pour lancer le pipeline."
         )
         return
 

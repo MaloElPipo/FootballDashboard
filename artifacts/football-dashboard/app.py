@@ -2369,12 +2369,41 @@ elif page == "🔮 Prédictions":
         return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
 
     @st.cache_data(ttl=600)
-    def _cached_simulation(n):
-        return run_simulation(n_sims=n)
+    def _cached_simulation(n, expected_scores_key):
+        expected_scores = dict(expected_scores_key) if expected_scores_key else {}
+        return run_simulation(n_sims=n, params={"expected_scores": expected_scores})
 
     @st.cache_data(ttl=600)
     def _cached_group_preds():
         return get_group_predictions()
+
+    def _build_expected_scores():
+        """Pré-calcule le score le plus probable de chaque match de poule à
+        partir des cotes Pinnacle (TheOddsAPI). Le simulateur utilisera ces
+        scores comme buts marqués/encaissés pour le départage FIFA art. 13
+        step 2 (constants à travers les sims, plus stables que les buts
+        Poisson tirés au hasard). Les matchs absents de Pinnacle restent
+        gérés via fallback λ Elo dans le simulateur lui-même.
+        """
+        from g2_engine import lambdas_buchdahl as _esl
+        from wc_simulator import most_likely_score as _esm
+        pin_resp = _cached_pinnacle_data()
+        pin_data = pin_resp.get("_data", {}) if isinstance(pin_resp, dict) else {}
+        scores = {}
+        for (h_code, a_code), pd_pin in pin_data.items():
+            if not pd_pin.get("ou25_under") or pd_pin["ou25_under"] <= 1.0:
+                continue
+            try:
+                lt, lo, _meth = _esl(
+                    odds_h=pd_pin["oh"], odds_d=pd_pin["od"], odds_a=pd_pin["oa"],
+                    ou25_under=pd_pin.get("ou25_under"),
+                    ou25_over=pd_pin.get("ou25_over"),
+                )
+                xh, xa = _esm(lt, lo)
+                scores[(h_code, a_code)] = (xh, xa)
+            except Exception:
+                continue
+        return scores
 
     _PIN_ODDS_TO_CODE = {
         "France":"FRA","Spain":"ESP","Germany":"GER","England":"ENG",
@@ -2474,7 +2503,9 @@ elif page == "🔮 Prédictions":
         return {"_status": "ok", "_data": result}
 
     n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2, key="pred_n_sims")
-    sim_data = _cached_simulation(n_sims)
+    _exp_scores = _build_expected_scores()
+    _exp_key = tuple(sorted(_exp_scores.items())) if _exp_scores else None
+    sim_data = _cached_simulation(n_sims, _exp_key)
 
     tab_sim, tab_bracket, tab_elim, tab_matches, tab_value = st.tabs([
         "🏆 Simulation globale",
@@ -2790,21 +2821,26 @@ elif page == "🔮 Prédictions":
                         _o25, _u25 = _m1x2_calc_ou(lt, lo, 2.5)
                         _o35, _u35 = _m1x2_calc_ou(lt, lo, 3.5)
                         _btts = _m1x2_calc_btts(lt, lo)
+                        from wc_simulator import most_likely_score as _ms
+                        _xh, _xa = _ms(lt, lo)
 
                         pin_ou25_mg = 1/pd_pin["ou25_over"] + 1/pd_pin["ou25_under"] if pd_pin.get("ou25_over") else None
                         pin_o25_pct = (1/pd_pin["ou25_over"])/pin_ou25_mg*100 if pin_ou25_mg else None
                         pin_u25_pct = (1/pd_pin["ou25_under"])/pin_ou25_mg*100 if pin_ou25_mg else None
 
+                        row["Score"] = f"<b>{_xh}-{_xa}</b>"
                         row["xG"] = f"<b>{lt:.2f}</b> - <b>{lo:.2f}</b>"
                         row["O2.5"] = _ou_cell(_o25 * 100, pin_o25_pct)
                         row["U2.5"] = _ou_cell(_u25 * 100, pin_u25_pct)
                         row["BTTS"] = f"<b>{_btts*100:.0f}%</b><br><span style='font-size:0.7em'>{100/_btts/100:.2f}</span>" if _btts > 0.01 else "—"
                     except Exception:
+                        row["Score"] = "—"
                         row["xG"] = "—"
                         row["O2.5"] = "—"
                         row["U2.5"] = "—"
                         row["BTTS"] = "—"
                 else:
+                    row["Score"] = "<span style='color:#ccc'>—</span>"
                     row["xG"] = "<span style='color:#ccc'>—</span>"
                     row["O2.5"] = "<span style='color:#ccc'>—</span>"
                     row["U2.5"] = "<span style='color:#ccc'>—</span>"

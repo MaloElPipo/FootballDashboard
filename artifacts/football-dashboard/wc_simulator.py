@@ -168,7 +168,14 @@ def simulate_match_1x2(elo_h, elo_a, home_code=None, away_code=None, phase="G"):
         return "A"
 
 
-def simulate_match_goals(elo_h, elo_a, home_code=None, away_code=None):
+def derive_lambdas_from_elo(elo_h, elo_a):
+    """Calcule (λ_home, λ_away) déterministes depuis l'Elo (sans tirage).
+
+    Utilisé comme fallback quand les cotes bookmakers ne sont pas disponibles
+    pour un match (ex : Pinnacle ne couvre pas le match). Identique à la
+    formule interne de `simulate_match_goals` mais expose les paramètres au
+    lieu de tirer un Poisson.
+    """
     delta = elo_h - elo_a
     base = 1.25
     factor = delta / 600.0
@@ -176,6 +183,40 @@ def simulate_match_goals(elo_h, elo_a, home_code=None, away_code=None):
     lambda_a = base * math.exp(-factor * 0.5)
     lambda_h = max(0.3, min(lambda_h, 4.0))
     lambda_a = max(0.3, min(lambda_a, 4.0))
+    return lambda_h, lambda_a
+
+
+def most_likely_score(lambda_h, lambda_a, max_goals=8):
+    """Renvoie (h*, a*) avec la probabilité conjointe Poisson maximale.
+
+    Modèle Poisson indépendant : P(H=i, A=j) = pmf(i, λh) × pmf(j, λa).
+    Recherche exhaustive sur la grille [0, max_goals]². Avec max_goals=8 et
+    λ ≤ 4 (cap Elo), la masse cumulée hors grille est < 0.001 → score modal
+    capturé avec certitude.
+    """
+    best = (0, 0)
+    best_p = -1.0
+    exp_lh = math.exp(-lambda_h)
+    exp_la = math.exp(-lambda_a)
+    fact_i = 1.0
+    for i in range(max_goals + 1):
+        if i > 0:
+            fact_i *= i
+        p_i = exp_lh * (lambda_h ** i) / fact_i
+        fact_j = 1.0
+        for j in range(max_goals + 1):
+            if j > 0:
+                fact_j *= j
+            p_j = exp_la * (lambda_a ** j) / fact_j
+            p = p_i * p_j
+            if p > best_p:
+                best_p = p
+                best = (i, j)
+    return best
+
+
+def simulate_match_goals(elo_h, elo_a, home_code=None, away_code=None):
+    lambda_h, lambda_a = derive_lambdas_from_elo(elo_h, elo_a)
 
     def poisson_sample(lam):
         L = math.exp(-lam)
@@ -405,6 +446,10 @@ def simulate_tournament(elo_map, params=None):
         "opponents": {},
     })
 
+    expected_scores = {}
+    if params:
+        expected_scores = params.get("expected_scores") or {}
+
     group_results = {}
 
     for grp_letter, teams in WC2026_GROUPS.items():
@@ -419,17 +464,30 @@ def simulate_tournament(elo_map, params=None):
                 a_code = teams[i_a]
                 elo_h = elo_map.get(h_code, 1500)
                 elo_a = elo_map.get(a_code, 1500)
+
+                # Issue stochastique du match (W/D/L → pts) basée sur Elo
                 gh, ga = simulate_match_goals(elo_h, elo_a, h_code, a_code)
 
-                standings[h_code]["gf"] += gh
-                standings[h_code]["ga"] += ga
-                standings[a_code]["gf"] += ga
-                standings[a_code]["ga"] += gh
+                # Buts pour départage : score le plus probable issu des cotes
+                # bookmakers (constant sur toutes les sims du même match) si
+                # disponible, sinon fallback λ Elo. Cette séparation rend le
+                # signal de tie-break plus stable et reflète l'opinion marché
+                # pré-tournoi, tandis que les pts gardent la variance Poisson.
+                if (h_code, a_code) in expected_scores:
+                    xh, xa = expected_scores[(h_code, a_code)]
+                else:
+                    lh, la = derive_lambdas_from_elo(elo_h, elo_a)
+                    xh, xa = most_likely_score(lh, la)
 
-                h2h_log[h_code][a_code]["gf"] += gh
-                h2h_log[h_code][a_code]["ga"] += ga
-                h2h_log[a_code][h_code]["gf"] += ga
-                h2h_log[a_code][h_code]["ga"] += gh
+                standings[h_code]["gf"] += xh
+                standings[h_code]["ga"] += xa
+                standings[a_code]["gf"] += xa
+                standings[a_code]["ga"] += xh
+
+                h2h_log[h_code][a_code]["gf"] += xh
+                h2h_log[h_code][a_code]["ga"] += xa
+                h2h_log[a_code][h_code]["gf"] += xa
+                h2h_log[a_code][h_code]["ga"] += xh
 
                 if gh > ga:
                     standings[h_code]["pts"] += 3

@@ -202,11 +202,102 @@ def simulate_knockout_match(elo_h, elo_a, home_code=None, away_code=None):
         return ("A", gh, ga + 1)
 
 
-def _rank_group(standings):
-    def sort_key(item):
-        code, s = item
-        return (-s["pts"], -(s["gf"] - s["ga"]), -s["gf"])
-    return sorted(standings.items(), key=sort_key)
+def _h2h_metrics_subset(code, codes_in_tie, h2h_log):
+    """Calcule (pts, diff, gf) H2H d'une équipe sur un sous-ensemble donné."""
+    h2h_pts = 0
+    h2h_gf = 0
+    h2h_ga = 0
+    opp_dict = h2h_log.get(code, {})
+    for opp in codes_in_tie:
+        if opp == code:
+            continue
+        rec = opp_dict.get(opp)
+        if not rec:
+            continue
+        h2h_pts += rec.get("pts", 0)
+        h2h_gf += rec.get("gf", 0)
+        h2h_ga += rec.get("ga", 0)
+    return h2h_pts, h2h_gf - h2h_ga, h2h_gf
+
+
+def _rank_tied_subgroup(tied, h2h_log, elo_map):
+    """Départage récursivement un sous-groupe d'équipes ex æquo (FIFA art. 13).
+
+    Implémente la règle stricte du règlement : "If, after having applied criteria
+    a) to c) above, teams still have an equal ranking, criteria a) to c) above
+    are applied to the matches between the remaining teams only."
+
+    1. Calcule (pts H2H, diff H2H, buts H2H) sur le sous-groupe courant.
+    2. Trie par ce triplet décroissant.
+    3. Re-groupe par triplet H2H identique :
+        - Sous-sous-groupe singleton → ordre figé.
+        - Sous-sous-groupe strictement plus petit que `tied` → récursion
+          (re-application du step 1 sur les matchs entre seulement ces équipes).
+        - Sous-sous-groupe = `tied` (pas de progrès) → fallback step 2 (d/e)
+          puis step 3 Elo (proxy ranking FIFA).
+    """
+    if len(tied) <= 1:
+        return list(tied)
+
+    codes_in_tie = frozenset(c for c, _ in tied)
+
+    def h2h_key(item):
+        code = item[0]
+        m = _h2h_metrics_subset(code, codes_in_tie, h2h_log)
+        return (-m[0], -m[1], -m[2])
+
+    tied_sorted = sorted(tied, key=h2h_key)
+
+    from itertools import groupby
+    result = []
+    for _key, sub_iter in groupby(tied_sorted, key=h2h_key):
+        sub = list(sub_iter)
+        if len(sub) == 1:
+            result.extend(sub)
+        elif len(sub) < len(tied):
+            result.extend(_rank_tied_subgroup(sub, h2h_log, elo_map))
+        else:
+            sub_sorted = sorted(sub, key=lambda x: (
+                -(x[1]["gf"] - x[1]["ga"]),
+                -x[1]["gf"],
+                -float(elo_map.get(x[0], 1500.0)),
+            ))
+            result.extend(sub_sorted)
+    return result
+
+
+def _rank_group(standings, h2h_log=None, elo_map=None):
+    """Classe les équipes d'une poule selon FIFA WC 2026 Regulations art. 13.
+
+    Etapes officielles appliquées dans l'ordre :
+        Step 1 (a/b/c)  : pts H2H, diff de buts H2H, buts marqués H2H, calculés
+                          uniquement sur les matchs entre les équipes encore
+                          ex æquo. Récursion stricte sur sous-sous-groupes.
+        Step 2 (d/e)    : diff de buts globale, buts marqués globaux (appliqués
+                          uniquement quand le step 1 ne fait plus progresser).
+        Step 2 (f)      : score conduite (cartons) — OMIS (cartons non modélisés
+                          en Monte-Carlo, l'Elo le remplace comme dernier
+                          critère sportif).
+        Step 3 (g/h)    : ranking FIFA récent puis précédent — REMPLACÉ par
+                          l'Elo pré-tournoi (proxy ranking FIFA, cohérent avec
+                          _pick_best_thirds).
+    """
+    h2h_log = h2h_log or {}
+    elo_map = elo_map or {}
+
+    items = list(standings.items())
+    items.sort(key=lambda x: -x[1]["pts"])
+
+    from itertools import groupby
+    final_order = []
+    for _pts, group_iter in groupby(items, key=lambda x: x[1]["pts"]):
+        tied = list(group_iter)
+        if len(tied) == 1:
+            final_order.extend(tied)
+        else:
+            final_order.extend(_rank_tied_subgroup(tied, h2h_log, elo_map))
+
+    return final_order
 
 
 def _pick_best_thirds(group_results, elo_map=None, n=8, sim_seed=None):
@@ -310,6 +401,7 @@ def simulate_tournament(elo_map, params=None):
         "group_pos": 0, "group_pts": 0,
         "r32": False, "r16": False, "qf": False,
         "sf": False, "final": False, "winner": False,
+        "bronze": False, "runner_up": False,
         "opponents": {},
     })
 
@@ -317,6 +409,7 @@ def simulate_tournament(elo_map, params=None):
 
     for grp_letter, teams in WC2026_GROUPS.items():
         standings = {}
+        h2h_log = defaultdict(lambda: defaultdict(lambda: {"pts": 0, "gf": 0, "ga": 0}))
         for code in teams:
             standings[code] = {"pts": 0, "gf": 0, "ga": 0, "w": 0, "d": 0, "l": 0}
 
@@ -333,21 +426,30 @@ def simulate_tournament(elo_map, params=None):
                 standings[a_code]["gf"] += ga
                 standings[a_code]["ga"] += gh
 
+                h2h_log[h_code][a_code]["gf"] += gh
+                h2h_log[h_code][a_code]["ga"] += ga
+                h2h_log[a_code][h_code]["gf"] += ga
+                h2h_log[a_code][h_code]["ga"] += gh
+
                 if gh > ga:
                     standings[h_code]["pts"] += 3
                     standings[h_code]["w"] += 1
                     standings[a_code]["l"] += 1
+                    h2h_log[h_code][a_code]["pts"] += 3
                 elif gh == ga:
                     standings[h_code]["pts"] += 1
                     standings[a_code]["pts"] += 1
                     standings[h_code]["d"] += 1
                     standings[a_code]["d"] += 1
+                    h2h_log[h_code][a_code]["pts"] += 1
+                    h2h_log[a_code][h_code]["pts"] += 1
                 else:
                     standings[a_code]["pts"] += 3
                     standings[a_code]["w"] += 1
                     standings[h_code]["l"] += 1
+                    h2h_log[a_code][h_code]["pts"] += 3
 
-        ranked = _rank_group(standings)
+        ranked = _rank_group(standings, h2h_log=h2h_log, elo_map=elo_map)
         group_results[grp_letter] = ranked
 
         for pos, (code, s) in enumerate(ranked):
@@ -457,6 +559,17 @@ def simulate_tournament(elo_map, params=None):
         sf_winners.append(winner)
         sf_losers.append(loser)
 
+    if len(sf_losers) == 2:
+        b_h = sf_losers[0]
+        b_a = sf_losers[1]
+        tracker[b_h]["opponents"]["bronze"] = b_a
+        tracker[b_a]["opponents"]["bronze"] = b_h
+        elo_h = elo_map.get(b_h, 1500)
+        elo_a = elo_map.get(b_a, 1500)
+        result_b, _, _ = simulate_knockout_match(elo_h, elo_a, b_h, b_a)
+        bronze = b_h if result_b == "H" else b_a
+        tracker[bronze]["bronze"] = True
+
     f_h = sf_winners[0]
     f_a = sf_winners[1]
     tracker[f_h]["final"] = True
@@ -467,7 +580,9 @@ def simulate_tournament(elo_map, params=None):
     elo_a = elo_map.get(f_a, 1500)
     result, _, _ = simulate_knockout_match(elo_h, elo_a, f_h, f_a)
     champion = f_h if result == "H" else f_a
+    runner_up = f_a if result == "H" else f_h
     tracker[champion]["winner"] = True
+    tracker[runner_up]["runner_up"] = True
 
     return dict(tracker)
 
@@ -479,9 +594,10 @@ def run_simulation(n_sims=10000, params=None):
         "group_pts_total": 0,
         "group_pos_counts": defaultdict(int),
         "r32": 0, "r16": 0, "qf": 0, "sf": 0, "final": 0, "winner": 0,
+        "runner_up": 0, "bronze": 0,
         "opponents": {"r32": defaultdict(int), "r16": defaultdict(int),
                        "qf": defaultdict(int), "sf": defaultdict(int),
-                       "final": defaultdict(int)},
+                       "final": defaultdict(int), "bronze": defaultdict(int)},
     })
 
     for _ in range(n_sims):
@@ -490,11 +606,13 @@ def run_simulation(n_sims=10000, params=None):
             a = agg[code]
             a["group_pts_total"] += data["group_pts"]
             a["group_pos_counts"][data["group_pos"]] += 1
-            for stage in ["r32", "r16", "qf", "sf", "final", "winner"]:
-                if data[stage]:
+            for stage in ["r32", "r16", "qf", "sf", "final", "winner", "runner_up", "bronze"]:
+                if data.get(stage):
                     a[stage] += 1
             for stage, opp_code in data.get("opponents", {}).items():
                 if opp_code and opp_code != "UNK":
+                    if stage not in a["opponents"]:
+                        a["opponents"][stage] = defaultdict(int)
                     a["opponents"][stage][opp_code] += 1
 
     output = []
@@ -509,9 +627,9 @@ def run_simulation(n_sims=10000, params=None):
                 break
 
         opp_pcts = {}
-        for stage in ["r32", "r16", "qf", "sf", "final"]:
+        for stage in ["r32", "r16", "qf", "sf", "final", "bronze"]:
             stage_opps = {}
-            for opp, cnt in a["opponents"][stage].items():
+            for opp, cnt in a["opponents"].get(stage, {}).items():
                 stage_opps[opp] = cnt / n_sims * 100
             opp_pcts[stage] = stage_opps
 
@@ -521,6 +639,11 @@ def run_simulation(n_sims=10000, params=None):
         elim_qf = (a["qf"] - a["sf"]) / n_sims * 100
         elim_sf = (a["sf"] - a["final"]) / n_sims * 100
         elim_final = (a["final"] - a["winner"]) / n_sims * 100
+
+        p_winner = a["winner"] / n_sims * 100
+        p_runner_up = a["runner_up"] / n_sims * 100
+        p_bronze = a["bronze"] / n_sims * 100
+        p_podium = p_winner + p_runner_up + p_bronze
 
         output.append({
             "code": code,
@@ -538,7 +661,10 @@ def run_simulation(n_sims=10000, params=None):
             "p_qf": a["qf"] / n_sims * 100,
             "p_sf": a["sf"] / n_sims * 100,
             "p_final": a["final"] / n_sims * 100,
-            "p_winner": a["winner"] / n_sims * 100,
+            "p_winner": p_winner,
+            "p_runner_up": p_runner_up,
+            "p_bronze": p_bronze,
+            "p_podium": p_podium,
             "opponents": opp_pcts,
             "elim_group": elim_group,
             "elim_r32": elim_r32,

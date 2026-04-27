@@ -2504,6 +2504,9 @@ elif page == "🔮 Prédictions":
                     "1/2": _odds_cell(r["p_sf"]),
                     "Finale": _odds_cell(r["p_final"]),
                     "🏆 Titre": _odds_cell(r["p_winner"]),
+                    "🥈 2e": _odds_cell(r.get("p_runner_up", 0)),
+                    "🥉 3e": _odds_cell(r.get("p_bronze", 0)),
+                    "Podium": _odds_cell(r.get("p_podium", 0)),
                 })
             df_sim = pd.DataFrame(rows)
             st.markdown(
@@ -2573,6 +2576,7 @@ elif page == "🔮 Prédictions":
                 ("qf", "1/4 finale", sel_data["p_qf"]),
                 ("sf", "1/2 finale", sel_data["p_sf"]),
                 ("final", "Finale", sel_data["p_final"]),
+                ("bronze", "Match 3e place", max(0, sel_data.get("p_sf", 0) - sel_data.get("p_final", 0))),
             ]
 
             for stage_key, stage_label, p_reach in stages:

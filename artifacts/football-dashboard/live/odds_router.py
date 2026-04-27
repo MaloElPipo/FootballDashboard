@@ -257,6 +257,13 @@ def _try_theoddsapi(league_cfg: LeagueConfig, home: str, away: str,
     """Récupère 1X2 + O/U via TheOddsAPI (mode B garanti ; pas de BTTS soccer).
 
     Match resolution = home_team + away_team substrings (tolérant accents).
+
+    Stratégie bookmaker (cohérente avec la branche BSD compareOdds) :
+    Bet365 prioritaire si disponible, fallback sur le premier bookmaker EU
+    qui couvre chaque marché manquant. `source` reflète le résultat :
+        "theoddsapi_bet365" → 1X2 + O/U entièrement Bet365
+        "theoddsapi_mix"    → mix Bet365 + autre bookmaker
+        "theoddsapi"        → aucun Bet365, tout fallback
     """
     if not league_cfg.theoddsapi_key:
         return None
@@ -301,40 +308,103 @@ def _try_theoddsapi(league_cfg: LeagueConfig, home: str, away: str,
     if target is None:
         return None
 
-    h = d = a = None
-    over = under = None
-    for bk in target.get("bookmakers", []):
-        for mk in bk.get("markets", []):
-            mk_key = mk.get("key")
-            outs = mk.get("outcomes", [])
-            if mk_key == "h2h" and h is None:
-                for o in outs:
-                    name = _norm(o.get("name", ""))
-                    if name == _norm(target.get("home_team", "")):
-                        h = float(o["price"])
-                    elif name == _norm(target.get("away_team", "")):
-                        a = float(o["price"])
-                    elif name in ("draw", "tie"):
-                        d = float(o["price"])
-            elif mk_key == "totals" and over is None:
-                for o in outs:
-                    if abs(float(o.get("point", 0)) - 2.5) < 0.01:
-                        if o.get("name", "").lower() == "over":
-                            over = float(o["price"])
-                        elif o.get("name", "").lower() == "under":
-                            under = float(o["price"])
-        if h and d and a and over and under:
-            break
+    home_norm = _norm(target.get("home_team", ""))
+    away_norm = _norm(target.get("away_team", ""))
 
-    if not (h and d and a):
+    def _is_bet365(bk: dict) -> bool:
+        title = bk.get("title", "") or bk.get("key", "")
+        title_l = title.lower()
+        return any(p.lower() in title_l for p in PREFERRED_BOOKMAKER_PREFIXES)
+
+    def _extract_1x2(bk: dict) -> tuple[float, float, float] | None:
+        for mk in bk.get("markets", []):
+            if mk.get("key") != "h2h":
+                continue
+            h = d = a = None
+            for o in mk.get("outcomes", []):
+                name = _norm(o.get("name", ""))
+                try:
+                    price = float(o["price"])
+                except (TypeError, ValueError, KeyError):
+                    continue
+                if name == home_norm:
+                    h = price
+                elif name == away_norm:
+                    a = price
+                elif name in ("draw", "tie"):
+                    d = price
+            if h and d and a:
+                return (h, d, a)
         return None
 
-    has_ou = bool(over and under)
+    def _extract_ou25(bk: dict) -> tuple[float, float] | None:
+        for mk in bk.get("markets", []):
+            if mk.get("key") != "totals":
+                continue
+            over = under = None
+            for o in mk.get("outcomes", []):
+                try:
+                    if abs(float(o.get("point", 0)) - 2.5) > 0.01:
+                        continue
+                    price = float(o["price"])
+                except (TypeError, ValueError, KeyError):
+                    continue
+                if o.get("name", "").lower() == "over":
+                    over = price
+                elif o.get("name", "").lower() == "under":
+                    under = price
+            if over and under:
+                return (over, under)
+        return None
+
+    bookmakers = target.get("bookmakers", []) or []
+    bet365_bks = [bk for bk in bookmakers if _is_bet365(bk)]
+    other_bks = [bk for bk in bookmakers if not _is_bet365(bk)]
+
+    h2h: tuple[float, float, float] | None = None
+    h2h_from_bet365 = False
+    for bk in bet365_bks:
+        h2h = _extract_1x2(bk)
+        if h2h:
+            h2h_from_bet365 = True
+            break
+    if h2h is None:
+        for bk in other_bks:
+            h2h = _extract_1x2(bk)
+            if h2h:
+                break
+
+    ou: tuple[float, float] | None = None
+    ou_from_bet365 = False
+    for bk in bet365_bks:
+        ou = _extract_ou25(bk)
+        if ou:
+            ou_from_bet365 = True
+            break
+    if ou is None:
+        for bk in other_bks:
+            ou = _extract_ou25(bk)
+            if ou:
+                break
+
+    if h2h is None:
+        return None
+
+    has_ou = ou is not None
+    bet365_count = int(h2h_from_bet365) + (int(ou_from_bet365) if has_ou else 0)
+    expected = 2 if has_ou else 1
+    if bet365_count == expected:
+        source = "theoddsapi_bet365"
+    elif bet365_count > 0:
+        source = "theoddsapi_mix"
+    else:
+        source = "theoddsapi"
+
     return {
-        "1x2": (h, d, a),
-        "ou25": (over, under) if has_ou else None,
+        "1x2": h2h,
+        "ou25": ou if has_ou else None,
         "btts": None,
-        "source": "theoddsapi",
+        "source": source,
         "mode": "B" if has_ou else "C",
     }
 

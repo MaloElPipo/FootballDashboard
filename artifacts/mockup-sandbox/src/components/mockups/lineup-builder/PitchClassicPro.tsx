@@ -241,10 +241,10 @@ export function PitchClassicPro() {
                 />
 
                 <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mt-4 mb-2">Stats attendues match</div>
-                <StatRow label="xG" hint="Expected Goals" value="0.32" sub="0.42 / 90′" />
-                <StatRow label="xA" hint="Expected Assists" value="0.18" sub="0.24 / 90′" />
-                <StatRow label="xT" hint="Expected Threat" value="0.45" sub="à confirmer" />
-                <StatRow label="xTC" hint="xT Contributions" value="0.27" sub="à confirmer" />
+                <StatRow label="xG" hint="Buts attendus" value="0.32" sub="0.42 / 90′" />
+                <StatRow label="xA" hint="Passes déc. attendues" value="0.18" sub="0.24 / 90′" />
+                <StatRow label="xT" hint="Tirs attendus" value="1.85" sub="2.45 / 90′" />
+                <StatRow label="xTC" hint="Tirs cadrés attendus" value="0.72" sub="0.95 / 90′" />
               </div>
             </div>
 

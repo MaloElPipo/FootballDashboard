@@ -90,16 +90,47 @@ def load_forward_log_df() -> pd.DataFrame:
 
 
 def _run_predict_today(args_extra: list[str]) -> tuple[bool, str]:
-    """Lance predict_today.py en sous-processus, capture stdout/stderr."""
-    cmd = [sys.executable, str(ROOT / "predict_today.py")] + args_extra
+    """Lance le pipeline daily V2 (Top 5 + UCL/UEL + ~25 ligues secondaires)
+    en sous-processus, capture stdout/stderr.
+
+    On pointe sur `predict_today_v2.py` (pas v1) pour que le bouton
+    "Rafraîchir prédictions" couvre TOUTES les compétitions actives du
+    registre central — sinon les matchs hors Top 5 (ex: PSG-Bayern UCL)
+    ne sont jamais re-pricés et leurs xG restent figés sur la dernière
+    valeur loggée. v2 réutilise STRICTEMENT le moteur Buteurs Maison 4.1
+    via `import live.predict_today as pt` (zéro modification du moteur).
+    """
+    cmd = [sys.executable, str(ROOT / "predict_today_v2.py")] + args_extra
     try:
         res = subprocess.run(
-            cmd, cwd=DASH_ROOT, capture_output=True, text=True, timeout=300
+            cmd, cwd=DASH_ROOT, capture_output=True, text=True, timeout=600
         )
         out = (res.stdout or "") + "\n" + (res.stderr or "")
         return res.returncode == 0, out
     except subprocess.TimeoutExpired:
-        return False, "TIMEOUT après 5 minutes"
+        return False, "TIMEOUT après 10 minutes"
+
+
+def _invalidate_odds_router_cache() -> int:
+    """Supprime le cache disque du router odds (TTL 30 min) pour forcer
+    un re-fetch frais de toutes les sources (BSD compareOdds / TheOddsAPI
+    Pinnacle+Bet365 / Betclic). Retourne le nombre d'entrées purgées
+    (0 si pas de cache existant). Appelé avant chaque clic explicite sur
+    le bouton "Rafraîchir prédictions" — sans cette purge, l'utilisateur
+    voit les anciennes cotes pendant ≤ 30 min même après avoir rechargé."""
+    cache_file = ROOT / "data" / "odds_router_cache.json"
+    if not cache_file.exists():
+        return 0
+    try:
+        with cache_file.open() as f:
+            n = len(json.load(f) or {})
+    except (json.JSONDecodeError, OSError):
+        n = 0
+    try:
+        cache_file.unlink()
+    except OSError:
+        pass
+    return n
 
 
 def _run_enrich_results() -> tuple[bool, str]:
@@ -1298,11 +1329,21 @@ def render_predictions_buteurs_page():
     last_logged = df["logged_at"].max() if "logged_at" in df.columns else None
     tb1, tb2, tb3 = st.columns([1.2, 1.4, 2.4])
     with tb1:
-        if st.button("🔄 Rafraîchir prédictions", key="predbut_refresh", type="primary"):
-            with st.spinner("Pipeline en cours (1-3 min selon le nombre de matchs)..."):
+        if st.button("🔄 Rafraîchir prédictions", key="predbut_refresh", type="primary",
+                     help="Re-fetch des cotes (Pinnacle/Bet365/Betclic) + re-calcul "
+                          "des xG sur Top 5 + UCL/UEL + ~25 ligues secondaires. "
+                          "Le cache odds 30 min est purgé pour garantir des cotes fraîches."):
+            n_purged = _invalidate_odds_router_cache()
+            with st.spinner(
+                f"Cache odds purgé ({n_purged} entrées). Pipeline V2 en cours "
+                "(2-5 min selon le nombre de matchs)..."
+            ):
                 ok, log_txt = _run_predict_today(["--days", "2", "--refresh-squads"])
             if ok:
-                st.success("Prédictions régénérées (squads BSD + overrides actualisés).")
+                st.success(
+                    "Prédictions régénérées sur toutes les ligues actives "
+                    "(squads BSD + cotes fraîches + xG re-calculés)."
+                )
             else:
                 st.error("Échec du pipeline — vois les logs.")
             with st.expander("Logs"):

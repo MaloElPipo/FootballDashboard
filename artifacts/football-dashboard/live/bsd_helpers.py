@@ -92,7 +92,24 @@ def get_finished_events(league_id: int, date_from: str, date_to: str) -> list[di
 
 
 def get_event_detail(event_id: int) -> dict | None:
-    """Détail complet d'un match (odds, lineups, incidents...)."""
+    """Détail complet d'un match (odds, lineups, incidents...).
+
+    Deux corrections de format BSD avant retour, pour rendre le payload
+    consommable par `predict_today.get_lineup_for_event` (intouchable) :
+
+    1. **Mismatch clés `players` ↔ `starters`** : BSD renvoie les titulaires
+       sous `lineups.{home,away}.players`, mais le V1 lit `starters` ou
+       `starting`. On copie systématiquement `players → starters` quand
+       non vide pour que la compo officielle soit reconnue comme confirmée.
+
+    2. **Fallback `/matches/` quand `/events/` est vide** : l'endpoint
+       `/events/{id}/` peut être en retard de quelques minutes par rapport
+       à `/matches/{id}/` pour les compos confirmées. Si `players=[]` au
+       sortir du premier call, on retente sur `/matches/`.
+
+    Les autres champs (odds, status, head_to_head, …) proviennent toujours
+    du premier appel `/events/{id}/`.
+    """
     try:
         r = requests.get(
             f"{BSD_BASE}/events/{event_id}/",
@@ -101,9 +118,56 @@ def get_event_detail(event_id: int) -> dict | None:
         )
         if r.status_code != 200:
             return None
-        return r.json()
+        data = r.json()
     except Exception:
         return None
+
+    lineups = data.get("lineups") or {}
+    if not isinstance(lineups, dict):
+        return data
+
+    # Étape 1 : si /events/ a déjà des players non vides, on les copie
+    # vers starters (le V1 ne lit que starters/starting).
+    for side in ("home", "away"):
+        sb = lineups.get(side) or {}
+        players = sb.get("players") or []
+        if players and not (sb.get("starters") or sb.get("starting")):
+            sb["starters"] = players
+            data["lineups"][side] = sb
+
+    # Étape 2 : si starters reste vide pour au moins un côté, fallback
+    # sur /matches/{id}/ qui sert souvent un payload plus à jour.
+    home_starters = ((data.get("lineups") or {}).get("home") or {}).get("starters") or []
+    away_starters = ((data.get("lineups") or {}).get("away") or {}).get("starters") or []
+    if not home_starters or not away_starters:
+        try:
+            rm = requests.get(
+                f"{BSD_BASE}/matches/{event_id}/",
+                headers=_headers(),
+                timeout=DEFAULT_TIMEOUT,
+            )
+            if rm.status_code == 200:
+                mlineups = (rm.json() or {}).get("lineups") or {}
+                if isinstance(mlineups, dict):
+                    for side in ("home", "away"):
+                        sb_m = mlineups.get(side) or {}
+                        players_m = sb_m.get("players") or []
+                        existing = (
+                            (data["lineups"].get(side) or {}).get("starters") or []
+                        )
+                        if players_m and not existing:
+                            data.setdefault("lineups", {}).setdefault(side, {})
+                            data["lineups"][side]["starters"] = players_m
+                            data["lineups"][side]["substitutes"] = (
+                                sb_m.get("substitutes") or []
+                            )
+                            data["lineups"][side]["formation"] = sb_m.get("formation")
+        except Exception:
+            # Fallback silencieux : on garde ce qu'on a (peut-être vide
+            # côté home ou away → predict_today fera build_lineup_fallback).
+            pass
+
+    return data
 
 
 def get_event_player_stats(event_id: int) -> list[dict]:

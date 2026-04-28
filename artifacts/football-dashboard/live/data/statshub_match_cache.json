@@ -1036,10 +1036,235 @@
     "_fetched_at": 1777320383.0362976
   },
   "bsd:202968": {
-    "home": [],
-    "away": [],
-    "_negative": true,
-    "_fetched_at": 1777398502.6151588
+    "external_id": 15632632,
+    "slug": "paris-saint-germain-vs-fc-bayern-munchen-moiel1",
+    "match_score": 1.0,
+    "home": [
+      {
+        "playerId": 889259,
+        "playerInternalId": 21734,
+        "name": "K. Kvaratskhelia",
+        "jerseyNo": 7,
+        "position": "LW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 818244,
+        "playerInternalId": 14378,
+        "name": "O. Dembélé",
+        "jerseyNo": 10,
+        "position": "ST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1154605,
+        "playerInternalId": 48355,
+        "name": "D. Doué",
+        "jerseyNo": 14,
+        "position": "RW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1190933,
+        "playerInternalId": 51304,
+        "name": "J. Neves",
+        "jerseyNo": 87,
+        "position": "LCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 902029,
+        "playerInternalId": 22874,
+        "name": "Vitinha",
+        "jerseyNo": 17,
+        "position": "CM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1142672,
+        "playerInternalId": 46991,
+        "name": "W. Zaïre-Emery",
+        "jerseyNo": 33,
+        "position": "RCM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 989768,
+        "playerInternalId": 31924,
+        "name": "N. Mendes",
+        "jerseyNo": 25,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 979480,
+        "playerInternalId": 30230,
+        "name": "W. Pacho",
+        "jerseyNo": 51,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 155995,
+        "playerInternalId": 5029,
+        "name": "Marquinhos",
+        "jerseyNo": 5,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 814594,
+        "playerInternalId": 14189,
+        "name": "A. Hakimi",
+        "jerseyNo": 2,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 800749,
+        "playerInternalId": 13196,
+        "name": "M. Safonov",
+        "jerseyNo": 39,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      }
+    ],
+    "away": [
+      {
+        "playerId": 108579,
+        "playerInternalId": 3020,
+        "name": "H. Kane",
+        "jerseyNo": 9,
+        "position": "ST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 883537,
+        "playerInternalId": 21022,
+        "name": "L. Díaz",
+        "jerseyNo": 14,
+        "position": "LW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1010231,
+        "playerInternalId": 35320,
+        "name": "J. Musiala",
+        "jerseyNo": 42,
+        "position": "CAM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 978838,
+        "playerInternalId": 30135,
+        "name": "M. Olise",
+        "jerseyNo": 17,
+        "position": "RW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1142251,
+        "playerInternalId": 46895,
+        "name": "A. Pavlović",
+        "jerseyNo": 45,
+        "position": "LCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 259117,
+        "playerInternalId": 7255,
+        "name": "J. Kimmich",
+        "jerseyNo": 6,
+        "position": "RCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 843665,
+        "playerInternalId": 16914,
+        "name": "A. Davies",
+        "jerseyNo": 19,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 227672,
+        "playerInternalId": 6382,
+        "name": "J. Tah",
+        "jerseyNo": 4,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 798583,
+        "playerInternalId": 13021,
+        "name": "D. Upamecano",
+        "jerseyNo": 2,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 927407,
+        "playerInternalId": 25263,
+        "name": "J. Stanišić",
+        "jerseyNo": 44,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 8959,
+        "playerInternalId": 58,
+        "name": "M. Neuer",
+        "jerseyNo": 1,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      }
+    ],
+    "source": "statshub",
+    "_fetched_at": 1777401250.6590245
   },
   "bsd:202969": {
     "home": [],
@@ -1336,7 +1561,7 @@
       }
     ],
     "source": "statshub",
-    "_fetched_at": 1777399430.1945424
+    "_fetched_at": 1777401245.60865
   },
   "bsd:4784": {
     "external_id": 14771862,

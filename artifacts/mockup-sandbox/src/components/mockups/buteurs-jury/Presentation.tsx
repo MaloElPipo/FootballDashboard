@@ -4,10 +4,8 @@ type Player = {
   name: string;
   team: string;
   pos: string;
+  role: "XI" | "BENCH";
   xg90: number;
-  mins_ucl: number;
-  g_ucl: number;
-  xg_ucl: number;
   fr_estim: number;
   mins_exp: number;
   cote_betclic: number;
@@ -44,6 +42,12 @@ const verdictBadge = (v: string) => {
   );
 };
 
+const roleBadge = (r: string) => {
+  if (r === "XI")
+    return <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-500/15 text-blue-300 ring-1 ring-blue-500/30">XI</span>;
+  return <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-zinc-700/40 text-zinc-400 ring-1 ring-zinc-600/40">SUB</span>;
+};
+
 const shiftStyle = (v41: string, v42: string) => {
   if (v41 === v42) return "text-zinc-500";
   if (v42 === "VALUE") return "text-emerald-400 font-semibold";
@@ -58,8 +62,14 @@ export function Presentation() {
     players: Player[];
     summary: any;
   };
-  const psgPlayers = players.filter((p) => p.team === "PSG");
-  const bayPlayers = players.filter((p) => p.team === "Bayern");
+  // Sort: XI first then BENCH, within each by xg_match_v42 desc
+  const sortPlayers = (arr: Player[]) =>
+    [...arr].sort((a, b) => {
+      if (a.role !== b.role) return a.role === "XI" ? -1 : 1;
+      return b.xg_match_v42 - a.xg_match_v42;
+    });
+  const psgPlayers = sortPlayers(players.filter((p) => p.team === "PSG"));
+  const bayPlayers = sortPlayers(players.filter((p) => p.team === "Bayern"));
 
   const sumPScorerV42 = (arr: Player[]) => arr.reduce((s, p) => s + p.p_scorer_v42, 0);
   const sumImpBrute = (arr: Player[]) => arr.reduce((s, p) => s + p.p_imp_brute, 0);
@@ -68,7 +78,7 @@ export function Presentation() {
     <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 text-zinc-100 font-sans">
       <div className="max-w-[1280px] mx-auto px-10 py-10">
         {/* HEADER */}
-        <div className="flex items-start justify-between border-b border-zinc-800 pb-6 mb-8">
+        <div className="flex items-start justify-between border-b border-zinc-800 pb-6 mb-6">
           <div>
             <div className="text-[11px] uppercase tracking-[0.25em] text-amber-400 font-semibold mb-2">
               Présentation Jury — Test interne
@@ -86,9 +96,27 @@ export function Presentation() {
             </div>
           </div>
           <div className="text-right">
-            <div className="text-[11px] uppercase tracking-wider text-zinc-500">Match analysé</div>
-            <div className="text-zinc-300 text-sm mt-1">UCL knockout</div>
-            <div className="text-zinc-500 text-xs mt-1">Cotes Garantie 2+ utilisateur</div>
+            <div className="text-[11px] uppercase tracking-wider text-zinc-500">Compositions</div>
+            <div className="text-emerald-400 text-xs mt-1 font-semibold">XI probables intégrés</div>
+            <div className="text-zinc-500 text-xs mt-1">{summary.n_xi} titulaires · {summary.n_bench} subs</div>
+          </div>
+        </div>
+
+        {/* LINEUPS */}
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="bg-blue-950/30 ring-1 ring-blue-800/40 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] uppercase tracking-wider text-blue-300 font-bold">Paris Saint-Germain</span>
+              <span className="text-[10px] text-blue-400/70">4-3-3 · L. Enrique</span>
+            </div>
+            <div className="text-zinc-300 text-[13px] leading-relaxed">{match.lineup_psg}</div>
+          </div>
+          <div className="bg-rose-950/30 ring-1 ring-rose-800/40 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[11px] uppercase tracking-wider text-rose-300 font-bold">FC Bayern München</span>
+              <span className="text-[10px] text-rose-400/70">4-2-3-1 · V. Kompany</span>
+            </div>
+            <div className="text-zinc-300 text-[13px] leading-relaxed">{match.lineup_bay}</div>
           </div>
         </div>
 
@@ -200,14 +228,14 @@ export function Presentation() {
         {/* TABLE — PSG */}
         <section className="mb-8">
           <h2 className="text-[11px] uppercase tracking-[0.2em] text-amber-400 font-bold mb-3">
-            ③ Comparatif joueur par joueur
+            ③ Comparatif joueur par joueur (XI puis bench probable)
           </h2>
           <div className="mb-2 flex items-center gap-2">
             <span className="text-blue-300 text-sm font-bold">Paris Saint-Germain</span>
             <span className="text-zinc-600 text-xs">
               · Σ p_scorer v4.2 = {sumPScorerV42(psgPlayers).toFixed(2)}
               · Σ 1/cote brute = {sumImpBrute(psgPlayers).toFixed(2)}
-              · marge ≈ {fmtPct(sumImpBrute(psgPlayers) / sumPScorerV42(psgPlayers) - 1)}
+              · marge bookie ≈ {fmtPct(sumImpBrute(psgPlayers) / sumPScorerV42(psgPlayers) - 1)}
             </span>
           </div>
           <PlayerTable players={psgPlayers} />
@@ -219,7 +247,7 @@ export function Presentation() {
             <span className="text-zinc-600 text-xs">
               · Σ p_scorer v4.2 = {sumPScorerV42(bayPlayers).toFixed(2)}
               · Σ 1/cote brute = {sumImpBrute(bayPlayers).toFixed(2)}
-              · marge ≈ {fmtPct(sumImpBrute(bayPlayers) / sumPScorerV42(bayPlayers) - 1)}
+              · marge bookie ≈ {fmtPct(sumImpBrute(bayPlayers) / sumPScorerV42(bayPlayers) - 1)}
             </span>
           </div>
           <PlayerTable players={bayPlayers} />
@@ -262,27 +290,32 @@ export function Presentation() {
         {/* SECTION 5 : INTERPRETATION */}
         <section className="mb-10">
           <h2 className="text-[11px] uppercase tracking-[0.2em] text-amber-400 font-bold mb-3">
-            ⑤ Interprétation
+            ⑤ Interprétation des cas saillants
           </h2>
           <div className="bg-zinc-900/60 ring-1 ring-zinc-800 rounded-lg p-5 space-y-3 text-sm leading-relaxed">
             <p className="text-zinc-300">
-              <span className="text-emerald-300 font-semibold">Cas qui valident le PDF :</span>{" "}
-              <span className="text-white">Harry Kane</span> passe SURVEILLER → <span className="text-emerald-300 font-semibold">VALUE</span> grâce à son FinishRate 1.15. Le marché Betclic à 1.90 pricing reste légèrement en retard sur sa conversion réelle.
+              <span className="text-emerald-300 font-semibold">Top VALUE Bayern :</span>{" "}
+              <span className="text-white">Musiala</span> (cote 2.95 vs P_v4.2 57.6%, EV +70%) et <span className="text-white">Kane</span> (cote 1.90 vs P_v4.2 62.4%, EV +18.5%). Marché en retard sur la profondeur de Musiala et la conversion Kane.
             </p>
             <p className="text-zinc-300">
-              <span className="text-emerald-300 font-semibold">Cas qui valident le PDF (bis) :</span>{" "}
-              <span className="text-white">Vitinha</span> passe SKIP → <span className="text-emerald-300 font-semibold">VALUE</span> à 4.80. Sans FinishRate, son volume de frappes longues est sous-évalué ; v4.2 récupère la valeur.
+              <span className="text-emerald-300 font-semibold">VALUE inattendue sur défenseurs :</span>{" "}
+              <span className="text-white">Stanišić</span> (9.50, EV +63.6%), <span className="text-white">Upamecano</span> (13.0, EV +65.9%) et <span className="text-white">Pavlović</span> (10.0, EV +32.1%). Le marché Buteurs Bayern semble systématiquement sous-coter ses défenseurs malgré leur xG/90 réel saison.
             </p>
             <p className="text-zinc-300">
-              <span className="text-amber-300 font-semibold">Cas SKIP confirmé renforcé :</span>{" "}
-              <span className="text-white">Bradley Barcola</span> reste SKIP, mais avec un EV plus négatif (−25.7% → −38.8%). Sa sous-finition documentée le pénalise correctement, là où v4.1 sous-estimait déjà mais sans s'aligner sur la cote.
+              <span className="text-emerald-300 font-semibold">VALUE PSG cachée :</span>{" "}
+              <span className="text-white">Marquinhos</span> (12.0, EV +48%) et <span className="text-white">Neves</span> (9.00, EV +24%). Coups de pied arrêtés et frappes à distance sont sous-évalués par la cote.
             </p>
             <p className="text-zinc-300">
-              <span className="text-amber-300 font-semibold">Cas Musiala :</span> reste VALUE dans les deux modèles, EV se renforce (+26.9% → +31.5%). FinishRate proche de 1 ne change pas le verdict mais la cote 2.95 reste massivement décalée vs son xG/90 0.92.
+              <span className="text-amber-300 font-semibold">Cas qui change v4.1→v4.2 :</span>{" "}
+              <span className="text-white">Vitinha</span> (4.80) passe SKIP → VALUE grâce à FinishRate 1.15. <span className="text-white">Díaz</span> (2.70) passe SURVEILLER → VALUE pour la même raison.
             </p>
             <p className="text-zinc-300">
-              <span className="text-rose-300 font-semibold">Limite à connaître :</span>{" "}
-              <span className="text-white">Doué</span> reste fortement SKIP malgré sa hot streak. v4.2 ajoute du FinishRate (1.25) mais sa surcote 2.60 reste trop faible vs ses minutes attendues (65') et le doute sur sa blessure.
+              <span className="text-rose-300 font-semibold">Top attaquants restés SKIP :</span>{" "}
+              <span className="text-white">Olise</span> (2.60), <span className="text-white">Kvara</span> (2.40), <span className="text-white">Dembélé</span> (2.20). Marché efficient sur les stars : la cote intègre déjà leur volume + leur conversion.
+            </p>
+            <p className="text-zinc-300">
+              <span className="text-rose-300 font-semibold">Sous-finisseur identifié :</span>{" "}
+              <span className="text-white">Barcola</span> tombe de SKIP modéré (−25.7%) à SKIP renforcé (−38.8%) avec FR 0.80. v4.2 capture correctement sa sous-conversion documentée.
             </p>
           </div>
         </section>
@@ -294,15 +327,15 @@ export function Presentation() {
           </h2>
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-zinc-900/40 ring-1 ring-zinc-800 rounded-lg p-4 text-xs space-y-2">
-              <div className="text-amber-300 font-semibold">Données utilisées</div>
+              <div className="text-amber-300 font-semibold">Compositions</div>
               <div className="text-zinc-400">
-                Stats UCL 25-26 réelles (pool BSD), λ équipe issus du marché Garantie 2+, FinishRate estimé via blend Bayes saison + a priori joueur.
+                XI probables fournis utilisateur. Bench limité aux 3 entrants les plus probables côté offensif. Minutes 75-90' XI, 15-25' bench.
               </div>
             </div>
             <div className="bg-zinc-900/40 ring-1 ring-zinc-800 rounded-lg p-4 text-xs space-y-2">
               <div className="text-amber-300 font-semibold">Cotes Buteurs</div>
               <div className="text-zinc-400">
-                Cotes plausibles UCL knockout (calibrées sur historique Betclic). Test à rejouer avec scrap réel avant arbitrage live.
+                Cotes plausibles UCL knockout. Marge PSG observée +37.6% (réaliste), marge Bayern +2.1% (cotes Bayern probablement sous-cotées dans ma simulation, à recalibrer avec scrap réel).
               </div>
             </div>
             <div className="bg-zinc-900/40 ring-1 ring-zinc-800 rounded-lg p-4 text-xs space-y-2">
@@ -313,7 +346,7 @@ export function Presentation() {
             </div>
           </div>
           <div className="text-[10px] text-zinc-600 mt-4 text-center">
-            Présentation générée pour test 4.1 vs 4.2 — Pipeline V-Pin FR · Avril 2026
+            Présentation générée pour test 4.1 vs 4.2 — Pipeline V-Pin FR · Avril 2026 · Compositions probables intégrées
           </div>
         </section>
       </div>
@@ -342,7 +375,8 @@ function PlayerTable({ players }: { players: Player[] }) {
         <thead>
           <tr className="text-[10px] uppercase text-zinc-500 bg-zinc-950/40">
             <th className="text-left px-3 py-2 font-semibold">Joueur</th>
-            <th className="text-right px-2 py-2 font-semibold">Min<br/>att</th>
+            <th className="text-center px-1 py-2 font-semibold">R</th>
+            <th className="text-right px-2 py-2 font-semibold">Min</th>
             <th className="text-right px-2 py-2 font-semibold">xG/90</th>
             <th className="text-right px-2 py-2 font-semibold">FR</th>
             <th className="text-right px-2 py-2 font-semibold">Cote</th>
@@ -357,26 +391,30 @@ function PlayerTable({ players }: { players: Player[] }) {
           </tr>
         </thead>
         <tbody>
-          {players.map((p) => (
-            <tr key={p.name} className="border-t border-zinc-800/60 hover:bg-zinc-800/20">
-              <td className="px-3 py-2">
-                <div className="font-semibold text-white">{p.name}</div>
-                <div className="text-[10px] text-zinc-500">{p.pos} · {p.comment}</div>
-              </td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-300">{p.mins_exp}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-300">{p.xg90.toFixed(2)}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-amber-300">{p.fr_estim.toFixed(2)}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-200 font-semibold">{p.cote_betclic.toFixed(2)}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-400 border-l border-zinc-800">{fmtPct(p.p_imp_norm)}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-200 border-l border-zinc-800">{fmtPct(p.p_scorer_v41)}</td>
-              <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.ev_v41 >= 0.05 ? "text-emerald-400" : p.ev_v41 > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.ev_v41, true)}</td>
-              <td className="text-center px-2 py-2">{verdictBadge(p.verdict_v41)}</td>
-              <td className="text-right px-2 py-2 tabular-nums text-zinc-200 border-l border-zinc-800">{fmtPct(p.p_scorer_v42)}</td>
-              <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.delta_p_v42_vs_norm >= 0.03 ? "text-emerald-400" : p.delta_p_v42_vs_norm > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.delta_p_v42_vs_norm, true)}</td>
-              <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.ev_v42 >= 0.05 ? "text-emerald-400" : p.ev_v42 > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.ev_v42, true)}</td>
-              <td className="text-center px-2 py-2 pr-3">{verdictBadge(p.verdict_v42)}</td>
-            </tr>
-          ))}
+          {players.map((p, idx) => {
+            const isFirstBench = p.role === "BENCH" && (idx === 0 || players[idx - 1].role !== "BENCH");
+            return (
+              <tr key={p.name} className={`border-t ${isFirstBench ? "border-zinc-700 border-t-2" : "border-zinc-800/60"} hover:bg-zinc-800/20 ${p.role === "BENCH" ? "opacity-75" : ""}`}>
+                <td className="px-3 py-2">
+                  <div className="font-semibold text-white">{p.name}</div>
+                  <div className="text-[10px] text-zinc-500">{p.pos} · {p.comment}</div>
+                </td>
+                <td className="text-center px-1 py-2">{roleBadge(p.role)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-300">{p.mins_exp}'</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-300">{p.xg90.toFixed(2)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-amber-300">{p.fr_estim.toFixed(2)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-200 font-semibold">{p.cote_betclic.toFixed(2)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-400 border-l border-zinc-800">{fmtPct(p.p_imp_norm)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-200 border-l border-zinc-800">{fmtPct(p.p_scorer_v41)}</td>
+                <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.ev_v41 >= 0.05 ? "text-emerald-400" : p.ev_v41 > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.ev_v41, true)}</td>
+                <td className="text-center px-2 py-2">{verdictBadge(p.verdict_v41)}</td>
+                <td className="text-right px-2 py-2 tabular-nums text-zinc-200 border-l border-zinc-800">{fmtPct(p.p_scorer_v42)}</td>
+                <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.delta_p_v42_vs_norm >= 0.03 ? "text-emerald-400" : p.delta_p_v42_vs_norm > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.delta_p_v42_vs_norm, true)}</td>
+                <td className={`text-right px-2 py-2 tabular-nums font-semibold ${p.ev_v42 >= 0.05 ? "text-emerald-400" : p.ev_v42 > 0 ? "text-amber-400" : "text-rose-400"}`}>{fmtPct(p.ev_v42, true)}</td>
+                <td className="text-center px-2 py-2 pr-3">{verdictBadge(p.verdict_v42)}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

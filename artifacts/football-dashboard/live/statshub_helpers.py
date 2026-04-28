@@ -142,6 +142,118 @@ class MatchResolution:
     score: float  # 0..1 confidence
 
 
+@dataclass
+class PlayerResolution:
+    external_id: int
+    internal_id: int | None
+    slug: str
+    name: str
+    country_slug: str
+    score: float  # 0..1 confidence
+
+
+# --- Country mapping (BSD `nationality` → StatsHub `countrySlug`) ----------
+# StatsHub uses lowercased, hyphenated slugs ("south-korea", "ivory-coast", etc.).
+_COUNTRY_OVERRIDES: dict[str, str] = {
+    "south korea": "korea-republic",
+    "north korea": "korea-dpr",
+    "ivory coast": "ivory-coast",
+    "côte d'ivoire": "ivory-coast",
+    "cote d'ivoire": "ivory-coast",
+    "czech republic": "czechia",
+    "bosnia and herzegovina": "bosnia-and-herzegovina",
+    "dr congo": "congo-dr",
+    "democratic republic of the congo": "congo-dr",
+    "republic of ireland": "ireland",
+    "northern ireland": "northern-ireland",
+    "united states": "usa",
+    "united arab emirates": "united-arab-emirates",
+    "trinidad and tobago": "trinidad-and-tobago",
+    "saudi arabia": "saudi-arabia",
+    "new zealand": "new-zealand",
+    "south africa": "south-africa",
+    "cape verde": "cape-verde-islands",
+    "guinea-bissau": "guinea-bissau",
+    "burkina faso": "burkina-faso",
+    "equatorial guinea": "equatorial-guinea",
+    "congo": "congo",
+}
+
+
+def country_to_statshub_slug(nationality: str | None) -> str | None:
+    """Convert BSD `nationality` (Title-Case) to StatsHub `countrySlug` (lower-kebab)."""
+    if not nationality:
+        return None
+    n = nationality.strip().lower()
+    if n in _COUNTRY_OVERRIDES:
+        return _COUNTRY_OVERRIDES[n]
+    # Default: lower + spaces → hyphens
+    return n.replace(" ", "-")
+
+
+def find_external_id_for_player(
+    name: str,
+    country: str | None = None,
+    country_slug: str | None = None,
+    min_score: float = 0.78,
+) -> PlayerResolution | None:
+    """Resolve a player name to its StatsHub externalId via /api/search?q=.
+
+    Disambiguation strategy:
+      1. If `country_slug` (or `country`) provided, prefer exact countrySlug match
+      2. Among those, pick the one with highest fuzzy name score
+      3. Fallback: best fuzzy name score across all candidates if score >= min_score
+
+    Returns None if no match meets the threshold.
+    """
+    if not name:
+        return None
+    target_slug = country_slug or country_to_statshub_slug(country)
+
+    payload = _get(f"/api/search?q={requests.utils.quote(name)}")
+    if not isinstance(payload, dict):
+        return None
+    candidates = payload.get("players") or []
+    if not candidates:
+        return None
+
+    norm_target = _normalize(name)
+    scored: list[tuple[float, dict]] = []
+    for c in candidates:
+        if not isinstance(c, dict):
+            continue
+        c_name = c.get("name") or ""
+        c_country = c.get("countrySlug") or ""
+        score = _name_similarity(c_name, name)
+        # Boost if country matches exactly
+        if target_slug and c_country and c_country.lower() == target_slug.lower():
+            score += 0.15  # boost
+        scored.append((score, c))
+
+    if not scored:
+        return None
+    scored.sort(key=lambda x: -x[0])
+    best_score, best = scored[0]
+    if best_score < min_score:
+        return None
+
+    return PlayerResolution(
+        external_id=int(best.get("id")),
+        internal_id=best.get("internalId"),
+        slug=best.get("slug", ""),
+        name=best.get("name", ""),
+        country_slug=best.get("countrySlug", ""),
+        score=min(best_score, 1.0),
+    )
+
+
+def fetch_player_performance(external_id: int, limit: int = 200) -> dict | None:
+    """Fetch raw `/api/player/{id}/performance?limit=N` payload (no aggregation)."""
+    if not external_id:
+        return None
+    return _get(f"/api/player/{int(external_id)}/performance?limit={int(limit)}")
+
+
 def find_event_id_for_match(
     home_team: str,
     away_team: str,

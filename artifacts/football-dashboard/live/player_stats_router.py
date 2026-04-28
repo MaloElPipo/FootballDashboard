@@ -148,32 +148,46 @@ def _safe_float(v: Any, default: float = 0.0) -> float:
 
 def _aggregate_performance_payload(payload: dict, tournament_id: int | None,
                                    season_id: int | None) -> dict:
-    """Réduit un payload `/performance` à un dict d'agrégats compatibles avec
-    le format de `aggregate_player_pool`.
+    """Réduit un payload `/performance` à un dict d'agrégats.
 
-    Si tournament_id fourni → ne garde que les matchs de ce tournoi.
-    Si season_id fourni → idem pour la saison.
+    Format réel observé (avril 2026) :
+        { "data": [
+            { "player_statistics_event": {minutesPlayed, goals, expectedGoals,
+                                          expectedAssists, goalAssist,
+                                          onTargetScoringAttempt,
+                                          shotOffTarget, blockedScoringAttempt, ...},
+              "events": {uniqueTournamentId, timeStartTimestamp, ...},
+              "homeTeam": {...}, "awayTeam": {...} },
+            ...
+          ] }
+
+    Garde aussi la rétrocompat avec les formats anciens (matches, performance,
+    flat list).
+
+    Si tournament_id fourni → ne garde que les matchs avec
+        events.uniqueTournamentId == tournament_id
+    Si season_id fourni → filtré sur seasonId si présent (rare).
     """
-    matches = []
+    items: list = []
     if isinstance(payload, dict):
-        # Plusieurs formats observés : performance.matches OU performance.events
-        # OU directement une liste sous "matches".
-        for key in ("matches", "events", "performance", "data"):
-            blk = payload.get(key)
-            if isinstance(blk, dict):
-                for sub in ("matches", "events", "data"):
-                    if isinstance(blk.get(sub), list):
-                        matches = blk[sub]
-                        break
-                if matches:
+        # Format primaire moderne : { "data": [...] }
+        if isinstance(payload.get("data"), list):
+            items = payload["data"]
+        else:
+            for key in ("matches", "events", "performance"):
+                blk = payload.get(key)
+                if isinstance(blk, list):
+                    items = blk
                     break
-            elif isinstance(blk, list):
-                matches = blk
-                break
-
-    if not matches:
-        # Format alternatif : payload est lui-même la liste
-        matches = payload if isinstance(payload, list) else []
+                if isinstance(blk, dict):
+                    for sub in ("matches", "events", "data"):
+                        if isinstance(blk.get(sub), list):
+                            items = blk[sub]
+                            break
+                    if items:
+                        break
+    elif isinstance(payload, list):
+        items = payload
 
     samples = 0
     minutes_total = 0.0
@@ -187,26 +201,50 @@ def _aggregate_performance_payload(payload: dict, tournament_id: int | None,
     starts = 0
     starter_minutes_sum = 0.0
 
-    for m in matches:
-        if not isinstance(m, dict):
+    for it in items:
+        if not isinstance(it, dict):
             continue
-        # Filtre tournoi si demandé
+
+        # --- Stats : nouveau format (player_statistics_event) ou ancien (statistics/stats/flat)
+        stats = (
+            it.get("player_statistics_event")
+            or it.get("statistics")
+            or it.get("stats")
+            or it
+        )
+        if not isinstance(stats, dict):
+            continue
+
+        # --- Event meta : nouveau format (events) ou ancien (tournament/season inline)
+        event = it.get("events") if isinstance(it.get("events"), dict) else it
+
+        # --- Filtre tournoi
         if tournament_id is not None:
             mt_id = (
-                m.get("tournamentId")
-                or (m.get("tournament") or {}).get("uniqueTournamentId")
-                or (m.get("tournament") or {}).get("id")
+                event.get("uniqueTournamentId")
+                or event.get("tournamentId")
+                or (event.get("tournament") or {}).get("uniqueTournamentId")
+                or (event.get("tournament") or {}).get("id")
             )
-            if mt_id and int(mt_id) != int(tournament_id):
+            if mt_id is None:
                 continue
-        if season_id is not None:
-            ms_id = m.get("seasonId") or (m.get("season") or {}).get("id")
-            if ms_id and int(ms_id) != int(season_id):
+            try:
+                if int(mt_id) != int(tournament_id):
+                    continue
+            except (TypeError, ValueError):
                 continue
 
-        stats = m.get("statistics") or m.get("stats") or m
+        if season_id is not None:
+            ms_id = event.get("seasonId") or (event.get("season") or {}).get("id")
+            if ms_id is not None:
+                try:
+                    if int(ms_id) != int(season_id):
+                        continue
+                except (TypeError, ValueError):
+                    pass
+
         mins = _safe_float(
-            stats.get(_SH_STAT_FIELDS["minutes_played"])
+            stats.get("minutesPlayed")
             or stats.get("minutes_played")
         )
         if mins <= 0:
@@ -218,32 +256,38 @@ def _aggregate_performance_payload(payload: dict, tournament_id: int | None,
             starts += 1
             starter_minutes_sum += mins
 
-        goals_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["goals"]) or stats.get("goals")
-        )
+        goals_total += _safe_float(stats.get("goals"))
+        # assists : `goalAssist` est 0/1 ou int par match
         assists_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["assists"])
-            or stats.get("goal_assist")
+            stats.get("goalAssist")
             or stats.get("assists")
+            or stats.get("goal_assist")
         )
         xg_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["expected_goals"])
-            or stats.get("expected_goals")
+            stats.get("expectedGoals") or stats.get("expected_goals")
         )
         xa_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["expected_assists"])
-            or stats.get("expected_assists")
+            stats.get("expectedAssists") or stats.get("expected_assists")
         )
-        shots_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["total_shots"])
-            or stats.get("total_shots")
-        )
+        # shots : on cumule onTarget + offTarget + blocked si totalShots absent
+        total_shots_field = stats.get("totalShots") or stats.get("total_shots")
+        if total_shots_field is not None:
+            shots_total += _safe_float(total_shots_field)
+        else:
+            shots_total += (
+                _safe_float(stats.get("onTargetScoringAttempt"))
+                + _safe_float(stats.get("shotOffTarget"))
+                + _safe_float(stats.get("blockedScoringAttempt"))
+            )
         shots_on_target_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["shots_on_target"])
+            stats.get("onTargetScoringAttempt")
+            or stats.get("shotsOnTarget")
             or stats.get("shots_on_target")
         )
         key_pass_total += _safe_float(
-            stats.get(_SH_STAT_FIELDS["key_pass"]) or stats.get("key_pass")
+            stats.get("keyPasses")
+            or stats.get("bigChanceCreated")
+            or stats.get("key_pass")
         )
 
     if minutes_total > 0:

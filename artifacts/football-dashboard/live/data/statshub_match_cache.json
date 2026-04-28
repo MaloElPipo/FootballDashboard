@@ -1108,10 +1108,235 @@
     "_fetched_at": 1777326660.55719
   },
   "bsd:7632": {
-    "home": [],
-    "away": [],
-    "_negative": true,
-    "_fetched_at": 1777359521.2446613
+    "external_id": 15715159,
+    "slug": "southampton-vs-ipswich-town-moiel7",
+    "match_score": 1.0,
+    "home": [
+      {
+        "playerId": 790179,
+        "playerInternalId": 11798,
+        "name": "C. Larin",
+        "jerseyNo": 10,
+        "position": "ST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1386651,
+        "playerInternalId": 53256,
+        "name": "L. Scienza",
+        "jerseyNo": 13,
+        "position": "LW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1007067,
+        "playerInternalId": 34751,
+        "name": "F. Azaz",
+        "jerseyNo": 10,
+        "position": "CAM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1083026,
+        "playerInternalId": 40149,
+        "name": "T. Fellows",
+        "jerseyNo": 18,
+        "position": "RW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1171234,
+        "playerInternalId": 49683,
+        "name": "C. Jander",
+        "jerseyNo": 20,
+        "position": "LCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1131449,
+        "playerInternalId": 45631,
+        "name": "S. Charles",
+        "jerseyNo": 24,
+        "position": "RCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 328701,
+        "playerInternalId": 8419,
+        "name": "R. Manning",
+        "jerseyNo": 3,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 944200,
+        "playerInternalId": 27216,
+        "name": "N. Wood",
+        "jerseyNo": 15,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 980637,
+        "playerInternalId": 30375,
+        "name": "T. Harwood-Bellis",
+        "jerseyNo": 6,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 555406,
+        "playerInternalId": 10300,
+        "name": "J. Bree",
+        "jerseyNo": 28,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1048265,
+        "playerInternalId": 38822,
+        "name": "D. Peretz",
+        "jerseyNo": 26,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      }
+    ],
+    "away": [
+      {
+        "playerId": 1000696,
+        "playerInternalId": 33640,
+        "name": "I. A. Monzón",
+        "jerseyNo": 31,
+        "position": "ST",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1014461,
+        "playerInternalId": 35813,
+        "name": "J. Philogene-Bidace",
+        "jerseyNo": 11,
+        "position": "LW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 1014801,
+        "playerInternalId": 35883,
+        "name": "M. Núñez",
+        "jerseyNo": 32,
+        "position": "CAM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 305302,
+        "playerInternalId": 7921,
+        "name": "W. Burns",
+        "jerseyNo": 7,
+        "position": "RW",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 964106,
+        "playerInternalId": 28558,
+        "name": "D. Neil",
+        "jerseyNo": 4,
+        "position": "LCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 856495,
+        "playerInternalId": 18055,
+        "name": "A. Matusiwa",
+        "jerseyNo": 5,
+        "position": "RCDM",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 963493,
+        "playerInternalId": 28526,
+        "name": "L. Davis",
+        "jerseyNo": 3,
+        "position": "LB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 990821,
+        "playerInternalId": 32179,
+        "name": "J. Greaves",
+        "jerseyNo": 24,
+        "position": "LCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 856719,
+        "playerInternalId": 18105,
+        "name": "D. O'Shea",
+        "jerseyNo": 26,
+        "position": "RCB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 786022,
+        "playerInternalId": 11376,
+        "name": "D. Furlong",
+        "jerseyNo": 19,
+        "position": "RB",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      },
+      {
+        "playerId": 198038,
+        "playerInternalId": 6010,
+        "name": "C. Walton",
+        "jerseyNo": 28,
+        "position": "GK",
+        "confidenceScore": null,
+        "predictionSource": "api",
+        "predictionType": "confirmed"
+      }
+    ],
+    "source": "statshub",
+    "_fetched_at": 1777399430.1945424
   },
   "bsd:4784": {
     "external_id": 14771862,

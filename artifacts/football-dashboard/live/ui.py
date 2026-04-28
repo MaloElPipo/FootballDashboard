@@ -1015,7 +1015,21 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
         state.setdefault(pid_int, default_val)
 
     included_pids = {int(pid) for pid, inc in state.items() if inc}
-    recalc = _recalculate_shares(sub, included_pids)
+    # Compte les inclusions différentes du défaut. Si aucune modif → on affiche
+    # les cotes telles que loggées par le moteur Buteurs Maison 4.1 (pool complet
+    # des joueurs avec minutes_expected > 0). Si l'user a touché aux checkboxes
+    # → on bascule en mode "what-if" et on redistribue λ équipe sur les cochés.
+    # Sans ce garde, l'UI redistribuait par défaut λ sur seulement les 11
+    # présumés titulaires, gonflant artificiellement la part des starters
+    # (ex: Kane affiché 1.90 au lieu du 2.10 calculé par le moteur).
+    n_user_changes = sum(
+        1 for pid_d, default_val in default_state.items()
+        if bool(state.get(pid_d, default_val)) != bool(default_val)
+    )
+    if n_user_changes > 0:
+        recalc = _recalculate_shares(sub, included_pids)
+    else:
+        recalc = sub.copy()
     lineup_confirmed = bool(sub["lineup_confirmed"].dropna().iloc[0]) \
         if sub["lineup_confirmed"].notna().any() else False
     home_conf = bool(sub["home_lineup_confirmed"].dropna().iloc[0]) \
@@ -1189,17 +1203,15 @@ def _render_predictions_editor(event_id: int, sub: pd.DataFrame,
     n_total = len(state)
     n_blessed = sum(1 for _, r in sub.iterrows()
                     if _safe_avail(r.get("availability")) != "available")
-    # Détecte si l'utilisateur a touché aux checkboxes (différent du défaut).
-    # Sert à afficher un bandeau rappelant que "Cote juste" est recalculée live.
-    n_user_changes = sum(
-        1 for pid_d, default_val in default_state.items()
-        if bool(state.get(pid_d, default_val)) != bool(default_val)
-    )
+    # Bandeau "what-if" : déclenché dès que l'user a touché aux checkboxes
+    # (`n_user_changes` est calculé plus haut, sert aussi à activer le recalcul
+    # `_recalculate_shares`). Sinon on affiche les cotes telles que loggées par
+    # le moteur Buteurs Maison 4.1.
     if n_user_changes > 0:
         st.info(
             f"💡 Vous avez modifié {n_user_changes} inclusion(s) par rapport au "
             "onze probable. La colonne **Cote juste** est recalculée live à "
-            "partir des joueurs cochés.",
+            "partir des joueurs cochés (mode what-if).",
             icon="ℹ️",
         )
     msg = f"📊 {n_in}/{n_total} joueurs inclus"

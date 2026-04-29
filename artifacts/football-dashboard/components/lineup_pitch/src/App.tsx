@@ -10,19 +10,12 @@ type ChantierOneArgs = {
 
 export function App() {
   const [args, setArgs] = useState<ChantierOneArgs | null>(null);
-  const [debug, setDebug] = useState<string[]>([
-    "[boot] React monté",
-  ]);
   const [pingCount, setPingCount] = useState(0);
   const readySent = useRef(false);
 
   useEffect(() => {
     const onRender = (event: Event) => {
       const data = (event as CustomEvent<RenderData>).detail;
-      setDebug((d) => [
-        ...d,
-        `[render] reçu, args=${JSON.stringify(data?.args ?? {})}`,
-      ]);
       setArgs(data?.args as ChantierOneArgs);
       Streamlit.setFrameHeight();
     };
@@ -32,10 +25,9 @@ export function App() {
     );
     if (!readySent.current) {
       Streamlit.setComponentReady();
-      setDebug((d) => [...d, "[boot] setComponentReady() envoyé"]);
       readySent.current = true;
     }
-    Streamlit.setFrameHeight(260);
+    Streamlit.setFrameHeight();
     return () => {
       Streamlit.events.removeEventListener(
         Streamlit.RENDER_EVENT,
@@ -52,39 +44,33 @@ export function App() {
       ts: Date.now(),
       count: next,
     });
-    setDebug((d) => [...d, `[ping] envoyé count=${next}`]);
   };
+
+  if (args === null) {
+    return null;
+  }
 
   return (
     <div
       style={{
         padding: "12px 16px",
-        border: "2px solid #2563eb",
+        border: "1px solid #c8d6e5",
         borderRadius: 8,
         background: "linear-gradient(180deg, #f7faff 0%, #eef3fb 100%)",
-        fontSize: 13,
+        fontSize: 14,
         color: "#1a2433",
-        minHeight: 220,
       }}
     >
       <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 15 }}>
-        Lineup Pitch — chantier 1 (debug visible)
+        Lineup Pitch — chantier 1 : pipe React ↔ Python validé
       </div>
-      <div style={{ marginBottom: 8 }}>
-        Args reçus :{" "}
-        {args === null ? (
-          <span style={{ color: "#dc2626", fontWeight: 600 }}>
-            ⏳ aucun render event reçu pour le moment
-          </span>
-        ) : (
-          <span>
-            <strong>
-              {args.home_team ?? "?"} vs {args.away_team ?? "?"}
-            </strong>{" "}
-            — {args.kickoff ?? "?"}
-            {args.league ? ` (${args.league})` : ""}
-          </span>
-        )}
+      <div style={{ marginBottom: 10 }}>
+        Match :{" "}
+        <strong>
+          {args.home_team ?? "?"} vs {args.away_team ?? "?"}
+        </strong>{" "}
+        — {args.kickoff ?? "?"}
+        {args.league ? ` (${args.league})` : ""}
       </div>
       <button
         onClick={handlePing}
@@ -103,23 +89,6 @@ export function App() {
       <span style={{ marginLeft: 12, color: "#5f7184" }}>
         Pings envoyés : {pingCount}
       </span>
-      <div
-        style={{
-          marginTop: 12,
-          padding: 8,
-          background: "#1a2433",
-          color: "#9bd1ff",
-          borderRadius: 6,
-          fontFamily: "monospace",
-          fontSize: 11,
-          maxHeight: 120,
-          overflowY: "auto",
-        }}
-      >
-        {debug.map((line, i) => (
-          <div key={i}>{line}</div>
-        ))}
-      </div>
     </div>
   );
 }

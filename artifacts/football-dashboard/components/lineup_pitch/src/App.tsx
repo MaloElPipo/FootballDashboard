@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  Streamlit,
-  withStreamlitConnection,
-  ComponentProps,
-} from "streamlit-component-lib";
+import React, { useEffect, useRef, useState } from "react";
+import { Streamlit, RenderData } from "streamlit-component-lib";
 
 type ChantierOneArgs = {
   home_team?: string;
@@ -12,13 +8,41 @@ type ChantierOneArgs = {
   league?: string;
 };
 
-function PitchAppInner({ args }: ComponentProps) {
-  const a = args as ChantierOneArgs;
+export function App() {
+  const [args, setArgs] = useState<ChantierOneArgs | null>(null);
+  const [debug, setDebug] = useState<string[]>([
+    "[boot] React monté",
+  ]);
   const [pingCount, setPingCount] = useState(0);
+  const readySent = useRef(false);
 
   useEffect(() => {
-    Streamlit.setFrameHeight();
-  });
+    const onRender = (event: Event) => {
+      const data = (event as CustomEvent<RenderData>).detail;
+      setDebug((d) => [
+        ...d,
+        `[render] reçu, args=${JSON.stringify(data?.args ?? {})}`,
+      ]);
+      setArgs(data?.args as ChantierOneArgs);
+      Streamlit.setFrameHeight();
+    };
+    Streamlit.events.addEventListener(
+      Streamlit.RENDER_EVENT,
+      onRender as EventListener,
+    );
+    if (!readySent.current) {
+      Streamlit.setComponentReady();
+      setDebug((d) => [...d, "[boot] setComponentReady() envoyé"]);
+      readySent.current = true;
+    }
+    Streamlit.setFrameHeight(260);
+    return () => {
+      Streamlit.events.removeEventListener(
+        Streamlit.RENDER_EVENT,
+        onRender as EventListener,
+      );
+    };
+  }, []);
 
   const handlePing = () => {
     const next = pingCount + 1;
@@ -28,29 +52,39 @@ function PitchAppInner({ args }: ComponentProps) {
       ts: Date.now(),
       count: next,
     });
+    setDebug((d) => [...d, `[ping] envoyé count=${next}`]);
   };
 
   return (
     <div
       style={{
         padding: "12px 16px",
-        border: "1px solid #c8d6e5",
+        border: "2px solid #2563eb",
         borderRadius: 8,
         background: "linear-gradient(180deg, #f7faff 0%, #eef3fb 100%)",
-        fontSize: 14,
+        fontSize: 13,
         color: "#1a2433",
+        minHeight: 220,
       }}
     >
       <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 15 }}>
-        Lineup Pitch — chantier 1 : ping React {"<-->"} Python
+        Lineup Pitch — chantier 1 (debug visible)
       </div>
       <div style={{ marginBottom: 8 }}>
-        Match reçu du Python :{" "}
-        <strong>
-          {a.home_team ?? "?"} vs {a.away_team ?? "?"}
-        </strong>{" "}
-        — {a.kickoff ?? "?"}
-        {a.league ? ` (${a.league})` : ""}
+        Args reçus :{" "}
+        {args === null ? (
+          <span style={{ color: "#dc2626", fontWeight: 600 }}>
+            ⏳ aucun render event reçu pour le moment
+          </span>
+        ) : (
+          <span>
+            <strong>
+              {args.home_team ?? "?"} vs {args.away_team ?? "?"}
+            </strong>{" "}
+            — {args.kickoff ?? "?"}
+            {args.league ? ` (${args.league})` : ""}
+          </span>
+        )}
       </div>
       <button
         onClick={handlePing}
@@ -69,8 +103,23 @@ function PitchAppInner({ args }: ComponentProps) {
       <span style={{ marginLeft: 12, color: "#5f7184" }}>
         Pings envoyés : {pingCount}
       </span>
+      <div
+        style={{
+          marginTop: 12,
+          padding: 8,
+          background: "#1a2433",
+          color: "#9bd1ff",
+          borderRadius: 6,
+          fontFamily: "monospace",
+          fontSize: 11,
+          maxHeight: 120,
+          overflowY: "auto",
+        }}
+      >
+        {debug.map((line, i) => (
+          <div key={i}>{line}</div>
+        ))}
+      </div>
     </div>
   );
 }
-
-export const App = withStreamlitConnection(PitchAppInner);

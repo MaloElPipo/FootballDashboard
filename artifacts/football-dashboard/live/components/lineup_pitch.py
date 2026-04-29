@@ -165,6 +165,7 @@ def build_match_data_from_log(
     away_team: str | None = None,
     kickoff: str | None = None,
     league: str | None = None,
+    saved_overrides: dict | None = None,
 ) -> dict | None:
     """Transforme le forward_log filtré sur un event en payload MatchData.
 
@@ -236,6 +237,11 @@ def build_match_data_from_log(
         "xg_team_away": _coerce_float(first.get("xg_team_away")),
         "home": home_players,
         "away": away_players,
+        # Compositions manuelles déjà sauvegardées par l'utilisateur. Le
+        # composant React rehydrate l'état depuis cette clé au mount + au
+        # changement de side. None ou {home: null, away: null} = pas
+        # d'override → comportement auto-detect.
+        "saved_overrides": saved_overrides or {"home": None, "away": None},
     }
 
 

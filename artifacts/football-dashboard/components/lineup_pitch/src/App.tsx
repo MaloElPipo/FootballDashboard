@@ -1,4 +1,10 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Streamlit, RenderData } from "streamlit-component-lib";
 import fixture from "./fixtures/atletico_arsenal.json";
 import { Pitch } from "./components/Pitch";
@@ -74,6 +80,9 @@ export function App() {
     Record<number, number>
   >({});
   const [savedAt, setSavedAt] = useState<number | null>(null);
+  // Modif explicite par l'utilisateur depuis le dernier apply/save/reset.
+  // Faux après un rehydrate depuis disque, vrai dès le 1er clic user.
+  const [userDirty, setUserDirty] = useState(false);
   const [isNarrow, setIsNarrow] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const readySent = useRef(false);
@@ -129,6 +138,54 @@ export function App() {
       : (args?.away_team ?? activeMatch.away_team);
   const referenceFormation = useMemo(() => detectFormation(roster), [roster]);
 
+  // Restaure l'état d'un side donné depuis activeMatch :
+  //   - Si une compo manuelle a été sauvegardée par l'utilisateur (présente
+  //     dans `activeMatch.saved_overrides[side]`), on rehydrate formation +
+  //     customAssignment + minutes overrides + horodatage.
+  //   - Sinon, on retombe sur l'état "auto" (formation détectée, pas de
+  //     custom, pas d'overrides).
+  // Cette fonction est appelée à chaque event change (sur "home" par défaut)
+  // ET à chaque switch home↔away pour que chaque équipe puisse avoir sa
+  // propre compo sauvée indépendamment.
+  const applyForSide = useCallback(
+    (newSide: Side) => {
+      const sideRoster =
+        newSide === "home" ? activeMatch.home : activeMatch.away;
+      const saved = activeMatch.saved_overrides?.[newSide] ?? null;
+
+      // Pids vraiment présents dans le roster courant : si le moteur a buildé
+      // un pool différent depuis la dernière sauvegarde, on ignore les pids
+      // disparus pour ne pas casser l'affichage.
+      const validPids = new Set<number>();
+      for (const p of sideRoster) if (p.pid != null) validPids.add(p.pid);
+
+      if (saved && saved.starters_pids?.length > 0) {
+        setFormation(saved.formation);
+        const map = new Map<number, number>();
+        saved.starters_pids.forEach((pid, idx) => {
+          if (pid != null && validPids.has(pid)) map.set(idx, pid);
+        });
+        setCustomAssignment(map.size > 0 ? map : null);
+        const minMap: Record<number, number> = {};
+        for (const [k, v] of Object.entries(saved.minutes_overrides ?? {})) {
+          const n = Number(k);
+          if (!Number.isNaN(n) && validPids.has(n)) minMap[n] = v;
+        }
+        setMinutesOverrides(minMap);
+        setSavedAt(saved.saved_at_ms ?? null);
+      } else {
+        setFormation(detectFormation(sideRoster));
+        setCustomAssignment(null);
+        setMinutesOverrides({});
+        setSavedAt(null);
+      }
+      setSelectedPid(null);
+      setSwapSourcePid(null);
+      setUserDirty(false);
+    },
+    [activeMatch],
+  );
+
   // Reset complet quand l'event change (passage fixture → vraies données,
   // ou changement de match côté Streamlit). Sans ça, on garde la sélection
   // d'un joueur d'un autre match → crash silencieux car pid introuvable.
@@ -138,14 +195,9 @@ export function App() {
     if (lastEventIdRef.current !== newId) {
       lastEventIdRef.current = newId;
       setSide("home");
-      setFormation(detectFormation(activeMatch.home));
-      setCustomAssignment(null);
-      setSelectedPid(null);
-      setSwapSourcePid(null);
-      setMinutesOverrides({});
-      setSavedAt(null);
+      applyForSide("home");
     }
-  }, [activeMatch]);
+  }, [activeMatch, applyForSide]);
 
   // Composition affichée : auto OU manuelle (customAssignment override).
   const { onPitch, bench } = useMemo(() => {
@@ -185,17 +237,13 @@ export function App() {
     Streamlit.setFrameHeight();
   });
 
-  // Quand on change de side, re-detect le schéma + reset selection / overrides
-  // / customAssignment (la compo manuelle ne s'applique pas à l'autre équipe)
+  // Quand on change de side, on rehydrate la compo sauvegardée pour CE
+  // side si elle existe (chaque équipe a sa persistance indépendante),
+  // sinon on retombe sur l'auto-detect via `applyForSide`.
   const handleSideChange = (newSide: Side) => {
     if (newSide === side) return;
     setSide(newSide);
-    const newRoster = newSide === "home" ? activeMatch.home : activeMatch.away;
-    setFormation(detectFormation(newRoster));
-    setSelectedPid(null);
-    setSwapSourcePid(null);
-    setCustomAssignment(null);
-    setMinutesOverrides({});
+    applyForSide(newSide);
   };
 
   // Changement de schéma : on RESET la compo manuelle car les slots changent
@@ -205,6 +253,7 @@ export function App() {
     setCustomAssignment(null);
     setSelectedPid(null);
     setSwapSourcePid(null);
+    setUserDirty(true);
   };
 
   const handleReset = () => {
@@ -214,6 +263,7 @@ export function App() {
     setSwapSourcePid(null);
     setMinutesOverrides({});
     setSavedAt(null);
+    setUserDirty(false);
   };
 
   const handleSave = () => {
@@ -235,6 +285,9 @@ export function App() {
       payload,
     });
     setSavedAt(Date.now());
+    // Reset dirty : on vient de matérialiser l'état courant sur disque,
+    // donc plus rien de "non sauvé" à afficher.
+    setUserDirty(false);
   };
 
   // Exécution d'une permutation entre 2 joueurs (par pid).
@@ -274,6 +327,7 @@ export function App() {
     setCustomAssignment(newMap);
     setSwapSourcePid(null);
     setSelectedPid(null);
+    setUserDirty(true);
   };
 
   // Click handler unifié : si swap actif → swap, sinon ouvre le panneau.
@@ -306,6 +360,15 @@ export function App() {
     customAssignment != null ||
     formation !== referenceFormation ||
     Object.keys(minutesOverrides).length > 0;
+
+  // dirty = action utilisateur depuis le dernier apply/reset/save. On le
+  // pilote explicitement plutôt que via comparaison de signature, parce
+  // qu'`applyForSide` filtre les pids absents du roster (joueur transféré),
+  // ce qui ferait diverger une signature naïve même sans action user et
+  // afficherait à tort le badge "non sauvé" au reload.
+  const isDirty = userDirty && isModified;
+  const hasSaved = activeMatch.saved_overrides?.[side] != null;
+  const isPersistedCustom = hasSaved && !userDirty;
 
   return (
     <div
@@ -611,6 +674,7 @@ export function App() {
                   else next[selectedPid] = m;
                   return next;
                 });
+                setUserDirty(true);
               }}
               onStartSwap={handleStartSwap}
               onClose={() => setSelectedPid(null)}
@@ -619,21 +683,26 @@ export function App() {
         )}
       </div>
 
-      {/* Footer indicateur état */}
-      {isModified && (
+      {/* Footer indicateur état :
+          - dirty (modif locale différente du save) → badge jaune
+          - persistedCustom (identique au save sur disque) → badge vert
+          - état pur auto, jamais sauvé → rien */}
+      {(isDirty || isPersistedCustom) && (
         <div
           style={{
             marginTop: 8,
             padding: "5px 9px",
-            background: "#fef3c7",
-            color: "#78350f",
+            background: isDirty ? "#fef3c7" : "#d1fae5",
+            color: isDirty ? "#78350f" : "#065f46",
             borderRadius: 5,
             fontSize: 10,
             fontWeight: 600,
             display: "inline-block",
           }}
         >
-          Modifications non sauvegardées
+          {isDirty
+            ? "⚠ Modifications non sauvegardées"
+            : "💾 Compo personnalisée sauvegardée sur disque"}
           {customAssignment != null
             ? ` · ${customAssignment.size} permutation(s)`
             : ""}

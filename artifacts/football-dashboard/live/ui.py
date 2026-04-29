@@ -708,19 +708,28 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
         f"{venue_str}  \n{ref_str}"
     )
 
-    # === [T023 chantier 3] Board de composition manuelle ===
+    # === [T023 chantier 4] Board de composition manuelle (avec persistance) ===
     # Composant terrain interactif (6 schémas, cartes maillots avec cote
     # juste, panneau droit cliquable, slider minutes, swap interactif,
     # Save/Reset). Le payload `match_data` est construit côté Python à
-    # partir du forward_log filtré sur l'event courant : rosters home + away
-    # avec toutes les cotes/stats moteur Buteurs Maison 4.1. Si le pool n'a
-    # pas encore été buildé pour cet event (cas rare), le composant retombe
-    # sur un fixture Atlético-Arsenal de démo.
-    with st.expander("🥅 [T023 c3] Composition manuelle interactive", expanded=True):
+    # partir du forward_log filtré sur l'event courant. La compo modifiée
+    # par l'utilisateur est persistée dans `live/data/lineup_overrides/
+    # {event_id}.json` (un fichier par event, deux clés home/away
+    # indépendantes) ; au prochain rendu du même event, la compo est
+    # automatiquement rehydratée côté React.
+    with st.expander("🥅 [T023 c4] Composition manuelle interactive", expanded=True):
         from live.components.lineup_pitch import (
             build_match_data_from_log,
             render_lineup_pitch,
         )
+        from live.lineup_overrides import (
+            clear_lineup_override,
+            load_lineup_override,
+            save_lineup_override,
+        )
+
+        # Charge les compos déjà sauvegardées (home + away indépendamment).
+        saved_overrides = load_lineup_override(int(event_id))
 
         match_payload = build_match_data_from_log(
             event_id=int(event_id),
@@ -729,6 +738,7 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
             away_team=away_name,
             kickoff=kickoff_str,
             league=league_label,
+            saved_overrides=saved_overrides,
         )
         if match_payload is None:
             st.info(
@@ -744,6 +754,39 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
                 "(cotes, xG, xA et stats issus du moteur Buteurs Maison 4.1)"
             )
 
+        # Bandeau d'état des compos sauvegardées + bouton de purge.
+        saved_home = saved_overrides.get("home")
+        saved_away = saved_overrides.get("away")
+        if saved_home or saved_away:
+            from datetime import datetime
+            from zoneinfo import ZoneInfo
+
+            def _fmt(s: dict | None) -> str:
+                if not s:
+                    return "—"
+                ts_ms = s.get("saved_at_ms")
+                if not ts_ms:
+                    return f"compo {s.get('formation')} sauvée"
+                dt = datetime.fromtimestamp(
+                    ts_ms / 1000, tz=ZoneInfo("Europe/Paris")
+                )
+                return f"{s.get('formation')} · sauvée {dt.strftime('%H:%M')}"
+
+            ok_col, btn_col = st.columns([4, 1])
+            with ok_col:
+                st.success(
+                    f"💾 Compo sauvegardée — {home_name} : {_fmt(saved_home)}  ·  "
+                    f"{away_name} : {_fmt(saved_away)}"
+                )
+            with btn_col:
+                if st.button(
+                    "🗑️ Purger",
+                    key=f"clear_lineup_{event_id}",
+                    help="Supprime les compos sauvegardées pour ce match (home + away)",
+                ):
+                    clear_lineup_override(int(event_id), side=None)
+                    st.rerun()
+
         result = render_lineup_pitch(
             event_data={
                 "home_team": home_name,
@@ -754,13 +797,32 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
             match_data=match_payload,
             key=f"lineup_pitch_{event_id}",
         )
-        if result is not None and isinstance(result, dict) and result.get("action") == "save":
-            st.success(
-                f"✓ Composition sauvegardée côté React (chantier 4-5 = persistance "
-                f"JSON + recalcul moteur). "
-                f"Schéma : {result.get('payload', {}).get('formation')} · "
-                f"Side : {result.get('payload', {}).get('side')}"
+        if (
+            result is not None
+            and isinstance(result, dict)
+            and result.get("action") == "save"
+        ):
+            payload = result.get("payload") or {}
+            ts_ms = result.get("ts")
+            saved = save_lineup_override(
+                int(event_id),
+                payload,
+                ts_ms=int(ts_ms) if isinstance(ts_ms, (int, float)) else None,
             )
+            if saved is not None:
+                # rerun pour rafraîchir le bandeau "Compo sauvegardée" en
+                # haut + repasser le saved_overrides au composant React.
+                st.toast(
+                    f"💾 Compo {payload.get('side')} ({payload.get('formation')}) "
+                    "sauvegardée sur disque",
+                    icon="✅",
+                )
+                st.rerun()
+            else:
+                st.warning(
+                    "⚠️ Payload Save invalide (rejeté par lineup_overrides). "
+                    "La compo n'a pas été persistée."
+                )
         with st.expander("Debug : dernier message React → Python", expanded=False):
             st.json(result if result is not None else {"_": "(aucun message)"})
 

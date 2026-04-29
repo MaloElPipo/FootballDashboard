@@ -31,6 +31,23 @@ export type Player = {
   jersey_number: number | null;
 };
 
+export type SavedLineup = {
+  side: Side;
+  formation: FormationKey;
+  // Liste alignée sur l'ordre des slots du `formation` (len == 11). Un
+  // élément null signifie qu'aucun joueur n'a été assigné à ce slot
+  // (cas rare : roster < 11 ou slot vidé manuellement).
+  starters_pids: (number | null)[];
+  // Map pid (string car JSON) → minutes attendues (override utilisateur).
+  minutes_overrides: Record<string, number>;
+  saved_at_ms?: number;
+};
+
+export type SavedOverrides = {
+  home: SavedLineup | null;
+  away: SavedLineup | null;
+};
+
 export type MatchData = {
   event_id: number;
   home_team: string;
@@ -41,6 +58,11 @@ export type MatchData = {
   xg_team_away: number | null;
   home: Player[];
   away: Player[];
+  // Compositions manuelles déjà sauvegardées par l'utilisateur (chargées
+  // depuis live/data/lineup_overrides/{event_id}.json par Python). Si
+  // présent, le composant React rehydrate l'état au mount + au changement
+  // de side, plutôt que de partir de la compo auto-détectée.
+  saved_overrides?: SavedOverrides | null;
 };
 
 export type FormationKey =

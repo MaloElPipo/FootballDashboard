@@ -79,6 +79,45 @@ export const FORMATIONS: Record<FormationKey, Slot[]> = {
     { role: "FWD", x: 35, y: 15 },
     { role: "FWD", x: 65, y: 15 },
   ],
+  "4-5-1": [
+    { role: "GK", x: 50, y: 92 },
+    { role: "DEF", x: 15, y: 72 },
+    { role: "DEF", x: 38, y: 75 },
+    { role: "DEF", x: 62, y: 75 },
+    { role: "DEF", x: 85, y: 72 },
+    { role: "MID", x: 12, y: 50 },
+    { role: "MID", x: 32, y: 53 },
+    { role: "MID", x: 50, y: 50 },
+    { role: "MID", x: 68, y: 53 },
+    { role: "MID", x: 88, y: 50 },
+    { role: "FWD", x: 50, y: 12 },
+  ],
+  "4-1-4-1": [
+    { role: "GK", x: 50, y: 92 },
+    { role: "DEF", x: 15, y: 72 },
+    { role: "DEF", x: 38, y: 75 },
+    { role: "DEF", x: 62, y: 75 },
+    { role: "DEF", x: 85, y: 72 },
+    { role: "MID", x: 50, y: 60 },
+    { role: "MID", x: 15, y: 38 },
+    { role: "MID", x: 38, y: 35 },
+    { role: "MID", x: 62, y: 35 },
+    { role: "MID", x: 85, y: 38 },
+    { role: "FWD", x: 50, y: 12 },
+  ],
+  "5-4-1": [
+    { role: "GK", x: 50, y: 92 },
+    { role: "DEF", x: 10, y: 70 },
+    { role: "DEF", x: 30, y: 75 },
+    { role: "DEF", x: 50, y: 78 },
+    { role: "DEF", x: 70, y: 75 },
+    { role: "DEF", x: 90, y: 70 },
+    { role: "MID", x: 15, y: 47 },
+    { role: "MID", x: 38, y: 50 },
+    { role: "MID", x: 62, y: 50 },
+    { role: "MID", x: 85, y: 47 },
+    { role: "FWD", x: 50, y: 12 },
+  ],
 };
 
 const ROLE_OF: Record<string, RoleBucket> = {
@@ -164,7 +203,15 @@ export function autoAssign(
 }
 
 /** Détecte le schéma "naturel" du roster : compte les starters par rôle
- *  et matche au schéma le plus proche. */
+ *  et matche au schéma le plus proche.
+ *
+ *  Note BSD : les positions remontées peuvent être détaillées (CB, LB,
+ *  RM, AM, ST...) ou coarses (DEF, MID, FWD). Quand le moteur n'a pas
+ *  d'info de schéma officiel (compo non confirmée), on déduit du pool
+ *  des 11 presumed_starters. Beaucoup de clubs (Atlético, Espanyol,
+ *  etc.) sortent en "4-5-1" car les ailiers sont étiquetés MID — il
+ *  faut donc reconnaître ce schéma sinon le fallback générique tombe
+ *  sur "4-2-3-1" qui ne correspond pas. */
 export function detectFormation(roster: Player[]): FormationKey {
   const starters = roster.filter((p) => p.is_starter);
   let nDef = 0,
@@ -178,9 +225,15 @@ export function detectFormation(roster: Player[]): FormationKey {
   });
   const sig = `${nDef}-${nMid}-${nFwd}`;
   if (sig in FORMATIONS) return sig as FormationKey;
-  // Fallback : 4-3-3 si on a 4+ DEF et 3+ FWD, sinon 4-2-3-1
-  if (nDef >= 4 && nFwd >= 3) return "4-3-3";
-  if (nDef >= 4) return "4-2-3-1";
+  // Fallback heuristique par profil défensif/offensif. Ordre IMPORTANT :
+  // les conditions plus spécifiques (5 défenseurs, 5 milieux, etc.)
+  // doivent matcher avant les conditions génériques.
+  if (nDef >= 5 && nFwd >= 2) return "5-3-2";
+  if (nDef >= 5) return "5-4-1";
+  if (nDef === 4 && nMid >= 5) return "4-5-1";
+  if (nDef === 4 && nFwd >= 3) return "4-3-3";
+  if (nDef === 4 && nFwd === 2) return "4-4-2";
+  if (nDef === 4) return "4-2-3-1";
   if (nDef === 3 && nFwd >= 3) return "3-4-3";
   if (nDef === 3) return "3-5-2";
   return "4-3-3";

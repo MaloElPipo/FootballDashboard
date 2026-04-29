@@ -802,27 +802,60 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
             and isinstance(result, dict)
             and result.get("action") == "save"
         ):
+            # GARDE ANTI-BOUCLE : après st.rerun(), le composant React garde
+            # le même `result` en mémoire (clé Streamlit identique) et le
+            # repasse à Python tant qu'aucune nouvelle valeur n'a été émise.
+            # Sans déduplication, on retombe dans save → rerun → save →
+            # rerun à l'infini, ce qui sature le disque et l'UI.
+            #
+            # Clé de dedup primaire = `ts` (timestamp ms émis par React).
+            # Fallback défensif si `ts` absent/invalide (client mal codé) :
+            # tuple (side, formation, tuple(starters_pids), tuple sorted
+            # minutes_overrides) qui change si l'utilisateur a réellement
+            # modifié quelque chose entre deux saves.
             payload = result.get("payload") or {}
             ts_ms = result.get("ts")
-            saved = save_lineup_override(
-                int(event_id),
-                payload,
-                ts_ms=int(ts_ms) if isinstance(ts_ms, (int, float)) else None,
-            )
-            if saved is not None:
-                # rerun pour rafraîchir le bandeau "Compo sauvegardée" en
-                # haut + repasser le saved_overrides au composant React.
-                st.toast(
-                    f"💾 Compo {payload.get('side')} ({payload.get('formation')}) "
-                    "sauvegardée sur disque",
-                    icon="✅",
-                )
-                st.rerun()
+            ts_int = int(ts_ms) if isinstance(ts_ms, (int, float)) else None
+            if ts_int is not None:
+                dedup_key = ts_int
             else:
-                st.warning(
-                    "⚠️ Payload Save invalide (rejeté par lineup_overrides). "
-                    "La compo n'a pas été persistée."
+                starters = tuple(payload.get("starters_pids") or [])
+                mins = tuple(sorted((payload.get("minutes_overrides") or {}).items()))
+                dedup_key = (
+                    payload.get("side"),
+                    payload.get("formation"),
+                    starters,
+                    mins,
                 )
+            last_save_ts_key = f"predbut_last_save_ts_{event_id}"
+            already_processed = (
+                st.session_state.get(last_save_ts_key) == dedup_key
+            )
+            if already_processed:
+                pass  # déjà traité au précédent run, on ignore l'écho React
+            else:
+                saved = save_lineup_override(
+                    int(event_id),
+                    payload,
+                    ts_ms=ts_int,
+                )
+                if saved is not None:
+                    # Marque la dedup_key comme traitée AVANT le rerun, pour
+                    # que le prochain pass voie l'écho et l'ignore.
+                    st.session_state[last_save_ts_key] = dedup_key
+                    # rerun pour rafraîchir le bandeau "Compo sauvegardée" en
+                    # haut + repasser le saved_overrides au composant React.
+                    st.toast(
+                        f"💾 Compo {payload.get('side')} ({payload.get('formation')}) "
+                        "sauvegardée sur disque",
+                        icon="✅",
+                    )
+                    st.rerun()
+                else:
+                    st.warning(
+                        "⚠️ Payload Save invalide (rejeté par lineup_overrides). "
+                        "La compo n'a pas été persistée."
+                    )
         with st.expander("Debug : dernier message React → Python", expanded=False):
             st.json(result if result is not None else {"_": "(aucun message)"})
 

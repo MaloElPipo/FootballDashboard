@@ -708,11 +708,12 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
         f"{venue_str}  \n{ref_str}"
     )
 
-    # === [T023 chantier 1] Test plomberie React <-> Python ===
-    # Bloc de validation du pipe Custom Streamlit Component. Sera remplacé
-    # par le vrai board de compo manuelle aux chantiers 2-5. À supprimer
-    # une fois le chantier 5 livré.
-    with st.expander("🧪 [T023 c1] Plomberie React ↔ Python", expanded=True):
+    # === [T023 chantier 2] Board de composition manuelle ===
+    # Composant terrain interactif (6 schémas, pastilles cotes Buteur, panneau
+    # droit cliquable, slider minutes, Save/Reset). Au chantier 2 le composant
+    # affiche un fixture hardcodé Atlético-Arsenal UCL pour valider l'UI ; au
+    # chantier 3 on branche les vraies données du forward log de l'event courant.
+    with st.expander("🥅 [T023 c2] Composition manuelle (fixture Atlético-Arsenal)", expanded=True):
         from live.components.lineup_pitch import render_lineup_pitch
 
         result = render_lineup_pitch(
@@ -724,8 +725,14 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
             },
             key=f"lineup_pitch_test_{event_id}",
         )
-        st.caption("Dernier message reçu du composant React :")
-        st.json(result if result is not None else {"_": "(aucun ping reçu)"})
+        if result is not None and isinstance(result, dict) and result.get("action") == "save":
+            st.success(
+                f"✓ Composition sauvegardée côté React (chantier 4 = persistance JSON). "
+                f"Schéma : {result.get('payload', {}).get('formation')} · "
+                f"Side : {result.get('payload', {}).get('side')}"
+            )
+        with st.expander("Debug : dernier message React → Python", expanded=False):
+            st.json(result if result is not None else {"_": "(aucun message)"})
 
     # === xG modèle vs Marché ===
     st.markdown("---")

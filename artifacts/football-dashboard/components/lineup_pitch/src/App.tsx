@@ -17,6 +17,7 @@ export function App() {
     const onRender = (event: Event) => {
       const data = (event as CustomEvent<RenderData>).detail;
       setArgs(data?.args as ChantierOneArgs);
+      Streamlit.setFrameHeight();
     };
     Streamlit.events.addEventListener(
       Streamlit.RENDER_EVENT,
@@ -26,7 +27,7 @@ export function App() {
       Streamlit.setComponentReady();
       readySent.current = true;
     }
-    Streamlit.setFrameHeight(120);
+    Streamlit.setFrameHeight(140);
     return () => {
       Streamlit.events.removeEventListener(
         Streamlit.RENDER_EVENT,
@@ -34,10 +35,6 @@ export function App() {
       );
     };
   }, []);
-
-  useEffect(() => {
-    Streamlit.setFrameHeight();
-  });
 
   const handlePing = () => {
     const next = pingCount + 1;
@@ -62,19 +59,13 @@ export function App() {
         background: "linear-gradient(180deg, #f7faff 0%, #eef3fb 100%)",
         fontSize: 14,
         color: "#1a2433",
+        minHeight: 100,
       }}
     >
       <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 15 }}>
         Lineup Pitch — chantier 1 : pipe React ↔ Python validé
       </div>
-      <div style={{ marginBottom: 10 }}>
-        Match :{" "}
-        <strong>
-          {args.home_team ?? "?"} vs {args.away_team ?? "?"}
-        </strong>{" "}
-        — {args.kickoff ?? "?"}
-        {args.league ? ` (${args.league})` : ""}
-      </div>
+      <div style={{ marginBottom: 10 }}>Match : {matchLine}</div>
       <button
         onClick={handlePing}
         style={{

@@ -36,6 +36,7 @@ minimumReleaseAgeExclude:
 
 packages:
   - artifacts/*
+  - artifacts/football-dashboard/components/*
   - lib/*
   - lib/integrations/*
   - scripts

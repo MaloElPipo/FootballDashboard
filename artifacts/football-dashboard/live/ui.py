@@ -708,6 +708,25 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
         f"{venue_str}  \n{ref_str}"
     )
 
+    # === [T023 chantier 1] Test plomberie React <-> Python ===
+    # Bloc de validation du pipe Custom Streamlit Component. Sera remplacé
+    # par le vrai board de compo manuelle aux chantiers 2-5. À supprimer
+    # une fois le chantier 5 livré.
+    with st.expander("🧪 [T023 c1] Plomberie React ↔ Python", expanded=True):
+        from live.components.lineup_pitch import render_lineup_pitch
+
+        result = render_lineup_pitch(
+            event_data={
+                "home_team": home_name,
+                "away_team": away_name,
+                "kickoff": kickoff_str,
+                "league": league_label,
+            },
+            key=f"lineup_pitch_test_{event_id}",
+        )
+        st.caption("Dernier message reçu du composant React :")
+        st.json(result if result is not None else {"_": "(aucun ping reçu)"})
+
     # === xG modèle vs Marché ===
     st.markdown("---")
     st.markdown("### 📊 xG attendus & marchés")

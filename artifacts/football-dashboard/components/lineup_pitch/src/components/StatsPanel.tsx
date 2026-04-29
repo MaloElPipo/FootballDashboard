@@ -125,11 +125,13 @@ export function StatsPanel({
   player,
   minutesOverride,
   onMinutesChange,
+  onStartSwap,
   onClose,
 }: {
   player: Player;
   minutesOverride: number | null;
   onMinutesChange: (m: number | null) => void;
+  onStartSwap: () => void;
   onClose: () => void;
 }) {
   const status = AVAIL_LABEL[player.availability] ?? AVAIL_LABEL.available;
@@ -229,6 +231,27 @@ export function StatsPanel({
         </div>
       </div>
       <div style={{ padding: 14 }}>
+        <button
+          onClick={onStartSwap}
+          className="lineup-pitch-btn"
+          style={{
+            width: "100%",
+            padding: "8px 12px",
+            background: "linear-gradient(180deg, #fb923c 0%, #ea580c 100%)",
+            color: "white",
+            border: "none",
+            borderRadius: 8,
+            fontSize: 13,
+            fontWeight: 800,
+            cursor: "pointer",
+            marginBottom: 12,
+            boxShadow: "0 2px 6px rgba(234,88,12,0.35)",
+            letterSpacing: 0.3,
+          }}
+          title="Activer le mode permutation : cliquez ensuite sur un autre joueur (terrain ou banc) pour permuter"
+        >
+          ⇄ Permuter ce joueur
+        </button>
         <div
           style={{
             fontSize: 10,
@@ -239,18 +262,18 @@ export function StatsPanel({
             marginBottom: 4,
           }}
         >
-          Marchés bookmakers
+          Cotes (modèle Buteurs Maison 4.1)
         </div>
         <StatRow
-          label="Cote Buteur"
-          hint={`Fair ${fmtOdd(player.fair_scorer)} · Betclic ${fmtOdd(player.betclic_scorer)}`}
-          value={fmtOdd(player.betclic_scorer ?? player.fair_scorer)}
+          label="Cote juste Buteur"
+          hint={`Modèle ${fmtOdd(player.fair_scorer)} · Betclic ${fmtOdd(player.betclic_scorer)}`}
+          value={fmtOdd(player.fair_scorer)}
           edge={edgeScorer}
         />
         <StatRow
-          label="Cote Passeur"
-          hint={`Fair ${fmtOdd(player.fair_assist)} · Betclic ${fmtOdd(player.betclic_assist)}`}
-          value={fmtOdd(player.betclic_assist ?? player.fair_assist)}
+          label="Cote juste Passeur"
+          hint={`Modèle ${fmtOdd(player.fair_assist)} · Betclic ${fmtOdd(player.betclic_assist)}`}
+          value={fmtOdd(player.fair_assist)}
           edge={edgeAssist}
         />
         <div

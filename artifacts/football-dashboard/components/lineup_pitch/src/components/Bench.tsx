@@ -1,15 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import type { Player } from "../types";
-
-function initials(name: string): string {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((w) => w[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
+import { getTheme } from "./PlayerDot";
 
 function shortLast(name: string): string {
   const parts = name.split(/\s+/).filter(Boolean);
@@ -22,128 +13,230 @@ const STATUS_DOT: Record<string, string> = {
   suspended: "#ea580c",
 };
 
+function formatOdd(o: number | null | undefined): string {
+  if (o == null || !isFinite(o)) return "—";
+  if (o >= 100) return o.toFixed(0);
+  if (o >= 10) return o.toFixed(1);
+  return o.toFixed(2);
+}
+
+/**
+ * Banc dépliable : par défaut replié, montre juste un bouton-bandeau qui
+ * affiche le nombre de remplaçants et un chevron. Quand déplié, affiche
+ * une grille de mini-cartes (maillot + nom + cote fair).
+ *
+ * En mode swap (`swapSourcePid` non null) le banc se déplie automatiquement
+ * et chaque carte affiche un halo orange "cible cliquable".
+ */
 export function Bench({
   players,
   selectedPid,
+  swapSourcePid,
+  teamName,
+  defaultExpanded = false,
   onSelect,
 }: {
   players: Player[];
   selectedPid: number | null;
+  swapSourcePid: number | null;
+  teamName?: string;
+  defaultExpanded?: boolean;
   onSelect: (pid: number) => void;
 }) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
+  // En mode swap on force l'ouverture pour que les cibles soient visibles.
+  const reallyExpanded = expanded || swapSourcePid != null;
+
   if (players.length === 0) return null;
+
   return (
     <div
       style={{
-        marginTop: 12,
-        background: "#f8fafc",
-        border: "1px solid #e2e8f0",
+        marginTop: 10,
+        background: "linear-gradient(180deg, #1e293b 0%, #0f172a 100%)",
+        border: "1px solid #1e293b",
         borderRadius: 10,
-        padding: "10px 12px",
+        padding: 8,
+        boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
       }}
     >
-      <div
-        style={{
-          fontSize: 11,
-          fontWeight: 700,
-          color: "#475569",
-          textTransform: "uppercase",
-          letterSpacing: 0.5,
-          marginBottom: 8,
-        }}
-      >
-        Banc · {players.length} joueurs
-      </div>
-      <div
+      <button
+        onClick={() => setExpanded((e) => !e)}
+        aria-expanded={reallyExpanded}
+        className="lineup-pitch-btn"
         style={{
           display: "flex",
-          flexWrap: "wrap",
-          gap: 8,
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+          background: "transparent",
+          border: "none",
+          color: "white",
+          padding: "4px 6px",
+          cursor: "pointer",
+          fontSize: 12,
+          fontWeight: 700,
+          letterSpacing: 0.3,
         }}
       >
-        {players.map((p) => {
-          const isSelected = p.pid != null && p.pid === selectedPid;
-          const statusColor = STATUS_DOT[p.availability];
-          return (
-            <button
-              key={p.pid ?? p.name}
-              onClick={() => p.pid != null && onSelect(p.pid)}
-              aria-pressed={isSelected}
-              className="lineup-pitch-btn"
-              title={`${p.name} (${p.pos}) — Cote Buteur ${
-                p.fair_scorer != null ? p.fair_scorer.toFixed(2) : "—"
-              }`}
+        <span>
+          <span style={{ color: "#22d3ee", marginRight: 6 }}>▸</span>
+          Remplaçants · {players.length}
+          {swapSourcePid != null && (
+            <span
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                padding: "4px 8px 4px 4px",
-                background: isSelected ? "#0891b2" : "white",
-                border: isSelected ? "1px solid #0891b2" : "1px solid #cbd5e1",
-                color: isSelected ? "white" : "#1e293b",
-                borderRadius: 999,
-                cursor: "pointer",
-                fontSize: 11,
-                fontWeight: 600,
-                transition: "all 100ms ease",
+                marginLeft: 8,
+                fontSize: 10,
+                color: "#fb923c",
+                fontWeight: 800,
+                letterSpacing: 0.5,
               }}
             >
-              <span
+              MODE SWAP — choisir cible
+            </span>
+          )}
+        </span>
+        <span
+          style={{
+            display: "inline-block",
+            transform: reallyExpanded ? "rotate(180deg)" : "rotate(0deg)",
+            transition: "transform 150ms ease",
+            color: "#94a3b8",
+            fontSize: 10,
+          }}
+        >
+          ▼
+        </span>
+      </button>
+      {reallyExpanded && (
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(64px, 1fr))",
+            gap: 6,
+            marginTop: 8,
+          }}
+        >
+          {players.map((p) => {
+            const isSelected = p.pid != null && p.pid === selectedPid;
+            const isSwapSource = p.pid != null && p.pid === swapSourcePid;
+            const isSwapTarget =
+              swapSourcePid != null && p.pid != null && !isSwapSource;
+            const statusColor = STATUS_DOT[p.availability];
+            const isGK = p.pos === "GK" || p.pos === "G";
+            const theme = getTheme(teamName, isGK);
+            let jerseyBg: React.CSSProperties["background"] = theme.primary;
+            if (theme.pattern === "stripes") {
+              jerseyBg = `repeating-linear-gradient(90deg, ${theme.primary} 0 4px, ${theme.secondary} 4px 8px)`;
+            } else if (theme.pattern === "sleeves") {
+              jerseyBg = `linear-gradient(90deg, ${theme.secondary} 0 4px, ${theme.primary} 4px calc(100% - 4px), ${theme.secondary} calc(100% - 4px) 100%)`;
+            }
+            return (
+              <button
+                key={p.pid ?? p.name}
+                onClick={() => p.pid != null && onSelect(p.pid)}
+                aria-pressed={isSelected || isSwapSource}
+                className="lineup-pitch-btn"
+                title={`${p.name} (${p.pos}) — Cote juste ${formatOdd(p.fair_scorer)}`}
                 style={{
-                  position: "relative",
-                  width: 24,
-                  height: 24,
-                  borderRadius: "50%",
-                  background: isSelected
-                    ? "rgba(255,255,255,0.25)"
-                    : "linear-gradient(160deg, #94a3b8, #64748b)",
-                  color: "white",
-                  fontWeight: 700,
-                  fontSize: 9,
                   display: "flex",
+                  flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
+                  gap: 2,
+                  padding: "4px 2px",
+                  background: "transparent",
+                  border: "none",
+                  cursor: "pointer",
+                  position: "relative",
                 }}
               >
-                {initials(p.name)}
-                {statusColor && (
+                {(isSelected || isSwapSource || isSwapTarget) && (
                   <span
                     style={{
                       position: "absolute",
-                      top: -1,
-                      right: -1,
-                      width: 7,
-                      height: 7,
-                      borderRadius: "50%",
-                      background: statusColor,
-                      border: "1px solid white",
+                      inset: 2,
+                      borderRadius: 6,
+                      background: isSwapTarget
+                        ? "rgba(251,146,60,0.25)"
+                        : "rgba(34,211,238,0.25)",
+                      border: `1px solid ${isSwapTarget ? "#fb923c" : "#22d3ee"}`,
+                      pointerEvents: "none",
                     }}
                   />
                 )}
-              </span>
-              <span>{shortLast(p.name)}</span>
-              <span
-                style={{
-                  marginLeft: 2,
-                  padding: "0 4px",
-                  background: isSelected ? "rgba(255,255,255,0.25)" : "#fef3c7",
-                  color: isSelected ? "white" : "#78350f",
-                  borderRadius: 3,
-                  fontFamily: "ui-monospace, monospace",
-                  fontSize: 10,
-                }}
-              >
-                {p.fair_scorer != null && isFinite(p.fair_scorer)
-                  ? p.fair_scorer >= 100
-                    ? p.fair_scorer.toFixed(0)
-                    : p.fair_scorer.toFixed(2)
-                  : "—"}
-              </span>
-            </button>
-          );
-        })}
-      </div>
+                <div style={{ position: "relative", zIndex: 1 }}>
+                  <div
+                    style={{
+                      width: 28,
+                      height: 28,
+                      background: jerseyBg,
+                      border: `1.5px solid ${theme.secondary}`,
+                      borderRadius: "5px 5px 3px 3px",
+                      color: theme.text,
+                      fontWeight: 800,
+                      fontSize: 11,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      textShadow: "0 1px 2px rgba(0,0,0,0.6)",
+                    }}
+                  >
+                    {p.jersey_number != null
+                      ? p.jersey_number
+                      : p.pid != null
+                        ? String(p.pid % 100).padStart(2, "0")
+                        : "—"}
+                  </div>
+                  {statusColor && (
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: -2,
+                        right: -2,
+                        width: 8,
+                        height: 8,
+                        borderRadius: "50%",
+                        background: statusColor,
+                        border: "1px solid #0f172a",
+                      }}
+                    />
+                  )}
+                </div>
+                <span
+                  style={{
+                    fontSize: 9,
+                    color: "white",
+                    fontWeight: 700,
+                    maxWidth: 60,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    zIndex: 1,
+                  }}
+                >
+                  {shortLast(p.name)}
+                </span>
+                <span
+                  style={{
+                    fontSize: 9,
+                    fontWeight: 800,
+                    color: "white",
+                    background: p.fair_scorer != null ? "#dc2626" : "rgba(148,163,184,0.5)",
+                    padding: "0 4px",
+                    borderRadius: 2,
+                    fontFamily: "ui-monospace, monospace",
+                    minWidth: 24,
+                    textAlign: "center",
+                    zIndex: 1,
+                  }}
+                >
+                  {formatOdd(p.fair_scorer)}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

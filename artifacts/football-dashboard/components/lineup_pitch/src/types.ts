@@ -28,6 +28,7 @@ export type Player = {
   shots_on_p90: number | null;
   minutes_expected: number | null;
   start_rate: number | null;
+  jersey_number: number | null;
 };
 
 export type MatchData = {

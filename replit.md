@@ -78,3 +78,6 @@ The Streamlit dashboard offers an interactive interface with sections for match 
 - **Odds API:** The Odds API
 - **AI Assistant:** Claude (Anthropic)
 - **Data Sources:** Transfermarkt, Betclic, Pinnacle, Betfair Exchange (EU), Unibet FR, PMU FR, AllSportsAPI (for BSD API odds), OPTA Power Ratings.
+
+## T023 c3 (2026-04-29 PM)
+C3 COMPLETED 29/04 PM. build_match_data_from_log() dans lineup_pitch.py transforme forward_log filtre sur event courant en payload MatchData (rosters home + away avec cotes/xG/stats moteur). App.tsx: activeMatch = args.match_data ?? FIXTURE memoise, useEffect reset state (side, formation, custom assignment, selection, swap, overrides) au changement event_id, banner aide swap permanente sous le toggle. ui.py ligne 714+ passe match_data= au render + caption nb joueurs. Verifie Al-Riyadh-Al-Qadsiah: 17+17 joueurs, vrais noms (Sylia, Bayesh, Tozé...) et vraies cotes Buteur (3.35, 9.66, 16.4...). Plus de fixture hardcode. C4 (persistance JSON Save) + C5 (repercussion compo->tableau Python) PENDING.

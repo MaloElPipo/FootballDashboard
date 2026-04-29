@@ -708,13 +708,41 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
         f"{venue_str}  \n{ref_str}"
     )
 
-    # === [T023 chantier 2] Board de composition manuelle ===
-    # Composant terrain interactif (6 schémas, pastilles cotes Buteur, panneau
-    # droit cliquable, slider minutes, Save/Reset). Au chantier 2 le composant
-    # affiche un fixture hardcodé Atlético-Arsenal UCL pour valider l'UI ; au
-    # chantier 3 on branche les vraies données du forward log de l'event courant.
-    with st.expander("🥅 [T023 c2] Composition manuelle (fixture Atlético-Arsenal)", expanded=True):
-        from live.components.lineup_pitch import render_lineup_pitch
+    # === [T023 chantier 3] Board de composition manuelle ===
+    # Composant terrain interactif (6 schémas, cartes maillots avec cote
+    # juste, panneau droit cliquable, slider minutes, swap interactif,
+    # Save/Reset). Le payload `match_data` est construit côté Python à
+    # partir du forward_log filtré sur l'event courant : rosters home + away
+    # avec toutes les cotes/stats moteur Buteurs Maison 4.1. Si le pool n'a
+    # pas encore été buildé pour cet event (cas rare), le composant retombe
+    # sur un fixture Atlético-Arsenal de démo.
+    with st.expander("🥅 [T023 c3] Composition manuelle interactive", expanded=True):
+        from live.components.lineup_pitch import (
+            build_match_data_from_log,
+            render_lineup_pitch,
+        )
+
+        match_payload = build_match_data_from_log(
+            event_id=int(event_id),
+            log_df=df_log,
+            home_team=home_name,
+            away_team=away_name,
+            kickoff=kickoff_str,
+            league=league_label,
+        )
+        if match_payload is None:
+            st.info(
+                "ℹ️ Pas de prédictions loggées pour ce match — affichage du "
+                "fixture de démo (Atlético-Arsenal). Lance « 🔄 Rafraîchir "
+                "prédictions » plus haut pour générer le pool de cet event."
+            )
+        else:
+            n_home = len(match_payload.get("home", []))
+            n_away = len(match_payload.get("away", []))
+            st.caption(
+                f"🧮 {n_home} joueurs {home_name} · {n_away} joueurs {away_name} "
+                "(cotes, xG, xA et stats issus du moteur Buteurs Maison 4.1)"
+            )
 
         result = render_lineup_pitch(
             event_data={
@@ -723,11 +751,13 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
                 "kickoff": kickoff_str,
                 "league": league_label,
             },
-            key=f"lineup_pitch_test_{event_id}",
+            match_data=match_payload,
+            key=f"lineup_pitch_{event_id}",
         )
         if result is not None and isinstance(result, dict) and result.get("action") == "save":
             st.success(
-                f"✓ Composition sauvegardée côté React (chantier 4 = persistance JSON). "
+                f"✓ Composition sauvegardée côté React (chantier 4-5 = persistance "
+                f"JSON + recalcul moteur). "
                 f"Schéma : {result.get('payload', {}).get('formation')} · "
                 f"Side : {result.get('payload', {}).get('side')}"
             )

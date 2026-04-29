@@ -11,12 +11,14 @@ const FORMATION_KEYS = Object.keys(FORMATIONS) as FormationKey[];
 const FIXTURE = fixture as unknown as MatchData;
 
 type ComponentArgs = {
-  // Au chantier 3 : event_id réel + match data BSD live. Pour l'instant,
-  // ces args ne servent qu'à l'affichage du header (titre, kickoff…).
+  // Header (utilisé en fallback si match_data est absent / partiel).
   home_team?: string;
   away_team?: string;
   kickoff?: string;
   league?: string;
+  // Chantier 3 : payload riche construit côté Python depuis le forward_log
+  // de l'event courant. Quand fourni, remplace le fixture hardcodé.
+  match_data?: MatchData | null;
 };
 
 type SaveDelta = {
@@ -26,14 +28,17 @@ type SaveDelta = {
   minutes_overrides: Record<string, number>; // pid -> minutes
 };
 
-function teamHeader(args: ComponentArgs): {
+function teamHeader(
+  args: ComponentArgs,
+  activeMatch: MatchData,
+): {
   league: string;
   match: string;
   kickoff: string;
 } {
   return {
-    league: args.league ?? FIXTURE.league,
-    match: `${args.home_team ?? FIXTURE.home_team} vs ${args.away_team ?? FIXTURE.away_team}`,
+    league: args.league ?? activeMatch.league,
+    match: `${args.home_team ?? activeMatch.home_team} vs ${args.away_team ?? activeMatch.away_team}`,
     kickoff: args.kickoff ?? "Kick-off à venir",
   };
 }
@@ -44,6 +49,14 @@ const NARROW_BREAKPOINT = 720;
 
 export function App() {
   const [args, setArgs] = useState<ComponentArgs | null>(null);
+  // Source de données effective : payload Python si fourni, sinon fixture.
+  // Mémoïsé sur le ref objet pour ne re-déclencher les useMemo qu'au vrai
+  // changement d'event (Streamlit re-render à chaque interaction).
+  const activeMatch = useMemo<MatchData>(() => {
+    const md = args?.match_data;
+    if (md && Array.isArray(md.home) && md.home.length > 0) return md;
+    return FIXTURE;
+  }, [args?.match_data]);
   const [side, setSide] = useState<Side>("home");
   const [formation, setFormation] = useState<FormationKey>(() =>
     detectFormation(FIXTURE.home),
@@ -109,12 +122,30 @@ export function App() {
     };
   }, []);
 
-  const roster = side === "home" ? FIXTURE.home : FIXTURE.away;
+  const roster = side === "home" ? activeMatch.home : activeMatch.away;
   const teamName =
     side === "home"
-      ? (args?.home_team ?? FIXTURE.home_team)
-      : (args?.away_team ?? FIXTURE.away_team);
+      ? (args?.home_team ?? activeMatch.home_team)
+      : (args?.away_team ?? activeMatch.away_team);
   const referenceFormation = useMemo(() => detectFormation(roster), [roster]);
+
+  // Reset complet quand l'event change (passage fixture → vraies données,
+  // ou changement de match côté Streamlit). Sans ça, on garde la sélection
+  // d'un joueur d'un autre match → crash silencieux car pid introuvable.
+  const lastEventIdRef = useRef<number | null>(null);
+  useEffect(() => {
+    const newId = activeMatch.event_id;
+    if (lastEventIdRef.current !== newId) {
+      lastEventIdRef.current = newId;
+      setSide("home");
+      setFormation(detectFormation(activeMatch.home));
+      setCustomAssignment(null);
+      setSelectedPid(null);
+      setSwapSourcePid(null);
+      setMinutesOverrides({});
+      setSavedAt(null);
+    }
+  }, [activeMatch]);
 
   // Composition affichée : auto OU manuelle (customAssignment override).
   const { onPitch, bench } = useMemo(() => {
@@ -159,7 +190,7 @@ export function App() {
   const handleSideChange = (newSide: Side) => {
     if (newSide === side) return;
     setSide(newSide);
-    const newRoster = newSide === "home" ? FIXTURE.home : FIXTURE.away;
+    const newRoster = newSide === "home" ? activeMatch.home : activeMatch.away;
     setFormation(detectFormation(newRoster));
     setSelectedPid(null);
     setSwapSourcePid(null);
@@ -270,7 +301,7 @@ export function App() {
     return roster.find((p) => p.pid === selectedPid) ?? null;
   }, [selectedPid, roster]);
 
-  const headerInfo = teamHeader(args ?? {});
+  const headerInfo = teamHeader(args ?? {}, activeMatch);
   const isModified =
     customAssignment != null ||
     formation !== referenceFormation ||
@@ -406,7 +437,7 @@ export function App() {
                   side === s ? "0 1px 2px rgba(0,0,0,0.08)" : "none",
               }}
             >
-              {s === "home" ? FIXTURE.home_team : FIXTURE.away_team}
+              {s === "home" ? activeMatch.home_team : activeMatch.away_team}
             </button>
           ))}
         </div>
@@ -468,6 +499,27 @@ export function App() {
           )}
         </div>
       </div>
+
+      {/* Astuce permanente swap (sauf si mode swap déjà actif) */}
+      {swapSourcePid == null && (
+        <div
+          style={{
+            background: "#fff7ed",
+            borderLeft: "3px solid #fb923c",
+            padding: "6px 10px",
+            borderRadius: 6,
+            marginBottom: 8,
+            fontSize: 11,
+            color: "#7c2d12",
+            fontWeight: 600,
+            lineHeight: 1.4,
+          }}
+        >
+          💡 Pour permuter 2 joueurs : clique sur l'un, puis le bouton orange{" "}
+          <strong>« ⇄ Permuter ce joueur »</strong> dans le panneau de droite,
+          puis sur l'autre joueur (terrain ou banc).
+        </div>
+      )}
 
       {/* Bandeau mode swap actif */}
       {swapSourcePid != null && (

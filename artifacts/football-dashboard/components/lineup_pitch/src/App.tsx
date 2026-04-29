@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Streamlit } from "./streamlit";
+import {
+  Streamlit,
+  withStreamlitConnection,
+  ComponentProps,
+} from "streamlit-component-lib";
 
 type ChantierOneArgs = {
   home_team?: string;
@@ -8,21 +12,13 @@ type ChantierOneArgs = {
   league?: string;
 };
 
-export function App() {
-  const [args, setArgs] = useState<ChantierOneArgs>({});
+function PitchAppInner({ args }: ComponentProps) {
+  const a = args as ChantierOneArgs;
   const [pingCount, setPingCount] = useState(0);
 
   useEffect(() => {
-    Streamlit.events.addEventListener("render", (e) => {
-      setArgs(e.args as ChantierOneArgs);
-    });
-    Streamlit.setComponentReady();
-    Streamlit.setFrameHeight(180);
-  }, []);
-
-  useEffect(() => {
     Streamlit.setFrameHeight();
-  }, [args, pingCount]);
+  });
 
   const handlePing = () => {
     const next = pingCount + 1;
@@ -51,10 +47,10 @@ export function App() {
       <div style={{ marginBottom: 8 }}>
         Match reçu du Python :{" "}
         <strong>
-          {args.home_team ?? "?"} vs {args.away_team ?? "?"}
+          {a.home_team ?? "?"} vs {a.away_team ?? "?"}
         </strong>{" "}
-        — {args.kickoff ?? "?"}
-        {args.league ? ` (${args.league})` : ""}
+        — {a.kickoff ?? "?"}
+        {a.league ? ` (${a.league})` : ""}
       </div>
       <button
         onClick={handlePing}
@@ -76,3 +72,5 @@ export function App() {
     </div>
   );
 }
+
+export const App = withStreamlitConnection(PitchAppInner);

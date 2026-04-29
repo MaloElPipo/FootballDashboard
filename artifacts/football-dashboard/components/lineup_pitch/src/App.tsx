@@ -17,7 +17,6 @@ export function App() {
     const onRender = (event: Event) => {
       const data = (event as CustomEvent<RenderData>).detail;
       setArgs(data?.args as ChantierOneArgs);
-      Streamlit.setFrameHeight();
     };
     Streamlit.events.addEventListener(
       Streamlit.RENDER_EVENT,
@@ -27,7 +26,7 @@ export function App() {
       Streamlit.setComponentReady();
       readySent.current = true;
     }
-    Streamlit.setFrameHeight();
+    Streamlit.setFrameHeight(120);
     return () => {
       Streamlit.events.removeEventListener(
         Streamlit.RENDER_EVENT,
@@ -35,6 +34,10 @@ export function App() {
       );
     };
   }, []);
+
+  useEffect(() => {
+    Streamlit.setFrameHeight();
+  });
 
   const handlePing = () => {
     const next = pingCount + 1;
@@ -46,9 +49,9 @@ export function App() {
     });
   };
 
-  if (args === null) {
-    return null;
-  }
+  const matchLine = args
+    ? `${args.home_team ?? "?"} vs ${args.away_team ?? "?"} — ${args.kickoff ?? "?"}${args.league ? ` (${args.league})` : ""}`
+    : "(en attente du premier render Streamlit…)";
 
   return (
     <div

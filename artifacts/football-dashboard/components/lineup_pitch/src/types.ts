@@ -63,6 +63,13 @@ export type MatchData = {
   // présent, le composant React rehydrate l'état au mount + au changement
   // de side, plutôt que de partir de la compo auto-détectée.
   saved_overrides?: SavedOverrides | null;
+  // Formation officielle remontée par BSD (`lineups[side].formation`)
+  // quand la compo est confirmée. Quand présente ET non écrasée par un
+  // override sauvegardé, elle est priorisée sur `detectFormation()`. Peut
+  // être un format inconnu de notre `FormationKey` (ex: "4-3-1-2"), auquel
+  // cas le composant retombe sur `detectFormation` pour ce side.
+  home_formation_bsd?: string | null;
+  away_formation_bsd?: string | null;
 };
 
 export type FormationKey =
@@ -74,7 +81,8 @@ export type FormationKey =
   | "5-3-2"
   | "4-5-1"
   | "4-1-4-1"
-  | "5-4-1";
+  | "5-4-1"
+  | "3-4-2-1";
 
 export type Slot = {
   role: RoleBucket;

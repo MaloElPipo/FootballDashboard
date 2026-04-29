@@ -118,6 +118,19 @@ export const FORMATIONS: Record<FormationKey, Slot[]> = {
     { role: "MID", x: 85, y: 47 },
     { role: "FWD", x: 50, y: 12 },
   ],
+  "3-4-2-1": [
+    { role: "GK", x: 50, y: 92 },
+    { role: "DEF", x: 25, y: 75 },
+    { role: "DEF", x: 50, y: 78 },
+    { role: "DEF", x: 75, y: 75 },
+    { role: "MID", x: 12, y: 55 },
+    { role: "MID", x: 38, y: 55 },
+    { role: "MID", x: 62, y: 55 },
+    { role: "MID", x: 88, y: 55 },
+    { role: "FWD", x: 32, y: 28 },
+    { role: "FWD", x: 68, y: 28 },
+    { role: "FWD", x: 50, y: 12 },
+  ],
 };
 
 const ROLE_OF: Record<string, RoleBucket> = {

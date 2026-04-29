@@ -380,6 +380,38 @@ def render_tracking_page():
 # ---------------------------------------------------------------------------
 # Page : Prédiction Buteurs (drill-down match → détail riche BSD)
 # ---------------------------------------------------------------------------
+def _fetch_bsd_formations_cached(event_id: int) -> dict[str, str | None]:
+    """Extrait `lineups[side].formation` depuis le cache BSD existant.
+
+    Renvoie toujours un dict `{"home": str|None, "away": str|None}` : None
+    si BSD est en panne, si la compo n'est pas encore confirmée (pré-match
+    > ~30-60 min), ou si la valeur est invalide. Le composant React priorise
+    cette formation sur l'heuristique detectFormation quand elle correspond
+    à un FormationKey connu, sinon retombe sur l'heuristique.
+
+    Réutilise le cache TTL 5 min de `_bsd_event_detail_cached` pour ne pas
+    multiplier les appels HTTP BSD.
+    """
+    out: dict[str, str | None] = {"home": None, "away": None}
+    try:
+        d = _bsd_event_detail_cached(int(event_id))
+    except Exception:
+        return out
+    if not isinstance(d, dict) or d.get("_error"):
+        return out
+    lineups = d.get("lineups") or {}
+    if not isinstance(lineups, dict):
+        return out
+    for side in ("home", "away"):
+        sb = lineups.get(side) or {}
+        if not isinstance(sb, dict):
+            continue
+        f = sb.get("formation")
+        if isinstance(f, str) and f.strip():
+            out[side] = f.strip()
+    return out
+
+
 @st.cache_data(ttl=300, show_spinner=False)
 def _bsd_event_detail_cached(event_id: int) -> dict:
     """Cache 5 min sur le détail BSD pour éviter de re-fetch à chaque rerun.
@@ -731,6 +763,13 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
         # Charge les compos déjà sauvegardées (home + away indépendamment).
         saved_overrides = load_lineup_override(int(event_id))
 
+        # Récupère la formation officielle BSD (présente quand la compo est
+        # confirmée par le club, ~30-60 min avant kickoff). Cache court car
+        # la formation peut changer entre les premiers leaks et la compo
+        # définitive. Tolérant aux pannes BSD : on retombe sur l'heuristique
+        # detectFormation côté React si la valeur est None ou inconnue.
+        bsd_formations = _fetch_bsd_formations_cached(int(event_id))
+
         match_payload = build_match_data_from_log(
             event_id=int(event_id),
             log_df=df_log,
@@ -739,6 +778,7 @@ def _render_match_detail(event_id: int, df_log: pd.DataFrame):
             kickoff=kickoff_str,
             league=league_label,
             saved_overrides=saved_overrides,
+            bsd_formations=bsd_formations,
         )
         if match_payload is None:
             st.info(

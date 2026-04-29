@@ -59,6 +59,7 @@ _VALID_FORMATIONS: frozenset[str] = frozenset({
     "4-5-1",
     "4-1-4-1",
     "5-4-1",
+    "3-4-2-1",
 })
 
 _STARTERS_LEN: int = 11

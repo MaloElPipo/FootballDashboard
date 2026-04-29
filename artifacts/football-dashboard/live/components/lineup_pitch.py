@@ -166,6 +166,7 @@ def build_match_data_from_log(
     kickoff: str | None = None,
     league: str | None = None,
     saved_overrides: dict | None = None,
+    bsd_formations: dict | None = None,
 ) -> dict | None:
     """Transforme le forward_log filtré sur un event en payload MatchData.
 
@@ -227,6 +228,7 @@ def build_match_data_from_log(
         else:
             home_players.append(p)
 
+    bsd_f = bsd_formations or {}
     return {
         "event_id": int(event_id),
         "home_team": home_team or "Home",
@@ -242,6 +244,12 @@ def build_match_data_from_log(
         # changement de side. None ou {home: null, away: null} = pas
         # d'override → comportement auto-detect.
         "saved_overrides": saved_overrides or {"home": None, "away": None},
+        # Formation officielle remontée par BSD (`getMatchLineups[side].
+        # formation`) quand la compo est confirmée. Le composant React la
+        # priorise sur l'heuristique detectFormation. None pendant la
+        # phase pré-match (BSD ne publie qu'à ~30-60 min du coup d'envoi).
+        "home_formation_bsd": _coerce_str(bsd_f.get("home")),
+        "away_formation_bsd": _coerce_str(bsd_f.get("away")),
     }
 
 

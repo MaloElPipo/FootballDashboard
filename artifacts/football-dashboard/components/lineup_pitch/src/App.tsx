@@ -174,7 +174,22 @@ export function App() {
         setMinutesOverrides(minMap);
         setSavedAt(saved.saved_at_ms ?? null);
       } else {
-        setFormation(detectFormation(sideRoster));
+        // Priorité : formation officielle BSD (compo confirmée par
+        // `lineups[side].formation`) > heuristique detectFormation. BSD ne
+        // remonte la formation qu'à l'approche du coup d'envoi (~30-60 min)
+        // donc en pré-match c'est l'heuristique qui prend la main.
+        const bsdFormation =
+          newSide === "home"
+            ? activeMatch.home_formation_bsd
+            : activeMatch.away_formation_bsd;
+        const isKnownBsdFormation =
+          bsdFormation != null &&
+          (FORMATION_KEYS as readonly string[]).includes(bsdFormation);
+        setFormation(
+          isKnownBsdFormation
+            ? (bsdFormation as FormationKey)
+            : detectFormation(sideRoster),
+        );
         setCustomAssignment(null);
         setMinutesOverrides({});
         setSavedAt(null);

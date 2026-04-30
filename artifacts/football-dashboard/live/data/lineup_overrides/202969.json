@@ -1,24 +1,24 @@
 {
   "event_id": 202969,
-  "updated_at_ms": 1777474986466,
-  "home": {
-    "side": "home",
-    "formation": "4-4-2",
+  "updated_at_ms": 1777480810320,
+  "home": null,
+  "away": {
+    "side": "away",
+    "formation": "4-2-3-1",
     "starters_pids": [
-      760,
-      4248,
-      763,
-      5154,
-      5173,
-      767,
-      769,
-      766,
-      773,
-      775,
-      770
+      442,
+      446,
+      4072,
+      3460,
+      443,
+      448,
+      449,
+      454,
+      447,
+      455,
+      456
     ],
     "minutes_overrides": {},
-    "saved_at_ms": 1777474986466
-  },
-  "away": null
+    "saved_at_ms": 1777480810320
+  }
 }

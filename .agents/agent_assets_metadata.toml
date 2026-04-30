@@ -6,3 +6,15 @@ id = "Oja8uG5Y5Jr1tuctC_x8E"
 uri = "file://artifacts/football-dashboard/live/data/tm_scrap/sfa1.csv"
 type = "table"
 title = "SFA1 (Betway Premiership) — Stats joueurs 5 saisons"
+
+[[outputs]]
+id = "v_ROVnWJ50V3z5_Qhj5eg"
+uri = "file://artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/career_gb1.csv"
+type = "table"
+title = "career_gb1.csv — Premier League (2160 joueurs, 15294 lignes carrière)"
+
+[[outputs]]
+id = "WCQVwRnXK4Oli08BkSCt_"
+uri = "file://artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/career_sa1.csv"
+type = "table"
+title = "career_sa1.csv — Saudi Pro League (732 joueurs, 2497 lignes, carrière hors-SA seulement)"

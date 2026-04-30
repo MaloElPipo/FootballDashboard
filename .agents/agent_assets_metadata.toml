@@ -18,3 +18,15 @@ id = "WCQVwRnXK4Oli08BkSCt_"
 uri = "file://artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/career_sa1.csv"
 type = "table"
 title = "career_sa1.csv — Saudi Pro League (732 joueurs, 2497 lignes, carrière hors-SA seulement)"
+
+[[outputs]]
+id = "ha12pLLeuJhjghPUq0OLx"
+uri = "file://artifacts/football-dashboard/live/data/tm_scrap/alg1.csv"
+type = "table"
+title = "alg1.csv — Ligue 1 Algérie (2021-2025)"
+
+[[outputs]]
+id = "VDmBPuk_WoD_XDL1ppT4x"
+uri = "file://artifacts/football-dashboard/live/data/tm_scrap/mar1.csv"
+type = "table"
+title = "mar1.csv — Botola Pro Inwi Maroc (2021-2025)"

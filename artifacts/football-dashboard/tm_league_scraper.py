@@ -1,34 +1,50 @@
 """
-Scraper Transfermarkt généralisé pour championnats de clubs.
+Scraper Transfermarkt par CLUB + SAISON pour championnats de clubs.
 
-Port Python du script R `finalNewScrap.R`. Pipeline :
-  1) Lister les équipes d'une compétition (page startseite/wettbewerb/{code})
-  2) Lister les joueurs de chaque équipe (page kader)
-  3) Pour chaque joueur, scraper TOUTES les saisons en 1 requête via la
-     page leistungsdatendetails (toutes saisons d'un coup) ; fallback
-     saison par saison si la page globale échoue.
-  4) Résoudre les noms de clubs avec un cache mémoïsé (un seul GET par
-     club même si N joueurs y sont passés).
+Note historique : la première version essayait de scraper les pages joueur
+(/leistungsdatendetails/spieler/{id}) comme le script R `finalNewScrap.R`,
+mais Transfermarkt a migré ces pages vers un rendu Svelte client-side, le
+HTML brut ne contient plus de tableaux. Cette version pivote vers les
+pages CLUB qui rendent encore une table HTML utilisable :
 
-Optimisations vs squad_scraper.py :
-- Threading (ThreadPoolExecutor, équivalent furrr) pour paralléliser
-  les requêtes I/O bound.
-- Cache club thread-safe (Lock).
+    /{slug}/leistungsdaten/verein/{club_id}/plus/0?reldata={comp}%26{saison}
+
+Pipeline (3 étapes) :
+  1) Lister les équipes d'une compétition (page startseite/wettbewerb/{code}).
+  2) Pour chaque (équipe, saison) : 1 GET → table d'environ 25-45 lignes,
+     une par joueur sur la compétition cette saison-là (numéro, position,
+     player_id, name, âge, nationalité, in_squad, appearances, goals,
+     minutes_played).
+  3) Concaténer en CSV unique.
+
+Compromis vs script R original : on perd les colonnes assists / yellow_cards
+/ red_cards (la page club ne les expose pas). Pour le moteur Buteur Maison
+4.1 ce sont matchs+buts+minutes qui comptent en primaire.
+
+Optimisations :
+- ThreadPoolExecutor (~3 workers) pour paralléliser les GET I/O bound.
 - Pause aléatoire courte (0.1-0.4s) au sein de chaque worker.
 - Headers Chrome 146 + Accept-Language fr/en + Referer transfermarkt.
+- Décompression gzip manuelle.
 
-Usage :
+Usage CLI :
+    python tm_league_scraper.py --comp SFA1 --slug betway-premiership \
+        --seasons 2021,2022,2023,2024,2025 \
+        --out live/data/tm_scrap/sfa1.csv
+    python tm_league_scraper.py --comp SFA1 --slug betway-premiership \
+        --test --test-n-teams 1   # smoke test 1 club
+
+Usage programmatique :
     from tm_league_scraper import scrape_league
-    df = scrape_league(comp_code="SFA1", slug="betway-premiership",
-                       seasons=range(2016, 2026), workers=3)
-    df.to_csv("psl_scrap.csv", index=False)
+    df_rows = scrape_league("SFA1", "betway-premiership",
+                            seasons=[2021,2022,2023,2024,2025], workers=3)
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
-import json
+import gzip
 import os
 import random
 import re
@@ -39,7 +55,6 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html import unescape
-from typing import Iterable
 
 # ============================================================
 # Config & constantes
@@ -53,553 +68,429 @@ TM_HEADERS = {
         "Chrome/146.0.0.0 Safari/537.36"
     ),
     "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept": (
-        "text/html,application/xhtml+xml,application/xml;q=0.9,"
-        "image/webp,*/*;q=0.8"
-    ),
-    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Referer": "https://www.transfermarkt.com/",
+    "Accept-Encoding": "gzip",
 }
 
+TIMEOUT = 20
 PAUSE_MIN = 0.10
 PAUSE_MAX = 0.40
-TIMEOUT = 20
 
 # ============================================================
-# Cache de clubs thread-safe (équivalent du new.env() R)
+# HTTP helpers
 # ============================================================
-_club_cache: dict[str, str | None] = {}
-_club_cache_lock = threading.Lock()
+def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | None]:
+    """GET avec gestion gzip + headers Chrome.
 
-
-# ============================================================
-# HTTP helper avec gestion gzip
-# ============================================================
-def _fetch(url: str, timeout: int = TIMEOUT) -> str:
-    """GET tolérant aux pannes. Retourne "" en cas d'échec."""
-    headers = dict(TM_HEADERS)
-    # urllib gère gzip/deflate seulement si on lit manuellement le content-encoding
-    headers["Accept-Encoding"] = "gzip"
+    Returns (html, status, error). En cas de succès : (html, 200, None).
+    En cas d'échec : ("", status_code_si_dispo, message_d'erreur).
+    Cela permet à l'appelant de distinguer "page vide légitime" (200 + html
+    sans table) de "erreur réseau" (timeout, 5xx, 429).
+    """
+    req = urllib.request.Request(url, headers=TM_HEADERS)
     try:
-        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = r.read()
             if r.headers.get("Content-Encoding") == "gzip":
-                import gzip
-                data = gzip.decompress(data)
-            return data.decode("utf-8", errors="replace")
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError):
-        return ""
+                try:
+                    data = gzip.decompress(data)
+                except OSError:
+                    pass
+            return data.decode("utf-8", errors="replace"), r.status, None
+    except urllib.error.HTTPError as e:
+        return "", e.code, f"HTTP {e.code}"
+    except urllib.error.URLError as e:
+        return "", None, f"URL error: {e.reason}"
+    except TimeoutError:
+        return "", None, "timeout"
+    except Exception as e:
+        return "", None, f"{type(e).__name__}: {e}"
+
+
+def _fetch_html(url: str, timeout: int = TIMEOUT) -> str:
+    """Wrapper compat : ne renvoie que le HTML (vide si erreur). Pour appelants
+    qui n'ont pas besoin du statut détaillé."""
+    html, _status, _err = _fetch(url, timeout)
+    return html
 
 
 def _polite_pause():
-    """Pause aléatoire courte entre requêtes — comportement humain-like."""
     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
 
 
 # ============================================================
-# Étape 1 : équipes de la ligue
+# Parsing helpers (regex pures, pas de bs4)
 # ============================================================
+def _strip_html(s: str) -> str:
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = unescape(s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _to_int(s: str) -> int:
+    """Convertit '16', '1.408', '-', '' → int. Strip apostrophe minutes."""
+    if s is None:
+        return 0
+    s = s.strip().rstrip("'").replace(".", "").replace(",", "").replace("\xa0", "")
+    if not s or s == "-":
+        return 0
+    try:
+        return int(s)
+    except ValueError:
+        # Garde les chiffres uniquement
+        digits = re.sub(r"[^\d]", "", s)
+        return int(digits) if digits else 0
+
+
+def _find_table_end(html: str, start: int) -> int:
+    """Trouve la fin de la table à `start` (au '<table') en gérant l'imbrication."""
+    pos = start + len("<table")
+    depth = 1
+    while pos < len(html) and depth > 0:
+        m = re.search(r"<(/?)table\b", html[pos:])
+        if not m:
+            return -1
+        if m.group(1) == "/":
+            depth -= 1
+        else:
+            depth += 1
+        pos += m.end()
+    return pos
+
+
+def _split_top_level(html: str, tag: str) -> list[str]:
+    """Découpe les balises `tag` (tr, td) au top-level, en gérant l'imbrication."""
+    cells: list[str] = []
+    depth = 0
+    cur: int | None = None
+    pat = re.compile(rf"<(/?){tag}\b[^>]*>")
+    i = 0
+    while i < len(html):
+        m = pat.match(html, i)
+        if m:
+            if m.group(1) == "/":
+                depth -= 1
+                if depth == 0 and cur is not None:
+                    cells.append(html[cur:i])
+                    cur = None
+            else:
+                if depth == 0:
+                    cur = i + m.end() - i  # i + length matched from i
+                depth += 1
+            i += m.end() - m.start()
+        else:
+            i += 1
+    return cells
+
+
+# ============================================================
+# Étape 1 : Équipes d'une compétition
+# ============================================================
+# Match deux ordres possibles : title= avant ou après href=
+# Le href peut contenir un suffixe /saison_id/YYYY après l'ID club, on l'accepte
+_TEAM_LINK_PAT_A = re.compile(
+    r'<a\s+title="([^"]+)"\s+href="(/([^/"]+)/startseite/verein/(\d+))[^"]*"'
+)
+_TEAM_LINK_PAT_B = re.compile(
+    r'<a\s+href="(/([^/"]+)/startseite/verein/(\d+))[^"]*"\s+title="([^"]+)"'
+)
+
+
 def get_league_teams(comp_code: str, slug: str = "x") -> list[dict]:
-    """Liste les équipes d'une compétition.
-
-    Args:
-        comp_code: code TM de la compétition (ex: "SFA1" pour Betway Premiership).
-        slug: slug url-friendly (mis à "x" par défaut, TM redirige correctement).
-
-    Returns:
-        list[{team_name, team_id, team_slug, team_url}]
-    """
+    """Liste des équipes (id, slug, name) d'une compétition TM."""
     url = f"{BASE_URL}/{slug}/startseite/wettbewerb/{comp_code}"
-    html = _fetch(url)
+    html, status, err = _fetch(url)
     if not html:
-        raise RuntimeError(f"Impossible d'accéder à la page de la ligue {comp_code}")
-
-    # Extraire toutes les références <a href="/{slug}/startseite/verein/{id}">
-    # depuis la table principale. Pattern défensif tolérant aux espaces/quotes.
-    pattern = re.compile(
-        r'<a[^>]+href="/([^"/]+)/startseite/verein/(\d+)[^"]*"[^>]*>([^<]+)</a>',
-        re.IGNORECASE,
-    )
+        print(f"   ! échec liste équipes {comp_code}: status={status} err={err}", flush=True)
+        return []
     seen: set[str] = set()
     teams: list[dict] = []
-    for m in pattern.finditer(html):
-        team_slug = unescape(m.group(1)).strip()
-        team_id = m.group(2)
-        team_name = unescape(m.group(3)).strip()
-        if team_id in seen or not team_name or len(team_name) < 2:
+    # Pattern A : title= avant href= (cas observé en 04/2026)
+    for m in _TEAM_LINK_PAT_A.finditer(html):
+        title, _href, team_slug, club_id = m.group(1), m.group(2), m.group(3), m.group(4)
+        if club_id in seen:
             continue
-        # Filtrer les liens d'image / wrapper (texte vide ou "Logo")
-        if team_name.lower() in ("logo", "wappen"):
+        seen.add(club_id)
+        teams.append({"team_id": club_id, "team_slug": team_slug,
+                      "team_name": unescape(title)})
+    # Pattern B : href= avant title= (fallback ancien layout)
+    for m in _TEAM_LINK_PAT_B.finditer(html):
+        _href, team_slug, club_id, title = m.group(1), m.group(2), m.group(3), m.group(4)
+        if club_id in seen:
             continue
-        seen.add(team_id)
-        teams.append({
-            "team_name": team_name,
-            "team_id": team_id,
-            "team_slug": team_slug,
-            "team_url": f"/{team_slug}/startseite/verein/{team_id}",
-        })
+        seen.add(club_id)
+        teams.append({"team_id": club_id, "team_slug": team_slug,
+                      "team_name": unescape(title)})
     return teams
 
 
 # ============================================================
-# Étape 2 : joueurs d'une équipe
+# Étape 2 : Stats joueurs d'un CLUB pour une SAISON donnée
 # ============================================================
-# Capture (player_slug, player_id) — l'ordre des attributs étant variable
-# sur TM, on ne peut pas exiger title= juste après href. Le nom est résolu
-# en 2e passe (img alt → title= → fallback slug capitalisé).
-_PLAYER_HREF_PAT = re.compile(
-    r'href="/([^"/]+)/profil/spieler/(\d+)"',
-    re.IGNORECASE,
-)
+_PLAYER_PROFIL_PAT = re.compile(r'/profil/spieler/(\d+)')
+_LINK_TITLE_PAT = re.compile(r'<a[^>]+title="([^"]+)"')
+_IMG_TITLE_PAT = re.compile(r'<img[^>]+title="([^"]+)"')
+_POS_TAIL_PAT = re.compile(r"</tr>\s*<tr>\s*<td>([^<]+)</td>", re.IGNORECASE)
 
 
-def _name_for_player(html: str, player_id: str, player_slug: str) -> str:
-    """Cherche le nom du joueur dans le HTML autour de son lien.
+def _extract_player_cell(td_html: str) -> tuple[str | None, str | None, str | None]:
+    """Depuis la cellule [1] (nom+lien+position), renvoie (player_id, name, position)."""
+    pid_m = _PLAYER_PROFIL_PAT.search(td_html)
+    pid = pid_m.group(1) if pid_m else None
 
-    Stratégie :
-      1) Première occurrence de `/profil/spieler/{id}` → fenêtre ±400 chars
-      2) Chercher `<img ... alt="Nom"` ou `title="Nom"` ou texte du <a>
-      3) Fallback : reconstituer depuis le slug ("ronwen-williams" →
-         "Ronwen Williams"). Toujours valide même si TM change le DOM.
-    """
-    needle = f'/profil/spieler/{player_id}'
-    idx = html.find(needle)
-    if idx >= 0:
-        window = html[max(0, idx - 200):idx + 400]
-        # img alt= avec un nom non vide
-        m = re.search(r'<img[^>]+alt="([^"]{2,})"', window)
+    # Nom : meilleur candidat = title du <a> qui pointe vers /profil/spieler/
+    name = None
+    for m in re.finditer(r'<a\s+title="([^"]+)"\s+href="([^"]+)"', td_html):
+        if "/profil/spieler/" in m.group(2):
+            name = unescape(m.group(1))
+            break
+    if not name:
+        # Fallback : tout premier title= rencontré
+        m = _LINK_TITLE_PAT.search(td_html)
         if m:
-            n = unescape(m.group(1)).strip()
-            if n and "logo" not in n.lower():
-                return n
-        # title="Nom" sur le lien englobant
-        m2 = re.search(r'title="([^"]{2,})"', window)
-        if m2:
-            n = unescape(m2.group(1)).strip()
-            if n and "logo" not in n.lower():
-                return n
-        # Texte direct du <a>
-        m3 = re.search(
-            r'<a[^>]+/profil/spieler/' + re.escape(player_id) + r'[^>]*>([^<]+)</a>',
-            window,
-        )
-        if m3:
-            n = unescape(m3.group(1)).strip()
-            if n:
-                return n
-    # Fallback : slug capitalisé. "ronwen-williams" → "Ronwen Williams"
-    parts = [p for p in player_slug.split("-") if p]
-    return " ".join(part.capitalize() for part in parts)
+            name = unescape(m.group(1))
+
+    # Position : 2e ligne <tr><td>Position</td></tr> dans la sous-table inline
+    pos = None
+    pm = _POS_TAIL_PAT.search(td_html)
+    if pm:
+        pos = unescape(pm.group(1)).strip()
+    return pid, name, pos
 
 
-def get_team_players(team_id: str, team_slug: str, team_name: str) -> list[dict]:
-    """Liste les joueurs d'une équipe via la page kader détaillée.
-
-    Page : /{slug}/kader/verein/{id}/plus/1 — contient 1 ligne par joueur
-    avec poste dans la sous-table .posrela.
-    """
-    url = f"{BASE_URL}/{team_slug}/kader/verein/{team_id}/plus/1"
-    _polite_pause()
-    html = _fetch(url)
-    if not html:
-        return []
-
-    # 1ʳᵉ passe : (slug, id) uniques, ordre du DOM préservé.
-    seen: set[str] = set()
-    pairs: list[tuple[str, str]] = []
-    for m in _PLAYER_HREF_PAT.finditer(html):
-        pid = m.group(2)
-        if pid in seen:
-            continue
-        seen.add(pid)
-        pairs.append((unescape(m.group(1)).strip(), pid))
-
-    # 2ᵉ passe : nom + poste résolus contextuellement
-    players: list[dict] = []
-    for player_slug, pid in pairs:
-        players.append({
-            "player_id": pid,
-            "player_name": _name_for_player(html, pid, player_slug),
-            "player_slug": player_slug,
-            "team_id": team_id,
-            "team_slug": team_slug,
-            "team_name": team_name,
-            "player_pos": _extract_position_for_player(html, pid),
-        })
-    return players
+def _extract_nationality(td_html: str) -> str | None:
+    m = _IMG_TITLE_PAT.search(td_html)
+    return unescape(m.group(1)).strip() if m else None
 
 
-def _extract_position_for_player(html: str, player_id: str) -> str | None:
-    """Cherche le poste du joueur autour de son lien dans la table kader.
-
-    Heuristique : la table TM affiche le poste dans la dernière ligne d'une
-    sous-table .posrela attachée à la ligne du joueur. On prend une fenêtre
-    HTML de ±2000 caractères autour du lien profil et on cherche un libellé
-    de poste connu (FR / EN / DE).
-    """
-    # Localiser le premier match du player_id dans le HTML
-    needle = f'/profil/spieler/{player_id}"'
-    idx = html.find(needle)
-    if idx < 0:
-        return None
-    # Fenêtre vers la suite (la cellule poste vient après le nom)
-    window = html[idx:idx + 2500]
-    # Match d'un libellé de poste connu
-    poses = (
-        "Goalkeeper", "Gardien", "Torwart", "Keeper",
-        "Centre-Back", "Left-Back", "Right-Back", "Defender", "Défenseur",
-        "Defensive Midfield", "Central Midfield", "Attacking Midfield",
-        "Left Midfield", "Right Midfield", "Midfielder", "Milieu",
-        "Left Winger", "Right Winger", "Second Striker",
-        "Centre-Forward", "Forward", "Attaquant", "Stürmer",
-    )
-    pat = re.compile(
-        r">\s*(" + "|".join(re.escape(p) for p in poses) + r")\s*<",
-        re.IGNORECASE,
-    )
-    m = pat.search(window)
-    return m.group(1) if m else None
-
-
-# ============================================================
-# Étape 3 : toutes les saisons d'un joueur en 1 requête
-# ============================================================
-# Capture chaque box de saison + sa table — boxes ordonnés du plus récent
-# au plus ancien sur la page leistungsdatendetails.
-_SEASON_BOX_PAT = re.compile(
-    r'<div class="box">.*?</div>\s*</div>\s*</div>',
-    re.IGNORECASE | re.DOTALL,
-)
-# Header "Détail des matchs - 24/25" ou "Detailed stats - 24/25"
-_SEASON_HEADER_PAT = re.compile(r'(\d{2})/(\d{2})')
-# Lignes de données dans table.items
-_TBODY_ROW_PAT = re.compile(r'<tr[^>]*>.*?</tr>', re.IGNORECASE | re.DOTALL)
-_TD_PAT = re.compile(r'<td[^>]*>(.*?)</td>', re.IGNORECASE | re.DOTALL)
-_TAG_STRIP = re.compile(r'<[^>]+>')
-_VEREIN_ID_PAT = re.compile(r'verein/(\d+)')
-
-
-def _strip_html(s: str) -> str:
-    return unescape(_TAG_STRIP.sub("", s)).strip()
-
-
-def get_all_seasons_stats(
-    player_id: str, player_name: str, player_slug: str,
-    min_season_year: int = 2016,
+def get_club_season_perfs(
+    club_id: str,
+    club_slug: str,
+    club_name: str,
+    comp_code: str,
+    season: int,
 ) -> list[dict]:
-    """Scrape toutes les saisons d'un joueur en 1 requête.
+    """Récupère les perfs joueurs d'un club sur une compétition + saison.
 
-    Page : /{slug}/leistungsdatendetails/spieler/{id}/plus/1
-    Si vide, fallback saison par saison.
+    URL : /{club_slug}/leistungsdaten/verein/{club_id}/plus/0?reldata={comp}%26{season}
+
+    Retourne une liste de dicts par joueur. Une saison renvoie typiquement 25-45
+    lignes. Si la saison n'existe pas (club promu plus tard) ou si la page est
+    vide, retourne [].
     """
     url = (
-        f"{BASE_URL}/{player_slug}/leistungsdatendetails/"
-        f"spieler/{player_id}/plus/1"
+        f"{BASE_URL}/{club_slug}/leistungsdaten/verein/{club_id}/plus/0"
+        f"?reldata={comp_code}%26{season}"
     )
     _polite_pause()
-    html = _fetch(url)
+    html, status, err = _fetch(url)
     if not html:
+        # Distingue erreur réseau (status None ou 5xx) vs page vide légitime.
+        if status is None or (status and status >= 500) or status == 429:
+            print(
+                f"   ! erreur fetch club={club_id} saison={season}: "
+                f"status={status} err={err}",
+                flush=True,
+            )
         return []
 
-    rows: list[dict] = []
-    # Découper grossièrement la page en boxes par occurrence d'un header de
-    # saison (plus tolérant que la regex .box ouverte/fermée).
-    # On split sur "<div class=\"box\"" et on traite chaque chunk.
-    chunks = re.split(r'<div class="box"', html)
-    for chunk in chunks[1:]:  # skip pre-header chunk
-        # Identifier la saison du chunk : header "20/21" ou "Saison 20/21"
-        head_m = re.search(r'>(.{0,200}?\d{2}/\d{2}.{0,200}?)<', chunk)
-        if not head_m:
-            continue
-        season_m = _SEASON_HEADER_PAT.search(head_m.group(1))
-        if not season_m:
-            continue
-        ys = int(season_m.group(1))
-        season = (1900 + ys) if ys > 90 else (2000 + ys)
-        if season < min_season_year:
+    # Cherche la 1re table.items (regex tolérante : classes additionnelles
+    # type class="items table-foo" autorisées).
+    m = re.search(r'<table[^>]*\bclass="[^"]*\bitems\b[^"]*"[^>]*>', html)
+    if not m:
+        return []
+    end = _find_table_end(html, m.start())
+    if end < 0:
+        return []
+    tbl = html[m.start():end]
+
+    tbody_m = re.search(r"<tbody>([\s\S]*)</tbody>", tbl, re.IGNORECASE)
+    if not tbody_m:
+        return []
+    tbody = tbody_m.group(1)
+
+    rows = _split_top_level(tbody, "tr")
+    if not rows:
+        return []
+
+    out: list[dict] = []
+    for row in rows:
+        # Filtre : on veut uniquement les lignes "data" (class odd/even),
+        # pas les éventuels en-têtes de groupe.
+        cells = _split_top_level(row, "td")
+        if len(cells) < 8:
             continue
 
-        # Trouver la table.items dans le chunk
-        table_m = re.search(
-            r'<table class="items">.*?</table>',
-            chunk,
-            re.IGNORECASE | re.DOTALL,
-        )
-        if not table_m:
-            continue
-        table = table_m.group(0)
-        for row_m in _TBODY_ROW_PAT.finditer(table):
-            row_html = row_m.group(0)
-            # Skip rows d'en-tête (th) et lignes "Total" (footer)
-            if "<th" in row_html.lower():
-                continue
-            tds = _TD_PAT.findall(row_html)
-            if len(tds) < 13:
-                continue
-            texts = [_strip_html(td) or "0" for td in tds]
-            # Compétition : peut être un lien avec image — strip + texte
-            competition = texts[1] if len(texts) > 1 else ""
-            if not competition or competition.lower() in ("total", "totaux"):
-                continue
-            # Verein de la saison : 1er lien /verein/ dans la ligne
-            v_m = _VEREIN_ID_PAT.search(row_html)
-            verein_id = v_m.group(1) if v_m else None
-            # Mapping colonnes TM (leistungsdatendetails) :
-            #  0:numéro/logo  1:competition  2:appearances  3:goals
-            #  4:assists      5:own_goals    6:subs_in     7:subs_out
-            #  8:yellow       9:second_yellow  10:red       11:pens
-            #  12:minutes_per_goal  13:minutes
-            row = {
-                "player_id": player_id,
-                "player_name": player_name,
-                "season": season,
-                "verein_id": verein_id,
-                "competition": competition,
-                "appearances": _to_int(texts[2]),
-                "goals": _to_int(texts[3]),
-                "assists": _to_int(texts[4]),
-                "yellow_cards": _to_int(texts[8]) if len(texts) > 8 else 0,
-                "red_cards": _to_int(texts[10]) if len(texts) > 10 else 0,
-                "minutes": _to_int(texts[13]) if len(texts) > 13 else 0,
-            }
-            rows.append(row)
-    return rows
+        # Cell 0 : numéro maillot (peut être vide)
+        shirt_txt = _strip_html(cells[0])
+        try:
+            shirt = int(re.sub(r"[^\d]", "", shirt_txt) or 0)
+        except ValueError:
+            shirt = 0
 
+        pid, name, pos = _extract_player_cell(cells[1])
+        if not pid:
+            continue  # ligne sans joueur identifiable (bandeau, etc.)
 
-def _to_int(s: str) -> int:
-    """Parse défensif d'un nombre TM : strip non-digits, '-' → 0."""
-    if not s or s in ("-", "0"):
-        return 0 if s != "" else 0
-    # "1.234" (séparateur milliers) ou "1,234" → on garde les chiffres
-    digits = re.sub(r"[^0-9]", "", s)
-    return int(digits) if digits else 0
+        age = _to_int(_strip_html(cells[2]))
+        nat = _extract_nationality(cells[3])
+        in_squad = _to_int(_strip_html(cells[4]))
+        apps = _to_int(_strip_html(cells[5]))
+        goals = _to_int(_strip_html(cells[6]))
+        minutes = _to_int(_strip_html(cells[7]))
+
+        out.append({
+            "player_id": pid,
+            "player_name": name or "",
+            "team_id": club_id,
+            "team_name": club_name,
+            "season": season,
+            "competition": comp_code,
+            "shirt_number": shirt,
+            "position": pos or "",
+            "age": age,
+            "nationality": nat or "",
+            "in_squad": in_squad,
+            "appearances": apps,
+            "goals": goals,
+            "minutes_played": minutes,
+        })
+    return out
 
 
 # ============================================================
-# Étape 4 : résolution des noms de clubs avec cache mémoïsé
-# ============================================================
-def get_club_name(verein_id: str) -> str | None:
-    """Résout l'ID club TM → nom officiel. Cache thread-safe."""
-    if not verein_id:
-        return None
-    with _club_cache_lock:
-        if verein_id in _club_cache:
-            return _club_cache[verein_id]
-
-    _polite_pause()
-    url = f"{BASE_URL}/x/startseite/verein/{verein_id}"
-    html = _fetch(url)
-    name: str | None = None
-    if html:
-        # <h1 class="data-header__headline-wrapper">...Nom Club...</h1>
-        m = re.search(
-            r'<h1[^>]*data-header__headline-wrapper[^>]*>(.*?)</h1>',
-            html,
-            re.IGNORECASE | re.DOTALL,
-        )
-        if m:
-            name = _strip_html(m.group(1)) or None
-        if not name:
-            # Fallback : 1er <h1> de la page
-            m2 = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.IGNORECASE | re.DOTALL)
-            if m2:
-                name = _strip_html(m2.group(1)) or None
-
-    with _club_cache_lock:
-        _club_cache[verein_id] = name
-    return name
-
-
-# ============================================================
-# Pipeline principal
+# Orchestrateur
 # ============================================================
 def scrape_league(
     comp_code: str,
-    slug: str = "x",
-    *,
+    slug: str,
+    seasons: list[int],
     workers: int = 3,
-    min_season_year: int = 2016,
-    test_mode: bool = False,
-    test_n_players: int | None = None,
-    filter_goalkeepers: bool = True,
-    log_fn=print,
+    test_n_teams: int | None = None,
+    progress_cb=None,
 ) -> list[dict]:
-    """Pipeline complet R-style.
+    """Scrape une compétition complète sur N saisons.
+
+    Args:
+        comp_code  : code TM (ex 'SFA1' pour Betway Premiership).
+        slug       : slug ligue (ex 'betway-premiership').
+        seasons    : liste d'années (ex [2021, 2022, 2023, 2024, 2025]).
+        workers    : nb threads parallèles.
+        test_n_teams : si fourni, ne scrape que les N premières équipes.
 
     Returns:
-        list de dicts (1 ligne par joueur×saison×compétition), prêt à être
-        écrit en CSV ou converti en DataFrame.
+        Liste de dicts (1 par joueur × club × saison).
     """
-    t0 = time.time()
-    log_fn(f"=== Scraping {comp_code} (slug={slug}) ===")
+    print(f"=== Scraping {comp_code} (slug={slug}) saisons={seasons} ===", flush=True)
 
-    # 1) Équipes
-    log_fn("── Étape 1 : équipes de la ligue")
+    # Étape 1 : équipes
+    print("── Étape 1 : équipes de la ligue", flush=True)
     teams = get_league_teams(comp_code, slug)
-    log_fn(f"   {len(teams)} équipes trouvées")
-    if test_mode and teams:
-        teams = teams[:1]
-        log_fn(f"   TEST MODE : 1 équipe ({teams[0]['team_name']})")
+    if not teams:
+        print("   ! aucune équipe trouvée", flush=True)
+        return []
+    print(f"   {len(teams)} équipes trouvées", flush=True)
 
-    # 2) Joueurs de chaque équipe (parallélisé)
-    log_fn(f"── Étape 2 : joueurs ({len(teams)} équipes, {workers} workers)")
-    all_players: list[dict] = []
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {
-            ex.submit(get_team_players, t["team_id"], t["team_slug"],
-                      t["team_name"]): t
-            for t in teams
-        }
-        for i, fut in enumerate(as_completed(futs), 1):
-            t = futs[fut]
-            try:
-                ps = fut.result()
-            except Exception as e:
-                log_fn(f"   [{i}/{len(teams)}] ERR {t['team_name']}: {e}")
-                continue
-            log_fn(f"   [{i}/{len(teams)}] {t['team_name']}: {len(ps)} joueurs")
-            all_players.extend(ps)
+    if test_n_teams is not None:
+        teams = teams[:test_n_teams]
+        names = ", ".join(t["team_name"] for t in teams)
+        print(f"   TEST MODE : {len(teams)} équipe(s) ({names})", flush=True)
 
-    log_fn(f"   {len(all_players)} joueurs récupérés")
+    # Étape 2 : (club × saison) en parallèle
+    tasks = [(t, s) for t in teams for s in seasons]
+    print(f"── Étape 2 : {len(tasks)} GET (clubs={len(teams)} × saisons={len(seasons)}, workers={workers})", flush=True)
 
-    if filter_goalkeepers:
-        n_before = len(all_players)
-        all_players = [
-            p for p in all_players
-            if not p.get("player_pos") or not re.search(
-                r"goalkeeper|gardien|torwart|keeper",
-                p["player_pos"], re.IGNORECASE,
+    rows: list[dict] = []
+    rows_lock = threading.Lock()
+    done = 0
+    t0 = time.time()
+
+    def worker(team_dict: dict, season: int) -> tuple[str, int, int]:
+        try:
+            r = get_club_season_perfs(
+                team_dict["team_id"], team_dict["team_slug"],
+                team_dict["team_name"], comp_code, season,
             )
-        ]
-        log_fn(f"   Gardiens filtrés : {n_before} → {len(all_players)}")
+        except Exception as e:
+            print(f"   ! err {team_dict['team_name']} {season}: {e}", flush=True)
+            return team_dict["team_name"], season, 0
+        with rows_lock:
+            rows.extend(r)
+        return team_dict["team_name"], season, len(r)
 
-    # Dédup par player_id (au cas où un joueur soit dans 2 effectifs)
-    seen: set[str] = set()
-    deduped: list[dict] = []
-    for p in all_players:
-        if p["player_id"] in seen:
-            continue
-        seen.add(p["player_id"])
-        deduped.append(p)
-    all_players = deduped
-    log_fn(f"   {len(all_players)} joueurs uniques")
-
-    if test_n_players is not None and test_n_players < len(all_players):
-        random.shuffle(all_players)
-        all_players = all_players[:test_n_players]
-        log_fn(f"   Sous-échantillon : {len(all_players)} joueurs")
-
-    # 3) Stats toutes saisons par joueur (parallélisé)
-    log_fn(f"── Étape 3 : stats joueurs ({len(all_players)} joueurs, {workers} workers)")
-    stats_rows: list[dict] = []
-    completed = 0
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {
-            ex.submit(
-                get_all_seasons_stats,
-                p["player_id"], p["player_name"], p["player_slug"],
-                min_season_year,
-            ): p
-            for p in all_players
-        }
-        for fut in as_completed(futs):
-            p = futs[fut]
-            try:
-                rows = fut.result()
-            except Exception as e:
-                rows = []
-                log_fn(f"   ERR {p['player_name']}: {e}")
-            stats_rows.extend(rows)
-            completed += 1
-            if completed % 25 == 0 or completed == len(all_players):
-                log_fn(f"   Progress {completed}/{len(all_players)} "
-                       f"(rows: {len(stats_rows)})")
+        futures = [ex.submit(worker, t, s) for (t, s) in tasks]
+        for f in as_completed(futures):
+            tname, season, n = f.result()
+            done += 1
+            if done % 5 == 0 or done == len(tasks):
+                elapsed = time.time() - t0
+                print(f"   [{done}/{len(tasks)}] {tname} {season}: {n} joueurs ({elapsed:.1f}s écoulées)", flush=True)
+            if progress_cb:
+                progress_cb(done, len(tasks))
 
-    # 4) Résolution clubs
-    unique_vids = sorted({r["verein_id"] for r in stats_rows if r.get("verein_id")})
-    log_fn(f"── Étape 4 : résolution {len(unique_vids)} clubs uniques")
-    club_map: dict[str, str | None] = {}
-    with ThreadPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(get_club_name, vid): vid for vid in unique_vids}
-        for fut in as_completed(futs):
-            vid = futs[fut]
-            try:
-                club_map[vid] = fut.result()
-            except Exception:
-                club_map[vid] = None
+    dt = (time.time() - t0) / 60
+    print(f"=== Terminé en {dt:.1f} min : {len(rows)} lignes ===", flush=True)
+    return rows
 
-    # Merge final + ajout des infos joueur (team_name, player_pos)
-    pinfo = {p["player_id"]: p for p in all_players}
-    final_rows: list[dict] = []
-    for r in stats_rows:
-        info = pinfo.get(r["player_id"], {})
-        final_rows.append({
-            "player_id": r["player_id"],
-            "player_name": r["player_name"],
-            "team_name": info.get("team_name"),
-            "player_pos": info.get("player_pos"),
-            "season": r["season"],
-            "competition": r["competition"],
-            "club": club_map.get(r["verein_id"]),
-            "appearances": r["appearances"],
-            "goals": r["goals"],
-            "assists": r["assists"],
-            "yellow_cards": r["yellow_cards"],
-            "red_cards": r["red_cards"],
-            "minutes_played": r["minutes"],
-        })
 
-    elapsed = (time.time() - t0) / 60.0
-    n_players = len({r["player_id"] for r in final_rows})
-    log_fn(f"=== Terminé en {elapsed:.1f} min : "
-           f"{len(final_rows)} lignes pour {n_players} joueurs ===")
-    return final_rows
+# ============================================================
+# Sortie CSV
+# ============================================================
+COLUMNS = [
+    "player_id", "player_name", "team_id", "team_name",
+    "season", "competition", "shirt_number", "position",
+    "age", "nationality", "in_squad", "appearances",
+    "goals", "minutes_played",
+]
+
+
+def _write_csv(rows: list[dict], path: str) -> None:
+    os.makedirs(os.path.dirname(os.path.abspath(path)) or ".", exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=COLUMNS)
+        w.writeheader()
+        for r in rows:
+            w.writerow({k: r.get(k, "") for k in COLUMNS})
+    print(f"\n✓ Saved {len(rows)} rows to {path}", flush=True)
 
 
 # ============================================================
 # CLI
 # ============================================================
-def _write_csv(rows: list[dict], path: str) -> None:
-    if not rows:
-        # Écrit quand même un CSV vide avec entête pour debug
-        cols = ["player_id", "player_name", "team_name", "player_pos",
-                "season", "competition", "club", "appearances", "goals",
-                "assists", "yellow_cards", "red_cards", "minutes_played"]
-    else:
-        cols = list(rows[0].keys())
-    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=cols)
-        w.writeheader()
-        for r in rows:
-            w.writerow(r)
-
-
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--comp", required=True, help="Code TM (ex: SFA1)")
-    ap.add_argument("--slug", default="x", help="Slug URL (ex: betway-premiership)")
-    ap.add_argument("--out", required=True, help="Chemin CSV de sortie")
-    ap.add_argument("--workers", type=int, default=3)
-    ap.add_argument("--min-season", type=int, default=2016)
-    ap.add_argument("--test", action="store_true", help="Mode test : 1 équipe")
-    ap.add_argument("--test-n-players", type=int, default=None)
-    ap.add_argument("--keep-gk", action="store_true",
-                    help="Ne pas filtrer les gardiens")
-    args = ap.parse_args()
+    p = argparse.ArgumentParser(description="Scraper TM par club × saison")
+    p.add_argument("--comp", required=True, help="Code compétition TM (ex SFA1)")
+    p.add_argument("--slug", required=True, help="Slug compétition (ex betway-premiership)")
+    p.add_argument(
+        "--seasons", default="2021,2022,2023,2024,2025",
+        help="Saisons CSV (ex 2021,2022,2023,2024,2025). Défaut : 5 dernières.",
+    )
+    p.add_argument("--workers", type=int, default=3)
+    p.add_argument("--out", default=None, help="Chemin CSV de sortie")
+    p.add_argument("--test", action="store_true", help="Mode test (limite équipes)")
+    p.add_argument("--test-n-teams", type=int, default=1, help="Nb équipes en mode test")
+    args = p.parse_args()
+
+    try:
+        seasons = [int(s.strip()) for s in args.seasons.split(",") if s.strip()]
+    except ValueError:
+        print("ERREUR : --seasons doit être une liste d'entiers (ex 2021,2022,2023)", file=sys.stderr)
+        sys.exit(2)
+
+    out = args.out
+    if out is None:
+        out = f"live/data/tm_scrap/{args.comp.lower()}.csv"
 
     rows = scrape_league(
         comp_code=args.comp,
         slug=args.slug,
+        seasons=seasons,
         workers=args.workers,
-        min_season_year=args.min_season,
-        test_mode=args.test,
-        test_n_players=args.test_n_players,
-        filter_goalkeepers=not args.keep_gk,
+        test_n_teams=(args.test_n_teams if args.test else None),
     )
-    _write_csv(rows, args.out)
-    print(f"\n✓ Saved {len(rows)} rows to {args.out}")
+    _write_csv(rows, out)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,413 @@
+# ============================================================
+# TRANSFERMARKT SCRAPER — Version optimisée
+# ============================================================
+
+install.packages(c("httr", "rvest", "tidyverse", "furrr", "glue"))
+library(httr)
+library(rvest)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(purrr)
+library(furrr)
+library(glue)
+
+plan(multisession, workers = 3)
+
+# ------------------------------------------------------------
+# CONFIGURATION
+# ------------------------------------------------------------
+config <- list(
+  league_url = "transfermarkt.fr/super-league/startseite/wettbewerb/C1",
+  seasons = 2015:2025,
+  min_season_filter_year = 2016,
+  filter_goalkeepers = TRUE,
+  test_mode = FALSE,       # TRUE = 1 seule équipe
+  test_n_players = NULL,	#NULL = tous, 4 = 4 joueurs aléatoires
+
+  request_headers = c(
+    "User-Agent"      = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "Accept-Language" = "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept"          = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Referer"         = "https://www.transfermarkt.com/"
+  ),
+
+  # Pause réduite pour parallélisation
+  pause_min = 0.1,
+  pause_max = 0.3
+)
+
+# ============================================================
+# CACHE GLOBAL POUR LES NOMS DE CLUBS (évite requêtes dupliquées)
+# ============================================================
+club_cache <- new.env(hash = TRUE, parent = emptyenv())
+
+get_club_name <- function(verein_id) {
+  if (is.na(verein_id) || verein_id == "") return(NA_character_)
+  
+  # Vérifier le cache
+  if (exists(verein_id, envir = club_cache)) {
+    return(get(verein_id, envir = club_cache))
+  }
+  
+  Sys.sleep(runif(1, 0.2, 0.5))
+  resp <- tryCatch(
+    GET(paste0("https://www.transfermarkt.com/x/startseite/verein/", verein_id),
+        add_headers(.headers = config$request_headers)),
+    error = function(e) NULL
+  )
+  
+  name <- NA_character_
+  if (!is.null(resp) && status_code(resp) == 200) {
+    name <- read_html(content(resp, "text", encoding = "UTF-8")) %>%
+      html_node("h1") %>% html_text(trim = TRUE)
+  }
+  
+  # Stocker dans le cache
+  assign(verein_id, name, envir = club_cache)
+  return(name)
+}
+
+# ============================================================
+# FONCTIONS UTILITAIRES
+# ============================================================
+safe_get <- function(url) {
+  tryCatch(
+    GET(url, add_headers(.headers = config$request_headers)),
+    error = function(e) NULL
+  )
+}
+
+# ============================================================
+# ÉTAPE 1 : Équipes de la ligue
+# ============================================================
+get_league_teams <- function(league_url) {
+  message("── Récupération des équipes ──")
+  response <- safe_get(league_url)
+  if (is.null(response) || status_code(response) != 200) {
+    stop("Impossible d'accéder à la page de la ligue.")
+  }
+
+  html_doc <- content(response, "text", encoding = "UTF-8") %>% read_html()
+  team_nodes <- html_doc %>% html_nodes("table.items tbody tr td.hauptlink a")
+
+  teams <- data.frame(
+    team_name = team_nodes %>% html_text(trim = TRUE),
+    team_url  = team_nodes %>% html_attr("href"),
+    stringsAsFactors = FALSE
+  ) %>%
+    filter(str_detect(team_url, "/startseite/verein/")) %>%
+    distinct() %>%
+    mutate(
+      team_id   = str_extract(team_url, "(?<=verein/)\\d+"),
+      team_slug = str_extract(team_url, "(?<=/)([^/]+)(?=/startseite)")
+    )
+
+  message(glue("{nrow(teams)} équipes trouvées."))
+  return(teams)
+}
+
+# ============================================================
+# ÉTAPE 2 : Joueurs d'une équipe
+# ============================================================
+get_team_players <- function(team_id, team_slug, team_name) {
+  url <- paste0("https://www.transfermarkt.com/", team_slug,
+                "/kader/verein/", team_id, "/plus/1")
+  Sys.sleep(runif(1, config$pause_min, config$pause_max))
+  response <- safe_get(url)
+  if (is.null(response) || status_code(response) != 200) return(NULL)
+
+  html_doc <- content(response, "text", encoding = "UTF-8") %>% read_html()
+
+  player_nodes <- html_doc %>% html_nodes("table.items tbody tr td.hauptlink a")
+  players <- data.frame(
+    player_name = player_nodes %>% html_text(trim = TRUE),
+    player_url  = player_nodes %>% html_attr("href"),
+    stringsAsFactors = FALSE
+  ) %>%
+    filter(str_detect(player_url, "/profil/spieler/")) %>%
+    distinct() %>%
+    mutate(
+      player_id   = str_extract(player_url, "(?<=spieler/)\\d+"),
+      player_slug = str_extract(player_url, "^/([^/]+)", group = 1),
+      team_id     = team_id,
+      team_slug   = team_slug,
+      team_name   = team_name
+    )
+
+  pos_nodes <- html_doc %>% html_nodes("table.items tbody tr td.posrela table tr:last-child td")
+  positions <- pos_nodes %>% html_text(trim = TRUE)
+
+  if (length(positions) == nrow(players)) {
+    players$player_pos <- positions
+  } else {
+    players$player_pos <- NA_character_
+  }
+
+  return(players)
+}
+
+# ============================================================
+# ÉTAPE 3 : Tous les joueurs de la ligue
+# ============================================================
+get_league_players <- function(league_url) {
+  teams <- get_league_teams(league_url)
+
+  if (config$test_mode) {
+    teams <- teams[1, ]
+    message(glue("TEST MODE : 1 équipe seulement ({teams$team_name[1]})"))
+  }
+
+  message("── Récupération des joueurs ──")
+  all_players <- purrr::map_dfr(1:nrow(teams), function(i) {
+    cat(glue("  [{i}/{nrow(teams)}] {teams$team_name[i]}"), "\n")
+    get_team_players(teams$team_id[i], teams$team_slug[i], teams$team_name[i])
+  })
+
+  message(glue("{nrow(all_players)} joueurs récupérés au total."))
+
+  if (config$filter_goalkeepers) {
+    n_before <- nrow(all_players)
+    all_players <- all_players %>%
+      filter(!str_detect(player_pos, regex("goalkeeper|gardien|torwart|keeper",
+                                           ignore_case = TRUE)) | is.na(player_pos))
+    message(glue("Gardiens filtrés : {n_before} -> {nrow(all_players)} joueurs."))
+  }
+
+  all_players <- all_players %>% distinct(player_id, .keep_all = TRUE)
+  message(glue("{nrow(all_players)} joueurs uniques après déduplication."))
+  return(all_players)
+}
+
+# ============================================================
+# ÉTAPE 4 : TOUTES les saisons d'un joueur en UNE requête
+# ============================================================
+get_all_seasons_stats <- function(player_id, player_name, player_slug) {
+  # Page "Alle Leistungsdaten" — toutes les saisons d'un coup
+  url <- paste0("https://www.transfermarkt.com/", player_slug,
+                "/leistungsdatendetails/spieler/", player_id,
+                "/plus/1")
+  Sys.sleep(runif(1, config$pause_min, config$pause_max))
+  response <- tryCatch(
+    GET(url, add_headers(.headers = config$request_headers)),
+    error = function(e) NULL
+  )
+  if (is.null(response) || status_code(response) != 200) {
+    # Fallback : saison par saison
+    return(get_player_stats_sequential(player_id, player_name, player_slug))
+  }
+
+  html_doc <- content(response, "text", encoding = "UTF-8") %>% read_html()
+
+  # Chercher toutes les tables de saisons
+  tables <- html_doc %>% html_nodes("div.box")
+  
+  results <- list()
+  
+  for (box in tables) {
+    # Extraire la saison depuis le header
+    header <- box %>% html_node(".table-header, .content-box-headline") %>%
+      html_text(trim = TRUE)
+    if (is.na(header)) next
+    
+    saison_match <- str_extract(header, "\\d{2}/\\d{2}")
+    if (is.na(saison_match)) next
+    
+    # Convertir "22/23" -> 2022
+    year_short <- as.integer(str_extract(saison_match, "^\\d{2}"))
+    saison <- ifelse(year_short > 90, 1900 + year_short, 2000 + year_short)
+    
+    if (saison < config$min_season_filter_year) next
+    
+    rows <- box %>% html_nodes("table.items tbody tr")
+    
+    for (row in rows) {
+      texts <- row %>% html_nodes("td") %>% html_text(trim = TRUE) %>%
+        str_replace_all("^-$", "0")
+      
+      if (length(texts) >= 13) {
+        # Extraire verein_id depuis le lien dans la ligne
+        verein_link <- row %>% html_node("a[href*='/verein/']") %>% html_attr("href")
+        verein_id <- str_extract(verein_link, "(?<=verein/)\\d+")
+        
+        results[[length(results) + 1]] <- data.frame(
+          player_id    = player_id,
+          player_name  = player_name,
+          saison       = saison,
+          verein_id    = ifelse(is.na(verein_id), NA_character_, verein_id),
+          competition  = texts[2],
+          appearances  = texts[3],
+          goals        = texts[4],
+          assists      = texts[5],
+          yellow_cards = texts[8],
+          red_cards    = texts[10],
+          minutes      = texts[14],
+          stringsAsFactors = FALSE
+        )
+      }
+    }
+  }
+  
+  if (length(results) == 0) {
+    # Fallback si la page globale ne marche pas
+    return(get_player_stats_sequential(player_id, player_name, player_slug))
+  }
+  
+  bind_rows(results)
+}
+
+# ============================================================
+# FALLBACK : saison par saison (si la page globale échoue)
+# ============================================================
+get_season_stats <- function(player_id, player_slug, saison) {
+  url <- paste0("https://www.transfermarkt.com/", player_slug,
+                "/leistungsdaten/spieler/", player_id,
+                "/plus/1?saison=", saison)
+  Sys.sleep(runif(1, config$pause_min, config$pause_max))
+  response <- tryCatch(
+    GET(url, add_headers(.headers = config$request_headers)),
+    error = function(e) NULL
+  )
+  if (is.null(response) || status_code(response) != 200) return(NULL)
+
+  html_doc <- content(response, "text", encoding = "UTF-8") %>% read_html()
+
+  # Équipe depuis la page directement (pas de requête supplémentaire)
+  verein_id <- html_doc %>%
+    html_nodes("a[href*='leistungsdatendetails']") %>%
+    html_attr("href") %>%
+    str_extract("verein/\\d+") %>%
+    str_extract("\\d+") %>%
+    unique()
+
+  rows <- html_doc %>% html_node("table.items") %>% html_nodes("tbody tr")
+  if (length(rows) == 0) return(NULL)
+
+  results <- lapply(rows, function(row) {
+    texts <- row %>% html_nodes("td") %>% html_text(trim = TRUE) %>%
+      str_replace_all("^-$", "0")
+    if (length(texts) >= 13) {
+      data.frame(
+        player_id    = player_id,
+        player_name  = NA_character_,
+        saison       = saison,
+        verein_id    = ifelse(length(verein_id) > 0, verein_id[1], NA_character_),
+        competition  = texts[2],
+        appearances  = texts[3],
+        goals        = texts[4],
+        assists      = texts[5],
+        yellow_cards = texts[8],
+        red_cards    = texts[10],
+        minutes      = texts[14],
+        stringsAsFactors = FALSE
+      )
+    }
+  })
+  bind_rows(results)
+}
+
+get_player_stats_sequential <- function(player_id, player_name, player_slug) {
+  map_dfr(config$seasons, function(s) {
+    res <- get_season_stats(player_id, player_slug, s)
+    if (!is.null(res)) res$player_name <- player_name
+    res
+  })
+}
+
+# ============================================================
+# FONCTION PRINCIPALE
+# ============================================================
+main <- function() {
+  message("=== Démarrage du scraping Transfermarkt ===\n")
+  start_time <- Sys.time()
+
+  # 1. Récupération de tous les joueurs
+  players <- get_league_players(config$league_url)
+
+  if (!is.null(config$test_n_players) && config$test_n_players < nrow(players)) {
+    players <- players %>% slice_sample(n = config$test_n_players)
+    message(glue("Sous-échantillon : {nrow(players)} joueurs sélectionnés."))
+  }
+
+  # 2. Scraping parallèle par joueur (chaque joueur = 1 requête au lieu de 10+)
+  message(glue("\n── Scraping des stats pour {nrow(players)} joueurs (parallélisé) ──"))
+
+  df_all <- future_map_dfr(1:nrow(players), function(i) {
+    tryCatch(
+      get_all_seasons_stats(
+        player_id   = players$player_id[i],
+        player_name = players$player_name[i],
+        player_slug = players$player_slug[i]
+      ),
+      error = function(e) tibble()
+    )
+  }, .options = furrr_options(seed = TRUE), .progress = TRUE)
+
+  # 3. Résoudre les noms de clubs (avec cache)
+  message("\n── Résolution des noms de clubs ──")
+  unique_verein_ids <- unique(na.omit(df_all$verein_id))
+  message(glue("{length(unique_verein_ids)} clubs uniques à résoudre"))
+
+  club_map <- tibble(
+    verein_id = unique_verein_ids,
+    team = map_chr(unique_verein_ids, get_club_name)
+  )
+
+  df_all <- df_all %>%
+    left_join(club_map, by = "verein_id") %>%
+    select(-verein_id)
+
+  # 4. Nettoyage des types
+  df_all <- df_all %>%
+    mutate(
+      appearances  = suppressWarnings(as.integer(appearances)),
+      goals        = suppressWarnings(as.integer(goals)),
+      assists      = suppressWarnings(as.integer(assists)),
+      yellow_cards = suppressWarnings(as.integer(yellow_cards)),
+      red_cards    = suppressWarnings(as.integer(red_cards)),
+      minutes      = suppressWarnings(as.integer(str_remove_all(minutes, "[^0-9]")))
+    ) %>%
+    mutate(across(c(appearances, goals, assists, yellow_cards, red_cards, minutes),
+                  ~ replace_na(.x, 0))) %>%
+    filter(saison >= config$min_season_filter_year) %>%
+    distinct()
+
+  # 5. Merge avec infos joueurs
+  message("Merge avec les infos joueurs...")
+  df_final <- df_all %>%
+    left_join(
+      players %>% select(player_id, team_name, player_pos),
+      by = "player_id"
+    ) %>%
+    select(player_id, player_name, team_name, player_pos,
+           season = saison, competition, club = team, appearances, goals, assists,
+           yellow_cards, red_cards, minutes_played = minutes)
+
+  elapsed <- round(difftime(Sys.time(), start_time, units = "mins"), 1)
+  message(glue("\n✅ Terminé en {elapsed} min : {nrow(df_final)} lignes pour {n_distinct(df_final$player_id)} joueurs."))
+
+  return(df_final)
+}
+
+df_final <- main()
+View(df_final)
+
+# Sauvegarde (issu de scrapData)
+setwd("C:\\Users\\PhotonUser\\Downloads")
+
+if (!is.null(df_final) && nrow(df_final) > 0) {
+  variable_name <- paste0("scrap_data")
+  file_name     <- paste0("scrap_data.csv")
+
+  assign(variable_name, df_final, envir = .GlobalEnv)
+  write.csv(df_final, file_name, row.names = FALSE)
+
+  message(glue("Données sauvegardées : '{file_name}'"))
+  message(glue("Variable R : '{variable_name}'"))
+} else {
+  message("Aucune donnée collectée.")
+}
+
+# Libération des workers
+plan(sequential)
+

@@ -1,0 +1,39 @@
+ $ poetry run just acquire_local --asset all --seasons 2025 --competitions SFA1
+scripts/runner.sh scripts/acquiring transfermarkt-scraper --asset all --seasons 2025 --competitions SFA1
+Running process: transfermarkt-scraper
+2026-04-30 12:13:07,894 [INFO]: Partial acquisition: competitions={'SFA1'}, assets={'game_lineups', 'players', 'games', 'appearances', 'clubs'}
+2026-04-30 12:13:07,895 [INFO]: Filtered /workspaces/transfermarkt-datasets/data/competitions.json: 1/75 records match filter
+2026-04-30 12:13:07,895 [INFO]: Acquiring clubs for season 2025
+2026-04-30 12:13:07,895 [INFO]: Running: tfmkt clubs -s 2025 -p /tmp/tmpuffojt74.json | gzip > '/tmp/tmphsxryujj.jsonl.gz'
+2026-04-30 12:14:00,045 [INFO]: Scraped 16 new records for clubs
+2026-04-30 12:14:00,312 [INFO]: Merged result: 16 total records
+2026-04-30 12:14:00,312 [INFO]: Acquiring players for season 2025
+2026-04-30 12:14:00,312 [INFO]: Running: tfmkt players -s 2025 -p /tmp/tmphsxryujj.jsonl.gz | gzip > '/tmp/tmpb5vps0_p.jsonl.gz'
+2026-04-30 12:14:51,516 [WARNING]: tfmkt exited with code 1
+2026-04-30 12:14:51,516 [WARNING]: stderr (tail): ...common] ERROR Failed to scrape https://www.transfermarkt.co.uk/thiago-walters/profil/spieler/1408778: 'NoneType' object has no attribute 'strip'
+[tfmkt.common] ERROR Failed to scrape https://www.transfermarkt.co.uk/melusi-mathebula/profil/spieler/1517937: 'NoneType' object has no attribute 'strip'
+[tfmkt.common] ERROR Failed to scrape https://www.transfermarkt.co.uk/mxolisi-bhengu/profil/spieler/1517938: 'NoneType' object has no attribute 'strip'
+
+2026-04-30 12:14:51,518 [INFO]: Scraped 522 new records for players
+2026-04-30 12:14:51,587 [INFO]: Merged result: 522 total records
+2026-04-30 12:14:51,587 [WARNING]: Completed with partial failures
+2026-04-30 12:14:51,587 [INFO]: Acquiring appearances for season 2025
+2026-04-30 12:14:51,587 [INFO]: Running: tfmkt appearances -s 2025 -p /tmp/tmpb5vps0_p.jsonl.gz | gzip > '/tmp/tmpbb25refp.jsonl.gz'
+2026-04-30 12:15:08,151 [WARNING]: tfmkt exited with code 1
+2026-04-30 12:15:08,151 [WARNING]: stderr (tail): ...d to scrape https://www.transfermarkt.co.uk/sabelo-sithole/profil/spieler/1163149: unsupported operand type(s) for +: 'NoneType' and 'str'
+[tfmkt.common] ERROR Failed to scrape https://www.transfermarkt.co.uk/junior-dion/profil/spieler/847379: unsupported operand type(s) for +: 'NoneType' and 'str'
+[tfmkt.common] ERROR Failed to scrape https://www.transfermarkt.co.uk/nduduzo-sibiya/profil/spieler/291082: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+2026-04-30 12:15:08,151 [INFO]: Scraped 0 new records for appearances
+Traceback (most recent call last):
+  File "/workspaces/transfermarkt-datasets/scripts/acquiring/transfermarkt-scraper.py", line 655, in <module>
+    acquire_on_local(**vars(arguments))
+  File "/workspaces/transfermarkt-datasets/scripts/acquiring/transfermarkt-scraper.py", line 594, in acquire_on_local
+    _acquire_filtered_chain(asset_names, season, filter_level, filter_ids)
+  File "/workspaces/transfermarkt-datasets/scripts/acquiring/transfermarkt-scraper.py", line 544, in _acquire_filtered_chain
+    scrape_output = acquire_asset(asset_obj, season, parent_override=current_parent)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/transfermarkt-datasets/scripts/acquiring/transfermarkt-scraper.py", line 423, in acquire_asset
+    raise RuntimeError(f"tfmkt failed with no output for {asset.name}")
+RuntimeError: tfmkt failed with no output for appearances
+error: Recipe `acquire_local` failed on line 49 with exit code 1

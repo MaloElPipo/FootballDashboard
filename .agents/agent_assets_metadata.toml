@@ -36,3 +36,15 @@ id = "JrizCYU9429dGUXrwTpcs"
 uri = "file://artifacts/football-dashboard/live/data/portail/iso_pays.csv"
 type = "table"
 title = "iso_pays.csv (avec noms complets des competitions)"
+
+[[outputs]]
+id = "LKd9kmduxr8vqIJQh4k0-"
+uri = "file://artifacts/football-dashboard/live/data/portail/competitions_vues.csv"
+type = "table"
+title = "competitions_vues.csv (PARTIEL: 3 ligues seulement)"
+
+[[outputs]]
+id = "KF8JEz0fGI5k-Y5q-9t4s"
+uri = "file://artifacts/football-dashboard/live/data/portail/competitions_vues_par_pays.csv"
+type = "table"
+title = "competitions_vues_par_pays.csv (PARTIEL: 3 ligues)"

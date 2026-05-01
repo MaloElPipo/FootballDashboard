@@ -30,3 +30,9 @@ id = "VDmBPuk_WoD_XDL1ppT4x"
 uri = "file://artifacts/football-dashboard/live/data/tm_scrap/mar1.csv"
 type = "table"
 title = "mar1.csv — Botola Pro Inwi Maroc (2021-2025)"
+
+[[outputs]]
+id = "JrizCYU9429dGUXrwTpcs"
+uri = "file://artifacts/football-dashboard/live/data/portail/iso_pays.csv"
+type = "table"
+title = "Référentiel pays ISO (77 entrées)"

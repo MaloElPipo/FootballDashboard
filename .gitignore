@@ -53,4 +53,8 @@ artifacts/football-dashboard/gh_pages_build/
 # Outputs scrapés (volumineux, regénérés par GH Actions)
 artifacts/football-dashboard/live/data/tm_career/
 artifacts/football-dashboard/live/data/tm_career_current/
+# POC dataset local + logs/progress du scraper local
+artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/
+artifacts/football-dashboard/tm_scrap_progress.json
+artifacts/football-dashboard/logs/
 

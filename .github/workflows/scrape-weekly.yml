@@ -1,0 +1,158 @@
+name: Scrape carrière TM hebdomadaire
+
+# Tous les mardis à 4h UTC = 5h Paris (hiver) / 6h Paris (été)
+# Choix demandé par l'utilisateur : nuit du lundi au mardi à 5h du matin.
+on:
+  schedule:
+    - cron: "0 4 * * 2"
+  workflow_dispatch:
+    inputs:
+      leagues:
+        description: "Liste optionnelle de ligues (séparées par virgules) — vide = toutes"
+        required: false
+        default: ""
+      skip_scrape:
+        description: "Sauter le scraping (utiliser les CSV existants pour rebâtir la page)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-weekly
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240   # 4h max, on tablera sur ~2h en pratique
+
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('artifacts/football-dashboard/requirements.txt') }}
+
+      - name: Install dépendances minimales
+        run: |
+          # Le scraper TM ceapi n'utilise que la stdlib Python.
+          # Pas besoin d'installer requirements.txt complet.
+          python -m pip install --upgrade pip
+          # On importe leagues_master qui n'a aucune dépendance.
+
+      - name: Lister les ligues à scraper
+        id: list_leagues
+        working-directory: artifacts/football-dashboard
+        run: |
+          if [ -n "${{ github.event.inputs.leagues }}" ]; then
+            echo "leagues=${{ github.event.inputs.leagues }}" >> $GITHUB_OUTPUT
+            echo "→ Ligues spécifiques demandées : ${{ github.event.inputs.leagues }}"
+          else
+            # Récupère toutes les ligues depuis la config maître
+            LEAGUES=$(python3 -c "
+          from live.leagues_master import LEAGUES
+          print(','.join(l['code_tm'].lower() for l in LEAGUES))
+          ")
+            echo "leagues=$LEAGUES" >> $GITHUB_OUTPUT
+            echo "→ Toutes les ligues (71)"
+          fi
+
+      - name: Vérifier prérequis pour scraping (effectifs déjà scrapés)
+        if: github.event.inputs.skip_scrape != 'true'
+        working-directory: artifacts/football-dashboard
+        run: |
+          # Le scraper carrière a besoin de live/data/tm_scrap/{league}.csv en input
+          # (liste des joueurs par championnat). On signale juste les manques.
+          mkdir -p live/data/tm_scrap
+          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
+          MISSING=""
+          PRESENT=""
+          for code in "${LIST[@]}"; do
+            if [ -f "live/data/tm_scrap/${code}.csv" ]; then
+              PRESENT="$PRESENT $code"
+            else
+              MISSING="$MISSING $code"
+            fi
+          done
+          echo "✓ Effectifs présents :$PRESENT"
+          echo "✗ Effectifs manquants (skip carrière) :$MISSING"
+
+      - name: Scraping carrière des joueurs (par ligue, séquentiel)
+        if: github.event.inputs.skip_scrape != 'true'
+        working-directory: artifacts/football-dashboard
+        run: |
+          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
+          OK=0
+          KO=0
+          SKIP=0
+          for code in "${LIST[@]}"; do
+            if [ ! -f "live/data/tm_scrap/${code}.csv" ]; then
+              SKIP=$((SKIP+1))
+              continue
+            fi
+            echo "::group::Scraping carrière $code"
+            if python3 tm_player_career.py --league "$code" --workers 5; then
+              OK=$((OK+1))
+            else
+              echo "::warning::Échec scraping $code"
+              KO=$((KO+1))
+            fi
+            echo "::endgroup::"
+          done
+          echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents)"
+
+      - name: Filtrer saison en cours pour chaque ligue
+        working-directory: artifacts/football-dashboard
+        run: python3 scripts/make_current_season.py
+
+      - name: Construire la page GitHub Pages (HTML + ZIPs)
+        working-directory: artifacts/football-dashboard
+        run: python3 scripts/build_pages.py
+
+      - name: Vérifier la sortie (non bloquant)
+        working-directory: artifacts/football-dashboard
+        # Étape jamais bloquante : on log un état même si 0 ZIP, pour permettre
+        # un déploiement "dégradé" (page index avec sections "Pas encore scrapé").
+        continue-on-error: true
+        run: |
+          set +e
+          echo "--- Contenu gh_pages_build/ ---"
+          ls -la gh_pages_build/ || true
+          echo "--- Contenu gh_pages_build/data/ ---"
+          ls -la gh_pages_build/data/ 2>/dev/null | head -20 || echo "(aucun dossier data/)"
+          echo "---"
+          zip_count=$(find gh_pages_build/data -maxdepth 1 -name "*.zip" 2>/dev/null | wc -l)
+          echo "Total ZIPs : ${zip_count}"
+          echo "Taille totale : $(du -sh gh_pages_build/ 2>/dev/null | cut -f1 || echo 'N/A')"
+          if [ ! -f gh_pages_build/index.html ]; then
+            echo "::warning::index.html introuvable — déploiement risque d'être vide"
+          fi
+
+      - name: Déployer sur GitHub Pages (branche gh-pages)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./artifacts/football-dashboard/gh_pages_build
+          publish_branch: gh-pages
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "chore(pages): refresh hebdomadaire ${{ github.run_number }}"
+
+      - name: Résumé
+        run: |
+          echo "✅ Publication terminée."
+          echo "URL probable : https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"

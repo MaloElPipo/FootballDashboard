@@ -91,9 +91,9 @@ LEAGUES: list[dict] = [
     {"code_tm": "MLS1", "slug": "major-league-soccer",         "nom": "MLS",                             "pays": "États-Unis",       "region": "Amériques", "tier": 1},
     {"code_tm": "MEX1", "slug": "liga-mx-clausura",            "nom": "Liga MX",                         "pays": "Mexique",          "region": "Amériques", "tier": 1},
     {"code_tm": "COL1", "slug": "liga-betplay-dimayor",        "nom": "Liga BetPlay",                    "pays": "Colombie",         "region": "Amériques", "tier": 1},
-    {"code_tm": "PG1",  "slug": "primera-division",            "nom": "Primera División",                "pays": "Paraguay",         "region": "Amériques", "tier": 1},
-    {"code_tm": "CHA1", "slug": "primera-division",            "nom": "Primera División",                "pays": "Chili",            "region": "Amériques", "tier": 1},
-    {"code_tm": "EQ1",  "slug": "liga-pro-serie-a",            "nom": "Serie A",                         "pays": "Équateur",         "region": "Amériques", "tier": 1},
+    {"code_tm": "PR1A", "slug": "primera-division-apertura",   "nom": "Primera División Apertura",       "pays": "Paraguay",         "region": "Amériques", "tier": 1},
+    {"code_tm": "CLPD", "slug": "primera-division-de-chile",   "nom": "Primera División",                "pays": "Chili",            "region": "Amériques", "tier": 1},
+    {"code_tm": "EC1N", "slug": "ligapro-serie-a",             "nom": "LigaPro Serie A",                 "pays": "Équateur",         "region": "Amériques", "tier": 1},
     {"code_tm": "BRA2", "slug": "campeonato-brasileiro-serie-b","nom": "Brasileirão Série B",             "pays": "Brésil",           "region": "Amériques", "tier": 2},
 
     # ----- Asie / Océanie (5) -----
@@ -101,7 +101,7 @@ LEAGUES: list[dict] = [
     {"code_tm": "JAP1", "slug": "j1-league",                   "nom": "J1 League",                       "pays": "Japon",            "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "RSK1", "slug": "k-league-1",                  "nom": "K League 1",                      "pays": "Corée du Sud",     "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "AUS1", "slug": "a-league",                    "nom": "A-League",                        "pays": "Australie",        "region": "Asie/Océanie", "tier": 1},
-    {"code_tm": "CHN1", "slug": "chinese-super-league",        "nom": "Chinese Super League",            "pays": "Chine",            "region": "Asie/Océanie", "tier": 1},
+    {"code_tm": "CSL",  "slug": "chinese-super-league",        "nom": "Chinese Super League",            "pays": "Chine",            "region": "Asie/Océanie", "tier": 1},
 
     # ----- Afrique (3) -----
     {"code_tm": "MAR1", "slug": "botola-pro",                  "nom": "Botola Pro",                      "pays": "Maroc",            "region": "Afrique", "tier": 1},

@@ -163,6 +163,7 @@ EN_TO_FR = {
     "Wales": "Pays de Galles",
     # --- Ajouts post-enrichissement TM ---
     "Andorra": "Andorre",
+    "Bahrain": "Bahreïn",
     "Bangladesh": "Bangladesh",
     "Belize": "Belize",
     "Cambodia": "Cambodge",
@@ -191,10 +192,12 @@ EN_TO_FR = {
     "Singapore": "Singapour",
     "South Sudan": "Soudan du Sud",
     "Tajikistan": "Tadjikistan",
+    "Timor-Leste": "Timor oriental",
     "Trinidad and Tobago": "Trinité-et-Tobago",
     "Türkiye": "Turquie",
     "Uganda": "Ouganda",
     "Vietnam": "Vietnam",
+    "Yemen": "Yémen",
 }
 
 

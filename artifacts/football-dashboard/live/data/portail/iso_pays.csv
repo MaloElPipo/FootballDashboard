@@ -1,78 +1,78 @@
-pays_fr,iso_alpha3,iso_alpha2,code_fifa,a_ligue,a_selection,nb_ligues,nb_competitions,codes_tm_competitions,codes_tm_competitions_detail,codes_tm_ligues,code_tm_selection,couverture
-Albanie,ALB,AL,ALB,oui,non,1,1,AL1,AL1[L],AL1,,league_only
-Argentine,ARG,AR,ARG,oui,oui,1,2,ARG1;ARG,ARG1[L];ARG[N],ARG1,ARG,both
-Australie,AUS,AU,AUS,oui,oui,1,2,AUS1;AUS,AUS1[L];AUS[N],AUS1,AUS,both
-Autriche,AUT,AT,AUT,oui,oui,1,2,A1;AUT,A1[L];AUT[N],A1,AUT,both
-Azerbaïdjan,AZE,AZ,AZE,oui,non,1,1,AZ1,AZ1[L],AZ1,,league_only
-Belgique,BEL,BE,BEL,oui,oui,1,2,BE1;BEL,BE1[L];BEL[N],BE1,BEL,both
-Bulgarie,BGR,BG,BUL,oui,non,1,1,BG1,BG1[L],BG1,,league_only
-Bosnie-Herzégovine,BIH,BA,BIH,oui,non,1,1,BH1,BH1[L],BH1,,league_only
-Bolivie,BOL,BO,BOL,non,oui,0,1,BOL,BOL[N],,BOL,national_only
-Brésil,BRA,BR,BRA,oui,oui,2,3,BRA1;BRA2;BRA,BRA1[L];BRA2[L];BRA[N],BRA1;BRA2,BRA,both
-Canada,CAN,CA,CAN,non,oui,0,1,CAN,CAN[N],,CAN,national_only
-Suisse,CHE,CH,SUI,oui,oui,1,2,C1;SUI,C1[L];SUI[N],C1,SUI,both
-Chili,CHL,CL,CHI,oui,non,1,1,CLPD,CLPD[L],CLPD,,league_only
-Chine,CHN,CN,CHN,oui,non,1,1,CSL,CSL[L],CSL,,league_only
-Côte d'Ivoire,CIV,CI,CIV,non,oui,0,1,CIV,CIV[N],,CIV,national_only
-Colombie,COL,CO,COL,oui,oui,1,2,COL1;COL,COL1[L];COL[N],COL1,COL,both
-Costa Rica,CRI,CR,CRC,non,oui,0,1,CRC,CRC[N],,CRC,national_only
-Chypre,CYP,CY,CYP,oui,non,1,1,CY1,CY1[L],CY1,,league_only
-Tchéquie,CZE,CZ,CZE,oui,non,1,1,TS1,TS1[L],TS1,,league_only
-Allemagne,DEU,DE,GER,oui,oui,3,4,L1;L2;L3;GER,L1[L];L2[L];L3[L];GER[N],L1;L2;L3,GER,both
-Danemark,DNK,DK,DEN,oui,oui,1,2,DK1;DEN,DK1[L];DEN[N],DK1,DEN,both
-Algérie,DZA,DZ,ALG,oui,oui,1,2,ALG1;ALG,ALG1[L];ALG[N],ALG1,ALG,both
-Équateur,ECU,EC,ECU,oui,oui,1,2,EC1N;ECU,EC1N[L];ECU[N],EC1N,ECU,both
-Égypte,EGY,EG,EGY,non,oui,0,1,EGY,EGY[N],,EGY,national_only
-Espagne,ESP,ES,ESP,oui,oui,3,4,ES1;ES2;ES3;ESP,ES1[L];ES2[L];ES3[L];ESP[N],ES1;ES2;ES3,ESP,both
-Estonie,EST,EE,EST,oui,non,1,1,EST1,EST1[L],EST1,,league_only
-Finlande,FIN,FI,FIN,oui,non,1,1,FN1,FN1[L],FN1,,league_only
-France,FRA,FR,FRA,oui,oui,3,4,FR1;FR2;FR3;FRA,FR1[L];FR2[L];FR3[L];FRA[N],FR1;FR2;FR3,FRA,both
-Angleterre,GBR,GB,ENG,oui,oui,3,4,GB1;GB2;GB3;ENG,GB1[L];GB2[L];GB3[L];ENG[N],GB1;GB2;GB3,ENG,both
-Écosse,GBR,GB,SCO,oui,non,1,1,SC1,SC1[L],SC1,,league_only
-Irlande du Nord,GBR,GB,NIR,oui,non,1,1,NI1,NI1[L],NI1,,league_only
-Pays de Galles,GBR,GB,WAL,oui,non,1,1,WAL1,WAL1[L],WAL1,,league_only
-Géorgie,GEO,GE,GEO,oui,non,1,1,GE1,GE1[L],GE1,,league_only
-Ghana,GHA,GH,GHA,non,oui,0,1,GHA,GHA[N],,GHA,national_only
-Grèce,GRC,GR,GRE,oui,non,1,1,GR1,GR1[L],GR1,,league_only
-Croatie,HRV,HR,CRO,oui,oui,1,2,KR1;CRO,KR1[L];CRO[N],KR1,CRO,both
-Hongrie,HUN,HU,HUN,oui,non,1,1,HU1,HU1[L],HU1,,league_only
-Irlande,IRL,IE,IRL,oui,non,1,1,IR1,IR1[L],IR1,,league_only
-Iran,IRN,IR,IRN,non,oui,0,1,IRN,IRN[N],,IRN,national_only
-Irak,IRQ,IQ,IRQ,non,oui,0,1,IRQ,IRQ[N],,IRQ,national_only
-Islande,ISL,IS,ISL,oui,non,1,1,IS1,IS1[L],IS1,,league_only
-Israël,ISR,IL,ISR,oui,non,1,1,ISR1,ISR1[L],ISR1,,league_only
-Italie,ITA,IT,ITA,oui,oui,3,4,IT1;IT2;IT3;ITA,IT1[L];IT2[L];IT3[L];ITA[N],IT1;IT2;IT3,ITA,both
-Jamaïque,JAM,JM,JAM,non,oui,0,1,JAM,JAM[N],,JAM,national_only
-Jordanie,JOR,JO,JOR,non,oui,0,1,JOR,JOR[N],,JOR,national_only
-Japon,JPN,JP,JPN,oui,oui,1,2,JAP1;JPN,JAP1[L];JPN[N],JAP1,JPN,both
-Corée du Sud,KOR,KR,KOR,oui,oui,1,2,RSK1;KOR,RSK1[L];KOR[N],RSK1,KOR,both
-Lituanie,LTU,LT,LTU,oui,non,1,1,LT1,LT1[L],LT1,,league_only
-Luxembourg,LUX,LU,LUX,oui,non,1,1,LUX1,LUX1[L],LUX1,,league_only
-Lettonie,LVA,LV,LVA,oui,non,1,1,LV1,LV1[L],LV1,,league_only
-Maroc,MAR,MA,MAR,oui,oui,1,2,MAR1;MAR,MAR1[L];MAR[N],MAR1,MAR,both
-Mexique,MEX,MX,MEX,oui,oui,1,2,MEX1;MEX,MEX1[L];MEX[N],MEX1,MEX,both
-Malte,MLT,MT,MLT,oui,non,1,1,MAL1,MAL1[L],MAL1,,league_only
-Nigeria,NGA,NG,NGA,non,oui,0,1,NGA,NGA[N],,NGA,national_only
-Pays-Bas,NLD,NL,NED,oui,oui,1,2,NL1;NED,NL1[L];NED[N],NL1,NED,both
-Norvège,NOR,NO,NOR,oui,oui,1,2,NO1;NOR,NO1[L];NOR[N],NO1,NOR,both
-Nouvelle-Zélande,NZL,NZ,NZL,non,oui,0,1,NZL,NZL[N],,NZL,national_only
-Panama,PAN,PA,PAN,non,oui,0,1,PAN,PAN[N],,PAN,national_only
-Pologne,POL,PL,POL,oui,oui,1,2,PL1;POL,PL1[L];POL[N],PL1,POL,both
-Portugal,PRT,PT,POR,oui,oui,2,3,PO1;PT2;POR,PO1[L];PT2[L];POR[N],PO1;PT2,POR,both
-Paraguay,PRY,PY,PAR,oui,oui,1,2,PR1A;PAR,PR1A[L];PAR[N],PR1A,PAR,both
-Qatar,QAT,QA,QAT,non,oui,0,1,QAT,QAT[N],,QAT,national_only
-Roumanie,ROU,RO,ROU,oui,non,1,1,RO1,RO1[L],RO1,,league_only
-Russie,RUS,RU,RUS,oui,non,1,1,RU1,RU1[L],RU1,,league_only
-Arabie Saoudite,SAU,SA,KSA,oui,oui,1,2,SA1;KSA,SA1[L];KSA[N],SA1,KSA,both
-Sénégal,SEN,SN,SEN,non,oui,0,1,SEN,SEN[N],,SEN,national_only
-Serbie,SRB,RS,SRB,oui,oui,1,2,SER1;SRB,SER1[L];SRB[N],SER1,SRB,both
-Slovaquie,SVK,SK,SVK,oui,non,1,1,SK1,SK1[L],SK1,,league_only
-Slovénie,SVN,SI,SVN,oui,non,1,1,SLO1,SLO1[L],SLO1,,league_only
-Suède,SWE,SE,SWE,oui,non,1,1,SE1,SE1[L],SE1,,league_only
-Tunisie,TUN,TN,TUN,non,oui,0,1,TUN,TUN[N],,TUN,national_only
-Turquie,TUR,TR,TUR,oui,oui,1,2,TR1;TUR,TR1[L];TUR[N],TR1,TUR,both
-Ukraine,UKR,UA,UKR,oui,non,1,1,UKR1,UKR1[L],UKR1,,league_only
-Uruguay,URY,UY,URU,non,oui,0,1,URU,URU[N],,URU,national_only
-États-Unis,USA,US,USA,oui,oui,1,2,MLS1;USA,MLS1[L];USA[N],MLS1,USA,both
-Ouzbékistan,UZB,UZ,UZB,non,oui,0,1,UZB,UZB[N],,UZB,national_only
-Afrique du Sud,ZAF,ZA,RSA,oui,oui,1,2,SFA1;RSA,SFA1[L];RSA[N],SFA1,RSA,both
+pays_fr,iso_alpha3,iso_alpha2,code_fifa,a_ligue,a_selection,nb_ligues,nb_competitions,competitions_noms,competitions_code_nom,codes_tm_competitions,codes_tm_ligues,code_tm_selection,couverture
+Albanie,ALB,AL,ALB,oui,non,1,1,Kategoria Superiore,AL1=Kategoria Superiore,AL1,AL1,,league_only
+Argentine,ARG,AR,ARG,oui,oui,1,2,Primera División;Sélection Argentine,ARG1=Primera División;ARG=Sélection Argentine,ARG1;ARG,ARG1,ARG,both
+Australie,AUS,AU,AUS,oui,oui,1,2,A-League;Sélection Australie,AUS1=A-League;AUS=Sélection Australie,AUS1;AUS,AUS1,AUS,both
+Autriche,AUT,AT,AUT,oui,oui,1,2,Bundesliga;Sélection Autriche,A1=Bundesliga;AUT=Sélection Autriche,A1;AUT,A1,AUT,both
+Azerbaïdjan,AZE,AZ,AZE,oui,non,1,1,Premier League,AZ1=Premier League,AZ1,AZ1,,league_only
+Belgique,BEL,BE,BEL,oui,oui,1,2,Jupiler Pro League;Sélection Belgique,BE1=Jupiler Pro League;BEL=Sélection Belgique,BE1;BEL,BE1,BEL,both
+Bulgarie,BGR,BG,BUL,oui,non,1,1,First League,BG1=First League,BG1,BG1,,league_only
+Bosnie-Herzégovine,BIH,BA,BIH,oui,non,1,1,Premier League,BH1=Premier League,BH1,BH1,,league_only
+Bolivie,BOL,BO,BOL,non,oui,0,1,Sélection Bolivie,BOL=Sélection Bolivie,BOL,,BOL,national_only
+Brésil,BRA,BR,BRA,oui,oui,2,3,Brasileirão Série A;Brasileirão Série B;Sélection Brésil,BRA1=Brasileirão Série A;BRA2=Brasileirão Série B;BRA=Sélection Brésil,BRA1;BRA2;BRA,BRA1;BRA2,BRA,both
+Canada,CAN,CA,CAN,non,oui,0,1,Sélection Canada,CAN=Sélection Canada,CAN,,CAN,national_only
+Suisse,CHE,CH,SUI,oui,oui,1,2,Super League;Sélection Suisse,C1=Super League;SUI=Sélection Suisse,C1;SUI,C1,SUI,both
+Chili,CHL,CL,CHI,oui,non,1,1,Primera División,CLPD=Primera División,CLPD,CLPD,,league_only
+Chine,CHN,CN,CHN,oui,non,1,1,Chinese Super League,CSL=Chinese Super League,CSL,CSL,,league_only
+Côte d'Ivoire,CIV,CI,CIV,non,oui,0,1,Sélection Côte d'Ivoire,CIV=Sélection Côte d'Ivoire,CIV,,CIV,national_only
+Colombie,COL,CO,COL,oui,oui,1,2,Liga BetPlay;Sélection Colombie,COL1=Liga BetPlay;COL=Sélection Colombie,COL1;COL,COL1,COL,both
+Costa Rica,CRI,CR,CRC,non,oui,0,1,Sélection Costa Rica,CRC=Sélection Costa Rica,CRC,,CRC,national_only
+Chypre,CYP,CY,CYP,oui,non,1,1,First Division,CY1=First Division,CY1,CY1,,league_only
+Tchéquie,CZE,CZ,CZE,oui,non,1,1,Chance Liga,TS1=Chance Liga,TS1,TS1,,league_only
+Allemagne,DEU,DE,GER,oui,oui,3,4,Bundesliga;2. Bundesliga;3. Liga;Sélection Allemagne,L1=Bundesliga;L2=2. Bundesliga;L3=3. Liga;GER=Sélection Allemagne,L1;L2;L3;GER,L1;L2;L3,GER,both
+Danemark,DNK,DK,DEN,oui,oui,1,2,Superligaen;Sélection Danemark,DK1=Superligaen;DEN=Sélection Danemark,DK1;DEN,DK1,DEN,both
+Algérie,DZA,DZ,ALG,oui,oui,1,2,Ligue Professionnelle 1;Sélection Algérie,ALG1=Ligue Professionnelle 1;ALG=Sélection Algérie,ALG1;ALG,ALG1,ALG,both
+Équateur,ECU,EC,ECU,oui,oui,1,2,LigaPro Serie A;Sélection Équateur,EC1N=LigaPro Serie A;ECU=Sélection Équateur,EC1N;ECU,EC1N,ECU,both
+Égypte,EGY,EG,EGY,non,oui,0,1,Sélection Égypte,EGY=Sélection Égypte,EGY,,EGY,national_only
+Espagne,ESP,ES,ESP,oui,oui,3,4,LaLiga;Segunda División;Primera Federación;Sélection Espagne,ES1=LaLiga;ES2=Segunda División;ES3=Primera Federación;ESP=Sélection Espagne,ES1;ES2;ES3;ESP,ES1;ES2;ES3,ESP,both
+Estonie,EST,EE,EST,oui,non,1,1,Meistriliiga,EST1=Meistriliiga,EST1,EST1,,league_only
+Finlande,FIN,FI,FIN,oui,non,1,1,Veikkausliiga,FN1=Veikkausliiga,FN1,FN1,,league_only
+France,FRA,FR,FRA,oui,oui,3,4,Ligue 1;Ligue 2;Championnat National;Sélection France,FR1=Ligue 1;FR2=Ligue 2;FR3=Championnat National;FRA=Sélection France,FR1;FR2;FR3;FRA,FR1;FR2;FR3,FRA,both
+Angleterre,GBR,GB,ENG,oui,oui,3,4,Premier League;EFL Championship;EFL League One;Sélection Angleterre,GB1=Premier League;GB2=EFL Championship;GB3=EFL League One;ENG=Sélection Angleterre,GB1;GB2;GB3;ENG,GB1;GB2;GB3,ENG,both
+Écosse,GBR,GB,SCO,oui,non,1,1,Scottish Premiership,SC1=Scottish Premiership,SC1,SC1,,league_only
+Irlande du Nord,GBR,GB,NIR,oui,non,1,1,Premiership,NI1=Premiership,NI1,NI1,,league_only
+Pays de Galles,GBR,GB,WAL,oui,non,1,1,Cymru Premier,WAL1=Cymru Premier,WAL1,WAL1,,league_only
+Géorgie,GEO,GE,GEO,oui,non,1,1,Erovnuli Liga,GE1=Erovnuli Liga,GE1,GE1,,league_only
+Ghana,GHA,GH,GHA,non,oui,0,1,Sélection Ghana,GHA=Sélection Ghana,GHA,,GHA,national_only
+Grèce,GRC,GR,GRE,oui,non,1,1,Super League 1,GR1=Super League 1,GR1,GR1,,league_only
+Croatie,HRV,HR,CRO,oui,oui,1,2,SuperSport HNL;Sélection Croatie,KR1=SuperSport HNL;CRO=Sélection Croatie,KR1;CRO,KR1,CRO,both
+Hongrie,HUN,HU,HUN,oui,non,1,1,Nemzeti Bajnokság I,HU1=Nemzeti Bajnokság I,HU1,HU1,,league_only
+Irlande,IRL,IE,IRL,oui,non,1,1,Premier Division,IR1=Premier Division,IR1,IR1,,league_only
+Iran,IRN,IR,IRN,non,oui,0,1,Sélection Iran,IRN=Sélection Iran,IRN,,IRN,national_only
+Irak,IRQ,IQ,IRQ,non,oui,0,1,Sélection Irak,IRQ=Sélection Irak,IRQ,,IRQ,national_only
+Islande,ISL,IS,ISL,oui,non,1,1,Besta deild karla,IS1=Besta deild karla,IS1,IS1,,league_only
+Israël,ISR,IL,ISR,oui,non,1,1,Ligat Ha'AL,ISR1=Ligat Ha'AL,ISR1,ISR1,,league_only
+Italie,ITA,IT,ITA,oui,oui,3,4,Serie A;Serie B;Serie C;Sélection Italie,IT1=Serie A;IT2=Serie B;IT3=Serie C;ITA=Sélection Italie,IT1;IT2;IT3;ITA,IT1;IT2;IT3,ITA,both
+Jamaïque,JAM,JM,JAM,non,oui,0,1,Sélection Jamaïque,JAM=Sélection Jamaïque,JAM,,JAM,national_only
+Jordanie,JOR,JO,JOR,non,oui,0,1,Sélection Jordanie,JOR=Sélection Jordanie,JOR,,JOR,national_only
+Japon,JPN,JP,JPN,oui,oui,1,2,J1 League;Sélection Japon,JAP1=J1 League;JPN=Sélection Japon,JAP1;JPN,JAP1,JPN,both
+Corée du Sud,KOR,KR,KOR,oui,oui,1,2,K League 1;Sélection Corée du Sud,RSK1=K League 1;KOR=Sélection Corée du Sud,RSK1;KOR,RSK1,KOR,both
+Lituanie,LTU,LT,LTU,oui,non,1,1,A Lyga,LT1=A Lyga,LT1,LT1,,league_only
+Luxembourg,LUX,LU,LUX,oui,non,1,1,National Division,LUX1=National Division,LUX1,LUX1,,league_only
+Lettonie,LVA,LV,LVA,oui,non,1,1,Virsliga,LV1=Virsliga,LV1,LV1,,league_only
+Maroc,MAR,MA,MAR,oui,oui,1,2,Botola Pro;Sélection Maroc,MAR1=Botola Pro;MAR=Sélection Maroc,MAR1;MAR,MAR1,MAR,both
+Mexique,MEX,MX,MEX,oui,oui,1,2,Liga MX;Sélection Mexique,MEX1=Liga MX;MEX=Sélection Mexique,MEX1;MEX,MEX1,MEX,both
+Malte,MLT,MT,MLT,oui,non,1,1,Premier League,MAL1=Premier League,MAL1,MAL1,,league_only
+Nigeria,NGA,NG,NGA,non,oui,0,1,Sélection Nigeria,NGA=Sélection Nigeria,NGA,,NGA,national_only
+Pays-Bas,NLD,NL,NED,oui,oui,1,2,Eredivisie;Sélection Pays-Bas,NL1=Eredivisie;NED=Sélection Pays-Bas,NL1;NED,NL1,NED,both
+Norvège,NOR,NO,NOR,oui,oui,1,2,Eliteserien;Sélection Norvège,NO1=Eliteserien;NOR=Sélection Norvège,NO1;NOR,NO1,NOR,both
+Nouvelle-Zélande,NZL,NZ,NZL,non,oui,0,1,Sélection Nouvelle-Zélande,NZL=Sélection Nouvelle-Zélande,NZL,,NZL,national_only
+Panama,PAN,PA,PAN,non,oui,0,1,Sélection Panama,PAN=Sélection Panama,PAN,,PAN,national_only
+Pologne,POL,PL,POL,oui,oui,1,2,Ekstraklasa;Sélection Pologne,PL1=Ekstraklasa;POL=Sélection Pologne,PL1;POL,PL1,POL,both
+Portugal,PRT,PT,POR,oui,oui,2,3,Liga Portugal;Liga Portugal 2;Sélection Portugal,PO1=Liga Portugal;PT2=Liga Portugal 2;POR=Sélection Portugal,PO1;PT2;POR,PO1;PT2,POR,both
+Paraguay,PRY,PY,PAR,oui,oui,1,2,Primera División Apertura;Sélection Paraguay,PR1A=Primera División Apertura;PAR=Sélection Paraguay,PR1A;PAR,PR1A,PAR,both
+Qatar,QAT,QA,QAT,non,oui,0,1,Sélection Qatar,QAT=Sélection Qatar,QAT,,QAT,national_only
+Roumanie,ROU,RO,ROU,oui,non,1,1,Superliga,RO1=Superliga,RO1,RO1,,league_only
+Russie,RUS,RU,RUS,oui,non,1,1,Premier Liga,RU1=Premier Liga,RU1,RU1,,league_only
+Arabie Saoudite,SAU,SA,KSA,oui,oui,1,2,Saudi Pro League;Sélection Arabie Saoudite,SA1=Saudi Pro League;KSA=Sélection Arabie Saoudite,SA1;KSA,SA1,KSA,both
+Sénégal,SEN,SN,SEN,non,oui,0,1,Sélection Sénégal,SEN=Sélection Sénégal,SEN,,SEN,national_only
+Serbie,SRB,RS,SRB,oui,oui,1,2,Super Liga;Sélection Serbie,SER1=Super Liga;SRB=Sélection Serbie,SER1;SRB,SER1,SRB,both
+Slovaquie,SVK,SK,SVK,oui,non,1,1,Fortuna Liga,SK1=Fortuna Liga,SK1,SK1,,league_only
+Slovénie,SVN,SI,SVN,oui,non,1,1,PrvaLiga,SLO1=PrvaLiga,SLO1,SLO1,,league_only
+Suède,SWE,SE,SWE,oui,non,1,1,Allsvenskan,SE1=Allsvenskan,SE1,SE1,,league_only
+Tunisie,TUN,TN,TUN,non,oui,0,1,Sélection Tunisie,TUN=Sélection Tunisie,TUN,,TUN,national_only
+Turquie,TUR,TR,TUR,oui,oui,1,2,Süper Lig;Sélection Turquie,TR1=Süper Lig;TUR=Sélection Turquie,TR1;TUR,TR1,TUR,both
+Ukraine,UKR,UA,UKR,oui,non,1,1,Premier Liga,UKR1=Premier Liga,UKR1,UKR1,,league_only
+Uruguay,URY,UY,URU,non,oui,0,1,Sélection Uruguay,URU=Sélection Uruguay,URU,,URU,national_only
+États-Unis,USA,US,USA,oui,oui,1,2,MLS;Sélection États-Unis,MLS1=MLS;USA=Sélection États-Unis,MLS1;USA,MLS1,USA,both
+Ouzbékistan,UZB,UZ,UZB,non,oui,0,1,Sélection Ouzbékistan,UZB=Sélection Ouzbékistan,UZB,,UZB,national_only
+Afrique du Sud,ZAF,ZA,RSA,oui,oui,1,2,Premier Division;Sélection Afrique du Sud,SFA1=Premier Division;RSA=Sélection Afrique du Sud,SFA1;RSA,SFA1,RSA,both

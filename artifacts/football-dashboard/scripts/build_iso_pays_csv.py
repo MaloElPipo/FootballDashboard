@@ -142,19 +142,28 @@ PAYS_REF: dict[str, tuple[str, str, str | None]] = {
 
 
 def main() -> int:
-    # Index : pays_fr -> {ligues: [...], selection: code_tm_or_None}
+    # Tables de résolution code_tm -> nom complet
+    # Pour les ligues : nom de la compétition (ex: "Ligue 1", "Premier League")
+    # Pour les sélections : "Sélection <pays>" pour distinguer dans la liste consolidée
+    nom_par_code: dict[str, str] = {}
+    for L in LEAGUES:
+        nom_par_code[L["code_tm"]] = L["nom"]
+    for t in NATIONAL_TEAMS:
+        nom_par_code[t["code_tm"]] = f"Sélection {t['nom']}"
+
+    # Index : pays_fr -> {ligues: [(code, nom), ...], selection: (code, nom) or None}
     pays_data: dict[str, dict] = {}
 
     for L in LEAGUES:
         p = L["pays"]
         pays_data.setdefault(p, {"ligues": [], "selection": None})
-        pays_data[p]["ligues"].append(L["code_tm"])
+        pays_data[p]["ligues"].append((L["code_tm"], L["nom"]))
 
-    # Mapping nom_selection FR -> code_tm
-    sel_by_name: dict[str, str] = {t["nom"]: t["code_tm"] for t in NATIONAL_TEAMS}
-    for nom, code in sel_by_name.items():
+    # Mapping nom_selection FR -> (code_tm, nom_pays)
+    for t in NATIONAL_TEAMS:
+        nom = t["nom"]
         pays_data.setdefault(nom, {"ligues": [], "selection": None})
-        pays_data[nom]["selection"] = code
+        pays_data[nom]["selection"] = (t["code_tm"], f"Sélection {nom}")
 
     # Vérifier que tous les pays sont dans le ref
     missing = sorted(set(pays_data) - set(PAYS_REF))
@@ -175,8 +184,9 @@ def main() -> int:
             "a_selection",
             "nb_ligues",
             "nb_competitions",                # ligues + sélection (1 si seulement nat, n+1 si ligue+nat)
-            "codes_tm_competitions",          # TOUS les codes TM du pays regroupés (ligues + sélection)
-            "codes_tm_competitions_detail",   # idem mais annoté : "BRA1[L];BRA2[L];BRA[N]"
+            "competitions_noms",              # noms complets ex: "Ligue 1;Ligue 2;Ligue 3;Sélection France"
+            "competitions_code_nom",          # code=nom ex: "FR1=Ligue 1;FR2=Ligue 2;FRA=Sélection France"
+            "codes_tm_competitions",          # codes seuls regroupés ex: "FR1;FR2;FR3;FRA"
             "codes_tm_ligues",                # ligues seules (pour compat)
             "code_tm_selection",              # sélection seule (pour compat)
             "couverture",                     # league_only | national_only | both
@@ -186,10 +196,10 @@ def main() -> int:
         for pays in sorted(pays_data, key=lambda x: PAYS_REF[x][0]):
             iso3, iso2, fifa = PAYS_REF[pays]
             data = pays_data[pays]
-            ligues = sorted(data["ligues"])
-            sel = data["selection"]
-            a_ligue = bool(ligues)
-            a_sel = bool(sel)
+            ligues_tuples = sorted(data["ligues"], key=lambda t: t[0])  # tri par code
+            sel_tuple = data["selection"]
+            a_ligue = bool(ligues_tuples)
+            a_sel = bool(sel_tuple)
             if a_ligue and a_sel:
                 cover = "both"
             elif a_ligue:
@@ -197,14 +207,16 @@ def main() -> int:
             else:
                 cover = "national_only"
 
-            # Liste consolidée : ligues d'abord (alpha), sélection en dernier
-            all_codes = list(ligues)
-            if sel:
-                all_codes.append(sel)
-            # Version annotée [L]eague / [N]ational
-            detail_parts = [f"{c}[L]" for c in ligues]
-            if sel:
-                detail_parts.append(f"{sel}[N]")
+            # Listes : ligues d'abord (tri par code), sélection en dernier
+            all_tuples = list(ligues_tuples)
+            if sel_tuple:
+                all_tuples.append(sel_tuple)
+
+            codes_only       = [c for c, _ in all_tuples]
+            noms_only        = [n for _, n in all_tuples]
+            code_nom_pairs   = [f"{c}={n}" for c, n in all_tuples]
+            ligue_codes_only = [c for c, _ in ligues_tuples]
+            sel_code         = sel_tuple[0] if sel_tuple else ""
 
             rows.append([
                 pays,
@@ -213,12 +225,13 @@ def main() -> int:
                 fifa or iso3,
                 "oui" if a_ligue else "non",
                 "oui" if a_sel else "non",
-                len(ligues),
-                len(all_codes),
-                ";".join(all_codes),
-                ";".join(detail_parts),
-                ";".join(ligues),
-                sel or "",
+                len(ligues_tuples),
+                len(all_tuples),
+                ";".join(noms_only),
+                ";".join(code_nom_pairs),
+                ";".join(codes_only),
+                ";".join(ligue_codes_only),
+                sel_code,
                 cover,
             ])
         w.writerows(rows)

@@ -174,16 +174,19 @@ def main() -> int:
             "a_ligue",
             "a_selection",
             "nb_ligues",
-            "codes_tm_ligues",
-            "code_tm_selection",
-            "couverture",  # league_only | national_only | both
+            "nb_competitions",                # ligues + sélection (1 si seulement nat, n+1 si ligue+nat)
+            "codes_tm_competitions",          # TOUS les codes TM du pays regroupés (ligues + sélection)
+            "codes_tm_competitions_detail",   # idem mais annoté : "BRA1[L];BRA2[L];BRA[N]"
+            "codes_tm_ligues",                # ligues seules (pour compat)
+            "code_tm_selection",              # sélection seule (pour compat)
+            "couverture",                     # league_only | national_only | both
         ])
 
         rows = []
         for pays in sorted(pays_data, key=lambda x: PAYS_REF[x][0]):
             iso3, iso2, fifa = PAYS_REF[pays]
             data = pays_data[pays]
-            ligues = data["ligues"]
+            ligues = sorted(data["ligues"])
             sel = data["selection"]
             a_ligue = bool(ligues)
             a_sel = bool(sel)
@@ -193,6 +196,16 @@ def main() -> int:
                 cover = "league_only"
             else:
                 cover = "national_only"
+
+            # Liste consolidée : ligues d'abord (alpha), sélection en dernier
+            all_codes = list(ligues)
+            if sel:
+                all_codes.append(sel)
+            # Version annotée [L]eague / [N]ational
+            detail_parts = [f"{c}[L]" for c in ligues]
+            if sel:
+                detail_parts.append(f"{sel}[N]")
+
             rows.append([
                 pays,
                 iso3,
@@ -201,7 +214,10 @@ def main() -> int:
                 "oui" if a_ligue else "non",
                 "oui" if a_sel else "non",
                 len(ligues),
-                ";".join(sorted(ligues)),
+                len(all_codes),
+                ";".join(all_codes),
+                ";".join(detail_parts),
+                ";".join(ligues),
                 sel or "",
                 cover,
             ])

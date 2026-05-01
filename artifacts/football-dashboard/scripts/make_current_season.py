@@ -122,7 +122,17 @@ def main(argv: list[str]) -> int:
 
     print()
     print(f"[FIN] {n_ok} OK / {n_ko} KO   →   {OUT_DIR}")
-    return 0 if n_ko == 0 else 1
+    # On ne bloque le pipeline QUE si AUCUNE ligue n'a pu produire un fichier
+    # current_season. Tant qu'au moins une ligue a réussi, le portail peut être
+    # publié et les autres apparaîtront en "non disponibles".
+    if n_ok == 0:
+        print("[ERREUR] Aucune ligue n'a pu être filtrée — pipeline arrêté.",
+              file=sys.stderr)
+        return 1
+    if n_ko > 0:
+        print(f"[WARN] {n_ko} ligue(s) sans saison détectable — publication "
+              f"poursuivie avec les {n_ok} ligue(s) valides.")
+    return 0
 
 
 if __name__ == "__main__":

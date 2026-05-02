@@ -68,7 +68,7 @@ jobs:
           print(','.join(l['code_tm'].lower() for l in LEAGUES))
           ")
             echo "leagues=$LEAGUES" >> $GITHUB_OUTPUT
-            echo "→ Toutes les ligues (71)"
+            echo "→ Toutes les ligues (74)"
           fi
 
       - name: Vérifier prérequis pour scraping (effectifs déjà scrapés)
@@ -82,14 +82,53 @@ jobs:
           MISSING=""
           PRESENT=""
           for code in "${LIST[@]}"; do
-            if [ -f "live/data/tm_scrap/${code}.csv" ]; then
+            f="live/data/tm_scrap/${code}.csv"
+            if [ -f "$f" ] && [ $(wc -l < "$f") -gt 1 ]; then
               PRESENT="$PRESENT $code"
             else
               MISSING="$MISSING $code"
             fi
           done
           echo "✓ Effectifs présents :$PRESENT"
-          echo "✗ Effectifs manquants (skip carrière) :$MISSING"
+          echo "✗ Effectifs manquants (à scraper) :$MISSING"
+
+      - name: Scraping effectifs (squads) pour ligues sans CSV
+        if: github.event.inputs.skip_scrape != 'true'
+        working-directory: artifacts/football-dashboard
+        run: |
+          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
+          OK=0
+          KO=0
+          SKIPPED=0
+          for code in "${LIST[@]}"; do
+            f="live/data/tm_scrap/${code}.csv"
+            if [ -f "$f" ] && [ $(wc -l < "$f") -gt 1 ]; then
+              SKIPPED=$((SKIPPED+1))
+              continue
+            fi
+            echo "::group::Scraping effectifs $code"
+            if python3 scripts/scrape_all_squads.py --only "$code"; then
+              OK=$((OK+1))
+            else
+              echo "::warning::Échec scraping effectifs $code"
+              KO=$((KO+1))
+            fi
+            echo "::endgroup::"
+          done
+          echo "Bilan effectifs : $OK scrapés / $KO échecs / $SKIPPED déjà présents"
+
+      - name: Persister les nouveaux effectifs sur main
+        if: github.event.inputs.skip_scrape != 'true'
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add artifacts/football-dashboard/live/data/tm_scrap/*.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Aucun nouveau CSV effectif à committer."
+          else
+            git commit -m "chore(data): nouveaux effectifs scrapés (run #${{ github.run_number }})"
+            git push origin HEAD:main || echo "::warning::push effectifs échoué (continuera quand même)"
+          fi
 
       - name: Scraping carrière des joueurs (par ligue, séquentiel)
         if: github.event.inputs.skip_scrape != 'true'

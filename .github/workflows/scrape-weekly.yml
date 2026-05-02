@@ -28,7 +28,7 @@ concurrency:
 jobs:
   scrape-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 240   # 4h max, on tablera sur ~2h en pratique
+    timeout-minutes: 720   # 12h max — 74 ligues × ~5 min = ~6h pour un run complet
 
     steps:
       - name: Checkout du dépôt

@@ -190,6 +190,14 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: "chore(pages): refresh hebdomadaire ${{ github.run_number }}"
+          # force_orphan garantit qu'à chaque déploiement la branche gh-pages
+          # est réécrite avec un unique commit orphelin. Conséquence : aucun
+          # tree historique (notamment ceux des runs #1 et #3 qui contenaient
+          # le mapping erroné Slovaquie ⇄ Slovénie) ne reste référencé sur
+          # la branche publique. Le portail GitHub Pages ne sert que le tip
+          # de la branche, donc on supprime aussi toute trace consultable
+          # via l'API git du repo.
+          force_orphan: true
 
       - name: Résumé
         run: |

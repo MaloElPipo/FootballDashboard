@@ -49,26 +49,26 @@ LEAGUES: list[dict] = [
     {"code_tm": "KR1",  "slug": "supersport-hnl",              "nom": "SuperSport HNL",                  "pays": "Croatie",          "region": "Europe", "tier": 1},
     {"code_tm": "SER1", "slug": "super-liga",                  "nom": "Super Liga",                      "pays": "Serbie",           "region": "Europe", "tier": 1},
     {"code_tm": "RO1",  "slug": "superliga",                   "nom": "Superliga",                       "pays": "Roumanie",         "region": "Europe", "tier": 1},
-    {"code_tm": "HU1",  "slug": "nemzeti-bajnoksag",           "nom": "Nemzeti Bajnokság I",             "pays": "Hongrie",          "region": "Europe", "tier": 1},
+    {"code_tm": "UNG1", "slug": "nemzeti-bajnoksag", "nom": "Nemzeti Bajnokság I", "pays": "Hongrie", "region": "Europe", "tier": 1},
     {"code_tm": "IS1",  "slug": "besta-deild-karla",           "nom": "Besta deild karla",               "pays": "Islande",          "region": "Europe", "tier": 1},
     {"code_tm": "IR1",  "slug": "premier-division",            "nom": "Premier Division",                "pays": "Irlande",          "region": "Europe", "tier": 1},
-    {"code_tm": "BG1",  "slug": "first-league",                "nom": "First League",                    "pays": "Bulgarie",         "region": "Europe", "tier": 1},
-    {"code_tm": "CY1",  "slug": "first-division",              "nom": "First Division",                  "pays": "Chypre",           "region": "Europe", "tier": 1},
-    {"code_tm": "LT1",  "slug": "a-lyga",                      "nom": "A Lyga",                          "pays": "Lituanie",         "region": "Europe", "tier": 1},
-    {"code_tm": "LV1",  "slug": "virsliga",                    "nom": "Virsliga",                        "pays": "Lettonie",         "region": "Europe", "tier": 1},
+    {"code_tm": "BU1", "slug": "parva-liga", "nom": "Parva Liga", "pays": "Bulgarie", "region": "Europe", "tier": 1},
+    {"code_tm": "ZYP1", "slug": "first-division", "nom": "First Division", "pays": "Chypre", "region": "Europe", "tier": 1},
+    {"code_tm": "LI1", "slug": "a-lyga", "nom": "A Lyga", "pays": "Lituanie", "region": "Europe", "tier": 1},
+    {"code_tm": "LET1", "slug": "virsliga", "nom": "Virsliga", "pays": "Lettonie", "region": "Europe", "tier": 1},
     {"code_tm": "EST1", "slug": "meistriliiga",                "nom": "Meistriliiga",                    "pays": "Estonie",          "region": "Europe", "tier": 1},
-    {"code_tm": "AL1",  "slug": "kategoria-superiore",         "nom": "Kategoria Superiore",             "pays": "Albanie",          "region": "Europe", "tier": 1},
+    {"code_tm": "ALB1", "slug": "kategoria-superiore", "nom": "Kategoria Superiore", "pays": "Albanie", "region": "Europe", "tier": 1},
     {"code_tm": "AZ1",  "slug": "premier-league",              "nom": "Premier League",                  "pays": "Azerbaïdjan",      "region": "Europe", "tier": 1},
-    {"code_tm": "BH1",  "slug": "premijer-liga",               "nom": "Premier League",                  "pays": "Bosnie-Herzégovine","region": "Europe", "tier": 1},
+    {"code_tm": "BOS1", "slug": "premijer-liga", "nom": "Premijer Liga", "pays": "Bosnie-Herzégovine", "region": "Europe", "tier": 1},
     {"code_tm": "MAL1", "slug": "premier-league",              "nom": "Premier League",                  "pays": "Malte",            "region": "Europe", "tier": 1},
-    {"code_tm": "FN1",  "slug": "veikkausliiga",               "nom": "Veikkausliiga",                   "pays": "Finlande",         "region": "Europe", "tier": 1},
-    {"code_tm": "GE1",  "slug": "erovnuli-liga",               "nom": "Erovnuli Liga",                   "pays": "Géorgie",          "region": "Europe", "tier": 1},
-    {"code_tm": "NI1",  "slug": "premiership",                 "nom": "Premiership",                     "pays": "Irlande du Nord",  "region": "Europe", "tier": 1},
+    {"code_tm": "FI1", "slug": "veikkausliiga", "nom": "Veikkausliiga", "pays": "Finlande", "region": "Europe", "tier": 1},
+    {"code_tm": "GE1N", "slug": "erovnuli-liga", "nom": "Erovnuli Liga", "pays": "Géorgie", "region": "Europe", "tier": 1},
+    {"code_tm": "NIR1", "slug": "premiership", "nom": "Premiership", "pays": "Irlande du Nord", "region": "Europe", "tier": 1},
     {"code_tm": "ISR1", "slug": "ligat-haal",                  "nom": "Ligat Ha'AL",                     "pays": "Israël",           "region": "Europe", "tier": 1},
     {"code_tm": "LUX1", "slug": "national-division",           "nom": "National Division",               "pays": "Luxembourg",       "region": "Europe", "tier": 1},
     {"code_tm": "WAL1", "slug": "cymru-premier",               "nom": "Cymru Premier",                   "pays": "Pays de Galles",   "region": "Europe", "tier": 1},
-    {"code_tm": "SK1",  "slug": "fortuna-liga",                "nom": "Fortuna Liga",                    "pays": "Slovaquie",        "region": "Europe", "tier": 1},
-    {"code_tm": "SLO1", "slug": "prvaliga",                    "nom": "PrvaLiga",                        "pays": "Slovénie",         "region": "Europe", "tier": 1},
+    {"code_tm": "SLO1", "slug": "fortuna-liga", "nom": "Niké Liga", "pays": "Slovaquie", "region": "Europe", "tier": 1},
+    {"code_tm": "SL1", "slug": "prvaliga", "nom": "Prva Liga", "pays": "Slovénie", "region": "Europe", "tier": 1},
 
     # ----- Europe D2 (6) -----
     {"code_tm": "GB2",  "slug": "championship",                "nom": "EFL Championship",                "pays": "Angleterre",       "region": "Europe", "tier": 2},
@@ -76,12 +76,18 @@ LEAGUES: list[dict] = [
     {"code_tm": "ES2",  "slug": "laliga2",                     "nom": "Segunda División",                "pays": "Espagne",          "region": "Europe", "tier": 2},
     {"code_tm": "FR2",  "slug": "ligue-2",                     "nom": "Ligue 2",                         "pays": "France",           "region": "Europe", "tier": 2},
     {"code_tm": "L2",   "slug": "2-bundesliga",                "nom": "2. Bundesliga",                   "pays": "Allemagne",        "region": "Europe", "tier": 2},
-    {"code_tm": "PT2",  "slug": "liga-portugal-2",             "nom": "Liga Portugal 2",                 "pays": "Portugal",         "region": "Europe", "tier": 2},
+    {"code_tm": "PO2", "slug": "liga-portugal-2", "nom": "Liga Portugal 2", "pays": "Portugal", "region": "Europe", "tier": 2},
 
     # ----- Europe D3 (5) -----
     {"code_tm": "GB3",  "slug": "league-one",                  "nom": "EFL League One",                  "pays": "Angleterre",       "region": "Europe", "tier": 3},
-    {"code_tm": "IT3",  "slug": "serie-c",                     "nom": "Serie C",                         "pays": "Italie",           "region": "Europe", "tier": 3},
-    {"code_tm": "ES3",  "slug": "primera-federacion",          "nom": "Primera Federación",              "pays": "Espagne",          "region": "Europe", "tier": 3},
+    {"code_tm": "IT3A", "slug": "serie-c-girone-a", "nom": "Serie C Girone A", "pays": "Italie", "region": "Europe", "tier": 3},
+
+    {"code_tm": "IT3B", "slug": "serie-c-girone-b", "nom": "Serie C Girone B", "pays": "Italie", "region": "Europe", "tier": 3},
+
+    {"code_tm": "IT3C", "slug": "serie-c-girone-c", "nom": "Serie C Girone C", "pays": "Italie", "region": "Europe", "tier": 3},
+    {"code_tm": "E3G1", "slug": "primera-rfef-gr-i", "nom": "Primera Federación Grupo I", "pays": "Espagne", "region": "Europe", "tier": 3},
+
+    {"code_tm": "E3G2", "slug": "primera-rfef-gr-ii", "nom": "Primera Federación Grupo II", "pays": "Espagne", "region": "Europe", "tier": 3},
     {"code_tm": "FR3",  "slug": "national",                    "nom": "Championnat National",            "pays": "France",           "region": "Europe", "tier": 3},
     {"code_tm": "L3",   "slug": "3-liga",                      "nom": "3. Liga",                         "pays": "Allemagne",        "region": "Europe", "tier": 3},
 
@@ -175,9 +181,9 @@ NATIONAL_TEAMS: list[dict] = [
 ]
 
 # Sanity checks — utiles si on importe ce module en console.
-assert len(LEAGUES) == 71, f"Attendu 71 ligues, trouvé {len(LEAGUES)}"
+assert len(LEAGUES) == 74, f"Attendu 74 ligues, trouvé {len(LEAGUES)}"
 assert len(NATIONAL_TEAMS) == 48, f"Attendu 48 sélections, trouvé {len(NATIONAL_TEAMS)}"
-assert len({l["code_tm"] for l in LEAGUES}) == 71, "Doublon de code_tm dans LEAGUES"
+assert len({l["code_tm"] for l in LEAGUES}) == 74, "Doublon de code_tm dans LEAGUES"
 assert len({t["code_tm"] for t in NATIONAL_TEAMS}) == 48, "Doublon de code_tm dans NATIONAL_TEAMS"
 
 

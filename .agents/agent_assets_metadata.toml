@@ -48,3 +48,9 @@ id = "KF8JEz0fGI5k-Y5q-9t4s"
 uri = "file://artifacts/football-dashboard/live/data/portail/competitions_vues_par_pays.csv"
 type = "table"
 title = "competitions_vues_par_pays.csv (PARTIEL: 3 ligues)"
+
+[[outputs]]
+id = "joFdkpBh0f1zG3vRAtifn"
+uri = "file://artifacts/football-dashboard/live/data/leagues_overview.csv"
+type = "table"
+title = "leagues_overview.csv — récap valeurs marchandes + buts/match (74 ligues)"

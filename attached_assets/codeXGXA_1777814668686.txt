@@ -1,0 +1,360 @@
+# Définition du chemin des documents
+setwd("C:\\Users\\PhotonUser\\Downloads")
+install.packages("tidyverse")
+library(readr)
+library(tidyverse)
+library(lubridate)
+
+###############################
+#   IMPORTATION DES DONNEES   #
+###############################
+career  <- read_csv("alg1_career.csv",  show_col_types = FALSE)
+summary <- read_csv("alg1_summary.csv", show_col_types = FALSE)
+matches <- read_csv("alg1_matches.csv", show_col_types = FALSE)
+
+poste <- data.frame(
+  long_poste = c("Centre-Back", "Right-Back", "Left-Back", "Defensive Midfield",
+                 "Central Midfield", "Attacking Midfield", "Midfield",
+                 "Centre-Forward", "Left Winger", "Right Winger", "Attack",
+                 "Left Midfield", "Right Midfield", "Second Striker", "Defender", "Striker"),
+  short_poste     = c("DC",   "DD",  "DG",  "MDC", "MC",  "MOC", "MC",  "BU",  "AG",  "AD",  "BU",  "MG",  "MD",  "AT",  "DC",  "BU"),
+  proba_poste     = c(0.05, 0.07, 0.07, 0.08, 0.12, 0.18, 0.12, 0.32, 0.25, 0.25, 0.32, 0.22, 0.22, 0.28, 0.05, 0.32),
+  proba_poste_ass = c(0.03, 0.16, 0.16, 0.08, 0.12, 0.20, 0.12, 0.16, 0.20, 0.20, 0.16, 0.18, 0.18, 0.22, 0.03, 0.16)
+)
+
+###############################
+#   PREPARATION DES DONNEES   #
+###############################
+
+# Récupération du poste et de l'équipe actuelle depuis summary
+joueurs_postes <- summary %>%
+  mutate(
+    player_pos = poste$short_poste[match(current_position, poste$long_poste)],
+    player_pos = replace_na(player_pos, "MC")  # poste par défaut si inconnu
+  ) %>%
+  select(player_id, player_name, player_pos,
+         team_name = current_team_name)
+
+# Nettoyage de career
+donnees <- career %>%                       
+  mutate(
+    season        = str_extract(season, "\\d{2}$"),
+    minutes       = as.numeric(minutes)       %>% replace_na(0),
+    goals         = as.numeric(goals)         %>% replace_na(0),
+    assists       = as.numeric(assists)       %>% replace_na(0)
+  ) %>%
+  select(player_id, season,
+         competition_id,
+         club_id,
+         goals, assists,
+         minutes_played = minutes)
+
+# Ajout du poste au dataframe principal
+donnees <- donnees %>%
+  left_join(joueurs_postes, by = "player_id")
+
+compets <- read_csv("competsCoeffs.txt", show_col_types = FALSE) %>%
+  select(competition_id = Short, Rating, Buts) %>%
+  mutate(
+    Rating    = str_replace(Rating, ",", ".") %>% as.numeric() / 100,
+    Rating    = replace_na(Rating, 0.40),
+    Confiance = 1 / (1 + exp(-0.15 * (Rating - 65))),
+    Buts      = na_if(Buts, "-") %>% str_replace(",", ".") %>% as.numeric(),
+    Buts      = replace_na(Buts, 1.3203)
+  ) %>%
+  distinct(competition_id, .keep_all = TRUE)
+
+# Jointure avec donnees
+donnees <- donnees %>%
+  left_join(compets, by = "competition_id") %>%
+  mutate(
+    Buts           = replace_na(Buts, 1.3203),
+    Rating         = replace_na(Rating, 0.40),
+    Confiance      = 1 / (1 + exp(-0.15 * (Rating * 100 - 65))),
+    minutes_playedN = minutes_played * Confiance,
+    goalsN         = goals   * Confiance * 1.3203 / Buts,
+    assistsN       = assists * Confiance * 1.3203 / Buts
+  ) %>%
+  distinct()
+
+player_stats_season <- donnees %>%
+  group_by(player_id, season) %>%
+  summarise(
+    minutes  = sum(minutes_playedN, na.rm = TRUE),
+    buts     = sum(goalsN,          na.rm = TRUE),
+    assists  = sum(assistsN,        na.rm = TRUE),
+    .groups  = "drop"
+  )
+
+stats_final <- player_stats_season %>%
+  pivot_wider(
+    names_from  = season,
+    values_from = c(minutes, buts, assists),
+    names_glue  = "{season}_{.value}"
+  ) %>%
+  left_join(joueurs_postes, by = "player_id")
+
+player_totals <- player_stats_season %>%
+  group_by(player_id) %>%
+  summarise(
+    total_minutes = sum(minutes, na.rm = TRUE),
+    total_goals   = sum(buts,    na.rm = TRUE),
+    total_assists = sum(assists, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+player_stats_season_base <- donnees %>%
+  group_by(player_id, season) %>%
+  summarise(
+    minutes = sum(minutes_played, na.rm = TRUE),
+    buts    = sum(goals,          na.rm = TRUE),
+    passes  = sum(assists,        na.rm = TRUE),
+    .groups = "drop"
+  )
+
+stats_pivot_base <- player_stats_season_base %>%
+  pivot_wider(
+    names_from  = season,
+    values_from = c(minutes, buts, passes),
+    names_glue  = "{season}_{.value}"
+  ) %>%
+  left_join(joueurs_postes, by = "player_id")
+
+player_totals_base <- player_stats_season_base %>%
+  group_by(player_id) %>%
+  summarise(
+    total_minutes = sum(minutes, na.rm = TRUE),
+    total_goals   = sum(buts,   na.rm = TRUE),
+    total_assists = sum(passes, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+stats_final <- stats_final %>%
+  left_join(player_totals, by = "player_id")
+stats_final <- stats_final %>%
+  mutate(across(where(is.numeric), ~ replace_na(., 0)))
+
+###############################################
+# DETECTION AUTOMATIQUE DES SAISONS
+###############################################
+all_seasons <- sort(unique(donnees$season))
+all_seasons <- all_seasons[all_seasons <= 40]
+n_seasons <- length(all_seasons)
+last3 <- tail(all_seasons, 3)
+last5 <- tail(all_seasons, 5)
+
+message("Toutes les saisons détectées : ", paste(all_seasons, collapse = ", "))
+message("3 dernières saisons (recent) : ", paste(last3, collapse = ", "))
+message("5 dernières saisons (poids)  : ", paste(last5, collapse = ", "))
+
+# Poids décroissants pour les 5 dernières saisons (du plus récent au plus ancien)
+poids_values <- c(0.30, 0.20, 0.15, 0.10, 0.05)
+
+###############################################
+# CONFIDENCE RATIO
+###############################################
+# Regex pour les 3 dernières saisons
+regex_recent_min <- paste0("^(", paste(last3, collapse = "|"), ")_minutes$")
+regex_recent_buts <- paste0("^(", paste(last3, collapse = "|"), ")_buts$")
+regex_recent_ass <- paste0("^(", paste(last3, collapse = "|"), ")_assists$")
+
+stats_final <- stats_final %>%
+  mutate(
+    career_ratio = pmin(1, total_minutes / 6000),
+    recent_minutes = rowSums(select(., matches(regex_recent_min)), na.rm = TRUE),
+    recent_goals = rowSums(select(., matches(regex_recent_buts)), na.rm = TRUE),
+    recent_assists = rowSums(select(., matches(regex_recent_ass)), na.rm = TRUE),
+    recent_ratio = pmin(1, recent_minutes / 3000),
+    confidence_ratio = (career_ratio + recent_ratio) / 2
+  )
+
+# Calcul goals/assists per 90
+stats_final <- stats_final %>%
+  mutate(
+    goals_90_career = ifelse(total_minutes > 0, (total_goals / total_minutes) * 90, 0),
+    goals_90_recent = ifelse(recent_minutes > 0, (recent_goals / recent_minutes) * 90, 0),
+    assists_90_career = ifelse(total_minutes > 0, (total_assists / total_minutes) * 90, 0),
+    assists_90_recent = ifelse(recent_minutes > 0, (recent_assists / recent_minutes) * 90, 0),
+    goals_90_career = round(goals_90_career, 5),
+    goals_90_recent = round(goals_90_recent, 5),
+    assists_90_career = round(assists_90_career, 5),
+    assists_90_recent = round(assists_90_recent, 5)
+  )
+
+# Calcul de goals_90_base & assists_90_base
+stats_final <- stats_final %>%
+  mutate(
+    denominator = ifelse(
+      is.na(career_ratio) | is.na(recent_ratio) | (career_ratio + recent_ratio == 0),
+      1, career_ratio + recent_ratio
+    ),
+    career_weight = ifelse(denominator == 0, 0.45, 0.45 + (career_ratio / denominator) * 0.40),
+    recent_weight = ifelse(denominator == 0, 0.15, 0.15 + (recent_ratio / denominator) * 0.40),
+    goals_90_base = case_when(
+      is.na(career_ratio) | is.na(recent_ratio) ~ 0,
+      is.na(goals_90_career) | is.na(goals_90_recent) ~ 0,
+      TRUE ~ (goals_90_career * career_weight) + (goals_90_recent * recent_weight)
+    ),
+    goals_90_base = ifelse(
+      is.na(goals_90_base) | is.nan(goals_90_base) | is.infinite(goals_90_base),
+      0.01, round(goals_90_base, 5)
+    ),
+    assists_90_base = case_when(
+      is.na(career_ratio) | is.na(recent_ratio) ~ 0,
+      is.na(assists_90_career) | is.na(assists_90_recent) ~ 0,
+      TRUE ~ (assists_90_career * career_weight) + (assists_90_recent * recent_weight)
+    ),
+    assists_90_base = ifelse(
+      is.na(assists_90_base) | is.nan(assists_90_base) | is.infinite(assists_90_base),
+      0.01, round(assists_90_base, 5)
+    ),
+    denominator = NULL, career_weight = NULL, recent_weight = NULL
+  )
+
+
+###############################################
+# POIDS ET IMPACTS PAR SAISON (DYNAMIQUE)
+###############################################
+# On prend les 5 dernières saisons existantes avec poids décroissants
+# Si moins de 5 saisons existent, on utilise seulement celles disponibles
+n_last <- length(last5)
+poids_use <- tail(poids_values, n_last)
+
+# Créer les colonnes poids et impact dynamiquement
+for (i in seq_along(last5)) {
+  s <- last5[i]
+  p <- poids_use[i]
+  
+  min_col <- paste0(s, "_minutes")
+  buts_col <- paste0(s, "_buts")
+  ass_col <- paste0(s, "_assists")
+  poids_col <- paste0(s, "_poids")
+  impact_g_col <- paste0(s, "_impact_goals")
+  impact_a_col <- paste0(s, "_impact_assists")
+  
+  # Créer colonne minutes si elle n'existe pas
+  if (!min_col %in% names(stats_final)) stats_final[[min_col]] <- 0
+  if (!buts_col %in% names(stats_final)) stats_final[[buts_col]] <- 0
+  if (!ass_col %in% names(stats_final)) stats_final[[ass_col]] <- 0
+  
+  # Poids
+  stats_final[[poids_col]] <- ifelse(
+    is.na(stats_final[[min_col]]), 0,
+    pmin(1, stats_final[[min_col]] / 1500)
+  ) * p
+  
+  # Impact goals
+  stats_final[[impact_g_col]] <- ifelse(
+    stats_final[[buts_col]] == 0 | is.na(stats_final[[buts_col]]), 0,
+    pmin(1, stats_final[[buts_col]] / stats_final[[min_col]] * 90)
+  )
+  
+  # Impact assists
+  stats_final[[impact_a_col]] <- ifelse(
+    stats_final[[ass_col]] == 0 | is.na(stats_final[[ass_col]]), 0,
+    pmin(1, stats_final[[ass_col]] / stats_final[[min_col]] * 90)
+  )
+}
+
+###############################################
+# GOALS_90_GLOBAL & ASSISTS_90_GLOBAL (DYNAMIQUE)
+###############################################
+# Initialiser avec goals_90_base
+stats_final <- stats_final %>%
+  mutate(
+    goals_90_global = goals_90_base,
+    assists_90_global = assists_90_base
+  )
+
+# Ajouter la contribution de chaque saison
+for (s in last5) {
+  poids_col <- paste0(s, "_poids")
+  impact_g_col <- paste0(s, "_impact_goals")
+  impact_a_col <- paste0(s, "_impact_assists")
+  
+  stats_final <- stats_final %>%
+    mutate(
+      goals_90_global = goals_90_global +
+        .data[[poids_col]] * (.data[[impact_g_col]] - goals_90_base),
+      assists_90_global = assists_90_global +
+        .data[[poids_col]] * (.data[[impact_a_col]] - assists_90_base)
+    )
+}
+
+###############################################
+# GOALS_90_FINAL & ASSISTS_90_FINAL
+###############################################
+stats_final <- stats_final %>%
+  mutate(
+    proba_poste = poste$proba_poste[match(player_pos, poste$short_poste)],
+    proba_poste_ass = poste$proba_poste_ass[match(player_pos, poste$short_poste)],
+    proba_poste = ifelse(is.na(proba_poste), 0, proba_poste),
+    proba_poste_ass = ifelse(is.na(proba_poste_ass), 0, proba_poste_ass),
+    goals_90_final = confidence_ratio * goals_90_global +
+                     (1 - confidence_ratio) * proba_poste,
+    assists_90_final = confidence_ratio * assists_90_global +
+                     (1 - confidence_ratio) * proba_poste_ass,
+    goals_90_final = round(goals_90_final, 5),
+    assists_90_final = round(assists_90_final, 5),
+    proba_poste = NULL,
+    proba_poste_ass = NULL
+  )
+
+stats_final <- stats_final %>%
+  select(player_id, player_name, team_name, player_pos, goals_90_final, goals_90_global, goals_90_base, assists_90_final, assists_90_global, assists_90_base,
+         total_minutes, recent_minutes, total_goals, recent_goals, career_ratio, recent_ratio, confidence_ratio,
+         goals_90_career, goals_90_recent, assists_90_career, assists_90_recent, everything())
+
+stats_final$total_goals <- player_totals_base$total_goals
+stats_final$total_assists <- player_totals_base$total_assists
+stats_final$total_minutes <- player_totals_base$total_minutes
+
+resultat_final <- stats_final %>%
+  select(
+    player_id, player_name, player_pos,
+    goals_90_final, assists_90_final,
+    total_minutes, total_goals, total_assists,
+    confidence_ratio, team_name
+  )
+
+###############################################
+# FORME RÉCENTE
+###############################################
+
+forme_recente <- matches %>%
+  filter(!is.na(played_minutes), played_minutes > 0) %>%
+  group_by(player_id) %>%
+  summarise(
+    forme_minutes = sum(played_minutes, na.rm = TRUE),
+    forme_goals   = sum(goals,          na.rm = TRUE),
+    forme_assists = sum(assists,        na.rm = TRUE),
+    forme_matchs  = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    xG90R_raw = ifelse(forme_minutes >= 1, forme_goals   / forme_minutes * 90, 0),
+    xA90R_raw = ifelse(forme_minutes >= 1, forme_assists / forme_minutes * 90, 0)
+  )
+
+resultat_final <- resultat_final %>%
+  left_join(forme_recente %>%
+              select(player_id, xG90R_raw, xA90R_raw, forme_matchs, forme_minutes) %>%
+              mutate(conf_forme = pmin(forme_minutes / 800, 1)),
+            by = "player_id") %>%
+  mutate(
+    conf_forme = replace_na(conf_forme, 0),
+    xG90R = ifelse(!is.na(xG90R_raw),
+                   xG90R_raw * conf_forme + goals_90_final   * (1 - conf_forme),
+                   goals_90_final),
+    xA90R = ifelse(!is.na(xA90R_raw),
+                   xA90R_raw * conf_forme + assists_90_final * (1 - conf_forme),
+                   assists_90_final),
+    xG_final = (1 - conf_forme / 3) * goals_90_final   + (conf_forme / 3) * xG90R,
+    xA_final = (1 - conf_forme / 3) * assists_90_final + (conf_forme / 3) * xA90R
+  ) %>%
+  select(player_id, player_name, player_pos,
+         goals_90_final = xG_final, assists_90_final = xA_final,
+         total_minutes, total_goals, total_assists,
+         confidence_ratio, team_name)
+
+write_csv(resultat_final, "resultats_joueurs_final.csv")

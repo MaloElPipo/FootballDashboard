@@ -21,6 +21,7 @@ from bsd_api import (
 from bsd_cache import ensure_cache_ready, cache_summary
 import asyncio
 from betclic_scraper import scrape_betclic, quick_outright, COMPETITIONS
+from live.roadmap_page import render_roadmap_page
 
 ensure_cache_ready()
 
@@ -669,6 +670,20 @@ comp_by_id = {c["id"]: c for c in active_competitions}
 
 st.sidebar.markdown("---")
 st.sidebar.caption("Data refreshes every 5 minutes.")
+
+# Section Suivi projet — à l'écart des autres pages
+st.sidebar.markdown("---")
+st.sidebar.markdown("**🛠️ Suivi projet**")
+if "show_roadmap" not in st.session_state:
+    st.session_state["show_roadmap"] = False
+_roadmap_label = "← Retour dashboard" if st.session_state["show_roadmap"] else "🗺️ Ouvrir la Roadmap"
+if st.sidebar.button(_roadmap_label, use_container_width=True):
+    st.session_state["show_roadmap"] = not st.session_state["show_roadmap"]
+    st.rerun()
+
+if st.session_state.get("show_roadmap"):
+    render_roadmap_page()
+    st.stop()
 
 if page == "🗓️ Match Results":
     st.header("🗓️ Résultats de Matchs")

@@ -1,0 +1,241 @@
+# 📋 Note technique — Modèle Tirs & Tirs Cadrés (Over/Under)
+
+**Destinataire** : Agent Python
+**Objectif** : Implémenter un modèle de calcul des cotes Over/Under pour les marchés **Tirs** et **Tirs Cadrés** (par équipe et total match), applicable à **n'importe quel match de football**, à partir des **xG attendus** des deux équipes.
+
+---
+
+## 1. Vue d'ensemble du pipeline
+
+```
+Inputs match (xG_home, xG_away)
+        │
+        ▼
+[Étape 1] Calculer ratios xG/Sh et xG/SoT spécifiques à chaque équipe
+        │
+        ▼
+[Étape 2] Convertir xG → Tirs attendus (μ_Sh) et SoT attendus (μ_SoT)
+        │
+        ▼
+[Étape 3] Calibrer le paramètre de dispersion k de la Binomiale Négative
+        │
+        ▼
+[Étape 4] Calculer cotes Over/Under par équipe (NB)
+        │
+        ▼
+[Étape 5] Calculer cotes Over/Under total match (somme ajustée corrélation)
+```
+
+---
+
+## 2. Notations
+
+| Symbole | Signification |
+|---|---|
+| `xG` | Expected goals attendus pour l'équipe sur ce match (input) |
+| `xG/Sh` | xG moyen généré par tir (qualité offensive) |
+| `xG/SoT` | xG moyen par tir cadré |
+| `μ_Sh` | Tirs attendus = `xG / (xG/Sh)` |
+| `μ_SoT` | Tirs cadrés attendus = `xG / (xG/SoT)` |
+| `k` | Paramètre de dispersion de la Binomiale Négative (NB) |
+| `ρ` | Corrélation entre tirs des deux équipes (≈ −0.20) |
+
+---
+
+## 3. Étape 1 — Ratios xG/Sh et xG/SoT par équipe
+
+### Méthode recommandée (spécifique équipe)
+
+Sur les **15-20 derniers matchs** de chaque équipe :
+
+```python
+xG_per_shot_team = sum(xG_match) / sum(Shots_match)
+xG_per_SoT_team  = sum(xG_match) / sum(SoT_match)
+```
+
+### Méthode pondérée attaque/défense (encore mieux)
+
+```python
+xG_per_Sh_off_A = sum(xG_A) / sum(Sh_A)
+xG_per_Sh_def_B = sum(xG_conceded_B) / sum(Sh_conceded_B)
+xG_per_Sh_final = sqrt(xG_per_Sh_off_A * xG_per_Sh_def_B)
+```
+
+### Valeurs par défaut (fallback)
+
+| Profil équipe | xG/Sh | xG/SoT |
+|---|---|---|
+| Top club | 0.12 | 0.33 |
+| Club moyen | 0.11 | 0.31 |
+| Club faible | 0.09 | 0.28 |
+| **Moyenne ligue** | **0.105** | **0.31** |
+
+---
+
+## 4. Étape 2 — Conversion xG → Tirs attendus
+
+```python
+mu_Sh  = xG_team / xG_per_Sh_team
+mu_SoT = xG_team / xG_per_SoT_team
+```
+
+---
+
+## 5. Étape 3 — Calibration du paramètre k
+
+### Méthode des moments
+
+```python
+import numpy as np
+
+shots_history = [...]
+mu  = np.mean(shots_history)
+var = np.var(shots_history, ddof=1)
+
+if var > mu:
+    k = mu**2 / (var - mu)
+else:
+    k = 1000
+```
+
+### MLE (plus robuste)
+
+```python
+from scipy.stats import nbinom
+from scipy.optimize import minimize
+
+def neg_log_likelihood(params, data):
+    mu, k = params
+    if mu <= 0 or k <= 0:
+        return np.inf
+    p = k / (k + mu)
+    return -np.sum(nbinom.logpmf(data, k, p))
+
+result = minimize(neg_log_likelihood, x0=[np.mean(data), 20],
+                  args=(shots_history,), method='Nelder-Mead')
+mu_fit, k_fit = result.x
+```
+
+### Valeurs par défaut
+
+| Marché | k | Var/Moy |
+|---|---|---|
+| Tirs équipe | 30 | 1.33 |
+| SoT équipe | 40 | 1.20 |
+| Tirs total match | 45 | 1.22 |
+| SoT total match | 60 | 1.10 |
+
+---
+
+## 6. Étape 4 — Cotes Over/Under par équipe
+
+```python
+from scipy.stats import nbinom
+import numpy as np
+
+def nb_over_under(mu, k, line):
+    p = k / (k + mu)
+    threshold = int(np.ceil(line))
+    p_under = nbinom.cdf(threshold - 1, k, p)
+    p_over  = 1 - p_under
+    odds_over  = 1 / p_over  if p_over  > 0 else float('inf')
+    odds_under = 1 / p_under if p_under > 0 else float('inf')
+    return p_over, p_under, odds_over, odds_under
+
+def generate_lines(mu, k):
+    lines = np.arange(np.floor(mu) - 8, np.ceil(mu) + 8) + 0.5
+    return {line: nb_over_under(mu, k, line) for line in lines}
+```
+
+---
+
+## 7. Étape 5 — Total match
+
+```python
+def total_match_odds(mu_H, mu_A, k_H, k_A, rho=-0.20):
+    mu_match = (mu_H + mu_A) * 0.95
+    var_H = mu_H + mu_H**2 / k_H
+    var_A = mu_A + mu_A**2 / k_A
+    var_match = var_H + var_A + 2*rho*np.sqrt(var_H*var_A)
+    if var_match > mu_match:
+        k_match = mu_match**2 / (var_match - mu_match)
+    else:
+        k_match = 1000
+    return generate_lines(mu_match, k_match)
+```
+
+Pour SoT total match : utiliser `rho=-0.15`.
+
+---
+
+## 8. Fonction principale
+
+```python
+def compute_shots_odds(match):
+    xG_per_Sh_H  = compute_ratio(match['home_history'], match['away_def_history'], 'Sh')
+    xG_per_SoT_H = compute_ratio(match['home_history'], match['away_def_history'], 'SoT')
+    xG_per_Sh_A  = compute_ratio(match['away_history'], match['home_def_history'], 'Sh')
+    xG_per_SoT_A = compute_ratio(match['away_history'], match['home_def_history'], 'SoT')
+
+    mu_Sh_H  = match['xG_home'] / xG_per_Sh_H
+    mu_SoT_H = match['xG_home'] / xG_per_SoT_H
+    mu_Sh_A  = match['xG_away'] / xG_per_Sh_A
+    mu_SoT_A = match['xG_away'] / xG_per_SoT_A
+
+    k_Sh_H  = calibrate_k(match['home_history']['Sh'])  or 30
+    k_SoT_H = calibrate_k(match['home_history']['SoT']) or 40
+    k_Sh_A  = calibrate_k(match['away_history']['Sh'])  or 30
+    k_SoT_A = calibrate_k(match['away_history']['SoT']) or 40
+
+    odds = {
+        'home_Sh':   generate_lines(mu_Sh_H,  k_Sh_H),
+        'home_SoT':  generate_lines(mu_SoT_H, k_SoT_H),
+        'away_Sh':   generate_lines(mu_Sh_A,  k_Sh_A),
+        'away_SoT':  generate_lines(mu_SoT_A, k_SoT_A),
+        'match_Sh':  total_match_odds(mu_Sh_H, mu_Sh_A, k_Sh_H, k_Sh_A, rho=-0.20),
+        'match_SoT': total_match_odds(mu_SoT_H, mu_SoT_A, k_SoT_H, k_SoT_A, rho=-0.15),
+    }
+    return odds
+```
+
+---
+
+## 9. Garde-fous
+
+```python
+assert 5 <= mu_Sh <= 30
+assert 1 <= mu_SoT <= 12
+assert mu_SoT < mu_Sh
+assert mu_SoT / mu_Sh < 0.55
+```
+
+---
+
+## 10. Limites
+
+1. Sh et SoT corrélés ~0.85 (ne pas les traiter comme indépendants).
+2. Pas de contexte (carton rouge, enjeu, etc.).
+3. Qualité dépend des xG en input.
+4. Cotes fair (sans marge bookmaker).
+
+---
+
+## 11. Marges bookmaker
+
+```python
+def apply_margin(p_over, p_under, margin=0.05):
+    odds_over  = 1 / (p_over  * (1 + margin))
+    odds_under = 1 / (p_under * (1 + margin))
+    return odds_over, odds_under
+```
+
+---
+
+## 12. Dépendances
+
+```python
+import numpy as np
+import pandas as pd
+from scipy.stats import nbinom
+from scipy.optimize import minimize
+```

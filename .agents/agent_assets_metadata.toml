@@ -54,3 +54,21 @@ id = "joFdkpBh0f1zG3vRAtifn"
 uri = "file://artifacts/football-dashboard/live/data/leagues_overview.csv"
 type = "table"
 title = "leagues_overview.csv — récap valeurs marchandes + buts/match (74 ligues)"
+
+[[outputs]]
+id = "71XclNQlaXxynslI21c-m"
+uri = "file://.local/team_shots_poc/output/giga_test_report.pdf"
+type = "pdf"
+title = "Giga-Test Tirs/SoT — Rapport PDF (à ouvrir/imprimer)"
+
+[[outputs]]
+id = "NbQ2XR3OzSwskOuN7j_BL"
+uri = "file://.local/team_shots_poc/output/giga_test_report.md"
+type = "text"
+title = "Giga-Test Tirs/SoT — Markdown brut (archive Git)"
+
+[[outputs]]
+id = "sTRwyKsNdlgWbjLXXiK5o"
+uri = "file://.local/team_shots_poc/output/giga_test_report_bundle.zip"
+type = "unspecified"
+title = "Bundle complet (HTML interactif + PDF + MD)"

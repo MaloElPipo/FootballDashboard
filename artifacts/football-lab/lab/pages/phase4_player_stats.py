@@ -71,14 +71,23 @@ def section_compare_forward_log():
     for i, p in enumerate(players):
         progress.progress((i + 1) / len(players))
         sofa_id = p["player_id"]
-        mapping = PIM.resolve_player(int(sofa_id), str(p.get("name") or ""), team_id=p.get("team_id"))
-        bsd_pid = mapping.get("bsd_player_id")
+        # Task #10 : si la prod a deja resolu bsd_player_id au logging, on le
+        # lit directement depuis le forward log. Sinon fallback sur le cache
+        # labo `player_id_mapping` (resolution via `searchPlayers`).
+        bsd_from_log = p.get("bsd_player_id")
+        if bsd_from_log is not None:
+            bsd_pid = int(bsd_from_log)
+            map_status = "from_log"
+        else:
+            mapping = PIM.resolve_player(int(sofa_id), str(p.get("name") or ""), team_id=p.get("team_id"))
+            bsd_pid = mapping.get("bsd_player_id")
+            map_status = mapping.get("status")
         base = {
             "sofa_id": sofa_id,
             "bsd_id": bsd_pid,
             "name": p.get("name"),
             "n_picks": p["n_picks"],
-            "map_status": mapping.get("status"),
+            "map_status": map_status,
         }
         if not bsd_pid:
             not_mapped += 1

@@ -214,7 +214,11 @@ def load_sofascore_snapshot(prod_dir: Path, bsd_player_id: int) -> dict | None:
 
 
 def load_forward_log_players(prod_dir: Path, limit: int = 30) -> list[dict]:
-    """Lit forward_log.jsonl prod, retourne les N joueurs les plus suivis."""
+    """Lit forward_log.jsonl prod, retourne les N joueurs les plus suivis.
+
+    Inclut `bsd_player_id` si la prod l'a deja resolu au moment du logging
+    (Task #10). Sinon `None`, l'appelant doit tomber sur le mapping cache.
+    """
     fl = prod_dir / "live" / "data" / "forward_log.jsonl"
     if not fl.exists():
         return []
@@ -228,7 +232,16 @@ def load_forward_log_players(prod_dir: Path, limit: int = 30) -> list[dict]:
             pid = rec.get("player_id")
             if not pid:
                 continue
-            d = counts.setdefault(int(pid), {"player_id": int(pid), "name": rec.get("player_name"), "n_picks": 0})
+            d = counts.setdefault(int(pid), {
+                "player_id": int(pid),
+                "name": rec.get("player_name"),
+                "team_id": rec.get("team_id"),
+                "bsd_player_id": rec.get("bsd_player_id"),
+                "n_picks": 0,
+            })
+            # Si une ligne plus recente a resolu le bsd_player_id, on l'adopte.
+            if d.get("bsd_player_id") is None and rec.get("bsd_player_id") is not None:
+                d["bsd_player_id"] = rec.get("bsd_player_id")
             d["n_picks"] += 1
     top = sorted(counts.values(), key=lambda x: -x["n_picks"])
     return top[:limit]

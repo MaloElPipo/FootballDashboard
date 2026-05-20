@@ -34,6 +34,7 @@ from preview_player_odds._3_model_proxy import (  # noqa: E402  (import via prox
     aggregate_player_pool,
     distribute_xg_to_players,
 )
+from live.bsd_player_id_resolver import resolve_bsd_player_id  # noqa: E402
 
 # === Manual positions (overrides Excel "Buteurs Maison") ===================
 # Mapping league_slug → code pays utilisé dans manual_positions.json (Top 5).
@@ -920,6 +921,7 @@ def predict_one_event(ev: dict, slug: str, pool: dict,
             "match": f"{ev.get('home_team')} - {ev.get('away_team')}",
             "kickoff": ev.get("event_date"),
             "player_id": pid,
+            "bsd_player_id": resolve_bsd_player_id(pid, pred.get("name"), pred.get("team_id")),
             "player_name": pred["name"],
             "team_id": pred["team_id"],
             "team_side": pred["team_side"],

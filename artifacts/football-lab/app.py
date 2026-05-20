@@ -16,6 +16,7 @@ import streamlit as st
 
 from lab import snapshots
 from lab.calibration import bsd_client
+from lab.pages import phase1_btts
 
 st.set_page_config(
     page_title="Football Lab",
@@ -151,11 +152,7 @@ def render_admin():
 if page == "home":
     render_home()
 elif page == "phase1":
-    render_placeholder(
-        "Phase 1 — Triple inversion BTTS",
-        "Dixon-Coles 3 parametres sur 1X2+O/U+BTTS via BSD compareOdds. "
-        "Backtest 100 matchs PL 2024-2025. A developper.",
-    )
+    phase1_btts.render()
 elif page == "phase2":
     render_placeholder(
         "Phase 2 — Recalibrage Elo via xG",

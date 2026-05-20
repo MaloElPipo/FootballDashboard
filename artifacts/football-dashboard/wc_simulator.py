@@ -468,16 +468,15 @@ def simulate_tournament(elo_map, params=None):
                 # Issue stochastique du match (W/D/L → pts) basée sur Elo
                 gh, ga = simulate_match_goals(elo_h, elo_a, h_code, a_code)
 
-                # Buts pour départage : score le plus probable issu des cotes
-                # bookmakers (constant sur toutes les sims du même match) si
-                # disponible, sinon fallback λ Elo. Cette séparation rend le
-                # signal de tie-break plus stable et reflète l'opinion marché
-                # pré-tournoi, tandis que les pts gardent la variance Poisson.
+                # Buts pour départage : on utilise les lambdas continues (xG
+                # attendu) plutôt que le score modal entier. C'est aussi
+                # stable (constant sur toutes les sims du même match) mais
+                # bien plus précis pour le goal average affiché. Source :
+                # cotes bookmakers si disponibles, sinon fallback λ Elo.
                 if (h_code, a_code) in expected_scores:
                     xh, xa = expected_scores[(h_code, a_code)]
                 else:
-                    lh, la = derive_lambdas_from_elo(elo_h, elo_a)
-                    xh, xa = most_likely_score(lh, la)
+                    xh, xa = derive_lambdas_from_elo(elo_h, elo_a)
 
                 standings[h_code]["gf"] += xh
                 standings[h_code]["ga"] += xa

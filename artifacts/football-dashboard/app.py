@@ -2393,15 +2393,15 @@ elif page == "🔮 Prédictions":
         return get_group_predictions()
 
     def _build_expected_scores():
-        """Pré-calcule le score le plus probable de chaque match de poule à
-        partir des cotes Pinnacle (TheOddsAPI). Le simulateur utilisera ces
-        scores comme buts marqués/encaissés pour le départage FIFA art. 13
-        step 2 (constants à travers les sims, plus stables que les buts
-        Poisson tirés au hasard). Les matchs absents de Pinnacle restent
-        gérés via fallback λ Elo dans le simulateur lui-même.
+        """Pré-calcule les lambdas (xG attendu) home/away de chaque match de
+        poule à partir des cotes Pinnacle (TheOddsAPI). Le simulateur utilise
+        ces lambdas comme buts marqués/encaissés pour le départage FIFA
+        art. 13 step 2 ET pour le goal average affiché : constants à travers
+        les sims (donc stables pour le tiebreak) et continus (donc précis
+        pour BP/BC). Les matchs absents de Pinnacle utilisent un fallback
+        λ Elo dans le simulateur lui-même.
         """
         from g2_engine import lambdas_buchdahl as _esl
-        from wc_simulator import most_likely_score as _esm
         pin_resp = _cached_pinnacle_data()
         pin_data = pin_resp.get("_data", {}) if isinstance(pin_resp, dict) else {}
         scores = {}
@@ -2414,8 +2414,7 @@ elif page == "🔮 Prédictions":
                     ou25_under=pd_pin.get("ou25_under"),
                     ou25_over=pd_pin.get("ou25_over"),
                 )
-                xh, xa = _esm(lt, lo)
-                scores[(h_code, a_code)] = (xh, xa)
+                scores[(h_code, a_code)] = (lt, lo)
             except Exception:
                 continue
         return scores
@@ -2544,9 +2543,9 @@ elif page == "🔮 Prédictions":
                     "Poule": r["group"],
                     "ELO": r["elo"],
                     "Pts moy.": f"{r['avg_pts']:.1f}",
-                    "BP": f"{r.get('avg_gf', 0):.1f}",
-                    "BC": f"{r.get('avg_ga', 0):.1f}",
-                    "+/-": f"{r.get('avg_gd', 0):+.1f}",
+                    "BP": f"{r.get('avg_gf', 0):.2f}",
+                    "BC": f"{r.get('avg_ga', 0):.2f}",
+                    "+/-": f"{r.get('avg_gd', 0):+.2f}",
                     "1/32": _odds_cell(r["p_r32"]),
                     "1/16": _odds_cell(r["p_r16"]),
                     "1/4": _odds_cell(r["p_qf"]),
@@ -2595,9 +2594,9 @@ elif page == "🔮 Prédictions":
                         "Nation": f"{flag_img(r['code'])} {r['fr']}",
                         "ELO": r["elo"],
                         "Pts moy.": f"{r['avg_pts']:.1f}",
-                        "BP": f"{r.get('avg_gf', 0):.1f}",
-                        "BC": f"{r.get('avg_ga', 0):.1f}",
-                        "+/-": f"{r.get('avg_gd', 0):+.1f}",
+                        "BP": f"{r.get('avg_gf', 0):.2f}",
+                        "BC": f"{r.get('avg_ga', 0):.2f}",
+                        "+/-": f"{r.get('avg_gd', 0):+.2f}",
                         "1er": f"{r['p_1st']:.0f}%",
                         "2e": f"{r['p_2nd']:.0f}%",
                         "3e": f"{r['p_3rd']:.0f}%",

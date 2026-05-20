@@ -513,6 +513,8 @@ def simulate_tournament(elo_map, params=None):
         for pos, (code, s) in enumerate(ranked):
             tracker[code]["group_pos"] = pos + 1
             tracker[code]["group_pts"] = s["pts"]
+            tracker[code]["group_gf"] = s["gf"]
+            tracker[code]["group_ga"] = s["ga"]
 
     sim_seed = (params or {}).get("sim_seed") if params else None
     best_thirds = _pick_best_thirds(group_results, elo_map=elo_map, n=8, sim_seed=sim_seed)
@@ -650,6 +652,8 @@ def run_simulation(n_sims=10000, params=None):
 
     agg = defaultdict(lambda: {
         "group_pts_total": 0,
+        "group_gf_total": 0.0,
+        "group_ga_total": 0.0,
         "group_pos_counts": defaultdict(int),
         "r32": 0, "r16": 0, "qf": 0, "sf": 0, "final": 0, "winner": 0,
         "runner_up": 0, "bronze": 0,
@@ -663,6 +667,8 @@ def run_simulation(n_sims=10000, params=None):
         for code, data in result.items():
             a = agg[code]
             a["group_pts_total"] += data["group_pts"]
+            a["group_gf_total"] += data.get("group_gf", 0)
+            a["group_ga_total"] += data.get("group_ga", 0)
             a["group_pos_counts"][data["group_pos"]] += 1
             for stage in ["r32", "r16", "qf", "sf", "final", "winner", "runner_up", "bronze"]:
                 if data.get(stage):
@@ -710,6 +716,9 @@ def run_simulation(n_sims=10000, params=None):
             "group": grp,
             "elo": elo_map.get(code, 1500),
             "avg_pts": a["group_pts_total"] / n_sims,
+            "avg_gf": a["group_gf_total"] / n_sims,
+            "avg_ga": a["group_ga_total"] / n_sims,
+            "avg_gd": (a["group_gf_total"] - a["group_ga_total"]) / n_sims,
             "p_1st": a["group_pos_counts"].get(1, 0) / n_sims * 100,
             "p_2nd": a["group_pos_counts"].get(2, 0) / n_sims * 100,
             "p_3rd": a["group_pos_counts"].get(3, 0) / n_sims * 100,

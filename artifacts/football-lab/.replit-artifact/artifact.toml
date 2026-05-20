@@ -1,0 +1,20 @@
+kind = "web"
+previewPath = "/football-lab/"
+title = "Football Lab"
+version = "1.0.0"
+id = "artifacts/football-lab"
+router = "path"
+
+[[services]]
+name = "web"
+paths = ["/football-lab/"]
+localPort = 8000
+
+[services.development]
+run = "cd /home/runner/workspace/artifacts/football-lab && streamlit run app.py --server.port 8000 --server.baseUrlPath /football-lab"
+
+[services.production]
+run = "cd /home/runner/workspace/artifacts/football-lab && streamlit run app.py --server.port 8000 --server.baseUrlPath /football-lab --server.headless true --server.address 0.0.0.0 --server.enableCORS false --server.enableXsrfProtection false"
+
+[services.env]
+PORT = "8000"

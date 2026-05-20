@@ -136,6 +136,83 @@ def coverage_extension(player_ids: list[int], season_id: int) -> dict:
 # ─────────────────────────────────────────────────────────────────────────────
 
 
+_SOFA_INDEX_CACHE: dict | None = None
+
+
+def _load_statshub_index(prod_dir: Path) -> dict:
+    global _SOFA_INDEX_CACHE
+    if _SOFA_INDEX_CACHE is not None:
+        return _SOFA_INDEX_CACHE
+    p = prod_dir / "live" / "data" / "statshub_players_index.json"
+    if not p.exists():
+        _SOFA_INDEX_CACHE = {}
+        return _SOFA_INDEX_CACHE
+    with p.open() as f:
+        _SOFA_INDEX_CACHE = json.load(f)
+    return _SOFA_INDEX_CACHE
+
+
+def load_sofascore_snapshot(prod_dir: Path, bsd_player_id: int) -> dict | None:
+    """Charge le snapshot Sofascore (statshub_performance) pour un BSD player_id.
+
+    Retourne un dict agrege au meme schema que `fetch_player_season_stats`
+    (matches, goals, assists, xg, xa, minutes, shots, shots_on_target, yellow/red),
+    ou None si pas de mapping sh_external_id ou snapshot absent.
+    """
+    idx = _load_statshub_index(prod_dir)
+    entry = idx.get(str(int(bsd_player_id))) or idx.get(int(bsd_player_id))
+    if not entry:
+        return None
+    sh_ext = entry.get("sh_external_id")
+    if not sh_ext:
+        return None
+    snap = prod_dir / "live" / "data" / "statshub_performance" / f"{int(sh_ext)}.json"
+    if not snap.exists():
+        return None
+    with snap.open() as f:
+        obj = json.load(f)
+    rows = obj.get("data") or []
+    n = 0
+    g = a = sh = sot = mins = yc = rc = 0
+    xg = xa = 0.0
+    for r in rows:
+        pse = r.get("player_statistics_event") or {}
+        if not pse:
+            continue
+        n += 1
+        g += int(pse.get("goals") or 0)
+        a += int(pse.get("goalAssist") or 0)
+        sh += int(pse.get("shots") or 0)
+        sot += int(pse.get("onTargetScoringAttempt") or 0)
+        mins += int(pse.get("minutesPlayed") or 0)
+        yc += 1 if pse.get("yellowCard") else 0
+        rc += 1 if pse.get("redCard") else 0
+        try:
+            xg += float(pse.get("expectedGoals") or 0.0)
+        except (TypeError, ValueError):
+            pass
+        try:
+            xa += float(pse.get("expectedAssists") or 0.0)
+        except (TypeError, ValueError):
+            pass
+    if n == 0:
+        return None
+    return {
+        "player_id": int(bsd_player_id),
+        "sh_external_id": int(sh_ext),
+        "matches": n,
+        "goals": g,
+        "assists": a,
+        "shots": sh,
+        "shots_on_target": sot,
+        "xg": round(xg, 3),
+        "xa": round(xa, 3),
+        "minutes": mins,
+        "yellow_cards": yc,
+        "red_cards": rc,
+    }
+
+
 def load_forward_log_players(prod_dir: Path, limit: int = 30) -> list[dict]:
     """Lit forward_log.jsonl prod, retourne les N joueurs les plus suivis."""
     fl = prod_dir / "live" / "data" / "forward_log.jsonl"

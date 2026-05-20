@@ -33,13 +33,14 @@ def section_lookup():
 def section_compare_forward_log():
     st.subheader("Comparaison BSD vs Sofascore sur forward log")
     st.caption(
-        "Charge les 30 joueurs les plus suivis dans le forward log prod, fetch BSD, "
-        "compare aux stats Sofascore snapshot. Flag DISAGREE si ecart > tolerance."
+        "Charge les top N joueurs du forward log prod, fetch BSD, et compare au "
+        "snapshot Sofascore (statshub_performance prod). Diff par champ "
+        "(goals/assists/xG/xA/minutes) avec flag OK / DISAGREE / MISSING."
     )
 
     c1, c2 = st.columns([1, 3])
     n = c1.slider("N joueurs", 5, 50, 30, step=5)
-    load = c2.button("Charger forward log + fetch BSD", type="primary")
+    load = c2.button("Charger forward log + fetch BSD + Sofa snapshot", type="primary")
     if not load:
         return
 
@@ -50,11 +51,23 @@ def section_compare_forward_log():
 
     st.caption(f"{len(players)} joueurs identifies")
     sid = st.number_input("Season ID pour fetch BSD", 1, 99999, value=337, key="cmp_sid")
+    tol_goals = st.number_input("Tol goals", 0, 10, 1, key="cmp_tg")
+    tol_assists = st.number_input("Tol assists", 0, 10, 1, key="cmp_ta")
+    tol_xg = st.number_input("Tol xG", 0.0, 5.0, 0.5, step=0.1, key="cmp_txg")
+    tol_xa = st.number_input("Tol xA", 0.0, 5.0, 0.3, step=0.1, key="cmp_txa")
+    tol_min = st.number_input("Tol minutes", 0, 900, 90, step=10, key="cmp_tm")
+    tolerance = {
+        "goals": tol_goals, "assists": tol_assists,
+        "xg": tol_xg, "xa": tol_xa, "minutes": tol_min,
+    }
 
     rows = []
     progress = st.progress(0.0)
-    missing = 0
+    missing_bsd = 0
     not_mapped = 0
+    no_sofa = 0
+    n_compared = 0
+    n_concordant = 0
     for i, p in enumerate(players):
         progress.progress((i + 1) / len(players))
         sofa_id = p["player_id"]
@@ -69,29 +82,77 @@ def section_compare_forward_log():
         }
         if not bsd_pid:
             not_mapped += 1
-            rows.append({**base, "bsd_matches": None, "bsd_goals": None, "bsd_xg": None, "flag": "NO_BSD_ID"})
+            rows.append({**base, "flag": "NO_BSD_ID"})
             continue
         bsd = PS.fetch_player_season_stats(int(bsd_pid), int(sid))
         if not bsd:
-            missing += 1
-            rows.append({**base, "bsd_matches": None, "bsd_goals": None, "bsd_xg": None, "flag": "NO_BSD_STATS"})
+            missing_bsd += 1
+            rows.append({**base, "flag": "NO_BSD_STATS"})
             continue
+        sofa = PS.load_sofascore_snapshot(PROD_DIR, int(bsd_pid))
+        if not sofa:
+            no_sofa += 1
+            rows.append({
+                **base,
+                "bsd_matches": bsd["matches"], "bsd_goals": bsd["goals"],
+                "bsd_assists": bsd["assists"], "bsd_xg": bsd["xg"],
+                "bsd_xa": bsd["xa"], "bsd_minutes": bsd["minutes"],
+                "flag": "NO_SOFA_SNAP",
+            })
+            continue
+
+        diff = PS.compare_with_sofascore(bsd, sofa, tolerance=tolerance)
+        n_compared += 1
+        flags = [d["flag"] for d in diff.values()]
+        ok = all(f == "OK" for f in flags)
+        if ok:
+            n_concordant += 1
         rows.append({
             **base,
-            "bsd_matches": bsd["matches"],
-            "bsd_goals": bsd["goals"],
-            "bsd_assists": bsd["assists"],
-            "bsd_xg": bsd["xg"],
-            "bsd_xa": bsd["xa"],
-            "bsd_minutes": bsd["minutes"],
-            "flag": "OK",
+            "bsd_matches": bsd["matches"], "sofa_matches": sofa["matches"],
+            "bsd_goals": bsd["goals"], "sofa_goals": sofa["goals"],
+            "d_goals": diff["goals"]["delta"], "f_goals": diff["goals"]["flag"],
+            "bsd_assists": bsd["assists"], "sofa_assists": sofa["assists"],
+            "d_assists": diff["assists"]["delta"], "f_assists": diff["assists"]["flag"],
+            "bsd_xg": bsd["xg"], "sofa_xg": sofa["xg"],
+            "d_xg": diff["xg"]["delta"], "f_xg": diff["xg"]["flag"],
+            "bsd_xa": bsd["xa"], "sofa_xa": sofa["xa"],
+            "d_xa": diff["xa"]["delta"], "f_xa": diff["xa"]["flag"],
+            "bsd_minutes": bsd["minutes"], "sofa_minutes": sofa["minutes"],
+            "d_minutes": diff["minutes"]["delta"], "f_minutes": diff["minutes"]["flag"],
+            "flag": "OK" if ok else "DISAGREE",
         })
     progress.empty()
     df = pd.DataFrame(rows)
     st.dataframe(df, hide_index=True, width="stretch")
-    c1, c2 = st.columns(2)
-    c1.metric("Mapping Sofa->BSD", f"{len(df)-not_mapped}/{len(df)}")
-    c2.metric("Stats BSD recuperees", f"{len(df)-not_mapped-missing}/{len(df)-not_mapped}" if (len(df)-not_mapped) > 0 else "0/0")
+
+    total = len(df)
+    mapped = total - not_mapped
+    with_bsd = mapped - missing_bsd
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Mapping Sofa->BSD", f"{mapped}/{total}")
+    c2.metric("Stats BSD recup.", f"{with_bsd}/{mapped}" if mapped > 0 else "0/0")
+    c3.metric("Snapshot Sofa dispo", f"{n_compared}/{with_bsd}" if with_bsd > 0 else "0/0")
+    pct = round(100 * n_concordant / n_compared, 1) if n_compared > 0 else 0.0
+    c4.metric("% concordants", f"{pct} %", help="Tous les champs (g/a/xG/xA/min) dans la tolerance.")
+
+    threshold = 80.0
+    if n_compared == 0:
+        st.warning(
+            "Aucune comparaison possible : pas de snapshot Sofascore "
+            "(statshub_performance) pour les joueurs mappes. NO-GO migration."
+        )
+    elif pct >= threshold:
+        st.success(f"GO migration : {pct}% des joueurs comparables sont concordants (>= {threshold}%).")
+    else:
+        st.error(f"NO-GO migration : {pct}% concordants (< {threshold}%). Investiguer les DISAGREE.")
+
+    if n_compared > 0:
+        st.caption(
+            "Comparaison agregee sur l'ensemble des matchs presents dans le snapshot "
+            "Sofascore (pas filtre par season_id). Les ecarts xG/xA peuvent refleter "
+            "un modele xG different entre BSD et Sofascore."
+        )
 
 
 def section_coverage_extension():

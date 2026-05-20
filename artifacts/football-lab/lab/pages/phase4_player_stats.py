@@ -7,6 +7,7 @@ import pandas as pd
 import streamlit as st
 
 from lab.calibration import player_stats as PS
+from lab.calibration import player_id_mapping as PIM
 
 
 PROD_DIR = Path("/home/runner/workspace/artifacts/football-dashboard")
@@ -53,21 +54,30 @@ def section_compare_forward_log():
     rows = []
     progress = st.progress(0.0)
     missing = 0
+    not_mapped = 0
     for i, p in enumerate(players):
         progress.progress((i + 1) / len(players))
-        pid = p["player_id"]
-        bsd = PS.fetch_player_season_stats(pid, int(sid))
+        sofa_id = p["player_id"]
+        mapping = PIM.resolve_player(int(sofa_id), str(p.get("name") or ""), team_id=p.get("team_id"))
+        bsd_pid = mapping.get("bsd_player_id")
+        base = {
+            "sofa_id": sofa_id,
+            "bsd_id": bsd_pid,
+            "name": p.get("name"),
+            "n_picks": p["n_picks"],
+            "map_status": mapping.get("status"),
+        }
+        if not bsd_pid:
+            not_mapped += 1
+            rows.append({**base, "bsd_matches": None, "bsd_goals": None, "bsd_xg": None, "flag": "NO_BSD_ID"})
+            continue
+        bsd = PS.fetch_player_season_stats(int(bsd_pid), int(sid))
         if not bsd:
             missing += 1
-            rows.append({
-                "player_id": pid, "name": p.get("name"),
-                "n_picks": p["n_picks"],
-                "bsd_matches": None, "bsd_goals": None, "bsd_xg": None, "flag": "NO_BSD"
-            })
+            rows.append({**base, "bsd_matches": None, "bsd_goals": None, "bsd_xg": None, "flag": "NO_BSD_STATS"})
             continue
         rows.append({
-            "player_id": pid, "name": p.get("name"),
-            "n_picks": p["n_picks"],
+            **base,
             "bsd_matches": bsd["matches"],
             "bsd_goals": bsd["goals"],
             "bsd_assists": bsd["assists"],
@@ -79,7 +89,9 @@ def section_compare_forward_log():
     progress.empty()
     df = pd.DataFrame(rows)
     st.dataframe(df, hide_index=True, width="stretch")
-    st.metric("Joueurs couverts par BSD", f"{len(df)-missing}/{len(df)}")
+    c1, c2 = st.columns(2)
+    c1.metric("Mapping Sofa->BSD", f"{len(df)-not_mapped}/{len(df)}")
+    c2.metric("Stats BSD recuperees", f"{len(df)-not_mapped-missing}/{len(df)-not_mapped}" if (len(df)-not_mapped) > 0 else "0/0")
 
 
 def section_coverage_extension():
@@ -117,6 +129,62 @@ def section_coverage_extension():
     st.dataframe(pd.DataFrame(cov["detail"]), hide_index=True, width="stretch")
 
 
+def section_id_mapping():
+    st.subheader("Mapping Sofascore -> BSD player_id")
+    st.caption(
+        "Le forward log stocke des IDs Sofascore. Avant de pouvoir interroger "
+        "`BSD getPlayerStats`, il faut resoudre l'ID BSD via `searchPlayers`. "
+        "Le mapping est cache sur disque (`lab/data/player_id_mapping.json`)."
+    )
+    c1, c2 = st.columns([1, 3])
+    n = c1.slider("N joueurs (top forward log)", 5, 50, 30, step=5, key="map_n")
+    force = c2.checkbox("Forcer le refresh (ignore le cache)", value=False, key="map_force")
+    run = st.button("Resoudre les IDs", type="primary", key="map_run")
+    if not run:
+        cache = PIM.load_mapping()
+        st.caption(f"Cache courant : {len(cache)} entrees")
+        return
+
+    players = PS.load_forward_log_players(PROD_DIR, limit=n)
+    if not players:
+        st.error("Forward log prod introuvable ou vide (live/data/forward_log.jsonl).")
+        return
+
+    records: list[dict] = []
+    progress = st.progress(0.0)
+    for i, p in enumerate(players):
+        progress.progress((i + 1) / len(players))
+        records.append(
+            PIM.resolve_player(
+                int(p["player_id"]),
+                str(p.get("name") or ""),
+                team_id=p.get("team_id"),
+                force_refresh=force,
+            )
+        )
+    progress.empty()
+
+    summary = PIM.coverage_summary(records)
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Joueurs testes", summary["total"])
+    c2.metric("Resolus", summary["resolved"])
+    c3.metric("Couverture", f"{summary['coverage_pct']} %")
+    c4.metric("Erreurs", summary["errors"])
+
+    df = pd.DataFrame([
+        {
+            "sofa_id": r.get("sofascore_id"),
+            "name": r.get("name"),
+            "bsd_id": r.get("bsd_player_id"),
+            "matched_name": r.get("matched_name"),
+            "status": r.get("status"),
+            "source": r.get("source"),
+        }
+        for r in records
+    ])
+    st.dataframe(df, hide_index=True, width="stretch")
+
+
 def render():
     st.title("Phase 4 — Migration player stats BSD")
     st.markdown(
@@ -131,12 +199,14 @@ scraper Sofascore vers `BSD getPlayerStats`. Trois objectifs :
 Critere go : couverture >= 90 % sur forward log + couverture >= 70 % sur extension.
 """
     )
-    tab1, tab2, tab3 = st.tabs(
-        ["Lookup joueur", "Compare forward log", "Couverture extension"]
+    tab1, tab2, tab3, tab4 = st.tabs(
+        ["Lookup joueur", "Mapping IDs", "Compare forward log", "Couverture extension"]
     )
     with tab1:
         section_lookup()
     with tab2:
-        section_compare_forward_log()
+        section_id_mapping()
     with tab3:
+        section_compare_forward_log()
+    with tab4:
         section_coverage_extension()

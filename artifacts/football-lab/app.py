@@ -16,7 +16,14 @@ import streamlit as st
 
 from lab import snapshots
 from lab.calibration import bsd_client
-from lab.pages import phase1_btts
+from lab.pages import (
+    phase1_btts,
+    phase2_elo_xg,
+    phase3_pool_xg,
+    phase4_player_stats,
+    phase5_sharp_tracker,
+    phase6_synthesis,
+)
 
 st.set_page_config(
     page_title="Football Lab",
@@ -154,34 +161,14 @@ if page == "home":
 elif page == "phase1":
     phase1_btts.render()
 elif page == "phase2":
-    render_placeholder(
-        "Phase 2 — Recalibrage Elo via xG",
-        "Reconstruction Elo equipes depuis getStandings 5 saisons x 7 leagues. "
-        "Agregation joueurs vers nations CDM. A developper.",
-    )
+    phase2_elo_xg.render()
 elif page == "phase3":
-    render_placeholder(
-        "Phase 3 — xG totaux poules CDM",
-        "Calcul xGF/xGA par equipe sur phase poule (model + marche). "
-        "Recalibrage Elo nation + amelioration meilleurs 3emes. A developper.",
-    )
+    phase3_pool_xg.render()
 elif page == "phase4":
-    render_placeholder(
-        "Phase 4 — Player stats BSD",
-        "Wrapper getPlayerStats + comparaison 30 joueurs vs Sofascore. "
-        "Test couverture extension hors top 5. A developper.",
-    )
+    phase4_player_stats.render()
 elif page == "phase5":
-    render_placeholder(
-        "Phase 5 — Sharp money tracker",
-        "Snapshot bi-quotidien compareOdds avec movement SHORTENING/DRIFTING. "
-        "Observation 3 semaines. A developper.",
-    )
+    phase5_sharp_tracker.render()
 elif page == "phase6":
-    render_placeholder(
-        "Phase 6 — Synthese & migration prod",
-        "Recap 4 reports + plan feature flags pour bascule progressive en prod. "
-        "Sera rempli au fil des phases.",
-    )
+    phase6_synthesis.render()
 elif page == "admin":
     render_admin()

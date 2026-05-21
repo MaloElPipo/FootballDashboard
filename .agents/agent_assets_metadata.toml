@@ -72,3 +72,9 @@ id = "sTRwyKsNdlgWbjLXXiK5o"
 uri = "file://.local/team_shots_poc/output/giga_test_report_bundle.zip"
 type = "unspecified"
 title = "Bundle complet (HTML interactif dark + PDF light + MD)"
+
+[[outputs]]
+id = "CcXAv-V0Me5tXx_1rbvTf"
+uri = "file://live/data/wc_bias_correction_report.pdf"
+type = "pdf"
+title = "Bilan correctifs predictif CDM2026 — sandbox"

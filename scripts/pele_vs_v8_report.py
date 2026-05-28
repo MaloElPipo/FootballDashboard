@@ -32,8 +32,25 @@ import numpy as np
 REPO = Path(__file__).resolve().parents[1]
 SNAP = REPO / "artifacts/football-lab/lab/data/snapshots/initial_baseline_2026-05-20"
 CACHE = REPO / "live/data/pele_cache"
-OUT_JSON = REPO / "live/data/pele_v2_full_results.json"
-OUT_PDF = REPO / "live/data/pele_v2_vs_v8_report.pdf"
+OUT_JSON = REPO / "live/data/pele_v3_full_results.json"
+OUT_PDF = REPO / "live/data/pele_v3_vs_v8_report.pdf"
+SILVER_CSV = REPO / "live/data/pele_paywall/silver_projections.csv"
+
+# Mapping flag Silver (`:cc:` ou `:gb-xxx:`) -> code 3-lettres CDM
+FLAG_TO_CODE = {
+    "cz": "CZE", "kr": "KOR", "mx": "MEX", "za": "RSA",
+    "us": "USA", "py": "PAR", "ca": "CAN", "ba": "BIH",
+    "br": "BRA", "ma": "MAR", "gb-sct": "SCO", "ht": "HAI",
+    "ch": "SUI", "qa": "QAT", "se": "SWE", "tn": "TUN",
+    "nl": "NED", "jp": "JPN", "ec": "ECU", "ci": "CIV",
+    "de": "GER", "cw": "CUW", "tr": "TUR", "au": "AUS",
+    "uy": "URU", "sa": "KSA", "be": "BEL", "eg": "EGY",
+    "ir": "IRN", "nz": "NZL", "es": "ESP", "cv": "CPV",
+    "no": "NOR", "iq": "IRQ", "fr": "FRA", "sn": "SEN",
+    "ar": "ARG", "dz": "ALG", "gb-eng": "ENG", "hr": "CRO",
+    "pa": "PAN", "gh": "GHA", "co": "COL", "uz": "UZB",
+    "pt": "POR", "cd": "COD", "at": "AUT", "jo": "JOR",
+}
 
 PELE_URLS = {
     "pele": "https://datawrapper.dwcdn.net/4oVop/1/data.csv",
@@ -314,7 +331,61 @@ def metrics_from_lambdas(lh: float, la: float) -> dict:
     }
 
 
-def compute_all_matches(engine: dict, v8_elo: dict, market: dict) -> list[dict]:
+def load_silver_true() -> dict:
+    """Charge le CSV Silver Bulletin (sources paywall) et renvoie
+    {(home_code, away_code) -> {p_h, p_d, p_a, lambda_h, lambda_a, modal_score, game_lat}}.
+    Filtre uniquement les matchs FIFA 2026 World Cup: Group Stage.
+    """
+    out = {}
+    if not SILVER_CSV.exists():
+        print(f"      ATTENTION : pas de CSV Silver a {SILVER_CSV} — vraie PELE indisponible")
+        return out
+
+    def parse_flag(s: str) -> str | None:
+        # Format: ":cc: ABC" ou ":cc: ABC 🏡"
+        if ":" not in s:
+            return None
+        try:
+            flag = s.split(":")[1].strip()
+            return FLAG_TO_CODE.get(flag)
+        except IndexError:
+            return None
+
+    with open(SILVER_CSV, encoding="utf-8-sig") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        for row in reader:
+            if len(row) < 11:
+                continue
+            notes = row[11] if len(row) > 11 else ""
+            if "FIFA 2026 World Cup: Group Stage" not in notes:
+                continue
+            try:
+                home = parse_flag(row[1])
+                away = parse_flag(row[5])
+                if not home or not away:
+                    continue
+                w_h = float(row[2]) / 100.0
+                gf_h = float(row[3])
+                game_lat = float(row[4])
+                w_a = float(row[6]) / 100.0
+                gf_a = float(row[7])
+                draw = float(row[8]) / 100.0
+                modal = row[9].strip()
+                # Normalisation pour eviter petits ecarts d'arrondi
+                tot = w_h + w_a + draw
+                out[(home, away)] = {
+                    "p_h": w_h / tot, "p_d": draw / tot, "p_a": w_a / tot,
+                    "lambda_h": gf_h, "lambda_a": gf_a,
+                    "modal_score": modal, "game_lat": game_lat,
+                }
+            except (ValueError, IndexError):
+                continue
+    return out
+
+
+def compute_all_matches(engine: dict, v8_elo: dict, market: dict,
+                         silver_true: dict) -> list[dict]:
     rows = []
     for grp, teams in WC2026_GROUPS.items():
         for ih, ia in GROUP_MATCHES:
@@ -332,12 +403,27 @@ def compute_all_matches(engine: dict, v8_elo: dict, market: dict) -> list[dict]:
             v8_m = metrics_from_lambdas(v8_lh, v8_la)
             v8_m["p_h"], v8_m["p_d"], v8_m["p_a"] = v8_1x2
             mk = market.get((ch, ca))
+            # Silver oriente parfois home/away dans l'autre sens (matchs neutres).
+            # Si pas trouve dans le bon sens, on inverse.
+            tr = silver_true.get((ch, ca))
+            if not tr:
+                tr_rev = silver_true.get((ca, ch))
+                if tr_rev:
+                    tr = {
+                        "p_h": tr_rev["p_a"], "p_d": tr_rev["p_d"], "p_a": tr_rev["p_h"],
+                        "lambda_h": tr_rev["lambda_a"], "lambda_a": tr_rev["lambda_h"],
+                        "modal_score": (tr_rev["modal_score"].split("-")[1] + "-" + tr_rev["modal_score"].split("-")[0]
+                                          if "-" in tr_rev["modal_score"] else tr_rev["modal_score"]),
+                        "game_lat": -tr_rev["game_lat"],
+                        "orientation_flipped": True,
+                    }
             rows.append({
                 "group": grp, "home": ch, "away": ca,
                 "pele_elo_h": engine["teams"].get(ch, {}).get("pele"),
                 "pele_elo_a": engine["teams"].get(ca, {}).get("pele"),
                 "v8_elo_h": elo_h, "v8_elo_a": elo_a,
                 "pele": pele_m, "v8": v8_m,
+                "pele_true": tr,  # None si match manquant
                 "market": {"p_h": mk[0], "p_d": mk[1], "p_a": mk[2]} if mk else None,
             })
     return rows
@@ -779,8 +865,12 @@ def main() -> int:
     market = load_market()
     print(f"      {len(market)} matchs avec cotes Pinnacle")
 
+    print("[4b] Loading TRUE PELE from Silver paywall CSV…")
+    silver_true = load_silver_true()
+    print(f"      {len(silver_true)} matchs CDM avec vraies probas PELE")
+
     print("[5/6] Computing per-match metrics + running MC (10k each)…")
-    matches = compute_all_matches(engine, v8_elo, market)
+    matches = compute_all_matches(engine, v8_elo, market, silver_true)
     mc = run_mc(engine, v8_elo, n=N_SIMS)
 
     # Sauvegarde JSON brut (re-utilisable sans relancer)

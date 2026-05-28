@@ -38,6 +38,9 @@ import wc_simulator as ws  # type: ignore
 
 OUT_PDF = REPO / "live/data/pele_v5_forecast_cdm2026.pdf"
 OUT_JSON = REPO / "live/data/pele_v5_forecast_results.json"
+# Elo V8 prod LIVE (pas le snapshot labo gele, qui peut manquer des nations
+# ajoutees recemment — ex: ESP absente du baseline 2026-05-20 -> fallback 1500).
+PROD_V8_ELO = REPO / "artifacts/football-dashboard/pin_calibrated_elo.json"
 
 N_SIMS = 10_000
 RNG_SEED = 42
@@ -91,7 +94,9 @@ def load_all_data():
     teams = v4.parse_pele_csvs(raw)
     silver_true = v4.load_silver_true()
     market = v4.load_market()
-    v8_elo = json.loads((v4.SNAP / "pin_calibrated_elo.json").read_text())["elo"]
+    # V8 prod LIVE (et non v4.SNAP) : le comparatif/blend doit refleter l'Elo
+    # courant de l'app, pas un snapshot gele qui peut manquer des nations.
+    v8_elo = json.loads(PROD_V8_ELO.read_text())["elo"]
     return teams, silver_true, market, v8_elo
 
 
@@ -233,7 +238,9 @@ def run_v8_mc(v8_elo: dict, n: int = N_SIMS) -> dict:
         import random as _r
         _r.seed(RNG_SEED + 1)
         agg = defaultdict(lambda: {"r32": 0, "r16": 0, "qf": 0, "sf": 0,
-                                     "final": 0, "winner": 0})
+                                     "final": 0, "winner": 0,
+                                     "pos1": 0, "pos2": 0, "pos3": 0, "pos4": 0,
+                                     "group_pts": 0.0})
         for i in range(n):
             if i % 1000 == 0 and i > 0:
                 print(f"    [V8] sim {i}/{n}…")
@@ -246,7 +253,23 @@ def run_v8_mc(v8_elo: dict, n: int = N_SIMS) -> dict:
                 if t.get("sf"): a["sf"] += 1
                 if t.get("final"): a["final"] += 1
                 if t.get("winner"): a["winner"] += 1
-        out = {c: {k: v / n * 100 for k, v in a.items()} for c, a in agg.items()}
+                pos = t.get("group_pos", 0)
+                if pos == 1: a["pos1"] += 1
+                elif pos == 2: a["pos2"] += 1
+                elif pos == 3: a["pos3"] += 1
+                elif pos == 4: a["pos4"] += 1
+                a["group_pts"] += t.get("group_pts", 0)
+        out = {}
+        for c, a in agg.items():
+            o = {k: a[k] / n * 100 for k in
+                  ("r32", "r16", "qf", "sf", "final", "winner")}
+            # Phase poule agregee V8 (pour le blend phase poule)
+            o["p_1st"] = a["pos1"] / n * 100
+            o["p_2nd"] = a["pos2"] / n * 100
+            o["p_3rd"] = a["pos3"] / n * 100
+            o["p_4th"] = a["pos4"] / n * 100
+            o["avg_pts"] = a["group_pts"] / n
+            out[c] = o
     finally:
         ws.derive_lambdas_from_elo = orig_derive
     return out
@@ -275,10 +298,21 @@ def compute_blend(mc_pele: dict, mc_v8: dict,
         ("p_final", "final"),
         ("p_winner", "winner"),
     ]
+    # Phase poule : on blende aussi les positions + pts moyens (run_v8_mc les
+    # agrege desormais). La somme p_1st+..+p_4th reste 100 (blend lineaire de
+    # deux distributions normalisees). avg_gf/avg_ga/pts_dist/opponents restent
+    # PELE pur (V8 ne les calcule pas).
+    GROUP_FIELDS = [
+        ("p_1st", "p_1st"),
+        ("p_2nd", "p_2nd"),
+        ("p_3rd", "p_3rd"),
+        ("p_4th", "p_4th"),
+        ("avg_pts", "avg_pts"),
+    ]
     for code, m in mc_pele.items():
-        b = dict(m)  # copie tout, on overwrite les KO
+        b = dict(m)  # copie tout, on overwrite les KO + positions poule
         mv = mc_v8.get(code, {})
-        for k_pele, k_v8 in KO_FIELDS:
+        for k_pele, k_v8 in KO_FIELDS + GROUP_FIELDS:
             if k_v8 in mv:
                 b[k_pele] = alpha_v8 * mv[k_v8] + alpha_pele * m[k_pele]
         # p_runner_up et p_bronze : V8 ne les calcule pas, garder PELE pur.
@@ -450,7 +484,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
                 pele = t.get("pele", 0)
                 tilt = t.get("tilt", 0)
                 v8e = v8_elo.get(c, 1500)
-                m = mc_pele.get(c, {})
+                m = mc_blend.get(c, {})  # phase poule blendee (b)
                 comp_rows.append([
                     c,
                     f"{pele:.0f}",
@@ -523,7 +557,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
                       fontsize=11, fontweight="bold", color="#1a3a6e")
             prog_rows = []
             for c in gteams:
-                m = mc_pele.get(c, {})
+                m = mc_blend.get(c, {})  # progression KO blendee (b)
                 prog_rows.append([
                     c,
                     pct_odds(m.get('p_r32', 0)),
@@ -559,7 +593,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
         rows = []
         for grp, gteams in ws.WC2026_GROUPS.items():
             for c in gteams:
-                m = mc_pele.get(c, {})
+                m = mc_blend.get(c, {})  # meilleurs 3emes blendes (b)
                 p3 = m.get("p_3rd", 0)
                 p_qual_via3 = max(0, m.get("p_r32", 0) - m.get("p_1st", 0)
                                     - m.get("p_2nd", 0))
@@ -844,7 +878,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
             ("PELE rating snapshot", f"Les ratings PELE chargees datent du dernier scrape datawrapper. Silver met a jour ~1x/jour, les ratings peuvent avoir bouge depuis."),
             ("Tirs au but", "Modelises par sigmoid Elo clampee [0.15, 0.85]. Pas de modelisation du gardien ou de la fatigue. Hypothese 50/50 si nul a la fin du temps reglementaire."),
             ("Bookmakers", "Pinnacle couvre uniquement 19/104 matchs (les + populaires). Le 'value bet' n'a de sens que sur ces matchs."),
-            ("V8 prod (comparatif)", "Lance avec elo_map = pin_calibrated snapshot 2026-05-20. N'utilise pas les overrides forced manuels (CDM 2026 final roster pas encore connu)."),
+            ("V8 prod (comparatif + blend)", "Lance avec l'Elo pin_calibrated PROD LIVE (artifacts/football-dashboard/pin_calibrated_elo.json, 46 nations). NB: ne PAS utiliser un snapshot labo gele — il peut manquer des nations recentes (ex ESP) et provoquer un fallback silencieux a 1500. N'utilise pas les overrides forced manuels (roster final CDM 2026 pas encore connu)."),
             ("Pas de blessures, suspensions, forme", "Le modele est purement statique sur les ratings de base. ECT (event change tag) non integre."),
             ("Phase 2 Silver = score de roster Transfermarkt", "Pour reproduire ESP a 99.7% comme Silver, V8 prod aurait besoin d'integrer un score de roster (valeur 23 joueurs Transfermarkt). Voir piste P2 dans le plan d'evolution."),
         ]
@@ -864,7 +898,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
         srcs = [
             f"• Vraies probas Silver : live/data/pele_paywall/silver_projections.csv (72 matchs)",
             f"• Ratings PELE/Tilt : live/data/pele_cache/{{pele,tilt,rr}}.csv (211 nations)",
-            f"• V8 prod snapshot : artifacts/football-lab/lab/data/snapshots/initial_baseline_2026-05-20/",
+            f"• V8 prod Elo (live) : artifacts/football-dashboard/pin_calibrated_elo.json",
             f"• Cotes Pinnacle : pinnacle_wc2026_odds.json (snapshot 2026-05-20)",
             f"• Bracket FIFA officiel : importe depuis artifacts/football-dashboard/wc_simulator.py",
             f"• Methodo PELE : .agents/memory/pele-methodology.md + .local/refs/pele_paywall/methodology_clean.txt",

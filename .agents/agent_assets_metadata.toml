@@ -96,3 +96,15 @@ id = "hP0deABYa6PzHZiG4P8qz"
 uri = "file://live/data/pele_v5_forecast_cdm2026.pdf"
 type = "pdf"
 title = "Forecast CDM 2026 PELE V5 — toutes probas en % + cotes"
+
+[[outputs]]
+id = "fycMkoNxBfoIozBaz-xqH"
+uri = "file://live/data/backtest_wc/backtest_report.md"
+type = "text"
+title = "Backtest CDM 2018+2022 — grid search formules λ"
+
+[[outputs]]
+id = "mMQBYpjMyfSiUqsOYJ4JI"
+uri = "file://live/data/backtest_wc/backtest_results.json"
+type = "unspecified"
+title = "Résultats détaillés (JSON, 128 matchs)"

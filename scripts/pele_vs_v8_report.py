@@ -32,8 +32,8 @@ import numpy as np
 REPO = Path(__file__).resolve().parents[1]
 SNAP = REPO / "artifacts/football-lab/lab/data/snapshots/initial_baseline_2026-05-20"
 CACHE = REPO / "live/data/pele_cache"
-OUT_JSON = REPO / "live/data/pele_full_results.json"
-OUT_PDF = REPO / "live/data/pele_vs_v8_report.pdf"
+OUT_JSON = REPO / "live/data/pele_v2_full_results.json"
+OUT_PDF = REPO / "live/data/pele_v2_vs_v8_report.pdf"
 
 PELE_URLS = {
     "pele": "https://datawrapper.dwcdn.net/4oVop/1/data.csv",
@@ -172,37 +172,31 @@ def build_pele_engine(teams: dict[str, dict]) -> dict:
 
 
 def pele_lambdas(engine: dict, h_code: str, a_code: str) -> tuple[float, float]:
+    """V2 : derive lambdas depuis le PELE rating delta (comme un Elo standard),
+    puis applique le Tilt UNIQUEMENT comme modulateur de total buts.
+    On n'utilise PAS att/def Round-Robin -> evite le double-comptage de force
+    qui rendait V1 violemment trop tranche sur les favoris.
+    """
     t = engine["teams"]
     if h_code not in t or a_code not in t:
         return 1.3, 1.3
     h, a = t[h_code], t[a_code]
-    base = engine["baseline"]
-    tilt_factor = 1.0 + engine["alpha_tilt"] * (h["tilt"] + a["tilt"])
-    tilt_factor = max(tilt_factor, 0.5)
-    lh = base * h["att"] * a["def"] * tilt_factor
-    la = base * a["att"] * h["def"] * tilt_factor
-    return lh, la
+    delta = h["pele"] - a["pele"]
+    f = delta / 600.0
+    base_lh = max(0.3, min(1.25 * math.exp(f * 0.5), 4.0))
+    base_la = max(0.3, min(1.25 * math.exp(-f * 0.5), 4.0))
+    tilt_factor = max(1.0 + engine["alpha_tilt"] * (h["tilt"] + a["tilt"]), 0.6)
+    return base_lh * tilt_factor, base_la * tilt_factor
 
 
 def pele_1x2(engine: dict, h_code: str, a_code: str) -> tuple[float, float, float]:
-    """1X2 derive depuis la matrice de scores Poisson (cap 8 buts/equipe)."""
-    lh, la = pele_lambdas(engine, h_code, a_code)
-    ph = pd = pa = 0.0
-    exp_lh, exp_la = math.exp(-lh), math.exp(-la)
-    fact_i = 1.0
-    for i in range(9):
-        if i > 0: fact_i *= i
-        pi = exp_lh * (lh ** i) / fact_i
-        fact_j = 1.0
-        for j in range(9):
-            if j > 0: fact_j *= j
-            pj = exp_la * (la ** j) / fact_j
-            p = pi * pj
-            if i > j: ph += p
-            elif i == j: pd += p
-            else: pa += p
-    tot = ph + pd + pa
-    return ph / tot, pd / tot, pa / tot
+    """V2 : sigmoid V6 standard sur le PELE rating delta (pas le booster V8)."""
+    t = engine["teams"]
+    if h_code not in t or a_code not in t:
+        return 1 / 3, 1 / 3, 1 / 3
+    delta = t[h_code]["pele"] - t[a_code]["pele"]
+    elo_avg = (t[h_code]["pele"] + t[a_code]["pele"]) / 2
+    return sigmoid_v6(delta, elo_avg)
 
 
 # ─── 3. Moteur V8 prod (copie litterale) ────────────────────────────────────
@@ -327,6 +321,8 @@ def compute_all_matches(engine: dict, v8_elo: dict, market: dict) -> list[dict]:
             ch, ca = teams[ih], teams[ia]
             pele_lh, pele_la = pele_lambdas(engine, ch, ca)
             pele_m = metrics_from_lambdas(pele_lh, pele_la)
+            pele_1x2_v = pele_1x2(engine, ch, ca)
+            pele_m["p_h"], pele_m["p_d"], pele_m["p_a"] = pele_1x2_v
             # V8 prod : 1X2 vient de la sigmoid V8 (pas du Poisson),
             # mais les lambdas viennent de derive_lambdas_from_elo.
             elo_h = v8_elo.get(ch, 1500)

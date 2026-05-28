@@ -1,0 +1,1 @@
+- [PELE reverse-engineering caveat](pele-reverse-engineering.md) — dériver λ depuis Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées sur les favoris extrêmes ; toujours utiliser le rating delta comme Elo et le Tilt seulement comme modulateur de total buts.

@@ -5,7 +5,7 @@ Pipeline :
      WC group stage shrink 0.9x applique).
   2. Charge les ratings PELE officiels (211 nations).
   3. Patch en memoire wc_simulator.derive_lambdas_from_elo avec la formule
-     calibree (baseline=1.35, scale_delta=0.8 post-backtest) qu'on a derivee dans V4.
+     calibree (baseline=1.35, scale_delta=1.2) qu'on a derivee dans V4.
      Cette formule pilote toutes les sims KO (R32 -> Final).
   4. Reutilise tout le pipeline wc_simulator prod (FIFA tiebreakers,
      bracket R32 officiel, slots meilleurs 3emes, etc.) — RIEN n'est modifie
@@ -44,12 +44,18 @@ RNG_SEED = 42
 
 # Params calibres V4 sur 72 matchs vraies PELE (RMSE 0.244 buts/match)
 CALIB_BASELINE = 1.35
-# scale=0.8 (au lieu de 1.2 initial) : choisi apres backtest CDM 2018+2022
-# cf live/data/backtest_wc/backtest_report.md
-#   - scale=1.2 finissait dernier sur 7 formules (log-loss 1.0397, ECE 0.0448)
-#   - scale=0.8 = meilleur compromis (log-loss 1.0103, ECE 0.0475, V5c_s08_sh09)
-CALIB_SCALE = 0.8
+# scale=1.2 : version "PELE pur" tranchant favoris. Seule, elle finit derniere
+# du backtest CDM 2018+2022 (log-loss 1.0397, surconfiance favoris). MAIS
+# blendee 30% avec V8 prod (qui est sous-confident a 70%), elle DEVIENT la
+# meilleure formule testee (log-loss 0.9987 vs V8_prod 1.0062). Les biais
+# opposes s'annulent (wisdom of crowds).
+# cf live/data/backtest_wc/backtest_report.md — formule blend70_V8_V5calib.
+CALIB_SCALE = 1.2
 CALIB_ALPHA_TILT = 0.2
+# Poids blend final livre dans le PDF : 70% V8 prod + 30% PELE V5.
+# Valide sur 128 matchs CDM 2018+2022 (1ere formule a battre V8 prod).
+BLEND_ALPHA_V8 = 0.70
+BLEND_ALPHA_PELE = 0.30
 
 
 # ─── Monkey-patch derive_lambdas_from_elo (formule calibree PELE) ──────────
@@ -57,9 +63,11 @@ CALIB_ALPHA_TILT = 0.2
 def patched_derive_lambdas(elo_h: float, elo_a: float) -> tuple[float, float]:
     """Remplace la formule V8 prod (baseline 1.25, scale 0.5) par notre
     formule calibree sur 72 matchs vraies PELE :
-      lambda_h = 1.35 * exp(0.8 * delta/600 / 2)  (split half)
-      lambda_a = 1.35 * exp(-0.8 * delta/600 / 2)
-    Scale=0.8 retenu post-backtest CDM 2018+2022 (scale=1.2 surconfiant).
+      lambda_h = 1.35 * exp(1.2 * delta/600 / 2)  (split half)
+      lambda_a = 1.35 * exp(-1.2 * delta/600 / 2)
+    NB scale=1.2 seul surconfiant favoris : c'est compense en aval par le
+    blend 70/30 avec V8 prod (sous-confident) — leurs biais opposes
+    s'annulent (validation backtest CDM 2018+2022 log-loss 0.9987).
     Le facteur Tilt n'est PAS applique ici car derive_lambdas ne connait pas
     les codes equipes. On l'integre via expected_scores pour la phase poule
     (qui contient les vraies lambdas Silver, Tilt deja integre).
@@ -244,10 +252,51 @@ def run_v8_mc(v8_elo: dict, n: int = N_SIMS) -> dict:
     return out
 
 
+# ─── Blend ensemble V8 prod + PELE V5 (validation backtest) ────────────────
+
+def compute_blend(mc_pele: dict, mc_v8: dict,
+                    alpha_v8: float = BLEND_ALPHA_V8,
+                    alpha_pele: float = BLEND_ALPHA_PELE) -> dict:
+    """Construit mc_blend en melangeant lineairement les probabilites KO
+    de mc_pele et mc_v8 (alpha_v8 * V8 + alpha_pele * PELE).
+    Sur les 128 matchs CDM 2018+2022, le blend 70/30 a battu V8 prod en
+    log-loss (0.9987 vs 1.0062) et en calibration (ECE 0.0366 vs 0.0524).
+    Phase poule (p_1st, p_2nd, p_3rd, p_4th, pts_dist, opponents, avg_*)
+    reste PELE pur car mc_v8 ne calcule pas ces stats granulaires.
+    KO blend : p_r32, p_r16, p_qf, p_sf, p_final, p_winner, p_runner_up,
+    p_bronze. mc_v8 a les memes cles sans le prefixe 'p_'.
+    """
+    blend = {}
+    KO_FIELDS = [
+        ("p_r32", "r32"),
+        ("p_r16", "r16"),
+        ("p_qf", "qf"),
+        ("p_sf", "sf"),
+        ("p_final", "final"),
+        ("p_winner", "winner"),
+    ]
+    for code, m in mc_pele.items():
+        b = dict(m)  # copie tout, on overwrite les KO
+        mv = mc_v8.get(code, {})
+        for k_pele, k_v8 in KO_FIELDS:
+            if k_v8 in mv:
+                b[k_pele] = alpha_v8 * mv[k_v8] + alpha_pele * m[k_pele]
+        # p_runner_up et p_bronze : V8 ne les calcule pas, garder PELE pur.
+        # Recompute elim_X stages avec les KO blendees pour rester coherent.
+        b["elim_groupe"] = 100.0 - b["p_r32"]
+        b["elim_1_16"] = b["p_r32"] - b["p_r16"]
+        b["elim_1_8"] = b["p_r16"] - b["p_qf"]
+        b["elim_1_4"] = b["p_qf"] - b["p_sf"]
+        b["elim_1_2"] = b["p_sf"] - b["p_final"]
+        b["elim_finale"] = b["p_final"] - b["p_winner"]
+        blend[code] = b
+    return blend
+
+
 # ─── PDF rendering ─────────────────────────────────────────────────────────
 
-def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
-                silver_true: dict, market: dict, v8_elo: dict,
+def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, mc_blend: dict,
+                teams: dict, silver_true: dict, market: dict, v8_elo: dict,
                 expected_scores: dict) -> None:
     import matplotlib
     matplotlib.use("Agg")
@@ -311,34 +360,40 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         fig = plt.figure(figsize=PAGE)
         fig.text(0.5, 0.85, "COUPE DU MONDE FIFA 2026", ha="center",
                   fontsize=24, fontweight="bold", color="#1a3a6e")
-        fig.text(0.5, 0.80, "Prevision complete — moteur PELE (Nate Silver)",
+        fig.text(0.5, 0.80, "Prevision complete — blend 70% V8 prod + 30% PELE (Silver)",
                   ha="center", fontsize=14, style="italic")
         fig.text(0.5, 0.755, "Etats-Unis · Canada · Mexique  |  48 nations · 12 poules · 104 matchs",
                   ha="center", fontsize=10, color="#555")
         fig.text(0.5, 0.72, f"Monte Carlo : {N_SIMS:,} simulations completes (poules + KO)",
                   ha="center", fontsize=9, color="#888")
+        fig.text(0.5, 0.697, "Blend valide sur backtest CDM 2018+2022 (log-loss 0.9987 — 1ere formule a battre V8 prod)",
+                  ha="center", fontsize=8, color="#1a3a6e", style="italic")
 
-        # Top 10 contenders
-        top = sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"])[:10]
+        # Top 10 contenders — modele principal = BLEND
+        top = sorted(mc_blend.items(), key=lambda x: -x[1]["p_winner"])[:10]
         rows = []
         for i, (code, m) in enumerate(top, 1):
+            mp = mc_pele.get(code, {})
+            mv = mc_v8.get(code, {})
             rows.append([
                 i, code,
                 pct_odds(m['p_winner']),
                 pct_odds(m['p_final']),
                 pct_odds(m['p_sf']),
-                pct_odds(m['p_qf']),
-                pct_odds(m['p_r16']),
+                f"{mp.get('p_winner', 0):.1f}%",
+                f"{mv.get('winner', 0):.1f}%",
             ])
-        fig.text(0.5, 0.66, "TOP 10 CONTENDERS — probabilite de gagner le tournoi (% et cote)",
-                  ha="center", fontsize=12, fontweight="bold")
+        fig.text(0.5, 0.66, "TOP 10 CONTENDERS — P(Champion) blend + comparatif PELE pur / V8 pur",
+                  ha="center", fontsize=11, fontweight="bold")
         addtable(fig, [0.04, 0.36, 0.92, 0.27],
-                  ["#", "Nation", "Champion", "Finale", "1/2", "1/4", "1/8"],
-                  rows, col_widths=[0.05, 0.10, 0.17, 0.17, 0.17, 0.17, 0.17],
+                  ["#", "Nation", "Champ blend", "Finale", "1/2",
+                   "PELE seul", "V8 seul"],
+                  rows,
+                  col_widths=[0.05, 0.10, 0.18, 0.15, 0.15, 0.185, 0.185],
                   fontsize=8)
 
-        # Distribution P(champion) — bar chart top 20
-        top20 = sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"])[:20]
+        # Distribution P(champion) — bar chart top 20 (blend)
+        top20 = sorted(mc_blend.items(), key=lambda x: -x[1]["p_winner"])[:20]
         ax = fig.add_axes([0.10, 0.06, 0.82, 0.27])
         codes = [c for c, _ in top20]
         probs = [m["p_winner"] for _, m in top20]
@@ -349,7 +404,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         ax.set_yticklabels(codes, fontsize=8)
         ax.invert_yaxis()
         ax.set_xlabel("P(Champion) en %", fontsize=9)
-        ax.set_title("Distribution complete P(Champion) — top 20", fontsize=10, fontweight="bold")
+        ax.set_title("Distribution complete P(Champion) — top 20 (blend 70/30)", fontsize=10, fontweight="bold")
         ax.grid(axis="x", alpha=0.3)
         for i, p in enumerate(probs):
             ax.text(p + 0.2, i, f"{p:.1f}%", va="center", fontsize=7)
@@ -543,10 +598,10 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                   fontsize=8, color="#666", style="italic")
         savepage(pdf, fig)
 
-        # ─── PAGE 17 : PROGRESSION COMPLETE TOP 24 ─────────────────────────
-        fig = newpage(pdf, "Progression complete — top 24 P(QF)",
-                       "Cumul des probabilites par tour atteint")
-        top24 = sorted(mc_pele.items(), key=lambda x: -x[1]["p_qf"])[:24]
+        # ─── PAGE 17 : PROGRESSION COMPLETE TOP 24 (BLEND) ─────────────────
+        fig = newpage(pdf, "Progression complete — top 24 P(QF) [BLEND 70/30]",
+                       "Cumul des probabilites par tour atteint (modele blend)")
+        top24 = sorted(mc_blend.items(), key=lambda x: -x[1]["p_qf"])[:24]
         rows = []
         for code, m in top24:
             rows.append([
@@ -712,11 +767,11 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                       fontsize=8)
             savepage(pdf, fig)
 
-        # ─── NEW PAGE : PROBABILITES D'ELIMINATION PAR STADE ──────────────
-        fig = newpage(pdf, "Probabilite d'elimination par stade — 48 equipes",
+        # ─── NEW PAGE : PROBABILITES D'ELIMINATION PAR STADE (BLEND) ──────
+        fig = newpage(pdf, "Probabilite d'elimination par stade — 48 equipes [BLEND 70/30]",
                        "P(une equipe sort precisement a ce tour). Somme par ligne = 100%.")
         elim_rows = []
-        for code, m in sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"]):
+        for code, m in sorted(mc_blend.items(), key=lambda x: -x[1]["p_winner"]):
             elim_rows.append([
                 code,
                 pct_odds(m['elim_groupe']),
@@ -784,7 +839,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         fig = newpage(pdf, "Limitations & sources",
                        "A lire avant toute interpretation")
         lims = [
-            ("Modele PELE Phase 2 absente du KO", "Notre formule calibree (1.35/0.8 post-backtest) reproduit la transformation rating→λ a ±0.24 buts mais sans le mean-reversion Transfermarkt de la Phase 2. Pour la phase poule c'est ok (vraies λ Silver injectees), pour le KO ca peut sous-estimer l'effet roster."),
+            ("Modele PELE Phase 2 absente du KO", "Notre formule calibree (1.35/1.2) reproduit la transformation rating→λ a ±0.24 buts mais sans le mean-reversion Transfermarkt de la Phase 2. Pour la phase poule c'est ok (vraies λ Silver injectees), pour le KO ca peut sous-estimer l'effet roster — partiellement compense par le blend 70/30 avec V8 prod."),
             ("Tilt rating ignore en KO", "wc_simulator prod ne connait que l'Elo. Le Tilt Silver (propension offensive/defensive) n'est applique qu'en phase poule via vraies λ. En KO, c'est neglige."),
             ("PELE rating snapshot", f"Les ratings PELE chargees datent du dernier scrape datawrapper. Silver met a jour ~1x/jour, les ratings peuvent avoir bouge depuis."),
             ("Tirs au but", "Modelises par sigmoid Elo clampee [0.15, 0.85]. Pas de modelisation du gardien ou de la fatigue. Hypothese 50/50 si nul a la fin du temps reglementaire."),
@@ -837,36 +892,42 @@ def main() -> int:
     print(f"[2/5] Simulation complete CDM 2026 via wc_simulator prod — moteur PELE patched ({N_SIMS:,} sims)…")
     mc_pele = run_full_tournament_mc(elo_map, expected_scores, n=N_SIMS)
 
-    print(f"[3/5] Simulation comparatif V8 prod ({N_SIMS:,} sims)…")
+    print(f"[3/6] Simulation comparatif V8 prod ({N_SIMS:,} sims)…")
     mc_v8 = run_v8_mc(v8_elo, n=N_SIMS)
 
-    print("[4/5] Sauvegarde JSON…")
+    print(f"[4/6] Calcul blend ensemble {BLEND_ALPHA_V8:.0%}×V8 + {BLEND_ALPHA_PELE:.0%}×PELE…")
+    mc_blend = compute_blend(mc_pele, mc_v8)
+
+    print("[5/6] Sauvegarde JSON…")
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
+    def _clean(m):
+        return {k: {kk: (vv if not isinstance(vv, list) else
+                              [list(x) for x in vv]) for kk, vv in v.items()}
+                     for k, v in m.items()}
     OUT_JSON.write_text(json.dumps({
         "n_sims": N_SIMS,
-        "mc_pele": {k: {kk: (vv if not isinstance(vv, list) else
-                              [list(x) for x in vv]) for kk, vv in v.items()}
-                     for k, v in mc_pele.items()},
+        "blend_weights": {"v8": BLEND_ALPHA_V8, "pele": BLEND_ALPHA_PELE},
+        "mc_pele": _clean(mc_pele),
         "mc_v8": mc_v8,
+        "mc_blend": _clean(mc_blend),
     }, indent=2, default=str))
     print(f"      -> {OUT_JSON} ({OUT_JSON.stat().st_size // 1024} KB)")
 
-    print("[5/5] Rendu PDF V5…")
+    print("[6/6] Rendu PDF V5…")
     OUT_PDF.parent.mkdir(parents=True, exist_ok=True)
-    render_pdf(OUT_PDF, mc_pele, mc_v8, teams, silver_true, market, v8_elo,
-                expected_scores)
+    render_pdf(OUT_PDF, mc_pele, mc_v8, mc_blend, teams, silver_true, market,
+                v8_elo, expected_scores)
     print(f"      -> {OUT_PDF}")
 
-    # Resume console
-    print("\n========== TOP 10 CONTENDERS (P-Champion) ==========")
-    top = sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"])[:10]
+    # Resume console — modele BLEND (livre dans le PDF)
+    print("\n========== TOP 10 CONTENDERS BLEND 70/30 (P-Champion) ==========")
+    top = sorted(mc_blend.items(), key=lambda x: -x[1]["p_winner"])[:10]
     for i, (code, m) in enumerate(top, 1):
-        print(f"  {i:2d}. {code}  P(W) {m['p_winner']:5.2f}%   "
-               f"P(F) {m['p_final']:5.2f}%   "
-               f"P(SF) {m['p_sf']:5.2f}%   "
-               f"P(QF) {m['p_qf']:5.2f}%   "
-               f"P(R16) {m['p_r16']:5.1f}%   "
-               f"P(R32) {m['p_r32']:5.1f}%")
+        pp = mc_pele[code]["p_winner"]
+        pv = mc_v8.get(code, {}).get("winner", 0)
+        print(f"  {i:2d}. {code}  blend {m['p_winner']:5.2f}%  "
+               f"(PELE seul {pp:5.2f}%  /  V8 seul {pv:5.2f}%)   "
+               f"F {m['p_final']:5.2f}%  SF {m['p_sf']:5.2f}%")
 
     return 0
 

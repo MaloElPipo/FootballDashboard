@@ -447,6 +447,246 @@
         }
       ]
     },
+    "blend50_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 0.9994,
+      "brier_mean": 0.5896,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 8,
+          "p_moy_predit": 0.081,
+          "freq_observee": 0.25
+        },
+        {
+          "bin": "10-20%",
+          "n": 62,
+          "p_moy_predit": 0.157,
+          "freq_observee": 0.194
+        },
+        {
+          "bin": "20-30%",
+          "n": 162,
+          "p_moy_predit": 0.25,
+          "freq_observee": 0.216
+        },
+        {
+          "bin": "30-40%",
+          "n": 40,
+          "p_moy_predit": 0.354,
+          "freq_observee": 0.4
+        },
+        {
+          "bin": "40-50%",
+          "n": 36,
+          "p_moy_predit": 0.452,
+          "freq_observee": 0.472
+        },
+        {
+          "bin": "50-60%",
+          "n": 32,
+          "p_moy_predit": 0.548,
+          "freq_observee": 0.562
+        },
+        {
+          "bin": "60-70%",
+          "n": 32,
+          "p_moy_predit": 0.634,
+          "freq_observee": 0.625
+        },
+        {
+          "bin": "70-80%",
+          "n": 11,
+          "p_moy_predit": 0.729,
+          "freq_observee": 0.727
+        },
+        {
+          "bin": "80-90%",
+          "n": 1,
+          "p_moy_predit": 0.81,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "blend30_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0064,
+      "brier_mean": 0.591,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 15,
+          "p_moy_predit": 0.068,
+          "freq_observee": 0.2
+        },
+        {
+          "bin": "10-20%",
+          "n": 71,
+          "p_moy_predit": 0.151,
+          "freq_observee": 0.183
+        },
+        {
+          "bin": "20-30%",
+          "n": 148,
+          "p_moy_predit": 0.248,
+          "freq_observee": 0.23
+        },
+        {
+          "bin": "30-40%",
+          "n": 37,
+          "p_moy_predit": 0.354,
+          "freq_observee": 0.378
+        },
+        {
+          "bin": "40-50%",
+          "n": 29,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.483
+        },
+        {
+          "bin": "50-60%",
+          "n": 29,
+          "p_moy_predit": 0.542,
+          "freq_observee": 0.517
+        },
+        {
+          "bin": "60-70%",
+          "n": 37,
+          "p_moy_predit": 0.65,
+          "freq_observee": 0.595
+        },
+        {
+          "bin": "70-80%",
+          "n": 14,
+          "p_moy_predit": 0.742,
+          "freq_observee": 0.786
+        },
+        {
+          "bin": "80-90%",
+          "n": 4,
+          "p_moy_predit": 0.822,
+          "freq_observee": 0.5
+        }
+      ]
+    },
+    "blend70_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 0.9987,
+      "brier_mean": 0.5909,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 2,
+          "p_moy_predit": 0.076,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "10-20%",
+          "n": 51,
+          "p_moy_predit": 0.166,
+          "freq_observee": 0.137
+        },
+        {
+          "bin": "20-30%",
+          "n": 173,
+          "p_moy_predit": 0.252,
+          "freq_observee": 0.225
+        },
+        {
+          "bin": "30-40%",
+          "n": 46,
+          "p_moy_predit": 0.349,
+          "freq_observee": 0.37
+        },
+        {
+          "bin": "40-50%",
+          "n": 46,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.478
+        },
+        {
+          "bin": "50-60%",
+          "n": 38,
+          "p_moy_predit": 0.552,
+          "freq_observee": 0.553
+        },
+        {
+          "bin": "60-70%",
+          "n": 24,
+          "p_moy_predit": 0.631,
+          "freq_observee": 0.75
+        },
+        {
+          "bin": "70-80%",
+          "n": 4,
+          "p_moy_predit": 0.731,
+          "freq_observee": 0.5
+        }
+      ]
+    },
+    "blend50_V8_V5c08": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0036,
+      "brier_mean": 0.5936,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 2,
+          "p_moy_predit": 0.069,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "10-20%",
+          "n": 38,
+          "p_moy_predit": 0.166,
+          "freq_observee": 0.105
+        },
+        {
+          "bin": "20-30%",
+          "n": 180,
+          "p_moy_predit": 0.253,
+          "freq_observee": 0.222
+        },
+        {
+          "bin": "30-40%",
+          "n": 54,
+          "p_moy_predit": 0.347,
+          "freq_observee": 0.37
+        },
+        {
+          "bin": "40-50%",
+          "n": 51,
+          "p_moy_predit": 0.451,
+          "freq_observee": 0.49
+        },
+        {
+          "bin": "50-60%",
+          "n": 44,
+          "p_moy_predit": 0.556,
+          "freq_observee": 0.614
+        },
+        {
+          "bin": "60-70%",
+          "n": 13,
+          "p_moy_predit": 0.643,
+          "freq_observee": 0.769
+        },
+        {
+          "bin": "70-80%",
+          "n": 2,
+          "p_moy_predit": 0.758,
+          "freq_observee": 0.0
+        }
+      ]
+    },
     "benchmarks": {
       "uniform_log_loss": 1.0986,
       "note": "log-loss < 1.0 = mieux qu'un modele uniform; <0.95 = comparable a un bookmaker grand public; <0.90 = niveau modele pro.",

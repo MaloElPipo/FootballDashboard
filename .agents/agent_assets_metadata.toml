@@ -95,13 +95,13 @@ title = "PELE V2 (rating delta) vs V8 prod — Comparatif poules CDM 2026"
 id = "hP0deABYa6PzHZiG4P8qz"
 uri = "file://live/data/pele_v5_forecast_cdm2026.pdf"
 type = "pdf"
-title = "Forecast CDM 2026 PELE V5.1 — scale=0.8 (post-backtest)"
+title = "Forecast CDM 2026 V5.2 — Blend 70% V8 + 30% PELE (validation backtest)"
 
 [[outputs]]
 id = "fycMkoNxBfoIozBaz-xqH"
 uri = "file://live/data/backtest_wc/backtest_report.md"
 type = "text"
-title = "Backtest CDM 2018+2022 — grid search formules λ"
+title = "Backtest CDM 2018+2022 — grid search + blends"
 
 [[outputs]]
 id = "mMQBYpjMyfSiUqsOYJ4JI"

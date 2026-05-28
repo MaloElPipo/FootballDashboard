@@ -249,18 +249,34 @@ def run_backtest() -> dict:
     # et baseline=1.25, scale=0.5 — ce qui est equivalent).
     formulas["V8_prod"] = lambda eh, ea: lambdas_v8(eh, ea, neutral=True)
 
+    # ─── Blends lineaires de probabilites (ensembling) ──────────────────────
+    # Hypothese : V8 prod sous-confident (compresse milieu), V5 calib
+    # surconfident (favoris tranches). Leurs biais sont decorreles → un
+    # melange devrait battre les deux individuellement (wisdom of crowds).
+    # On teste plusieurs poids alpha sur V8 vs V5_calib (scale=1.2) et
+    # V8 vs V5c_s08 (scale=0.8, deploye actuel).
+    blends = [
+        ("blend50_V8_V5calib", "V8_prod",  "V5_calib",     0.5),
+        ("blend30_V8_V5calib", "V8_prod",  "V5_calib",     0.3),  # 30% V8 / 70% PELE
+        ("blend70_V8_V5calib", "V8_prod",  "V5_calib",     0.7),  # 70% V8 / 30% PELE
+        ("blend50_V8_V5c08",   "V8_prod",  "V5c_s08_sh09", 0.5),
+    ]
+    all_keys = list(formulas.keys()) + [b[0] for b in blends]
+
     results = {fname: {
         "n": 0, "log_loss_sum": 0.0, "brier_sum": 0.0,
         "mae_gh": 0.0, "mae_ga": 0.0,
-    } for fname in formulas}
+    } for fname in all_keys}
     # Calibration micro-agregee 3 classes : (sum_pred, n_total, n_obs_1) par bin
-    calib = {fname: [[0.0, 0, 0] for _ in range(10)] for fname in formulas}
+    calib = {fname: [[0.0, 0, 0] for _ in range(10)] for fname in all_keys}
 
     for m in all_matches:
         obs = outcome(m["gh"], m["ga"])
+        match_probs = {}
         for fname, fn in formulas.items():
             lh, la = fn(m["eh"], m["ea"])
             p = probs_1x2(lh, la)
+            match_probs[fname] = p
             r = results[fname]
             r["n"] += 1
             r["log_loss_sum"] += log_loss(p, obs)
@@ -272,6 +288,23 @@ def run_backtest() -> dict:
                 calib[fname][bin_idx][0] += pc
                 calib[fname][bin_idx][1] += 1
                 calib[fname][bin_idx][2] += (1 if idx_class == obs else 0)
+        # Blends : poids alpha sur source A, (1-alpha) sur source B
+        for bname, src_a, src_b, alpha in blends:
+            pa = match_probs[src_a]
+            pb = match_probs[src_b]
+            p = tuple(alpha * pa[i] + (1 - alpha) * pb[i] for i in range(3))
+            r = results[bname]
+            r["n"] += 1
+            r["log_loss_sum"] += log_loss(p, obs)
+            r["brier_sum"] += brier(p, obs)
+            # MAE lambda non defini pour un blend de probas
+            r["mae_gh"] = None
+            r["mae_ga"] = None
+            for idx_class, pc in enumerate(p):
+                bin_idx = min(9, int(pc * 10))
+                calib[bname][bin_idx][0] += pc
+                calib[bname][bin_idx][1] += 1
+                calib[bname][bin_idx][2] += (1 if idx_class == obs else 0)
 
     # ─── Synthese ──────────────────────────────────────────────────────────
     summary = {}
@@ -283,8 +316,10 @@ def run_backtest() -> dict:
             "n_matches": n,
             "log_loss_mean": round(r["log_loss_sum"] / n, 4) if n else None,
             "brier_mean": round(r["brier_sum"] / n, 4) if n else None,
-            "mae_lambda_h": round(r["mae_gh"] / n, 3) if n else None,
-            "mae_lambda_a": round(r["mae_ga"] / n, 3) if n else None,
+            "mae_lambda_h": (round(r["mae_gh"] / n, 3)
+                            if n and r["mae_gh"] is not None else None),
+            "mae_lambda_a": (round(r["mae_ga"] / n, 3)
+                            if n and r["mae_ga"] is not None else None),
             "calibration_bins": [
                 {
                     "bin": f"{i*10}-{(i+1)*10}%",
@@ -316,8 +351,8 @@ def run_backtest() -> dict:
 
     n_total = results["V8_prod"]["n"]
 
-    # Console report : tableau classement
-    ordered = sorted(formulas.keys(),
+    # Console report : tableau classement (formules + blends)
+    ordered = sorted([k for k in all_keys],
                       key=lambda k: summary[k]["log_loss_mean"])
     print("\n" + "=" * 78)
     print(f"  BACKTEST CDM 2018+2022 — Grid search formules lambda (n={n_total})")
@@ -328,7 +363,7 @@ def run_backtest() -> dict:
     print("  " + "-" * 64)
     # ECE = expected calibration error (weighted abs diff p_pred vs freq_obs)
     ece = {}
-    for fname in formulas:
+    for fname in all_keys:
         bins = summary[fname]["calibration_bins"]
         tot = sum(b["n"] for b in bins)
         ece[fname] = sum(b["n"] / tot * abs(b["p_moy_predit"] - b["freq_observee"])
@@ -336,9 +371,11 @@ def run_backtest() -> dict:
     for fname in ordered:
         s = summary[fname]
         mark = "  <-- BEST" if fname == ordered[0] else ""
-        print(f"  {fname:<16} {s['log_loss_mean']:>10.4f}  "
-                f"{s['brier_mean']:>8.4f}  {s['mae_lambda_h']:>8.3f}  "
-                f"{s['mae_lambda_a']:>8.3f}  {ece[fname]:>7.4f}{mark}")
+        mae_h = f"{s['mae_lambda_h']:>8.3f}" if s['mae_lambda_h'] is not None else f"{'-':>8}"
+        mae_a = f"{s['mae_lambda_a']:>8.3f}" if s['mae_lambda_a'] is not None else f"{'-':>8}"
+        print(f"  {fname:<22} {s['log_loss_mean']:>10.4f}  "
+                f"{s['brier_mean']:>8.4f}  {mae_h}  "
+                f"{mae_a}  {ece[fname]:>7.4f}{mark}")
 
     print(f"\n  CALIBRATION {ordered[0]} (best log-loss):")
     for b in summary[ordered[0]]["calibration_bins"]:
@@ -356,14 +393,24 @@ def run_backtest() -> dict:
     md.append("| Formule | baseline | scale | shrink | Log-loss | Brier | MAE λh | MAE λa | ECE |\n|---|---|---|---|---|---|---|---|---|")
     params_lookup = {n: (b, s, sh) for n, b, s, sh in grid}
     params_lookup["V8_prod"] = (1.25, 0.5, 1.0)
+    blend_lookup = {b[0]: (b[1], b[2], b[3]) for b in blends}
     for fname in ordered:
-        b, s, sh = params_lookup[fname]
         ss = summary[fname]
         mark = " **BEST**" if fname == ordered[0] else ""
-        md.append(f"| {fname}{mark} | {b} | {s} | {sh} | "
-                    f"{ss['log_loss_mean']:.4f} | {ss['brier_mean']:.4f} | "
-                    f"{ss['mae_lambda_h']:.3f} | {ss['mae_lambda_a']:.3f} | "
-                    f"{ece[fname]:.4f} |")
+        if fname in blend_lookup:
+            src_a, src_b, alpha = blend_lookup[fname]
+            params = f"{alpha:.1f}×{src_a} + {1-alpha:.1f}×{src_b}"
+            mae_h = "—"
+            mae_a = "—"
+            md.append(f"| {fname}{mark} | {params} | — | — | "
+                        f"{ss['log_loss_mean']:.4f} | {ss['brier_mean']:.4f} | "
+                        f"{mae_h} | {mae_a} | {ece[fname]:.4f} |")
+        else:
+            b, s, sh = params_lookup[fname]
+            md.append(f"| {fname}{mark} | {b} | {s} | {sh} | "
+                        f"{ss['log_loss_mean']:.4f} | {ss['brier_mean']:.4f} | "
+                        f"{ss['mae_lambda_h']:.3f} | {ss['mae_lambda_a']:.3f} | "
+                        f"{ece[fname]:.4f} |")
     md.append(f"\nBenchmark : log-loss uniform (1/3 chaque) = {math.log(3):.4f}\n")
     md.append("- **Log-loss** : penalise plus les predictions confiantes mais fausses. Plus bas = mieux.")
     md.append("- **Brier** : erreur quadratique moyenne. Plus bas = mieux.")

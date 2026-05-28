@@ -5,7 +5,7 @@ Pipeline :
      WC group stage shrink 0.9x applique).
   2. Charge les ratings PELE officiels (211 nations).
   3. Patch en memoire wc_simulator.derive_lambdas_from_elo avec la formule
-     calibree (baseline=1.35, scale_delta=1.2) qu'on a derivee dans V4.
+     calibree (baseline=1.35, scale_delta=0.8 post-backtest) qu'on a derivee dans V4.
      Cette formule pilote toutes les sims KO (R32 -> Final).
   4. Reutilise tout le pipeline wc_simulator prod (FIFA tiebreakers,
      bracket R32 officiel, slots meilleurs 3emes, etc.) — RIEN n'est modifie
@@ -44,7 +44,11 @@ RNG_SEED = 42
 
 # Params calibres V4 sur 72 matchs vraies PELE (RMSE 0.244 buts/match)
 CALIB_BASELINE = 1.35
-CALIB_SCALE = 1.2
+# scale=0.8 (au lieu de 1.2 initial) : choisi apres backtest CDM 2018+2022
+# cf live/data/backtest_wc/backtest_report.md
+#   - scale=1.2 finissait dernier sur 7 formules (log-loss 1.0397, ECE 0.0448)
+#   - scale=0.8 = meilleur compromis (log-loss 1.0103, ECE 0.0475, V5c_s08_sh09)
+CALIB_SCALE = 0.8
 CALIB_ALPHA_TILT = 0.2
 
 
@@ -53,8 +57,9 @@ CALIB_ALPHA_TILT = 0.2
 def patched_derive_lambdas(elo_h: float, elo_a: float) -> tuple[float, float]:
     """Remplace la formule V8 prod (baseline 1.25, scale 0.5) par notre
     formule calibree sur 72 matchs vraies PELE :
-      lambda_h = 1.35 * exp(1.2 * delta/600 / 2)  (split half)
-      lambda_a = 1.35 * exp(-1.2 * delta/600 / 2)
+      lambda_h = 1.35 * exp(0.8 * delta/600 / 2)  (split half)
+      lambda_a = 1.35 * exp(-0.8 * delta/600 / 2)
+    Scale=0.8 retenu post-backtest CDM 2018+2022 (scale=1.2 surconfiant).
     Le facteur Tilt n'est PAS applique ici car derive_lambdas ne connait pas
     les codes equipes. On l'integre via expected_scores pour la phase poule
     (qui contient les vraies lambdas Silver, Tilt deja integre).
@@ -779,7 +784,7 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         fig = newpage(pdf, "Limitations & sources",
                        "A lire avant toute interpretation")
         lims = [
-            ("Modele PELE Phase 2 absente du KO", "Notre formule calibree (1.35/1.2) reproduit la transformation rating→λ a ±0.24 buts mais sans le mean-reversion Transfermarkt de la Phase 2. Pour la phase poule c'est ok (vraies λ Silver injectees), pour le KO ca peut sous-estimer l'effet roster."),
+            ("Modele PELE Phase 2 absente du KO", "Notre formule calibree (1.35/0.8 post-backtest) reproduit la transformation rating→λ a ±0.24 buts mais sans le mean-reversion Transfermarkt de la Phase 2. Pour la phase poule c'est ok (vraies λ Silver injectees), pour le KO ca peut sous-estimer l'effet roster."),
             ("Tilt rating ignore en KO", "wc_simulator prod ne connait que l'Elo. Le Tilt Silver (propension offensive/defensive) n'est applique qu'en phase poule via vraies λ. En KO, c'est neglige."),
             ("PELE rating snapshot", f"Les ratings PELE chargees datent du dernier scrape datawrapper. Silver met a jour ~1x/jour, les ratings peuvent avoir bouge depuis."),
             ("Tirs au but", "Modelises par sigmoid Elo clampee [0.15, 0.85]. Pas de modelisation du gardien ou de la fatigue. Hypothese 50/50 si nul a la fin du temps reglementaire."),

@@ -32,8 +32,14 @@ import numpy as np
 REPO = Path(__file__).resolve().parents[1]
 SNAP = REPO / "artifacts/football-lab/lab/data/snapshots/initial_baseline_2026-05-20"
 CACHE = REPO / "live/data/pele_cache"
-OUT_JSON = REPO / "live/data/pele_v3_full_results.json"
-OUT_PDF = REPO / "live/data/pele_v3_vs_v8_report.pdf"
+OUT_JSON = REPO / "live/data/pele_v4_full_results.json"
+OUT_PDF = REPO / "live/data/pele_v4_vs_v8_report.pdf"
+OUT_CALIB = REPO / "live/data/pele_v4_calibration.json"
+
+# Coefficient WC group stage Silver : Silver Bulletin applique un multiplier 0.9x
+# sur la difference PELE en phase de poules (matchs plus upsets que default).
+# Reference : .agents/memory/pele-methodology.md
+WC_GROUP_SHRINK = 0.9
 SILVER_CSV = REPO / "live/data/pele_paywall/silver_projections.csv"
 
 # Mapping flag Silver (`:cc:` ou `:gb-xxx:`) -> code 3-lettres CDM
@@ -262,6 +268,40 @@ def v8_lambdas(elo_h: float, elo_a: float) -> tuple[float, float]:
     return lh, la
 
 
+# ─── 3b. WC group stage shrink (methodology Silver 0.9x) ───────────────────
+
+def wc_shrink_1x2(p_h: float, p_d: float, p_a: float,
+                    k: float = WC_GROUP_SHRINK) -> tuple[float, float, float]:
+    """Applique le multiplier WC group stage de Silver (k=0.9) sur les log-odds
+    home/away vs draw, ce qui equivaut a shrinker la 'force apparente' du favori
+    de (1-k) sur l'echelle Elo. Conserve la somme = 1.
+
+    Plus le k est petit, plus on tire les probas vers le centre (favori moins
+    dominant). Silver utilise k=0.9 en group stage et k=1.1 en KO stage.
+    """
+    eps = 1e-9
+    # Log-odds par rapport au draw
+    lo_h = math.log(max(p_h, eps) / max(p_d, eps))
+    lo_a = math.log(max(p_a, eps) / max(p_d, eps))
+    lo_h *= k
+    lo_a *= k
+    # Reconstruction via softmax (le draw a log-odd = 0 par definition ici)
+    eh, ea, ed = math.exp(lo_h), math.exp(lo_a), 1.0
+    s = eh + ea + ed
+    return eh / s, ed / s, ea / s
+
+
+def wc_shrink_lambdas(lh: float, la: float,
+                        k: float = WC_GROUP_SHRINK) -> tuple[float, float]:
+    """Shrink la *difference* entre λ_h et λ_a par k, en preservant le total.
+    Equivalent au 0.9x sur le delta : les buts totaux ne changent pas mais
+    l'asymetrie favori/outsider est attenuee.
+    """
+    tot = lh + la
+    delta_l = (lh - la) * k
+    return (tot + delta_l) / 2.0, (tot - delta_l) / 2.0
+
+
 # ─── 4. Verite marche : Pinnacle ─────────────────────────────────────────────
 
 def load_market() -> dict[tuple[str, str], tuple[float, float, float]]:
@@ -417,13 +457,21 @@ def compute_all_matches(engine: dict, v8_elo: dict, market: dict,
                         "game_lat": -tr_rev["game_lat"],
                         "orientation_flipped": True,
                     }
+            # Vraie PELE + WC group-stage adjustment 0.9x (methodology Silver)
+            tr_wc = None
+            if tr:
+                ph_a, pd_a, pa_a = wc_shrink_1x2(tr["p_h"], tr["p_d"], tr["p_a"])
+                lh_a, la_a = wc_shrink_lambdas(tr["lambda_h"], tr["lambda_a"])
+                tr_wc = {"p_h": ph_a, "p_d": pd_a, "p_a": pa_a,
+                          "lambda_h": lh_a, "lambda_a": la_a}
             rows.append({
                 "group": grp, "home": ch, "away": ca,
                 "pele_elo_h": engine["teams"].get(ch, {}).get("pele"),
                 "pele_elo_a": engine["teams"].get(ca, {}).get("pele"),
                 "v8_elo_h": elo_h, "v8_elo_a": elo_a,
                 "pele": pele_m, "v8": v8_m,
-                "pele_true": tr,  # None si match manquant
+                "pele_true": tr,         # vraie PELE Silver brute
+                "pele_true_wc": tr_wc,    # vraie PELE + 0.9x group stage
                 "market": {"p_h": mk[0], "p_d": mk[1], "p_a": mk[2]} if mk else None,
             })
     return rows
@@ -463,60 +511,69 @@ def poisson_sample(lam: float, rng) -> int:
             return k - 1
 
 
-def run_mc(engine: dict, v8_elo: dict, n: int = N_SIMS) -> dict:
-    """Lance n simulations Monte Carlo poule pour PELE et V8 simultanement."""
+def run_mc(engine: dict, v8_elo: dict, matches: list[dict],
+            n: int = N_SIMS) -> dict:
+    """Lance n simulations Monte Carlo poule pour PELE V2, V8, et vraie PELE.
+
+    `matches` fournit les vraies lambdas Silver pour chaque match (apres WC
+    shrink 0.9x). Quand un match n'a pas de vraie PELE (rare apres
+    orientation fix), on retombe sur la V2 reconstruction.
+    """
     rng = random.Random(RNG_SEED)
-    rng_v8 = random.Random(RNG_SEED)  # meme seed -> meme series de tirages
+    rng_v8 = random.Random(RNG_SEED)
+    rng_true = random.Random(RNG_SEED)
+
+    # Indexe les vraies lambdas WC-adjusted par paire (h, a)
+    true_lambdas: dict[tuple[str, str], tuple[float, float]] = {}
+    for m in matches:
+        if m.get("pele_true_wc"):
+            true_lambdas[(m["home"], m["away"])] = (
+                m["pele_true_wc"]["lambda_h"], m["pele_true_wc"]["lambda_a"])
 
     def lf_pele(h, a): return pele_lambdas(engine, h, a)
     def lf_v8(h, a):
         return v8_lambdas(v8_elo.get(h, 1500), v8_elo.get(a, 1500))
+    def lf_true(h, a):
+        # Fallback V2 reconstruction si match absent (ne devrait pas arriver
+        # apres orientation fix : 72/72 attendus)
+        return true_lambdas.get((h, a)) or pele_lambdas(engine, h, a)
+
+    ENGINES = [("pele", lf_pele, rng), ("v8", lf_v8, rng_v8),
+                ("pele_true", lf_true, rng_true)]
 
     agg = {
-        "pele": defaultdict(lambda: {"pts": 0.0, "gf": 0.0, "ga": 0.0,
-                                       "pos": defaultdict(int)}),
-        "v8":   defaultdict(lambda: {"pts": 0.0, "gf": 0.0, "ga": 0.0,
-                                       "pos": defaultdict(int)}),
-        # Probas qualif R32 (top2 + meilleurs 3emes)
-        "r32_pele": defaultdict(int),
-        "r32_v8":   defaultdict(int),
+        name: defaultdict(lambda: {"pts": 0.0, "gf": 0.0, "ga": 0.0,
+                                     "pos": defaultdict(int)})
+        for name, _, _ in ENGINES
     }
+    r32 = {name: defaultdict(int) for name, _, _ in ENGINES}
 
     for _ in range(n):
-        # Collecte 3emes par poule pour PELE
-        thirds_pele, thirds_v8 = [], []
+        thirds = {name: [] for name, _, _ in ENGINES}
         for grp, teams in WC2026_GROUPS.items():
-            ranks_p, st_p = simulate_group_once(teams, lf_pele, rng)
-            ranks_v, st_v = simulate_group_once(teams, lf_v8, rng_v8)
-            for c, pos in ranks_p.items():
-                a = agg["pele"][c]
-                a["pts"] += st_p[c]["pts"]
-                a["gf"] += st_p[c]["gf"]; a["ga"] += st_p[c]["ga"]
-                a["pos"][pos] += 1
-                if pos <= 2: agg["r32_pele"][c] += 1
-                if pos == 3: thirds_pele.append((c, st_p[c]["pts"],
-                                                 st_p[c]["gf"] - st_p[c]["ga"],
-                                                 st_p[c]["gf"]))
-            for c, pos in ranks_v.items():
-                a = agg["v8"][c]
-                a["pts"] += st_v[c]["pts"]
-                a["gf"] += st_v[c]["gf"]; a["ga"] += st_v[c]["ga"]
-                a["pos"][pos] += 1
-                if pos <= 2: agg["r32_v8"][c] += 1
-                if pos == 3: thirds_v8.append((c, st_v[c]["pts"],
-                                                st_v[c]["gf"] - st_v[c]["ga"],
-                                                st_v[c]["gf"]))
-        # 8 meilleurs 3emes
-        thirds_pele.sort(key=lambda x: (-x[1], -x[2], -x[3]))
-        thirds_v8.sort(key=lambda x: (-x[1], -x[2], -x[3]))
-        for t in thirds_pele[:8]: agg["r32_pele"][t[0]] += 1
-        for t in thirds_v8[:8]:   agg["r32_v8"][t[0]] += 1
+            for name, lf, r in ENGINES:
+                ranks, st = simulate_group_once(teams, lf, r)
+                for c, pos in ranks.items():
+                    a = agg[name][c]
+                    a["pts"] += st[c]["pts"]
+                    a["gf"] += st[c]["gf"]; a["ga"] += st[c]["ga"]
+                    a["pos"][pos] += 1
+                    if pos <= 2: r32[name][c] += 1
+                    if pos == 3:
+                        thirds[name].append((c, st[c]["pts"],
+                                              st[c]["gf"] - st[c]["ga"],
+                                              st[c]["gf"]))
+        # 8 meilleurs 3emes par engine
+        for name, _, _ in ENGINES:
+            thirds[name].sort(key=lambda x: (-x[1], -x[2], -x[3]))
+            for t in thirds[name][:8]:
+                r32[name][t[0]] += 1
 
     # Normalisation
-    out = {"pele": {}, "v8": {}}
-    for engine_name in ("pele", "v8"):
-        for c, a in agg[engine_name].items():
-            out[engine_name][c] = {
+    out = {name: {} for name, _, _ in ENGINES}
+    for name, _, _ in ENGINES:
+        for c, a in agg[name].items():
+            out[name][c] = {
                 "avg_pts": a["pts"] / n,
                 "avg_gf": a["gf"] / n,
                 "avg_ga": a["ga"] / n,
@@ -524,7 +581,7 @@ def run_mc(engine: dict, v8_elo: dict, n: int = N_SIMS) -> dict:
                 "p_2nd": a["pos"][2] / n * 100,
                 "p_3rd": a["pos"][3] / n * 100,
                 "p_4th": a["pos"][4] / n * 100,
-                "p_r32": agg[f"r32_{engine_name}"][c] / n * 100,
+                "p_r32": r32[name][c] / n * 100,
             }
     return out
 
@@ -869,9 +926,120 @@ def main() -> int:
     silver_true = load_silver_true()
     print(f"      {len(silver_true)} matchs CDM avec vraies probas PELE")
 
-    print("[5/6] Computing per-match metrics + running MC (10k each)…")
+    print("[5/6] Computing per-match metrics + running MC (10k each, 3 engines)…")
     matches = compute_all_matches(engine, v8_elo, market, silver_true)
-    mc = run_mc(engine, v8_elo, n=N_SIMS)
+    mc = run_mc(engine, v8_elo, matches, n=N_SIMS)
+
+    # ─── Calibration check & WC adjustment analytics ─────────────────────
+    print("\n========== V4 ANALYTICAL FINDINGS ==========")
+
+    def mae(field_a: str, field_b: str) -> tuple[float, int]:
+        e = []
+        for r in matches:
+            a, b = r.get(field_a), r.get(field_b)
+            if not a or not b:
+                continue
+            e += [abs(a["p_h"] - b["p_h"]), abs(a["p_d"] - b["p_d"]),
+                   abs(a["p_a"] - b["p_a"])]
+        return (np.mean(e) * 100 if e else float("nan"), len(e) // 3)
+
+    def bias_fav(field: str) -> tuple[float, int]:
+        b = []
+        for r in matches:
+            a, mk = r.get(field), r.get("market")
+            if not a or not mk:
+                continue
+            if mk["p_h"] >= mk["p_a"]:
+                b.append(a["p_h"] - mk["p_h"])
+            else:
+                b.append(a["p_a"] - mk["p_a"])
+        return (np.mean(b) * 100 if b else 0.0, len(b))
+
+    print("\n[Q1] WC group-stage shrink (0.9x) sur vraie PELE rapproche-t-il du marche ?")
+    print(f"  {'engine':18s} {'MAE vs Pin':>12s} {'biais fav':>12s} {'n':>5s}")
+    for field in ("v8", "pele", "pele_true", "pele_true_wc"):
+        m, n_m = mae(field, "market")
+        bf, n_bf = bias_fav(field)
+        print(f"  {field:18s} {m:>12.2f} {bf:>+12.2f} {n_m:>5d}")
+
+    # Calibration : peut-on retrouver les vraies lambdas Silver avec une
+    # reconstruction parametrique ?
+    print("\n[Q2] Reconstruction V2 vs vraies lambdas Silver (sur 72 matchs CDM)")
+    diffs_lh, diffs_la, diffs_tot = [], [], []
+    for r in matches:
+        if not r.get("pele_true"):
+            continue
+        true = r["pele_true"]
+        v2 = r["pele"]
+        diffs_lh.append(v2["lambda_h"] - true["lambda_h"])
+        diffs_la.append(v2["lambda_a"] - true["lambda_a"])
+        diffs_tot.append((v2["lambda_h"] + v2["lambda_a"]) -
+                          (true["lambda_h"] + true["lambda_a"]))
+    print(f"  lambda_h : V2 - vraie = {np.mean(diffs_lh):+.3f} (RMSE {np.sqrt(np.mean(np.square(diffs_lh))):.3f})")
+    print(f"  lambda_a : V2 - vraie = {np.mean(diffs_la):+.3f} (RMSE {np.sqrt(np.mean(np.square(diffs_la))):.3f})")
+    print(f"  total    : V2 - vraie = {np.mean(diffs_tot):+.3f} (RMSE {np.sqrt(np.mean(np.square(diffs_tot))):.3f})")
+
+    # Grid search rapide : trouver scale + alpha qui minimisent RMSE(lambda_total)
+    print("\n[Q3] Grid search reconstruction lambda = baseline * exp(s*delta/600) * (1+a*tilt_sum)")
+    teams_tab = engine["teams"]
+    pts = []
+    for r in matches:
+        if not r.get("pele_true"):
+            continue
+        h, a = r["home"], r["away"]
+        if h not in teams_tab or a not in teams_tab:
+            continue
+        delta = teams_tab[h]["pele"] - teams_tab[a]["pele"]
+        tilt_sum = teams_tab[h]["tilt"] + teams_tab[a]["tilt"]
+        pts.append((delta, tilt_sum, r["pele_true"]["lambda_h"],
+                    r["pele_true"]["lambda_a"]))
+    best = (float("inf"), None)
+    for baseline in (1.30, 1.35, 1.40, 1.45, 1.50):
+        for scale in (0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2):
+            for alpha in (0.0, 0.2, 0.4, 0.6, 0.8, 1.0):
+                err = 0.0
+                for delta, ts, lh_t, la_t in pts:
+                    f = delta / 600.0
+                    tilt_f = max(1.0 + alpha * ts, 0.4)
+                    lh = baseline * tilt_f * math.exp(f * scale)
+                    la = baseline * tilt_f * math.exp(-f * scale)
+                    err += (lh - lh_t) ** 2 + (la - la_t) ** 2
+                rmse = math.sqrt(err / (2 * len(pts)))
+                if rmse < best[0]:
+                    best = (rmse, (baseline, scale, alpha))
+    rmse, (b_b, b_s, b_a) = best
+    print(f"  Best fit : baseline={b_b}  scale_delta={b_s}  alpha_tilt={b_a}")
+    print(f"             -> RMSE lambdas = {rmse:.3f}")
+    print(f"  (V2 actuel : baseline=1.25, scale_delta=0.5, alpha=0.4)")
+
+    # P(qualif R32) : V8 vs vraie PELE — top divergences
+    print("\n[Q4] P(qualif R32) — top divergences V8 vs vraie PELE")
+    divs = []
+    for c, v in mc["v8"].items():
+        if c not in mc["pele_true"]:
+            continue
+        d = mc["pele_true"][c]["p_r32"] - v["p_r32"]
+        divs.append((d, c, v["p_r32"], mc["pele_true"][c]["p_r32"]))
+    divs.sort(key=lambda x: -abs(x[0]))
+    print(f"  {'team':6s} {'V8':>7s} {'PELE':>7s} {'diff':>7s}")
+    for d, c, v8p, pp in divs[:10]:
+        print(f"  {c:6s} {v8p:>6.1f}% {pp:>6.1f}% {d:>+6.1f}pts")
+
+    # Sauvegarde calibration
+    OUT_CALIB.parent.mkdir(parents=True, exist_ok=True)
+    OUT_CALIB.write_text(json.dumps({
+        "best_fit": {"baseline": b_b, "scale_delta": b_s, "alpha_tilt": b_a,
+                      "rmse_lambdas": rmse},
+        "mae_vs_market": {f: mae(f, "market")[0]
+                           for f in ("v8", "pele", "pele_true", "pele_true_wc")},
+        "bias_favori": {f: bias_fav(f)[0]
+                         for f in ("v8", "pele", "pele_true", "pele_true_wc")},
+        "n_matches_total": len(matches),
+        "n_matches_true_pele": sum(1 for r in matches if r.get("pele_true")),
+        "n_matches_pinnacle": sum(1 for r in matches if r.get("market")),
+    }, indent=2))
+    print(f"\n  -> calibration JSON : {OUT_CALIB}")
+    print("=============================================\n")
 
     # Sauvegarde JSON brut (re-utilisable sans relancer)
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)

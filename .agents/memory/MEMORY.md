@@ -1,1 +1,2 @@
-- [PELE reverse-engineering caveat](pele-reverse-engineering.md) — dériver λ depuis Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées sur les favoris extrêmes ; toujours utiliser le rating delta comme Elo et le Tilt seulement comme modulateur de total buts.
+- [PELE methodology (Silver Bulletin)](pele-methodology.md) — architecture 2 phases + Tilt orthogonal + WC tweaks + CSVs Datawrapper publics ; toujours lire la méthodo publique AVANT de reverse-engineer.
+- [PELE reverse-engineering caveat](pele-reverse-engineering.md) — pourquoi dériver λ depuis le Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées ; complète la fiche méthodologie ci-dessus.

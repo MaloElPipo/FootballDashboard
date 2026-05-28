@@ -1,0 +1,23 @@
+{
+  "best_fit": {
+    "baseline": 1.35,
+    "scale_delta": 1.2,
+    "alpha_tilt": 0.2,
+    "rmse_lambdas": 0.24408811776445696
+  },
+  "mae_vs_market": {
+    "v8": 2.92821999056518,
+    "pele": 5.427280048439184,
+    "pele_true": 6.227574851333582,
+    "pele_true_wc": 5.271223144047268
+  },
+  "bias_favori": {
+    "v8": -0.09710886671035743,
+    "pele": -4.661046996593093,
+    "pele_true": 4.339220363693744,
+    "pele_true_wc": 1.9883528345467594
+  },
+  "n_matches_total": 72,
+  "n_matches_true_pele": 72,
+  "n_matches_pinnacle": 19
+}

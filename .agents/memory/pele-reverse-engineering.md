@@ -23,6 +23,15 @@ tranchées** sur les gros mismatches. Mesuré : MAE 7.86 pts vs Pinnacle (V8 pro
 contenue dans le PELE rating. En multipliant les deux, on amplifie les écarts
 d'un facteur ~2-3x.
 
+**Note complémentaire :** voir aussi `pele-methodology.md`. La vraie PELE elle-
+même est aussi plus tranchée que Pinnacle sur les groupes CDM (biais favori
++4.3 pts vs marché, MAE 6.23 sur 19 matchs Pinnacle). Une partie de l'écart
+de notre reconstruction venait du double-comptage ci-dessus, mais une autre
+partie venait de l'absence des WC tweaks (mult 0.9× sur Δ rating en group
+stage) et de l'absence de la Phase 2 (mean-reversion Transfermarkt) — donc
+même une reconstruction parfaite côté formule donnerait des résultats plus
+tranchés que Pinnacle, et c'est conforme à ce que fait Silver.
+
 **How to apply:**
 1. Pour le 1X2 : passer **uniquement** par le PELE rating delta + une sigmoid
    standard (type sigmoid V6 nu, sans booster favori), comme on le ferait pour

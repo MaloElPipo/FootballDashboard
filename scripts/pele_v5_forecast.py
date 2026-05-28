@@ -253,6 +253,18 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
 
     PAGE = (8.27, 11.69)  # A4 portrait
 
+    def _odds_str(p_pct: float) -> str:
+        """Convertit une proba en % vers cote decimale. Clip si trop extreme."""
+        if p_pct >= 99.5:
+            return "1.01"
+        if p_pct < 0.5:
+            return "—"
+        return f"{100.0 / p_pct:.2f}"
+
+    def pct_odds(p_pct: float, dec: int = 1) -> str:
+        """'5.3% (18.87)' — formate proba + cote dans une seule cellule."""
+        return f"{p_pct:.{dec}f}% ({_odds_str(p_pct)})"
+
     def newpage(pdf, title: str, subtitle: str = ""):
         fig = plt.figure(figsize=PAGE)
         fig.text(0.5, 0.965, title, ha="center", fontsize=16, fontweight="bold")
@@ -307,18 +319,18 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         for i, (code, m) in enumerate(top, 1):
             rows.append([
                 i, code,
-                f"{m['p_winner']:.1f}%",
-                f"{m['p_final']:.1f}%",
-                f"{m['p_sf']:.1f}%",
-                f"{m['p_qf']:.1f}%",
-                f"{m['p_r16']:.1f}%",
+                pct_odds(m['p_winner']),
+                pct_odds(m['p_final']),
+                pct_odds(m['p_sf']),
+                pct_odds(m['p_qf']),
+                pct_odds(m['p_r16']),
             ])
-        fig.text(0.5, 0.66, "TOP 10 CONTENDERS — probabilite de gagner le tournoi",
+        fig.text(0.5, 0.66, "TOP 10 CONTENDERS — probabilite de gagner le tournoi (% et cote)",
                   ha="center", fontsize=12, fontweight="bold")
-        addtable(fig, [0.12, 0.36, 0.76, 0.27],
+        addtable(fig, [0.04, 0.36, 0.92, 0.27],
                   ["#", "Nation", "Champion", "Finale", "1/2", "1/4", "1/8"],
-                  rows, col_widths=[0.06, 0.12, 0.16, 0.14, 0.14, 0.14, 0.14],
-                  fontsize=9)
+                  rows, col_widths=[0.05, 0.10, 0.17, 0.17, 0.17, 0.17, 0.17],
+                  fontsize=8)
 
         # Distribution P(champion) — bar chart top 20
         top20 = sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"])[:20]
@@ -386,14 +398,16 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                     f"{v8e:.0f}",
                     f"{pele - v8e:+.0f}",
                     f"{m.get('avg_pts', 0):.2f}",
-                    f"{m.get('p_1st', 0):.1f}%",
-                    f"{m.get('p_r32', 0):.1f}%",
+                    pct_odds(m.get('p_1st', 0)),
+                    pct_odds(m.get('p_r32', 0)),
                 ])
-            fig.text(0.06, 0.91, "Composition + Sim phase poule (10k MC)",
+            fig.text(0.06, 0.91, "Composition + Sim phase poule (10k MC) — % et cote",
                       fontsize=11, fontweight="bold", color="#1a3a6e")
-            addtable(fig, [0.06, 0.72, 0.88, 0.16],
-                      ["Eq.", "PELE", "Tilt", "V8 prod", "P-V8", "pts moy", "P(1er)", "P(qualif R32)"],
-                      comp_rows, col_widths=[0.08]*8, fontsize=9)
+            addtable(fig, [0.04, 0.72, 0.92, 0.16],
+                      ["Eq.", "PELE", "Tilt", "V8", "Δ", "pts moy", "P(1er)", "P(qualif R32)"],
+                      comp_rows,
+                      col_widths=[0.06, 0.07, 0.08, 0.07, 0.07, 0.09, 0.24, 0.24],
+                      fontsize=8)
 
             # 6 matchs phase poule
             fig.text(0.06, 0.68, "Les 6 matchs de la poule (vraies probas Silver + WC 0.9x)",
@@ -452,16 +466,18 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                 m = mc_pele.get(c, {})
                 prog_rows.append([
                     c,
-                    f"{m.get('p_r32', 0):.1f}%",
-                    f"{m.get('p_r16', 0):.1f}%",
-                    f"{m.get('p_qf', 0):.1f}%",
-                    f"{m.get('p_sf', 0):.1f}%",
-                    f"{m.get('p_final', 0):.1f}%",
-                    f"{m.get('p_winner', 0):.2f}%",
+                    pct_odds(m.get('p_r32', 0)),
+                    pct_odds(m.get('p_r16', 0)),
+                    pct_odds(m.get('p_qf', 0)),
+                    pct_odds(m.get('p_sf', 0)),
+                    pct_odds(m.get('p_final', 0)),
+                    pct_odds(m.get('p_winner', 0), dec=2),
                 ])
-            addtable(fig, [0.06, 0.20, 0.88, 0.18],
+            addtable(fig, [0.02, 0.20, 0.96, 0.18],
                       ["Eq.", "1/16", "1/8", "1/4", "1/2", "Finale", "Champion"],
-                      prog_rows, col_widths=[0.1] * 7, fontsize=9)
+                      prog_rows,
+                      col_widths=[0.06, 0.15, 0.15, 0.15, 0.15, 0.15, 0.19],
+                      fontsize=7)
 
             # Footer : delta vs V8 sur P(qualif R32)
             v8_diff = []
@@ -487,14 +503,18 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                 p3 = m.get("p_3rd", 0)
                 p_qual_via3 = max(0, m.get("p_r32", 0) - m.get("p_1st", 0)
                                     - m.get("p_2nd", 0))
-                if p3 > 5:  # seulement equipes avec presence reelle en 3eme
-                    rows.append([grp, c, f"{p3:.1f}%",
-                                  f"{p_qual_via3:.1f}%",
-                                  f"{(p_qual_via3 / p3 * 100) if p3 > 0 else 0:.0f}%"])
-        rows.sort(key=lambda r: -float(r[3].rstrip("%")))
-        addtable(fig, [0.10, 0.30, 0.80, 0.60],
+                if p3 > 5:
+                    cond = (p_qual_via3 / p3 * 100) if p3 > 0 else 0
+                    rows.append([grp, c,
+                                  pct_odds(p3),
+                                  pct_odds(p_qual_via3),
+                                  pct_odds(cond, dec=0), p_qual_via3])
+        rows.sort(key=lambda r: -r[-1])
+        rows = [r[:-1] for r in rows]
+        addtable(fig, [0.04, 0.20, 0.92, 0.72],
                   ["Poule", "Eq.", "P(3e)", "P(qualif via 3e)", "P(qualif | 3e)"],
-                  rows[:30], col_widths=[0.10, 0.12, 0.15, 0.20, 0.20], fontsize=9)
+                  rows[:30],
+                  col_widths=[0.08, 0.08, 0.22, 0.30, 0.30], fontsize=8)
         savepage(pdf, fig)
 
         # ─── PAGE 16 : BRACKET R32 — qui affronte qui ────────────────────
@@ -508,11 +528,12 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                         key=lambda x: -x[1]["p_r16"])[:16]
         for code, m in top16:
             opps = m.get("top_opp_r16", [])
-            opp_str = " · ".join([f"{o}({p:.0f}%)" for o, p in opps[:3]])
-            rows.append([code, f"{m['p_r16']:.1f}%", opp_str or "—"])
-        addtable(fig, [0.06, 0.50, 0.88, 0.42],
-                  ["Eq. (top 16 P(R16))", "P(R16)", "Adversaires R16 les + frequents"],
-                  rows, col_widths=[0.20, 0.15, 0.65], fontsize=9, align="left")
+            opp_str = " · ".join([f"{o} {p:.0f}% ({_odds_str(p)})"
+                                    for o, p in opps[:3]])
+            rows.append([code, pct_odds(m['p_r16']), opp_str or "—"])
+        addtable(fig, [0.04, 0.45, 0.92, 0.47],
+                  ["Eq. (top 16 P(R16))", "P(R16)", "Adversaires R16 les + frequents (% et cote)"],
+                  rows, col_widths=[0.14, 0.20, 0.66], fontsize=8, align="left")
         fig.text(0.06, 0.43, "Note : un adversaire affiche a 30% signifie qu'en 30% des sims, cette equipe arrive en R16 contre cet adversaire.",
                   fontsize=8, color="#666", style="italic")
         savepage(pdf, fig)
@@ -525,18 +546,19 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         for code, m in top24:
             rows.append([
                 code,
-                f"{m['p_r32']:.0f}%",
-                f"{m['p_r16']:.0f}%",
-                f"{m['p_qf']:.1f}%",
-                f"{m['p_sf']:.1f}%",
-                f"{m['p_final']:.1f}%",
-                f"{m['p_winner']:.2f}%",
-                f"{m['p_bronze']:.1f}%",
+                pct_odds(m['p_r32'], dec=0),
+                pct_odds(m['p_r16'], dec=0),
+                pct_odds(m['p_qf']),
+                pct_odds(m['p_sf']),
+                pct_odds(m['p_final']),
+                pct_odds(m['p_winner'], dec=2),
+                pct_odds(m['p_bronze']),
             ])
-        addtable(fig, [0.06, 0.06, 0.88, 0.86],
+        addtable(fig, [0.02, 0.06, 0.96, 0.86],
                   ["Eq.", "R32", "R16", "QF", "SF", "Final", "Champ", "Bronze"],
-                  rows, col_widths=[0.10, 0.10, 0.10, 0.12, 0.12, 0.12, 0.14, 0.12],
-                  fontsize=9)
+                  rows,
+                  col_widths=[0.06, 0.13, 0.13, 0.13, 0.13, 0.13, 0.14, 0.15],
+                  fontsize=7)
         savepage(pdf, fig)
 
         # ─── PAGE 18 : TOP 8 CONTENDERS DETAIL ─────────────────────────────
@@ -554,28 +576,30 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                           fontsize=14, fontweight="bold", color="#1a3a6e")
                 fig.text(0.20, y, f"PELE {pele:.0f}   Tilt {tilt:+.3f}   V8 {v8e:.0f}   Δ {pele-v8e:+.0f}",
                           fontsize=9, color="#555")
-                fig.text(0.06, y - 0.025,
-                          f"P(Champion) {m['p_winner']:.2f}%   "
-                          f"P(Final) {m['p_final']:.1f}%   "
-                          f"P(SF) {m['p_sf']:.1f}%   "
-                          f"P(QF) {m['p_qf']:.1f}%   "
-                          f"P(R16) {m['p_r16']:.1f}%   "
-                          f"P(R32) {m['p_r32']:.1f}%",
+                fig.text(0.06, y - 0.022,
+                          f"Champion {pct_odds(m['p_winner'], dec=2)}   "
+                          f"Final {pct_odds(m['p_final'])}   "
+                          f"SF {pct_odds(m['p_sf'])}",
                           fontsize=9)
-                # Top 3 adversaires QF (= les 1/4 finale les + probables)
+                fig.text(0.06, y - 0.042,
+                          f"QF {pct_odds(m['p_qf'])}   "
+                          f"R16 {pct_odds(m['p_r16'])}   "
+                          f"R32 {pct_odds(m['p_r32'])}",
+                          fontsize=9)
                 opps_qf = m.get("top_opp_qf", [])
                 if opps_qf:
-                    opp_str = "  ".join([f"vs {o} {p:.0f}%" for o, p in opps_qf[:3]])
-                    fig.text(0.06, y - 0.05,
+                    opp_str = "  ".join([f"vs {o} {p:.0f}% ({_odds_str(p)})"
+                                          for o, p in opps_qf[:3]])
+                    fig.text(0.06, y - 0.065,
                               f"Quarts probables : {opp_str}",
-                              fontsize=8, color="#666")
-                # Top 3 R16
+                              fontsize=7, color="#666")
                 opps_r16 = m.get("top_opp_r16", [])
                 if opps_r16:
-                    opp_str = "  ".join([f"vs {o} {p:.0f}%" for o, p in opps_r16[:3]])
-                    fig.text(0.06, y - 0.07,
+                    opp_str = "  ".join([f"vs {o} {p:.0f}% ({_odds_str(p)})"
+                                          for o, p in opps_r16[:3]])
+                    fig.text(0.06, y - 0.083,
                               f"1/8 finale probables : {opp_str}",
-                              fontsize=8, color="#666")
+                              fontsize=7, color="#666")
                 y -= 0.12
             savepage(pdf, fig)
 
@@ -591,10 +615,10 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         rows = []
         for c, p, v, d in divs[:20]:
             arrow = "▲" if d > 0 else "▼"
-            rows.append([c, f"{v:.1f}%", f"{p:.1f}%", f"{arrow} {d:+.1f}"])
-        addtable(fig, [0.15, 0.30, 0.70, 0.62],
+            rows.append([c, pct_odds(v), pct_odds(p), f"{arrow} {d:+.1f}"])
+        addtable(fig, [0.06, 0.30, 0.88, 0.62],
                   ["Equipe", "P(R32) V8 prod", "P(R32) PELE", "Delta (pts)"],
-                  rows, col_widths=[0.15, 0.25, 0.25, 0.20], fontsize=9)
+                  rows, col_widths=[0.10, 0.32, 0.32, 0.18], fontsize=8)
 
         # Aussi : P(Champion) divergences
         fig.text(0.06, 0.26, "Et sur P(Champion) — top 10 ecarts :",
@@ -608,7 +632,8 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         divs_w.sort(key=lambda x: -abs(x[3]))
         for i, (c, v, p, d) in enumerate(divs_w[:10]):
             fig.text(0.06, 0.22 - i * 0.018,
-                      f"{c:6s}   V8 {v:5.2f}%   PELE {p:5.2f}%   delta {d:+.2f}",
+                      f"{c:6s}   V8 {v:5.2f}% ({_odds_str(v)})   "
+                      f"PELE {p:5.2f}% ({_odds_str(p)})   delta {d:+.2f}",
                       fontsize=8, family="monospace")
         savepage(pdf, fig)
 
@@ -689,30 +714,28 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
         for code, m in sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"]):
             elim_rows.append([
                 code,
-                f"{m['elim_groupe']:.1f}%",
-                f"{m['elim_1_16']:.1f}%",
-                f"{m['elim_1_8']:.1f}%",
-                f"{m['elim_1_4']:.1f}%",
-                f"{m['elim_1_2']:.1f}%",
-                f"{m['elim_finale']:.1f}%",
-                f"{m['p_winner']:.2f}%",
+                pct_odds(m['elim_groupe']),
+                pct_odds(m['elim_1_16']),
+                pct_odds(m['elim_1_8']),
+                pct_odds(m['elim_1_4']),
+                pct_odds(m['elim_1_2']),
+                pct_odds(m['elim_finale']),
+                pct_odds(m['p_winner'], dec=2),
             ])
-        # Top 24 page 1
-        addtable(fig, [0.06, 0.06, 0.88, 0.86],
+        addtable(fig, [0.02, 0.06, 0.96, 0.86],
                   ["Eq.", "Poule", "1/16", "1/8", "1/4", "1/2", "Finale", "Champion"],
                   elim_rows[:24],
-                  col_widths=[0.10, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.13],
-                  fontsize=9)
+                  col_widths=[0.06, 0.135, 0.135, 0.135, 0.135, 0.135, 0.135, 0.13],
+                  fontsize=7)
         savepage(pdf, fig)
 
-        # Page 2 elim stages (24 restantes)
         fig = newpage(pdf, "Probabilite d'elimination par stade — equipes #25 a #48",
                        "Triees par P(Champion) decroissant. Outsiders en bas.")
-        addtable(fig, [0.06, 0.06, 0.88, 0.86],
+        addtable(fig, [0.02, 0.06, 0.96, 0.86],
                   ["Eq.", "Poule", "1/16", "1/8", "1/4", "1/2", "Finale", "Champion"],
                   elim_rows[24:],
-                  col_widths=[0.10, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.13],
-                  fontsize=9)
+                  col_widths=[0.06, 0.135, 0.135, 0.135, 0.135, 0.135, 0.135, 0.13],
+                  fontsize=7)
         savepage(pdf, fig)
 
         # ─── NEW PAGE : CLASSEMENT ELO DE LA COMPETITION ──────────────────

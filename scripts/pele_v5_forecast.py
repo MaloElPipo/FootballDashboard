@@ -124,6 +124,7 @@ def run_full_tournament_mc(elo_map: dict, expected_scores: dict,
         "pos1": 0, "pos2": 0, "pos3": 0, "pos4": 0,
         "r32": 0, "r16": 0, "qf": 0, "sf": 0,
         "final": 0, "winner": 0, "runner_up": 0, "bronze": 0,
+        "pts_dist": defaultdict(int),
         "opp_r16": defaultdict(int),
         "opp_qf": defaultdict(int),
         "opp_sf": defaultdict(int),
@@ -146,6 +147,7 @@ def run_full_tournament_mc(elo_map: dict, expected_scores: dict,
             elif pos == 2: a["pos2"] += 1
             elif pos == 3: a["pos3"] += 1
             elif pos == 4: a["pos4"] += 1
+            a["pts_dist"][int(t.get("group_pts", 0))] += 1
             if t.get("r32"): a["r32"] += 1
             if t.get("r16"): a["r16"] += 1
             if t.get("qf"): a["qf"] += 1
@@ -180,7 +182,16 @@ def run_full_tournament_mc(elo_map: dict, expected_scores: dict,
             "p_bronze": a["bronze"] / n * 100,
             "top_opp_r16": _top_opp(a["opp_r16"], n),
             "top_opp_qf": _top_opp(a["opp_qf"], n),
+            "pts_dist": {p: c / n * 100 for p, c in a["pts_dist"].items()},
         }
+        # Elim stages : P(elim au tour X) = P(atteint X) - P(atteint suivant)
+        m = out[code]
+        m["elim_groupe"] = 100.0 - m["p_r32"]
+        m["elim_1_16"] = m["p_r32"] - m["p_r16"]
+        m["elim_1_8"] = m["p_r16"] - m["p_qf"]
+        m["elim_1_4"] = m["p_qf"] - m["p_sf"]
+        m["elim_1_2"] = m["p_sf"] - m["p_final"]
+        m["elim_finale"] = m["p_runner_up"]
     return out
 
 
@@ -391,39 +402,47 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
             for _md, pairings in ws.GROUP_MATCHES.items():
                 for ih, ia in pairings:
                     h, a = gteams[ih], gteams[ia]
-                    tr = silver_true.get((h, a)) or {
-                        k: v for k, v in {
-                            "p_h": silver_true.get((a, h), {}).get("p_a"),
-                            "p_d": silver_true.get((a, h), {}).get("p_d"),
-                            "p_a": silver_true.get((a, h), {}).get("p_h"),
-                            "lambda_h": silver_true.get((a, h), {}).get("lambda_a"),
-                            "lambda_a": silver_true.get((a, h), {}).get("lambda_h"),
-                        }.items() if v is not None
-                    } if silver_true.get((a, h)) else None
+                    tr = silver_true.get((h, a))
+                    if not tr:
+                        tr_rev = silver_true.get((a, h))
+                        if tr_rev:
+                            tr = {
+                                "p_h": tr_rev["p_a"],
+                                "p_d": tr_rev["p_d"],
+                                "p_a": tr_rev["p_h"],
+                                "lambda_h": tr_rev["lambda_a"],
+                                "lambda_a": tr_rev["lambda_h"],
+                            }
                     if tr:
                         ph, pd, pa = v4.wc_shrink_1x2(tr["p_h"], tr["p_d"], tr["p_a"])
                         lh, la = v4.wc_shrink_lambdas(tr["lambda_h"], tr["lambda_a"])
                     else:
-                        # fallback
                         lh, la = expected_scores.get((h, a), (1.3, 1.3))
                         ph, pd, pa = 0.0, 0.0, 0.0
+
+                    def _odds(p):
+                        return f"{1/p:.2f}" if p > 0.005 else "—"
+
                     mk = market.get((h, a))
-                    mk_str = (f"{mk[0]*100:.0f}/{mk[1]*100:.0f}/{mk[2]*100:.0f}"
-                              if mk else "—")
+                    if mk:
+                        mk_str = (f"{mk[0]*100:.0f}%/{mk[1]*100:.0f}%/{mk[2]*100:.0f}%  "
+                                   f"({_odds(mk[0])}/{_odds(mk[1])}/{_odds(mk[2])})")
+                    else:
+                        mk_str = "—"
                     match_rows.append([
                         f"{h} - {a}",
                         f"{lh:.2f}",
                         f"{la:.2f}",
-                        f"{ph*100:.0f}%",
-                        f"{pd*100:.0f}%",
-                        f"{pa*100:.0f}%",
-                        f"{round(lh):.0f}-{round(la):.0f}",
+                        f"{ph*100:.0f}% ({_odds(ph)})",
+                        f"{pd*100:.0f}% ({_odds(pd)})",
+                        f"{pa*100:.0f}% ({_odds(pa)})",
                         mk_str,
                     ])
-            addtable(fig, [0.06, 0.44, 0.88, 0.24],
-                      ["Match", "λ H", "λ A", "P(H)", "P(N)", "P(A)", "modal", "Pin H/N/A"],
-                      match_rows, col_widths=[0.16, 0.08, 0.08, 0.10, 0.10, 0.10,
-                                                0.12, 0.16], fontsize=8)
+            addtable(fig, [0.04, 0.44, 0.92, 0.24],
+                      ["Match", "λ H", "λ A", "PELE H (cote)", "PELE N (cote)",
+                       "PELE A (cote)", "Pinnacle H/N/A (cotes)"],
+                      match_rows, col_widths=[0.10, 0.06, 0.06, 0.13, 0.13, 0.13, 0.31],
+                      fontsize=7)
 
             # Progression KO probable par equipe
             fig.text(0.06, 0.40, "Progression KO sur 10k simulations (en %)",
@@ -632,6 +651,105 @@ def render_pdf(out: Path, mc_pele: dict, mc_v8: dict, teams: dict,
                   "Pas une recommandation de pari : PELE est ~5pts MAE moins precis "
                   "que Pinnacle en moyenne, edge doit etre > 5pts pour etre serieux.",
                   fontsize=8, color="#666", style="italic", wrap=True)
+        savepage(pdf, fig)
+
+        # ─── NEW PAGE : DISTRIBUTION POINTS PHASE POULE ───────────────────
+        # Possibles : 0,1,2,3,4,5,6,7,9 (jamais 8) sur 3 matchs
+        all_pts = [0, 1, 2, 3, 4, 5, 6, 7, 9]
+        # Split en 2 pages (24 + 24)
+        all_codes_by_grp = []
+        for grp, gteams in ws.WC2026_GROUPS.items():
+            for c in gteams:
+                all_codes_by_grp.append((grp, c))
+
+        for page_idx, slice_ in enumerate([(0, 24), (24, 48)]):
+            fig = newpage(pdf, f"Distribution des points phase poule — {page_idx*24+1} a {page_idx*24+min(24, 48-page_idx*24)}",
+                           "Probabilite (%) de terminer la poule avec exactement X points (3 matchs)")
+            rows = []
+            for grp, c in all_codes_by_grp[slice_[0]:slice_[1]]:
+                m = mc_pele.get(c, {})
+                pd_dict = m.get("pts_dist", {})
+                row = [grp, c]
+                for p in all_pts:
+                    v = pd_dict.get(p, 0)
+                    row.append(f"{v:.1f}" if v >= 0.1 else "")
+                row.append(f"{m.get('avg_pts', 0):.2f}")
+                rows.append(row)
+            addtable(fig, [0.04, 0.06, 0.92, 0.86],
+                      ["Gp", "Eq."] + [str(p) for p in all_pts] + ["avg"],
+                      rows,
+                      col_widths=[0.05, 0.07] + [0.07] * 9 + [0.08],
+                      fontsize=8)
+            savepage(pdf, fig)
+
+        # ─── NEW PAGE : PROBABILITES D'ELIMINATION PAR STADE ──────────────
+        fig = newpage(pdf, "Probabilite d'elimination par stade — 48 equipes",
+                       "P(une equipe sort precisement a ce tour). Somme par ligne = 100%.")
+        elim_rows = []
+        for code, m in sorted(mc_pele.items(), key=lambda x: -x[1]["p_winner"]):
+            elim_rows.append([
+                code,
+                f"{m['elim_groupe']:.1f}%",
+                f"{m['elim_1_16']:.1f}%",
+                f"{m['elim_1_8']:.1f}%",
+                f"{m['elim_1_4']:.1f}%",
+                f"{m['elim_1_2']:.1f}%",
+                f"{m['elim_finale']:.1f}%",
+                f"{m['p_winner']:.2f}%",
+            ])
+        # Top 24 page 1
+        addtable(fig, [0.06, 0.06, 0.88, 0.86],
+                  ["Eq.", "Poule", "1/16", "1/8", "1/4", "1/2", "Finale", "Champion"],
+                  elim_rows[:24],
+                  col_widths=[0.10, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.13],
+                  fontsize=9)
+        savepage(pdf, fig)
+
+        # Page 2 elim stages (24 restantes)
+        fig = newpage(pdf, "Probabilite d'elimination par stade — equipes #25 a #48",
+                       "Triees par P(Champion) decroissant. Outsiders en bas.")
+        addtable(fig, [0.06, 0.06, 0.88, 0.86],
+                  ["Eq.", "Poule", "1/16", "1/8", "1/4", "1/2", "Finale", "Champion"],
+                  elim_rows[24:],
+                  col_widths=[0.10, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.13],
+                  fontsize=9)
+        savepage(pdf, fig)
+
+        # ─── NEW PAGE : CLASSEMENT ELO DE LA COMPETITION ──────────────────
+        fig = newpage(pdf, "Classement ELO de la competition CDM 2026",
+                       "48 nations triees par rating PELE (Silver Bulletin). V8 prod en comparaison.")
+        elo_rows = []
+        wc_codes = set()
+        for grp, gteams in ws.WC2026_GROUPS.items():
+            for c in gteams:
+                wc_codes.add((c, grp))
+        elo_list = []
+        for c, grp in wc_codes:
+            t = teams.get(c, {})
+            pele = t.get("pele", 0)
+            tilt = t.get("tilt", 0)
+            v8e = v8_elo.get(c, 1500)
+            elo_list.append((c, grp, pele, tilt, v8e))
+        elo_list.sort(key=lambda x: -x[2])
+        for rang, (c, grp, pele, tilt, v8e) in enumerate(elo_list, 1):
+            elo_rows.append([
+                rang, c, grp,
+                f"{pele:.0f}",
+                f"{tilt:+.3f}",
+                f"{v8e:.0f}",
+                f"{pele - v8e:+.0f}",
+            ])
+        # 2 colonnes (24 + 24) pour tenir sur une page
+        rows_left = elo_rows[:24]
+        rows_right = elo_rows[24:]
+        addtable(fig, [0.02, 0.06, 0.48, 0.86],
+                  ["#", "Eq.", "Gp", "PELE", "Tilt", "V8", "Δ"],
+                  rows_left,
+                  col_widths=[0.06, 0.10, 0.07, 0.13, 0.16, 0.13, 0.13], fontsize=8)
+        addtable(fig, [0.51, 0.06, 0.48, 0.86],
+                  ["#", "Eq.", "Gp", "PELE", "Tilt", "V8", "Δ"],
+                  rows_right,
+                  col_widths=[0.06, 0.10, 0.07, 0.13, 0.16, 0.13, 0.13], fontsize=8)
         savepage(pdf, fig)
 
         # ─── PAGE 22 : LIMITATIONS & SAUVEGARDE ────────────────────────────

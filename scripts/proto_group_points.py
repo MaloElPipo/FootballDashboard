@@ -50,7 +50,10 @@ def wdl_poisson_elo(elo_h: float, elo_a: float, mx: int = 12) -> tuple[float, fl
                 pd += p
             else:
                 pl += p
-    return pw, pd, pl
+    # Renormalisation : la masse tronquee (~0.18% au-dela de mx) ne doit pas
+    # etre attribuee implicitement aux victoires exterieures (biais away).
+    tot = pw + pd + pl
+    return pw / tot, pd / tot, pl / tot
 
 
 def wdl_sigmoid(elo_h: float, elo_a: float) -> tuple[float, float, float]:

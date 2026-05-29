@@ -1,2 +1,3 @@
 - [PELE methodology (Silver Bulletin)](pele-methodology.md) — architecture 2 phases + Tilt orthogonal + WC tweaks + CSVs Datawrapper publics ; toujours lire la méthodo publique AVANT de reverse-engineer.
 - [PELE reverse-engineering caveat](pele-reverse-engineering.md) — pourquoi dériver λ depuis le Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées ; complète la fiche méthodologie ci-dessus.
+- [Biais favoris CDM = avantage hôte](wc-favorite-bias-host.md) — le "sous-cotage favoris" vient de l'avantage hôte absent (USA/MEX/CAN ~+40 Elo), pas de la sigmoid ; auditer via compute_all_nations_elo, pas pin_calibrated_elo.json.

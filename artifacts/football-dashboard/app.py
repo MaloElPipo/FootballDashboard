@@ -2384,9 +2384,13 @@ elif page == "🔮 Prédictions":
         return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
 
     @st.cache_data(ttl=600)
-    def _cached_simulation(n, expected_scores_key):
+    def _cached_simulation(n, expected_scores_key, market_1x2_key):
         expected_scores = dict(expected_scores_key) if expected_scores_key else {}
-        return run_simulation(n_sims=n, params={"expected_scores": expected_scores})
+        market_1x2 = dict(market_1x2_key) if market_1x2_key else {}
+        return run_simulation(n_sims=n, params={
+            "expected_scores": expected_scores,
+            "market_1x2": market_1x2,
+        })
 
     @st.cache_data(ttl=600)
     def _cached_group_preds():
@@ -2418,6 +2422,27 @@ elif page == "🔮 Prédictions":
             except Exception:
                 continue
         return scores
+
+    def _build_market_1x2():
+        """Construit le 1X2 marché Pinnacle de-vigé par match de poule, fourni
+        au simulateur (params["market_1x2"]) pour tirer l'issue W/N/D des points
+        (cf. GROUP_OUTCOME_MODEL côté wc_simulator). Les pin_h/pin_d/pin_a sont
+        déjà de-vigés (somme=100) dans _cached_pinnacle_data ; on les renvoie en
+        fractions (somme=1), orientés (home, away) côté Pinnacle. Le simulateur
+        gère l'inversion d'orientation et le fallback sigmoïde si non couvert.
+        """
+        pin_resp = _cached_pinnacle_data()
+        pin_data = pin_resp.get("_data", {}) if isinstance(pin_resp, dict) else {}
+        out = {}
+        for (h_code, a_code), pd_pin in pin_data.items():
+            ph, pdr, pa = pd_pin.get("pin_h"), pd_pin.get("pin_d"), pd_pin.get("pin_a")
+            if ph is None or pdr is None or pa is None:
+                continue
+            tot = ph + pdr + pa
+            if tot <= 0:
+                continue
+            out[(h_code, a_code)] = (ph / tot, pdr / tot, pa / tot)
+        return out
 
     _PIN_ODDS_TO_CODE = {
         "France":"FRA","Spain":"ESP","Germany":"GER","England":"ENG",
@@ -2518,8 +2543,10 @@ elif page == "🔮 Prédictions":
 
     n_sims = st.selectbox("Nombre de simulations", [1000, 5000, 10000, 50000], index=2, key="pred_n_sims")
     _exp_scores = _build_expected_scores()
+    _mkt_1x2 = _build_market_1x2()
     _exp_key = tuple(sorted(_exp_scores.items())) if _exp_scores else None
-    sim_data = _cached_simulation(n_sims, _exp_key)
+    _mkt_key = tuple(sorted(_mkt_1x2.items())) if _mkt_1x2 else None
+    sim_data = _cached_simulation(n_sims, _exp_key, _mkt_key)
 
     tab_sim, tab_bracket, tab_elim, tab_matches, tab_value = st.tabs([
         "🏆 Simulation globale",

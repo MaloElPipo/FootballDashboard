@@ -26,6 +26,18 @@ GROUP_MATCHES = {
     "MD3": [(3, 0), (1, 2)],
 }
 
+# --- Modèle de résultat des matchs de poule (FLAG ROLLBACK) -----------------
+# "market"  (DÉFAUT) : l'issue W/N/D qui attribue les points est tirée du 1X2
+#                      marché Pinnacle de-vigé (params["market_1x2"]) quand le
+#                      match est couvert, sinon fallback sigmoïde calibrée
+#                      sigmoid_v8_1x2. Corrige la compression des favoris/qualif
+#                      (2 Poisson Elo indépendants sur-produisaient les nuls) et
+#                      capte l'avantage hôte présent dans les cotes.
+# "legacy"            : ancien modèle = 2 Poisson Elo indépendants
+#                      (simulate_match_goals). Pour REVENIR EN ARRIÈRE, remettre
+#                      simplement cette constante à "legacy".
+GROUP_OUTCOME_MODEL = "market"
+
 R32_BRACKET = [
     {"match": 73, "home": ("2", "A"), "away": ("2", "B")},
     {"match": 74, "home": ("1", "E"), "away": ("3rd", "A/B/C/D/F")},
@@ -447,8 +459,10 @@ def simulate_tournament(elo_map, params=None):
     })
 
     expected_scores = {}
+    market_1x2 = {}
     if params:
         expected_scores = params.get("expected_scores") or {}
+        market_1x2 = params.get("market_1x2") or {}
 
     group_results = {}
 
@@ -465,8 +479,35 @@ def simulate_tournament(elo_map, params=None):
                 elo_h = elo_map.get(h_code, 1500)
                 elo_a = elo_map.get(a_code, 1500)
 
-                # Issue stochastique du match (W/D/L → pts) basée sur Elo
-                gh, ga = simulate_match_goals(elo_h, elo_a, h_code, a_code)
+                # Issue stochastique du match (W/N/D → pts). Voir GROUP_OUTCOME_MODEL
+                # (flag rollback en tête de fichier).
+                if GROUP_OUTCOME_MODEL == "legacy":
+                    gh, ga = simulate_match_goals(elo_h, elo_a, h_code, a_code)
+                    outcome = "H" if gh > ga else ("D" if gh == ga else "A")
+                else:
+                    mk = market_1x2.get((h_code, a_code))
+                    if mk is not None:
+                        pw, pdraw, pl = mk
+                    else:
+                        mk_rev = market_1x2.get((a_code, h_code))
+                        if mk_rev is not None:
+                            # Entrée orientée (away, home) côté marché : on inverse.
+                            p_a, pdraw, p_h = mk_rev
+                            pw, pl = p_h, p_a
+                        else:
+                            pw, pdraw, pl = sigmoid_v8_1x2(
+                                elo_h - elo_a,
+                                elo_avg=(elo_h + elo_a) / 2.0,
+                                phase="G",
+                            )
+                    # Garde-fou : renormaliser (somme=1) pour qu'une éventuelle
+                    # entrée marché malformée ne laisse pas de masse résiduelle
+                    # absorbée implicitement par la victoire extérieure (biais).
+                    _s = pw + pdraw + pl
+                    if _s > 0:
+                        pw, pdraw, pl = pw / _s, pdraw / _s, pl / _s
+                    u = random.random()
+                    outcome = "H" if u < pw else ("D" if u < pw + pdraw else "A")
 
                 # Buts pour départage : on utilise les lambdas continues (xG
                 # attendu) plutôt que le score modal entier. C'est aussi
@@ -488,12 +529,12 @@ def simulate_tournament(elo_map, params=None):
                 h2h_log[a_code][h_code]["gf"] += xa
                 h2h_log[a_code][h_code]["ga"] += xh
 
-                if gh > ga:
+                if outcome == "H":
                     standings[h_code]["pts"] += 3
                     standings[h_code]["w"] += 1
                     standings[a_code]["l"] += 1
                     h2h_log[h_code][a_code]["pts"] += 3
-                elif gh == ga:
+                elif outcome == "D":
                     standings[h_code]["pts"] += 1
                     standings[a_code]["pts"] += 1
                     standings[h_code]["d"] += 1

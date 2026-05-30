@@ -2636,6 +2636,56 @@ elif page == "🔮 Prédictions":
                     unsafe_allow_html=True,
                 )
 
+                with st.expander(f"📊 Détail des probabilités par nation — Poule {grp_letter}"):
+                    st.caption(
+                        "Cote décimale (en gras) et probabilité (%) issues de la "
+                        "simulation Monte Carlo. Buts marqués = total sur les 3 "
+                        "matchs de poule. Note : le résultat des matchs (points / "
+                        "classement) et les buts marqués sont simulés séparément ; "
+                        "ces tableaux sont des distributions marginales, non "
+                        "couplées entre elles."
+                    )
+                    for r in grp_teams:
+                        st.markdown(
+                            f"**{flag_img(r['code'])} {r['fr']}**",
+                            unsafe_allow_html=True,
+                        )
+                        c_pts, c_pos, c_goals = st.columns([9, 4, 6])
+                        with c_pts:
+                            st.markdown("**Nombre de points**")
+                            pts_rows = [
+                                {"Pts": str(p), "Cote / Prob.": _odds_cell(r.get("pts_dist", {}).get(p, 0.0))}
+                                for p in (0, 1, 2, 3, 4, 5, 6, 7, 9)
+                            ]
+                            st.markdown(
+                                pd.DataFrame(pts_rows).to_html(escape=False, index=False),
+                                unsafe_allow_html=True,
+                            )
+                        with c_pos:
+                            st.markdown("**Classement final**")
+                            pos_rows = [
+                                {"Place": "1er", "Cote / Prob.": _odds_cell(r["p_1st"])},
+                                {"Place": "2e", "Cote / Prob.": _odds_cell(r["p_2nd"])},
+                                {"Place": "3e", "Cote / Prob.": _odds_cell(r["p_3rd"])},
+                                {"Place": "4e", "Cote / Prob.": _odds_cell(r["p_4th"])},
+                            ]
+                            st.markdown(
+                                pd.DataFrame(pos_rows).to_html(escape=False, index=False),
+                                unsafe_allow_html=True,
+                            )
+                        with c_goals:
+                            st.markdown("**Buts marqués (3 matchs)**")
+                            gd = r.get("goals_dist", {})
+                            goals_rows = [
+                                {"Buts": k, "Cote / Prob.": _odds_cell(gd.get(k, 0.0))}
+                                for k in ("0", "1", "2", "3", "4", "5+")
+                            ]
+                            st.markdown(
+                                pd.DataFrame(goals_rows).to_html(escape=False, index=False),
+                                unsafe_allow_html=True,
+                            )
+                        st.markdown("---")
+
     with tab_bracket:
         st.subheader("🔀 Bracket — Adversaires probables par tour")
         sim_data_bracket = sim_data

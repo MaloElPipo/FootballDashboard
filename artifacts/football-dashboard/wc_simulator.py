@@ -243,6 +243,29 @@ def simulate_match_goals(elo_h, elo_a, home_code=None, away_code=None):
     return poisson_sample(lambda_h), poisson_sample(lambda_a)
 
 
+def _poisson_sample(lam):
+    """Tirage Poisson(lam) (méthode de Knuth), cohérent avec le sampler interne
+    de simulate_match_goals. Retourne un entier >= 0."""
+    if lam <= 0:
+        return 0
+    L = math.exp(-lam)
+    k = 0
+    p = 1.0
+    while True:
+        k += 1
+        p *= random.random()
+        if p < L:
+            return k - 1
+
+
+def _bucket_goals(counts, n_sims):
+    """Convertit un compteur {buts: occurrences} en distribution (%) bucketisée
+    0,1,2,3,4,5+ buts marqués sur les 3 matchs de poule."""
+    out = {str(k): counts.get(k, 0) / n_sims * 100 for k in range(5)}
+    out["5+"] = sum(v for k, v in counts.items() if k >= 5) / n_sims * 100
+    return out
+
+
 def simulate_knockout_match(elo_h, elo_a, home_code=None, away_code=None):
     gh, ga = simulate_match_goals(elo_h, elo_a, home_code, away_code)
     if gh != ga:
@@ -451,7 +474,7 @@ def _assign_thirds_to_slots(qualified_thirds):
 
 def simulate_tournament(elo_map, params=None):
     tracker = defaultdict(lambda: {
-        "group_pos": 0, "group_pts": 0,
+        "group_pos": 0, "group_pts": 0, "group_goals_scored": 0,
         "r32": False, "r16": False, "qf": False,
         "sf": False, "final": False, "winner": False,
         "bronze": False, "runner_up": False,
@@ -523,6 +546,12 @@ def simulate_tournament(elo_map, params=None):
                 standings[h_code]["ga"] += xa
                 standings[a_code]["gf"] += xa
                 standings[a_code]["ga"] += xh
+
+                # Buts marqués entiers (Poisson), cumulés sur les 3 matchs de
+                # poule, pour les tableaux récap par nation. Indépendant du
+                # départage continu ci-dessus et de l'issue 1X2 tirée plus haut.
+                tracker[h_code]["group_goals_scored"] += _poisson_sample(xh)
+                tracker[a_code]["group_goals_scored"] += _poisson_sample(xa)
 
                 h2h_log[h_code][a_code]["gf"] += xh
                 h2h_log[h_code][a_code]["ga"] += xa
@@ -695,6 +724,8 @@ def run_simulation(n_sims=10000, params=None):
         "group_gf_total": 0.0,
         "group_ga_total": 0.0,
         "group_pos_counts": defaultdict(int),
+        "group_pts_counts": defaultdict(int),
+        "group_goals_counts": defaultdict(int),
         "r32": 0, "r16": 0, "qf": 0, "sf": 0, "final": 0, "winner": 0,
         "runner_up": 0, "bronze": 0,
         "opponents": {"r32": defaultdict(int), "r16": defaultdict(int),
@@ -710,6 +741,8 @@ def run_simulation(n_sims=10000, params=None):
             a["group_gf_total"] += data.get("group_gf", 0)
             a["group_ga_total"] += data.get("group_ga", 0)
             a["group_pos_counts"][data["group_pos"]] += 1
+            a["group_pts_counts"][data["group_pts"]] += 1
+            a["group_goals_counts"][data.get("group_goals_scored", 0)] += 1
             for stage in ["r32", "r16", "qf", "sf", "final", "winner", "runner_up", "bronze"]:
                 if data.get(stage):
                     a[stage] += 1
@@ -763,6 +796,9 @@ def run_simulation(n_sims=10000, params=None):
             "p_2nd": a["group_pos_counts"].get(2, 0) / n_sims * 100,
             "p_3rd": a["group_pos_counts"].get(3, 0) / n_sims * 100,
             "p_4th": a["group_pos_counts"].get(4, 0) / n_sims * 100,
+            "pts_dist": {p: a["group_pts_counts"].get(p, 0) / n_sims * 100
+                         for p in (0, 1, 2, 3, 4, 5, 6, 7, 9)},
+            "goals_dist": _bucket_goals(a["group_goals_counts"], n_sims),
             "p_r32": a["r32"] / n_sims * 100,
             "p_r16": a["r16"] / n_sims * 100,
             "p_qf": a["qf"] / n_sims * 100,

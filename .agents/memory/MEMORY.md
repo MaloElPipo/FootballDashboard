@@ -1,3 +1,4 @@
+- [Betfair scraping marchés secondaires](betfair-market-navigation.md) — la page "plus" ne rend que le 1X2 ; BTTS/O-U nécessitent de naviguer vers l'URL propre de chaque marché ; limiter à ~5 navigations.
 - [PELE methodology (Silver Bulletin)](pele-methodology.md) — architecture 2 phases + Tilt orthogonal + WC tweaks + CSVs Datawrapper publics ; toujours lire la méthodo publique AVANT de reverse-engineer.
 - [PELE reverse-engineering caveat](pele-reverse-engineering.md) — pourquoi dériver λ depuis le Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées ; complète la fiche méthodologie ci-dessus.
 - [WC sim outcome-model split](wc-sim-outcome-model-split.md) — points/qualif CDM compressés car le résultat de poule tire 2 Poisson Elo indépendants ≠ sigmoïde calibrée affichée ; fix = tirer l'issue du 1X2 marché/sigmoïde.

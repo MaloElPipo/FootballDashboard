@@ -2797,7 +2797,9 @@ elif page == "🔮 Prédictions":
         st.subheader("Probabilités 1X2 + xG & O/U — Tous les matchs de poules")
         st.caption(
             "Modèle V8 (1X2) + Poisson G2+ (xG, O/U, BTTS). "
-            "Comparatif coloré vs Pinnacle : 🟢 vert = value, 🔴 rouge = anti-value."
+            "Comparatif coloré vs Pinnacle : 🟢 vert = value, 🔴 rouge = anti-value. "
+            "« Pin X.XX brut » = cote affichée par Pinnacle (avec marge) ; "
+            "« Y.YY équit. » = cote dé-vigée (marge retirée) utilisée pour l'écart de value."
         )
 
         import math as _m1x2_math
@@ -2831,7 +2833,7 @@ elif page == "🔮 Prédictions":
             else:
                 return "#8B0000"
 
-        def _colored_odds_cell(prob_pct, pin_prob_pct=None):
+        def _colored_odds_cell(prob_pct, pin_prob_pct=None, pin_raw_odds=None):
             if prob_pct <= 0:
                 return "—"
             odds = 100 / prob_pct
@@ -2840,7 +2842,13 @@ elif page == "🔮 Prédictions":
                 ecart = prob_pct - pin_prob_pct
                 pin_odds = 100 / pin_prob_pct
                 color = _value_color(ecart)
-                base += f"<br><span style='font-size:0.65em;color:{color}'>Pin {pin_odds:.2f} ({ecart:+.1f}%)</span>"
+                if pin_raw_odds is not None and pin_raw_odds > 0:
+                    base += (
+                        f"<br><span style='font-size:0.65em;color:{color}'>"
+                        f"Pin {pin_raw_odds:.2f} brut / {pin_odds:.2f} équit. ({ecart:+.1f}%)</span>"
+                    )
+                else:
+                    base += f"<br><span style='font-size:0.65em;color:{color}'>Pin {pin_odds:.2f} ({ecart:+.1f}%)</span>"
             return base
 
         def _ou_cell(prob_pct, pin_prob_pct=None):
@@ -2898,12 +2906,16 @@ elif page == "🔮 Prédictions":
                 pin_pd = pd_pin["pin_d"] if pd_pin else None
                 pin_pa = pd_pin["pin_a"] if pd_pin else None
 
+                pin_oh = pd_pin["oh"] if pd_pin else None
+                pin_od = pd_pin["od"] if pd_pin else None
+                pin_oa = pd_pin["oa"] if pd_pin else None
+
                 row = {
                     "Match": f"{fh} {m['home_fr']} vs {m['away_fr']} {fa}",
                     "ΔElo": f"{m['delta']:+d}",
-                    "1": _colored_odds_cell(m["p_home"], pin_ph),
-                    "X": _colored_odds_cell(m["p_draw"], pin_pd),
-                    "2": _colored_odds_cell(m["p_away"], pin_pa),
+                    "1": _colored_odds_cell(m["p_home"], pin_ph, pin_oh),
+                    "X": _colored_odds_cell(m["p_draw"], pin_pd, pin_od),
+                    "2": _colored_odds_cell(m["p_away"], pin_pa, pin_oa),
                 }
 
                 if pd_pin and pd_pin.get("ou25_under") and pd_pin["ou25_under"] > 1.0:

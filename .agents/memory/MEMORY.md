@@ -1,4 +1,5 @@
 - [Betfair scraping marchés secondaires](betfair-market-navigation.md) — la page "plus" ne rend que le 1X2 ; BTTS/O-U nécessitent de naviguer vers l'URL propre de chaque marché ; limiter à ~5 navigations.
+- [Betclic outright marchés par étape](betclic-outright-markets-reach.md) — l'outright CDM2026 n'expose que ~6 marchés via gRPC ; les "Stade atteint - Huitième/Quart/Demi" sont lazy-loadés (clic onglet) → capture navigateur requise, inutile de re-balayer les events/proxy.
 - [PELE methodology (Silver Bulletin)](pele-methodology.md) — architecture 2 phases + Tilt orthogonal + WC tweaks + CSVs Datawrapper publics ; toujours lire la méthodo publique AVANT de reverse-engineer.
 - [PELE reverse-engineering caveat](pele-reverse-engineering.md) — pourquoi dériver λ depuis le Round-Robin (att×def×tilt) produit des prédictions ultra-tranchées ; complète la fiche méthodologie ci-dessus.
 - [WC sim buts poule = xG continu](wc-sim-group-goals-modeling.md) — le classement de poule utilise des xG continus, pas de buts entiers ; toute distribution de buts exige un tirage Poisson discret séparé, découplé de l'issue 1X2.

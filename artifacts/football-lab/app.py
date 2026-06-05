@@ -12,6 +12,8 @@ Le labo lit la prod (snapshots dates) mais n'y ecrit jamais.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import streamlit as st
 
 from lab import snapshots
@@ -90,29 +92,31 @@ metriques, et un report markdown qui acte la decision.
 """
     )
 
-    c1, c2, c3 = st.columns(3)
+    n_phases = sum(1 for k in PAGES if k.startswith("Phase"))
+    reports_dir = Path(__file__).resolve().parent / "lab" / "reports"
+    n_reports = len(list(reports_dir.glob("*.md"))) if reports_dir.exists() else 0
+
+    c1, c2, c3, c4 = st.columns(4)
     with c1:
-        st.metric("Phases setup", "0 / 6")
+        st.metric("Phases construites", f"{n_phases} / {n_phases}")
     with c2:
-        st.metric("Snapshots prod", len(snap_list))
+        st.metric("Reports rediges", n_reports)
     with c3:
+        st.metric("Snapshots prod", len(snap_list))
+    with c4:
         try:
             st.metric("Entrees cache BSD", bsd_client.cache_stats()["count"])
         except Exception:
             st.metric("Entrees cache BSD", "?")
 
     st.divider()
-    st.subheader("Prochaine etape")
+    st.subheader("Etat des phases")
     st.info(
-        "Aller dans **Admin — Snapshots & Cache** pour figer un snapshot prod "
-        "de reference. Puis lancer la Phase 1."
+        "Les 6 phases sont **construites** (pages + algos + reports). Les reports "
+        "sont en statut DRAFT : les backtests se lancent manuellement depuis chaque "
+        "page. La Phase 5 (Sharp Tracker) accumule ses donnees sur ~3 semaines "
+        "avant analyse retrospective."
     )
-
-
-def render_placeholder(title: str, desc: str):
-    st.title(title)
-    st.info(desc)
-    st.caption("Cette phase n'est pas encore developpee.")
 
 
 def render_admin():

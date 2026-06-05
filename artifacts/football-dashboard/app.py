@@ -2573,8 +2573,8 @@ elif page == "🔮 Prédictions":
                     "BP": f"{r.get('avg_gf', 0):.2f}",
                     "BC": f"{r.get('avg_ga', 0):.2f}",
                     "+/-": f"{r.get('avg_gd', 0):+.2f}",
-                    "1/32": _odds_cell(r["p_r32"]),
-                    "1/16": _odds_cell(r["p_r16"]),
+                    "1/16": _odds_cell(r["p_r32"]),
+                    "1/8": _odds_cell(r["p_r16"]),
                     "1/4": _odds_cell(r["p_qf"]),
                     "1/2": _odds_cell(r["p_sf"]),
                     "Finale": _odds_cell(r["p_final"]),
@@ -2699,8 +2699,8 @@ elif page == "🔮 Prédictions":
             st.markdown(f"### {flag_img(sel_code)} {sel_data['fr']} — Poule {sel_data['group']} — ELO {sel_data['elo']}")
 
             stages = [
-                ("r32", "1/32e", sel_data["p_r32"]),
-                ("r16", "1/16e", sel_data["p_r16"]),
+                ("r32", "1/16e", sel_data["p_r32"]),
+                ("r16", "1/8e", sel_data["p_r16"]),
                 ("qf", "1/4 finale", sel_data["p_qf"]),
                 ("sf", "1/2 finale", sel_data["p_sf"]),
                 ("final", "Finale", sel_data["p_final"]),
@@ -2751,8 +2751,8 @@ elif page == "🔮 Prédictions":
                 "Nation": f"{flag_img(r['code'])} {r['fr']}",
                 "Poule": r["group"],
                 "Élim. Poules": f"{r['elim_group']:.1f}%",
-                "Élim. 1/32": f"{r['elim_r32']:.1f}%",
-                "Élim. 1/16": f"{r['elim_r16']:.1f}%",
+                "Élim. 1/16": f"{r['elim_r32']:.1f}%",
+                "Élim. 1/8": f"{r['elim_r16']:.1f}%",
                 "Élim. 1/4": f"{r['elim_qf']:.1f}%",
                 "Élim. 1/2": f"{r['elim_sf']:.1f}%",
                 "Élim. Finale": f"{r['elim_final']:.1f}%",
@@ -2770,11 +2770,11 @@ elif page == "🔮 Prédictions":
         top20_elim = sim_data_elim[:20]
         fig_elim = go_elim.Figure()
         stage_colors = {
-            "Poules": "#d62728", "1/32": "#ff7f0e", "1/16": "#ffbb78",
+            "Poules": "#d62728", "1/16": "#ff7f0e", "1/8": "#ffbb78",
             "1/4": "#98df8a", "1/2": "#2ca02c", "Finale": "#1f77b4", "Titre": "#FFD700",
         }
         for stage_name, key in [
-            ("Poules", "elim_group"), ("1/32", "elim_r32"), ("1/16", "elim_r16"),
+            ("Poules", "elim_group"), ("1/16", "elim_r32"), ("1/8", "elim_r16"),
             ("1/4", "elim_qf"), ("1/2", "elim_sf"), ("Finale", "elim_final"),
             ("Titre", "p_winner"),
         ]:

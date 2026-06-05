@@ -1860,6 +1860,10 @@ Si la question est en anglais, réponds en anglais."""
 elif page == "📅 Calendrier CDM 2026":
     st.header("📅 Calendrier — Coupe du Monde 2026")
     st.caption("🇺🇸🇨🇦🇲🇽 États-Unis · Canada · Mexique — 11 juin au 19 juillet 2026 — Données BSD Sports")
+    st.markdown(
+        "<style>@keyframes pulse{0%{opacity:1}50%{opacity:0.35}100%{opacity:1}}</style>",
+        unsafe_allow_html=True,
+    )
 
     BSD_BASE_URL = "https://sports.bzzoiro.com/api"
     BSD_KEY = os.environ.get("BSD_API_KEY", "")
@@ -1934,7 +1938,7 @@ elif page == "📅 Calendrier CDM 2026":
             )
         return team_name
 
-    @st.cache_data(ttl=3600)
+    @st.cache_data(ttl=60)
     def fetch_wc_events():
         all_events = []
         offset = 0
@@ -2140,6 +2144,49 @@ elif page == "📅 Calendrier CDM 2026":
 
         st.markdown("---")
 
+        @st.fragment(run_every="60s")
+        def _live_now_section():
+            from datetime import datetime as _dtn
+            try:
+                _le = fetch_wc_events()
+            except Exception:
+                _le = []
+            live_evs = [e for e in _le if e.get("status") == "inprogress"]
+            now_lbl = _dtn.now().strftime("%H:%M:%S")
+            st.markdown(
+                "<div style='display:flex;align-items:center;gap:10px;margin:2px 0 6px'>"
+                "<span style='background:#ff3b30;color:#fff;font-weight:700;font-size:0.72em;"
+                "padding:2px 8px;border-radius:5px;animation:pulse 1.4s infinite'>🔴 EN DIRECT</span>"
+                f"<span style='color:#6b7280;font-size:0.75em'>actualisation auto (60 s) · {now_lbl}</span>"
+                "</div>",
+                unsafe_allow_html=True,
+            )
+            if not live_evs:
+                st.caption("Aucun match en direct pour le moment.")
+                return
+            live_evs.sort(key=lambda e: e.get("event_date", ""))
+            for ev in live_evs:
+                home = ev.get("home_team", "?")
+                away = ev.get("away_team", "?")
+                hs = ev.get("home_score", 0)
+                as_ = ev.get("away_score", 0)
+                minute = ev.get("current_minute", "?")
+                st.markdown(
+                    "<div style='display:flex;align-items:center;justify-content:center;gap:14px;"
+                    "background:#161a22;border:1px solid #2a2f3a;border-left:3px solid #ff3b30;"
+                    "border-radius:8px;padding:8px 14px;margin:5px 0'>"
+                    f"<div style='flex:1;text-align:right;font-weight:600'>{_flag(home)} {_team_display(home)}</div>"
+                    "<div style='text-align:center;min-width:92px'>"
+                    f"<div style='font-size:1.3em;font-weight:700;color:#ff5c5c'>{hs} — {as_}</div>"
+                    f"<div style='font-size:0.7em;color:#ff3b30;animation:pulse 1.4s infinite'>🔴 {minute}'</div></div>"
+                    f"<div style='flex:1;text-align:left;font-weight:600'>{_team_display(away)} {_flag(away)}</div>"
+                    "</div>",
+                    unsafe_allow_html=True,
+                )
+
+        _live_now_section()
+        st.markdown("---")
+
         phase_filter = st.radio(
             "Phase",
             ["Tout", "Phase de groupes", "Phase finale"],
@@ -2209,12 +2256,24 @@ elif page == "📅 Calendrier CDM 2026":
                         as_ = ev.get("away_score")
 
                         if status == "finished" and hs is not None:
-                            score_display = f"**{hs} — {as_}**"
+                            score_display = (
+                                "<span style='background:#262b36;color:#9aa3b2;font-size:0.6em;"
+                                "padding:1px 6px;border-radius:4px;vertical-align:middle;"
+                                "letter-spacing:0.04em'>TERMINÉ</span>"
+                                f"<br><b style='font-size:1.05em'>{hs} — {as_}</b>"
+                            )
                         elif status == "inprogress":
                             minute = ev.get("current_minute", "?")
-                            score_display = f"🔴 {hs} — {as_} ({minute}')"
+                            score_display = (
+                                "<span style='background:#ff3b30;color:#fff;font-size:0.6em;"
+                                "padding:1px 6px;border-radius:4px;vertical-align:middle;"
+                                f"animation:pulse 1.4s infinite'>🔴 {minute}'</span>"
+                                f"<br><b style='font-size:1.05em;color:#ff5c5c'>{hs} — {as_}</b>"
+                            )
                         else:
-                            score_display = f"🕐 {kick_time}"
+                            score_display = (
+                                f"<span style='color:#9aa3b2;font-size:0.95em'>🕐 {kick_time}</span>"
+                            )
 
                         h_link = _team_display(home)
                         a_link = _team_display(away)
@@ -2366,9 +2425,15 @@ elif page == "📅 Calendrier CDM 2026":
 elif page == "🔮 Prédictions":
     from wc_simulator import (
         WC2026_GROUPS, run_simulation, get_group_predictions,
-        sigmoid_v8_1x2, _build_elo_map,
+        sigmoid_v8_1x2, _build_elo_map, simulate_bracket_mc,
         GROUP_MATCHES, R32_BRACKET, R16_PAIRINGS, QF_PAIRINGS, SF_PAIRINGS,
         _assign_thirds_to_slots,
+    )
+    from wc_live import (
+        fetch_wc_events as _fetch_wc_live,
+        build_locked_results as _build_locked,
+        locked_cache_key as _locked_cache_key,
+        locked_from_key as _locked_from_key,
     )
     import plotly.graph_objects as go
 
@@ -2386,17 +2451,33 @@ elif page == "🔮 Prédictions":
         return f"<b>{odds:.2f}</b><br><span style='font-size:0.7em;color:#888'>{prob_pct:.1f}%</span>"
 
     @st.cache_data(ttl=600)
-    def _cached_simulation(n, expected_scores_key, market_1x2_key):
+    def _cached_simulation(n, expected_scores_key, market_1x2_key, locked_key=()):
         expected_scores = dict(expected_scores_key) if expected_scores_key else {}
         market_1x2 = dict(market_1x2_key) if market_1x2_key else {}
+        locked = _locked_from_key(locked_key)
         return run_simulation(n_sims=n, params={
             "expected_scores": expected_scores,
             "market_1x2": market_1x2,
+            "locked_results": locked,
         })
 
     @st.cache_data(ttl=600)
     def _cached_group_preds():
         return get_group_predictions()
+
+    @st.cache_data(ttl=600, show_spinner=False)
+    def _cached_bracket_mc(n, recalc_k, elo_recalc, expected_scores_key, market_1x2_key, locked_key=()):
+        expected_scores = dict(expected_scores_key) if expected_scores_key else {}
+        market_1x2 = dict(market_1x2_key) if market_1x2_key else {}
+        locked = _locked_from_key(locked_key)
+        return simulate_bracket_mc(
+            n_sims=n, elo_recalc=elo_recalc, recalc_k=recalc_k,
+            params={
+                "expected_scores": expected_scores,
+                "market_1x2": market_1x2,
+                "locked_results": locked,
+            },
+        )
 
     def _build_expected_scores():
         """Pré-calcule les lambdas (xG attendu) home/away de chaque match de
@@ -2548,7 +2629,25 @@ elif page == "🔮 Prédictions":
     _mkt_1x2 = _build_market_1x2()
     _exp_key = tuple(sorted(_exp_scores.items())) if _exp_scores else None
     _mkt_key = tuple(sorted(_mkt_1x2.items())) if _mkt_1x2 else None
-    sim_data = _cached_simulation(n_sims, _exp_key, _mkt_key)
+
+    # ── Verrouillage EN DIRECT : fige les résultats réels (BSD) dans la sim ──────
+    try:
+        _live_events = _fetch_wc_live()
+    except Exception:
+        _live_events = []
+    _locked = _build_locked(_live_events)
+    _locked_key = _locked_cache_key(_locked)
+    _n_grp_locked = len(_locked["group"])
+    _n_ko_locked = len(_locked["ko"])
+    if _n_grp_locked or _n_ko_locked:
+        st.success(
+            f"🔒 **Résultats réels figés** : {_n_grp_locked} match(s) de poule et "
+            f"{_n_ko_locked} match(s) à élimination directe terminés sont verrouillés "
+            "sur leur issue réelle (source BSD). Le reste du tableau reste simulé en "
+            "Monte-Carlo — la simulation et le bracket reflètent les vrais qualifiés."
+        )
+
+    sim_data = _cached_simulation(n_sims, _exp_key, _mkt_key, _locked_key)
 
     tab_sim, tab_bracket, tab_full, tab_elim, tab_matches, tab_value = st.tabs([
         "🏆 Simulation globale",
@@ -2744,92 +2843,51 @@ elif page == "🔮 Prédictions":
                     st.caption("Aucun adversaire significatif (< 0.5%)")
 
     with tab_full:
-        st.subheader("🗺️ Bracket complet — Parcours le plus probable")
+        st.subheader("🗺️ Bracket complet — cohérent Monte-Carlo")
         st.caption(
-            "Tableau final reconstitué à partir du scénario **le plus probable** : "
-            "pour chaque poule, le 1er et le 2e sont les nations au plus grand nombre "
-            "de points attendus (modèle Sigmoid V8), et les 8 meilleurs 3es sont "
-            "départagés puis placés selon le règlement FIFA. Chaque rencontre est ensuite "
-            "résolue en faisant qualifier le favori. La **cote** affichée est la cote de "
-            "qualification de chaque équipe pour le match en question (prolongation / tirs "
-            "au but inclus, draw réparti au prorata des forces — phase KO). Le vainqueur "
-            "projeté de chaque duel est surligné en vert."
-        )
-        st.info(
-            "ℹ️ Il s'agit d'une projection déterministe (chemin modal), **pas** d'une "
-            "moyenne Monte Carlo : elle montre à quoi ressemblerait un bracket « parfait » "
-            "si chaque favori l'emportait. Pour les probabilités de parcours moyennées, "
-            "voir l'onglet « Simulation globale ».",
-            icon="ℹ️",
+            "Tableau final reconstruit depuis la simulation Monte-Carlo : les 32 "
+            "emplacements du 1er tour à élimination directe sont remplis par l'occupant "
+            "le plus fréquent (modal) sur toutes les simulations, puis le **vainqueur "
+            "projeté** de chaque duel avance — ce qui garantit un arbre **connecté** "
+            "(pas une équipe en finale sans gagner sa demie). La **cote** de chaque duel "
+            "est la cote de qualification **empirique** observée (P(équipe se qualifie | "
+            "elle affronte cet adversaire), prolongation / tab incluses). Quand un "
+            "appariement est trop rare pour une estimation fiable, on bascule sur un repli "
+            "analytique (Sigmoid V8 phase KO sur l'Elo post-poules moyen) — indiqué par "
+            "« ≈ ». Le vainqueur projeté de chaque duel est surligné en vert."
         )
 
-        elo_map_pb = {r["code"]: r["elo"] for r in sim_data}
+        cca, ccb, ccc = st.columns([1.1, 1, 1.4])
+        with cca:
+            n_bracket = st.selectbox(
+                "Simulations du bracket", [500, 1000, 2000, 4000], index=2,
+                key="bracket_n_sims",
+                help="Plus de simulations = cotes empiriques plus stables, mais calcul plus long.",
+            )
+        with ccb:
+            elo_recalc = st.toggle(
+                "Recalcul ELO post-poules", value=True, key="bracket_elo_recalc",
+                help="Recalcule l'ELO de chaque nation après le 1er tour (résultats des "
+                     "poules de chaque simulation) et l'utilise pour les tours à "
+                     "élimination directe. N'affecte QUE cet onglet.",
+            )
+        with ccc:
+            recalc_k = st.slider(
+                "Facteur K (force du recalcul)", min_value=10, max_value=80, value=40,
+                step=5, key="bracket_recalc_k", disabled=not elo_recalc,
+                help="Ampleur de l'ajustement ELO par match de poule. K élevé = l'ELO "
+                     "réagit fortement aux résultats du 1er tour.",
+            )
 
-        def _ko_advance(h_code, a_code):
-            eh = elo_map_pb.get(h_code, 1500)
-            ea = elo_map_pb.get(a_code, 1500)
-            ph, pdr, pa = sigmoid_v8_1x2(eh - ea, elo_avg=(eh + ea) / 2, phase="K")
-            denom = ph + pa
-            if denom > 0:
-                ph_adv = ph + pdr * (ph / denom)
-                pa_adv = pa + pdr * (pa / denom)
-            else:
-                ph_adv = pa_adv = 0.5
-            return ph_adv, pa_adv
+        with st.spinner(f"Simulation du bracket ({n_bracket} tirages)…"):
+            br = _cached_bracket_mc(
+                int(n_bracket), float(recalc_k), bool(elo_recalc),
+                _exp_key, _mkt_key, _locked_key
+            )
 
-        def _tie(h_code, a_code):
-            ph_adv, pa_adv = _ko_advance(h_code, a_code)
-            winner = h_code if ph_adv >= pa_adv else a_code
-            return {"home": h_code, "away": a_code, "ph": ph_adv, "pa": pa_adv, "winner": winner}
-
-        def _loser(m):
-            return m["away"] if m["winner"] == m["home"] else m["home"]
-
-        # 1) Classement de poule déterministe (points attendus, départage Elo)
-        standings = {}
-        for grp, teams in WC2026_GROUPS.items():
-            xpts = {c: 0.0 for c in teams}
-            for _md, pairings in GROUP_MATCHES.items():
-                for i_h, i_a in pairings:
-                    hc, ac = teams[i_h], teams[i_a]
-                    eh = elo_map_pb.get(hc, 1500)
-                    ea = elo_map_pb.get(ac, 1500)
-                    ph, pdr, pa = sigmoid_v8_1x2(eh - ea, elo_avg=(eh + ea) / 2, phase="G")
-                    xpts[hc] += 3 * ph + pdr
-                    xpts[ac] += 3 * pa + pdr
-            ranked = sorted(teams, key=lambda c: (-xpts[c], -elo_map_pb.get(c, 1500)))
-            standings[grp] = ranked
-
-        # 2) Meilleurs 3es (départage par points attendus puis Elo) + placement slots
-        thirds = []
-        for grp in standings:
-            third_code = standings[grp][2]
-            thirds.append((grp, third_code, elo_map_pb.get(third_code, 1500)))
-        thirds.sort(key=lambda t: -t[2])
-        best8 = thirds[:8]
-        third_assignments = _assign_thirds_to_slots([(t[0], t[1]) for t in best8])
-
-        def _resolve(slot_def, match_num):
-            typ, grp = slot_def
-            if typ == "1":
-                return standings[grp][0]
-            if typ == "2":
-                return standings[grp][1]
-            return third_assignments.get(match_num, "UNK")
-
-        # 3) Déroulé du tableau final
-        r32 = {}
-        for slot in R32_BRACKET:
-            mn = slot["match"]
-            hc = _resolve(slot["home"], mn)
-            ac = _resolve(slot["away"], mn)
-            r32[mn] = _tie(hc, ac)
-
-        r16 = [_tie(r32[m1]["winner"], r32[m2]["winner"]) for (m1, m2) in R16_PAIRINGS]
-        qf = [_tie(r16[i1]["winner"], r16[i2]["winner"]) for (i1, i2) in QF_PAIRINGS]
-        sf = [_tie(qf[i1]["winner"], qf[i2]["winner"]) for (i1, i2) in SF_PAIRINGS]
-        final = _tie(sf[0]["winner"], sf[1]["winner"])
-        bronze = _tie(_loser(sf[0]), _loser(sf[1]))
+        r32 = br["r32"]
+        r16, qf, sf = br["r16"], br["qf"], br["sf"]
+        final, bronze = br["final"], br["bronze"]
 
         r32_ordered = []
         for (m1, m2) in R16_PAIRINGS:
@@ -2845,13 +2903,16 @@ elif page == "🔮 Prédictions":
             oh = 1 / m["ph"] if m["ph"] > 0.01 else 99.0
             oa = 1 / m["pa"] if m["pa"] > 0.01 else 99.0
             h_win = m["winner"] == h
+            approx = "" if m.get("src") == "mc" else "≈"
+            tip = (f"{m.get('samples', 0)} affrontements simulés"
+                   if m.get("src") == "mc" else "repli analytique (appariement rare)")
             rows = ""
             for code, odd, win in ((h, oh, h_win), (a, oa, not h_win)):
                 cls = "pb-team pb-win" if win else "pb-team"
                 rows += (
-                    f"<div class='{cls}'>"
+                    f"<div class='{cls}' title='{tip}'>"
                     f"<span class='pb-name'>{flag_img(code)} {_name(code)}</span>"
-                    f"<span class='pb-odd'>{odd:.2f}</span>"
+                    f"<span class='pb-odd'>{approx}{odd:.2f}</span>"
                     f"</div>"
                 )
             return f"<div class='pb-match'>{rows}</div>"
@@ -2901,6 +2962,67 @@ elif page == "🔮 Prédictions":
         st.markdown(css + "<div class='pb-wrap'><div class='pb' style='min-width:auto'>"
                     + _round_html("Petite finale", [bronze])
                     + "</div></div>", unsafe_allow_html=True)
+
+        if elo_recalc:
+            st.markdown("---")
+            st.markdown("#### 📈 ELO recalculé après le 1er tour")
+            st.caption(
+                f"ELO moyen (sur {n_bracket} simulations) avant le tournoi vs après la "
+                f"phase de poules — facteur K = {recalc_k}. Cet ELO post-poules pilote les "
+                "tours à élimination directe **uniquement dans cet onglet**."
+            )
+            elo_before = br["elo_before"]
+            elo_after = br["elo_after"]
+            rows_elo = []
+            for code in elo_before:
+                bef = elo_before[code]
+                aft = elo_after.get(code, bef)
+                nat = get_nation_by_code(code)
+                rows_elo.append({
+                    "Nation": f"{flag_img(code)} {nat['fr'] if nat else code}",
+                    "ELO avant": round(bef),
+                    "ELO après": round(aft),
+                    "Δ": round(aft - bef, 1),
+                })
+            rows_elo.sort(key=lambda r: -r["Δ"])
+            cg, cp = st.columns(2)
+            with cg:
+                st.markdown("**Plus fortes hausses**")
+                st.markdown(
+                    "".join(
+                        f"<div style='display:flex;justify-content:space-between;"
+                        f"padding:3px 0;font-size:0.9em'>{r['Nation']}"
+                        f"<span style='color:#00e08a;font-weight:700'>+{r['Δ']:.1f}</span></div>"
+                        for r in rows_elo[:6]
+                    ),
+                    unsafe_allow_html=True,
+                )
+            with cp:
+                st.markdown("**Plus fortes baisses**")
+                st.markdown(
+                    "".join(
+                        f"<div style='display:flex;justify-content:space-between;"
+                        f"padding:3px 0;font-size:0.9em'>{r['Nation']}"
+                        f"<span style='color:#ff5c5c;font-weight:700'>{r['Δ']:.1f}</span></div>"
+                        for r in rows_elo[-6:][::-1]
+                    ),
+                    unsafe_allow_html=True,
+                )
+            with st.expander("Voir les 48 nations (ELO avant / après / Δ)"):
+                st.markdown(
+                    "<style>.elo-rt td,.elo-rt th{padding:2px 10px;font-size:0.85em}"
+                    ".elo-rt img{height:13px;border-radius:2px;vertical-align:middle}</style>"
+                    "<table class='elo-rt'><tr><th>Nation</th><th>Avant</th><th>Après</th><th>Δ</th></tr>"
+                    + "".join(
+                        f"<tr><td>{r['Nation']}</td><td>{r['ELO avant']}</td>"
+                        f"<td>{r['ELO après']}</td>"
+                        f"<td style='color:{'#00e08a' if r['Δ'] >= 0 else '#ff5c5c'}'>"
+                        f"{'+' if r['Δ'] >= 0 else ''}{r['Δ']:.1f}</td></tr>"
+                        for r in rows_elo
+                    )
+                    + "</table>",
+                    unsafe_allow_html=True,
+                )
 
     with tab_elim:
         st.subheader("📉 Stade d'élimination — Toutes les nations")

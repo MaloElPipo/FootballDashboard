@@ -5,3 +5,4 @@
 - [WC sim buts poule = xG continu](wc-sim-group-goals-modeling.md) — le classement de poule utilise des xG continus, pas de buts entiers ; toute distribution de buts exige un tirage Poisson discret séparé, découplé de l'issue 1X2.
 - [WC sim outcome-model split](wc-sim-outcome-model-split.md) — points/qualif CDM compressés car le résultat de poule tire 2 Poisson Elo indépendants ≠ sigmoïde calibrée affichée ; fix = tirer l'issue du 1X2 marché/sigmoïde.
 - [Biais favoris CDM = avantage hôte](wc-favorite-bias-host.md) — le "sous-cotage favoris" vient de l'avantage hôte absent (USA/MEX/CAN ~+40 Elo), pas de la sigmoid ; auditer via compute_all_nations_elo, pas pin_calibrated_elo.json.
+- [WC bracket arbre connecté](wc-bracket-connected-tree.md) — le « Bracket complet » garde modal R32 + avancée des vainqueurs (arbre connecté), PAS modal par slot ; choix produit, ne pas « corriger ».

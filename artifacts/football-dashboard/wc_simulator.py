@@ -472,6 +472,30 @@ def _assign_thirds_to_slots(qualified_thirds):
     return assignment
 
 
+def _update_elo_from_results(base_elo, results, k=40.0):
+    """Recalcule l'Elo des nations à partir d'une liste de résultats de poule.
+
+    `results` : liste de (home_code, away_code, outcome) avec outcome ∈ {H,D,A}.
+    Mise à jour Elo logistique standard (échelle 400), facteur K = `k`, terrain
+    neutre (pas d'avantage hôte : matchs de poule CDM essentiellement neutres).
+    Retourne une NOUVELLE map (l'originale n'est pas modifiée).
+    """
+    new = dict(base_elo)
+    for h, a, outcome in results:
+        eh = new.get(h, 1500.0)
+        ea = new.get(a, 1500.0)
+        exp_h = 1.0 / (1.0 + 10.0 ** ((ea - eh) / 400.0))
+        if outcome == "H":
+            s_h = 1.0
+        elif outcome == "D":
+            s_h = 0.5
+        else:
+            s_h = 0.0
+        new[h] = eh + k * (s_h - exp_h)
+        new[a] = ea + k * ((1.0 - s_h) - (1.0 - exp_h))
+    return new
+
+
 def simulate_tournament(elo_map, params=None):
     tracker = defaultdict(lambda: {
         "group_pos": 0, "group_pts": 0, "group_goals_scored": 0,
@@ -483,11 +507,20 @@ def simulate_tournament(elo_map, params=None):
 
     expected_scores = {}
     market_1x2 = {}
+    elo_recalc = False
+    recalc_k = 40.0
+    return_bracket = False
+    locked_results = {}
     if params:
         expected_scores = params.get("expected_scores") or {}
         market_1x2 = params.get("market_1x2") or {}
+        elo_recalc = bool(params.get("elo_recalc"))
+        recalc_k = float(params.get("recalc_k", 40.0))
+        return_bracket = bool(params.get("_return_bracket"))
+        locked_results = params.get("locked_results") or {}
 
     group_results = {}
+    group_match_results = []
 
     for grp_letter, teams in WC2026_GROUPS.items():
         standings = {}
@@ -558,6 +591,18 @@ def simulate_tournament(elo_map, params=None):
                 h2h_log[a_code][h_code]["gf"] += xa
                 h2h_log[a_code][h_code]["ga"] += xh
 
+                # Verrouillage live : si le vrai résultat de ce match de poule
+                # est connu (CDM en cours), il écrase l'issue simulée.
+                lg = locked_results.get("group") if locked_results else None
+                if lg:
+                    lk = lg.get((h_code, a_code))
+                    if lk is None:
+                        rev = lg.get((a_code, h_code))
+                        if rev is not None:
+                            lk = {"H": "A", "A": "H", "D": "D"}[rev]
+                    if lk in ("H", "D", "A"):
+                        outcome = lk
+
                 if outcome == "H":
                     standings[h_code]["pts"] += 3
                     standings[h_code]["w"] += 1
@@ -575,6 +620,9 @@ def simulate_tournament(elo_map, params=None):
                     standings[a_code]["w"] += 1
                     standings[h_code]["l"] += 1
                     h2h_log[a_code][h_code]["pts"] += 3
+
+                if elo_recalc:
+                    group_match_results.append((h_code, a_code, outcome))
 
         ranked = _rank_group(standings, h2h_log=h2h_log, elo_map=elo_map)
         group_results[grp_letter] = ranked
@@ -604,6 +652,31 @@ def simulate_tournament(elo_map, params=None):
         group_runners[grp_letter] = ranked[1][0]
 
     third_assignments = _assign_thirds_to_slots(best_thirds)
+
+    # Recalcul Elo post-poules (optionnel) : sert UNIQUEMENT à piloter les tours
+    # à élimination directe. Les départages de poule ci-dessus restent fondés
+    # sur l'Elo pré-tournoi (proxy ranking FIFA), inchangés.
+    if elo_recalc:
+        ko_elo = _update_elo_from_results(elo_map, group_match_results, k=recalc_k)
+    else:
+        ko_elo = elo_map
+
+    # Verrouillage live des matchs KO : un vrai vainqueur connu écrase la sim.
+    lko = locked_results.get("ko") if locked_results else None
+
+    def _ko_winner(h_code, a_code):
+        elo_h = ko_elo.get(h_code, 1500)
+        elo_a = ko_elo.get(a_code, 1500)
+        result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
+        winner = h_code if result == "H" else a_code
+        if lko and h_code != "UNK" and a_code != "UNK":
+            lw = lko.get(frozenset((h_code, a_code)))
+            if lw in (h_code, a_code):
+                winner = lw
+        return winner
+
+    bracket = {"r32": {}, "r16": [], "qf": [], "sf": [],
+               "final": None, "bronze": None, "elo_after": {}}
 
     r32_results = {}
     for slot in R32_BRACKET:
@@ -637,11 +710,9 @@ def simulate_tournament(elo_map, params=None):
         tracker[h_code]["opponents"]["r32"] = a_code
         tracker[a_code]["opponents"]["r32"] = h_code
 
-        elo_h = elo_map.get(h_code, 1500)
-        elo_a = elo_map.get(a_code, 1500)
-        result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
-        winner = h_code if result == "H" else a_code
+        winner = _ko_winner(h_code, a_code)
         r32_results[mn] = winner
+        bracket["r32"][mn] = (h_code, a_code, winner)
 
     r16_winners = []
     for m1, m2 in R16_PAIRINGS:
@@ -651,11 +722,9 @@ def simulate_tournament(elo_map, params=None):
         tracker[a_code]["r16"] = True
         tracker[h_code]["opponents"]["r16"] = a_code
         tracker[a_code]["opponents"]["r16"] = h_code
-        elo_h = elo_map.get(h_code, 1500)
-        elo_a = elo_map.get(a_code, 1500)
-        result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
-        winner = h_code if result == "H" else a_code
+        winner = _ko_winner(h_code, a_code)
         r16_winners.append(winner)
+        bracket["r16"].append((h_code, a_code, winner))
 
     qf_winners = []
     for i, (m1, m2) in enumerate(QF_PAIRINGS):
@@ -665,11 +734,9 @@ def simulate_tournament(elo_map, params=None):
         tracker[a_code]["qf"] = True
         tracker[h_code]["opponents"]["qf"] = a_code
         tracker[a_code]["opponents"]["qf"] = h_code
-        elo_h = elo_map.get(h_code, 1500)
-        elo_a = elo_map.get(a_code, 1500)
-        result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
-        winner = h_code if result == "H" else a_code
+        winner = _ko_winner(h_code, a_code)
         qf_winners.append(winner)
+        bracket["qf"].append((h_code, a_code, winner))
 
     sf_winners = []
     sf_losers = []
@@ -680,24 +747,20 @@ def simulate_tournament(elo_map, params=None):
         tracker[a_code]["sf"] = True
         tracker[h_code]["opponents"]["sf"] = a_code
         tracker[a_code]["opponents"]["sf"] = h_code
-        elo_h = elo_map.get(h_code, 1500)
-        elo_a = elo_map.get(a_code, 1500)
-        result, _, _ = simulate_knockout_match(elo_h, elo_a, h_code, a_code)
-        winner = h_code if result == "H" else a_code
-        loser = a_code if result == "H" else h_code
+        winner = _ko_winner(h_code, a_code)
+        loser = a_code if winner == h_code else h_code
         sf_winners.append(winner)
         sf_losers.append(loser)
+        bracket["sf"].append((h_code, a_code, winner))
 
     if len(sf_losers) == 2:
         b_h = sf_losers[0]
         b_a = sf_losers[1]
         tracker[b_h]["opponents"]["bronze"] = b_a
         tracker[b_a]["opponents"]["bronze"] = b_h
-        elo_h = elo_map.get(b_h, 1500)
-        elo_a = elo_map.get(b_a, 1500)
-        result_b, _, _ = simulate_knockout_match(elo_h, elo_a, b_h, b_a)
-        bronze = b_h if result_b == "H" else b_a
+        bronze = _ko_winner(b_h, b_a)
         tracker[bronze]["bronze"] = True
+        bracket["bronze"] = (b_h, b_a, bronze)
 
     f_h = sf_winners[0]
     f_a = sf_winners[1]
@@ -705,14 +768,16 @@ def simulate_tournament(elo_map, params=None):
     tracker[f_a]["final"] = True
     tracker[f_h]["opponents"]["final"] = f_a
     tracker[f_a]["opponents"]["final"] = f_h
-    elo_h = elo_map.get(f_h, 1500)
-    elo_a = elo_map.get(f_a, 1500)
-    result, _, _ = simulate_knockout_match(elo_h, elo_a, f_h, f_a)
-    champion = f_h if result == "H" else f_a
-    runner_up = f_a if result == "H" else f_h
+    champion = _ko_winner(f_h, f_a)
+    runner_up = f_a if champion == f_h else f_h
     tracker[champion]["winner"] = True
     tracker[runner_up]["runner_up"] = True
+    bracket["final"] = (f_h, f_a, champion)
 
+    if return_bracket:
+        for code in elo_map:
+            bracket["elo_after"][code] = ko_elo.get(code, elo_map.get(code, 1500))
+        return dict(tracker), bracket
     return dict(tracker)
 
 
@@ -856,3 +921,125 @@ def get_group_predictions(elo_map=None, params=None):
                 })
         results[grp_letter] = matches
     return results
+
+
+def _modal(counter):
+    """Retourne la clé la plus fréquente d'un dict {clé: compte}."""
+    if not counter:
+        return "UNK"
+    return max(counter.items(), key=lambda kv: kv[1])[0]
+
+
+def simulate_bracket_mc(n_sims=2000, params=None, elo_recalc=True, recalc_k=40.0):
+    """Bracket Monte-Carlo COHÉRENT avec la simulation globale.
+
+    Méthode (arbre CONNECTÉ) :
+      - Les 32 emplacements du 1er tour à élimination directe (R32) sont remplis
+        par l'occupant le plus fréquent (modal) sur `n_sims` simulations.
+      - Les tours suivants (8es → finale) ne sont PAS reconstruits par occupant
+        modal indépendant (cela donnerait un arbre disjoint : une équipe affichée
+        en finale sans être affichée gagnante de sa demie). On fait AVANCER le
+        vainqueur projeté de chaque duel reconstitué, ce qui garantit un arbre
+        cohérent et lisible.
+      - La cote de qualification de chaque duel est dérivée des FRÉQUENCES
+        EMPIRIQUES de la même simulation (P(A se qualifie | A affronte B)
+        observée), avec repli analytique (Sigmoid V8 phase K sur l'Elo
+        post-poules moyen) quand l'appariement est trop rare pour une estimation
+        fiable.
+
+    Si `elo_recalc=True`, l'Elo de chaque nation est recalculé après le 1er tour
+    À L'INTÉRIEUR de chaque simulation (MAJ logistique, facteur K `recalc_k`, sur
+    les résultats de poule de cette simulation) ; ce sont ces Elo post-poules qui
+    pilotent les tours à élimination directe.
+
+    `params` accepte aussi `market_1x2`, `expected_scores` et `locked_results`
+    (résultats réels figés) comme `simulate_tournament`.
+
+    Retourne un dict prêt pour l'affichage : structure du bracket par tour,
+    cotes par duel (source "mc" ou "elo"), et Elo moyen avant/après 1er tour.
+    """
+    elo_map = _build_elo_map()
+    sim_params = dict(params or {})
+    sim_params["elo_recalc"] = elo_recalc
+    sim_params["recalc_k"] = recalc_k
+    sim_params["_return_bracket"] = True
+
+    stages = ("r32", "r16", "qf", "sf", "final", "bronze")
+    occ_home = defaultdict(lambda: defaultdict(int))
+    occ_away = defaultdict(lambda: defaultdict(int))
+    h2h = {st: defaultdict(lambda: defaultdict(int)) for st in stages}
+    elo_after_sum = defaultdict(float)
+
+    for _ in range(n_sims):
+        _, br = simulate_tournament(elo_map, sim_params)
+        # R32 : occupants modaux par emplacement (base de l'arbre).
+        for mn, (h, a, w) in br["r32"].items():
+            occ_home[("r32", mn)][h] += 1
+            occ_away[("r32", mn)][a] += 1
+            if h != "UNK" and a != "UNK" and h != a:
+                h2h["r32"][frozenset((h, a))][w] += 1
+        # Tours suivants : on n'a besoin que des fréquences H2H empiriques par
+        # paire (les occupants sont déterminés par les vainqueurs des duels
+        # reconstitués pour garder un arbre CONNECTÉ — voir docstring).
+        for st in ("r16", "qf", "sf"):
+            for (h, a, w) in br[st]:
+                if h != "UNK" and a != "UNK" and h != a:
+                    h2h[st][frozenset((h, a))][w] += 1
+        for st in ("final", "bronze"):
+            tup = br[st]
+            if tup:
+                h, a, w = tup
+                if h != "UNK" and a != "UNK" and h != a:
+                    h2h[st][frozenset((h, a))][w] += 1
+        for code, e in br["elo_after"].items():
+            elo_after_sum[code] += e
+
+    mean_elo_after = {c: elo_after_sum[c] / n_sims for c in elo_after_sum} if n_sims else {}
+    min_pair = max(20, int(0.01 * n_sims))
+
+    def _tie(stage, h, a):
+        rec = h2h[stage].get(frozenset((h, a))) if (h != a and h != "UNK" and a != "UNK") else None
+        if rec:
+            wh = rec.get(h, 0)
+            wa = rec.get(a, 0)
+            tot = wh + wa
+            if tot >= min_pair:
+                ph = wh / tot
+                return {"home": h, "away": a, "ph": ph, "pa": 1.0 - ph,
+                        "winner": h if ph >= 0.5 else a, "src": "mc", "samples": tot}
+        eh = mean_elo_after.get(h, elo_map.get(h, 1500))
+        ea = mean_elo_after.get(a, elo_map.get(a, 1500))
+        p_h, p_dr, p_a = sigmoid_v8_1x2(eh - ea, elo_avg=(eh + ea) / 2.0, phase="K")
+        denom = p_h + p_a
+        ph = (p_h + p_dr * (p_h / denom)) if denom > 0 else 0.5
+        return {"home": h, "away": a, "ph": ph, "pa": 1.0 - ph,
+                "winner": h if ph >= 0.5 else a, "src": "elo", "samples": 0}
+
+    r32 = {}
+    for slot in R32_BRACKET:
+        mn = slot["match"]
+        r32[mn] = _tie("r32", _modal(occ_home[("r32", mn)]), _modal(occ_away[("r32", mn)]))
+
+    r16 = [_tie("r16", r32[m1]["winner"], r32[m2]["winner"]) for (m1, m2) in R16_PAIRINGS]
+    qf = [_tie("qf", r16[i1]["winner"], r16[i2]["winner"]) for (i1, i2) in QF_PAIRINGS]
+    sf = [_tie("sf", qf[i1]["winner"], qf[i2]["winner"]) for (i1, i2) in SF_PAIRINGS]
+    final = _tie("final", sf[0]["winner"], sf[1]["winner"])
+
+    def _loser(m):
+        return m["away"] if m["winner"] == m["home"] else m["home"]
+
+    bronze = _tie("bronze", _loser(sf[0]), _loser(sf[1]))
+
+    return {
+        "r32": r32,
+        "r16": r16,
+        "qf": qf,
+        "sf": sf,
+        "final": final,
+        "bronze": bronze,
+        "elo_before": {c: elo_map.get(c, 1500) for c in elo_map},
+        "elo_after": mean_elo_after,
+        "n_sims": n_sims,
+        "recalc_k": recalc_k,
+        "elo_recalc": elo_recalc,
+    }

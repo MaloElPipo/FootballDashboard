@@ -2367,6 +2367,8 @@ elif page == "🔮 Prédictions":
     from wc_simulator import (
         WC2026_GROUPS, run_simulation, get_group_predictions,
         sigmoid_v8_1x2, _build_elo_map,
+        GROUP_MATCHES, R32_BRACKET, R16_PAIRINGS, QF_PAIRINGS, SF_PAIRINGS,
+        _assign_thirds_to_slots,
     )
     import plotly.graph_objects as go
 
@@ -2548,9 +2550,10 @@ elif page == "🔮 Prédictions":
     _mkt_key = tuple(sorted(_mkt_1x2.items())) if _mkt_1x2 else None
     sim_data = _cached_simulation(n_sims, _exp_key, _mkt_key)
 
-    tab_sim, tab_bracket, tab_elim, tab_matches, tab_value = st.tabs([
+    tab_sim, tab_bracket, tab_full, tab_elim, tab_matches, tab_value = st.tabs([
         "🏆 Simulation globale",
         "🔀 Bracket / Adversaires",
+        "🗺️ Bracket complet",
         "📉 Stade d'élimination",
         "⚽ Matchs 1X2",
         "💎 Détection de Value",
@@ -2739,6 +2742,165 @@ elif page == "🔮 Prédictions":
                     )
                 else:
                     st.caption("Aucun adversaire significatif (< 0.5%)")
+
+    with tab_full:
+        st.subheader("🗺️ Bracket complet — Parcours le plus probable")
+        st.caption(
+            "Tableau final reconstitué à partir du scénario **le plus probable** : "
+            "pour chaque poule, le 1er et le 2e sont les nations au plus grand nombre "
+            "de points attendus (modèle Sigmoid V8), et les 8 meilleurs 3es sont "
+            "départagés puis placés selon le règlement FIFA. Chaque rencontre est ensuite "
+            "résolue en faisant qualifier le favori. La **cote** affichée est la cote de "
+            "qualification de chaque équipe pour le match en question (prolongation / tirs "
+            "au but inclus, draw réparti au prorata des forces — phase KO). Le vainqueur "
+            "projeté de chaque duel est surligné en vert."
+        )
+        st.info(
+            "ℹ️ Il s'agit d'une projection déterministe (chemin modal), **pas** d'une "
+            "moyenne Monte Carlo : elle montre à quoi ressemblerait un bracket « parfait » "
+            "si chaque favori l'emportait. Pour les probabilités de parcours moyennées, "
+            "voir l'onglet « Simulation globale ».",
+            icon="ℹ️",
+        )
+
+        elo_map_pb = {r["code"]: r["elo"] for r in sim_data}
+
+        def _ko_advance(h_code, a_code):
+            eh = elo_map_pb.get(h_code, 1500)
+            ea = elo_map_pb.get(a_code, 1500)
+            ph, pdr, pa = sigmoid_v8_1x2(eh - ea, elo_avg=(eh + ea) / 2, phase="K")
+            denom = ph + pa
+            if denom > 0:
+                ph_adv = ph + pdr * (ph / denom)
+                pa_adv = pa + pdr * (pa / denom)
+            else:
+                ph_adv = pa_adv = 0.5
+            return ph_adv, pa_adv
+
+        def _tie(h_code, a_code):
+            ph_adv, pa_adv = _ko_advance(h_code, a_code)
+            winner = h_code if ph_adv >= pa_adv else a_code
+            return {"home": h_code, "away": a_code, "ph": ph_adv, "pa": pa_adv, "winner": winner}
+
+        def _loser(m):
+            return m["away"] if m["winner"] == m["home"] else m["home"]
+
+        # 1) Classement de poule déterministe (points attendus, départage Elo)
+        standings = {}
+        for grp, teams in WC2026_GROUPS.items():
+            xpts = {c: 0.0 for c in teams}
+            for _md, pairings in GROUP_MATCHES.items():
+                for i_h, i_a in pairings:
+                    hc, ac = teams[i_h], teams[i_a]
+                    eh = elo_map_pb.get(hc, 1500)
+                    ea = elo_map_pb.get(ac, 1500)
+                    ph, pdr, pa = sigmoid_v8_1x2(eh - ea, elo_avg=(eh + ea) / 2, phase="G")
+                    xpts[hc] += 3 * ph + pdr
+                    xpts[ac] += 3 * pa + pdr
+            ranked = sorted(teams, key=lambda c: (-xpts[c], -elo_map_pb.get(c, 1500)))
+            standings[grp] = ranked
+
+        # 2) Meilleurs 3es (départage par points attendus puis Elo) + placement slots
+        thirds = []
+        for grp in standings:
+            third_code = standings[grp][2]
+            thirds.append((grp, third_code, elo_map_pb.get(third_code, 1500)))
+        thirds.sort(key=lambda t: -t[2])
+        best8 = thirds[:8]
+        third_assignments = _assign_thirds_to_slots([(t[0], t[1]) for t in best8])
+
+        def _resolve(slot_def, match_num):
+            typ, grp = slot_def
+            if typ == "1":
+                return standings[grp][0]
+            if typ == "2":
+                return standings[grp][1]
+            return third_assignments.get(match_num, "UNK")
+
+        # 3) Déroulé du tableau final
+        r32 = {}
+        for slot in R32_BRACKET:
+            mn = slot["match"]
+            hc = _resolve(slot["home"], mn)
+            ac = _resolve(slot["away"], mn)
+            r32[mn] = _tie(hc, ac)
+
+        r16 = [_tie(r32[m1]["winner"], r32[m2]["winner"]) for (m1, m2) in R16_PAIRINGS]
+        qf = [_tie(r16[i1]["winner"], r16[i2]["winner"]) for (i1, i2) in QF_PAIRINGS]
+        sf = [_tie(qf[i1]["winner"], qf[i2]["winner"]) for (i1, i2) in SF_PAIRINGS]
+        final = _tie(sf[0]["winner"], sf[1]["winner"])
+        bronze = _tie(_loser(sf[0]), _loser(sf[1]))
+
+        r32_ordered = []
+        for (m1, m2) in R16_PAIRINGS:
+            r32_ordered.append(r32[m1])
+            r32_ordered.append(r32[m2])
+
+        def _name(code):
+            nat = get_nation_by_code(code)
+            return nat["fr"] if nat else code
+
+        def _match_html(m):
+            h, a = m["home"], m["away"]
+            oh = 1 / m["ph"] if m["ph"] > 0.01 else 99.0
+            oa = 1 / m["pa"] if m["pa"] > 0.01 else 99.0
+            h_win = m["winner"] == h
+            rows = ""
+            for code, odd, win in ((h, oh, h_win), (a, oa, not h_win)):
+                cls = "pb-team pb-win" if win else "pb-team"
+                rows += (
+                    f"<div class='{cls}'>"
+                    f"<span class='pb-name'>{flag_img(code)} {_name(code)}</span>"
+                    f"<span class='pb-odd'>{odd:.2f}</span>"
+                    f"</div>"
+                )
+            return f"<div class='pb-match'>{rows}</div>"
+
+        def _round_html(title, matches):
+            cards = "".join(_match_html(m) for m in matches)
+            return f"<div class='pb-round'><div class='pb-rtitle'>{title}</div>{cards}</div>"
+
+        css = """
+        <style>
+        .pb-wrap{overflow-x:auto;padding:8px 0 16px;}
+        .pb{display:flex;gap:12px;min-width:1180px;}
+        .pb-round{display:flex;flex-direction:column;justify-content:space-around;flex:1;min-width:178px;}
+        .pb-rtitle{text-align:center;font-weight:700;color:#9aa3b2;font-size:0.78em;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:6px;}
+        .pb-match{background:#161a22;border:1px solid #2a2f3a;border-radius:8px;margin:5px 0;overflow:hidden;}
+        .pb-team{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;font-size:0.82em;gap:6px;color:#c9d1d9;}
+        .pb-team + .pb-team{border-top:1px solid #2a2f3a;}
+        .pb-win{background:rgba(0,224,138,0.14);color:#00e08a;font-weight:700;}
+        .pb-name{display:flex;align-items:center;gap:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .pb-name img{height:14px;border-radius:2px;}
+        .pb-odd{font-variant-numeric:tabular-nums;}
+        .pb-win .pb-odd{color:#00e08a;}
+        </style>
+        """
+
+        bracket_html = (
+            "<div class='pb-wrap'><div class='pb'>"
+            + _round_html("1/16e (32)", r32_ordered)
+            + _round_html("1/8e (16)", r16)
+            + _round_html("1/4 (8)", qf)
+            + _round_html("1/2 (4)", sf)
+            + _round_html("Finale", [final])
+            + "</div></div>"
+        )
+        st.markdown(css + bracket_html, unsafe_allow_html=True)
+
+        champ = final["winner"]
+        st.markdown(
+            f"<div style='text-align:center;margin:8px 0 4px;font-size:1.15em'>"
+            f"🏆 <b>Champion projeté :</b> {flag_img(champ)} "
+            f"<span style='color:#FFD700;font-weight:700'>{_name(champ)}</span></div>",
+            unsafe_allow_html=True,
+        )
+
+        st.markdown("---")
+        st.markdown("#### 🥉 Match pour la 3e place")
+        st.markdown(css + "<div class='pb-wrap'><div class='pb' style='min-width:auto'>"
+                    + _round_html("Petite finale", [bronze])
+                    + "</div></div>", unsafe_allow_html=True)
 
     with tab_elim:
         st.subheader("📉 Stade d'élimination — Toutes les nations")

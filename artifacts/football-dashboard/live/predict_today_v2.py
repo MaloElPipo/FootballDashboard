@@ -37,6 +37,7 @@ from live.bsd_helpers import (  # noqa: E402
     extract_odds,
 )
 from live.file_lock import log_lock  # noqa: E402
+from live.bsd_player_id_resolver import resolve_bsd_player_id  # noqa: E402
 from live.leagues_config import LEAGUES, get_active_leagues, get_by_slug  # noqa: E402
 from live.odds_router import (  # noqa: E402
     get_match_odds_3markets,
@@ -188,6 +189,7 @@ def predict_one_event_v2(ev: dict, slug: str, league_cfg, pool: dict,
             "match": f"{home_team} - {away_team}",
             "kickoff": kickoff_iso,
             "player_id": pid,
+            "bsd_player_id": resolve_bsd_player_id(pid, pred.get("name"), pred.get("team_id")),
             "player_name": pred["name"],
             "team_id": pred["team_id"],
             "team_side": pred["team_side"],

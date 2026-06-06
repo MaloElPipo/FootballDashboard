@@ -1,0 +1,328 @@
+{
+  "modules": [
+    {
+      "id": "mod_3",
+      "emoji": "⚡",
+      "title": "Automatisation G2 (Betfair + Alertes)",
+      "priority": 2,
+      "notes": "Drops Betfair + calcul garantie 2 buts auto + alertes Telegram",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Connexion API Betfair",
+          "status": "blocked"
+        },
+        {
+          "id": "t2",
+          "text": "Détection des drops en temps réel",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Algorithme calcul G2",
+          "status": "done"
+        },
+        {
+          "id": "t4",
+          "text": "Intégration alertes Telegram",
+          "status": "todo"
+        },
+        {
+          "id": "t5",
+          "text": "Tests et calibration",
+          "status": "todo"
+        },
+        {
+          "id": "t1777826984497",
+          "text": "Améliorer scraping Betfair",
+          "status": "todo"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "API Betfair connectée",
+          "done": false
+        },
+        {
+          "id": "cp2",
+          "text": "Alertes Telegram opérationnelles",
+          "done": false
+        },
+        {
+          "id": "cp3",
+          "text": "Premiers trades live validés",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_4",
+      "emoji": "⚽",
+      "title": "Buteurs / Passeurs + Scraping + Values",
+      "priority": 2,
+      "notes": "Calcul buteurs/passeurs, scraping des données, détection value bets",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Identifier sources de données",
+          "status": "done"
+        },
+        {
+          "id": "t2",
+          "text": "Scraper stats buteurs/passeurs",
+          "status": "done"
+        },
+        {
+          "id": "t3",
+          "text": "Modèle de calcul des probas",
+          "status": "doing"
+        },
+        {
+          "id": "t4",
+          "text": "Comparaison avec cotes bookmakers",
+          "status": "doing"
+        },
+        {
+          "id": "t5",
+          "text": "Alertes value bets",
+          "status": "todo"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Scraper stable et fonctionnel",
+          "done": false
+        },
+        {
+          "id": "cp2",
+          "text": "Détection value automatisée",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_1",
+      "emoji": "🔧",
+      "title": "Structurer / Restructurer l'app",
+      "priority": 3,
+      "notes": "Base solide avant tout — architecture propre, fichiers organisés",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Audit du code existant",
+          "status": "todo"
+        },
+        {
+          "id": "t2",
+          "text": "Définir l'architecture cible",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Refactoring modules existants",
+          "status": "todo"
+        },
+        {
+          "id": "t4",
+          "text": "Mise en place des conventions",
+          "status": "todo"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Architecture validée",
+          "done": false
+        },
+        {
+          "id": "cp2",
+          "text": "Code refactorisé",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_5",
+      "emoji": "🏆",
+      "title": "Outrights",
+      "priority": 3,
+      "notes": "Gestion et suivi des paris long terme (outrights)",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Définir les marchés cibles",
+          "status": "todo"
+        },
+        {
+          "id": "t2",
+          "text": "Modèle de valorisation outrights",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Suivi des positions ouvertes",
+          "status": "todo"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Premier outright modélisé",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_6",
+      "emoji": "🔮",
+      "title": "Prédictions Early 3-way",
+      "priority": 3,
+      "notes": "Modèle prédictif early pour marchés 1X2",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Collecte données historiques",
+          "status": "todo"
+        },
+        {
+          "id": "t2",
+          "text": "Entraînement modèle prédictif",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Validation backtesting",
+          "status": "todo"
+        },
+        {
+          "id": "t4",
+          "text": "Intégration dans le dashboard",
+          "status": "todo"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Modèle backtesté et validé",
+          "done": false
+        },
+        {
+          "id": "cp2",
+          "text": "Intégré et utilisable en live",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_7",
+      "emoji": "🌍",
+      "title": "Coupe du Monde 2026",
+      "priority": 3,
+      "notes": "Préparation spécifique CdM 2026 — marchés, données, stratégies",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Calendrier et groupes",
+          "status": "done"
+        },
+        {
+          "id": "t2",
+          "text": "Stratégies marchés spéciaux CdM",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Collecte données équipes nationales",
+          "status": "done"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Stratégie CdM définie",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_2",
+      "emoji": "📊",
+      "title": "Suivi des bets + Dashboard",
+      "priority": 4,
+      "notes": "Interface clean pour tracker tous les paris, P&L, ROI",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Design de l'interface dashboard",
+          "status": "todo"
+        },
+        {
+          "id": "t2",
+          "text": "Système d'entrée des bets",
+          "status": "todo"
+        },
+        {
+          "id": "t3",
+          "text": "Calcul P&L automatique",
+          "status": "done"
+        },
+        {
+          "id": "t4",
+          "text": "Graphiques et stats",
+          "status": "done"
+        },
+        {
+          "id": "t5",
+          "text": "Filtres par marché / date",
+          "status": "todo"
+        },
+        {
+          "id": "t1777827282515",
+          "text": "Refonte graphique -> exploration Canvas",
+          "status": "doing"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Saisie bets fonctionnelle",
+          "done": true
+        },
+        {
+          "id": "cp2",
+          "text": "Dashboard P&L opérationnel",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "mod_8",
+      "emoji": "📌",
+      "title": "Drop Pinnacle (à venir)",
+      "priority": 4,
+      "notes": "Intégration des drops Pinnacle — à planifier",
+      "tasks": [
+        {
+          "id": "t1",
+          "text": "Étudier la faisabilité technique",
+          "status": "done"
+        },
+        {
+          "id": "t2",
+          "text": "Identifier les endpoints disponibles",
+          "status": "doing"
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "cp1",
+          "text": "Faisabilité confirmée",
+          "done": false
+        }
+      ]
+    }
+  ],
+  "threads": []
+}

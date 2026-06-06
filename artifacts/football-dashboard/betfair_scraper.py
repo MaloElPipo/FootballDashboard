@@ -8,6 +8,7 @@ import subprocess
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urljoin
 
 from playwright.async_api import async_playwright
 
@@ -302,6 +303,84 @@ _EXTRACT_JS = r"""() => {
 }"""
 
 
+# Carte "nom de marché" -> href, lue sur la page match. Betfair ne rend plus les
+# cotes des marchés secondaires sur la page principale : ils ne sont plus que des
+# liens vers une page dédiée /football/market/<id>.
+_MARKET_LINKS_JS = r"""() => {
+    const out = {};
+    for (const a of document.querySelectorAll('a')) {
+        const t = (a.innerText || '').trim();
+        const href = a.getAttribute('href') || '';
+        if (t && href.includes('/market/')) {
+            if (!(t in out)) out[t] = href;
+        }
+    }
+    return out;
+}"""
+
+
+# Parseur d'une page-marché dédiée (1 seul marché rendu avec ses cotes). On
+# s'ancre sur "Back all" puis on lit chaque sélection (nom + 3 back + 3 lay),
+# en réutilisant exactement la logique d'échelle de prix du parseur 1X2.
+_EXTRACT_MARKET_JS = r"""() => {
+    const text = document.body.innerText;
+    const L = [];
+    for (const l of text.split('\n')) { const t = l.trim(); if (t) L.push(t); }
+
+    function ep(si, mx) {
+        const ps = [];
+        let i = si;
+        while (i < L.length && ps.length < mx) {
+            const m = L[i].match(/^(\d+\.?\d*)$/);
+            if (m) {
+                const p = parseFloat(m[1]);
+                if (p >= 1.01) {
+                    let v = 0;
+                    if (i + 1 < L.length) {
+                        const vm = L[i + 1].match(/^£([\d,]+)$/);
+                        if (vm) { v = parseFloat(vm[1].replace(/,/g, '')); i += 2; }
+                        else { i++; }
+                    } else { i++; }
+                    ps.push({ p, v });
+                    continue;
+                }
+            }
+            if (L[i].match(/^£/) || (m && parseFloat(m[1]) < 1.01)) { i++; continue; }
+            break;
+        }
+        return { ps, ni: i };
+    }
+
+    const out = [];
+    const bai = L.indexOf('Back all');
+    if (bai < 0) return out;
+    let i = bai + 1;
+    while (i < L.length && (L[i] === 'Lay all' || /^\d+\.?\d*%$/.test(L[i]) ||
+           L[i] === 'Refresh' || /selections/i.test(L[i]))) { i++; }
+    for (let s = 0; s < 5 && i < L.length; s++) {
+        const nm = L[i];
+        if (!nm) { i++; continue; }
+        if (/^(warning|privacy|place bets|open bets|log in|click on the odds|all other customers|for customers)/i.test(nm)) break;
+        if (nm.match(/^\d/) || nm.match(/^£/) || nm.match(/^GBP/)) { i++; continue; }
+        i++;
+        const { ps, ni } = ep(i, 6);
+        if (ps.length >= 6) {
+            out.push({ n: nm, b: ps[2].p, bv: ps[2].v, l: ps[3].p, lv: ps[3].v });
+        } else if (ps.length >= 4) {
+            const mid = Math.floor(ps.length / 2);
+            out.push({ n: nm, b: ps[mid - 1].p, bv: ps[mid - 1].v, l: ps[mid].p, lv: ps[mid].v });
+        } else if (ps.length >= 2) {
+            out.push({ n: nm, b: ps[0].p, bv: ps[0].v, l: ps[1].p, lv: ps[1].v });
+        } else {
+            i = ni;
+            continue;
+        }
+        i = ni;
+    }
+    return out;
+}"""
+
+
 async def _extract_match_data(page) -> dict:
     return await page.evaluate(_EXTRACT_JS)
 
@@ -393,45 +472,84 @@ async def _scrape_betfair_match(
                     lay_vol=item.get("blv", 0.0),
                 )
 
-            for item in data.get("btts", []):
-                sel = BetfairSelection(
-                    name=item["n"],
-                    back=item["b"], back_vol=item["bv"],
-                    lay=item["l"], lay_vol=item["lv"],
-                )
-                result.btts[item["n"]] = sel
+            # --- Marchés secondaires (BTTS, O/U, O/U par équipe) ---
+            # Depuis ~2024 la page "plus" ne rend que le Match Odds (1X2) avec
+            # ses cotes ; les autres marchés ne sont plus que des liens vers une
+            # page dédiée /football/market/<id>. On récupère la carte
+            # nom_de_marché -> URL puis on visite chaque marché voulu.
+            try:
+                links = await page.evaluate(_MARKET_LINKS_JS)
+            except Exception as exc:
+                links = {}
+                _bf_logger.warning("Betfair: lecture des liens de marché échouée: %s", exc)
 
-            for item in data.get("ou25", []):
-                sel = BetfairSelection(
-                    name=item["n"],
-                    back=item["b"], back_vol=item["bv"],
-                    lay=item["l"], lay_vol=item["lv"],
-                )
-                result.ou25[item["n"]] = sel
+            def _abs_market_url(href: str) -> str:
+                if href.startswith("http"):
+                    return href
+                return urljoin("https://www.betfair.com/exchange/plus/", href)
 
-            for item in data.get("ou05", []):
-                sel = BetfairSelection(
-                    name=item["n"],
-                    back=item["b"], back_vol=item["bv"],
-                    lay=item["l"], lay_vol=item["lv"],
-                )
-                result.ou05[item["n"]] = sel
+            async def _scrape_market_by_name(market_name: str) -> list:
+                href = links.get(market_name)
+                if not href:
+                    _bf_logger.info("Betfair: marché '%s' introuvable dans les liens", market_name)
+                    return []
+                url = _abs_market_url(href)
+                try:
+                    r = await page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                    if not r or r.status != 200:
+                        _bf_logger.warning("Betfair: marché '%s' HTTP %s", market_name, r.status if r else "?")
+                        return []
+                    try:
+                        await page.wait_for_function(
+                            "document.body.innerText.includes('Back all')",
+                            timeout=12000,
+                        )
+                    except Exception:
+                        pass
+                    await asyncio.sleep(1.0)
+                    sels = await page.evaluate(_EXTRACT_MARKET_JS)
+                    _bf_logger.info("Betfair: marché '%s' -> %d sélection(s)", market_name, len(sels))
+                    return sels
+                except Exception as exc:
+                    _bf_logger.warning("Betfair: échec scraping marché '%s': %s", market_name, exc)
+                    return []
 
-            for item in data.get("ou05h", []):
-                sel = BetfairSelection(
-                    name=item["n"],
-                    back=item["b"], back_vol=item["bv"],
-                    lay=item["l"], lay_vol=item["lv"],
-                )
-                result.ou05_home[item["n"]] = sel
+            def _fill(target: dict, sels: list) -> None:
+                for it in sels:
+                    target[it["n"]] = BetfairSelection(
+                        name=it["n"],
+                        back=it.get("b", 0.0), back_vol=it.get("bv", 0.0),
+                        lay=it.get("l", 0.0), lay_vol=it.get("lv", 0.0),
+                    )
 
-            for item in data.get("ou05a", []):
-                sel = BetfairSelection(
-                    name=item["n"],
-                    back=item["b"], back_vol=item["bv"],
-                    lay=item["l"], lay_vol=item["lv"],
-                )
-                result.ou05_away[item["n"]] = sel
+            def _norm(s: str) -> str:
+                return re.sub(r"[^a-z0-9]", "", s.lower())
+
+            def _find_link(*candidates: str) -> str | None:
+                # Matching tolérant (casse/ponctuation/espaces) plutôt qu'égalité
+                # stricte : le libellé exact Betfair peut varier légèrement.
+                wanted = {_norm(c) for c in candidates}
+                for nm in links:
+                    if _norm(nm) in wanted:
+                        return nm
+                return None
+
+            # Seuls les marchés "niveau match" sont scrapés : ce sont les seuls
+            # consommés par la section Garantie 2+ (1X2 + O/U 2.5 + BTTS) ; on y
+            # ajoute O/U 0.5. On limite volontairement le nombre de navigations
+            # successives (Betfair finit par fermer la page au-delà de ~5-6
+            # chargements rapides), donc pas de marchés O/U 0.5 par équipe.
+            ou25_name = _find_link("Over/Under 2.5 Goals")
+            if ou25_name:
+                _fill(result.ou25, await _scrape_market_by_name(ou25_name))
+
+            btts_name = _find_link("Both teams to Score?", "Both teams to Score")
+            if btts_name:
+                _fill(result.btts, await _scrape_market_by_name(btts_name))
+
+            ou05_name = _find_link("Over/Under 0.5 Goals")
+            if ou05_name:
+                _fill(result.ou05, await _scrape_market_by_name(ou05_name))
 
         except Exception as e:
             result.error = f"Scraping error: {e}"
@@ -458,7 +576,7 @@ def fetch_betfair_cs(
             return pool.submit(
                 asyncio.run,
                 _scrape_betfair_match(competition_key, home_team, away_team, match_url),
-            ).result(timeout=90)
+            ).result(timeout=150)
     else:
         return asyncio.run(
             _scrape_betfair_match(competition_key, home_team, away_team, match_url)

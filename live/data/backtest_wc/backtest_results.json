@@ -1,0 +1,1850 @@
+{
+  "summary": {
+    "V8_prod": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0062,
+      "brier_mean": 0.5979,
+      "mae_lambda_h": 1.004,
+      "mae_lambda_a": 0.811,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 1,
+          "p_moy_predit": 0.094,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "10-20%",
+          "n": 18,
+          "p_moy_predit": 0.174,
+          "freq_observee": 0.111
+        },
+        {
+          "bin": "20-30%",
+          "n": 193,
+          "p_moy_predit": 0.255,
+          "freq_observee": 0.212
+        },
+        {
+          "bin": "30-40%",
+          "n": 65,
+          "p_moy_predit": 0.348,
+          "freq_observee": 0.354
+        },
+        {
+          "bin": "40-50%",
+          "n": 56,
+          "p_moy_predit": 0.445,
+          "freq_observee": 0.518
+        },
+        {
+          "bin": "50-60%",
+          "n": 45,
+          "p_moy_predit": 0.539,
+          "freq_observee": 0.622
+        },
+        {
+          "bin": "60-70%",
+          "n": 5,
+          "p_moy_predit": 0.631,
+          "freq_observee": 0.8
+        },
+        {
+          "bin": "70-80%",
+          "n": 1,
+          "p_moy_predit": 0.709,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "V5_calib": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0397,
+      "brier_mean": 0.5982,
+      "mae_lambda_h": 1.013,
+      "mae_lambda_a": 0.816,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 40,
+          "p_moy_predit": 0.059,
+          "freq_observee": 0.15
+        },
+        {
+          "bin": "10-20%",
+          "n": 70,
+          "p_moy_predit": 0.154,
+          "freq_observee": 0.2
+        },
+        {
+          "bin": "20-30%",
+          "n": 128,
+          "p_moy_predit": 0.249,
+          "freq_observee": 0.25
+        },
+        {
+          "bin": "30-40%",
+          "n": 32,
+          "p_moy_predit": 0.356,
+          "freq_observee": 0.344
+        },
+        {
+          "bin": "40-50%",
+          "n": 27,
+          "p_moy_predit": 0.459,
+          "freq_observee": 0.519
+        },
+        {
+          "bin": "50-60%",
+          "n": 25,
+          "p_moy_predit": 0.556,
+          "freq_observee": 0.52
+        },
+        {
+          "bin": "60-70%",
+          "n": 25,
+          "p_moy_predit": 0.66,
+          "freq_observee": 0.48
+        },
+        {
+          "bin": "70-80%",
+          "n": 24,
+          "p_moy_predit": 0.74,
+          "freq_observee": 0.708
+        },
+        {
+          "bin": "80-90%",
+          "n": 12,
+          "p_moy_predit": 0.846,
+          "freq_observee": 0.75
+        },
+        {
+          "bin": "90-100%",
+          "n": 1,
+          "p_moy_predit": 0.91,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "V5b_s10_sh09": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0241,
+      "brier_mean": 0.593,
+      "mae_lambda_h": 1.004,
+      "mae_lambda_a": 0.806,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 20,
+          "p_moy_predit": 0.064,
+          "freq_observee": 0.2
+        },
+        {
+          "bin": "10-20%",
+          "n": 61,
+          "p_moy_predit": 0.148,
+          "freq_observee": 0.197
+        },
+        {
+          "bin": "20-30%",
+          "n": 153,
+          "p_moy_predit": 0.249,
+          "freq_observee": 0.222
+        },
+        {
+          "bin": "30-40%",
+          "n": 37,
+          "p_moy_predit": 0.353,
+          "freq_observee": 0.378
+        },
+        {
+          "bin": "40-50%",
+          "n": 30,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.5
+        },
+        {
+          "bin": "50-60%",
+          "n": 28,
+          "p_moy_predit": 0.542,
+          "freq_observee": 0.5
+        },
+        {
+          "bin": "60-70%",
+          "n": 37,
+          "p_moy_predit": 0.65,
+          "freq_observee": 0.595
+        },
+        {
+          "bin": "70-80%",
+          "n": 14,
+          "p_moy_predit": 0.746,
+          "freq_observee": 0.786
+        },
+        {
+          "bin": "80-90%",
+          "n": 4,
+          "p_moy_predit": 0.854,
+          "freq_observee": 0.5
+        }
+      ]
+    },
+    "V5c_s08_sh09": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0103,
+      "brier_mean": 0.5923,
+      "mae_lambda_h": 1.007,
+      "mae_lambda_a": 0.799,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 7,
+          "p_moy_predit": 0.07,
+          "freq_observee": 0.286
+        },
+        {
+          "bin": "10-20%",
+          "n": 55,
+          "p_moy_predit": 0.159,
+          "freq_observee": 0.2
+        },
+        {
+          "bin": "20-30%",
+          "n": 167,
+          "p_moy_predit": 0.254,
+          "freq_observee": 0.21
+        },
+        {
+          "bin": "30-40%",
+          "n": 43,
+          "p_moy_predit": 0.35,
+          "freq_observee": 0.395
+        },
+        {
+          "bin": "40-50%",
+          "n": 42,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.452
+        },
+        {
+          "bin": "50-60%",
+          "n": 38,
+          "p_moy_predit": 0.555,
+          "freq_observee": 0.553
+        },
+        {
+          "bin": "60-70%",
+          "n": 26,
+          "p_moy_predit": 0.642,
+          "freq_observee": 0.731
+        },
+        {
+          "bin": "70-80%",
+          "n": 4,
+          "p_moy_predit": 0.729,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "80-90%",
+          "n": 2,
+          "p_moy_predit": 0.823,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "V5d_s10_sh10": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0264,
+      "brier_mean": 0.5942,
+      "mae_lambda_h": 0.982,
+      "mae_lambda_a": 0.865,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 26,
+          "p_moy_predit": 0.068,
+          "freq_observee": 0.154
+        },
+        {
+          "bin": "10-20%",
+          "n": 73,
+          "p_moy_predit": 0.156,
+          "freq_observee": 0.205
+        },
+        {
+          "bin": "20-30%",
+          "n": 133,
+          "p_moy_predit": 0.241,
+          "freq_observee": 0.226
+        },
+        {
+          "bin": "30-40%",
+          "n": 38,
+          "p_moy_predit": 0.356,
+          "freq_observee": 0.368
+        },
+        {
+          "bin": "40-50%",
+          "n": 29,
+          "p_moy_predit": 0.459,
+          "freq_observee": 0.517
+        },
+        {
+          "bin": "50-60%",
+          "n": 28,
+          "p_moy_predit": 0.553,
+          "freq_observee": 0.536
+        },
+        {
+          "bin": "60-70%",
+          "n": 29,
+          "p_moy_predit": 0.656,
+          "freq_observee": 0.517
+        },
+        {
+          "bin": "70-80%",
+          "n": 22,
+          "p_moy_predit": 0.741,
+          "freq_observee": 0.727
+        },
+        {
+          "bin": "80-90%",
+          "n": 5,
+          "p_moy_predit": 0.847,
+          "freq_observee": 0.8
+        },
+        {
+          "bin": "90-100%",
+          "n": 1,
+          "p_moy_predit": 0.909,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "V5e_b13_s08": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0123,
+      "brier_mean": 0.5916,
+      "mae_lambda_h": 0.979,
+      "mae_lambda_a": 0.835,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 12,
+          "p_moy_predit": 0.075,
+          "freq_observee": 0.25
+        },
+        {
+          "bin": "10-20%",
+          "n": 58,
+          "p_moy_predit": 0.16,
+          "freq_observee": 0.19
+        },
+        {
+          "bin": "20-30%",
+          "n": 159,
+          "p_moy_predit": 0.247,
+          "freq_observee": 0.214
+        },
+        {
+          "bin": "30-40%",
+          "n": 42,
+          "p_moy_predit": 0.353,
+          "freq_observee": 0.381
+        },
+        {
+          "bin": "40-50%",
+          "n": 36,
+          "p_moy_predit": 0.452,
+          "freq_observee": 0.5
+        },
+        {
+          "bin": "50-60%",
+          "n": 32,
+          "p_moy_predit": 0.547,
+          "freq_observee": 0.531
+        },
+        {
+          "bin": "60-70%",
+          "n": 33,
+          "p_moy_predit": 0.635,
+          "freq_observee": 0.636
+        },
+        {
+          "bin": "70-80%",
+          "n": 10,
+          "p_moy_predit": 0.733,
+          "freq_observee": 0.8
+        },
+        {
+          "bin": "80-90%",
+          "n": 2,
+          "p_moy_predit": 0.854,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "V5f_b13_s10": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0257,
+      "brier_mean": 0.5937,
+      "mae_lambda_h": 1.0,
+      "mae_lambda_a": 0.816,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 25,
+          "p_moy_predit": 0.065,
+          "freq_observee": 0.16
+        },
+        {
+          "bin": "10-20%",
+          "n": 67,
+          "p_moy_predit": 0.153,
+          "freq_observee": 0.194
+        },
+        {
+          "bin": "20-30%",
+          "n": 143,
+          "p_moy_predit": 0.248,
+          "freq_observee": 0.231
+        },
+        {
+          "bin": "30-40%",
+          "n": 35,
+          "p_moy_predit": 0.354,
+          "freq_observee": 0.371
+        },
+        {
+          "bin": "40-50%",
+          "n": 30,
+          "p_moy_predit": 0.452,
+          "freq_observee": 0.5
+        },
+        {
+          "bin": "50-60%",
+          "n": 27,
+          "p_moy_predit": 0.546,
+          "freq_observee": 0.556
+        },
+        {
+          "bin": "60-70%",
+          "n": 33,
+          "p_moy_predit": 0.653,
+          "freq_observee": 0.545
+        },
+        {
+          "bin": "70-80%",
+          "n": 18,
+          "p_moy_predit": 0.74,
+          "freq_observee": 0.722
+        },
+        {
+          "bin": "80-90%",
+          "n": 6,
+          "p_moy_predit": 0.847,
+          "freq_observee": 0.667
+        }
+      ]
+    },
+    "blend50_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 0.9994,
+      "brier_mean": 0.5896,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 8,
+          "p_moy_predit": 0.081,
+          "freq_observee": 0.25
+        },
+        {
+          "bin": "10-20%",
+          "n": 62,
+          "p_moy_predit": 0.157,
+          "freq_observee": 0.194
+        },
+        {
+          "bin": "20-30%",
+          "n": 162,
+          "p_moy_predit": 0.25,
+          "freq_observee": 0.216
+        },
+        {
+          "bin": "30-40%",
+          "n": 40,
+          "p_moy_predit": 0.354,
+          "freq_observee": 0.4
+        },
+        {
+          "bin": "40-50%",
+          "n": 36,
+          "p_moy_predit": 0.452,
+          "freq_observee": 0.472
+        },
+        {
+          "bin": "50-60%",
+          "n": 32,
+          "p_moy_predit": 0.548,
+          "freq_observee": 0.562
+        },
+        {
+          "bin": "60-70%",
+          "n": 32,
+          "p_moy_predit": 0.634,
+          "freq_observee": 0.625
+        },
+        {
+          "bin": "70-80%",
+          "n": 11,
+          "p_moy_predit": 0.729,
+          "freq_observee": 0.727
+        },
+        {
+          "bin": "80-90%",
+          "n": 1,
+          "p_moy_predit": 0.81,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "blend30_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0064,
+      "brier_mean": 0.591,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 15,
+          "p_moy_predit": 0.068,
+          "freq_observee": 0.2
+        },
+        {
+          "bin": "10-20%",
+          "n": 71,
+          "p_moy_predit": 0.151,
+          "freq_observee": 0.183
+        },
+        {
+          "bin": "20-30%",
+          "n": 148,
+          "p_moy_predit": 0.248,
+          "freq_observee": 0.23
+        },
+        {
+          "bin": "30-40%",
+          "n": 37,
+          "p_moy_predit": 0.354,
+          "freq_observee": 0.378
+        },
+        {
+          "bin": "40-50%",
+          "n": 29,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.483
+        },
+        {
+          "bin": "50-60%",
+          "n": 29,
+          "p_moy_predit": 0.542,
+          "freq_observee": 0.517
+        },
+        {
+          "bin": "60-70%",
+          "n": 37,
+          "p_moy_predit": 0.65,
+          "freq_observee": 0.595
+        },
+        {
+          "bin": "70-80%",
+          "n": 14,
+          "p_moy_predit": 0.742,
+          "freq_observee": 0.786
+        },
+        {
+          "bin": "80-90%",
+          "n": 4,
+          "p_moy_predit": 0.822,
+          "freq_observee": 0.5
+        }
+      ]
+    },
+    "blend70_V8_V5calib": {
+      "n_matches": 128,
+      "log_loss_mean": 0.9987,
+      "brier_mean": 0.5909,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 2,
+          "p_moy_predit": 0.076,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "10-20%",
+          "n": 51,
+          "p_moy_predit": 0.166,
+          "freq_observee": 0.137
+        },
+        {
+          "bin": "20-30%",
+          "n": 173,
+          "p_moy_predit": 0.252,
+          "freq_observee": 0.225
+        },
+        {
+          "bin": "30-40%",
+          "n": 46,
+          "p_moy_predit": 0.349,
+          "freq_observee": 0.37
+        },
+        {
+          "bin": "40-50%",
+          "n": 46,
+          "p_moy_predit": 0.45,
+          "freq_observee": 0.478
+        },
+        {
+          "bin": "50-60%",
+          "n": 38,
+          "p_moy_predit": 0.552,
+          "freq_observee": 0.553
+        },
+        {
+          "bin": "60-70%",
+          "n": 24,
+          "p_moy_predit": 0.631,
+          "freq_observee": 0.75
+        },
+        {
+          "bin": "70-80%",
+          "n": 4,
+          "p_moy_predit": 0.731,
+          "freq_observee": 0.5
+        }
+      ]
+    },
+    "blend50_V8_V5c08": {
+      "n_matches": 128,
+      "log_loss_mean": 1.0036,
+      "brier_mean": 0.5936,
+      "mae_lambda_h": null,
+      "mae_lambda_a": null,
+      "calibration_bins": [
+        {
+          "bin": "0-10%",
+          "n": 2,
+          "p_moy_predit": 0.069,
+          "freq_observee": 1.0
+        },
+        {
+          "bin": "10-20%",
+          "n": 38,
+          "p_moy_predit": 0.166,
+          "freq_observee": 0.105
+        },
+        {
+          "bin": "20-30%",
+          "n": 180,
+          "p_moy_predit": 0.253,
+          "freq_observee": 0.222
+        },
+        {
+          "bin": "30-40%",
+          "n": 54,
+          "p_moy_predit": 0.347,
+          "freq_observee": 0.37
+        },
+        {
+          "bin": "40-50%",
+          "n": 51,
+          "p_moy_predit": 0.451,
+          "freq_observee": 0.49
+        },
+        {
+          "bin": "50-60%",
+          "n": 44,
+          "p_moy_predit": 0.556,
+          "freq_observee": 0.614
+        },
+        {
+          "bin": "60-70%",
+          "n": 13,
+          "p_moy_predit": 0.643,
+          "freq_observee": 0.769
+        },
+        {
+          "bin": "70-80%",
+          "n": 2,
+          "p_moy_predit": 0.758,
+          "freq_observee": 0.0
+        }
+      ]
+    },
+    "benchmarks": {
+      "uniform_log_loss": 1.0986,
+      "note": "log-loss < 1.0 = mieux qu'un modele uniform; <0.95 = comparable a un bookmaker grand public; <0.90 = niveau modele pro.",
+      "n_total_matches": 128
+    }
+  },
+  "matches": [
+    {
+      "date": "June 14, 2018",
+      "home": "Russia",
+      "away": "Saudi Arabia",
+      "gh": 5,
+      "ga": 0,
+      "eh": 1676,
+      "ea": 1588
+    },
+    {
+      "date": "June 15, 2018",
+      "home": "Iran",
+      "away": "Morocco",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1790,
+      "ea": 1731
+    },
+    {
+      "date": "June 15, 2018",
+      "home": "Portugal",
+      "away": "Spain",
+      "gh": 3,
+      "ga": 3,
+      "eh": 1967,
+      "ea": 2043
+    },
+    {
+      "date": "June 15, 2018",
+      "home": "Uruguay",
+      "away": "Egypt",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1893,
+      "ea": 1639
+    },
+    {
+      "date": "June 16, 2018",
+      "home": "Argentina",
+      "away": "Iceland",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1985,
+      "ea": 1764
+    },
+    {
+      "date": "June 16, 2018",
+      "home": "Croatia",
+      "away": "Nigeria",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1853,
+      "ea": 1681
+    },
+    {
+      "date": "June 16, 2018",
+      "home": "Denmark",
+      "away": "Peru",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1854,
+      "ea": 1915
+    },
+    {
+      "date": "June 16, 2018",
+      "home": "France",
+      "away": "Australia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1986,
+      "ea": 1743
+    },
+    {
+      "date": "June 17, 2018",
+      "home": "Brazil",
+      "away": "Switzerland",
+      "gh": 1,
+      "ga": 1,
+      "eh": 2141,
+      "ea": 1888
+    },
+    {
+      "date": "June 17, 2018",
+      "home": "Mexico",
+      "away": "Germany",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1849,
+      "ea": 2076
+    },
+    {
+      "date": "June 17, 2018",
+      "home": "Serbia",
+      "away": "Costa Rica",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1787,
+      "ea": 1742
+    },
+    {
+      "date": "June 18, 2018",
+      "home": "Belgium",
+      "away": "Panama",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1935,
+      "ea": 1657
+    },
+    {
+      "date": "June 18, 2018",
+      "home": "England",
+      "away": "Tunisia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1947,
+      "ea": 1652
+    },
+    {
+      "date": "June 18, 2018",
+      "home": "Sweden",
+      "away": "South Korea",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1793,
+      "ea": 1713
+    },
+    {
+      "date": "June 19, 2018",
+      "home": "Japan",
+      "away": "Colombia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1684,
+      "ea": 1927
+    },
+    {
+      "date": "June 19, 2018",
+      "home": "Russia",
+      "away": "Egypt",
+      "gh": 3,
+      "ga": 1,
+      "eh": 1676,
+      "ea": 1639
+    },
+    {
+      "date": "June 19, 2018",
+      "home": "Senegal",
+      "away": "Poland",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1745,
+      "ea": 1830
+    },
+    {
+      "date": "June 20, 2018",
+      "home": "Portugal",
+      "away": "Morocco",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1967,
+      "ea": 1731
+    },
+    {
+      "date": "June 20, 2018",
+      "home": "Spain",
+      "away": "Iran",
+      "gh": 1,
+      "ga": 0,
+      "eh": 2043,
+      "ea": 1790
+    },
+    {
+      "date": "June 20, 2018",
+      "home": "Uruguay",
+      "away": "Saudi Arabia",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1893,
+      "ea": 1588
+    },
+    {
+      "date": "June 21, 2018",
+      "home": "Australia",
+      "away": "Denmark",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1743,
+      "ea": 1854
+    },
+    {
+      "date": "June 21, 2018",
+      "home": "Croatia",
+      "away": "Argentina",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1853,
+      "ea": 1985
+    },
+    {
+      "date": "June 21, 2018",
+      "home": "France",
+      "away": "Peru",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1986,
+      "ea": 1915
+    },
+    {
+      "date": "June 22, 2018",
+      "home": "Brazil",
+      "away": "Costa Rica",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2141,
+      "ea": 1742
+    },
+    {
+      "date": "June 22, 2018",
+      "home": "Nigeria",
+      "away": "Iceland",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1681,
+      "ea": 1764
+    },
+    {
+      "date": "June 22, 2018",
+      "home": "Switzerland",
+      "away": "Serbia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1888,
+      "ea": 1787
+    },
+    {
+      "date": "June 23, 2018",
+      "home": "Belgium",
+      "away": "Tunisia",
+      "gh": 5,
+      "ga": 2,
+      "eh": 1935,
+      "ea": 1652
+    },
+    {
+      "date": "June 23, 2018",
+      "home": "Germany",
+      "away": "Sweden",
+      "gh": 2,
+      "ga": 1,
+      "eh": 2076,
+      "ea": 1793
+    },
+    {
+      "date": "June 23, 2018",
+      "home": "Mexico",
+      "away": "South Korea",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1849,
+      "ea": 1713
+    },
+    {
+      "date": "June 24, 2018",
+      "home": "Colombia",
+      "away": "Poland",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1927,
+      "ea": 1830
+    },
+    {
+      "date": "June 24, 2018",
+      "home": "England",
+      "away": "Panama",
+      "gh": 6,
+      "ga": 1,
+      "eh": 1947,
+      "ea": 1657
+    },
+    {
+      "date": "June 24, 2018",
+      "home": "Japan",
+      "away": "Senegal",
+      "gh": 2,
+      "ga": 2,
+      "eh": 1684,
+      "ea": 1745
+    },
+    {
+      "date": "June 25, 2018",
+      "home": "Morocco",
+      "away": "Spain",
+      "gh": 2,
+      "ga": 2,
+      "eh": 1731,
+      "ea": 2043
+    },
+    {
+      "date": "June 25, 2018",
+      "home": "Portugal",
+      "away": "Iran",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1967,
+      "ea": 1790
+    },
+    {
+      "date": "June 25, 2018",
+      "home": "Russia",
+      "away": "Uruguay",
+      "gh": 0,
+      "ga": 3,
+      "eh": 1676,
+      "ea": 1893
+    },
+    {
+      "date": "June 25, 2018",
+      "home": "Saudi Arabia",
+      "away": "Egypt",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1588,
+      "ea": 1639
+    },
+    {
+      "date": "June 26, 2018",
+      "home": "Argentina",
+      "away": "Nigeria",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1985,
+      "ea": 1681
+    },
+    {
+      "date": "June 26, 2018",
+      "home": "Croatia",
+      "away": "Iceland",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1853,
+      "ea": 1764
+    },
+    {
+      "date": "June 26, 2018",
+      "home": "Denmark",
+      "away": "France",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1854,
+      "ea": 1986
+    },
+    {
+      "date": "June 26, 2018",
+      "home": "Peru",
+      "away": "Australia",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1915,
+      "ea": 1743
+    },
+    {
+      "date": "June 27, 2018",
+      "home": "Brazil",
+      "away": "Serbia",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2141,
+      "ea": 1787
+    },
+    {
+      "date": "June 27, 2018",
+      "home": "Costa Rica",
+      "away": "Switzerland",
+      "gh": 2,
+      "ga": 2,
+      "eh": 1742,
+      "ea": 1888
+    },
+    {
+      "date": "June 27, 2018",
+      "home": "South Korea",
+      "away": "Germany",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1713,
+      "ea": 2076
+    },
+    {
+      "date": "June 27, 2018",
+      "home": "Sweden",
+      "away": "Mexico",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1793,
+      "ea": 1849
+    },
+    {
+      "date": "June 28, 2018",
+      "home": "Belgium",
+      "away": "England",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1935,
+      "ea": 1947
+    },
+    {
+      "date": "June 28, 2018",
+      "home": "Colombia",
+      "away": "Senegal",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1927,
+      "ea": 1745
+    },
+    {
+      "date": "June 28, 2018",
+      "home": "Poland",
+      "away": "Japan",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1830,
+      "ea": 1684
+    },
+    {
+      "date": "June 28, 2018",
+      "home": "Tunisia",
+      "away": "Panama",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1652,
+      "ea": 1657
+    },
+    {
+      "date": "June 30, 2018",
+      "home": "France",
+      "away": "Argentina",
+      "gh": 4,
+      "ga": 3,
+      "eh": 1986,
+      "ea": 1985
+    },
+    {
+      "date": "June 30, 2018",
+      "home": "Uruguay",
+      "away": "Portugal",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1893,
+      "ea": 1967
+    },
+    {
+      "date": "July 1, 2018",
+      "home": "Croatia",
+      "away": "Denmark",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1853,
+      "ea": 1854
+    },
+    {
+      "date": "July 1, 2018",
+      "home": "Russia",
+      "away": "Spain",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1676,
+      "ea": 2043
+    },
+    {
+      "date": "July 2, 2018",
+      "home": "Belgium",
+      "away": "Japan",
+      "gh": 3,
+      "ga": 2,
+      "eh": 1935,
+      "ea": 1684
+    },
+    {
+      "date": "July 2, 2018",
+      "home": "Brazil",
+      "away": "Mexico",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2141,
+      "ea": 1849
+    },
+    {
+      "date": "July 3, 2018",
+      "home": "Colombia",
+      "away": "England",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1927,
+      "ea": 1947
+    },
+    {
+      "date": "July 3, 2018",
+      "home": "Sweden",
+      "away": "Switzerland",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1793,
+      "ea": 1888
+    },
+    {
+      "date": "July 6, 2018",
+      "home": "Belgium",
+      "away": "Brazil",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1935,
+      "ea": 2141
+    },
+    {
+      "date": "July 6, 2018",
+      "home": "France",
+      "away": "Uruguay",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1986,
+      "ea": 1893
+    },
+    {
+      "date": "July 7, 2018",
+      "home": "England",
+      "away": "Sweden",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1947,
+      "ea": 1793
+    },
+    {
+      "date": "July 7, 2018",
+      "home": "Russia",
+      "away": "Croatia",
+      "gh": 2,
+      "ga": 2,
+      "eh": 1676,
+      "ea": 1853
+    },
+    {
+      "date": "July 10, 2018",
+      "home": "France",
+      "away": "Belgium",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1986,
+      "ea": 1935
+    },
+    {
+      "date": "July 11, 2018",
+      "home": "Croatia",
+      "away": "England",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1853,
+      "ea": 1947
+    },
+    {
+      "date": "July 14, 2018",
+      "home": "Belgium",
+      "away": "England",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1935,
+      "ea": 1947
+    },
+    {
+      "date": "July 15, 2018",
+      "home": "France",
+      "away": "Croatia",
+      "gh": 4,
+      "ga": 2,
+      "eh": 1986,
+      "ea": 1853
+    },
+    {
+      "date": "November 20, 2022",
+      "home": "Qatar",
+      "away": "Ecuador",
+      "gh": 0,
+      "ga": 2,
+      "eh": 1680,
+      "ea": 1833
+    },
+    {
+      "date": "November 21, 2022",
+      "home": "USA",
+      "away": "Wales",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1796,
+      "ea": 1789
+    },
+    {
+      "date": "November 21, 2022",
+      "home": "Netherlands",
+      "away": "Senegal",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2040,
+      "ea": 1684
+    },
+    {
+      "date": "November 21, 2022",
+      "home": "England",
+      "away": "Iran",
+      "gh": 6,
+      "ga": 2,
+      "eh": 1919,
+      "ea": 1798
+    },
+    {
+      "date": "November 22, 2022",
+      "home": "Saudi Arabia",
+      "away": "Argentina",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1636,
+      "ea": 2143
+    },
+    {
+      "date": "November 22, 2022",
+      "home": "Mexico",
+      "away": "Poland",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1808,
+      "ea": 1813
+    },
+    {
+      "date": "November 22, 2022",
+      "home": "France",
+      "away": "Australia",
+      "gh": 4,
+      "ga": 1,
+      "eh": 2004,
+      "ea": 1721
+    },
+    {
+      "date": "November 22, 2022",
+      "home": "Denmark",
+      "away": "Tunisia",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1971,
+      "ea": 1705
+    },
+    {
+      "date": "November 23, 2022",
+      "home": "Spain",
+      "away": "Costa Rica",
+      "gh": 7,
+      "ga": 0,
+      "eh": 2048,
+      "ea": 1743
+    },
+    {
+      "date": "November 23, 2022",
+      "home": "Japan",
+      "away": "Germany",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1788,
+      "ea": 1962
+    },
+    {
+      "date": "November 23, 2022",
+      "home": "Croatia",
+      "away": "Morocco",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1926,
+      "ea": 1764
+    },
+    {
+      "date": "November 23, 2022",
+      "home": "Belgium",
+      "away": "Canada",
+      "gh": 1,
+      "ga": 0,
+      "eh": 2006,
+      "ea": 1775
+    },
+    {
+      "date": "November 24, 2022",
+      "home": "Switzerland",
+      "away": "Cameroon",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1901,
+      "ea": 1607
+    },
+    {
+      "date": "November 24, 2022",
+      "home": "South Korea",
+      "away": "Uruguay",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1786,
+      "ea": 1935
+    },
+    {
+      "date": "November 24, 2022",
+      "home": "Portugal",
+      "away": "Ghana",
+      "gh": 3,
+      "ga": 2,
+      "eh": 2005,
+      "ea": 1564
+    },
+    {
+      "date": "November 24, 2022",
+      "home": "Brazil",
+      "away": "Serbia",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2169,
+      "ea": 1898
+    },
+    {
+      "date": "November 25, 2022",
+      "home": "Qatar",
+      "away": "Senegal",
+      "gh": 1,
+      "ga": 3,
+      "eh": 1680,
+      "ea": 1684
+    },
+    {
+      "date": "November 25, 2022",
+      "home": "Iran",
+      "away": "Wales",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1798,
+      "ea": 1789
+    },
+    {
+      "date": "November 25, 2022",
+      "home": "England",
+      "away": "USA",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1919,
+      "ea": 1796
+    },
+    {
+      "date": "November 25, 2022",
+      "home": "Ecuador",
+      "away": "Netherlands",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1833,
+      "ea": 2040
+    },
+    {
+      "date": "November 26, 2022",
+      "home": "Poland",
+      "away": "Saudi Arabia",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1813,
+      "ea": 1636
+    },
+    {
+      "date": "November 26, 2022",
+      "home": "France",
+      "away": "Denmark",
+      "gh": 2,
+      "ga": 1,
+      "eh": 2004,
+      "ea": 1971
+    },
+    {
+      "date": "November 26, 2022",
+      "home": "Australia",
+      "away": "Tunisia",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1721,
+      "ea": 1705
+    },
+    {
+      "date": "November 26, 2022",
+      "home": "Argentina",
+      "away": "Mexico",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2143,
+      "ea": 1808
+    },
+    {
+      "date": "November 27, 2022",
+      "home": "Morocco",
+      "away": "Belgium",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1764,
+      "ea": 2006
+    },
+    {
+      "date": "November 27, 2022",
+      "home": "Germany",
+      "away": "Spain",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1962,
+      "ea": 2048
+    },
+    {
+      "date": "November 27, 2022",
+      "home": "Croatia",
+      "away": "Canada",
+      "gh": 4,
+      "ga": 1,
+      "eh": 1926,
+      "ea": 1775
+    },
+    {
+      "date": "November 27, 2022",
+      "home": "Costa Rica",
+      "away": "Japan",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1743,
+      "ea": 1788
+    },
+    {
+      "date": "November 28, 2022",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2005,
+      "ea": 1935
+    },
+    {
+      "date": "November 28, 2022",
+      "home": "Ghana",
+      "away": "South Korea",
+      "gh": 3,
+      "ga": 2,
+      "eh": 1564,
+      "ea": 1786
+    },
+    {
+      "date": "November 28, 2022",
+      "home": "Cameroon",
+      "away": "Serbia",
+      "gh": 3,
+      "ga": 3,
+      "eh": 1607,
+      "ea": 1898
+    },
+    {
+      "date": "November 28, 2022",
+      "home": "Brazil",
+      "away": "Switzerland",
+      "gh": 1,
+      "ga": 0,
+      "eh": 2169,
+      "ea": 1901
+    },
+    {
+      "date": "November 29, 2022",
+      "home": "USA",
+      "away": "Iran",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1796,
+      "ea": 1798
+    },
+    {
+      "date": "November 29, 2022",
+      "home": "Senegal",
+      "away": "Ecuador",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1684,
+      "ea": 1833
+    },
+    {
+      "date": "November 29, 2022",
+      "home": "Qatar",
+      "away": "Netherlands",
+      "gh": 0,
+      "ga": 2,
+      "eh": 1680,
+      "ea": 2040
+    },
+    {
+      "date": "November 29, 2022",
+      "home": "England",
+      "away": "Wales",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1919,
+      "ea": 1789
+    },
+    {
+      "date": "November 30, 2022",
+      "home": "Tunisia",
+      "away": "France",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1705,
+      "ea": 2004
+    },
+    {
+      "date": "November 30, 2022",
+      "home": "Mexico",
+      "away": "Saudi Arabia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1808,
+      "ea": 1636
+    },
+    {
+      "date": "November 30, 2022",
+      "home": "Australia",
+      "away": "Denmark",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1721,
+      "ea": 1971
+    },
+    {
+      "date": "November 30, 2022",
+      "home": "Argentina",
+      "away": "Poland",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2143,
+      "ea": 1813
+    },
+    {
+      "date": "December 1, 2022",
+      "home": "Morocco",
+      "away": "Canada",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1764,
+      "ea": 1775
+    },
+    {
+      "date": "December 1, 2022",
+      "home": "Japan",
+      "away": "Spain",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1788,
+      "ea": 2048
+    },
+    {
+      "date": "December 1, 2022",
+      "home": "Germany",
+      "away": "Costa Rica",
+      "gh": 4,
+      "ga": 2,
+      "eh": 1962,
+      "ea": 1743
+    },
+    {
+      "date": "December 1, 2022",
+      "home": "Belgium",
+      "away": "Croatia",
+      "gh": 0,
+      "ga": 0,
+      "eh": 2006,
+      "ea": 1926
+    },
+    {
+      "date": "December 2, 2022",
+      "home": "Uruguay",
+      "away": "Ghana",
+      "gh": 2,
+      "ga": 0,
+      "eh": 1935,
+      "ea": 1564
+    },
+    {
+      "date": "December 2, 2022",
+      "home": "Switzerland",
+      "away": "Serbia",
+      "gh": 3,
+      "ga": 2,
+      "eh": 1901,
+      "ea": 1898
+    },
+    {
+      "date": "December 2, 2022",
+      "home": "South Korea",
+      "away": "Portugal",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1786,
+      "ea": 2005
+    },
+    {
+      "date": "December 2, 2022",
+      "home": "Cameroon",
+      "away": "Brazil",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1607,
+      "ea": 2169
+    },
+    {
+      "date": "December 3, 2022",
+      "home": "Netherlands",
+      "away": "USA",
+      "gh": 3,
+      "ga": 1,
+      "eh": 2040,
+      "ea": 1796
+    },
+    {
+      "date": "December 3, 2022",
+      "home": "Argentina",
+      "away": "Australia",
+      "gh": 2,
+      "ga": 1,
+      "eh": 2143,
+      "ea": 1721
+    },
+    {
+      "date": "December 4, 2022",
+      "home": "France",
+      "away": "Poland",
+      "gh": 3,
+      "ga": 1,
+      "eh": 2004,
+      "ea": 1813
+    },
+    {
+      "date": "December 4, 2022",
+      "home": "England",
+      "away": "Senegal",
+      "gh": 3,
+      "ga": 0,
+      "eh": 1919,
+      "ea": 1684
+    },
+    {
+      "date": "December 5, 2022",
+      "home": "Croatia",
+      "away": "Japan",
+      "gh": 1,
+      "ga": 1,
+      "eh": 1926,
+      "ea": 1788
+    },
+    {
+      "date": "December 5, 2022",
+      "home": "Brazil",
+      "away": "South Korea",
+      "gh": 4,
+      "ga": 1,
+      "eh": 2169,
+      "ea": 1786
+    },
+    {
+      "date": "December 6, 2022",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "gh": 6,
+      "ga": 1,
+      "eh": 2005,
+      "ea": 1901
+    },
+    {
+      "date": "December 6, 2022",
+      "home": "Morocco",
+      "away": "Spain",
+      "gh": 0,
+      "ga": 0,
+      "eh": 1764,
+      "ea": 2048
+    },
+    {
+      "date": "December 9, 2022",
+      "home": "Brazil",
+      "away": "Croatia",
+      "gh": 1,
+      "ga": 1,
+      "eh": 2169,
+      "ea": 1926
+    },
+    {
+      "date": "December 9, 2022",
+      "home": "Argentina",
+      "away": "Netherlands",
+      "gh": 2,
+      "ga": 2,
+      "eh": 2143,
+      "ea": 2040
+    },
+    {
+      "date": "December 10, 2022",
+      "home": "Morocco",
+      "away": "Portugal",
+      "gh": 1,
+      "ga": 0,
+      "eh": 1764,
+      "ea": 2005
+    },
+    {
+      "date": "December 10, 2022",
+      "home": "France",
+      "away": "England",
+      "gh": 2,
+      "ga": 1,
+      "eh": 2004,
+      "ea": 1919
+    },
+    {
+      "date": "December 13, 2022",
+      "home": "Argentina",
+      "away": "Croatia",
+      "gh": 3,
+      "ga": 0,
+      "eh": 2143,
+      "ea": 1926
+    },
+    {
+      "date": "December 14, 2022",
+      "home": "France",
+      "away": "Morocco",
+      "gh": 2,
+      "ga": 0,
+      "eh": 2004,
+      "ea": 1764
+    },
+    {
+      "date": "December 17, 2022",
+      "home": "Croatia",
+      "away": "Morocco",
+      "gh": 2,
+      "ga": 1,
+      "eh": 1926,
+      "ea": 1764
+    },
+    {
+      "date": "December 18, 2022",
+      "home": "Argentina",
+      "away": "France",
+      "gh": 3,
+      "ga": 3,
+      "eh": 2143,
+      "ea": 2004
+    }
+  ]
+}

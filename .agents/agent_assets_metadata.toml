@@ -48,3 +48,63 @@ id = "KF8JEz0fGI5k-Y5q-9t4s"
 uri = "file://artifacts/football-dashboard/live/data/portail/competitions_vues_par_pays.csv"
 type = "table"
 title = "competitions_vues_par_pays.csv (PARTIEL: 3 ligues)"
+
+[[outputs]]
+id = "joFdkpBh0f1zG3vRAtifn"
+uri = "file://artifacts/football-dashboard/live/data/leagues_overview.csv"
+type = "table"
+title = "leagues_overview.csv — récap valeurs marchandes + buts/match (74 ligues)"
+
+[[outputs]]
+id = "71XclNQlaXxynslI21c-m"
+uri = "file://.local/team_shots_poc/output/giga_test_report.pdf"
+type = "pdf"
+title = "Giga-Test Tirs/SoT — PDF (version lisible, 6 pages)"
+
+[[outputs]]
+id = "NbQ2XR3OzSwskOuN7j_BL"
+uri = "file://.local/team_shots_poc/output/giga_test_report.md"
+type = "text"
+title = "Giga-Test Tirs/SoT — Markdown brut (archive Git)"
+
+[[outputs]]
+id = "sTRwyKsNdlgWbjLXXiK5o"
+uri = "file://.local/team_shots_poc/output/giga_test_report_bundle.zip"
+type = "unspecified"
+title = "Bundle complet (HTML interactif dark + PDF light + MD)"
+
+[[outputs]]
+id = "CcXAv-V0Me5tXx_1rbvTf"
+uri = "file://live/data/wc_bias_correction_report.pdf"
+type = "pdf"
+title = "Bilan correctifs predictif CDM2026 — sandbox"
+
+[[outputs]]
+id = "-X0Zzxw_sD_1XJhG7V2hh"
+uri = "file://live/data/pele_vs_v8_report.pdf"
+type = "pdf"
+title = "PELE vs V8 prod — Comparatif poules CDM 2026"
+
+[[outputs]]
+id = "Zf6QxA9gLkVpVxPnhGOLg"
+uri = "file://live/data/pele_v2_vs_v8_report.pdf"
+type = "pdf"
+title = "PELE V2 (rating delta) vs V8 prod — Comparatif poules CDM 2026"
+
+[[outputs]]
+id = "hP0deABYa6PzHZiG4P8qz"
+uri = "file://live/data/pele_v5_forecast_cdm2026.pdf"
+type = "pdf"
+title = "Forecast CDM 2026 V5.3 — ESP corrigé + blend phase poule (a+b)"
+
+[[outputs]]
+id = "fycMkoNxBfoIozBaz-xqH"
+uri = "file://live/data/backtest_wc/backtest_report.md"
+type = "text"
+title = "Backtest CDM 2018+2022 — grid search + blends"
+
+[[outputs]]
+id = "mMQBYpjMyfSiUqsOYJ4JI"
+uri = "file://live/data/backtest_wc/backtest_results.json"
+type = "unspecified"
+title = "Résultats détaillés (JSON, 128 matchs)"

@@ -91,8 +91,10 @@ LEAGUES: list[dict] = [
     {"code_tm": "FR3",  "slug": "national",                    "nom": "Championnat National",            "pays": "France",           "region": "Europe", "tier": 3},
     {"code_tm": "L3",   "slug": "3-liga",                      "nom": "3. Liga",                         "pays": "Allemagne",        "region": "Europe", "tier": 3},
 
-    # ----- Amériques (9) -----
+    # ----- Amériques (11) -----
     {"code_tm": "BRA1", "slug": "campeonato-brasileiro-serie-a","nom": "Brasileirão Série A",             "pays": "Brésil",           "region": "Amériques", "tier": 1},
+    {"code_tm": "CDN1", "slug": "canadian-premier-league",      "nom": "Canadian Premier League",         "pays": "Canada",           "region": "Amériques", "tier": 1},
+    {"code_tm": "URU1", "slug": "primera-division",             "nom": "Primera División",                "pays": "Uruguay",          "region": "Amériques", "tier": 1},
     {"code_tm": "ARG1", "slug": "liga-profesional-de-futbol",  "nom": "Primera División",                "pays": "Argentine",        "region": "Amériques", "tier": 1},
     {"code_tm": "MLS1", "slug": "major-league-soccer",         "nom": "MLS",                             "pays": "États-Unis",       "region": "Amériques", "tier": 1},
     {"code_tm": "MEX1", "slug": "liga-mx-clausura",            "nom": "Liga MX",                         "pays": "Mexique",          "region": "Amériques", "tier": 1},
@@ -102,15 +104,17 @@ LEAGUES: list[dict] = [
     {"code_tm": "EC1N", "slug": "ligapro-serie-a",             "nom": "LigaPro Serie A",                 "pays": "Équateur",         "region": "Amériques", "tier": 1},
     {"code_tm": "BRA2", "slug": "campeonato-brasileiro-serie-b","nom": "Brasileirão Série B",             "pays": "Brésil",           "region": "Amériques", "tier": 2},
 
-    # ----- Asie / Océanie (5) -----
+    # ----- Asie / Océanie (6) -----
     {"code_tm": "SA1",  "slug": "saudi-pro-league",            "nom": "Saudi Pro League",                "pays": "Arabie Saoudite",  "region": "Asie/Océanie", "tier": 1},
+    {"code_tm": "UAE1", "slug": "uae-pro-league",              "nom": "UAE Pro League",                  "pays": "Émirats arabes unis", "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "JAP1", "slug": "j1-league",                   "nom": "J1 League",                       "pays": "Japon",            "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "RSK1", "slug": "k-league-1",                  "nom": "K League 1",                      "pays": "Corée du Sud",     "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "AUS1", "slug": "a-league",                    "nom": "A-League",                        "pays": "Australie",        "region": "Asie/Océanie", "tier": 1},
     {"code_tm": "CSL",  "slug": "chinese-super-league",        "nom": "Chinese Super League",            "pays": "Chine",            "region": "Asie/Océanie", "tier": 1},
 
-    # ----- Afrique (3) -----
+    # ----- Afrique (4) -----
     {"code_tm": "MAR1", "slug": "botola-pro",                  "nom": "Botola Pro",                      "pays": "Maroc",            "region": "Afrique", "tier": 1},
+    {"code_tm": "EGY1", "slug": "premier-league",              "nom": "Premier League",                  "pays": "Égypte",           "region": "Afrique", "tier": 1},
     {"code_tm": "ALG1", "slug": "ligue-professionnelle-1",     "nom": "Ligue Professionnelle 1",         "pays": "Algérie",          "region": "Afrique", "tier": 1},
     {"code_tm": "SFA1", "slug": "betway-premiership",          "nom": "Premier Division",                "pays": "Afrique du Sud",   "region": "Afrique", "tier": 1},
 ]
@@ -181,9 +185,9 @@ NATIONAL_TEAMS: list[dict] = [
 ]
 
 # Sanity checks — utiles si on importe ce module en console.
-assert len(LEAGUES) == 74, f"Attendu 74 ligues, trouvé {len(LEAGUES)}"
+assert len(LEAGUES) == 78, f"Attendu 78 ligues, trouvé {len(LEAGUES)}"
 assert len(NATIONAL_TEAMS) == 48, f"Attendu 48 sélections, trouvé {len(NATIONAL_TEAMS)}"
-assert len({l["code_tm"] for l in LEAGUES}) == 74, "Doublon de code_tm dans LEAGUES"
+assert len({l["code_tm"] for l in LEAGUES}) == 78, "Doublon de code_tm dans LEAGUES"
 assert len({t["code_tm"] for t in NATIONAL_TEAMS}) == 48, "Doublon de code_tm dans NATIONAL_TEAMS"
 
 

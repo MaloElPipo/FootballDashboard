@@ -133,6 +133,12 @@ jobs:
       - name: Scraping carrière des joueurs (par ligue, séquentiel)
         if: github.event.inputs.skip_scrape != 'true'
         working-directory: artifacts/football-dashboard
+        # timeout-minutes : limite dure à 5h pour rester sous le plafond GitHub (6h/job).
+        # continue-on-error : si la limite est atteinte ou qu'une ligue bloque,
+        # les étapes suivantes (filtrage, build, déploiement) tournent quand même
+        # avec les CSV déjà produits — portail partiel plutôt que pas de portail.
+        timeout-minutes: 300
+        continue-on-error: true
         run: |
           IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
           OK=0
@@ -144,10 +150,17 @@ jobs:
               continue
             fi
             echo "::group::Scraping carrière $code"
-            if python3 tm_player_career.py --league "$code" --workers 5; then
+            # timeout 240s (4 min) par ligue : une ligue bloquée par TM
+            # est abandonnée proprement sans tuer le reste du pipeline.
+            if timeout 240 python3 tm_player_career.py --league "$code" --workers 5; then
               OK=$((OK+1))
             else
-              echo "::warning::Échec scraping $code"
+              EXIT=$?
+              if [ $EXIT -eq 124 ]; then
+                echo "::warning::Timeout ($code) — ligue ignorée, pipeline continue"
+              else
+                echo "::warning::Échec scraping $code (exit $EXIT)"
+              fi
               KO=$((KO+1))
             fi
             echo "::endgroup::"
@@ -155,11 +168,13 @@ jobs:
           echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents)"
 
       - name: Filtrer saison en cours pour chaque ligue
+        # always() : tourne même si l'étape carrière a expiré ou échoué partiellement.
+        if: always()
         working-directory: artifacts/football-dashboard
         run: python3 scripts/make_current_season.py
 
       - name: Persister les CSV carrière sur main
-        if: github.event.inputs.skip_scrape != 'true'
+        if: always() && github.event.inputs.skip_scrape != 'true'
         run: |
           # On commit les CSV carrière sur main pour qu'ils ne disparaissent
           # plus jamais, même si un futur run partiel + force_orphan rebâtit
@@ -180,10 +195,12 @@ jobs:
           fi
 
       - name: Construire la page GitHub Pages (HTML + ZIPs)
+        if: always()
         working-directory: artifacts/football-dashboard
         run: python3 scripts/build_pages.py
 
       - name: Vérifier la sortie (non bloquant)
+        if: always()
         working-directory: artifacts/football-dashboard
         # Étape jamais bloquante : on log un état même si 0 ZIP, pour permettre
         # un déploiement "dégradé" (page index avec sections "Pas encore scrapé").
@@ -203,6 +220,7 @@ jobs:
           fi
 
       - name: Déployer sur GitHub Pages (branche gh-pages)
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -50,9 +50,9 @@ Thumbs.db
 
 # Football dashboard local-only build artifacts
 artifacts/football-dashboard/gh_pages_build/
-# Outputs scrapés (volumineux, regénérés par GH Actions)
-artifacts/football-dashboard/live/data/tm_career/
-artifacts/football-dashboard/live/data/tm_career_current/
+# Outputs scrapés — tm_career/ et tm_career_current/ sont désormais SUIVIS
+# (commités par GH Actions via "Persister les CSV carrière") pour survivre
+# aux blocages TM. Ne pas les ré-ignorer.
 # POC dataset local + logs/progress du scraper local
 artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/
 artifacts/football-dashboard/tm_scrap_progress.json

@@ -569,6 +569,20 @@ def cli():
     if failed:
         _log(f"   IDs en échec: {failed[:20]}{' ...' if len(failed) > 20 else ''}")
 
+    # ── Garde-fou : ne pas écraser de bons CSV existants avec un résultat vide
+    # Si ≥90% des joueurs ont échoué ET qu'on n'a aucune donnée, c'est
+    # vraisemblablement un blocage TM (IP ban, timeout global, 403/503).
+    # On sort en erreur SANS écrire, pour préserver les fichiers précédents.
+    total_players = len(player_meta_by_id)
+    if total_players > 0 and not summary:
+        fail_pct = 100 * len(failed) / total_players
+        _log(
+            f"\n>>> ALERTE : {fail_pct:.0f}% d'échecs ({len(failed)}/{total_players}), "
+            f"0 ligne produite — TM bloquant ?"
+        )
+        _log("   Écriture annulée — fichiers existants préservés.")
+        sys.exit(1)  # Signale l'échec au workflow → KO → retry pass
+
     # Écrit les CSV
     out = args.out_dir
     write_csv(f"{out}/{league_label}_summary.csv", summary, SUMMARY_COLS)

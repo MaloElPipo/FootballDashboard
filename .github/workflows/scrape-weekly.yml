@@ -144,8 +144,11 @@ jobs:
           OK=0
           KO=0
           SKIP=0
+          KO_CODES=""
           for code in "${LIST[@]}"; do
-            if [ ! -f "live/data/tm_scrap/${code}.csv" ]; then
+            f="live/data/tm_scrap/${code}.csv"
+            # Skip si CSV absent OU vide (header seul = effectif non scrapé)
+            if [ ! -f "$f" ] || [ "$(wc -l < "$f")" -le 1 ]; then
               SKIP=$((SKIP+1))
               continue
             fi
@@ -162,10 +165,31 @@ jobs:
                 echo "::warning::Échec scraping $code (exit $EXIT)"
               fi
               KO=$((KO+1))
+              KO_CODES="$KO_CODES $code"
             fi
             echo "::endgroup::"
           done
-          echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents)"
+          # ── Retry pass : une seconde chance pour les ligues KO
+          # (ex. : erreur réseau transitoire, TM momentanément lent)
+          if [ -n "$KO_CODES" ]; then
+            echo "=== Retry pass : $KO ligue(s) KO → nouvelle tentative ==="
+            KO_RECOVERED=0
+            KO_FINAL=0
+            for code in $KO_CODES; do
+              echo "::group::Retry carrière $code"
+              if timeout 240 python3 tm_player_career.py --league "$code" --workers 5; then
+                OK=$((OK+1))
+                KO_RECOVERED=$((KO_RECOVERED+1))
+              else
+                KO_FINAL=$((KO_FINAL+1))
+                echo "::warning::Retry définitivement échoué : $code"
+              fi
+              echo "::endgroup::"
+            done
+            echo "Retry : $KO_RECOVERED récupérée(s) / $KO_FINAL toujours KO"
+            KO=$KO_FINAL
+          fi
+          echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents ou vides)"
 
       - name: Filtrer saison en cours pour chaque ligue
         # always() : tourne même si l'étape carrière a expiré ou échoué partiellement.

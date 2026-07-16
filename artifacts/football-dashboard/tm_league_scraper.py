@@ -264,6 +264,62 @@ def _extract_nationality(td_html: str) -> str | None:
     return unescape(m.group(1)).strip() if m else None
 
 
+def get_club_kader_players(
+    club_id: str,
+    club_slug: str,
+    club_name: str,
+    season: int,
+) -> list[dict]:
+    """Joueurs inscrits à l'effectif (kader), y compris avec 0 apparition.
+
+    La page `leistungsdaten` (performance) ne liste que les joueurs ayant ≥1
+    apparition. Cette passe complémentaire récupère les joueurs inscrits mais
+    pas encore joués (nouvelles recrues, blessés de longue durée, etc.) depuis
+    la page kader (effectif complet TM).
+
+    URL : /{club_slug}/kader/verein/{club_id}/saison_id/{season}/plus/1
+    (/plus/1 = inclut les prêts)
+
+    Returns : liste de dicts {player_id, player_name, team_id, team_name}
+    — les stats (minutes, buts, etc.) sont à 0 ; elles seront complétées
+    par le scraper carrière (ceapi) qui, lui, ne filtre pas sur les apparitions.
+    """
+    url = (
+        f"{BASE_URL}/{club_slug}/kader/verein/{club_id}"
+        f"/saison_id/{season}/plus/1"
+    )
+    _polite_pause()
+    html, status, err = _fetch(url)
+    if not html:
+        if status not in (404, None) and status and status < 500:
+            pass  # page vide légitime (club sans kader publié)
+        return []
+
+    seen: set[str] = set()
+    players: list[dict] = []
+    # Pattern A : title="Nom" href="/profil/spieler/123..."
+    for m in re.finditer(
+        r'<a\s+title="([^"]+)"\s+href="/profil/spieler/(\d+)[^"]*"', html
+    ):
+        name, pid = unescape(m.group(1)), m.group(2)
+        if pid in seen:
+            continue
+        seen.add(pid)
+        players.append({"player_id": pid, "player_name": name,
+                        "team_id": club_id, "team_name": club_name})
+    # Pattern B : href avant title (fallback)
+    for m in re.finditer(
+        r'<a\s+href="/profil/spieler/(\d+)[^"]*"\s+title="([^"]+)"', html
+    ):
+        pid, name = m.group(1), unescape(m.group(2))
+        if pid in seen:
+            continue
+        seen.add(pid)
+        players.append({"player_id": pid, "player_name": name,
+                        "team_id": club_id, "team_name": club_name})
+    return players
+
+
 def get_club_season_perfs(
     club_id: str,
     club_slug: str,
@@ -429,6 +485,47 @@ def scrape_league(
                 print(f"   [{done}/{len(tasks)}] {tname} {season}: {n} joueurs ({elapsed:.1f}s écoulées)", flush=True)
             if progress_cb:
                 progress_cb(done, len(tasks))
+
+    # ── Étape 3 : kader (passe complémentaire, saison la plus récente uniquement)
+    # Capture les joueurs avec 0 apparition (nouvelles recrues, blessés longue
+    # durée) qui n'apparaissent PAS sur la page leistungsdaten.
+    if seasons:
+        kader_season = max(seasons)
+        print(
+            f"── Étape 3 : kader saison {kader_season} "
+            f"({len(teams)} équipes, séquentiel)...",
+            flush=True,
+        )
+        existing_pids: set[str] = {r["player_id"] for r in rows}
+        kader_added = 0
+        for team in teams:
+            kplayers = get_club_kader_players(
+                team["team_id"], team["team_slug"], team["team_name"], kader_season
+            )
+            for k in kplayers:
+                if k["player_id"] not in existing_pids:
+                    rows.append({
+                        "player_id": k["player_id"],
+                        "player_name": k["player_name"],
+                        "team_id": team["team_id"],
+                        "team_name": team["team_name"],
+                        "season": kader_season,
+                        "competition": comp_code,
+                        "shirt_number": 0,
+                        "position": "",
+                        "age": 0,
+                        "nationality": "",
+                        "in_squad": 0,
+                        "appearances": 0,
+                        "goals": 0,
+                        "minutes_played": 0,
+                    })
+                    existing_pids.add(k["player_id"])
+                    kader_added += 1
+        if kader_added:
+            print(f"   +{kader_added} joueur(s) ajouté(s) depuis kader (0 apparitions)", flush=True)
+        else:
+            print("   Kader : aucun joueur supplémentaire", flush=True)
 
     dt = (time.time() - t0) / 60
     print(f"=== Terminé en {dt:.1f} min : {len(rows)} lignes ===", flush=True)

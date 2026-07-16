@@ -211,8 +211,10 @@ jobs:
           git config user.name "github-actions[bot]"
           # Resync au cas où l'étape "Persister effectifs" a déjà push
           git pull --rebase origin main || true
-          git add artifacts/football-dashboard/live/data/tm_career/*.csv 2>/dev/null || true
-          git add artifacts/football-dashboard/live/data/tm_career_current/*.csv 2>/dev/null || true
+          # --force requis : ces répertoires étaient gitignorés avant le fix
+          # du .gitignore ; git add sans --force les ignorerait encore.
+          git add --force artifacts/football-dashboard/live/data/tm_career/ 2>/dev/null || true
+          git add --force artifacts/football-dashboard/live/data/tm_career_current/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Aucun nouveau CSV carrière à committer."
           else

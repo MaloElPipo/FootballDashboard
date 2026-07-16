@@ -193,12 +193,15 @@ jobs:
 
       - name: Filtrer saison en cours pour chaque ligue
         # always() : tourne même si l'étape carrière a expiré ou échoué partiellement.
-        if: always()
+        # continue-on-error : si TM bloquait et que tous les CSV sont vides, on
+        # continue quand même vers build/deploy avec les données committées précédemment.
+        if: ${{ always() }}
+        continue-on-error: true
         working-directory: artifacts/football-dashboard
         run: python3 scripts/make_current_season.py
 
       - name: Persister les CSV carrière sur main
-        if: always() && github.event.inputs.skip_scrape != 'true'
+        if: ${{ always() && github.event.inputs.skip_scrape != 'true' }}
         run: |
           # On commit les CSV carrière sur main pour qu'ils ne disparaissent
           # plus jamais, même si un futur run partiel + force_orphan rebâtit
@@ -219,12 +222,12 @@ jobs:
           fi
 
       - name: Construire la page GitHub Pages (HTML + ZIPs)
-        if: always()
+        if: ${{ always() }}
         working-directory: artifacts/football-dashboard
         run: python3 scripts/build_pages.py
 
       - name: Vérifier la sortie (non bloquant)
-        if: always()
+        if: ${{ always() }}
         working-directory: artifacts/football-dashboard
         # Étape jamais bloquante : on log un état même si 0 ZIP, pour permettre
         # un déploiement "dégradé" (page index avec sections "Pas encore scrapé").
@@ -244,7 +247,7 @@ jobs:
           fi
 
       - name: Déployer sur GitHub Pages (branche gh-pages)
-        if: always()
+        if: ${{ always() }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

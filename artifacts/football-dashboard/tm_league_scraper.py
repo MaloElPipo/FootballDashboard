@@ -54,6 +54,7 @@ import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from html import unescape
 
 import tm_waf
@@ -573,6 +574,41 @@ def _write_csv(rows: list[dict], path: str) -> None:
     print(f"\n✓ Saved {len(rows)} rows to {path}", flush=True)
 
 
+def _row_key(r: dict) -> tuple[str, str, str, str]:
+    """Clé d'identité d'une ligne effectif : (joueur, club, saison, compétition)."""
+    return (
+        str(r.get("player_id", "")),
+        str(r.get("team_id", "")),
+        str(r.get("season", "")),
+        str(r.get("competition", "")),
+    )
+
+
+def _merge_with_existing(new_rows: list[dict], path: str) -> list[dict]:
+    """Fusionne les nouvelles lignes avec le CSV existant (upsert, sans suppression).
+
+    - Une ligne existante dont la clé (joueur, club, saison, compétition) est
+      re-scrapée est REMPLACÉE (stats à jour).
+    - Toute autre ligne existante est CONSERVÉE (historique, clubs dont le
+      scrape a partiellement échoué, joueurs partis — leur carrière reste
+      suivie). On ne perd donc jamais de joueur lors d'un refresh.
+    """
+    if not os.path.exists(path):
+        return new_rows
+    new_keys = {_row_key(r) for r in new_rows}
+    kept: list[dict] = []
+    with open(path, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if _row_key(r) not in new_keys:
+                kept.append(r)
+    print(
+        f"   Merge : {len(kept)} ligne(s) existante(s) conservée(s) "
+        f"+ {len(new_rows)} scrapée(s)",
+        flush=True,
+    )
+    return kept + new_rows
+
+
 # ============================================================
 # CLI
 # ============================================================
@@ -581,14 +617,26 @@ def main():
     p.add_argument("--comp", required=True, help="Code compétition TM (ex SFA1)")
     p.add_argument("--slug", required=True, help="Slug compétition (ex betway-premiership)")
     p.add_argument(
-        "--seasons", default="2021,2022,2023,2024,2025",
-        help="Saisons CSV (ex 2021,2022,2023,2024,2025). Défaut : 5 dernières.",
+        "--seasons", default=None,
+        help="Saisons CSV (ex 2021,2022,2023). Défaut : 6 dernières années "
+             "jusqu'à l'année courante incluse (couvre la saison qui démarre).",
     )
     p.add_argument("--workers", type=int, default=3)
     p.add_argument("--out", default=None, help="Chemin CSV de sortie")
+    p.add_argument(
+        "--merge", action="store_true",
+        help="Fusionner avec le CSV existant (upsert : remplace les lignes "
+             "re-scrapées, conserve toutes les autres). Jamais de suppression.",
+    )
     p.add_argument("--test", action="store_true", help="Mode test (limite équipes)")
     p.add_argument("--test-n-teams", type=int, default=1, help="Nb équipes en mode test")
     args = p.parse_args()
+
+    if args.seasons is None:
+        # Dynamique : inclut l'année courante (saison 2026/27 = id TM 2026,
+        # disponible dès l'été) pour capter transferts et nouveaux effectifs.
+        y = datetime.utcnow().year
+        args.seasons = ",".join(str(s) for s in range(y - 5, y + 1))
 
     try:
         seasons = [int(s.strip()) for s in args.seasons.split(",") if s.strip()]
@@ -607,6 +655,22 @@ def main():
         workers=args.workers,
         test_n_teams=(args.test_n_teams if args.test else None),
     )
+
+    # Garde-fou : 0 ligne scrapée (WAF, réseau, page vide) → on ne touche PAS
+    # au CSV existant. Écraser un bon effectif par un fichier vide couperait
+    # toute la ligue du scraping carrière et du portail.
+    if not rows:
+        if os.path.exists(out) and os.path.getsize(out) > 0:
+            print(
+                f"ERREUR : 0 ligne scrapée — CSV existant conservé intact ({out})",
+                file=sys.stderr,
+            )
+        else:
+            print("ERREUR : 0 ligne scrapée — rien à écrire.", file=sys.stderr)
+        sys.exit(1)
+
+    if args.merge:
+        rows = _merge_with_existing(rows, out)
     _write_csv(rows, out)
 
 

@@ -56,17 +56,16 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html import unescape
 
+import tm_waf
+
 # ============================================================
 # Config & constantes
 # ============================================================
 BASE_URL = "https://www.transfermarkt.com"
 
 TM_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/146.0.0.0 Safari/537.36"
-    ),
+    # UA aligné sur celui du navigateur qui obtient le token WAF (cf. tm_waf).
+    "User-Agent": tm_waf.WAF_USER_AGENT,
     "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Referer": "https://www.transfermarkt.com/",
@@ -88,7 +87,23 @@ def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | Non
     Cela permet à l'appelant de distinguer "page vide légitime" (200 + html
     sans table) de "erreur réseau" (timeout, 5xx, 429).
     """
-    req = urllib.request.Request(url, headers=TM_HEADERS)
+    html, status, err, is_challenge = _fetch_once(url, timeout)
+    if not html and is_challenge:
+        # Cookie WAF expiré/invalide : refresh (sérialisé) + un retry.
+        tm_waf.get_waf_token(force_refresh=True)
+        html, status, err, _ = _fetch_once(url, timeout)
+    return html, status, err
+
+
+def _fetch_once(
+    url: str, timeout: int = TIMEOUT
+) -> tuple[str, int | None, str | None, bool]:
+    """Un seul GET. Returns (html, status, error, is_challenge)."""
+    headers = dict(TM_HEADERS)
+    cookie = tm_waf.cookie_header()
+    if cookie:
+        headers["Cookie"] = cookie
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = r.read()
@@ -97,15 +112,19 @@ def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | Non
                     data = gzip.decompress(data)
                 except OSError:
                     pass
-            return data.decode("utf-8", errors="replace"), r.status, None
+            waf_action = r.headers.get("x-amzn-waf-action")
+            if tm_waf.is_challenge_response(r.status, len(data), waf_action):
+                return "", r.status, "WAF challenge", True
+            return data.decode("utf-8", errors="replace"), r.status, None, False
     except urllib.error.HTTPError as e:
-        return "", e.code, f"HTTP {e.code}"
+        is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
+        return "", e.code, f"HTTP {e.code}", is_ch
     except urllib.error.URLError as e:
-        return "", None, f"URL error: {e.reason}"
+        return "", None, f"URL error: {e.reason}", False
     except TimeoutError:
-        return "", None, "timeout"
+        return "", None, "timeout", False
     except Exception as e:
-        return "", None, f"{type(e).__name__}: {e}"
+        return "", None, f"{type(e).__name__}: {e}", False
 
 
 def _fetch_html(url: str, timeout: int = TIMEOUT) -> str:

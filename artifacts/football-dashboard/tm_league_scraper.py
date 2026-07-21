@@ -566,11 +566,15 @@ COLUMNS = [
 
 def _write_csv(rows: list[dict], path: str) -> None:
     os.makedirs(os.path.dirname(os.path.abspath(path)) or ".", exist_ok=True)
-    with open(path, "w", newline="", encoding="utf-8") as f:
+    # Écriture atomique : temp + os.replace, pour qu'un kill (timeout CI)
+    # en pleine écriture ne laisse jamais un CSV tronqué à committer.
+    tmp = f"{path}.tmp"
+    with open(tmp, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS)
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in COLUMNS})
+    os.replace(tmp, path)
     print(f"\n✓ Saved {len(rows)} rows to {path}", flush=True)
 
 

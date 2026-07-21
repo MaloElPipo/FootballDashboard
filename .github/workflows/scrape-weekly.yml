@@ -47,12 +47,17 @@ jobs:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('artifacts/football-dashboard/requirements.txt') }}
 
-      - name: Install dépendances minimales
+      - name: Install dépendances (Playwright pour contourner AWS WAF)
         run: |
-          # Le scraper TM ceapi n'utilise que la stdlib Python.
-          # Pas besoin d'installer requirements.txt complet.
+          # TM protège son site derrière AWS WAF Bot Control : toute requête
+          # HTTP nue depuis une IP datacenter reçoit un challenge JS (202).
+          # On utilise Playwright/Chromium (cf. tm_waf.py) pour obtenir le
+          # cookie aws-waf-token, réinjecté ensuite dans les requêtes rapides.
           python -m pip install --upgrade pip
-          # On importe leagues_master qui n'a aucune dépendance.
+          python -m pip install playwright
+          # Installe le Chromium géré par Playwright + ses libs système.
+          # (--with-deps fonctionne nativement sur ubuntu-latest.)
+          python -m playwright install --with-deps chromium
 
       - name: Lister les ligues à scraper
         id: list_leagues

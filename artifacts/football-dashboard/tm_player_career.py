@@ -416,14 +416,29 @@ MATCHES_COLS = [
 ]
 
 
+def max_season_in_csv(csv_path: str) -> int:
+    """Retourne la saison max présente dans un CSV effectifs (0 si aucune)."""
+    smax = 0
+    with open(csv_path, encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            try:
+                s = int(r.get("season") or 0)
+            except ValueError:
+                s = 0
+            if s > smax:
+                smax = s
+    return smax
+
+
 def load_player_meta_from_league_csv(
-    csv_path: str, season_filter: int | None = None
+    csv_path: str, season_filter: set[int] | None = None
 ) -> dict[str, dict]:
     """Lit un CSV produit par tm_league_scraper.py et indexe sur player_id.
 
     Si plusieurs lignes par joueur (cas normal: plusieurs saisons), garde la
-    plus récente (saison max). Si season_filter, ne garde que les player_id
-    présents dans cette saison (= effectif actif).
+    plus récente (saison max). Si season_filter (ensemble de saisons), ne
+    garde que les player_id présents dans AU MOINS une de ces saisons
+    (= effectif actif).
     """
     by_id: dict[str, dict] = {}
     seasons_by_id: dict[str, int] = {}
@@ -436,7 +451,7 @@ def load_player_meta_from_league_csv(
                 s = int(r.get("season") or 0)
             except ValueError:
                 s = 0
-            if season_filter is not None and s != season_filter:
+            if season_filter is not None and s not in season_filter:
                 continue
             prev_s = seasons_by_id.get(pid, -1)
             if s >= prev_s:
@@ -534,9 +549,11 @@ def cli():
              "et écrit live/data/tm_career/{league}_*.csv",
     )
     parser.add_argument(
-        "--season-filter", type=int, default=2025,
-        help="N'inclut que les joueurs présents dans l'effectif de cette saison "
-             "(défaut: 2025 = saison 25/26 en cours). 0 = toutes saisons.",
+        "--season-filter", type=int, default=-1,
+        help="N'inclut que les joueurs présents dans l'effectif de cette saison. "
+             "-1 (défaut) = AUTO : saison max du CSV + la précédente (robuste "
+             "aux ligues dont la nouvelle saison n'est pas encore scrapée ou "
+             "aux clubs dont le refresh a échoué). 0 = toutes saisons.",
     )
     parser.add_argument(
         "--player-ids", default=None,
@@ -570,12 +587,21 @@ def cli():
         if not os.path.exists(src):
             _log(f"   ! introuvable: {src}")
             sys.exit(1)
-        season_filter = args.season_filter if args.season_filter > 0 else None
+        if args.season_filter == -1:
+            # AUTO : effectif actif = saison max du CSV + la précédente.
+            # Capte les recrues/promus (saison N) sans perdre un club entier
+            # dont le refresh saison N aurait échoué (encore présent en N-1).
+            smax = max_season_in_csv(src)
+            season_filter = {smax, smax - 1} if smax > 0 else None
+        elif args.season_filter > 0:
+            season_filter = {args.season_filter}
+        else:
+            season_filter = None
         player_meta_by_id = load_player_meta_from_league_csv(src, season_filter)
         league_label = args.league
         _log(
             f"   chargé {len(player_meta_by_id)} joueurs depuis {src} "
-            f"(saison filter={season_filter})"
+            f"(saison filter={sorted(season_filter) if season_filter else None})"
         )
     else:
         parser.error("Il faut --league ou --player-ids")

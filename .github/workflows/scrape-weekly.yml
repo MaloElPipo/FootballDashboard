@@ -17,6 +17,12 @@ on:
         default: "false"
         type: choice
         options: ["false", "true"]
+      refresh_squads:
+        description: "Rafraîchir les effectifs existants (transferts, nouveaux joueurs) avant le scraping carrière"
+        required: false
+        default: "true"
+        type: choice
+        options: ["true", "false"]
 
 permissions:
   contents: write
@@ -121,6 +127,19 @@ jobs:
             echo "::endgroup::"
           done
           echo "Bilan effectifs : $OK scrapés / $KO échecs / $SKIPPED déjà présents"
+
+      - name: Rafraîchir les effectifs existants (transferts, nouveaux joueurs)
+        # Tourne aussi sur le cron hebdomadaire (inputs vides ⇒ != 'false').
+        # Re-scrape la saison précédente + courante pour TOUTES les ligues et
+        # FUSIONNE avec les CSV existants (upsert, jamais de suppression) :
+        # capte les transferts, les promus/relégués et les joueurs qui n'ont
+        # encore jamais joué (passe kader). En cas d'échec d'une ligue, son
+        # CSV existant reste intact (garde-fou 0-ligne dans le scraper).
+        if: github.event.inputs.skip_scrape != 'true' && github.event.inputs.refresh_squads != 'false'
+        working-directory: artifacts/football-dashboard
+        timeout-minutes: 180
+        continue-on-error: true
+        run: python3 scripts/scrape_all_squads.py --refresh-current
 
       - name: Persister les nouveaux effectifs sur main
         if: github.event.inputs.skip_scrape != 'true'

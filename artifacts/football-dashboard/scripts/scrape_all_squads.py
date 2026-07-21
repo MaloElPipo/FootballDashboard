@@ -43,7 +43,8 @@ def save_progress(p: dict) -> None:
     PROGRESS_FILE.write_text(json.dumps(p, indent=2, ensure_ascii=False))
 
 
-def run_one(code: str, slug: str, timeout: int = 600) -> dict:
+def run_one(code: str, slug: str, timeout: int = 600,
+            extra_args: list[str] | None = None) -> dict:
     """Lance le scraper pour 1 ligue. Retourne dict statut."""
     out_path = TM_SCRAP_DIR / f"{code.lower()}.csv"
     cmd = [
@@ -54,6 +55,8 @@ def run_one(code: str, slug: str, timeout: int = 600) -> dict:
         "--workers", "5",
         "--out", str(out_path),
     ]
+    if extra_args:
+        cmd += extra_args
     t0 = time.time()
     try:
         proc = subprocess.run(
@@ -92,6 +95,11 @@ def main() -> int:
     parser.add_argument("--only", help="Code TM unique (ex: L1)")
     parser.add_argument("--max-per-run", type=int, default=999,
                         help="Limite de ligues à traiter dans cette exécution")
+    parser.add_argument("--refresh-current", action="store_true",
+                        help="Rafraîchit TOUTES les ligues sur la saison "
+                             "précédente + courante, en FUSION avec le CSV "
+                             "existant (capte transferts, promus/relégués et "
+                             "nouveaux joueurs, sans jamais perdre de lignes)")
     args = parser.parse_args()
 
     sys.path.insert(0, str(REPO_ROOT))
@@ -106,16 +114,27 @@ def main() -> int:
     else:
         candidates = list(LEAGUES)
 
-    todo: list[dict] = []
-    for l in candidates:
-        code = l["code_tm"]
-        out_path = TM_SCRAP_DIR / f"{code.lower()}.csv"
-        if out_path.exists() and not args.force:
-            continue
-        todo.append(l)
+    extra_args: list[str] | None = None
+    if args.refresh_current:
+        # Refresh transferts : toutes les ligues, saison N-1 + N (id TM), en
+        # fusion avec l'existant. La saison N (ex. 2026 = saison 2026/27) capte
+        # les nouveaux effectifs dès l'été ; N-1 rafraîchit les stats finales.
+        y = datetime.utcnow().year
+        seasons_arg = f"{y - 1},{y}"
+        extra_args = ["--seasons", seasons_arg, "--merge"]
+        todo = list(candidates)
+        print(f"[INFO] Mode refresh : {len(todo)} ligue(s), saisons {seasons_arg}, fusion avec CSV existants")
+    else:
+        todo = []
+        for l in candidates:
+            code = l["code_tm"]
+            out_path = TM_SCRAP_DIR / f"{code.lower()}.csv"
+            if out_path.exists() and not args.force:
+                continue
+            todo.append(l)
 
-    print(f"[INFO] {len(todo)}/{len(candidates)} ligue(s) à traiter "
-          f"(les autres déjà présentes ; utiliser --force pour tout refaire)")
+        print(f"[INFO] {len(todo)}/{len(candidates)} ligue(s) à traiter "
+              f"(les autres déjà présentes ; utiliser --force pour tout refaire)")
     if args.max_per_run < len(todo):
         print(f"[INFO] Limite à {args.max_per_run} dans cette exécution")
         todo = todo[:args.max_per_run]
@@ -128,7 +147,7 @@ def main() -> int:
         slug = l["slug"]
         elapsed_total = int(time.time() - t_start)
         print(f"\n[{i}/{len(todo)}] {code:6s} ({l['nom']}) [{elapsed_total}s écoulées]", flush=True)
-        res = run_one(code, slug)
+        res = run_one(code, slug, extra_args=extra_args)
         progress["leagues"][code] = {**res, "slug": slug, "ts": datetime.utcnow().isoformat()}
         save_progress(progress)
         if res["ok"]:

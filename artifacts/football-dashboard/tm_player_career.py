@@ -54,6 +54,8 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
+import tm_waf
+
 # ============================================================
 # Config
 # ============================================================
@@ -61,11 +63,9 @@ BASE_URL = "https://www.transfermarkt.com"
 CEAPI_PATH = "/ceapi/performance-game/{pid}"
 
 TM_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/146.0.0.0 Safari/537.36"
-    ),
+    # UA aligné sur celui utilisé par le navigateur pour obtenir le token WAF
+    # (le WAF lie le cookie à l'empreinte du client — cf. tm_waf).
+    "User-Agent": tm_waf.WAF_USER_AGENT,
     "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept": "application/json, text/plain, */*",
     "Referer": "https://www.transfermarkt.com/",
@@ -96,14 +96,19 @@ def _polite_pause() -> None:
     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
 
 
-def _fetch_json(
+def _fetch_json_once(
     url: str, timeout: int = TIMEOUT
-) -> tuple[dict | None, int | None, str | None]:
-    """GET JSON avec gzip + headers Chrome.
+) -> tuple[dict | None, int | None, str | None, bool]:
+    """Un seul GET JSON. Returns (json, status, error, is_challenge).
 
-    Returns (parsed_json, status, error). En cas de succès : (dict, 200, None).
+    ``is_challenge`` signale une réponse de challenge AWS WAF (202 corps vide
+    ou header ``x-amzn-waf-action: challenge``), qui justifie un refresh + retry.
     """
-    req = urllib.request.Request(url, headers=TM_HEADERS)
+    headers = dict(TM_HEADERS)
+    cookie = tm_waf.cookie_header()
+    if cookie:
+        headers["Cookie"] = cookie
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = r.read()
@@ -112,19 +117,42 @@ def _fetch_json(
                     data = gzip.decompress(data)
                 except OSError:
                     pass
+            waf_action = r.headers.get("x-amzn-waf-action")
+            if tm_waf.is_challenge_response(r.status, len(data), waf_action):
+                return None, r.status, "WAF challenge", True
             text = data.decode("utf-8", errors="replace")
             try:
-                return json.loads(text), r.status, None
+                return json.loads(text), r.status, None, False
             except json.JSONDecodeError as e:
-                return None, r.status, f"JSON decode: {e}"
+                return None, r.status, f"JSON decode: {e}", False
     except urllib.error.HTTPError as e:
-        return None, e.code, f"HTTP {e.code}"
+        # 202/403 peuvent aussi remonter ici selon la config WAF.
+        is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
+        return None, e.code, f"HTTP {e.code}", is_ch
     except urllib.error.URLError as e:
-        return None, None, f"URL error: {e.reason}"
+        return None, None, f"URL error: {e.reason}", False
     except TimeoutError:
-        return None, None, "timeout"
+        return None, None, "timeout", False
     except Exception as e:
-        return None, None, f"{type(e).__name__}: {e}"
+        return None, None, f"{type(e).__name__}: {e}", False
+
+
+def _fetch_json(
+    url: str, timeout: int = TIMEOUT
+) -> tuple[dict | None, int | None, str | None]:
+    """GET JSON avec gzip + cookie WAF. Retente une fois après refresh du token
+    si un challenge AWS WAF est détecté.
+
+    Returns (parsed_json, status, error). En cas de succès : (dict, 200, None).
+    """
+    payload, status, err, is_challenge = _fetch_json_once(url, timeout)
+    if payload is None and is_challenge:
+        # Le cookie WAF est probablement expiré/invalide : on le rafraîchit
+        # (sérialisé, un seul navigateur relancé pour tous les workers) et on
+        # retente une fois.
+        tm_waf.get_waf_token(force_refresh=True)
+        payload, status, err, _ = _fetch_json_once(url, timeout)
+    return payload, status, err
 
 
 def fetch_player_career(player_id: str) -> dict | None:
@@ -556,6 +584,9 @@ def cli():
         n = min(args.test_n, len(player_meta_by_id))
         player_meta_by_id = dict(list(player_meta_by_id.items())[:n])
         _log(f"   MODE TEST: limité à {len(player_meta_by_id)} joueurs")
+
+    # Obtention du token WAF (1 navigateur) AVANT le scraping HTTP rapide.
+    tm_waf.warm_up()
 
     # Scrape
     _log(f"\n>>> Scraping carrière {league_label} ({len(player_meta_by_id)} joueurs, "

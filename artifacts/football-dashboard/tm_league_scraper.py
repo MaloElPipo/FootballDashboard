@@ -87,22 +87,23 @@ def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | Non
     Cela permet à l'appelant de distinguer "page vide légitime" (200 + html
     sans table) de "erreur réseau" (timeout, 5xx, 429).
     """
-    html, status, err, is_challenge = _fetch_once(url, timeout)
+    html, status, err, is_challenge, token_used = _fetch_once(url, timeout)
     if not html and is_challenge:
-        # Cookie WAF expiré/invalide : refresh (sérialisé) + un retry.
-        tm_waf.get_waf_token(force_refresh=True)
-        html, status, err, _ = _fetch_once(url, timeout)
+        # Cookie WAF expiré/invalide : refresh ciblé (ne relance le navigateur
+        # que si aucun autre worker n'a déjà remplacé ce token) + un retry.
+        tm_waf.get_waf_token(force_refresh=True, stale=token_used)
+        html, status, err, _, _ = _fetch_once(url, timeout)
     return html, status, err
 
 
 def _fetch_once(
     url: str, timeout: int = TIMEOUT
-) -> tuple[str, int | None, str | None, bool]:
-    """Un seul GET. Returns (html, status, error, is_challenge)."""
+) -> tuple[str, int | None, str | None, bool, str | None]:
+    """Un seul GET. Returns (html, status, error, is_challenge, token_used)."""
     headers = dict(TM_HEADERS)
-    cookie = tm_waf.cookie_header()
-    if cookie:
-        headers["Cookie"] = cookie
+    token = tm_waf.get_waf_token()
+    if token:
+        headers["Cookie"] = f"aws-waf-token={token}"
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -114,17 +115,17 @@ def _fetch_once(
                     pass
             waf_action = r.headers.get("x-amzn-waf-action")
             if tm_waf.is_challenge_response(r.status, len(data), waf_action):
-                return "", r.status, "WAF challenge", True
-            return data.decode("utf-8", errors="replace"), r.status, None, False
+                return "", r.status, "WAF challenge", True, token
+            return data.decode("utf-8", errors="replace"), r.status, None, False, token
     except urllib.error.HTTPError as e:
         is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
-        return "", e.code, f"HTTP {e.code}", is_ch
+        return "", e.code, f"HTTP {e.code}", is_ch, token
     except urllib.error.URLError as e:
-        return "", None, f"URL error: {e.reason}", False
+        return "", None, f"URL error: {e.reason}", False, token
     except TimeoutError:
-        return "", None, "timeout", False
+        return "", None, "timeout", False, token
     except Exception as e:
-        return "", None, f"{type(e).__name__}: {e}", False
+        return "", None, f"{type(e).__name__}: {e}", False, token
 
 
 def _fetch_html(url: str, timeout: int = TIMEOUT) -> str:

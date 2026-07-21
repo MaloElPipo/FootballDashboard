@@ -98,16 +98,17 @@ def _polite_pause() -> None:
 
 def _fetch_json_once(
     url: str, timeout: int = TIMEOUT
-) -> tuple[dict | None, int | None, str | None, bool]:
-    """Un seul GET JSON. Returns (json, status, error, is_challenge).
+) -> tuple[dict | None, int | None, str | None, bool, str | None]:
+    """Un seul GET JSON. Returns (json, status, error, is_challenge, token_used).
 
     ``is_challenge`` signale une réponse de challenge AWS WAF (202 corps vide
     ou header ``x-amzn-waf-action: challenge``), qui justifie un refresh + retry.
+    ``token_used`` est le token WAF employé (pour un refresh ciblé « stale »).
     """
     headers = dict(TM_HEADERS)
-    cookie = tm_waf.cookie_header()
-    if cookie:
-        headers["Cookie"] = cookie
+    token = tm_waf.get_waf_token()
+    if token:
+        headers["Cookie"] = f"aws-waf-token={token}"
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -119,22 +120,22 @@ def _fetch_json_once(
                     pass
             waf_action = r.headers.get("x-amzn-waf-action")
             if tm_waf.is_challenge_response(r.status, len(data), waf_action):
-                return None, r.status, "WAF challenge", True
+                return None, r.status, "WAF challenge", True, token
             text = data.decode("utf-8", errors="replace")
             try:
-                return json.loads(text), r.status, None, False
+                return json.loads(text), r.status, None, False, token
             except json.JSONDecodeError as e:
-                return None, r.status, f"JSON decode: {e}", False
+                return None, r.status, f"JSON decode: {e}", False, token
     except urllib.error.HTTPError as e:
         # 202/403 peuvent aussi remonter ici selon la config WAF.
         is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
-        return None, e.code, f"HTTP {e.code}", is_ch
+        return None, e.code, f"HTTP {e.code}", is_ch, token
     except urllib.error.URLError as e:
-        return None, None, f"URL error: {e.reason}", False
+        return None, None, f"URL error: {e.reason}", False, token
     except TimeoutError:
-        return None, None, "timeout", False
+        return None, None, "timeout", False, token
     except Exception as e:
-        return None, None, f"{type(e).__name__}: {e}", False
+        return None, None, f"{type(e).__name__}: {e}", False, token
 
 
 def _fetch_json(
@@ -145,13 +146,12 @@ def _fetch_json(
 
     Returns (parsed_json, status, error). En cas de succès : (dict, 200, None).
     """
-    payload, status, err, is_challenge = _fetch_json_once(url, timeout)
+    payload, status, err, is_challenge, token_used = _fetch_json_once(url, timeout)
     if payload is None and is_challenge:
-        # Le cookie WAF est probablement expiré/invalide : on le rafraîchit
-        # (sérialisé, un seul navigateur relancé pour tous les workers) et on
-        # retente une fois.
-        tm_waf.get_waf_token(force_refresh=True)
-        payload, status, err, _ = _fetch_json_once(url, timeout)
+        # Cookie WAF expiré/invalide : refresh ciblé (ne relance le navigateur
+        # que si aucun autre worker n'a déjà remplacé ce token) + un retry.
+        tm_waf.get_waf_token(force_refresh=True, stale=token_used)
+        payload, status, err, _, _ = _fetch_json_once(url, timeout)
     return payload, status, err
 
 

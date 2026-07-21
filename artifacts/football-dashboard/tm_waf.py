@@ -56,6 +56,15 @@ _lock = threading.Lock()
 _token: str | None = None
 _disabled = os.environ.get("TM_WAF_DISABLE", "") == "1"
 
+# Abandon après N échecs consécutifs de lancement navigateur, pour éviter que
+# des centaines de requêtes ne re-tentent chacune un lancement Chromium (~10s)
+# lorsque Playwright est cassé — ce qui saturerait le budget temps de la ligue.
+# Le compteur est par-processus : chaque ligue est une invocation séparée, donc
+# une ligue « abandonnée » n'empêche pas la suivante de retenter à neuf.
+_MAX_CONSECUTIVE_FAILURES = 3
+_consecutive_failures = 0
+_gave_up = False
+
 
 def _resolve_chromium_path() -> str | None:
     """Retourne un chemin Chromium explicite, ou None pour laisser Playwright choisir.
@@ -132,28 +141,49 @@ def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000) -> str
     return None
 
 
-def get_waf_token(force_refresh: bool = False) -> str | None:
+def get_waf_token(force_refresh: bool = False, stale: str | None = None) -> str | None:
     """Retourne le token WAF courant, en l'obtenant/rafraîchissant si besoin.
 
-    Thread-safe : l'obtention est sérialisée. Si un autre thread vient de
-    rafraîchir pendant l'attente du verrou, on réutilise son résultat.
+    Thread-safe : l'obtention est sérialisée par ``_lock``.
+
+    - ``force_refresh`` : force un nouveau lancement navigateur (challenge détecté).
+    - ``stale`` : token que l'appelant vient d'utiliser sans succès. Si, une fois
+      le verrou acquis, ``_token`` a déjà changé (un autre worker a rafraîchi),
+      on renvoie le token courant SANS relancer un navigateur — évite le
+      « thundering herd » où N workers relancent chacun Chromium simultanément.
     """
-    global _token
+    global _token, _consecutive_failures, _gave_up
     if _disabled:
         return None
     if _token is not None and not force_refresh:
         return _token
     with _lock:
-        # Double-checked : un thread concurrent a peut-être déjà rafraîchi.
+        # Un thread concurrent a peut-être déjà (ra)fraîchi pendant l'attente.
         if _token is not None and not force_refresh:
+            return _token
+        if force_refresh and stale is not None and _token != stale:
+            # Un autre worker a déjà remplacé le token périmé : on l'utilise.
+            return _token
+        if _gave_up:
+            # Playwright durablement cassé sur ce processus : on n'insiste plus.
             return _token
         token_before = _token
         new = _launch_and_get_token()
-        # Si force_refresh mais échec, on garde l'ancien token (mieux que rien).
         if new is not None:
             _token = new
-        elif force_refresh and token_before is not None:
-            _token = token_before
+            _consecutive_failures = 0
+        else:
+            _consecutive_failures += 1
+            if _consecutive_failures >= _MAX_CONSECUTIVE_FAILURES:
+                _gave_up = True
+                print(
+                    f"   ! tm_waf: abandon après {_consecutive_failures} échecs "
+                    f"consécutifs de lancement navigateur",
+                    flush=True,
+                )
+            # Échec : on garde l'ancien token s'il existe (mieux que rien).
+            if force_refresh and token_before is not None:
+                _token = token_before
         return _token
 
 

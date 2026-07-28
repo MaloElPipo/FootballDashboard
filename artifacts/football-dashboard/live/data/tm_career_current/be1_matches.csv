@@ -1,23 +1,120 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
+639246,Hyeon-gyu Oh,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,played,9,14,False,63,0,0,3,1,2,0,,,63,0,0
+217879,Patrik Hrosovsky,2026-07-25T15:00:00+00:00,2026,TS1,1,False,4901913,1,941,home,697,1,3,played,17,7,True,90,0,0,1,0,0,1,,,,0,0
+154351,Colin Coosemans,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,26,1,True,90,0,0,0,0,0,0,,,,0,0
+1043003,Yasin Özcan,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+453770,Justin Heekeren,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+649022,Moussa Ndiaye,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,5,4,False,35,0,0,0,0,0,0,,55,,0,0
+486051,Marco Kana,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,55,6,False,64,0,0,0,0,0,0,,,64,0,0
+728924,Lucas Hey,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,injured,,,False,0,0,0,0,0,0,0,,,,284,0
+454336,Killian Sardella,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,injured,,,False,0,0,0,0,0,0,0,,,,53,0
+920585,Ali Maamar,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,79,5,False,90,0,0,0,0,0,0,,,,0,0
+170646,Ludwig Augustinsson,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,6,4,False,55,0,0,0,0,0,0,27,,55,0,0
+215114,Thomas Foket,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1194331,Basile Vroninks,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,62,,False,0,0,0,0,0,0,0,,,,0,0
+570781,Ilay Camara,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,injured,,,False,0,0,0,0,0,0,0,,,,34,0
+842420,Nathan-Dylan Saliba,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,13,7,False,78,0,0,0,0,0,0,24,,,0,0
+588866,Mario Stroeykens,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+412945,Enric Llansana,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,24,10,False,90,0,0,0,0,0,0,,,,0,0
+417228,Danylo Sikan,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,14,14,False,82,1,0,0,0,0,0,,,82,0,0
+395242,Alexis Flips,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+283196,Kasper Dolberg,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897983,3,610,away,448,4,1,played,9,14,False,72,0,0,5,3,1,1,,,72,0,0
+897510,Mihajlo Cvetkovic,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,9,12,False,26,0,0,0,0,0,0,,64,,0,0
+364896,Adriano Bertaccini,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,91,,False,0,0,0,0,0,0,0,,,,0,0
+903513,Tristan Degreef,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,83,,False,0,0,0,0,0,0,0,,,,0,0
+540315,César Huerta,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+844516,Luis Vázquez,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+1047103,Elyèss Dao,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1011936,Kaye Furo,2026-03-31T13:00:00+00:00,2026,U19Q,20,True,4825252,3,16338,home,21142,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1011936,Kaye Furo,2026-03-28T18:00:00+00:00,2026,U19Q,20,True,4825223,2,16338,home,23488,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+536507,Giulian Biancone,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+671548,Lukas Ambros,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,18,10,False,26,0,0,0,0,0,0,,64,,0,0
+412829,Léo Pétrot,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,27,3,False,90,0,0,0,0,0,0,,,,0,0
+682568,Cedric Hatenboer,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,injured,,,False,0,0,0,0,0,0,0,,,,16,0
+360140,Majeed Ashimeru,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1232103,Joshua Nga Kana,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897940,3,58,away,1059,1,1,played,61,12,False,64,0,0,0,0,0,0,,,64,0,0
 1129950,Andrej Vasovic,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,19429,home,23101,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1129950,Andrej Vasovic,2026-03-28T17:00:00+00:00,2026,U19Q,20,True,4825234,2,19429,home,26181,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1193791,Giorgi Kavlashvili,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25740,home,25785,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1193791,Giorgi Kavlashvili,2026-06-03T15:00:00+00:00,2026,U19Q,20,True,4825279,1,25740,home,26101,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+244221,Christian Burgess,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,16,3,False,90,0,0,0,0,0,0,,,,0,0
+387990,Tom Vandenberghe,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+140808,Davy Roef,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,33,1,True,90,0,0,0,0,0,0,,,,0,0
+1231353,Bas Evers,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+654919,Kjell Peersman,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+400131,Siebe Van der Heyden,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,44,3,False,90,0,0,0,0,0,0,71,,,0,0
+488298,Maksim Paskotsi,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
+481628,Tiago Araújo,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,20,11,False,90,0,0,0,0,0,0,,,,0,0
+781812,Matties Volckaert,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,57,3,False,1,0,0,0,0,0,0,,90,,0,0
+775403,Hugo Gambor,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+387191,Daiki Hashioka,2026-07-26T13:00:00+00:00,2026,TS1,1,False,4901916,1,62,home,5544,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1160184,Abdoul Ayinde,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1005835,Gilles De Meyer,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+723487,Mathias Delorge,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,17,7,False,77,0,0,0,0,0,0,,,77,0,0
+143029,Stefan Mitrovic,2026-07-26T19:00:00+00:00,2026,SER1,1,False,4937749,2,669,away,4657,3,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
+143029,Stefan Mitrovic,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4897993,3,669,home,21835,4,0,played,23,3,False,90,0,1,0,0,0,0,,,,0,0
 143029,Stefan Mitrovic,2026-07-18T18:00:00+00:00,2026,SER1,1,False,4936432,1,669,away,3521,2,2,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
+492715,Atsuki Ito,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1019173,Tibe De Vlieger,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,27,7,False,13,0,0,0,0,0,0,,77,,0,0
+705991,Matisse Samoise,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,injured,,,False,0,0,0,0,0,0,0,,,,1,0
+592400,Abdelkahar Kadri,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,37,10,False,31,0,0,0,0,0,0,,59,,0,0
+348756,Leonardo Lopes,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,22,6,False,90,0,0,0,0,0,0,,,,0,0
+1105542,Mohammed El Âdfaoui,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
+568373,Aimé Omgba,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
+1285174,Hyllarion Goore,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,45,12,False,77,0,0,0,0,0,0,,,77,0,0
+931525,Wout Asselman,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+840836,Hélio Varela,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897943,3,119,away,2481,5,0,played,29,11,False,26,0,0,0,0,0,0,,64,,0,0
 840836,Hélio Varela,2026-07-16T16:30:00+00:00,2026,IRLP,9,False,4922229,1,119,away,2976,3,1,absent,,,False,0,0,0,0,0,0,0,,,,0,4
+395523,Wilfried Kanga,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,7,14,False,90,0,0,0,0,0,0,,,90,0,0
+805889,Max Dean,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,21,14,False,1,0,0,0,0,0,0,,90,,0,0
+627196,Franck Surdez,2026-07-26T12:00:00+00:00,2026,C1,1,False,4897290,1,321,away,452,2,4,played,19,0,False,45,0,1,3,0,1,2,,46,,0,0
+627196,Franck Surdez,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897976,3,321,neutral,713,1,1,played,19,11,False,63,0,0,3,0,2,1,,,63,0,0
+1473866,Ibrahima Cissé,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,in squad,75,,False,0,0,0,0,0,0,0,,,,0,0
+929876,Momodou Sonko,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,11,12,False,13,0,0,0,0,0,0,,77,,0,0
+1125610,Moctar Diop,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1053009,Victor De Coninck,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+922792,Mouhamed Ngom,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,5,3,False,90,0,0,0,0,0,0,,,90,0,0
+1064973,Lars Cooman,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1291709,Josué Vergara,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,47,14,False,90,0,0,0,0,0,0,45,,,0,0
+243188,László Bénes,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,played,8,10,False,59,0,0,0,0,0,0,,,59,0,0
+183383,Pieter Gerkens,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+655902,Emin Bayram,2026-07-22T17:45:00+00:00,2026,ECLQ,10,False,4897959,3,6890,home,8042,1,1,played,23,3,False,90,1,0,2,1,1,0,,,,0,0
+344311,Jan Bernat,2026-07-25T16:00:00+00:00,2026,SLO1,1,False,4971547,1,32314,away,7918,1,1,played,23,14,False,56,0,0,3,0,3,0,,,56,0,0
+480975,Allahyar Sayyadmanesh,2026-07-25T18:15:00+00:00,2026,PL1,1,False,4895604,1,238,home,5689,0,0,played,17,0,False,8,0,0,1,1,0,0,,82,,0,0
+480975,Allahyar Sayyadmanesh,2026-07-21T17:00:00+00:00,2026,CLQ,10,False,4897890,3,238,away,678,4,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+480975,Allahyar Sayyadmanesh,2026-07-16T17:00:00+00:00,2026,PLSC,9,False,4903945,1,238,home,428,3,1,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
+743629,Josimar Alcócer,2026-07-25T18:00:00+00:00,2026,TS1,1,False,4901920,1,197,away,5225,1,3,played,7,12,False,67,0,0,0,0,0,0,,,67,0,0
+858772,Fernand Goure,2026-07-24T16:00:00+00:00,2026,PL1,1,False,4895597,1,7154,home,30974,2,1,played,11,0,False,6,0,0,0,0,0,0,,84,,0,0
+802547,Lasse Flø,2026-07-24T16:00:00+00:00,2026,DK2,2,False,4919235,1,443,home,362,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+507455,Lewin Blum,2026-07-26T12:00:00+00:00,2026,C1,1,False,4897290,1,452,home,321,4,2,played,27,5,False,77,1,0,2,1,1,0,8,,77,0,0
+320046,Vetle Dragsnes,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897971,3,1100,away,6429,2,2,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+854325,Étienne Camara,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897981,3,265,away,12163,2,1,played,22,6,False,90,0,0,0,0,0,0,,,,0,0
+371861,Zan Rogelj,2026-07-26T12:45:00+00:00,2026,PL1,1,False,4895599,1,2118,away,9644,2,1,played,21,8,False,90,1,0,1,1,0,0,,,,0,0
+554972,Filip Szymczak,2026-07-27T17:00:00+00:00,2026,PL1,1,False,4895603,1,168,home,6112,2,0,played,18,0,False,1,0,0,0,0,0,0,90,90,,0,0
 1193797,Nikoloz Chikovani,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25740,home,25785,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1193797,Nikoloz Chikovani,2026-06-03T15:00:00+00:00,2026,U19Q,20,True,4825279,1,25740,home,26101,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-480975,Allahyar Sayyadmanesh,2026-07-16T17:00:00+00:00,2026,PLSC,9,False,4903945,1,238,home,428,3,1,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
-1145002,Ibrahim Diabaté,2026-07-15T19:00:00+00:00,2026,CLQ,10,False,4897208,2,27114,home,46643,6,1,played,8,7,False,26,0,0,0,0,0,0,,64,,0,0
-1145002,Ibrahim Diabaté,2026-07-08T17:00:00+00:00,2026,CLQ,10,False,4897194,1,27114,away,46643,1,1,played,8,8,False,34,0,0,0,0,0,0,,46,80,0,0
+230985,Simen Juklerød,2026-07-26T15:00:00+00:00,2026,SLO1,1,False,4971550,1,4529,away,7087,1,1,played,18,4,False,90,0,0,0,0,0,0,44,,,0,0
+230985,Simen Juklerød,2026-07-23T16:30:00+00:00,2026,ECLQ,10,False,4897975,3,4529,home,628,1,0,played,18,4,False,90,0,0,0,0,0,0,,,,0,0
+589273,Maxence Maisonneuve,2026-07-26T18:15:00+00:00,2026,PL1,1,False,4895596,1,422,home,6456,2,1,played,13,3,False,90,0,0,0,0,0,0,45,,,0,0
+711626,Darío Benavides,2026-07-25T17:30:00+00:00,2026,RO1,1,False,4914517,2,312,home,40812,5,1,played,22,0,False,10,0,0,0,0,0,0,,80,,0,0
 711626,Darío Benavides,2026-07-19T16:30:00+00:00,2026,RO1,1,False,4912996,1,312,away,9465,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 627329,Jordi Liongola,2026-03-31T13:00:00+00:00,2026,AFCQ,19,True,4841193,2,13943,home,13978,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 627329,Jordi Liongola,2026-03-27T13:00:00+00:00,2026,AFCQ,19,True,4841187,1,13943,away,13978,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+859536,Oucasse Mendy,2026-07-26T14:30:00+00:00,2026,RO1,1,False,4914513,2,6429,away,54585,0,1,played,29,0,False,45,0,0,2,0,1,1,,46,,0,0
+859536,Oucasse Mendy,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897971,3,6429,home,1100,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 859536,Oucasse Mendy,2026-07-19T14:00:00+00:00,2026,RO1,1,False,4912995,1,6429,home,29831,2,1,played,29,0,False,35,0,0,0,0,0,0,,55,,0,0
 859536,Oucasse Mendy,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,6429,home,338,2,4,played,29,11,False,77,0,0,0,0,0,0,,,77,0,0
 859536,Oucasse Mendy,2026-07-12T17:30:00+00:00,2026,ROMS,9,False,4924498,1,6429,away,40812,4,6,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 859536,Oucasse Mendy,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,6429,neutral,338,0,0,played,29,11,False,65,0,0,0,0,0,0,,,65,0,0
+1111050,Mouhamed Guèye,2026-07-23T16:00:00+00:00,2026,ECLQ,10,False,4897961,3,1008,home,3831,5,0,played,32,0,False,25,0,0,0,0,0,0,,65,,0,0
+444209,Jonathan Afolabi,2026-07-21T16:00:00+00:00,2026,CLQ,10,False,4942868,3,3258,away,53453,0,2,played,18,0,False,23,0,0,0,0,0,0,89,67,,0,0
 444209,Jonathan Afolabi,2026-07-14T19:00:00+00:00,2026,CLQ,10,False,4897200,2,3258,home,10603,5,1,played,18,0,False,13,0,0,0,0,0,0,,77,,0,0
 444209,Jonathan Afolabi,2026-07-07T17:30:00+00:00,2026,CLQ,10,False,4897186,1,3258,away,10603,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+913495,Emran Soglo,2026-07-24T18:30:00+00:00,2026,ofb,8,False,4902303,1,122,away,4463,3,0,played,18,0,False,27,0,0,0,0,0,0,,63,,0,0
+913495,Emran Soglo,2026-07-21T18:30:00+00:00,2026,CLQ,10,False,4897897,3,122,home,43,4,0,played,18,4,False,79,0,0,1,0,1,0,,,79,0,0
+1145002,Ibrahim Diabaté,2026-07-22T19:00:00+00:00,2026,CLQ,10,False,4897895,3,27114,home,710,3,3,played,8,7,False,16,1,0,0,0,0,0,,74,,0,0
+1145002,Ibrahim Diabaté,2026-07-15T19:00:00+00:00,2026,CLQ,10,False,4897208,2,27114,home,46643,6,1,played,8,7,False,26,0,0,0,0,0,0,,64,,0,0
+1145002,Ibrahim Diabaté,2026-07-08T17:00:00+00:00,2026,CLQ,10,False,4897194,1,27114,away,46643,1,1,played,8,8,False,34,0,0,0,0,0,0,,46,80,0,0
+515386,Beau Reus,2026-07-21T18:30:00+00:00,2026,CLQ,10,False,4897897,3,43,away,122,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+503688,Dominic Thompson,2026-07-25T14:00:00+00:00,2026,SCP,14,False,4891685,5,2553,away,3032,4,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+503688,Dominic Thompson,2026-07-21T18:45:00+00:00,2026,SCP,14,False,4891670,4,2553,home,2999,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+503688,Dominic Thompson,2026-07-18T14:00:00+00:00,2026,SCP,14,False,4891656,3,2553,away,3028,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+503688,Dominic Thompson,2026-07-14T18:45:00+00:00,2026,SCP,14,False,4891643,2,2553,home,2795,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

@@ -1,108 +1,317 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
+738154,Christopher Nwaeze,2026-07-26T17:00:00+00:00,2026,MO1N,1,False,4946612,5,30686,away,2481,0,0,played,5,0,False,90,0,0,0,0,0,0,,,,0,0
 738154,Christopher Nwaeze,2026-07-19T15:00:00+00:00,2026,MO1N,1,False,4936491,4,30686,home,83016,2,1,played,5,0,False,90,0,0,0,0,0,0,,,,0,0
 738154,Christopher Nwaeze,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897264,2,30686,home,628,0,1,played,5,7,False,90,0,0,0,0,0,0,,,,0,0
 738154,Christopher Nwaeze,2026-07-12T17:00:00+00:00,2026,MO1N,1,False,4923340,3,30686,home,39003,0,1,played,5,0,False,70,0,0,0,0,0,0,19,,70,0,0
 738154,Christopher Nwaeze,2026-07-09T17:00:00+00:00,2026,ECLQ,10,False,4897238,1,30686,away,628,1,1,played,5,7,False,90,0,0,0,0,0,0,,,,0,0
 738154,Christopher Nwaeze,2026-07-04T17:00:00+00:00,2026,MO1N,1,False,4904960,2,30686,away,46643,0,5,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 738154,Christopher Nwaeze,2026-06-27T17:00:00+00:00,2026,MO1N,1,False,4902440,1,30686,home,2714,0,0,played,5,8,False,62,0,0,0,0,0,0,,,62,0,0
-514623,Mauro Rodrigues,2026-07-20T18:30:00+00:00,2026,BU1,1,False,4909852,1,2531,home,730,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1241968,Nazar Makarenko,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,72,1,False,90,0,0,0,0,0,0,,,,0,0
+631819,Danil Skorko,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
+1160405,Viktor Dolgyi,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+882224,Ilya Ukhan,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1117106,Artur Andreichyk,2026-07-24T17:00:00+00:00,2026,RLN4,4,False,4931709,1,111,home,222,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+807784,Jocelin Behiratche,2026-07-26T13:00:00+00:00,2026,TS1,1,False,4901916,1,5544,away,62,1,5,played,22,3,False,9,0,0,0,0,0,0,,81,,0,0
+815673,Fernando Henrique,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+726016,Denys Shostak,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+404846,Sergiy Buletsa,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,10,10,True,67,0,1,0,0,0,0,,,67,0,0
+1134676,Daniil Vashchenko,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,20,6,False,85,0,0,0,0,0,0,,,85,0,0
+1035982,Dmytro Chernysh,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,40,,False,0,0,0,0,0,0,0,,,,0,0
+1121524,Denys Khmelyovskyi,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,79,,False,0,0,0,0,0,0,0,,,,0,0
+568702,Papa Ndiaga Yade,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,37,14,False,90,0,0,0,0,0,0,,,,0,0
+646153,Tedi Cara,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,77,11,False,22,0,0,0,0,0,0,,68,,0,0
+633728,Bryan Castillo,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+618487,Hussayn Touati,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,24,12,False,71,0,0,0,0,0,0,,,71,0,0
+1095335,Jhonnatan Silva,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,44,,False,0,0,0,0,0,0,0,,,,0,0
+938300,Yaroslav Bazaev,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,120839,home,53645,1,0,played,8,5,False,90,0,0,0,0,0,0,,,,0,0
+514623,Mauro Rodrigues,2026-07-27T18:15:00+00:00,2026,BU1,1,False,4909868,2,2531,away,208,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+514623,Mauro Rodrigues,2026-07-21T18:30:00+00:00,2026,BU1,1,False,4909852,1,2531,home,730,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+935094,Dmitriy Kremchanin,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
+261780,Artem Shulyanskyi,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+717199,Bogdan Slyubyk,2026-07-26T18:00:00+00:00,2026,TS1,1,False,4901917,1,1496,away,1897,1,2,in squad,92,,False,0,0,0,0,0,0,0,,,,0,0
+432658,Yuriy Kopyna,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+774552,Denys Slyusar,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+776033,Andriy Kitela,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,in squad,75,,False,0,0,0,0,0,0,0,,,,0,0
+726038,Vitaliy Roman,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1061628,Yevgeniy Pastukh,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,19,10,False,68,0,0,0,0,0,0,,,68,0,0
+800015,Vlad Raileanu,2026-07-26T15:00:00+00:00,2026,MO1N,1,False,4946611,5,2714,away,90107,2,0,played,20,0,False,70,0,0,0,0,0,0,,,70,0,0
+800015,Vlad Raileanu,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897974,3,2714,home,60368,1,1,played,20,10,False,8,0,0,0,0,0,0,,82,,0,0
 800015,Vlad Raileanu,2026-07-18T17:00:00+00:00,2026,MO1N,1,False,4936489,4,2714,home,128633,1,1,played,20,0,False,3,0,0,0,0,0,0,,87,,0,0
 800015,Vlad Raileanu,2026-07-12T17:00:00+00:00,2026,MO1N,1,False,4923341,3,2714,away,2481,2,4,played,20,0,False,16,0,0,0,0,0,0,,74,,0,0
 800015,Vlad Raileanu,2026-07-05T17:00:00+00:00,2026,MO1N,1,False,4904962,2,2714,home,83016,3,0,played,20,10,False,45,0,0,0,0,0,0,,46,,0,0
 800015,Vlad Raileanu,2026-06-27T17:00:00+00:00,2026,MO1N,1,False,4902440,1,2714,away,30686,0,0,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+740732,Talles Brener,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,30,10,False,22,0,0,0,0,0,0,,68,,0,0
+620368,Ostap Prytula,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,16,10,False,23,0,0,0,0,0,0,,67,,0,0
+1059634,Kostyantyn Kvas,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,74,10,False,84,0,0,0,0,0,0,,,84,0,0
+1111025,Baboucarr Faal,2026-07-25T15:00:00+00:00,2026,TS1,1,False,4901913,1,941,home,697,1,3,played,23,14,False,9,0,0,0,0,0,0,,81,,0,0
+748940,Vasyl Runich,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,53645,away,120839,0,1,played,44,11,False,90,0,0,0,0,0,0,,,,0,0
+649030,Samba Diallo,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 649030,Samba Diallo,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 649030,Samba Diallo,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-417242,Ruslan Neshcheret,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,35,1,False,120,0,0,0,0,0,0,,,,0,0
-417242,Ruslan Neshcheret,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
-911644,Ilya Olkhovyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
-911644,Ilya Olkhovyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
-1067225,Taras Mykhavko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,32,3,False,120,0,0,0,0,0,0,86,,,0,0
-1067225,Taras Mykhavko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
-1063685,Vyacheslav Surkis,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,71,,False,0,0,0,0,0,0,0,,,,0,0
-1063685,Vyacheslav Surkis,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,71,,False,0,0,0,0,0,0,0,,,,0,0
-404841,Denys Popov,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-404841,Denys Popov,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-287792,Oleksandr Tymchyk,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-287792,Oleksandr Tymchyk,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-636237,Kostyantyn Vivcharenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,2,4,False,44,0,0,0,0,0,0,,76,,0,0
-636237,Kostyantyn Vivcharenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-366723,Vladyslav Dubinchak,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,44,4,False,99,0,0,0,0,0,0,,,99,0,0
-366723,Vladyslav Dubinchak,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,44,4,False,90,0,0,0,0,0,0,,,,0,0
-505463,Oleksandr Syrota,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-505463,Oleksandr Syrota,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-539436,Kristian Bilovar,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,40,3,False,120,0,0,0,0,0,0,,,,0,0
-539436,Kristian Bilovar,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
-181118,Tomasz Kędziora,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,94,5,False,76,0,0,0,0,0,0,,,76,0,0
-181118,Tomasz Kędziora,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,94,5,False,90,0,0,0,0,0,0,,,,0,0
-949111,Aliou Thiaré,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
-949111,Aliou Thiaré,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
-1074060,Vladyslav Zakharchenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,98,0
-1074060,Vladyslav Zakharchenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,98,0
-1074045,Maksym Korobov,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
-1074045,Maksym Korobov,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
-955349,Oleksiy Gusev,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-955349,Oleksiy Gusev,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
-669306,Volodymyr Brazhko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,6,6,False,120,0,0,0,0,0,0,,,,0,0
-669306,Volodymyr Brazhko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,6,6,False,90,0,0,0,0,0,0,,,,0,0
-368611,Mykola Shaparenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,10,7,False,87,0,0,0,0,0,0,,,87,0,0
-368611,Mykola Shaparenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
-167722,Vitaliy Buyalskyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,29,10,False,57,0,0,0,0,0,0,,63,,0,0
-167722,Vitaliy Buyalskyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,29,10,False,29,0,0,0,0,0,0,,61,,0,0
-626475,Mykola Mykhaylenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-626475,Mykola Mykhaylenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-294780,Oleksandr Pikhalyonok,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,8,7,True,63,0,0,0,0,0,0,,,63,0,0
-294780,Oleksandr Pikhalyonok,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,8,7,True,61,0,0,0,0,0,0,,,61,0,0
-357917,Justin Lonwijk,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,21,7,False,33,0,0,0,0,0,0,105,87,,0,0
-357917,Justin Lonwijk,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-935095,Navin Malysh,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,23,5,False,21,0,0,0,0,0,0,,99,,0,0
-935095,Navin Malysh,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
-925401,Roman Salenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,244,0
-925401,Roman Salenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,244,0
-666943,Valentyn Rubchynskyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-666943,Valentyn Rubchynskyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-893187,Reshat Ramadani,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-893187,Reshat Ramadani,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
-1074053,Matviy Ponomarenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,11,14,False,120,0,0,0,0,0,0,,,,0,0
-1074053,Matviy Ponomarenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,11,14,False,90,0,0,0,0,0,0,,,,0,0
-1138725,Bogdan Redushko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,70,11,False,76,0,0,0,0,0,0,59,,76,0,0
-1138725,Bogdan Redushko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,70,11,False,90,0,0,0,0,0,0,,,,0,0
-726034,Nazar Voloshyn,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,9,12,False,87,0,0,0,0,0,0,,,87,0,0
-726034,Nazar Voloshyn,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,9,12,False,90,0,0,0,0,0,0,,,90,0,0
-210689,Vladyslav Kabaev,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,307,0
-210689,Vladyslav Kabaev,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,307,0
-1185913,Pierre Mounguengue,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1185913,Pierre Mounguengue,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-502842,Eduardo Guerrero,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-502842,Eduardo Guerrero,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-706166,Vladislav Blănuță,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-706166,Vladislav Blănuță,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-998742,Shola Ogundana,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,16,11,False,33,0,0,0,0,0,0,,87,,0,0
-998742,Shola Ogundana,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,16,11,False,1,0,0,0,0,0,0,,90,,0,0
-69015,Andriy Yarmolenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,7,12,False,44,0,0,0,0,0,0,,76,,0,0
-69015,Andriy Yarmolenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1141487,Vladyslav Gerych,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1141487,Vladyslav Gerych,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,87,,False,0,0,0,0,0,0,0,,,,0,0
-419061,Vladyslav Supryaga,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-419061,Vladyslav Supryaga,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1061623,Nazar Kasarda,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,77,12,False,15,0,0,0,0,0,0,75,75,,0,0
+1113558,Mykyta Minchev,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+572163,Daniil Yermolov,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,in squad,96,,False,0,0,0,0,0,0,0,,,,0,0
+721512,Mykyta Kononov,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,2,8,False,90,1,0,0,0,0,0,28,,,0,0
+581011,Mykola Buzhyn,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+497222,Oleg Veremiyenko,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
+917287,Vadym Pidlepych,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,5,3,False,2,0,0,0,0,0,0,,88,,0,0
+249639,Yevgen Misyura,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,120839,home,53645,1,0,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
+321947,Andriy Savenkov,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,13,5,False,35,0,0,0,0,0,0,,55,,0,0
+381299,Igor Kotsyumaka,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,95,4,False,88,0,0,0,0,0,0,,,88,0,0
+376227,Denys Galenkov,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+395537,Dmytro Plakhtyr,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,81169,away,27227,1,1,played,44,3,False,90,0,0,0,0,0,0,,,,0,0
+383758,Vladyslav Danylenko,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,15,7,True,88,0,0,0,0,0,0,66,,88,0,0
+523491,Valeriy Sad,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,10,10,False,90,1,0,0,0,0,0,,,,0,0
+1031028,Oleksandr Vivdych,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,88,14,False,2,0,0,0,0,0,0,,88,,0,0
+395069,Volodymyr Odaryuk,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+789478,Bogdan Kobzar,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,17,14,False,88,0,0,0,0,0,0,,,88,0,0
+325386,Maksym Marusych,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,53645,away,120839,0,1,played,41,14,False,77,0,0,0,0,0,0,,,77,0,0
+935046,Roman Savchenko,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,27227,home,81169,1,1,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
+955213,Andriy Matkevych,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 955213,Andriy Matkevych,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 955213,Andriy Matkevych,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1074043,Vitaliy Lobko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,166,0
-1074043,Vitaliy Lobko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+748939,Oleksiy Sych,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+224164,Rostyslav Taranukha,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,120839,home,53645,1,0,played,9,14,False,88,0,0,0,0,0,0,,,88,0,0
+1067499,Ivan Melnychenko,2026-07-26T09:00:00+00:00,2026,UKR2,2,False,4921740,1,120839,home,53645,1,0,played,45,9,False,25,0,0,0,0,0,0,,65,,0,0
+469685,Zan Trontelj,2026-07-26T15:00:00+00:00,2026,SLO1,1,False,4971550,1,4529,away,7087,1,1,played,23,0,False,30,0,0,0,0,0,0,90,60,,0,0
+469685,Zan Trontelj,2026-07-23T16:30:00+00:00,2026,ECLQ,10,False,4897975,3,4529,home,628,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+911644,Ilya Olkhovyi,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
+911644,Ilya Olkhovyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
+911644,Ilya Olkhovyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
+417242,Ruslan Neshcheret,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
+417242,Ruslan Neshcheret,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,35,1,False,120,0,0,0,0,0,0,,,,0,0
+417242,Ruslan Neshcheret,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
+1063685,Vyacheslav Surkis,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,71,,False,0,0,0,0,0,0,0,,,,0,0
+1063685,Vyacheslav Surkis,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,71,,False,0,0,0,0,0,0,0,,,,0,0
+1063685,Vyacheslav Surkis,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,71,,False,0,0,0,0,0,0,0,,,,0,0
+1067225,Taras Mykhavko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
+1067225,Taras Mykhavko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,32,3,False,120,0,0,0,0,0,0,86,,,0,0
+1067225,Taras Mykhavko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
+404841,Denys Popov,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+404841,Denys Popov,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+404841,Denys Popov,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+287792,Oleksandr Tymchyk,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+287792,Oleksandr Tymchyk,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+287792,Oleksandr Tymchyk,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+636237,Kostyantyn Vivcharenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,195,0
+636237,Kostyantyn Vivcharenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,2,4,False,44,0,0,0,0,0,0,,76,,0,0
+636237,Kostyantyn Vivcharenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
+366723,Vladyslav Dubinchak,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,44,4,False,90,0,1,0,0,0,0,,,,0,0
+366723,Vladyslav Dubinchak,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,44,4,False,99,0,0,0,0,0,0,,,99,0,0
+366723,Vladyslav Dubinchak,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,44,4,False,90,0,0,0,0,0,0,,,,0,0
+181118,Tomasz Kędziora,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,94,5,False,90,0,0,0,0,0,0,,,,0,0
+181118,Tomasz Kędziora,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,94,5,False,76,0,0,0,0,0,0,,,76,0,0
+181118,Tomasz Kędziora,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,94,5,False,90,0,0,0,0,0,0,,,,0,0
+949111,Aliou Thiaré,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
+949111,Aliou Thiaré,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
+949111,Aliou Thiaré,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
+539436,Kristian Bilovar,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
+539436,Kristian Bilovar,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,40,3,False,120,0,0,0,0,0,0,,,,0,0
+539436,Kristian Bilovar,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
+1074045,Maksym Korobov,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+1074045,Maksym Korobov,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+1074045,Maksym Korobov,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+505463,Oleksandr Syrota,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+505463,Oleksandr Syrota,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+505463,Oleksandr Syrota,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1074060,Vladyslav Zakharchenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,98,0
+1074060,Vladyslav Zakharchenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,98,0
+1074060,Vladyslav Zakharchenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,98,0
+955349,Oleksiy Gusev,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+955349,Oleksiy Gusev,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+955349,Oleksiy Gusev,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+935095,Navin Malysh,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
+935095,Navin Malysh,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,23,5,False,21,0,0,0,0,0,0,,99,,0,0
+935095,Navin Malysh,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
+669306,Volodymyr Brazhko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,6,6,False,85,1,0,1,1,0,0,,,85,0,0
+669306,Volodymyr Brazhko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,6,6,False,120,0,0,0,0,0,0,,,,0,0
+669306,Volodymyr Brazhko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,6,6,False,90,0,0,0,0,0,0,,,,0,0
+368611,Mykola Shaparenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,10,7,False,68,0,0,1,1,0,0,,,68,0,0
+368611,Mykola Shaparenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,10,7,False,87,0,0,0,0,0,0,,,87,0,0
+368611,Mykola Shaparenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
+294780,Oleksandr Pikhalyonok,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,8,7,True,55,0,0,0,0,0,0,,,55,0,0
+294780,Oleksandr Pikhalyonok,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,8,7,True,63,0,0,0,0,0,0,,,63,0,0
+294780,Oleksandr Pikhalyonok,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,8,7,True,61,0,0,0,0,0,0,,,61,0,0
+626475,Mykola Mykhaylenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+626475,Mykola Mykhaylenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+626475,Mykola Mykhaylenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+167722,Vitaliy Buyalskyi,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,29,10,False,22,0,1,0,0,0,0,,68,,0,0
+167722,Vitaliy Buyalskyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,29,10,False,57,0,0,0,0,0,0,,63,,0,0
+167722,Vitaliy Buyalskyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,29,10,False,29,0,0,0,0,0,0,,61,,0,0
+893187,Reshat Ramadani,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+893187,Reshat Ramadani,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+893187,Reshat Ramadani,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+925401,Roman Salenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,244,0
+925401,Roman Salenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,244,0
+925401,Roman Salenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,244,0
+357917,Justin Lonwijk,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,21,7,False,35,1,0,1,1,0,0,,55,,0,0
+357917,Justin Lonwijk,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,21,7,False,33,0,0,0,0,0,0,105,87,,0,0
+357917,Justin Lonwijk,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+666943,Valentyn Rubchynskyi,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,15,6,False,5,0,0,0,0,0,0,,85,,0,0
+666943,Valentyn Rubchynskyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
+666943,Valentyn Rubchynskyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
+1074053,Matviy Ponomarenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,11,14,False,90,0,0,3,1,2,0,46,,,0,0
+1074053,Matviy Ponomarenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,11,14,False,120,0,0,0,0,0,0,,,,0,0
+1074053,Matviy Ponomarenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,11,14,False,90,0,0,0,0,0,0,,,,0,0
+726034,Nazar Voloshyn,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,9,12,False,55,0,0,0,0,0,0,,,55,0,0
+726034,Nazar Voloshyn,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,9,12,False,87,0,0,0,0,0,0,,,87,0,0
+726034,Nazar Voloshyn,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,9,12,False,90,0,0,0,0,0,0,,,90,0,0
+1138725,Bogdan Redushko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,70,11,False,35,0,0,1,0,0,1,,55,,0,0
+1138725,Bogdan Redushko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,70,11,False,76,0,0,0,0,0,0,59,,76,0,0
+1138725,Bogdan Redushko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,70,11,False,90,0,0,0,0,0,0,,,,0,0
+210689,Vladyslav Kabaev,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,307,0
+210689,Vladyslav Kabaev,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,307,0
+210689,Vladyslav Kabaev,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,307,0
+502842,Eduardo Guerrero,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,39,11,False,68,0,0,1,0,1,0,,,68,0,0
+502842,Eduardo Guerrero,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
+502842,Eduardo Guerrero,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
+419061,Vladyslav Supryaga,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+419061,Vladyslav Supryaga,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+419061,Vladyslav Supryaga,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1141487,Vladyslav Gerych,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,87,,False,0,0,0,0,0,0,0,,,,0,0
+1141487,Vladyslav Gerych,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1141487,Vladyslav Gerych,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,87,,False,0,0,0,0,0,0,0,,,,0,0
+706166,Vladislav Blănuță,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+706166,Vladislav Blănuță,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+706166,Vladislav Blănuță,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+998742,Shola Ogundana,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+998742,Shola Ogundana,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,16,11,False,33,0,0,0,0,0,0,,87,,0,0
+998742,Shola Ogundana,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,played,16,11,False,1,0,0,0,0,0,0,,90,,0,0
+69015,Andriy Yarmolenko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,played,7,12,False,22,0,0,2,1,1,0,,68,,0,0
+69015,Andriy Yarmolenko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,played,7,12,False,44,0,0,0,0,0,0,,76,,0,0
+69015,Andriy Yarmolenko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+599224,Ángel Torres,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 599224,Ángel Torres,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 599224,Ángel Torres,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1262359,Fedir Zadorozhnyi,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1262359,Fedir Zadorozhnyi,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1193619,Pavlo Lyusin,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1074043,Vitaliy Lobko,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+1074043,Vitaliy Lobko,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+1074043,Vitaliy Lobko,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,injured,,,False,0,0,0,0,0,0,0,,,,166,0
+206888,Georgiy Bushchan,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,77,1,False,90,0,0,0,0,0,0,,,,0,0
+166581,Yevgen Volynets,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+341485,Oleg Kudryk,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+1378780,Denys Talko,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,98,1,False,90,0,0,0,0,0,0,,,,0,0
+678778,Eduard Sarapiy,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,5,3,True,90,0,0,1,0,1,0,,,,0,0
+294730,Bogdan Mykhaylichenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,15,5,False,90,0,0,0,0,0,0,,,,0,0
+245021,Sergiy Chobotenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,44,3,False,90,0,0,0,0,0,0,,,,0,0
+624808,Ilir Krasniqi,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+370399,Mykyta Kravchenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+523907,Danylo Beskorovaynyi,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+888342,Giorgi Maisuradze,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+880458,João Vialle,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1121513,Denys Gryshkevych,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1121513,Denys Gryshkevych,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,94,,False,0,0,0,0,0,0,0,,,,0,0
+597290,Andi Hadroj,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,2,4,False,45,0,0,0,0,0,0,36,,46,0,0
+597290,Andi Hadroj,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1250366,Kiril Kobernyuk,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1250366,Kiril Kobernyuk,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1436073,Mady Danfakha,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,62,3,False,90,0,0,0,0,0,0,65,,,0,0
+892105,Lindon Emërllahu,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,14,7,False,10,0,0,1,1,0,0,,80,,0,0
+207074,Oleksandr Andriyevskyi,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,18,7,False,80,0,1,5,0,4,1,,,80,0,0
+294746,Volodymyr Shepelev,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+645137,Tomer Yosefi,2026-07-23T16:30:00+00:00,2026,ECLQ,10,False,4897992,3,3793,away,2156,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+836428,Borel Tomandzoto,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,6,6,False,90,0,0,2,1,1,0,74,,,0,0
+773961,Oleg Fedor,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,27,7,False,70,1,0,3,1,2,0,59,,70,0,0
+844373,Borys Krushynskyi,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,55,4,False,90,0,0,0,0,0,0,,,,0,0
+1294033,Yaroslav Karaman,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,38,10,False,90,0,0,0,0,0,0,,,,0,0
+1294033,Yaroslav Karaman,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+717391,Maksym Melnychenko,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
+717391,Maksym Melnychenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1143806,Bogdan Panchyshyn,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,88,6,True,90,0,0,0,0,0,0,73,,,0,0
+1143806,Bogdan Panchyshyn,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+94928,Ruslan Babenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
+1240255,Oleksandr Ivanov,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,25,9,False,63,0,2,0,0,0,0,,,63,0,0
+495920,Oleksandr Nazarenko,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,7,11,False,70,0,1,1,0,1,0,,,70,0,0
+695310,Maksym Bragaru,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,45,11,False,20,0,0,1,0,1,0,,70,,0,0
+1045187,Igor Krasnopir,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,95,14,False,82,1,0,3,3,0,0,,,82,0,0
+729781,Vladyslav Veleten,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,10,12,False,20,0,1,1,0,1,0,,70,,0,0
+860701,Mykola Gayduchyk,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,89,14,False,8,0,0,1,0,1,0,,82,,0,0
+1284125,Jerry Yoka,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1284125,Jerry Yoka,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+237623,Oleksandr Filippov,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,9,14,False,20,1,0,1,1,0,0,,70,,0,0
+1292610,Vasyl Burtnyk,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,94,3,False,90,0,0,0,0,0,0,,,,0,0
+1074058,Denys Dykyi,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,90,,False,0,0,0,0,0,0,0,,,,0,0
+623325,Georgiy Sudakov,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897948,3,294,away,257,1,2,played,10,10,False,90,0,0,4,1,1,2,,,,0,0
+669959,Leandro Andrade,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,played,11,12,False,70,0,0,0,0,0,0,,,70,0,0
+937917,Dmytro Ledviy,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+950181,Matej Matic,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+892097,Andrusw Araujo,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+624920,Béni Makouana,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,119780,home,110586,2,2,played,28,14,False,19,0,0,0,0,0,0,,71,,0,0
+624920,Béni Makouana,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897984,3,53646,neutral,190,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+812170,Kirill Samoylenko,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,in squad,72,,False,0,0,0,0,0,0,0,,,,0,0
+58939,Oleksiy Palamarchuk,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+533318,Nazariy Muravskyi,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,34,3,True,90,0,0,0,0,0,0,,,,0,0
+702561,Roman Didyk,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,29,3,False,90,0,0,0,0,0,0,,,,0,0
+539738,Oleg Gorin,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,2
+623319,Oleksandr Drambayev,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,14,3,False,90,0,0,0,0,0,0,,,,0,0
+628329,Ajdi Dajko,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+1038054,Yaroslav Kysil,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+723621,Denys Kuzyk,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,17,9,False,68,0,0,0,0,0,0,,,68,0,0
+758845,Yegor Tverdokhlib,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
+633850,Artur Ryabov,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,16,6,False,90,0,0,0,0,0,0,,,,0,0
+517284,Muharrem Jashari,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+530673,Shota Nonikashvili,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+1293579,Dmytro Matkivskyi,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+315236,Gennadiy Pasich,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,11,8,False,90,0,0,0,0,0,0,,,,0,0
+882089,Adam Yakubu,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+743627,Jewison Bennette,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1033040,Mark Assinor,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,90,14,False,89,0,0,0,0,0,0,,,89,0,0
+751363,Danylo Kravchuk,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,23,14,False,1,0,0,0,0,0,0,,89,,0,0
+726036,Artur Mykytyshyn,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,7,14,False,35,0,0,0,0,0,0,90,55,,0,0
+503727,Cody David,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,played,99,14,False,55,0,0,0,0,0,0,,,55,0,0
+1115074,Mollo Bessala,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,63007,neutral,157,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1115074,Mollo Bessala,2026-06-28T15:00:00+00:00,2026,MO1N,1,False,4902441,1,2481,home,128633,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+606743,Ivan Lytvynenko,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4945477,3,602,away,663,0,3,played,20,6,False,68,0,0,0,0,0,0,,,68,0,0
 606743,Ivan Lytvynenko,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897265,2,602,home,12889,2,1,played,20,6,False,66,0,0,0,0,0,0,,,66,0,0
 606743,Ivan Lytvynenko,2026-07-09T18:45:00+00:00,2026,ECLQ,10,False,4897239,1,602,away,12889,3,1,played,20,0,False,22,0,0,0,0,0,0,,68,,0,0
+1237999,Samuel Obinaya,2026-07-26T15:30:00+00:00,2026,TS1,1,False,4901915,1,1322,home,2311,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1237999,Samuel Obinaya,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897994,3,1322,away,599,2,3,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 1168551,Ivan Yermachkov,2026-06-27T17:00:00+00:00,2026,MO1N,1,False,4902440,1,2714,away,30686,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1115074,Mollo Bessala,2026-06-28T15:00:00+00:00,2026,MO1N,1,False,4902441,1,2481,home,128633,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+935106,Marko Podolyak,2026-07-24T11:00:00+00:00,2026,UKR2,2,False,4921739,1,65423,home,67939,0,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+1293592,Davyd Blagodarnyi,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,81401,away,53629,3,0,played,28,10,False,21,0,1,0,0,0,0,,69,,0,0
+581000,Eynel Soares,2026-07-25T16:00:00+00:00,2026,SLO1,1,False,4971547,1,7918,home,32314,1,1,played,7,0,False,29,0,0,1,0,1,0,,61,,0,0
+1291385,Orest Lepskyi,2026-07-26T11:00:00+00:00,2026,UKR2,2,False,4921743,1,111182,home,49364,2,2,played,30,12,False,90,0,1,0,0,0,0,,,,0,0
+690246,Francis Momoh,2026-07-24T18:15:00+00:00,2026,C2,2,False,4897435,1,242,home,322,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+248938,Maksym Tretyakov,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,9,11,False,90,0,0,0,0,0,0,,,,0,0
+1161403,Nazar Domchak,2026-07-26T13:00:00+00:00,2026,TS1,1,False,4901916,1,62,home,5544,5,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+190190,Andriy Klishchuk,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
+273663,Volodymyr Adamyuk,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
+1097103,Fellipe Vieira,2026-07-15T18:30:00+00:00,2026,ECLQ,10,False,4897270,2,43162,away,11065,2,1,played,55,9,False,84,1,0,0,0,0,0,,,84,0,0
+1097103,Fellipe Vieira,2026-07-09T16:00:00+00:00,2026,ECLQ,10,False,4897244,1,43162,home,11065,1,0,played,55,9,False,70,0,0,0,0,0,0,,,70,0,0
+795280,Tymur Korablin,2026-07-25T17:00:00+00:00,2026,BU2,2,False,4909820,1,109262,home,5284,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+669310,Danylo Goncharuk,2026-07-26T11:00:00+00:00,2026,UKR2,2,False,4921743,1,111182,home,49364,2,2,played,99,14,False,34,1,0,0,0,0,0,,56,,0,0
+863919,Yvan Dibango,2026-07-25T16:00:00+00:00,2026,ofb,8,False,4907343,1,413,away,2466,7,0,played,25,0,False,17,0,1,0,0,0,0,,73,,0,0
 357776,Hrvoje Ilic,2026-07-16T15:00:00+00:00,2026,ECLQ,10,False,4897261,2,31007,home,37914,7,8,played,23,10,False,120,1,0,0,0,0,0,86,,,0,0
 357776,Hrvoje Ilic,2026-07-09T16:00:00+00:00,2026,ECLQ,10,False,4897235,1,31007,away,37914,1,1,played,23,10,False,90,0,0,0,0,0,0,72,,,0,0
+412615,Giorgi Kutsia,2026-07-21T16:00:00+00:00,2026,CLQ,10,False,4897894,3,41133,home,540,0,2,played,27,0,False,23,0,0,0,0,0,0,,67,,0,0
 412615,Giorgi Kutsia,2026-07-14T16:00:00+00:00,2026,CLQ,10,False,4897201,2,41133,home,1002,2,2,played,27,7,False,75,0,1,0,0,0,0,,,75,0,0
 412615,Giorgi Kutsia,2026-07-08T16:00:00+00:00,2026,CLQ,10,False,4897187,1,41133,away,1002,3,2,played,27,7,False,19,0,1,0,0,0,0,,71,,0,0
+273341,Valeriy Kucherov,2026-07-24T11:00:00+00:00,2026,UKR2,2,False,4921739,1,65423,home,67939,0,1,played,11,6,False,85,0,0,0,0,0,0,,,85,0,0
+873534,Eren Aydın,2026-07-23T16:00:00+00:00,2026,ECLQ,10,False,4945481,3,46710,away,23371,0,1,played,7,12,False,87,0,0,0,0,0,0,,,87,0,0
 873534,Eren Aydın,2026-07-16T16:00:00+00:00,2026,ECLQ,10,False,4897273,2,46710,away,253,3,0,played,7,12,False,75,2,0,0,0,0,0,,,75,0,0
 873534,Eren Aydın,2026-07-08T16:00:00+00:00,2026,ECLQ,10,False,4897247,1,46710,home,253,3,0,played,7,12,False,88,0,1,0,0,0,0,,,88,0,0
 718123,Samuel Nongoh,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897269,2,98106,neutral,713,4,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 718123,Samuel Nongoh,2026-07-07T18:00:00+00:00,2026,ECLQ,10,False,4897243,1,98106,home,713,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1167746,Ignat Pushkutsa,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,27227,home,81169,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+857859,Vladyslav Krystin,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,53629,home,81401,0,3,played,2,5,False,66,0,0,0,0,0,0,40,,66,0,0
+766706,Stanislav Krystin,2026-07-25T09:00:00+00:00,2026,UKR2,2,False,4921738,1,53629,home,81401,0,3,played,23,8,False,66,0,0,0,0,0,0,,,66,0,0
+203854,Andriy Boryachuk,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,45,14,False,84,1,0,0,0,0,0,,,84,0,0
+404851,Denis Yanakov,2026-07-25T17:00:00+00:00,2026,BU2,2,False,4909820,1,109262,home,5284,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+669305,Viktor Bliznichenko,2026-07-16T16:00:00+00:00,2026,ECLQ,10,False,4897273,2,253,home,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 669305,Viktor Bliznichenko,2026-07-08T16:00:00+00:00,2026,ECLQ,10,False,4897247,1,253,away,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+345750,Roman Lyopka,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,27227,home,81169,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+332132,Valeriy Rogozynskyi,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,81169,away,27227,1,1,played,87,8,False,61,0,0,0,0,0,0,,,61,0,0
+362529,Andriy Storchous,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,8,10,False,67,0,0,0,0,0,0,,,67,0,0
+926657,Kyrylo Matveev,2026-07-26T11:00:00+00:00,2026,UKR2,2,False,4921743,1,111182,home,49364,2,2,played,14,6,False,77,0,0,0,0,0,0,,,77,0,0
+1027625,Artem Lyegostayev,2026-07-24T11:00:00+00:00,2026,UKR2,2,False,4921739,1,67939,away,65423,1,0,played,70,14,False,90,0,0,0,0,0,0,,,,0,0
+375180,Oleksandr Kozak,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,18303,home,2712,1,1,played,25,12,False,19,0,0,0,0,0,0,,71,,0,0
+269371,Denys Bezborodko,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,81169,away,27227,1,1,played,21,14,False,73,0,0,0,0,0,0,,,73,0,0
+729432,Vadym Yushchyshyn,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,110586,away,119780,2,2,played,31,1,False,90,0,0,0,0,0,0,,,,0,0
+213974,Artem Gabelok,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,28,6,False,90,0,0,0,0,0,0,,,,0,0
+1105073,Anel Ryce,2026-07-25T01:30:00+00:00,2026,PN1A,1,False,4926650,1,20960,away,17522,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+176412,Oleksiy Khoblenko,2026-07-25T13:00:00+00:00,2026,UKR2,2,False,4921744,1,110586,away,119780,2,2,played,9,14,False,90,1,0,0,0,0,0,73,,,0,0
+522831,Maksym Mekhaniv,2026-07-24T13:00:00+00:00,2026,UKR2,2,False,4921745,1,2712,away,18303,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+870185,Simon Galoyan,2026-07-25T11:00:00+00:00,2026,UKR2,2,False,4921741,1,81169,away,27227,1,1,played,13,9,False,83,0,0,0,0,0,0,,,83,0,0
+809569,Yegor Gunichev,2026-07-24T11:00:00+00:00,2026,UKR2,2,False,4921739,1,65423,home,67939,0,1,played,6,10,False,5,0,0,0,0,0,0,,85,,0,0

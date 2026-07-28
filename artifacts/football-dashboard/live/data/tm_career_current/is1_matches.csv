@@ -1,54 +1,108 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
+1130618,Davíd Helgi Aronsson,2026-07-26T14:00:00+00:00,2026,DK1,1,False,4897556,1,369,away,190,2,3,played,12,3,False,90,0,0,0,0,0,0,,,,0,0
+1192116,Sigurdur Breki Kárason,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,20,0,False,79,1,0,0,0,0,0,,11,90,0,0
+1192116,Sigurdur Breki Kárason,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,20,10,False,57,0,0,0,0,0,0,,,57,0,0
+1294009,Alexander Rafn Pálmason,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,8,10,False,90,0,0,0,0,0,0,,,,0,0
+1294009,Alexander Rafn Pálmason,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,8,0,False,33,0,0,0,0,0,0,,57,,0,0
+305706,Aron Snaer Fridriksson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,29,1,False,90,0,0,0,0,0,0,,,,0,0
 305706,Aron Snaer Fridriksson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 305706,Aron Snaer Fridriksson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-110581,Ingvar Jónsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,injured,,,False,0,0,0,0,0,0,0,,,,369,0
-110581,Ingvar Jónsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,injured,,,False,0,0,0,0,0,0,0,,,,369,0
+889862,Uggi Jóhann Audunsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 889862,Uggi Jóhann Audunsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
 889862,Uggi Jóhann Audunsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
-103444,Ögmundur Kristinsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,47,1,False,90,0,0,0,0,0,0,,,,0,0
-103444,Ögmundur Kristinsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,47,1,False,90,0,0,0,0,0,0,,,,0,0
+110581,Ingvar Jónsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,injured,,,False,0,0,0,0,0,0,0,,,,369,0
+110581,Ingvar Jónsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,injured,,,False,0,0,0,0,0,0,0,,,,369,0
+110581,Ingvar Jónsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,injured,,,False,0,0,0,0,0,0,0,,,,369,0
+396938,Helgi Gudjónsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,9,4,False,90,0,0,0,0,0,0,,,,0,0
 396938,Helgi Gudjónsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,9,4,False,90,0,1,0,0,0,0,,,,0,0
 396938,Helgi Gudjónsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,9,4,False,90,0,0,0,0,0,0,,,,0,0
-464455,Karl Fridleifur Gunnarsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,22,5,False,77,0,0,0,0,0,0,,,77,0,0
-464455,Karl Fridleifur Gunnarsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
+103444,Ögmundur Kristinsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,47,,False,0,0,0,0,0,0,0,,,,0,0
+103444,Ögmundur Kristinsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,47,1,False,90,0,0,0,0,0,0,,,,0,0
+103444,Ögmundur Kristinsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,47,1,False,90,0,0,0,0,0,0,,,,0,0
+464455,Karl Friðleifur Gunnarsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
+464455,Karl Friðleifur Gunnarsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,22,5,False,77,0,0,0,0,0,0,,,77,0,0
+464455,Karl Friðleifur Gunnarsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
+268531,Oliver Ekroth,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,4,3,True,90,0,1,0,0,0,0,,,,0,0
 268531,Oliver Ekroth,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
 268531,Oliver Ekroth,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,4,3,True,90,0,0,0,0,0,0,76,,,0,0
+998487,Sveinn Gísli Thorkelsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,2,0,False,14,0,0,0,0,0,0,,76,,0,0
 998487,Sveinn Gísli Thorkelsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,2,3,False,90,0,0,1,0,1,0,,,,0,0
 998487,Sveinn Gísli Thorkelsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
+579573,Róbert Orri Thorkelsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 579573,Róbert Orri Thorkelsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 579573,Róbert Orri Thorkelsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-187664,Davíd Örn Atlason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,24,0,False,13,0,0,0,0,0,0,,77,,0,0
-187664,Davíd Örn Atlason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+291070,Gunnar Vatnhamar,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,6,3,False,76,0,0,0,0,0,0,,,76,0,0
 291070,Gunnar Vatnhamar,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 291070,Gunnar Vatnhamar,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+489000,Daníel Hafsteinsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,11,6,False,76,0,0,0,0,0,0,,,76,0,0
 489000,Daníel Hafsteinsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,11,6,False,77,2,0,3,1,1,1,,,77,0,0
 489000,Daníel Hafsteinsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,11,6,False,68,0,0,0,0,0,0,,,68,0,0
-90466,Gylfi Sigurdsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,10,10,False,90,0,1,3,1,1,1,,,,0,0
-90466,Gylfi Sigurdsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
-602486,Tarik Ibrahimagić,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,20,7,False,90,0,0,0,0,0,0,21,,,0,0
-602486,Tarik Ibrahimagić,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,20,0,False,22,0,0,0,0,0,0,,68,,0,0
+1015870,Sölvi Stefánsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+187664,Davíð Örn Atlason,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+187664,Davíð Örn Atlason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,24,0,False,13,0,0,0,0,0,0,,77,,0,0
+187664,Davíð Örn Atlason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+332531,Erlingur Agnarsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 332531,Erlingur Agnarsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,7,0,False,1,0,0,0,0,0,0,,90,,0,0
 332531,Erlingur Agnarsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
-788042,Jóhannes Bjarnason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-788042,Jóhannes Bjarnason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
+602486,Tarik Ibrahimagić,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+602486,Tarik Ibrahimagić,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,20,7,False,90,0,0,0,0,0,0,21,,,0,0
+602486,Tarik Ibrahimagić,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,20,0,False,22,0,0,0,0,0,0,,68,,0,0
+445698,Viktor Örlygur Andrason,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,8,0,False,14,0,0,0,0,0,0,,76,,0,0
 445698,Viktor Örlygur Andrason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,8,0,False,13,0,0,1,0,1,0,,77,,0,0
 445698,Viktor Örlygur Andrason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
+90466,Gylfi Sigurdsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
+90466,Gylfi Sigurdsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,10,10,False,90,0,1,3,1,1,1,,,,0,0
+90466,Gylfi Sigurdsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
+178926,Aron Elís Thrándarson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,21,7,False,76,0,0,0,0,0,0,,,76,0,0
 178926,Aron Elís Thrándarson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,21,0,False,30,0,0,1,0,1,0,,60,,0,0
 178926,Aron Elís Thrándarson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,21,12,False,83,0,0,0,0,0,0,,,83,0,0
+659298,Sveinn Hauksson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+823833,Óskar Borgthórsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,19,12,False,90,0,1,0,0,0,0,,,,0,0
 823833,Óskar Borgthórsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,19,11,False,90,0,0,0,0,0,0,77,,,0,0
 823833,Óskar Borgthórsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,19,11,False,90,0,0,0,0,0,0,,,,0,0
+205655,Elías Már Ómarsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 205655,Elías Már Ómarsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 205655,Elías Már Ómarsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,28,14,False,44,0,0,0,0,0,0,,,44,0,0
+422438,Valdimar Thór Ingimundarson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,25,11,False,90,0,0,0,0,0,0,76,,,0,0
 422438,Valdimar Thór Ingimundarson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,25,12,False,90,0,0,1,0,0,1,,,90,0,0
 422438,Valdimar Thór Ingimundarson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,25,13,False,90,0,0,0,0,0,0,,,,0,0
-193680,Nikolaj Hansen,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,23,14,False,60,0,0,0,0,0,0,,,60,0,0
-193680,Nikolaj Hansen,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,23,0,False,46,1,0,0,0,0,0,,44,,0,0
+1108188,Dadi Berg Jónsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,18,0,False,14,0,0,0,0,0,0,,76,,0,0
 1108188,Dadi Berg Jónsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1108188,Dadi Berg Jónsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
+914943,Stígur Thórdarson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,77,0,False,1,0,0,0,0,0,0,,90,,0,0
 914943,Stígur Thórdarson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 914943,Stígur Thórdarson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+193680,Nikolaj Hansen,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,played,23,14,False,90,2,0,0,0,0,0,,,90,0,0
+193680,Nikolaj Hansen,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,played,23,14,False,60,0,0,0,0,0,0,,,60,0,0
+193680,Nikolaj Hansen,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,23,0,False,46,1,0,0,0,0,0,,44,,0,0
+866807,Ármann Ingi Finnbogason,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,69,,False,0,0,0,0,0,0,0,,,,0,0
 866807,Ármann Ingi Finnbogason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,in squad,69,,False,0,0,0,0,0,0,0,,,,0,0
 866807,Ármann Ingi Finnbogason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,played,69,0,False,7,0,0,0,0,0,0,,83,,0,0
+654680,Stefán Thór Ágústsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
+279338,Frederik Schram,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,18,1,False,90,0,0,0,0,0,0,,,,0,0
+1381419,Tómas Petersson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,95,,False,0,0,0,0,0,0,0,,,,0,0
+368806,Markus Nakkim,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,4,0,False,24,0,0,0,0,0,0,,66,,0,0
+54871,Hólmar Örn Eyjólfsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,15,3,True,90,0,0,0,0,0,0,,,,0,0
+774996,Myles Veldman,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,24,4,False,90,0,0,0,0,0,0,,,,0,0
+1021114,Ingimar Torbjörnsson Stöle,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
+654543,Jakob Pálsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,21,0,False,24,0,0,0,0,0,0,79,66,,0,0
+654749,Lúkas Logi Heimisson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,17,6,False,66,0,0,0,0,0,0,,,66,0,0
+652735,Shkelzen Veseli,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,29,10,False,66,0,0,0,0,0,0,32,,66,0,0
+286825,Bjarni Mark Antonsson Duffield,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,6,0,False,24,0,0,0,0,0,0,,66,,0,0
+240408,Samúel Fridjónsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,28,3,False,90,0,0,0,0,0,0,,,,0,0
+383572,Birkir Heimisson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,22,5,False,66,0,0,0,0,0,0,,,66,0,0
+1307483,Emil Nönnu Sigurbjörnsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,26,0,False,3,0,0,0,0,0,0,,87,,0,0
+984625,Kristófer Dagur Arnarsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+1235060,Kristján Oddur Kristjánsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+307093,Tryggvi Hrafn Haraldsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,12,9,False,90,1,0,0,0,0,0,,,,0,0
+375053,Jónatan Ingi Jónsson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,8,8,False,90,0,1,0,0,0,0,,,,0,0
+1108195,Dagur Orri Gardarson,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,19,14,False,66,0,0,0,0,0,0,,,66,0,0
+271904,Albin Skoglund,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,14,6,False,87,0,0,0,0,0,0,,,87,0,0
+179530,Patrick Pedersen,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,played,9,0,False,24,0,0,0,0,0,0,,66,,0,0
+1555000,Gunnar Karl Heiddal,2026-07-23T19:15:00+00:00,2026,ECLQ,10,False,4897973,3,1033,home,6808,1,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+788042,Jóhannes Bjarnason,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+788042,Jóhannes Bjarnason,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
+1192117,Thorri Ingólfsson,2026-07-21T19:00:00+00:00,2026,CLQ,10,False,4897893,3,5849,home,2976,2,1,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 1192117,Thorri Ingólfsson,2026-07-14T17:00:00+00:00,2026,CLQ,10,False,4897210,2,5849,away,6055,2,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 1192117,Thorri Ingólfsson,2026-07-07T19:00:00+00:00,2026,CLQ,10,False,4897196,1,5849,home,6055,1,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 1192117,Thorri Ingólfsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,13,8,False,90,0,0,0,0,0,0,,,,0,0
@@ -57,61 +111,83 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1072744,Gylfi Berg Snaehólm,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1412052,Kristinn Narfi Björgvinsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1412052,Kristinn Narfi Björgvinsson,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
-1192116,Sigurdur Breki Kárason,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,20,0,False,79,1,0,0,0,0,0,,11,90,0,0
-1192116,Sigurdur Breki Kárason,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,20,10,False,57,0,0,0,0,0,0,,,57,0,0
-1294009,Alexander Rafn Pálmason,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,8,10,False,90,0,0,0,0,0,0,,,,0,0
-1294009,Alexander Rafn Pálmason,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,8,0,False,33,0,0,0,0,0,0,,57,,0,0
-89663,Árni Snaer Ólafsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
-89663,Árni Snaer Ólafsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+1017191,Darri Bergmann Gylfason,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1017191,Darri Bergmann Gylfason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1017191,Darri Bergmann Gylfason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+89663,Árni Snaer Ólafsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+89663,Árni Snaer Ólafsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+89663,Árni Snaer Ólafsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+369633,Ari Leifsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 369633,Ari Leifsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+464439,Sindri Thór Ingimarsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,6,3,False,90,0,0,0,0,0,0,,,,0,0
+464439,Sindri Thór Ingimarsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,6,0,False,2,0,0,0,0,0,0,,88,,0,0
+987218,Örvar Logi Örvarsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,32,4,False,90,0,0,0,0,0,0,,,,0,0
 987218,Örvar Logi Örvarsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,32,5,False,90,0,0,0,0,0,0,87,,,0,0
 987218,Örvar Logi Örvarsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,32,5,False,90,0,0,0,0,0,0,,,,0,0
-403688,Gustav Kjeldsen,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,3,3,False,90,0,0,0,0,0,0,40,,,0,0
-403688,Gustav Kjeldsen,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,3,3,False,90,0,0,0,0,0,0,72,,,0,0
+468812,Thorri Mar Thórisson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,4,5,False,66,0,0,0,0,0,0,,,66,0,0
 468812,Thorri Mar Thórisson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,4,4,False,87,0,0,0,0,0,0,70,,87,0,0
 468812,Thorri Mar Thórisson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,4,0,False,66,0,0,0,0,0,0,84,24,,0,0
-464439,Sindri Thór Ingimarsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,6,0,False,2,0,0,0,0,0,0,,88,,0,0
+295624,Damil Dankerlui,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 295624,Damil Dankerlui,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 295624,Damil Dankerlui,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-313569,Heidar Aegisson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,2,4,False,24,0,0,0,0,0,0,,,24,0,0
+403688,Gustav Kjeldsen,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
+403688,Gustav Kjeldsen,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,3,3,False,90,0,0,0,0,0,0,40,,,0,0
+403688,Gustav Kjeldsen,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,3,3,False,90,0,0,0,0,0,0,72,,,0,0
+1108196,Sigurður Gunnar Jónsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+90037,Gudmundur Kristjánsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 90037,Gudmundur Kristjánsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,5,3,True,17,0,0,0,0,0,0,,,17,0,0
 90037,Gudmundur Kristjánsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,5,3,True,88,0,0,0,0,0,0,,,88,0,0
-464442,Benedikt Warén,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,23,12,False,90,0,0,0,0,0,0,,,,0,0
-464442,Benedikt Warén,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,23,12,False,88,0,1,0,0,0,0,,,88,0,0
-867622,Gudmundur Baldvin Nökkvason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,18,6,False,90,1,0,0,0,0,0,,,,0,0
-867622,Gudmundur Baldvin Nökkvason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,18,6,False,90,0,0,0,0,0,0,,,,0,0
+1240855,Christian Bjarmi Alexandersson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
+1074842,Bjarki Hauksson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,14,0,False,24,0,0,0,0,0,0,,66,,0,0
 1074842,Bjarki Hauksson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,14,0,False,3,0,0,0,0,0,0,,87,,0,0
 1074842,Bjarki Hauksson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
-541185,Jóhann Árni Gunnarsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
-541185,Jóhann Árni Gunnarsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
-824080,Ibrahim Turay,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-824080,Ibrahim Turay,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-392377,Alex Thór Hauksson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,29,0,False,73,0,0,0,0,0,0,,17,,0,0
-392377,Alex Thór Hauksson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,29,0,False,2,0,0,0,0,0,0,,88,,0,0
-426882,Daníel Finns Matthíasson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,10,0,False,22,0,0,0,0,0,0,,68,,0,0
-426882,Daníel Finns Matthíasson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,10,0,False,9,0,0,0,0,0,0,,81,,0,0
-488999,Örvar Eggertsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,7,7,False,87,0,0,0,0,0,0,,,87,0,0
-488999,Örvar Eggertsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,7,7,False,81,0,0,0,0,0,0,,,81,0,0
-336176,Birnir Snaer Ingason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,11,11,False,68,1,0,0,0,0,0,,,68,0,0
-336176,Birnir Snaer Ingason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,11,11,False,90,0,0,0,0,0,0,,,,0,0
-225796,Emil Atlason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,22,14,False,87,0,0,0,0,0,0,,,87,0,0
-225796,Emil Atlason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,22,14,False,90,3,0,0,0,0,0,,,,0,0
-1108194,Haukur Örn Brink,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,17,0,False,3,0,0,0,0,0,0,,87,,0,0
-1108194,Haukur Örn Brink,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-179605,Andri Rúnar Bjarnason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,99,0,False,3,0,0,0,0,0,0,,87,,0,0
-179605,Andri Rúnar Bjarnason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
-160109,Árni Vilhjálmsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1334360,Markús Andri Daníelsson Martin,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1334360,Markús Andri Daníelsson Martin,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1334360,Markús Andri Daníelsson Martin,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+313569,Heidar Aegisson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,2,4,False,24,0,0,0,0,0,0,,,24,0,0
+464442,Benedikt Warén,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,23,7,False,83,0,0,0,0,0,0,,,83,0,0
+464442,Benedikt Warén,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,23,12,False,90,0,0,0,0,0,0,,,,0,0
+464442,Benedikt Warén,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,23,12,False,88,0,1,0,0,0,0,,,88,0,0
+541185,Jóhann Árni Gunnarsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+541185,Jóhann Árni Gunnarsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+541185,Jóhann Árni Gunnarsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+867622,Gudmundur Baldvin Nökkvason,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,18,6,False,90,1,0,0,0,0,0,,,90,0,0
+867622,Gudmundur Baldvin Nökkvason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,18,6,False,90,1,0,0,0,0,0,,,,0,0
+867622,Gudmundur Baldvin Nökkvason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,18,6,False,90,0,0,0,0,0,0,,,,0,0
+392377,Alex Thór Hauksson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,29,0,False,1,0,0,0,0,0,0,,90,,0,0
+392377,Alex Thór Hauksson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,29,0,False,73,0,0,0,0,0,0,,17,,0,0
+392377,Alex Thór Hauksson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,29,0,False,2,0,0,0,0,0,0,,88,,0,0
+426882,Daníel Finns Matthíasson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,10,0,False,7,0,0,0,0,0,0,90,83,,0,0
+426882,Daníel Finns Matthíasson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,10,0,False,22,0,0,0,0,0,0,,68,,0,0
+426882,Daníel Finns Matthíasson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,10,0,False,9,0,0,0,0,0,0,,81,,0,0
 1554466,Arnar Breki Björnsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
+824080,Ibrahim Turay,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+824080,Ibrahim Turay,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+824080,Ibrahim Turay,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1554465,Bjarki Fridjon Saemundsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+488999,Örvar Eggertsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,7,12,False,83,0,0,0,0,0,0,,,83,0,0
+488999,Örvar Eggertsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,7,7,False,87,0,0,0,0,0,0,,,87,0,0
+488999,Örvar Eggertsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,7,7,False,81,0,0,0,0,0,0,,,81,0,0
+336176,Birnir Snaer Ingason,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,11,11,False,90,0,0,0,0,0,0,,,,0,0
+336176,Birnir Snaer Ingason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,11,11,False,68,1,0,0,0,0,0,,,68,0,0
+336176,Birnir Snaer Ingason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,11,11,False,90,0,0,0,0,0,0,,,,0,0
+1108194,Haukur Örn Brink,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1108194,Haukur Örn Brink,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,17,0,False,3,0,0,0,0,0,0,,87,,0,0
+1108194,Haukur Örn Brink,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+225796,Emil Atlason,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,22,14,True,90,0,0,0,0,0,0,64,,,0,0
+225796,Emil Atlason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,22,14,False,87,0,0,0,0,0,0,,,87,0,0
+225796,Emil Atlason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,played,22,14,False,90,3,0,0,0,0,0,,,,0,0
+179605,Andri Rúnar Bjarnason,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
+179605,Andri Rúnar Bjarnason,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,played,99,0,False,3,0,0,0,0,0,0,,87,,0,0
+179605,Andri Rúnar Bjarnason,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
 1326518,Benjamin Björnsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1326518,Benjamin Björnsson,2026-07-09T19:00:00+00:00,2026,ECLQ,10,False,4897234,1,21875,home,24832,3,1,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
-1244517,Styrmir Jóhann Ellertsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
-1244517,Styrmir Jóhann Ellertsson,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+160109,Árni Vilhjálmsson,2026-07-23T19:00:00+00:00,2026,ECLQ,10,False,4945479,3,21875,home,3189,1,0,played,94,0,False,7,0,0,0,0,0,0,,83,,0,0
+160109,Árni Vilhjálmsson,2026-07-16T17:00:00+00:00,2026,ECLQ,10,False,4897260,2,21875,away,24832,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1064533,Jón Breki Gudmundsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1064533,Jón Breki Gudmundsson,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1244517,Styrmir Jóhann Ellertsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+1244517,Styrmir Jóhann Ellertsson,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 1244516,Gabríel Snaer Gunnarsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,played,9,0,False,27,1,0,0,0,0,0,,63,,0,0
 1244516,Gabríel Snaer Gunnarsson,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825282,2,25785,away,26101,1,1,played,9,14,False,57,0,0,0,0,0,0,,,57,0,0
 1334374,Róbert Hugi Saevarsson,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25785,away,25740,3,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0

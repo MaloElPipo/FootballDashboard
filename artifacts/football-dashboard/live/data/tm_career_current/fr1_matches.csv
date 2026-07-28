@@ -1,41 +1,78 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
 1241207,Tylel Tati,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+944355,Mathieu Acapandié,2026-07-23T19:00:00+00:00,2026,ELQ,10,False,4897947,3,447,home,45457,2,0,played,22,5,False,90,0,1,0,0,0,0,,,,0,0
 944355,Mathieu Acapandié,2026-07-16T18:30:00+00:00,2026,ELQ,10,False,4897221,2,447,away,1443,1,2,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
 944355,Mathieu Acapandié,2026-07-09T18:00:00+00:00,2026,ELQ,10,False,4897215,1,447,home,1443,2,0,played,22,5,False,90,0,1,0,0,0,0,,,,0,0
+1155608,Amady Camara,2026-07-24T18:30:00+00:00,2026,ofb,8,False,4902303,1,122,away,4463,3,0,injured,,,False,0,0,0,0,0,0,0,,,,303,0
+1155608,Amady Camara,2026-07-21T18:30:00+00:00,2026,CLQ,10,False,4897897,3,122,home,43,4,0,injured,,,False,0,0,0,0,0,0,0,,,,303,0
+991054,Terry Yegbe,2026-07-25T18:15:00+00:00,2026,PL1,1,False,4895604,1,238,home,5689,0,0,played,59,3,False,90,0,0,1,0,0,1,,,,0,0
+991054,Terry Yegbe,2026-07-21T17:00:00+00:00,2026,CLQ,10,False,4897890,3,238,away,678,4,1,played,59,3,False,90,1,0,1,1,0,0,,,,0,0
 991054,Terry Yegbe,2026-07-16T17:00:00+00:00,2026,PLSC,9,False,4903945,1,238,home,428,3,1,played,59,3,False,90,0,0,0,0,0,0,,,,0,0
+182894,Jean-Philippe Gbamin,2026-07-27T18:15:00+00:00,2026,BU1,1,False,4909868,2,208,home,2531,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+182894,Jean-Philippe Gbamin,2026-07-23T16:00:00+00:00,2026,ELQ,10,False,4897945,3,208,away,10625,0,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 182894,Jean-Philippe Gbamin,2026-07-20T16:15:00+00:00,2026,BU1,1,False,4909858,1,208,away,675,0,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 182894,Jean-Philippe Gbamin,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897222,2,208,away,920,2,1,played,5,0,False,10,0,0,0,0,0,0,,80,,0,0
 182894,Jean-Philippe Gbamin,2026-07-09T18:00:00+00:00,2026,ELQ,10,False,4897216,1,208,home,920,3,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-1314562,Dimitri Lucea,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1185913,Pierre Mounguengue,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1185913,Pierre Mounguengue,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-981700,Samuel Nibombe,2026-03-31T13:00:00+00:00,2026,U19Q,20,True,4825252,3,16338,home,21142,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-981700,Samuel Nibombe,2026-03-28T18:00:00+00:00,2026,U19Q,20,True,4825223,2,16338,home,23488,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1110070,Matthias Wamu Oyatambwe,2026-03-31T13:00:00+00:00,2026,U19Q,20,True,4825252,3,16338,home,21142,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1110070,Matthias Wamu Oyatambwe,2026-03-28T18:00:00+00:00,2026,U19Q,20,True,4825223,2,16338,home,23488,3,3,played,6,6,False,43,0,0,0,0,0,0,,,,0,0
+860053,Ismaël Guerti,2026-07-25T15:00:00+00:00,2026,ofb,8,False,4902304,1,316,away,2890,4,0,played,29,0,False,10,0,0,0,0,0,0,,80,,0,0
+1057820,Jeremy Agbonifo,2026-07-25T12:45:00+00:00,2026,PL1,1,False,4895601,1,2300,home,6110,1,0,played,10,0,False,4,0,0,0,0,0,0,,86,,0,0
 1074986,Alessandro Longoni,2026-03-31T18:00:00+00:00,2026,U19Q,20,True,4902877,3,21746,away,23102,2,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
 1074986,Alessandro Longoni,2026-03-28T11:00:00+00:00,2026,U19Q,20,True,4902876,2,21746,away,16298,1,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
 1074986,Alessandro Longoni,2026-03-25T14:00:00+00:00,2026,U19Q,20,True,4902875,1,21746,away,17622,3,0,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+1314562,Dimitri Lucea,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1185913,Pierre Mounguengue,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+206717,Eduard Sobol,2026-07-26T15:30:00+00:00,2026,TS1,1,False,4901915,1,1322,home,2311,2,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
+206717,Eduard Sobol,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897994,3,1322,away,599,2,3,played,23,9,False,83,0,0,0,0,0,0,,,83,0,0
+420064,Caio Henrique,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897983,3,610,away,448,4,1,played,12,0,False,21,0,0,0,0,0,0,,69,,0,0
+947360,Kassoum Ouattara,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,played,11,4,False,17,0,0,0,0,0,0,,73,,0,0
+1110070,Matthias Wamu Oyatambwe,2026-03-31T13:00:00+00:00,2026,U19Q,20,True,4825252,3,16338,home,21142,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1110070,Matthias Wamu Oyatambwe,2026-03-28T18:00:00+00:00,2026,U19Q,20,True,4825223,2,16338,home,23488,3,3,played,6,6,False,43,0,0,0,0,0,0,,,,0,0
+981700,Samuel Nibombe,2026-03-31T13:00:00+00:00,2026,U19Q,20,True,4825252,3,16338,home,21142,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+981700,Samuel Nibombe,2026-03-28T18:00:00+00:00,2026,U19Q,20,True,4825223,2,16338,home,23488,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1075590,Rayane Messi,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1171981,Mathys Detourbet,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1171981,Mathys Detourbet,2026-03-28T11:00:00+00:00,2026,U19Q,20,True,4825233,2,23101,away,22513,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1075590,Rayane Messi,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+920939,Vincent Burlet,2026-07-25T18:15:00+00:00,2026,PL1,1,False,4895604,1,5689,away,238,0,0,played,28,0,False,24,0,0,1,0,0,1,,66,,0,0
+576033,Doğan Alemdar,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,in squad,80,,False,0,0,0,0,0,0,0,,,,0,0
+572326,Christopher Wooh,2026-07-25T17:45:00+00:00,2026,RU1,1,False,4904474,1,232,home,59024,3,0,absent,,,False,0,0,0,0,0,0,0,,,,0,3
 572326,Christopher Wooh,2026-07-18T16:30:00+00:00,2026,RUSS,9,False,4892372,1,232,away,964,3,5,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
+672803,Bertuğ Yıldırım,2026-07-22T17:45:00+00:00,2026,ECLQ,10,False,4897959,3,6890,home,8042,1,1,played,91,14,False,69,0,0,0,0,0,0,,,69,0,0
+928323,Ibrahim Salah,2026-07-25T16:00:00+00:00,2026,C1,1,False,4897288,1,26,away,61,1,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1187942,Khalis Merah,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1106860,Enzo Molebe,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1106860,Enzo Molebe,2026-03-28T11:00:00+00:00,2026,U19Q,20,True,4825233,2,23101,away,22513,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1216906,Matthias da Silva,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825283,3,16372,away,17383,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1216906,Matthias da Silva,2026-06-06T15:00:00+00:00,2026,U19Q,20,True,4825280,2,16372,away,22246,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1216906,Matthias da Silva,2026-06-03T09:00:00+00:00,2026,U19Q,20,True,4825277,1,16372,away,31792,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+979773,Téo Barišić,2026-07-23T18:45:00+00:00,2026,ECLQ,10,False,4897958,3,144,home,920,1,0,injured,,,False,0,0,0,0,0,0,0,,,,1,0
+652061,Adam Karabec,2026-07-25T18:00:00+00:00,2026,TS1,1,False,4901920,1,197,away,5225,1,3,played,10,10,False,90,0,0,4,1,3,0,,,,0,0
+354482,Amir Murillo,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,played,62,5,False,90,0,0,3,1,1,1,,,,0,0
+532826,Mason Greenwood,2026-07-21T18:00:00+00:00,2026,CLQ,10,False,4897896,3,36,home,428,1,0,played,11,12,False,7,0,0,1,0,1,0,,83,,0,0
 1200424,Ilan Jourdren,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1241211,Rudy Matondo,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+955359,Fodé Sylla,2026-07-26T12:00:00+00:00,2026,C1,1,False,4897290,1,321,away,452,2,4,played,37,0,False,45,0,0,1,0,1,0,,46,,0,0
+955359,Fodé Sylla,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897976,3,321,neutral,713,1,1,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1075583,Seny Koumbassa,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1200427,Alexis Vossah,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075580,Mathys Niflore,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075580,Mathys Niflore,2026-03-28T11:00:00+00:00,2026,U19Q,20,True,4825233,2,23101,away,22513,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+479638,Tiago Gouveia,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897948,3,294,away,257,1,2,played,47,0,False,24,0,0,1,0,1,0,,66,,0,0
+1074650,Sohan Baldoni,2026-07-26T16:00:00+00:00,2026,UNG1,1,False,4906193,1,84,home,37169,0,2,played,25,0,False,32,0,0,0,0,0,0,,58,,0,0
+1074650,Sohan Baldoni,2026-07-23T16:00:00+00:00,2026,ECLQ,10,False,4897965,3,84,home,10301,1,0,played,25,14,False,64,0,1,2,0,1,1,,,64,0,0
 1103652,Marius Louër,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075575,Marius Courcoul,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1103958,Prosper Peter,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+986288,Sidiki Chérif,2026-07-21T18:00:00+00:00,2026,CLQ,10,False,4897896,3,36,home,428,1,0,played,26,14,False,3,0,0,0,0,0,0,,87,,0,0
 1228317,Stephan Zagadou,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+949111,Aliou Thiaré,2026-07-23T17:00:00+00:00,2026,ELQ,10,False,4897944,3,338,neutral,1091,2,3,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
 949111,Aliou Thiaré,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897219,2,338,away,6429,4,2,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
 949111,Aliou Thiaré,2026-07-09T17:00:00+00:00,2026,ELQ,10,False,4897213,1,338,neutral,6429,0,0,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
+122840,Loïc Nego,2026-07-22T17:00:00+00:00,2026,CLQ,10,False,4897891,3,829,home,10482,1,0,played,77,5,False,34,0,0,0,0,0,0,,,,0,0
+620313,Lucas Gourna-Douath,2026-07-25T16:00:00+00:00,2026,ofb,8,False,4902301,1,409,away,4376,7,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+775403,Hugo Gambor,2026-07-23T18:30:00+00:00,2026,ECLQ,10,False,4897985,3,157,neutral,63007,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+346546,Radoslaw Majecki,2026-07-23T19:00:00+00:00,2026,ELQ,10,False,4897947,3,45457,away,447,0,2,played,99,1,False,90,0,0,0,0,0,0,,,,0,0
+684062,Hianga'a Mbock,2026-07-25T17:30:00+00:00,2026,UNG1,1,False,4906192,1,30613,home,709,1,1,played,80,7,False,90,0,0,0,0,0,0,,,,0,0
+1237907,Saliou Diop,2026-07-24T16:00:00+00:00,2026,DK2,2,False,4919235,1,362,away,443,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+510260,Taylor Luvambo,2026-07-24T18:30:00+00:00,2026,RO1,1,False,4914518,2,41278,home,9465,1,0,played,92,0,False,11,0,0,0,0,0,0,,79,,0,0
 510260,Taylor Luvambo,2026-07-17T18:30:00+00:00,2026,RO1,1,False,4912992,1,41278,away,301,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

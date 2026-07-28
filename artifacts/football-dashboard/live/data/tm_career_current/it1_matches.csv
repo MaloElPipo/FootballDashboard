@@ -1,10 +1,22 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
 1191069,Louis Buffon,2026-03-31T10:00:00+00:00,2026,U19Q,20,True,4825256,3,21102,away,20794,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1191069,Louis Buffon,2026-03-28T16:00:00+00:00,2026,U19Q,20,True,4825227,2,21102,away,21233,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+377641,Moatasem Al-Musrati,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+726526,Stefan Mitrović,2026-07-26T17:00:00+00:00,2026,SER1,1,False,4937755,2,448,away,159,1,3,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+726526,Stefan Mitrović,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897983,3,448,home,610,1,4,played,7,0,False,10,0,0,0,0,0,0,,80,,0,0
 726526,Stefan Mitrović,2026-07-19T17:00:00+00:00,2026,SER1,1,False,4936433,1,448,home,53,4,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 726526,Stefan Mitrović,2026-07-16T18:15:00+00:00,2026,ELQ,10,False,4897224,2,448,away,279,0,3,played,7,0,False,14,0,0,0,0,0,0,,76,,0,0
 726526,Stefan Mitrović,2026-07-09T18:00:00+00:00,2026,ELQ,10,False,4897218,1,448,home,279,1,2,played,7,9,False,63,0,0,1,1,0,0,,,63,0,0
+979766,Mathis Lambourde,2026-07-25T16:00:00+00:00,2026,C1,1,False,4897288,1,61,home,26,0,1,played,22,8,False,78,0,0,5,1,2,2,,,78,0,0
+111196,Stefan de Vrij,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897981,3,265,away,12163,2,1,played,6,3,True,90,0,0,0,0,0,0,,,,0,0
+883055,Matteo Duțu,2026-07-25T17:30:00+00:00,2026,RO1,1,False,4914517,2,312,home,40812,5,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 883055,Matteo Duțu,2026-07-19T16:30:00+00:00,2026,RO1,1,False,4912996,1,312,away,9465,0,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+587505,Nikola Cavlina,2026-07-24T16:00:00+00:00,2026,PL1,1,False,4895597,1,30974,away,7154,1,2,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
+329145,Diego Carlos,2026-07-21T18:00:00+00:00,2026,CLQ,10,False,4897896,3,36,home,428,1,0,injured,,,False,0,0,0,0,0,0,0,,,,355,9
+465830,Mattéo Guendouzi,2026-07-21T18:00:00+00:00,2026,CLQ,10,False,4897896,3,36,home,428,1,0,played,6,6,False,90,0,0,1,0,0,1,,,,0,0
+915897,Petar Markovic,2026-07-25T15:00:00+00:00,2026,ofb,8,False,4902304,1,316,away,2890,4,0,in squad,72,,False,0,0,0,0,0,0,0,,,,0,0
+568617,Răzvan Sava,2026-07-25T17:30:00+00:00,2026,RO1,1,False,4914517,2,40812,away,312,1,5,played,90,1,False,90,0,0,0,0,0,0,,,,0,0
+568617,Răzvan Sava,2026-07-22T17:30:00+00:00,2026,CLQ,10,False,4942869,3,40812,away,156,0,1,in squad,90,,False,0,0,0,0,0,0,0,,,,0,0
 568617,Răzvan Sava,2026-07-18T18:15:00+00:00,2026,RO1,1,False,4912994,1,40812,home,952,4,0,played,90,1,False,90,0,0,0,0,0,0,,,,0,0
 568617,Răzvan Sava,2026-07-15T17:30:00+00:00,2026,CLQ,10,False,4897207,2,40812,home,36596,1,0,in squad,90,,False,0,0,0,0,0,0,0,,,,0,0
 568617,Răzvan Sava,2026-07-12T17:30:00+00:00,2026,ROMS,9,False,4924498,1,40812,home,6429,6,4,played,90,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -12,4 +24,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1210116,Abdoulaye Camara,2026-03-31T16:30:00+00:00,2026,U19Q,20,True,4825262,3,23101,away,19429,3,2,played,6,6,True,90,0,0,0,0,0,0,90,,,0,0
 1289670,Rendijs Mihelsons,2026-05-21T09:00:00+00:00,2026,U19Q,20,True,4825276,3,28426,away,26373,0,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 1289670,Rendijs Mihelsons,2026-05-18T09:00:00+00:00,2026,U19Q,20,True,4825273,2,28426,away,25960,1,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
+1009622,Alin Kumer Celik,2026-07-27T18:30:00+00:00,2026,RO1,1,False,4914514,2,455,away,8818,1,1,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
 1009622,Alin Kumer Celik,2026-07-20T18:30:00+00:00,2026,RO1,1,False,4912998,1,455,home,54585,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+656441,Jean Onana,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+875334,Semih Kılıçsoy,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897942,3,114,home,865,1,0,played,90,14,False,27,0,0,4,1,2,1,,63,,0,0
+623412,Mihai Popa,2026-07-26T15:30:00+00:00,2026,PL1,1,False,4895600,1,3527,away,88,2,2,played,71,1,False,90,0,0,0,0,0,0,,,,0,0
+646747,Rafa Obrador,2026-07-23T18:00:00+00:00,2026,ELQ,10,False,4897948,3,294,away,257,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+555106,Filip Marchwiński,2026-07-25T18:15:00+00:00,2026,PL1,1,False,4895604,1,5689,away,238,0,0,played,10,0,False,24,0,0,0,0,0,0,88,66,,0,0

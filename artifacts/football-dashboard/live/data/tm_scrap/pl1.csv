@@ -2759,6 +2759,22 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 510545,Jesús Jiménez,15906,Bruk-Bet Termalica Nieciecza,2025,PL1,9,Centre-Forward,32,Spain,27,27,5,1409
 281246,Kamil Zapolnik,15906,Bruk-Bet Termalica Nieciecza,2025,PL1,25,Centre-Forward,33,Poland,23,22,4,1415
 1250341,Diego Deisadze,15906,Bruk-Bet Termalica Nieciecza,2025,PL1,0,Centre-Forward,21,Georgia,14,3,0,20
+1167669,Oliwier Olewiński,255,Legia Warszawa,2026,PL1,0,Right Midfield,20,Poland,0,0,0,0
+435587,Jonatan Braut Brunes,9644,Raków Częstochowa,2026,PL1,18,Centre-Forward,25,Norway,0,0,0,0
+965106,Kamil Soberka,428,Górnik Zabrze,2026,PL1,0,Goalkeeper,20,Poland,0,0,0,0
+1177261,Antoni Bałabuch,428,Górnik Zabrze,2026,PL1,25,Goalkeeper,19,Poland,0,0,0,0
+1111833,Gédéon Nongo,428,Górnik Zabrze,2026,PL1,0,Defensive Midfield,18,Congo,0,0,0,0
+553757,Aleksander Buksa,428,Górnik Zabrze,2026,PL1,0,Centre-Forward,23,Poland,0,0,0,0
+1070002,Michał Niedbała,6110,Korona Kielce,2026,PL1,22,Goalkeeper,20,Poland,0,0,0,0
+911500,Adam Chojecki,6110,Korona Kielce,2026,PL1,0,Attacking Midfield,21,Poland,0,0,0,0
+1165326,Adam Hańćko,6110,Korona Kielce,2026,PL1,19,Attacking Midfield,17,Poland,0,0,0,0
+1046338,Mateusz Głowiński,6110,Korona Kielce,2026,PL1,17,Centre-Forward,20,Poland,0,0,0,0
+1149465,Rafał Jakubowski,324,Pogon Szczecin,2026,PL1,38,Centre-Back,19,Poland,0,0,0,0
+1112174,Oskar Jez,3527,Motor Lublin,2026,PL1,0,Goalkeeper,19,Poland,0,0,0,0
+1255660,Łukasz Trepka,6456,GKS Katowice,2026,PL1,25,Centre-Back,19,Poland,0,0,0,0
+1294282,Oskar Dari,2118,Wisla Plock,2026,PL1,0,Attacking Midfield,19,Poland,0,0,0,0
+1394018,Justin Daniel,6112,Piast Gliwice,2026,PL1,27,Defensive Midfield,21,Poland,0,0,0,0
+916875,Szymon Rygiel,759,Slask Wroclaw,2026,PL1,39,Centre-Back,22,Poland,0,0,0,0
 345452,Bartosz Mrozek,238,Lech Poznan,2025,PL1,41,Goalkeeper,25,Poland,33,33,0,2970
 859218,Plamen Andreev,238,Lech Poznan,2025,PL1,1,Goalkeeper,20,Bulgaria,17,1,0,90
 554278,Krzysztof Bąkowski,238,Lech Poznan,2025,PL1,0,Goalkeeper,22,Poland,12,0,0,0
@@ -2796,72 +2812,35 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 581113,Bryan Fiabema,238,Lech Poznan,2025,PL1,0,Centre-Forward,22,Norway,17,10,2,265
 1073752,Kamil Jakóbczyk,238,Lech Poznan,2025,PL1,54,Centre-Forward,17,Poland,2,1,0,8
 1207415,Wojciech Szymczak,238,Lech Poznan,2025,PL1,17,Centre-Forward,17,Poland,1,0,0,0
-720120,Kacper Trelowski,9644,Raków Częstochowa,2025,PL1,1,Goalkeeper,21,Poland,33,16,0,1417
-555074,Oliwier Zych,9644,Raków Częstochowa,2025,PL1,48,Goalkeeper,21,Poland,32,19,0,1643
-910780,Jakub Mądrzyk,9644,Raków Częstochowa,2025,PL1,0,Goalkeeper,21,Poland,9,0,0,0
-1284269,Wiktor Zolneczko,9644,Raków Częstochowa,2025,PL1,29,Goalkeeper,16,Poland,12,0,0,0
-1511247,Dominik Czeremski,9644,Raków Częstochowa,2025,PL1,31,Goalkeeper,16,Poland,2,0,0,0
-318257,Stratos Svarnas,9644,Raków Częstochowa,2025,PL1,4,Centre-Back,27,Greece,31,30,1,2358
-804134,Bogdan Racovițan,9644,Raków Częstochowa,2025,PL1,25,Centre-Back,25,Romania,32,30,0,2547
-554393,Apostolos Konstantopoulos,9644,Raków Częstochowa,2025,PL1,0,Centre-Back,22,Greece,17,12,0,832
-554288,Ariel Mosór,9644,Raków Częstochowa,2025,PL1,2,Centre-Back,22,Poland,21,11,0,858
-248732,Paweł Dawidowicz,9644,Raków Częstochowa,2025,PL1,27,Centre-Back,30,Poland,12,10,0,444
-280312,Zoran Arsenic,9644,Raków Częstochowa,2025,PL1,24,Centre-Back,31,Croatia,17,10,0,792
-1048759,Jerzy Napieraj,9644,Raków Częstochowa,2025,PL1,21,Centre-Back,20,Poland,7,0,0,0
-495669,Lamine Diaby-Fadiga,9644,Raków Częstochowa,2025,PL1,80,Attacking Midfield,24,Guinea,29,28,7,1389
-616948,Péter Baráth,9644,Raków Częstochowa,2025,PL1,0,Defensive Midfield,23,Hungary,16,15,1,992
-491039,Marko Bulat,9644,Raków Częstochowa,2025,PL1,5,Defensive Midfield,23,Croatia,32,31,4,1860
-384823,Oskar Repka,9644,Raków Częstochowa,2025,PL1,6,Defensive Midfield,26,Poland,33,32,3,2267
-555062,Tomasz Pieńko,9644,Raków Częstochowa,2025,PL1,8,Attacking Midfield,21,Poland,29,26,2,1387
-343158,Fran Tudor,9644,Raków Częstochowa,2025,PL1,7,Right Midfield,29,Croatia,25,22,0,1889
-1046580,Adriano,9644,Raków Częstochowa,2025,PL1,11,Left Midfield,23,Brazil,29,27,1,1434
-528414,Michael Ameyaw,9644,Raków Częstochowa,2025,PL1,19,Right Midfield,24,Poland,29,28,3,1926
-553562,Karol Struski,9644,Raków Częstochowa,2025,PL1,23,Defensive Midfield,24,Poland,28,21,0,1154
-248932,Vladyslav Kochergin,9644,Raków Częstochowa,2025,PL1,30,Defensive Midfield,29,Ukraine,5,3,0,82
-822074,Mitja Ilenic,9644,Raków Częstochowa,2025,PL1,35,Right Midfield,20,Slovenia,15,5,0,99
-282434,Jean Carlos Silva,9644,Raków Częstochowa,2025,PL1,20,Left Midfield,29,Spain,24,22,3,1490
-940548,Bogdan Mirčetić,9644,Raków Częstochowa,2025,PL1,44,Attacking Midfield,19,Serbia,26,4,0,96
-453639,Patryk Makuch,9644,Raków Częstochowa,2025,PL1,9,Attacking Midfield,26,Poland,32,29,4,1413
-282371,Ivi López,9644,Raków Częstochowa,2025,PL1,10,Attacking Midfield,31,Spain,21,19,4,858
-442118,Erick Otieno,9644,Raków Częstochowa,2025,PL1,26,Left Midfield,28,Kenya,5,4,0,139
-1111775,Ibrahima Seck,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,21,Senegal,16,6,0,251
-1150073,Jesús Díaz,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,26,Colombia,5,3,0,163
-1366314,Abraham Ojo,9644,Raków Częstochowa,2025,PL1,22,Defensive Midfield,18,Nigeria,7,2,0,15
-322800,Srdjan Plavsic,9644,Raków Częstochowa,2025,PL1,0,Left Midfield,29,Serbia,4,2,0,155
-1190453,Antoni Burkiewicz,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,17,Poland,1,0,0,0
-435587,Jonatan Braut Brunes,9644,Raków Częstochowa,2025,PL1,18,Centre-Forward,24,Norway,32,32,16,2462
-479675,Leonardo Rocha,9644,Raków Częstochowa,2025,PL1,17,Centre-Forward,28,Portugal,20,18,2,499
-464154,Imad Rondic,9644,Raków Częstochowa,2025,PL1,0,Centre-Forward,26,Bosnia-Herzegovina,13,12,0,375
-1150520,Isak Brusberg,9644,Raków Częstochowa,2025,PL1,39,Centre-Forward,18,Sweden,13,7,0,216
-744075,Otto Hindrich,255,Legia Warszawa,2026,PL1,89,Goalkeeper,23,Romania,0,0,0,0
-274047,Ivan Brkic,255,Legia Warszawa,2026,PL1,1,Goalkeeper,31,Croatia,0,0,0,0
-1297215,Jan Bienduga,255,Legia Warszawa,2026,PL1,0,Goalkeeper,17,Poland,0,0,0,0
-345449,Kamil Piątkowski,255,Legia Warszawa,2026,PL1,91,Centre-Back,26,Poland,0,0,0,0
-280312,Zoran Arsenic,255,Legia Warszawa,2026,PL1,0,Centre-Back,32,Croatia,0,0,0,0
-264796,Rafał Augustyniak,255,Legia Warszawa,2026,PL1,8,Centre-Back,32,Poland,0,0,0,0
-821923,Robert Deziel Jr.,255,Legia Warszawa,2026,PL1,4,Centre-Back,21,United States,0,0,0,0
-1209572,Bartosz Korżynski,255,Legia Warszawa,2026,PL1,0,Centre-Back,17,Poland,0,0,0,0
-357158,Rúben Vinagre,255,Legia Warszawa,2026,PL1,19,Left Midfield,27,Portugal,0,0,0,0
-1138091,Samuel Kovacik,255,Legia Warszawa,2026,PL1,99,Attacking Midfield,19,Slovakia,0,0,0,0
-651731,Michal Sevcik,255,Legia Warszawa,2026,PL1,23,Attacking Midfield,23,Czech Republic,0,0,0,0
-246579,Bartosz Kapustka,255,Legia Warszawa,2026,PL1,67,Attacking Midfield,29,Poland,0,0,0,0
-399348,Vahan Bichakhchyan,255,Legia Warszawa,2026,PL1,21,Attacking Midfield,27,Armenia,0,0,0,0
-259881,Damian Szymański,255,Legia Warszawa,2026,PL1,44,Defensive Midfield,31,Poland,0,0,0,0
-1073744,Mateusz Szczepaniak,255,Legia Warszawa,2026,PL1,0,Attacking Midfield,19,Poland,0,0,0,0
-618424,Wojciech Urbański,255,Legia Warszawa,2026,PL1,53,Attacking Midfield,21,Poland,0,0,0,0
-1132797,Jakub Żewłakow,255,Legia Warszawa,2026,PL1,20,Attacking Midfield,19,Poland,0,0,0,0
-1167669,Oliwier Olewiński,255,Legia Warszawa,2026,PL1,0,Right Midfield,20,Poland,0,0,0,0
-905345,Henrique Arreiol,255,Legia Warszawa,2026,PL1,6,Defensive Midfield,21,Portugal,0,0,0,0
-320733,Kacper Chodyna,255,Legia Warszawa,2026,PL1,11,Right Midfield,27,Poland,0,0,0,0
-268178,Arkadiusz Reca,255,Legia Warszawa,2026,PL1,13,Left Midfield,31,Poland,0,0,0,0
-183841,Petar Stojanović,255,Legia Warszawa,2026,PL1,30,Right Midfield,30,Slovenia,0,0,0,0
-164759,Paweł Wszołek,255,Legia Warszawa,2026,PL1,7,Right Midfield,34,Poland,0,0,0,0
-1194250,Filip Przybyłko,255,Legia Warszawa,2026,PL1,0,Defensive Midfield,17,Poland,0,0,0,0
-525919,Mileta Rajović,255,Legia Warszawa,2026,PL1,29,Centre-Forward,27,Denmark,0,0,0,0
-549982,Rafał Adamski,255,Legia Warszawa,2026,PL1,9,Centre-Forward,24,Poland,0,0,0,0
-401608,Łukasz Zjawiński,255,Legia Warszawa,2026,PL1,79,Centre-Forward,25,Poland,0,0,0,0
-160668,Antonio Colak,255,Legia Warszawa,2026,PL1,14,Centre-Forward,32,Croatia,0,0,0,0
-1268897,Erik Mikanovich,255,Legia Warszawa,2026,PL1,0,Left Winger,18,Belarus,0,0,0,0
+345452,Bartosz Mrozek,238,Lech Poznan,2026,PL1,41,Goalkeeper,26,Poland,0,0,0,0
+345437,Mateusz Lis,238,Lech Poznan,2026,PL1,1,Goalkeeper,29,Poland,1,1,0,90
+1018353,Mateusz Pruchniewski,238,Lech Poznan,2026,PL1,33,Goalkeeper,19,Poland,1,0,0,0
+1300434,Wiktor Obremski,238,Lech Poznan,2026,PL1,31,Goalkeeper,18,Poland,0,0,0,0
+1007295,Wojciech Mońka,238,Lech Poznan,2026,PL1,27,Centre-Back,19,Poland,1,1,0,90
+991779,Michał Gurgul,238,Lech Poznan,2026,PL1,15,Left-Back,20,Poland,1,1,0,90
+991054,Terry Yegbe,238,Lech Poznan,2026,PL1,59,Centre-Back,25,Ghana,1,1,0,90
+225165,Joel Pereira,238,Lech Poznan,2026,PL1,2,Right-Back,29,Portugal,1,1,0,26
+539008,Alex Douglas,238,Lech Poznan,2026,PL1,3,Centre-Back,24,Sweden,0,0,0,0
+353826,Robert Gumny,238,Lech Poznan,2026,PL1,20,Right-Back,28,Poland,1,1,0,64
+461906,João Moutinho,238,Lech Poznan,2026,PL1,4,Left-Back,28,Portugal,1,0,0,0
+345454,Mateusz Skrzypczak,238,Lech Poznan,2026,PL1,72,Centre-Back,25,Poland,1,0,0,0
+1295659,Hubert Janyszka,238,Lech Poznan,2026,PL1,90,Centre-Back,17,Poland,0,0,0,0
+555057,Antoni Kozubal,238,Lech Poznan,2026,PL1,43,Defensive Midfield,21,Poland,1,1,0,90
+537765,Pablo Rodríguez,238,Lech Poznan,2026,PL1,21,Attacking Midfield,24,Spain,1,1,0,75
+242813,Filip Jagiełło,238,Lech Poznan,2026,PL1,24,Attacking Midfield,28,Poland,1,1,0,64
+825960,Gísli Thórdarson,238,Lech Poznan,2026,PL1,23,Defensive Midfield,21,Iceland,1,0,0,0
+220969,Radosław Murawski,238,Lech Poznan,2026,PL1,22,Defensive Midfield,32,Poland,1,1,0,26
+1211583,Karol Delikat,238,Lech Poznan,2026,PL1,53,Attacking Midfield,18,Poland,0,0,0,0
+539043,Luis Palma,238,Lech Poznan,2026,PL1,77,Left Winger,26,Honduras,1,1,0,25
+480975,Allahyar Sayyadmanesh,238,Lech Poznan,2026,PL1,17,Right Winger,25,Iran,1,1,0,8
+721470,Patrik Wålemark,238,Lech Poznan,2026,PL1,10,Right Winger,24,Sweden,1,1,0,82
+294772,Ali Gholizadeh,238,Lech Poznan,2026,PL1,8,Right Winger,30,Iran,0,0,0,0
+323325,Leo Bengtsson,238,Lech Poznan,2026,PL1,14,Left Winger,28,Sweden,1,1,0,65
+926954,Yannick Agnero,238,Lech Poznan,2026,PL1,7,Centre-Forward,23,Cote d'Ivoire,1,1,0,15
+448284,Daniel Håkans,238,Lech Poznan,2026,PL1,11,Left Winger,25,Finland,1,0,0,0
+153637,Mikael Ishak,238,Lech Poznan,2026,PL1,9,Centre-Forward,33,Sweden,1,1,0,90
+581113,Bryan Fiabema,238,Lech Poznan,2026,PL1,0,Centre-Forward,23,Norway,0,0,0,0
+1073752,Kamil Jakóbczyk,238,Lech Poznan,2026,PL1,54,Centre-Forward,18,Poland,0,0,0,0
 744075,Otto Hindrich,255,Legia Warszawa,2025,PL1,89,Goalkeeper,22,Romania,15,13,0,1165
 658111,Kacper Tobiasz,255,Legia Warszawa,2025,PL1,1,Goalkeeper,22,Poland,34,22,0,1895
 559998,Gabriel Kobylak,255,Legia Warszawa,2025,PL1,27,Goalkeeper,23,Poland,17,0,0,0
@@ -2901,40 +2880,40 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 376486,Marc Gual,255,Legia Warszawa,2025,PL1,0,Centre-Forward,29,Spain,1,0,0,0
 225055,Jean-Pierre Nsame,255,Legia Warszawa,2025,PL1,18,Centre-Forward,32,Cameroon,16,10,5,566
 160668,Antonio Colak,255,Legia Warszawa,2025,PL1,14,Centre-Forward,31,Croatia,19,13,3,267
-345452,Bartosz Mrozek,238,Lech Poznan,2026,PL1,41,Goalkeeper,26,Poland,0,0,0,0
-345437,Mateusz Lis,238,Lech Poznan,2026,PL1,1,Goalkeeper,29,Poland,0,0,0,0
-1018353,Mateusz Pruchniewski,238,Lech Poznan,2026,PL1,33,Goalkeeper,19,Poland,0,0,0,0
-1300434,Wiktor Obremski,238,Lech Poznan,2026,PL1,0,Goalkeeper,18,Poland,0,0,0,0
-1007295,Wojciech Mońka,238,Lech Poznan,2026,PL1,27,Centre-Back,19,Poland,0,0,0,0
-991779,Michał Gurgul,238,Lech Poznan,2026,PL1,15,Left-Back,20,Poland,0,0,0,0
-991054,Terry Yegbe,238,Lech Poznan,2026,PL1,59,Centre-Back,25,Ghana,0,0,0,0
-225165,Joel Pereira,238,Lech Poznan,2026,PL1,2,Right-Back,29,Portugal,0,0,0,0
-539008,Alex Douglas,238,Lech Poznan,2026,PL1,3,Centre-Back,24,Sweden,0,0,0,0
-353826,Robert Gumny,238,Lech Poznan,2026,PL1,20,Right-Back,28,Poland,0,0,0,0
-461906,João Moutinho,238,Lech Poznan,2026,PL1,4,Left-Back,28,Portugal,0,0,0,0
-345454,Mateusz Skrzypczak,238,Lech Poznan,2026,PL1,72,Centre-Back,25,Poland,0,0,0,0
-1295659,Hubert Janyszka,238,Lech Poznan,2026,PL1,90,Centre-Back,17,Poland,0,0,0,0
-555057,Antoni Kozubal,238,Lech Poznan,2026,PL1,43,Defensive Midfield,21,Poland,0,0,0,0
-537765,Pablo Rodríguez,238,Lech Poznan,2026,PL1,21,Attacking Midfield,24,Spain,0,0,0,0
-242813,Filip Jagiełło,238,Lech Poznan,2026,PL1,24,Attacking Midfield,28,Poland,0,0,0,0
-825960,Gísli Thórdarson,238,Lech Poznan,2026,PL1,23,Defensive Midfield,21,Iceland,0,0,0,0
-220969,Radosław Murawski,238,Lech Poznan,2026,PL1,22,Defensive Midfield,32,Poland,0,0,0,0
-1211583,Karol Delikat,238,Lech Poznan,2026,PL1,0,Attacking Midfield,18,Poland,0,0,0,0
-539043,Luis Palma,238,Lech Poznan,2026,PL1,77,Left Winger,26,Honduras,0,0,0,0
-480975,Allahyar Sayyadmanesh,238,Lech Poznan,2026,PL1,17,Right Winger,25,Iran,0,0,0,0
-721470,Patrik Wålemark,238,Lech Poznan,2026,PL1,10,Right Winger,24,Sweden,0,0,0,0
-294772,Ali Gholizadeh,238,Lech Poznan,2026,PL1,8,Right Winger,30,Iran,0,0,0,0
-323325,Leo Bengtsson,238,Lech Poznan,2026,PL1,14,Left Winger,28,Sweden,0,0,0,0
-926954,Yannick Agnero,238,Lech Poznan,2026,PL1,7,Centre-Forward,23,Cote d'Ivoire,0,0,0,0
-448284,Daniel Håkans,238,Lech Poznan,2026,PL1,11,Left Winger,25,Finland,0,0,0,0
-153637,Mikael Ishak,238,Lech Poznan,2026,PL1,9,Centre-Forward,33,Sweden,0,0,0,0
-581113,Bryan Fiabema,238,Lech Poznan,2026,PL1,0,Centre-Forward,23,Norway,0,0,0,0
-1073752,Kamil Jakóbczyk,238,Lech Poznan,2026,PL1,54,Centre-Forward,18,Poland,0,0,0,0
+744075,Otto Hindrich,255,Legia Warszawa,2026,PL1,89,Goalkeeper,23,Romania,1,1,0,90
+274047,Ivan Brkic,255,Legia Warszawa,2026,PL1,1,Goalkeeper,31,Croatia,1,0,0,0
+1297215,Jan Bienduga,255,Legia Warszawa,2026,PL1,59,Goalkeeper,17,Poland,0,0,0,0
+345449,Kamil Piątkowski,255,Legia Warszawa,2026,PL1,91,Centre-Back,26,Poland,1,1,0,90
+280312,Zoran Arsenic,255,Legia Warszawa,2026,PL1,24,Centre-Back,32,Croatia,1,1,1,2
+264796,Rafał Augustyniak,255,Legia Warszawa,2026,PL1,8,Centre-Back,32,Poland,1,1,0,90
+821923,Robert Deziel Jr.,255,Legia Warszawa,2026,PL1,5,Centre-Back,21,United States,1,1,0,88
+1209572,Bartosz Korżynski,255,Legia Warszawa,2026,PL1,81,Centre-Back,17,Poland,0,0,0,0
+357158,Rúben Vinagre,255,Legia Warszawa,2026,PL1,19,Left Midfield,27,Portugal,1,1,0,88
+1138091,Samuel Kovacik,255,Legia Warszawa,2026,PL1,99,Attacking Midfield,19,Slovakia,1,0,0,0
+651731,Michal Sevcik,255,Legia Warszawa,2026,PL1,23,Attacking Midfield,23,Czech Republic,1,0,0,0
+246579,Bartosz Kapustka,255,Legia Warszawa,2026,PL1,67,Attacking Midfield,29,Poland,1,1,0,81
+259881,Damian Szymański,255,Legia Warszawa,2026,PL1,4,Defensive Midfield,31,Poland,1,1,0,83
+399348,Vahan Bichakhchyan,255,Legia Warszawa,2026,PL1,21,Attacking Midfield,27,Armenia,1,1,0,9
+1073744,Mateusz Szczepaniak,255,Legia Warszawa,2026,PL1,17,Attacking Midfield,19,Poland,0,0,0,0
+618424,Wojciech Urbański,255,Legia Warszawa,2026,PL1,53,Attacking Midfield,21,Poland,1,1,0,90
+1132797,Jakub Żewłakow,255,Legia Warszawa,2026,PL1,20,Attacking Midfield,19,Poland,1,1,0,10
+905345,Henrique Arreiol,255,Legia Warszawa,2026,PL1,6,Defensive Midfield,21,Portugal,1,1,0,7
+320733,Kacper Chodyna,255,Legia Warszawa,2026,PL1,11,Right Midfield,27,Poland,1,0,0,0
+268178,Arkadiusz Reca,255,Legia Warszawa,2026,PL1,13,Left Midfield,31,Poland,1,1,0,2
+183841,Petar Stojanović,255,Legia Warszawa,2026,PL1,30,Right Midfield,30,Slovenia,0,0,0,0
+164759,Paweł Wszołek,255,Legia Warszawa,2026,PL1,22,Right Midfield,34,Poland,1,1,0,90
+1194250,Filip Przybyłko,255,Legia Warszawa,2026,PL1,77,Defensive Midfield,17,Poland,1,0,0,0
+525919,Mileta Rajović,255,Legia Warszawa,2026,PL1,29,Centre-Forward,27,Denmark,1,1,0,90
+549982,Rafał Adamski,255,Legia Warszawa,2026,PL1,9,Centre-Forward,24,Poland,0,0,0,0
+401608,Łukasz Zjawiński,255,Legia Warszawa,2026,PL1,79,Centre-Forward,25,Poland,1,1,0,80
+160668,Antonio Colak,255,Legia Warszawa,2026,PL1,14,Centre-Forward,32,Croatia,0,0,0,0
+1268897,Erik Mikanovich,255,Legia Warszawa,2026,PL1,97,Left Winger,18,Belarus,0,0,0,0
 208166,Bartłomiej Drągowski,88,Widzew Lodz,2025,PL1,1,Goalkeeper,27,Poland,15,15,0,1350
 797570,Veljko Ilić,88,Widzew Lodz,2025,PL1,30,Goalkeeper,21,Serbia,26,8,0,720
 807782,Maciej Kikolski,88,Widzew Lodz,2025,PL1,98,Goalkeeper,21,Poland,34,9,0,810
 78339,Rafał Gikiewicz,88,Widzew Lodz,2025,PL1,0,Goalkeeper,37,Poland,7,2,0,180
 790518,Jan Krzywański,88,Widzew Lodz,2025,PL1,33,Goalkeeper,22,Poland,5,0,0,0
+1136224,Dion Gallapeni,88,Widzew Lodz,2025,PL1,0,Left-Back,20,Kosovo,18,10,1,654
 386967,Przemysław Wiśniewski,88,Widzew Lodz,2025,PL1,25,Centre-Back,26,Poland,16,16,0,1351
 679709,Steve Kapuadi,88,Widzew Lodz,2025,PL1,53,Centre-Back,27,DR Congo,11,11,1,915
 613964,Stelios Andreou,88,Widzew Lodz,2025,PL1,5,Centre-Back,22,Cyprus,28,18,0,1317
@@ -2946,7 +2925,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 297234,Mateusz Żyro,88,Widzew Lodz,2025,PL1,4,Centre-Back,26,Poland,34,25,0,1857
 428444,Peter Therkildsen,88,Widzew Lodz,2025,PL1,0,Right-Back,27,Denmark,11,8,1,430
 735419,Polydefkis Volanakis,88,Widzew Lodz,2025,PL1,0,Centre-Back,22,Greece,12,0,0,0
-1136224,Dion Gallapeni,88,Widzew Lodz,2025,PL1,0,Left Midfield,20,Kosovo,18,10,1,654
 528021,Juljan Shehu,88,Widzew Lodz,2025,PL1,6,Defensive Midfield,26,Albania,32,32,4,2673
 455068,Emil Kornvig,88,Widzew Lodz,2025,PL1,8,Attacking Midfield,25,Denmark,15,15,2,1246
 531273,Fran Álvarez,88,Widzew Lodz,2025,PL1,10,Attacking Midfield,27,Spain,34,31,7,2393
@@ -2967,64 +2945,203 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 578878,Ángel Baena,88,Widzew Lodz,2025,PL1,77,Right Winger,24,Spain,30,29,2,1344
 1233348,Kamil Cybulski,88,Widzew Lodz,2025,PL1,0,Left Winger,19,Poland,7,2,0,20
 1085939,Antoni Klukowski,88,Widzew Lodz,2025,PL1,0,Right Winger,18,Canada,11,7,0,47
-208166,Bartłomiej Drągowski,88,Widzew Lodz,2026,PL1,1,Goalkeeper,28,Poland,0,0,0,0
-797570,Veljko Ilić,88,Widzew Lodz,2026,PL1,30,Goalkeeper,23,Serbia,0,0,0,0
-386967,Przemysław Wiśniewski,88,Widzew Lodz,2026,PL1,25,Centre-Back,27,Poland,0,0,0,0
-679709,Steve Kapuadi,88,Widzew Lodz,2026,PL1,53,Centre-Back,28,DR Congo,0,0,0,0
-613964,Stelios Andreou,88,Widzew Lodz,2026,PL1,5,Centre-Back,23,Cyprus,0,0,0,0
-661368,Marcel Krajewski,88,Widzew Lodz,2026,PL1,91,Right-Back,21,Poland,0,0,0,0
-578547,Christopher Cheng,88,Widzew Lodz,2026,PL1,17,Left-Back,24,Norway,0,0,0,0
-889459,Mario García,88,Widzew Lodz,2026,PL1,40,Left-Back,22,Spain,0,0,0,0
-396324,Carlos Isaac,88,Widzew Lodz,2026,PL1,2,Right-Back,28,Spain,0,0,0,0
-630989,Ricardo Visus,88,Widzew Lodz,2026,PL1,14,Centre-Back,25,Spain,0,0,0,0
-297234,Mateusz Żyro,88,Widzew Lodz,2026,PL1,4,Centre-Back,27,Poland,0,0,0,0
-528021,Juljan Shehu,88,Widzew Lodz,2026,PL1,6,Defensive Midfield,27,Albania,0,0,0,0
-455068,Emil Kornvig,88,Widzew Lodz,2026,PL1,8,Attacking Midfield,26,Denmark,0,0,0,0
-531273,Fran Álvarez,88,Widzew Lodz,2026,PL1,10,Attacking Midfield,28,Spain,0,0,0,0
-340172,Lindon Selahi,88,Widzew Lodz,2026,PL1,18,Defensive Midfield,27,Albania,0,0,0,0
+720120,Kacper Trelowski,9644,Raków Częstochowa,2025,PL1,1,Goalkeeper,21,Poland,33,16,0,1417
+555074,Oliwier Zych,9644,Raków Częstochowa,2025,PL1,48,Goalkeeper,21,Poland,32,19,0,1643
+910780,Jakub Mądrzyk,9644,Raków Częstochowa,2025,PL1,0,Goalkeeper,21,Poland,9,0,0,0
+1284269,Wiktor Zolneczko,9644,Raków Częstochowa,2025,PL1,29,Goalkeeper,16,Poland,12,0,0,0
+1511247,Dominik Czeremski,9644,Raków Częstochowa,2025,PL1,31,Goalkeeper,16,Poland,2,0,0,0
+318257,Stratos Svarnas,9644,Raków Częstochowa,2025,PL1,4,Centre-Back,27,Greece,31,30,1,2358
+804134,Bogdan Racovițan,9644,Raków Częstochowa,2025,PL1,25,Centre-Back,25,Romania,32,30,0,2547
+554393,Apostolos Konstantopoulos,9644,Raków Częstochowa,2025,PL1,0,Centre-Back,22,Greece,17,12,0,832
+554288,Ariel Mosór,9644,Raków Częstochowa,2025,PL1,2,Centre-Back,22,Poland,21,11,0,858
+248732,Paweł Dawidowicz,9644,Raków Częstochowa,2025,PL1,27,Centre-Back,30,Poland,12,10,0,444
+280312,Zoran Arsenic,9644,Raków Częstochowa,2025,PL1,24,Centre-Back,31,Croatia,17,10,0,792
+1048759,Jerzy Napieraj,9644,Raków Częstochowa,2025,PL1,21,Centre-Back,20,Poland,7,0,0,0
+495669,Lamine Diaby-Fadiga,9644,Raków Częstochowa,2025,PL1,80,Attacking Midfield,24,Guinea,29,28,7,1389
+616948,Péter Baráth,9644,Raków Częstochowa,2025,PL1,0,Defensive Midfield,23,Hungary,16,15,1,992
+491039,Marko Bulat,9644,Raków Częstochowa,2025,PL1,5,Defensive Midfield,23,Croatia,32,31,4,1860
+384823,Oskar Repka,9644,Raków Częstochowa,2025,PL1,6,Defensive Midfield,26,Poland,33,32,3,2267
+555062,Tomasz Pieńko,9644,Raków Częstochowa,2025,PL1,8,Attacking Midfield,21,Poland,29,26,2,1387
+343158,Fran Tudor,9644,Raków Częstochowa,2025,PL1,7,Right Midfield,29,Croatia,25,22,0,1889
+1046580,Adriano,9644,Raków Częstochowa,2025,PL1,11,Left Midfield,23,Brazil,29,27,1,1434
+528414,Michael Ameyaw,9644,Raków Częstochowa,2025,PL1,19,Right Midfield,24,Poland,29,28,3,1926
+553562,Karol Struski,9644,Raków Częstochowa,2025,PL1,23,Defensive Midfield,24,Poland,28,21,0,1154
+248932,Vladyslav Kochergin,9644,Raków Częstochowa,2025,PL1,30,Defensive Midfield,29,Ukraine,5,3,0,82
+822074,Mitja Ilenic,9644,Raków Częstochowa,2025,PL1,35,Right Midfield,20,Slovenia,15,5,0,99
+282434,Jean Carlos Silva,9644,Raków Częstochowa,2025,PL1,20,Left Midfield,29,Spain,24,22,3,1490
+940548,Bogdan Mirčetić,9644,Raków Częstochowa,2025,PL1,44,Attacking Midfield,19,Serbia,26,4,0,96
+453639,Patryk Makuch,9644,Raków Częstochowa,2025,PL1,9,Attacking Midfield,26,Poland,32,29,4,1413
+282371,Ivi López,9644,Raków Częstochowa,2025,PL1,10,Attacking Midfield,31,Spain,21,19,4,858
+442118,Erick Otieno,9644,Raków Częstochowa,2025,PL1,26,Left Midfield,28,Kenya,5,4,0,139
+1111775,Ibrahima Seck,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,21,Senegal,16,6,0,251
+1150073,Jesús Díaz,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,26,Colombia,5,3,0,163
+1366314,Abraham Ojo,9644,Raków Częstochowa,2025,PL1,22,Defensive Midfield,18,Nigeria,7,2,0,15
+322800,Srdjan Plavsic,9644,Raków Częstochowa,2025,PL1,0,Left Midfield,29,Serbia,4,2,0,155
+1190453,Antoni Burkiewicz,9644,Raków Częstochowa,2025,PL1,0,Attacking Midfield,17,Poland,1,0,0,0
+435587,Jonatan Braut Brunes,9644,Raków Częstochowa,2025,PL1,18,Centre-Forward,24,Norway,32,32,16,2462
+479675,Leonardo Rocha,9644,Raków Częstochowa,2025,PL1,17,Centre-Forward,28,Portugal,20,18,2,499
+464154,Imad Rondic,9644,Raków Częstochowa,2025,PL1,0,Centre-Forward,26,Bosnia-Herzegovina,13,12,0,375
+1150520,Isak Brusberg,9644,Raków Częstochowa,2025,PL1,39,Centre-Forward,18,Sweden,13,7,0,216
+208166,Bartłomiej Drągowski,88,Widzew Lodz,2026,PL1,1,Goalkeeper,28,Poland,1,1,0,90
+797570,Veljko Ilić,88,Widzew Lodz,2026,PL1,30,Goalkeeper,23,Serbia,1,0,0,0
+679709,Steve Kapuadi,88,Widzew Lodz,2026,PL1,3,Centre-Back,28,DR Congo,1,0,0,0
+386967,Przemysław Wiśniewski,88,Widzew Lodz,2026,PL1,25,Centre-Back,28,Poland,1,1,0,90
+613964,Stelios Andreou,88,Widzew Lodz,2026,PL1,5,Centre-Back,24,Cyprus,0,0,0,0
+393745,Jusuf Gazibegovic,88,Widzew Lodz,2026,PL1,70,Right-Back,26,Bosnia-Herzegovina,0,0,0,0
+661368,Marcel Krajewski,88,Widzew Lodz,2026,PL1,91,Right-Back,21,Poland,1,1,0,90
+578547,Christopher Cheng,88,Widzew Lodz,2026,PL1,17,Left-Back,24,Norway,1,1,0,90
+889459,Mario García,88,Widzew Lodz,2026,PL1,40,Left-Back,22,Spain,1,0,0,0
+630989,Ricardo Visus,88,Widzew Lodz,2026,PL1,14,Centre-Back,25,Spain,1,1,0,90
+396324,Carlos Isaac,88,Widzew Lodz,2026,PL1,22,Right-Back,28,Spain,0,0,0,0
+297234,Mateusz Żyro,88,Widzew Lodz,2026,PL1,4,Centre-Back,27,Poland,1,1,0,1
+528021,Juljan Shehu,88,Widzew Lodz,2026,PL1,6,Defensive Midfield,27,Albania,1,1,0,90
+455068,Emil Kornvig,88,Widzew Lodz,2026,PL1,8,Attacking Midfield,26,Denmark,1,1,0,81
+531273,Fran Álvarez,88,Widzew Lodz,2026,PL1,10,Attacking Midfield,28,Spain,1,1,0,90
+448058,Giannis Papanikolaou,88,Widzew Lodz,2026,PL1,32,Defensive Midfield,27,Greece,0,0,0,0
+340172,Lindon Selahi,88,Widzew Lodz,2026,PL1,18,Defensive Midfield,27,Albania,1,1,0,9
 167105,Lukas Lerager,88,Widzew Lodz,2026,PL1,21,Defensive Midfield,33,Denmark,0,0,0,0
-510241,Tonio Teklic,88,Widzew Lodz,2026,PL1,0,Attacking Midfield,26,Croatia,0,0,0,0
+510241,Tonio Teklic,88,Widzew Lodz,2026,PL1,19,Attacking Midfield,26,Croatia,0,0,0,0
 407094,Szymon Czyż,88,Widzew Lodz,2026,PL1,55,Defensive Midfield,25,Poland,0,0,0,0
-1426749,Kuba Nawrocki,88,Widzew Lodz,2026,PL1,46,Defensive Midfield,19,Poland,0,0,0,0
-330126,Karol Świderski,88,Widzew Lodz,2026,PL1,0,Centre-Forward,29,Poland,0,0,0,0
-384337,Sebastian Bergier,88,Widzew Lodz,2026,PL1,99,Centre-Forward,26,Poland,0,0,0,0
+1426749,Kuba Nawrocki,88,Widzew Lodz,2026,PL1,46,Defensive Midfield,19,Poland,1,0,0,0
+330126,Karol Świderski,88,Widzew Lodz,2026,PL1,28,Centre-Forward,29,Poland,1,1,0,25
+384337,Sebastian Bergier,88,Widzew Lodz,2026,PL1,99,Centre-Forward,26,Poland,1,1,1,90
 345468,Andi Zeqiri,88,Widzew Lodz,2026,PL1,9,Centre-Forward,27,Switzerland,0,0,0,0
-1012052,Samuel Akere,88,Widzew Lodz,2026,PL1,0,Right Winger,22,Nigeria,0,0,0,0
-697468,Mariusz Fornalczyk,88,Widzew Lodz,2026,PL1,7,Left Winger,23,Poland,0,0,0,0
-693637,Pape Meïssa Ba,88,Widzew Lodz,2026,PL1,0,Centre-Forward,29,Senegal,0,0,0,0
-578878,Ángel Baena,88,Widzew Lodz,2026,PL1,77,Right Winger,25,Spain,0,0,0,0
-1233348,Kamil Cybulski,88,Widzew Lodz,2026,PL1,0,Left Winger,20,Poland,0,0,0,0
-1085939,Antoni Klukowski,88,Widzew Lodz,2026,PL1,0,Right Winger,19,Canada,0,0,0,0
-720120,Kacper Trelowski,9644,Raków Częstochowa,2026,PL1,1,Goalkeeper,22,Poland,0,0,0,0
-695495,Tarik Karic,9644,Raków Częstochowa,2026,PL1,71,Goalkeeper,20,Bosnia-Herzegovina,0,0,0,0
-1284269,Wiktor Zolneczko,9644,Raków Częstochowa,2026,PL1,29,Goalkeeper,17,Poland,0,0,0,0
-318257,Stratos Svarnas,9644,Raków Częstochowa,2026,PL1,4,Centre-Back,28,Greece,0,0,0,0
-804134,Bogdan Racovițan,9644,Raków Częstochowa,2026,PL1,25,Centre-Back,26,Romania,0,0,0,0
+1012052,Samuel Akere,88,Widzew Lodz,2026,PL1,57,Right Winger,22,Nigeria,0,0,0,0
+697468,Mariusz Fornalczyk,88,Widzew Lodz,2026,PL1,7,Left Winger,23,Poland,1,1,1,90
+693637,Pape Meïssa Ba,88,Widzew Lodz,2026,PL1,15,Centre-Forward,29,Senegal,0,0,0,0
+578878,Ángel Baena,88,Widzew Lodz,2026,PL1,77,Right Winger,25,Spain,1,1,0,65
+1233348,Kamil Cybulski,88,Widzew Lodz,2026,PL1,78,Left Winger,20,Poland,1,0,0,0
+1085939,Antoni Klukowski,88,Widzew Lodz,2026,PL1,20,Right Winger,19,Canada,1,0,0,0
+805834,Sławomir Abramowicz,2300,Jagiellonia Bialystok,2025,PL1,50,Goalkeeper,21,Poland,31,30,0,2700
+965043,Milosz Piekutowski,2300,Jagiellonia Bialystok,2025,PL1,22,Goalkeeper,19,Poland,18,4,0,360
+1205033,Adrian Damasiewicz,2300,Jagiellonia Bialystok,2025,PL1,66,Goalkeeper,16,Poland,21,0,0,0
+690273,Bernardo Vital,2300,Jagiellonia Bialystok,2025,PL1,13,Centre-Back,24,Portugal,31,27,3,2211
+607435,Norbert Wojtuszek,2300,Jagiellonia Bialystok,2025,PL1,15,Right-Back,23,Poland,34,33,1,2413
+494236,Andy Pelmard,2300,Jagiellonia Bialystok,2025,PL1,70,Centre-Back,25,Madagascar,23,18,0,1391
+589013,Bartlomiej Wdowik,2300,Jagiellonia Bialystok,2025,PL1,27,Left-Back,24,Poland,34,29,0,2260
+469688,Dusan Stojinovic,2300,Jagiellonia Bialystok,2025,PL1,3,Centre-Back,24,Slovenia,18,13,0,1030
+554393,Apostolos Konstantopoulos,2300,Jagiellonia Bialystok,2025,PL1,44,Centre-Back,22,Greece,13,7,0,327
+575717,Guilherme Montóia,2300,Jagiellonia Bialystok,2025,PL1,23,Left-Back,21,Portugal,17,14,0,938
+405386,Yuki Kobayashi,2300,Jagiellonia Bialystok,2025,PL1,4,Centre-Back,24,Japan,33,15,1,1040
+355335,Adrián Diéguez,2300,Jagiellonia Bialystok,2025,PL1,0,Centre-Back,29,Spain,1,0,0,0
+705826,Cezary Polak,2300,Jagiellonia Bialystok,2025,PL1,0,Left-Back,22,Poland,15,3,0,45
+500246,Szymon Pankiewicz,2300,Jagiellonia Bialystok,2025,PL1,0,Right-Back,24,Poland,3,0,0,0
+1046873,Bartłomiej Krasiewicz,2300,Jagiellonia Bialystok,2025,PL1,0,Centre-Back,19,Poland,1,0,0,0
+1118873,Bartosz Mazurek,2300,Jagiellonia Bialystok,2025,PL1,86,Attacking Midfield,18,Poland,32,23,1,1428
+889193,AZ Jackson,2300,Jagiellonia Bialystok,2025,PL1,0,Attacking Midfield,23,United States,14,6,0,128
+341277,Sergio Lozano,2300,Jagiellonia Bialystok,2025,PL1,21,Defensive Midfield,26,Spain,23,14,3,609
+391929,Leon Flach,2300,Jagiellonia Bialystok,2025,PL1,31,Defensive Midfield,24,United States,26,20,1,827
+461939,Tomás Silva,2300,Jagiellonia Bialystok,2025,PL1,0,Attacking Midfield,25,Portugal,1,0,0,0
+895298,Dawid Drachal,2300,Jagiellonia Bialystok,2025,PL1,8,Attacking Midfield,20,Poland,33,21,1,818
+176423,Jesús Imaz,2300,Jagiellonia Bialystok,2025,PL1,11,Attacking Midfield,34,Spain,33,33,13,2795
+280939,Taras Romanczuk,2300,Jagiellonia Bialystok,2025,PL1,6,Defensive Midfield,33,Poland,32,32,3,2471
+1066230,Eryk Kozłowski,2300,Jagiellonia Bialystok,2025,PL1,85,Defensive Midfield,18,Poland,17,5,0,182
+1162012,Oskar Pietuszewski,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,17,Poland,17,17,3,1075
+410649,Afimico Pululu,2300,Jagiellonia Bialystok,2025,PL1,10,Centre-Forward,26,DR Congo,33,33,15,2361
+341272,Álex Pozo,2300,Jagiellonia Bialystok,2025,PL1,7,Right Winger,26,Spain,33,33,2,2429
+710969,Samed Bazdar,2300,Jagiellonia Bialystok,2025,PL1,14,Centre-Forward,21,Bosnia-Herzegovina,17,15,3,397
+263843,Matías Nahuel,2300,Jagiellonia Bialystok,2025,PL1,19,Left Winger,28,Spain,16,16,0,642
+658730,Kajetan Szmyt,2300,Jagiellonia Bialystok,2025,PL1,77,Left Winger,23,Poland,15,14,2,1012
+388465,Louka Prip,2300,Jagiellonia Bialystok,2025,PL1,0,Right Winger,28,Denmark,16,8,0,430
+747953,Dimitris Rallis,2300,Jagiellonia Bialystok,2025,PL1,9,Centre-Forward,20,Greece,30,15,3,407
+638235,Álex Cantero,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,25,Spain,14,7,0,86
+289167,Kamil Jóźwiak,2300,Jagiellonia Bialystok,2025,PL1,72,Left Winger,27,Poland,17,13,0,676
+382970,Miki Villar,2300,Jagiellonia Bialystok,2025,PL1,0,Right Winger,28,Spain,5,1,0,20
+667903,Youssuf Sylla,2300,Jagiellonia Bialystok,2025,PL1,17,Centre-Forward,22,Belgium,24,6,1,104
+1325371,Zachary Zalewski,2300,Jagiellonia Bialystok,2025,PL1,80,Right Winger,16,Poland,10,5,0,55
+861913,Toki Hirosawa,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,22,Japan,1,0,0,0
+1118876,Maciej Kuczyński,2300,Jagiellonia Bialystok,2025,PL1,90,Right Winger,18,Poland,2,0,0,0
+720120,Kacper Trelowski,9644,Raków Częstochowa,2026,PL1,1,Goalkeeper,22,Poland,1,0,0,0
+695495,Tarik Karic,9644,Raków Częstochowa,2026,PL1,71,Goalkeeper,20,Bosnia-Herzegovina,1,0,0,0
+1284269,Wiktor Zolneczko,9644,Raków Częstochowa,2026,PL1,29,Goalkeeper,17,Poland,1,1,0,90
+318257,Stratos Svarnas,9644,Raków Częstochowa,2026,PL1,4,Centre-Back,28,Greece,1,1,0,24
+804134,Bogdan Racovițan,9644,Raków Częstochowa,2026,PL1,25,Centre-Back,26,Romania,1,1,0,90
 868793,Dieudonné Gaucho Debohi,9644,Raków Częstochowa,2026,PL1,77,Centre-Back,25,Cote d'Ivoire,0,0,0,0
-1048759,Jerzy Napieraj,9644,Raków Częstochowa,2026,PL1,2,Centre-Back,21,Poland,0,0,0,0
-1567997,Nikodem Całko,9644,Raków Częstochowa,2026,PL1,24,Defender,17,Poland,0,0,0,0
+1048759,Jerzy Napieraj,9644,Raków Częstochowa,2026,PL1,2,Centre-Back,21,Poland,1,1,0,66
+1567997,Nikodem Całko,9644,Raków Częstochowa,2026,PL1,24,Defender,17,Poland,1,0,0,0
 495669,Lamine Diaby-Fadiga,9644,Raków Częstochowa,2026,PL1,80,Attacking Midfield,25,Guinea,0,0,0,0
-491039,Marko Bulat,9644,Raków Częstochowa,2026,PL1,5,Defensive Midfield,24,Croatia,0,0,0,0
-384823,Oskar Repka,9644,Raków Częstochowa,2026,PL1,6,Defensive Midfield,27,Poland,0,0,0,0
-555062,Tomasz Pieńko,9644,Raków Częstochowa,2026,PL1,8,Attacking Midfield,22,Poland,0,0,0,0
-343158,Fran Tudor,9644,Raków Częstochowa,2026,PL1,7,Right Midfield,30,Croatia,0,0,0,0
-248932,Vladyslav Kochergin,9644,Raków Częstochowa,2026,PL1,10,Defensive Midfield,30,Ukraine,0,0,0,0
+491039,Marko Bulat,9644,Raków Częstochowa,2026,PL1,5,Defensive Midfield,24,Croatia,1,1,0,34
+384823,Oskar Repka,9644,Raków Częstochowa,2026,PL1,6,Defensive Midfield,27,Poland,1,1,0,90
+555062,Tomasz Pieńko,9644,Raków Częstochowa,2026,PL1,8,Attacking Midfield,22,Poland,1,1,0,82
+343158,Fran Tudor,9644,Raków Częstochowa,2026,PL1,7,Right Midfield,30,Croatia,1,1,0,90
+248932,Vladyslav Kochergin,9644,Raków Częstochowa,2026,PL1,10,Defensive Midfield,30,Ukraine,1,1,0,56
 1046580,Adriano,9644,Raków Częstochowa,2026,PL1,11,Left Midfield,24,Brazil,0,0,0,0
-528414,Michael Ameyaw,9644,Raków Częstochowa,2026,PL1,19,Right Midfield,25,Poland,0,0,0,0
+528414,Michael Ameyaw,9644,Raków Częstochowa,2026,PL1,19,Right Midfield,25,Poland,1,1,0,34
 553562,Karol Struski,9644,Raków Częstochowa,2026,PL1,23,Defensive Midfield,25,Poland,0,0,0,0
-282434,Jean Carlos Silva,9644,Raków Częstochowa,2026,PL1,20,Left Midfield,30,Spain,0,0,0,0
+282434,Jean Carlos Silva,9644,Raków Częstochowa,2026,PL1,20,Left Midfield,30,Spain,1,1,0,90
 940548,Bogdan Mirčetić,9644,Raków Częstochowa,2026,PL1,44,Attacking Midfield,20,Serbia,0,0,0,0
-864189,Ádin Molnár,9644,Raków Częstochowa,2026,PL1,88,Right Midfield,22,Hungary,0,0,0,0
-453639,Patryk Makuch,9644,Raków Częstochowa,2026,PL1,9,Attacking Midfield,27,Poland,0,0,0,0
-442118,Erick Otieno,9644,Raków Częstochowa,2026,PL1,26,Left Midfield,29,Kenya,0,0,0,0
-1279298,Oliwier Kwiatkowski,9644,Raków Częstochowa,2026,PL1,15,Attacking Midfield,21,Poland,0,0,0,0
+864189,Ádin Molnár,9644,Raków Częstochowa,2026,PL1,88,Right Midfield,22,Hungary,1,1,0,34
+453639,Patryk Makuch,9644,Raków Częstochowa,2026,PL1,9,Attacking Midfield,27,Poland,1,1,1,90
+442118,Erick Otieno,9644,Raków Częstochowa,2026,PL1,26,Left Midfield,29,Kenya,1,1,0,56
+1279298,Oliwier Kwiatkowski,9644,Raków Częstochowa,2026,PL1,15,Attacking Midfield,21,Poland,1,0,0,0
 1150073,Jesús Díaz,9644,Raków Częstochowa,2026,PL1,33,Attacking Midfield,27,Colombia,0,0,0,0
-1167711,Jakub Jendryka,9644,Raków Częstochowa,2026,PL1,17,Right Midfield,19,Poland,0,0,0,0
-1366314,Abraham Ojo,9644,Raków Częstochowa,2026,PL1,22,Defensive Midfield,19,Nigeria,0,0,0,0
-435587,Jonatan Braut Brunes,9644,Raków Częstochowa,2026,PL1,18,Centre-Forward,25,Norway,0,0,0,0
-255957,Mahir Emreli,9644,Raków Częstochowa,2026,PL1,30,Centre-Forward,29,Azerbaijan,0,0,0,0
-1150520,Isak Brusberg,9644,Raków Częstochowa,2026,PL1,39,Centre-Forward,19,Sweden,0,0,0,0
-1249778,Adam Basse,9644,Raków Częstochowa,2026,PL1,99,Centre-Forward,18,Poland,0,0,0,0
+1167711,Jakub Jendryka,9644,Raków Częstochowa,2026,PL1,17,Right Midfield,19,Poland,1,0,0,0
+1366314,Abraham Ojo,9644,Raków Częstochowa,2026,PL1,22,Defensive Midfield,19,Nigeria,1,0,0,0
+255957,Mahir Emreli,9644,Raków Częstochowa,2026,PL1,11,Centre-Forward,29,Azerbaijan,1,1,0,56
+1150520,Isak Brusberg,9644,Raków Częstochowa,2026,PL1,39,Centre-Forward,19,Sweden,1,0,0,0
+1249778,Adam Basse,9644,Raków Częstochowa,2026,PL1,99,Centre-Forward,18,Poland,1,1,0,8
+805834,Sławomir Abramowicz,2300,Jagiellonia Bialystok,2026,PL1,50,Goalkeeper,22,Poland,1,1,0,90
+1161772,Michał Perchel,2300,Jagiellonia Bialystok,2026,PL1,1,Goalkeeper,19,Poland,1,0,0,0
+1205033,Adrian Damasiewicz,2300,Jagiellonia Bialystok,2026,PL1,66,Goalkeeper,17,Poland,0,0,0,0
+1212054,Jakub Rabiczko,2300,Jagiellonia Bialystok,2026,PL1,67,Goalkeeper,18,Poland,0,0,0,0
+690273,Bernardo Vital,2300,Jagiellonia Bialystok,2026,PL1,5,Centre-Back,25,Portugal,1,1,0,90
+607435,Norbert Wojtuszek,2300,Jagiellonia Bialystok,2026,PL1,15,Right-Back,24,Poland,1,1,0,90
+469688,Dusan Stojinovic,2300,Jagiellonia Bialystok,2026,PL1,3,Centre-Back,25,Slovenia,0,0,0,0
+554393,Apostolos Konstantopoulos,2300,Jagiellonia Bialystok,2026,PL1,44,Centre-Back,23,Greece,1,0,0,0
+575717,Guilherme Montóia,2300,Jagiellonia Bialystok,2026,PL1,23,Left-Back,22,Portugal,1,1,0,90
+405386,Yuki Kobayashi,2300,Jagiellonia Bialystok,2026,PL1,4,Centre-Back,26,Japan,1,1,0,90
+426213,Rodrigo Conceição,2300,Jagiellonia Bialystok,2026,PL1,27,Right-Back,26,Portugal,1,1,0,29
+705826,Cezary Polak,2300,Jagiellonia Bialystok,2026,PL1,2,Left-Back,23,Poland,1,0,0,0
+500246,Szymon Pankiewicz,2300,Jagiellonia Bialystok,2026,PL1,62,Right-Back,25,Poland,0,0,0,0
+1046873,Bartłomiej Krasiewicz,2300,Jagiellonia Bialystok,2026,PL1,61,Centre-Back,20,Poland,1,0,0,0
+889193,AZ Jackson,2300,Jagiellonia Bialystok,2026,PL1,0,Attacking Midfield,24,United States,0,0,0,0
+341277,Sergio Lozano,2300,Jagiellonia Bialystok,2026,PL1,21,Defensive Midfield,27,Spain,1,1,0,16
+391929,Leon Flach,2300,Jagiellonia Bialystok,2026,PL1,31,Defensive Midfield,25,United States,0,0,0,0
+895298,Dawid Drachal,2300,Jagiellonia Bialystok,2026,PL1,8,Attacking Midfield,21,Poland,1,1,0,74
+176423,Jesús Imaz,2300,Jagiellonia Bialystok,2026,PL1,11,Attacking Midfield,35,Spain,1,1,0,86
+280939,Taras Romanczuk,2300,Jagiellonia Bialystok,2026,PL1,6,Defensive Midfield,34,Poland,1,1,0,90
+1066230,Eryk Kozłowski,2300,Jagiellonia Bialystok,2026,PL1,85,Defensive Midfield,19,Poland,1,0,0,0
+1296862,Olaf Pankiewicz,2300,Jagiellonia Bialystok,2026,PL1,0,Midfield,19,Poland,0,0,0,0
+1057820,Jeremy Agbonifo,2300,Jagiellonia Bialystok,2026,PL1,10,Right Winger,20,Sweden,1,1,0,4
+469690,Nik Prelec,2300,Jagiellonia Bialystok,2026,PL1,99,Centre-Forward,25,Slovenia,1,1,1,29
+658730,Kajetan Szmyt,2300,Jagiellonia Bialystok,2026,PL1,7,Left Winger,24,Poland,1,1,0,86
+747953,Dimitris Rallis,2300,Jagiellonia Bialystok,2026,PL1,9,Centre-Forward,21,Greece,1,1,0,4
+289167,Kamil Jóźwiak,2300,Jagiellonia Bialystok,2026,PL1,72,Left Winger,28,Poland,1,1,0,61
+667903,Youssuf Sylla,2300,Jagiellonia Bialystok,2026,PL1,17,Centre-Forward,23,Belgium,1,1,0,61
+1325371,Zachary Zalewski,2300,Jagiellonia Bialystok,2026,PL1,80,Right Winger,17,Poland,1,0,0,0
+1260542,Paweł Pakieła,2300,Jagiellonia Bialystok,2026,PL1,0,Right Winger,19,Poland,0,0,0,0
+1105398,Maksim Kononov,2300,Jagiellonia Bialystok,2026,PL1,65,Centre-Forward,20,Belarus,0,0,0,0
+1118876,Maciej Kuczyński,2300,Jagiellonia Bialystok,2026,PL1,90,Right Winger,19,Poland,1,0,0,0
+574203,Philipp Schulze,428,Górnik Zabrze,2026,PL1,1,Goalkeeper,23,Germany,1,1,0,90
+260706,Tomasz Loska,428,Górnik Zabrze,2026,PL1,99,Goalkeeper,30,Poland,1,0,0,0
+698946,Piotr Pietryga,428,Górnik Zabrze,2026,PL1,92,Goalkeeper,23,Poland,1,0,0,0
+1382712,Wiktor Kania,428,Górnik Zabrze,2026,PL1,29,Goalkeeper,17,Poland,0,0,0,0
+343558,Ondrej Zmrzly,428,Górnik Zabrze,2026,PL1,21,Left-Back,27,Czech Republic,1,1,0,1
+255892,Josema,428,Górnik Zabrze,2026,PL1,20,Centre-Back,30,Spain,1,1,0,90
+430054,Michal Sacek,428,Górnik Zabrze,2026,PL1,61,Right-Back,29,Czech Republic,0,0,0,0
+1118867,Michał Synoś,428,Górnik Zabrze,2026,PL1,3,Centre-Back,19,Poland,1,0,0,0
+248395,Pawel Bochniewicz,428,Górnik Zabrze,2026,PL1,4,Centre-Back,30,Poland,1,0,0,0
+174522,Erik Janza,428,Górnik Zabrze,2026,PL1,64,Left-Back,33,Slovenia,1,1,0,90
+577596,Patryk Warczak,428,Górnik Zabrze,2026,PL1,2,Right-Back,22,Poland,1,1,0,45
+153638,Rafał Janicki,428,Górnik Zabrze,2026,PL1,26,Centre-Back,34,Poland,1,1,0,90
+699442,Kacper Urbański,428,Górnik Zabrze,2026,PL1,82,Attacking Midfield,21,Poland,1,1,0,90
+242084,Lukas Sadilek,428,Górnik Zabrze,2026,PL1,18,Attacking Midfield,30,Czech Republic,1,1,0,90
+515964,Maximilian Dietz,428,Górnik Zabrze,2026,PL1,66,Defensive Midfield,24,United States,1,1,0,45
+327756,Jarosław Kubicki,428,Górnik Zabrze,2026,PL1,14,Defensive Midfield,30,Poland,0,0,0,0
+1168260,Bastien Donio,428,Górnik Zabrze,2026,PL1,28,Defensive Midfield,20,France,1,1,0,9
+529548,Michal Rakoczy,428,Górnik Zabrze,2026,PL1,36,Attacking Midfield,24,Poland,1,0,0,0
+906970,Marcel Kalemba,428,Górnik Zabrze,2026,PL1,0,Attacking Midfield,21,Poland,0,0,0,0
+1377833,Ksawery Semik,428,Górnik Zabrze,2026,PL1,24,Attacking Midfield,17,Poland,0,0,0,0
+721511,Maksym Khlan,428,Górnik Zabrze,2026,PL1,33,Left Winger,23,Ukraine,1,1,0,64
+1172620,Bruno Durdov,428,Górnik Zabrze,2026,PL1,34,Right Winger,18,Croatia,1,0,0,0
+710004,Peter Federico,428,Górnik Zabrze,2026,PL1,19,Right Winger,24,Dominican Republic,1,0,0,0
+676476,Taofeek Ismaheel,428,Górnik Zabrze,2026,PL1,88,Right Winger,26,Nigeria,1,1,0,26
+446573,Erik Prekop,428,Górnik Zabrze,2026,PL1,11,Centre-Forward,28,Slovakia,1,1,0,81
+442474,Sondre Liseth,428,Górnik Zabrze,2026,PL1,23,Centre-Forward,28,Norway,1,1,0,45
+1001785,Yvan Ikia Dimi,428,Górnik Zabrze,2026,PL1,7,Right Winger,21,France,1,1,1,89
+864041,Natan Dziegielewski,428,Górnik Zabrze,2026,PL1,0,Left Winger,21,Poland,0,0,0,0
+431561,Roberto Massimo,428,Górnik Zabrze,2026,PL1,15,Right Winger,25,Germany,1,1,0,45
+566342,Kamil Lukoszek,428,Górnik Zabrze,2026,PL1,17,Left Winger,24,Poland,0,0,0,0
 656250,Marcel Lubik,428,Górnik Zabrze,2025,PL1,1,Goalkeeper,21,Poland,34,33,0,2937
 260706,Tomasz Loska,428,Górnik Zabrze,2025,PL1,99,Goalkeeper,29,Poland,34,2,0,123
 698946,Piotr Pietryga,428,Górnik Zabrze,2025,PL1,92,Goalkeeper,22,Poland,13,0,0,0
@@ -3063,306 +3180,37 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 678277,Mathias Sauer,428,Górnik Zabrze,2025,PL1,21,Right Winger,21,Denmark,11,3,0,16
 1368324,Abbati Abdullahi,428,Górnik Zabrze,2025,PL1,0,Left Winger,19,Nigeria,11,4,0,28
 15185,Lukas Podolski,428,Górnik Zabrze,2025,PL1,10,Centre-Forward,40,Germany,24,16,0,269
-574203,Philipp Schulze,428,Górnik Zabrze,2026,PL1,1,Goalkeeper,23,Germany,0,0,0,0
-260706,Tomasz Loska,428,Górnik Zabrze,2026,PL1,99,Goalkeeper,30,Poland,0,0,0,0
-965106,Kamil Soberka,428,Górnik Zabrze,2026,PL1,0,Goalkeeper,20,Poland,0,0,0,0
-698946,Piotr Pietryga,428,Górnik Zabrze,2026,PL1,92,Goalkeeper,23,Poland,0,0,0,0
-1177261,Antoni Bałabuch,428,Górnik Zabrze,2026,PL1,25,Goalkeeper,19,Poland,0,0,0,0
-1382712,Wiktor Kania,428,Górnik Zabrze,2026,PL1,29,Goalkeeper,17,Poland,0,0,0,0
-343558,Ondrej Zmrzly,428,Górnik Zabrze,2026,PL1,21,Left-Back,27,Czech Republic,0,0,0,0
-255892,Josema,428,Górnik Zabrze,2026,PL1,20,Centre-Back,30,Spain,0,0,0,0
-430054,Michal Sacek,428,Górnik Zabrze,2026,PL1,61,Right-Back,29,Czech Republic,0,0,0,0
-1118867,Michał Synoś,428,Górnik Zabrze,2026,PL1,3,Centre-Back,19,Poland,0,0,0,0
-248395,Pawel Bochniewicz,428,Górnik Zabrze,2026,PL1,4,Centre-Back,30,Poland,0,0,0,0
-174522,Erik Janza,428,Górnik Zabrze,2026,PL1,64,Left-Back,33,Slovenia,0,0,0,0
-577596,Patryk Warczak,428,Górnik Zabrze,2026,PL1,2,Right-Back,22,Poland,0,0,0,0
-153638,Rafał Janicki,428,Górnik Zabrze,2026,PL1,26,Centre-Back,34,Poland,0,0,0,0
-699442,Kacper Urbański,428,Górnik Zabrze,2026,PL1,82,Attacking Midfield,21,Poland,0,0,0,0
-242084,Lukas Sadilek,428,Górnik Zabrze,2026,PL1,18,Attacking Midfield,30,Czech Republic,0,0,0,0
-515964,Maximilian Dietz,428,Górnik Zabrze,2026,PL1,66,Defensive Midfield,24,United States,0,0,0,0
-327756,Jarosław Kubicki,428,Górnik Zabrze,2026,PL1,14,Defensive Midfield,30,Poland,0,0,0,0
-1168260,Bastien Donio,428,Górnik Zabrze,2026,PL1,28,Defensive Midfield,20,France,0,0,0,0
-529548,Michal Rakoczy,428,Górnik Zabrze,2026,PL1,36,Attacking Midfield,24,Poland,0,0,0,0
-906970,Marcel Kalemba,428,Górnik Zabrze,2026,PL1,0,Attacking Midfield,21,Poland,0,0,0,0
-1111833,Gédéon Nongo,428,Górnik Zabrze,2026,PL1,0,Defensive Midfield,18,Congo,0,0,0,0
-1377833,Ksawery Semik,428,Górnik Zabrze,2026,PL1,24,Attacking Midfield,17,Poland,0,0,0,0
-721511,Maksym Khlan,428,Górnik Zabrze,2026,PL1,33,Left Winger,23,Ukraine,0,0,0,0
-1172620,Bruno Durdov,428,Górnik Zabrze,2026,PL1,34,Right Winger,18,Croatia,0,0,0,0
-710004,Peter Federico,428,Górnik Zabrze,2026,PL1,19,Right Winger,23,Dominican Republic,0,0,0,0
-676476,Taofeek Ismaheel,428,Górnik Zabrze,2026,PL1,88,Right Winger,26,Nigeria,0,0,0,0
-446573,Erik Prekop,428,Górnik Zabrze,2026,PL1,11,Centre-Forward,28,Slovakia,0,0,0,0
-442474,Sondre Liseth,428,Górnik Zabrze,2026,PL1,23,Centre-Forward,28,Norway,0,0,0,0
-1001785,Yvan Ikia Dimi,428,Górnik Zabrze,2026,PL1,7,Right Winger,21,France,0,0,0,0
-864041,Natan Dziegielewski,428,Górnik Zabrze,2026,PL1,0,Left Winger,21,Poland,0,0,0,0
-431561,Roberto Massimo,428,Górnik Zabrze,2026,PL1,15,Right Winger,25,Germany,0,0,0,0
-566342,Kamil Lukoszek,428,Górnik Zabrze,2026,PL1,17,Left Winger,24,Poland,0,0,0,0
-553757,Aleksander Buksa,428,Górnik Zabrze,2026,PL1,0,Centre-Forward,23,Poland,0,0,0,0
-805834,Sławomir Abramowicz,2300,Jagiellonia Bialystok,2026,PL1,50,Goalkeeper,22,Poland,0,0,0,0
-1161772,Michał Perchel,2300,Jagiellonia Bialystok,2026,PL1,0,Goalkeeper,19,Poland,0,0,0,0
-1205033,Adrian Damasiewicz,2300,Jagiellonia Bialystok,2026,PL1,66,Goalkeeper,17,Poland,0,0,0,0
-690273,Bernardo Vital,2300,Jagiellonia Bialystok,2026,PL1,13,Centre-Back,25,Portugal,0,0,0,0
-607435,Norbert Wojtuszek,2300,Jagiellonia Bialystok,2026,PL1,15,Right-Back,24,Poland,0,0,0,0
-469688,Dusan Stojinovic,2300,Jagiellonia Bialystok,2026,PL1,3,Centre-Back,25,Slovenia,0,0,0,0
-554393,Apostolos Konstantopoulos,2300,Jagiellonia Bialystok,2026,PL1,44,Centre-Back,23,Greece,0,0,0,0
-575717,Guilherme Montóia,2300,Jagiellonia Bialystok,2026,PL1,23,Left-Back,22,Portugal,0,0,0,0
-405386,Yuki Kobayashi,2300,Jagiellonia Bialystok,2026,PL1,4,Centre-Back,26,Japan,0,0,0,0
-426213,Rodrigo Conceição,2300,Jagiellonia Bialystok,2026,PL1,0,Right-Back,26,Portugal,0,0,0,0
-705826,Cezary Polak,2300,Jagiellonia Bialystok,2026,PL1,0,Left-Back,23,Poland,0,0,0,0
-889193,AZ Jackson,2300,Jagiellonia Bialystok,2026,PL1,0,Attacking Midfield,24,United States,0,0,0,0
-341277,Sergio Lozano,2300,Jagiellonia Bialystok,2026,PL1,21,Defensive Midfield,27,Spain,0,0,0,0
-391929,Leon Flach,2300,Jagiellonia Bialystok,2026,PL1,31,Defensive Midfield,25,United States,0,0,0,0
-895298,Dawid Drachal,2300,Jagiellonia Bialystok,2026,PL1,8,Attacking Midfield,21,Poland,0,0,0,0
-176423,Jesús Imaz,2300,Jagiellonia Bialystok,2026,PL1,11,Attacking Midfield,35,Spain,0,0,0,0
-280939,Taras Romanczuk,2300,Jagiellonia Bialystok,2026,PL1,6,Defensive Midfield,34,Poland,0,0,0,0
-1066230,Eryk Kozłowski,2300,Jagiellonia Bialystok,2026,PL1,85,Defensive Midfield,19,Poland,0,0,0,0
-469690,Nik Prelec,2300,Jagiellonia Bialystok,2026,PL1,99,Centre-Forward,25,Slovenia,0,0,0,0
-658730,Kajetan Szmyt,2300,Jagiellonia Bialystok,2026,PL1,77,Left Winger,24,Poland,0,0,0,0
-747953,Dimitris Rallis,2300,Jagiellonia Bialystok,2026,PL1,9,Centre-Forward,21,Greece,0,0,0,0
-289167,Kamil Jóźwiak,2300,Jagiellonia Bialystok,2026,PL1,72,Left Winger,28,Poland,0,0,0,0
-667903,Youssuf Sylla,2300,Jagiellonia Bialystok,2026,PL1,17,Centre-Forward,23,Belgium,0,0,0,0
-1325371,Zachary Zalewski,2300,Jagiellonia Bialystok,2026,PL1,80,Right Winger,17,Poland,0,0,0,0
-1118876,Maciej Kuczyński,2300,Jagiellonia Bialystok,2026,PL1,90,Right Winger,19,Poland,0,0,0,0
-805834,Sławomir Abramowicz,2300,Jagiellonia Bialystok,2025,PL1,50,Goalkeeper,21,Poland,31,30,0,2700
-965043,Milosz Piekutowski,2300,Jagiellonia Bialystok,2025,PL1,22,Goalkeeper,19,Poland,18,4,0,360
-1205033,Adrian Damasiewicz,2300,Jagiellonia Bialystok,2025,PL1,66,Goalkeeper,16,Poland,21,0,0,0
-690273,Bernardo Vital,2300,Jagiellonia Bialystok,2025,PL1,13,Centre-Back,24,Portugal,31,27,3,2211
-607435,Norbert Wojtuszek,2300,Jagiellonia Bialystok,2025,PL1,15,Right-Back,23,Poland,34,33,1,2413
-494236,Andy Pelmard,2300,Jagiellonia Bialystok,2025,PL1,70,Centre-Back,25,Madagascar,23,18,0,1391
-589013,Bartlomiej Wdowik,2300,Jagiellonia Bialystok,2025,PL1,27,Left-Back,24,Poland,34,29,0,2260
-469688,Dusan Stojinovic,2300,Jagiellonia Bialystok,2025,PL1,3,Centre-Back,24,Slovenia,18,13,0,1030
-554393,Apostolos Konstantopoulos,2300,Jagiellonia Bialystok,2025,PL1,44,Centre-Back,22,Greece,13,7,0,327
-575717,Guilherme Montóia,2300,Jagiellonia Bialystok,2025,PL1,23,Left-Back,21,Portugal,17,14,0,938
-405386,Yuki Kobayashi,2300,Jagiellonia Bialystok,2025,PL1,4,Centre-Back,24,Japan,33,15,1,1040
-355335,Adrián Diéguez,2300,Jagiellonia Bialystok,2025,PL1,0,Centre-Back,29,Spain,1,0,0,0
-705826,Cezary Polak,2300,Jagiellonia Bialystok,2025,PL1,0,Left-Back,22,Poland,15,3,0,45
-500246,Szymon Pankiewicz,2300,Jagiellonia Bialystok,2025,PL1,0,Right-Back,24,Poland,3,0,0,0
-1046873,Bartłomiej Krasiewicz,2300,Jagiellonia Bialystok,2025,PL1,0,Centre-Back,19,Poland,1,0,0,0
-1118873,Bartosz Mazurek,2300,Jagiellonia Bialystok,2025,PL1,86,Attacking Midfield,18,Poland,32,23,1,1428
-889193,AZ Jackson,2300,Jagiellonia Bialystok,2025,PL1,0,Attacking Midfield,23,United States,14,6,0,128
-341277,Sergio Lozano,2300,Jagiellonia Bialystok,2025,PL1,21,Defensive Midfield,26,Spain,23,14,3,609
-391929,Leon Flach,2300,Jagiellonia Bialystok,2025,PL1,31,Defensive Midfield,24,United States,26,20,1,827
-895298,Dawid Drachal,2300,Jagiellonia Bialystok,2025,PL1,8,Attacking Midfield,20,Poland,33,21,1,818
-176423,Jesús Imaz,2300,Jagiellonia Bialystok,2025,PL1,11,Attacking Midfield,34,Spain,33,33,13,2795
-280939,Taras Romanczuk,2300,Jagiellonia Bialystok,2025,PL1,6,Defensive Midfield,33,Poland,32,32,3,2471
-1066230,Eryk Kozłowski,2300,Jagiellonia Bialystok,2025,PL1,85,Defensive Midfield,18,Poland,17,5,0,182
-1162012,Oskar Pietuszewski,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,17,Poland,17,17,3,1075
-410649,Afimico Pululu,2300,Jagiellonia Bialystok,2025,PL1,10,Centre-Forward,26,DR Congo,33,33,15,2361
-341272,Álex Pozo,2300,Jagiellonia Bialystok,2025,PL1,7,Right Winger,26,Spain,33,33,2,2429
-710969,Samed Bazdar,2300,Jagiellonia Bialystok,2025,PL1,14,Centre-Forward,21,Bosnia-Herzegovina,17,15,3,397
-461939,Tomás Silva,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,25,Portugal,1,0,0,0
-263843,Matías Nahuel,2300,Jagiellonia Bialystok,2025,PL1,19,Left Winger,28,Spain,16,16,0,642
-658730,Kajetan Szmyt,2300,Jagiellonia Bialystok,2025,PL1,77,Left Winger,23,Poland,15,14,2,1012
-388465,Louka Prip,2300,Jagiellonia Bialystok,2025,PL1,0,Right Winger,28,Denmark,16,8,0,430
-747953,Dimitris Rallis,2300,Jagiellonia Bialystok,2025,PL1,9,Centre-Forward,20,Greece,30,15,3,407
-638235,Álex Cantero,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,25,Spain,14,7,0,86
-289167,Kamil Jóźwiak,2300,Jagiellonia Bialystok,2025,PL1,72,Left Winger,27,Poland,17,13,0,676
-382970,Miki Villar,2300,Jagiellonia Bialystok,2025,PL1,0,Right Winger,28,Spain,5,1,0,20
-667903,Youssuf Sylla,2300,Jagiellonia Bialystok,2025,PL1,17,Centre-Forward,22,Belgium,24,6,1,104
-1325371,Zachary Zalewski,2300,Jagiellonia Bialystok,2025,PL1,80,Right Winger,16,Poland,10,5,0,55
-861913,Toki Hirosawa,2300,Jagiellonia Bialystok,2025,PL1,0,Left Winger,22,Japan,1,0,0,0
-1118876,Maciej Kuczyński,2300,Jagiellonia Bialystok,2025,PL1,90,Right Winger,18,Poland,2,0,0,0
-278676,Dominik Hladun,168,Zaglebie Lubin,2025,PL1,30,Goalkeeper,29,Poland,11,11,0,977
-78339,Rafał Gikiewicz,168,Zaglebie Lubin,2025,PL1,12,Goalkeeper,37,Poland,23,0,0,0
-28308,Jasmin Buric,168,Zaglebie Lubin,2025,PL1,1,Goalkeeper,38,Bosnia-Herzegovina,32,24,0,2083
-1024787,Adam Matysek,168,Zaglebie Lubin,2025,PL1,22,Goalkeeper,18,Poland,4,0,0,0
-991454,Igor Orlikowski,168,Zaglebie Lubin,2025,PL1,31,Right-Back,19,Poland,25,19,0,1312
-311213,Roman Yakuba,168,Zaglebie Lubin,2025,PL1,3,Centre-Back,24,Ukraine,24,22,0,1684
-385518,Damian Michalski,168,Zaglebie Lubin,2025,PL1,4,Centre-Back,27,Poland,34,23,1,1829
-425739,Aleks Lawniczak,168,Zaglebie Lubin,2025,PL1,5,Centre-Back,26,Poland,20,17,1,1518
-244782,Mateusz Grzybek,168,Zaglebie Lubin,2025,PL1,13,Right-Back,29,Poland,19,14,3,851
-215644,Josip Corluka,168,Zaglebie Lubin,2025,PL1,16,Right-Back,30,Bosnia-Herzegovina,31,25,1,1798
-697437,Bartłomiej Kłudka,168,Zaglebie Lubin,2025,PL1,0,Right-Back,23,Poland,5,5,1,372
-1146116,Kamil Nowogoński,168,Zaglebie Lubin,2025,PL1,0,Right-Back,18,Poland,11,3,0,51
-175947,Michał Nalepa,168,Zaglebie Lubin,2025,PL1,25,Centre-Back,32,Poland,31,31,2,2660
-631448,Kamil Sochań,168,Zaglebie Lubin,2025,PL1,0,Centre-Back,21,Poland,5,0,0,0
-1295655,Maciej Urbański,168,Zaglebie Lubin,2025,PL1,94,Centre-Back,18,Poland,9,0,0,0
-1125761,Marcel Regula,168,Zaglebie Lubin,2025,PL1,44,Attacking Midfield,18,Poland,31,31,5,2165
-555062,Tomasz Pieńko,168,Zaglebie Lubin,2025,PL1,0,Attacking Midfield,21,Poland,1,1,0,29
-820540,Filip Kocaba,168,Zaglebie Lubin,2025,PL1,39,Defensive Midfield,20,Poland,32,31,2,2540
-1064464,Mateusz Dziewiatowski,168,Zaglebie Lubin,2025,PL1,20,Defensive Midfield,18,Poland,34,15,1,549
-631447,Jakub Kolan,168,Zaglebie Lubin,2025,PL1,26,Defensive Midfield,20,Poland,33,19,1,1246
-289168,Sebastian Kowalczyk,168,Zaglebie Lubin,2025,PL1,7,Attacking Midfield,26,Poland,16,9,0,370
-321564,Adam Radwański,168,Zaglebie Lubin,2025,PL1,18,Attacking Midfield,27,Poland,32,31,4,1631
-1150073,Jesús Díaz,168,Zaglebie Lubin,2025,PL1,27,Attacking Midfield,26,Colombia,16,11,1,421
-295495,Mateusz Wdowiak,168,Zaglebie Lubin,2025,PL1,0,Left Midfield,28,Poland,13,11,0,372
-504601,Jakub Sypek,168,Zaglebie Lubin,2025,PL1,19,Attacking Midfield,24,Poland,33,30,3,874
-205929,Luka Lucic,168,Zaglebie Lubin,2025,PL1,35,Left Midfield,30,Croatia,31,24,0,1591
-320961,Tomasz Makowski,168,Zaglebie Lubin,2025,PL1,6,Defensive Midfield,25,Poland,23,13,0,511
-143118,Damian Dąbrowski,168,Zaglebie Lubin,2025,PL1,8,Defensive Midfield,32,Poland,26,25,0,1897
-1046884,Cyprian Popielec,168,Zaglebie Lubin,2025,PL1,99,Attacking Midfield,18,Poland,9,1,0,1
-346547,Marek Mróz,168,Zaglebie Lubin,2025,PL1,0,Attacking Midfield,26,Poland,6,2,0,41
-1212045,Jakub Ligocki,168,Zaglebie Lubin,2025,PL1,84,Attacking Midfield,17,Poland,15,3,0,90
-1345954,Seweryn Marek,168,Zaglebie Lubin,2025,PL1,21,Attacking Midfield,17,Poland,3,0,0,0
-479675,Leonardo Rocha,168,Zaglebie Lubin,2025,PL1,0,Centre-Forward,28,Portugal,11,11,7,803
-658730,Kajetan Szmyt,168,Zaglebie Lubin,2025,PL1,0,Left Winger,23,Poland,18,18,1,1061
-342989,Levente Szabó,168,Zaglebie Lubin,2025,PL1,17,Centre-Forward,26,Hungary,16,16,3,853
-618531,Michalis Kosidis,168,Zaglebie Lubin,2025,PL1,9,Centre-Forward,23,Greece,34,34,6,1257
-697080,Mihael Mlinaric,168,Zaglebie Lubin,2025,PL1,88,Centre-Forward,25,Croatia,11,4,0,65
-144721,Arkadiusz Woźniak,168,Zaglebie Lubin,2025,PL1,11,Right Winger,35,Poland,34,3,0,14
-325448,Sebastian Madejski,5689,Cracovia,2025,PL1,13,Goalkeeper,28,Poland,34,30,0,2700
-325896,Henrich Ravas,5689,Cracovia,2025,PL1,27,Goalkeeper,27,Slovakia,34,4,0,360
-1260503,Konrad Golonka,5689,Cracovia,2025,PL1,91,Goalkeeper,18,Poland,13,0,0,0
-1198430,Konrad Cymerys,5689,Cracovia,2025,PL1,0,Goalkeeper,16,Poland,4,0,0,0
-821350,Oskar Wójcik,5689,Cracovia,2025,PL1,66,Centre-Back,21,Poland,31,31,0,2752
-676266,Mauro Perkovic,5689,Cracovia,2025,PL1,39,Left-Back,22,Croatia,28,27,4,2190
-431698,Bosko Sutalo,5689,Cracovia,2025,PL1,21,Centre-Back,25,Croatia,28,27,0,2195
-214250,Otar Kakabadze,5689,Cracovia,2025,PL1,25,Right-Back,30,Georgia,14,13,2,1066
-368565,Gustav Henriksson,5689,Cracovia,2025,PL1,4,Centre-Back,27,Sweden,30,29,1,2538
-743517,Brahim Traoré,5689,Cracovia,2025,PL1,61,Centre-Back,21,France,26,14,0,906
-687671,Dominik Piła,5689,Cracovia,2025,PL1,79,Right-Back,24,Poland,32,27,0,1953
-313888,Davíd Kristján Ólafsson,5689,Cracovia,2025,PL1,0,Left-Back,30,Iceland,17,7,0,507
-355512,Andreas Skovgaard,5689,Cracovia,2025,PL1,0,Centre-Back,28,Denmark,6,0,0,0
-397854,Patryk Janasik,5689,Cracovia,2025,PL1,0,Right-Back,27,Poland,6,0,0,0
-146712,Jakub Jugas,5689,Cracovia,2025,PL1,0,Centre-Back,33,Czech Republic,14,0,0,0
-46552,Kamil Glik,5689,Cracovia,2025,PL1,15,Centre-Back,37,Poland,19,2,0,5
-522851,Ajdin Hasic,5689,Cracovia,2025,PL1,14,Attacking Midfield,23,Bosnia-Herzegovina,27,27,7,2044
-1143311,Fabian Bzdyl,5689,Cracovia,2025,PL1,0,Attacking Midfield,17,Poland,5,2,0,44
-303766,Amir Al-Ammari,5689,Cracovia,2025,PL1,6,Defensive Midfield,27,Iraq,33,33,1,2507
-942738,Milan Aleksic,5689,Cracovia,2025,PL1,0,Attacking Midfield,19,Serbia,11,6,0,178
-481128,Martin Minchev,5689,Cracovia,2025,PL1,17,Attacking Midfield,24,Bulgaria,30,29,4,1632
-629005,Dijon Kameri,5689,Cracovia,2025,PL1,70,Attacking Midfield,21,Austria,26,22,2,638
-392576,Jani Atanasov,5689,Cracovia,2025,PL1,0,Defensive Midfield,25,North Macedonia,2,2,0,24
-207561,Maxime Dominguez,5689,Cracovia,2025,PL1,10,Attacking Midfield,29,Switzerland,16,13,0,468
-265545,Mikkel Maigaard,5689,Cracovia,2025,PL1,0,Defensive Midfield,29,Denmark,18,18,1,1502
-940220,Beno Selan,5689,Cracovia,2025,PL1,5,Defensive Midfield,20,Slovenia,10,6,0,125
-374418,Mateusz Praszelik,5689,Cracovia,2025,PL1,7,Attacking Midfield,24,Poland,31,24,2,995
-529548,Michal Rakoczy,5689,Cracovia,2025,PL1,0,Attacking Midfield,23,Poland,12,3,0,59
-925747,Bartosz Biedrzycki,5689,Cracovia,2025,PL1,0,Left Midfield,22,Poland,15,4,0,48
-800664,Karol Knap,5689,Cracovia,2025,PL1,20,Defensive Midfield,23,Poland,33,16,0,541
-92738,Mateusz Klich,5689,Cracovia,2025,PL1,43,Defensive Midfield,35,Poland,27,27,1,2051
-991458,Mateusz Skoczylas,5689,Cracovia,2025,PL1,92,Attacking Midfield,18,Poland,0,0,0,0
-1241426,Mateusz Tabisz,5689,Cracovia,2025,PL1,19,Attacking Midfield,17,Poland,16,8,0,180
-464195,Filip Stojilkovic,5689,Cracovia,2025,PL1,0,Centre-Forward,25,Switzerland,18,18,7,1529
-886501,Wiktor Bogacz,5689,Cracovia,2025,PL1,9,Centre-Forward,20,Poland,5,1,0,16
-1061123,Pau Sans,5689,Cracovia,2025,PL1,11,Left Winger,20,Spain,16,14,1,860
-660342,Gabriel Charpentier,5689,Cracovia,2025,PL1,99,Centre-Forward,26,Congo,8,7,2,151
-1163778,Kahveh Zahiroleslam,5689,Cracovia,2025,PL1,18,Centre-Forward,23,United States,29,23,3,611
-1416741,Jean Batoum,5689,Cracovia,2025,PL1,29,Centre-Forward,23,Cameroon,12,6,0,188
-278676,Dominik Hladun,168,Zaglebie Lubin,2026,PL1,30,Goalkeeper,30,Poland,0,0,0,0
-47594,Zlatan Alomerovic,168,Zaglebie Lubin,2026,PL1,33,Goalkeeper,35,Serbia,0,0,0,0
-924895,Michal Matys,168,Zaglebie Lubin,2026,PL1,0,Goalkeeper,20,Poland,0,0,0,0
-28308,Jasmin Buric,168,Zaglebie Lubin,2026,PL1,1,Goalkeeper,39,Bosnia-Herzegovina,0,0,0,0
-1406439,Franciszek Nowak,168,Zaglebie Lubin,2026,PL1,0,Goalkeeper,17,Poland,0,0,0,0
-991454,Igor Orlikowski,168,Zaglebie Lubin,2026,PL1,31,Right-Back,20,Poland,0,0,0,0
-311213,Roman Yakuba,168,Zaglebie Lubin,2026,PL1,3,Centre-Back,25,Ukraine,0,0,0,0
-371000,David Colina,168,Zaglebie Lubin,2026,PL1,6,Left-Back,26,Croatia,0,0,0,0
-385518,Damian Michalski,168,Zaglebie Lubin,2026,PL1,4,Centre-Back,28,Poland,0,0,0,0
-425739,Aleks Lawniczak,168,Zaglebie Lubin,2026,PL1,5,Centre-Back,27,Poland,0,0,0,0
-244782,Mateusz Grzybek,168,Zaglebie Lubin,2026,PL1,13,Right-Back,30,Poland,0,0,0,0
-215644,Josip Corluka,168,Zaglebie Lubin,2026,PL1,16,Right-Back,31,Bosnia-Herzegovina,0,0,0,0
-820541,Szymon Karasiński,168,Zaglebie Lubin,2026,PL1,38,Left-Back,22,Poland,0,0,0,0
-1146116,Kamil Nowogoński,168,Zaglebie Lubin,2026,PL1,0,Right-Back,19,Poland,0,0,0,0
-175947,Michał Nalepa,168,Zaglebie Lubin,2026,PL1,25,Centre-Back,33,Poland,0,0,0,0
-1295655,Maciej Urbański,168,Zaglebie Lubin,2026,PL1,94,Centre-Back,19,Poland,0,0,0,0
-1125761,Marcel Regula,168,Zaglebie Lubin,2026,PL1,44,Attacking Midfield,19,Poland,0,0,0,0
-820540,Filip Kocaba,168,Zaglebie Lubin,2026,PL1,39,Defensive Midfield,21,Poland,0,0,0,0
-1064464,Mateusz Dziewiatowski,168,Zaglebie Lubin,2026,PL1,20,Defensive Midfield,19,Poland,0,0,0,0
-631447,Jakub Kolan,168,Zaglebie Lubin,2026,PL1,26,Defensive Midfield,21,Poland,0,0,0,0
-504601,Jakub Sypek,168,Zaglebie Lubin,2026,PL1,19,Attacking Midfield,25,Poland,0,0,0,0
-124517,Sebastian Kerk,168,Zaglebie Lubin,2026,PL1,37,Attacking Midfield,32,Germany,0,0,0,0
-143118,Damian Dąbrowski,168,Zaglebie Lubin,2026,PL1,8,Defensive Midfield,33,Poland,0,0,0,0
-1046884,Cyprian Popielec,168,Zaglebie Lubin,2026,PL1,99,Attacking Midfield,19,Poland,0,0,0,0
-1212045,Jakub Ligocki,168,Zaglebie Lubin,2026,PL1,84,Attacking Midfield,18,Poland,0,0,0,0
-1521588,Patryk Dziekoński,168,Zaglebie Lubin,2026,PL1,0,Midfield,17,Poland,0,0,0,0
-1345954,Seweryn Marek,168,Zaglebie Lubin,2026,PL1,21,Attacking Midfield,18,Poland,0,0,0,0
-554972,Filip Szymczak,168,Zaglebie Lubin,2026,PL1,18,Right Winger,24,Poland,0,0,0,0
-342989,Levente Szabó,168,Zaglebie Lubin,2026,PL1,17,Centre-Forward,27,Hungary,0,0,0,0
-618531,Michalis Kosidis,168,Zaglebie Lubin,2026,PL1,9,Centre-Forward,24,Greece,0,0,0,0
-1108661,Szymon Łyczko,168,Zaglebie Lubin,2026,PL1,19,Right Winger,20,Poland,0,0,0,0
-697080,Mihael Mlinaric,168,Zaglebie Lubin,2026,PL1,88,Centre-Forward,26,Croatia,0,0,0,0
-144721,Arkadiusz Woźniak,168,Zaglebie Lubin,2026,PL1,11,Right Winger,36,Poland,0,0,0,0
-1168850,Paweł Kosmalski,168,Zaglebie Lubin,2026,PL1,77,Centre-Forward,20,Poland,0,0,0,0
-325448,Sebastian Madejski,5689,Cracovia,2026,PL1,13,Goalkeeper,29,Poland,0,0,0,0
-325896,Henrich Ravas,5689,Cracovia,2026,PL1,27,Goalkeeper,28,Slovakia,0,0,0,0
-1260503,Konrad Golonka,5689,Cracovia,2026,PL1,91,Goalkeeper,19,Poland,0,0,0,0
-676266,Mauro Perkovic,5689,Cracovia,2026,PL1,39,Left-Back,23,Croatia,0,0,0,0
-214250,Otar Kakabadze,5689,Cracovia,2026,PL1,25,Right-Back,31,Georgia,0,0,0,0
-920939,Vincent Burlet,5689,Cracovia,2026,PL1,0,Left-Back,20,Belgium,0,0,0,0
-368565,Gustav Henriksson,5689,Cracovia,2026,PL1,4,Centre-Back,28,Sweden,0,0,0,0
-206906,Dominik Baumgartner,5689,Cracovia,2026,PL1,0,Centre-Back,30,Austria,0,0,0,0
-743517,Brahim Traoré,5689,Cracovia,2026,PL1,61,Centre-Back,22,France,0,0,0,0
-687671,Dominik Piła,5689,Cracovia,2026,PL1,79,Right-Back,25,Poland,0,0,0,0
-46552,Kamil Glik,5689,Cracovia,2026,PL1,15,Centre-Back,38,Poland,0,0,0,0
-522851,Ajdin Hasic,5689,Cracovia,2026,PL1,14,Attacking Midfield,24,Bosnia-Herzegovina,0,0,0,0
-555106,Filip Marchwiński,5689,Cracovia,2026,PL1,10,Attacking Midfield,24,Poland,0,0,0,0
-303766,Amir Al-Ammari,5689,Cracovia,2026,PL1,6,Defensive Midfield,28,Iraq,0,0,0,0
-481128,Martin Minchev,5689,Cracovia,2026,PL1,17,Attacking Midfield,25,Bulgaria,0,0,0,0
-629005,Dijon Kameri,5689,Cracovia,2026,PL1,70,Attacking Midfield,22,Austria,0,0,0,0
-940220,Beno Selan,5689,Cracovia,2026,PL1,5,Defensive Midfield,21,Slovenia,0,0,0,0
-374418,Mateusz Praszelik,5689,Cracovia,2026,PL1,7,Attacking Midfield,25,Poland,0,0,0,0
-800664,Karol Knap,5689,Cracovia,2026,PL1,20,Defensive Midfield,24,Poland,0,0,0,0
-92738,Mateusz Klich,5689,Cracovia,2026,PL1,43,Defensive Midfield,36,Poland,0,0,0,0
-991458,Mateusz Skoczylas,5689,Cracovia,2026,PL1,92,Attacking Midfield,19,Poland,0,0,0,0
-1241426,Mateusz Tabisz,5689,Cracovia,2026,PL1,19,Attacking Midfield,18,Poland,0,0,0,0
-1142182,Alex Marciniak,5689,Cracovia,2026,PL1,0,Attacking Midfield,18,Wales,0,0,0,0
-1297028,Wiktor Dej,5689,Cracovia,2026,PL1,0,Defensive Midfield,18,Poland,0,0,0,0
-886501,Wiktor Bogacz,5689,Cracovia,2026,PL1,9,Centre-Forward,22,Poland,0,0,0,0
-1163778,Kahveh Zahiroleslam,5689,Cracovia,2026,PL1,18,Centre-Forward,24,United States,0,0,0,0
-925777,Kacper Śmiglewski,5689,Cracovia,2026,PL1,0,Centre-Forward,21,Poland,0,0,0,0
-699400,Xavier Dziekoński,6110,Korona Kielce,2026,PL1,1,Goalkeeper,22,Poland,0,0,0,0
-727318,Rafał Mamla,6110,Korona Kielce,2026,PL1,87,Goalkeeper,22,Poland,0,0,0,0
-1070002,Michał Niedbała,6110,Korona Kielce,2026,PL1,22,Goalkeeper,20,Poland,0,0,0,0
-1334268,Michał Mikielewicz,6110,Korona Kielce,2026,PL1,12,Goalkeeper,17,Poland,0,0,0,0
-246607,Konstantinos Sotiriou,6110,Korona Kielce,2026,PL1,44,Centre-Back,30,Cyprus,0,0,0,0
-554288,Ariel Mosór,6110,Korona Kielce,2026,PL1,2,Centre-Back,23,Poland,0,0,0,0
-585080,Marcel Pięczek,6110,Korona Kielce,2026,PL1,6,Centre-Back,25,Poland,0,0,0,0
-617460,Slobodan Rubežić,6110,Korona Kielce,2026,PL1,23,Centre-Back,26,Montenegro,0,0,0,0
-685445,Bartłomiej Smolarczyk,6110,Korona Kielce,2026,PL1,24,Centre-Back,23,Poland,0,0,0,0
-991322,Norbert Barczak,6110,Korona Kielce,2026,PL1,67,Right-Back,20,Poland,0,0,0,0
-1334931,Igor Chmielewski,6110,Korona Kielce,2026,PL1,26,Defender,18,Poland,0,0,0,0
-339070,Patrik Hellebrand,6110,Korona Kielce,2026,PL1,18,Defensive Midfield,27,Czech Republic,0,0,0,0
-469695,Tamar Svetlin,6110,Korona Kielce,2026,PL1,88,Defensive Midfield,24,Slovenia,0,0,0,0
-929467,Kamil Jakubczyk,6110,Korona Kielce,2026,PL1,35,Defensive Midfield,21,Poland,0,0,0,0
-309847,Martin Remacle,6110,Korona Kielce,2026,PL1,8,Defensive Midfield,29,Belgium,0,0,0,0
-453156,Wiktor Długosz,6110,Korona Kielce,2026,PL1,71,Right Midfield,26,Poland,0,0,0,0
-370555,Dawid Błanik,6110,Korona Kielce,2026,PL1,7,Attacking Midfield,29,Poland,0,0,0,0
-1157482,Stjepan Davidovic,6110,Korona Kielce,2026,PL1,9,Attacking Midfield,21,Croatia,0,0,0,0
-255474,Simon Gustafson,6110,Korona Kielce,2026,PL1,86,Attacking Midfield,31,Sweden,0,0,0,0
-401599,Konrad Matuszewski,6110,Korona Kielce,2026,PL1,11,Left Midfield,24,Poland,0,0,0,0
-825588,Hubert Zwoźny,6110,Korona Kielce,2026,PL1,37,Right Midfield,22,Poland,0,0,0,0
-723613,Miłosz Strzeboński,6110,Korona Kielce,2026,PL1,0,Defensive Midfield,22,Poland,0,0,0,0
-152776,Nono,6110,Korona Kielce,2026,PL1,10,Defensive Midfield,35,Spain,0,0,0,0
-1291336,Konrad Ciszek,6110,Korona Kielce,2026,PL1,21,Left Midfield,18,Poland,0,0,0,0
-683545,Wojciech Kamiński,6110,Korona Kielce,2026,PL1,27,Defensive Midfield,25,Poland,0,0,0,0
-1211585,Kacper Minuczyc,6110,Korona Kielce,2026,PL1,20,Attacking Midfield,18,Poland,0,0,0,0
-911500,Adam Chojecki,6110,Korona Kielce,2026,PL1,0,Attacking Midfield,21,Poland,0,0,0,0
-1167760,Kornel Toboła,6110,Korona Kielce,2026,PL1,15,Central Midfield,19,Poland,0,0,0,0
-1165326,Adam Hańćko,6110,Korona Kielce,2026,PL1,19,Attacking Midfield,17,Poland,0,0,0,0
-210363,Mariusz Stępiński,6110,Korona Kielce,2026,PL1,14,Centre-Forward,31,Poland,0,0,0,0
-1046816,Daniel Bąk,6110,Korona Kielce,2026,PL1,99,Centre-Forward,20,Poland,0,0,0,0
-1046338,Mateusz Głowiński,6110,Korona Kielce,2026,PL1,17,Centre-Forward,20,Poland,0,0,0,0
-699400,Xavier Dziekoński,6110,Korona Kielce,2025,PL1,1,Goalkeeper,21,Poland,34,34,0,3060
-727318,Rafał Mamla,6110,Korona Kielce,2025,PL1,87,Goalkeeper,21,Poland,33,0,0,0
-1070002,Michał Niedbała,6110,Korona Kielce,2025,PL1,22,Goalkeeper,19,Poland,2,0,0,0
-1334268,Michał Mikielewicz,6110,Korona Kielce,2025,PL1,12,Goalkeeper,16,Poland,1,0,0,0
-627717,Pau Resta,6110,Korona Kielce,2025,PL1,0,Centre-Back,24,Spain,30,24,2,2058
-246607,Konstantinos Sotiriou,6110,Korona Kielce,2025,PL1,44,Centre-Back,29,Cyprus,32,29,5,2464
-585080,Marcel Pięczek,6110,Korona Kielce,2025,PL1,6,Centre-Back,24,Poland,33,32,4,2384
-617460,Slobodan Rubežić,6110,Korona Kielce,2025,PL1,23,Centre-Back,25,Montenegro,28,12,0,1035
-685445,Bartłomiej Smolarczyk,6110,Korona Kielce,2025,PL1,24,Centre-Back,21,Poland,32,19,1,1574
-634145,Viktor Popov,6110,Korona Kielce,2025,PL1,26,Right-Back,25,Bulgaria,25,8,0,487
-1042674,Jakub Budnicki,6110,Korona Kielce,2025,PL1,0,Centre-Back,23,Poland,14,6,0,380
-469695,Tamar Svetlin,6110,Korona Kielce,2025,PL1,88,Defensive Midfield,23,Slovenia,33,33,1,2890
-309847,Martin Remacle,6110,Korona Kielce,2025,PL1,8,Defensive Midfield,28,Belgium,33,33,3,2444
-453156,Wiktor Długosz,6110,Korona Kielce,2025,PL1,71,Right Midfield,25,Poland,27,26,3,2067
-370555,Dawid Błanik,6110,Korona Kielce,2025,PL1,7,Attacking Midfield,28,Poland,30,27,9,1898
-1157482,Stjepan Davidovic,6110,Korona Kielce,2025,PL1,9,Attacking Midfield,20,Croatia,32,29,2,1288
-255474,Simon Gustafson,6110,Korona Kielce,2025,PL1,86,Attacking Midfield,30,Sweden,16,14,0,639
-401599,Konrad Matuszewski,6110,Korona Kielce,2025,PL1,3,Left Midfield,23,Poland,30,27,2,1970
-825588,Hubert Zwoźny,6110,Korona Kielce,2025,PL1,37,Right Midfield,21,Poland,32,19,0,961
-555110,Nikodem Niski,6110,Korona Kielce,2025,PL1,15,Left Midfield,23,Poland,26,19,0,394
-723613,Miłosz Strzeboński,6110,Korona Kielce,2025,PL1,0,Defensive Midfield,21,Poland,18,7,0,74
-152776,Nono,6110,Korona Kielce,2025,PL1,10,Defensive Midfield,34,Spain,32,26,0,1004
-1291336,Konrad Ciszek,6110,Korona Kielce,2025,PL1,21,Left Midfield,17,Poland,22,5,0,248
-683545,Wojciech Kamiński,6110,Korona Kielce,2025,PL1,27,Defensive Midfield,24,Poland,21,10,0,414
-239215,Marcin Cebula,6110,Korona Kielce,2025,PL1,77,Attacking Midfield,29,Poland,14,8,0,184
-1211585,Kacper Minuczyc,6110,Korona Kielce,2025,PL1,20,Attacking Midfield,17,Poland,11,2,0,10
-1165326,Adam Hańćko,6110,Korona Kielce,2025,PL1,19,Attacking Midfield,16,Poland,3,1,0,2
-210363,Mariusz Stępiński,6110,Korona Kielce,2025,PL1,14,Centre-Forward,30,Poland,15,15,4,1236
-610336,Antoñín,6110,Korona Kielce,2025,PL1,70,Centre-Forward,25,Spain,29,29,3,1654
-475431,Vladimir Nikolov,6110,Korona Kielce,2025,PL1,11,Centre-Forward,24,Bulgaria,32,25,0,647
-1046816,Daniel Bąk,6110,Korona Kielce,2025,PL1,0,Centre-Forward,19,Poland,1,0,0,0
-1046338,Mateusz Głowiński,6110,Korona Kielce,2025,PL1,17,Centre-Forward,19,Poland,4,2,0,16
+200616,Valentin Cojocaru,324,Pogon Szczecin,2026,PL1,77,Goalkeeper,30,Romania,1,1,0,90
+735364,Nikolaos Botis,324,Pogon Szczecin,2026,PL1,31,Goalkeeper,22,Greece,0,0,0,0
+999090,Axel Holewiński,324,Pogon Szczecin,2026,PL1,83,Goalkeeper,20,Poland,0,0,0,0
+1261639,Alex Peskovic,324,Pogon Szczecin,2026,PL1,33,Goalkeeper,16,Slovakia,1,0,0,0
+861192,Dimitrios Keramitsis,324,Pogon Szczecin,2026,PL1,13,Centre-Back,22,Greece,1,1,0,90
+263380,Attila Szalai,324,Pogon Szczecin,2026,PL1,41,Centre-Back,28,Hungary,1,1,0,90
+681692,Léo Borges,324,Pogon Szczecin,2026,PL1,4,Left-Back,25,Brazil,1,1,0,90
+249125,Linus Wahlqvist,324,Pogon Szczecin,2026,PL1,28,Right-Back,29,Sweden,1,1,0,90
+585325,Hussein Ali,324,Pogon Szczecin,2026,PL1,15,Right-Back,24,Iraq,1,0,0,0
+157495,Benjamin Mendy,324,Pogon Szczecin,2026,PL1,23,Left-Back,32,France,1,0,0,0
+1402442,Andrzej Ossowski,324,Pogon Szczecin,2026,PL1,75,Centre-Back,17,Poland,1,0,0,0
+189895,Kellyn Acosta,324,Pogon Szczecin,2026,PL1,3,Defensive Midfield,31,United States,1,1,0,90
+289165,Patryk Dziczek,324,Pogon Szczecin,2026,PL1,16,Defensive Midfield,28,Poland,1,1,0,90
+1428280,Natan Ława,324,Pogon Szczecin,2026,PL1,47,Attacking Midfield,17,Poland,1,1,0,62
+566355,Jan Biegański,324,Pogon Szczecin,2026,PL1,6,Defensive Midfield,23,Poland,1,1,0,1
+195605,José Pozo,324,Pogon Szczecin,2026,PL1,88,Attacking Midfield,30,Spain,0,0,0,0
+658737,Mor Ndiaye,324,Pogon Szczecin,2026,PL1,19,Defensive Midfield,25,Senegal,1,0,0,0
+158022,Fredrik Ulvestad,324,Pogon Szczecin,2026,PL1,8,Defensive Midfield,34,Norway,1,1,0,28
+1149462,Maciej Wojciechowski,324,Pogon Szczecin,2026,PL1,35,Attacking Midfield,19,Poland,1,0,0,0
+707499,Igor Brzyski,324,Pogon Szczecin,2026,PL1,20,Defensive Midfield,19,Poland,0,0,0,0
+386786,Darko Churlinov,324,Pogon Szczecin,2026,PL1,21,Left Winger,26,North Macedonia,0,0,0,0
+667914,Paul Mukairu,324,Pogon Szczecin,2026,PL1,18,Right Winger,26,Nigeria,1,1,0,90
+793873,Mads Agger,324,Pogon Szczecin,2026,PL1,25,Right Winger,26,Denmark,1,1,0,28
+662609,Rajmund Molnár,324,Pogon Szczecin,2026,PL1,9,Centre-Forward,23,Hungary,0,0,0,0
+921552,Filip Cuic,324,Pogon Szczecin,2026,PL1,10,Centre-Forward,23,Bosnia-Herzegovina,1,1,0,1
+562030,Musa Juwara,324,Pogon Szczecin,2026,PL1,7,Right Winger,24,The Gambia,1,1,0,62
+253290,Karol Angielski,324,Pogon Szczecin,2026,PL1,24,Centre-Forward,30,Poland,0,0,0,0
+225055,Jean-Pierre Nsame,324,Pogon Szczecin,2026,PL1,17,Centre-Forward,33,Cameroon,1,1,0,62
+1149461,Patryk Paryzek,324,Pogon Szczecin,2026,PL1,42,Centre-Forward,20,Poland,0,0,0,0
+37920,Kamil Grosicki,324,Pogon Szczecin,2026,PL1,11,Left Winger,38,Poland,1,1,0,28
+1038684,Jacek Czapliński,324,Pogon Szczecin,2026,PL1,30,Left Winger,19,Poland,1,0,0,0
 200616,Valentin Cojocaru,324,Pogon Szczecin,2025,PL1,77,Goalkeeper,29,Romania,33,31,0,2775
 999090,Axel Holewiński,324,Pogon Szczecin,2025,PL1,83,Goalkeeper,19,Poland,0,0,0,0
 172874,Krzysztof Kamiński,324,Pogon Szczecin,2025,PL1,31,Goalkeeper,34,Poland,34,4,0,285
@@ -3404,92 +3252,298 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 716547,Mateusz Bąk,324,Pogon Szczecin,2025,PL1,0,Left Winger,22,Poland,3,0,0,0
 1413392,Sebastian Rojek,324,Pogon Szczecin,2025,PL1,21,Right Winger,15,Poland,3,0,0,0
 1434640,Kacper Stanowski,324,Pogon Szczecin,2025,PL1,37,Centre-Forward,17,Poland,2,0,0,0
-200616,Valentin Cojocaru,324,Pogon Szczecin,2026,PL1,77,Goalkeeper,30,Romania,0,0,0,0
-735364,Nikolaos Botis,324,Pogon Szczecin,2026,PL1,31,Goalkeeper,22,Greece,0,0,0,0
-999090,Axel Holewiński,324,Pogon Szczecin,2026,PL1,83,Goalkeeper,20,Poland,0,0,0,0
-1261639,Alex Peskovic,324,Pogon Szczecin,2026,PL1,33,Goalkeeper,16,Slovakia,0,0,0,0
-861192,Dimitrios Keramitsis,324,Pogon Szczecin,2026,PL1,13,Centre-Back,22,Greece,0,0,0,0
-263380,Attila Szalai,324,Pogon Szczecin,2026,PL1,41,Centre-Back,28,Hungary,0,0,0,0
-681692,Léo Borges,324,Pogon Szczecin,2026,PL1,4,Left-Back,25,Brazil,0,0,0,0
-249125,Linus Wahlqvist,324,Pogon Szczecin,2026,PL1,28,Right-Back,29,Sweden,0,0,0,0
-585325,Hussein Ali,324,Pogon Szczecin,2026,PL1,15,Right-Back,24,Iraq,0,0,0,0
-157495,Benjamin Mendy,324,Pogon Szczecin,2026,PL1,23,Left-Back,32,France,0,0,0,0
-1402442,Andrzej Ossowski,324,Pogon Szczecin,2026,PL1,0,Centre-Back,17,Poland,0,0,0,0
-1149465,Rafał Jakubowski,324,Pogon Szczecin,2026,PL1,38,Centre-Back,19,Poland,0,0,0,0
-189895,Kellyn Acosta,324,Pogon Szczecin,2026,PL1,3,Defensive Midfield,30,United States,0,0,0,0
-289165,Patryk Dziczek,324,Pogon Szczecin,2026,PL1,16,Defensive Midfield,28,Poland,0,0,0,0
-1428280,Natan Ława,324,Pogon Szczecin,2026,PL1,47,Attacking Midfield,17,Poland,0,0,0,0
-566355,Jan Biegański,324,Pogon Szczecin,2026,PL1,6,Defensive Midfield,23,Poland,0,0,0,0
-195605,José Pozo,324,Pogon Szczecin,2026,PL1,14,Attacking Midfield,30,Spain,0,0,0,0
-658737,Mor Ndiaye,324,Pogon Szczecin,2026,PL1,19,Defensive Midfield,25,Senegal,0,0,0,0
-158022,Fredrik Ulvestad,324,Pogon Szczecin,2026,PL1,8,Defensive Midfield,34,Norway,0,0,0,0
-1149462,Maciej Wojciechowski,324,Pogon Szczecin,2026,PL1,35,Attacking Midfield,19,Poland,0,0,0,0
-707499,Igor Brzyski,324,Pogon Szczecin,2026,PL1,20,Defensive Midfield,19,Poland,0,0,0,0
-667914,Paul Mukairu,324,Pogon Szczecin,2026,PL1,18,Right Winger,26,Nigeria,0,0,0,0
-793873,Mads Agger,324,Pogon Szczecin,2026,PL1,25,Right Winger,26,Denmark,0,0,0,0
-662609,Rajmund Molnár,324,Pogon Szczecin,2026,PL1,9,Centre-Forward,23,Hungary,0,0,0,0
-921552,Filip Cuic,324,Pogon Szczecin,2026,PL1,10,Centre-Forward,23,Bosnia-Herzegovina,0,0,0,0
-562030,Musa Juwara,324,Pogon Szczecin,2026,PL1,7,Right Winger,24,The Gambia,0,0,0,0
-253290,Karol Angielski,324,Pogon Szczecin,2026,PL1,24,Centre-Forward,30,Poland,0,0,0,0
-225055,Jean-Pierre Nsame,324,Pogon Szczecin,2026,PL1,17,Centre-Forward,33,Cameroon,0,0,0,0
-1149461,Patryk Paryzek,324,Pogon Szczecin,2026,PL1,54,Centre-Forward,20,Poland,0,0,0,0
-37920,Kamil Grosicki,324,Pogon Szczecin,2026,PL1,11,Left Winger,38,Poland,0,0,0,0
-1038684,Jacek Czapliński,324,Pogon Szczecin,2026,PL1,30,Left Winger,19,Poland,0,0,0,0
-623412,Mihai Popa,3527,Motor Lublin,2026,PL1,71,Goalkeeper,25,Romania,0,0,0,0
-689207,Gasper Tratnik,3527,Motor Lublin,2026,PL1,33,Goalkeeper,26,Slovenia,0,0,0,0
-1112174,Oskar Jez,3527,Motor Lublin,2026,PL1,0,Goalkeeper,19,Poland,0,0,0,0
+325448,Sebastian Madejski,5689,Cracovia,2025,PL1,13,Goalkeeper,28,Poland,34,30,0,2700
+325896,Henrich Ravas,5689,Cracovia,2025,PL1,27,Goalkeeper,27,Slovakia,34,4,0,360
+1260503,Konrad Golonka,5689,Cracovia,2025,PL1,91,Goalkeeper,18,Poland,13,0,0,0
+1198430,Konrad Cymerys,5689,Cracovia,2025,PL1,0,Goalkeeper,16,Poland,4,0,0,0
+821350,Oskar Wójcik,5689,Cracovia,2025,PL1,66,Centre-Back,21,Poland,31,31,0,2752
+676266,Mauro Perkovic,5689,Cracovia,2025,PL1,39,Left-Back,22,Croatia,28,27,4,2190
+431698,Bosko Sutalo,5689,Cracovia,2025,PL1,21,Centre-Back,25,Croatia,28,27,0,2195
+214250,Otar Kakabadze,5689,Cracovia,2025,PL1,25,Right-Back,30,Georgia,14,13,2,1066
+368565,Gustav Henriksson,5689,Cracovia,2025,PL1,4,Centre-Back,27,Sweden,30,29,1,2538
+743517,Brahim Traoré,5689,Cracovia,2025,PL1,61,Centre-Back,21,France,26,14,0,906
+687671,Dominik Piła,5689,Cracovia,2025,PL1,79,Right-Back,24,Poland,32,27,0,1953
+313888,Davíd Kristján Ólafsson,5689,Cracovia,2025,PL1,0,Left-Back,30,Iceland,17,7,0,507
+355512,Andreas Skovgaard,5689,Cracovia,2025,PL1,0,Centre-Back,28,Denmark,6,0,0,0
+397854,Patryk Janasik,5689,Cracovia,2025,PL1,0,Right-Back,27,Poland,6,0,0,0
+146712,Jakub Jugas,5689,Cracovia,2025,PL1,0,Centre-Back,33,Czech Republic,14,0,0,0
+46552,Kamil Glik,5689,Cracovia,2025,PL1,15,Centre-Back,37,Poland,19,2,0,5
+522851,Ajdin Hasic,5689,Cracovia,2025,PL1,14,Attacking Midfield,23,Bosnia-Herzegovina,27,27,7,2044
+1143311,Fabian Bzdyl,5689,Cracovia,2025,PL1,0,Attacking Midfield,17,Poland,5,2,0,44
+303766,Amir Al-Ammari,5689,Cracovia,2025,PL1,6,Defensive Midfield,27,Iraq,33,33,1,2507
+942738,Milan Aleksic,5689,Cracovia,2025,PL1,0,Attacking Midfield,19,Serbia,11,6,0,178
+481128,Martin Minchev,5689,Cracovia,2025,PL1,17,Attacking Midfield,24,Bulgaria,30,29,4,1632
+629005,Dijon Kameri,5689,Cracovia,2025,PL1,70,Attacking Midfield,21,Austria,26,22,2,638
+392576,Jani Atanasov,5689,Cracovia,2025,PL1,0,Defensive Midfield,25,North Macedonia,2,2,0,24
+207561,Maxime Dominguez,5689,Cracovia,2025,PL1,10,Attacking Midfield,29,Switzerland,16,13,0,468
+265545,Mikkel Maigaard,5689,Cracovia,2025,PL1,0,Defensive Midfield,29,Denmark,18,18,1,1502
+940220,Beno Selan,5689,Cracovia,2025,PL1,5,Defensive Midfield,20,Slovenia,10,6,0,125
+374418,Mateusz Praszelik,5689,Cracovia,2025,PL1,7,Attacking Midfield,24,Poland,31,24,2,995
+529548,Michal Rakoczy,5689,Cracovia,2025,PL1,0,Attacking Midfield,23,Poland,12,3,0,59
+925747,Bartosz Biedrzycki,5689,Cracovia,2025,PL1,0,Left Midfield,22,Poland,15,4,0,48
+800664,Karol Knap,5689,Cracovia,2025,PL1,20,Defensive Midfield,23,Poland,33,16,0,541
+92738,Mateusz Klich,5689,Cracovia,2025,PL1,43,Defensive Midfield,35,Poland,27,27,1,2051
+991458,Mateusz Skoczylas,5689,Cracovia,2025,PL1,92,Attacking Midfield,18,Poland,0,0,0,0
+1241426,Mateusz Tabisz,5689,Cracovia,2025,PL1,19,Attacking Midfield,17,Poland,16,8,0,180
+464195,Filip Stojilkovic,5689,Cracovia,2025,PL1,0,Centre-Forward,25,Switzerland,18,18,7,1529
+886501,Wiktor Bogacz,5689,Cracovia,2025,PL1,9,Centre-Forward,20,Poland,5,1,0,16
+1061123,Pau Sans,5689,Cracovia,2025,PL1,11,Left Winger,20,Spain,16,14,1,860
+660342,Gabriel Charpentier,5689,Cracovia,2025,PL1,99,Centre-Forward,26,Congo,8,7,2,151
+1163778,Kahveh Zahiroleslam,5689,Cracovia,2025,PL1,18,Centre-Forward,23,United States,29,23,3,611
+1416741,Jean Batoum,5689,Cracovia,2025,PL1,29,Centre-Forward,23,Cameroon,12,6,0,188
+278676,Dominik Hladun,168,Zaglebie Lubin,2025,PL1,30,Goalkeeper,29,Poland,11,11,0,977
+78339,Rafał Gikiewicz,168,Zaglebie Lubin,2025,PL1,12,Goalkeeper,37,Poland,23,0,0,0
+28308,Jasmin Buric,168,Zaglebie Lubin,2025,PL1,1,Goalkeeper,38,Bosnia-Herzegovina,32,24,0,2083
+1024787,Adam Matysek,168,Zaglebie Lubin,2025,PL1,22,Goalkeeper,18,Poland,4,0,0,0
+991454,Igor Orlikowski,168,Zaglebie Lubin,2025,PL1,31,Right-Back,19,Poland,25,19,0,1312
+311213,Roman Yakuba,168,Zaglebie Lubin,2025,PL1,3,Centre-Back,24,Ukraine,24,22,0,1684
+385518,Damian Michalski,168,Zaglebie Lubin,2025,PL1,4,Centre-Back,27,Poland,34,23,1,1829
+425739,Aleks Lawniczak,168,Zaglebie Lubin,2025,PL1,5,Centre-Back,26,Poland,20,17,1,1518
+244782,Mateusz Grzybek,168,Zaglebie Lubin,2025,PL1,13,Right-Back,29,Poland,19,14,3,851
+215644,Josip Corluka,168,Zaglebie Lubin,2025,PL1,16,Right-Back,30,Bosnia-Herzegovina,31,25,1,1798
+697437,Bartłomiej Kłudka,168,Zaglebie Lubin,2025,PL1,0,Right-Back,23,Poland,5,5,1,372
+1146116,Kamil Nowogoński,168,Zaglebie Lubin,2025,PL1,0,Right-Back,18,Poland,11,3,0,51
+175947,Michał Nalepa,168,Zaglebie Lubin,2025,PL1,25,Centre-Back,32,Poland,31,31,2,2660
+631448,Kamil Sochań,168,Zaglebie Lubin,2025,PL1,0,Centre-Back,21,Poland,5,0,0,0
+1295655,Maciej Urbański,168,Zaglebie Lubin,2025,PL1,94,Centre-Back,18,Poland,9,0,0,0
+1125761,Marcel Regula,168,Zaglebie Lubin,2025,PL1,44,Attacking Midfield,18,Poland,31,31,5,2165
+555062,Tomasz Pieńko,168,Zaglebie Lubin,2025,PL1,0,Attacking Midfield,21,Poland,1,1,0,29
+820540,Filip Kocaba,168,Zaglebie Lubin,2025,PL1,39,Defensive Midfield,20,Poland,32,31,2,2540
+1064464,Mateusz Dziewiatowski,168,Zaglebie Lubin,2025,PL1,20,Defensive Midfield,18,Poland,34,15,1,549
+631447,Jakub Kolan,168,Zaglebie Lubin,2025,PL1,26,Defensive Midfield,20,Poland,33,19,1,1246
+289168,Sebastian Kowalczyk,168,Zaglebie Lubin,2025,PL1,7,Attacking Midfield,26,Poland,16,9,0,370
+321564,Adam Radwański,168,Zaglebie Lubin,2025,PL1,18,Central Midfield,27,Poland,32,31,4,1631
+1150073,Jesús Díaz,168,Zaglebie Lubin,2025,PL1,27,Attacking Midfield,26,Colombia,16,11,1,421
+295495,Mateusz Wdowiak,168,Zaglebie Lubin,2025,PL1,0,Left Midfield,28,Poland,13,11,0,372
+504601,Jakub Sypek,168,Zaglebie Lubin,2025,PL1,19,Attacking Midfield,24,Poland,33,30,3,874
+205929,Luka Lucic,168,Zaglebie Lubin,2025,PL1,35,Left Midfield,30,Croatia,31,24,0,1591
+320961,Tomasz Makowski,168,Zaglebie Lubin,2025,PL1,6,Defensive Midfield,25,Poland,23,13,0,511
+143118,Damian Dąbrowski,168,Zaglebie Lubin,2025,PL1,8,Defensive Midfield,32,Poland,26,25,0,1897
+1046884,Cyprian Popielec,168,Zaglebie Lubin,2025,PL1,99,Attacking Midfield,18,Poland,9,1,0,1
+346547,Marek Mróz,168,Zaglebie Lubin,2025,PL1,0,Attacking Midfield,26,Poland,6,2,0,41
+1212045,Jakub Ligocki,168,Zaglebie Lubin,2025,PL1,84,Attacking Midfield,17,Poland,15,3,0,90
+1345954,Seweryn Marek,168,Zaglebie Lubin,2025,PL1,21,Attacking Midfield,17,Poland,3,0,0,0
+479675,Leonardo Rocha,168,Zaglebie Lubin,2025,PL1,0,Centre-Forward,28,Portugal,11,11,7,803
+658730,Kajetan Szmyt,168,Zaglebie Lubin,2025,PL1,0,Left Winger,23,Poland,18,18,1,1061
+342989,Levente Szabó,168,Zaglebie Lubin,2025,PL1,17,Centre-Forward,26,Hungary,16,16,3,853
+618531,Michalis Kosidis,168,Zaglebie Lubin,2025,PL1,9,Centre-Forward,23,Greece,34,34,6,1257
+697080,Mihael Mlinaric,168,Zaglebie Lubin,2025,PL1,88,Centre-Forward,25,Croatia,11,4,0,65
+144721,Arkadiusz Woźniak,168,Zaglebie Lubin,2025,PL1,11,Right Winger,35,Poland,34,3,0,14
+699400,Xavier Dziekoński,6110,Korona Kielce,2025,PL1,1,Goalkeeper,21,Poland,34,34,0,3060
+727318,Rafał Mamla,6110,Korona Kielce,2025,PL1,87,Goalkeeper,21,Poland,33,0,0,0
+1070002,Michał Niedbała,6110,Korona Kielce,2025,PL1,22,Goalkeeper,19,Poland,2,0,0,0
+1334268,Michał Mikielewicz,6110,Korona Kielce,2025,PL1,12,Goalkeeper,16,Poland,1,0,0,0
+627717,Pau Resta,6110,Korona Kielce,2025,PL1,0,Centre-Back,24,Spain,30,24,2,2058
+246607,Konstantinos Sotiriou,6110,Korona Kielce,2025,PL1,44,Centre-Back,29,Cyprus,32,29,5,2464
+585080,Marcel Pięczek,6110,Korona Kielce,2025,PL1,6,Centre-Back,24,Poland,33,32,4,2384
+617460,Slobodan Rubežić,6110,Korona Kielce,2025,PL1,23,Centre-Back,25,Montenegro,28,12,0,1035
+685445,Bartłomiej Smolarczyk,6110,Korona Kielce,2025,PL1,24,Centre-Back,21,Poland,32,19,1,1574
+634145,Viktor Popov,6110,Korona Kielce,2025,PL1,26,Right-Back,25,Bulgaria,25,8,0,487
+1042674,Jakub Budnicki,6110,Korona Kielce,2025,PL1,0,Centre-Back,23,Poland,14,6,0,380
+469695,Tamar Svetlin,6110,Korona Kielce,2025,PL1,88,Defensive Midfield,23,Slovenia,33,33,1,2890
+309847,Martin Remacle,6110,Korona Kielce,2025,PL1,8,Defensive Midfield,28,Belgium,33,33,3,2444
+453156,Wiktor Długosz,6110,Korona Kielce,2025,PL1,71,Right Midfield,25,Poland,27,26,3,2067
+370555,Dawid Błanik,6110,Korona Kielce,2025,PL1,7,Attacking Midfield,28,Poland,30,27,9,1898
+1157482,Stjepan Davidovic,6110,Korona Kielce,2025,PL1,9,Attacking Midfield,20,Croatia,32,29,2,1288
+255474,Simon Gustafson,6110,Korona Kielce,2025,PL1,86,Attacking Midfield,30,Sweden,16,14,0,639
+401599,Konrad Matuszewski,6110,Korona Kielce,2025,PL1,3,Left Midfield,23,Poland,30,27,2,1970
+825588,Hubert Zwoźny,6110,Korona Kielce,2025,PL1,37,Right Midfield,21,Poland,32,19,0,961
+555110,Nikodem Niski,6110,Korona Kielce,2025,PL1,15,Left Midfield,23,Poland,26,19,0,394
+723613,Miłosz Strzeboński,6110,Korona Kielce,2025,PL1,0,Defensive Midfield,21,Poland,18,7,0,74
+152776,Nono,6110,Korona Kielce,2025,PL1,10,Defensive Midfield,34,Spain,32,26,0,1004
+1291336,Konrad Ciszek,6110,Korona Kielce,2025,PL1,21,Left Midfield,17,Poland,22,5,0,248
+683545,Wojciech Kamiński,6110,Korona Kielce,2025,PL1,27,Defensive Midfield,24,Poland,21,10,0,414
+239215,Marcin Cebula,6110,Korona Kielce,2025,PL1,77,Attacking Midfield,29,Poland,14,8,0,184
+1211585,Kacper Minuczyc,6110,Korona Kielce,2025,PL1,20,Attacking Midfield,17,Poland,11,2,0,10
+1165326,Adam Hańćko,6110,Korona Kielce,2025,PL1,19,Attacking Midfield,16,Poland,3,1,0,2
+210363,Mariusz Stępiński,6110,Korona Kielce,2025,PL1,14,Centre-Forward,30,Poland,15,15,4,1236
+610336,Antoñín,6110,Korona Kielce,2025,PL1,70,Centre-Forward,25,Spain,29,29,3,1654
+475431,Vladimir Nikolov,6110,Korona Kielce,2025,PL1,11,Centre-Forward,24,Bulgaria,32,25,0,647
+1046816,Daniel Bąk,6110,Korona Kielce,2025,PL1,0,Centre-Forward,19,Poland,1,0,0,0
+1046338,Mateusz Głowiński,6110,Korona Kielce,2025,PL1,17,Centre-Forward,19,Poland,4,2,0,16
+278676,Dominik Hladun,168,Zaglebie Lubin,2026,PL1,30,Goalkeeper,30,Poland,0,0,0,0
+47594,Zlatan Alomerovic,168,Zaglebie Lubin,2026,PL1,33,Goalkeeper,35,Serbia,1,1,0,90
+924895,Michal Matys,168,Zaglebie Lubin,2026,PL1,34,Goalkeeper,20,Poland,0,0,0,0
+28308,Jasmin Buric,168,Zaglebie Lubin,2026,PL1,1,Goalkeeper,39,Bosnia-Herzegovina,0,0,0,0
+1406439,Franciszek Nowak,168,Zaglebie Lubin,2026,PL1,95,Goalkeeper,17,Poland,1,0,0,0
+991454,Igor Orlikowski,168,Zaglebie Lubin,2026,PL1,31,Right-Back,20,Poland,1,0,0,0
+311213,Roman Yakuba,168,Zaglebie Lubin,2026,PL1,3,Centre-Back,25,Ukraine,0,0,0,0
+371000,David Colina,168,Zaglebie Lubin,2026,PL1,6,Left-Back,26,Croatia,1,1,0,1
+385518,Damian Michalski,168,Zaglebie Lubin,2026,PL1,4,Centre-Back,28,Poland,1,1,0,90
+425739,Aleks Lawniczak,168,Zaglebie Lubin,2026,PL1,5,Centre-Back,27,Poland,1,1,0,90
+244782,Mateusz Grzybek,168,Zaglebie Lubin,2026,PL1,13,Right-Back,30,Poland,1,1,0,90
+215644,Josip Corluka,168,Zaglebie Lubin,2026,PL1,16,Right-Back,31,Bosnia-Herzegovina,1,1,0,90
+820541,Szymon Karasiński,168,Zaglebie Lubin,2026,PL1,38,Left-Back,22,Poland,0,0,0,0
+175947,Michał Nalepa,168,Zaglebie Lubin,2026,PL1,25,Centre-Back,33,Poland,1,1,0,90
+1146116,Kamil Nowogoński,168,Zaglebie Lubin,2026,PL1,71,Right-Back,19,Poland,1,0,0,0
+1295655,Maciej Urbański,168,Zaglebie Lubin,2026,PL1,94,Centre-Back,19,Poland,1,0,0,0
+1125761,Marcel Regula,168,Zaglebie Lubin,2026,PL1,44,Attacking Midfield,19,Poland,1,1,1,90
+820540,Filip Kocaba,168,Zaglebie Lubin,2026,PL1,39,Defensive Midfield,21,Poland,1,1,0,90
+1064464,Mateusz Dziewiatowski,168,Zaglebie Lubin,2026,PL1,20,Defensive Midfield,19,Poland,1,1,0,45
+631447,Jakub Kolan,168,Zaglebie Lubin,2026,PL1,26,Defensive Midfield,21,Poland,1,1,0,45
+504601,Jakub Sypek,168,Zaglebie Lubin,2026,PL1,19,Attacking Midfield,25,Poland,1,1,1,45
+124517,Sebastian Kerk,168,Zaglebie Lubin,2026,PL1,37,Attacking Midfield,32,Germany,1,1,0,45
+143118,Damian Dąbrowski,168,Zaglebie Lubin,2026,PL1,8,Defensive Midfield,33,Poland,1,0,0,0
+1046884,Cyprian Popielec,168,Zaglebie Lubin,2026,PL1,99,Attacking Midfield,19,Poland,0,0,0,0
+1212045,Jakub Ligocki,168,Zaglebie Lubin,2026,PL1,84,Attacking Midfield,18,Poland,0,0,0,0
+1345954,Seweryn Marek,168,Zaglebie Lubin,2026,PL1,21,Attacking Midfield,18,Poland,0,0,0,0
+1521588,Patryk Dziekoński,168,Zaglebie Lubin,2026,PL1,27,Midfield,17,Poland,0,0,0,0
+554972,Filip Szymczak,168,Zaglebie Lubin,2026,PL1,18,Right Winger,24,Poland,1,1,0,1
+342989,Levente Szabó,168,Zaglebie Lubin,2026,PL1,17,Centre-Forward,27,Hungary,1,1,0,45
+618531,Michalis Kosidis,168,Zaglebie Lubin,2026,PL1,9,Centre-Forward,24,Greece,1,1,0,45
+1108661,Szymon Łyczko,168,Zaglebie Lubin,2026,PL1,19,Right Winger,20,Poland,1,0,0,0
+697080,Mihael Mlinaric,168,Zaglebie Lubin,2026,PL1,88,Centre-Forward,26,Croatia,1,0,0,0
+144721,Arkadiusz Woźniak,168,Zaglebie Lubin,2026,PL1,11,Right Winger,36,Poland,0,0,0,0
+1168850,Paweł Kosmalski,168,Zaglebie Lubin,2026,PL1,77,Centre-Forward,20,Poland,0,0,0,0
+325448,Sebastian Madejski,5689,Cracovia,2026,PL1,13,Goalkeeper,29,Poland,1,1,0,90
+325896,Henrich Ravas,5689,Cracovia,2026,PL1,27,Goalkeeper,28,Slovakia,1,0,0,0
+1260503,Konrad Golonka,5689,Cracovia,2026,PL1,91,Goalkeeper,19,Poland,0,0,0,0
+1198430,Konrad Cymerys,5689,Cracovia,2026,PL1,0,Goalkeeper,17,Poland,0,0,0,0
+1469681,Jakub Chrapusta,5689,Cracovia,2026,PL1,77,Goalkeeper,17,Poland,1,0,0,0
+676266,Mauro Perkovic,5689,Cracovia,2026,PL1,39,Left-Back,23,Croatia,1,1,0,90
+214250,Otar Kakabadze,5689,Cracovia,2026,PL1,25,Right-Back,31,Georgia,1,1,0,90
+920939,Vincent Burlet,5689,Cracovia,2026,PL1,28,Left-Back,20,Belgium,1,1,0,24
+368565,Gustav Henriksson,5689,Cracovia,2026,PL1,4,Centre-Back,28,Sweden,1,1,0,90
+206906,Dominik Baumgartner,5689,Cracovia,2026,PL1,22,Centre-Back,30,Austria,0,0,0,0
+743517,Brahim Traoré,5689,Cracovia,2026,PL1,61,Centre-Back,22,France,1,1,0,90
+687671,Dominik Piła,5689,Cracovia,2026,PL1,79,Right-Back,25,Poland,1,1,0,1
+46552,Kamil Glik,5689,Cracovia,2026,PL1,15,Centre-Back,38,Poland,1,0,0,0
+1434243,Jakub Wilczek,5689,Cracovia,2026,PL1,99,Left-Back,19,Poland,0,0,0,0
+522851,Ajdin Hasic,5689,Cracovia,2026,PL1,14,Attacking Midfield,24,Bosnia-Herzegovina,1,1,0,90
+555106,Filip Marchwiński,5689,Cracovia,2026,PL1,10,Attacking Midfield,24,Poland,1,1,0,24
+303766,Amir Al-Ammari,5689,Cracovia,2026,PL1,6,Defensive Midfield,29,Iraq,1,1,0,90
+481128,Martin Minchev,5689,Cracovia,2026,PL1,17,Attacking Midfield,25,Bulgaria,1,1,0,66
+629005,Dijon Kameri,5689,Cracovia,2026,PL1,70,Attacking Midfield,22,Austria,1,0,0,0
+940220,Beno Selan,5689,Cracovia,2026,PL1,5,Defensive Midfield,21,Slovenia,1,1,0,64
+374418,Mateusz Praszelik,5689,Cracovia,2026,PL1,7,Attacking Midfield,25,Poland,1,1,0,1
+800664,Karol Knap,5689,Cracovia,2026,PL1,20,Defensive Midfield,24,Poland,1,1,0,26
+92738,Mateusz Klich,5689,Cracovia,2026,PL1,43,Defensive Midfield,36,Poland,1,1,0,90
+991458,Mateusz Skoczylas,5689,Cracovia,2026,PL1,92,Attacking Midfield,19,Poland,0,0,0,0
+1241426,Mateusz Tabisz,5689,Cracovia,2026,PL1,19,Attacking Midfield,18,Poland,0,0,0,0
+1297028,Wiktor Dej,5689,Cracovia,2026,PL1,29,Defensive Midfield,18,Poland,1,0,0,0
+1142182,Alex Marciniak,5689,Cracovia,2026,PL1,38,Attacking Midfield,18,Wales,0,0,0,0
+886501,Wiktor Bogacz,5689,Cracovia,2026,PL1,9,Centre-Forward,22,Poland,0,0,0,0
+1163778,Kahveh Zahiroleslam,5689,Cracovia,2026,PL1,18,Centre-Forward,24,United States,1,1,0,66
+925777,Kacper Śmiglewski,5689,Cracovia,2026,PL1,21,Centre-Forward,21,Poland,1,0,0,0
+623412,Mihai Popa,3527,Motor Lublin,2026,PL1,71,Goalkeeper,25,Romania,1,1,0,90
+689207,Gasper Tratnik,3527,Motor Lublin,2026,PL1,33,Goalkeeper,26,Slovenia,1,0,0,0
 862786,Patryk Kukulski,3527,Motor Lublin,2026,PL1,99,Goalkeeper,22,Poland,0,0,0,0
-1545440,Borys Mołdach,3527,Motor Lublin,2026,PL1,0,Goalkeeper,17,Poland,0,0,0,0
-618417,Filip Luberecki,3527,Motor Lublin,2026,PL1,24,Left-Back,21,Poland,0,0,0,0
-523476,Thomas Santos,3527,Motor Lublin,2026,PL1,29,Right-Back,27,Denmark,0,0,0,0
-564120,Marek Bartos,3527,Motor Lublin,2026,PL1,39,Centre-Back,29,Slovakia,0,0,0,0
-144143,Bartosz Bereszyński,3527,Motor Lublin,2026,PL1,18,Right-Back,34,Poland,0,0,0,0
-918931,Paskal Meyer,3527,Motor Lublin,2026,PL1,2,Centre-Back,21,Poland,0,0,0,0
-1194058,Artem Akatov,3527,Motor Lublin,2026,PL1,5,Centre-Back,19,Belarus,0,0,0,0
-1514469,Krystian Brzozowski,3527,Motor Lublin,2026,PL1,13,Right-Back,17,Poland,0,0,0,0
-570466,Mateusz Łęgowski,3527,Motor Lublin,2026,PL1,6,Defensive Midfield,23,Poland,0,0,0,0
-215122,Ivo Rodrigues,3527,Motor Lublin,2026,PL1,7,Attacking Midfield,31,Portugal,0,0,0,0
-525131,Yacine Bourhane,3527,Motor Lublin,2026,PL1,0,Defensive Midfield,27,Comoros,0,0,0,0
-1060859,Christopher Simon,3527,Motor Lublin,2026,PL1,8,Attacking Midfield,26,Senegal,0,0,0,0
-1365255,Franciszek Lewandowski,3527,Motor Lublin,2026,PL1,16,Attacking Midfield,18,Poland,0,0,0,0
-894710,Kacper Szymanek,3527,Motor Lublin,2026,PL1,0,Attacking Midfield,21,Poland,0,0,0,0
-911489,Marcel Złomańczuk,3527,Motor Lublin,2026,PL1,0,Defensive Midfield,21,Poland,0,0,0,0
-852858,Mbaye Ndiaye,3527,Motor Lublin,2026,PL1,30,Left Winger,22,Senegal,0,0,0,0
-622871,Karol Czubak,3527,Motor Lublin,2026,PL1,9,Centre-Forward,26,Poland,0,0,0,0
-742506,Fábio Ronaldo,3527,Motor Lublin,2026,PL1,11,Right Winger,25,Portugal,0,0,0,0
-813152,Makan Aïko,3527,Motor Lublin,2026,PL1,70,Left Winger,25,France,0,0,0,0
-587660,Florian Haxha,3527,Motor Lublin,2026,PL1,23,Right Winger,24,Kosovo,0,0,0,0
-1106059,Kacper Plichta,3527,Motor Lublin,2026,PL1,20,Centre-Forward,19,Poland,0,0,0,0
-1156333,Dominik Gregorski,3527,Motor Lublin,2026,PL1,0,Centre-Forward,20,Poland,0,0,0,0
-656250,Marcel Lubik,422,Wisla Kraków,2026,PL1,1,Goalkeeper,22,Poland,0,0,0,0
-911502,Patryk Letkiewicz,422,Wisla Kraków,2026,PL1,28,Goalkeeper,20,Poland,0,0,0,0
-992404,Jakub Stępak,422,Wisla Kraków,2026,PL1,0,Goalkeeper,20,Poland,0,0,0,0
-589273,Maxence Maisonneuve,422,Wisla Kraków,2026,PL1,13,Centre-Back,27,France,0,0,0,0
-888643,Jakub Krzyżanowski,422,Wisla Kraków,2026,PL1,52,Left-Back,20,Poland,0,0,0,0
-337673,Julian Lelieveld,422,Wisla Kraków,2026,PL1,2,Right-Back,28,Netherlands,0,0,0,0
-361567,Raoul Giger,422,Wisla Kraków,2026,PL1,34,Right-Back,28,Switzerland,0,0,0,0
+1545440,Borys Mołdach,3527,Motor Lublin,2026,PL1,12,Goalkeeper,17,Poland,0,0,0,0
+618417,Filip Luberecki,3527,Motor Lublin,2026,PL1,24,Left-Back,21,Poland,1,1,0,90
+307658,Tin Plavotic,3527,Motor Lublin,2026,PL1,4,Centre-Back,29,Croatia,1,1,0,7
+523476,Thomas Santos,3527,Motor Lublin,2026,PL1,29,Right-Back,27,Denmark,1,1,0,90
+564120,Marek Bartos,3527,Motor Lublin,2026,PL1,39,Centre-Back,29,Slovakia,1,1,0,90
+144143,Bartosz Bereszyński,3527,Motor Lublin,2026,PL1,18,Right-Back,34,Poland,1,1,0,83
+918931,Paskal Meyer,3527,Motor Lublin,2026,PL1,2,Centre-Back,21,Poland,1,1,0,27
+1194058,Artem Akatov,3527,Motor Lublin,2026,PL1,5,Centre-Back,19,Belarus,1,0,0,0
+1514469,Krystian Brzozowski,3527,Motor Lublin,2026,PL1,13,Right-Back,17,Poland,1,0,0,0
+570466,Mateusz Łęgowski,3527,Motor Lublin,2026,PL1,6,Defensive Midfield,23,Poland,1,1,0,78
+215122,Ivo Rodrigues,3527,Motor Lublin,2026,PL1,7,Attacking Midfield,31,Portugal,1,1,0,90
+525131,Yacine Bourhane,3527,Motor Lublin,2026,PL1,27,Defensive Midfield,27,Comoros,1,1,0,63
+1060859,Christopher Simon,3527,Motor Lublin,2026,PL1,8,Attacking Midfield,26,Senegal,1,1,0,12
+1365255,Franciszek Lewandowski,3527,Motor Lublin,2026,PL1,16,Attacking Midfield,18,Poland,1,0,0,0
+894710,Kacper Szymanek,3527,Motor Lublin,2026,PL1,19,Attacking Midfield,21,Poland,0,0,0,0
+911489,Marcel Złomańczuk,3527,Motor Lublin,2026,PL1,22,Defensive Midfield,21,Poland,0,0,0,0
+1570131,Konrad Kraska,3527,Motor Lublin,2026,PL1,21,Midfield,18,Poland,1,0,0,0
+852858,Mbaye Ndiaye,3527,Motor Lublin,2026,PL1,30,Left Winger,22,Senegal,1,1,1,83
+622871,Karol Czubak,3527,Motor Lublin,2026,PL1,10,Centre-Forward,26,Poland,1,1,0,90
+742506,Fábio Ronaldo,3527,Motor Lublin,2026,PL1,11,Right Winger,25,Portugal,1,1,0,78
+813152,Makan Aïko,3527,Motor Lublin,2026,PL1,70,Left Winger,25,France,1,1,0,12
+587660,Florian Haxha,3527,Motor Lublin,2026,PL1,23,Right Winger,24,Kosovo,1,1,0,7
+1106059,Kacper Plichta,3527,Motor Lublin,2026,PL1,20,Centre-Forward,19,Poland,1,0,0,0
+1156333,Dominik Gregorski,3527,Motor Lublin,2026,PL1,90,Centre-Forward,20,Poland,1,0,0,0
+699400,Xavier Dziekoński,6110,Korona Kielce,2026,PL1,1,Goalkeeper,22,Poland,1,1,0,90
+727318,Rafał Mamla,6110,Korona Kielce,2026,PL1,87,Goalkeeper,22,Poland,1,0,0,0
+1334268,Michał Mikielewicz,6110,Korona Kielce,2026,PL1,12,Goalkeeper,17,Poland,0,0,0,0
+246607,Konstantinos Sotiriou,6110,Korona Kielce,2026,PL1,44,Centre-Back,30,Cyprus,1,1,0,90
+554288,Ariel Mosór,6110,Korona Kielce,2026,PL1,2,Centre-Back,23,Poland,1,1,0,90
+585080,Marcel Pięczek,6110,Korona Kielce,2026,PL1,6,Centre-Back,25,Poland,1,1,0,90
+617460,Slobodan Rubežić,6110,Korona Kielce,2026,PL1,23,Centre-Back,26,Montenegro,0,0,0,0
+685445,Bartłomiej Smolarczyk,6110,Korona Kielce,2026,PL1,24,Centre-Back,23,Poland,1,0,0,0
+991322,Norbert Barczak,6110,Korona Kielce,2026,PL1,67,Right-Back,20,Poland,1,0,0,0
+1334931,Igor Chmielewski,6110,Korona Kielce,2026,PL1,26,Defender,18,Poland,0,0,0,0
+339070,Patrik Hellebrand,6110,Korona Kielce,2026,PL1,18,Defensive Midfield,27,Czech Republic,1,1,0,90
+469695,Tamar Svetlin,6110,Korona Kielce,2026,PL1,88,Defensive Midfield,24,Slovenia,1,1,0,84
+929467,Kamil Jakubczyk,6110,Korona Kielce,2026,PL1,35,Defensive Midfield,21,Poland,1,1,0,6
+309847,Martin Remacle,6110,Korona Kielce,2026,PL1,8,Defensive Midfield,29,Belgium,1,1,0,23
+453156,Wiktor Długosz,6110,Korona Kielce,2026,PL1,71,Right Midfield,26,Poland,1,1,0,90
+370555,Dawid Błanik,6110,Korona Kielce,2026,PL1,7,Attacking Midfield,29,Poland,1,1,0,84
+1157482,Stjepan Davidovic,6110,Korona Kielce,2026,PL1,9,Attacking Midfield,21,Croatia,0,0,0,0
+255474,Simon Gustafson,6110,Korona Kielce,2026,PL1,86,Attacking Midfield,31,Sweden,1,1,0,67
+401599,Konrad Matuszewski,6110,Korona Kielce,2026,PL1,11,Left Midfield,24,Poland,1,0,0,0
+825588,Hubert Zwoźny,6110,Korona Kielce,2026,PL1,37,Right Midfield,22,Poland,1,1,0,90
+723613,Miłosz Strzeboński,6110,Korona Kielce,2026,PL1,0,Defensive Midfield,22,Poland,0,0,0,0
+152776,Nono,6110,Korona Kielce,2026,PL1,10,Defensive Midfield,35,Spain,0,0,0,0
+1291336,Konrad Ciszek,6110,Korona Kielce,2026,PL1,21,Left Midfield,18,Poland,1,1,0,6
+683545,Wojciech Kamiński,6110,Korona Kielce,2026,PL1,27,Defensive Midfield,25,Poland,0,0,0,0
+1211585,Kacper Minuczyc,6110,Korona Kielce,2026,PL1,20,Attacking Midfield,18,Poland,1,0,0,0
+1167760,Kornel Toboła,6110,Korona Kielce,2026,PL1,15,Central Midfield,19,Poland,1,0,0,0
+210363,Mariusz Stępiński,6110,Korona Kielce,2026,PL1,14,Centre-Forward,31,Poland,1,1,0,67
+346309,Morgan Faßbender,6110,Korona Kielce,2026,PL1,22,Centre-Forward,27,Germany,1,1,0,1
+1046816,Daniel Bąk,6110,Korona Kielce,2026,PL1,99,Centre-Forward,20,Poland,1,1,0,23
+274047,Ivan Brkic,3527,Motor Lublin,2025,PL1,1,Goalkeeper,30,Croatia,29,27,0,2363
+689207,Gasper Tratnik,3527,Motor Lublin,2025,PL1,33,Goalkeeper,25,Slovenia,33,8,0,697
+862786,Patryk Kukulski,3527,Motor Lublin,2025,PL1,99,Goalkeeper,20,Poland,10,0,0,0
+1545440,Borys Mołdach,3527,Motor Lublin,2025,PL1,0,Goalkeeper,16,Poland,0,0,0,0
+618417,Filip Luberecki,3527,Motor Lublin,2025,PL1,24,Left-Back,20,Poland,33,31,0,2619
+523476,Thomas Santos,3527,Motor Lublin,2025,PL1,29,Right-Back,26,Denmark,8,7,0,216
+1177033,Bright Ede,3527,Motor Lublin,2025,PL1,42,Centre-Back,18,Poland,31,11,0,597
+203558,Hervé Matthys,3527,Motor Lublin,2025,PL1,3,Centre-Back,29,Belgium,30,26,0,2154
+564120,Marek Bartos,3527,Motor Lublin,2025,PL1,39,Centre-Back,28,Slovakia,30,25,1,2070
+235862,Paweł Stolarski,3527,Motor Lublin,2025,PL1,28,Right-Back,29,Poland,31,29,0,1913
+359030,Filip Wójcik,3527,Motor Lublin,2025,PL1,17,Right-Back,28,Poland,31,24,0,1042
+244792,Arkadiusz Najemski,3527,Motor Lublin,2025,PL1,18,Centre-Back,29,Poland,22,17,0,1211
+918931,Paskal Meyer,3527,Motor Lublin,2025,PL1,2,Centre-Back,20,Poland,33,5,0,217
+1194058,Artem Akatov,3527,Motor Lublin,2025,PL1,0,Centre-Back,17,Belarus,0,0,0,0
+1514469,Krystian Brzozowski,3527,Motor Lublin,2025,PL1,13,Right-Back,16,Poland,1,0,0,0
+272537,Bartosz Wolski,3527,Motor Lublin,2025,PL1,68,Defensive Midfield,28,Poland,34,34,6,2868
+215122,Ivo Rodrigues,3527,Motor Lublin,2025,PL1,7,Attacking Midfield,30,Portugal,31,31,2,2432
+181112,Sergi Samper,3527,Motor Lublin,2025,PL1,6,Defensive Midfield,30,Spain,33,30,0,1799
+623745,Kacper Karasek,3527,Motor Lublin,2025,PL1,10,Attacking Midfield,23,Poland,29,14,1,212
+387529,Jakub Łabojko,3527,Motor Lublin,2025,PL1,21,Defensive Midfield,27,Poland,33,29,1,1263
+461569,Michał Król,3527,Motor Lublin,2025,PL1,26,Right Midfield,25,Poland,30,26,1,1493
+698957,Krystian Palacz,3527,Motor Lublin,2025,PL1,0,Left Midfield,21,Poland,18,6,0,312
+384844,Mathieu Scalet,3527,Motor Lublin,2025,PL1,8,Attacking Midfield,28,France,26,20,2,599
+1060859,Christopher Simon,3527,Motor Lublin,2025,PL1,0,Attacking Midfield,25,Senegal,3,1,0,45
+1365255,Franciszek Lewandowski,3527,Motor Lublin,2025,PL1,16,Attacking Midfield,17,Poland,22,2,0,11
+1205424,Sebastian Koziej,3527,Motor Lublin,2025,PL1,0,Attacking Midfield,18,Poland,0,0,0,0
+852858,Mbaye Ndiaye,3527,Motor Lublin,2025,PL1,30,Left Winger,21,Senegal,24,24,8,1640
+622871,Karol Czubak,3527,Motor Lublin,2025,PL1,9,Centre-Forward,25,Poland,32,32,18,2561
+742506,Fábio Ronaldo,3527,Motor Lublin,2025,PL1,11,Right Winger,24,Portugal,27,27,4,1566
+335461,Renat Dadashov,3527,Motor Lublin,2025,PL1,77,Centre-Forward,26,Azerbaijan,30,21,0,451
+361071,Bradly van Hoeven,3527,Motor Lublin,2025,PL1,19,Left Winger,25,Netherlands,31,28,0,1159
+587660,Florian Haxha,3527,Motor Lublin,2025,PL1,23,Right Winger,23,Kosovo,24,7,0,96
+1106059,Kacper Plichta,3527,Motor Lublin,2025,PL1,20,Centre-Forward,18,Poland,0,0,0,0
+656250,Marcel Lubik,422,Wisla Kraków,2026,PL1,1,Goalkeeper,22,Poland,1,1,0,90
+911502,Patryk Letkiewicz,422,Wisla Kraków,2026,PL1,28,Goalkeeper,20,Poland,1,0,0,0
+992404,Jakub Stępak,422,Wisla Kraków,2026,PL1,53,Goalkeeper,20,Poland,0,0,0,0
+589273,Maxence Maisonneuve,422,Wisla Kraków,2026,PL1,13,Centre-Back,27,France,1,1,0,90
+888643,Jakub Krzyżanowski,422,Wisla Kraków,2026,PL1,52,Left-Back,20,Poland,1,1,0,90
+337673,Julian Lelieveld,422,Wisla Kraków,2026,PL1,2,Right-Back,28,Netherlands,1,1,0,1
+361567,Raoul Giger,422,Wisla Kraków,2026,PL1,34,Right-Back,28,Switzerland,1,1,0,90
 307769,Darijo Grujcic,422,Wisla Kraków,2026,PL1,29,Centre-Back,27,Austria,0,0,0,0
-448671,Wiktor Biedrzycki,422,Wisla Kraków,2026,PL1,97,Centre-Back,28,Poland,0,0,0,0
-717594,Mariusz Kutwa,422,Wisla Kraków,2026,PL1,50,Centre-Back,22,Poland,0,0,0,0
+448671,Wiktor Biedrzycki,422,Wisla Kraków,2026,PL1,97,Centre-Back,28,Poland,1,0,0,0
+717594,Mariusz Kutwa,422,Wisla Kraków,2026,PL1,50,Centre-Back,22,Poland,1,0,0,0
 446898,Rafał Mikulec,422,Wisla Kraków,2026,PL1,4,Left-Back,29,Poland,0,0,0,0
 261874,Bartosz Jaroch,422,Wisla Kraków,2026,PL1,25,Right-Back,31,Poland,0,0,0,0
-187945,Alan Uryga,422,Wisla Kraków,2026,PL1,6,Centre-Back,32,Poland,0,0,0,0
-555067,Kacper Duda,422,Wisla Kraków,2026,PL1,41,Central Midfield,22,Poland,0,0,0,0
-286622,Julius Ertlthaler,422,Wisla Kraków,2026,PL1,7,Attacking Midfield,29,Austria,0,0,0,0
-531599,Ervin Omic,422,Wisla Kraków,2026,PL1,20,Defensive Midfield,23,Austria,0,0,0,0
-375849,James Igbekeme,422,Wisla Kraków,2026,PL1,12,Defensive Midfield,31,Nigeria,0,0,0,0
-487116,Marc Carbó,422,Wisla Kraków,2026,PL1,8,Defensive Midfield,32,Spain,0,0,0,0
+187945,Alan Uryga,422,Wisla Kraków,2026,PL1,6,Centre-Back,32,Poland,1,1,0,90
+555067,Kacper Duda,422,Wisla Kraków,2026,PL1,41,Central Midfield,22,Poland,1,1,0,90
+286622,Julius Ertlthaler,422,Wisla Kraków,2026,PL1,7,Attacking Midfield,29,Austria,1,1,0,23
+531599,Ervin Omic,422,Wisla Kraków,2026,PL1,20,Defensive Midfield,23,Austria,1,0,0,0
+375849,James Igbekeme,422,Wisla Kraków,2026,PL1,12,Defensive Midfield,31,Nigeria,1,1,0,90
+487116,Marc Carbó,422,Wisla Kraków,2026,PL1,8,Defensive Midfield,32,Spain,1,1,0,8
 1036423,Wiktor Staszak,422,Wisla Kraków,2026,PL1,15,Defensive Midfield,19,Poland,0,0,0,0
-1167866,Maksym Tsymbalyuk,422,Wisla Kraków,2026,PL1,0,Defensive Midfield,19,Ukraine,0,0,0,0
-440332,Ángel Rodado,422,Wisla Kraków,2026,PL1,9,Centre-Forward,29,Spain,0,0,0,0
-901070,Maciej Kuziemka,422,Wisla Kraków,2026,PL1,51,Right Winger,20,Poland,0,0,0,0
-465715,Élie Youan,422,Wisla Kraków,2026,PL1,27,Left Winger,27,France,0,0,0,0
-461936,Frederico Duarte,422,Wisla Kraków,2026,PL1,10,Left Winger,27,Portugal,0,0,0,0
+1167866,Maksym Tsymbalyuk,422,Wisla Kraków,2026,PL1,31,Defensive Midfield,19,Ukraine,0,0,0,0
+1195427,Oliwier Plawiński,422,Wisla Kraków,2026,PL1,32,Right Midfield,17,Poland,0,0,0,0
+440332,Ángel Rodado,422,Wisla Kraków,2026,PL1,9,Centre-Forward,29,Spain,1,1,0,23
+901070,Maciej Kuziemka,422,Wisla Kraków,2026,PL1,51,Right Winger,20,Poland,1,1,0,67
+465715,Élie Youan,422,Wisla Kraków,2026,PL1,27,Left Winger,27,France,1,1,0,8
+461936,Frederico Duarte,422,Wisla Kraków,2026,PL1,10,Left Winger,27,Portugal,1,1,0,82
 290016,Jérémy Guillemenot,422,Wisla Kraków,2026,PL1,21,Centre-Forward,28,Switzerland,0,0,0,0
-307427,Marko Bozic,422,Wisla Kraków,2026,PL1,17,Left Winger,28,Austria,0,0,0,0
+307427,Marko Bozic,422,Wisla Kraków,2026,PL1,17,Left Winger,28,Austria,1,1,1,82
 1218115,Oumar Conté,422,Wisla Kraków,2026,PL1,0,Right Winger,19,Guinea,0,0,0,0
-291693,Jordi Sánchez,422,Wisla Kraków,2026,PL1,99,Centre-Forward,31,Spain,0,0,0,0
-871213,Karol Tokarczyk,422,Wisla Kraków,2026,PL1,0,Centre-Forward,21,Poland,0,0,0,0
+291693,Jordi Sánchez,422,Wisla Kraków,2026,PL1,11,Centre-Forward,31,Spain,1,1,1,67
+871213,Karol Tokarczyk,422,Wisla Kraków,2026,PL1,30,Centre-Forward,21,Poland,0,0,0,0
 911502,Patryk Letkiewicz,422,Wisla Kraków,2025,PL1,28,Goalkeeper,19,Poland,0,0,0,0
 531010,Kamil Broda,422,Wisla Kraków,2025,PL1,1,Goalkeeper,23,Poland,0,0,0,0
 345408,Anton Chichkan,422,Wisla Kraków,2025,PL1,31,Goalkeeper,29,Belarus,0,0,0,0
@@ -3521,6 +3575,136 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1066834,Filip Baniowski,422,Wisla Kraków,2025,PL1,56,Right Winger,18,Poland,0,0,0,0
 407079,Bartosz Talar,422,Wisla Kraków,2025,PL1,18,Right Winger,22,Poland,0,0,0,0
 1167889,Szymon Kawała,422,Wisla Kraków,2025,PL1,57,Centre-Forward,18,Poland,0,0,0,0
+447343,Rafał Strączek,6456,GKS Katowice,2026,PL1,13,Goalkeeper,27,Poland,0,0,0,0
+807782,Maciej Kikolski,6456,GKS Katowice,2026,PL1,1,Goalkeeper,22,Poland,1,0,0,0
+559998,Gabriel Kobylak,6456,GKS Katowice,2026,PL1,87,Goalkeeper,24,Poland,1,1,0,90
+1570129,Wojciech Monica,6456,GKS Katowice,2026,PL1,0,Goalkeeper,16,Poland,0,0,0,0
+1535382,Wojciech Pańkowski,6456,GKS Katowice,2026,PL1,34,Goalkeeper,17,Poland,0,0,0,0
+627717,Pau Resta,6456,GKS Katowice,2026,PL1,55,Centre-Back,25,Spain,1,1,0,90
+792523,Marius Olsen,6456,GKS Katowice,2026,PL1,14,Centre-Back,25,Norway,1,0,0,0
+237334,Lukas Klemenz,6456,GKS Katowice,2026,PL1,6,Centre-Back,30,Poland,1,1,0,61
+605746,Aleksander Paluszek,6456,GKS Katowice,2026,PL1,3,Centre-Back,25,Poland,0,0,0,0
+208441,Arkadiusz Jędrych,6456,GKS Katowice,2026,PL1,4,Centre-Back,34,Poland,1,1,0,90
+240756,Alan Czerwiński,6456,GKS Katowice,2026,PL1,30,Centre-Back,33,Poland,1,1,0,29
+919469,Mateusz Kowalczyk,6456,GKS Katowice,2026,PL1,77,Defensive Midfield,22,Poland,0,0,0,0
+374321,Eman Marković,6456,GKS Katowice,2026,PL1,15,Attacking Midfield,27,Norway,1,1,0,90
+272537,Bartosz Wolski,6456,GKS Katowice,2026,PL1,68,Defensive Midfield,29,Poland,1,1,0,75
+339693,Erik Jirka,6456,GKS Katowice,2026,PL1,97,Right Midfield,28,Slovakia,1,1,0,29
+374562,Sebastian Milewski,6456,GKS Katowice,2026,PL1,22,Defensive Midfield,28,Poland,1,0,0,0
+255910,Damian Rasak,6456,GKS Katowice,2026,PL1,26,Defensive Midfield,30,Poland,0,0,0,0
+261085,Bartosz Nowak,6456,GKS Katowice,2026,PL1,27,Attacking Midfield,32,Poland,1,1,0,90
+524043,Jesse Bosch,6456,GKS Katowice,2026,PL1,5,Defensive Midfield,26,Netherlands,1,0,0,0
+295495,Mateusz Wdowiak,6456,GKS Katowice,2026,PL1,7,Left Midfield,29,Poland,1,1,0,8
+391374,Marcin Wasielewski,6456,GKS Katowice,2026,PL1,23,Right Midfield,31,Poland,1,1,0,61
+1042499,Szymon Bartlewicz,6456,GKS Katowice,2026,PL1,31,Attacking Midfield,20,Poland,1,1,1,15
+221295,Borja Galán,6456,GKS Katowice,2026,PL1,8,Left Midfield,33,Spain,1,1,0,82
+554975,Marcel Wędrychowski,6456,GKS Katowice,2026,PL1,10,Attacking Midfield,24,Poland,1,0,0,0
+694428,Kacper Łukasiak,6456,GKS Katowice,2026,PL1,19,Defensive Midfield,22,Poland,1,1,0,90
+991455,Filip Rejczyk,6456,GKS Katowice,2026,PL1,20,Defensive Midfield,20,Poland,0,0,0,0
+128804,Adrian Błąd,6456,GKS Katowice,2026,PL1,11,Attacking Midfield,35,Poland,0,0,0,0
+523315,Ilya Shkurin,6456,GKS Katowice,2026,PL1,17,Centre-Forward,26,Belarus,1,1,0,61
+261155,Adam Zrelak,6456,GKS Katowice,2026,PL1,99,Centre-Forward,32,Slovakia,1,1,0,29
+1474819,Jakub Kokosiński,6456,GKS Katowice,2026,PL1,21,Centre-Forward,19,Poland,1,0,0,0
+120970,Rafał Leszczyński,2118,Wisla Plock,2025,PL1,12,Goalkeeper,33,Poland,33,33,0,2970
+697880,Jakub Burek,2118,Wisla Plock,2025,PL1,26,Goalkeeper,22,Poland,16,1,0,90
+1121278,Stanisław Pruszkowski,2118,Wisla Plock,2025,PL1,1,Goalkeeper,20,Poland,20,0,0,0
+1308198,Oskar Klat,2118,Wisla Plock,2025,PL1,97,Goalkeeper,18,Poland,0,0,0,0
+1136224,Dion Gallapeni,2118,Wisla Plock,2025,PL1,19,Left-Back,20,Kosovo,12,10,0,670
+495839,Andrias Edmundsson,2118,Wisla Plock,2025,PL1,0,Centre-Back,24,Faroe Islands,18,18,1,1620
+566983,Aleksandre Kalandadze,2118,Wisla Plock,2025,PL1,0,Centre-Back,24,Georgia,21,8,0,137
+221074,Marcus Haglind-Sangré,2118,Wisla Plock,2025,PL1,4,Centre-Back,30,Sweden,33,33,0,2970
+317035,Marin Karamarko,2118,Wisla Plock,2025,PL1,5,Centre-Back,27,Croatia,4,3,0,111
+550549,Tomás Tavares,2118,Wisla Plock,2025,PL1,84,Right-Back,24,Portugal,22,13,0,640
+129358,Marcin Kamiński,2118,Wisla Plock,2025,PL1,35,Centre-Back,33,Poland,34,34,3,3004
+144695,Nemanja Mijuskovic,2118,Wisla Plock,2025,PL1,25,Centre-Back,33,Montenegro,33,27,0,1400
+1171955,Matvey Bokhno,2118,Wisla Plock,2025,PL1,37,Centre-Back,17,Belarus,16,1,0,1
+717662,Dawid Barnowski,2118,Wisla Plock,2025,PL1,0,Left-Back,22,Poland,6,0,0,0
+1068256,Filip Zając,2118,Wisla Plock,2025,PL1,42,Centre-Back,19,Poland,9,0,0,0
+1073747,Dominik Sarapata,2118,Wisla Plock,2025,PL1,18,Central Midfield,17,Poland,16,7,0,226
+1018224,Wiktor Nowak,2118,Wisla Plock,2025,PL1,30,Attacking Midfield,20,Poland,33,32,4,2604
+371861,Zan Rogelj,2118,Wisla Plock,2025,PL1,21,Right Midfield,25,Slovenia,26,26,3,2258
+981937,Gleb Kuchko,2118,Wisla Plock,2025,PL1,0,Left Midfield,20,Belarus,2,0,0,0
+685887,Matchoi Djaló,2118,Wisla Plock,2025,PL1,17,Attacking Midfield,22,Portugal,30,18,0,634
+784429,Jorge Jiménez,2118,Wisla Plock,2025,PL1,11,Attacking Midfield,26,Spain,9,9,1,526
+274858,Kyriakos Savvidis,2118,Wisla Plock,2025,PL1,88,Defensive Midfield,30,Greece,8,8,1,580
+523947,Kevin Custovic,2118,Wisla Plock,2025,PL1,2,Right Midfield,25,Sweden,32,25,0,972
+332142,Quentin Lecoeuche,2118,Wisla Plock,2025,PL1,13,Left Midfield,31,France,28,28,0,1847
+201193,Dominik Kun,2118,Wisla Plock,2025,PL1,14,Defensive Midfield,32,Poland,34,33,0,2469
+273219,Krystian Pomorski,2118,Wisla Plock,2025,PL1,6,Defensive Midfield,29,Poland,34,18,0,242
+28285,Dani Pacheco,2118,Wisla Plock,2025,PL1,8,Defensive Midfield,34,Spain,31,31,2,2195
+168943,Bojan Nastic,2118,Wisla Plock,2025,PL1,0,Left Midfield,30,Bosnia-Herzegovina,15,9,0,337
+194139,Fabian Hiszpański,2118,Wisla Plock,2025,PL1,16,Right Midfield,31,Poland,33,7,0,102
+1434459,Nikodem Rogowski,2118,Wisla Plock,2025,PL1,24,Left Midfield,16,Poland,1,1,0,12
+1434386,Mateusz Leśniewski,2118,Wisla Plock,2025,PL1,76,Defensive Midfield,17,Poland,5,0,0,0
+407697,Deni Jurić,2118,Wisla Plock,2025,PL1,99,Centre-Forward,27,Australia,21,19,5,1160
+652996,Said Hamulic,2118,Wisla Plock,2025,PL1,77,Centre-Forward,24,Bosnia-Herzegovina,8,7,0,355
+554404,Giannis Niarchos,2118,Wisla Plock,2025,PL1,9,Centre-Forward,23,Greece,21,20,1,794
+250358,Iban Salvador,2118,Wisla Plock,2025,PL1,66,Centre-Forward,29,Equatorial Guinea,20,17,2,704
+1283226,Bartosz Borowski,2118,Wisla Plock,2025,PL1,27,Centre-Forward,18,Poland,14,1,0,19
+80769,Łukasz Sekulski,2118,Wisla Plock,2025,PL1,20,Centre-Forward,34,Poland,29,28,8,1991
+294191,Piotr Krawczyk,2118,Wisla Plock,2025,PL1,0,Centre-Forward,30,Poland,5,3,0,27
+957890,Oskar Tomczyk,2118,Wisla Plock,2025,PL1,0,Centre-Forward,19,Poland,12,0,0,0
+528402,Filip Majchrowicz,7154,Radomiak Radom,2025,PL1,1,Goalkeeper,25,Poland,34,34,0,3060
+790524,Wiktor Koptas,7154,Radomiak Radom,2025,PL1,44,Goalkeeper,20,Poland,34,0,0,0
+1126322,Michał Jerke,7154,Radomiak Radom,2025,PL1,75,Goalkeeper,19,Poland,33,0,0,0
+576121,Josh Wilson-Esbrand,7154,Radomiak Radom,2025,PL1,3,Left-Back,22,England,11,8,0,449
+613437,Zié Ouattara,7154,Radomiak Radom,2025,PL1,24,Right-Back,25,Cote d'Ivoire,33,32,2,2266
+604293,Steve Kingue,7154,Radomiak Radom,2025,PL1,14,Centre-Back,25,Cameroon,33,27,1,2346
+355335,Adrián Diéguez,7154,Radomiak Radom,2025,PL1,26,Centre-Back,29,Spain,28,28,1,2511
+517845,Jérémy Blasco,7154,Radomiak Radom,2025,PL1,5,Centre-Back,26,France,33,15,1,1148
+264278,Jan Grzesik,7154,Radomiak Radom,2025,PL1,13,Right-Back,30,Poland,34,34,7,2925
+876440,João Pedro,7154,Radomiak Radom,2025,PL1,20,Left-Back,22,Brazil,32,16,0,963
+236235,Mateusz Cichocki,7154,Radomiak Radom,2025,PL1,16,Centre-Back,33,Poland,31,5,0,271
+1520380,Oskar Markiewicz,7154,Radomiak Radom,2025,PL1,33,Left-Back,25,Poland,4,1,0,13
+415646,Bruno Jordão,7154,Radomiak Radom,2025,PL1,0,Defensive Midfield,26,Portugal,4,4,0,303
+249983,Roberto Alves,7154,Radomiak Radom,2025,PL1,10,Attacking Midfield,28,Switzerland,24,23,4,1148
+379150,Paulius Golubickas,7154,Radomiak Radom,2025,PL1,0,Attacking Midfield,25,Lithuania,6,3,0,24
+375383,Romário Baró,7154,Radomiak Radom,2025,PL1,6,Defensive Midfield,25,Portugal,28,25,2,1286
+595012,Ibrahima Camará,7154,Radomiak Radom,2025,PL1,2,Defensive Midfield,26,Guinea,32,23,0,1250
+212432,Christos Donis,7154,Radomiak Radom,2025,PL1,77,Defensive Midfield,30,Greece,29,27,0,1384
+176514,Rafał Wolski,7154,Radomiak Radom,2025,PL1,27,Attacking Midfield,32,Poland,30,30,5,2196
+385759,Michał Kaput,7154,Radomiak Radom,2025,PL1,28,Defensive Midfield,27,Poland,31,21,0,886
+1508263,Adam Żabicki,7154,Radomiak Radom,2025,PL1,17,Defensive Midfield,19,Poland,16,1,0,6
+1118869,Mikołaj Molendowski,7154,Radomiak Radom,2025,PL1,37,Defensive Midfield,18,Poland,4,0,0,0
+666545,Capita,7154,Radomiak Radom,2025,PL1,0,Left Winger,23,Angola,20,20,6,1324
+402825,Luquinhas,7154,Radomiak Radom,2025,PL1,82,Left Winger,28,Brazil,16,16,1,1300
+986786,Salifou Soumah,7154,Radomiak Radom,2025,PL1,19,Right Winger,21,Guinea,13,12,1,279
+640735,Abdoul Tapsoba,7154,Radomiak Radom,2025,PL1,15,Centre-Forward,23,Burkina Faso,31,31,6,1201
+374987,Elves Baldé,7154,Radomiak Radom,2025,PL1,21,Right Winger,25,Guinea-Bissau,28,27,5,1065
+632857,Vasco Lopes,7154,Radomiak Radom,2025,PL1,7,Right Winger,25,Cape Verde,32,31,0,1573
+227511,Maurides,7154,Radomiak Radom,2025,PL1,25,Centre-Forward,31,Brazil,34,34,8,2213
+885694,Depú,7154,Radomiak Radom,2025,PL1,0,Centre-Forward,25,Angola,12,9,1,173
+973575,Guilherme Zimovski,7154,Radomiak Radom,2025,PL1,0,Right Winger,20,Brazil,11,0,0,0
+264870,Leândro,7154,Radomiak Radom,2025,PL1,9,Right Winger,36,Brazil,25,3,0,13
+884823,Alex Niziołek,7154,Radomiak Radom,2025,PL1,0,Centre-Forward,19,Poland,6,0,0,0
+120970,Rafał Leszczyński,2118,Wisla Plock,2026,PL1,12,Goalkeeper,34,Poland,1,1,0,90
+697880,Jakub Burek,2118,Wisla Plock,2026,PL1,26,Goalkeeper,23,Poland,1,0,0,0
+1292572,Szymon Wadas,2118,Wisla Plock,2026,PL1,82,Goalkeeper,19,Poland,0,0,0,0
+1136224,Dion Gallapeni,2118,Wisla Plock,2026,PL1,19,Left-Back,21,Kosovo,1,0,0,0
+221074,Marcus Haglind-Sangré,2118,Wisla Plock,2026,PL1,4,Centre-Back,31,Sweden,1,1,0,90
+317035,Marin Karamarko,2118,Wisla Plock,2026,PL1,5,Centre-Back,28,Croatia,1,0,0,0
+129358,Marcin Kamiński,2118,Wisla Plock,2026,PL1,35,Centre-Back,34,Poland,1,1,0,90
+900848,Przemysław Misiak,2118,Wisla Plock,2026,PL1,44,Centre-Back,22,Poland,0,0,0,0
+187973,Marcin Flis,2118,Wisla Plock,2026,PL1,3,Centre-Back,32,Poland,1,1,1,90
+1171955,Matvey Bokhno,2118,Wisla Plock,2026,PL1,4,Centre-Back,18,Belarus,0,0,0,0
+1197555,Marcin Więckowski,2118,Wisla Plock,2026,PL1,41,Centre-Back,21,Poland,1,0,0,0
+425780,Jurica Prsir,2118,Wisla Plock,2026,PL1,18,Attacking Midfield,26,Croatia,1,1,0,45
+371861,Zan Rogelj,2118,Wisla Plock,2026,PL1,21,Right Midfield,26,Slovenia,1,1,1,90
+407734,Olaf Kobacki,2118,Wisla Plock,2026,PL1,7,Attacking Midfield,25,Poland,1,1,0,45
+981937,Gleb Kuchko,2118,Wisla Plock,2026,PL1,91,Left Midfield,21,Belarus,1,0,0,0
+784429,Jorge Jiménez,2118,Wisla Plock,2026,PL1,11,Attacking Midfield,27,Spain,1,1,0,70
+321564,Adam Radwański,2118,Wisla Plock,2026,PL1,17,Central Midfield,28,Poland,1,1,0,87
+274858,Kyriakos Savvidis,2118,Wisla Plock,2026,PL1,88,Defensive Midfield,31,Greece,1,0,0,0
+252608,Patryk Kun,2118,Wisla Plock,2026,PL1,23,Left Midfield,31,Poland,1,1,0,90
+461569,Michał Król,2118,Wisla Plock,2026,PL1,62,Right Midfield,26,Poland,0,0,0,0
+273219,Krystian Pomorski,2118,Wisla Plock,2026,PL1,6,Defensive Midfield,30,Poland,1,1,0,20
+28285,Dani Pacheco,2118,Wisla Plock,2026,PL1,8,Defensive Midfield,35,Spain,1,1,0,90
+194139,Fabian Hiszpański,2118,Wisla Plock,2026,PL1,16,Right Midfield,32,Poland,1,1,0,3
+1434459,Nikodem Rogowski,2118,Wisla Plock,2026,PL1,24,Left Midfield,17,Poland,0,0,0,0
+407697,Deni Jurić,2118,Wisla Plock,2026,PL1,9,Centre-Forward,28,Australia,0,0,0,0
+652996,Said Hamulic,2118,Wisla Plock,2026,PL1,10,Centre-Forward,25,Bosnia-Herzegovina,1,1,0,63
+80769,Łukasz Sekulski,2118,Wisla Plock,2026,PL1,20,Centre-Forward,35,Poland,1,1,0,27
+1292576,Kacper Błaszkiewicz,2118,Wisla Plock,2026,PL1,22,Centre-Forward,20,Poland,0,0,0,0
 447343,Rafał Strączek,6456,GKS Katowice,2025,PL1,12,Goalkeeper,26,Poland,32,22,0,1980
 667692,Patryk Szczuka,6456,GKS Katowice,2025,PL1,0,Goalkeeper,23,Poland,5,0,0,0
 266239,Dawid Kudła,6456,GKS Katowice,2025,PL1,1,Goalkeeper,33,Poland,29,12,0,1080
@@ -3559,108 +3743,62 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 401609,Maciej Rosołek,6456,GKS Katowice,2025,PL1,0,Centre-Forward,23,Poland,11,8,0,333
 553757,Aleksander Buksa,6456,GKS Katowice,2025,PL1,0,Centre-Forward,22,Poland,6,4,0,109
 1474819,Jakub Kokosiński,6456,GKS Katowice,2025,PL1,21,Centre-Forward,18,Poland,18,6,0,54
-274047,Ivan Brkic,3527,Motor Lublin,2025,PL1,1,Goalkeeper,30,Croatia,29,27,0,2363
-689207,Gasper Tratnik,3527,Motor Lublin,2025,PL1,33,Goalkeeper,25,Slovenia,33,8,0,697
-862786,Patryk Kukulski,3527,Motor Lublin,2025,PL1,99,Goalkeeper,20,Poland,10,0,0,0
-1545440,Borys Mołdach,3527,Motor Lublin,2025,PL1,0,Goalkeeper,16,Poland,0,0,0,0
-618417,Filip Luberecki,3527,Motor Lublin,2025,PL1,24,Left-Back,20,Poland,33,31,0,2619
-523476,Thomas Santos,3527,Motor Lublin,2025,PL1,29,Right-Back,26,Denmark,8,7,0,216
-1177033,Bright Ede,3527,Motor Lublin,2025,PL1,42,Centre-Back,18,Poland,31,11,0,597
-203558,Hervé Matthys,3527,Motor Lublin,2025,PL1,3,Centre-Back,29,Belgium,30,26,0,2154
-564120,Marek Bartos,3527,Motor Lublin,2025,PL1,39,Centre-Back,28,Slovakia,30,25,1,2070
-235862,Paweł Stolarski,3527,Motor Lublin,2025,PL1,28,Right-Back,29,Poland,31,29,0,1913
-359030,Filip Wójcik,3527,Motor Lublin,2025,PL1,17,Right-Back,28,Poland,31,24,0,1042
-244792,Arkadiusz Najemski,3527,Motor Lublin,2025,PL1,18,Centre-Back,29,Poland,22,17,0,1211
-918931,Paskal Meyer,3527,Motor Lublin,2025,PL1,2,Centre-Back,20,Poland,33,5,0,217
-1194058,Artem Akatov,3527,Motor Lublin,2025,PL1,0,Centre-Back,17,Belarus,0,0,0,0
-1514469,Krystian Brzozowski,3527,Motor Lublin,2025,PL1,13,Right-Back,16,Poland,1,0,0,0
-272537,Bartosz Wolski,3527,Motor Lublin,2025,PL1,68,Defensive Midfield,28,Poland,34,34,6,2868
-215122,Ivo Rodrigues,3527,Motor Lublin,2025,PL1,7,Attacking Midfield,30,Portugal,31,31,2,2432
-181112,Sergi Samper,3527,Motor Lublin,2025,PL1,6,Defensive Midfield,30,Spain,33,30,0,1799
-623745,Kacper Karasek,3527,Motor Lublin,2025,PL1,10,Attacking Midfield,23,Poland,29,14,1,212
-387529,Jakub Łabojko,3527,Motor Lublin,2025,PL1,21,Defensive Midfield,27,Poland,33,29,1,1263
-461569,Michał Król,3527,Motor Lublin,2025,PL1,26,Right Midfield,25,Poland,30,26,1,1493
-698957,Krystian Palacz,3527,Motor Lublin,2025,PL1,0,Left Midfield,21,Poland,18,6,0,312
-384844,Mathieu Scalet,3527,Motor Lublin,2025,PL1,8,Attacking Midfield,28,France,26,20,2,599
-1060859,Christopher Simon,3527,Motor Lublin,2025,PL1,0,Attacking Midfield,25,Senegal,3,1,0,45
-1365255,Franciszek Lewandowski,3527,Motor Lublin,2025,PL1,16,Attacking Midfield,17,Poland,22,2,0,11
-1205424,Sebastian Koziej,3527,Motor Lublin,2025,PL1,0,Attacking Midfield,18,Poland,0,0,0,0
-852858,Mbaye Ndiaye,3527,Motor Lublin,2025,PL1,30,Left Winger,21,Senegal,24,24,8,1640
-622871,Karol Czubak,3527,Motor Lublin,2025,PL1,9,Centre-Forward,25,Poland,32,32,18,2561
-742506,Fábio Ronaldo,3527,Motor Lublin,2025,PL1,11,Right Winger,24,Portugal,27,27,4,1566
-335461,Renat Dadashov,3527,Motor Lublin,2025,PL1,77,Centre-Forward,26,Azerbaijan,30,21,0,451
-361071,Bradly van Hoeven,3527,Motor Lublin,2025,PL1,19,Left Winger,25,Netherlands,31,28,0,1159
-587660,Florian Haxha,3527,Motor Lublin,2025,PL1,23,Right Winger,23,Kosovo,24,7,0,96
-1106059,Kacper Plichta,3527,Motor Lublin,2025,PL1,20,Centre-Forward,18,Poland,0,0,0,0
-120970,Rafał Leszczyński,2118,Wisla Plock,2025,PL1,12,Goalkeeper,33,Poland,33,33,0,2970
-697880,Jakub Burek,2118,Wisla Plock,2025,PL1,26,Goalkeeper,22,Poland,16,1,0,90
-1121278,Stanisław Pruszkowski,2118,Wisla Plock,2025,PL1,1,Goalkeeper,20,Poland,20,0,0,0
-1308198,Oskar Klat,2118,Wisla Plock,2025,PL1,97,Goalkeeper,18,Poland,0,0,0,0
-495839,Andrias Edmundsson,2118,Wisla Plock,2025,PL1,0,Centre-Back,24,Faroe Islands,18,18,1,1620
-566983,Aleksandre Kalandadze,2118,Wisla Plock,2025,PL1,0,Centre-Back,24,Georgia,21,8,0,137
-221074,Marcus Haglind-Sangré,2118,Wisla Plock,2025,PL1,4,Centre-Back,30,Sweden,33,33,0,2970
-317035,Marin Karamarko,2118,Wisla Plock,2025,PL1,5,Centre-Back,27,Croatia,4,3,0,111
-550549,Tomás Tavares,2118,Wisla Plock,2025,PL1,84,Right-Back,24,Portugal,22,13,0,640
-129358,Marcin Kamiński,2118,Wisla Plock,2025,PL1,35,Centre-Back,33,Poland,34,34,3,3004
-144695,Nemanja Mijušković,2118,Wisla Plock,2025,PL1,25,Centre-Back,33,Montenegro,33,27,0,1400
-1171955,Matvey Bokhno,2118,Wisla Plock,2025,PL1,37,Centre-Back,17,Belarus,16,1,0,1
-1068256,Filip Zając,2118,Wisla Plock,2025,PL1,42,Centre-Back,19,Poland,9,0,0,0
-1136224,Dion Gallapeni,2118,Wisla Plock,2025,PL1,19,Left Midfield,20,Kosovo,12,10,0,670
-1073747,Dominik Sarapata,2118,Wisla Plock,2025,PL1,18,Central Midfield,17,Poland,16,7,0,226
-1018224,Wiktor Nowak,2118,Wisla Plock,2025,PL1,30,Attacking Midfield,20,Poland,33,32,4,2604
-371861,Zan Rogelj,2118,Wisla Plock,2025,PL1,21,Right Midfield,25,Slovenia,26,26,3,2258
-981937,Gleb Kuchko,2118,Wisla Plock,2025,PL1,0,Left Midfield,20,Belarus,2,0,0,0
-685887,Matchoi Djaló,2118,Wisla Plock,2025,PL1,17,Attacking Midfield,22,Portugal,30,18,0,634
-784429,Jorge Jiménez,2118,Wisla Plock,2025,PL1,11,Attacking Midfield,26,Spain,9,9,1,526
-274858,Kyriakos Savvidis,2118,Wisla Plock,2025,PL1,88,Defensive Midfield,30,Greece,8,8,1,580
-523947,Kevin Čustović,2118,Wisla Plock,2025,PL1,2,Right Midfield,25,Sweden,32,25,0,972
-332142,Quentin Lecoeuche,2118,Wisla Plock,2025,PL1,13,Left Midfield,31,France,28,28,0,1847
-201193,Dominik Kun,2118,Wisla Plock,2025,PL1,14,Defensive Midfield,32,Poland,34,33,0,2469
-273219,Krystian Pomorski,2118,Wisla Plock,2025,PL1,6,Defensive Midfield,29,Poland,34,18,0,242
-28285,Dani Pacheco,2118,Wisla Plock,2025,PL1,8,Defensive Midfield,34,Spain,31,31,2,2195
-168943,Bojan Nastic,2118,Wisla Plock,2025,PL1,0,Left Midfield,30,Bosnia-Herzegovina,15,9,0,337
-194139,Fabian Hiszpański,2118,Wisla Plock,2025,PL1,16,Right Midfield,31,Poland,33,7,0,102
-1434459,Nikodem Rogowski,2118,Wisla Plock,2025,PL1,24,Left Midfield,16,Poland,1,1,0,12
-717662,Dawid Barnowski,2118,Wisla Plock,2025,PL1,0,Right Midfield,22,Poland,6,0,0,0
-1434386,Mateusz Leśniewski,2118,Wisla Plock,2025,PL1,76,Defensive Midfield,17,Poland,5,0,0,0
-407697,Deni Jurić,2118,Wisla Plock,2025,PL1,99,Centre-Forward,27,Australia,21,19,5,1160
-652996,Said Hamulic,2118,Wisla Plock,2025,PL1,77,Centre-Forward,24,Bosnia-Herzegovina,8,7,0,355
-554404,Giannis Niarchos,2118,Wisla Plock,2025,PL1,9,Centre-Forward,23,Greece,21,20,1,794
-250358,Iban Salvador,2118,Wisla Plock,2025,PL1,66,Centre-Forward,29,Equatorial Guinea,20,17,2,704
-1283226,Bartosz Borowski,2118,Wisla Plock,2025,PL1,27,Centre-Forward,18,Poland,14,1,0,19
-80769,Łukasz Sekulski,2118,Wisla Plock,2025,PL1,20,Centre-Forward,34,Poland,29,28,8,1991
-294191,Piotr Krawczyk,2118,Wisla Plock,2025,PL1,0,Centre-Forward,30,Poland,5,3,0,27
-957890,Oskar Tomczyk,2118,Wisla Plock,2025,PL1,0,Centre-Forward,19,Poland,12,0,0,0
-447343,Rafał Strączek,6456,GKS Katowice,2026,PL1,13,Goalkeeper,27,Poland,0,0,0,0
-807782,Maciej Kikolski,6456,GKS Katowice,2026,PL1,1,Goalkeeper,22,Poland,0,0,0,0
-559998,Gabriel Kobylak,6456,GKS Katowice,2026,PL1,87,Goalkeeper,24,Poland,0,0,0,0
-1535382,Wojciech Pańkowski,6456,GKS Katowice,2026,PL1,34,Goalkeeper,17,Poland,0,0,0,0
-627717,Pau Resta,6456,GKS Katowice,2026,PL1,55,Centre-Back,25,Spain,0,0,0,0
-792523,Marius Olsen,6456,GKS Katowice,2026,PL1,14,Centre-Back,25,Norway,0,0,0,0
-237334,Lukas Klemenz,6456,GKS Katowice,2026,PL1,6,Centre-Back,30,Poland,0,0,0,0
-605746,Aleksander Paluszek,6456,GKS Katowice,2026,PL1,3,Centre-Back,25,Poland,0,0,0,0
-208441,Arkadiusz Jędrych,6456,GKS Katowice,2026,PL1,4,Centre-Back,34,Poland,0,0,0,0
-240756,Alan Czerwiński,6456,GKS Katowice,2026,PL1,30,Centre-Back,33,Poland,0,0,0,0
-1255660,Łukasz Trepka,6456,GKS Katowice,2026,PL1,25,Centre-Back,19,Poland,0,0,0,0
-919469,Mateusz Kowalczyk,6456,GKS Katowice,2026,PL1,77,Defensive Midfield,22,Poland,0,0,0,0
-374321,Eman Marković,6456,GKS Katowice,2026,PL1,15,Attacking Midfield,27,Norway,0,0,0,0
-272537,Bartosz Wolski,6456,GKS Katowice,2026,PL1,68,Defensive Midfield,29,Poland,0,0,0,0
-339693,Erik Jirka,6456,GKS Katowice,2026,PL1,97,Right Midfield,28,Slovakia,0,0,0,0
-374562,Sebastian Milewski,6456,GKS Katowice,2026,PL1,22,Defensive Midfield,28,Poland,0,0,0,0
-255910,Damian Rasak,6456,GKS Katowice,2026,PL1,26,Defensive Midfield,30,Poland,0,0,0,0
-261085,Bartosz Nowak,6456,GKS Katowice,2026,PL1,27,Attacking Midfield,32,Poland,0,0,0,0
-524043,Jesse Bosch,6456,GKS Katowice,2026,PL1,5,Defensive Midfield,26,Netherlands,0,0,0,0
-295495,Mateusz Wdowiak,6456,GKS Katowice,2026,PL1,7,Left Midfield,29,Poland,0,0,0,0
-391374,Marcin Wasielewski,6456,GKS Katowice,2026,PL1,23,Right Midfield,31,Poland,0,0,0,0
-1042499,Szymon Bartlewicz,6456,GKS Katowice,2026,PL1,31,Attacking Midfield,20,Poland,0,0,0,0
-221295,Borja Galán,6456,GKS Katowice,2026,PL1,8,Left Midfield,33,Spain,0,0,0,0
-554975,Marcel Wędrychowski,6456,GKS Katowice,2026,PL1,10,Attacking Midfield,24,Poland,0,0,0,0
-694428,Kacper Łukasiak,6456,GKS Katowice,2026,PL1,19,Defensive Midfield,22,Poland,0,0,0,0
-991455,Filip Rejczyk,6456,GKS Katowice,2026,PL1,20,Defensive Midfield,20,Poland,0,0,0,0
-128804,Adrian Błąd,6456,GKS Katowice,2026,PL1,11,Attacking Midfield,35,Poland,0,0,0,0
-523315,Ilya Shkurin,6456,GKS Katowice,2026,PL1,17,Centre-Forward,26,Belarus,0,0,0,0
-261155,Adam Zrelak,6456,GKS Katowice,2026,PL1,99,Centre-Forward,32,Slovakia,0,0,0,0
-1474819,Jakub Kokosiński,6456,GKS Katowice,2026,PL1,21,Centre-Forward,19,Poland,0,0,0,0
+587505,Nikola Cavlina,30974,Wieczysta Krakow,2026,PL1,26,Goalkeeper,24,Croatia,1,0,0,0
+826506,Antoni Mikułko,30974,Wieczysta Krakow,2026,PL1,1,Goalkeeper,21,Poland,1,1,0,90
+1007396,Patryk Stechnij,30974,Wieczysta Krakow,2026,PL1,65,Goalkeeper,19,United States,0,0,0,0
+895531,Duje Dujmovic,30974,Wieczysta Krakow,2026,PL1,55,Centre-Back,22,Croatia,1,1,0,33
+831597,Aleksandar Djermanovic,30974,Wieczysta Krakow,2026,PL1,15,Centre-Back,23,Serbia,1,1,0,90
+179896,Antonio Milic,30974,Wieczysta Krakow,2026,PL1,16,Centre-Back,32,Croatia,1,1,0,57
+489865,Matus Vojtko,30974,Wieczysta Krakow,2026,PL1,27,Left-Back,25,Slovakia,1,1,0,90
+384482,Kamil Pestka,30974,Wieczysta Krakow,2026,PL1,33,Left-Back,27,Poland,1,0,0,0
+385817,Karol Fila,30974,Wieczysta Krakow,2026,PL1,4,Right-Back,28,Poland,1,1,0,90
+255085,Kamil Dankowski,30974,Wieczysta Krakow,2026,PL1,17,Right-Back,30,Poland,1,0,0,0
+242846,Dawid Szymonowicz,30974,Wieczysta Krakow,2026,PL1,44,Centre-Back,31,Poland,1,0,0,0
+1435606,Kacper Zagrodzki,30974,Wieczysta Krakow,2026,PL1,13,Centre-Back,20,Poland,1,0,0,0
+370894,Tobias Christensen,30974,Wieczysta Krakow,2026,PL1,10,Attacking Midfield,26,Norway,1,1,0,23
+265545,Mikkel Maigaard,30974,Wieczysta Krakow,2026,PL1,20,Defensive Midfield,30,Denmark,1,1,0,90
+706511,Nikola Knezevic,30974,Wieczysta Krakow,2026,PL1,11,Defensive Midfield,23,Serbia,1,0,0,0
+366929,Ben Lederman,30974,Wieczysta Krakow,2026,PL1,8,Defensive Midfield,26,Poland,1,1,0,79
+176485,Lucas Piazón,30974,Wieczysta Krakow,2026,PL1,12,Attacking Midfield,32,Brazil,1,1,0,90
+390169,Petar Pusic,30974,Wieczysta Krakow,2026,PL1,70,Attacking Midfield,27,Switzerland,1,1,0,11
+1143675,Tobiasz Mras,30974,Wieczysta Krakow,2026,PL1,97,Attacking Midfield,19,Poland,1,1,0,22
+346903,Christopher Lungoyi,30974,Wieczysta Krakow,2026,PL1,88,Left Winger,26,Switzerland,0,0,0,0
+404949,Stefan Feiertag,30974,Wieczysta Krakow,2026,PL1,18,Centre-Forward,24,Austria,1,1,1,79
+225431,Lisandro Semedo,30974,Wieczysta Krakow,2026,PL1,7,Left Winger,30,Cape Verde,1,1,0,68
+842718,Paulinho,30974,Wieczysta Krakow,2026,PL1,9,Centre-Forward,26,Portugal,1,1,0,11
+382970,Miki Villar,30974,Wieczysta Krakow,2026,PL1,23,Right Winger,29,Spain,1,1,0,67
+553217,Jacky Donkor,30974,Wieczysta Krakow,2026,PL1,30,Left Winger,27,Belgium,0,0,0,0
+528402,Filip Majchrowicz,7154,Radomiak Radom,2026,PL1,1,Goalkeeper,26,Poland,1,1,0,90
+520503,Bartłomiej Gradecki,7154,Radomiak Radom,2026,PL1,99,Goalkeeper,26,Poland,1,0,0,0
+790524,Wiktor Koptas,7154,Radomiak Radom,2026,PL1,44,Goalkeeper,21,Poland,0,0,0,0
+1567686,Cezary Wołowiec,7154,Radomiak Radom,2026,PL1,31,Goalkeeper,18,Poland,0,0,0,0
+613437,Zié Ouattara,7154,Radomiak Radom,2026,PL1,24,Right-Back,26,Cote d'Ivoire,1,1,0,90
+604293,Steve Kingue,7154,Radomiak Radom,2026,PL1,14,Centre-Back,26,Cameroon,0,0,0,0
+514674,Conrado,7154,Radomiak Radom,2026,PL1,97,Left-Back,29,Brazil,1,1,0,84
+355335,Adrián Diéguez,7154,Radomiak Radom,2026,PL1,26,Centre-Back,30,Spain,1,1,0,90
+517845,Jérémy Blasco,7154,Radomiak Radom,2026,PL1,5,Centre-Back,27,France,1,1,0,1
+264278,Jan Grzesik,7154,Radomiak Radom,2026,PL1,13,Right-Back,31,Poland,1,1,1,90
+549312,Kryspin Szcześniak,7154,Radomiak Radom,2026,PL1,3,Centre-Back,25,Poland,1,1,0,90
+236235,Mateusz Cichocki,7154,Radomiak Radom,2026,PL1,16,Centre-Back,34,Poland,0,0,0,0
+1520380,Oskar Markiewicz,7154,Radomiak Radom,2026,PL1,33,Left-Back,26,Poland,0,0,0,0
+1165522,Szymon Kilianek,7154,Radomiak Radom,2026,PL1,47,Centre-Back,20,Poland,1,0,0,0
+249983,Roberto Alves,7154,Radomiak Radom,2026,PL1,10,Attacking Midfield,29,Switzerland,1,1,1,89
+375383,Romário Baró,7154,Radomiak Radom,2026,PL1,28,Defensive Midfield,26,Portugal,0,0,0,0
+595012,Ibrahima Camará,7154,Radomiak Radom,2026,PL1,8,Defensive Midfield,27,Guinea,1,1,0,84
+623745,Kacper Karasek,7154,Radomiak Radom,2026,PL1,23,Attacking Midfield,24,Poland,1,1,0,15
+212432,Christos Donis,7154,Radomiak Radom,2026,PL1,77,Defensive Midfield,31,Greece,1,1,0,15
+176514,Rafał Wolski,7154,Radomiak Radom,2026,PL1,27,Attacking Midfield,33,Poland,1,1,0,75
+1508263,Adam Żabicki,7154,Radomiak Radom,2026,PL1,17,Defensive Midfield,20,Poland,1,0,0,0
+1118869,Mikołaj Molendowski,7154,Radomiak Radom,2026,PL1,37,Defensive Midfield,19,Poland,0,0,0,0
+825583,Filip Koperski,7154,Radomiak Radom,2026,PL1,72,Attacking Midfield,22,Poland,1,0,0,0
+1115988,Nikolas Dohojda,7154,Radomiak Radom,2026,PL1,19,Right Midfield,21,Poland,1,0,0,0
+402825,Luquinhas,7154,Radomiak Radom,2026,PL1,82,Left Winger,29,Brazil,1,1,0,90
+836182,Ronaldo Lumungo,7154,Radomiak Radom,2026,PL1,0,Right Winger,25,Sao Tome and Principe,0,0,0,0
+640735,Abdoul Tapsoba,7154,Radomiak Radom,2026,PL1,15,Centre-Forward,24,Burkina Faso,1,1,0,75
+326030,Ché Nunnely,7154,Radomiak Radom,2026,PL1,7,Right Winger,27,Suriname,1,1,0,6
+374987,Elves Baldé,7154,Radomiak Radom,2026,PL1,21,Right Winger,26,Guinea-Bissau,1,0,0,0
+858772,Fernand Goure,7154,Radomiak Radom,2026,PL1,11,Centre-Forward,24,Cote d'Ivoire,1,1,0,6
+1152644,Manu,7154,Radomiak Radom,2026,PL1,18,Right Winger,20,Angola,1,0,0,0
 826506,Antoni Mikułko,30974,Wieczysta Krakow,2025,PL1,1,Goalkeeper,20,Poland,0,0,0,0
 965106,Kamil Soberka,30974,Wieczysta Krakow,2025,PL1,28,Goalkeeper,19,Poland,0,0,0,0
 1063079,Kacper Gutowski,30974,Wieczysta Krakow,2025,PL1,31,Goalkeeper,19,Poland,0,0,0,0
@@ -3693,92 +3831,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 864041,Natan Dziegielewski,30974,Wieczysta Krakow,2025,PL1,80,Left Winger,20,Poland,0,0,0,0
 228885,Carlitos,30974,Wieczysta Krakow,2025,PL1,27,Centre-Forward,35,Spain,0,0,0,0
 553217,Jacky Donkor,30974,Wieczysta Krakow,2025,PL1,30,Left Winger,26,Belgium,0,0,0,0
-120970,Rafał Leszczyński,2118,Wisla Plock,2026,PL1,12,Goalkeeper,34,Poland,0,0,0,0
-697880,Jakub Burek,2118,Wisla Plock,2026,PL1,26,Goalkeeper,23,Poland,0,0,0,0
-1292572,Szymon Wadas,2118,Wisla Plock,2026,PL1,0,Goalkeeper,19,Poland,0,0,0,0
-221074,Marcus Haglind-Sangré,2118,Wisla Plock,2026,PL1,4,Centre-Back,31,Sweden,0,0,0,0
-317035,Marin Karamarko,2118,Wisla Plock,2026,PL1,5,Centre-Back,28,Croatia,0,0,0,0
-129358,Marcin Kamiński,2118,Wisla Plock,2026,PL1,35,Centre-Back,34,Poland,0,0,0,0
-900848,Przemysław Misiak,2118,Wisla Plock,2026,PL1,17,Centre-Back,22,Poland,0,0,0,0
-187973,Marcin Flis,2118,Wisla Plock,2026,PL1,0,Centre-Back,32,Poland,0,0,0,0
-1197555,Marcin Więckowski,2118,Wisla Plock,2026,PL1,0,Centre-Back,21,Poland,0,0,0,0
-1136224,Dion Gallapeni,2118,Wisla Plock,2026,PL1,19,Left Midfield,21,Kosovo,0,0,0,0
-425780,Jurica Prsir,2118,Wisla Plock,2026,PL1,0,Attacking Midfield,26,Croatia,0,0,0,0
-371861,Zan Rogelj,2118,Wisla Plock,2026,PL1,21,Right Midfield,26,Slovenia,0,0,0,0
-407734,Olaf Kobacki,2118,Wisla Plock,2026,PL1,0,Attacking Midfield,25,Poland,0,0,0,0
-981937,Gleb Kuchko,2118,Wisla Plock,2026,PL1,91,Left Midfield,21,Belarus,0,0,0,0
-321564,Adam Radwański,2118,Wisla Plock,2026,PL1,0,Attacking Midfield,28,Poland,0,0,0,0
-784429,Jorge Jiménez,2118,Wisla Plock,2026,PL1,11,Attacking Midfield,27,Spain,0,0,0,0
-274858,Kyriakos Savvidis,2118,Wisla Plock,2026,PL1,88,Defensive Midfield,31,Greece,0,0,0,0
-252608,Patryk Kun,2118,Wisla Plock,2026,PL1,0,Left Midfield,31,Poland,0,0,0,0
-461569,Michał Król,2118,Wisla Plock,2026,PL1,0,Right Midfield,26,Poland,0,0,0,0
-273219,Krystian Pomorski,2118,Wisla Plock,2026,PL1,6,Defensive Midfield,30,Poland,0,0,0,0
-28285,Dani Pacheco,2118,Wisla Plock,2026,PL1,8,Defensive Midfield,35,Spain,0,0,0,0
-194139,Fabian Hiszpański,2118,Wisla Plock,2026,PL1,16,Right Midfield,32,Poland,0,0,0,0
-1434459,Nikodem Rogowski,2118,Wisla Plock,2026,PL1,24,Left Midfield,17,Poland,0,0,0,0
-1294282,Oskar Dari,2118,Wisla Plock,2026,PL1,0,Attacking Midfield,19,Poland,0,0,0,0
-407697,Deni Jurić,2118,Wisla Plock,2026,PL1,99,Centre-Forward,28,Australia,0,0,0,0
-652996,Said Hamulic,2118,Wisla Plock,2026,PL1,77,Centre-Forward,25,Bosnia-Herzegovina,0,0,0,0
-80769,Łukasz Sekulski,2118,Wisla Plock,2026,PL1,20,Centre-Forward,35,Poland,0,0,0,0
-1292576,Kacper Błaszkiewicz,2118,Wisla Plock,2026,PL1,0,Centre-Forward,20,Poland,0,0,0,0
-528402,Filip Majchrowicz,7154,Radomiak Radom,2025,PL1,1,Goalkeeper,25,Poland,34,34,0,3060
-790524,Wiktor Koptas,7154,Radomiak Radom,2025,PL1,44,Goalkeeper,20,Poland,34,0,0,0
-1126322,Michał Jerke,7154,Radomiak Radom,2025,PL1,75,Goalkeeper,19,Poland,33,0,0,0
-576121,Josh Wilson-Esbrand,7154,Radomiak Radom,2025,PL1,3,Left-Back,22,England,11,8,0,449
-613437,Zié Ouattara,7154,Radomiak Radom,2025,PL1,24,Right-Back,25,Cote d'Ivoire,33,32,2,2266
-604293,Steve Kingue,7154,Radomiak Radom,2025,PL1,14,Centre-Back,25,Cameroon,33,27,1,2346
-355335,Adrián Diéguez,7154,Radomiak Radom,2025,PL1,26,Centre-Back,29,Spain,28,28,1,2511
-517845,Jérémy Blasco,7154,Radomiak Radom,2025,PL1,5,Centre-Back,26,France,33,15,1,1148
-264278,Jan Grzesik,7154,Radomiak Radom,2025,PL1,13,Right-Back,30,Poland,34,34,7,2925
-876440,João Pedro,7154,Radomiak Radom,2025,PL1,20,Left-Back,22,Brazil,32,16,0,963
-236235,Mateusz Cichocki,7154,Radomiak Radom,2025,PL1,16,Centre-Back,33,Poland,31,5,0,271
-1520380,Oskar Markiewicz,7154,Radomiak Radom,2025,PL1,33,Left-Back,25,Poland,4,1,0,13
-415646,Bruno Jordão,7154,Radomiak Radom,2025,PL1,0,Defensive Midfield,26,Portugal,4,4,0,303
-249983,Roberto Alves,7154,Radomiak Radom,2025,PL1,10,Attacking Midfield,28,Switzerland,24,23,4,1148
-379150,Paulius Golubickas,7154,Radomiak Radom,2025,PL1,0,Attacking Midfield,25,Lithuania,6,3,0,24
-375383,Romário Baró,7154,Radomiak Radom,2025,PL1,6,Defensive Midfield,25,Portugal,28,25,2,1286
-595012,Ibrahima Camará,7154,Radomiak Radom,2025,PL1,2,Defensive Midfield,26,Guinea,32,23,0,1250
-212432,Christos Donis,7154,Radomiak Radom,2025,PL1,77,Defensive Midfield,30,Greece,29,27,0,1384
-176514,Rafał Wolski,7154,Radomiak Radom,2025,PL1,27,Attacking Midfield,32,Poland,30,30,5,2196
-385759,Michał Kaput,7154,Radomiak Radom,2025,PL1,28,Defensive Midfield,27,Poland,31,21,0,886
-1508263,Adam Żabicki,7154,Radomiak Radom,2025,PL1,17,Defensive Midfield,19,Poland,16,1,0,6
-1118869,Mikołaj Molendowski,7154,Radomiak Radom,2025,PL1,37,Defensive Midfield,18,Poland,4,0,0,0
-666545,Capita,7154,Radomiak Radom,2025,PL1,0,Left Winger,23,Angola,20,20,6,1324
-402825,Luquinhas,7154,Radomiak Radom,2025,PL1,82,Left Winger,28,Brazil,16,16,1,1300
-986786,Salifou Soumah,7154,Radomiak Radom,2025,PL1,19,Right Winger,21,Guinea,13,12,1,279
-640735,Abdoul Tapsoba,7154,Radomiak Radom,2025,PL1,15,Centre-Forward,23,Burkina Faso,31,31,6,1201
-374987,Elves Baldé,7154,Radomiak Radom,2025,PL1,21,Right Winger,25,Guinea-Bissau,28,27,5,1065
-632857,Vasco Lopes,7154,Radomiak Radom,2025,PL1,7,Right Winger,25,Cape Verde,32,31,0,1573
-227511,Maurides,7154,Radomiak Radom,2025,PL1,25,Centre-Forward,31,Brazil,34,34,8,2213
-885694,Depú,7154,Radomiak Radom,2025,PL1,0,Centre-Forward,25,Angola,12,9,1,173
-973575,Guilherme Zimovski,7154,Radomiak Radom,2025,PL1,0,Right Winger,20,Brazil,11,0,0,0
-264870,Leândro,7154,Radomiak Radom,2025,PL1,9,Right Winger,36,Brazil,25,3,0,13
-884823,Alex Niziołek,7154,Radomiak Radom,2025,PL1,0,Centre-Forward,19,Poland,6,0,0,0
-587505,Nikola Cavlina,30974,Wieczysta Krakow,2026,PL1,26,Goalkeeper,24,Croatia,0,0,0,0
-826506,Antoni Mikułko,30974,Wieczysta Krakow,2026,PL1,1,Goalkeeper,21,Poland,0,0,0,0
-1007396,Patryk Stechnij,30974,Wieczysta Krakow,2026,PL1,28,Goalkeeper,19,United States,0,0,0,0
-895531,Duje Dujmovic,30974,Wieczysta Krakow,2026,PL1,55,Centre-Back,22,Croatia,0,0,0,0
-831597,Aleksandar Djermanovic,30974,Wieczysta Krakow,2026,PL1,15,Centre-Back,23,Serbia,0,0,0,0
-179896,Antonio Milic,30974,Wieczysta Krakow,2026,PL1,16,Centre-Back,32,Croatia,0,0,0,0
-489865,Matus Vojtko,30974,Wieczysta Krakow,2026,PL1,27,Left-Back,25,Slovakia,0,0,0,0
-384482,Kamil Pestka,30974,Wieczysta Krakow,2026,PL1,33,Left-Back,27,Poland,0,0,0,0
-385817,Karol Fila,30974,Wieczysta Krakow,2026,PL1,4,Right-Back,28,Poland,0,0,0,0
-255085,Kamil Dankowski,30974,Wieczysta Krakow,2026,PL1,17,Right-Back,29,Poland,0,0,0,0
-242846,Dawid Szymonowicz,30974,Wieczysta Krakow,2026,PL1,44,Centre-Back,31,Poland,0,0,0,0
-1435606,Kacper Zagrodzki,30974,Wieczysta Krakow,2026,PL1,13,Centre-Back,20,Poland,0,0,0,0
-370894,Tobias Christensen,30974,Wieczysta Krakow,2026,PL1,10,Attacking Midfield,26,Norway,0,0,0,0
-265545,Mikkel Maigaard,30974,Wieczysta Krakow,2026,PL1,20,Defensive Midfield,30,Denmark,0,0,0,0
-706511,Nikola Knezevic,30974,Wieczysta Krakow,2026,PL1,11,Defensive Midfield,23,Serbia,0,0,0,0
-366929,Ben Lederman,30974,Wieczysta Krakow,2026,PL1,8,Defensive Midfield,26,Poland,0,0,0,0
-176485,Lucas Piazón,30974,Wieczysta Krakow,2026,PL1,12,Attacking Midfield,32,Brazil,0,0,0,0
-390169,Petar Pusic,30974,Wieczysta Krakow,2026,PL1,70,Attacking Midfield,27,Switzerland,0,0,0,0
-1143675,Tobiasz Mras,30974,Wieczysta Krakow,2026,PL1,97,Attacking Midfield,19,Poland,0,0,0,0
-346903,Christopher Lungoyi,30974,Wieczysta Krakow,2026,PL1,88,Left Winger,26,Switzerland,0,0,0,0
-404949,Stefan Feiertag,30974,Wieczysta Krakow,2026,PL1,18,Centre-Forward,24,Austria,0,0,0,0
-225431,Lisandro Semedo,30974,Wieczysta Krakow,2026,PL1,7,Left Winger,30,Cape Verde,0,0,0,0
-842718,Paulinho,30974,Wieczysta Krakow,2026,PL1,9,Centre-Forward,26,Portugal,0,0,0,0
-382970,Miki Villar,30974,Wieczysta Krakow,2026,PL1,23,Right Winger,29,Spain,0,0,0,0
-553217,Jacky Donkor,30974,Wieczysta Krakow,2026,PL1,30,Left Winger,27,Belgium,0,0,0,0
 181611,Dominik Holec,6112,Piast Gliwice,2025,PL1,30,Goalkeeper,30,Slovakia,8,6,0,540
 404345,Frantisek Plach,6112,Piast Gliwice,2025,PL1,26,Goalkeeper,33,Slovakia,24,24,0,2160
 266269,Karol Szymański,6112,Piast Gliwice,2025,PL1,33,Goalkeeper,32,Poland,32,4,0,360
@@ -3812,34 +3864,62 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 931416,Ivan Lima,6112,Piast Gliwice,2025,PL1,90,Left Winger,20,Portugal,11,3,0,51
 288228,Adrián Dalmau,6112,Piast Gliwice,2025,PL1,9,Centre-Forward,31,Spain,27,16,2,543
 251930,Jorge Félix,6112,Piast Gliwice,2025,PL1,7,Left Winger,33,Spain,33,33,4,1894
-528402,Filip Majchrowicz,7154,Radomiak Radom,2026,PL1,1,Goalkeeper,26,Poland,0,0,0,0
-520503,Bartłomiej Gradecki,7154,Radomiak Radom,2026,PL1,0,Goalkeeper,26,Poland,0,0,0,0
-790524,Wiktor Koptas,7154,Radomiak Radom,2026,PL1,44,Goalkeeper,21,Poland,0,0,0,0
-1567686,Cezary Wołowiec,7154,Radomiak Radom,2026,PL1,0,Goalkeeper,18,Poland,0,0,0,0
-613437,Zié Ouattara,7154,Radomiak Radom,2026,PL1,24,Right-Back,26,Cote d'Ivoire,0,0,0,0
-604293,Steve Kingue,7154,Radomiak Radom,2026,PL1,14,Centre-Back,26,Cameroon,0,0,0,0
-514674,Conrado,7154,Radomiak Radom,2026,PL1,0,Left-Back,29,Brazil,0,0,0,0
-355335,Adrián Diéguez,7154,Radomiak Radom,2026,PL1,26,Centre-Back,30,Spain,0,0,0,0
-517845,Jérémy Blasco,7154,Radomiak Radom,2026,PL1,5,Centre-Back,27,France,0,0,0,0
-264278,Jan Grzesik,7154,Radomiak Radom,2026,PL1,13,Right-Back,31,Poland,0,0,0,0
-549312,Kryspin Szcześniak,7154,Radomiak Radom,2026,PL1,0,Centre-Back,25,Poland,0,0,0,0
-236235,Mateusz Cichocki,7154,Radomiak Radom,2026,PL1,16,Centre-Back,34,Poland,0,0,0,0
-1520380,Oskar Markiewicz,7154,Radomiak Radom,2026,PL1,33,Left-Back,26,Poland,0,0,0,0
-249983,Roberto Alves,7154,Radomiak Radom,2026,PL1,10,Attacking Midfield,29,Switzerland,0,0,0,0
-375383,Romário Baró,7154,Radomiak Radom,2026,PL1,6,Defensive Midfield,26,Portugal,0,0,0,0
-623745,Kacper Karasek,7154,Radomiak Radom,2026,PL1,0,Attacking Midfield,24,Poland,0,0,0,0
-595012,Ibrahima Camará,7154,Radomiak Radom,2026,PL1,2,Defensive Midfield,27,Guinea,0,0,0,0
-212432,Christos Donis,7154,Radomiak Radom,2026,PL1,77,Defensive Midfield,31,Greece,0,0,0,0
-176514,Rafał Wolski,7154,Radomiak Radom,2026,PL1,27,Attacking Midfield,33,Poland,0,0,0,0
-1508263,Adam Żabicki,7154,Radomiak Radom,2026,PL1,17,Defensive Midfield,20,Poland,0,0,0,0
-1118869,Mikołaj Molendowski,7154,Radomiak Radom,2026,PL1,37,Defensive Midfield,19,Poland,0,0,0,0
-825583,Filip Koperski,7154,Radomiak Radom,2026,PL1,72,Attacking Midfield,22,Poland,0,0,0,0
-402825,Luquinhas,7154,Radomiak Radom,2026,PL1,82,Left Winger,29,Brazil,0,0,0,0
-640735,Abdoul Tapsoba,7154,Radomiak Radom,2026,PL1,15,Centre-Forward,24,Burkina Faso,0,0,0,0
-326030,Ché Nunnely,7154,Radomiak Radom,2026,PL1,0,Right Winger,27,Suriname,0,0,0,0
-374987,Elves Baldé,7154,Radomiak Radom,2026,PL1,21,Right Winger,26,Guinea-Bissau,0,0,0,0
-858772,Fernand Goure,7154,Radomiak Radom,2026,PL1,0,Centre-Forward,24,Cote d'Ivoire,0,0,0,0
-1152644,Manu,7154,Radomiak Radom,2026,PL1,0,Right Winger,20,Angola,0,0,0,0
+487603,Domen Gril,6112,Piast Gliwice,2026,PL1,75,Goalkeeper,25,Slovenia,1,1,0,90
+404345,Frantisek Plach,6112,Piast Gliwice,2026,PL1,26,Goalkeeper,34,Slovakia,0,0,0,0
+717910,Marcel Mendes-Dudziński,6112,Piast Gliwice,2026,PL1,30,Goalkeeper,21,Poland,1,0,0,0
+1155393,Dawid Rychta,6112,Piast Gliwice,2026,PL1,79,Goalkeeper,20,Poland,0,0,0,0
+1510054,Jakub Grelich,6112,Piast Gliwice,2026,PL1,47,Goalkeeper,18,Poland,0,0,0,0
+704970,Igor Drapiński,6112,Piast Gliwice,2026,PL1,29,Centre-Back,22,Poland,1,1,0,90
+465317,Juande Rivas,6112,Piast Gliwice,2026,PL1,5,Centre-Back,27,Spain,1,1,0,90
+929423,Jakub Lewicki,6112,Piast Gliwice,2026,PL1,36,Left-Back,20,Poland,1,1,0,90
+562391,Ema Twumasi,6112,Piast Gliwice,2026,PL1,99,Right-Back,29,Ghana,1,1,0,3
+937168,Elton Fikaj,6112,Piast Gliwice,2026,PL1,3,Left-Back,20,Albania,1,0,0,0
+143282,Jakub Czerwiński,6112,Piast Gliwice,2026,PL1,4,Centre-Back,34,Poland,1,0,0,0
+967336,Levis Pitan,6112,Piast Gliwice,2026,PL1,15,Centre-Back,21,Poland,1,0,0,0
+672287,Filip Borowski,6112,Piast Gliwice,2026,PL1,28,Right-Back,22,Poland,1,1,0,87
+412671,Quentin Boisgard,6112,Piast Gliwice,2026,PL1,17,Attacking Midfield,29,France,1,1,0,75
+1032923,Oskar Leśniak,6112,Piast Gliwice,2026,PL1,31,Attacking Midfield,21,Poland,1,1,0,90
+387529,Jakub Łabojko,6112,Piast Gliwice,2026,PL1,27,Defensive Midfield,28,Poland,1,1,0,90
+726397,Szczepan Mucha,6112,Piast Gliwice,2026,PL1,23,Attacking Midfield,22,Poland,1,1,0,67
+1377839,Mateusz Kopczyński,6112,Piast Gliwice,2026,PL1,16,Attacking Midfield,18,Poland,0,0,0,0
+1257586,Oliwier Maziarz,6112,Piast Gliwice,2026,PL1,18,Attacking Midfield,20,Poland,1,0,0,0
+539154,Leandro Sanca,6112,Piast Gliwice,2026,PL1,11,Right Winger,26,Guinea-Bissau,1,1,0,15
+628301,Hugo Vallejo,6112,Piast Gliwice,2026,PL1,80,Left Winger,26,Spain,1,1,0,23
+796892,Samuel Ntamack,6112,Piast Gliwice,2026,PL1,19,Centre-Forward,25,France,1,1,0,75
+325200,Jason Lokilo,6112,Piast Gliwice,2026,PL1,98,Right Winger,27,DR Congo,1,1,0,75
+470248,Andreas Katsantonis,6112,Piast Gliwice,2026,PL1,70,Centre-Forward,26,Cyprus,1,1,0,15
+931416,Ivan Lima,6112,Piast Gliwice,2026,PL1,90,Left Winger,21,Portugal,1,0,0,0
+288228,Adrián Dalmau,6112,Piast Gliwice,2026,PL1,9,Centre-Forward,32,Spain,0,0,0,0
+251930,Jorge Félix,6112,Piast Gliwice,2026,PL1,7,Left Winger,34,Spain,1,1,0,15
+1209576,Maciej Kucharski,6112,Piast Gliwice,2026,PL1,91,Centre-Forward,17,Poland,1,0,0,0
+521634,Karol Niemczycki,759,Slask Wroclaw,2026,PL1,1,Goalkeeper,27,Poland,1,0,0,0
+181135,Michał Szromnik,759,Slask Wroclaw,2026,PL1,25,Goalkeeper,33,Poland,1,1,0,90
+1019689,Hubert Śliczniak,759,Slask Wroclaw,2026,PL1,31,Goalkeeper,19,Poland,0,0,0,0
+1301689,Dominik Klint,759,Slask Wroclaw,2026,PL1,40,Goalkeeper,17,Poland,0,0,0,0
+699118,Yegor Matsenko,759,Slask Wroclaw,2026,PL1,33,Centre-Back,24,Ukraine,1,1,0,90
+636760,Irodotos Christodoulou,759,Slask Wroclaw,2026,PL1,3,Centre-Back,24,Cyprus,1,1,0,90
+353374,Lamine Ba,759,Slask Wroclaw,2026,PL1,5,Centre-Back,28,Mauritania,1,1,0,90
+1048756,Dominik Szala,759,Slask Wroclaw,2026,PL1,2,Centre-Back,20,Poland,1,0,0,0
+331871,Mariusz Malec,759,Slask Wroclaw,2026,PL1,44,Centre-Back,31,Poland,1,0,0,0
+502981,Marko Dijakovic,759,Slask Wroclaw,2026,PL1,4,Centre-Back,24,Austria,0,0,0,0
+1297238,Adrian Żulewski,759,Slask Wroclaw,2026,PL1,26,Centre-Back,19,Poland,1,0,0,0
+454628,Alex Timossi Andersson,759,Slask Wroclaw,2026,PL1,21,Right Midfield,25,Sweden,1,1,0,15
+663189,Eniss Shabani,759,Slask Wroclaw,2026,PL1,77,Defensive Midfield,23,Albania,1,1,0,15
+598448,Piotr Samiec-Talar,759,Slask Wroclaw,2026,PL1,7,Attacking Midfield,24,Poland,1,1,0,90
+583024,Luka Marjanac,759,Slask Wroclaw,2026,PL1,11,Attacking Midfield,23,Bosnia-Herzegovina,1,1,0,75
+240458,Grzegorz Tomasiewicz,759,Slask Wroclaw,2026,PL1,20,Defensive Midfield,30,Poland,1,1,0,26
+740952,Marc Llinares,759,Slask Wroclaw,2026,PL1,8,Left Midfield,26,Spain,1,1,0,90
+386230,Michał Mokrzycki,759,Slask Wroclaw,2026,PL1,14,Defensive Midfield,28,Poland,1,1,0,64
+486834,Jorge Yriarte,759,Slask Wroclaw,2026,PL1,15,Defensive Midfield,26,Venezuela,1,1,0,90
+742943,Michał Rosiak,759,Slask Wroclaw,2026,PL1,27,Right Midfield,20,Poland,1,1,0,75
+284871,Patryk Sokołowski,759,Slask Wroclaw,2026,PL1,81,Defensive Midfield,31,Poland,0,0,0,0
+335294,Damian Warchoł,759,Slask Wroclaw,2026,PL1,9,Attacking Midfield,31,Poland,0,0,0,0
+1146124,Dorian Markowski,759,Slask Wroclaw,2026,PL1,38,Defensive Midfield,18,Poland,1,0,0,0
+208168,Miłosz Kozak,759,Slask Wroclaw,2026,PL1,70,Attacking Midfield,29,Poland,0,0,0,0
+1212046,Adam Ciućka,759,Slask Wroclaw,2026,PL1,88,Attacking Midfield,18,Poland,0,0,0,0
+1334172,Przemyslaw Mazan,759,Slask Wroclaw,2026,PL1,36,Defensive Midfield,16,Poland,0,0,0,0
+508940,Malaly Dembélé,759,Slask Wroclaw,2026,PL1,10,Centre-Forward,29,France,1,1,0,26
+447367,Przemysław Banaszak,759,Slask Wroclaw,2026,PL1,19,Centre-Forward,29,Poland,1,1,1,64
 181135,Michał Szromnik,759,Slask Wroclaw,2025,PL1,25,Goalkeeper,32,Poland,0,0,0,0
 925734,Bartosz Głogowski,759,Slask Wroclaw,2025,PL1,30,Goalkeeper,19,Poland,0,0,0,0
 1019689,Hubert Śliczniak,759,Slask Wroclaw,2025,PL1,31,Goalkeeper,18,Poland,0,0,0,0
@@ -3871,61 +3951,5 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1334172,Przemyslaw Mazan,759,Slask Wroclaw,2025,PL1,36,Defensive Midfield,15,Poland,0,0,0,0
 582384,Timotej Jambor,759,Slask Wroclaw,2025,PL1,10,Centre-Forward,22,Slovakia,0,0,0,0
 447367,Przemysław Banaszak,759,Slask Wroclaw,2025,PL1,91,Centre-Forward,28,Poland,0,0,0,0
-1065336,Michał Milewski,759,Slask Wroclaw,2025,PL1,21,Right Winger,19,Poland,0,0,0,0
+1065336,Michał Milewski,759,Slask Wroclaw,2025,PL1,21,Left Winger,19,Poland,0,0,0,0
 1212056,Krystian Rostek,759,Slask Wroclaw,2025,PL1,23,Right Winger,17,Poland,0,0,0,0
-487603,Domen Gril,6112,Piast Gliwice,2026,PL1,0,Goalkeeper,25,Slovenia,0,0,0,0
-404345,Frantisek Plach,6112,Piast Gliwice,2026,PL1,26,Goalkeeper,34,Slovakia,0,0,0,0
-717910,Marcel Mendes-Dudziński,6112,Piast Gliwice,2026,PL1,0,Goalkeeper,21,Poland,0,0,0,0
-1155393,Dawid Rychta,6112,Piast Gliwice,2026,PL1,0,Goalkeeper,20,Poland,0,0,0,0
-1510054,Jakub Grelich,6112,Piast Gliwice,2026,PL1,12,Goalkeeper,18,Poland,0,0,0,0
-704970,Igor Drapiński,6112,Piast Gliwice,2026,PL1,29,Centre-Back,22,Poland,0,0,0,0
-465317,Juande Rivas,6112,Piast Gliwice,2026,PL1,5,Centre-Back,27,Spain,0,0,0,0
-929423,Jakub Lewicki,6112,Piast Gliwice,2026,PL1,36,Left-Back,20,Poland,0,0,0,0
-562391,Ema Twumasi,6112,Piast Gliwice,2026,PL1,55,Right-Back,29,Ghana,0,0,0,0
-937168,Elton Fikaj,6112,Piast Gliwice,2026,PL1,3,Left-Back,20,Albania,0,0,0,0
-143282,Jakub Czerwiński,6112,Piast Gliwice,2026,PL1,4,Centre-Back,34,Poland,0,0,0,0
-967336,Levis Pitan,6112,Piast Gliwice,2026,PL1,15,Centre-Back,21,Poland,0,0,0,0
-672287,Filip Borowski,6112,Piast Gliwice,2026,PL1,28,Right-Back,22,Poland,0,0,0,0
-412671,Quentin Boisgard,6112,Piast Gliwice,2026,PL1,17,Attacking Midfield,29,France,0,0,0,0
-1032923,Oskar Leśniak,6112,Piast Gliwice,2026,PL1,31,Attacking Midfield,21,Poland,0,0,0,0
-387529,Jakub Łabojko,6112,Piast Gliwice,2026,PL1,0,Defensive Midfield,28,Poland,0,0,0,0
-726397,Szczepan Mucha,6112,Piast Gliwice,2026,PL1,23,Attacking Midfield,22,Poland,0,0,0,0
-1377839,Mateusz Kopczyński,6112,Piast Gliwice,2026,PL1,16,Attacking Midfield,18,Poland,0,0,0,0
-1257586,Oliwier Maziarz,6112,Piast Gliwice,2026,PL1,18,Attacking Midfield,20,Poland,0,0,0,0
-1394018,Justin Daniel,6112,Piast Gliwice,2026,PL1,27,Defensive Midfield,21,Poland,0,0,0,0
-539154,Leandro Sanca,6112,Piast Gliwice,2026,PL1,11,Right Winger,26,Guinea-Bissau,0,0,0,0
-628301,Hugo Vallejo,6112,Piast Gliwice,2026,PL1,80,Left Winger,26,Spain,0,0,0,0
-796892,Samuel Ntamack,6112,Piast Gliwice,2026,PL1,0,Centre-Forward,25,France,0,0,0,0
-325200,Jason Lokilo,6112,Piast Gliwice,2026,PL1,98,Right Winger,27,DR Congo,0,0,0,0
-470248,Andreas Katsantonis,6112,Piast Gliwice,2026,PL1,70,Centre-Forward,26,Cyprus,0,0,0,0
-931416,Ivan Lima,6112,Piast Gliwice,2026,PL1,90,Left Winger,21,Portugal,0,0,0,0
-288228,Adrián Dalmau,6112,Piast Gliwice,2026,PL1,9,Centre-Forward,32,Spain,0,0,0,0
-251930,Jorge Félix,6112,Piast Gliwice,2026,PL1,7,Left Winger,34,Spain,0,0,0,0
-1209576,Maciej Kucharski,6112,Piast Gliwice,2026,PL1,0,Centre-Forward,17,Poland,0,0,0,0
-521634,Karol Niemczycki,759,Slask Wroclaw,2026,PL1,0,Goalkeeper,27,Poland,0,0,0,0
-181135,Michał Szromnik,759,Slask Wroclaw,2026,PL1,25,Goalkeeper,33,Poland,0,0,0,0
-1019689,Hubert Śliczniak,759,Slask Wroclaw,2026,PL1,31,Goalkeeper,19,Poland,0,0,0,0
-699118,Yegor Matsenko,759,Slask Wroclaw,2026,PL1,33,Centre-Back,24,Ukraine,0,0,0,0
-636760,Irodotos Christodoulou,759,Slask Wroclaw,2026,PL1,0,Centre-Back,24,Cyprus,0,0,0,0
-353374,Lamine Ba,759,Slask Wroclaw,2026,PL1,5,Centre-Back,28,Mauritania,0,0,0,0
-1048756,Dominik Szala,759,Slask Wroclaw,2026,PL1,0,Centre-Back,20,Poland,0,0,0,0
-331871,Mariusz Malec,759,Slask Wroclaw,2026,PL1,44,Centre-Back,31,Poland,0,0,0,0
-502981,Marko Dijakovic,759,Slask Wroclaw,2026,PL1,4,Centre-Back,24,Austria,0,0,0,0
-916875,Szymon Rygiel,759,Slask Wroclaw,2026,PL1,39,Centre-Back,22,Poland,0,0,0,0
-454628,Alex Timossi Andersson,759,Slask Wroclaw,2026,PL1,0,Right Midfield,25,Sweden,0,0,0,0
-663189,Eniss Shabani,759,Slask Wroclaw,2026,PL1,0,Defensive Midfield,23,Albania,0,0,0,0
-598448,Piotr Samiec-Talar,759,Slask Wroclaw,2026,PL1,7,Attacking Midfield,24,Poland,0,0,0,0
-240458,Grzegorz Tomasiewicz,759,Slask Wroclaw,2026,PL1,0,Defensive Midfield,30,Poland,0,0,0,0
-583024,Luka Marjanac,759,Slask Wroclaw,2026,PL1,11,Attacking Midfield,23,Bosnia-Herzegovina,0,0,0,0
-740952,Marc Llinares,759,Slask Wroclaw,2026,PL1,8,Left Midfield,26,Spain,0,0,0,0
-386230,Michał Mokrzycki,759,Slask Wroclaw,2026,PL1,14,Defensive Midfield,28,Poland,0,0,0,0
-486834,Jorge Yriarte,759,Slask Wroclaw,2026,PL1,15,Defensive Midfield,26,Venezuela,0,0,0,0
-742943,Michał Rosiak,759,Slask Wroclaw,2026,PL1,27,Right Midfield,20,Poland,0,0,0,0
-284871,Patryk Sokołowski,759,Slask Wroclaw,2026,PL1,81,Defensive Midfield,31,Poland,0,0,0,0
-335294,Damian Warchoł,759,Slask Wroclaw,2026,PL1,9,Attacking Midfield,31,Poland,0,0,0,0
-1146124,Dorian Markowski,759,Slask Wroclaw,2026,PL1,38,Defensive Midfield,18,Poland,0,0,0,0
-208168,Miłosz Kozak,759,Slask Wroclaw,2026,PL1,70,Attacking Midfield,29,Poland,0,0,0,0
-1212046,Adam Ciućka,759,Slask Wroclaw,2026,PL1,77,Attacking Midfield,18,Poland,0,0,0,0
-1334172,Przemyslaw Mazan,759,Slask Wroclaw,2026,PL1,36,Defensive Midfield,16,Poland,0,0,0,0
-508940,Malaly Dembélé,759,Slask Wroclaw,2026,PL1,0,Centre-Forward,29,France,0,0,0,0
-447367,Przemysław Banaszak,759,Slask Wroclaw,2026,PL1,19,Centre-Forward,29,Poland,0,0,0,0

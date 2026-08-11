@@ -1,10 +1,767 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
 1210866,Thulani Jingana,2026-03-31T14:00:00+00:00,2026,AFCQ,19,True,4841196,2,13675,home,13953,1,2,played,8,4,False,90,0,0,0,0,0,0,,,,0,0
 1210866,Thulani Jingana,2026-03-25T16:00:00+00:00,2026,AFCQ,19,True,4841190,1,13675,away,13953,0,2,played,8,4,False,90,0,0,0,0,0,0,,,,0,0
+968146,Thuso Moleleki,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968146,Thuso Moleleki,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566502,Monnapule Saleng,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210869,Siyabulela Mabele,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210869,Siyabulela Mabele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210862,Gomolemo Khoto,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210862,Gomolemo Khoto,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+160558,Letsie Koapeng,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+160558,Letsie Koapeng,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1239749,Thabang Mahlangu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,1,0,0,1,,,,0,0
+1239749,Thabang Mahlangu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
+1097623,John Mokone,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1097623,John Mokone,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,24,4,False,79,0,0,1,0,0,1,,,79,0,0
+1367103,Siyabonga Ndlozi,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1367103,Siyabonga Ndlozi,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
+967832,Tshepo Kakora,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,14,10,False,90,0,1,1,0,0,1,,,,0,0
+983264,Banele Gama,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+983264,Banele Gama,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+437660,Wonderboy Makhubu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,34,0,False,5,0,0,0,0,0,0,,85,,0,0
+566592,Mcedi Vandala,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566592,Mcedi Vandala,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+699360,Thabang Sibanyoni,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+472047,Motsie Matima,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,35,6,False,68,0,0,0,0,0,0,,,68,0,0
+853132,Glody Lilepo,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+312253,Jaisen Clifford,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,in squad,70,,False,0,0,0,0,0,0,0,,,,0,0
+531279,Goodman Mosele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,20,7,True,90,0,0,3,0,3,0,,,,0,0
+1210358,Thapelo Mokobodi,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,2,1,1,0,,,,0,0
+1210358,Thapelo Mokobodi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1255411,Langelihle Phili,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,70,0,False,27,0,0,2,0,2,0,,63,,0,0
+1255411,Langelihle Phili,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+647576,Fezile Gcaba,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+647576,Fezile Gcaba,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,4,5,False,79,0,0,0,0,0,0,,,79,0,0
+1145004,Isaac Cissé,2026-08-09T14:00:00+00:00,2026,BE1,1,False,4911793,1,172,home,2727,3,1,played,19,0,False,45,0,1,0,0,0,0,,46,,0,0
+341967,Gadinkame Modise,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+341967,Gadinkame Modise,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,27,0,False,45,0,0,0,0,0,0,,46,,0,0
+675796,Muzomuhle Khanyi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,40,0,False,21,0,0,0,0,0,0,90,69,,0,0
+1526357,Matthew Marou,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+540918,Giovanni Philander,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+540918,Giovanni Philander,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,18,11,False,45,0,1,2,1,1,0,,,46,0,0
+478498,Ashley du Preez,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+556784,Sphiwe Msimango,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+343763,Ismail Watenga,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+175577,Ronwen Williams,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+565900,Siphesihle Maduna,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+304951,Jody February,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+353432,Aubrey Modiba,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,2,0,1,1,,,,0,0
+1283140,Khulumani Ndamane,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+160572,Reyaad Pieterse,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+478520,Fawaaz Basadien,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,4,1,2,1,,,,0,0
+390595,Keanu Cupido,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1317634,Malibongwe Khoza,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+801354,Zuko Mdunyelwa,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+659775,Kegan Johannes,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,3,0,2,1,,,,0,0
+1131788,Thato Sibiya,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+573039,Divine Lunga,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+297509,Thapelo Morena,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+367468,Nuno Santos,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+436372,Teboho Mokoena,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,6,2,4,0,,,,0,0
+495271,Bathusi Aubaas,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1131790,Gomolemo Kekana,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+337884,Iqraam Rayners,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+478366,Miguel Reisinho,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+512980,Tashreeq Matthews,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,2,1,0,1,,,,0,0
+905691,Arthur Sales,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,injured,,,False,0,0,0,0,0,0,0,,,,65,0
+862145,Brayan León,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+983330,Thapelo Maseko,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1119031,Siyabonga Mabena,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1131793,Bennet Mokoena,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,3,1,1,1,,,,0,0
+1246263,Kutlwano Lethlaku,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+560463,Neo Maema,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1163085,Siyanda Ndlovu,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+898140,Antonio Van Wyk,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,injured,,,False,0,0,0,2,2,0,0,,,,101,0
+990590,Aphelele Teto,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1312701,Siyabonga Dladla,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1312701,Siyabonga Dladla,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+390478,Kobamelo Kodisang,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,6356,home,21202,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+453370,Sipho Chaine,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
+399068,Nkosinathi Sibisi,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+399068,Nkosinathi Sibisi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,5,3,True,90,0,0,0,0,0,0,,,,0,0
+994370,Kamogelo Sebelebele,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+994370,Kamogelo Sebelebele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,36,5,False,75,0,0,0,0,0,0,,,75,0,0
+514175,Deano Van Rooyen,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+514175,Deano Van Rooyen,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1052916,Neo Rapoo,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1052916,Neo Rapoo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,19,0,False,15,0,0,0,0,0,0,,75,,0,0
+329542,Tapelo Xoki,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,injured,,,False,0,0,0,0,0,0,0,,,,311,0
+329542,Tapelo Xoki,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,injured,,,False,0,0,0,0,0,0,0,,,,311,0
+1042094,Lebone Seema,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,2,0,1,1,,,,0,0
+1042094,Lebone Seema,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,6,3,False,90,0,1,1,0,1,0,,,,0,0
+1126593,Nkosikhona Ndaba,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,2,0,1,1,,,,0,0
+1126593,Nkosikhona Ndaba,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+966666,Mpho Chabatsane,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+966666,Mpho Chabatsane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+735697,Thalente Mbatha,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,4,2,1,1,,,,0,0
+735697,Thalente Mbatha,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,16,7,False,90,0,0,2,0,1,1,,,,0,0
+555606,Patrick Maswanganyi,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,3,2,0,1,,,,0,0
+555606,Patrick Maswanganyi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,28,10,False,75,0,0,1,1,0,0,28,,75,0,0
+273903,Deon Hotto,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+273903,Deon Hotto,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,7,4,False,75,0,0,2,1,1,0,,,75,0,0
+264903,Andre de Jong,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+264903,Andre de Jong,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+304978,Sihle Nduli,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+304978,Sihle Nduli,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210357,Masindi Nemtajela,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210357,Masindi Nemtajela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211159,Mthetheleli Mthiyane,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211159,Mthetheleli Mthiyane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+1423790,Abdoulaye Mariko,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1423790,Abdoulaye Mariko,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+1407743,Cemran Dansin,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,2,0,2,0,,,,0,0
+1407743,Cemran Dansin,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,46,7,False,90,0,0,0,0,0,0,,,,0,0
+537741,Kabelo Dlamini,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+537741,Kabelo Dlamini,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+1404746,Simphiwe Selepe,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1404746,Simphiwe Selepe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1151539,Cebo Mchunu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1151539,Cebo Mchunu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1433390,Matome Mmolai,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1433390,Matome Mmolai,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+746781,Evidence Makgopa,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+746781,Evidence Makgopa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+673381,Oswin Appollis,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,3,1,0,2,,,,0,0
+673381,Oswin Appollis,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,12,11,False,66,1,0,3,1,1,1,,,66,0,0
+1028883,Yanela Mbuthuma,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+1028883,Yanela Mbuthuma,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,9,14,False,66,0,0,0,0,0,0,,,66,0,0
+604391,Ghampani Lungu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,2,2,0,0,,,,0,0
+604391,Ghampani Lungu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,23,0,False,15,0,0,0,0,0,0,,75,,0,0
+1147135,Daniel Msendami,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1147135,Daniel Msendami,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+844485,Tshepang Moremi,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,6,1,5,0,,,,0,0
+844485,Tshepang Moremi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,11,12,False,90,1,0,1,1,0,0,,,,0,0
+959354,Boitumelo Radiopane,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,7,2,4,1,,,,0,0
+959354,Boitumelo Radiopane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,25,0,False,24,0,0,1,0,1,0,,66,,0,0
+395652,Sebastian Pedersen,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+395652,Sebastian Pedersen,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1515314,Bohlale Ngwato,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1515314,Bohlale Ngwato,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+967272,Kabelo Kgositsile,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,2557,home,14187,0,0,not in squad,,,False,0,0,0,4,0,2,2,,,,0,0
+967272,Kabelo Kgositsile,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,49,0,False,24,0,0,1,1,0,0,,66,,0,0
+1575188,Simphiwe Masilela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,2557,home,54142,2,0,played,48,0,False,15,0,0,0,0,0,0,,75,,0,0
+945876,Fiacre Ntwari,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+268567,Brandon Petersen,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+268567,Brandon Petersen,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,1,1,True,90,0,0,0,0,0,0,,,,0,0
+1131781,Takalani Mazhamba,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1131781,Takalani Mazhamba,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+579037,Thabiso Monyane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,2,5,False,90,0,0,1,0,1,0,,,,0,0
+579037,Thabiso Monyane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,2,5,False,90,0,0,1,0,1,0,,,,0,0
+555209,Bradley Cross,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+555209,Bradley Cross,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+341955,Reeve Frosler,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,39,4,False,90,0,0,2,1,1,0,,,,0,0
+465645,Inácio Miguel,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,84,3,True,90,0,0,0,0,0,0,,,,0,0
+465645,Inácio Miguel,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,84,3,False,90,0,0,0,0,0,0,,,,0,0
+844367,Rushwin Dortley,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+844367,Rushwin Dortley,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,injured,,,False,0,0,0,0,0,0,0,,,,165,0
+965990,Aden McCarthy,2026-08-05T17:10:00+00:00,2026,CLQ,10,False,4973492,5,63993,away,678,1,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+965990,Aden McCarthy,2026-07-28T15:00:00+00:00,2026,CLQ,10,False,4897911,4,63993,away,6251,2,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 965990,Aden McCarthy,2026-07-21T16:00:00+00:00,2026,CLQ,10,False,4897899,3,63993,home,6251,1,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 965990,Aden McCarthy,2026-07-14T17:30:00+00:00,2026,CLQ,10,False,4897199,2,63993,away,10734,2,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 965990,Aden McCarthy,2026-07-07T16:00:00+00:00,2026,CLQ,10,False,4897185,1,63993,home,10734,2,0,played,4,3,False,1,0,0,0,0,0,0,,90,,0,0
+478611,Dillan Solomons,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
+332245,Zitha Kwinika,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+332245,Zitha Kwinika,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+467610,Nkanyiso Shinga,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,injured,,,False,0,0,0,0,0,0,0,,,,214,0
+467610,Nkanyiso Shinga,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,injured,,,False,0,0,0,0,0,0,0,,,,214,0
+446715,Siphesihle Ndlovu,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,8,0,False,3,0,0,0,0,0,0,90,87,,0,0
+446715,Siphesihle Ndlovu,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,8,7,False,45,0,0,1,0,1,0,45,,46,0,0
+1235402,Mfundo Vilakazi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,28,8,False,79,0,0,2,0,1,1,,,79,0,0
+1235402,Mfundo Vilakazi,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,28,11,False,90,0,1,2,1,0,1,,,,0,0
+827517,Sibongiseni Mthethwa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,5,0,False,45,0,0,0,0,0,0,,46,,0,0
+471293,Nkosingiphile Ngcobo,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,12,0,False,12,0,0,0,0,0,0,,78,,0,0
+420543,Lebohang Maboe,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,6,6,False,90,0,0,6,2,3,1,,,,0,0
+420543,Lebohang Maboe,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,6,7,False,90,0,1,2,0,1,1,,,,0,0
+471286,Thabo Cele,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+471286,Thabo Cele,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1438881,Thulani Mabaso,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1438881,Thulani Mabaso,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+636911,Ethan Chislett,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+636911,Ethan Chislett,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,23,10,False,78,0,0,0,0,0,0,,,78,0,0
+341952,Khanyisa Mayo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,injured,,,False,0,0,0,0,0,0,0,,,,19,0
+341952,Khanyisa Mayo,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,injured,,,False,0,0,0,0,0,0,0,,,,19,0
+494812,Etiosa Ighodaro,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,50,0,False,27,0,0,1,0,1,0,,63,,0,0
+494812,Etiosa Ighodaro,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,in squad,50,,False,0,0,0,0,0,0,0,,,,0,0
+1093091,Wandile Duba,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,47,14,False,63,0,0,2,0,1,1,,,63,0,0
+1093091,Wandile Duba,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,47,0,False,45,2,0,2,2,0,0,,46,,0,0
+356450,Flávio Silva,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+356450,Flávio Silva,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,77,14,False,45,1,0,2,1,0,1,,,46,0,0
+613120,Pule Mmodi,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,13,0,False,5,0,0,0,0,0,0,,85,,0,0
+1131780,Luke Baartman,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,11,9,False,87,0,0,2,1,1,0,,,87,0,0
+1131780,Luke Baartman,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,played,11,12,False,85,0,0,1,1,0,0,74,,85,0,0
+699343,Asanele Velebayi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+699343,Asanele Velebayi,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+401811,Gastón Sirino,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+401811,Gastón Sirino,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,8,0,False,45,0,0,0,0,0,0,,46,,0,0
+282252,Tashreeq Morris,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+282252,Tashreeq Morris,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,9,0,False,22,0,0,1,0,1,0,,68,,0,0
+605905,Melusi Buthelezi,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+605905,Melusi Buthelezi,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
+1071030,Tshepho Mashiloane,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1071030,Tshepho Mashiloane,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,17,5,False,90,0,0,1,1,0,0,,,,0,0
+845966,Thabiso Sesane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,4,3,False,90,0,1,0,0,0,0,,,,0,0
+647573,Thabiso Lebitso,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,37,5,False,90,0,0,0,0,0,0,,,,0,0
+253848,Bandile Shandu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+253848,Bandile Shandu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,2,0,False,11,0,0,0,0,0,0,,79,,0,0
+803083,Selaelo Rasebotja,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
+1125037,Relebohile Mofokeng,2026-08-08T18:45:00+00:00,2026,BE1,1,False,4911789,1,3948,away,968,5,1,played,38,0,False,30,1,0,1,1,0,0,,60,,0,0
+1125037,Relebohile Mofokeng,2026-08-04T18:00:00+00:00,2026,CLQ,10,False,4973496,5,3948,home,501,3,3,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
+1125037,Relebohile Mofokeng,2026-07-31T18:30:00+00:00,2026,BESC,9,False,4897717,1,3948,away,2282,6,5,played,38,14,False,29,0,0,2,1,1,0,,61,,0,0
+1106548,Sinoxolo Kwayiba,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,14,14,False,90,0,0,2,0,2,0,,,,0,0
+1331543,Faveur Wilfried Kouassi,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1331543,Faveur Wilfried Kouassi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+514203,Riaan Hanamub,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
+647578,Keenan Phillips,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+647578,Keenan Phillips,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+420526,Sandile Mthethwa,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+420526,Sandile Mthethwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
+243750,Taariq Fielies,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,12,3,False,90,0,0,0,0,0,0,61,,,0,0
+1282163,Omega Mdaka,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1282163,Omega Mdaka,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,3,9,False,90,0,0,0,0,0,0,,,,0,0
+1412025,Asanda Mzobe,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1412025,Asanda Mzobe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1434466,Minenhle Ngcobo,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1434466,Minenhle Ngcobo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401865,Wandile Dube,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401865,Wandile Dube,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968671,Langelihle Mhlongo,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968671,Langelihle Mhlongo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,in squad,50,,False,0,0,0,0,0,0,0,,,,0,0
+1467500,Onke Ncama,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1467500,Onke Ncama,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+801759,Gape Moralo,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+801759,Gape Moralo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,38,7,False,90,0,0,1,0,1,0,,,,0,0
+967603,Liam Bern,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+967603,Liam Bern,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+1390564,Bayanda Thabede,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1390564,Bayanda Thabede,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+922359,Gustavo Lopes,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+922359,Gustavo Lopes,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1370592,Siphamandla Zikhali,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+1370592,Siphamandla Zikhali,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,19,7,False,76,0,0,0,0,0,0,32,,76,0,0
+1140190,Luyolo Slatsha,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1140190,Luyolo Slatsha,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1450951,Rocco Rocha,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1450951,Rocco Rocha,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+699337,Mlondi Mbanjwa,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+699337,Mlondi Mbanjwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,15,12,False,85,0,0,2,0,2,0,,,85,0,0
+312245,Ryan Moon,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+312245,Ryan Moon,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1238624,Andiswa Sithole,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1238624,Andiswa Sithole,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,11,0,False,1,0,0,0,0,0,0,,90,,0,0
+1210349,Athini Maqokola,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,1,1,0,0,,,,0,0
+1210349,Athini Maqokola,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,2,11,False,90,0,0,3,2,1,0,24,,90,0,0
+934180,Thandolwenkosi Ngwenya,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,4,3,1,0,,,,0,0
+934180,Thandolwenkosi Ngwenya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,23,14,False,76,1,0,1,1,0,0,,,76,0,0
+849262,Khomotjo Lekoloane,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+849262,Khomotjo Lekoloane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,8,0,False,5,0,0,0,0,0,0,,85,,0,0
+1434465,Thandanani Mhlongo,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1434465,Thandanani Mhlongo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1370535,Thapelo Matlhoko,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1370535,Thapelo Matlhoko,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,played,21,0,False,14,0,0,0,0,0,0,90,76,,0,0
+332246,Hendrick Ekstein,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+332246,Hendrick Ekstein,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
+1318657,Senzo Ndlovu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1318657,Senzo Ndlovu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146303,Moses Shumah,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,9370,home,85501,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146303,Moses Shumah,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,9370,away,23287,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+512979,Renaldo Leaner,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,in squad,16,0,False,0,0,0,0,0,0,0,,,,0,0
+512979,Renaldo Leaner,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+655033,Karabo Molefe,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+655033,Karabo Molefe,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401168,Sifiso Timba,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401168,Sifiso Timba,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+579124,Thabo Moloisane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,in squad,42,0,False,0,0,0,0,0,0,0,,,,0,0
+579124,Thabo Moloisane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
+1575438,Kabelo Nkgwesa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
+1069610,Samkelo Zwane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069610,Samkelo Zwane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+590268,Adolf Bitegeko,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,568,home,7011,0,1,played,22,6,False,87,0,0,1,0,0,1,,,87,0,0
+590268,Adolf Bitegeko,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,568,away,120423,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+407787,Toaster Nsabata,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+407787,Toaster Nsabata,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+1401161,Kgoleng Ratisani,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401161,Kgoleng Ratisani,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+932630,Manuel Sapunga,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+932630,Manuel Sapunga,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1279745,Vuyo Letlapa,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,3,2,0,1,,,,0,0
+1279745,Vuyo Letlapa,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+846303,Bright Ndlovu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,2,1,1,0,,,,0,0
+846303,Bright Ndlovu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,3,14,False,90,1,0,4,1,1,2,64,,,0,0
+1417104,Medupi Thokolo,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1417104,Medupi Thokolo,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+827515,Tsepo Matsimbi,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+827515,Tsepo Matsimbi,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,28,3,False,90,0,0,0,0,0,0,47,,,0,0
+236047,Daniel Cardoso,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+236047,Daniel Cardoso,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
+1096437,Sikhosonke Langa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+533545,Siphesihle Mkhize,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+533545,Siphesihle Mkhize,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,15,6,False,90,0,0,0,0,0,0,,,,0,0
+529929,Thato Khiba,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+529929,Thato Khiba,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,12,0,False,14,0,0,0,0,0,0,,76,,0,0
+443160,Vusimuzi Mncube,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+443160,Vusimuzi Mncube,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1399214,Karabo Tlaka,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1399214,Karabo Tlaka,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+920840,Sydney Malivha,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+920840,Sydney Malivha,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1544716,Ayabonga Mokgalaka,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,43,,False,0,0,0,0,0,0,0,,,,0,0
+605904,Chibuike Ohizu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+605904,Chibuike Ohizu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+983244,Mpho Rammala,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,3,2,0,1,,,,0,0
+983244,Mpho Rammala,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,11,11,False,76,0,0,1,0,0,1,,,76,0,0
+547130,Sphiwe Mahlangu,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,38,0,False,22,0,0,0,0,0,0,,68,,0,0
+448767,Lehlohonolo Mojela,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+448767,Lehlohonolo Mojela,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,21,12,False,76,0,1,0,0,0,0,,,76,0,0
+1319477,Tshepo Mokoane,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,1,1,0,0,,,,0,0
+1319477,Tshepo Mokoane,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,31,10,False,90,0,0,3,2,1,0,,,,0,0
+1101248,Olerato Mandi,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1101248,Olerato Mandi,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+568411,Tidiane Diomandé,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+568411,Tidiane Diomandé,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211172,Malekgene Mampuru,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211172,Malekgene Mampuru,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+985178,D'Angelo Kazeem,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+985178,D'Angelo Kazeem,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,29,4,False,90,0,0,0,0,0,0,,,,0,0
+435086,Nyiko Mobbie,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+435086,Nyiko Mobbie,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,2,0,False,14,0,0,0,0,0,0,,76,,0,0
+964052,Athenkosi Mcaba,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+964052,Athenkosi Mcaba,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
+471292,Givemore Khupe,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,1,1,0,0,,,,0,0
+471292,Givemore Khupe,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,played,33,6,False,90,0,0,0,0,0,0,77,,,0,0
+1097627,Mokibelo Ramabu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,1,0,0,1,,,,0,0
+1040039,Bethuel Muzeu,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1040039,Bethuel Muzeu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1351516,Oageng Phiri,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1351516,Oageng Phiri,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1515867,Thabo Nkwana,2026-08-09T13:00:00+00:00,2026,SFAL,8,False,4986937,1,85501,away,9370,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1515867,Thabo Nkwana,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,85501,home,14187,1,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+160289,Sage Stephens,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,17,1,True,90,0,0,0,0,0,0,,,,0,0
+1001899,Dublin Boon,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+529332,Turan Manafov,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1235103,Siviwe Nkwali,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,26,0,False,28,0,0,0,0,0,0,,62,,0,0
+744153,Genino Palace,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,19,7,False,76,0,0,0,0,0,0,,,76,0,0
+809634,Chumani Butsaka,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,33,7,False,85,0,0,0,0,0,0,,,85,0,0
+1245613,Vuyolwethu Andrieas,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
+852608,Devin Titus,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,7,0,False,28,0,0,0,0,0,0,,62,,0,0
+609606,Sanele Barns,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,30,12,False,66,0,0,3,0,1,2,,,66,0,0
+1107984,Faiz Abrahams,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1191223,Shakeel April,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+888618,Nathan Garrow,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+538416,Terrence Mashego,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1517729,Luthando Vena,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,4,3,False,90,0,0,1,0,0,1,45,,,0,0
+1044311,Qobolwakhe Sibande,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1351523,Surprise Nhlabathi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
+397495,Tlakusani Mthethwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,6,6,False,90,0,0,0,0,0,0,,,,0,0
+1575193,Quwan Plaatjies,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
+1575190,Raoul Daniels,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,32,11,False,76,0,0,0,0,0,0,,,76,0,0
+1486245,Keanan Johannesen,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,20,0,False,14,0,0,1,0,1,0,,76,,0,0
+1575191,Orlando Avuzwa Mbembe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969872,1,23287,home,9370,0,1,played,24,12,False,62,0,0,3,1,1,1,,,62,0,0
+277485,Thakasani Mbanjwa,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,in squad,27,0,False,0,0,0,0,0,0,0,,,,0,0
+277485,Thakasani Mbanjwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
+636482,Edward Maova,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,34,1,False,90,0,0,0,0,0,0,,,,0,0
+636482,Edward Maova,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,34,1,False,90,0,0,0,0,0,0,,,,0,0
+419639,Xolani Ngcobo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+419639,Xolani Ngcobo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+341953,Sanele Tshabalala,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+861639,Sbonelo Cele,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,30,4,False,90,0,0,0,0,0,0,,,,0,0
+861639,Sbonelo Cele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,30,4,False,87,0,0,0,0,0,0,,,87,0,0
+1175083,Ayanda Jiyane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
+1175083,Ayanda Jiyane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
+651162,Themba Mantshiyane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,in squad,35,0,False,0,0,0,0,0,0,0,,,,0,0
+651162,Themba Mantshiyane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+1163149,Sabelo Sithole,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,in squad,29,0,False,0,0,0,0,0,0,0,,,,0,0
+1163149,Sabelo Sithole,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,29,0,False,11,0,0,0,0,0,0,86,79,,0,0
+1438111,Ntandoyenkosi Mabaso,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,38,3,False,90,0,0,1,0,1,0,,,,0,0
+1438111,Ntandoyenkosi Mabaso,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,38,3,False,90,0,0,2,0,2,0,,,,0,0
+993117,Khulekani Shezi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,3,5,False,90,1,0,1,1,0,0,,,,0,0
+993117,Khulekani Shezi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1487244,Mfanuvela Mafuleka,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1487244,Mfanuvela Mafuleka,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1013380,Nduduzo Mhlongo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1013380,Nduduzo Mhlongo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352392,Osborn Maluleke,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352392,Osborn Maluleke,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,20,0,False,3,0,0,1,0,0,1,,87,,0,0
+126635,Gladwin Shitolo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+126635,Gladwin Shitolo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+965959,Ayabulela Maxwele,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,25,7,False,90,0,0,0,0,0,0,,,,0,0
+965959,Ayabulela Maxwele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,25,10,False,90,0,0,1,1,0,0,,,,0,0
+160649,Thabo Matlaba,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+160649,Thabo Matlaba,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1096439,Nhlanhla Zwane,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,41,7,False,90,0,0,0,0,0,0,,,,0,0
+1096439,Nhlanhla Zwane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,41,7,False,90,0,0,2,1,1,0,,,,0,0
+730591,Nqobeko Dlamini,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,24,6,False,90,0,0,0,0,0,0,,,,0,0
+730591,Nqobeko Dlamini,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,24,6,False,90,0,0,4,1,1,2,,,,0,0
+1438112,Sboniso Madonsela,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1438112,Sboniso Madonsela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,47,0,False,11,0,0,0,0,0,0,,79,,0,0
+291072,Lungelo Dube,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+291072,Lungelo Dube,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+291082,Nduduzo Sibiya,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+291082,Nduduzo Sibiya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+912585,Sazi Gumbi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+912585,Sazi Gumbi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+730561,Siphesile Msomi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+730561,Siphesile Msomi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+847379,Junior Dion,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,18,14,False,78,0,0,1,0,0,1,,,78,0,0
+847379,Junior Dion,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1102171,Jerome Karelse,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,22,0,False,11,0,0,0,0,0,0,,79,,0,0
+1102171,Jerome Karelse,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,22,0,False,11,0,0,0,0,0,0,,79,,0,0
+1068638,Philani Kumalo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,36,12,False,79,0,1,2,1,0,1,,,79,0,0
+1068638,Philani Kumalo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,36,11,False,79,0,0,1,0,1,0,,,79,0,0
+647908,Angelo Van Rooi,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,14,0,False,3,0,0,0,0,0,0,,87,,0,0
+647908,Angelo Van Rooi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+799626,Lungelo Nguse,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+799626,Lungelo Nguse,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,40,14,False,61,0,0,0,0,0,0,,,61,0,0
+1441818,Nhlanhla Gasa,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,in squad,49,0,False,0,0,0,0,0,0,0,,,,0,0
+1441818,Nhlanhla Gasa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
+1237929,Lwanda Mbanjwa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+985149,Bongani Cele,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+985149,Bongani Cele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1450627,Andiswa Booysen,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1450627,Andiswa Booysen,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352411,Thokozani Khumalo,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,17,0,False,12,0,0,1,0,1,0,,78,,0,0
+1352411,Thokozani Khumalo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,17,0,False,29,0,0,1,1,0,0,,61,,0,0
+1163148,Sanele Radebe,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1163148,Sanele Radebe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1334575,Philani Sithebe,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+315816,Salim Magoola,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+723960,Ian Otieno,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+1211148,Nhlakanipho Ngcobo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1434879,Siphesihle Mtshali,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+548173,Simphiwe Mcineka,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,25,3,True,90,1,0,1,1,0,0,,,,0,0
+478467,Thabani Zuke,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+862057,Lwandile Mabuya,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,22,5,False,90,0,0,0,0,0,0,,,,0,0
+1280696,Sbani Khumalo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+337877,Tshepo Mabua,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+260981,Thembela Sikhakhane,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1385671,Sanele Zulu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1550997,Siphesihle Kunene,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+966674,Samkelo Jali,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
+1238154,Sphamandla Gwele,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,37,4,False,90,0,0,1,1,0,0,,,,0,0
+846200,Moses Mthembu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,20,7,False,90,0,1,1,0,0,1,,,,0,0
+1445664,Ntokozo Nzama,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1520337,Mehluleli Ndelu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
+1340827,Lindokuhle Zikhali,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,8,10,False,66,0,0,1,1,0,0,,,66,0,0
+1238091,Siyabonga Nzama,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,19,0,False,24,0,0,0,0,0,0,,66,,0,0
+864128,Baggio Tuli-Ngenovali Nashixwa,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,45,6,False,90,0,0,1,0,0,1,,,,0,0
+1259897,Thabisa Ndelu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+1485863,Olwethu Mbambo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+1408779,Khayelihle Mncube,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1399172,Asimbonge Mdunge,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+1029127,Thulani Gumede,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,17,11,False,90,0,0,5,3,1,1,,,,0,0
+1461201,Luyanda Khumalo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
+412123,Knox Mutizwa,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+242021,Gabadinho Mhango,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1437480,Lundi Mahala,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,14,0,False,24,0,0,0,0,0,0,,66,,0,0
+1369237,Wandile Ngema,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
+1340817,Ntlonelo Bomelo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+735974,Joel Madondo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1351467,Nqaba Xulu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,12668,home,21202,1,2,played,27,14,False,90,0,0,1,0,1,0,,,,0,0
+448657,Lindokuhle Mtshali,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+548666,Fredrick Asare,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+548666,Fredrick Asare,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
+110082,Darren Keet,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+110082,Darren Keet,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+967778,Aden Dreyer,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+967778,Aden Dreyer,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
+557323,Mfanafuthi Mkhize,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+557323,Mfanafuthi Mkhize,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,30,3,False,90,0,0,0,0,0,0,,,,0,0
+160637,Ayanda Mtshali,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+160637,Ayanda Mtshali,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1190289,Collins Nwoburuoke,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1190289,Collins Nwoburuoke,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+998319,Liam de Kock,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+998319,Liam de Kock,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+861302,Siphamandla Ncanana,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+861302,Siphamandla Ncanana,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,5,3,True,90,0,0,1,0,1,0,,,,0,0
+1349482,Tylo Sanger,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+1349482,Tylo Sanger,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,23,6,False,90,0,0,1,1,0,0,,,,0,0
+1044310,Kyle Jurgens,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1044310,Kyle Jurgens,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513926,Kabelo Mofokeng,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513926,Kabelo Mofokeng,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+386340,Thabo Nodada,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+386340,Thabo Nodada,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,26,10,False,45,0,0,0,0,0,0,,,46,0,0
+533547,Brooklyn Poggenpoel,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+533547,Brooklyn Poggenpoel,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,18,6,False,90,0,0,0,0,0,0,,,,0,0
+980483,Luphumlo Sifumba,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+980483,Luphumlo Sifumba,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,35,11,False,79,0,0,1,0,1,0,,,79,0,0
+353056,Haashim Domingo,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,1,1,0,0,,,,0,0
+353056,Haashim Domingo,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+566474,Athini Jodwana,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566474,Athini Jodwana,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1368982,Patrick Autata,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1368982,Patrick Autata,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+577727,Victor Bakah,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+577727,Victor Bakah,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1574640,Junior Papier,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1574640,Junior Papier,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1174236,Lifa Makua,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1174236,Lifa Makua,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+1574684,Siya Msomi,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1574684,Siya Msomi,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1517938,Mxolisi Bhengu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1517938,Mxolisi Bhengu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1438772,Siphelele Mthembu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1438772,Siphelele Mthembu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352422,Samkelo Maseko,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,1,0,0,1,,,,0,0
+1352422,Samkelo Maseko,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,10,12,False,68,0,0,2,1,1,0,,,68,0,0
+613122,Saziso Magawana,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+613122,Saziso Magawana,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1441682,Jean Lwamba,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,2,1,1,0,,,,0,0
+1441682,Jean Lwamba,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,20,14,False,90,0,0,1,1,0,0,,,,0,0
+968670,Bokang Mokwena,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968670,Bokang Mokwena,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352410,Bongani Mthembu,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352410,Bongani Mthembu,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,3,0,False,11,0,0,0,0,0,0,,79,,0,0
+1210342,Seth Green,2026-08-08T13:00:00+00:00,2026,SFAL,8,False,4986935,1,14187,away,2557,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210342,Seth Green,2026-08-01T15:30:00+00:00,2026,SFA1,1,False,4969874,1,14187,away,85501,0,1,played,13,0,False,11,0,0,0,0,0,0,,79,,0,0
+1575186,Phabonke Mbatha,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,44,5,False,79,0,0,1,0,1,0,,,79,0,0
+405683,Jonah Fabisch,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1514898,Keabetswe Rakosa,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,in squad,45,0,False,0,0,0,0,0,0,0,,,,0,0
+1514898,Keabetswe Rakosa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,in squad,45,,False,0,0,0,0,0,0,0,,,,0,0
+966651,Siyabonga Mtombeni,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+966651,Siyabonga Mtombeni,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1210942,Ronaldo van Neel,2026-08-09T16:00:00+00:00,2026,SFAL,8,False,4986938,1,7011,away,568,1,0,played,28,11,False,87,0,0,1,0,1,0,,,87,0,0
+1210942,Ronaldo van Neel,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,7011,home,31283,0,0,played,28,12,False,79,0,0,3,2,0,1,,,79,0,0
+889365,Samukelo Xulu,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1359529,Rorisang Mpoza,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1238221,Aphiwe Baliti,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,29,4,False,90,0,0,1,0,0,1,,,,0,0
+1052915,Yandisa Mfolozi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
+1369950,Siyabonga Ndebele,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
+1462496,Keabetswe Khonyane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106973,Bilal Baloyi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1534705,Kabelo Lekalakala,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+370566,Grant Margeman,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,23,7,True,86,0,0,0,0,0,0,23,,86,0,0
+479139,Relebogile Mokhuoane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+329523,Maliele Vincent Pule,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,10,10,False,76,1,0,2,1,0,1,12,,76,0,0
+1525887,Manelisi Mazibuko,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,12,0,False,14,0,0,1,0,0,1,,76,,0,0
+1338533,Thato Letshedi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,36,0,False,4,0,0,0,0,0,0,89,86,,0,0
+277483,Siphelele Luthuli,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1166198,Thabang Makubo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+556429,Wayde Lekay,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1099035,Christian Saile,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,11,0,False,45,0,0,1,0,1,0,,46,,0,0
+455771,Tebogo Potsane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1538465,Sphesihle Jeza,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,17,11,False,90,1,0,5,2,1,2,,,,0,0
+596913,Zakhele Lepasa,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1369951,Oratilwe Moloisane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134326,Lucky Muthewi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+921447,Tendamudzimu Matodzi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+402723,Goitseone Phoko,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,31,1,False,90,0,0,0,0,0,0,,,,0,0
+457014,Njabulo Ngcobo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,in squad,80,,False,0,0,0,0,0,0,0,,,,0,0
+1097652,Wandile Mthombeni,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,in squad,50,,False,0,0,0,0,0,0,0,,,,0,0
+341972,Felix Noge,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1576089,Kwanda Lupalule,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+1193096,Hamza Issah,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+639102,Neo Mokhachane,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,7,12,False,76,0,0,1,0,1,0,,,76,0,0
 639102,Neo Mokhachane,2026-03-29T15:00:00+00:00,2026,AFCQ,19,True,4841195,2,13962,away,3562,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 639102,Neo Mokhachane,2026-03-25T14:00:00+00:00,2026,AFCQ,19,True,4841189,1,13962,away,3562,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1576075,Blessing Thulo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,20,14,False,45,0,0,1,1,0,0,,,46,0,0
+1576096,Jordan Marks,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,132785,home,67074,2,2,played,27,0,False,14,0,0,2,1,0,1,,76,,0,0
+625595,Brian Bwire,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+625595,Brian Bwire,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+395582,Lindokuhle Mathebula,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+395582,Lindokuhle Mathebula,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,40,1,False,90,0,0,0,0,0,0,,,,0,0
+968254,Ayanda Ngwenya,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968254,Ayanda Ngwenya,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
+1109254,Thabang Matuludi,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1109254,Thabang Matuludi,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106552,Tlou Nkwe,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106552,Tlou Nkwe,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,3,4,False,90,0,0,1,1,0,0,,,,0,0
+1211192,Mpho Mvundlela,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211192,Mpho Mvundlela,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1373403,Surprise Manthosi,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1373403,Surprise Manthosi,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,42,5,False,90,0,0,0,0,0,0,,,,0,0
+749505,Sabelo Motsa,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+749505,Sabelo Motsa,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106572,Edwin Ramaja,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106572,Edwin Ramaja,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,22,3,False,90,0,0,0,0,0,0,,,,0,0
+968488,Bulelani Nikani,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+968488,Bulelani Nikani,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,4,0,False,2,0,0,0,0,0,0,,88,,0,0
+1106586,Lebohang Nkaki,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,1,0,0,1,,,,0,0
+1106586,Lebohang Nkaki,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,34,3,True,90,0,0,1,0,1,0,,,,0,0
+1369881,Ayabonga Gwangqa,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1369881,Ayabonga Gwangqa,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+746535,Ndamulelo Maphangule,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,3,0,3,0,,,,0,0
+746535,Ndamulelo Maphangule,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,14,7,False,90,1,0,1,1,0,0,,,,0,0
+1445665,Banele Mnguni,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,2,0,1,1,,,,0,0
+1445665,Banele Mnguni,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,35,10,False,72,0,0,1,0,1,0,,,72,0,0
+1236316,Monty Batlhabane,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1236316,Monty Batlhabane,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,47,0,False,18,0,0,0,0,0,0,,72,,0,0
+742672,Sapholwethu Kelepu,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+742672,Sapholwethu Kelepu,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+514196,Manuel Kambala,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+514196,Manuel Kambala,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,21,6,False,90,0,0,0,0,0,0,,,,0,0
+1515258,Juan Mutudza,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1515258,Juan Mutudza,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
+282173,Puleng Marema,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+282173,Puleng Marema,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106569,Bonginkosi Dlamini,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,3,1,2,0,,,,0,0
+1106569,Bonginkosi Dlamini,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1296091,Lerato Ntamane,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1296091,Lerato Ntamane,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1371147,Sthabiso Ngwenya,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1371147,Sthabiso Ngwenya,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+495006,Thabelo Tshikweta,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+846414,Keorapetse Sebone,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+846414,Keorapetse Sebone,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
+872381,Moremi Seketso,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+872381,Moremi Seketso,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1439952,Siyabonga Mashinini,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1439952,Siyabonga Mashinini,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+647901,Raymond Daniels,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+647901,Raymond Daniels,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,20,12,False,88,0,0,0,0,0,0,,,88,0,0
+1235108,Sibusiso Tshabalala,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1235108,Sibusiso Tshabalala,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+983254,Rudzani Thobo,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+983254,Rudzani Thobo,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1359528,Keagile Malepe,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1359528,Keagile Malepe,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1107182,Msindisi Khosa,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1107182,Msindisi Khosa,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+1520318,Tidimalo Molokwane,2026-08-08T16:00:00+00:00,2026,SFAL,8,False,4986936,1,21202,away,6356,0,0,not in squad,,,False,0,0,0,5,1,2,2,,,,0,0
+1520318,Tidimalo Molokwane,2026-08-02T13:00:00+00:00,2026,SFA1,1,False,4969876,1,21202,away,12668,2,1,played,44,14,False,90,1,0,4,3,1,0,,,,0,0
+677856,Stanley Nwabali,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,23,1,False,90,0,0,0,0,0,0,,,,0,0
+304977,Dumsani Msibi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+887114,Elson Sithole,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+233964,Abbubaker Mobara,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,22,3,False,90,0,0,0,0,0,0,45,,,0,0
+357346,Sirgio Kammies,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,25,5,False,90,0,0,0,0,0,0,,,,0,0
+1270387,Boy Madingwane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
+984304,Thabang Molaoa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+609640,Seun Ndlovu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+556783,Bongani Sam,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1384169,Isheanesu Mauchi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+553453,Harold Majadibodu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,35,3,False,90,0,0,0,0,0,0,,,,0,0
+390594,Katlego Mohamme,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,26,3,True,90,0,0,0,0,0,0,,,,0,0
+898983,Kerwin Peters,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+304042,Ayabulela Konqobe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+925739,Azola Matrose,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,10,11,False,69,0,0,3,0,1,2,,,69,0,0
+840556,Azola Tshobeni,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,15,0,False,30,0,0,0,0,0,0,,60,,0,0
+743187,Banele Hlophe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+386494,Sammy Seabi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,21,7,False,84,0,0,1,0,1,0,22,,84,0,0
+1245764,Asanele Bonani,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,9,14,False,69,0,0,0,0,0,0,,,69,0,0
+604952,Justice Figuareido,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,7,12,False,83,0,0,3,1,2,0,,,83,0,0
 604952,Justice Figuareido,2026-03-31T14:00:00+00:00,2026,AFCQ,19,True,4841196,2,13675,home,13953,1,2,played,7,14,False,90,1,0,0,0,0,0,,,,0,0
-604952,Justice Figuareido,2026-03-25T16:00:00+00:00,2026,AFCQ,19,True,4841190,1,13675,away,13953,0,2,played,7,14,True,90,0,0,0,0,0,0,,,,0,0
+968178,Xolani Sithole,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,3,0,False,21,0,0,0,0,0,0,,69,,0,0
+386030,Somila Ntsundwana,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1056267,Bandile Dlamini,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+809637,Khaya Mfecane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,8,0,False,7,0,0,0,0,0,0,,83,,0,0
+564547,Bienvenu Eva Nga,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1238157,Thamsanqa Magwaza,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1266431,Sisanda Mbhele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+677378,Ira Tapé,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,16,0,False,1,0,0,0,0,0,0,,90,,0,0
+1292051,Sipho Gift Maseti,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+944311,Kayode Bankole,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1517937,Melusi Mathebula,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+609608,Macbeth Mahlangu,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+864511,Igor Salatiel,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+1292058,Lentswe Motaung,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,22,3,False,90,0,0,0,0,0,0,,,,0,0
+862347,Patrick Fisher,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
+1541121,Mondli Mncwango,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,3,3,False,90,0,0,0,0,0,0,64,,,0,0
+334100,Veluyeke Zulu,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,45,3,False,90,1,0,1,1,0,0,,,,0,0
+1543623,Siyanda Xulu,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,13,8,False,45,0,0,0,0,0,0,,,46,0,0
+1408778,Thiago Walters,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1550955,Katlego Maake,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
+1433388,Ntandoyenkosi Nkosi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,6,7,False,69,0,0,0,0,0,0,,,69,0,0
+417767,Mlungisi Mbunjana,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,8,0,False,21,0,0,0,0,0,0,,69,,0,0
+1517549,Siphamandla Ngwenya,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+329526,Mpho Mvelase,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,2,6,True,90,0,0,1,1,0,0,,,,0,0
+1408780,Seluleko Mahlambi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,7,11,False,90,0,0,2,0,1,1,,,,0,0
+603123,Junior Zindoga,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,21,0,False,45,0,0,0,0,0,0,,46,,0,0
+417540,Victor Letsoalo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,17,14,False,90,1,0,3,2,1,0,,,,0,0
+584528,Onke Moletshe,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+472393,Sedwyn George,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,played,19,14,False,90,0,0,0,0,0,0,,,90,0,0
+1433391,Siyabonga N'Guessan,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+653724,Ezra van der Heiden,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1095449,Paulinho,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1546068,Makhama Rantoa,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
+1450246,Mpumelelo Ndaba,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+967829,Anslin Williams,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1108345,Tshepang Makara,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,37,0,False,6,0,0,0,0,0,0,,84,,0,0
+930458,Obakhe Tshaya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352423,Imraan Jones,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,31,4,False,90,0,0,0,0,0,0,,,,0,0
+1575389,Lebohang Tshabalala,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,played,34,10,False,60,0,0,1,1,0,0,,,60,0,0
+1302316,Daba Diakité,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
+862069,Muhammad Carrim,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513947,Ntuthuko Mlotshwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969871,1,31283,away,7011,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1359518,Katekani Mhlongo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+707385,Edson Khumalo,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1382167,Simthandile Sishi,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513437,Lennol Mathebula,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+699755,Sifiso Ngobeni,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513434,Zuko Gxabusa,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211174,Camagu Mdevulana,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513965,Siphesihle Tati,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513436,Mpho Maoke,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1243254,Azola Jakalashe,2026-08-02T15:30:00+00:00,2026,SFA1,1,False,4969877,1,67074,away,132785,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+704462,Marcel Dandjinou,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
+1121019,Philasande Manqele,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+304988,Kabelo Seriba,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566600,Ntsikelelo Nxadi,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+500635,Thulani Ndlela,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+187745,Ebrahim Seedat,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,13,4,False,90,0,0,1,1,0,0,,,,0,0
+1487832,Bongokuhle Maphumulo,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352394,Boitumelo Malatjie,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,12,5,False,90,0,0,0,0,0,0,77,,,0,0
+1352398,Buhle Momoti,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+270237,Morne Nel,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+1352395,Kgopotso Zitha,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+388313,Tercious Malepe,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513440,Mbere Ngalema,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+398347,Siboniso Mtshali,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+495303,Khetukuthula Ndlovu,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,22,11,False,90,1,0,2,1,1,0,85,,,0,0
+1488319,Mancoba Zwane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1513439,Maphothe Aphiwe,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,1,1,0,0,,,,0,0
+749504,Matsangwa Matjie,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1514868,Lungile Nkosi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+1238095,Mfanufikile Madondo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1514867,Sibulele Mekuto,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+744252,Siphamandla Hleza,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,32,1,True,90,0,0,0,0,0,0,,,,0,0
+547788,Sifiso Mdluli,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+437673,Phakamani Ngxongo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,13,0,False,3,0,0,0,0,0,0,,87,,0,0
+1514861,Konke Khwanya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1245621,Thobani Bhengu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,23,5,False,90,0,0,0,0,0,0,,,,0,0
+1238094,Skhumbuzo Siyaya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+1097645,Olwethu Cele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,22,3,False,90,0,0,1,0,1,0,67,,,0,0
+341971,Mnelisi Mbhele,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
+1521447,Tonny Mbunga,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,75,0,False,27,0,0,0,0,0,0,,63,,0,0
+1514863,Sikhusele Joyi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+334101,Menzi Chili,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,10,10,False,63,0,0,1,0,1,0,,,63,0,0
+1514865,Nande Jojwana,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+437677,Bhekani Mthiyane,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,4,6,False,90,0,0,1,0,1,0,,,,0,0
+566608,Vusumuzi Mthabela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+1514866,Khanyisani Radebe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,50,14,False,63,0,0,3,2,1,0,,,63,0,0
+1238093,Cebolenkosi Mthethwa,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,55,6,False,45,0,0,1,1,0,0,,,46,0,0
+1238092,Jabulile Gxakoshe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211156,Bulelani Sigomoshe,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1521423,Phakamani Jwara,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+467611,Mjabulise Mkhize,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,8,0,False,27,0,0,0,0,0,0,,63,,0,0
+1211155,Siphosethu Ndlabi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1514864,Lilitha Dyonasi,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1351468,Comfort Sibiya,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1211152,Mvelo Zikakayo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,11,12,False,87,0,0,0,0,0,0,,,87,0,0
+985173,Siphamandla Mhlongo,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+553452,Andile Mbanjwa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+234019,Kwanda Mngonyama,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+341974,Thendo Mukumela,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
+26618,Wandisile Letlabika,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+357345,Shane Saralina,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
+966652,Sibusiso Fakude,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+609257,Sipho Sibiya,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+1060605,Georges Lata Lloyd,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1575434,Kgopotso Mkhonza,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+547790,Celimpilo Ngema,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1352391,Nkosinathi Thwala,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,28,7,False,90,0,0,0,0,0,0,,,,0,0
+478661,Ntsako Makhubela,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,10,12,False,90,0,0,1,0,1,0,,,,0,0
+1106590,Tatenda Tavengwa,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,in squad,44,,False,0,0,0,0,0,0,0,,,,0,0
+312246,Zama Rambuwane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+844772,Douglas Mapfumo,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1268372,Thokozani Sibanyoni,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+541548,Thobela Sikhakhane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+437720,Kagiso Malinga,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+969475,Kagiso Shezi,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1246223,Mlungisi Zwane,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,7,0,False,9,0,0,2,1,1,0,,81,,0,0
+1370585,Sanele Mthembu,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1487827,Aphiwe Mphothe,2026-08-01T18:00:00+00:00,2026,SFA1,1,False,4969875,1,120423,home,568,1,3,played,50,14,False,90,0,0,0,0,0,0,,,,0,0
+1107160,Thabana Mabena,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,35,11,False,63,0,0,0,0,0,0,,,63,0,0
+1370447,Yanelisa Nomandela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,38,0,False,27,0,0,0,0,0,0,,63,,0,0
+1369915,Sicelo Masilela,2026-08-01T13:00:00+00:00,2026,SFA1,1,False,4969870,1,54142,away,2557,0,2,played,90,0,False,45,0,0,2,1,1,0,,46,,0,0

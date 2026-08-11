@@ -1,108 +1,736 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
-487603,Domen Gril,2026,PL1,6112,False,1,1,0,90,0,0,0,0,0
-911487,Samba Koné,2026,MO1N,2481,False,5,5,0,283,1,0,0,0,1
-911487,Samba Koné,2026,ELQ,2481,False,3,3,0,204,0,0,0,0,0
-962060,Issoufi Maïga,2026,PT23,110988,False,7,0,0,0,0,0,0,0,0
-796739,Júnior Almeida,2026,CLQ,63993,False,3,1,0,90,0,0,0,0,0
-504091,Pedrinho,2026,PT23,67837,False,7,0,0,0,0,0,0,0,0
-465848,Preslav Borukov,2026,BU1,26462,False,2,2,0,52,0,0,0,0,0
-549028,Miguel Mota,2026,MO1N,2481,False,5,4,0,254,0,0,0,0,1
-549028,Miguel Mota,2026,ELQ,2481,False,3,3,0,148,0,0,0,0,1
+478357,Anthony Correia,2026,PO1,7788,False,1,1,0,90,0,0,0,0,1
+584452,Nikolaos Michelis,2026,PO1,7788,False,1,0,0,0,0,0,0,0,0
+487603,Domen Gril,2026,PL1,6112,False,3,3,0,270,0,0,0,0,0
+498234,Tomás Domingos,2026,PO1,7788,False,1,0,0,0,0,0,0,0,0
+591353,Robinho,2026,PO1,7788,False,1,1,0,90,0,1,0,0,0
+597201,Rúben Pereira,2026,PO1,7788,False,1,1,0,73,1,0,2,2,0
+752592,Pedro Barcelos,2026,PO1,7788,False,1,1,0,17,0,0,0,0,0
+548658,Mohamed Aidara,2026,PT3A,10140,False,1,0,0,0,0,0,0,0,0
+1052970,Kauã Vinicius,2026,PT3A,4297,False,1,0,0,0,0,0,0,0,0
+789045,Igor Milioransa,2026,PO1,7788,False,1,1,0,90,0,0,0,0,1
+501087,Soufiane Messeguem,2026,PO1,7788,False,1,1,0,90,0,0,0,0,0
+911487,Samba Koné,2026,MO1N,2481,False,7,6,0,328,1,0,0,0,1
+911487,Samba Koné,2026,ELQ,2481,False,4,4,0,263,0,0,0,0,0
+911487,Samba Koné,2026,ECLQ,2481,False,1,1,0,77,0,0,5,4,0
+512129,André Ceitil,2026,PO1,7788,False,1,1,0,26,0,0,0,0,1
+931418,Francisco Machado,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+818083,Rodrigo Guedes,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+564890,André Clóvis,2026,PO1,7788,False,1,1,0,79,1,0,3,2,0
+731899,Álvaro Zamora,2026,PO1,7788,False,1,1,0,73,0,0,1,0,0
+1172592,Simão Silva,2026,PO1,7788,False,1,0,0,0,0,0,0,0,0
+808443,João Guilherme,2026,PO1,7788,False,1,1,0,90,0,0,2,0,0
+344415,Dominik Steczyk,2026,PO1,7788,False,1,1,0,11,0,0,0,0,0
+1256478,Lorougnon Gohi,2026,PO1,7788,False,1,1,0,17,0,0,0,0,0
+466812,Nils Mortimer,2026,PO1,7788,False,1,0,0,0,0,0,0,0,0
+1111613,Chamito,2026,PT3A,68608,False,1,0,0,0,0,0,0,0,0
+891973,Rodrigo Pereira,2026,PT3A,4297,False,1,0,0,0,0,0,0,0,0
+962060,Issoufi Maïga,2026,PT23,110988,False,1,0,0,0,0,0,0,0,0
+869923,Kaique,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+827991,Lucas Gabriel,2026,PT3A,7056,False,1,0,0,0,0,0,0,0,0
+537367,Alfonso Pastor,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+863819,Kimiss Zavala,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+416088,Romain Correia,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+856406,Noah Madsen,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+796739,Júnior Almeida,2026,CLQ,63993,False,5,1,0,90,0,0,0,0,0
+292365,Paulo Henrique,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+351751,Rodrigo Borges,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+587291,Jhonnys Guerrero,2026,PT3A,2829,False,1,0,0,0,0,0,0,0,0
+448264,Afonso Freitas,2026,PO2,1701,False,1,1,0,83,0,0,0,0,0
+223977,Igor Julião,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+456898,Vladan Danilović,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+670682,Marco Cruz,2026,PO1,2420,False,1,0,0,0,0,0,0,0,0
+197880,Raphael Guzzo,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+710292,Guirassy,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+182713,Carlos Daniel,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+744179,Francisco França,2026,PO2,1701,False,1,1,0,90,0,0,0,0,0
+696656,Rodri Andrade,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+941883,Martín Tejón,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+537375,Simo Bouzaidi,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+939765,José Melro,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+924885,Martim Tavares,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+596884,Adrián Butzke,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+336325,Enrique Peña Zauner,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+281319,Alberth Elis,2026,HO1A,4523,False,2,1,0,90,0,0,0,0,0
+281319,Alberth Elis,2026,CCAC,4523,False,1,1,0,67,0,0,0,0,0
+927715,Xiko Gomes,2026,PO1,1301,False,1,0,0,0,0,0,0,0,0
+465848,Preslav Borukov,2026,BU1,26462,False,4,3,0,97,1,0,0,0,1
+381312,André Rodrigues,2026,PO2,3325,False,1,1,0,76,0,0,0,0,0
+927636,Rodrigo Melro,2026,PO2,3325,False,1,1,0,14,0,0,0,0,0
+430112,Rui Dabó,2026,PT3A,8827,False,1,0,0,0,0,0,0,0,0
+158375,Ricardo Ribeiro,2026,PT3A,8827,False,1,1,0,90,0,0,0,0,0
+801453,Vasco Santos,2026,PT3A,8827,False,1,1,0,90,0,0,0,0,0
+647540,Douglas Borel,2026,PO2,3327,False,1,1,0,24,0,0,0,0,0
+635396,Armando Lopes,2026,PT3A,8827,False,1,1,0,33,0,0,0,0,0
+640841,Simão Martins,2026,PT3A,8827,False,1,1,0,90,0,0,0,0,0
+836546,Luís Bastos,2026,PT3A,8827,False,1,1,0,83,0,0,0,0,0
+813463,Raniel,2026,PT3A,8827,False,1,0,0,0,0,0,0,0,0
+58957,Bura,2026,PT3A,5227,False,1,0,0,0,0,0,0,0,0
+910358,Kotaro Nagata,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+329661,Diogo Pereira,2026,PT3A,3267,False,1,0,0,0,0,0,0,0,0
+519058,Kazuya Onohara,2026,PT3A,8827,False,1,0,0,0,0,0,0,0,0
+1020686,Tiago Brito,2026,PO1,1465,False,1,0,0,0,0,0,0,0,0
+1005424,Pedro Jesus,2026,PO1,2423,False,1,0,0,0,0,0,0,0,0
+1112292,Yefrei Rodríguez,2026,PT3A,8827,False,1,1,0,90,0,0,0,0,0
+894533,João Adriano,2026,ARM1,23911,False,2,1,0,27,1,0,0,0,0
+929603,Miguel Monteiro,2026,PT3A,8827,False,1,0,0,0,0,0,0,0,0
+870187,Rafa,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+1066521,Kauan,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+813047,Anilson,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+886563,Diegão,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+549025,Leandro Dias,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+549028,Miguel Mota,2026,MO1N,2481,False,7,5,0,272,0,0,0,0,1
+549028,Miguel Mota,2026,ELQ,2481,False,4,4,0,205,0,0,0,0,1
+549028,Miguel Mota,2026,ECLQ,2481,False,1,0,0,0,0,0,0,0,0
+587106,Gonçalo Cardoso,2026,PT3A,7056,False,1,0,0,0,0,0,0,0,0
+149721,Tiago Ferreira,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+212234,Rafa Vieira,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+719383,Ivan Pavlic,2026,CLQ,3948,False,1,0,0,0,0,0,0,0,0
+719383,Ivan Pavlic,2026,BESC,3948,False,1,0,0,0,0,0,0,0,0
+719383,Ivan Pavlic,2026,BE1,3948,False,1,0,0,0,0,0,0,0,0
+1077256,Nito,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+479635,Nuno Cunha,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+198007,Francisco Ramos,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+1101988,Diego Fernandes,2026,PT3A,3267,False,1,0,0,0,0,0,0,0,0
+836182,Ronaldo Lumungo,2026,PL1,7154,False,2,1,0,45,0,0,3,1,0
 836182,Ronaldo Lumungo,2026,AFCQ,15236,True,2,1,0,90,0,0,0,0,0
-700166,André Liberal,2026,BU1,40416,False,2,2,0,8,0,0,0,0,0
-933713,Eirô,2026,BU1,730,False,1,0,0,0,0,0,0,0,0
-785967,Ibrahima Kébé,2026,SER1,32113,False,1,0,0,0,0,0,0,0,0
+742453,Miguel Falé,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+943899,João Victor,2026,JAP2,937,False,1,0,0,0,0,0,0,0,0
+927627,João Pinto,2026,PO2,3327,False,1,1,0,90,0,0,0,0,0
+700936,Costinha,2026,PO2,3325,False,1,1,0,60,0,0,0,0,0
+700166,André Liberal,2026,BU1,40416,False,4,3,0,53,0,0,0,0,0
+572925,Iuri Moreira,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+1050219,Rodrigo Duarte,2026,PT3A,15136,False,1,1,0,88,0,0,0,0,0
+740857,Isnaba Graça,2026,PT3A,74155,False,1,1,0,45,0,0,0,0,0
+933713,Eirô,2026,BU1,730,False,3,1,0,16,0,0,0,0,0
+785967,Ibrahima Kébé,2026,SER1,32113,False,3,0,0,0,0,0,0,0,0
+984582,Gonçalo Braga,2026,PT3A,15136,False,1,1,0,72,0,0,0,0,1
+795061,Francisco Canário,2026,PT3A,5222,False,1,1,0,27,0,0,0,0,1
+740856,Moisés Conceição,2026,PT3A,7211,False,1,0,0,0,0,0,0,0,0
+617267,Henrique Araújo,2026,PO1,3268,False,1,0,0,0,0,0,0,0,0
+617267,Henrique Araújo,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
+1093811,Tiago Parente,2026,CGB,2288,False,1,0,0,0,0,0,0,0,0
+726697,Cristian Devenish,2026,FR2,347,False,1,1,0,90,0,0,0,0,0
+237673,Nikola Gjorgjev,2026,C2,625,False,2,0,1,0,0,0,0,0,0
+640492,Faissal Zangré,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+139393,Tomané,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+803002,Tiago Augusto,2026,PT3A,3267,False,1,0,0,0,0,0,0,0,0
+1082639,Léo Azevedo,2026,POSU,2432,False,1,1,0,90,0,0,4,1,0
+1094948,Ítalo,2026,UKR1,10690,False,1,0,0,0,0,0,0,0,0
+418424,Tiago André,2026,PT3A,74155,False,1,1,0,90,0,0,0,0,0
+801446,Diogo Ferreira,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+819383,Arnas Voitinovičius,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+575722,Ricardo Ribeiro,2026,PT3A,74155,False,1,1,0,90,0,0,0,0,0
+504087,Tomás Araújo,2026,PO1,294,False,1,1,0,90,0,0,1,0,1
+504087,Tomás Araújo,2026,ELQ,294,False,3,1,0,90,1,0,3,1,0
+646747,Rafa Obrador,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+646747,Rafa Obrador,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+1233701,José Neto,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1233701,José Neto,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+1233701,José Neto,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+1134199,Daniel Banjaqui,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1134199,Daniel Banjaqui,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+1134199,Daniel Banjaqui,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+958934,Rui Silva,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+958934,Rui Silva,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+958934,Rui Silva,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+983554,João Fonseca,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+866086,Joshua Wynder,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1247587,Michée Ndembi,2026,BE1,968,False,1,1,0,90,0,0,0,0,0
+1050218,Kevin Pinto,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+983556,Leandro Martins,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1173926,Leandro Santos,2026,PO1,979,False,1,1,0,90,0,0,1,0,0
+670718,Diogo Prioste,2026,PO1,2424,False,1,0,0,0,0,0,0,0,0
+931415,João Rego,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+931415,João Rego,2026,ELQ,294,False,3,1,0,6,0,0,0,0,0
+1061744,Gonçalo Moreira,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1061744,Gonçalo Moreira,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+1061744,Gonçalo Moreira,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+637792,João Veloso,2026,PO1,979,False,1,1,0,23,1,0,0,0,0
+858251,Nuno Félix,2026,PO2,10330,False,1,1,0,90,0,0,0,0,1
+1439651,Miguel Figueiredo,2026,U19Q,16372,True,3,2,0,129,0,0,0,0,1
+1439651,Miguel Figueiredo,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1439651,Miguel Figueiredo,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+1439651,Miguel Figueiredo,2026,ELQ,294,False,3,1,0,66,0,0,2,0,0
+937720,Tiago Freitas,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1092964,Anísio Cabral,2026,U19Q,16372,True,3,3,0,177,0,0,0,0,0
+1092964,Anísio Cabral,2026,PO1,294,False,1,0,0,0,0,0,0,0,0
+1092964,Anísio Cabral,2026,ELQ,294,False,3,0,0,0,0,0,0,0,0
+937726,Martim Ferreira,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1008569,Federico Coletta,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+770036,Jelani Dumas,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1371116,Peter Edokpolor,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+801435,Olivio Tomé,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+801445,Francisco Silva,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+931416,Ivan Lima,2026,PL1,6112,False,3,2,0,101,0,1,5,1,0
+958933,Dudu,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+637803,Rafael Luís,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+1093812,Bernardes,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+741492,Francisco Silva,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+923299,Felipe Lima,2026,PO2,10330,False,1,0,0,0,0,0,0,0,0
+984573,Guilherme Pires,2026,PO2,10949,False,1,1,0,90,0,0,0,0,0
+478317,Diogo Travassos,2026,PO1,1075,False,1,1,0,45,0,0,1,1,1
+478317,Diogo Travassos,2026,ECLQ,1075,False,3,2,0,67,0,0,0,0,0
+848875,Diego Callai,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1044831,David Moreira,2026,PO1,2424,False,1,1,0,46,0,0,0,0,0
+290391,Nuno Santos,2026,PO1,336,False,1,0,0,0,0,0,0,0,0
+1294105,Salvador Blopa,2026,PO2,10949,False,1,0,1,0,0,0,0,0,0
+984439,João Muniz,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1086722,Rodrigo Dias,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1102159,José Silva,2026,PO1,2424,False,1,1,0,25,0,0,0,0,0
+1083412,Daniel Costa,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1062520,Lucas Taibo,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1092432,Bruno Ramos,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+974506,Rafael Pontelo,2026,SER1,33328,False,4,1,0,25,0,0,0,0,0
+1294120,Flávio Gonçalves,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+461943,Daniel Bragança,2026,PO1,336,False,1,0,0,0,0,0,0,0,0
+1010120,Manuel Mendonça,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+905345,Henrique Arreiol,2026,PL1,255,False,3,3,0,19,0,0,1,0,0
+981397,Zaïd Bafdili,2026,U19Q,16338,True,3,0,1,0,0,0,0,0,0
+981397,Zaïd Bafdili,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+851804,Mateo Tanlongo,2026,PO2,10949,False,1,1,0,90,0,0,0,0,0
+950377,Rafael Besugo,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1097470,Kauã Oliveira,2026,PO2,10949,False,1,1,0,18,0,0,0,0,0
+826490,Luís Gomes,2026,PO1,1465,False,1,0,0,0,0,0,0,0,0
+1061568,Alexandre Brito,2026,ELQ,45457,False,3,3,0,124,0,0,0,0,1
+1056907,Mauro Couto,2026,PO2,10949,False,1,1,0,90,0,0,0,0,0
+1319390,Paulo Cardoso,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+1057523,Rafael Nel,2026,PO1,336,False,1,0,0,0,0,0,0,0,0
+670686,Lucas Anjos,2026,PO2,10949,False,1,1,0,27,0,0,0,0,1
+795060,Rodrigo Marquês,2026,PT3A,8827,False,1,1,0,57,0,0,0,0,0
+1193421,Manuel Kissanga,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+929334,Gonçalo Ribeiro,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1236957,Nilton Cardoso,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+1076589,Víctor Guzmán,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+670715,Gabriel Brás,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+898723,Diogo Fernandes,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1333529,Gonçalo Silva,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+198638,João Costa,2026,POSU,720,False,1,0,0,0,0,0,0,0,0
+198638,João Costa,2026,PO1,720,False,1,0,0,0,0,0,0,0,0
 1342817,Yoan Pereira,2026,U19Q,16372,True,3,3,0,196,0,0,0,0,1
+1342817,Yoan Pereira,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+942925,Luís Gomes,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1221826,Kaio Henrique,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+908236,Felipe Silva,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
 1075878,Mateus Mide,2026,U19Q,16372,True,3,2,0,180,0,1,0,0,0
+1075878,Mateus Mide,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1121435,Martim Cunha,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+834467,Kauê,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1137979,Tiago Silva,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1390964,Eirik Granaas,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+637783,André Oliveira,2026,PO2,10331,False,1,0,1,0,0,0,0,0,0
+1050215,Gonçalo Sousa,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1310998,Mame Alassane Niang,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1182538,Duarte Cunha,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+957740,Tiago Andrade,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1076056,Bernardo Lima,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1083389,André Miranda,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1108856,Anhá Cande,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+981868,Trofim Melnichenko,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+744599,Leonardo Vonić,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1134201,Cardoso Varela,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1088389,Brayan Caicedo,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+1193867,Pedro Lima,2026,CGB,543,False,1,0,0,0,0,0,0,0,0
+935480,Martim Fernandes,2026,POSU,720,False,1,1,0,7,0,0,0,0,0
+935480,Martim Fernandes,2026,PO1,720,False,1,1,0,74,0,0,0,0,0
+1572899,Domingos Muxito,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
+937727,Gil Martins,2026,PO1,2424,False,1,1,0,77,0,0,1,0,0
+646739,Ángel Alarcón,2026,NL1,200,False,1,1,0,84,0,0,3,2,0
+1438171,Catarino,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
 935477,Rui Monteiro,2026,ECLQ,663,False,1,0,0,0,0,0,0,0,0
 1471256,Eduardo Ferreira,2026,U19Q,16372,True,3,3,0,107,1,0,0,0,1
-1134199,Daniel Banjaqui,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-1233701,José Neto,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-958934,Rui Silva,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-1061744,Gonçalo Moreira,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-1439651,Miguel Figueiredo,2026,U19Q,16372,True,3,2,0,129,0,0,0,0,1
-1439651,Miguel Figueiredo,2026,ELQ,294,False,1,1,0,66,0,0,2,0,0
-931415,João Rego,2026,ELQ,294,False,1,1,0,6,0,0,0,0,0
-617267,Henrique Araújo,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-1165820,Gonçalo da Silva,2026,PT23,68780,False,6,0,0,0,0,0,0,0,0
-646747,Rafa Obrador,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-504087,Tomás Araújo,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-801443,Guilherme Gaspar,2026,PT23,68780,False,7,0,0,0,0,0,0,0,0
-1092964,Anísio Cabral,2026,U19Q,16372,True,3,3,0,177,0,0,0,0,0
-1092964,Anísio Cabral,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
-1443801,João Afonso,2026,PT23,68780,False,6,0,0,0,0,0,0,0,0
-931416,Ivan Lima,2026,PL1,6112,False,1,0,0,0,0,0,0,0,0
-981397,Zaïd Bafdili,2026,U19Q,16338,True,3,0,1,0,0,0,0,0,0
-937721,Rayhan Momade,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-958973,Rafael Camacho,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-478317,Diogo Travassos,2026,ECLQ,1075,False,1,0,0,0,0,0,0,0,0
-974506,Rafael Pontelo,2026,SER1,33328,False,2,1,0,25,0,0,0,0,0
-1072812,Miguel Alves,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-1302174,Afonso Lee,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-1070477,Atanásio,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-905345,Henrique Arreiol,2026,PL1,255,False,1,1,0,7,0,0,1,0,0
-1061568,Alexandre Brito,2026,ELQ,45457,False,1,1,0,27,0,0,0,0,1
-848090,Ivanildo,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-826490,Luís Gomes,2026,PT23,68403,False,7,0,0,0,0,0,0,0,0
-1051766,Denilson Santos,2026,PT23,67909,False,12,0,0,0,0,0,0,0,0
-1454699,Sandro Ferreira,2026,PT23,67909,False,5,0,0,0,0,0,0,0,0
-964705,Silas Bjerre,2026,PT23,109718,False,6,0,0,0,0,0,0,0,0
-987537,David Ivanov,2026,PT23,109718,False,4,0,0,0,0,0,0,0,0
-625648,Álex Carbonell,2026,PT23,109718,False,6,0,0,0,0,0,0,0,0
-871382,Bachirou Yaméogo,2026,TS2,6377,False,1,1,0,90,0,0,0,0,1
+930415,Antonio Gomis,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1379864,Sebastián Osorio,2026,PO2,10949,False,1,0,0,0,0,0,0,0,0
+577869,Ruly García,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+1333982,Rodrigo Rodrigues,2026,PO2,10949,False,1,1,0,90,0,0,0,0,0
+783502,Bright Godwin,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+630106,Stefan Obradovic,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1073604,José Sampaio,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+681827,Jójó,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+203981,Jean-Pierre Rhyner,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+744078,Ivan Cvijanovic,2026,KR1,24575,False,2,2,0,180,0,0,0,0,0
+415520,Andrea Hristov,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+881486,Rodrigo Beirão,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+131658,Luís Rocha,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+686947,Hristo Ivanov,2026,PO2,6912,False,1,0,1,0,0,0,0,0,0
+495622,Moha Moukhliss,2026,UKR1,85465,False,2,2,0,94,0,0,0,0,0
+681989,Nikita Demchenko,2026,RU2,14590,False,5,3,0,166,0,0,0,0,0
+584487,Angel Bastunov,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+250945,Heinz Mörschel,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+642721,Matías Lacava,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1042940,Rodrigo Ramos,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+544792,Miguel Tavares,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+590840,Damien Loppy,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+789328,Manu Garrido,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+693358,Thio,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+342878,Yassin Fortuné,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+395677,Yann Kitala,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1153675,Pedro Ramos,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+407841,Lucas Paes,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+407841,Lucas Paes,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+600836,Ricardo Schutte,2026,PO2,3327,False,1,1,0,14,0,0,0,0,0
+808445,Adriel,2026,POSU,2432,False,1,1,0,90,0,0,0,0,0
+808445,Adriel,2026,PO2,2432,False,1,1,0,90,0,0,0,0,0
+625016,Unai Pérez,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+625016,Unai Pérez,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+810789,Lisandru Olmeta,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+810789,Lisandru Olmeta,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+461866,Javi Vázquez,2026,POSU,2432,False,1,1,0,90,0,0,3,1,0
+461866,Javi Vázquez,2026,PO2,2432,False,1,1,0,90,0,0,0,0,0
+1069037,Mohamed Ali Diadié,2026,POSU,2432,False,1,1,0,90,0,0,0,0,0
+1069037,Mohamed Ali Diadié,2026,PO2,2432,False,1,1,0,90,0,0,0,0,0
+721952,Jonathan Mutombo,2026,POSU,2432,False,1,1,0,13,0,0,0,0,0
+721952,Jonathan Mutombo,2026,PO2,2432,False,1,1,0,15,0,0,0,0,0
+628923,Juan María Alcedo,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+628923,Juan María Alcedo,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1093703,Danilo,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+1093703,Danilo,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1004291,Jérémy Mounsesse,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+1004291,Jérémy Mounsesse,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+718027,Hugo Pérez,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+718027,Hugo Pérez,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+719384,Brian Agbor,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+719384,Brian Agbor,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+126964,David Bruno,2026,POSU,2432,False,1,1,0,77,0,0,0,0,1
+126964,David Bruno,2026,PO2,2432,False,1,1,0,75,0,0,0,0,0
+914629,André Simões,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+914629,André Simões,2026,PO2,2432,False,1,1,0,45,1,0,0,0,1
+80486,Stopira,2026,POSU,2432,False,1,1,0,90,0,0,0,0,0
+80486,Stopira,2026,PO2,2432,False,1,1,0,90,0,1,0,0,0
+720488,Alejandro Alfaro,2026,POSU,2432,False,1,1,0,83,0,0,0,0,0
+720488,Alejandro Alfaro,2026,PO2,2432,False,1,1,0,79,0,0,0,0,0
+709958,Arnau Casas,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+709958,Arnau Casas,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1343067,Joel Romero,2026,POSU,2432,False,1,1,0,13,0,0,0,0,0
+1343067,Joel Romero,2026,PO2,2432,False,1,1,0,45,0,0,0,0,0
+974561,Nuha Jatta,2026,POSU,2432,False,1,1,0,77,0,0,0,0,0
+974561,Nuha Jatta,2026,PO2,2432,False,1,1,0,45,0,0,0,0,0
+1061281,Carlos Reina,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+1061281,Carlos Reina,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1175184,Carraro Injai,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+1175184,Carraro Injai,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1091893,Zé Breno,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+1091893,Zé Breno,2026,PO2,2432,False,1,1,0,45,0,0,0,0,0
+236886,Costinha,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+236886,Costinha,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+628835,Dany Jean,2026,POSU,2432,False,1,1,0,90,0,0,4,1,1
+628835,Dany Jean,2026,PO2,2432,False,1,1,0,90,0,0,0,0,0
+635881,Manu Pozo,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+635881,Manu Pozo,2026,PO2,2432,False,1,1,0,15,0,0,0,0,0
+882708,Musa Drammeh,2026,POSU,2432,False,1,1,0,83,0,0,2,1,0
+882708,Musa Drammeh,2026,PO2,2432,False,1,1,0,90,0,0,0,0,0
+524929,Kévin Zohi,2026,POSU,2432,False,1,1,0,7,0,0,0,0,0
+524929,Kévin Zohi,2026,PO2,2432,False,1,1,0,11,0,0,0,0,0
+982557,Karem Zoabi,2026,POSU,2432,False,1,1,0,7,0,0,1,0,0
+982557,Karem Zoabi,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+742864,Luis Quintero,2026,POSU,2432,False,1,1,0,67,0,0,0,0,1
+742864,Luis Quintero,2026,PO2,2432,False,1,1,0,75,0,0,0,0,0
+629385,Jorge Aguirre,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+629385,Jorge Aguirre,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+894324,Bob Murphy Omoregbe,2026,POSU,2432,False,1,0,0,0,0,0,0,0,0
+894324,Bob Murphy Omoregbe,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+1131160,Adama Baradji,2026,POSU,2432,False,1,1,0,23,0,0,0,0,0
+1131160,Adama Baradji,2026,PO2,2432,False,1,0,0,0,0,0,0,0,0
+668966,Elie N'Tamon,2026,FR2,1421,False,1,1,0,90,0,0,1,0,1
+818040,Afonso Peixoto,2026,PO2,1701,False,1,1,0,46,0,0,0,0,0
+871382,Bachirou Yaméogo,2026,TS2,6377,False,3,2,0,180,0,0,0,0,2
+1083668,Caio Amaral,2026,PT3A,4275,False,1,0,0,0,0,0,0,0,0
+739442,Guilherme Liberato,2026,PO1,979,False,1,1,0,75,0,0,0,0,1
 527967,Jack Ipalibo,2026,ECLQ,17149,False,2,2,0,135,0,0,0,0,0
-935478,Ricardo Rei,2026,PT23,109718,False,6,0,0,0,0,0,0,0,0
-1038701,Ismaïl Seydi,2026,DK1,5817,False,1,1,0,22,0,0,1,0,0
-1077816,Duarte Furtado,2026,PT23,91911,False,7,0,0,0,0,0,0,0,0
-1082888,Matheus Rodrigues,2026,PT23,91911,False,7,0,0,0,0,0,0,0,0
-1446625,Victor Ubong,2026,PT23,91911,False,7,0,0,0,0,0,0,0,0
-1445767,Baye Gora,2026,PT23,91910,False,6,0,0,0,0,0,0,0,0
-681989,Nikita Demchenko,2026,RU2,14590,False,3,3,0,166,0,0,0,0,0
-1445756,Moustapha Sanogo,2026,PT23,91910,False,6,0,0,0,0,0,0,0,0
-1441368,Karamoko Bamba,2026,PT23,91910,False,6,0,0,0,0,0,0,0,0
-979625,Paulo Vitor,2026,RU1,71985,False,1,0,0,0,0,0,0,0,0
-637788,Gustavo Mendonça,2026,CLQ,10482,False,1,1,0,7,0,0,0,0,0
-463666,Antoine Baroan,2026,RO1,455,False,2,0,2,0,0,0,0,0,0
-700168,João Bravim,2026,CLQ,53453,False,3,3,0,270,0,0,0,0,0
-1436051,Fábio Sousa,2026,PT23,132946,False,6,0,0,0,0,0,0,0,0
-567587,Habib Sylla,2026,RO1,4959,False,2,1,1,90,0,0,0,0,0
-853084,Rocco Zikovic,2026,UNG1,6058,False,1,1,0,1,0,0,0,0,0
-445434,Vasco Oliveira,2026,BU1,9599,False,2,1,1,17,0,0,0,0,0
-1340945,Quilma,2026,PT23,132946,False,6,0,0,0,0,0,0,0,0
-741033,Lucho Vega,2026,RO1,9465,False,2,0,0,0,0,0,0,0,0
+922420,Ethyan González,2026,INDC,45276,False,2,0,0,0,0,0,0,0,0
+1038701,Ismaïl Seydi,2026,DK1,5817,False,3,1,0,22,0,0,1,0,0
+935478,Ricardo Rei,2026,PT3A,8827,False,1,1,0,7,0,0,0,0,0
+695141,Brian Araújo,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+527026,Ricardo Velho,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+1215539,Lucas D'Agrella,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+369522,Jakob Tånnander,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+611495,Toni Herrero,2026,PO2,4294,False,1,1,0,90,0,1,0,0,0
+415645,Alex Pinto,2026,PO2,4294,False,1,1,0,90,0,0,0,0,0
+1037751,Dário Miranda,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+429564,Derick Poloni,2026,PO2,4294,False,1,1,0,17,0,0,0,0,0
+27178,Rúben Fernandes,2026,PT3A,4297,False,1,0,0,0,0,0,0,0,0
+808574,Miguel Menino,2026,PO2,4294,False,1,1,0,83,0,0,0,0,0
+437566,Claudio Falcão,2026,PO2,4294,False,1,1,0,90,0,0,0,0,0
+1189523,Rafinha,2026,PO2,4294,False,1,1,0,7,0,0,0,0,0
+925413,André Candeias,2026,PO2,4294,False,1,1,0,88,1,0,0,0,0
+873188,Balla Sangaré,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+567489,Cuba,2026,PO2,4294,False,1,1,0,73,0,0,0,0,0
+303385,Anthony Carter,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+957736,Leonardo Oliveira,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+706555,Aleksandar Vulic,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+885179,Alfred Caicedo,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1379097,Dani,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+460347,Giovani Bamba,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1056441,Miguel Pires,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+706176,Abdul Awudu,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+291968,Neto,2026,PO2,6912,False,1,0,0,0,0,0,0,0,0
+1220324,Kauã Paes,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+248349,Fabijan Buntic,2026,PO2,4294,False,1,1,0,90,0,0,0,0,0
+131740,Nermin Zolotic,2026,PO2,4294,False,1,1,0,90,0,1,0,0,0
+1163303,Bernardo Antunes,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+194214,Gonçalo Silva,2026,PO2,4294,False,1,1,0,90,1,0,0,0,0
+919620,Joseph Nduquidi,2026,PO2,4294,False,1,1,0,17,0,0,0,0,0
+350357,Sarpreet Singh,2026,PO2,4294,False,1,0,0,0,0,0,0,0,0
+226138,Mattheus,2026,PO2,4294,False,1,1,0,73,0,0,0,0,0
+534024,Gabriel Barbosa,2026,PO2,4294,False,1,1,0,2,0,0,0,0,1
+575715,João Resende,2026,PO2,4294,False,1,1,0,73,0,0,0,0,0
+1321718,João Gastão,2026,PO2,4294,False,1,1,0,17,0,0,0,0,0
+568154,Lucas Cañizares,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+985208,Carlão,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+989929,Brayan Medina,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+539807,Christian Marques,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+805835,Rémy Vita,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+700789,Nor Maviram,2026,PO2,7179,False,1,0,1,0,0,0,0,0,0
+519748,Zé Ricardo,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+720410,Farru,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+124548,Bebeto,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+1460195,Gabriel Ramalho,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+211107,João Afonso,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+291941,Carraça,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+696688,Bruno Almeida,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+670683,Hugo Félix,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+476355,Cícero,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+503975,Joe Hodge,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+874853,Mateus Sarará,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+1455799,Leonardo Silva,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+634125,Xabi Huarte,2026,PO2,7179,False,1,0,1,0,0,0,0,0,0
+1038290,Cascavel,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+1355783,Richarllyson,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+134608,Hélder Tavares,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+997765,Gastón Novero,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+462087,Arjen van der Heide,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
+719646,Bernardo,2026,PO1,1075,False,1,1,0,90,0,0,0,0,0
+719646,Bernardo,2026,ECLQ,1075,False,3,2,0,180,0,0,0,0,0
+840426,João Lima,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
 840426,João Lima,2026,CLQ,53453,False,1,0,0,0,0,0,0,0,0
-719646,Bernardo,2026,ECLQ,1075,False,1,0,0,0,0,0,0,0,0
-426213,Rodrigo Conceição,2026,PL1,2300,False,1,1,0,29,0,0,0,0,0
-813152,Makan Aïko,2026,PL1,3527,False,1,1,0,12,0,0,0,0,0
-1043831,Miro,2026,RU1,75231,False,1,1,0,90,0,0,1,1,0
+375770,Gabriel Souza,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+426213,Rodrigo Conceição,2026,PL1,2300,False,3,3,0,136,0,0,0,0,0
+426213,Rodrigo Conceição,2026,ELQ,2300,False,1,1,0,65,0,0,0,0,0
+1194211,Diego Tavares,2026,PT3A,41539,False,1,0,0,0,0,0,0,0,0
+355369,Jordan,2026,FR2,1421,False,1,0,0,0,0,0,0,0,0
+813152,Makan Aïko,2026,PL1,3527,False,3,3,0,48,1,0,3,1,0
+1043831,Miro,2026,RUP,75231,False,1,0,0,0,0,0,0,0,0
+1043831,Miro,2026,RU1,75231,False,3,3,0,250,1,0,4,2,0
+927644,Afonso Rodrigues,2026,PO2,2990,False,1,1,0,78,1,0,0,0,0
 927644,Afonso Rodrigues,2026,CLQ,27114,False,2,0,0,0,0,0,0,0,0
+532900,João Valido,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
 572425,Tray Fuller,2026,ECLQ,32017,False,2,0,0,0,0,0,0,0,0
+831591,Marko Gudžulić,2026,PO2,3325,False,1,1,0,90,0,0,0,0,0
+543103,Rodrigo Moura,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+657386,Bruno Rodrigues,2026,PO2,3325,False,1,1,0,90,0,0,0,0,0
+726706,Thiago Pereira,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+864733,Léo Alaba,2026,PO2,3325,False,1,1,0,66,0,0,0,0,0
+825847,Tiago Simões,2026,PO2,3325,False,1,1,0,90,0,0,0,0,0
+623802,Aarón Romero,2026,PO2,3325,False,1,1,0,45,0,0,0,0,0
+952730,Kiko,2026,PO2,3325,False,1,1,0,45,0,0,0,0,0
+820070,Mamadou Tounkara,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+1126512,Antony Herbert,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+118323,Ricardo Alves,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+526597,Dru Yearwood,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+778418,Gilberto García,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+1008640,Ktatau,2026,PO2,3325,False,1,1,0,90,0,0,0,0,0
+606050,Pedro Pelágio,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+1086572,Di Cardoso,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+182710,João Teixeira,2026,PO2,3325,False,1,1,0,30,0,0,0,0,0
+398557,Federico Bikoro,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+1083962,GB,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+1110112,Brice Eboudjé,2026,PO2,3325,False,1,1,0,45,0,0,0,0,0
+1084075,Marquinhos,2026,PO2,3325,False,1,0,0,0,0,0,0,0,0
+591876,Robyn Esajas,2026,PO2,3325,False,1,1,0,90,0,0,0,0,0
+1207608,Wilson Tavares,2026,PO2,3325,False,1,1,0,45,1,0,0,0,0
+194330,Roberto,2026,PO2,3325,False,1,1,0,90,0,1,0,0,0
+700168,João Bravim,2026,CLQ,53453,False,5,5,0,450,0,0,0,0,0
+700168,João Bravim,2026,ARM1,53453,False,2,0,0,0,0,0,0,0,0
+1454921,Divin Muteba,2026,PO2,3325,False,1,1,0,24,0,0,0,0,0
+526353,Jakob Odehnal,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+744072,Zé Pedro,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+567587,Habib Sylla,2026,RO1,4959,False,4,3,1,270,0,0,0,0,1
+388512,Marc Baró,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+527881,Maga,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+709999,Víctor Rofino,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+853084,Rocco Zikovic,2026,UNG1,6058,False,3,2,0,91,0,0,0,0,1
+190185,Marcelo,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+445434,Vasco Oliveira,2026,BU1,9599,False,4,2,1,18,0,0,0,0,1
+927713,Bernardo Gomes,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+741033,Lucho Vega,2026,RO1,9465,False,4,0,0,0,0,0,0,0,0
+314137,Eboue Kouassi,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1083604,Dani Borges,2026,PO1,2423,False,1,1,0,79,0,0,2,1,1
+548332,Diogo Martins,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+504089,Famana Quizera,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+377725,Jordan van der Gaag,2026,PO2,2639,False,1,0,1,0,0,0,0,0,0
+268958,Juan Muñoz,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+368582,Pablo Fernández,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+967688,Armando Jr,2026,PO1,2521,False,1,0,0,0,0,0,0,0,0
+933547,Jair Silva,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+72835,Diogo Amado,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
 699171,Pedro Pinho,2026,ROMS,6429,False,1,1,0,90,0,0,2,0,0
-699171,Pedro Pinho,2026,RO1,6429,False,2,1,0,60,0,0,0,0,1
+699171,Pedro Pinho,2026,RO1,6429,False,3,2,0,105,0,0,0,0,2
 699171,Pedro Pinho,2026,ELQ,6429,False,2,2,0,119,0,0,0,0,1
-699171,Pedro Pinho,2026,ECLQ,6429,False,1,1,0,29,1,0,0,0,0
+699171,Pedro Pinho,2026,ECLQ,6429,False,2,2,0,33,1,0,0,0,0
 645191,Roan Wilson,2026,SCCR,6478,False,1,0,1,0,0,0,0,0,0
-645191,Roan Wilson,2026,CRPD,6478,False,1,1,0,65,0,0,0,0,0
-646256,Reinaldo,2026,CLQ,156,False,3,3,0,232,2,1,0,0,0
-646256,Reinaldo,2026,BU1,156,False,2,2,0,74,1,1,0,0,1
-1298195,David Kusso,2026,CLQ,156,False,3,3,0,70,0,0,0,0,0
-1298195,David Kusso,2026,BU1,156,False,2,2,0,107,0,1,0,0,0
-586877,Uros Milovanović,2026,ECLQ,10481,False,1,1,0,90,0,0,0,0,1
-718941,Léo Teixeira,2026,RO1,9465,False,2,2,0,164,0,1,1,0,0
-1293192,António Gonçalves,2026,PT23,75123,False,12,0,0,0,0,0,0,0,0
-580612,Benjamin Kanuric,2026,BVP,4795,False,1,1,0,29,0,0,0,0,0
-820282,João Assunção,2026,PT23,75123,False,10,0,0,0,0,0,0,0,0
-614928,Paulinho,2026,PT23,75123,False,12,0,0,0,0,0,0,0,0
-364295,Ibrahim Alhassan,2026,CLQ,41133,False,3,1,0,5,0,0,0,0,0
-783635,Alan Do Marcolino,2026,TS2,6377,False,1,1,0,73,0,0,0,0,0
-588114,Rodrigo Martins,2026,RO1,9465,False,2,2,0,148,1,0,3,2,1
-371564,Bruno Pereira,2026,CLQ,53453,False,3,1,0,60,0,0,0,0,0
-741539,Dinis Rodrigues,2026,ECLQ,321,False,1,0,0,0,0,0,0,0,0
-741539,Dinis Rodrigues,2026,C1,321,False,1,0,0,0,0,0,0,0,0
-998733,Basit Ahmed,2026,TS2,13299,False,1,0,0,0,0,0,0,0,0
-707986,Kristofer Käit,2026,PT23,67731,False,7,0,0,0,0,0,0,0,0
-1100197,Lagartinho,2026,PT23,67731,False,7,0,0,0,0,0,0,0,0
-723168,Maycon Cleiton,2026,ECLQ,46710,False,3,0,0,0,0,0,0,0,0
-549041,Samuel Lobato,2026,ELQ,10625,False,3,2,0,52,0,0,0,0,0
+645191,Roan Wilson,2026,CRPD,6478,False,3,3,0,113,0,0,0,0,0
+645191,Roan Wilson,2026,CCAC,6478,False,2,2,0,53,0,0,0,0,1
+646256,Reinaldo,2026,CLQ,156,False,5,5,0,397,2,1,0,0,0
+646256,Reinaldo,2026,BU1,156,False,4,4,0,164,2,1,0,0,1
+1454939,Prince Otumba,2026,PT3A,3326,False,1,0,0,0,0,0,0,0,0
+505655,Henrique Pereira,2026,PO1,2423,False,1,0,0,0,0,0,0,0,0
+586877,Uros Milovanović,2026,ECLQ,10481,False,3,3,0,221,0,0,0,0,1
+647132,Rúben Pina,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+1298195,David Kusso,2026,CLQ,156,False,5,3,0,70,0,0,0,0,0
+1298195,David Kusso,2026,BU1,156,False,4,4,0,252,1,1,0,0,0
+813123,João Pedro,2026,PT3A,5222,False,1,0,0,0,0,0,0,0,0
+538253,Simão,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+979625,Paulo Vitor,2026,RUP,71985,False,1,0,0,0,0,0,0,0,0
+979625,Paulo Vitor,2026,RU1,71985,False,3,0,0,0,0,0,0,0,0
+690124,Daniel Rivas,2026,PO2,110302,False,1,1,0,79,0,0,0,0,0
+978615,Mateus Pivô,2026,PO2,110302,False,1,1,0,79,0,0,0,0,0
+816135,Pedro Lima,2026,PO1,336,False,1,0,0,0,0,0,0,0,0
+602156,Guillem Molina,2026,PO2,110302,False,1,1,0,11,0,0,0,0,0
+725049,Roni,2026,PO2,110302,False,1,1,0,90,0,0,0,0,0
+638589,Ángel Algobia,2026,PO2,110302,False,1,1,0,37,0,0,0,0,0
+1015624,Óscar Perea,2026,MEXA,3631,False,1,0,0,0,0,0,0,0,0
+637788,Gustavo Mendonça,2026,CLQ,10482,False,3,3,0,165,0,0,0,0,1
+924447,Tunde Akinsola,2026,PO2,110302,False,1,1,0,83,0,0,0,0,0
+1065761,Guilherme Neiva,2026,PO2,110302,False,1,1,0,46,0,0,0,0,0
+463666,Antoine Baroan,2026,RO1,455,False,4,0,4,0,0,0,0,0,0
+531373,Christian Joel,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1189400,Yago Moreira,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+927821,Leo Mascaró,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+978845,Tharlley,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+910588,David Leal Costa,2026,RLB3,5379,False,2,0,0,0,0,0,0,0,0
+910588,David Leal Costa,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+290262,Reko,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1085018,Martim Almeida,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1133958,Hope Yusuf Linus,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1133958,Hope Yusuf Linus,2026,FS,23135,True,3,0,0,0,0,0,0,0,0
+1006467,Borislav Rupanov,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1174322,Nabil Ondó,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+641036,Samuel Ntanda,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+1481324,Stefan,2026,PO2,2639,False,1,0,0,0,0,0,0,0,0
+566666,Dani Rebollo,2026,PO2,110302,False,1,1,0,90,0,0,0,0,0
+1082427,Bernardo Conde,2026,PO2,110302,False,1,0,0,0,0,0,0,0,0
+198053,Lazar Rosic,2026,PO2,110302,False,1,1,0,90,0,0,0,0,1
+1224655,Estevão,2026,PO2,110302,False,1,0,0,0,0,0,0,0,0
+1083635,Davi Schuindt,2026,PO2,110302,False,1,1,0,90,0,0,0,0,0
+933988,Fernando Almeida,2026,PO2,110302,False,1,1,0,90,0,0,0,0,0
+949489,Abdoulaye Keita,2026,PO2,110302,False,1,0,0,0,0,0,0,0,0
+742454,Jorge Meireles,2026,PO2,110302,False,1,1,0,7,0,0,0,0,0
+1090823,Ruan Assis,2026,PO2,110302,False,1,0,0,0,0,0,0,0,0
+980866,Talles Wander,2026,PO2,110302,False,1,1,0,44,0,0,0,0,0
+712379,Didi,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+366278,Rodrigo Pinho,2026,PO2,110302,False,1,1,0,43,0,0,0,0,0
+100127,Cristiano Figueiredo,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+925417,Tiago Parente,2026,PO1,1465,False,1,0,0,0,0,0,0,0,0
+696504,Pedro Rosas,2026,PO1,3268,False,1,0,0,0,0,0,0,0,0
+863667,Mário Júnior,2026,PO2,1701,False,1,0,0,0,0,0,0,0,0
+383806,Casimiro,2026,PO2,1701,False,1,0,0,0,0,0,0,0,0
+657429,Vasco Moreira,2026,PO1,2521,False,1,0,0,0,0,0,0,0,0
+567516,Gabi,2026,PO1,3268,False,1,0,0,0,0,0,0,0,0
+718941,Léo Teixeira,2026,RO1,9465,False,4,4,0,337,0,1,2,0,0
+696507,Tiago Leite,2026,PO2,1701,False,1,0,0,0,0,0,0,0,0
+168672,Feliz,2026,PT3A,3348,False,1,0,0,0,0,0,0,0,0
+704025,Pedro Ribeiro,2026,PT3A,2829,False,1,0,0,0,0,0,0,0,0
+667997,Bilal Ouacharaf,2026,PO2,1701,False,1,1,0,7,0,0,0,0,0
+1115119,Samuel Vivas,2026,PO2,1701,False,1,1,0,90,0,0,0,0,0
+983571,Rodrigo Ribeiro,2026,PO2,1701,False,1,1,0,76,0,0,0,0,0
+912473,Tiago Ventura,2026,PO2,1701,False,1,1,0,14,0,0,0,0,0
+1361741,Gustavo Mendes,2026,PO2,1701,False,1,0,0,0,0,0,0,0,0
+451399,Joãozinho,2026,PO2,1701,False,1,1,0,44,0,0,0,0,0
+395251,Sébastien Cibois,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1100197,Lagartinho,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+369258,Dudu,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+741535,Marlon Júnior,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+1082539,Edney,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+749557,Thauan Lara,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1193437,Jarleysom,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+886625,Samy,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+172066,João Reis,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+950548,Italo Cabelinho,2026,PO2,7378,False,1,1,0,1,0,0,0,0,0
+707986,Kristofer Käit,2026,ECLQ,23371,False,1,0,0,0,0,0,0,0,0
+188911,Shoya Nakajima,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+596426,Xavier,2026,PO2,7378,False,1,1,0,90,0,0,0,0,1
+656449,Welat Cagro,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1197998,João Casimiro,2026,PO2,7378,False,1,1,0,90,0,0,0,0,0
+626291,Lucas De Bolle,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1094824,Ericson,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1578103,Caleb Okereke,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+538973,Samuel Yépié Yépié,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+740378,Wermeson,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1091913,Felipe Favero,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+506150,Mamede,2026,PO2,7378,False,1,1,0,83,1,0,0,0,0
+924533,Jader Gentil,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+1065901,Midana Cassamá,2026,PO2,7378,False,1,1,0,45,0,0,0,0,0
+1294213,Dânio Djassi,2026,PO2,7378,False,1,1,0,85,0,1,0,0,0
+360711,Mo Dauda,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+357159,Mésaque Djú,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+262002,Welinton Junior,2026,PO2,7378,False,1,1,0,5,0,0,0,0,0
+614928,Paulinho,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+664840,João Mendes,2026,PO2,7378,False,1,0,0,0,0,0,0,0,0
+840690,Dudá,2026,PO2,7378,False,1,1,0,45,0,0,0,0,0
+1286773,Gonçalo Águas,2026,PO2,7378,False,1,1,0,7,0,0,0,0,0
+821730,Manuel Baldé,2026,PT3A,3348,False,1,0,0,0,0,0,0,0,0
+455363,Joan Femenías,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+537595,Cláudio Silva,2026,PO2,3327,False,1,1,0,66,0,0,0,0,1
+237297,Miguel Oliveira,2026,PO2,3327,False,1,1,0,90,0,0,0,0,0
+627631,Iano Simão,2026,PO2,3327,False,1,1,0,24,0,0,0,0,0
+637787,Gonçalo Negrão,2026,PO2,3327,False,1,1,0,76,0,0,0,0,0
+371564,Bruno Pereira,2026,CLQ,53453,False,5,1,0,60,0,0,0,0,0
+371564,Bruno Pereira,2026,ARM1,53453,False,2,2,0,180,0,0,0,0,0
+1063799,Gustavo Fernandes,2026,PT3A,5222,False,1,1,0,90,0,0,0,0,0
+618405,Teddy Alloh,2026,PO2,3327,False,1,1,0,66,0,0,0,0,0
+254582,João Miguel,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+212863,Jaime Sánchez,2026,PO2,3327,False,1,1,0,90,0,0,0,0,0
+1172711,Meireles Injai,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+1129488,Soma Anzai,2026,JAP1,6631,False,1,0,0,0,0,0,0,0,0
+305957,Dani Molina,2026,BOS1,7569,False,1,0,0,0,0,0,0,0,0
+299400,Pedro Sá,2026,PO2,3327,False,1,1,0,90,0,0,0,0,0
+262389,Àlex Carbonell,2026,PO2,3327,False,1,1,0,85,0,0,0,0,0
+611172,Raúl Alcaina,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+468338,Zé Leite,2026,FR2,1290,False,1,0,0,0,0,0,0,0,0
+807692,Joseph Séry,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+522190,Davo,2026,PO2,3327,False,1,1,0,85,0,0,0,0,0
+1072500,Jota,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+741539,Dinis Rodrigues,2026,ECLQ,321,False,3,0,0,0,0,0,0,0,0
+741539,Dinis Rodrigues,2026,C1,321,False,3,0,0,0,0,0,0,0,0
+314970,Maddi,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+895458,Adrián Pica,2026,PO2,3327,False,1,1,0,90,0,0,0,0,0
+967816,Martim Alberto,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+940915,Alexéi Rojas,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+1071834,Duarte Oliveira,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+1324050,Carlinhos Augusto,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+1202674,Mairlon Ramon,2026,PO2,3327,False,1,1,0,5,0,0,0,0,0
+705808,Max Svensson,2026,PO2,3327,False,1,1,0,90,0,0,0,0,1
+636701,Juanda Fuentes,2026,PO2,3327,False,1,0,0,0,0,0,0,0,0
+1069750,Nuninho,2026,PO2,3327,False,1,1,0,5,0,0,0,0,0
+723168,Maycon Cleiton,2026,ECLQ,46710,False,4,0,0,0,0,0,0,0,0
+549041,Samuel Lobato,2026,ELQ,10625,False,4,2,0,52,0,0,0,0,0
+549041,Samuel Lobato,2026,ECLQ,10625,False,1,1,0,15,0,0,0,0,0
+997867,Camilo Durán,2026,SC1,371,False,2,1,0,78,0,0,0,0,0
 997867,Camilo Durán,2026,ELQ,10625,False,1,0,0,0,0,0,0,0,0
-572336,Jordan Saint-Louis,2026,BU1,19780,False,2,0,2,0,0,0,0,0,0
+842517,Tamble,2026,PO1,2425,False,1,1,0,64,0,0,0,0,0
+1045214,João Cardoso,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+1072414,Lourenço,2026,PO2,3345,False,1,1,0,90,0,0,0,0,1
+1102761,Serif Nhaga,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+175188,Caio Secco,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+46991,Igor Stefanović,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+1104233,Semeu Commey,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+513346,Matheus Costa,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+344392,Fernando Fonseca,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+929869,Hugo Faria,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+292281,Simãozinho,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+85771,Paulinho,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+227873,Hugo Basto,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+1043832,Cláudio Araújo,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+587107,Miguel Sousa,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+936483,Amadu Baldé,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+225151,Rafael Barbosa,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+743987,Bica,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+1075186,Luccas Paraizo,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+820282,João Assunção,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+155395,Salvador Agra,2026,PO2,3345,False,1,0,0,0,0,0,0,0,0
+580612,Benjamin Kanuric,2026,L3,4795,False,1,0,0,0,0,0,0,0,0
+580612,Benjamin Kanuric,2026,BVP,4795,False,2,1,0,29,0,0,0,0,0
+685181,Paulité,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+843084,Rajani,2026,ARM1,11411,False,2,2,0,168,1,0,0,0,0
+99499,Rafael Martins,2026,PT3A,3326,False,1,0,0,0,0,0,0,0,0
+868073,Vítor Hugo,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+352558,Marco Ribeiro,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+206364,Ricardo Moura,2026,PT3A,3348,False,1,0,0,0,0,0,0,0,0
+1076381,Bruno Faria,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+712644,Danny,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+724707,Dylan Collard,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+321934,Silvério,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+235639,Luís Rocha,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+257001,Tiago Cerveira,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+139341,Josué Sá,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+965822,Miguel Teixeira,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+364408,Mimito Biai,2026,PT3A,3326,False,1,0,0,0,0,0,0,0,0
+1062260,Tokinho Dória,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+364295,Ibrahim Alhassan,2026,ELQ,41133,False,1,1,0,12,0,0,0,0,0
+364295,Ibrahim Alhassan,2026,CLQ,41133,False,4,2,0,40,0,0,0,0,0
+292749,Fabinho,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+783635,Alan Do Marcolino,2026,TS2,6377,False,3,2,0,134,1,0,0,0,1
+588114,Rodrigo Martins,2026,RO1,9465,False,4,4,0,264,1,0,4,2,1
+124384,João Silva,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+1458928,Manel,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+248901,Platiny,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+175600,Arsénio,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+337537,Ricardinho,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+683498,André Ricardo,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+657385,Guilherme Soares,2026,RO1,9465,False,2,0,0,0,0,0,0,0,0
+657385,Guilherme Soares,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+694925,António Montez,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+647131,Diogo Paulo,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+1079049,Saliou Mandiang,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+396441,Mika Borges,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+403716,João Santos,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+597512,Nuno Macedo,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+653906,Moises Tablante,2026,PO2,8189,False,1,0,0,0,0,0,0,0,0
+337795,Carlos Alves,2026,PO2,2990,False,1,1,0,90,0,0,0,0,0
+732247,Ricardo Teixeira,2026,PO2,2990,False,1,1,0,90,0,0,0,0,0
+131015,Marco Baixinho,2026,PT3A,3275,False,1,0,0,0,0,0,0,0,0
+842444,Gui Silva,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+1071065,Gabi Passos,2026,PT3A,3352,False,1,1,0,90,0,0,0,0,0
+235610,Káká,2026,PO2,2990,False,1,1,0,45,0,0,0,0,1
+182720,Leandro Silva,2026,PO2,2990,False,1,1,0,90,0,1,0,0,0
+240773,Edson Farias,2026,PO2,2990,False,1,1,0,90,0,0,0,0,0
+77832,Marcos Paulo,2026,PO2,2990,False,1,1,0,90,1,0,0,0,0
+648377,Jean Sinisterra,2026,PO2,2990,False,1,1,0,90,0,0,0,0,0
+768562,Bénito,2026,PO1,2431,False,1,0,0,0,0,0,0,0,0
+564968,Francisco Meixedo,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+716516,Nuno Barbosa,2026,PT3A,3267,False,1,0,0,0,0,0,0,0,0
+927733,Emanuel Moreira,2026,PO1,2423,False,1,0,0,0,0,0,0,0,0
+597106,Luiz Gustavo,2026,PO2,3349,False,1,1,0,90,0,0,0,0,0
+817523,André Lopes,2026,PO2,3349,False,1,1,0,90,0,0,0,0,0
+504084,Tiago Ribeiro,2026,PO1,2423,False,1,1,0,22,0,0,1,1,0
+581683,Nile John,2026,PO1,979,False,1,1,0,75,1,0,0,0,1
+1054933,Daouda Doumbia,2026,KR1,999,False,2,2,0,82,0,0,2,0,1
+1083238,Gui Meira,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+878507,Desmond Nketia,2026,PO2,3349,False,1,1,0,90,0,0,0,0,1
+998733,Basit Ahmed,2026,TS2,13299,False,3,1,0,2,0,0,0,0,0
+431724,Kirill Klimov,2026,PT3A,74155,False,1,1,0,45,0,0,0,0,0
+635346,Diego Moreno,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+235840,Pedro Pinto,2026,PO2,3349,False,1,1,0,90,0,0,0,0,1
+1220062,Kaiquy,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+965613,Isaac,2026,PO2,3349,False,1,1,0,87,0,0,0,0,0
+358200,Tiago Castro,2026,PO2,3349,False,1,1,0,13,0,0,0,0,0
+575712,Tiago Antunes,2026,PO2,3349,False,1,1,0,67,0,0,0,0,0
+935300,Piri,2026,PO2,3349,False,1,1,0,77,0,0,0,0,0
+741506,Gui Santos,2026,PO2,3349,False,1,1,0,77,0,0,0,0,0
+997463,Arthur Viana,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+1121541,Danny,2026,PO2,3349,False,1,1,0,46,0,0,0,0,0
+685651,Pontus Texel,2026,PO2,2990,False,1,1,0,45,1,0,0,0,0
+1093810,Jair Monteiro,2026,PO2,3349,False,1,0,0,0,0,0,0,0,0
+171068,Hélder Lopes,2026,PO2,2990,False,1,1,0,12,0,0,0,0,0
+1127847,Adriel Moraes,2026,PO2,3349,False,1,1,0,44,0,0,0,0,0
+276496,João Oliveira,2026,PO2,2990,False,1,1,0,3,0,0,0,0,0
+927107,Ni,2026,PO2,2990,False,1,1,0,90,0,0,0,0,0
+1077059,Hugo Nunes,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+1071606,Rebelo,2026,PO2,2990,False,1,0,0,0,0,0,0,0,0
+938669,Amadou Coundoul,2026,PO2,2990,False,1,1,0,26,1,0,0,0,0
+733575,Ilies Faure,2026,PO2,2990,False,1,1,0,61,0,0,0,0,0
+1340011,Alioune Mané,2026,PO2,2990,False,1,1,0,78,0,0,0,0,0
+364403,Rui Gomes,2026,PO2,2990,False,1,1,0,12,0,0,0,0,0
+1426913,Rúben Pinto,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+718341,Lawrence,2026,PO2,7789,False,1,0,1,0,0,0,0,0,0
+1298164,Feliciano,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+256695,Alemão,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+256695,Alemão,2026,ECLQ,10301,False,4,0,0,0,0,0,0,0,0
+912472,Gonçalo Cunha,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+597959,Rúben Silva,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+1173054,Diogo Costa,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+684241,João Filipe,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+1045292,Arome,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+824383,Harruna,2026,PT3A,10140,False,1,1,0,90,0,0,0,0,0
+1179089,Melvin Costa,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+700935,Leandro Ferreira,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+911853,João Ricardo,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+575723,Martim Duarte,2026,PO1,8024,False,1,0,0,0,0,0,0,0,0
+1067165,Diogo Nascimento,2026,PT3A,2995,False,1,0,0,0,0,0,0,0,0
+1062261,Obama,2026,PT3A,3326,False,1,0,0,0,0,0,0,0,0
+1062264,Cardoso,2026,PO2,7789,False,1,0,0,0,0,0,0,0,0
+688701,Edu,2026,PT3A,7211,False,1,0,0,0,0,0,0,0,0
+504088,Daniel Rodrigues,2026,PT3A,5222,False,1,1,0,63,1,0,0,0,0
+1322529,Marcelo Cunha,2026,PT3A,4297,False,1,0,0,0,0,0,0,0,0
+958976,Afonso Meireles,2026,PT3A,15136,False,1,1,0,27,0,0,0,0,0
+572336,Jordan Saint-Louis,2026,BU1,19780,False,4,0,4,0,0,0,0,0,0

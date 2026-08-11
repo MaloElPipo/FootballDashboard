@@ -1,10 +1,10 @@
 name: Scrape carrière TM hebdomadaire
 
-# Tous les mardis à 4h UTC = 5h Paris (hiver) / 6h Paris (été)
-# Choix demandé par l'utilisateur : nuit du lundi au mardi à 5h du matin.
+# Tous les lundis à 4h UTC = 5h Paris (hiver) / 6h Paris (été)
+# Choix demandé par l'utilisateur : lundi matin à 6h.
 on:
   schedule:
-    - cron: "0 4 * * 2"
+    - cron: "0 4 * * 1"
   workflow_dispatch:
     inputs:
       leagues:

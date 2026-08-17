@@ -1,19 +1,72 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
+548468,Cristian Ferreira,2026-08-15T17:00:00+00:00,2026,PO1,1,False,4921425,2,7788,home,2423,0,1,played,18,0,False,15,0,0,1,0,1,0,,75,,0,0
+548468,Cristian Ferreira,2026-08-09T19:30:00+00:00,2026,PO1,1,False,4921486,1,7788,away,294,2,2,played,18,10,False,17,0,0,0,0,0,0,,73,,0,0
+730802,Luciano Herrera,2026-08-16T18:00:00+00:00,2026,MEXA,1,False,4926732,4,7633,home,4961,0,0,played,14,0,False,20,0,0,1,0,0,1,,70,,0,0
+730802,Luciano Herrera,2026-08-01T03:00:00+00:00,2026,MEXA,1,False,4926716,3,7633,away,49283,5,1,played,14,0,False,14,0,0,0,0,0,0,,76,,0,0
+881010,Aarón Quirós,2026-08-15T23:00:00+00:00,2026,MEXA,1,False,4926729,4,6709,home,1804,0,0,played,44,3,False,90,0,0,0,0,0,0,13,,,0,0
+881010,Aarón Quirós,2026-08-02T03:00:00+00:00,2026,MEXA,1,False,4926720,3,6709,away,3711,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1289929,Santiago Lencina,2026-08-16T17:00:00+00:00,2026,ES2,2,False,4918747,1,1536,home,993,3,2,played,24,0,False,13,0,0,0,0,0,0,,77,,0,0
+1131420,Lucas Lavagnino,2026-08-15T19:30:00+00:00,2026,ES2,2,False,4918752,1,366,away,237,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+756993,Florián Monzón,2026-08-16T03:10:00+00:00,2026,MEXA,1,False,4926731,4,8590,home,7055,2,1,played,9,14,False,90,0,0,0,0,0,0,,,,0,0
+668512,David Romero,2026-08-14T16:00:00+00:00,2026,CIT,8,False,4904461,2,130,home,1627,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+990202,Lucas Román,2026-08-14T18:00:00+00:00,2026,NL2,2,False,4913013,2,1455,away,235,2,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+553663,Francisco Ortega,2026-08-04T18:00:00+00:00,2026,CLQ,10,False,4973495,5,683,home,467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+266807,Ángel Correa,2026-07-17T03:10:00+00:00,2026,MEXA,1,False,4895143,1,7055,away,13353,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+139503,Enner Valencia,2026-08-02T01:06:00+00:00,2026,MEXA,1,False,4926718,3,4035,away,4941,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+139503,Enner Valencia,2026-07-27T01:06:00+00:00,2026,MEXA,1,False,4904194,2,4035,home,4961,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+139503,Enner Valencia,2026-07-18T23:00:00+00:00,2026,MEXA,1,False,4895147,1,4035,away,7633,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+720716,Franco Pardo,2026-08-17T01:10:00+00:00,2026,MEXA,1,False,4926734,4,1403,home,6711,0,1,played,18,3,True,90,0,0,0,0,0,0,,,,0,0
+720716,Franco Pardo,2026-08-02T23:00:00+00:00,2026,MEXA,1,False,4926721,3,1403,away,3631,0,3,played,18,3,True,90,0,0,1,0,0,1,,,,0,0
 720716,Franco Pardo,2026-07-26T03:00:00+00:00,2026,MEXA,1,False,4904192,2,1403,home,8590,0,1,played,18,3,True,90,0,0,1,0,0,1,,,,0,0
 720716,Franco Pardo,2026-07-19T01:05:00+00:00,2026,MEXA,1,False,4895149,1,1403,away,2407,2,3,played,18,3,False,90,0,0,0,0,0,0,,,,0,0
-266807,Ángel Correa,2026-07-17T03:10:00+00:00,2026,MEXA,1,False,4895143,1,7055,away,13353,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-663491,Facundo Rodríguez,2026-07-27T18:15:00+00:00,2026,BU1,1,False,4909868,2,208,home,2531,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-08-16T16:00:00+00:00,2026,BU1,1,False,4909896,5,208,home,26462,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-08-13T18:00:00+00:00,2026,ELQ,10,False,4973715,6,208,home,119,1,3,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-08-09T18:15:00+00:00,2026,BU1,1,False,4909886,4,208,away,40416,3,0,played,32,3,False,90,0,0,0,0,0,0,32,,,0,0
+663491,Facundo Rodríguez,2026-08-06T16:00:00+00:00,2026,ELQ,10,False,4973702,5,208,neutral,119,3,0,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-08-02T18:15:00+00:00,2026,BU1,1,False,4909875,3,208,home,19780,2,1,played,32,3,False,90,1,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-07-30T18:00:00+00:00,2026,ELQ,10,False,4897954,4,208,home,10625,5,4,played,32,3,False,120,0,0,0,0,0,0,,,,0,0
+663491,Facundo Rodríguez,2026-07-27T18:15:00+00:00,2026,BU1,1,False,4909868,2,208,home,2531,3,2,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
 663491,Facundo Rodríguez,2026-07-23T16:00:00+00:00,2026,ELQ,10,False,4897945,3,208,away,10625,0,0,played,32,3,False,90,0,0,0,0,0,0,77,,,0,0
 663491,Facundo Rodríguez,2026-07-20T16:15:00+00:00,2026,BU1,1,False,4909858,1,208,away,675,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 663491,Facundo Rodríguez,2026-07-16T17:30:00+00:00,2026,ELQ,10,False,4897222,2,208,away,920,2,1,played,32,3,False,90,0,0,0,0,0,0,90,,,0,0
 663491,Facundo Rodríguez,2026-07-09T18:00:00+00:00,2026,ELQ,10,False,4897216,1,208,home,920,3,2,played,32,3,False,90,0,0,0,0,0,0,,,,0,0
+569088,Enzo Giménez,2026-08-16T18:00:00+00:00,2026,MEXA,1,False,4926732,4,4961,away,7633,0,0,played,16,8,False,90,0,0,1,0,1,0,,,,0,0
+569088,Enzo Giménez,2026-08-01T23:00:00+00:00,2026,MEXA,1,False,4926717,3,4961,home,7055,3,2,played,16,8,False,74,0,0,1,1,0,0,,,74,0,0
 569088,Enzo Giménez,2026-07-27T01:06:00+00:00,2026,MEXA,1,False,4904194,2,4961,away,4035,2,1,played,16,8,False,78,0,0,2,1,1,0,,,78,0,0
 569088,Enzo Giménez,2026-07-19T03:10:00+00:00,2026,MEXA,1,False,4895150,1,4961,home,3631,0,1,played,16,7,False,31,0,0,0,0,0,0,,59,,0,0
+741963,Jhohan Romaña,2026-08-02T01:06:00+00:00,2026,MEXA,1,False,4926718,3,4941,home,4035,1,0,played,14,3,False,90,0,0,2,1,0,1,,,,0,0
 741963,Jhohan Romaña,2026-07-25T03:00:00+00:00,2026,MEXA,1,False,4904190,2,4941,away,13353,0,1,played,14,3,False,90,0,0,1,0,1,0,,,,0,0
 741963,Jhohan Romaña,2026-07-18T01:00:00+00:00,2026,MEXA,1,False,4895110,1,4941,home,8590,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+671951,Gustavo del Prete,2026-07-26T03:00:00+00:00,2026,MEXA,1,False,4904192,2,8590,away,1403,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+671951,Gustavo del Prete,2026-07-18T01:00:00+00:00,2026,MEXA,1,False,4895110,1,8590,away,4941,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+320739,Santiago Mele,2026-07-26T23:00:00+00:00,2026,MEXA,1,False,4904193,2,2407,away,1146,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+320739,Santiago Mele,2026-07-19T01:05:00+00:00,2026,MEXA,1,False,4895149,1,2407,home,1403,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+422401,Milton Valenzuela,2026-08-16T03:10:00+00:00,2026,MEXA,1,False,4926731,4,8590,home,7055,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+422401,Milton Valenzuela,2026-08-02T01:05:00+00:00,2026,MEXA,1,False,4926719,3,8590,home,2407,0,2,played,16,4,False,90,0,0,0,0,0,0,,,,0,0
 422401,Milton Valenzuela,2026-07-26T03:00:00+00:00,2026,MEXA,1,False,4904192,2,8590,away,1403,1,0,played,16,4,False,90,0,0,0,0,0,0,,,,0,0
 422401,Milton Valenzuela,2026-07-18T01:00:00+00:00,2026,MEXA,1,False,4895110,1,8590,away,4941,3,2,played,16,4,False,45,0,0,1,1,0,0,,46,,0,0
-1162160,Maher Carrizo,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897983,3,610,away,448,4,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+441287,Mateo García,2026-07-26T03:00:00+00:00,2026,MEXA,1,False,4904192,2,8590,away,1403,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+441287,Mateo García,2026-07-18T01:00:00+00:00,2026,MEXA,1,False,4895110,1,8590,away,4941,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1193579,Thiago Gigena,2026-08-16T01:00:00+00:00,2026,MEXB,2,False,4922220,4,83082,home,12714,2,0,in squad,9,0,False,0,0,0,0,0,0,0,,,,0,0
+1193579,Thiago Gigena,2026-08-09T01:00:00+00:00,2026,MEXB,2,False,4922211,3,83082,away,5623,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1193579,Thiago Gigena,2026-08-02T01:00:00+00:00,2026,MEXB,2,False,4921370,2,83082,home,23505,0,2,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
+1240383,Benjamín Bosch,2026-08-14T14:00:00+00:00,2026,RU1,1,False,4904716,4,14589,home,932,1,1,played,21,12,False,4,0,0,2,0,0,2,,86,,0,0
+1240383,Benjamín Bosch,2026-08-09T17:30:00+00:00,2026,RU1,1,False,4904710,3,14589,away,2698,1,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
+1240383,Benjamín Bosch,2026-08-05T15:30:00+00:00,2026,RUP,8,False,4904779,7,14589,away,232,1,5,played,21,11,False,64,0,0,0,0,0,0,,,64,0,0
+1240383,Benjamín Bosch,2026-08-02T13:00:00+00:00,2026,RU1,1,False,4904699,2,14589,home,964,0,3,played,21,12,False,12,0,0,0,0,0,0,,78,,0,0
 1240383,Benjamín Bosch,2026-07-26T16:30:00+00:00,2026,RU1,1,False,4904475,1,14589,home,1083,2,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
+1162160,Maher Carrizo,2026-08-16T14:45:00+00:00,2026,NL1,1,False,4894682,2,610,home,306,2,2,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+1162160,Maher Carrizo,2026-08-13T18:45:00+00:00,2026,ECLQ,10,False,4973755,6,610,away,3909,2,2,played,7,12,False,70,0,0,5,0,2,3,,,70,0,0
+1162160,Maher Carrizo,2026-08-09T12:30:00+00:00,2026,NL1,1,False,4894514,1,610,away,1269,2,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+1162160,Maher Carrizo,2026-08-06T18:00:00+00:00,2026,ECLQ,10,False,5008632,5,610,home,3909,3,1,played,7,12,False,13,0,0,0,0,0,0,,77,,0,0
+1162160,Maher Carrizo,2026-07-30T18:00:00+00:00,2026,ECLQ,10,False,4898021,4,610,home,448,4,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+1162160,Maher Carrizo,2026-07-23T18:00:00+00:00,2026,ECLQ,10,False,4897983,3,610,away,448,4,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+1158799,Rafael Profini,2026-08-16T12:30:00+00:00,2026,UKR1,1,False,4974312,3,55686,home,660,0,1,played,6,6,False,4,0,0,0,0,0,0,,86,,0,0
+1158799,Rafael Profini,2026-08-10T12:30:00+00:00,2026,UKR1,1,False,4905665,2,55686,away,53646,1,3,played,6,6,False,53,0,0,0,0,0,0,,,53,0,0
+1158799,Rafael Profini,2026-08-01T12:30:00+00:00,2026,UKR1,1,False,4905658,1,55686,home,26459,1,0,played,6,6,False,59,0,0,0,0,0,0,,,59,0,0
+376710,Mauro Pittón,2026-08-16T15:00:00+00:00,2026,ES2,2,False,4918749,1,648,away,1533,3,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+1322690,Ulises Echevarría,2026-08-16T01:00:00+00:00,2026,MEXB,2,False,4922220,4,83082,home,12714,2,0,played,22,0,False,9,0,0,0,0,0,0,,81,,0,0
+1322690,Ulises Echevarría,2026-08-09T01:00:00+00:00,2026,MEXB,2,False,4922211,3,83082,away,5623,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1322690,Ulises Echevarría,2026-08-02T01:00:00+00:00,2026,MEXB,2,False,4921370,2,83082,home,23505,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 249789,Alexis Canelo,2026-07-22T01:00:00+00:00,2026,MEXA,1,False,4904186,2,5662,away,3711,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 249789,Alexis Canelo,2026-07-18T03:00:00+00:00,2026,MEXA,1,False,4895111,1,5662,away,49283,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

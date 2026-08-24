@@ -1676,7 +1676,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 689267,Dusan Vrbic,3900,FK Borac Banja Luka,2026,BOS1,33,Left-Back,23,Serbia,0,0,0,0
 1078875,Deni Memisevic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Left-Back,19,Bosnia-Herzegovina,0,0,0,0
 1125447,Nikola Djuric,282,FK Sarajevo,2026,BOS1,0,Centre-Back,19,Bosnia-Herzegovina,0,0,0,0
-1455861,Vedad Spahic,765,NK Celik Zenica,2026,BOS1,0,Right-Back,19,Bosnia-Herzegovina,0,0,0,0
 1164136,Nikola Maric,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
 1003494,Nemanja Cetojevic,20904,FK BSK Banja Luka,2026,BOS1,0,Centre-Forward,20,Bosnia-Herzegovina,0,0,0,0
 830919,Ognjen Radosevic,3900,FK Borac Banja Luka,2026,BOS1,28,Attacking Midfield,23,Serbia,0,0,0,0
@@ -1690,38 +1689,163 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 909385,Rino Ivankovic,6808,HSK Zrinjski Mostar,2026,BOS1,0,Right-Back,20,Bosnia-Herzegovina,0,0,0,0
 464150,Emir Velic,628,FK Velez Mostar,2026,BOS1,95,Goalkeeper,27,Slovenia,1,1,0,90
 927838,Andro Babic,628,FK Velez Mostar,2026,BOS1,29,Defensive Midfield,21,Croatia,0,0,0,0
-952692,Mladen Jurkas,3900,FK Borac Banja Luka,2026,BOS1,72,Goalkeeper,18,Bosnia-Herzegovina,0,0,0,0
-193217,Damjan Siskovski,3900,FK Borac Banja Luka,2026,BOS1,1,Goalkeeper,31,North Macedonia,1,1,0,90
-569080,Nikola Cetkovic,3900,FK Borac Banja Luka,2026,BOS1,21,Goalkeeper,24,Bosnia-Herzegovina,1,0,0,0
-615600,Viktor Rogan,3900,FK Borac Banja Luka,2026,BOS1,19,Right-Back,23,Serbia,1,0,0,0
-338031,Jurich Carolina,3900,FK Borac Banja Luka,2026,BOS1,24,Centre-Back,28,Curacao,1,0,0,0
-342719,Bart Meijers,3900,FK Borac Banja Luka,2026,BOS1,2,Centre-Back,29,Netherlands,0,0,0,0
-384027,Sebastián Herrera,3900,FK Borac Banja Luka,2026,BOS1,16,Left-Back,31,North Macedonia,1,0,0,0
-258290,Sinisa Sanicanin,3900,FK Borac Banja Luka,2026,BOS1,6,Centre-Back,31,Bosnia-Herzegovina,1,1,0,90
-186489,Nemanja Jaksic,3900,FK Borac Banja Luka,2026,BOS1,30,Centre-Back,31,Serbia,1,1,0,90
-447938,Abel Pascual,3900,FK Borac Banja Luka,2026,BOS1,3,Centre-Back,30,Spain,1,1,0,90
 890433,Djordje Burnjakovic,3900,FK Borac Banja Luka,2026,BOS1,0,Centre-Back,20,Bosnia-Herzegovina,0,0,0,0
-1024189,Erik Ridjan,3900,FK Borac Banja Luka,2026,BOS1,20,Left-Back,20,Croatia,1,1,0,90
-320858,Sandi Ogrinec,3900,FK Borac Banja Luka,2026,BOS1,98,Attacking Midfield,28,Slovenia,1,1,0,59
-982836,Ivan Kukavica,3900,FK Borac Banja Luka,2026,BOS1,0,Defensive Midfield,22,Croatia,0,0,0,0
-120192,Stefan Savic,3900,FK Borac Banja Luka,2026,BOS1,77,Attacking Midfield,32,Austria,0,0,0,0
+892166,Toni Majic,6808,HSK Zrinjski Mostar,2026,BOS1,90,Centre-Forward,20,Croatia,0,0,0,0
+1256956,Ibrahim Zahirovic,282,FK Sarajevo,2025,BOS1,0,Goalkeeper,16,Bosnia-Herzegovina,4,0,0,0
+1033932,Hamza Redzic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,18,Bosnia-Herzegovina,1,0,0,0
+1055431,Ante Pokrajcic,282,FK Sarajevo,2025,BOS1,0,Central Midfield,18,Bosnia-Herzegovina,1,0,0,0
+1028917,Dragan Pejic,20904,FK BSK Banja Luka,2026,BOS1,0,Right Winger,18,Bosnia-Herzegovina,0,0,0,0
+243679,Goran Karacic,6808,HSK Zrinjski Mostar,2026,BOS1,18,Goalkeeper,30,Bosnia-Herzegovina,3,3,0,270
+360677,Zvonimir Subaric,6808,HSK Zrinjski Mostar,2026,BOS1,31,Goalkeeper,29,Croatia,3,0,0,0
+615107,Antonio Djakovic,6808,HSK Zrinjski Mostar,2026,BOS1,44,Goalkeeper,25,Croatia,0,0,0,0
+1033939,Matej Bogdan,6808,HSK Zrinjski Mostar,2026,BOS1,1,Goalkeeper,18,Bosnia-Herzegovina,0,0,0,0
+740761,Karlo Stapic,6808,HSK Zrinjski Mostar,2026,BOS1,15,Centre-Back,24,Bosnia-Herzegovina,3,3,0,225
+540938,Marko Vranjkovic,6808,HSK Zrinjski Mostar,2026,BOS1,19,Right-Back,27,Croatia,3,3,0,211
+665529,Viktor Grbic,6808,HSK Zrinjski Mostar,2026,BOS1,21,Right-Back,22,Bosnia-Herzegovina,3,2,0,95
+226082,Petar Mamic,6808,HSK Zrinjski Mostar,2026,BOS1,12,Left-Back,30,Croatia,3,3,0,193
+205936,Darick Kobie Morris,6808,HSK Zrinjski Mostar,2026,BOS1,37,Centre-Back,31,Croatia,3,0,0,0
+909618,Branko Curdo,6808,HSK Zrinjski Mostar,2026,BOS1,0,Left-Back,20,Bosnia-Herzegovina,0,0,0,0
+889801,Toma Palic,6808,HSK Zrinjski Mostar,2026,BOS1,24,Left-Back,24,Croatia,0,0,0,0
+109000,Hrvoje Barisic,6808,HSK Zrinjski Mostar,2026,BOS1,4,Centre-Back,35,Bosnia-Herzegovina,3,3,0,270
+145994,Slobodan Jakovljevic,6808,HSK Zrinjski Mostar,2026,BOS1,27,Centre-Back,37,Serbia,3,2,0,77
+454888,Igor Savic,6808,HSK Zrinjski Mostar,2026,BOS1,6,Defensive Midfield,25,Bosnia-Herzegovina,3,3,0,68
+731965,Dan Lagumdzija,6808,HSK Zrinjski Mostar,2026,BOS1,5,Defensive Midfield,23,Croatia,2,2,1,105
+545226,Mario Cuic,6808,HSK Zrinjski Mostar,2026,BOS1,10,Attacking Midfield,25,Croatia,3,1,0,21
+332875,Adi Nalic,6808,HSK Zrinjski Mostar,2026,BOS1,22,Attacking Midfield,28,Bosnia-Herzegovina,1,0,0,0
+419255,Marijan Cavar,6808,HSK Zrinjski Mostar,2026,BOS1,42,Central Midfield,28,Bosnia-Herzegovina,0,0,0,0
+341424,Neven Djurasek,6808,HSK Zrinjski Mostar,2026,BOS1,30,Defensive Midfield,28,Croatia,3,3,1,249
+388145,Antonio Ivancic,6808,HSK Zrinjski Mostar,2026,BOS1,20,Attacking Midfield,31,Croatia,3,3,0,147
+587507,Ivica Vidovic,6808,HSK Zrinjski Mostar,2026,BOS1,8,Attacking Midfield,24,Croatia,3,2,0,21
+917857,Antonio Ilic,6808,HSK Zrinjski Mostar,2026,BOS1,17,Attacking Midfield,21,Croatia,3,3,3,270
+1386225,Thiago Santino López,6808,HSK Zrinjski Mostar,2026,BOS1,0,Central Midfield,19,Argentina,0,0,0,0
+651773,Matej Sakota,6808,HSK Zrinjski Mostar,2026,BOS1,0,Right Winger,22,Bosnia-Herzegovina,1,1,0,16
+927843,Niko Gajzler,6808,HSK Zrinjski Mostar,2026,BOS1,7,Left Winger,21,Croatia,1,0,0,0
+376445,Mario Cuze,6808,HSK Zrinjski Mostar,2026,BOS1,25,Left Winger,27,Croatia,3,3,2,218
+701391,Karlo Abramovic,6808,HSK Zrinjski Mostar,2026,BOS1,77,Left Winger,26,Croatia,3,3,0,244
+109212,Nemanja Bilbija,6808,HSK Zrinjski Mostar,2026,BOS1,99,Centre-Forward,35,Bosnia-Herzegovina,3,3,2,260
+171820,Tomi Juric,6808,HSK Zrinjski Mostar,2026,BOS1,11,Centre-Forward,35,Australia,1,0,0,0
+809799,Hamza Ljukovac,6808,HSK Zrinjski Mostar,2026,BOS1,80,Left Winger,21,Bosnia-Herzegovina,3,0,0,0
+1033944,Antonio Arapovic,6808,HSK Zrinjski Mostar,2026,BOS1,39,Centre-Forward,19,Bosnia-Herzegovina,3,2,0,10
+952692,Mladen Jurkas,3900,FK Borac Banja Luka,2026,BOS1,72,Goalkeeper,18,Bosnia-Herzegovina,0,0,0,0
+193217,Damjan Siskovski,3900,FK Borac Banja Luka,2026,BOS1,1,Goalkeeper,31,North Macedonia,2,2,0,180
+569080,Nikola Cetkovic,3900,FK Borac Banja Luka,2026,BOS1,21,Goalkeeper,24,Bosnia-Herzegovina,2,0,0,0
+615600,Viktor Rogan,3900,FK Borac Banja Luka,2026,BOS1,19,Right-Back,23,Serbia,2,1,0,90
+338031,Jurich Carolina,3900,FK Borac Banja Luka,2026,BOS1,24,Centre-Back,28,Curacao,1,0,0,0
+342719,Bart Meijers,3900,FK Borac Banja Luka,2026,BOS1,2,Centre-Back,29,Netherlands,1,0,0,0
+384027,Sebastián Herrera,3900,FK Borac Banja Luka,2026,BOS1,16,Left-Back,31,North Macedonia,2,0,0,0
+258290,Sinisa Sanicanin,3900,FK Borac Banja Luka,2026,BOS1,6,Centre-Back,31,Bosnia-Herzegovina,2,2,0,180
+186489,Nemanja Jaksic,3900,FK Borac Banja Luka,2026,BOS1,30,Centre-Back,31,Serbia,2,1,0,90
+447938,Abel Pascual,3900,FK Borac Banja Luka,2026,BOS1,3,Centre-Back,30,Spain,2,2,0,180
+1024189,Erik Ridjan,3900,FK Borac Banja Luka,2026,BOS1,20,Left-Back,20,Croatia,2,2,0,180
+320858,Sandi Ogrinec,3900,FK Borac Banja Luka,2026,BOS1,98,Attacking Midfield,28,Slovenia,2,2,0,149
+982836,Ivan Kukavica,3900,FK Borac Banja Luka,2026,BOS1,22,Defensive Midfield,22,Croatia,1,1,0,73
+120192,Stefan Savic,3900,FK Borac Banja Luka,2026,BOS1,77,Attacking Midfield,32,Austria,1,1,0,11
 245027,Anderson Esiti,3900,FK Borac Banja Luka,2026,BOS1,0,Defensive Midfield,32,Nigeria,0,0,0,0
 123158,Srdjan Grahovac,3900,FK Borac Banja Luka,2026,BOS1,15,Defensive Midfield,33,Bosnia-Herzegovina,0,0,0,0
-160285,Milos Jojic,3900,FK Borac Banja Luka,2026,BOS1,18,Central Midfield,34,Serbia,1,1,0,31
-226090,Ante Roguljic,3900,FK Borac Banja Luka,2026,BOS1,44,Attacking Midfield,30,Croatia,1,1,0,56
-46346,Stojan Vranjes,3900,FK Borac Banja Luka,2026,BOS1,23,Attacking Midfield,39,Bosnia-Herzegovina,1,1,0,31
-1141857,Matej Deket,3900,FK Borac Banja Luka,2026,BOS1,89,Centre-Forward,16,Bosnia-Herzegovina,1,1,0,34
+160285,Milos Jojic,3900,FK Borac Banja Luka,2026,BOS1,18,Central Midfield,34,Serbia,2,1,0,31
+226090,Ante Roguljic,3900,FK Borac Banja Luka,2026,BOS1,44,Attacking Midfield,30,Croatia,2,2,0,125
+46346,Stojan Vranjes,3900,FK Borac Banja Luka,2026,BOS1,23,Attacking Midfield,39,Bosnia-Herzegovina,2,2,0,52
+1141857,Matej Deket,3900,FK Borac Banja Luka,2026,BOS1,89,Centre-Forward,16,Bosnia-Herzegovina,2,2,1,113
 687426,David Vukovic,3900,FK Borac Banja Luka,2026,BOS1,10,Left Winger,22,Bosnia-Herzegovina,1,1,0,90
 693480,Damir Hrelja,3900,FK Borac Banja Luka,2026,BOS1,11,Right Winger,24,Bosnia-Herzegovina,1,0,0,0
-350759,Luka Juricic,3900,FK Borac Banja Luka,2026,BOS1,7,Centre-Forward,29,Bosnia-Herzegovina,1,1,1,16
-328119,Amer Hiros,3900,FK Borac Banja Luka,2026,BOS1,12,Left Winger,30,Bosnia-Herzegovina,1,1,1,59
-989321,Amar Milak,3900,FK Borac Banja Luka,2026,BOS1,47,Left Winger,20,Bosnia-Herzegovina,1,1,0,34
-271451,Dani Romera,3900,FK Borac Banja Luka,2026,BOS1,99,Centre-Forward,30,Spain,1,1,1,74
+350759,Luka Juricic,3900,FK Borac Banja Luka,2026,BOS1,7,Centre-Forward,29,Bosnia-Herzegovina,2,2,1,27
+328119,Amer Hiros,3900,FK Borac Banja Luka,2026,BOS1,12,Left Winger,30,Bosnia-Herzegovina,2,2,1,76
+989321,Amar Milak,3900,FK Borac Banja Luka,2026,BOS1,47,Left Winger,20,Bosnia-Herzegovina,2,2,0,55
+271451,Dani Romera,3900,FK Borac Banja Luka,2026,BOS1,99,Centre-Forward,31,Spain,2,2,1,143
 697091,Karlo Peric,3900,FK Borac Banja Luka,2026,BOS1,9,Centre-Forward,25,Croatia,0,0,0,0
 466121,Nikola Terzic,3900,FK Borac Banja Luka,2026,BOS1,36,Right Winger,25,Serbia,0,0,0,0
-131735,Petar Kunic,3900,FK Borac Banja Luka,2026,BOS1,0,Centre-Forward,33,Bosnia-Herzegovina,1,0,0,0
-933832,Pavle Djajic,3900,FK Borac Banja Luka,2026,BOS1,14,Right Winger,20,Bosnia-Herzegovina,1,1,0,56
+933832,Pavle Djajic,3900,FK Borac Banja Luka,2026,BOS1,14,Right Winger,20,Bosnia-Herzegovina,2,2,1,135
 522263,Omar Sijaric,3900,FK Borac Banja Luka,2026,BOS1,17,Right Winger,24,Montenegro,0,0,0,0
+131735,Petar Kunic,3900,FK Borac Banja Luka,2026,BOS1,93,Centre-Forward,33,Bosnia-Herzegovina,2,0,0,0
+160467,Ivan Banic,282,FK Sarajevo,2025,BOS1,31,Goalkeeper,30,Croatia,29,25,0,2250
+798284,Sanin Musija,282,FK Sarajevo,2025,BOS1,13,Goalkeeper,20,Bosnia-Herzegovina,36,11,0,990
+890446,Faris Mehic,282,FK Sarajevo,2025,BOS1,40,Goalkeeper,19,Bosnia-Herzegovina,0,0,0,0
+197520,Emil Rockov,282,FK Sarajevo,2025,BOS1,0,Goalkeeper,30,Serbia,7,0,0,0
+651762,Nermin Mujkic,282,FK Sarajevo,2025,BOS1,4,Centre-Back,21,Bosnia-Herzegovina,25,22,2,1793
+584936,Filip Jovic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,25,Serbia,15,9,0,520
+376098,Amar Beganovic,282,FK Sarajevo,2025,BOS1,22,Right-Back,25,Bosnia-Herzegovina,29,28,0,1859
+669174,Martin Paskalev,282,FK Sarajevo,2025,BOS1,0,Centre-Back,23,Bulgaria,17,4,0,309
+451328,Grigore Turda,282,FK Sarajevo,2025,BOS1,0,Centre-Back,27,Romania,19,7,0,229
+238058,Renato Gojkovic,282,FK Sarajevo,2025,BOS1,3,Centre-Back,29,Bosnia-Herzegovina,15,8,0,461
+854838,Shane Maroodza,282,FK Sarajevo,2025,BOS1,2,Centre-Back,21,Zimbabwe,19,19,0,1382
+510256,Luka Hujber,282,FK Sarajevo,2025,BOS1,27,Right-Back,26,Croatia,11,6,0,349
+1132953,Jovan Ivanisevic,282,FK Sarajevo,2025,BOS1,6,Centre-Back,20,Canada,16,11,2,789
+104466,Stefan Ristovski,282,FK Sarajevo,2025,BOS1,33,Right-Back,33,North Macedonia,30,28,3,2385
+206956,Slavko Bralic,282,FK Sarajevo,2025,BOS1,28,Centre-Back,32,Croatia,34,29,1,2445
+1399795,Souleymane Méité,282,FK Sarajevo,2025,BOS1,38,Centre-Back,18,Cote d'Ivoire,6,6,0,280
+621419,Tarik Kapetanovic,282,FK Sarajevo,2025,BOS1,0,Left-Back,22,Bosnia-Herzegovina,8,2,0,134
+1380720,Daris Dizdarevic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,13,5,0,30
+505324,Agon Elezi,282,FK Sarajevo,2025,BOS1,20,Central Midfield,24,North Macedonia,26,26,9,1908
+1278173,Momodou Jatta,282,FK Sarajevo,2025,BOS1,0,Central Midfield,19,The Gambia,6,6,0,354
+1373676,Rijad Telalovic,282,FK Sarajevo,2025,BOS1,5,Central Midfield,16,Bosnia-Herzegovina,15,10,0,366
+952740,Sergey Ignatkov,282,FK Sarajevo,2025,BOS1,35,Defensive Midfield,18,Ukraine,25,22,0,1054
+466116,Aleksandar Djordjevic,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,25,Serbia,16,13,0,516
+511866,Rafail Mamas,282,FK Sarajevo,2025,BOS1,66,Defensive Midfield,24,Cyprus,12,8,0,378
+69374,Adem Ljajic,282,FK Sarajevo,2025,BOS1,88,Attacking Midfield,33,Serbia,25,25,6,1668
+665532,Anes Krdzalic,282,FK Sarajevo,2025,BOS1,23,Central Midfield,20,Bosnia-Herzegovina,24,19,3,1224
+150482,Gojko Cimirot,282,FK Sarajevo,2025,BOS1,59,Defensive Midfield,32,Bosnia-Herzegovina,27,26,0,1505
+491033,Edin Julardzija,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,24,Croatia,8,2,0,5
+946825,Muamer Hamzic,282,FK Sarajevo,2025,BOS1,0,Defensive Midfield,19,Bosnia-Herzegovina,10,2,0,14
+1058844,Kenan Vrban,282,FK Sarajevo,2025,BOS1,0,Central Midfield,16,Bosnia-Herzegovina,6,2,0,26
+695465,Bakir Nurkovic,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,8,1,0,4
+502682,Giorgi Guliashvili,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,23,Georgia,18,18,1,1604
+476751,Mihael Kupresak,282,FK Sarajevo,2025,BOS1,77,Left Winger,24,Croatia,34,33,6,1979
+388121,Karlo Butic,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,26,Croatia,14,12,2,531
+316047,Luka Menalo,282,FK Sarajevo,2025,BOS1,7,Left Winger,28,Bosnia-Herzegovina,17,17,3,1092
+550179,João Carlos,282,FK Sarajevo,2025,BOS1,99,Centre-Forward,30,Brazil,11,11,2,913
+697080,Mihael Mlinaric,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,25,Croatia,19,19,4,1427
+358237,Francis Kyeremeh,282,FK Sarajevo,2025,BOS1,11,Right Winger,28,Ghana,30,28,6,1746
+1056459,Filip Zivkovic,282,FK Sarajevo,2025,BOS1,24,Right Winger,18,Croatia,11,8,1,317
+522091,Renan Oliveira,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,28,Brazil,15,14,2,465
+846745,Andreja Ristic,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,21,Serbia,14,4,0,18
+1126891,Anomnachi Chidi,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,20,Sweden,9,1,0,1
+192655,Aldin Turkes,282,FK Sarajevo,2025,BOS1,9,Centre-Forward,29,Bosnia-Herzegovina,17,8,0,238
+1163153,Amar Ceric,282,FK Sarajevo,2025,BOS1,0,Left Winger,17,Bosnia-Herzegovina,1,0,0,0
+1163151,Anes Mehmedovic,282,FK Sarajevo,2025,BOS1,0,Left Winger,16,Bosnia-Herzegovina,4,1,0,3
+243679,Goran Karacic,6808,HSK Zrinjski Mostar,2025,BOS1,18,Goalkeeper,28,Bosnia-Herzegovina,25,25,0,2110
+532772,Marin Ljubic,6808,HSK Zrinjski Mostar,2025,BOS1,40,Goalkeeper,27,Croatia,29,12,0,1028
+902989,Tin Sajko,6808,HSK Zrinjski Mostar,2025,BOS1,32,Goalkeeper,21,Croatia,16,1,0,90
+1033939,Matej Bogdan,6808,HSK Zrinjski Mostar,2025,BOS1,0,Goalkeeper,17,Bosnia-Herzegovina,4,0,0,0
+895531,Duje Dujmovic,6808,HSK Zrinjski Mostar,2025,BOS1,55,Centre-Back,21,Croatia,31,22,1,1963
+191822,Darko Velkovski,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,30,North Macedonia,5,1,0,45
+540938,Marko Vranjkovic,6808,HSK Zrinjski Mostar,2025,BOS1,19,Right-Back,26,Croatia,25,22,0,1856
+307098,Kerim Memija,6808,HSK Zrinjski Mostar,2025,BOS1,50,Right-Back,29,Bosnia-Herzegovina,30,23,0,1381
+226082,Petar Mamic,6808,HSK Zrinjski Mostar,2025,BOS1,12,Left-Back,29,Croatia,28,27,2,2020
+1009496,Ante Susak,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left-Back,19,Croatia,10,4,0,197
+589753,Ilija Masic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,26,Bosnia-Herzegovina,19,10,0,801
+205936,Darick Kobie Morris,6808,HSK Zrinjski Mostar,2025,BOS1,37,Centre-Back,29,Croatia,6,4,0,116
+909390,David Karacic,6808,HSK Zrinjski Mostar,2025,BOS1,6,Centre-Back,19,Bosnia-Herzegovina,27,8,0,308
+889801,Toma Palic,6808,HSK Zrinjski Mostar,2025,BOS1,24,Left-Back,23,Croatia,15,8,0,332
+109000,Hrvoje Barisic,6808,HSK Zrinjski Mostar,2025,BOS1,4,Centre-Back,34,Bosnia-Herzegovina,28,19,0,1661
+145994,Slobodan Jakovljevic,6808,HSK Zrinjski Mostar,2025,BOS1,27,Centre-Back,36,Serbia,18,17,1,1276
+83287,Mateo Susic,6808,HSK Zrinjski Mostar,2025,BOS1,16,Right-Back,34,Bosnia-Herzegovina,15,9,0,557
+1033998,Darko Basic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,3,0,0,0
+454888,Igor Savic,6808,HSK Zrinjski Mostar,2025,BOS1,21,Defensive Midfield,24,Bosnia-Herzegovina,32,29,1,2334
+653719,Jakov Pranjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,24,Croatia,18,14,0,538
+731965,Dan Lagumdzija,6808,HSK Zrinjski Mostar,2025,BOS1,5,Defensive Midfield,22,Croatia,16,12,2,818
+332875,Adi Nalic,6808,HSK Zrinjski Mostar,2025,BOS1,22,Attacking Midfield,27,Bosnia-Herzegovina,17,14,2,595
+307697,Stefano Surdanovic,6808,HSK Zrinjski Mostar,2025,BOS1,23,Defensive Midfield,26,Austria,25,17,0,624
+419255,Marijan Cavar,6808,HSK Zrinjski Mostar,2025,BOS1,42,Central Midfield,27,Bosnia-Herzegovina,23,13,1,588
+341424,Neven Djurasek,6808,HSK Zrinjski Mostar,2025,BOS1,30,Defensive Midfield,26,Croatia,28,26,0,1805
+388145,Antonio Ivancic,6808,HSK Zrinjski Mostar,2025,BOS1,20,Attacking Midfield,30,Croatia,29,24,0,1569
+917857,Antonio Ilic,6808,HSK Zrinjski Mostar,2025,BOS1,17,Attacking Midfield,20,Croatia,10,8,3,452
+1039061,Mihajlo Seva,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,3,0,0,0
+458540,Ivan Posavec,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,26,Croatia,4,0,0,0
+651773,Matej Sakota,6808,HSK Zrinjski Mostar,2025,BOS1,14,Right Winger,20,Bosnia-Herzegovina,33,32,6,2084
+354136,Vitalie Damascan,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Forward,26,Moldova,9,6,1,85
+376445,Mario Cuze,6808,HSK Zrinjski Mostar,2025,BOS1,25,Left Winger,26,Croatia,26,23,3,1510
+701391,Karlo Abramovic,6808,HSK Zrinjski Mostar,2025,BOS1,77,Left Winger,25,Croatia,26,25,1,1423
+473296,Leo Mikic,6808,HSK Zrinjski Mostar,2025,BOS1,9,Left Winger,28,Croatia,33,28,2,1362
+928869,Borna Filipovic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,19,Bosnia-Herzegovina,17,15,0,444
+624347,Nikola Janjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Right Winger,22,Montenegro,8,4,0,80
+610297,Tyler Burey,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,24,England,8,5,0,32
+179899,Tomislav Kis,6808,HSK Zrinjski Mostar,2025,BOS1,10,Centre-Forward,31,Croatia,15,13,0,440
+892166,Toni Majic,6808,HSK Zrinjski Mostar,2025,BOS1,90,Centre-Forward,19,Croatia,32,18,2,583
+109212,Nemanja Bilbija,6808,HSK Zrinjski Mostar,2025,BOS1,99,Centre-Forward,34,Bosnia-Herzegovina,27,27,13,2038
+171820,Tomi Juric,6808,HSK Zrinjski Mostar,2025,BOS1,11,Centre-Forward,33,Australia,10,6,4,366
+430159,Milan Sikanjic,6808,HSK Zrinjski Mostar,2025,BOS1,8,Centre-Forward,25,Bosnia-Herzegovina,2,1,0,66
+1033944,Antonio Arapovic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Forward,18,Bosnia-Herzegovina,3,1,0,13
+1162683,Ante Sunjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,16,Bosnia-Herzegovina,1,0,0,0
 952692,Mladen Jurkas,3900,FK Borac Banja Luka,2025,BOS1,72,Goalkeeper,17,Bosnia-Herzegovina,33,31,0,2790
 193217,Damjan Siskovski,3900,FK Borac Banja Luka,2025,BOS1,1,Goalkeeper,30,North Macedonia,33,3,0,270
 569080,Nikola Cetkovic,3900,FK Borac Banja Luka,2025,BOS1,21,Goalkeeper,23,Bosnia-Herzegovina,1,1,0,90
@@ -1748,7 +1872,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 655354,Danko Radic,3900,FK Borac Banja Luka,2025,BOS1,55,Defensive Midfield,25,Bosnia-Herzegovina,1,0,0,0
 465557,Luka Zoric,3900,FK Borac Banja Luka,2025,BOS1,0,Central Midfield,26,Serbia,15,5,0,57
 830919,Ognjen Radosevic,3900,FK Borac Banja Luka,2025,BOS1,28,Attacking Midfield,21,Serbia,25,6,0,182
-673237,Luka Misimovic,3900,FK Borac Banja Luka,2025,BOS1,80,Attacking Midfield,20,Bosnia-Herzegovina,1,1,0,27
 46346,Stojan Vranjes,3900,FK Borac Banja Luka,2025,BOS1,23,Attacking Midfield,38,Bosnia-Herzegovina,25,11,0,180
 949960,Noah Pušić,3900,FK Borac Banja Luka,2025,BOS1,76,Central Midfield,20,Netherlands,3,1,0,89
 279254,Sander Coopman,3900,FK Borac Banja Luka,2025,BOS1,0,Central Midfield,30,Belgium,16,3,0,84
@@ -1761,196 +1884,73 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 466121,Nikola Terzic,3900,FK Borac Banja Luka,2025,BOS1,36,Right Winger,24,Serbia,1,1,0,9
 914320,Stefan Marcetic,3900,FK Borac Banja Luka,2025,BOS1,0,Centre-Forward,18,Bosnia-Herzegovina,10,1,0,4
 690754,David Cavic,3900,FK Borac Banja Luka,2025,BOS1,22,Right Winger,22,Bosnia-Herzegovina,27,13,1,249
+673237,Luka Misimovic,3900,FK Borac Banja Luka,2025,BOS1,80,Centre-Forward,20,Bosnia-Herzegovina,1,1,0,27
 933832,Pavle Djajic,3900,FK Borac Banja Luka,2025,BOS1,14,Right Winger,18,Bosnia-Herzegovina,19,9,1,250
 522263,Omar Sijaric,3900,FK Borac Banja Luka,2025,BOS1,17,Right Winger,23,Montenegro,9,7,0,56
-243679,Goran Karacic,6808,HSK Zrinjski Mostar,2025,BOS1,18,Goalkeeper,28,Bosnia-Herzegovina,25,25,0,2110
-532772,Marin Ljubic,6808,HSK Zrinjski Mostar,2025,BOS1,40,Goalkeeper,27,Croatia,29,12,0,1028
-902989,Tin Sajko,6808,HSK Zrinjski Mostar,2025,BOS1,32,Goalkeeper,21,Croatia,16,1,0,90
-1033939,Matej Bogdan,6808,HSK Zrinjski Mostar,2025,BOS1,0,Goalkeeper,17,Bosnia-Herzegovina,4,0,0,0
-895531,Duje Dujmovic,6808,HSK Zrinjski Mostar,2025,BOS1,55,Centre-Back,21,Croatia,31,22,1,1963
-191822,Darko Velkovski,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,30,North Macedonia,5,1,0,45
-540938,Marko Vranjkovic,6808,HSK Zrinjski Mostar,2025,BOS1,19,Right-Back,26,Croatia,25,22,0,1856
-307098,Kerim Memija,6808,HSK Zrinjski Mostar,2025,BOS1,50,Right-Back,29,Bosnia-Herzegovina,30,23,0,1381
-226082,Petar Mamic,6808,HSK Zrinjski Mostar,2025,BOS1,12,Left-Back,29,Croatia,28,27,2,2020
-589753,Ilija Masic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,26,Bosnia-Herzegovina,19,10,0,801
-1009496,Ante Susak,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left-Back,19,Croatia,10,4,0,197
-205936,Darick Kobie Morris,6808,HSK Zrinjski Mostar,2025,BOS1,37,Centre-Back,29,Croatia,6,4,0,116
-909390,David Karacic,6808,HSK Zrinjski Mostar,2025,BOS1,6,Centre-Back,19,Bosnia-Herzegovina,27,8,0,308
-889801,Toma Palic,6808,HSK Zrinjski Mostar,2025,BOS1,24,Left-Back,23,Croatia,15,8,0,332
-109000,Hrvoje Barisic,6808,HSK Zrinjski Mostar,2025,BOS1,4,Centre-Back,34,Bosnia-Herzegovina,28,19,0,1661
-145994,Slobodan Jakovljevic,6808,HSK Zrinjski Mostar,2025,BOS1,27,Centre-Back,36,Serbia,18,17,1,1276
-83287,Mateo Susic,6808,HSK Zrinjski Mostar,2025,BOS1,16,Right-Back,34,Bosnia-Herzegovina,15,9,0,557
-1033998,Darko Basic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,3,0,0,0
-454888,Igor Savic,6808,HSK Zrinjski Mostar,2025,BOS1,21,Defensive Midfield,24,Bosnia-Herzegovina,32,29,1,2334
-653719,Jakov Pranjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,24,Croatia,18,14,0,538
-731965,Dan Lagumdzija,6808,HSK Zrinjski Mostar,2025,BOS1,5,Defensive Midfield,22,Croatia,16,12,2,818
-332875,Adi Nalic,6808,HSK Zrinjski Mostar,2025,BOS1,22,Attacking Midfield,27,Bosnia-Herzegovina,17,14,2,595
-307697,Stefano Surdanovic,6808,HSK Zrinjski Mostar,2025,BOS1,23,Defensive Midfield,26,Austria,25,17,0,624
-419255,Marijan Cavar,6808,HSK Zrinjski Mostar,2025,BOS1,42,Central Midfield,27,Bosnia-Herzegovina,23,13,1,588
-341424,Neven Djurasek,6808,HSK Zrinjski Mostar,2025,BOS1,30,Defensive Midfield,26,Croatia,28,26,0,1805
-388145,Antonio Ivancic,6808,HSK Zrinjski Mostar,2025,BOS1,20,Attacking Midfield,30,Croatia,29,24,0,1569
-917857,Antonio Ilic,6808,HSK Zrinjski Mostar,2025,BOS1,17,Attacking Midfield,20,Croatia,10,8,3,452
-1039061,Mihajlo Seva,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,3,0,0,0
-458540,Ivan Posavec,6808,HSK Zrinjski Mostar,2025,BOS1,0,Attacking Midfield,26,Croatia,4,0,0,0
-651773,Matej Sakota,6808,HSK Zrinjski Mostar,2025,BOS1,14,Right Winger,20,Bosnia-Herzegovina,33,32,6,2084
-354136,Vitalie Damascan,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Forward,26,Moldova,9,6,1,85
-376445,Mario Cuze,6808,HSK Zrinjski Mostar,2025,BOS1,25,Left Winger,26,Croatia,26,23,3,1510
-701391,Karlo Abramovic,6808,HSK Zrinjski Mostar,2025,BOS1,77,Left Winger,25,Croatia,26,25,1,1423
-473296,Leo Mikic,6808,HSK Zrinjski Mostar,2025,BOS1,9,Left Winger,28,Croatia,33,28,2,1362
-610297,Tyler Burey,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,24,England,8,5,0,32
-624347,Nikola Janjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Right Winger,22,Montenegro,8,4,0,80
-928869,Borna Filipovic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,19,Bosnia-Herzegovina,17,15,0,444
-179899,Tomislav Kis,6808,HSK Zrinjski Mostar,2025,BOS1,10,Centre-Forward,31,Croatia,15,13,0,440
-892166,Toni Majic,6808,HSK Zrinjski Mostar,2025,BOS1,90,Centre-Forward,19,Croatia,32,18,2,583
-109212,Nemanja Bilbija,6808,HSK Zrinjski Mostar,2025,BOS1,99,Centre-Forward,34,Bosnia-Herzegovina,27,27,13,2038
-171820,Tomi Juric,6808,HSK Zrinjski Mostar,2025,BOS1,11,Centre-Forward,33,Australia,10,6,4,366
-430159,Milan Sikanjic,6808,HSK Zrinjski Mostar,2025,BOS1,8,Centre-Forward,25,Bosnia-Herzegovina,2,1,0,66
-1033944,Antonio Arapovic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Centre-Forward,18,Bosnia-Herzegovina,3,1,0,13
-1162683,Ante Sunjic,6808,HSK Zrinjski Mostar,2025,BOS1,0,Left Winger,16,Bosnia-Herzegovina,1,0,0,0
-243679,Goran Karacic,6808,HSK Zrinjski Mostar,2026,BOS1,18,Goalkeeper,29,Bosnia-Herzegovina,1,1,0,90
-360677,Zvonimir Subaric,6808,HSK Zrinjski Mostar,2026,BOS1,31,Goalkeeper,29,Croatia,1,0,0,0
-615107,Antonio Djakovic,6808,HSK Zrinjski Mostar,2026,BOS1,44,Goalkeeper,25,Croatia,0,0,0,0
-1033939,Matej Bogdan,6808,HSK Zrinjski Mostar,2026,BOS1,1,Goalkeeper,18,Bosnia-Herzegovina,0,0,0,0
-740761,Karlo Stapic,6808,HSK Zrinjski Mostar,2026,BOS1,15,Centre-Back,24,Bosnia-Herzegovina,1,1,0,45
-540938,Marko Vranjkovic,6808,HSK Zrinjski Mostar,2026,BOS1,19,Right-Back,27,Croatia,1,1,0,31
-665529,Viktor Grbic,6808,HSK Zrinjski Mostar,2026,BOS1,21,Right-Back,22,Bosnia-Herzegovina,1,1,0,90
-226082,Petar Mamic,6808,HSK Zrinjski Mostar,2026,BOS1,12,Left-Back,30,Croatia,1,1,0,59
-205936,Darick Kobie Morris,6808,HSK Zrinjski Mostar,2026,BOS1,37,Centre-Back,31,Croatia,1,0,0,0
-909618,Branko Curdo,6808,HSK Zrinjski Mostar,2026,BOS1,0,Left-Back,20,Bosnia-Herzegovina,0,0,0,0
-889801,Toma Palic,6808,HSK Zrinjski Mostar,2026,BOS1,24,Left-Back,24,Croatia,0,0,0,0
-109000,Hrvoje Barisic,6808,HSK Zrinjski Mostar,2026,BOS1,4,Centre-Back,35,Bosnia-Herzegovina,1,1,0,90
-145994,Slobodan Jakovljevic,6808,HSK Zrinjski Mostar,2026,BOS1,27,Centre-Back,37,Serbia,1,1,0,45
-454888,Igor Savic,6808,HSK Zrinjski Mostar,2026,BOS1,6,Defensive Midfield,25,Bosnia-Herzegovina,1,1,0,2
-731965,Dan Lagumdzija,6808,HSK Zrinjski Mostar,2026,BOS1,5,Defensive Midfield,23,Croatia,0,0,0,0
-545226,Mario Cuic,6808,HSK Zrinjski Mostar,2026,BOS1,10,Attacking Midfield,25,Croatia,1,0,0,0
-332875,Adi Nalic,6808,HSK Zrinjski Mostar,2026,BOS1,22,Attacking Midfield,28,Bosnia-Herzegovina,0,0,0,0
-419255,Marijan Cavar,6808,HSK Zrinjski Mostar,2026,BOS1,42,Central Midfield,28,Bosnia-Herzegovina,0,0,0,0
-341424,Neven Djurasek,6808,HSK Zrinjski Mostar,2026,BOS1,30,Defensive Midfield,28,Croatia,1,1,0,90
-388145,Antonio Ivancic,6808,HSK Zrinjski Mostar,2026,BOS1,20,Attacking Midfield,31,Croatia,1,1,0,88
-587507,Ivica Vidovic,6808,HSK Zrinjski Mostar,2026,BOS1,8,Attacking Midfield,24,Croatia,1,1,0,16
-917857,Antonio Ilic,6808,HSK Zrinjski Mostar,2026,BOS1,17,Attacking Midfield,21,Croatia,1,1,1,90
-1386225,Thiago Santino López,6808,HSK Zrinjski Mostar,2026,BOS1,0,Central Midfield,19,Argentina,0,0,0,0
-651773,Matej Sakota,6808,HSK Zrinjski Mostar,2026,BOS1,14,Right Winger,22,Bosnia-Herzegovina,1,1,0,16
-927843,Niko Gajzler,6808,HSK Zrinjski Mostar,2026,BOS1,0,Left Winger,21,Croatia,0,0,0,0
-376445,Mario Cuze,6808,HSK Zrinjski Mostar,2026,BOS1,25,Left Winger,27,Croatia,1,1,1,74
-701391,Karlo Abramovic,6808,HSK Zrinjski Mostar,2026,BOS1,77,Left Winger,26,Croatia,1,1,0,74
-892166,Toni Majic,6808,HSK Zrinjski Mostar,2026,BOS1,90,Centre-Forward,20,Croatia,0,0,0,0
-109212,Nemanja Bilbija,6808,HSK Zrinjski Mostar,2026,BOS1,99,Centre-Forward,35,Bosnia-Herzegovina,1,1,0,90
-171820,Tomi Juric,6808,HSK Zrinjski Mostar,2026,BOS1,11,Centre-Forward,35,Australia,1,0,0,0
-809799,Hamza Ljukovac,6808,HSK Zrinjski Mostar,2026,BOS1,80,Left Winger,21,Bosnia-Herzegovina,1,0,0,0
-1033944,Antonio Arapovic,6808,HSK Zrinjski Mostar,2026,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,1,0,0,0
-160467,Ivan Banic,282,FK Sarajevo,2026,BOS1,31,Goalkeeper,32,Croatia,1,1,0,90
-798284,Sanin Musija,282,FK Sarajevo,2026,BOS1,13,Goalkeeper,21,Bosnia-Herzegovina,1,0,0,0
+160467,Ivan Banic,282,FK Sarajevo,2026,BOS1,31,Goalkeeper,32,Croatia,2,2,0,180
+798284,Sanin Musija,282,FK Sarajevo,2026,BOS1,13,Goalkeeper,21,Bosnia-Herzegovina,2,0,0,0
 890446,Faris Mehic,282,FK Sarajevo,2026,BOS1,40,Goalkeeper,20,Bosnia-Herzegovina,0,0,0,0
-809157,Luka Dajcer,282,FK Sarajevo,2026,BOS1,30,Left-Back,25,Croatia,1,0,0,0
-376098,Amar Beganovic,282,FK Sarajevo,2026,BOS1,22,Right-Back,26,Bosnia-Herzegovina,1,1,0,90
-372848,Selmir Pidro,282,FK Sarajevo,2026,BOS1,70,Left-Back,28,Bosnia-Herzegovina,1,1,0,65
-804280,Filip Kosi,282,FK Sarajevo,2026,BOS1,17,Left-Back,23,Slovenia,1,1,0,25
+809157,Luka Dajcer,282,FK Sarajevo,2026,BOS1,30,Left-Back,25,Croatia,2,1,0,90
+376098,Amar Beganovic,282,FK Sarajevo,2026,BOS1,22,Right-Back,26,Bosnia-Herzegovina,2,2,0,180
+372848,Selmir Pidro,282,FK Sarajevo,2026,BOS1,70,Left-Back,28,Bosnia-Herzegovina,2,2,0,81
+804280,Filip Kosi,282,FK Sarajevo,2026,BOS1,17,Left-Back,23,Slovenia,2,2,0,99
 238058,Renato Gojkovic,282,FK Sarajevo,2026,BOS1,3,Centre-Back,30,Bosnia-Herzegovina,1,1,0,5
-909288,Matija Glogovac,282,FK Sarajevo,2026,BOS1,0,Centre-Back,20,Bosnia-Herzegovina,0,0,0,0
-854838,Shane Maroodza,282,FK Sarajevo,2026,BOS1,2,Centre-Back,22,Zimbabwe,1,1,0,90
-510256,Luka Hujber,282,FK Sarajevo,2026,BOS1,27,Right-Back,27,Croatia,1,1,0,25
-1132953,Jovan Ivanisevic,282,FK Sarajevo,2026,BOS1,6,Centre-Back,21,Canada,1,1,0,90
-1399795,Souleymane Méité,282,FK Sarajevo,2026,BOS1,38,Centre-Back,20,Cote d'Ivoire,1,1,0,45
+854838,Shane Maroodza,282,FK Sarajevo,2026,BOS1,2,Centre-Back,22,Zimbabwe,2,2,0,92
+909288,Matija Glogovac,282,FK Sarajevo,2026,BOS1,18,Centre-Back,20,Bosnia-Herzegovina,1,0,0,0
+510256,Luka Hujber,282,FK Sarajevo,2026,BOS1,27,Right-Back,27,Croatia,2,1,0,25
+1132953,Jovan Ivanisevic,282,FK Sarajevo,2026,BOS1,6,Centre-Back,21,Canada,2,2,0,180
+1399795,Souleymane Méité,282,FK Sarajevo,2026,BOS1,38,Centre-Back,20,Cote d'Ivoire,2,2,0,71
 1457554,Petar Miskovic,282,FK Sarajevo,2026,BOS1,0,Centre-Back,18,Croatia,0,0,0,0
-505324,Agon Elezi,282,FK Sarajevo,2026,BOS1,20,Central Midfield,25,North Macedonia,1,1,0,85
+505324,Agon Elezi,282,FK Sarajevo,2026,BOS1,20,Central Midfield,25,North Macedonia,2,2,0,175
 1373676,Rijad Telalovic,282,FK Sarajevo,2026,BOS1,5,Central Midfield,17,Bosnia-Herzegovina,0,0,0,0
-952740,Sergey Ignatkov,282,FK Sarajevo,2026,BOS1,35,Defensive Midfield,19,Ukraine,1,1,0,90
-927837,Antonio Galesic,282,FK Sarajevo,2026,BOS1,8,Defensive Midfield,23,Croatia,1,0,0,0
+952740,Sergey Ignatkov,282,FK Sarajevo,2026,BOS1,35,Defensive Midfield,19,Ukraine,2,2,0,180
+927837,Antonio Galesic,282,FK Sarajevo,2026,BOS1,8,Defensive Midfield,23,Croatia,2,0,0,0
 511866,Rafail Mamas,282,FK Sarajevo,2026,BOS1,66,Defensive Midfield,25,Cyprus,0,0,0,0
 150482,Gojko Cimirot,282,FK Sarajevo,2026,BOS1,59,Defensive Midfield,33,Bosnia-Herzegovina,0,0,0,0
 1455102,Albert Mendy,282,FK Sarajevo,2026,BOS1,0,Defensive Midfield,19,Senegal,0,0,0,0
-476751,Mihael Kupresak,282,FK Sarajevo,2026,BOS1,77,Left Winger,25,Croatia,1,1,0,45
-491046,Ivan Saric,282,FK Sarajevo,2026,BOS1,7,Left Winger,25,Croatia,1,1,0,45
+476751,Mihael Kupresak,282,FK Sarajevo,2026,BOS1,77,Left Winger,25,Croatia,2,2,0,109
+491046,Ivan Saric,282,FK Sarajevo,2026,BOS1,7,Left Winger,25,Croatia,2,2,0,90
 473296,Leo Mikic,282,FK Sarajevo,2026,BOS1,9,Left Winger,29,Croatia,1,1,0,65
-358237,Francis Kyeremeh,282,FK Sarajevo,2026,BOS1,11,Right Winger,29,Ghana,1,1,0,90
+358237,Francis Kyeremeh,282,FK Sarajevo,2026,BOS1,11,Right Winger,29,Ghana,2,2,0,135
 744015,Ricardo Caraballo,282,FK Sarajevo,2026,BOS1,19,Centre-Forward,22,Colombia,0,0,0,0
-1056459,Filip Zivkovic,282,FK Sarajevo,2026,BOS1,24,Right Winger,20,Croatia,1,0,0,0
-580481,Bartol Barisic,282,FK Sarajevo,2026,BOS1,99,Centre-Forward,23,Croatia,1,1,0,45
+1056459,Filip Zivkovic,282,FK Sarajevo,2026,BOS1,24,Right Winger,20,Croatia,2,1,0,64
+580481,Bartol Barisic,282,FK Sarajevo,2026,BOS1,99,Centre-Forward,23,Croatia,2,2,1,133
 846745,Andreja Ristic,282,FK Sarajevo,2026,BOS1,0,Centre-Forward,22,Serbia,0,0,0,0
-1163153,Amar Ceric,282,FK Sarajevo,2026,BOS1,29,Left Winger,18,Bosnia-Herzegovina,1,0,0,0
-878064,Jonathan Agyekum,282,FK Sarajevo,2026,BOS1,23,Centre-Forward,20,Denmark,1,0,0,0
-160467,Ivan Banic,282,FK Sarajevo,2025,BOS1,31,Goalkeeper,30,Croatia,29,25,0,2250
-798284,Sanin Musija,282,FK Sarajevo,2025,BOS1,13,Goalkeeper,20,Bosnia-Herzegovina,36,11,0,990
-890446,Faris Mehic,282,FK Sarajevo,2025,BOS1,40,Goalkeeper,19,Bosnia-Herzegovina,0,0,0,0
-197520,Emil Rockov,282,FK Sarajevo,2025,BOS1,0,Goalkeeper,30,Serbia,7,0,0,0
-1256956,Ibrahim Zahirovic,282,FK Sarajevo,2025,BOS1,0,Goalkeeper,16,Bosnia-Herzegovina,4,0,0,0
-651762,Nermin Mujkic,282,FK Sarajevo,2025,BOS1,4,Centre-Back,21,Bosnia-Herzegovina,25,22,2,1793
-584936,Filip Jovic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,25,Serbia,15,9,0,520
-376098,Amar Beganovic,282,FK Sarajevo,2025,BOS1,22,Right-Back,25,Bosnia-Herzegovina,29,28,0,1859
-669174,Martin Paskalev,282,FK Sarajevo,2025,BOS1,0,Centre-Back,23,Bulgaria,17,4,0,309
-451328,Grigore Turda,282,FK Sarajevo,2025,BOS1,0,Centre-Back,27,Romania,19,7,0,229
-238058,Renato Gojkovic,282,FK Sarajevo,2025,BOS1,3,Centre-Back,29,Bosnia-Herzegovina,15,8,0,461
-854838,Shane Maroodza,282,FK Sarajevo,2025,BOS1,2,Centre-Back,21,Zimbabwe,19,19,0,1382
-510256,Luka Hujber,282,FK Sarajevo,2025,BOS1,27,Right-Back,26,Croatia,11,6,0,349
-1132953,Jovan Ivanisevic,282,FK Sarajevo,2025,BOS1,6,Centre-Back,20,Canada,16,11,2,789
-104466,Stefan Ristovski,282,FK Sarajevo,2025,BOS1,33,Right-Back,33,North Macedonia,30,28,3,2385
-206956,Slavko Bralic,282,FK Sarajevo,2025,BOS1,28,Centre-Back,32,Croatia,34,29,1,2445
-1399795,Souleymane Méité,282,FK Sarajevo,2025,BOS1,38,Centre-Back,18,Cote d'Ivoire,6,6,0,280
-621419,Tarik Kapetanovic,282,FK Sarajevo,2025,BOS1,0,Left-Back,22,Bosnia-Herzegovina,8,2,0,134
-1033932,Hamza Redzic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,18,Bosnia-Herzegovina,1,0,0,0
-1380720,Daris Dizdarevic,282,FK Sarajevo,2025,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,13,5,0,30
-505324,Agon Elezi,282,FK Sarajevo,2025,BOS1,20,Central Midfield,24,North Macedonia,26,26,9,1908
-1278173,Momodou Jatta,282,FK Sarajevo,2025,BOS1,0,Central Midfield,19,The Gambia,6,6,0,354
-1373676,Rijad Telalovic,282,FK Sarajevo,2025,BOS1,5,Central Midfield,16,Bosnia-Herzegovina,15,10,0,366
-952740,Sergey Ignatkov,282,FK Sarajevo,2025,BOS1,35,Defensive Midfield,18,Ukraine,25,22,0,1054
-466116,Aleksandar Djordjevic,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,25,Serbia,16,13,0,516
-511866,Rafail Mamas,282,FK Sarajevo,2025,BOS1,66,Defensive Midfield,24,Cyprus,12,8,0,378
-69374,Adem Ljajic,282,FK Sarajevo,2025,BOS1,88,Attacking Midfield,33,Serbia,25,25,6,1668
-665532,Anes Krdzalic,282,FK Sarajevo,2025,BOS1,23,Central Midfield,20,Bosnia-Herzegovina,24,19,3,1224
-150482,Gojko Cimirot,282,FK Sarajevo,2025,BOS1,59,Defensive Midfield,32,Bosnia-Herzegovina,27,26,0,1505
-491033,Edin Julardzija,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,24,Croatia,8,2,0,5
-946825,Muamer Hamzic,282,FK Sarajevo,2025,BOS1,0,Defensive Midfield,19,Bosnia-Herzegovina,10,2,0,14
-695465,Bakir Nurkovic,282,FK Sarajevo,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,8,1,0,4
-1058844,Kenan Vrban,282,FK Sarajevo,2025,BOS1,0,Central Midfield,16,Bosnia-Herzegovina,6,2,0,26
-1055431,Ante Pokrajcic,282,FK Sarajevo,2025,BOS1,0,Central Midfield,18,Bosnia-Herzegovina,1,0,0,0
-502682,Giorgi Guliashvili,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,23,Georgia,18,18,1,1604
-476751,Mihael Kupresak,282,FK Sarajevo,2025,BOS1,77,Left Winger,24,Croatia,34,33,6,1979
-388121,Karlo Butic,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,26,Croatia,14,12,2,531
-316047,Luka Menalo,282,FK Sarajevo,2025,BOS1,7,Left Winger,28,Bosnia-Herzegovina,17,17,3,1092
-550179,João Carlos,282,FK Sarajevo,2025,BOS1,99,Centre-Forward,30,Brazil,11,11,2,913
-697080,Mihael Mlinaric,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,25,Croatia,19,19,4,1427
-358237,Francis Kyeremeh,282,FK Sarajevo,2025,BOS1,11,Right Winger,28,Ghana,30,28,6,1746
-1056459,Filip Zivkovic,282,FK Sarajevo,2025,BOS1,24,Right Winger,18,Croatia,11,8,1,317
-522091,Renan Oliveira,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,28,Brazil,15,14,2,465
-846745,Andreja Ristic,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,21,Serbia,14,4,0,18
-1126891,Anomnachi Chidi,282,FK Sarajevo,2025,BOS1,0,Centre-Forward,20,Sweden,9,1,0,1
-192655,Aldin Turkes,282,FK Sarajevo,2025,BOS1,9,Centre-Forward,29,Bosnia-Herzegovina,17,8,0,238
-1163153,Amar Ceric,282,FK Sarajevo,2025,BOS1,0,Left Winger,17,Bosnia-Herzegovina,1,0,0,0
-1163151,Anes Mehmedovic,282,FK Sarajevo,2025,BOS1,0,Left Winger,16,Bosnia-Herzegovina,4,1,0,3
-713632,Ángel Jiménez,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Goalkeeper,24,Spain,0,0,0,0
-396651,Tarik Abdulahovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,1,Goalkeeper,28,Bosnia-Herzegovina,1,1,0,90
-1033869,Alvin Cosic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,99,Goalkeeper,19,Bosnia-Herzegovina,1,0,0,0
+1163153,Amar Ceric,282,FK Sarajevo,2026,BOS1,29,Left Winger,18,Bosnia-Herzegovina,2,0,0,0
+878064,Jonathan Agyekum,282,FK Sarajevo,2026,BOS1,23,Centre-Forward,20,Denmark,2,1,0,26
+713632,Ángel Jiménez,2573,FK Zeljeznicar Sarajevo,2026,BOS1,41,Goalkeeper,24,Spain,1,0,0,0
+396651,Tarik Abdulahovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,1,Goalkeeper,28,Bosnia-Herzegovina,2,2,0,180
+1033869,Alvin Cosic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,99,Goalkeeper,19,Bosnia-Herzegovina,2,0,0,0
 563194,Enes Alic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,3,Left-Back,26,Bosnia-Herzegovina,0,0,0,0
 341678,Collin Seedorf,2573,FK Zeljeznicar Sarajevo,2026,BOS1,33,Centre-Back,31,Netherlands,0,0,0,0
-360514,Giovanni Troupée,2573,FK Zeljeznicar Sarajevo,2026,BOS1,20,Right-Back,28,Curacao,0,0,0,0
-1058845,Amar Zahirovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Right-Back,18,Bosnia-Herzegovina,1,1,0,11
-1058846,Daris Kelmendi,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Back,18,Bosnia-Herzegovina,1,1,0,1
-1060529,Ajdin Rascic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,1,1,0,90
+360514,Giovanni Troupée,2573,FK Zeljeznicar Sarajevo,2026,BOS1,20,Right-Back,28,Curacao,1,1,0,18
+1058846,Daris Kelmendi,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Back,18,Bosnia-Herzegovina,2,1,0,1
+1060529,Ajdin Rascic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,2,2,0,180
 1291980,Albin Rahic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Left-Back,17,Bosnia-Herzegovina,1,0,0,0
-952721,Amar Ibrisimovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,5,Centre-Back,19,Bosnia-Herzegovina,1,1,0,90
-622431,Madzid Sosic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,10,Attacking Midfield,24,Bosnia-Herzegovina,1,1,0,31
-542995,Aleksa Pejic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,6,Defensive Midfield,27,Serbia,1,1,0,90
-1059802,Jorge Guzmán,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Left Midfield,22,Mexico,0,0,0,0
+952721,Amar Ibrisimovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,5,Centre-Back,19,Bosnia-Herzegovina,2,2,0,180
+622431,Madzid Sosic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,10,Attacking Midfield,24,Bosnia-Herzegovina,2,2,0,76
+542995,Aleksa Pejic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,6,Defensive Midfield,27,Serbia,2,2,0,180
+1059802,Jorge Guzmán,2573,FK Zeljeznicar Sarajevo,2026,BOS1,17,Left Midfield,22,Mexico,1,1,0,30
 570548,Armin Hodzic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,55,Central Midfield,26,Bosnia-Herzegovina,0,0,0,0
 192378,Marko Karamarko,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Defensive Midfield,33,Germany,0,0,0,0
-168943,Bojan Nastic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,15,Left Midfield,32,Bosnia-Herzegovina,1,1,0,90
-1309565,Eldar Dragovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,23,Attacking Midfield,18,Bosnia-Herzegovina,1,1,0,59
-168163,Deni Milosevic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,27,Attacking Midfield,31,Bosnia-Herzegovina,1,1,0,90
-247217,Samir Radovac,2573,FK Zeljeznicar Sarajevo,2026,BOS1,88,Central Midfield,30,Bosnia-Herzegovina,1,1,0,90
-906357,Afan Foco,2573,FK Zeljeznicar Sarajevo,2026,BOS1,8,Central Midfield,18,Bosnia-Herzegovina,1,0,0,0
-1186638,Afonso Vitorino,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Defensive Midfield,20,Portugal,0,0,0,0
-982896,Admir Gojak,2573,FK Zeljeznicar Sarajevo,2026,BOS1,22,Attacking Midfield,18,Bosnia-Herzegovina,1,0,0,0
+168943,Bojan Nastic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,15,Left Midfield,32,Bosnia-Herzegovina,2,2,0,180
+1309565,Eldar Dragovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,23,Attacking Midfield,18,Bosnia-Herzegovina,2,2,0,131
+168163,Deni Milosevic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,27,Attacking Midfield,31,Bosnia-Herzegovina,2,2,0,135
+247217,Samir Radovac,2573,FK Zeljeznicar Sarajevo,2026,BOS1,88,Central Midfield,30,Bosnia-Herzegovina,2,1,0,90
+906357,Afan Foco,2573,FK Zeljeznicar Sarajevo,2026,BOS1,8,Central Midfield,18,Bosnia-Herzegovina,2,1,0,19
+1186638,Afonso Vitorino,2573,FK Zeljeznicar Sarajevo,2026,BOS1,14,Defensive Midfield,20,Portugal,1,0,0,0
+982896,Admir Gojak,2573,FK Zeljeznicar Sarajevo,2026,BOS1,22,Attacking Midfield,19,Bosnia-Herzegovina,2,0,0,0
 1163248,Amar Hamidovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,26,Central Midfield,19,Bosnia-Herzegovina,1,0,0,0
-401088,Matej Cvetanoski,2573,FK Zeljeznicar Sarajevo,2026,BOS1,14,Left Winger,28,North Macedonia,0,0,0,0
-890479,Dzenan Sabic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,16,Left Winger,20,Bosnia-Herzegovina,1,1,0,90
-548235,Muharem Huskovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,29,Centre-Forward,23,Austria,1,1,1,31
+401088,Matej Cvetanoski,2573,FK Zeljeznicar Sarajevo,2026,BOS1,14,Left Winger,29,North Macedonia,0,0,0,0
+890479,Dzenan Sabic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,16,Left Winger,20,Bosnia-Herzegovina,2,2,0,180
+548235,Muharem Huskovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,29,Centre-Forward,23,Austria,2,2,1,76
 981037,Yacouba Dabo,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Right Winger,24,Senegal,0,0,0,0
-1141891,Aldian Korora,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Forward,17,Bosnia-Herzegovina,1,1,1,79
+1058845,Amar Zahirovic,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Right Winger,18,Bosnia-Herzegovina,1,1,0,11
+1141891,Aldian Korora,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Forward,17,Bosnia-Herzegovina,2,2,1,124
 1309990,Fedja Pervan,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Forward,17,Bosnia-Herzegovina,1,0,0,0
 1163249,Arman Dzafo,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Left Winger,19,Bosnia-Herzegovina,0,0,0,0
-1225160,Gabriel Cunha,2573,FK Zeljeznicar Sarajevo,2026,BOS1,0,Centre-Forward,22,Brazil,0,0,0,0
-1478286,Jonathan Freeman,2573,FK Zeljeznicar Sarajevo,2026,BOS1,28,Right Winger,18,Liberia,1,1,0,59
+1478286,Jonathan Freeman,2573,FK Zeljeznicar Sarajevo,2026,BOS1,28,Right Winger,18,Liberia,2,2,0,119
+1225160,Gabriel Cunha,2573,FK Zeljeznicar Sarajevo,2026,BOS1,49,Centre-Forward,22,Brazil,1,1,0,71
 280863,Nikola Lakic,11040,FK Radnik Bijeljina,2025,BOS1,0,Goalkeeper,29,Bosnia-Herzegovina,18,12,0,1080
 399837,Dusan Markovic,11040,FK Radnik Bijeljina,2025,BOS1,1,Goalkeeper,27,Serbia,16,13,0,1156
 595445,Elvir Trako,11040,FK Radnik Bijeljina,2025,BOS1,17,Goalkeeper,26,Bosnia-Herzegovina,36,11,0,990
@@ -1965,12 +1965,11 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 444893,Marko Cubrilo,11040,FK Radnik Bijeljina,2025,BOS1,24,Left-Back,27,Bosnia-Herzegovina,31,20,0,1012
 459507,Djordje Cosic,11040,FK Radnik Bijeljina,2025,BOS1,26,Centre-Back,29,Bosnia-Herzegovina,35,32,0,2765
 343363,Konstantin Cheshmedjiev,11040,FK Radnik Bijeljina,2025,BOS1,0,Centre-Back,29,North Macedonia,9,6,0,239
-140173,Aleksandar Vasic,11040,FK Radnik Bijeljina,2025,BOS1,0,Right-Back,34,Bosnia-Herzegovina,12,0,0,0
 798142,Amar Pekaric,11040,FK Radnik Bijeljina,2025,BOS1,0,Right-Back,20,Bosnia-Herzegovina,19,3,0,65
+140173,Aleksandar Vasic,11040,FK Radnik Bijeljina,2025,BOS1,0,Right-Back,34,Bosnia-Herzegovina,12,0,0,0
 469865,Jovan Pavlovic,11040,FK Radnik Bijeljina,2025,BOS1,0,Centre-Back,25,Bosnia-Herzegovina,0,0,0,0
 1278578,Malik Chamseddine,11040,FK Radnik Bijeljina,2025,BOS1,0,Centre-Back,18,Australia,6,0,0,0
 358913,Damjan Krajisnik,11040,FK Radnik Bijeljina,2025,BOS1,0,Defensive Midfield,28,Serbia,15,15,1,1336
-1011260,Mohamed Ghorzi,11040,FK Radnik Bijeljina,2025,BOS1,77,Right Midfield,25,France,34,32,7,2280
 491952,Faruk Gogic,11040,FK Radnik Bijeljina,2025,BOS1,0,Central Midfield,25,Bosnia-Herzegovina,18,17,2,1282
 357800,Emanuel Crnko,11040,FK Radnik Bijeljina,2025,BOS1,10,Attacking Midfield,26,Croatia,34,31,0,1709
 626801,Ivan Nikolov,11040,FK Radnik Bijeljina,2025,BOS1,80,Central Midfield,23,North Macedonia,13,13,0,634
@@ -1983,9 +1982,10 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 592980,Ateef Konaté,11040,FK Radnik Bijeljina,2025,BOS1,70,Attacking Midfield,24,France,17,13,0,759
 751442,Talha Tabakovic,11040,FK Radnik Bijeljina,2025,BOS1,0,Central Midfield,20,Bosnia-Herzegovina,19,12,1,398
 143308,Nebojsa Gavric,11040,FK Radnik Bijeljina,2025,BOS1,0,Central Midfield,33,Serbia,5,0,0,0
-1162686,Igor Spaic,11040,FK Radnik Bijeljina,2025,BOS1,0,Defensive Midfield,17,Bosnia-Herzegovina,10,0,0,0
 1168613,Luka Cvjetinovic,11040,FK Radnik Bijeljina,2025,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,13,1,0,24
-1309741,Mirko Vukovic,11040,FK Radnik Bijeljina,2025,BOS1,0,Central Midfield,17,Bosnia-Herzegovina,4,0,0,0
+1309741,Mirko Vukovic,11040,FK Radnik Bijeljina,2025,BOS1,0,Attacking Midfield,17,Bosnia-Herzegovina,4,0,0,0
+1162686,Igor Spaic,11040,FK Radnik Bijeljina,2025,BOS1,0,Defensive Midfield,17,Bosnia-Herzegovina,10,0,0,0
+1011260,Mohamed Ghorzi,11040,FK Radnik Bijeljina,2025,BOS1,77,Right Winger,25,France,34,32,7,2280
 599116,Djordje Pantelic,11040,FK Radnik Bijeljina,2025,BOS1,0,Right Winger,25,Serbia,18,18,3,1366
 699752,Luka Cumic,11040,FK Radnik Bijeljina,2025,BOS1,0,Centre-Forward,24,Serbia,19,18,4,962
 605217,Danilo Teodorovic,11040,FK Radnik Bijeljina,2025,BOS1,29,Centre-Forward,23,Bosnia-Herzegovina,26,24,2,1512
@@ -1994,59 +1994,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 581048,Njegos Kupusovic,11040,FK Radnik Bijeljina,2025,BOS1,9,Centre-Forward,24,Serbia,4,3,2,71
 797799,Andrija Losic,11040,FK Radnik Bijeljina,2025,BOS1,0,Left Winger,19,Bosnia-Herzegovina,2,0,0,0
 1168611,Ognjen Klenpic,11040,FK Radnik Bijeljina,2025,BOS1,20,Left Winger,19,Bosnia-Herzegovina,22,8,0,217
-399837,Dusan Markovic,11040,FK Radnik Bijeljina,2026,BOS1,1,Goalkeeper,28,Serbia,1,0,0,0
-166589,Vedran Kjosevski,11040,FK Radnik Bijeljina,2026,BOS1,27,Goalkeeper,31,Bosnia-Herzegovina,1,1,0,90
-1048866,Srdjan Nedic,11040,FK Radnik Bijeljina,2026,BOS1,0,Goalkeeper,19,Croatia,0,0,0,0
-863891,Blondon Meyapya,11040,FK Radnik Bijeljina,2026,BOS1,5,Centre-Back,25,Cameroon,0,0,0,0
-768106,Andrija Markovic,11040,FK Radnik Bijeljina,2026,BOS1,14,Right-Back,23,Serbia,1,1,0,81
-1168612,Bozidar Dimitric,11040,FK Radnik Bijeljina,2026,BOS1,16,Right-Back,18,Bosnia-Herzegovina,1,1,0,12
-580980,Tivonge Rushesha,11040,FK Radnik Bijeljina,2026,BOS1,0,Right-Back,24,Zimbabwe,0,0,0,0
-949842,Patrik Klancir,11040,FK Radnik Bijeljina,2026,BOS1,0,Left-Back,22,Croatia,0,0,0,0
-344915,Slavisa Radovic,11040,FK Radnik Bijeljina,2026,BOS1,3,Left-Back,32,Serbia,1,1,0,90
-620926,Mustafa Sukilovic,11040,FK Radnik Bijeljina,2026,BOS1,22,Centre-Back,23,Bosnia-Herzegovina,1,1,0,90
-459507,Djordje Cosic,11040,FK Radnik Bijeljina,2026,BOS1,26,Centre-Back,30,Bosnia-Herzegovina,1,1,0,90
-469865,Jovan Pavlovic,11040,FK Radnik Bijeljina,2026,BOS1,0,Centre-Back,26,Bosnia-Herzegovina,0,0,0,0
-1278578,Malik Chamseddine,11040,FK Radnik Bijeljina,2026,BOS1,28,Centre-Back,19,Australia,1,0,0,0
-1011260,Mohamed Ghorzi,11040,FK Radnik Bijeljina,2026,BOS1,77,Right Midfield,26,France,1,1,0,90
-338817,Indy Boonen,11040,FK Radnik Bijeljina,2026,BOS1,0,Attacking Midfield,27,Belgium,0,0,0,0
-357800,Emanuel Crnko,11040,FK Radnik Bijeljina,2026,BOS1,10,Attacking Midfield,27,Croatia,1,1,0,90
-448668,Huso Karjasevic,11040,FK Radnik Bijeljina,2026,BOS1,0,Defensive Midfield,29,Bosnia-Herzegovina,0,0,0,0
-611060,Pedro Torres,11040,FK Radnik Bijeljina,2026,BOS1,0,Central Midfield,28,Spain,0,0,0,0
-801307,Tino Blaz Laus,11040,FK Radnik Bijeljina,2026,BOS1,8,Attacking Midfield,25,Croatia,1,0,0,0
-592980,Ateef Konaté,11040,FK Radnik Bijeljina,2026,BOS1,0,Attacking Midfield,25,France,0,0,0,0
-1378324,Felix Osei Agyemang,11040,FK Radnik Bijeljina,2026,BOS1,6,Central Midfield,19,Ghana,1,1,0,90
-909273,Andrej Krstic,11040,FK Radnik Bijeljina,2026,BOS1,25,Central Midfield,20,Bosnia-Herzegovina,1,0,0,0
-1162686,Igor Spaic,11040,FK Radnik Bijeljina,2026,BOS1,0,Defensive Midfield,18,Bosnia-Herzegovina,1,1,0,1
-1438527,Sanel Delic,11040,FK Radnik Bijeljina,2026,BOS1,0,Central Midfield,16,Bosnia-Herzegovina,1,0,0,0
-605217,Danilo Teodorovic,11040,FK Radnik Bijeljina,2026,BOS1,29,Centre-Forward,24,Bosnia-Herzegovina,1,1,0,90
-487210,Vladimir Bradonjic,11040,FK Radnik Bijeljina,2026,BOS1,20,Left Winger,26,Bosnia-Herzegovina,1,1,0,12
-1239779,Antoine Ijoma,11040,FK Radnik Bijeljina,2026,BOS1,99,Centre-Forward,21,Nigeria,1,1,0,78
-581048,Njegos Kupusovic,11040,FK Radnik Bijeljina,2026,BOS1,9,Centre-Forward,25,Serbia,0,0,0,0
-607567,Luka Cveticanin,11040,FK Radnik Bijeljina,2026,BOS1,17,Left Winger,23,Serbia,1,1,0,9
-797799,Andrija Losic,11040,FK Radnik Bijeljina,2026,BOS1,0,Left Winger,20,Bosnia-Herzegovina,0,0,0,0
-1168611,Ognjen Klenpic,11040,FK Radnik Bijeljina,2026,BOS1,11,Left Winger,20,Bosnia-Herzegovina,1,1,0,78
-621427,Adi Durmo,765,NK Celik Zenica,2025,BOS1,0,Goalkeeper,22,Bosnia-Herzegovina,0,0,0,0
-654460,Arman Sutkovic,765,NK Celik Zenica,2025,BOS1,0,Goalkeeper,20,Bosnia-Herzegovina,0,0,0,0
-1196453,Amer Hodzic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,20,Bosnia-Herzegovina,0,0,0,0
-586311,Eldar Sivac,765,NK Celik Zenica,2025,BOS1,0,Right-Back,25,Bosnia-Herzegovina,0,0,0,0
-749673,Amer Masetic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,21,Bosnia-Herzegovina,0,0,0,0
-1245884,Nedim Smajlovic,765,NK Celik Zenica,2025,BOS1,0,Left-Back,20,Bosnia-Herzegovina,0,0,0,0
-586325,Amar Jusic,765,NK Celik Zenica,2025,BOS1,0,Right-Back,24,Bosnia-Herzegovina,0,0,0,0
-123750,Kenan Horic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,34,Bosnia-Herzegovina,0,0,0,0
-227639,Dzenan Burekovic,765,NK Celik Zenica,2025,BOS1,0,Left-Back,30,Bosnia-Herzegovina,0,0,0,0
-46301,Aladin Isakovic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,39,Bosnia-Herzegovina,0,0,0,0
-591270,Joseph Amoah,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,27,Ghana,0,0,0,0
-551062,Harun Vardo,765,NK Celik Zenica,2025,BOS1,0,Defensive Midfield,26,Bosnia-Herzegovina,0,0,0,0
-572103,Kenan Delic,765,NK Celik Zenica,2025,BOS1,0,Attacking Midfield,26,Bosnia-Herzegovina,0,0,0,0
-1300309,Eman Babic,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,19,Bosnia-Herzegovina,0,0,0,0
-260682,Marin Popovic,765,NK Celik Zenica,2025,BOS1,0,Right Midfield,30,Bosnia-Herzegovina,0,0,0,0
-432754,Bruno Jenjic,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,24,Croatia,0,0,0,0
-1262454,Emrah Palackic,765,NK Celik Zenica,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,0,0,0,0
-587761,Anes Masic,765,NK Celik Zenica,2025,BOS1,0,Centre-Forward,25,Bosnia-Herzegovina,0,0,0,0
-511851,Nihad Sero,765,NK Celik Zenica,2025,BOS1,0,Right Winger,26,Bosnia-Herzegovina,0,0,0,0
-690765,Dzevad Sijamija,765,NK Celik Zenica,2025,BOS1,0,Right Winger,23,Bosnia-Herzegovina,0,0,0,0
-1166528,Denin Jamakovic,765,NK Celik Zenica,2025,BOS1,0,Left Winger,20,Bosnia-Herzegovina,0,0,0,0
-1174741,Emmanuel Sieh,765,NK Celik Zenica,2025,BOS1,0,Centre-Forward,18,Liberia,0,0,0,0
 539907,Vedad Muftic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,13,Goalkeeper,23,Bosnia-Herzegovina,35,33,0,2970
 993548,Igor Roncevic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Goalkeeper,21,Bosnia-Herzegovina,0,0,0,0
 396651,Tarik Abdulahovic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,1,Goalkeeper,27,Bosnia-Herzegovina,36,3,0,270
@@ -2063,7 +2010,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 490574,Edin Osmanovic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,90,Centre-Back,23,Luxembourg,29,5,0,395
 1078875,Deni Memisevic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Left-Back,18,Bosnia-Herzegovina,0,0,0,0
 1083087,Léo Simoni,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Back,23,Brazil,1,0,0,0
-1058845,Amar Zahirovic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Right-Back,17,Bosnia-Herzegovina,1,0,0,0
 1058846,Daris Kelmendi,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Back,17,Bosnia-Herzegovina,6,1,0,19
 1060529,Ajdin Rascic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Back,16,Bosnia-Herzegovina,11,4,0,129
 622431,Madzid Sosic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,10,Attacking Midfield,22,Bosnia-Herzegovina,11,11,1,731
@@ -2095,40 +2041,94 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 890472,Zlatan Zenicanin,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
 109047,Sulejman Krpic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,7,Centre-Forward,34,Bosnia-Herzegovina,19,19,2,1308
 1377964,Ibraheem Adams Olanrewaju,2573,FK Zeljeznicar Sarajevo,2025,BOS1,17,Centre-Forward,18,Nigeria,1,0,0,0
+1058845,Amar Zahirovic,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Right Winger,17,Bosnia-Herzegovina,1,0,0,0
 1141891,Aldian Korora,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Forward,16,Bosnia-Herzegovina,5,3,0,63
 1478286,Jonathan Freeman,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Right Winger,17,Liberia,3,2,0,34
 1454546,Santiago Garcia,2573,FK Zeljeznicar Sarajevo,2025,BOS1,0,Centre-Forward,19,United States,0,0,0,0
+621427,Adi Durmo,765,NK Celik Zenica,2025,BOS1,0,Goalkeeper,22,Bosnia-Herzegovina,0,0,0,0
+654460,Arman Sutkovic,765,NK Celik Zenica,2025,BOS1,0,Goalkeeper,20,Bosnia-Herzegovina,0,0,0,0
+1196453,Amer Hodzic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,20,Bosnia-Herzegovina,0,0,0,0
+586311,Eldar Sivac,765,NK Celik Zenica,2025,BOS1,0,Right-Back,25,Bosnia-Herzegovina,0,0,0,0
+749673,Amer Masetic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,21,Bosnia-Herzegovina,0,0,0,0
+1245884,Nedim Smajlovic,765,NK Celik Zenica,2025,BOS1,0,Left-Back,20,Bosnia-Herzegovina,0,0,0,0
+586325,Amar Jusic,765,NK Celik Zenica,2025,BOS1,0,Right-Back,24,Bosnia-Herzegovina,0,0,0,0
+123750,Kenan Horic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,34,Bosnia-Herzegovina,0,0,0,0
+227639,Dzenan Burekovic,765,NK Celik Zenica,2025,BOS1,0,Left-Back,30,Bosnia-Herzegovina,0,0,0,0
+46301,Aladin Isakovic,765,NK Celik Zenica,2025,BOS1,0,Centre-Back,39,Bosnia-Herzegovina,0,0,0,0
+591270,Joseph Amoah,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,27,Ghana,0,0,0,0
+551062,Harun Vardo,765,NK Celik Zenica,2025,BOS1,0,Defensive Midfield,26,Bosnia-Herzegovina,0,0,0,0
+572103,Kenan Delic,765,NK Celik Zenica,2025,BOS1,0,Attacking Midfield,26,Bosnia-Herzegovina,0,0,0,0
+1300309,Eman Babic,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,19,Bosnia-Herzegovina,0,0,0,0
+260682,Marin Popovic,765,NK Celik Zenica,2025,BOS1,0,Right Midfield,30,Bosnia-Herzegovina,0,0,0,0
+432754,Bruno Jenjic,765,NK Celik Zenica,2025,BOS1,0,Central Midfield,24,Croatia,0,0,0,0
+1262454,Emrah Palackic,765,NK Celik Zenica,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,0,0,0,0
+587761,Anes Masic,765,NK Celik Zenica,2025,BOS1,0,Centre-Forward,25,Bosnia-Herzegovina,0,0,0,0
+511851,Nihad Sero,765,NK Celik Zenica,2025,BOS1,0,Right Winger,26,Bosnia-Herzegovina,0,0,0,0
+690765,Dzevad Sijamija,765,NK Celik Zenica,2025,BOS1,0,Right Winger,23,Bosnia-Herzegovina,0,0,0,0
+1166528,Denin Jamakovic,765,NK Celik Zenica,2025,BOS1,0,Left Winger,20,Bosnia-Herzegovina,0,0,0,0
+1174741,Emmanuel Sieh,765,NK Celik Zenica,2025,BOS1,0,Centre-Forward,18,Liberia,0,0,0,0
 682015,Vladimir Savic,765,NK Celik Zenica,2026,BOS1,0,Goalkeeper,30,Serbia,0,0,0,0
-621427,Adi Durmo,765,NK Celik Zenica,2026,BOS1,23,Goalkeeper,23,Bosnia-Herzegovina,2,0,0,0
-654460,Arman Sutkovic,765,NK Celik Zenica,2026,BOS1,1,Goalkeeper,21,Bosnia-Herzegovina,2,2,0,180
-376455,Nemanja Tomasevic,765,NK Celik Zenica,2026,BOS1,27,Left-Back,27,Serbia,2,2,0,128
-1196453,Amer Hodzic,765,NK Celik Zenica,2026,BOS1,2,Centre-Back,21,Bosnia-Herzegovina,2,0,0,0
-749673,Amer Masetic,765,NK Celik Zenica,2026,BOS1,6,Centre-Back,22,Bosnia-Herzegovina,2,2,0,180
-586311,Eldar Sivac,765,NK Celik Zenica,2026,BOS1,21,Right-Back,26,Bosnia-Herzegovina,2,2,0,173
-1245884,Nedim Smajlovic,765,NK Celik Zenica,2026,BOS1,19,Left-Back,21,Bosnia-Herzegovina,2,2,0,52
-422986,Halid Sabanovic,765,NK Celik Zenica,2026,BOS1,24,Right-Back,26,Bosnia-Herzegovina,2,1,0,7
+621427,Adi Durmo,765,NK Celik Zenica,2026,BOS1,23,Goalkeeper,23,Bosnia-Herzegovina,3,0,0,0
+654460,Arman Sutkovic,765,NK Celik Zenica,2026,BOS1,1,Goalkeeper,21,Bosnia-Herzegovina,3,3,0,270
+376455,Nemanja Tomasevic,765,NK Celik Zenica,2026,BOS1,27,Left-Back,27,Serbia,3,2,0,128
+1196453,Amer Hodzic,765,NK Celik Zenica,2026,BOS1,2,Centre-Back,21,Bosnia-Herzegovina,3,0,0,0
+749673,Amer Masetic,765,NK Celik Zenica,2026,BOS1,6,Centre-Back,22,Bosnia-Herzegovina,3,3,0,270
+586311,Eldar Sivac,765,NK Celik Zenica,2026,BOS1,21,Right-Back,26,Bosnia-Herzegovina,3,3,0,263
+1245884,Nedim Smajlovic,765,NK Celik Zenica,2026,BOS1,19,Left-Back,21,Bosnia-Herzegovina,3,3,0,142
+422986,Halid Sabanovic,765,NK Celik Zenica,2026,BOS1,24,Right-Back,27,Bosnia-Herzegovina,3,1,0,7
 227639,Dzenan Burekovic,765,NK Celik Zenica,2026,BOS1,0,Left-Back,31,Bosnia-Herzegovina,0,0,0,0
-123750,Kenan Horic,765,NK Celik Zenica,2026,BOS1,4,Centre-Back,35,Bosnia-Herzegovina,2,2,0,180
-996465,Albin Omic,765,NK Celik Zenica,2026,BOS1,17,Defensive Midfield,22,Bosnia-Herzegovina,2,0,0,0
-491952,Faruk Gogic,765,NK Celik Zenica,2026,BOS1,88,Central Midfield,26,Bosnia-Herzegovina,2,2,0,130
-470435,Aldin Hrvanovic,765,NK Celik Zenica,2026,BOS1,14,Attacking Midfield,28,Bosnia-Herzegovina,2,2,1,159
+123750,Kenan Horic,765,NK Celik Zenica,2026,BOS1,4,Centre-Back,35,Bosnia-Herzegovina,3,3,0,225
+1455861,Vedad Spahic,765,NK Celik Zenica,2026,BOS1,18,Right-Back,19,Bosnia-Herzegovina,0,0,0,0
+996465,Albin Omic,765,NK Celik Zenica,2026,BOS1,17,Defensive Midfield,22,Bosnia-Herzegovina,3,1,0,45
+491952,Faruk Gogic,765,NK Celik Zenica,2026,BOS1,88,Central Midfield,26,Bosnia-Herzegovina,3,3,0,205
+470435,Aldin Hrvanovic,765,NK Celik Zenica,2026,BOS1,14,Attacking Midfield,28,Bosnia-Herzegovina,3,3,1,204
 293258,Oliver Sarkic,765,NK Celik Zenica,2026,BOS1,18,Attacking Midfield,29,Montenegro,1,1,0,30
-289250,Andrés Mohedano,765,NK Celik Zenica,2026,BOS1,8,Central Midfield,30,Spain,2,2,0,180
-591270,Joseph Amoah,765,NK Celik Zenica,2026,BOS1,28,Central Midfield,28,Ghana,2,2,0,50
-551062,Harun Vardo,765,NK Celik Zenica,2026,BOS1,5,Defensive Midfield,27,Bosnia-Herzegovina,2,1,0,7
+289250,Andrés Mohedano,765,NK Celik Zenica,2026,BOS1,8,Central Midfield,30,Spain,3,3,0,270
+591270,Joseph Amoah,765,NK Celik Zenica,2026,BOS1,28,Central Midfield,28,Ghana,3,3,0,95
+551062,Harun Vardo,765,NK Celik Zenica,2026,BOS1,5,Defensive Midfield,27,Bosnia-Herzegovina,3,2,0,22
 1300309,Eman Babic,765,NK Celik Zenica,2026,BOS1,22,Central Midfield,20,Bosnia-Herzegovina,1,0,0,0
-260682,Marin Popovic,765,NK Celik Zenica,2026,BOS1,15,Right Midfield,31,Bosnia-Herzegovina,1,0,0,0
-432754,Bruno Jenjic,765,NK Celik Zenica,2026,BOS1,20,Central Midfield,25,Croatia,2,2,0,143
-587761,Anes Masic,765,NK Celik Zenica,2026,BOS1,99,Centre-Forward,26,Bosnia-Herzegovina,2,2,1,170
-690765,Dzevad Sijamija,765,NK Celik Zenica,2026,BOS1,7,Right Winger,24,Bosnia-Herzegovina,2,2,0,180
-810987,Samy Faraj,765,NK Celik Zenica,2026,BOS1,0,Left Winger,24,Algeria,0,0,0,0
-586905,Dejan Vidić,765,NK Celik Zenica,2026,BOS1,9,Centre-Forward,33,Serbia,1,1,0,10
-1174741,Emmanuel Sieh,765,NK Celik Zenica,2026,BOS1,26,Centre-Forward,19,Liberia,2,2,0,21
+260682,Marin Popovic,765,NK Celik Zenica,2026,BOS1,15,Right Midfield,32,Bosnia-Herzegovina,2,0,0,0
+432754,Bruno Jenjic,765,NK Celik Zenica,2026,BOS1,20,Central Midfield,25,Croatia,3,3,0,188
+587761,Anes Masic,765,NK Celik Zenica,2026,BOS1,99,Centre-Forward,26,Bosnia-Herzegovina,3,3,1,260
+690765,Dzevad Sijamija,765,NK Celik Zenica,2026,BOS1,7,Right Winger,24,Bosnia-Herzegovina,3,3,0,251
+586905,Dejan Vidić,765,NK Celik Zenica,2026,BOS1,9,Centre-Forward,33,Serbia,2,1,0,10
+810987,Samy Faraj,765,NK Celik Zenica,2026,BOS1,11,Left Winger,24,Algeria,1,1,0,19
+1174741,Emmanuel Sieh,765,NK Celik Zenica,2026,BOS1,26,Centre-Forward,19,Liberia,3,3,0,66
 1438315,Kerim Beganovic,765,NK Celik Zenica,2026,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
+372380,Emil Velic,628,FK Velez Mostar,2026,BOS1,95,Goalkeeper,31,Slovenia,3,3,0,270
+687772,Faris Ribic,628,FK Velez Mostar,2026,BOS1,1,Goalkeeper,23,Bosnia-Herzegovina,3,0,0,0
+513714,Ajdin Nukic,628,FK Velez Mostar,2026,BOS1,7,Right-Back,28,Bosnia-Herzegovina,3,3,1,212
+872091,Said Duranovic,628,FK Velez Mostar,2026,BOS1,18,Right-Back,21,Bosnia-Herzegovina,3,3,0,270
+517372,Mohamed Abdallah,628,FK Velez Mostar,2026,BOS1,5,Right-Back,27,Comoros,2,2,0,70
+263352,Anes Omerovic,628,FK Velez Mostar,2026,BOS1,13,Centre-Back,28,Austria,3,3,0,270
+687434,Adin Bajric,628,FK Velez Mostar,2026,BOS1,55,Centre-Back,23,Bosnia-Herzegovina,3,2,0,106
+429310,Armin Imamovic,628,FK Velez Mostar,2026,BOS1,23,Left-Back,26,Bosnia-Herzegovina,3,3,0,139
+1034212,Faruk Setic,628,FK Velez Mostar,2026,BOS1,66,Right-Back,19,Bosnia-Herzegovina,0,0,0,0
+1187047,Benjamin Zulovic,628,FK Velez Mostar,2026,BOS1,66,Centre-Back,18,Bosnia-Herzegovina,1,0,0,0
+414942,Dani Salcin,628,FK Velez Mostar,2026,BOS1,10,Attacking Midfield,26,Bosnia-Herzegovina,1,1,0,74
+525942,Armin Besagic,628,FK Velez Mostar,2026,BOS1,77,Defensive Midfield,27,Bosnia-Herzegovina,3,3,0,194
+195874,Ante Hrkac,628,FK Velez Mostar,2026,BOS1,8,Defensive Midfield,34,Bosnia-Herzegovina,3,3,0,256
+215652,Rafidine Abdullah,628,FK Velez Mostar,2026,BOS1,6,Defensive Midfield,32,Comoros,1,1,0,68
+1048115,Ayham Shhade,628,FK Velez Mostar,2026,BOS1,17,Defensive Midfield,25,Israel,3,3,0,157
+979857,Damir Halilovic,628,FK Velez Mostar,2026,BOS1,20,Defensive Midfield,21,Bosnia-Herzegovina,3,0,0,0
+673232,Dzenan Puce,628,FK Velez Mostar,2026,BOS1,38,Attacking Midfield,21,Bosnia-Herzegovina,3,1,0,9
+1264371,Birsen Lekovic,628,FK Velez Mostar,2026,BOS1,0,Defensive Midfield,18,Serbia,0,0,0,0
+912083,Kenan Djuliman,628,FK Velez Mostar,2026,BOS1,45,Attacking Midfield,20,Bosnia-Herzegovina,3,0,0,0
+952750,Mahir Besic,628,FK Velez Mostar,2026,BOS1,83,Attacking Midfield,19,Bosnia-Herzegovina,3,2,0,90
+513004,Armin Spahic,628,FK Velez Mostar,2026,BOS1,9,Centre-Forward,25,Bosnia-Herzegovina,2,2,0,171
+651376,Moonga Simba,628,FK Velez Mostar,2026,BOS1,0,Right Winger,26,Sweden,0,0,0,0
+651771,Aldin Mesic,628,FK Velez Mostar,2026,BOS1,11,Left Winger,22,Bosnia-Herzegovina,1,1,1,22
+797796,Mahir Rahimic,628,FK Velez Mostar,2026,BOS1,19,Centre-Forward,21,Bosnia-Herzegovina,3,3,1,204
+1033947,Vedad Abidovic,628,FK Velez Mostar,2026,BOS1,47,Left Winger,19,Bosnia-Herzegovina,3,3,0,98
+674922,Nino Stojanovic,628,FK Velez Mostar,2026,BOS1,80,Left Winger,25,Croatia,3,3,0,158
+655230,Leonid Ignatov,628,FK Velez Mostar,2026,BOS1,88,Right Winger,24,North Macedonia,2,2,0,67
+949973,Carlo Matekovic,628,FK Velez Mostar,2026,BOS1,91,Centre-Forward,22,Croatia,3,0,0,0
+674610,Beni Redzic,628,FK Velez Mostar,2026,BOS1,14,Left Winger,23,Bosnia-Herzegovina,1,0,0,0
+952722,Faris Dzevahiric,628,FK Velez Mostar,2026,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
+1179273,Faris Puce,628,FK Velez Mostar,2026,BOS1,0,Left Winger,18,Bosnia-Herzegovina,0,0,0,0
 695495,Tarik Karic,628,FK Velez Mostar,2025,BOS1,1,Goalkeeper,19,Bosnia-Herzegovina,33,28,0,2520
 483007,Belmin Dizdarevic,628,FK Velez Mostar,2025,BOS1,0,Goalkeeper,23,Bosnia-Herzegovina,15,4,0,360
 687772,Faris Ribic,628,FK Velez Mostar,2025,BOS1,12,Goalkeeper,22,Bosnia-Herzegovina,24,4,0,360
-1131806,Tarik Tikvesa,628,FK Velez Mostar,2025,BOS1,0,Goalkeeper,18,Bosnia-Herzegovina,3,0,0,0
 350967,Besim Serbecic,628,FK Velez Mostar,2025,BOS1,5,Centre-Back,27,Bosnia-Herzegovina,35,32,1,2854
 372848,Selmir Pidro,628,FK Velez Mostar,2025,BOS1,19,Left-Back,27,Bosnia-Herzegovina,32,32,4,2456
 872091,Said Duranovic,628,FK Velez Mostar,2025,BOS1,18,Right-Back,19,Bosnia-Herzegovina,17,9,0,447
@@ -2146,8 +2146,8 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 414942,Dani Salcin,628,FK Velez Mostar,2025,BOS1,22,Attacking Midfield,25,Bosnia-Herzegovina,15,15,3,882
 448668,Huso Karjasevic,628,FK Velez Mostar,2025,BOS1,0,Defensive Midfield,27,Bosnia-Herzegovina,18,17,0,704
 369498,Edo Vehabovic,628,FK Velez Mostar,2025,BOS1,10,Attacking Midfield,30,Bosnia-Herzegovina,33,29,0,1814
-687774,Tarik Sikalo,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,21,Bosnia-Herzegovina,13,1,0,8
 801307,Tino Blaz Laus,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,24,Croatia,14,9,1,244
+687774,Tarik Sikalo,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,21,Bosnia-Herzegovina,13,1,0,8
 195874,Ante Hrkac,628,FK Velez Mostar,2025,BOS1,8,Defensive Midfield,33,Bosnia-Herzegovina,25,24,1,1967
 1276563,Domagoj Vidovic,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,19,Croatia,11,2,0,32
 215652,Rafidine Abdullah,628,FK Velez Mostar,2025,BOS1,6,Defensive Midfield,31,Comoros,23,23,0,1553
@@ -2155,8 +2155,8 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 979857,Damir Halilovic,628,FK Velez Mostar,2025,BOS1,20,Defensive Midfield,19,Bosnia-Herzegovina,24,7,0,162
 673232,Dzenan Puce,628,FK Velez Mostar,2025,BOS1,38,Attacking Midfield,19,Bosnia-Herzegovina,0,0,0,0
 695467,Aleksa Raca,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,19,Bosnia-Herzegovina,18,6,0,124
-912083,Kenan Djuliman,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,19,Bosnia-Herzegovina,1,0,0,0
 952750,Mahir Besic,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,14,2,0,18
+912083,Kenan Djuliman,628,FK Velez Mostar,2025,BOS1,0,Attacking Midfield,19,Bosnia-Herzegovina,1,0,0,0
 1058843,Edib Dazdarevic,628,FK Velez Mostar,2025,BOS1,0,Defensive Midfield,17,Bosnia-Herzegovina,1,0,0,0
 513004,Armin Spahic,628,FK Velez Mostar,2025,BOS1,9,Centre-Forward,24,Bosnia-Herzegovina,16,16,4,1185
 491046,Ivan Saric,628,FK Velez Mostar,2025,BOS1,11,Left Winger,24,Croatia,33,32,6,2173
@@ -2170,63 +2170,40 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 300901,Almedin Ziljkic,628,FK Velez Mostar,2025,BOS1,0,Left Winger,29,Bosnia-Herzegovina,9,9,0,656
 1171105,Edmar,628,FK Velez Mostar,2025,BOS1,77,Left Winger,21,Brazil,3,0,0,0
 135528,Nermin Haskic,628,FK Velez Mostar,2025,BOS1,0,Centre-Forward,36,Bosnia-Herzegovina,15,14,1,714
-1169593,Amel Tiro,628,FK Velez Mostar,2025,BOS1,0,Right Winger,15,Bosnia-Herzegovina,1,0,0,0
-372380,Emil Velic,628,FK Velez Mostar,2026,BOS1,95,Goalkeeper,31,Slovenia,2,2,0,180
-687772,Faris Ribic,628,FK Velez Mostar,2026,BOS1,1,Goalkeeper,23,Bosnia-Herzegovina,2,0,0,0
-513714,Ajdin Nukic,628,FK Velez Mostar,2026,BOS1,7,Right-Back,28,Bosnia-Herzegovina,2,2,1,160
-872091,Said Duranovic,628,FK Velez Mostar,2026,BOS1,18,Right-Back,21,Bosnia-Herzegovina,2,2,0,180
-517372,Mohamed Abdallah,628,FK Velez Mostar,2026,BOS1,5,Right-Back,27,Comoros,2,2,0,70
-263352,Anes Omerovic,628,FK Velez Mostar,2026,BOS1,13,Centre-Back,28,Austria,2,2,0,180
-687434,Adin Bajric,628,FK Velez Mostar,2026,BOS1,55,Centre-Back,23,Bosnia-Herzegovina,2,1,0,90
-429310,Armin Imamovic,628,FK Velez Mostar,2026,BOS1,23,Left-Back,26,Bosnia-Herzegovina,2,2,0,65
-1034212,Faruk Setic,628,FK Velez Mostar,2026,BOS1,66,Right-Back,19,Bosnia-Herzegovina,0,0,0,0
-1187047,Benjamin Zulovic,628,FK Velez Mostar,2026,BOS1,66,Centre-Back,18,Bosnia-Herzegovina,1,0,0,0
-414942,Dani Salcin,628,FK Velez Mostar,2026,BOS1,10,Attacking Midfield,26,Bosnia-Herzegovina,0,0,0,0
-525942,Armin Besagic,628,FK Velez Mostar,2026,BOS1,77,Defensive Midfield,27,Bosnia-Herzegovina,2,2,0,104
-195874,Ante Hrkac,628,FK Velez Mostar,2026,BOS1,8,Defensive Midfield,34,Bosnia-Herzegovina,2,2,0,166
-215652,Rafidine Abdullah,628,FK Velez Mostar,2026,BOS1,6,Defensive Midfield,32,Comoros,0,0,0,0
-1048115,Ayham Shhade,628,FK Velez Mostar,2026,BOS1,17,Defensive Midfield,25,Israel,2,2,0,135
-979857,Damir Halilovic,628,FK Velez Mostar,2026,BOS1,20,Defensive Midfield,21,Bosnia-Herzegovina,2,0,0,0
-673232,Dzenan Puce,628,FK Velez Mostar,2026,BOS1,38,Attacking Midfield,21,Bosnia-Herzegovina,2,1,0,9
-912083,Kenan Djuliman,628,FK Velez Mostar,2026,BOS1,45,Attacking Midfield,20,Bosnia-Herzegovina,2,0,0,0
-952750,Mahir Besic,628,FK Velez Mostar,2026,BOS1,83,Attacking Midfield,19,Bosnia-Herzegovina,2,2,0,90
-513004,Armin Spahic,628,FK Velez Mostar,2026,BOS1,9,Centre-Forward,25,Bosnia-Herzegovina,2,2,0,171
-651771,Aldin Mesic,628,FK Velez Mostar,2026,BOS1,11,Left Winger,22,Bosnia-Herzegovina,0,0,0,0
-797796,Mahir Rahimic,628,FK Velez Mostar,2026,BOS1,19,Centre-Forward,21,Bosnia-Herzegovina,2,2,0,114
-1033947,Vedad Abidovic,628,FK Velez Mostar,2026,BOS1,47,Left Winger,19,Bosnia-Herzegovina,2,2,0,82
-674922,Nino Stojanovic,628,FK Velez Mostar,2026,BOS1,80,Left Winger,25,Croatia,2,2,0,90
-655230,Leonid Ignatov,628,FK Velez Mostar,2026,BOS1,88,Right Winger,24,North Macedonia,1,1,0,29
-949973,Carlo Matekovic,628,FK Velez Mostar,2026,BOS1,91,Centre-Forward,22,Croatia,2,0,0,0
-674610,Beni Redzic,628,FK Velez Mostar,2026,BOS1,14,Left Winger,23,Bosnia-Herzegovina,1,0,0,0
-952722,Faris Dzevahiric,628,FK Velez Mostar,2026,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
-603176,Ivan Puljic,1242,NK Siroki Brijeg,2026,BOS1,51,Goalkeeper,24,Bosnia-Herzegovina,2,2,0,180
-982334,Eugen Ciban,1242,NK Siroki Brijeg,2026,BOS1,43,Goalkeeper,21,Croatia,2,0,0,0
-912058,Ante Sliskovic,1242,NK Siroki Brijeg,2026,BOS1,12,Goalkeeper,20,Bosnia-Herzegovina,1,0,0,0
-697081,Bartul Markovina,1242,NK Siroki Brijeg,2026,BOS1,5,Centre-Back,26,Croatia,2,2,1,180
-921537,Ante Bolanca,1242,NK Siroki Brijeg,2026,BOS1,0,Left-Back,23,Croatia,0,0,0,0
-892170,Ivan Krstanovic,1242,NK Siroki Brijeg,2026,BOS1,47,Left-Back,20,Croatia,2,2,0,178
-1250364,Lukas Magdjinski,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Back,20,Croatia,0,0,0,0
-697087,Mateo Barac,1242,NK Siroki Brijeg,2026,BOS1,0,Right-Back,25,Croatia,0,0,0,0
-470568,Marijan Orsolic,1242,NK Siroki Brijeg,2026,BOS1,26,Centre-Back,28,Croatia,2,2,0,180
-1124467,Ivan Jelic,1242,NK Siroki Brijeg,2026,BOS1,0,Left-Back,18,Bosnia-Herzegovina,2,2,0,60
-1033855,Mateo Soldo,1242,NK Siroki Brijeg,2026,BOS1,3,Centre-Back,19,Bosnia-Herzegovina,1,0,0,0
-1038973,Matej Hrkac,1242,NK Siroki Brijeg,2026,BOS1,29,Right-Back,18,Bosnia-Herzegovina,2,2,0,180
-927297,Robert Marijanovic,1242,NK Siroki Brijeg,2026,BOS1,77,Central Midfield,23,Croatia,2,2,0,150
-672242,Luka Romac,1242,NK Siroki Brijeg,2026,BOS1,17,Defensive Midfield,22,Croatia,2,1,0,2
-989309,Marko Matic,1242,NK Siroki Brijeg,2026,BOS1,18,Central Midfield,20,Bosnia-Herzegovina,2,2,0,161
-797804,Antoni Bajkusa,1242,NK Siroki Brijeg,2026,BOS1,0,Defensive Midfield,20,Bosnia-Herzegovina,0,0,0,0
-687515,Bozo Prusina,1242,NK Siroki Brijeg,2026,BOS1,4,Central Midfield,22,Bosnia-Herzegovina,2,0,0,0
-974210,Mario Kordic-Gruzic,1242,NK Siroki Brijeg,2026,BOS1,8,Defensive Midfield,24,Croatia,2,2,0,60
-190272,Tomislav Tomic,1242,NK Siroki Brijeg,2026,BOS1,90,Defensive Midfield,35,Bosnia-Herzegovina,2,2,0,150
-1164137,Filip Jelcic,1242,NK Siroki Brijeg,2026,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,2,2,0,19
-1036768,Josip Skoko,1242,NK Siroki Brijeg,2026,BOS1,27,Central Midfield,19,Bosnia-Herzegovina,2,0,0,0
-846532,Dominik Simcic,1242,NK Siroki Brijeg,2026,BOS1,7,Left Winger,23,Croatia,2,0,0,0
-610597,Kristijan Sesar,1242,NK Siroki Brijeg,2026,BOS1,44,Centre-Forward,25,Bosnia-Herzegovina,2,2,0,32
-813518,Mario Mourelo,1242,NK Siroki Brijeg,2026,BOS1,80,Left Winger,29,Spain,2,2,0,120
-991179,Filip Matic,1242,NK Siroki Brijeg,2026,BOS1,10,Centre-Forward,20,Bosnia-Herzegovina,2,2,0,148
-841108,David Virgili,1242,NK Siroki Brijeg,2026,BOS1,11,Right Winger,27,Spain,2,1,1,17
-990811,Luizinho Guedes,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Forward,27,Brazil,0,0,0,0
-952746,Ivan Kraljevic,1242,NK Siroki Brijeg,2026,BOS1,30,Right Winger,19,Bosnia-Herzegovina,2,2,0,163
+1169593,Amel Tiro,628,FK Velez Mostar,2025,BOS1,0,Left Winger,15,Bosnia-Herzegovina,1,0,0,0
+1131806,Tarik Tikvesa,628,FK Velez Mostar,2025,BOS1,0,Left Winger,18,Bosnia-Herzegovina,3,0,0,0
+399837,Dusan Markovic,11040,FK Radnik Bijeljina,2026,BOS1,1,Goalkeeper,28,Serbia,3,2,0,180
+166589,Vedran Kjosevski,11040,FK Radnik Bijeljina,2026,BOS1,27,Goalkeeper,31,Bosnia-Herzegovina,3,1,0,90
+1048866,Srdjan Nedic,11040,FK Radnik Bijeljina,2026,BOS1,0,Goalkeeper,19,Croatia,0,0,0,0
+863891,Blondon Meyapya,11040,FK Radnik Bijeljina,2026,BOS1,5,Centre-Back,25,Cameroon,1,0,0,0
+768106,Andrija Markovic,11040,FK Radnik Bijeljina,2026,BOS1,14,Right-Back,23,Serbia,3,3,0,201
+1168612,Bozidar Dimitric,11040,FK Radnik Bijeljina,2026,BOS1,16,Right-Back,18,Bosnia-Herzegovina,3,3,0,72
+580980,Tivonge Rushesha,11040,FK Radnik Bijeljina,2026,BOS1,4,Right-Back,24,Zimbabwe,1,0,0,0
+344915,Slavisa Radovic,11040,FK Radnik Bijeljina,2026,BOS1,3,Left-Back,32,Serbia,3,3,0,270
+620926,Mustafa Sukilovic,11040,FK Radnik Bijeljina,2026,BOS1,22,Centre-Back,23,Bosnia-Herzegovina,3,3,0,270
+459507,Djordje Cosic,11040,FK Radnik Bijeljina,2026,BOS1,26,Centre-Back,30,Bosnia-Herzegovina,3,3,0,270
+949842,Patrik Klancir,11040,FK Radnik Bijeljina,2026,BOS1,85,Left-Back,22,Croatia,1,0,0,0
+469865,Jovan Pavlovic,11040,FK Radnik Bijeljina,2026,BOS1,0,Centre-Back,26,Bosnia-Herzegovina,0,0,0,0
+1278578,Malik Chamseddine,11040,FK Radnik Bijeljina,2026,BOS1,28,Centre-Back,19,Australia,1,0,0,0
+338817,Indy Boonen,11040,FK Radnik Bijeljina,2026,BOS1,7,Attacking Midfield,27,Belgium,2,2,0,51
+357800,Emanuel Crnko,11040,FK Radnik Bijeljina,2026,BOS1,10,Attacking Midfield,27,Croatia,3,3,0,219
+448668,Huso Karjasevic,11040,FK Radnik Bijeljina,2026,BOS1,0,Defensive Midfield,29,Bosnia-Herzegovina,0,0,0,0
+801307,Tino Blaz Laus,11040,FK Radnik Bijeljina,2026,BOS1,8,Attacking Midfield,25,Croatia,3,0,0,0
+611060,Pedro Torres,11040,FK Radnik Bijeljina,2026,BOS1,15,Central Midfield,28,Spain,2,0,0,0
+1378324,Felix Osei Agyemang,11040,FK Radnik Bijeljina,2026,BOS1,6,Central Midfield,19,Ghana,3,3,0,270
+909273,Andrej Krstic,11040,FK Radnik Bijeljina,2026,BOS1,25,Central Midfield,20,Bosnia-Herzegovina,3,0,0,0
+592980,Ateef Konaté,11040,FK Radnik Bijeljina,2026,BOS1,70,Attacking Midfield,25,France,1,1,0,37
+1162686,Igor Spaic,11040,FK Radnik Bijeljina,2026,BOS1,0,Defensive Midfield,18,Bosnia-Herzegovina,2,1,0,1
+1438527,Sanel Delic,11040,FK Radnik Bijeljina,2026,BOS1,0,Central Midfield,16,Bosnia-Herzegovina,1,0,0,0
+1164153,Marko Bardak,11040,FK Radnik Bijeljina,2026,BOS1,0,Central Midfield,19,Bosnia-Herzegovina,1,0,0,0
+1011260,Mohamed Ghorzi,11040,FK Radnik Bijeljina,2026,BOS1,77,Right Winger,26,France,3,3,0,264
+605217,Danilo Teodorovic,11040,FK Radnik Bijeljina,2026,BOS1,29,Centre-Forward,24,Bosnia-Herzegovina,3,3,2,270
+487210,Vladimir Bradonjic,11040,FK Radnik Bijeljina,2026,BOS1,20,Left Winger,26,Bosnia-Herzegovina,3,3,0,95
+1239779,Antoine Ijoma,11040,FK Radnik Bijeljina,2026,BOS1,99,Centre-Forward,21,Nigeria,3,3,0,168
+581048,Njegos Kupusovic,11040,FK Radnik Bijeljina,2026,BOS1,9,Centre-Forward,25,Serbia,0,0,0,0
+607567,Luka Cveticanin,11040,FK Radnik Bijeljina,2026,BOS1,17,Left Winger,23,Serbia,3,3,0,45
+797799,Andrija Losic,11040,FK Radnik Bijeljina,2026,BOS1,0,Left Winger,20,Bosnia-Herzegovina,0,0,0,0
+1168611,Ognjen Klenpic,11040,FK Radnik Bijeljina,2026,BOS1,11,Left Winger,20,Bosnia-Herzegovina,3,3,0,198
 432745,Renato Josipovic,1242,NK Siroki Brijeg,2025,BOS1,40,Goalkeeper,24,Croatia,35,30,0,2700
 495835,Marin Topic,1242,NK Siroki Brijeg,2025,BOS1,0,Goalkeeper,24,Croatia,10,0,0,0
 603176,Ivan Puljic,1242,NK Siroki Brijeg,2025,BOS1,51,Goalkeeper,23,Bosnia-Herzegovina,30,7,0,568
@@ -2261,28 +2238,44 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 610597,Kristijan Sesar,1242,NK Siroki Brijeg,2025,BOS1,44,Centre-Forward,24,Bosnia-Herzegovina,31,28,2,1339
 510263,Mihael Klepac,1242,NK Siroki Brijeg,2025,BOS1,97,Left Winger,27,Croatia,14,14,3,894
 790660,Ilya Chernyak,1242,NK Siroki Brijeg,2025,BOS1,0,Centre-Forward,23,Belarus,25,12,2,668
-317023,Ivan Delic,1242,NK Siroki Brijeg,2025,BOS1,0,Centre-Forward,26,Croatia,18,14,0,425
-518636,Cyrille Kpan,1242,NK Siroki Brijeg,2025,BOS1,0,Right Winger,27,Burkina Faso,17,12,0,435
 603361,Daniel Lukic,1242,NK Siroki Brijeg,2025,BOS1,0,Centre-Forward,24,Bosnia-Herzegovina,9,7,0,291
+518636,Cyrille Kpan,1242,NK Siroki Brijeg,2025,BOS1,0,Right Winger,27,Burkina Faso,17,12,0,435
+317023,Ivan Delic,1242,NK Siroki Brijeg,2025,BOS1,0,Centre-Forward,26,Croatia,18,14,0,425
 991179,Filip Matic,1242,NK Siroki Brijeg,2025,BOS1,10,Centre-Forward,19,Bosnia-Herzegovina,31,16,1,544
 925439,Petar Petrisko,1242,NK Siroki Brijeg,2025,BOS1,77,Left Winger,23,Croatia,13,10,0,333
 987749,Ivano Srdoc,1242,NK Siroki Brijeg,2025,BOS1,7,Centre-Forward,20,Croatia,10,2,0,25
 366062,Matija Kolaric,1242,NK Siroki Brijeg,2025,BOS1,0,Right Winger,29,Croatia,16,10,1,581
 433601,Hubert Sobol,1242,NK Siroki Brijeg,2025,BOS1,67,Centre-Forward,25,Poland,14,13,0,882
 952746,Ivan Kraljevic,1242,NK Siroki Brijeg,2025,BOS1,0,Right Winger,18,Bosnia-Herzegovina,7,6,0,227
-693729,Aleksa Stupar,20904,FK BSK Banja Luka,2025,BOS1,0,Goalkeeper,22,Bosnia-Herzegovina,0,0,0,0
-747978,Marko Radic,20904,FK BSK Banja Luka,2025,BOS1,0,Right-Back,21,Bosnia-Herzegovina,0,0,0,0
-218284,Aleksandar Subic,20904,FK BSK Banja Luka,2025,BOS1,0,Left-Back,31,Bosnia-Herzegovina,0,0,0,0
-193890,Nebojsa Runic,20904,FK BSK Banja Luka,2025,BOS1,0,Centre-Back,32,Bosnia-Herzegovina,0,0,0,0
-620934,Boro Eric,20904,FK BSK Banja Luka,2025,BOS1,0,Central Midfield,22,Bosnia-Herzegovina,0,0,0,0
-800004,Marko Bundalo,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,20,Bosnia-Herzegovina,0,0,0,0
-655354,Danko Radic,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,25,Bosnia-Herzegovina,0,0,0,0
-701598,Sasa Marjanovic,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,23,Bosnia-Herzegovina,0,0,0,0
-713016,David Gavric,20904,FK BSK Banja Luka,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,0,0,0,0
-1538028,Dino Malović,20904,FK BSK Banja Luka,2025,BOS1,0,Attacking Midfield,18,Sweden,0,0,0,0
-1003494,Nemanja Cetojevic,20904,FK BSK Banja Luka,2025,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
-1028917,Dragan Pejic,20904,FK BSK Banja Luka,2025,BOS1,0,Right Winger,17,Bosnia-Herzegovina,0,0,0,0
-804869,Stefan Djuric,20904,FK BSK Banja Luka,2025,BOS1,0,Right Winger,21,Bosnia-Herzegovina,0,0,0,0
+603176,Ivan Puljic,1242,NK Siroki Brijeg,2026,BOS1,51,Goalkeeper,24,Bosnia-Herzegovina,3,3,0,270
+982334,Eugen Ciban,1242,NK Siroki Brijeg,2026,BOS1,43,Goalkeeper,21,Croatia,3,0,0,0
+912058,Ante Sliskovic,1242,NK Siroki Brijeg,2026,BOS1,12,Goalkeeper,20,Bosnia-Herzegovina,1,0,0,0
+697081,Bartul Markovina,1242,NK Siroki Brijeg,2026,BOS1,5,Centre-Back,26,Croatia,3,3,2,270
+921537,Ante Bolanca,1242,NK Siroki Brijeg,2026,BOS1,0,Left-Back,23,Croatia,0,0,0,0
+594657,Niko Vukancic,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Back,24,Germany,0,0,0,0
+892170,Ivan Krstanovic,1242,NK Siroki Brijeg,2026,BOS1,47,Left-Back,20,Croatia,3,3,0,268
+1250364,Lukas Magdjinski,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Back,20,Croatia,0,0,0,0
+697087,Mateo Barac,1242,NK Siroki Brijeg,2026,BOS1,2,Right-Back,25,Croatia,1,1,0,45
+470568,Marijan Orsolic,1242,NK Siroki Brijeg,2026,BOS1,26,Centre-Back,28,Croatia,3,3,0,270
+1033855,Mateo Soldo,1242,NK Siroki Brijeg,2026,BOS1,3,Centre-Back,19,Bosnia-Herzegovina,2,0,0,0
+1038973,Matej Hrkac,1242,NK Siroki Brijeg,2026,BOS1,29,Right-Back,18,Bosnia-Herzegovina,3,3,0,225
+1124467,Ivan Jelic,1242,NK Siroki Brijeg,2026,BOS1,33,Left-Back,18,Bosnia-Herzegovina,3,3,0,77
+927297,Robert Marijanovic,1242,NK Siroki Brijeg,2026,BOS1,77,Central Midfield,23,Croatia,3,3,0,210
+672242,Luka Romac,1242,NK Siroki Brijeg,2026,BOS1,17,Defensive Midfield,23,Croatia,3,2,0,19
+989309,Marko Matic,1242,NK Siroki Brijeg,2026,BOS1,18,Central Midfield,20,Bosnia-Herzegovina,3,3,0,251
+797804,Antoni Bajkusa,1242,NK Siroki Brijeg,2026,BOS1,0,Defensive Midfield,20,Bosnia-Herzegovina,0,0,0,0
+687515,Bozo Prusina,1242,NK Siroki Brijeg,2026,BOS1,4,Central Midfield,22,Bosnia-Herzegovina,3,0,0,0
+974210,Mario Kordic-Gruzic,1242,NK Siroki Brijeg,2026,BOS1,8,Defensive Midfield,24,Croatia,3,3,0,90
+190272,Tomislav Tomic,1242,NK Siroki Brijeg,2026,BOS1,90,Defensive Midfield,35,Bosnia-Herzegovina,3,3,0,240
+1164137,Filip Jelcic,1242,NK Siroki Brijeg,2026,BOS1,0,Attacking Midfield,18,Bosnia-Herzegovina,3,2,0,19
+1036768,Josip Skoko,1242,NK Siroki Brijeg,2026,BOS1,27,Central Midfield,19,Bosnia-Herzegovina,3,0,0,0
+846532,Dominik Simcic,1242,NK Siroki Brijeg,2026,BOS1,7,Left Winger,23,Croatia,2,0,0,0
+610597,Kristijan Sesar,1242,NK Siroki Brijeg,2026,BOS1,44,Centre-Forward,25,Bosnia-Herzegovina,3,2,0,32
+813518,Mario Mourelo,1242,NK Siroki Brijeg,2026,BOS1,80,Left Winger,29,Spain,3,3,0,193
+991179,Filip Matic,1242,NK Siroki Brijeg,2026,BOS1,10,Centre-Forward,20,Bosnia-Herzegovina,3,3,1,221
+841108,David Virgili,1242,NK Siroki Brijeg,2026,BOS1,11,Right Winger,27,Spain,3,2,1,47
+990811,Luizinho Guedes,1242,NK Siroki Brijeg,2026,BOS1,0,Centre-Forward,27,Brazil,0,0,0,0
+952746,Ivan Kraljevic,1242,NK Siroki Brijeg,2026,BOS1,30,Right Winger,19,Bosnia-Herzegovina,3,3,0,223
 269003,Filip Eric,7569,FK Sloga Meridian,2025,BOS1,1,Goalkeeper,30,Serbia,34,31,0,2790
 46841,Bojan Pavlovic,7569,FK Sloga Meridian,2025,BOS1,25,Goalkeeper,38,Serbia,36,5,0,450
 890419,Blagoje Djuras,7569,FK Sloga Meridian,2025,BOS1,30,Goalkeeper,19,Serbia,1,0,0,0
@@ -2326,62 +2319,75 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 265849,Mladen Veselinovic,7569,FK Sloga Meridian,2025,BOS1,20,Right Winger,32,Bosnia-Herzegovina,2,0,0,0
 131735,Petar Kunic,7569,FK Sloga Meridian,2025,BOS1,45,Centre-Forward,31,Bosnia-Herzegovina,34,24,2,871
 1393822,Damjan Koprivica,7569,FK Sloga Meridian,2025,BOS1,0,Right Winger,17,Bosnia-Herzegovina,15,2,0,17
-632913,Pere García,7569,FK Sloga Meridian,2026,BOS1,1,Goalkeeper,24,Spain,1,1,0,90
-46841,Bojan Pavlovic,7569,FK Sloga Meridian,2026,BOS1,25,Goalkeeper,39,Serbia,1,0,0,0
+693729,Aleksa Stupar,20904,FK BSK Banja Luka,2025,BOS1,0,Goalkeeper,22,Bosnia-Herzegovina,0,0,0,0
+747978,Marko Radic,20904,FK BSK Banja Luka,2025,BOS1,0,Right-Back,21,Bosnia-Herzegovina,0,0,0,0
+218284,Aleksandar Subic,20904,FK BSK Banja Luka,2025,BOS1,0,Left-Back,31,Bosnia-Herzegovina,0,0,0,0
+1028917,Dragan Pejic,20904,FK BSK Banja Luka,2025,BOS1,0,Left-Back,17,Bosnia-Herzegovina,0,0,0,0
+193890,Nebojsa Runic,20904,FK BSK Banja Luka,2025,BOS1,0,Centre-Back,32,Bosnia-Herzegovina,0,0,0,0
+620934,Boro Eric,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,22,Bosnia-Herzegovina,0,0,0,0
+800004,Marko Bundalo,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,20,Bosnia-Herzegovina,0,0,0,0
+655354,Danko Radic,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,25,Bosnia-Herzegovina,0,0,0,0
+701598,Sasa Marjanovic,20904,FK BSK Banja Luka,2025,BOS1,0,Defensive Midfield,23,Bosnia-Herzegovina,0,0,0,0
+713016,David Gavric,20904,FK BSK Banja Luka,2025,BOS1,0,Attacking Midfield,20,Bosnia-Herzegovina,0,0,0,0
+1538028,Dino Malović,20904,FK BSK Banja Luka,2025,BOS1,0,Attacking Midfield,18,Sweden,0,0,0,0
+1003494,Nemanja Cetojevic,20904,FK BSK Banja Luka,2025,BOS1,0,Centre-Forward,19,Bosnia-Herzegovina,0,0,0,0
+804869,Stefan Djuric,20904,FK BSK Banja Luka,2025,BOS1,0,Right Winger,21,Bosnia-Herzegovina,0,0,0,0
+632913,Pere García,7569,FK Sloga Meridian,2026,BOS1,1,Goalkeeper,24,Spain,2,2,0,180
+46841,Bojan Pavlovic,7569,FK Sloga Meridian,2026,BOS1,25,Goalkeeper,39,Serbia,2,0,0,0
 890419,Blagoje Djuras,7569,FK Sloga Meridian,2026,BOS1,0,Goalkeeper,20,Serbia,0,0,0,0
-268959,Raúl Navarro,7569,FK Sloga Meridian,2026,BOS1,6,Right-Back,32,Spain,1,1,0,21
-537760,Benjamín Garay,7569,FK Sloga Meridian,2026,BOS1,9,Centre-Back,26,Argentina,1,1,0,90
-353266,Pablo Jáquez,7569,FK Sloga Meridian,2026,BOS1,5,Centre-Back,30,Mexico,1,1,0,90
-343954,Nikola Pejovic,7569,FK Sloga Meridian,2026,BOS1,29,Centre-Back,27,Serbia,1,0,0,0
+268959,Raúl Navarro,7569,FK Sloga Meridian,2026,BOS1,6,Right-Back,32,Spain,2,1,0,21
+537760,Benjamín Garay,7569,FK Sloga Meridian,2026,BOS1,24,Centre-Back,26,Argentina,2,2,0,180
+353266,Pablo Jáquez,7569,FK Sloga Meridian,2026,BOS1,5,Centre-Back,30,Mexico,2,2,0,180
+343954,Nikola Pejovic,7569,FK Sloga Meridian,2026,BOS1,29,Centre-Back,27,Serbia,2,1,0,45
 171691,Boris Varga,7569,FK Sloga Meridian,2026,BOS1,0,Centre-Back,33,Serbia,0,0,0,0
-379714,Roberto Corral,7569,FK Sloga Meridian,2026,BOS1,3,Left-Back,28,Spain,1,1,0,90
+379714,Roberto Corral,7569,FK Sloga Meridian,2026,BOS1,3,Left-Back,28,Spain,2,2,0,162
 101042,Josip Kvesic,7569,FK Sloga Meridian,2026,BOS1,0,Left-Back,35,Bosnia-Herzegovina,0,0,0,0
 910617,Niko Bozickovic,7569,FK Sloga Meridian,2026,BOS1,0,Centre-Back,21,Bosnia-Herzegovina,0,0,0,0
-70574,Milan Milanovic,7569,FK Sloga Meridian,2026,BOS1,28,Centre-Back,35,Serbia,1,0,0,0
-362186,Ajdin Redzic,7569,FK Sloga Meridian,2026,BOS1,14,Central Midfield,29,Bosnia-Herzegovina,1,1,0,78
-673229,Sergej Damjanic,7569,FK Sloga Meridian,2026,BOS1,19,Attacking Midfield,21,Bosnia-Herzegovina,1,1,0,12
-399779,Chuca,7569,FK Sloga Meridian,2026,BOS1,22,Attacking Midfield,29,Spain,1,1,0,90
-305957,Dani Molina,7569,FK Sloga Meridian,2026,BOS1,0,Central Midfield,30,Spain,0,0,0,0
-287194,Fernán Ferreiroá,7569,FK Sloga Meridian,2026,BOS1,8,Central Midfield,31,Spain,1,1,0,90
+70574,Milan Milanovic,7569,FK Sloga Meridian,2026,BOS1,28,Centre-Back,35,Serbia,2,0,0,0
+362186,Ajdin Redzic,7569,FK Sloga Meridian,2026,BOS1,14,Central Midfield,29,Bosnia-Herzegovina,2,2,0,168
+673229,Sergej Damjanic,7569,FK Sloga Meridian,2026,BOS1,19,Attacking Midfield,21,Bosnia-Herzegovina,2,2,0,57
+399779,Chuca,7569,FK Sloga Meridian,2026,BOS1,22,Attacking Midfield,29,Spain,2,2,0,135
+305957,Dani Molina,7569,FK Sloga Meridian,2026,BOS1,23,Central Midfield,30,Spain,1,0,0,0
+287194,Fernán Ferreiroá,7569,FK Sloga Meridian,2026,BOS1,8,Central Midfield,31,Spain,2,2,0,180
 1163139,Darko Savic,7569,FK Sloga Meridian,2026,BOS1,13,Central Midfield,18,Bosnia-Herzegovina,1,1,0,78
-1169102,Jovan Djalovic,7569,FK Sloga Meridian,2026,BOS1,99,Attacking Midfield,19,Serbia,1,0,0,0
-930920,Jorge Bolivar,7569,FK Sloga Meridian,2026,BOS1,7,Left Winger,29,Spain,1,1,0,12
-624326,Javi Cueto,7569,FK Sloga Meridian,2026,BOS1,9,Centre-Forward,25,Spain,1,1,0,90
+1169102,Jovan Djalovic,7569,FK Sloga Meridian,2026,BOS1,99,Attacking Midfield,19,Serbia,2,1,0,1
+930920,Jorge Bolivar,7569,FK Sloga Meridian,2026,BOS1,7,Left Winger,29,Spain,2,2,0,57
+624326,Javi Cueto,7569,FK Sloga Meridian,2026,BOS1,9,Centre-Forward,25,Spain,2,2,0,180
 1150411,Atule Collins,7569,FK Sloga Meridian,2026,BOS1,0,Centre-Forward,22,Nigeria,0,0,0,0
-171682,Toni Jovic,7569,FK Sloga Meridian,2026,BOS1,92,Left Winger,33,Croatia,1,1,0,69
-311435,Ferni,7569,FK Sloga Meridian,2026,BOS1,11,Left Winger,28,Spain,1,1,0,90
-1033910,Ognjen Seslak,7569,FK Sloga Meridian,2026,BOS1,55,Right Winger,20,Bosnia-Herzegovina,1,0,0,0
-454886,Milan Savic,7569,FK Sloga Meridian,2026,BOS1,44,Right Winger,26,Bosnia-Herzegovina,1,1,0,1
-265849,Mladen Veselinovic,7569,FK Sloga Meridian,2026,BOS1,10,Right Winger,33,Bosnia-Herzegovina,1,1,0,1
-1393822,Damjan Koprivica,7569,FK Sloga Meridian,2026,BOS1,26,Right Winger,19,Bosnia-Herzegovina,1,0,0,0
-517906,Srdjan Modic,20904,FK BSK Banja Luka,2026,BOS1,31,Goalkeeper,31,Bosnia-Herzegovina,2,2,0,180
-693729,Aleksa Stupar,20904,FK BSK Banja Luka,2026,BOS1,77,Goalkeeper,23,Bosnia-Herzegovina,1,0,0,0
+171682,Toni Jovic,7569,FK Sloga Meridian,2026,BOS1,92,Left Winger,33,Croatia,2,2,0,114
+311435,Ferni,7569,FK Sloga Meridian,2026,BOS1,11,Left Winger,28,Spain,2,2,0,180
+1033910,Ognjen Seslak,7569,FK Sloga Meridian,2026,BOS1,55,Right Winger,20,Bosnia-Herzegovina,2,1,0,45
+454886,Milan Savic,7569,FK Sloga Meridian,2026,BOS1,44,Right Winger,26,Bosnia-Herzegovina,2,2,0,19
+265849,Mladen Veselinovic,7569,FK Sloga Meridian,2026,BOS1,10,Right Winger,33,Bosnia-Herzegovina,2,1,0,1
+1393822,Damjan Koprivica,7569,FK Sloga Meridian,2026,BOS1,26,Right Winger,19,Bosnia-Herzegovina,2,0,0,0
+517906,Srdjan Modic,20904,FK BSK Banja Luka,2026,BOS1,31,Goalkeeper,31,Bosnia-Herzegovina,3,3,0,270
+693729,Aleksa Stupar,20904,FK BSK Banja Luka,2026,BOS1,77,Goalkeeper,23,Bosnia-Herzegovina,2,0,0,0
 1249350,Petar Cetojevic,20904,FK BSK Banja Luka,2026,BOS1,0,Goalkeeper,19,Bosnia-Herzegovina,0,0,0,0
 1033959,Mirza Pajic,20904,FK BSK Banja Luka,2026,BOS1,80,Goalkeeper,19,Bosnia-Herzegovina,1,0,0,0
 980521,Jusuf Terzic,20904,FK BSK Banja Luka,2026,BOS1,0,Centre-Back,19,Bosnia-Herzegovina,0,0,0,0
 909656,Milijan Kovacevic,20904,FK BSK Banja Luka,2026,BOS1,21,Left-Back,20,Bosnia-Herzegovina,1,0,0,0
 747978,Marko Radic,20904,FK BSK Banja Luka,2026,BOS1,15,Right-Back,22,Bosnia-Herzegovina,2,0,0,0
-687514,Domagoj Culina,20904,FK BSK Banja Luka,2026,BOS1,30,Centre-Back,21,Croatia,2,2,0,180
-816350,Cherif Diouf,20904,FK BSK Banja Luka,2026,BOS1,5,Centre-Back,26,Senegal,2,2,0,180
-218284,Aleksandar Subic,20904,FK BSK Banja Luka,2026,BOS1,18,Left-Back,32,Bosnia-Herzegovina,1,1,0,32
-159839,Zoran Kvrzic,20904,FK BSK Banja Luka,2026,BOS1,20,Right-Back,38,Bosnia-Herzegovina,2,2,0,180
-193890,Nebojsa Runic,20904,FK BSK Banja Luka,2026,BOS1,26,Centre-Back,33,Bosnia-Herzegovina,2,0,0,0
-678605,Filip Racic,20904,FK BSK Banja Luka,2026,BOS1,17,Left-Back,23,Bosnia-Herzegovina,2,2,0,118
+687514,Domagoj Culina,20904,FK BSK Banja Luka,2026,BOS1,30,Centre-Back,21,Croatia,3,3,0,270
+816350,Cherif Diouf,20904,FK BSK Banja Luka,2026,BOS1,5,Centre-Back,26,Senegal,3,3,0,270
+218284,Aleksandar Subic,20904,FK BSK Banja Luka,2026,BOS1,18,Left-Back,32,Bosnia-Herzegovina,2,2,0,48
+159839,Zoran Kvrzic,20904,FK BSK Banja Luka,2026,BOS1,20,Right-Back,38,Bosnia-Herzegovina,3,3,0,270
+193890,Nebojsa Runic,20904,FK BSK Banja Luka,2026,BOS1,26,Centre-Back,33,Bosnia-Herzegovina,3,0,0,0
+678605,Filip Racic,20904,FK BSK Banja Luka,2026,BOS1,17,Left-Back,23,Bosnia-Herzegovina,3,3,0,192
 1240477,Djordje Babic,20904,FK BSK Banja Luka,2026,BOS1,0,Right-Back,19,Bosnia-Herzegovina,0,0,0,0
-1164095,Nikola Antesevic,20904,FK BSK Banja Luka,2026,BOS1,2,Left-Back,18,Bosnia-Herzegovina,2,1,0,1
-620934,Boro Eric,20904,FK BSK Banja Luka,2026,BOS1,8,Central Midfield,23,Bosnia-Herzegovina,2,2,0,180
-800004,Marko Bundalo,20904,FK BSK Banja Luka,2026,BOS1,19,Defensive Midfield,21,Bosnia-Herzegovina,2,2,0,23
-889366,Nedim Keranovic,20904,FK BSK Banja Luka,2026,BOS1,7,Attacking Midfield,19,Bosnia-Herzegovina,2,2,1,158
+1164095,Nikola Antesevic,20904,FK BSK Banja Luka,2026,BOS1,2,Left-Back,18,Bosnia-Herzegovina,3,1,0,1
+620934,Boro Eric,20904,FK BSK Banja Luka,2026,BOS1,8,Defensive Midfield,23,Bosnia-Herzegovina,3,3,0,270
+800004,Marko Bundalo,20904,FK BSK Banja Luka,2026,BOS1,19,Defensive Midfield,21,Bosnia-Herzegovina,3,2,0,23
+889366,Nedim Keranovic,20904,FK BSK Banja Luka,2026,BOS1,7,Attacking Midfield,19,Bosnia-Herzegovina,3,3,1,248
 655354,Danko Radic,20904,FK BSK Banja Luka,2026,BOS1,11,Defensive Midfield,26,Bosnia-Herzegovina,1,1,0,22
-713016,David Gavric,20904,FK BSK Banja Luka,2026,BOS1,10,Attacking Midfield,21,Bosnia-Herzegovina,2,1,0,9
-701598,Sasa Marjanovic,20904,FK BSK Banja Luka,2026,BOS1,55,Defensive Midfield,24,Bosnia-Herzegovina,2,0,0,0
-673237,Luka Misimovic,20904,FK BSK Banja Luka,2026,BOS1,0,Attacking Midfield,21,Bosnia-Herzegovina,0,0,0,0
-830919,Ognjen Radosevic,20904,FK BSK Banja Luka,2026,BOS1,14,Attacking Midfield,23,Serbia,2,2,0,180
-1033901,Sinisa Ristic,20904,FK BSK Banja Luka,2026,BOS1,27,Attacking Midfield,18,Bosnia-Herzegovina,2,0,0,0
-425782,Juraj Ljubic,20904,FK BSK Banja Luka,2026,BOS1,32,Defensive Midfield,26,Croatia,2,2,0,31
-690754,David Cavic,20904,FK BSK Banja Luka,2026,BOS1,22,Right Winger,23,Bosnia-Herzegovina,2,2,1,180
+713016,David Gavric,20904,FK BSK Banja Luka,2026,BOS1,10,Attacking Midfield,21,Bosnia-Herzegovina,3,1,0,9
+701598,Sasa Marjanovic,20904,FK BSK Banja Luka,2026,BOS1,55,Defensive Midfield,24,Bosnia-Herzegovina,3,0,0,0
+830919,Ognjen Radosevic,20904,FK BSK Banja Luka,2026,BOS1,14,Attacking Midfield,23,Serbia,3,3,0,270
+1033901,Sinisa Ristic,20904,FK BSK Banja Luka,2026,BOS1,27,Attacking Midfield,18,Bosnia-Herzegovina,3,0,0,0
+425782,Juraj Ljubic,20904,FK BSK Banja Luka,2026,BOS1,32,Defensive Midfield,26,Croatia,3,2,0,31
+673237,Luka Misimovic,20904,FK BSK Banja Luka,2026,BOS1,9,Centre-Forward,21,Bosnia-Herzegovina,1,1,0,62
+690754,David Cavic,20904,FK BSK Banja Luka,2026,BOS1,22,Right Winger,23,Bosnia-Herzegovina,3,3,1,270
+670305,Mihail Talevski,20904,FK BSK Banja Luka,2026,BOS1,33,Second Striker,22,North Macedonia,1,1,0,28
 914320,Stefan Marcetic,20904,FK BSK Banja Luka,2026,BOS1,49,Centre-Forward,19,Bosnia-Herzegovina,2,2,1,173
-1028917,Dragan Pejic,20904,FK BSK Banja Luka,2026,BOS1,0,Right Winger,18,Bosnia-Herzegovina,0,0,0,0
 804869,Stefan Djuric,20904,FK BSK Banja Luka,2026,BOS1,0,Right Winger,22,Bosnia-Herzegovina,0,0,0,0
-531601,Milos Savic,20904,FK BSK Banja Luka,2026,BOS1,23,Second Striker,24,Austria,1,0,0,0
-705119,Denis Dizdarevic,20904,FK BSK Banja Luka,2026,BOS1,28,Left Winger,22,Austria,2,2,0,149
+531601,Milos Savic,20904,FK BSK Banja Luka,2026,BOS1,23,Second Striker,24,Austria,2,1,0,28
+705119,Denis Dizdarevic,20904,FK BSK Banja Luka,2026,BOS1,28,Left Winger,22,Austria,3,3,0,211

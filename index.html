@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Career Data — Portail CSV</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0; padding: 0; background: #f7f8fa; color: #1a1a1a;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+    header { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: white; padding: 40px 24px; }
+    header h1 { margin: 0 0 8px 0; font-size: 28px; }
+    header p { margin: 4px 0; opacity: 0.9; font-size: 14px; }
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px; margin: 24px 0;
+    }
+    .stat-card { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .stat-card .num { font-size: 24px; font-weight: 700; color: #1e3a8a; }
+    .stat-card .lbl { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+    section { background: white; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin: 16px 0; padding: 20px 24px; }
+    section h2 { margin: 0 0 16px 0; font-size: 18px; color: #1e3a8a; padding-bottom: 12px; border-bottom: 2px solid #e5e7eb; }
+    section h2 .count { color: #999; font-weight: 400; font-size: 14px; }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #666; padding: 8px 12px; border-bottom: 1px solid #e5e7eb; }
+    td { padding: 14px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; font-size: 14px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover { background: #fafbfc; }
+    .cell-name { display: flex; flex-direction: column; gap: 2px; }
+    .flag { font-size: 20px; margin-right: 6px; display: inline; }
+    .league-name { font-weight: 600; color: #111; }
+    .country-tier { font-size: 12px; color: #888; }
+    .cell-stats { font-size: 13px; color: #555; }
+    .update-date { font-size: 12px; color: #555; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-top: 4px; }
+    .badge.fresh { background: #dcfce7; color: #166534; }
+    .badge.medium { background: #fef3c7; color: #854d0e; }
+    .badge.old { background: #fee2e2; color: #991b1b; }
+    .badge.stale { background: #f3f4f6; color: #6b7280; }
+    .cell-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+    .btn {
+      display: inline-block; padding: 6px 12px; border-radius: 6px;
+      font-size: 12px; font-weight: 500; text-decoration: none; white-space: nowrap;
+    }
+    .btn-primary { background: #1e3a8a; color: white; }
+    .btn-primary:hover { background: #1e40af; }
+    .btn-secondary { background: #e5e7eb; color: #1e3a8a; }
+    .btn-secondary:hover { background: #d1d5db; }
+    .btn-disabled { background: #f3f4f6; color: #9ca3af; cursor: not-allowed; }
+    .size { opacity: 0.7; font-size: 11px; }
+    footer { text-align: center; padding: 24px; color: #888; font-size: 13px; }
+    footer a { color: #1e3a8a; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>⚽ Football Career Data — Portail CSV</h1>
+      <p>Données de carrière des joueurs actifs des championnats trackés par <strong>V-Pin FR</strong>.</p>
+      <p>Source : Transfermarkt (endpoint ceapi). Mise à jour hebdomadaire automatique tous les <strong>mardis matin</strong>.</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="stats-bar">
+      <div class="stat-card"><div class="num">78/126</div><div class="lbl">Datasets disponibles</div></div>
+      <div class="stat-card"><div class="num">57805</div><div class="lbl">Joueurs trackés</div></div>
+      <div class="stat-card"><div class="num">1700967</div><div class="lbl">Lignes career totales</div></div>
+      <div class="stat-card"><div class="num">30.77 Mo</div><div class="lbl">Volume total</div></div>
+    </div>
+
+    <section style="background: #fff7ed; border-left: 4px solid #f97316;">
+      <h2 style="border: none; padding: 0; color: #9a3412;">📖 Comment ça marche ?</h2>
+      <p style="margin: 8px 0; font-size: 14px; line-height: 1.6;">
+        Pour chaque championnat, deux téléchargements sont proposés :
+      </p>
+      <ul style="font-size: 14px; line-height: 1.7;">
+        <li><strong>⬇️ Tout télécharger</strong> — ZIP des 4 CSV complets : <code>summary</code> (1 ligne/joueur, totaux carrière), <code>career</code> (1 ligne par saison × compétition × club), <code>matches</code> (10 derniers matchs ou 3 derniers mois), <code>competitions_seen</code> (référentiel des codes compétitions rencontrés). Idéal pour une analyse complète.</li>
+        <li><strong>🔄 Mise à jour saison</strong> — ZIP léger contenant uniquement les lignes de la <strong>saison en cours</strong> (career + matches). À télécharger chaque semaine pour suivre l'actualité sans tout retéléverser.</li>
+      </ul>
+    </section>
+
+    
+          <section>
+            <h2>Afrique — D1 <span class="count">(4)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇿🇦</span>
+                    <span class="league-name">Premier Division</span>
+                    <span class="country-tier">Afrique du Sud · D1</span>
+                  </td>
+                  <td class="cell-stats">825 joueurs · 15445 lignes career · 7888 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:36 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/sfa1_all.zip" download>⬇️ Tout télécharger <span class="size">(259.3 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/sfa1_current.zip" download>🔄 Mise à jour saison <span class="size">(48.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇿</span>
+                    <span class="league-name">Ligue Professionnelle 1</span>
+                    <span class="country-tier">Algérie · D1</span>
+                  </td>
+                  <td class="cell-stats">686 joueurs · 9673 lignes career · 6285 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:34 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/alg1_all.zip" download>⬇️ Tout télécharger <span class="size">(210.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/alg1_current.zip" download>🔄 Mise à jour saison <span class="size">(11.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇲🇦</span>
+                    <span class="league-name">Botola Pro</span>
+                    <span class="country-tier">Maroc · D1</span>
+                  </td>
+                  <td class="cell-stats">740 joueurs · 11828 lignes career · 7221 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:29 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/mar1_all.zip" download>⬇️ Tout télécharger <span class="size">(232.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/mar1_current.zip" download>🔄 Mise à jour saison <span class="size">(5.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Premier League</span>
+                    <span class="country-tier">Égypte · D1</span>
+                  </td>
+                  <td class="cell-stats">998 joueurs · 20715 lignes career · 9326 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:31 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/egy1_all.zip" download>⬇️ Tout télécharger <span class="size">(334.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/egy1_current.zip" download>🔄 Mise à jour saison <span class="size">(34.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Amériques — D1 <span class="count">(10)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇷</span>
+                    <span class="league-name">Primera División</span>
+                    <span class="country-tier">Argentine · D1</span>
+                  </td>
+                  <td class="cell-stats">1146 joueurs · 37414 lignes career · 12090 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:57 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/arg1_all.zip" download>⬇️ Tout télécharger <span class="size">(575.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/arg1_current.zip" download>🔄 Mise à jour saison <span class="size">(5.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇷</span>
+                    <span class="league-name">Brasileirão Série A</span>
+                    <span class="country-tier">Brésil · D1</span>
+                  </td>
+                  <td class="cell-stats">899 joueurs · 35318 lignes career · 10459 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:48 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/bra1_all.zip" download>⬇️ Tout télécharger <span class="size">(515.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/bra1_current.zip" download>🔄 Mise à jour saison <span class="size">(7.7 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Canadian Premier League</span>
+                    <span class="country-tier">Canada · D1</span>
+                  </td>
+                  <td class="cell-stats">230 joueurs · 4395 lignes career · 2809 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:52 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/cdn1_all.zip" download>⬇️ Tout télécharger <span class="size">(89.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/cdn1_current.zip" download>🔄 Mise à jour saison <span class="size">(1.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇱</span>
+                    <span class="league-name">Primera División</span>
+                    <span class="country-tier">Chili · D1</span>
+                  </td>
+                  <td class="cell-stats">542 joueurs · 14962 lignes career · 7462 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:06 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/clpd_all.zip" download>⬇️ Tout télécharger <span class="size">(253.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/clpd_current.zip" download>🔄 Mise à jour saison <span class="size">(2.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇴</span>
+                    <span class="league-name">Liga BetPlay</span>
+                    <span class="country-tier">Colombie · D1</span>
+                  </td>
+                  <td class="cell-stats">747 joueurs · 24556 lignes career · 7474 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:04 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/col1_all.zip" download>⬇️ Tout télécharger <span class="size">(361.3 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/col1_current.zip" download>🔄 Mise à jour saison <span class="size">(4.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇲🇽</span>
+                    <span class="league-name">Liga MX</span>
+                    <span class="country-tier">Mexique · D1</span>
+                  </td>
+                  <td class="cell-stats">677 joueurs · 30052 lignes career · 7347 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:02 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/mex1_all.zip" download>⬇️ Tout télécharger <span class="size">(411.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/mex1_current.zip" download>🔄 Mise à jour saison <span class="size">(62.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇾</span>
+                    <span class="league-name">Primera División Apertura</span>
+                    <span class="country-tier">Paraguay · D1</span>
+                  </td>
+                  <td class="cell-stats">506 joueurs · 11123 lignes career · 5036 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:05 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/pr1a_all.zip" download>⬇️ Tout télécharger <span class="size">(196.4 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/pr1a_current.zip" download>🔄 Mise à jour saison <span class="size">(1.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Primera División</span>
+                    <span class="country-tier">Uruguay · D1</span>
+                  </td>
+                  <td class="cell-stats">579 joueurs · 16117 lignes career · 5878 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:55 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/uru1_all.zip" download>⬇️ Tout télécharger <span class="size">(249.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/uru1_current.zip" download>🔄 Mise à jour saison <span class="size">(3.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇨</span>
+                    <span class="league-name">LigaPro Serie A</span>
+                    <span class="country-tier">Équateur · D1</span>
+                  </td>
+                  <td class="cell-stats">565 joueurs · 13965 lignes career · 7024 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:08 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ec1n_all.zip" download>⬇️ Tout télécharger <span class="size">(246.2 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ec1n_current.zip" download>🔄 Mise à jour saison <span class="size">(2.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇺🇸</span>
+                    <span class="league-name">MLS</span>
+                    <span class="country-tier">États-Unis · D1</span>
+                  </td>
+                  <td class="cell-stats">1020 joueurs · 33347 lignes career · 12334 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:00 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/mls1_all.zip" download>⬇️ Tout télécharger <span class="size">(540.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/mls1_current.zip" download>🔄 Mise à jour saison <span class="size">(8.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Amériques — D2 <span class="count">(1)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇷</span>
+                    <span class="league-name">Brasileirão Série B</span>
+                    <span class="country-tier">Brésil · D2</span>
+                  </td>
+                  <td class="cell-stats">862 joueurs · 26517 lignes career · 11459 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:10 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/bra2_all.zip" download>⬇️ Tout télécharger <span class="size">(425.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/bra2_current.zip" download>🔄 Mise à jour saison <span class="size">(5.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Asie/Océanie — D1 <span class="count">(6)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇸🇦</span>
+                    <span class="league-name">Saudi Pro League</span>
+                    <span class="country-tier">Arabie Saoudite · D1</span>
+                  </td>
+                  <td class="cell-stats">827 joueurs · 26633 lignes career · 8204 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:12 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/sa1_all.zip" download>⬇️ Tout télécharger <span class="size">(410.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/sa1_current.zip" download>🔄 Mise à jour saison <span class="size">(64.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇺</span>
+                    <span class="league-name">A-League</span>
+                    <span class="country-tier">Australie · D1</span>
+                  </td>
+                  <td class="cell-stats">459 joueurs · 12072 lignes career · 4761 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:49 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/aus1_all.zip" download>⬇️ Tout télécharger <span class="size">(209.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/aus1_current.zip" download>🔄 Mise à jour saison <span class="size">(9.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇳</span>
+                    <span class="league-name">Chinese Super League</span>
+                    <span class="country-tier">Chine · D1</span>
+                  </td>
+                  <td class="cell-stats">557 joueurs · 15499 lignes career · 6783 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:27 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/csl_all.zip" download>⬇️ Tout télécharger <span class="size">(245.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/csl_current.zip" download>🔄 Mise à jour saison <span class="size">(1.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇰🇷</span>
+                    <span class="league-name">K League 1</span>
+                    <span class="country-tier">Corée du Sud · D1</span>
+                  </td>
+                  <td class="cell-stats">484 joueurs · 13258 lignes career · 6060 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:20 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/rsk1_all.zip" download>⬇️ Tout télécharger <span class="size">(205.4 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/rsk1_current.zip" download>🔄 Mise à jour saison <span class="size">(3.7 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇯🇵</span>
+                    <span class="league-name">J1 League</span>
+                    <span class="country-tier">Japon · D1</span>
+                  </td>
+                  <td class="cell-stats">778 joueurs · 22840 lignes career · 7743 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:18 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/jap1_all.zip" download>⬇️ Tout télécharger <span class="size">(350.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/jap1_current.zip" download>🔄 Mise à jour saison <span class="size">(51.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">UAE Pro League</span>
+                    <span class="country-tier">Émirats arabes unis · D1</span>
+                  </td>
+                  <td class="cell-stats">676 joueurs · 19602 lignes career · 6532 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:15 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/uae1_all.zip" download>⬇️ Tout télécharger <span class="size">(304.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/uae1_current.zip" download>🔄 Mise à jour saison <span class="size">(36.7 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Europe — D1 <span class="count">(43)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇱</span>
+                    <span class="league-name">Kategoria Superiore</span>
+                    <span class="country-tier">Albanie · D1</span>
+                  </td>
+                  <td class="cell-stats">513 joueurs · 12475 lignes career · 5048 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:45 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/alb1_all.zip" download>⬇️ Tout télécharger <span class="size">(218.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/alb1_current.zip" download>🔄 Mise à jour saison <span class="size">(32.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇪</span>
+                    <span class="league-name">Bundesliga</span>
+                    <span class="country-tier">Allemagne · D1</span>
+                  </td>
+                  <td class="cell-stats">844 joueurs · 33771 lignes career · 8486 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:45 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/l1_all.zip" download>⬇️ Tout télécharger <span class="size">(524.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/l1_current.zip" download>🔄 Mise à jour saison <span class="size">(69.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                    <span class="league-name">Premier League</span>
+                    <span class="country-tier">Angleterre · D1</span>
+                  </td>
+                  <td class="cell-stats">928 joueurs · 46488 lignes career · 9498 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:49 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/gb1_all.zip" download>⬇️ Tout télécharger <span class="size">(651.3 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/gb1_current.zip" download>🔄 Mise à jour saison <span class="size">(72.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇹</span>
+                    <span class="league-name">Bundesliga</span>
+                    <span class="country-tier">Autriche · D1</span>
+                  </td>
+                  <td class="cell-stats">535 joueurs · 16216 lignes career · 5543 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:18 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/a1_all.zip" download>⬇️ Tout télécharger <span class="size">(272.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/a1_current.zip" download>🔄 Mise à jour saison <span class="size">(65.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇿</span>
+                    <span class="league-name">Premier League</span>
+                    <span class="country-tier">Azerbaïdjan · D1</span>
+                  </td>
+                  <td class="cell-stats">498 joueurs · 13636 lignes career · 4912 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:46 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/az1_all.zip" download>⬇️ Tout télécharger <span class="size">(226.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/az1_current.zip" download>🔄 Mise à jour saison <span class="size">(32.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇪</span>
+                    <span class="league-name">Jupiler Pro League</span>
+                    <span class="country-tier">Belgique · D1</span>
+                  </td>
+                  <td class="cell-stats">810 joueurs · 24418 lignes career · 8173 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:00 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/be1_all.zip" download>⬇️ Tout télécharger <span class="size">(414.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/be1_current.zip" download>🔄 Mise à jour saison <span class="size">(76.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇦</span>
+                    <span class="league-name">Premijer Liga</span>
+                    <span class="country-tier">Bosnie-Herzégovine · D1</span>
+                  </td>
+                  <td class="cell-stats">574 joueurs · 14737 lignes career · 5842 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:48 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/bos1_all.zip" download>⬇️ Tout télécharger <span class="size">(259.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/bos1_current.zip" download>🔄 Mise à jour saison <span class="size">(47.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇬</span>
+                    <span class="league-name">Parva Liga</span>
+                    <span class="country-tier">Bulgarie · D1</span>
+                  </td>
+                  <td class="cell-stats">686 joueurs · 18070 lignes career · 7094 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:36 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/bu1_all.zip" download>⬇️ Tout télécharger <span class="size">(309.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/bu1_current.zip" download>🔄 Mise à jour saison <span class="size">(63.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇾</span>
+                    <span class="league-name">First Division</span>
+                    <span class="country-tier">Chypre · D1</span>
+                  </td>
+                  <td class="cell-stats">728 joueurs · 24962 lignes career · 7240 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:40 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/zyp1_all.zip" download>⬇️ Tout télécharger <span class="size">(392.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/zyp1_current.zip" download>🔄 Mise à jour saison <span class="size">(42.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇭🇷</span>
+                    <span class="league-name">SuperSport HNL</span>
+                    <span class="country-tier">Croatie · D1</span>
+                  </td>
+                  <td class="cell-stats">584 joueurs · 15456 lignes career · 6049 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:27 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/kr1_all.zip" download>⬇️ Tout télécharger <span class="size">(268.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/kr1_current.zip" download>🔄 Mise à jour saison <span class="size">(54.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇰</span>
+                    <span class="league-name">Superligaen</span>
+                    <span class="country-tier">Danemark · D1</span>
+                  </td>
+                  <td class="cell-stats">542 joueurs · 19870 lignes career · 5682 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:16 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/dk1_all.zip" download>⬇️ Tout télécharger <span class="size">(304.3 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/dk1_current.zip" download>🔄 Mise à jour saison <span class="size">(66.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇸</span>
+                    <span class="league-name">LaLiga</span>
+                    <span class="country-tier">Espagne · D1</span>
+                  </td>
+                  <td class="cell-stats">962 joueurs · 31991 lignes career · 9753 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:47 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/es1_all.zip" download>⬇️ Tout télécharger <span class="size">(515.3 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/es1_current.zip" download>🔄 Mise à jour saison <span class="size">(61.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇪</span>
+                    <span class="league-name">Meistriliiga</span>
+                    <span class="country-tier">Estonie · D1</span>
+                  </td>
+                  <td class="cell-stats">317 joueurs · 9870 lignes career · 5146 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:44 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/est1_all.zip" download>⬇️ Tout télécharger <span class="size">(154.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/est1_current.zip" download>🔄 Mise à jour saison <span class="size">(19.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇫🇮</span>
+                    <span class="league-name">Veikkausliiga</span>
+                    <span class="country-tier">Finlande · D1</span>
+                  </td>
+                  <td class="cell-stats">390 joueurs · 11960 lignes career · 5986 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:50 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/fi1_all.zip" download>⬇️ Tout télécharger <span class="size">(203.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/fi1_current.zip" download>🔄 Mise à jour saison <span class="size">(16.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇫🇷</span>
+                    <span class="league-name">Ligue 1</span>
+                    <span class="country-tier">France · D1</span>
+                  </td>
+                  <td class="cell-stats">875 joueurs · 30526 lignes career · 8849 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:54 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/fr1_all.zip" download>⬇️ Tout télécharger <span class="size">(493.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/fr1_current.zip" download>🔄 Mise à jour saison <span class="size">(67.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇬🇷</span>
+                    <span class="league-name">Super League 1</span>
+                    <span class="country-tier">Grèce · D1</span>
+                  </td>
+                  <td class="cell-stats">747 joueurs · 30782 lignes career · 7458 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:05 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/gr1_all.zip" download>⬇️ Tout télécharger <span class="size">(464.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/gr1_current.zip" download>🔄 Mise à jour saison <span class="size">(58.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇬🇪</span>
+                    <span class="league-name">Erovnuli Liga</span>
+                    <span class="country-tier">Géorgie · D1</span>
+                  </td>
+                  <td class="cell-stats">355 joueurs · 8403 lignes career · 3894 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:51 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ge1n_all.zip" download>⬇️ Tout télécharger <span class="size">(144.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ge1n_current.zip" download>🔄 Mise à jour saison <span class="size">(12.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇭🇺</span>
+                    <span class="league-name">Nemzeti Bajnokság I</span>
+                    <span class="country-tier">Hongrie · D1</span>
+                  </td>
+                  <td class="cell-stats">605 joueurs · 16920 lignes career · 6198 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:33 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ung1_all.zip" download>⬇️ Tout télécharger <span class="size">(285.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ung1_current.zip" download>🔄 Mise à jour saison <span class="size">(66.7 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇪</span>
+                    <span class="league-name">Premier Division</span>
+                    <span class="country-tier">Irlande · D1</span>
+                  </td>
+                  <td class="cell-stats">371 joueurs · 11046 lignes career · 4809 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:35 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ir1_all.zip" download>⬇️ Tout télécharger <span class="size">(169.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ir1_current.zip" download>🔄 Mise à jour saison <span class="size">(14.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴</span>
+                    <span class="league-name">Premiership</span>
+                    <span class="country-tier">Irlande du Nord · D1</span>
+                  </td>
+                  <td class="cell-stats">503 joueurs · 16476 lignes career · 5048 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:52 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/nir1_all.zip" download>⬇️ Tout télécharger <span class="size">(226.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/nir1_current.zip" download>🔄 Mise à jour saison <span class="size">(37.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇸</span>
+                    <span class="league-name">Besta deild karla</span>
+                    <span class="country-tier">Islande · D1</span>
+                  </td>
+                  <td class="cell-stats">389 joueurs · 11749 lignes career · 4653 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:34 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/is1_all.zip" download>⬇️ Tout télécharger <span class="size">(182.2 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/is1_current.zip" download>🔄 Mise à jour saison <span class="size">(10.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇱</span>
+                    <span class="league-name">Ligat Ha'AL</span>
+                    <span class="country-tier">Israël · D1</span>
+                  </td>
+                  <td class="cell-stats">659 joueurs · 17541 lignes career · 6446 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:54 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/isr1_all.zip" download>⬇️ Tout télécharger <span class="size">(292.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/isr1_current.zip" download>🔄 Mise à jour saison <span class="size">(42.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Serie A</span>
+                    <span class="country-tier">Italie · D1</span>
+                  </td>
+                  <td class="cell-stats">1064 joueurs · 43713 lignes career · 10686 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:52 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/it1_all.zip" download>⬇️ Tout télécharger <span class="size">(667.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/it1_current.zip" download>🔄 Mise à jour saison <span class="size">(79.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇱🇻</span>
+                    <span class="league-name">Virsliga</span>
+                    <span class="country-tier">Lettonie · D1</span>
+                  </td>
+                  <td class="cell-stats">325 joueurs · 7581 lignes career · 4934 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:43 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/let1_all.zip" download>⬇️ Tout télécharger <span class="size">(144.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/let1_current.zip" download>🔄 Mise à jour saison <span class="size">(14.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇱🇹</span>
+                    <span class="league-name">A Lyga</span>
+                    <span class="country-tier">Lituanie · D1</span>
+                  </td>
+                  <td class="cell-stats">306 joueurs · 8717 lignes career · 4139 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:42 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/li1_all.zip" download>⬇️ Tout télécharger <span class="size">(149.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/li1_current.zip" download>🔄 Mise à jour saison <span class="size">(11.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇱🇺</span>
+                    <span class="league-name">National Division</span>
+                    <span class="country-tier">Luxembourg · D1</span>
+                  </td>
+                  <td class="cell-stats">749 joueurs · 13667 lignes career · 7354 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:40 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/lux1_all.zip" download>⬇️ Tout télécharger <span class="size">(258.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/lux1_current.zip" download>🔄 Mise à jour saison <span class="size">(50.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇲🇹</span>
+                    <span class="league-name">Premier League</span>
+                    <span class="country-tier">Malte · D1</span>
+                  </td>
+                  <td class="cell-stats">469 joueurs · 14038 lignes career · 4667 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:49 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/mal1_all.zip" download>⬇️ Tout télécharger <span class="size">(221.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/mal1_current.zip" download>🔄 Mise à jour saison <span class="size">(19.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇳🇴</span>
+                    <span class="league-name">Eliteserien</span>
+                    <span class="country-tier">Norvège · D1</span>
+                  </td>
+                  <td class="cell-stats">522 joueurs · 15726 lignes career · 5751 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:24 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/no1_all.zip" download>⬇️ Tout télécharger <span class="size">(255.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/no1_current.zip" download>🔄 Mise à jour saison <span class="size">(31.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
+                    <span class="league-name">Cymru Premier</span>
+                    <span class="country-tier">Pays de Galles · D1</span>
+                  </td>
+                  <td class="cell-stats">624 joueurs · 13241 lignes career · 5942 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:02 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/wal1_all.zip" download>⬇️ Tout télécharger <span class="size">(213.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/wal1_current.zip" download>🔄 Mise à jour saison <span class="size">(48.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇳🇱</span>
+                    <span class="league-name">Eredivisie</span>
+                    <span class="country-tier">Pays-Bas · D1</span>
+                  </td>
+                  <td class="cell-stats">863 joueurs · 29501 lignes career · 8679 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:56 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/nl1_all.zip" download>⬇️ Tout télécharger <span class="size">(466.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/nl1_current.zip" download>🔄 Mise à jour saison <span class="size">(75.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇱</span>
+                    <span class="league-name">Ekstraklasa</span>
+                    <span class="country-tier">Pologne · D1</span>
+                  </td>
+                  <td class="cell-stats">871 joueurs · 28320 lignes career · 8883 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:21 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/pl1_all.zip" download>⬇️ Tout télécharger <span class="size">(464.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/pl1_current.zip" download>🔄 Mise à jour saison <span class="size">(100.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇹</span>
+                    <span class="league-name">Liga Portugal</span>
+                    <span class="country-tier">Portugal · D1</span>
+                  </td>
+                  <td class="cell-stats">905 joueurs · 28427 lignes career · 9204 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 11:58 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/po1_all.zip" download>⬇️ Tout télécharger <span class="size">(474.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/po1_current.zip" download>🔄 Mise à jour saison <span class="size">(77.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇷🇴</span>
+                    <span class="league-name">Superliga</span>
+                    <span class="country-tier">Roumanie · D1</span>
+                  </td>
+                  <td class="cell-stats">866 joueurs · 28656 lignes career · 8803 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:31 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ro1_all.zip" download>⬇️ Tout télécharger <span class="size">(447.2 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ro1_current.zip" download>🔄 Mise à jour saison <span class="size">(90.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇷🇺</span>
+                    <span class="league-name">Premier Liga</span>
+                    <span class="country-tier">Russie · D1</span>
+                  </td>
+                  <td class="cell-stats">675 joueurs · 21243 lignes career · 7314 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:39 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ru1_all.zip" download>⬇️ Tout télécharger <span class="size">(353.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ru1_current.zip" download>🔄 Mise à jour saison <span class="size">(77.3 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇷🇸</span>
+                    <span class="league-name">Super Liga</span>
+                    <span class="country-tier">Serbie · D1</span>
+                  </td>
+                  <td class="cell-stats">864 joueurs · 23700 lignes career · 9039 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:29 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ser1_all.zip" download>⬇️ Tout télécharger <span class="size">(407.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ser1_current.zip" download>🔄 Mise à jour saison <span class="size">(85.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇸🇰</span>
+                    <span class="league-name">Niké Liga</span>
+                    <span class="country-tier">Slovaquie · D1</span>
+                  </td>
+                  <td class="cell-stats">541 joueurs · 16698 lignes career · 5517 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:03 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/slo1_all.zip" download>⬇️ Tout télécharger <span class="size">(271.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/slo1_current.zip" download>🔄 Mise à jour saison <span class="size">(59.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇸🇮</span>
+                    <span class="league-name">Prva Liga</span>
+                    <span class="country-tier">Slovénie · D1</span>
+                  </td>
+                  <td class="cell-stats">563 joueurs · 12953 lignes career · 5784 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:42 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/sl1_all.zip" download>⬇️ Tout télécharger <span class="size">(238.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/sl1_current.zip" download>🔄 Mise à jour saison <span class="size">(61.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇭</span>
+                    <span class="league-name">Super League</span>
+                    <span class="country-tier">Suisse · D1</span>
+                  </td>
+                  <td class="cell-stats">568 joueurs · 19192 lignes career · 5942 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:19 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/c1_all.zip" download>⬇️ Tout télécharger <span class="size">(305.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/c1_current.zip" download>🔄 Mise à jour saison <span class="size">(69.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇸🇪</span>
+                    <span class="league-name">Allsvenskan</span>
+                    <span class="country-tier">Suède · D1</span>
+                  </td>
+                  <td class="cell-stats">544 joueurs · 14597 lignes career · 5763 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:22 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/se1_all.zip" download>⬇️ Tout télécharger <span class="size">(246.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/se1_current.zip" download>🔄 Mise à jour saison <span class="size">(30.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇿</span>
+                    <span class="league-name">Chance Liga</span>
+                    <span class="country-tier">Tchéquie · D1</span>
+                  </td>
+                  <td class="cell-stats">736 joueurs · 26647 lignes career · 7554 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:26 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ts1_all.zip" download>⬇️ Tout télécharger <span class="size">(400.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ts1_current.zip" download>🔄 Mise à jour saison <span class="size">(88.9 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇹🇷</span>
+                    <span class="league-name">Süper Lig</span>
+                    <span class="country-tier">Turquie · D1</span>
+                  </td>
+                  <td class="cell-stats">1014 joueurs · 36267 lignes career · 10223 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:03 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/tr1_all.zip" download>⬇️ Tout télécharger <span class="size">(587.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/tr1_current.zip" download>🔄 Mise à jour saison <span class="size">(79.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇺🇦</span>
+                    <span class="league-name">Premier Liga</span>
+                    <span class="country-tier">Ukraine · D1</span>
+                  </td>
+                  <td class="cell-stats">749 joueurs · 17940 lignes career · 7572 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 12:15 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/ukr1_all.zip" download>⬇️ Tout télécharger <span class="size">(308.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/ukr1_current.zip" download>🔄 Mise à jour saison <span class="size">(70.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                    <span class="league-name">Scottish Premiership</span>
+                    <span class="country-tier">Écosse · D1</span>
+                  </td>
+                  <td class="cell-stats">583 joueurs · 24972 lignes career · 5974 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:37 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/sc1_all.zip" download>⬇️ Tout télécharger <span class="size">(361.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/sc1_current.zip" download>🔄 Mise à jour saison <span class="size">(74.1 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Europe — D2 <span class="count">(6)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇪</span>
+                    <span class="league-name">2. Bundesliga</span>
+                    <span class="country-tier">Allemagne · D2</span>
+                  </td>
+                  <td class="cell-stats">947 joueurs · 30004 lignes career · 9503 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:23 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/l2_all.zip" download>⬇️ Tout télécharger <span class="size">(506.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/l2_current.zip" download>🔄 Mise à jour saison <span class="size">(92.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                    <span class="league-name">EFL Championship</span>
+                    <span class="country-tier">Angleterre · D2</span>
+                  </td>
+                  <td class="cell-stats">1245 joueurs · 52289 lignes career · 12528 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 14:45 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/gb2_all.zip" download>⬇️ Tout télécharger <span class="size">(752.2 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/gb2_current.zip" download>🔄 Mise à jour saison <span class="size">(109.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇸</span>
+                    <span class="league-name">Segunda División</span>
+                    <span class="country-tier">Espagne · D2</span>
+                  </td>
+                  <td class="cell-stats">1208 joueurs · 27031 lignes career · 11916 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:17 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/es2_all.zip" download>⬇️ Tout télécharger <span class="size">(511.6 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/es2_current.zip" download>🔄 Mise à jour saison <span class="size">(71.7 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇫🇷</span>
+                    <span class="league-name">Ligue 2</span>
+                    <span class="country-tier">France · D2</span>
+                  </td>
+                  <td class="cell-stats">888 joueurs · 21368 lignes career · 8871 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:20 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/fr2_all.zip" download>⬇️ Tout télécharger <span class="size">(392.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/fr2_current.zip" download>🔄 Mise à jour saison <span class="size">(71.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Serie B</span>
+                    <span class="country-tier">Italie · D2</span>
+                  </td>
+                  <td class="cell-stats">1136 joueurs · 37740 lignes career · 11354 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:14 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/it2_all.zip" download>⬇️ Tout télécharger <span class="size">(598.9 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/it2_current.zip" download>🔄 Mise à jour saison <span class="size">(83.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇹</span>
+                    <span class="league-name">Liga Portugal 2</span>
+                    <span class="country-tier">Portugal · D2</span>
+                  </td>
+                  <td class="cell-stats">969 joueurs · 23542 lignes career · 9728 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:25 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/po2_all.zip" download>⬇️ Tout télécharger <span class="size">(425.4 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/po2_current.zip" download>🔄 Mise à jour saison <span class="size">(75.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Europe — D3 <span class="count">(8)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇪</span>
+                    <span class="league-name">3. Liga</span>
+                    <span class="country-tier">Allemagne · D3</span>
+                  </td>
+                  <td class="cell-stats">1025 joueurs · 26580 lignes career · 10277 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:47 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/l3_all.zip" download>⬇️ Tout télécharger <span class="size">(468.5 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/l3_current.zip" download>🔄 Mise à jour saison <span class="size">(99.0 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                    <span class="league-name">EFL League One</span>
+                    <span class="country-tier">Angleterre · D3</span>
+                  </td>
+                  <td class="cell-stats">1222 joueurs · 46949 lignes career · 12140 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:28 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/gb3_all.zip" download>⬇️ Tout télécharger <span class="size">(677.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/gb3_current.zip" download>🔄 Mise à jour saison <span class="size">(109.4 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇸</span>
+                    <span class="league-name">Primera Federación Grupo I</span>
+                    <span class="country-tier">Espagne · D3</span>
+                  </td>
+                  <td class="cell-stats">1047 joueurs · 15219 lignes career · 10210 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:40 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/e3g1_all.zip" download>⬇️ Tout télécharger <span class="size">(347.4 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/e3g1_current.zip" download>🔄 Mise à jour saison <span class="size">(36.6 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇸</span>
+                    <span class="league-name">Primera Federación Grupo II</span>
+                    <span class="country-tier">Espagne · D3</span>
+                  </td>
+                  <td class="cell-stats">1139 joueurs · 16881 lignes career · 11001 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:42 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/e3g2_all.zip" download>⬇️ Tout télécharger <span class="size">(382.0 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/e3g2_current.zip" download>🔄 Mise à jour saison <span class="size">(39.2 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇫🇷</span>
+                    <span class="league-name">Championnat National</span>
+                    <span class="country-tier">France · D3</span>
+                  </td>
+                  <td class="cell-stats">842 joueurs · 16802 lignes career · 8379 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:44 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/fr3_all.zip" download>⬇️ Tout télécharger <span class="size">(335.7 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/fr3_current.zip" download>🔄 Mise à jour saison <span class="size">(61.5 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Serie C Girone A</span>
+                    <span class="country-tier">Italie · D3</span>
+                  </td>
+                  <td class="cell-stats">1109 joueurs · 26104 lignes career · 10969 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:31 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/it3a_all.zip" download>⬇️ Tout télécharger <span class="size">(455.1 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/it3a_current.zip" download>🔄 Mise à jour saison <span class="size">(62.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Serie C Girone B</span>
+                    <span class="country-tier">Italie · D3</span>
+                  </td>
+                  <td class="cell-stats">1282 joueurs · 32686 lignes career · 12582 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:34 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/it3b_all.zip" download>⬇️ Tout télécharger <span class="size">(557.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/it3b_current.zip" download>🔄 Mise à jour saison <span class="size">(76.3 Ko)</span></a>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Serie C Girone C</span>
+                    <span class="country-tier">Italie · D3</span>
+                  </td>
+                  <td class="cell-stats">1127 joueurs · 29282 lignes career · 11016 matchs</td>
+                  <td class="cell-update">
+                    <div class="update-date">2026-08-31 13:37 UTC</div>
+                    <span class="badge fresh">0 j</span>
+                  </td>
+                  <td class="cell-actions">
+                    <a class="btn btn-primary" href="data/it3c_all.zip" download>⬇️ Tout télécharger <span class="size">(498.8 Ko)</span></a>
+                    <a class="btn btn-secondary" href="data/it3c_current.zip" download>🔄 Mise à jour saison <span class="size">(69.8 Ko)</span></a>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (AFC) <span class="count">(9)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇸🇦</span>
+                    <span class="league-name">Arabie Saoudite</span>
+                    <span class="country-tier">Arabie Saoudite</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇺</span>
+                    <span class="league-name">Australie</span>
+                    <span class="country-tier">Australie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇰🇷</span>
+                    <span class="league-name">Corée du Sud</span>
+                    <span class="country-tier">Corée du Sud</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Irak</span>
+                    <span class="country-tier">Irak</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Iran</span>
+                    <span class="country-tier">Iran</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇯🇵</span>
+                    <span class="league-name">Japon</span>
+                    <span class="country-tier">Japon</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Jordanie</span>
+                    <span class="country-tier">Jordanie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Ouzbékistan</span>
+                    <span class="country-tier">Ouzbékistan</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Qatar</span>
+                    <span class="country-tier">Qatar</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (CAF) <span class="count">(9)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇿🇦</span>
+                    <span class="league-name">Afrique du Sud</span>
+                    <span class="country-tier">Afrique du Sud</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇿</span>
+                    <span class="league-name">Algérie</span>
+                    <span class="country-tier">Algérie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Côte d'Ivoire</span>
+                    <span class="country-tier">Côte d'Ivoire</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Ghana</span>
+                    <span class="country-tier">Ghana</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇲🇦</span>
+                    <span class="league-name">Maroc</span>
+                    <span class="country-tier">Maroc</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Nigeria</span>
+                    <span class="country-tier">Nigeria</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Sénégal</span>
+                    <span class="country-tier">Sénégal</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Tunisie</span>
+                    <span class="country-tier">Tunisie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Égypte</span>
+                    <span class="country-tier">Égypte</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (CONCACAF) <span class="count">(6)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Canada</span>
+                    <span class="country-tier">Canada</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Costa Rica</span>
+                    <span class="country-tier">Costa Rica</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Jamaïque</span>
+                    <span class="country-tier">Jamaïque</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇲🇽</span>
+                    <span class="league-name">Mexique</span>
+                    <span class="country-tier">Mexique</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Panama</span>
+                    <span class="country-tier">Panama</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇺🇸</span>
+                    <span class="league-name">États-Unis</span>
+                    <span class="country-tier">États-Unis</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (CONMEBOL) <span class="count">(7)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇷</span>
+                    <span class="league-name">Argentine</span>
+                    <span class="country-tier">Argentine</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Bolivie</span>
+                    <span class="country-tier">Bolivie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇷</span>
+                    <span class="league-name">Brésil</span>
+                    <span class="country-tier">Brésil</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇴</span>
+                    <span class="league-name">Colombie</span>
+                    <span class="country-tier">Colombie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇾</span>
+                    <span class="league-name">Paraguay</span>
+                    <span class="country-tier">Paraguay</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Uruguay</span>
+                    <span class="country-tier">Uruguay</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇨</span>
+                    <span class="league-name">Équateur</span>
+                    <span class="country-tier">Équateur</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (OFC) <span class="count">(1)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏳️</span>
+                    <span class="league-name">Nouvelle-Zélande</span>
+                    <span class="country-tier">Nouvelle-Zélande</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+          <section>
+            <h2>Sélections nationales — Mondial 2026 (UEFA) <span class="count">(16)</span></h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Championnat</th>
+                  <th>Contenu</th>
+                  <th>Dernière mise à jour</th>
+                  <th>Téléchargement</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇪</span>
+                    <span class="league-name">Allemagne</span>
+                    <span class="country-tier">Allemagne</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                    <span class="league-name">Angleterre</span>
+                    <span class="country-tier">Angleterre</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇦🇹</span>
+                    <span class="league-name">Autriche</span>
+                    <span class="country-tier">Autriche</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇧🇪</span>
+                    <span class="league-name">Belgique</span>
+                    <span class="country-tier">Belgique</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇭🇷</span>
+                    <span class="league-name">Croatie</span>
+                    <span class="country-tier">Croatie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇩🇰</span>
+                    <span class="league-name">Danemark</span>
+                    <span class="country-tier">Danemark</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇪🇸</span>
+                    <span class="league-name">Espagne</span>
+                    <span class="country-tier">Espagne</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇫🇷</span>
+                    <span class="league-name">France</span>
+                    <span class="country-tier">France</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇮🇹</span>
+                    <span class="league-name">Italie</span>
+                    <span class="country-tier">Italie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇳🇴</span>
+                    <span class="league-name">Norvège</span>
+                    <span class="country-tier">Norvège</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇳🇱</span>
+                    <span class="league-name">Pays-Bas</span>
+                    <span class="country-tier">Pays-Bas</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇱</span>
+                    <span class="league-name">Pologne</span>
+                    <span class="country-tier">Pologne</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇵🇹</span>
+                    <span class="league-name">Portugal</span>
+                    <span class="country-tier">Portugal</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇷🇸</span>
+                    <span class="league-name">Serbie</span>
+                    <span class="country-tier">Serbie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇨🇭</span>
+                    <span class="league-name">Suisse</span>
+                    <span class="country-tier">Suisse</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+                <tr>
+                  <td class="cell-name">
+                    <span class="flag">🇹🇷</span>
+                    <span class="league-name">Turquie</span>
+                    <span class="country-tier">Turquie</span>
+                  </td>
+                  <td class="cell-stats"><em>Pas encore scrapé</em></td>
+                  <td class="cell-update">
+                    <div class="update-date">—</div>
+                    <span class="badge stale">Jamais</span>
+                  </td>
+                  <td class="cell-actions">
+                    <span class="btn btn-disabled">⏳ À venir</span>
+                    <span class="btn btn-disabled">—</span>
+                  </td>
+                </tr>
+            
+              </tbody>
+            </table>
+          </section>
+        
+  </div>
+
+  <footer>
+    Page générée le 2026-08-31 14:50 UTC ·
+    <a href="https://github.com/MaloElPipo/FootballDashboard">Code source</a>
+  </footer>
+</body>
+</html>

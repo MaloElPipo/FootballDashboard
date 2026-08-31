@@ -1671,6 +1671,39 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 577069,Alex Downes,22546,Colwyn Bay,2026,WAL1,0,Right-Back,26,England,0,0,0,0
 1396406,Callum Ferguson,31188,Flint Town United,2026,WAL1,26,Right-Back,0,Wales,0,0,0,0
 1156846,Corey Foggarty,50598,Cambrian United,2026,WAL1,0,Goalkeeper,19,Wales,0,0,0,0
+1243181,Louis Phillips,10734,The New Saints,2026,WAL1,26,Right Winger,20,Wales,0,0,0,0
+798363,Uniss Kargbo,22546,Colwyn Bay,2026,WAL1,25,Central Midfield,24,Ireland,0,0,0,0
+939334,Ifan Knott,25232,Haverfordwest County,2026,WAL1,1,Goalkeeper,21,Wales,5,5,0,450
+803387,Luc Rees,25232,Haverfordwest County,2026,WAL1,31,Goalkeeper,23,Wales,4,0,0,0
+1225336,Lucas Myers,25232,Haverfordwest County,2026,WAL1,30,Goalkeeper,0,England,1,0,0,0
+670852,Jordan Hackett,25232,Haverfordwest County,2026,WAL1,19,Left-Back,22,England,4,2,0,135
+319290,Rhys Abbruzzese,25232,Haverfordwest County,2026,WAL1,3,Left-Back,28,Wales,5,5,0,447
+486732,Dylan Rees,25232,Haverfordwest County,2026,WAL1,2,Centre-Back,29,Wales,4,4,0,315
+1187735,Jacob Owen,25232,Haverfordwest County,2026,WAL1,0,Right-Back,21,Wales,1,1,0,28
+754248,Alaric Jones,25232,Haverfordwest County,2026,WAL1,5,Centre-Back,25,Wales,0,0,0,0
+1439950,Jacob Bacon,25232,Haverfordwest County,2026,WAL1,6,Centre-Back,19,England,0,0,0,0
+195204,Kyle McCarthy,25232,Haverfordwest County,2026,WAL1,17,Centre-Back,33,Wales,3,3,0,270
+939319,Iori Humphreys,25232,Haverfordwest County,2026,WAL1,24,Right-Back,22,Wales,0,0,0,0
+1459162,Caiden Lewis,25232,Haverfordwest County,2026,WAL1,0,Centre-Back,17,England,1,0,0,0
+1122672,Ben Phillips,25232,Haverfordwest County,2026,WAL1,14,Centre-Back,18,Wales,5,5,0,227
+1086015,Jack Walker,25232,Haverfordwest County,2026,WAL1,25,Centre-Back,20,Scotland,3,3,0,166
+383383,Corey Shephard,25232,Haverfordwest County,2026,WAL1,8,Central Midfield,28,Wales,4,4,0,360
+746625,Dan Hawkins,25232,Haverfordwest County,2026,WAL1,10,Attacking Midfield,25,Wales,5,5,0,318
+391522,Greg Walters,25232,Haverfordwest County,2026,WAL1,18,Central Midfield,31,Wales,5,5,0,430
+340596,Clayton Green,25232,Haverfordwest County,2026,WAL1,29,Central Midfield,32,Wales,2,2,0,180
+1054124,Panashe Makwiramiti,25232,Haverfordwest County,2026,WAL1,11,Central Midfield,24,Zimbabwe,4,2,0,42
+878909,Kyle Kenniford,25232,Haverfordwest County,2026,WAL1,4,Central Midfield,21,Wales,5,5,0,322
+172216,Ricky Watts,25232,Haverfordwest County,2026,WAL1,7,Central Midfield,34,Wales,1,1,0,90
+1198669,Ashley Watkins,25232,Haverfordwest County,2026,WAL1,21,Central Midfield,19,Wales,0,0,0,0
+1370868,Will Hughes,25232,Haverfordwest County,2026,WAL1,23,Right Midfield,19,Wales,5,4,0,92
+1550930,Cai Lewis,25232,Haverfordwest County,2026,WAL1,36,Midfield,0,Wales,2,0,0,0
+823075,Lewis Rees,25232,Haverfordwest County,2026,WAL1,9,Centre-Forward,24,Wales,4,4,0,232
+250741,Owain Jones,25232,Haverfordwest County,2026,WAL1,20,Centre-Forward,29,Wales,2,1,0,21
+824136,Jack Wilson,25232,Haverfordwest County,2026,WAL1,22,Left Winger,25,England,5,5,0,327
+823931,Ben Ahmun,25232,Haverfordwest County,2026,WAL1,28,Centre-Forward,34,Wales,5,5,0,332
+1424420,Hari Thomas,25232,Haverfordwest County,2026,WAL1,27,Centre-Forward,17,Wales,5,5,0,118
+1521243,Caden Fox,25232,Haverfordwest County,2026,WAL1,16,Left Winger,16,Wales,0,0,0,0
+1550931,Jayden Crawford,25232,Haverfordwest County,2026,WAL1,33,Attack,0,Wales,0,0,0,0
 939334,Ifan Knott,25232,Haverfordwest County,2025,WAL1,1,Goalkeeper,20,Wales,31,15,0,1305
 803387,Luc Rees,25232,Haverfordwest County,2025,WAL1,31,Goalkeeper,22,Wales,32,17,0,1530
 1370875,Osian Millichip,25232,Haverfordwest County,2025,WAL1,0,Goalkeeper,16,Wales,1,0,0,0
@@ -1691,110 +1724,78 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 172216,Ricky Watts,25232,Haverfordwest County,2025,WAL1,7,Central Midfield,33,Wales,26,26,0,1726
 878909,Kyle Kenniford,25232,Haverfordwest County,2025,WAL1,19,Central Midfield,20,Wales,18,18,1,1233
 1198669,Ashley Watkins,25232,Haverfordwest County,2025,WAL1,21,Central Midfield,18,Wales,25,12,0,108
-1228273,Osian James,25232,Haverfordwest County,2025,WAL1,0,Midfield,18,Wales,5,0,0,0
+1370868,Will Hughes,25232,Haverfordwest County,2025,WAL1,23,Right Midfield,18,Wales,20,7,0,179
+1228273,Osian James,25232,Haverfordwest County,2025,WAL1,0,Attacking Midfield,18,Wales,5,0,0,0
 250741,Owain Jones,25232,Haverfordwest County,2025,WAL1,20,Centre-Forward,28,Wales,29,28,3,945
 824136,Jack Wilson,25232,Haverfordwest County,2025,WAL1,22,Left Winger,24,England,1,1,0,36
 823931,Ben Ahmun,25232,Haverfordwest County,2025,WAL1,28,Centre-Forward,33,Wales,31,31,14,2562
-1370868,Will Hughes,25232,Haverfordwest County,2025,WAL1,23,Right Winger,18,Wales,20,7,0,179
 1424420,Hari Thomas,25232,Haverfordwest County,2025,WAL1,44,Centre-Forward,16,Wales,14,9,1,108
 824133,Ben Fawcett,25232,Haverfordwest County,2025,WAL1,0,Centre-Forward,24,Wales,14,14,2,951
 1370870,Sammie Vaughan-Harries,25232,Haverfordwest County,2025,WAL1,0,Centre-Forward,17,Wales,1,0,0,0
 1521243,Caden Fox,25232,Haverfordwest County,2025,WAL1,0,Left Winger,15,Wales,2,1,0,1
-121267,Connor Roberts,22461,Caernarfon Town,2025,WAL1,1,Goalkeeper,32,Wales,28,28,0,2520
-1190206,Hari Thomas,22461,Caernarfon Town,2025,WAL1,13,Goalkeeper,18,Wales,32,4,0,360
-1332564,Jack Williams,22461,Caernarfon Town,2025,WAL1,0,Goalkeeper,15,Wales,1,0,0,0
-479202,Ryan Sears,22461,Caernarfon Town,2025,WAL1,27,Centre-Back,26,Wales,28,28,2,2192
-911955,Morgan Owen,22461,Caernarfon Town,2025,WAL1,2,Right-Back,24,Wales,32,32,0,2345
-531288,Mathew Jones,22461,Caernarfon Town,2025,WAL1,3,Left-Back,25,Wales,24,24,2,1884
-255163,Dominic Smith,22461,Caernarfon Town,2025,WAL1,15,Centre-Back,29,Wales,27,25,2,2090
-748839,Phil Mooney,22461,Caernarfon Town,2025,WAL1,5,Centre-Back,34,England,31,27,7,1989
-558133,Kyle Harrison,22461,Caernarfon Town,2025,WAL1,24,Centre-Back,30,England,29,21,2,1462
-1292024,Caron Williams,22461,Caernarfon Town,2025,WAL1,33,Left-Back,17,Wales,14,3,0,175
-686692,Gruff John,22461,Caernarfon Town,2025,WAL1,0,Centre-Back,31,Wales,1,0,0,0
-1237660,Steffan Alford,22461,Caernarfon Town,2025,WAL1,0,Centre-Back,17,Wales,0,0,0,0
-993228,Josh Lock,22461,Caernarfon Town,2025,WAL1,0,Attacking Midfield,21,Wales,26,25,2,1777
-687383,Iwan Lewis,22461,Caernarfon Town,2025,WAL1,6,Central Midfield,32,Wales,30,30,2,2332
-426428,Paulo Mendes,22461,Caernarfon Town,2025,WAL1,7,Central Midfield,31,Portugal,18,18,2,1487
-267328,Danny Gosset,22461,Caernarfon Town,2025,WAL1,8,Central Midfield,30,Wales,23,22,4,1642
-392378,Darren Thomas,22461,Caernarfon Town,2025,WAL1,10,Attacking Midfield,38,Wales,28,20,1,526
-1329955,Osian Ellis,22461,Caernarfon Town,2025,WAL1,39,Central Midfield,18,Wales,26,13,0,321
-911746,Sam Downey,22461,Caernarfon Town,2025,WAL1,0,Central Midfield,31,England,19,18,1,1096
-1369561,Owen Roberts,22461,Caernarfon Town,2025,WAL1,0,Midfield,0,Wales,2,0,0,0
-1369563,Harri Wyn,22461,Caernarfon Town,2025,WAL1,0,Midfield,16,Wales,2,0,0,0
-1321094,Ioan Williams,22461,Caernarfon Town,2025,WAL1,0,Midfield,18,Wales,0,0,0,0
-918867,Zack Clarke,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,22,England,10,9,3,533
-456331,Sion Bradley,22461,Caernarfon Town,2025,WAL1,0,Left Winger,27,Wales,26,26,6,1978
-822917,Adam Davies,22461,Caernarfon Town,2025,WAL1,9,Centre-Forward,28,Wales,30,29,11,2093
-654173,Brad Young,22461,Caernarfon Town,2025,WAL1,14,Centre-Forward,22,England,10,10,3,642
-574497,Osebi Abadaki,22461,Caernarfon Town,2025,WAL1,0,Right Winger,34,Nigeria,17,15,1,604
-52377,Adrian Cieslewicz,22461,Caernarfon Town,2025,WAL1,22,Left Winger,34,Poland,7,7,1,596
-871851,Connor Evans,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,21,Wales,20,17,1,513
-1363243,Rio Owen,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,18,Wales,11,11,2,464
-1041292,Osian Evans,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,19,Wales,0,0,0,0
-1292025,Charlie Griffith,22461,Caernarfon Town,2025,WAL1,0,Left Winger,17,Wales,8,3,0,10
-1097146,Hari Roberts,22461,Caernarfon Town,2025,WAL1,0,Right Winger,18,Wales,9,1,0,1
-505040,Nathan Shepperd,10734,The New Saints,2026,WAL1,1,Goalkeeper,25,Wales,4,4,0,360
+1005846,Luke Armstrong,62026,Penybont FC,2025,WAL1,0,Goalkeeper,19,Wales,23,16,0,1395
+1243180,Daniel Higgs,62026,Penybont FC,2025,WAL1,0,Goalkeeper,17,Wales,7,6,0,514
+662240,Archie Matthews,62026,Penybont FC,2025,WAL1,24,Goalkeeper,23,England,20,12,0,971
+1310154,Charlie Clarke,62026,Penybont FC,2025,WAL1,0,Goalkeeper,16,Wales,4,0,0,0
+1373372,Jay Price,62026,Penybont FC,2025,WAL1,0,Goalkeeper,16,Wales,8,0,0,0
+1410522,Ayrton Best,62026,Penybont FC,2025,WAL1,0,Goalkeeper,21,Australia,4,0,0,0
+663248,Kai Ludvigsen,62026,Penybont FC,2025,WAL1,2,Centre-Back,21,Wales,13,13,0,870
+855259,Nathaniel Williams,62026,Penybont FC,2025,WAL1,4,Centre-Back,21,England,7,6,0,372
+723673,Joe Woodiwiss,62026,Penybont FC,2025,WAL1,5,Centre-Back,22,Wales,27,24,0,1859
+720265,Jac Clay,62026,Penybont FC,2025,WAL1,15,Centre-Back,21,Wales,16,16,1,662
+717104,Billy Borge,62026,Penybont FC,2025,WAL1,16,Centre-Back,29,Wales,28,24,0,1471
+564873,Jacob Jones,62026,Penybont FC,2025,WAL1,18,Left-Back,23,Wales,30,20,0,676
+41099,Mark Little,62026,Penybont FC,2025,WAL1,0,Centre-Back,36,England,18,12,0,788
+1062935,Gabe Kircough,62026,Penybont FC,2025,WAL1,0,Centre-Back,21,Wales,19,19,1,1643
+1310156,Jack Florence,62026,Penybont FC,2025,WAL1,0,Centre-Back,17,Wales,5,1,0,2
+1310160,Peter Coe,62026,Penybont FC,2025,WAL1,0,Defender,17,Wales,8,2,0,9
+504898,Mael Davies,62026,Penybont FC,2025,WAL1,6,Right Midfield,26,Wales,32,32,3,2872
+334959,Kane Owen,62026,Penybont FC,2025,WAL1,3,Left Midfield,30,Wales,31,29,0,2023
+747291,Owen Pritchard,62026,Penybont FC,2025,WAL1,8,Attacking Midfield,22,Wales,19,19,1,1489
+340596,Clayton Green,62026,Penybont FC,2025,WAL1,29,Central Midfield,31,Wales,31,31,2,2449
+527493,Ash Baker,62026,Penybont FC,2025,WAL1,21,Central Midfield,28,Wales,25,24,0,1640
+446116,Alexander Cvetkovic,62026,Penybont FC,2025,WAL1,33,Central Midfield,28,England,18,15,2,934
+747255,James Crole,62026,Penybont FC,2025,WAL1,0,Centre-Forward,21,Wales,17,17,11,1375
+717147,Nathan Wood,62026,Penybont FC,2025,WAL1,7,Left Winger,27,Wales,32,32,1,2693
+754290,Noah Daley,62026,Penybont FC,2025,WAL1,11,Centre-Forward,23,Wales,26,26,11,1665
+120761,Chris Venables,62026,Penybont FC,2025,WAL1,9,Centre-Forward,39,Wales,25,25,2,1593
+924133,Ethan Cann,62026,Penybont FC,2025,WAL1,10,Centre-Forward,22,Wales,9,9,0,724
+1214065,Ioan Phillips,62026,Penybont FC,2025,WAL1,14,Centre-Forward,17,Wales,32,20,3,628
+67403,Owain Warlow,62026,Penybont FC,2025,WAL1,17,Left Winger,37,Wales,19,8,1,165
+87117,Rhys Griffiths,62026,Penybont FC,2025,WAL1,0,Centre-Forward,45,Wales,1,0,0,0
+1319019,Jaxon Humphreys,62026,Penybont FC,2025,WAL1,0,Right Winger,16,Wales,4,1,0,1
+1464358,Jacob Villacorta,62026,Penybont FC,2025,WAL1,0,Right Winger,17,Wales,8,3,0,26
+505040,Nathan Shepperd,10734,The New Saints,2026,WAL1,1,Goalkeeper,25,Wales,5,5,0,450
 1002363,Jack Edwards,10734,The New Saints,2026,WAL1,30,Goalkeeper,21,England,0,0,0,0
-1564966,George Jenkins,10734,The New Saints,2026,WAL1,0,Goalkeeper,17,Wales,1,0,0,0
+1564966,George Jenkins,10734,The New Saints,2026,WAL1,0,Goalkeeper,17,Wales,2,0,0,0
 503976,Dynel Simeu,10734,The New Saints,2026,WAL1,16,Centre-Back,24,England,4,4,1,360
-265866,Danny Davies,10734,The New Saints,2026,WAL1,22,Centre-Back,31,Wales,4,4,0,360
-543139,Jack Bodenham,10734,The New Saints,2026,WAL1,6,Centre-Back,26,Wales,4,4,0,360
+265866,Danny Davies,10734,The New Saints,2026,WAL1,22,Centre-Back,31,Wales,5,5,0,450
+543139,Jack Bodenham,10734,The New Saints,2026,WAL1,6,Centre-Back,26,Wales,5,5,0,450
 1187735,Jacob Owen,10734,The New Saints,2026,WAL1,2,Right-Back,21,Wales,0,0,0,0
-731734,Harvey Godsmark-Ford,10734,The New Saints,2026,WAL1,12,Centre-Back,22,England,1,0,0,0
+731734,Harvey Godsmark-Ford,10734,The New Saints,2026,WAL1,12,Centre-Back,22,England,2,1,0,85
 980268,Ben Woollam,10734,The New Saints,2026,WAL1,31,Centre-Back,22,England,0,0,0,0
-1138113,Zach Nolan,10734,The New Saints,2026,WAL1,23,Left-Back,20,Ireland,3,2,0,175
-1581079,Rui Clarke-Phillips,10734,The New Saints,2026,WAL1,0,Left-Back,0,England,1,0,0,0
+1138113,Zach Nolan,10734,The New Saints,2026,WAL1,23,Left-Back,21,Ireland,3,2,0,175
 1300893,Ellis McCue,10734,The New Saints,2026,WAL1,40,Centre-Back,18,England,3,0,0,0
-547041,Rhys Hughes,10734,The New Saints,2026,WAL1,20,Attacking Midfield,24,Wales,4,4,2,320
-614259,Dominic Corness,10734,The New Saints,2026,WAL1,4,Defensive Midfield,23,England,4,4,0,360
-525969,Daniel Williams,10734,The New Saints,2026,WAL1,14,Central Midfield,25,Wales,3,3,1,250
-516936,Ben Clark,10734,The New Saints,2026,WAL1,19,Central Midfield,25,England,1,1,0,10
+1581079,Rui Clarke-Phillips,10734,The New Saints,2026,WAL1,42,Left-Back,0,England,2,0,0,0
+547041,Rhys Hughes,10734,The New Saints,2026,WAL1,20,Attacking Midfield,24,Wales,5,5,3,393
+614259,Dominic Corness,10734,The New Saints,2026,WAL1,4,Defensive Midfield,23,England,5,5,1,450
+525969,Daniel Williams,10734,The New Saints,2026,WAL1,14,Central Midfield,25,Wales,4,4,1,340
+516936,Ben Clark,10734,The New Saints,2026,WAL1,19,Central Midfield,25,England,2,2,0,15
 427922,Leo Smith,10734,The New Saints,2026,WAL1,21,Central Midfield,28,Wales,4,4,0,272
-61586,Daniel Redmond,10734,The New Saints,2026,WAL1,10,Central Midfield,35,England,4,4,0,186
-431643,Rory Holden,10734,The New Saints,2026,WAL1,18,Central Midfield,29,Northern Ireland,4,3,1,66
+61586,Daniel Redmond,10734,The New Saints,2026,WAL1,10,Central Midfield,35,England,5,5,0,276
+431643,Rory Holden,10734,The New Saints,2026,WAL1,18,Central Midfield,29,Northern Ireland,5,4,1,83
 1091054,Dan Barton,10734,The New Saints,2026,WAL1,7,Attacking Midfield,21,England,0,0,0,0
 798864,Eoin Farrell,10734,The New Saints,2026,WAL1,15,Central Midfield,24,Ireland,1,1,0,90
-993228,Josh Lock,10734,The New Saints,2026,WAL1,34,Attacking Midfield,22,Wales,4,3,1,229
+993228,Josh Lock,10734,The New Saints,2026,WAL1,34,Attacking Midfield,22,Wales,5,4,3,297
 855283,Jack Nadin,10734,The New Saints,2026,WAL1,24,Attacking Midfield,21,England,0,0,0,0
-162823,Ryan Brobbel,10734,The New Saints,2026,WAL1,8,Left Winger,33,Northern Ireland,3,3,0,58
+162823,Ryan Brobbel,10734,The New Saints,2026,WAL1,8,Left Winger,33,Northern Ireland,4,4,0,75
 339861,Adam Wilson,10734,The New Saints,2026,WAL1,77,Right Winger,26,Kenya,0,0,0,0
-654173,Brad Young,10734,The New Saints,2026,WAL1,9,Centre-Forward,23,England,0,0,0,0
-407392,Jordan Williams,10734,The New Saints,2026,WAL1,17,Left Winger,33,England,4,4,0,279
-549572,Ben Wilson,10734,The New Saints,2026,WAL1,28,Centre-Forward,24,Northern Ireland,4,2,2,86
-975190,Isaac Jefferies,10734,The New Saints,2026,WAL1,37,Left Winger,21,Wales,4,4,0,141
-1243181,Louis Phillips,10734,The New Saints,2026,WAL1,26,Right Winger,20,Wales,0,0,0,0
-1204409,Lewis Wynne,10734,The New Saints,2026,WAL1,0,Left Winger,18,Wales,2,0,0,0
+654173,Brad Young,10734,The New Saints,2026,WAL1,9,Centre-Forward,23,England,1,1,0,5
+407392,Jordan Williams,10734,The New Saints,2026,WAL1,17,Left Winger,33,England,5,5,1,364
+549572,Ben Wilson,10734,The New Saints,2026,WAL1,28,Centre-Forward,24,Northern Ireland,5,3,2,108
+975190,Isaac Jefferies,10734,The New Saints,2026,WAL1,37,Left Winger,21,Wales,5,5,0,214
 1235574,Caleb Afful,10734,The New Saints,2026,WAL1,0,Centre-Forward,19,England,0,0,0,0
-939334,Ifan Knott,25232,Haverfordwest County,2026,WAL1,1,Goalkeeper,21,Wales,4,4,0,360
-803387,Luc Rees,25232,Haverfordwest County,2026,WAL1,31,Goalkeeper,23,Wales,4,1,0,1
-1225336,Lucas Myers,25232,Haverfordwest County,2026,WAL1,30,Goalkeeper,0,England,0,0,0,0
-670852,Jordan Hackett,25232,Haverfordwest County,2026,WAL1,19,Left-Back,22,England,3,1,0,45
-319290,Rhys Abbruzzese,25232,Haverfordwest County,2026,WAL1,3,Left-Back,28,Wales,4,4,0,360
-486732,Dylan Rees,25232,Haverfordwest County,2026,WAL1,2,Centre-Back,29,Wales,3,3,0,225
-754248,Alaric Jones,25232,Haverfordwest County,2026,WAL1,5,Centre-Back,25,Wales,0,0,0,0
-1439950,Jacob Bacon,25232,Haverfordwest County,2026,WAL1,6,Centre-Back,19,England,0,0,0,0
-195204,Kyle McCarthy,25232,Haverfordwest County,2026,WAL1,17,Centre-Back,33,Wales,3,3,0,270
-939319,Iori Humphreys,25232,Haverfordwest County,2026,WAL1,24,Right-Back,22,Wales,0,0,0,0
-1459162,Caiden Lewis,25232,Haverfordwest County,2026,WAL1,0,Centre-Back,17,England,1,0,0,0
-1122672,Ben Phillips,25232,Haverfordwest County,2026,WAL1,14,Centre-Back,18,Wales,4,4,0,224
-1086015,Jack Walker,25232,Haverfordwest County,2026,WAL1,25,Centre-Back,20,Scotland,2,2,0,76
-383383,Corey Shephard,25232,Haverfordwest County,2026,WAL1,8,Central Midfield,28,Wales,4,4,0,360
-746625,Dan Hawkins,25232,Haverfordwest County,2026,WAL1,10,Attacking Midfield,25,Wales,4,4,0,315
-391522,Greg Walters,25232,Haverfordwest County,2026,WAL1,18,Central Midfield,31,Wales,4,4,0,340
-340596,Clayton Green,25232,Haverfordwest County,2026,WAL1,29,Central Midfield,32,Wales,2,2,0,180
-1054124,Panashe Makwiramiti,25232,Haverfordwest County,2026,WAL1,11,Central Midfield,24,Zimbabwe,3,0,0,0
-878909,Kyle Kenniford,25232,Haverfordwest County,2026,WAL1,4,Central Midfield,21,Wales,4,4,0,294
-172216,Ricky Watts,25232,Haverfordwest County,2026,WAL1,7,Central Midfield,34,Wales,0,0,0,0
-1198669,Ashley Watkins,25232,Haverfordwest County,2026,WAL1,21,Central Midfield,19,Wales,0,0,0,0
-1550930,Cai Lewis,25232,Haverfordwest County,2026,WAL1,36,Midfield,0,Wales,2,0,0,0
-823075,Lewis Rees,25232,Haverfordwest County,2026,WAL1,9,Centre-Forward,24,Wales,3,3,0,205
-250741,Owain Jones,25232,Haverfordwest County,2026,WAL1,20,Centre-Forward,29,Wales,2,1,0,21
-824136,Jack Wilson,25232,Haverfordwest County,2026,WAL1,22,Left Winger,25,England,4,4,0,265
-823931,Ben Ahmun,25232,Haverfordwest County,2026,WAL1,28,Centre-Forward,34,Wales,4,4,0,245
-1370868,Will Hughes,25232,Haverfordwest County,2026,WAL1,23,Right Winger,19,Wales,4,4,0,92
-1424420,Hari Thomas,25232,Haverfordwest County,2026,WAL1,27,Centre-Forward,17,Wales,4,4,0,83
-1521243,Caden Fox,25232,Haverfordwest County,2026,WAL1,16,Left Winger,16,Wales,0,0,0,0
-1550931,Jayden Crawford,25232,Haverfordwest County,2026,WAL1,33,Attack,0,Wales,0,0,0,0
+1204409,Lewis Wynne,10734,The New Saints,2026,WAL1,41,Left Winger,18,Wales,2,0,0,0
 505040,Nathan Shepperd,10734,The New Saints,2025,WAL1,1,Goalkeeper,24,Wales,27,27,0,2430
 1002363,Jack Edwards,10734,The New Saints,2025,WAL1,30,Goalkeeper,19,England,5,5,0,387
 1363247,Bryn Owen,10734,The New Saints,2025,WAL1,38,Goalkeeper,18,Wales,32,1,0,59
@@ -1835,56 +1836,34 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 462113,Aramide Oteh,10734,The New Saints,2025,WAL1,0,Centre-Forward,26,England,5,5,0,61
 1114089,Tom Jones,10734,The New Saints,2025,WAL1,39,Left Winger,19,Wales,0,0,0,0
 1204409,Lewis Wynne,10734,The New Saints,2025,WAL1,0,Left Winger,17,Wales,4,0,0,0
-121267,Connor Roberts,22461,Caernarfon Town,2026,WAL1,1,Goalkeeper,33,Wales,4,4,0,360
-1190206,Hari Thomas,22461,Caernarfon Town,2026,WAL1,13,Goalkeeper,19,Wales,0,0,0,0
-1575918,Jac Williams,22461,Caernarfon Town,2026,WAL1,0,Goalkeeper,17,Wales,4,0,0,0
-342288,Ben Nash,22461,Caernarfon Town,2026,WAL1,16,Centre-Back,28,England,4,4,0,360
-479202,Ryan Sears,22461,Caernarfon Town,2026,WAL1,27,Centre-Back,27,Wales,4,4,0,360
-531288,Mathew Jones,22461,Caernarfon Town,2026,WAL1,3,Left-Back,27,Wales,4,4,0,213
-255163,Dominic Smith,22461,Caernarfon Town,2026,WAL1,15,Centre-Back,30,Wales,1,1,0,9
-748839,Phil Mooney,22461,Caernarfon Town,2026,WAL1,5,Centre-Back,35,England,3,1,0,1
-104685,Chris Marriott,22461,Caernarfon Town,2026,WAL1,23,Left-Back,36,England,4,3,0,165
-1292024,Caron Williams,22461,Caernarfon Town,2026,WAL1,54,Left-Back,18,Wales,0,0,0,0
-426158,Jordan Piggott,22461,Caernarfon Town,2026,WAL1,4,Centre-Back,27,England,4,4,0,351
-869891,Jake Canavan,22461,Caernarfon Town,2026,WAL1,6,Central Midfield,22,England,4,4,0,200
-426428,Paulo Mendes,22461,Caernarfon Town,2026,WAL1,7,Central Midfield,33,Portugal,3,3,0,81
-342195,Noah Edwards,22461,Caernarfon Town,2026,WAL1,14,Central Midfield,30,Wales,4,4,0,360
-267328,Danny Gosset,22461,Caernarfon Town,2026,WAL1,8,Central Midfield,31,Wales,4,4,1,288
-392378,Darren Thomas,22461,Caernarfon Town,2026,WAL1,10,Attacking Midfield,39,Wales,3,2,0,7
-1369563,Harri Wyn,22461,Caernarfon Town,2026,WAL1,0,Midfield,17,Wales,1,1,0,4
-918867,Zack Clarke,22461,Caernarfon Town,2026,WAL1,9,Centre-Forward,23,England,4,4,4,349
-456331,Sion Bradley,22461,Caernarfon Town,2026,WAL1,19,Left Winger,28,Wales,4,3,1,198
-52377,Adrian Cieslewicz,22461,Caernarfon Town,2026,WAL1,11,Left Winger,35,Poland,4,4,1,317
-337796,Offrande Zanzala,22461,Caernarfon Town,2026,WAL1,25,Centre-Forward,29,Congo,2,2,0,20
-1041292,Osian Evans,22461,Caernarfon Town,2026,WAL1,29,Centre-Forward,20,Wales,4,4,1,318
-1292025,Charlie Griffith,22461,Caernarfon Town,2026,WAL1,0,Left Winger,18,Wales,2,0,0,0
-1203727,Simba Nyamwanza,22461,Caernarfon Town,2026,WAL1,21,Left Winger,18,England,1,0,0,0
-1202540,Luke Murphy,22546,Colwyn Bay,2026,WAL1,45,Goalkeeper,18,Wales,0,0,0,0
-99972,Mark Halstead,22546,Colwyn Bay,2026,WAL1,1,Goalkeeper,35,England,4,4,0,360
-933658,Seb Osment,22546,Colwyn Bay,2026,WAL1,13,Goalkeeper,22,England,4,0,0,0
-728861,Dan Roberts,22546,Colwyn Bay,2026,WAL1,2,Centre-Back,26,Wales,4,2,0,99
-443989,Nathan Peate,22546,Colwyn Bay,2026,WAL1,4,Centre-Back,35,Wales,2,2,0,180
-244228,Lewis Sirrell,22546,Colwyn Bay,2026,WAL1,5,Centre-Back,32,England,4,4,0,360
-1162814,Sol Forde,22546,Colwyn Bay,2026,WAL1,6,Centre-Back,21,Wales,3,3,0,270
-886909,Issa Kargbo,22546,Colwyn Bay,2026,WAL1,12,Right-Back,24,Ireland,1,0,0,0
-198148,Ryan Astles,22546,Colwyn Bay,2026,WAL1,21,Centre-Back,32,England,3,3,0,270
-156575,Sam Hart,22546,Colwyn Bay,2026,WAL1,3,Centre-Back,34,Wales,2,1,0,73
-921348,Josh Williams,22546,Colwyn Bay,2026,WAL1,16,Central Midfield,22,Wales,2,2,0,163
-334705,Declan Poole,22546,Colwyn Bay,2026,WAL1,22,Right Midfield,30,England,4,4,0,310
-542456,George Hughes,22546,Colwyn Bay,2026,WAL1,24,Central Midfield,27,Wales,0,0,0,0
-824052,Callum Bratley,22546,Colwyn Bay,2026,WAL1,8,Left Midfield,31,England,4,4,0,360
-1095153,Ethan Roberts,22546,Colwyn Bay,2026,WAL1,17,Left Midfield,22,Wales,4,3,0,83
-287230,Aron Williams,22546,Colwyn Bay,2026,WAL1,20,Right Midfield,30,Wales,4,1,0,16
-139051,Aeron Edwards,22546,Colwyn Bay,2026,WAL1,23,Central Midfield,38,Wales,2,2,0,171
-798363,Uniss Kargbo,22546,Colwyn Bay,2026,WAL1,25,Central Midfield,24,Ireland,0,0,0,0
-1585914,Luca Moran,22546,Colwyn Bay,2026,WAL1,0,Midfield,0,Wales,1,0,0,0
-1515121,Dafi Rowlands,22546,Colwyn Bay,2026,WAL1,0,Central Midfield,18,Wales,1,0,0,0
-822917,Adam Davies,22546,Colwyn Bay,2026,WAL1,9,Centre-Forward,29,Wales,4,4,3,334
-456733,Jordan Davies,22546,Colwyn Bay,2026,WAL1,11,Centre-Forward,30,Wales,4,4,1,269
-279473,Louis Robles,22546,Colwyn Bay,2026,WAL1,10,Centre-Forward,29,England,4,4,0,360
-911923,Matty Hill,22546,Colwyn Bay,2026,WAL1,19,Right Winger,25,England,4,4,1,255
-340691,Jack Kenny,22546,Colwyn Bay,2026,WAL1,7,Centre-Forward,34,England,2,2,0,27
-1287300,Max McGoona,22546,Colwyn Bay,2026,WAL1,15,Left Winger,18,Wales,2,0,0,0
+1243180,Daniel Higgs,62026,Penybont FC,2026,WAL1,1,Goalkeeper,18,Wales,5,5,0,450
+719305,Alex Pennock,62026,Penybont FC,2026,WAL1,25,Goalkeeper,25,Wales,5,0,0,0
+1373372,Jay Price,62026,Penybont FC,2026,WAL1,0,Goalkeeper,17,Wales,2,0,0,0
+197910,Liam Shephard,62026,Penybont FC,2026,WAL1,32,Right-Back,31,Wales,5,5,0,450
+663248,Kai Ludvigsen,62026,Penybont FC,2026,WAL1,2,Centre-Back,22,Wales,0,0,0,0
+720265,Jac Clay,62026,Penybont FC,2026,WAL1,15,Centre-Back,22,Wales,1,1,0,24
+717104,Billy Borge,62026,Penybont FC,2026,WAL1,16,Centre-Back,30,Wales,0,0,0,0
+427868,Dan Jefferies,62026,Penybont FC,2026,WAL1,17,Centre-Back,27,Wales,2,1,0,8
+460255,Max Melbourne,62026,Penybont FC,2026,WAL1,3,Left-Back,27,England,5,5,1,450
+583993,Ethan Vaughan,62026,Penybont FC,2026,WAL1,33,Left-Back,23,Wales,5,5,0,274
+972879,Eduino Vaz,62026,Penybont FC,2026,WAL1,12,Left-Back,24,Guinea-Bissau,2,2,0,177
+921411,Morgan Weaver,62026,Penybont FC,2026,WAL1,18,Centre-Back,23,Wales,0,0,0,0
+504898,Mael Davies,62026,Penybont FC,2026,WAL1,6,Right Midfield,27,Wales,5,5,0,450
+747291,Owen Pritchard,62026,Penybont FC,2026,WAL1,8,Attacking Midfield,23,Wales,5,5,0,396
+527493,Ash Baker,62026,Penybont FC,2026,WAL1,21,Central Midfield,29,Wales,0,0,0,0
+1568010,Jamie Mashlan,62026,Penybont FC,2026,WAL1,0,Midfield,17,Wales,3,0,0,0
+809178,Tom Mehew,62026,Penybont FC,2026,WAL1,4,Central Midfield,25,England,5,5,4,450
+1069727,Marinho Manga,62026,Penybont FC,2026,WAL1,20,Defensive Midfield,26,Guinea-Bissau,5,5,0,390
+314266,Jonathan Leko,62026,Penybont FC,2026,WAL1,0,Right Winger,27,England,1,1,0,27
+717147,Nathan Wood,62026,Penybont FC,2026,WAL1,7,Left Winger,28,Wales,5,5,1,407
+754290,Noah Daley,62026,Penybont FC,2026,WAL1,11,Centre-Forward,24,Wales,4,4,1,32
+341295,Tyler Walker,62026,Penybont FC,2026,WAL1,23,Centre-Forward,29,England,5,5,0,91
+120761,Chris Venables,62026,Penybont FC,2026,WAL1,9,Centre-Forward,41,Wales,5,5,0,82
+924133,Ethan Cann,62026,Penybont FC,2026,WAL1,10,Centre-Forward,24,Wales,5,5,0,368
+1214065,Ioan Phillips,62026,Penybont FC,2026,WAL1,14,Centre-Forward,18,Wales,4,0,0,0
+67403,Owain Warlow,62026,Penybont FC,2026,WAL1,17,Left Winger,38,Wales,0,0,0,0
+1464358,Jacob Villacorta,62026,Penybont FC,2026,WAL1,0,Right Winger,18,Wales,1,0,0,0
+495950,Ryan Hill,62026,Penybont FC,2026,WAL1,19,Left Winger,28,England,5,5,1,426
 344013,Rhys Williams,22546,Colwyn Bay,2025,WAL1,1,Goalkeeper,27,Wales,12,6,0,540
 1202540,Luke Murphy,22546,Colwyn Bay,2025,WAL1,45,Goalkeeper,17,Wales,26,1,0,90
 1301745,Alex Brown,22546,Colwyn Bay,2025,WAL1,0,Goalkeeper,18,England,26,25,0,2250
@@ -1919,65 +1898,80 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 925034,Owen Davies,22546,Colwyn Bay,2025,WAL1,26,Centre-Forward,20,Wales,15,9,0,68
 1459229,Sam Parry,22546,Colwyn Bay,2025,WAL1,0,Centre-Forward,16,Wales,1,0,0,0
 1287300,Max McGoona,22546,Colwyn Bay,2025,WAL1,27,Left Winger,17,Wales,14,0,0,0
-1005846,Luke Armstrong,62026,Penybont FC,2025,WAL1,0,Goalkeeper,19,Wales,23,16,0,1395
-1243180,Daniel Higgs,62026,Penybont FC,2025,WAL1,0,Goalkeeper,17,Wales,7,6,0,514
-662240,Archie Matthews,62026,Penybont FC,2025,WAL1,24,Goalkeeper,23,England,20,12,0,971
-1310154,Charlie Clarke,62026,Penybont FC,2025,WAL1,0,Goalkeeper,17,Wales,4,0,0,0
-1373372,Jay Price,62026,Penybont FC,2025,WAL1,0,Goalkeeper,16,Wales,8,0,0,0
-1410522,Ayrton Best,62026,Penybont FC,2025,WAL1,0,Goalkeeper,21,Australia,4,0,0,0
-663248,Kai Ludvigsen,62026,Penybont FC,2025,WAL1,2,Centre-Back,21,Wales,13,13,0,870
-855259,Nathaniel Williams,62026,Penybont FC,2025,WAL1,4,Centre-Back,21,England,7,6,0,372
-723673,Joe Woodiwiss,62026,Penybont FC,2025,WAL1,5,Centre-Back,22,Wales,27,24,0,1859
-720265,Jac Clay,62026,Penybont FC,2025,WAL1,15,Centre-Back,21,Wales,16,16,1,662
-717104,Billy Borge,62026,Penybont FC,2025,WAL1,16,Centre-Back,29,Wales,28,24,0,1471
-564873,Jacob Jones,62026,Penybont FC,2025,WAL1,18,Left-Back,23,Wales,30,20,0,676
-41099,Mark Little,62026,Penybont FC,2025,WAL1,0,Centre-Back,36,England,18,12,0,788
-1062935,Gabe Kircough,62026,Penybont FC,2025,WAL1,0,Centre-Back,21,Wales,19,19,1,1643
-1310156,Jack Florence,62026,Penybont FC,2025,WAL1,0,Centre-Back,17,Wales,5,1,0,2
-1310160,Peter Coe,62026,Penybont FC,2025,WAL1,0,Defender,17,Wales,8,2,0,9
-504898,Mael Davies,62026,Penybont FC,2025,WAL1,6,Right Midfield,26,Wales,32,32,3,2872
-334959,Kane Owen,62026,Penybont FC,2025,WAL1,3,Left Midfield,30,Wales,31,29,0,2023
-747291,Owen Pritchard,62026,Penybont FC,2025,WAL1,8,Attacking Midfield,22,Wales,19,19,1,1489
-340596,Clayton Green,62026,Penybont FC,2025,WAL1,29,Central Midfield,31,Wales,31,31,2,2449
-527493,Ash Baker,62026,Penybont FC,2025,WAL1,21,Central Midfield,28,Wales,25,24,0,1640
-446116,Alexander Cvetkovic,62026,Penybont FC,2025,WAL1,33,Central Midfield,28,England,18,15,2,934
-747255,James Crole,62026,Penybont FC,2025,WAL1,0,Centre-Forward,21,Wales,17,17,11,1375
-717147,Nathan Wood,62026,Penybont FC,2025,WAL1,7,Left Winger,27,Wales,32,32,1,2693
-754290,Noah Daley,62026,Penybont FC,2025,WAL1,11,Centre-Forward,23,Wales,26,26,11,1665
-120761,Chris Venables,62026,Penybont FC,2025,WAL1,9,Centre-Forward,39,Wales,25,25,2,1593
-924133,Ethan Cann,62026,Penybont FC,2025,WAL1,10,Centre-Forward,22,Wales,9,9,0,724
-1214065,Ioan Phillips,62026,Penybont FC,2025,WAL1,14,Centre-Forward,17,Wales,32,20,3,628
-67403,Owain Warlow,62026,Penybont FC,2025,WAL1,17,Left Winger,37,Wales,19,8,1,165
-87117,Rhys Griffiths,62026,Penybont FC,2025,WAL1,0,Centre-Forward,45,Wales,1,0,0,0
-1319019,Jaxon Humphreys,62026,Penybont FC,2025,WAL1,0,Right Winger,16,Wales,4,1,0,1
-1464358,Jacob Villacorta,62026,Penybont FC,2025,WAL1,0,Right Winger,17,Wales,8,3,0,26
-1243180,Daniel Higgs,62026,Penybont FC,2026,WAL1,1,Goalkeeper,18,Wales,4,4,0,360
-719305,Alex Pennock,62026,Penybont FC,2026,WAL1,25,Goalkeeper,25,Wales,4,0,0,0
-1373372,Jay Price,62026,Penybont FC,2026,WAL1,0,Goalkeeper,17,Wales,2,0,0,0
-197910,Liam Shephard,62026,Penybont FC,2026,WAL1,32,Right-Back,31,Wales,4,4,0,360
-663248,Kai Ludvigsen,62026,Penybont FC,2026,WAL1,2,Centre-Back,22,Wales,0,0,0,0
-720265,Jac Clay,62026,Penybont FC,2026,WAL1,15,Centre-Back,22,Wales,1,1,0,24
-717104,Billy Borge,62026,Penybont FC,2026,WAL1,16,Centre-Back,30,Wales,0,0,0,0
-427868,Dan Jefferies,62026,Penybont FC,2026,WAL1,17,Centre-Back,27,Wales,1,1,0,8
-460255,Max Melbourne,62026,Penybont FC,2026,WAL1,3,Left-Back,27,England,4,4,1,360
-583993,Ethan Vaughan,62026,Penybont FC,2026,WAL1,33,Left-Back,23,Wales,4,4,0,184
-972879,Eduino Vaz,62026,Penybont FC,2026,WAL1,12,Left-Back,24,Guinea-Bissau,2,2,0,177
-921411,Morgan Weaver,62026,Penybont FC,2026,WAL1,18,Centre-Back,23,Wales,0,0,0,0
-504898,Mael Davies,62026,Penybont FC,2026,WAL1,6,Right Midfield,27,Wales,4,4,0,360
-747291,Owen Pritchard,62026,Penybont FC,2026,WAL1,8,Attacking Midfield,23,Wales,4,4,0,333
-527493,Ash Baker,62026,Penybont FC,2026,WAL1,21,Central Midfield,29,Wales,0,0,0,0
-1568010,Jamie Mashlan,62026,Penybont FC,2026,WAL1,0,Midfield,17,Wales,2,0,0,0
-809178,Tom Mehew,62026,Penybont FC,2026,WAL1,4,Central Midfield,25,England,4,4,3,360
-1069727,Marinho Manga,62026,Penybont FC,2026,WAL1,20,Defensive Midfield,26,Guinea-Bissau,4,4,0,327
-717147,Nathan Wood,62026,Penybont FC,2026,WAL1,7,Left Winger,28,Wales,4,4,1,317
-754290,Noah Daley,62026,Penybont FC,2026,WAL1,11,Centre-Forward,24,Wales,4,4,1,32
-341295,Tyler Walker,62026,Penybont FC,2026,WAL1,23,Centre-Forward,29,England,4,4,0,64
-120761,Chris Venables,62026,Penybont FC,2026,WAL1,9,Centre-Forward,41,Wales,4,4,0,55
-924133,Ethan Cann,62026,Penybont FC,2026,WAL1,10,Centre-Forward,24,Wales,4,4,0,305
-1214065,Ioan Phillips,62026,Penybont FC,2026,WAL1,14,Centre-Forward,18,Wales,3,0,0,0
-67403,Owain Warlow,62026,Penybont FC,2026,WAL1,17,Left Winger,38,Wales,0,0,0,0
-1464358,Jacob Villacorta,62026,Penybont FC,2026,WAL1,0,Right Winger,18,Wales,1,0,0,0
-495950,Ryan Hill,62026,Penybont FC,2026,WAL1,19,Left Winger,28,England,4,4,1,336
+121267,Connor Roberts,22461,Caernarfon Town,2026,WAL1,1,Goalkeeper,33,Wales,5,5,0,450
+1190206,Hari Thomas,22461,Caernarfon Town,2026,WAL1,13,Goalkeeper,19,Wales,1,0,0,0
+1575918,Jac Williams,22461,Caernarfon Town,2026,WAL1,0,Goalkeeper,17,Wales,4,0,0,0
+342288,Ben Nash,22461,Caernarfon Town,2026,WAL1,16,Centre-Back,28,England,5,5,0,450
+479202,Ryan Sears,22461,Caernarfon Town,2026,WAL1,27,Centre-Back,27,Wales,4,4,0,360
+531288,Mathew Jones,22461,Caernarfon Town,2026,WAL1,3,Left-Back,27,Wales,5,5,0,229
+255163,Dominic Smith,22461,Caernarfon Town,2026,WAL1,15,Centre-Back,30,Wales,2,1,0,9
+748839,Phil Mooney,22461,Caernarfon Town,2026,WAL1,5,Centre-Back,35,England,4,1,0,1
+104685,Chris Marriott,22461,Caernarfon Town,2026,WAL1,23,Left-Back,36,England,5,4,0,255
+1292024,Caron Williams,22461,Caernarfon Town,2026,WAL1,54,Left-Back,18,Wales,0,0,0,0
+426158,Jordan Piggott,22461,Caernarfon Town,2026,WAL1,4,Centre-Back,27,England,5,5,0,441
+869891,Jake Canavan,22461,Caernarfon Town,2026,WAL1,6,Central Midfield,22,England,5,5,0,274
+426428,Paulo Mendes,22461,Caernarfon Town,2026,WAL1,7,Central Midfield,33,Portugal,4,4,0,171
+342195,Noah Edwards,22461,Caernarfon Town,2026,WAL1,14,Central Midfield,30,Wales,5,5,1,450
+392378,Darren Thomas,22461,Caernarfon Town,2026,WAL1,0,Attacking Midfield,39,Wales,3,2,0,7
+267328,Danny Gosset,22461,Caernarfon Town,2026,WAL1,8,Central Midfield,31,Wales,4,4,1,288
+1369563,Harri Wyn,22461,Caernarfon Town,2026,WAL1,0,Midfield,17,Wales,2,1,0,4
+918867,Zack Clarke,22461,Caernarfon Town,2026,WAL1,9,Centre-Forward,23,England,5,5,7,423
+456331,Sion Bradley,22461,Caernarfon Town,2026,WAL1,19,Left Winger,28,Wales,5,4,2,272
+52377,Adrian Cieslewicz,22461,Caernarfon Town,2026,WAL1,11,Left Winger,35,Poland,5,5,1,407
+337796,Offrande Zanzala,22461,Caernarfon Town,2026,WAL1,25,Centre-Forward,29,Congo,3,3,0,36
+1041292,Osian Evans,22461,Caernarfon Town,2026,WAL1,29,Centre-Forward,20,Wales,5,5,1,408
+1292025,Charlie Griffith,22461,Caernarfon Town,2026,WAL1,0,Left Winger,18,Wales,2,0,0,0
+1203727,Simba Nyamwanza,22461,Caernarfon Town,2026,WAL1,21,Left Winger,18,England,2,1,0,16
+456807,Will Fuller,29221,Briton Ferry Llansawel,2026,WAL1,13,Goalkeeper,33,England,4,4,0,360
+162272,Rhys Wilson,29221,Briton Ferry Llansawel,2026,WAL1,1,Goalkeeper,34,Wales,1,1,0,90
+1574958,Dylan Gilpin,29221,Briton Ferry Llansawel,2026,WAL1,0,Goalkeeper,0,Wales,5,0,0,0
+209570,Alex Gammond,29221,Briton Ferry Llansawel,2026,WAL1,4,Centre-Back,32,Wales,5,5,0,440
+643938,Matt Chubb,29221,Briton Ferry Llansawel,2026,WAL1,5,Centre-Back,28,England,3,3,0,249
+314820,Keiran Williams,29221,Briton Ferry Llansawel,2026,WAL1,6,Centre-Back,29,Wales,1,1,0,11
+531253,Luke Cooper,29221,Briton Ferry Llansawel,2026,WAL1,15,Centre-Back,33,Wales,5,5,0,450
+564873,Jacob Jones,29221,Briton Ferry Llansawel,2026,WAL1,21,Left-Back,24,Wales,4,3,0,196
+732241,Luis Bates,29221,Briton Ferry Llansawel,2026,WAL1,2,Right-Back,23,Wales,5,5,0,366
+1186502,Dylan Packer,29221,Briton Ferry Llansawel,2026,WAL1,3,Left-Back,19,Wales,4,3,0,270
+715891,Ryan George,29221,Briton Ferry Llansawel,2026,WAL1,18,Right-Back,24,Wales,5,4,0,132
+504616,Tom Price,29221,Briton Ferry Llansawel,2026,WAL1,8,Central Midfield,26,Wales,5,5,0,450
+1186500,Ricky-Lee Owen,29221,Briton Ferry Llansawel,2026,WAL1,7,Central Midfield,19,Wales,5,5,0,450
+902411,Joseph Lloyd,29221,Briton Ferry Llansawel,2026,WAL1,12,Attacking Midfield,24,Wales,2,2,0,137
+1574959,Luke Salter,29221,Briton Ferry Llansawel,2026,WAL1,19,Attacking Midfield,21,Wales,5,3,0,101
+660858,Mal Nicholls,29221,Briton Ferry Llansawel,2026,WAL1,23,Central Midfield,23,Wales,1,0,0,0
+930772,Corey Hurford,29221,Briton Ferry Llansawel,2026,WAL1,11,Left Winger,22,Wales,4,4,0,222
+931828,Tom Walters,29221,Briton Ferry Llansawel,2026,WAL1,9,Centre-Forward,29,Wales,5,5,1,430
+667515,Ruben Davies,29221,Briton Ferry Llansawel,2026,WAL1,16,Centre-Forward,22,Wales,0,0,0,0
+1317395,Ollie Anderson,29221,Briton Ferry Llansawel,2026,WAL1,20,Centre-Forward,19,Wales,5,5,2,396
+623100,Sam Snaith,29221,Briton Ferry Llansawel,2026,WAL1,10,Centre-Forward,26,Wales,0,0,0,0
+623475,Tristan Jenkins,29221,Briton Ferry Llansawel,2026,WAL1,17,Left Winger,25,Wales,5,5,0,74
+139087,Luke Bowen,29221,Briton Ferry Llansawel,2026,WAL1,14,Centre-Forward,38,Wales,5,5,0,118
+1291451,Lowan Herdman,29221,Briton Ferry Llansawel,2026,WAL1,22,Left Winger,19,Wales,1,0,0,0
+1202540,Luke Murphy,22546,Colwyn Bay,2026,WAL1,45,Goalkeeper,18,Wales,0,0,0,0
+99972,Mark Halstead,22546,Colwyn Bay,2026,WAL1,1,Goalkeeper,35,England,5,5,0,450
+933658,Seb Osment,22546,Colwyn Bay,2026,WAL1,13,Goalkeeper,22,England,4,0,0,0
+1591330,Charlie Bubb,22546,Colwyn Bay,2026,WAL1,0,Goalkeeper,0,Wales,1,0,0,0
+728861,Dan Roberts,22546,Colwyn Bay,2026,WAL1,2,Centre-Back,26,Wales,5,3,0,133
+443989,Nathan Peate,22546,Colwyn Bay,2026,WAL1,4,Centre-Back,35,Wales,3,3,1,270
+244228,Lewis Sirrell,22546,Colwyn Bay,2026,WAL1,5,Centre-Back,32,England,4,4,0,360
+1162814,Sol Forde,22546,Colwyn Bay,2026,WAL1,6,Centre-Back,21,Wales,4,4,0,360
+886909,Issa Kargbo,22546,Colwyn Bay,2026,WAL1,12,Right-Back,24,Ireland,2,1,0,23
+198148,Ryan Astles,22546,Colwyn Bay,2026,WAL1,21,Centre-Back,32,England,4,4,0,326
+156575,Sam Hart,22546,Colwyn Bay,2026,WAL1,3,Centre-Back,34,Wales,3,2,0,163
+921348,Josh Williams,22546,Colwyn Bay,2026,WAL1,16,Central Midfield,22,Wales,3,3,0,242
+334705,Declan Poole,22546,Colwyn Bay,2026,WAL1,22,Right Midfield,30,England,5,5,0,377
+542456,George Hughes,22546,Colwyn Bay,2026,WAL1,24,Central Midfield,27,Wales,0,0,0,0
+824052,Callum Bratley,22546,Colwyn Bay,2026,WAL1,8,Left Midfield,31,England,5,5,0,416
+1095153,Ethan Roberts,22546,Colwyn Bay,2026,WAL1,17,Left Midfield,22,Wales,5,4,0,117
+287230,Aron Williams,22546,Colwyn Bay,2026,WAL1,20,Right Midfield,30,Wales,4,1,0,16
+139051,Aeron Edwards,22546,Colwyn Bay,2026,WAL1,23,Central Midfield,38,Wales,2,2,0,171
+1585914,Luca Moran,22546,Colwyn Bay,2026,WAL1,0,Midfield,0,Wales,1,0,0,0
+1515121,Dafi Rowlands,22546,Colwyn Bay,2026,WAL1,0,Central Midfield,18,Wales,1,0,0,0
+822917,Adam Davies,22546,Colwyn Bay,2026,WAL1,9,Centre-Forward,29,Wales,5,5,3,368
+456733,Jordan Davies,22546,Colwyn Bay,2026,WAL1,11,Centre-Forward,30,Wales,5,5,1,359
+279473,Louis Robles,22546,Colwyn Bay,2026,WAL1,10,Centre-Forward,29,England,5,5,0,416
+911923,Matty Hill,22546,Colwyn Bay,2026,WAL1,19,Right Winger,25,England,5,5,1,345
+340691,Jack Kenny,22546,Colwyn Bay,2026,WAL1,7,Centre-Forward,34,England,3,3,0,38
+1287300,Max McGoona,22546,Colwyn Bay,2026,WAL1,0,Left Winger,18,Wales,2,0,0,0
 456807,Will Fuller,29221,Briton Ferry Llansawel,2025,WAL1,13,Goalkeeper,31,England,32,31,0,2775
 162272,Rhys Wilson,29221,Briton Ferry Llansawel,2025,WAL1,1,Goalkeeper,33,Wales,25,2,0,105
 1194446,Zac Ferguson,29221,Briton Ferry Llansawel,2025,WAL1,0,Goalkeeper,18,Wales,4,0,0,0
@@ -1993,7 +1987,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1186502,Dylan Packer,29221,Briton Ferry Llansawel,2025,WAL1,21,Left-Back,18,Wales,31,16,0,640
 931825,Kris Evans,29221,Briton Ferry Llansawel,2025,WAL1,0,Centre-Back,28,Wales,12,10,0,33
 1305151,Harvey Chapman,29221,Briton Ferry Llansawel,2025,WAL1,0,Centre-Back,17,Wales,2,0,0,0
-1291451,Lowan Herdman,29221,Briton Ferry Llansawel,2025,WAL1,0,Left-Back,0,Wales,4,0,0,0
 1125273,Harley Lewis,29221,Briton Ferry Llansawel,2025,WAL1,0,Left-Back,0,Wales,1,0,0,0
 504616,Tom Price,29221,Briton Ferry Llansawel,2025,WAL1,8,Central Midfield,25,Wales,30,29,3,2501
 1069756,Mitchell Bates,29221,Briton Ferry Llansawel,2025,WAL1,0,Attacking Midfield,21,Wales,22,22,0,1802
@@ -2008,53 +2001,43 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 667515,Ruben Davies,29221,Briton Ferry Llansawel,2025,WAL1,16,Centre-Forward,21,Wales,12,12,6,970
 1317395,Ollie Anderson,29221,Briton Ferry Llansawel,2025,WAL1,20,Centre-Forward,18,Wales,30,23,6,1185
 623100,Sam Snaith,29221,Briton Ferry Llansawel,2025,WAL1,10,Centre-Forward,25,Wales,14,13,2,490
-1104092,Ellis Sage,29221,Briton Ferry Llansawel,2025,WAL1,0,Centre-Forward,18,Wales,16,16,0,509
+1104092,Ellis Sage,29221,Briton Ferry Llansawel,2025,WAL1,0,Right Winger,18,Wales,16,16,0,509
 197121,Jonathan Evans,29221,Briton Ferry Llansawel,2025,WAL1,0,Centre-Forward,32,Wales,5,3,0,104
 671057,Rio Dyer,29221,Briton Ferry Llansawel,2025,WAL1,7,Right Winger,21,Wales,27,22,1,503
-456807,Will Fuller,29221,Briton Ferry Llansawel,2026,WAL1,13,Goalkeeper,33,England,4,4,0,360
-162272,Rhys Wilson,29221,Briton Ferry Llansawel,2026,WAL1,1,Goalkeeper,34,Wales,0,0,0,0
-1574958,Dylan Gilpin,29221,Briton Ferry Llansawel,2026,WAL1,0,Goalkeeper,0,Wales,4,0,0,0
-209570,Alex Gammond,29221,Briton Ferry Llansawel,2026,WAL1,12,Centre-Back,31,Wales,4,4,0,350
-643938,Matt Chubb,29221,Briton Ferry Llansawel,2026,WAL1,5,Centre-Back,27,England,3,3,0,249
-314820,Keiran Williams,29221,Briton Ferry Llansawel,2026,WAL1,6,Centre-Back,29,Wales,1,1,0,11
-531253,Luke Cooper,29221,Briton Ferry Llansawel,2026,WAL1,15,Centre-Back,33,Wales,4,4,0,360
-564873,Jacob Jones,29221,Briton Ferry Llansawel,2026,WAL1,21,Left-Back,24,Wales,4,3,0,196
-732241,Luis Bates,29221,Briton Ferry Llansawel,2026,WAL1,2,Right-Back,23,Wales,4,4,0,276
-1186502,Dylan Packer,29221,Briton Ferry Llansawel,2026,WAL1,3,Left-Back,19,Wales,3,2,0,180
-715891,Ryan George,29221,Briton Ferry Llansawel,2026,WAL1,18,Right-Back,24,Wales,4,3,0,109
-504616,Tom Price,29221,Briton Ferry Llansawel,2026,WAL1,8,Central Midfield,26,Wales,4,4,0,360
-1186500,Ricky-Lee Owen,29221,Briton Ferry Llansawel,2026,WAL1,7,Central Midfield,19,Wales,4,4,0,360
-902411,Joseph Lloyd,29221,Briton Ferry Llansawel,2026,WAL1,12,Attacking Midfield,24,Wales,1,1,0,70
-1574959,Luke Salter,29221,Briton Ferry Llansawel,2026,WAL1,19,Attacking Midfield,21,Wales,4,2,0,87
-660858,Mal Nicholls,29221,Briton Ferry Llansawel,2026,WAL1,23,Central Midfield,23,Wales,1,0,0,0
-930772,Corey Hurford,29221,Briton Ferry Llansawel,2026,WAL1,11,Left Winger,22,Wales,3,3,0,155
-931828,Tom Walters,29221,Briton Ferry Llansawel,2026,WAL1,9,Centre-Forward,29,Wales,4,4,1,353
-667515,Ruben Davies,29221,Briton Ferry Llansawel,2026,WAL1,16,Centre-Forward,22,Wales,0,0,0,0
-1317395,Ollie Anderson,29221,Briton Ferry Llansawel,2026,WAL1,20,Centre-Forward,19,Wales,4,4,2,329
-623100,Sam Snaith,29221,Briton Ferry Llansawel,2026,WAL1,10,Centre-Forward,26,Wales,0,0,0,0
-623475,Tristan Jenkins,29221,Briton Ferry Llansawel,2026,WAL1,17,Left Winger,25,Wales,4,4,0,51
-139087,Luke Bowen,29221,Briton Ferry Llansawel,2026,WAL1,14,Centre-Forward,38,Wales,4,4,0,105
-496650,George Ratcliffe,1115,Barry Town United,2026,WAL1,31,Goalkeeper,25,Wales,4,4,0,360
-1085886,Joe Thomas,1115,Barry Town United,2026,WAL1,1,Goalkeeper,21,Wales,2,0,0,0
-531236,Callum Sainty,1115,Barry Town United,2026,WAL1,4,Centre-Back,30,Wales,2,2,1,180
-250730,Keston Davies,1115,Barry Town United,2026,WAL1,6,Centre-Back,29,Wales,0,0,0,0
-1159662,Ellis Williams,1115,Barry Town United,2026,WAL1,3,Left-Back,23,Wales,4,4,0,360
-134192,Will Richards,1115,Barry Town United,2026,WAL1,24,Centre-Back,34,Wales,2,2,0,180
-1324150,James Lester,1115,Barry Town United,2026,WAL1,16,Centre-Back,19,Trinidad and Tobago,4,2,0,180
-1479874,Keegan Saunders,1115,Barry Town United,2026,WAL1,66,Defender,18,Wales,4,0,0,0
-543617,Michael George,1115,Barry Town United,2026,WAL1,2,Right Midfield,27,Wales,3,3,0,270
-1069532,Owen Cuddihy,1115,Barry Town United,2026,WAL1,17,Left Midfield,21,Wales,4,4,0,360
-1099350,Dan Barton,1115,Barry Town United,2026,WAL1,8,Central Midfield,20,Wales,2,2,0,27
-212783,Theo Wharton,1115,Barry Town United,2026,WAL1,15,Central Midfield,31,St. Kitts & Nevis,4,4,0,360
-1211278,Josh Bernard,1115,Barry Town United,2026,WAL1,19,Central Midfield,20,Wales,4,3,0,270
-951331,Owen Brain,1115,Barry Town United,2026,WAL1,10,Attacking Midfield,22,England,3,3,3,243
-1008447,Jack Shaw,1115,Barry Town United,2026,WAL1,21,Attacking Midfield,21,England,4,4,1,150
-496646,Sion Spence,1115,Barry Town United,2026,WAL1,23,Central Midfield,25,Wales,4,4,0,360
-878885,Rhys Schwank,1115,Barry Town United,2026,WAL1,11,Right Winger,22,Wales,3,0,0,0
-1432072,Daniel Smith,1115,Barry Town United,2026,WAL1,14,Centre-Forward,30,England,4,4,2,82
-715048,Elliott Dugan,1115,Barry Town United,2026,WAL1,20,Centre-Forward,25,England,4,4,2,285
-1433797,Joseph Case,1115,Barry Town United,2026,WAL1,0,Centre-Forward,18,Wales,4,0,0,0
-1299602,Jadyn Crosbie,1115,Barry Town United,2026,WAL1,9,Centre-Forward,22,England,4,4,0,293
+1291451,Lowan Herdman,29221,Briton Ferry Llansawel,2025,WAL1,0,Left Winger,18,Wales,4,0,0,0
+121267,Connor Roberts,22461,Caernarfon Town,2025,WAL1,1,Goalkeeper,32,Wales,28,28,0,2520
+1190206,Hari Thomas,22461,Caernarfon Town,2025,WAL1,13,Goalkeeper,18,Wales,32,4,0,360
+1332564,Jack Williams,22461,Caernarfon Town,2025,WAL1,0,Goalkeeper,15,Wales,1,0,0,0
+479202,Ryan Sears,22461,Caernarfon Town,2025,WAL1,27,Centre-Back,26,Wales,28,28,2,2192
+911955,Morgan Owen,22461,Caernarfon Town,2025,WAL1,2,Right-Back,24,Wales,32,32,0,2345
+531288,Mathew Jones,22461,Caernarfon Town,2025,WAL1,3,Left-Back,25,Wales,24,24,2,1884
+255163,Dominic Smith,22461,Caernarfon Town,2025,WAL1,15,Centre-Back,29,Wales,27,25,2,2090
+748839,Phil Mooney,22461,Caernarfon Town,2025,WAL1,5,Centre-Back,34,England,31,27,7,1989
+558133,Kyle Harrison,22461,Caernarfon Town,2025,WAL1,24,Centre-Back,30,England,29,21,2,1462
+1292024,Caron Williams,22461,Caernarfon Town,2025,WAL1,33,Left-Back,17,Wales,14,3,0,175
+686692,Gruff John,22461,Caernarfon Town,2025,WAL1,0,Centre-Back,31,Wales,1,0,0,0
+1237660,Steffan Alford,22461,Caernarfon Town,2025,WAL1,0,Centre-Back,17,Wales,0,0,0,0
+993228,Josh Lock,22461,Caernarfon Town,2025,WAL1,0,Attacking Midfield,21,Wales,26,25,2,1777
+687383,Iwan Lewis,22461,Caernarfon Town,2025,WAL1,6,Central Midfield,32,Wales,30,30,2,2332
+426428,Paulo Mendes,22461,Caernarfon Town,2025,WAL1,7,Central Midfield,31,Portugal,18,18,2,1487
+267328,Danny Gosset,22461,Caernarfon Town,2025,WAL1,8,Central Midfield,30,Wales,23,22,4,1642
+392378,Darren Thomas,22461,Caernarfon Town,2025,WAL1,10,Attacking Midfield,38,Wales,28,20,1,526
+1329955,Osian Ellis,22461,Caernarfon Town,2025,WAL1,39,Central Midfield,18,Wales,26,13,0,321
+911746,Sam Downey,22461,Caernarfon Town,2025,WAL1,0,Central Midfield,31,England,19,18,1,1096
+1369561,Owen Roberts,22461,Caernarfon Town,2025,WAL1,0,Midfield,0,Wales,2,0,0,0
+1369563,Harri Wyn,22461,Caernarfon Town,2025,WAL1,0,Midfield,16,Wales,2,0,0,0
+1321094,Ioan Williams,22461,Caernarfon Town,2025,WAL1,0,Midfield,18,Wales,0,0,0,0
+918867,Zack Clarke,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,22,England,10,9,3,533
+456331,Sion Bradley,22461,Caernarfon Town,2025,WAL1,0,Left Winger,27,Wales,26,26,6,1978
+822917,Adam Davies,22461,Caernarfon Town,2025,WAL1,9,Centre-Forward,28,Wales,30,29,11,2093
+654173,Brad Young,22461,Caernarfon Town,2025,WAL1,14,Centre-Forward,22,England,10,10,3,642
+574497,Osebi Abadaki,22461,Caernarfon Town,2025,WAL1,0,Right Winger,34,Nigeria,17,15,1,604
+52377,Adrian Cieslewicz,22461,Caernarfon Town,2025,WAL1,22,Left Winger,34,Poland,7,7,1,596
+871851,Connor Evans,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,21,Wales,20,17,1,513
+1363243,Rio Owen,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,18,Wales,11,11,2,464
+1041292,Osian Evans,22461,Caernarfon Town,2025,WAL1,0,Centre-Forward,19,Wales,0,0,0,0
+1292025,Charlie Griffith,22461,Caernarfon Town,2025,WAL1,0,Left Winger,17,Wales,8,3,0,10
+1097146,Hari Roberts,22461,Caernarfon Town,2025,WAL1,0,Right Winger,18,Wales,9,1,0,1
 496650,George Ratcliffe,1115,Barry Town United,2025,WAL1,31,Goalkeeper,24,Wales,31,31,0,2790
 1085886,Joe Thomas,1115,Barry Town United,2025,WAL1,1,Goalkeeper,20,Wales,21,1,0,90
 1209379,Luke Masrani,1115,Barry Town United,2025,WAL1,35,Goalkeeper,18,Wales,14,0,0,0
@@ -2085,6 +2068,72 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1299554,Haydn Craven,1115,Barry Town United,2025,WAL1,0,Attack,0,Wales,1,0,0,0
 1433797,Joseph Case,1115,Barry Town United,2025,WAL1,0,Centre-Forward,17,Wales,10,1,0,3
 1209406,Joseph Beynon,1115,Barry Town United,2025,WAL1,16,Left Winger,18,Wales,12,1,0,3
+496650,George Ratcliffe,1115,Barry Town United,2026,WAL1,31,Goalkeeper,25,Wales,5,5,0,450
+1085886,Joe Thomas,1115,Barry Town United,2026,WAL1,1,Goalkeeper,21,Wales,2,0,0,0
+531236,Callum Sainty,1115,Barry Town United,2026,WAL1,4,Centre-Back,30,Wales,3,3,1,259
+250730,Keston Davies,1115,Barry Town United,2026,WAL1,6,Centre-Back,29,Wales,0,0,0,0
+1159662,Ellis Williams,1115,Barry Town United,2026,WAL1,3,Left-Back,23,Wales,5,5,0,450
+134192,Will Richards,1115,Barry Town United,2026,WAL1,24,Centre-Back,34,Wales,3,3,0,191
+1324150,James Lester,1115,Barry Town United,2026,WAL1,16,Centre-Back,19,Trinidad and Tobago,5,3,0,270
+1479874,Keegan Saunders,1115,Barry Town United,2026,WAL1,66,Defender,18,Wales,4,0,0,0
+543617,Michael George,1115,Barry Town United,2026,WAL1,2,Right Midfield,27,Wales,4,4,0,360
+1069532,Owen Cuddihy,1115,Barry Town United,2026,WAL1,17,Left Midfield,21,Wales,5,5,1,450
+1099350,Dan Barton,1115,Barry Town United,2026,WAL1,8,Central Midfield,20,Wales,3,3,0,33
+212783,Theo Wharton,1115,Barry Town United,2026,WAL1,15,Central Midfield,31,St. Kitts & Nevis,5,5,0,450
+1211278,Josh Bernard,1115,Barry Town United,2026,WAL1,19,Central Midfield,20,Wales,5,3,0,270
+951331,Owen Brain,1115,Barry Town United,2026,WAL1,10,Attacking Midfield,22,England,4,4,5,327
+1008447,Jack Shaw,1115,Barry Town United,2026,WAL1,21,Attacking Midfield,21,England,5,5,2,167
+496646,Sion Spence,1115,Barry Town United,2026,WAL1,23,Central Midfield,25,Wales,5,5,0,450
+878885,Rhys Schwank,1115,Barry Town United,2026,WAL1,11,Right Winger,22,Wales,3,0,0,0
+1432072,Daniel Smith,1115,Barry Town United,2026,WAL1,14,Centre-Forward,30,England,5,5,2,99
+715048,Elliott Dugan,1115,Barry Town United,2026,WAL1,20,Centre-Forward,25,England,5,5,2,358
+1433797,Joseph Case,1115,Barry Town United,2026,WAL1,0,Centre-Forward,18,Wales,4,0,0,0
+1299602,Jadyn Crosbie,1115,Barry Town United,2026,WAL1,9,Centre-Forward,22,England,5,5,0,366
+406923,Chris Renshaw,22499,Connah's Quay Nomads,2026,WAL1,1,Goalkeeper,28,England,5,5,0,450
+1511695,Danielius Liepa,22499,Connah's Quay Nomads,2026,WAL1,68,Goalkeeper,17,Lithuania,5,0,0,0
+352729,James Jones,22499,Connah's Quay Nomads,2026,WAL1,4,Centre-Back,29,Wales,5,5,0,450
+293162,Dan Cowan,22499,Connah's Quay Nomads,2026,WAL1,6,Centre-Back,30,England,1,1,0,19
+583258,Shane Flynn,22499,Connah's Quay Nomads,2026,WAL1,3,Left-Back,24,Ireland,1,0,0,0
+1469211,Alex Hughes,22499,Connah's Quay Nomads,2026,WAL1,5,Right-Back,19,Wales,5,5,0,387
+1030448,Harvey Morris,22499,Connah's Quay Nomads,2026,WAL1,15,Left-Back,20,Wales,0,0,0,0
+1212258,Rhys Watson,22499,Connah's Quay Nomads,2026,WAL1,21,Centre-Back,19,Wales,5,4,0,254
+671814,Joseph Ferguson,22499,Connah's Quay Nomads,2026,WAL1,22,Right-Back,23,England,5,5,3,450
+1091665,Callum West,22499,Connah's Quay Nomads,2026,WAL1,8,Attacking Midfield,20,England,5,5,2,449
+503684,Abdi Sharif,22499,Connah's Quay Nomads,2026,WAL1,23,Central Midfield,25,Somalia,5,5,0,253
+1212259,Freddie Redshaw,22499,Connah's Quay Nomads,2026,WAL1,27,Left Midfield,19,England,5,5,0,126
+1578212,Alfie Jones,22499,Connah's Quay Nomads,2026,WAL1,0,Midfield,0,Wales,2,1,0,4
+1396973,Miller Smith,22499,Connah's Quay Nomads,2026,WAL1,0,Midfield,0,Wales,1,0,0,0
+463839,Iwan Murray,22499,Connah's Quay Nomads,2026,WAL1,10,Attacking Midfield,26,Wales,4,4,2,264
+854615,Frankie Deane,22499,Connah's Quay Nomads,2026,WAL1,16,Central Midfield,21,Scotland,5,5,0,176
+1300886,Conor Partridge,22499,Connah's Quay Nomads,2026,WAL1,34,Defensive Midfield,18,Wales,5,4,0,189
+1453703,Jack Waterhouse,22499,Connah's Quay Nomads,2026,WAL1,37,Central Midfield,18,Wales,2,1,0,1
+556862,Harry Franklin,22499,Connah's Quay Nomads,2026,WAL1,9,Centre-Forward,26,Northern Ireland,5,5,3,450
+965743,Max Woodcock,22499,Connah's Quay Nomads,2026,WAL1,18,Centre-Forward,21,Scotland,5,5,0,280
+182858,Darren Stephenson,22499,Connah's Quay Nomads,2026,WAL1,7,Centre-Forward,33,Jamaica,4,3,0,65
+862949,Hussein Mehasseb,22499,Connah's Quay Nomads,2026,WAL1,99,Centre-Forward,24,Egypt,5,5,4,272
+854826,Michael Stone,22499,Connah's Quay Nomads,2026,WAL1,11,Left Winger,22,England,5,5,1,413
+965736,Jack Flint,31188,Flint Town United,2026,WAL1,1,Goalkeeper,21,England,5,5,0,450
+1574953,Jack Williams,31188,Flint Town United,2026,WAL1,0,Goalkeeper,0,England,1,0,0,0
+1477967,Zack Dempsey,31188,Flint Town United,2026,WAL1,13,Goalkeeper,17,England,4,0,0,0
+286806,Harrison McGahey,31188,Flint Town United,2026,WAL1,4,Centre-Back,30,England,3,3,0,270
+748927,Harry Owen,31188,Flint Town United,2026,WAL1,5,Centre-Back,23,Wales,5,5,0,450
+728736,Lee Jonas,31188,Flint Town United,2026,WAL1,19,Centre-Back,22,England,4,4,0,333
+1422737,Harry Dean,31188,Flint Town United,2026,WAL1,2,Right-Back,20,Wales,5,4,1,280
+922670,Charlie Wilson,31188,Flint Town United,2026,WAL1,0,Centre-Back,21,England,0,0,0,0
+1564625,Ben Woods,31188,Flint Town United,2026,WAL1,11,Left-Back,29,England,3,0,0,0
+966348,Namory Kane,31188,Flint Town United,2026,WAL1,16,Centre-Back,22,England,5,5,0,383
+1287281,Levi Morrison,31188,Flint Town United,2026,WAL1,18,Right-Back,17,Wales,5,0,0,0
+640229,Jack Thorn,31188,Flint Town United,2026,WAL1,6,Defensive Midfield,25,England,3,2,0,180
+716104,Lassana Mendes,31188,Flint Town United,2026,WAL1,7,Central Midfield,33,Guinea-Bissau,5,5,1,387
+977175,Ben Hughes,31188,Flint Town United,2026,WAL1,8,Attacking Midfield,21,Wales,5,5,0,427
+1049936,Mikey Burke,31188,Flint Town United,2026,WAL1,3,Left Midfield,24,England,5,5,0,350
+1396405,Lucian Morris,31188,Flint Town United,2026,WAL1,0,Midfield,17,Wales,1,0,0,0
+1578182,Jack Coll,31188,Flint Town United,2026,WAL1,15,Midfield,0,Wales,4,1,0,7
+924628,Elliott Reeves,31188,Flint Town United,2026,WAL1,0,Centre-Forward,29,England,0,0,0,0
+797358,Tunde Owolabi,31188,Flint Town United,2026,WAL1,9,Centre-Forward,31,Belgium,5,5,1,379
+725228,Joe Malkin,31188,Flint Town United,2026,WAL1,10,Centre-Forward,28,England,5,5,2,296
+534206,Temi Ajibola,31188,Flint Town United,2026,WAL1,17,Centre-Forward,25,Italy,5,5,0,330
+952653,Isaac Modi,31188,Flint Town United,2026,WAL1,23,Right Winger,22,England,5,5,0,428
 1028958,Kit Margetson,22499,Connah's Quay Nomads,2025,WAL1,0,Goalkeeper,18,Wales,31,31,0,2790
 1511695,Danielius Liepa,22499,Connah's Quay Nomads,2025,WAL1,0,Goalkeeper,16,Lithuania,2,0,0,0
 1280899,Ryley Berry,22499,Connah's Quay Nomads,2025,WAL1,35,Goalkeeper,17,Wales,31,1,0,90
@@ -2098,20 +2147,20 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1230797,Joe Bennett,22499,Connah's Quay Nomads,2025,WAL1,0,Centre-Back,17,England,3,2,0,23
 1030448,Harvey Morris,22499,Connah's Quay Nomads,2025,WAL1,15,Left-Back,19,Wales,0,0,0,0
 547041,Rhys Hughes,22499,Connah's Quay Nomads,2025,WAL1,17,Attacking Midfield,23,Wales,30,30,14,2260
+1091665,Callum West,22499,Connah's Quay Nomads,2025,WAL1,8,Attacking Midfield,19,England,30,30,9,2077
 987070,Jacob Cook,22499,Connah's Quay Nomads,2025,WAL1,0,Central Midfield,18,Wales,31,29,3,2399
 342195,Noah Edwards,22499,Connah's Quay Nomads,2025,WAL1,14,Central Midfield,29,Wales,28,28,3,2399
 334705,Declan Poole,22499,Connah's Quay Nomads,2025,WAL1,22,Right Midfield,29,England,24,24,2,2007
 824052,Callum Bratley,22499,Connah's Quay Nomads,2025,WAL1,11,Left Midfield,30,England,25,25,2,1506
 503684,Abdi Sharif,22499,Connah's Quay Nomads,2025,WAL1,23,Central Midfield,24,Somalia,22,22,1,1445
+1212259,Freddie Redshaw,22499,Connah's Quay Nomads,2025,WAL1,27,Left Midfield,18,England,12,9,0,354
 1176127,Jayden Tang,22499,Connah's Quay Nomads,2025,WAL1,0,Attacking Midfield,18,England,2,0,0,0
 1182124,Mason Parry,22499,Connah's Quay Nomads,2025,WAL1,0,Defensive Midfield,17,Wales,1,0,0,0
-1453703,Jack Waterhouse,22499,Connah's Quay Nomads,2025,WAL1,0,Midfield,17,Wales,12,3,0,13
-1300886,Conor Partridge,22499,Connah's Quay Nomads,2025,WAL1,0,Central Midfield,17,Wales,5,4,0,121
+1453703,Jack Waterhouse,22499,Connah's Quay Nomads,2025,WAL1,0,Central Midfield,17,Wales,12,3,0,13
+1300886,Conor Partridge,22499,Connah's Quay Nomads,2025,WAL1,0,Defensive Midfield,17,Wales,5,4,0,121
 1032850,Brad Barnes,22499,Connah's Quay Nomads,2025,WAL1,0,Central Midfield,19,England,0,0,0,0
 556862,Harry Franklin,22499,Connah's Quay Nomads,2025,WAL1,12,Centre-Forward,25,Northern Ireland,27,27,13,1829
-1091665,Callum West,22499,Connah's Quay Nomads,2025,WAL1,8,Right Winger,19,England,30,30,9,2077
 965743,Max Woodcock,22499,Connah's Quay Nomads,2025,WAL1,18,Centre-Forward,19,Scotland,29,28,5,1166
-1212259,Freddie Redshaw,22499,Connah's Quay Nomads,2025,WAL1,27,Centre-Forward,18,England,12,9,0,354
 340691,Jack Kenny,22499,Connah's Quay Nomads,2025,WAL1,7,Centre-Forward,33,England,15,12,3,677
 1099543,Andrew Buah,22499,Connah's Quay Nomads,2025,WAL1,19,Centre-Forward,19,England,6,2,0,25
 1176125,Tyler Berry,22499,Connah's Quay Nomads,2025,WAL1,0,Centre-Forward,19,Wales,0,0,0,0
@@ -2120,50 +2169,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1176845,Eddie Servuts,22499,Connah's Quay Nomads,2025,WAL1,0,Centre-Forward,21,England,1,1,0,31
 1300885,James Hughes,22499,Connah's Quay Nomads,2025,WAL1,0,Centre-Forward,17,Wales,8,2,0,10
 1538466,Tom Malcolm,22499,Connah's Quay Nomads,2025,WAL1,0,Attack,0,England,1,0,0,0
-406923,Chris Renshaw,22499,Connah's Quay Nomads,2026,WAL1,1,Goalkeeper,28,England,4,4,0,360
-1511695,Danielius Liepa,22499,Connah's Quay Nomads,2026,WAL1,68,Goalkeeper,17,Lithuania,4,0,0,0
-352729,James Jones,22499,Connah's Quay Nomads,2026,WAL1,4,Centre-Back,29,Wales,4,4,0,360
-293162,Dan Cowan,22499,Connah's Quay Nomads,2026,WAL1,6,Centre-Back,30,England,0,0,0,0
-583258,Shane Flynn,22499,Connah's Quay Nomads,2026,WAL1,3,Left-Back,24,Ireland,1,0,0,0
-1469211,Alex Hughes,22499,Connah's Quay Nomads,2026,WAL1,5,Right-Back,19,Wales,4,4,0,316
-1030448,Harvey Morris,22499,Connah's Quay Nomads,2026,WAL1,15,Left-Back,20,Wales,0,0,0,0
-1212258,Rhys Watson,22499,Connah's Quay Nomads,2026,WAL1,21,Centre-Back,19,Wales,4,3,0,183
-671814,Joseph Ferguson,22499,Connah's Quay Nomads,2026,WAL1,22,Right-Back,23,England,4,4,3,360
-503684,Abdi Sharif,22499,Connah's Quay Nomads,2026,WAL1,23,Central Midfield,25,Somalia,4,4,0,163
-1578212,Alfie Jones,22499,Connah's Quay Nomads,2026,WAL1,0,Midfield,0,Wales,2,1,0,4
-1396973,Miller Smith,22499,Connah's Quay Nomads,2026,WAL1,0,Midfield,0,Wales,1,0,0,0
-463839,Iwan Murray,22499,Connah's Quay Nomads,2026,WAL1,10,Attacking Midfield,26,Wales,3,3,0,174
-854615,Frankie Deane,22499,Connah's Quay Nomads,2026,WAL1,16,Central Midfield,21,Scotland,4,4,0,105
-1300886,Conor Partridge,22499,Connah's Quay Nomads,2026,WAL1,34,Central Midfield,18,Wales,4,3,0,170
-1453703,Jack Waterhouse,22499,Connah's Quay Nomads,2026,WAL1,37,Midfield,18,Wales,2,1,0,1
-556862,Harry Franklin,22499,Connah's Quay Nomads,2026,WAL1,9,Centre-Forward,26,Northern Ireland,4,4,3,360
-1091665,Callum West,22499,Connah's Quay Nomads,2026,WAL1,8,Right Winger,20,England,4,4,1,360
-965743,Max Woodcock,22499,Connah's Quay Nomads,2026,WAL1,18,Centre-Forward,21,Scotland,4,4,0,261
-182858,Darren Stephenson,22499,Connah's Quay Nomads,2026,WAL1,7,Centre-Forward,33,Jamaica,3,3,0,65
-1212259,Freddie Redshaw,22499,Connah's Quay Nomads,2026,WAL1,27,Centre-Forward,19,England,4,4,0,107
-862949,Hussein Mehasseb,22499,Connah's Quay Nomads,2026,WAL1,99,Centre-Forward,24,Egypt,4,4,4,271
-854826,Michael Stone,22499,Connah's Quay Nomads,2026,WAL1,11,Left Winger,22,England,4,4,1,342
-965736,Jack Flint,31188,Flint Town United,2026,WAL1,1,Goalkeeper,21,England,4,4,0,360
-1574953,Jack Williams,31188,Flint Town United,2026,WAL1,0,Goalkeeper,0,England,1,0,0,0
-1477967,Zack Dempsey,31188,Flint Town United,2026,WAL1,13,Goalkeeper,16,England,3,0,0,0
-286806,Harrison McGahey,31188,Flint Town United,2026,WAL1,4,Centre-Back,30,England,3,3,0,270
-748927,Harry Owen,31188,Flint Town United,2026,WAL1,5,Centre-Back,23,Wales,4,4,0,360
-728736,Lee Jonas,31188,Flint Town United,2026,WAL1,19,Centre-Back,22,England,3,3,0,243
-1422737,Harry Dean,31188,Flint Town United,2026,WAL1,2,Right-Back,20,Wales,4,3,1,270
-1564625,Ben Woods,31188,Flint Town United,2026,WAL1,11,Left-Back,29,England,3,0,0,0
-966348,Namory Kane,31188,Flint Town United,2026,WAL1,16,Centre-Back,22,England,4,4,0,293
-1287281,Levi Morrison,31188,Flint Town United,2026,WAL1,18,Right-Back,17,Wales,4,0,0,0
-640229,Jack Thorn,31188,Flint Town United,2026,WAL1,6,Defensive Midfield,25,England,2,1,0,90
-716104,Lassana Mendes,31188,Flint Town United,2026,WAL1,7,Central Midfield,33,Guinea-Bissau,4,4,0,297
-977175,Ben Hughes,31188,Flint Town United,2026,WAL1,8,Attacking Midfield,21,Wales,4,4,0,337
-1049936,Mikey Burke,31188,Flint Town United,2026,WAL1,3,Left Midfield,24,England,4,4,0,270
-1396405,Lucian Morris,31188,Flint Town United,2026,WAL1,0,Midfield,17,Wales,1,0,0,0
-1578182,Jack Coll,31188,Flint Town United,2026,WAL1,15,Midfield,0,Wales,3,1,0,7
-924628,Elliott Reeves,31188,Flint Town United,2026,WAL1,0,Centre-Forward,29,England,0,0,0,0
-797358,Tunde Owolabi,31188,Flint Town United,2026,WAL1,9,Centre-Forward,31,Belgium,4,4,1,334
-725228,Joe Malkin,31188,Flint Town United,2026,WAL1,10,Centre-Forward,28,England,4,4,2,251
-534206,Temi Ajibola,31188,Flint Town United,2026,WAL1,17,Centre-Forward,25,Italy,4,4,0,240
-952653,Isaac Modi,31188,Flint Town United,2026,WAL1,23,Right Winger,22,England,4,4,0,338
 965736,Jack Flint,31188,Flint Town United,2025,WAL1,1,Goalkeeper,20,England,31,30,0,2700
 599976,Dawid Szczepaniak,31188,Flint Town United,2025,WAL1,13,Goalkeeper,25,Poland,31,2,0,180
 1477967,Zack Dempsey,31188,Flint Town United,2025,WAL1,0,Goalkeeper,15,England,2,0,0,0
@@ -2195,29 +2200,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 893997,Cameron Ferguson,31188,Flint Town United,2025,WAL1,0,Centre-Forward,22,Scotland,16,11,0,172
 1313573,Kenneth Imariagbe,31188,Flint Town United,2025,WAL1,0,Centre-Forward,18,Italy,15,9,0,105
 1488311,Alex Lear,31188,Flint Town United,2025,WAL1,0,Centre-Forward,16,England,1,0,0,0
-1352564,Arron Davies,53152,Cardiff Metropolitan University,2026,WAL1,1,Goalkeeper,19,England,4,4,0,360
-1360862,Will Howard,53152,Cardiff Metropolitan University,2026,WAL1,13,Goalkeeper,19,England,4,0,0,0
-623519,CJ Craven,53152,Cardiff Metropolitan University,2026,WAL1,8,Centre-Back,25,Wales,4,4,0,354
-67215,James Clarke,53152,Cardiff Metropolitan University,2026,WAL1,5,Centre-Back,36,England,4,4,1,257
-122842,Joel Edwards,53152,Cardiff Metropolitan University,2026,WAL1,3,Centre-Back,35,England,1,1,0,90
-972432,Toby Raison,53152,Cardiff Metropolitan University,2026,WAL1,33,Centre-Back,24,England,4,4,0,328
-821519,Jack Veale,53152,Cardiff Metropolitan University,2026,WAL1,4,Centre-Back,23,England,4,4,0,360
-1450301,Tom English,53152,Cardiff Metropolitan University,2026,WAL1,2,Right-Back,18,England,4,4,0,109
-1561424,Spencer Dymond-Hall,53152,Cardiff Metropolitan University,2026,WAL1,14,Left-Back,21,England,4,4,0,360
-1437263,Mitch Ford,53152,Cardiff Metropolitan University,2026,WAL1,21,Left-Back,19,Wales,0,0,0,0
-1353019,Jack Hooper,53152,Cardiff Metropolitan University,2026,WAL1,23,Centre-Back,19,England,1,1,0,45
-496649,Ryan Reynolds,53152,Cardiff Metropolitan University,2026,WAL1,6,Central Midfield,25,Wales,3,3,1,189
-456838,Eliot Evans,53152,Cardiff Metropolitan University,2026,WAL1,7,Attacking Midfield,34,Wales,0,0,0,0
-1045312,Harri John,53152,Cardiff Metropolitan University,2026,WAL1,20,Central Midfield,20,Wales,4,3,0,150
-998912,Bailey Gaughan,53152,Cardiff Metropolitan University,2026,WAL1,12,Defensive Midfield,23,New Zealand,4,4,0,110
-121831,Aaron Wildig,53152,Cardiff Metropolitan University,2026,WAL1,24,Central Midfield,34,England,3,3,0,134
-1284831,Myles McKenzie,53152,Cardiff Metropolitan University,2026,WAL1,0,Midfield,19,Wales,3,2,0,66
-1365756,Ollie Good,53152,Cardiff Metropolitan University,2026,WAL1,26,Central Midfield,18,Wales,2,0,0,0
-542458,Lifumpa Mwandwe,53152,Cardiff Metropolitan University,2026,WAL1,11,Left Winger,25,England,4,4,1,338
-1069757,Jasper Payne,53152,Cardiff Metropolitan University,2026,WAL1,9,Centre-Forward,21,Wales,4,4,4,338
-531229,Sam Jones,53152,Cardiff Metropolitan University,2026,WAL1,10,Right Winger,27,Wales,4,4,1,306
-1331063,Harrison Matthews,53152,Cardiff Metropolitan University,2026,WAL1,29,Centre-Forward,19,Wales,4,2,0,22
-1437266,Jack Block,53152,Cardiff Metropolitan University,2026,WAL1,0,Right Winger,18,Wales,3,0,0,0
 927716,Morgan Davies,50598,Cambrian United,2025,WAL1,1,Goalkeeper,27,Wales,0,0,0,0
 1156846,Corey Foggarty,50598,Cambrian United,2025,WAL1,0,Goalkeeper,18,Wales,0,0,0,0
 1237798,Ollie Withers,50598,Cambrian United,2025,WAL1,0,Goalkeeper,17,Wales,0,0,0,0
@@ -2238,66 +2220,57 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1069907,Alex Bonthron,50598,Cambrian United,2025,WAL1,11,Centre-Forward,31,Wales,0,0,0,0
 1041696,Liam Eason,50598,Cambrian United,2025,WAL1,10,Centre-Forward,27,Wales,0,0,0,0
 550677,Tom Hillman,50598,Cambrian United,2025,WAL1,19,Left Winger,24,Wales,0,0,0,0
-1097141,Sam Seager,53152,Cardiff Metropolitan University,2025,WAL1,13,Goalkeeper,18,Wales,32,14,0,1219
-1006407,Ewan Griffiths,53152,Cardiff Metropolitan University,2025,WAL1,0,Goalkeeper,19,Wales,9,9,0,810
-344001,Kelland Absalom,53152,Cardiff Metropolitan University,2025,WAL1,1,Goalkeeper,27,Wales,18,10,0,846
-623519,CJ Craven,53152,Cardiff Metropolitan University,2025,WAL1,16,Centre-Back,24,Wales,32,32,3,2880
-1458000,Sam Richards,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,25,Wales,10,10,0,830
-643938,Matt Chubb,53152,Cardiff Metropolitan University,2025,WAL1,2,Centre-Back,26,England,27,26,3,2125
-291286,Liam Walsh,53152,Cardiff Metropolitan University,2025,WAL1,4,Right-Back,28,Wales,27,19,0,1299
-1069538,Jake Morris,53152,Cardiff Metropolitan University,2025,WAL1,14,Left-Back,20,Wales,27,20,2,1468
-67215,James Clarke,53152,Cardiff Metropolitan University,2025,WAL1,15,Centre-Back,35,England,2,2,0,180
-615966,Barney Soady,53152,Cardiff Metropolitan University,2025,WAL1,21,Left-Back,23,Wales,26,20,1,1486
-122842,Joel Edwards,53152,Cardiff Metropolitan University,2025,WAL1,3,Centre-Back,33,England,23,21,1,1780
-972432,Toby Raison,53152,Cardiff Metropolitan University,2025,WAL1,33,Centre-Back,23,England,9,7,0,541
-1160446,Gruff Morgan,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,20,Wales,9,5,0,353
-1097142,Brogan Popham,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,17,Wales,6,3,0,121
-1291460,Josh Stephens,53152,Cardiff Metropolitan University,2025,WAL1,0,Left-Back,18,Wales,5,1,0,5
-496649,Ryan Reynolds,53152,Cardiff Metropolitan University,2025,WAL1,6,Central Midfield,24,Wales,25,25,3,2198
-846848,Dixon Kabongo,53152,Cardiff Metropolitan University,2025,WAL1,8,Central Midfield,21,Wales,30,28,0,1956
-456838,Eliot Evans,53152,Cardiff Metropolitan University,2025,WAL1,7,Attacking Midfield,33,Wales,24,22,1,1233
-1045312,Harri John,53152,Cardiff Metropolitan University,2025,WAL1,20,Central Midfield,19,Wales,27,16,0,873
-1139482,Riley Lonergan,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,18,Wales,14,6,0,77
-1095599,Matt Richards,53152,Cardiff Metropolitan University,2025,WAL1,0,Defensive Midfield,22,Wales,2,0,0,0
-1082278,Osian Rees,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,18,Wales,13,0,0,0
-1365756,Ollie Good,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,17,Wales,5,3,0,103
-1172029,Harlan Perry,53152,Cardiff Metropolitan University,2025,WAL1,0,Defensive Midfield,17,Wales,4,1,0,29
-823075,Lewis Rees,53152,Cardiff Metropolitan University,2025,WAL1,9,Centre-Forward,23,Wales,26,24,3,1193
-542458,Lifumpa Mwandwe,53152,Cardiff Metropolitan University,2025,WAL1,19,Left Winger,24,England,32,32,8,2793
-531229,Sam Jones,53152,Cardiff Metropolitan University,2025,WAL1,10,Right Winger,26,Wales,25,24,4,1776
-1069757,Jasper Payne,53152,Cardiff Metropolitan University,2025,WAL1,17,Centre-Forward,20,Wales,30,29,7,1942
-846846,Jonah Williams,53152,Cardiff Metropolitan University,2025,WAL1,22,Left Winger,20,Wales,10,6,0,89
-1331063,Harrison Matthews,53152,Cardiff Metropolitan University,2025,WAL1,29,Centre-Forward,18,Wales,15,5,0,45
-1058828,Dan John,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Forward,19,Wales,0,0,0,0
-456844,Adam Roscrow,53152,Cardiff Metropolitan University,2025,WAL1,11,Centre-Forward,30,Wales,25,24,6,1391
-1526664,Max Sweetman,53152,Cardiff Metropolitan University,2025,WAL1,0,Attack,0,Wales,4,0,0,0
-344001,Kelland Absalom,50598,Cambrian United,2026,WAL1,1,Goalkeeper,28,Wales,4,3,0,270
+344001,Kelland Absalom,50598,Cambrian United,2026,WAL1,1,Goalkeeper,28,Wales,5,4,0,360
 927716,Morgan Davies,50598,Cambrian United,2026,WAL1,22,Goalkeeper,28,Wales,1,1,0,90
-1481518,Mason Morgan,50598,Cambrian United,2026,WAL1,0,Goalkeeper,17,Wales,1,0,0,0
-1352845,Sam Jones,50598,Cambrian United,2026,WAL1,0,Goalkeeper,18,Wales,1,0,0,0
-1069538,Jake Morris,50598,Cambrian United,2026,WAL1,14,Left-Back,21,Wales,4,4,0,235
-806431,Harrison Bright,50598,Cambrian United,2026,WAL1,40,Right-Back,22,Wales,2,2,0,38
-889783,Kyle Jones,50598,Cambrian United,2026,WAL1,5,Centre-Back,29,Wales,4,3,0,270
+1481518,Mason Morgan,50598,Cambrian United,2026,WAL1,0,Goalkeeper,17,Wales,2,0,0,0
+1352845,Sam Jones,50598,Cambrian United,2026,WAL1,22,Goalkeeper,18,Wales,1,0,0,0
+1069538,Jake Morris,50598,Cambrian United,2026,WAL1,14,Left-Back,21,Wales,5,5,0,325
+806431,Harrison Bright,50598,Cambrian United,2026,WAL1,40,Right-Back,22,Wales,3,3,0,66
+889783,Kyle Jones,50598,Cambrian United,2026,WAL1,5,Centre-Back,29,Wales,5,4,0,348
 1082274,Josh Beecher,50598,Cambrian United,2026,WAL1,15,Left-Back,20,Wales,2,2,0,123
 939138,Jarrad Wright,50598,Cambrian United,2026,WAL1,31,Centre-Back,33,Wales,2,1,0,90
 583996,Taylor Jones,50598,Cambrian United,2026,WAL1,2,Right-Back,23,Wales,4,0,0,0
 931488,Danny Birch,50598,Cambrian United,2026,WAL1,3,Left-Back,28,Wales,0,0,0,0
-623063,Jay Woodford,50598,Cambrian United,2026,WAL1,8,Centre-Back,26,Wales,4,4,1,360
-889784,Cam Strinati,50598,Cambrian United,2026,WAL1,12,Left-Back,33,Wales,4,4,0,360
-342194,Kieran Lewis,50598,Cambrian United,2026,WAL1,0,Central Midfield,33,Wales,1,0,0,0
-173155,Ashley Evans,50598,Cambrian United,2026,WAL1,4,Central Midfield,37,Wales,4,4,0,356
-667501,Jack Karadoğan,50598,Cambrian United,2026,WAL1,20,Central Midfield,22,Wales,2,2,0,35
+623063,Jay Woodford,50598,Cambrian United,2026,WAL1,8,Centre-Back,26,Wales,5,5,1,450
+889784,Cam Strinati,50598,Cambrian United,2026,WAL1,12,Left-Back,33,Wales,5,5,0,450
+173155,Ashley Evans,50598,Cambrian United,2026,WAL1,4,Central Midfield,37,Wales,5,5,0,418
+342194,Kieran Lewis,50598,Cambrian United,2026,WAL1,18,Central Midfield,33,Wales,2,1,0,12
+667501,Jack Karadoğan,50598,Cambrian United,2026,WAL1,20,Central Midfield,22,Wales,3,3,0,47
 1246072,Brodie Gill,50598,Cambrian United,2026,WAL1,0,Central Midfield,18,Wales,3,0,0,0
 1256700,Logan Roberts,50598,Cambrian United,2026,WAL1,0,Midfield,0,Wales,1,0,0,0
 504618,Jack Fox,50598,Cambrian United,2026,WAL1,0,Central Midfield,26,Wales,0,0,0,0
-667662,Alex John,50598,Cambrian United,2026,WAL1,0,Central Midfield,25,Wales,0,0,0,0
-854855,Frazer Thomas,50598,Cambrian United,2026,WAL1,7,Central Midfield,23,Wales,4,4,0,325
-1428185,Dylan Edwards,50598,Cambrian United,2026,WAL1,11,Central Midfield,23,Wales,4,4,0,344
-1144503,Danny Hillman,50598,Cambrian United,2026,WAL1,16,Central Midfield,25,Wales,4,4,1,102
-1069755,Josh Allen,50598,Cambrian United,2026,WAL1,36,Central Midfield,31,Wales,4,4,0,262
-1069907,Alex Bonthron,50598,Cambrian United,2026,WAL1,9,Centre-Forward,33,Wales,4,4,0,338
-1305198,Jac Joseph,50598,Cambrian United,2026,WAL1,0,Centre-Forward,18,Wales,4,1,1,2
-1041696,Liam Eason,50598,Cambrian United,2026,WAL1,10,Centre-Forward,28,Wales,4,4,3,360
+667662,Alex John,50598,Cambrian United,2026,WAL1,6,Central Midfield,25,Wales,1,1,0,12
+854855,Frazer Thomas,50598,Cambrian United,2026,WAL1,7,Central Midfield,23,Wales,5,5,0,403
+1428185,Dylan Edwards,50598,Cambrian United,2026,WAL1,11,Central Midfield,23,Wales,5,5,0,434
+1144503,Danny Hillman,50598,Cambrian United,2026,WAL1,16,Central Midfield,25,Wales,5,5,1,130
+1069755,Josh Allen,50598,Cambrian United,2026,WAL1,36,Central Midfield,31,Wales,5,5,0,340
+1069907,Alex Bonthron,50598,Cambrian United,2026,WAL1,9,Centre-Forward,33,Wales,5,5,0,400
+1305198,Jac Joseph,50598,Cambrian United,2026,WAL1,0,Centre-Forward,18,Wales,5,1,1,2
+1041696,Liam Eason,50598,Cambrian United,2026,WAL1,10,Centre-Forward,28,Wales,5,5,3,450
+1352564,Arron Davies,53152,Cardiff Metropolitan University,2026,WAL1,1,Goalkeeper,20,England,5,5,0,450
+1360862,Will Howard,53152,Cardiff Metropolitan University,2026,WAL1,13,Goalkeeper,19,England,5,0,0,0
+623519,CJ Craven,53152,Cardiff Metropolitan University,2026,WAL1,8,Centre-Back,25,Wales,5,5,0,444
+67215,James Clarke,53152,Cardiff Metropolitan University,2026,WAL1,5,Centre-Back,36,England,4,4,1,257
+122842,Joel Edwards,53152,Cardiff Metropolitan University,2026,WAL1,3,Centre-Back,35,England,1,1,0,90
+972432,Toby Raison,53152,Cardiff Metropolitan University,2026,WAL1,33,Centre-Back,24,England,5,5,0,418
+821519,Jack Veale,53152,Cardiff Metropolitan University,2026,WAL1,4,Centre-Back,23,England,5,5,2,450
+1450301,Tom English,53152,Cardiff Metropolitan University,2026,WAL1,2,Right-Back,18,England,4,4,0,109
+1561424,Spencer Dymond-Hall,53152,Cardiff Metropolitan University,2026,WAL1,14,Left-Back,21,England,5,5,0,450
+1437263,Mitch Ford,53152,Cardiff Metropolitan University,2026,WAL1,21,Left-Back,19,Wales,1,1,0,1
+1353019,Jack Hooper,53152,Cardiff Metropolitan University,2026,WAL1,23,Centre-Back,19,England,2,2,0,135
+496649,Ryan Reynolds,53152,Cardiff Metropolitan University,2026,WAL1,6,Central Midfield,25,Wales,3,3,1,189
+456838,Eliot Evans,53152,Cardiff Metropolitan University,2026,WAL1,7,Attacking Midfield,34,Wales,0,0,0,0
+1045312,Harri John,53152,Cardiff Metropolitan University,2026,WAL1,20,Central Midfield,20,Wales,5,4,0,233
+998912,Bailey Gaughan,53152,Cardiff Metropolitan University,2026,WAL1,12,Defensive Midfield,23,New Zealand,5,5,0,117
+121831,Aaron Wildig,53152,Cardiff Metropolitan University,2026,WAL1,24,Central Midfield,34,England,3,3,0,134
+1284831,Myles McKenzie,53152,Cardiff Metropolitan University,2026,WAL1,16,Attacking Midfield,19,Wales,4,3,0,156
+1365756,Ollie Good,53152,Cardiff Metropolitan University,2026,WAL1,26,Central Midfield,18,Wales,2,0,0,0
+542458,Lifumpa Mwandwe,53152,Cardiff Metropolitan University,2026,WAL1,11,Left Winger,25,England,5,5,1,427
+1069757,Jasper Payne,53152,Cardiff Metropolitan University,2026,WAL1,9,Centre-Forward,21,Wales,5,5,5,426
+531229,Sam Jones,53152,Cardiff Metropolitan University,2026,WAL1,10,Right Winger,27,Wales,5,5,1,396
+1331063,Harrison Matthews,53152,Cardiff Metropolitan University,2026,WAL1,29,Centre-Forward,19,Wales,5,3,0,24
+1437266,Jack Block,53152,Cardiff Metropolitan University,2026,WAL1,0,Right Winger,18,Wales,4,0,0,0
+1122309,Tomos Lloyd,53152,Cardiff Metropolitan University,2026,WAL1,0,Attack,0,Wales,1,0,0,0
 176322,Shaun Pearson,45574,Llandudno FC,2025,WAL1,21,Goalkeeper,34,Wales,0,0,0,0
 1052459,Joe Angus,45574,Llandudno FC,2025,WAL1,0,Goalkeeper,19,Wales,0,0,0,0
 1160387,Tom Guinn,45574,Llandudno FC,2025,WAL1,1,Goalkeeper,18,Wales,0,0,0,0
@@ -2326,6 +2299,93 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1045045,Adam Stephens,45574,Llandudno FC,2025,WAL1,9,Centre-Forward,27,England,0,0,0,0
 1151076,Harvey Bennett,45574,Llandudno FC,2025,WAL1,10,Centre-Forward,19,Wales,0,0,0,0
 1321216,Dylan Proctor,45574,Llandudno FC,2025,WAL1,15,Centre-Forward,21,England,0,0,0,0
+1097141,Sam Seager,53152,Cardiff Metropolitan University,2025,WAL1,13,Goalkeeper,18,Wales,32,14,0,1219
+1006407,Ewan Griffiths,53152,Cardiff Metropolitan University,2025,WAL1,0,Goalkeeper,19,Wales,9,9,0,810
+344001,Kelland Absalom,53152,Cardiff Metropolitan University,2025,WAL1,1,Goalkeeper,27,Wales,18,10,0,846
+623519,CJ Craven,53152,Cardiff Metropolitan University,2025,WAL1,16,Centre-Back,24,Wales,32,32,3,2880
+1458000,Sam Richards,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,25,Wales,10,10,0,830
+643938,Matt Chubb,53152,Cardiff Metropolitan University,2025,WAL1,2,Centre-Back,26,England,27,26,3,2125
+291286,Liam Walsh,53152,Cardiff Metropolitan University,2025,WAL1,4,Right-Back,28,Wales,27,19,0,1299
+1069538,Jake Morris,53152,Cardiff Metropolitan University,2025,WAL1,14,Left-Back,20,Wales,27,20,2,1468
+67215,James Clarke,53152,Cardiff Metropolitan University,2025,WAL1,15,Centre-Back,35,England,2,2,0,180
+615966,Barney Soady,53152,Cardiff Metropolitan University,2025,WAL1,21,Left-Back,23,Wales,26,20,1,1486
+122842,Joel Edwards,53152,Cardiff Metropolitan University,2025,WAL1,3,Centre-Back,33,England,23,21,1,1780
+972432,Toby Raison,53152,Cardiff Metropolitan University,2025,WAL1,33,Centre-Back,23,England,9,7,0,541
+1160446,Gruff Morgan,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,20,Wales,9,5,0,353
+1097142,Brogan Popham,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,17,Wales,6,3,0,121
+1291460,Josh Stephens,53152,Cardiff Metropolitan University,2025,WAL1,0,Left-Back,18,Wales,5,1,0,5
+1526664,Max Sweetman,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Back,17,Wales,4,0,0,0
+496649,Ryan Reynolds,53152,Cardiff Metropolitan University,2025,WAL1,6,Central Midfield,24,Wales,25,25,3,2198
+846848,Dixon Kabongo,53152,Cardiff Metropolitan University,2025,WAL1,8,Central Midfield,21,Wales,30,28,0,1956
+456838,Eliot Evans,53152,Cardiff Metropolitan University,2025,WAL1,7,Attacking Midfield,33,Wales,24,22,1,1233
+1045312,Harri John,53152,Cardiff Metropolitan University,2025,WAL1,20,Central Midfield,19,Wales,27,16,0,873
+1139482,Riley Lonergan,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,18,Wales,14,6,0,77
+1095599,Matt Richards,53152,Cardiff Metropolitan University,2025,WAL1,0,Defensive Midfield,22,Wales,2,0,0,0
+1082278,Osian Rees,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,18,Wales,13,0,0,0
+1365756,Ollie Good,53152,Cardiff Metropolitan University,2025,WAL1,0,Central Midfield,17,Wales,5,3,0,103
+1172029,Harlan Perry,53152,Cardiff Metropolitan University,2025,WAL1,0,Defensive Midfield,17,Wales,4,1,0,29
+823075,Lewis Rees,53152,Cardiff Metropolitan University,2025,WAL1,9,Centre-Forward,23,Wales,26,24,3,1193
+542458,Lifumpa Mwandwe,53152,Cardiff Metropolitan University,2025,WAL1,19,Left Winger,24,England,32,32,8,2793
+531229,Sam Jones,53152,Cardiff Metropolitan University,2025,WAL1,10,Right Winger,26,Wales,25,24,4,1776
+1069757,Jasper Payne,53152,Cardiff Metropolitan University,2025,WAL1,17,Centre-Forward,20,Wales,30,29,7,1942
+846846,Jonah Williams,53152,Cardiff Metropolitan University,2025,WAL1,22,Left Winger,20,Wales,10,6,0,89
+1331063,Harrison Matthews,53152,Cardiff Metropolitan University,2025,WAL1,29,Centre-Forward,18,Wales,15,5,0,45
+1058828,Dan John,53152,Cardiff Metropolitan University,2025,WAL1,0,Centre-Forward,19,Wales,0,0,0,0
+456844,Adam Roscrow,53152,Cardiff Metropolitan University,2025,WAL1,11,Centre-Forward,30,Wales,25,24,6,1391
+727585,Joel Torrance,45574,Llandudno FC,2026,WAL1,1,Goalkeeper,24,England,5,5,0,450
+176322,Shaun Pearson,45574,Llandudno FC,2026,WAL1,13,Goalkeeper,36,Wales,0,0,0,0
+1519842,Jack Fisher,45574,Llandudno FC,2026,WAL1,51,Goalkeeper,0,England,5,0,0,0
+104688,Kai Edwards,45574,Llandudno FC,2026,WAL1,21,Centre-Back,35,Wales,5,4,0,273
+238646,Anthony Stephens,45574,Llandudno FC,2026,WAL1,3,Centre-Back,32,England,4,4,0,295
+369871,Iwan Cartwright,45574,Llandudno FC,2026,WAL1,4,Centre-Back,30,Wales,5,5,0,450
+618496,Kieran Lloyd,45574,Llandudno FC,2026,WAL1,7,Right-Back,23,England,5,5,0,450
+933749,Nick Grogan,45574,Llandudno FC,2026,WAL1,15,Centre-Back,22,England,4,3,0,228
+1305108,Cai Roberts,45574,Llandudno FC,2026,WAL1,23,Centre-Back,18,Wales,1,0,0,0
+1156848,Josh Humphreys,45574,Llandudno FC,2026,WAL1,24,Centre-Back,21,Wales,0,0,0,0
+730542,Tom Stephens,45574,Llandudno FC,2026,WAL1,29,Right-Back,28,England,2,2,0,180
+333250,Ross Weaver,45574,Llandudno FC,2026,WAL1,6,Defensive Midfield,30,Wales,5,4,1,267
+287430,Ben Maher,45574,Llandudno FC,2026,WAL1,16,Central Midfield,30,Wales,4,4,0,253
+720482,Joe Faux,45574,Llandudno FC,2026,WAL1,17,Left Midfield,30,Australia,4,3,0,53
+286552,Kieran Smith,45574,Llandudno FC,2026,WAL1,18,Central Midfield,34,England,3,2,2,180
+921350,Jordan Pownall,45574,Llandudno FC,2026,WAL1,20,Central Midfield,22,Wales,4,2,0,87
+67418,Marc Williams,45574,Llandudno FC,2026,WAL1,22,Central Midfield,38,Wales,5,5,1,338
+1060959,Callum Stephens,45574,Llandudno FC,2026,WAL1,2,Right Midfield,26,England,4,4,1,351
+1011671,Aidan Higgins,45574,Llandudno FC,2026,WAL1,11,Attacking Midfield,19,Wales,1,1,0,90
+1032851,John Cooper,45574,Llandudno FC,2026,WAL1,25,Central Midfield,21,Wales,0,0,0,0
+1574449,Leon Hughes,45574,Llandudno FC,2026,WAL1,28,Central Midfield,0,England,5,4,0,92
+693125,Liam Higgins,45574,Llandudno FC,2026,WAL1,29,Right Winger,23,Wales,2,2,1,62
+198166,Mark Cadwallader,45574,Llandudno FC,2026,WAL1,8,Centre-Forward,38,England,5,5,2,193
+456333,Alex Boss,45574,Llandudno FC,2026,WAL1,14,Right Winger,27,Wales,1,0,0,0
+453386,Cody Ruberto,45574,Llandudno FC,2026,WAL1,27,Centre-Forward,35,Italy,1,1,0,9
+1045045,Adam Stephens,45574,Llandudno FC,2026,WAL1,9,Centre-Forward,29,England,4,4,2,331
+1151076,Harvey Bennett,45574,Llandudno FC,2026,WAL1,10,Centre-Forward,20,Wales,4,4,2,219
+1203729,Cammron Morris,45574,Llandudno FC,2026,WAL1,12,Centre-Forward,20,England,2,2,0,99
+1157268,Alex Swindell,45417,Holywell Town,2026,WAL1,1,Goalkeeper,25,Wales,5,5,0,450
+1308281,Elliot Collins,45417,Holywell Town,2026,WAL1,31,Goalkeeper,18,England,5,0,0,0
+531054,Alec Mudimu,45417,Holywell Town,2026,WAL1,4,Centre-Back,31,Zimbabwe,4,4,0,357
+1176434,Mikey Davies,45417,Holywell Town,2026,WAL1,3,Left-Back,21,England,1,1,0,12
+622919,Ieuan Hewitt,45417,Holywell Town,2026,WAL1,5,Centre-Back,33,Wales,4,4,0,295
+893011,Danny Sullivan,45417,Holywell Town,2026,WAL1,6,Centre-Back,35,Ireland,3,3,0,213
+342276,Tom Bibby,45417,Holywell Town,2026,WAL1,7,Centre-Back,28,Wales,5,5,0,450
+1030448,Harvey Morris,45417,Holywell Town,2026,WAL1,0,Left-Back,20,Wales,1,1,0,60
+1363345,Casey Bedford,45417,Holywell Town,2026,WAL1,2,Centre-Back,18,England,4,2,0,91
+1455759,Rhiley Griffiths,45417,Holywell Town,2026,WAL1,67,Centre-Back,17,Wales,0,0,0,0
+427046,Dominic McGiveron,45417,Holywell Town,2026,WAL1,16,Attacking Midfield,30,England,5,5,0,438
+720935,Taner Dogan,45417,Holywell Town,2026,WAL1,8,Central Midfield,28,United States,5,5,0,442
+240920,Ryan Edwards,45417,Holywell Town,2026,WAL1,34,Central Midfield,32,Wales,3,3,0,270
+1572307,Thuso Nyoni,45417,Holywell Town,2026,WAL1,15,Defensive Midfield,24,Zimbabwe,5,2,0,15
+1503369,Alfie Edwards,45417,Holywell Town,2026,WAL1,22,Central Midfield,0,Wales,1,1,0,1
+1517755,Jacob Byron,45417,Holywell Town,2026,WAL1,24,Attacking Midfield,0,Wales,2,0,0,0
+1517754,Lewys Williams,45417,Holywell Town,2026,WAL1,37,Central Midfield,0,Wales,0,0,0,0
+925034,Owen Davies,45417,Holywell Town,2026,WAL1,9,Centre-Forward,21,Wales,5,5,0,195
+456706,Mark Winslade,45417,Holywell Town,2026,WAL1,10,Centre-Forward,33,England,5,5,1,337
+912168,Jake Cooke,45417,Holywell Town,2026,WAL1,11,Right Winger,26,Wales,0,0,0,0
+920787,Fabrizio Murtas,45417,Holywell Town,2026,WAL1,14,Centre-Forward,21,Wales,5,5,1,209
+98298,Jamie Reed,45417,Holywell Town,2026,WAL1,17,Centre-Forward,39,Wales,5,4,0,31
+624901,Florian Yonsian,45417,Holywell Town,2026,WAL1,27,Centre-Forward,25,Cote d'Ivoire,5,5,1,395
+1094942,Caio Hughes,45417,Holywell Town,2026,WAL1,18,Right Winger,24,Wales,5,5,2,357
+1185383,Jack Sconce,45417,Holywell Town,2026,WAL1,19,Right Winger,25,England,3,3,1,158
+1062477,Sam Baker,45417,Holywell Town,2026,WAL1,20,Left Winger,21,England,4,3,0,133
 39579,John Danby,45417,Holywell Town,2025,WAL1,1,Goalkeeper,41,England,0,0,0,0
 823629,Tyler French,45417,Holywell Town,2025,WAL1,25,Goalkeeper,28,Wales,0,0,0,0
 257744,Mike Platt,45417,Holywell Town,2025,WAL1,31,Goalkeeper,37,Wales,0,0,0,0
@@ -2351,59 +2411,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 456192,Oliver Buckley,45417,Holywell Town,2025,WAL1,18,Centre-Forward,30,Wales,0,0,0,0
 98285,Mark Connolly,45417,Holywell Town,2025,WAL1,3,Right Winger,40,England,0,0,0,0
 1185383,Jack Sconce,45417,Holywell Town,2025,WAL1,19,Right Winger,24,England,0,0,0,0
-727585,Joel Torrance,45574,Llandudno FC,2026,WAL1,1,Goalkeeper,24,England,4,4,0,360
-176322,Shaun Pearson,45574,Llandudno FC,2026,WAL1,13,Goalkeeper,36,Wales,0,0,0,0
-1519842,Jack Fisher,45574,Llandudno FC,2026,WAL1,51,Goalkeeper,0,England,4,0,0,0
-104688,Kai Edwards,45574,Llandudno FC,2026,WAL1,21,Centre-Back,35,Wales,4,3,0,183
-238646,Anthony Stephens,45574,Llandudno FC,2026,WAL1,3,Centre-Back,32,England,4,4,0,295
-369871,Iwan Cartwright,45574,Llandudno FC,2026,WAL1,4,Centre-Back,30,Wales,4,4,0,360
-618496,Kieran Lloyd,45574,Llandudno FC,2026,WAL1,7,Right-Back,23,England,4,4,0,360
-933749,Nick Grogan,45574,Llandudno FC,2026,WAL1,15,Centre-Back,22,England,3,2,0,138
-1305108,Cai Roberts,45574,Llandudno FC,2026,WAL1,23,Centre-Back,18,Wales,0,0,0,0
-1156848,Josh Humphreys,45574,Llandudno FC,2026,WAL1,24,Centre-Back,21,Wales,0,0,0,0
-730542,Tom Stephens,45574,Llandudno FC,2026,WAL1,29,Right-Back,28,England,2,2,0,180
-333250,Ross Weaver,45574,Llandudno FC,2026,WAL1,6,Defensive Midfield,30,Wales,4,3,0,177
-287430,Ben Maher,45574,Llandudno FC,2026,WAL1,16,Central Midfield,30,Wales,3,3,0,243
-720482,Joe Faux,45574,Llandudno FC,2026,WAL1,17,Left Midfield,30,Australia,3,2,0,36
-286552,Kieran Smith,45574,Llandudno FC,2026,WAL1,18,Central Midfield,34,England,3,2,2,180
-921350,Jordan Pownall,45574,Llandudno FC,2026,WAL1,20,Central Midfield,22,Wales,3,1,0,14
-67418,Marc Williams,45574,Llandudno FC,2026,WAL1,22,Central Midfield,38,Wales,4,4,1,258
-1060959,Callum Stephens,45574,Llandudno FC,2026,WAL1,2,Right Midfield,26,England,4,4,1,351
-1011671,Aidan Higgins,45574,Llandudno FC,2026,WAL1,11,Attacking Midfield,19,Wales,1,1,0,90
-1032851,John Cooper,45574,Llandudno FC,2026,WAL1,25,Central Midfield,21,Wales,0,0,0,0
-1574449,Leon Hughes,45574,Llandudno FC,2026,WAL1,28,Central Midfield,0,England,4,3,0,19
-693125,Liam Higgins,45574,Llandudno FC,2026,WAL1,29,Right Winger,23,Wales,1,1,0,45
-198166,Mark Cadwallader,45574,Llandudno FC,2026,WAL1,8,Centre-Forward,38,England,4,4,2,103
-456333,Alex Boss,45574,Llandudno FC,2026,WAL1,14,Right Winger,27,Wales,0,0,0,0
-453386,Cody Ruberto,45574,Llandudno FC,2026,WAL1,27,Centre-Forward,35,Italy,1,1,0,9
-1045045,Adam Stephens,45574,Llandudno FC,2026,WAL1,9,Centre-Forward,29,England,4,4,2,331
-1151076,Harvey Bennett,45574,Llandudno FC,2026,WAL1,10,Centre-Forward,20,Wales,3,3,2,183
-1203729,Cammron Morris,45574,Llandudno FC,2026,WAL1,12,Centre-Forward,20,England,1,1,0,45
-1157268,Alex Swindell,45417,Holywell Town,2026,WAL1,1,Goalkeeper,25,Wales,4,4,0,360
-1308281,Elliot Collins,45417,Holywell Town,2026,WAL1,31,Goalkeeper,18,England,4,0,0,0
-531054,Alec Mudimu,45417,Holywell Town,2026,WAL1,4,Centre-Back,31,Zimbabwe,3,3,0,270
-1176434,Mikey Davies,45417,Holywell Town,2026,WAL1,3,Left-Back,21,England,1,1,0,12
-622919,Ieuan Hewitt,45417,Holywell Town,2026,WAL1,5,Centre-Back,33,Wales,4,4,0,295
-893011,Danny Sullivan,45417,Holywell Town,2026,WAL1,6,Centre-Back,35,Ireland,3,3,0,213
-342276,Tom Bibby,45417,Holywell Town,2026,WAL1,7,Centre-Back,28,Wales,4,4,0,360
-1363345,Casey Bedford,45417,Holywell Town,2026,WAL1,2,Centre-Back,18,England,3,1,0,1
-1455759,Rhiley Griffiths,45417,Holywell Town,2026,WAL1,67,Centre-Back,17,Wales,0,0,0,0
-427046,Dominic McGiveron,45417,Holywell Town,2026,WAL1,16,Attacking Midfield,30,England,4,4,0,348
-720935,Taner Dogan,45417,Holywell Town,2026,WAL1,8,Central Midfield,28,United States,4,4,0,352
-240920,Ryan Edwards,45417,Holywell Town,2026,WAL1,34,Central Midfield,32,Wales,3,3,0,270
-1503369,Alfie Edwards,45417,Holywell Town,2026,WAL1,0,Central Midfield,0,Wales,0,0,0,0
-1572307,Thuso Nyoni,45417,Holywell Town,2026,WAL1,15,Defensive Midfield,24,Zimbabwe,4,1,0,12
-1517754,Lewys Williams,45417,Holywell Town,2026,WAL1,37,Central Midfield,0,Wales,0,0,0,0
-1517755,Jacob Byron,45417,Holywell Town,2026,WAL1,40,Attacking Midfield,0,Wales,1,0,0,0
-925034,Owen Davies,45417,Holywell Town,2026,WAL1,9,Centre-Forward,21,Wales,4,4,0,165
-456706,Mark Winslade,45417,Holywell Town,2026,WAL1,10,Centre-Forward,33,England,4,4,1,247
-912168,Jake Cooke,45417,Holywell Town,2026,WAL1,11,Right Winger,26,Wales,0,0,0,0
-920787,Fabrizio Murtas,45417,Holywell Town,2026,WAL1,14,Centre-Forward,21,Wales,4,4,0,149
-98298,Jamie Reed,45417,Holywell Town,2026,WAL1,17,Centre-Forward,39,Wales,4,3,0,30
-624901,Florian Yonsian,45417,Holywell Town,2026,WAL1,27,Centre-Forward,25,Cote d'Ivoire,4,4,0,305
-1094942,Caio Hughes,45417,Holywell Town,2026,WAL1,18,Right Winger,24,Wales,4,4,1,267
-1185383,Jack Sconce,45417,Holywell Town,2026,WAL1,19,Right Winger,25,England,2,2,1,128
-1062477,Sam Baker,45417,Holywell Town,2026,WAL1,20,Left Winger,21,England,4,3,0,133
 195674,Luke Martin,50597,Ammanford AFC,2025,WAL1,0,Goalkeeper,31,Wales,0,0,0,0
 626821,Joshua Hutchings,50597,Ammanford AFC,2025,WAL1,0,Goalkeeper,22,Wales,0,0,0,0
 1049915,Luke Sylvester,50597,Ammanford AFC,2025,WAL1,0,Right-Back,26,Wales,0,0,0,0
@@ -2424,55 +2431,80 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1083025,Charlie Davies,50597,Ammanford AFC,2025,WAL1,0,Right Winger,25,Wales,0,0,0,0
 1194522,Alex Giardelli,50597,Ammanford AFC,2025,WAL1,0,Centre-Forward,26,Wales,0,0,0,0
 1305189,Rhys Davies,50597,Ammanford AFC,2025,WAL1,0,Left Winger,25,Wales,0,0,0,0
-195674,Luke Martin,50597,Ammanford AFC,2026,WAL1,1,Goalkeeper,32,Wales,4,4,0,360
+195674,Luke Martin,50597,Ammanford AFC,2026,WAL1,1,Goalkeeper,32,Wales,5,5,0,450
 1436876,Oliver Williams,50597,Ammanford AFC,2026,WAL1,99,Goalkeeper,0,Wales,3,0,0,0
 480814,Elliot Scotcher,50597,Ammanford AFC,2026,WAL1,21,Centre-Back,32,Wales,2,2,0,135
-949105,Lucas Davies,50597,Ammanford AFC,2026,WAL1,0,Centre-Back,21,Wales,2,0,0,0
-1058826,Seth Woodhouse,50597,Ammanford AFC,2026,WAL1,2,Centre-Back,20,Wales,4,4,0,360
-1049915,Luke Sylvester,50597,Ammanford AFC,2026,WAL1,12,Right-Back,27,Wales,4,4,0,157
+949105,Lucas Davies,50597,Ammanford AFC,2026,WAL1,0,Centre-Back,21,Wales,3,0,0,0
+1058826,Seth Woodhouse,50597,Ammanford AFC,2026,WAL1,2,Centre-Back,20,Wales,5,5,0,450
+1049915,Luke Sylvester,50597,Ammanford AFC,2026,WAL1,12,Right-Back,27,Wales,5,5,0,180
 1160446,Gruff Morgan,50597,Ammanford AFC,2026,WAL1,15,Centre-Back,21,Wales,0,0,0,0
 1387599,Ceiron Davies,50597,Ammanford AFC,2026,WAL1,0,Centre-Back,18,Wales,2,0,0,0
-1171566,Babucar Sauane,50597,Ammanford AFC,2026,WAL1,3,Centre-Back,31,The Gambia,2,2,0,180
-889446,Euros Griffiths,50597,Ammanford AFC,2026,WAL1,4,Centre-Back,35,Wales,4,4,0,350
-1157275,Chris Bell,50597,Ammanford AFC,2026,WAL1,5,Centre-Back,30,Scotland,2,2,0,180
+1171566,Babucar Sauane,50597,Ammanford AFC,2026,WAL1,3,Centre-Back,31,The Gambia,3,3,0,270
+889446,Euros Griffiths,50597,Ammanford AFC,2026,WAL1,4,Centre-Back,35,Wales,5,5,1,405
+1157275,Chris Bell,50597,Ammanford AFC,2026,WAL1,5,Centre-Back,30,Scotland,3,3,0,270
 1058829,Owain Davies,50597,Ammanford AFC,2026,WAL1,19,Left-Back,21,Wales,1,1,0,7
-931507,Josef Hopkins,50597,Ammanford AFC,2026,WAL1,13,Central Midfield,35,Wales,4,4,0,119
-1159146,Luc Owen,50597,Ammanford AFC,2026,WAL1,23,Central Midfield,19,Wales,4,3,0,53
-931026,Matthew Delaney,50597,Ammanford AFC,2026,WAL1,6,Central Midfield,26,Wales,4,4,2,360
-174620,Adam Orme,50597,Ammanford AFC,2026,WAL1,8,Central Midfield,34,Wales,3,3,0,241
-930694,Callum Thomas,50597,Ammanford AFC,2026,WAL1,10,Attacking Midfield,22,Wales,4,4,0,167
+931507,Josef Hopkins,50597,Ammanford AFC,2026,WAL1,13,Central Midfield,35,Wales,5,5,0,128
+1159146,Luc Owen,50597,Ammanford AFC,2026,WAL1,23,Central Midfield,20,Wales,5,4,0,54
+931026,Matthew Delaney,50597,Ammanford AFC,2026,WAL1,6,Central Midfield,26,Wales,5,5,2,441
+174620,Adam Orme,50597,Ammanford AFC,2026,WAL1,8,Central Midfield,34,Wales,4,4,0,331
+930694,Callum Thomas,50597,Ammanford AFC,2026,WAL1,10,Attacking Midfield,22,Wales,5,5,0,176
 889481,Matthew Fisher,50597,Ammanford AFC,2026,WAL1,14,Central Midfield,37,Wales,0,0,0,0
 889706,Tom Johnston,50597,Ammanford AFC,2026,WAL1,18,Central Midfield,27,England,0,0,0,0
-622836,Harri Rowe,50597,Ammanford AFC,2026,WAL1,22,Left Midfield,25,Wales,3,3,0,237
-197121,Jonathan Evans,50597,Ammanford AFC,2026,WAL1,24,Centre-Forward,33,Wales,4,4,1,360
-1054419,Callum Shirt,50597,Ammanford AFC,2026,WAL1,25,Centre-Forward,21,Wales,4,4,0,190
+622836,Harri Rowe,50597,Ammanford AFC,2026,WAL1,22,Left Midfield,25,Wales,4,4,0,327
+197121,Jonathan Evans,50597,Ammanford AFC,2026,WAL1,24,Centre-Forward,33,Wales,5,5,1,450
+1054419,Callum Shirt,50597,Ammanford AFC,2026,WAL1,25,Centre-Forward,21,Wales,5,5,0,257
 1305190,Hari Lloyd,50597,Ammanford AFC,2026,WAL1,0,Centre-Forward,18,Wales,2,0,0,0
 931027,Adam John,50597,Ammanford AFC,2026,WAL1,7,Centre-Forward,28,Wales,4,4,0,256
 822923,Gavin Jones,50597,Ammanford AFC,2026,WAL1,9,Right Winger,26,Wales,0,0,0,0
 1305189,Rhys Davies,50597,Ammanford AFC,2026,WAL1,11,Left Winger,27,Wales,2,1,0,4
-1083025,Charlie Davies,50597,Ammanford AFC,2026,WAL1,17,Right Winger,26,Wales,3,3,0,244
-404385,Scott Coughlan,37610,Trefelin Boys & Girls Club,2026,WAL1,1,Goalkeeper,27,Wales,4,4,0,360
-1310159,Harlie Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,21,Goalkeeper,18,Wales,4,0,0,0
-10375,Shaun MacDonald,37610,Trefelin Boys & Girls Club,2026,WAL1,5,Centre-Back,38,Wales,3,3,0,270
-1451892,Owen Thomas,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Centre-Back,0,Wales,2,0,0,0
-1258480,Morgan Thomas,37610,Trefelin Boys & Girls Club,2026,WAL1,2,Right-Back,19,Wales,4,3,0,183
-930782,Declan Evans,37610,Trefelin Boys & Girls Club,2026,WAL1,3,Left-Back,27,Wales,3,3,0,261
-531221,Louis Caramella-Gerrard,37610,Trefelin Boys & Girls Club,2026,WAL1,4,Centre-Back,33,Wales,4,4,0,360
-1284326,Jacob Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,14,Centre-Back,0,Wales,4,4,0,178
-334959,Kane Owen,37610,Trefelin Boys & Girls Club,2026,WAL1,26,Left Midfield,31,Wales,4,4,0,360
-531201,Tyler Brock,37610,Trefelin Boys & Girls Club,2026,WAL1,10,Attacking Midfield,27,Wales,4,4,0,334
+1083025,Charlie Davies,50597,Ammanford AFC,2026,WAL1,17,Right Winger,26,Wales,4,4,0,325
+404385,Scott Coughlan,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Goalkeeper,26,Wales,0,0,0,0
+1310159,Harlie Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Goalkeeper,17,Wales,0,0,0,0
+10375,Shaun MacDonald,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,37,Wales,0,0,0,0
+393929,Joseph Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,28,Wales,0,0,0,0
+705178,Cian Williams,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left-Back,22,Wales,0,0,0,0
+531221,Louis Caramella-Gerrard,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,32,Wales,0,0,0,0
+623061,Jordan Vickers,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,29,Wales,0,0,0,0
+930782,Declan Evans,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left-Back,25,Wales,0,0,0,0
+1081549,Thomas Krauze,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,23,Wales,0,0,0,0
+1258480,Morgan Thomas,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,18,Wales,0,0,0,0
+1284326,Jacob Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,17,Wales,0,0,0,0
+531201,Tyler Brock,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Attacking Midfield,26,Wales,0,0,0,0
+930783,Jack Hurley,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,26,Wales,0,0,0,0
+174775,Jordan Davies,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,34,Wales,0,0,0,0
+1063424,Callum Saunders,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,25,Wales,0,0,0,0
+1085230,Kori Parker,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Defensive Midfield,20,Wales,0,0,0,0
+1284663,Theo Benbow,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,17,Wales,0,0,0,0
+1291450,Jasper Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,20,Wales,0,0,0,0
+139087,Luke Bowen,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Forward,37,Wales,0,0,0,0
+343212,Kostya Georgievsky,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right Winger,29,Northern Ireland,0,0,0,0
+945882,Lewys Ware,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left Winger,20,Wales,0,0,0,0
+923008,Roan Piper,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left Winger,20,Wales,0,0,0,0
+1082282,Rohan Hillier,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right Winger,17,Wales,0,0,0,0
+404385,Scott Coughlan,37610,Trefelin Boys & Girls Club,2026,WAL1,1,Goalkeeper,27,Wales,5,5,0,450
+1310159,Harlie Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,21,Goalkeeper,18,Wales,5,0,0,0
+10375,Shaun MacDonald,37610,Trefelin Boys & Girls Club,2026,WAL1,5,Centre-Back,38,Wales,4,4,0,357
+1591359,Osian Davies,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Defender,0,Wales,1,0,0,0
+1451892,Owen Thomas,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Centre-Back,17,Wales,2,0,0,0
+1258480,Morgan Thomas,37610,Trefelin Boys & Girls Club,2026,WAL1,2,Right-Back,19,Wales,5,4,0,273
+930782,Declan Evans,37610,Trefelin Boys & Girls Club,2026,WAL1,3,Left-Back,27,Wales,4,4,0,351
+531221,Louis Caramella-Gerrard,37610,Trefelin Boys & Girls Club,2026,WAL1,4,Centre-Back,33,Wales,5,5,1,450
+1284326,Jacob Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,14,Centre-Back,18,Wales,5,5,0,254
+334959,Kane Owen,37610,Trefelin Boys & Girls Club,2026,WAL1,26,Left Midfield,31,Wales,5,5,0,416
+531201,Tyler Brock,37610,Trefelin Boys & Girls Club,2026,WAL1,10,Attacking Midfield,27,Wales,5,5,0,396
 1574956,Josh Williams-Richards,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Midfield,16,Wales,2,0,0,0
 1284663,Theo Benbow,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Central Midfield,18,Wales,0,0,0,0
 174775,Jordan Davies,37610,Trefelin Boys & Girls Club,2026,WAL1,8,Central Midfield,36,Wales,4,4,0,336
-1063424,Callum Saunders,37610,Trefelin Boys & Girls Club,2026,WAL1,12,Central Midfield,27,Wales,4,4,0,113
-1085230,Kori Parker,37610,Trefelin Boys & Girls Club,2026,WAL1,15,Defensive Midfield,21,Wales,3,2,0,36
-1291450,Jasper Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,19,Central Midfield,21,Wales,2,2,0,180
+1063424,Callum Saunders,37610,Trefelin Boys & Girls Club,2026,WAL1,12,Central Midfield,27,Wales,5,5,0,127
+1085230,Kori Parker,37610,Trefelin Boys & Girls Club,2026,WAL1,15,Defensive Midfield,21,Wales,4,2,0,36
+1291450,Jasper Jones,37610,Trefelin Boys & Girls Club,2026,WAL1,19,Central Midfield,21,Wales,3,3,0,270
+1243181,Louis Phillips,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Right Winger,20,Wales,1,1,0,28
 343212,Kostya Georgievsky,37610,Trefelin Boys & Girls Club,2026,WAL1,7,Right Winger,30,Northern Ireland,4,4,0,203
-1058828,Dan John,37610,Trefelin Boys & Girls Club,2026,WAL1,9,Centre-Forward,20,Wales,4,4,0,342
-945882,Lewys Ware,37610,Trefelin Boys & Girls Club,2026,WAL1,11,Left Winger,21,Wales,4,4,0,357
+1058828,Dan John,37610,Trefelin Boys & Girls Club,2026,WAL1,9,Centre-Forward,20,Wales,5,5,0,432
+945882,Lewys Ware,37610,Trefelin Boys & Girls Club,2026,WAL1,11,Left Winger,21,Wales,5,5,0,419
 1574957,Declan De-Vulgt,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Attack,16,Wales,2,1,0,1
-1580927,Luca Pockett,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Centre-Forward,0,Wales,2,1,0,6
-923008,Roan Piper,37610,Trefelin Boys & Girls Club,2026,WAL1,16,Left Winger,21,Wales,3,3,0,81
+1580927,Luca Pockett,37610,Trefelin Boys & Girls Club,2026,WAL1,0,Centre-Forward,16,Wales,3,2,0,9
+923008,Roan Piper,37610,Trefelin Boys & Girls Club,2026,WAL1,16,Left Winger,21,Wales,4,4,0,109
 1082282,Rohan Hillier,37610,Trefelin Boys & Girls Club,2026,WAL1,20,Right Winger,18,Wales,1,0,0,0
 342371,Keighan Jones,23088,Airbus UK Broughton,2025,WAL1,13,Goalkeeper,28,England,0,0,0,0
 1285092,Sam Fenney,23088,Airbus UK Broughton,2025,WAL1,1,Goalkeeper,18,Wales,0,0,0,0
@@ -2496,49 +2528,26 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1114087,Ieuan Jones-Wellstead,23088,Airbus UK Broughton,2025,WAL1,7,Right Winger,19,Wales,0,0,0,0
 922516,Danny Warren,23088,Airbus UK Broughton,2025,WAL1,8,Centre-Forward,30,England,0,0,0,0
 1348912,James Allen,23088,Airbus UK Broughton,2025,WAL1,24,Left Winger,17,England,0,0,0,0
-404385,Scott Coughlan,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Goalkeeper,26,Wales,0,0,0,0
-1310159,Harlie Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Goalkeeper,17,Wales,0,0,0,0
-10375,Shaun MacDonald,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,37,Wales,0,0,0,0
-393929,Joseph Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,28,Wales,0,0,0,0
-705178,Cian Williams,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left-Back,22,Wales,0,0,0,0
-531221,Louis Caramella-Gerrard,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,32,Wales,0,0,0,0
-623061,Jordan Vickers,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,29,Wales,0,0,0,0
-930782,Declan Evans,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left-Back,25,Wales,0,0,0,0
-1081549,Thomas Krauze,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,23,Wales,0,0,0,0
-1258480,Morgan Thomas,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right-Back,18,Wales,0,0,0,0
-1284326,Jacob Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Back,0,Wales,0,0,0,0
-531201,Tyler Brock,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Attacking Midfield,26,Wales,0,0,0,0
-930783,Jack Hurley,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,26,Wales,0,0,0,0
-174775,Jordan Davies,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,34,Wales,0,0,0,0
-1063424,Callum Saunders,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,25,Wales,0,0,0,0
-1085230,Kori Parker,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Defensive Midfield,20,Wales,0,0,0,0
-1284663,Theo Benbow,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,17,Wales,0,0,0,0
-1291450,Jasper Jones,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Central Midfield,20,Wales,0,0,0,0
-139087,Luke Bowen,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Centre-Forward,37,Wales,0,0,0,0
-343212,Kostya Georgievsky,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right Winger,29,Northern Ireland,0,0,0,0
-945882,Lewys Ware,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left Winger,20,Wales,0,0,0,0
-923008,Roan Piper,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Left Winger,20,Wales,0,0,0,0
-1082282,Rohan Hillier,37610,Trefelin Boys & Girls Club,2025,WAL1,0,Right Winger,17,Wales,0,0,0,0
 342371,Keighan Jones,23088,Airbus UK Broughton,2026,WAL1,13,Goalkeeper,29,England,2,0,0,0
-1443192,Jacob Clement,23088,Airbus UK Broughton,2026,WAL1,0,Goalkeeper,16,Wales,1,0,0,0
-1298329,Louie Fallon,23088,Airbus UK Broughton,2026,WAL1,1,Goalkeeper,19,England,4,4,0,360
+1443192,Jacob Clement,23088,Airbus UK Broughton,2026,WAL1,0,Goalkeeper,17,Wales,2,0,0,0
+1298329,Louie Fallon,23088,Airbus UK Broughton,2026,WAL1,1,Goalkeeper,19,England,5,5,0,450
 1573016,Jake Carroll,23088,Airbus UK Broughton,2026,WAL1,21,Goalkeeper,0,England,2,0,0,0
 1436881,Evan Smith,23088,Airbus UK Broughton,2026,WAL1,16,Left-Back,22,England,2,1,0,1
-1045010,Tyler McManus,23088,Airbus UK Broughton,2026,WAL1,2,Right-Back,22,England,4,4,0,327
-473547,Kieran Evans,23088,Airbus UK Broughton,2026,WAL1,3,Left-Back,28,Wales,3,2,0,130
+1045010,Tyler McManus,23088,Airbus UK Broughton,2026,WAL1,2,Right-Back,22,England,5,5,0,348
+473547,Kieran Evans,23088,Airbus UK Broughton,2026,WAL1,3,Left-Back,28,Wales,4,3,0,220
 870162,Sam Rickett,23088,Airbus UK Broughton,2026,WAL1,6,Centre-Back,23,England,3,3,0,230
-93589,Brandon Diau,23088,Airbus UK Broughton,2026,WAL1,12,Centre-Back,33,Congo,4,0,0,0
-728650,Nathan Williams,23088,Airbus UK Broughton,2026,WAL1,23,Left-Back,28,Wales,4,4,0,360
-1285091,Josh Stevenson,23088,Airbus UK Broughton,2026,WAL1,4,Centre-Back,19,England,4,4,1,360
-686587,Joe Palmer,23088,Airbus UK Broughton,2026,WAL1,5,Central Midfield,27,Wales,4,4,0,360
-748845,George Peers,23088,Airbus UK Broughton,2026,WAL1,11,Attacking Midfield,25,Wales,4,4,1,330
-1580895,Oli Calland,23088,Airbus UK Broughton,2026,WAL1,18,Central Midfield,19,England,2,2,0,37
-1558306,Sean Moscrop,23088,Airbus UK Broughton,2026,WAL1,22,Central Midfield,27,England,4,4,0,354
-824046,Mason Blackwell-Jones,23088,Airbus UK Broughton,2026,WAL1,7,Left Winger,24,Wales,4,4,0,338
-232513,Jordan Evans,23088,Airbus UK Broughton,2026,WAL1,8,Left Winger,30,Wales,4,4,1,360
-1078849,Kaiden Cooke,23088,Airbus UK Broughton,2026,WAL1,10,Centre-Forward,20,Wales,3,3,0,266
-911614,Jake Roberts,23088,Airbus UK Broughton,2026,WAL1,17,Centre-Forward,29,Wales,3,3,0,22
-725416,Ollie Lancely,23088,Airbus UK Broughton,2026,WAL1,19,Centre-Forward,25,England,2,2,0,10
-1300885,James Hughes,23088,Airbus UK Broughton,2026,WAL1,14,Centre-Forward,18,Wales,4,4,0,47
-1114087,Ieuan Jones-Wellstead,23088,Airbus UK Broughton,2026,WAL1,15,Right Winger,20,Wales,3,2,0,70
+93589,Brandon Diau,23088,Airbus UK Broughton,2026,WAL1,12,Centre-Back,33,Congo,5,0,0,0
+728650,Nathan Williams,23088,Airbus UK Broughton,2026,WAL1,23,Left-Back,28,Wales,5,5,0,450
+1285091,Josh Stevenson,23088,Airbus UK Broughton,2026,WAL1,4,Centre-Back,19,England,5,5,1,450
+1580895,Oli Calland,23088,Airbus UK Broughton,2026,WAL1,18,Right-Back,19,England,3,3,0,121
+686587,Joe Palmer,23088,Airbus UK Broughton,2026,WAL1,5,Central Midfield,27,Wales,5,5,0,450
+748845,George Peers,23088,Airbus UK Broughton,2026,WAL1,11,Attacking Midfield,25,Wales,5,5,2,420
+1558306,Sean Moscrop,23088,Airbus UK Broughton,2026,WAL1,22,Central Midfield,27,England,5,5,0,423
+824046,Mason Blackwell-Jones,23088,Airbus UK Broughton,2026,WAL1,7,Left Winger,24,Wales,5,4,0,338
+232513,Jordan Evans,23088,Airbus UK Broughton,2026,WAL1,8,Left Winger,30,Wales,5,5,2,450
+1078849,Kaiden Cooke,23088,Airbus UK Broughton,2026,WAL1,10,Centre-Forward,20,Wales,4,4,0,356
+911614,Jake Roberts,23088,Airbus UK Broughton,2026,WAL1,17,Centre-Forward,29,Wales,4,4,0,91
+725416,Ollie Lancely,23088,Airbus UK Broughton,2026,WAL1,19,Centre-Forward,25,England,3,3,0,31
+1300885,James Hughes,23088,Airbus UK Broughton,2026,WAL1,14,Centre-Forward,18,Wales,5,5,0,53
+1114087,Ieuan Jones-Wellstead,23088,Airbus UK Broughton,2026,WAL1,15,Right Winger,20,Wales,4,2,0,70
 1348912,James Allen,23088,Airbus UK Broughton,2026,WAL1,24,Left Winger,18,England,0,0,0,0

@@ -1,873 +1,889 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
-170549,Hillel Konaté,1095,ESTAC Troyes,Goalkeeper,31,Burkina Faso,40,16,8,14,657,188,16741,0,0,0,0,11,8,2010,2026
-770895,Ismaël Boura,1095,ESTAC Troyes,Left-Back,25,Comoros,14,10,5,15,353,214,15143,6,15,54,8,35,12,2017,2026
-373939,Nicolas Lemaître,1095,ESTAC Troyes,Goalkeeper,29,France,16,12,7,11,503,215,18883,0,0,0,0,8,0,2015,2026
-111041,Zacharie Boucher,1095,ESTAC Troyes,Goalkeeper,34,France,1,20,11,19,761,325,29185,0,0,0,0,11,28,2007,2026
-986299,Yvann Titi,1095,ESTAC Troyes,Right-Back,19,France,44,6,4,14,220,120,8796,6,7,24,8,16,31,2021,2026
-536473,Lucas Maronnier,1095,ESTAC Troyes,Right-Back,26,France,2,10,4,9,242,119,9090,2,5,38,7,11,0,2015,2026
-487333,Paolo Gozzi,1095,ESTAC Troyes,Centre-Back,25,Italy,25,11,11,23,410,235,16435,4,7,9,1,28,44,2016,2026
-1185053,Marc-Anthony Nkoumouck,1095,ESTAC Troyes,Goalkeeper,20,France,0,5,4,7,124,30,2700,0,0,0,0,1,0,2022,2026
-1119845,Anis Ouzenadji,1095,ESTAC Troyes,Left-Back,19,France,3,5,3,10,110,73,4416,6,2,4,1,8,1,2022,2026
-281611,Adrien Monfray,1095,ESTAC Troyes,Centre-Back,35,France,6,17,7,8,632,447,38600,7,8,148,33,82,0,2010,2026
-982864,Mathis Hamdi,1164,Le Mans FC,Left-Back,22,France,26,7,5,8,262,108,8316,2,1,0,0,16,0,2020,2026
-1119840,Noah Donkor,1095,ESTAC Troyes,Right-Back,19,France,0,5,3,9,125,66,5012,0,2,0,0,8,0,2022,2026
-775403,Hugo Gambor,1095,ESTAC Troyes,Centre-Back,23,Central African Republic,23,8,8,20,354,143,10609,5,1,10,3,28,7,2019,2026
+1185053,Marc-Anthony Nkoumouck,1095,ESTAC Troyes,Goalkeeper,20,France,0,5,4,7,125,31,2790,0,0,0,0,1,0,2022,2026
+373939,Nicolas Lemaître,1095,ESTAC Troyes,Goalkeeper,29,France,16,12,7,11,504,216,18973,0,0,0,0,8,0,2015,2026
+770895,Ismaël Boura,1095,ESTAC Troyes,Left-Back,25,Comoros,14,10,5,15,354,214,15143,6,15,54,8,35,12,2017,2026
+170549,Hillel Konaté,1095,ESTAC Troyes,Goalkeeper,31,Burkina Faso,40,16,8,14,658,188,16741,0,0,0,0,11,8,2010,2026
+111041,Zacharie Boucher,1095,ESTAC Troyes,Goalkeeper,34,France,1,20,11,19,762,325,29185,0,0,0,0,11,28,2007,2026
+775403,Hugo Gambor,1095,ESTAC Troyes,Centre-Back,23,Central African Republic,23,8,8,20,356,143,10609,5,1,10,3,28,7,2019,2026
+487333,Paolo Gozzi,1095,ESTAC Troyes,Centre-Back,25,Italy,25,11,11,23,411,235,16435,4,7,9,1,28,44,2016,2026
+536473,Lucas Maronnier,1095,ESTAC Troyes,Right-Back,26,France,2,10,4,9,243,120,9176,3,5,39,8,11,0,2015,2026
+986299,Yvann Titi,1095,ESTAC Troyes,Right-Back,19,France,44,6,4,14,221,120,8796,6,7,24,8,16,31,2021,2026
+709482,Thierno Baldé,1159,AS Nancy-Lorraine,Right-Back,24,France,19,9,8,11,255,114,8529,0,2,16,4,1,9,2017,2026
+1119845,Anis Ouzenadji,1095,ESTAC Troyes,Left-Back,19,France,3,5,3,10,111,74,4506,6,2,4,1,8,1,2022,2026
+982864,Mathis Hamdi,1164,Le Mans FC,Left-Back,22,France,26,7,5,8,263,109,8406,2,1,0,0,16,0,2020,2026
+1179195,Sankhoun Diawara,1095,ESTAC Troyes,Centre-Back,20,France,38,5,4,9,152,77,6320,6,1,7,0,8,1,2022,2026
+281611,Adrien Monfray,1095,ESTAC Troyes,Centre-Back,35,France,6,17,7,8,633,448,38690,7,8,149,33,82,0,2010,2026
+1119840,Noah Donkor,1095,ESTAC Troyes,Right-Back,19,France,0,5,3,9,127,67,5016,0,2,0,0,8,0,2022,2026
 900037,Tom Akpakoun,1095,ESTAC Troyes,Centre-Back,21,France,37,5,3,8,176,56,4147,1,0,0,0,9,0,2021,2025
-709482,Thierno Baldé,1159,AS Nancy-Lorraine,Right-Back,24,France,19,9,8,11,254,114,8529,0,2,16,4,1,9,2017,2026
-1215403,Preston Zenga,1095,ESTAC Troyes,Centre-Back,19,France,0,3,3,7,82,40,3279,0,0,0,0,5,0,2024,2026
-1179195,Sankhoun Diawara,1095,ESTAC Troyes,Centre-Back,20,France,38,5,4,9,151,77,6320,6,1,7,0,8,1,2022,2026
-814976,Martin Adeline,1095,ESTAC Troyes,Attacking Midfield,22,France,5,6,5,8,246,156,9531,22,23,88,40,25,22,2020,2025
-933147,Mouhamed Diop,1095,ESTAC Troyes,Central Midfield,25,Senegal,8,6,3,12,199,166,12011,20,10,146,60,23,0,2021,2026
-585951,Alexandre Phliponeau,1095,ESTAC Troyes,Defensive Midfield,26,France,26,11,7,13,340,161,12394,1,6,19,2,21,4,2016,2026
-1267484,Fred Ondoa Onambele,1095,ESTAC Troyes,Left-Back,18,France,0,4,4,7,87,54,3478,9,2,0,0,9,0,2023,2026
+1267484,Fred Ondoa Onambele,1095,ESTAC Troyes,Left-Back,18,France,0,4,4,7,88,55,3497,9,2,0,0,9,0,2023,2026
+1215403,Preston Zenga,1095,ESTAC Troyes,Centre-Back,19,France,0,3,3,7,83,40,3279,0,0,0,0,5,0,2024,2026
+814976,Martin Adeline,1095,ESTAC Troyes,Attacking Midfield,22,France,5,7,6,10,248,158,9686,22,23,89,41,25,22,2020,2026
+933147,Mouhamed Diop,1095,ESTAC Troyes,Central Midfield,25,Senegal,8,6,3,12,200,167,12101,20,10,146,60,23,0,2021,2026
+1174523,Roman Murcy,1095,ESTAC Troyes,Defensive Midfield,20,France,35,5,5,10,125,63,4665,11,2,0,0,7,0,2022,2026
+585951,Alexandre Phliponeau,1095,ESTAC Troyes,Defensive Midfield,26,France,26,11,7,13,341,162,12399,1,6,19,2,21,4,2016,2026
 118278,Xavier Chavalerin,1095,ESTAC Troyes,Central Midfield,35,France,7,18,5,7,631,493,37361,34,26,263,59,78,0,2008,2025
-807653,Antoine Mille,1095,ESTAC Troyes,Central Midfield,28,France,17,10,5,8,287,204,15304,21,28,113,40,39,0,2017,2026
-1066904,Jaurès Assoumou,1095,ESTAC Troyes,Left Winger,23,Cote d'Ivoire,0,6,3,7,177,106,5213,20,6,102,35,5,1,2021,2026
-976861,Merwan Ifnaoui,1095,ESTAC Troyes,Right Winger,27,France,10,7,3,6,178,156,12000,22,30,57,17,12,0,2020,2026
-1174523,Roman Murcy,1095,ESTAC Troyes,Defensive Midfield,20,France,35,5,5,10,123,62,4575,11,2,0,0,7,0,2022,2026
-1171981,Mathys Detourbet,1095,ESTAC Troyes,Left Winger,19,France,11,4,4,11,145,107,5785,19,12,68,21,11,18,2023,2026
-575319,Kandet Diawara,1095,ESTAC Troyes,Left Winger,26,Guinea,29,9,12,21,296,159,8219,19,10,64,25,11,8,2017,2026
-667995,Tawfik Bentayeb,1095,ESTAC Troyes,Centre-Forward,24,Morocco,21,8,3,9,154,125,7014,51,9,150,71,16,13,2017,2025
-1179193,Amadou Diakité,1095,ESTAC Troyes,Right Winger,20,France,36,5,5,9,135,56,3882,9,2,1,1,12,0,2022,2026
-1307001,Arthylio Nadé,1095,ESTAC Troyes,Attack,19,Cote d'Ivoire,0,3,3,8,108,52,3274,32,6,0,0,7,3,2024,2026
-1372119,Elijah Odede,1095,ESTAC Troyes,Left Winger,19,Nigeria,12,3,2,8,69,39,1540,10,2,10,4,0,0,2024,2026
-234802,Renaud Ripart,1095,ESTAC Troyes,Centre-Forward,33,France,20,16,5,8,607,414,27265,90,27,466,151,26,0,2011,2026
+807653,Antoine Mille,1095,ESTAC Troyes,Central Midfield,28,France,17,11,5,8,318,205,15382,21,29,114,40,39,0,2016,2026
+1171981,Mathys Detourbet,1095,ESTAC Troyes,Left Winger,19,France,11,4,4,11,147,109,5825,19,12,70,22,11,18,2023,2026
+667995,Tawfik Bentayeb,1095,ESTAC Troyes,Centre-Forward,24,Morocco,21,9,4,11,156,126,7025,51,9,150,71,16,13,2017,2026
+1372119,Elijah Odede,1095,ESTAC Troyes,Left Winger,19,Nigeria,12,3,2,8,70,39,1540,10,2,10,4,0,0,2024,2026
+1066904,Jaurès Assoumou,1095,ESTAC Troyes,Left Winger,23,Cote d'Ivoire,0,6,3,7,178,106,5213,20,6,102,35,5,1,2021,2026
+976861,Merwan Ifnaoui,1095,ESTAC Troyes,Right Winger,27,France,10,7,3,6,179,157,12090,22,30,57,17,12,0,2020,2026
 627163,Mounaïm El Idrissy,1095,ESTAC Troyes,Centre-Forward,27,France,9,9,4,10,327,220,10173,30,8,145,49,45,0,2016,2025
-318507,Paul Bernardoni,1416,Amiens SC,Goalkeeper,29,France,40,14,13,23,626,421,37834,0,0,2,0,6,50,2013,2026
+575319,Kandet Diawara,1095,ESTAC Troyes,Left Winger,26,Guinea,29,9,12,21,297,160,8242,19,10,64,25,11,8,2017,2026
+234802,Renaud Ripart,1095,ESTAC Troyes,Centre-Forward,33,France,20,16,5,8,608,415,27351,91,27,471,152,26,0,2011,2026
+1146422,Ibrahim Traoré,1095,ESTAC Troyes,Centre-Forward,20,France,34,5,3,10,159,63,3730,19,5,8,1,1,2,2022,2026
+1307001,Arthylio Nadé,1095,ESTAC Troyes,Attack,19,Cote d'Ivoire,0,3,3,8,109,52,3274,32,6,0,0,7,3,2024,2026
+1179193,Amadou Diakité,1095,ESTAC Troyes,Right Winger,20,France,36,5,5,9,136,56,3882,9,2,1,1,12,0,2022,2026
+318507,Paul Bernardoni,1416,Amiens SC,Goalkeeper,29,France,40,14,13,23,627,422,37924,0,0,2,0,7,50,2013,2026
 191188,Alexis Sauvage,1421,Stade Reims,Goalkeeper,34,France,0,15,8,5,571,271,24147,0,0,0,0,8,0,2011,2025
-986258,Siaka Bakayoko,1416,Amiens SC,Centre-Back,20,France,34,6,4,7,182,113,9146,3,0,17,6,12,3,2021,2026
-1172908,Amine Chabane,1416,Amiens SC,Right-Back,19,Morocco,39,5,4,8,129,79,5784,1,0,3,1,17,3,2022,2026
-1146422,Ibrahim Traoré,1095,ESTAC Troyes,Centre-Forward,20,France,34,5,3,10,158,63,3730,19,5,8,1,1,2,2022,2026
+1092086,Lou Alexandre,1416,Amiens SC,Goalkeeper,20,France,0,5,4,6,112,61,5322,0,0,0,0,3,0,2021,2026
+1172908,Amine Chabane,1416,Amiens SC,Right-Back,19,Morocco,39,5,4,8,130,79,5784,1,0,3,1,17,3,2022,2026
+986258,Siaka Bakayoko,1416,Amiens SC,Centre-Back,20,France,34,6,4,7,183,113,9146,3,0,17,6,12,3,2021,2026
+914539,Yoan Koré,1416,Amiens SC,Centre-Back,21,France,88,6,6,11,285,130,9167,13,3,19,9,15,20,2021,2026
 433257,Arvin Appiah,1416,Amiens SC,Left-Back,25,England,25,11,9,18,415,214,9434,15,7,104,34,13,33,2015,2025
-914539,Yoan Koré,1416,Amiens SC,Centre-Back,21,France,88,6,6,11,284,130,9167,13,3,19,9,15,20,2021,2026
+739076,Aboubacar Lô,1080,Stade Lavallois,Centre-Back,26,Senegal,18,10,7,12,274,119,8921,7,0,14,6,18,0,2017,2026
 127076,Jérôme Roussillon,1416,Amiens SC,Left-Back,33,Guadeloupe,21,18,11,22,733,375,27077,14,27,157,48,37,22,2008,2025
+1169057,Coleen Louis,1416,Amiens SC,Left-Back,20,France,44,6,6,11,135,58,3409,2,2,11,1,3,4,2021,2026
 1075576,Nathan Talbot,1416,Amiens SC,Right-Back,18,France,59,4,4,9,132,55,3607,4,5,1,0,1,16,2022,2025
-739076,Aboubacar Lô,1080,Stade Lavallois,Centre-Back,26,Senegal,18,10,7,12,273,118,8831,7,0,14,6,18,0,2017,2026
-855134,Skelly Alvero,1416,Amiens SC,Defensive Midfield,23,France,80,9,8,11,249,111,6557,8,6,33,11,16,0,2018,2026
-1092086,Lou Alexandre,1416,Amiens SC,Goalkeeper,20,France,0,4,3,6,111,60,5232,0,0,0,0,3,0,2021,2025
-1169057,Coleen Louis,1416,Amiens SC,Left-Back,20,France,44,6,6,11,134,58,3409,2,2,11,1,3,4,2021,2026
-1001788,Ibrahim Fofana,1416,Amiens SC,Defensive Midfield,22,Cote d'Ivoire,45,6,4,7,222,111,7687,5,2,33,5,17,3,2021,2026
-612143,Kylian Kaïboue,1416,Amiens SC,Defensive Midfield,27,France,20,12,7,12,399,259,20189,21,16,178,65,77,0,2015,2026
-1175852,Alfoussen Dramé,1416,Amiens SC,Centre-Back,20,France,0,3,4,7,109,39,3150,1,0,0,0,13,0,2023,2025
-809180,Teddy Averlant,855,EA Guingamp,Right Midfield,26,Gabon,11,9,5,11,202,179,12485,32,11,135,61,16,8,2016,2026
-954090,Rayan Lutin,1416,Amiens SC,Attacking Midfield,23,Comoros,27,6,5,14,228,127,7757,15,12,29,5,11,11,2021,2026
-919620,Joseph Nduquidi,1416,Amiens SC,Central Midfield,21,Angola,15,7,5,11,253,131,7534,4,1,14,2,14,7,2019,2026
-1168587,Iliès Abdelkrim,1416,Amiens SC,Defensive Midfield,19,France,0,4,4,6,144,71,5729,1,2,0,0,3,0,2022,2025
-1175184,Carraro Injai,1416,Amiens SC,Attacking Midfield,19,France,0,4,4,7,152,61,4047,11,0,1,1,5,0,2023,2026
-592358,Victor Lobry,750,FC Sochaux-Montbéliard,Attacking Midfield,31,France,19,13,10,9,382,321,24040,24,25,167,40,30,0,2013,2026
-127182,Thomas Monconduit,1416,Amiens SC,Defensive Midfield,35,France,6,19,6,13,699,419,31110,16,21,202,37,75,4,2006,2026
-1314528,Ilan Daf,1416,Amiens SC,Defensive Midfield,18,France,0,4,4,5,117,49,2948,1,0,0,0,9,0,2023,2026
-1248495,Messy Manitu,1416,Amiens SC,Attacking Midfield,20,DR Congo,18,4,3,7,125,36,1798,1,5,11,4,1,10,2023,2026
-1354662,Enzo Somon,1416,Amiens SC,Attacking Midfield,18,France,87,4,4,8,83,42,2595,5,1,1,0,5,5,2023,2026
-309180,Jan Mlakar,1416,Amiens SC,Centre-Forward,27,Slovenia,9,14,10,32,613,368,22162,119,27,148,64,17,69,2013,2026
-467486,Antoine Leautey,1421,Stade Reims,Right Winger,30,France,0,12,8,10,447,373,26549,44,33,326,135,18,0,2014,2025
-1224983,Oscar Aïssat,1416,Amiens SC,Central Midfield,19,Algeria,46,5,4,7,136,63,3707,5,2,0,0,9,2,2022,2026
-1111776,Ibou Sané,347,FC Metz,Centre-Forward,21,Senegal,7,5,4,10,168,85,3911,25,4,48,21,8,2,2022,2026
-891379,Nordine Kandil,1159,AS Nancy-Lorraine,Left Winger,24,Morocco,70,9,6,7,229,125,7205,16,14,120,41,5,2,2018,2026
-1004829,Mathis Touho,11273,Rodez AF,Left Winger,21,France,11,6,7,9,195,128,7398,30,9,17,7,14,0,2021,2026
-1001785,Yvan Ikia Dimi,1416,Amiens SC,Right Winger,21,France,0,6,5,14,231,141,8073,32,13,46,19,20,7,2021,2026
-911990,Ilyes Hamache,1416,Amiens SC,Left Winger,23,France,7,7,6,9,215,149,8631,21,4,78,33,8,1,2020,2026
-796892,Samuel Ntamack,1416,Amiens SC,Centre-Forward,25,France,90,8,8,12,204,150,8087,44,8,163,68,9,0,2019,2026
-1175183,Peterson Paul,1416,Amiens SC,Left Winger,19,France,0,5,5,7,114,60,4183,11,7,0,0,1,0,2022,2026
-810789,Lisandru Olmeta,595,SC Bastia,Goalkeeper,20,France,1,6,8,22,280,94,8421,0,0,0,0,8,25,2021,2026
-51035,Johny Placide,595,SC Bastia,Goalkeeper,38,Haiti,30,23,8,27,922,495,44299,0,3,0,0,31,93,2004,2026
-1004478,Yanis Rafii,1416,Amiens SC,Centre-Forward,20,France,19,6,4,8,149,66,2704,12,3,10,4,7,0,2021,2026
-1461638,Aly Traoré,1416,Amiens SC,Centre-Forward,17,France,0,3,3,8,57,30,1795,16,0,2,1,0,7,2024,2026
-708078,Josué Chibozo,1416,Amiens SC,Second Striker,22,Benin,0,7,8,14,279,146,7434,46,19,39,11,6,2,2019,2025
-982403,Zakaria Ariss,595,SC Bastia,Left-Back,21,Morocco,5,6,5,6,169,127,9972,3,6,50,9,27,0,2021,2026
-651979,Anthony Roncaglia,595,SC Bastia,Centre-Back,25,France,4,10,2,6,296,137,8382,4,1,40,11,16,0,2017,2026
-238635,Julien Fabri,595,SC Bastia,Goalkeeper,32,France,23,17,10,12,602,186,16376,0,1,0,0,2,5,2009,2026
-251448,Florian Bohnert,595,SC Bastia,Right-Back,28,Luxembourg,15,16,8,23,568,403,26790,24,22,33,11,44,91,2011,2026
-857638,Juan Guevara,595,SC Bastia,Centre-Back,24,Colombia,3,6,4,11,136,78,5666,2,2,50,9,21,0,2020,2026
-863038,Tom Meynadier,595,SC Bastia,Right-Back,26,France,24,6,3,4,147,113,7075,0,7,28,7,12,0,2020,2026
-855309,Noah Zilliox,595,SC Bastia,Centre-Back,23,France,12,8,7,8,225,118,9103,1,2,7,2,23,0,2019,2026
-987302,Sacha Contena,595,SC Bastia,Goalkeeper,20,France,16,6,5,8,226,68,6029,0,1,0,0,6,0,2021,2026
-523780,Gustave Akueson,595,SC Bastia,Centre-Back,30,Togo,28,12,9,11,412,240,20436,12,2,18,5,52,5,2015,2026
-1174593,Donovan Basset,595,SC Bastia,Centre-Back,22,France,2,5,4,6,139,91,7814,6,0,0,0,10,0,2022,2026
+1175852,Alfoussen Dramé,1416,Amiens SC,Centre-Back,20,France,0,4,5,7,110,40,3240,1,0,0,0,13,0,2023,2026
+855134,Skelly Alvero,1416,Amiens SC,Defensive Midfield,23,France,80,9,8,11,250,111,6557,8,6,33,11,16,0,2018,2026
+1001788,Ibrahim Fofana,1416,Amiens SC,Defensive Midfield,22,Cote d'Ivoire,45,6,4,7,223,112,7777,5,2,34,5,17,3,2021,2026
+954090,Rayan Lutin,1416,Amiens SC,Attacking Midfield,23,Comoros,27,6,5,14,229,128,7767,15,12,29,5,11,11,2021,2026
+612143,Kylian Kaïboue,1416,Amiens SC,Defensive Midfield,27,France,20,12,7,12,400,260,20261,21,16,179,65,78,0,2015,2026
+809180,Teddy Averlant,855,EA Guingamp,Right Midfield,26,Gabon,11,9,5,11,203,180,12553,32,12,137,61,16,8,2016,2026
+592358,Victor Lobry,750,FC Sochaux-Montbéliard,Attacking Midfield,31,France,19,13,10,9,383,321,24040,24,25,167,40,30,0,2013,2026
+1168587,Iliès Abdelkrim,1416,Amiens SC,Defensive Midfield,19,France,0,5,5,7,145,72,5815,2,2,0,0,3,0,2022,2026
+127182,Thomas Monconduit,1416,Amiens SC,Defensive Midfield,35,France,6,19,6,13,700,419,31110,16,21,202,37,75,4,2006,2026
+919620,Joseph Nduquidi,1416,Amiens SC,Central Midfield,21,Angola,15,7,5,11,255,133,7678,4,1,14,2,14,7,2019,2026
+1314528,Ilan Daf,1416,Amiens SC,Defensive Midfield,18,France,0,4,4,5,118,49,2948,1,0,0,0,9,0,2023,2026
+1175184,Carraro Injai,1416,Amiens SC,Attacking Midfield,19,France,0,4,4,7,153,61,4047,11,0,1,1,5,0,2023,2026
+1248495,Messy Manitu,1416,Amiens SC,Attacking Midfield,20,DR Congo,18,4,3,7,126,36,1798,1,5,11,4,1,10,2023,2026
+1354662,Enzo Somon,1416,Amiens SC,Attacking Midfield,18,France,87,4,4,8,85,42,2595,5,1,1,0,5,5,2023,2026
+1224983,Oscar Aïssat,1416,Amiens SC,Central Midfield,19,Algeria,46,4,4,7,135,63,3707,5,2,0,0,9,2,2022,2025
+891379,Nordine Kandil,1159,AS Nancy-Lorraine,Left Winger,24,Morocco,70,9,6,7,230,126,7281,16,14,121,41,5,2,2018,2026
+1001785,Yvan Ikia Dimi,1416,Amiens SC,Right Winger,21,France,0,6,5,14,233,143,8119,32,13,46,19,20,7,2021,2026
+467486,Antoine Leautey,1421,Stade Reims,Right Winger,30,France,0,12,8,10,448,374,26627,44,33,326,135,18,0,2014,2025
+1111776,Ibou Sané,347,FC Metz,Centre-Forward,21,Senegal,7,5,4,10,169,86,3942,25,4,52,21,8,2,2022,2026
+309180,Jan Mlakar,1416,Amiens SC,Centre-Forward,27,Slovenia,9,14,10,32,614,369,22181,119,27,148,64,17,69,2013,2026
+911990,Ilyes Hamache,1416,Amiens SC,Left Winger,23,France,7,7,6,9,216,150,8636,22,4,79,34,8,1,2020,2026
+796892,Samuel Ntamack,1416,Amiens SC,Centre-Forward,25,France,90,8,8,12,205,151,8171,44,8,164,68,9,0,2019,2026
+1004478,Yanis Rafii,1416,Amiens SC,Centre-Forward,20,France,19,6,4,8,150,66,2704,12,3,10,4,7,0,2021,2026
+708078,Josué Chibozo,1416,Amiens SC,Second Striker,22,Benin,0,8,9,14,280,147,7455,46,19,39,11,6,2,2019,2026
+1004829,Mathis Touho,11273,Rodez AF,Left Winger,21,France,11,6,7,9,196,129,7462,30,9,17,7,14,0,2021,2026
+1175183,Peterson Paul,1416,Amiens SC,Left Winger,19,France,0,5,5,7,115,60,4183,11,7,0,0,1,0,2022,2026
+1461638,Aly Traoré,1416,Amiens SC,Centre-Forward,17,France,0,3,3,8,58,30,1795,16,0,2,1,0,7,2024,2026
+51035,Johny Placide,595,SC Bastia,Goalkeeper,38,Haiti,30,23,8,27,923,495,44299,0,3,0,0,31,93,2004,2026
+810789,Lisandru Olmeta,595,SC Bastia,Goalkeeper,20,France,1,6,8,22,281,94,8421,0,0,0,0,8,25,2021,2026
+238635,Julien Fabri,595,SC Bastia,Goalkeeper,32,France,23,17,10,12,603,186,16376,0,1,0,0,2,5,2009,2026
+982403,Zakaria Ariss,595,SC Bastia,Left-Back,21,Morocco,5,6,5,6,170,128,10062,3,6,51,9,27,0,2021,2026
+987302,Sacha Contena,595,SC Bastia,Goalkeeper,20,France,16,6,5,8,227,68,6029,0,1,0,0,6,0,2021,2026
+651979,Anthony Roncaglia,595,SC Bastia,Centre-Back,25,France,4,10,2,6,297,138,8472,4,1,40,11,16,0,2017,2026
+857638,Juan Guevara,595,SC Bastia,Centre-Back,24,Colombia,3,6,4,11,138,79,5756,2,2,50,9,21,0,2020,2026
 588645,Dumè Guidi,595,SC Bastia,Centre-Back,30,France,6,12,5,9,410,249,20814,16,2,82,20,63,0,2014,2025
-1448120,David Djédjé,595,SC Bastia,Centre-Back,19,Cote d'Ivoire,34,3,3,5,82,7,496,1,0,1,1,0,0,2024,2026
-1279526,Christ Inao Oulaï,595,SC Bastia,Central Midfield,20,Cote d'Ivoire,0,3,4,10,107,69,4646,3,4,41,11,22,13,2024,2026
-973852,Jocelyn Janneh,595,SC Bastia,Defensive Midfield,23,Guinea,66,6,3,8,187,100,6520,0,3,23,6,15,3,2021,2026
-726698,Victor Lebas,595,SC Bastia,Left-Back,21,Portugal,0,7,6,10,189,86,5597,11,4,0,0,15,4,2019,2026
-666960,Loïc Etoga,595,SC Bastia,Defensive Midfield,23,Cameroon,0,7,7,10,226,95,5698,6,4,25,4,29,1,2018,2026
-652128,Tom Ducrocq,855,EA Guingamp,Defensive Midfield,26,France,25,12,6,11,389,252,19886,9,12,110,32,60,0,2014,2026
-1427173,Alexandre Zaouai,595,SC Bastia,Attacking Midfield,21,Cote d'Ivoire,18,2,2,4,57,40,2152,3,3,21,10,3,0,2025,2026
-271390,Joachim Eickmayer,1154,Red Star FC,Defensive Midfield,32,France,0,14,10,9,540,357,26580,23,18,88,21,48,0,2013,2026
-1030143,Yahya Bathily,595,SC Bastia,Defensive Midfield,22,France,0,6,5,5,171,77,4590,9,3,3,1,8,0,2021,2026
-1173415,Matteo Petrignani,595,SC Bastia,Defensive Midfield,20,France,33,5,3,7,145,85,5593,8,3,6,2,16,0,2022,2026
-203324,Christophe Vincent,595,SC Bastia,Defensive Midfield,33,France,7,16,7,14,564,361,24922,24,20,148,52,63,0,2011,2026
-651977,Amine Boutrah,595,SC Bastia,Left Winger,25,France,10,10,5,8,271,206,14834,43,23,185,65,17,0,2017,2026
-999229,Jérémy Sebas,595,SC Bastia,Centre-Forward,23,Martinique,14,6,3,8,164,121,6129,19,3,76,35,12,5,2021,2026
-640488,Félix Tomi,595,SC Bastia,Centre-Forward,25,France,9,9,6,7,283,189,10495,32,9,87,40,21,0,2018,2026
-773807,Issiaka Karamoko,595,SC Bastia,Left Winger,24,France,8,10,11,11,249,182,11409,35,14,100,37,14,1,2017,2026
-986261,Ayman Aiki,595,SC Bastia,Right Winger,20,France,25,6,5,14,293,151,7569,25,4,32,12,1,34,2021,2026
-452877,Mehdi Merghem,595,SC Bastia,Right Winger,28,Algeria,29,11,9,16,422,244,13716,18,11,200,64,30,5,2016,2026
-974857,Maxime Blé,595,SC Bastia,Centre-Forward,23,France,11,7,3,7,174,105,5948,21,5,29,10,12,0,2020,2026
-395020,Nicolas Parravicini,595,SC Bastia,Centre-Forward,28,Italy,19,9,11,14,283,194,12024,50,12,7,0,23,0,2015,2026
-1064247,Zyed Beltaief,595,SC Bastia,Right Winger,20,Algeria,0,5,6,10,162,86,5414,15,1,0,0,4,5,2022,2026
-357069,Nicolas Kocik,1164,Le Mans FC,Goalkeeper,27,France,98,13,5,11,456,186,16427,0,1,0,0,11,2,2014,2026
-1180301,Ruben Beliandjou,595,SC Bastia,Attack,20,France,0,6,4,8,131,74,3949,21,1,8,1,6,0,2021,2026
-725963,Ewan Hatfout,1164,Le Mans FC,Goalkeeper,26,France,1,9,5,7,332,58,5197,0,0,0,0,1,0,2018,2026
-857653,Lucas Calodat,1164,Le Mans FC,Left-Back,24,France,22,8,7,10,234,133,9124,12,18,60,22,6,0,2019,2026
-569359,Augustin Delbecque,1164,Le Mans FC,Goalkeeper,24,France,55,10,3,9,210,33,2898,0,0,0,0,1,3,2017,2026
-1160753,Isaac Cossier,1164,Le Mans FC,Centre-Back,19,France,3,6,6,10,181,90,6744,5,0,6,3,12,0,2021,2026
-801762,Théo Eyoum,1164,Le Mans FC,Centre-Back,24,France,21,8,5,8,196,128,10354,3,1,20,4,11,0,2019,2026
-344382,Harold Voyer,1164,Le Mans FC,Centre-Back,29,Martinique,5,15,10,13,359,228,18556,4,4,12,8,47,1,2012,2026
-531960,Lucas Buades,1164,Le Mans FC,Right-Back,28,France,18,12,6,11,468,265,17966,25,19,111,39,22,0,2015,2026
-418652,Leroy Abanda,1164,Le Mans FC,Left-Back,25,France,0,12,14,25,360,185,11444,4,18,43,7,29,10,2015,2026
-1169041,Noa Boissé,1164,Le Mans FC,Centre-Back,20,France,32,5,2,6,102,45,3731,3,2,6,0,6,0,2022,2026
-334006,Anthony Ribelin,1164,Le Mans FC,Right-Back,30,France,12,14,10,12,513,291,20110,17,13,16,4,43,2,2013,2026
-386048,Samuel Yohou,1164,Le Mans FC,Centre-Back,34,France,17,16,8,15,507,274,22887,14,1,45,15,58,1,2010,2026
-1189317,Amadou Cissé,1164,Le Mans FC,Centre-Back,20,Guinea,0,4,6,10,135,32,2557,0,0,0,0,3,1,2023,2026
-371143,Milan Robin,1164,Le Mans FC,Central Midfield,26,France,24,11,6,11,256,192,12444,19,8,71,24,19,1,2014,2026
-941561,Lucas Bretelle,1164,Le Mans FC,Defensive Midfield,24,France,29,7,6,9,227,132,9977,11,7,28,9,20,0,2020,2026
-666744,Alexandre Lauray,1164,Le Mans FC,Defensive Midfield,29,France,8,14,7,11,359,231,17527,5,11,39,10,56,0,2013,2026
+863038,Tom Meynadier,595,SC Bastia,Right-Back,26,France,24,6,3,4,148,113,7075,0,7,28,7,12,0,2020,2026
+251448,Florian Bohnert,595,SC Bastia,Right-Back,28,Luxembourg,15,16,8,23,569,404,26851,24,22,33,11,45,91,2011,2026
+523780,Gustave Akueson,595,SC Bastia,Centre-Back,30,Togo,28,13,9,12,439,241,20526,12,2,19,5,52,5,2014,2026
+855309,Noah Zilliox,595,SC Bastia,Centre-Back,23,France,12,8,7,8,226,119,9193,1,2,7,2,23,0,2019,2026
+1448120,David Djédjé,595,SC Bastia,Centre-Back,19,Cote d'Ivoire,34,3,3,5,84,7,496,1,0,1,1,0,0,2024,2026
+1174593,Donovan Basset,595,SC Bastia,Centre-Back,22,France,2,5,4,6,140,93,7994,6,0,0,0,10,0,2022,2026
+1279526,Christ Inao Oulaï,595,SC Bastia,Central Midfield,20,Cote d'Ivoire,0,3,4,11,109,71,4745,3,4,42,11,22,13,2024,2026
+726698,Victor Lebas,595,SC Bastia,Left-Back,21,Portugal,0,7,6,10,190,87,5622,11,4,0,0,16,4,2019,2026
+973852,Jocelyn Janneh,595,SC Bastia,Defensive Midfield,23,Guinea,66,6,3,8,188,100,6520,0,3,23,6,15,3,2021,2026
+652128,Tom Ducrocq,855,EA Guingamp,Defensive Midfield,27,France,25,12,6,11,390,253,19917,9,12,111,32,60,0,2014,2026
+666960,Loïc Etoga,595,SC Bastia,Defensive Midfield,23,Cameroon,0,7,7,10,227,96,5769,6,4,25,4,30,1,2018,2026
+203324,Christophe Vincent,595,SC Bastia,Defensive Midfield,33,France,7,16,7,14,565,361,24922,24,20,148,52,63,0,2011,2026
+1427173,Alexandre Zaouai,595,SC Bastia,Attacking Midfield,21,Cote d'Ivoire,18,2,2,4,58,41,2157,3,3,22,10,3,0,2025,2026
+271390,Joachim Eickmayer,1154,Red Star FC,Defensive Midfield,32,France,0,15,11,10,570,359,26760,23,18,88,21,48,0,2012,2026
+1173415,Matteo Petrignani,595,SC Bastia,Defensive Midfield,20,France,33,5,3,6,137,85,5593,8,3,6,2,16,0,2022,2026
+999229,Jérémy Sebas,595,SC Bastia,Centre-Forward,23,Martinique,14,6,3,8,165,121,6129,19,3,76,35,12,5,2021,2026
+1030143,Yahya Bathily,595,SC Bastia,Defensive Midfield,22,France,0,6,5,5,174,77,4590,9,3,3,1,8,0,2021,2026
+651977,Amine Boutrah,595,SC Bastia,Left Winger,25,France,10,10,5,8,272,207,14924,43,23,187,65,17,0,2017,2026
+640488,Félix Tomi,595,SC Bastia,Centre-Forward,25,France,9,9,6,7,284,190,10585,32,10,88,40,21,0,2018,2026
+452877,Mehdi Merghem,595,SC Bastia,Right Winger,28,Algeria,29,11,9,16,423,245,13779,18,13,204,64,30,5,2016,2026
+986261,Ayman Aiki,595,SC Bastia,Right Winger,20,France,25,6,6,15,294,151,7569,25,4,32,12,1,34,2021,2026
+773807,Issiaka Karamoko,595,SC Bastia,Left Winger,24,France,8,10,11,11,250,183,11499,35,15,103,37,14,1,2017,2026
+974857,Maxime Blé,595,SC Bastia,Centre-Forward,23,France,11,7,3,7,175,105,5948,21,5,29,10,12,0,2020,2026
+1180301,Ruben Beliandjou,595,SC Bastia,Attack,20,France,0,6,4,8,132,74,3949,21,1,8,1,6,0,2021,2026
+395020,Nicolas Parravicini,595,SC Bastia,Centre-Forward,28,Italy,19,9,11,15,285,195,12037,50,12,7,0,23,0,2015,2026
+1064247,Zyed Beltaief,595,SC Bastia,Right Winger,20,Algeria,0,5,6,11,164,88,5429,15,1,0,0,4,5,2022,2026
+725963,Ewan Hatfout,1164,Le Mans FC,Goalkeeper,26,France,1,9,5,7,333,59,5206,0,0,0,0,1,0,2018,2026
+357069,Nicolas Kocik,1164,Le Mans FC,Goalkeeper,27,France,98,13,5,11,457,187,16508,0,1,0,0,11,2,2014,2026
+857653,Lucas Calodat,1164,Le Mans FC,Left-Back,24,France,22,8,7,10,235,134,9192,12,19,61,23,6,0,2019,2026
+569359,Augustin Delbecque,1164,Le Mans FC,Goalkeeper,24,France,55,10,3,9,211,33,2898,0,0,0,0,1,3,2017,2026
+1160753,Isaac Cossier,1164,Le Mans FC,Centre-Back,19,France,3,6,6,10,182,90,6744,5,0,6,3,12,0,2021,2026
+801762,Théo Eyoum,1164,Le Mans FC,Centre-Back,24,France,21,8,5,8,197,129,10444,3,1,20,4,11,0,2019,2026
+344382,Harold Voyer,1164,Le Mans FC,Centre-Back,29,Martinique,5,15,10,13,360,229,18646,4,4,12,8,48,1,2012,2026
+531960,Lucas Buades,1164,Le Mans FC,Right-Back,28,France,18,12,6,11,469,266,18056,25,19,111,39,22,0,2015,2026
+334006,Anthony Ribelin,1164,Le Mans FC,Right-Back,30,France,12,14,10,12,514,291,20110,17,13,16,4,43,2,2013,2026
+1169041,Noa Boissé,1164,Le Mans FC,Centre-Back,20,France,32,5,2,6,103,46,3821,3,2,6,0,6,0,2022,2026
+418652,Leroy Abanda,1164,Le Mans FC,Left-Back,25,France,0,12,14,25,361,186,11534,4,18,43,7,29,10,2015,2026
+386048,Samuel Yohou,1164,Le Mans FC,Centre-Back,34,France,17,16,8,15,508,274,22887,14,1,45,15,58,1,2010,2026
+1189317,Amadou Cissé,1164,Le Mans FC,Centre-Back,20,Guinea,0,4,6,10,136,32,2557,0,0,0,0,3,1,2023,2026
+371143,Milan Robin,1164,Le Mans FC,Central Midfield,26,France,24,11,6,11,257,193,12453,19,8,71,24,19,1,2014,2026
+941561,Lucas Bretelle,1164,Le Mans FC,Defensive Midfield,24,France,29,7,6,9,228,133,10037,11,7,28,9,20,0,2020,2026
+626592,Jean Vercruysse,1164,Le Mans FC,Central Midfield,25,France,10,10,7,13,282,185,13100,29,14,55,21,23,0,2017,2026
+666744,Alexandre Lauray,1164,Le Mans FC,Defensive Midfield,29,France,8,14,7,11,360,232,17617,5,11,41,11,57,0,2013,2026
+1166137,Adil Bourabaa,1164,Le Mans FC,Central Midfield,21,Algeria,11,6,4,8,103,68,5077,8,3,21,8,10,1,2021,2026
+590048,Edwin Quarshie,1164,Le Mans FC,Central Midfield,30,France,6,13,8,11,367,271,20056,22,13,38,16,28,0,2013,2026
 1010671,Martin Rossignol,1164,Le Mans FC,Central Midfield,22,France,27,7,5,7,196,143,8508,12,8,42,12,13,0,2019,2025
-590048,Edwin Quarshie,1164,Le Mans FC,Central Midfield,30,France,6,13,8,11,366,271,20056,22,13,38,16,28,0,2013,2026
-626592,Jean Vercruysse,1164,Le Mans FC,Central Midfield,25,France,10,10,7,13,281,184,13070,29,14,55,21,23,0,2017,2026
-1166137,Adil Bourabaa,1164,Le Mans FC,Central Midfield,21,Algeria,11,6,4,8,102,67,4996,8,3,19,8,10,1,2021,2026
-1004608,Malang Gomes,995,FC Nantes,Defensive Midfield,21,France,67,6,6,10,162,104,8035,14,3,5,2,20,4,2021,2026
-1081626,Izhak Hammoudi,1164,Le Mans FC,Central Midfield,21,France,31,4,4,5,92,45,2307,4,0,4,1,5,0,2021,2026
-1169163,Titouan Caro,1164,Le Mans FC,Attacking Midfield,21,France,0,6,3,6,113,27,1101,1,0,2,1,1,0,2021,2026
-422711,Dame Gueye,1164,Le Mans FC,Centre-Forward,30,Senegal,25,10,6,11,224,194,12796,84,18,133,53,18,1,2015,2026
-1029482,William Harhouz,1164,Le Mans FC,Centre-Forward,26,France,20,5,3,6,122,74,4208,22,13,20,5,3,0,2022,2026
-804386,Erwan Colas,1164,Le Mans FC,Left Winger,29,France,28,9,5,9,267,150,9878,34,22,62,29,5,0,2018,2026
-146373,Antoine Rabillard,1164,Le Mans FC,Centre-Forward,30,France,9,14,9,14,490,333,20508,83,42,187,82,39,0,2013,2026
+1081626,Izhak Hammoudi,1164,Le Mans FC,Central Midfield,21,France,31,4,4,5,93,45,2307,4,0,4,1,5,0,2021,2026
+1004608,Malang Gomes,995,FC Nantes,Defensive Midfield,21,France,67,6,6,10,163,105,8037,14,3,5,2,20,4,2021,2026
+1169163,Titouan Caro,1164,Le Mans FC,Attacking Midfield,21,France,0,6,3,6,114,27,1101,1,0,2,1,1,0,2021,2026
+422711,Dame Gueye,1164,Le Mans FC,Centre-Forward,30,Senegal,25,10,6,11,225,195,12864,84,18,135,53,18,1,2015,2026
+146373,Antoine Rabillard,1164,Le Mans FC,Centre-Forward,30,France,9,14,9,14,491,334,20530,83,42,187,82,39,0,2013,2026
+804386,Erwan Colas,1164,Le Mans FC,Left Winger,29,France,28,9,5,9,268,150,9878,34,22,62,29,5,0,2018,2026
+1029482,William Harhouz,1164,Le Mans FC,Centre-Forward,26,France,20,5,3,6,123,74,4208,22,13,20,5,3,0,2022,2026
+510260,Taylor Luvambo,1164,Le Mans FC,Left Winger,26,France,23,12,8,9,327,174,8399,32,9,67,27,14,0,2015,2026
 264567,Baptiste Guillaume,1164,Le Mans FC,Centre-Forward,30,Belgium,19,14,14,14,614,366,22578,77,22,218,105,36,9,2012,2025
-966069,Brice Oggad,1164,Le Mans FC,Right Winger,28,France,0,7,5,5,169,127,7772,41,8,25,8,16,0,2020,2026
-510260,Taylor Luvambo,1164,Le Mans FC,Left Winger,26,France,23,12,8,9,325,172,8279,32,9,62,27,13,0,2015,2026
-357117,Alban Lafont,995,FC Nantes,Goalkeeper,27,Cote d'Ivoire,0,13,7,27,565,422,37869,0,0,1,0,31,35,2014,2026
-468246,Steeve Beusnard,3166,Pau FC,Central Midfield,34,France,21,14,5,7,426,287,20498,26,12,132,31,37,0,2013,2026
-1166900,Youssouf Tandia,1159,AS Nancy-Lorraine,Midfield,20,France,38,4,3,4,57,48,2788,7,0,0,0,5,0,2021,2026
-1314454,Aboubacar Sidibé,750,FC Sochaux-Montbéliard,Centre-Forward,20,Mali,12,3,4,8,110,71,3306,14,5,2,2,13,6,2024,2026
+357117,Alban Lafont,995,FC Nantes,Goalkeeper,27,Cote d'Ivoire,0,13,7,27,566,423,37959,0,0,1,0,32,35,2014,2026
+966069,Brice Oggad,1164,Le Mans FC,Right Winger,28,France,0,7,5,5,170,128,7844,41,8,25,8,17,0,2020,2026
+468246,Steeve Beusnard,3166,Pau FC,Central Midfield,34,France,21,14,5,7,427,288,20530,26,12,132,31,37,0,2013,2026
+1314454,Aboubacar Sidibé,750,FC Sochaux-Montbéliard,Centre-Forward,20,Mali,12,3,4,8,111,72,3396,14,5,2,2,14,6,2024,2026
 811419,Fady Khatir,2969,Dijon FCO,Left-Back,29,France,3,8,8,7,176,140,10771,1,6,2,2,17,0,2017,2025
-659543,Matthis Abline,995,FC Nantes,Centre-Forward,23,France,10,9,9,17,317,218,12788,65,26,281,98,17,45,2018,2026
-1126894,Malcolm Jeng,1421,Stade Reims,Centre-Back,21,Sweden,0,5,6,12,152,68,4864,1,1,3,1,1,8,2022,2026
-358143,Chidozie Awaziem,995,FC Nantes,Centre-Back,29,Nigeria,6,13,12,30,608,374,29455,14,15,133,27,105,40,2014,2026
-982393,Lucas Mincarelli,969,Montpellier HSC,Left-Back,22,France,21,6,6,12,221,107,7489,8,1,21,6,11,3,2021,2026
-855098,Nolan Galves,11273,Rodez AF,Right-Back,23,France,25,9,6,11,241,148,10633,2,13,45,7,17,0,2018,2026
-676187,Hacène Benali,3166,Pau FC,Centre-Forward,26,Algeria,7,9,4,5,280,220,11740,56,13,75,26,23,0,2018,2026
-1178476,Antoine Sekongo,9202,USL Dunkerque,Central Midfield,22,Mali,8,4,3,5,108,91,5725,25,7,78,27,17,0,2023,2026
-1119933,Mattheo Guendez,1159,AS Nancy-Lorraine,Left Winger,20,Algeria,34,5,4,6,90,34,1115,2,0,8,3,3,0,2022,2026
-799936,Loris Mouyokolo,1290,Grenoble Foot 38,Centre-Back,25,France,24,10,6,10,295,128,10674,1,5,20,5,10,0,2017,2026
+1166900,Youssouf Tandia,1159,AS Nancy-Lorraine,Midfield,20,France,38,4,3,4,58,48,2788,7,0,0,0,5,0,2021,2026
+659543,Matthis Abline,995,FC Nantes,Centre-Forward,23,France,10,9,9,17,319,219,12797,65,26,281,98,17,45,2018,2026
+358143,Chidozie Awaziem,995,FC Nantes,Centre-Back,29,Nigeria,6,13,12,30,609,375,29545,14,15,134,27,105,40,2014,2026
+982393,Lucas Mincarelli,969,Montpellier HSC,Left-Back,22,France,21,6,6,12,222,107,7489,8,1,21,6,11,3,2021,2026
+1126894,Malcolm Jeng,1421,Stade Reims,Centre-Back,21,Sweden,0,5,6,12,153,68,4864,1,1,3,1,1,8,2022,2026
+1178476,Antoine Sekongo,9202,USL Dunkerque,Central Midfield,22,Mali,8,4,3,5,109,92,5799,25,7,79,27,17,0,2023,2026
+676187,Hacène Benali,3166,Pau FC,Centre-Forward,26,Algeria,7,9,4,5,281,221,11808,56,13,75,26,24,0,2018,2026
+855098,Nolan Galves,11273,Rodez AF,Right-Back,23,France,25,9,6,11,243,149,10723,2,13,45,7,17,0,2018,2026
+1119933,Mattheo Guendez,1159,AS Nancy-Lorraine,Left Winger,20,Algeria,34,5,4,6,91,35,1133,2,0,8,3,3,0,2022,2026
 1099652,Patrick Ouotro,1159,AS Nancy-Lorraine,Centre-Forward,20,Cote d'Ivoire,29,5,6,8,103,67,3312,15,2,50,21,3,10,2022,2026
+799936,Loris Mouyokolo,1290,Grenoble Foot 38,Centre-Back,25,France,24,10,6,10,297,130,10854,1,5,21,5,10,0,2017,2026
+1264782,Brayan Djadja,2969,Dijon FCO,Centre-Back,19,France,0,4,3,4,68,60,4901,2,0,0,0,10,0,2023,2026
 198629,Moïse Adilehou,1080,Stade Lavallois,Centre-Back,30,Benin,0,13,13,27,524,233,17359,9,1,25,8,30,15,2012,2025
-1264782,Brayan Djadja,2969,Dijon FCO,Centre-Back,19,France,0,4,3,4,67,59,4811,2,0,0,0,10,0,2023,2026
-344892,Gauthier Hein,347,FC Metz,Right Winger,29,France,10,13,7,10,490,345,23913,67,40,371,137,45,0,2014,2026
-465294,Allan Tchaptchet,1290,Grenoble Foot 38,Centre-Back,24,France,21,9,5,10,286,118,9715,1,0,31,7,15,0,2018,2026
-1125976,Zanga Koné,7042,US Boulogne,Centre-Forward,21,Cote d'Ivoire,91,4,4,5,64,48,2668,11,2,5,1,4,0,2022,2026
-344864,Jean-Kévin Duverne,995,FC Nantes,Centre-Back,29,Haiti,93,13,9,21,500,351,28156,10,9,80,21,41,19,2014,2026
-808833,Julien Domingues,2969,Dijon FCO,Centre-Forward,30,France,22,12,7,11,308,184,10074,66,8,23,17,8,0,2015,2026
+344892,Gauthier Hein,347,FC Metz,Right Winger,29,France,10,13,7,10,491,346,24003,67,40,372,137,45,0,2014,2026
+465294,Allan Tchaptchet,1290,Grenoble Foot 38,Centre-Back,24,France,21,9,5,10,287,119,9805,1,0,33,7,15,0,2018,2026
+1125976,Zanga Koné,7042,US Boulogne,Centre-Forward,21,Cote d'Ivoire,91,4,4,5,65,50,2848,11,2,5,1,5,0,2022,2026
+344864,Jean-Kévin Duverne,995,FC Nantes,Centre-Back,29,Haiti,93,13,9,21,501,352,28246,10,9,80,21,41,19,2014,2026
 944724,Ali Youssif,995,FC Nantes,Centre-Back,25,Libya,2,8,3,10,113,81,6913,7,0,9,2,12,25,2019,2026
-729872,Igor Miladinovic,618,AS Saint-Étienne,Attacking Midfield,23,Serbia,28,9,6,17,383,207,13076,35,18,89,35,23,19,2018,2026
+808833,Julien Domingues,2969,Dijon FCO,Centre-Forward,30,France,22,12,7,11,310,186,10229,67,8,25,19,8,0,2015,2026
+729872,Igor Miladinovic,618,AS Saint-Étienne,Attacking Midfield,23,Serbia,28,9,6,17,384,208,13166,35,19,91,36,23,19,2018,2026
+1195023,Zaid Seha,9202,USL Dunkerque,Right Winger,19,France,57,4,7,12,130,74,4621,8,3,2,2,4,1,2023,2026
 1004502,Aymeric Faurand-Tournaire,1080,Stade Lavallois,Centre-Forward,22,France,27,6,5,9,207,131,7560,41,5,8,4,11,0,2021,2026
-1195023,Zaid Seha,9202,USL Dunkerque,Right Winger,19,France,57,4,7,12,129,73,4591,8,3,2,2,3,1,2023,2026
-923757,Ewen Jaouen,1421,Stade Reims,Goalkeeper,19,France,29,6,9,13,247,132,11873,0,1,0,0,2,6,2021,2026
-395602,Alexandre Olliero,1290,Grenoble Foot 38,Goalkeeper,30,France,1,14,8,11,575,167,14985,0,0,0,0,3,0,2013,2026
-1130445,Abdoul Koné,1421,Stade Reims,Centre-Back,20,France,92,6,6,12,170,82,5896,3,3,13,3,20,4,2021,2026
-894585,Soumaïla Sylla,1421,Stade Reims,Goalkeeper,22,Guinea,94,6,3,14,241,90,7990,0,1,0,0,2,14,2021,2026
-355627,Sergio Akieme,1421,Stade Reims,Left-Back,28,Spain,18,12,5,12,410,248,20341,11,20,137,43,35,1,2015,2026
-863900,Samuel Kotto,1421,Stade Reims,Centre-Back,22,Cameroon,22,7,6,16,182,107,8268,2,1,20,5,18,6,2020,2026
-668966,Elie N'Tamon,1421,Stade Reims,Centre-Back,22,Cote d'Ivoire,28,6,3,8,122,93,7536,9,3,32,14,24,3,2018,2026
-453376,Joseph Okumu,1421,Stade Reims,Centre-Back,29,Kenya,2,12,6,24,430,233,18865,6,3,87,20,33,27,2015,2026
-570817,Maxime Busi,1421,Stade Reims,Right-Back,25,Belgium,4,9,6,14,323,170,11177,1,8,37,9,25,4,2018,2026
-1069037,Mohamed Ali Diadié,1421,Stade Reims,Centre-Back,20,Mauritania,0,6,5,13,167,101,8332,3,1,5,0,22,0,2021,2026
-1137808,Hiroki Sekine,1421,Stade Reims,Right-Back,22,Japan,3,5,3,16,149,108,7774,2,3,51,7,13,21,2022,2026
-1141520,Jean Mambuku,1421,Stade Reims,Right-Back,18,Italy,0,4,3,10,115,70,5043,5,4,17,1,8,31,2022,2026
-1363293,Patrick Zabi,1421,Stade Reims,Central Midfield,18,Cote d'Ivoire,86,3,4,7,89,51,3099,5,6,33,10,11,5,2024,2026
-1132634,Martial Tia,1421,Stade Reims,Attacking Midfield,19,Mali,87,4,2,8,84,62,3263,9,5,67,24,5,14,2022,2026
-139279,Nicolas Pallois,1421,Stade Reims,Centre-Back,37,France,5,20,9,10,759,491,41801,18,12,119,29,108,0,2006,2025
-418071,Théo Leoni,1421,Stade Reims,Central Midfield,26,Belgium,6,9,4,15,274,175,11566,13,26,94,34,18,23,2015,2026
-717585,Mory Gbane,1421,Stade Reims,Defensive Midfield,25,Cote d'Ivoire,24,9,5,14,251,193,14321,10,3,62,20,51,2,2018,2026
-1044893,Yaya Fofana,1421,Stade Reims,Central Midfield,22,Cote d'Ivoire,8,5,5,11,219,54,2700,13,2,23,8,12,0,2022,2026
-409153,Teddy Teuma,1421,Stade Reims,Central Midfield,31,Malta,0,16,7,20,631,457,35605,64,68,344,137,86,51,2011,2026
-841121,John Patrick,1421,Stade Reims,Central Midfield,22,Ireland,30,7,3,11,243,102,4544,1,4,32,6,15,3,2020,2026
-405686,Reda Khadra,1421,Stade Reims,Attacking Midfield,25,Germany,0,11,11,17,375,186,8982,16,23,109,55,6,6,2016,2026
-1108696,Lenny Sylla,1421,Stade Reims,Attacking Midfield,18,France,0,4,3,7,115,80,5169,9,4,0,0,4,0,2022,2025
-289435,Yohan Demoncy,1421,Stade Reims,Central Midfield,30,France,0,16,11,12,501,332,23387,17,29,100,29,52,0,2010,2026
-1054839,Mamadou Diakhon,1421,Stade Reims,Left Winger,19,Senegal,0,6,4,16,217,150,6685,15,22,73,27,6,23,2021,2026
-405397,Keito Nakamura,1421,Stade Reims,Left Winger,26,Japan,17,12,8,27,465,317,19545,106,32,465,175,16,49,2015,2026
-847279,Oumar Diakité,1421,Stade Reims,Centre-Forward,22,Cote d'Ivoire,0,6,6,18,233,165,9878,38,17,207,87,23,31,2021,2026
-1237306,Hafiz Umar Ibrahim,1421,Stade Reims,Centre-Forward,20,Nigeria,85,4,3,6,100,51,2753,26,4,44,16,5,0,2023,2026
-574385,Mohamed Daramy,1421,Stade Reims,Left Winger,24,Denmark,9,10,6,26,469,269,16216,62,33,248,103,14,28,2017,2026
-802997,Norman Bassette,1421,Stade Reims,Centre-Forward,20,Belgium,0,7,8,17,341,170,8128,49,6,106,45,20,29,2020,2026
-796589,Yassine Benhattab,995,FC Nantes,Right Winger,23,France,90,8,6,9,201,87,5245,9,15,69,26,6,0,2019,2026
-922828,Thiemoko Diarra,1421,Stade Reims,Left Winger,22,Mali,7,6,6,13,194,143,9707,24,22,101,44,12,6,2021,2026
-355369,Jordan,1421,Stade Reims,Centre-Forward,30,United States,0,14,10,26,545,371,19851,104,29,510,175,32,10,2013,2026
-1111912,Adama Bojang,1421,Stade Reims,Centre-Forward,21,The Gambia,27,5,4,14,165,95,4534,24,4,114,47,10,15,2022,2026
-980576,Amine Salama,1421,Stade Reims,Centre-Forward,26,France,0,6,7,6,183,112,4976,8,6,104,34,3,0,2021,2026
-1297264,Tidiane Diarrassouba,1421,Stade Reims,Right Winger,17,France,7,3,3,10,123,55,3223,8,4,3,2,3,17,2024,2026
-1073032,Ike Orazi,1421,Stade Reims,Left Winger,19,Ireland,73,5,4,14,187,72,4502,7,9,4,3,2,31,2022,2026
-357047,Gautier Larsonneur,618,AS Saint-Étienne,Goalkeeper,29,France,30,14,5,13,505,332,29881,0,0,0,0,24,2,2013,2026
-654408,Lucas Lavallée,618,AS Saint-Étienne,Goalkeeper,23,France,0,9,13,16,237,111,9848,0,0,0,0,5,7,2018,2026
-1111044,Mamour Ndiaye,618,AS Saint-Étienne,Goalkeeper,20,Senegal,1,5,3,7,123,58,5250,0,0,2,0,8,4,2022,2026
-955263,Kévin Pedro,618,AS Saint-Étienne,Right-Back,20,France,39,6,3,10,175,86,7045,3,1,18,5,7,4,2021,2026
-744186,Chico Lamba,618,AS Saint-Étienne,Centre-Back,23,Portugal,15,9,7,19,296,141,11459,12,5,18,4,34,16,2018,2026
-494586,Mickaël Nadé,618,AS Saint-Étienne,Centre-Back,27,France,3,13,4,13,382,216,17514,10,5,38,12,26,0,2014,2026
-481623,João Ferreira,618,AS Saint-Étienne,Right-Back,25,Portugal,13,12,10,22,433,210,13484,7,15,38,8,57,28,2015,2026
-966312,Sohaib Naïr,618,AS Saint-Étienne,Centre-Back,24,Algeria,18,8,5,11,212,114,9089,5,2,44,9,20,0,2019,2026
-617021,Ben Old,618,AS Saint-Étienne,Left-Back,24,New Zealand,11,10,5,20,286,187,10584,20,20,125,34,7,33,2017,2026
+538994,Pierre Ekwah,618,AS Saint-Étienne,Defensive Midfield,24,France,0,10,9,18,364,192,13532,21,7,173,61,16,18,2017,2026
+494586,Mickaël Nadé,618,AS Saint-Étienne,Centre-Back,27,France,3,13,5,14,383,217,17598,10,5,38,12,26,0,2014,2026
 861221,Ebenezer Annan,618,AS Saint-Étienne,Left-Back,24,Ghana,19,7,8,20,294,182,12122,2,12,26,5,32,7,2020,2026
-794349,Julien Le Cardinal,618,AS Saint-Étienne,Centre-Back,29,France,26,13,8,13,395,219,16327,14,4,63,25,34,0,2014,2026
-1133751,Lassana Traoré,618,AS Saint-Étienne,Left-Back,19,Senegal,34,4,2,6,54,12,995,0,1,3,0,2,9,2022,2026
-952770,Strahinja Stojkovic,618,AS Saint-Étienne,Right-Back,19,Serbia,2,6,8,17,200,97,6633,1,15,1,1,7,22,2021,2026
-324819,Maxime Bernauer,618,AS Saint-Étienne,Centre-Back,28,France,6,13,8,18,380,267,19468,5,11,38,9,32,8,2013,2026
-1368386,Nathan Kasia,618,AS Saint-Étienne,Centre-Back,17,France,0,3,4,7,53,29,2282,3,0,2,0,5,3,2024,2026
-579263,Augustine Boakye,618,AS Saint-Étienne,Attacking Midfield,25,Ghana,20,9,5,13,285,178,11993,39,36,169,58,30,0,2017,2026
-469695,Tamar Svetlin,618,AS Saint-Étienne,Defensive Midfield,25,Slovenia,0,12,6,20,418,309,21541,35,16,49,14,30,65,2015,2026
-657957,Jakob Breum,618,AS Saint-Étienne,Attacking Midfield,22,Denmark,10,8,5,16,293,230,13798,52,30,250,100,15,21,2019,2026
-538994,Pierre Ekwah,618,AS Saint-Étienne,Defensive Midfield,24,France,0,10,8,18,363,192,13532,21,7,173,61,16,18,2017,2026
-467151,Mahmoud Jaber,618,AS Saint-Étienne,Defensive Midfield,26,Israel,5,9,4,20,368,226,14782,10,19,69,14,39,14,2017,2026
-484992,Aïmen Moueffek,618,AS Saint-Étienne,Central Midfield,25,Morocco,29,10,4,12,328,178,8493,6,7,87,26,15,10,2016,2026
-1075584,Luan Gadegbeku,3166,Pau FC,Central Midfield,19,France,27,5,4,9,152,79,5347,5,0,4,0,6,21,2022,2026
-719926,Áron Csongvai,618,AS Saint-Étienne,Defensive Midfield,25,Hungary,0,8,5,10,283,236,18590,19,15,105,29,45,10,2019,2026
-1202299,Nadir El Jamali,618,AS Saint-Étienne,Attacking Midfield,19,France,31,4,3,9,136,81,4766,17,2,27,8,2,17,2023,2026
-1180811,Adam Baallal,618,AS Saint-Étienne,Central Midfield,19,Morocco,32,6,4,9,101,35,1863,3,1,1,1,2,13,2021,2026
-655012,Lucas Stassin,618,AS Saint-Étienne,Centre-Forward,21,Belgium,9,9,4,13,234,155,10137,56,23,281,131,15,23,2018,2026
-1133980,Modibo Sissoko,618,AS Saint-Étienne,Midfield,19,Mali,0,5,3,5,57,20,878,0,1,3,1,3,4,2022,2026
-1227102,Paul Eymard,618,AS Saint-Étienne,Central Midfield,18,France,36,4,4,12,125,69,4150,13,2,8,4,2,28,2023,2026
-342226,Irvin Cardona,618,AS Saint-Étienne,Right Winger,29,Malta,7,14,12,25,448,311,18507,92,42,327,128,25,14,2013,2026
-427572,Zuriko Davitashvili,618,AS Saint-Étienne,Left Winger,25,Georgia,22,13,9,24,495,369,24554,92,48,396,152,36,103,2014,2026
-1200419,Djylian N'Guessan,618,AS Saint-Étienne,Centre-Forward,17,France,25,4,3,12,153,72,3798,36,2,30,11,5,32,2023,2026
-867700,Joshua Duffus,618,AS Saint-Étienne,Centre-Forward,21,Jamaica,17,7,5,16,250,137,6992,32,23,169,81,18,7,2020,2026
-406608,Thierno Ballo,618,AS Saint-Étienne,Left Winger,24,Austria,8,12,8,23,456,340,22452,87,44,345,148,41,66,2015,2026
-1241207,Tylel Tati,995,FC Nantes,Centre-Back,18,France,78,4,4,10,97,59,4708,1,0,3,0,9,11,2023,2026
-928873,Alexis Mirbach,995,FC Nantes,Goalkeeper,21,France,16,6,5,13,265,85,7415,0,0,0,0,3,11,2021,2026
-807128,Saïdou Sow,995,FC Nantes,Centre-Back,24,Guinea,4,8,7,16,333,148,11217,5,3,32,13,17,31,2019,2026
-1044395,Marten-Chris Paalberg,618,AS Saint-Étienne,Centre-Forward,17,Estonia,49,5,4,12,158,76,4981,42,5,1,0,3,23,2022,2026
-127188,Maxime Dupé,995,FC Nantes,Goalkeeper,33,France,1,19,6,17,761,286,25639,0,1,1,0,7,11,2008,2026
-344072,Kelvin Amian,995,FC Nantes,Right-Back,28,France,98,14,5,18,495,361,29501,8,10,165,49,52,26,2013,2026
-352392,Lucas Perrin,995,FC Nantes,Centre-Back,27,France,5,13,8,19,418,223,17731,9,4,63,25,35,0,2014,2026
-825438,Sékou Doucouré,995,FC Nantes,Centre-Back,21,Mali,72,6,6,11,187,55,4033,2,0,0,0,4,2,2021,2026
-384859,Fabien Centonze,995,FC Nantes,Right-Back,30,France,18,13,9,10,454,304,22879,15,19,126,30,51,0,2013,2026
-1119455,Enzo Mongo,995,FC Nantes,Centre-Back,21,France,0,5,4,10,158,85,6721,7,1,0,0,9,0,2022,2026
-354352,Frédéric Guilbert,995,FC Nantes,Right-Back,31,France,24,16,11,19,608,389,32330,8,21,167,30,64,1,2011,2026
-815445,Hugo Lamy,995,FC Nantes,Right-Back,22,France,65,6,8,12,189,124,10232,2,9,4,1,19,1,2021,2026
-1119457,Louka Gautier,995,FC Nantes,Left-Back,20,France,0,5,4,6,113,78,5099,7,3,0,0,5,0,2022,2026
-1119456,Louis Leroux,995,FC Nantes,Attacking Midfield,20,France,19,6,5,12,162,112,7087,15,7,31,12,9,7,2021,2026
-585973,Johann Lepenant,995,FC Nantes,Defensive Midfield,23,France,8,10,6,15,346,227,15481,7,9,85,19,29,51,2017,2026
-1004619,Dehmaine Tabibou,995,FC Nantes,Central Midfield,21,France,17,6,5,15,238,158,9014,14,5,49,17,17,38,2021,2026
-1176215,Bahmed Deuff,995,FC Nantes,Defensive Midfield,20,Mauritania,52,5,5,10,124,73,4353,5,0,12,5,9,0,2021,2026
-372712,Ibrahima Sissoko,995,FC Nantes,Defensive Midfield,28,Mali,28,13,6,20,562,338,23321,15,17,195,43,80,16,2014,2026
-804934,Wilitty Younoussa,995,FC Nantes,Central Midfield,24,Cameroon,23,8,5,9,263,168,10177,8,8,161,43,24,2,2019,2026
-649024,Lamine Diack,995,FC Nantes,Defensive Midfield,25,Senegal,0,9,8,14,273,164,10934,11,8,38,9,31,2,2018,2026
-1119453,Herba Guirassy,995,FC Nantes,Left Winger,19,France,11,6,5,12,159,102,5395,32,3,47,22,5,4,2021,2026
-855159,Sacha Ziani,995,FC Nantes,Defensive Midfield,23,France,69,9,6,12,198,106,8105,8,8,0,0,19,0,2018,2026
-853491,Killian Corredor,995,FC Nantes,Centre-Forward,25,France,12,10,6,7,277,218,16704,59,27,356,134,13,0,2017,2026
-462348,Mostafa Mohamed,995,FC Nantes,Centre-Forward,28,Egypt,31,11,6,21,523,393,24026,110,30,536,205,41,77,2016,2026
-1028162,Antoine Joujou,995,FC Nantes,Left Winger,23,France,7,7,6,11,211,145,6319,21,8,70,18,3,8,2020,2026
-399383,Mathieu Cafaro,995,FC Nantes,Right Winger,29,France,20,13,8,11,454,265,16919,45,29,440,161,56,0,2014,2026
-531949,Ignatius Ganago,995,FC Nantes,Centre-Forward,27,Cameroon,37,10,6,16,466,242,11964,41,17,254,88,10,15,2017,2026
-1306613,Moustapha Dabo,995,FC Nantes,Right Winger,19,France,47,4,6,11,97,70,4664,21,5,6,1,5,12,2023,2026
-1201858,Klaus Camara,995,FC Nantes,Right Winger,18,France,0,4,4,6,88,64,3534,22,0,0,0,5,0,2023,2026
-1306607,Junior Koné,995,FC Nantes,Centre-Forward,19,France,0,3,4,8,90,58,3794,15,3,3,1,4,0,2024,2026
-60561,Anthony Lopes,995,FC Nantes,Goalkeeper,34,Portugal,1,21,4,23,1019,628,56052,0,3,2,0,24,47,2006,2026
+1119457,Louka Gautier,995,FC Nantes,Left-Back,20,France,0,5,3,5,111,78,5099,7,3,0,0,5,0,2022,2026
+405686,Reda Khadra,1421,Stade Reims,Attacking Midfield,25,Germany,0,11,11,17,376,186,8982,16,23,109,55,6,6,2016,2026
+1073032,Ike Orazi,1421,Stade Reims,Left Winger,19,Ireland,73,5,4,13,166,72,4502,7,9,4,3,2,31,2022,2026
+823521,Evans Maurin,1290,Grenoble Foot 38,Centre-Forward,25,France,20,8,8,13,267,99,4490,33,2,46,17,13,0,2019,2026
+355369,Jordan,1421,Stade Reims,Centre-Forward,30,United States,0,14,10,26,547,371,19851,104,29,510,175,32,10,2013,2026
 190280,Patrik Carlgren,995,FC Nantes,Goalkeeper,33,Sweden,30,16,8,24,609,380,33800,0,0,1,1,19,19,2010,2025
-485965,Nicolas Cozza,995,FC Nantes,Centre-Back,26,France,3,10,5,14,467,243,18051,6,9,59,18,24,21,2016,2025
-962555,Abakar Sylla,995,FC Nantes,Centre-Back,22,Cote d'Ivoire,4,6,5,16,210,91,6042,5,1,33,11,20,6,2021,2026
+928873,Alexis Mirbach,995,FC Nantes,Goalkeeper,21,France,16,6,5,13,266,85,7415,0,0,0,0,3,11,2021,2026
+485965,Nicolas Cozza,995,FC Nantes,Centre-Back,26,France,3,12,6,16,472,243,18051,6,9,59,18,24,21,2015,2026
+60561,Anthony Lopes,995,FC Nantes,Goalkeeper,34,Portugal,1,21,4,23,1020,629,56142,0,3,2,0,24,47,2006,2026
+1241207,Tylel Tati,995,FC Nantes,Centre-Back,18,France,78,4,4,10,98,59,4708,1,0,3,0,9,11,2023,2026
+962555,Abakar Sylla,995,FC Nantes,Centre-Back,22,Cote d'Ivoire,4,6,5,16,211,91,6042,5,1,33,11,20,6,2021,2026
+344072,Kelvin Amian,995,FC Nantes,Right-Back,28,France,98,14,5,18,496,362,29591,8,10,168,49,52,26,2013,2026
 332560,Deiver Machado,995,FC Nantes,Left-Back,31,Colombia,27,14,7,23,677,363,27167,15,31,132,29,66,19,2012,2025
-944355,Mathieu Acapandié,995,FC Nantes,Right-Back,20,Madagascar,22,6,5,17,261,128,8956,3,5,2,1,7,6,2021,2026
-911328,Mohamed Kaba,995,FC Nantes,Central Midfield,23,Guinea,21,7,5,7,224,146,9921,7,12,71,30,23,0,2019,2026
+384859,Fabien Centonze,995,FC Nantes,Right-Back,30,France,18,13,9,10,455,304,22879,15,19,126,30,51,0,2013,2026
+354352,Frédéric Guilbert,995,FC Nantes,Right-Back,31,France,24,16,11,19,609,390,32418,8,21,167,30,65,1,2011,2026
+944355,Mathieu Acapandié,995,FC Nantes,Right-Back,20,Madagascar,22,6,5,17,262,129,9027,3,5,2,1,8,6,2021,2026
 169511,Uros Radakovic,995,FC Nantes,Centre-Back,31,Serbia,26,16,15,30,652,333,27346,13,5,52,19,52,11,2010,2025
-1155608,Amady Camara,995,FC Nantes,Centre-Forward,20,Mali,14,4,4,11,157,83,3180,12,6,47,20,0,2,2023,2026
-74869,Francis Coquelin,1080,Stade Lavallois,Defensive Midfield,35,France,13,20,12,33,942,490,29604,12,15,75,17,82,26,2007,2026
-113707,Rémy Cabella,995,FC Nantes,Attacking Midfield,35,France,20,19,11,22,801,537,35938,99,79,470,187,60,21,2008,2026
-78047,Brice Maubleu,3166,Pau FC,Goalkeeper,36,France,1,19,5,12,719,372,33119,0,1,0,0,7,0,2008,2026
-96533,Youssef El Arabi,995,FC Nantes,Centre-Forward,38,Morocco,19,18,9,36,982,705,45496,332,76,358,175,52,47,2008,2025
-883866,Issiaka Touré,618,AS Saint-Étienne,Goalkeeper,20,France,0,8,5,12,216,50,4394,1,0,0,0,1,0,2019,2026
-1052420,Aboubaka Soumahoro,618,AS Saint-Étienne,Centre-Back,20,France,18,5,7,14,197,79,5084,6,0,7,4,9,15,2022,2026
+1119456,Louis Leroux,995,FC Nantes,Attacking Midfield,20,France,19,6,5,12,163,113,7089,15,7,31,12,9,7,2021,2026
+585973,Johann Lepenant,995,FC Nantes,Defensive Midfield,23,France,8,10,6,15,347,228,15571,7,9,86,20,29,51,2017,2026
+825438,Sékou Doucouré,995,FC Nantes,Centre-Back,21,Mali,72,6,6,11,188,55,4033,2,0,0,0,4,2,2021,2026
+1004619,Dehmaine Tabibou,995,FC Nantes,Central Midfield,21,France,17,6,5,15,239,159,9093,14,5,51,17,17,38,2021,2026
+911328,Mohamed Kaba,995,FC Nantes,Central Midfield,23,Guinea,21,8,5,7,232,146,9921,7,12,71,30,23,0,2019,2026
+372712,Ibrahima Sissoko,995,FC Nantes,Defensive Midfield,28,Mali,28,13,6,20,563,339,23411,15,17,198,44,80,16,2014,2026
+113707,Rémy Cabella,995,FC Nantes,Attacking Midfield,35,France,20,19,11,22,802,537,35938,99,79,470,187,60,21,2008,2026
+1176215,Bahmed Deuff,995,FC Nantes,Defensive Midfield,20,Mauritania,52,5,5,10,125,73,4353,5,0,12,5,9,0,2021,2026
+74869,Francis Coquelin,1080,Stade Lavallois,Defensive Midfield,35,France,13,20,12,33,943,490,29604,12,15,75,17,82,26,2007,2026
+1119453,Herba Guirassy,995,FC Nantes,Left Winger,20,France,11,6,5,12,160,103,5485,32,4,50,22,5,4,2021,2026
+531949,Ignatius Ganago,995,FC Nantes,Centre-Forward,27,Cameroon,37,10,6,16,467,242,11964,41,17,254,88,10,15,2017,2026
+1155608,Amady Camara,995,FC Nantes,Centre-Forward,20,Mali,14,4,4,11,158,83,3180,12,6,47,20,0,2,2023,2026
+462348,Mostafa Mohamed,995,FC Nantes,Centre-Forward,28,Egypt,31,11,6,21,524,393,24026,110,30,536,205,41,77,2016,2026
+1227109,Yanel Zézé,995,FC Nantes,Goalkeeper,18,France,40,4,4,8,65,28,2430,0,0,0,0,1,2,2023,2026
+352392,Lucas Perrin,995,FC Nantes,Centre-Back,27,France,5,13,8,19,419,224,17821,9,5,64,25,35,0,2014,2026
+807128,Saïdou Sow,995,FC Nantes,Centre-Back,24,Guinea,4,8,7,16,334,149,11307,5,3,33,13,17,31,2019,2026
+127188,Maxime Dupé,995,FC Nantes,Goalkeeper,33,France,1,19,6,17,762,287,25729,0,1,1,0,7,11,2008,2026
+96533,Youssef El Arabi,995,FC Nantes,Centre-Forward,38,Morocco,19,19,10,36,983,706,45530,332,77,358,175,52,47,2008,2026
+815445,Hugo Lamy,995,FC Nantes,Right-Back,22,France,65,6,8,12,191,124,10232,2,9,4,1,19,1,2021,2026
+804934,Wilitty Younoussa,995,FC Nantes,Central Midfield,24,Cameroon,23,8,5,9,264,169,10248,10,8,163,45,24,2,2019,2026
+1119455,Enzo Mongo,995,FC Nantes,Centre-Back,21,France,0,5,4,10,161,85,6721,7,1,0,0,9,0,2022,2026
+796883,Ryad Hachem,1154,Red Star FC,Central Midfield,28,France,0,11,5,8,288,229,17243,15,15,72,21,20,0,2016,2026
+649024,Lamine Diack,995,FC Nantes,Defensive Midfield,25,Senegal,14,9,8,14,274,164,10934,11,8,38,9,31,2,2018,2026
+855159,Sacha Ziani,995,FC Nantes,Defensive Midfield,23,France,69,9,6,12,200,106,8105,8,8,0,0,19,0,2018,2026
+853491,Killian Corredor,995,FC Nantes,Centre-Forward,25,France,12,10,6,7,278,218,16704,59,27,356,134,13,0,2017,2026
+1028162,Antoine Joujou,995,FC Nantes,Left Winger,23,France,7,7,6,11,212,146,6330,22,8,71,19,3,8,2020,2026
+796589,Yassine Benhattab,995,FC Nantes,Right Winger,23,France,90,8,6,9,202,87,5245,9,15,69,26,6,0,2019,2026
+399383,Mathieu Cafaro,995,FC Nantes,Right Winger,29,France,20,13,8,11,455,266,17007,45,29,443,162,56,0,2014,2026
+1306607,Junior Koné,995,FC Nantes,Centre-Forward,19,France,0,3,4,8,92,58,3794,15,3,3,1,4,0,2024,2026
+1306613,Moustapha Dabo,995,FC Nantes,Right Winger,19,France,0,4,6,11,99,70,4664,21,5,6,1,5,12,2023,2026
+1201858,Klaus Camara,995,FC Nantes,Right Winger,18,France,0,4,4,6,90,64,3534,22,0,0,0,5,0,2023,2026
+357047,Gautier Larsonneur,618,AS Saint-Étienne,Goalkeeper,29,France,30,14,5,13,505,332,29881,0,0,0,0,24,2,2013,2026
+78047,Brice Maubleu,3166,Pau FC,Goalkeeper,36,France,1,19,5,12,720,373,33209,0,1,0,0,7,0,2008,2026
+955263,Kévin Pedro,618,AS Saint-Étienne,Right-Back,20,France,39,6,3,10,175,86,7045,3,1,18,5,7,4,2021,2026
+883866,Issiaka Touré,618,AS Saint-Étienne,Goalkeeper,20,France,0,8,5,12,217,51,4484,1,0,0,0,1,0,2019,2026
+744186,Chico Lamba,618,AS Saint-Étienne,Centre-Back,23,Portugal,15,9,7,19,296,141,11459,12,5,18,4,34,16,2018,2026
+617021,Ben Old,618,AS Saint-Étienne,Left-Back,24,New Zealand,11,10,5,20,286,187,10584,20,20,125,34,7,33,2017,2026
+481623,João Ferreira,618,AS Saint-Étienne,Right-Back,25,Portugal,13,12,10,22,433,210,13484,7,15,38,8,57,28,2015,2026
+794349,Julien Le Cardinal,618,AS Saint-Étienne,Centre-Back,29,France,26,13,8,13,395,219,16327,14,4,63,25,34,0,2014,2026
+324819,Maxime Bernauer,618,AS Saint-Étienne,Centre-Back,28,France,6,13,8,18,380,267,19468,5,11,38,9,32,8,2013,2026
+1052420,Aboubaka Soumahoro,618,AS Saint-Étienne,Centre-Back,20,France,18,5,7,14,199,80,5090,6,0,7,4,9,15,2022,2026
 580747,Yvann Maçon,618,AS Saint-Étienne,Right-Back,26,Guadeloupe,0,9,7,14,369,195,14356,9,8,93,32,46,5,2017,2025
-289432,Dylan Batubinsika,618,AS Saint-Étienne,Centre-Back,29,DR Congo,0,16,12,35,544,308,24957,14,3,63,18,39,20,2011,2026
-111038,Dennis Appiah,618,AS Saint-Étienne,Right-Back,33,France,8,20,9,25,803,506,39211,1,20,52,12,48,24,2007,2026
-1091219,Abdoulaye Kanté,618,AS Saint-Étienne,Defensive Midfield,19,Cote d'Ivoire,14,6,7,13,204,100,7481,3,3,62,11,16,3,2021,2026
-1207431,Axel Dodote,3166,Pau FC,Centre-Back,19,France,4,4,5,10,113,56,4203,0,0,1,0,5,12,2023,2026
-212804,Florian Tardieu,969,Montpellier HSC,Central Midfield,34,France,5,16,6,9,571,441,35588,34,27,236,69,87,0,2011,2026
-989106,Viktor Dzodic,969,Montpellier HSC,Goalkeeper,19,Serbia,50,6,3,12,173,73,6280,0,0,0,0,4,20,2021,2026
-1052286,Jules Mouton,1290,Grenoble Foot 38,Defensive Midfield,21,France,0,6,4,8,181,104,7753,8,1,0,0,10,0,2021,2026
-696600,Simon Ngapandouetnbu,969,Montpellier HSC,Goalkeeper,23,Cameroon,31,8,5,21,407,106,9518,0,0,0,0,6,1,2019,2026
-193142,Mathieu Michel,969,Montpellier HSC,Goalkeeper,34,France,1,16,12,11,634,300,26774,0,1,1,0,14,0,2011,2026
-1248796,Kevin Kamdem,969,Montpellier HSC,Goalkeeper,20,Cameroon,60,4,3,8,100,27,2399,0,0,0,0,1,0,2023,2026
-970364,Yaël Mouanga,969,Montpellier HSC,Centre-Back,21,France,6,6,5,8,248,101,7667,4,0,6,3,13,0,2021,2026
-507344,Becir Omeragic,969,Montpellier HSC,Centre-Back,23,Switzerland,0,11,5,23,499,274,21618,6,2,90,26,24,44,2016,2026
-842338,Enzo Tchato,969,Montpellier HSC,Right-Back,23,Cameroon,29,9,3,17,262,151,10953,5,8,26,7,14,7,2018,2026
-1053148,Naoufel El Hannach,969,Montpellier HSC,Right-Back,19,Morocco,3,6,7,16,204,87,6015,5,2,12,4,9,14,2021,2026
-537127,Théo Sainte-Luce,969,Montpellier HSC,Left-Back,27,France,17,12,6,12,422,202,15457,6,5,50,13,23,0,2015,2026
-1210124,Isyak Mohamed,969,Montpellier HSC,Right-Back,17,France,0,3,3,10,149,61,4438,1,0,0,0,9,8,2024,2026
-1203026,Wilfried Ndollo,969,Montpellier HSC,Right-Back,21,Cameroon,25,4,3,8,101,52,3539,0,0,1,0,11,0,2023,2026
-201737,Christopher Jullien,969,Montpellier HSC,Centre-Back,32,Guadeloupe,6,16,9,21,711,376,31814,42,20,178,47,63,2,2010,2025
-386057,Julien Laporte,969,Montpellier HSC,Centre-Back,32,France,15,15,5,9,537,336,28459,17,5,123,24,57,0,2012,2026
-1209092,Alexandre Ebener,969,Montpellier HSC,Left-Back,19,France,0,3,3,8,109,41,2829,0,0,0,0,4,0,2023,2025
-1019950,Théo Chennahi,969,Montpellier HSC,Central Midfield,21,France,44,6,3,11,211,122,8998,12,3,30,7,23,0,2021,2026
-624037,Joris Chotard,969,Montpellier HSC,Defensive Midfield,23,France,0,10,5,14,353,271,18838,5,16,129,34,33,28,2017,2026
-782630,Khalil Fayad,969,Montpellier HSC,Central Midfield,22,Morocco,10,7,3,10,220,134,6689,9,11,55,18,22,16,2020,2026
-919236,Everson Jr,969,Montpellier HSC,Defensive Midfield,22,France,77,7,5,6,235,105,7345,11,2,45,16,21,0,2020,2026
-977877,Ayanda Sishuba,969,Montpellier HSC,Attacking Midfield,20,Belgium,28,6,9,18,250,107,6479,26,4,30,10,7,15,2021,2026
-127156,Téji Savanier,347,FC Metz,Attacking Midfield,34,France,10,18,5,7,660,464,35298,82,93,623,226,113,4,2008,2026
-1210107,Noah Vidal-Cartoux,969,Montpellier HSC,Attacking Midfield,18,France,0,3,3,8,132,55,3547,13,2,10,2,4,2,2024,2026
-805861,Nabil Homssa,969,Montpellier HSC,Central Midfield,24,France,20,7,7,8,124,77,5422,4,7,0,0,17,0,2019,2026
-1191481,Lucas Da Silva,969,Montpellier HSC,Central Midfield,19,France,0,3,3,7,117,60,4154,6,3,8,4,9,0,2023,2025
-557614,Nathanaël Mbuku,969,Montpellier HSC,Left Winger,23,DR Congo,7,10,7,26,413,249,12824,39,22,202,76,15,75,2017,2026
-1093482,Nicolas Pays,969,Montpellier HSC,Right Winger,23,France,18,6,5,8,165,117,7029,20,5,68,26,4,0,2020,2026
-1047104,Yanis Issoufou,969,Montpellier HSC,Left Winger,19,France,7,6,3,13,242,101,6247,20,12,31,14,11,24,2021,2026
-618425,Tanguy Coulibaly,969,Montpellier HSC,Right Winger,24,France,0,9,6,15,317,174,8796,20,10,131,50,28,0,2018,2026
-290561,Alexandre Mendy,969,Montpellier HSC,Centre-Forward,31,Guinea-Bissau,19,14,13,16,570,399,26756,144,22,536,194,38,7,2013,2026
-1106860,Enzo Molebe,969,Montpellier HSC,Centre-Forward,17,France,14,6,6,17,195,87,4833,36,3,21,12,4,31,2021,2026
-986262,Junior Ndiaye,969,Montpellier HSC,Centre-Forward,21,United Arab Emirates,24,6,4,19,243,148,9777,63,4,36,14,5,16,2021,2026
-1231401,Victor Orakpo,1159,AS Nancy-Lorraine,Centre-Forward,19,Nigeria,24,3,5,6,94,32,1476,5,1,28,6,2,0,2024,2026
-981977,Axel Guéguin,969,Montpellier HSC,Right Winger,21,France,22,6,3,14,270,76,4397,14,8,15,4,7,8,2021,2026
-1382212,Fayssal El Mahboub,969,Montpellier HSC,Right Winger,17,France,0,2,3,5,91,23,1046,1,1,1,0,2,0,2024,2025
-1200426,Robin Thiland-Herard,969,Montpellier HSC,Centre-Forward,17,France,0,4,4,9,134,59,4034,28,1,8,3,3,13,2023,2026
-639582,Tom Ritzy Hülsmann,1421,Stade Reims,Goalkeeper,22,Germany,1,8,8,14,260,122,10741,0,2,0,0,13,0,2019,2026
-507391,Edin Omeragic,1421,Stade Reims,Goalkeeper,24,Switzerland,12,10,6,12,313,155,13841,0,0,1,0,4,3,2016,2026
-671590,Daouda Guindo,1421,Stade Reims,Left-Back,23,Mali,27,7,5,15,265,119,7857,6,10,69,20,18,4,2020,2026
-819419,Armel Zohouri,1421,Stade Reims,Right-Back,25,Cote d'Ivoire,63,7,5,19,271,165,13305,3,13,9,2,38,7,2020,2026
-1385755,Manzur Okwaro,1421,Stade Reims,Centre-Back,20,Kenya,0,4,3,7,40,19,1334,0,0,4,1,2,15,2023,2026
-1108459,Aleksandr Guboglo,1421,Stade Reims,Right-Back,19,Canada,0,4,2,7,74,37,1791,1,1,8,2,4,8,2022,2026
-854989,Jean-Philippe Célestin,1421,Stade Reims,Centre-Back,23,France,0,8,9,11,168,106,8586,8,0,0,0,6,0,2019,2026
-1489152,John Otomewo,1421,Stade Reims,Defensive Midfield,19,Nigeria,5,2,2,4,26,23,1736,1,0,24,7,3,0,2025,2026
-1241208,Théo Deflorenne,1421,Stade Reims,Central Midfield,17,France,0,4,3,5,77,50,3360,0,0,0,0,3,3,2023,2026
-1175859,Chamsedin Kouranfal,1421,Stade Reims,Central Midfield,20,France,0,2,2,2,27,23,1897,3,0,0,0,3,0,2023,2026
-704270,Sambou Soumano,1421,Stade Reims,Centre-Forward,25,Senegal,99,8,9,8,257,193,10131,66,9,225,82,7,0,2019,2026
-444380,Youssef El Kachati,1421,Stade Reims,Centre-Forward,26,Morocco,10,11,8,10,389,215,15107,87,23,232,92,31,0,2016,2026
-1284766,Quentin Paris,1421,Stade Reims,Centre-Forward,19,France,0,4,3,3,76,42,1436,8,0,30,14,10,0,2023,2026
-807925,Amine Kashi,1421,Stade Reims,Left Winger,22,France,0,6,7,9,151,79,4389,22,3,2,0,8,0,2020,2026
-1297664,Arone Gadou,1421,Stade Reims,Centre-Forward,17,France,0,4,3,9,99,58,4056,17,2,9,3,4,17,2023,2026
-542452,Jonathan Fischer,347,FC Metz,Goalkeeper,24,Denmark,1,10,5,12,292,220,19963,0,1,2,0,5,2,2017,2026
-568728,Pape Sy,347,FC Metz,Goalkeeper,29,Senegal,61,11,4,16,275,41,3503,0,0,0,0,0,7,2015,2026
-1038308,Michel Mboula,347,FC Metz,Centre-Back,23,Gabon,4,6,3,15,170,101,7764,6,4,30,6,21,14,2021,2026
-345067,Jean Ruiz,347,FC Metz,Centre-Back,28,France,5,13,8,19,557,328,24979,10,11,52,15,67,17,2014,2026
-666975,Ousmane Ba,347,FC Metz,Goalkeeper,24,Senegal,40,9,5,12,235,58,4933,0,0,0,0,6,6,2018,2026
-347594,Florian Miguel,347,FC Metz,Left-Back,29,France,3,13,8,12,536,370,30743,21,13,211,49,73,0,2014,2026
-726697,Cristian Devenish,347,FC Metz,Centre-Back,25,Colombia,42,8,7,15,326,178,13891,5,1,25,8,20,5,2019,2026
-1086466,Idris Mohamed,347,FC Metz,Centre-Back,22,Comoros,98,5,4,9,130,94,7714,5,1,3,1,11,4,2022,2026
-190685,Bouna Sarr,347,FC Metz,Right-Back,34,Senegal,70,17,5,17,687,369,22351,23,25,163,30,33,13,2009,2026
-156618,Maxime Colin,347,FC Metz,Right-Back,34,France,2,17,6,16,757,542,45056,12,31,70,16,58,3,2010,2026
-1099860,Cléo Mélières,347,FC Metz,Right-Back,21,France,0,5,6,10,142,57,4245,6,6,0,0,4,0,2022,2026
-1227095,Adam Marchal,347,FC Metz,Centre-Back,18,Algeria,0,4,3,6,70,44,3574,3,0,0,0,7,0,2023,2026
-1306998,Bryan Song,347,FC Metz,Right-Back,19,Cameroon,0,3,3,6,67,43,3118,4,0,0,0,2,0,2024,2026
-1297673,Believe Munongo,347,FC Metz,Central Midfield,16,France,18,3,3,10,100,60,3567,2,1,12,3,7,33,2024,2026
-1178489,Alpha Touré,347,FC Metz,Defensive Midfield,20,Senegal,12,5,3,10,133,66,3818,2,3,26,4,9,5,2022,2026
-539232,Jessy Deminguet,347,FC Metz,Central Midfield,28,France,8,12,6,12,405,282,19442,24,27,89,27,41,3,2015,2026
-1179104,Alassane Sy,347,FC Metz,Defensive Midfield,21,Senegal,0,4,2,4,91,58,5125,1,2,0,0,10,0,2023,2026
-1306999,Jahyann Pandore,347,FC Metz,Central Midfield,18,France,0,3,3,6,72,53,3072,9,1,3,2,3,0,2024,2026
-111051,Nampalys Mendy,347,FC Metz,Defensive Midfield,34,Senegal,6,18,8,27,838,473,33632,2,9,52,11,67,56,2008,2026
-1307004,Nathan Mbala,347,FC Metz,Centre-Forward,18,DR Congo,22,3,3,7,82,64,4169,23,9,21,5,3,0,2024,2026
-344888,Habib Diallo,347,FC Metz,Centre-Forward,31,Senegal,20,14,6,18,592,427,27798,138,42,582,219,25,44,2013,2026
-1176295,Pape Moussa Fall,347,FC Metz,Centre-Forward,22,Senegal,11,5,4,7,129,74,5747,34,5,198,73,7,0,2022,2026
-677057,Giorgi Abuashvili,347,FC Metz,Left Winger,23,Georgia,9,9,7,20,329,141,7983,30,7,48,15,9,39,2018,2026
-838562,Morgan Bokele,347,FC Metz,Left Winger,22,Cameroon,19,6,5,11,186,149,8169,28,5,44,18,10,0,2021,2026
-1392157,Abdourahmane Mbodji,347,FC Metz,Centre-Forward,18,Senegal,0,3,2,4,68,44,3309,16,4,6,4,0,4,2024,2026
-931671,Édouard Soumah-Abbad,347,FC Metz,Left Winger,23,France,29,7,5,7,181,143,10418,25,7,96,38,16,0,2020,2026
-1339869,Hamza Kadamani,347,FC Metz,Left Winger,16,Luxembourg,38,3,3,8,63,35,2016,7,3,1,0,0,16,2024,2026
-1101719,Joseph Mangondo,347,FC Metz,Centre-Forward,21,France,17,5,3,9,161,56,3213,18,3,3,1,4,0,2022,2026
-1111777,Sadibou Sané,347,FC Metz,Centre-Back,21,Senegal,38,6,4,8,166,74,6060,4,1,25,6,13,0,2021,2026
-991054,Terry Yegbe,347,FC Metz,Centre-Back,24,Ghana,0,6,5,21,206,149,12334,7,7,53,15,23,5,2021,2026
+952770,Strahinja Stojkovic,618,AS Saint-Étienne,Right-Back,19,Serbia,2,6,8,17,200,97,6633,1,15,1,1,7,22,2021,2026
+1207431,Axel Dodote,3166,Pau FC,Centre-Back,19,France,4,4,5,10,114,57,4293,0,0,3,0,5,12,2023,2026
+289432,Dylan Batubinsika,618,AS Saint-Étienne,Centre-Back,29,DR Congo,0,16,12,36,546,309,25047,14,3,66,19,39,20,2011,2026
+111038,Dennis Appiah,618,AS Saint-Étienne,Right-Back,33,France,8,20,9,25,804,507,39243,1,20,52,12,49,24,2007,2026
+1133751,Lassana Traoré,618,AS Saint-Étienne,Left-Back,19,Senegal,34,4,2,6,54,12,995,0,1,3,0,2,9,2022,2026
+1091219,Abdoulaye Kanté,618,AS Saint-Étienne,Defensive Midfield,19,Cote d'Ivoire,14,6,7,13,206,100,7481,3,3,62,11,16,3,2021,2026
+484992,Aïmen Moueffek,618,AS Saint-Étienne,Central Midfield,25,Morocco,29,10,4,12,328,178,8493,6,7,87,26,15,10,2016,2026
+579263,Augustine Boakye,618,AS Saint-Étienne,Attacking Midfield,25,Ghana,20,9,5,13,285,178,11993,39,36,169,58,30,0,2017,2026
+467151,Mahmoud Jaber,618,AS Saint-Étienne,Defensive Midfield,26,Israel,5,9,4,20,368,226,14782,10,19,69,14,39,14,2017,2026
+1075584,Luan Gadegbeku,3166,Pau FC,Central Midfield,19,France,27,5,4,9,153,80,5373,5,0,4,0,6,21,2022,2026
+1202299,Nadir El Jamali,618,AS Saint-Étienne,Attacking Midfield,19,France,31,4,3,9,136,81,4766,17,2,27,8,2,17,2023,2026
+1227102,Paul Eymard,618,AS Saint-Étienne,Central Midfield,18,France,21,4,4,12,128,69,4150,13,2,8,4,2,28,2023,2026
+212804,Florian Tardieu,969,Montpellier HSC,Central Midfield,34,France,5,16,6,9,572,442,35678,34,27,237,70,88,0,2011,2026
+1180811,Adam Baallal,618,AS Saint-Étienne,Central Midfield,19,Morocco,32,6,4,9,101,35,1863,3,1,1,1,2,13,2021,2026
+1052286,Jules Mouton,1290,Grenoble Foot 38,Defensive Midfield,21,France,0,6,4,8,182,105,7771,8,1,0,0,10,0,2021,2026
+427572,Zuriko Davitashvili,618,AS Saint-Étienne,Left Winger,25,Georgia,22,13,9,24,495,369,24554,92,48,396,152,36,103,2014,2026
+655012,Lucas Stassin,618,AS Saint-Étienne,Centre-Forward,21,Belgium,9,9,4,13,234,155,10137,56,23,281,131,15,23,2018,2026
+1200419,Djylian N'Guessan,618,AS Saint-Étienne,Centre-Forward,18,France,25,4,3,12,153,72,3798,36,2,30,11,5,32,2023,2026
+342226,Irvin Cardona,618,AS Saint-Étienne,Right Winger,29,Malta,7,14,12,25,448,311,18507,92,42,327,128,25,14,2013,2026
+867700,Joshua Duffus,618,AS Saint-Étienne,Centre-Forward,21,Jamaica,17,7,5,16,250,137,6992,32,23,169,81,18,7,2020,2026
+1044395,Marten-Chris Paalberg,618,AS Saint-Étienne,Centre-Forward,17,Estonia,49,5,4,12,158,76,4981,42,5,1,0,3,23,2022,2026
+1111044,Mamour Ndiaye,618,AS Saint-Étienne,Goalkeeper,20,Senegal,1,5,3,7,123,58,5250,0,0,2,0,8,4,2022,2026
+654408,Lucas Lavallée,618,AS Saint-Étienne,Goalkeeper,23,France,0,9,14,16,238,112,9938,0,0,0,0,5,7,2018,2026
+966312,Sohaib Naïr,618,AS Saint-Étienne,Centre-Back,24,Algeria,18,8,5,11,212,114,9089,5,2,44,9,20,0,2019,2026
+1368386,Nathan Kasia,618,AS Saint-Étienne,Centre-Back,17,France,0,3,4,7,46,29,2282,3,0,2,0,5,3,2024,2026
+469695,Tamar Svetlin,618,AS Saint-Étienne,Defensive Midfield,25,Slovenia,16,12,6,20,418,309,21541,35,16,49,14,30,65,2015,2026
+719926,Áron Csongvai,618,AS Saint-Étienne,Defensive Midfield,25,Hungary,0,8,5,10,283,236,18590,19,15,105,29,45,10,2019,2026
+657957,Jakob Breum,618,AS Saint-Étienne,Attacking Midfield,22,Denmark,10,8,5,16,293,230,13798,52,30,250,100,15,21,2019,2026
+1133980,Modibo Sissoko,618,AS Saint-Étienne,Midfield,19,Mali,0,5,3,5,58,20,878,0,1,3,1,3,4,2022,2026
+923757,Ewen Jaouen,1421,Stade Reims,Goalkeeper,19,France,29,6,9,14,249,133,11963,0,1,0,0,3,6,2021,2026
+894585,Soumaïla Sylla,1421,Stade Reims,Goalkeeper,22,Guinea,94,6,3,14,243,90,7990,0,1,0,0,2,14,2021,2026
+395602,Alexandre Olliero,1290,Grenoble Foot 38,Goalkeeper,30,France,1,14,8,11,576,168,15075,0,0,0,0,3,0,2013,2026
+406608,Thierno Ballo,618,AS Saint-Étienne,Left Winger,24,Austria,8,12,8,23,456,340,22452,87,44,345,148,41,66,2015,2026
+1130445,Abdoul Koné,1421,Stade Reims,Centre-Back,20,France,92,6,6,13,171,82,5896,3,3,13,3,20,4,2021,2026
+863900,Samuel Kotto,1421,Stade Reims,Centre-Back,22,Cameroon,22,7,6,16,184,109,8448,3,1,22,7,18,6,2020,2026
+355627,Sergio Akieme,1421,Stade Reims,Left-Back,28,Spain,18,12,5,12,412,248,20341,11,20,137,43,35,1,2015,2026
+453376,Joseph Okumu,1421,Stade Reims,Centre-Back,29,Kenya,2,12,6,24,432,233,18865,6,3,87,20,33,27,2015,2026
+668966,Elie N'Tamon,1421,Stade Reims,Centre-Back,22,Cote d'Ivoire,28,6,3,8,124,95,7716,9,3,33,14,24,3,2018,2026
+1069037,Mohamed Ali Diadié,1421,Stade Reims,Centre-Back,20,Mauritania,0,6,5,13,168,101,8332,3,1,5,0,22,0,2021,2026
+1137808,Hiroki Sekine,1421,Stade Reims,Right-Back,22,Japan,3,5,3,16,150,109,7864,2,3,53,7,13,21,2022,2026
+570817,Maxime Busi,1421,Stade Reims,Right-Back,25,Belgium,4,9,6,14,324,171,11222,1,8,37,9,25,4,2018,2026
+1141520,Jean-Tryfose Mambuku,1421,Stade Reims,Right-Back,18,Italy,21,4,3,10,117,72,5223,5,4,17,1,8,31,2022,2026
+139279,Nicolas Pallois,1421,Stade Reims,Centre-Back,37,France,5,20,9,10,759,491,41801,18,12,119,29,108,0,2006,2025
+981400,Maël Debondt,1421,Stade Reims,Left-Back,19,Belgium,0,6,5,11,142,76,5315,3,5,4,3,7,42,2021,2026
+1132634,Martial Tia,1421,Stade Reims,Attacking Midfield,19,Mali,87,4,2,8,86,64,3435,9,6,70,26,5,14,2022,2026
+1363293,Patrick Zabi,1421,Stade Reims,Central Midfield,18,Cote d'Ivoire,86,3,4,7,90,52,3117,5,7,34,10,11,5,2024,2026
+418071,Théo Leoni,1421,Stade Reims,Central Midfield,26,Belgium,6,9,4,15,276,177,11746,13,26,95,34,18,23,2015,2026
+717585,Mory Gbane,1421,Stade Reims,Defensive Midfield,25,Cote d'Ivoire,24,9,5,14,253,193,14321,10,3,62,20,51,2,2018,2026
+1044893,Yaya Fofana,1421,Stade Reims,Central Midfield,22,Cote d'Ivoire,8,5,5,11,221,56,2852,13,2,27,11,12,0,2022,2026
+409153,Teddy Teuma,1421,Stade Reims,Central Midfield,31,Malta,0,16,7,20,632,458,35695,64,68,344,137,87,51,2011,2026
+841121,John Patrick,1421,Stade Reims,Central Midfield,22,Ireland,30,7,3,11,245,103,4572,1,4,32,6,15,3,2020,2026
+1108696,Lenny Sylla,1421,Stade Reims,Attacking Midfield,19,France,0,5,3,7,119,80,5169,9,4,0,0,4,0,2022,2026
+289435,Yohan Demoncy,1421,Stade Reims,Central Midfield,30,France,0,16,11,12,476,332,23387,17,29,100,29,52,0,2011,2026
+405397,Keito Nakamura,1421,Stade Reims,Left Winger,26,Japan,17,12,8,27,467,317,19545,106,32,465,175,16,49,2015,2026
+1054839,Mamadou Diakhon,1421,Stade Reims,Left Winger,19,Senegal,0,6,4,16,218,151,6751,15,22,75,28,6,23,2021,2026
+847279,Oumar Diakité,1421,Stade Reims,Centre-Forward,22,Cote d'Ivoire,0,6,6,18,235,165,9878,38,17,207,87,23,31,2021,2026
+1237306,Hafiz Umar Ibrahim,1421,Stade Reims,Centre-Forward,20,Nigeria,85,4,3,6,102,51,2753,26,4,44,16,5,0,2023,2026
+802997,Norman Bassette,1421,Stade Reims,Centre-Forward,20,Belgium,0,7,8,17,342,171,8201,50,6,108,46,20,29,2020,2026
+574385,Mohamed Daramy,1421,Stade Reims,Left Winger,24,Denmark,9,10,6,26,471,270,16279,62,33,248,103,14,28,2017,2026
+922828,Thiemoko Diarra,1421,Stade Reims,Left Winger,22,Mali,7,6,6,13,195,143,9707,24,22,101,44,12,6,2021,2026
+1111912,Adama Bojang,1421,Stade Reims,Centre-Forward,21,The Gambia,27,5,4,14,166,96,4538,24,5,115,47,10,15,2022,2026
+980576,Amine Salama,1421,Stade Reims,Centre-Forward,26,France,0,6,7,6,185,112,4976,8,6,104,34,3,0,2021,2026
+1297264,Tidiane Diarrassouba,1421,Stade Reims,Right Winger,18,France,7,3,3,10,125,56,3224,8,4,3,2,3,17,2024,2026
+1297664,Arone Gadou,1421,Stade Reims,Centre-Forward,17,France,48,4,3,9,101,59,4063,17,2,10,3,4,17,2023,2026
+568728,Pape Sy,347,FC Metz,Goalkeeper,29,Senegal,61,11,4,16,276,42,3593,0,0,0,0,0,7,2015,2026
+542452,Jonathan Fischer,347,FC Metz,Goalkeeper,24,Denmark,1,10,5,12,293,220,19963,0,1,2,0,5,2,2017,2026
+666975,Ousmane Ba,347,FC Metz,Goalkeeper,24,Senegal,40,9,5,12,237,59,5023,0,0,0,0,7,6,2018,2026
+345067,Jean Ruiz,347,FC Metz,Centre-Back,28,France,5,13,8,19,558,329,25069,10,11,52,15,67,17,2014,2026
+347594,Florian Miguel,347,FC Metz,Left-Back,29,France,3,13,8,12,537,371,30827,21,13,212,49,73,0,2014,2026
+726697,Cristian Devenish,347,FC Metz,Centre-Back,25,Colombia,42,8,7,15,327,179,13981,5,1,25,8,20,5,2019,2026
+1038308,Michel Mboula,347,FC Metz,Centre-Back,23,Gabon,4,6,3,15,171,101,7764,6,4,30,6,21,14,2021,2026
+190685,Bouna Sarr,347,FC Metz,Right-Back,34,Senegal,70,17,5,17,688,370,22441,23,25,165,30,34,13,2009,2026
+1086466,Idris Mohamed,347,FC Metz,Centre-Back,22,Comoros,98,5,4,9,131,94,7714,5,1,3,1,11,4,2022,2026
+156618,Maxime Colin,347,FC Metz,Right-Back,34,France,2,17,6,16,758,543,45062,12,31,70,16,58,3,2010,2026
+1306998,Bryan Song,347,FC Metz,Right-Back,19,Cameroon,0,3,3,6,69,44,3205,4,0,0,0,3,0,2024,2026
+1099860,Cléo Mélières,347,FC Metz,Right-Back,21,France,0,5,6,10,143,58,4320,6,6,1,1,5,0,2022,2026
+1227095,Adam Marchal,347,FC Metz,Centre-Back,18,Algeria,0,4,3,6,73,45,3619,3,0,0,0,8,0,2023,2026
+1297673,Believe Munongo,347,FC Metz,Central Midfield,16,France,18,3,3,10,101,61,3598,2,1,12,3,7,33,2024,2026
+1178489,Alpha Touré,347,FC Metz,Defensive Midfield,20,Senegal,12,5,3,10,134,66,3818,2,3,26,4,9,5,2022,2026
+127156,Téji Savanier,347,FC Metz,Attacking Midfield,34,France,10,18,5,7,661,465,35357,83,93,626,227,113,4,2008,2026
+539232,Jessy Deminguet,347,FC Metz,Central Midfield,28,France,8,12,6,12,406,283,19532,24,27,89,27,41,3,2015,2026
+1179104,Alassane Sy,347,FC Metz,Defensive Midfield,21,Senegal,0,4,3,5,93,59,5215,1,2,0,0,10,0,2023,2026
+111051,Nampalys Mendy,347,FC Metz,Defensive Midfield,34,Senegal,6,18,8,27,839,474,33691,2,9,52,11,67,56,2008,2026
+1306999,Jahyann Pandore,347,FC Metz,Central Midfield,18,France,0,3,3,6,74,54,3153,9,1,3,2,3,0,2024,2026
+344888,Habib Diallo,347,FC Metz,Centre-Forward,31,Senegal,20,14,6,18,593,427,27798,138,42,582,219,25,44,2013,2026
+1307004,Nathan Mbala,347,FC Metz,Centre-Forward,18,DR Congo,22,3,3,7,83,65,4200,23,9,21,5,3,0,2024,2026
+1176295,Pape Moussa Fall,347,FC Metz,Centre-Forward,22,Senegal,11,5,4,7,130,75,5837,34,5,200,73,8,0,2022,2026
+677057,Giorgi Abuashvili,347,FC Metz,Left Winger,23,Georgia,9,9,7,20,330,142,8042,30,7,50,15,9,39,2018,2026
+838562,Morgan Bokele,347,FC Metz,Left Winger,22,Cameroon,19,6,5,11,187,149,8169,28,5,44,18,10,0,2021,2026
+1173179,Abdoulaye Ba,347,FC Metz,Left Winger,22,France,0,6,5,7,144,53,3338,9,4,55,23,1,0,2021,2026
+1392157,Abdourahmane Mbodji,347,FC Metz,Centre-Forward,18,Senegal,0,3,3,5,70,45,3370,16,4,6,4,0,4,2024,2026
+931671,Édouard Soumah-Abbad,347,FC Metz,Left Winger,23,France,29,7,5,8,183,144,10447,25,7,96,38,16,0,2020,2026
+1339869,Hamza Kadamani,347,FC Metz,Left Winger,16,Luxembourg,38,3,3,8,65,36,2077,7,3,1,0,0,16,2024,2026
+1101719,Joseph Mangondo,347,FC Metz,Centre-Forward,21,France,17,5,3,9,162,56,3213,18,3,3,1,4,0,2022,2026
+991054,Terry Yegbe,347,FC Metz,Centre-Back,24,Ghana,0,6,5,21,207,151,12434,7,7,54,15,23,5,2021,2026
+1111777,Sadibou Sané,347,FC Metz,Centre-Back,21,Senegal,38,6,4,8,168,76,6240,4,1,25,6,13,0,2021,2026
+481513,Koffi Kouao,347,FC Metz,Right-Back,27,Cote d'Ivoire,39,11,5,15,355,210,16184,9,13,115,31,53,8,2014,2025
 296422,Fodé Ballo-Touré,347,FC Metz,Left-Back,28,Senegal,97,14,12,25,599,286,19230,3,13,36,14,39,26,2012,2025
-481513,Koffi Kouao,347,FC Metz,Right-Back,27,Cote d'Ivoire,39,11,5,14,354,209,16094,9,13,115,31,53,8,2014,2025
-182894,Jean-Philippe Gbamin,347,FC Metz,Centre-Back,29,Cote d'Ivoire,5,17,13,30,725,402,29903,17,14,112,29,40,45,2010,2026
-1041555,Yannis Lawson,347,FC Metz,Left-Back,20,Togo,27,5,4,7,140,60,3736,2,1,20,7,6,0,2022,2026
-649020,Boubacar Traoré,347,FC Metz,Defensive Midfield,23,Mali,8,9,4,17,328,130,7839,11,4,96,26,22,23,2018,2026
-860053,Ismaël Guerti,347,FC Metz,Attacking Midfield,20,Morocco,29,7,6,12,191,113,7452,18,7,3,0,13,1,2020,2026
+182894,Jean-Philippe Gbamin,347,FC Metz,Centre-Back,29,Cote d'Ivoire,5,17,13,30,727,403,29993,17,14,115,29,40,45,2010,2026
+1041555,Yannis Lawson,347,FC Metz,Left-Back,20,Togo,27,5,4,7,141,60,3736,2,1,20,7,6,0,2022,2026
+649020,Boubacar Traoré,347,FC Metz,Defensive Midfield,23,Mali,8,9,4,17,330,132,7946,11,4,98,26,23,23,2018,2026
+860053,Ismaël Guerti,347,FC Metz,Attacking Midfield,20,Morocco,29,7,6,12,192,114,7528,18,7,6,2,13,1,2020,2026
 127160,Benjamin Stambouli,347,FC Metz,Defensive Midfield,34,France,21,18,10,23,787,496,35073,11,25,78,16,67,14,2008,2025
-810909,Lucas Michal,347,FC Metz,Left Winger,20,France,19,6,6,16,222,120,7119,26,5,32,13,8,37,2021,2026
-768439,Daylam Meddah,969,Montpellier HSC,Centre-Back,23,France,27,9,12,10,302,102,7249,3,2,27,8,34,0,2018,2026
+810909,Lucas Michal,347,FC Metz,Left Winger,20,France,19,6,6,16,223,121,7138,26,5,33,13,8,37,2021,2026
+186233,Giorgi Kvilitaia,347,FC Metz,Centre-Forward,31,Georgia,11,15,14,34,715,442,25817,163,49,72,35,68,48,2012,2026
+696600,Simon Ngapandouetnbu,969,Montpellier HSC,Goalkeeper,23,Cameroon,31,8,5,21,408,107,9608,0,0,0,0,6,1,2019,2026
 419067,Giorgi Tsitaishvili,347,FC Metz,Left Winger,24,Georgia,7,12,11,37,465,281,17951,36,31,161,47,34,78,2015,2026
-186233,Giorgi Kvilitaia,347,FC Metz,Centre-Forward,31,Georgia,11,15,14,34,714,442,25817,163,49,72,35,68,48,2012,2026
-1324343,Mathis Chambon,969,Montpellier HSC,Right-Back,17,France,0,3,2,7,61,37,2750,0,3,3,1,7,11,2024,2026
-1460782,Hichem Abderrebi,969,Montpellier HSC,Central Midfield,18,France,0,2,3,4,37,26,2094,2,1,0,0,6,0,2025,2026
-1190851,Yvan Djemba Mbappé,969,Montpellier HSC,Defensive Midfield,21,Cameroon,26,3,2,6,101,40,2712,2,0,6,1,7,0,2023,2025
-1408622,Lacine Megnan-Pave,969,Montpellier HSC,Centre-Forward,16,France,9,3,2,4,48,37,2696,17,5,7,2,9,11,2024,2026
-1058139,Grégory Ayem,969,Montpellier HSC,Attacking Midfield,20,France,90,6,5,8,163,103,6648,14,4,2,1,14,0,2021,2026
-857148,Mamadou Camara,969,Montpellier HSC,Centre-Forward,25,Mali,11,10,7,14,326,214,13358,47,15,159,72,20,4,2017,2026
-1196628,Daryll Benlahlou,969,Montpellier HSC,Centre-Forward,20,Algeria,23,6,4,9,111,77,4394,24,4,0,0,10,1,2021,2026
-986285,Nordan Mukiele,969,Montpellier HSC,Right Winger,20,France,19,6,4,9,165,106,6336,16,5,11,3,9,5,2021,2026
-916497,Massamba N'Diaye,3524,Clermont Foot 63,Goalkeeper,24,Senegal,16,6,4,7,216,46,4055,0,0,0,0,3,1,2021,2026
-358505,Théo Guivarch,3524,Clermont Foot 63,Goalkeeper,30,France,30,15,9,15,535,301,26959,0,1,0,0,11,0,2012,2026
-1247360,Ivan M'Bahia,3524,Clermont Foot 63,Centre-Back,21,Cote d'Ivoire,28,4,3,8,112,51,3731,2,0,7,3,10,1,2023,2026
-494236,Andy Pelmard,3524,Clermont Foot 63,Centre-Back,26,Madagascar,3,11,7,23,452,270,21563,0,3,24,4,28,20,2016,2026
-1079183,Ibrahim Coulibaly,3524,Clermont Foot 63,Right-Back,20,France,93,6,3,8,173,105,7938,0,2,4,1,3,0,2021,2026
-1108145,Cheick Oumar Konaté,3524,Clermont Foot 63,Right-Back,22,Mali,15,5,3,12,165,101,7043,1,6,51,15,17,3,2022,2026
-1119423,El Hadj Koné,3524,Clermont Foot 63,Left-Back,20,Cote d'Ivoire,6,5,3,7,145,101,6614,3,3,9,2,12,1,2022,2026
-351843,Yoann Salmier,3524,Clermont Foot 63,Centre-Back,33,French Guiana,21,13,5,14,518,340,28084,12,3,99,34,47,2,2014,2026
-335147,Junior Sambia,3524,Clermont Foot 63,Right-Back,29,Central African Republic,10,13,7,11,476,328,18686,14,25,239,68,40,1,2014,2026
-1176227,Ethan Kena Kabeya,3524,Clermont Foot 63,Centre-Back,20,DR Congo,0,4,7,10,168,86,6539,0,0,0,0,15,5,2023,2026
-203761,Vital Nsimba,3524,Clermont Foot 63,Left-Back,33,DR Congo,12,17,7,18,632,422,33787,11,41,111,20,59,2,2010,2026
-229012,Kenji-Van Boto,3524,Clermont Foot 63,Left-Back,30,Madagascar,97,16,7,18,691,276,22462,4,13,46,7,25,10,2011,2026
-1047098,Matys Donavin,3524,Clermont Foot 63,Centre-Back,19,France,45,6,3,8,145,62,4876,1,0,0,0,13,3,2021,2026
-1119868,Jean Grillot,3524,Clermont Foot 63,Centre-Back,20,France,5,6,4,8,152,111,9358,2,2,0,0,25,0,2021,2026
-1028125,Abdellah Baallal,3524,Clermont Foot 63,Central Midfield,21,Morocco,2,6,4,9,150,83,5772,5,5,32,6,13,4,2021,2026
-986733,Julien Astic,3524,Clermont Foot 63,Defensive Midfield,21,France,13,6,3,7,155,106,7653,7,2,5,1,11,5,2021,2026
-978027,Allan Ackra,3524,Clermont Foot 63,Central Midfield,22,France,44,6,6,9,168,106,6352,2,3,14,2,25,0,2021,2026
-1020544,Yuliwes Bellache,3524,Clermont Foot 63,Central Midfield,23,Algeria,8,7,5,13,186,62,3521,12,7,10,3,5,1,2020,2026
-1185046,Ousmane Diop,3524,Clermont Foot 63,Right Winger,21,Senegal,17,4,4,6,136,70,3666,11,1,30,13,2,0,2023,2026
-512690,Maïdine Douane,3524,Clermont Foot 63,Left Winger,24,Algeria,11,8,5,13,243,107,6828,10,3,74,31,8,1,2019,2026
-1081092,Enzo Cantero,3524,Clermont Foot 63,Right Winger,21,France,77,5,3,6,135,98,6399,24,2,12,4,13,0,2022,2026
-955360,Mohamed-Amine Bouchenna,3524,Clermont Foot 63,Second Striker,20,France,19,6,5,14,234,139,8122,40,10,14,2,7,33,2021,2026
-1272891,Jean Nyindong Tsamouna,3524,Clermont Foot 63,Centre-Forward,19,Congo,0,4,3,5,66,52,3312,31,0,2,1,7,1,2023,2026
-203507,Adrien Hunou,3524,Clermont Foot 63,Centre-Forward,32,France,23,16,7,19,636,417,23792,86,16,307,132,18,22,2011,2026
-1162374,Christ Okou,3524,Clermont Foot 63,Centre-Forward,20,France,90,4,2,3,61,29,1865,11,0,1,0,4,0,2022,2026
-1200640,Arthur Saintorens,3524,Clermont Foot 63,Centre-Forward,21,France,29,3,4,6,93,33,1951,12,3,0,0,1,0,2023,2026
-1080972,Théo Ramousse,3524,Clermont Foot 63,Goalkeeper,20,France,0,6,4,8,156,44,3841,0,0,0,0,2,0,2021,2026
-536506,Mathys Tourraine,3166,Pau FC,Right-Back,25,Morocco,39,8,8,7,142,99,6686,1,2,17,4,13,5,2016,2026
-1179416,Joan Raynaud,3524,Clermont Foot 63,Goalkeeper,18,France,0,3,3,6,101,26,2340,0,1,0,0,1,0,2023,2025
-669000,Habib Keïta,3524,Clermont Foot 63,Central Midfield,23,Mali,0,7,7,12,229,143,9391,6,8,91,19,27,0,2020,2026
-369267,Maximiliano Caufriez,3524,Clermont Foot 63,Centre-Back,28,Belgium,5,12,6,18,439,233,18682,4,3,58,16,60,10,2014,2025
-51540,Henri Saivet,3524,Clermont Foot 63,Central Midfield,34,Senegal,10,19,11,33,935,473,32521,58,38,227,68,22,57,2006,2025
-1051756,Stan Berkani,3524,Clermont Foot 63,Defensive Midfield,21,Algeria,0,6,5,10,205,90,5983,6,3,0,0,2,1,2020,2025
-1119420,Marouane Admar,3524,Clermont Foot 63,Attacking Midfield,19,France,0,4,3,6,137,62,3933,6,0,0,0,5,0,2022,2025
-1047101,İlhan Fakılı,3524,Clermont Foot 63,Left Winger,19,Türkiye,29,5,4,11,157,108,6827,27,8,61,22,2,1,2022,2026
-72121,Johan Gastien,3524,Clermont Foot 63,Defensive Midfield,37,France,25,19,5,9,734,569,44816,32,25,175,45,138,0,2007,2025
-560725,Abdoul Kader Bamba,3524,Clermont Foot 63,Left Winger,31,France,32,12,8,13,354,239,12657,36,29,156,65,28,0,2012,2026
-924800,Axel Camblan,3524,Clermont Foot 63,Right Winger,21,France,7,7,6,9,253,131,7695,24,17,53,16,9,0,2020,2026
-617698,Mohamed Guindo,3524,Clermont Foot 63,Centre-Forward,21,Mali,19,6,5,11,187,100,5175,36,4,88,28,10,3,2018,2026
-237125,Famara Diédhiou,3524,Clermont Foot 63,Centre-Forward,32,Senegal,18,16,12,21,751,504,33174,167,24,489,182,49,26,2011,2026
-800249,Loïc Socka Bongué,3524,Clermont Foot 63,Centre-Forward,26,France,0,10,7,11,278,195,11853,28,13,35,10,22,0,2017,2026
-905942,Amine Saïd,3524,Clermont Foot 63,Centre-Forward,22,Algeria,9,7,6,9,181,89,4843,19,1,3,1,8,0,2020,2026
-390942,Quentin Braat,11273,Rodez AF,Goalkeeper,29,France,1,14,8,19,548,171,15328,0,0,0,0,4,4,2012,2026
-618463,Lucas Margueron,11273,Rodez AF,Goalkeeper,25,France,16,9,7,12,342,98,8806,0,0,1,1,9,0,2018,2026
-913323,Raphaël Lipinski,11273,Rodez AF,Centre-Back,24,France,3,8,4,8,232,137,8838,4,3,39,12,6,0,2019,2026
-947911,Enzo Crombez,11273,Rodez AF,Goalkeeper,23,France,30,7,4,6,209,34,2927,0,0,0,0,2,0,2020,2026
-537825,Mathis Magnin,11273,Rodez AF,Centre-Back,24,Switzerland,4,11,6,14,322,222,17371,22,1,28,7,44,2,2016,2026
-961647,Loni Laurent,11273,Rodez AF,Centre-Back,25,France,24,7,4,5,166,126,10531,3,1,10,2,21,0,2020,2026
-770418,Clément Jolibois,11273,Rodez AF,Centre-Back,28,France,5,9,7,8,174,146,11793,10,2,34,13,30,0,2015,2026
-543720,Evan's Jean-Lambert,11273,Rodez AF,Left-Back,27,France,15,11,10,16,401,206,13198,13,30,41,13,37,0,2016,2026
-693360,Steven Luyambula,11273,Rodez AF,Right-Back,23,France,28,8,8,8,239,154,11529,4,9,11,4,10,0,2019,2026
-918302,Cheick Doumbia,11273,Rodez AF,Left-Back,21,Mali,0,6,6,10,234,88,4630,6,4,2,0,4,9,2021,2026
-1138156,Jordan Mendes,11273,Rodez AF,Defensive Midfield,22,Cape Verde,6,5,2,5,143,91,5940,4,5,31,8,16,1,2022,2026
-923810,Dylan Vangi,11273,Rodez AF,Centre-Back,21,France,17,6,3,11,179,90,6847,3,0,0,0,10,9,2021,2026
-981090,Octave Joly,11273,Rodez AF,Central Midfield,23,France,22,8,8,10,198,126,8406,9,4,47,14,22,0,2019,2026
-627464,Samy Benchamma,11273,Rodez AF,Defensive Midfield,26,France,26,10,8,11,296,217,14413,16,8,78,16,23,0,2017,2026
-409511,Damjan Pavlovic,11273,Rodez AF,Defensive Midfield,25,Serbia,8,9,6,17,287,142,7183,7,11,20,6,21,8,2015,2026
-774772,Antonin Cartillier,11273,Rodez AF,Defensive Midfield,22,France,29,6,8,11,162,96,6530,6,6,11,3,3,0,2021,2026
-737481,Ryan Ponti,11273,Rodez AF,Left Midfield,28,Madagascar,20,8,6,10,302,146,11029,6,20,24,4,7,7,2019,2026
-1143458,Corentin Issanchou,11273,Rodez AF,Attacking Midfield,21,France,13,5,3,6,95,22,1258,5,0,4,2,3,0,2022,2026
-1143328,Yanis Dahalani,11273,Rodez AF,Central Midfield,21,France,34,4,3,6,70,19,1391,2,0,0,0,2,0,2022,2026
-618416,Kenny Nagera,11273,Rodez AF,Centre-Forward,24,France,7,8,11,18,235,164,8735,38,14,47,16,6,0,2019,2026
-707802,Nachon Nsingi,11273,Rodez AF,Centre-Forward,25,Belgium,9,5,5,7,162,90,3308,9,5,80,38,9,0,2022,2026
-804884,Ibrahima Baldé,11273,Rodez AF,Centre-Forward,23,France,18,8,5,10,247,126,6973,35,7,132,62,14,1,2019,2026
-726566,Hermann Tebily,11273,Rodez AF,Centre-Forward,24,France,19,8,8,11,286,78,2864,9,5,21,11,5,0,2019,2026
-801566,Mehdi Baaloudj,11273,Rodez AF,Centre-Forward,25,Algeria,10,9,8,9,227,162,8554,37,7,48,21,16,0,2018,2026
+989106,Viktor Dzodic,969,Montpellier HSC,Goalkeeper,19,Serbia,50,6,3,12,174,73,6280,0,0,0,0,4,20,2021,2026
+193142,Mathieu Michel,969,Montpellier HSC,Goalkeeper,34,France,1,16,12,11,635,300,26774,0,1,1,0,14,0,2011,2026
+507344,Becir Omeragic,969,Montpellier HSC,Centre-Back,23,Switzerland,0,11,5,23,500,275,21708,6,2,90,26,24,44,2016,2026
+842338,Enzo Tchato,969,Montpellier HSC,Right-Back,23,Cameroon,0,9,4,18,263,151,10953,5,8,26,7,14,7,2018,2026
+1248796,Kevin Kamdem,969,Montpellier HSC,Goalkeeper,20,Cameroon,60,4,3,9,102,28,2489,0,0,0,0,1,0,2023,2026
+970364,Yaël Mouanga,969,Montpellier HSC,Centre-Back,21,France,6,6,5,8,249,101,7667,4,0,6,3,13,0,2021,2026
+1053148,Naoufel El Hannach,969,Montpellier HSC,Right-Back,19,Morocco,3,6,7,16,205,88,6105,5,2,12,4,10,14,2021,2026
+537127,Théo Sainte-Luce,969,Montpellier HSC,Left-Back,27,France,17,12,6,12,423,203,15547,6,5,51,14,23,0,2015,2026
+386057,Julien Laporte,969,Montpellier HSC,Centre-Back,32,France,15,15,5,9,538,337,28549,17,5,123,24,57,0,2012,2026
+201737,Christopher Jullien,969,Montpellier HSC,Centre-Back,32,Guadeloupe,6,16,9,21,711,376,31814,42,20,178,47,63,2,2010,2025
+1210124,Isyak Mohamed,969,Montpellier HSC,Right-Back,17,France,0,3,3,11,127,61,4438,1,0,0,0,9,8,2024,2026
+624037,Joris Chotard,969,Montpellier HSC,Defensive Midfield,23,France,0,10,5,14,354,272,18928,5,16,132,35,33,28,2017,2026
+1203026,Wilfried Ndollo,969,Montpellier HSC,Right-Back,21,Cameroon,25,4,3,8,102,52,3539,0,0,1,0,11,0,2023,2026
+1209092,Alexandre Ebener,969,Montpellier HSC,Left-Back,19,France,0,3,3,8,109,41,2829,0,0,0,0,4,0,2023,2025
+782630,Khalil Fayad,969,Montpellier HSC,Central Midfield,22,Morocco,10,7,3,10,221,134,6689,9,11,55,18,22,16,2020,2026
+1019950,Théo Chennahi,969,Montpellier HSC,Central Midfield,21,France,44,6,3,11,212,122,8998,12,3,30,7,23,0,2021,2026
+977877,Ayanda Sishuba,969,Montpellier HSC,Attacking Midfield,20,Belgium,28,6,9,18,251,107,6479,26,4,30,10,7,15,2021,2026
+919236,Everson Jr,969,Montpellier HSC,Defensive Midfield,22,France,77,7,5,6,236,105,7345,11,2,45,16,21,0,2020,2026
+805861,Nabil Homssa,969,Montpellier HSC,Central Midfield,24,France,20,7,7,8,125,77,5422,4,7,0,0,17,0,2019,2026
+1210107,Noah Vidal-Cartoux,969,Montpellier HSC,Attacking Midfield,18,France,0,3,3,9,117,56,3607,13,2,10,2,4,2,2024,2026
+1191481,Lucas Da Silva,969,Montpellier HSC,Central Midfield,19,France,0,3,3,7,117,60,4154,6,3,8,4,9,0,2023,2025
+618425,Tanguy Coulibaly,969,Montpellier HSC,Right Winger,24,France,0,9,6,15,318,174,8796,20,10,131,50,28,0,2018,2026
+1093482,Nicolas Pays,969,Montpellier HSC,Right Winger,23,France,18,6,5,8,166,118,7119,20,5,70,27,4,0,2020,2026
+1047104,Yanis Issoufou,969,Montpellier HSC,Left Winger,19,France,7,6,3,13,243,102,6276,20,12,32,14,11,24,2021,2026
+557614,Nathanaël Mbuku,969,Montpellier HSC,Left Winger,23,DR Congo,7,10,7,26,414,249,12824,39,22,202,76,15,75,2017,2026
+290561,Alexandre Mendy,969,Montpellier HSC,Centre-Forward,31,Guinea-Bissau,19,14,13,16,572,401,26936,144,23,539,195,39,7,2013,2026
+1106860,Enzo Molebe,969,Montpellier HSC,Centre-Forward,17,France,14,6,6,17,196,88,4887,37,3,23,13,4,31,2021,2026
+1231401,Victor Orakpo,1159,AS Nancy-Lorraine,Centre-Forward,19,Nigeria,24,3,5,6,95,32,1476,5,1,28,6,2,0,2024,2026
+986262,Junior Ndiaye,969,Montpellier HSC,Centre-Forward,21,United Arab Emirates,24,6,4,19,244,148,9777,63,4,36,14,5,16,2021,2026
+981977,Axel Guéguin,969,Montpellier HSC,Right Winger,21,France,22,6,3,14,271,76,4397,14,8,15,4,7,8,2021,2026
+1382212,Fayssal El Mahboub,969,Montpellier HSC,Right Winger,17,France,0,3,3,6,92,24,1053,1,1,1,0,2,0,2024,2026
+1200426,Robin Thiland-Herard,969,Montpellier HSC,Centre-Forward,17,France,0,4,4,9,135,60,4117,28,1,8,3,3,13,2023,2026
+768439,Daylam Meddah,969,Montpellier HSC,Centre-Back,23,France,27,9,12,10,303,103,7339,3,2,29,9,34,0,2018,2026
+1324343,Mathis Chambon,969,Montpellier HSC,Right-Back,17,France,0,3,3,8,58,38,2840,0,3,3,1,7,11,2024,2026
+691841,Yanis Zouaoui,969,Montpellier HSC,Left-Back,28,France,28,10,5,7,267,199,15498,11,14,22,7,44,0,2017,2026
+1190851,Yvan Djemba Mbappé,969,Montpellier HSC,Defensive Midfield,21,Cameroon,26,4,2,7,102,40,2712,2,0,6,1,7,0,2023,2026
+1460782,Hichem Abderrebi,969,Montpellier HSC,Central Midfield,18,France,0,2,3,5,39,27,2184,2,1,1,0,6,0,2025,2026
+1058139,Grégory Ayem,969,Montpellier HSC,Attacking Midfield,20,France,90,6,6,8,165,105,6768,14,4,3,2,14,0,2021,2026
+1408622,Lacine Megnan-Pave,969,Montpellier HSC,Centre-Forward,16,France,9,3,2,4,49,38,2786,17,5,8,2,9,11,2024,2026
+1273062,Tidiane Diallo,969,Montpellier HSC,Centre-Back,18,Switzerland,0,3,4,7,46,34,2467,1,0,0,0,8,3,2023,2026
+1196628,Daryll Benlahlou,969,Montpellier HSC,Centre-Forward,20,Algeria,23,6,5,10,113,79,4485,24,4,0,0,10,1,2021,2026
+857148,Mamadou Camara,969,Montpellier HSC,Centre-Forward,25,Mali,11,10,7,14,327,214,13358,47,15,159,72,20,4,2017,2026
+986285,Nordan Mukiele,969,Montpellier HSC,Right Winger,20,France,19,6,4,9,166,107,6397,16,5,13,4,9,5,2021,2026
+639582,Tom Ritzy Hülsmann,1421,Stade Reims,Goalkeeper,22,Germany,1,8,8,14,262,124,10921,0,2,0,0,13,0,2019,2026
+507391,Edin Omeragic,1421,Stade Reims,Goalkeeper,24,Switzerland,12,10,6,12,315,155,13841,0,0,1,0,4,3,2016,2026
+1108459,Aleksandr Guboglo,1421,Stade Reims,Right-Back,19,Canada,0,4,2,7,76,37,1791,1,1,8,2,4,8,2022,2026
+671590,Daouda Guindo,1421,Stade Reims,Left-Back,23,Mali,27,7,5,15,267,121,8037,6,12,69,20,19,4,2020,2026
+1385755,Manzur Okwaro,1421,Stade Reims,Centre-Back,20,Kenya,0,4,3,7,42,19,1334,0,0,4,1,2,15,2023,2026
+819419,Armel Zohouri,1421,Stade Reims,Right-Back,25,Cote d'Ivoire,63,7,5,19,273,165,13305,3,13,9,2,38,7,2020,2026
+1489152,John Otomewo,1421,Stade Reims,Defensive Midfield,19,Nigeria,5,2,2,4,28,25,1805,1,0,25,8,3,0,2025,2026
+1161278,Théo Amorim,1421,Stade Reims,Right-Back,22,France,0,3,3,6,68,40,2234,1,0,0,0,2,0,2022,2026
+1175859,Chamsedin Kouranfal,1421,Stade Reims,Central Midfield,20,France,0,2,2,2,29,25,2008,4,0,2,1,4,0,2023,2026
+854989,Jean-Philippe Célestin,1421,Stade Reims,Centre-Back,23,France,0,8,9,11,170,106,8586,8,0,0,0,6,0,2019,2026
+1241208,Théo Deflorenne,1421,Stade Reims,Central Midfield,17,France,0,4,3,5,79,50,3360,0,0,0,0,3,3,2023,2026
+444380,Youssef El Kachati,1421,Stade Reims,Centre-Forward,26,Morocco,10,11,8,10,391,217,15194,89,23,236,95,32,0,2016,2026
+1284766,Quentin Paris,1421,Stade Reims,Centre-Forward,19,France,0,4,3,3,78,44,1488,9,0,32,16,11,0,2023,2026
+807925,Amine Kashi,1421,Stade Reims,Left Winger,23,France,0,6,7,9,153,80,4454,22,3,5,1,8,0,2020,2026
+358505,Théo Guivarch,3524,Clermont Foot 63,Goalkeeper,30,France,30,15,9,15,536,302,27049,0,1,0,0,11,0,2012,2026
+1247360,Ivan M'Bahia,3524,Clermont Foot 63,Centre-Back,21,Cote d'Ivoire,28,4,3,8,113,52,3821,2,0,7,3,10,1,2023,2026
+494236,Andy Pelmard,3524,Clermont Foot 63,Centre-Back,26,Madagascar,3,11,7,23,453,270,21563,0,3,24,4,28,20,2016,2026
+1079183,Ibrahim Coulibaly,3524,Clermont Foot 63,Right-Back,20,France,93,6,3,8,174,105,7938,0,2,4,1,3,0,2021,2026
+704270,Sambou Soumano,1421,Stade Reims,Centre-Forward,25,Senegal,99,8,9,8,259,195,10224,67,9,231,85,7,0,2019,2026
+916497,Massamba N'Diaye,3524,Clermont Foot 63,Goalkeeper,24,Senegal,16,6,4,7,217,46,4055,0,0,0,0,3,1,2021,2026
+1119423,El Hadj Koné,3524,Clermont Foot 63,Left-Back,20,Cote d'Ivoire,6,5,3,7,146,102,6670,3,3,9,2,12,1,2022,2026
+1108145,Cheick Oumar Konaté,3524,Clermont Foot 63,Right-Back,22,Mali,15,5,3,12,166,101,7043,1,6,51,15,17,3,2022,2026
+351843,Yoann Salmier,3524,Clermont Foot 63,Centre-Back,33,French Guiana,21,13,5,14,519,341,28174,12,3,99,34,48,2,2014,2026
+335147,Junior Sambia,3524,Clermont Foot 63,Right-Back,29,Central African Republic,10,13,7,11,477,329,18755,14,25,239,68,40,1,2014,2026
+1176227,Ethan Kena Kabeya,3524,Clermont Foot 63,Centre-Back,20,DR Congo,4,4,7,10,169,87,6629,0,0,0,0,15,5,2023,2026
+229012,Kenji-Van Boto,3524,Clermont Foot 63,Left-Back,30,Madagascar,97,16,7,18,692,276,22462,4,13,46,7,25,10,2011,2026
+203761,Vital Nsimba,3524,Clermont Foot 63,Left-Back,33,DR Congo,12,17,7,18,633,423,33877,11,41,111,20,59,2,2010,2026
+1119868,Jean Grillot,3524,Clermont Foot 63,Centre-Back,20,France,5,6,4,8,153,112,9448,2,2,2,1,25,0,2021,2026
+978027,Allan Ackra,3524,Clermont Foot 63,Central Midfield,22,France,44,6,6,9,169,107,6373,2,3,14,2,25,0,2021,2026
+1047098,Matys Donavin,3524,Clermont Foot 63,Centre-Back,19,France,45,6,3,8,146,62,4876,1,0,0,0,13,3,2021,2026
+1028125,Abdellah Baallal,3524,Clermont Foot 63,Central Midfield,21,Morocco,2,6,4,9,151,83,5772,5,5,32,6,13,4,2021,2026
+512690,Maïdine Douane,3524,Clermont Foot 63,Left Winger,24,Algeria,11,8,5,13,244,107,6828,10,3,74,31,8,1,2019,2026
+986733,Julien Astic,3524,Clermont Foot 63,Defensive Midfield,21,France,13,6,3,7,156,106,7653,7,2,5,1,11,5,2021,2026
+955360,Mohamed-Amine Bouchenna,3524,Clermont Foot 63,Right Winger,20,France,19,6,5,14,235,140,8156,40,10,14,2,7,33,2021,2026
+1185046,Ousmane Diop,3524,Clermont Foot 63,Right Winger,21,Senegal,17,4,4,6,137,71,3744,11,1,30,13,2,0,2023,2026
+1020544,Yuliwes Bellache,3524,Clermont Foot 63,Central Midfield,23,Algeria,8,7,5,13,187,62,3521,12,7,10,3,5,1,2020,2026
+1081092,Enzo Cantero,3524,Clermont Foot 63,Right Winger,21,France,77,5,3,6,136,99,6411,24,2,12,4,13,0,2022,2026
+1272891,Jean Nyindong Tsamouna,3524,Clermont Foot 63,Centre-Forward,19,Congo,0,4,3,5,67,53,3346,31,0,3,1,7,1,2023,2026
+1162374,Christ Okou,3524,Clermont Foot 63,Centre-Forward,20,France,90,4,2,3,62,30,1921,11,0,1,0,4,0,2022,2026
+1200640,Arthur Saintorens,3524,Clermont Foot 63,Centre-Forward,21,France,29,3,4,6,94,34,1963,12,3,1,0,1,0,2023,2026
+203507,Adrien Hunou,3524,Clermont Foot 63,Centre-Forward,32,France,23,16,7,19,637,418,23870,86,16,309,133,18,22,2011,2026
+913323,Raphaël Lipinski,11273,Rodez AF,Centre-Back,24,France,3,8,4,8,233,138,8928,4,4,39,12,7,0,2019,2026
+390942,Quentin Braat,11273,Rodez AF,Goalkeeper,29,France,1,14,8,19,549,171,15328,0,0,0,0,4,4,2012,2026
+947911,Enzo Crombez,11273,Rodez AF,Goalkeeper,23,France,30,7,4,6,210,34,2927,0,0,0,0,2,0,2020,2026
+618463,Lucas Margueron,11273,Rodez AF,Goalkeeper,25,France,16,9,7,12,343,99,8896,0,0,1,1,9,0,2018,2026
+543720,Evan's Jean-Lambert,11273,Rodez AF,Left-Back,27,France,15,11,10,16,402,207,13224,13,30,41,13,37,0,2016,2026
+961647,Loni Laurent,11273,Rodez AF,Centre-Back,25,France,24,7,4,5,167,127,10616,3,1,10,2,22,0,2020,2026
+537825,Mathis Magnin,11273,Rodez AF,Centre-Back,24,Switzerland,4,11,6,14,323,223,17461,22,2,28,7,45,2,2016,2026
+536506,Mathys Tourraine,3166,Pau FC,Right-Back,25,Morocco,39,8,9,8,144,100,6776,1,2,17,4,13,5,2016,2026
 546225,Mohamed Bouchouari,11273,Rodez AF,Right-Back,24,Belgium,0,8,7,21,228,151,10640,9,14,110,35,15,8,2017,2025
-1053213,Djibril Mavounia,11273,Rodez AF,Left Winger,20,France,0,2,3,5,37,2,94,0,0,0,0,0,0,2023,2026
-482769,Alexis Trouillet,11273,Rodez AF,Central Midfield,24,France,27,11,10,20,327,135,7109,3,10,56,13,8,5,2015,2026
-917104,Derek Mazou-Sacko,11273,Rodez AF,Central Midfield,20,France,0,6,6,13,315,141,8561,10,5,33,9,20,5,2021,2026
-918268,Aurélien Pelon,11273,Rodez AF,Centre-Back,21,France,0,5,5,9,197,89,7442,7,0,1,1,19,4,2021,2025
-986310,Mathis Saka,11273,Rodez AF,Attacking Midfield,18,France,28,6,5,10,152,78,4618,8,4,27,9,9,2,2021,2026
+923810,Dylan Vangi,11273,Rodez AF,Centre-Back,21,France,17,6,3,11,180,90,6847,3,0,0,0,10,9,2021,2026
+770418,Clément Jolibois,11273,Rodez AF,Centre-Back,28,France,0,9,8,9,175,147,11883,10,3,34,13,30,0,2015,2026
+917104,Derek Mazou-Sacko,11273,Rodez AF,Central Midfield,20,France,0,6,6,13,317,141,8561,10,5,33,9,20,5,2021,2026
+918268,Aurélien Pelon,1290,Grenoble Foot 38,Centre-Back,22,France,0,6,6,9,198,90,7532,7,0,1,1,20,4,2021,2026
+1138156,Jordan Mendes,11273,Rodez AF,Defensive Midfield,22,Cape Verde,6,5,2,5,144,92,6030,4,5,33,8,16,1,2022,2026
+482769,Alexis Trouillet,11273,Rodez AF,Central Midfield,24,France,27,11,10,20,328,136,7191,3,10,56,13,8,5,2015,2026
+981090,Octave Joly,11273,Rodez AF,Central Midfield,23,France,22,8,8,10,199,127,8424,10,4,48,15,22,0,2019,2026
+627464,Samy Benchamma,11273,Rodez AF,Defensive Midfield,26,France,26,10,8,11,297,217,14413,16,8,78,16,23,0,2017,2026
+986310,Mathis Saka,11273,Rodez AF,Attacking Midfield,18,France,28,6,5,10,153,78,4618,8,4,27,9,9,2,2021,2026
 202278,Flavien Tait,11273,Rodez AF,Central Midfield,32,France,0,14,6,13,545,350,23369,33,46,326,125,31,0,2012,2025
-855158,Mohamed Achi,11273,Rodez AF,Central Midfield,23,France,7,9,7,14,268,118,7588,18,9,6,2,2,6,2018,2026
-1134211,Morgan Corredor,11273,Rodez AF,Central Midfield,20,France,12,4,3,5,75,12,147,1,0,3,1,0,0,2022,2026
-215677,Mouez Hassen,1154,Red Star FC,Goalkeeper,31,Tunisia,40,17,11,35,690,245,21839,0,0,0,0,16,32,2010,2026
-717421,Valentin Rabouille,1154,Red Star FC,Goalkeeper,25,France,0,11,8,10,296,98,8563,0,0,0,0,7,0,2016,2026
-157484,Quentin Beunardeau,1154,Red Star FC,Goalkeeper,31,France,1,18,12,24,674,321,28730,0,0,0,0,22,26,2009,2026
-344591,Gaëtan Poussin,1154,Red Star FC,Goalkeeper,27,France,16,13,7,21,459,169,14862,1,0,1,1,6,15,2014,2026
-855056,Taïryk Arconte,3166,Pau FC,Centre-Forward,21,Guadeloupe,0,8,8,17,269,151,7600,32,12,148,69,23,11,2019,2026
-1049151,Dembo Sylla,1154,Red Star FC,Right-Back,22,Guinea,22,9,9,16,233,152,9779,1,11,40,12,16,15,2017,2026
-756171,Dylan Durivaux,1154,Red Star FC,Centre-Back,25,France,20,10,7,11,247,173,14714,6,8,36,8,17,1,2016,2026
-986298,Joachim Kayi Sanda,1154,Red Star FC,Centre-Back,18,France,0,6,6,21,267,134,10407,7,3,44,12,32,33,2021,2026
-324798,Bradley Danger,1154,Red Star FC,Centre-Back,28,France,6,14,8,14,477,337,27643,21,9,54,27,49,23,2013,2026
-862972,Josué Escartin,1154,Red Star FC,Centre-Back,23,France,5,7,7,10,246,110,7988,7,0,10,3,28,0,2020,2026
-588997,Matthieu Huard,1154,Red Star FC,Left-Back,28,France,3,11,4,11,343,216,15281,3,4,28,6,33,0,2016,2026
-539808,Théo Magnin,1154,Red Star FC,Right-Back,23,Switzerland,2,10,5,18,380,181,11260,4,2,34,8,12,22,2017,2026
-170477,Pierre Lemonnier,1154,Red Star FC,Centre-Back,33,France,24,16,7,12,537,335,28817,19,3,54,15,36,0,2011,2026
-465296,Rayane Doucouré,1154,Red Star FC,Centre-Back,24,France,6,10,8,14,196,69,5612,3,0,0,0,8,9,2017,2026
-635103,Giovanni Haag,1154,Red Star FC,Defensive Midfield,25,France,81,9,6,9,307,185,13268,13,7,108,34,46,1,2017,2025
-796883,Ryad Hachem,1154,Red Star FC,Central Midfield,28,France,93,11,4,8,287,228,17224,15,15,72,21,20,0,2016,2026
-916438,Mohafidh Ahamada,1154,Red Star FC,Right-Back,22,Comoros,0,5,3,7,122,30,1701,0,0,0,0,2,0,2021,2026
-642002,Balthazar Pierret,1154,Red Star FC,Defensive Midfield,26,France,4,10,9,14,276,188,13242,11,3,94,35,46,0,2017,2026
-902629,Islamdine Halifa,1154,Red Star FC,Defensive Midfield,21,France,19,6,5,14,179,118,8791,8,3,38,8,19,3,2021,2026
-722739,Samuel Renel,1154,Red Star FC,Central Midfield,24,Martinique,17,9,5,10,317,180,11008,11,12,33,15,7,3,2018,2026
-802012,Guillaume Trani,1154,Red Star FC,Attacking Midfield,28,France,8,10,4,11,296,204,14628,53,39,11,6,25,0,2017,2026
-270411,Saîf-Eddine Khaoui,1154,Red Star FC,Attacking Midfield,31,Tunisia,10,15,11,21,590,293,14585,36,26,237,89,27,29,2012,2026
-1226637,Vincent Kany,1154,Red Star FC,Central Midfield,22,France,12,5,2,6,108,17,769,2,0,1,0,0,0,2019,2025
-792328,Damien Durand,1154,Red Star FC,Left Winger,30,France,7,10,3,6,305,277,20290,59,33,119,45,18,0,2017,2026
-460632,Kévin Cabral,1154,Red Star FC,Centre-Forward,27,France,91,10,6,11,320,249,13922,34,30,269,114,30,0,2016,2026
-693637,Pape Meïssa Ba,1154,Red Star FC,Centre-Forward,27,Senegal,9,9,6,10,293,217,13979,66,20,220,92,17,0,2018,2026
-921852,Jovany Ikanga,1154,Red Star FC,Centre-Forward,24,France,23,6,2,4,190,119,6066,28,9,81,31,8,0,2021,2026
-806494,Kemo Cissé,1154,Red Star FC,Right Winger,29,France,11,7,2,5,189,151,10188,23,11,65,19,4,0,2020,2026
-1051271,Abdelsamad Hachem,1154,Red Star FC,Centre-Forward,24,France,0,8,6,10,167,104,5994,32,5,57,29,3,0,2019,2026
-1054838,Ronan Matuvangua,1154,Red Star FC,Centre-Forward,21,France,0,6,5,8,129,56,3773,19,5,0,0,2,0,2020,2026
-986180,Noah Raveyre,3166,Pau FC,Goalkeeper,20,France,22,7,9,22,330,94,8234,0,0,0,0,7,8,2020,2026
-1182322,Tao Paradowski,3166,Pau FC,Goalkeeper,20,France,0,5,6,9,185,67,5967,0,0,0,0,3,0,2021,2025
-323253,Esteban Salles,3166,Pau FC,Goalkeeper,32,France,30,14,9,9,530,165,14591,0,1,0,0,5,0,2013,2026
-1119750,Matis Duval,3166,Pau FC,Goalkeeper,17,France,0,3,3,3,45,14,1260,0,0,0,0,0,0,2022,2025
-1165818,Georges Grimaud,3166,Pau FC,Goalkeeper,18,France,0,4,6,7,129,13,1081,0,0,0,0,1,0,2022,2025
-1117092,Joseph Kalulu,3166,Pau FC,Left-Back,21,France,0,5,4,6,135,87,5996,3,2,20,5,6,0,2022,2026
-917817,Tom Pouilly,3166,Pau FC,Right-Back,23,France,2,7,4,10,213,138,9527,19,6,35,10,22,0,2020,2026
-1016807,Neil Glossoa,3166,Pau FC,Right-Back,20,France,26,6,6,12,210,118,6993,3,5,7,0,15,0,2021,2026
-190338,Anthony Briançon,3166,Pau FC,Centre-Back,31,France,23,15,5,9,534,317,25327,20,4,166,44,55,0,2012,2026
-693029,Setigui Karamoko,3166,Pau FC,Centre-Back,25,France,4,8,12,13,261,124,9165,5,0,16,4,27,0,2019,2026
-1070185,Salif Lebouath,3166,Pau FC,Right-Back,23,France,34,5,4,6,157,82,5439,13,3,3,1,5,0,2022,2026
-1111045,Souleymane Basse,3166,Pau FC,Left-Back,22,Senegal,8,6,5,11,198,68,5719,2,5,15,5,13,9,2021,2026
-926383,Robin Verhaeghe,3166,Pau FC,Centre-Back,21,France,0,6,6,9,206,131,10871,5,0,0,0,13,0,2021,2026
-528470,Ousmane Kanté,3166,Pau FC,Centre-Back,35,Guinea,19,11,7,15,448,280,22617,15,4,63,12,61,12,2015,2025
-953065,Rayan Touzghar,3166,Pau FC,Central Midfield,21,Morocco,84,7,8,11,200,125,9196,16,5,97,31,25,2,2020,2026
-1080215,Cheikh Fall,3166,Pau FC,Central Midfield,22,Senegal,6,5,5,8,197,91,6435,19,2,29,10,10,0,2022,2026
-520819,Julien Anziani,3166,Pau FC,Central Midfield,26,France,20,10,9,8,351,259,18316,34,18,222,66,35,0,2017,2026
-711981,Kyllian Gasnier,3166,Pau FC,Attacking Midfield,24,France,90,9,8,8,184,106,6351,22,9,21,8,6,0,2018,2026
-1075590,Rayane Messi,3166,Pau FC,Left Winger,18,France,0,5,9,17,227,96,5884,21,6,52,21,7,31,2022,2026
-1004507,Titouan Nihouarn,3166,Pau FC,Attacking Midfield,20,France,0,5,5,8,165,87,5957,20,5,0,0,6,0,2021,2026
-922685,Giovani Versini,3166,Pau FC,Right Winger,22,France,10,7,9,12,219,159,10970,31,22,82,34,10,2,2020,2026
-344575,Antonin Bobichon,3166,Pau FC,Central Midfield,29,France,14,13,8,11,547,335,22402,48,22,208,68,29,0,2013,2025
-982863,Kyliane Dong,3166,Pau FC,Left Winger,20,France,9,6,6,11,234,138,7879,24,11,71,23,8,4,2021,2026
-979551,Pathé Mboup,3166,Pau FC,Left Winger,21,Senegal,0,5,5,10,141,112,6670,23,7,140,52,25,1,2022,2026
-944427,Edhy Zuliani,3166,Pau FC,Right Winger,20,Algeria,87,6,6,12,244,119,8501,19,4,9,3,17,4,2021,2026
-869458,Omar Sadik,3166,Pau FC,Centre-Forward,21,Morocco,18,6,4,9,197,84,4935,18,4,44,18,17,10,2021,2026
-975331,Yanis Benchaouch,1154,Red Star FC,Goalkeeper,20,Morocco,1,6,5,12,168,63,5545,0,0,0,0,1,22,2021,2026
-1498913,Abdoulaye Mbaye,3166,Pau FC,Centre-Forward,20,Senegal,0,3,3,3,49,24,1718,9,0,0,0,1,0,2024,2026
-653415,Leonardo Buta,1154,Red Star FC,Left-Back,24,Portugal,0,9,10,21,292,145,10011,8,10,9,2,21,19,2018,2026
-1132426,Omar Sissoko,3166,Pau FC,Centre-Forward,18,France,17,5,4,8,170,67,3088,16,1,29,12,5,2,2022,2026
-1436292,Sékou Guindo,1154,Red Star FC,Left-Back,22,Mali,0,1,1,1,3,0,0,0,0,0,0,0,0,2026,2026
-1001783,Chaïb Lahmer,1154,Red Star FC,Centre-Back,23,France,0,7,6,8,112,44,3608,1,0,0,0,8,0,2019,2026
-362744,Elyaz Zidane,1154,Red Star FC,Centre-Back,20,France,15,6,3,11,154,85,5938,3,1,6,2,22,45,2021,2026
-1436293,Cheick Konaté,1154,Red Star FC,Defensive Midfield,21,Cote d'Ivoire,0,2,2,3,27,6,94,0,0,0,0,2,0,2025,2026
-1018332,Maxime Adam,3166,Pau FC,Goalkeeper,23,France,16,6,3,6,152,49,4326,0,0,0,0,1,0,2021,2026
-483460,Akim Abdallah,855,EA Guingamp,Left-Back,29,Comoros,0,13,7,15,501,323,23006,7,17,111,21,46,30,2014,2026
-545487,Axel Bamba,3166,Pau FC,Centre-Back,27,Cote d'Ivoire,88,10,5,9,373,177,14116,12,0,50,11,19,0,2016,2026
-412092,Gaëtan Paquiez,3166,Pau FC,Centre-Back,32,France,29,15,4,10,520,349,25975,5,9,48,11,67,0,2012,2026
-1324733,Lucas Rakotozafy,3166,Pau FC,Centre-Back,19,Madagascar,38,3,3,5,68,49,4132,5,0,0,0,2,0,2023,2025
-1203035,Rony Mimb Baheng,3166,Pau FC,Centre-Back,21,Cameroon,22,4,5,8,122,53,3723,2,0,1,0,11,0,2023,2026
-332047,Jessy Benet,3166,Pau FC,Central Midfield,31,France,21,14,8,11,522,353,26373,57,35,248,102,37,2,2013,2026
-509044,Lorenzo Rajot,3166,Pau FC,Central Midfield,28,France,5,12,6,7,402,280,16488,23,19,117,33,23,0,2014,2026
-407624,Quentin Daubin,3166,Pau FC,Central Midfield,31,France,25,11,6,8,432,309,22298,4,11,60,11,75,0,2015,2025
-857154,Alexis Lefebvre,3166,Pau FC,Right Winger,23,France,11,8,6,10,224,132,7123,36,4,72,25,14,0,2019,2026
-796867,Babacar Leye,3166,Pau FC,Centre-Forward,25,France,9,11,4,9,214,142,8993,61,3,8,3,11,0,2016,2026
-934838,Royce Openda,3166,Pau FC,Right Winger,24,Gabon,14,6,7,10,138,92,6228,22,10,4,2,11,4,2021,2026
-886502,Tom Saettel,3166,Pau FC,Left Winger,21,France,19,6,6,13,210,117,7086,23,5,12,6,13,18,2021,2026
-1171182,Kenzo Noël,1159,AS Nancy-Lorraine,Goalkeeper,20,France,60,5,3,6,124,18,1533,0,0,0,0,1,0,2022,2026
-242716,Enzo Basilio,1159,AS Nancy-Lorraine,Goalkeeper,31,France,1,15,7,6,581,317,28342,0,0,0,0,3,0,2012,2026
-126705,Martin Sourzac,1159,AS Nancy-Lorraine,Goalkeeper,33,France,16,16,9,12,621,241,21090,0,0,0,0,9,0,2010,2025
-1169444,Almami Touré,1159,AS Nancy-Lorraine,Goalkeeper,18,France,0,4,4,6,115,21,1890,0,0,0,0,2,0,2022,2025
-72414,Geoffrey Lembet,1159,AS Nancy-Lorraine,Goalkeeper,37,Central African Republic,30,19,8,15,718,229,20383,0,1,0,0,13,41,2008,2026
-1030153,Justin Bourgault,1159,AS Nancy-Lorraine,Left-Back,19,France,3,6,6,10,154,96,6288,5,5,11,3,5,7,2021,2026
-743495,Nehemiah Fernandez,1159,AS Nancy-Lorraine,Centre-Back,21,France,4,7,5,10,220,131,10468,6,4,25,6,21,8,2019,2026
-1133052,Enzo Tacafred,1159,AS Nancy-Lorraine,Right-Back,21,France,44,5,3,6,123,82,6518,6,1,27,5,10,0,2022,2026
-979760,Rayan Bamba,1159,AS Nancy-Lorraine,Right-Back,21,France,23,6,6,8,176,116,8893,6,5,16,7,16,0,2021,2026
-602549,Elydjah Mendy,1159,AS Nancy-Lorraine,Centre-Back,26,Guinea-Bissau,21,8,6,7,252,143,12053,19,0,24,7,41,0,2018,2026
-357072,Faitout Maouassa,1159,AS Nancy-Lorraine,Left-Back,26,France,27,12,11,28,540,267,17028,19,21,159,52,24,36,2014,2025
-904707,Yannis Nahounou,1159,AS Nancy-Lorraine,Centre-Back,22,France,77,8,5,11,231,73,5408,7,1,2,0,10,0,2019,2026
-804885,Martin Expérience,1159,AS Nancy-Lorraine,Left-Back,26,Haiti,19,11,7,16,313,187,14240,7,6,32,4,25,25,2015,2026
-291120,Adrien Julloux,1159,AS Nancy-Lorraine,Centre-Back,28,France,12,13,6,8,383,258,19678,3,6,22,5,11,0,2014,2026
-170962,Nicolas Saint-Ruf,1159,AS Nancy-Lorraine,Centre-Back,33,Guadeloupe,14,17,9,13,739,412,34647,34,8,67,19,68,4,2010,2026
-958487,Walid Bouabdeli,1159,AS Nancy-Lorraine,Attacking Midfield,26,France,8,8,4,4,193,163,10748,35,16,96,26,19,0,2018,2026
-272618,Teddy Bouriaud,1080,Stade Lavallois,Defensive Midfield,29,France,8,15,5,11,379,279,19721,12,11,53,21,47,19,2012,2026
-288237,Jérémy Gélin,1159,AS Nancy-Lorraine,Defensive Midfield,29,France,25,14,7,24,539,295,20448,7,10,100,20,35,24,2013,2026
-512754,Maxence Carlier,1159,AS Nancy-Lorraine,Defensive Midfield,28,France,17,12,11,17,422,282,21863,11,7,25,3,40,0,2015,2026
-348431,Cazim Suljic,1159,AS Nancy-Lorraine,Central Midfield,28,Bosnia-Herzegovina,5,14,12,21,553,278,21310,7,18,9,2,60,2,2012,2026
-1020189,Hugo Barbier,1159,AS Nancy-Lorraine,Defensive Midfield,21,France,18,5,4,8,128,80,5640,6,2,3,1,17,0,2021,2026
-1146250,Chafik El Hansar,1159,AS Nancy-Lorraine,Central Midfield,21,France,45,5,3,5,104,46,2574,7,0,6,2,3,0,2021,2026
-603564,Bakari Camara,1159,AS Nancy-Lorraine,Defensive Midfield,31,Mauritania,13,12,8,12,351,206,13701,8,2,12,4,54,15,2015,2026
+737481,Ryan Ponti,11273,Rodez AF,Left Midfield,28,Madagascar,20,8,6,10,303,147,11093,6,20,24,4,7,7,2019,2026
+855158,Mohamed Achi,11273,Rodez AF,Central Midfield,23,France,7,9,7,14,269,118,7588,18,9,6,2,2,6,2018,2026
+1134211,Morgan Corredor,11273,Rodez AF,Central Midfield,20,France,12,4,3,5,76,14,198,1,0,3,1,0,0,2022,2026
+1143458,Corentin Issanchou,11273,Rodez AF,Attacking Midfield,21,France,13,5,3,6,96,23,1322,5,0,6,3,3,0,2022,2026
+855056,Taïryk Arconte,3166,Pau FC,Centre-Forward,21,Guadeloupe,0,8,8,17,271,152,7671,32,12,151,70,23,11,2019,2026
+1143328,Yanis Dahalani,11273,Rodez AF,Central Midfield,21,France,34,4,3,6,71,19,1391,2,0,0,0,2,0,2022,2026
+618416,Kenny Nagera,11273,Rodez AF,Centre-Forward,24,France,7,8,11,18,236,165,8761,38,14,47,16,6,0,2019,2026
+804884,Ibrahima Baldé,11273,Rodez AF,Centre-Forward,23,France,18,8,5,10,248,127,7063,36,7,134,63,14,1,2019,2026
+801566,Mehdi Baaloudj,11273,Rodez AF,Centre-Forward,25,Algeria,10,9,8,9,228,162,8554,37,7,48,21,16,0,2018,2026
+726566,Hermann Tebily,11273,Rodez AF,Centre-Forward,24,France,19,8,8,11,287,78,2864,9,5,21,11,5,0,2019,2026
+988248,Mohamed Sylla,11273,Rodez AF,Centre-Back,22,France,5,7,8,10,212,100,7573,5,0,5,2,18,0,2020,2026
+693360,Steven Luyambula,11273,Rodez AF,Right-Back,23,France,28,8,8,8,240,155,11555,4,9,11,4,10,0,2019,2026
+918302,Cheick Doumbia,11273,Rodez AF,Left-Back,21,Mali,23,6,7,11,236,89,4720,6,4,2,0,4,9,2021,2026
+707802,Nachon Nsingi,11273,Rodez AF,Centre-Forward,25,Belgium,9,5,5,7,163,91,3313,9,5,81,38,9,0,2022,2026
+409511,Damjan Pavlovic,11273,Rodez AF,Defensive Midfield,25,Serbia,8,9,6,17,288,143,7255,7,11,22,8,21,8,2015,2026
+774772,Antonin Cartillier,11273,Rodez AF,Defensive Midfield,22,France,29,6,8,11,163,97,6620,6,6,11,3,3,0,2021,2026
+1053213,Djibril Mavounia,11273,Rodez AF,Left Winger,20,France,0,2,4,6,40,3,184,0,0,0,0,0,0,2023,2026
+1080972,Théo Ramousse,3524,Clermont Foot 63,Goalkeeper,20,France,0,6,4,8,157,44,3841,0,0,0,0,2,0,2021,2026
+369267,Maximiliano Caufriez,3524,Clermont Foot 63,Centre-Back,28,Belgium,5,12,6,18,439,233,18682,4,3,58,16,60,10,2014,2025
+1051756,Stan Berkani,3524,Clermont Foot 63,Defensive Midfield,21,Algeria,0,6,5,10,205,90,5983,6,3,0,0,2,1,2020,2025
+1179416,Joan Raynaud,3524,Clermont Foot 63,Goalkeeper,18,France,0,3,3,6,101,26,2340,0,1,0,0,1,0,2023,2025
+669000,Habib Keïta,3524,Clermont Foot 63,Central Midfield,23,Mali,0,7,7,12,231,143,9391,6,8,91,19,27,0,2020,2026
+51540,Henri Saivet,3524,Clermont Foot 63,Central Midfield,34,Senegal,10,19,11,33,935,473,32521,58,38,227,68,22,57,2006,2025
+1047101,İlhan Fakılı,3524,Clermont Foot 63,Left Winger,19,Türkiye,29,5,4,11,158,109,6913,27,8,61,22,2,1,2022,2026
+72121,Johan Gastien,3524,Clermont Foot 63,Defensive Midfield,37,France,25,19,5,9,734,569,44816,32,25,175,45,138,0,2007,2025
+560725,Abdoul Kader Bamba,3524,Clermont Foot 63,Left Winger,31,France,32,12,8,13,356,240,12689,36,29,156,65,28,0,2012,2026
+1119420,Marouane Admar,3524,Clermont Foot 63,Attacking Midfield,19,France,0,4,3,6,137,62,3933,6,0,0,0,5,0,2022,2025
+924800,Axel Camblan,3524,Clermont Foot 63,Right Winger,21,France,7,7,6,9,254,131,7695,24,17,53,16,9,0,2020,2026
+617698,Mohamed Guindo,3524,Clermont Foot 63,Centre-Forward,21,Mali,19,6,6,12,188,101,5264,37,5,96,30,10,3,2018,2026
+237125,Famara Diédhiou,3524,Clermont Foot 63,Centre-Forward,32,Senegal,18,16,12,21,752,505,33263,167,24,490,182,49,26,2011,2026
+905942,Amine Saïd,3524,Clermont Foot 63,Centre-Forward,22,Algeria,9,7,6,9,182,90,4923,19,1,3,1,8,0,2020,2026
+800249,Loïc Socka Bongué,3524,Clermont Foot 63,Centre-Forward,26,France,0,10,7,11,279,195,11853,28,13,35,10,22,0,2017,2026
+242716,Enzo Basilio,1159,AS Nancy-Lorraine,Goalkeeper,31,France,1,15,7,6,582,318,28432,0,0,0,0,3,0,2012,2026
+1171182,Kenzo Noël,1159,AS Nancy-Lorraine,Goalkeeper,20,France,60,5,3,7,126,19,1623,0,0,0,0,1,0,2022,2026
+860047,Yanis Kouini,1159,AS Nancy-Lorraine,Goalkeeper,22,Morocco,40,7,4,7,194,82,7302,0,1,0,0,4,0,2020,2026
+72414,Geoffrey Lembet,1159,AS Nancy-Lorraine,Goalkeeper,37,Central African Republic,30,19,8,15,719,229,20383,0,1,0,0,13,41,2008,2026
+1133052,Enzo Tacafred,1159,AS Nancy-Lorraine,Right-Back,21,France,44,5,3,6,124,83,6608,6,1,28,5,10,0,2022,2026
+481634,Logan Ndenbe,1159,AS Nancy-Lorraine,Left-Back,26,Belgium,22,10,5,15,379,156,10890,3,4,56,15,10,19,2016,2026
+602549,Elydjah Mendy,1159,AS Nancy-Lorraine,Centre-Back,26,Guinea-Bissau,21,8,6,7,253,144,12143,19,0,24,7,41,0,2018,2026
+904707,Yannis Nahounou,1159,AS Nancy-Lorraine,Centre-Back,22,France,77,8,5,11,232,74,5498,7,1,2,0,10,0,2019,2026
+170962,Nicolas Saint-Ruf,1159,AS Nancy-Lorraine,Centre-Back,33,Guadeloupe,14,17,9,13,722,412,34647,34,8,67,19,68,4,2010,2026
+990790,Héliohdino Tavares,1159,AS Nancy-Lorraine,Right-Back,21,France,2,6,6,9,193,118,9036,1,2,0,0,27,0,2021,2026
+1144493,Kouroufia Kébé,1159,AS Nancy-Lorraine,Defensive Midfield,20,France,19,5,4,10,132,91,6190,4,6,4,0,16,0,2022,2026
+288237,Jérémy Gélin,1159,AS Nancy-Lorraine,Defensive Midfield,29,France,25,14,7,24,540,295,20448,7,10,100,20,35,24,2013,2026
+958487,Walid Bouabdeli,1159,AS Nancy-Lorraine,Attacking Midfield,26,France,8,8,4,4,194,164,10838,35,16,99,26,19,0,2018,2026
+563734,Mamadou Fofana,1159,AS Nancy-Lorraine,Central Midfield,25,Mauritania,17,11,8,15,339,169,8948,12,9,99,36,24,0,2016,2026
+905952,Issam Bouaoune,1159,AS Nancy-Lorraine,Central Midfield,23,Algeria,28,7,7,9,179,123,8104,19,5,21,4,23,1,2020,2026
+1020189,Hugo Barbier,1159,AS Nancy-Lorraine,Defensive Midfield,21,France,18,5,4,8,129,80,5640,6,2,3,1,17,0,2021,2026
+1146250,Chafik El Hansar,1159,AS Nancy-Lorraine,Central Midfield,21,France,45,5,3,6,106,47,2664,7,0,6,2,3,0,2021,2026
+1106861,Joël-Emmanuel Coulibaly,1159,AS Nancy-Lorraine,Central Midfield,19,France,88,5,4,10,183,95,6733,7,2,0,0,20,19,2022,2026
+1162654,Noam Obougou,1159,AS Nancy-Lorraine,Centre-Forward,20,France,29,5,4,6,107,51,2519,11,1,7,4,8,0,2022,2026
+1134101,Yanis Delaveau,1159,AS Nancy-Lorraine,Central Midfield,19,Algeria,24,4,3,6,59,16,1027,1,1,3,2,0,4,2022,2026
+1146314,Ylan El Hadary,1159,AS Nancy-Lorraine,Left Winger,20,Madagascar,0,5,5,11,84,48,3093,7,6,8,3,4,20,2022,2026
+825437,Ilyes Housni,1159,AS Nancy-Lorraine,Centre-Forward,21,Morocco,9,7,8,15,173,76,4304,45,13,16,5,4,11,2020,2026
+864769,Brandon Bokangu,1159,AS Nancy-Lorraine,Right Winger,26,DR Congo,20,8,4,7,201,156,10122,45,11,72,26,20,0,2018,2026
+777150,Zakaria Fdaouch,1159,AS Nancy-Lorraine,Left Winger,29,France,7,11,10,11,298,235,17705,51,33,107,41,20,0,2015,2026
+1215725,Zakaria Ztouti,1159,AS Nancy-Lorraine,Centre-Forward,19,France,26,4,3,5,54,27,1363,5,2,3,1,3,0,2022,2026
+198410,Adrian Dabasse,1159,AS Nancy-Lorraine,Centre-Forward,33,France,10,17,10,9,560,385,22560,78,24,105,32,32,0,2010,2026
+911991,Sidi Cissé,1159,AS Nancy-Lorraine,Right Winger,23,France,11,8,6,7,254,114,6237,16,13,18,6,11,0,2019,2026
+126705,Martin Sourzac,1159,AS Nancy-Lorraine,Goalkeeper,33,France,16,17,10,13,622,241,21090,0,0,0,0,9,0,2010,2026
+1169444,Almami Touré,1159,AS Nancy-Lorraine,Goalkeeper,18,France,0,5,5,7,116,21,1890,0,0,0,0,2,0,2022,2026
+1030153,Justin Bourgault,1159,AS Nancy-Lorraine,Left-Back,19,France,3,6,6,10,155,96,6288,5,5,11,3,5,7,2021,2026
+979760,Rayan Bamba,1159,AS Nancy-Lorraine,Right-Back,21,France,23,6,6,8,177,116,8893,6,5,16,7,16,0,2021,2026
+357072,Faitout Maouassa,1159,AS Nancy-Lorraine,Left-Back,26,France,27,13,12,29,542,267,17028,19,21,159,52,24,36,2013,2025
+804885,Martin Expérience,1159,AS Nancy-Lorraine,Left-Back,26,Haiti,19,11,7,16,314,188,14330,7,6,33,5,25,25,2015,2026
+291120,Adrien Julloux,1159,AS Nancy-Lorraine,Centre-Back,28,France,12,13,6,8,384,259,19768,3,6,22,5,11,0,2014,2026
+272618,Teddy Bouriaud,1080,Stade Lavallois,Defensive Midfield,29,France,8,15,5,11,380,279,19721,12,11,53,21,47,19,2012,2026
+512754,Maxence Carlier,1159,AS Nancy-Lorraine,Defensive Midfield,28,France,17,12,11,17,423,284,21909,11,7,25,3,41,0,2015,2026
+348431,Cazim Suljic,1159,AS Nancy-Lorraine,Central Midfield,28,Bosnia-Herzegovina,5,14,12,21,554,279,21400,7,18,9,2,61,2,2012,2026
+603564,Bakari Camara,1159,AS Nancy-Lorraine,Defensive Midfield,31,Mauritania,13,12,8,12,356,207,13791,8,2,13,4,54,15,2015,2026
 806392,Cheikh Touré,1159,AS Nancy-Lorraine,Centre-Forward,28,France,0,12,10,13,306,243,16445,105,12,126,56,33,0,2014,2025
-777150,Zakaria Fdaouch,1159,AS Nancy-Lorraine,Left Winger,29,France,7,11,10,11,297,234,17621,51,32,105,40,20,0,2015,2026
-864769,Brandon Bokangu,1159,AS Nancy-Lorraine,Right Winger,26,DR Congo,20,8,4,7,200,155,10046,44,11,67,24,20,0,2018,2026
-1134101,Yanis Delaveau,1159,AS Nancy-Lorraine,Central Midfield,19,Algeria,24,4,2,5,57,15,968,1,1,3,2,0,4,2022,2026
-801069,Jimmy Evans,1159,AS Nancy-Lorraine,Right Winger,26,Nigeria,22,6,5,12,189,133,5516,12,12,56,19,25,0,2019,2025
+801069,Jimmy Evans,1159,AS Nancy-Lorraine,Right Winger,26,Nigeria,22,6,5,12,190,134,5523,12,12,56,19,25,0,2019,2025
 948789,Oumar Sidibé,1159,AS Nancy-Lorraine,Right Winger,24,France,0,7,6,5,225,158,8365,19,8,44,15,10,0,2019,2025
-860047,Yanis Kouini,1159,AS Nancy-Lorraine,Goalkeeper,22,Morocco,40,7,4,7,193,82,7302,0,1,0,0,4,0,2020,2026
-198410,Adrian Dabasse,1159,AS Nancy-Lorraine,Centre-Forward,33,France,10,17,10,9,559,384,22546,78,24,104,32,32,0,2010,2026
-1215725,Zakaria Ztouti,1159,AS Nancy-Lorraine,Centre-Forward,19,France,26,4,2,4,52,26,1273,5,2,3,1,3,0,2022,2026
-481634,Logan Ndenbe,1159,AS Nancy-Lorraine,Left-Back,26,Belgium,22,10,5,15,378,155,10884,3,4,55,15,10,19,2016,2026
-1144493,Kouroufia Kébé,1159,AS Nancy-Lorraine,Defensive Midfield,20,France,19,5,4,10,131,90,6100,4,6,2,0,16,0,2022,2026
-1228320,Pape Sissoko,1159,AS Nancy-Lorraine,Centre-Forward,19,Mali,9,4,6,13,126,48,2448,22,0,17,6,5,2,2023,2026
-990790,Héliohdino Tavares,1159,AS Nancy-Lorraine,Right-Back,21,France,2,6,5,8,191,117,8946,1,2,0,0,26,0,2021,2026
-905952,Issam Bouaoune,1159,AS Nancy-Lorraine,Central Midfield,23,Algeria,28,7,7,9,178,123,8104,19,5,21,4,23,1,2020,2026
-563734,Mamadou Fofana,1159,AS Nancy-Lorraine,Central Midfield,25,Mauritania,17,11,8,15,338,168,8934,12,9,99,36,24,0,2016,2026
-1106861,Joël-Emmanuel Coulibaly,1159,AS Nancy-Lorraine,Central Midfield,19,France,88,5,4,10,182,95,6733,7,2,0,0,20,19,2022,2026
-1162654,Noam Obougou,1159,AS Nancy-Lorraine,Centre-Forward,20,France,29,5,4,6,106,50,2513,11,1,7,4,8,0,2022,2026
-314862,Bobby Allain,1290,Grenoble Foot 38,Goalkeeper,34,France,16,16,8,18,629,150,13336,0,0,0,0,5,0,2011,2026
-825437,Ilyes Housni,1159,AS Nancy-Lorraine,Centre-Forward,21,Morocco,9,7,8,15,172,75,4214,45,12,16,5,4,11,2020,2026
-920218,Théo Borne,1290,Grenoble Foot 38,Goalkeeper,24,France,0,8,10,13,234,93,8325,0,0,0,0,0,0,2019,2026
-744936,Matthéo Xantippe,1290,Grenoble Foot 38,Left-Back,24,France,27,8,4,5,240,141,10053,5,11,33,12,23,1,2019,2026
-911991,Sidi Cissé,1159,AS Nancy-Lorraine,Right Winger,23,France,11,8,5,6,252,113,6147,16,13,18,6,11,0,2019,2026
-1177162,Sakhalou Niakaté,1290,Grenoble Foot 38,Right-Back,20,France,48,4,4,7,143,66,5409,7,1,8,5,11,0,2023,2026
-569388,Clément Vidal,1290,Grenoble Foot 38,Centre-Back,26,France,5,12,8,14,355,213,16379,8,1,70,20,38,3,2015,2026
-975729,Efe Sarıkaya,1290,Grenoble Foot 38,Centre-Back,20,Türkiye,33,6,4,11,223,92,6704,4,0,10,2,15,28,2021,2026
-621733,Farouq Limouri,1290,Grenoble Foot 38,Centre-Back,23,Netherlands,3,9,6,11,287,175,13320,11,0,84,23,18,4,2018,2026
-668201,Mathieu Mion,1290,Grenoble Foot 38,Left-Back,25,France,26,10,6,5,306,217,16935,5,9,46,17,42,0,2017,2026
-855215,Ange Loïc N'Gatta,1290,Grenoble Foot 38,Right-Back,22,Cote d'Ivoire,22,8,5,10,238,92,6536,1,2,1,0,10,1,2019,2026
-536480,Lucas Bernadou,1290,Grenoble Foot 38,Central Midfield,25,France,8,10,6,13,279,202,12250,7,12,68,15,17,0,2017,2026
-413859,Mael Corboz,1290,Grenoble Foot 38,Central Midfield,31,United States,14,15,10,14,443,342,28153,40,36,449,123,63,0,2011,2026
-594997,Yohann Magnin,1290,Grenoble Foot 38,Defensive Midfield,29,France,6,12,4,10,373,296,20030,14,4,95,27,40,0,2015,2026
-804548,Baptiste Mouazan,1290,Grenoble Foot 38,Central Midfield,24,France,10,10,6,9,254,171,10872,26,12,91,37,20,0,2017,2026
-1026014,Samba Diba,1290,Grenoble Foot 38,Defensive Midfield,22,Senegal,30,7,5,14,278,104,4789,2,3,44,6,23,3,2020,2026
-825592,Nesta Zahui,1290,Grenoble Foot 38,Right Winger,23,France,19,5,4,7,110,69,3071,3,7,22,10,5,0,2020,2026
-468338,Zé Leite,1290,Grenoble Foot 38,Right Winger,26,Portugal,0,8,6,7,214,111,6146,17,14,86,43,21,0,2019,2026
-672830,Leonardo Cerri,1290,Grenoble Foot 38,Centre-Forward,23,Italy,17,9,9,17,327,199,7803,46,10,42,16,12,4,2018,2026
-591796,Moussa Djitté,1290,Grenoble Foot 38,Centre-Forward,26,Senegal,2,9,8,15,317,219,12567,48,11,217,92,26,0,2018,2026
-978197,Arthur Lallias,1290,Grenoble Foot 38,Second Striker,23,France,9,7,5,9,235,138,9115,39,6,32,5,9,0,2020,2026
-559321,Dillon Hoogewerf,1290,Grenoble Foot 38,Left Winger,23,Netherlands,23,11,11,21,352,203,11609,55,28,188,68,15,19,2016,2026
-823521,Evans Maurin,1290,Grenoble Foot 38,Centre-Forward,25,France,20,8,7,12,265,99,4490,33,2,46,17,13,0,2019,2026
-817180,Mamady Bangré,1290,Grenoble Foot 38,Right Winger,25,Burkina Faso,11,10,8,13,283,168,7654,22,12,114,33,6,8,2017,2026
-1128099,Jean-Guy Akpa Akpro,1290,Grenoble Foot 38,Right Winger,21,France,92,4,6,8,108,56,3740,9,2,3,1,20,0,2022,2026
-525114,Ugo Bonnet,1290,Grenoble Foot 38,Centre-Forward,32,France,12,13,5,9,439,327,18002,55,14,116,43,32,0,2014,2026
-886503,Mohamed Bechikh,1290,Grenoble Foot 38,Centre-Forward,21,Algeria,37,6,5,10,168,95,5350,27,4,5,2,1,2,2021,2026
-1130508,Kyliann Fofana,1290,Grenoble Foot 38,Centre-Forward,20,France,0,4,4,6,73,20,1234,4,0,3,0,1,0,2022,2026
-917147,Mamadou Diop,1290,Grenoble Foot 38,Goalkeeper,25,Mauritania,13,9,5,11,259,85,7524,0,0,0,0,2,8,2018,2026
-288247,Maxime Pattier,1290,Grenoble Foot 38,Goalkeeper,29,France,1,14,7,10,475,174,15660,0,0,0,0,5,0,2013,2026
-591911,Stone Mambo,1290,Grenoble Foot 38,Centre-Back,26,France,4,12,9,13,323,192,15300,7,4,32,5,27,0,2015,2026
-650809,Shaquil Delos,1290,Grenoble Foot 38,Right-Back,26,France,17,10,8,11,326,228,15856,10,12,44,19,14,0,2017,2026
-684062,Hianga'a Mbock,1290,Grenoble Foot 38,Central Midfield,25,France,0,11,8,10,337,189,11178,15,3,97,25,26,0,2016,2026
-806496,Yadaly Diaby,1290,Grenoble Foot 38,Centre-Forward,26,Guinea,7,8,5,13,268,169,9627,31,13,188,83,9,11,2019,2026
-341396,Théo Valls,1290,Grenoble Foot 38,Central Midfield,29,France,0,13,5,11,490,392,26986,27,30,299,85,35,0,2013,2025
-629566,Eddy Sylvestre,9202,USL Dunkerque,Attacking Midfield,25,France,7,11,10,14,399,224,10668,10,10,123,39,30,0,2016,2026
-1452041,Abdel Heidi Medroub,1290,Grenoble Foot 38,Defensive Midfield,19,France,0,1,1,1,1,0,0,0,0,0,0,0,0,2025,2025
-862606,Nesta Elphege,1290,Grenoble Foot 38,Centre-Forward,24,France,0,6,6,7,148,92,5554,29,6,43,18,11,0,2020,2026
-394903,Maxence Prévot,9202,USL Dunkerque,Goalkeeper,29,France,16,15,6,15,535,268,23740,0,0,0,0,12,2,2012,2026
-1401765,Mouhamed Sissokho,9202,USL Dunkerque,Goalkeeper,21,Senegal,36,3,1,3,28,4,390,0,0,0,0,0,4,2024,2026
-395244,Alan Kerouedan,1290,Grenoble Foot 38,Right Winger,25,France,0,12,10,15,353,236,14591,38,23,39,13,27,31,2015,2026
-950727,Victor Mayela,9202,USL Dunkerque,Centre-Back,22,DR Congo,22,6,6,12,184,104,8206,2,1,13,2,9,1,2021,2026
-495602,Moha Ramos,9202,USL Dunkerque,Goalkeeper,26,Spain,73,10,13,21,309,36,3203,0,0,0,0,4,3,2016,2026
-990732,Ousmane Touré,9202,USL Dunkerque,Centre-Back,21,France,2,6,7,16,255,88,7025,3,2,6,3,9,2,2021,2026
-371148,Lenny Vallier,9202,USL Dunkerque,Left-Back,27,France,24,13,11,16,428,237,17287,9,12,33,12,36,8,2014,2026
+1228320,Pape Sissoko,1159,AS Nancy-Lorraine,Centre-Forward,19,Mali,9,4,6,13,127,49,2532,22,0,23,6,6,2,2023,2026
+344591,Gaëtan Poussin,1154,Red Star FC,Goalkeeper,27,France,16,13,7,21,460,170,14952,1,0,1,1,7,15,2014,2026
+157484,Quentin Beunardeau,1154,Red Star FC,Goalkeeper,31,France,1,18,12,24,675,322,28820,0,0,0,0,22,26,2009,2026
+215677,Mouez Hassen,1154,Red Star FC,Goalkeeper,31,Tunisia,40,17,11,35,691,245,21839,0,0,0,0,16,32,2010,2026
+717421,Valentin Rabouille,1154,Red Star FC,Goalkeeper,25,France,0,11,8,10,297,99,8653,0,0,0,0,7,0,2016,2026
+1049151,Dembo Sylla,1154,Red Star FC,Right-Back,22,Guinea,22,9,9,16,234,153,9869,1,11,40,12,16,15,2017,2026
+743495,Nehemiah Fernandez,1159,AS Nancy-Lorraine,Centre-Back,21,France,4,7,5,10,221,132,10552,7,4,27,7,21,8,2019,2026
+756171,Dylan Durivaux,1154,Red Star FC,Centre-Back,25,France,20,10,7,11,248,174,14804,6,8,36,8,17,1,2016,2026
+986298,Joachim Kayi Sanda,1154,Red Star FC,Centre-Back,18,France,0,6,6,21,270,135,10443,7,3,44,12,32,33,2021,2026
+539808,Théo Magnin,1154,Red Star FC,Right-Back,23,Switzerland,2,10,5,18,381,182,11305,4,3,34,8,12,22,2017,2026
+862972,Josué Escartin,1154,Red Star FC,Centre-Back,23,France,5,7,7,10,247,110,7988,7,0,10,3,28,0,2020,2026
+588997,Matthieu Huard,1154,Red Star FC,Left-Back,28,France,3,11,4,11,344,217,15371,3,4,28,6,33,0,2016,2026
+324798,Bradley Danger,1154,Red Star FC,Centre-Back,28,France,6,14,8,14,478,337,27643,21,9,54,27,49,23,2013,2026
+170477,Pierre Lemonnier,1154,Red Star FC,Centre-Back,33,France,24,16,7,12,538,335,28817,19,3,54,15,36,0,2011,2026
+916438,Mohafidh Ahamada,1154,Red Star FC,Right-Back,22,Comoros,0,5,3,7,122,30,1701,0,0,0,0,2,0,2021,2026
+465296,Rayane Doucouré,1154,Red Star FC,Centre-Back,24,France,6,10,8,14,197,70,5623,3,0,0,0,8,9,2017,2026
+642002,Balthazar Pierret,1154,Red Star FC,Defensive Midfield,26,France,4,10,9,14,277,188,13242,11,3,94,35,46,0,2017,2026
+270411,Saîf-Eddine Khaoui,1154,Red Star FC,Attacking Midfield,31,Tunisia,10,15,11,21,591,294,14648,37,26,238,90,27,29,2012,2026
+722739,Samuel Renel,1154,Red Star FC,Central Midfield,24,Martinique,17,9,5,10,318,181,11072,11,12,33,15,7,3,2018,2026
+802012,Guillaume Trani,1154,Red Star FC,Attacking Midfield,28,France,8,10,4,11,297,205,14635,53,39,11,6,25,0,2017,2026
+902629,Islamdine Halifa,1154,Red Star FC,Defensive Midfield,21,France,19,6,5,14,180,119,8874,8,3,39,8,19,3,2021,2026
+1436293,Cheick Konaté,1154,Red Star FC,Defensive Midfield,21,Cote d'Ivoire,45,3,2,3,78,7,101,0,0,0,0,2,0,2024,2026
+460632,Kévin Cabral,1154,Red Star FC,Centre-Forward,27,France,91,10,6,11,321,250,14012,34,30,272,115,30,0,2016,2026
+921852,Jovany Ikanga,1154,Red Star FC,Centre-Forward,24,France,23,6,2,4,191,120,6092,28,9,82,31,8,0,2021,2026
+1226637,Vincent Kany,1154,Red Star FC,Central Midfield,22,France,12,5,2,6,108,17,769,2,0,1,0,0,0,2019,2025
+693637,Pape Meïssa Ba,1154,Red Star FC,Centre-Forward,27,Senegal,9,9,6,10,294,217,13979,66,20,220,92,17,0,2018,2026
+792328,Damien Durand,1154,Red Star FC,Left Winger,30,France,7,10,3,6,306,278,20380,59,33,121,46,18,0,2017,2026
+1051271,Abdelsamad Hachem,1154,Red Star FC,Centre-Forward,24,France,0,8,6,10,168,105,6084,32,5,59,30,3,0,2019,2026
+806494,Kemo Cissé,1154,Red Star FC,Right Winger,29,France,11,7,2,5,190,152,10271,23,11,67,20,4,0,2020,2026
+1054838,Ronan Matuvangua,1154,Red Star FC,Centre-Forward,21,France,0,6,5,8,130,57,3832,19,5,0,0,2,0,2020,2026
+653415,Leonardo Buta,1154,Red Star FC,Left-Back,24,Portugal,25,9,10,21,293,146,10056,8,10,9,2,21,19,2018,2026
+362744,Elyaz Zidane,1154,Red Star FC,Centre-Back,20,France,15,6,3,11,155,86,6028,3,1,7,3,22,45,2021,2026
+975331,Yanis Benchaouch,1154,Red Star FC,Goalkeeper,20,Morocco,1,6,5,12,169,63,5545,0,0,0,0,1,22,2021,2026
+1436292,Sékou Guindo,1154,Red Star FC,Left-Back,22,Mali,0,1,1,1,4,0,0,0,0,0,0,0,0,2026,2026
+1262768,Idrissa Sabaly,1154,Red Star FC,Defensive Midfield,18,France,21,4,5,10,87,52,3792,13,3,4,0,12,3,2023,2026
+1001783,Chaïb Lahmer,1154,Red Star FC,Centre-Back,23,France,0,7,6,8,113,44,3608,1,0,0,0,8,0,2019,2026
+323253,Esteban Salles,3166,Pau FC,Goalkeeper,32,France,30,14,9,9,531,165,14591,0,1,0,0,5,0,2013,2026
+1018332,Maxime Adam,3166,Pau FC,Goalkeeper,23,France,16,6,4,7,154,50,4416,0,0,0,0,1,0,2021,2026
+1117092,Joseph Kalulu,3166,Pau FC,Left-Back,21,France,0,5,4,6,136,88,6086,3,2,20,5,6,0,2022,2026
+917817,Tom Pouilly,3166,Pau FC,Right-Back,23,France,2,7,4,10,214,139,9617,19,6,37,10,22,0,2020,2026
+483460,Akim Abdallah,855,EA Guingamp,Left-Back,29,Comoros,0,13,7,15,502,324,23065,7,17,111,21,46,30,2014,2026
+545487,Axel Bamba,3166,Pau FC,Centre-Back,27,Cote d'Ivoire,88,10,5,9,374,178,14206,12,0,50,11,19,0,2016,2026
+190338,Anthony Briançon,3166,Pau FC,Centre-Back,31,France,23,15,5,9,535,318,25395,20,5,166,44,55,0,2012,2026
+412092,Gaëtan Paquiez,3166,Pau FC,Centre-Back,32,France,29,15,4,10,521,350,25997,5,9,48,11,67,0,2012,2026
+1203035,Rony Mimb Baheng,3166,Pau FC,Centre-Back,21,Cameroon,22,4,6,9,124,54,3813,3,0,1,0,11,0,2023,2026
+1324733,Lucas Rakotozafy,3166,Pau FC,Centre-Back,19,Madagascar,38,4,4,6,69,50,4222,5,0,0,0,2,0,2023,2026
+1111045,Souleymane Basse,3166,Pau FC,Left-Back,22,Senegal,8,6,5,11,199,69,5750,2,5,15,5,13,9,2021,2026
+332047,Jessy Benet,3166,Pau FC,Central Midfield,31,France,21,14,8,11,523,354,26463,57,36,249,102,37,2,2013,2026
+1080215,Cheikh Fall,3166,Pau FC,Central Midfield,22,Senegal,6,5,5,8,198,92,6525,19,2,32,10,10,0,2022,2026
+711981,Kyllian Gasnier,3166,Pau FC,Attacking Midfield,24,France,90,9,8,8,185,106,6351,22,9,21,8,6,0,2018,2026
+407624,Quentin Daubin,3166,Pau FC,Central Midfield,31,France,25,12,7,9,433,310,22362,5,11,60,11,75,0,2015,2026
+509044,Lorenzo Rajot,3166,Pau FC,Central Midfield,28,France,5,12,6,7,403,281,16552,23,19,117,33,23,0,2014,2026
+922685,Giovani Versini,3166,Pau FC,Right Winger,22,France,10,7,9,12,220,159,10970,31,22,82,34,10,2,2020,2026
+796867,Babacar Leye,3166,Pau FC,Centre-Forward,25,France,9,11,4,9,215,143,9052,63,3,12,5,11,0,2016,2026
+934838,Royce Openda,3166,Pau FC,Right Winger,24,Gabon,14,6,8,11,140,93,6318,22,10,4,2,11,4,2021,2026
+857154,Alexis Lefebvre,3166,Pau FC,Right Winger,23,France,11,8,6,10,225,133,7154,36,4,72,25,14,0,2019,2026
+886502,Tom Saettel,3166,Pau FC,Left Winger,21,France,19,6,7,14,212,118,7176,23,5,12,6,13,18,2021,2026
+1498913,Abdoulaye Mbaye,3166,Pau FC,Centre-Forward,20,Senegal,56,3,3,3,51,26,1812,9,0,2,0,1,0,2024,2026
+917147,Mamadou Diop,1290,Grenoble Foot 38,Goalkeeper,25,Mauritania,13,9,5,11,260,86,7614,0,0,0,0,2,8,2018,2026
+314862,Bobby Allain,1290,Grenoble Foot 38,Goalkeeper,34,France,16,16,8,18,630,150,13336,0,0,0,0,5,0,2011,2026
+288247,Maxime Pattier,1290,Grenoble Foot 38,Goalkeeper,29,France,1,14,7,10,476,174,15660,0,0,0,0,5,0,2013,2026
+744936,Matthéo Xantippe,1290,Grenoble Foot 38,Left-Back,24,France,27,8,4,5,241,142,10143,5,11,33,12,23,1,2019,2026
+569388,Clément Vidal,1290,Grenoble Foot 38,Centre-Back,26,France,5,12,8,14,356,214,16469,8,1,70,20,39,3,2015,2026
+825592,Nesta Zahui,1290,Grenoble Foot 38,Right-Back,23,France,19,5,4,7,111,70,3161,3,7,22,10,5,0,2020,2026
+591911,Stone Mambo,1290,Grenoble Foot 38,Centre-Back,26,France,4,12,9,13,324,194,15480,7,4,32,5,27,0,2015,2026
+650809,Shaquil Delos,1290,Grenoble Foot 38,Right-Back,26,France,17,10,8,11,327,229,15946,10,12,44,19,14,0,2017,2026
+668201,Mathieu Mion,1290,Grenoble Foot 38,Left-Back,25,France,26,10,6,5,307,217,16935,5,9,46,17,42,0,2017,2026
+975729,Efe Sarıkaya,1290,Grenoble Foot 38,Centre-Back,20,Türkiye,33,6,4,11,224,92,6704,4,0,10,2,15,28,2021,2026
+855215,Ange Loïc N'Gatta,1290,Grenoble Foot 38,Right-Back,22,Cote d'Ivoire,22,8,5,10,239,92,6536,1,2,1,0,10,1,2019,2026
+536480,Lucas Bernadou,1290,Grenoble Foot 38,Central Midfield,25,France,8,12,7,14,286,203,12340,7,12,68,15,17,0,2015,2026
+1026014,Samba Diba,1290,Grenoble Foot 38,Defensive Midfield,22,Senegal,30,7,5,14,279,105,4861,3,3,46,7,23,3,2020,2026
+804548,Baptiste Mouazan,1290,Grenoble Foot 38,Central Midfield,24,France,10,10,6,9,255,172,10962,27,12,93,38,20,0,2017,2026
+684062,Hianga'a Mbock,1290,Grenoble Foot 38,Central Midfield,25,France,0,11,8,10,321,190,11237,15,3,98,25,26,0,2016,2026
+629566,Eddy Sylvestre,9202,USL Dunkerque,Attacking Midfield,25,France,7,11,10,14,400,225,10713,10,10,123,39,30,0,2016,2026
+341396,Théo Valls,1290,Grenoble Foot 38,Central Midfield,29,France,0,14,5,11,502,393,27015,27,30,299,85,35,0,2013,2026
 1133237,Charlie Dressel,1290,Grenoble Foot 38,Midfield,19,England,0,4,3,6,76,26,1658,4,0,0,0,0,0,2021,2025
-654986,Bram Lagae,9202,USL Dunkerque,Centre-Back,22,Belgium,4,8,4,12,313,136,10750,4,1,21,6,18,26,2018,2026
-635486,Allan Linguet,9202,USL Dunkerque,Right-Back,27,France,27,9,3,5,300,144,11347,4,11,14,5,23,0,2018,2026
-1162409,Lenny Dziki Loussilaho,9202,USL Dunkerque,Right-Back,21,Congo,21,6,3,7,102,44,2432,0,0,1,0,11,4,2021,2026
-685742,Egor Prutsev,9202,USL Dunkerque,Attacking Midfield,23,Russia,11,8,8,16,309,177,11207,25,30,44,13,20,2,2019,2026
-904663,Jordan Morel,9202,USL Dunkerque,Central Midfield,23,France,6,8,6,8,199,133,9299,16,7,50,18,8,0,2019,2026
-395674,Adrien Lebeau,9202,USL Dunkerque,Attacking Midfield,27,France,10,11,6,12,386,174,10245,19,20,98,37,23,0,2016,2026
-1216075,Théna Massock,9202,USL Dunkerque,Defensive Midfield,18,France,18,4,3,4,76,38,2052,2,1,7,3,4,0,2023,2026
-1188222,Marco Decherf,9202,USL Dunkerque,Central Midfield,19,France,29,4,2,4,78,43,3138,7,3,2,1,11,0,2023,2026
-1052285,Maedine Makhloufi,9202,USL Dunkerque,Left-Back,21,Algeria,42,6,4,9,177,97,7691,7,5,3,1,13,1,2021,2026
-352448,Opa Sangante,9202,USL Dunkerque,Centre-Back,35,Guinea-Bissau,26,15,5,11,587,436,35633,15,16,125,20,78,31,2012,2026
-1080176,Enzo Mayilla,9202,USL Dunkerque,Centre-Forward,20,France,94,5,5,7,136,85,4943,20,2,4,1,17,0,2022,2026
-73734,Steven Nzonzi,9202,USL Dunkerque,Defensive Midfield,37,France,15,20,12,36,895,673,52997,38,28,144,41,96,25,2007,2026
-1198342,Khalil Ayari,9202,USL Dunkerque,Right Winger,21,Tunisia,7,4,3,10,102,55,2684,5,1,7,0,9,12,2023,2026
-1435403,Franck Atoen,9202,USL Dunkerque,Defensive Midfield,20,Cameroon,25,2,3,7,89,33,2701,0,0,0,0,8,0,2025,2026
-1545997,Pape Malick Dieng,9202,USL Dunkerque,Attack,22,Senegal,17,2,1,1,4,0,0,0,0,0,0,0,0,2025,2026
-290615,Thomas Robinet,9202,USL Dunkerque,Centre-Forward,30,France,9,15,10,13,545,390,28380,106,24,237,79,43,4,2012,2026
-142033,Adrián Ortolá,855,EA Guingamp,Goalkeeper,33,Spain,16,18,13,20,702,287,25603,0,1,0,0,22,10,2009,2026
-1004498,Noah Marec,855,EA Guingamp,Goalkeeper,21,France,40,7,4,8,217,65,5850,0,0,0,0,0,0,2020,2026
-1074926,Alex Daho,9202,USL Dunkerque,Left Winger,22,France,93,6,4,7,176,121,6904,17,8,27,9,8,0,2021,2026
-1010044,Dylan Ourega,855,EA Guingamp,Left-Back,20,France,0,6,5,10,198,142,9555,11,5,26,8,13,0,2021,2026
-1176027,Souleymane Keita,9202,USL Dunkerque,Left Winger,20,France,19,4,3,6,70,15,339,1,0,11,6,3,0,2022,2026
-341942,Erwin Koffi,855,EA Guingamp,Right-Back,31,France,2,14,10,17,507,320,25584,11,26,101,27,18,0,2011,2026
-629587,Teddy Bartouche-Selbonne,855,EA Guingamp,Goalkeeper,29,Guadeloupe,1,11,5,12,442,88,7771,0,0,0,0,1,3,2016,2026
-1169161,Jérémie Matumona,855,EA Guingamp,Right-Back,20,France,3,5,4,6,100,61,3823,4,2,9,4,9,0,2022,2026
+1452041,Abdel Heidi Medroub,1290,Grenoble Foot 38,Defensive Midfield,19,France,0,1,1,1,1,0,0,0,0,0,0,0,0,2025,2025
+862606,Nesta Elphege,1290,Grenoble Foot 38,Centre-Forward,24,France,0,6,6,7,149,93,5564,29,6,43,18,11,0,2020,2026
+591796,Moussa Djitté,1290,Grenoble Foot 38,Centre-Forward,26,Senegal,2,9,8,15,318,219,12567,48,11,217,92,26,0,2018,2026
+806496,Yadaly Diaby,1290,Grenoble Foot 38,Centre-Forward,26,Guinea,7,8,5,13,269,169,9627,31,13,188,83,9,11,2019,2026
+978197,Arthur Lallias,1290,Grenoble Foot 38,Second Striker,23,France,9,7,5,9,236,138,9115,39,6,32,5,9,0,2020,2026
+817180,Mamady Bangré,1290,Grenoble Foot 38,Right Winger,25,Burkina Faso,11,10,8,13,284,169,7655,22,12,114,33,6,8,2017,2026
+395244,Alan Kerouedan,1290,Grenoble Foot 38,Right Winger,25,France,0,12,10,15,354,237,14674,38,24,39,13,27,31,2015,2026
+525114,Ugo Bonnet,1290,Grenoble Foot 38,Centre-Forward,32,France,12,13,5,9,440,328,18022,55,14,117,44,32,0,2014,2026
+886503,Mohamed Bechikh,1290,Grenoble Foot 38,Centre-Forward,21,Algeria,37,6,5,10,169,95,5350,27,4,5,2,1,2,2021,2026
+629587,Teddy Bartouche-Selbonne,855,EA Guingamp,Goalkeeper,29,Guadeloupe,1,11,5,12,443,88,7771,0,0,0,0,1,3,2016,2026
+1004498,Noah Marec,855,EA Guingamp,Goalkeeper,22,France,40,7,4,8,218,65,5850,0,0,0,0,0,0,2020,2026
+142033,Adrián Ortolá,855,EA Guingamp,Goalkeeper,33,Spain,16,18,13,20,703,288,25693,0,1,0,0,22,10,2009,2026
+814930,Albin Demouchy,855,EA Guingamp,Centre-Back,24,France,36,8,7,10,258,99,7751,4,1,13,4,18,0,2019,2026
+433887,Tuomas Ollila,855,EA Guingamp,Left-Back,26,Finland,5,13,9,25,372,223,14482,25,17,47,17,16,19,2014,2026
+562576,Donatien Gomis,855,EA Guingamp,Centre-Back,31,Senegal,7,11,6,9,322,222,19136,21,4,64,22,44,0,2014,2026
+341942,Erwin Koffi,855,EA Guingamp,Right-Back,31,France,2,14,10,17,508,321,25606,11,26,101,27,18,0,2011,2026
+392992,Jeovanni Dianganga,855,EA Guingamp,Centre-Back,26,Belgium,24,7,2,10,164,97,7496,0,1,8,5,18,2,2014,2026
+810086,Vimoj Muntu Wa Mungu,855,EA Guingamp,Left-Back,21,France,39,5,6,10,170,111,8877,6,11,2,1,21,4,2021,2026
+1169161,Jérémie Matumona,855,EA Guingamp,Right-Back,20,France,3,5,4,6,101,62,3891,4,3,9,4,9,0,2022,2026
+1166130,Nathan Fondja,855,EA Guingamp,Centre-Back,20,France,0,6,4,5,114,60,4507,1,0,0,0,1,0,2021,2026
+903161,Amine Hemia,855,EA Guingamp,Attacking Midfield,28,France,10,12,5,8,298,199,14728,59,22,102,36,27,0,2013,2026
+1166832,Idriss Planeix,855,EA Guingamp,Centre-Back,19,France,38,5,3,9,129,30,2297,0,0,0,0,7,5,2022,2026
+291415,Dylan Louiserre,855,EA Guingamp,Defensive Midfield,31,France,4,16,7,12,567,410,32373,22,10,228,49,67,0,2010,2026
+1101862,Samir Ben Brahim,855,EA Guingamp,Right Midfield,23,France,20,5,5,5,97,89,7110,14,8,34,10,10,0,2022,2026
+607225,Florent Sanchez,855,EA Guingamp,Central Midfield,23,France,8,9,9,20,328,159,10814,16,29,50,16,10,19,2018,2026
+1084972,Tanguy Ahile,855,EA Guingamp,Defensive Midfield,21,France,21,5,4,8,155,107,6681,11,2,31,12,11,0,2022,2026
+1048659,Jasser Chamakh,855,EA Guingamp,Left Midfield,22,France,23,8,4,8,170,111,7293,15,2,4,2,7,0,2019,2026
+434226,Darly N'Landu,855,EA Guingamp,Central Midfield,26,France,6,12,10,23,306,163,9598,11,8,19,8,32,5,2015,2026
+988242,Joël Matondo,855,EA Guingamp,Central Midfield,21,France,31,7,6,10,202,139,10145,16,5,0,0,14,0,2020,2026
+1166889,Ibrahima Diakité,855,EA Guingamp,Defensive Midfield,19,France,0,5,3,7,117,80,5820,5,6,0,0,8,2,2022,2026
+940263,Stanislas Kielt,855,EA Guingamp,Centre-Forward,24,France,18,6,3,5,160,146,9700,44,8,93,41,7,0,2021,2026
+744932,Gautier Ott,855,EA Guingamp,Left Winger,24,France,30,8,5,8,240,163,11395,11,34,146,41,15,1,2019,2026
+770372,Amadou Samoura,855,EA Guingamp,Left Winger,22,France,17,7,5,5,234,115,6220,30,5,40,15,11,0,2020,2026
+1166831,Ewan Aucan,855,EA Guingamp,Right Winger,19,France,0,5,3,4,96,70,4512,18,1,0,0,4,0,2022,2026
+1077658,Zayon Chtaï-Telamio,855,EA Guingamp,Left Winger,19,Tunisia,0,5,6,10,95,18,1076,4,2,8,0,0,6,2021,2026
 594992,Alpha Sissoko,855,EA Guingamp,Right-Back,28,Mali,22,11,8,13,431,230,17339,1,13,23,3,27,0,2015,2025
-562576,Donatien Gomis,855,EA Guingamp,Centre-Back,31,Senegal,7,11,6,9,321,221,19046,19,4,62,20,43,0,2014,2026
-1166130,Nathan Fondja,855,EA Guingamp,Centre-Back,19,France,0,5,4,5,112,60,4507,1,0,0,0,1,0,2021,2025
-814930,Albin Demouchy,855,EA Guingamp,Centre-Back,24,France,36,8,7,10,257,98,7661,4,1,13,4,18,0,2019,2026
-1074698,Eden Gassama,855,EA Guingamp,Centre-Back,19,Mali,0,6,4,10,163,83,6986,3,0,0,0,15,3,2021,2026
-1166832,Idriss Planeix,855,EA Guingamp,Centre-Back,19,France,38,4,3,9,128,29,2230,0,0,0,0,7,5,2022,2025
-1084972,Tanguy Ahile,855,EA Guingamp,Defensive Midfield,21,France,21,5,4,8,145,106,6591,11,2,30,11,11,0,2022,2026
-291415,Dylan Louiserre,855,EA Guingamp,Defensive Midfield,31,France,4,16,7,12,583,409,32283,22,10,227,48,67,0,2010,2026
-903161,Amine Hemia,855,EA Guingamp,Attacking Midfield,28,France,10,12,5,8,297,199,14728,59,22,102,36,27,0,2013,2026
-629585,Kalidou Sidibé,855,EA Guingamp,Defensive Midfield,26,Mali,8,11,7,11,380,248,17787,15,15,127,42,70,2,2016,2026
-434226,Darly N'Landu,855,EA Guingamp,Central Midfield,26,France,6,12,10,23,305,163,9598,11,8,19,8,32,5,2015,2026
-711988,Trésor Matondo,855,EA Guingamp,Central Midfield,21,France,0,7,8,10,207,126,10276,3,5,0,0,16,0,2018,2025
-461790,Louis Mafouta,855,EA Guingamp,Centre-Forward,30,Central African Republic,9,12,13,18,436,349,27632,143,23,329,155,38,33,2015,2026
-1166889,Ibrahima Diakité,855,EA Guingamp,Defensive Midfield,19,France,0,5,3,7,115,79,5748,5,6,0,0,8,2,2022,2026
-981760,Jérémy Hatchi,855,EA Guingamp,Left Winger,20,Guadeloupe,20,6,4,8,162,85,4757,17,5,18,4,7,0,2021,2026
-940263,Stanislas Kielt,855,EA Guingamp,Centre-Forward,24,France,18,6,3,5,159,145,9642,44,8,92,40,7,0,2021,2026
-983364,Freddy Mbemba,855,EA Guingamp,Left Winger,22,France,17,8,7,7,193,128,8118,26,14,107,48,7,0,2019,2026
-770372,Amadou Samoura,855,EA Guingamp,Left Winger,22,France,17,7,5,5,233,114,6188,30,5,39,15,11,0,2020,2026
-988242,Joël Matondo,855,EA Guingamp,Central Midfield,21,France,31,7,6,10,200,138,10078,16,5,0,0,14,0,2020,2026
-804933,Jacques Siwe,855,EA Guingamp,Centre-Forward,23,France,0,10,8,12,265,168,8395,29,8,123,49,21,0,2017,2026
-282409,Marcos Lavín,9202,USL Dunkerque,Goalkeeper,28,Spain,1,13,12,19,447,161,14533,0,0,0,0,13,0,2014,2026
-744932,Gautier Ott,855,EA Guingamp,Left Winger,24,France,30,8,5,8,239,163,11395,11,34,146,41,15,1,2019,2026
-1027253,Geoffrey Kondo,9202,USL Dunkerque,Centre-Back,23,France,0,6,4,7,153,91,6829,6,8,23,5,10,0,2021,2026
-649025,Amadou Sagna,855,EA Guingamp,Right Winger,26,Senegal,11,9,9,15,307,187,11446,24,26,166,51,9,9,2018,2026
-324800,Alec Georgen,9202,USL Dunkerque,Right-Back,26,France,2,14,12,23,538,267,21289,7,18,28,3,30,25,2013,2026
-1075580,Mathys Niflore,9202,USL Dunkerque,Goalkeeper,18,France,60,5,5,13,190,74,6323,0,0,0,0,10,17,2022,2026
+1010044,Dylan Ourega,855,EA Guingamp,Left-Back,20,France,0,6,5,10,199,143,9632,11,5,27,9,13,0,2021,2026
+1074698,Eden Gassama,855,EA Guingamp,Centre-Back,19,Mali,0,6,4,10,164,84,7015,3,0,0,0,15,3,2021,2026
+629585,Kalidou Sidibé,855,EA Guingamp,Defensive Midfield,26,Mali,8,11,7,11,381,249,17801,15,15,127,42,70,2,2016,2026
+804933,Jacques Siwe,855,EA Guingamp,Centre-Forward,23,France,0,10,8,12,267,170,8575,30,8,126,51,21,0,2017,2026
+461790,Louis Mafouta,855,EA Guingamp,Centre-Forward,30,Central African Republic,9,12,13,18,437,350,27722,145,23,334,158,38,33,2015,2026
+711988,Trésor Matondo,855,EA Guingamp,Central Midfield,21,France,0,8,8,10,208,126,10276,3,5,0,0,16,0,2018,2026
+649025,Amadou Sagna,855,EA Guingamp,Right Winger,26,Senegal,11,9,9,15,308,188,11519,25,26,168,53,9,9,2018,2026
+981760,Jérémy Hatchi,855,EA Guingamp,Left Winger,20,Guadeloupe,20,6,4,9,165,87,4910,17,5,18,4,8,0,2021,2026
+983364,Freddy Mbemba,855,EA Guingamp,Left Winger,22,France,17,8,7,7,194,129,8155,26,14,107,48,7,0,2019,2026
+1052296,Youssef Njoya,855,EA Guingamp,Left Winger,21,France,34,7,5,7,182,120,7522,21,4,2,0,10,0,2020,2026
+920218,Théo Borne,1290,Grenoble Foot 38,Goalkeeper,24,France,25,8,10,13,235,93,8325,0,0,0,0,0,0,2019,2026
+1177162,Sakhalou Niakaté,1290,Grenoble Foot 38,Right-Back,20,France,48,4,4,7,144,67,5410,7,1,8,5,11,0,2023,2026
+621733,Farouq Limouri,1290,Grenoble Foot 38,Centre-Back,23,Netherlands,3,9,6,11,288,175,13320,11,0,84,23,18,4,2018,2026
+594997,Yohann Magnin,1290,Grenoble Foot 38,Defensive Midfield,29,France,6,12,4,10,374,297,20120,14,5,95,27,41,0,2015,2026
+413859,Mael Corboz,1290,Grenoble Foot 38,Central Midfield,31,United States,14,15,10,14,444,342,28153,40,36,449,123,63,0,2011,2026
+468338,Zé Leite,1290,Grenoble Foot 38,Right Winger,26,Portugal,34,8,6,8,237,111,6146,17,14,86,43,21,0,2019,2026
+765503,Romain Da Silva,1290,Grenoble Foot 38,Defensive Midfield,22,Portugal,45,5,4,6,144,104,7895,8,3,0,0,20,0,2021,2025
+672830,Leonardo Cerri,1290,Grenoble Foot 38,Centre-Forward,23,Italy,17,9,9,17,328,200,7873,46,10,43,17,12,4,2018,2026
+1128099,Jean-Guy Akpa Akpro,1290,Grenoble Foot 38,Right Winger,21,France,92,4,6,8,109,57,3810,9,2,3,1,21,0,2022,2026
+559321,Dillon Hoogewerf,1290,Grenoble Foot 38,Left Winger,23,Netherlands,23,11,11,21,353,203,11609,55,28,188,68,15,19,2016,2026
+1182322,Tao Paradowski,3166,Pau FC,Goalkeeper,20,France,0,6,7,9,186,67,5967,0,0,0,0,3,0,2021,2026
+1130508,Kyliann Fofana,1290,Grenoble Foot 38,Centre-Forward,20,France,0,4,4,6,74,21,1254,5,0,4,1,1,0,2022,2026
+986180,Noah Raveyre,3166,Pau FC,Goalkeeper,20,France,22,7,9,22,331,94,8234,0,0,0,0,7,8,2020,2026
+1119750,Matis Duval,3166,Pau FC,Goalkeeper,17,France,0,4,3,3,46,14,1260,0,0,0,0,0,0,2022,2026
+1016807,Neil Glossoa,3166,Pau FC,Right-Back,20,France,26,6,6,13,212,119,7073,3,6,7,0,16,0,2021,2026
+1165818,Georges Grimaud,3166,Pau FC,Goalkeeper,18,France,0,5,6,7,130,13,1081,0,0,0,0,1,0,2022,2026
+693029,Setigui Karamoko,3166,Pau FC,Centre-Back,25,France,4,8,12,13,262,125,9255,5,0,16,4,27,0,2019,2026
+1070185,Salif Lebouath,3166,Pau FC,Right-Back,23,France,34,5,4,6,158,83,5451,13,3,3,1,5,0,2022,2026
+926383,Robin Verhaeghe,3166,Pau FC,Centre-Back,21,France,0,6,6,9,207,133,11051,5,0,0,0,13,0,2021,2026
+528470,Ousmane Kanté,3166,Pau FC,Centre-Back,35,Guinea,19,11,7,15,448,280,22617,15,4,63,12,61,12,2015,2025
+953065,Rayan Touzghar,3166,Pau FC,Central Midfield,21,Morocco,84,7,8,11,201,126,9257,16,5,97,31,25,2,2020,2026
+344575,Antonin Bobichon,3166,Pau FC,Central Midfield,29,France,14,13,8,11,547,335,22402,48,22,208,68,29,0,2013,2025
+520819,Julien Anziani,3166,Pau FC,Central Midfield,26,France,20,10,9,8,353,261,18496,34,19,226,66,35,0,2017,2026
+1004507,Titouan Nihouarn,3166,Pau FC,Attacking Midfield,20,France,0,5,5,8,166,89,6073,20,5,0,0,6,0,2021,2026
+979551,Pathé Mboup,3166,Pau FC,Left Winger,21,Senegal,0,5,5,10,142,113,6753,23,7,144,53,26,1,2022,2026
+1132426,Omar Sissoko,3166,Pau FC,Centre-Forward,18,France,17,5,4,8,171,67,3088,16,1,29,12,5,2,2022,2026
+982863,Kyliane Dong,3166,Pau FC,Left Winger,20,France,9,6,6,11,235,139,7908,24,11,75,24,8,4,2021,2026
+869458,Omar Sadik,3166,Pau FC,Centre-Forward,21,Morocco,18,6,4,9,198,84,4935,18,4,44,18,17,10,2021,2026
+1075590,Rayane Messi,3166,Pau FC,Left Winger,18,France,0,5,9,17,229,98,5988,21,6,54,23,7,31,2022,2026
+944427,Edhy Zuliani,3166,Pau FC,Right Winger,20,Algeria,87,6,6,12,245,120,8591,20,5,11,4,18,4,2021,2026
+495602,Moha Ramos,9202,USL Dunkerque,Goalkeeper,26,Spain,73,10,13,21,310,37,3260,0,0,0,0,4,3,2016,2026
+394903,Maxence Prévot,9202,USL Dunkerque,Goalkeeper,29,France,16,15,6,15,536,269,23770,0,0,0,0,12,2,2012,2026
+1401765,Mouhamed Sissokho,9202,USL Dunkerque,Goalkeeper,21,Senegal,36,3,1,3,29,4,390,0,0,0,0,0,4,2024,2026
+950727,Victor Mayela,9202,USL Dunkerque,Centre-Back,22,DR Congo,22,6,6,12,185,104,8206,2,1,13,2,9,1,2021,2026
+635486,Allan Linguet,9202,USL Dunkerque,Right-Back,27,France,27,9,3,5,301,145,11437,4,11,14,5,23,0,2018,2026
+635103,Giovanni Haag,1154,Red Star FC,Defensive Midfield,25,France,81,9,6,9,307,185,13268,13,7,108,34,46,1,2017,2025
+990732,Ousmane Touré,9202,USL Dunkerque,Centre-Back,21,France,2,6,7,16,256,88,7025,3,2,6,3,9,2,2021,2026
+371148,Lenny Vallier,9202,USL Dunkerque,Left-Back,27,France,24,13,11,16,429,238,17377,9,12,33,12,36,8,2014,2026
+1162409,Lenny Dziki Loussilaho,9202,USL Dunkerque,Right-Back,21,Congo,21,6,3,7,103,44,2432,0,0,1,0,11,4,2021,2026
+654986,Bram Lagae,9202,USL Dunkerque,Centre-Back,22,Belgium,4,8,4,12,314,137,10840,4,1,21,6,18,26,2018,2026
+352448,Opa Sangante,9202,USL Dunkerque,Centre-Back,35,Guinea-Bissau,26,15,5,11,588,437,35723,15,16,125,20,79,31,2012,2026
+685742,Egor Prutsev,9202,USL Dunkerque,Attacking Midfield,23,Russia,11,8,8,16,310,178,11225,25,30,44,13,20,2,2019,2026
+395674,Adrien Lebeau,9202,USL Dunkerque,Attacking Midfield,27,France,10,11,6,12,387,175,10335,19,20,100,37,24,0,2016,2026
+73734,Steven Nzonzi,9202,USL Dunkerque,Defensive Midfield,37,France,15,20,12,36,896,673,52997,38,28,144,41,96,25,2007,2026
+1052285,Maedine Makhloufi,9202,USL Dunkerque,Left-Back,21,Algeria,42,6,4,9,178,97,7691,7,5,3,1,13,1,2021,2026
+1435403,Franck Atoen,9202,USL Dunkerque,Defensive Midfield,20,Cameroon,25,2,3,7,90,33,2701,0,0,0,0,8,0,2025,2026
+904663,Jordan Morel,9202,USL Dunkerque,Central Midfield,23,France,6,8,6,8,200,134,9344,16,7,52,18,8,0,2019,2026
+1188222,Marco Decherf,9202,USL Dunkerque,Central Midfield,19,France,29,4,2,4,79,44,3171,7,3,3,2,11,0,2023,2026
+1216075,Théna Massock,9202,USL Dunkerque,Defensive Midfield,18,France,18,5,4,5,83,39,2097,2,1,8,3,4,0,2022,2026
+1198342,Khalil Ayari,9202,USL Dunkerque,Right Winger,21,Tunisia,7,4,3,10,103,56,2744,5,1,8,0,9,12,2023,2026
+1080176,Enzo Mayilla,9202,USL Dunkerque,Centre-Forward,20,France,94,5,5,7,137,86,4960,20,2,4,1,17,0,2022,2026
+1176027,Souleymane Keita,9202,USL Dunkerque,Left Winger,20,France,19,4,3,6,71,16,411,1,0,11,6,3,0,2022,2026
+1545997,Pape Malick Dieng,9202,USL Dunkerque,Attack,22,Senegal,17,2,1,1,5,0,0,0,0,0,0,0,0,2025,2026
+290615,Thomas Robinet,9202,USL Dunkerque,Centre-Forward,30,France,9,15,10,13,546,391,28453,106,24,238,80,43,4,2012,2026
+1075580,Mathys Niflore,9202,USL Dunkerque,Goalkeeper,18,France,60,5,5,13,191,74,6323,0,0,0,0,10,17,2022,2026
+282409,Marcos Lavín,9202,USL Dunkerque,Goalkeeper,28,Spain,1,13,12,19,448,161,14533,0,0,0,0,13,0,2014,2026
+864093,Sébastien Koula Tou,9202,USL Dunkerque,Goalkeeper,20,Burkina Faso,0,4,4,10,116,24,2160,0,0,0,0,0,1,2021,2026
+1074926,Alex Daho,9202,USL Dunkerque,Left Winger,22,France,93,6,4,7,177,122,6934,17,8,27,9,8,0,2021,2026
+1027253,Geoffrey Kondo,9202,USL Dunkerque,Centre-Back,23,France,0,6,4,7,154,92,6919,6,8,24,5,11,0,2021,2026
+324800,Alec Georgen,9202,USL Dunkerque,Right-Back,26,France,2,14,12,23,539,267,21289,7,18,28,3,30,25,2013,2026
+122115,Vincent Sasso,9202,USL Dunkerque,Centre-Back,34,France,23,20,12,21,734,383,31279,29,8,107,37,63,8,2007,2026
+357148,Diogo Queirós,9202,USL Dunkerque,Centre-Back,26,Portugal,0,14,11,33,515,303,23441,23,8,87,22,37,72,2013,2026
+1183575,Pape Diong,9202,USL Dunkerque,Defensive Midfield,19,Senegal,6,6,4,9,108,52,2742,1,1,27,8,4,9,2021,2026
+1165816,Malone Boucard,9202,USL Dunkerque,Left-Back,18,France,0,5,4,6,94,46,3400,9,1,0,0,6,0,2021,2026
 273455,Felipe Abner,9202,USL Dunkerque,Left-Back,29,Brazil,30,14,9,24,576,234,17006,1,12,28,5,49,8,2012,2025
-1165816,Malone Boucard,9202,USL Dunkerque,Left-Back,18,France,0,4,3,5,93,45,3376,9,1,0,0,6,0,2021,2025
-864093,Sébastien Koula Tou,9202,USL Dunkerque,Goalkeeper,20,Burkina Faso,0,3,3,9,115,24,2160,0,0,0,0,0,1,2021,2025
-1052296,Youssef Njoya,855,EA Guingamp,Left Winger,21,France,34,6,4,6,180,119,7508,21,4,2,0,10,0,2020,2025
-357148,Diogo Queirós,9202,USL Dunkerque,Centre-Back,26,Portugal,0,14,11,33,514,302,23351,23,8,84,21,37,72,2013,2026
-1183575,Pape Diong,9202,USL Dunkerque,Defensive Midfield,19,Senegal,6,6,3,8,107,52,2742,1,1,27,8,4,9,2021,2026
+707222,Enzo Bardeli,9202,USL Dunkerque,Central Midfield,24,France,20,9,5,10,262,189,13803,26,24,122,46,7,0,2018,2026
+89731,Iñigo Eguaras,9202,USL Dunkerque,Central Midfield,33,Spain,16,16,7,12,610,432,30603,25,35,127,29,81,1,2008,2025
+965821,Mattéo Bebey Sake,9202,USL Dunkerque,Defensive Midfield,20,France,0,6,4,7,133,79,4830,4,1,0,0,12,0,2021,2026
+628697,Marco Essimi,9202,USL Dunkerque,Right Winger,26,France,10,10,10,11,262,158,10029,40,14,40,18,9,0,2017,2026
 830265,Lohann Doucet,9202,USL Dunkerque,Defensive Midfield,22,Burkina Faso,15,9,7,12,257,147,8123,5,1,43,8,14,2,2018,2026
-122115,Vincent Sasso,9202,USL Dunkerque,Centre-Back,34,France,23,20,12,21,733,382,31278,29,8,107,37,63,8,2007,2026
-1334467,Malick Diop,9202,USL Dunkerque,Central Midfield,19,Senegal,18,2,2,5,92,25,1581,5,0,3,0,3,0,2024,2025
-707222,Enzo Bardeli,9202,USL Dunkerque,Central Midfield,24,France,20,9,5,10,260,187,13648,25,23,121,45,7,0,2018,2026
-965821,Mattéo Bebey Sake,9202,USL Dunkerque,Defensive Midfield,20,France,0,5,3,7,132,78,4740,4,1,0,0,12,0,2021,2025
-1310513,Aristide Zossou,9202,USL Dunkerque,Left Winger,20,Cote d'Ivoire,77,3,3,5,101,56,3691,11,6,28,12,6,1,2024,2026
-442885,Kay Tejan,9202,USL Dunkerque,Centre-Forward,28,Netherlands,0,12,11,19,404,286,18835,72,34,231,98,48,0,2015,2026
-89731,Iñigo Eguaras,9202,USL Dunkerque,Defensive Midfield,33,Spain,16,16,7,12,610,432,30603,25,35,127,29,81,1,2008,2025
-392992,Jeovanni Dianganga,855,EA Guingamp,Centre-Back,26,Belgium,24,7,2,10,163,97,7496,0,1,8,5,18,2,2014,2026
-810086,Vimoj Muntu Wa Mungu,855,EA Guingamp,Left-Back,21,France,39,5,6,10,169,110,8819,6,11,2,1,21,4,2021,2026
-628697,Marco Essimi,9202,USL Dunkerque,Right Winger,26,France,10,10,10,11,261,157,10014,40,14,40,18,9,0,2017,2026
-607225,Florent Sanchez,855,EA Guingamp,Central Midfield,23,France,8,9,9,20,327,158,10755,16,29,49,15,10,19,2018,2026
-315095,Abou Kanté,1080,Stade Lavallois,Centre-Forward,32,The Gambia,28,14,13,11,488,276,13879,49,7,214,89,26,2,2013,2026
-1151929,Gessime Yassine,9202,USL Dunkerque,Right Winger,19,Morocco,0,6,5,12,201,158,9377,19,16,115,42,11,23,2021,2026
-1166831,Ewan Aucan,855,EA Guingamp,Right Winger,19,France,0,5,3,4,94,70,4512,18,1,0,0,4,0,2022,2026
-222636,Florian Escales,30204,FC Annecy,Goalkeeper,30,France,1,16,8,19,566,319,28464,0,0,0,0,19,26,2011,2026
-1004376,Matéo Gonzalez,30204,FC Annecy,Goalkeeper,20,France,30,6,3,7,145,60,5400,0,0,0,0,3,0,2021,2026
-1048659,Jasser Chamakh,855,EA Guingamp,Left Midfield,22,France,23,8,4,8,169,110,7271,15,2,4,2,7,0,2019,2026
-1101862,Samir Ben Brahim,855,EA Guingamp,Right Midfield,23,France,20,5,5,5,96,88,7020,13,8,32,9,10,0,2022,2026
-935507,Axel Drouhin,30204,FC Annecy,Centre-Back,26,France,18,8,4,4,198,148,12516,12,0,41,9,26,0,2019,2026
-1063470,Thibault Delphis,30204,FC Annecy,Centre-Back,23,France,41,4,1,2,116,83,5778,0,0,12,2,7,0,2023,2026
-808846,Julien Kouadio,30204,FC Annecy,Centre-Back,26,Central African Republic,27,9,4,7,239,176,14421,4,6,5,0,35,1,2018,2026
-374039,François Lajugie,30204,FC Annecy,Centre-Back,30,France,6,14,6,6,394,253,19599,15,12,30,12,44,0,2012,2026
-1077658,Zayon Chtaï-Telamio,855,EA Guingamp,Left Winger,19,Tunisia,0,5,5,9,93,17,1004,4,2,8,0,0,6,2021,2026
-1051724,David Oduro,30204,FC Annecy,Left-Back,20,Ghana,0,4,3,6,146,86,5916,2,7,4,3,17,1,2022,2025
-593315,Thomas Callens,30204,FC Annecy,Goalkeeper,27,France,16,12,6,9,415,93,8234,0,0,0,0,1,0,2015,2026
-830649,Mattéo Veillon,30204,FC Annecy,Centre-Back,24,France,23,8,5,5,178,126,10201,12,0,7,3,5,0,2019,2026
-1322127,Esteban Riou,30204,FC Annecy,Centre-Back,19,France,34,3,3,4,61,11,697,0,0,1,0,1,0,2023,2025
-579205,Clément Billemaz,30204,FC Annecy,Left Midfield,27,France,22,12,5,9,324,231,15353,45,28,104,34,39,0,2015,2026
-804859,Paul Venot,30204,FC Annecy,Central Midfield,24,France,25,8,3,5,186,124,7770,9,10,11,0,12,0,2019,2026
-1156312,Esteban Marre,30204,FC Annecy,Right-Back,22,France,21,4,4,4,93,78,6732,6,3,6,4,13,0,2023,2026
-1299146,Sacha Lima,30204,FC Annecy,Centre-Back,22,France,4,3,3,4,57,49,4384,4,0,0,0,9,0,2024,2026
-1004483,Alexis Casadei,30204,FC Annecy,Central Midfield,21,France,8,6,4,8,163,109,6912,13,1,8,2,15,0,2021,2026
-1163767,Pascal Mozie,30204,FC Annecy,Defensive Midfield,18,Poland,15,6,5,14,229,116,7926,9,5,2,0,11,29,2021,2026
-994281,Nolan Ferro,30204,FC Annecy,Central Midfield,20,France,24,6,4,11,168,102,6477,2,2,9,3,6,38,2021,2026
-1030194,Emmanuel Louisir,30204,FC Annecy,Centre-Back,20,France,0,4,4,8,81,62,4987,3,0,0,0,11,0,2022,2026
-989824,Ben Hamed Touré,30204,FC Annecy,Centre-Forward,23,Cote d'Ivoire,11,6,3,6,160,104,5558,20,6,55,27,8,0,2021,2026
-1273127,Kilyan Jusseron-Veniere,30204,FC Annecy,Attacking Midfield,20,France,19,4,3,5,89,33,1621,10,0,4,2,0,0,2023,2026
-689146,Thibault Rambaud,30204,FC Annecy,Centre-Forward,29,France,9,12,8,12,333,216,15657,67,17,110,55,35,0,2015,2026
-765972,Zépiqueno Redmond,30204,FC Annecy,Centre-Forward,20,Netherlands,17,6,9,28,265,138,8585,39,2,33,14,5,28,2021,2026
-1287035,Mohamed Koné,30204,FC Annecy,Central Midfield,19,Cote d'Ivoire,14,4,5,10,68,35,2431,2,0,17,5,11,5,2023,2026
-73120,Ahmed Kashi,30204,FC Annecy,Defensive Midfield,37,Algeria,5,20,7,16,776,454,35346,16,8,101,16,103,1,2007,2026
-887433,Kadan Young,30204,FC Annecy,Left Winger,20,England,12,7,7,22,271,108,6096,13,22,138,58,7,23,2020,2026
-1384923,Adam Yahi,30204,FC Annecy,Centre-Forward,21,France,20,3,2,3,42,30,1423,8,0,5,1,5,0,2024,2026
-984593,Triston Rowe,30204,FC Annecy,Right-Back,18,England,2,6,5,18,246,125,9843,4,7,43,18,12,18,2021,2026
-880330,Moïse Sahi Dion,30204,FC Annecy,Centre-Forward,24,Cote d'Ivoire,80,7,4,7,217,100,4385,35,4,118,55,0,1,2020,2026
-874902,Travis Patterson,30204,FC Annecy,Left-Back,19,England,20,8,6,17,260,94,6487,8,8,114,48,20,11,2019,2026
-775330,Antoine Larose,30204,FC Annecy,Right Winger,33,France,28,17,2,8,412,253,18145,79,34,125,54,27,0,2010,2026
-1133428,Alan Mondesir,30204,FC Annecy,Left Winger,22,France,7,5,4,5,103,82,6672,18,14,0,0,5,0,2022,2026
-392303,Cédric Makutungu,30204,FC Annecy,Left-Back,27,France,26,13,10,8,391,202,15961,4,4,2,1,16,0,2014,2026
-1134250,Hamza Koutoune,30204,FC Annecy,Right-Back,18,Morocco,3,6,3,10,116,55,3880,1,0,6,1,3,36,2021,2026
-660042,Abdel Hbouch,7042,US Boulogne,Attacking Midfield,27,France,10,7,6,8,167,117,8997,25,10,83,32,17,0,2019,2026
+1151929,Gessime Yassine,9202,USL Dunkerque,Right Winger,19,Morocco,0,6,5,12,202,159,9467,21,16,118,44,12,23,2021,2026
+1310513,Aristide Zossou,9202,USL Dunkerque,Left Winger,20,Cote d'Ivoire,77,3,3,5,102,57,3719,11,6,29,12,6,1,2024,2026
+442885,Kay Tejan,9202,USL Dunkerque,Centre-Forward,28,Netherlands,0,12,11,19,405,287,18913,73,34,231,98,48,0,2015,2026
+593315,Thomas Callens,30204,FC Annecy,Goalkeeper,27,France,16,12,6,9,417,93,8234,0,0,0,0,1,0,2015,2026
+1004376,Matéo Gonzalez,30204,FC Annecy,Goalkeeper,20,France,30,6,4,8,148,61,5490,0,0,0,0,3,0,2021,2026
 1343640,Aymerick Nedelec,30204,FC Annecy,Goalkeeper,18,France,40,2,2,3,38,2,180,0,0,0,0,0,0,2024,2025
-284526,Valentin Jacob,30204,FC Annecy,Attacking Midfield,31,France,7,15,11,11,500,325,21514,56,26,197,57,43,0,2012,2026
-810894,Mayssam Benama,30204,FC Annecy,Central Midfield,20,France,0,5,6,16,201,109,7780,12,2,15,7,13,41,2021,2025
-126699,Vincent Pajot,30204,FC Annecy,Defensive Midfield,34,France,17,18,9,13,728,442,32326,29,24,165,39,91,14,2007,2025
-1284768,Wael Debbiche,30204,FC Annecy,Central Midfield,20,Tunisia,42,3,2,5,83,2,32,0,0,0,0,0,2,2022,2025
-923434,Ranjan Neelakandan,30204,FC Annecy,Centre-Forward,20,Switzerland,0,6,8,16,237,123,5306,19,5,35,13,9,17,2021,2026
-1108478,Alejandro Gomes Rodríguez,30204,FC Annecy,Centre-Forward,17,England,11,5,6,18,203,104,5680,43,17,111,50,11,40,2022,2026
-141364,Maxime Hautbois,1080,Stade Lavallois,Goalkeeper,35,France,1,17,3,9,746,227,20260,0,0,0,0,4,0,2010,2026
+984593,Triston Rowe,30204,FC Annecy,Right-Back,18,England,2,6,5,18,247,125,9843,4,7,43,18,12,18,2021,2026
+935507,Axel Drouhin,30204,FC Annecy,Centre-Back,26,France,18,8,4,4,200,150,12696,12,0,42,9,26,0,2019,2026
+808846,Julien Kouadio,30204,FC Annecy,Centre-Back,26,Central African Republic,27,9,4,7,241,178,14601,4,6,5,0,35,1,2018,2026
+315095,Abou Kanté,1080,Stade Lavallois,Centre-Forward,32,The Gambia,28,14,13,11,489,277,13916,49,7,216,89,26,2,2013,2026
+374039,François Lajugie,30204,FC Annecy,Centre-Back,30,France,6,14,6,6,396,253,19599,15,12,30,12,44,0,2012,2026
+1334467,Malick Diop,9202,USL Dunkerque,Central Midfield,19,Senegal,18,2,2,5,92,25,1581,5,0,3,0,3,0,2024,2025
+222636,Florian Escales,30204,FC Annecy,Goalkeeper,30,France,1,16,8,19,568,321,28644,0,0,0,0,19,26,2011,2026
+874902,Travis Patterson,30204,FC Annecy,Left-Back,19,England,20,8,6,17,261,94,6487,8,8,114,48,20,11,2019,2026
+830649,Mattéo Veillon,30204,FC Annecy,Centre-Back,24,France,23,8,5,5,180,128,10377,13,0,8,4,5,0,2019,2026
+1134250,Hamza Koutoune,30204,FC Annecy,Right-Back,18,Morocco,3,6,3,10,117,56,3888,1,0,6,1,3,36,2021,2026
+1063470,Thibault Delphis,30204,FC Annecy,Centre-Back,23,France,41,4,1,2,118,85,5958,0,0,13,2,7,0,2023,2026
+804859,Paul Venot,30204,FC Annecy,Central Midfield,24,France,25,8,3,5,188,126,7859,9,10,12,0,13,0,2019,2026
+1305235,Josué Tiendrébéogo,30204,FC Annecy,Attacking Midfield,22,Burkina Faso,0,4,2,8,99,72,3480,9,4,68,29,17,10,2023,2026
+1322127,Esteban Riou,30204,FC Annecy,Centre-Back,19,France,34,4,4,5,62,12,787,0,0,1,0,2,0,2023,2026
+579205,Clément Billemaz,30204,FC Annecy,Left Midfield,27,France,22,12,5,9,326,233,15533,45,28,107,35,39,0,2015,2026
+284526,Valentin Jacob,30204,FC Annecy,Attacking Midfield,31,France,7,15,11,11,501,325,21514,56,26,197,57,43,0,2012,2026
+392303,Cédric Makutungu,30204,FC Annecy,Left-Back,27,France,26,13,10,8,392,203,16051,4,4,2,1,16,0,2014,2026
+660042,Abdel Hbouch,7042,US Boulogne,Attacking Midfield,27,France,10,8,7,9,212,118,9087,25,10,88,35,17,0,2018,2026
 86930,Fabrice N'Sakala,30204,FC Annecy,Left-Back,34,DR Congo,21,18,6,25,821,433,34209,2,27,29,11,72,20,2006,2025
-72422,Mamadou Samassa,1080,Stade Lavallois,Goalkeeper,36,Mali,30,21,7,24,916,458,40817,0,0,0,0,33,20,2005,2026
-1082204,Lucas Droyaux,1080,Stade Lavallois,Goalkeeper,20,France,0,5,3,8,168,46,4081,0,0,0,0,2,0,2021,2025
-1305235,Josué Tiendrébéogo,30204,FC Annecy,Attacking Midfield,22,Burkina Faso,0,4,2,8,98,71,3390,8,4,65,28,17,10,2023,2026
-627463,Thibaut Vargas,1080,Stade Lavallois,Right-Back,25,France,7,10,9,14,330,217,16421,13,31,95,29,14,0,2015,2025
-1000828,Sidi Bane,1080,Stade Lavallois,Centre-Back,22,Senegal,24,6,7,13,189,91,6884,6,1,11,3,11,0,2021,2026
-836761,Mattéo Commaret,1080,Stade Lavallois,Centre-Back,24,France,12,8,7,10,166,94,7787,2,4,12,4,10,0,2017,2026
-391375,Peter Ouaneh,1080,Stade Lavallois,Centre-Back,27,France,4,13,11,19,435,247,20215,10,3,11,2,29,3,2014,2026
-923758,Ylies Aradj,1080,Stade Lavallois,Left-Back,20,France,21,6,6,14,219,100,7474,4,3,2,0,14,16,2021,2026
-238716,Théo Pellenard,1080,Stade Lavallois,Centre-Back,31,France,0,17,13,18,616,272,20928,4,3,35,6,48,1,2009,2025
-1270173,Layousse Samb,1080,Stade Lavallois,Left-Back,25,Senegal,35,5,2,6,125,28,1887,4,0,10,5,3,6,2022,2026
-1147351,Mamadou Sidibé,1080,Stade Lavallois,Centre-Back,21,Guinea,29,6,3,8,156,96,7575,5,1,0,0,18,0,2021,2026
-811430,Malik Sellouki,1080,Stade Lavallois,Attacking Midfield,26,France,10,10,8,13,265,155,8717,34,15,142,63,11,0,2016,2026
-694549,Sam Sanna,1080,Stade Lavallois,Defensive Midfield,27,France,6,10,4,8,336,219,16494,9,8,119,36,23,0,2017,2026
-546884,Titouan Thomas,1080,Stade Lavallois,Central Midfield,23,France,8,10,10,19,334,213,13418,13,5,65,20,28,16,2017,2026
-85953,Yohan Tavares,1080,Stade Lavallois,Centre-Back,37,Portugal,23,18,11,20,687,495,42414,10,6,17,4,77,1,2008,2025
-510686,William Kokolo,1080,Stade Lavallois,Left Midfield,25,France,0,11,12,17,362,188,12991,4,15,54,15,27,0,2016,2026
-781808,Julien Maggiotti,1080,Stade Lavallois,Central Midfield,30,France,5,12,6,8,308,188,10537,45,19,98,46,22,0,2014,2026
-808316,William Benard,1080,Stade Lavallois,Central Midfield,22,France,26,6,4,8,230,110,7149,3,2,5,0,24,0,2020,2025
-412086,Cyril Mandouki,1080,Stade Lavallois,Defensive Midfield,35,Martinique,14,15,7,14,573,442,35391,12,12,131,36,44,22,2012,2026
-502289,Dylan Mbayo,1080,Stade Lavallois,Right Winger,23,Belgium,15,11,6,17,334,191,9939,15,23,123,41,20,22,2016,2026
-1165753,Alessio Beaudouin,1080,Stade Lavallois,Defensive Midfield,21,France,21,6,3,8,142,92,6933,6,3,0,0,16,0,2021,2026
-1066677,Enzo Montet,1080,Stade Lavallois,Defensive Midfield,22,France,25,6,4,9,173,120,9016,8,7,5,2,14,0,2021,2026
-984697,Trévis Dago,1080,Stade Lavallois,Centre-Forward,21,France,11,6,6,11,163,85,4518,22,2,43,17,21,0,2021,2026
-1166734,Ethan Clavreul,1080,Stade Lavallois,Left Winger,20,France,20,5,3,7,114,85,4643,17,2,20,10,13,0,2022,2026
-939977,Mathys Houdayer,1080,Stade Lavallois,Centre-Forward,21,France,31,6,5,11,136,96,5677,27,10,24,9,12,0,2021,2026
-1070690,Aristide Mateta,1080,Stade Lavallois,Right Winger,22,DR Congo,0,7,6,9,158,108,6204,26,1,0,0,5,0,2020,2026
-855025,Noa Mupemba,1080,Stade Lavallois,Centre-Forward,24,France,19,8,7,9,197,122,7121,41,2,8,2,10,0,2019,2026
-412085,Malik Tchokounté,1080,Stade Lavallois,Centre-Forward,36,France,18,16,7,7,581,420,29312,109,30,323,131,42,0,2011,2026
-412934,Eros Maddy,1080,Stade Lavallois,Right Winger,24,Netherlands,34,12,9,16,429,175,8393,8,20,38,16,17,10,2015,2026
-413111,Jules Gaudin,1080,Stade Lavallois,Left-Back,26,France,22,11,8,13,252,167,10116,4,11,42,11,29,6,2015,2026
-1149302,Esteban Mouton,1080,Stade Lavallois,Right-Back,22,France,23,4,3,4,103,86,6596,2,6,27,6,14,0,2023,2026
-1334280,Yanis Court,1080,Stade Lavallois,Attacking Midfield,17,France,0,3,3,4,53,30,1572,4,1,0,0,1,0,2024,2026
-737777,Hermann Esmel,1080,Stade Lavallois,Defensive Midfield,26,France,26,10,9,9,239,174,11537,4,7,5,1,25,0,2017,2026
-877234,Chafik Gourichy,1080,Stade Lavallois,Attacking Midfield,25,France,7,6,5,8,120,74,4464,12,7,2,0,5,0,2020,2026
-1362801,Sacha Mellier,1080,Stade Lavallois,Central Midfield,18,France,0,3,3,4,53,32,2158,1,1,1,0,2,0,2024,2026
-471583,Corentin Fatou,1080,Stade Lavallois,Centre-Forward,27,France,17,11,5,11,257,161,5986,33,6,45,22,11,1,2016,2026
-334045,Xavier Lenogue,7042,US Boulogne,Goalkeeper,29,Martinique,1,14,7,11,476,135,11905,0,0,0,0,4,0,2013,2026
-920939,Vincent Burlet,7042,US Boulogne,Left-Back,19,Belgium,3,6,8,17,209,133,9424,8,2,38,12,24,23,2021,2026
-70348,Ibrahim Koné,7042,US Boulogne,Goalkeeper,36,Guinea,16,21,8,25,699,242,21701,0,0,0,0,17,33,2004,2026
-917822,Siad Gourville,7042,US Boulogne,Centre-Back,25,France,25,12,11,11,223,136,11102,6,0,12,3,27,0,2015,2026
-590629,Julien Boyer,7042,US Boulogne,Left-Back,28,France,12,11,9,11,305,140,11206,5,7,45,9,25,0,2016,2026
-858935,Adrien Pinot,7042,US Boulogne,Centre-Back,25,France,15,8,5,7,219,130,10083,7,3,23,6,31,0,2019,2026
-936500,Zoran Moco,7042,US Boulogne,Right-Back,23,Guadeloupe,97,6,4,11,202,140,9748,16,7,25,10,7,8,2021,2026
-696892,Blondy Nna Noukeu,7042,US Boulogne,Goalkeeper,25,Cameroon,99,8,7,14,323,76,6840,0,2,0,0,6,0,2019,2026
-768578,Azamat Uriev,7042,US Boulogne,Goalkeeper,22,France,30,6,4,7,191,47,4109,0,1,0,0,0,0,2021,2026
-978613,Emmanuel Kouassi,7042,US Boulogne,Right-Back,22,Cote d'Ivoire,33,6,5,7,128,73,5214,4,3,0,0,11,0,2020,2026
-656096,Nathan Zohoré,7042,US Boulogne,Centre-Back,24,France,5,9,5,11,308,157,12956,6,0,9,6,25,0,2018,2026
-975431,Antoine Kerriou,7042,US Boulogne,Centre-Back,23,France,25,7,5,8,171,156,13537,19,1,2,1,12,0,2020,2026
-1060303,Louis Siliadin,7042,US Boulogne,Left-Back,24,France,24,6,4,5,131,49,3728,1,0,0,0,12,0,2021,2026
-137970,Demba Thiam,7042,US Boulogne,Right-Back,36,France,18,17,7,8,501,381,32121,0,8,2,0,44,0,2009,2026
-1005072,Jonathan Kapenga,7042,US Boulogne,Centre-Back,22,France,4,5,4,5,108,55,4204,0,0,0,0,2,0,2021,2026
-740471,Joffrey Bultel,7042,US Boulogne,Defensive Midfield,26,France,14,10,5,9,189,134,9041,7,2,32,6,25,0,2017,2026
-745201,Aurélien Platret,7042,US Boulogne,Right Midfield,23,France,21,8,5,9,140,69,4836,4,10,18,9,7,0,2018,2026
-915842,Nolan Binet,7042,US Boulogne,Defensive Midfield,22,France,19,6,4,7,160,131,9962,5,3,32,7,15,0,2021,2026
-862996,Hervé Touré,7042,US Boulogne,Defensive Midfield,25,Cote d'Ivoire,0,9,4,9,238,115,5058,8,4,45,13,12,0,2018,2026
-660499,Sonny Duflos,7042,US Boulogne,Central Midfield,31,France,22,12,6,8,289,196,13783,5,7,19,7,20,0,2012,2026
-639225,Amine El Farissi,7042,US Boulogne,Attacking Midfield,26,France,10,9,5,7,241,188,11425,31,12,51,16,18,0,2016,2025
-127142,Jonas Martin,7042,US Boulogne,Defensive Midfield,36,France,8,19,11,16,724,388,24246,23,18,134,47,70,0,2008,2026
-1067261,Luka Boiteau,7042,US Boulogne,Attacking Midfield,19,Canada,7,2,2,3,38,12,264,1,2,5,4,1,0,2025,2026
-919621,Lilian Raillot,7042,US Boulogne,Defensive Midfield,21,France,0,6,7,9,210,98,6073,2,2,12,7,21,0,2021,2026
-707225,Noah Fatar,7042,US Boulogne,Left Winger,24,France,0,9,10,12,311,167,10272,32,21,84,24,30,2,2018,2026
-954514,Sohan Paillard,7042,US Boulogne,Right Midfield,22,France,28,4,2,5,96,28,1325,1,0,0,0,7,0,2021,2026
-1179130,Gabin Capuano,7042,US Boulogne,Centre-Forward,19,France,26,4,6,7,115,63,3511,22,2,16,4,5,0,2023,2026
-947361,Florian Boulet,7042,US Boulogne,Centre-Forward,22,France,0,6,5,7,155,80,4756,27,3,3,1,4,0,2020,2026
-937992,Martin Lecolier,7042,US Boulogne,Centre-Forward,23,France,9,6,4,8,215,151,7979,33,6,40,20,11,0,2021,2026
-538972,Exaucé Mpembele Boula,7042,US Boulogne,Left Winger,23,France,0,10,10,14,258,140,9096,56,10,16,6,10,9,2017,2026
-1579242,Tom Dupont,7042,US Boulogne,Midfield,20,France,0,1,1,1,1,0,0,0,0,0,0,0,0,2026,2026
+1273127,Kilyan Jusseron-Veniere,30204,FC Annecy,Attacking Midfield,20,France,19,4,3,5,91,34,1682,10,1,6,3,0,0,2023,2026
+1284767,Ibrahim Raache,30204,FC Annecy,Attacking Midfield,19,France,0,4,3,4,65,5,161,2,0,0,0,1,0,2023,2026
+810894,Mayssam Benama,30204,FC Annecy,Central Midfield,20,France,0,6,7,17,203,111,7931,12,2,15,7,13,41,2021,2026
+1284768,Wael Debbiche,30204,FC Annecy,Central Midfield,20,Tunisia,42,3,2,5,83,2,32,0,0,0,0,0,2,2022,2025
+126699,Vincent Pajot,30204,FC Annecy,Defensive Midfield,34,France,17,18,9,13,728,442,32326,29,24,165,39,91,14,2007,2025
+73120,Ahmed Kashi,30204,FC Annecy,Defensive Midfield,37,Algeria,5,20,7,16,779,456,35526,16,8,104,17,103,1,2007,2026
+880330,Moïse Sahi Dion,30204,FC Annecy,Centre-Forward,24,Cote d'Ivoire,80,7,4,7,219,102,4473,35,4,120,56,0,1,2020,2026
+1108478,Alejandro Gomes Rodríguez,30204,FC Annecy,Centre-Forward,17,England,11,5,6,19,206,105,5764,43,17,111,50,11,40,2022,2026
+689146,Thibault Rambaud,30204,FC Annecy,Centre-Forward,29,France,9,12,8,12,335,217,15688,67,17,112,55,35,0,2015,2026
+989824,Ben Hamed Touré,30204,FC Annecy,Centre-Forward,23,Cote d'Ivoire,0,6,3,6,162,104,5558,20,6,55,27,8,0,2021,2026
+923434,Ranjan Neelakandan,30204,FC Annecy,Centre-Forward,20,Switzerland,0,6,8,16,238,123,5306,19,5,35,13,9,17,2021,2026
+1384923,Adam Yahi,30204,FC Annecy,Centre-Forward,21,France,20,3,3,4,45,31,1513,11,0,5,1,5,0,2024,2026
+696892,Blondy Nna Noukeu,7042,US Boulogne,Goalkeeper,25,Cameroon,99,8,7,14,324,77,6930,0,2,0,0,6,0,2019,2026
+768578,Azamat Uriev,7042,US Boulogne,Goalkeeper,22,France,30,6,4,7,192,47,4109,0,1,0,0,0,0,2021,2026
+334045,Xavier Lenogue,7042,US Boulogne,Goalkeeper,29,Martinique,1,14,7,11,477,135,11905,0,0,0,0,4,0,2013,2026
+590629,Julien Boyer,7042,US Boulogne,Left-Back,28,France,12,11,9,11,306,141,11296,5,7,45,9,25,0,2016,2026
+994281,Nolan Ferro,30204,FC Annecy,Central Midfield,20,France,24,6,5,11,171,103,6544,2,2,9,3,6,38,2021,2026
+70348,Ibrahim Koné,7042,US Boulogne,Goalkeeper,36,Guinea,16,21,8,25,700,242,21701,0,0,0,0,17,33,2004,2026
+858935,Adrien Pinot,7042,US Boulogne,Centre-Back,25,France,15,8,5,7,220,131,10090,7,3,23,6,31,0,2019,2026
+936500,Zoran Moco,7042,US Boulogne,Right-Back,23,Guadeloupe,97,6,4,11,203,140,9748,16,7,25,10,7,8,2021,2026
+137970,Demba Thiam,7042,US Boulogne,Right-Back,36,France,18,17,7,8,502,382,32211,0,8,2,0,44,0,2009,2026
+1006412,Oscar Lenne,7042,US Boulogne,Left-Back,19,France,26,6,5,9,126,69,4712,4,6,0,0,9,1,2021,2026
+975431,Antoine Kerriou,7042,US Boulogne,Centre-Back,23,France,25,7,5,8,172,157,13627,19,1,3,2,12,0,2020,2026
+1060303,Louis Siliadin,7042,US Boulogne,Left-Back,24,France,24,6,4,5,132,49,3728,1,0,0,0,12,0,2021,2026
+681284,Théo Brusco,7042,US Boulogne,Centre-Back,26,France,20,8,2,7,247,195,17365,17,10,3,0,29,0,2019,2026
+915842,Nolan Binet,7042,US Boulogne,Defensive Midfield,22,France,19,6,4,7,161,132,10052,5,3,33,7,15,0,2021,2026
+1005072,Jonathan Kapenga,7042,US Boulogne,Centre-Back,22,France,4,5,4,5,109,55,4204,0,0,0,0,2,0,2021,2026
+745201,Aurélien Platret,7042,US Boulogne,Right Midfield,23,France,21,8,5,9,141,70,4899,4,10,19,10,7,0,2018,2026
+740471,Joffrey Bultel,7042,US Boulogne,Defensive Midfield,26,France,14,10,5,10,222,135,9104,7,2,33,7,25,0,2017,2026
+127142,Jonas Martin,7042,US Boulogne,Defensive Midfield,36,France,8,19,11,16,725,389,24273,23,18,134,47,70,0,2008,2026
+660499,Sonny Duflos,7042,US Boulogne,Central Midfield,31,France,22,12,6,8,290,196,13783,5,7,19,7,20,0,2012,2026
+954514,Sohan Paillard,7042,US Boulogne,Right Midfield,22,France,28,4,2,5,97,28,1325,1,0,0,0,7,0,2021,2026
 1579243,Cheikh Ibrahim Dia,7042,US Boulogne,Attacking Midfield,21,France,0,1,1,1,3,2,75,0,0,0,0,1,0,2026,2026
-1006412,Oscar Lenne,7042,US Boulogne,Left-Back,19,France,26,6,5,9,125,69,4712,4,6,0,0,9,1,2021,2026
-1004661,Mohamed Soumah,7042,US Boulogne,Central Midfield,20,France,0,6,4,7,104,80,4962,1,1,1,0,6,0,2021,2026
-681284,Théo Brusco,7042,US Boulogne,Centre-Back,26,France,20,8,2,7,246,194,17285,17,10,2,0,28,0,2019,2026
-1183708,Aymane Nassiri,7042,US Boulogne,Right Winger,21,France,7,4,3,5,67,57,3855,27,1,7,2,10,0,2022,2026
-700437,Benjamin Bešić,7042,US Boulogne,Centre-Forward,24,Bosnia-Herzegovina,17,9,8,11,220,153,10142,50,10,12,7,17,0,2018,2026
-395514,Théo Epailly,7042,US Boulogne,Left Winger,27,France,64,12,10,15,263,137,8139,26,9,70,23,12,0,2015,2026
-838947,Alexandre Pierre,750,FC Sochaux-Montbéliard,Goalkeeper,25,Haiti,30,11,8,15,348,71,6222,0,0,0,0,2,15,2016,2026
-191882,Mehdi Jeannin,750,FC Sochaux-Montbéliard,Goalkeeper,35,Algeria,40,16,6,13,641,166,14876,0,1,0,0,5,0,2011,2026
-1171934,Élie N'Gatta,750,FC Sochaux-Montbéliard,Centre-Back,20,Cote d'Ivoire,26,5,4,9,135,98,7781,1,6,1,0,9,3,2022,2026
-918871,Arthur Vitelli,750,FC Sochaux-Montbéliard,Centre-Back,26,France,4,10,6,8,242,144,11889,1,0,2,0,29,0,2017,2026
-974995,Dalangunypole Gomis,750,FC Sochaux-Montbéliard,Centre-Back,22,France,3,6,6,17,231,103,7159,0,1,4,0,4,1,2021,2026
-315075,Bendjaloud Youssouf,750,FC Sochaux-Montbéliard,Right-Back,32,Comoros,17,14,8,15,653,347,25347,31,43,88,23,15,52,2013,2026
-321930,Dylan Tavares,750,FC Sochaux-Montbéliard,Left-Back,29,Cape Verde,24,15,10,14,490,318,23486,11,10,22,9,58,20,2012,2026
-111026,Mathieu Peybernes,750,FC Sochaux-Montbéliard,Centre-Back,35,France,14,20,13,27,817,458,36621,11,6,44,15,68,8,2007,2026
-1173606,Elson Mendes,750,FC Sochaux-Montbéliard,Defensive Midfield,19,Cape Verde,6,5,5,8,151,97,7236,13,3,23,7,21,1,2021,2026
-233739,Prince Mendy,750,FC Sochaux-Montbéliard,Centre-Back,30,Senegal,20,14,12,11,470,269,21974,1,0,6,2,36,0,2012,2025
-494315,Julien Masson,750,FC Sochaux-Montbéliard,Defensive Midfield,28,France,23,12,3,5,396,274,21083,7,6,85,15,55,0,2015,2026
-1321676,Honoré Bayanginisa,750,FC Sochaux-Montbéliard,Defensive Midfield,21,DR Congo,8,3,2,7,115,53,3160,8,0,2,1,7,7,2024,2026
-730580,Aymen Boutoutaou,750,FC Sochaux-Montbéliard,Right Winger,24,Algeria,28,9,5,9,318,191,10980,39,11,175,67,11,1,2018,2026
-412091,Kapit Djoco,750,FC Sochaux-Montbéliard,Centre-Forward,30,France,9,13,10,7,366,273,17476,70,21,142,54,29,0,2014,2026
-511454,Samy Baghdadi,750,FC Sochaux-Montbéliard,Second Striker,29,France,5,11,9,11,310,198,11756,67,13,100,53,12,0,2016,2026
-566371,Benjamin Gomel,750,FC Sochaux-Montbéliard,Left Winger,28,France,7,12,11,8,392,254,17000,52,24,71,25,36,0,2015,2026
-182823,Jonathan Mexique,750,FC Sochaux-Montbéliard,Central Midfield,31,Martinique,15,17,11,21,588,368,27336,15,16,68,16,28,19,2010,2026
-1144614,Solomon Loubao,750,FC Sochaux-Montbéliard,Centre-Forward,19,France,22,5,4,9,178,94,4846,18,6,11,7,5,0,2022,2026
-1038067,Julien Vetro,750,FC Sochaux-Montbéliard,Right Winger,22,France,11,7,7,14,236,102,5257,14,12,9,5,5,0,2020,2026
-563098,Boubacar Fofana,750,FC Sochaux-Montbéliard,Left Winger,27,France,10,10,9,15,361,178,8465,33,10,115,41,22,0,2017,2026
-804739,Lenny Montfort,2969,Dijon FCO,Goalkeeper,23,France,1,9,8,11,279,73,6488,0,0,1,0,1,0,2018,2026
-1177290,Ismaïl Diallo,2969,Dijon FCO,Right-Back,21,France,2,6,6,6,124,80,6046,4,8,15,7,12,0,2020,2026
+1579242,Tom Dupont,7042,US Boulogne,Midfield,20,France,0,1,1,1,1,0,0,0,0,0,0,0,0,2026,2026
+1004661,Mohamed Soumah,7042,US Boulogne,Central Midfield,20,France,0,6,4,7,105,81,4971,1,1,1,0,6,0,2021,2026
+775330,Antoine Larose,30204,FC Annecy,Right Winger,33,France,28,17,2,8,414,255,18249,79,34,126,54,27,0,2010,2026
+707225,Noah Fatar,7042,US Boulogne,Left Winger,24,France,0,9,10,12,312,168,10288,32,21,84,24,30,2,2018,2026
+937992,Martin Lecolier,7042,US Boulogne,Centre-Forward,23,France,9,6,4,8,216,151,7979,33,6,40,20,11,0,2021,2026
+700437,Benjamin Bešić,7042,US Boulogne,Centre-Forward,24,Bosnia-Herzegovina,17,9,8,11,221,154,10216,50,10,13,8,18,0,2018,2026
+1183708,Aymane Nassiri,7042,US Boulogne,Right Winger,21,France,7,4,3,5,68,58,3882,27,1,8,2,10,0,2022,2026
+395514,Théo Epailly,7042,US Boulogne,Left Winger,27,France,64,12,10,15,264,138,8213,26,9,71,24,12,0,2015,2026
+917822,Siad Gourville,7042,US Boulogne,Centre-Back,25,France,25,12,11,11,224,137,11107,6,0,12,3,27,0,2015,2026
+920939,Vincent Burlet,7042,US Boulogne,Left-Back,19,Belgium,3,6,8,17,210,133,9424,8,2,38,12,24,23,2021,2026
+656096,Nathan Zohoré,7042,US Boulogne,Centre-Back,24,France,5,9,5,11,310,157,12956,6,0,9,6,25,0,2018,2026
+862996,Hervé Touré,7042,US Boulogne,Defensive Midfield,25,Cote d'Ivoire,0,9,4,9,238,115,5058,8,4,45,13,12,0,2018,2026
+978613,Emmanuel Kouassi,7042,US Boulogne,Right-Back,22,Cote d'Ivoire,33,6,5,7,129,74,5304,4,3,0,0,11,0,2020,2026
+1067261,Luka Boiteau,7042,US Boulogne,Attacking Midfield,19,Canada,7,2,2,3,39,13,276,1,2,5,4,1,0,2025,2026
+639225,Amine El Farissi,7042,US Boulogne,Attacking Midfield,26,France,10,9,5,7,241,188,11425,31,12,51,16,18,0,2016,2025
+471583,Corentin Fatou,1080,Stade Lavallois,Centre-Forward,27,France,17,11,5,11,258,161,5986,33,6,45,22,11,1,2016,2026
+1179130,Gabin Capuano,7042,US Boulogne,Centre-Forward,19,France,26,4,6,7,116,64,3579,22,2,20,7,5,0,2023,2026
+538972,Exaucé Mpembele Boula,7042,US Boulogne,Left Winger,23,France,0,10,10,14,259,140,9096,56,10,16,6,10,9,2017,2026
+919621,Lilian Raillot,7042,US Boulogne,Defensive Midfield,21,France,0,6,7,9,211,99,6163,2,2,12,7,21,0,2021,2026
+947361,Florian Boulet,7042,US Boulogne,Centre-Forward,22,France,0,6,5,7,156,80,4756,27,3,3,1,4,0,2020,2026
+1364855,Gabin Secrétant,30204,FC Annecy,Centre-Back,17,France,0,3,3,3,5,3,270,0,0,0,0,0,0,2024,2026
+1051724,David Oduro,30204,FC Annecy,Left-Back,20,Ghana,0,5,4,7,148,86,5916,2,7,4,3,17,1,2022,2026
+1299146,Sacha Lima,30204,FC Annecy,Centre-Back,22,France,4,3,3,4,59,50,4388,4,0,0,0,9,0,2024,2026
+1156312,Esteban Marre,30204,FC Annecy,Right-Back,22,France,21,4,5,5,96,79,6818,6,3,6,4,13,0,2023,2026
+1030194,Emmanuel Louisir,30204,FC Annecy,Centre-Back,20,France,0,4,4,8,83,62,4987,3,0,0,0,11,0,2022,2026
+1163767,Pascal Mozie,30204,FC Annecy,Defensive Midfield,18,Poland,15,6,5,14,231,118,7955,9,5,2,0,11,29,2021,2026
+1287035,Mohamed Koné,30204,FC Annecy,Central Midfield,19,Cote d'Ivoire,14,4,5,10,70,37,2566,2,1,19,6,11,5,2023,2026
+765972,Zépiqueno Redmond,30204,FC Annecy,Centre-Forward,20,Netherlands,17,6,9,28,267,140,8661,39,2,34,15,5,28,2021,2026
+887433,Kadan Young,30204,FC Annecy,Left Winger,20,England,12,7,7,22,273,110,6203,14,22,141,59,8,23,2020,2026
+1133428,Alan Mondesir,30204,FC Annecy,Left Winger,22,France,7,5,4,5,105,82,6672,18,14,0,0,5,0,2022,2026
+141364,Maxime Hautbois,1080,Stade Lavallois,Goalkeeper,35,France,1,17,3,9,747,227,20260,0,0,0,0,4,0,2010,2026
+72422,Mamadou Samassa,1080,Stade Lavallois,Goalkeeper,36,Mali,30,21,7,24,917,459,40907,0,0,0,0,33,20,2005,2026
+427197,William Bianda,1080,Stade Lavallois,Centre-Back,26,France,3,12,10,23,388,176,14146,4,1,21,6,30,21,2015,2026
+836761,Mattéo Commaret,1080,Stade Lavallois,Centre-Back,24,France,12,8,7,10,167,94,7787,2,4,12,4,10,0,2017,2026
+1000828,Sidi Bane,1080,Stade Lavallois,Centre-Back,22,Senegal,24,6,7,13,190,91,6884,6,1,11,3,11,0,2021,2026
+1149302,Esteban Mouton,1080,Stade Lavallois,Right-Back,22,France,23,4,3,4,104,86,6596,2,6,27,6,14,0,2023,2026
+413111,Jules Gaudin,1080,Stade Lavallois,Left-Back,26,France,22,11,8,13,253,168,10206,4,11,44,12,29,6,2015,2026
+1270173,Layousse Samb,1080,Stade Lavallois,Left-Back,25,Senegal,35,5,2,6,126,28,1887,4,0,10,5,3,6,2022,2026
+1147351,Mamadou Sidibé,1080,Stade Lavallois,Centre-Back,21,Guinea,29,6,3,8,157,97,7620,5,1,1,0,18,0,2021,2026
+811430,Malik Sellouki,1080,Stade Lavallois,Attacking Midfield,26,France,0,10,9,14,266,156,8741,34,15,143,63,11,0,2016,2026
+694549,Sam Sanna,1080,Stade Lavallois,Defensive Midfield,27,France,6,11,5,9,338,220,16584,9,8,120,36,23,0,2014,2026
+781808,Julien Maggiotti,1080,Stade Lavallois,Central Midfield,30,France,5,12,6,8,309,189,10627,45,19,100,46,22,0,2014,2026
+412086,Cyril Mandouki,1080,Stade Lavallois,Defensive Midfield,35,Martinique,14,15,7,14,574,443,35481,12,12,132,36,44,22,2012,2026
+737777,Hermann Esmel,1080,Stade Lavallois,Defensive Midfield,27,France,26,10,9,9,240,174,11537,4,7,5,1,25,0,2017,2026
+1362801,Sacha Mellier,1080,Stade Lavallois,Central Midfield,18,France,0,3,3,5,55,33,2222,1,1,1,0,3,0,2024,2026
+877234,Chafik Gourichy,1080,Stade Lavallois,Attacking Midfield,25,France,7,6,5,8,121,75,4490,12,7,3,0,5,0,2020,2026
+1165753,Alessio Beaudouin,1080,Stade Lavallois,Defensive Midfield,21,France,21,6,3,8,143,92,6933,6,3,0,0,16,0,2021,2026
+984697,Trévis Dago,1080,Stade Lavallois,Centre-Forward,21,France,11,6,6,11,164,86,4571,22,2,46,18,21,0,2021,2026
+1166734,Ethan Clavreul,1080,Stade Lavallois,Left Winger,20,France,20,5,3,7,115,86,4688,17,2,21,11,13,0,2022,2026
+1334280,Yanis Court,1080,Stade Lavallois,Attacking Midfield,17,France,0,3,3,5,52,31,1598,4,1,1,1,1,0,2024,2026
+939977,Mathys Houdayer,1080,Stade Lavallois,Centre-Forward,21,France,31,6,5,11,137,97,5741,27,10,24,9,12,0,2021,2026
+855025,Noa Mupemba,1080,Stade Lavallois,Centre-Forward,24,France,19,8,7,9,198,122,7121,41,2,8,2,10,0,2019,2026
+1082204,Lucas Droyaux,1080,Stade Lavallois,Goalkeeper,20,France,0,6,3,8,169,46,4081,0,0,0,0,2,0,2021,2026
+1057563,Christ-Owen Kouassi,1080,Stade Lavallois,Right-Back,22,Cote d'Ivoire,22,7,4,8,175,119,9272,6,2,29,8,13,1,2020,2026
+627463,Thibaut Vargas,1080,Stade Lavallois,Right-Back,25,France,7,10,9,14,330,217,16421,13,33,95,29,14,0,2015,2025
+391375,Peter Ouaneh,1080,Stade Lavallois,Centre-Back,27,France,4,13,11,19,436,248,20305,10,3,11,2,30,3,2014,2026
+923758,Ylies Aradj,1080,Stade Lavallois,Left-Back,20,France,21,6,7,15,220,100,7474,4,4,2,0,14,16,2021,2026
+238716,Théo Pellenard,1080,Stade Lavallois,Centre-Back,31,France,0,17,13,18,617,273,21018,4,3,35,6,49,1,2009,2025
+85953,Yohan Tavares,1080,Stade Lavallois,Centre-Back,37,Portugal,23,18,11,20,687,495,42414,10,6,17,4,77,1,2008,2025
+546884,Titouan Thomas,1080,Stade Lavallois,Central Midfield,23,France,8,10,10,19,335,213,13418,13,5,65,20,28,16,2017,2026
+510686,William Kokolo,1080,Stade Lavallois,Left Midfield,25,France,0,11,12,17,363,189,13069,4,16,54,15,28,0,2016,2026
+808316,William Benard,1080,Stade Lavallois,Central Midfield,22,France,26,6,4,8,230,110,7149,3,3,5,0,24,0,2020,2025
+1066677,Enzo Montet,1080,Stade Lavallois,Defensive Midfield,22,France,25,6,4,9,174,121,9091,8,7,5,2,14,0,2021,2026
+502289,Dylan Mbayo,1080,Stade Lavallois,Right Winger,23,Belgium,15,11,6,17,335,192,10029,15,24,125,42,20,22,2016,2026
+412934,Eros Maddy,1080,Stade Lavallois,Right Winger,24,Netherlands,34,12,9,16,430,175,8393,8,20,38,16,17,10,2015,2026
+1070690,Aristide Mateta,1080,Stade Lavallois,Right Winger,22,DR Congo,0,7,6,9,159,110,6382,26,1,0,0,6,0,2020,2026
+412085,Malik Tchokounté,1080,Stade Lavallois,Centre-Forward,36,France,18,16,7,7,582,421,29401,110,30,326,132,42,0,2011,2026
+804739,Lenny Montfort,2969,Dijon FCO,Goalkeeper,23,France,1,9,8,11,280,74,6578,0,0,1,0,1,0,2018,2026
+1177290,Ismaïl Diallo,2969,Dijon FCO,Right-Back,21,France,2,6,6,6,125,81,6091,4,8,16,7,12,0,2020,2026
 81543,Paul Delecroix,2969,Dijon FCO,Goalkeeper,37,France,16,19,9,9,750,376,33655,0,0,0,0,5,0,2008,2026
 490414,Waly Diouf,2969,Dijon FCO,Centre-Back,29,Senegal,6,14,11,19,358,188,15917,6,1,6,2,42,5,2012,2026
-620315,Lenny Lacroix,2969,Dijon FCO,Centre-Back,23,France,23,9,7,15,337,135,9137,3,5,24,5,17,23,2018,2026
 1094399,César Obongo,2969,Dijon FCO,Right-Back,20,Congo,19,4,4,7,123,88,7123,8,4,2,0,13,3,2023,2026
+620315,Lenny Lacroix,2969,Dijon FCO,Centre-Back,23,France,23,9,7,15,337,135,9137,3,5,24,5,17,23,2018,2026
+1166450,Axel Bargain,2969,Dijon FCO,Centre-Back,20,France,15,5,6,8,100,71,5543,5,0,0,0,12,0,2022,2026
 98262,Quentin Bernard,2969,Dijon FCO,Centre-Back,37,France,5,19,4,7,728,564,49022,8,26,51,8,67,0,2008,2026
-1166450,Axel Bargain,2969,Dijon FCO,Centre-Back,20,France,15,5,5,7,99,70,5453,5,0,0,0,12,0,2022,2026
-804550,Paul Bellon,2969,Dijon FCO,Defensive Midfield,26,France,8,10,4,8,257,179,13564,3,4,0,0,17,0,2017,2026
-660026,Brandon Ndezi,2969,Dijon FCO,Central Midfield,26,France,18,11,6,12,200,115,8219,7,1,5,1,26,2,2015,2026
 770799,Adel Lembezat,2969,Dijon FCO,Attacking Midfield,27,France,17,10,8,8,237,159,10553,25,13,34,11,13,0,2016,2026
+660026,Brandon Ndezi,2969,Dijon FCO,Central Midfield,26,France,18,11,6,12,200,115,8219,7,1,5,1,26,2,2015,2026
 929841,Ben-Chayeel Hamada,2969,Dijon FCO,Central Midfield,23,Comoros,7,7,5,9,235,141,9176,20,3,7,0,10,4,2020,2026
 756591,Samy Chouchane,2969,Dijon FCO,Central Midfield,22,Tunisia,21,8,6,21,297,171,11387,16,15,85,28,13,10,2019,2026
+804550,Paul Bellon,2969,Dijon FCO,Defensive Midfield,26,France,8,10,4,8,257,179,13564,3,4,0,0,17,0,2017,2026
 231025,Jordan Marié,2969,Dijon FCO,Central Midfield,34,France,14,15,2,9,561,359,23863,15,18,101,21,52,0,2012,2026
-1178375,Loris Dupont,2969,Dijon FCO,Central Midfield,19,France,28,4,3,5,92,45,2604,4,0,0,0,8,0,2023,2026
+281926,Hugo Vargas-Ríos,2969,Dijon FCO,Central Midfield,31,France,20,14,8,9,419,277,22693,16,25,34,16,50,0,2013,2026
 149518,Michaël Barreto,2969,Dijon FCO,Attacking Midfield,35,France,4,18,12,12,663,367,25025,40,34,266,70,36,0,2009,2026
-281926,Hugo Vargas-Ríos,2969,Dijon FCO,Central Midfield,31,France,20,15,8,9,449,277,22693,16,25,34,16,50,0,2011,2026
+1178375,Loris Dupont,2969,Dijon FCO,Central Midfield,19,France,28,4,3,5,93,47,2739,4,0,0,0,8,0,2023,2026
 510258,Yanis Barka,2969,Dijon FCO,Second Striker,28,France,10,13,9,14,349,240,15214,61,6,83,29,28,0,2013,2026
 743532,Alexis Ntamack,2969,Dijon FCO,Centre-Forward,22,France,29,7,4,9,155,144,8887,29,3,11,3,10,1,2019,2026
+838947,Alexandre Pierre,750,FC Sochaux-Montbéliard,Goalkeeper,25,Haiti,30,11,8,15,349,71,6222,0,0,0,0,2,15,2016,2026
 1172638,Florian Rombogouera,2969,Dijon FCO,Left Winger,20,France,33,5,5,7,135,82,4746,22,7,0,0,2,0,2022,2026
-972490,Enzo Ketterle,2969,Dijon FCO,Goalkeeper,23,France,0,6,6,8,163,62,5559,1,0,0,0,1,0,2020,2026
 216426,Julio Tavarès,2969,Dijon FCO,Centre-Forward,37,Cape Verde,11,17,4,15,683,539,40635,166,56,301,137,28,46,2009,2026
-1371249,Ylann Marie-Rose,2969,Dijon FCO,Goalkeeper,18,France,0,3,3,5,60,33,2970,0,0,0,0,1,0,2024,2026
+191882,Mehdi Jeannin,750,FC Sochaux-Montbéliard,Goalkeeper,35,Algeria,40,16,6,13,642,167,14966,0,1,0,0,5,0,2011,2026
+1171934,Élie N'Gatta,750,FC Sochaux-Montbéliard,Centre-Back,20,Cote d'Ivoire,26,5,4,9,136,99,7871,1,6,1,0,9,3,2022,2026
+974995,Dalangunypole Gomis,750,FC Sochaux-Montbéliard,Centre-Back,22,France,3,6,6,17,232,104,7249,0,1,5,0,4,1,2021,2026
+918871,Arthur Vitelli,750,FC Sochaux-Montbéliard,Centre-Back,26,France,4,10,6,8,243,144,11889,1,0,2,0,29,0,2017,2026
+321930,Dylan Tavares,750,FC Sochaux-Montbéliard,Left-Back,30,Cape Verde,42,15,10,14,491,319,23497,11,10,22,9,58,20,2012,2026
+315075,Bendjaloud Youssouf,750,FC Sochaux-Montbéliard,Right-Back,32,Comoros,17,14,8,15,654,347,25347,31,43,88,23,15,52,2013,2026
+1173606,Elson Mendes,750,FC Sochaux-Montbéliard,Defensive Midfield,19,Cape Verde,6,5,5,8,152,98,7307,13,3,24,7,21,1,2021,2026
+111026,Mathieu Peybernes,750,FC Sochaux-Montbéliard,Centre-Back,35,France,14,20,13,27,818,459,36711,11,6,44,15,68,8,2007,2026
+233739,Prince Mendy,750,FC Sochaux-Montbéliard,Centre-Back,30,Senegal,20,14,12,11,469,269,21974,1,0,6,2,36,0,2012,2025
+494315,Julien Masson,750,FC Sochaux-Montbéliard,Defensive Midfield,28,France,23,12,3,5,379,275,21173,7,6,85,15,55,0,2015,2026
+182823,Jonathan Mexique,750,FC Sochaux-Montbéliard,Central Midfield,31,Martinique,15,17,11,21,589,369,27426,15,16,69,16,28,19,2010,2026
+1321676,Honoré Bayanginisa,750,FC Sochaux-Montbéliard,Defensive Midfield,21,DR Congo,8,3,2,7,116,53,3160,8,0,2,1,7,7,2024,2026
+730580,Aymen Boutoutaou,750,FC Sochaux-Montbéliard,Right Winger,24,Algeria,28,9,5,9,319,192,11025,39,11,178,68,11,1,2018,2026
+511454,Samy Baghdadi,750,FC Sochaux-Montbéliard,Second Striker,29,France,5,11,9,11,311,199,11817,67,13,101,53,12,0,2016,2026
+1144614,Solomon Loubao,750,FC Sochaux-Montbéliard,Centre-Forward,19,France,22,5,4,9,179,94,4846,18,6,11,7,5,0,2022,2026
+412091,Kapit Djoco,750,FC Sochaux-Montbéliard,Centre-Forward,30,France,9,13,10,7,367,274,17505,70,21,142,54,29,0,2014,2026
+566371,Benjamin Gomel,750,FC Sochaux-Montbéliard,Left Winger,28,France,7,12,11,8,393,254,17000,52,24,71,25,36,0,2015,2026
+563098,Boubacar Fofana,750,FC Sochaux-Montbéliard,Left Winger,27,France,10,10,9,15,362,179,8544,33,10,116,41,22,0,2017,2026
+1038067,Julien Vetro,750,FC Sochaux-Montbéliard,Right Winger,22,France,47,7,7,14,237,102,5257,14,12,9,5,5,0,2020,2026
+972490,Enzo Ketterle,2969,Dijon FCO,Goalkeeper,23,France,0,6,6,9,165,63,5649,1,0,0,0,1,0,2020,2026
+1371249,Ylann Marie-Rose,2969,Dijon FCO,Goalkeeper,18,France,0,3,3,5,59,33,2970,0,0,0,0,1,0,2024,2026
 807654,Moussa Faty,2969,Dijon FCO,Left-Back,26,France,31,8,5,8,180,163,12827,24,6,2,0,8,0,2019,2026
-974900,Anass Benyahya,2969,Dijon FCO,Centre-Back,22,Morocco,0,7,5,6,140,98,8149,0,0,0,0,10,0,2020,2026
 707246,Ismaïl Bouleghcha,2969,Dijon FCO,Right-Back,23,Morocco,93,10,8,14,238,168,13080,3,8,4,2,12,1,2017,2026
-1176595,Ylan Aka,2969,Dijon FCO,Central Midfield,19,France,0,4,3,7,131,84,5390,2,1,1,0,14,0,2023,2026
-1119906,Abdelmajid Djae,2969,Dijon FCO,Left Winger,21,Comoros,0,6,6,14,181,96,5095,14,9,13,6,1,2,2021,2026
-1281331,Hatem Mimoune,2969,Dijon FCO,Attacking Midfield,19,France,0,4,3,4,79,42,2531,11,13,0,0,4,0,2023,2026
-556865,Saad Agouzoul,750,FC Sochaux-Montbéliard,Centre-Back,29,Morocco,97,11,8,14,309,186,15714,5,2,56,13,29,3,2016,2026
-1339047,Tyris Dong,2969,Dijon FCO,Centre-Forward,17,France,0,4,3,6,80,51,3304,15,1,3,1,2,3,2023,2026
-1173597,Matthis Schübler-Lecart,750,FC Sochaux-Montbéliard,Goalkeeper,19,France,0,5,3,9,126,41,3635,0,0,0,0,2,0,2022,2026
-1462738,Mohamed Touré,750,FC Sochaux-Montbéliard,Defender,20,Guinea,0,2,2,4,45,16,1350,0,0,0,0,3,0,2025,2026
-1450570,Bakary Diawara,750,FC Sochaux-Montbéliard,Midfield,17,France,0,2,4,5,40,23,1932,1,0,0,0,5,0,2025,2026
-1340408,Pape Yatma Diop,750,FC Sochaux-Montbéliard,Defensive Midfield,20,Senegal,0,3,3,4,64,42,3176,1,1,2,0,8,0,2024,2026
-969153,Mathis Clairicia,750,FC Sochaux-Montbéliard,Centre-Forward,23,France,91,7,10,13,203,139,8472,34,12,70,28,15,0,2020,2026
-562578,Landry Nomel,750,FC Sochaux-Montbéliard,Left Winger,28,Cote d'Ivoire,77,13,15,15,416,289,19157,50,31,107,37,42,0,2014,2026
-991502,Marie-Gaël Mukanya,750,FC Sochaux-Montbéliard,Centre-Forward,23,DR Congo,0,7,5,8,184,100,4468,16,6,4,2,2,0,2020,2026
-1006410,Noa Kotto Kotto Mouyema,750,FC Sochaux-Montbéliard,Centre-Forward,20,France,0,6,3,10,129,94,6479,23,1,0,0,4,2,2021,2026
-1307039,Victor Monthieu,750,FC Sochaux-Montbéliard,Centre-Forward,18,France,0,3,3,8,108,60,4579,22,3,0,0,2,0,2024,2026
-1201859,Ethan Cortes,750,FC Sochaux-Montbéliard,Centre-Forward,19,France,29,4,5,7,56,25,1118,4,3,0,0,2,0,2022,2026
+974900,Anass Benyahya,2969,Dijon FCO,Centre-Back,22,Morocco,0,7,5,6,140,98,8149,0,0,0,0,10,0,2020,2026
+1176595,Ylan Aka,2969,Dijon FCO,Central Midfield,19,France,0,4,3,8,132,84,5390,2,1,1,0,14,0,2023,2026
+1281331,Hatem Mimoune,2969,Dijon FCO,Attacking Midfield,19,France,0,4,3,4,80,42,2531,11,13,0,0,4,0,2023,2026
+1117771,Ange Lago,2969,Dijon FCO,Centre-Forward,21,Cote d'Ivoire,0,4,3,9,129,67,3660,17,1,3,2,2,0,2022,2025
+1119906,Abdelmajid Djae,2969,Dijon FCO,Left Winger,21,Comoros,0,6,6,15,182,97,5140,14,9,13,6,1,2,2021,2026
+1339047,Tyris Dong,2969,Dijon FCO,Centre-Forward,17,France,0,4,3,6,81,51,3304,15,1,3,1,2,3,2023,2026
+556865,Saad Agouzoul,750,FC Sochaux-Montbéliard,Centre-Back,29,Morocco,97,11,8,14,310,187,15804,5,2,56,13,30,3,2016,2026
+1462738,Mohamed Touré,750,FC Sochaux-Montbéliard,Defender,20,Guinea,0,2,2,5,47,17,1440,0,0,0,0,3,0,2025,2026
+1450570,Bakary Diawara,750,FC Sochaux-Montbéliard,Midfield,17,France,0,2,4,6,48,29,2411,2,0,0,0,6,0,2025,2026
+1340408,Pape Yatma Diop,750,FC Sochaux-Montbéliard,Defensive Midfield,20,Senegal,0,3,3,5,66,42,3176,1,1,2,0,8,0,2024,2026
+1173597,Matthis Schübler-Lecart,750,FC Sochaux-Montbéliard,Goalkeeper,19,France,0,5,3,10,128,42,3725,0,0,0,0,2,0,2022,2026
+646108,Louicius Deedson,750,FC Sochaux-Montbéliard,Right Winger,25,Haiti,11,8,7,20,318,195,12433,52,28,289,117,23,35,2019,2026
+969153,Mathis Clairicia,750,FC Sochaux-Montbéliard,Centre-Forward,24,France,91,7,10,13,204,140,8533,34,12,71,29,15,0,2020,2026
+1201859,Ethan Cortes,750,FC Sochaux-Montbéliard,Centre-Forward,19,France,29,4,6,8,58,26,1197,5,3,0,0,2,0,2022,2026
+562578,Landry Nomel,750,FC Sochaux-Montbéliard,Left Winger,28,Cote d'Ivoire,77,13,15,15,417,290,19243,50,31,107,37,42,0,2014,2026
+1006410,Noa Kotto Kotto Mouyema,750,FC Sochaux-Montbéliard,Centre-Forward,20,France,0,6,3,11,131,95,6483,23,1,0,0,4,2,2021,2026
+1307039,Victor Monthieu,750,FC Sochaux-Montbéliard,Centre-Forward,18,France,0,3,3,9,111,61,4669,23,3,0,0,2,0,2024,2026
+991502,Marie-Gaël Mukanya,750,FC Sochaux-Montbéliard,Centre-Forward,23,DR Congo,0,7,5,8,185,100,4468,16,6,4,2,2,0,2020,2026

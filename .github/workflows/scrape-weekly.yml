@@ -26,9 +26,16 @@ on:
         default: "true"
         type: choice
         options: ["true", "false"]
+      retry_round:
+        description: "Tour de rattrapage automatique (interne — laisser 0 pour un lancement manuel)"
+        required: false
+        default: "0"
+        type: choice
+        options: ["0", "1"]
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: scrape-weekly
@@ -189,6 +196,7 @@ jobs:
           fi
 
       - name: Scraping carrière des joueurs (par ligue, séquentiel)
+        id: scrape_career
         if: github.event.inputs.skip_scrape != 'true'
         working-directory: artifacts/football-dashboard
         # timeout-minutes : limite dure à 5h pour rester sous le plafond GitHub (6h/job).
@@ -229,6 +237,7 @@ jobs:
           done
           # ── Retry pass : une seconde chance pour les ligues KO
           # (ex. : erreur réseau transitoire, TM momentanément lent)
+          FINAL_KO_CODES=""
           if [ -n "$KO_CODES" ]; then
             echo "=== Retry pass : $KO ligue(s) KO → nouvelle tentative ==="
             KO_RECOVERED=0
@@ -240,6 +249,7 @@ jobs:
                 KO_RECOVERED=$((KO_RECOVERED+1))
               else
                 KO_FINAL=$((KO_FINAL+1))
+                FINAL_KO_CODES="${FINAL_KO_CODES:+$FINAL_KO_CODES,}$code"
                 echo "::warning::Retry définitivement échoué : $code"
               fi
               echo "::endgroup::"
@@ -248,6 +258,7 @@ jobs:
             KO=$KO_FINAL
           fi
           echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents ou vides)"
+          echo "failed_leagues=$FINAL_KO_CODES" >> "$GITHUB_OUTPUT"
 
       - name: Filtrer saison en cours pour chaque ligue
         # always() : tourne même si l'étape carrière a expiré ou échoué partiellement.
@@ -325,7 +336,29 @@ jobs:
           # via l'API git du repo.
           force_orphan: true
 
+      - name: Relancer les ligues encore en échec sur un runner neuf
+        if: ${{ always() && steps.scrape_career.outputs.failed_leagues != '' && github.event.inputs.retry_round != '1' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FAILED_LEAGUES: ${{ steps.scrape_career.outputs.failed_leagues }}
+        run: |
+          echo "Rattrapage automatique demandé pour : $FAILED_LEAGUES"
+          gh workflow run "scrape-weekly.yml" \
+            --ref main \
+            -f leagues="$FAILED_LEAGUES" \
+            -f skip_scrape=false \
+            -f refresh_squads=false \
+            -f retry_round=1
+          echo "::notice::Un nouveau runner reprendra uniquement les ligues en échec."
+
       - name: Résumé
         run: |
           echo "✅ Publication terminée."
+          if [ -n "${{ steps.scrape_career.outputs.failed_leagues }}" ]; then
+            if [ "${{ github.event.inputs.retry_round }}" = "1" ]; then
+              echo "⚠️ Ligues encore en échec après le rattrapage automatique : ${{ steps.scrape_career.outputs.failed_leagues }}"
+            else
+              echo "🔁 Rattrapage automatique lancé pour : ${{ steps.scrape_career.outputs.failed_leagues }}"
+            fi
+          fi
           echo "URL probable : https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"

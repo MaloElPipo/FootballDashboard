@@ -1,10 +1,13 @@
 name: Scrape carrière TM hebdomadaire
 
-# Tous les lundis à 3h15 UTC = 4h15 Paris (hiver) / 5h15 Paris (été)
-# Décalé hors de la minute 00 pour réduire les retards du planificateur GitHub.
+# Deux déclenchements hors de la minute 00 pour couvrir le changement d'heure :
+# 3h15 UTC = 5h15 Paris en été, 4h15 UTC = 5h15 Paris en hiver.
+# La porte ci-dessous ignore automatiquement le créneau qui ne correspond pas
+# à l'offset Europe/Paris courant.
 on:
   schedule:
     - cron: "15 3 * * 1"
+    - cron: "15 4 * * 1"
   workflow_dispatch:
     inputs:
       leagues:
@@ -32,7 +35,38 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check-local-schedule:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - name: Vérifier le créneau Europe/Paris
+        id: gate
+        env:
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          # Un lancement manuel passe toujours.
+          if [ -z "$TRIGGER_SCHEDULE" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "Lancement manuel : exécution autorisée."
+            exit 0
+          fi
+
+          OFFSET=$(TZ=Europe/Paris date +%z)
+          case "$TRIGGER_SCHEDULE:$OFFSET" in
+            "15 3 * * 1:+0200"|"15 4 * * 1:+0100")
+              echo "should_run=true" >> "$GITHUB_OUTPUT"
+              echo "Créneau actif : $TRIGGER_SCHEDULE avec offset Paris $OFFSET."
+              ;;
+            *)
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              echo "Créneau ignoré : $TRIGGER_SCHEDULE avec offset Paris $OFFSET."
+              ;;
+          esac
+
   scrape-and-publish:
+    needs: check-local-schedule
+    if: needs.check-local-schedule.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 720   # 12h max — 74 ligues × ~5 min = ~6h pour un run complet
 

@@ -626,16 +626,15 @@ def cli():
     if failed:
         _log(f"   IDs en échec: {failed[:20]}{' ...' if len(failed) > 20 else ''}")
 
-    # ── Garde-fou : ne pas écraser de bons CSV existants avec un résultat vide
-    # Si ≥90% des joueurs ont échoué ET qu'on n'a aucune donnée, c'est
-    # vraisemblablement un blocage TM (IP ban, timeout global, 403/503).
-    # On sort en erreur SANS écrire, pour préserver les fichiers précédents.
+    # Une réponse partielle ne doit jamais remplacer un export complet.
+    # Même un seul joueur réussi masquait auparavant un blocage quasi total.
+    # Toute erreur conserve les CSV précédents et rend la ligue éligible au retry.
     total_players = len(player_meta_by_id)
-    if total_players > 0 and not summary:
-        fail_pct = 100 * len(failed) / total_players
+    if failed or not summary:
+        fail_pct = 100 * len(failed) / total_players if total_players else 0
         _log(
             f"\n>>> ALERTE : {fail_pct:.0f}% d'échecs ({len(failed)}/{total_players}), "
-            f"0 ligne produite — TM bloquant ?"
+            f"{len(summary)} joueur(s) produit(s) — export incomplet refusé."
         )
         _log("   Écriture annulée — fichiers existants préservés.")
         sys.exit(1)  # Signale l'échec au workflow → KO → retry pass

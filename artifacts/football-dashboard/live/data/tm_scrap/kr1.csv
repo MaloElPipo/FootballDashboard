@@ -1871,7 +1871,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1124486,Patrik Turkovic,11083,NK Rudes,2026,KR1,0,Attack,20,Croatia,0,0,0,0
 945239,Mario Matkovic,24575,HNK Gorica,2026,KR1,0,Centre-Back,23,Croatia,0,0,0,0
 1113088,Frano Vlasic,2362,Slaven Belupo Koprivnica,2026,KR1,0,Centre-Forward,20,Croatia,0,0,0,0
-1276587,Domagoj Ivan Maric,144,HNK Rijeka,2026,KR1,0,Goalkeeper,20,Croatia,0,0,0,0
 847256,Dimitri Legbo,144,HNK Rijeka,2026,KR1,24,Left Winger,25,Cote d'Ivoire,0,0,0,0
 658713,Tornike Morchiladze,144,HNK Rijeka,2026,KR1,7,Left Winger,24,Georgia,0,0,0,0
 1329649,Luka Banovic,447,HNK Hajduk Split,2026,KR1,0,Centre-Back,19,Canada,0,0,0,0
@@ -1883,74 +1882,17 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 945244,Vinko Skrbin,24575,HNK Gorica,2026,KR1,0,Defensive Midfield,23,Croatia,0,0,0,0
 1085764,Paul Vranjicic,11083,NK Rudes,2026,KR1,0,Defender,19,Croatia,0,0,0,0
 665526,Riad Masala,11083,NK Rudes,2026,KR1,23,Attacking Midfield,22,Bosnia-Herzegovina,0,0,0,0
-370997,Dominik Kotarski,419,GNK Dinamo Zagreb,2026,KR1,24,Goalkeeper,26,Croatia,1,1,0,90
-293185,Ivan Nevistic,419,GNK Dinamo Zagreb,2026,KR1,33,Goalkeeper,28,Croatia,4,3,0,270
-234187,Ivan Filipovic,419,GNK Dinamo Zagreb,2026,KR1,44,Goalkeeper,31,Croatia,4,1,0,90
-131310,Danijel Zagorac,419,GNK Dinamo Zagreb,2026,KR1,1,Goalkeeper,39,Croatia,2,0,0,0
-741258,Sergi Domínguez,419,GNK Dinamo Zagreb,2026,KR1,36,Centre-Back,21,Spain,5,3,0,165
-255906,Scott McKenna,419,GNK Dinamo Zagreb,2026,KR1,26,Centre-Back,29,Scotland,5,2,0,135
-528835,Niko Galesic,419,GNK Dinamo Zagreb,2026,KR1,15,Centre-Back,25,Croatia,4,4,1,279
-384568,Stjepan Radeljic,419,GNK Dinamo Zagreb,2026,KR1,6,Centre-Back,29,Bosnia-Herzegovina,5,4,0,360
-631222,Raúl Torrente,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Back,24,Spain,1,0,0,0
-920283,Matteo Pérez Vinlöf,419,GNK Dinamo Zagreb,2026,KR1,22,Left-Back,20,Sweden,5,4,0,304
-502686,Moris Valincic,419,GNK Dinamo Zagreb,2026,KR1,25,Right-Back,23,Croatia,5,4,0,246
-414956,Bruno Goda,419,GNK Dinamo Zagreb,2026,KR1,3,Left-Back,28,Croatia,5,2,0,146
-1107315,Noa Mikic,419,GNK Dinamo Zagreb,2026,KR1,35,Right-Back,19,Croatia,0,0,0,0
-828467,Paul Tabinas,419,GNK Dinamo Zagreb,2026,KR1,13,Right-Back,24,Philippines,5,3,0,204
-1267602,Borna Orlic,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Back,19,Croatia,0,0,0,0
 60603,Kévin Théophile-Catherine,419,GNK Dinamo Zagreb,2026,KR1,28,Centre-Back,36,Martinique,0,0,0,0
-665266,Luka Stojkovic,419,GNK Dinamo Zagreb,2026,KR1,10,Attacking Midfield,22,Croatia,4,3,0,223
-387105,Luka Ivanušec,419,GNK Dinamo Zagreb,2026,KR1,17,Attacking Midfield,27,Croatia,1,1,0,19
-607814,Kirill Kravtsov,419,GNK Dinamo Zagreb,2026,KR1,5,Defensive Midfield,24,Russia,3,2,0,118
-149829,Miha Zajc,419,GNK Dinamo Zagreb,2026,KR1,8,Central Midfield,32,Slovenia,5,3,0,201
-227035,Josip Misic,419,GNK Dinamo Zagreb,2026,KR1,27,Defensive Midfield,32,Croatia,5,4,0,330
-339584,Robert Mudrazija,419,GNK Dinamo Zagreb,2026,KR1,20,Attacking Midfield,29,Croatia,4,2,1,48
-846545,Lukas Kacavenda,419,GNK Dinamo Zagreb,2026,KR1,80,Attacking Midfield,23,Croatia,5,5,1,324
-1009603,Sven Sunta,419,GNK Dinamo Zagreb,2026,KR1,41,Attacking Midfield,19,Slovenia,3,2,0,26
-1258790,Lautaro Ultra,419,GNK Dinamo Zagreb,2026,KR1,0,Defensive Midfield,19,Uruguay,0,0,0,0
-618350,Dion Beljo,419,GNK Dinamo Zagreb,2026,KR1,9,Centre-Forward,24,Croatia,5,5,7,416
-604327,Gabriel Vidovic,419,GNK Dinamo Zagreb,2026,KR1,0,Left Winger,22,Croatia,1,1,0,15
-458367,Arbër Hoxha,419,GNK Dinamo Zagreb,2026,KR1,11,Left Winger,27,Albania,5,5,1,363
-665275,Mateo Lisica,419,GNK Dinamo Zagreb,2026,KR1,21,Right Winger,23,Croatia,5,5,0,275
-1061656,Iker Almena,419,GNK Dinamo Zagreb,2026,KR1,23,Right Winger,22,Spain,1,0,0,0
-834470,Dani Rodríguez,419,GNK Dinamo Zagreb,2026,KR1,0,Right Winger,21,Spain,0,0,0,0
-1156640,Aleks Stojakovic,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Forward,22,Slovenia,0,0,0,0
-927306,Fran Topic,419,GNK Dinamo Zagreb,2026,KR1,30,Right Winger,22,Croatia,4,4,0,166
-1077674,Noah Nsoki,419,GNK Dinamo Zagreb,2026,KR1,77,Left Winger,19,France,3,0,0,0
-119150,Mislav Orsic,419,GNK Dinamo Zagreb,2026,KR1,99,Left Winger,33,Croatia,5,4,0,87
-328264,Smail Prevljak,419,GNK Dinamo Zagreb,2026,KR1,14,Centre-Forward,31,Bosnia-Herzegovina,4,3,1,51
 1151870,Lovre Kulusic,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Forward,19,Croatia,0,0,0,0
-341535,Igor Vekic,144,HNK Rijeka,2026,KR1,13,Goalkeeper,28,Slovenia,4,2,0,180
-358195,David Nwolokor,144,HNK Rijeka,2026,KR1,31,Goalkeeper,30,Nigeria,1,0,0,0
-750003,Aleksa Todorovic,144,HNK Rijeka,2026,KR1,99,Goalkeeper,22,Serbia,5,3,0,270
-1342570,Vito Kovac,144,HNK Rijeka,2026,KR1,0,Goalkeeper,18,Croatia,5,0,0,0
-745248,Ante Orec,144,HNK Rijeka,2026,KR1,22,Right-Back,25,Croatia,5,4,0,293
-376452,Mladen Devetak,144,HNK Rijeka,2026,KR1,34,Left-Back,27,Serbia,4,4,0,210
-365107,Anel Husic,144,HNK Rijeka,2026,KR1,51,Centre-Back,25,Switzerland,5,3,0,252
-979773,Téo Barišić,144,HNK Rijeka,2026,KR1,28,Right-Back,21,Croatia,0,0,0,0
-345311,Justas Lasickas,144,HNK Rijeka,2026,KR1,23,Right-Back,28,Lithuania,5,4,1,337
-927834,Noel Bodetic,144,HNK Rijeka,2026,KR1,91,Left-Back,22,Croatia,5,0,0,0
-207025,Ante Majstorovic,144,HNK Rijeka,2026,KR1,45,Centre-Back,32,Croatia,5,5,0,450
-844946,Moreno Zivkovic,144,HNK Rijeka,2026,KR1,3,Centre-Back,22,Croatia,5,1,0,67
-1056490,Roko Valincic,144,HNK Rijeka,2026,KR1,0,Centre-Back,20,Croatia,0,0,0,0
-432758,Toni Fruk,144,HNK Rijeka,2026,KR1,10,Attacking Midfield,25,Croatia,5,5,2,361
-429987,Tiago Dantas,144,HNK Rijeka,2026,KR1,26,Central Midfield,25,Portugal,5,5,0,387
-403760,Niko Jankovic,144,HNK Rijeka,2026,KR1,4,Attacking Midfield,25,Croatia,5,4,0,328
-650966,Samuele Vignato,144,HNK Rijeka,2026,KR1,19,Attacking Midfield,22,Italy,4,3,1,195
-671538,Alfonso Barco,144,HNK Rijeka,2026,KR1,5,Defensive Midfield,24,Peru,5,4,0,203
-1009485,Branko Pavic,144,HNK Rijeka,2026,KR1,6,Defensive Midfield,19,Croatia,5,5,0,389
-293210,Amer Gojak,144,HNK Rijeka,2026,KR1,14,Attacking Midfield,29,Bosnia-Herzegovina,5,5,0,147
-580443,Ivan Cubelic,144,HNK Rijeka,2026,KR1,8,Attacking Midfield,23,Croatia,5,5,0,206
-610163,Florent Shehu,144,HNK Rijeka,2026,KR1,0,Attacking Midfield,24,Switzerland,0,0,0,0
-1523683,Talib Sibi,144,HNK Rijeka,2026,KR1,0,Attacking Midfield,19,The Gambia,0,0,0,0
-603149,Mohammad Mohebi,144,HNK Rijeka,2026,KR1,9,Left Winger,27,Iran,1,1,0,11
-963878,Daniel Adu-Adjei,144,HNK Rijeka,2026,KR1,18,Centre-Forward,21,England,5,5,3,313
-604359,Yusuf Kabadayi,144,HNK Rijeka,2026,KR1,7,Left Winger,22,Germany,4,2,0,48
-927331,Ante Matej Juric,144,HNK Rijeka,2026,KR1,77,Centre-Forward,23,Croatia,4,1,0,11
-743567,Gabriel Rukavina,144,HNK Rijeka,2026,KR1,0,Left Winger,22,Croatia,3,2,0,130
-1373497,Cherno Saho,144,HNK Rijeka,2026,KR1,0,Centre-Forward,21,The Gambia,1,0,0,0
-217751,Jakov Puljic,144,HNK Rijeka,2026,KR1,21,Centre-Forward,33,Croatia,5,4,1,157
-1523679,Goran Grulovic,144,HNK Rijeka,2026,KR1,0,Right Winger,16,Croatia,4,1,0,5
+434557,Mihael Zaper,447,HNK Hajduk Split,2025,KR1,0,Defensive Midfield,26,Croatia,0,0,0,0
+1151870,Lovre Kulusic,419,GNK Dinamo Zagreb,2025,KR1,0,Centre-Forward,18,Croatia,0,0,0,0
+434557,Mihael Zaper,447,HNK Hajduk Split,2026,KR1,45,Defensive Midfield,28,Croatia,0,0,0,0
+39125,Borna Barisic,327,NK Osijek,2026,KR1,0,Left-Back,33,Croatia,0,0,0,0
+646361,Renan Guedes,327,NK Osijek,2026,KR1,42,Right-Back,28,Brazil,0,0,0,0
+421824,Yannick Toure,327,NK Osijek,2026,KR1,9,Centre-Forward,25,Switzerland,0,0,0,0
+1173841,Mateo Bacic,327,NK Osijek,2026,KR1,0,Centre-Forward,21,Croatia,0,0,0,0
+1048807,Luka Curkovic,2362,Slaven Belupo Koprivnica,2026,KR1,16,Right-Back,21,Croatia,0,0,0,0
+927214,Domagoj Djurkovic,11083,NK Rudes,2026,KR1,22,Defensive Midfield,24,Croatia,0,0,0,0
 160482,Ivica Ivusic,447,HNK Hajduk Split,2025,KR1,1,Goalkeeper,30,Croatia,20,15,0,1350
 833313,Toni Silic,447,HNK Hajduk Split,2025,KR1,33,Goalkeeper,21,Croatia,36,21,0,1890
 164145,Ivan Lucic,447,HNK Hajduk Split,2025,KR1,0,Goalkeeper,30,Austria,10,0,0,0
@@ -1977,7 +1919,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 495629,Hugo Guillamón,447,HNK Hajduk Split,2025,KR1,6,Defensive Midfield,25,Spain,32,23,0,1375
 261988,Filip Krovinovic,447,HNK Hajduk Split,2025,KR1,23,Defensive Midfield,29,Croatia,31,29,1,2143
 344599,Yassine Benrahou,447,HNK Hajduk Split,2025,KR1,0,Attacking Midfield,26,Morocco,4,4,2,219
-434557,Mihael Zaper,447,HNK Hajduk Split,2025,KR1,0,Defensive Midfield,26,Croatia,0,0,0,0
 303420,Anthony Kalik,447,HNK Hajduk Split,2025,KR1,7,Attacking Midfield,27,Australia,34,17,1,232
 921512,Marko Capan,447,HNK Hajduk Split,2025,KR1,0,Defensive Midfield,21,Croatia,2,0,0,0
 1375377,Adam Guram,447,HNK Hajduk Split,2025,KR1,26,Attacking Midfield,16,Ukraine,9,7,1,114
@@ -2036,7 +1977,42 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1134201,Cardoso Varela,419,GNK Dinamo Zagreb,2025,KR1,23,Left Winger,16,Portugal,29,14,0,292
 927306,Fran Topic,419,GNK Dinamo Zagreb,2025,KR1,30,Right Winger,21,Croatia,27,17,2,730
 960057,Juan Córdoba,419,GNK Dinamo Zagreb,2025,KR1,70,Right Winger,21,Colombia,13,2,1,56
-1151870,Lovre Kulusic,419,GNK Dinamo Zagreb,2025,KR1,0,Centre-Forward,18,Croatia,0,0,0,0
+370997,Dominik Kotarski,419,GNK Dinamo Zagreb,2026,KR1,24,Goalkeeper,26,Croatia,2,2,0,180
+293185,Ivan Nevistic,419,GNK Dinamo Zagreb,2026,KR1,33,Goalkeeper,28,Croatia,4,3,0,270
+234187,Ivan Filipovic,419,GNK Dinamo Zagreb,2026,KR1,44,Goalkeeper,31,Croatia,5,1,0,90
+131310,Danijel Zagorac,419,GNK Dinamo Zagreb,2026,KR1,1,Goalkeeper,39,Croatia,2,0,0,0
+741258,Sergi Domínguez,419,GNK Dinamo Zagreb,2026,KR1,36,Centre-Back,21,Spain,6,4,0,255
+255906,Scott McKenna,419,GNK Dinamo Zagreb,2026,KR1,26,Centre-Back,29,Scotland,6,3,0,225
+528835,Niko Galesic,419,GNK Dinamo Zagreb,2026,KR1,15,Centre-Back,25,Croatia,5,5,1,324
+384568,Stjepan Radeljic,419,GNK Dinamo Zagreb,2026,KR1,6,Centre-Back,29,Bosnia-Herzegovina,6,4,0,360
+631222,Raúl Torrente,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Back,25,Spain,1,0,0,0
+920283,Matteo Pérez Vinlöf,419,GNK Dinamo Zagreb,2026,KR1,22,Left-Back,20,Sweden,6,5,0,394
+502686,Moris Valincic,419,GNK Dinamo Zagreb,2026,KR1,25,Right-Back,23,Croatia,6,5,0,291
+414956,Bruno Goda,419,GNK Dinamo Zagreb,2026,KR1,3,Left-Back,28,Croatia,5,2,0,146
+1107315,Noa Mikic,419,GNK Dinamo Zagreb,2026,KR1,35,Right-Back,19,Croatia,0,0,0,0
+828467,Paul Tabinas,419,GNK Dinamo Zagreb,2026,KR1,13,Right-Back,24,Philippines,6,3,0,204
+1267602,Borna Orlic,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Back,19,Croatia,0,0,0,0
+665266,Luka Stojkovic,419,GNK Dinamo Zagreb,2026,KR1,10,Attacking Midfield,22,Croatia,5,4,0,268
+387105,Luka Ivanušec,419,GNK Dinamo Zagreb,2026,KR1,17,Attacking Midfield,27,Croatia,2,2,0,51
+607814,Kirill Kravtsov,419,GNK Dinamo Zagreb,2026,KR1,5,Defensive Midfield,24,Russia,4,2,0,118
+149829,Miha Zajc,419,GNK Dinamo Zagreb,2026,KR1,8,Central Midfield,32,Slovenia,6,4,1,291
+227035,Josip Misic,419,GNK Dinamo Zagreb,2026,KR1,27,Defensive Midfield,32,Croatia,6,5,0,407
+339584,Robert Mudrazija,419,GNK Dinamo Zagreb,2026,KR1,20,Attacking Midfield,29,Croatia,4,2,1,48
+846545,Lukas Kacavenda,419,GNK Dinamo Zagreb,2026,KR1,80,Attacking Midfield,23,Croatia,6,6,1,369
+1122786,Egor Molchan,419,GNK Dinamo Zagreb,2026,KR1,0,Right Midfield,18,Belarus,0,0,0,0
+1009603,Sven Sunta,419,GNK Dinamo Zagreb,2026,KR1,41,Attacking Midfield,19,Slovenia,3,2,0,26
+1258790,Lautaro Ultra,419,GNK Dinamo Zagreb,2026,KR1,0,Defensive Midfield,19,Uruguay,0,0,0,0
+618350,Dion Beljo,419,GNK Dinamo Zagreb,2026,KR1,9,Centre-Forward,24,Croatia,5,6,7,417
+604327,Gabriel Vidovic,419,GNK Dinamo Zagreb,2026,KR1,0,Left Winger,22,Croatia,1,1,0,15
+458367,Arbër Hoxha,419,GNK Dinamo Zagreb,2026,KR1,11,Left Winger,27,Albania,6,6,1,421
+665275,Mateo Lisica,419,GNK Dinamo Zagreb,2026,KR1,21,Right Winger,23,Croatia,6,6,0,320
+1061656,Iker Almena,419,GNK Dinamo Zagreb,2026,KR1,23,Right Winger,22,Spain,2,1,0,45
+834470,Dani Rodríguez,419,GNK Dinamo Zagreb,2026,KR1,0,Right Winger,21,Spain,0,0,0,0
+1156640,Aleks Stojakovic,419,GNK Dinamo Zagreb,2026,KR1,0,Centre-Forward,22,Slovenia,0,0,0,0
+927306,Fran Topic,419,GNK Dinamo Zagreb,2026,KR1,30,Right Winger,22,Croatia,5,5,0,179
+1077674,Noah Nsoki,419,GNK Dinamo Zagreb,2026,KR1,77,Left Winger,19,France,4,0,0,0
+119150,Mislav Orsic,419,GNK Dinamo Zagreb,2026,KR1,99,Left Winger,33,Croatia,6,4,0,87
+328264,Smail Prevljak,419,GNK Dinamo Zagreb,2026,KR1,14,Centre-Forward,31,Bosnia-Herzegovina,5,4,2,141
 495320,Martin Zlomislic,144,HNK Rijeka,2025,KR1,13,Goalkeeper,26,Bosnia-Herzegovina,36,33,0,2970
 358195,David Nwolokor,144,HNK Rijeka,2025,KR1,31,Goalkeeper,29,Nigeria,0,0,0,0
 750003,Aleksa Todorovic,144,HNK Rijeka,2025,KR1,99,Goalkeeper,21,Serbia,35,3,0,270
@@ -2084,75 +2060,76 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 985103,Matej Momcilovski,144,HNK Rijeka,2025,KR1,0,Right Winger,20,North Macedonia,0,0,0,0
 46415,Duje Cop,144,HNK Rijeka,2025,KR1,9,Centre-Forward,35,Croatia,33,25,2,937
 1504764,Alasana Samateh,144,HNK Rijeka,2025,KR1,0,Centre-Forward,18,The Gambia,4,0,0,0
+341535,Igor Vekic,144,HNK Rijeka,2026,KR1,13,Goalkeeper,28,Slovenia,5,3,0,270
+358195,David Nwolokor,144,HNK Rijeka,2026,KR1,31,Goalkeeper,30,Nigeria,1,0,0,0
+750003,Aleksa Todorovic,144,HNK Rijeka,2026,KR1,99,Goalkeeper,22,Serbia,5,3,0,270
+1276587,Domagoj Ivan Maric,144,HNK Rijeka,2026,KR1,0,Goalkeeper,20,Croatia,1,0,0,0
+1342570,Vito Kovac,144,HNK Rijeka,2026,KR1,0,Goalkeeper,18,Croatia,6,0,0,0
+862744,Junior Ligue,144,HNK Rijeka,2026,KR1,0,Left-Back,21,Switzerland,0,0,0,0
+745248,Ante Orec,144,HNK Rijeka,2026,KR1,22,Right-Back,25,Croatia,6,5,0,383
+376452,Mladen Devetak,144,HNK Rijeka,2026,KR1,34,Left-Back,27,Serbia,5,5,0,212
+365107,Anel Husic,144,HNK Rijeka,2026,KR1,51,Centre-Back,25,Switzerland,6,4,0,342
+979773,Téo Barišić,144,HNK Rijeka,2026,KR1,28,Right-Back,21,Croatia,0,0,0,0
+345311,Justas Lasickas,144,HNK Rijeka,2026,KR1,23,Right-Back,28,Lithuania,6,5,1,425
+927834,Noel Bodetic,144,HNK Rijeka,2026,KR1,91,Left-Back,22,Croatia,6,0,0,0
+207025,Ante Majstorovic,144,HNK Rijeka,2026,KR1,45,Centre-Back,32,Croatia,6,6,0,540
+844946,Moreno Zivkovic,144,HNK Rijeka,2026,KR1,3,Centre-Back,22,Croatia,6,1,0,67
+1056490,Roko Valincic,144,HNK Rijeka,2026,KR1,0,Centre-Back,20,Croatia,0,0,0,0
+432758,Toni Fruk,144,HNK Rijeka,2026,KR1,10,Attacking Midfield,25,Croatia,6,6,2,451
+429987,Tiago Dantas,144,HNK Rijeka,2026,KR1,26,Central Midfield,25,Portugal,6,6,1,477
+403760,Niko Jankovic,144,HNK Rijeka,2026,KR1,4,Attacking Midfield,25,Croatia,6,5,0,330
+650966,Samuele Vignato,144,HNK Rijeka,2026,KR1,19,Attacking Midfield,22,Italy,5,4,1,283
+671538,Alfonso Barco,144,HNK Rijeka,2026,KR1,5,Defensive Midfield,24,Peru,6,4,0,203
+1009485,Branko Pavic,144,HNK Rijeka,2026,KR1,6,Defensive Midfield,19,Croatia,6,6,0,479
+293210,Amer Gojak,144,HNK Rijeka,2026,KR1,14,Attacking Midfield,29,Bosnia-Herzegovina,6,5,0,147
+580443,Ivan Cubelic,144,HNK Rijeka,2026,KR1,8,Attacking Midfield,23,Croatia,6,6,0,282
+610163,Florent Shehu,144,HNK Rijeka,2026,KR1,0,Attacking Midfield,24,Switzerland,0,0,0,0
+1523683,Talib Sibi,144,HNK Rijeka,2026,KR1,0,Attacking Midfield,19,The Gambia,0,0,0,0
+603149,Mohammad Mohebi,144,HNK Rijeka,2026,KR1,9,Left Winger,27,Iran,2,2,0,25
+963878,Daniel Adu-Adjei,144,HNK Rijeka,2026,KR1,18,Centre-Forward,21,England,6,6,3,389
+604359,Yusuf Kabadayi,144,HNK Rijeka,2026,KR1,7,Left Winger,22,Germany,5,2,0,48
+927331,Ante Matej Juric,144,HNK Rijeka,2026,KR1,77,Centre-Forward,23,Croatia,5,2,0,25
+743567,Gabriel Rukavina,144,HNK Rijeka,2026,KR1,0,Left Winger,22,Croatia,3,2,0,130
+1373497,Cherno Saho,144,HNK Rijeka,2026,KR1,0,Centre-Forward,21,The Gambia,1,0,0,0
+217751,Jakov Puljic,144,HNK Rijeka,2026,KR1,21,Centre-Forward,33,Croatia,6,4,1,157
+1523679,Goran Grulovic,144,HNK Rijeka,2026,KR1,0,Right Winger,16,Croatia,4,1,0,5
 160482,Ivica Ivusic,447,HNK Hajduk Split,2026,KR1,1,Goalkeeper,31,Croatia,2,0,0,0
-833313,Toni Silic,447,HNK Hajduk Split,2026,KR1,33,Goalkeeper,22,Croatia,6,6,0,540
-955285,Davyd Fesyuk,447,HNK Hajduk Split,2026,KR1,99,Goalkeeper,21,Ukraine,4,0,0,0
-86635,Dante Stipica,447,HNK Hajduk Split,2026,KR1,44,Goalkeeper,35,Croatia,6,0,0,0
-921553,Simun Hrgovic,447,HNK Hajduk Split,2026,KR1,32,Left-Back,22,Croatia,6,6,1,468
-307807,Dario Maresic,447,HNK Hajduk Split,2026,KR1,15,Centre-Back,26,Austria,6,5,0,397
-322065,Dennis Hadzikadunic,447,HNK Hajduk Split,2026,KR1,6,Centre-Back,28,Bosnia-Herzegovina,2,2,0,25
-892168,Luka Hodak,447,HNK Hajduk Split,2026,KR1,38,Right-Back,20,Croatia,6,3,0,173
-405892,Alec Van Hoorenbeeck,447,HNK Hajduk Split,2026,KR1,5,Centre-Back,27,Belgium,5,4,0,360
-944355,Mathieu Acapandié,447,HNK Hajduk Split,2026,KR1,22,Right-Back,21,Madagascar,5,5,0,308
-238500,Dario Melnjak,447,HNK Hajduk Split,2026,KR1,17,Left-Back,33,Croatia,6,3,0,137
-815041,Ron Raci,447,HNK Hajduk Split,2026,KR1,14,Centre-Back,23,Kosovo,6,2,0,180
+833313,Toni Silic,447,HNK Hajduk Split,2026,KR1,33,Goalkeeper,22,Croatia,7,7,0,630
+955285,Davyd Fesyuk,447,HNK Hajduk Split,2026,KR1,99,Goalkeeper,21,Ukraine,5,0,0,0
+86635,Dante Stipica,447,HNK Hajduk Split,2026,KR1,44,Goalkeeper,35,Croatia,7,0,0,0
+921553,Simun Hrgovic,447,HNK Hajduk Split,2026,KR1,32,Left-Back,22,Croatia,7,7,1,558
+307807,Dario Maresic,447,HNK Hajduk Split,2026,KR1,15,Centre-Back,26,Austria,7,6,0,487
+322065,Dennis Hadzikadunic,447,HNK Hajduk Split,2026,KR1,6,Centre-Back,28,Bosnia-Herzegovina,3,2,0,25
+892168,Luka Hodak,447,HNK Hajduk Split,2026,KR1,38,Right-Back,20,Croatia,7,3,0,173
+405892,Alec Van Hoorenbeeck,447,HNK Hajduk Split,2026,KR1,5,Centre-Back,27,Belgium,6,4,0,360
+944355,Mathieu Acapandié,447,HNK Hajduk Split,2026,KR1,22,Right-Back,21,Madagascar,6,6,0,398
+238500,Dario Melnjak,447,HNK Hajduk Split,2026,KR1,17,Left-Back,33,Croatia,7,3,0,137
+815041,Ron Raci,447,HNK Hajduk Split,2026,KR1,14,Centre-Back,23,Kosovo,7,3,0,270
 1048583,Marino Skelin,447,HNK Hajduk Split,2026,KR1,36,Centre-Back,19,Croatia,3,0,0,0
 1411272,Roko Gabric,447,HNK Hajduk Split,2026,KR1,3,Centre-Back,19,Croatia,6,2,0,135
 1137942,Duje Milisic,447,HNK Hajduk Split,2026,KR1,0,Left-Back,19,Croatia,0,0,0,0
 1587317,Raymond Anthony,447,HNK Hajduk Split,2026,KR1,0,Right-Back,20,Nigeria,0,0,0,0
 887816,Rokas Pukstas,447,HNK Hajduk Split,2026,KR1,0,Attacking Midfield,22,United States,4,3,2,270
-1045375,Niko Sigur,447,HNK Hajduk Split,2026,KR1,0,Defensive Midfield,22,Canada,2,2,0,170
+1045375,Niko Sigur,447,HNK Hajduk Split,2026,KR1,0,Defensive Midfield,23,Canada,2,2,0,170
 168157,Leander Dendoncker,447,HNK Hajduk Split,2026,KR1,0,Defensive Midfield,31,Belgium,0,0,0,0
-626301,Adrion Pajaziti,447,HNK Hajduk Split,2026,KR1,4,Defensive Midfield,23,Albania,5,5,0,427
-782630,Khalil Fayad,447,HNK Hajduk Split,2026,KR1,8,Central Midfield,22,Morocco,1,1,1,26
-635347,Alberto del Moral,447,HNK Hajduk Split,2026,KR1,20,Defensive Midfield,26,Spain,6,5,0,338
-815036,Etnik Brruti,447,HNK Hajduk Split,2026,KR1,19,Central Midfield,22,Albania,6,3,1,138
-434557,Mihael Zaper,447,HNK Hajduk Split,2026,KR1,45,Defensive Midfield,28,Croatia,0,0,0,0
-644900,Dalisson de Almeida,447,HNK Hajduk Split,2026,KR1,9,Attacking Midfield,26,Spain,6,5,0,267
-1375377,Adam Guram,447,HNK Hajduk Split,2026,KR1,26,Attacking Midfield,17,Ukraine,6,4,0,130
+626301,Adrion Pajaziti,447,HNK Hajduk Split,2026,KR1,4,Defensive Midfield,23,Albania,6,6,0,517
+782630,Khalil Fayad,447,HNK Hajduk Split,2026,KR1,8,Central Midfield,22,Morocco,2,2,1,54
+635347,Alberto del Moral,447,HNK Hajduk Split,2026,KR1,20,Defensive Midfield,26,Spain,7,6,0,400
+815036,Etnik Brruti,447,HNK Hajduk Split,2026,KR1,19,Central Midfield,22,Albania,7,3,1,138
+644900,Dalisson de Almeida,447,HNK Hajduk Split,2026,KR1,9,Attacking Midfield,26,Spain,7,6,1,357
+1375377,Adam Guram,447,HNK Hajduk Split,2026,KR1,26,Attacking Midfield,17,Ukraine,7,5,0,148
 1172614,Ivano Ora,447,HNK Hajduk Split,2026,KR1,0,Midfield,19,Croatia,0,0,0,0
-1301010,Sebastijan Kajtazi,447,HNK Hajduk Split,2026,KR1,0,Midfield,19,Croatia,0,0,0,0
-1133053,Andjelo Sutalo,447,HNK Hajduk Split,2026,KR1,16,Attacking Midfield,19,Croatia,6,4,0,244
-95438,Marko Livaja,447,HNK Hajduk Split,2026,KR1,10,Centre-Forward,33,Croatia,6,6,3,224
-371012,Michele Sego,447,HNK Hajduk Split,2026,KR1,11,Left Winger,26,Croatia,6,6,4,361
-945345,Marin Soticek,447,HNK Hajduk Split,2026,KR1,23,Left Winger,21,Croatia,6,6,2,363
-618813,Carlos Martín,447,HNK Hajduk Split,2026,KR1,77,Right Winger,24,Spain,1,1,0,26
+1133053,Andjelo Sutalo,447,HNK Hajduk Split,2026,KR1,16,Attacking Midfield,19,Croatia,7,4,0,244
+95438,Marko Livaja,447,HNK Hajduk Split,2026,KR1,10,Centre-Forward,33,Croatia,7,7,3,234
+371012,Michele Sego,447,HNK Hajduk Split,2026,KR1,11,Left Winger,26,Croatia,7,7,4,441
+945345,Marin Soticek,447,HNK Hajduk Split,2026,KR1,23,Left Winger,21,Croatia,7,7,2,425
+618813,Carlos Martín,447,HNK Hajduk Split,2026,KR1,77,Right Winger,24,Spain,2,2,0,54
 724273,Roko Brajkovic,447,HNK Hajduk Split,2026,KR1,28,Right Winger,21,Croatia,0,0,0,0
-693906,Abdoulie Sanyang,447,HNK Hajduk Split,2026,KR1,7,Right Winger,27,The Gambia,6,6,1,233
+693906,Abdoulie Sanyang,447,HNK Hajduk Split,2026,KR1,7,Right Winger,27,The Gambia,7,7,1,305
 892179,Dominik Babic,447,HNK Hajduk Split,2026,KR1,0,Right Winger,20,Croatia,0,0,0,0
+1301010,Sebastijan Kajtazi,447,HNK Hajduk Split,2026,KR1,0,Right Winger,19,Croatia,0,0,0,0
 1305641,Duje Pranic,447,HNK Hajduk Split,2026,KR1,0,Right Winger,19,Croatia,0,0,0,0
 1506539,Peter Nnaemeka Ugwuodo,447,HNK Hajduk Split,2026,KR1,42,Centre-Forward,20,Nigeria,0,0,0,0
-244260,Robby McCrorie,599,NK Varazdin,2026,KR1,1,Goalkeeper,28,Scotland,2,0,0,0
-131330,Oliver Zelenika,599,NK Varazdin,2026,KR1,0,Goalkeeper,33,Croatia,4,0,0,0
-543098,Josip Silic,599,NK Varazdin,2026,KR1,33,Goalkeeper,26,Croatia,6,6,0,540
-1088886,Teo Novak,599,NK Varazdin,2026,KR1,0,Goalkeeper,19,Croatia,0,0,0,0
-340775,Frane Maglica,599,NK Varazdin,2026,KR1,23,Right-Back,29,Croatia,6,6,0,503
-619277,Luka Skaricic,599,NK Varazdin,2026,KR1,4,Centre-Back,24,Croatia,6,4,0,136
-1173480,Sven Lesjak,599,NK Varazdin,2026,KR1,5,Centre-Back,20,Croatia,6,1,0,5
-292666,Petar Bockaj,599,NK Varazdin,2026,KR1,12,Left-Back,30,Croatia,5,0,0,0
-808070,Novak Tepsic,599,NK Varazdin,2026,KR1,16,Centre-Back,24,Croatia,6,6,0,429
-329629,Mateo Barac,599,NK Varazdin,2026,KR1,44,Centre-Back,32,Croatia,1,0,0,0
-570787,Mario Mladenovski,599,NK Varazdin,2026,KR1,13,Centre-Back,25,North Macedonia,6,6,2,495
-941457,Luka Posinkovic,599,NK Varazdin,2026,KR1,30,Right-Back,23,Croatia,6,2,0,37
-224892,Gregor Sikosek,599,NK Varazdin,2026,KR1,20,Left-Back,32,Slovenia,6,6,0,462
-429390,Elvir Durakovic,599,NK Varazdin,2026,KR1,3,Left-Back,26,Bosnia-Herzegovina,4,2,0,53
-1079530,Domagoj Begonja,599,NK Varazdin,2026,KR1,29,Left-Back,21,Croatia,0,0,0,0
-92120,Roberto Puncec,599,NK Varazdin,2026,KR1,14,Centre-Back,34,Croatia,2,2,0,62
-530038,Aleksa Latkovic,599,NK Varazdin,2026,KR1,10,Attacking Midfield,25,Montenegro,6,6,2,468
-921790,Luka Mamic,599,NK Varazdin,2026,KR1,22,Attacking Midfield,24,Croatia,6,6,2,522
-580482,Tomislav Duvnjak,599,NK Varazdin,2026,KR1,8,Defensive Midfield,23,Croatia,6,6,0,107
-197078,David Puclin,599,NK Varazdin,2026,KR1,6,Defensive Midfield,34,Croatia,4,1,0,18
-652758,Silvio Ilinkovic,599,NK Varazdin,2026,KR1,15,Central Midfield,23,Bosnia-Herzegovina,1,0,0,0
-206939,Mario Marina,599,NK Varazdin,2026,KR1,24,Defensive Midfield,37,Bosnia-Herzegovina,6,6,0,433
-458540,Ivan Posavec,599,NK Varazdin,2026,KR1,21,Attacking Midfield,28,Croatia,6,1,0,25
-898936,Tajio James,599,NK Varazdin,2026,KR1,0,Attacking Midfield,22,Barbados,0,0,0,0
-549016,Iuri Tavares,599,NK Varazdin,2026,KR1,38,Left Winger,25,Cape Verde,6,6,0,458
-371004,Matej Vuk,599,NK Varazdin,2026,KR1,7,Left Winger,26,Croatia,6,5,0,129
-446996,Ivan Mamut,599,NK Varazdin,2026,KR1,17,Centre-Forward,29,Croatia,5,5,2,404
-982829,Ivan Canjuga,599,NK Varazdin,2026,KR1,28,Left Winger,20,Croatia,6,6,3,540
-465593,Stipe Juric,599,NK Varazdin,2026,KR1,9,Centre-Forward,27,Bosnia-Herzegovina,6,2,0,67
-1522139,Filipe Jose Quissequel,599,NK Varazdin,2026,KR1,0,Attack,18,Angola,2,0,0,0
-869522,Emmanuel Uchegbu,599,NK Varazdin,2026,KR1,11,Right Winger,21,Nigeria,6,4,0,48
 131330,Oliver Zelenika,599,NK Varazdin,2025,KR1,1,Goalkeeper,32,Croatia,35,32,0,2880
 543098,Josip Silic,599,NK Varazdin,2025,KR1,33,Goalkeeper,25,Croatia,34,4,0,360
 1088886,Teo Novak,599,NK Varazdin,2025,KR1,0,Goalkeeper,17,Croatia,5,0,0,0
@@ -2176,153 +2153,27 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 921790,Luka Mamic,599,NK Varazdin,2025,KR1,22,Attacking Midfield,22,Croatia,31,30,8,2099
 580482,Tomislav Duvnjak,599,NK Varazdin,2025,KR1,8,Defensive Midfield,22,Croatia,34,34,1,2598
 844375,Leon Belcar,599,NK Varazdin,2025,KR1,0,Defensive Midfield,23,Croatia,16,16,1,1117
+982829,Ivan Canjuga,599,NK Varazdin,2025,KR1,28,Defensive Midfield,19,Croatia,18,17,0,802
 197078,David Puclin,599,NK Varazdin,2025,KR1,6,Defensive Midfield,33,Croatia,31,22,1,782
-652758,Silvio Ilinkovic,599,NK Varazdin,2025,KR1,15,Central Midfield,22,Bosnia-Herzegovina,12,10,0,190
+652758,Silvio Ilinkovic,599,NK Varazdin,2025,KR1,15,Central Midfield,22,Bosnia-Herzegovina,12,10,0,189
 206939,Mario Marina,599,NK Varazdin,2025,KR1,24,Defensive Midfield,35,Bosnia-Herzegovina,33,27,1,1549
 898936,Tajio James,599,NK Varazdin,2025,KR1,0,Attacking Midfield,21,Barbados,0,0,0,0
 549016,Iuri Tavares,599,NK Varazdin,2025,KR1,38,Left Winger,24,Cape Verde,32,31,6,2065
 371004,Matej Vuk,599,NK Varazdin,2025,KR1,7,Left Winger,25,Croatia,29,29,3,1700
 446996,Ivan Mamut,599,NK Varazdin,2025,KR1,17,Centre-Forward,28,Croatia,28,25,9,1564
 530115,Rüfat Abdullazada,599,NK Varazdin,2025,KR1,0,Right Winger,24,Azerbaijan,17,9,0,357
-982829,Ivan Canjuga,599,NK Varazdin,2025,KR1,28,Left Winger,19,Croatia,18,17,0,802
 226065,Marko Dabro,599,NK Varazdin,2025,KR1,0,Centre-Forward,28,Croatia,16,8,0,150
 921551,Mate Antunovic,599,NK Varazdin,2025,KR1,0,Centre-Forward,21,Croatia,22,9,0,176
 465593,Stipe Juric,599,NK Varazdin,2025,KR1,9,Centre-Forward,26,Bosnia-Herzegovina,7,6,1,172
 723701,Atdhe Mazari,599,NK Varazdin,2025,KR1,0,Right Winger,24,Albania,2,0,0,0
 1522139,Filipe Jose Quissequel,599,NK Varazdin,2025,KR1,0,Attack,16,Angola,10,3,0,16
-179894,Marko Malenica,327,NK Osijek,2025,KR1,31,Goalkeeper,31,Croatia,34,30,0,2700
-768378,Nikola Curcija,327,NK Osijek,2025,KR1,1,Goalkeeper,24,Canada,36,5,0,450
-892142,Jan Hlapcic,327,NK Osijek,2025,KR1,20,Goalkeeper,19,Croatia,6,0,0,0
-1071989,Matej Grahovac,327,NK Osijek,2025,KR1,0,Goalkeeper,17,Croatia,8,1,0,90
-370999,Luka Jelenic,327,NK Osijek,2025,KR1,26,Centre-Back,25,Croatia,34,28,3,2360
-570721,Roko Jurisic,327,NK Osijek,2025,KR1,22,Left-Back,23,Croatia,19,19,0,1232
-371000,David Colina,327,NK Osijek,2025,KR1,38,Left-Back,24,Croatia,33,29,0,1954
-623119,Styopa Mkrtchyan,327,NK Osijek,2025,KR1,0,Centre-Back,22,Armenia,18,17,0,1169
-367795,Fran Karacic,327,NK Osijek,2025,KR1,29,Right-Back,29,Australia,12,11,1,908
-39125,Borna Barisic,327,NK Osijek,2025,KR1,3,Left-Back,32,Croatia,11,10,0,620
-540935,Jon Mersinaj,327,NK Osijek,2025,KR1,15,Centre-Back,26,Albania,25,19,0,909
-615235,Emin Hasic,327,NK Osijek,2025,KR1,33,Centre-Back,22,Sweden,28,20,0,1341
-1133007,Ivano Kolarik,327,NK Osijek,2025,KR1,49,Centre-Back,18,Croatia,29,8,0,449
-984912,Kresimir Vrbanac,327,NK Osijek,2025,KR1,4,Centre-Back,20,Croatia,15,0,0,0
-744078,Ivan Cvijanovic,327,NK Osijek,2025,KR1,0,Left-Back,21,Croatia,18,10,0,570
-646361,Renan Guedes,327,NK Osijek,2025,KR1,42,Right-Back,27,Brazil,29,22,0,1550
-1304680,Frane Nekic,327,NK Osijek,2025,KR1,0,Defender,17,Croatia,1,0,0,0
-1525438,Luka Posavec,327,NK Osijek,2025,KR1,0,Right-Back,16,Croatia,2,0,0,0
-1468846,David Kalem,327,NK Osijek,2025,KR1,0,Left-Back,16,Croatia,1,1,0,69
-1300175,Simun Begovic,327,NK Osijek,2025,KR1,0,Centre-Back,18,Croatia,1,0,0,0
-403723,Hrvoje Babec,327,NK Osijek,2025,KR1,0,Defensive Midfield,25,Croatia,15,15,1,1093
-946959,Luka Vrbancic,327,NK Osijek,2025,KR1,23,Attacking Midfield,19,Croatia,18,17,0,945
-461657,Oleksandr Petrusenko,327,NK Osijek,2025,KR1,16,Defensive Midfield,27,Ukraine,31,24,0,1485
-489824,Vladan Bubanja,327,NK Osijek,2025,KR1,21,Defensive Midfield,26,Montenegro,17,17,2,1256
-895515,Simun Mikolcic,327,NK Osijek,2025,KR1,8,Attacking Midfield,21,Croatia,29,27,2,1205
-486813,Stanislav Shopov,327,NK Osijek,2025,KR1,10,Attacking Midfield,23,Bulgaria,14,13,0,689
-510241,Tonio Teklic,327,NK Osijek,2025,KR1,99,Attacking Midfield,25,Croatia,16,13,0,834
-990110,David Mejía,327,NK Osijek,2025,KR1,6,Defensive Midfield,22,Colombia,14,11,0,741
-1207178,Fran Pecek,327,NK Osijek,2025,KR1,0,Attacking Midfield,18,Croatia,8,1,0,24
-1468844,Jona Jezic,327,NK Osijek,2025,KR1,0,Attacking Midfield,16,Croatia,7,3,0,66
-1271373,Niko Farkas,327,NK Osijek,2025,KR1,18,Defensive Midfield,18,Croatia,21,7,1,254
-49929,Vedran Jugovic,327,NK Osijek,2025,KR1,0,Central Midfield,35,Croatia,11,8,0,303
-797824,Nail Omerovic,327,NK Osijek,2025,KR1,11,Left Winger,22,Bosnia-Herzegovina,35,35,9,2696
-1121427,Anton Matkovic,327,NK Osijek,2025,KR1,34,Centre-Forward,19,Croatia,17,17,1,999
-1012052,Samuel Akere,327,NK Osijek,2025,KR1,57,Right Winger,21,Nigeria,18,18,3,979
-268426,Arnel Jakupovic,327,NK Osijek,2025,KR1,17,Centre-Forward,27,Austria,32,30,3,2180
-921251,Domagoj Bukvic,327,NK Osijek,2025,KR1,39,Right Winger,21,Croatia,36,34,0,1919
-1056459,Filip Zivkovic,327,NK Osijek,2025,KR1,0,Right Winger,18,Croatia,14,10,0,282
-421824,Yannick Toure,327,NK Osijek,2025,KR1,9,Centre-Forward,24,Switzerland,12,11,0,498
-1468849,Jakov Dedic,327,NK Osijek,2025,KR1,0,Centre-Forward,15,Croatia,11,3,0,26
-1172610,Ivan Baric,327,NK Osijek,2025,KR1,46,Centre-Forward,18,Croatia,21,10,0,225
-699784,Justice Ohajunwa,327,NK Osijek,2025,KR1,0,Centre-Forward,24,Nigeria,1,0,0,0
-1173837,Milos Jovicic,327,NK Osijek,2025,KR1,98,Left Winger,19,Croatia,24,12,1,476
-333161,Kemal Ademi,327,NK Osijek,2025,KR1,0,Centre-Forward,29,Switzerland,0,0,0,0
-1071641,Marino Zeravica,327,NK Osijek,2025,KR1,0,Centre-Forward,19,Croatia,5,0,0,0
-255322,Josip Posavec,11194,NK Lokomotiva Zagreb,2026,KR1,12,Goalkeeper,30,Croatia,5,5,0,450
-1046001,Luka Savatovic,11194,NK Lokomotiva Zagreb,2026,KR1,32,Goalkeeper,22,Croatia,5,0,0,0
-46560,Krunoslav Hendija,11194,NK Lokomotiva Zagreb,2026,KR1,1,Goalkeeper,37,Croatia,0,0,0,0
-367795,Fran Karacic,11194,NK Lokomotiva Zagreb,2026,KR1,13,Right-Back,30,Australia,1,1,0,67
-528211,Tino Jukic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Centre-Back,24,Croatia,4,3,0,270
-985061,Jakov Gurlica,11194,NK Lokomotiva Zagreb,2026,KR1,2,Centre-Back,22,Croatia,1,0,0,0
-355651,Marijan Cabraja,11194,NK Lokomotiva Zagreb,2026,KR1,5,Left-Back,29,Croatia,0,0,0,0
-465565,Dimitrije Kamenovic,11194,NK Lokomotiva Zagreb,2026,KR1,33,Left-Back,26,Serbia,0,0,0,0
-1009494,Ante Utrobicic,11194,NK Lokomotiva Zagreb,2026,KR1,33,Left-Back,20,Croatia,0,0,0,0
-945348,Kristijan Cabrajic,11194,NK Lokomotiva Zagreb,2026,KR1,20,Left-Back,22,Croatia,5,2,0,180
-940526,Athanasios Triantafyllou,11194,NK Lokomotiva Zagreb,2026,KR1,4,Centre-Back,23,Greece,5,5,1,450
-940800,Franjo Posavac,11194,NK Lokomotiva Zagreb,2026,KR1,19,Right-Back,24,Croatia,0,0,0,0
-190634,Marko Pajac,11194,NK Lokomotiva Zagreb,2026,KR1,17,Left-Back,33,Croatia,3,3,0,270
-98101,Marko Vesovic,11194,NK Lokomotiva Zagreb,2026,KR1,23,Right-Back,35,Montenegro,2,2,0,162
-1151871,Noa Godec,11194,NK Lokomotiva Zagreb,2026,KR1,27,Left-Back,19,Croatia,5,2,0,135
-1072020,Petar Zvonimir Kostelac,11194,NK Lokomotiva Zagreb,2026,KR1,0,Right-Back,18,Croatia,0,0,0,0
-855614,Mody Boune,11194,NK Lokomotiva Zagreb,2026,KR1,13,Right-Back,24,France,0,0,0,0
-138741,Mario Situm,11194,NK Lokomotiva Zagreb,2026,KR1,18,Right-Back,34,Croatia,0,0,0,0
-1374904,Teodor Kralevski,11194,NK Lokomotiva Zagreb,2026,KR1,21,Centre-Back,19,Croatia,4,4,0,148
-1133009,Roko Pavlovic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Left-Back,19,Croatia,0,0,0,0
-1474152,Lorenzo,11194,NK Lokomotiva Zagreb,2026,KR1,0,Centre-Back,19,Brazil,0,0,0,0
-1133013,Matija Subotic,11194,NK Lokomotiva Zagreb,2026,KR1,10,Defensive Midfield,18,Croatia,5,5,0,427
-844375,Leon Belcar,11194,NK Lokomotiva Zagreb,2026,KR1,9,Defensive Midfield,24,Croatia,4,4,0,124
-1059579,Feta Fetai,11194,NK Lokomotiva Zagreb,2026,KR1,6,Defensive Midfield,21,Albania,5,1,0,23
-914997,Erbol Atabaev,11194,NK Lokomotiva Zagreb,2026,KR1,0,Central Midfield,25,Kyrgyzstan,0,0,0,0
-1173856,Ivan Katic,11194,NK Lokomotiva Zagreb,2026,KR1,8,Defensive Midfield,20,Croatia,4,4,1,305
-618353,Jakov-Anton Vasilj,11194,NK Lokomotiva Zagreb,2026,KR1,29,Attacking Midfield,24,Croatia,5,5,0,280
-1160173,Dardan Morina,11194,NK Lokomotiva Zagreb,2026,KR1,26,Attacking Midfield,20,Kosovo,4,1,0,8
-1072018,Pavle Smiljanic,11194,NK Lokomotiva Zagreb,2026,KR1,25,Central Midfield,18,Croatia,2,2,0,63
-317482,Marko Rog,11194,NK Lokomotiva Zagreb,2026,KR1,26,Central Midfield,31,Croatia,0,0,0,0
-996391,Marcel Lorber,11194,NK Lokomotiva Zagreb,2026,KR1,14,Central Midfield,22,Slovenia,5,5,0,232
-1151872,Anes Huskic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attacking Midfield,19,Croatia,0,0,0,0
-892172,Duje Reic,11194,NK Lokomotiva Zagreb,2026,KR1,30,Central Midfield,20,Croatia,5,1,0,23
-1304683,Leni Peternac,11194,NK Lokomotiva Zagreb,2026,KR1,0,Midfield,19,Croatia,0,0,0,0
-747417,Dusan Vukovic,11194,NK Lokomotiva Zagreb,2026,KR1,7,Left Winger,24,Montenegro,5,5,2,439
-1045530,Mirko Susak,11194,NK Lokomotiva Zagreb,2026,KR1,0,Left Winger,22,Croatia,3,3,0,195
-215649,Mirko Marić,11194,NK Lokomotiva Zagreb,2026,KR1,24,Centre-Forward,31,Croatia,4,3,1,231
-1277268,Dominik Thaqi,11194,NK Lokomotiva Zagreb,2026,KR1,15,Right Winger,19,Croatia,5,5,0,151
-921551,Mate Antunovic,11194,NK Lokomotiva Zagreb,2026,KR1,22,Centre-Forward,22,Croatia,5,2,0,43
-1267443,Noel Djurkovic,11194,NK Lokomotiva Zagreb,2026,KR1,28,Centre-Forward,19,Croatia,5,4,1,128
-1406422,Amad Keita,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,20,Senegal,0,0,0,0
-945318,Marko Batur,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,22,Croatia,0,0,0,0
-1335665,Armando Pernar,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,19,Croatia,0,0,0,0
-1370309,Kayke,11194,NK Lokomotiva Zagreb,2026,KR1,16,Left Winger,19,Brazil,3,2,0,69
-179894,Marko Malenica,327,NK Osijek,2026,KR1,31,Goalkeeper,32,Croatia,6,6,0,540
-768378,Nikola Curcija,327,NK Osijek,2026,KR1,1,Goalkeeper,25,Canada,6,0,0,0
-892142,Jan Hlapcic,327,NK Osijek,2026,KR1,20,Goalkeeper,20,Croatia,0,0,0,0
-370999,Luka Jelenic,327,NK Osijek,2026,KR1,26,Centre-Back,26,Croatia,6,6,0,495
-570721,Roko Jurisic,327,NK Osijek,2026,KR1,0,Left-Back,24,Croatia,5,5,0,406
-533172,Jay Kruiver,327,NK Osijek,2026,KR1,0,Right-Back,25,Netherlands,0,0,0,0
-39125,Borna Barisic,327,NK Osijek,2026,KR1,0,Left-Back,33,Croatia,0,0,0,0
-540935,Jon Mersinaj,327,NK Osijek,2026,KR1,15,Centre-Back,27,Albania,2,0,0,0
-615235,Emin Hasic,327,NK Osijek,2026,KR1,33,Centre-Back,23,Sweden,5,3,0,46
-1133007,Ivano Kolarik,327,NK Osijek,2026,KR1,49,Centre-Back,19,Croatia,6,6,0,508
-805121,Senad Mustafic,327,NK Osijek,2026,KR1,77,Right-Back,21,Bosnia-Herzegovina,5,5,0,347
-109830,Marcel Heister,327,NK Osijek,2026,KR1,2,Left-Back,34,Germany,5,4,0,209
-646361,Renan Guedes,327,NK Osijek,2026,KR1,42,Right-Back,28,Brazil,0,0,0,0
-1468846,David Kalem,327,NK Osijek,2026,KR1,0,Left-Back,18,Croatia,5,2,0,64
-1525438,Luka Posavec,327,NK Osijek,2026,KR1,0,Right-Back,17,Croatia,4,2,0,50
-1407860,Izak Jezic,327,NK Osijek,2026,KR1,0,Centre-Back,16,Croatia,1,1,0,32
-946959,Luka Vrbancic,327,NK Osijek,2026,KR1,23,Attacking Midfield,21,Croatia,6,6,0,540
-461657,Oleksandr Petrusenko,327,NK Osijek,2026,KR1,16,Defensive Midfield,28,Ukraine,6,1,0,45
-895515,Simun Mikolcic,327,NK Osijek,2026,KR1,8,Attacking Midfield,22,Croatia,6,6,0,237
-990110,David Mejía,327,NK Osijek,2026,KR1,6,Defensive Midfield,23,Colombia,0,0,0,0
-982366,Vito Caic,327,NK Osijek,2026,KR1,13,Defensive Midfield,21,Croatia,2,0,0,0
-648899,Balázs Bakti,327,NK Osijek,2026,KR1,67,Attacking Midfield,21,Hungary,5,2,0,30
-1271373,Niko Farkas,327,NK Osijek,2026,KR1,18,Defensive Midfield,19,Croatia,6,1,0,16
-1468844,Jona Jezic,327,NK Osijek,2026,KR1,48,Attacking Midfield,17,Croatia,5,5,2,290
-797824,Nail Omerovic,327,NK Osijek,2026,KR1,0,Left Winger,23,Bosnia-Herzegovina,5,5,5,390
-1121427,Anton Matkovic,327,NK Osijek,2026,KR1,34,Centre-Forward,20,Croatia,0,0,0,0
-554565,Ivan Dolcek,327,NK Osijek,2026,KR1,7,Left Winger,26,Croatia,6,6,1,331
-268426,Arnel Jakupovic,327,NK Osijek,2026,KR1,0,Centre-Forward,28,Austria,4,4,2,114
-921251,Domagoj Bukvic,327,NK Osijek,2026,KR1,39,Right Winger,22,Croatia,6,6,0,495
-421824,Yannick Toure,327,NK Osijek,2026,KR1,9,Centre-Forward,25,Switzerland,0,0,0,0
-760988,Armando León,327,NK Osijek,2026,KR1,79,Centre-Forward,26,Mexico,6,6,3,462
-1173841,Mateo Bacic,327,NK Osijek,2026,KR1,0,Centre-Forward,21,Croatia,0,0,0,0
-1172610,Ivan Baric,327,NK Osijek,2026,KR1,46,Centre-Forward,19,Croatia,2,1,0,25
-1173837,Milos Jovicic,327,NK Osijek,2026,KR1,0,Left Winger,20,Croatia,4,0,0,0
-699784,Justice Ohajunwa,327,NK Osijek,2026,KR1,0,Centre-Forward,25,Nigeria,0,0,0,0
-1183763,Admir Ljatifi,327,NK Osijek,2026,KR1,30,Left Winger,19,North Macedonia,6,4,0,150
-1063934,Balelo,327,NK Osijek,2026,KR1,99,Centre-Forward,24,Portugal,6,3,0,63
 255322,Josip Posavec,11194,NK Lokomotiva Zagreb,2025,KR1,12,Goalkeeper,29,Croatia,36,33,0,2970
 360677,Zvonimir Subaric,11194,NK Lokomotiva Zagreb,2025,KR1,0,Goalkeeper,28,Croatia,4,0,0,0
 1046001,Luka Savatovic,11194,NK Lokomotiva Zagreb,2025,KR1,32,Goalkeeper,20,Croatia,26,3,0,270
 46560,Krunoslav Hendija,11194,NK Lokomotiva Zagreb,2025,KR1,1,Goalkeeper,36,Croatia,7,0,0,0
 1284131,Maroje Kostopec,11194,NK Lokomotiva Zagreb,2025,KR1,0,Goalkeeper,18,Croatia,7,0,0,0
 1371221,Cheikh Mbacké Diop,11194,NK Lokomotiva Zagreb,2025,KR1,0,Centre-Back,19,Senegal,21,21,1,1754
-528211,Tino Jukic,11194,NK Lokomotiva Zagreb,2025,KR1,5,Centre-Back,23,Croatia,33,30,0,2335
+528211,Tino Jukic,11194,NK Lokomotiva Zagreb,2025,KR1,5,Centre-Back,23,Croatia,33,30,0,2336
 809157,Luka Dajcer,11194,NK Lokomotiva Zagreb,2025,KR1,16,Left-Back,24,Croatia,32,23,0,1370
 90725,Denis Kolinger,11194,NK Lokomotiva Zagreb,2025,KR1,20,Centre-Back,31,Croatia,31,30,0,2691
 465565,Dimitrije Kamenovic,11194,NK Lokomotiva Zagreb,2025,KR1,33,Left-Back,24,Serbia,18,11,0,656
@@ -2345,6 +2196,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 844375,Leon Belcar,11194,NK Lokomotiva Zagreb,2025,KR1,28,Defensive Midfield,23,Croatia,14,14,2,1026
 602906,Blaz Boskovic,11194,NK Lokomotiva Zagreb,2025,KR1,6,Defensive Midfield,23,Bosnia-Herzegovina,34,33,3,2456
 1173856,Ivan Katic,11194,NK Lokomotiva Zagreb,2025,KR1,24,Defensive Midfield,19,Croatia,21,20,0,1117
+982829,Ivan Canjuga,11194,NK Lokomotiva Zagreb,2025,KR1,0,Defensive Midfield,19,Croatia,10,4,0,97
 618353,Jakov-Anton Vasilj,11194,NK Lokomotiva Zagreb,2025,KR1,29,Attacking Midfield,23,Croatia,28,25,3,1366
 1072018,Pavle Smiljanic,11194,NK Lokomotiva Zagreb,2025,KR1,25,Central Midfield,17,Croatia,11,6,0,246
 317482,Marko Rog,11194,NK Lokomotiva Zagreb,2025,KR1,26,Central Midfield,29,Croatia,4,2,0,7
@@ -2354,12 +2206,11 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 892172,Duje Reic,11194,NK Lokomotiva Zagreb,2025,KR1,0,Central Midfield,19,Croatia,0,0,0,0
 48810,Domagoj Antolic,11194,NK Lokomotiva Zagreb,2025,KR1,8,Central Midfield,35,Croatia,20,13,1,611
 1156640,Aleks Stojakovic,11194,NK Lokomotiva Zagreb,2025,KR1,15,Centre-Forward,21,Slovenia,34,34,8,2616
-747417,Dusan Vukovic,11194,NK Lokomotiva Zagreb,2025,KR1,30,Left Winger,22,Montenegro,28,27,3,1666
+747417,Dusan Vukovic,11194,NK Lokomotiva Zagreb,2025,KR1,30,Left Winger,22,Montenegro,28,26,3,1621
 892185,Bartol Kardum,11194,NK Lokomotiva Zagreb,2025,KR1,0,Centre-Forward,18,Croatia,0,0,0,0
 393825,Silvio Gorican,11194,NK Lokomotiva Zagreb,2025,KR1,0,Left Winger,25,Croatia,8,5,0,80
 1142382,Ibrahim Sabra,11194,NK Lokomotiva Zagreb,2025,KR1,9,Centre-Forward,19,Jordan,13,13,2,707
 1045530,Mirko Susak,11194,NK Lokomotiva Zagreb,2025,KR1,11,Left Winger,21,Croatia,30,25,3,923
-982829,Ivan Canjuga,11194,NK Lokomotiva Zagreb,2025,KR1,0,Left Winger,19,Croatia,10,4,0,97
 142920,Aleksandar Trajkovski,11194,NK Lokomotiva Zagreb,2025,KR1,7,Left Winger,32,North Macedonia,14,10,1,526
 841108,David Virgili,11194,NK Lokomotiva Zagreb,2025,KR1,21,Right Winger,26,Spain,20,5,1,156
 393831,Denis Busnja,11194,NK Lokomotiva Zagreb,2025,KR1,0,Left Winger,25,Croatia,4,0,0,0
@@ -2368,33 +2219,113 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 945318,Marko Batur,11194,NK Lokomotiva Zagreb,2025,KR1,0,Attack,21,Croatia,0,0,0,0
 433601,Hubert Sobol,11194,NK Lokomotiva Zagreb,2025,KR1,0,Centre-Forward,25,Poland,11,9,0,136
 1174846,Fran Knezevic,11194,NK Lokomotiva Zagreb,2025,KR1,0,Attack,18,Croatia,0,0,0,0
-663899,Franko Kolic,999,NK Istra 1961,2026,KR1,1,Goalkeeper,23,Croatia,6,6,0,540
-830280,Jan Paus-Kunst,999,NK Istra 1961,2026,KR1,40,Goalkeeper,25,Croatia,6,0,0,0
-1137273,Raul Kumar,999,NK Istra 1961,2026,KR1,4,Centre-Back,18,Croatia,5,4,0,284
-318829,Advan Kadusic,999,NK Istra 1961,2026,KR1,97,Right-Back,28,Bosnia-Herzegovina,6,5,0,115
+244260,Robby McCrorie,599,NK Varazdin,2026,KR1,1,Goalkeeper,28,Scotland,2,0,0,0
+131330,Oliver Zelenika,599,NK Varazdin,2026,KR1,0,Goalkeeper,33,Croatia,4,0,0,0
+543098,Josip Silic,599,NK Varazdin,2026,KR1,33,Goalkeeper,26,Croatia,6,6,0,540
+1088886,Teo Novak,599,NK Varazdin,2026,KR1,0,Goalkeeper,19,Croatia,0,0,0,0
+340775,Frane Maglica,599,NK Varazdin,2026,KR1,23,Right-Back,29,Croatia,6,6,0,503
+619277,Luka Skaricic,599,NK Varazdin,2026,KR1,4,Centre-Back,24,Croatia,6,4,0,136
+1173480,Sven Lesjak,599,NK Varazdin,2026,KR1,5,Centre-Back,20,Croatia,6,1,0,5
+292666,Petar Bockaj,599,NK Varazdin,2026,KR1,12,Left-Back,30,Croatia,5,0,0,0
+808070,Novak Tepsic,599,NK Varazdin,2026,KR1,16,Centre-Back,24,Croatia,6,6,0,429
+329629,Mateo Barac,599,NK Varazdin,2026,KR1,44,Centre-Back,32,Croatia,1,0,0,0
+570787,Mario Mladenovski,599,NK Varazdin,2026,KR1,13,Centre-Back,25,North Macedonia,6,6,2,495
+941457,Luka Posinkovic,599,NK Varazdin,2026,KR1,30,Right-Back,23,Croatia,6,2,0,37
+224892,Gregor Sikosek,599,NK Varazdin,2026,KR1,20,Left-Back,32,Slovenia,6,6,0,462
+429390,Elvir Durakovic,599,NK Varazdin,2026,KR1,3,Left-Back,26,Bosnia-Herzegovina,4,2,0,53
+1079530,Domagoj Begonja,599,NK Varazdin,2026,KR1,29,Left-Back,21,Croatia,0,0,0,0
+92120,Roberto Puncec,599,NK Varazdin,2026,KR1,14,Centre-Back,34,Croatia,2,2,0,62
+530038,Aleksa Latkovic,599,NK Varazdin,2026,KR1,10,Attacking Midfield,25,Montenegro,6,6,2,468
+921790,Luka Mamic,599,NK Varazdin,2026,KR1,22,Attacking Midfield,24,Croatia,6,6,2,522
+580482,Tomislav Duvnjak,599,NK Varazdin,2026,KR1,8,Defensive Midfield,23,Croatia,6,6,0,107
+982829,Ivan Canjuga,599,NK Varazdin,2026,KR1,28,Defensive Midfield,20,Croatia,6,6,3,540
+197078,David Puclin,599,NK Varazdin,2026,KR1,6,Defensive Midfield,34,Croatia,4,1,0,18
+652758,Silvio Ilinkovic,599,NK Varazdin,2026,KR1,15,Central Midfield,23,Bosnia-Herzegovina,1,0,0,0
+206939,Mario Marina,599,NK Varazdin,2026,KR1,24,Defensive Midfield,37,Bosnia-Herzegovina,6,6,0,433
+458540,Ivan Posavec,599,NK Varazdin,2026,KR1,21,Attacking Midfield,28,Croatia,6,1,0,25
+898936,Tajio James,599,NK Varazdin,2026,KR1,0,Attacking Midfield,22,Barbados,0,0,0,0
+549016,Iuri Tavares,599,NK Varazdin,2026,KR1,38,Left Winger,25,Cape Verde,6,6,0,458
+446996,Ivan Mamut,599,NK Varazdin,2026,KR1,0,Centre-Forward,29,Croatia,5,5,2,404
+371004,Matej Vuk,599,NK Varazdin,2026,KR1,7,Left Winger,26,Croatia,6,5,0,129
+465593,Stipe Juric,599,NK Varazdin,2026,KR1,9,Centre-Forward,27,Bosnia-Herzegovina,6,2,0,67
+1522139,Filipe Jose Quissequel,599,NK Varazdin,2026,KR1,0,Attack,18,Angola,2,0,0,0
+602619,Valentin Akrap,599,NK Varazdin,2026,KR1,0,Centre-Forward,23,Croatia,0,0,0,0
+869522,Emmanuel Uchegbu,599,NK Varazdin,2026,KR1,11,Right Winger,21,Nigeria,6,4,0,48
+255322,Josip Posavec,11194,NK Lokomotiva Zagreb,2026,KR1,12,Goalkeeper,30,Croatia,7,7,0,630
+1046001,Luka Savatovic,11194,NK Lokomotiva Zagreb,2026,KR1,32,Goalkeeper,22,Croatia,7,0,0,0
+46560,Krunoslav Hendija,11194,NK Lokomotiva Zagreb,2026,KR1,1,Goalkeeper,37,Croatia,0,0,0,0
+367795,Fran Karacic,11194,NK Lokomotiva Zagreb,2026,KR1,13,Right-Back,30,Australia,3,3,0,247
+528211,Tino Jukic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Centre-Back,24,Croatia,4,3,0,270
+985061,Jakov Gurlica,11194,NK Lokomotiva Zagreb,2026,KR1,2,Centre-Back,22,Croatia,3,1,0,28
+355651,Marijan Cabraja,11194,NK Lokomotiva Zagreb,2026,KR1,5,Left-Back,29,Croatia,2,2,0,180
+465565,Dimitrije Kamenovic,11194,NK Lokomotiva Zagreb,2026,KR1,33,Left-Back,26,Serbia,0,0,0,0
+1009494,Ante Utrobicic,11194,NK Lokomotiva Zagreb,2026,KR1,33,Left-Back,20,Croatia,0,0,0,0
+945348,Kristijan Cabrajic,11194,NK Lokomotiva Zagreb,2026,KR1,20,Left-Back,22,Croatia,7,4,0,360
+940526,Athanasios Triantafyllou,11194,NK Lokomotiva Zagreb,2026,KR1,4,Centre-Back,23,Greece,7,7,1,602
+940800,Franjo Posavac,11194,NK Lokomotiva Zagreb,2026,KR1,19,Right-Back,24,Croatia,0,0,0,0
+190634,Marko Pajac,11194,NK Lokomotiva Zagreb,2026,KR1,17,Left-Back,33,Croatia,3,3,0,270
+98101,Marko Vesovic,11194,NK Lokomotiva Zagreb,2026,KR1,23,Right-Back,35,Montenegro,4,4,1,318
+1151871,Noa Godec,11194,NK Lokomotiva Zagreb,2026,KR1,27,Left-Back,19,Croatia,6,2,0,135
+1048807,Luka Curkovic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Right-Back,21,Croatia,0,0,0,0
+1072020,Petar Zvonimir Kostelac,11194,NK Lokomotiva Zagreb,2026,KR1,0,Right-Back,18,Croatia,0,0,0,0
+855614,Mody Boune,11194,NK Lokomotiva Zagreb,2026,KR1,13,Right-Back,24,France,0,0,0,0
+138741,Mario Situm,11194,NK Lokomotiva Zagreb,2026,KR1,18,Right-Back,34,Croatia,0,0,0,0
+1374904,Teodor Kralevski,11194,NK Lokomotiva Zagreb,2026,KR1,21,Centre-Back,19,Croatia,6,5,0,150
+1133009,Roko Pavlovic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Left-Back,19,Croatia,0,0,0,0
+1474152,Lorenzo,11194,NK Lokomotiva Zagreb,2026,KR1,0,Centre-Back,19,Brazil,0,0,0,0
+1133013,Matija Subotic,11194,NK Lokomotiva Zagreb,2026,KR1,10,Defensive Midfield,18,Croatia,7,7,0,536
+844375,Leon Belcar,11194,NK Lokomotiva Zagreb,2026,KR1,9,Defensive Midfield,24,Croatia,5,5,0,214
+1059579,Feta Fetai,11194,NK Lokomotiva Zagreb,2026,KR1,6,Defensive Midfield,21,Albania,7,2,0,97
+914997,Erbol Atabaev,11194,NK Lokomotiva Zagreb,2026,KR1,0,Central Midfield,25,Kyrgyzstan,0,0,0,0
+1173856,Ivan Katic,11194,NK Lokomotiva Zagreb,2026,KR1,8,Defensive Midfield,20,Croatia,6,6,1,433
+618353,Jakov-Anton Vasilj,11194,NK Lokomotiva Zagreb,2026,KR1,29,Attacking Midfield,24,Croatia,6,6,0,325
+1160173,Dardan Morina,11194,NK Lokomotiva Zagreb,2026,KR1,26,Attacking Midfield,20,Kosovo,6,2,0,53
+1072018,Pavle Smiljanic,11194,NK Lokomotiva Zagreb,2026,KR1,25,Central Midfield,18,Croatia,4,4,0,103
+317482,Marko Rog,11194,NK Lokomotiva Zagreb,2026,KR1,0,Central Midfield,31,Croatia,0,0,0,0
+996391,Marcel Lorber,11194,NK Lokomotiva Zagreb,2026,KR1,14,Central Midfield,22,Slovenia,6,5,0,232
+1151872,Anes Huskic,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attacking Midfield,19,Croatia,0,0,0,0
+892172,Duje Reic,11194,NK Lokomotiva Zagreb,2026,KR1,30,Central Midfield,20,Croatia,7,1,0,23
+1304683,Leni Peternac,11194,NK Lokomotiva Zagreb,2026,KR1,0,Midfield,19,Croatia,0,0,0,0
+747417,Dusan Vukovic,11194,NK Lokomotiva Zagreb,2026,KR1,7,Left Winger,24,Montenegro,7,7,2,619
+1045530,Mirko Susak,11194,NK Lokomotiva Zagreb,2026,KR1,0,Left Winger,22,Croatia,3,3,0,195
+1151870,Lovre Kulusic,11194,NK Lokomotiva Zagreb,2026,KR1,11,Centre-Forward,19,Croatia,1,1,0,28
+215649,Mirko Marić,11194,NK Lokomotiva Zagreb,2026,KR1,24,Centre-Forward,31,Croatia,5,4,1,276
+1277268,Dominik Thaqi,11194,NK Lokomotiva Zagreb,2026,KR1,15,Right Winger,19,Croatia,7,6,0,173
+921551,Mate Antunovic,11194,NK Lokomotiva Zagreb,2026,KR1,22,Centre-Forward,22,Croatia,7,3,0,88
+1267443,Noel Djurkovic,11194,NK Lokomotiva Zagreb,2026,KR1,28,Centre-Forward,19,Croatia,7,6,2,199
+1406422,Amad Keita,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,20,Senegal,0,0,0,0
+945318,Marko Batur,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,22,Croatia,0,0,0,0
+1335665,Armando Pernar,11194,NK Lokomotiva Zagreb,2026,KR1,0,Attack,19,Croatia,0,0,0,0
+1370309,Kayke,11194,NK Lokomotiva Zagreb,2026,KR1,16,Left Winger,19,Brazil,4,2,0,69
+663899,Franko Kolic,999,NK Istra 1961,2026,KR1,1,Goalkeeper,23,Croatia,7,7,0,630
+830280,Jan Paus-Kunst,999,NK Istra 1961,2026,KR1,40,Goalkeeper,25,Croatia,7,0,0,0
+1357760,Roko Banovac,999,NK Istra 1961,2026,KR1,0,Goalkeeper,17,Croatia,1,0,0,0
+1137273,Raul Kumar,999,NK Istra 1961,2026,KR1,4,Centre-Back,18,Croatia,6,5,0,374
+318829,Advan Kadusic,999,NK Istra 1961,2026,KR1,97,Right-Back,28,Bosnia-Herzegovina,7,6,0,123
 891575,Filip Taraba,999,NK Istra 1961,2026,KR1,0,Right-Back,20,Bosnia-Herzegovina,5,1,0,1
-939479,Mohamed Nasraoui,999,NK Istra 1961,2026,KR1,3,Centre-Back,24,Tunisia,6,5,0,450
-1083702,Niko Sepic,999,NK Istra 1961,2026,KR1,13,Left-Back,20,Croatia,6,6,0,540
-807247,Samuli Miettinen,999,NK Istra 1961,2026,KR1,16,Centre-Back,22,Finland,5,4,0,360
-981083,Rene Hrvatin,999,NK Istra 1961,2026,KR1,44,Right-Back,19,Slovenia,6,6,0,425
-1400025,Mutari Momoh,999,NK Istra 1961,2026,KR1,0,Centre-Back,18,Nigeria,3,0,0,0
+939479,Mohamed Nasraoui,999,NK Istra 1961,2026,KR1,3,Centre-Back,24,Tunisia,7,5,0,450
+1083702,Niko Sepic,999,NK Istra 1961,2026,KR1,13,Left-Back,20,Croatia,7,7,0,630
+807247,Samuli Miettinen,999,NK Istra 1961,2026,KR1,16,Centre-Back,22,Finland,6,5,0,450
+981083,Rene Hrvatin,999,NK Istra 1961,2026,KR1,44,Right-Back,19,Slovenia,7,7,0,507
+1400025,Mutari Momoh,999,NK Istra 1961,2026,KR1,0,Centre-Back,18,Nigeria,4,0,0,0
 160506,Josip Radosevic,999,NK Istra 1961,2026,KR1,5,Defensive Midfield,32,Croatia,0,0,0,0
-945489,Antonio Mauric,999,NK Istra 1961,2026,KR1,8,Defensive Midfield,22,Croatia,6,6,0,182
-1054933,Daouda Doumbia,999,NK Istra 1961,2026,KR1,88,Central Midfield,24,Mali,6,6,0,409
-1199576,Dukan Ahmeti,999,NK Istra 1961,2026,KR1,20,Attacking Midfield,18,Croatia,6,6,2,234
+945489,Antonio Mauric,999,NK Istra 1961,2026,KR1,8,Defensive Midfield,22,Croatia,7,7,0,272
+1054933,Daouda Doumbia,999,NK Istra 1961,2026,KR1,88,Central Midfield,24,Mali,7,7,0,499
+1199576,Dukan Ahmeti,999,NK Istra 1961,2026,KR1,20,Attacking Midfield,18,Croatia,7,7,2,324
 1074967,Gustavo Albarracín,999,NK Istra 1961,2026,KR1,25,Central Midfield,20,Argentina,6,6,0,396
-1304692,Matija Kablar,999,NK Istra 1961,2026,KR1,34,Defensive Midfield,18,Croatia,6,3,0,86
-422941,Emil Frederiksen,999,NK Istra 1961,2026,KR1,22,Right Winger,26,Denmark,6,6,4,512
+980081,Demirel Hodzic,999,NK Istra 1961,2026,KR1,5,Central Midfield,21,Sweden,1,0,0,0
+1304692,Matija Kablar,999,NK Istra 1961,2026,KR1,34,Defensive Midfield,18,Croatia,7,4,0,94
+422941,Emil Frederiksen,999,NK Istra 1961,2026,KR1,22,Right Winger,26,Denmark,7,7,7,594
 665274,Ivan Saranic,999,NK Istra 1961,2026,KR1,0,Right Winger,23,Croatia,5,5,0,292
-1083069,Isaac,999,NK Istra 1961,2026,KR1,9,Centre-Forward,22,Brazil,3,1,0,28
-663897,Vinko Rozic,999,NK Istra 1961,2026,KR1,7,Left Winger,23,Bosnia-Herzegovina,5,5,0,212
-393825,Silvio Gorican,999,NK Istra 1961,2026,KR1,11,Left Winger,26,Croatia,5,2,0,22
+1083069,Isaac,999,NK Istra 1961,2026,KR1,9,Centre-Forward,22,Brazil,4,2,0,52
+663897,Vinko Rozic,999,NK Istra 1961,2026,KR1,7,Left Winger,23,Bosnia-Herzegovina,6,6,0,219
+393825,Silvio Gorican,999,NK Istra 1961,2026,KR1,11,Left Winger,26,Croatia,6,2,0,22
 687267,Saydou Bangura,999,NK Istra 1961,2026,KR1,0,Centre-Forward,23,Netherlands,2,0,0,0
-798026,Hamza Jaganjac,999,NK Istra 1961,2026,KR1,74,Centre-Forward,22,Bosnia-Herzegovina,6,6,4,535
-1454692,Nik Skafar Zuzic,999,NK Istra 1961,2026,KR1,30,Left Winger,17,Croatia,6,6,1,314
+798026,Hamza Jaganjac,999,NK Istra 1961,2026,KR1,74,Centre-Forward,22,Bosnia-Herzegovina,7,7,4,601
+1454692,Nik Skafar Zuzic,999,NK Istra 1961,2026,KR1,30,Left Winger,17,Croatia,7,7,1,380
 1129893,Charles Adah Agada,999,NK Istra 1961,2026,KR1,0,Centre-Forward,20,Nigeria,1,0,0,0
-1137125,Stipe Ukich,999,NK Istra 1961,2026,KR1,23,Centre-Forward,19,New Zealand,5,1,0,5
-1174877,Dominik Celija,999,NK Istra 1961,2026,KR1,27,Right Winger,20,Croatia,6,0,0,0
+1137125,Stipe Ukich,999,NK Istra 1961,2026,KR1,23,Centre-Forward,19,New Zealand,6,2,0,22
+1174877,Dominik Celija,999,NK Istra 1961,2026,KR1,27,Right Winger,20,Croatia,7,0,0,0
 1411330,Toni Brajkovic,999,NK Istra 1961,2026,KR1,0,Attack,18,Croatia,2,0,0,0
 1464866,Baba Yatera,999,NK Istra 1961,2026,KR1,6,Attack,20,Mauritania,0,0,0,0
 663899,Franko Kolic,999,NK Istra 1961,2025,KR1,1,Goalkeeper,22,Croatia,36,35,0,3150
@@ -2441,39 +2372,84 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1174877,Dominik Celija,999,NK Istra 1961,2025,KR1,32,Right Winger,19,Croatia,20,2,0,28
 1527806,Ebou Sama,999,NK Istra 1961,2025,KR1,0,Attack,17,The Gambia,5,0,0,0
 1464866,Baba Yatera,999,NK Istra 1961,2025,KR1,6,Attack,19,Mauritania,1,0,0,0
-357780,Davor Matijas,24575,HNK Gorica,2026,KR1,71,Goalkeeper,27,Croatia,6,4,0,360
-432745,Renato Josipovic,24575,HNK Gorica,2026,KR1,1,Goalkeeper,25,Croatia,6,2,0,180
-236918,Darijan Zarkov,24575,HNK Gorica,2026,KR1,30,Goalkeeper,34,Croatia,6,0,0,0
-1046021,Tin Dosen,24575,HNK Gorica,2026,KR1,12,Goalkeeper,20,Croatia,0,0,0,0
-223973,Stefan Peric,24575,HNK Gorica,2026,KR1,45,Centre-Back,29,Austria,6,6,0,472
-286037,Dusan Stevanovic,24575,HNK Gorica,2026,KR1,15,Centre-Back,30,Serbia,3,3,0,197
-587509,Filip Braut,24575,HNK Gorica,2026,KR1,2,Right-Back,24,Croatia,6,6,0,454
-1112528,Hadji Issa Moustapha,24575,HNK Gorica,2026,KR1,21,Centre-Back,22,Cameroon,2,1,0,3
-339727,Jakov Filipovic,24575,HNK Gorica,2026,KR1,32,Centre-Back,33,Croatia,6,6,0,433
-744078,Ivan Cvijanovic,24575,HNK Gorica,2026,KR1,34,Left-Back,22,Croatia,6,6,0,540
-945237,David Sim,24575,HNK Gorica,2026,KR1,0,Right-Back,22,Croatia,0,0,0,0
-1265767,Elisandro Kozina,24575,HNK Gorica,2026,KR1,0,Left-Back,17,Croatia,3,0,0,0
-1082114,Ante Kavelj,24575,HNK Gorica,2026,KR1,36,Attacking Midfield,21,Croatia,5,5,0,447
-847759,Tom Lacoux,24575,HNK Gorica,2026,KR1,6,Defensive Midfield,24,France,2,2,0,116
-724666,Ognjen Bakic,24575,HNK Gorica,2026,KR1,7,Central Midfield,23,Montenegro,6,2,0,63
-653719,Jakov Pranjic,24575,HNK Gorica,2026,KR1,8,Attacking Midfield,25,Croatia,4,4,0,267
-523947,Kevin Custovic,24575,HNK Gorica,2026,KR1,4,Right Midfield,26,Sweden,6,6,0,233
-131326,Domagoj Pavicic,24575,HNK Gorica,2026,KR1,24,Central Midfield,32,Croatia,6,6,0,495
-1277081,Stjepan Kucis,24575,HNK Gorica,2026,KR1,14,Midfield,19,Croatia,6,4,0,104
-945242,Luka Brlek,24575,HNK Gorica,2026,KR1,0,Attacking Midfield,22,Croatia,0,0,0,0
-1265307,Juraj Frigan,24575,HNK Gorica,2026,KR1,0,Defensive Midfield,17,Croatia,6,6,0,301
-1200999,Mihael Kelava,24575,HNK Gorica,2026,KR1,0,Attacking Midfield,17,Croatia,1,0,0,0
-1277089,Lovro Dukic,24575,HNK Gorica,2026,KR1,33,Central Midfield,20,Croatia,0,0,0,0
-1300981,Tomislav Prgomet,24575,HNK Gorica,2026,KR1,67,Defensive Midfield,19,Croatia,4,0,0,0
-892185,Bartol Kardum,24575,HNK Gorica,2026,KR1,18,Centre-Forward,20,Croatia,6,2,0,6
-226060,Fran Brodic,24575,HNK Gorica,2026,KR1,10,Centre-Forward,29,Croatia,1,1,0,19
-1234664,Luka Vrzic,24575,HNK Gorica,2026,KR1,20,Right Winger,19,Croatia,6,6,0,127
-464604,Bruno Bogojevic,24575,HNK Gorica,2026,KR1,25,Right Winger,28,Croatia,6,6,2,498
-696246,Patrik Mijic,24575,HNK Gorica,2026,KR1,9,Centre-Forward,27,Croatia,6,6,0,494
-1233166,Wisdom Aondowase Sule,24575,HNK Gorica,2026,KR1,11,Centre-Forward,22,Nigeria,0,0,0,0
-1068860,Medin Gashi,24575,HNK Gorica,2026,KR1,99,Centre-Forward,20,Kosovo,6,3,0,87
-805888,Keenan Carole,24575,HNK Gorica,2026,KR1,26,Right Winger,22,France,4,1,0,45
-131303,Ante Erceg,24575,HNK Gorica,2026,KR1,50,Centre-Forward,36,Croatia,0,0,0,0
+179894,Marko Malenica,327,NK Osijek,2026,KR1,31,Goalkeeper,32,Croatia,7,7,0,630
+768378,Nikola Curcija,327,NK Osijek,2026,KR1,1,Goalkeeper,25,Canada,7,0,0,0
+892142,Jan Hlapcic,327,NK Osijek,2026,KR1,20,Goalkeeper,20,Croatia,0,0,0,0
+370999,Luka Jelenic,327,NK Osijek,2026,KR1,26,Centre-Back,26,Croatia,7,7,0,585
+570721,Roko Jurisic,327,NK Osijek,2026,KR1,0,Left-Back,24,Croatia,5,5,0,406
+533172,Jay Kruiver,327,NK Osijek,2026,KR1,22,Right-Back,25,Netherlands,1,1,0,77
+540935,Jon Mersinaj,327,NK Osijek,2026,KR1,0,Centre-Back,27,Albania,2,0,0,0
+615235,Emin Hasic,327,NK Osijek,2026,KR1,33,Centre-Back,23,Sweden,6,3,0,46
+1133007,Ivano Kolarik,327,NK Osijek,2026,KR1,49,Centre-Back,19,Croatia,7,6,0,508
+805121,Senad Mustafic,327,NK Osijek,2026,KR1,77,Right-Back,21,Bosnia-Herzegovina,6,5,0,347
+109830,Marcel Heister,327,NK Osijek,2026,KR1,2,Left-Back,34,Germany,6,5,0,299
+1468846,David Kalem,327,NK Osijek,2026,KR1,0,Left-Back,18,Croatia,6,2,0,64
+1525438,Luka Posavec,327,NK Osijek,2026,KR1,0,Right-Back,17,Croatia,5,3,0,63
+1407860,Izak Jezic,327,NK Osijek,2026,KR1,0,Centre-Back,16,Croatia,2,2,0,122
+946959,Luka Vrbancic,327,NK Osijek,2026,KR1,23,Defensive Midfield,21,Croatia,7,7,1,630
+461657,Oleksandr Petrusenko,327,NK Osijek,2026,KR1,16,Defensive Midfield,28,Ukraine,7,2,0,73
+895515,Simun Mikolcic,327,NK Osijek,2026,KR1,8,Attacking Midfield,22,Croatia,7,7,0,299
+990110,David Mejía,327,NK Osijek,2026,KR1,6,Defensive Midfield,23,Colombia,0,0,0,0
+982366,Vito Caic,327,NK Osijek,2026,KR1,13,Defensive Midfield,21,Croatia,3,0,0,0
+648899,Balázs Bakti,327,NK Osijek,2026,KR1,67,Attacking Midfield,21,Hungary,6,3,0,43
+1271373,Niko Farkas,327,NK Osijek,2026,KR1,18,Defensive Midfield,19,Croatia,7,2,0,19
+1468844,Jona Jezic,327,NK Osijek,2026,KR1,48,Attacking Midfield,17,Croatia,6,6,2,352
+797824,Nail Omerovic,327,NK Osijek,2026,KR1,0,Left Winger,23,Bosnia-Herzegovina,5,5,5,390
+1121427,Anton Matkovic,327,NK Osijek,2026,KR1,34,Centre-Forward,20,Croatia,0,0,0,0
+554565,Ivan Dolcek,327,NK Osijek,2026,KR1,7,Left Winger,26,Croatia,6,6,1,331
+268426,Arnel Jakupovic,327,NK Osijek,2026,KR1,0,Centre-Forward,28,Austria,4,4,2,114
+921251,Domagoj Bukvic,327,NK Osijek,2026,KR1,39,Right Winger,22,Croatia,7,7,1,585
+760988,Armando León,327,NK Osijek,2026,KR1,79,Centre-Forward,26,Mexico,7,7,5,549
+1172610,Ivan Baric,327,NK Osijek,2026,KR1,46,Centre-Forward,19,Croatia,3,2,0,53
+1173837,Milos Jovicic,327,NK Osijek,2026,KR1,0,Left Winger,20,Croatia,4,0,0,0
+699784,Justice Ohajunwa,327,NK Osijek,2026,KR1,0,Centre-Forward,25,Nigeria,0,0,0,0
+1183763,Admir Ljatifi,327,NK Osijek,2026,KR1,30,Left Winger,19,North Macedonia,7,5,0,227
+1063934,Balelo,327,NK Osijek,2026,KR1,99,Centre-Forward,24,Portugal,7,3,0,63
+179894,Marko Malenica,327,NK Osijek,2025,KR1,31,Goalkeeper,31,Croatia,34,30,0,2700
+768378,Nikola Curcija,327,NK Osijek,2025,KR1,1,Goalkeeper,24,Canada,36,5,0,450
+892142,Jan Hlapcic,327,NK Osijek,2025,KR1,20,Goalkeeper,19,Croatia,6,0,0,0
+1071989,Matej Grahovac,327,NK Osijek,2025,KR1,0,Goalkeeper,17,Croatia,8,1,0,90
+370999,Luka Jelenic,327,NK Osijek,2025,KR1,26,Centre-Back,25,Croatia,34,28,3,2360
+570721,Roko Jurisic,327,NK Osijek,2025,KR1,22,Left-Back,23,Croatia,19,19,0,1232
+371000,David Colina,327,NK Osijek,2025,KR1,38,Left-Back,24,Croatia,33,29,0,1954
+623119,Styopa Mkrtchyan,327,NK Osijek,2025,KR1,0,Centre-Back,22,Armenia,18,17,0,1165
+367795,Fran Karacic,327,NK Osijek,2025,KR1,29,Right-Back,29,Australia,12,11,1,908
+39125,Borna Barisic,327,NK Osijek,2025,KR1,3,Left-Back,32,Croatia,11,10,0,620
+540935,Jon Mersinaj,327,NK Osijek,2025,KR1,15,Centre-Back,26,Albania,25,19,0,909
+615235,Emin Hasic,327,NK Osijek,2025,KR1,33,Centre-Back,22,Sweden,28,20,0,1341
+1133007,Ivano Kolarik,327,NK Osijek,2025,KR1,49,Centre-Back,18,Croatia,29,8,0,449
+984912,Kresimir Vrbanac,327,NK Osijek,2025,KR1,4,Centre-Back,20,Croatia,15,0,0,0
+744078,Ivan Cvijanovic,327,NK Osijek,2025,KR1,0,Left-Back,21,Croatia,18,10,0,570
+646361,Renan Guedes,327,NK Osijek,2025,KR1,42,Right-Back,27,Brazil,29,22,0,1550
+1304680,Frane Nekic,327,NK Osijek,2025,KR1,0,Defender,17,Croatia,1,0,0,0
+1525438,Luka Posavec,327,NK Osijek,2025,KR1,0,Right-Back,16,Croatia,2,0,0,0
+1468846,David Kalem,327,NK Osijek,2025,KR1,0,Left-Back,16,Croatia,1,1,0,69
+1300175,Simun Begovic,327,NK Osijek,2025,KR1,0,Centre-Back,18,Croatia,1,0,0,0
+403723,Hrvoje Babec,327,NK Osijek,2025,KR1,0,Defensive Midfield,25,Croatia,15,15,1,1093
+946959,Luka Vrbancic,327,NK Osijek,2025,KR1,23,Defensive Midfield,19,Croatia,18,17,0,945
+461657,Oleksandr Petrusenko,327,NK Osijek,2025,KR1,16,Defensive Midfield,27,Ukraine,31,24,0,1485
+489824,Vladan Bubanja,327,NK Osijek,2025,KR1,21,Defensive Midfield,26,Montenegro,17,17,2,1256
+895515,Simun Mikolcic,327,NK Osijek,2025,KR1,8,Attacking Midfield,21,Croatia,29,27,2,1205
+486813,Stanislav Shopov,327,NK Osijek,2025,KR1,10,Attacking Midfield,23,Bulgaria,14,13,0,689
+510241,Tonio Teklic,327,NK Osijek,2025,KR1,99,Attacking Midfield,25,Croatia,16,13,0,834
+990110,David Mejía,327,NK Osijek,2025,KR1,6,Defensive Midfield,22,Colombia,14,11,0,741
+1207178,Fran Pecek,327,NK Osijek,2025,KR1,0,Attacking Midfield,18,Croatia,8,1,0,24
+1468844,Jona Jezic,327,NK Osijek,2025,KR1,0,Attacking Midfield,16,Croatia,7,3,0,66
+1271373,Niko Farkas,327,NK Osijek,2025,KR1,18,Defensive Midfield,18,Croatia,21,7,1,254
+49929,Vedran Jugovic,327,NK Osijek,2025,KR1,0,Central Midfield,35,Croatia,11,8,0,303
+797824,Nail Omerovic,327,NK Osijek,2025,KR1,11,Left Winger,22,Bosnia-Herzegovina,35,35,9,2696
+1121427,Anton Matkovic,327,NK Osijek,2025,KR1,34,Centre-Forward,19,Croatia,17,17,1,999
+1012052,Samuel Akere,327,NK Osijek,2025,KR1,57,Right Winger,21,Nigeria,18,18,3,979
+268426,Arnel Jakupovic,327,NK Osijek,2025,KR1,17,Centre-Forward,27,Austria,32,30,3,2180
+921251,Domagoj Bukvic,327,NK Osijek,2025,KR1,39,Right Winger,21,Croatia,36,34,0,1919
+1056459,Filip Zivkovic,327,NK Osijek,2025,KR1,0,Right Winger,18,Croatia,14,10,0,282
+421824,Yannick Toure,327,NK Osijek,2025,KR1,9,Centre-Forward,24,Switzerland,12,11,0,498
+1468849,Jakov Dedic,327,NK Osijek,2025,KR1,0,Centre-Forward,15,Croatia,11,3,0,26
+1172610,Ivan Baric,327,NK Osijek,2025,KR1,46,Centre-Forward,18,Croatia,21,10,0,225
+699784,Justice Ohajunwa,327,NK Osijek,2025,KR1,0,Centre-Forward,24,Nigeria,1,0,0,0
+1173837,Milos Jovicic,327,NK Osijek,2025,KR1,98,Left Winger,19,Croatia,24,12,1,475
+333161,Kemal Ademi,327,NK Osijek,2025,KR1,0,Centre-Forward,29,Switzerland,0,0,0,0
+1071641,Marino Zeravica,327,NK Osijek,2025,KR1,0,Centre-Forward,19,Croatia,5,0,0,0
 357780,Davor Matijas,24575,HNK Gorica,2025,KR1,71,Goalkeeper,25,Croatia,36,36,0,3240
 526258,Karlo Ziger,24575,HNK Gorica,2025,KR1,0,Goalkeeper,24,Croatia,4,0,0,0
 584112,Muhamed Sahinovic,24575,HNK Gorica,2025,KR1,1,Goalkeeper,21,Bosnia-Herzegovina,17,0,0,0
@@ -2509,6 +2485,85 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1233166,Wisdom Aondowase Sule,24575,HNK Gorica,2025,KR1,11,Centre-Forward,21,Nigeria,17,13,0,480
 1068860,Medin Gashi,24575,HNK Gorica,2025,KR1,99,Centre-Forward,19,Kosovo,31,15,0,181
 131303,Ante Erceg,24575,HNK Gorica,2025,KR1,50,Centre-Forward,35,Croatia,26,20,6,1037
+357780,Davor Matijas,24575,HNK Gorica,2026,KR1,71,Goalkeeper,27,Croatia,6,4,0,360
+432745,Renato Josipovic,24575,HNK Gorica,2026,KR1,1,Goalkeeper,25,Croatia,6,2,0,180
+236918,Darijan Zarkov,24575,HNK Gorica,2026,KR1,30,Goalkeeper,34,Croatia,6,0,0,0
+1046021,Tin Dosen,24575,HNK Gorica,2026,KR1,12,Goalkeeper,20,Croatia,0,0,0,0
+383014,Gonçalo Costa,24575,HNK Gorica,2026,KR1,0,Left-Back,26,Portugal,0,0,0,0
+223973,Stefan Peric,24575,HNK Gorica,2026,KR1,45,Centre-Back,29,Austria,6,6,0,472
+286037,Dusan Stevanovic,24575,HNK Gorica,2026,KR1,15,Centre-Back,30,Serbia,3,3,0,197
+587509,Filip Braut,24575,HNK Gorica,2026,KR1,2,Right-Back,24,Croatia,6,6,0,454
+1112528,Hadji Issa Moustapha,24575,HNK Gorica,2026,KR1,21,Centre-Back,22,Cameroon,2,1,0,3
+339727,Jakov Filipovic,24575,HNK Gorica,2026,KR1,32,Centre-Back,33,Croatia,6,6,0,433
+744078,Ivan Cvijanovic,24575,HNK Gorica,2026,KR1,34,Left-Back,22,Croatia,6,6,0,540
+945237,David Sim,24575,HNK Gorica,2026,KR1,0,Right-Back,22,Croatia,0,0,0,0
+1265767,Elisandro Kozina,24575,HNK Gorica,2026,KR1,0,Left-Back,17,Croatia,3,0,0,0
+1082114,Ante Kavelj,24575,HNK Gorica,2026,KR1,36,Attacking Midfield,21,Croatia,5,5,0,447
+847759,Tom Lacoux,24575,HNK Gorica,2026,KR1,6,Defensive Midfield,24,France,2,2,0,116
+724666,Ognjen Bakic,24575,HNK Gorica,2026,KR1,7,Central Midfield,23,Montenegro,6,2,0,63
+653719,Jakov Pranjic,24575,HNK Gorica,2026,KR1,8,Attacking Midfield,25,Croatia,4,4,0,267
+523947,Kevin Custovic,24575,HNK Gorica,2026,KR1,4,Right Midfield,26,Sweden,6,6,0,233
+131326,Domagoj Pavicic,24575,HNK Gorica,2026,KR1,24,Central Midfield,32,Croatia,6,6,0,495
+1277081,Stjepan Kucis,24575,HNK Gorica,2026,KR1,14,Midfield,19,Croatia,6,4,0,104
+945242,Luka Brlek,24575,HNK Gorica,2026,KR1,0,Attacking Midfield,22,Croatia,0,0,0,0
+1200999,Mihael Kelava,24575,HNK Gorica,2026,KR1,0,Attacking Midfield,17,Croatia,1,0,0,0
+1265307,Juraj Frigan,24575,HNK Gorica,2026,KR1,0,Defensive Midfield,17,Croatia,6,6,0,301
+1277089,Lovro Dukic,24575,HNK Gorica,2026,KR1,33,Central Midfield,20,Croatia,0,0,0,0
+1300981,Tomislav Prgomet,24575,HNK Gorica,2026,KR1,67,Defensive Midfield,19,Croatia,4,0,0,0
+892185,Bartol Kardum,24575,HNK Gorica,2026,KR1,18,Centre-Forward,20,Croatia,6,2,0,6
+226060,Fran Brodic,24575,HNK Gorica,2026,KR1,10,Centre-Forward,29,Croatia,1,1,0,19
+1234664,Luka Vrzic,24575,HNK Gorica,2026,KR1,20,Right Winger,19,Croatia,6,6,0,127
+464604,Bruno Bogojevic,24575,HNK Gorica,2026,KR1,25,Right Winger,28,Croatia,6,6,2,498
+696246,Patrik Mijic,24575,HNK Gorica,2026,KR1,9,Centre-Forward,27,Croatia,6,6,0,494
+1233166,Wisdom Aondowase Sule,24575,HNK Gorica,2026,KR1,11,Centre-Forward,22,Nigeria,0,0,0,0
+1068860,Medin Gashi,24575,HNK Gorica,2026,KR1,99,Centre-Forward,20,Kosovo,6,3,0,87
+805888,Keenan Carole,24575,HNK Gorica,2026,KR1,26,Right Winger,22,France,4,1,0,45
+131303,Ante Erceg,24575,HNK Gorica,2026,KR1,50,Centre-Forward,36,Croatia,0,0,0,0
+188881,Osman Hadzikic,2362,Slaven Belupo Koprivnica,2025,KR1,31,Goalkeeper,29,Bosnia-Herzegovina,34,29,0,2544
+442192,Matija Jesenovic,2362,Slaven Belupo Koprivnica,2025,KR1,1,Goalkeeper,27,Croatia,1,0,0,0
+76254,Ivan Covic,2362,Slaven Belupo Koprivnica,2025,KR1,32,Goalkeeper,34,Croatia,35,8,0,696
+912881,Maj Pavli,2362,Slaven Belupo Koprivnica,2025,KR1,0,Goalkeeper,23,Slovenia,0,0,0,0
+232433,Antun Markovic,2362,Slaven Belupo Koprivnica,2025,KR1,12,Goalkeeper,32,Croatia,18,0,0,0
+1123887,Teo Kolar,2362,Slaven Belupo Koprivnica,2025,KR1,0,Goalkeeper,18,Croatia,6,0,0,0
+258898,Dominik Kovacic,2362,Slaven Belupo Koprivnica,2025,KR1,4,Centre-Back,31,Croatia,33,33,0,2968
+987719,Filip Kruselj,2362,Slaven Belupo Koprivnica,2025,KR1,18,Right-Back,20,Croatia,29,26,2,2227
+584936,Filip Jovic,2362,Slaven Belupo Koprivnica,2025,KR1,22,Centre-Back,25,Serbia,11,5,0,238
+1045322,Zvonimir Katalinic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Back,21,Croatia,31,14,0,843
+941456,Antonio Jakir,2362,Slaven Belupo Koprivnica,2025,KR1,3,Left-Back,22,Croatia,25,20,0,1036
+381004,Vinko Medjimorec,2362,Slaven Belupo Koprivnica,2025,KR1,2,Centre-Back,29,Croatia,36,16,0,887
+574085,Karlo Isasegi,2362,Slaven Belupo Koprivnica,2025,KR1,33,Right-Back,24,Croatia,25,16,0,574
+697087,Mateo Barac,2362,Slaven Belupo Koprivnica,2025,KR1,0,Right-Back,24,Croatia,18,4,0,232
+1173472,Marko Petrovic,2362,Slaven Belupo Koprivnica,2025,KR1,20,Centre-Back,19,Croatia,13,3,0,214
+34577,Tomislav Bozic,2362,Slaven Belupo Koprivnica,2025,KR1,6,Centre-Back,37,Croatia,27,27,1,2319
+1048807,Luka Curkovic,2362,Slaven Belupo Koprivnica,2025,KR1,16,Right-Back,19,Croatia,13,2,0,9
+214625,Leonard Zuta,2362,Slaven Belupo Koprivnica,2025,KR1,35,Left-Back,32,North Macedonia,22,19,2,1392
+1024189,Erik Ridjan,2362,Slaven Belupo Koprivnica,2025,KR1,45,Left-Back,19,Croatia,7,2,0,23
+133834,Marko Leskovic,2362,Slaven Belupo Koprivnica,2025,KR1,13,Centre-Back,34,Croatia,4,4,0,196
+1024285,Adriano Jagusic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,19,Croatia,20,20,7,1726
+580443,Ivan Cubelic,2362,Slaven Belupo Koprivnica,2025,KR1,15,Attacking Midfield,22,Croatia,34,34,2,2308
+946963,Filip Mazar,2362,Slaven Belupo Koprivnica,2025,KR1,17,Attacking Midfield,20,Croatia,15,14,1,1017
+238474,Ljuban Crepulja,2362,Slaven Belupo Koprivnica,2025,KR1,21,Defensive Midfield,31,Croatia,34,29,3,1851
+722365,Michael Agbekpornu,2362,Slaven Belupo Koprivnica,2025,KR1,0,Central Midfield,26,Ghana,18,17,1,1138
+570238,Adrian Liber,2362,Slaven Belupo Koprivnica,2025,KR1,0,Defensive Midfield,24,Croatia,17,15,1,512
+1124490,Leon Bosnjak,2362,Slaven Belupo Koprivnica,2025,KR1,24,Defensive Midfield,19,Croatia,30,15,0,485
+414933,Mihail Caimacov,2362,Slaven Belupo Koprivnica,2025,KR1,10,Central Midfield,26,Moldova,16,15,1,884
+1534923,Leon Geci,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,17,Croatia,5,2,0,7
+950289,Filip Bosnjak,2362,Slaven Belupo Koprivnica,2025,KR1,0,Defensive Midfield,21,Croatia,0,0,0,0
+1133011,Andro Sokac,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,17,Croatia,5,0,0,0
+1307080,Jan Katic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Midfield,18,Croatia,0,0,0,0
+464332,Josip Mitrovic,2362,Slaven Belupo Koprivnica,2025,KR1,11,Right Winger,25,Croatia,30,30,8,2344
+697511,Ante Suto,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,25,Australia,18,18,4,1256
+1448027,Gabrijel Sivalec,2362,Slaven Belupo Koprivnica,2025,KR1,26,Left Winger,17,Croatia,27,18,0,477
+226065,Marko Dabro,2362,Slaven Belupo Koprivnica,2025,KR1,7,Centre-Forward,28,Croatia,14,13,3,910
+285077,Alen Grgic,2362,Slaven Belupo Koprivnica,2025,KR1,27,Left Winger,30,Croatia,8,8,1,463
+494853,Igor Lepinjica,2362,Slaven Belupo Koprivnica,2025,KR1,23,Right Winger,25,Croatia,35,27,1,1072
+312760,Andrija Filipovic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,28,Croatia,10,7,1,135
+392306,Ivan Bozic,2362,Slaven Belupo Koprivnica,2025,KR1,9,Centre-Forward,28,Croatia,11,6,1,332
+54581,Ilija Nestorovski,2362,Slaven Belupo Koprivnica,2025,KR1,90,Centre-Forward,35,North Macedonia,24,24,6,1770
+1300638,Marko Ascic,2362,Slaven Belupo Koprivnica,2025,KR1,29,Centre-Forward,18,Croatia,17,5,0,67
+1113088,Frano Vlasic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,19,Croatia,0,0,0,0
+1491276,Losika Ratshukudu,2362,Slaven Belupo Koprivnica,2025,KR1,14,Centre-Forward,19,Botswana,5,3,0,247
+1210104,Ernis Qestaj,2362,Slaven Belupo Koprivnica,2025,KR1,19,Centre-Forward,18,Kosovo,23,5,0,142
 1104725,Anthony Pavlesic,11083,NK Rudes,2025,KR1,1,Goalkeeper,19,Croatia,0,0,0,0
 314616,Lovre Rogic,11083,NK Rudes,2025,KR1,95,Goalkeeper,29,Croatia,0,0,0,0
 554574,Frane Barbic,11083,NK Rudes,2025,KR1,12,Goalkeeper,24,Croatia,0,0,0,0
@@ -2538,127 +2593,82 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1025713,Allyson,11083,NK Rudes,2025,KR1,89,Left Winger,24,Brazil,0,0,0,0
 270925,Kresimir Kovacevic,11083,NK Rudes,2025,KR1,9,Centre-Forward,30,Croatia,0,0,0,0
 1125754,Adiele Eriugo,11083,NK Rudes,2025,KR1,9,Centre-Forward,18,Nigeria,0,0,0,0
-632355,Karlo Sentic,2362,Slaven Belupo Koprivnica,2026,KR1,30,Goalkeeper,25,Croatia,6,6,0,540
+632355,Karlo Sentic,2362,Slaven Belupo Koprivnica,2026,KR1,30,Goalkeeper,25,Croatia,7,7,0,630
 442192,Matija Jesenovic,2362,Slaven Belupo Koprivnica,2026,KR1,0,Goalkeeper,28,Croatia,0,0,0,0
-76254,Ivan Covic,2362,Slaven Belupo Koprivnica,2026,KR1,32,Goalkeeper,35,Croatia,5,0,0,0
+76254,Ivan Covic,2362,Slaven Belupo Koprivnica,2026,KR1,32,Goalkeeper,35,Croatia,6,0,0,0
 912881,Maj Pavli,2362,Slaven Belupo Koprivnica,2026,KR1,0,Goalkeeper,24,Slovenia,1,0,0,0
 1123887,Teo Kolar,2362,Slaven Belupo Koprivnica,2026,KR1,1,Goalkeeper,19,Croatia,1,0,0,0
-258898,Dominik Kovacic,2362,Slaven Belupo Koprivnica,2026,KR1,4,Centre-Back,32,Croatia,6,6,0,519
+258898,Dominik Kovacic,2362,Slaven Belupo Koprivnica,2026,KR1,4,Centre-Back,32,Croatia,7,7,1,609
 987719,Filip Kruselj,2362,Slaven Belupo Koprivnica,2026,KR1,18,Right-Back,21,Croatia,5,5,0,450
-1045324,Ivan Cvetko,2362,Slaven Belupo Koprivnica,2026,KR1,5,Centre-Back,20,Croatia,6,5,0,450
-351557,Itsuki Urata,2362,Slaven Belupo Koprivnica,2026,KR1,77,Left-Back,29,Japan,4,2,0,164
-941456,Antonio Jakir,2362,Slaven Belupo Koprivnica,2026,KR1,3,Left-Back,23,Croatia,0,0,0,0
+1045324,Ivan Cvetko,2362,Slaven Belupo Koprivnica,2026,KR1,5,Centre-Back,20,Croatia,7,5,0,450
+540935,Jon Mersinaj,2362,Slaven Belupo Koprivnica,2026,KR1,15,Centre-Back,27,Albania,1,1,0,1
+351557,Itsuki Urata,2362,Slaven Belupo Koprivnica,2026,KR1,77,Left-Back,29,Japan,5,2,0,164
+941456,Antonio Jakir,2362,Slaven Belupo Koprivnica,2026,KR1,3,Left-Back,23,Croatia,1,1,0,45
 381004,Vinko Medjimorec,2362,Slaven Belupo Koprivnica,2026,KR1,2,Centre-Back,30,Croatia,0,0,0,0
-574085,Karlo Isasegi,2362,Slaven Belupo Koprivnica,2026,KR1,33,Right-Back,26,Croatia,4,4,0,275
+574085,Karlo Isasegi,2362,Slaven Belupo Koprivnica,2026,KR1,33,Right-Back,26,Croatia,5,5,0,320
 1173472,Marko Petrovic,2362,Slaven Belupo Koprivnica,2026,KR1,20,Centre-Back,20,Croatia,3,1,0,16
 1412728,Filip Kutlesa,2362,Slaven Belupo Koprivnica,2026,KR1,0,Centre-Back,17,Croatia,3,2,0,19
-34577,Tomislav Bozic,2362,Slaven Belupo Koprivnica,2026,KR1,6,Centre-Back,38,Croatia,3,3,0,98
-1048807,Luka Curkovic,2362,Slaven Belupo Koprivnica,2026,KR1,16,Right-Back,21,Croatia,0,0,0,0
+34577,Tomislav Bozic,2362,Slaven Belupo Koprivnica,2026,KR1,6,Centre-Back,38,Croatia,4,4,0,188
 214625,Leonard Zuta,2362,Slaven Belupo Koprivnica,2026,KR1,35,Left-Back,34,North Macedonia,0,0,0,0
 1286790,Ante Bilobrk,2362,Slaven Belupo Koprivnica,2026,KR1,13,Centre-Back,19,Croatia,5,0,0,0
 1300599,Petar Kresimir Balen,2362,Slaven Belupo Koprivnica,2026,KR1,0,Left-Back,18,Croatia,1,0,0,0
-946963,Filip Mazar,2362,Slaven Belupo Koprivnica,2026,KR1,17,Attacking Midfield,21,Croatia,3,2,0,180
-238474,Ljuban Crepulja,2362,Slaven Belupo Koprivnica,2026,KR1,21,Defensive Midfield,33,Croatia,6,5,0,417
-1108321,Adetunji Rasaq Adeshina,2362,Slaven Belupo Koprivnica,2026,KR1,22,Defensive Midfield,21,Nigeria,6,6,0,291
-1045514,David Bosak,2362,Slaven Belupo Koprivnica,2026,KR1,88,Defensive Midfield,20,Croatia,6,4,0,245
-1124490,Leon Bosnjak,2362,Slaven Belupo Koprivnica,2026,KR1,24,Defensive Midfield,20,Croatia,6,6,0,299
+946963,Filip Mazar,2362,Slaven Belupo Koprivnica,2026,KR1,17,Attacking Midfield,21,Croatia,4,3,0,259
+238474,Ljuban Crepulja,2362,Slaven Belupo Koprivnica,2026,KR1,21,Defensive Midfield,33,Croatia,7,6,0,418
+1108321,Adetunji Rasaq Adeshina,2362,Slaven Belupo Koprivnica,2026,KR1,22,Defensive Midfield,21,Nigeria,7,7,0,381
+1045514,David Bosak,2362,Slaven Belupo Koprivnica,2026,KR1,88,Defensive Midfield,20,Croatia,7,6,0,298
+1124490,Leon Bosnjak,2362,Slaven Belupo Koprivnica,2026,KR1,24,Defensive Midfield,20,Croatia,7,7,0,344
 414933,Mihail Caimacov,2362,Slaven Belupo Koprivnica,2026,KR1,10,Central Midfield,28,Moldova,0,0,0,0
 1112996,Vito Medic,2362,Slaven Belupo Koprivnica,2026,KR1,0,Attacking Midfield,19,Bosnia-Herzegovina,0,0,0,0
-652274,Arnór Gauti Jónsson,2362,Slaven Belupo Koprivnica,2026,KR1,23,Defensive Midfield,24,Iceland,6,5,0,110
+652274,Arnór Gauti Jónsson,2362,Slaven Belupo Koprivnica,2026,KR1,23,Defensive Midfield,24,Iceland,7,5,0,110
 1534923,Leon Geci,2362,Slaven Belupo Koprivnica,2026,KR1,0,Attacking Midfield,18,Croatia,4,0,0,0
 950289,Filip Bosnjak,2362,Slaven Belupo Koprivnica,2026,KR1,0,Defensive Midfield,22,Croatia,0,0,0,0
 1450768,Lovro Loncaric,2362,Slaven Belupo Koprivnica,2026,KR1,26,Midfield,22,Croatia,2,0,0,0
-464332,Josip Mitrovic,2362,Slaven Belupo Koprivnica,2026,KR1,11,Right Winger,26,Croatia,6,6,1,496
-937973,Lovro Banovec,2362,Slaven Belupo Koprivnica,2026,KR1,8,Right Winger,24,Croatia,5,5,0,349
-226065,Marko Dabro,2362,Slaven Belupo Koprivnica,2026,KR1,7,Centre-Forward,29,Croatia,6,6,0,298
-285077,Alen Grgic,2362,Slaven Belupo Koprivnica,2026,KR1,27,Left Winger,32,Croatia,5,5,0,198
+464332,Josip Mitrovic,2362,Slaven Belupo Koprivnica,2026,KR1,11,Right Winger,26,Croatia,7,7,1,586
+937973,Lovro Banovec,2362,Slaven Belupo Koprivnica,2026,KR1,8,Right Winger,24,Croatia,6,5,0,349
+226065,Marko Dabro,2362,Slaven Belupo Koprivnica,2026,KR1,7,Centre-Forward,29,Croatia,7,7,0,380
+285077,Alen Grgic,2362,Slaven Belupo Koprivnica,2026,KR1,27,Left Winger,32,Croatia,6,6,0,288
 1174895,Lukas Zahora,2362,Slaven Belupo Koprivnica,2026,KR1,0,Left Winger,19,Croatia,0,0,0,0
-54581,Ilija Nestorovski,2362,Slaven Belupo Koprivnica,2026,KR1,90,Centre-Forward,36,North Macedonia,6,6,2,441
-1491276,Losika Ratshukudu,2362,Slaven Belupo Koprivnica,2026,KR1,14,Centre-Forward,20,Botswana,1,0,0,0
+54581,Ilija Nestorovski,2362,Slaven Belupo Koprivnica,2026,KR1,90,Centre-Forward,36,North Macedonia,7,7,3,521
+1491276,Losika Ratshukudu,2362,Slaven Belupo Koprivnica,2026,KR1,14,Centre-Forward,20,Botswana,2,1,0,10
 1133057,Patrik Maric,2362,Slaven Belupo Koprivnica,2026,KR1,28,Left Winger,19,Croatia,2,1,0,1
-1429548,Vito Papac,2362,Slaven Belupo Koprivnica,2026,KR1,0,Centre-Forward,17,Croatia,4,0,0,0
+1429548,Vito Papac,2362,Slaven Belupo Koprivnica,2026,KR1,0,Centre-Forward,17,Croatia,5,0,0,0
 1009487,Lovre Loncar,2362,Slaven Belupo Koprivnica,2026,KR1,0,Left Winger,20,Croatia,0,0,0,0
-1581432,Joseph Essomba Essomba,2362,Slaven Belupo Koprivnica,2026,KR1,15,Attack,22,Cameroon,1,0,0,0
-188881,Osman Hadzikic,2362,Slaven Belupo Koprivnica,2025,KR1,31,Goalkeeper,29,Bosnia-Herzegovina,34,29,0,2544
-442192,Matija Jesenovic,2362,Slaven Belupo Koprivnica,2025,KR1,1,Goalkeeper,27,Croatia,1,0,0,0
-76254,Ivan Covic,2362,Slaven Belupo Koprivnica,2025,KR1,32,Goalkeeper,34,Croatia,35,8,0,696
-912881,Maj Pavli,2362,Slaven Belupo Koprivnica,2025,KR1,0,Goalkeeper,23,Slovenia,0,0,0,0
-232433,Antun Markovic,2362,Slaven Belupo Koprivnica,2025,KR1,12,Goalkeeper,32,Croatia,18,0,0,0
-1123887,Teo Kolar,2362,Slaven Belupo Koprivnica,2025,KR1,0,Goalkeeper,18,Croatia,6,0,0,0
-258898,Dominik Kovacic,2362,Slaven Belupo Koprivnica,2025,KR1,4,Centre-Back,31,Croatia,33,33,0,2968
-987719,Filip Kruselj,2362,Slaven Belupo Koprivnica,2025,KR1,18,Right-Back,20,Croatia,29,26,2,2227
-584936,Filip Jovic,2362,Slaven Belupo Koprivnica,2025,KR1,22,Centre-Back,25,Serbia,11,5,0,238
-1045322,Zvonimir Katalinic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Back,21,Croatia,31,14,0,843
-941456,Antonio Jakir,2362,Slaven Belupo Koprivnica,2025,KR1,3,Left-Back,22,Croatia,25,20,0,1036
-381004,Vinko Medjimorec,2362,Slaven Belupo Koprivnica,2025,KR1,2,Centre-Back,29,Croatia,36,16,0,887
-574085,Karlo Isasegi,2362,Slaven Belupo Koprivnica,2025,KR1,33,Right-Back,24,Croatia,25,16,0,574
-697087,Mateo Barac,2362,Slaven Belupo Koprivnica,2025,KR1,0,Right-Back,24,Croatia,18,4,0,232
-1173472,Marko Petrovic,2362,Slaven Belupo Koprivnica,2025,KR1,20,Centre-Back,19,Croatia,13,3,0,214
-34577,Tomislav Bozic,2362,Slaven Belupo Koprivnica,2025,KR1,6,Centre-Back,37,Croatia,27,27,1,2319
-1048807,Luka Curkovic,2362,Slaven Belupo Koprivnica,2025,KR1,16,Right-Back,19,Croatia,13,2,0,9
-214625,Leonard Zuta,2362,Slaven Belupo Koprivnica,2025,KR1,35,Left-Back,32,North Macedonia,22,19,2,1392
-1024189,Erik Ridjan,2362,Slaven Belupo Koprivnica,2025,KR1,45,Left-Back,19,Croatia,7,2,0,23
-133834,Marko Leskovic,2362,Slaven Belupo Koprivnica,2025,KR1,13,Centre-Back,34,Croatia,4,4,0,196
-1024285,Adriano Jagusic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,19,Croatia,20,20,7,1726
-580443,Ivan Cubelic,2362,Slaven Belupo Koprivnica,2025,KR1,15,Attacking Midfield,22,Croatia,34,34,2,2308
-946963,Filip Mazar,2362,Slaven Belupo Koprivnica,2025,KR1,17,Attacking Midfield,20,Croatia,15,14,1,1017
-238474,Ljuban Crepulja,2362,Slaven Belupo Koprivnica,2025,KR1,21,Defensive Midfield,31,Croatia,34,29,3,1851
-722365,Michael Agbekpornu,2362,Slaven Belupo Koprivnica,2025,KR1,0,Central Midfield,26,Ghana,18,17,1,1138
-570238,Adrian Liber,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,24,Croatia,17,15,1,512
-1124490,Leon Bosnjak,2362,Slaven Belupo Koprivnica,2025,KR1,24,Defensive Midfield,19,Croatia,30,15,0,485
-414933,Mihail Caimacov,2362,Slaven Belupo Koprivnica,2025,KR1,10,Central Midfield,26,Moldova,16,15,1,884
-1534923,Leon Geci,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,17,Croatia,5,2,0,7
-950289,Filip Bosnjak,2362,Slaven Belupo Koprivnica,2025,KR1,0,Defensive Midfield,21,Croatia,0,0,0,0
-1133011,Andro Sokac,2362,Slaven Belupo Koprivnica,2025,KR1,0,Attacking Midfield,17,Croatia,5,0,0,0
-1307080,Jan Katic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Midfield,18,Croatia,0,0,0,0
-464332,Josip Mitrovic,2362,Slaven Belupo Koprivnica,2025,KR1,11,Right Winger,25,Croatia,30,30,8,2344
-697511,Ante Suto,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,25,Australia,18,18,4,1256
-1448027,Gabrijel Sivalec,2362,Slaven Belupo Koprivnica,2025,KR1,26,Left Winger,17,Croatia,27,18,0,477
-226065,Marko Dabro,2362,Slaven Belupo Koprivnica,2025,KR1,7,Centre-Forward,28,Croatia,14,13,3,910
-285077,Alen Grgic,2362,Slaven Belupo Koprivnica,2025,KR1,27,Left Winger,30,Croatia,8,8,1,463
-494853,Igor Lepinjica,2362,Slaven Belupo Koprivnica,2025,KR1,23,Right Winger,25,Croatia,35,27,1,1072
-312760,Andrija Filipovic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,28,Croatia,10,7,1,135
-392306,Ivan Bozic,2362,Slaven Belupo Koprivnica,2025,KR1,9,Centre-Forward,28,Croatia,11,6,1,332
-54581,Ilija Nestorovski,2362,Slaven Belupo Koprivnica,2025,KR1,90,Centre-Forward,35,North Macedonia,24,24,6,1770
-1300638,Marko Ascic,2362,Slaven Belupo Koprivnica,2025,KR1,29,Centre-Forward,18,Croatia,17,5,0,67
-1113088,Frano Vlasic,2362,Slaven Belupo Koprivnica,2025,KR1,0,Centre-Forward,19,Croatia,0,0,0,0
-1491276,Losika Ratshukudu,2362,Slaven Belupo Koprivnica,2025,KR1,14,Centre-Forward,19,Botswana,5,3,0,247
-1210104,Ernis Qestaj,2362,Slaven Belupo Koprivnica,2025,KR1,19,Centre-Forward,18,Kosovo,23,5,0,142
-314616,Lovre Rogic,11083,NK Rudes,2026,KR1,95,Goalkeeper,31,Croatia,6,6,0,540
+1581432,Joseph Essomba Essomba,2362,Slaven Belupo Koprivnica,2026,KR1,0,Attack,22,Cameroon,1,0,0,0
+314616,Lovre Rogic,11083,NK Rudes,2026,KR1,95,Goalkeeper,31,Croatia,7,7,0,630
 554574,Frane Barbic,11083,NK Rudes,2026,KR1,12,Goalkeeper,26,Croatia,0,0,0,0
-1165776,Stipe Duvnjak,11083,NK Rudes,2026,KR1,0,Goalkeeper,18,Croatia,5,0,0,0
+1165776,Stipe Duvnjak,11083,NK Rudes,2026,KR1,0,Goalkeeper,18,Croatia,6,0,0,0
 1242321,Filip Holjevac,11083,NK Rudes,2026,KR1,1,Goalkeeper,19,Croatia,5,0,0,0
-1121428,Marko Zebic,11083,NK Rudes,2026,KR1,42,Centre-Back,19,Croatia,1,0,0,0
-891575,Filip Taraba,11083,NK Rudes,2026,KR1,44,Right-Back,20,Bosnia-Herzegovina,1,1,0,64
-619276,Bruno Unusic,11083,NK Rudes,2026,KR1,2,Right-Back,24,Croatia,5,5,0,386
-226095,Marko Stolnik,11083,NK Rudes,2026,KR1,5,Centre-Back,30,Croatia,6,6,0,533
+1121428,Marko Zebic,11083,NK Rudes,2026,KR1,42,Centre-Back,19,Croatia,2,1,0,90
+891575,Filip Taraba,11083,NK Rudes,2026,KR1,44,Right-Back,20,Bosnia-Herzegovina,2,2,0,154
+619276,Bruno Unusic,11083,NK Rudes,2026,KR1,2,Right-Back,24,Croatia,6,6,0,476
+226095,Marko Stolnik,11083,NK Rudes,2026,KR1,5,Centre-Back,30,Croatia,7,7,0,610
 148545,Diego Zivulic,11083,NK Rudes,2026,KR1,0,Centre-Back,34,Croatia,3,3,0,140
 1009496,Ante Susak,11083,NK Rudes,2026,KR1,21,Left-Back,20,Croatia,5,5,0,333
-86640,Vedran Celjak,11083,NK Rudes,2026,KR1,4,Right-Back,35,Croatia,6,6,0,490
+86640,Vedran Celjak,11083,NK Rudes,2026,KR1,4,Right-Back,35,Croatia,7,7,0,503
 331467,Felipe Curcio,11083,NK Rudes,2026,KR1,27,Left-Back,33,Brazil,3,3,0,222
 49985,Ivan Tomecak,11083,NK Rudes,2026,KR1,30,Right-Back,36,Croatia,0,0,0,0
-921806,Ivan Zutic,11083,NK Rudes,2026,KR1,26,Right-Back,25,Croatia,0,0,0,0
+921806,Ivan Zutic,11083,NK Rudes,2026,KR1,26,Right-Back,25,Croatia,1,0,0,0
 1088887,Nikica Peranovic,11083,NK Rudes,2026,KR1,0,Right-Back,20,Croatia,2,0,0,0
 1552766,Ante Udovicic,11083,NK Rudes,2026,KR1,0,Defender,17,Croatia,5,0,0,0
 1552780,Ante Pripuz Spekuljuk,11083,NK Rudes,2026,KR1,0,Right-Back,18,Croatia,5,1,0,9
 434711,Jakov Blagaic,11083,NK Rudes,2026,KR1,20,Attacking Midfield,26,Croatia,5,5,0,286
-610045,Jurica Poldrugac,11083,NK Rudes,2026,KR1,11,Attacking Midfield,29,Croatia,6,6,0,462
-927214,Domagoj Djurkovic,11083,NK Rudes,2026,KR1,22,Defensive Midfield,24,Croatia,0,0,0,0
-1056486,Noa Skoko,11083,NK Rudes,2026,KR1,37,Attacking Midfield,20,Croatia,5,5,1,396
-380097,Ivan Djoric,11083,NK Rudes,2026,KR1,24,Defensive Midfield,31,Serbia,5,5,1,348
+936684,Saad El Haddad,11083,NK Rudes,2026,KR1,88,Attacking Midfield,21,Morocco,1,1,0,67
+610045,Jurica Poldrugac,11083,NK Rudes,2026,KR1,11,Attacking Midfield,29,Croatia,7,7,0,485
+1056486,Noa Skoko,11083,NK Rudes,2026,KR1,37,Attacking Midfield,20,Croatia,6,6,1,441
+380097,Ivan Djoric,11083,NK Rudes,2026,KR1,24,Defensive Midfield,31,Serbia,6,6,1,438
 160484,Karlo Kamenar,11083,NK Rudes,2026,KR1,0,Central Midfield,32,Croatia,1,1,0,21
 1045526,Luka Popovic,11083,NK Rudes,2026,KR1,8,Midfield,21,Croatia,2,2,0,28
-588097,Xavi,11083,NK Rudes,2026,KR1,28,Central Midfield,28,Portugal,6,5,1,383
-1552791,Vid Seitz,11083,NK Rudes,2026,KR1,0,Defensive Midfield,16,Croatia,6,5,0,176
+588097,Xavi,11083,NK Rudes,2026,KR1,28,Central Midfield,28,Portugal,7,6,1,450
+1552791,Vid Seitz,11083,NK Rudes,2026,KR1,0,Defensive Midfield,16,Croatia,7,6,0,199
 1304678,Josip Radman,11083,NK Rudes,2026,KR1,0,Attacking Midfield,19,Croatia,2,0,0,0
-1567412,Cheick Tidiane Diabate,11083,NK Rudes,2026,KR1,0,Central Midfield,19,Cote d'Ivoire,0,0,0,0
-1373497,Cherno Saho,11083,NK Rudes,2026,KR1,19,Centre-Forward,21,The Gambia,2,2,0,148
-955598,Josip Pejic,11083,NK Rudes,2026,KR1,33,Left Winger,25,Croatia,6,3,0,35
+1567412,Cheick Tidiane Diabate,11083,NK Rudes,2026,KR1,61,Central Midfield,19,Cote d'Ivoire,1,1,0,45
+1373497,Cherno Saho,11083,NK Rudes,2026,KR1,19,Centre-Forward,21,The Gambia,3,3,1,238
+955598,Josip Pejic,11083,NK Rudes,2026,KR1,33,Left Winger,25,Croatia,7,3,0,35
 690479,Stefan Vukic,11083,NK Rudes,2026,KR1,9,Centre-Forward,31,Serbia,3,3,1,126
 294401,Kristijan Lovric,11083,NK Rudes,2026,KR1,24,Left Winger,30,Croatia,3,3,0,44
 397622,Merlin Hadzi,11083,NK Rudes,2026,KR1,0,Left Winger,27,Switzerland,0,0,0,0
-1024368,Lenny Ilecic,11083,NK Rudes,2026,KR1,7,Right Winger,22,Croatia,6,6,1,357
-532770,Toni Kolega,11083,NK Rudes,2026,KR1,14,Left Winger,27,Croatia,6,6,0,317
-89708,Junior Fernandes,11083,NK Rudes,2026,KR1,78,Centre-Forward,38,Chile,1,1,0,8
+1024368,Lenny Ilecic,11083,NK Rudes,2026,KR1,7,Right Winger,22,Croatia,7,7,2,402
+532770,Toni Kolega,11083,NK Rudes,2026,KR1,14,Left Winger,27,Croatia,7,7,0,362
+89708,Junior Fernandes,11083,NK Rudes,2026,KR1,78,Centre-Forward,38,Chile,2,1,0,8
 1025713,Allyson,11083,NK Rudes,2026,KR1,89,Left Winger,25,Brazil,0,0,0,0
-1138265,Josip Bralic,11083,NK Rudes,2026,KR1,0,Centre-Forward,18,Switzerland,3,2,1,57
+1138265,Josip Bralic,11083,NK Rudes,2026,KR1,35,Centre-Forward,18,Switzerland,4,2,1,57

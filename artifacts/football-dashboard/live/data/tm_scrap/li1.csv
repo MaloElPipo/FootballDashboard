@@ -1488,7 +1488,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 663764,Anton Tolordava,40090,FK Kauno Zalgiris,2025,LI1,3,Centre-Back,30,Georgia,26,25,2,1627
 352564,Aldayr Hernández,40090,FK Kauno Zalgiris,2025,LI1,23,Centre-Back,31,Colombia,27,22,1,1891
 686225,Marko Konatar,40090,FK Kauno Zalgiris,2025,LI1,33,Left-Back,26,Serbia,10,9,0,590
-276841,Nosa Iyobosa Edokpolor,40090,FK Kauno Zalgiris,2025,LI1,37,Left-Back,29,Austria,25,20,1,1695
+276841,Nosa Iyobosa Edokpolor,40090,FK Kauno Zalgiris,2025,LI1,37,Left-Back,30,Austria,25,20,1,1695
 345587,Luka Racic,40090,FK Kauno Zalgiris,2025,LI1,4,Centre-Back,27,Denmark,17,7,0,305
 371360,Lirim Kastrati,40090,FK Kauno Zalgiris,2025,LI1,62,Right-Back,27,Kosovo,8,6,0,493
 328802,Rokas Lekiatas,40090,FK Kauno Zalgiris,2025,LI1,77,Centre-Back,27,Lithuania,26,23,1,1494
@@ -1496,15 +1496,15 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 801400,Eduardas Jurjonas,40090,FK Kauno Zalgiris,2025,LI1,0,Left-Back,22,Lithuania,1,0,0,0
 503855,Amine Benchaib,40090,FK Kauno Zalgiris,2025,LI1,7,Attacking Midfield,28,Belgium,27,26,10,2163
 214284,Gratas Sirgėdas,40090,FK Kauno Zalgiris,2025,LI1,10,Central Midfield,31,Lithuania,26,18,3,1083
+409511,Damjan Pavlovic,40090,FK Kauno Zalgiris,2025,LI1,0,Defensive Midfield,25,Serbia,16,13,1,541
 303420,Anthony Kalik,40090,FK Kauno Zalgiris,2025,LI1,20,Attacking Midfield,28,Australia,8,8,0,480
 724740,Yukiyoshi Karashima,40090,FK Kauno Zalgiris,2025,LI1,8,Defensive Midfield,29,Japan,26,23,2,1845
 190513,Vykintas Slivka,40090,FK Kauno Zalgiris,2025,LI1,14,Central Midfield,31,Lithuania,10,10,0,700
-409511,Damjan Pavlovic,40090,FK Kauno Zalgiris,2025,LI1,0,Defensive Midfield,25,Serbia,16,13,1,541
 655678,Franco Baldassarra,40090,FK Kauno Zalgiris,2025,LI1,32,Central Midfield,27,Argentina,25,21,2,670
 226070,Ivan Fiolić,40090,FK Kauno Zalgiris,2025,LI1,17,Attacking Midfield,30,Croatia,9,1,0,54
 582227,Motiejus Burba,40090,FK Kauno Zalgiris,2025,LI1,24,Right Winger,23,Lithuania,28,28,5,1785
 425784,Leon Krekovic,40090,FK Kauno Zalgiris,2025,LI1,9,Left Winger,26,Croatia,9,8,5,483
-340073,Gabriel Debeljuh,40090,FK Kauno Zalgiris,2025,LI1,27,Centre-Forward,29,Croatia,7,7,2,346
+340073,Gabriel Debeljuh,40090,FK Kauno Zalgiris,2025,LI1,27,Centre-Forward,30,Croatia,7,7,2,346
 153820,Dāvis Ikaunieks,40090,FK Kauno Zalgiris,2025,LI1,0,Centre-Forward,32,Latvia,17,16,3,442
 537180,Haris Kadric,40090,FK Kauno Zalgiris,2025,LI1,0,Centre-Forward,26,Slovenia,5,3,1,186
 554304,Léo Ribeiro,40090,FK Kauno Zalgiris,2025,LI1,15,Right Winger,32,Brazil,28,24,5,1455
@@ -1521,7 +1521,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 663764,Anton Tolordava,40090,FK Kauno Zalgiris,2026,LI1,3,Centre-Back,30,Georgia,0,0,0,0
 352564,Aldayr Hernández,40090,FK Kauno Zalgiris,2026,LI1,23,Centre-Back,31,Colombia,0,0,0,0
 686225,Marko Konatar,40090,FK Kauno Zalgiris,2026,LI1,33,Left-Back,26,Serbia,0,0,0,0
-276841,Nosa Iyobosa Edokpolor,40090,FK Kauno Zalgiris,2026,LI1,37,Left-Back,29,Austria,0,0,0,0
+276841,Nosa Iyobosa Edokpolor,40090,FK Kauno Zalgiris,2026,LI1,37,Left-Back,30,Austria,0,0,0,0
 345587,Luka Racic,40090,FK Kauno Zalgiris,2026,LI1,4,Centre-Back,27,Denmark,0,0,0,0
 371360,Lirim Kastrati,40090,FK Kauno Zalgiris,2026,LI1,62,Right-Back,27,Kosovo,0,0,0,0
 328802,Rokas Lekiatas,40090,FK Kauno Zalgiris,2026,LI1,77,Centre-Back,27,Lithuania,0,0,0,0
@@ -1535,11 +1535,75 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 226070,Ivan Fiolić,40090,FK Kauno Zalgiris,2026,LI1,17,Attacking Midfield,30,Croatia,0,0,0,0
 582227,Motiejus Burba,40090,FK Kauno Zalgiris,2026,LI1,24,Right Winger,23,Lithuania,0,0,0,0
 425784,Leon Krekovic,40090,FK Kauno Zalgiris,2026,LI1,9,Left Winger,26,Croatia,0,0,0,0
-340073,Gabriel Debeljuh,40090,FK Kauno Zalgiris,2026,LI1,27,Centre-Forward,29,Croatia,0,0,0,0
+340073,Gabriel Debeljuh,40090,FK Kauno Zalgiris,2026,LI1,27,Centre-Forward,30,Croatia,0,0,0,0
 554304,Léo Ribeiro,40090,FK Kauno Zalgiris,2026,LI1,15,Right Winger,32,Brazil,0,0,0,0
 522091,Renan Oliveira,40090,FK Kauno Zalgiris,2026,LI1,19,Centre-Forward,29,Brazil,0,0,0,0
 216533,Fabien Ourega,40090,FK Kauno Zalgiris,2026,LI1,70,Left Winger,33,France,0,0,0,0
 140540,Fedor Černych,40090,FK Kauno Zalgiris,2026,LI1,11,Left Winger,35,Lithuania,0,0,0,0
+484941,Carlos Olses,602,FK Zalgiris Vilnius,2026,LI1,1,Goalkeeper,26,Venezuela,0,0,0,0
+457347,Vincentas Šarkauskas,602,FK Zalgiris Vilnius,2026,LI1,12,Goalkeeper,27,Lithuania,0,0,0,0
+1319510,Dominykas Čekavičius,602,FK Zalgiris Vilnius,2026,LI1,95,Goalkeeper,18,Lithuania,0,0,0,0
+714252,Saba Mamatsashvili,602,FK Zalgiris Vilnius,2026,LI1,23,Left-Back,24,Georgia,0,0,0,0
+230649,Klaudijus Upstas,602,FK Zalgiris Vilnius,2026,LI1,13,Right-Back,31,Lithuania,0,0,0,0
+328807,Deividas Šešplaukis,602,FK Zalgiris Vilnius,2026,LI1,18,Left-Back,28,Lithuania,0,0,0,0
+451328,Grigore Turda,602,FK Zalgiris Vilnius,2026,LI1,5,Centre-Back,29,Romania,0,0,0,0
+670822,Danny Lupano,602,FK Zalgiris Vilnius,2026,LI1,4,Centre-Back,26,Belgium,0,0,0,0
+832317,Martynas Šetkus,602,FK Zalgiris Vilnius,2026,LI1,14,Right-Back,20,Lithuania,0,0,0,0
+288348,Dominik Franke,602,FK Zalgiris Vilnius,2026,LI1,21,Left-Back,27,Germany,0,0,0,0
+336577,Petar Bosančić,602,FK Zalgiris Vilnius,2026,LI1,15,Centre-Back,30,Croatia,0,0,0,0
+593279,Younn Zahary,602,FK Zalgiris Vilnius,2026,LI1,26,Centre-Back,27,Comoros,0,0,0,0
+1061589,Patrik Matyžonok,602,FK Zalgiris Vilnius,2026,LI1,44,Centre-Back,20,Lithuania,0,0,0,0
+1319507,Vytis Pavilonis,602,FK Zalgiris Vilnius,2026,LI1,25,Centre-Back,19,Lithuania,0,0,0,0
+606743,Ivan Lytvynenko,602,FK Zalgiris Vilnius,2026,LI1,20,Defensive Midfield,25,Ukraine,0,0,0,0
+379150,Paulius Golubickas,602,FK Zalgiris Vilnius,2026,LI1,10,Attacking Midfield,27,Lithuania,0,0,0,0
+263246,Giedrius Matulevičius,602,FK Zalgiris Vilnius,2026,LI1,17,Right Midfield,29,Lithuania,0,0,0,0
+190520,Ovidijus Verbickas,602,FK Zalgiris Vilnius,2026,LI1,22,Left Midfield,33,Lithuania,0,0,0,0
+921512,Marko Capan,602,FK Zalgiris Vilnius,2026,LI1,6,Defensive Midfield,22,Croatia,0,0,0,0
+801377,Dariuš Stankevičius,602,FK Zalgiris Vilnius,2026,LI1,88,Central Midfield,22,Lithuania,0,0,0,0
+582224,Gustas Jarusevičius,602,FK Zalgiris Vilnius,2026,LI1,9,Right Midfield,23,Lithuania,0,0,0,0
+120773,Yuriy Kendysh,602,FK Zalgiris Vilnius,2026,LI1,77,Defensive Midfield,36,Belarus,0,0,0,0
+801384,Kajus Bička,602,FK Zalgiris Vilnius,2026,LI1,29,Attacking Midfield,21,Lithuania,0,0,0,0
+657635,Bryan Teixeira,602,FK Zalgiris Vilnius,2026,LI1,70,Centre-Forward,26,Cape Verde,0,0,0,0
+511669,Stanislav Bilenkyi,602,FK Zalgiris Vilnius,2026,LI1,19,Centre-Forward,28,Ukraine,0,0,0,0
+422801,Matas Vareika,602,FK Zalgiris Vilnius,2026,LI1,27,Left Winger,26,Lithuania,0,0,0,0
+222825,Nemanja Mihajlović,602,FK Zalgiris Vilnius,2026,LI1,7,Left Winger,30,Serbia,0,0,0,0
+552160,Nikola Petković,602,FK Zalgiris Vilnius,2026,LI1,11,Centre-Forward,30,Serbia,0,0,0,0
+819360,Jonas Usavičius,602,FK Zalgiris Vilnius,2026,LI1,16,Left Winger,20,Lithuania,0,0,0,0
+123256,Liviu Antal,602,FK Zalgiris Vilnius,2026,LI1,8,Right Winger,37,Romania,0,0,0,0
+875026,Nedas Klimavičius,602,FK Zalgiris Vilnius,2026,LI1,33,Left Winger,21,Lithuania,0,0,0,0
+484941,Carlos Olses,602,FK Zalgiris Vilnius,2025,LI1,1,Goalkeeper,26,Venezuela,28,13,0,1170
+457347,Vincentas Šarkauskas,602,FK Zalgiris Vilnius,2025,LI1,12,Goalkeeper,27,Lithuania,27,15,0,1350
+1319510,Dominykas Čekavičius,602,FK Zalgiris Vilnius,2025,LI1,95,Goalkeeper,18,Lithuania,11,0,0,0
+1319511,Domantas Jakubovskis,602,FK Zalgiris Vilnius,2025,LI1,0,Goalkeeper,19,Lithuania,1,0,0,0
+714252,Saba Mamatsashvili,602,FK Zalgiris Vilnius,2025,LI1,23,Left-Back,24,Georgia,24,19,0,1034
+230649,Klaudijus Upstas,602,FK Zalgiris Vilnius,2025,LI1,13,Right-Back,31,Lithuania,25,24,0,1665
+328807,Deividas Šešplaukis,602,FK Zalgiris Vilnius,2025,LI1,18,Left-Back,28,Lithuania,27,27,2,1876
+451328,Grigore Turda,602,FK Zalgiris Vilnius,2025,LI1,5,Centre-Back,29,Romania,26,19,1,1558
+670822,Danny Lupano,602,FK Zalgiris Vilnius,2025,LI1,4,Centre-Back,26,Belgium,13,13,1,1053
+832317,Martynas Šetkus,602,FK Zalgiris Vilnius,2025,LI1,14,Right-Back,20,Lithuania,27,10,0,256
+288348,Dominik Franke,602,FK Zalgiris Vilnius,2025,LI1,21,Left-Back,27,Germany,13,13,0,862
+336577,Petar Bosančić,602,FK Zalgiris Vilnius,2025,LI1,15,Centre-Back,30,Croatia,27,24,1,2105
+593279,Younn Zahary,602,FK Zalgiris Vilnius,2025,LI1,26,Centre-Back,27,Comoros,1,0,0,0
+1061589,Patrik Matyžonok,602,FK Zalgiris Vilnius,2025,LI1,44,Centre-Back,20,Lithuania,19,5,0,320
+1319507,Vytis Pavilonis,602,FK Zalgiris Vilnius,2025,LI1,25,Centre-Back,19,Lithuania,6,0,0,0
+606743,Ivan Lytvynenko,602,FK Zalgiris Vilnius,2025,LI1,20,Defensive Midfield,25,Ukraine,9,9,1,535
+379150,Paulius Golubickas,602,FK Zalgiris Vilnius,2025,LI1,10,Attacking Midfield,27,Lithuania,27,27,1,2076
+263246,Giedrius Matulevičius,602,FK Zalgiris Vilnius,2025,LI1,17,Right Midfield,29,Lithuania,7,7,1,596
+190520,Ovidijus Verbickas,602,FK Zalgiris Vilnius,2025,LI1,22,Left Midfield,33,Lithuania,24,18,0,796
+921512,Marko Capan,602,FK Zalgiris Vilnius,2025,LI1,6,Defensive Midfield,22,Croatia,27,26,3,1781
+801377,Dariuš Stankevičius,602,FK Zalgiris Vilnius,2025,LI1,88,Central Midfield,22,Lithuania,0,0,0,0
+582224,Gustas Jarusevičius,602,FK Zalgiris Vilnius,2025,LI1,9,Right Midfield,23,Lithuania,27,18,0,361
+120773,Yuriy Kendysh,602,FK Zalgiris Vilnius,2025,LI1,77,Defensive Midfield,36,Belarus,26,24,5,2127
+801384,Kajus Bička,602,FK Zalgiris Vilnius,2025,LI1,29,Attacking Midfield,21,Lithuania,21,1,0,9
+657635,Bryan Teixeira,602,FK Zalgiris Vilnius,2025,LI1,70,Centre-Forward,26,Cape Verde,25,24,1,1502
+511669,Stanislav Bilenkyi,602,FK Zalgiris Vilnius,2025,LI1,19,Centre-Forward,28,Ukraine,12,12,3,1067
+422801,Matas Vareika,602,FK Zalgiris Vilnius,2025,LI1,27,Left Winger,26,Lithuania,15,12,3,572
+222825,Nemanja Mihajlović,602,FK Zalgiris Vilnius,2025,LI1,7,Left Winger,30,Serbia,28,17,0,812
+552160,Nikola Petković,602,FK Zalgiris Vilnius,2025,LI1,11,Centre-Forward,30,Serbia,27,26,10,1249
+819360,Jonas Usavičius,602,FK Zalgiris Vilnius,2025,LI1,16,Left Winger,20,Lithuania,6,1,0,21
+123256,Liviu Antal,602,FK Zalgiris Vilnius,2025,LI1,8,Right Winger,37,Romania,28,22,6,971
+875026,Nedas Klimavičius,602,FK Zalgiris Vilnius,2025,LI1,33,Left Winger,21,Lithuania,1,0,0,0
+1514843,Ousmane Seck,602,FK Zalgiris Vilnius,2025,LI1,0,Centre-Forward,18,Senegal,3,0,0,0
 826018,Paulius Linkevičius,42310,FA Siauliai,2025,LI1,12,Goalkeeper,20,Lithuania,23,15,0,1317
 874591,Gustas Baliutavičius,42310,FA Siauliai,2025,LI1,61,Goalkeeper,26,Lithuania,22,12,0,1023
 832354,Vilius Šivickas,42310,FA Siauliai,2025,LI1,1,Goalkeeper,21,Lithuania,29,3,0,270
@@ -1577,70 +1641,39 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 353212,Rui Batalha,42310,FA Siauliai,2025,LI1,0,Left Winger,30,Portugal,14,14,2,1143
 1296955,Augustas Valuckas,42310,FA Siauliai,2025,LI1,0,Left Winger,17,Lithuania,6,6,0,169
 1515334,Gustas Gruodis,42310,FA Siauliai,2025,LI1,0,Attack,0,Lithuania,1,0,0,0
-484941,Carlos Olses,602,FK Zalgiris Vilnius,2026,LI1,1,Goalkeeper,26,Venezuela,0,0,0,0
-457347,Vincentas Šarkauskas,602,FK Zalgiris Vilnius,2026,LI1,12,Goalkeeper,27,Lithuania,0,0,0,0
-1319510,Dominykas Čekavičius,602,FK Zalgiris Vilnius,2026,LI1,95,Goalkeeper,18,Lithuania,0,0,0,0
-714252,Saba Mamatsashvili,602,FK Zalgiris Vilnius,2026,LI1,23,Left-Back,24,Georgia,0,0,0,0
-230649,Klaudijus Upstas,602,FK Zalgiris Vilnius,2026,LI1,13,Right-Back,31,Lithuania,0,0,0,0
-328807,Deividas Šešplaukis,602,FK Zalgiris Vilnius,2026,LI1,18,Left-Back,28,Lithuania,0,0,0,0
-451328,Grigore Turda,602,FK Zalgiris Vilnius,2026,LI1,5,Centre-Back,29,Romania,0,0,0,0
-670822,Danny Lupano,602,FK Zalgiris Vilnius,2026,LI1,4,Centre-Back,26,Belgium,0,0,0,0
-832317,Martynas Šetkus,602,FK Zalgiris Vilnius,2026,LI1,14,Right-Back,20,Lithuania,0,0,0,0
-288348,Dominik Franke,602,FK Zalgiris Vilnius,2026,LI1,21,Left-Back,27,Germany,0,0,0,0
-336577,Petar Bosančić,602,FK Zalgiris Vilnius,2026,LI1,15,Centre-Back,30,Croatia,0,0,0,0
-593279,Younn Zahary,602,FK Zalgiris Vilnius,2026,LI1,26,Centre-Back,27,Comoros,0,0,0,0
-1061589,Patrik Matyžonok,602,FK Zalgiris Vilnius,2026,LI1,44,Centre-Back,20,Lithuania,0,0,0,0
-1319507,Vytis Pavilonis,602,FK Zalgiris Vilnius,2026,LI1,25,Centre-Back,19,Lithuania,0,0,0,0
-606743,Ivan Lytvynenko,602,FK Zalgiris Vilnius,2026,LI1,20,Defensive Midfield,25,Ukraine,0,0,0,0
-379150,Paulius Golubickas,602,FK Zalgiris Vilnius,2026,LI1,10,Attacking Midfield,27,Lithuania,0,0,0,0
-263246,Giedrius Matulevičius,602,FK Zalgiris Vilnius,2026,LI1,17,Right Midfield,29,Lithuania,0,0,0,0
-190520,Ovidijus Verbickas,602,FK Zalgiris Vilnius,2026,LI1,22,Left Midfield,33,Lithuania,0,0,0,0
-921512,Marko Capan,602,FK Zalgiris Vilnius,2026,LI1,6,Defensive Midfield,22,Croatia,0,0,0,0
-801377,Dariuš Stankevičius,602,FK Zalgiris Vilnius,2026,LI1,88,Central Midfield,22,Lithuania,0,0,0,0
-582224,Gustas Jarusevičius,602,FK Zalgiris Vilnius,2026,LI1,9,Right Midfield,23,Lithuania,0,0,0,0
-120773,Yuriy Kendysh,602,FK Zalgiris Vilnius,2026,LI1,77,Defensive Midfield,36,Belarus,0,0,0,0
-801384,Kajus Bička,602,FK Zalgiris Vilnius,2026,LI1,29,Attacking Midfield,21,Lithuania,0,0,0,0
-657635,Bryan Teixeira,602,FK Zalgiris Vilnius,2026,LI1,70,Centre-Forward,26,Cape Verde,0,0,0,0
-511669,Stanislav Bilenkyi,602,FK Zalgiris Vilnius,2026,LI1,19,Centre-Forward,28,Ukraine,0,0,0,0
-422801,Matas Vareika,602,FK Zalgiris Vilnius,2026,LI1,27,Left Winger,26,Lithuania,0,0,0,0
-222825,Nemanja Mihajlović,602,FK Zalgiris Vilnius,2026,LI1,7,Left Winger,30,Serbia,0,0,0,0
-552160,Nikola Petković,602,FK Zalgiris Vilnius,2026,LI1,11,Centre-Forward,29,Serbia,0,0,0,0
-819360,Jonas Usavičius,602,FK Zalgiris Vilnius,2026,LI1,16,Left Winger,20,Lithuania,0,0,0,0
-123256,Liviu Antal,602,FK Zalgiris Vilnius,2026,LI1,8,Right Winger,37,Romania,0,0,0,0
-875026,Nedas Klimavičius,602,FK Zalgiris Vilnius,2026,LI1,33,Left Winger,21,Lithuania,0,0,0,0
-484941,Carlos Olses,602,FK Zalgiris Vilnius,2025,LI1,1,Goalkeeper,26,Venezuela,28,13,0,1170
-457347,Vincentas Šarkauskas,602,FK Zalgiris Vilnius,2025,LI1,12,Goalkeeper,27,Lithuania,27,15,0,1350
-1319510,Dominykas Čekavičius,602,FK Zalgiris Vilnius,2025,LI1,95,Goalkeeper,18,Lithuania,11,0,0,0
-1319511,Domantas Jakubovskis,602,FK Zalgiris Vilnius,2025,LI1,0,Goalkeeper,19,Lithuania,1,0,0,0
-714252,Saba Mamatsashvili,602,FK Zalgiris Vilnius,2025,LI1,23,Left-Back,24,Georgia,24,19,0,1034
-230649,Klaudijus Upstas,602,FK Zalgiris Vilnius,2025,LI1,13,Right-Back,31,Lithuania,25,24,0,1665
-328807,Deividas Šešplaukis,602,FK Zalgiris Vilnius,2025,LI1,18,Left-Back,28,Lithuania,27,27,2,1876
-451328,Grigore Turda,602,FK Zalgiris Vilnius,2025,LI1,5,Centre-Back,29,Romania,26,19,1,1558
-670822,Danny Lupano,602,FK Zalgiris Vilnius,2025,LI1,4,Centre-Back,26,Belgium,13,13,1,1053
-832317,Martynas Šetkus,602,FK Zalgiris Vilnius,2025,LI1,14,Right-Back,20,Lithuania,27,10,0,256
-288348,Dominik Franke,602,FK Zalgiris Vilnius,2025,LI1,21,Left-Back,27,Germany,13,13,0,862
-336577,Petar Bosančić,602,FK Zalgiris Vilnius,2025,LI1,15,Centre-Back,30,Croatia,27,24,1,2105
-593279,Younn Zahary,602,FK Zalgiris Vilnius,2025,LI1,26,Centre-Back,27,Comoros,1,0,0,0
-1061589,Patrik Matyžonok,602,FK Zalgiris Vilnius,2025,LI1,44,Centre-Back,20,Lithuania,19,5,0,320
-1319507,Vytis Pavilonis,602,FK Zalgiris Vilnius,2025,LI1,25,Centre-Back,19,Lithuania,6,0,0,0
-606743,Ivan Lytvynenko,602,FK Zalgiris Vilnius,2025,LI1,20,Defensive Midfield,25,Ukraine,9,9,1,535
-379150,Paulius Golubickas,602,FK Zalgiris Vilnius,2025,LI1,10,Attacking Midfield,27,Lithuania,27,27,1,2076
-263246,Giedrius Matulevičius,602,FK Zalgiris Vilnius,2025,LI1,17,Right Midfield,29,Lithuania,7,7,1,596
-190520,Ovidijus Verbickas,602,FK Zalgiris Vilnius,2025,LI1,22,Left Midfield,33,Lithuania,24,18,0,796
-921512,Marko Capan,602,FK Zalgiris Vilnius,2025,LI1,6,Defensive Midfield,22,Croatia,27,26,3,1781
-801377,Dariuš Stankevičius,602,FK Zalgiris Vilnius,2025,LI1,88,Central Midfield,22,Lithuania,0,0,0,0
-582224,Gustas Jarusevičius,602,FK Zalgiris Vilnius,2025,LI1,9,Right Midfield,23,Lithuania,27,18,0,361
-120773,Yuriy Kendysh,602,FK Zalgiris Vilnius,2025,LI1,77,Defensive Midfield,36,Belarus,26,24,5,2127
-801384,Kajus Bička,602,FK Zalgiris Vilnius,2025,LI1,29,Attacking Midfield,21,Lithuania,21,1,0,9
-657635,Bryan Teixeira,602,FK Zalgiris Vilnius,2025,LI1,70,Centre-Forward,26,Cape Verde,25,24,1,1502
-511669,Stanislav Bilenkyi,602,FK Zalgiris Vilnius,2025,LI1,19,Centre-Forward,28,Ukraine,12,12,3,1067
-422801,Matas Vareika,602,FK Zalgiris Vilnius,2025,LI1,27,Left Winger,26,Lithuania,15,12,3,572
-222825,Nemanja Mihajlović,602,FK Zalgiris Vilnius,2025,LI1,7,Left Winger,30,Serbia,28,17,0,812
-552160,Nikola Petković,602,FK Zalgiris Vilnius,2025,LI1,11,Centre-Forward,29,Serbia,27,26,10,1249
-819360,Jonas Usavičius,602,FK Zalgiris Vilnius,2025,LI1,16,Left Winger,20,Lithuania,6,1,0,21
-123256,Liviu Antal,602,FK Zalgiris Vilnius,2025,LI1,8,Right Winger,37,Romania,28,22,6,971
-875026,Nedas Klimavičius,602,FK Zalgiris Vilnius,2025,LI1,33,Left Winger,21,Lithuania,1,0,0,0
-1514843,Ousmane Seck,602,FK Zalgiris Vilnius,2025,LI1,0,Centre-Forward,18,Senegal,3,0,0,0
+422796,Arijus Bražinskas,49149,FK Panevezys,2025,LI1,22,Goalkeeper,26,Lithuania,28,1,0,84
+97830,Vytautas Černiauskas,49149,FK Panevezys,2025,LI1,1,Goalkeeper,37,Lithuania,27,27,0,2343
+1275735,Liudvikas Valius,49149,FK Panevezys,2025,LI1,12,Goalkeeper,19,Lithuania,28,1,0,90
+454666,Rokas Rasimavičius,49149,FK Panevezys,2025,LI1,32,Right-Back,25,Lithuania,21,20,2,1602
+247315,Justinas Januševskij,49149,FK Panevezys,2025,LI1,15,Centre-Back,32,Lithuania,25,24,0,2016
+373941,Joël Bopesu,49149,FK Panevezys,2025,LI1,95,Left-Back,31,France,27,22,1,1169
+891480,Miano van den Bos,49149,FK Panevezys,2025,LI1,5,Centre-Back,23,Tanzania,24,18,0,1146
+745328,Strahinja Kerkez,49149,FK Panevezys,2025,LI1,13,Centre-Back,23,Cyprus,27,20,1,1395
+879631,Laurit Krasniqi,49149,FK Panevezys,2025,LI1,50,Left-Back,25,Kosovo,6,0,0,0
+247981,Seydina Keita,49149,FK Panevezys,2025,LI1,33,Centre-Back,33,Senegal,6,5,0,394
+528786,Milan Delevic,49149,FK Panevezys,2025,LI1,45,Centre-Back,28,Serbia,1,0,0,0
+871112,Rayen Mzoughi,49149,FK Panevezys,2025,LI1,4,Centre-Back,26,Tunisia,14,1,0,45
+1171644,Dovydas Balsys,49149,FK Panevezys,2025,LI1,66,Centre-Back,17,Lithuania,28,15,0,1101
+668425,Eimantas Dzinga,49149,FK Panevezys,2025,LI1,0,Right-Back,23,Lithuania,3,0,0,0
+1108676,Ignas Lukoševičius,49149,FK Panevezys,2025,LI1,25,Defender,19,Lithuania,15,0,0,0
+1508970,Augustas Butkus,49149,FK Panevezys,2025,LI1,0,Defender,19,Lithuania,1,0,0,0
+422805,Matas Ramanauskas,49149,FK Panevezys,2025,LI1,6,Central Midfield,26,Lithuania,28,28,0,2520
+1356348,Salomon Kouadio,49149,FK Panevezys,2025,LI1,8,Central Midfield,23,Cote d'Ivoire,26,25,2,1497
+719654,Isaac Asante,49149,FK Panevezys,2025,LI1,34,Attacking Midfield,24,Belgium,25,24,4,1440
+870068,Ernestas Burdzilauskas,49149,FK Panevezys,2025,LI1,28,Central Midfield,23,Lithuania,28,28,2,2169
+634963,Parfait Bizoza,49149,FK Panevezys,2025,LI1,77,Defensive Midfield,27,Burundi,9,9,0,744
+164222,Ernestas Veliulis,49149,FK Panevezys,2025,LI1,7,Left Midfield,34,Lithuania,20,18,1,973
+536512,Lovro Grajfoner,49149,FK Panevezys,2025,LI1,11,Defensive Midfield,26,Slovenia,21,14,0,628
+205446,Jérôme Simon,49149,FK Panevezys,2025,LI1,26,Attacking Midfield,33,France,17,9,0,323
+1513704,Lukas Laimikis,49149,FK Panevezys,2025,LI1,0,Midfield,18,Lithuania,2,1,0,7
+447071,Nauris Petkevičius,49149,FK Panevezys,2025,LI1,24,Centre-Forward,26,Lithuania,12,11,0,523
+1114494,Oleksandr Kurtsev,49149,FK Panevezys,2025,LI1,17,Left Winger,24,Ukraine,24,23,2,1190
+321157,Edvin Muratovic,49149,FK Panevezys,2025,LI1,0,Centre-Forward,29,Luxembourg,16,15,2,763
+575086,Kwadwo Asamoah,49149,FK Panevezys,2025,LI1,27,Right Winger,24,Ghana,24,24,5,1508
+454655,Valdas Paulauskas,49149,FK Panevezys,2025,LI1,79,Centre-Forward,25,Lithuania,8,8,0,353
+316260,Elivelto,49149,FK Panevezys,2025,LI1,80,Left Winger,34,Brazil,20,19,2,934
+537234,Marko Bačanin,49149,FK Panevezys,2025,LI1,16,Centre-Forward,28,Serbia,26,20,3,537
+1271838,Jesse Adah,49149,FK Panevezys,2025,LI1,0,Right Winger,22,Netherlands,19,6,0,84
 826018,Paulius Linkevičius,42310,FA Siauliai,2026,LI1,12,Goalkeeper,20,Lithuania,0,0,0,0
 874591,Gustas Baliutavičius,42310,FA Siauliai,2026,LI1,61,Goalkeeper,26,Lithuania,0,0,0,0
 832354,Vilius Šivickas,42310,FA Siauliai,2026,LI1,1,Goalkeeper,21,Lithuania,0,0,0,0
@@ -1692,44 +1725,39 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 536512,Lovro Grajfoner,49149,FK Panevezys,2026,LI1,11,Defensive Midfield,26,Slovenia,0,0,0,0
 205446,Jérôme Simon,49149,FK Panevezys,2026,LI1,26,Attacking Midfield,33,France,0,0,0,0
 447071,Nauris Petkevičius,49149,FK Panevezys,2026,LI1,24,Centre-Forward,26,Lithuania,0,0,0,0
-1114494,Oleksandr Kurtsev,49149,FK Panevezys,2026,LI1,17,Left Winger,23,Ukraine,0,0,0,0
+1114494,Oleksandr Kurtsev,49149,FK Panevezys,2026,LI1,17,Left Winger,24,Ukraine,0,0,0,0
 575086,Kwadwo Asamoah,49149,FK Panevezys,2026,LI1,27,Right Winger,24,Ghana,0,0,0,0
 454655,Valdas Paulauskas,49149,FK Panevezys,2026,LI1,79,Centre-Forward,25,Lithuania,0,0,0,0
 316260,Elivelto,49149,FK Panevezys,2026,LI1,80,Left Winger,34,Brazil,0,0,0,0
 537234,Marko Bačanin,49149,FK Panevezys,2026,LI1,16,Centre-Forward,28,Serbia,0,0,0,0
-422796,Arijus Bražinskas,49149,FK Panevezys,2025,LI1,22,Goalkeeper,26,Lithuania,28,1,0,84
-97830,Vytautas Černiauskas,49149,FK Panevezys,2025,LI1,1,Goalkeeper,37,Lithuania,27,27,0,2343
-1275735,Liudvikas Valius,49149,FK Panevezys,2025,LI1,12,Goalkeeper,19,Lithuania,28,1,0,90
-454666,Rokas Rasimavičius,49149,FK Panevezys,2025,LI1,32,Right-Back,25,Lithuania,21,20,2,1602
-247315,Justinas Januševskij,49149,FK Panevezys,2025,LI1,15,Centre-Back,32,Lithuania,25,24,0,2016
-373941,Joël Bopesu,49149,FK Panevezys,2025,LI1,95,Left-Back,31,France,27,22,2,1169
-891480,Miano van den Bos,49149,FK Panevezys,2025,LI1,5,Centre-Back,23,Tanzania,24,18,0,1146
-745328,Strahinja Kerkez,49149,FK Panevezys,2025,LI1,13,Centre-Back,23,Cyprus,27,20,1,1395
-879631,Laurit Krasniqi,49149,FK Panevezys,2025,LI1,50,Left-Back,25,Kosovo,6,0,0,0
-247981,Seydina Keita,49149,FK Panevezys,2025,LI1,33,Centre-Back,33,Senegal,6,5,0,394
-528786,Milan Delevic,49149,FK Panevezys,2025,LI1,45,Centre-Back,28,Serbia,1,0,0,0
-871112,Rayen Mzoughi,49149,FK Panevezys,2025,LI1,4,Centre-Back,26,Tunisia,14,1,0,45
-1171644,Dovydas Balsys,49149,FK Panevezys,2025,LI1,66,Centre-Back,17,Lithuania,28,15,0,1101
-668425,Eimantas Dzinga,49149,FK Panevezys,2025,LI1,0,Right-Back,23,Lithuania,3,0,0,0
-1108676,Ignas Lukoševičius,49149,FK Panevezys,2025,LI1,25,Defender,19,Lithuania,15,0,0,0
-1508970,Augustas Butkus,49149,FK Panevezys,2025,LI1,0,Defender,19,Lithuania,1,0,0,0
-422805,Matas Ramanauskas,49149,FK Panevezys,2025,LI1,6,Central Midfield,26,Lithuania,28,28,0,2520
-1356348,Salomon Kouadio,49149,FK Panevezys,2025,LI1,8,Central Midfield,23,Cote d'Ivoire,26,25,2,1498
-719654,Isaac Asante,49149,FK Panevezys,2025,LI1,34,Attacking Midfield,24,Belgium,25,24,4,1440
-870068,Ernestas Burdzilauskas,49149,FK Panevezys,2025,LI1,28,Central Midfield,23,Lithuania,28,28,2,2169
-634963,Parfait Bizoza,49149,FK Panevezys,2025,LI1,77,Defensive Midfield,27,Burundi,9,9,0,744
-164222,Ernestas Veliulis,49149,FK Panevezys,2025,LI1,7,Left Midfield,34,Lithuania,20,18,1,973
-536512,Lovro Grajfoner,49149,FK Panevezys,2025,LI1,11,Defensive Midfield,26,Slovenia,21,14,0,628
-205446,Jérôme Simon,49149,FK Panevezys,2025,LI1,26,Attacking Midfield,33,France,17,9,0,323
-1513704,Lukas Laimikis,49149,FK Panevezys,2025,LI1,0,Midfield,18,Lithuania,2,1,0,7
-447071,Nauris Petkevičius,49149,FK Panevezys,2025,LI1,24,Centre-Forward,26,Lithuania,12,11,0,523
-1114494,Oleksandr Kurtsev,49149,FK Panevezys,2025,LI1,17,Left Winger,23,Ukraine,24,23,2,1190
-321157,Edvin Muratovic,49149,FK Panevezys,2025,LI1,0,Centre-Forward,29,Luxembourg,16,15,2,763
-575086,Kwadwo Asamoah,49149,FK Panevezys,2025,LI1,27,Right Winger,24,Ghana,24,24,5,1508
-454655,Valdas Paulauskas,49149,FK Panevezys,2025,LI1,79,Centre-Forward,25,Lithuania,8,8,0,353
-316260,Elivelto,49149,FK Panevezys,2025,LI1,80,Left Winger,34,Brazil,20,19,2,934
-537234,Marko Bačanin,49149,FK Panevezys,2025,LI1,16,Centre-Forward,28,Serbia,26,20,3,537
-1271838,Jesse Adah,49149,FK Panevezys,2025,LI1,0,Right Winger,22,Netherlands,19,6,0,84
+187267,Ignas Plūkas,8047,FK Suduva Marijampole,2026,LI1,31,Goalkeeper,32,Lithuania,0,0,0,0
+1012747,Giedrius Zenkevičius,8047,FK Suduva Marijampole,2026,LI1,12,Goalkeeper,28,Lithuania,0,0,0,0
+1037222,Rokas Pačėsa,8047,FK Suduva Marijampole,2026,LI1,66,Goalkeeper,20,Lithuania,0,0,0,0
+518381,Žygimantas Baltrūnas,8047,FK Suduva Marijampole,2026,LI1,5,Left-Back,24,Lithuania,0,0,0,0
+527959,Henry Uzochukwu,8047,FK Suduva Marijampole,2026,LI1,4,Right-Back,27,Nigeria,0,0,0,0
+328808,Ernestas Stočkūnas,8047,FK Suduva Marijampole,2026,LI1,75,Right-Back,28,Lithuania,0,0,0,0
+190483,Markas Beneta,8047,FK Suduva Marijampole,2026,LI1,29,Right-Back,33,Lithuania,0,0,0,0
+1042137,Yegor Tsykalo,8047,FK Suduva Marijampole,2026,LI1,0,Centre-Back,25,Ukraine,0,0,0,0
+1077430,Rati Grigalava,8047,FK Suduva Marijampole,2026,LI1,23,Centre-Back,20,Georgia,0,0,0,0
+383294,Yevgen Yefremov,8047,FK Suduva Marijampole,2026,LI1,80,Right-Back,32,Ukraine,0,0,0,0
+124197,Aleksandar Živanović,8047,FK Suduva Marijampole,2026,LI1,15,Centre-Back,39,Serbia,0,0,0,0
+1119449,Dominykas Pudžemys,8047,FK Suduva Marijampole,2026,LI1,87,Right-Back,19,Lithuania,0,0,0,0
+1111775,Ibrahima Seck,8047,FK Suduva Marijampole,2026,LI1,7,Attacking Midfield,22,Senegal,0,0,0,0
+373226,Domantas Antanavičius,8047,FK Suduva Marijampole,2026,LI1,26,Defensive Midfield,27,Lithuania,0,0,0,0
+446767,Steve Lawson,8047,FK Suduva Marijampole,2026,LI1,8,Defensive Midfield,32,France,0,0,0,0
+394779,Sidy Sanokho,8047,FK Suduva Marijampole,2026,LI1,94,Attacking Midfield,29,France,0,0,0,0
+649288,Amadou Sabo,8047,FK Suduva Marijampole,2026,LI1,6,Attacking Midfield,26,Niger,0,0,0,0
+999121,Frankline Tangiri,8047,FK Suduva Marijampole,2026,LI1,19,Right Midfield,24,Cameroon,0,0,0,0
+422803,Titas Milašius,8047,FK Suduva Marijampole,2026,LI1,18,Left Midfield,25,Lithuania,0,0,0,0
+1243680,Pijus Bičkauskas,8047,FK Suduva Marijampole,2026,LI1,77,Left Midfield,18,Lithuania,0,0,0,0
+819365,Ignas Skamarakas,8047,FK Suduva Marijampole,2026,LI1,46,Midfield,20,Lithuania,0,0,0,0
+531904,Meinardas Mikulėnas,8047,FK Suduva Marijampole,2026,LI1,13,Centre-Forward,24,Lithuania,0,0,0,0
+798983,Faustas Steponavičius,8047,FK Suduva Marijampole,2026,LI1,14,Centre-Forward,22,Lithuania,0,0,0,0
+1380147,Lucky Tom,8047,FK Suduva Marijampole,2026,LI1,9,Centre-Forward,20,Nigeria,0,0,0,0
+1239007,Yusuke Omori,8047,FK Suduva Marijampole,2026,LI1,20,Right Winger,21,Japan,0,0,0,0
+415993,Omran Haydary,8047,FK Suduva Marijampole,2026,LI1,10,Left Winger,28,Afghanistan,0,0,0,0
+448538,Moutir Chajia,8047,FK Suduva Marijampole,2026,LI1,11,Right Winger,28,Belgium,0,0,0,0
+993665,Emmanuel Agbor,8047,FK Suduva Marijampole,2026,LI1,21,Left Winger,23,Cameroon,0,0,0,0
 187267,Ignas Plūkas,8047,FK Suduva Marijampole,2025,LI1,31,Goalkeeper,32,Lithuania,28,28,0,2520
 1012747,Giedrius Zenkevičius,8047,FK Suduva Marijampole,2025,LI1,12,Goalkeeper,28,Lithuania,26,0,0,0
 1037222,Rokas Pačėsa,8047,FK Suduva Marijampole,2025,LI1,66,Goalkeeper,20,Lithuania,25,0,0,0
@@ -1760,9 +1788,65 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 448538,Moutir Chajia,8047,FK Suduva Marijampole,2025,LI1,11,Right Winger,28,Belgium,15,14,2,384
 1333998,Walid Dhouib,8047,FK Suduva Marijampole,2025,LI1,0,Right Winger,20,Tunisia,14,7,0,29
 993665,Emmanuel Agbor,8047,FK Suduva Marijampole,2025,LI1,21,Left Winger,23,Cameroon,2,2,0,130
+615293,Mantas Bertašius,98841,FK TransINVEST,2026,LI1,55,Goalkeeper,26,Lithuania,0,0,0,0
+712166,Julius Virvilas,98841,FK TransINVEST,2026,LI1,1,Goalkeeper,22,Lithuania,0,0,0,0
+549646,Igor Mostovei,98841,FK TransINVEST,2026,LI1,25,Goalkeeper,27,Moldova,0,0,0,0
+300143,Dominykas Barauskas,98841,FK TransINVEST,2026,LI1,33,Centre-Back,29,Lithuania,0,0,0,0
+300164,Ričardas Šveikauskas,98841,FK TransINVEST,2026,LI1,5,Centre-Back,29,Lithuania,0,0,0,0
+505641,Bruno Tavares,98841,FK TransINVEST,2026,LI1,49,Left-Back,24,Portugal,0,0,0,0
+328804,Edvinas Kloniūnas,98841,FK TransINVEST,2026,LI1,80,Centre-Back,28,Lithuania,0,0,0,0
+1518055,Oscar Boateng,98841,FK TransINVEST,2026,LI1,19,Centre-Back,22,England,0,0,0,0
+167369,Edvinas Girdvainis,98841,FK TransINVEST,2026,LI1,93,Centre-Back,33,Lithuania,0,0,0,0
+809639,Emmanuel Koffi,98841,FK TransINVEST,2026,LI1,15,Left-Back,24,Ghana,0,0,0,0
+819377,Augustas Tamaševičius,98841,FK TransINVEST,2026,LI1,26,Right-Back,20,Lithuania,0,0,0,0
+888313,Yegor Glushach,98841,FK TransINVEST,2026,LI1,8,Attacking Midfield,23,Ukraine,0,0,0,0
+531453,Xabi Auzmendi,98841,FK TransINVEST,2026,LI1,23,Attacking Midfield,29,Spain,0,0,0,0
+386667,Iker Bilbao,98841,FK TransINVEST,2026,LI1,6,Central Midfield,30,Spain,0,0,0,0
+287182,Denis Bosnjak,98841,FK TransINVEST,2026,LI1,7,Defensive Midfield,29,Austria,0,0,0,0
+798980,Domantas Šluta,98841,FK TransINVEST,2026,LI1,88,Central Midfield,21,Lithuania,0,0,0,0
+457908,Til Mavretič,98841,FK TransINVEST,2026,LI1,17,Central Midfield,28,Slovenia,0,0,0,0
+1258418,Nojus Petkus,98841,FK TransINVEST,2026,LI1,12,Central Midfield,18,Lithuania,0,0,0,0
+150668,Artūras Žulpa,98841,FK TransINVEST,2026,LI1,44,Defensive Midfield,36,Lithuania,0,0,0,0
+306131,Stefan Milosevic,98841,FK TransINVEST,2026,LI1,9,Centre-Forward,30,Montenegro,0,0,0,0
+383229,Mykola Musolitin,98841,FK TransINVEST,2026,LI1,32,Right Winger,27,Ukraine,0,0,0,0
+684244,Chidera Nwoga,98841,FK TransINVEST,2026,LI1,10,Centre-Forward,26,Nigeria,0,0,0,0
+1153852,Hideyasu Tanaka,98841,FK TransINVEST,2026,LI1,13,Left Winger,23,Japan,0,0,0,0
+540665,Amadou Traoré,98841,FK TransINVEST,2026,LI1,70,Right Winger,24,Guinea,0,0,0,0
+431338,Nana Akosah-Bempah,98841,FK TransINVEST,2026,LI1,11,Right Winger,29,United States,0,0,0,0
+332144,Volodymyr Krynskyi,23559,FK Banga Gargzdai,2025,LI1,14,Goalkeeper,29,Ukraine,28,28,0,2520
+82654,Armantas Vitkauskas,23559,FK Banga Gargzdai,2025,LI1,1,Goalkeeper,37,Lithuania,27,0,0,0
+832316,Lukas Grinkevičius,23559,FK Banga Gargzdai,2025,LI1,12,Goalkeeper,20,Lithuania,26,0,0,0
+695504,Simão Júnior,23559,FK Banga Gargzdai,2025,LI1,6,Centre-Back,28,Guinea-Bissau,28,26,1,2301
+531906,Natanas Žebrauskas,23559,FK Banga Gargzdai,2025,LI1,13,Right-Back,24,Lithuania,23,19,0,1404
+422811,Valdas Antužis,23559,FK Banga Gargzdai,2025,LI1,19,Right-Back,26,Lithuania,27,20,0,1564
+445449,Ricardo Henning,23559,FK Banga Gargzdai,2025,LI1,27,Centre-Back,26,Germany,27,27,0,2018
+718780,Deividas Malžinskas,23559,FK Banga Gargzdai,2025,LI1,3,Centre-Back,27,Lithuania,26,25,3,1764
+1223933,Cadu,23559,FK Banga Gargzdai,2025,LI1,51,Left-Back,21,Brazil,27,23,0,1367
+1191585,Armandas Razvadauskas,23559,FK Banga Gargzdai,2025,LI1,0,Right-Back,21,Lithuania,3,0,0,0
+438241,Aleksandr Levšin,23559,FK Banga Gargzdai,2025,LI1,20,Left-Back,27,Lithuania,25,12,0,412
+882962,Aaron Olugbogi,23559,FK Banga Gargzdai,2025,LI1,99,Left Midfield,25,Nigeria,28,28,4,2317
+668426,Vaidas Magdušauskas,23559,FK Banga Gargzdai,2025,LI1,10,Attacking Midfield,22,Lithuania,27,26,2,1855
+475654,Rokas Filipavičius,23559,FK Banga Gargzdai,2025,LI1,11,Attacking Midfield,26,Lithuania,26,26,4,2279
+1341817,Sidas Praleika,23559,FK Banga Gargzdai,2025,LI1,0,Defensive Midfield,19,Lithuania,23,23,2,1872
+783179,Domantas Vaičekauskas,23559,FK Banga Gargzdai,2025,LI1,44,Defensive Midfield,23,Lithuania,3,2,0,4
+190502,Dovydas Norvilas,23559,FK Banga Gargzdai,2025,LI1,7,Central Midfield,33,Lithuania,27,20,1,513
+1108671,Matas Ambrazaitis,23559,FK Banga Gargzdai,2025,LI1,22,Left Midfield,19,Lithuania,25,5,0,41
+479637,Ronaldo Camará,23559,FK Banga Gargzdai,2025,LI1,0,Attacking Midfield,23,Guinea-Bissau,11,3,0,19
+1385250,Arminas Strakšys,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,19,Lithuania,1,0,0,0
+1528072,Nojus Litvinas,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,0,Lithuania,2,0,0,0
+1334653,Justinas Juozapavičius,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,19,Lithuania,3,0,0,0
+1539822,Vakaris Jurgutis,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,0,Lithuania,2,1,0,1
+1314289,Deividas Lukas,23559,FK Banga Gargzdai,2025,LI1,28,Defensive Midfield,18,Lithuania,9,4,0,46
+1576412,Sheriff Mohammed Sheriff,23559,FK Banga Gargzdai,2025,LI1,55,Central Midfield,0,Nigeria,6,3,0,44
+725330,Ignas Venckus,23559,FK Banga Gargzdai,2025,LI1,77,Centre-Forward,25,Lithuania,25,24,8,1587
+871581,Misaki Sato,23559,FK Banga Gargzdai,2025,LI1,45,Left Winger,28,Japan,27,27,3,2045
+707663,Aaron Appiah,23559,FK Banga Gargzdai,2025,LI1,9,Centre-Forward,23,Switzerland,20,18,2,739
+801396,Maksim Andrejev,23559,FK Banga Gargzdai,2025,LI1,17,Left Winger,22,Lithuania,23,13,1,116
+892680,Umaro Candé,23559,FK Banga Gargzdai,2025,LI1,30,Right Winger,21,Guinea-Bissau,27,21,0,598
+600304,Kofi Fosuhene Asare,23559,FK Banga Gargzdai,2025,LI1,0,Left Winger,24,Sweden,19,15,0,238
 615293,Mantas Bertašius,98841,FK TransINVEST,2025,LI1,55,Goalkeeper,26,Lithuania,15,7,0,630
 712166,Julius Virvilas,98841,FK TransINVEST,2025,LI1,1,Goalkeeper,22,Lithuania,28,12,0,1080
-549646,Igor Mostovei,98841,FK TransINVEST,2025,LI1,25,Goalkeeper,26,Moldova,12,9,0,810
+549646,Igor Mostovei,98841,FK TransINVEST,2025,LI1,25,Goalkeeper,27,Moldova,12,9,0,810
 1279053,Artiom Šankin,98841,FK TransINVEST,2025,LI1,0,Goalkeeper,18,Lithuania,1,0,0,0
 1517538,Dominykas Balnanosis,98841,FK TransINVEST,2025,LI1,0,Goalkeeper,18,Lithuania,1,0,0,0
 300143,Dominykas Barauskas,98841,FK TransINVEST,2025,LI1,33,Centre-Back,29,Lithuania,26,25,1,2152
@@ -1791,92 +1875,110 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 431338,Nana Akosah-Bempah,98841,FK TransINVEST,2025,LI1,11,Right Winger,29,United States,13,8,1,298
 317449,Tomi Adeloye,98841,FK TransINVEST,2025,LI1,0,Centre-Forward,30,Nigeria,15,13,0,205
 1525651,Tomas Steponavičius,98841,FK TransINVEST,2025,LI1,0,Right Winger,19,Lithuania,12,0,0,0
-187267,Ignas Plūkas,8047,FK Suduva Marijampole,2026,LI1,31,Goalkeeper,32,Lithuania,0,0,0,0
-1012747,Giedrius Zenkevičius,8047,FK Suduva Marijampole,2026,LI1,12,Goalkeeper,28,Lithuania,0,0,0,0
-1037222,Rokas Pačėsa,8047,FK Suduva Marijampole,2026,LI1,66,Goalkeeper,20,Lithuania,0,0,0,0
-518381,Žygimantas Baltrūnas,8047,FK Suduva Marijampole,2026,LI1,5,Left-Back,24,Lithuania,0,0,0,0
-527959,Henry Uzochukwu,8047,FK Suduva Marijampole,2026,LI1,4,Right-Back,27,Nigeria,0,0,0,0
-328808,Ernestas Stočkūnas,8047,FK Suduva Marijampole,2026,LI1,75,Right-Back,28,Lithuania,0,0,0,0
-190483,Markas Beneta,8047,FK Suduva Marijampole,2026,LI1,29,Right-Back,33,Lithuania,0,0,0,0
-1042137,Yegor Tsykalo,8047,FK Suduva Marijampole,2026,LI1,0,Centre-Back,25,Ukraine,0,0,0,0
-1077430,Rati Grigalava,8047,FK Suduva Marijampole,2026,LI1,23,Centre-Back,20,Georgia,0,0,0,0
-383294,Yevgen Yefremov,8047,FK Suduva Marijampole,2026,LI1,80,Right-Back,32,Ukraine,0,0,0,0
-124197,Aleksandar Živanović,8047,FK Suduva Marijampole,2026,LI1,15,Centre-Back,39,Serbia,0,0,0,0
-1119449,Dominykas Pudžemys,8047,FK Suduva Marijampole,2026,LI1,87,Right-Back,19,Lithuania,0,0,0,0
-1111775,Ibrahima Seck,8047,FK Suduva Marijampole,2026,LI1,7,Attacking Midfield,22,Senegal,0,0,0,0
-373226,Domantas Antanavičius,8047,FK Suduva Marijampole,2026,LI1,26,Defensive Midfield,27,Lithuania,0,0,0,0
-446767,Steve Lawson,8047,FK Suduva Marijampole,2026,LI1,8,Defensive Midfield,32,France,0,0,0,0
-394779,Sidy Sanokho,8047,FK Suduva Marijampole,2026,LI1,94,Attacking Midfield,29,France,0,0,0,0
-649288,Amadou Sabo,8047,FK Suduva Marijampole,2026,LI1,6,Attacking Midfield,26,Niger,0,0,0,0
-999121,Frankline Tangiri,8047,FK Suduva Marijampole,2026,LI1,19,Right Midfield,24,Cameroon,0,0,0,0
-422803,Titas Milašius,8047,FK Suduva Marijampole,2026,LI1,18,Left Midfield,25,Lithuania,0,0,0,0
-1243680,Pijus Bičkauskas,8047,FK Suduva Marijampole,2026,LI1,77,Left Midfield,18,Lithuania,0,0,0,0
-819365,Ignas Skamarakas,8047,FK Suduva Marijampole,2026,LI1,46,Midfield,20,Lithuania,0,0,0,0
-531904,Meinardas Mikulėnas,8047,FK Suduva Marijampole,2026,LI1,13,Centre-Forward,24,Lithuania,0,0,0,0
-798983,Faustas Steponavičius,8047,FK Suduva Marijampole,2026,LI1,14,Centre-Forward,22,Lithuania,0,0,0,0
-1380147,Lucky Tom,8047,FK Suduva Marijampole,2026,LI1,9,Centre-Forward,20,Nigeria,0,0,0,0
-1239007,Yusuke Omori,8047,FK Suduva Marijampole,2026,LI1,20,Right Winger,21,Japan,0,0,0,0
-415993,Omran Haydary,8047,FK Suduva Marijampole,2026,LI1,10,Left Winger,28,Afghanistan,0,0,0,0
-448538,Moutir Chajia,8047,FK Suduva Marijampole,2026,LI1,11,Right Winger,28,Belgium,0,0,0,0
-993665,Emmanuel Agbor,8047,FK Suduva Marijampole,2026,LI1,21,Left Winger,23,Cameroon,0,0,0,0
-332144,Volodymyr Krynskyi,23559,FK Banga Gargzdai,2025,LI1,14,Goalkeeper,29,Ukraine,28,28,0,2520
-82654,Armantas Vitkauskas,23559,FK Banga Gargzdai,2025,LI1,1,Goalkeeper,37,Lithuania,27,0,0,0
-832316,Lukas Grinkevičius,23559,FK Banga Gargzdai,2025,LI1,12,Goalkeeper,20,Lithuania,26,0,0,0
-695504,Simão Júnior,23559,FK Banga Gargzdai,2025,LI1,6,Centre-Back,28,Guinea-Bissau,28,26,1,2301
-531906,Natanas Žebrauskas,23559,FK Banga Gargzdai,2025,LI1,13,Right-Back,24,Lithuania,23,19,0,1404
-422811,Valdas Antužis,23559,FK Banga Gargzdai,2025,LI1,19,Right-Back,26,Lithuania,27,20,0,1564
-445449,Ricardo Henning,23559,FK Banga Gargzdai,2025,LI1,27,Centre-Back,25,Germany,27,27,0,2018
-718780,Deividas Malžinskas,23559,FK Banga Gargzdai,2025,LI1,3,Centre-Back,27,Lithuania,26,25,3,1764
-1223933,Cadu,23559,FK Banga Gargzdai,2025,LI1,51,Left-Back,21,Brazil,27,23,0,1367
-1191585,Armandas Razvadauskas,23559,FK Banga Gargzdai,2025,LI1,0,Right-Back,21,Lithuania,3,0,0,0
-438241,Aleksandr Levšin,23559,FK Banga Gargzdai,2025,LI1,20,Left-Back,27,Lithuania,25,12,0,412
-882962,Aaron Olugbogi,23559,FK Banga Gargzdai,2025,LI1,99,Left Midfield,25,Nigeria,28,28,4,2317
-668426,Vaidas Magdušauskas,23559,FK Banga Gargzdai,2025,LI1,10,Attacking Midfield,22,Lithuania,27,26,2,1855
-475654,Rokas Filipavičius,23559,FK Banga Gargzdai,2025,LI1,11,Attacking Midfield,26,Lithuania,26,26,4,2279
-1341817,Sidas Praleika,23559,FK Banga Gargzdai,2025,LI1,0,Defensive Midfield,19,Lithuania,23,23,2,1872
-783179,Domantas Vaičekauskas,23559,FK Banga Gargzdai,2025,LI1,44,Defensive Midfield,22,Lithuania,3,2,0,4
-190502,Dovydas Norvilas,23559,FK Banga Gargzdai,2025,LI1,7,Central Midfield,33,Lithuania,27,20,1,513
-1108671,Matas Ambrazaitis,23559,FK Banga Gargzdai,2025,LI1,22,Left Midfield,19,Lithuania,25,5,0,41
-479637,Ronaldo Camará,23559,FK Banga Gargzdai,2025,LI1,0,Attacking Midfield,23,Guinea-Bissau,11,3,0,19
-1385250,Arminas Strakšys,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,19,Lithuania,1,0,0,0
-1528072,Nojus Litvinas,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,0,Lithuania,2,0,0,0
-1334653,Justinas Juozapavičius,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,19,Lithuania,3,0,0,0
-1539822,Vakaris Jurgutis,23559,FK Banga Gargzdai,2025,LI1,0,Midfield,0,Lithuania,2,1,0,1
-1314289,Deividas Lukas,23559,FK Banga Gargzdai,2025,LI1,28,Defensive Midfield,18,Lithuania,9,4,0,46
-1576412,Sheriff Mohammed Sheriff,23559,FK Banga Gargzdai,2025,LI1,55,Central Midfield,0,Nigeria,6,3,0,44
-725330,Ignas Venckus,23559,FK Banga Gargzdai,2025,LI1,77,Centre-Forward,25,Lithuania,25,24,8,1587
-871581,Misaki Sato,23559,FK Banga Gargzdai,2025,LI1,45,Left Winger,28,Japan,27,27,3,2045
-707663,Aaron Appiah,23559,FK Banga Gargzdai,2025,LI1,9,Centre-Forward,23,Switzerland,20,18,2,739
-801396,Maksim Andrejev,23559,FK Banga Gargzdai,2025,LI1,17,Left Winger,22,Lithuania,23,13,1,116
-892680,Umaro Candé,23559,FK Banga Gargzdai,2025,LI1,30,Right Winger,21,Guinea-Bissau,27,21,0,598
-600304,Kofi Fosuhene Asare,23559,FK Banga Gargzdai,2025,LI1,0,Left Winger,24,Sweden,19,15,0,238
-615293,Mantas Bertašius,98841,FK TransINVEST,2026,LI1,55,Goalkeeper,26,Lithuania,0,0,0,0
-712166,Julius Virvilas,98841,FK TransINVEST,2026,LI1,1,Goalkeeper,22,Lithuania,0,0,0,0
-549646,Igor Mostovei,98841,FK TransINVEST,2026,LI1,25,Goalkeeper,26,Moldova,0,0,0,0
-300143,Dominykas Barauskas,98841,FK TransINVEST,2026,LI1,33,Centre-Back,29,Lithuania,0,0,0,0
-300164,Ričardas Šveikauskas,98841,FK TransINVEST,2026,LI1,5,Centre-Back,29,Lithuania,0,0,0,0
-505641,Bruno Tavares,98841,FK TransINVEST,2026,LI1,49,Left-Back,24,Portugal,0,0,0,0
-328804,Edvinas Kloniūnas,98841,FK TransINVEST,2026,LI1,80,Centre-Back,28,Lithuania,0,0,0,0
-1518055,Oscar Boateng,98841,FK TransINVEST,2026,LI1,19,Centre-Back,22,England,0,0,0,0
-167369,Edvinas Girdvainis,98841,FK TransINVEST,2026,LI1,93,Centre-Back,33,Lithuania,0,0,0,0
-809639,Emmanuel Koffi,98841,FK TransINVEST,2026,LI1,15,Left-Back,24,Ghana,0,0,0,0
-819377,Augustas Tamaševičius,98841,FK TransINVEST,2026,LI1,26,Right-Back,20,Lithuania,0,0,0,0
-888313,Yegor Glushach,98841,FK TransINVEST,2026,LI1,8,Attacking Midfield,23,Ukraine,0,0,0,0
-531453,Xabi Auzmendi,98841,FK TransINVEST,2026,LI1,23,Attacking Midfield,29,Spain,0,0,0,0
-386667,Iker Bilbao,98841,FK TransINVEST,2026,LI1,6,Central Midfield,30,Spain,0,0,0,0
-287182,Denis Bosnjak,98841,FK TransINVEST,2026,LI1,7,Defensive Midfield,29,Austria,0,0,0,0
-798980,Domantas Šluta,98841,FK TransINVEST,2026,LI1,88,Central Midfield,21,Lithuania,0,0,0,0
-457908,Til Mavretič,98841,FK TransINVEST,2026,LI1,17,Central Midfield,28,Slovenia,0,0,0,0
-1258418,Nojus Petkus,98841,FK TransINVEST,2026,LI1,12,Central Midfield,18,Lithuania,0,0,0,0
-150668,Artūras Žulpa,98841,FK TransINVEST,2026,LI1,44,Defensive Midfield,36,Lithuania,0,0,0,0
-306131,Stefan Milosevic,98841,FK TransINVEST,2026,LI1,9,Centre-Forward,30,Montenegro,0,0,0,0
-383229,Mykola Musolitin,98841,FK TransINVEST,2026,LI1,32,Right Winger,27,Ukraine,0,0,0,0
-684244,Chidera Nwoga,98841,FK TransINVEST,2026,LI1,10,Centre-Forward,26,Nigeria,0,0,0,0
-1153852,Hideyasu Tanaka,98841,FK TransINVEST,2026,LI1,13,Left Winger,23,Japan,0,0,0,0
-540665,Amadou Traoré,98841,FK TransINVEST,2026,LI1,70,Right Winger,24,Guinea,0,0,0,0
-431338,Nana Akosah-Bempah,98841,FK TransINVEST,2026,LI1,11,Right Winger,29,United States,0,0,0,0
+332144,Volodymyr Krynskyi,23559,FK Banga Gargzdai,2026,LI1,14,Goalkeeper,29,Ukraine,0,0,0,0
+82654,Armantas Vitkauskas,23559,FK Banga Gargzdai,2026,LI1,1,Goalkeeper,37,Lithuania,0,0,0,0
+832316,Lukas Grinkevičius,23559,FK Banga Gargzdai,2026,LI1,12,Goalkeeper,20,Lithuania,0,0,0,0
+695504,Simão Júnior,23559,FK Banga Gargzdai,2026,LI1,6,Centre-Back,28,Guinea-Bissau,0,0,0,0
+531906,Natanas Žebrauskas,23559,FK Banga Gargzdai,2026,LI1,13,Right-Back,24,Lithuania,0,0,0,0
+422811,Valdas Antužis,23559,FK Banga Gargzdai,2026,LI1,19,Right-Back,26,Lithuania,0,0,0,0
+445449,Ricardo Henning,23559,FK Banga Gargzdai,2026,LI1,27,Centre-Back,26,Germany,0,0,0,0
+718780,Deividas Malžinskas,23559,FK Banga Gargzdai,2026,LI1,3,Centre-Back,27,Lithuania,0,0,0,0
+1223933,Cadu,23559,FK Banga Gargzdai,2026,LI1,51,Left-Back,21,Brazil,0,0,0,0
+438241,Aleksandr Levšin,23559,FK Banga Gargzdai,2026,LI1,20,Left-Back,27,Lithuania,0,0,0,0
+882962,Aaron Olugbogi,23559,FK Banga Gargzdai,2026,LI1,99,Left Midfield,25,Nigeria,0,0,0,0
+668426,Vaidas Magdušauskas,23559,FK Banga Gargzdai,2026,LI1,10,Attacking Midfield,22,Lithuania,0,0,0,0
+475654,Rokas Filipavičius,23559,FK Banga Gargzdai,2026,LI1,11,Attacking Midfield,26,Lithuania,0,0,0,0
+783179,Domantas Vaičekauskas,23559,FK Banga Gargzdai,2026,LI1,44,Defensive Midfield,23,Lithuania,0,0,0,0
+190502,Dovydas Norvilas,23559,FK Banga Gargzdai,2026,LI1,7,Central Midfield,33,Lithuania,0,0,0,0
+1108671,Matas Ambrazaitis,23559,FK Banga Gargzdai,2026,LI1,22,Left Midfield,19,Lithuania,0,0,0,0
+1314289,Deividas Lukas,23559,FK Banga Gargzdai,2026,LI1,28,Defensive Midfield,18,Lithuania,0,0,0,0
+1576412,Sheriff Mohammed Sheriff,23559,FK Banga Gargzdai,2026,LI1,55,Central Midfield,0,Nigeria,0,0,0,0
+725330,Ignas Venckus,23559,FK Banga Gargzdai,2026,LI1,77,Centre-Forward,25,Lithuania,0,0,0,0
+871581,Misaki Sato,23559,FK Banga Gargzdai,2026,LI1,45,Left Winger,28,Japan,0,0,0,0
+707663,Aaron Appiah,23559,FK Banga Gargzdai,2026,LI1,9,Centre-Forward,23,Switzerland,0,0,0,0
+801396,Maksim Andrejev,23559,FK Banga Gargzdai,2026,LI1,17,Left Winger,22,Lithuania,0,0,0,0
+892680,Umaro Candé,23559,FK Banga Gargzdai,2026,LI1,30,Right Winger,21,Guinea-Bissau,0,0,0,0
+504027,Marius Paukštė,28740,FC Džiugas Telšiai,2025,LI1,1,Goalkeeper,31,Lithuania,28,28,0,2520
+1159735,Vladyslav Ryabenko,28740,FC Džiugas Telšiai,2025,LI1,91,Goalkeeper,23,Ukraine,24,0,0,0
+1292540,Mykyta Rybchynskyi,28740,FC Džiugas Telšiai,2025,LI1,22,Goalkeeper,22,Ukraine,11,0,0,0
+540928,Valentino Vermeulen,28740,FC Džiugas Telšiai,2025,LI1,2,Right-Back,25,Netherlands,23,23,3,1990
+1062376,Ibrahim Cissé,28740,FC Džiugas Telšiai,2025,LI1,23,Centre-Back,22,Cote d'Ivoire,24,24,4,2066
+666967,Bacary Sané,28740,FC Džiugas Telšiai,2025,LI1,4,Centre-Back,23,Senegal,22,22,1,1914
+297231,Jakub Wawszczyk,28740,FC Džiugas Telšiai,2025,LI1,46,Left-Back,28,Poland,27,27,0,2308
+874583,Milanas Rutkovskis,28740,FC Džiugas Telšiai,2025,LI1,5,Centre-Back,21,Lithuania,9,3,0,37
+731763,Josh Okpolokpo,28740,FC Džiugas Telšiai,2025,LI1,0,Centre-Back,23,Ireland,18,13,1,927
+801397,Džiugas Aleksa,28740,FC Džiugas Telšiai,2025,LI1,3,Right-Back,22,Lithuania,2,2,0,82
+1408176,Brendan Ifeanyi Asomugha,28740,FC Džiugas Telšiai,2025,LI1,44,Centre-Back,20,Nigeria,28,12,1,636
+454668,Vilius Piliukaitis,28740,FC Džiugas Telšiai,2025,LI1,10,Central Midfield,25,Lithuania,28,28,2,1399
+231120,Lukas Ankudinovas,28740,FC Džiugas Telšiai,2025,LI1,33,Defensive Midfield,31,Lithuania,26,24,0,1927
+1041552,Denys Bunchukov,28740,FC Džiugas Telšiai,2025,LI1,8,Central Midfield,23,Ukraine,27,27,4,1947
+900788,Denis Ževžikovas,28740,FC Džiugas Telšiai,2025,LI1,14,Central Midfield,22,Lithuania,27,27,3,1505
+726052,Gastón Manuel Romano,28740,FC Džiugas Telšiai,2025,LI1,0,Central Midfield,28,Argentina,18,18,0,1327
+720660,Deitonas Vinckus,28740,FC Džiugas Telšiai,2025,LI1,27,Left Midfield,24,Lithuania,25,23,2,1130
+1007777,Nikita Pavlovskij,28740,FC Džiugas Telšiai,2025,LI1,6,Central Midfield,20,Lithuania,27,23,0,1252
+874616,Nidas Vosylius,28740,FC Džiugas Telšiai,2025,LI1,30,Left Midfield,21,Lithuania,8,7,0,224
+1381822,Simas Rimantas Patella,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,21,Lithuania,9,0,0,0
+1135445,Otonas Grauslys,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,18,Lithuania,3,0,0,0
+1595156,Matas Meinorius,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,16,Lithuania,2,0,0,0
+1183667,Airik Balasanov,28740,FC Džiugas Telšiai,2025,LI1,97,Defensive Midfield,18,Lithuania,10,2,0,19
+930856,Ronald Sobowale,28740,FC Džiugas Telšiai,2025,LI1,90,Centre-Forward,29,England,26,26,9,1983
+933751,Iker Scotto,28740,FC Džiugas Telšiai,2025,LI1,9,Centre-Forward,24,Argentina,25,25,2,1033
+788195,Andrézinho,28740,FC Džiugas Telšiai,2025,LI1,77,Right Winger,28,Brazil,6,6,0,198
+1068964,Artem Marchuk,28740,FC Džiugas Telšiai,2025,LI1,0,Right Winger,19,Ukraine,17,9,0,222
+938623,Tomas Stelmokas,28740,FC Džiugas Telšiai,2025,LI1,48,Centre-Forward,21,Lithuania,27,20,1,202
+880256,Pedro Bahia,28740,FC Džiugas Telšiai,2025,LI1,7,Right Winger,24,Brazil,17,17,3,760
+443263,Abou Ouattara,28740,FC Džiugas Telšiai,2025,LI1,70,Right Winger,26,Burkina Faso,9,4,0,41
+1595155,Franck Junior Houmdi,28740,FC Džiugas Telšiai,2025,LI1,0,Attack,18,Cameroon,1,0,0,0
+504027,Marius Paukštė,28740,FC Džiugas Telšiai,2026,LI1,1,Goalkeeper,31,Lithuania,0,0,0,0
+1159735,Vladyslav Ryabenko,28740,FC Džiugas Telšiai,2026,LI1,91,Goalkeeper,23,Ukraine,0,0,0,0
+1292540,Mykyta Rybchynskyi,28740,FC Džiugas Telšiai,2026,LI1,22,Goalkeeper,22,Ukraine,0,0,0,0
+540928,Valentino Vermeulen,28740,FC Džiugas Telšiai,2026,LI1,2,Right-Back,25,Netherlands,0,0,0,0
+1062376,Ibrahim Cissé,28740,FC Džiugas Telšiai,2026,LI1,23,Centre-Back,22,Cote d'Ivoire,0,0,0,0
+666967,Bacary Sané,28740,FC Džiugas Telšiai,2026,LI1,4,Centre-Back,23,Senegal,0,0,0,0
+297231,Jakub Wawszczyk,28740,FC Džiugas Telšiai,2026,LI1,46,Left-Back,28,Poland,0,0,0,0
+874583,Milanas Rutkovskis,28740,FC Džiugas Telšiai,2026,LI1,5,Centre-Back,21,Lithuania,0,0,0,0
+801397,Džiugas Aleksa,28740,FC Džiugas Telšiai,2026,LI1,3,Right-Back,22,Lithuania,0,0,0,0
+1408176,Brendan Ifeanyi Asomugha,28740,FC Džiugas Telšiai,2026,LI1,44,Centre-Back,20,Nigeria,0,0,0,0
+454668,Vilius Piliukaitis,28740,FC Džiugas Telšiai,2026,LI1,10,Central Midfield,25,Lithuania,0,0,0,0
+231120,Lukas Ankudinovas,28740,FC Džiugas Telšiai,2026,LI1,33,Defensive Midfield,31,Lithuania,0,0,0,0
+1041552,Denys Bunchukov,28740,FC Džiugas Telšiai,2026,LI1,8,Central Midfield,23,Ukraine,0,0,0,0
+900788,Denis Ževžikovas,28740,FC Džiugas Telšiai,2026,LI1,14,Central Midfield,22,Lithuania,0,0,0,0
+720660,Deitonas Vinckus,28740,FC Džiugas Telšiai,2026,LI1,27,Left Midfield,24,Lithuania,0,0,0,0
+1007777,Nikita Pavlovskij,28740,FC Džiugas Telšiai,2026,LI1,6,Central Midfield,20,Lithuania,0,0,0,0
+874616,Nidas Vosylius,28740,FC Džiugas Telšiai,2026,LI1,30,Left Midfield,21,Lithuania,0,0,0,0
+1183667,Airik Balasanov,28740,FC Džiugas Telšiai,2026,LI1,97,Defensive Midfield,18,Lithuania,0,0,0,0
+930856,Ronald Sobowale,28740,FC Džiugas Telšiai,2026,LI1,90,Centre-Forward,29,England,0,0,0,0
+933751,Iker Scotto,28740,FC Džiugas Telšiai,2026,LI1,9,Centre-Forward,24,Argentina,0,0,0,0
+788195,Andrézinho,28740,FC Džiugas Telšiai,2026,LI1,77,Right Winger,28,Brazil,0,0,0,0
+938623,Tomas Stelmokas,28740,FC Džiugas Telšiai,2026,LI1,48,Centre-Forward,21,Lithuania,0,0,0,0
+880256,Pedro Bahia,28740,FC Džiugas Telšiai,2026,LI1,7,Right Winger,24,Brazil,0,0,0,0
+443263,Abou Ouattara,28740,FC Džiugas Telšiai,2026,LI1,70,Right Winger,26,Burkina Faso,0,0,0,0
+668419,Rokas Bagdonavičius,69752,FC Hegelmann,2026,LI1,31,Goalkeeper,22,Lithuania,0,0,0,0
+336030,Lukas Paukštė,69752,FC Hegelmann,2026,LI1,1,Goalkeeper,28,Lithuania,0,0,0,0
+1518439,Lukas Kolendo,69752,FC Hegelmann,2026,LI1,80,Goalkeeper,19,Lithuania,0,0,0,0
+229297,Rimvydas Sadauskas,69752,FC Hegelmann,2026,LI1,18,Centre-Back,30,Lithuania,0,0,0,0
+461717,Vedad Radonja,69752,FC Hegelmann,2026,LI1,37,Right-Back,25,Bosnia-Herzegovina,0,0,0,0
+455214,Carlos Duke,69752,FC Hegelmann,2026,LI1,7,Left-Back,26,Japan,0,0,0,0
+1068796,Barry Isaac,69752,FC Hegelmann,2026,LI1,30,Centre-Back,25,Nigeria,0,0,0,0
+766579,Ángel Puerto,69752,FC Hegelmann,2026,LI1,5,Centre-Back,23,Spain,0,0,0,0
+801398,Domas Slendzoka,69752,FC Hegelmann,2026,LI1,26,Centre-Back,22,Lithuania,0,0,0,0
+1082838,Nathan Silva,69752,FC Hegelmann,2026,LI1,44,Centre-Back,22,Brazil,0,0,0,0
+1365169,Richard,69752,FC Hegelmann,2026,LI1,27,Left-Back,19,Brazil,0,0,0,0
+668420,Matijus Remeikis,69752,FC Hegelmann,2026,LI1,16,Central Midfield,23,Lithuania,0,0,0,0
+452238,Samuel Oum Gouet,69752,FC Hegelmann,2026,LI1,10,Defensive Midfield,28,Cameroon,0,0,0,0
+279536,Vilius Armanavičius,69752,FC Hegelmann,2026,LI1,8,Defensive Midfield,31,Lithuania,0,0,0,0
+1084078,Wesley,69752,FC Hegelmann,2026,LI1,77,Attacking Midfield,22,Brazil,0,0,0,0
+167863,Donatas Kazlauskas,69752,FC Hegelmann,2026,LI1,9,Left Midfield,32,Lithuania,0,0,0,0
+123279,Artem Shchedryi,69752,FC Hegelmann,2026,LI1,45,Left Midfield,33,Ukraine,0,0,0,0
+1347958,Abdoul Harouna,69752,FC Hegelmann,2026,LI1,6,Central Midfield,20,Cote d'Ivoire,0,0,0,0
+1264294,Dominykas Pašilys,69752,FC Hegelmann,2026,LI1,19,Central Midfield,22,Lithuania,0,0,0,0
+867676,Darrell Tibell,69752,FC Hegelmann,2026,LI1,22,Centre-Forward,24,Sweden,0,0,0,0
+1052071,Esmilis Kaušinis,69752,FC Hegelmann,2026,LI1,21,Left Winger,22,Lithuania,0,0,0,0
+1033750,Andrius Kaulinis,69752,FC Hegelmann,2026,LI1,67,Left Winger,25,Lithuania,0,0,0,0
+991433,Lukas Jonaitis,69752,FC Hegelmann,2026,LI1,20,Centre-Forward,19,Lithuania,0,0,0,0
+1509624,Domas Sinkevičius,69752,FC Hegelmann,2026,LI1,24,Attack,18,Lithuania,0,0,0,0
 668419,Rokas Bagdonavičius,69752,FC Hegelmann,2025,LI1,31,Goalkeeper,22,Lithuania,24,16,0,1440
-336030,Lukas Paukštė,69752,FC Hegelmann,2025,LI1,1,Goalkeeper,27,Lithuania,20,13,0,1170
+336030,Lukas Paukštė,69752,FC Hegelmann,2025,LI1,1,Goalkeeper,28,Lithuania,20,13,0,1170
 1518439,Lukas Kolendo,69752,FC Hegelmann,2025,LI1,80,Goalkeeper,19,Lithuania,15,0,0,0
 229297,Rimvydas Sadauskas,69752,FC Hegelmann,2025,LI1,18,Centre-Back,30,Lithuania,28,25,0,1742
 461717,Vedad Radonja,69752,FC Hegelmann,2025,LI1,37,Right-Back,25,Bosnia-Herzegovina,29,28,1,2292
@@ -1904,105 +2006,4 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1052071,Esmilis Kaušinis,69752,FC Hegelmann,2025,LI1,21,Left Winger,22,Lithuania,23,19,1,1017
 1033750,Andrius Kaulinis,69752,FC Hegelmann,2025,LI1,67,Left Winger,25,Lithuania,27,27,0,1078
 991433,Lukas Jonaitis,69752,FC Hegelmann,2025,LI1,20,Centre-Forward,19,Lithuania,21,1,0,9
-1509624,Domas Sinkevičius,69752,FC Hegelmann,2025,LI1,0,Attack,18,Lithuania,14,2,0,25
-504027,Marius Paukštė,28740,FC Džiugas Telšiai,2026,LI1,1,Goalkeeper,31,Lithuania,0,0,0,0
-1159735,Vladyslav Ryabenko,28740,FC Džiugas Telšiai,2026,LI1,91,Goalkeeper,23,Ukraine,0,0,0,0
-1292540,Mykyta Rybchynskyi,28740,FC Džiugas Telšiai,2026,LI1,22,Goalkeeper,21,Ukraine,0,0,0,0
-540928,Valentino Vermeulen,28740,FC Džiugas Telšiai,2026,LI1,2,Right-Back,25,Netherlands,0,0,0,0
-1062376,Ibrahim Cissé,28740,FC Džiugas Telšiai,2026,LI1,23,Centre-Back,22,Cote d'Ivoire,0,0,0,0
-666967,Bacary Sané,28740,FC Džiugas Telšiai,2026,LI1,4,Centre-Back,23,Senegal,0,0,0,0
-297231,Jakub Wawszczyk,28740,FC Džiugas Telšiai,2026,LI1,46,Left-Back,28,Poland,0,0,0,0
-874583,Milanas Rutkovskis,28740,FC Džiugas Telšiai,2026,LI1,5,Centre-Back,21,Lithuania,0,0,0,0
-801397,Džiugas Aleksa,28740,FC Džiugas Telšiai,2026,LI1,3,Right-Back,22,Lithuania,0,0,0,0
-1408176,Brendan Ifeanyi Asomugha,28740,FC Džiugas Telšiai,2026,LI1,44,Centre-Back,20,Nigeria,0,0,0,0
-454668,Vilius Piliukaitis,28740,FC Džiugas Telšiai,2026,LI1,10,Central Midfield,25,Lithuania,0,0,0,0
-231120,Lukas Ankudinovas,28740,FC Džiugas Telšiai,2026,LI1,33,Defensive Midfield,31,Lithuania,0,0,0,0
-1041552,Denys Bunchukov,28740,FC Džiugas Telšiai,2026,LI1,8,Central Midfield,23,Ukraine,0,0,0,0
-900788,Denis Ževžikovas,28740,FC Džiugas Telšiai,2026,LI1,14,Central Midfield,22,Lithuania,0,0,0,0
-720660,Deitonas Vinckus,28740,FC Džiugas Telšiai,2026,LI1,27,Left Midfield,24,Lithuania,0,0,0,0
-1007777,Nikita Pavlovskij,28740,FC Džiugas Telšiai,2026,LI1,6,Central Midfield,20,Lithuania,0,0,0,0
-874616,Nidas Vosylius,28740,FC Džiugas Telšiai,2026,LI1,30,Left Midfield,21,Lithuania,0,0,0,0
-1183667,Airik Balasanov,28740,FC Džiugas Telšiai,2026,LI1,97,Defensive Midfield,18,Lithuania,0,0,0,0
-930856,Ronald Sobowale,28740,FC Džiugas Telšiai,2026,LI1,90,Centre-Forward,29,England,0,0,0,0
-933751,Iker Scotto,28740,FC Džiugas Telšiai,2026,LI1,9,Centre-Forward,24,Argentina,0,0,0,0
-788195,Andrézinho,28740,FC Džiugas Telšiai,2026,LI1,77,Right Winger,28,Brazil,0,0,0,0
-938623,Tomas Stelmokas,28740,FC Džiugas Telšiai,2026,LI1,48,Centre-Forward,21,Lithuania,0,0,0,0
-880256,Pedro Bahia,28740,FC Džiugas Telšiai,2026,LI1,7,Right Winger,24,Brazil,0,0,0,0
-443263,Abou Ouattara,28740,FC Džiugas Telšiai,2026,LI1,70,Right Winger,26,Burkina Faso,0,0,0,0
-332144,Volodymyr Krynskyi,23559,FK Banga Gargzdai,2026,LI1,14,Goalkeeper,29,Ukraine,0,0,0,0
-82654,Armantas Vitkauskas,23559,FK Banga Gargzdai,2026,LI1,1,Goalkeeper,37,Lithuania,0,0,0,0
-832316,Lukas Grinkevičius,23559,FK Banga Gargzdai,2026,LI1,12,Goalkeeper,20,Lithuania,0,0,0,0
-695504,Simão Júnior,23559,FK Banga Gargzdai,2026,LI1,6,Centre-Back,28,Guinea-Bissau,0,0,0,0
-531906,Natanas Žebrauskas,23559,FK Banga Gargzdai,2026,LI1,13,Right-Back,24,Lithuania,0,0,0,0
-422811,Valdas Antužis,23559,FK Banga Gargzdai,2026,LI1,19,Right-Back,26,Lithuania,0,0,0,0
-445449,Ricardo Henning,23559,FK Banga Gargzdai,2026,LI1,27,Centre-Back,25,Germany,0,0,0,0
-718780,Deividas Malžinskas,23559,FK Banga Gargzdai,2026,LI1,3,Centre-Back,27,Lithuania,0,0,0,0
-1223933,Cadu,23559,FK Banga Gargzdai,2026,LI1,51,Left-Back,21,Brazil,0,0,0,0
-438241,Aleksandr Levšin,23559,FK Banga Gargzdai,2026,LI1,20,Left-Back,27,Lithuania,0,0,0,0
-882962,Aaron Olugbogi,23559,FK Banga Gargzdai,2026,LI1,99,Left Midfield,25,Nigeria,0,0,0,0
-668426,Vaidas Magdušauskas,23559,FK Banga Gargzdai,2026,LI1,10,Attacking Midfield,22,Lithuania,0,0,0,0
-475654,Rokas Filipavičius,23559,FK Banga Gargzdai,2026,LI1,11,Attacking Midfield,26,Lithuania,0,0,0,0
-783179,Domantas Vaičekauskas,23559,FK Banga Gargzdai,2026,LI1,44,Defensive Midfield,22,Lithuania,0,0,0,0
-190502,Dovydas Norvilas,23559,FK Banga Gargzdai,2026,LI1,7,Central Midfield,33,Lithuania,0,0,0,0
-1108671,Matas Ambrazaitis,23559,FK Banga Gargzdai,2026,LI1,22,Left Midfield,19,Lithuania,0,0,0,0
-1314289,Deividas Lukas,23559,FK Banga Gargzdai,2026,LI1,28,Defensive Midfield,18,Lithuania,0,0,0,0
-1576412,Sheriff Mohammed Sheriff,23559,FK Banga Gargzdai,2026,LI1,55,Central Midfield,0,Nigeria,0,0,0,0
-725330,Ignas Venckus,23559,FK Banga Gargzdai,2026,LI1,77,Centre-Forward,25,Lithuania,0,0,0,0
-871581,Misaki Sato,23559,FK Banga Gargzdai,2026,LI1,45,Left Winger,28,Japan,0,0,0,0
-707663,Aaron Appiah,23559,FK Banga Gargzdai,2026,LI1,9,Centre-Forward,23,Switzerland,0,0,0,0
-801396,Maksim Andrejev,23559,FK Banga Gargzdai,2026,LI1,17,Left Winger,22,Lithuania,0,0,0,0
-892680,Umaro Candé,23559,FK Banga Gargzdai,2026,LI1,30,Right Winger,21,Guinea-Bissau,0,0,0,0
-668419,Rokas Bagdonavičius,69752,FC Hegelmann,2026,LI1,31,Goalkeeper,22,Lithuania,0,0,0,0
-336030,Lukas Paukštė,69752,FC Hegelmann,2026,LI1,1,Goalkeeper,27,Lithuania,0,0,0,0
-1518439,Lukas Kolendo,69752,FC Hegelmann,2026,LI1,80,Goalkeeper,19,Lithuania,0,0,0,0
-229297,Rimvydas Sadauskas,69752,FC Hegelmann,2026,LI1,18,Centre-Back,30,Lithuania,0,0,0,0
-461717,Vedad Radonja,69752,FC Hegelmann,2026,LI1,37,Right-Back,25,Bosnia-Herzegovina,0,0,0,0
-455214,Carlos Duke,69752,FC Hegelmann,2026,LI1,7,Left-Back,26,Japan,0,0,0,0
-1068796,Barry Isaac,69752,FC Hegelmann,2026,LI1,30,Centre-Back,25,Nigeria,0,0,0,0
-766579,Ángel Puerto,69752,FC Hegelmann,2026,LI1,5,Centre-Back,23,Spain,0,0,0,0
-801398,Domas Slendzoka,69752,FC Hegelmann,2026,LI1,26,Centre-Back,22,Lithuania,0,0,0,0
-1082838,Nathan Silva,69752,FC Hegelmann,2026,LI1,44,Centre-Back,22,Brazil,0,0,0,0
-1365169,Richard,69752,FC Hegelmann,2026,LI1,27,Left-Back,19,Brazil,0,0,0,0
-668420,Matijus Remeikis,69752,FC Hegelmann,2026,LI1,16,Central Midfield,23,Lithuania,0,0,0,0
-452238,Samuel Oum Gouet,69752,FC Hegelmann,2026,LI1,10,Defensive Midfield,28,Cameroon,0,0,0,0
-279536,Vilius Armanavičius,69752,FC Hegelmann,2026,LI1,8,Defensive Midfield,31,Lithuania,0,0,0,0
-1084078,Wesley,69752,FC Hegelmann,2026,LI1,77,Attacking Midfield,22,Brazil,0,0,0,0
-167863,Donatas Kazlauskas,69752,FC Hegelmann,2026,LI1,9,Left Midfield,32,Lithuania,0,0,0,0
-123279,Artem Shchedryi,69752,FC Hegelmann,2026,LI1,45,Left Midfield,33,Ukraine,0,0,0,0
-1347958,Abdoul Harouna,69752,FC Hegelmann,2026,LI1,6,Central Midfield,20,Cote d'Ivoire,0,0,0,0
-1264294,Dominykas Pašilys,69752,FC Hegelmann,2026,LI1,19,Central Midfield,22,Lithuania,0,0,0,0
-867676,Darrell Tibell,69752,FC Hegelmann,2026,LI1,22,Centre-Forward,24,Sweden,0,0,0,0
-1052071,Esmilis Kaušinis,69752,FC Hegelmann,2026,LI1,21,Left Winger,22,Lithuania,0,0,0,0
-1033750,Andrius Kaulinis,69752,FC Hegelmann,2026,LI1,67,Left Winger,25,Lithuania,0,0,0,0
-991433,Lukas Jonaitis,69752,FC Hegelmann,2026,LI1,20,Centre-Forward,19,Lithuania,0,0,0,0
-504027,Marius Paukštė,28740,FC Džiugas Telšiai,2025,LI1,1,Goalkeeper,31,Lithuania,28,28,0,2520
-1159735,Vladyslav Ryabenko,28740,FC Džiugas Telšiai,2025,LI1,91,Goalkeeper,23,Ukraine,24,0,0,0
-1292540,Mykyta Rybchynskyi,28740,FC Džiugas Telšiai,2025,LI1,22,Goalkeeper,21,Ukraine,11,0,0,0
-540928,Valentino Vermeulen,28740,FC Džiugas Telšiai,2025,LI1,2,Right-Back,25,Netherlands,23,23,3,1990
-1062376,Ibrahim Cissé,28740,FC Džiugas Telšiai,2025,LI1,23,Centre-Back,22,Cote d'Ivoire,24,24,4,2066
-666967,Bacary Sané,28740,FC Džiugas Telšiai,2025,LI1,4,Centre-Back,23,Senegal,22,22,1,1914
-297231,Jakub Wawszczyk,28740,FC Džiugas Telšiai,2025,LI1,46,Left-Back,28,Poland,27,27,0,2308
-874583,Milanas Rutkovskis,28740,FC Džiugas Telšiai,2025,LI1,5,Centre-Back,21,Lithuania,9,3,0,37
-731763,Josh Okpolokpo,28740,FC Džiugas Telšiai,2025,LI1,0,Centre-Back,23,Ireland,18,13,1,927
-801397,Džiugas Aleksa,28740,FC Džiugas Telšiai,2025,LI1,3,Right-Back,22,Lithuania,2,2,0,82
-1408176,Brendan Ifeanyi Asomugha,28740,FC Džiugas Telšiai,2025,LI1,44,Centre-Back,20,Nigeria,28,12,1,636
-454668,Vilius Piliukaitis,28740,FC Džiugas Telšiai,2025,LI1,10,Central Midfield,25,Lithuania,28,28,2,1399
-231120,Lukas Ankudinovas,28740,FC Džiugas Telšiai,2025,LI1,33,Defensive Midfield,31,Lithuania,26,24,0,1927
-1041552,Denys Bunchukov,28740,FC Džiugas Telšiai,2025,LI1,8,Central Midfield,23,Ukraine,27,27,4,1947
-900788,Denis Ževžikovas,28740,FC Džiugas Telšiai,2025,LI1,14,Central Midfield,22,Lithuania,27,27,3,1505
-726052,Gastón Manuel Romano,28740,FC Džiugas Telšiai,2025,LI1,0,Central Midfield,28,Argentina,18,18,0,1327
-720660,Deitonas Vinckus,28740,FC Džiugas Telšiai,2025,LI1,27,Left Midfield,24,Lithuania,25,23,2,1130
-1007777,Nikita Pavlovskij,28740,FC Džiugas Telšiai,2025,LI1,6,Central Midfield,20,Lithuania,27,23,0,1252
-874616,Nidas Vosylius,28740,FC Džiugas Telšiai,2025,LI1,30,Left Midfield,21,Lithuania,8,7,0,224
-1381822,Simas Rimantas Patella,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,20,Lithuania,9,0,0,0
-1135445,Otonas Grauslys,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,18,Lithuania,3,0,0,0
-1595156,Matas Meinorius,28740,FC Džiugas Telšiai,2025,LI1,0,Midfield,16,Lithuania,2,0,0,0
-1183667,Airik Balasanov,28740,FC Džiugas Telšiai,2025,LI1,97,Defensive Midfield,18,Lithuania,10,2,0,19
-930856,Ronald Sobowale,28740,FC Džiugas Telšiai,2025,LI1,90,Centre-Forward,29,England,26,26,9,1983
-933751,Iker Scotto,28740,FC Džiugas Telšiai,2025,LI1,9,Centre-Forward,24,Argentina,25,25,2,1033
-788195,Andrézinho,28740,FC Džiugas Telšiai,2025,LI1,77,Right Winger,28,Brazil,6,6,0,198
-1068964,Artem Marchuk,28740,FC Džiugas Telšiai,2025,LI1,0,Right Winger,19,Ukraine,17,9,0,222
-938623,Tomas Stelmokas,28740,FC Džiugas Telšiai,2025,LI1,48,Centre-Forward,21,Lithuania,27,20,1,202
-880256,Pedro Bahia,28740,FC Džiugas Telšiai,2025,LI1,7,Right Winger,24,Brazil,17,17,3,760
-443263,Abou Ouattara,28740,FC Džiugas Telšiai,2025,LI1,70,Right Winger,26,Burkina Faso,9,4,0,41
-1595155,Franck Junior Houmdi,28740,FC Džiugas Telšiai,2025,LI1,0,Attack,18,Cameroon,1,0,0,0
+1509624,Domas Sinkevičius,69752,FC Hegelmann,2025,LI1,24,Attack,18,Lithuania,14,2,0,25

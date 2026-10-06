@@ -179,7 +179,7 @@ def render_html(metas: list[dict]) -> str:
                 for code in included:
                     for suffix in suffixes:
                         filename = f"{code}_{suffix}.csv"
-                        archive.write(folder / filename, arcname=f"{code}/{filename}")
+                        archive.write(folder / filename, arcname=filename)
             bundles[kind] = (
                 f'<div class="bundle"><a class="btn btn-primary" href="data/{name}" download>'
                 f'Collect all {kind}</a> <span>{len(included)} championnats · '

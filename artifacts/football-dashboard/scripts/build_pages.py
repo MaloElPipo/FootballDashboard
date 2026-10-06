@@ -160,6 +160,9 @@ def freshness_badge(dt: datetime | None) -> tuple[str, str]:
 
 def render_html(metas: list[dict]) -> str:
     """Génère index.html à partir des métadonnées de chaque dataset."""
+    # Presentation-only: retain national-team configuration and assets, but hide
+    # their rows and exclude them from the visible availability counters.
+    metas = [m for m in metas if m["kind"] == "league"]
     now = datetime.now(tz=timezone.utc)
     bundles = {}
     for kind, folder, suffixes in [

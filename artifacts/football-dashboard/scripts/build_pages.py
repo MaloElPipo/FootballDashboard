@@ -14,6 +14,7 @@ Le déploiement vers la branche `gh-pages` est fait par GitHub Actions.
 from __future__ import annotations
 
 import csv
+import json
 import sys
 import zipfile
 from datetime import datetime, timezone
@@ -160,6 +161,29 @@ def freshness_badge(dt: datetime | None) -> tuple[str, str]:
 def render_html(metas: list[dict]) -> str:
     """Génère index.html à partir des métadonnées de chaque dataset."""
     now = datetime.now(tz=timezone.utc)
+    bundles = {}
+    for kind, folder, suffixes in [
+        ("career", SRC_FULL, ("summary", "career", "matches", "competitions_seen")),
+        ("updates", SRC_CURRENT, ("career", "matches")),
+    ]:
+        included = [
+            m["code_tm"].lower() for m in metas if m["kind"] == "league"
+            and all((folder / f"{m['code_tm'].lower()}_{s}.csv").exists() for s in suffixes)
+        ]
+        if included:
+            name = f"collect_all_{kind}_{now:%Y-%m-%d}.zip"
+            with zipfile.ZipFile(OUT_DATA / name, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
+                for code in included:
+                    for suffix in suffixes:
+                        filename = f"{code}_{suffix}.csv"
+                        archive.write(folder / filename, arcname=f"{code}/{filename}")
+            bundles[kind] = (
+                f'<div class="bundle"><a class="btn btn-primary" href="data/{name}" download>'
+                f'Collect all {kind}</a> <span>{len(included)} championnats · '
+                f'{fmt_bytes((OUT_DATA / name).stat().st_size)}</span></div>'
+            )
+        else:
+            bundles[kind] = '<div class="bundle"><span class="btn btn-disabled">À venir</span></div>'
 
     # Group par région puis par tier
     groups: dict[str, list[dict]] = {}
@@ -306,14 +330,33 @@ def render_html(metas: list[dict]) -> str:
     .size {{ opacity: 0.7; font-size: 11px; }}
     footer {{ text-align: center; padding: 24px; color: #888; font-size: 13px; }}
     footer a {{ color: #1e3a8a; }}
+    .bundle {{ margin: 12px 0 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }}
+    .bundle .btn {{ padding: 10px 16px; font-size: 14px; }}
+    .bundle span {{ font-size: 12px; color: #666; }}
+    .language {{ display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 20px; }}
+    .language select {{ padding: 9px 12px; border-radius: 6px; background: white; color: #1e3a8a; border: 1px solid #cbd5e1; font: inherit; }}
+    a:focus-visible, select:focus-visible {{ outline: 3px solid #f97316; outline-offset: 3px; }}
+    @media(max-width: 700px) {{
+      .container {{ padding: 20px 12px; }}
+      header {{ padding: 20px 8px; }}
+      section {{ padding: 16px 12px; overflow-x: auto; }}
+      th, td {{ min-width: 130px; }}
+      .language {{ justify-content: flex-start; }}
+    }}
   </style>
 </head>
 <body>
   <header>
     <div class="container">
+      <div class="language"><label for="language">Langue</label>
+        <select id="language" translate="no">
+          <option value="fr">Français</option><option value="es">Español</option>
+          <option value="de">Deutsch</option><option value="it">Italiano</option><option value="en">English</option>
+        </select>
+      </div>
       <h1>⚽ Football Career Data — Portail CSV</h1>
       <p>Données de carrière des joueurs actifs des championnats trackés par <strong>V-Pin FR</strong>.</p>
-      <p>Source : Transfermarkt (endpoint ceapi). Mise à jour hebdomadaire automatique tous les <strong>mardis matin</strong>.</p>
+      <p>Source : Transfermarkt (endpoint ceapi). Mise à jour hebdomadaire programmée le <strong>lundi à 5h15 (Paris)</strong>. Le démarrage peut être retardé par GitHub.</p>
     </div>
   </header>
 
@@ -331,8 +374,8 @@ def render_html(metas: list[dict]) -> str:
         Pour chaque championnat, deux téléchargements sont proposés :
       </p>
       <ul style="font-size: 14px; line-height: 1.7;">
-        <li><strong>⬇️ Tout télécharger</strong> — ZIP des 4 CSV complets : <code>summary</code> (1 ligne/joueur, totaux carrière), <code>career</code> (1 ligne par saison × compétition × club), <code>matches</code> (10 derniers matchs ou 3 derniers mois), <code>competitions_seen</code> (référentiel des codes compétitions rencontrés). Idéal pour une analyse complète.</li>
-        <li><strong>🔄 Mise à jour saison</strong> — ZIP léger contenant uniquement les lignes de la <strong>saison en cours</strong> (career + matches). À télécharger chaque semaine pour suivre l'actualité sans tout retéléverser.</li>
+        <li><strong>⬇️ Tout télécharger</strong> — ZIP des 4 CSV complets : <code>summary</code> (1 ligne/joueur, totaux carrière), <code>career</code> (1 ligne par saison × compétition × club), <code>matches</code> (10 derniers matchs ou 3 derniers mois), <code>competitions_seen</code> (référentiel des codes compétitions rencontrés). Idéal pour une analyse complète.{bundles["career"]}</li>
+        <li><strong>🔄 Mise à jour saison</strong> — ZIP léger contenant uniquement les lignes de la <strong>saison en cours</strong> (career + matches). À télécharger chaque semaine pour suivre l'actualité sans tout retéléverser.{bundles["updates"]}</li>
       </ul>
     </section>
 
@@ -343,6 +386,8 @@ def render_html(metas: list[dict]) -> str:
     Page générée le {now.strftime("%Y-%m-%d %H:%M UTC")} ·
     <a href="https://github.com/MaloElPipo/FootballDashboard">Code source</a>
   </footer>
+  <script id="country-flags" type="application/json">{json.dumps(FLAGS, ensure_ascii=True)}</script>
+  <script>{Path(__file__).with_name("portal_i18n.js").read_text(encoding="utf-8")}</script>
 </body>
 </html>
 """

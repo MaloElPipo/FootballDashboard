@@ -3545,6 +3545,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1297379,Amoris Galli,4255,SS Arezzo,2026,IT2,12,Goalkeeper,20,Italy,0,0,0,0
 20005,Papu Gómez,3037,Calcio Padova,2026,IT2,0,Left Winger,38,Argentina,0,0,0,0
 346528,Stefano Mazzini,4159,Carrarese Calcio 1908,2026,IT2,0,Goalkeeper,27,Italy,0,0,0,0
+406094,Damiano Menna,408,Ascoli Calcio,2026,IT2,0,Centre-Back,31,Italy,0,0,0,0
 131758,Jesse Joronen,458,Palermo FC,2025,IT2,66,Goalkeeper,32,Finland,38,35,0,3117
 110925,Francesco Bardi,458,Palermo FC,2025,IT2,0,Goalkeeper,33,Italy,10,1,0,90
 163568,Alfred Gomis,458,Palermo FC,2025,IT2,1,Goalkeeper,31,Senegal,31,3,0,213
@@ -3577,6 +3578,34 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 737781,Jérémy Le Douaron,458,Palermo FC,2025,IT2,21,Centre-Forward,27,France,38,37,5,2057
 188889,Matteo Brunori,458,Palermo FC,2025,IT2,0,Centre-Forward,30,Italy,18,11,1,508
 909894,Giacomo Corona,458,Palermo FC,2025,IT2,31,Centre-Forward,21,Italy,36,13,0,154
+918811,Mattia Fortin,458,Palermo FC,2026,IT2,14,Goalkeeper,23,Italy,8,4,0,360
+110923,Mattia Perin,458,Palermo FC,2026,IT2,1,Goalkeeper,33,Italy,5,4,0,360
+131758,Jesse Joronen,458,Palermo FC,2026,IT2,66,Goalkeeper,33,Finland,0,0,0,0
+1153389,Manfredi Nespola,458,Palermo FC,2026,IT2,12,Goalkeeper,21,Italy,8,0,0,0
+1145050,Nils Balaguss,458,Palermo FC,2026,IT2,0,Goalkeeper,18,Latvia,3,0,0,0
+534084,Niccolò Pierozzi,458,Palermo FC,2026,IT2,27,Right-Back,25,Italy,6,4,0,179
+669793,Andrea Bozzolan,458,Palermo FC,2026,IT2,33,Left-Back,22,Italy,8,0,0,0
+555113,Patryk Peda,458,Palermo FC,2026,IT2,29,Centre-Back,24,Poland,6,4,0,53
+412649,Tommaso Cassandro,458,Palermo FC,2026,IT2,84,Centre-Back,26,Italy,8,8,1,524
+239099,Pietro Ceccaroni,458,Palermo FC,2026,IT2,32,Centre-Back,30,Italy,8,7,0,630
+176139,Mattia Bani,458,Palermo FC,2026,IT2,13,Centre-Back,32,Italy,8,8,0,593
+284595,Tommaso Augello,458,Palermo FC,2026,IT2,3,Left-Back,32,Italy,8,8,1,720
+310458,Giangiacomo Magnani,458,Palermo FC,2026,IT2,96,Centre-Back,31,Italy,8,2,0,110
+165873,Federico Barba,458,Palermo FC,2026,IT2,93,Centre-Back,33,Italy,5,1,0,90
+489611,Filippo Ranocchia,458,Palermo FC,2026,IT2,10,Central Midfield,25,Italy,8,8,1,569
+287863,Antonio Palumbo,458,Palermo FC,2026,IT2,5,Attacking Midfield,30,Italy,5,5,2,389
+373899,Jacopo Segre,458,Palermo FC,2026,IT2,8,Central Midfield,29,Italy,8,8,1,630
+552472,Nahuel Estévez,458,Palermo FC,2026,IT2,24,Defensive Midfield,30,Argentina,8,8,0,192
+181768,Hernani,458,Palermo FC,2026,IT2,23,Central Midfield,32,Brazil,6,6,1,314
+226025,Luca Mazzitelli,458,Palermo FC,2026,IT2,36,Central Midfield,30,Italy,4,3,0,45
+395239,Claudio Gomes,458,Palermo FC,2026,IT2,6,Defensive Midfield,26,France,8,2,0,28
+241076,Emmanuel Gyasi,458,Palermo FC,2026,IT2,11,Right Midfield,32,Ghana,8,3,0,95
+936739,Dominic Vavassori,458,Palermo FC,2026,IT2,9,Second Striker,20,Italy,8,8,3,605
+457673,Gabriel Strefezza,458,Palermo FC,2026,IT2,7,Right Winger,29,Brazil,3,3,1,106
+173491,Joel Pohjanpalo,458,Palermo FC,2026,IT2,20,Centre-Forward,32,Finland,8,8,2,649
+406042,Dennis Johnsen,458,Palermo FC,2026,IT2,17,Left Winger,28,Norway,8,8,5,608
+737781,Jérémy Le Douaron,458,Palermo FC,2026,IT2,0,Centre-Forward,28,France,1,1,0,5
+311333,Alessandro Gabrielloni,458,Palermo FC,2026,IT2,99,Centre-Forward,32,Italy,7,7,0,66
 256339,Emil Audero,2239,US Cremonese,2025,IT2,1,Goalkeeper,28,Indonesia,0,0,0,0
 85528,Marco Silvestri,2239,US Cremonese,2025,IT2,16,Goalkeeper,34,Italy,0,0,0,0
 815563,Lapo Nava,2239,US Cremonese,2025,IT2,69,Goalkeeper,21,Italy,0,0,0,0
@@ -3594,76 +3623,48 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 659516,Warren Bondo,2239,US Cremonese,2025,IT2,38,Central Midfield,21,France,0,0,0,0
 258827,Jari Vandeputte,2239,US Cremonese,2025,IT2,27,Central Midfield,29,Belgium,0,0,0,0
 226524,Morten Thorsby,2239,US Cremonese,2025,IT2,2,Central Midfield,29,Norway,0,0,0,0
-433584,Alessio Zerbin,2239,US Cremonese,2025,IT2,7,Right Midfield,26,Italy,0,0,0,0
 434551,Michele Collocolo,2239,US Cremonese,2025,IT2,18,Central Midfield,25,Italy,0,0,0,0
 324377,Youssef Maleh,2239,US Cremonese,2025,IT2,29,Central Midfield,26,Morocco,0,0,0,0
 197473,Alberto Grassi,2239,US Cremonese,2025,IT2,33,Defensive Midfield,30,Italy,0,0,0,0
 599663,Faris Moumbagna,2239,US Cremonese,2025,IT2,14,Centre-Forward,25,Cameroon,0,0,0,0
 241527,Federico Bonazzoli,2239,US Cremonese,2025,IT2,90,Centre-Forward,28,Italy,0,0,0,0
+433584,Alessio Zerbin,2239,US Cremonese,2025,IT2,7,Left Winger,26,Italy,0,0,0,0
 234523,Antonio Sanabria,2239,US Cremonese,2025,IT2,99,Centre-Forward,29,Paraguay,0,0,0,0
 413605,David Okereke,2239,US Cremonese,2025,IT2,77,Centre-Forward,27,Nigeria,0,0,0,0
 197838,Jamie Vardy,2239,US Cremonese,2025,IT2,10,Centre-Forward,38,England,0,0,0,0
 67556,Milan Djuric,2239,US Cremonese,2025,IT2,9,Centre-Forward,35,Bosnia-Herzegovina,0,0,0,0
-918811,Mattia Fortin,458,Palermo FC,2026,IT2,14,Goalkeeper,23,Italy,6,4,0,360
-110923,Mattia Perin,458,Palermo FC,2026,IT2,1,Goalkeeper,33,Italy,3,2,0,180
-131758,Jesse Joronen,458,Palermo FC,2026,IT2,66,Goalkeeper,33,Finland,0,0,0,0
-1153389,Manfredi Nespola,458,Palermo FC,2026,IT2,12,Goalkeeper,21,Italy,6,0,0,0
-1145050,Nils Balaguss,458,Palermo FC,2026,IT2,0,Goalkeeper,18,Latvia,3,0,0,0
-534084,Niccolò Pierozzi,458,Palermo FC,2026,IT2,27,Right-Back,25,Italy,5,4,0,179
-669793,Andrea Bozzolan,458,Palermo FC,2026,IT2,33,Left-Back,22,Italy,6,0,0,0
-555113,Patryk Peda,458,Palermo FC,2026,IT2,29,Centre-Back,24,Poland,4,2,0,22
-412649,Tommaso Cassandro,458,Palermo FC,2026,IT2,84,Centre-Back,26,Italy,6,6,1,344
-239099,Pietro Ceccaroni,458,Palermo FC,2026,IT2,32,Centre-Back,30,Italy,6,5,0,450
-176139,Mattia Bani,458,Palermo FC,2026,IT2,13,Centre-Back,32,Italy,6,6,0,495
-284595,Tommaso Augello,458,Palermo FC,2026,IT2,3,Left-Back,32,Italy,6,6,1,540
-310458,Giangiacomo Magnani,458,Palermo FC,2026,IT2,96,Centre-Back,31,Italy,6,1,0,45
-165873,Federico Barba,458,Palermo FC,2026,IT2,93,Centre-Back,33,Italy,5,1,0,90
-489611,Filippo Ranocchia,458,Palermo FC,2026,IT2,10,Central Midfield,25,Italy,6,6,1,442
-287863,Antonio Palumbo,458,Palermo FC,2026,IT2,5,Attacking Midfield,30,Italy,4,4,2,305
-373899,Jacopo Segre,458,Palermo FC,2026,IT2,8,Central Midfield,29,Italy,6,6,0,485
-552472,Nahuel Estévez,458,Palermo FC,2026,IT2,24,Defensive Midfield,30,Argentina,6,6,0,139
-181768,Hernani,458,Palermo FC,2026,IT2,23,Central Midfield,32,Brazil,4,4,0,211
-226025,Luca Mazzitelli,458,Palermo FC,2026,IT2,36,Central Midfield,30,Italy,2,1,0,10
-395239,Claudio Gomes,458,Palermo FC,2026,IT2,6,Defensive Midfield,26,France,6,2,0,28
-241076,Emmanuel Gyasi,458,Palermo FC,2026,IT2,11,Right Midfield,32,Ghana,6,3,0,95
-936739,Dominic Vavassori,458,Palermo FC,2026,IT2,9,Second Striker,20,Italy,6,6,2,433
-457673,Gabriel Strefezza,458,Palermo FC,2026,IT2,7,Right Winger,29,Brazil,3,3,1,106
-173491,Joel Pohjanpalo,458,Palermo FC,2026,IT2,20,Centre-Forward,32,Finland,6,6,2,490
-406042,Dennis Johnsen,458,Palermo FC,2026,IT2,17,Left Winger,28,Norway,6,6,4,441
-737781,Jérémy Le Douaron,458,Palermo FC,2026,IT2,0,Centre-Forward,28,France,1,1,0,5
-311333,Alessandro Gabrielloni,458,Palermo FC,2026,IT2,99,Centre-Forward,32,Italy,5,5,0,45
 317057,Adrian Semper,4172,Pisa Sporting Club,2026,IT2,0,Goalkeeper,28,Croatia,1,0,0,0
-393797,Alessandro Confente,4172,Pisa Sporting Club,2026,IT2,98,Goalkeeper,28,Italy,6,6,0,540
-238993,Simone Scuffet,4172,Pisa Sporting Club,2026,IT2,1,Goalkeeper,30,Italy,3,0,0,0
+393797,Alessandro Confente,4172,Pisa Sporting Club,2026,IT2,98,Goalkeeper,28,Italy,8,8,0,720
+238993,Simone Scuffet,4172,Pisa Sporting Club,2026,IT2,1,Goalkeeper,30,Italy,5,0,0,0
 386567,Leonardo Loria,4172,Pisa Sporting Club,2026,IT2,22,Goalkeeper,27,Italy,4,0,0,0
-358003,Simone Canestrelli,4172,Pisa Sporting Club,2026,IT2,5,Centre-Back,26,Italy,6,6,1,406
-877124,Rosen Bozhinov,4172,Pisa Sporting Club,2026,IT2,2,Centre-Back,21,Bulgaria,4,4,0,176
-925838,Francesco Coppola,4172,Pisa Sporting Club,2026,IT2,26,Centre-Back,21,Italy,5,3,1,143
-593381,Simone Zanon,4172,Pisa Sporting Club,2026,IT2,72,Right-Back,25,Italy,6,6,0,388
-149525,Antonio Caracciolo,4172,Pisa Sporting Club,2026,IT2,4,Centre-Back,36,Italy,5,4,0,198
-240897,Arturo Calabresi,4172,Pisa Sporting Club,2026,IT2,33,Centre-Back,30,Italy,6,6,2,331
+358003,Simone Canestrelli,4172,Pisa Sporting Club,2026,IT2,5,Centre-Back,26,Italy,8,6,1,406
+877124,Rosen Bozhinov,4172,Pisa Sporting Club,2026,IT2,2,Centre-Back,21,Bulgaria,6,6,0,293
+925838,Francesco Coppola,4172,Pisa Sporting Club,2026,IT2,26,Centre-Back,21,Italy,7,3,1,143
+593381,Simone Zanon,4172,Pisa Sporting Club,2026,IT2,72,Right-Back,25,Italy,8,8,0,535
+149525,Antonio Caracciolo,4172,Pisa Sporting Club,2026,IT2,4,Centre-Back,36,Italy,7,5,0,201
+240897,Arturo Calabresi,4172,Pisa Sporting Club,2026,IT2,33,Centre-Back,30,Italy,8,8,2,454
 1159022,Mateus Lusuardi,4172,Pisa Sporting Club,2026,IT2,47,Centre-Back,22,Brazil,0,0,0,0
-1178016,Andrea Primasso,4172,Pisa Sporting Club,2026,IT2,13,Centre-Back,21,Italy,6,3,0,169
+1178016,Andrea Primasso,4172,Pisa Sporting Club,2026,IT2,13,Centre-Back,21,Italy,8,5,0,349
 692187,Daniel Denoon,4172,Pisa Sporting Club,2026,IT2,44,Centre-Back,22,Switzerland,6,1,0,25
 1231354,Jeremy Mbambi,4172,Pisa Sporting Club,2026,IT2,0,Centre-Back,18,Belgium,1,0,0,0
-843286,Felipe Loyola,4172,Pisa Sporting Club,2026,IT2,14,Central Midfield,25,Chile,6,1,0,74
-989621,İsak Vural,4172,Pisa Sporting Club,2026,IT2,21,Central Midfield,20,Türkiye,6,5,0,218
-705063,Samuele Angori,4172,Pisa Sporting Club,2026,IT2,3,Left Midfield,23,Italy,5,5,0,450
-475410,Matteo Tramoni,4172,Pisa Sporting Club,2026,IT2,10,Attacking Midfield,26,France,6,6,1,417
-977119,Omar Correia,4172,Pisa Sporting Club,2026,IT2,29,Defensive Midfield,26,France,6,6,1,478
-479284,Giuseppe Leone,4172,Pisa Sporting Club,2026,IT2,55,Defensive Midfield,25,Italy,6,6,1,478
-628365,Gabriele Piccinini,4172,Pisa Sporting Club,2026,IT2,36,Central Midfield,25,Italy,6,2,0,40
-504085,Tomás Esteves,4172,Pisa Sporting Club,2026,IT2,19,Right Midfield,24,Portugal,5,2,0,36
+843286,Felipe Loyola,4172,Pisa Sporting Club,2026,IT2,14,Central Midfield,25,Chile,8,3,0,191
+989621,İsak Vural,4172,Pisa Sporting Club,2026,IT2,21,Central Midfield,20,Türkiye,8,5,0,218
+705063,Samuele Angori,4172,Pisa Sporting Club,2026,IT2,3,Left Midfield,23,Italy,7,7,0,630
+475410,Matteo Tramoni,4172,Pisa Sporting Club,2026,IT2,10,Attacking Midfield,26,France,7,7,2,507
+977119,Omar Correia,4172,Pisa Sporting Club,2026,IT2,29,Defensive Midfield,26,France,8,8,1,658
+479284,Giuseppe Leone,4172,Pisa Sporting Club,2026,IT2,55,Defensive Midfield,25,Italy,8,7,1,541
+628365,Gabriele Piccinini,4172,Pisa Sporting Club,2026,IT2,36,Central Midfield,25,Italy,8,3,0,41
+504085,Tomás Esteves,4172,Pisa Sporting Club,2026,IT2,19,Right Midfield,24,Portugal,6,2,0,36
 934761,Jacopo Frosali,4172,Pisa Sporting Club,2026,IT2,24,Defensive Midfield,20,Italy,0,0,0,0
-936229,Emanuele Rao,4172,Pisa Sporting Club,2026,IT2,17,Left Winger,20,Italy,6,4,1,78
-941067,Tommaso Marras,4172,Pisa Sporting Club,2026,IT2,23,Right Winger,22,Italy,2,2,0,108
-1083024,Ichem Ferrah,4172,Pisa Sporting Club,2026,IT2,11,Right Winger,21,France,6,1,0,16
-348601,Mehdi Léris,4172,Pisa Sporting Club,2026,IT2,7,Right Winger,28,Algeria,5,5,0,370
-355455,Filippo Pittarello,4172,Pisa Sporting Club,2026,IT2,8,Centre-Forward,30,Italy,4,4,2,270
-279823,Stefano Moreo,4172,Pisa Sporting Club,2026,IT2,32,Centre-Forward,33,Italy,3,3,1,187
+936229,Emanuele Rao,4172,Pisa Sporting Club,2026,IT2,17,Left Winger,20,Italy,8,5,1,147
+941067,Tommaso Marras,4172,Pisa Sporting Club,2026,IT2,23,Right Winger,22,Italy,4,4,2,150
+1083024,Ichem Ferrah,4172,Pisa Sporting Club,2026,IT2,11,Right Winger,21,France,8,2,0,37
+348601,Mehdi Léris,4172,Pisa Sporting Club,2026,IT2,7,Right Winger,28,Algeria,7,7,0,478
+355455,Filippo Pittarello,4172,Pisa Sporting Club,2026,IT2,8,Centre-Forward,30,Italy,6,6,2,378
+279823,Stefano Moreo,4172,Pisa Sporting Club,2026,IT2,32,Centre-Forward,33,Italy,5,5,2,367
 553513,Nicholas Bonfanti,4172,Pisa Sporting Club,2026,IT2,0,Centre-Forward,24,Italy,1,0,0,0
 1191069,Louis Buffon,4172,Pisa Sporting Club,2026,IT2,16,Centre-Forward,18,Czech Republic,1,0,0,0
-199258,Andrea Petagna,4172,Pisa Sporting Club,2026,IT2,37,Centre-Forward,31,Italy,5,5,0,290
+199258,Andrea Petagna,4172,Pisa Sporting Club,2026,IT2,37,Centre-Forward,31,Italy,7,7,0,362
 465988,Elia Giani,4172,Pisa Sporting Club,2026,IT2,73,Centre-Forward,25,Italy,0,0,0,0
 317057,Adrian Semper,4172,Pisa Sporting Club,2025,IT2,1,Goalkeeper,27,Croatia,0,0,0,0
 238993,Simone Scuffet,4172,Pisa Sporting Club,2025,IT2,22,Goalkeeper,29,Italy,0,0,0,0
@@ -3686,7 +3687,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 379163,Marius Marin,4172,Pisa Sporting Club,2025,IT2,6,Defensive Midfield,26,Romania,0,0,0,0
 628365,Gabriele Piccinini,4172,Pisa Sporting Club,2025,IT2,36,Central Midfield,24,Italy,0,0,0,0
 543822,Malthe Højholt,4172,Pisa Sporting Club,2025,IT2,8,Defensive Midfield,24,Denmark,0,0,0,0
-91970,Juan Cuadrado,4172,Pisa Sporting Club,2025,IT2,11,Right Midfield,37,Colombia,0,0,0,0
+91970,Juan Guillermo Cuadrado,4172,Pisa Sporting Club,2025,IT2,11,Right Midfield,37,Colombia,0,0,0,0
 935760,Rafiu Durosinmi,4172,Pisa Sporting Club,2025,IT2,17,Centre-Forward,22,Nigeria,0,0,0,0
 581672,Samuel Iling-Junior,4172,Pisa Sporting Club,2025,IT2,19,Left Winger,21,England,0,0,0,0
 409344,Calvin Stengs,4172,Pisa Sporting Club,2025,IT2,23,Right Winger,26,Netherlands,0,0,0,0
@@ -3694,40 +3695,40 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 464195,Filip Stojilkovic,4172,Pisa Sporting Club,2025,IT2,81,Centre-Forward,25,Switzerland,0,0,0,0
 348601,Mehdi Léris,4172,Pisa Sporting Club,2025,IT2,7,Right Winger,27,Algeria,0,0,0,0
 279823,Stefano Moreo,4172,Pisa Sporting Club,2025,IT2,32,Centre-Forward,32,Italy,0,0,0,0
-136111,Nicola Leali,276,Hellas Verona,2026,IT2,1,Goalkeeper,33,Italy,6,5,0,450
-240675,Simone Perilli,276,Hellas Verona,2026,IT2,34,Goalkeeper,31,Italy,6,1,0,90
+136111,Nicola Leali,276,Hellas Verona,2026,IT2,1,Goalkeeper,33,Italy,8,5,0,450
+240675,Simone Perilli,276,Hellas Verona,2026,IT2,34,Goalkeeper,31,Italy,8,3,0,270
 709986,Giacomo Toniolo,276,Hellas Verona,2026,IT2,22,Goalkeeper,22,Italy,2,0,0,0
-495839,Andrias Edmundsson,276,Hellas Verona,2026,IT2,5,Centre-Back,25,Faroe Islands,6,6,0,517
-851385,Tobias Slotsager,276,Hellas Verona,2026,IT2,28,Centre-Back,20,Denmark,4,3,0,87
-392569,Gabriele Zappa,276,Hellas Verona,2026,IT2,4,Right-Back,26,Italy,5,5,1,438
-488785,Martin Frese,276,Hellas Verona,2026,IT2,3,Left-Back,28,Denmark,0,0,0,0
-815529,Nicolò Calabrese,276,Hellas Verona,2026,IT2,37,Centre-Back,21,Italy,6,2,0,28
+495839,Andrias Edmundsson,276,Hellas Verona,2026,IT2,5,Centre-Back,25,Faroe Islands,7,7,0,607
+851385,Tobias Slotsager,276,Hellas Verona,2026,IT2,28,Centre-Back,20,Denmark,6,5,0,189
+392569,Gabriele Zappa,276,Hellas Verona,2026,IT2,4,Right-Back,26,Italy,7,7,1,618
+488785,Martin Frese,276,Hellas Verona,2026,IT2,3,Left-Back,28,Denmark,2,2,0,86
+815529,Nicolò Calabrese,276,Hellas Verona,2026,IT2,37,Centre-Back,21,Italy,8,3,0,106
 357796,Domagoj Bradarić,276,Hellas Verona,2026,IT2,6,Left-Back,26,Croatia,5,5,0,366
-490573,Seid Korac,276,Hellas Verona,2026,IT2,48,Centre-Back,24,Luxembourg,5,4,0,235
+490573,Seid Korac,276,Hellas Verona,2026,IT2,48,Centre-Back,25,Luxembourg,5,4,0,235
 586984,Daniel Oyegoke,276,Hellas Verona,2026,IT2,0,Right-Back,23,England,1,1,0,61
-1315458,Fallou Cham,276,Hellas Verona,2026,IT2,70,Right-Back,20,The Gambia,5,1,0,29
-248732,Paweł Dawidowicz,276,Hellas Verona,2026,IT2,27,Centre-Back,31,Poland,5,3,0,239
+1315458,Fallou Cham,276,Hellas Verona,2026,IT2,70,Right-Back,20,The Gambia,7,1,0,29
+248732,Paweł Dawidowicz,276,Hellas Verona,2026,IT2,27,Centre-Back,31,Poland,7,5,0,350
 1310290,Noé Maël Tagne,276,Hellas Verona,2026,IT2,33,Centre-Back,18,France,0,0,0,0
-986234,Davide De Battisti,276,Hellas Verona,2026,IT2,71,Left-Back,20,Italy,5,2,0,136
-540333,Tomas Suslov,276,Hellas Verona,2026,IT2,10,Attacking Midfield,24,Slovakia,3,3,0,119
-1204163,Andréa Le Borgne,276,Hellas Verona,2026,IT2,17,Defensive Midfield,20,France,6,6,0,481
-395512,Antoine Bernede,276,Hellas Verona,2026,IT2,24,Central Midfield,27,France,6,5,0,249
+986234,Davide De Battisti,276,Hellas Verona,2026,IT2,71,Left-Back,20,Italy,7,4,0,236
+540333,Tomas Suslov,276,Hellas Verona,2026,IT2,10,Attacking Midfield,24,Slovakia,4,4,0,152
+1204163,Andréa Le Borgne,276,Hellas Verona,2026,IT2,17,Defensive Midfield,20,France,8,8,0,649
+395512,Antoine Bernede,276,Hellas Verona,2026,IT2,24,Central Midfield,27,France,7,6,0,339
 261905,Suat Serdar,276,Hellas Verona,2026,IT2,8,Central Midfield,29,Germany,0,0,0,0
-416386,Abdou Harroui,276,Hellas Verona,2026,IT2,21,Central Midfield,28,Morocco,6,4,0,200
-298635,Grigoris Kastanos,276,Hellas Verona,2026,IT2,20,Central Midfield,28,Cyprus,6,4,0,164
-700053,Edoardo Iannoni,276,Hellas Verona,2026,IT2,44,Central Midfield,25,Italy,4,4,1,293
-459945,Nunzio Lella,276,Hellas Verona,2026,IT2,23,Central Midfield,26,Italy,6,3,0,169
+416386,Abdou Harroui,276,Hellas Verona,2026,IT2,21,Central Midfield,28,Morocco,8,5,0,212
+298635,Grigoris Kastanos,276,Hellas Verona,2026,IT2,20,Central Midfield,28,Cyprus,8,5,0,209
+700053,Edoardo Iannoni,276,Hellas Verona,2026,IT2,44,Central Midfield,25,Italy,6,6,2,473
+459945,Nunzio Lella,276,Hellas Verona,2026,IT2,23,Central Midfield,26,Italy,8,4,0,180
 708436,Leorat Bega,276,Hellas Verona,2026,IT2,18,Defensive Midfield,23,Switzerland,1,1,0,1
-748382,Amin Sarr,276,Hellas Verona,2026,IT2,9,Centre-Forward,25,Sweden,6,6,2,490
-457422,Samuele Mulattieri,276,Hellas Verona,2026,IT2,19,Centre-Forward,26,Italy,6,5,2,405
-651569,Daniel Mosquera,276,Hellas Verona,2026,IT2,25,Centre-Forward,26,Colombia,3,2,4,101
-1337321,Salvatore Cerbone,276,Hellas Verona,2026,IT2,35,Left Winger,18,Italy,6,5,2,83
-199953,Caleb Ekuban,276,Hellas Verona,2026,IT2,81,Centre-Forward,32,Ghana,1,0,0,0
-928037,Ioan Vermeșan,276,Hellas Verona,2026,IT2,0,Centre-Forward,19,Romania,1,0,0,0
+748382,Amin Sarr,276,Hellas Verona,2026,IT2,9,Centre-Forward,25,Sweden,8,8,2,631
+457422,Samuele Mulattieri,276,Hellas Verona,2026,IT2,19,Centre-Forward,26,Italy,8,5,2,405
+651569,Daniel Mosquera,276,Hellas Verona,2026,IT2,25,Centre-Forward,27,Colombia,5,4,6,281
+1337321,Salvatore Cerbone,276,Hellas Verona,2026,IT2,35,Left Winger,19,Italy,7,6,2,89
+199953,Caleb Ekuban,276,Hellas Verona,2026,IT2,81,Centre-Forward,32,Ghana,3,1,0,21
+928037,Ioan Vermeșan,276,Hellas Verona,2026,IT2,0,Centre-Forward,20,Romania,1,0,0,0
 537509,Mattia Compagnon,276,Hellas Verona,2026,IT2,11,Right Winger,24,Italy,3,3,0,229
-699585,Kacper Sezonienko,276,Hellas Verona,2026,IT2,79,Left Winger,23,Poland,6,1,0,22
-676411,Dailon Livramento,276,Hellas Verona,2026,IT2,14,Centre-Forward,25,Cape Verde,6,6,0,247
-1185449,Ruben Akalé,276,Hellas Verona,2026,IT2,38,Centre-Forward,19,France,1,0,0,0
+699585,Kacper Sezonienko,276,Hellas Verona,2026,IT2,79,Left Winger,23,Poland,8,1,0,22
+676411,Dailon Livramento,276,Hellas Verona,2026,IT2,14,Centre-Forward,25,Cape Verde,8,8,0,379
+1185449,Ruben Akalé,276,Hellas Verona,2026,IT2,38,Centre-Forward,19,France,3,1,0,27
 241923,Lorenzo Montipò,276,Hellas Verona,2025,IT2,1,Goalkeeper,29,Italy,0,0,0,0
 240675,Simone Perilli,276,Hellas Verona,2025,IT2,34,Goalkeeper,30,Italy,0,0,0,0
 709986,Giacomo Toniolo,276,Hellas Verona,2025,IT2,94,Goalkeeper,21,Italy,0,0,0,0
@@ -3758,6 +3759,39 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 651569,Daniel Mosquera,276,Hellas Verona,2025,IT2,25,Centre-Forward,25,Colombia,0,0,0,0
 1083069,Isaac,276,Hellas Verona,2025,IT2,41,Centre-Forward,21,Brazil,0,0,0,0
 1111820,Junior Ajayi,276,Hellas Verona,2025,IT2,72,Centre-Forward,20,Cote d'Ivoire,0,0,0,0
+231381,Andrea Fulignati,2239,US Cremonese,2026,IT2,1,Goalkeeper,31,Italy,4,4,0,360
+729536,Federico Agazzi,2239,US Cremonese,2026,IT2,22,Goalkeeper,21,Italy,8,4,0,360
+257660,Marco Festa,2239,US Cremonese,2026,IT2,12,Goalkeeper,34,Italy,8,0,0,0
+1270121,Riccardo Liberali,2239,US Cremonese,2026,IT2,0,Goalkeeper,18,Italy,4,0,0,0
+569939,Tommaso Barbieri,2239,US Cremonese,2026,IT2,4,Right-Back,24,Italy,3,3,0,196
+278531,Sebastiano Luperto,2239,US Cremonese,2026,IT2,5,Centre-Back,30,Italy,7,7,0,622
+351955,Federico Baschirotto,2239,US Cremonese,2026,IT2,6,Centre-Back,30,Italy,6,5,0,384
+1004723,Fellipe Jack,2239,US Cremonese,2026,IT2,13,Centre-Back,20,Italy,8,2,0,75
+336960,Giuseppe Pezzella,2239,US Cremonese,2026,IT2,3,Left-Back,28,Italy,4,3,0,194
+330208,Alessandro Vogliacco,2239,US Cremonese,2026,IT2,38,Centre-Back,28,Italy,8,7,0,401
+603675,Francesco Folino,2239,US Cremonese,2026,IT2,0,Centre-Back,24,Italy,2,1,0,26
+160986,Matteo Bianchetti,2239,US Cremonese,2026,IT2,15,Centre-Back,33,Italy,7,6,0,540
+667627,Yuri Rocchetti,2239,US Cremonese,2026,IT2,21,Left-Back,23,Italy,5,4,0,190
+960966,Eddy Cabianca,2239,US Cremonese,2026,IT2,0,Centre-Back,23,Italy,1,0,0,0
+1182381,Simone Marsi,2239,US Cremonese,2026,IT2,0,Centre-Back,18,Italy,3,0,0,0
+908768,Tommaso Berti,2239,US Cremonese,2026,IT2,14,Attacking Midfield,22,Italy,8,8,1,466
+258827,Jari Vandeputte,2239,US Cremonese,2026,IT2,27,Central Midfield,30,Belgium,7,7,0,533
+226524,Morten Thorsby,2239,US Cremonese,2026,IT2,2,Central Midfield,30,Norway,6,6,0,378
+392963,Salvatore Elia,2239,US Cremonese,2026,IT2,71,Right Midfield,27,Italy,8,7,0,328
+434551,Michele Collocolo,2239,US Cremonese,2026,IT2,18,Central Midfield,26,Italy,6,5,1,150
+292422,Simone Pontisso,2239,US Cremonese,2026,IT2,20,Central Midfield,29,Italy,4,4,0,249
+330288,Fabio Gerli,2239,US Cremonese,2026,IT2,16,Defensive Midfield,29,Italy,5,5,0,424
+197473,Alberto Grassi,2239,US Cremonese,2026,IT2,33,Defensive Midfield,31,Italy,4,4,0,307
+897651,Simone Lottici Tessadri,2239,US Cremonese,2026,IT2,8,Defensive Midfield,20,Italy,8,4,0,156
+894456,Dachi Lordkipanidze,2239,US Cremonese,2026,IT2,25,Central Midfield,21,Georgia,5,1,0,45
+819369,Adrian Lickūnas,2239,US Cremonese,2026,IT2,17,Right Midfield,20,Lithuania,6,2,0,135
+960943,Adin Licina,2239,US Cremonese,2026,IT2,10,Right Winger,19,Germany,6,6,1,421
+241527,Federico Bonazzoli,2239,US Cremonese,2026,IT2,90,Centre-Forward,29,Italy,6,6,3,392
+629016,Marco Nasti,2239,US Cremonese,2026,IT2,19,Centre-Forward,23,Italy,8,7,0,286
+375816,Manuel De Luca,2239,US Cremonese,2026,IT2,9,Centre-Forward,28,Italy,8,6,0,238
+896362,David Stückler,2239,US Cremonese,2026,IT2,7,Centre-Forward,22,Denmark,0,0,0,0
+67556,Milan Djuric,2239,US Cremonese,2026,IT2,11,Centre-Forward,36,Bosnia-Herzegovina,4,2,0,26
+1406884,Gabriel Herzuah,2239,US Cremonese,2026,IT2,26,Second Striker,18,Ghana,3,1,0,7
 934159,Tommaso Martinelli,1038,UC Sampdoria,2025,IT2,50,Goalkeeper,19,Italy,18,16,0,1440
 338651,Gaëtan Coucke,1038,UC Sampdoria,2025,IT2,98,Goalkeeper,26,Belgium,24,2,0,180
 357983,Simone Ghidotti,1038,UC Sampdoria,2025,IT2,1,Goalkeeper,25,Italy,37,20,0,1800
@@ -3802,148 +3836,44 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 33763,Massimo Coda,1038,UC Sampdoria,2025,IT2,9,Centre-Forward,36,Italy,32,28,9,1797
 341271,Víctor Narro,1038,UC Sampdoria,2025,IT2,0,Right Winger,26,Spain,18,4,0,35
 321065,Edoardo Soleri,1038,UC Sampdoria,2025,IT2,92,Centre-Forward,27,Italy,16,13,0,278
-231381,Andrea Fulignati,2239,US Cremonese,2026,IT2,1,Goalkeeper,31,Italy,2,2,0,180
-729536,Federico Agazzi,2239,US Cremonese,2026,IT2,22,Goalkeeper,21,Italy,6,4,0,360
-257660,Marco Festa,2239,US Cremonese,2026,IT2,12,Goalkeeper,34,Italy,6,0,0,0
-1270121,Riccardo Liberali,2239,US Cremonese,2026,IT2,0,Goalkeeper,18,Italy,4,0,0,0
-569939,Tommaso Barbieri,2239,US Cremonese,2026,IT2,4,Right-Back,24,Italy,1,1,0,35
-278531,Sebastiano Luperto,2239,US Cremonese,2026,IT2,5,Centre-Back,30,Italy,5,5,0,442
-351955,Federico Baschirotto,2239,US Cremonese,2026,IT2,6,Centre-Back,30,Italy,4,3,0,204
-1004723,Fellipe Jack,2239,US Cremonese,2026,IT2,13,Centre-Back,20,Italy,6,1,0,19
-336960,Giuseppe Pezzella,2239,US Cremonese,2026,IT2,3,Left-Back,28,Italy,4,3,0,194
-330208,Alessandro Vogliacco,2239,US Cremonese,2026,IT2,38,Centre-Back,28,Italy,6,5,0,374
-603675,Francesco Folino,2239,US Cremonese,2026,IT2,0,Centre-Back,24,Italy,2,1,0,26
-160986,Matteo Bianchetti,2239,US Cremonese,2026,IT2,15,Centre-Back,33,Italy,6,6,0,540
-667627,Yuri Rocchetti,2239,US Cremonese,2026,IT2,21,Left-Back,23,Italy,5,4,0,190
-960966,Eddy Cabianca,2239,US Cremonese,2026,IT2,0,Centre-Back,23,Italy,1,0,0,0
-1182381,Simone Marsi,2239,US Cremonese,2026,IT2,0,Centre-Back,18,Italy,1,0,0,0
-908768,Tommaso Berti,2239,US Cremonese,2026,IT2,14,Attacking Midfield,22,Italy,6,6,0,304
-258827,Jari Vandeputte,2239,US Cremonese,2026,IT2,27,Central Midfield,30,Belgium,5,5,0,383
-226524,Morten Thorsby,2239,US Cremonese,2026,IT2,2,Central Midfield,30,Norway,4,4,0,198
-392963,Salvatore Elia,2239,US Cremonese,2026,IT2,71,Right Midfield,27,Italy,6,5,0,218
-434551,Michele Collocolo,2239,US Cremonese,2026,IT2,18,Central Midfield,26,Italy,5,5,1,150
-292422,Simone Pontisso,2239,US Cremonese,2026,IT2,20,Central Midfield,29,Italy,4,4,0,249
-330288,Fabio Gerli,2239,US Cremonese,2026,IT2,16,Defensive Midfield,29,Italy,5,5,0,424
-197473,Alberto Grassi,2239,US Cremonese,2026,IT2,33,Defensive Midfield,31,Italy,2,2,0,140
-897651,Simone Lottici Tessadri,2239,US Cremonese,2026,IT2,8,Defensive Midfield,20,Italy,6,3,0,138
-894456,Dachi Lordkipanidze,2239,US Cremonese,2026,IT2,25,Central Midfield,21,Georgia,3,1,0,45
-819369,Adrian Lickūnas,2239,US Cremonese,2026,IT2,17,Right Midfield,20,Lithuania,4,1,0,90
-960943,Adin Licina,2239,US Cremonese,2026,IT2,10,Right Winger,19,Germany,4,4,1,241
-241527,Federico Bonazzoli,2239,US Cremonese,2026,IT2,90,Centre-Forward,29,Italy,5,5,3,380
-629016,Marco Nasti,2239,US Cremonese,2026,IT2,19,Centre-Forward,23,Italy,6,5,0,182
-375816,Manuel De Luca,2239,US Cremonese,2026,IT2,9,Centre-Forward,28,Italy,6,4,0,189
-896362,David Stückler,2239,US Cremonese,2026,IT2,7,Centre-Forward,22,Denmark,0,0,0,0
-67556,Milan Djuric,2239,US Cremonese,2026,IT2,11,Centre-Forward,36,Bosnia-Herzegovina,3,1,0,14
-1406884,Gabriel Herzuah,2239,US Cremonese,2026,IT2,0,Centre-Forward,18,Ghana,1,0,0,0
-395421,Peter Vindahl,1038,UC Sampdoria,2026,IT2,1,Goalkeeper,28,Denmark,6,6,0,540
+395421,Peter Vindahl,1038,UC Sampdoria,2026,IT2,1,Goalkeeper,28,Denmark,8,7,0,630
 357983,Simone Ghidotti,1038,UC Sampdoria,2026,IT2,0,Goalkeeper,26,Italy,2,0,0,0
-1312295,Andrey Krastev,1038,UC Sampdoria,2026,IT2,12,Goalkeeper,18,Bulgaria,6,0,0,0
-242537,Samuele Massolo,1038,UC Sampdoria,2026,IT2,96,Goalkeeper,30,Italy,4,0,0,0
+1312295,Andrey Krastev,1038,UC Sampdoria,2026,IT2,12,Goalkeeper,18,Bulgaria,8,1,0,90
+242537,Samuele Massolo,1038,UC Sampdoria,2026,IT2,96,Goalkeeper,30,Italy,6,0,0,0
 493702,Mattia Viti,1038,UC Sampdoria,2026,IT2,2,Centre-Back,24,Italy,2,2,0,180
 594227,Bjorn Meijer,1038,UC Sampdoria,2026,IT2,5,Left-Back,23,Netherlands,0,0,0,0
-243770,Stefan Gartenmann,1038,UC Sampdoria,2026,IT2,3,Centre-Back,29,Switzerland,6,6,0,540
-393904,Filippo Delli Carri,1038,UC Sampdoria,2026,IT2,15,Centre-Back,27,Italy,4,4,0,360
-183321,Kevin Mbabu,1038,UC Sampdoria,2026,IT2,43,Right-Back,31,Switzerland,3,1,0,11
-312341,Luca Ravanelli,1038,UC Sampdoria,2026,IT2,13,Centre-Back,29,Italy,3,0,0,0
-457674,Alessandro Di Pardo,1038,UC Sampdoria,2026,IT2,29,Right-Back,27,Italy,6,6,0,540
-386850,Manuel Cicconi,1038,UC Sampdoria,2026,IT2,7,Left-Back,29,Italy,6,6,0,540
-324282,Fabio Depaoli,1038,UC Sampdoria,2026,IT2,23,Right-Back,29,Italy,3,3,0,137
-1234785,Karim Diop,1038,UC Sampdoria,2026,IT2,38,Centre-Back,17,Italy,0,0,0,0
+243770,Stefan Gartenmann,1038,UC Sampdoria,2026,IT2,3,Centre-Back,29,Switzerland,8,7,0,563
+393904,Filippo Delli Carri,1038,UC Sampdoria,2026,IT2,15,Centre-Back,27,Italy,6,6,0,540
+183321,Kevin Mbabu,1038,UC Sampdoria,2026,IT2,43,Right-Back,31,Switzerland,5,3,0,32
+312341,Luca Ravanelli,1038,UC Sampdoria,2026,IT2,13,Centre-Back,29,Italy,4,1,0,85
+457674,Alessandro Di Pardo,1038,UC Sampdoria,2026,IT2,29,Right-Back,27,Italy,8,8,0,706
+386850,Manuel Cicconi,1038,UC Sampdoria,2026,IT2,7,Left-Back,29,Italy,8,8,0,708
+324282,Fabio Depaoli,1038,UC Sampdoria,2026,IT2,23,Right-Back,29,Italy,5,5,0,177
+1234785,Karim Diop,1038,UC Sampdoria,2026,IT2,38,Centre-Back,17,Italy,1,0,0,0
 487835,Alessandro Riccio,1038,UC Sampdoria,2026,IT2,0,Centre-Back,24,Italy,2,0,0,0
-197491,Alex Ferrari,1038,UC Sampdoria,2026,IT2,25,Centre-Back,32,Italy,6,1,0,45
+197491,Alex Ferrari,1038,UC Sampdoria,2026,IT2,25,Centre-Back,32,Italy,8,3,0,117
 1455611,Noà Mondani,1038,UC Sampdoria,2026,IT2,0,Centre-Back,17,Italy,1,0,0,0
 1311836,Federico Piermattei,1038,UC Sampdoria,2026,IT2,0,Centre-Back,18,Italy,1,0,0,0
-502302,Yari Verschaeren,1038,UC Sampdoria,2026,IT2,16,Attacking Midfield,25,Belgium,6,6,0,369
+502302,Yari Verschaeren,1038,UC Sampdoria,2026,IT2,16,Attacking Midfield,25,Belgium,8,8,1,542
 346499,Danel Sinani,1038,UC Sampdoria,2026,IT2,20,Attacking Midfield,29,Luxembourg,5,5,0,268
-460651,Antoine Makoumbou,1038,UC Sampdoria,2026,IT2,45,Defensive Midfield,28,Congo,5,5,0,415
+460651,Antoine Makoumbou,1038,UC Sampdoria,2026,IT2,45,Defensive Midfield,28,Congo,7,7,0,582
 390160,Salvatore Esposito,1038,UC Sampdoria,2026,IT2,94,Defensive Midfield,26,Italy,3,3,0,160
-823560,Francesco Conti,1038,UC Sampdoria,2026,IT2,33,Central Midfield,21,Italy,0,0,0,0
-193867,Liam Henderson,1038,UC Sampdoria,2026,IT2,6,Central Midfield,30,Scotland,6,6,1,489
-325993,Oliver Abildgaard,1038,UC Sampdoria,2026,IT2,28,Defensive Midfield,30,Denmark,4,3,0,129
+823560,Francesco Conti,1038,UC Sampdoria,2026,IT2,33,Central Midfield,22,Italy,0,0,0,0
+193867,Liam Henderson,1038,UC Sampdoria,2026,IT2,6,Central Midfield,30,Scotland,8,8,2,641
+325993,Oliver Abildgaard,1038,UC Sampdoria,2026,IT2,28,Defensive Midfield,30,Denmark,6,5,0,309
 241052,Alessandro Bellemo,1038,UC Sampdoria,2026,IT2,0,Central Midfield,31,Italy,2,1,0,58
 542336,Nikola Sekulov,1038,UC Sampdoria,2026,IT2,18,Attacking Midfield,24,Italy,0,0,0,0
 1327789,Leo Rodella,1038,UC Sampdoria,2026,IT2,0,Central Midfield,18,Italy,3,0,0,0
 1317254,Ștefan Amarandei,1038,UC Sampdoria,2026,IT2,0,Central Midfield,18,Romania,1,0,0,0
 1446026,Leonardo Cosi,1038,UC Sampdoria,2026,IT2,0,Attacking Midfield,17,Italy,1,0,0,0
-272206,Tobias Lauritsen,1038,UC Sampdoria,2026,IT2,9,Centre-Forward,29,Norway,3,3,0,180
-708186,Tjas Begic,1038,UC Sampdoria,2026,IT2,11,Left Winger,23,Slovenia,6,6,1,211
+272206,Tobias Lauritsen,1038,UC Sampdoria,2026,IT2,9,Centre-Forward,29,Norway,5,5,0,309
+708186,Tjas Begic,1038,UC Sampdoria,2026,IT2,11,Left Winger,23,Slovenia,8,8,1,383
 133964,Lorenzo Insigne,1038,UC Sampdoria,2026,IT2,10,Left Winger,35,Italy,5,5,3,305
-324804,Yann Karamoh,1038,UC Sampdoria,2026,IT2,14,Left Winger,28,France,3,2,0,63
-202979,Gennaro Tutino,1038,UC Sampdoria,2026,IT2,99,Centre-Forward,30,Italy,6,6,1,364
+324804,Yann Karamoh,1038,UC Sampdoria,2026,IT2,14,Left Winger,28,France,5,4,0,84
+202979,Gennaro Tutino,1038,UC Sampdoria,2026,IT2,99,Centre-Forward,30,Italy,8,8,1,415
 1332008,Lorenzo Mezzotero,1038,UC Sampdoria,2026,IT2,0,Centre-Forward,18,Azerbaijan,2,2,0,10
-1310462,Lorenzo Paratici,1038,UC Sampdoria,2026,IT2,0,Centre-Forward,17,Italy,2,0,0,0
+1310462,Lorenzo Paratici,1038,UC Sampdoria,2026,IT2,0,Centre-Forward,18,Italy,2,0,0,0
 1216356,Giuseppe Forte,1038,UC Sampdoria,2026,IT2,0,Centre-Forward,18,Italy,1,0,0,0
-618674,Abdullah Laidani,1385,Modena FC,2025,IT2,13,Goalkeeper,22,Switzerland,17,0,0,0
-742235,Michele Pezzolato,1385,Modena FC,2025,IT2,22,Goalkeeper,21,Italy,34,5,0,440
-95736,Leandro Chichizola,1385,Modena FC,2025,IT2,1,Goalkeeper,35,Argentina,33,33,0,2890
-1193344,Andrea Maran,1385,Modena FC,2025,IT2,0,Goalkeeper,16,Italy,1,0,0,0
-537548,Fabrizio Bagheria,1385,Modena FC,2025,IT2,78,Goalkeeper,24,Italy,20,1,0,90
-665057,Daniel Tonoli,1385,Modena FC,2025,IT2,77,Centre-Back,22,Italy,35,35,5,2967
-698082,Bryant Nieling,1385,Modena FC,2025,IT2,20,Centre-Back,22,Netherlands,35,33,2,2728
-1175798,Gady Beyuku,1385,Modena FC,2025,IT2,2,Right-Back,19,France,33,30,1,1367
-707219,Steven Nador,1385,Modena FC,2025,IT2,19,Centre-Back,23,Togo,37,11,0,813
-704825,Alessandro Dellavalle,1385,Modena FC,2025,IT2,25,Centre-Back,21,Italy,36,15,0,1221
-534082,Fabio Ponsi,1385,Modena FC,2025,IT2,0,Left-Back,24,Italy,8,0,0,0
-163212,Davide Adorni,1385,Modena FC,2025,IT2,28,Centre-Back,32,Italy,37,28,1,2274
-283421,Cristian Căuz,1385,Modena FC,2025,IT2,33,Centre-Back,28,Italy,31,4,0,216
-382567,Matteo Cotali,1385,Modena FC,2025,IT2,29,Left-Back,28,Italy,31,14,0,305
-1169718,Franck Guiyong,1385,Modena FC,2025,IT2,0,Centre-Back,19,France,1,0,0,0
-387013,Antonio Pergreffi,1385,Modena FC,2025,IT2,0,Centre-Back,37,Italy,10,0,0,0
-915849,Yanis Massolin,1385,Modena FC,2025,IT2,17,Attacking Midfield,22,France,36,28,3,1642
-1295778,Samuel Wiafe,1385,Modena FC,2025,IT2,71,Central Midfield,17,Italy,15,9,0,429
-392515,Simone Santoro,1385,Modena FC,2025,IT2,8,Central Midfield,25,Italy,36,36,2,3063
-398030,Giuseppe Caso,1385,Modena FC,2025,IT2,0,Attacking Midfield,26,Italy,13,1,0,16
-657550,Alessandro Sersanti,1385,Modena FC,2025,IT2,5,Central Midfield,23,Italy,23,23,2,1018
-679754,Niklas Pyyhtiä,1385,Modena FC,2025,IT2,18,Central Midfield,21,Finland,31,28,0,1128
-330288,Fabio Gerli,1385,Modena FC,2025,IT2,16,Defensive Midfield,28,Italy,33,33,0,2661
-1336583,Tito Fabbri,1385,Modena FC,2025,IT2,0,Attacking Midfield,15,Italy,3,1,0,17
-216872,Francesco Zampano,1385,Modena FC,2025,IT2,7,Right Midfield,31,Italy,35,35,4,2702
-1301529,Pietro Arnaboldi,1385,Modena FC,2025,IT2,0,Defensive Midfield,17,Italy,4,1,0,90
-297444,Luca Magnino,1385,Modena FC,2025,IT2,0,Central Midfield,27,Italy,22,16,0,382
-976145,Antonio Imputato,1385,Modena FC,2025,IT2,90,Right Midfield,20,Italy,16,6,0,171
-604627,Ousmane Niang,1385,Modena FC,2025,IT2,80,Central Midfield,22,Italy,0,0,0,0
-707295,Giuseppe Ambrosino,1385,Modena FC,2025,IT2,10,Centre-Forward,21,Italy,15,14,2,665
-375816,Manuel De Luca,1385,Modena FC,2025,IT2,99,Centre-Forward,26,Italy,20,20,3,1329
-498235,Pedro Mendes,1385,Modena FC,2025,IT2,11,Centre-Forward,25,Portugal,38,32,4,1157
-407265,Luca Zanimacchia,1385,Modena FC,2025,IT2,98,Right Winger,26,Italy,37,36,3,2439
-209936,Ettore Gliozzi,1385,Modena FC,2025,IT2,9,Centre-Forward,29,Italy,33,33,11,1753
-238950,Francesco Di Mariano,1385,Modena FC,2025,IT2,0,Left Winger,29,Italy,20,17,1,799
-163222,Grégoire Defrel,1385,Modena FC,2025,IT2,92,Centre-Forward,34,France,29,25,2,804
-1185684,Edoardo Colpo,1385,Modena FC,2025,IT2,0,Centre-Forward,16,Italy,6,1,0,4
-155802,Luca Strizzolo,1385,Modena FC,2025,IT2,32,Centre-Forward,33,Italy,0,0,0,0
-618674,Abdullah Laidani,1385,Modena FC,2026,IT2,25,Goalkeeper,23,Switzerland,1,0,0,0
-95736,Leandro Chichizola,1385,Modena FC,2026,IT2,1,Goalkeeper,36,Argentina,6,6,0,540
-999404,Leonardo Consiglio,1385,Modena FC,2026,IT2,22,Goalkeeper,20,Italy,6,0,0,0
-1193344,Andrea Maran,1385,Modena FC,2026,IT2,12,Goalkeeper,18,Italy,3,0,0,0
-665057,Daniel Tonoli,1385,Modena FC,2026,IT2,77,Centre-Back,24,Italy,6,6,0,540
-698082,Bryant Nieling,1385,Modena FC,2026,IT2,20,Centre-Back,23,Netherlands,6,6,0,540
-1175798,Gady Beyuku,1385,Modena FC,2026,IT2,0,Right-Back,20,France,2,0,0,0
-707219,Steven Nador,1385,Modena FC,2026,IT2,19,Centre-Back,24,Togo,6,6,0,536
-603675,Francesco Folino,1385,Modena FC,2026,IT2,23,Centre-Back,24,Italy,4,3,0,48
-163212,Davide Adorni,1385,Modena FC,2026,IT2,28,Centre-Back,34,Italy,4,0,0,0
-1058344,Martino Odero,1385,Modena FC,2026,IT2,15,Right-Back,19,Italy,4,0,0,0
-929771,Diego Ronco,1385,Modena FC,2026,IT2,34,Centre-Back,21,Italy,4,0,0,0
-602124,Alessandro Bianco,1385,Modena FC,2026,IT2,42,Central Midfield,24,Italy,6,6,0,494
-392515,Simone Santoro,1385,Modena FC,2026,IT2,8,Central Midfield,27,Italy,6,6,1,386
-657550,Alessandro Sersanti,1385,Modena FC,2026,IT2,5,Central Midfield,24,Italy,0,0,0,0
-398030,Giuseppe Caso,1385,Modena FC,2026,IT2,10,Attacking Midfield,27,Italy,6,6,3,480
-539132,Giacomo Olzer,1385,Modena FC,2026,IT2,72,Attacking Midfield,25,Italy,5,5,2,334
-216872,Francesco Zampano,1385,Modena FC,2026,IT2,7,Right Midfield,33,Italy,6,5,0,389
-1336583,Tito Fabbri,1385,Modena FC,2026,IT2,14,Attacking Midfield,17,Italy,0,0,0,0
-310527,Paulo Azzi,1385,Modena FC,2026,IT2,27,Left Midfield,32,Brazil,6,6,0,262
-131109,Gastón Brugman,1385,Modena FC,2026,IT2,16,Defensive Midfield,34,Uruguay,6,6,0,475
-1301529,Pietro Arnaboldi,1385,Modena FC,2026,IT2,73,Defensive Midfield,18,Italy,3,0,0,0
-976145,Antonio Imputato,1385,Modena FC,2026,IT2,26,Right Midfield,22,Italy,6,3,0,107
-1056746,Wisdom Acquah,1385,Modena FC,2026,IT2,32,Defensive Midfield,19,Italy,5,4,0,21
-221421,Kleis Bozhanaj,1385,Modena FC,2026,IT2,17,Attacking Midfield,25,Albania,5,3,0,16
-1300468,Treasure Egharevba,1385,Modena FC,2026,IT2,37,Left Midfield,18,Italy,1,0,0,0
-707295,Giuseppe Ambrosino,1385,Modena FC,2026,IT2,70,Centre-Forward,23,Italy,6,6,2,530
-167727,Andrea Belotti,1385,Modena FC,2026,IT2,11,Centre-Forward,32,Italy,3,3,2,94
-498235,Pedro Mendes,1385,Modena FC,2026,IT2,0,Centre-Forward,27,Portugal,2,1,0,63
-678441,Daniele Montevago,1385,Modena FC,2026,IT2,9,Centre-Forward,23,Italy,6,4,1,26
-796574,Stênio,1385,Modena FC,2026,IT2,33,Right Winger,23,Brazil,2,2,0,34
-1004950,Joris Manquant,1385,Modena FC,2026,IT2,18,Centre-Forward,20,France,0,0,0,0
-660878,Luca Bacchin,1385,Modena FC,2026,IT2,29,Second Striker,22,Italy,6,2,0,28
 110925,Francesco Bardi,2581,Mantova 1911,2025,IT2,24,Goalkeeper,33,Italy,20,20,0,1800
 921561,Ante Vukovic,2581,Mantova 1911,2025,IT2,34,Goalkeeper,20,Croatia,20,0,0,0
 548511,Federico Botti,2581,Mantova 1911,2025,IT2,0,Goalkeeper,23,Italy,2,0,0,0
@@ -3987,102 +3917,108 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 159847,Francesco Galuppini,2581,Mantova 1911,2025,IT2,0,Centre-Forward,31,Italy,15,8,0,456
 307334,Davis Mensah,2581,Mantova 1911,2025,IT2,7,Centre-Forward,33,Italy,34,30,4,1216
 1310253,Mattia Bellini,2581,Mantova 1911,2025,IT2,0,Second Striker,17,Italy,1,0,0,0
-463792,Luca Gemello,2581,Mantova 1911,2026,IT2,1,Goalkeeper,26,Italy,6,0,0,0
-110925,Francesco Bardi,2581,Mantova 1911,2026,IT2,22,Goalkeeper,34,Italy,6,6,0,540
-487828,Manuel Gasparini,2581,Mantova 1911,2026,IT2,12,Goalkeeper,24,Italy,3,0,0,0
-986324,Bodin Tomasevic,2581,Mantova 1911,2026,IT2,5,Centre-Back,20,Montenegro,6,6,1,470
-704283,Alessio Castellini,2581,Mantova 1911,2026,IT2,27,Centre-Back,23,Italy,6,6,0,526
-538937,Stefano Cella,2581,Mantova 1911,2026,IT2,29,Centre-Back,25,Italy,6,6,0,540
-1015822,Eman Košpo,2581,Mantova 1911,2026,IT2,75,Centre-Back,19,Bosnia-Herzegovina,5,1,0,7
-805864,Fahem Benaïssa,2581,Mantova 1911,2026,IT2,50,Left-Back,24,France,6,6,1,540
-627625,Nicolò Radaelli,2581,Mantova 1911,2026,IT2,17,Right-Back,23,Italy,1,0,0,0
-337149,Andrea Meroni,2581,Mantova 1911,2026,IT2,13,Centre-Back,29,Italy,1,1,0,44
-820620,Tommaso Del Lungo,2581,Mantova 1911,2026,IT2,58,Centre-Back,22,Italy,4,2,0,32
+618674,Abdullah Laidani,1385,Modena FC,2025,IT2,13,Goalkeeper,22,Switzerland,17,0,0,0
+742235,Michele Pezzolato,1385,Modena FC,2025,IT2,22,Goalkeeper,21,Italy,34,5,0,440
+95736,Leandro Chichizola,1385,Modena FC,2025,IT2,1,Goalkeeper,35,Argentina,33,33,0,2890
+1193344,Andrea Maran,1385,Modena FC,2025,IT2,0,Goalkeeper,16,Italy,1,0,0,0
+537548,Fabrizio Bagheria,1385,Modena FC,2025,IT2,78,Goalkeeper,24,Italy,20,1,0,90
+665057,Daniel Tonoli,1385,Modena FC,2025,IT2,77,Centre-Back,22,Italy,35,35,5,2967
+698082,Bryant Nieling,1385,Modena FC,2025,IT2,20,Centre-Back,22,Netherlands,35,33,2,2728
+1175798,Gady Beyuku,1385,Modena FC,2025,IT2,2,Right-Back,19,France,33,30,1,1367
+707219,Steven Nador,1385,Modena FC,2025,IT2,19,Centre-Back,23,Togo,37,11,0,813
+704825,Alessandro Dellavalle,1385,Modena FC,2025,IT2,25,Centre-Back,21,Italy,36,15,0,1221
+534082,Fabio Ponsi,1385,Modena FC,2025,IT2,0,Left-Back,24,Italy,8,0,0,0
+163212,Davide Adorni,1385,Modena FC,2025,IT2,28,Centre-Back,32,Italy,37,28,1,2274
+283421,Cristian Căuz,1385,Modena FC,2025,IT2,33,Centre-Back,28,Italy,31,4,0,216
+382567,Matteo Cotali,1385,Modena FC,2025,IT2,29,Left-Back,28,Italy,31,14,0,305
+1169718,Franck Guiyong,1385,Modena FC,2025,IT2,0,Centre-Back,19,France,1,0,0,0
+387013,Antonio Pergreffi,1385,Modena FC,2025,IT2,0,Centre-Back,37,Italy,10,0,0,0
+915849,Yanis Massolin,1385,Modena FC,2025,IT2,17,Attacking Midfield,22,France,36,28,3,1642
+1295778,Samuel Wiafe,1385,Modena FC,2025,IT2,71,Central Midfield,17,Italy,15,9,0,429
+392515,Simone Santoro,1385,Modena FC,2025,IT2,8,Central Midfield,25,Italy,36,36,2,3063
+398030,Giuseppe Caso,1385,Modena FC,2025,IT2,0,Attacking Midfield,26,Italy,13,1,0,16
+657550,Alessandro Sersanti,1385,Modena FC,2025,IT2,5,Central Midfield,23,Italy,23,23,2,1018
+679754,Niklas Pyyhtiä,1385,Modena FC,2025,IT2,18,Central Midfield,21,Finland,31,28,0,1128
+330288,Fabio Gerli,1385,Modena FC,2025,IT2,16,Defensive Midfield,28,Italy,33,33,0,2661
+1336583,Tito Fabbri,1385,Modena FC,2025,IT2,0,Central Midfield,15,Italy,3,1,0,17
+216872,Francesco Zampano,1385,Modena FC,2025,IT2,7,Right Midfield,31,Italy,35,35,4,2702
+1301529,Pietro Arnaboldi,1385,Modena FC,2025,IT2,0,Defensive Midfield,17,Italy,4,1,0,90
+297444,Luca Magnino,1385,Modena FC,2025,IT2,0,Central Midfield,27,Italy,22,16,0,382
+976145,Antonio Imputato,1385,Modena FC,2025,IT2,90,Right Midfield,20,Italy,16,6,0,171
+604627,Ousmane Niang,1385,Modena FC,2025,IT2,80,Central Midfield,22,Italy,0,0,0,0
+707295,Giuseppe Ambrosino,1385,Modena FC,2025,IT2,10,Centre-Forward,21,Italy,15,14,2,665
+375816,Manuel De Luca,1385,Modena FC,2025,IT2,99,Centre-Forward,26,Italy,20,20,3,1329
+498235,Pedro Mendes,1385,Modena FC,2025,IT2,11,Centre-Forward,25,Portugal,38,32,4,1157
+407265,Luca Zanimacchia,1385,Modena FC,2025,IT2,98,Right Winger,26,Italy,37,36,3,2439
+209936,Ettore Gliozzi,1385,Modena FC,2025,IT2,9,Centre-Forward,29,Italy,33,33,11,1753
+238950,Francesco Di Mariano,1385,Modena FC,2025,IT2,0,Left Winger,29,Italy,20,17,1,799
+163222,Grégoire Defrel,1385,Modena FC,2025,IT2,92,Centre-Forward,34,France,29,25,2,804
+1185684,Edoardo Colpo,1385,Modena FC,2025,IT2,0,Centre-Forward,16,Italy,6,1,0,4
+155802,Luca Strizzolo,1385,Modena FC,2025,IT2,32,Centre-Forward,33,Italy,0,0,0,0
+618674,Abdullah Laidani,1385,Modena FC,2026,IT2,25,Goalkeeper,23,Switzerland,2,0,0,0
+95736,Leandro Chichizola,1385,Modena FC,2026,IT2,1,Goalkeeper,36,Argentina,8,8,0,720
+999404,Leonardo Consiglio,1385,Modena FC,2026,IT2,22,Goalkeeper,20,Italy,8,0,0,0
+1193344,Andrea Maran,1385,Modena FC,2026,IT2,12,Goalkeeper,18,Italy,3,0,0,0
+665057,Daniel Tonoli,1385,Modena FC,2026,IT2,77,Centre-Back,24,Italy,8,8,0,675
+698082,Bryant Nieling,1385,Modena FC,2026,IT2,20,Centre-Back,23,Netherlands,8,8,0,709
+1175798,Gady Beyuku,1385,Modena FC,2026,IT2,0,Right-Back,20,France,2,0,0,0
+707219,Steven Nador,1385,Modena FC,2026,IT2,19,Centre-Back,24,Togo,8,8,0,682
+603675,Francesco Folino,1385,Modena FC,2026,IT2,23,Centre-Back,24,Italy,6,5,0,172
+163212,Davide Adorni,1385,Modena FC,2026,IT2,28,Centre-Back,34,Italy,5,0,0,0
+1058344,Martino Odero,1385,Modena FC,2026,IT2,15,Right-Back,19,Italy,6,0,0,0
+929771,Diego Ronco,1385,Modena FC,2026,IT2,34,Centre-Back,22,Italy,6,0,0,0
+602124,Alessandro Bianco,1385,Modena FC,2026,IT2,42,Central Midfield,24,Italy,8,8,0,641
+392515,Simone Santoro,1385,Modena FC,2026,IT2,8,Central Midfield,27,Italy,8,7,1,476
+657550,Alessandro Sersanti,1385,Modena FC,2026,IT2,5,Central Midfield,24,Italy,0,0,0,0
+398030,Giuseppe Caso,1385,Modena FC,2026,IT2,10,Attacking Midfield,27,Italy,8,7,3,570
+539132,Giacomo Olzer,1385,Modena FC,2026,IT2,72,Attacking Midfield,25,Italy,7,7,2,458
+216872,Francesco Zampano,1385,Modena FC,2026,IT2,7,Right Midfield,33,Italy,8,6,0,445
+1336583,Tito Fabbri,1385,Modena FC,2026,IT2,14,Central Midfield,17,Italy,0,0,0,0
+310527,Paulo Azzi,1385,Modena FC,2026,IT2,27,Left Midfield,32,Brazil,8,8,0,437
+131109,Gastón Brugman,1385,Modena FC,2026,IT2,16,Defensive Midfield,34,Uruguay,8,8,0,621
+1301529,Pietro Arnaboldi,1385,Modena FC,2026,IT2,73,Defensive Midfield,18,Italy,3,0,0,0
+976145,Antonio Imputato,1385,Modena FC,2026,IT2,26,Right Midfield,22,Italy,8,4,0,152
+1056746,Wisdom Acquah,1385,Modena FC,2026,IT2,32,Defensive Midfield,19,Italy,7,5,0,54
+221421,Kleis Bozhanaj,1385,Modena FC,2026,IT2,17,Attacking Midfield,25,Albania,7,4,0,27
+1300468,Treasure Egharevba,1385,Modena FC,2026,IT2,37,Left Midfield,18,Italy,1,0,0,0
+707295,Giuseppe Ambrosino,1385,Modena FC,2026,IT2,70,Centre-Forward,23,Italy,8,8,2,686
+167727,Andrea Belotti,1385,Modena FC,2026,IT2,11,Centre-Forward,32,Italy,5,5,5,185
+498235,Pedro Mendes,1385,Modena FC,2026,IT2,0,Centre-Forward,27,Portugal,2,1,0,63
+678441,Daniele Montevago,1385,Modena FC,2026,IT2,9,Centre-Forward,23,Italy,8,6,1,64
+796574,Stênio,1385,Modena FC,2026,IT2,33,Right Winger,23,Brazil,2,2,0,34
+1004950,Joris Manquant,1385,Modena FC,2026,IT2,18,Centre-Forward,21,France,0,0,0,0
+660878,Luca Bacchin,1385,Modena FC,2026,IT2,29,Second Striker,22,Italy,8,3,0,52
+463792,Luca Gemello,2581,Mantova 1911,2026,IT2,1,Goalkeeper,26,Italy,8,0,0,0
+110925,Francesco Bardi,2581,Mantova 1911,2026,IT2,22,Goalkeeper,34,Italy,8,8,0,720
+487828,Manuel Gasparini,2581,Mantova 1911,2026,IT2,12,Goalkeeper,24,Italy,4,0,0,0
+986324,Bodin Tomasevic,2581,Mantova 1911,2026,IT2,5,Centre-Back,20,Montenegro,8,8,1,650
+704283,Alessio Castellini,2581,Mantova 1911,2026,IT2,27,Centre-Back,23,Italy,8,8,0,706
+538937,Stefano Cella,2581,Mantova 1911,2026,IT2,29,Centre-Back,25,Italy,8,8,0,720
+1015822,Eman Košpo,2581,Mantova 1911,2026,IT2,75,Centre-Back,19,Bosnia-Herzegovina,7,1,0,7
+805864,Fahem Benaïssa,2581,Mantova 1911,2026,IT2,50,Left-Back,24,France,8,8,1,720
+627625,Nicolò Radaelli,2581,Mantova 1911,2026,IT2,17,Right-Back,23,Italy,3,0,0,0
+337149,Andrea Meroni,2581,Mantova 1911,2026,IT2,13,Centre-Back,29,Italy,2,1,0,44
+820620,Tommaso Del Lungo,2581,Mantova 1911,2026,IT2,58,Centre-Back,22,Italy,6,4,0,175
 1310256,Cristian Marai,2581,Mantova 1911,2026,IT2,33,Centre-Back,18,Italy,4,0,0,0
-702324,Rachid Kouda,2581,Mantova 1911,2026,IT2,80,Central Midfield,24,Burkina Faso,5,5,0,373
-619494,Francesco Ruocco,2581,Mantova 1911,2026,IT2,19,Attacking Midfield,25,Italy,6,6,5,433
-487839,Simone Trimboli,2581,Mantova 1911,2026,IT2,21,Central Midfield,24,Italy,3,2,0,180
-812654,Rareș Ilie,2581,Mantova 1911,2026,IT2,8,Attacking Midfield,23,Romania,6,6,1,374
-814445,Lorenzo Ignacchiti,2581,Mantova 1911,2026,IT2,25,Central Midfield,22,Italy,6,6,0,429
+702324,Rachid Kouda,2581,Mantova 1911,2026,IT2,80,Central Midfield,24,Burkina Faso,7,7,0,479
+619494,Francesco Ruocco,2581,Mantova 1911,2026,IT2,19,Attacking Midfield,25,Italy,8,8,5,584
+487839,Simone Trimboli,2581,Mantova 1911,2026,IT2,21,Central Midfield,24,Italy,5,4,0,360
+812654,Rareș Ilie,2581,Mantova 1911,2026,IT2,8,Attacking Midfield,23,Romania,8,8,1,519
+814445,Lorenzo Ignacchiti,2581,Mantova 1911,2026,IT2,25,Central Midfield,22,Italy,8,8,0,522
 1074917,Jonathan Silva,2581,Mantova 1911,2026,IT2,41,Attacking Midfield,22,Brazil,6,6,0,497
 622801,Flavio Paoletti,2581,Mantova 1911,2026,IT2,20,Central Midfield,23,Italy,5,2,0,15
-562255,David Wieser,2581,Mantova 1911,2026,IT2,10,Central Midfield,24,Italy,6,2,0,65
-1028019,Sambaly Keïta,2581,Mantova 1911,2026,IT2,18,Central Midfield,25,France,6,1,0,7
-647181,Jean-Pierre Longonda,2581,Mantova 1911,2026,IT2,6,Defensive Midfield,24,Belgium,6,4,1,81
+562255,David Wieser,2581,Mantova 1911,2026,IT2,10,Central Midfield,24,Italy,8,3,0,96
+1028019,Sambaly Keïta,2581,Mantova 1911,2026,IT2,18,Central Midfield,25,France,7,1,0,7
+647181,Jean-Pierre Longonda,2581,Mantova 1911,2026,IT2,6,Defensive Midfield,24,Belgium,8,5,1,87
 565162,Giacomo Fedel,2581,Mantova 1911,2026,IT2,0,Central Midfield,24,Italy,0,0,0,0
-619327,Filippo Vesentini,2581,Mantova 1911,2026,IT2,77,Left Midfield,24,Italy,0,0,0,0
+619327,Filippo Vesentini,2581,Mantova 1911,2026,IT2,77,Left Midfield,24,Italy,2,0,0,0
 1588797,Yassin Banna,2581,Mantova 1911,2026,IT2,44,Midfield,19,Italy,0,0,0,0
-698546,Vanja Vlahović,2581,Mantova 1911,2026,IT2,99,Centre-Forward,22,Serbia,5,4,2,141
-704335,Davide Bragantini,2581,Mantova 1911,2026,IT2,30,Right Winger,23,Italy,5,5,1,174
-930768,Matteo Spinaccè,2581,Mantova 1911,2026,IT2,7,Centre-Forward,20,Italy,2,0,0,0
-209936,Ettore Gliozzi,2581,Mantova 1911,2026,IT2,9,Centre-Forward,31,Italy,6,6,1,328
-1180701,Ismael Cajazzo,2581,Mantova 1911,2026,IT2,11,Right Winger,22,Canada,6,4,0,111
+698546,Vanja Vlahović,2581,Mantova 1911,2026,IT2,99,Centre-Forward,22,Serbia,6,4,2,141
+704335,Davide Bragantini,2581,Mantova 1911,2026,IT2,30,Right Winger,23,Italy,7,7,1,277
+930768,Matteo Spinaccè,2581,Mantova 1911,2026,IT2,7,Centre-Forward,20,Italy,3,1,0,13
+209936,Ettore Gliozzi,2581,Mantova 1911,2026,IT2,9,Centre-Forward,31,Italy,8,8,2,421
+1180701,Ismael Cajazzo,2581,Mantova 1911,2026,IT2,11,Right Winger,22,Canada,8,5,0,127
 934461,Federico Chinetti,2581,Mantova 1911,2026,IT2,71,Right Winger,20,Italy,5,2,0,33
-934159,Tommaso Martinelli,2331,US Avellino 1912,2026,IT2,50,Goalkeeper,20,Italy,6,6,0,540
-617808,Jacopo Sassi,2331,US Avellino 1912,2026,IT2,22,Goalkeeper,23,Italy,1,0,0,0
-73929,Antony Iannarilli,2331,US Avellino 1912,2026,IT2,1,Goalkeeper,35,Italy,6,0,0,0
-650993,Filippo Missori,2331,US Avellino 1912,2026,IT2,2,Right-Back,22,Italy,4,4,0,299
-900630,Brando Moruzzi,2331,US Avellino 1912,2026,IT2,27,Left-Back,22,Italy,6,6,1,460
-616162,Alessandro Fontanarosa,2331,US Avellino 1912,2026,IT2,0,Centre-Back,23,Italy,2,0,0,0
-32113,Armando Izzo,2331,US Avellino 1912,2026,IT2,4,Centre-Back,34,Italy,6,6,0,540
-487633,Patrick Enrici,2331,US Avellino 1912,2026,IT2,56,Centre-Back,25,Italy,6,5,0,440
-226093,Lorenco Simic,2331,US Avellino 1912,2026,IT2,44,Centre-Back,30,Croatia,4,3,0,225
-392570,Marco Sala,2331,US Avellino 1912,2026,IT2,3,Left-Back,27,Italy,6,4,0,80
-441611,Michael Venturi,2331,US Avellino 1912,2026,IT2,23,Centre-Back,27,Italy,6,4,0,315
-932763,Alessandro Di Bitonto,2331,US Avellino 1912,2026,IT2,5,Centre-Back,21,Italy,3,0,0,0
-167879,Tommaso Cancellotti,2331,US Avellino 1912,2026,IT2,29,Right-Back,34,Italy,4,4,0,241
-976828,Matteo Di Paola,2331,US Avellino 1912,2026,IT2,0,Right-Back,21,Italy,0,0,0,0
-651002,Giacomo Faticanti,2331,US Avellino 1912,2026,IT2,16,Defensive Midfield,22,Italy,6,2,0,38
-617170,Martin Palumbo,2331,US Avellino 1912,2026,IT2,20,Attacking Midfield,24,Norway,6,6,1,492
-724107,Luca Di Maggio,2331,US Avellino 1912,2026,IT2,8,Central Midfield,21,Italy,5,5,0,284
-616031,Michele Besaggio,2331,US Avellino 1912,2026,IT2,39,Central Midfield,24,Italy,6,6,3,461
-930780,Thomas Berenbruch,2331,US Avellino 1912,2026,IT2,18,Central Midfield,21,Italy,6,1,0,13
-240357,Luca Palmiero,2331,US Avellino 1912,2026,IT2,6,Defensive Midfield,30,Italy,5,3,0,213
-234137,Dimitrios Sounas,2331,US Avellino 1912,2026,IT2,24,Defensive Midfield,32,Greece,6,6,0,117
-411666,Emanuele Adamo,2331,US Avellino 1912,2026,IT2,30,Right Midfield,28,Italy,4,0,0,0
-920941,Noah Mutanda,2331,US Avellino 1912,2026,IT2,0,Central Midfield,21,Germany,0,0,0,0
-521407,Walid Cheddira,2331,US Avellino 1912,2026,IT2,9,Centre-Forward,28,Morocco,5,5,2,269
-666268,Daniel Fila,2331,US Avellino 1912,2026,IT2,11,Centre-Forward,24,Czech Republic,1,1,0,12
-240129,Tommaso Biasci,2331,US Avellino 1912,2026,IT2,14,Second Striker,31,Italy,6,5,0,123
-393652,Raffaele Russo,2331,US Avellino 1912,2026,IT2,10,Left Winger,27,Italy,6,6,4,510
-438021,Luca Pandolfi,2331,US Avellino 1912,2026,IT2,7,Centre-Forward,28,Italy,6,3,0,74
-967814,Sebastiano Di Paolo,2331,US Avellino 1912,2026,IT2,77,Right Winger,20,Italy,5,1,0,2
-340151,Andrea Favilli,2331,US Avellino 1912,2026,IT2,99,Centre-Forward,29,Italy,5,4,0,192
-300137,Marius Adamonis,4554,FC Südtirol,2025,IT2,31,Goalkeeper,28,Lithuania,38,34,0,2992
-12907,Alessio Cragno,4554,FC Südtirol,2025,IT2,22,Goalkeeper,31,Italy,6,2,0,158
-482789,Giacomo Drago,4554,FC Südtirol,2025,IT2,0,Goalkeeper,24,Italy,1,0,0,0
-327326,Giacomo Poluzzi,4554,FC Südtirol,2025,IT2,0,Goalkeeper,37,Italy,22,3,0,270
-886189,Daniel Theiner,4554,FC Südtirol,2025,IT2,62,Goalkeeper,21,Italy,19,0,0,0
-240799,Daniele Borra,4554,FC Südtirol,2025,IT2,1,Goalkeeper,29,Italy,15,0,0,0
-1049984,Lorenzo Bonifacio,4554,FC Südtirol,2025,IT2,0,Goalkeeper,17,Italy,1,0,0,0
-1039342,Raphael Kofler,4554,FC Südtirol,2025,IT2,28,Centre-Back,20,Italy,29,28,3,2416
-691235,Andrea Giorgini,4554,FC Südtirol,2025,IT2,0,Centre-Back,23,Italy,1,1,0,90
-457468,Nicola Pietrangeli,4554,FC Südtirol,2025,IT2,19,Centre-Back,24,Italy,21,15,1,1163
-1110645,Filipe Bordon,4554,FC Südtirol,2025,IT2,3,Centre-Back,20,Brazil,34,15,0,458
-611197,Simone Davi,4554,FC Südtirol,2025,IT2,24,Left-Back,25,Italy,34,29,0,1944
-395089,Hamza El Kaouakibi,4554,FC Südtirol,2025,IT2,94,Right-Back,27,Morocco,32,31,1,2345
-795496,Federico Davi,4554,FC Südtirol,2025,IT2,23,Right-Back,23,Italy,37,27,0,1298
-882912,Davide Mancini,4554,FC Südtirol,2025,IT2,4,Centre-Back,20,Italy,32,4,0,86
-111433,Frédéric Veseli,4554,FC Südtirol,2025,IT2,34,Centre-Back,32,Albania,28,27,0,2187
-1048079,Carlo Sabatini,4554,FC Südtirol,2025,IT2,0,Centre-Back,18,Italy,21,0,0,0
-34198,Andrea Masiello,4554,FC Südtirol,2025,IT2,5,Centre-Back,39,Italy,29,16,0,929
-685509,Simone Tronchin,4554,FC Südtirol,2025,IT2,18,Central Midfield,22,Italy,36,34,1,2444
-745418,Jacopo Martini,4554,FC Südtirol,2025,IT2,6,Central Midfield,20,Italy,29,23,2,1069
-199272,Daniele Casiraghi,4554,FC Südtirol,2025,IT2,17,Attacking Midfield,32,Italy,35,30,4,2214
-472161,Mamadou Coulibaly,4554,FC Südtirol,2025,IT2,14,Central Midfield,26,Senegal,15,13,1,536
-612065,Karim Zedadka,4554,FC Südtirol,2025,IT2,7,Left Midfield,25,Algeria,33,29,1,1522
-492627,Marco Frigerio,4554,FC Südtirol,2025,IT2,26,Central Midfield,23,Italy,20,18,0,703
-130360,Simone Verdi,4554,FC Südtirol,2025,IT2,99,Attacking Midfield,32,Italy,19,11,0,298
-346560,Alessandro Mallamo,4554,FC Südtirol,2025,IT2,0,Central Midfield,26,Italy,21,10,0,529
-1168046,Dhirar Brik,4554,FC Südtirol,2025,IT2,0,Defensive Midfield,17,Tunisia,31,4,0,16
-331395,Fabian Tait,4554,FC Südtirol,2025,IT2,21,Central Midfield,32,Italy,37,34,1,1868
-163582,Salvatore Molina,4554,FC Südtirol,2025,IT2,79,Right Midfield,33,Italy,34,34,0,2829
-216599,Domen Crnigoj,4554,FC Südtirol,2025,IT2,89,Central Midfield,29,Slovenia,19,19,1,623
-460842,Silvio Merkaj,4554,FC Südtirol,2025,IT2,33,Centre-Forward,27,Albania,36,36,9,2841
-658729,Emanuele Pecorino,4554,FC Südtirol,2025,IT2,9,Centre-Forward,23,Italy,37,33,9,1938
-421773,Riccardo Tonin,4554,FC Südtirol,2025,IT2,11,Centre-Forward,24,Italy,16,11,0,273
-307335,Raphael Odogwu,4554,FC Südtirol,2025,IT2,90,Centre-Forward,34,Italy,30,29,3,1176
-650254,Jonathan Italeng,4554,FC Südtirol,2025,IT2,0,Centre-Forward,24,Cameroon,16,6,0,102
 814473,Giovanni Daffara,2331,US Avellino 1912,2025,IT2,30,Goalkeeper,20,Italy,37,25,0,2250
 617808,Jacopo Sassi,2331,US Avellino 1912,2025,IT2,53,Goalkeeper,21,Italy,11,0,0,0
 73929,Antony Iannarilli,2331,US Avellino 1912,2025,IT2,1,Goalkeeper,34,Italy,32,13,1,1170
@@ -4125,71 +4061,173 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 340151,Andrea Favilli,2331,US Avellino 1912,2025,IT2,99,Centre-Forward,28,Italy,7,6,1,133
 283352,Cosimo Patierno,2331,US Avellino 1912,2025,IT2,9,Centre-Forward,34,Italy,26,23,1,1067
 951327,Alessandro Campanile,2331,US Avellino 1912,2025,IT2,0,Centre-Forward,20,Italy,2,0,0,0
-357991,Alessandro Plizzari,4554,FC Südtirol,2026,IT2,22,Goalkeeper,26,Italy,6,6,0,540
-1069495,Rok Vadjunec,4554,FC Südtirol,2026,IT2,12,Goalkeeper,20,Slovenia,6,0,0,0
-1367488,Tommaso Laureti,4554,FC Südtirol,2026,IT2,0,Goalkeeper,17,Italy,1,0,0,0
-1596620,Lukas Ploner,4554,FC Südtirol,2026,IT2,0,Goalkeeper,18,Italy,2,0,0,0
-818882,Riccardo Stivanello,4554,FC Südtirol,2026,IT2,4,Centre-Back,22,Italy,6,6,0,540
-691235,Andrea Giorgini,4554,FC Südtirol,2026,IT2,55,Centre-Back,24,Italy,6,6,1,540
-936503,Giacomo Stabile,4554,FC Südtirol,2026,IT2,27,Centre-Back,21,Italy,4,4,0,287
-705097,Davide Veroli,4554,FC Südtirol,2026,IT2,3,Centre-Back,23,Italy,6,6,0,250
-611197,Simone Davi,4554,FC Südtirol,2026,IT2,24,Left-Back,27,Italy,6,6,1,196
-395089,Hamza El Kaouakibi,4554,FC Südtirol,2026,IT2,94,Right-Back,28,Morocco,0,0,0,0
-362981,Marco Varnier,4554,FC Südtirol,2026,IT2,13,Centre-Back,28,Italy,0,0,0,0
-1242353,Mattia Pellini,4554,FC Südtirol,2026,IT2,19,Centre-Back,19,Italy,4,0,0,0
-795496,Federico Davi,4554,FC Südtirol,2026,IT2,23,Right-Back,24,Italy,5,1,0,3
-1307105,Marco Iuliano,4554,FC Südtirol,2026,IT2,0,Centre-Back,18,Italy,3,0,0,0
-981136,Fabio Rispoli,4554,FC Südtirol,2026,IT2,10,Central Midfield,20,Italy,6,6,1,470
-883349,Kevin Zeroli,4554,FC Südtirol,2026,IT2,18,Central Midfield,21,Italy,2,2,0,91
-685509,Simone Tronchin,4554,FC Südtirol,2026,IT2,5,Central Midfield,23,Italy,6,6,0,540
-679754,Niklas Pyyhtiä,4554,FC Südtirol,2026,IT2,8,Central Midfield,23,Finland,1,1,0,45
-745418,Jacopo Martini,4554,FC Südtirol,2026,IT2,0,Central Midfield,21,Italy,1,0,0,0
-615897,Aljosa Vasic,4554,FC Südtirol,2026,IT2,14,Central Midfield,24,Serbia,6,5,0,295
-566613,Bjarki Bjarkason,4554,FC Südtirol,2026,IT2,20,Left Midfield,26,Iceland,5,5,0,381
-492627,Marco Frigerio,4554,FC Südtirol,2026,IT2,0,Central Midfield,25,Italy,1,0,0,0
-1168046,Dhirar Brik,4554,FC Südtirol,2026,IT2,46,Defensive Midfield,18,Tunisia,6,1,0,10
-331395,Fabian Tait,4554,FC Südtirol,2026,IT2,21,Central Midfield,33,Italy,6,2,0,15
-163582,Salvatore Molina,4554,FC Südtirol,2026,IT2,79,Right Midfield,34,Italy,6,6,0,540
-1310269,Elias Schrott,4554,FC Südtirol,2026,IT2,80,Defensive Midfield,17,Italy,6,1,0,4
-816861,Alvin Okoro,4554,FC Südtirol,2026,IT2,90,Centre-Forward,21,Italy,5,5,1,253
-460842,Silvio Merkaj,4554,FC Südtirol,2026,IT2,0,Centre-Forward,28,Albania,2,2,1,176
-632857,Vasco Lopes,4554,FC Südtirol,2026,IT2,11,Right Winger,27,Cape Verde,6,6,1,381
-816093,Kenny Mixtur,4554,FC Südtirol,2026,IT2,25,Centre-Forward,23,Guadeloupe,6,4,2,111
-925848,Lorenzo Anghelè,4554,FC Südtirol,2026,IT2,17,Second Striker,21,Italy,4,2,0,60
-731525,Rareș Burnete,4554,FC Südtirol,2026,IT2,9,Centre-Forward,22,Romania,6,6,1,167
-1588622,Jannik Leitner,4554,FC Südtirol,2026,IT2,0,Right Winger,16,Italy,1,0,0,0
+934159,Tommaso Martinelli,2331,US Avellino 1912,2026,IT2,50,Goalkeeper,20,Italy,8,8,0,720
+617808,Jacopo Sassi,2331,US Avellino 1912,2026,IT2,22,Goalkeeper,23,Italy,2,0,0,0
+73929,Antony Iannarilli,2331,US Avellino 1912,2026,IT2,1,Goalkeeper,35,Italy,7,0,0,0
+650993,Filippo Missori,2331,US Avellino 1912,2026,IT2,2,Right-Back,22,Italy,6,6,0,479
+900630,Brando Moruzzi,2331,US Avellino 1912,2026,IT2,27,Left-Back,22,Italy,8,8,1,632
+616162,Alessandro Fontanarosa,2331,US Avellino 1912,2026,IT2,0,Centre-Back,23,Italy,2,0,0,0
+32113,Armando Izzo,2331,US Avellino 1912,2026,IT2,4,Centre-Back,34,Italy,8,8,1,661
+487633,Patrick Enrici,2331,US Avellino 1912,2026,IT2,56,Centre-Back,25,Italy,8,7,0,620
+226093,Lorenco Simic,2331,US Avellino 1912,2026,IT2,44,Centre-Back,30,Croatia,5,3,0,225
+392570,Marco Sala,2331,US Avellino 1912,2026,IT2,3,Left-Back,27,Italy,8,4,0,80
+441611,Michael Venturi,2331,US Avellino 1912,2026,IT2,23,Centre-Back,27,Italy,8,6,0,495
+932763,Alessandro Di Bitonto,2331,US Avellino 1912,2026,IT2,5,Centre-Back,21,Italy,5,1,0,59
+167879,Tommaso Cancellotti,2331,US Avellino 1912,2026,IT2,29,Right-Back,34,Italy,5,4,0,241
+976828,Matteo Di Paola,2331,US Avellino 1912,2026,IT2,0,Right-Back,21,Italy,0,0,0,0
+651002,Giacomo Faticanti,2331,US Avellino 1912,2026,IT2,16,Defensive Midfield,22,Italy,8,3,0,71
+617170,Martin Palumbo,2331,US Avellino 1912,2026,IT2,20,Attacking Midfield,24,Norway,8,8,1,623
+724107,Luca Di Maggio,2331,US Avellino 1912,2026,IT2,8,Central Midfield,21,Italy,7,7,0,362
+616031,Michele Besaggio,2331,US Avellino 1912,2026,IT2,39,Central Midfield,24,Italy,8,8,3,635
+930780,Thomas Berenbruch,2331,US Avellino 1912,2026,IT2,18,Central Midfield,21,Italy,6,1,0,13
+240357,Luca Palmiero,2331,US Avellino 1912,2026,IT2,6,Defensive Midfield,30,Italy,7,5,0,315
+234137,Dimitrios Sounas,2331,US Avellino 1912,2026,IT2,24,Defensive Midfield,32,Greece,8,7,0,123
+411666,Emanuele Adamo,2331,US Avellino 1912,2026,IT2,30,Right Midfield,28,Italy,6,0,0,0
+920941,Noah Mutanda,2331,US Avellino 1912,2026,IT2,0,Central Midfield,21,Germany,0,0,0,0
+521407,Walid Cheddira,2331,US Avellino 1912,2026,IT2,9,Centre-Forward,28,Morocco,7,7,2,401
+666268,Daniel Fila,2331,US Avellino 1912,2026,IT2,11,Centre-Forward,24,Czech Republic,1,1,0,12
+240129,Tommaso Biasci,2331,US Avellino 1912,2026,IT2,14,Second Striker,31,Italy,8,7,0,145
+393652,Raffaele Russo,2331,US Avellino 1912,2026,IT2,10,Left Winger,27,Italy,8,8,4,684
+438021,Luca Pandolfi,2331,US Avellino 1912,2026,IT2,7,Centre-Forward,28,Italy,8,3,0,74
+967814,Sebastiano Di Paolo,2331,US Avellino 1912,2026,IT2,77,Right Winger,20,Italy,7,2,0,10
+340151,Andrea Favilli,2331,US Avellino 1912,2026,IT2,99,Centre-Forward,29,Italy,7,6,0,240
+300137,Marius Adamonis,4554,FC Südtirol,2025,IT2,31,Goalkeeper,28,Lithuania,38,34,0,2992
+12907,Alessio Cragno,4554,FC Südtirol,2025,IT2,22,Goalkeeper,31,Italy,6,2,0,158
+482789,Giacomo Drago,4554,FC Südtirol,2025,IT2,0,Goalkeeper,24,Italy,1,0,0,0
+327326,Giacomo Poluzzi,4554,FC Südtirol,2025,IT2,0,Goalkeeper,37,Italy,22,3,0,270
+886189,Daniel Theiner,4554,FC Südtirol,2025,IT2,62,Goalkeeper,21,Italy,19,0,0,0
+240799,Daniele Borra,4554,FC Südtirol,2025,IT2,1,Goalkeeper,29,Italy,15,0,0,0
+1049984,Lorenzo Bonifacio,4554,FC Südtirol,2025,IT2,0,Goalkeeper,17,Italy,1,0,0,0
+1039342,Raphael Kofler,4554,FC Südtirol,2025,IT2,28,Centre-Back,20,Italy,29,28,3,2416
+691235,Andrea Giorgini,4554,FC Südtirol,2025,IT2,0,Centre-Back,23,Italy,1,1,0,90
+457468,Nicola Pietrangeli,4554,FC Südtirol,2025,IT2,19,Centre-Back,24,Italy,21,15,1,1163
+1110645,Filipe Bordon,4554,FC Südtirol,2025,IT2,3,Centre-Back,20,Brazil,34,15,0,458
+611197,Simone Davi,4554,FC Südtirol,2025,IT2,24,Left-Back,25,Italy,34,29,0,1944
+395089,Hamza El Kaouakibi,4554,FC Südtirol,2025,IT2,94,Right-Back,27,Morocco,32,31,1,2345
+795496,Federico Davi,4554,FC Südtirol,2025,IT2,23,Right-Back,23,Italy,37,27,0,1298
+882912,Davide Mancini,4554,FC Südtirol,2025,IT2,4,Centre-Back,20,Italy,32,4,0,86
+111433,Frédéric Veseli,4554,FC Südtirol,2025,IT2,34,Centre-Back,32,Albania,28,27,0,2187
+1048079,Carlo Sabatini,4554,FC Südtirol,2025,IT2,0,Centre-Back,18,Italy,21,0,0,0
+34198,Andrea Masiello,4554,FC Südtirol,2025,IT2,5,Centre-Back,39,Italy,29,16,0,929
+685509,Simone Tronchin,4554,FC Südtirol,2025,IT2,18,Central Midfield,22,Italy,36,34,1,2444
+745418,Jacopo Martini,4554,FC Südtirol,2025,IT2,6,Central Midfield,20,Italy,29,23,2,1069
+199272,Daniele Casiraghi,4554,FC Südtirol,2025,IT2,17,Attacking Midfield,32,Italy,35,30,4,2214
+472161,Mamadou Coulibaly,4554,FC Südtirol,2025,IT2,14,Central Midfield,26,Senegal,15,13,1,536
+612065,Karim Zedadka,4554,FC Südtirol,2025,IT2,7,Left Midfield,25,Algeria,33,29,1,1522
+492627,Marco Frigerio,4554,FC Südtirol,2025,IT2,26,Central Midfield,23,Italy,20,18,0,703
+130360,Simone Verdi,4554,FC Südtirol,2025,IT2,99,Attacking Midfield,32,Italy,19,11,0,298
+346560,Alessandro Mallamo,4554,FC Südtirol,2025,IT2,0,Central Midfield,26,Italy,21,10,0,529
+1168046,Dhirar Brik,4554,FC Südtirol,2025,IT2,0,Defensive Midfield,17,Tunisia,31,4,0,16
+331395,Fabian Tait,4554,FC Südtirol,2025,IT2,21,Central Midfield,32,Italy,37,34,1,1868
+163582,Salvatore Molina,4554,FC Südtirol,2025,IT2,79,Right Midfield,33,Italy,34,34,0,2829
+216599,Domen Crnigoj,4554,FC Südtirol,2025,IT2,89,Central Midfield,29,Slovenia,19,19,1,623
+460842,Silvio Merkaj,4554,FC Südtirol,2025,IT2,33,Centre-Forward,27,Albania,36,36,9,2841
+658729,Emanuele Pecorino,4554,FC Südtirol,2025,IT2,9,Centre-Forward,23,Italy,37,33,9,1938
+421773,Riccardo Tonin,4554,FC Südtirol,2025,IT2,11,Centre-Forward,24,Italy,16,11,0,273
+307335,Raphael Odogwu,4554,FC Südtirol,2025,IT2,90,Centre-Forward,34,Italy,30,29,3,1176
+650254,Jonathan Italeng,4554,FC Südtirol,2025,IT2,0,Centre-Forward,24,Cameroon,16,6,0,102
 334992,Jonathan Klinsmann,1429,Cesena FC,2026,IT2,33,Goalkeeper,29,United States,0,0,0,0
-530847,Alessandro Siano,1429,Cesena FC,2026,IT2,1,Goalkeeper,25,Italy,6,6,0,540
+530847,Alessandro Siano,1429,Cesena FC,2026,IT2,1,Goalkeeper,25,Italy,8,8,0,720
 1206709,Tommaso Mazzi,1429,Cesena FC,2026,IT2,90,Goalkeeper,17,Italy,3,0,0,0
-1202384,Niccolò Fontana,1429,Cesena FC,2026,IT2,39,Goalkeeper,18,Italy,4,0,0,0
-667905,Luca Ferretti,1429,Cesena FC,2026,IT2,40,Goalkeeper,22,Italy,1,0,0,0
+1202384,Niccolò Fontana,1429,Cesena FC,2026,IT2,39,Goalkeeper,19,Italy,6,0,0,0
+667905,Luca Ferretti,1429,Cesena FC,2026,IT2,40,Goalkeeper,22,Italy,3,0,0,0
 1186626,Simone Gianfanti,1429,Cesena FC,2026,IT2,0,Goalkeeper,19,Italy,1,0,0,0
-845566,Mihajlo Ilić,1429,Cesena FC,2026,IT2,6,Centre-Back,23,Serbia,6,6,0,530
-392524,Andrea Ciofi,1429,Cesena FC,2026,IT2,15,Centre-Back,27,Italy,6,6,0,525
-386755,Gianluca Frabotta,1429,Cesena FC,2026,IT2,7,Left-Back,27,Italy,6,6,0,299
-395805,Massimiliano Mangraviti,1429,Cesena FC,2026,IT2,24,Centre-Back,28,Italy,5,5,0,350
-534081,Jacopo Gelli,1429,Cesena FC,2026,IT2,4,Centre-Back,25,Italy,6,5,0,450
-1058396,Vittorio Magni,1429,Cesena FC,2026,IT2,23,Right-Back,20,Italy,6,3,0,68
-813296,Mark Natta,1429,Cesena FC,2026,IT2,2,Centre-Back,23,Australia,6,0,0,0
-929688,Antonio David,1429,Cesena FC,2026,IT2,3,Left-Back,22,Romania,5,2,0,95
-391453,Matteo Piacentini,1429,Cesena FC,2026,IT2,26,Centre-Back,27,Italy,3,0,0,0
-659415,Riccardo Pagano,1429,Cesena FC,2026,IT2,10,Central Midfield,21,Italy,6,6,0,504
-908791,Matteo Francesconi,1429,Cesena FC,2026,IT2,8,Central Midfield,22,Italy,6,3,0,75
-406806,Emil Bohinen,1429,Cesena FC,2026,IT2,32,Defensive Midfield,27,Norway,4,2,0,50
-702614,Matteo Guidi,1429,Cesena FC,2026,IT2,18,Defensive Midfield,23,Italy,6,6,0,337
-879868,Marco Dalla Vecchia,1429,Cesena FC,2026,IT2,27,Central Midfield,21,Italy,5,4,0,137
-163216,Dimitri Bisoli,1429,Cesena FC,2026,IT2,25,Central Midfield,32,Italy,6,6,0,535
+845566,Mihajlo Ilić,1429,Cesena FC,2026,IT2,6,Centre-Back,23,Serbia,8,8,0,652
+392524,Andrea Ciofi,1429,Cesena FC,2026,IT2,15,Centre-Back,27,Italy,8,8,0,705
+386755,Gianluca Frabotta,1429,Cesena FC,2026,IT2,7,Left-Back,27,Italy,8,8,0,479
+395805,Massimiliano Mangraviti,1429,Cesena FC,2026,IT2,24,Centre-Back,28,Italy,7,7,0,420
+534081,Jacopo Gelli,1429,Cesena FC,2026,IT2,4,Centre-Back,25,Italy,8,7,0,630
+1058396,Vittorio Magni,1429,Cesena FC,2026,IT2,23,Right-Back,20,Italy,8,3,0,68
+813296,Mark Natta,1429,Cesena FC,2026,IT2,2,Centre-Back,23,Australia,8,0,0,0
+929688,Antonio David,1429,Cesena FC,2026,IT2,3,Left-Back,22,Romania,7,2,0,95
+391453,Matteo Piacentini,1429,Cesena FC,2026,IT2,26,Centre-Back,27,Italy,5,1,0,13
+659415,Riccardo Pagano,1429,Cesena FC,2026,IT2,10,Central Midfield,21,Italy,7,7,0,549
+908791,Matteo Francesconi,1429,Cesena FC,2026,IT2,8,Central Midfield,22,Italy,8,5,0,171
+406806,Emil Bohinen,1429,Cesena FC,2026,IT2,32,Defensive Midfield,27,Norway,6,4,0,163
+702614,Matteo Guidi,1429,Cesena FC,2026,IT2,18,Defensive Midfield,23,Italy,8,8,0,459
+879868,Marco Dalla Vecchia,1429,Cesena FC,2026,IT2,27,Central Midfield,21,Italy,7,5,0,150
+163216,Dimitri Bisoli,1429,Cesena FC,2026,IT2,25,Central Midfield,32,Italy,8,8,0,686
 650248,Luca Schirone,1429,Cesena FC,2026,IT2,5,Central Midfield,23,Italy,5,1,0,14
 1296424,Filippo Bertaccini,1429,Cesena FC,2026,IT2,43,Attacking Midfield,19,Italy,2,0,0,0
 1312597,Matteo Casadei,1429,Cesena FC,2026,IT2,20,Central Midfield,17,Italy,2,0,0,0
 1312591,Enea Casadei,1429,Cesena FC,2026,IT2,76,Central Midfield,18,Italy,0,0,0,0
 1116360,Matteo Lontani,1429,Cesena FC,2026,IT2,0,Central Midfield,19,Italy,1,0,0,0
-908760,Cristian Shpendi,1429,Cesena FC,2026,IT2,9,Centre-Forward,23,Albania,6,6,6,514
-996453,Maat Daniel Caprini,1429,Cesena FC,2026,IT2,11,Left Winger,20,Italy,0,0,0,0
-704680,Antonio Fiori,1429,Cesena FC,2026,IT2,80,Left Winger,23,Italy,6,6,1,365
-1177045,Xavello Druiventak,1429,Cesena FC,2026,IT2,14,Right Winger,22,Netherlands,6,6,0,308
-1044794,Alessandro Debenedetti,1429,Cesena FC,2026,IT2,91,Centre-Forward,23,Italy,6,5,0,82
-725242,Luca D'Andrea,1429,Cesena FC,2026,IT2,16,Right Winger,22,Italy,6,3,0,122
+908760,Cristian Shpendi,1429,Cesena FC,2026,IT2,9,Centre-Forward,23,Albania,8,8,6,665
+996453,Maat Daniel Caprini,1429,Cesena FC,2026,IT2,11,Left Winger,20,Italy,1,0,0,0
+704680,Antonio Fiori,1429,Cesena FC,2026,IT2,80,Left Winger,23,Italy,8,8,2,434
+1177045,Xavello Druiventak,1429,Cesena FC,2026,IT2,14,Right Winger,22,Netherlands,8,7,0,353
+1044794,Alessandro Debenedetti,1429,Cesena FC,2026,IT2,91,Centre-Forward,23,Italy,8,7,0,137
+725242,Luca D'Andrea,1429,Cesena FC,2026,IT2,16,Right Winger,22,Italy,8,5,0,232
+357991,Alessandro Plizzari,4554,FC Südtirol,2026,IT2,22,Goalkeeper,26,Italy,8,8,0,720
+1069495,Rok Vadjunec,4554,FC Südtirol,2026,IT2,12,Goalkeeper,20,Slovenia,8,0,0,0
+1367488,Tommaso Laureti,4554,FC Südtirol,2026,IT2,0,Goalkeeper,17,Italy,1,0,0,0
+1596620,Lukas Ploner,4554,FC Südtirol,2026,IT2,0,Goalkeeper,18,Italy,4,0,0,0
+818882,Riccardo Stivanello,4554,FC Südtirol,2026,IT2,4,Centre-Back,22,Italy,8,8,0,713
+691235,Andrea Giorgini,4554,FC Südtirol,2026,IT2,55,Centre-Back,24,Italy,8,8,1,720
+936503,Giacomo Stabile,4554,FC Südtirol,2026,IT2,27,Centre-Back,21,Italy,6,6,0,444
+705097,Davide Veroli,4554,FC Südtirol,2026,IT2,3,Centre-Back,23,Italy,8,7,0,273
+611197,Simone Davi,4554,FC Südtirol,2026,IT2,24,Left-Back,27,Italy,8,8,1,346
+395089,Hamza El Kaouakibi,4554,FC Südtirol,2026,IT2,94,Right-Back,28,Morocco,0,0,0,0
+362981,Marco Varnier,4554,FC Südtirol,2026,IT2,13,Centre-Back,28,Italy,0,0,0,0
+1242353,Mattia Pellini,4554,FC Südtirol,2026,IT2,19,Centre-Back,19,Italy,5,1,0,7
+795496,Federico Davi,4554,FC Südtirol,2026,IT2,23,Right-Back,24,Italy,7,1,0,3
+1307105,Marco Iuliano,4554,FC Südtirol,2026,IT2,0,Centre-Back,18,Italy,4,0,0,0
+981136,Fabio Rispoli,4554,FC Südtirol,2026,IT2,10,Central Midfield,20,Italy,8,8,1,636
+883349,Kevin Zeroli,4554,FC Südtirol,2026,IT2,18,Central Midfield,21,Italy,3,3,0,105
+685509,Simone Tronchin,4554,FC Südtirol,2026,IT2,5,Central Midfield,24,Italy,8,8,0,706
+679754,Niklas Pyyhtiä,4554,FC Südtirol,2026,IT2,8,Central Midfield,23,Finland,1,1,0,45
+745418,Jacopo Martini,4554,FC Südtirol,2026,IT2,0,Central Midfield,21,Italy,1,0,0,0
+615897,Aljosa Vasic,4554,FC Südtirol,2026,IT2,14,Central Midfield,24,Serbia,8,7,0,437
+566613,Bjarki Bjarkason,4554,FC Südtirol,2026,IT2,20,Left Midfield,26,Iceland,5,5,0,381
+492627,Marco Frigerio,4554,FC Südtirol,2026,IT2,0,Central Midfield,25,Italy,1,0,0,0
+1168046,Dhirar Brik,4554,FC Südtirol,2026,IT2,46,Defensive Midfield,19,Tunisia,8,3,0,38
+331395,Fabian Tait,4554,FC Südtirol,2026,IT2,21,Central Midfield,33,Italy,8,2,0,15
+163582,Salvatore Molina,4554,FC Südtirol,2026,IT2,79,Right Midfield,34,Italy,8,8,1,720
+1310269,Elias Schrott,4554,FC Südtirol,2026,IT2,80,Defensive Midfield,17,Italy,8,2,0,34
+816861,Alvin Okoro,4554,FC Südtirol,2026,IT2,90,Centre-Forward,21,Italy,7,7,1,349
+460842,Silvio Merkaj,4554,FC Südtirol,2026,IT2,0,Centre-Forward,28,Albania,2,2,1,176
+632857,Vasco Lopes,4554,FC Südtirol,2026,IT2,11,Right Winger,27,Cape Verde,7,7,1,440
+816093,Kenny Mixtur,4554,FC Südtirol,2026,IT2,25,Centre-Forward,23,Guadeloupe,8,6,2,225
+925848,Lorenzo Anghelè,4554,FC Südtirol,2026,IT2,17,Second Striker,21,Italy,6,2,0,60
+731525,Rareș Burnete,4554,FC Südtirol,2026,IT2,9,Centre-Forward,22,Romania,8,8,1,251
+1588622,Jannik Leitner,4554,FC Südtirol,2026,IT2,0,Right Winger,16,Italy,1,0,0,0
+334992,Jonathan Klinsmann,1429,Cesena FC,2025,IT2,33,Goalkeeper,28,United States,35,35,0,3150
+530847,Alessandro Siano,1429,Cesena FC,2025,IT2,1,Goalkeeper,24,Italy,30,3,0,270
+1202384,Niccolò Fontana,1429,Cesena FC,2025,IT2,39,Goalkeeper,17,Italy,11,0,0,0
+667905,Luca Ferretti,1429,Cesena FC,2025,IT2,40,Goalkeeper,21,Italy,28,0,0,0
+392524,Andrea Ciofi,1429,Cesena FC,2025,IT2,15,Centre-Back,26,Italy,38,38,0,3065
+386755,Gianluca Frabotta,1429,Cesena FC,2025,IT2,99,Left-Back,26,Italy,31,29,4,2080
+395805,Massimiliano Mangraviti,1429,Cesena FC,2025,IT2,24,Centre-Back,27,Italy,34,28,1,2396
+1058396,Vittorio Magni,1429,Cesena FC,2025,IT2,23,Right-Back,19,Italy,27,13,0,335
+199583,Giovanni Zaro,1429,Cesena FC,2025,IT2,19,Centre-Back,31,Italy,37,36,1,3186
+195057,Raffaele Celia,1429,Cesena FC,2025,IT2,0,Left-Back,26,Italy,20,9,0,162
+858677,Peter Amoran,1429,Cesena FC,2025,IT2,16,Centre-Back,21,Sweden,35,7,0,263
+391453,Matteo Piacentini,1429,Cesena FC,2025,IT2,26,Centre-Back,26,Italy,34,16,1,978
+1166624,Mamadou Kebbeh,1429,Cesena FC,2025,IT2,0,Centre-Back,19,France,3,0,0,0
+1101656,Simone Abbondanza,1429,Cesena FC,2025,IT2,0,Right-Back,19,Italy,1,0,0,0
+908768,Tommaso Berti,1429,Cesena FC,2025,IT2,14,Attacking Midfield,21,Italy,38,38,4,2939
+818880,Tommaso Corazza,1429,Cesena FC,2025,IT2,27,Left Midfield,21,Italy,16,12,2,597
+908791,Matteo Francesconi,1429,Cesena FC,2025,IT2,70,Central Midfield,21,Italy,37,29,1,1920
+257751,Simone Bastoni,1429,Cesena FC,2025,IT2,10,Central Midfield,28,Italy,32,26,1,1008
+702614,Matteo Guidi,1429,Cesena FC,2025,IT2,18,Defensive Midfield,21,Italy,38,20,0,530
+411666,Emanuele Adamo,1429,Cesena FC,2025,IT2,0,Right Midfield,26,Italy,17,16,1,646
+303116,Gaetano Castrovilli,1429,Cesena FC,2025,IT2,8,Central Midfield,28,Italy,7,7,0,200
+163216,Dimitri Bisoli,1429,Cesena FC,2025,IT2,25,Central Midfield,31,Italy,30,28,1,1719
+1296424,Filippo Bertaccini,1429,Cesena FC,2025,IT2,0,Attacking Midfield,18,Italy,8,1,0,7
+195335,Michele Castagnetti,1429,Cesena FC,2025,IT2,4,Defensive Midfield,35,Italy,32,30,1,2139
+1296419,Davide Zamagni,1429,Cesena FC,2025,IT2,35,Central Midfield,17,Italy,7,0,0,0
+199070,Tommaso Arrigoni,1429,Cesena FC,2025,IT2,6,Central Midfield,31,Italy,36,6,0,30
+1040079,Riccardo Domeniconi,1429,Cesena FC,2025,IT2,0,Central Midfield,19,Italy,3,0,0,0
+908760,Cristian Shpendi,1429,Cesena FC,2025,IT2,9,Centre-Forward,22,Albania,37,37,12,2954
+973249,Jalen Blesa,1429,Cesena FC,2025,IT2,0,Centre-Forward,24,Spain,21,21,4,1580
+628558,Riccardo Ciervo,1429,Cesena FC,2025,IT2,11,Left Winger,23,Italy,38,37,5,2821
+984708,Siren Diao,1429,Cesena FC,2025,IT2,0,Centre-Forward,20,Spain,21,15,0,327
+363178,Giacomo Vrioni,1429,Cesena FC,2025,IT2,22,Centre-Forward,26,Albania,16,15,0,309
+1245879,Filippo Galvagno,1429,Cesena FC,2025,IT2,0,Centre-Forward,18,Italy,2,0,0,0
+197751,Alberto Cerri,1429,Cesena FC,2025,IT2,7,Centre-Forward,29,Italy,16,16,3,1017
+1299492,Ibrahima Papa Wade,1429,Cesena FC,2025,IT2,0,Centre-Forward,18,Senegal,8,2,0,8
+346562,Marco Olivieri,1429,Cesena FC,2025,IT2,32,Centre-Forward,26,Italy,36,26,1,961
+1024766,Frederik Tosku,1429,Cesena FC,2025,IT2,77,Centre-Forward,19,Albania,3,0,0,0
 918811,Mattia Fortin,3037,Calcio Padova,2025,IT2,14,Goalkeeper,21,Italy,38,14,0,1260
 542588,Alessandro Sorrentino,3037,Calcio Padova,2025,IT2,22,Goalkeeper,23,Italy,38,24,0,2160
 810067,Louis Mouquet,3037,Calcio Padova,2025,IT2,1,Goalkeeper,20,Portugal,31,0,0,0
@@ -4226,104 +4264,35 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 187384,Cristian Buonaiuto,3037,Calcio Padova,2025,IT2,92,Left Winger,32,Italy,37,27,1,939
 278309,Simone Russini,3037,Calcio Padova,2025,IT2,25,Left Winger,29,Italy,0,0,0,0
 1317590,Emiliano Lo Biundo,3037,Calcio Padova,2025,IT2,0,Centre-Forward,16,Italy,1,0,0,0
-334992,Jonathan Klinsmann,1429,Cesena FC,2025,IT2,33,Goalkeeper,28,United States,35,35,0,3150
-530847,Alessandro Siano,1429,Cesena FC,2025,IT2,1,Goalkeeper,24,Italy,30,3,0,270
-1202384,Niccolò Fontana,1429,Cesena FC,2025,IT2,39,Goalkeeper,17,Italy,11,0,0,0
-667905,Luca Ferretti,1429,Cesena FC,2025,IT2,40,Goalkeeper,21,Italy,28,0,0,0
-392524,Andrea Ciofi,1429,Cesena FC,2025,IT2,15,Centre-Back,26,Italy,38,38,0,3065
-386755,Gianluca Frabotta,1429,Cesena FC,2025,IT2,99,Left-Back,26,Italy,31,29,4,2080
-395805,Massimiliano Mangraviti,1429,Cesena FC,2025,IT2,24,Centre-Back,27,Italy,34,28,1,2396
-1058396,Vittorio Magni,1429,Cesena FC,2025,IT2,23,Right-Back,19,Italy,27,13,0,335
-199583,Giovanni Zaro,1429,Cesena FC,2025,IT2,19,Centre-Back,31,Italy,37,36,1,3186
-195057,Raffaele Celia,1429,Cesena FC,2025,IT2,0,Left-Back,26,Italy,20,9,0,162
-858677,Peter Amoran,1429,Cesena FC,2025,IT2,16,Centre-Back,21,Sweden,35,7,0,263
-391453,Matteo Piacentini,1429,Cesena FC,2025,IT2,26,Centre-Back,26,Italy,34,16,1,978
-1166624,Mamadou Kebbeh,1429,Cesena FC,2025,IT2,0,Centre-Back,19,France,3,0,0,0
-1101656,Simone Abbondanza,1429,Cesena FC,2025,IT2,0,Right-Back,19,Italy,1,0,0,0
-908768,Tommaso Berti,1429,Cesena FC,2025,IT2,14,Attacking Midfield,21,Italy,38,38,4,2939
-818880,Tommaso Corazza,1429,Cesena FC,2025,IT2,27,Left Midfield,21,Italy,16,12,2,597
-908791,Matteo Francesconi,1429,Cesena FC,2025,IT2,70,Central Midfield,21,Italy,37,29,1,1920
-257751,Simone Bastoni,1429,Cesena FC,2025,IT2,10,Central Midfield,28,Italy,32,26,1,1008
-702614,Matteo Guidi,1429,Cesena FC,2025,IT2,18,Defensive Midfield,21,Italy,38,20,0,530
-411666,Emanuele Adamo,1429,Cesena FC,2025,IT2,0,Right Midfield,26,Italy,17,16,1,646
-303116,Gaetano Castrovilli,1429,Cesena FC,2025,IT2,8,Central Midfield,28,Italy,7,7,0,200
-163216,Dimitri Bisoli,1429,Cesena FC,2025,IT2,25,Central Midfield,31,Italy,30,28,1,1719
-1296424,Filippo Bertaccini,1429,Cesena FC,2025,IT2,0,Attacking Midfield,18,Italy,8,1,0,7
-195335,Michele Castagnetti,1429,Cesena FC,2025,IT2,4,Defensive Midfield,35,Italy,32,30,1,2139
-1296419,Davide Zamagni,1429,Cesena FC,2025,IT2,35,Central Midfield,17,Italy,7,0,0,0
-1040079,Riccardo Domeniconi,1429,Cesena FC,2025,IT2,0,Central Midfield,19,Italy,3,0,0,0
-199070,Tommaso Arrigoni,1429,Cesena FC,2025,IT2,6,Central Midfield,31,Italy,36,6,0,30
-908760,Cristian Shpendi,1429,Cesena FC,2025,IT2,9,Centre-Forward,22,Albania,37,37,12,2954
-973249,Jalen Blesa,1429,Cesena FC,2025,IT2,0,Centre-Forward,24,Spain,21,21,4,1580
-628558,Riccardo Ciervo,1429,Cesena FC,2025,IT2,11,Left Winger,23,Italy,38,37,5,2821
-984708,Siren Diao,1429,Cesena FC,2025,IT2,0,Centre-Forward,20,Spain,21,15,0,327
-363178,Giacomo Vrioni,1429,Cesena FC,2025,IT2,22,Centre-Forward,26,Albania,16,15,0,309
-1245879,Filippo Galvagno,1429,Cesena FC,2025,IT2,0,Centre-Forward,18,Italy,2,0,0,0
-197751,Alberto Cerri,1429,Cesena FC,2025,IT2,7,Centre-Forward,29,Italy,16,16,3,1017
-1299492,Ibrahima Papa Wade,1429,Cesena FC,2025,IT2,0,Centre-Forward,18,Senegal,8,2,0,8
-346562,Marco Olivieri,1429,Cesena FC,2025,IT2,32,Centre-Forward,26,Italy,36,26,1,961
-1024766,Frederik Tosku,1429,Cesena FC,2025,IT2,77,Centre-Forward,19,Albania,3,0,0,0
-542588,Alessandro Sorrentino,3037,Calcio Padova,2026,IT2,22,Goalkeeper,24,Italy,6,6,0,540
-810067,Louis Mouquet,3037,Calcio Padova,2026,IT2,1,Goalkeeper,22,Portugal,6,0,0,0
-650989,Simone Scaglia,3037,Calcio Padova,2026,IT2,12,Goalkeeper,22,Italy,0,0,0,0
-704825,Alessandro Dellavalle,3037,Calcio Padova,2026,IT2,27,Centre-Back,22,Italy,6,6,0,540
-988987,Matteo Cocchi,3037,Calcio Padova,2026,IT2,34,Left-Back,19,Italy,6,6,0,340
-459655,Matteo Lovato,3037,Calcio Padova,2026,IT2,5,Centre-Back,26,Italy,5,5,0,450
-381794,Lorenzo Carissoni,3037,Calcio Padova,2026,IT2,24,Right-Back,29,Italy,5,5,0,381
-903414,Carlo Faedo,3037,Calcio Padova,2026,IT2,72,Centre-Back,27,Italy,5,0,0,0
-394920,Filippo Sgarbi,3037,Calcio Padova,2026,IT2,32,Centre-Back,28,Italy,6,2,0,167
-476624,Christian Pastina,3037,Calcio Padova,2026,IT2,58,Centre-Back,25,Italy,6,5,1,398
+542588,Alessandro Sorrentino,3037,Calcio Padova,2026,IT2,22,Goalkeeper,24,Italy,8,8,0,720
+810067,Louis Mouquet,3037,Calcio Padova,2026,IT2,1,Goalkeeper,22,Portugal,8,0,0,0
+650989,Simone Scaglia,3037,Calcio Padova,2026,IT2,12,Goalkeeper,22,Italy,1,0,0,0
+704825,Alessandro Dellavalle,3037,Calcio Padova,2026,IT2,27,Centre-Back,22,Italy,8,8,0,720
+988987,Matteo Cocchi,3037,Calcio Padova,2026,IT2,34,Left-Back,19,Italy,8,7,0,430
+459655,Matteo Lovato,3037,Calcio Padova,2026,IT2,5,Centre-Back,26,Italy,7,7,0,630
+381794,Lorenzo Carissoni,3037,Calcio Padova,2026,IT2,24,Right-Back,29,Italy,7,7,0,542
+903414,Carlo Faedo,3037,Calcio Padova,2026,IT2,72,Centre-Back,27,Italy,6,0,0,0
+394920,Filippo Sgarbi,3037,Calcio Padova,2026,IT2,32,Centre-Back,28,Italy,8,3,0,257
+476624,Christian Pastina,3037,Calcio Padova,2026,IT2,58,Centre-Back,25,Italy,8,6,1,488
 241889,Antonio Barreca,3037,Calcio Padova,2026,IT2,3,Left-Back,31,Italy,0,0,0,0
-355033,Enrico Silletti,3037,Calcio Padova,2026,IT2,18,Centre-Back,28,Italy,6,1,0,13
-459991,Marco Pompetti,3037,Calcio Padova,2026,IT2,14,Defensive Midfield,26,Italy,6,5,1,321
-477556,Emanuele Zuelli,3037,Calcio Padova,2026,IT2,21,Central Midfield,24,Italy,6,6,0,534
-925505,Giovanni Giunti,3037,Calcio Padova,2026,IT2,6,Central Midfield,21,Italy,6,3,0,136
-524428,Nicolas Galazzi,3037,Calcio Padova,2026,IT2,25,Attacking Midfield,25,Italy,4,3,1,74
-395118,Pietro Fusi,3037,Calcio Padova,2026,IT2,8,Central Midfield,28,Italy,6,6,1,381
-425239,Alessandro Capelli,3037,Calcio Padova,2026,IT2,17,Right Midfield,29,Italy,6,5,0,252
-354133,Kevin Varas,3037,Calcio Padova,2026,IT2,7,Central Midfield,33,Ecuador,6,2,0,105
-884227,Diego Marcolini,3037,Calcio Padova,2026,IT2,74,Defensive Midfield,21,Italy,4,0,0,0
-604239,Gabriele Artistico,3037,Calcio Padova,2026,IT2,90,Centre-Forward,24,Italy,1,1,0,45
-600936,Luca Moro,3037,Calcio Padova,2026,IT2,9,Centre-Forward,25,Italy,6,5,0,390
+355033,Enrico Silletti,3037,Calcio Padova,2026,IT2,18,Centre-Back,28,Italy,8,1,0,13
+459991,Marco Pompetti,3037,Calcio Padova,2026,IT2,14,Defensive Midfield,26,Italy,8,7,1,391
+477556,Emanuele Zuelli,3037,Calcio Padova,2026,IT2,21,Central Midfield,24,Italy,8,8,1,714
+925505,Giovanni Giunti,3037,Calcio Padova,2026,IT2,6,Central Midfield,21,Italy,8,5,0,293
+524428,Nicolas Galazzi,3037,Calcio Padova,2026,IT2,25,Attacking Midfield,25,Italy,6,5,1,85
+395118,Pietro Fusi,3037,Calcio Padova,2026,IT2,8,Central Midfield,28,Italy,8,8,1,480
+425239,Alessandro Capelli,3037,Calcio Padova,2026,IT2,17,Right Midfield,29,Italy,8,7,0,361
+354133,Kevin Varas,3037,Calcio Padova,2026,IT2,7,Central Midfield,33,Ecuador,8,3,0,129
+884227,Diego Marcolini,3037,Calcio Padova,2026,IT2,74,Defensive Midfield,21,Italy,5,0,0,0
+604239,Gabriele Artistico,3037,Calcio Padova,2026,IT2,90,Centre-Forward,24,Italy,3,3,0,193
+600936,Luca Moro,3037,Calcio Padova,2026,IT2,9,Centre-Forward,25,Italy,8,7,0,499
 407265,Luca Zanimacchia,3037,Calcio Padova,2026,IT2,98,Right Winger,28,Italy,1,1,0,62
-269870,Mattia Bortolussi,3037,Calcio Padova,2026,IT2,20,Centre-Forward,30,Italy,5,4,0,116
+269870,Mattia Bortolussi,3037,Calcio Padova,2026,IT2,20,Centre-Forward,30,Italy,7,5,0,129
 146752,Gianluca Caprari,3037,Calcio Padova,2026,IT2,10,Second Striker,33,Italy,6,5,0,272
-913461,Alessandro Seghetti,3037,Calcio Padova,2026,IT2,11,Second Striker,22,Italy,6,4,0,92
-131951,Kevin Lasagna,3037,Calcio Padova,2026,IT2,15,Centre-Forward,34,Italy,6,5,0,190
-238950,Francesco Di Mariano,3037,Calcio Padova,2026,IT2,23,Left Winger,30,Italy,6,5,0,141
+913461,Alessandro Seghetti,3037,Calcio Padova,2026,IT2,11,Second Striker,22,Italy,8,6,0,126
+131951,Kevin Lasagna,3037,Calcio Padova,2026,IT2,15,Centre-Forward,34,Italy,7,6,0,247
+238950,Francesco Di Mariano,3037,Calcio Padova,2026,IT2,23,Left Winger,30,Italy,8,5,0,141
 187384,Cristian Buonaiuto,3037,Calcio Padova,2026,IT2,92,Left Winger,33,Italy,0,0,0,0
-935777,Jacopo Seghetti,749,FC Empoli,2026,IT2,12,Goalkeeper,21,Italy,6,6,0,540
-301240,Samuele Perisan,749,FC Empoli,2026,IT2,1,Goalkeeper,29,Italy,6,0,0,0
-451154,Federico Brancolini,749,FC Empoli,2026,IT2,0,Goalkeeper,25,Italy,1,0,0,0
-821678,Emiliano Filippis,749,FC Empoli,2026,IT2,13,Goalkeeper,22,Italy,3,0,0,0
-942814,Lorenzo Tosto,749,FC Empoli,2026,IT2,0,Centre-Back,20,Italy,2,0,0,0
-315857,Marco Curto,749,FC Empoli,2026,IT2,25,Centre-Back,27,Italy,5,5,0,405
-814438,Gabriele Indragoli,749,FC Empoli,2026,IT2,28,Centre-Back,22,Italy,6,0,0,0
-283421,Cristian Căuz,749,FC Empoli,2026,IT2,33,Centre-Back,30,Italy,6,6,0,540
-88706,Simone Romagnoli,749,FC Empoli,2026,IT2,6,Centre-Back,36,Italy,6,4,0,193
-1182168,Dawid Bembnista,749,FC Empoli,2026,IT2,0,Centre-Back,19,Poland,4,0,0,0
-1182169,Roberto Berizzi,749,FC Empoli,2026,IT2,0,Centre-Back,19,Italy,3,1,0,4
-1361090,Samsondeen Babalola,749,FC Empoli,2026,IT2,0,Left-Back,18,Germany,1,0,0,0
-1225933,Edoardo Biondini,749,FC Empoli,2026,IT2,39,Central Midfield,17,Italy,6,5,0,331
-1138971,Matteo Egan,749,FC Empoli,2026,IT2,35,Right Midfield,18,Ireland,5,5,0,284
-616169,Duccio Degli Innocenti,749,FC Empoli,2026,IT2,5,Defensive Midfield,23,Italy,4,2,0,27
-444662,Niccolò Corrado,749,FC Empoli,2026,IT2,91,Left Midfield,26,Italy,5,5,0,427
-624436,Gerard Yepes,749,FC Empoli,2026,IT2,21,Defensive Midfield,24,Spain,5,5,1,400
-534133,Edoardo Saporiti,749,FC Empoli,2026,IT2,10,Attacking Midfield,25,Italy,6,6,2,515
-364278,Joseph Ceesay,749,FC Empoli,2026,IT2,15,Right Midfield,28,The Gambia,5,5,0,356
-297444,Luca Magnino,749,FC Empoli,2026,IT2,8,Central Midfield,29,Italy,6,6,0,539
-240934,Filippo Bandinelli,749,FC Empoli,2026,IT2,23,Central Midfield,31,Italy,3,3,0,91
-467994,Luca Belardinelli,749,FC Empoli,2026,IT2,57,Central Midfield,25,Italy,6,4,0,66
-612065,Karim Zedadka,749,FC Empoli,2026,IT2,98,Left Midfield,26,Algeria,6,6,0,294
-1057839,Lapo Deli,749,FC Empoli,2026,IT2,44,Defensive Midfield,20,Italy,6,4,0,78
-1019118,Andrea Orlandi,749,FC Empoli,2026,IT2,0,Attacking Midfield,19,Italy,1,1,0,4
-1112390,Mattia Huqi,749,FC Empoli,2026,IT2,0,Defensive Midfield,19,Albania,3,0,0,0
-931567,Stiven Shpendi,749,FC Empoli,2026,IT2,11,Centre-Forward,23,Albania,6,6,1,342
-1198243,Bogdan Popov,749,FC Empoli,2026,IT2,77,Centre-Forward,19,Ukraine,6,6,2,241
-669915,Filippo Distefano,749,FC Empoli,2026,IT2,20,Second Striker,23,Italy,5,4,0,187
-1046452,Salvatore Monaco,749,FC Empoli,2026,IT2,17,Centre-Forward,19,Italy,0,0,0,0
-364132,Flavio Bianchi,749,FC Empoli,2026,IT2,0,Centre-Forward,26,Italy,1,0,0,0
-1181465,Florijan Meznar,749,FC Empoli,2026,IT2,0,Left Winger,18,Slovenia,2,0,0,0
 231381,Andrea Fulignati,749,FC Empoli,2025,IT2,21,Goalkeeper,30,Italy,38,38,0,3420
 301240,Samuele Perisan,749,FC Empoli,2025,IT2,1,Goalkeeper,27,Italy,36,0,0,0
 487828,Manuel Gasparini,749,FC Empoli,2025,IT2,12,Goalkeeper,23,Italy,13,0,0,0
@@ -4365,6 +4334,38 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1058369,Thomas Campaniello,749,FC Empoli,2025,IT2,89,Centre-Forward,17,Italy,1,0,0,0
 364133,Pietro Pellegri,749,FC Empoli,2025,IT2,9,Centre-Forward,24,Italy,12,12,3,413
 364132,Flavio Bianchi,749,FC Empoli,2025,IT2,99,Centre-Forward,25,Italy,25,8,0,72
+935777,Jacopo Seghetti,749,FC Empoli,2026,IT2,12,Goalkeeper,21,Italy,8,8,0,720
+301240,Samuele Perisan,749,FC Empoli,2026,IT2,1,Goalkeeper,29,Italy,8,0,0,0
+451154,Federico Brancolini,749,FC Empoli,2026,IT2,0,Goalkeeper,25,Italy,1,0,0,0
+821678,Emiliano Filippis,749,FC Empoli,2026,IT2,13,Goalkeeper,22,Italy,5,0,0,0
+942814,Lorenzo Tosto,749,FC Empoli,2026,IT2,0,Centre-Back,20,Italy,2,0,0,0
+315857,Marco Curto,749,FC Empoli,2026,IT2,25,Centre-Back,27,Italy,7,7,0,550
+814438,Gabriele Indragoli,749,FC Empoli,2026,IT2,28,Centre-Back,22,Italy,8,0,0,0
+283421,Cristian Căuz,749,FC Empoli,2026,IT2,33,Centre-Back,30,Italy,8,8,0,720
+88706,Simone Romagnoli,749,FC Empoli,2026,IT2,6,Centre-Back,36,Italy,7,4,0,193
+1182168,Dawid Bembnista,749,FC Empoli,2026,IT2,0,Centre-Back,19,Poland,6,0,0,0
+1182169,Roberto Berizzi,749,FC Empoli,2026,IT2,0,Centre-Back,19,Italy,3,1,0,4
+1361090,Samsondeen Babalola,749,FC Empoli,2026,IT2,0,Left-Back,18,Germany,1,0,0,0
+1225933,Edoardo Biondini,749,FC Empoli,2026,IT2,39,Central Midfield,17,Italy,8,6,0,376
+1138971,Matteo Egan,749,FC Empoli,2026,IT2,35,Right Midfield,18,Ireland,7,7,0,298
+616169,Duccio Degli Innocenti,749,FC Empoli,2026,IT2,5,Defensive Midfield,23,Italy,6,3,0,97
+444662,Niccolò Corrado,749,FC Empoli,2026,IT2,91,Left Midfield,26,Italy,7,7,0,607
+624436,Gerard Yepes,749,FC Empoli,2026,IT2,21,Defensive Midfield,24,Spain,6,6,1,454
+534133,Edoardo Saporiti,749,FC Empoli,2026,IT2,10,Attacking Midfield,25,Italy,8,8,2,668
+364278,Joseph Ceesay,749,FC Empoli,2026,IT2,15,Right Midfield,28,The Gambia,7,7,1,490
+297444,Luca Magnino,749,FC Empoli,2026,IT2,8,Central Midfield,29,Italy,8,8,0,711
+240934,Filippo Bandinelli,749,FC Empoli,2026,IT2,23,Central Midfield,31,Italy,5,5,0,205
+467994,Luca Belardinelli,749,FC Empoli,2026,IT2,57,Central Midfield,25,Italy,8,6,0,93
+612065,Karim Zedadka,749,FC Empoli,2026,IT2,98,Left Midfield,26,Algeria,8,8,0,474
+1057839,Lapo Deli,749,FC Empoli,2026,IT2,44,Defensive Midfield,20,Italy,8,6,0,134
+1019118,Andrea Orlandi,749,FC Empoli,2026,IT2,0,Attacking Midfield,19,Italy,1,1,0,4
+1112390,Mattia Huqi,749,FC Empoli,2026,IT2,0,Defensive Midfield,19,Albania,3,0,0,0
+931567,Stiven Shpendi,749,FC Empoli,2026,IT2,11,Centre-Forward,23,Albania,8,8,1,409
+1198243,Bogdan Popov,749,FC Empoli,2026,IT2,77,Centre-Forward,19,Ukraine,8,8,2,394
+669915,Filippo Distefano,749,FC Empoli,2026,IT2,20,Second Striker,23,Italy,6,5,0,208
+1046452,Salvatore Monaco,749,FC Empoli,2026,IT2,17,Centre-Forward,19,Italy,0,0,0,0
+364132,Flavio Bianchi,749,FC Empoli,2026,IT2,0,Centre-Forward,26,Italy,1,0,0,0
+1181465,Florijan Meznar,749,FC Empoli,2026,IT2,0,Left Winger,18,Slovenia,3,0,0,0
 215167,Marco Bleve,4159,Carrarese Calcio 1908,2025,IT2,1,Goalkeeper,29,Italy,38,37,0,3330
 564792,Giovanni Garofani,4159,Carrarese Calcio 1908,2025,IT2,12,Goalkeeper,22,Italy,14,0,0,0
 55000,Vincenzo Fiorillo,4159,Carrarese Calcio 1908,2025,IT2,99,Goalkeeper,35,Italy,37,1,0,90
@@ -4399,36 +4400,98 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 650999,Federico Accornero,4159,Carrarese Calcio 1908,2025,IT2,80,Left Winger,21,Italy,13,2,0,38
 159883,Ernesto Torregrossa,4159,Carrarese Calcio 1908,2025,IT2,92,Centre-Forward,33,Venezuela,33,21,1,487
 284604,Mattia Finotto,4159,Carrarese Calcio 1908,2025,IT2,32,Centre-Forward,32,Italy,38,37,4,1978
-165893,Mirko Pigliacelli,4097,US Catanzaro,2026,IT2,22,Goalkeeper,33,Italy,6,6,0,540
-691978,Christian Marietta,4097,US Catanzaro,2026,IT2,1,Goalkeeper,24,Italy,6,0,0,0
+537171,Semuel Pizzignacco,4159,Carrarese Calcio 1908,2026,IT2,1,Goalkeeper,25,Italy,7,6,0,540
+564792,Giovanni Garofani,4159,Carrarese Calcio 1908,2026,IT2,12,Goalkeeper,24,Italy,8,2,0,180
+55000,Vincenzo Fiorillo,4159,Carrarese Calcio 1908,2026,IT2,0,Goalkeeper,36,Italy,2,0,0,0
+42796,Nicola Ravaglia,4159,Carrarese Calcio 1908,2026,IT2,30,Goalkeeper,37,Italy,4,0,0,0
+1314313,Mattia Bencaster,4159,Carrarese Calcio 1908,2026,IT2,0,Goalkeeper,18,Italy,1,0,0,0
+1016904,David Vujevic,4159,Carrarese Calcio 1908,2026,IT2,4,Centre-Back,20,Croatia,1,0,0,0
+748720,Fabio Andrea Ruggeri,4159,Carrarese Calcio 1908,2026,IT2,13,Centre-Back,21,Italy,8,8,0,685
+1053217,Filippo Reale,4159,Carrarese Calcio 1908,2026,IT2,33,Centre-Back,20,Italy,8,8,0,695
+899542,Lorenzo Romani,4159,Carrarese Calcio 1908,2026,IT2,41,Centre-Back,21,Italy,8,3,0,264
+393607,Filippo Oliana,4159,Carrarese Calcio 1908,2026,IT2,6,Centre-Back,27,Italy,8,8,0,720
+726721,Gonçalo Esteves,4159,Carrarese Calcio 1908,2026,IT2,20,Right-Back,22,Portugal,4,0,0,0
+984373,Tommaso Macchioni,4159,Carrarese Calcio 1908,2026,IT2,5,Centre-Back,20,Italy,5,0,0,0
+717900,Tommaso Guercio,4159,Carrarese Calcio 1908,2026,IT2,78,Right-Back,21,Poland,5,5,0,107
+1455208,Giulio Cianti,4159,Carrarese Calcio 1908,2026,IT2,27,Centre-Back,17,Italy,0,0,0,0
+1455232,Niccolò Romagnoli,4159,Carrarese Calcio 1908,2026,IT2,0,Centre-Back,17,Italy,1,0,0,0
+991744,Luka Topalović,4159,Carrarese Calcio 1908,2026,IT2,17,Central Midfield,20,Slovenia,7,7,0,262
+866247,Tommaso Rubino,4159,Carrarese Calcio 1908,2026,IT2,10,Attacking Midfield,19,Italy,5,5,3,216
+741090,Jonas Rouhi,4159,Carrarese Calcio 1908,2026,IT2,73,Left Midfield,22,Sweden,8,8,1,687
+899819,Gabriele Parlanti,4159,Carrarese Calcio 1908,2026,IT2,77,Central Midfield,22,Italy,8,8,0,597
+745418,Jacopo Martini,4159,Carrarese Calcio 1908,2026,IT2,28,Central Midfield,21,Italy,7,7,0,329
+1053151,Yanis Khafi,4159,Carrarese Calcio 1908,2026,IT2,8,Central Midfield,20,Morocco,6,1,0,59
+488052,Matthias Braunöder,4159,Carrarese Calcio 1908,2026,IT2,23,Central Midfield,24,Austria,6,5,0,301
+460629,Colin Dagba,4159,Carrarese Calcio 1908,2026,IT2,2,Right Midfield,28,France,1,1,0,68
+315862,Filippo Melegoni,4159,Carrarese Calcio 1908,2026,IT2,0,Central Midfield,27,Italy,1,0,0,0
+293367,Nicolás Schiavi,4159,Carrarese Calcio 1908,2026,IT2,18,Defensive Midfield,31,Argentina,8,8,0,556
+1056287,Pietro Pinelli,4159,Carrarese Calcio 1908,2026,IT2,66,Defensive Midfield,20,Italy,5,1,1,15
+240190,Niccolò Belloni,4159,Carrarese Calcio 1908,2026,IT2,7,Left Midfield,32,Italy,7,6,0,365
+487844,Nicolò Cudrig,4159,Carrarese Calcio 1908,2026,IT2,70,Right Midfield,24,Italy,6,4,0,49
+1311375,Giulio Baroncelli,4159,Carrarese Calcio 1908,2026,IT2,71,Central Midfield,18,Italy,2,0,0,0
+1090074,Filippo Liberati,4159,Carrarese Calcio 1908,2026,IT2,0,Central Midfield,23,Italy,1,0,0,0
+817150,Fabio Abiuso,4159,Carrarese Calcio 1908,2026,IT2,9,Centre-Forward,23,Italy,8,8,2,614
+553513,Nicholas Bonfanti,4159,Carrarese Calcio 1908,2026,IT2,21,Centre-Forward,24,Italy,3,1,0,3
+988862,Moustapha Cissé,4159,Carrarese Calcio 1908,2026,IT2,11,Centre-Forward,23,Guinea,8,6,0,314
+724110,Giacomo Marconi,4159,Carrarese Calcio 1908,2026,IT2,91,Centre-Forward,21,Italy,7,7,0,258
+284604,Mattia Finotto,4159,Carrarese Calcio 1908,2026,IT2,32,Centre-Forward,33,Italy,8,4,0,37
+240157,Gianmarco Vannucchi,4171,Benevento Calcio,2025,IT2,26,Goalkeeper,29,Italy,0,0,0,0
+895560,Manuel Esposito,4171,Benevento Calcio,2025,IT2,22,Goalkeeper,20,Italy,0,0,0,0
+62270,Danilo Russo,4171,Benevento Calcio,2025,IT2,1,Goalkeeper,37,Italy,0,0,0,0
+534083,Edoardo Pierozzi,4171,Benevento Calcio,2025,IT2,77,Right-Back,23,Italy,0,0,0,0
+142990,Stefano Scognamillo,4171,Benevento Calcio,2025,IT2,14,Centre-Back,31,Italy,0,0,0,0
+708070,Pietro Saio,4171,Benevento Calcio,2025,IT2,23,Centre-Back,21,Italy,0,0,0,0
+567475,Andrea Ceresoli,4171,Benevento Calcio,2025,IT2,20,Left-Back,22,Italy,0,0,0,0
+195057,Raffaele Celia,4171,Benevento Calcio,2025,IT2,13,Left-Back,26,Italy,0,0,0,0
+88680,Luca Caldirola,4171,Benevento Calcio,2025,IT2,33,Centre-Back,34,Italy,0,0,0,0
+934202,Raffaele Romano,4171,Benevento Calcio,2025,IT2,25,Centre-Back,20,Italy,0,0,0,0
+324472,Diego Borghini,4171,Benevento Calcio,2025,IT2,19,Centre-Back,28,Italy,0,0,0,0
+261056,Giacomo Ricci,4171,Benevento Calcio,2025,IT2,31,Left-Back,28,Italy,0,0,0,0
+818538,Francesco Sena,4171,Benevento Calcio,2025,IT2,3,Left-Back,21,Italy,0,0,0,0
+721731,Antonio Prisco,4171,Benevento Calcio,2025,IT2,4,Defensive Midfield,21,Italy,0,0,0,0
+167470,Mattia Maita,4171,Benevento Calcio,2025,IT2,8,Central Midfield,30,Italy,0,0,0,0
+529885,Christian Kouan,4171,Benevento Calcio,2025,IT2,56,Central Midfield,25,Cote d'Ivoire,0,0,0,0
+705288,Angelo Talia,4171,Benevento Calcio,2025,IT2,38,Central Midfield,22,Italy,0,0,0,0
+504530,Pier Luigi Simonetti,4171,Benevento Calcio,2025,IT2,18,Left Midfield,24,Italy,0,0,0,0
+667050,Dino Mehić,4171,Benevento Calcio,2025,IT2,5,Defensive Midfield,22,Italy,0,0,0,0
+404969,Filippo Nardi,4171,Benevento Calcio,2025,IT2,30,Central Midfield,27,Italy,0,0,0,0
+689090,Davide Lamesta,4171,Benevento Calcio,2025,IT2,11,Right Winger,25,Italy,0,0,0,0
+315850,Marco Tumminello,4171,Benevento Calcio,2025,IT2,93,Centre-Forward,26,Italy,0,0,0,0
+707785,Guglielmo Mignani,4171,Benevento Calcio,2025,IT2,32,Centre-Forward,22,Italy,0,0,0,0
+254997,Francesco Salvemini,4171,Benevento Calcio,2025,IT2,9,Centre-Forward,28,Italy,0,0,0,0
+240206,Jacopo Manconi,4171,Benevento Calcio,2025,IT2,10,Left Winger,31,Italy,0,0,0,0
+391797,Matteo Della Morte,4171,Benevento Calcio,2025,IT2,99,Right Winger,25,Italy,0,0,0,0
+976219,Lorenzo Carfora,4171,Benevento Calcio,2025,IT2,7,Left Winger,19,Italy,0,0,0,0
+165893,Mirko Pigliacelli,4097,US Catanzaro,2026,IT2,22,Goalkeeper,33,Italy,8,8,0,720
+691978,Christian Marietta,4097,US Catanzaro,2026,IT2,1,Goalkeeper,24,Italy,8,0,0,0
 902633,Edoardo Borrelli,4097,US Catanzaro,2026,IT2,99,Goalkeeper,22,Italy,0,0,0,0
-784575,Mehdi Dorval,4097,US Catanzaro,2026,IT2,93,Left-Back,25,Algeria,6,6,0,392
-403718,Matias Antonini,4097,US Catanzaro,2026,IT2,4,Centre-Back,28,Brazil,6,6,1,508
-475149,Marco Imperiale,4097,US Catanzaro,2026,IT2,3,Centre-Back,27,Italy,5,4,0,243
-471497,Marco Ruggero,4097,US Catanzaro,2026,IT2,24,Centre-Back,26,Italy,6,6,0,468
-392881,Antonio Candela,4097,US Catanzaro,2026,IT2,27,Right-Back,26,Italy,6,5,0,217
-811242,Bruno Verrengia,4097,US Catanzaro,2026,IT2,26,Centre-Back,23,Italy,6,4,1,297
-901027,Niccolò Postiglione,4097,US Catanzaro,2026,IT2,6,Centre-Back,21,Italy,4,0,0,0
+784575,Mehdi Dorval,4097,US Catanzaro,2026,IT2,93,Left-Back,25,Algeria,8,6,0,392
+403718,Matias Antonini,4097,US Catanzaro,2026,IT2,4,Centre-Back,28,Brazil,8,8,1,688
+475149,Marco Imperiale,4097,US Catanzaro,2026,IT2,3,Centre-Back,27,Italy,7,6,0,423
+471497,Marco Ruggero,4097,US Catanzaro,2026,IT2,24,Centre-Back,26,Italy,8,8,0,614
+392881,Antonio Candela,4097,US Catanzaro,2026,IT2,27,Right-Back,26,Italy,8,7,1,397
+811242,Bruno Verrengia,4097,US Catanzaro,2026,IT2,26,Centre-Back,23,Italy,8,4,1,297
+901027,Niccolò Postiglione,4097,US Catanzaro,2026,IT2,6,Centre-Back,21,Italy,6,1,0,34
 726721,Gonçalo Esteves,4097,US Catanzaro,2026,IT2,0,Right-Back,22,Portugal,1,0,0,0
-797893,Ruggero Frosinini,4097,US Catanzaro,2026,IT2,62,Right-Back,25,Italy,4,3,0,94
+797893,Ruggero Frosinini,4097,US Catanzaro,2026,IT2,62,Right-Back,25,Italy,6,3,0,94
 1063700,Ervin Bashi,4097,US Catanzaro,2026,IT2,0,Centre-Back,21,Albania,1,0,0,0
-876400,Simone Pafundi,4097,US Catanzaro,2026,IT2,20,Attacking Midfield,20,Italy,3,3,0,264
-651000,Gabriele Alesi,4097,US Catanzaro,2026,IT2,30,Attacking Midfield,22,Italy,6,6,0,509
-567470,Samuel Giovane,4097,US Catanzaro,2026,IT2,14,Central Midfield,23,Italy,6,3,0,111
-1048147,Federico Cassa,4097,US Catanzaro,2026,IT2,21,Attacking Midfield,20,Italy,3,0,0,0
-302497,Nicola Mosti,4097,US Catanzaro,2026,IT2,98,Attacking Midfield,28,Italy,6,6,0,433
-218067,Jacopo Petriccione,4097,US Catanzaro,2026,IT2,10,Defensive Midfield,31,Italy,6,6,0,532
+876400,Simone Pafundi,4097,US Catanzaro,2026,IT2,20,Attacking Midfield,20,Italy,5,5,0,339
+651000,Gabriele Alesi,4097,US Catanzaro,2026,IT2,30,Attacking Midfield,22,Italy,8,8,0,549
+567470,Samuel Giovane,4097,US Catanzaro,2026,IT2,14,Central Midfield,23,Italy,7,4,0,173
+1048147,Federico Cassa,4097,US Catanzaro,2026,IT2,21,Attacking Midfield,20,Italy,4,0,0,0
+302497,Nicola Mosti,4097,US Catanzaro,2026,IT2,98,Attacking Midfield,28,Italy,8,8,0,512
+218067,Jacopo Petriccione,4097,US Catanzaro,2026,IT2,10,Defensive Midfield,31,Italy,8,8,0,712
 801075,Andrej Pogacar,4097,US Catanzaro,2026,IT2,8,Attacking Midfield,24,Slovenia,0,0,0,0
-1571727,Franky Tchaouna,4097,US Catanzaro,2026,IT2,28,Central Midfield,21,Chad,6,5,0,138
-658729,Emanuele Pecorino,4097,US Catanzaro,2026,IT2,31,Centre-Forward,25,Italy,5,5,0,143
-408293,Nicolò Buso,4097,US Catanzaro,2026,IT2,7,Second Striker,26,Italy,6,0,0,0
-62735,Pietro Iemmello,4097,US Catanzaro,2026,IT2,9,Centre-Forward,34,Italy,6,6,2,497
-38607,Federico Di Francesco,4097,US Catanzaro,2026,IT2,29,Left Winger,32,Italy,6,4,0,70
-798927,N'Dri Koffi,4097,US Catanzaro,2026,IT2,19,Centre-Forward,24,Cote d'Ivoire,6,5,0,355
+1571727,Franky Tchaouna,4097,US Catanzaro,2026,IT2,28,Central Midfield,21,Chad,8,7,0,261
+658729,Emanuele Pecorino,4097,US Catanzaro,2026,IT2,31,Centre-Forward,25,Italy,6,6,1,229
+408293,Nicolò Buso,4097,US Catanzaro,2026,IT2,7,Second Striker,26,Italy,8,1,0,34
+62735,Pietro Iemmello,4097,US Catanzaro,2026,IT2,9,Centre-Forward,34,Italy,8,8,2,658
+38607,Federico Di Francesco,4097,US Catanzaro,2026,IT2,29,Left Winger,32,Italy,8,6,0,197
+798927,N'Dri Koffi,4097,US Catanzaro,2026,IT2,19,Centre-Forward,24,Cote d'Ivoire,8,7,1,404
 1144614,Solomon Loubao,4097,US Catanzaro,2026,IT2,44,Centre-Forward,20,France,0,0,0,0
-1232347,Francesco Reita,4097,US Catanzaro,2026,IT2,80,Second Striker,17,Italy,4,0,0,0
-1010782,Gabriel Arditi,4097,US Catanzaro,2026,IT2,91,Centre-Forward,19,Italy,4,2,0,20
-99232,Marco D'Alessandro,4097,US Catanzaro,2026,IT2,77,Right Winger,35,Italy,3,3,1,93
+1232347,Francesco Reita,4097,US Catanzaro,2026,IT2,80,Second Striker,18,Italy,5,0,0,0
+1010782,Gabriel Arditi,4097,US Catanzaro,2026,IT2,91,Centre-Forward,20,Italy,6,3,0,39
+99232,Marco D'Alessandro,4097,US Catanzaro,2026,IT2,77,Right Winger,35,Italy,5,4,1,138
 800660,Alejo Garnica,4097,US Catanzaro,2026,IT2,18,Right Winger,22,Argentina,5,2,0,16
 1166095,Franck Tchaouna,4097,US Catanzaro,2026,IT2,25,Centre-Forward,21,Chad,0,0,0,0
 165893,Mirko Pigliacelli,4097,US Catanzaro,2025,IT2,22,Goalkeeper,32,Italy,38,37,0,3330
@@ -4470,101 +4533,70 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1055082,Andrea Oliviero,4097,US Catanzaro,2025,IT2,0,Second Striker,19,Italy,1,0,0,0
 1168033,Simone Ardizzone,4097,US Catanzaro,2025,IT2,0,Right Winger,18,Italy,3,0,0,0
 1308608,Kevin Gjoka,4097,US Catanzaro,2025,IT2,0,Left Winger,17,Albania,2,0,0,0
-537171,Semuel Pizzignacco,4159,Carrarese Calcio 1908,2026,IT2,1,Goalkeeper,25,Italy,5,4,0,360
-564792,Giovanni Garofani,4159,Carrarese Calcio 1908,2026,IT2,12,Goalkeeper,23,Italy,6,2,0,180
-55000,Vincenzo Fiorillo,4159,Carrarese Calcio 1908,2026,IT2,0,Goalkeeper,36,Italy,2,0,0,0
-42796,Nicola Ravaglia,4159,Carrarese Calcio 1908,2026,IT2,30,Goalkeeper,37,Italy,3,0,0,0
-1314313,Mattia Bencaster,4159,Carrarese Calcio 1908,2026,IT2,0,Goalkeeper,18,Italy,1,0,0,0
-1016904,David Vujevic,4159,Carrarese Calcio 1908,2026,IT2,4,Centre-Back,19,Croatia,1,0,0,0
-748720,Fabio Andrea Ruggeri,4159,Carrarese Calcio 1908,2026,IT2,13,Centre-Back,21,Italy,6,6,0,506
-1053217,Filippo Reale,4159,Carrarese Calcio 1908,2026,IT2,33,Centre-Back,20,Italy,6,6,0,515
-899542,Lorenzo Romani,4159,Carrarese Calcio 1908,2026,IT2,41,Centre-Back,21,Italy,6,3,0,264
-393607,Filippo Oliana,4159,Carrarese Calcio 1908,2026,IT2,6,Centre-Back,27,Italy,6,6,0,540
-726721,Gonçalo Esteves,4159,Carrarese Calcio 1908,2026,IT2,20,Right-Back,22,Portugal,3,0,0,0
-984373,Tommaso Macchioni,4159,Carrarese Calcio 1908,2026,IT2,5,Centre-Back,20,Italy,3,0,0,0
-717900,Tommaso Guercio,4159,Carrarese Calcio 1908,2026,IT2,78,Right-Back,21,Poland,3,3,0,76
-1455208,Giulio Cianti,4159,Carrarese Calcio 1908,2026,IT2,27,Centre-Back,17,Italy,0,0,0,0
-1455232,Niccolò Romagnoli,4159,Carrarese Calcio 1908,2026,IT2,0,Centre-Back,17,Italy,1,0,0,0
-991744,Luka Topalović,4159,Carrarese Calcio 1908,2026,IT2,17,Central Midfield,20,Slovenia,5,5,0,208
-866247,Tommaso Rubino,4159,Carrarese Calcio 1908,2026,IT2,10,Attacking Midfield,19,Italy,3,3,1,132
-741090,Jonas Rouhi,4159,Carrarese Calcio 1908,2026,IT2,73,Left Midfield,22,Sweden,6,6,1,507
-899819,Gabriele Parlanti,4159,Carrarese Calcio 1908,2026,IT2,77,Central Midfield,22,Italy,6,6,0,448
-745418,Jacopo Martini,4159,Carrarese Calcio 1908,2026,IT2,28,Central Midfield,21,Italy,5,5,0,233
-1053151,Yanis Khafi,4159,Carrarese Calcio 1908,2026,IT2,8,Central Midfield,20,Morocco,4,1,0,59
-488052,Matthias Braunöder,4159,Carrarese Calcio 1908,2026,IT2,23,Central Midfield,24,Austria,4,3,0,122
-460629,Colin Dagba,4159,Carrarese Calcio 1908,2026,IT2,2,Right Midfield,28,France,1,1,0,68
-315862,Filippo Melegoni,4159,Carrarese Calcio 1908,2026,IT2,0,Central Midfield,27,Italy,1,0,0,0
-293367,Nicolás Schiavi,4159,Carrarese Calcio 1908,2026,IT2,18,Defensive Midfield,31,Argentina,6,6,0,376
-1056287,Pietro Pinelli,4159,Carrarese Calcio 1908,2026,IT2,66,Defensive Midfield,20,Italy,4,1,1,15
-240190,Niccolò Belloni,4159,Carrarese Calcio 1908,2026,IT2,7,Left Midfield,32,Italy,6,5,0,284
-487844,Nicolò Cudrig,4159,Carrarese Calcio 1908,2026,IT2,70,Right Midfield,24,Italy,4,4,0,49
-1311375,Giulio Baroncelli,4159,Carrarese Calcio 1908,2026,IT2,71,Central Midfield,17,Italy,2,0,0,0
-1090074,Filippo Liberati,4159,Carrarese Calcio 1908,2026,IT2,0,Central Midfield,23,Italy,1,0,0,0
-817150,Fabio Abiuso,4159,Carrarese Calcio 1908,2026,IT2,9,Centre-Forward,23,Italy,6,6,1,453
-553513,Nicholas Bonfanti,4159,Carrarese Calcio 1908,2026,IT2,21,Centre-Forward,24,Italy,3,1,0,3
-988862,Moustapha Cissé,4159,Carrarese Calcio 1908,2026,IT2,11,Centre-Forward,23,Guinea,6,5,0,313
-724110,Giacomo Marconi,4159,Carrarese Calcio 1908,2026,IT2,91,Centre-Forward,21,Italy,5,5,0,194
-284604,Mattia Finotto,4159,Carrarese Calcio 1908,2026,IT2,32,Centre-Forward,33,Italy,6,3,0,36
-240157,Gianmarco Vannucchi,4171,Benevento Calcio,2025,IT2,26,Goalkeeper,29,Italy,0,0,0,0
-895560,Manuel Esposito,4171,Benevento Calcio,2025,IT2,22,Goalkeeper,20,Italy,0,0,0,0
-62270,Danilo Russo,4171,Benevento Calcio,2025,IT2,1,Goalkeeper,37,Italy,0,0,0,0
-534083,Edoardo Pierozzi,4171,Benevento Calcio,2025,IT2,77,Right-Back,23,Italy,0,0,0,0
-142990,Stefano Scognamillo,4171,Benevento Calcio,2025,IT2,14,Centre-Back,31,Italy,0,0,0,0
-708070,Pietro Saio,4171,Benevento Calcio,2025,IT2,23,Centre-Back,21,Italy,0,0,0,0
-567475,Andrea Ceresoli,4171,Benevento Calcio,2025,IT2,20,Left-Back,22,Italy,0,0,0,0
-195057,Raffaele Celia,4171,Benevento Calcio,2025,IT2,13,Left-Back,26,Italy,0,0,0,0
-88680,Luca Caldirola,4171,Benevento Calcio,2025,IT2,33,Centre-Back,34,Italy,0,0,0,0
-934202,Raffaele Romano,4171,Benevento Calcio,2025,IT2,25,Centre-Back,20,Italy,0,0,0,0
-324472,Diego Borghini,4171,Benevento Calcio,2025,IT2,19,Centre-Back,28,Italy,0,0,0,0
-261056,Giacomo Ricci,4171,Benevento Calcio,2025,IT2,31,Left-Back,28,Italy,0,0,0,0
-818538,Francesco Sena,4171,Benevento Calcio,2025,IT2,3,Left-Back,21,Italy,0,0,0,0
-721731,Antonio Prisco,4171,Benevento Calcio,2025,IT2,4,Defensive Midfield,21,Italy,0,0,0,0
-167470,Mattia Maita,4171,Benevento Calcio,2025,IT2,8,Central Midfield,30,Italy,0,0,0,0
-529885,Christian Kouan,4171,Benevento Calcio,2025,IT2,56,Central Midfield,25,Cote d'Ivoire,0,0,0,0
-705288,Angelo Talia,4171,Benevento Calcio,2025,IT2,38,Central Midfield,22,Italy,0,0,0,0
-504530,Pier Luigi Simonetti,4171,Benevento Calcio,2025,IT2,18,Left Midfield,24,Italy,0,0,0,0
-667050,Dino Mehić,4171,Benevento Calcio,2025,IT2,5,Defensive Midfield,22,Italy,0,0,0,0
-404969,Filippo Nardi,4171,Benevento Calcio,2025,IT2,30,Central Midfield,27,Italy,0,0,0,0
-689090,Davide Lamesta,4171,Benevento Calcio,2025,IT2,11,Right Winger,25,Italy,0,0,0,0
-315850,Marco Tumminello,4171,Benevento Calcio,2025,IT2,93,Centre-Forward,26,Italy,0,0,0,0
-707785,Guglielmo Mignani,4171,Benevento Calcio,2025,IT2,32,Centre-Forward,22,Italy,0,0,0,0
-254997,Francesco Salvemini,4171,Benevento Calcio,2025,IT2,9,Centre-Forward,28,Italy,0,0,0,0
-240206,Jacopo Manconi,4171,Benevento Calcio,2025,IT2,10,Left Winger,31,Italy,0,0,0,0
-391797,Matteo Della Morte,4171,Benevento Calcio,2025,IT2,99,Right Winger,25,Italy,0,0,0,0
-976219,Lorenzo Carfora,4171,Benevento Calcio,2025,IT2,7,Left Winger,19,Italy,0,0,0,0
-240157,Gianmarco Vannucchi,4171,Benevento Calcio,2026,IT2,26,Goalkeeper,31,Italy,6,6,0,540
-895560,Manuel Esposito,4171,Benevento Calcio,2026,IT2,22,Goalkeeper,21,Italy,6,0,0,0
+240157,Gianmarco Vannucchi,4171,Benevento Calcio,2026,IT2,26,Goalkeeper,31,Italy,8,8,0,720
+895560,Manuel Esposito,4171,Benevento Calcio,2026,IT2,22,Goalkeeper,21,Italy,8,0,0,0
 1261762,Alioune Sylla,4171,Benevento Calcio,2026,IT2,96,Goalkeeper,23,Senegal,5,0,0,0
-534083,Edoardo Pierozzi,4171,Benevento Calcio,2026,IT2,77,Right-Back,25,Italy,6,6,1,375
-340707,Leonardo Sernicola,4171,Benevento Calcio,2026,IT2,17,Left-Back,29,Italy,5,5,0,367
-381370,Pietro Beruatto,4171,Benevento Calcio,2026,IT2,20,Left-Back,27,Italy,6,5,0,327
-142990,Stefano Scognamillo,4171,Benevento Calcio,2026,IT2,14,Centre-Back,32,Italy,6,6,0,540
-708070,Pietro Saio,4171,Benevento Calcio,2026,IT2,23,Centre-Back,23,Italy,6,6,0,464
-487829,Christian Dalle Mura,4171,Benevento Calcio,2026,IT2,15,Centre-Back,24,Italy,6,3,0,92
-88680,Luca Caldirola,4171,Benevento Calcio,2026,IT2,5,Centre-Back,35,Italy,6,2,0,83
+534083,Edoardo Pierozzi,4171,Benevento Calcio,2026,IT2,77,Right-Back,25,Italy,8,8,1,550
+340707,Leonardo Sernicola,4171,Benevento Calcio,2026,IT2,17,Left-Back,29,Italy,6,6,0,387
+381370,Pietro Beruatto,4171,Benevento Calcio,2026,IT2,20,Left-Back,27,Italy,8,7,0,480
+142990,Stefano Scognamillo,4171,Benevento Calcio,2026,IT2,14,Centre-Back,32,Italy,8,8,0,720
+708070,Pietro Saio,4171,Benevento Calcio,2026,IT2,23,Centre-Back,23,Italy,8,7,0,554
+487829,Christian Dalle Mura,4171,Benevento Calcio,2026,IT2,15,Centre-Back,24,Italy,8,5,0,200
+88680,Luca Caldirola,4171,Benevento Calcio,2026,IT2,5,Centre-Back,35,Italy,8,2,0,83
 195057,Raffaele Celia,4171,Benevento Calcio,2026,IT2,13,Left-Back,27,Italy,0,0,0,0
-934202,Raffaele Romano,4171,Benevento Calcio,2026,IT2,25,Centre-Back,21,Italy,1,1,0,11
+934202,Raffaele Romano,4171,Benevento Calcio,2026,IT2,25,Centre-Back,21,Italy,3,3,0,23
 261056,Giacomo Ricci,4171,Benevento Calcio,2026,IT2,31,Left-Back,30,Italy,0,0,0,0
-721731,Antonio Prisco,4171,Benevento Calcio,2026,IT2,4,Defensive Midfield,22,Italy,4,4,1,218
-803005,Mattia Mannini,4171,Benevento Calcio,2026,IT2,16,Right Midfield,20,Italy,4,1,0,16
-167470,Mattia Maita,4171,Benevento Calcio,2026,IT2,8,Central Midfield,32,Italy,6,6,0,534
-529885,Christian Kouan,4171,Benevento Calcio,2026,IT2,28,Central Midfield,26,Cote d'Ivoire,6,5,0,395
-554397,Antonis Siatounis,4171,Benevento Calcio,2026,IT2,6,Central Midfield,24,Greece,6,5,1,265
-130360,Simone Verdi,4171,Benevento Calcio,2026,IT2,90,Attacking Midfield,34,Italy,1,0,0,0
-705288,Angelo Talia,4171,Benevento Calcio,2026,IT2,38,Central Midfield,23,Italy,6,1,0,19
-504530,Pier Luigi Simonetti,4171,Benevento Calcio,2026,IT2,18,Left Midfield,25,Italy,1,1,0,6
+721731,Antonio Prisco,4171,Benevento Calcio,2026,IT2,4,Defensive Midfield,22,Italy,6,5,1,233
+803005,Mattia Mannini,4171,Benevento Calcio,2026,IT2,16,Right Midfield,20,Italy,6,1,0,16
+167470,Mattia Maita,4171,Benevento Calcio,2026,IT2,8,Central Midfield,32,Italy,8,8,0,714
+529885,Christian Kouan,4171,Benevento Calcio,2026,IT2,28,Central Midfield,26,Cote d'Ivoire,8,7,1,553
+554397,Antonis Siatounis,4171,Benevento Calcio,2026,IT2,6,Central Midfield,24,Greece,8,7,3,445
+130360,Simone Verdi,4171,Benevento Calcio,2026,IT2,90,Attacking Midfield,34,Italy,3,0,0,0
+705288,Angelo Talia,4171,Benevento Calcio,2026,IT2,38,Central Midfield,23,Italy,7,1,0,19
+504530,Pier Luigi Simonetti,4171,Benevento Calcio,2026,IT2,18,Left Midfield,25,Italy,3,2,0,13
 1375418,Matteo Del Gaudio,4171,Benevento Calcio,2026,IT2,28,Central Midfield,18,Italy,0,0,0,0
 1056043,Matteo Donatiello,4171,Benevento Calcio,2026,IT2,80,Central Midfield,20,Italy,2,0,0,0
-721227,Luigi Cherubini,4171,Benevento Calcio,2026,IT2,10,Left Winger,22,Italy,6,5,1,206
-413605,David Okereke,4171,Benevento Calcio,2026,IT2,29,Centre-Forward,29,Nigeria,5,5,1,263
-689090,Davide Lamesta,4171,Benevento Calcio,2026,IT2,11,Right Winger,26,Italy,6,6,1,454
-315850,Marco Tumminello,4171,Benevento Calcio,2026,IT2,93,Centre-Forward,27,Italy,5,3,0,137
-707785,Guglielmo Mignani,4171,Benevento Calcio,2026,IT2,32,Centre-Forward,24,Italy,6,3,0,23
-254997,Francesco Salvemini,4171,Benevento Calcio,2026,IT2,9,Centre-Forward,30,Italy,6,6,2,537
+721227,Luigi Cherubini,4171,Benevento Calcio,2026,IT2,10,Left Winger,22,Italy,8,7,1,305
+413605,David Okereke,4171,Benevento Calcio,2026,IT2,29,Centre-Forward,29,Nigeria,7,7,2,425
+689090,Davide Lamesta,4171,Benevento Calcio,2026,IT2,11,Right Winger,26,Italy,8,8,1,535
+315850,Marco Tumminello,4171,Benevento Calcio,2026,IT2,93,Centre-Forward,27,Italy,7,3,0,137
+707785,Guglielmo Mignani,4171,Benevento Calcio,2026,IT2,32,Centre-Forward,24,Italy,8,4,1,43
+254997,Francesco Salvemini,4171,Benevento Calcio,2026,IT2,9,Centre-Forward,30,Italy,8,8,2,697
 1382832,Marco Giugliano,4171,Benevento Calcio,2026,IT2,24,Centre-Forward,18,Italy,1,0,0,0
 854589,Emanuele Schimmenti,4171,Benevento Calcio,2026,IT2,21,Right Winger,24,Italy,6,2,0,20
 1346385,Vincenzo Battista,4171,Benevento Calcio,2026,IT2,18,Right Winger,18,Italy,0,0,0,0
 1500924,Logan,4171,Benevento Calcio,2026,IT2,30,Left Winger,20,Brazil,2,0,0,0
+650256,Paolo Vismara,5587,SS Juve Stabia,2026,IT2,95,Goalkeeper,23,Italy,2,0,0,0
+581604,Pietro Boer,5587,SS Juve Stabia,2026,IT2,23,Goalkeeper,24,Italy,8,6,0,540
+921561,Ante Vukovic,5587,SS Juve Stabia,2026,IT2,1,Goalkeeper,22,Croatia,6,2,0,180
+385397,Alessandro Signorini,5587,SS Juve Stabia,2026,IT2,16,Goalkeeper,27,Italy,0,0,0,0
+457468,Nicola Pietrangeli,5587,SS Juve Stabia,2026,IT2,19,Centre-Back,26,Italy,5,2,0,165
+391710,Marco Bellich,5587,SS Juve Stabia,2026,IT2,6,Centre-Back,27,Italy,8,8,2,720
+1054169,Giulio Scuderi,5587,SS Juve Stabia,2026,IT2,73,Left-Back,20,Italy,4,4,0,337
+457672,Manuel Ricciardi,5587,SS Juve Stabia,2026,IT2,2,Right-Back,26,Italy,8,4,0,279
+497693,Tommaso Maggioni,5587,SS Juve Stabia,2026,IT2,96,Right-Back,25,Italy,8,5,0,450
+477250,Terrence Douglas,5587,SS Juve Stabia,2026,IT2,25,Left-Back,25,Netherlands,8,5,0,383
+357995,Davide Bettella,5587,SS Juve Stabia,2026,IT2,87,Centre-Back,26,Italy,8,7,0,555
+860639,Matteo Baldi,5587,SS Juve Stabia,2026,IT2,4,Right-Back,24,Italy,7,1,0,10
+887650,Francesco Gallea,5587,SS Juve Stabia,2026,IT2,92,Centre-Back,21,Mali,4,0,0,0
+808559,Justin Kumi,5587,SS Juve Stabia,2026,IT2,24,Central Midfield,22,Italy,7,5,0,246
+554433,Christian Pierobon,5587,SS Juve Stabia,2026,IT2,10,Central Midfield,24,Italy,8,8,0,687
+393236,Nermin Karić,5587,SS Juve Stabia,2026,IT2,17,Central Midfield,27,Sweden,8,7,0,340
+385379,Davide Buglio,5587,SS Juve Stabia,2026,IT2,8,Central Midfield,28,Italy,8,6,0,385
+424275,Giuseppe Sibilli,5587,SS Juve Stabia,2026,IT2,33,Attacking Midfield,30,Italy,6,6,1,294
+398031,Fabio Maistro,5587,SS Juve Stabia,2026,IT2,37,Central Midfield,28,Italy,8,6,0,292
+497312,Federico Artioli,5587,SS Juve Stabia,2026,IT2,80,Defensive Midfield,25,Italy,8,7,0,298
+473871,Thomas Battistella,5587,SS Juve Stabia,2026,IT2,5,Central Midfield,25,Italy,8,6,0,182
+395739,Kevin Piscopo,5587,SS Juve Stabia,2026,IT2,11,Attacking Midfield,28,Italy,8,5,0,227
+1186975,Daniel Perin,5587,SS Juve Stabia,2026,IT2,18,Central Midfield,19,Italy,1,0,0,0
+347656,Antonio Di Nardo,5587,SS Juve Stabia,2026,IT2,9,Centre-Forward,28,Italy,7,7,5,469
+815539,Nicola Patanè,5587,SS Juve Stabia,2026,IT2,7,Right Winger,22,Italy,8,5,0,381
+342341,Leonardo Candellone,5587,SS Juve Stabia,2026,IT2,27,Centre-Forward,29,Italy,8,8,0,379
+1026255,Saná Fernandes,5587,SS Juve Stabia,2026,IT2,77,Left Winger,20,Guinea-Bissau,6,5,0,75
+815787,Luigi Caccavo,5587,SS Juve Stabia,2026,IT2,20,Centre-Forward,22,Italy,3,0,0,0
+1188613,Romeo Sandrucci,5587,SS Juve Stabia,2026,IT2,30,Right Winger,19,Italy,6,3,1,46
+1172235,Edoardo Lonardo,5587,SS Juve Stabia,2026,IT2,82,Centre-Forward,21,Italy,0,0,0,0
+1396610,Alessio Sorace,5587,SS Juve Stabia,2026,IT2,0,Left Winger,18,Italy,0,0,0,0
 502475,Samuele Vitale,408,Ascoli Calcio,2025,IT2,1,Goalkeeper,22,Italy,0,0,0,0
 458134,Davide Barosi,408,Ascoli Calcio,2025,IT2,46,Goalkeeper,25,Italy,0,0,0,0
 708193,Rok Bržan,408,Ascoli Calcio,2025,IT2,41,Goalkeeper,21,Slovenia,0,0,0,0
@@ -4590,67 +4622,35 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 159847,Francesco Galuppini,408,Ascoli Calcio,2025,IT2,14,Centre-Forward,31,Italy,0,0,0,0
 155036,Simone Corazza,408,Ascoli Calcio,2025,IT2,18,Centre-Forward,34,Italy,0,0,0,0
 713357,Filippo Palazzino,408,Ascoli Calcio,2025,IT2,28,Right Winger,21,Italy,0,0,0,0
-650256,Paolo Vismara,5587,SS Juve Stabia,2026,IT2,95,Goalkeeper,23,Italy,2,0,0,0
-581604,Pietro Boer,5587,SS Juve Stabia,2026,IT2,23,Goalkeeper,24,Italy,6,6,0,540
-921561,Ante Vukovic,5587,SS Juve Stabia,2026,IT2,1,Goalkeeper,22,Croatia,4,0,0,0
-385397,Alessandro Signorini,5587,SS Juve Stabia,2026,IT2,16,Goalkeeper,27,Italy,0,0,0,0
-457468,Nicola Pietrangeli,5587,SS Juve Stabia,2026,IT2,19,Centre-Back,26,Italy,5,2,0,165
-391710,Marco Bellich,5587,SS Juve Stabia,2026,IT2,6,Centre-Back,27,Italy,6,6,1,540
-1054169,Giulio Scuderi,5587,SS Juve Stabia,2026,IT2,73,Left-Back,20,Italy,4,4,0,337
-457672,Manuel Ricciardi,5587,SS Juve Stabia,2026,IT2,2,Right-Back,26,Italy,6,4,0,279
-497693,Tommaso Maggioni,5587,SS Juve Stabia,2026,IT2,96,Right-Back,25,Italy,6,3,0,270
-477250,Terrence Douglas,5587,SS Juve Stabia,2026,IT2,25,Left-Back,25,Netherlands,6,3,0,203
-357995,Davide Bettella,5587,SS Juve Stabia,2026,IT2,87,Centre-Back,26,Italy,6,5,0,375
-860639,Matteo Baldi,5587,SS Juve Stabia,2026,IT2,4,Right-Back,24,Italy,5,0,0,0
-887650,Francesco Gallea,5587,SS Juve Stabia,2026,IT2,92,Centre-Back,21,Mali,2,0,0,0
-808559,Justin Kumi,5587,SS Juve Stabia,2026,IT2,24,Central Midfield,22,Italy,5,3,0,118
-554433,Christian Pierobon,5587,SS Juve Stabia,2026,IT2,10,Central Midfield,24,Italy,6,6,0,507
-393236,Nermin Karić,5587,SS Juve Stabia,2026,IT2,17,Central Midfield,27,Sweden,6,5,0,293
-385379,Davide Buglio,5587,SS Juve Stabia,2026,IT2,8,Central Midfield,28,Italy,6,6,0,385
-424275,Giuseppe Sibilli,5587,SS Juve Stabia,2026,IT2,33,Attacking Midfield,30,Italy,4,4,0,140
-398031,Fabio Maistro,5587,SS Juve Stabia,2026,IT2,37,Central Midfield,28,Italy,6,4,0,153
-497312,Federico Artioli,5587,SS Juve Stabia,2026,IT2,80,Defensive Midfield,25,Italy,6,5,0,146
-473871,Thomas Battistella,5587,SS Juve Stabia,2026,IT2,5,Central Midfield,25,Italy,6,5,0,159
-395739,Kevin Piscopo,5587,SS Juve Stabia,2026,IT2,11,Attacking Midfield,28,Italy,6,5,0,227
-1186975,Daniel Perin,5587,SS Juve Stabia,2026,IT2,18,Central Midfield,18,Italy,1,0,0,0
-347656,Antonio Di Nardo,5587,SS Juve Stabia,2026,IT2,9,Centre-Forward,28,Italy,5,5,4,307
-815539,Nicola Patanè,5587,SS Juve Stabia,2026,IT2,7,Right Winger,22,Italy,6,5,0,381
-342341,Leonardo Candellone,5587,SS Juve Stabia,2026,IT2,27,Centre-Forward,29,Italy,6,6,0,352
-1026255,Saná Fernandes,5587,SS Juve Stabia,2026,IT2,77,Left Winger,20,Guinea-Bissau,4,3,0,58
-815787,Luigi Caccavo,5587,SS Juve Stabia,2026,IT2,20,Centre-Forward,22,Italy,3,0,0,0
-1188613,Romeo Sandrucci,5587,SS Juve Stabia,2026,IT2,30,Right Winger,19,Italy,4,1,0,5
-1172235,Edoardo Lonardo,5587,SS Juve Stabia,2026,IT2,82,Centre-Forward,21,Italy,0,0,0,0
-1396610,Alessio Sorace,5587,SS Juve Stabia,2026,IT2,0,Left Winger,18,Italy,0,0,0,0
-337360,Riccardo Gagno,2655,LR Vicenza,2026,IT2,16,Goalkeeper,29,Italy,6,6,0,540
-818703,Elia Tantalocchi,2655,LR Vicenza,2026,IT2,68,Goalkeeper,22,Italy,5,0,0,0
-242537,Samuele Massolo,2655,LR Vicenza,2026,IT2,0,Goalkeeper,30,Italy,2,0,0,0
-537548,Fabrizio Bagheria,2655,LR Vicenza,2026,IT2,1,Goalkeeper,25,Italy,0,0,0,0
-1258101,Mattia Basso,2655,LR Vicenza,2026,IT2,0,Goalkeeper,18,Italy,1,0,0,0
-297645,Riccardo Marchizza,2655,LR Vicenza,2026,IT2,5,Centre-Back,28,Italy,6,4,0,360
-365565,Giuseppe Cuomo,2655,LR Vicenza,2026,IT2,14,Centre-Back,28,Italy,6,6,1,471
-503619,Andrea Papetti,2655,LR Vicenza,2026,IT2,66,Centre-Back,24,Italy,4,1,0,21
-818134,Thomas Sandon,2655,LR Vicenza,2026,IT2,27,Centre-Back,23,Italy,6,3,0,270
-686592,Lorenzo Caferri,2655,LR Vicenza,2026,IT2,28,Right-Back,27,Italy,6,6,0,381
-451310,Maxime Leverbe,2655,LR Vicenza,2026,IT2,6,Centre-Back,29,France,6,4,0,243
-197743,Filippo Costa,2655,LR Vicenza,2026,IT2,32,Left-Back,31,Italy,5,5,0,314
-109110,Nicolò Brighenti,2655,LR Vicenza,2026,IT2,23,Centre-Back,37,Italy,6,3,0,247
-936184,Matteo Vescovi,2655,LR Vicenza,2026,IT2,30,Centre-Back,21,Italy,4,0,0,0
-818880,Tommaso Corazza,2655,LR Vicenza,2026,IT2,21,Left Midfield,22,Italy,6,4,1,153
-297630,Marco Carraro,2655,LR Vicenza,2026,IT2,4,Defensive Midfield,28,Italy,6,5,0,332
-704122,Alessandro Pietrelli,2655,LR Vicenza,2026,IT2,99,Right Midfield,23,Italy,6,5,1,159
-816764,Giulio Pellizzari,2655,LR Vicenza,2026,IT2,26,Central Midfield,22,Italy,5,5,0,370
-241052,Alessandro Bellemo,2655,LR Vicenza,2026,IT2,8,Central Midfield,31,Italy,4,3,0,73
-377043,Loris Zonta,2655,LR Vicenza,2026,IT2,29,Central Midfield,29,Italy,6,6,0,413
-167741,Mattia Valoti,2655,LR Vicenza,2026,IT2,10,Central Midfield,33,Italy,5,5,0,280
-408333,Armand Rada,2655,LR Vicenza,2026,IT2,77,Defensive Midfield,27,Albania,0,0,0,0
-818138,Raul Talarico,2655,LR Vicenza,2026,IT2,44,Central Midfield,24,Italy,6,2,0,76
-1317554,Ettore Broggian,2655,LR Vicenza,2026,IT2,0,Right Midfield,17,Italy,1,0,0,0
-460842,Silvio Merkaj,2655,LR Vicenza,2026,IT2,33,Centre-Forward,28,Albania,4,4,1,360
-830243,Filippo Alessio,2655,LR Vicenza,2026,IT2,24,Second Striker,21,Italy,6,5,0,300
-238977,Gabriele Moncini,2655,LR Vicenza,2026,IT2,11,Centre-Forward,30,Italy,6,5,1,215
-417896,Nicola Rauti,2655,LR Vicenza,2026,IT2,7,Second Striker,26,Italy,6,5,1,198
-214635,Claudio Morra,2655,LR Vicenza,2026,IT2,9,Centre-Forward,31,Italy,6,4,1,164
-392545,Frank Tsadjout,2655,LR Vicenza,2026,IT2,74,Centre-Forward,27,Italy,0,0,0,0
+502475,Samuele Vitale,408,Ascoli Calcio,2026,IT2,1,Goalkeeper,24,Italy,8,8,0,720
+504825,Gian Marco Crespi,408,Ascoli Calcio,2026,IT2,45,Goalkeeper,25,Italy,8,0,0,0
+744622,Matteo Raffaelli,408,Ascoli Calcio,2026,IT2,0,Goalkeeper,21,Italy,0,0,0,0
+1190022,Rocco Dente,408,Ascoli Calcio,2026,IT2,12,Goalkeeper,18,Italy,1,0,0,0
+708193,Rok Bržan,408,Ascoli Calcio,2026,IT2,41,Goalkeeper,22,Slovenia,0,0,0,0
+660735,Federico Gattoni,408,Ascoli Calcio,2026,IT2,32,Centre-Back,27,Argentina,8,4,1,113
+507351,Abdoul Guiebre,408,Ascoli Calcio,2026,IT2,19,Left-Back,29,Burkina Faso,8,8,0,720
+421869,Nicholas Rizzo,408,Ascoli Calcio,2026,IT2,33,Centre-Back,26,Italy,8,8,1,720
+706933,Manuel Alagna,408,Ascoli Calcio,2026,IT2,23,Right-Back,24,Italy,0,0,0,0
+334371,Marcos Curado,408,Ascoli Calcio,2026,IT2,30,Centre-Back,31,Argentina,8,7,0,611
+240219,Lorenzo Venuti,408,Ascoli Calcio,2026,IT2,5,Right-Back,31,Italy,3,1,0,18
+318058,Manuel Nicoletti,408,Ascoli Calcio,2026,IT2,3,Centre-Back,27,Italy,8,1,0,7
+1501125,Filippo Diamanti,408,Ascoli Calcio,2026,IT2,0,Defender,17,Italy,3,0,0,0
+980632,Sergiu Perciun,408,Ascoli Calcio,2026,IT2,11,Attacking Midfield,20,Moldova,8,4,0,215
+663939,Andrea Oliveri,408,Ascoli Calcio,2026,IT2,14,Right Midfield,23,Italy,8,7,0,314
+538569,Tommaso Milanese,408,Ascoli Calcio,2026,IT2,62,Central Midfield,24,Italy,8,8,1,534
+390117,Samuele Damiani,408,Ascoli Calcio,2026,IT2,4,Defensive Midfield,28,Italy,8,8,0,649
+566927,Giovanni Corradini,408,Ascoli Calcio,2026,IT2,8,Defensive Midfield,23,Italy,8,8,1,659
+230826,Gennaro Acampora,408,Ascoli Calcio,2026,IT2,13,Central Midfield,32,Italy,8,7,1,174
+198087,Matteo Ricci,408,Ascoli Calcio,2026,IT2,27,Defensive Midfield,32,Italy,7,1,0,30
+1056257,Luca Lo Scalzo,408,Ascoli Calcio,2026,IT2,18,Central Midfield,19,Italy,8,0,0,0
+1187285,Antonio Russo,408,Ascoli Calcio,2026,IT2,16,Defensive Midfield,18,Italy,2,0,0,0
+188889,Matteo Brunori,408,Ascoli Calcio,2026,IT2,99,Centre-Forward,31,Italy,7,6,1,265
+930767,Giacomo De Pieri,408,Ascoli Calcio,2026,IT2,21,Right Winger,19,Italy,8,7,0,225
+884065,Simone D'Uffizi,408,Ascoli Calcio,2026,IT2,15,Left Winger,22,Italy,8,8,1,693
+536451,Andrea Silipo,408,Ascoli Calcio,2026,IT2,7,Right Winger,25,Italy,8,8,3,517
+315859,Gabriele Gori,408,Ascoli Calcio,2026,IT2,35,Centre-Forward,27,Italy,8,6,3,214
+552437,Mohammed Amine Chakir,408,Ascoli Calcio,2026,IT2,9,Centre-Forward,25,Italy,8,6,0,305
+430798,Don Bolsius,408,Ascoli Calcio,2026,IT2,77,Right Winger,27,Netherlands,8,6,0,217
 337360,Riccardo Gagno,2655,LR Vicenza,2025,IT2,16,Goalkeeper,27,Italy,0,0,0,0
 242537,Samuele Massolo,2655,LR Vicenza,2025,IT2,12,Goalkeeper,29,Italy,0,0,0,0
 1258101,Mattia Basso,2655,LR Vicenza,2025,IT2,1,Goalkeeper,16,Italy,0,0,0,0
@@ -4716,36 +4716,36 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 311333,Alessandro Gabrielloni,5587,SS Juve Stabia,2025,IT2,9,Centre-Forward,30,Italy,27,26,3,1551
 420472,Gregorio Morachioli,5587,SS Juve Stabia,2025,IT2,18,Left Winger,25,Italy,0,0,0,0
 1446724,Matheus dos Santos,5587,SS Juve Stabia,2025,IT2,70,Right Winger,23,Brazil,20,7,0,189
-502475,Samuele Vitale,408,Ascoli Calcio,2026,IT2,1,Goalkeeper,24,Italy,6,6,0,540
-504825,Gian Marco Crespi,408,Ascoli Calcio,2026,IT2,45,Goalkeeper,25,Italy,6,0,0,0
-744622,Matteo Raffaelli,408,Ascoli Calcio,2026,IT2,0,Goalkeeper,21,Italy,0,0,0,0
-1190022,Rocco Dente,408,Ascoli Calcio,2026,IT2,12,Goalkeeper,18,Italy,1,0,0,0
-708193,Rok Bržan,408,Ascoli Calcio,2026,IT2,41,Goalkeeper,22,Slovenia,0,0,0,0
-660735,Federico Gattoni,408,Ascoli Calcio,2026,IT2,32,Centre-Back,27,Argentina,6,2,0,4
-507351,Abdoul Guiebre,408,Ascoli Calcio,2026,IT2,19,Left-Back,29,Burkina Faso,6,6,0,540
-421869,Nicholas Rizzo,408,Ascoli Calcio,2026,IT2,33,Centre-Back,26,Italy,6,6,0,540
-706933,Manuel Alagna,408,Ascoli Calcio,2026,IT2,23,Right-Back,24,Italy,0,0,0,0
-334371,Marcos Curado,408,Ascoli Calcio,2026,IT2,30,Centre-Back,31,Argentina,6,6,0,540
-240219,Lorenzo Venuti,408,Ascoli Calcio,2026,IT2,5,Right-Back,31,Italy,1,0,0,0
-318058,Manuel Nicoletti,408,Ascoli Calcio,2026,IT2,3,Centre-Back,27,Italy,6,1,0,7
-406094,Damiano Menna,408,Ascoli Calcio,2026,IT2,0,Centre-Back,31,Italy,0,0,0,0
-1501125,Filippo Diamanti,408,Ascoli Calcio,2026,IT2,0,Defender,17,Italy,3,0,0,0
-980632,Sergiu Perciun,408,Ascoli Calcio,2026,IT2,11,Attacking Midfield,20,Moldova,6,3,0,185
-663939,Andrea Oliveri,408,Ascoli Calcio,2026,IT2,14,Right Midfield,23,Italy,6,5,0,179
-538569,Tommaso Milanese,408,Ascoli Calcio,2026,IT2,62,Central Midfield,24,Italy,6,6,0,462
-390117,Samuele Damiani,408,Ascoli Calcio,2026,IT2,4,Defensive Midfield,28,Italy,6,6,0,499
-566927,Giovanni Corradini,408,Ascoli Calcio,2026,IT2,8,Defensive Midfield,23,Italy,6,6,0,509
-230826,Gennaro Acampora,408,Ascoli Calcio,2026,IT2,13,Central Midfield,32,Italy,6,5,0,67
-198087,Matteo Ricci,408,Ascoli Calcio,2026,IT2,27,Defensive Midfield,32,Italy,5,0,0,0
-1056257,Luca Lo Scalzo,408,Ascoli Calcio,2026,IT2,18,Central Midfield,19,Italy,6,0,0,0
-1187285,Antonio Russo,408,Ascoli Calcio,2026,IT2,16,Defensive Midfield,18,Italy,2,0,0,0
-188889,Matteo Brunori,408,Ascoli Calcio,2026,IT2,99,Centre-Forward,31,Italy,5,5,1,203
-930767,Giacomo De Pieri,408,Ascoli Calcio,2026,IT2,21,Right Winger,19,Italy,6,5,0,168
-884065,Simone D'Uffizi,408,Ascoli Calcio,2026,IT2,15,Left Winger,22,Italy,6,6,1,513
-536451,Andrea Silipo,408,Ascoli Calcio,2026,IT2,7,Right Winger,25,Italy,6,6,3,394
-315859,Gabriele Gori,408,Ascoli Calcio,2026,IT2,35,Centre-Forward,27,Italy,6,5,1,124
-552437,Mohammed Amine Chakir,408,Ascoli Calcio,2026,IT2,9,Centre-Forward,25,Italy,6,5,0,277
-430798,Don Bolsius,408,Ascoli Calcio,2026,IT2,77,Right Winger,27,Netherlands,6,5,0,189
+337360,Riccardo Gagno,2655,LR Vicenza,2026,IT2,16,Goalkeeper,29,Italy,8,8,0,720
+818703,Elia Tantalocchi,2655,LR Vicenza,2026,IT2,68,Goalkeeper,22,Italy,6,0,0,0
+242537,Samuele Massolo,2655,LR Vicenza,2026,IT2,0,Goalkeeper,30,Italy,2,0,0,0
+537548,Fabrizio Bagheria,2655,LR Vicenza,2026,IT2,1,Goalkeeper,25,Italy,1,0,0,0
+1258101,Mattia Basso,2655,LR Vicenza,2026,IT2,0,Goalkeeper,18,Italy,1,0,0,0
+297645,Riccardo Marchizza,2655,LR Vicenza,2026,IT2,5,Centre-Back,28,Italy,8,6,0,528
+365565,Giuseppe Cuomo,2655,LR Vicenza,2026,IT2,14,Centre-Back,28,Italy,6,6,1,471
+503619,Andrea Papetti,2655,LR Vicenza,2026,IT2,66,Centre-Back,24,Italy,6,3,0,201
+818134,Thomas Sandon,2655,LR Vicenza,2026,IT2,27,Centre-Back,23,Italy,8,4,0,282
+686592,Lorenzo Caferri,2655,LR Vicenza,2026,IT2,28,Right-Back,27,Italy,8,8,1,495
+451310,Maxime Leverbe,2655,LR Vicenza,2026,IT2,6,Centre-Back,29,France,8,4,0,243
+197743,Filippo Costa,2655,LR Vicenza,2026,IT2,32,Left-Back,31,Italy,7,6,0,380
+109110,Nicolò Brighenti,2655,LR Vicenza,2026,IT2,23,Centre-Back,37,Italy,8,5,0,427
+936184,Matteo Vescovi,2655,LR Vicenza,2026,IT2,30,Centre-Back,21,Italy,6,0,0,0
+818880,Tommaso Corazza,2655,LR Vicenza,2026,IT2,21,Left Midfield,22,Italy,8,6,2,333
+297630,Marco Carraro,2655,LR Vicenza,2026,IT2,4,Defensive Midfield,28,Italy,8,5,0,332
+704122,Alessandro Pietrelli,2655,LR Vicenza,2026,IT2,99,Right Midfield,23,Italy,8,5,1,159
+816764,Giulio Pellizzari,2655,LR Vicenza,2026,IT2,26,Central Midfield,22,Italy,7,7,1,542
+241052,Alessandro Bellemo,2655,LR Vicenza,2026,IT2,8,Central Midfield,31,Italy,6,5,0,253
+377043,Loris Zonta,2655,LR Vicenza,2026,IT2,29,Central Midfield,29,Italy,8,8,0,465
+167741,Mattia Valoti,2655,LR Vicenza,2026,IT2,10,Central Midfield,33,Italy,7,7,0,408
+408333,Armand Rada,2655,LR Vicenza,2026,IT2,77,Defensive Midfield,27,Albania,0,0,0,0
+818138,Raul Talarico,2655,LR Vicenza,2026,IT2,44,Central Midfield,24,Italy,8,2,0,76
+1317554,Ettore Broggian,2655,LR Vicenza,2026,IT2,0,Right Midfield,18,Italy,1,0,0,0
+460842,Silvio Merkaj,2655,LR Vicenza,2026,IT2,33,Centre-Forward,28,Albania,6,6,1,432
+830243,Filippo Alessio,2655,LR Vicenza,2026,IT2,24,Second Striker,21,Italy,8,7,0,324
+238977,Gabriele Moncini,2655,LR Vicenza,2026,IT2,11,Centre-Forward,30,Italy,8,6,1,281
+417896,Nicola Rauti,2655,LR Vicenza,2026,IT2,7,Second Striker,26,Italy,8,7,2,296
+214635,Claudio Morra,2655,LR Vicenza,2026,IT2,9,Centre-Forward,31,Italy,8,6,1,272
+392545,Frank Tsadjout,2655,LR Vicenza,2026,IT2,74,Centre-Forward,27,Italy,0,0,0,0
 120236,Giacomo Venturi,4255,SS Arezzo,2025,IT2,22,Goalkeeper,33,Italy,0,0,0,0
 490699,Luca Trombini,4255,SS Arezzo,2025,IT2,1,Goalkeeper,24,Italy,0,0,0,0
 1297379,Amoris Galli,4255,SS Arezzo,2025,IT2,12,Goalkeeper,18,Italy,0,0,0,0
@@ -4814,62 +4814,63 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 651008,Davide Pio Stabile,20519,Virtus Entella,2025,IT2,9,Centre-Forward,20,Italy,12,3,0,12
 660190,Mattia Tirelli,20519,Virtus Entella,2025,IT2,17,Centre-Forward,23,Italy,16,15,2,546
 1318489,Matteo Carbone,20519,Virtus Entella,2025,IT2,0,Second Striker,17,Italy,2,0,0,0
-397241,Federico Del Frate,20519,Virtus Entella,2026,IT2,22,Goalkeeper,30,Italy,6,6,0,540
-57285,Simone Colombi,20519,Virtus Entella,2026,IT2,91,Goalkeeper,35,Italy,6,0,0,0
-1188773,Edoardo Torrielli,20519,Virtus Entella,2026,IT2,12,Goalkeeper,20,Italy,6,0,0,0
-404860,Mattia Alborghetti,20519,Virtus Entella,2026,IT2,27,Right-Back,28,Italy,6,6,1,529
-248695,Andrea Tiritiello,20519,Virtus Entella,2026,IT2,6,Centre-Back,31,Italy,6,6,1,446
-256688,Luca Parodi,20519,Virtus Entella,2026,IT2,23,Centre-Back,31,Italy,6,6,0,537
-1049728,Nicolas Previtali,20519,Virtus Entella,2026,IT2,3,Right-Back,21,Italy,6,3,0,121
-659420,Mattia Motolese,20519,Virtus Entella,2026,IT2,39,Centre-Back,22,Italy,5,0,0,0
-41780,Ivan Marconi,20519,Virtus Entella,2026,IT2,15,Centre-Back,36,Italy,5,4,0,189
-821038,Stefano Di Mario,20519,Virtus Entella,2026,IT2,26,Left Midfield,21,Italy,6,6,0,504
-487838,Niccolò Squizzato,20519,Virtus Entella,2026,IT2,5,Defensive Midfield,24,Italy,6,6,0,429
-423615,Leonardo Benedetti,20519,Virtus Entella,2026,IT2,80,Central Midfield,26,Italy,6,5,0,256
-432105,Andrea Franzoni,20519,Virtus Entella,2026,IT2,24,Attacking Midfield,29,Italy,6,6,1,534
-650249,Riccardo Turicchia,20519,Virtus Entella,2026,IT2,16,Left Midfield,23,Italy,6,0,0,0
-395190,Francesco Mezzoni,20519,Virtus Entella,2026,IT2,94,Right Midfield,26,Italy,1,1,0,36
-717885,Marwane Kritta,20519,Virtus Entella,2026,IT2,70,Left Midfield,24,Italy,4,3,0,41
-538063,Lucas Felippe,20519,Virtus Entella,2026,IT2,55,Defensive Midfield,26,Brazil,6,4,0,104
-287367,Luca Vignali,20519,Virtus Entella,2026,IT2,8,Right Midfield,30,Italy,5,5,0,282
-120458,Davide Bariti,20519,Virtus Entella,2026,IT2,7,Right Midfield,35,Italy,0,0,0,0
-1189072,Mattia Valori,20519,Virtus Entella,2026,IT2,28,Central Midfield,21,Italy,4,1,0,2
-819083,Gabriele Costa,20519,Virtus Entella,2026,IT2,40,Central Midfield,21,Italy,0,0,0,0
-1318487,Tommaso Annoni,20519,Virtus Entella,2026,IT2,18,Central Midfield,18,Italy,6,3,0,112
-632482,Bernat Guiu,20519,Virtus Entella,2026,IT2,11,Centre-Forward,26,Spain,6,6,1,508
-909894,Giacomo Corona,20519,Virtus Entella,2026,IT2,9,Centre-Forward,22,Italy,6,5,2,71
-352704,Luigi Cuppone,20519,Virtus Entella,2026,IT2,10,Centre-Forward,29,Italy,6,5,1,374
-660190,Mattia Tirelli,20519,Virtus Entella,2026,IT2,17,Centre-Forward,24,Italy,6,5,1,88
-164534,Francesco Forte,20519,Virtus Entella,2026,IT2,32,Centre-Forward,33,Italy,5,4,0,238
-956588,Alessandro Nunziante,4255,SS Arezzo,2026,IT2,14,Goalkeeper,19,Italy,6,6,0,540
+956588,Alessandro Nunziante,4255,SS Arezzo,2026,IT2,14,Goalkeeper,19,Italy,8,8,0,720
 490699,Luca Trombini,4255,SS Arezzo,2026,IT2,1,Goalkeeper,25,Italy,0,0,0,0
 1477745,Francesco Șerban,4255,SS Arezzo,2026,IT2,22,Goalkeeper,18,Romania,4,0,0,0
-85380,Andrea Seculin,4255,SS Arezzo,2026,IT2,90,Goalkeeper,36,Italy,6,0,0,0
+85380,Andrea Seculin,4255,SS Arezzo,2026,IT2,90,Goalkeeper,36,Italy,8,0,0,0
 441264,Julián Illanes,4255,SS Arezzo,2026,IT2,5,Centre-Back,29,Argentina,5,4,0,310
-709500,Alessandro Renzi,4255,SS Arezzo,2026,IT2,6,Right-Back,22,Italy,5,5,0,450
-475134,Samuele Righetti,4255,SS Arezzo,2026,IT2,37,Left-Back,25,Italy,6,6,0,540
-337130,Matteo Gilli,4255,SS Arezzo,2026,IT2,13,Centre-Back,29,Italy,6,6,0,540
-418884,Andrea Cagnano,4255,SS Arezzo,2026,IT2,32,Left-Back,28,Italy,6,1,0,45
-934974,Marlon Mena Martinez,4255,SS Arezzo,2026,IT2,2,Right-Back,20,Dominican Republic,5,0,0,0
-250921,Mauro Coppolaro,4255,SS Arezzo,2026,IT2,4,Centre-Back,29,Italy,6,4,0,318
-277167,Gian Marco Ferrari,4255,SS Arezzo,2026,IT2,67,Centre-Back,34,Italy,1,0,0,0
+709500,Alessandro Renzi,4255,SS Arezzo,2026,IT2,6,Right-Back,22,Italy,7,7,0,630
+475134,Samuele Righetti,4255,SS Arezzo,2026,IT2,37,Left-Back,25,Italy,8,8,0,674
+337130,Matteo Gilli,4255,SS Arezzo,2026,IT2,13,Centre-Back,29,Italy,8,8,0,720
+418884,Andrea Cagnano,4255,SS Arezzo,2026,IT2,32,Left-Back,28,Italy,8,3,0,91
+934974,Marlon Mena Martinez,4255,SS Arezzo,2026,IT2,2,Right-Back,20,Dominican Republic,7,0,0,0
+250921,Mauro Coppolaro,4255,SS Arezzo,2026,IT2,4,Centre-Back,29,Italy,8,6,0,498
+277167,Gian Marco Ferrari,4255,SS Arezzo,2026,IT2,67,Centre-Back,34,Italy,3,0,0,0
 163549,Marco Chiosa,4255,SS Arezzo,2026,IT2,19,Centre-Back,32,Italy,0,0,0,0
-882912,Davide Mancini,4255,SS Arezzo,2026,IT2,33,Centre-Back,21,Italy,4,0,0,0
+882912,Davide Mancini,4255,SS Arezzo,2026,IT2,33,Centre-Back,21,Italy,6,0,0,0
 240803,Filippo De Col,4255,SS Arezzo,2026,IT2,26,Right-Back,32,Italy,0,0,0,0
-724068,Kevin Leone,4255,SS Arezzo,2026,IT2,7,Central Midfield,21,Italy,6,2,0,74
-536452,Luca Chierico,4255,SS Arezzo,2026,IT2,24,Central Midfield,25,Italy,6,3,0,111
-935510,Mattia Sala,4255,SS Arezzo,2026,IT2,16,Central Midfield,21,Italy,6,6,0,402
-703240,Gennaro Iaccarino,4255,SS Arezzo,2026,IT2,78,Central Midfield,23,Italy,3,3,0,230
-457681,Eklu Shaka Mawuli,4255,SS Arezzo,2026,IT2,8,Central Midfield,28,Ghana,6,5,0,144
-98888,Artur Ioniță,4255,SS Arezzo,2026,IT2,17,Central Midfield,36,Moldova,6,6,1,540
+724068,Kevin Leone,4255,SS Arezzo,2026,IT2,7,Central Midfield,21,Italy,8,2,0,74
+536452,Luca Chierico,4255,SS Arezzo,2026,IT2,24,Central Midfield,25,Italy,8,5,1,251
+935510,Mattia Sala,4255,SS Arezzo,2026,IT2,16,Central Midfield,21,Italy,8,8,0,582
+703240,Gennaro Iaccarino,4255,SS Arezzo,2026,IT2,78,Central Midfield,23,Italy,5,4,0,256
+457681,Eklu Shaka Mawuli,4255,SS Arezzo,2026,IT2,8,Central Midfield,28,Ghana,8,7,0,229
+98888,Artur Ioniță,4255,SS Arezzo,2026,IT2,17,Central Midfield,36,Moldova,8,8,1,635
 403845,Mattia Viviani,4255,SS Arezzo,2026,IT2,23,Defensive Midfield,26,Italy,6,5,0,159
-1099949,Aleandro Manes,4255,SS Arezzo,2026,IT2,47,Attacking Midfield,20,Italy,2,0,0,0
-387060,Emiliano Pattarello,4255,SS Arezzo,2026,IT2,10,Right Winger,27,Italy,6,5,0,217
-410655,Camillo Tavernelli,4255,SS Arezzo,2026,IT2,21,Left Winger,27,Italy,4,4,1,250
-197751,Alberto Cerri,4255,SS Arezzo,2026,IT2,9,Centre-Forward,30,Italy,5,5,0,183
-285754,Pietro Cianci,4255,SS Arezzo,2026,IT2,71,Centre-Forward,30,Italy,6,6,2,328
-678645,Alessandro Arena,4255,SS Arezzo,2026,IT2,30,Right Winger,26,Italy,6,6,0,291
-160344,Leonardo Mancuso,4255,SS Arezzo,2026,IT2,11,Centre-Forward,34,Italy,4,3,1,68
+1099949,Aleandro Manes,4255,SS Arezzo,2026,IT2,47,Attacking Midfield,20,Italy,4,0,0,0
+387060,Emiliano Pattarello,4255,SS Arezzo,2026,IT2,10,Right Winger,27,Italy,8,7,0,254
+410655,Camillo Tavernelli,4255,SS Arezzo,2026,IT2,21,Left Winger,27,Italy,6,6,1,430
+197751,Alberto Cerri,4255,SS Arezzo,2026,IT2,9,Centre-Forward,30,Italy,7,7,0,311
+285754,Pietro Cianci,4255,SS Arezzo,2026,IT2,71,Centre-Forward,30,Italy,8,7,2,354
+678645,Alessandro Arena,4255,SS Arezzo,2026,IT2,30,Right Winger,26,Italy,8,8,1,434
+160344,Leonardo Mancuso,4255,SS Arezzo,2026,IT2,11,Centre-Forward,34,Italy,6,5,1,108
 346562,Marco Olivieri,4255,SS Arezzo,2026,IT2,99,Centre-Forward,27,Italy,3,2,0,134
 406942,Muhamed Varela Djamanca,4255,SS Arezzo,2026,IT2,0,Left Winger,28,Portugal,2,2,0,16
 1565466,Gianmarco Cipriani,4255,SS Arezzo,2026,IT2,0,Centre-Forward,18,Italy,1,0,0,0
+397241,Federico Del Frate,20519,Virtus Entella,2026,IT2,22,Goalkeeper,30,Italy,8,7,0,630
+57285,Simone Colombi,20519,Virtus Entella,2026,IT2,91,Goalkeeper,35,Italy,7,0,0,0
+1188773,Edoardo Torrielli,20519,Virtus Entella,2026,IT2,12,Goalkeeper,20,Italy,8,1,0,90
+1379579,Matteo Tassara,20519,Virtus Entella,2026,IT2,0,Goalkeeper,17,Peru,1,0,0,0
+404860,Mattia Alborghetti,20519,Virtus Entella,2026,IT2,27,Right-Back,28,Italy,8,8,1,697
+248695,Andrea Tiritiello,20519,Virtus Entella,2026,IT2,6,Centre-Back,31,Italy,8,8,2,626
+256688,Luca Parodi,20519,Virtus Entella,2026,IT2,23,Centre-Back,31,Italy,8,8,0,689
+1049728,Nicolas Previtali,20519,Virtus Entella,2026,IT2,3,Right-Back,21,Italy,8,4,0,122
+659420,Mattia Motolese,20519,Virtus Entella,2026,IT2,39,Centre-Back,22,Italy,7,0,0,0
+41780,Ivan Marconi,20519,Virtus Entella,2026,IT2,15,Centre-Back,37,Italy,5,4,0,189
+821038,Stefano Di Mario,20519,Virtus Entella,2026,IT2,26,Left Midfield,22,Italy,8,8,0,684
+487838,Niccolò Squizzato,20519,Virtus Entella,2026,IT2,5,Defensive Midfield,24,Italy,8,8,0,574
+423615,Leonardo Benedetti,20519,Virtus Entella,2026,IT2,80,Central Midfield,26,Italy,8,7,0,368
+432105,Andrea Franzoni,20519,Virtus Entella,2026,IT2,24,Attacking Midfield,29,Italy,8,8,1,702
+650249,Riccardo Turicchia,20519,Virtus Entella,2026,IT2,16,Left Midfield,23,Italy,8,0,0,0
+395190,Francesco Mezzoni,20519,Virtus Entella,2026,IT2,94,Right Midfield,26,Italy,3,3,0,216
+717885,Marwane Kritta,20519,Virtus Entella,2026,IT2,70,Left Midfield,24,Italy,6,4,0,69
+538063,Lucas Felippe,20519,Virtus Entella,2026,IT2,55,Defensive Midfield,26,Brazil,8,4,0,104
+287367,Luca Vignali,20519,Virtus Entella,2026,IT2,8,Right Midfield,30,Italy,7,7,0,308
+120458,Davide Bariti,20519,Virtus Entella,2026,IT2,7,Right Midfield,35,Italy,0,0,0,0
+1189072,Mattia Valori,20519,Virtus Entella,2026,IT2,28,Central Midfield,21,Italy,4,1,0,2
+819083,Gabriele Costa,20519,Virtus Entella,2026,IT2,40,Central Midfield,21,Italy,2,0,0,0
+1318487,Tommaso Annoni,20519,Virtus Entella,2026,IT2,18,Central Midfield,18,Italy,8,5,0,201
+632482,Bernat Guiu,20519,Virtus Entella,2026,IT2,11,Centre-Forward,26,Spain,8,8,2,620
+909894,Giacomo Corona,20519,Virtus Entella,2026,IT2,9,Centre-Forward,22,Italy,8,7,2,154
+352704,Luigi Cuppone,20519,Virtus Entella,2026,IT2,10,Centre-Forward,29,Italy,8,7,1,462
+660190,Mattia Tirelli,20519,Virtus Entella,2026,IT2,17,Centre-Forward,24,Italy,8,7,1,177
+164534,Francesco Forte,20519,Virtus Entella,2026,IT2,32,Centre-Forward,33,Italy,5,4,0,238

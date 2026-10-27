@@ -1,0 +1,39 @@
+name: Diagnostic HTTP Transfermarkt (sans export)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tm-http-diagnostic
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Installer le navigateur
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Tests hors réseau
+        working-directory: artifacts/football-dashboard
+        run: python -m unittest test_tm_http_recovery -v
+      - name: Deux joueurs seulement, aucune écriture CSV
+        working-directory: artifacts/football-dashboard
+        run: |
+          python -u - <<'PY'
+          import tm_player_career as m
+          ok = True
+          for pid in ("419672", "669380"):
+              data, status, error = m._fetch_json(m.BASE_URL + m.CEAPI_PATH.format(pid=pid))
+              valid = isinstance(data, dict) and isinstance(data.get("data"), dict)
+              print(f"player={pid} status={status} valid_data={valid} error={error}")
+              ok = ok and status == 200 and valid
+              if m._blocked.is_set():
+                  break
+          raise SystemExit(0 if ok else 1)
+          PY

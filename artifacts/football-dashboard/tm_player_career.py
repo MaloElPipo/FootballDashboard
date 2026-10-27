@@ -85,6 +85,9 @@ RECENT_MATCHES_DAYS = 90  # 3 mois
 # HTTP
 # ============================================================
 _print_lock = threading.Lock()
+_blocked = threading.Event()
+_recovery_lock = threading.Lock()
+_recovery_used = False
 
 
 def _log(msg: str) -> None:
@@ -128,7 +131,14 @@ def _fetch_json_once(
                 return None, r.status, f"JSON decode: {e}", False, token
     except urllib.error.HTTPError as e:
         # 202/403 peuvent aussi remonter ici selon la config WAF.
-        is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
+        action = (e.headers.get("x-amzn-waf-action") or "").lower()
+        is_ch = tm_waf.is_challenge_response(e.code, 0, action)
+        if e.code == 405:
+            # Only log allowlisted classifications, never cookies or response bodies.
+            content_type = e.headers.get("Content-Type", "").lower()
+            kind = "html" if "html" in content_type else "json" if "json" in content_type else "other"
+            action = action if action in ("challenge", "captcha") else "unspecified"
+            return None, 405, f"HTTP 405; waf={action}; body={kind}", False, token
         return None, e.code, f"HTTP {e.code}", is_ch, token
     except urllib.error.URLError as e:
         return None, None, f"URL error: {e.reason}", False, token
@@ -146,12 +156,32 @@ def _fetch_json(
 
     Returns (parsed_json, status, error). En cas de succès : (dict, 200, None).
     """
+    global _recovery_used
+    if _blocked.is_set():
+        return None, 405, "Circuit ouvert : collecte de cette ligue arrêtée"
     payload, status, err, is_challenge, token_used = _fetch_json_once(url, timeout)
     if payload is None and is_challenge:
-        # Cookie WAF expiré/invalide : refresh ciblé (ne relance le navigateur
-        # que si aucun autre worker n'a déjà remplacé ce token) + un retry.
         tm_waf.get_waf_token(force_refresh=True, stale=token_used)
-        payload, status, err, _, _ = _fetch_json_once(url, timeout)
+        payload, status, err, _, token_used = _fetch_json_once(url, timeout)
+    if status == 405:
+        with _recovery_lock:
+            if _blocked.is_set():
+                return None, status, err
+            _log(f"   ! Diagnostic Transfermarkt : {err}")
+            if "waf=captcha" in (err or ""):
+                _blocked.set()
+                _log("   ! CAPTCHA demandé : arrêt sans tentative de résolution automatique.")
+                return None, status, err
+            if not _recovery_used:
+                _recovery_used = True
+                tm_waf.get_waf_token(force_refresh=True, stale=token_used)
+            # Other workers can retry with the refreshed session, but cannot
+            # trigger a second browser refresh for this league.
+            payload, status, err, _, _ = _fetch_json_once(url, timeout)
+            if payload is None:
+                _blocked.set()
+                _log(f"   ! Reprise refusée ({err}) : arrêt réseau pour cette ligue, anciens CSV conservés.")
+            return payload, status, err
     return payload, status, err
 
 
@@ -488,7 +518,11 @@ def scrape_players(
 
     def _process(pid_meta: tuple[str, dict]):
         pid, meta = pid_meta
+        if _blocked.is_set():
+            return pid, None
         _polite_pause()
+        if _blocked.is_set():
+            return pid, None
         data = fetch_player_career(pid)
         if data is None:
             return pid, None

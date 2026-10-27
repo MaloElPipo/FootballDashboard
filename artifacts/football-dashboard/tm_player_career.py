@@ -55,6 +55,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 import tm_waf
+from collection_metadata import start_attempt, complete_attempt
 
 # ============================================================
 # Config
@@ -100,7 +101,7 @@ def _polite_pause() -> None:
 
 
 def _fetch_json_once(
-    url: str, timeout: int = TIMEOUT
+    url: str, timeout: int = TIMEOUT, *, token_provider=None, open_request=None
 ) -> tuple[dict | None, int | None, str | None, bool, str | None]:
     """Un seul GET JSON. Returns (json, status, error, is_challenge, token_used).
 
@@ -109,12 +110,12 @@ def _fetch_json_once(
     ``token_used`` est le token WAF employé (pour un refresh ciblé « stale »).
     """
     headers = dict(TM_HEADERS)
-    token = tm_waf.get_waf_token()
+    token = (token_provider or tm_waf.get_waf_token)()
     if token:
         headers["Cookie"] = f"aws-waf-token={token}"
     req = urllib.request.Request(url, headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        with (open_request or urllib.request.urlopen)(req, timeout=timeout) as r:
             data = r.read()
             if r.headers.get("Content-Encoding") == "gzip":
                 try:
@@ -122,6 +123,8 @@ def _fetch_json_once(
                 except OSError:
                     pass
             waf_action = r.headers.get("x-amzn-waf-action")
+            if (waf_action or "").lower() == "captcha":
+                return None, r.status, "WAF captcha", False, token
             if tm_waf.is_challenge_response(r.status, len(data), waf_action):
                 return None, r.status, "WAF challenge", True, token
             text = data.decode("utf-8", errors="replace")
@@ -132,6 +135,8 @@ def _fetch_json_once(
     except urllib.error.HTTPError as e:
         # 202/403 peuvent aussi remonter ici selon la config WAF.
         action = (e.headers.get("x-amzn-waf-action") or "").lower()
+        if action == "captcha" and e.code != 405:
+            return None, e.code, "WAF captcha", False, token
         is_ch = tm_waf.is_challenge_response(e.code, 0, action)
         if e.code == 405:
             # Only log allowlisted classifications, never cookies or response bodies.
@@ -611,6 +616,18 @@ def cli():
     )
     args = parser.parse_args()
 
+    # A durable incomplete attempt also covers process timeouts/interruptions.
+    # Test/custom/explicit-season exports must never certify a full collection.
+    args.record_collection = bool(
+        args.league and not args.player_ids and not args.test
+        and args.season_filter == -1
+    )
+    if args.record_collection:
+        start_attempt(args.out_dir, args.league)
+    return collect(args)
+
+
+def collect(args):
     # Construit la liste des joueurs
     if args.player_ids:
         ids = [s.strip() for s in args.player_ids.split(",") if s.strip()]
@@ -638,7 +655,7 @@ def cli():
             f"(saison filter={sorted(season_filter) if season_filter else None})"
         )
     else:
-        parser.error("Il faut --league ou --player-ids")
+        raise SystemExit("Il faut --league ou --player-ids")
 
     if args.test:
         n = min(args.test_n, len(player_meta_by_id))
@@ -689,6 +706,9 @@ def cli():
             w.writerow([c, n])
     _log(f"   ✓ écrit rapport compétitions → {comp_report_path} "
          f"({len(comp_counts)} codes uniques)")
+
+    if args.record_collection:
+        complete_attempt(out, league_label)
 
     # Top 30 console
     _log("\n>>> Top 30 compétitions rencontrées (à mapper vers tier+rating):")

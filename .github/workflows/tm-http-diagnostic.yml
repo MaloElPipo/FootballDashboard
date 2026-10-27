@@ -9,9 +9,11 @@ concurrency:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -21,19 +23,19 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Tests hors réseau
         working-directory: artifacts/football-dashboard
-        run: python -m unittest test_tm_http_recovery -v
-      - name: Deux joueurs seulement, aucune écriture CSV
+        run: python -m unittest test_tm_http_recovery test_tm_http_diagnostic -v
+      - name: Paliers 6, 18, 36 joueurs — arrêt au premier échec, sans export
         working-directory: artifacts/football-dashboard
+        run: python -u tm_http_diagnostic.py
+      - name: Vérifier l'absence de modification des données
+        if: always()
         run: |
-          python -u - <<'PY'
-          import tm_player_career as m
-          ok = True
-          for pid in ("419672", "669380"):
-              data, status, error = m._fetch_json(m.BASE_URL + m.CEAPI_PATH.format(pid=pid))
-              valid = isinstance(data, dict) and isinstance(data.get("data"), dict)
-              print(f"player={pid} status={status} valid_data={valid} error={error}")
-              ok = ok and status == 200 and valid
-              if m._blocked.is_set():
-                  break
-          raise SystemExit(0 if ok else 1)
-          PY
+          test -z "$(git status --porcelain --untracked-files=all -- artifacts/football-dashboard/live/data)"
+      - name: Conserver uniquement les métriques anonymes du diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tm-http-diagnostic
+          path: ${{ runner.temp }}/tm-http-diagnostic.json
+          if-no-files-found: error
+          retention-days: 14

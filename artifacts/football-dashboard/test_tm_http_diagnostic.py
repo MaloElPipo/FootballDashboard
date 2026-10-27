@@ -103,6 +103,9 @@ class DiagnosticTests(unittest.TestCase):
         module = Mock()
         module.sync_playwright.return_value = manager
         routes = [Mock() for _ in range(41)]
+        for route in routes:
+            route.request.url = "https://www.transfermarkt.com/"
+            route.request.resource_type = "document"
 
         def goto(*args, **kwargs):
             handler = context.route.call_args.args[1]
@@ -128,6 +131,17 @@ class DiagnosticTests(unittest.TestCase):
             report = json.loads((Path(directory) / "tm-http-diagnostic.json").read_text())
             self.assertEqual(report["stop_reason"], "setup_error")
             self.assertNotIn("private", output.getvalue())
+
+    def test_invalid_sample_does_not_open_browser(self):
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.dict(os.environ, {"RUNNER_TEMP": directory}), \
+                patch.object(d, "select_sample", side_effect=ValueError("private")), \
+                patch.object(d, "bootstrap") as bootstrap, \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(d.main(), 1)
+            bootstrap.assert_not_called()
+            report = json.loads((Path(directory) / "tm-http-diagnostic.json").read_text())
+            self.assertEqual(report["stop_reason"], "invalid_sample")
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ import json
 import os
 import time
 import urllib.request
+from urllib.parse import urlparse
 from collections import Counter
 from pathlib import Path
 
@@ -49,7 +50,7 @@ def bootstrap():
     response body or exception text is emitted.
     """
     from playwright.sync_api import sync_playwright
-    stats = {"requests": 0, "http": {}, "stop": None}
+    stats = {"requests": 0, "skipped_resources": 0, "http": {}, "stop": None}
     started = time.monotonic()
     token = None
     try:
@@ -60,6 +61,14 @@ def bootstrap():
                     user_agent=career.tm_waf.WAF_USER_AGENT, service_workers="block")
 
                 def route_request(route):
+                    host = (urlparse(route.request.url).hostname or "").lower()
+                    allowed = any(host == domain or host.endswith("." + domain)
+                                  for domain in ("transfermarkt.com", "awswaf.com"))
+                    if not allowed or route.request.resource_type in (
+                            "image", "stylesheet", "font", "media"):
+                        stats["skipped_resources"] += 1
+                        route.abort()
+                        return
                     if stats["stop"] or stats["requests"] >= BOOTSTRAP_BUDGET:
                         stats["stop"] = stats["stop"] or "bootstrap_budget"
                         route.abort()

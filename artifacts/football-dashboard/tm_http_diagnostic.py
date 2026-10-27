@@ -11,8 +11,8 @@ from pathlib import Path
 
 import tm_player_career as career
 
-LEAGUES = ("a1", "al1", "alb1", "alg1", "arg1", "aus1",
-           "az1", "be1", "bg1", "bh1", "bos1", "bra1")
+LEAGUES = ("a1", "l1", "alb1", "alg1", "arg1", "aus1",
+           "az1", "be1", "gb1", "fr1", "bos1", "bra1")
 STAGES = (6, 18, 36)
 PAUSE = 5
 STAGE_PAUSE = 30
@@ -177,6 +177,8 @@ def main():
                           circuit_open=True, circuit_triggers=1, completed_stages=[])
         else:
             report.update(probe(sample, token))
+    except (ValueError, FileNotFoundError):
+        report.update(stop_reason="invalid_sample", completed_stages=[])
     except Exception:
         # Deliberately omit exception strings (URLs, headers or bodies may occur).
         report.update(stop_reason="setup_error", completed_stages=[])

@@ -1,8 +1,12 @@
 """Offline checks of the experiment's budget, stop conditions and safe output."""
 import contextlib
 import io
+import json
+import os
+import tempfile
 import unittest
-from unittest.mock import Mock
+from pathlib import Path
+from unittest.mock import Mock, patch
 
 import tm_http_diagnostic as d
 
@@ -73,6 +77,57 @@ class DiagnosticTests(unittest.TestCase):
         for sample in (self.sample[:2], [("a1", "1")] * 36):
             with self.assertRaises(ValueError):
                 d.probe(sample, None)
+
+    def test_sample_current_season_deduplicated_across_leagues(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for i, league in enumerate(d.LEAGUES):
+                (root / f"{league}.csv").write_text(
+                    "season,player_id\n2024,99999\n" +
+                    "".join(f"2025,{i * 10 + j}\n" for j in range(1, 6)))
+            sample, sources = d.select_sample(root)
+        self.assertEqual(len(set(pid for _, pid in sample)), 36)
+        self.assertEqual(len(set(league for league, _ in sample)), 12)
+        self.assertNotIn("99999", [pid for _, pid in sample])
+        self.assertTrue(all(s["season"] == 2025 for s in sources.values()))
+
+    def test_bootstrap_stops_at_cap_without_logging_cookie(self):
+        # Mock the browser, but exercise the real request/response handlers.
+        context, browser, page = Mock(), Mock(), Mock()
+        context.new_page.return_value = page
+        browser.new_context.return_value = context
+        manager = Mock()
+        manager.__enter__ = Mock(return_value=Mock())
+        manager.__exit__ = Mock(return_value=False)
+        manager.__enter__.return_value.chromium.launch.return_value = browser
+        module = Mock()
+        module.sync_playwright.return_value = manager
+        routes = [Mock() for _ in range(41)]
+
+        def goto(*args, **kwargs):
+            handler = context.route.call_args.args[1]
+            for route in routes:
+                handler(route)
+
+        page.goto.side_effect = goto
+        with patch.dict("sys.modules", {"playwright.sync_api": module}):
+            token, stats = d.bootstrap()
+        self.assertIsNone(token)
+        self.assertEqual(stats["requests"], 40)
+        self.assertEqual(stats["stop"], "bootstrap_budget")
+        routes[-1].abort.assert_called_once()
+        context.cookies.assert_not_called()
+        browser.close.assert_called_once()
+
+    def test_setup_failure_still_writes_safe_report_only_in_temp(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.dict(os.environ, {"RUNNER_TEMP": directory}), \
+                    patch.object(d, "select_sample", side_effect=RuntimeError("private")), \
+                    contextlib.redirect_stdout(io.StringIO()) as output:
+                self.assertEqual(d.main(), 1)
+            report = json.loads((Path(directory) / "tm-http-diagnostic.json").read_text())
+            self.assertEqual(report["stop_reason"], "setup_error")
+            self.assertNotIn("private", output.getvalue())
 
 
 if __name__ == "__main__":

@@ -1,891 +1,894 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
-168278,David Lazar,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,35,Romania,91,17,11,18,709,285,25469,0,0,0,0,16,5,2010,2026
-340978,Tiberiu Căpușă,9465,Petrolul Ploiesti,Right-Back,28,Romania,66,13,8,17,443,279,21566,6,10,70,23,30,14,2014,2026
-309016,Vlad Muțiu,58049,FC Hermannstadt,Goalkeeper,31,Romania,31,14,8,12,442,148,13155,0,2,0,0,9,2,2013,2026
-315442,Cătălin Căbuz,41278,ACSC FC Arges,Goalkeeper,30,Romania,34,15,8,17,546,320,28498,0,2,0,0,18,3,2006,2026
-21517,Ionuț Pop,58049,FC Hermannstadt,Goalkeeper,28,Romania,22,14,10,22,553,107,9530,0,0,0,0,3,1,2012,2026
-608977,Nana Antwi,58049,FC Hermannstadt,Right-Back,25,Ghana,0,9,6,14,306,229,16904,4,17,23,3,32,0,2018,2026
-614623,Alexandru Oroian,58049,FC Hermannstadt,Right-Back,25,Romania,0,9,4,8,302,185,9661,11,8,42,18,16,1,2018,2026
-271399,Bozhidar Chorbadzhiyski,58049,FC Hermannstadt,Centre-Back,30,Bulgaria,2,14,9,18,455,246,19458,12,7,40,16,62,11,2012,2026
-710076,Kevin Ciubotaru,58049,FC Hermannstadt,Left-Back,22,Romania,98,6,6,18,213,90,5555,2,2,17,8,10,8,2020,2026
-351072,Vahid Selimovic,58049,FC Hermannstadt,Centre-Back,29,Luxembourg,0,16,9,33,542,220,16578,8,2,35,4,79,19,2011,2026
-1229554,Luca Stancu,301,FCSB,Right-Back,21,Romania,77,4,3,8,93,65,4392,2,2,10,5,2,0,2023,2026
-203966,Andreas Karo,58049,FC Hermannstadt,Centre-Back,29,Cyprus,3,16,12,30,533,289,21852,20,9,54,14,64,58,2011,2026
-610414,Saeed Issah,58049,FC Hermannstadt,Left-Back,26,Ghana,16,8,4,8,223,89,5396,1,0,2,0,6,0,2018,2026
-147993,Florin Bejan,58049,FC Hermannstadt,Centre-Back,35,Romania,0,20,12,18,670,422,34002,12,3,18,7,86,14,2007,2026
+315442,Cătălin Căbuz,41278,ACSC FC Arges,Goalkeeper,30,Romania,34,15,8,17,549,320,28498,0,2,0,0,18,3,2006,2026
+168278,David Lazar,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,35,Romania,91,17,11,18,711,286,25559,0,0,0,0,16,5,2010,2026
+309016,Vlad Muțiu,58049,FC Hermannstadt,Goalkeeper,31,Romania,31,14,8,12,443,149,13245,0,2,0,0,9,2,2013,2026
+340978,Tiberiu Căpușă,9465,Petrolul Ploiesti,Right-Back,28,Romania,66,13,8,17,445,281,21661,6,10,70,23,30,14,2014,2026
+21517,Ionuț Pop,58049,FC Hermannstadt,Goalkeeper,28,Romania,22,14,10,22,554,107,9530,0,0,0,0,3,1,2012,2026
+351072,Vahid Selimovic,58049,FC Hermannstadt,Centre-Back,29,Luxembourg,0,16,9,34,546,224,16893,8,3,35,4,79,19,2011,2026
+614623,Alexandru Oroian,58049,FC Hermannstadt,Right-Back,25,Romania,0,9,4,8,304,187,9841,11,8,42,18,16,1,2018,2026
+271399,Bozhidar Chorbadzhiyski,58049,FC Hermannstadt,Centre-Back,30,Bulgaria,2,14,9,18,457,249,19644,12,7,40,16,62,11,2012,2026
+710076,Kevin Ciubotaru,58049,FC Hermannstadt,Left-Back,22,Romania,98,6,6,18,215,92,5735,2,3,20,9,10,8,2020,2026
+608977,Nana Antwi,58049,FC Hermannstadt,Right-Back,25,Ghana,0,9,6,14,308,231,17084,4,17,23,3,33,0,2018,2026
+1229554,Luca Stancu,301,FCSB,Right-Back,21,Romania,77,4,3,8,95,65,4392,2,3,10,5,2,0,2023,2026
+610414,Saeed Issah,58049,FC Hermannstadt,Left-Back,26,Ghana,16,8,4,8,225,92,5662,1,0,2,0,6,0,2018,2026
+203966,Andreas Karo,58049,FC Hermannstadt,Centre-Back,29,Cyprus,3,16,12,30,535,289,21852,20,9,54,14,64,58,2011,2026
 241584,Ionuț Stoica,58049,FC Hermannstadt,Centre-Back,38,Romania,4,14,4,9,551,425,36480,20,7,44,11,62,0,2012,2025
-547820,Dragoș Albu,41061,Corvinul Hunedoara,Defensive Midfield,25,Romania,8,10,7,15,380,259,19191,17,12,180,31,34,22,2017,2026
-283287,Antoni Ivanov,952,UTA Arad,Central Midfield,31,Bulgaria,6,13,14,12,486,312,21017,14,10,42,8,54,0,2013,2026
-432742,Jair Tavares,58049,FC Hermannstadt,Central Midfield,31,Brazil,7,13,9,18,390,305,24612,38,22,119,37,25,0,2014,2026
-241259,Ciprian Biceanu,58049,FC Hermannstadt,Central Midfield,32,Romania,0,15,5,10,532,384,22033,8,4,56,14,21,0,2012,2026
-296585,Silviu Balaure,41278,ACSC FC Arges,Right Midfield,30,Romania,96,15,5,18,563,335,20656,47,45,168,48,30,11,2012,2026
-372446,Diogo Batista,58049,FC Hermannstadt,Central Midfield,26,Portugal,21,9,5,11,271,167,10044,10,11,63,16,22,0,2018,2026
+147993,Florin Bejan,58049,FC Hermannstadt,Centre-Back,35,Romania,0,20,12,18,670,422,34002,12,3,18,7,86,14,2007,2026
+547820,Dragoș Albu,41061,Corvinul Hunedoara,Defensive Midfield,25,Romania,8,10,7,15,383,262,19255,17,12,180,31,34,22,2017,2026
+432742,Jair Tavares,58049,FC Hermannstadt,Central Midfield,31,Brazil,7,13,9,18,392,307,24679,38,22,119,37,25,0,2014,2026
+283287,Antoni Ivanov,952,UTA Arad,Central Midfield,31,Bulgaria,6,13,14,12,489,315,21287,14,10,42,8,55,0,2013,2026
 679280,Kalifa Kujabi,58049,FC Hermannstadt,Central Midfield,26,The Gambia,6,7,5,13,234,124,7272,8,6,14,3,16,0,2019,2025
-668676,Aviel Zargari,58049,FC Hermannstadt,Defensive Midfield,23,Israel,36,10,6,16,300,144,8527,2,3,25,7,34,32,2017,2026
-916316,Alexandru Luca,58049,FC Hermannstadt,Attacking Midfield,22,Romania,0,7,3,7,162,107,7727,5,4,0,0,13,1,2020,2026
-1028683,Patrick Vuc,58049,FC Hermannstadt,Attacking Midfield,22,Romania,0,5,8,13,157,57,2461,10,2,0,0,2,0,2022,2026
+296585,Silviu Balaure,41278,ACSC FC Arges,Right Midfield,30,Romania,96,15,5,18,566,337,20719,47,45,169,48,31,11,2012,2026
+668676,Aviel Zargari,58049,FC Hermannstadt,Defensive Midfield,23,Israel,36,10,6,16,302,146,8608,2,3,25,7,34,32,2017,2026
+372446,Diogo Batista,58049,FC Hermannstadt,Central Midfield,26,Portugal,21,9,5,11,274,167,10044,10,11,63,16,22,0,2018,2026
 959905,Ianis Gândilă,58049,FC Hermannstadt,Central Midfield,20,Romania,20,3,1,6,108,4,60,0,0,0,0,0,0,2021,2025
-547754,Ianis Stoica,58049,FC Hermannstadt,Left Winger,23,Romania,0,11,9,18,438,278,16098,72,29,249,90,25,47,2016,2026
-470152,Dennis Politic,301,FCSB,Left Winger,26,Romania,20,11,8,22,380,195,10139,37,13,283,109,33,4,2016,2026
+241259,Ciprian Biceanu,58049,FC Hermannstadt,Central Midfield,32,Romania,0,15,5,10,534,384,22033,8,4,56,14,21,0,2012,2026
+916316,Alexandru Luca,58049,FC Hermannstadt,Attacking Midfield,22,Romania,0,7,3,7,164,109,7907,5,4,0,0,13,1,2020,2026
+547754,Ianis Stoica,58049,FC Hermannstadt,Left Winger,23,Romania,0,11,9,18,440,280,16222,72,29,252,90,25,47,2016,2026
 379194,Eduard Florescu,29700,AFC Unirea 04 Slobozia,Right Winger,28,Romania,0,13,8,15,529,311,19829,34,23,214,64,54,3,2013,2025
 840538,Christ Afalna,29700,AFC Unirea 04 Slobozia,Centre-Forward,27,Cameroon,0,6,3,7,195,170,11873,24,10,83,30,24,0,2020,2025
-430836,Cristian Neguț,58049,FC Hermannstadt,Centre-Forward,30,Romania,10,12,3,9,456,382,25227,69,35,241,90,70,0,2015,2026
-651376,Moonga Simba,58049,FC Hermannstadt,Right Winger,25,Sweden,70,9,9,16,281,173,8972,19,18,40,10,6,0,2018,2026
-972812,Ianis Mihart,58049,FC Hermannstadt,Left Winger,21,Romania,0,6,6,6,142,37,1931,1,0,0,0,3,0,2021,2026
-584105,Marko Gjorgjievski,7769,CFR Cluj,Centre-Forward,25,North Macedonia,0,11,8,15,306,226,11729,54,29,32,11,12,21,2015,2026
-164236,Aurelian Chițu,58049,FC Hermannstadt,Centre-Forward,35,Romania,9,18,9,25,679,497,34064,105,49,205,110,40,9,2009,2026
-123671,Sergiu Buș,7769,CFR Cluj,Centre-Forward,33,Romania,19,19,16,29,767,420,21114,87,26,164,66,33,7,2008,2026
-1498824,Sebastian Ritivoi,58049,FC Hermannstadt,Left Winger,16,Romania,29,1,1,4,22,1,12,0,0,0,0,0,0,2025,2025
+470152,Dennis Politic,301,FCSB,Left Winger,26,Romania,20,11,8,22,382,197,10162,37,13,287,109,33,4,2016,2026
+1028683,Patrick Vuc,58049,FC Hermannstadt,Attacking Midfield,22,Romania,0,5,8,13,159,57,2461,10,2,0,0,2,0,2022,2026
+430836,Cristian Neguț,58049,FC Hermannstadt,Centre-Forward,30,Romania,10,12,3,9,458,385,25312,69,35,241,90,70,0,2015,2026
+584105,Marko Gjorgjievski,7769,CFR Cluj,Centre-Forward,25,North Macedonia,0,11,8,15,308,228,11792,54,29,32,11,12,21,2015,2026
+972812,Ianis Mihart,58049,FC Hermannstadt,Left Winger,21,Romania,0,6,6,6,144,38,1996,1,0,0,0,3,0,2021,2026
+123671,Sergiu Buș,7769,CFR Cluj,Centre-Forward,33,Romania,19,19,16,29,770,423,21160,87,26,166,67,33,7,2008,2026
+164236,Aurelian Chițu,58049,FC Hermannstadt,Centre-Forward,35,Romania,9,18,9,25,681,499,34244,105,49,205,110,40,9,2009,2026
+651376,Moonga Simba,58049,FC Hermannstadt,Right Winger,25,Sweden,70,9,9,16,283,173,8972,19,18,40,10,6,0,2018,2026
 1161049,Ioan Bârstan,6429,FC Universitatea Cluj,Left Winger,22,Romania,0,5,5,11,101,22,1585,2,4,0,0,1,0,2022,2026
+464278,Ion Gurău,8818,FC Botosani,Goalkeeper,27,Romania,27,9,5,11,243,110,9954,0,0,0,0,9,0,2015,2026
+871493,Ștefan Ciupercă,29700,AFC Unirea 04 Slobozia,Goalkeeper,20,Romania,27,5,1,6,70,2,180,0,0,0,0,0,0,2021,2026
+1498824,Sebastian Ritivoi,58049,FC Hermannstadt,Left Winger,16,Romania,29,1,1,4,22,1,12,0,0,0,0,0,0,2025,2025
 568618,Robert Popa,29700,AFC Unirea 04 Slobozia,Goalkeeper,23,Romania,1,9,5,13,279,144,12475,0,0,0,0,11,27,2017,2025
-464278,Ion Gurău,8818,FC Botosani,Goalkeeper,27,Romania,27,9,5,11,240,109,9864,0,0,0,0,9,0,2015,2026
+536129,Andrei Dragu,29700,AFC Unirea 04 Slobozia,Left-Back,26,Romania,11,10,6,7,302,219,14842,11,8,40,12,24,0,2017,2026
+529149,Daniel Șerbănică,29700,AFC Unirea 04 Slobozia,Left-Back,29,Romania,29,10,4,6,356,266,20888,10,9,46,12,22,0,2017,2026
 171770,Denis Rusu,29700,AFC Unirea 04 Slobozia,Goalkeeper,35,Moldova,12,17,7,18,530,255,22934,0,0,0,0,22,13,2010,2026
-871493,Ștefan Ciupercă,29700,AFC Unirea 04 Slobozia,Goalkeeper,20,Romania,27,5,1,6,68,2,180,0,0,0,0,0,0,2021,2026
-604366,Ionuț Dinu,29700,AFC Unirea 04 Slobozia,Centre-Back,28,Romania,4,9,4,9,258,151,11916,14,2,16,7,23,1,2015,2026
-536129,Andrei Dragu,29700,AFC Unirea 04 Slobozia,Left-Back,26,Romania,11,10,6,7,300,217,14662,11,8,40,12,23,0,2017,2026
-529149,Daniel Șerbănică,29700,AFC Unirea 04 Slobozia,Left-Back,29,Romania,29,10,4,6,354,263,20618,10,9,46,12,22,0,2017,2026
-940366,Andrei Dorobanțu,952,UTA Arad,Right-Back,22,Romania,2,6,2,10,202,124,7868,8,2,48,13,14,9,2021,2026
 749104,Radu Negru,29700,AFC Unirea 04 Slobozia,Right-Back,27,Romania,0,7,4,9,228,172,13777,4,5,27,7,26,0,2019,2025
-467241,Oleksandr Safronov,29700,AFC Unirea 04 Slobozia,Centre-Back,26,Ukraine,3,11,12,18,384,196,13979,8,2,9,4,31,20,2016,2026
-531411,Esteban Orozco,41278,ACSC FC Arges,Centre-Back,27,Equatorial Guinea,0,10,8,20,292,164,12808,4,2,16,8,22,47,2017,2026
-226545,Marius Antoche,29700,AFC Unirea 04 Slobozia,Centre-Back,33,Romania,6,16,8,8,456,288,22126,12,3,29,7,55,0,2011,2026
-912165,Laurențiu Vlăsceanu,301,FCSB,Left-Back,21,Romania,0,6,6,15,211,80,4092,7,3,11,4,1,12,2021,2026
-242114,Florinel Ibrian,29700,AFC Unirea 04 Slobozia,Right-Back,32,Romania,21,14,3,7,329,219,16469,21,8,11,5,28,0,2012,2026
-357858,Marc Tsoungui,29700,AFC Unirea 04 Slobozia,Left-Back,23,Switzerland,15,10,9,16,302,91,5695,1,0,5,1,15,7,2017,2026
+604366,Ionuț Dinu,29700,AFC Unirea 04 Slobozia,Centre-Back,28,Romania,4,9,4,9,260,152,11935,14,2,16,7,23,1,2015,2026
+226545,Marius Antoche,29700,AFC Unirea 04 Slobozia,Centre-Back,33,Romania,6,16,8,8,458,290,22306,12,3,29,7,55,0,2011,2026
+467241,Oleksandr Safronov,29700,AFC Unirea 04 Slobozia,Centre-Back,26,Ukraine,3,11,12,18,387,198,14141,8,2,9,4,32,20,2016,2026
+940366,Andrei Dorobanțu,952,UTA Arad,Right-Back,22,Romania,2,6,2,10,205,124,7868,8,2,48,13,14,9,2021,2026
+912165,Laurențiu Vlăsceanu,301,FCSB,Left-Back,21,Romania,0,6,6,15,213,81,4093,7,3,11,4,1,12,2021,2026
+357858,Marc Tsoungui,29700,AFC Unirea 04 Slobozia,Left-Back,23,Switzerland,15,10,9,16,304,92,5785,1,0,5,1,15,7,2017,2026
+531411,Esteban Orozco,41278,ACSC FC Arges,Centre-Back,27,Equatorial Guinea,0,10,8,20,294,166,12988,4,2,16,8,22,47,2017,2026
+1163170,Raul Iancu,29700,AFC Unirea 04 Slobozia,Centre-Back,21,Romania,5,3,1,5,55,4,232,0,0,0,0,0,0,2023,2026
+242114,Florinel Ibrian,29700,AFC Unirea 04 Slobozia,Right-Back,32,Romania,21,14,3,7,331,220,16472,21,8,11,5,28,0,2012,2026
+246394,Constantin Toma,29700,AFC Unirea 04 Slobozia,Left-Back,39,Romania,10,13,1,7,298,189,15066,19,15,8,4,33,0,2012,2026
+410616,Valon Hamdiu,29700,AFC Unirea 04 Slobozia,Defensive Midfield,27,Kosovo,0,13,13,15,484,283,20209,14,9,37,11,69,3,2014,2026
+372908,Alexandru Albu,29700,AFC Unirea 04 Slobozia,Defensive Midfield,32,Romania,25,14,11,11,437,340,27072,34,16,117,31,49,1,2012,2026
+577515,Teodor Lungu,4959,SC Otelul Galati,Defensive Midfield,31,Moldova,39,10,6,14,258,198,14575,14,16,40,13,77,5,2017,2026
 744880,Rafael Garutti,29700,AFC Unirea 04 Slobozia,Centre-Back,27,Brazil,17,7,5,8,124,74,6344,3,1,2,0,4,0,2019,2025
-246394,Constantin Toma,29700,AFC Unirea 04 Slobozia,Left-Back,39,Romania,10,13,1,7,296,189,15066,19,15,8,4,33,0,2012,2026
-410616,Valon Hamdiu,29700,AFC Unirea 04 Slobozia,Defensive Midfield,27,Kosovo,0,13,13,15,482,281,20110,14,9,37,11,68,3,2014,2026
-1163170,Raul Iancu,29700,AFC Unirea 04 Slobozia,Centre-Back,21,Romania,5,3,1,5,53,4,232,0,0,0,0,0,0,2023,2026
-341374,Vlad Pop,29700,AFC Unirea 04 Slobozia,Central Midfield,25,Romania,24,9,5,9,253,151,8704,2,7,45,12,25,5,2014,2026
-577515,Teodor Lungu,4959,SC Otelul Galati,Defensive Midfield,31,Moldova,39,10,6,14,256,196,14468,14,16,38,13,77,5,2017,2026
-524163,Ionuț Coadă,29700,AFC Unirea 04 Slobozia,Defensive Midfield,28,Romania,8,10,3,7,319,211,14523,10,1,43,11,40,0,2017,2026
-372908,Alexandru Albu,29700,AFC Unirea 04 Slobozia,Defensive Midfield,32,Romania,25,14,11,11,435,338,26892,34,16,117,31,49,1,2012,2026
-271281,Ronaldo Deaconu,41061,Corvinul Hunedoara,Attacking Midfield,29,Romania,70,14,14,21,485,308,17477,35,45,130,37,23,7,2012,2026
+271281,Ronaldo Deaconu,41061,Corvinul Hunedoara,Attacking Midfield,29,Romania,70,14,14,21,488,308,17477,35,45,130,37,23,7,2012,2026
 487272,Jekob Jeno,29700,AFC Unirea 04 Slobozia,Defensive Midfield,25,New Caledonia,0,9,7,14,268,111,5747,6,6,29,8,18,16,2016,2025
-203059,Florin Purece,37624,FC Metaloglobus Bucharest,Attacking Midfield,34,Romania,8,19,10,23,686,465,29241,57,50,122,40,61,3,2008,2026
-1038445,Patrick Dulcea,41278,ACSC FC Arges,Attacking Midfield,21,Romania,20,6,3,11,146,88,4159,5,5,29,8,5,18,2021,2026
-50806,Adnan Aganovic,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,39,Croatia,77,18,12,26,712,525,34828,53,52,100,36,84,0,2009,2026
-665525,Jayson Papeau,952,UTA Arad,Left Winger,30,France,77,9,9,15,299,203,12025,29,23,174,52,40,0,2018,2026
-824040,Mihăiță Lemnaru,29700,AFC Unirea 04 Slobozia,Central Midfield,25,Romania,22,8,1,7,176,18,627,0,0,0,0,0,0,2017,2026
-341140,Nicolae Carnat,29700,AFC Unirea 04 Slobozia,Right Winger,28,Romania,14,13,14,24,447,266,16265,33,30,82,32,28,7,2014,2026
-396646,Guy Dahan,29700,AFC Unirea 04 Slobozia,Centre-Forward,26,Israel,19,13,13,16,360,278,17266,76,11,11,4,19,30,2014,2026
-1115189,Raul Rotund,312,FC Dinamo 1948,Centre-Forward,20,Romania,0,5,6,8,129,55,2287,10,1,7,6,1,5,2022,2026
-483715,Renato Espinosa,41061,Corvinul Hunedoara,Centre-Forward,28,Peru,9,11,11,10,362,213,9662,42,6,207,84,13,0,2016,2026
-262108,Cristi Bărbuţ,29700,AFC Unirea 04 Slobozia,Right Winger,31,Romania,23,15,7,16,583,394,23307,29,36,63,18,67,9,2012,2026
+341374,Vlad Pop,29700,AFC Unirea 04 Slobozia,Central Midfield,25,Romania,24,9,5,9,255,152,8716,2,7,45,12,25,5,2014,2026
+203059,Florin Purece,37624,FC Metaloglobus Bucharest,Attacking Midfield,34,Romania,8,19,10,23,688,467,29378,57,50,122,40,61,3,2008,2026
+1038445,Patrick Dulcea,41278,ACSC FC Arges,Attacking Midfield,21,Romania,20,6,3,11,149,90,4249,5,6,30,9,6,18,2021,2026
+824040,Mihăiță Lemnaru,29700,AFC Unirea 04 Slobozia,Central Midfield,25,Romania,22,8,1,7,178,18,627,0,0,0,0,0,0,2017,2026
+524163,Ionuț Coadă,29700,AFC Unirea 04 Slobozia,Defensive Midfield,28,Romania,8,10,3,7,321,211,14523,10,1,43,11,40,0,2017,2026
+50806,Adnan Aganovic,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,39,Croatia,77,18,12,26,714,525,34828,53,52,100,36,84,0,2009,2026
+341140,Nicolae Carnat,29700,AFC Unirea 04 Slobozia,Right Winger,28,Romania,14,13,14,24,449,269,16454,33,32,82,32,29,7,2014,2026
+665525,Jayson Papeau,952,UTA Arad,Left Winger,30,France,77,9,9,15,302,206,12269,30,23,180,52,40,0,2018,2026
+396646,Guy Dahan,29700,AFC Unirea 04 Slobozia,Centre-Forward,26,Israel,19,13,13,16,362,280,17332,76,12,11,4,19,30,2014,2026
+1115189,Raul Rotund,312,FC Dinamo 1948,Centre-Forward,20,Romania,0,5,6,8,131,55,2287,10,1,7,6,1,5,2022,2026
+483715,Renato Espinosa,41061,Corvinul Hunedoara,Centre-Forward,28,Peru,9,11,11,10,365,214,9688,42,6,208,84,13,0,2016,2026
+262108,Cristi Bărbuţ,29700,AFC Unirea 04 Slobozia,Right Winger,31,Romania,23,15,7,16,585,397,23577,29,36,63,18,67,9,2012,2026
+1019018,Marius Lupu,29700,AFC Unirea 04 Slobozia,Right Winger,26,Romania,0,6,5,11,139,127,8745,24,15,20,8,5,0,2021,2026
 404851,Denis Yanakov,29700,AFC Unirea 04 Slobozia,Left Winger,27,Ukraine,77,12,10,13,254,146,6814,28,10,12,3,20,18,2015,2026
-1019018,Marius Lupu,29700,AFC Unirea 04 Slobozia,Right Winger,26,Romania,0,6,5,11,137,125,8566,23,15,20,8,5,0,2021,2026
-198005,Cristian Ponde,29700,AFC Unirea 04 Slobozia,Right Winger,31,Portugal,20,15,10,20,597,339,16945,67,23,96,38,40,29,2011,2025
 45529,Said Ahmed Said,29700,AFC Unirea 04 Slobozia,Centre-Forward,33,Italy,9,15,14,30,614,354,21333,86,31,25,11,63,1,2010,2025
-1450778,Silviu Tănase,29700,AFC Unirea 04 Slobozia,Centre-Forward,17,Romania,16,2,1,4,44,4,233,0,0,0,0,0,0,2025,2026
-203089,George Gavrilaș,37624,FC Metaloglobus Bucharest,Goalkeeper,35,Romania,1,17,7,14,634,267,23503,0,0,0,0,15,0,2010,2026
+1450778,Silviu Tănase,29700,AFC Unirea 04 Slobozia,Centre-Forward,17,Romania,16,2,1,4,46,4,233,0,0,0,0,0,0,2025,2026
+1163952,Alexandru Soare,37624,FC Metaloglobus Bucharest,Goalkeeper,20,Romania,33,5,2,7,113,13,1015,0,0,0,0,1,0,2022,2026
+203089,George Gavrilaș,37624,FC Metaloglobus Bucharest,Goalkeeper,35,Romania,1,17,7,14,636,269,23683,0,0,0,0,15,0,2010,2026
+481178,Christ Kouadio,37624,FC Metaloglobus Bucharest,Right-Back,25,Cote d'Ivoire,0,11,9,18,302,228,18399,3,18,9,0,32,0,2016,2026
+198005,Cristian Ponde,29700,AFC Unirea 04 Slobozia,Right Winger,31,Portugal,20,15,10,20,597,339,16945,67,23,96,38,40,29,2011,2025
+912091,Robert Bădescu,952,UTA Arad,Left-Back,21,Romania,22,6,5,10,209,61,3630,3,0,8,2,2,28,2021,2026
 161037,Cristian Nedelcovici,37624,FC Metaloglobus Bucharest,Goalkeeper,32,Romania,34,9,2,8,251,36,2907,0,0,0,0,5,0,2016,2025
-481178,Christ Kouadio,37624,FC Metaloglobus Bucharest,Right-Back,25,Cote d'Ivoire,0,11,8,17,299,225,18374,3,18,9,0,32,0,2016,2026
-1163952,Alexandru Soare,37624,FC Metaloglobus Bucharest,Goalkeeper,20,Romania,33,5,2,7,111,13,1015,0,0,0,0,1,0,2022,2026
-530675,George Caramalău,37624,FC Metaloglobus Bucharest,Centre-Back,30,Romania,4,10,1,7,289,200,16944,5,4,9,0,36,0,2017,2026
-1113720,David Irimia,312,FC Dinamo 1948,Right-Back,20,Romania,20,5,2,9,160,82,5366,7,2,27,10,13,10,2022,2026
-806170,Aboubacar Camara,37624,FC Metaloglobus Bucharest,Centre-Back,25,France,30,8,7,13,184,119,9270,3,0,9,3,15,0,2019,2026
-912091,Robert Bădescu,952,UTA Arad,Left-Back,21,Romania,22,6,5,10,206,60,3540,3,0,7,2,2,28,2021,2026
-836804,Tarek Aggoun,37624,FC Metaloglobus Bucharest,Centre-Back,28,Algeria,0,9,9,12,211,132,10416,7,2,13,3,14,0,2017,2026
-1202523,Gabriel Dumitru,37624,FC Metaloglobus Bucharest,Centre-Back,20,Romania,23,4,3,7,99,43,3241,0,0,5,2,5,2,2023,2026
-319253,Alexandru Țîrlea,7769,CFR Cluj,Right-Back,26,Romania,20,10,7,18,302,130,7889,2,3,3,0,15,13,2017,2026
-281077,Omar Pasagic,37624,FC Metaloglobus Bucharest,Centre-Back,28,Bosnia-Herzegovina,19,11,10,19,289,104,7061,2,3,2,0,7,4,2015,2026
-136744,Mike Cestor,37624,FC Metaloglobus Bucharest,Centre-Back,34,DR Congo,75,17,11,22,649,321,24506,16,4,24,4,67,1,2009,2026
-97515,Andrei Sava,37624,FC Metaloglobus Bucharest,Left-Back,34,Romania,13,17,8,13,457,281,22987,1,6,15,6,24,11,2007,2026
-125069,Júnior Morais,37624,FC Metaloglobus Bucharest,Left-Back,39,Brazil,12,19,7,18,739,541,44925,18,43,61,11,127,0,2007,2026
-312471,Cosmin Achim,37624,FC Metaloglobus Bucharest,Centre-Back,30,Romania,0,12,5,11,417,175,12279,14,1,7,2,22,8,2013,2026
-217154,Damià Sabater,37624,FC Metaloglobus Bucharest,Central Midfield,30,Spain,5,15,13,23,444,330,21675,14,13,29,7,54,3,2011,2026
+836804,Tarek Aggoun,37624,FC Metaloglobus Bucharest,Centre-Back,28,Algeria,0,9,9,13,216,136,10776,7,2,18,3,16,0,2017,2026
+530675,George Caramalău,37624,FC Metaloglobus Bucharest,Centre-Back,30,Romania,4,10,1,7,290,201,17008,5,4,9,0,37,0,2017,2026
+806170,Aboubacar Camara,37624,FC Metaloglobus Bucharest,Centre-Back,25,France,30,8,7,13,186,119,9270,3,0,9,3,15,0,2019,2026
+1113720,David Irimia,312,FC Dinamo 1948,Right-Back,20,Romania,20,5,2,9,162,84,5529,7,2,29,10,13,10,2022,2026
+319253,Alexandru Țîrlea,7769,CFR Cluj,Right-Back,26,Romania,20,10,7,18,305,130,7889,2,3,3,0,15,13,2017,2026
+97515,Andrei Sava,37624,FC Metaloglobus Bucharest,Left-Back,34,Romania,13,17,8,13,459,284,23135,1,6,15,6,24,11,2007,2026
+1202523,Gabriel Dumitru,37624,FC Metaloglobus Bucharest,Centre-Back,20,Romania,23,4,3,7,101,45,3417,0,0,5,2,5,2,2023,2026
+136744,Mike Cestor,37624,FC Metaloglobus Bucharest,Centre-Back,34,DR Congo,75,17,11,22,650,322,24596,16,4,24,4,67,1,2009,2026
+312471,Cosmin Achim,37624,FC Metaloglobus Bucharest,Centre-Back,30,Romania,0,12,5,11,419,175,12279,14,1,7,2,22,8,2013,2026
 867947,Moses Abbey,37624,FC Metaloglobus Bucharest,Attacking Midfield,23,Ghana,17,7,5,9,202,127,8869,18,19,23,6,23,0,2020,2026
-614516,Bruno Carvalho,37624,FC Metaloglobus Bucharest,Central Midfield,28,Cape Verde,6,11,9,11,287,124,7101,1,1,10,2,24,3,2016,2026
-1113721,Alexandru Irimia,312,FC Dinamo 1948,Central Midfield,20,Romania,0,5,2,8,164,70,3369,2,0,11,6,7,5,2022,2026
-1017317,Giovani Ghimfus,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,21,Romania,19,6,3,7,145,91,4614,12,4,5,2,5,0,2021,2026
-826143,Răzvan Milea,37624,FC Metaloglobus Bucharest,Central Midfield,26,Romania,0,7,6,7,146,86,4266,7,1,7,4,1,0,2020,2026
-869995,Mario Tache,37624,FC Metaloglobus Bucharest,Central Midfield,21,Romania,0,4,5,5,56,28,1095,1,0,0,0,0,0,2023,2026
-511175,Robert Neacșu,37624,FC Metaloglobus Bucharest,Left Midfield,26,Romania,22,11,4,8,280,141,7446,3,7,16,4,11,0,2016,2026
-272718,Desley Ubbink,37624,FC Metaloglobus Bucharest,Attacking Midfield,32,Netherlands,0,16,14,31,579,384,26411,42,74,128,54,51,0,2011,2026
-973018,Liviu Pancișin,37624,FC Metaloglobus Bucharest,Central Midfield,22,Romania,60,1,1,2,4,1,24,0,0,0,0,0,0,2021,2021
-341987,Yassine Zakir,37624,FC Metaloglobus Bucharest,Left Winger,29,Netherlands,24,12,7,21,373,236,15603,33,12,53,24,13,0,2014,2026
-976495,Laurențiu Liș,37624,FC Metaloglobus Bucharest,Left Winger,21,Romania,7,6,3,7,154,72,3216,2,1,13,3,4,0,2021,2026
+125069,Júnior Morais,37624,FC Metaloglobus Bucharest,Left-Back,39,Brazil,12,19,7,18,741,543,44941,18,43,61,11,127,0,2007,2026
+217154,Damià Sabater,37624,FC Metaloglobus Bucharest,Central Midfield,30,Spain,5,15,13,23,448,333,21848,14,13,30,7,54,3,2011,2026
+1017317,Giovani Ghimfus,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,21,Romania,19,6,3,7,147,91,4614,12,4,5,2,5,0,2021,2026
+826143,Răzvan Milea,37624,FC Metaloglobus Bucharest,Central Midfield,26,Romania,0,7,6,7,148,87,4332,7,1,7,4,1,0,2020,2026
+614516,Bruno Carvalho,37624,FC Metaloglobus Bucharest,Central Midfield,28,Cape Verde,6,11,9,11,289,126,7281,1,1,10,2,24,3,2016,2026
+1113721,Alexandru Irimia,312,FC Dinamo 1948,Central Midfield,20,Romania,0,5,2,8,166,72,3549,2,0,11,6,7,5,2022,2026
+281077,Omar Pasagic,37624,FC Metaloglobus Bucharest,Centre-Back,28,Bosnia-Herzegovina,19,11,10,19,291,106,7241,2,3,2,0,7,4,2015,2026
+511175,Robert Neacșu,37624,FC Metaloglobus Bucharest,Left Midfield,26,Romania,22,11,4,8,282,143,7622,3,7,16,4,11,0,2016,2026
+869995,Mario Tache,37624,FC Metaloglobus Bucharest,Central Midfield,21,Romania,0,4,5,5,58,28,1095,1,0,0,0,0,0,2023,2026
+973018,Liviu Pancișin,37624,FC Metaloglobus Bucharest,Central Midfield,22,Romania,60,2,1,2,5,1,24,0,0,0,0,0,0,2021,2026
+64054,Dragoș Huiban,37624,FC Metaloglobus Bucharest,Centre-Forward,36,Romania,11,18,10,13,488,354,23411,75,17,51,24,34,4,2007,2026
+272718,Desley Ubbink,37624,FC Metaloglobus Bucharest,Attacking Midfield,32,Netherlands,0,16,14,31,581,385,26456,42,74,128,54,51,0,2011,2026
+976495,Laurențiu Liș,37624,FC Metaloglobus Bucharest,Left Winger,21,Romania,7,6,3,7,156,75,3390,2,1,13,3,4,0,2021,2026
 341364,Daniel Popa,37624,FC Metaloglobus Bucharest,Centre-Forward,30,Romania,29,12,8,16,469,363,22532,80,32,270,92,40,1,2014,2025
-64054,Dragoș Huiban,37624,FC Metaloglobus Bucharest,Centre-Forward,36,Romania,11,18,10,13,486,352,23231,75,17,51,24,33,4,2007,2026
-1045068,Alexandru Gheorghe,37624,FC Metaloglobus Bucharest,Right Winger,23,Romania,14,6,3,7,141,68,4386,0,0,3,1,5,0,2021,2026
-496631,Stefan Visic,37624,FC Metaloglobus Bucharest,Centre-Forward,28,Serbia,9,8,8,11,160,112,5120,24,3,21,5,6,0,2017,2026
+1045068,Alexandru Gheorghe,37624,FC Metaloglobus Bucharest,Right Winger,23,Romania,14,6,3,7,142,69,4476,0,0,3,1,5,0,2021,2026
+341987,Yassine Zakir,37624,FC Metaloglobus Bucharest,Left Winger,29,Netherlands,24,12,7,21,376,236,15603,33,12,53,24,13,0,2014,2026
+496631,Stefan Visic,37624,FC Metaloglobus Bucharest,Centre-Forward,28,Serbia,9,8,8,11,162,115,5320,24,3,21,5,6,0,2017,2026
 1008333,Adrian Sârbu,37624,FC Metaloglobus Bucharest,Centre-Forward,21,Romania,0,6,2,6,144,80,2726,9,1,6,1,3,0,2021,2026
-292488,Ely Fernandes,37624,FC Metaloglobus Bucharest,Left Winger,35,Cape Verde,10,14,11,14,403,239,13523,23,12,58,19,23,0,2011,2025
-651080,Martins Toutou,37624,FC Metaloglobus Bucharest,Centre-Forward,30,France,16,8,9,15,185,106,4183,20,3,10,4,15,0,2017,2025
-916750,Endri Celaj,37624,FC Metaloglobus Bucharest,Centre-Forward,22,Albania,77,9,7,12,262,36,1461,3,1,0,0,5,6,2017,2026
+349530,Benjamin Hadzic,37624,FC Metaloglobus Bucharest,Centre-Forward,27,Bosnia-Herzegovina,0,12,11,21,395,266,14731,75,35,3,1,21,27,2014,2025
 1432639,Albert Cuculescu,455,FC Rapid 1923,Attacking Midfield,20,Romania,0,2,2,1,6,3,225,4,0,0,0,0,0,2025,2026
 1377877,Radu Maria,455,FC Rapid 1923,Right-Back,19,Romania,0,3,3,4,17,0,0,0,0,0,0,0,0,2024,2026
-349530,Benjamin Hadzic,37624,FC Metaloglobus Bucharest,Centre-Forward,27,Bosnia-Herzegovina,0,12,11,21,395,266,14731,75,35,3,1,21,27,2014,2025
-1166399,Raul Stanciu,455,FC Rapid 1923,Left Winger,19,Romania,0,3,4,9,132,61,3700,5,1,0,0,6,18,2023,2025
-709671,Răzvan Pașcalău,312,FC Dinamo 1948,Centre-Back,22,Romania,0,8,8,21,292,140,11145,4,0,0,0,32,18,2019,2026
+651080,Martins Toutou,37624,FC Metaloglobus Bucharest,Centre-Forward,30,France,16,8,9,15,185,106,4183,20,3,10,4,15,0,2017,2025
+916750,Endri Celaj,37624,FC Metaloglobus Bucharest,Centre-Forward,22,Albania,77,9,7,14,284,36,1461,3,1,0,0,5,6,2017,2026
 1432635,Ianys Neculai,312,FC Dinamo 1948,Right-Back,18,Romania,0,1,1,3,36,20,1443,1,1,0,0,2,0,2025,2025
-1317470,Peter Maapia,312,FC Dinamo 1948,Attacking Midfield,20,Nigeria,0,3,4,4,62,28,1319,2,6,0,0,2,0,2024,2026
-1109602,Casian Soare,312,FC Dinamo 1948,Central Midfield,19,Romania,0,7,4,7,116,56,3156,3,0,0,0,0,0,2017,2026
+292488,Ely Fernandes,37624,FC Metaloglobus Bucharest,Left Winger,35,Cape Verde,10,14,11,14,403,239,13523,23,12,58,19,23,0,2011,2025
+1166399,Raul Stanciu,455,FC Rapid 1923,Left Winger,19,Romania,0,3,4,9,132,61,3700,5,1,0,0,6,18,2023,2025
+1317470,Peter Maapia,312,FC Dinamo 1948,Attacking Midfield,20,Nigeria,0,3,4,4,64,30,1467,4,6,0,0,3,0,2024,2026
 1317469,Sanusi Hussaini,312,FC Dinamo 1948,Right Midfield,20,Nigeria,0,3,4,3,29,2,210,1,0,0,0,0,0,2024,2026
-1229556,Andrei Ionică,312,FC Dinamo 1948,Left Winger,21,Romania,0,4,4,4,44,25,883,1,0,0,0,0,0,2021,2025
-394435,Sheriff Sinyan,455,FC Rapid 1923,Centre-Back,30,The Gambia,18,13,9,23,523,186,13462,12,4,78,24,13,12,2014,2026
 1413244,Ahmed Bala,312,FC Dinamo 1948,Left Midfield,21,Nigeria,0,3,4,3,9,3,249,0,0,0,0,0,0,2024,2026
-692349,Andrei Coubiș,6429,FC Universitatea Cluj,Centre-Back,22,Romania,4,8,9,29,333,184,14853,5,8,14,3,31,19,2019,2026
-1474455,Raji Ayomide,6429,FC Universitatea Cluj,Defensive Midfield,20,Nigeria,0,2,3,7,37,17,816,0,0,0,0,5,0,2025,2026
-980610,Andrei Stoica,41278,ACSC FC Arges,Attacking Midfield,20,Romania,0,6,3,6,51,7,306,0,0,0,0,0,1,2021,2026
-1360505,Quadri Taiwo,6429,FC Universitatea Cluj,Centre-Forward,20,Nigeria,0,3,4,10,63,12,627,10,0,1,1,3,0,2024,2026
+394435,Sheriff Sinyan,455,FC Rapid 1923,Centre-Back,30,The Gambia,18,13,9,23,525,190,13658,12,4,78,24,14,12,2014,2026
+709671,Răzvan Pașcalău,312,FC Dinamo 1948,Centre-Back,22,Romania,0,8,8,21,295,143,11415,5,0,5,2,33,18,2019,2026
+1474455,Raji Ayomide,6429,FC Universitatea Cluj,Defensive Midfield,20,Nigeria,0,2,3,7,39,19,906,0,0,0,0,5,0,2025,2026
+1109602,Casian Soare,312,FC Dinamo 1948,Central Midfield,19,Romania,0,7,4,7,116,56,3156,3,0,0,0,0,0,2017,2026
+1360505,Quadri Taiwo,6429,FC Universitatea Cluj,Centre-Forward,20,Nigeria,0,3,4,10,65,14,784,14,0,1,1,3,0,2024,2026
+692349,Andrei Coubiș,6429,FC Universitatea Cluj,Centre-Back,22,Romania,4,8,9,29,336,187,15060,6,9,15,4,32,19,2019,2026
+1229556,Andrei Ionică,312,FC Dinamo 1948,Left Winger,21,Romania,0,4,4,4,44,25,883,1,0,0,0,0,0,2021,2025
 1184701,Bogdan Bușe,41278,ACSC FC Arges,Centre-Back,18,Romania,0,5,3,7,41,7,455,2,0,0,0,0,5,2021,2026
-434711,Jakov Blagaic,41278,ACSC FC Arges,Attacking Midfield,26,Croatia,24,11,8,17,315,196,10552,23,23,47,18,14,9,2015,2026
 858489,Mario Aioanei,29831,FCV Farul Constanta,Right-Back,21,Romania,0,6,7,11,124,69,4688,1,4,1,1,4,27,2021,2026
-241343,Petrișor Petrescu,41278,ACSC FC Arges,Right Winger,33,Romania,0,12,5,8,372,303,19043,36,31,33,9,48,0,2010,2026
-1163780,Ianis Croitoru,29831,FCV Farul Constanta,Left-Back,20,Romania,0,5,4,5,45,8,405,0,0,0,0,0,0,2022,2026
+980610,Andrei Stoica,41278,ACSC FC Arges,Attacking Midfield,20,Romania,0,6,3,6,51,7,306,0,0,0,0,0,1,2021,2026
+241343,Petrișor Petrescu,41278,ACSC FC Arges,Right Winger,33,Romania,0,12,5,8,374,305,19194,36,31,33,9,49,0,2010,2026
+434711,Jakov Blagaic,41278,ACSC FC Arges,Attacking Midfield,26,Croatia,24,11,8,17,317,196,10552,23,23,47,18,14,9,2015,2026
+1106358,Andrei Dumitru,8818,FC Botosani,Attacking Midfield,19,Romania,0,5,4,11,148,53,2574,2,4,5,2,2,8,2022,2026
 1082105,Darius Păun,29831,FCV Farul Constanta,Left Winger,19,Romania,0,3,4,5,8,4,233,0,0,0,0,0,2,2022,2025
-1106358,Andrei Dumitru,8818,FC Botosani,Attacking Midfield,19,Romania,0,5,4,11,146,51,2545,2,4,5,2,2,8,2022,2026
-1412044,Nicolas Constantinescu,29831,FCV Farul Constanta,Centre-Forward,19,Romania,16,2,2,5,55,8,720,3,1,0,0,1,0,2025,2026
-391445,Marco Dulca,9465,Petrolul Ploiesti,Defensive Midfield,27,Romania,88,13,8,25,487,263,16703,7,6,91,20,53,26,2014,2026
-598377,Diogo Rodrigues,9465,Petrolul Ploiesti,Right-Back,26,Portugal,0,9,8,16,304,179,13851,10,14,16,5,11,0,2017,2025
+1412044,Nicolas Constantinescu,29831,FCV Farul Constanta,Centre-Forward,19,Romania,16,2,2,5,57,10,778,3,1,0,0,2,0,2025,2026
 436072,Mihai Eșanu,9465,Petrolul Ploiesti,Goalkeeper,27,Romania,0,11,9,8,345,68,6145,0,0,0,0,6,0,2015,2025
-641989,Denis Radu,9465,Petrolul Ploiesti,Right Winger,23,Romania,0,9,4,14,315,152,9297,3,6,22,6,11,4,2018,2026
+1163780,Ianis Croitoru,29831,FCV Farul Constanta,Left-Back,20,Romania,0,5,4,5,45,8,405,0,0,0,0,0,0,2022,2026
 925688,David Ilie,9465,Petrolul Ploiesti,Centre-Forward,21,Romania,87,6,6,5,98,10,378,1,0,0,0,0,0,2021,2026
+641989,Denis Radu,9465,Petrolul Ploiesti,Right Winger,23,Romania,0,9,4,14,318,153,9362,3,6,22,6,11,4,2018,2026
+391445,Marco Dulca,9465,Petrolul Ploiesti,Defensive Midfield,27,Romania,88,13,8,25,490,264,16719,7,6,91,20,53,26,2014,2026
+598377,Diogo Rodrigues,9465,Petrolul Ploiesti,Right-Back,26,Portugal,0,9,8,16,304,179,13851,10,14,16,5,11,0,2017,2025
+1263857,Adrian Dragoș,952,UTA Arad,Centre-Forward,19,Romania,0,4,2,3,32,9,118,0,0,0,0,0,0,2023,2026
 1163368,Răzvan Joldea,952,UTA Arad,Right-Back,20,Romania,0,3,4,4,9,1,90,0,0,0,0,0,0,2022,2025
 671627,Tudor Telcean,952,UTA Arad,Centre-Back,24,Romania,0,11,8,8,257,109,7979,5,5,0,0,15,9,2015,2026
-1427989,Bogdan Murgu,952,UTA Arad,Centre-Back,20,Romania,0,0,0,0,0,0,0,0,0,0,0,0,0,,
-1156313,Răzvan Ristin,952,UTA Arad,Defensive Midfield,21,Romania,0,4,4,5,50,21,1149,0,0,0,0,0,0,2022,2025
-1263857,Adrian Dragoș,952,UTA Arad,Centre-Forward,19,Romania,0,4,2,3,32,9,118,0,0,0,0,0,0,2023,2026
 1433225,Alexandru Crainic,952,UTA Arad,Right Winger,19,Romania,0,2,2,2,4,2,113,1,0,0,0,0,0,2025,2026
-1454253,David Ștef,952,UTA Arad,Right Winger,19,Romania,0,2,2,1,3,1,90,0,0,0,0,0,0,2025,2026
-1067293,Ramon Erdei,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,18,Romania,96,4,3,6,66,13,466,0,1,0,0,0,7,2022,2026
+1156313,Răzvan Ristin,952,UTA Arad,Defensive Midfield,21,Romania,0,4,4,5,50,21,1149,0,0,0,0,0,0,2022,2025
+1427989,Bogdan Murgu,952,UTA Arad,Centre-Back,20,Romania,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+1433546,Cristian Hodor,40843,FC Voluntari,Goalkeeper,18,Romania,0,1,1,4,34,0,0,0,0,0,0,0,0,2025,2025
 1062273,Szilard Balogh,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,19,Romania,0,5,4,6,41,28,1354,5,1,0,0,0,0,2022,2026
 1163074,Botond Karandi,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,19,Romania,0,3,3,4,62,7,348,0,0,0,0,1,0,2023,2025
-1433546,Cristian Hodor,40843,FC Voluntari,Goalkeeper,18,Romania,0,1,1,4,34,0,0,0,0,0,0,0,0,2025,2025
-1345950,Mihai Moșoiu,40843,FC Voluntari,Central Midfield,19,Romania,0,2,2,4,18,2,134,0,0,0,0,0,0,2024,2026
-951468,Giovanni Petcu,40843,FC Voluntari,Attacking Midfield,25,Romania,0,6,4,6,121,71,4370,3,2,0,0,6,0,2020,2025
-1293024,Cristian Gyulai,54585,Sepsi OSK Sf. Gheorghe,Left Winger,20,Romania,0,2,2,3,56,5,272,0,0,0,0,0,0,2024,2025
 1433547,Mihai Nedelcu,40843,FC Voluntari,Central Midfield,19,Romania,0,1,1,4,35,0,0,0,0,0,0,0,0,2025,2025
+951468,Giovanni Petcu,40843,FC Voluntari,Attacking Midfield,25,Romania,0,6,4,6,121,71,4370,3,2,0,0,6,0,2020,2025
 901148,Daniel Vereguț,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,23,Romania,0,7,5,9,115,20,1781,1,0,0,0,0,0,2020,2026
-963964,Ștefan Bană,40812,Universitatea Craiova,Right Winger,21,Romania,0,7,5,17,177,70,3468,9,6,60,17,8,10,2018,2026
-937042,Darius Fălcușan,40812,Universitatea Craiova,Centre-Back,20,Romania,25,6,7,21,272,123,9270,7,1,4,2,6,43,2021,2026
-824915,Mihai Lixandru,301,FCSB,Central Midfield,25,Romania,16,7,5,16,314,211,14256,9,7,81,24,30,8,2020,2026
-1011492,Gabriel Gheorghe,41278,ACSC FC Arges,Attacking Midfield,20,Romania,29,6,2,8,159,40,1722,1,3,4,1,1,13,2021,2026
-820240,Dominik Șoptirean,7769,CFR Cluj,Centre-Back,21,Romania,0,7,7,13,128,72,5183,4,1,2,1,7,4,2020,2026
-454888,Igor Savic,7769,CFR Cluj,Defensive Midfield,25,Bosnia-Herzegovina,81,11,7,20,435,319,24256,34,14,22,4,62,24,2016,2026
+1454253,David Ștef,952,UTA Arad,Right Winger,19,Romania,0,2,2,1,3,1,90,0,0,0,0,0,0,2025,2026
+1293024,Cristian Gyulai,54585,Sepsi OSK Sf. Gheorghe,Left Winger,20,Romania,0,2,2,3,56,5,272,0,0,0,0,0,0,2024,2025
+1067293,Ramon Erdei,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,18,Romania,96,4,3,6,66,13,466,0,1,0,0,0,7,2022,2026
+1011492,Gabriel Gheorghe,41278,ACSC FC Arges,Attacking Midfield,20,Romania,29,6,2,8,162,41,1738,1,3,4,1,1,13,2021,2026
+937042,Darius Fălcușan,40812,Universitatea Craiova,Centre-Back,20,Romania,25,6,7,21,274,125,9450,7,1,4,2,7,43,2021,2026
+963964,Ștefan Bană,40812,Universitatea Craiova,Right Winger,21,Romania,0,7,5,17,178,71,3555,10,8,62,18,8,10,2018,2026
+820240,Dominik Șoptirean,7769,CFR Cluj,Centre-Back,21,Romania,0,7,7,13,130,73,5184,4,1,2,1,7,4,2020,2026
+1345950,Mihai Moșoiu,40843,FC Voluntari,Central Midfield,19,Romania,0,2,2,4,18,2,134,0,0,0,0,0,0,2024,2026
+666434,Gabriel Dănuleasă,29831,FCV Farul Constanta,Centre-Back,23,Romania,0,9,6,21,291,86,5227,2,1,3,1,10,26,2018,2026
+824915,Mihai Lixandru,301,FCSB,Central Midfield,25,Romania,16,7,5,16,317,214,14469,9,7,83,24,31,8,2020,2026
 863544,Tudor Cociș,7769,CFR Cluj,Centre-Forward,22,Romania,0,7,8,9,68,14,810,1,0,0,0,0,1,2020,2026
-666434,Gabriel Dănuleasă,29831,FCV Farul Constanta,Centre-Back,23,Romania,0,9,6,21,289,85,5216,2,1,3,1,10,26,2018,2026
 75164,Dávid Sigér,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,35,Hungary,18,16,6,21,655,398,27968,32,23,58,11,62,14,2010,2025
-620963,Riad Suta,8818,FC Botosani,Centre-Back,24,Bosnia-Herzegovina,6,10,7,13,308,231,19936,11,1,2,2,22,4,2017,2026
-1197481,Alexandru Glodean,40812,Universitatea Craiova,Goalkeeper,18,Romania,33,4,4,10,81,8,720,0,0,0,0,0,6,2023,2026
-205757,Dejan Iliev,455,FC Rapid 1923,Goalkeeper,31,North Macedonia,1,15,11,43,678,165,14263,0,0,0,0,12,14,2011,2025
-289061,Alessandro Murgia,6429,FC Universitatea Cluj,Central Midfield,29,Italy,11,14,7,25,694,361,24014,36,24,126,30,61,22,2013,2026
-345881,Miguel Silva,4959,SC Otelul Galati,Left-Back,30,Portugal,28,13,7,16,414,190,13046,11,5,68,17,41,0,2014,2026
-723836,Adrian Caragea,312,FC Dinamo 1948,Left Winger,20,Romania,0,8,5,16,237,128,5652,22,4,16,5,10,23,2019,2026
-1432806,Eduard Moga,6429,FC Universitatea Cluj,Central Midfield,22,Romania,0,3,2,8,40,5,187,0,0,0,0,1,0,2024,2026
+1197481,Alexandru Glodean,40812,Universitatea Craiova,Goalkeeper,18,Romania,33,4,4,10,83,8,720,0,0,0,0,0,6,2023,2026
+620963,Riad Suta,8818,FC Botosani,Centre-Back,24,Bosnia-Herzegovina,6,10,7,13,310,233,20116,11,1,2,2,22,4,2017,2026
+454888,Igor Savic,7769,CFR Cluj,Defensive Midfield,25,Bosnia-Herzegovina,81,11,7,20,438,322,24526,34,14,22,4,62,24,2016,2026
+345881,Miguel Silva,4959,SC Otelul Galati,Left-Back,30,Portugal,28,13,7,16,416,192,13226,11,6,71,18,41,0,2014,2026
 1341645,Rareș Fotin,29831,FCV Farul Constanta,Centre-Back,18,Romania,14,3,1,6,45,18,1354,0,0,0,0,1,17,2024,2026
+723836,Adrian Caragea,312,FC Dinamo 1948,Left Winger,20,Romania,0,8,5,16,239,130,5787,22,4,16,5,10,23,2019,2026
+1432806,Eduard Moga,6429,FC Universitatea Cluj,Central Midfield,22,Romania,0,3,2,8,40,5,187,0,0,0,0,1,0,2024,2026
+289061,Alessandro Murgia,6429,FC Universitatea Cluj,Central Midfield,29,Italy,11,14,7,25,697,364,24213,36,24,131,32,61,22,2013,2026
 1317274,Alexandru Telehoi,29831,FCV Farul Constanta,Left-Back,17,Romania,83,2,2,6,32,11,555,0,0,0,0,1,11,2024,2025
-974331,Bogdan Marian,9465,Petrolul Ploiesti,Left-Back,21,Romania,0,5,3,5,80,13,702,1,1,3,1,4,0,2021,2026
-953522,Ime Ndon,952,UTA Arad,Left Winger,23,Nigeria,0,6,5,14,172,87,4561,14,9,0,0,7,0,2021,2026
-744075,Otto Hindrich,7769,CFR Cluj,Goalkeeper,22,Romania,0,8,4,19,342,166,14539,0,0,0,0,12,19,2019,2026
-712087,Léo Bolgado,455,FC Rapid 1923,Centre-Back,26,Brazil,4,8,9,13,264,185,14858,16,2,77,23,40,0,2019,2026
+205757,Dejan Iliev,455,FC Rapid 1923,Goalkeeper,31,North Macedonia,1,15,11,43,678,165,14263,0,0,0,0,12,14,2011,2025
+974331,Bogdan Marian,9465,Petrolul Ploiesti,Left-Back,21,Romania,0,5,3,5,82,15,879,1,1,3,1,4,0,2021,2026
+953522,Ime Ndon,952,UTA Arad,Left Winger,23,Nigeria,0,6,5,14,174,89,4725,14,9,0,0,7,0,2021,2026
+478347,Marian Huja,7769,CFR Cluj,Centre-Back,27,Portugal,2,11,6,16,320,211,17081,11,4,69,26,39,1,2016,2026
+712087,Léo Bolgado,455,FC Rapid 1923,Centre-Back,26,Brazil,4,8,9,13,265,185,14858,16,2,77,23,40,0,2019,2026
+975233,George Leață,7769,CFR Cluj,Attacking Midfield,22,Romania,0,6,4,9,149,74,3581,10,5,0,0,2,4,2021,2026
 111426,Benjamin Siegrist,455,FC Rapid 1923,Goalkeeper,34,Switzerland,69,19,11,35,671,294,26306,0,1,1,0,12,30,2007,2025
-1021816,Razak Abdullah,7769,CFR Cluj,Attacking Midfield,21,Ghana,0,4,3,6,38,13,782,1,0,0,0,1,4,2021,2025
-975233,George Leață,7769,CFR Cluj,Attacking Midfield,22,Romania,0,6,4,9,147,71,3468,9,5,0,0,2,4,2021,2026
-478347,Marian Huja,7769,CFR Cluj,Centre-Back,27,Portugal,2,11,6,15,318,208,16811,10,4,69,26,39,1,2016,2026
-1158642,Vlad Bădău,7769,CFR Cluj,Attacking Midfield,19,Romania,0,4,4,6,61,11,235,0,0,0,0,0,0,2022,2025
+744075,Otto Hindrich,7769,CFR Cluj,Goalkeeper,22,Romania,0,8,4,19,344,168,14719,0,0,0,0,12,19,2019,2026
 1006106,David Ciubăncan,952,UTA Arad,Centre-Forward,22,Romania,98,7,5,7,76,10,386,2,0,1,0,1,0,2020,2026
-1154107,Vadym Kyrychenko,312,FC Dinamo 1948,Centre-Forward,20,Ukraine,0,3,4,6,61,28,1461,7,0,0,0,0,0,2022,2026
+1154107,Vadym Kyrychenko,312,FC Dinamo 1948,Centre-Forward,20,Ukraine,0,3,4,6,63,31,1510,7,0,0,0,1,0,2022,2026
+1021816,Razak Abdullah,7769,CFR Cluj,Attacking Midfield,21,Ghana,0,4,3,6,38,13,782,1,0,0,0,1,4,2021,2025
+1158642,Vlad Bădău,7769,CFR Cluj,Attacking Midfield,19,Romania,0,4,4,6,61,11,235,0,0,0,0,0,0,2022,2025
 272638,Jérôme Onguéné,9465,Petrolul Ploiesti,Centre-Back,28,Cameroon,0,14,13,34,693,272,21095,17,7,76,18,41,43,2012,2025
-536519,Virgiliu Postolachi,6429,FC Universitatea Cluj,Centre-Forward,26,Moldova,93,10,10,30,451,281,13963,35,11,189,63,17,42,2017,2026
-816946,Matei Moraru,6429,FC Universitatea Cluj,Left Winger,21,Romania,31,8,4,16,230,45,2489,8,0,0,0,0,15,2018,2026
 1195481,Theo Yolou,7769,CFR Cluj,Centre-Forward,21,Cote d'Ivoire,0,4,5,8,53,22,1086,1,1,0,0,2,0,2023,2026
-723823,Vlad Rafailă,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,34,9,8,15,193,80,6624,0,0,0,0,2,35,2016,2026
-983944,Șerban Tomache,8818,FC Botosani,Goalkeeper,22,Romania,94,3,2,4,88,1,90,0,0,0,0,0,0,2022,2025
+816946,Matei Moraru,6429,FC Universitatea Cluj,Left Winger,21,Romania,31,8,4,16,230,45,2489,8,0,0,0,0,15,2018,2026
 929263,David Ciurel,8818,FC Botosani,Central Midfield,21,Romania,75,6,3,7,134,20,1247,4,0,0,0,3,0,2020,2025
 1569146,Alexandru Popescu,952,UTA Arad,Goalkeeper,18,Romania,12,0,0,0,0,0,0,0,0,0,0,0,0,,
-1101450,Codrin Cărăușu,8818,FC Botosani,Right Winger,21,Romania,0,6,3,5,86,25,954,1,0,5,0,1,6,2021,2026
-992846,Ștefan Ioniță,40843,FC Voluntari,Centre-Back,19,Romania,0,6,4,10,144,36,2167,0,0,0,0,1,26,2021,2026
+723823,Vlad Rafailă,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,34,9,8,15,196,80,6624,0,0,0,0,2,35,2016,2026
 1046110,Nikita Sarpe,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,18,Moldova,0,5,2,6,67,32,1297,2,0,0,0,3,14,2022,2026
+992846,Ștefan Ioniță,40843,FC Voluntari,Centre-Back,19,Romania,0,6,4,10,145,36,2167,0,0,0,0,1,26,2021,2026
+536519,Virgiliu Postolachi,6429,FC Universitatea Cluj,Centre-Forward,26,Moldova,93,10,11,30,451,282,14028,35,11,189,63,17,42,2017,2026
 1248149,Răzvan Bârstan,7769,CFR Cluj,Centre-Forward,19,Romania,82,3,2,3,7,3,270,0,0,0,0,0,0,2022,2024
-1154775,Luca Nagy,6429,FC Universitatea Cluj,Left Winger,20,Romania,0,3,4,11,69,6,324,0,0,0,0,0,2,2023,2026
-928478,Costel Avram,7769,CFR Cluj,Centre-Back,24,Romania,78,5,5,9,208,31,2165,1,0,0,0,3,0,2021,2025
-186744,Bogdan Țîru,29831,FCV Farul Constanta,Centre-Back,32,Romania,15,17,7,28,646,400,31759,17,6,53,13,88,35,2010,2026
+983944,Șerban Tomache,8818,FC Botosani,Goalkeeper,22,Romania,94,3,2,4,88,1,90,0,0,0,0,0,0,2022,2025
 1434258,Mátyás Bartha,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,18,Romania,0,2,1,4,39,1,45,0,0,0,0,0,0,2025,2026
-1447367,Mihnea Toader,312,FC Dinamo 1948,Centre-Back,20,Romania,24,2,2,5,58,2,26,0,0,0,0,0,0,2025,2026
-672895,Alexandru Silveanu,41278,ACSC FC Arges,Goalkeeper,22,Romania,0,7,6,8,127,27,2355,0,1,0,0,3,2,2018,2025
-1030701,Tobias Horn,6429,FC Universitatea Cluj,Left-Back,22,Romania,0,5,5,8,101,27,1118,2,3,0,0,1,0,2022,2026
+1447367,Mihnea Toader,312,FC Dinamo 1948,Centre-Back,20,Romania,24,2,2,5,60,2,26,0,0,0,0,0,0,2025,2026
+1154775,Luca Nagy,6429,FC Universitatea Cluj,Left Winger,20,Romania,0,3,4,11,71,8,338,0,0,0,0,0,2,2023,2026
+1030701,Tobias Horn,6429,FC Universitatea Cluj,Left-Back,22,Romania,0,5,5,8,103,28,1142,2,3,0,0,1,0,2022,2026
+1101450,Codrin Cărăușu,8818,FC Botosani,Right Winger,21,Romania,0,6,3,5,86,25,954,1,0,5,0,1,6,2021,2026
+426724,Marian Aioani,455,FC Rapid 1923,Goalkeeper,26,Romania,16,12,3,20,512,323,28422,0,2,0,0,22,12,2015,2026
 1040566,David Barbu,40812,Universitatea Craiova,Centre-Forward,20,Romania,0,5,5,12,144,70,2507,9,2,23,12,3,16,2022,2026
-271289,Laurențiu Popescu,40812,Universitatea Craiova,Goalkeeper,29,Romania,21,14,4,16,511,182,16363,0,2,0,0,20,2,2012,2026
-568617,Răzvan Sava,40812,Universitatea Craiova,Goalkeeper,24,Romania,90,10,11,25,430,163,14481,0,1,0,0,7,30,2017,2026
-726033,Pavlo Isenko,40812,Universitatea Craiova,Goalkeeper,23,Ukraine,77,8,2,15,244,124,11073,0,1,0,0,14,7,2019,2026
-970199,Alexandru Maxim,40812,Universitatea Craiova,Goalkeeper,19,Romania,1,6,5,14,149,56,4785,0,0,0,0,4,14,2021,2026
-553772,Oleksandr Romanchuk,40812,Universitatea Craiova,Centre-Back,26,Ukraine,3,9,4,14,277,217,16183,10,9,56,15,34,4,2017,2026
-418219,Vladimir Screciu,40812,Universitatea Craiova,Centre-Back,26,Romania,6,12,3,28,609,314,23352,5,4,65,13,37,35,2015,2026
-421927,Adrian Rus,40812,Universitatea Craiova,Centre-Back,30,Romania,28,12,6,27,544,298,22913,17,8,44,14,66,30,2015,2026
-425733,Nikola Stevanovic,40812,Universitatea Craiova,Centre-Back,28,Serbia,24,12,7,20,487,232,17293,7,2,83,15,48,3,2015,2026
-213195,Nicușor Bancu,40812,Universitatea Craiova,Left-Back,34,Romania,11,16,2,21,755,580,47559,44,78,149,39,141,55,2011,2026
-1052377,Juraj Badelj,40812,Universitatea Craiova,Centre-Back,23,Croatia,0,5,3,13,209,95,6970,1,1,13,2,11,2,2022,2026
-796895,Baptiste Roux,40812,Universitatea Craiova,Centre-Back,26,France,5,10,6,15,316,198,14104,10,3,46,11,29,0,2017,2026
-502671,Anzor Mekvabishvili,40812,Universitatea Craiova,Defensive Midfield,25,Georgia,0,12,3,25,414,326,22469,18,26,113,35,41,94,2015,2026
-295810,Alexandru Cicâldău,40812,Universitatea Craiova,Central Midfield,29,Romania,20,14,8,31,629,445,32252,71,53,281,93,50,65,2013,2026
-882003,Ronaldo Webster,40812,Universitatea Craiova,Left-Back,25,Jamaica,31,10,5,21,350,202,14037,19,15,7,3,23,12,2017,2026
-740789,Carlos Mora,40812,Universitatea Craiova,Right Midfield,25,Costa Rica,17,8,2,27,445,346,21911,45,58,87,32,43,28,2019,2026
-433976,Tudor Băluță,40812,Universitatea Craiova,Defensive Midfield,27,Romania,8,12,10,38,624,271,18187,19,16,195,49,44,32,2015,2026
-597165,Samuel Teles,40812,Universitatea Craiova,Central Midfield,29,Portugal,23,11,5,15,384,223,13385,18,10,221,68,40,0,2016,2026
-357165,João Lameira,4959,SC Otelul Galati,Defensive Midfield,27,Portugal,0,14,10,21,343,228,15523,13,9,131,30,47,34,2013,2026
-216661,Alexandru Crețu,40812,Universitatea Craiova,Defensive Midfield,34,Romania,4,17,6,23,720,514,35075,34,31,187,64,86,22,2010,2026
-1002053,Sebastian Șerban,40812,Universitatea Craiova,Attacking Midfield,20,Romania,0,4,2,4,17,0,0,0,0,0,0,0,0,2021,2026
-1112690,David Matei,40812,Universitatea Craiova,Right Winger,20,Romania,30,5,2,16,186,134,8026,11,12,70,22,15,27,2022,2026
-686232,Ștefan Baiaram,40812,Universitatea Craiova,Left Winger,23,Romania,10,9,2,17,409,291,16493,55,27,266,110,41,25,2018,2026
-518451,Assad Al-Hamlawi,40812,Universitatea Craiova,Centre-Forward,25,Palestine,9,10,8,20,309,201,11987,69,7,151,52,24,6,2016,2026
-830113,Steven Nsimba,40812,Universitatea Craiova,Centre-Forward,30,France,7,10,10,14,316,232,14947,72,22,157,79,28,0,2017,2026
-804661,Simon Elisor,40812,Universitatea Craiova,Centre-Forward,27,France,22,9,11,15,295,235,14374,59,15,189,89,27,0,2018,2026
-1017320,Mihnea Rădulescu,40812,Universitatea Craiova,Right Winger,21,Romania,18,6,3,16,202,97,4840,13,7,69,24,5,18,2021,2026
-445517,Heri Tavares,40812,Universitatea Craiova,Left Winger,29,Cape Verde,19,13,9,20,459,357,20933,65,38,298,96,56,25,2011,2026
-937066,Luca Băsceanu,40812,Universitatea Craiova,Left Winger,20,Romania,29,6,4,17,193,96,4081,12,5,65,28,6,28,2021,2026
-505999,Monday Etim,40812,Universitatea Craiova,Right Winger,27,Nigeria,12,10,6,16,340,229,14638,47,27,194,72,28,0,2016,2026
-972439,Alexandru Iamandache,40812,Universitatea Craiova,Left Winger,27,Romania,14,7,4,9,112,41,2839,12,5,0,0,2,0,2020,2026
-315468,Relu Stoian,40812,Universitatea Craiova,Goalkeeper,29,Romania,0,15,10,14,433,179,16081,0,0,0,0,18,1,2012,2026
-685805,João Gonçalves,40812,Universitatea Craiova,Goalkeeper,24,Portugal,32,8,5,8,251,73,6586,0,0,0,0,6,1,2019,2026
-1179005,Denys Muntean,40812,Universitatea Craiova,Right Winger,17,Romania,0,4,2,11,66,9,353,2,1,0,0,0,6,2023,2026
-73731,Silviu Lung Jr.,40812,Universitatea Craiova,Goalkeeper,36,Romania,1,20,6,22,948,487,43228,0,1,0,0,64,17,2006,2025
-1158577,Matei Goga,40812,Universitatea Craiova,Goalkeeper,18,Romania,31,4,4,8,58,18,1560,0,0,0,0,0,1,2022,2025
-567143,Basilio Ndong,40812,Universitatea Craiova,Left-Back,26,Equatorial Guinea,0,11,6,20,415,225,16271,5,18,16,5,32,57,2016,2026
-320637,Florin Ștefan,40812,Universitatea Craiova,Left-Back,29,Romania,2,14,8,18,529,305,22130,19,21,63,17,38,17,2013,2026
-324214,Vasile Mogoș,40812,Universitatea Craiova,Right-Back,32,Romania,19,17,14,27,702,475,36494,39,17,176,49,38,8,2010,2026
-869983,Denis Benga,40812,Universitatea Craiova,Left-Back,19,Romania,26,7,3,12,147,29,1840,1,0,2,0,0,20,2020,2026
-992842,Florin Gașpăr,40812,Universitatea Craiova,Right-Back,17,Romania,36,6,5,15,206,105,7858,5,5,0,0,6,51,2021,2026
-229007,Lyes Houri,40812,Universitatea Craiova,Attacking Midfield,29,France,14,16,12,30,651,376,23312,36,38,59,20,60,14,2011,2026
-1317253,Robert Ristoiu,40812,Universitatea Craiova,Central Midfield,17,Romania,35,4,2,5,22,11,594,0,0,0,0,1,2,2022,2026
-610749,Luis Paradela,40812,Universitatea Craiova,Left Winger,28,Cuba,0,9,6,30,426,270,18006,62,46,46,14,58,45,2018,2026
-418235,Jovan Marković,8818,FC Botosani,Centre-Forward,25,Romania,9,12,6,13,462,241,9657,46,19,196,69,21,23,2015,2026
-271282,Andrei Ivan,40812,Universitatea Craiova,Centre-Forward,28,Romania,0,15,8,37,688,453,30336,87,49,301,113,51,39,2012,2026
-1067295,Mihai Ninaci,40812,Universitatea Craiova,Centre-Forward,16,Romania,34,4,2,7,56,15,987,4,1,0,0,1,10,2021,2024
-1405281,Teodor Luță,40812,Universitatea Craiova,Centre-Forward,18,Romania,37,1,2,2,5,0,0,0,0,0,0,0,0,2024,2024
-426724,Marian Aioani,455,FC Rapid 1923,Goalkeeper,26,Romania,16,12,3,20,508,322,28332,0,2,0,0,22,12,2015,2026
-462699,Franz Stolz,455,FC Rapid 1923,Goalkeeper,24,Austria,0,11,7,12,345,129,11492,0,1,0,0,15,6,2016,2026
-1054635,Adrian Briciu,455,FC Rapid 1923,Goalkeeper,18,Romania,31,5,4,6,79,13,1064,0,0,0,0,1,1,2022,2026
-1008258,Bogdan Ungureanu,455,FC Rapid 1923,Goalkeeper,19,Romania,99,6,3,9,211,92,7786,0,0,0,0,4,41,2021,2026
-410897,Lars Kramer,455,FC Rapid 1923,Centre-Back,27,Netherlands,6,12,11,24,488,314,26495,27,10,89,25,52,6,2015,2026
-723826,Andrei Borza,455,FC Rapid 1923,Left-Back,20,Romania,0,8,4,17,296,204,14834,13,16,101,25,16,49,2019,2026
-421258,Alexandru Pașcanu,455,FC Rapid 1923,Centre-Back,28,Romania,5,12,8,23,505,341,28224,23,6,111,36,58,42,2015,2026
-536130,Răzvan Onea,455,FC Rapid 1923,Right-Back,28,Romania,19,11,4,6,342,224,17511,5,10,85,24,38,0,2016,2026
-428593,Denis Ciobotariu,455,FC Rapid 1923,Centre-Back,28,Romania,13,12,8,19,483,284,23199,20,4,70,17,34,15,2015,2026
-271284,Cristian Manea,455,FC Rapid 1923,Right-Back,29,Romania,23,15,6,26,753,406,32116,18,22,76,29,36,63,2012,2026
-716054,Cristian Ignat,7769,CFR Cluj,Centre-Back,23,Romania,21,9,5,13,271,111,8374,3,0,32,8,12,35,2018,2026
-405501,Filip Blazek,455,FC Rapid 1923,Centre-Back,27,Slovakia,0,12,10,23,434,257,19662,17,11,44,12,53,9,2015,2026
-809240,Robert Sălceanu,455,FC Rapid 1923,Left-Back,22,Romania,21,7,5,12,260,157,11919,1,2,16,4,20,14,2020,2026
+186744,Bogdan Țîru,29831,FCV Farul Constanta,Centre-Back,32,Romania,15,17,7,29,650,401,31794,17,6,53,13,88,35,2010,2026
+672895,Alexandru Silveanu,41278,ACSC FC Arges,Goalkeeper,22,Romania,0,7,6,8,127,27,2355,0,1,0,0,3,2,2018,2025
+462699,Franz Stolz,455,FC Rapid 1923,Goalkeeper,24,Austria,0,11,7,12,347,129,11492,0,1,0,0,15,6,2016,2026
+1054635,Adrian Briciu,455,FC Rapid 1923,Goalkeeper,18,Romania,31,5,4,6,81,14,1154,0,0,0,0,1,1,2022,2026
+723826,Andrei Borza,455,FC Rapid 1923,Left-Back,20,Romania,0,8,4,17,298,205,14860,13,16,102,26,16,49,2019,2026
+410897,Lars Kramer,455,FC Rapid 1923,Centre-Back,27,Netherlands,6,12,11,24,492,318,26810,27,10,89,25,52,6,2015,2026
+928478,Costel Avram,7769,CFR Cluj,Centre-Back,24,Romania,78,5,5,9,208,31,2165,1,0,0,0,3,0,2021,2025
+428593,Denis Ciobotariu,455,FC Rapid 1923,Centre-Back,28,Romania,13,12,8,19,487,285,23259,20,4,70,17,35,15,2015,2026
+421258,Alexandru Pașcanu,455,FC Rapid 1923,Centre-Back,28,Romania,5,12,8,23,509,344,28395,23,6,111,36,58,42,2015,2026
+1008258,Bogdan Ungureanu,455,FC Rapid 1923,Goalkeeper,19,Romania,99,6,3,9,215,95,8056,0,0,0,0,4,41,2021,2026
+536130,Răzvan Onea,455,FC Rapid 1923,Right-Back,28,Romania,19,11,4,6,346,227,17781,6,12,86,25,39,0,2016,2026
+716054,Cristian Ignat,7769,CFR Cluj,Centre-Back,23,Romania,21,9,5,13,274,112,8464,4,0,35,10,12,35,2018,2026
 1411377,Patrick Popa,455,FC Rapid 1923,Left-Back,18,Romania,0,2,2,4,16,2,210,0,0,0,0,0,0,2024,2025
-370894,Tobias Christensen,455,FC Rapid 1923,Attacking Midfield,25,Norway,17,13,9,24,472,362,22813,45,47,296,100,48,47,2014,2026
-82657,Christopher Braun,7769,CFR Cluj,Right-Back,35,Germany,47,19,12,26,713,528,40565,10,22,38,11,77,0,2007,2026
-568578,Constantin Grameni,455,FC Rapid 1923,Central Midfield,23,Romania,8,10,4,16,351,253,16417,20,19,110,38,25,49,2017,2026
-710079,Cătălin Vulturar,455,FC Rapid 1923,Defensive Midfield,22,Romania,15,11,8,23,389,203,14462,10,14,22,6,53,31,2014,2026
-658835,Abdul Kader Keita,455,FC Rapid 1923,Defensive Midfield,24,Cote d'Ivoire,18,11,10,23,400,225,15714,6,4,96,19,47,4,2016,2026
-186380,Jakub Hromada,455,FC Rapid 1923,Defensive Midfield,30,Slovakia,0,17,15,37,735,323,19845,21,9,71,20,65,39,2010,2026
-652618,Luka Gojkovic,455,FC Rapid 1923,Attacking Midfield,26,Serbia,0,8,7,11,270,168,11455,24,23,126,39,22,0,2017,2026
-1237614,Sebastian Banu,455,FC Rapid 1923,Central Midfield,17,Romania,0,4,2,8,41,21,954,6,3,1,0,1,6,2023,2026
-1362765,Andrei Șucu,455,FC Rapid 1923,Attacking Midfield,17,Romania,20,3,3,6,47,6,302,1,0,1,1,0,1,2024,2026
-396443,Diogo Mendes,455,FC Rapid 1923,Defensive Midfield,27,Cape Verde,66,13,6,14,391,195,12133,6,3,28,8,30,8,2013,2026
-429551,Olimpiu Moruțan,455,FC Rapid 1923,Right Winger,27,Romania,80,12,10,31,602,389,22536,43,70,214,75,48,42,2015,2026
-365770,Alexandru Dobre,455,FC Rapid 1923,Right Winger,28,Romania,29,12,10,27,442,248,14703,46,11,315,104,15,22,2014,2026
-623424,Claudiu Petrila,455,FC Rapid 1923,Left Winger,25,Romania,10,10,4,20,457,282,15886,43,47,212,90,26,22,2017,2026
-605543,Daniel Paraschiv,455,FC Rapid 1923,Centre-Forward,26,Romania,30,9,9,14,301,235,14321,67,11,183,72,12,1,2018,2026
-296695,Elvir Koljic,455,FC Rapid 1923,Centre-Forward,29,Bosnia-Herzegovina,7,14,8,19,572,321,18453,88,28,153,51,41,4,2013,2026
-837240,Rareș Pop,455,FC Rapid 1923,Right Winger,21,Romania,55,8,4,12,264,166,8649,22,12,118,41,15,38,2019,2026
-863557,Omar El Sawy,952,UTA Arad,Right Winger,22,Romania,42,7,7,13,213,120,6180,15,8,64,25,11,16,2020,2026
-463666,Antoine Baroan,455,FC Rapid 1923,Centre-Forward,26,France,0,11,8,19,388,205,11614,59,20,65,26,34,0,2016,2026
-574658,Borisav Burmaz,455,FC Rapid 1923,Centre-Forward,25,Serbia,0,11,10,15,423,229,13150,67,14,205,85,21,13,2016,2026
-986186,Drilon Hazrollaj,455,FC Rapid 1923,Right Winger,22,Kosovo,0,5,3,10,176,118,8825,49,22,15,6,18,4,2022,2026
-1084074,Talisson,455,FC Rapid 1923,Left Winger,24,Brazil,33,6,8,13,231,91,3355,9,2,42,12,11,0,2021,2026
-582384,Timotej Jambor,455,FC Rapid 1923,Centre-Forward,23,Slovakia,90,9,5,17,389,238,13127,65,23,175,76,14,47,2018,2026
-319231,Claudiu Micovschi,41278,ACSC FC Arges,Right Winger,27,Romania,19,14,9,22,479,306,18853,44,29,73,25,22,20,2013,2026
-568544,Ștefan Târnovanu,301,FCSB,Goalkeeper,26,Romania,32,10,5,22,507,256,22652,0,0,0,0,21,13,2017,2026
-1350595,Matei Popa,301,FCSB,Goalkeeper,19,Romania,13,3,2,8,43,22,1935,0,1,0,0,1,0,2024,2026
+271284,Cristian Manea,455,FC Rapid 1923,Right-Back,29,Romania,23,15,6,26,757,407,32206,18,22,76,29,37,63,2012,2026
+370894,Tobias Christensen,455,FC Rapid 1923,Attacking Midfield,25,Norway,17,13,9,24,475,365,23022,45,47,300,100,48,47,2014,2026
+82657,Christopher Braun,7769,CFR Cluj,Right-Back,35,Germany,47,19,12,26,716,531,40823,10,23,39,11,78,0,2007,2026
+809240,Robert Sălceanu,455,FC Rapid 1923,Left-Back,22,Romania,21,7,5,12,264,157,11910,1,2,16,4,20,14,2020,2026
+405501,Filip Blazek,455,FC Rapid 1923,Centre-Back,27,Slovakia,0,12,10,23,436,259,19842,17,11,46,12,53,9,2015,2026
+710079,Cătălin Vulturar,455,FC Rapid 1923,Defensive Midfield,22,Romania,15,11,8,23,393,203,14445,10,14,22,6,53,31,2014,2026
+652618,Luka Gojkovic,455,FC Rapid 1923,Attacking Midfield,26,Serbia,0,8,7,11,274,168,11455,24,23,126,39,22,0,2017,2026
+568578,Constantin Grameni,455,FC Rapid 1923,Central Midfield,24,Romania,8,10,4,16,355,257,16770,20,19,111,38,26,49,2017,2026
+1362765,Andrei Șucu,455,FC Rapid 1923,Attacking Midfield,17,Romania,20,3,3,6,51,6,302,1,0,1,1,0,1,2024,2026
+658835,Abdul Kader Keita,455,FC Rapid 1923,Defensive Midfield,24,Cote d'Ivoire,18,11,10,23,402,227,15894,6,4,99,19,47,4,2016,2026
+186380,Jakub Hromada,455,FC Rapid 1923,Defensive Midfield,30,Slovakia,0,17,16,38,738,324,19890,21,9,71,20,65,39,2010,2026
+396443,Diogo Mendes,455,FC Rapid 1923,Defensive Midfield,27,Cape Verde,66,13,6,14,392,197,12294,6,3,28,8,30,8,2013,2026
+365770,Alexandru Dobre,455,FC Rapid 1923,Right Winger,28,Romania,29,12,10,27,446,252,14925,48,11,321,108,16,22,2014,2026
+1237614,Sebastian Banu,455,FC Rapid 1923,Central Midfield,17,Romania,0,4,2,8,43,22,962,6,3,1,0,1,6,2023,2026
+429551,Olimpiu Moruțan,455,FC Rapid 1923,Right Winger,27,Romania,80,12,10,31,606,393,22805,43,73,217,75,48,42,2015,2026
+623424,Claudiu Petrila,455,FC Rapid 1923,Left Winger,25,Romania,10,10,4,20,461,286,16047,43,47,213,91,27,22,2017,2026
+863557,Omar El Sawy,952,UTA Arad,Right Winger,22,Romania,42,7,7,13,216,123,6400,16,8,72,29,11,16,2020,2026
+296695,Elvir Koljic,455,FC Rapid 1923,Centre-Forward,29,Bosnia-Herzegovina,7,14,8,19,574,322,18461,88,28,153,51,41,4,2013,2026
+837240,Rareș Pop,455,FC Rapid 1923,Right Winger,21,Romania,55,8,4,12,268,169,8716,22,12,118,41,15,38,2019,2026
+574658,Borisav Burmaz,455,FC Rapid 1923,Centre-Forward,25,Serbia,0,11,10,15,425,231,13237,67,14,205,85,21,13,2016,2026
+986186,Drilon Hazrollaj,455,FC Rapid 1923,Right Winger,22,Kosovo,0,5,3,10,178,120,8913,49,22,15,6,18,4,2022,2026
+605543,Daniel Paraschiv,455,FC Rapid 1923,Centre-Forward,26,Romania,30,9,9,14,303,237,14481,67,12,186,73,12,1,2018,2026
+1084074,Talisson,455,FC Rapid 1923,Left Winger,24,Brazil,33,6,8,13,235,91,3355,9,2,42,12,11,0,2021,2026
+463666,Antoine Baroan,455,FC Rapid 1923,Centre-Forward,26,France,0,11,8,19,392,205,11614,59,20,65,26,34,0,2016,2026
+582384,Timotej Jambor,455,FC Rapid 1923,Centre-Forward,23,Slovakia,90,9,5,17,393,240,13205,65,23,175,76,14,47,2018,2026
+319231,Claudiu Micovschi,41278,ACSC FC Arges,Right Winger,27,Romania,19,14,9,22,482,308,18970,44,29,78,26,22,20,2013,2026
+726033,Pavlo Isenko,40812,Universitatea Craiova,Goalkeeper,23,Ukraine,77,8,2,15,248,124,11073,0,1,0,0,14,7,2019,2026
+271289,Laurențiu Popescu,40812,Universitatea Craiova,Goalkeeper,29,Romania,21,14,4,16,515,186,16723,0,2,0,0,20,2,2012,2026
+568617,Răzvan Sava,40812,Universitatea Craiova,Goalkeeper,24,Romania,90,10,11,25,434,163,14481,0,1,0,0,7,30,2017,2026
+970199,Alexandru Maxim,40812,Universitatea Craiova,Goalkeeper,19,Romania,1,6,5,15,153,56,4785,0,0,0,0,4,14,2021,2026
+418219,Vladimir Screciu,40812,Universitatea Craiova,Centre-Back,26,Romania,6,12,3,28,613,318,23627,5,4,69,14,38,35,2015,2026
+421927,Adrian Rus,40812,Universitatea Craiova,Centre-Back,30,Romania,28,12,6,27,548,298,22913,17,8,44,14,66,30,2015,2026
+1052377,Juraj Badelj,40812,Universitatea Craiova,Centre-Back,23,Croatia,0,5,3,14,212,95,6970,1,1,13,2,11,2,2022,2026
+213195,Nicușor Bancu,40812,Universitatea Craiova,Left-Back,34,Romania,11,16,2,21,759,584,47863,44,79,149,39,141,55,2011,2026
+425733,Nikola Stevanovic,40812,Universitatea Craiova,Centre-Back,28,Serbia,24,12,7,20,491,236,17622,7,2,85,15,49,3,2015,2026
+882003,Ronaldo Webster,40812,Universitatea Craiova,Left-Back,25,Jamaica,31,10,5,21,354,203,14093,19,15,7,3,23,12,2017,2026
+796895,Baptiste Roux,40812,Universitatea Craiova,Centre-Back,26,France,5,10,6,16,320,200,14205,10,3,47,11,29,0,2017,2026
+295810,Alexandru Cicâldău,40812,Universitatea Craiova,Central Midfield,29,Romania,20,14,8,31,633,449,32549,71,58,291,93,51,65,2013,2026
+553772,Oleksandr Romanchuk,40812,Universitatea Craiova,Centre-Back,26,Ukraine,3,9,4,14,281,221,16543,12,9,62,18,36,4,2017,2026
+433976,Tudor Băluță,40812,Universitatea Craiova,Defensive Midfield,27,Romania,8,12,10,38,628,275,18516,19,16,200,50,44,32,2015,2026
+597165,Samuel Teles,40812,Universitatea Craiova,Central Midfield,29,Portugal,23,11,5,15,388,226,13550,18,10,223,68,40,0,2016,2026
+502671,Anzor Mekvabishvili,40812,Universitatea Craiova,Defensive Midfield,25,Georgia,0,12,3,25,417,328,22536,19,26,115,37,42,94,2015,2026
+740789,Carlos Mora,40812,Universitatea Craiova,Right Midfield,25,Costa Rica,17,8,2,27,449,349,22181,45,59,92,32,43,28,2019,2026
+686232,Ștefan Baiaram,40812,Universitatea Craiova,Left Winger,23,Romania,10,9,2,17,413,295,16739,56,28,272,114,41,25,2018,2026
+1002053,Sebastian Șerban,40812,Universitatea Craiova,Attacking Midfield,20,Romania,0,4,2,5,20,0,0,0,0,0,0,0,0,2021,2026
+357165,João Lameira,4959,SC Otelul Galati,Defensive Midfield,27,Portugal,0,14,10,22,347,231,15701,13,9,134,31,48,34,2013,2026
+518451,Assad Al-Hamlawi,40812,Universitatea Craiova,Centre-Forward,25,Palestine,9,10,8,20,313,205,12163,73,7,158,58,24,6,2016,2026
+216661,Alexandru Crețu,40812,Universitatea Craiova,Defensive Midfield,34,Romania,4,17,6,23,724,515,35090,34,31,187,64,86,22,2010,2026
+1112690,David Matei,40812,Universitatea Craiova,Right Winger,20,Romania,30,5,2,16,190,138,8244,11,13,78,28,15,27,2022,2026
+830113,Steven Nsimba,40812,Universitatea Craiova,Centre-Forward,30,France,7,10,10,14,320,232,14947,72,22,157,79,28,0,2017,2026
+1017320,Mihnea Rădulescu,40812,Universitatea Craiova,Right Winger,21,Romania,18,6,3,16,206,98,4855,13,8,69,24,5,18,2021,2026
+937066,Luca Băsceanu,40812,Universitatea Craiova,Left Winger,20,Romania,29,6,4,17,197,99,4144,12,5,68,30,7,28,2021,2026
+972439,Alexandru Iamandache,40812,Universitatea Craiova,Left Winger,27,Romania,14,7,4,10,116,41,2839,12,5,0,0,2,0,2020,2026
+1179005,Denys Muntean,40812,Universitatea Craiova,Right Winger,17,Romania,0,4,2,11,69,9,353,2,1,0,0,0,6,2023,2026
+804661,Simon Elisor,40812,Universitatea Craiova,Centre-Forward,27,France,22,9,11,16,299,239,14513,63,15,195,94,27,0,2018,2026
+445517,Heri Tavares,40812,Universitatea Craiova,Left Winger,29,Cape Verde,19,13,9,21,463,358,20952,65,38,299,97,56,25,2011,2026
+505999,Monday Etim,40812,Universitatea Craiova,Right Winger,27,Nigeria,12,10,6,16,344,229,14638,47,27,194,72,28,0,2016,2026
+685805,João Gonçalves,40812,Universitatea Craiova,Goalkeeper,24,Portugal,32,8,5,8,253,74,6676,0,0,0,0,6,1,2019,2026
+1158577,Matei Goga,40812,Universitatea Craiova,Goalkeeper,18,Romania,31,4,4,8,58,18,1560,0,0,0,0,0,1,2022,2025
+315468,Relu Stoian,40812,Universitatea Craiova,Goalkeeper,29,Romania,0,15,10,14,433,179,16081,0,0,0,0,18,1,2012,2026
+320637,Florin Ștefan,40812,Universitatea Craiova,Left-Back,29,Romania,2,14,8,18,529,305,22130,19,21,63,17,38,17,2013,2026
+567143,Basilio Ndong,40812,Universitatea Craiova,Left-Back,26,Equatorial Guinea,0,11,6,20,417,227,16451,5,18,16,5,32,57,2016,2026
+73731,Silviu Lung Jr.,40812,Universitatea Craiova,Goalkeeper,36,Romania,1,20,6,22,948,487,43228,0,1,0,0,64,17,2006,2025
+1317253,Robert Ristoiu,40812,Universitatea Craiova,Central Midfield,17,Romania,35,4,2,5,24,12,621,0,0,0,0,1,2,2022,2026
+869983,Denis Benga,40812,Universitatea Craiova,Left-Back,19,Romania,26,7,3,12,147,29,1840,1,0,2,0,0,20,2020,2026
+229007,Lyes Houri,40812,Universitatea Craiova,Attacking Midfield,29,France,14,16,12,30,653,378,23390,36,38,59,20,61,14,2011,2026
+271282,Andrei Ivan,40812,Universitatea Craiova,Centre-Forward,28,Romania,0,15,8,37,690,454,30426,87,49,301,113,51,39,2012,2026
+324214,Vasile Mogoș,40812,Universitatea Craiova,Right-Back,32,Romania,19,17,14,27,705,476,36537,39,17,176,49,38,8,2010,2026
+1067295,Mihai Ninaci,40812,Universitatea Craiova,Centre-Forward,16,Romania,34,4,2,7,56,15,987,4,1,0,0,1,10,2021,2024
+992842,Florin Gașpăr,40812,Universitatea Craiova,Right-Back,17,Romania,36,6,5,15,208,108,8079,5,7,0,0,6,51,2021,2026
+1405281,Teodor Luță,40812,Universitatea Craiova,Centre-Forward,18,Romania,37,1,2,2,5,0,0,0,0,0,0,0,0,2024,2024
+568544,Ștefan Târnovanu,301,FCSB,Goalkeeper,26,Romania,32,10,5,22,509,258,22832,0,0,0,0,21,13,2017,2026
+1350595,Matei Popa,301,FCSB,Goalkeeper,19,Romania,13,3,2,8,45,22,1935,0,1,0,0,1,0,2024,2026
+147558,Lukas Zima,9465,Petrolul Ploiesti,Goalkeeper,32,Czech Republic,38,18,10,28,776,264,22957,0,0,0,0,8,53,2009,2026
+610749,Luis Paradela,40812,Universitatea Craiova,Left Winger,28,Cuba,0,9,6,30,430,273,18223,62,46,46,14,59,45,2018,2026
+445610,Siyabonga Ngezana,301,FCSB,Centre-Back,29,South Africa,30,11,2,23,499,245,19855,9,3,66,18,54,16,2016,2026
+418235,Jovan Marković,8818,FC Botosani,Centre-Forward,25,Romania,9,12,6,13,465,242,9688,46,19,196,69,21,23,2015,2026
+670828,Alexandru Pantea,301,FCSB,Right-Back,21,Romania,28,9,5,24,382,183,12780,3,9,54,9,30,38,2018,2026
+588095,André Duarte,301,FCSB,Centre-Back,29,Portugal,3,11,10,20,351,196,16742,3,4,93,26,23,0,2016,2026
 786187,Mihai Udrea,301,FCSB,Goalkeeper,25,Romania,34,8,4,13,276,46,4053,0,0,0,0,5,0,2019,2026
-569743,Joyskim Dawa,301,FCSB,Centre-Back,30,Cameroon,5,13,6,28,611,267,21440,21,7,87,31,59,10,2014,2026
-147558,Lukas Zima,9465,Petrolul Ploiesti,Goalkeeper,32,Czech Republic,38,18,10,28,774,262,22777,0,0,0,0,8,53,2009,2026
-445610,Siyabonga Ngezana,301,FCSB,Centre-Back,29,South Africa,30,11,2,23,497,245,19855,9,3,66,18,54,16,2016,2026
-588095,André Duarte,301,FCSB,Centre-Back,29,Portugal,3,11,10,20,349,194,16562,3,4,93,26,23,0,2016,2026
-670828,Alexandru Pantea,301,FCSB,Right-Back,21,Romania,28,9,5,24,380,182,12724,3,9,54,9,30,38,2018,2026
-361537,Mihai Popescu,301,FCSB,Centre-Back,33,Romania,17,14,11,26,576,372,31126,12,9,125,24,73,8,2012,2026
-144339,Risto Radunovic,301,FCSB,Left-Back,34,Montenegro,33,19,4,23,722,519,42365,23,42,86,21,91,74,2008,2026
-131728,Daniel Graovac,455,FC Rapid 1923,Centre-Back,33,Bosnia-Herzegovina,3,17,10,25,652,424,35082,9,6,26,3,73,26,2009,2026
-1073910,Ionuț Cercel,29831,FCV Farul Constanta,Right-Back,19,Romania,13,5,5,17,195,61,3643,2,1,8,2,4,22,2022,2026
-379870,David Kiki,40843,FC Voluntari,Left-Back,32,Benin,25,15,11,25,729,364,28411,15,8,47,10,44,53,2012,2026
-79507,Valentin Crețu,301,FCSB,Right-Back,37,Romania,2,19,10,23,804,491,38760,3,42,22,6,123,2,2008,2026
-1179041,Andrei Dăncuș,301,FCSB,Centre-Back,17,Romania,6,4,2,13,122,19,1506,0,1,0,0,1,12,2023,2026
-395800,Darius Olaru,301,FCSB,Attacking Midfield,27,Romania,27,12,3,25,620,431,30678,77,63,370,141,74,47,2015,2026
-433979,Adrian Șut,301,FCSB,Defensive Midfield,26,Romania,0,12,6,22,489,337,24901,31,17,216,62,64,8,2015,2026
-623965,João Paulo,301,FCSB,Defensive Midfield,28,Cape Verde,18,9,6,22,372,227,15116,17,13,140,45,16,45,2018,2026
-468704,Malcom Edjouma,301,FCSB,Central Midfield,28,Morocco,0,13,16,23,582,283,16730,35,14,235,68,39,0,2013,2025
-314329,Florin Tănase,301,FCSB,Attacking Midfield,31,Romania,0,14,6,27,739,512,37501,147,78,235,104,102,40,2013,2026
-200495,Ofri Arad,301,FCSB,Defensive Midfield,28,Israel,15,12,5,27,484,315,24325,18,16,22,7,54,26,2015,2026
-626899,Baba Alhassan,301,FCSB,Defensive Midfield,25,Uganda,42,8,4,18,329,235,12535,19,9,101,29,47,7,2018,2026
-992820,Mihai Toma,301,FCSB,Left Midfield,19,Romania,22,6,4,19,269,117,6192,21,10,39,10,8,47,2021,2026
-163999,Juri Cisotti,301,FCSB,Central Midfield,33,Italy,31,17,12,25,601,372,27073,69,49,141,67,52,0,2010,2026
-623425,Ovidiu Perianu,7769,CFR Cluj,Defensive Midfield,24,Romania,6,10,8,17,394,174,10325,5,2,57,8,16,37,2017,2026
-468192,Daniel Bîrligea,301,FCSB,Centre-Forward,26,Romania,0,11,6,31,500,293,16254,88,22,392,156,38,22,2016,2026
+144339,Risto Radunovic,301,FCSB,Left-Back,34,Montenegro,33,19,4,23,724,521,42522,23,44,87,22,92,74,2008,2026
+569743,Joyskim Dawa,301,FCSB,Centre-Back,30,Cameroon,5,13,6,28,613,269,21620,21,7,89,31,59,10,2014,2026
+1073910,Ionuț Cercel,29831,FCV Farul Constanta,Right-Back,19,Romania,13,5,5,17,197,61,3643,2,1,8,2,4,22,2022,2026
+131728,Daniel Graovac,455,FC Rapid 1923,Centre-Back,33,Bosnia-Herzegovina,3,17,10,25,656,424,35082,9,6,26,3,73,26,2009,2026
+361537,Mihai Popescu,301,FCSB,Centre-Back,33,Romania,17,14,11,26,578,372,31126,12,9,125,24,73,8,2012,2026
+1179041,Andrei Dăncuș,301,FCSB,Centre-Back,17,Romania,6,4,2,13,124,19,1506,0,1,0,0,1,12,2023,2026
+433979,Adrian Șut,301,FCSB,Defensive Midfield,26,Romania,0,12,6,22,491,338,24905,31,17,216,62,64,8,2015,2026
+379870,David Kiki,40843,FC Voluntari,Left-Back,32,Benin,25,15,11,25,731,364,28411,15,8,47,10,44,53,2012,2026
+314329,Florin Tănase,301,FCSB,Attacking Midfield,31,Romania,0,14,6,27,743,516,37655,147,78,235,104,102,40,2013,2026
+79507,Valentin Crețu,301,FCSB,Right-Back,37,Romania,2,19,10,23,806,493,38940,3,42,22,6,123,2,2008,2026
+395800,Darius Olaru,301,FCSB,Attacking Midfield,27,Romania,27,12,3,26,624,433,30779,77,63,374,143,74,47,2015,2026
+626899,Baba Alhassan,301,FCSB,Defensive Midfield,25,Uganda,42,8,4,18,332,237,12715,19,9,102,29,47,7,2018,2026
+163999,Juri Cisotti,301,FCSB,Central Midfield,33,Italy,31,17,12,25,603,374,27230,69,50,146,69,52,0,2010,2026
+200495,Ofri Arad,301,FCSB,Defensive Midfield,28,Israel,15,12,5,27,485,317,24415,18,16,22,7,55,27,2015,2026
+468704,Malcom Edjouma,301,FCSB,Central Midfield,28,Morocco,0,13,16,23,584,285,16895,35,14,240,68,39,0,2013,2025
+623965,João Paulo,301,FCSB,Defensive Midfield,28,Cape Verde,18,9,6,22,374,229,15187,18,13,142,46,16,45,2018,2026
+623425,Ovidiu Perianu,7769,CFR Cluj,Defensive Midfield,24,Romania,6,10,8,17,397,177,10585,5,2,60,9,17,37,2017,2026
+468192,Daniel Bîrligea,301,FCSB,Centre-Forward,26,Romania,0,11,6,31,502,294,16255,88,22,392,156,38,22,2016,2026
+992820,Mihai Toma,301,FCSB,Left Midfield,19,Romania,22,6,4,19,271,117,6192,21,10,39,10,8,47,2021,2026
+992823,Alexandru Stoian,301,FCSB,Centre-Forward,18,Romania,90,6,6,18,262,116,5111,21,5,45,13,4,51,2021,2026
+797100,Octavian Popescu,301,FCSB,Left Winger,23,Romania,0,7,2,17,376,264,15574,29,33,226,82,45,26,2020,2026
 123261,Vlad Chiricheș,301,FCSB,Defensive Midfield,35,Romania,21,18,8,27,960,444,35141,13,12,59,10,63,82,2008,2025
-992823,Alexandru Stoian,301,FCSB,Centre-Forward,18,Romania,90,6,6,18,260,114,5051,20,4,41,12,4,51,2021,2026
-797100,Octavian Popescu,301,FCSB,Left Winger,23,Romania,0,7,2,17,374,262,15420,29,33,222,80,44,26,2020,2026
-614800,David Miculescu,301,FCSB,Right Winger,25,Romania,11,11,3,21,468,344,19193,54,14,316,126,36,30,2016,2026
-368624,Mamadou Thiam,6429,FC Universitatea Cluj,Centre-Forward,30,Senegal,0,13,10,24,489,372,19923,61,24,470,150,23,7,2014,2026
-685795,Marius Ștefănescu,6429,FC Universitatea Cluj,Right Winger,28,Romania,14,9,4,14,396,266,17169,48,31,249,101,51,2,2018,2026
-81396,Denis Alibec,29831,FCV Farul Constanta,Centre-Forward,35,Romania,7,20,13,41,1012,537,34606,170,94,422,166,125,58,2007,2026
-992832,David Popa,301,FCSB,Right Winger,19,Romania,98,6,4,14,146,64,3203,21,0,13,6,2,35,2021,2026
-880840,Andrei Gheorghiță,6429,FC Universitatea Cluj,Left Winger,24,Romania,77,6,5,11,165,98,4927,8,5,92,32,9,2,2021,2026
-1345647,Rareș Andrei,301,FCSB,Goalkeeper,16,Romania,0,3,2,6,32,8,597,0,0,0,0,0,8,2024,2026
-992848,Ricardo Pădurariu,301,FCSB,Left-Back,19,Romania,4,6,4,12,90,67,4934,3,1,7,3,8,18,2021,2026
-388042,Karlo Muhar,7769,CFR Cluj,Defensive Midfield,30,Croatia,0,12,10,22,529,393,30150,36,17,289,77,91,0,2015,2026
-562175,Ronny Labonne,301,FCSB,Right-Back,29,Martinique,97,10,8,14,372,182,12805,11,25,25,8,31,9,2017,2026
-289432,Dylan Batubinsika,301,FCSB,Centre-Back,30,DR Congo,21,16,12,36,550,311,25227,14,3,68,19,39,20,2011,2026
-412024,Meriton Korenica,7769,CFR Cluj,Left Winger,29,Kosovo,0,12,8,22,510,373,26860,80,36,195,79,41,11,2015,2026
-168933,Eddy Gnahoré,301,FCSB,Defensive Midfield,32,France,8,16,14,27,570,317,22394,25,16,131,36,38,2,2010,2026
-730580,Aymen Boutoutaou,301,FCSB,Right Winger,25,Algeria,28,9,5,10,324,196,11202,40,11,182,68,11,1,2018,2026
-405399,Denis Drăguș,301,FCSB,Centre-Forward,27,Romania,10,12,11,30,543,268,14783,57,13,312,113,41,42,2015,2026
-252661,Arnold Garita,301,FCSB,Centre-Forward,31,Cameroon,14,15,13,25,503,291,17475,94,25,188,85,43,0,2012,2026
-1340005,David Avram,301,FCSB,Centre-Forward,16,Romania,19,3,1,5,24,6,283,3,0,0,0,0,5,2024,2026
-547853,Răzvan Ducan,455,FC Rapid 1923,Goalkeeper,25,Romania,68,10,9,15,363,111,9723,0,0,0,0,11,13,2017,2026
-861221,Ebenezer Annan,455,FC Rapid 1923,Left-Back,24,Ghana,27,7,9,23,309,185,12340,2,12,26,5,32,7,2020,2026
-1385195,Latif Ouedraogo,455,FC Rapid 1923,Left-Back,18,Burkina Faso,66,3,5,7,57,40,2588,0,1,1,0,6,0,2024,2026
-1541371,Alex Șimonia,455,FC Rapid 1923,Goalkeeper,18,Romania,70,1,2,2,7,1,120,0,0,0,0,0,0,2025,2025
-1009622,Alin Kumer Celik,455,FC Rapid 1923,Centre-Back,19,Slovenia,42,6,5,12,217,98,7498,8,1,1,0,9,23,2021,2026
-1073208,Ştefan Senciuc,455,FC Rapid 1923,Right-Back,19,Romania,17,5,7,12,145,116,8181,13,2,2,1,7,17,2022,2026
-1385971,Chec Bebel Doumbia,455,FC Rapid 1923,Central Midfield,18,Burkina Faso,44,3,4,7,38,32,1791,1,0,0,0,3,2,2024,2026
-1341646,Andrei Niculcea,455,FC Rapid 1923,Attacking Midfield,17,Romania,0,3,2,5,20,15,955,5,0,0,0,1,13,2024,2026
-489824,Vladan Bubanja,455,FC Rapid 1923,Defensive Midfield,27,Montenegro,22,11,10,20,503,312,21742,33,8,82,27,49,10,2016,2026
-1580215,Eric Tape,455,FC Rapid 1923,Central Midfield,18,Cote d'Ivoire,79,1,1,2,7,0,0,0,0,0,0,0,0,2026,2026
-637273,Mohammed Kamara,455,FC Rapid 1923,Left Winger,28,Liberia,7,10,10,23,357,187,11152,45,16,226,98,54,4,2017,2026
-464195,Filip Stojilkovic,455,FC Rapid 1923,Centre-Forward,26,Switzerland,9,12,17,28,408,331,18611,97,28,284,123,37,32,2015,2026
-1062986,Jason Kodor,455,FC Rapid 1923,Centre-Forward,20,Romania,77,5,4,11,221,143,7343,36,4,9,2,10,28,2022,2026
-937038,Codruț Sandu,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,21,6,5,10,163,83,7075,0,0,0,0,1,18,2021,2026
-170471,Devis Epassy,312,FC Dinamo 1948,Goalkeeper,33,Cameroon,1,17,12,27,573,258,23187,0,1,0,0,16,16,2010,2026
-968921,Alexandru Roșca,312,FC Dinamo 1948,Goalkeeper,22,Romania,73,6,4,9,166,71,6300,0,0,0,0,3,1,2021,2026
-1475137,Costin Ungureanu,312,FC Dinamo 1948,Goalkeeper,18,Romania,0,2,1,2,22,0,0,0,0,0,0,0,0,2025,2026
-1444205,Mario Din-Licaciu,312,FC Dinamo 1948,Goalkeeper,16,Romania,28,1,1,4,41,0,0,0,0,0,0,0,0,2025,2025
-982567,Nikita Stoinov,312,FC Dinamo 1948,Centre-Back,21,Israel,15,6,2,14,149,107,8402,2,1,27,11,10,33,2021,2026
-451317,Kennedy Boateng,312,FC Dinamo 1948,Centre-Back,28,Togo,4,11,7,17,433,311,26488,19,5,118,41,57,16,2016,2026
-393806,Raul Opruț,312,FC Dinamo 1948,Left-Back,28,Romania,31,13,9,28,511,387,32485,14,23,95,21,70,10,2014,2026
-580715,Maxime Sivis,312,FC Dinamo 1948,Right-Back,28,France,0,13,11,16,375,264,21080,8,16,72,17,43,1,2013,2026
-883055,Matteo Duțu,312,FC Dinamo 1948,Centre-Back,20,Romania,30,7,9,29,356,204,15902,8,1,4,1,38,39,2020,2026
-623420,Valentin Țicu,29831,FCV Farul Constanta,Left-Back,26,Romania,3,10,3,11,338,199,16035,8,12,64,14,39,12,2017,2026
-1002548,Alexandru Tabuncic,312,FC Dinamo 1948,Right-Back,19,Moldova,0,5,1,6,65,8,264,0,0,0,0,1,7,2021,2026
-157491,Jordan Ikoko,312,FC Dinamo 1948,Right-Back,31,DR Congo,32,17,15,35,785,457,33900,7,30,29,10,59,41,2009,2025
-888398,Cristian Licsandru,312,FC Dinamo 1948,Centre-Back,23,Romania,0,5,4,9,142,26,1052,0,1,3,0,2,0,2020,2026
-575219,Cătălin Cîrjan,312,FC Dinamo 1948,Central Midfield,23,Romania,10,10,6,19,353,190,12870,27,15,238,78,29,11,2016,2026
-487688,Alberto Soro,312,FC Dinamo 1948,Attacking Midfield,27,Spain,29,11,6,15,373,225,11316,21,24,162,73,23,2,2016,2026
-547827,Andrei Mărginean,312,FC Dinamo 1948,Defensive Midfield,25,Romania,90,10,7,19,345,213,12272,25,12,59,16,35,20,2017,2026
-203970,Charalampos Kyriakou,312,FC Dinamo 1948,Defensive Midfield,30,Cyprus,0,16,4,24,763,456,28473,11,18,34,8,53,97,2011,2026
-974722,Cristian Mihai,312,FC Dinamo 1948,Defensive Midfield,22,Romania,21,6,3,10,172,115,6767,5,3,74,16,15,17,2019,2026
-134158,Georgi Milanov,312,FC Dinamo 1948,Attacking Midfield,33,Bulgaria,17,19,8,32,791,590,35518,60,82,113,20,66,69,2008,2026
-1481374,Matteo N'Giuwu,312,FC Dinamo 1948,Defensive Midfield,17,Romania,0,1,1,4,13,0,0,0,0,0,0,0,0,2025,2025
-1163169,Mihnea Ștefan,312,FC Dinamo 1948,Central Midfield,19,Romania,0,2,2,2,2,0,0,0,0,0,0,0,0,2022,2025
-881064,Alexandru Musi,312,FC Dinamo 1948,Left Winger,22,Romania,7,7,5,20,324,181,10924,33,16,146,55,17,32,2020,2026
-225236,Danny Armstrong,312,FC Dinamo 1948,Right Winger,29,Scotland,77,15,9,24,477,327,21957,57,73,405,147,66,4,2012,2026
-208690,George Pușcaș,312,FC Dinamo 1948,Centre-Forward,30,Romania,47,16,13,33,772,461,26962,142,24,435,164,43,85,2011,2026
-646782,Mamoudou Karamoko,312,FC Dinamo 1948,Centre-Forward,27,France,9,11,12,28,414,183,10377,49,16,160,71,14,0,2013,2026
-434892,Alexandru Pop,312,FC Dinamo 1948,Centre-Forward,26,Romania,0,12,8,13,296,253,14808,51,16,136,58,18,8,2015,2026
-723835,Adrian Mazilu,312,FC Dinamo 1948,Right Winger,21,Romania,26,8,5,22,259,105,5255,17,8,83,32,7,34,2019,2026
-354338,Hakim Abdallah,952,UTA Arad,Centre-Forward,28,Madagascar,11,14,11,22,467,315,18429,71,26,274,91,14,22,2013,2026
-863556,Antonio Bordușanu,312,FC Dinamo 1948,Right Winger,20,Romania,20,7,3,11,246,89,4669,5,5,19,5,3,15,2020,2026
-938160,Ianis Tarbă,312,FC Dinamo 1948,Right Winger,20,Romania,23,6,2,9,106,59,2300,7,2,29,7,4,37,2021,2026
-1132839,Luca Bărbulescu,41061,Corvinul Hunedoara,Centre-Forward,18,Romania,48,4,4,7,79,27,937,3,0,3,0,1,2,2021,2025
-245072,Stipe Perica,312,FC Dinamo 1948,Centre-Forward,29,Croatia,0,15,14,32,630,364,18140,100,16,183,87,55,17,2012,2026
-676121,Imran Fetai,312,FC Dinamo 1948,Centre-Back,24,North Macedonia,5,9,5,12,176,131,10710,3,5,2,0,24,24,2018,2026
-667991,Alaa Bellaarouch,312,FC Dinamo 1948,Goalkeeper,24,Morocco,36,8,7,18,256,81,7133,0,1,0,0,11,12,2018,2026
-1195029,Ștefan Opriș,312,FC Dinamo 1948,Right-Back,19,Romania,66,4,4,8,58,34,2639,0,3,0,0,5,1,2023,2026
-711626,Darío Benavides,312,FC Dinamo 1948,Right-Back,23,Spain,22,6,5,11,211,110,7334,4,8,7,1,21,0,2021,2026
-638588,Martín Pascual,312,FC Dinamo 1948,Centre-Back,27,Spain,44,9,6,8,330,153,11079,5,3,64,24,42,0,2018,2026
-292817,Matthias Verreth,312,FC Dinamo 1948,Defensive Midfield,28,Belgium,6,15,12,28,574,387,26970,51,29,238,81,40,46,2012,2026
+880840,Andrei Gheorghiță,6429,FC Universitatea Cluj,Left Winger,24,Romania,77,6,5,11,168,100,4941,8,5,92,32,9,2,2021,2026
+685795,Marius Ștefănescu,6429,FC Universitatea Cluj,Right Winger,28,Romania,14,9,4,14,399,269,17426,48,31,254,103,51,2,2018,2026
+614800,David Miculescu,301,FCSB,Right Winger,25,Romania,11,11,3,21,470,346,19328,54,14,317,127,36,30,2016,2026
+968921,Alexandru Roșca,312,FC Dinamo 1948,Goalkeeper,22,Romania,73,6,4,9,168,71,6300,0,0,0,0,3,1,2021,2026
+368624,Mamadou Thiam,6429,FC Universitatea Cluj,Centre-Forward,30,Senegal,0,13,10,25,493,375,20020,61,24,473,151,23,7,2014,2026
+992832,David Popa,301,FCSB,Right Winger,19,Romania,98,6,4,14,148,64,3203,21,1,13,6,2,35,2021,2026
+170471,Devis Epassy,312,FC Dinamo 1948,Goalkeeper,33,Cameroon,1,17,12,27,575,258,23187,0,1,0,0,16,16,2010,2026
+1475137,Costin Ungureanu,312,FC Dinamo 1948,Goalkeeper,18,Romania,0,2,1,2,25,0,0,0,0,0,0,0,0,2025,2026
+81396,Denis Alibec,29831,FCV Farul Constanta,Centre-Forward,35,Romania,7,20,13,41,1014,537,34606,170,94,422,166,125,58,2007,2026
+982567,Nikita Stoinov,312,FC Dinamo 1948,Centre-Back,21,Israel,15,6,2,14,151,109,8582,2,1,29,11,12,33,2021,2026
+667991,Alaa Bellaarouch,312,FC Dinamo 1948,Goalkeeper,24,Morocco,36,8,7,18,258,83,7313,0,1,0,0,11,12,2018,2026
+393806,Raul Opruț,312,FC Dinamo 1948,Left-Back,28,Romania,31,13,9,28,513,389,32665,14,23,97,22,70,10,2014,2026
+638588,Martín Pascual,312,FC Dinamo 1948,Centre-Back,27,Spain,44,9,6,8,332,154,11161,5,3,64,24,43,0,2018,2026
+676121,Imran Fetai,312,FC Dinamo 1948,Centre-Back,24,North Macedonia,5,9,5,12,178,133,10791,3,5,2,0,25,24,2018,2026
+580715,Maxime Sivis,312,FC Dinamo 1948,Right-Back,28,France,0,13,11,16,378,267,21280,8,16,72,17,43,1,2013,2026
+883055,Matteo Duțu,312,FC Dinamo 1948,Centre-Back,20,Romania,30,7,9,29,358,205,15908,8,1,4,1,38,39,2020,2026
+711626,Darío Benavides,312,FC Dinamo 1948,Right-Back,23,Spain,22,6,5,11,213,111,7335,4,8,7,1,21,0,2021,2026
+575219,Cătălin Cîrjan,312,FC Dinamo 1948,Central Midfield,23,Romania,10,10,6,19,355,192,13050,29,15,247,81,30,11,2016,2026
+1163786,Răzvan Radu,312,FC Dinamo 1948,Left-Back,20,Romania,19,5,3,8,90,62,4715,0,4,0,0,2,2,2022,2026
+1195029,Ștefan Opriș,312,FC Dinamo 1948,Right-Back,19,Romania,66,4,4,8,60,34,2639,0,3,0,0,5,1,2023,2026
+888398,Cristian Licsandru,312,FC Dinamo 1948,Centre-Back,23,Romania,0,5,4,9,144,27,1060,0,1,3,0,2,0,2020,2026
+547827,Andrei Mărginean,312,FC Dinamo 1948,Defensive Midfield,25,Romania,90,10,7,19,347,215,12446,25,13,63,16,36,20,2017,2026
 1317458,Godwin Udosen,312,FC Dinamo 1948,Central Midfield,18,Nigeria,0,2,2,4,36,0,0,0,0,0,0,0,0,2024,2026
-1163786,Răzvan Radu,312,FC Dinamo 1948,Left-Back,20,Romania,19,5,3,8,88,62,4715,0,4,0,0,2,2,2022,2026
-462252,Diogo Pinto,312,FC Dinamo 1948,Attacking Midfield,27,Portugal,8,11,11,21,348,183,10436,38,10,74,31,10,1,2016,2026
-942790,Dean Zandbergen,312,FC Dinamo 1948,Centre-Forward,25,Netherlands,97,6,7,8,215,150,9597,49,17,128,57,20,0,2021,2026
-501062,Oliver Hintsa,312,FC Dinamo 1948,Centre-Forward,25,Eritrea,18,11,7,12,267,210,13033,60,26,2,1,15,5,2016,2026
-1076318,Luca Crăciun,41278,ACSC FC Arges,Goalkeeper,18,Romania,0,3,2,7,83,9,632,0,0,0,0,0,3,2024,2026
-837239,Mario Tudose,41278,ACSC FC Arges,Centre-Back,21,Romania,6,7,2,14,176,140,11368,8,3,24,6,6,38,2020,2026
-123251,Cătălin Straton,41278,ACSC FC Arges,Goalkeeper,37,Romania,1,18,8,15,711,239,20940,0,0,0,0,21,1,2009,2026
-482364,Leard Sadriu,41278,ACSC FC Arges,Centre-Back,25,Kosovo,3,11,4,21,415,230,18925,5,2,18,4,62,29,2016,2026
-556116,Dorinel Oancea,41278,ACSC FC Arges,Right-Back,29,Romania,26,11,3,8,372,252,16165,5,17,64,13,54,0,2016,2026
-603327,Florin Borța,41278,ACSC FC Arges,Left-Back,27,Romania,23,10,4,10,309,186,14159,4,6,45,10,37,1,2017,2026
-520084,Guilherme Garutti,41278,ACSC FC Arges,Centre-Back,32,Brazil,15,13,9,12,325,189,15105,7,4,50,15,28,0,2010,2026
-394481,Costinel Tofan,41278,ACSC FC Arges,Right-Back,30,Romania,2,12,3,8,410,266,19937,5,6,39,7,43,0,2015,2026
-209063,Marius Briceag,41278,ACSC FC Arges,Left-Back,33,Romania,5,17,9,14,630,398,32218,8,17,51,6,54,0,2010,2026
-1327485,Claudiu Stancu,41278,ACSC FC Arges,Left-Back,15,Romania,0,4,3,7,71,20,956,0,3,0,0,0,11,2022,2026
-1379453,Andrei Dinu,41278,ACSC FC Arges,Centre-Back,17,Romania,0,4,3,6,72,5,277,0,0,0,0,0,0,2022,2026
-1483399,Antonio Marin,41278,ACSC FC Arges,Centre-Back,18,Romania,0,2,1,3,52,1,1,0,0,0,0,0,0,2025,2026
-451331,Ionuț Rădescu,41278,ACSC FC Arges,Central Midfield,31,Romania,16,11,2,8,387,319,20497,29,12,44,10,28,0,2016,2026
-381209,Rober Sierra,41278,ACSC FC Arges,Defensive Midfield,30,Spain,27,11,9,17,348,289,24134,9,3,27,9,42,0,2015,2026
-365449,Xian Emmers,41278,ACSC FC Arges,Attacking Midfield,27,Belgium,80,13,11,29,525,270,16092,35,28,132,59,10,23,2014,2026
-136128,Vadim Rață,41278,ACSC FC Arges,Central Midfield,33,Moldova,22,18,10,22,719,543,40258,37,28,111,25,106,106,2009,2026
-986504,Robert Popescu,41278,ACSC FC Arges,Central Midfield,23,Romania,0,6,5,7,173,78,3250,7,3,32,15,5,0,2021,2026
-1160214,Adriano Manole,41278,ACSC FC Arges,Central Midfield,17,Romania,98,5,3,7,66,13,213,0,0,0,0,0,0,2021,2026
-97562,Takayuki Seto,41278,ACSC FC Arges,Defensive Midfield,39,Japan,25,18,7,18,698,528,39900,36,28,34,5,56,0,2009,2026
-535958,Ricardo Matos,41278,ACSC FC Arges,Centre-Forward,26,Portugal,17,9,10,16,273,158,8587,42,10,136,56,15,0,2018,2026
-1122898,Caio,41278,ACSC FC Arges,Right Winger,24,Brazil,0,5,5,12,116,95,5708,30,6,85,31,8,0,2022,2026
-610484,Adel Bettaieb,41278,ACSC FC Arges,Centre-Forward,28,Tunisia,21,13,10,20,375,275,16804,83,20,155,51,32,0,2014,2026
-319235,Robert Moldoveanu,41278,ACSC FC Arges,Left Winger,27,Romania,99,14,9,17,458,269,15308,48,18,71,19,18,15,2013,2026
-992822,Yanis Pîrvu,41278,ACSC FC Arges,Left Winger,19,Romania,11,6,2,13,212,156,7808,10,7,54,20,12,47,2021,2026
-840521,Franck Tchassem,41278,ACSC FC Arges,Right Winger,26,Cameroon,0,6,6,6,98,55,2575,7,1,7,1,0,0,2021,2026
-187290,Kevin Brobbey,41278,ACSC FC Arges,Centre-Forward,31,Netherlands,42,17,20,29,615,366,20269,75,27,145,46,61,2,2010,2026
-396320,Nacho Heras,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,29,Spain,20,11,9,15,247,200,12368,55,5,18,9,17,0,2015,2026
-1511602,Michael Idowu,41278,ACSC FC Arges,Right Winger,20,Nigeria,7,2,1,3,29,9,299,0,0,8,2,0,0,2025,2026
-135566,Mihai Roman,40843,FC Voluntari,Centre-Forward,34,Romania,90,17,15,22,634,402,23360,87,32,112,38,61,10,2009,2026
-1425720,Rafael Petriu,41278,ACSC FC Arges,Left Winger,16,Romania,0,1,1,1,2,1,12,0,0,0,0,0,0,2025,2025
-935015,Ștefan Lefter,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,1,6,2,13,198,111,9768,0,0,0,0,4,16,2021,2026
-1429148,Iulian Moldovan,41278,ACSC FC Arges,Left Winger,17,Romania,0,2,2,5,29,1,1,0,0,0,0,0,0,2023,2025
-1179035,Tudor Coșa,6429,FC Universitatea Cluj,Goalkeeper,17,Romania,99,4,3,10,107,31,2670,0,0,0,0,1,22,2023,2026
-416359,Neofytos Michail,6429,FC Universitatea Cluj,Goalkeeper,32,Cyprus,46,13,9,21,568,173,14886,0,0,0,0,4,17,2013,2026
-331971,Iulian Cristea,6429,FC Universitatea Cluj,Centre-Back,32,Romania,6,14,4,17,610,363,28988,19,11,82,18,58,10,2013,2026
-935028,Denis Moldovan,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,21,6,6,10,122,23,2085,0,0,0,0,1,0,2021,2026
-265209,Noah Loosli,6429,FC Universitatea Cluj,Centre-Back,29,Switzerland,20,15,9,20,553,358,29224,17,7,52,17,54,38,2012,2026
-566068,Jonathan Cissé,6429,FC Universitatea Cluj,Centre-Back,29,Cote d'Ivoire,26,11,4,14,381,236,19939,14,1,39,11,38,0,2016,2026
-1028313,Friday Adams,6429,FC Universitatea Cluj,Right-Back,23,Nigeria,12,5,3,10,183,128,8561,3,5,51,16,11,0,2022,2026
-600151,Florent Poulolo,6429,FC Universitatea Cluj,Centre-Back,29,Martinique,22,11,9,26,416,258,19546,7,4,97,16,40,24,2016,2026
-238947,Elio Capradossi,6429,FC Universitatea Cluj,Centre-Back,30,Uganda,23,16,10,26,679,304,24664,19,2,70,22,39,65,2011,2026
-992826,Alin Techereș,6429,FC Universitatea Cluj,Left-Back,19,Romania,59,6,4,15,162,91,6400,2,5,0,0,4,47,2021,2026
-1040558,Alin Chinteș,6429,FC Universitatea Cluj,Right-Back,20,Romania,2,6,3,17,185,82,5521,0,1,1,0,8,26,2021,2026
-229625,Dino Mikanovic,6429,FC Universitatea Cluj,Right-Back,32,Croatia,24,15,6,23,608,398,30634,9,32,61,16,76,11,2012,2026
-605547,Dorin Codrea,6429,FC Universitatea Cluj,Defensive Midfield,29,Romania,8,9,4,10,267,211,15066,11,2,22,5,58,0,2018,2026
-64126,Alexandru Chipciu,6429,FC Universitatea Cluj,Left-Back,37,Romania,27,20,6,29,977,630,47406,71,89,219,66,152,52,2007,2026
-699171,Pedro Pinho,6429,FC Universitatea Cluj,Defensive Midfield,26,Portugal,18,8,5,14,248,189,12039,21,4,43,15,58,0,2019,2026
-447557,Gabriel Simion,6429,FC Universitatea Cluj,Defensive Midfield,28,Romania,0,12,9,18,455,271,18005,1,3,65,13,47,0,2015,2026
-399551,Mouhamadou Drammeh,6429,FC Universitatea Cluj,Defensive Midfield,27,The Gambia,7,11,7,25,406,193,11249,20,11,136,40,36,7,2016,2026
-220816,Ovidiu Bic,6429,FC Universitatea Cluj,Central Midfield,32,Romania,94,16,7,17,609,440,31701,22,18,112,31,52,3,2011,2026
-937064,Luca Szimionaș,6429,FC Universitatea Cluj,Central Midfield,20,Romania,5,6,7,18,276,164,10777,15,5,13,3,30,36,2021,2026
-156639,Dan Nistor,6429,FC Universitatea Cluj,Attacking Midfield,38,Romania,10,18,7,21,812,622,47599,88,131,201,78,86,8,2009,2026
-859536,Oucasse Mendy,6429,FC Universitatea Cluj,Left Winger,25,France,29,7,7,16,208,127,6720,20,8,85,36,19,0,2019,2026
-798972,Issouf Macalou,6429,FC Universitatea Cluj,Right Winger,27,Cote d'Ivoire,19,10,8,14,330,266,15126,68,27,135,49,21,0,2017,2026
-457738,Jovo Lukić,6429,FC Universitatea Cluj,Centre-Forward,27,Bosnia-Herzegovina,17,11,6,20,451,327,20713,95,20,109,44,34,13,2016,2026
-477923,Jug Stanojev,6429,FC Universitatea Cluj,Right Winger,27,Serbia,33,10,6,19,305,236,14937,22,23,109,35,8,11,2016,2026
-271763,Alibek Aliev,6429,FC Universitatea Cluj,Centre-Forward,30,Sweden,25,15,13,18,444,322,20295,113,20,91,44,42,2,2012,2026
-896370,Atanas Trică,6429,FC Universitatea Cluj,Centre-Forward,22,Romania,0,7,6,14,199,131,5460,18,7,14,7,7,35,2020,2026
-1281133,Ibuchi Chukwu,6429,FC Universitatea Cluj,Left Winger,20,Nigeria,0,3,3,8,79,47,2315,9,7,0,0,7,0,2024,2026
-229292,Edvinas Gertmonas,6429,FC Universitatea Cluj,Goalkeeper,29,Lithuania,30,16,7,33,818,353,31561,0,0,0,0,22,69,2011,2026
-1345660,Lukas Pall,6429,FC Universitatea Cluj,Centre-Forward,16,Romania,96,3,3,8,50,18,1245,6,0,0,0,2,15,2024,2026
-1154774,Iustin Chirilă,6429,FC Universitatea Cluj,Goalkeeper,19,Romania,0,5,5,12,145,44,3783,0,0,0,0,0,2,2021,2026
-322519,Jasper van der Werff,6429,FC Universitatea Cluj,Centre-Back,26,Switzerland,16,14,11,24,513,227,16964,9,2,34,7,29,11,2013,2026
+292817,Matthias Verreth,312,FC Dinamo 1948,Defensive Midfield,28,Belgium,6,15,12,28,576,387,26970,51,29,238,81,40,46,2012,2026
+974722,Cristian Mihai,312,FC Dinamo 1948,Defensive Midfield,22,Romania,21,6,3,10,174,115,6767,5,3,74,16,15,17,2019,2026
+881064,Alexandru Musi,312,FC Dinamo 1948,Left Winger,22,Romania,7,7,5,20,326,181,10915,33,16,146,55,17,32,2020,2026
+462252,Diogo Pinto,312,FC Dinamo 1948,Attacking Midfield,27,Portugal,8,11,11,21,350,186,10559,38,10,74,31,10,1,2016,2026
+487688,Alberto Soro,312,FC Dinamo 1948,Attacking Midfield,27,Spain,29,11,6,15,375,227,11496,21,24,168,75,23,2,2016,2026
+225236,Danny Armstrong,312,FC Dinamo 1948,Right Winger,29,Scotland,77,15,9,24,479,329,22112,58,73,412,150,66,4,2012,2026
+646782,Mamoudou Karamoko,312,FC Dinamo 1948,Centre-Forward,27,France,9,10,11,27,407,182,10439,49,16,166,72,14,0,2017,2026
+723835,Adrian Mazilu,312,FC Dinamo 1948,Right Winger,21,Romania,26,8,5,22,261,106,5272,17,8,83,32,8,34,2019,2026
+208690,George Pușcaș,312,FC Dinamo 1948,Centre-Forward,30,Romania,47,16,13,33,774,461,26962,142,24,435,164,43,85,2011,2026
+434892,Alexandru Pop,312,FC Dinamo 1948,Centre-Forward,26,Romania,0,12,8,13,298,255,14916,51,16,138,58,18,8,2015,2026
+938160,Ianis Tarbă,312,FC Dinamo 1948,Right Winger,20,Romania,23,6,2,9,108,61,2318,7,3,30,7,4,37,2021,2026
+501062,Oliver Hintsa,312,FC Dinamo 1948,Centre-Forward,25,Eritrea,18,11,7,12,269,212,13069,60,27,2,1,15,5,2016,2026
+1345647,Rareș Andrei,301,FCSB,Goalkeeper,16,Romania,0,3,2,6,35,9,687,0,0,0,0,0,9,2024,2026
+992848,Ricardo Pădurariu,301,FCSB,Left-Back,19,Romania,4,6,4,12,92,69,5114,3,2,7,3,8,18,2021,2026
+289432,Dylan Batubinsika,301,FCSB,Centre-Back,30,DR Congo,21,16,12,36,552,312,25232,14,3,68,19,39,20,2011,2026
+388042,Karlo Muhar,7769,CFR Cluj,Defensive Midfield,30,Croatia,0,12,10,22,531,395,30285,37,18,295,80,92,0,2015,2026
+942790,Dean Zandbergen,312,FC Dinamo 1948,Centre-Forward,25,Netherlands,97,6,7,8,217,152,9758,50,17,137,61,20,0,2021,2026
+405399,Denis Drăguș,301,FCSB,Centre-Forward,27,Romania,10,12,11,30,545,268,14783,57,13,312,113,41,42,2015,2026
+562175,Ronny Labonne,301,FCSB,Right-Back,29,Martinique,97,10,8,14,374,182,12805,11,25,25,8,31,9,2017,2026
+730580,Aymen Boutoutaou,301,FCSB,Right Winger,25,Algeria,28,9,5,10,326,198,11265,42,12,189,70,11,1,2018,2026
+168933,Eddy Gnahoré,301,FCSB,Defensive Midfield,32,France,8,16,14,27,572,317,22394,25,16,131,36,38,2,2010,2026
+1340005,David Avram,301,FCSB,Centre-Forward,16,Romania,19,3,1,6,27,7,295,3,0,0,0,0,6,2024,2026
+547853,Răzvan Ducan,455,FC Rapid 1923,Goalkeeper,25,Romania,68,10,9,15,367,111,9723,0,0,0,0,11,13,2017,2026
+412024,Meriton Korenica,7769,CFR Cluj,Left Winger,29,Kosovo,0,12,8,22,512,375,26969,80,36,198,80,41,11,2015,2026
+861221,Ebenezer Annan,455,FC Rapid 1923,Left-Back,24,Ghana,27,7,9,23,313,187,12442,2,12,26,5,32,7,2020,2026
+1541371,Alex Șimonia,455,FC Rapid 1923,Goalkeeper,18,Romania,70,1,2,2,7,1,120,0,0,0,0,0,0,2025,2025
+1385195,Latif Ouedraogo,455,FC Rapid 1923,Left-Back,19,Burkina Faso,66,3,5,7,61,43,2846,0,2,1,0,7,0,2024,2026
+1385971,Chec Bebel Doumbia,455,FC Rapid 1923,Central Midfield,18,Burkina Faso,44,3,4,7,42,35,2048,1,0,1,0,3,2,2024,2026
+1073208,Ştefan Senciuc,455,FC Rapid 1923,Right-Back,19,Romania,17,5,7,12,149,116,8173,13,2,2,1,7,17,2022,2026
+489824,Vladan Bubanja,455,FC Rapid 1923,Defensive Midfield,27,Montenegro,22,11,10,20,507,316,21910,33,8,84,28,51,10,2016,2026
+1341646,Andrei Niculcea,455,FC Rapid 1923,Attacking Midfield,17,Romania,0,3,2,5,24,16,1000,5,0,0,0,1,13,2024,2026
+1009622,Alin Kumer Celik,455,FC Rapid 1923,Centre-Back,19,Slovenia,42,6,5,12,221,99,7543,8,1,1,0,9,23,2021,2026
+1062986,Jason Kodor,455,FC Rapid 1923,Centre-Forward,20,Romania,77,5,4,11,225,145,7386,36,4,10,2,11,28,2022,2026
+637273,Mohammed Kamara,455,FC Rapid 1923,Left Winger,28,Liberia,7,10,10,23,339,190,11375,46,16,229,99,54,4,2017,2026
+1444205,Mario Din-Licaciu,312,FC Dinamo 1948,Goalkeeper,16,Romania,28,1,1,4,41,0,0,0,0,0,0,0,0,2025,2025
+1580215,Eric Tape,455,FC Rapid 1923,Central Midfield,18,Cote d'Ivoire,79,1,1,2,11,0,0,0,0,0,0,0,0,2026,2026
+937038,Codruț Sandu,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,21,6,5,10,166,85,7255,0,0,0,0,1,18,2021,2026
+464195,Filip Stojilkovic,455,FC Rapid 1923,Centre-Forward,26,Switzerland,9,12,17,28,412,334,18863,100,28,290,126,37,32,2015,2026
+252661,Arnold Garita,301,FCSB,Centre-Forward,31,Cameroon,14,15,13,25,505,293,17595,95,26,193,89,43,0,2012,2026
+451317,Kennedy Boateng,312,FC Dinamo 1948,Centre-Back,28,Togo,4,11,7,17,436,313,26668,19,5,118,41,58,16,2016,2026
+623420,Valentin Țicu,29831,FCV Farul Constanta,Left-Back,26,Romania,3,10,3,11,340,200,16048,8,12,64,14,39,12,2017,2026
+1163169,Mihnea Ștefan,312,FC Dinamo 1948,Central Midfield,19,Romania,0,2,2,2,2,0,0,0,0,0,0,0,0,2022,2025
+1002548,Alexandru Tabuncic,312,FC Dinamo 1948,Right-Back,19,Moldova,0,5,1,6,68,8,264,0,0,0,0,1,7,2021,2026
+1481374,Matteo N'Giuwu,312,FC Dinamo 1948,Defensive Midfield,17,Romania,0,1,1,4,13,0,0,0,0,0,0,0,0,2025,2025
+134158,Georgi Milanov,312,FC Dinamo 1948,Attacking Midfield,33,Bulgaria,17,19,8,32,793,592,35543,60,82,113,20,66,69,2008,2026
+354338,Hakim Abdallah,952,UTA Arad,Centre-Forward,28,Madagascar,11,14,11,22,470,318,18654,71,26,277,91,14,22,2013,2026
+157491,Jordan Ikoko,312,FC Dinamo 1948,Right-Back,31,DR Congo,32,17,15,35,785,457,33900,7,30,29,10,59,41,2009,2025
+935015,Ștefan Lefter,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,1,6,2,13,201,114,10038,0,0,0,0,5,16,2021,2026
+245072,Stipe Perica,312,FC Dinamo 1948,Centre-Forward,29,Croatia,0,15,14,32,633,368,18287,101,17,185,87,55,17,2012,2026
+203970,Charalampos Kyriakou,312,FC Dinamo 1948,Defensive Midfield,30,Cyprus,0,16,4,24,767,457,28549,11,18,34,8,53,97,2011,2026
+1132839,Luca Bărbulescu,41061,Corvinul Hunedoara,Centre-Forward,18,Romania,48,4,4,7,79,27,937,3,0,3,0,1,2,2021,2025
+863556,Antonio Bordușanu,312,FC Dinamo 1948,Right Winger,20,Romania,20,7,3,11,248,90,4714,5,5,19,5,3,15,2020,2026
+1179035,Tudor Coșa,6429,FC Universitatea Cluj,Goalkeeper,17,Romania,99,4,3,10,112,33,2850,0,0,0,0,1,22,2023,2026
+416359,Neofytos Michail,6429,FC Universitatea Cluj,Goalkeeper,32,Cyprus,46,13,9,21,571,173,14886,0,0,0,0,4,17,2013,2026
+331971,Iulian Cristea,6429,FC Universitatea Cluj,Centre-Back,32,Romania,6,14,4,17,613,366,29200,19,11,84,18,59,10,2013,2026
+935028,Denis Moldovan,6429,FC Universitatea Cluj,Goalkeeper,21,Romania,21,6,6,10,125,23,2085,0,0,0,0,1,0,2021,2026
+1028313,Friday Adams,6429,FC Universitatea Cluj,Right-Back,23,Nigeria,12,5,3,10,186,128,8561,3,5,51,16,11,0,2022,2026
+992826,Alin Techereș,6429,FC Universitatea Cluj,Left-Back,19,Romania,59,6,4,15,165,91,6400,2,5,0,0,4,47,2021,2026
+600151,Florent Poulolo,6429,FC Universitatea Cluj,Centre-Back,29,Martinique,22,11,9,26,419,260,19726,7,4,98,17,40,24,2016,2026
+265209,Noah Loosli,6429,FC Universitatea Cluj,Centre-Back,29,Switzerland,20,15,9,20,556,358,29224,17,7,52,17,54,38,2012,2026
+238947,Elio Capradossi,6429,FC Universitatea Cluj,Centre-Back,30,Uganda,23,16,10,26,682,306,24722,19,2,70,22,39,65,2011,2026
+566068,Jonathan Cissé,6429,FC Universitatea Cluj,Centre-Back,29,Cote d'Ivoire,26,11,4,14,384,236,19939,14,1,39,11,38,0,2016,2026
+229625,Dino Mikanovic,6429,FC Universitatea Cluj,Right-Back,32,Croatia,24,15,6,23,611,401,30882,9,32,61,16,76,11,2012,2026
+605547,Dorin Codrea,6429,FC Universitatea Cluj,Defensive Midfield,29,Romania,8,9,4,10,270,213,15246,12,2,26,6,59,0,2018,2026
+699171,Pedro Pinho,6429,FC Universitatea Cluj,Defensive Midfield,26,Portugal,18,8,5,14,251,190,12096,21,4,45,15,59,0,2019,2026
+64126,Alexandru Chipciu,6429,FC Universitatea Cluj,Left-Back,37,Romania,27,20,6,29,980,633,47676,71,89,220,67,152,52,2007,2026
+447557,Gabriel Simion,6429,FC Universitatea Cluj,Defensive Midfield,28,Romania,0,12,9,18,457,273,18160,1,3,67,13,48,0,2015,2026
+1040558,Alin Chinteș,6429,FC Universitatea Cluj,Right-Back,20,Romania,2,6,3,17,188,82,5521,0,1,1,0,8,26,2021,2026
+399551,Mouhamadou Drammeh,6429,FC Universitatea Cluj,Defensive Midfield,27,The Gambia,7,11,7,25,409,195,11372,21,11,140,41,36,7,2016,2026
+1616812,Darius Mihăilă,6429,FC Universitatea Cluj,Attacking Midfield,0,Romania,0,1,1,1,1,0,0,0,0,0,0,0,0,2026,2026
+457738,Jovo Lukić,6429,FC Universitatea Cluj,Centre-Forward,27,Bosnia-Herzegovina,17,11,6,20,454,330,20983,99,21,118,48,36,13,2016,2026
+798972,Issouf Macalou,6429,FC Universitatea Cluj,Right Winger,27,Cote d'Ivoire,19,10,8,14,333,269,15377,69,29,140,52,22,0,2017,2026
+156639,Dan Nistor,6429,FC Universitatea Cluj,Attacking Midfield,38,Romania,10,18,7,21,815,622,47599,88,131,201,78,86,8,2009,2026
+859536,Oucasse Mendy,6429,FC Universitatea Cluj,Left Winger,25,France,29,7,7,16,211,130,6926,20,8,89,36,21,0,2019,2026
+477923,Jug Stanojev,6429,FC Universitatea Cluj,Right Winger,27,Serbia,33,10,6,19,308,239,15023,22,25,109,35,8,11,2016,2026
+937064,Luca Szimionaș,6429,FC Universitatea Cluj,Central Midfield,20,Romania,5,6,7,18,279,164,10777,15,5,13,3,30,36,2021,2026
+271763,Alibek Aliev,6429,FC Universitatea Cluj,Centre-Forward,30,Sweden,25,15,13,18,447,324,20315,113,20,91,44,42,2,2012,2026
+220816,Ovidiu Bic,6429,FC Universitatea Cluj,Central Midfield,32,Romania,94,16,7,17,612,443,31971,22,19,116,33,54,3,2011,2026
+1341647,Eduardo Bodnar,6429,FC Universitatea Cluj,Centre-Forward,17,Romania,0,3,2,4,20,14,629,1,1,0,0,1,14,2024,2026
+1281133,Ibuchi Chukwu,6429,FC Universitatea Cluj,Left Winger,20,Nigeria,0,3,3,8,81,47,2315,9,7,0,0,7,0,2024,2026
+1345660,Lukas Pall,6429,FC Universitatea Cluj,Centre-Forward,16,Romania,96,3,3,9,56,19,1246,6,0,0,0,3,15,2024,2026
+896370,Atanas Trică,6429,FC Universitatea Cluj,Centre-Forward,22,Romania,0,7,6,15,203,132,5467,18,7,14,7,7,35,2020,2026
+1154774,Iustin Chirilă,6429,FC Universitatea Cluj,Goalkeeper,19,Romania,0,5,5,12,147,46,3963,0,0,0,0,0,2,2021,2026
+229292,Edvinas Gertmonas,6429,FC Universitatea Cluj,Goalkeeper,29,Lithuania,30,16,7,33,820,354,31651,0,0,0,0,22,69,2011,2026
+1118865,Alexandru Bota,8818,FC Botosani,Central Midfield,17,Romania,20,5,3,10,186,58,3241,9,6,7,1,6,30,2022,2026
+241254,Andrei Artean,6429,FC Universitatea Cluj,Defensive Midfield,31,Romania,18,14,8,19,577,444,34565,25,12,95,26,72,0,2012,2026
+341141,Răzvan Oaidă,952,UTA Arad,Defensive Midfield,28,Romania,26,13,8,17,493,267,15711,11,13,66,18,42,24,2014,2026
 148004,Alin Toșca,6429,FC Universitatea Cluj,Centre-Back,33,Romania,14,18,11,31,755,460,38458,3,7,19,7,43,40,2009,2026
-406791,Andrej Fábry,41061,Corvinul Hunedoara,Attacking Midfield,29,Slovakia,22,12,10,20,440,330,19972,51,43,303,107,33,4,2015,2026
-241254,Andrei Artean,6429,FC Universitatea Cluj,Defensive Midfield,31,Romania,18,14,8,19,575,442,34385,25,12,95,26,72,0,2012,2026
-1118865,Alexandru Bota,8818,FC Botosani,Central Midfield,17,Romania,20,5,3,10,184,56,3094,9,6,7,1,5,30,2022,2026
-341141,Răzvan Oaidă,952,UTA Arad,Defensive Midfield,28,Romania,26,13,8,17,490,267,15711,11,13,66,18,42,24,2014,2026
-1462852,Alex Orban,6429,FC Universitatea Cluj,Left Winger,16,Romania,0,2,3,6,53,16,909,1,2,0,0,1,1,2025,2026
-938509,Igor Nikic,41278,ACSC FC Arges,Goalkeeper,26,Montenegro,77,7,6,14,283,186,16729,0,1,0,0,6,9,2020,2026
-1502575,Matteo Șerban,41278,ACSC FC Arges,Goalkeeper,16,Romania,0,2,1,4,18,4,183,0,0,0,0,0,4,2025,2026
-645195,Tiago Gonçalves,41278,ACSC FC Arges,Left-Back,26,Portugal,25,9,10,17,253,150,10589,7,20,47,18,16,0,2018,2026
-613968,Evagoras Antoniou,41278,ACSC FC Arges,Centre-Back,23,Cyprus,0,9,8,15,261,137,10077,1,2,0,0,21,21,2018,2026
+406791,Andrej Fábry,41061,Corvinul Hunedoara,Attacking Midfield,29,Slovakia,22,12,10,20,443,332,20142,51,43,304,108,33,4,2015,2026
+1462852,Alex Orban,6429,FC Universitatea Cluj,Left Winger,16,Romania,0,2,3,6,55,18,942,1,2,0,0,1,1,2025,2026
+322519,Jasper van der Werff,6429,FC Universitatea Cluj,Centre-Back,26,Switzerland,16,14,11,24,515,227,16964,9,2,34,7,29,11,2013,2026
+938509,Igor Nikic,41278,ACSC FC Arges,Goalkeeper,26,Montenegro,77,7,6,14,286,189,16999,0,1,0,0,6,9,2020,2026
+123251,Cătălin Straton,41278,ACSC FC Arges,Goalkeeper,37,Romania,1,18,8,15,714,239,20940,0,0,0,0,21,1,2009,2026
+1502575,Matteo Șerban,41278,ACSC FC Arges,Goalkeeper,16,Romania,0,2,1,4,21,4,183,0,0,0,0,0,4,2025,2026
+603327,Florin Borța,41278,ACSC FC Arges,Left-Back,27,Romania,23,10,4,10,312,189,14429,4,6,49,11,38,1,2017,2026
+1076318,Luca Crăciun,41278,ACSC FC Arges,Goalkeeper,18,Romania,0,3,2,7,85,9,632,0,0,0,0,0,3,2024,2026
+837239,Mario Tudose,41278,ACSC FC Arges,Centre-Back,21,Romania,6,7,2,14,179,140,11368,8,3,24,6,6,38,2020,2026
+556116,Dorinel Oancea,41278,ACSC FC Arges,Right-Back,29,Romania,26,11,3,8,375,254,16345,5,17,65,13,56,0,2016,2026
+613968,Evagoras Antoniou,41278,ACSC FC Arges,Centre-Back,23,Cyprus,0,9,8,15,263,139,10257,1,2,0,0,22,21,2018,2026
+482364,Leard Sadriu,41278,ACSC FC Arges,Centre-Back,25,Kosovo,3,11,4,21,418,232,19105,5,2,19,4,63,29,2016,2026
+645195,Tiago Gonçalves,41278,ACSC FC Arges,Left-Back,26,Portugal,25,9,10,17,256,153,10814,7,20,50,19,16,0,2018,2026
+381209,Rober Sierra,41278,ACSC FC Arges,Defensive Midfield,30,Spain,27,11,9,17,351,289,24134,9,3,27,9,42,0,2015,2026
+635803,Oluwatobiloba Alagbe,41278,ACSC FC Arges,Defensive Midfield,26,Nigeria,69,9,6,11,312,171,11603,7,3,48,7,35,0,2018,2026
+394481,Costinel Tofan,41278,ACSC FC Arges,Right-Back,30,Romania,2,12,3,8,413,269,20207,5,6,44,7,43,0,2015,2026
+1483399,Antonio Marin,41278,ACSC FC Arges,Centre-Back,18,Romania,0,2,1,3,52,1,1,0,0,0,0,0,0,2025,2026
+520084,Guilherme Garutti,41278,ACSC FC Arges,Centre-Back,32,Brazil,15,13,9,12,328,191,15240,7,4,51,15,28,0,2010,2026
+986504,Robert Popescu,41278,ACSC FC Arges,Central Midfield,23,Romania,0,6,5,7,176,78,3250,7,3,32,15,5,0,2021,2026
+451331,Ionuț Rădescu,41278,ACSC FC Arges,Central Midfield,31,Romania,16,11,2,8,390,322,20704,29,12,47,11,29,0,2016,2026
 1262049,Eduard Cotea,41278,ACSC FC Arges,Central Midfield,20,Romania,0,3,2,3,13,2,180,0,0,0,0,0,0,2023,2026
-635803,Oluwatobiloba Alagbe,41278,ACSC FC Arges,Defensive Midfield,26,Nigeria,69,9,6,11,309,168,11517,7,3,45,7,34,0,2018,2026
-660342,Gabriel Charpentier,41278,ACSC FC Arges,Centre-Forward,27,Congo,9,10,12,17,336,123,5359,31,11,92,38,19,3,2017,2026
-573111,Mamadou Mendy,41278,ACSC FC Arges,Left Winger,28,Senegal,0,9,5,7,332,256,17317,41,15,103,37,33,0,2017,2025
-1264865,Daniel Sandu,41278,ACSC FC Arges,Right Winger,19,Romania,18,4,4,7,83,23,830,0,0,9,1,0,0,2023,2026
-510260,Taylor Luvambo,41278,ACSC FC Arges,Left Winger,27,France,92,12,8,10,331,178,8759,33,9,73,30,14,0,2015,2026
-1600901,Andreas Bălașa,41278,ACSC FC Arges,Centre-Forward,16,Romania,0,1,1,1,2,0,0,0,0,0,0,0,0,2026,2026
-326363,André Moreira,7769,CFR Cluj,Goalkeeper,30,Portugal,0,14,14,27,554,204,18180,0,0,0,0,13,17,2013,2026
-252192,Octavian Vâlceanu,7769,CFR Cluj,Goalkeeper,29,Romania,31,13,8,7,374,201,17944,0,0,0,0,17,0,2012,2026
-1570618,Marc Filip,7769,CFR Cluj,Goalkeeper,18,Romania,0,1,1,2,8,0,0,0,0,0,0,0,0,2026,2026
-1591681,Cătălin Pușcaș,7769,CFR Cluj,Goalkeeper,15,Romania,0,1,1,3,4,0,0,0,0,0,0,0,0,2026,2026
-271294,Árpád Tordai,952,UTA Arad,Goalkeeper,29,Romania,0,15,11,22,503,167,14799,0,0,0,0,6,12,2012,2026
-675500,Rareș Gal,7769,CFR Cluj,Goalkeeper,25,Romania,1,9,5,14,217,30,2683,0,0,0,0,3,0,2018,2026
-393436,Aly Abeid,7769,CFR Cluj,Left-Back,28,Mauritania,0,14,8,25,532,276,20241,6,11,57,15,39,70,2013,2026
-682719,Simão Rocha,7769,CFR Cluj,Left-Back,25,Portugal,14,8,4,14,274,129,9636,6,11,51,14,26,0,2019,2026
-502669,Iva Gelashvili,7769,CFR Cluj,Centre-Back,25,Georgia,3,12,9,29,386,207,15926,11,3,8,3,25,54,2015,2026
-410281,Renato Pantalon,7769,CFR Cluj,Centre-Back,28,Croatia,42,12,10,17,378,243,18914,5,0,16,7,55,0,2015,2026
-1043574,Viktor Kun,7769,CFR Cluj,Right-Back,22,Romania,86,5,3,8,110,33,2189,0,0,4,3,5,0,2021,2026
-1008261,Leo Saca,7769,CFR Cluj,Centre-Back,19,Moldova,40,5,3,6,50,24,1347,2,1,0,0,4,18,2021,2026
-589753,Ilija Masic,7769,CFR Cluj,Centre-Back,27,Bosnia-Herzegovina,4,11,6,14,356,183,12338,13,4,1,0,22,0,2016,2026
-226080,Anton Kresic,7769,CFR Cluj,Centre-Back,30,Croatia,41,15,11,23,571,291,22501,26,8,40,12,46,8,2011,2026
-708375,Rion Zejnullahu,7769,CFR Cluj,Left-Back,23,Kosovo,33,7,7,13,203,37,2822,2,0,0,0,6,0,2019,2026
+535958,Ricardo Matos,41278,ACSC FC Arges,Centre-Forward,26,Portugal,17,9,10,16,276,161,8837,43,10,145,59,15,0,2018,2026
+319235,Robert Moldoveanu,41278,ACSC FC Arges,Left Winger,27,Romania,99,14,9,17,461,270,15319,48,18,71,19,18,15,2013,2026
+660342,Gabriel Charpentier,41278,ACSC FC Arges,Centre-Forward,27,Congo,9,10,12,17,339,124,5380,31,11,92,38,19,3,2017,2026
+365449,Xian Emmers,41278,ACSC FC Arges,Attacking Midfield,27,Belgium,80,13,11,29,528,271,16119,35,28,132,59,10,23,2014,2026
+992822,Yanis Pîrvu,41278,ACSC FC Arges,Left Winger,19,Romania,11,6,2,13,215,159,8062,11,7,64,25,12,47,2021,2026
+1511602,Michael Idowu,41278,ACSC FC Arges,Right Winger,20,Nigeria,7,2,1,3,32,9,299,0,0,8,2,0,0,2025,2026
+136128,Vadim Rață,41278,ACSC FC Arges,Central Midfield,33,Moldova,22,18,10,22,722,545,40367,37,28,112,25,107,106,2009,2026
+1600901,Andreas Bălașa,41278,ACSC FC Arges,Centre-Forward,16,Romania,0,1,1,1,3,0,0,0,0,0,0,0,0,2026,2026
+573111,Mamadou Mendy,41278,ACSC FC Arges,Left Winger,28,Senegal,8,10,6,8,335,258,17342,41,15,103,37,33,0,2017,2026
+510260,Taylor Luvambo,41278,ACSC FC Arges,Left Winger,27,France,92,12,8,10,334,181,8923,33,9,78,31,14,0,2015,2026
+1327485,Claudiu Stancu,41278,ACSC FC Arges,Left-Back,15,Romania,0,4,3,7,73,21,986,0,3,0,0,0,11,2022,2026
+1264865,Daniel Sandu,41278,ACSC FC Arges,Right Winger,19,Romania,18,4,4,7,86,23,830,0,0,9,1,0,0,2023,2026
+1379453,Andrei Dinu,41278,ACSC FC Arges,Centre-Back,17,Romania,0,4,3,6,72,5,277,0,0,0,0,0,0,2022,2026
+610484,Adel Bettaieb,41278,ACSC FC Arges,Centre-Forward,28,Tunisia,21,13,10,21,377,276,16849,84,20,155,51,32,0,2014,2026
+209063,Marius Briceag,41278,ACSC FC Arges,Left-Back,33,Romania,5,17,9,14,632,401,32488,8,18,51,6,54,0,2010,2026
+1122898,Caio,41278,ACSC FC Arges,Right Winger,24,Brazil,0,5,5,13,120,96,5732,31,6,86,32,8,0,2022,2026
+1160214,Adriano Manole,41278,ACSC FC Arges,Central Midfield,17,Romania,98,5,3,7,67,13,213,0,0,0,0,0,0,2021,2026
+840521,Franck Tchassem,41278,ACSC FC Arges,Right Winger,26,Cameroon,0,6,6,6,100,58,2726,7,1,7,1,1,0,2021,2026
+396320,Nacho Heras,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,29,Spain,20,11,9,15,249,201,12392,55,5,18,9,17,0,2015,2026
+1429148,Iulian Moldovan,41278,ACSC FC Arges,Left Winger,17,Romania,0,2,2,5,29,1,1,0,0,0,0,0,0,2023,2025
+623412,Mihai Popa,7769,CFR Cluj,Goalkeeper,24,Romania,71,12,8,17,383,161,14389,0,1,0,0,22,11,2015,2026
+187290,Kevin Brobbey,41278,ACSC FC Arges,Centre-Forward,31,Netherlands,42,17,20,30,618,369,20397,76,28,145,46,61,2,2010,2026
+135566,Mihai Roman,40843,FC Voluntari,Centre-Forward,34,Romania,90,17,15,22,636,404,23432,87,32,113,38,61,10,2009,2026
+97562,Takayuki Seto,41278,ACSC FC Arges,Defensive Midfield,39,Japan,25,18,7,18,698,528,39900,36,28,34,5,56,0,2009,2026
+252192,Octavian Vâlceanu,7769,CFR Cluj,Goalkeeper,30,Romania,31,13,8,7,377,204,18214,0,0,0,0,17,0,2012,2026
+1425720,Rafael Petriu,41278,ACSC FC Arges,Left Winger,16,Romania,0,1,1,1,2,1,12,0,0,0,0,0,0,2025,2025
+675500,Rareș Gal,7769,CFR Cluj,Goalkeeper,25,Romania,1,9,5,14,220,30,2683,0,0,0,0,3,0,2018,2026
+167685,Alessandro Micai,7769,CFR Cluj,Goalkeeper,31,Italy,0,18,13,20,666,420,37802,0,0,0,0,35,0,2008,2026
+393436,Aly Abeid,7769,CFR Cluj,Left-Back,28,Mauritania,0,14,8,25,535,277,20254,6,11,57,15,39,70,2013,2026
+615930,Matei Ilie,7769,CFR Cluj,Centre-Back,22,Romania,27,9,7,23,407,178,13440,9,4,46,12,27,23,2018,2026
+1043574,Viktor Kun,7769,CFR Cluj,Right-Back,22,Romania,86,5,3,8,113,34,2191,0,0,4,3,5,0,2021,2026
+353365,Marcus Coco,7769,CFR Cluj,Right-Back,29,Guadeloupe,0,14,6,19,584,375,21145,16,19,165,34,57,20,2013,2026
+157509,Kurt Zouma,7769,CFR Cluj,Centre-Back,30,France,0,18,13,40,905,490,38679,29,8,134,42,41,42,2009,2026
+682719,Simão Rocha,7769,CFR Cluj,Left-Back,25,Portugal,14,8,4,14,277,130,9726,6,11,52,14,26,0,2019,2026
+464465,Daniel Dumbravanu,40843,FC Voluntari,Centre-Back,25,Moldova,4,11,12,31,481,166,12055,4,3,8,2,28,31,2016,2026
+226080,Anton Kresic,7769,CFR Cluj,Centre-Back,30,Croatia,41,15,11,23,574,293,22649,27,8,43,13,46,8,2011,2026
+450290,Antonio Bosec,7769,CFR Cluj,Right-Back,27,Croatia,0,11,5,10,399,315,24963,8,27,56,9,54,2,2016,2026
 1250029,Alexandru Radu,7769,CFR Cluj,Centre-Back,19,Romania,0,3,1,6,71,1,3,0,0,0,0,0,0,2023,2026
-44698,Mário Camora,7769,CFR Cluj,Left-Back,39,Romania,45,22,5,22,924,719,60622,19,48,66,16,123,10,2005,2026
-675506,Alin Fică,7769,CFR Cluj,Central Midfield,25,Romania,8,9,4,15,364,147,7739,9,4,82,29,11,2,2018,2026
-344519,Bruno Costa,7769,CFR Cluj,Central Midfield,29,Portugal,0,16,11,20,545,289,18476,24,27,108,40,52,26,2011,2026
-948255,Cristian Perea,7769,CFR Cluj,Defensive Midfield,21,Spain,66,4,4,12,129,91,5538,1,2,3,3,23,11,2023,2026
-332875,Adi Nalic,7769,CFR Cluj,Attacking Midfield,28,Bosnia-Herzegovina,7,14,11,22,463,269,14918,42,26,180,69,37,9,2013,2026
-291656,Adrian Păun,7769,CFR Cluj,Central Midfield,31,Romania,10,16,3,19,688,483,26084,51,49,151,54,50,25,2011,2026
-661754,Yuval Sade,7769,CFR Cluj,Defensive Midfield,26,Israel,0,9,4,12,302,185,11425,7,4,35,13,27,10,2018,2026
-531599,Ervin Omic,7769,CFR Cluj,Defensive Midfield,23,Austria,18,10,9,22,387,248,14420,22,17,67,22,43,45,2017,2026
-898351,Francisco Barrios,7769,CFR Cluj,Central Midfield,24,Uruguay,5,7,4,15,247,128,7030,4,5,4,0,20,0,2020,2026
-1304289,Amin Ziblim,7769,CFR Cluj,Central Midfield,20,Ghana,23,3,5,10,115,50,3215,3,0,1,1,9,0,2024,2026
-143039,Damjan Djokovic,7769,CFR Cluj,Defensive Midfield,36,Croatia,0,18,17,31,746,524,37831,46,34,228,54,107,0,2009,2026
-1509384,Mateo Miclăuș,7769,CFR Cluj,Right Midfield,17,Romania,22,2,3,7,31,8,375,0,1,0,0,0,0,2025,2026
-1250026,Alex Nădășanu,7769,CFR Cluj,Central Midfield,20,Romania,0,3,3,5,19,4,211,0,0,0,0,0,0,2024,2026
-1248145,Răzvan Gligor,7769,CFR Cluj,Attacking Midfield,20,Romania,26,4,3,8,71,12,461,0,1,0,0,2,0,2022,2026
-902111,Denis Crișan,7769,CFR Cluj,Attacking Midfield,19,Romania,70,4,1,5,43,8,340,1,0,0,0,0,8,2021,2026
-435712,Andrei Cordea,7769,CFR Cluj,Right Winger,27,Romania,11,11,8,22,413,299,20289,64,39,256,83,37,7,2015,2026
-993687,Lorenzo Biliboc,7769,CFR Cluj,Right Winger,19,Romania,17,6,6,15,196,159,9321,45,14,83,31,5,12,2021,2026
-808224,Andres Sfait,7769,CFR Cluj,Left Winger,21,Romania,77,6,4,16,294,119,7048,15,5,28,9,12,8,2021,2026
-169362,Luka Zahovic,7769,CFR Cluj,Centre-Forward,30,Slovenia,0,17,8,26,754,468,28506,143,51,192,83,48,46,2010,2026
-770036,Jelani Dumas,7769,CFR Cluj,Centre-Forward,21,Belgium,99,5,3,7,86,56,2624,15,9,5,3,4,1,2021,2026
-131589,Billel Omrani,7769,CFR Cluj,Centre-Forward,33,Algeria,29,18,10,29,789,389,22353,86,45,72,25,70,16,2009,2026
-1179004,Cosmin Matei,7769,CFR Cluj,Right Winger,17,Romania,80,4,2,6,34,20,1132,1,1,0,0,1,14,2023,2026
-138850,Stefan Drazic,7769,CFR Cluj,Centre-Forward,34,Serbia,9,14,8,19,495,434,29622,116,41,103,40,31,1,2011,2026
-1032632,Nicolae Sula,7769,CFR Cluj,Centre-Forward,20,Moldova,98,5,3,8,92,38,1519,7,3,1,0,2,15,2022,2026
-623412,Mihai Popa,7769,CFR Cluj,Goalkeeper,24,Romania,71,12,8,17,379,160,14269,0,1,0,0,22,11,2015,2026
-353365,Marcus Coco,7769,CFR Cluj,Right-Back,29,Guadeloupe,0,14,6,19,582,373,20983,16,18,164,34,56,20,2013,2026
-167685,Alessandro Micai,7769,CFR Cluj,Goalkeeper,31,Italy,0,18,13,20,664,418,37622,0,0,0,0,35,0,2008,2026
-450290,Antonio Bosec,7769,CFR Cluj,Right-Back,27,Croatia,0,11,5,9,396,313,24783,8,27,56,9,54,2,2016,2026
-615930,Matei Ilie,7769,CFR Cluj,Centre-Back,22,Romania,27,9,7,23,405,176,13260,9,4,44,12,27,23,2018,2026
-157509,Kurt Zouma,7769,CFR Cluj,Centre-Back,30,France,0,18,13,40,905,489,38672,29,8,134,42,41,42,2009,2026
-464465,Daniel Dumbravanu,40843,FC Voluntari,Centre-Back,25,Moldova,4,11,12,31,479,164,11906,4,3,8,2,28,31,2016,2026
-892105,Lindon Emërllahu,7769,CFR Cluj,Central Midfield,22,Kosovo,0,8,4,22,322,185,13101,15,13,52,22,43,19,2019,2026
-563614,Tidiane Keita,9465,Petrolul Ploiesti,Central Midfield,28,France,0,11,8,17,402,271,16873,11,8,56,14,41,0,2013,2025
-690872,Drilon Islami,7769,CFR Cluj,Defensive Midfield,24,Kosovo,0,8,5,13,320,179,12136,6,6,2,1,36,0,2019,2026
+589753,Ilija Masic,7769,CFR Cluj,Centre-Back,27,Bosnia-Herzegovina,4,11,6,14,359,183,12338,13,4,1,0,22,0,2016,2026
+708375,Rion Zejnullahu,7769,CFR Cluj,Left-Back,23,Kosovo,33,7,7,13,206,37,2822,2,0,0,0,6,0,2019,2026
+44698,Mário Camora,7769,CFR Cluj,Left-Back,39,Romania,45,22,5,22,927,721,60722,19,48,67,16,123,10,2005,2026
+563614,Tidiane Keita,9465,Petrolul Ploiesti,Central Midfield,28,France,0,11,8,17,404,273,16931,12,8,56,14,41,0,2013,2025
+291656,Adrian Păun,7769,CFR Cluj,Central Midfield,31,Romania,10,16,3,19,691,485,26122,51,49,151,54,51,25,2011,2026
+675506,Alin Fică,7769,CFR Cluj,Central Midfield,25,Romania,8,9,4,15,367,147,7739,9,4,82,29,11,2,2018,2026
+892105,Lindon Emërllahu,7769,CFR Cluj,Central Midfield,22,Kosovo,0,8,4,22,331,187,13204,15,13,52,22,43,19,2019,2026
 1204451,Jayden Rus,7769,CFR Cluj,Attacking Midfield,15,Romania,0,1,1,5,44,0,0,0,0,0,0,0,0,2025,2025
-547786,Louis Munteanu,7769,CFR Cluj,Centre-Forward,23,Romania,0,12,8,30,527,274,18713,95,30,454,186,25,57,2015,2026
-369384,Mohamed Badamosi,7769,CFR Cluj,Centre-Forward,26,The Gambia,0,12,9,23,428,274,15323,60,25,253,109,30,27,2014,2026
-435208,Béni Nkololo,7769,CFR Cluj,Right Winger,28,France,0,13,14,25,488,327,21509,54,32,165,65,42,0,2014,2026
+902111,Denis Crișan,7769,CFR Cluj,Attacking Midfield,19,Romania,70,4,1,5,46,8,340,1,0,0,0,0,8,2021,2026
+435712,Andrei Cordea,7769,CFR Cluj,Right Winger,27,Romania,11,11,8,22,416,302,20553,65,40,261,84,38,7,2015,2026
+1248145,Răzvan Gligor,7769,CFR Cluj,Attacking Midfield,20,Romania,26,4,3,8,74,12,461,0,1,0,0,2,0,2022,2026
+143039,Damjan Djokovic,7769,CFR Cluj,Defensive Midfield,36,Croatia,0,18,17,31,748,526,38011,47,34,228,54,107,0,2009,2026
+690872,Drilon Islami,7769,CFR Cluj,Defensive Midfield,24,Kosovo,0,8,5,13,322,179,12136,6,6,2,1,36,0,2019,2026
+369384,Mohamed Badamosi,7769,CFR Cluj,Centre-Forward,26,The Gambia,0,12,9,24,432,278,15529,63,26,266,116,30,27,2014,2026
+993687,Lorenzo Biliboc,7769,CFR Cluj,Right Winger,20,Romania,17,6,6,15,199,161,9449,45,14,86,32,5,12,2021,2026
+547786,Louis Munteanu,7769,CFR Cluj,Centre-Forward,23,Romania,0,12,8,30,531,274,18713,95,30,454,186,25,57,2015,2026
+808224,Andres Sfait,7769,CFR Cluj,Left Winger,21,Romania,77,6,4,16,297,122,7190,15,5,29,9,14,8,2021,2026
+435208,Béni Nkololo,7769,CFR Cluj,Right Winger,28,France,0,13,14,25,492,329,21689,54,32,169,65,42,0,2014,2026
+1185785,Moussa Samake,7769,CFR Cluj,Centre-Forward,20,Mali,0,4,5,8,96,67,3997,20,1,0,0,4,1,2023,2026
 174915,Islam Slimani,7769,CFR Cluj,Centre-Forward,37,Algeria,0,17,15,37,894,572,35153,201,82,282,111,90,105,2009,2025
-1185785,Moussa Samake,7769,CFR Cluj,Centre-Forward,20,Mali,0,4,5,8,94,65,3842,20,1,0,0,4,1,2023,2026
-234882,Iacopo Cernigoi,7769,CFR Cluj,Centre-Forward,30,Italy,0,15,18,18,552,321,16600,70,13,6,4,32,0,2012,2026
-1154801,Alin Ferenți,7769,CFR Cluj,Right Winger,20,Romania,0,2,2,3,9,0,0,0,0,0,0,0,0,2023,2024
-937037,Rafael Munteanu,29831,FCV Farul Constanta,Goalkeeper,20,Romania,12,6,4,13,142,70,6054,0,0,0,0,2,24,2021,2026
+169362,Luka Zahovic,7769,CFR Cluj,Centre-Forward,30,Slovenia,0,17,8,26,756,470,28636,143,51,192,83,48,46,2010,2026
 43300,Ciprian Deac,7769,CFR Cluj,Right Winger,39,Romania,10,21,6,30,1085,656,47752,110,138,117,43,109,35,2005,2025
-216660,Alexandru Buzbuchi,29831,FCV Farul Constanta,Goalkeeper,32,Romania,1,17,3,14,674,212,19041,0,0,0,0,10,14,2010,2026
-1335800,David Barbu,29831,FCV Farul Constanta,Goalkeeper,18,Romania,0,3,3,6,28,5,450,0,0,0,0,1,0,2024,2026
-869463,Gustavo Marins,29831,FCV Farul Constanta,Centre-Back,24,Brazil,4,8,4,16,292,108,8346,4,2,29,4,17,0,2019,2026
-666463,Dan Sîrbu,29831,FCV Farul Constanta,Right-Back,23,Romania,22,10,3,17,295,183,11011,0,6,28,6,19,36,2016,2026
-908621,Nabil Aberdin,29831,FCV Farul Constanta,Centre-Back,24,Morocco,5,6,8,13,210,78,5492,1,0,6,0,13,0,2021,2026
-731518,David Maftei,29831,FCV Farul Constanta,Right-Back,22,Romania,2,7,5,14,210,142,10288,7,20,14,3,10,26,2020,2026
-601044,Lucas Pellegrini,29831,FCV Farul Constanta,Centre-Back,26,France,21,10,9,14,331,147,11283,1,0,7,0,31,0,2017,2026
-786497,Sofyane Bouzamoucha,29831,FCV Farul Constanta,Centre-Back,26,France,24,9,7,14,303,160,13513,10,2,13,5,32,0,2018,2026
-203498,Steve Furtado,29831,FCV Farul Constanta,Right-Back,31,Cape Verde,93,15,10,22,548,293,21899,7,22,13,3,47,17,2012,2026
-927982,Ștefan Duțu,29831,FCV Farul Constanta,Centre-Back,22,Romania,0,6,5,13,143,76,5796,5,1,0,0,6,21,2021,2026
-262117,Cristian Ganea,29831,FCV Farul Constanta,Left-Back,34,Romania,11,15,11,26,602,387,30167,27,30,128,24,41,8,2012,2026
-697714,Fabinho,29831,FCV Farul Constanta,Right-Back,25,Portugal,0,8,9,15,290,131,7729,3,2,12,1,23,3,2019,2026
-46582,Ionuț Larie,29831,FCV Farul Constanta,Centre-Back,39,Romania,17,22,8,16,772,552,46764,35,17,70,24,106,1,2005,2026
-731522,Eduard Radaslavescu,29831,FCV Farul Constanta,Attacking Midfield,22,Romania,20,7,3,14,291,200,9588,24,14,193,64,9,35,2020,2026
-1410600,Hassane Traoré,29831,FCV Farul Constanta,Left-Back,19,Burkina Faso,0,3,3,4,12,5,420,0,0,0,0,0,0,2024,2026
-1222728,João Ferreira,29831,FCV Farul Constanta,Centre-Back,21,Brazil,33,4,4,7,70,5,293,1,0,0,0,1,0,2023,2026
-568540,Victor Dican,29831,FCV Farul Constanta,Defensive Midfield,26,Romania,6,10,4,11,327,257,20022,22,10,143,40,52,12,2012,2026
-509234,Mattéo Ahlinvi,29831,FCV Farul Constanta,Central Midfield,27,Benin,70,11,10,23,462,233,12023,21,9,102,37,15,29,2016,2026
-742226,Tony Njiké,29831,FCV Farul Constanta,Defensive Midfield,28,France,23,13,10,13,350,234,17565,7,14,58,12,39,0,2014,2026
-629566,Eddy Sylvestre,29831,FCV Farul Constanta,Attacking Midfield,27,France,10,11,10,14,404,228,10870,10,10,126,41,30,0,2016,2026
-608447,Nicolas Popescu,29831,FCV Farul Constanta,Defensive Midfield,23,Romania,80,12,6,16,276,96,3861,2,1,11,2,6,20,2015,2026
-208828,Ionuț Vînă,29831,FCV Farul Constanta,Central Midfield,31,Romania,8,17,6,18,688,338,21871,30,26,169,51,51,17,2010,2026
-869978,Luca Banu,29831,FCV Farul Constanta,Defensive Midfield,21,Romania,18,7,5,16,220,66,3675,4,1,7,2,4,27,2020,2026
-683538,André Seruca,29831,FCV Farul Constanta,Defensive Midfield,25,Portugal,50,6,6,13,235,80,4789,2,5,0,0,21,0,2021,2026
-1179030,Alexandru Goncear,29831,FCV Farul Constanta,Attacking Midfield,17,Romania,29,4,2,7,60,32,1076,4,1,5,3,2,15,2023,2026
-1067290,Ianis Podoleanu,29831,FCV Farul Constanta,Central Midfield,18,Romania,0,5,3,8,73,26,1833,3,0,3,0,4,20,2022,2026
-1050693,Iustin Doicaru,29831,FCV Farul Constanta,Right Winger,19,Romania,0,6,4,14,201,92,3754,17,9,51,22,7,34,2021,2026
-417249,Muhamet Hyseni,29831,FCV Farul Constanta,Centre-Forward,25,Kosovo,9,10,6,14,316,154,8698,51,16,12,4,18,5,2017,2026
-798248,Răzvan Tănasă,29831,FCV Farul Constanta,Left Winger,23,Romania,71,9,5,13,214,143,8099,15,7,121,35,16,9,2018,2026
-1335803,Cristian Sima,29831,FCV Farul Constanta,Left Winger,19,Romania,28,3,3,6,67,30,1217,1,2,11,7,5,0,2024,2026
-545546,Narek Grigoryan,29831,FCV Farul Constanta,Right Winger,25,Armenia,30,10,6,23,484,320,19605,56,53,150,56,30,61,2017,2026
-901511,Ionuț Cojocaru,29831,FCV Farul Constanta,Left Winger,23,Romania,0,7,5,11,213,80,3230,14,5,77,24,6,10,2020,2026
-395677,Yann Kitala,29831,FCV Farul Constanta,Centre-Forward,28,DR Congo,19,13,12,19,375,197,9637,35,10,78,34,27,1,2013,2026
-1179006,Răzvan Marincean,29831,FCV Farul Constanta,Left Winger,17,Romania,99,4,2,7,57,23,926,5,0,5,3,1,13,2023,2026
-104990,Jakub Vojtus,29831,FCV Farul Constanta,Centre-Forward,32,Slovakia,25,20,19,33,654,365,19384,61,19,80,21,47,21,2007,2026
-937051,David Păcuraru,29831,FCV Farul Constanta,Centre-Forward,20,Romania,77,6,4,11,139,98,5399,5,7,3,2,6,46,2021,2026
-724115,Gabriel Buta,29831,FCV Farul Constanta,Left-Back,23,Romania,0,9,8,17,253,92,5033,2,7,3,1,9,18,2018,2026
-992845,John Dumitra,29831,FCV Farul Constanta,Centre-Back,18,Romania,0,6,4,10,148,47,3509,0,1,0,0,3,39,2021,2026
-1067282,Costyn Gheorghe,29831,FCV Farul Constanta,Right-Back,17,Romania,0,6,4,10,117,48,3458,0,3,1,0,3,32,2021,2026
+1032632,Nicolae Sula,7769,CFR Cluj,Centre-Forward,20,Moldova,98,5,3,8,95,38,1519,7,3,1,0,2,15,2022,2026
+234882,Iacopo Cernigoi,7769,CFR Cluj,Centre-Forward,30,Italy,0,15,18,18,554,323,16780,71,14,15,9,32,0,2012,2026
+1154801,Alin Ferenți,7769,CFR Cluj,Right Winger,20,Romania,0,2,2,3,9,0,0,0,0,0,0,0,0,2023,2024
+869463,Gustavo Marins,29831,FCV Farul Constanta,Centre-Back,24,Brazil,4,8,4,16,294,109,8391,4,2,29,4,17,0,2019,2026
+731518,David Maftei,29831,FCV Farul Constanta,Right-Back,22,Romania,2,7,5,14,212,142,10288,7,20,14,3,10,26,2020,2026
+937037,Rafael Munteanu,29831,FCV Farul Constanta,Goalkeeper,20,Romania,12,6,4,13,144,72,6234,0,1,0,0,2,24,2021,2026
+666463,Dan Sîrbu,29831,FCV Farul Constanta,Right-Back,23,Romania,22,10,3,17,297,183,11011,0,6,28,6,19,36,2016,2026
+216660,Alexandru Buzbuchi,29831,FCV Farul Constanta,Goalkeeper,32,Romania,1,17,3,14,676,212,19041,0,0,0,0,10,14,2010,2026
+203498,Steve Furtado,29831,FCV Farul Constanta,Right-Back,31,Cape Verde,93,15,10,22,550,293,21899,7,22,13,3,47,17,2012,2026
+601044,Lucas Pellegrini,29831,FCV Farul Constanta,Centre-Back,26,France,21,10,9,14,333,147,11283,1,0,7,0,31,0,2017,2026
+927982,Ștefan Duțu,29831,FCV Farul Constanta,Centre-Back,22,Romania,0,6,5,13,145,78,5903,5,1,0,0,6,22,2021,2026
+724115,Gabriel Buta,29831,FCV Farul Constanta,Left-Back,23,Romania,0,9,8,17,256,92,5033,2,7,3,1,9,18,2018,2026
+262117,Cristian Ganea,29831,FCV Farul Constanta,Left-Back,34,Romania,11,15,11,26,604,389,30347,27,31,130,24,42,8,2012,2026
+992845,John Dumitra,29831,FCV Farul Constanta,Centre-Back,18,Romania,0,6,4,10,150,47,3509,0,1,0,0,3,39,2021,2026
+731522,Eduard Radaslavescu,29831,FCV Farul Constanta,Attacking Midfield,22,Romania,20,7,3,14,293,202,9755,24,14,194,64,9,35,2020,2026
+1067282,Costyn Gheorghe,29831,FCV Farul Constanta,Right-Back,17,Romania,0,6,4,10,119,51,3605,0,3,1,0,3,32,2021,2026
+697714,Fabinho,29831,FCV Farul Constanta,Right-Back,25,Portugal,0,8,9,15,292,131,7729,3,2,12,1,23,3,2019,2026
+208828,Ionuț Vînă,29831,FCV Farul Constanta,Central Midfield,31,Romania,8,17,6,18,690,340,22051,30,27,171,51,52,17,2010,2026
+478588,Ramalho,29831,FCV Farul Constanta,Central Midfield,26,Portugal,77,9,8,12,265,130,8407,10,8,24,4,31,0,2016,2026
+568540,Victor Dican,29831,FCV Farul Constanta,Defensive Midfield,26,Romania,6,10,4,11,329,259,20202,22,10,143,40,53,12,2012,2026
+207625,Boban Nikolov,29831,FCV Farul Constanta,Central Midfield,30,North Macedonia,0,16,8,32,726,462,27567,41,31,83,21,91,85,2011,2026
+608447,Nicolas Popescu,29831,FCV Farul Constanta,Defensive Midfield,23,Romania,80,12,6,16,278,98,3884,2,1,11,2,7,20,2015,2026
+869978,Luca Banu,29831,FCV Farul Constanta,Defensive Midfield,21,Romania,18,7,5,16,224,68,3807,4,1,7,2,4,27,2020,2026
+683538,André Seruca,29831,FCV Farul Constanta,Defensive Midfield,25,Portugal,50,6,6,13,237,80,4789,2,5,0,0,21,0,2021,2026
+46582,Ionuț Larie,29831,FCV Farul Constanta,Centre-Back,39,Romania,17,22,8,16,774,554,46931,35,17,70,24,106,1,2005,2026
+1050693,Iustin Doicaru,29831,FCV Farul Constanta,Right Winger,19,Romania,0,6,4,14,203,94,3787,17,9,51,22,7,34,2021,2026
 978924,Dan Nechifor,29831,FCV Farul Constanta,Attacking Midfield,18,Romania,0,4,3,9,69,13,594,0,2,0,0,0,7,2022,2025
-207625,Boban Nikolov,29831,FCV Farul Constanta,Central Midfield,30,North Macedonia,0,16,8,32,724,460,27387,40,31,83,21,90,85,2011,2026
-672055,Alexandru Ișfan,29831,FCV Farul Constanta,Centre-Forward,25,Romania,31,10,8,11,321,260,15335,29,16,218,74,17,7,2016,2026
-478588,Ramalho,29831,FCV Farul Constanta,Central Midfield,26,Portugal,77,9,8,12,262,128,8305,10,8,24,4,31,0,2016,2026
-1067298,Ianis Avrămescu,29831,FCV Farul Constanta,Right Winger,16,Romania,0,6,5,11,149,66,3262,17,4,8,2,5,26,2021,2026
-164254,Gabriel Iancu,29831,FCV Farul Constanta,Centre-Forward,31,Romania,10,18,11,25,704,370,20239,81,29,152,42,59,23,2006,2026
-992843,Narcis Ilaș,8818,FC Botosani,Right-Back,19,Romania,73,6,4,12,187,97,6368,1,1,6,2,12,29,2021,2026
-709668,David Dincă,8818,FC Botosani,Goalkeeper,22,Romania,1,8,8,10,180,82,7162,0,0,0,0,5,15,2019,2026
-191853,Giannis Anestis,8818,FC Botosani,Goalkeeper,35,Greece,99,17,9,23,615,354,31849,0,1,0,0,16,0,2010,2026
-1082003,Mamadou Diarra,8818,FC Botosani,Centre-Back,28,France,94,5,6,10,152,91,7323,5,0,4,1,24,0,2022,2026
-1027042,Răzvan Creț,8818,FC Botosani,Left-Back,20,Romania,5,5,4,8,127,43,2765,0,0,7,1,4,1,2022,2026
-332205,Andrei Miron,8818,FC Botosani,Centre-Back,32,Romania,4,14,5,13,551,396,33635,14,8,42,9,79,9,2013,2026
-715470,Brian Bayeye,8818,FC Botosani,Right-Back,26,DR Congo,2,9,9,21,308,119,7427,0,9,9,0,12,3,2017,2026
-410238,Djibril Diaw,8818,FC Botosani,Centre-Back,31,Senegal,23,13,14,30,514,240,18316,19,4,48,20,48,6,2014,2026
-177661,Alexandru Țigănașu,8818,FC Botosani,Left-Back,36,Romania,30,18,6,13,648,446,34521,16,36,53,10,76,4,2009,2026
-510963,Miguel Muñoz,8818,FC Botosani,Centre-Back,29,Spain,18,10,5,11,322,132,10233,5,0,9,3,29,0,2017,2026
-1591682,Alexandru Suchianu,8818,FC Botosani,Centre-Back,18,Romania,0,1,1,2,8,1,23,0,0,0,0,0,0,2026,2026
-371078,Rijad Sadiku,8818,FC Botosani,Centre-Back,26,Bosnia-Herzegovina,44,13,8,19,468,183,13362,4,3,17,4,28,41,2014,2026
-703710,Charles Petro,8818,FC Botosani,Defensive Midfield,25,Malawi,3,8,2,16,342,195,13364,4,5,66,21,15,36,2019,2026
-388555,Lucas de Vega,8818,FC Botosani,Central Midfield,26,Brazil,21,10,8,21,294,175,10820,15,12,4,2,20,0,2017,2026
-182910,Hervin Ongenda,8818,FC Botosani,Attacking Midfield,31,France,26,16,13,33,680,326,21211,48,33,164,52,38,20,2010,2026
-210059,Mihai Bordeianu,8818,FC Botosani,Central Midfield,34,Romania,37,19,7,22,618,382,26635,16,15,218,38,85,4,2007,2026
-241221,Enriko Papa,8818,FC Botosani,Central Midfield,33,Albania,67,15,10,12,506,335,21444,22,27,70,23,75,0,2012,2026
-626334,Roland Idowu,8818,FC Botosani,Central Midfield,24,Ireland,8,9,8,26,327,204,10576,29,32,113,44,32,3,2018,2026
-364697,Sebastian Mailat,8818,FC Botosani,Left Winger,28,Romania,7,12,9,16,494,266,15128,61,23,221,81,27,1,2015,2026
-740986,Zoran Mitrov,8818,FC Botosani,Right Winger,24,Romania,11,8,6,12,241,156,7744,21,20,145,51,21,3,2019,2026
-608448,Ștefan Bodișteanu,8818,FC Botosani,Left Winger,23,Moldova,10,12,7,19,388,228,11525,23,21,128,33,29,60,2015,2026
-466722,Andrei Dumiter,8818,FC Botosani,Centre-Forward,27,Romania,41,11,8,11,415,248,13653,49,11,143,62,37,3,2016,2026
-342609,Mykola Kovtalyuk,8818,FC Botosani,Centre-Forward,31,Ukraine,22,13,12,19,421,283,17500,93,17,37,18,57,0,2014,2026
-1093542,Gabriel Gama,8818,FC Botosani,Right Winger,23,Brazil,77,5,5,8,75,56,4315,9,8,6,2,8,0,2022,2026
-1394715,George Sorodoc,8818,FC Botosani,Centre-Forward,20,Romania,14,3,2,3,21,5,128,0,0,0,0,0,0,2024,2026
-1144435,Mario Preda,8818,FC Botosani,Centre-Forward,20,Romania,90,5,5,7,66,30,1146,1,1,0,0,1,4,2022,2026
-1170488,Denis Ștefan,8818,FC Botosani,Centre-Forward,20,Romania,15,4,2,4,66,3,22,0,0,0,0,0,0,2023,2026
-721631,Michael Pavlovic,8818,FC Botosani,Left-Back,24,Slovenia,3,9,4,12,297,165,11751,2,7,20,2,17,8,2018,2026
+1179030,Alexandru Goncear,29831,FCV Farul Constanta,Attacking Midfield,17,Romania,29,4,2,7,62,34,1152,5,1,6,4,2,15,2023,2026
+1335803,Cristian Sima,29831,FCV Farul Constanta,Left Winger,19,Romania,28,3,3,6,69,30,1217,1,2,11,7,5,0,2024,2026
+798248,Răzvan Tănasă,29831,FCV Farul Constanta,Left Winger,23,Romania,71,9,5,13,216,144,8130,15,7,123,35,16,9,2018,2026
+901511,Ionuț Cojocaru,29831,FCV Farul Constanta,Left Winger,23,Romania,0,7,5,11,216,84,3590,16,5,77,24,6,10,2020,2026
+672055,Alexandru Ișfan,29831,FCV Farul Constanta,Centre-Forward,25,Romania,31,10,8,11,324,260,15335,29,16,218,74,17,7,2016,2026
+1179006,Răzvan Marincean,29831,FCV Farul Constanta,Left Winger,17,Romania,99,4,2,7,59,25,1030,6,0,6,4,1,13,2023,2026
+545546,Narek Grigoryan,29831,FCV Farul Constanta,Right Winger,25,Armenia,30,10,6,23,486,322,19709,56,53,152,57,30,61,2017,2026
+164254,Gabriel Iancu,29831,FCV Farul Constanta,Centre-Forward,31,Romania,10,18,11,25,706,371,20302,81,29,152,42,59,23,2006,2026
+1067298,Ianis Avrămescu,29831,FCV Farul Constanta,Right Winger,16,Romania,0,6,5,11,151,68,3316,17,4,8,2,6,26,2021,2026
+104990,Jakub Vojtus,29831,FCV Farul Constanta,Centre-Forward,33,Slovakia,25,20,19,33,656,365,19384,61,19,80,21,47,21,2007,2026
+1570618,Marc Filip,7769,CFR Cluj,Goalkeeper,18,Romania,0,1,1,2,8,0,0,0,0,0,0,0,0,2026,2026
+326363,André Moreira,7769,CFR Cluj,Goalkeeper,30,Portugal,0,14,14,27,554,204,18180,0,0,0,0,13,17,2013,2026
+1591681,Cătălin Pușcaș,7769,CFR Cluj,Goalkeeper,15,Romania,0,1,1,3,4,0,0,0,0,0,0,0,0,2026,2026
+1008261,Leo Saca,7769,CFR Cluj,Centre-Back,19,Moldova,40,5,3,6,53,24,1347,2,1,0,0,4,18,2021,2026
+271294,Árpád Tordai,952,UTA Arad,Goalkeeper,29,Romania,0,15,11,22,506,167,14799,0,0,0,0,6,12,2012,2026
+948255,Cristian Perea,7769,CFR Cluj,Defensive Midfield,21,Spain,66,4,4,12,132,91,5538,1,2,3,3,23,11,2023,2026
+502669,Iva Gelashvili,7769,CFR Cluj,Centre-Back,25,Georgia,3,12,9,29,389,210,16196,11,3,8,3,25,54,2015,2026
+937051,David Păcuraru,29831,FCV Farul Constanta,Centre-Forward,20,Romania,77,6,4,11,141,98,5399,5,7,3,2,6,46,2021,2026
+332875,Adi Nalic,7769,CFR Cluj,Attacking Midfield,28,Bosnia-Herzegovina,7,14,11,22,466,272,15024,42,26,181,69,38,9,2013,2026
+344519,Bruno Costa,7769,CFR Cluj,Central Midfield,29,Portugal,0,16,11,20,545,289,18476,24,27,108,40,52,26,2011,2026
+410281,Renato Pantalon,7769,CFR Cluj,Centre-Back,28,Croatia,42,12,10,17,381,246,19184,5,0,16,7,56,0,2015,2026
+1304289,Amin Ziblim,7769,CFR Cluj,Central Midfield,20,Ghana,23,3,5,10,118,51,3277,3,0,1,1,9,0,2024,2026
+531599,Ervin Omic,7769,CFR Cluj,Defensive Midfield,23,Austria,18,10,9,22,390,257,15098,27,18,68,23,44,45,2017,2026
+1250026,Alex Nădășanu,7769,CFR Cluj,Central Midfield,20,Romania,0,3,3,5,22,4,211,0,0,0,0,0,0,2024,2026
+1509384,Mateo Miclăuș,7769,CFR Cluj,Right Midfield,18,Romania,22,2,3,7,37,10,486,0,1,0,0,1,0,2025,2026
+770036,Jelani Dumas,7769,CFR Cluj,Centre-Forward,21,Belgium,99,5,3,7,89,57,2625,15,9,5,3,4,1,2021,2026
+1179004,Cosmin Matei,7769,CFR Cluj,Right Winger,17,Romania,80,4,2,6,37,20,1132,1,1,0,0,1,14,2023,2026
 248358,Luka Kukic,8818,FC Botosani,Goalkeeper,29,Bosnia-Herzegovina,1,13,12,20,449,146,13021,0,1,0,0,9,0,2012,2025
-1067281,Alin Ciobanu,8818,FC Botosani,Goalkeeper,17,Romania,0,6,3,8,122,18,1420,0,0,0,0,1,11,2021,2026
-164231,Romario Benzar,8818,FC Botosani,Right-Back,33,Romania,0,18,7,22,670,403,30598,13,44,36,6,97,36,2008,2026
-1159757,George Gligor,8818,FC Botosani,Right-Back,20,Romania,0,3,2,6,103,7,180,0,0,0,0,2,0,2023,2025
+138850,Stefan Drazic,7769,CFR Cluj,Centre-Forward,34,Serbia,9,14,8,19,498,437,29884,116,41,104,40,31,1,2011,2026
+131589,Billel Omrani,7769,CFR Cluj,Centre-Forward,33,Algeria,29,18,10,29,792,389,22353,86,45,72,25,70,16,2009,2026
+661754,Yuval Sade,7769,CFR Cluj,Defensive Midfield,26,Israel,0,9,4,12,304,187,11605,7,5,35,13,28,10,2018,2026
+898351,Francisco Barrios,7769,CFR Cluj,Central Midfield,24,Uruguay,5,7,4,15,250,128,7030,4,5,4,0,20,0,2020,2026
+191853,Giannis Anestis,8818,FC Botosani,Goalkeeper,35,Greece,99,17,9,23,617,356,32108,0,1,0,0,16,0,2010,2026
+1027042,Răzvan Creț,8818,FC Botosani,Left-Back,20,Romania,5,5,4,8,130,44,2855,0,0,7,1,4,1,2022,2026
+1067281,Alin Ciobanu,8818,FC Botosani,Goalkeeper,17,Romania,0,6,3,8,124,18,1420,0,0,0,0,1,11,2021,2026
+721631,Michael Pavlovic,8818,FC Botosani,Left-Back,24,Slovenia,3,9,4,12,299,165,11751,2,7,20,2,17,8,2018,2026
+510963,Miguel Muñoz,8818,FC Botosani,Centre-Back,29,Spain,18,10,5,11,325,132,10233,5,0,9,3,29,0,2017,2026
+410238,Djibril Diaw,8818,FC Botosani,Centre-Back,31,Senegal,23,13,14,30,517,242,18496,19,4,48,20,49,6,2014,2026
+371078,Rijad Sadiku,8818,FC Botosani,Centre-Back,26,Bosnia-Herzegovina,44,13,8,19,471,184,13407,4,3,17,4,29,41,2014,2026
+992843,Narcis Ilaș,8818,FC Botosani,Right-Back,19,Romania,73,6,4,12,190,99,6541,1,1,6,2,12,29,2021,2026
+332205,Andrei Miron,8818,FC Botosani,Centre-Back,32,Romania,4,14,5,13,554,399,33939,14,8,42,9,79,9,2013,2026
+703710,Charles Petro,8818,FC Botosani,Defensive Midfield,25,Malawi,3,8,2,16,345,198,13520,4,5,66,21,16,36,2019,2026
 723833,Luca Popa,8818,FC Botosani,Centre-Back,19,Romania,0,7,6,10,133,35,2000,2,0,0,0,2,10,2019,2025
-976856,Gabriel David,8818,FC Botosani,Central Midfield,22,Romania,33,6,2,7,208,82,4431,5,3,35,12,15,5,2021,2026
-552511,Aldaír Ferreira,8818,FC Botosani,Defensive Midfield,27,Angola,8,10,9,18,342,213,14789,9,15,64,18,28,0,2017,2026
-687846,Alexandru Cîmpanu,8818,FC Botosani,Right Winger,24,Romania,0,8,6,13,359,240,11999,29,20,176,64,16,11,2018,2025
-743667,Enzo López,8818,FC Botosani,Centre-Forward,27,Argentina,9,8,6,14,202,130,6148,24,6,102,38,9,0,2017,2026
+1159757,George Gligor,8818,FC Botosani,Right-Back,20,Romania,0,3,2,6,103,7,180,0,0,0,0,2,0,2023,2025
+177661,Alexandru Țigănașu,8818,FC Botosani,Left-Back,36,Romania,30,18,6,13,680,447,34526,16,36,53,10,76,4,2009,2026
+182910,Hervin Ongenda,8818,FC Botosani,Attacking Midfield,31,France,26,16,13,33,683,328,21341,48,33,168,53,38,20,2010,2026
+164231,Romario Benzar,8818,FC Botosani,Right-Back,33,Romania,0,18,7,22,672,404,30619,13,44,36,6,97,36,2008,2026
+976856,Gabriel David,8818,FC Botosani,Central Midfield,22,Romania,33,6,2,7,210,85,4689,5,3,35,12,15,5,2021,2026
+552511,Aldaír Ferreira,8818,FC Botosani,Defensive Midfield,27,Angola,8,10,9,18,344,216,14973,9,15,64,18,28,0,2017,2026
+687846,Alexandru Cîmpanu,8818,FC Botosani,Right Winger,24,Romania,0,8,6,13,361,242,12167,31,20,181,68,16,11,2018,2025
+210059,Mihai Bordeianu,8818,FC Botosani,Central Midfield,34,Romania,37,19,7,22,621,382,26636,16,15,218,38,85,4,2007,2026
+241221,Enriko Papa,8818,FC Botosani,Central Midfield,33,Albania,67,15,10,12,509,338,21652,23,27,71,24,75,0,2012,2026
+364697,Sebastian Mailat,8818,FC Botosani,Left Winger,28,Romania,7,12,9,16,497,267,15188,61,23,223,83,27,1,2015,2026
+740986,Zoran Mitrov,8818,FC Botosani,Right Winger,24,Romania,11,8,6,12,244,159,7898,21,20,147,51,22,3,2019,2026
+608448,Ștefan Bodișteanu,8818,FC Botosani,Left Winger,23,Moldova,10,12,7,19,391,230,11600,23,21,129,33,29,60,2015,2026
+342609,Mykola Kovtalyuk,8818,FC Botosani,Centre-Forward,31,Ukraine,22,13,12,19,423,285,17568,93,17,38,18,57,0,2014,2026
+388555,Lucas de Vega,8818,FC Botosani,Central Midfield,26,Brazil,21,10,8,21,297,178,11085,15,12,5,2,20,0,2017,2026
+743667,Enzo López,8818,FC Botosani,Centre-Forward,27,Argentina,9,8,6,14,204,132,6292,24,7,102,38,9,0,2017,2026
+1170488,Denis Ștefan,8818,FC Botosani,Centre-Forward,20,Romania,15,4,2,4,69,3,22,0,0,0,0,0,0,2023,2026
+710063,Ștefan Pănoiu,8818,FC Botosani,Right Winger,22,Romania,17,8,4,10,310,166,6893,9,4,48,12,6,12,2019,2026
 938591,Antonio Dumitru,8818,FC Botosani,Right Winger,20,Romania,19,5,4,7,109,44,1912,2,0,9,1,3,0,2021,2026
-710063,Ștefan Pănoiu,8818,FC Botosani,Right Winger,22,Romania,17,8,4,10,308,163,6714,8,4,48,12,6,12,2019,2026
-340976,Cosmin Dur-Bozoancă,4959,SC Otelul Galati,Goalkeeper,28,Romania,1,13,7,18,366,230,20596,0,0,0,0,12,2,2014,2026
-289186,Iustin Popescu,4959,SC Otelul Galati,Goalkeeper,31,Romania,0,16,10,12,502,217,19224,0,1,0,0,13,5,2009,2026
-940629,Darius Paharnicu,4959,SC Otelul Galati,Goalkeeper,21,Romania,12,7,3,6,98,0,0,0,0,0,0,0,0,2020,2026
-940628,Gabriel Ursu,4959,SC Otelul Galati,Goalkeeper,24,Romania,0,6,3,6,117,4,360,0,0,0,0,0,0,2020,2026
-395799,Răzvan Trif,37255,FK Csikszereda Miercurea Ciuc,Left-Back,29,Romania,29,12,7,8,424,216,14692,6,9,55,13,19,0,2015,2026
-303359,Paul Iacob,4959,SC Otelul Galati,Centre-Back,30,Romania,6,14,11,14,522,319,25354,21,8,71,21,58,2,2013,2026
-514674,Conrado,4959,SC Otelul Galati,Left-Back,28,Brazil,0,11,7,16,410,241,16722,14,28,148,45,35,0,2016,2026
-381337,Milen Zhelev,4959,SC Otelul Galati,Right-Back,33,Bulgaria,2,15,8,9,507,372,29621,10,15,21,4,72,0,2011,2026
-641153,Né Lopes,4959,SC Otelul Galati,Centre-Back,26,Portugal,4,9,6,13,292,100,7248,6,1,37,14,11,0,2018,2026
-627283,Vadik Murria,4959,SC Otelul Galati,Centre-Back,24,Spain,0,8,5,10,227,146,10296,7,1,4,0,32,0,2019,2026
-428993,Kazu,4959,SC Otelul Galati,Left-Back,26,Brazil,88,10,6,14,272,128,7917,8,2,82,25,22,4,2015,2026
-919693,Andrei Rus,4959,SC Otelul Galati,Right-Back,23,Romania,0,6,2,7,180,78,5016,1,3,6,2,13,0,2021,2026
-148545,Diego Zivulic,4959,SC Otelul Galati,Centre-Back,33,Croatia,0,18,14,33,606,377,27703,10,5,66,14,80,16,2009,2026
-592441,Julián Bonilla,4959,SC Otelul Galati,Centre-Back,28,Colombia,0,12,9,16,301,106,7726,12,3,6,1,23,0,2015,2026
-913979,Dan Neicu,4959,SC Otelul Galati,Centre-Back,24,Romania,16,6,8,12,206,83,4873,4,0,0,0,11,0,2021,2026
-340980,Andrei Ciobanu,4959,SC Otelul Galati,Attacking Midfield,28,Romania,17,13,8,18,529,319,18805,37,27,129,36,15,39,2014,2026
-675505,Cristian Chira,4959,SC Otelul Galati,Defensive Midfield,23,Romania,0,9,4,9,188,106,6561,8,5,1,0,16,0,2018,2026
-335380,Pedro Nuno,4959,SC Otelul Galati,Attacking Midfield,31,Portugal,27,13,8,13,472,303,18955,53,35,270,98,48,0,2014,2026
-314963,Bruno Paz,4959,SC Otelul Galati,Defensive Midfield,27,Angola,0,15,9,29,470,239,15140,8,12,33,9,30,65,2012,2026
-647125,Andrézinho,4959,SC Otelul Galati,Left Winger,29,Portugal,10,10,6,14,352,206,12637,27,23,166,54,21,0,2017,2026
-819249,Luan Campos,4959,SC Otelul Galati,Left Winger,23,Brazil,0,8,8,19,249,99,6086,20,8,51,13,13,0,2019,2026
-340073,Gabriel Debeljuh,4959,SC Otelul Galati,Centre-Forward,28,Croatia,96,13,9,25,526,314,18592,86,10,118,52,32,0,2014,2026
-1065319,Denis Bordun,4959,SC Otelul Galati,Right Winger,21,Romania,24,5,2,6,78,44,2008,8,1,30,11,5,0,2022,2026
-842718,Paulinho,4959,SC Otelul Galati,Centre-Forward,25,Portugal,0,7,10,18,239,160,7935,39,9,179,85,13,0,2020,2026
-1105946,Cristian Neicu,4959,SC Otelul Galati,Right Winger,21,Romania,15,4,3,5,121,68,3898,22,1,6,2,3,0,2023,2026
-1410848,Matei Frunză,4959,SC Otelul Galati,Right Winger,20,Romania,30,3,2,3,42,20,824,1,0,8,3,0,0,2024,2026
-552534,Patrick,4959,SC Otelul Galati,Centre-Forward,32,Cape Verde,9,10,8,14,393,233,13388,34,20,332,111,16,4,2017,2026
-1408988,Radu Postelnicu,4959,SC Otelul Galati,Right Winger,18,Romania,19,3,1,3,55,1,1,0,0,0,0,0,0,2024,2026
-46504,Erik Bicfalvi,4959,SC Otelul Galati,Centre-Forward,37,Romania,0,20,9,26,797,520,36356,101,41,429,147,69,29,2006,2025
+1335800,David Barbu,29831,FCV Farul Constanta,Goalkeeper,18,Romania,0,3,3,6,28,5,450,0,0,0,0,1,0,2024,2026
+908621,Nabil Aberdin,29831,FCV Farul Constanta,Centre-Back,24,Morocco,5,6,8,13,212,78,5492,1,0,6,0,13,0,2021,2026
+786497,Sofyane Bouzamoucha,29831,FCV Farul Constanta,Centre-Back,26,France,24,9,7,14,305,162,13693,10,2,13,5,32,0,2018,2026
+466722,Andrei Dumiter,8818,FC Botosani,Centre-Forward,27,Romania,41,11,8,11,418,251,13918,50,12,149,66,38,3,2016,2026
+1222728,João Ferreira,29831,FCV Farul Constanta,Centre-Back,21,Brazil,33,4,4,7,72,5,293,1,0,0,0,1,0,2023,2026
+629566,Eddy Sylvestre,29831,FCV Farul Constanta,Attacking Midfield,27,France,10,11,10,14,406,228,10870,10,10,126,41,30,0,2016,2026
+1067290,Ianis Podoleanu,29831,FCV Farul Constanta,Central Midfield,18,Romania,0,5,3,8,73,26,1833,3,0,3,0,4,20,2022,2026
+509234,Mattéo Ahlinvi,29831,FCV Farul Constanta,Central Midfield,27,Benin,70,11,10,23,464,235,12196,23,9,107,40,15,29,2016,2026
+742226,Tony Njiké,29831,FCV Farul Constanta,Defensive Midfield,28,France,23,13,10,13,352,236,17729,7,14,59,12,39,0,2014,2026
+709668,David Dincă,8818,FC Botosani,Goalkeeper,22,Romania,1,8,8,10,183,82,7162,0,0,0,0,5,15,2019,2026
+715470,Brian Bayeye,8818,FC Botosani,Right-Back,26,DR Congo,2,9,9,21,311,122,7697,0,9,10,0,12,3,2017,2026
+1591682,Alexandru Suchianu,8818,FC Botosani,Centre-Back,18,Romania,0,1,1,2,9,1,23,0,0,0,0,0,0,2026,2026
+417249,Muhamet Hyseni,29831,FCV Farul Constanta,Centre-Forward,25,Kosovo,9,10,6,14,318,154,8698,51,16,12,4,18,5,2017,2026
+1410600,Hassane Traoré,29831,FCV Farul Constanta,Left-Back,19,Burkina Faso,0,3,3,4,14,5,420,0,0,0,0,0,0,2024,2026
+1093542,Gabriel Gama,8818,FC Botosani,Right Winger,23,Brazil,77,5,5,8,78,58,4365,9,8,6,2,8,0,2022,2026
+1394715,George Sorodoc,8818,FC Botosani,Centre-Forward,20,Romania,14,3,2,3,24,5,128,0,0,0,0,0,0,2024,2026
+1144435,Mario Preda,8818,FC Botosani,Centre-Forward,20,Romania,90,5,5,7,69,30,1146,1,1,0,0,1,4,2022,2026
+395677,Yann Kitala,29831,FCV Farul Constanta,Centre-Forward,28,DR Congo,19,13,12,19,377,198,9650,35,10,79,34,27,1,2013,2026
+340976,Cosmin Dur-Bozoancă,4959,SC Otelul Galati,Goalkeeper,28,Romania,1,13,7,18,368,232,20776,0,0,0,0,12,2,2014,2026
+1082003,Mamadou Diarra,8818,FC Botosani,Centre-Back,28,France,94,5,6,10,155,92,7413,5,0,4,1,25,0,2022,2026
+289186,Iustin Popescu,4959,SC Otelul Galati,Goalkeeper,31,Romania,0,16,10,12,504,220,19494,0,1,0,0,13,5,2009,2026
+626334,Roland Idowu,8818,FC Botosani,Central Midfield,24,Ireland,8,9,8,26,330,206,10751,30,32,113,44,32,3,2018,2026
+303359,Paul Iacob,4959,SC Otelul Galati,Centre-Back,30,Romania,6,14,11,14,524,321,25534,21,8,73,22,58,2,2013,2026
+940629,Darius Paharnicu,4959,SC Otelul Galati,Goalkeeper,21,Romania,12,7,3,6,100,0,0,0,0,0,0,0,0,2020,2026
+940628,Gabriel Ursu,4959,SC Otelul Galati,Goalkeeper,24,Romania,0,6,3,6,119,4,360,0,0,0,0,0,0,2020,2026
+395799,Răzvan Trif,37255,FK Csikszereda Miercurea Ciuc,Left-Back,29,Romania,29,12,7,8,425,216,14692,6,9,55,13,19,0,2015,2026
+381337,Milen Zhelev,4959,SC Otelul Galati,Right-Back,33,Bulgaria,2,15,8,9,509,372,29621,10,15,21,4,72,0,2011,2026
+428993,Kazu,4959,SC Otelul Galati,Left-Back,26,Brazil,88,10,6,14,274,128,7917,8,2,82,25,22,4,2015,2026
+514674,Conrado,4959,SC Otelul Galati,Left-Back,28,Brazil,0,11,7,16,413,243,16840,14,28,148,45,35,0,2016,2026
+641153,Né Lopes,4959,SC Otelul Galati,Centre-Back,26,Portugal,4,9,6,13,294,100,7248,6,1,37,14,11,0,2018,2026
+919693,Andrei Rus,4959,SC Otelul Galati,Right-Back,23,Romania,0,6,2,7,182,81,5241,3,3,6,2,13,0,2021,2026
+913979,Dan Neicu,4959,SC Otelul Galati,Centre-Back,24,Romania,16,6,8,12,208,83,4873,4,0,0,0,11,0,2021,2026
+592441,Julián Bonilla,4959,SC Otelul Galati,Centre-Back,28,Colombia,0,12,9,16,303,107,7816,12,3,6,1,23,0,2015,2026
+627283,Vadik Murria,4959,SC Otelul Galati,Centre-Back,24,Spain,0,8,5,10,228,148,10386,7,1,4,0,32,0,2019,2026
+335380,Pedro Nuno,4959,SC Otelul Galati,Attacking Midfield,31,Portugal,27,13,8,13,474,305,19124,53,36,278,99,48,0,2014,2026
+148545,Diego Zivulic,4959,SC Otelul Galati,Centre-Back,33,Croatia,0,18,14,34,610,380,27973,10,5,66,14,80,16,2009,2026
+340980,Andrei Ciobanu,4959,SC Otelul Galati,Attacking Midfield,28,Romania,17,13,8,18,531,321,18940,37,27,136,39,15,39,2014,2026
+314963,Bruno Paz,4959,SC Otelul Galati,Defensive Midfield,27,Angola,0,15,9,29,472,242,15369,8,12,33,9,31,65,2012,2026
+675505,Cristian Chira,4959,SC Otelul Galati,Defensive Midfield,23,Romania,0,9,4,9,190,109,6831,9,5,1,0,17,0,2018,2026
+842718,Paulinho,4959,SC Otelul Galati,Centre-Forward,25,Portugal,0,7,10,18,241,161,8005,39,9,179,85,13,0,2020,2026
+819249,Luan Campos,4959,SC Otelul Galati,Left Winger,23,Brazil,0,8,8,19,251,101,6257,22,8,57,18,13,0,2019,2026
+647125,Andrézinho,4959,SC Otelul Galati,Left Winger,29,Portugal,10,10,6,14,354,207,12682,27,23,168,56,21,0,2017,2026
+552534,Patrick,4959,SC Otelul Galati,Centre-Forward,32,Cape Verde,9,10,8,14,395,235,13568,34,20,340,115,16,4,2017,2026
+1105946,Cristian Neicu,4959,SC Otelul Galati,Right Winger,21,Romania,15,4,3,5,123,69,3907,22,1,7,2,3,0,2023,2026
+1410848,Matei Frunză,4959,SC Otelul Galati,Right Winger,20,Romania,30,3,2,3,44,21,869,1,0,8,3,0,0,2024,2026
+1065319,Denis Bordun,4959,SC Otelul Galati,Right Winger,21,Romania,24,5,2,6,80,46,2081,10,1,33,14,5,0,2022,2026
+398048,Márcio Rosa,952,UTA Arad,Goalkeeper,29,Cape Verde,1,12,9,18,452,107,9085,0,0,0,0,16,11,2014,2026
+340073,Gabriel Debeljuh,4959,SC Otelul Galati,Centre-Forward,28,Croatia,96,13,9,25,530,318,18785,86,10,119,52,32,0,2014,2026
 600635,Denis Lungu-Bocean,952,UTA Arad,Goalkeeper,23,Romania,0,8,5,10,205,5,285,0,0,0,0,0,3,2017,2024
-343357,Din Alomerovic,952,UTA Arad,Left-Back,29,North Macedonia,3,14,7,17,373,256,19546,10,26,19,6,31,19,2013,2026
-398048,Márcio Rosa,952,UTA Arad,Goalkeeper,29,Cape Verde,1,12,9,18,449,104,8815,0,0,0,0,16,11,2014,2026
-677152,Andrei Gorcea,952,UTA Arad,Goalkeeper,25,Romania,33,8,2,10,275,115,10234,0,1,0,0,14,0,2019,2026
-391375,Peter Ouaneh,952,UTA Arad,Centre-Back,28,France,15,13,11,20,441,252,20665,10,3,12,2,30,3,2014,2026
-108866,Dmytro Pospelov,952,UTA Arad,Centre-Back,34,Ukraine,60,15,9,13,473,336,27289,38,7,50,22,63,0,2009,2026
+677152,Andrei Gorcea,952,UTA Arad,Goalkeeper,25,Romania,33,8,2,10,278,115,10234,0,1,0,0,14,0,2019,2026
+391375,Peter Ouaneh,952,UTA Arad,Centre-Back,28,France,15,13,11,20,444,255,20935,10,3,13,2,30,3,2014,2026
+1408988,Radu Postelnicu,4959,SC Otelul Galati,Right Winger,18,Romania,19,3,1,3,57,1,1,0,0,0,0,0,0,2024,2026
+46504,Erik Bicfalvi,4959,SC Otelul Galati,Centre-Forward,37,Romania,0,20,9,26,797,520,36356,101,41,429,147,69,29,2006,2025
+343357,Din Alomerovic,952,UTA Arad,Left-Back,29,North Macedonia,3,14,7,17,376,258,19726,10,26,19,6,31,19,2013,2026
+1612652,Roland Sabău,952,UTA Arad,Right-Back,17,Romania,0,1,1,2,4,1,11,0,0,0,0,0,0,2026,2026
+108866,Dmytro Pospelov,952,UTA Arad,Centre-Back,35,Ukraine,60,15,9,13,476,338,27469,38,7,51,23,64,0,2009,2026
+705416,Samuel Gueulette,952,UTA Arad,Central Midfield,26,Rwanda,14,8,3,11,264,171,9321,8,2,31,10,28,12,2019,2026
+202800,Alexandru Benga,952,UTA Arad,Centre-Back,37,Romania,4,19,10,19,680,433,36023,15,6,48,8,80,1,2007,2026
 334665,Andrea Padula,952,UTA Arad,Left-Back,30,Romania,72,15,10,18,507,292,19690,29,21,43,6,33,0,2012,2026
-186741,Alin Roman,952,UTA Arad,Attacking Midfield,32,Romania,8,17,14,19,547,387,26488,79,66,367,113,54,10,2010,2026
-202800,Alexandru Benga,952,UTA Arad,Centre-Back,37,Romania,4,19,10,19,677,431,35843,15,6,46,8,79,1,2007,2026
-705416,Samuel Gueulette,952,UTA Arad,Central Midfield,26,Rwanda,14,8,3,11,260,170,9320,8,2,31,10,28,12,2019,2026
-547822,Alexi Pitu,952,UTA Arad,Attacking Midfield,24,Germany,80,10,8,21,391,192,9220,15,18,70,27,16,29,2017,2026
-474909,Sota Mino,952,UTA Arad,Central Midfield,31,Japan,5,14,7,10,373,300,23035,16,11,88,22,70,0,2012,2026
-675238,Richard Odada,952,UTA Arad,Central Midfield,25,Kenya,16,9,12,29,350,181,11298,9,5,74,18,34,28,2018,2026
-1346805,Denis Țăroi,952,UTA Arad,Attacking Midfield,18,Romania,20,7,2,8,103,43,2110,2,5,26,4,3,12,2018,2026
+186741,Alin Roman,952,UTA Arad,Attacking Midfield,32,Romania,8,17,14,19,550,390,26758,80,66,377,118,54,10,2010,2026
+1346805,Denis Țăroi,952,UTA Arad,Attacking Midfield,18,Romania,20,7,2,8,106,45,2152,2,5,26,4,3,12,2018,2026
+675238,Richard Odada,952,UTA Arad,Central Midfield,25,Kenya,16,9,12,29,353,181,11298,9,5,74,18,34,28,2018,2026
+394475,Marius Coman,952,UTA Arad,Centre-Forward,30,Romania,9,12,10,11,380,266,17571,78,17,127,51,31,0,2015,2026
+474909,Sota Mino,952,UTA Arad,Central Midfield,32,Japan,5,14,7,10,376,302,23215,16,11,89,22,71,0,2012,2026
 1369431,Alexandru Matei,952,UTA Arad,Attacking Midfield,18,Romania,23,3,2,4,61,3,20,0,0,0,0,1,0,2023,2025
-394475,Marius Coman,952,UTA Arad,Centre-Forward,30,Romania,9,12,10,11,377,263,17381,77,17,123,49,31,0,2015,2026
-371370,Ismet Sinani,952,UTA Arad,Centre-Forward,27,Kosovo,7,13,12,21,436,271,14705,56,10,11,4,20,12,2014,2026
-511885,Marinos Tzionis,952,UTA Arad,Left Winger,25,Cyprus,10,11,4,24,466,278,14280,31,13,173,61,8,55,2016,2026
+371370,Ismet Sinani,952,UTA Arad,Centre-Forward,27,Kosovo,7,13,12,21,439,274,14793,56,10,12,4,20,12,2014,2026
+547822,Alexi Pitu,952,UTA Arad,Attacking Midfield,24,Germany,80,10,8,21,394,192,9220,15,18,70,27,16,29,2017,2026
+1546000,Denis Ile,952,UTA Arad,Right Winger,17,Romania,19,2,1,3,16,2,24,0,0,0,0,0,0,2025,2026
 504909,Alexandru Popescu,952,UTA Arad,Centre-Forward,28,Romania,0,10,12,8,218,117,7521,20,4,0,0,14,0,2016,2026
-1546000,Denis Ile,952,UTA Arad,Right Winger,17,Romania,19,2,1,3,13,2,24,0,0,0,0,0,0,2025,2026
+511885,Marinos Tzionis,952,UTA Arad,Left Winger,25,Cyprus,10,11,4,24,469,281,14351,31,13,175,62,8,55,2016,2026
 1408980,Andrei Tolcea,952,UTA Arad,Left Winger,18,Romania,21,3,1,2,11,1,11,0,0,0,0,1,0,2024,2026
 1209279,Lucas Roșu,952,UTA Arad,Goalkeeper,18,Romania,12,3,2,3,62,0,0,0,0,0,0,0,0,2024,2026
-1287033,Mark Țuțu,9465,Petrolul Ploiesti,Right-Back,22,Romania,22,3,3,8,103,80,5979,1,4,13,1,12,5,2024,2026
-932800,Flavius Iacob,41061,Corvinul Hunedoara,Right-Back,25,Romania,13,6,3,10,157,100,7158,5,12,24,9,7,0,2021,2026
-226095,Marko Stolnik,952,UTA Arad,Centre-Back,28,Croatia,28,16,9,16,494,277,21189,9,1,31,9,63,19,2011,2026
-341391,Valentin Costache,952,UTA Arad,Right Midfield,26,Romania,0,13,7,22,561,355,19581,52,41,181,64,41,14,2014,2026
+341391,Valentin Costache,952,UTA Arad,Right Midfield,26,Romania,0,13,7,22,563,357,19688,52,41,181,64,41,14,2014,2026
+226095,Marko Stolnik,952,UTA Arad,Centre-Back,28,Croatia,28,16,9,16,496,278,21279,9,1,31,9,63,19,2011,2026
+932800,Flavius Iacob,41061,Corvinul Hunedoara,Right-Back,25,Romania,13,6,3,10,160,103,7428,5,12,24,9,8,0,2021,2026
+289017,Ovidiu Popescu,952,UTA Arad,Defensive Midfield,31,Romania,23,15,6,18,610,378,25480,19,17,47,7,79,10,2009,2026
+1287033,Mark Țuțu,9465,Petrolul Ploiesti,Right-Back,22,Romania,22,3,3,8,105,82,6089,1,4,13,1,13,5,2024,2026
+641765,Denis Hrezdac,41061,Corvinul Hunedoara,Defensive Midfield,24,Romania,97,10,2,9,314,143,8110,5,2,19,5,14,2,2017,2026
 434514,Benjamin Van Durmen,952,UTA Arad,Defensive Midfield,28,Belgium,30,11,3,7,404,244,16259,14,6,93,29,35,0,2015,2025
-289017,Ovidiu Popescu,952,UTA Arad,Defensive Midfield,31,Romania,23,15,6,18,608,378,25480,19,17,47,7,79,10,2009,2026
-641765,Denis Hrezdac,41061,Corvinul Hunedoara,Defensive Midfield,24,Romania,97,10,2,9,311,143,8110,5,2,19,5,14,2,2017,2026
-608487,Luca Mihai,952,UTA Arad,Defensive Midfield,21,Romania,17,8,13,19,277,134,7883,4,6,23,5,22,6,2019,2026
+633055,Dániel Zsóri,952,UTA Arad,Centre-Forward,24,Hungary,0,9,8,8,305,165,7017,32,13,43,11,41,1,2018,2026
 1369430,Alexandru Hodoșan-Olar,952,UTA Arad,Central Midfield,16,Romania,0,3,3,5,49,5,140,0,0,0,0,0,0,2024,2026
+744076,Marian Danciu,952,UTA Arad,Right Winger,23,Romania,0,9,5,11,218,76,4201,5,3,36,15,4,6,2018,2026
+331578,Mario Contra,4959,SC Otelul Galati,Goalkeeper,27,Romania,13,11,9,10,300,90,7997,0,1,0,0,5,0,2015,2026
 593411,Patriot Sejdiu,952,UTA Arad,Right Winger,25,Kosovo,14,8,8,15,291,119,6039,22,5,101,41,16,1,2017,2025
-633055,Dániel Zsóri,952,UTA Arad,Centre-Forward,24,Hungary,0,9,8,8,303,165,7017,32,13,43,11,41,1,2018,2026
-744076,Marian Danciu,952,UTA Arad,Right Winger,23,Romania,0,9,5,11,216,74,4021,5,3,36,15,4,6,2018,2026
-331578,Mario Contra,4959,SC Otelul Galati,Goalkeeper,27,Romania,13,11,9,10,298,90,7997,0,1,0,0,5,0,2015,2026
-567587,Habib Sylla,4959,SC Otelul Galati,Right-Back,27,Cote d'Ivoire,5,9,5,10,257,137,9898,4,6,20,3,36,0,2018,2026
-534677,Giannis Christopoulos,4959,SC Otelul Galati,Centre-Back,26,Greece,3,11,5,15,460,163,12097,6,3,15,4,15,11,2016,2026
-496606,Dominick Zator,4959,SC Otelul Galati,Centre-Back,32,Canada,44,10,8,15,299,210,17384,7,6,126,31,16,3,2016,2026
-1164163,Robert Olteanu,4959,SC Otelul Galati,Left-Back,20,Romania,20,2,2,3,16,1,45,0,0,0,0,0,0,2024,2026
-504075,Rafael Brito,4959,SC Otelul Galati,Defensive Midfield,24,Portugal,8,11,7,16,370,198,11970,4,7,29,6,57,32,2016,2026
-1499685,Dragoș Aftene,4959,SC Otelul Galati,Defensive Midfield,16,Romania,18,2,1,3,21,3,92,0,0,0,0,1,0,2025,2026
-1569149,Robert Cojoc,4959,SC Otelul Galati,Attacking Midfield,17,Romania,14,1,1,2,12,1,23,0,0,0,0,0,0,2026,2026
-340538,Zé Turbo,4959,SC Otelul Galati,Centre-Forward,29,Guinea-Bissau,11,13,17,39,470,288,15408,76,26,79,31,32,15,2014,2026
-629860,João Paulino,4959,SC Otelul Galati,Left Winger,28,Cape Verde,7,9,7,14,247,75,3943,17,3,8,0,3,2,2018,2026
-1494867,Viorel Bălănică,4959,SC Otelul Galati,Right Winger,19,Romania,77,2,2,2,13,5,180,0,0,0,0,1,0,2025,2026
-1416465,Fabio Blaga,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,0,2,2,4,48,9,795,0,0,0,0,1,0,2025,2026
-858488,Adrian Frănculescu,41061,Corvinul Hunedoara,Goalkeeper,21,Romania,12,7,4,9,125,88,7636,0,0,0,0,5,7,2020,2026
-1176689,Silviu Drîngă,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,33,4,3,3,22,2,110,0,0,0,0,0,0,2023,2026
-541371,Mihajlo Ivančević,41061,Corvinul Hunedoara,Centre-Back,27,Serbia,15,10,10,17,288,166,12465,5,2,30,8,45,3,2017,2026
-418218,Antoniu Manolache,41061,Corvinul Hunedoara,Centre-Back,26,Romania,30,12,7,16,316,217,18120,22,6,6,1,36,14,2015,2026
-658052,Mohammad Abualnadi,41061,Corvinul Hunedoara,Centre-Back,25,Jordan,5,8,6,20,203,104,7411,3,3,3,0,7,31,2018,2026
-390523,Pedro Albino,41061,Corvinul Hunedoara,Right-Back,27,Portugal,0,12,10,14,338,184,13597,10,12,5,2,13,0,2015,2026
-209652,Alexandru Neacșa,41061,Corvinul Hunedoara,Left-Back,35,Romania,10,16,13,15,443,326,21134,23,35,7,0,58,0,2009,2026
-463339,Ion Cărăruș,41061,Corvinul Hunedoara,Defensive Midfield,30,Moldova,23,11,8,14,300,224,16832,15,7,3,3,38,15,2015,2026
-192866,Florin Ilie,41061,Corvinul Hunedoara,Centre-Back,34,Romania,18,18,15,14,591,361,29344,12,7,19,5,52,7,2008,2026
-1283034,Gideon Goodlad,41061,Corvinul Hunedoara,Attacking Midfield,21,Nigeria,47,3,3,11,88,34,1385,5,0,8,5,2,0,2024,2026
-1380939,Denis Zanc,41061,Corvinul Hunedoara,Central Midfield,19,Romania,36,4,3,5,61,22,532,0,0,0,0,2,0,2023,2026
-1398307,Gabriel Apur,41061,Corvinul Hunedoara,Central Midfield,16,Romania,16,3,1,5,48,1,1,0,0,0,0,0,0,2024,2026
-435169,Roger,41061,Corvinul Hunedoara,Attacking Midfield,30,Brazil,11,12,14,27,401,288,20438,32,27,44,11,17,0,2015,2026
-1264190,Eduard Cioază,41061,Corvinul Hunedoara,Central Midfield,17,Romania,17,4,1,4,52,0,0,0,0,0,0,0,0,2023,2026
-1011469,Emmanuel Yeboah,41061,Corvinul Hunedoara,Centre-Forward,23,Ghana,99,6,8,17,195,118,6285,19,7,116,46,25,3,2021,2026
-530415,Nicolae Pîrvulescu,41061,Corvinul Hunedoara,Left Winger,29,Romania,19,11,4,10,291,243,16108,41,26,38,13,26,0,2016,2026
-223997,Sérgio Ribeiro,41061,Corvinul Hunedoara,Right Winger,30,Portugal,20,17,8,19,489,318,17259,52,25,16,6,46,54,2010,2026
-700768,Mario Bratu,41061,Corvinul Hunedoara,Right Winger,24,Romania,41,8,2,8,245,155,6823,21,13,57,20,15,7,2019,2026
-608465,Filip Ilie,41061,Corvinul Hunedoara,Centre-Forward,24,Romania,0,8,8,14,138,72,2530,11,0,16,6,3,2,2017,2026
-1423474,Muhammed Hayatu,41061,Corvinul Hunedoara,Left Winger,19,Nigeria,14,2,1,4,46,30,649,0,2,2,0,2,0,2025,2026
-921606,Ángel Gillard,41061,Corvinul Hunedoara,Left Winger,24,Argentina,32,7,3,7,153,85,3451,17,5,23,7,13,0,2020,2026
-1423324,Emmanuel Okoro,41061,Corvinul Hunedoara,Centre-Forward,19,Nigeria,29,2,1,4,46,11,166,2,1,1,0,1,0,2025,2026
-1264145,Rareș Roșculeț,41061,Corvinul Hunedoara,Goalkeeper,15,Romania,47,2,1,3,30,1,4,0,0,0,0,0,0,2023,2025
-610483,Mihai Velisar,41061,Corvinul Hunedoara,Left-Back,26,Romania,98,10,5,12,289,195,14326,6,11,2,0,16,5,2017,2026
-262130,Viorel Lică,41061,Corvinul Hunedoara,Centre-Back,30,Romania,6,13,9,7,353,230,19235,11,1,3,1,27,0,2012,2026
-340979,Szabolcs Kilyén,41061,Corvinul Hunedoara,Right-Back,27,Romania,2,11,14,17,317,122,9118,3,4,0,0,25,12,2014,2026
-1012947,Denis Rența,41061,Corvinul Hunedoara,Central Midfield,21,Romania,80,6,5,11,142,59,3057,3,1,3,1,4,7,2021,2026
-865670,Antonio Bradu,41061,Corvinul Hunedoara,Defensive Midfield,23,Romania,8,7,3,8,132,115,7380,9,15,2,0,8,0,2020,2026
-269786,Alexandru Buziuc,41061,Corvinul Hunedoara,Centre-Forward,31,Romania,9,15,12,14,459,323,17914,37,12,42,16,39,2,2012,2026
+496606,Dominick Zator,4959,SC Otelul Galati,Centre-Back,32,Canada,44,10,8,15,301,212,17555,8,6,130,33,16,3,2016,2026
+1164163,Robert Olteanu,4959,SC Otelul Galati,Left-Back,20,Romania,20,2,2,3,18,1,45,0,0,0,0,0,0,2024,2026
+534677,Giannis Christopoulos,4959,SC Otelul Galati,Centre-Back,26,Greece,3,11,5,15,462,165,12277,6,3,17,4,16,11,2016,2026
+1569149,Robert Cojoc,4959,SC Otelul Galati,Attacking Midfield,17,Romania,14,1,1,2,14,1,23,0,0,0,0,0,0,2026,2026
+504075,Rafael Brito,4959,SC Otelul Galati,Defensive Midfield,24,Portugal,8,11,7,16,372,200,12139,5,7,33,7,57,32,2016,2026
+1499685,Dragoș Aftene,4959,SC Otelul Galati,Defensive Midfield,16,Romania,18,2,1,3,23,4,103,0,0,1,1,1,0,2025,2026
+608487,Luca Mihai,952,UTA Arad,Defensive Midfield,21,Romania,17,8,14,21,280,136,7985,4,6,23,5,22,6,2019,2026
+567587,Habib Sylla,4959,SC Otelul Galati,Right-Back,27,Cote d'Ivoire,5,9,5,10,259,137,9898,4,6,20,3,36,0,2018,2026
+900040,Raul Bălbărău,9465,Petrolul Ploiesti,Goalkeeper,24,Romania,1,7,5,11,185,94,8211,0,0,0,0,9,1,2020,2026
 75919,Stefan Krell,9465,Petrolul Ploiesti,Goalkeeper,33,Austria,41,20,14,16,623,258,22764,0,0,0,0,14,0,2006,2025
-900040,Raul Bălbărău,9465,Petrolul Ploiesti,Goalkeeper,24,Romania,1,7,5,11,183,92,8031,0,0,0,0,9,1,2020,2026
-1339987,Ștefan Rădulescu,9465,Petrolul Ploiesti,Goalkeeper,16,Romania,1,3,2,5,50,12,1018,0,0,0,0,0,7,2024,2026
-897346,Ștefan Georgescu,9465,Petrolul Ploiesti,Goalkeeper,25,Romania,12,6,5,7,94,3,300,0,0,0,0,0,0,2020,2026
-547812,Andres Dumitrescu,9465,Petrolul Ploiesti,Left-Back,25,Romania,2,10,6,20,359,192,13574,4,14,43,9,32,20,2017,2026
-524988,Yohan Roche,9465,Petrolul Ploiesti,Centre-Back,27,Benin,69,13,10,19,507,283,22852,10,8,57,16,62,31,2014,2026
-657385,Guilherme Soares,9465,Petrolul Ploiesti,Centre-Back,24,Portugal,42,9,8,17,292,170,14483,9,3,28,11,17,0,2018,2026
-337537,Ricardinho,9465,Petrolul Ploiesti,Right-Back,31,Portugal,24,14,5,11,533,380,30274,19,17,68,15,69,0,2013,2026
-240260,Franjo Prce,9465,Petrolul Ploiesti,Centre-Back,29,Croatia,71,14,15,34,557,243,19614,7,4,13,3,41,26,2012,2025
+340538,Zé Turbo,4959,SC Otelul Galati,Centre-Forward,30,Guinea-Bissau,11,13,17,39,472,289,15419,76,26,79,31,32,15,2014,2026
+1494867,Viorel Bălănică,4959,SC Otelul Galati,Right Winger,19,Romania,77,2,2,2,15,7,287,0,0,0,0,2,0,2025,2026
+629860,João Paulino,4959,SC Otelul Galati,Left Winger,28,Cape Verde,7,9,7,14,249,76,3971,17,3,11,1,3,2,2018,2026
+547812,Andres Dumitrescu,9465,Petrolul Ploiesti,Left-Back,25,Romania,2,10,6,20,361,194,13754,4,14,44,9,33,20,2017,2026
+337537,Ricardinho,9465,Petrolul Ploiesti,Right-Back,31,Portugal,24,14,5,11,535,382,30454,19,19,68,15,69,0,2013,2026
+1339987,Ștefan Rădulescu,9465,Petrolul Ploiesti,Goalkeeper,16,Romania,1,3,2,6,53,12,1018,0,0,0,0,0,7,2024,2026
+524988,Yohan Roche,9465,Petrolul Ploiesti,Centre-Back,27,Benin,69,13,10,19,509,284,22942,10,8,58,16,63,31,2014,2026
+897346,Ștefan Georgescu,9465,Petrolul Ploiesti,Goalkeeper,25,Romania,12,6,5,7,96,3,300,0,0,0,0,0,0,2020,2026
+361516,Kilian Ludewig,9465,Petrolul Ploiesti,Right-Back,26,Germany,29,12,11,31,479,216,14308,21,16,50,15,12,33,2015,2026
+240260,Franjo Prce,9465,Petrolul Ploiesti,Centre-Back,29,Croatia,71,14,15,34,559,246,19884,7,4,13,3,41,26,2012,2025
+112552,Paul Papp,9465,Petrolul Ploiesti,Centre-Back,36,Romania,4,20,10,24,800,482,39160,29,9,105,33,145,28,2007,2026
+641511,Alexandru Stănică,9465,Petrolul Ploiesti,Centre-Back,24,Romania,0,9,5,5,197,110,8585,4,2,0,0,18,0,2018,2026
+236272,Nana Boateng,9465,Petrolul Ploiesti,Defensive Midfield,31,Ghana,77,16,9,28,577,349,24800,32,12,113,21,71,0,2011,2026
 1493481,Mario Dudu,9465,Petrolul Ploiesti,Right-Back,18,Romania,0,2,3,4,24,3,280,0,0,0,0,0,0,2025,2026
-361516,Kilian Ludewig,9465,Petrolul Ploiesti,Right-Back,26,Germany,29,12,11,31,477,215,14307,21,16,50,15,12,33,2015,2026
-112552,Paul Papp,9465,Petrolul Ploiesti,Centre-Back,36,Romania,4,20,10,24,798,480,39025,29,9,105,33,144,28,2007,2026
-641511,Alexandru Stănică,9465,Petrolul Ploiesti,Centre-Back,24,Romania,0,9,5,5,195,108,8405,4,2,0,0,18,0,2018,2026
-464308,Tommi Jyry,9465,Petrolul Ploiesti,Central Midfield,25,Finland,6,11,6,17,410,275,20544,24,24,140,42,23,0,2016,2026
-236272,Nana Boateng,9465,Petrolul Ploiesti,Defensive Midfield,31,Ghana,77,16,9,27,574,347,24626,32,12,113,21,69,0,2011,2026
-793133,Alin Boțogan,9465,Petrolul Ploiesti,Central Midfield,22,Romania,0,7,4,10,236,119,6256,3,5,12,1,17,28,2020,2026
-929612,Danel Dongmo,9465,Petrolul Ploiesti,Central Midfield,24,Cameroon,5,8,6,12,264,132,10040,11,5,17,3,24,0,2019,2026
-517378,Brahima Doukansy,9465,Petrolul Ploiesti,Defensive Midfield,25,France,15,11,8,15,349,200,12927,3,5,14,3,27,0,2016,2026
-212806,Sergiu Hanca,9465,Petrolul Ploiesti,Right Midfield,34,Romania,20,18,7,20,697,464,31487,50,58,167,45,89,7,2009,2026
-1229951,David Paraschiv,9465,Petrolul Ploiesti,Central Midfield,20,Romania,21,4,1,4,119,17,577,1,0,6,2,2,1,2023,2026
+464308,Tommi Jyry,9465,Petrolul Ploiesti,Central Midfield,25,Finland,6,11,6,18,414,278,20684,24,24,145,42,23,0,2016,2026
+517378,Brahima Doukansy,9465,Petrolul Ploiesti,Defensive Midfield,25,France,15,11,8,15,350,201,13002,3,5,14,3,28,0,2016,2026
+929612,Danel Dongmo,9465,Petrolul Ploiesti,Central Midfield,24,Cameroon,5,8,6,13,266,134,10097,11,5,17,3,25,0,2019,2026
+212806,Sergiu Hanca,9465,Petrolul Ploiesti,Right Midfield,34,Romania,20,18,7,20,699,467,31662,50,59,170,45,89,7,2009,2026
 282513,Fabrício Baiano,9465,Petrolul Ploiesti,Defensive Midfield,33,Brazil,0,14,12,24,536,184,11939,1,5,46,19,52,0,2012,2025
-287418,Lucian Dumitriu,9465,Petrolul Ploiesti,Central Midfield,32,Romania,44,15,7,7,530,354,22328,26,11,53,12,42,0,2012,2026
-937067,Augustin Dumitrache,9465,Petrolul Ploiesti,Attacking Midfield,20,Romania,0,6,4,6,101,7,336,1,0,0,0,0,3,2018,2026
+657385,Guilherme Soares,9465,Petrolul Ploiesti,Centre-Back,24,Portugal,42,9,8,17,294,171,14573,10,3,28,11,18,0,2018,2026
 64193,Alexandru Mateiu,9465,Petrolul Ploiesti,Central Midfield,35,Romania,8,20,4,10,757,479,33939,22,17,74,13,76,1,2007,2026
-736722,Adi Chică-Roșă,40843,FC Voluntari,Centre-Forward,28,Romania,29,9,5,6,267,184,11337,52,10,130,47,31,0,2018,2026
+793133,Alin Boțogan,9465,Petrolul Ploiesti,Central Midfield,22,Romania,0,7,4,10,237,120,6262,3,5,12,1,18,28,2020,2026
+287418,Lucian Dumitriu,9465,Petrolul Ploiesti,Central Midfield,32,Romania,44,15,7,7,530,354,22328,26,11,53,12,42,0,2012,2026
+1229951,David Paraschiv,9465,Petrolul Ploiesti,Central Midfield,20,Romania,21,4,1,4,121,18,568,1,0,6,2,2,1,2023,2026
+358261,Konstantinos Doumtsios,9465,Petrolul Ploiesti,Centre-Forward,27,Greece,0,13,15,17,436,324,19908,51,12,100,35,35,0,2014,2026
+937067,Augustin Dumitrache,9465,Petrolul Ploiesti,Attacking Midfield,20,Romania,0,6,4,6,101,7,336,1,0,0,0,0,3,2018,2026
+736722,Adi Chică-Roșă,40843,FC Voluntari,Centre-Forward,28,Romania,29,9,5,6,269,186,11364,52,10,132,47,32,0,2018,2026
+566875,Rafinha,9465,Petrolul Ploiesti,Second Striker,27,Spain,28,6,6,13,109,71,4130,20,6,20,8,6,0,2014,2026
 96844,Gheorghe Grozav,9465,Petrolul Ploiesti,Left Winger,34,Romania,7,20,12,28,735,505,33288,117,29,302,97,59,38,2007,2026
-358261,Konstantinos Doumtsios,9465,Petrolul Ploiesti,Centre-Forward,27,Greece,0,13,15,17,434,324,19908,51,12,100,35,35,0,2014,2026
+1011742,Ioan Tolea,9465,Petrolul Ploiesti,Right Winger,23,Romania,0,6,4,6,105,44,2049,3,2,17,3,7,0,2021,2026
 453810,Valentin Gheorghe,9465,Petrolul Ploiesti,Left Winger,28,Romania,11,11,7,16,445,284,14762,41,18,128,37,40,5,2015,2025
-253819,Abat Aymbetov,9465,Petrolul Ploiesti,Centre-Forward,29,Kazakhstan,17,15,6,23,571,359,18271,87,17,79,30,24,69,2011,2025
-345235,Oscar Correia,9465,Petrolul Ploiesti,Right Winger,27,Switzerland,0,13,10,16,376,281,19338,101,7,152,49,20,0,2013,2026
-566875,Rafinha,9465,Petrolul Ploiesti,Second Striker,27,Spain,28,6,6,12,105,68,4110,20,6,20,8,6,0,2014,2026
-1011742,Ioan Tolea,9465,Petrolul Ploiesti,Right Winger,23,Romania,0,6,4,6,103,43,2013,3,2,17,3,7,0,2021,2026
 989197,Iustin Răducan,9465,Petrolul Ploiesti,Centre-Forward,19,Romania,0,6,3,8,192,50,1673,2,0,6,1,2,21,2021,2026
-928036,Miguel Constantinescu,9465,Petrolul Ploiesti,Right Winger,20,Romania,0,5,5,11,80,12,296,0,0,0,0,0,2,2021,2026
-1340003,Rareș Manolache,9465,Petrolul Ploiesti,Centre-Forward,16,Romania,40,3,2,5,76,21,1182,2,2,1,0,1,16,2024,2026
-991838,Adam Zaian,9465,Petrolul Ploiesti,Centre-Back,22,Netherlands,24,6,6,8,106,70,4417,0,1,3,0,9,0,2021,2026
-312051,Breston Malula,9465,Petrolul Ploiesti,Centre-Back,25,DR Congo,71,11,10,15,385,240,17092,26,4,47,19,57,0,2016,2026
-1487705,Atay Akgün,9465,Petrolul Ploiesti,Right-Back,18,Türkiye,0,2,2,4,40,2,85,0,1,0,0,0,0,2025,2026
-721526,Calal Hüseynov,9465,Petrolul Ploiesti,Defensive Midfield,23,Azerbaijan,18,8,4,14,343,230,16573,7,1,1,0,30,41,2019,2026
-1008263,Mario Ioniță,9465,Petrolul Ploiesti,Central Midfield,19,Romania,80,6,5,7,72,50,2777,5,0,6,0,4,3,2021,2026
-786308,Dele Israel,9465,Petrolul Ploiesti,Central Midfield,24,Nigeria,99,8,6,11,277,164,11171,17,11,17,7,46,0,2019,2026
-741033,Lucho Vega,9465,Petrolul Ploiesti,Central Midfield,27,Argentina,8,8,7,11,245,149,7686,19,12,88,21,37,0,2019,2026
-823269,Alejandro Bran,9465,Petrolul Ploiesti,Central Midfield,25,Costa Rica,10,7,9,29,393,220,13577,20,21,64,21,35,31,2020,2026
-1547368,Liviu Argeșanu,9465,Petrolul Ploiesti,Defensive Midfield,16,Romania,26,2,2,4,20,11,648,0,0,2,1,0,4,2025,2026
-887373,Robert Jerdea,9465,Petrolul Ploiesti,Centre-Forward,23,Romania,98,7,5,8,145,100,4781,16,4,14,7,7,0,2020,2026
-588114,Rodrigo Martins,9465,Petrolul Ploiesti,Left Winger,28,Portugal,7,10,9,8,338,196,11033,16,11,187,54,33,0,2017,2026
-346482,Dan Nlundulu,9465,Petrolul Ploiesti,Centre-Forward,27,England,9,13,9,21,519,223,12082,41,12,333,117,29,2,2014,2026
-718941,Léo Teixeira,9465,Petrolul Ploiesti,Left Winger,27,Portugal,19,9,5,7,187,160,11550,15,28,54,18,38,0,2018,2026
-1513626,Rareş Leescu,9465,Petrolul Ploiesti,Centre-Forward,17,Romania,30,2,2,4,30,11,486,0,0,7,3,0,0,2025,2026
-1502577,Marius Costache,9465,Petrolul Ploiesti,Left Winger,21,Romania,28,2,2,3,15,2,114,0,0,0,0,0,0,2025,2026
-315257,Béla Fejér,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,31,Romania,95,15,6,17,511,154,13713,0,0,0,0,11,2,2012,2026
-337619,Roland Niczuly,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,31,Romania,0,13,3,12,513,349,31461,0,0,0,0,35,0,2014,2026
-412641,Denis Haruț,40843,FC Voluntari,Centre-Back,27,Romania,5,12,6,20,490,250,19885,13,2,34,13,31,22,2015,2026
-798249,Darius Oroian,54585,Sepsi OSK Sf. Gheorghe,Right-Back,21,Romania,17,8,4,12,203,134,7685,4,6,22,7,12,3,2019,2026
-406429,Daniel Vîrtej,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,28,Romania,82,9,6,9,246,176,14566,6,2,3,0,31,0,2015,2026
-813000,Bogdan Oteliță,54585,Sepsi OSK Sf. Gheorghe,Right-Back,24,Romania,25,8,4,12,238,149,9926,1,15,15,4,22,4,2018,2026
-111556,Joonas Tamm,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,34,Estonia,0,20,17,43,977,556,42160,50,17,49,15,73,95,2007,2026
-213589,Alin Dobrosavlevici,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,31,Romania,21,16,14,15,600,336,26857,11,4,14,3,66,4,2011,2026
-671648,Fábio Vianna,54585,Sepsi OSK Sf. Gheorghe,Left-Back,28,Portugal,3,9,8,18,304,149,8937,2,11,39,11,24,0,2018,2026
-1250111,Hunor Batzula,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,18,Romania,23,4,1,8,73,53,2789,4,1,20,5,4,10,2023,2026
-860352,Nicolae Păun,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,27,Romania,6,7,1,11,266,165,12406,16,8,72,25,35,2,2020,2026
-823719,Robert Silaghi,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,24,Romania,7,9,6,12,212,149,7331,2,7,21,4,16,4,2018,2026
-199348,Dani Iglesias,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,31,Spain,34,13,10,23,433,232,14020,19,5,55,12,27,1,2011,2025
-81421,Cosmin Matei,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,35,Romania,10,20,11,24,771,478,31376,70,54,116,40,63,21,2007,2026
+345235,Oscar Correia,9465,Petrolul Ploiesti,Right Winger,27,Switzerland,0,13,10,16,378,283,19397,102,7,154,51,20,0,2013,2026
+253819,Abat Aymbetov,9465,Petrolul Ploiesti,Centre-Forward,29,Kazakhstan,17,15,6,23,573,360,18277,87,17,79,30,24,69,2011,2025
+991838,Adam Zaian,9465,Petrolul Ploiesti,Centre-Back,22,Netherlands,24,6,6,8,108,71,4450,0,1,3,0,9,0,2021,2026
+1340003,Rareș Manolache,9465,Petrolul Ploiesti,Centre-Forward,16,Romania,40,3,2,6,79,22,1272,2,2,1,0,1,17,2024,2026
+928036,Miguel Constantinescu,9465,Petrolul Ploiesti,Right Winger,20,Romania,0,5,5,11,81,12,296,0,0,0,0,0,2,2021,2026
+1487705,Atay Akgün,9465,Petrolul Ploiesti,Right-Back,18,Türkiye,0,2,2,4,42,2,85,0,1,0,0,0,0,2025,2026
+823269,Alejandro Bran,9465,Petrolul Ploiesti,Central Midfield,25,Costa Rica,10,7,9,29,395,221,13636,20,21,64,21,35,31,2020,2026
+1008263,Mario Ioniță,9465,Petrolul Ploiesti,Central Midfield,19,Romania,80,6,5,7,74,51,2849,6,0,7,1,4,3,2021,2026
+312051,Breston Malula,9465,Petrolul Ploiesti,Centre-Back,25,DR Congo,71,11,10,15,387,243,17317,26,4,48,19,58,0,2016,2026
+786308,Dele Israel,9465,Petrolul Ploiesti,Central Midfield,24,Nigeria,99,8,6,11,279,166,11175,17,11,17,7,46,0,2019,2026
+721526,Calal Hüseynov,9465,Petrolul Ploiesti,Defensive Midfield,23,Azerbaijan,18,8,4,14,345,232,16563,7,1,2,1,30,41,2019,2026
+718941,Léo Teixeira,9465,Petrolul Ploiesti,Left Winger,27,Portugal,19,9,5,7,189,163,11758,16,29,55,19,40,0,2018,2026
+887373,Robert Jerdea,9465,Petrolul Ploiesti,Centre-Forward,23,Romania,98,7,5,8,147,100,4748,16,4,14,7,7,0,2020,2026
+1547368,Liviu Argeșanu,9465,Petrolul Ploiesti,Defensive Midfield,16,Romania,26,2,2,5,23,12,726,0,0,2,1,1,5,2025,2026
+1513626,Rareş Leescu,9465,Petrolul Ploiesti,Centre-Forward,17,Romania,30,2,2,4,32,13,509,0,0,7,3,0,0,2025,2026
+741033,Lucho Vega,9465,Petrolul Ploiesti,Central Midfield,27,Argentina,8,8,7,11,247,151,7832,19,12,91,21,37,0,2019,2026
+588114,Rodrigo Martins,9465,Petrolul Ploiesti,Left Winger,28,Portugal,7,10,9,8,340,199,11303,18,12,194,58,34,0,2017,2026
+346482,Dan Nlundulu,9465,Petrolul Ploiesti,Centre-Forward,27,England,9,13,9,21,521,226,12289,41,12,338,118,29,2,2014,2026
+1502577,Marius Costache,9465,Petrolul Ploiesti,Left Winger,21,Romania,28,2,2,3,17,2,114,0,0,0,0,0,0,2025,2026
+1264145,Rareș Roșculeț,41061,Corvinul Hunedoara,Goalkeeper,15,Romania,47,2,1,3,30,1,4,0,0,0,0,0,0,2023,2025
+1416465,Fabio Blaga,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,0,2,2,4,50,9,795,0,0,0,0,1,0,2025,2026
+610483,Mihai Velisar,41061,Corvinul Hunedoara,Left-Back,26,Romania,98,10,5,12,291,197,14506,6,11,2,0,16,5,2017,2026
+390523,Pedro Albino,41061,Corvinul Hunedoara,Right-Back,27,Portugal,0,12,10,14,340,186,13777,11,12,5,2,13,0,2015,2026
+262130,Viorel Lică,41061,Corvinul Hunedoara,Centre-Back,30,Romania,6,13,9,7,355,231,19325,11,1,3,1,27,0,2012,2026
+418218,Antoniu Manolache,41061,Corvinul Hunedoara,Centre-Back,26,Romania,30,12,7,16,319,220,18348,22,6,8,1,38,14,2015,2026
+340979,Szabolcs Kilyén,41061,Corvinul Hunedoara,Right-Back,27,Romania,2,11,14,17,319,122,9118,3,4,0,0,25,12,2014,2026
+463339,Ion Cărăruș,41061,Corvinul Hunedoara,Defensive Midfield,30,Moldova,23,11,8,14,303,227,17093,15,7,5,4,38,15,2015,2026
+209652,Alexandru Neacșa,41061,Corvinul Hunedoara,Left-Back,35,Romania,10,16,13,15,446,329,21404,23,35,10,0,58,0,2009,2026
+865670,Antonio Bradu,41061,Corvinul Hunedoara,Defensive Midfield,23,Romania,8,7,3,8,134,117,7515,9,15,2,0,8,0,2020,2026
+223997,Sérgio Ribeiro,41061,Corvinul Hunedoara,Central Midfield,30,Portugal,20,17,8,19,492,321,17409,52,25,16,6,46,54,2010,2026
+192866,Florin Ilie,41061,Corvinul Hunedoara,Centre-Back,34,Romania,18,18,15,14,594,362,29389,12,7,19,5,52,7,2008,2026
+1264190,Eduard Cioază,41061,Corvinul Hunedoara,Central Midfield,17,Romania,17,4,1,4,55,0,0,0,0,0,0,0,0,2023,2026
+1380939,Denis Zanc,41061,Corvinul Hunedoara,Central Midfield,19,Romania,36,4,3,5,74,25,610,0,0,0,0,2,0,2023,2026
+530415,Nicolae Pîrvulescu,41061,Corvinul Hunedoara,Left Winger,29,Romania,19,11,4,10,294,246,16378,41,26,44,15,26,0,2016,2026
+700768,Mario Bratu,41061,Corvinul Hunedoara,Right Winger,24,Romania,41,8,2,8,248,158,6991,21,13,63,21,15,7,2019,2026
+1012947,Denis Rența,41061,Corvinul Hunedoara,Central Midfield,21,Romania,80,6,5,11,144,60,3108,4,1,3,1,5,7,2021,2026
+1283034,Gideon Goodlad,41061,Corvinul Hunedoara,Attacking Midfield,21,Nigeria,47,3,3,11,91,36,1440,5,0,11,5,2,0,2024,2026
+1398307,Gabriel Apur,41061,Corvinul Hunedoara,Central Midfield,16,Romania,16,3,1,5,51,1,1,0,0,0,0,0,0,2024,2026
+608465,Filip Ilie,41061,Corvinul Hunedoara,Centre-Forward,24,Romania,0,8,8,14,140,74,2558,11,0,16,6,3,2,2017,2026
+1423324,Emmanuel Okoro,41061,Corvinul Hunedoara,Centre-Forward,19,Nigeria,29,2,1,4,49,11,166,2,1,1,0,1,0,2025,2026
+858488,Adrian Frănculescu,41061,Corvinul Hunedoara,Goalkeeper,21,Romania,12,7,4,9,128,89,7726,0,0,0,0,5,7,2020,2026
+1176689,Silviu Drîngă,41061,Corvinul Hunedoara,Goalkeeper,20,Romania,33,4,3,3,25,2,110,0,0,0,0,0,0,2023,2026
+1423474,Muhammed Hayatu,41061,Corvinul Hunedoara,Left Winger,19,Nigeria,14,2,1,4,49,31,661,0,2,2,0,2,0,2025,2026
+541371,Mihajlo Ivančević,41061,Corvinul Hunedoara,Centre-Back,27,Serbia,15,10,10,17,291,169,12690,5,2,30,8,45,3,2017,2026
+921606,Ángel Gillard,41061,Corvinul Hunedoara,Left Winger,24,Argentina,32,7,3,7,156,88,3629,17,5,31,8,13,0,2020,2026
+269786,Alexandru Buziuc,41061,Corvinul Hunedoara,Centre-Forward,31,Romania,9,15,12,14,459,323,17914,37,12,42,16,39,2,2012,2026
+1011469,Emmanuel Yeboah,41061,Corvinul Hunedoara,Centre-Forward,23,Ghana,99,6,8,17,198,120,6417,19,7,116,46,27,3,2021,2026
+658052,Mohammad Abualnadi,41061,Corvinul Hunedoara,Centre-Back,25,Jordan,5,8,6,20,206,106,7453,3,3,3,0,7,31,2018,2026
+315257,Béla Fejér,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,31,Romania,95,15,6,17,513,154,13713,0,0,0,0,11,2,2012,2026
+435169,Roger,41061,Corvinul Hunedoara,Attacking Midfield,30,Brazil,11,12,14,27,404,291,20572,32,27,45,11,17,0,2015,2026
+412641,Denis Haruț,40843,FC Voluntari,Centre-Back,27,Romania,5,12,6,20,492,251,19973,13,2,35,13,31,22,2015,2026
+337619,Roland Niczuly,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,31,Romania,0,13,3,12,515,349,31461,0,0,0,0,35,0,2014,2026
+798249,Darius Oroian,54585,Sepsi OSK Sf. Gheorghe,Right-Back,21,Romania,17,8,4,12,205,136,7850,4,6,22,7,14,3,2019,2026
+406429,Daniel Vîrtej,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,28,Romania,82,9,6,9,248,177,14575,6,2,3,0,31,0,2015,2026
+813000,Bogdan Oteliță,54585,Sepsi OSK Sf. Gheorghe,Right-Back,24,Romania,25,8,4,12,240,151,10106,1,15,16,4,22,4,2018,2026
+213589,Alin Dobrosavlevici,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,32,Romania,21,16,14,15,602,336,26857,11,4,14,3,66,4,2011,2026
+671648,Fábio Vianna,54585,Sepsi OSK Sf. Gheorghe,Left-Back,28,Portugal,3,9,8,18,306,151,9117,2,11,39,11,24,0,2018,2026
+860352,Nicolae Păun,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,27,Romania,6,7,1,11,268,167,12564,16,8,73,26,36,2,2020,2026
+111556,Joonas Tamm,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,34,Estonia,0,20,17,43,981,557,42218,51,17,49,15,73,95,2007,2026
+823719,Robert Silaghi,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,24,Romania,7,9,6,12,214,151,7471,2,7,22,4,17,4,2018,2026
 1349166,Raul Cantauz,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,18,Romania,0,2,1,2,8,2,164,0,0,0,0,0,0,2024,2026
-57303,Joeri de Kamps,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,34,Netherlands,67,18,13,34,675,384,26853,7,17,39,6,96,8,2009,2026
-212718,Dimitri Oberlin,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,29,Switzerland,11,16,18,36,709,394,22156,98,33,115,49,35,45,2011,2026
-433833,Moses Mawa,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,30,Norway,14,13,9,12,350,273,19131,77,11,206,83,32,0,2014,2026
-637514,Carl Davordzie,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,26,Ghana,88,7,5,10,144,88,6007,28,8,6,1,2,0,2018,2026
-1357171,Gabriel Mihoreanu,54585,Sepsi OSK Sf. Gheorghe,Left Winger,16,Romania,26,2,2,2,12,10,801,0,0,0,0,0,0,2024,2026
-266865,Boris Cmiljanic,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,30,Montenegro,9,16,14,38,567,255,11923,45,12,24,7,29,23,2011,2026
-189553,Mavis Tchibota,54585,Sepsi OSK Sf. Gheorghe,Left Winger,29,Congo,22,13,10,23,528,353,20101,59,44,56,14,65,14,2010,2026
-1338731,Raul Cîmpean,54585,Sepsi OSK Sf. Gheorghe,Right Winger,21,Romania,27,3,1,6,93,29,1591,0,1,2,0,3,3,2024,2026
-378128,Metod Jurhar,40843,FC Voluntari,Goalkeeper,28,Slovenia,31,13,3,9,419,149,13390,0,0,0,0,6,1,2014,2026
-502693,Matej Mamic,40843,FC Voluntari,Right-Back,24,Croatia,23,8,7,10,220,157,11456,4,15,2,1,16,2,2016,2026
-892722,Eduard Chioveanu,40843,FC Voluntari,Goalkeeper,21,Romania,14,6,2,8,99,46,3980,0,0,0,0,0,2,2020,2026
-863552,Alexandru Șuteu,40843,FC Voluntari,Left-Back,22,Romania,30,7,5,11,195,141,10922,3,6,13,2,19,18,2020,2026
-1061296,Bogdan Ștefan,40843,FC Voluntari,Goalkeeper,19,Romania,0,4,3,5,25,1,90,0,0,0,0,0,0,2022,2026
-579998,Alexandru Gîț,40843,FC Voluntari,Right-Back,29,Romania,20,11,10,6,285,197,15579,5,3,0,0,35,0,2016,2026
-339954,Radu Crișan,40843,FC Voluntari,Centre-Back,30,Romania,27,13,10,12,381,243,19686,15,2,7,2,44,6,2014,2026
-418225,Mihael Onișa,40843,FC Voluntari,Left-Back,26,Romania,44,12,11,24,356,204,13171,10,10,10,4,29,7,2015,2026
-464906,Sava-Arangel Cestic,40843,FC Voluntari,Centre-Back,25,Serbia,6,11,8,17,363,114,7824,5,2,15,3,28,8,2016,2026
-301258,Andrei Pițian,40843,FC Voluntari,Centre-Back,30,Romania,17,14,9,16,503,225,15516,3,1,22,5,30,2,2013,2026
-436075,Ion Gheorghe,40843,FC Voluntari,Central Midfield,27,Romania,8,12,8,16,409,306,21021,24,35,85,28,35,3,2015,2026
-393241,Godfried Roemeratoe,40843,FC Voluntari,Defensive Midfield,27,Curacao,80,12,7,25,414,285,18955,3,7,60,8,37,35,2015,2026
-317467,Lovro Cvek,40843,FC Voluntari,Defensive Midfield,31,Croatia,40,14,10,27,482,377,27625,17,23,70,12,61,0,2013,2026
-508762,Darius Ghindovean,40843,FC Voluntari,Central Midfield,24,Romania,0,10,8,14,331,193,11084,31,42,32,7,46,12,2017,2026
-1545972,Mario Ștefan,40843,FC Voluntari,Central Midfield,17,Romania,28,2,1,4,16,0,0,0,0,0,0,0,0,2025,2026
-608304,Daniel Toma,40843,FC Voluntari,Central Midfield,26,Romania,0,10,6,9,294,208,12062,3,5,6,0,35,8,2017,2026
-1087172,Remus Guțea,40843,FC Voluntari,Left Winger,19,Romania,11,5,2,10,162,132,8133,19,6,42,19,7,19,2022,2026
-593934,Nuno Rodrigues,40843,FC Voluntari,Right Winger,31,Portugal,22,14,10,11,364,228,14447,10,14,61,14,31,0,2013,2026
-371223,Matko Babic,40843,FC Voluntari,Centre-Forward,28,Croatia,9,13,10,26,421,254,12336,55,8,43,16,19,18,2014,2026
-675514,Florian Haită,40843,FC Voluntari,Right Winger,25,Romania,0,9,8,10,269,176,10126,25,9,15,3,21,0,2018,2026
-396882,Marvin Schieb,40843,FC Voluntari,Right Winger,30,Romania,19,12,6,9,332,241,12454,22,12,5,2,10,0,2015,2026
-1281272,Ianis Vencu,40843,FC Voluntari,Centre-Forward,19,Romania,0,4,4,9,73,29,1212,2,0,0,0,1,0,2023,2026
-992824,Robert Petculescu,40843,FC Voluntari,Left Winger,19,Romania,21,6,6,12,155,116,6556,16,6,1,0,4,57,2021,2026
-530697,George Merloi,40843,FC Voluntari,Right Winger,26,Romania,10,10,6,13,333,184,7355,21,8,47,19,17,6,2017,2026
-723632,Szilárd Gyenge,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,25,Romania,33,9,2,9,253,115,9927,0,0,0,0,5,3,2018,2026
-693029,Setigui Karamoko,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,27,France,4,8,12,13,267,128,9525,5,0,17,4,28,0,2019,2026
-468272,Gustavo Cascardo,54585,Sepsi OSK Sf. Gheorghe,Right-Back,29,Brazil,2,13,10,27,483,203,14831,2,10,8,1,40,2,2014,2026
-213246,Bogdan Vătăjelu,54585,Sepsi OSK Sf. Gheorghe,Left-Back,33,Romania,5,18,11,31,745,496,38042,24,45,51,14,64,16,2009,2026
-135490,Lindsay Rose,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,34,Mauritius,31,18,11,30,850,445,35713,25,7,111,34,72,42,2009,2026
-1569258,David Brădeanu,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,17,Romania,0,1,1,2,3,1,90,0,0,0,0,0,0,2026,2026
+1250111,Hunor Batzula,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,18,Romania,23,4,1,8,75,55,2830,4,1,21,5,4,10,2023,2026
+212718,Dimitri Oberlin,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,29,Switzerland,11,16,18,36,711,396,22304,98,33,119,50,35,45,2011,2026
+433833,Moses Mawa,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,30,Norway,14,13,9,12,352,275,19183,77,11,206,83,32,0,2014,2026
+81421,Cosmin Matei,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,35,Romania,10,20,11,24,771,478,31376,70,54,116,40,63,21,2007,2026
+57303,Joeri de Kamps,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,34,Netherlands,67,18,13,34,677,384,26853,7,17,39,6,96,8,2009,2026
+637514,Carl Davordzie,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,26,Ghana,88,7,5,10,146,89,6015,28,8,6,1,2,0,2018,2026
+1357171,Gabriel Mihoreanu,54585,Sepsi OSK Sf. Gheorghe,Left Winger,16,Romania,26,2,2,2,14,12,942,0,0,0,0,0,0,2024,2026
+189553,Mavis Tchibota,54585,Sepsi OSK Sf. Gheorghe,Left Winger,29,Congo,22,13,10,23,531,354,20113,59,44,56,14,65,14,2010,2026
+1338731,Raul Cîmpean,54585,Sepsi OSK Sf. Gheorghe,Right Winger,21,Romania,27,3,1,6,95,31,1738,0,1,2,0,3,3,2024,2026
+693029,Setigui Karamoko,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,27,France,4,8,12,13,269,130,9694,5,0,17,4,28,0,2019,2026
+723632,Szilárd Gyenge,54585,Sepsi OSK Sf. Gheorghe,Goalkeeper,25,Romania,33,9,2,9,255,116,10017,0,0,0,0,5,3,2018,2026
+266865,Boris Cmiljanic,54585,Sepsi OSK Sf. Gheorghe,Centre-Forward,30,Montenegro,9,16,14,38,569,257,12051,45,12,26,8,30,23,2011,2026
+199348,Dani Iglesias,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,31,Spain,34,13,10,23,433,232,14020,19,5,55,12,27,1,2011,2025
 1569257,Petru Păcurar,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,18,Romania,0,1,1,1,2,0,0,0,0,0,0,0,0,2026,2026
-418654,Victor Daguin,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,26,France,28,11,5,11,222,181,13839,6,6,58,17,37,5,2015,2026
-806193,Doru Andrei,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,23,Romania,17,7,3,12,260,163,9590,16,12,81,24,9,21,2020,2026
+468272,Gustavo Cascardo,54585,Sepsi OSK Sf. Gheorghe,Right-Back,29,Brazil,2,13,11,28,486,204,14921,2,10,8,1,40,2,2014,2026
+1569258,David Brădeanu,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,17,Romania,0,1,1,2,3,1,90,0,0,0,0,0,0,2026,2026
+418654,Victor Daguin,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,26,France,28,11,5,11,224,182,13846,6,6,58,17,37,5,2015,2026
+213246,Bogdan Vătăjelu,54585,Sepsi OSK Sf. Gheorghe,Left-Back,33,Romania,5,18,11,31,747,496,38042,24,45,51,14,64,16,2009,2026
+135490,Lindsay Rose,54585,Sepsi OSK Sf. Gheorghe,Centre-Back,34,Mauritius,31,18,11,30,852,447,35893,25,7,111,34,73,42,2009,2026
+806193,Doru Andrei,54585,Sepsi OSK Sf. Gheorghe,Attacking Midfield,23,Romania,17,7,3,12,262,165,9753,17,12,82,25,9,21,2020,2026
 1010704,Ákos Nistor,54585,Sepsi OSK Sf. Gheorghe,Central Midfield,21,Romania,30,6,4,11,115,27,1121,1,1,2,0,0,0,2021,2026
-294807,Aboubakar Keita,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,28,Cote d'Ivoire,8,15,14,30,440,227,15800,12,9,66,16,53,14,2011,2026
+863552,Alexandru Șuteu,40843,FC Voluntari,Left-Back,22,Romania,30,7,5,11,197,144,11111,3,6,15,2,19,19,2020,2026
+294807,Aboubakar Keita,54585,Sepsi OSK Sf. Gheorghe,Defensive Midfield,28,Cote d'Ivoire,8,15,14,30,442,229,15855,12,9,66,16,53,14,2011,2026
+579998,Alexandru Gîț,40843,FC Voluntari,Right-Back,29,Romania,20,11,10,6,287,197,15579,5,3,0,0,35,0,2016,2026
+892722,Eduard Chioveanu,40843,FC Voluntari,Goalkeeper,21,Romania,14,6,2,8,101,46,3980,0,0,0,0,0,2,2020,2026
+401921,Funsho Bamgboye,54585,Sepsi OSK Sf. Gheorghe,Right Winger,27,Nigeria,70,13,5,12,402,257,13931,35,40,99,36,47,6,2014,2026
+301258,Andrei Pițian,40843,FC Voluntari,Centre-Back,30,Romania,17,14,9,16,505,225,15516,3,1,22,5,30,2,2013,2026
 562053,Steven N'Guessan,40843,FC Voluntari,Centre-Back,24,France,0,4,7,12,122,56,4266,2,1,4,2,13,0,2017,2025
-401921,Funsho Bamgboye,54585,Sepsi OSK Sf. Gheorghe,Right Winger,27,Nigeria,70,13,5,12,400,257,13931,35,40,99,36,47,6,2014,2026
-249080,Eduard Pap,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,32,Romania,94,15,8,15,545,302,27172,0,0,0,0,30,1,2012,2026
+418225,Mihael Onișa,40843,FC Voluntari,Left-Back,26,Romania,44,12,11,24,358,206,13210,10,10,12,4,30,7,2015,2026
+317467,Lovro Cvek,40843,FC Voluntari,Defensive Midfield,31,Croatia,40,14,10,27,484,379,27805,17,23,70,12,61,0,2013,2026
+608304,Daniel Toma,40843,FC Voluntari,Central Midfield,26,Romania,0,10,6,9,296,210,12225,3,5,6,0,36,8,2017,2026
+436075,Ion Gheorghe,40843,FC Voluntari,Central Midfield,27,Romania,8,12,8,16,411,308,21170,24,36,87,28,36,3,2015,2026
+339954,Radu Crișan,40843,FC Voluntari,Centre-Back,30,Romania,27,13,10,12,383,244,19776,15,2,7,2,44,6,2014,2026
+992824,Robert Petculescu,40843,FC Voluntari,Left Winger,19,Romania,21,6,6,12,157,116,6556,16,6,1,0,4,57,2021,2026
 1163912,Răzvan Neag,40843,FC Voluntari,Attacking Midfield,18,Romania,0,4,4,5,90,33,1649,2,0,0,0,1,0,2023,2026
-1411382,Zsombor Deáky,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,19,Romania,0,3,4,6,55,14,1260,0,0,0,0,1,0,2024,2026
+1087172,Remus Guțea,40843,FC Voluntari,Left Winger,19,Romania,11,5,2,10,164,134,8305,20,6,50,22,8,19,2022,2026
+396882,Marvin Schieb,40843,FC Voluntari,Right Winger,30,Romania,19,12,6,9,334,243,12530,22,12,8,3,10,0,2015,2026
+371223,Matko Babic,40843,FC Voluntari,Centre-Forward,28,Croatia,9,13,10,26,423,256,12464,55,8,47,16,19,18,2014,2026
+675514,Florian Haită,40843,FC Voluntari,Right Winger,25,Romania,0,9,8,10,271,178,10174,25,9,15,3,21,0,2018,2026
+1061296,Bogdan Ștefan,40843,FC Voluntari,Goalkeeper,19,Romania,0,4,3,5,27,1,90,0,0,0,0,0,0,2022,2026
+1281272,Ianis Vencu,40843,FC Voluntari,Centre-Forward,19,Romania,0,4,4,9,73,29,1212,2,0,0,0,1,0,2023,2026
+530697,George Merloi,40843,FC Voluntari,Right Winger,27,Romania,10,10,6,13,335,186,7466,21,8,49,20,17,6,2017,2026
+378128,Metod Jurhar,40843,FC Voluntari,Goalkeeper,28,Slovenia,31,13,3,9,421,151,13570,0,0,0,0,6,1,2014,2026
+502693,Matej Mamic,40843,FC Voluntari,Right-Back,24,Croatia,23,8,7,10,222,158,11487,4,15,2,1,16,2,2016,2026
+393241,Godfried Roemeratoe,40843,FC Voluntari,Defensive Midfield,27,Curacao,80,12,7,25,416,287,19075,4,8,63,9,37,35,2015,2026
+464906,Sava-Arangel Cestic,40843,FC Voluntari,Centre-Back,25,Serbia,6,11,8,17,365,116,8004,5,2,15,3,28,8,2016,2026
+593934,Nuno Rodrigues,40843,FC Voluntari,Right Winger,31,Portugal,22,14,10,11,366,229,14455,10,14,61,14,31,0,2013,2026
+1545972,Mario Ștefan,40843,FC Voluntari,Central Midfield,17,Romania,28,2,1,4,18,0,0,0,0,0,0,0,0,2025,2026
 55210,Adam Nemec,40843,FC Voluntari,Centre-Forward,39,Slovakia,77,23,15,41,1047,655,44445,167,61,133,53,76,47,2003,2025
-889357,Mark Karacsony,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,23,Romania,34,7,4,9,158,22,1961,0,0,0,0,2,0,2020,2026
-425399,Raul Palmeș,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,30,Romania,3,12,5,12,373,278,23023,6,4,11,3,43,0,2015,2026
-291976,Lóránd Pászka,37255,FK Csikszereda Miercurea Ciuc,Left-Back,30,Romania,6,14,5,11,457,246,17476,13,33,49,19,36,0,2013,2026
-261328,János Hegedűs,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,30,Hungary,24,15,9,11,474,254,21157,13,15,5,3,42,6,2012,2026
-539696,Alex Szabó,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,28,Hungary,4,10,3,6,320,227,17855,9,9,30,9,36,0,2017,2026
-724573,Attila Csürös,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,31,Romania,13,11,1,7,240,158,11149,7,3,14,4,21,0,2016,2026
-720941,Artúr Horváth,37255,FK Csikszereda Miercurea Ciuc,Defensive Midfield,23,Hungary,11,9,3,11,226,133,7763,8,9,39,13,10,16,2018,2026
-1304982,Efraim Bödő,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,19,Romania,0,3,2,9,107,75,4276,3,1,30,7,7,12,2024,2026
-592926,Máté Ódor,37255,FK Csikszereda Miercurea Ciuc,Right-Back,25,Hungary,22,8,3,6,272,129,9643,1,5,0,0,20,0,2019,2026
-1547422,György Papp,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,18,Romania,5,2,2,3,14,1,90,0,0,0,0,0,0,2025,2026
-315471,Szilard Veres,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,30,Romania,8,14,5,14,413,226,15348,7,2,21,6,38,1,2013,2026
-592928,Zsolt Magyar,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,25,Hungary,30,8,4,5,211,122,6455,19,16,13,5,19,0,2019,2026
-263381,Mátyás Tajti,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,28,Hungary,18,14,9,14,347,216,13499,21,16,68,21,40,15,2012,2026
-964171,Ervin Bakos,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,22,Romania,15,6,3,7,155,66,3469,9,5,8,2,4,0,2021,2026
-871068,Dusan Vukovic,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,23,Montenegro,7,7,4,12,256,155,8741,25,2,3,1,31,6,2020,2026
-460361,Soufiane Jebari,37255,FK Csikszereda Miercurea Ciuc,Left Midfield,31,Spain,10,11,3,9,231,163,9885,20,12,29,7,9,0,2016,2026
-1547421,Szabolcs Nyitra,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,18,Romania,0,2,2,4,15,5,333,0,0,4,0,0,0,2025,2026
+508762,Darius Ghindovean,40843,FC Voluntari,Central Midfield,24,Romania,0,10,8,14,333,195,11157,31,42,32,7,46,12,2017,2026
+1411382,Zsombor Deáky,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,19,Romania,0,3,4,6,59,14,1260,0,0,0,0,1,0,2024,2026
+889357,Mark Karacsony,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,23,Romania,34,7,4,9,160,22,1961,0,0,0,0,2,0,2020,2026
+249080,Eduard Pap,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,32,Romania,94,15,8,15,547,304,27352,0,0,0,0,31,1,2012,2026
+291976,Lóránd Pászka,37255,FK Csikszereda Miercurea Ciuc,Left-Back,30,Romania,6,14,5,11,459,248,17656,13,33,52,19,36,0,2013,2026
+724573,Attila Csürös,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,31,Romania,13,11,1,7,242,160,11329,7,3,14,4,21,0,2016,2026
+539696,Alex Szabó,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,28,Hungary,4,10,3,6,322,227,17855,9,9,30,9,36,0,2017,2026
+592926,Máté Ódor,37255,FK Csikszereda Miercurea Ciuc,Right-Back,25,Hungary,22,8,3,6,274,131,9823,1,5,2,2,20,0,2019,2026
+1547422,György Papp,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,18,Romania,5,2,2,3,16,1,90,0,0,0,0,0,0,2025,2026
+720941,Artúr Horváth,37255,FK Csikszereda Miercurea Ciuc,Defensive Midfield,23,Hungary,11,9,3,11,228,135,7881,8,9,41,14,10,16,2018,2026
+261328,János Hegedűs,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,30,Hungary,24,15,9,11,476,256,21337,13,15,6,3,42,6,2012,2026
+425399,Raul Palmeș,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,30,Romania,3,12,5,12,375,280,23203,6,4,12,3,44,0,2015,2026
+964171,Ervin Bakos,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,22,Romania,15,6,3,7,157,66,3469,9,5,8,2,4,0,2021,2026
+871068,Dusan Vukovic,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,23,Montenegro,7,7,4,12,258,156,8750,25,2,3,1,32,6,2020,2026
+1304982,Efraim Bödő,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,19,Romania,0,3,2,9,109,75,4276,3,1,30,7,7,12,2024,2026
+263381,Mátyás Tajti,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,28,Hungary,18,14,9,14,349,216,13499,21,16,68,21,40,15,2012,2026
+315471,Szilard Veres,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,30,Romania,8,14,5,14,415,228,15410,7,2,21,6,38,1,2013,2026
+592928,Zsolt Magyar,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,25,Hungary,30,8,4,5,213,122,6455,19,16,13,5,19,0,2019,2026
 568579,Botond Szondi,37255,FK Csikszereda Miercurea Ciuc,Defensive Midfield,24,Romania,53,7,3,10,132,60,2516,2,1,0,0,5,17,2017,2023
-1548162,Victor Oniga,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,16,Romania,0,2,2,3,8,2,83,1,0,0,0,0,2,2025,2026
-634815,Anderson Ceará,37255,FK Csikszereda Miercurea Ciuc,Right Winger,27,Brazil,0,9,6,21,292,128,7305,13,18,99,48,24,0,2017,2026
-1455935,Darius Bota,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,17,Romania,55,2,2,6,45,32,1273,2,2,9,0,6,11,2025,2026
-543776,Szabolcs Szalay,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,24,Hungary,79,10,6,12,316,211,9852,20,13,61,20,23,17,2017,2026
-1042342,Ádám Czékus,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,23,Hungary,17,5,5,5,156,127,7378,28,16,6,4,18,0,2022,2026
-502355,Nino Kukovec,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,25,Slovenia,9,10,8,18,297,185,9777,32,5,8,5,25,17,2015,2026
-109197,Márton Eppel,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,34,Hungary,27,20,14,24,696,478,28257,128,34,129,58,45,14,2007,2026
-478022,Albert Stahl,37255,FK Csikszereda Miercurea Ciuc,Right Winger,27,Romania,77,12,6,9,405,252,12955,16,17,23,6,16,0,2015,2026
-1389869,Luca Noveli,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,18,Romania,14,3,2,4,45,6,237,0,0,0,0,0,0,2024,2026
-1475114,Előd Tóth-Pál,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,19,Romania,16,4,3,4,45,12,566,0,1,4,1,2,0,2023,2026
-1116604,Lima,37255,FK Csikszereda Miercurea Ciuc,Right Winger,21,Portugal,20,5,3,8,118,61,2818,11,1,7,3,7,0,2022,2026
-148712,Jozef Dolny,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,34,Slovakia,0,18,10,17,543,342,21701,96,40,31,10,17,9,2009,2026
-1008049,Máté Simon,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,18,Romania,33,6,3,11,147,58,5184,0,0,0,0,1,8,2021,2026
-874943,Norbert Kaján,37255,FK Csikszereda Miercurea Ciuc,Right-Back,20,Hungary,0,5,3,11,243,63,4692,2,0,7,3,5,7,2021,2025
+1455935,Darius Bota,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,17,Romania,55,2,2,6,47,32,1273,2,2,9,0,6,11,2025,2026
+460361,Soufiane Jebari,37255,FK Csikszereda Miercurea Ciuc,Left Midfield,31,Spain,10,11,3,9,233,164,9895,20,12,30,7,9,0,2016,2026
+1547421,Szabolcs Nyitra,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,18,Romania,0,2,2,4,17,7,492,1,0,8,1,0,0,2025,2026
+1548162,Victor Oniga,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,16,Romania,0,2,2,4,12,3,173,3,0,0,0,0,3,2025,2026
+634815,Anderson Ceará,37255,FK Csikszereda Miercurea Ciuc,Right Winger,27,Brazil,0,9,6,21,294,129,7366,14,18,101,49,24,0,2017,2026
+502355,Nino Kukovec,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,25,Slovenia,9,10,8,18,299,186,9809,33,5,9,6,26,17,2015,2026
+543776,Szabolcs Szalay,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,24,Hungary,79,10,6,12,318,212,9915,20,14,62,21,23,17,2017,2026
+478022,Albert Stahl,37255,FK Csikszereda Miercurea Ciuc,Right Winger,27,Romania,77,12,6,9,407,254,13046,16,18,27,8,17,0,2015,2026
+1042342,Ádám Czékus,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,23,Hungary,17,5,5,5,158,128,7387,28,16,6,4,18,0,2022,2026
+148712,Jozef Dolny,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,34,Slovakia,0,18,11,17,554,350,22008,96,40,31,10,18,9,2009,2026
+109197,Márton Eppel,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,34,Hungary,27,20,14,24,698,480,28392,129,34,136,61,45,14,2007,2026
+1389869,Luca Noveli,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,18,Romania,14,3,2,4,47,8,258,0,0,0,0,0,0,2024,2026
+1475114,Előd Tóth-Pál,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,19,Romania,16,4,3,4,47,12,566,0,1,4,1,2,0,2023,2026
+1116604,Lima,37255,FK Csikszereda Miercurea Ciuc,Right Winger,21,Portugal,20,5,3,8,120,63,2976,11,2,13,5,7,0,2022,2026
+1008049,Máté Simon,37255,FK Csikszereda Miercurea Ciuc,Goalkeeper,18,Romania,33,6,3,11,149,60,5364,0,0,0,0,1,8,2021,2026
 335548,Arian Kabashi,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,28,Kosovo,2,14,9,21,446,282,23020,7,4,7,1,89,8,2012,2025
-159014,János Ferenczi,37255,FK Csikszereda Miercurea Ciuc,Left-Back,34,Hungary,0,17,4,16,712,427,32618,30,69,61,11,55,2,2010,2026
-932837,Erwin Bloj,37255,FK Csikszereda Miercurea Ciuc,Right-Back,27,Romania,17,7,4,7,127,80,5468,4,4,2,1,6,0,2014,2026
-348768,Maks Celic,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,29,Croatia,0,12,10,22,357,198,16276,7,3,8,2,35,0,2014,2026
-1375842,Lóránd Bencze,37255,FK Csikszereda Miercurea Ciuc,Left-Back,15,Romania,25,3,2,6,60,15,804,0,1,1,0,0,12,2024,2026
-128876,Dávid Kelemen,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,33,Hungary,0,19,10,17,669,345,29138,10,4,0,0,52,28,2008,2026
+932837,Erwin Bloj,37255,FK Csikszereda Miercurea Ciuc,Right-Back,27,Romania,17,7,4,7,129,83,5638,4,4,2,1,6,0,2014,2026
+874943,Norbert Kaján,37255,FK Csikszereda Miercurea Ciuc,Right-Back,20,Hungary,0,5,3,11,243,63,4692,2,0,7,3,5,7,2021,2025
+159014,János Ferenczi,37255,FK Csikszereda Miercurea Ciuc,Left-Back,34,Hungary,0,17,4,16,714,430,32723,30,69,61,11,55,2,2010,2026
+348768,Maks Celic,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,29,Croatia,0,12,10,22,359,198,16276,7,3,8,2,35,0,2014,2026
 873233,Mariano Bettini,37255,FK Csikszereda Miercurea Ciuc,Right-Back,29,Argentina,5,8,6,6,223,140,11102,1,4,1,0,21,0,2016,2025
+128876,Dávid Kelemen,37255,FK Csikszereda Miercurea Ciuc,Centre-Back,33,Hungary,0,19,10,17,671,345,29138,10,4,0,0,52,28,2008,2026
+1375842,Lóránd Bencze,37255,FK Csikszereda Miercurea Ciuc,Left-Back,15,Romania,25,3,2,6,60,15,804,0,1,1,0,0,12,2024,2026
 187782,János Nagy,37255,FK Csikszereda Miercurea Ciuc,Right-Back,32,Hungary,0,16,7,10,447,291,19823,12,16,1,1,42,1,2010,2025
+405786,Wilhelm Loeper,37255,FK Csikszereda Miercurea Ciuc,Right Midfield,27,Sweden,7,13,8,13,401,306,23734,45,34,47,13,48,0,2014,2026
 544171,Bence Végh,37255,FK Csikszereda Miercurea Ciuc,Defensive Midfield,28,Hungary,97,9,4,6,165,129,8065,8,4,33,9,23,0,2017,2025
-520013,Bálint Szabó,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,24,Hungary,0,10,7,13,332,204,11906,23,29,76,21,35,12,2017,2026
-869975,Szabolcs Dusinszki,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,19,Hungary,18,6,5,10,174,74,3572,7,5,10,2,12,7,2020,2026
-405786,Wilhelm Loeper,37255,FK Csikszereda Miercurea Ciuc,Right Midfield,27,Sweden,7,13,9,13,401,306,23853,48,34,47,13,49,0,2014,2026
+520013,Bálint Szabó,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,24,Hungary,0,10,7,13,334,206,12066,26,29,76,21,35,12,2017,2026
+869975,Szabolcs Dusinszki,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,19,Hungary,18,6,5,10,176,74,3572,7,5,10,2,12,7,2020,2026
 1135708,Gustavo Cabral,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,23,Brazil,22,8,8,13,126,68,3236,5,2,11,2,11,0,2019,2026
-1490395,Dániel Brügger,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,17,Hungary,54,2,3,7,36,11,332,0,0,1,0,1,4,2025,2026
+90872,Peter Gal-Andrezly,37255,FK Csikszereda Miercurea Ciuc,Left Midfield,35,Slovakia,0,20,8,17,607,381,28088,37,46,2,0,37,5,2005,2026
+1490395,Dániel Brügger,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,17,Hungary,54,2,3,7,38,11,332,0,0,1,0,1,4,2025,2026
+914715,Szabolcs Szilágyi,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,21,Romania,0,9,7,10,249,106,5553,3,4,3,0,3,6,2016,2026
 220656,László Kleinheisler,37255,FK Csikszereda Miercurea Ciuc,Attacking Midfield,31,Hungary,30,16,11,33,713,424,26546,48,46,279,94,62,72,2010,2025
-914715,Szabolcs Szilágyi,37255,FK Csikszereda Miercurea Ciuc,Central Midfield,21,Romania,0,9,7,10,247,103,5419,3,4,3,0,3,6,2016,2026
-638954,Zoárd Nagy,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,25,Hungary,99,9,9,9,195,133,7708,35,6,10,3,22,0,2018,2026
-90872,Peter Gal-Andrezly,37255,FK Csikszereda Miercurea Ciuc,Left Midfield,35,Slovakia,0,20,8,17,605,381,28088,37,46,2,0,37,5,2005,2026
+638954,Zoárd Nagy,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,25,Hungary,99,9,9,9,197,135,7783,35,6,10,3,22,0,2018,2026
+239501,Benjamin Babati,37255,FK Csikszereda Miercurea Ciuc,Right Winger,29,Hungary,0,15,5,10,495,363,23416,73,49,14,6,48,0,2012,2026
 1188089,Alpár Gergely,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,17,Romania,0,4,3,4,38,13,646,1,1,6,4,0,0,2022,2026
 504064,Alexander Torvund,37255,FK Csikszereda Miercurea Ciuc,Centre-Forward,24,Hungary,0,11,11,13,331,206,11571,25,18,0,0,24,22,2016,2026
-239501,Benjamin Babati,37255,FK Csikszereda Miercurea Ciuc,Right Winger,29,Hungary,0,15,5,10,495,363,23416,73,49,14,6,48,0,2012,2026

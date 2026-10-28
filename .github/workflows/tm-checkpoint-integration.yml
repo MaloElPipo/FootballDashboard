@@ -1,0 +1,55 @@
+name: Synthetic checkpoint runner integration
+
+on:
+  push:
+    branches: ["tm-checkpoint-integration/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  GH_REPO: ${{ github.repository }}
+  TM_CAMPAIGN_ID: it-${{ github.run_id }}-${{ github.run_attempt }}
+
+jobs:
+  first-runner:
+    if: github.repository == 'MaloElPipo/ViveLaPiscine'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    outputs:
+      campaign_id: ${{ steps.produce.outputs.campaign_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Periodic upload then abrupt process disappearance
+        id: produce
+        shell: bash
+        run: |
+          set +e
+          python artifacts/football-dashboard/tests/integration/checkpoint_runner.py produce
+          status=$?
+          set -e
+          test "$status" -eq 23
+      - name: Remove the first runner's local state
+        run: rm -rf "$RUNNER_TEMP/isolated-checkpoints"
+
+  second-runner:
+    needs: first-runner
+    uses: ./.github/workflows/tm-checkpoint-integration-resume.yml
+    with:
+      campaign_id: ${{ needs.first-runner.outputs.campaign_id }}
+
+  cleanup:
+    if: always() && github.repository == 'MaloElPipo/ViveLaPiscine'
+    needs: [first-runner, second-runner]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Delete only this run's disposable draft and verify absence
+        run: python artifacts/football-dashboard/tests/integration/checkpoint_runner.py cleanup

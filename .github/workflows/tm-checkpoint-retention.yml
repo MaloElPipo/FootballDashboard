@@ -1,0 +1,56 @@
+name: Rétention des sauvegardes TM
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Simulation par défaut ; close renonce explicitement à toute reprise"
+        type: choice
+        options: [inventory, close, apply]
+        default: inventory
+      campaign:
+        description: "Pour close : campagne dont aucune reprise n'est nécessaire"
+        default: ""
+      reason:
+        description: "Pour close : justification vérifiée (exports validés ou abandon explicite)"
+        default: ""
+      confirmation:
+        description: "close : CLOSE-<campagne> ; apply : PURGE-<empreinte de la simulation>"
+        default: ""
+
+permissions:
+  contents: write
+  actions: read
+
+# Identique à scrape-weekly : jamais de purge pendant la collecte.
+concurrency:
+  group: scrape-weekly
+  cancel-in-progress: false
+
+jobs:
+  retention:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Inventorier ou appliquer la politique confirmée
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPERATION: ${{ inputs.operation }}
+          CAMPAIGN: ${{ inputs.campaign }}
+          REASON: ${{ inputs.reason }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+        run: |
+          python artifacts/football-dashboard/tm_checkpoint_retention.py \
+            --repo "$GITHUB_REPOSITORY" --operation "$OPERATION" \
+            --campaign "$CAMPAIGN" --reason "$REASON" \
+            --confirm "$CONFIRMATION" --output "$RUNNER_TEMP/tm-retention.json"
+      - name: Conserver l'inventaire
+        uses: actions/upload-artifact@v4
+        with:
+          name: tm-retention-inventory
+          path: ${{ runner.temp }}/tm-retention.json
+          retention-days: 90

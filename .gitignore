@@ -58,3 +58,10 @@ artifacts/football-dashboard/live/data/tm_scrap/_poc_dataset/
 artifacts/football-dashboard/tm_scrap_progress.json
 artifacts/football-dashboard/logs/
 
+
+# Local export recovery state must never be committed or packaged.
+artifacts/football-dashboard/live/data/tm_checkpoints/
+artifacts/football-dashboard/live/data/tm_career/.*.preparing/
+artifacts/football-dashboard/live/data/tm_career/.*.pending/
+artifacts/football-dashboard/live/data/tm_career/.*.committed/
+artifacts/football-dashboard/live/data/tm_career/.*.export.lock

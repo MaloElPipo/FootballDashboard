@@ -14,13 +14,18 @@ Le déploiement vers la branche `gh-pages` est fait par GitHub Actions.
 from __future__ import annotations
 
 import csv
+import fcntl
 import json
+import os
 import sys
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+from collection_metadata import collection_evidence, incomplete_attempt
+from career_export_transaction import CURRENT_SUFFIXES, export_transaction, recover_exports
 SRC_FULL = REPO_ROOT / "live" / "data" / "tm_career"
 SRC_CURRENT = REPO_ROOT / "live" / "data" / "tm_career_current"
 OUT_DIR = REPO_ROOT / "gh_pages_build"
@@ -62,12 +67,6 @@ def get_leagues_config() -> list[dict]:
     return out
 
 
-def file_mtime(path: Path) -> datetime | None:
-    if not path.exists():
-        return None
-    return datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc)
-
-
 def csv_row_count(path: Path) -> int:
     if not path.exists():
         return 0
@@ -75,17 +74,49 @@ def csv_row_count(path: Path) -> int:
         return sum(1 for _ in f) - 1  # -1 pour le header
 
 
-def build_zip(zip_path: Path, files: list[Path]) -> int:
-    """Crée un ZIP avec compression. Retourne taille en octets."""
+def build_zip(zip_path: Path, files: list[Path], *, skip_missing: bool = True) -> int:
+    """Replace one ZIP only after compression, close and fsync succeed.
+
+    A stable sidecar lock serializes writers and protects recovery of the
+    temporary file left by SIGKILL. Never unlink the lock (waiting writers
+    must continue to lock the same inode). Atomicity is per archive, not
+    across the entire portal.
+    """
     zip_path.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
-        for fp in files:
-            if fp.exists():
-                zf.write(fp, arcname=fp.name)
-    return zip_path.stat().st_size
+    temporary = zip_path.with_name(f".{zip_path.name}.tmp")
+    lock = zip_path.with_name(f".{zip_path.name}.lock")
+    with lock.open("a+b") as handle:
+        fcntl.flock(handle, fcntl.LOCK_EX)
+        try:
+            temporary.unlink(missing_ok=True)
+            with temporary.open("w+b") as output:
+                with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
+                    for fp in files:
+                        if not skip_missing or fp.exists():
+                            zf.write(fp, arcname=fp.name)
+                output.flush()
+                os.fsync(output.fileno())
+                size = output.tell()
+            os.replace(temporary, zip_path)
+            directory = os.open(zip_path.parent, os.O_RDONLY | os.O_DIRECTORY)
+            try:
+                os.fsync(directory)
+            finally:
+                os.close(directory)
+            return size
+        finally:
+            # Also handles KeyboardInterrupt/SystemExit. If unlink fails, the
+            # next writer retries cleanup under the lock before compressing.
+            temporary.unlink(missing_ok=True)
 
 
 def build_dataset_assets(target: dict) -> dict:
+    with export_transaction(SRC_FULL, target["code_tm"].lower()):
+        with export_transaction(SRC_CURRENT, target["code_tm"].lower(), CURRENT_SUFFIXES):
+            return _build_dataset_assets(target)
+
+
+def _build_dataset_assets(target: dict) -> dict:
     """Pour un championnat ou une sélection, construit les ZIPs disponibles
     et retourne les méta-données pour la page."""
     code = target["code_tm"]
@@ -101,6 +132,8 @@ def build_dataset_assets(target: dict) -> dict:
 
     has_full = summary_p.exists() and career_p.exists()
     has_current = career_cur_p.exists()
+    last_update, collection_status = collection_evidence(SRC_FULL, code_l)
+    attempt_at, attempt_reason = incomplete_attempt(SRC_FULL, code_l)
 
     meta: dict = {
         **target,
@@ -111,16 +144,16 @@ def build_dataset_assets(target: dict) -> dict:
         "n_matches_rows": csv_row_count(matches_p) if has_full else 0,
         "all_zip_size": 0,
         "current_zip_size": 0,
-        "last_update": None,
+        "last_update": last_update,
+        "collection_status": collection_status,
+        "attempt_at": attempt_at,
+        "attempt_reason": attempt_reason,
     }
 
     if has_full:
         all_zip = OUT_DATA / f"{code_l}_all.zip"
         meta["all_zip_size"] = build_zip(all_zip, [summary_p, career_p, matches_p, comps_p])
         meta["all_zip_path"] = f"data/{all_zip.name}"
-        mt = file_mtime(career_p)
-        if mt:
-            meta["last_update"] = mt
 
     if has_current:
         cur_zip = OUT_DATA / f"{code_l}_current.zip"
@@ -149,7 +182,7 @@ def fmt_date(dt: datetime | None) -> str:
 def freshness_badge(dt: datetime | None) -> tuple[str, str]:
     """Retourne (label, classe CSS) selon la fraîcheur des données."""
     if dt is None:
-        return ("Jamais", "badge stale")
+        return ("Date inconnue", "badge stale")
     age_days = (datetime.now(tz=timezone.utc) - dt).days
     if age_days <= 8:
         return (f"{age_days} j", "badge fresh")
@@ -158,7 +191,7 @@ def freshness_badge(dt: datetime | None) -> tuple[str, str]:
     return (f"{age_days} j", "badge old")
 
 
-def render_html(metas: list[dict]) -> str:
+def render_html(metas: list[dict], *, archive_paths: set[Path] | None = None) -> str:
     """Génère index.html à partir des métadonnées de chaque dataset."""
     # Presentation-only: retain national-team configuration and assets, but hide
     # their rows and exclude them from the visible availability counters.
@@ -175,15 +208,17 @@ def render_html(metas: list[dict]) -> str:
         ]
         if included:
             name = f"collect_all_{kind}_{now:%Y-%m-%d}.zip"
-            with zipfile.ZipFile(OUT_DATA / name, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
-                for code in included:
-                    for suffix in suffixes:
-                        filename = f"{code}_{suffix}.csv"
-                        archive.write(folder / filename, arcname=filename)
+            size = build_zip(
+                OUT_DATA / name,
+                [folder / f"{code}_{suffix}.csv" for code in included for suffix in suffixes],
+                skip_missing=False,
+            )
+            if archive_paths is not None:
+                archive_paths.add(OUT_DATA / name)
             bundles[kind] = (
                 f'<div class="bundle"><a class="btn btn-primary" href="data/{name}" download>'
                 f'Collect all {kind}</a> <span>{len(included)} championnats · '
-                f'{fmt_bytes((OUT_DATA / name).stat().st_size)}</span></div>'
+                f'{fmt_bytes(size)}</span></div>'
             )
         else:
             bundles[kind] = '<div class="bundle"><span class="btn btn-disabled">À venir</span></div>'
@@ -212,8 +247,19 @@ def render_html(metas: list[dict]) -> str:
             tier_txt = "" if not m.get("tier") else f"D{m['tier']}"
             badge_text, badge_class = freshness_badge(m.get("last_update"))
             update_str = fmt_date(m.get("last_update"))
+            status_text = {
+                "updated": "Actualisées lors de la dernière tentative",
+                "retained": "Anciennes données conservées — dernière tentative incomplète",
+                "unknown": "Données disponibles — collecte non attestée",
+            }[m.get("collection_status", "unknown")] if m["has_full"] or m["has_current"] else "Données indisponibles"
 
             n_players = m["n_players"]
+            attempt_details = ""
+            if m.get("attempt_at"):
+                stamp = fmt_date(m["attempt_at"].astimezone(timezone.utc))
+                attempt_details += f'<div class="update-date"><span>Dernière tentative</span> : {stamp}</div>'
+            if m.get("attempt_reason"):
+                attempt_details += f'<div class="update-date">{m["attempt_reason"]}</div>'
             stats_str = (
                 f"{n_players} joueurs · {m['n_career_rows']} lignes career · "
                 f"{m['n_matches_rows']} matchs"
@@ -251,6 +297,8 @@ def render_html(metas: list[dict]) -> str:
                   <td class="cell-update">
                     <div class="update-date">{update_str}</div>
                     <span class="{badge_class}">{badge_text}</span>
+                    <div class="update-date">{status_text}</div>
+                    {attempt_details}
                   </td>
                   <td class="cell-actions">
                     {btn_all}
@@ -267,7 +315,7 @@ def render_html(metas: list[dict]) -> str:
                 <tr>
                   <th>Championnat</th>
                   <th>Contenu</th>
-                  <th>Dernière mise à jour</th>
+                  <th>Dernière collecte complète réussie</th>
                   <th>Téléchargement</th>
                 </tr>
               </thead>
@@ -376,6 +424,7 @@ def render_html(metas: list[dict]) -> str:
       <p style="margin: 8px 0; font-size: 14px; line-height: 1.6;">
         Pour chaque championnat, deux téléchargements sont proposés :
       </p>
+      <p>La disponibilité ne garantit pas une actualisation récente. La date de génération de la page ne change pas la date de collecte.</p>
       <ul style="font-size: 14px; line-height: 1.7;">
         <li><strong>⬇️ Tout télécharger</strong> — ZIP des 4 CSV complets : <code>summary</code> (1 ligne/joueur, totaux carrière), <code>career</code> (1 ligne par saison × compétition × club), <code>matches</code> (10 derniers matchs ou 3 derniers mois), <code>competitions_seen</code> (référentiel des codes compétitions rencontrés). Idéal pour une analyse complète.{bundles["career"]}</li>
         <li><strong>🔄 Mise à jour saison</strong> — ZIP léger contenant uniquement les lignes de la <strong>saison en cours</strong> (career + matches). À télécharger chaque semaine pour suivre l'actualité sans tout retéléverser.{bundles["updates"]}</li>
@@ -398,12 +447,16 @@ def render_html(metas: list[dict]) -> str:
 
 
 def main() -> int:
+    recover_exports(SRC_FULL)
+    recover_exports(SRC_CURRENT, CURRENT_SUFFIXES)
     print("[INFO] Préparation du dossier de sortie")
-    if OUT_DIR.exists():
-        # Nettoyage des anciens fichiers (mais on garde le dossier pour gh-pages)
-        for p in OUT_DIR.rglob("*"):
-            if p.is_file():
-                p.unlink()
+    # Do not erase the last good archives before attempting their replacements.
+    # Sidecar locks must keep their inode, and abandoned temporaries are
+    # recovered by build_zip while holding the corresponding lock.
+    previous_files = {
+        p for p in OUT_DIR.rglob("*") if p.is_file()
+        and not (p.name.startswith(".") and p.name.endswith((".lock", ".tmp")))
+    }
     OUT_DATA.mkdir(parents=True, exist_ok=True)
 
     print("[INFO] Chargement de la config maître")
@@ -423,11 +476,18 @@ def main() -> int:
             print(f"  [OK]  {t['code_tm']:6s} {sizes}")
 
     print("[INFO] Génération du HTML")
-    html = render_html(metas)
+    generated = {
+        OUT_DIR / meta[key] for meta in metas
+        for key in ("all_zip_path", "current_zip_path") if key in meta
+    }
+    html = render_html(metas, archive_paths=generated)
     (OUT_DIR / "index.html").write_text(html, encoding="utf-8")
 
     # Fichier .nojekyll pour s'assurer que GitHub Pages traite le HTML brut
     (OUT_DIR / ".nojekyll").write_text("", encoding="utf-8")
+    generated.update((OUT_DIR / "index.html", OUT_DIR / ".nojekyll"))
+    for path in previous_files - generated:
+        path.unlink(missing_ok=True)
 
     n_ok = sum(1 for m in metas if m["has_full"])
     print()

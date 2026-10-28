@@ -1,17 +1,30 @@
 name: Diagnostic HTTP Transfermarkt (sans export)
 on:
   workflow_dispatch:
+    inputs:
+      window:
+        description: "Fenêtre autorisée (1, 2 ou 3). Vide = sonde historique 36 joueurs."
+        type: choice
+        options: ["", "1", "2", "3"]
+        default: ""
+      previous_run:
+        description: "Run précédent réussi, terminé depuis au moins 6 h (fenêtres 2/3)"
+        type: string
+        default: ""
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: tm-http-diagnostic
   cancel-in-progress: false
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -21,19 +34,36 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Tests hors réseau
         working-directory: artifacts/football-dashboard
-        run: python -m unittest test_tm_http_recovery -v
-      - name: Deux joueurs seulement, aucune écriture CSV
-        working-directory: artifacts/football-dashboard
+        run: python -m unittest test_tm_http_recovery test_tm_http_diagnostic -v
+      - name: Charger la preuve de la fenêtre précédente
+        if: inputs.window == '2' || inputs.window == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREVIOUS_RUN: ${{ inputs.previous_run }}
+          GH_REPO: ${{ github.repository }}
         run: |
-          python -u - <<'PY'
-          import tm_player_career as m
-          ok = True
-          for pid in ("419672", "669380"):
-              data, status, error = m._fetch_json(m.BASE_URL + m.CEAPI_PATH.format(pid=pid))
-              valid = isinstance(data, dict) and isinstance(data.get("data"), dict)
-              print(f"player={pid} status={status} valid_data={valid} error={error}")
-              ok = ok and status == 200 and valid
-              if m._blocked.is_set():
-                  break
-          raise SystemExit(0 if ok else 1)
-          PY
+          [[ "$PREVIOUS_RUN" =~ ^[0-9]+$ ]] || exit 1
+          gh run download "$PREVIOUS_RUN" -n tm-http-diagnostic -D "$RUNNER_TEMP/previous"
+      - name: Sonde bornée — arrêt au premier échec, sans export
+        working-directory: artifacts/football-dashboard
+        env:
+          WINDOW: ${{ inputs.window }}
+        run: |
+          args=()
+          if [[ -n "$WINDOW" ]]; then args+=(--window "$WINDOW"); fi
+          if [[ "$WINDOW" == 2 || "$WINDOW" == 3 ]]; then
+            args+=(--previous-report "$RUNNER_TEMP/previous/tm-http-diagnostic.json")
+          fi
+          python -u tm_http_diagnostic.py "${args[@]}"
+      - name: Vérifier l'absence de modification des données
+        if: always()
+        run: |
+          test -z "$(git status --porcelain --untracked-files=all -- artifacts/football-dashboard/live/data)"
+      - name: Conserver uniquement les métriques anonymes du diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tm-http-diagnostic
+          path: ${{ runner.temp }}/tm-http-diagnostic.json
+          if-no-files-found: error
+          retention-days: 14

@@ -50,11 +50,15 @@ import threading
 import time
 import urllib.error
 import urllib.request
+import uuid
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 import tm_waf
+from collection_metadata import start_attempt, complete_attempt, fail_attempt
+from career_export_transaction import export_transaction
+from tm_career_checkpoints import Checkpoints, valid_payload
 
 # ============================================================
 # Config
@@ -88,6 +92,18 @@ _print_lock = threading.Lock()
 _blocked = threading.Event()
 _recovery_lock = threading.Lock()
 _recovery_used = False
+# Contract with scrape-weekly.yml: never retry this exit in a fresh process.
+BLOCKED_EXIT_CODE = 75
+BUDGET_EXIT_CODE = 76
+_deadline = None
+_budget_expired = threading.Event()
+
+
+def _within_budget():
+    if _deadline is not None and time.monotonic() >= _deadline:
+        _budget_expired.set()
+        return False
+    return True
 
 
 def _log(msg: str) -> None:
@@ -100,7 +116,7 @@ def _polite_pause() -> None:
 
 
 def _fetch_json_once(
-    url: str, timeout: int = TIMEOUT
+    url: str, timeout: int = TIMEOUT, *, token_provider=None, open_request=None
 ) -> tuple[dict | None, int | None, str | None, bool, str | None]:
     """Un seul GET JSON. Returns (json, status, error, is_challenge, token_used).
 
@@ -109,12 +125,20 @@ def _fetch_json_once(
     ``token_used`` est le token WAF employé (pour un refresh ciblé « stale »).
     """
     headers = dict(TM_HEADERS)
-    token = tm_waf.get_waf_token()
+    if not _within_budget():
+        return None, None, "budget exhausted", False, None
+    token = (token_provider() if token_provider else
+             tm_waf.get_waf_token(deadline=_deadline) if _deadline is not None
+             else tm_waf.get_waf_token())
     if token:
         headers["Cookie"] = f"aws-waf-token={token}"
+    if not _within_budget():
+        return None, None, "budget exhausted", False, token
+    if _deadline is not None:
+        timeout = min(timeout, max(0.01, _deadline - time.monotonic()))
     req = urllib.request.Request(url, headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        with (open_request or urllib.request.urlopen)(req, timeout=timeout) as r:
             data = r.read()
             if r.headers.get("Content-Encoding") == "gzip":
                 try:
@@ -122,6 +146,8 @@ def _fetch_json_once(
                 except OSError:
                     pass
             waf_action = r.headers.get("x-amzn-waf-action")
+            if (waf_action or "").lower() == "captcha":
+                return None, r.status, "WAF captcha", False, token
             if tm_waf.is_challenge_response(r.status, len(data), waf_action):
                 return None, r.status, "WAF challenge", True, token
             text = data.decode("utf-8", errors="replace")
@@ -132,6 +158,8 @@ def _fetch_json_once(
     except urllib.error.HTTPError as e:
         # 202/403 peuvent aussi remonter ici selon la config WAF.
         action = (e.headers.get("x-amzn-waf-action") or "").lower()
+        if action == "captcha" and e.code != 405:
+            return None, e.code, "WAF captcha", False, token
         is_ch = tm_waf.is_challenge_response(e.code, 0, action)
         if e.code == 405:
             # Only log allowlisted classifications, never cookies or response bodies.
@@ -158,29 +186,37 @@ def _fetch_json(
     """
     global _recovery_used
     if _blocked.is_set():
-        return None, 405, "Circuit ouvert : collecte de cette ligue arrêtée"
+        return None, 405, "Circuit ouvert : collecte globale arrêtée"
     payload, status, err, is_challenge, token_used = _fetch_json_once(url, timeout)
-    if payload is None and is_challenge:
-        tm_waf.get_waf_token(force_refresh=True, stale=token_used)
-        payload, status, err, _, token_used = _fetch_json_once(url, timeout)
-    if status == 405:
+    if "captcha" in (err or "").lower():
+        _blocked.set()
+        _log("   ! CAPTCHA demandé : arrêt sans tentative de résolution automatique.")
+        return None, status, err
+    if status in (403, 429) and not is_challenge:
+        _blocked.set()
+        return None, status, err
+    if status == 405 or (payload is None and is_challenge):
         with _recovery_lock:
-            if _blocked.is_set():
+            if _blocked.is_set() or not _within_budget():
                 return None, status, err
             _log(f"   ! Diagnostic Transfermarkt : {err}")
-            if "waf=captcha" in (err or ""):
-                _blocked.set()
-                _log("   ! CAPTCHA demandé : arrêt sans tentative de résolution automatique.")
-                return None, status, err
             if not _recovery_used:
                 _recovery_used = True
-                tm_waf.get_waf_token(force_refresh=True, stale=token_used)
-            # Other workers can retry with the refreshed session, but cannot
-            # trigger a second browser refresh for this league.
-            payload, status, err, _, _ = _fetch_json_once(url, timeout)
-            if payload is None:
+                options = {"deadline": _deadline} if _deadline is not None else {}
+                tm_waf.get_waf_token(force_refresh=True, stale=token_used, **options)
+            if _blocked.is_set():
+                return None, status, err
+            # One recovery only, shared by challenges and HTTP refusals.
+            # Concurrent workers may use it, never create another session.
+            payload, status, err, is_challenge, _ = _fetch_json_once(url, timeout)
+            # A failed recovery is not necessarily a persistent refusal:
+            # timeouts, 5xx and invalid JSON remain ordinary retryable failures.
+            if payload is None and (
+                is_challenge or status in (403, 405, 429)
+                or "captcha" in (err or "").lower()
+            ):
                 _blocked.set()
-                _log(f"   ! Reprise refusée ({err}) : arrêt réseau pour cette ligue, anciens CSV conservés.")
+                _log(f"   ! Reprise refusée ({err}) : arrêt réseau global, anciens CSV conservés.")
             return payload, status, err
     return payload, status, err
 
@@ -192,10 +228,11 @@ def fetch_player_career(player_id: str) -> dict | None:
     if payload is None:
         _log(f"   ! échec player_id={player_id}: status={status} err={err}")
         return None
-    if not payload.get("success"):
-        _log(f"   ! API non-success player_id={player_id}: {payload.get('message')}")
+    if not isinstance(payload, dict) or payload.get("success") is not True:
+        _log(f"   ! API non-success player_id={player_id}")
         return None
-    return payload.get("data")
+    data = payload.get("data")
+    return data if valid_payload(data) else None
 
 
 # ============================================================
@@ -501,6 +538,7 @@ def load_player_meta_from_league_csv(
 def scrape_players(
     player_meta_by_id: dict[str, dict],
     workers: int = DEFAULT_WORKERS,
+    checkpoints=None,
 ) -> tuple[list[dict], list[dict], list[dict], dict[str, int], list[str]]:
     """Scrape la carrière de tous les player_id fournis. Multi-thread.
 
@@ -515,19 +553,32 @@ def scrape_players(
     total = len(player_meta_by_id)
     done = 0
     t0 = time.time()
+    storage_failed = threading.Event()
 
     def _process(pid_meta: tuple[str, dict]):
         pid, meta = pid_meta
-        if _blocked.is_set():
+        name = meta.get("player_name") or f"player_{pid}"
+        record = checkpoints.get(pid) if checkpoints else None
+        if record:
+            return pid, aggregate_player(pid, name, meta, record["data"])
+        if checkpoints and checkpoints.error:
+            storage_failed.set()
+        if _blocked.is_set() or storage_failed.is_set() or not _within_budget():
             return pid, None
         _polite_pause()
-        if _blocked.is_set():
+        if _blocked.is_set() or storage_failed.is_set() or not _within_budget():
             return pid, None
         data = fetch_player_career(pid)
-        if data is None:
+        if not valid_payload(data):
             return pid, None
-        name = meta.get("player_name") or f"player_{pid}"
-        return pid, aggregate_player(pid, name, meta, data)
+        result = aggregate_player(pid, name, meta, data)
+        if checkpoints:
+            try:
+                checkpoints.put(pid, data)
+            except Exception:
+                storage_failed.set()
+                raise
+        return pid, result
 
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {ex.submit(_process, item): item[0] for item in player_meta_by_id.items()}
@@ -559,6 +610,8 @@ def scrape_players(
                     f"failed={len(failed_ids)}"
                 )
 
+    if storage_failed.is_set():
+        raise RuntimeError("Checkpoint persistence failed; collection stopped")
     return summary_all, career_all, matches_all, dict(comp_id_counts), failed_ids
 
 
@@ -609,8 +662,49 @@ def cli():
         "--out-dir", default="live/data/tm_career",
         help="Dossier de sortie (défaut: live/data/tm_career)",
     )
+    parser.add_argument("--campaign", default=os.getenv("TM_CAMPAIGN_ID"))
+    parser.add_argument("--checkpoint-dir", default="live/data/tm_checkpoints")
+    parser.add_argument("--checkpoint-remote", action="store_true",
+                        default=os.getenv("TM_CHECKPOINT_REMOTE") == "github")
+    parser.add_argument("--budget-seconds", type=float, default=240,
+                        help="Budget réseau par tentative, maximum 240 s")
     args = parser.parse_args()
+    if not 0 < args.budget_seconds <= 240:
+        parser.error("--budget-seconds must be > 0 and <= 240")
+    args.campaign = args.campaign or uuid.uuid4().hex
 
+    # A durable incomplete attempt also covers process timeouts/interruptions.
+    # Test/custom/explicit-season exports must never certify a full collection.
+    args.record_collection = bool(
+        args.league and not args.player_ids and not args.test
+        and args.season_filter == -1
+    )
+    return collect(args)
+
+
+def collect(args):
+    label = "custom" if args.player_ids else args.league
+    if not label:
+        raise SystemExit("Il faut --league ou --player-ids")
+    with export_transaction(args.out_dir, label) as transaction:
+        if args.record_collection:
+            start_attempt(args.out_dir, args.league)
+        return _collect(args, transaction)
+
+
+def _record_failure(args, reason):
+    if args.record_collection:
+        try:
+            fail_attempt(args.out_dir, args.league, reason)
+        except OSError:
+            # A full/unwritable disk may also prevent recording the cause.
+            # Keep the durable incomplete marker and the original exception.
+            _log("   ! Cause de l'échec non enregistrée.")
+
+
+def _collect(args, transaction):
+    global _deadline
+    _budget_expired.clear()
     # Construit la liste des joueurs
     if args.player_ids:
         ids = [s.strip() for s in args.player_ids.split(",") if s.strip()]
@@ -619,6 +713,7 @@ def cli():
     elif args.league:
         src = f"live/data/tm_scrap/{args.league}.csv"
         if not os.path.exists(src):
+            _record_failure(args, "missing_squad")
             _log(f"   ! introuvable: {src}")
             sys.exit(1)
         if args.season_filter == -1:
@@ -638,23 +733,50 @@ def cli():
             f"(saison filter={sorted(season_filter) if season_filter else None})"
         )
     else:
-        parser.error("Il faut --league ou --player-ids")
+        raise SystemExit("Il faut --league ou --player-ids")
 
     if args.test:
         n = min(args.test_n, len(player_meta_by_id))
         player_meta_by_id = dict(list(player_meta_by_id.items())[:n])
         _log(f"   MODE TEST: limité à {len(player_meta_by_id)} joueurs")
 
-    # Obtention du token WAF (1 navigateur) AVANT le scraping HTTP rapide.
-    tm_waf.warm_up()
+    if not player_meta_by_id:
+        _record_failure(args, "missing_squad")
+        raise SystemExit(1)
+
+    checkpoints = Checkpoints(
+        getattr(args, "checkpoint_dir", "live/data/tm_checkpoints"),
+        getattr(args, "campaign", None) or uuid.uuid4().hex,
+        getattr(args, "checkpoint_remote", False),
+    )
+    # Restore does not consume source budget. Warm-up does, as before.
+    _deadline = time.monotonic() + getattr(args, "budget_seconds", 240)
+    missing = [pid for pid in player_meta_by_id if not checkpoints.get(pid)]
+    try:
+        if missing and _within_budget():
+            tm_waf.warm_up(deadline=_deadline)
+    except Exception:
+        _deadline = None
+        _record_failure(args, "player_requests_failed")
+        raise
 
     # Scrape
     _log(f"\n>>> Scraping carrière {league_label} ({len(player_meta_by_id)} joueurs, "
          f"{args.workers} workers)...\n")
     t0 = time.time()
-    summary, career, matches, comp_counts, failed = scrape_players(
-        player_meta_by_id, workers=args.workers
-    )
+    try:
+        with checkpoints.periodic_flush():
+            summary, career, matches, comp_counts, failed = scrape_players(
+                player_meta_by_id, workers=args.workers, checkpoints=checkpoints
+            )
+    except Exception:
+        _record_failure(args, "player_requests_failed")
+        raise
+    finally:
+        _within_budget()
+        _deadline = None
+        # Even on failure, persist every validated success before exiting.
+        checkpoints.flush()
     elapsed = time.time() - t0
     _log(f"\n>>> Terminé en {elapsed:.0f}s. Échecs: {len(failed)}")
     if failed:
@@ -664,29 +786,42 @@ def cli():
     # Même un seul joueur réussi masquait auparavant un blocage quasi total.
     # Toute erreur conserve les CSV précédents et rend la ligue éligible au retry.
     total_players = len(player_meta_by_id)
+    if _blocked.is_set():
+        _record_failure(args, "player_requests_failed")
+        _log("   ! Blocage persistant : arrêt global demandé, fichiers existants préservés.")
+        sys.exit(BLOCKED_EXIT_CODE)
     if failed or not summary:
+        _record_failure(args, "player_requests_failed")
         fail_pct = 100 * len(failed) / total_players if total_players else 0
         _log(
             f"\n>>> ALERTE : {fail_pct:.0f}% d'échecs ({len(failed)}/{total_players}), "
             f"{len(summary)} joueur(s) produit(s) — export incomplet refusé."
         )
         _log("   Écriture annulée — fichiers existants préservés.")
-        sys.exit(1)  # Signale l'échec au workflow → KO → retry pass
+        sys.exit(BUDGET_EXIT_CODE if _budget_expired.is_set() else 1)
 
     # Écrit les CSV
     out = args.out_dir
-    write_csv(f"{out}/{league_label}_summary.csv", summary, SUMMARY_COLS)
-    write_csv(f"{out}/{league_label}_career.csv", career, CAREER_COLS)
-    write_csv(f"{out}/{league_label}_matches.csv", matches, MATCHES_COLS)
+    def prepare_exports(staging):
+        write_csv(f"{staging}/{league_label}_summary.csv", summary, SUMMARY_COLS)
+        write_csv(f"{staging}/{league_label}_career.csv", career, CAREER_COLS)
+        write_csv(f"{staging}/{league_label}_matches.csv", matches, MATCHES_COLS)
+        with open(staging / f"{league_label}_competitions_seen.csv",
+                  "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f)
+            w.writerow(["competition_id", "n_players_with_match"])
+            for c, n in sorted(comp_counts.items(), key=lambda x: -x[1]):
+                w.writerow([c, n])
 
-    # Rapport compétitions rencontrées
+    try:
+        evidence = checkpoints.evidence(player_meta_by_id) if args.record_collection else None
+        transaction.write(prepare_exports)
+        if args.record_collection:
+            complete_attempt(out, league_label, evidence=evidence)
+    except Exception:
+        _record_failure(args, "write_failed")
+        raise
     comp_report_path = f"{out}/{league_label}_competitions_seen.csv"
-    os.makedirs(os.path.dirname(comp_report_path), exist_ok=True)
-    with open(comp_report_path, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["competition_id", "n_players_with_match"])
-        for c, n in sorted(comp_counts.items(), key=lambda x: -x[1]):
-            w.writerow([c, n])
     _log(f"   ✓ écrit rapport compétitions → {comp_report_path} "
          f"({len(comp_counts)} codes uniques)")
 

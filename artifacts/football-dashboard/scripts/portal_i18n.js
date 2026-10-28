@@ -3,6 +3,18 @@
   const languages = ["fr", "es", "de", "it", "en"];
   // French source -> Spanish, German, Italian, English.
   const phrases = [
+    ["Dernière collecte complète réussie", "Última recopilación completa exitosa", "Letzte erfolgreiche vollständige Erfassung", "Ultima raccolta completa riuscita", "Last successful complete collection"],
+    ["Dernière tentative", "Último intento", "Letzter Versuch", "Ultimo tentativo", "Last attempt"],
+    ["Effectif absent", "Plantilla ausente", "Kader fehlt", "Rosa assente", "Squad missing"],
+    ["Requêtes joueurs échouées", "Consultas de jugadores fallidas", "Spieleranfragen fehlgeschlagen", "Richieste giocatori fallite", "Player requests failed"],
+    ["Écriture échouée", "Error de escritura", "Schreiben fehlgeschlagen", "Scrittura fallita", "Write failed"],
+    ["Collecte interrompue", "Recopilación interrumpida", "Erfassung unterbrochen", "Raccolta interrotta", "Collection interrupted"],
+    ["Date inconnue", "Fecha desconocida", "Datum unbekannt", "Data sconosciuta", "Unknown date"],
+    ["Actualisées lors de la dernière tentative", "Actualizados en el último intento", "Beim letzten Versuch aktualisiert", "Aggiornati nell’ultimo tentativo", "Updated on the last attempt"],
+    ["Anciennes données conservées — dernière tentative incomplète", "Datos anteriores conservados — último intento incompleto", "Alte Daten beibehalten — letzter Versuch unvollständig", "Dati precedenti conservati — ultimo tentativo incompleto", "Previous data retained — last attempt incomplete"],
+    ["Données disponibles — collecte non attestée", "Datos disponibles — recopilación no acreditada", "Daten verfügbar — Erfassung nicht belegt", "Dati disponibili — raccolta non attestata", "Data available — collection unverified"],
+    ["Données indisponibles", "Datos no disponibles", "Keine Daten verfügbar", "Dati non disponibili", "Data unavailable"],
+    ["La disponibilité ne garantit pas une actualisation récente. La date de génération de la page ne change pas la date de collecte.", "La disponibilidad no garantiza una actualización reciente. La fecha de generación de la página no cambia la fecha de recopilación.", "Verfügbarkeit garantiert keine aktuelle Erfassung. Das Erstellungsdatum der Seite ändert das Erfassungsdatum nicht.", "La disponibilità non garantisce un aggiornamento recente. La data di generazione della pagina non cambia la data di raccolta.", "Availability does not guarantee a recent update. Rebuilding the page does not change the collection date."],
     ["Portail CSV", "Portal CSV", "CSV-Portal", "Portale CSV", "CSV portal"],
     ["Langue", "Idioma", "Sprache", "Lingua", "Language"],
     ["Données de carrière des joueurs actifs des championnats trackés par", "Datos de carrera de los jugadores activos de las ligas seguidas por", "Karrieredaten aktiver Spieler aus den erfassten Ligen von", "Dati di carriera dei giocatori attivi nei campionati seguiti da", "Career data for active players in leagues tracked by"],

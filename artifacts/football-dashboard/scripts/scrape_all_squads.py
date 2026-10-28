@@ -11,6 +11,7 @@ Usage :
     python scripts/scrape_all_squads.py            # toutes les ligues manquantes
     python scripts/scrape_all_squads.py --force    # tout refaire
     python scripts/scrape_all_squads.py --only L1  # une ligue précise
+    python scripts/scrape_all_squads.py --refresh-current --leagues L1,FR1
 """
 
 from __future__ import annotations
@@ -27,6 +28,22 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TM_SCRAP_DIR = REPO_ROOT / "live" / "data" / "tm_scrap"
 PROGRESS_FILE = REPO_ROOT / "tm_scrap_progress.json"
 SCRAPER = REPO_ROOT / "tm_league_scraper.py"
+
+
+def select_leagues(selection: str | None) -> list[dict]:
+    """Valide toute la sélection avant collecte ; vide/absente = mode complet."""
+    sys.path.insert(0, str(REPO_ROOT))
+    from live.leagues_master import LEAGUES
+
+    if selection is None or selection == "":
+        return list(LEAGUES)
+    codes = [code.strip().upper() for code in selection.split(",")]
+    known = {league["code_tm"].upper(): league for league in LEAGUES}
+    invalid = [code for code in codes if code not in known]
+    if invalid:
+        raise ValueError(f"Codes TM invalides : {', '.join(repr(c) for c in invalid)}")
+    # Respecte l'ordre demandé, sans collecter deux fois une même ligue.
+    return [known[code] for code in dict.fromkeys(codes)]
 
 
 def load_progress() -> dict:
@@ -92,31 +109,33 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--force", action="store_true",
                         help="Re-scraper même les ligues déjà présentes")
-    parser.add_argument("--only", help="Code TM unique (ex: L1)")
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--only", help="Code TM unique (ex: L1)")
+    selection.add_argument("--leagues",
+                           help="Codes TM séparés par virgules ; vide = toutes")
     parser.add_argument("--max-per-run", type=int, default=999,
                         help="Limite de ligues à traiter dans cette exécution")
     parser.add_argument("--refresh-current", action="store_true",
-                        help="Rafraîchit TOUTES les ligues sur la saison "
+                        help="Rafraîchit les ligues sélectionnées (toutes par défaut) sur la saison "
                              "précédente + courante, en FUSION avec le CSV "
                              "existant (capte transferts, promus/relégués et "
                              "nouveaux joueurs, sans jamais perdre de lignes)")
     args = parser.parse_args()
 
-    sys.path.insert(0, str(REPO_ROOT))
-    from live.leagues_master import LEAGUES  # type: ignore
+    try:
+        if args.only is not None and (not args.only.strip() or "," in args.only):
+            raise ValueError("--only exige un code TM unique non vide")
+        candidates = select_leagues(args.only if args.only is not None else args.leagues)
+    except ValueError as exc:
+        parser.error(str(exc))
 
     TM_SCRAP_DIR.mkdir(parents=True, exist_ok=True)
     progress = load_progress()
     progress.setdefault("leagues", {})
 
-    if args.only:
-        candidates = [l for l in LEAGUES if l["code_tm"].upper() == args.only.upper()]
-    else:
-        candidates = list(LEAGUES)
-
     extra_args: list[str] | None = None
     if args.refresh_current:
-        # Refresh transferts : toutes les ligues, saison N-1 + N (id TM), en
+        # Refresh transferts : ligues sélectionnées, saison N-1 + N (id TM), en
         # fusion avec l'existant. La saison N (ex. 2026 = saison 2026/27) capte
         # les nouveaux effectifs dès l'été ; N-1 rafraîchit les stats finales.
         y = datetime.utcnow().year

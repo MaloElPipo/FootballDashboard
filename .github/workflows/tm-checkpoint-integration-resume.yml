@@ -1,0 +1,25 @@
+name: Synthetic checkpoint resume on fresh runner
+on:
+  workflow_call:
+    inputs:
+      campaign_id:
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  restore:
+    if: github.repository == 'MaloElPipo/ViveLaPiscine'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      # Keep exactly the collector's input expression.
+      TM_CAMPAIGN_ID: ${{ inputs.campaign_id || format('run-{0}', github.run_id) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Restore draft assets and verify compaction ordering
+        run: python artifacts/football-dashboard/tests/integration/checkpoint_runner.py resume

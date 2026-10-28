@@ -81,7 +81,8 @@ def _resolve_chromium_path() -> str | None:
     return None
 
 
-def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000) -> str | None:
+def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000,
+                          deadline: float | None = None) -> str | None:
     """Lance Chromium, charge la home TM, résout le challenge, extrait le token.
 
     Retourne la valeur du cookie ``aws-waf-token`` ou None en cas d'échec.
@@ -111,12 +112,18 @@ def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000) -> str
 
     last_err: str | None = None
     for exe in candidates:
+        def remaining_ms(cap):
+            return cap if deadline is None else max(1, min(cap, int(
+                (deadline - time.monotonic()) * 1000)))
+        if deadline is not None and time.monotonic() >= deadline:
+            return None
         try:
             with sync_playwright() as p:
                 browser = p.chromium.launch(
                     executable_path=exe,  # None → Chromium fourni par Playwright
                     headless=True,
                     args=launch_args,
+                    timeout=remaining_ms(30000),
                 )
                 try:
                     ctx = browser.new_context(
@@ -125,8 +132,14 @@ def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000) -> str
                         viewport={"width": 1366, "height": 768},
                     )
                     page = ctx.new_page()
-                    page.goto(_TM_HOME, wait_until="domcontentloaded", timeout=timeout_ms)
-                    page.wait_for_timeout(settle_ms)  # laisse le challenge JS s'exécuter
+                    if deadline is not None:
+                        ctx.route("**/*", lambda route: route.abort()
+                                  if time.monotonic() >= deadline else route.continue_())
+                        if time.monotonic() >= deadline:
+                            return None
+                    page.goto(_TM_HOME, wait_until="domcontentloaded",
+                              timeout=remaining_ms(timeout_ms))
+                    page.wait_for_timeout(remaining_ms(settle_ms))
                     for c in ctx.cookies():
                         if c["name"] == "aws-waf-token":
                             return c["value"]
@@ -141,7 +154,8 @@ def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000) -> str
     return None
 
 
-def get_waf_token(force_refresh: bool = False, stale: str | None = None) -> str | None:
+def get_waf_token(force_refresh: bool = False, stale: str | None = None,
+                  deadline: float | None = None) -> str | None:
     """Retourne le token WAF courant, en l'obtenant/rafraîchissant si besoin.
 
     Thread-safe : l'obtention est sérialisée par ``_lock``.
@@ -158,6 +172,8 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None) -> str 
     if _token is not None and not force_refresh:
         return _token
     with _lock:
+        if deadline is not None and time.monotonic() >= deadline:
+            return _token
         # Un thread concurrent a peut-être déjà (ra)fraîchi pendant l'attente.
         if _token is not None and not force_refresh:
             return _token
@@ -168,7 +184,8 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None) -> str 
             # Playwright durablement cassé sur ce processus : on n'insiste plus.
             return _token
         token_before = _token
-        new = _launch_and_get_token()
+        new = (_launch_and_get_token(deadline=deadline) if deadline is not None
+               else _launch_and_get_token())
         if new is not None:
             _token = new
             _consecutive_failures = 0
@@ -215,13 +232,13 @@ def is_challenge_response(status: int | None, body_len: int, waf_header: str | N
     return False
 
 
-def warm_up() -> bool:
+def warm_up(deadline: float | None = None) -> bool:
     """Pré-obtient le token au démarrage. Retourne True si un token est dispo."""
     if _disabled:
         print("   • tm_waf désactivé (TM_WAF_DISABLE=1)", flush=True)
         return False
     t0 = time.time()
-    tok = get_waf_token()
+    tok = get_waf_token(deadline=deadline) if deadline is not None else get_waf_token()
     if tok:
         print(f"   ✓ tm_waf: token WAF obtenu en {time.time() - t0:.1f}s", flush=True)
         return True

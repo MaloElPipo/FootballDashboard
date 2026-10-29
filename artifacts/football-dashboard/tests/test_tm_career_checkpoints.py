@@ -102,6 +102,25 @@ class CheckpointTests(unittest.TestCase):
             scraper.cli()
         self.assertEqual(raised.exception.code, 2)
 
+    def test_slow_local_inventory_does_not_exhaust_source_budget(self):
+        clock = [0.0]
+        original = Checkpoints.get
+        def slow_get(store, pid):
+            clock[0] = max(clock[0], 300.0)
+            return original(store, pid)
+        argv = ["scraper", "--player-ids", "1", "--campaign", "c",
+                "--checkpoint-dir", str(self.root / "cp"),
+                "--out-dir", str(self.root / "out")]
+        with patch.object(sys, "argv", argv), \
+             patch("time.monotonic", side_effect=lambda: clock[0]), \
+             patch.object(Checkpoints, "get", slow_get), \
+             patch.object(scraper.tm_waf, "warm_up"), \
+             patch.object(scraper, "_polite_pause"), \
+             patch.object(scraper, "_log"), \
+             patch.object(scraper, "fetch_player_career", return_value=EMPTY) as fetch:
+            scraper.cli()
+            fetch.assert_called_once_with("1")
+
     def test_partial_then_complete_export_and_cache_only_no_warmup(self):
         out = self.root / "out"
         out.mkdir()
@@ -173,6 +192,35 @@ class FakeGitHub:
 
 
 class DurableTests(unittest.TestCase):
+    def test_restored_responses_do_not_fsync_but_new_ones_do(self):
+        remote = FakeGitHub()
+        with tempfile.TemporaryDirectory() as old, tempfile.TemporaryDirectory() as new, \
+             patch.object(Checkpoints, "_gh", side_effect=remote.gh):
+            first = Checkpoints(old, "c", True)
+            first.put("1", EMPTY)
+            first.flush()
+            with patch("tm_career_checkpoints.os.fsync") as sync:
+                restored = Checkpoints(new, "c", True)
+                self.assertEqual(restored.get("1"), first.get("1"))
+                sync.assert_not_called()
+                restored.put("2", EMPTY)
+                self.assertEqual(sync.call_count, 2)
+
+    def test_failed_restore_does_not_delete_remote_journal(self):
+        remote = FakeGitHub()
+        with tempfile.TemporaryDirectory() as old, tempfile.TemporaryDirectory() as new, \
+             patch.object(Checkpoints, "_gh", side_effect=remote.gh):
+            first = Checkpoints(old, "c", True)
+            first.put("1", EMPTY)
+            first.flush()
+            before = dict(remote.assets)
+            with patch("tm_career_checkpoints.os.replace", side_effect=OSError("disk")), \
+                 self.assertRaises(OSError):
+                Checkpoints(new, "c", True)
+            self.assertEqual(remote.assets, before)
+            restored = Checkpoints(new, "c", True)
+            self.assertEqual(restored.get("1"), first.get("1"))
+
     def test_runner_disappearance_and_atomic_compaction(self):
         remote = FakeGitHub()
         with tempfile.TemporaryDirectory() as old, tempfile.TemporaryDirectory() as new, \

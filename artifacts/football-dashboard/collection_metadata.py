@@ -8,6 +8,8 @@ SUFFIXES = ("summary", "career", "matches", "competitions_seen")
 FAILURE_REASONS = {
     "missing_squad": "Effectif absent",
     "player_requests_failed": "Requêtes joueurs échouées",
+    "budget_exhausted": "Budget de collecte épuisé",
+    "access_blocked": "Accès refusé par la source",
     "write_failed": "Écriture échouée",
     "interrupted": "Collecte interrompue",
 }

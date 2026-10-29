@@ -77,9 +77,9 @@ TM_HEADERS = {
 }
 
 TIMEOUT = 30
-PAUSE_MIN = 0.30
-PAUSE_MAX = 0.60
-DEFAULT_WORKERS = 3
+PAUSE_MIN = 1.0
+PAUSE_MAX = 1.5
+DEFAULT_WORKERS = 2
 
 # Fenêtre matches récents : max(N derniers matchs, M derniers mois)
 RECENT_MATCHES_N = 10
@@ -91,6 +91,7 @@ RECENT_MATCHES_DAYS = 90  # 3 mois
 _print_lock = threading.Lock()
 _blocked = threading.Event()
 _recovery_lock = threading.Lock()
+_pace_lock = threading.Lock()
 _recovery_used = False
 # Contract with scrape-weekly.yml: never retry this exit in a fresh process.
 BLOCKED_EXIT_CODE = 75
@@ -112,7 +113,10 @@ def _log(msg: str) -> None:
 
 
 def _polite_pause() -> None:
-    time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
+    # One shared pace, not one independent burst per worker.
+    with _pace_lock:
+        if not _blocked.is_set() and _within_budget():
+            time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
 
 
 def _fetch_json_once(
@@ -749,9 +753,18 @@ def _collect(args, transaction):
         getattr(args, "campaign", None) or uuid.uuid4().hex,
         getattr(args, "checkpoint_remote", False),
     )
-    # Restore does not consume source budget. Warm-up does, as before.
-    _deadline = time.monotonic() + getattr(args, "budget_seconds", 240)
+    # Local inventory is not source traffic and must not exhaust its budget.
+    inventory_started = time.monotonic()
     missing = [pid for pid in player_meta_by_id if not checkpoints.get(pid)]
+    _log("TM_PHASE " + json.dumps({
+        "phase": "prepare", "league": league_label,
+        "restore_seconds": round(checkpoints.restore_seconds, 3),
+        "inventory_seconds": round(time.monotonic() - inventory_started, 3),
+        "players": len(player_meta_by_id),
+        "reused": len(player_meta_by_id) - len(missing), "missing": len(missing),
+    }))
+    _deadline = time.monotonic() + getattr(args, "budget_seconds", 240)
+    warmup_started = time.monotonic()
     try:
         if missing and _within_budget():
             tm_waf.warm_up(deadline=_deadline)
@@ -759,6 +772,10 @@ def _collect(args, transaction):
         _deadline = None
         _record_failure(args, "player_requests_failed")
         raise
+    _log("TM_PHASE " + json.dumps({
+        "phase": "warmup", "league": league_label,
+        "seconds": round(time.monotonic() - warmup_started, 3),
+    }))
 
     # Scrape
     _log(f"\n>>> Scraping carrière {league_label} ({len(player_meta_by_id)} joueurs, "
@@ -776,7 +793,12 @@ def _collect(args, transaction):
         _within_budget()
         _deadline = None
         # Even on failure, persist every validated success before exiting.
+        flush_started = time.monotonic()
         checkpoints.flush()
+        _log("TM_PHASE " + json.dumps({
+            "phase": "final_flush", "league": league_label,
+            "seconds": round(time.monotonic() - flush_started, 3),
+        }))
     elapsed = time.time() - t0
     _log(f"\n>>> Terminé en {elapsed:.0f}s. Échecs: {len(failed)}")
     if failed:
@@ -787,11 +809,12 @@ def _collect(args, transaction):
     # Toute erreur conserve les CSV précédents et rend la ligue éligible au retry.
     total_players = len(player_meta_by_id)
     if _blocked.is_set():
-        _record_failure(args, "player_requests_failed")
+        _record_failure(args, "access_blocked")
         _log("   ! Blocage persistant : arrêt global demandé, fichiers existants préservés.")
         sys.exit(BLOCKED_EXIT_CODE)
     if failed or not summary:
-        _record_failure(args, "player_requests_failed")
+        _record_failure(args, "budget_exhausted" if _budget_expired.is_set()
+                        else "player_requests_failed")
         fail_pct = 100 * len(failed) / total_players if total_players else 0
         _log(
             f"\n>>> ALERTE : {fail_pct:.0f}% d'échecs ({len(failed)}/{total_players}), "

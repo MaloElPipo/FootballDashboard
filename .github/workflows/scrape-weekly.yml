@@ -252,7 +252,7 @@ jobs:
             echo "::group::Scraping carrière $code"
             # Même plafond réseau 240 s, mais sortie propre + checkpoints.
             # 76 = budget épuisé ; 75 conserve l'arrêt global existant.
-            if python3 tm_player_career.py --league "$code" --workers 5 --budget-seconds 240; then
+            if python3 tm_player_career.py --league "$code" --workers 2 --budget-seconds 240; then
               OK=$((OK+1))
             else
               EXIT=$?
@@ -286,7 +286,7 @@ jobs:
                 continue
               fi
               echo "::group::Retry carrière $code"
-              if python3 tm_player_career.py --league "$code" --workers 5 --budget-seconds 240; then
+              if python3 tm_player_career.py --league "$code" --workers 2 --budget-seconds 240; then
                 OK=$((OK+1))
                 KO_RECOVERED=$((KO_RECOVERED+1))
               else

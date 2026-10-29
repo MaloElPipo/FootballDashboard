@@ -58,8 +58,10 @@ class Checkpoints:
         self.last_flush = time.monotonic()
         self.assets = []
         self.error = None
+        started = time.monotonic()
         if remote:
             self._restore()
+        self.restore_seconds = time.monotonic() - started
 
     def _gh(self, *args):
         # gh receives the workflow's scoped GH_TOKEN, never logged/read here.
@@ -95,7 +97,10 @@ class Checkpoints:
                         durable[pid] = max(durable.get(pid, ""), record["collected_at"])
                         current = self.get(record["player_id"])
                         if not current or current["collected_at"] < record["collected_at"]:
-                            self._write(record)
+                            # Already durable in GitHub. Atomic local replacement
+                            # is enough: after a crash the remote journal is replayed.
+                            # New source responses still require fsync in put().
+                            self._write(record, durable=False)
         # Local successes from a failed upload must be sent on the next flush,
         # even when they are reused without another source request.
         for path in self.folder.glob("*.json"):
@@ -112,14 +117,17 @@ class Checkpoints:
         except (OSError, ValueError):
             return None
 
-    def _write(self, record):
+    def _write(self, record, durable=True):
         target = self.folder / f"{record['player_id']}.json"
         temporary = target.with_suffix(".tmp")
         with temporary.open("w") as stream:
             json.dump(record, stream, ensure_ascii=False)
             stream.flush()
-            os.fsync(stream.fileno())
+            if durable:
+                os.fsync(stream.fileno())
         os.replace(temporary, target)
+        if not durable:
+            return
         fd = os.open(self.folder, os.O_RDONLY)
         try:
             os.fsync(fd)

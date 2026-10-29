@@ -7,6 +7,8 @@
     ["Dernière tentative", "Último intento", "Letzter Versuch", "Ultimo tentativo", "Last attempt"],
     ["Effectif absent", "Plantilla ausente", "Kader fehlt", "Rosa assente", "Squad missing"],
     ["Requêtes joueurs échouées", "Consultas de jugadores fallidas", "Spieleranfragen fehlgeschlagen", "Richieste giocatori fallite", "Player requests failed"],
+    ["Budget de collecte épuisé", "Tiempo de recopilación agotado", "Erfassungszeit aufgebraucht", "Tempo di raccolta esaurito", "Collection time budget exhausted"],
+    ["Accès refusé par la source", "Acceso denegado por la fuente", "Zugriff von der Quelle verweigert", "Accesso negato dalla fonte", "Access denied by source"],
     ["Écriture échouée", "Error de escritura", "Schreiben fehlgeschlagen", "Scrittura fallita", "Write failed"],
     ["Collecte interrompue", "Recopilación interrumpida", "Erfassung unterbrochen", "Raccolta interrotta", "Collection interrupted"],
     ["Date inconnue", "Fecha desconocida", "Datum unbekannt", "Data sconosciuta", "Unknown date"],

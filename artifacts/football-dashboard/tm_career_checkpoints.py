@@ -18,6 +18,7 @@ import uuid
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from tm_checkpoint_retention import CLOSED_MARKER
+from tm_checkpoint_index import RemoteIndex
 
 VERSION = 1
 
@@ -58,6 +59,10 @@ class Checkpoints:
         self.last_flush = time.monotonic()
         self.assets = []
         self.error = None
+        self.index = None
+        self.restore_bytes = 0
+        self.restore_downloads = 0
+        self.restore_cached_assets = 0
         started = time.monotonic()
         if remote:
             self._restore()
@@ -82,40 +87,66 @@ class Checkpoints:
                      "--notes", "Private collection checkpoints; not public CSV exports.")
         self.assets = json.loads(self._gh("release", "view", self.tag,
                                          "--json", "assets"))["assets"]
-        durable = {}
+        self.index = RemoteIndex(self.folder)
         with tempfile.TemporaryDirectory() as tmp:
-            if self.assets:
+            for asset in self.assets:
+                if not asset["name"].endswith(".jsonl.gz"):
+                    continue
+                if self.index.contains(asset):
+                    self.restore_cached_assets += 1
+                    continue
+                # Exact asset, never download every journal again. The index
+                # receipt is committed atomically with all validated records.
                 self._gh("release", "download", self.tag, "--dir", tmp,
-                         "--pattern", "*.jsonl.gz")
-            for path in Path(tmp).glob("*.jsonl.gz"):
-                with gzip.open(path, "rt", encoding="utf-8") as stream:
-                    for line in stream:
-                        record = json.loads(line)
-                        if not valid_record(record, self.campaign):
-                            raise ValueError("Invalid remote checkpoint")
-                        pid = record["player_id"]
-                        durable[pid] = max(durable.get(pid, ""), record["collected_at"])
-                        current = self.get(record["player_id"])
-                        if not current or current["collected_at"] < record["collected_at"]:
-                            # Already durable in GitHub. Atomic local replacement
-                            # is enough: after a crash the remote journal is replayed.
-                            # New source responses still require fsync in put().
-                            self._write(record, durable=False)
+                         "--pattern", asset["name"])
+                path = Path(tmp) / asset["name"]
+                self.restore_bytes += path.stat().st_size
+                self.restore_downloads += 1
+                def records():
+                    with gzip.open(path, "rt", encoding="utf-8") as stream:
+                        for line in stream:
+                            record = json.loads(line)
+                            if not valid_record(record, self.campaign):
+                                raise ValueError("Invalid remote checkpoint")
+                            yield record
+                self.index.ingest(asset, records())
+                path.unlink()
         # Local successes from a failed upload must be sent on the next flush,
         # even when they are reused without another source request.
         for path in self.folder.glob("*.json"):
-            record = self.get(path.stem)
-            if record and durable.get(path.stem, "") < record["collected_at"]:
+            record = self._local_get(path.stem)
+            durable = self.index.get(path.stem)
+            if record and (not durable or durable["collected_at"] < record["collected_at"]):
                 self.pending[path.stem] = record
 
     def get(self, pid):
         if not re.fullmatch(r"[0-9]+", pid):
             raise ValueError("Invalid player id")
+        local = self._local_get(pid)
+        remote = self.index.get(pid) if self.index else None
+        if remote and not valid_record(remote, self.campaign, pid):
+            raise ValueError("Invalid indexed checkpoint")
+        if remote and (not local or remote["collected_at"] > local["collected_at"]):
+            return remote
+        return local
+
+    def _local_get(self, pid):
         try:
             record = json.loads((self.folder / f"{pid}.json").read_text())
             return record if valid_record(record, self.campaign, pid) else None
         except (OSError, ValueError):
             return None
+
+    def _all_records(self):
+        # The index contains ALL leagues, even when this process only calls
+        # get() for a small subset. Never compact from that subset alone.
+        local_ids = {p.stem for p in self.folder.glob("*.json")}
+        if self.index:
+            for pid in self.index.ids():
+                yield self.get(pid)
+                local_ids.discard(pid)
+        for pid in local_ids:
+            yield self.get(pid)
 
     def _write(self, record, durable=True):
         target = self.folder / f"{record['player_id']}.json"
@@ -181,16 +212,16 @@ class Checkpoints:
                 with tempfile.TemporaryDirectory() as tmp:
                     path = Path(tmp) / f"{uuid.uuid4().hex}.jsonl.gz"
                     with gzip.open(path, "wt", encoding="utf-8") as stream:
-                        records = (self.get(p.stem) for p in self.folder.glob("*.json")) \
-                            if compact else self.pending.values()
+                        records = self._all_records() if compact else self.pending.values()
                         for record in records:
                             if record:
                                 stream.write(json.dumps(record) + "\n")
                     self._gh("release", "upload", self.tag, str(path))
                     if compact:
                         for asset in self.assets:
-                            self._gh("release", "delete-asset", self.tag,
-                                     asset["name"], "--yes")
+                            if asset["name"].endswith(".jsonl.gz"):
+                                self._gh("release", "delete-asset", self.tag,
+                                         asset["name"], "--yes")
                         self.assets = []
                     self.assets.append({"name": path.name})
             self.pending.clear()

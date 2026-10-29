@@ -1,4 +1,5 @@
 import gzip
+import fnmatch
 import json
 from pathlib import Path
 import sys
@@ -180,7 +181,8 @@ class FakeGitHub:
         elif command == "download":
             folder = Path(args[args.index("--dir") + 1])
             for name, data in self.assets.items():
-                (folder / name).write_bytes(data)
+                if fnmatch.fnmatchcase(name, args[args.index("--pattern") + 1]):
+                    (folder / name).write_bytes(data)
         elif command == "upload":
             if self.fail_upload:
                 raise RuntimeError("upload failed")
@@ -214,7 +216,7 @@ class DurableTests(unittest.TestCase):
             first.put("1", EMPTY)
             first.flush()
             before = dict(remote.assets)
-            with patch("tm_career_checkpoints.os.replace", side_effect=OSError("disk")), \
+            with patch("tm_career_checkpoints.RemoteIndex.ingest", side_effect=OSError("disk")), \
                  self.assertRaises(OSError):
                 Checkpoints(new, "c", True)
             self.assertEqual(remote.assets, before)

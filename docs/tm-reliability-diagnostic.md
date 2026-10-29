@@ -38,10 +38,19 @@ Les tests couvrent notamment la reprise après interruption de restauration,
 la conservation des fsync pour les nouvelles réponses, l'inventaire local lent,
 les exports partiels refusés et l'arrêt global sur refus.
 
+## Mesure de restauration désormais disponible
+
+Le [benchmark synthétique de restauration](tm-checkpoint-restore-benchmark.md)
+mesure une archive de 575 996 551 octets : reprises locales de 22–28 s avant,
+contre 0,30–0,34 s avec index, inventaire de 600 joueurs inclus et zéro octet
+retéléchargé. Premier import : 39,06 s contre 32,20 s, toujours un téléchargement
+complet. Transport simulé sur disque, sans trafic TM ; ce n'est pas une mesure
+de collecte réelle ou de débit GitHub.
+
 ## Ce qui n'est pas encore démontré
 
-- Gain réel sur une archive représentative : tester avec des réponses
-  synthétiques, sans solliciter Transfermarkt, puis comparer par phase.
+- Gain sur le réseau GitHub et sur une collecte réelle ; la mesure synthétique
+  ne valide que la restauration et l'inventaire local.
 - Fiabilité autonome hebdomadaire et durée acceptable pour 78 ligues.
 - Faisabilité d'une source ciblée saison courante : ne pas modifier la
   couverture ni la fraîcheur historique sans accord.

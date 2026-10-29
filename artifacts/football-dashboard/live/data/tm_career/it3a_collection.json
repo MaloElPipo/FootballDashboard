@@ -1,7 +1,19 @@
 {
   "last_attempt": {
-    "started_at": "2026-10-28T17:08:13.488747+00:00",
-    "status": "incomplete",
-    "reason": "player_requests_failed"
+    "started_at": "2026-10-29T11:47:43.946371+00:00",
+    "status": "success"
+  },
+  "last_success": {
+    "completed_at": "2026-10-28T08:39:01.379127+00:00",
+    "sha256": {
+      "summary": "4d0f1a2c46d1d900ddbffe5bdf9d5f27009613fb72adafe6d590f6c5459d5760",
+      "career": "1ba8c58fe7f8655bc272d1ea3f6d639714ced32bc3a510830f167ed75a9e4b42",
+      "matches": "16665706efd7b18ba0c46005aa3f05123825e7fba6c96673210e1d390164c3ae",
+      "competitions_seen": "fe36985de4bdfa8b4523182f7ec18201f27d128881a8d003cef14917601850e1"
+    },
+    "campaign": "recovery-2026-10-28",
+    "response_version": 1,
+    "collected_from": "2026-10-28T08:39:01.379127+00:00",
+    "collected_through": "2026-10-29T12:09:10.080222+00:00"
   }
 }

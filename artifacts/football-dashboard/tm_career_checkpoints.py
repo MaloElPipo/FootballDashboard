@@ -18,7 +18,7 @@ import uuid
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from tm_checkpoint_retention import CLOSED_MARKER
-from tm_checkpoint_index import RemoteIndex
+from tm_checkpoint_index import RemoteIndex, partition_bounds
 
 VERSION = 1
 
@@ -46,13 +46,15 @@ def valid_record(record, campaign, pid=None):
 
 
 class Checkpoints:
-    def __init__(self, root, campaign, remote=False):
+    def __init__(self, root, campaign, remote=False, partitioned=False):
         if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", campaign):
             raise ValueError("Invalid campaign identifier")
         self.campaign = campaign
         self.folder = Path(root) / campaign
         self.folder.mkdir(parents=True, exist_ok=True)
         self.remote = remote
+        # Explicit opt-in for writing/migrating; reading v2 is automatic.
+        self.partitioned = partitioned
         self.tag = f"tm-checkpoints-{campaign}"
         self.lock = threading.RLock()
         self.pending = {}
@@ -60,6 +62,7 @@ class Checkpoints:
         self.assets = []
         self.error = None
         self.index = None
+        self._imported = set()
         self.restore_bytes = 0
         self.restore_downloads = 0
         self.restore_cached_assets = 0
@@ -88,12 +91,31 @@ class Checkpoints:
         self.assets = json.loads(self._gh("release", "view", self.tag,
                                          "--json", "assets"))["assets"]
         self.index = RemoteIndex(self.folder)
+        self._import_assets(legacy_only=True)
+        # Local successes from a failed upload must be sent on the next flush.
+        for path in self.folder.glob("*.json"):
+            record = self._local_get(path.stem)
+            self._import_assets(pid=path.stem)
+            durable = self.index.get(path.stem)
+            if record and (not durable or durable["collected_at"] < record["collected_at"]):
+                self.pending[path.stem] = record
+
+    def _import_assets(self, pid=None, legacy_only=False):
+        """Legacy journals are eager; ranged journals are fetched on demand."""
         with tempfile.TemporaryDirectory() as tmp:
             for asset in self.assets:
                 if not asset["name"].endswith(".jsonl.gz"):
                     continue
+                bounds = partition_bounds(asset["name"])
+                if bounds and (legacy_only or (
+                        pid is not None and not bounds[0] <= int(pid) <= bounds[1])):
+                    continue
+                identity = self.index.identity(asset)
+                if identity in self._imported:
+                    continue
                 if self.index.contains(asset):
                     self.restore_cached_assets += 1
+                    self._imported.add(identity)
                     continue
                 # Exact asset, never download every journal again. The index
                 # receipt is committed atomically with all validated records.
@@ -108,20 +130,19 @@ class Checkpoints:
                             record = json.loads(line)
                             if not valid_record(record, self.campaign):
                                 raise ValueError("Invalid remote checkpoint")
+                            if bounds and not bounds[0] <= int(record["player_id"]) <= bounds[1]:
+                                raise ValueError("Checkpoint outside partition bounds")
                             yield record
                 self.index.ingest(asset, records())
+                self._imported.add(identity)
                 path.unlink()
-        # Local successes from a failed upload must be sent on the next flush,
-        # even when they are reused without another source request.
-        for path in self.folder.glob("*.json"):
-            record = self._local_get(path.stem)
-            durable = self.index.get(path.stem)
-            if record and (not durable or durable["collected_at"] < record["collected_at"]):
-                self.pending[path.stem] = record
 
     def get(self, pid):
         if not re.fullmatch(r"[0-9]+", pid):
             raise ValueError("Invalid player id")
+        if self.index:
+            with self.lock:
+                self._import_assets(pid=pid)
         local = self._local_get(pid)
         remote = self.index.get(pid) if self.index else None
         if remote and not valid_record(remote, self.campaign, pid):
@@ -140,6 +161,8 @@ class Checkpoints:
     def _all_records(self):
         # The index contains ALL leagues, even when this process only calls
         # get() for a small subset. Never compact from that subset alone.
+        if self.index:
+            self._import_assets()
         local_ids = {p.stem for p in self.folder.glob("*.json")}
         if self.index:
             for pid in self.index.ids():
@@ -209,6 +232,12 @@ class Checkpoints:
                 # Compact at 100 journals, well below GitHub's asset limit.
                 # No overwrite/delete until the replacement is durable.
                 compact = len(self.assets) >= 100
+                if self.partitioned or any(partition_bounds(a["name"]) for a in self.assets
+                                           if a["name"].endswith(".jsonl.gz")):
+                    self._publish_partitions(compact)
+                    self.pending.clear()
+                    self.last_flush = time.monotonic()
+                    return
                 with tempfile.TemporaryDirectory() as tmp:
                     path = Path(tmp) / f"{uuid.uuid4().hex}.jsonl.gz"
                     with gzip.open(path, "wt", encoding="utf-8") as stream:
@@ -226,6 +255,52 @@ class Checkpoints:
                     self.assets.append({"name": path.name})
             self.pending.clear()
             self.last_flush = time.monotonic()
+
+    def compact_partitioned(self):
+        """Explicit migration operation; caller must hold the campaign run lock.
+
+        No release metadata changes: closure and retention policy stay intact.
+        Never invoke automatically merely because a campaign was opened.
+        """
+        if not self.remote or not self.partitioned:
+            raise ValueError("Migration requires explicit partitioned remote mode")
+        with self.lock:
+            self._publish_partitions(compact=True)
+            self.pending.clear()
+            self.last_flush = time.monotonic()
+
+    def _publish_partitions(self, compact):
+        # Materialize identifiers only, not all response bodies. Import ALL
+        # assets before taking the inventory, including unvisited leagues.
+        if compact:
+            self._import_assets()
+            ids = set(self.index.ids()) | {p.stem for p in self.folder.glob("*.json")}
+        else:
+            ids = set(self.pending)
+        ids = sorted(ids, key=int)
+        previous = list(self.assets)
+        replacements = []
+        with tempfile.TemporaryDirectory() as tmp:
+            for offset in range(0, len(ids), 128):
+                chunk = ids[offset:offset + 128]
+                name = f"tm-part-v2-{int(chunk[0])}-{int(chunk[-1])}-{uuid.uuid4().hex}.jsonl.gz"
+                path = Path(tmp) / name
+                with gzip.open(path, "wt", encoding="utf-8") as stream:
+                    for pid in chunk:
+                        record = self.get(pid) if compact else self.pending[pid]
+                        if not record:
+                            raise ValueError("Missing record during partition compaction")
+                        stream.write(json.dumps(record) + "\n")
+                self._gh("release", "upload", self.tag, str(path))
+                replacements.append({"name": name})
+        # A crash before/during deletion leaves overlapping immutable copies,
+        # never a partial replacement. Next restore merges by original date.
+        self.assets.extend(replacements)
+        if compact:
+            for asset in previous:
+                if asset["name"].endswith(".jsonl.gz"):
+                    self._gh("release", "delete-asset", self.tag, asset["name"], "--yes")
+                    self.assets.remove(asset)
 
     def evidence(self, ids):
         records = [self.get(pid) for pid in ids]

@@ -87,6 +87,13 @@ def get_static_squad(code: str) -> list[dict]:
     return db.get(code, {}).get("players", [])
 
 
+def get_static_squad_source(code: str) -> str:
+    """Origine de l'effectif statique : ``bsd_lineup`` (compo IA probable BSD)
+    ou ``kader`` / ``kader_fallback`` (repli effectif Transfermarkt)."""
+    db = _load_static_db()
+    return db.get(code, {}).get("source", "")
+
+
 def get_static_db_status() -> dict:
     """Retourne le statut de la base statique : {code: {n_players, scraped_at}}."""
     db = _load_static_db()
@@ -408,6 +415,149 @@ def build_squad(nation: dict, n_matches: int = 5,
                 "club_tm_id": profile.get("club_tm_id", ""),
                 "market_value_eur": profile.get("market_value_eur", 0),
                 "appearances": appearances,
+            }
+        )
+
+    return squad
+
+
+# ─────────────────────────────────────────────
+# Pipeline alternatif : page "kader" (effectif national complet)
+# ─────────────────────────────────────────────
+#
+# Pourquoi : build_squad() déduit l'effectif des 5 derniers matchs, ce qui capte
+# parfois un rassemblement secondaire (ex. camp MLS de janvier pour les USA →
+# joueurs européens absents). La page kader/verein/{id} liste le pool national
+# complet de la saison en un seul fetch rapide (~1 s) avec nom, poste, club et
+# valeur marchande — bien plus fiable pour préparer la CM.
+
+# Postes FR de Transfermarkt → codes attendus par le moteur (3_model._normalize_position).
+_FR_POSITION_TO_CODE = {
+    "gardien de but": "GK",
+    "libero": "DEF",
+    "défenseur central": "DEF",
+    "arrière droit": "DEF",
+    "arrière gauche": "DEF",
+    "latéral droit": "DEF",
+    "latéral gauche": "DEF",
+    "milieu défensif": "MID",
+    "milieu central": "MID",
+    "milieu offensif": "MID",
+    "milieu droit": "MID",
+    "milieu gauche": "MID",
+    "ailier droit": "FWD",
+    "ailier gauche": "FWD",
+    "avant-centre": "FWD",
+    "second attaquant": "FWD",
+    "attaquant": "FWD",
+}
+
+
+def _fr_position_to_code(pos_fr: str) -> str:
+    """Mappe un poste FR Transfermarkt vers GK/DEF/MID/FWD (sinon "")."""
+    key = (pos_fr or "").strip().lower()
+    if not key:
+        return ""
+    if key in _FR_POSITION_TO_CODE:
+        return _FR_POSITION_TO_CODE[key]
+    # Repli par mot-clé pour les libellés inattendus.
+    if "gardien" in key:
+        return "GK"
+    if "défenseur" in key or "arrière" in key or "latéral" in key or "libero" in key:
+        return "DEF"
+    if "milieu" in key:
+        return "MID"
+    if "ailier" in key or "attaquant" in key or "avant" in key:
+        return "FWD"
+    return ""
+
+
+def _parse_market_value(raw: str, unit: str) -> int:
+    """Convertit '30,00' + 'mio.' → 30000000. Gère mio./Tsd./brut."""
+    try:
+        val = float(raw.replace(".", "").replace(",", "."))
+    except ValueError:
+        return 0
+    u = (unit or "").lower()
+    if "mio" in u:
+        return int(val * 1_000_000)
+    if "tsd" in u:
+        return int(val * 1_000)
+    return int(val)
+
+
+def build_squad_from_kader(nation: dict) -> list[dict]:
+    """Construit l'effectif national complet depuis la page kader Transfermarkt.
+
+    Un seul fetch par nation. Renvoie une liste de joueurs au même format que
+    build_squad() : {tm_id, name, position(code), club, club_tm_id,
+    market_value_eur, appearances}. Robuste : renvoie [] si le fetch ou le
+    parsing échoue (l'appelant doit alors conserver l'effectif existant).
+    """
+    slug = nation.get("slug")
+    tm_id = nation.get("tm_id")
+    if not slug or not tm_id:
+        return []
+
+    url = f"https://www.transfermarkt.fr/{slug}/kader/verein/{tm_id}/saison_id/2025"
+    html = _fetch(url)
+    if not html:
+        return []
+
+    ti = html.find('<table class="items"')
+    if ti < 0:
+        return []
+    tbody_end = html.find("</tbody>", ti)
+    body = html[ti:tbody_end] if tbody_end > 0 else html[ti:]
+
+    rows = re.split(r'<tr class="(?:odd|even)">', body)[1:]
+    squad: list[dict] = []
+    seen: set[str] = set()
+    for row in rows:
+        sm = re.search(r"/profil/spieler/(\d+)", row)
+        if not sm:
+            continue
+        pid = sm.group(1)
+        if pid in seen:
+            continue
+
+        nm = re.search(r'<img[^>]+title="([^"]+)"', row)
+        name = unescape(nm.group(1).strip()) if nm else ""
+        if len(name) < 2:
+            continue
+
+        pm = re.search(
+            rf"profil/spieler/{pid}\b.*?</a>\s*</td>\s*</tr>\s*<tr>\s*<td>\s*([^<]+?)\s*</td>",
+            row,
+            re.DOTALL,
+        )
+        pos_fr = unescape(pm.group(1).strip()) if pm else ""
+        position = _fr_position_to_code(pos_fr)
+
+        cm = re.search(
+            r'<a title="([^"]+)" href="/[^"]+/startseite/verein/(\d+)"', row
+        )
+        club = unescape(cm.group(1)) if cm else ""
+        club_tm_id = cm.group(2) if cm else ""
+
+        mv = re.search(
+            r"marktwertverlauf/spieler/\d+\">\s*([\d.,]+)\s*(mio\.|Tsd\.)?\s*€",
+            row,
+            re.IGNORECASE,
+        )
+        market_value = _parse_market_value(mv.group(1), mv.group(2) or "") if mv else 0
+
+        seen.add(pid)
+        squad.append(
+            {
+                "tm_id": pid,
+                "name": name,
+                "position": position,
+                "position_fr": pos_fr,
+                "club": club,
+                "club_tm_id": club_tm_id,
+                "market_value_eur": market_value,
+                "appearances": 0,
             }
         )
 

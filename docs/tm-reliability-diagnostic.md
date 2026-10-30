@@ -61,9 +61,9 @@ de collecte réelle ou de débit GitHub.
 1. Évaluer la restauration sélective/indexée et un stockage persistant avec
    des données synthétiques représentatives. Mesurer temps, mémoire, requêtes
    GitHub et octets transférés ; conserver les campagnes isolées et les dates.
-2. Construire une file durable de ligues restantes. Reprises bornées avec
-   attente progressive pour erreurs temporaires, vérification du run existant
-   si un dispatch est incertain, suspension persistante sur refus d'accès.
+2. File durable implémentée : voir `docs/tm-durable-queue.md`. Les reprises
+   observent le run propriétaire et ne dispatchent plus un second workflow.
+   La validation reste hors ligne, sans preuve nouvelle d'accès à la source.
 3. Tester interruptions, redémarrages, sauvegarde indisponible, doublons,
    publication retardée et suppression accidentelle d'un cache local.
 4. Seulement après ces validations, essai réel limité et autorisé, avec arrêt

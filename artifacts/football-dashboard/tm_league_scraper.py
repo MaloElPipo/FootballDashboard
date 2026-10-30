@@ -80,6 +80,11 @@ PAUSE_MAX = 0.40
 # ============================================================
 # HTTP helpers
 # ============================================================
+_access_blocked = threading.Event()
+_request_failed = threading.Event()
+_temporary_failure = threading.Event()
+
+
 def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | None]:
     """GET avec gestion gzip + headers Chrome.
 
@@ -88,12 +93,30 @@ def _fetch(url: str, timeout: int = TIMEOUT) -> tuple[str, int | None, str | Non
     Cela permet à l'appelant de distinguer "page vide légitime" (200 + html
     sans table) de "erreur réseau" (timeout, 5xx, 429).
     """
+    if _access_blocked.is_set():
+        return "", 403, "Access blocked"
     html, status, err, is_challenge, token_used = _fetch_once(url, timeout)
+    if status in (403, 405, 429) or "captcha" in (err or "").lower():
+        _access_blocked.set()
+        return "", status, err
     if not html and is_challenge:
+        if _access_blocked.is_set():
+            return "", 403, "Access refused"
         # Cookie WAF expiré/invalide : refresh ciblé (ne relance le navigateur
         # que si aucun autre worker n'a déjà remplacé ce token) + un retry.
-        tm_waf.get_waf_token(force_refresh=True, stale=token_used)
+        try:
+            tm_waf.get_waf_token(force_refresh=True, stale=token_used)
+        except tm_waf.AccessRefused:
+            _access_blocked.set()
+            return "", 403, "Access refused"
         html, status, err, _, _ = _fetch_once(url, timeout)
+    if status in (403, 405, 429) or "captcha" in (err or "").lower():
+        _access_blocked.set()
+        return "", status, err
+    if err:
+        _request_failed.set()
+        if status is None or status >= 500:
+            _temporary_failure.set()
     return html, status, err
 
 
@@ -102,7 +125,11 @@ def _fetch_once(
 ) -> tuple[str, int | None, str | None, bool, str | None]:
     """Un seul GET. Returns (html, status, error, is_challenge, token_used)."""
     headers = dict(TM_HEADERS)
-    token = tm_waf.get_waf_token()
+    try:
+        token = tm_waf.get_waf_token()
+    except tm_waf.AccessRefused:
+        _access_blocked.set()
+        return "", 403, "Access refused", False, None
     if token:
         headers["Cookie"] = f"aws-waf-token={token}"
     req = urllib.request.Request(url, headers=headers)
@@ -115,10 +142,14 @@ def _fetch_once(
                 except OSError:
                     pass
             waf_action = r.headers.get("x-amzn-waf-action")
+            if (waf_action or "").lower() == "captcha":
+                return "", r.status, "WAF captcha", False, token
             if tm_waf.is_challenge_response(r.status, len(data), waf_action):
                 return "", r.status, "WAF challenge", True, token
             return data.decode("utf-8", errors="replace"), r.status, None, False, token
     except urllib.error.HTTPError as e:
+        if (e.headers.get("x-amzn-waf-action") or "").lower() == "captcha":
+            return "", e.code, "WAF captcha", False, token
         is_ch = tm_waf.is_challenge_response(e.code, 0, e.headers.get("x-amzn-waf-action"))
         return "", e.code, f"HTTP {e.code}", is_ch, token
     except urllib.error.URLError as e:
@@ -659,6 +690,13 @@ def main():
         workers=args.workers,
         test_n_teams=(args.test_n_teams if args.test else None),
     )
+
+    # Never publish a partial refresh, and never proceed to a new league/session
+    # after a source refusal. Exit codes are shared with the durable queue.
+    if _access_blocked.is_set():
+        sys.exit(75)
+    if _request_failed.is_set():
+        sys.exit(77 if _temporary_failure.is_set() else 1)
 
     # Garde-fou : 0 ligne scrapée (WAF, réseau, page vide) → on ne touche PAS
     # au CSV existant. Écraser un bon effectif par un fichier vide couperait

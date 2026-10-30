@@ -115,6 +115,61 @@ Ne pas lancer de collecteur distant hors du workflow verrouillé pendant la
 maintenance, ni modifier manuellement les releases en parallèle. Aucun accès à
 Transfermarkt n'est effectué par cette maintenance. Il n'y a pas de purge planifiée.
 
+## Surveillance informative du volume
+
+Après fusion sur la branche par défaut, le workflow **Volume des sauvegardes TM**
+effectue chaque jour à **08:23 UTC** un inventaire en lecture seule (le démarrage
+GitHub peut être retardé). Il se lance aussi manuellement depuis Actions.
+Il ne contacte pas Transfermarkt et ne clôture ni ne supprime aucune campagne.
+Son jeton n'a que `contents: read` ; il n'utilise pas le workflow de purge.
+
+Le canal d'alerte est le **résumé du run GitHub Actions**, accompagné d'une
+**annotation warning** lorsque le volume total est **supérieur ou égal** au seuil.
+Le run reste réussi : ce dépassement n'est pas une panne ni une autorisation de
+purger. Ce canal ne garantit pas un e-mail ou une notification personnelle :
+consulter les runs de ce workflow. Une erreur API ou un inventaire invalide fait
+échouer le run, sans inventer un volume nul ni un état rassurant.
+
+Seuil initial : **5 Gio = 5 368 709 120 octets**, seuil opérationnel proposé,
+pas un quota GitHub. Configuration :
+
+1. Dans les variables Actions du dépôt, définir
+   `TM_CHECKPOINT_VOLUME_THRESHOLD_BYTES` avec un entier strictement positif.
+2. Pour un lancement manuel uniquement, `threshold_bytes` permet de le remplacer.
+3. Si les deux sont vides, le défaut de 5 Gio s'applique. Une valeur non entière,
+   nulle ou négative fait échouer le contrôle plutôt que désactiver l'alerte.
+
+Le résumé et l'artefact JSON `tm-checkpoint-volume` (conservé 90 jours) exposent :
+
+- volume total des assets distants, en octets compressés et Gio ;
+- volume protégé par **toutes** les règles de rétention, et volume récupérable
+  uniquement après confirmation manuelle ; leur somme égale le total ;
+- nombre, liste et volume des campagnes **sans clôture valide** : marqueur absent,
+  invalide ou ambigu. Ce groupe inclut les campagnes volontairement reprenables,
+  et n'est donc pas une liste de campagnes abandonnées ou en erreur. Son volume
+  est déjà inclus dans le volume protégé, jamais ajouté une seconde fois.
+
+Les releases et leurs assets sont paginés comme pour l'inventaire de rétention.
+Le volume représente les fichiers réellement présents (y compris d'éventuels
+lots redondants), pas la taille décompressée, les CSV publics ou le stockage local.
+L'observation ne prend pas le verrou de collecte : c'est un instantané non
+transactionnel, à relancer si une collecte modifie les assets pendant la lecture.
+
+En cas d'alerte, télécharger le JSON et examiner en priorité les campagnes
+protégées volumineuses. Si elles doivent rester reprenables, les conserver :
+ajuster le seuil en connaissance de cause si nécessaire. Sinon, vérifier les
+exports ou décider explicitement l'abandon, puis suivre la procédure de clôture
+et de purge ci-dessus avec **un nouvel inventaire**. Les 30 jours, les trois
+campagnes récentes protégées et les confirmations restent inchangés.
+
+Pour produire le même rapport localement avec `gh` authentifié :
+
+```sh
+python artifacts/football-dashboard/tm_checkpoint_volume.py \
+  --repo MaloElPipo/FootballDashboard --threshold-bytes 5368709120 \
+  --output /tmp/tm-checkpoint-volume.json --summary /tmp/tm-checkpoint-volume.md
+```
+
 ## Budget et exports
 
 `--budget-seconds` vaut 240, accepte une réduction mais refuse une augmentation.

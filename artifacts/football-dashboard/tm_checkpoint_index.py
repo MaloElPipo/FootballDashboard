@@ -6,7 +6,18 @@ until uploaded; this database only caches already durable remote responses.
 """
 import json
 import sqlite3
+import re
 from contextlib import contextmanager
+
+
+def partition_bounds(name):
+    """Self-indexing immutable v2 assets remain readable by legacy readers."""
+    if not name.startswith("tm-part-v2-"):
+        return None
+    match = re.fullmatch(r"tm-part-v2-([0-9]+)-([0-9]+)-[a-f0-9]{32}\.jsonl\.gz", name)
+    if not match or int(match[1]) > int(match[2]):
+        raise ValueError("Invalid checkpoint partition name")
+    return int(match[1]), int(match[2])
 
 
 class RemoteIndex:
@@ -35,6 +46,8 @@ class RemoteIndex:
 
     @staticmethod
     def identity(asset):
+        # gh supplies an opaque (often GraphQL) id, not necessarily an integer.
+        # A same-name re-upload must miss the old receipt. Do not key by name.
         return json.dumps({k: asset.get(k) for k in
                            ("name", "id", "size", "updatedAt")}, sort_keys=True)
 

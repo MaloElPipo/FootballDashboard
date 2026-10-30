@@ -1,0 +1,94 @@
+name: Administration des campagnes TM suspendues
+
+on:
+  workflow_dispatch:
+    inputs:
+      campaign:
+        description: "Campagne existante (sans préfixe tm-queue-)"
+        required: true
+      action:
+        description: "Opération à simuler"
+        type: choice
+        options: [reconcile, close, recover-publication]
+        default: reconcile
+      exports_ref:
+        description: "Commit contenant les CSV validés et collection_metadata (récupération uniquement)"
+        default: "main"
+      resolution:
+        description: "Décision de l'opérateur, sans secret ni donnée personnelle"
+        required: true
+      acknowledge_refusal:
+        description: "Décision explicite de lever le refus de cette file uniquement"
+        type: boolean
+        default: false
+      confirmation:
+        description: "Vide = simulation ; sinon recopier ADMIN-… du bilan"
+        default: ""
+
+permissions:
+  contents: write
+  actions: read
+  pages: read
+
+concurrency:
+  group: scrape-weekly
+  cancel-in-progress: false
+
+jobs:
+  administer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Restaurer les exports conservés sans exécuter leur code
+        if: inputs.action == 'recover-publication'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.exports_ref }}
+          path: recovery-source
+          persist-credentials: false
+          sparse-checkout: artifacts/football-dashboard/live/data/tm_career
+      - name: Examiner les preuves puis appliquer uniquement sur confirmation
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CAMPAIGN: ${{ inputs.campaign }}
+          ACTION: ${{ inputs.action }}
+          RESOLUTION: ${{ inputs.resolution }}
+          ACKNOWLEDGE: ${{ inputs.acknowledge_refusal }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+        run: |
+          EXTRA=()
+          if [ "$ACKNOWLEDGE" = true ]; then EXTRA+=(--acknowledge-refusal); fi
+          if [ "$ACTION" = recover-publication ]; then
+            EXTRA+=(--exports "$GITHUB_WORKSPACE/recovery-source/artifacts/football-dashboard/live/data/tm_career")
+            EXTRA+=(--bundle "$RUNNER_TEMP/tm-publication-recovery")
+          fi
+          python artifacts/football-dashboard/tm_queue_admin.py \
+            --campaign "$CAMPAIGN" --action "$ACTION" --resolution "$RESOLUTION" \
+            --confirm "$CONFIRMATION" "${EXTRA[@]}" \
+            --output "$RUNNER_TEMP/tm-queue-admin.json"
+      - name: Repérer un lot validé même si la confirmation distante a échoué
+        id: recovery_bundle
+        if: ${{ always() && inputs.action == 'recover-publication' && inputs.confirmation != '' }}
+        run: |
+          if [ -f "$RUNNER_TEMP/tm-publication-recovery/recovery.json" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Conserver les deux archives préparées et leurs preuves
+        if: ${{ always() && steps.recovery_bundle.outputs.ready == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tm-publication-recovery
+          path: ${{ runner.temp }}/tm-publication-recovery
+          if-no-files-found: error
+          retention-days: 90
+      - name: Conserver le bilan examiné
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tm-queue-admin-report
+          path: ${{ runner.temp }}/tm-queue-admin.json
+          retention-days: 90

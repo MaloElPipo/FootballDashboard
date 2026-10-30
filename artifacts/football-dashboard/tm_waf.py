@@ -53,6 +53,7 @@ WAF_USER_AGENT = (
 )
 
 _lock = threading.Lock()
+_access_refused = threading.Event()
 _token: str | None = None
 _disabled = os.environ.get("TM_WAF_DISABLE", "") == "1"
 
@@ -79,6 +80,10 @@ def _resolve_chromium_path() -> str | None:
     if explicit:
         return explicit
     return None
+
+
+class AccessRefused(RuntimeError):
+    """Source refusal: never try another browser/session automatically."""
 
 
 def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000,
@@ -137,15 +142,22 @@ def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000,
                                   if time.monotonic() >= deadline else route.continue_())
                         if time.monotonic() >= deadline:
                             return None
-                    page.goto(_TM_HOME, wait_until="domcontentloaded",
-                              timeout=remaining_ms(timeout_ms))
+                    response = page.goto(_TM_HOME, wait_until="domcontentloaded",
+                                         timeout=remaining_ms(timeout_ms))
+                    if response and (response.status in (403, 405, 429)
+                                     or response.headers.get("x-amzn-waf-action", "").lower() == "captcha"):
+                        raise AccessRefused("Transfermarkt access refused")
                     page.wait_for_timeout(remaining_ms(settle_ms))
+                    if "captcha" in page.title().lower():
+                        raise AccessRefused("Transfermarkt CAPTCHA")
                     for c in ctx.cookies():
                         if c["name"] == "aws-waf-token":
                             return c["value"]
                     last_err = "cookie aws-waf-token absent après chargement"
                 finally:
                     browser.close()
+        except AccessRefused:
+            raise
         except Exception as e:  # noqa: BLE001 — on veut essayer le candidat suivant
             last_err = f"{type(e).__name__}: {e}"
             continue
@@ -167,11 +179,15 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None,
       « thundering herd » où N workers relancent chacun Chromium simultanément.
     """
     global _token, _consecutive_failures, _gave_up
+    if _access_refused.is_set():
+        raise AccessRefused("Transfermarkt access refused")
     if _disabled:
         return None
     if _token is not None and not force_refresh:
         return _token
     with _lock:
+        if _access_refused.is_set():
+            raise AccessRefused("Transfermarkt access refused")
         if deadline is not None and time.monotonic() >= deadline:
             return _token
         # Un thread concurrent a peut-être déjà (ra)fraîchi pendant l'attente.
@@ -184,8 +200,12 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None,
             # Playwright durablement cassé sur ce processus : on n'insiste plus.
             return _token
         token_before = _token
-        new = (_launch_and_get_token(deadline=deadline) if deadline is not None
-               else _launch_and_get_token())
+        try:
+            new = (_launch_and_get_token(deadline=deadline) if deadline is not None
+                   else _launch_and_get_token())
+        except AccessRefused:
+            _access_refused.set()
+            raise
         if new is not None:
             _token = new
             _consecutive_failures = 0

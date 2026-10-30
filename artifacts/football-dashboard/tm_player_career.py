@@ -96,6 +96,8 @@ _recovery_used = False
 # Contract with scrape-weekly.yml: never retry this exit in a fresh process.
 BLOCKED_EXIT_CODE = 75
 BUDGET_EXIT_CODE = 76
+TEMPORARY_EXIT_CODE = 77
+_temporary_failure = threading.Event()
 _deadline = None
 _budget_expired = threading.Event()
 
@@ -131,9 +133,13 @@ def _fetch_json_once(
     headers = dict(TM_HEADERS)
     if not _within_budget():
         return None, None, "budget exhausted", False, None
-    token = (token_provider() if token_provider else
-             tm_waf.get_waf_token(deadline=_deadline) if _deadline is not None
-             else tm_waf.get_waf_token())
+    try:
+        token = (token_provider() if token_provider else
+                 tm_waf.get_waf_token(deadline=_deadline) if _deadline is not None
+                 else tm_waf.get_waf_token())
+    except tm_waf.AccessRefused:
+        _blocked.set()
+        return None, 403, "Access refused", False, None
     if token:
         headers["Cookie"] = f"aws-waf-token={token}"
     if not _within_budget():
@@ -196,10 +202,12 @@ def _fetch_json(
         _blocked.set()
         _log("   ! CAPTCHA demandé : arrêt sans tentative de résolution automatique.")
         return None, status, err
-    if status in (403, 429) and not is_challenge:
+    if status in (403, 405, 429):
         _blocked.set()
         return None, status, err
-    if status == 405 or (payload is None and is_challenge):
+    if payload is None and (status is None or status >= 500):
+        _temporary_failure.set()
+    if payload is None and is_challenge:
         with _recovery_lock:
             if _blocked.is_set() or not _within_budget():
                 return None, status, err
@@ -207,12 +215,18 @@ def _fetch_json(
             if not _recovery_used:
                 _recovery_used = True
                 options = {"deadline": _deadline} if _deadline is not None else {}
-                tm_waf.get_waf_token(force_refresh=True, stale=token_used, **options)
+                try:
+                    tm_waf.get_waf_token(force_refresh=True, stale=token_used, **options)
+                except tm_waf.AccessRefused:
+                    _blocked.set()
+                    return None, 403, "Access refused"
             if _blocked.is_set():
                 return None, status, err
             # One recovery only, shared by challenges and HTTP refusals.
             # Concurrent workers may use it, never create another session.
             payload, status, err, is_challenge, _ = _fetch_json_once(url, timeout)
+            if payload is None and (status is None or status >= 500):
+                _temporary_failure.set()
             # A failed recovery is not necessarily a persistent refusal:
             # timeouts, 5xx and invalid JSON remain ordinary retryable failures.
             if payload is None and (
@@ -709,6 +723,7 @@ def _record_failure(args, reason):
 def _collect(args, transaction):
     global _deadline
     _budget_expired.clear()
+    _temporary_failure.clear()
     # Construit la liste des joueurs
     if args.player_ids:
         ids = [s.strip() for s in args.player_ids.split(",") if s.strip()]
@@ -768,6 +783,10 @@ def _collect(args, transaction):
     try:
         if missing and _within_budget():
             tm_waf.warm_up(deadline=_deadline)
+    except tm_waf.AccessRefused:
+        _blocked.set()
+        _record_failure(args, "access_blocked")
+        sys.exit(BLOCKED_EXIT_CODE)
     except Exception:
         _deadline = None
         _record_failure(args, "player_requests_failed")
@@ -821,7 +840,8 @@ def _collect(args, transaction):
             f"{len(summary)} joueur(s) produit(s) — export incomplet refusé."
         )
         _log("   Écriture annulée — fichiers existants préservés.")
-        sys.exit(BUDGET_EXIT_CODE if _budget_expired.is_set() else 1)
+        sys.exit(BUDGET_EXIT_CODE if _budget_expired.is_set()
+                 else TEMPORARY_EXIT_CODE if _temporary_failure.is_set() else 1)
 
     # Écrit les CSV
     out = args.out_dir

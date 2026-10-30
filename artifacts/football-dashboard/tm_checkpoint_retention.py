@@ -10,12 +10,34 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import sys
 
 PREFIX = "tm-checkpoints-"
 CLOSED_MARKER = "TM_CHECKPOINT_CLOSED_V1:"
 WORKFLOW = ".github/workflows/tm-checkpoint-retention.yml"
 COLLECTOR = ".github/workflows/scrape-weekly.yml"
 POLICY = {"version": 1, "min_days": 30, "keep_latest": 3}
+
+DIAGNOSTICS = {
+    "confirmation-stale-or-missing": "Inventory changed or confirmation missing: simulate again.",
+    "invalid-closure": "Closure requires a valid campaign, explicit reason and matching confirmation.",
+    "closure-target-invalid": "Closure requires exactly one existing draft campaign.",
+    "closure-already-marked": "Campaign already closed or closure ambiguous; do not overwrite.",
+    "active-runs-unavailable": "Cannot verify active runs; no authorization to proceed.",
+    "maintenance-lock-unavailable": "Cannot verify the dedicated maintenance workflow.",
+    "maintenance-lock-required": "Mutation requires the running manual retention workflow.",
+    "active-runs-present": "Collection or maintenance active or queued; retry later.",
+    "campaign-changed": "Campaign changed since confirmation; stopped.",
+    "operation-failed": "Operation failed; inspect the run and simulate again before retrying.",
+}
+
+
+class RetentionRefusal(ValueError):
+    """A refusal with a predefined, non-sensitive diagnostic code."""
+
+
+class SafetyRefusal(RuntimeError):
+    """A failed safety check with a predefined diagnostic code."""
 
 
 def timestamp(value):
@@ -70,6 +92,13 @@ class GitHub:
         return releases
 
     def active_runs(self):
+        try:
+            return self._active_runs()
+        except Exception:
+            # Never export subprocess output, request details or exception text.
+            raise SafetyRefusal("active-runs-unavailable") from None
+
+    def _active_runs(self):
         own = os.environ.get("GITHUB_RUN_ID")
         runs = []
         for status in ("queued", "in_progress", "waiting", "requested", "pending"):
@@ -87,14 +116,17 @@ class GitHub:
         run_id = os.environ.get("GITHUB_RUN_ID", "")
         if (os.environ.get("GITHUB_ACTIONS") != "true" or not run_id.isdigit()
                 or os.environ.get("GITHUB_REPOSITORY") != self.repo):
-            raise RuntimeError("Mutation requires the dedicated locked Actions workflow")
-        run = self.api(f"actions/runs/{run_id}")
+            raise SafetyRefusal("maintenance-lock-required")
+        try:
+            run = self.api(f"actions/runs/{run_id}")
+        except Exception:
+            raise SafetyRefusal("maintenance-lock-unavailable") from None
         if (run["path"].split("@")[0] != WORKFLOW
                 or run["status"] != "in_progress"
                 or run["event"] != "workflow_dispatch"):
-            raise RuntimeError("Not a running manual retention workflow")
+            raise SafetyRefusal("maintenance-lock-required")
         if self.active_runs():
-            raise RuntimeError("Collection/maintenance active or queued; retry later")
+            raise SafetyRefusal("active-runs-present")
 
 
 def inventory(releases, repo, now=None):
@@ -144,20 +176,23 @@ def inventory(releases, repo, now=None):
 
 def close_campaign(gh, campaign, reason, confirmation):
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", campaign):
-        raise ValueError("Invalid campaign")
+        raise RetentionRefusal("invalid-closure")
     if confirmation != f"CLOSE-{campaign}" or not reason.strip():
-        raise ValueError("Closure needs CLOSE-<campaign> and an explicit reason")
+        raise RetentionRefusal("invalid-closure")
     gh.require_maintenance_lock()
     matches = [r for r in gh.releases() if r["tag_name"] == PREFIX + campaign]
     if len(matches) != 1 or not matches[0]["draft"]:
-        raise ValueError("Expected exactly one existing draft campaign")
+        raise RetentionRefusal("closure-target-invalid")
     release = matches[0]
     if CLOSED_MARKER in (release.get("body") or ""):
-        raise ValueError("Already closed or ambiguous closure; do not overwrite")
+        raise RetentionRefusal("closure-already-marked")
     marker = {"closed_at": datetime.now(timezone.utc).isoformat(),
               "no_resume_needed": True, "reason": reason.strip()}
     gh.api(f"releases/{release['id']}", method="PATCH",
-           payload={"body": (release.get("body") or "") + "\n" +
+           # GitHub can replace a draft's uncreated tag with "untagged-..."
+           # when tag_name is omitted from PATCH. Preserve its identity.
+           payload={"tag_name": release["tag_name"], "draft": True,
+                    "body": (release.get("body") or "") + "\n" +
                     CLOSED_MARKER + json.dumps(marker)})
 
 
@@ -165,7 +200,7 @@ def apply_plan(gh, confirmation):
     gh.require_maintenance_lock()
     plan = inventory(gh.releases(), gh.repo)
     if confirmation != plan["confirmation"]:
-        raise ValueError("Inventory changed or confirmation missing: simulate again")
+        raise RetentionRefusal("confirmation-stale-or-missing")
     for row in plan["campaigns"]:
         if not row["delete"]:
             continue
@@ -175,7 +210,7 @@ def apply_plan(gh, confirmation):
         fresh = inventory(gh.releases(), gh.repo)
         expected = next((r for r in fresh["campaigns"] if r["id"] == row["id"]), None)
         if expected != row:
-            raise RuntimeError("Campaign changed since confirmation; stopped")
+            raise SafetyRefusal("campaign-changed")
         gh.api(f"releases/{row['id']}", method="DELETE")
         print(f"Deleted closed campaign {row['campaign']}: {row['bytes']} bytes", flush=True)
     return plan
@@ -191,19 +226,46 @@ def main():
     parser.add_argument("--confirm", default="")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    gh = GitHub(args.repo)
-    if args.operation == "close":
-        close_campaign(gh, args.campaign, args.reason, args.confirm)
-    elif args.operation == "apply":
-        apply_plan(gh, args.confirm)
-    report = inventory(gh.releases(), gh.repo)
-    report["active_runs"] = [{"id": r["id"], "status": r["status"]}
-                             for r in gh.active_runs()]
+    stage = "initialization"
+    exit_code = 0
+    try:
+        gh = GitHub(args.repo)
+        stage = args.operation
+        if args.operation == "close":
+            close_campaign(gh, args.campaign, args.reason, args.confirm)
+        elif args.operation == "apply":
+            apply_plan(gh, args.confirm)
+        stage = "final-inventory"
+        report = inventory(gh.releases(), gh.repo)
+        stage = "final-active-runs"
+        report["active_runs"] = [{"id": r["id"], "status": r["status"]}
+                                 for r in gh.active_runs()]
+    except Exception as error:
+        exit_code = 1
+        code = (error.args[0] if isinstance(error, (RetentionRefusal, SafetyRefusal))
+                and error.args else "operation-failed")
+        if code not in DIAGNOSTICS:
+            code = "operation-failed"
+        # Allowlist only: no raw inputs, release bodies, exception strings,
+        # command lines, stdout/stderr or environment variables in this file.
+        # Do not retry GitHub reads to enrich a failed safety check.
+        report = {
+            "kind": "retention-failure-diagnostic",
+            "schema_version": 1,
+            "status": "failed",
+            "operation": args.operation,
+            "stage": stage,
+            "recorded_at": datetime.now(timezone.utc).isoformat(),
+            "code": code,
+            "message": DIAGNOSTICS[code],
+            "mutation_outcome": "not-certified-by-this-diagnostic",
+        }
     text = json.dumps(report, indent=2, ensure_ascii=False)
     print(text)
     if args.output:
         args.output.write_text(text + "\n")
+    return exit_code
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

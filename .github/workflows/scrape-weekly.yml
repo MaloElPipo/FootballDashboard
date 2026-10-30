@@ -1,384 +1,145 @@
 name: Scrape carrière TM hebdomadaire
 
-# Deux déclenchements hors de la minute 00 pour couvrir le changement d'heure :
-# 3h15 UTC = 5h15 Paris en été, 4h15 UTC = 5h15 Paris en hiver.
-# La porte ci-dessous ignore automatiquement le créneau qui ne correspond pas
-# à l'offset Europe/Paris courant.
+# Weekly creation + hourly observation/resumption of an EXISTING queue.
+# GitHub cron can be delayed; no punctuality or source-access guarantee.
 on:
   schedule:
     - cron: "15 3 * * 1"
     - cron: "15 4 * * 1"
+    - cron: "37 * * * *"
   workflow_dispatch:
     inputs:
       leagues:
-        description: "Liste optionnelle de ligues (séparées par virgules) — vide = toutes"
-        required: false
+        description: "Ligues d'une nouvelle campagne ; vide = toutes"
+        default: ""
+      campaign_id:
+        description: "Campagne durable existante ; vide = reprendre l'active ou créer"
         default: ""
       skip_scrape:
-        description: "Sauter le scraping (utiliser les CSV existants pour rebâtir la page)"
-        required: false
+        description: "Reconstruction seule, sans modifier la file"
         default: "false"
         type: choice
         options: ["false", "true"]
       refresh_squads:
-        description: "Rafraîchir les effectifs existants (transferts, nouveaux joueurs) avant le scraping carrière"
-        required: false
+        description: "Rafraîchir les effectifs une fois par ligue/campagne"
         default: "true"
         type: choice
         options: ["true", "false"]
       retry_round:
-        description: "Tour de rattrapage automatique (interne — laisser 0 pour un lancement manuel)"
-        required: false
+        description: "Compatibilité anciens déclencheurs ; les reprises sont gérées par la file"
         default: "0"
-        type: choice
-        options: ["0", "1"]
-      campaign_id:
-        description: "Campagne à reprendre ; vide = nouvelle collecte (ne réutilise pas les anciennes réponses)"
-        required: false
-        default: ""
 
 permissions:
   contents: write
-  actions: write
+  actions: read
+  pages: read
 
+# ALL queue writers must use this same group. No dispatch from a worker.
 concurrency:
   group: scrape-weekly
   cancel-in-progress: false
 
 jobs:
-  check-local-schedule:
+  scrape-and-publish:
     runs-on: ubuntu-latest
-    outputs:
-      should_run: ${{ steps.gate.outputs.should_run }}
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TM_CHECKPOINT_REMOTE: github
     steps:
-      - name: Vérifier le créneau Europe/Paris
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Autoriser la création uniquement au créneau hebdomadaire
         id: gate
         env:
           TRIGGER_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          # Un lancement manuel passe toujours.
-          if [ -z "$TRIGGER_SCHEDULE" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-            echo "Lancement manuel : exécution autorisée."
-            exit 0
-          fi
-
+          CREATE=false
           OFFSET=$(TZ=Europe/Paris date +%z)
           case "$TRIGGER_SCHEDULE:$OFFSET" in
-            "15 3 * * 1:+0200"|"15 4 * * 1:+0100")
-              echo "should_run=true" >> "$GITHUB_OUTPUT"
-              echo "Créneau actif : $TRIGGER_SCHEDULE avec offset Paris $OFFSET."
-              ;;
-            *)
-              echo "should_run=false" >> "$GITHUB_OUTPUT"
-              echo "Créneau ignoré : $TRIGGER_SCHEDULE avec offset Paris $OFFSET."
-              ;;
+            ":"*|"15 3 * * 1:+0200"|"15 4 * * 1:+0100") CREATE=true ;;
           esac
+          echo "create=$CREATE" >> "$GITHUB_OUTPUT"
 
-  scrape-and-publish:
-    needs: check-local-schedule
-    if: needs.check-local-schedule.outputs.should_run == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 720   # 12h max — 74 ligues × ~5 min = ~6h pour un run complet
-    env:
-      TM_CAMPAIGN_ID: ${{ inputs.campaign_id || format('run-{0}', github.run_id) }}
-      TM_CHECKPOINT_REMOTE: github
-      GH_TOKEN: ${{ github.token }}
+      - name: Rattacher la file durable et vérifier les publications précédentes
+        id: queue
+        if: inputs.skip_scrape != 'true'
+        working-directory: artifacts/football-dashboard
+        env:
+          REQUESTED_LEAGUES: ${{ inputs.leagues }}
+          REQUESTED_CAMPAIGN: ${{ inputs.campaign_id }}
+          REFRESH_SQUADS: ${{ inputs.refresh_squads }}
+          ALLOW_CREATE: ${{ steps.gate.outputs.create }}
+        run: python3 scripts/collection_queue.py prepare
 
-    steps:
-      - name: Checkout du dépôt
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Setup Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('artifacts/football-dashboard/requirements.txt') }}
-
-      - name: Install dépendances (Playwright pour contourner AWS WAF)
+      - name: Installer le navigateur seulement si la file autorise une collecte
+        if: steps.queue.outputs.ready == 'true'
         run: |
-          # TM protège son site derrière AWS WAF Bot Control : toute requête
-          # HTTP nue depuis une IP datacenter reçoit un challenge JS (202).
-          # On utilise Playwright/Chromium (cf. tm_waf.py) pour obtenir le
-          # cookie aws-waf-token, réinjecté ensuite dans les requêtes rapides.
-          python -m pip install --upgrade pip
           python -m pip install playwright
-          # Installe le Chromium géré par Playwright + ses libs système.
-          # (--with-deps fonctionne nativement sur ubuntu-latest.)
           python -m playwright install --with-deps chromium
 
-      - name: Lister les ligues à scraper
-        id: list_leagues
+      - name: Collecter les ligues éligibles avec bilan durable
+        id: collect
+        if: steps.queue.outputs.ready == 'true'
         working-directory: artifacts/football-dashboard
         env:
-          REQUESTED_LEAGUES: ${{ github.event.inputs.leagues }}
-        run: |
-          python3 - <<'PY'
-          import os
-          from scripts.scrape_all_squads import select_leagues
+          TM_CAMPAIGN_ID: ${{ steps.queue.outputs.campaign }}
+        run: python3 scripts/collection_queue.py collect
 
-          # Validation bloquante AVANT toute collecte, même si le refresh
-          # tolère ensuite les erreurs réseau d'une ligue.
-          leagues = select_leagues(os.environ["REQUESTED_LEAGUES"])
-          codes = ",".join(league["code_tm"].lower() for league in leagues)
-          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
-              output.write(f"leagues={codes}\n")
-          print(f"→ {len(leagues)} ligues retenues : {codes}")
-          PY
-
-      - name: Vérifier prérequis pour scraping (effectifs déjà scrapés)
-        if: github.event.inputs.skip_scrape != 'true'
-        working-directory: artifacts/football-dashboard
-        run: |
-          # Le scraper carrière a besoin de live/data/tm_scrap/{league}.csv en input
-          # (liste des joueurs par championnat). On signale juste les manques.
-          mkdir -p live/data/tm_scrap
-          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
-          MISSING=""
-          PRESENT=""
-          for code in "${LIST[@]}"; do
-            f="live/data/tm_scrap/${code}.csv"
-            if [ -f "$f" ] && [ $(wc -l < "$f") -gt 1 ]; then
-              PRESENT="$PRESENT $code"
-            else
-              MISSING="$MISSING $code"
-            fi
-          done
-          echo "✓ Effectifs présents :$PRESENT"
-          echo "✗ Effectifs manquants (à scraper) :$MISSING"
-
-      - name: Scraping effectifs (squads) pour ligues sans CSV
-        if: github.event.inputs.skip_scrape != 'true'
-        working-directory: artifacts/football-dashboard
-        run: |
-          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
-          OK=0
-          KO=0
-          SKIPPED=0
-          for code in "${LIST[@]}"; do
-            f="live/data/tm_scrap/${code}.csv"
-            if [ -f "$f" ] && [ $(wc -l < "$f") -gt 1 ]; then
-              SKIPPED=$((SKIPPED+1))
-              continue
-            fi
-            echo "::group::Scraping effectifs $code"
-            if python3 scripts/scrape_all_squads.py --only "$code"; then
-              OK=$((OK+1))
-            else
-              echo "::warning::Échec scraping effectifs $code"
-              KO=$((KO+1))
-            fi
-            echo "::endgroup::"
-          done
-          echo "Bilan effectifs : $OK scrapés / $KO échecs / $SKIPPED déjà présents"
-
-      - name: Rafraîchir les effectifs existants (transferts, nouveaux joueurs)
-        # Tourne aussi sur le cron hebdomadaire (inputs vides ⇒ != 'false').
-        # Re-scrape la saison précédente + courante pour les ligues retenues et
-        # FUSIONNE avec les CSV existants (upsert, jamais de suppression) :
-        # capte les transferts, les promus/relégués et les joueurs qui n'ont
-        # encore jamais joué (passe kader). En cas d'échec d'une ligue, son
-        # CSV existant reste intact (garde-fou 0-ligne dans le scraper).
-        if: github.event.inputs.skip_scrape != 'true' && github.event.inputs.refresh_squads != 'false'
-        working-directory: artifacts/football-dashboard
-        timeout-minutes: 180
-        continue-on-error: true
-        env:
-          SELECTED_LEAGUES: ${{ steps.list_leagues.outputs.leagues }}
-        run: python3 scripts/scrape_all_squads.py --refresh-current --leagues "$SELECTED_LEAGUES"
-
-      - name: Persister les nouveaux effectifs sur main
-        if: github.event.inputs.skip_scrape != 'true'
-        run: |
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-          git add artifacts/football-dashboard/live/data/tm_scrap/*.csv 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "Aucun nouveau CSV effectif à committer."
-          else
-            git commit -m "chore(data): nouveaux effectifs scrapés (run #${{ github.run_number }})"
-            git push origin HEAD:main || echo "::warning::push effectifs échoué (continuera quand même)"
-          fi
-
-      - name: Scraping carrière des joueurs (par ligue, séquentiel)
-        id: scrape_career
-        if: github.event.inputs.skip_scrape != 'true'
-        working-directory: artifacts/football-dashboard
-        # timeout-minutes : limite dure à 5h pour rester sous le plafond GitHub (6h/job).
-        # continue-on-error : si la limite est atteinte ou qu'une ligue bloque,
-        # les étapes suivantes (filtrage, build, déploiement) tournent quand même
-        # avec les CSV déjà produits — portail partiel plutôt que pas de portail.
-        timeout-minutes: 300
-        continue-on-error: true
-        run: |
-          IFS=',' read -ra LIST <<< "${{ steps.list_leagues.outputs.leagues }}"
-          OK=0
-          KO=0
-          SKIP=0
-          KO_CODES=""
-          BLOCKED=false
-          for code in "${LIST[@]}"; do
-            if [ "$BLOCKED" = true ]; then
-              KO_CODES="$KO_CODES $code"
-              KO=$((KO+1))
-              continue
-            fi
-            f="live/data/tm_scrap/${code}.csv"
-            # Skip si CSV absent OU vide (header seul = effectif non scrapé)
-            if [ ! -f "$f" ] || [ "$(wc -l < "$f")" -le 1 ]; then
-              # Le scraper enregistre la tentative « effectif absent » avant
-              # toute requête réseau, sans modifier la dernière réussite.
-              if python3 tm_player_career.py --league "$code" --workers 5; then
-                :
-              else
-                EXIT=$?
-                if [ "$EXIT" -eq 75 ]; then
-                  BLOCKED=true
-                  echo "blocked=true" >> "$GITHUB_OUTPUT"
-                  KO_CODES="$KO_CODES $code"
-                fi
-                echo "::warning::Effectif absent ou vide ($code) — tentative enregistrée si possible"
-              fi
-              SKIP=$((SKIP+1))
-              continue
-            fi
-            echo "::group::Scraping carrière $code"
-            # Même plafond réseau 240 s, mais sortie propre + checkpoints.
-            # 76 = budget épuisé ; 75 conserve l'arrêt global existant.
-            if python3 tm_player_career.py --league "$code" --workers 2 --budget-seconds 240; then
-              OK=$((OK+1))
-            else
-              EXIT=$?
-              if [ "$EXIT" -eq 75 ]; then
-                BLOCKED=true
-                echo "blocked=true" >> "$GITHUB_OUTPUT"
-                echo "::warning::Blocage Transfermarkt ($code) — arrêt global, aucune nouvelle session"
-              elif [ $EXIT -eq 76 ]; then
-                echo "::warning::Budget épuisé ($code) — progrès sauvegardé, export précédent conservé"
-              else
-                echo "::warning::Échec scraping $code (exit $EXIT)"
-              fi
-              KO=$((KO+1))
-              KO_CODES="$KO_CODES $code"
-            fi
-            echo "::endgroup::"
-          done
-          # ── Retry pass : une seconde chance pour les ligues KO
-          # (ex. : erreur réseau transitoire, TM momentanément lent)
-          FINAL_KO_CODES=""
-          if [ "$BLOCKED" = true ]; then
-            FINAL_KO_CODES=$(echo "$KO_CODES" | xargs | tr ' ' ',')
-          elif [ -n "$KO_CODES" ]; then
-            echo "=== Retry pass : $KO ligue(s) KO → nouvelle tentative ==="
-            KO_RECOVERED=0
-            KO_FINAL=0
-            for code in $KO_CODES; do
-              if [ "$BLOCKED" = true ]; then
-                KO_FINAL=$((KO_FINAL+1))
-                FINAL_KO_CODES="${FINAL_KO_CODES:+$FINAL_KO_CODES,}$code"
-                continue
-              fi
-              echo "::group::Retry carrière $code"
-              if python3 tm_player_career.py --league "$code" --workers 2 --budget-seconds 240; then
-                OK=$((OK+1))
-                KO_RECOVERED=$((KO_RECOVERED+1))
-              else
-                EXIT=$?
-                if [ "$EXIT" -eq 75 ]; then
-                  BLOCKED=true
-                  echo "blocked=true" >> "$GITHUB_OUTPUT"
-                  echo "::warning::Blocage pendant le rattrapage — arrêt global"
-                fi
-                KO_FINAL=$((KO_FINAL+1))
-                FINAL_KO_CODES="${FINAL_KO_CODES:+$FINAL_KO_CODES,}$code"
-                echo "::warning::Retry définitivement échoué : $code"
-              fi
-              echo "::endgroup::"
-            done
-            echo "Retry : $KO_RECOVERED récupérée(s) / $KO_FINAL toujours KO"
-            KO=$KO_FINAL
-          fi
-          echo "Bilan scraping : $OK OK / $KO KO / $SKIP skip (effectifs absents ou vides)"
-          echo "failed_leagues=$FINAL_KO_CODES" >> "$GITHUB_OUTPUT"
-          echo "blocked=$BLOCKED" >> "$GITHUB_OUTPUT"
-          echo "skipped=$SKIP" >> "$GITHUB_OUTPUT"
-
-      - name: Filtrer saison en cours pour chaque ligue
-        # always() : tourne même si l'étape carrière a expiré ou échoué partiellement.
-        # continue-on-error : si TM bloquait et que tous les CSV sont vides, on
-        # continue quand même vers build/deploy avec les données committées précédemment.
-        if: ${{ always() }}
-        continue-on-error: true
+      - name: Filtrer la saison courante
+        id: current
+        if: ${{ !cancelled() && (steps.queue.outputs.ready == 'true' || inputs.skip_scrape == 'true') }}
         working-directory: artifacts/football-dashboard
         run: python3 scripts/make_current_season.py
 
-      - name: Persister les CSV carrière sur main
-        id: persist_career
-        if: ${{ always() && github.event.inputs.skip_scrape != 'true' }}
+      - name: Persister les CSV validés sans supprimer les exports précédents
+        id: persist
+        if: ${{ !cancelled() && steps.queue.outputs.ready == 'true' && steps.current.outcome == 'success' }}
         run: |
-          # Réparer toute transaction interrompue avant de lire/stager les CSV.
-          # Une erreur de récupération doit arrêter cette étape.
           python3 artifacts/football-dashboard/career_export_transaction.py artifacts/football-dashboard/live/data/tm_career
           python3 artifacts/football-dashboard/career_export_transaction.py artifacts/football-dashboard/live/data/tm_career_current --current
-          # On commit les CSV carrière sur main pour qu'ils ne disparaissent
-          # plus jamais, même si un futur run partiel + force_orphan rebâtit
-          # gh-pages avec un sous-ensemble. Le repo source devient ainsi
-          # la garantie ultime des 74 ligues.
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          # Resync au cas où l'étape "Persister effectifs" a déjà push
-          git pull --rebase origin main || true
-          # --force requis : ces répertoires étaient gitignorés avant le fix
-          # du .gitignore ; git add sans --force les ignorerait encore.
+          find artifacts/football-dashboard/live/data/tm_scrap -maxdepth 1 -name '*.csv' -print0 | xargs -0 -r git add --
           find artifacts/football-dashboard/live/data/tm_career -maxdepth 1 -type f \
             \( -name '*_summary.csv' -o -name '*_career.csv' -o -name '*_matches.csv' -o -name '*_competitions_seen.csv' -o -name '*_collection.json' \) \
             -print0 | xargs -0 -r git add --force --
           find artifacts/football-dashboard/live/data/tm_career_current -maxdepth 1 -type f \
             \( -name '*_career.csv' -o -name '*_matches.csv' \) \
             -print0 | xargs -0 -r git add --force --
-          if git diff --cached --quiet; then
-            echo "Aucun nouveau CSV carrière à committer."
-          else
-            count=$(git diff --cached --name-only | wc -l)
-            git commit -m "chore(data): mise à jour CSV carrière (run #${{ github.run_number }}, $count fichiers)"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): collecte campagne ${{ steps.queue.outputs.campaign }}"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
 
-      - name: Construire la page GitHub Pages (HTML + ZIPs)
-        id: build_portal
-        if: ${{ always() }}
+      - name: Construire le portail et les deux archives par ligue
+        id: build
+        if: ${{ !cancelled() && steps.current.outcome == 'success' && (steps.persist.outcome == 'success' || inputs.skip_scrape == 'true') }}
         working-directory: artifacts/football-dashboard
         run: python3 scripts/build_pages.py
 
-      - name: Vérifier la sortie (non bloquant)
-        if: ${{ always() }}
+      - name: Enregistrer les empreintes CSV attendues avant publication
+        id: seal
+        if: ${{ !cancelled() && steps.build.outcome == 'success' && steps.queue.outputs.ready == 'true' }}
         working-directory: artifacts/football-dashboard
-        # Étape jamais bloquante : on log un état même si 0 ZIP, pour permettre
-        # un déploiement "dégradé" (page index avec sections "Pas encore scrapé").
-        continue-on-error: true
-        run: |
-          set +e
-          echo "--- Contenu gh_pages_build/ ---"
-          ls -la gh_pages_build/ || true
-          echo "--- Contenu gh_pages_build/data/ ---"
-          ls -la gh_pages_build/data/ 2>/dev/null | head -20 || echo "(aucun dossier data/)"
-          echo "---"
-          zip_count=$(find gh_pages_build/data -maxdepth 1 -name "*.zip" 2>/dev/null | wc -l)
-          echo "Total ZIPs : ${zip_count}"
-          echo "Taille totale : $(du -sh gh_pages_build/ 2>/dev/null | cut -f1 || echo 'N/A')"
-          if [ ! -f gh_pages_build/index.html ]; then
-            echo "::warning::index.html introuvable — déploiement risque d'être vide"
-          fi
+        env:
+          TM_CAMPAIGN_ID: ${{ steps.queue.outputs.campaign }}
+        run: python3 scripts/collection_queue.py seal
 
-      - name: Déployer sur GitHub Pages (branche gh-pages)
-        if: ${{ !cancelled() && steps.build_portal.outcome == 'success' && (github.event.inputs.skip_scrape == 'true' || steps.persist_career.outcome == 'success') }}
+      - name: Préserver toutes les archives de ligues déjà publiques
+        id: preserve
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        working-directory: artifacts/football-dashboard
+        run: python3 scripts/collection_queue.py guard
+
+      - name: Déployer les archives
+        if: ${{ !cancelled() && steps.preserve.outcome == 'success' && (steps.seal.outcome == 'success' || inputs.skip_scrape == 'true') }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -386,61 +147,12 @@ jobs:
           publish_branch: gh-pages
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: "chore(pages): refresh hebdomadaire ${{ github.run_number }}"
-          # force_orphan garantit qu'à chaque déploiement la branche gh-pages
-          # est réécrite avec un unique commit orphelin. Conséquence : aucun
-          # tree historique (notamment ceux des runs #1 et #3 qui contenaient
-          # le mapping erroné Slovaquie ⇄ Slovénie) ne reste référencé sur
-          # la branche publique. Le portail GitHub Pages ne sert que le tip
-          # de la branche, donc on supprime aussi toute trace consultable
-          # via l'API git du repo.
+          commit_message: "chore(pages): campagne ${{ steps.queue.outputs.campaign }}"
           force_orphan: true
 
-      - name: Relancer les ligues encore en échec sur un runner neuf
-        if: ${{ always() && steps.scrape_career.outputs.blocked != 'true' && steps.scrape_career.outputs.failed_leagues != '' && github.event.inputs.retry_round != '1' }}
+      - name: Bilan par ligue (publication publique vérifiée au prochain passage)
+        if: ${{ always() && steps.queue.outputs.ready == 'true' }}
+        working-directory: artifacts/football-dashboard
         env:
-          GH_TOKEN: ${{ github.token }}
-          FAILED_LEAGUES: ${{ steps.scrape_career.outputs.failed_leagues }}
-        run: |
-          echo "Rattrapage automatique demandé pour : $FAILED_LEAGUES"
-          gh workflow run "scrape-weekly.yml" \
-            --ref main \
-            -f leagues="$FAILED_LEAGUES" \
-            -f skip_scrape=false \
-            -f refresh_squads=false \
-            -f campaign_id="$TM_CAMPAIGN_ID" \
-            -f retry_round=1
-          echo "::notice::Un nouveau runner reprendra uniquement les ligues en échec."
-
-      - name: Résumé
-        if: ${{ always() }}
-        env:
-          COLLECTION_OUTCOME: ${{ steps.scrape_career.outcome }}
-          FAILED_LEAGUES: ${{ steps.scrape_career.outputs.failed_leagues }}
-          BLOCKED: ${{ steps.scrape_career.outputs.blocked }}
-          SKIPPED: ${{ steps.scrape_career.outputs.skipped }}
-          SKIP_SCRAPE: ${{ github.event.inputs.skip_scrape }}
-        run: |
-          {
-            echo "## Collecte Transfermarkt"
-            echo "Campagne : $TM_CAMPAIGN_ID"
-            echo "Résultat collecte : $COLLECTION_OUTCOME"
-            echo "Blocage : ${BLOCKED:-non renseigné}"
-            echo "Ligues non actualisées : ${FAILED_LEAGUES:-aucune signalée}"
-            echo "Effectifs manquants : ${SKIPPED:-0}"
-          } >> "$GITHUB_STEP_SUMMARY"
-          if [ -n "${{ steps.scrape_career.outputs.failed_leagues }}" ]; then
-            if [ "${{ steps.scrape_career.outputs.blocked }}" = "true" ]; then
-              echo "Collecte bloquée : aucun rattrapage automatique. Ligues non actualisées : ${{ steps.scrape_career.outputs.failed_leagues }}"
-            elif [ "${{ github.event.inputs.retry_round }}" = "1" ]; then
-              echo "⚠️ Ligues encore en échec après le rattrapage automatique : ${{ steps.scrape_career.outputs.failed_leagues }}"
-            else
-              echo "🔁 Rattrapage automatique lancé pour : ${{ steps.scrape_career.outputs.failed_leagues }}"
-            fi
-          fi
-          echo "URL probable : https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          # Successful publication must not hide a failed collection.
-          if [ "$SKIP_SCRAPE" != true ] && { [ "$COLLECTION_OUTCOME" != success ] || [ "$BLOCKED" = true ] || [ -n "$FAILED_LEAGUES" ] || [ "${SKIPPED:-0}" != 0 ]; }; then
-            echo "::error::Collecte incomplète ; consulter le résumé. Les exports précédents restent conservés."
-            exit 1
-          fi
+          TM_CAMPAIGN_ID: ${{ steps.queue.outputs.campaign }}
+        run: python3 scripts/collection_queue.py finish

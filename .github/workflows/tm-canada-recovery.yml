@@ -15,7 +15,7 @@ concurrency:
 jobs:
   canada:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
@@ -35,9 +35,18 @@ jobs:
       - name: Reprendre un seul championnat dans la campagne historique
         working-directory: artifacts/football-dashboard
         run: |
-          python -u tm_player_career.py --league "$RECOVERY_LEAGUE" \
-            --campaign recovery-2026-10-28 --checkpoint-remote \
-            --workers 1 --budget-seconds 1200
+          # Only a clean budget exhaustion permits a same-runner continuation.
+          # Source refusal, storage failure and unknown errors stop immediately.
+          for attempt in 1 2 3; do
+            rc=0
+            python -u tm_player_career.py --league "$RECOVERY_LEAGUE" \
+              --campaign recovery-2026-10-28 --checkpoint-remote \
+              --workers 1 --budget-seconds 1200 || rc=$?
+            if [ "$rc" -eq 0 ]; then exit 0; fi
+            if [ "$rc" -ne 76 ] || [ "$attempt" -eq 3 ]; then exit "$rc"; fi
+            echo "Budget atteint : reprise sur le même disque dans 60 secondes."
+            sleep 60
+          done
       - name: Conserver les exports pour vérification avant publication
         if: always()
         uses: actions/upload-artifact@v4

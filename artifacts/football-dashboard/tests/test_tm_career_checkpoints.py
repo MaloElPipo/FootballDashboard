@@ -17,6 +17,26 @@ EMPTY = {"performance": []}
 
 
 class CheckpointTests(unittest.TestCase):
+    def test_bounded_manual_compaction_threshold(self):
+        import os
+        with tempfile.TemporaryDirectory() as root:
+            with patch.dict(os.environ, {"TM_CHECKPOINT_COMPACT_AFTER": "900"}):
+                store = Checkpoints(root, "threshold")
+            self.assertEqual(store.compact_after, 900)
+            store.remote = True
+            store.assets = [{"name": f"{i}.jsonl.gz"} for i in range(100)]
+            store.pending = {"1": {"data": EMPTY}}
+            with patch.object(store, "_gh") as gh, patch.object(
+                    store, "_all_records", side_effect=AssertionError("Unexpected full compaction")):
+                store.flush()
+            self.assertEqual(gh.call_count, 1)
+            self.assertEqual(gh.call_args.args[:2], ("release", "upload"))
+            self.assertEqual(len(store.assets), 101)
+            for value in ("99", "901", "invalid"):
+                with patch.dict(os.environ, {"TM_CHECKPOINT_COMPACT_AFTER": value}):
+                    with self.assertRaises(ValueError):
+                        Checkpoints(root, "threshold")
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
@@ -97,8 +117,8 @@ class CheckpointTests(unittest.TestCase):
         self.assertEqual(result[-1], ["2"])
         self.assertTrue(scraper._budget_expired.is_set())
 
-    def test_budget_cannot_be_increased(self):
-        with patch.object(sys, "argv", ["scraper", "--budget-seconds", "241"]), \
+    def test_budget_cannot_exceed_manual_cap(self):
+        with patch.object(sys, "argv", ["scraper", "--budget-seconds", "1201"]), \
              self.assertRaises(SystemExit) as raised:
             scraper.cli()
         self.assertEqual(raised.exception.code, 2)

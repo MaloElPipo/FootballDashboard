@@ -53,6 +53,11 @@ class Checkpoints:
         self.folder = Path(root) / campaign
         self.folder.mkdir(parents=True, exist_ok=True)
         self.remote = remote
+        # Manual catch-up may amortize legacy full-archive compaction across
+        # more journals. Keep a bounded margin below the release asset limit.
+        self.compact_after = int(os.getenv("TM_CHECKPOINT_COMPACT_AFTER", "100"))
+        if not 100 <= self.compact_after <= 900:
+            raise ValueError("TM_CHECKPOINT_COMPACT_AFTER must be between 100 and 900")
         # Explicit opt-in for writing/migrating; reading v2 is automatic.
         self.partitioned = partitioned
         self.tag = f"tm-checkpoints-{campaign}"
@@ -229,9 +234,9 @@ class Checkpoints:
             if not self.pending:
                 return
             if self.remote:
-                # Compact at 100 journals, well below GitHub's asset limit.
+                # Default 100; bounded override for supervised catch-up.
                 # No overwrite/delete until the replacement is durable.
-                compact = len(self.assets) >= 100
+                compact = len(self.assets) >= self.compact_after
                 if self.partitioned or any(partition_bounds(a["name"]) for a in self.assets
                                            if a["name"].endswith(".jsonl.gz")):
                     self._publish_partitions(compact)

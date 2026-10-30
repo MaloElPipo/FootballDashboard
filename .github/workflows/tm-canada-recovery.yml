@@ -20,6 +20,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
       TM_CHECKPOINT_REMOTE: github
+      TM_CHECKPOINT_COMPACT_AFTER: "900"
       RECOVERY_LEAGUE: ${{ inputs.league }}
     steps:
       - uses: actions/checkout@v4

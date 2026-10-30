@@ -1,6 +1,12 @@
-name: Reprise limitée Canada
+name: Reprise limitée du rattrapage TM
 on:
   workflow_dispatch:
+    inputs:
+      league:
+        description: "Un seul championnat manquant de la campagne historique"
+        type: choice
+        default: cdn1
+        options: [cdn1, uru1, arg1, mls1, mex1, col1, pr1a, clpd, ec1n, bra2, sa1, uae1, jap1, rsk1, aus1, csl, mar1, egy1, alg1, sfa1]
 permissions:
   contents: write
 concurrency:
@@ -14,6 +20,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
       TM_CHECKPOINT_REMOTE: github
+      RECOVERY_LEAGUE: ${{ inputs.league }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,17 +32,17 @@ jobs:
           python -m playwright install --with-deps chromium
       # Explicitly authorized limited recovery after successful access probe.
       # No global clearance, new campaign, automatic retry or portal publication.
-      - name: Reprendre uniquement le Canada dans la campagne historique
+      - name: Reprendre un seul championnat dans la campagne historique
         working-directory: artifacts/football-dashboard
         run: |
-          python -u tm_player_career.py --league cdn1 \
+          python -u tm_player_career.py --league "$RECOVERY_LEAGUE" \
             --campaign recovery-2026-10-28 --checkpoint-remote \
             --workers 1 --budget-seconds 240
       - name: Conserver les exports pour vérification avant publication
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: canada-recovery-exports
-          path: artifacts/football-dashboard/live/data/tm_career/cdn1_*
+          name: ${{ inputs.league }}-recovery-exports
+          path: artifacts/football-dashboard/live/data/tm_career/${{ inputs.league }}_*
           if-no-files-found: warn
           retention-days: 30

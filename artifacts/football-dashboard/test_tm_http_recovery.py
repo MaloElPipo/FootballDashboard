@@ -23,20 +23,20 @@ class RecoveryTests(unittest.TestCase):
             self.assertEqual(scraper._fetch_json("test")[:2], ({}, 200))
             refresh.assert_not_called()
 
-    def test_one_refresh_recovers(self):
+    def test_refusal_does_not_refresh(self):
         with patch.object(scraper, "_fetch_json_once", side_effect=[
             (None, 405, "HTTP 405", False, "old"), ({"data": {}}, 200, None, False, "new")
         ]), patch.object(scraper.tm_waf, "get_waf_token") as refresh:
-            self.assertEqual(scraper._fetch_json("test")[1], 200)
-            refresh.assert_called_once_with(force_refresh=True, stale="old")
-            self.assertFalse(scraper._blocked.is_set())
+            self.assertEqual(scraper._fetch_json("test")[1], 405)
+            refresh.assert_not_called()
+            self.assertTrue(scraper._blocked.is_set())
 
     def test_persistent_failure_stops_network(self):
         with patch.object(scraper, "_fetch_json_once", return_value=(None, 405, "HTTP 405", False, "old")) as fetch, patch.object(scraper.tm_waf, "get_waf_token") as refresh:
             scraper._fetch_json("test")
             scraper._fetch_json("another")
-            self.assertEqual(fetch.call_count, 2)
-            refresh.assert_called_once()
+            self.assertEqual(fetch.call_count, 1)
+            refresh.assert_not_called()
             self.assertTrue(scraper._blocked.is_set())
 
     def test_captcha_not_retried(self):
@@ -50,7 +50,7 @@ class RecoveryTests(unittest.TestCase):
         with patch.object(scraper, "_fetch_json_once", return_value=(None, 405, "HTTP 405", False, "old")), patch.object(scraper.tm_waf, "get_waf_token") as refresh:
             with ThreadPoolExecutor(max_workers=5) as pool:
                 list(pool.map(scraper._fetch_json, ["test"] * 20))
-            refresh.assert_called_once()
+            refresh.assert_not_called()
             self.assertTrue(scraper._blocked.is_set())
 
     def test_header_classification_no_body_or_secrets(self):

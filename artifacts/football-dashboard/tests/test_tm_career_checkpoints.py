@@ -17,6 +17,25 @@ EMPTY = {"performance": []}
 
 
 class CheckpointTests(unittest.TestCase):
+    def test_github_read_retries_without_retrying_writes(self):
+        import subprocess
+        import tm_career_checkpoints as module
+        with tempfile.TemporaryDirectory() as root:
+            store = Checkpoints(root, "retry")
+            failure = subprocess.CalledProcessError(1, ["gh"])
+            with patch.object(module.subprocess, "run", side_effect=[
+                    failure, subprocess.CompletedProcess([], 0, stdout="ok")]) as run, \
+                 patch.object(module.time, "sleep") as sleep:
+                self.assertEqual(store._gh("release", "download", "tag", "--dir", "/tmp/test"), "ok")
+                sleep.assert_called_once_with(120)
+                self.assertIn("--clobber", run.call_args.args[0])
+            with patch.object(module.subprocess, "run", side_effect=failure) as run, \
+                 patch.object(module.time, "sleep") as sleep:
+                with self.assertRaises(subprocess.CalledProcessError):
+                    store._gh("release", "upload", "tag", "file")
+                self.assertEqual(run.call_count, 1)
+                sleep.assert_not_called()
+
     def test_bounded_manual_compaction_threshold(self):
         import os
         with tempfile.TemporaryDirectory() as root:

@@ -78,8 +78,22 @@ class Checkpoints:
 
     def _gh(self, *args):
         # gh receives the workflow's scoped GH_TOKEN, never logged/read here.
-        return subprocess.run(["gh", *args], check=True, capture_output=True,
-                              text=True, timeout=60).stdout
+        read_only = (args[:2] in (("release", "download"), ("release", "view"))
+                     or args[:3] == ("api", "--paginate", "--slurp"))
+        for attempt in range(3 if read_only else 1):
+            command = ["gh", *args]
+            if attempt and args[:2] == ("release", "download"):
+                # A failed download may leave a partial temporary file.
+                command.append("--clobber")
+            try:
+                return subprocess.run(command, check=True, capture_output=True,
+                                      text=True, timeout=60).stdout
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+                if not read_only or attempt == 2:
+                    raise
+                print("Checkpoint read failed; retrying read only after 120 seconds.",
+                      flush=True)
+                time.sleep(120)
 
     def _restore(self):
         # List first so authentication/network errors cannot masquerade as

@@ -3,19 +3,24 @@ on:
   workflow_dispatch:
     inputs:
       league:
-        description: "Un seul championnat manquant de la campagne historique"
+        description: "Championnat ou remaining pour terminer le rattrapage sans publier"
         type: choice
         default: cdn1
-        options: [cdn1, uru1, arg1, mls1, mex1, col1, pr1a, clpd, ec1n, bra2, sa1, uae1, jap1, rsk1, aus1, csl, mar1, egy1, alg1, sfa1]
+        options: [remaining, cdn1, uru1, arg1, mls1, mex1, col1, pr1a, clpd, ec1n, bra2, sa1, uae1, jap1, rsk1, aus1, csl, mar1, egy1, alg1, sfa1]
+      after_run:
+        description: "Run précédent devant être réussi avant de commencer ce lot"
+        type: string
+        default: ""
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: scrape-weekly
   cancel-in-progress: false
 jobs:
   canada:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 350
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
@@ -27,6 +32,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Ne pas continuer après un échec du run précédent
+        if: inputs.after_run != ''
+        env:
+          PREVIOUS_RUN: ${{ inputs.after_run }}
+        run: |
+          [[ "$PREVIOUS_RUN" =~ ^[0-9]+$ ]] || exit 1
+          conclusion=$(gh api "repos/$GH_REPO/actions/runs/$PREVIOUS_RUN" --jq '.conclusion')
+          if [ "$conclusion" != "success" ]; then
+            echo "Run précédent non réussi : vérification requise, aucune collecte lancée."
+            exit 1
+          fi
       - name: Installer le navigateur
         run: |
           python -m pip install playwright
@@ -34,6 +50,7 @@ jobs:
       # Explicitly authorized limited recovery after successful access probe.
       # No global clearance, new campaign, automatic retry or portal publication.
       - name: Reprendre un seul championnat dans la campagne historique
+        if: inputs.league != 'remaining'
         working-directory: artifacts/football-dashboard
         run: |
           # Only a clean budget exhaustion permits a same-runner continuation.
@@ -44,15 +61,26 @@ jobs:
               --campaign recovery-2026-10-28 --checkpoint-remote \
               --workers 1 --budget-seconds 1200 || rc=$?
             if [ "$rc" -eq 0 ]; then exit 0; fi
-            if [ "$rc" -ne 76 ] || [ "$attempt" -eq 3 ]; then exit "$rc"; fi
-            echo "Budget atteint : reprise sur le même disque dans 60 secondes."
-            sleep 60
+            if { [ "$rc" -ne 76 ] && [ "$rc" -ne 77 ]; } || [ "$attempt" -eq 3 ]; then exit "$rc"; fi
+            echo "Arrêt temporaire : reprise sur le même disque dans 120 secondes."
+            sleep 120
           done
+      - name: Collecter et sauvegarder les championnats restants sans publier
+        if: inputs.league == 'remaining'
+        id: remaining
+        working-directory: artifacts/football-dashboard
+        run: python -u scripts/recover_remaining.py
       - name: Conserver les exports pour vérification avant publication
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.league }}-recovery-exports
-          path: artifacts/football-dashboard/live/data/tm_career/${{ inputs.league }}_*
+          path: ${{ inputs.league == 'remaining' && 'artifacts/football-dashboard/live/data/tm_career/*' || format('artifacts/football-dashboard/live/data/tm_career/{0}_*', inputs.league) }}
           if-no-files-found: warn
           retention-days: 30
+      - name: Continuer le lot sur un nouveau runner avant la limite GitHub
+        if: steps.remaining.outputs.continue == 'true'
+        run: |
+          # One dispatch only. A lost response is not automatically repeated.
+          sleep 120
+          gh workflow run tm-canada-recovery.yml --ref main -f league=remaining

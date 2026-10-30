@@ -37,7 +37,7 @@ jobs:
         run: |
           python -u tm_player_career.py --league "$RECOVERY_LEAGUE" \
             --campaign recovery-2026-10-28 --checkpoint-remote \
-            --workers 1 --budget-seconds 240
+            --workers 1 --budget-seconds 1200
       - name: Conserver les exports pour vérification avant publication
         if: always()
         uses: actions/upload-artifact@v4

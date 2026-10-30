@@ -685,10 +685,10 @@ def cli():
     parser.add_argument("--checkpoint-remote", action="store_true",
                         default=os.getenv("TM_CHECKPOINT_REMOTE") == "github")
     parser.add_argument("--budget-seconds", type=float, default=240,
-                        help="Budget réseau par tentative, maximum 240 s")
+                        help="Budget réseau par tentative, maximum 1200 s (défaut 240 s)")
     args = parser.parse_args()
-    if not 0 < args.budget_seconds <= 240:
-        parser.error("--budget-seconds must be > 0 and <= 240")
+    if not 0 < args.budget_seconds <= 1200:
+        parser.error("--budget-seconds must be > 0 and <= 1200")
     args.campaign = args.campaign or uuid.uuid4().hex
 
     # A durable incomplete attempt also covers process timeouts/interruptions.

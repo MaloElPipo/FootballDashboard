@@ -10,7 +10,10 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 LEAGUES = ("cdn1", "pr1a", "clpd", "rsk1", "aus1")
-SAMPLE = 20
+SAMPLE = int(os.environ.get("BENCHMARK_SAMPLE", "20"))
+PROFILE = os.environ.get("BENCHMARK_PROFILE", "compare")
+if SAMPLE not in (20, 200) or PROFILE not in ("compare", "five"):
+    raise ValueError("Unsupported bounded benchmark settings")
 
 
 def run_profile(width, output):
@@ -29,7 +32,8 @@ def run_profile(width, output):
                 command = [
                     sys.executable, "-u", "tm_player_career.py", "--league", code,
                     "--test", "--test-n", str(SAMPLE), "--workers", "1",
-                    "--budget-seconds", "240", "--out-dir", str(exports),
+                    "--budget-seconds", "1200" if SAMPLE == 200 else "240",
+                    "--out-dir", str(exports),
                     "--checkpoint-dir", str(folder / code / "checkpoints"),
                     "--campaign", f"benchmark-{width}-{code}",
                 ]
@@ -86,7 +90,7 @@ def main():
     output = Path(os.environ["RUNNER_TEMP"]) / "tm-parallel-benchmark"
     output.mkdir(exist_ok=False)
     reports = []
-    for width in (1, 2, 3, 5):
+    for width in ((5,) if PROFILE == "five" else (1, 2, 3, 5)):
         if reports:
             time.sleep(120)
         report = run_profile(width, output)

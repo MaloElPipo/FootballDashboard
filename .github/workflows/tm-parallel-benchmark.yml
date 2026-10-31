@@ -1,6 +1,17 @@
 name: Comparaison limitée des collectes parallèles
 on:
   workflow_dispatch:
+    inputs:
+      profile:
+        description: "Comparaison courte ou cinq collecteurs uniquement"
+        type: choice
+        options: [compare, five]
+        default: compare
+      sample:
+        description: "Joueurs par championnat"
+        type: choice
+        options: ["20", "200"]
+        default: "20"
 permissions:
   contents: read
 concurrency:
@@ -19,8 +30,11 @@ jobs:
         run: |
           python -m pip install playwright
           python -m playwright install --with-deps chromium
-      - name: Comparer 1, 2, 3 et 5 collecteurs sur les mêmes échantillons
+      - name: Mesurer les collecteurs sur des échantillons isolés
         working-directory: artifacts/football-dashboard
+        env:
+          BENCHMARK_PROFILE: ${{ inputs.profile }}
+          BENCHMARK_SAMPLE: ${{ inputs.sample }}
         run: python -u scripts/benchmark_collection.py
       - name: Conserver les mesures et les échantillons isolés
         if: always()

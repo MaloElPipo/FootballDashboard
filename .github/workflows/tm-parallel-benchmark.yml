@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       profile:
-        description: "Comparaison courte ou cinq collecteurs uniquement"
+        description: "Comparaison, cinq échantillons ou cinq championnats complets"
         type: choice
-        options: [compare, five]
+        options: [compare, five, full]
         default: compare
       sample:
         description: "Joueurs par championnat"
@@ -13,14 +13,14 @@ on:
         options: ["20", "200"]
         default: "20"
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: scrape-weekly
   cancel-in-progress: false
 jobs:
   benchmark:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,6 +35,8 @@ jobs:
         env:
           BENCHMARK_PROFILE: ${{ inputs.profile }}
           BENCHMARK_SAMPLE: ${{ inputs.sample }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: python -u scripts/benchmark_collection.py
       - name: Conserver les mesures et les échantillons isolés
         if: always()

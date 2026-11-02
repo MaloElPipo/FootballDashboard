@@ -76,6 +76,13 @@ TM_HEADERS = {
 TIMEOUT = 20
 PAUSE_MIN = 0.10
 PAUSE_MAX = 0.40
+# Collecte hebdomadaire : TM_PAUSE_MIN/MAX imposent la MÊME cadence partagée que
+# les carrières (pause sérialisée entre workers). Sans ces variables, les outils
+# historiques gardent leur comportement.
+_SHARED_PACE = "TM_PAUSE_MIN" in os.environ and "TM_PAUSE_MAX" in os.environ
+if _SHARED_PACE:
+    PAUSE_MIN, PAUSE_MAX = tm_waf.pace_from_env((1.0, 1.5))
+_pace_lock = threading.Lock()
 
 # ============================================================
 # HTTP helpers
@@ -168,6 +175,10 @@ def _fetch_html(url: str, timeout: int = TIMEOUT) -> str:
 
 
 def _polite_pause():
+    if _SHARED_PACE:
+        with _pace_lock:
+            time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
+        return
     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
 
 

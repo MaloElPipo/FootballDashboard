@@ -55,6 +55,9 @@ def validate(state):
 def due_codes(state, now):
     if state["status"] != "active":
         return []
+    # Campaign-wide hold after a source refusal: no league, no session, no probe.
+    if state.get("hold_until", 0) > now:
+        return []
     return [c for c, r in state["leagues"].items()
             if r["state"] in {"pending", "retry"} and r["due"] <= now
             and (state.get("parallel") or r["attempts"] < MAX_ATTEMPTS)]

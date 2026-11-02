@@ -86,6 +86,66 @@ class AccessRefused(RuntimeError):
     """Source refusal: never try another browser/session automatically."""
 
 
+# Cadence commune : jamais plus de deux requêtes par seconde en moyenne (pause
+# partagée entre workers), quelle que soit la valeur demandée par variable.
+# Le palier courant est choisi par l'orchestrateur (0,8 à 2,0 req/s).
+PACE_FLOOR_MEAN = 0.5
+PACE_FLOOR_MIN = 0.4
+
+
+def pace_from_env(default: tuple[float, float]) -> tuple[float, float]:
+    """(min, max) de la pause partagée ; défaut si absent, invalide ou trop rapide."""
+    raw_min = os.environ.get("TM_PAUSE_MIN")
+    raw_max = os.environ.get("TM_PAUSE_MAX")
+    if raw_min is None or raw_max is None:
+        return default
+    try:
+        low, high = float(raw_min), float(raw_max)
+    except ValueError:
+        return default
+    if not (PACE_FLOOR_MIN <= low <= high <= 5.0) or (low + high) / 2 < PACE_FLOOR_MEAN:
+        return default
+    return low, high
+
+
+def _shared_token_path():
+    """Optional runner-local file shared by the subprocesses of ONE run.
+
+    One browser session per run instead of one per league and per step. The
+    token is never logged or committed; the coordinator deletes the file.
+    """
+    value = os.environ.get("TM_WAF_TOKEN_FILE", "").strip()
+    return value or None
+
+
+def _read_shared_token() -> str | None:
+    path = _shared_token_path()
+    if not path:
+        return None
+    try:
+        with open(path, encoding="utf-8") as stream:
+            return stream.read().strip() or None
+    except OSError:
+        return None
+
+
+def _write_shared_token(value: str) -> None:
+    path = _shared_token_path()
+    if not path or not value:
+        return
+    temporary = f"{path}.{os.getpid()}.tmp"
+    try:
+        fd = os.open(temporary, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+        with os.fdopen(fd, "w", encoding="utf-8") as stream:
+            stream.write(value)
+        os.replace(temporary, path)
+    except OSError:
+        try:
+            os.unlink(temporary)
+        except OSError:
+            pass
+
+
 def _launch_and_get_token(timeout_ms: int = 45000, settle_ms: int = 6000,
                           deadline: float | None = None) -> str | None:
     """Lance Chromium, charge la home TM, résout le challenge, extrait le token.
@@ -196,6 +256,12 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None,
         if force_refresh and stale is not None and _token != stale:
             # Un autre worker a déjà remplacé le token périmé : on l'utilise.
             return _token
+        # Jeton déjà obtenu (ou rafraîchi) par un autre processus du même run :
+        # on le réutilise au lieu d'ouvrir une nouvelle session navigateur.
+        shared = _read_shared_token()
+        if shared is not None and shared != stale and (_token is None or force_refresh):
+            _token = shared
+            return _token
         if _gave_up:
             # Playwright durablement cassé sur ce processus : on n'insiste plus.
             return _token
@@ -209,6 +275,7 @@ def get_waf_token(force_refresh: bool = False, stale: str | None = None,
         if new is not None:
             _token = new
             _consecutive_failures = 0
+            _write_shared_token(new)
         else:
             _consecutive_failures += 1
             if _consecutive_failures >= _MAX_CONSECUTIVE_FAILURES:

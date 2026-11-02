@@ -146,6 +146,14 @@ class AdminTests(unittest.TestCase):
         self.assertEqual(state["leagues"]["fr1"]["attempts"], 1)
         self.assertEqual(q.due_codes(state, 100), [])
 
+    def test_explicit_reconciliation_restarts_the_hold_ladder(self):
+        q.result(self.store.state, "fr1", "access_blocked", 0)
+        self.store.state.update(parallel=True, refusals=4, hold_until=50)
+        state = self.apply(self.report(ack=True))
+        self.assertEqual(state["status"], "active")
+        self.assertEqual(state["refusals"], 0)
+        self.assertNotIn("hold_until", state)
+
     def test_publication_cannot_clear_source_hold(self):
         self.prepare_publication()
         item = self.store.state["leagues"]["fr1"]

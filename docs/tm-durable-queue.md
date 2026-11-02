@@ -22,7 +22,59 @@ Un run encore actif reste propriétaire : on attend, sans l'interrompre ni
 réinitialiser sa file. Un run annulé/expiré ou une tentative interrompue suspend
 la campagne. Un redémarrage manuel du même run n'accorde pas une seconde collecte.
 
+## Collecte hebdomadaire en un seul flux (novembre 2026)
+
+Remplace les cinq collecteurs parallèles et leur reprise toutes les 120 s, qui
+multipliaient le débit vers une seule IP et relançaient des sessions juste
+après un refus. Le volume hebdomadaire mesuré sur les 78 effectifs est de
+53 241 requêtes (50 290 fiches carrière + 2 951 pages effectifs) : environ
+18,5 h de collecte à 0,8 requête/s, 9,9 h à 1,5 et 7,4 h à 2,0, réparties sur
+plusieurs runs enchaînés par la file.
+
+- **Un seul flux** : ligues l'une après l'autre, effectifs puis carrières,
+  dans l'ordre de `leagues_master` (priorité). Une seule cadence partagée pour
+  toutes les requêtes Transfermarkt, pages effectifs comprises.
+- **Paliers de débit** (`pace` dans la file) : 0,8 → 1,0 → 1,2 → 1,5 →
+  2,0 requête/s. Un palier de plus après **6 h cumulées de collecte sans
+  refus** au palier courant ; au refus, **un palier de moins**, qui devient le
+  plafond pendant **2 semaines**. Les paliers passent d'une campagne
+  hebdomadaire à la suivante. Plafond absolu codé : 2,0 requêtes/s (les
+  collecteurs ignorent toute pause plus courte). `TM_RATE_CEILING` ne peut que
+  l'abaisser (`0.8` fige le palier initial). Chaque ligue garde le débit
+  utilisé (`rate`) et l'historique des changements est conservé (20 derniers).
+- **Un seul jeton par run** : les sous-processus partagent le cookie WAF via
+  un fichier local au runner (`TM_WAF_TOKEN_FILE`, droits 600, supprimé en fin
+  de collecte, jamais journalisé ni versionné). Plus d'une session navigateur
+  par ligue et par étape.
+- **Refus (75)** : arrêt de tout le trafic et pause de **toute la campagne**,
+  2 h, puis 6 h, puis 24 h (`hold_until`, `refusals` dans la file). Pendant la
+  pause, aucune ligue n'est éligible : le passage horaire s'arrête avant
+  l'installation du navigateur. À l'échéance, la première tentative sert de
+  sonde unique. Un refus après la troisième pause suspend la campagne
+  (`access_hold`) pour l'opérateur. Une ligue réussie remet le compteur à zéro.
+  On ne change jamais de ligue pour esquiver un refus.
+- **Échéance du run (76)** : la ligue reprend au run suivant depuis ses
+  checkpoints, sans pénalité ni pause. **Réseau temporaire (77)** : même run,
+  10 min plus tard, les autres ligues continuent.
+- **Dédoublonnage de la semaine** : un joueur présent dans plusieurs ligues
+  n'est demandé qu'une fois. À chaque ligue validée, ses réponses partagées
+  avec des ligues encore ouvertes sont publiées dans un asset
+  `seed-<ligue>.ndjson.gz` de la release `tm-checkpoints-<campagne>` (extension
+  invisible pour `Checkpoints` et la compaction). Les ligues suivantes les
+  copient dans leur propre campagne **avec leur date d'origine**. Un échec de
+  partage ne coûte que des requêtes, jamais une ligue validée ; une ligue
+  collectée sans asset lisible est repartagée depuis sa propre campagne.
+- **Saison close** : la saison précédente n'est plus retéléchargée une fois que
+  la nouvelle a des apparitions (55 ligues automne-printemps). Les ligues à
+  calendrier annuel gardent les deux saisons.
+- `TM_COLLECTION_HOURS` (défaut 3, maximum 4,5) règle la collecte par run ;
+  le workflow utilise 4,5 h (run #102 : 3 h 06 au total pour 3 h de collecte,
+  soit environ 6 min d'installation et de publication).
+
 ## Reprises et arrêts
+
+Les règles ci-dessous restent celles de l'ancien chemin séquentiel
+(`collection_queue.py collect`, non utilisé par le workflow hebdomadaire).
 
 - Maximum **4 tentatives par ligue**, effectifs et carrière compris.
 - Budget épuisé (76) ou erreur réseau temporaire explicitement classifiée (77) :

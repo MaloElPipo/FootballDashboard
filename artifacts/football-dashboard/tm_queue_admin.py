@@ -123,6 +123,10 @@ def transition(report, now, admin_run):
                 raise ValueError("Publication evidence must match before reconciliation")
         state["status"] = ("complete" if all(i["state"] == "done"
                            for i in state["leagues"].values()) else "active")
+        if state["status"] == "active" and not state["access_hold"]:
+            # Explicit operator decision: the automatic hold ladder starts afresh.
+            state["refusals"] = 0
+            state.pop("hold_until", None)
     if state["owner"]:
         state["last_owner"] = state["owner"]
     state["owner"] = None

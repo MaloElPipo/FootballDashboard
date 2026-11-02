@@ -77,8 +77,8 @@ TM_HEADERS = {
 }
 
 TIMEOUT = 30
-PAUSE_MIN = 1.0
-PAUSE_MAX = 1.5
+# Défaut 1,0-1,5 s partagés (≈ 0,8 req/s) ; TM_PAUSE_MIN/MAX bornés par tm_waf.
+PAUSE_MIN, PAUSE_MAX = tm_waf.pace_from_env((1.0, 1.5))
 DEFAULT_WORKERS = 2
 
 # Fenêtre matches récents : max(N derniers matchs, M derniers mois)

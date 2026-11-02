@@ -41,11 +41,21 @@ concurrency:
 
 jobs:
   scrape-and-publish:
-    runs-on: ubuntu-latest
+    # Image épinglée : ubuntu-latest bascule vers Ubuntu 26 (annonce GitHub du
+    # 19/10/2026), risque pour « playwright install --with-deps ».
+    runs-on: ubuntu-24.04
     timeout-minutes: 350
     env:
       GH_TOKEN: ${{ github.token }}
       TM_CHECKPOINT_REMOTE: github
+      # Un seul flux, débit par paliers automatiques 0,8 → 1,0 → 1,2 → 1,5 →
+      # 2,0 req/s (montée après 6 h sans refus, recul d'un palier au refus).
+      # Ce réglage ne peut que BAISSER le plafond absolu codé à 2,0 ;
+      # mettre "0.8" fige la collecte au palier initial.
+      TM_RATE_CEILING: "2.0"
+      # Collecte par run avant sauvegarde/publication (max 4,5 h, timeout 350 min ;
+      # run #102 : 3 h de collecte pour 3 h 06 au total).
+      TM_COLLECTION_HOURS: "4.5"
     steps:
       - uses: actions/checkout@v4
         with:

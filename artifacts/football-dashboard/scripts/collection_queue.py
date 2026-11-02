@@ -91,6 +91,11 @@ def prepare(store, run_id, campaign="", selection="", create=False, refresh=True
             return None  # GitHub rerun of a completed campaign, not a new week
         codes = [l["code_tm"].lower() for l in select_leagues(selection)]
         state = new_campaign("run-" + run_id, codes, refresh)
+        # The source's tolerance does not reset on Mondays: keep the rate ladder.
+        from scripts.parallel_collection import latest_pace
+        pace = latest_pace(queues)
+        if pace:
+            state["pace"] = pace
         release_id = store.create(state)
     else:
         return None

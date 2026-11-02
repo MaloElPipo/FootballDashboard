@@ -81,7 +81,8 @@ def collect(store, release_id, state, root, leagues, clock=time.time,
         while active or (state["status"] == "active" and clock() < stop_at):
             eligible = [c for c, i in state["leagues"].items()
                         if i["state"] in {"pending", "retry"} and i["due"] <= clock()]
-            while (eligible and len(active) < WIDTH and state["status"] == "active"
+            launch_batch = not active
+            while (launch_batch and eligible and len(active) < WIDTH and state["status"] == "active"
                    and clock() < stop_at and clock() >= cooldown_until):
                 code = eligible.pop(0)
                 item = state["leagues"][code]
@@ -127,3 +128,5 @@ def collect(store, release_id, state, root, leagues, clock=time.time,
                     print(f"COLLECTOR_ERROR {code}: {type(exc).__name__}: {exc}", flush=True)
                 store.save(release_id, state)
                 print(f"LEAGUE_RESULT {code} {item['state']}", flush=True)
+            if finished and not active:
+                cooldown_until = max(cooldown_until, clock() + COOLDOWN)

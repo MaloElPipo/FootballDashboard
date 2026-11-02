@@ -35,18 +35,24 @@ class ParallelTests(unittest.TestCase):
             self.assertEqual((dest / "1.json").read_text(), "newer")
 
     def test_five_parallel_isolated_and_one_queue_writer(self):
-        codes = [f"l{i}" for i in range(5)]
+        codes = [f"l{i}" for i in range(6)]
         state = q.new_campaign("week", codes, True)
         state["owner"] = "1"
         barrier = threading.Barrier(5, timeout=5)
         calls = []
+        now = [0]
+        starts = []
+        def sleep(seconds):
+            now[0] += seconds
         main = threading.get_ident()
         store = Mock()
         store.save.side_effect = lambda *a: self.assertEqual(threading.get_ident(), main)
         def run(cmd, **kwargs):
             if "tm_player_career.py" in cmd:
                 calls.append(cmd)
-                barrier.wait()
+                starts.append(now[0])
+                if cmd[cmd.index("--league") + 1] != "l5":
+                    barrier.wait()
                 return Mock(returncode=0)
             return Mock(returncode=0)
         def metadata(_, code):
@@ -59,9 +65,11 @@ class ParallelTests(unittest.TestCase):
              patch("tm_player_career.load_player_meta_from_league_csv", return_value={"1": {}}):
             checkpoints.return_value._all_records.return_value = []
             p.collect(store, 1, state, Path(tmp),
-                      {c: {"code_tm": c.upper(), "slug": c} for c in codes}, run=run)
-        self.assertEqual(len(calls), 5)
-        self.assertEqual(len({c[c.index("--campaign")+1] for c in calls}), 5)
+                      {c: {"code_tm": c.upper(), "slug": c} for c in codes}, run=run,
+                      clock=lambda: now[0], sleep=sleep)
+        self.assertEqual(len(calls), 6)
+        self.assertEqual(starts, [0, 0, 0, 0, 0, 120])
+        self.assertEqual(len({c[c.index("--campaign")+1] for c in calls}), 6)
         self.assertTrue(all(c[c.index("--budget-seconds")+1] == "0" for c in calls))
         self.assertTrue(all(i["state"] == "collected" for i in state["leagues"].values()))
         q.validate(state)

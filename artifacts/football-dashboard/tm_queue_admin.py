@@ -111,12 +111,12 @@ def transition(report, now, admin_run):
             elif item["state"] in {"running", "suspended"}:
                 if item.get("expected"):
                     raise ValueError("Publication evidence must match before reconciliation")
-                if item["attempts"] >= MAX_ATTEMPTS:
+                if item["attempts"] >= MAX_ATTEMPTS and not state.get("parallel"):
                     item["state"] = "exhausted"
                 else:
                     # Unknown/interrupted attempt remains consumed; no immediate retry.
-                    item.update(state="retry", due=max(item.get("due", 0),
-                                now + BACKOFF[max(0, item["attempts"] - 1)]))
+                    delay = 120 if state.get("parallel") else BACKOFF[max(0, item["attempts"] - 1)]
+                    item.update(state="retry", due=max(item.get("due", 0), now + delay))
             elif item["state"] == "collected":
                 raise ValueError("Unsealed collection: close or repair publication first")
             elif item["state"] == "publishing":

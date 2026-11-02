@@ -13,6 +13,13 @@ import tm_collection_queue as q
 
 
 class ParallelTests(unittest.TestCase):
+    def test_zero_budget_is_accepted_without_source_request(self):
+        import tm_player_career as career
+        with patch.object(sys, "argv", ["scraper", "--league", "l1", "--budget-seconds", "0"]), \
+             patch.object(career, "collect") as collect:
+            career.cli()
+        self.assertEqual(collect.call_args.args[0].budget_seconds, 0)
+
     def test_seed_keeps_dates_filters_ids_and_never_overwrites(self):
         record = {"player_id": "1", "campaign": "old", "collected_at": "original"}
         source = Mock()

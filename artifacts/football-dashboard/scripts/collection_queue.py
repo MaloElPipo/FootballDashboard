@@ -214,7 +214,7 @@ def main():
                 summary.write(f"\n## Campagne {state['campaign']} — {state['status']}\n")
                 for code, item in state["leagues"].items():
                     summary.write(f"- {code}: {item['state']}, "
-                                  f"{item['attempts']}/4 tentative(s), "
+                                  f"{item['attempts']} tentative(s), "
                                   f"{item.get('reason', '')}\n")
         with open(os.environ["GITHUB_OUTPUT"], "a") as output:
             output.write(f"ready={'true' if prepared else 'false'}\n")

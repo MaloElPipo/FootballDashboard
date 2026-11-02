@@ -685,10 +685,10 @@ def cli():
     parser.add_argument("--checkpoint-remote", action="store_true",
                         default=os.getenv("TM_CHECKPOINT_REMOTE") == "github")
     parser.add_argument("--budget-seconds", type=float, default=240,
-                        help="Budget réseau par tentative, maximum 1200 s (défaut 240 s)")
+                        help="Budget réseau par tentative ; 0 = sans coupure par ligue")
     args = parser.parse_args()
-    if not 0 < args.budget_seconds <= 1200:
-        parser.error("--budget-seconds must be > 0 and <= 1200")
+    if not 0 <= args.budget_seconds <= 1200:
+        parser.error("--budget-seconds must be >= 0 and <= 1200")
     args.campaign = args.campaign or uuid.uuid4().hex
 
     # A durable incomplete attempt also covers process timeouts/interruptions.
@@ -778,7 +778,14 @@ def _collect(args, transaction):
         "players": len(player_meta_by_id),
         "reused": len(player_meta_by_id) - len(missing), "missing": len(missing),
     }))
-    _deadline = time.monotonic() + getattr(args, "budget_seconds", 240)
+    budget = getattr(args, "budget_seconds", 240)
+    _deadline = time.monotonic() + budget if budget else None
+    # Shared runner deadline, not a twenty-minute per-league cutoff. Leave
+    # time for durable flush and publication before GitHub's job timeout.
+    if os.getenv("TM_COLLECTION_DEADLINE"):
+        runner_deadline = time.monotonic() + max(
+            0, float(os.environ["TM_COLLECTION_DEADLINE"]) - time.time())
+        _deadline = min(_deadline, runner_deadline) if _deadline else runner_deadline
     warmup_started = time.monotonic()
     try:
         if missing and _within_budget():

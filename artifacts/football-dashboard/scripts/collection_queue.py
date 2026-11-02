@@ -165,7 +165,7 @@ def seal(store, release_id, state, full=FULL, current=CURRENT,
         if item["state"] != "collected":
             continue
         evidence = read_metadata(full, code).get("last_success", {})
-        if (evidence.get("campaign") != state["campaign"]
+        if (evidence.get("campaign") != item.get("checkpoint_campaign", state["campaign"])
                 or evidence.get("sha256") != fingerprints(full, code)):
             raise ValueError("Collection evidence mismatch")
         from scripts.make_current_season import detect_current_season, filter_csv_by_season
@@ -223,7 +223,10 @@ def main():
         return
     release_id, state = load_owned(store, os.environ["TM_CAMPAIGN_ID"], run_id)
     if args.command == "collect":
-        collect(store, release_id, state)
+        from scripts.parallel_collection import collect as parallel_collect
+        require_access_clearance()
+        parallel_collect(store, release_id, state, ROOT,
+                         {l["code_tm"].lower(): l for l in select_leagues("")})
     elif args.command == "seal":
         seal(store, release_id, state)
     else:

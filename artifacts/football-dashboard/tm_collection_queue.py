@@ -47,7 +47,7 @@ def validate(state):
     for code, item in state["leagues"].items():
         if not re.fullmatch(r"[a-z0-9_-]+", code) or item["state"] not in STATES:
             raise ValueError("Invalid league state")
-        if not 0 <= item["attempts"] <= MAX_ATTEMPTS:
+        if not 0 <= item["attempts"] or (not state.get("parallel") and item["attempts"] > MAX_ATTEMPTS):
             raise ValueError("Invalid attempt count")
     return state
 
@@ -57,7 +57,7 @@ def due_codes(state, now):
         return []
     return [c for c, r in state["leagues"].items()
             if r["state"] in {"pending", "retry"} and r["due"] <= now
-            and r["attempts"] < MAX_ATTEMPTS]
+            and (state.get("parallel") or r["attempts"] < MAX_ATTEMPTS)]
 
 
 def suspend(state, reason):

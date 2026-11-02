@@ -131,7 +131,7 @@ def collect(store, release_id, state, run=subprocess.run, clock=time.time):
         if not item["squad_done"] or not squad.exists():
             league = leagues[code]
             year = time.gmtime().tm_year
-            cmd = [sys.executable, "tm_league_scraper.py", "--comp", code,
+            cmd = [sys.executable, "tm_league_scraper.py", "--comp", league["code_tm"],
                    "--slug", league["slug"], "--workers", "2",
                    "--seasons", f"{year-1},{year}", "--merge", "--out", str(squad)]
             proc = run(cmd, cwd=ROOT, timeout=1200, check=False)

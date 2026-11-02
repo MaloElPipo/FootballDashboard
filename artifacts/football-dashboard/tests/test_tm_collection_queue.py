@@ -86,6 +86,18 @@ class QueueTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             runner.require_access_clearance()
 
+    def test_squad_request_uses_official_case_not_queue_key(self):
+        state = q.new_campaign("case-test", ["l1"], refresh=True)
+        state["owner"] = "1"
+        store = Store(state)
+        run = Mock(return_value=Mock(returncode=1))
+        with patch.object(runner, "select_leagues", return_value=[
+                {"code_tm": "L1", "slug": "1-bundesliga"}]):
+            runner.collect(store, 1, state, run=run)
+        command = run.call_args.args[0]
+        self.assertEqual(command[command.index("--comp") + 1], "L1")
+        self.assertTrue(command[command.index("--out") + 1].endswith("/l1.csv"))
+
     def test_backoff_bounded_and_no_duplicate_attempt(self):
         now = 0
         for attempt in range(q.MAX_ATTEMPTS):

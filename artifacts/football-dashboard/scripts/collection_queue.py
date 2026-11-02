@@ -144,7 +144,7 @@ def collect(store, release_id, state, run=subprocess.run, clock=time.time):
             item["squad_done"] = True
             store.save(release_id, state)
         proc = run([sys.executable, "tm_player_career.py", "--league", code,
-                    "--workers", "2", "--budget-seconds", "240"],
+                    "--workers", "2", "--budget-seconds", "1200"],
                    cwd=ROOT, timeout=1800, check=False)
         outcome = classify(proc.returncode, read_metadata(FULL, code))
         if outcome == "success":

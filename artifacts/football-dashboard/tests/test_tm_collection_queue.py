@@ -98,6 +98,20 @@ class QueueTests(unittest.TestCase):
         self.assertEqual(command[command.index("--comp") + 1], "L1")
         self.assertTrue(command[command.index("--out") + 1].endswith("/l1.csv"))
 
+    def test_weekly_budget_allows_full_league_with_shutdown_margin(self):
+        state = q.new_campaign("budget-test", ["l1"], refresh=True)
+        state["owner"] = "1"
+        store = Store(state)
+        run = Mock(side_effect=[Mock(returncode=0), Mock(returncode=76)])
+        with patch.object(runner, "select_leagues", return_value=[
+                {"code_tm": "L1", "slug": "1-bundesliga"}]):
+            runner.collect(store, 1, state, run=run)
+        command = run.call_args.args[0]
+        budget = int(command[command.index("--budget-seconds") + 1])
+        self.assertEqual(budget, 1200)
+        self.assertGreater(run.call_args.kwargs["timeout"], budget)
+        self.assertEqual(state["leagues"]["l1"]["state"], "retry")
+
     def test_backoff_bounded_and_no_duplicate_attempt(self):
         now = 0
         for attempt in range(q.MAX_ATTEMPTS):

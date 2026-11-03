@@ -59,6 +59,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Un run mis en file derrière un autre (verrou scrape-weekly) doit partir de
+          # l'état ACTUEL de main, pas du commit qui l'a déclenché : sinon le commit de
+          # données du run précédent le fait échouer au « git pull --rebase » final
+          # (conflit sur <ligue>_collection.json, run #106 du 03/11/2026).
+          ref: main
           fetch-depth: 1
       - uses: actions/setup-python@v5
         with:

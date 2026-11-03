@@ -8,6 +8,9 @@ import time
 
 from tm_collection_queue import GitHubStore, MAX_ATTEMPTS, BACKOFF, digest, zip_matches
 
+REQUEUE = "requeue-unpublished"
+ACTIONS = ("close", "reconcile", "recover-publication", REQUEUE)
+
 
 def fingerprint(value):
     return digest(json.dumps(value, sort_keys=True, separators=(",", ":")).encode())
@@ -82,7 +85,7 @@ def transition(report, now, admin_run):
                or any(i.get("reason") == "access_blocked"
                       for i in state["leagues"].values()))
     action = report["action"]
-    if action not in {"close", "reconcile", "recover-publication"}:
+    if action not in ACTIONS:
         raise ValueError("Unknown operation")
     if action == "recover-publication":
         from tm_publication_recovery import candidates
@@ -92,7 +95,10 @@ def transition(report, now, admin_run):
             raise ValueError("Recovery cannot lift a source refusal")
         if report.get("recovery", {}).get("status") != "validated":
             raise ValueError("Validated collection exports required")
-    if action == "reconcile":
+    reopens = action in {"reconcile", REQUEUE}
+    if action == REQUEUE and state["status"] != "suspended":
+        raise ValueError("Only a suspended campaign can be requeued")
+    if reopens:
         if state["status"] == "closed" and not state.get("access_hold"):
             raise ValueError("Closed campaign cannot be reopened")
         if blocked and not report["acknowledge_refusal"]:
@@ -100,10 +106,11 @@ def transition(report, now, admin_run):
         if report["other_active_campaigns"] and state["status"] == "suspended":
             raise ValueError("Another campaign is active")
     state["access_hold"] = bool(blocked and not report["acknowledge_refusal"])
+    requeued = []
     if action == "close":
         # Preserve every league as-is: closure is abandonment, never success.
         state["status"] = "closed"
-    elif action == "reconcile" and state["status"] != "closed":
+    elif reopens and state["status"] != "closed":
         for code, item in state["leagues"].items():
             proof = report["public_proofs"][code]
             if all(proof[k]["status"] == "match" for k in ("all", "current")):
@@ -118,9 +125,20 @@ def transition(report, now, admin_run):
                     delay = 120 if state.get("parallel") else BACKOFF[max(0, item["attempts"] - 1)]
                     item.update(state="retry", due=max(item.get("due", 0), now + delay))
             elif item["state"] == "collected":
-                raise ValueError("Unsealed collection: close or repair publication first")
+                if action != REQUEUE or item.get("expected"):
+                    raise ValueError("Unsealed collection: close or repair publication first")
+                if item["attempts"] >= MAX_ATTEMPTS and not state.get("parallel"):
+                    raise ValueError(f"{code}: attempt budget exhausted; close instead")
+                # Exports lost with the runner but checkpoints retained: the normal
+                # collector rebuilds the league from them. Nothing is declared a
+                # success here and no cache is promoted to a validated export.
+                item.update(state="retry", due=max(item.get("due", 0), now),
+                            reason="exports_lost")
+                requeued.append(code)
             elif item["state"] == "publishing":
                 raise ValueError("Publication evidence must match before reconciliation")
+        if action == REQUEUE and not requeued:
+            raise ValueError("No unpublished collected league to requeue")
         state["status"] = ("complete" if all(i["state"] == "done"
                            for i in state["leagues"].values()) else "active")
         if state["status"] == "active" and not state["access_hold"]:
@@ -142,6 +160,8 @@ def transition(report, now, admin_run):
     })
     if action == "recover-publication":
         state["administration"][-1]["recovery"] = report["recovery"]
+    if action == REQUEUE:
+        state["administration"][-1]["requeued"] = requeued
     return state
 
 
@@ -165,8 +185,7 @@ def apply(store, report, confirmation, admin_run, now=None, exports=None, bundle
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--campaign", required=True)
-    parser.add_argument("--action", choices=["close", "reconcile", "recover-publication"],
-                        default="reconcile")
+    parser.add_argument("--action", choices=list(ACTIONS), default="reconcile")
     parser.add_argument("--exports", type=Path)
     parser.add_argument("--bundle", type=Path)
     parser.add_argument("--resolution", default="")
@@ -197,6 +216,10 @@ def main():
         try:
             proposed = transition(report, time.time(), "simulation")
             print("Simulation only; proposed status:", proposed["status"])
+            if report["action"] == REQUEUE:
+                print("Simulation only; leagues returned to retry (rebuilt from retained "
+                      "checkpoints, squads re-fetched if missing):",
+                      ", ".join(proposed["administration"][-1]["requeued"]))
         except ValueError as error:
             print("Simulation only; operation refused:", error)
 

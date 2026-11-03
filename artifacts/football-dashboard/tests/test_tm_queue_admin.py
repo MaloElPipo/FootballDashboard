@@ -1,4 +1,5 @@
 """Administration tests: fake GitHub and archives only, never source traffic."""
+import contextlib
 import copy
 import io
 import json
@@ -232,6 +233,95 @@ class AdminTests(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError, "locked"):
                     admin.main()
             self.assertEqual(self.store.writes, 0)
+
+    def unpublished(self, **extra):
+        """Run ended before sealing: league collected, exports gone with the runner."""
+        q.suspend(self.store.state, "publication_not_prepared")
+        self.store.state["parallel"] = True
+        item = self.store.state["leagues"]["fr1"]
+        item.update(state="collected", reason="success", **extra)
+        return item
+
+    def test_requeue_unpublished_rebuilds_a_lost_collection_through_the_collector(self):
+        self.unpublished()
+        state = self.apply(self.report("requeue-unpublished"))
+        item = state["leagues"]["fr1"]
+        self.assertEqual((item["state"], item["reason"], item["attempts"]),
+                         ("retry", "exports_lost", 1))
+        self.assertEqual(state["status"], "active")
+        self.assertEqual(q.due_codes(state, 100), ["fr1"])
+        entry = state["administration"][-1]
+        self.assertEqual((entry["action"], entry["requeued"]),
+                         ("requeue-unpublished", ["fr1"]))
+        self.assertEqual(state["refusals"], 0)
+        self.assertNotIn("hold_until", state)
+
+    def test_plain_reconcile_still_refuses_an_unsealed_collection(self):
+        self.unpublished()
+        with self.assertRaisesRegex(ValueError, "Unsealed collection"):
+            self.apply(self.report())
+        self.assertEqual(self.store.writes, 0)
+
+    def test_requeue_never_touches_sealed_exports_or_an_empty_selection(self):
+        sealed = {"all": {"fr1_career.csv": "0" * 64}}
+        item = self.unpublished(expected=sealed)
+        with self.assertRaisesRegex(ValueError, "Unsealed collection"):
+            self.apply(self.report("requeue-unpublished"))
+        item.pop("expected")
+        item.update(state="suspended")
+        with self.assertRaisesRegex(ValueError, "No unpublished"):
+            self.apply(self.report("requeue-unpublished"))
+        item.update(state="publishing", expected=sealed, publication_started=0)
+        with self.assertRaisesRegex(ValueError, "Publication evidence"):
+            self.apply(self.report("requeue-unpublished"))
+        self.assertEqual(self.store.writes, 0)
+
+    def test_requeue_keeps_the_refusal_decision_and_needs_a_suspended_campaign(self):
+        self.unpublished()
+        self.store.state["leagues"]["l1"] = {"state": "retry", "attempts": 1, "due": 0,
+                                             "squad_done": True, "reason": "access_blocked"}
+        with self.assertRaisesRegex(ValueError, "acknowledgement"):
+            self.apply(self.report("requeue-unpublished"))
+        state = self.apply(self.report("requeue-unpublished", ack=True))
+        self.assertEqual(state["leagues"]["fr1"]["state"], "retry")
+        self.assertEqual(state["leagues"]["l1"]["state"], "retry")
+        self.assertEqual(state["status"], "active")
+        self.assertFalse(state["access_hold"])
+        self.store.state["status"] = "closed"
+        with self.assertRaisesRegex(ValueError, "can be requeued"):
+            self.apply(self.report("requeue-unpublished", ack=True))
+
+    def test_requeue_respects_the_attempt_budget_of_sequential_campaigns(self):
+        item = self.unpublished()
+        self.store.state["parallel"] = False
+        item["attempts"] = q.MAX_ATTEMPTS
+        with self.assertRaisesRegex(ValueError, "attempt budget"):
+            self.apply(self.report("requeue-unpublished"))
+        self.assertEqual(self.store.writes, 0)
+
+    def test_requeue_simulation_names_the_leagues_and_writes_nothing(self):
+        self.unpublished()
+        with tempfile.TemporaryDirectory() as tmp:
+            args = ["admin", "--campaign", "test", "--action", "requeue-unpublished",
+                    "--resolution", "Exports lost with the runner",
+                    "--output", str(Path(tmp) / "report.json")]
+            out = io.StringIO()
+            with patch.object(admin, "GitHubStore", return_value=self.store), \
+                    patch.object(sys, "argv", args), contextlib.redirect_stdout(out):
+                admin.main()
+        printed = out.getvalue()
+        self.assertIn("proposed status: active", printed)
+        self.assertIn("fr1", printed.split("squads re-fetched if missing):")[1])
+        self.assertEqual(self.store.writes, 0)
+
+    def test_queued_collector_runs_start_from_current_main_and_admin_offers_requeue(self):
+        root = Path(__file__).resolve().parents[3]
+        collector = (root / ".github/workflows/scrape-weekly.yml").read_text()
+        administration = (root / ".github/workflows/tm-queue-admin.yml").read_text()
+        first_checkout = collector.split("- uses: actions/checkout@v4", 1)[1].split("- uses:", 1)[0]
+        self.assertIn("ref: main", first_checkout)
+        self.assertIn("requeue-unpublished", administration)
+        self.assertIn(admin.REQUEUE, admin.ACTIONS)
 
     def test_workflow_uses_collector_lock_and_no_collection_commands(self):
         root = Path(__file__).resolve().parents[3]

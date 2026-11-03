@@ -70,6 +70,12 @@ plusieurs runs enchaînés par la file.
 - `TM_COLLECTION_HOURS` (défaut 3, maximum 4,5) règle la collecte par run ;
   le workflow utilise 4,5 h (run #102 : 3 h 06 au total pour 3 h de collecte,
   soit environ 6 min d'installation et de publication).
+- **Départ de `main`** : le collecteur fait son checkout sur `main` (`ref: main`) et non
+  sur le commit qui l'a déclenché. Un run planifié mis en file derrière un autre
+  (verrou `scrape-weekly`) repart ainsi de l'état actuel, commit de données du run
+  précédent compris. Sans cela, le `git pull --rebase` final échouait sur un fichier
+  modifié des deux côtés (`<ligue>_collection.json` d'une ligue interrompue puis
+  reprise) : run #106 du 3 novembre 2026, 21 ligues collectées et aucune publiée.
 
 ## Reprises et arrêts
 
@@ -171,6 +177,19 @@ les deux ZIP correspondent aux empreintes enregistrées. Une collecte non scell�
 doit être réparée avant réconciliation ou clôturée, jamais déclarée réussie.
 Une autre campagne active empêche la réouverture d'une suspension.
 
+`requeue-unpublished` (campagne **suspendue** uniquement, même verrou et même
+confirmation `ADMIN-…`) traite une collecte validée dont les exports ont disparu avec
+le runner avant d'être poussés (suspension `publication_not_prepared`). Les ligues
+`collected` sans `expected` repassent en `retry` (motif `exports_lost`), sans tentative
+consommée ni échéance d'attente ; le collecteur normal les reconstruit à partir de leurs
+sauvegardes `tm-checkpoints-*` (les fiches déjà acquises ne sont pas redemandées, les
+effectifs absents du dépôt le sont) et produit sa propre preuve de collecte. Rien n'est
+déclaré réussi : la publication passe ensuite par `seal`, comme pour toute ligue.
+Refus si une ligue est déjà scellée (`expected`) ou `publishing` (utiliser
+`recover-publication`), si aucune ligue n'est concernée, ou si le plafond de tentatives
+d'une campagne séquentielle est atteint. La décision sur un refus Transfermarkt reste
+celle de `reconcile` ; le journal `administration` conserve la liste `requeued`.
+
 Un refus Transfermarkt ne peut être réconcilié sans
 `acknowledge_refusal=true`, décision distincte incluse dans la confirmation.
 Sur une campagne déjà clôturée, cette décision lève seulement son blocage :
@@ -230,7 +249,10 @@ Si les exports n'ont jamais été persistés avant la perte du runner, cette
 procédure refuse de les inventer ou de reprendre automatiquement le scraping.
 Restaurer d'abord un jeu complet de CSV et sa preuve originale dans un commit
 conservé, puis refaire la simulation. Un cache de réponses seul n'est pas un
-export validé. Si l'envoi de l'artefact échoue après le scellement, conserver
+export validé. Si les réponses des ligues sont conservées dans les sauvegardes de la
+campagne, utiliser plutôt `requeue-unpublished` (voir plus haut) : elle ne promeut
+aucun cache en export validé, elle renvoie les ligues au collecteur normal. Si l'envoi
+de l'artefact échoue après le scellement, conserver
 la suspension : refaire une simulation `recover-publication`, puis confirmer
 son nouveau bilan avec les mêmes exports. Les ligues `publishing` sont acceptées
 uniquement si les deux ZIP reconstruits correspondent aux empreintes déjà

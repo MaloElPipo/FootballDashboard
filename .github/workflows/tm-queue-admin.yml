@@ -9,7 +9,7 @@ on:
       action:
         description: "Opération à simuler"
         type: choice
-        options: [reconcile, close, recover-publication]
+        options: [reconcile, close, recover-publication, requeue-unpublished]
         default: reconcile
       exports_ref:
         description: "Commit contenant les CSV validés et collection_metadata (récupération uniquement)"

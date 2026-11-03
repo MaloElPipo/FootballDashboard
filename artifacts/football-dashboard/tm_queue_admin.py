@@ -6,10 +6,12 @@ import os
 from pathlib import Path
 import time
 
-from tm_collection_queue import GitHubStore, MAX_ATTEMPTS, BACKOFF, digest, zip_matches
+from tm_collection_queue import (GitHubStore, MAX_ATTEMPTS, BACKOFF, digest, zip_matches,
+                                 compact_proofs)
 
 REQUEUE = "requeue-unpublished"
 ACTIONS = ("close", "reconcile", "recover-publication", REQUEUE)
+DEPLOY_GRACE = 1800    # a sealed league younger than this may still be deploying
 
 
 def fingerprint(value):
@@ -136,7 +138,19 @@ def transition(report, now, admin_run):
                             reason="exports_lost")
                 requeued.append(code)
             elif item["state"] == "publishing":
-                raise ValueError("Publication evidence must match before reconciliation")
+                if action != REQUEUE:
+                    raise ValueError("Publication evidence must match before reconciliation")
+                if now - item.get("publication_started", 0) < DEPLOY_GRACE:
+                    raise ValueError(f"{code}: publication may still be deploying; wait")
+                if item["attempts"] >= MAX_ATTEMPTS and not state.get("parallel"):
+                    raise ValueError(f"{code}: attempt budget exhausted; close instead")
+                # Sealed but never deployed (a later step failed): the public ZIPs do
+                # not match, so the collector rebuilds and reseals the league.
+                item.pop("expected", None)
+                item.pop("publication_started", None)
+                item.update(state="retry", due=max(item.get("due", 0), now),
+                            reason="publication_lost")
+                requeued.append(code)
         if action == REQUEUE and not requeued:
             raise ValueError("No unpublished collected league to requeue")
         state["status"] = ("complete" if all(i["state"] == "done"
@@ -156,7 +170,7 @@ def transition(report, now, admin_run):
         "previous_status": report["queue"]["status"],
         "previous_reason": report["queue"].get("reason"),
         "confirmation": report["confirmation"],
-        "runs": report["runs"], "public_proofs": report["public_proofs"],
+        "runs": report["runs"], "public_proofs": compact_proofs(report["public_proofs"]),
     })
     if action == "recover-publication":
         state["administration"][-1]["recovery"] = report["recovery"]

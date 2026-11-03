@@ -185,10 +185,27 @@ consommée ni échéance d'attente ; le collecteur normal les reconstruit à par
 sauvegardes `tm-checkpoints-*` (les fiches déjà acquises ne sont pas redemandées, les
 effectifs absents du dépôt le sont) et produit sa propre preuve de collecte. Rien n'est
 déclaré réussi : la publication passe ensuite par `seal`, comme pour toute ligue.
-Refus si une ligue est déjà scellée (`expected`) ou `publishing` (utiliser
-`recover-publication`), si aucune ligue n'est concernée, ou si le plafond de tentatives
+Refus si une ligue `collected` est déjà scellée (`expected` : utiliser
+`recover-publication`), si une ligue `publishing` est trop récente (voir plus bas),
+si aucune ligue n'est concernée, ou si le plafond de tentatives
 d'une campagne séquentielle est atteint. La décision sur un refus Transfermarkt reste
 celle de `reconcile` ; le journal `administration` conserve la liste `requeued`.
+
+Elle couvre aussi une ligue `publishing` **jamais déployée** (scellée, puis une étape
+ultérieure a échoué) : si ses deux ZIP publics ne correspondent pas aux empreintes et
+que le scellement date d'au moins 30 minutes (un déploiement récent peut encore être en
+cours), elle repasse en `retry` (motif `publication_lost`), ses empreintes sont
+retirées et le collecteur la reconstruit puis la scelle de nouveau. `reconcile` continue
+de refuser ce cas.
+
+**Taille de la file.** Le corps de la release est limité à 120 000 octets (GitHub accepte
+125 000 caractères) ; au-delà, la sauvegarde échoue (`Queue too large`) et plus rien ne
+peut être scellé ni administré. Le journal `administration` conserve donc un **résumé**
+des preuves publiques (format 2 : codes de ligues groupés par type d'archive et par
+statut, les ligues sans empreinte attendue étant omises) avec le code `ADMIN-…` ; les
+anciennes entrées sont compactées à la sauvegarde. Le bilan complet reste dans
+l'artefact `tm-queue-admin-report` (90 jours). Un message `TM_QUEUE_SIZE` apparaît
+dans les journaux dès que la file dépasse 100 000 octets.
 
 Un refus Transfermarkt ne peut être réconcilié sans
 `acknowledge_refusal=true`, décision distincte incluse dans la confirmation.

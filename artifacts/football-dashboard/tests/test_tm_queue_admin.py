@@ -273,7 +273,7 @@ class AdminTests(unittest.TestCase):
             self.apply(self.report("requeue-unpublished"))
         item.update(state="publishing", expected=sealed, publication_started=0)
         with self.assertRaisesRegex(ValueError, "Publication evidence"):
-            self.apply(self.report("requeue-unpublished"))
+            self.apply(self.report())     # plain reconcile never requeues a seal
         self.assertEqual(self.store.writes, 0)
 
     def test_requeue_keeps_the_refusal_decision_and_needs_a_suspended_campaign(self):
@@ -313,6 +313,49 @@ class AdminTests(unittest.TestCase):
         self.assertIn("proposed status: active", printed)
         self.assertIn("fr1", printed.split("squads re-fetched if missing):")[1])
         self.assertEqual(self.store.writes, 0)
+
+    def sealed_never_deployed(self, started):
+        """Seal succeeded, deployment did not: public ZIPs are absent."""
+        self.unpublished()
+        item = self.store.state["leagues"]["fr1"]
+        item.update(state="publishing", expected={"all": {"fr1_career.csv": "0" * 64}},
+                    publication_started=started)
+        return item
+
+    def test_requeue_returns_a_sealed_but_never_deployed_league_to_the_collector(self):
+        self.sealed_never_deployed(started=1000)
+        report = self.report("requeue-unpublished")
+        state = admin.apply(self.store, report, report["confirmation"], "999", now=5000)
+        item = state["leagues"]["fr1"]
+        self.assertEqual((item["state"], item["reason"], item["attempts"]),
+                         ("retry", "publication_lost", 1))
+        self.assertNotIn("expected", item)
+        self.assertNotIn("publication_started", item)
+        self.assertEqual(state["administration"][-1]["requeued"], ["fr1"])
+        self.assertEqual(q.due_codes(state, 5000), ["fr1"])
+
+    def test_requeue_waits_while_a_fresh_publication_may_still_be_deploying(self):
+        self.sealed_never_deployed(started=4900)
+        report = self.report("requeue-unpublished")
+        with self.assertRaisesRegex(ValueError, "still be deploying"):
+            admin.apply(self.store, report, report["confirmation"], "999", now=5000)
+        self.assertEqual(self.store.writes, 0)
+
+    def test_plain_reconcile_still_refuses_a_publication_without_matching_proofs(self):
+        self.sealed_never_deployed(started=1000)
+        report = self.report()
+        with self.assertRaisesRegex(ValueError, "Publication evidence"):
+            admin.apply(self.store, report, report["confirmation"], "999", now=5000)
+        self.assertEqual(self.store.writes, 0)
+
+    def test_audit_entry_keeps_a_compact_proof_summary_and_the_admin_code(self):
+        self.unpublished()
+        report = self.report("requeue-unpublished")
+        state = self.apply(report)
+        entry = state["administration"][-1]
+        self.assertEqual(entry["confirmation"], report["confirmation"])
+        self.assertEqual(entry["public_proofs"], {"format": 2})
+        self.assertLess(len(json.dumps(entry)), 2000)
 
     def test_queued_collector_runs_start_from_current_main_and_admin_offers_requeue(self):
         root = Path(__file__).resolve().parents[3]

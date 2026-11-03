@@ -19,10 +19,43 @@ BACKOFF = (3600, 7200, 14400)
 PUBLICATION_LIMIT = 48 * 3600
 STATES = {"pending", "running", "retry", "collected", "publishing", "done",
           "exhausted", "suspended"}
+# A GitHub release body holds 125 000 characters; keep a margin below it.
+QUEUE_LIMIT = 120000
+QUEUE_WARNING = 100000
+PROOF_KINDS = ("all", "current")
 
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def compact_proofs(proofs):
+    """Summary of public proofs for the audit journal: league codes grouped by
+    archive kind and status. Leagues without expected fingerprints are omitted
+    (absent means none). The complete report stays in the 90-day workflow
+    artifact and its ADMIN code is kept, so nothing is decided on this summary.
+    """
+    if proofs.get("format") == 2:
+        return proofs
+    summary = {"format": 2}
+    for kind in PROOF_KINDS:
+        groups = {}
+        for code, proof in proofs.items():
+            status = proof.get(kind, {}).get("status")
+            if status and status != "no_expected_fingerprints":
+                groups.setdefault(status, []).append(code)
+        if groups:
+            summary[kind] = {status: sorted(codes) for status, codes in sorted(groups.items())}
+    return summary
+
+
+def compact_administration(state):
+    """The journal of administrative decisions must never fill the queue body:
+    a full proof table per decision made a 78-league queue hit its size limit."""
+    for entry in state.get("administration", []):
+        if "public_proofs" in entry:
+            entry["public_proofs"] = compact_proofs(entry["public_proofs"])
+    return state
 
 
 def new_campaign(campaign, codes, refresh=True):
@@ -210,10 +243,14 @@ class GitHubStore:
         current = self.api(f"repos/{{owner}}/{{repo}}/releases/{release_id}")
         if json.loads(current["body"])["revision"] != state["revision"]:
             raise RuntimeError("Stale queue writer")
+        compact_administration(state)
         state["revision"] += 1
         body = json.dumps(state)
-        if len(body.encode()) > 120000:
+        size = len(body.encode())
+        if size > QUEUE_LIMIT:
             raise RuntimeError("Queue too large")
+        if size > QUEUE_WARNING:
+            print(f"TM_QUEUE_SIZE {size}/{QUEUE_LIMIT}", flush=True)
         self.api(f"repos/{{owner}}/{{repo}}/releases/{release_id}", "PATCH", {
             "tag_name": PREFIX + state["campaign"], "draft": True, "body": body})
         self.confirm(release_id, state)

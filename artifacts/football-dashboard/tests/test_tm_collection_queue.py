@@ -245,6 +245,67 @@ class QueueTests(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 store.save(1, state)  # lost/stale write cannot authorize traffic
 
+    def test_compact_proofs_groups_by_status_and_is_idempotent(self):
+        proofs = {
+            "a": {"all": {"status": "match", "archive_sha256": "1" * 64},
+                  "current": {"status": "match", "archive_sha256": "2" * 64}},
+            "b": {"all": {"status": "no_expected_fingerprints"},
+                  "current": {"status": "no_expected_fingerprints"}},
+            "c": {"all": {"status": "mismatch", "archive_sha256": "3" * 64},
+                  "current": {"status": "unavailable"}},
+        }
+        summary = q.compact_proofs(proofs)
+        self.assertEqual(summary, {"format": 2,
+                                   "all": {"match": ["a"], "mismatch": ["c"]},
+                                   "current": {"match": ["a"], "unavailable": ["c"]}})
+        self.assertEqual(q.compact_proofs(summary), summary)
+        self.assertEqual(q.compact_proofs({"b": proofs["b"]}), {"format": 2})
+
+    def test_save_compacts_the_journal_so_a_full_queue_still_fits(self):
+        store = q.GitHubStore()
+        state = copy.deepcopy(self.state)
+        trivial = {"all": {"status": "no_expected_fingerprints"},
+                   "current": {"status": "no_expected_fingerprints"}}
+        proofs = {f"x{i}": copy.deepcopy(trivial) for i in range(220)}
+        proofs["l1"] = {"all": {"status": "match", "archive_sha256": "a" * 64},
+                        "current": {"status": "match", "archive_sha256": "b" * 64}}
+        state["administration"] = [
+            {"action": "reconcile", "confirmation": "ADMIN-x", "public_proofs": copy.deepcopy(proofs)}
+            for _ in range(6)]
+        self.assertGreater(len(json.dumps(state).encode()), q.QUEUE_LIMIT)
+        remote = {"body": json.dumps(self.state)}
+
+        def api(path, method="GET", data=None):
+            if method == "PATCH":
+                remote["body"] = data["body"]
+                return {}
+            return {"body": remote["body"], "tag_name": "tm-queue-c", "draft": True}
+        with patch.object(store, "api", side_effect=api):
+            store.save(1, state)
+        saved = json.loads(remote["body"])
+        self.assertLess(len(remote["body"].encode()), q.QUEUE_LIMIT)
+        self.assertEqual(saved["administration"][0]["public_proofs"],
+                         {"format": 2, "all": {"match": ["l1"]}, "current": {"match": ["l1"]}})
+        self.assertEqual(saved["administration"][0]["confirmation"], "ADMIN-x")
+        self.assertEqual(saved["revision"], self.state["revision"] + 1)
+
+    def test_a_queue_that_is_really_too_large_is_still_refused(self):
+        store = q.GitHubStore()
+        state = copy.deepcopy(self.state)
+        state["note"] = "x" * (q.QUEUE_LIMIT + 1)
+        remote = {"body": json.dumps(self.state)}
+        writes = []
+
+        def api(path, method="GET", data=None):
+            if method == "PATCH":
+                writes.append(data)
+                return {}
+            return {"body": remote["body"], "tag_name": "tm-queue-c", "draft": True}
+        with patch.object(store, "api", side_effect=api):
+            with self.assertRaisesRegex(RuntimeError, "too large"):
+                store.save(1, state)
+        self.assertEqual(writes, [])
+
     def test_previous_47_archives_cannot_be_erased(self):
         tree = {"tree": [{"path": f"data/l{i}_{kind}.zip"}
                          for i in range(47) for kind in ("all", "current")]}

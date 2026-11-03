@@ -1,7 +1,19 @@
 {
   "last_attempt": {
-    "started_at": "2026-11-02T16:55:21.740743+00:00",
-    "status": "incomplete",
-    "reason": "budget_exhausted"
+    "started_at": "2026-11-02T22:14:53.045952+00:00",
+    "status": "success"
+  },
+  "last_success": {
+    "completed_at": "2026-11-02T10:29:38.900587+00:00",
+    "sha256": {
+      "summary": "7415ff30bb20946f5c6c03021cc3b26c487d944e57850697de9bd3eedeb839b7",
+      "career": "39d9c7f54b5d7c18a413eecc3d7841eb2b3301e8db220005aed877c898d339e4",
+      "matches": "351debd81e3126a098f00112dcea873fc6c56310e8f4e5c3e1025557be57cba4",
+      "competitions_seen": "e1ea771f751a7213e77d77571b87b14f081d80bc19cebd3b2192588e7fc3f220"
+    },
+    "campaign": "run-41428279596-po1",
+    "response_version": 1,
+    "collected_from": "2026-11-02T10:29:38.900587+00:00",
+    "collected_through": "2026-11-02T22:25:05.125712+00:00"
   }
 }

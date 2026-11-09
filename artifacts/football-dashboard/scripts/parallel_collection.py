@@ -33,6 +33,8 @@ from collection_metadata import read_metadata, fingerprints
 WIDTH = 1                                  # one source flow, never five
 HOLDS = (2 * 3600, 6 * 3600, 24 * 3600)    # campaign-wide pauses after refusals
 TEMPORARY_RETRY = 600                      # 5xx/timeouts: same run, 10 min later
+STORAGE_RETRY = 300                        # checkpoint storage outage (exit 78): 5 min later
+MAX_STORAGE_FAILURES = 2                   # the third failure of one league is the operator's
 DEFAULT_HOURS = 3.0
 MAX_HOURS = 4.5                            # job timeout is 350 min
 SEED_PATTERN = "seed-*.ndjson.gz"          # never *.jsonl.gz: invisible to Checkpoints
@@ -405,7 +407,7 @@ def collect(store, release_id, state, root, leagues, clock=time.time,
                 rc, squad_done = worker(code, env_at(rate))
                 if rc == 75:
                     account_refusal(pace, clock())
-                elif rc in (0, 76, 77):
+                elif rc in (0, 76, 77, 78):
                     account_clean(pace, clock(), clock() - now)
                 item["squad_done"] = item["squad_done"] or squad_done
                 if rc == 0:
@@ -414,6 +416,7 @@ def collect(store, release_id, state, root, leagues, clock=time.time,
                             or evidence.get("sha256") != fingerprints(full, code)):
                         raise ValueError("Collection evidence mismatch")
                     item.update(state="collected", reason="success")
+                    item.pop("storage_failures", None)
                     state["refusals"] = 0
                     share(code)
                 elif rc == 75:
@@ -425,6 +428,17 @@ def collect(store, release_id, state, root, leagues, clock=time.time,
                 elif rc == 77:
                     item.update(state="retry", due=clock() + TEMPORARY_RETRY,
                                 reason="temporary_network")
+                elif rc == 78:
+                    # GitHub checkpoint storage, not the source: what was collected
+                    # is kept locally and re-sent by the next attempt. An outage that
+                    # outlasts two retries of the same league is the operator's.
+                    item["storage_failures"] = item.get("storage_failures", 0) + 1
+                    if item["storage_failures"] > MAX_STORAGE_FAILURES:
+                        item.update(state="suspended", reason="checkpoint_storage")
+                        suspend(state, "checkpoint_storage")
+                    else:
+                        item.update(state="retry", due=clock() + STORAGE_RETRY,
+                                    reason="checkpoint_storage")
                 else:
                     raise RuntimeError(f"Unclassified collector exit {rc}")
             except Exception as exc:

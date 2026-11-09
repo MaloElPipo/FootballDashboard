@@ -141,6 +141,15 @@ class QueueTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             runner.prepare(Store(self.state), "2", create=True)
 
+    def test_storage_exit_is_classified_and_never_mistaken_for_the_source(self):
+        self.assertEqual(runner.classify(78, {}), "checkpoint_storage")
+        self.assertEqual(runner.classify(1, {}), "unclassified_failure")
+        q.begin(self.state, "l1", 0)
+        q.result(self.state, "l1", "checkpoint_storage", 0)      # sequential path: operator
+        self.assertEqual(self.state["leagues"]["l1"]["state"], "suspended")
+        self.assertEqual(self.state["reason"], "checkpoint_storage")
+        self.assertFalse(self.state.get("access_hold"))
+
     def test_interruption_and_cancel_never_restart_source(self):
         for conclusion in ["failure", "cancelled", "timed_out"]:
             state = copy.deepcopy(self.state)

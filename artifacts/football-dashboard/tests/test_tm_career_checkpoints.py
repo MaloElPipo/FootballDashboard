@@ -1,7 +1,11 @@
 import gzip
 import fnmatch
+import io
 import json
+import os
+from contextlib import redirect_stdout
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import time
@@ -9,9 +13,10 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import tm_career_checkpoints as module
 import tm_player_career as scraper
-from tm_career_checkpoints import Checkpoints
-from collection_metadata import complete_attempt, start_attempt, read_metadata
+from tm_career_checkpoints import Checkpoints, CheckpointStorageError
+from collection_metadata import complete_attempt, fail_attempt, start_attempt, read_metadata
 
 EMPTY = {"performance": []}
 
@@ -303,6 +308,214 @@ class DurableTests(unittest.TestCase):
             self.assertIn("1", second.pending)
             second.flush()
             self.assertEqual(len(remote.assets), 1)
+
+
+class FlakyGitHub(FakeGitHub):
+    """The next ``failures`` uploads fail, then storage works again."""
+    def __init__(self, failures=0):
+        super().__init__()
+        self.failures = failures
+
+    def gh(self, *args):
+        if len(args) > 1 and args[1] == "upload" and self.failures:
+            self.failures -= 1
+            raise RuntimeError("upload failed")
+        return super().gh(*args)
+
+
+class StorageOutageTests(unittest.TestCase):
+    """A short GitHub failure must not stop a collection; a long one fails closed."""
+
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.clock = [100.0]
+        scraper._blocked.clear()
+        scraper._budget_expired.clear()
+        scraper._deadline = None
+        self.addCleanup(setattr, scraper, "_deadline", None)
+        self.addCleanup(scraper._blocked.clear)
+
+    def start(self, patcher):
+        mock = patcher.start()
+        self.addCleanup(patcher.stop)
+        return mock
+
+    def open(self, remote, tolerance=None):
+        self.start(patch.object(Checkpoints, "_gh", side_effect=remote.gh))
+        env = {} if tolerance is None else {"TM_CHECKPOINT_OUTAGE_SECONDS": str(tolerance)}
+        with patch.dict(os.environ, env):
+            return Checkpoints(self.root / "cp", "c", True)
+
+    def freeze_clock(self):
+        self.start(patch("time.monotonic", side_effect=lambda: self.clock[0]))
+
+    def scrape(self, store, ids, fetch):
+        with patch.object(scraper, "fetch_player_career", side_effect=fetch), \
+             patch.object(scraper, "_polite_pause"), patch.object(scraper, "_log"):
+            return scraper.scrape_players({pid: {} for pid in ids}, 1, store)
+
+    def test_transient_failure_keeps_records_and_resends_after_backoff(self):
+        remote = FakeGitHub()
+        self.freeze_clock()
+        store = self.open(remote)
+        store.put("1", EMPTY)
+        remote.fail_upload = True
+        out = io.StringIO()
+        with redirect_stdout(out):
+            self.assertFalse(store.try_flush())           # tolerated: no exception
+        self.assertEqual(set(store.pending), {"1"})       # nothing lost
+        self.assertIsNone(store.error)
+        self.assertIn('"event": "flush_failed"', out.getvalue())
+        remote.fail_upload = False
+        self.assertFalse(store.try_flush())               # backing off: no attempt yet
+        self.assertEqual(remote.assets, {})
+        self.clock[0] += module.FLUSH_SECONDS + 1
+        with redirect_stdout(out):
+            self.assertTrue(store.try_flush())
+        self.assertEqual(len(remote.assets), 1)
+        self.assertEqual(store.pending, {})
+        self.assertIsNone(store.failing_since)
+        self.assertIn('"event": "flush_recovered"', out.getvalue())
+
+    def test_outage_longer_than_the_tolerance_fails_closed(self):
+        remote = FakeGitHub()
+        self.freeze_clock()
+        store = self.open(remote, tolerance=60)
+        store.put("1", EMPTY)
+        remote.fail_upload = True
+        with redirect_stdout(io.StringIO()):
+            self.assertFalse(store.try_flush())           # first failure
+            self.clock[0] += 30
+            self.assertFalse(store.try_flush())           # 30 s outage: tolerated
+            self.clock[0] += 31
+            with self.assertRaises(CheckpointStorageError):
+                store.try_flush()                         # 61 s outage
+        self.assertIsNotNone(store.error)
+        with self.assertRaises(CheckpointStorageError):
+            store.put("2", EMPTY)                         # no more source traffic
+        self.assertTrue((store.folder / "1.json").exists())   # still durable on disk
+
+    def test_zero_tolerance_restores_the_strict_behaviour(self):
+        remote = FakeGitHub()
+        store = self.open(remote, tolerance=0)
+        store.put("1", EMPTY)
+        remote.fail_upload = True
+        with redirect_stdout(io.StringIO()), self.assertRaises(CheckpointStorageError):
+            store.try_flush()
+
+    def test_outage_setting_is_bounded(self):
+        for value in ("-1", "901", "soon"):
+            with patch.dict(os.environ, {"TM_CHECKPOINT_OUTAGE_SECONDS": value}), \
+                 self.assertRaises(ValueError):
+                Checkpoints(self.root / "bounds", "c")
+
+    def test_periodic_flush_keeps_trying_until_the_outage_is_permanent(self):
+        store = Checkpoints(self.root / "periodic", "c")
+        store.remote = True
+        outcomes = iter([False, True, CheckpointStorageError("down")])
+        def try_flush():
+            outcome = next(outcomes)
+            if isinstance(outcome, Exception):
+                raise outcome
+            return outcome
+        self.start(patch.object(module, "FLUSH_SECONDS", 0.01))
+        with patch.object(store, "try_flush", side_effect=try_flush) as flush:
+            with store.periodic_flush():
+                deadline = time.time() + 5
+                while flush.call_count < 3 and time.time() < deadline:
+                    time.sleep(0.01)
+            self.assertEqual(flush.call_count, 3)        # a failed tick did not stop it
+
+    def test_final_flush_retries_then_fails_closed_and_recovers(self):
+        remote = FlakyGitHub(failures=2)
+        store = self.open(remote)
+        store.put("1", EMPTY)
+        with patch("time.sleep") as sleep, redirect_stdout(io.StringIO()):
+            store.final_flush()                           # third attempt succeeds
+        self.assertEqual([c.args[0] for c in sleep.call_args_list], [20, 40])
+        self.assertEqual(len(remote.assets), 1)
+        remote.failures = 99
+        store.put("2", EMPTY)
+        with patch("time.sleep"), redirect_stdout(io.StringIO()), \
+             self.assertRaises(CheckpointStorageError):
+            store.final_flush()
+        self.assertIn("2", store.pending)
+        self.assertTrue((store.folder / "2.json").exists())
+        remote.failures = 0
+        store.final_flush()                               # storage is back: nothing lost
+        self.assertEqual(len(remote.assets), 2)
+
+    def test_gh_failure_is_logged_with_githubs_message_but_never_the_arguments(self):
+        store = Checkpoints(self.root / "log", "c")
+        refused = subprocess.CalledProcessError(1, ["gh"], stderr="HTTP 502: Bad Gateway\n")
+        for error, expected in ((refused, "HTTP 502: Bad Gateway"),
+                                (subprocess.TimeoutExpired(["gh"], 60), "timeout after 60s")):
+            out = io.StringIO()
+            with patch.object(module.subprocess, "run", side_effect=error), \
+                 redirect_stdout(out), self.assertRaises(type(error)):
+                store._gh("release", "upload", "tag", "/private/asset-path")
+            line = out.getvalue()
+            self.assertIn('"event": "gh_error"', line)
+            self.assertIn("release upload", line)
+            self.assertIn(expected, line)
+            self.assertNotIn("asset-path", line)
+
+    def test_transient_outage_neither_fails_players_nor_stops_the_collection(self):
+        remote = FakeGitHub()
+        store = self.open(remote)
+        ids = [str(i) for i in range(1, 31)]
+        remote.fail_upload = True                         # the flush at record 25 fails
+        with redirect_stdout(io.StringIO()):
+            result = self.scrape(store, ids, lambda _: EMPTY)
+        self.assertEqual(result[-1], [])                  # not a single player failed
+        self.assertIsNone(store.error)
+        remote.fail_upload = False
+        store.final_flush()
+        rows = sum(len(gzip.decompress(data).splitlines()) for data in remote.assets.values())
+        self.assertEqual(rows, 30)                        # every response is durable
+
+    def test_permanent_outage_stops_source_requests(self):
+        remote = FakeGitHub()
+        store = self.open(remote, tolerance=0)
+        remote.fail_upload = True
+        calls = []
+        def fetch(pid):
+            calls.append(pid)
+            return EMPTY
+        with redirect_stdout(io.StringIO()), self.assertRaises(CheckpointStorageError):
+            self.scrape(store, [str(i) for i in range(1, 41)], fetch)
+        self.assertEqual(len(calls), 25)                  # nothing asked after it gave up
+
+    def test_storage_outage_has_its_own_exit_code(self):
+        self.assertEqual(scraper.STORAGE_EXIT_CODE, 78)
+        with patch.object(scraper, "cli", side_effect=CheckpointStorageError("down")), \
+             patch.object(scraper, "_log"), self.assertRaises(SystemExit) as raised:
+            scraper.main()
+        self.assertEqual(raised.exception.code, 78)
+
+    def test_final_flush_outage_after_a_complete_scrape_exits_78_without_export(self):
+        remote = FakeGitHub()
+        remote.fail_upload = True
+        self.start(patch.object(Checkpoints, "_gh", side_effect=remote.gh))
+        argv = ["scraper", "--player-ids", "1", "--campaign", "c",
+                "--checkpoint-dir", str(self.root / "cp"), "--out-dir", str(self.root / "out"),
+                "--checkpoint-remote"]
+        with patch.object(sys, "argv", argv), patch("time.sleep"), \
+             patch.object(scraper.tm_waf, "warm_up"), patch.object(scraper, "_polite_pause"), \
+             patch.object(scraper, "_log"), \
+             patch.object(scraper, "fetch_player_career", return_value=EMPTY), \
+             redirect_stdout(io.StringIO()), self.assertRaises(SystemExit) as raised:
+            scraper.main()
+        self.assertEqual(raised.exception.code, 78)
+        self.assertEqual(list(self.root.glob("out/*.csv")), [])   # no partial export
+
+    def test_storage_outage_is_a_recordable_failure_reason(self):
+        start_attempt(self.root, "x")
+        fail_attempt(self.root, "x", "checkpoint_storage")
+        self.assertEqual(read_metadata(self.root, "x")["last_attempt"]["reason"],
+                         "checkpoint_storage")
 
 
 if __name__ == "__main__":

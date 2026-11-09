@@ -10,6 +10,7 @@ FAILURE_REASONS = {
     "player_requests_failed": "Requêtes joueurs échouées",
     "budget_exhausted": "Budget de collecte épuisé",
     "access_blocked": "Accès refusé par la source",
+    "checkpoint_storage": "Stockage des points de reprise indisponible",
     "write_failed": "Écriture échouée",
     "interrupted": "Collecte interrompue",
 }

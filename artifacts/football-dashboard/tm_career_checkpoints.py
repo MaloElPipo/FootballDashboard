@@ -21,6 +21,23 @@ from tm_checkpoint_retention import CLOSED_MARKER
 from tm_checkpoint_index import RemoteIndex, partition_bounds
 
 VERSION = 1
+FLUSH_SECONDS = 15      # periodic flush, and minimum spacing of retries after a failure
+
+
+class CheckpointStorageError(RuntimeError):
+    """Checkpoint storage (GitHub) stayed unavailable too long.
+
+    Neither a source refusal nor bad data: the collector exits with its own code
+    so the queue can retry the league instead of suspending the whole campaign.
+    """
+
+
+def _failure_detail(exc):
+    """GitHub's own message for a failed gh call; never the arguments or token."""
+    if isinstance(exc, subprocess.TimeoutExpired):
+        return f"timeout after {exc.timeout:.0f}s"
+    text = " ".join(str(exc.stderr or exc.stdout or "").split())
+    return f"exit {exc.returncode}: {text[:240]}"
 
 
 def valid_payload(data):
@@ -66,6 +83,14 @@ class Checkpoints:
         self.last_flush = time.monotonic()
         self.assets = []
         self.error = None
+        # A short GitHub failure must not stop a collection the source tolerates:
+        # unsent records stay pending (and durable on local disk) and the next
+        # flush re-sends them. Only an outage this long fails closed (0 = strict).
+        self.outage_seconds = float(os.getenv("TM_CHECKPOINT_OUTAGE_SECONDS", "180"))
+        if not 0 <= self.outage_seconds <= 900:
+            raise ValueError("TM_CHECKPOINT_OUTAGE_SECONDS must be between 0 and 900")
+        self.failing_since = None
+        self.retry_after = 0.0
         self.index = None
         self._imported = set()
         self.restore_bytes = 0
@@ -88,7 +113,11 @@ class Checkpoints:
             try:
                 return subprocess.run(command, check=True, capture_output=True,
                                       text=True, timeout=60).stdout
-            except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+                # The cause used to vanish with the exception: keep it in the run log.
+                print("TM_CHECKPOINT " + json.dumps({
+                    "event": "gh_error", "command": " ".join(args[:2]),
+                    "detail": _failure_detail(exc)}), flush=True)
                 if not read_only or attempt == 2:
                     raise
                 print("Checkpoint read failed; retrying read only after 120 seconds.",
@@ -214,34 +243,88 @@ class Checkpoints:
             raise ValueError("Invalid player response")
         with self.lock:
             if self.error:
-                raise RuntimeError("Checkpoint storage unavailable") from self.error
+                raise CheckpointStorageError("Checkpoint storage unavailable") from self.error
             self._write(record)
             self.pending[pid] = record
-            if len(self.pending) >= 25 or time.monotonic() - self.last_flush >= 15:
-                self.flush()
+            if len(self.pending) >= 25 or time.monotonic() - self.last_flush >= FLUSH_SECONDS:
+                self.try_flush()
 
     @contextmanager
     def periodic_flush(self):
         """Persist small batches even if all subsequent requests stall."""
         stop = threading.Event()
         def run():
-            while not stop.wait(15):
+            while not stop.wait(FLUSH_SECONDS):
                 try:
-                    self.flush()
-                except Exception as exc:
-                    self.error = exc
-                    return
+                    self.try_flush()
+                except CheckpointStorageError:
+                    return                  # self.error is set: fail closed
         thread = threading.Thread(target=run, daemon=True)
         if self.remote:
             thread.start()
         try:
             yield
             if self.error:
-                raise RuntimeError("Checkpoint storage unavailable") from self.error
+                raise CheckpointStorageError("Checkpoint storage unavailable") from self.error
         finally:
             stop.set()
             if self.remote:
                 thread.join()
+
+    def try_flush(self):
+        """Flush, tolerating a transient storage failure; True when durable.
+
+        After a failure the records stay pending in memory and on local disk, and
+        journals are immutable and merged by date on restore, so sending them again
+        is safe. Attempts back off for FLUSH_SECONDS; only an outage longer than
+        ``outage_seconds`` becomes the permanent ``self.error``.
+        """
+        with self.lock:
+            if self.failing_since is not None and time.monotonic() < self.retry_after:
+                return False
+            try:
+                self.flush()
+            except Exception as exc:
+                now = time.monotonic()
+                if self.failing_since is None:
+                    self.failing_since = now
+                self.retry_after = now + FLUSH_SECONDS
+                outage = now - self.failing_since
+                print("TM_CHECKPOINT " + json.dumps({
+                    "event": "flush_failed", "pending": len(self.pending),
+                    "outage_seconds": round(outage), "error": type(exc).__name__}),
+                    flush=True)
+                if outage >= self.outage_seconds:
+                    self.error = exc
+                    raise CheckpointStorageError("Checkpoint storage unavailable") from exc
+                return False
+            if self.failing_since is not None:
+                print("TM_CHECKPOINT " + json.dumps({
+                    "event": "flush_recovered",
+                    "outage_seconds": round(time.monotonic() - self.failing_since)}),
+                    flush=True)
+                self.failing_since = None
+            return True
+
+    def final_flush(self, attempts=3, delay=20):
+        """Last flush of a collection: bounded retries, then fail closed.
+
+        Works even after the periodic flush gave up, so a recovered storage
+        still receives every validated success before the process exits.
+        """
+        for attempt in range(1, attempts + 1):
+            try:
+                self.flush()
+                return
+            except Exception as exc:
+                print("TM_CHECKPOINT " + json.dumps({
+                    "event": "final_flush_failed", "attempt": attempt,
+                    "pending": len(self.pending), "error": type(exc).__name__}),
+                    flush=True)
+                if attempt == attempts:
+                    self.error = exc
+                    raise CheckpointStorageError("Checkpoint storage unavailable") from exc
+                time.sleep(delay * attempt)
 
     def flush(self):
         with self.lock:

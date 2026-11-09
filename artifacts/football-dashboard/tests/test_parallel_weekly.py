@@ -234,6 +234,44 @@ class WeeklyCollectionTests(unittest.TestCase):
             h.collect(state)
             self.assertEqual(item["state"], "collected")
 
+    def test_checkpoint_storage_outage_retries_the_league_without_suspending(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            outcomes = iter([78, 0])
+            h = Harness(Path(tmp), ["x0", "x1"], {"x0": ["1"], "x1": ["2"]},
+                        career_rc={"x0": lambda: next(outcomes)})
+            state = campaign(["x0", "x1"])
+            h.collect(state)
+            item = state["leagues"]["x0"]
+            self.assertEqual((item["state"], item["reason"]), ("retry", "checkpoint_storage"))
+            self.assertEqual(item["due"], 1060 + p.STORAGE_RETRY)
+            self.assertEqual(state["leagues"]["x1"]["state"], "collected")   # the queue goes on
+            self.assertEqual(state["status"], "active")
+            self.assertEqual(state.get("refusals", 0), 0)                   # not the source
+            self.assertNotIn("hold_until", state)
+            self.assertGreater(state["pace"]["clean_seconds"], 0)
+            h.now[0] = item["due"]
+            h.collect(state)
+            self.assertEqual(item["state"], "collected")
+            self.assertNotIn("storage_failures", item)                      # success clears it
+            q.validate(state)
+
+    def test_persistent_checkpoint_storage_outage_asks_for_the_operator(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            h = Harness(Path(tmp), ["x0"], {"x0": ["1"]}, career_rc={"x0": 78})
+            state = campaign(["x0"])
+            item = state["leagues"]["x0"]
+            for failures in (1, 2):                                         # two retries
+                h.collect(state)
+                self.assertEqual((item["state"], item["storage_failures"]), ("retry", failures))
+                h.now[0] = item["due"]
+            h.collect(state)                                                # the third failure
+            self.assertEqual((item["state"], item["reason"]), ("suspended", "checkpoint_storage"))
+            self.assertEqual((state["status"], state["reason"]),
+                             ("suspended", "checkpoint_storage"))
+            self.assertFalse(state.get("access_hold"))                      # not a refusal
+            self.assertEqual(state.get("refusals", 0), 0)
+            q.validate(state)
+
     def test_share_failure_never_fails_a_validated_league(self):
         class Broken(FakeCheckpoints):
             def get(self, pid):

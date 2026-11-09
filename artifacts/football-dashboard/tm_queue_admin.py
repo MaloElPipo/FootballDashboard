@@ -126,6 +126,8 @@ def transition(report, now, admin_run):
                     # Unknown/interrupted attempt remains consumed; no immediate retry.
                     delay = 120 if state.get("parallel") else BACKOFF[max(0, item["attempts"] - 1)]
                     item.update(state="retry", due=max(item.get("due", 0), now + delay))
+                    # An operator decision restores the checkpoint-storage retry budget.
+                    item.pop("storage_failures", None)
             elif item["state"] == "collected":
                 if action != REQUEUE or item.get("expected"):
                     raise ValueError("Unsealed collection: close or repair publication first")

@@ -58,7 +58,7 @@ from datetime import datetime, timedelta, timezone
 import tm_waf
 from collection_metadata import start_attempt, complete_attempt, fail_attempt
 from career_export_transaction import export_transaction
-from tm_career_checkpoints import Checkpoints, valid_payload
+from tm_career_checkpoints import Checkpoints, CheckpointStorageError, valid_payload
 
 # ============================================================
 # Config
@@ -97,6 +97,8 @@ _recovery_used = False
 BLOCKED_EXIT_CODE = 75
 BUDGET_EXIT_CODE = 76
 TEMPORARY_EXIT_CODE = 77
+# GitHub checkpoint storage down for longer than tolerated: not a source problem.
+STORAGE_EXIT_CODE = 78
 _temporary_failure = threading.Event()
 _deadline = None
 _budget_expired = threading.Event()
@@ -629,7 +631,7 @@ def scrape_players(
                 )
 
     if storage_failed.is_set():
-        raise RuntimeError("Checkpoint persistence failed; collection stopped")
+        raise CheckpointStorageError("Checkpoint persistence failed; collection stopped")
     return summary_all, career_all, matches_all, dict(comp_id_counts), failed_ids
 
 
@@ -812,6 +814,9 @@ def _collect(args, transaction):
             summary, career, matches, comp_counts, failed = scrape_players(
                 player_meta_by_id, workers=args.workers, checkpoints=checkpoints
             )
+    except CheckpointStorageError:
+        _record_failure(args, "checkpoint_storage")
+        raise
     except Exception:
         _record_failure(args, "player_requests_failed")
         raise
@@ -820,7 +825,11 @@ def _collect(args, transaction):
         _deadline = None
         # Even on failure, persist every validated success before exiting.
         flush_started = time.monotonic()
-        checkpoints.flush()
+        try:
+            checkpoints.final_flush()
+        except CheckpointStorageError:
+            _record_failure(args, "checkpoint_storage")
+            raise
         _log("TM_PHASE " + json.dumps({
             "phase": "final_flush", "league": league_label,
             "seconds": round(time.monotonic() - flush_started, 3),
@@ -881,5 +890,14 @@ def _collect(args, transaction):
         _log(f"   {c:10s} : {n} joueurs")
 
 
+def main():
+    try:
+        cli()
+    except CheckpointStorageError as error:
+        # Own exit code: the queue retries the league, it is not an unknown failure.
+        _log(f"   ! {error}")
+        sys.exit(STORAGE_EXIT_CODE)
+
+
 if __name__ == "__main__":
-    cli()
+    main()

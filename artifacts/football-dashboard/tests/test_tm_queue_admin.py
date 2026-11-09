@@ -73,6 +73,18 @@ class AdminTests(unittest.TestCase):
         self.assertEqual(state["administration"][0]["previous_owner"], "123")
         self.assertEqual(state["last_owner"], "123")
 
+    def test_operator_decision_restores_the_checkpoint_storage_retry_budget(self):
+        self.store.state["leagues"]["fr1"].update(
+            state="suspended", reason="checkpoint_storage", storage_failures=3)
+        q.suspend(self.store.state, "checkpoint_storage")
+        state = self.apply(self.report())
+        item = state["leagues"]["fr1"]
+        self.assertEqual(item["state"], "retry")
+        self.assertNotIn("storage_failures", item)
+        self.assertEqual(item["attempts"], 1)                    # attempts stay consumed
+        self.assertEqual(state["status"], "active")
+        self.assertFalse(state["access_hold"])                   # no refusal to acknowledge
+
     def test_no_reset_of_exhausted_attempts(self):
         self.store.state["leagues"]["fr1"]["attempts"] = 4
         state = self.apply(self.report())

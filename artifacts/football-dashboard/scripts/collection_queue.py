@@ -118,6 +118,8 @@ def classify(exit_code, metadata):
         return "budget_exhausted"
     if exit_code == 77:
         return "temporary_network"
+    if exit_code == 78:
+        return "checkpoint_storage"
     # Unknown exits/storage errors/invalid data are NOT network errors.
     return "success" if exit_code == 0 else "unclassified_failure"
 

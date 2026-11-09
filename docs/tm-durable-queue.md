@@ -76,6 +76,25 @@ plusieurs runs enchaînés par la file.
   précédent compris. Sans cela, le `git pull --rebase` final échouait sur un fichier
   modifié des deux côtés (`<ligue>_collection.json` d'une ligue interrompue puis
   reprise) : run #106 du 3 novembre 2026, 21 ligues collectées et aucune publiée.
+- **Stockage des points de reprise indisponible (78)** : un envoi vers la release
+  `tm-checkpoints-*` qui échoue n'arrête plus la ligue. Les fiches restent en attente,
+  en mémoire et sur le disque du runner, et le flush suivant les renvoie (les journaux
+  sont immuables et fusionnés par date : renvoyer est sans risque). Les tentatives sont
+  espacées de 15 s ; seule une panne continue de plus de `TM_CHECKPOINT_OUTAGE_SECONDS`
+  (défaut 180, de 0 à 900 ; `0` rétablit l'arrêt au premier échec) arrête les requêtes
+  vers la source. Le flush final fait 3 tentatives, à 20 s puis 40 s d'écart. Au-delà, le processus
+  sort avec le code **78** : la ligue repasse en `retry` (motif `checkpoint_storage`)
+  5 min plus tard dans le même run, depuis ses fiches locales et distantes, sans pénalité
+  de débit ni refus compté. Une même ligue qui échoue une **troisième** fois de suite
+  suspend la campagne (`checkpoint_storage`, pas `access_hold`) ; `reconcile` lui
+  rend alors un budget de reprises neuf. Le journal du run contient les lignes
+  `TM_CHECKPOINT {"event": "gh_error" | "flush_failed" | "flush_recovered" |
+  "final_flush_failed", ...}` avec le message de GitHub (jamais les arguments ni le
+  jeton). Avant ce correctif, le même incident (run #113 du 3 novembre 2026, JAP1
+  arrêtée à 81 %) sortait en code 1 et suspendait toute la campagne (`unclassified_failure`).
+  Pendant une panne, jusqu'à `TM_CHECKPOINT_OUTAGE_SECONDS` de collecte non envoyée
+  (environ 144 fiches à 0,8 req/s pour 180 s, au lieu de 15 s) peut être perdue si le
+  runner disparaît avant la fin de la panne.
 
 ## Reprises et arrêts
 
@@ -88,8 +107,8 @@ Les règles ci-dessous restent celles de l'ancien chemin séquentiel
 - 403, 405, CAPTCHA ou 429 (75) : suspension durable globale, sans nouveau
   navigateur ni nouvelle session automatique ; les campagnes suivantes sont
   également bloquées tant que la suspension n'est pas réconciliée.
-- Écriture/sauvegarde indisponible, erreur inconnue ou preuve invalide :
-  arrêt conservateur, pas de classement arbitraire comme erreur réseau.
+- Écriture/sauvegarde indisponible (code 78, motif `checkpoint_storage`), erreur inconnue
+  ou preuve invalide : arrêt conservateur, pas de classement arbitraire comme erreur réseau.
 - Après quatre échecs temporaires, la ligue reste `exhausted`, sans reprise.
   Les autres ligues terminent ; la campagne reste visible pour intervention.
 

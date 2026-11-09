@@ -2,6 +2,7 @@
 import copy
 import io
 import json
+import os
 from pathlib import Path
 import sys
 import tempfile
@@ -140,6 +141,29 @@ class QueueTests(unittest.TestCase):
         self.assertEqual(q.due_codes(self.state, 999999), [])
         with self.assertRaises(RuntimeError):
             runner.prepare(Store(self.state), "2", create=True)
+
+    def test_suspended_campaign_is_quiet_for_scheduled_ticks_but_loud_otherwise(self):
+        q.begin(self.state, "l1", 0)
+        q.result(self.state, "l1", "access_blocked", 0)
+        for event in ("schedule", "workflow_dispatch"):
+            with tempfile.TemporaryDirectory() as tmp:
+                summary, output = Path(tmp) / "summary", Path(tmp) / "output"
+                env = {"GITHUB_RUN_ID": "2", "GITHUB_EVENT_NAME": event,
+                       "GITHUB_STEP_SUMMARY": str(summary), "GITHUB_OUTPUT": str(output)}
+                with patch.dict(os.environ, env), \
+                     patch.object(sys, "argv", ["collection_queue.py", "prepare"]), \
+                     patch.object(runner, "GitHubStore", return_value=Store(self.state)), \
+                     patch.object(runner, "require_access_clearance"), \
+                     patch("builtins.print") as printed:
+                    if event == "schedule":
+                        runner.main()                    # hourly tick: green, nothing runs
+                        self.assertEqual(output.read_text(), "ready=false\n")
+                        self.assertIn("suspended", summary.read_text())
+                        self.assertIn("::warning::Campaign suspended",
+                                      printed.call_args.args[0])
+                    else:
+                        with self.assertRaises(runner.CampaignSuspended):
+                            runner.main()                # a manual run still fails loudly
 
     def test_storage_exit_is_classified_and_never_mistaken_for_the_source(self):
         self.assertEqual(runner.classify(78, {}), "checkpoint_storage")

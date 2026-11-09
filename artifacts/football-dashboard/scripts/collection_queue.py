@@ -22,6 +22,10 @@ CURRENT = ROOT / "live/data/tm_career_current"
 ACCESS_FILE = ROOT / "tm_collection_access.json"
 
 
+class CampaignSuspended(RuntimeError):
+    """A refusal is a global stop: nothing runs until an operator reconciles."""
+
+
 def require_access_clearance():
     """Tracked migration latch: absence of a remote queue is NOT permission.
 
@@ -56,7 +60,7 @@ def prepare(store, run_id, campaign="", selection="", create=False, refresh=True
             store.save(release_id, state)
     # A refusal is a global stop, including future Mondays/new campaign IDs.
     if any(s["status"] == "suspended" or s.get("access_hold") for _, s in queues):
-        raise RuntimeError("Campaign suspended; explicit operator reconciliation required")
+        raise CampaignSuspended("Campaign suspended; explicit operator reconciliation required")
     active = [(i, s) for i, s in queues if s["status"] == "active"]
     if len(active) > 1:
         raise RuntimeError("Multiple active campaigns; no source traffic")
@@ -209,10 +213,19 @@ def main():
                                 ROOT / "gh_pages_build")
         return
     if args.command == "prepare":
-        prepared = prepare(store, run_id, os.getenv("REQUESTED_CAMPAIGN", ""),
-                           os.getenv("REQUESTED_LEAGUES", ""),
-                           os.getenv("ALLOW_CREATE") == "true",
-                           os.getenv("REFRESH_SQUADS") != "false")
+        try:
+            prepared = prepare(store, run_id, os.getenv("REQUESTED_CAMPAIGN", ""),
+                               os.getenv("REQUESTED_LEAGUES", ""),
+                               os.getenv("ALLOW_CREATE") == "true",
+                               os.getenv("REFRESH_SQUADS") != "false")
+        except CampaignSuspended as error:
+            # The run that suspended the campaign already failed loudly. Hourly
+            # ticks that only find it still suspended must not each turn red:
+            # nothing runs before the operator reconciles. Manual runs stay loud.
+            if os.getenv("GITHUB_EVENT_NAME") != "schedule":
+                raise
+            print(f"::warning::{error}", flush=True)
+            prepared = None
         # Observation-only ticks also expose progress/exhaustion without scraping.
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
             for _, state in store.inventory():

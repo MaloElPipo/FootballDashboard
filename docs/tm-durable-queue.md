@@ -95,6 +95,12 @@ plusieurs runs enchaînés par la file.
   Pendant une panne, jusqu'à `TM_CHECKPOINT_OUTAGE_SECONDS` de collecte non envoyée
   (environ 144 fiches à 0,8 req/s pour 180 s, au lieu de 15 s) peut être perdue si le
   runner disparaît avant la fin de la panne.
+- **Passages planifiés d'une campagne suspendue** : le run qui suspend la campagne
+  reste rouge (bilan « Campaign needs operator attention »). Les passages horaires
+  suivants (`schedule`) qui la retrouvent suspendue ne lancent rien et se terminent
+  en vert avec l'annotation « Campaign suspended; explicit operator reconciliation
+  required » : ils ne produisent plus un échec par heure tant que personne n'a
+  réconcilié. Un déclenchement manuel (`workflow_dispatch`) échoue toujours bruyamment.
 
 ## Reprises et arrêts
 

@@ -58,16 +58,23 @@ def compact_administration(state):
     return state
 
 
-def new_campaign(campaign, codes, refresh=True):
+def new_campaign(campaign, codes, refresh=True, now=None, full=None):
+    """``now`` stamps ``created_at`` (the ISO week the campaign belongs to);
+    ``full`` records that it was created for the whole catalogue, not a subset."""
     if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", campaign):
         raise ValueError("Invalid campaign")
     codes = list(dict.fromkeys(codes))
     if not codes or any(not re.fullmatch(r"[a-z0-9_-]+", c) for c in codes):
         raise ValueError("Invalid leagues")
-    return {"version": 1, "campaign": campaign, "revision": 0,
-            "status": "active", "owner": None, "refresh": refresh,
-            "leagues": {c: {"state": "pending", "attempts": 0,
-                            "due": 0, "squad_done": not refresh} for c in codes}}
+    state = {"version": 1, "campaign": campaign, "revision": 0,
+             "status": "active", "owner": None, "refresh": refresh,
+             "leagues": {c: {"state": "pending", "attempts": 0,
+                             "due": 0, "squad_done": not refresh} for c in codes}}
+    if now is not None:
+        state["created_at"] = int(now)
+    if full is not None:
+        state["full"] = bool(full)
+    return state
 
 
 def validate(state):

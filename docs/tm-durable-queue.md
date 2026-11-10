@@ -2,9 +2,11 @@
 
 ## Fonctionnement
 
-Le workflow hebdomadaire crée une campagne seulement s'il n'existe pas déjà de
-campagne active. Un passage horaire observe et reprend cette même campagne ;
-il ne crée pas de collecte. Le cron GitHub peut être retardé.
+Le workflow crée **une campagne complète par semaine ISO** (fuseau Europe/Paris) :
+le premier passage planifié, à partir du **lundi 05:00**, qui trouve la semaine sans
+campagne la crée (voir « Complétude hebdomadaire »). Tant qu'une campagne est active,
+tous les autres passages observent et reprennent cette même campagne ; ils n'en créent
+pas une seconde. Le cron GitHub peut être retardé ou perdu.
 Aucun workflow de reprise n'est dispatché par le collecteur : une réponse
 GitHub perdue ne peut donc pas provoquer un double dispatch.
 
@@ -99,8 +101,51 @@ plusieurs runs enchaînés par la file.
   reste rouge (bilan « Campaign needs operator attention »). Les passages horaires
   suivants (`schedule`) qui la retrouvent suspendue ne lancent rien et se terminent
   en vert avec l'annotation « Campaign suspended; explicit operator reconciliation
-  required » : ils ne produisent plus un échec par heure tant que personne n'a
-  réconcilié. Un déclenchement manuel (`workflow_dispatch`) échoue toujours bruyamment.
+  required » : ils ne produisent plus un échec par heure dès la suspension. Ce silence
+  est borné : douze heures après la dernière activité, l'étape de complétude (voir
+  ci-dessous) fait échouer chaque passage livré tant que personne n'a réconcilié.
+  Un déclenchement manuel (`workflow_dispatch`) échoue toujours bruyamment.
+
+## Complétude hebdomadaire
+
+Règle de fiabilité : **toutes les ligues qui ont joué sont à jour chaque semaine, et
+aucune n'est oubliée**. Le volume n'est donc pas réduit (pas de rotation des ligues) ;
+des garde-fous (`tm_queue_completeness.py`) garantissent la semaine.
+
+- **Une campagne par semaine ISO.** `created_at` et `full` (campagne du catalogue entier)
+  sont enregistrés à la création. À partir du lundi 05:00 (Paris, été comme hiver), le
+  premier passage planifié, qu'il vienne du cron hebdomadaire ou d'un passage horaire,
+  qui ne trouve aucune campagne complète créée cette semaine en crée une. Avant, la
+  création dépendait d'un seul créneau (lundi 05:15), perdu ou retardé de plusieurs
+  heures par GitHub. Toute campagne de la semaine compte, quel que soit son état (active,
+  suspendue, terminée, fermée) : seul l'opérateur décide d'en lancer une seconde, par un
+  déclenchement manuel, qui crée toujours à la demande. Une campagne limitée à quelques
+  ligues (test manuel) ne couvre pas la semaine. Une campagne antérieure à ce correctif,
+  sans `created_at`, est jugée sur sa liste de ligues et sa première tentative.
+- **Pas de seconde campagne active.** Si la campagne de la semaine précédente n'est pas
+  terminée le lundi, elle continue (la file n'autorise qu'une campagne active) ; celle de
+  la nouvelle semaine démarre au premier passage qui suit sa clôture, même en milieu de
+  semaine : elle recollecte alors toutes les ligues, y compris celles de la veille.
+- **Alertes.** Dernière étape du workflow, en lecture seule : elle échoue le run et
+  annote les ligues concernées, sans jamais sauter une étape de collecte ou de
+  publication. Trois situations :
+  - campagne **active depuis plus de 72 h** et non terminée, avec les ligues restantes
+    et leur état ;
+  - campagne **suspendue ou en `access_hold`** sans décision depuis plus de **12 h**
+    (dernière activité enregistrée) ;
+  - **semaine sans campagne 24 h après son ouverture**, avec la campagne qui la bloque
+    s'il y en a une.
+
+  Chaque passage planifié livré répète l'alerte tant que le problème dure ; GitHub n'en
+  livre qu'une partie (environ un passage horaire sur cinq).
+- **Bilan « N/78 ligues à jour »** dans le résumé de chaque passage : campagne de la
+  semaine, ligues restantes, ligues du catalogue absentes de la campagne, puis un tableau
+  repliable par ligue (état, date de collecte, date de vérification de la publication,
+  tentatives, motif). Les dates sont en heure de Paris.
+- **Ce que ce garde-fou ne fait pas** : il ne saute aucune ligue (une ligue sans match
+  est recollectée), ne réduit pas la liste des joueurs et ne relance rien seul après un
+  refus. Il garantit qu'un retard, un blocage ou une semaine manquée ne passent pas
+  inaperçus.
 
 ## Reprises et arrêts
 

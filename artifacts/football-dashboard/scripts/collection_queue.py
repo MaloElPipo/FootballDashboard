@@ -15,6 +15,7 @@ from tm_collection_queue import (GitHubStore, new_campaign, due_codes, begin,
                                  result, reconcile_owner, verify_publication,
                                  digest, zip_matches, suspend, guard_existing_archives)
 from collection_metadata import read_metadata, fingerprints
+from tm_queue_completeness import creation_due, assess, summary as completeness_summary
 from scripts.scrape_all_squads import select_leagues
 
 FULL = ROOT / "live/data/tm_career"
@@ -48,7 +49,11 @@ def require_access_clearance():
             "No new campaign or source session authorized; see docs/tm-durable-queue.md")
 
 
-def prepare(store, run_id, campaign="", selection="", create=False, refresh=True):
+def prepare(store, run_id, campaign="", selection="", create=False, refresh=True,
+            scheduled=False, now=None):
+    """``scheduled``: a cron tick, which may only create the week's campaign (see
+    tm_queue_completeness.creation_due). A manual run keeps creating on request."""
+    now = time.time() if now is None else now
     require_access_clearance()
     queues = store.inventory()
     # Successful leagues remain independently verifiable even after a refusal
@@ -94,7 +99,10 @@ def prepare(store, run_id, campaign="", selection="", create=False, refresh=True
         if any(s["campaign"] == "run-" + run_id for _, s in queues):
             return None  # GitHub rerun of a completed campaign, not a new week
         codes = [l["code_tm"].lower() for l in select_leagues(selection)]
-        state = new_campaign("run-" + run_id, codes, refresh)
+        if scheduled and not creation_due(queues, codes, now):
+            return None  # this ISO week already has its campaign, or has not opened
+        state = new_campaign("run-" + run_id, codes, refresh, now=now,
+                             full=not selection)
         # The source's tolerance does not reset on Mondays: keep the rate ladder.
         from scripts.parallel_collection import latest_pace
         pace = latest_pace(queues)
@@ -202,9 +210,27 @@ def seal(store, release_id, state, full=FULL, current=CURRENT,
         store.save(release_id, state)
 
 
+def watch(store, summary_file=None, now=None, codes=None):
+    """Weekly completeness check, read-only. Writes the ledger to the step summary
+    and returns the alerts (annotated as errors): a league that risks missing its
+    weekly update must never be silent, whatever the hourly ticks did."""
+    now = time.time() if now is None else now
+    if codes is None:
+        codes = [l["code_tm"].lower() for l in select_leagues("")]
+    queues = store.inventory()
+    alerts = assess(queues, codes, now)
+    if summary_file:
+        with open(summary_file, "a") as out:
+            out.write("\n" + completeness_summary(queues, codes, now, alerts))
+    for alert in alerts:
+        print(f"::error title=Complétude hebdomadaire::{alert}", flush=True)
+    return alerts
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["prepare", "collect", "seal", "finish", "guard"])
+    parser.add_argument("command", choices=["prepare", "collect", "seal", "finish", "guard",
+                                            "watch"])
     args = parser.parse_args()
     store = GitHubStore()
     run_id = os.environ["GITHUB_RUN_ID"]
@@ -212,12 +238,17 @@ def main():
         guard_existing_archives(store.api("repos/{owner}/{repo}/git/trees/gh-pages?recursive=1"),
                                 ROOT / "gh_pages_build")
         return
+    if args.command == "watch":
+        if watch(store, os.getenv("GITHUB_STEP_SUMMARY")):
+            raise RuntimeError("Weekly completeness alert: a league may miss its update")
+        return
     if args.command == "prepare":
         try:
             prepared = prepare(store, run_id, os.getenv("REQUESTED_CAMPAIGN", ""),
                                os.getenv("REQUESTED_LEAGUES", ""),
                                os.getenv("ALLOW_CREATE") == "true",
-                               os.getenv("REFRESH_SQUADS") != "false")
+                               os.getenv("REFRESH_SQUADS") != "false",
+                               scheduled=os.getenv("GITHUB_EVENT_NAME") == "schedule")
         except CampaignSuspended as error:
             # The run that suspended the campaign already failed loudly. Hourly
             # ticks that only find it still suspended must not each turn red:

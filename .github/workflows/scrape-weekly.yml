@@ -1,7 +1,10 @@
 name: Scrape carrière TM hebdomadaire
 
-# Weekly creation + hourly observation/resumption of an EXISTING queue.
-# GitHub cron can be delayed; no punctuality or source-access guarantee.
+# One campaign per ISO week (Paris): the first scheduled tick from Monday 05:00
+# that finds the week without a campaign creates it; every other tick observes
+# and resumes the EXISTING queue. The last step turns a late, blocked or missing
+# week into a red run naming the leagues (tm_queue_completeness.py).
+# GitHub cron can be delayed or dropped; no punctuality or source-access guarantee.
 on:
   schedule:
     - cron: "15 3 * * 1"
@@ -69,19 +72,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Autoriser la création uniquement au créneau hebdomadaire
-        id: gate
-        env:
-          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
-        run: |
-          CREATE=false
-          OFFSET=$(TZ=Europe/Paris date +%z)
-          case "$TRIGGER_SCHEDULE:$OFFSET" in
-            ":"*|"15 3 * * 1:+0200"|"15 4 * * 1:+0100") CREATE=true ;;
-          esac
-          echo "create=$CREATE" >> "$GITHUB_OUTPUT"
-
-      - name: Rattacher la file durable et vérifier les publications précédentes
+      - name: Rattacher la file durable, créer la campagne de la semaine si elle manque et vérifier les publications précédentes
         id: queue
         if: inputs.skip_scrape != 'true'
         working-directory: artifacts/football-dashboard
@@ -89,7 +80,10 @@ jobs:
           REQUESTED_LEAGUES: ${{ inputs.leagues }}
           REQUESTED_CAMPAIGN: ${{ inputs.campaign_id }}
           REFRESH_SQUADS: ${{ inputs.refresh_squads }}
-          ALLOW_CREATE: ${{ steps.gate.outputs.create }}
+          # Un passage planifié ne crée qu'une campagne complète par semaine ISO
+          # (lundi 05:00 Paris, si la semaine n'en a pas encore) ; un lancement
+          # manuel crée à la demande. La règle est dans collection_queue.prepare.
+          ALLOW_CREATE: "true"
         run: python3 scripts/collection_queue.py prepare
 
       - name: Installer le navigateur seulement si la file autorise une collecte
@@ -171,3 +165,11 @@ jobs:
         env:
           TM_CAMPAIGN_ID: ${{ steps.queue.outputs.campaign }}
         run: python3 scripts/collection_queue.py finish
+
+      # Dernière étape : son échec ne saute rien. Lecture seule de la file ; écrit le
+      # bilan « N/78 ligues à jour » et échoue si une ligue risque de rater sa semaine
+      # (campagne en retard ou bloquée, semaine sans campagne).
+      - name: Contrôler la complétude hebdomadaire
+        if: ${{ always() && inputs.skip_scrape != 'true' }}
+        working-directory: artifacts/football-dashboard
+        run: python3 scripts/collection_queue.py watch

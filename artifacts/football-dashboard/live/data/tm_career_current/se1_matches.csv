@@ -1,6 +1,14 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
 985274,Hugo Fagerberg,2026-08-20T16:30:00+00:00,2026,SEC,8,False,4890977,2,2844,away,2283,2,1,played,40,0,False,120,0,0,0,0,0,0,,,,0,0
 615234,Amar Dzevlan,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031313,2,50885,away,29755,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-10-23T12:30:00+00:00,2026,FS,11,True,5069474,10,41525,away,28155,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-10-03T10:00:00+00:00,2026,FS,11,True,5052870,3,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-09-30T15:00:00+00:00,2026,FS,11,True,5052843,2,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1138039,Malte Ljungkull,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1138039,Malte Ljungkull,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031311,2,9611,away,32845,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 950400,Ahmad Faqa,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052009,2,13674,away,3563,1,4,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
 950400,Ahmad Faqa,2026-09-27T17:00:00+00:00,2026,FS,11,True,5052818,2,13674,away,15737,1,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -10,6 +18,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 866082,Danilo Al-Saed,2026-09-16T16:00:00+00:00,2026,NOPO,8,False,5040699,2,4309,away,13233,2,0,played,24,14,False,60,0,1,0,0,0,0,,,60,0,0
 866082,Danilo Al-Saed,2026-08-23T13:00:00+00:00,2026,NOPO,8,False,4896542,1,4309,away,68367,5,0,played,24,8,False,69,0,1,0,0,0,0,,,69,0,0
 495438,Kevin Ackermann,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,in squad,44,,False,0,0,0,0,0,0,0,,,,0,0
+405375,Colin Rösler,2026-11-08T13:00:00+00:00,2026,DK1,1,False,4921832,14,678,home,2414,2,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+405375,Colin Rösler,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037596,3,678,home,1075,0,0,played,25,3,False,90,0,0,0,0,0,0,86,,,0,0
 405375,Colin Rösler,2026-11-01T17:00:00+00:00,2026,DK1,1,False,4921825,13,678,away,206,0,2,played,25,0,False,2,0,0,0,0,0,0,,88,,0,0
 405375,Colin Rösler,2026-10-28T19:00:00+00:00,2026,DKP,8,False,5060682,4,678,away,1842,2,1,played,25,3,False,90,0,0,1,1,0,0,,,,0,0
 405375,Colin Rösler,2026-10-25T17:00:00+00:00,2026,DK1,1,False,4921819,12,678,home,1063,2,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
@@ -27,16 +37,20 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 405375,Colin Rösler,2026-08-23T12:00:00+00:00,2026,DK1,1,False,4921778,5,678,home,173,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 405375,Colin Rösler,2026-08-20T19:00:00+00:00,2026,ELQ,10,False,5013760,7,678,away,294,1,3,played,25,3,False,57,0,0,0,0,0,0,,,57,0,0
 405375,Colin Rösler,2026-08-14T17:00:00+00:00,2026,DK1,1,False,4921772,4,678,away,1063,1,2,injured,,,False,0,0,0,0,0,0,0,,,,108,0
-405375,Colin Rösler,2026-08-11T16:00:00+00:00,2026,CLQ,10,False,4973502,6,678,away,63993,0,4,played,25,3,False,81,0,0,1,0,1,0,,,81,0,0
-405375,Colin Rösler,2026-08-05T17:10:00+00:00,2026,CLQ,10,False,4973492,5,678,home,63993,2,1,played,25,3,False,81,0,0,0,0,0,0,,,81,0,0
 579280,Rasmus Forsell,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022348,2,9614,away,75138,2,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 976550,Kalipha Jawla,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022341,2,1236,away,2011,4,0,played,9,0,False,73,1,0,0,0,0,0,,,73,0,0
 1184983,Ahmed Saeed,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,7,0,False,27,0,0,0,0,0,0,,63,,0,0
 1184983,Ahmed Saeed,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,7,12,True,76,0,0,0,0,0,0,,,76,0,0
 1184983,Ahmed Saeed,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,7,0,False,35,0,0,0,0,0,0,,55,,0,0
+1069499,Ben Magnusson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069499,Ben Magnusson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069499,Ben Magnusson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069499,Ben Magnusson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
+1069499,Ben Magnusson,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069499,Ben Magnusson,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1362141,Daniel Bengtsson,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,13653,home,1109,1,2,played,0,0,False,57,0,0,0,0,0,0,,,57,0,0
 866243,Simon Sjöholm,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,13653,home,1109,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+716897,Rony Jansson,2026-11-08T12:30:00+00:00,2026,L2,2,False,4916516,11,35,away,187,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 716897,Rony Jansson,2026-11-01T12:30:00+00:00,2026,L2,2,False,4916502,10,35,home,4,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 716897,Rony Jansson,2026-10-23T16:30:00+00:00,2026,L2,2,False,4916493,9,35,away,105,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 716897,Rony Jansson,2026-10-17T18:30:00+00:00,2026,L2,2,False,4916484,8,35,away,42,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -47,10 +61,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 716897,Rony Jansson,2026-08-30T11:30:00+00:00,2026,L2,2,False,4916438,3,35,home,2,1,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 716897,Rony Jansson,2026-08-23T16:00:00+00:00,2026,DFB,8,False,4893852,1,35,away,56,0,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 716897,Rony Jansson,2026-08-14T16:30:00+00:00,2026,L2,2,False,4916433,2,35,away,269,2,2,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-716897,Rony Jansson,2026-08-09T11:30:00+00:00,2026,L2,2,False,4916125,1,35,home,65,1,1,played,2,8,False,11,0,0,0,0,0,0,,79,,0,0
 718152,Otso Liimatta,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-687622,Elliot Stroud,2026-10-31T15:00:00+00:00,2026,GB1,1,False,4899340,9,3008,home,677,2,2,played,21,9,False,60,0,0,0,0,0,0,52,,60,0,0
-687622,Elliot Stroud,2026-10-25T14:00:00+00:00,2026,GB1,1,False,4899330,8,3008,home,1148,1,1,played,21,9,False,90,0,0,0,0,0,0,,,,0,0
+687622,Elliot Stroud,2026-11-07T15:00:00+00:00,2026,GB1,1,False,4899345,10,3008,away,11,0,1,played,21,9,False,75,0,0,2,1,1,0,75,,75,0,0
+687622,Elliot Stroud,2026-10-31T15:00:00+00:00,2026,GB1,1,False,4899340,9,3008,home,677,2,2,played,21,11,False,60,0,0,0,0,0,0,52,,60,0,0
+687622,Elliot Stroud,2026-10-25T14:00:00+00:00,2026,GB1,1,False,4899330,8,3008,home,1148,1,1,played,21,11,False,90,0,0,0,0,0,0,,,,0,0
 687622,Elliot Stroud,2026-10-17T14:00:00+00:00,2026,GB1,1,False,4899311,7,3008,away,931,0,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 687622,Elliot Stroud,2026-10-11T13:00:00+00:00,2026,GB1,1,False,4899302,6,3008,home,29,2,2,played,21,0,False,26,0,1,0,0,0,0,,64,,0,0
 687622,Elliot Stroud,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825148,4,3557,away,3447,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -64,18 +78,23 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 687622,Elliot Stroud,2026-08-29T14:00:00+00:00,2026,GB1,1,False,4899195,2,3008,away,990,1,0,played,21,11,False,59,0,0,1,0,1,0,54,,59,0,0
 687622,Elliot Stroud,2026-08-25T18:45:00+00:00,2026,CGB,14,False,5016470,3,3008,away,512,6,5,played,21,0,False,13,0,0,0,0,0,0,,77,,0,0
 687622,Elliot Stroud,2026-08-22T11:30:00+00:00,2026,GB1,1,False,4899183,1,3008,home,985,2,0,played,21,11,False,71,0,0,0,0,0,0,,,71,0,0
+1449278,Zebedee Kennedy,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,played,21,0,False,23,0,0,0,0,0,0,,67,,0,0
+1449278,Zebedee Kennedy,2026-11-08T17:00:00+00:00,2026,IT1,1,False,4893446,11,1047,away,46,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1449278,Zebedee Kennedy,2026-11-08T14:00:00+00:00,2026,IJ1,7,False,4906588,10,14694,away,8505,3,2,in squad,58,,False,0,0,0,0,0,0,0,,,,0,0
+1449278,Zebedee Kennedy,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035990,4,1047,away,826,9,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1449278,Zebedee Kennedy,2026-11-02T15:00:00+00:00,2026,ITJ5,7,False,4989129,8,49777,away,49568,0,2,played,0,12,False,90,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-11-01T11:30:00+00:00,2026,IT1,1,False,4893435,10,1047,home,607,1,0,in squad,58,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-31T14:00:00+00:00,2026,IJ1,7,False,4906577,9,14694,home,11998,2,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-28T10:00:00+00:00,2026,CITP,15,False,4913871,3,14694,home,8525,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1449278,Zebedee Kennedy,2026-10-25T10:00:00+00:00,2026,IJ1,7,False,4906567,8,14694,away,11676,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-25T10:00:00+00:00,2026,ITJ5,7,False,4989127,7,49777,away,49869,2,0,played,0,12,False,90,1,0,0,0,0,0,,,,0,0
+1449278,Zebedee Kennedy,2026-10-25T10:00:00+00:00,2026,IJ1,7,False,4906567,8,14694,away,11676,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-18T11:00:00+00:00,2026,IJ1,7,False,4906556,7,14694,home,16996,1,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-17T13:00:00+00:00,2026,ITJ5,7,False,4989117,6,49777,home,84578,4,0,played,0,12,False,90,1,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-11T13:00:00+00:00,2026,ITJ5,7,False,4989113,5,49777,away,49766,5,2,played,0,14,False,90,2,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-10T09:00:00+00:00,2026,IJ1,7,False,4906550,6,14694,away,5380,2,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-10-06T12:30:00+00:00,2026,ITJ5,7,False,4989105,4,49777,home,100330,4,1,played,0,14,False,90,1,1,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,played,22,0,False,20,0,0,0,0,0,0,,70,,0,0
-1449278,Zebedee Kennedy,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,22,0,False,21,0,0,0,0,0,0,,69,,0,0
+1449278,Zebedee Kennedy,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,22,6,False,21,0,0,0,0,0,0,,69,,0,0
 1449278,Zebedee Kennedy,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,22,12,False,69,1,0,0,0,0,0,,,69,0,0
 1449278,Zebedee Kennedy,2026-09-20T09:00:00+00:00,2026,IJ1,7,False,4906536,5,14694,home,14848,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-09-19T09:00:00+00:00,2026,ITJ5,7,False,4989100,3,49777,away,49577,0,2,played,0,12,False,80,0,0,0,0,0,0,,,80,0,0
@@ -85,9 +104,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1449278,Zebedee Kennedy,2026-09-04T13:00:00+00:00,2026,IJ1,7,False,4906523,3,14694,away,12130,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-08-29T14:45:00+00:00,2026,IJ1,7,False,4906508,2,14694,home,11008,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1449278,Zebedee Kennedy,2026-08-23T09:00:00+00:00,2026,IJ1,7,False,4906497,1,14694,away,8492,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1449278,Zebedee Kennedy,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1449278,Zebedee Kennedy,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1449278,Zebedee Kennedy,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+490288,Mamadouba Diaby,2026-11-08T11:00:00+00:00,2026,E3G2,3,False,4984991,11,43454,away,11972,1,1,played,21,4,False,90,0,0,0,0,0,0,74,,,0,0
 490288,Mamadouba Diaby,2026-11-01T15:00:00+00:00,2026,E3G2,3,False,4984979,10,43454,home,49957,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 490288,Mamadouba Diaby,2026-10-24T11:00:00+00:00,2026,E3G2,3,False,4984998,9,43454,home,171,1,0,played,21,4,False,45,0,0,0,0,0,0,14,,46,0,0
 490288,Mamadouba Diaby,2026-10-18T14:00:00+00:00,2026,E3G2,3,False,4984971,8,43454,away,12697,2,2,played,21,4,False,45,0,0,0,0,0,0,,,46,0,0
@@ -111,11 +128,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 664349,Leon Hien,2026-08-27T18:30:00+00:00,2026,ECLQ,10,False,5013837,8,1293,away,1237,0,4,played,21,0,False,69,0,0,1,0,1,0,,12,81,0,0
 664349,Leon Hien,2026-08-22T14:00:00+00:00,2026,NOPO,8,False,4896499,1,1293,away,6389,5,0,played,21,0,False,27,0,0,0,0,0,0,,63,,0,0
 664349,Leon Hien,2026-08-20T17:00:00+00:00,2026,ECLQ,10,False,5013813,7,1293,home,1237,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
-664349,Leon Hien,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973763,6,1293,home,7769,2,1,played,21,3,False,90,1,0,0,0,0,0,,,,0,0
-664349,Leon Hien,2026-08-06T16:30:00+00:00,2026,ECLQ,10,False,4973733,5,1293,away,7769,5,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1377921,Alvin Didriksson,2026-07-30T17:00:00+00:00,2026,ECLQ,10,False,4898003,4,7009,away,2778,0,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1377921,Alvin Didriksson,2026-07-23T17:00:00+00:00,2026,ECLQ,10,False,4897966,3,7009,home,2778,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1164781,Vilmer Tyrén,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022342,2,8882,away,23438,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1368526,Sion Oppong,2026-11-06T19:45:00+00:00,2026,FR1,1,False,4894989,10,415,home,667,3,1,played,11,11,False,72,0,1,1,0,1,0,,,72,0,0
 1368526,Sion Oppong,2026-11-01T19:45:00+00:00,2026,FR1,1,False,4894976,9,415,away,244,0,2,played,11,0,False,45,0,0,1,0,1,0,,46,,0,0
 1368526,Sion Oppong,2026-10-25T16:15:00+00:00,2026,FR1,1,False,4894971,8,415,home,1095,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1368526,Sion Oppong,2026-10-16T18:45:00+00:00,2026,FR1,1,False,4894956,7,415,away,1164,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -128,6 +144,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 836892,Abdi Sabriye,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047008,4,13974,away,3591,0,2,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 836892,Abdi Sabriye,2026-09-25T16:00:00+00:00,2026,AFCQ,19,True,5046878,3,13974,away,6186,1,2,played,11,12,False,35,0,0,0,0,0,0,,,35,0,0
 1236037,Carl Millard Javette,2026-06-10T16:00:00+00:00,2026,SEC,8,False,4889197,1,4414,away,8915,2,4,played,19,0,False,120,0,0,0,0,0,0,,,,0,0
+1072185,Elohim Kaboré,2026-11-06T19:45:00+00:00,2026,BE1,1,False,4911876,11,28643,away,3057,0,3,played,9,10,False,85,0,0,2,0,1,1,,,85,0,0
 1072185,Elohim Kaboré,2026-10-31T19:45:00+00:00,2026,BE1,1,False,4911870,10,28643,home,3948,1,2,played,9,10,False,65,0,0,1,0,1,0,,,65,0,0
 1072185,Elohim Kaboré,2026-10-24T18:45:00+00:00,2026,BE1,1,False,4911826,9,28643,away,968,4,4,played,9,14,False,83,1,0,2,1,1,0,,,83,0,0
 1072185,Elohim Kaboré,2026-10-16T18:30:00+00:00,2026,CCB,8,False,5069409,3,28643,home,42891,3,0,played,9,0,False,45,0,0,0,0,0,0,,,46,0,0
@@ -141,7 +158,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1072185,Elohim Kaboré,2026-08-28T18:45:00+00:00,2026,BE1,1,False,4911797,4,28643,away,1184,0,4,played,9,0,False,45,0,0,1,0,0,1,,46,,0,0
 1072185,Elohim Kaboré,2026-08-22T14:00:00+00:00,2026,BE1,1,False,4911835,3,28643,away,3508,0,4,played,9,0,False,27,0,0,1,1,0,0,,63,,0,0
 1072185,Elohim Kaboré,2026-08-16T11:30:00+00:00,2026,BE1,1,False,4911821,2,28643,home,58,1,0,played,9,0,False,3,0,0,0,0,0,0,,87,,0,0
-1072185,Elohim Kaboré,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
+786613,Gustav Friberg,2026-11-07T12:00:00+00:00,2026,DK2,2,False,4919269,14,12275,away,49675,1,3,played,5,4,False,78,0,0,0,0,0,0,29,,78,0,0
 786613,Gustav Friberg,2026-10-31T12:00:00+00:00,2026,DK2,2,False,4919327,13,12275,home,23297,3,2,played,5,4,False,73,0,0,0,0,0,0,,,73,0,0
 786613,Gustav Friberg,2026-10-24T12:00:00+00:00,2026,DK2,2,False,4919342,12,12275,away,362,0,1,played,5,0,False,6,0,0,0,0,0,0,,84,,0,0
 786613,Gustav Friberg,2026-10-16T17:00:00+00:00,2026,DK2,2,False,4919310,11,12275,home,19657,2,1,played,5,4,False,90,0,0,1,0,1,0,,,,0,0
@@ -154,7 +171,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 786613,Gustav Friberg,2026-08-26T15:30:00+00:00,2026,DKP,8,False,5014459,2,12275,away,77251,4,1,played,5,4,False,55,0,0,0,0,0,0,,,55,0,0
 786613,Gustav Friberg,2026-08-23T11:00:00+00:00,2026,DK2,2,False,4919258,5,12275,away,23297,2,2,played,5,0,False,16,0,0,0,0,0,0,,74,,0,0
 786613,Gustav Friberg,2026-08-14T17:00:00+00:00,2026,DK2,2,False,4919248,4,12275,home,443,2,3,played,5,0,False,86,0,0,0,0,0,0,,4,,0,0
-786613,Gustav Friberg,2026-08-09T12:00:00+00:00,2026,DK2,2,False,4919245,3,12275,away,1053,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+783373,Robbie Ure,2026-11-06T20:00:00+00:00,2026,ES1,1,False,4918442,12,368,home,1108,0,0,played,9,0,False,16,0,0,0,0,0,0,,74,,0,0
 783373,Robbie Ure,2026-11-01T13:00:00+00:00,2026,ES1,1,False,4918430,11,368,away,3709,1,3,played,9,0,False,18,0,0,0,0,0,0,,72,,0,0
 783373,Robbie Ure,2026-10-29T20:00:00+00:00,2026,CDR,8,False,5074789,3,368,away,76620,3,0,played,9,14,False,90,1,0,5,1,3,1,,,,0,0
 783373,Robbie Ure,2026-10-26T20:00:00+00:00,2026,ES1,1,False,4918423,10,368,home,331,2,0,played,9,0,False,27,0,0,1,0,0,1,,63,,0,0
@@ -171,6 +188,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 783373,Robbie Ure,2026-08-29T19:30:00+00:00,2026,ES1,1,False,4909487,3,368,home,13,1,3,played,9,14,False,90,0,1,3,0,2,1,,,,0,0
 783373,Robbie Ure,2026-08-22T15:00:00+00:00,2026,ES1,1,False,4909468,2,368,away,621,3,1,played,9,14,False,90,0,0,0,0,0,0,,,,0,0
 783373,Robbie Ure,2026-08-15T19:30:00+00:00,2026,ES1,1,False,4909448,1,368,home,367,2,1,played,9,0,False,45,0,1,1,0,1,0,,46,,0,0
+1229808,Abdoulie Manneh,2026-11-07T19:45:00+00:00,2026,BE1,1,False,4911879,11,520,away,3901,1,0,injured,,,False,0,0,0,0,0,0,0,,,,299,0
 1229808,Abdoulie Manneh,2026-11-01T12:30:00+00:00,2026,BE1,1,False,4911868,10,520,home,1096,2,1,played,20,10,False,71,0,0,2,1,0,1,,,71,0,0
 1229808,Abdoulie Manneh,2026-10-25T18:15:00+00:00,2026,BE1,1,False,4911830,9,520,away,3948,2,5,played,20,10,False,71,0,0,2,0,1,1,,,71,0,0
 1229808,Abdoulie Manneh,2026-10-16T18:30:00+00:00,2026,CCB,8,False,5069416,3,520,away,3789,2,1,played,20,0,False,90,1,0,0,0,0,0,,,,0,0
@@ -181,7 +199,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1229808,Abdoulie Manneh,2026-08-29T18:45:00+00:00,2026,BE1,1,False,4911796,4,520,home,5026,0,1,injured,,,False,0,0,0,0,0,0,0,,,,355,0
 1229808,Abdoulie Manneh,2026-08-23T16:30:00+00:00,2026,BE1,1,False,4911838,3,520,away,2282,0,1,injured,,,False,0,0,0,0,0,0,0,,,,355,0
 1229808,Abdoulie Manneh,2026-08-14T18:45:00+00:00,2026,BE1,1,False,4911818,2,520,home,475,3,3,injured,,,False,0,0,0,0,0,0,0,,,,355,0
-1229808,Abdoulie Manneh,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+375391,Joel Asoro,2026-11-07T17:00:00+00:00,2026,ZYP1,1,False,4971078,9,429,away,1402,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 375391,Joel Asoro,2026-10-31T15:00:00+00:00,2026,ZYP1,1,False,4970335,8,429,home,45457,2,2,played,29,12,False,90,0,0,0,0,0,0,,,90,0,0
 375391,Joel Asoro,2026-10-25T15:00:00+00:00,2026,ZYP1,1,False,4970313,7,429,away,42109,5,0,played,29,0,False,71,1,0,0,0,0,0,,19,,0,0
 375391,Joel Asoro,2026-10-17T16:00:00+00:00,2026,ZYP1,1,False,4970308,6,429,home,18945,4,2,played,29,0,False,32,0,0,0,0,0,0,,58,,0,0
@@ -191,6 +209,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 375391,Joel Asoro,2026-09-05T16:00:00+00:00,2026,ZYP1,1,False,4970276,2,429,home,3899,3,1,played,29,0,False,45,0,0,0,0,0,0,,46,,0,0
 375391,Joel Asoro,2026-08-29T17:00:00+00:00,2026,ZYP1,1,False,4970256,1,429,away,10586,2,2,played,29,0,False,2,0,0,0,0,0,0,,88,,0,0
 375391,Joel Asoro,2026-08-11T17:00:00+00:00,2026,ECLQ,10,False,4973765,6,429,home,1100,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1149188,Rockson Yeboah,2026-11-07T17:30:00+00:00,2026,ES1,1,False,4918440,12,331,home,621,1,1,in squad,48,,False,0,0,0,0,0,0,0,,,,0,0
+1149188,Rockson Yeboah,2026-11-02T20:00:00+00:00,2026,ES1,1,False,4918427,11,331,away,897,1,2,in squad,48,,False,0,0,0,0,0,0,0,,,,0,0
 1149188,Rockson Yeboah,2026-10-29T18:00:00+00:00,2026,CDR,8,False,5074758,3,331,away,134733,6,0,played,48,3,False,90,0,0,1,0,1,0,,,,0,0
 1149188,Rockson Yeboah,2026-10-26T20:00:00+00:00,2026,ES1,1,False,4918423,10,331,away,368,0,2,in squad,48,,False,0,0,0,0,0,0,0,,,,0,0
 1149188,Rockson Yeboah,2026-10-18T12:00:00+00:00,2026,ES1,1,False,4909734,9,331,home,630,2,0,in squad,48,,False,0,0,0,0,0,0,0,,,,0,0
@@ -204,7 +224,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1149188,Rockson Yeboah,2026-08-31T17:30:00+00:00,2026,ES1,1,False,4909483,3,331,home,3709,1,0,in squad,48,,False,0,0,0,0,0,0,0,,,,0,0
 1149188,Rockson Yeboah,2026-08-27T18:30:00+00:00,2026,ES1,1,False,4909442,1,331,away,940,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1149188,Rockson Yeboah,2026-08-24T17:30:00+00:00,2026,ES1,1,False,4909475,2,331,home,3368,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1149188,Rockson Yeboah,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+666951,Saidou Alioum,2026-11-11T17:00:00+00:00,2026,TSP,8,False,5076435,5,1322,away,24325,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+666951,Saidou Alioum,2026-11-08T14:00:00+00:00,2026,TS1,1,False,4902073,14,1322,home,5546,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,1
+666951,Saidou Alioum,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037586,3,1322,away,48325,1,1,played,17,14,False,66,0,0,1,0,1,0,,,66,0,0
 666951,Saidou Alioum,2026-10-31T14:00:00+00:00,2026,TS1,1,False,4902066,13,1322,home,62,0,5,played,17,11,False,45,0,0,0,0,0,0,73,46,,0,0
 666951,Saidou Alioum,2026-10-25T12:00:00+00:00,2026,TS1,1,False,4902053,12,1322,away,1897,2,1,played,17,11,False,23,0,0,1,1,0,0,,67,,0,0
 666951,Saidou Alioum,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037590,2,1322,home,1237,0,0,played,17,13,False,62,0,0,0,0,0,0,,,62,0,0
@@ -222,10 +244,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 666951,Saidou Alioum,2026-08-30T15:00:00+00:00,2026,TS1,1,False,4902000,6,1322,away,814,0,2,played,17,11,False,60,0,0,2,0,2,0,,,60,0,0
 666951,Saidou Alioum,2026-08-27T16:00:00+00:00,2026,ECLQ,10,False,5013844,8,1322,home,124,5,3,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 666951,Saidou Alioum,2026-08-20T18:45:00+00:00,2026,ECLQ,10,False,5013820,7,1322,away,124,0,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-666951,Saidou Alioum,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,11,0,False,7,1,0,0,0,0,0,,83,,0,0
-666951,Saidou Alioum,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 156937,Johan Hammar,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1065043,Pontus Dahbo,2026-11-02T19:00:00+00:00,2026,NL2,2,False,4914170,13,499,away,8817,1,1,played,16,0,False,28,0,0,2,1,1,0,,62,,0,0
+1065043,Pontus Dahbo,2026-11-08T11:15:00+00:00,2026,NL2,2,False,4914191,14,499,home,642,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1065043,Pontus Dahbo,2026-11-02T19:00:00+00:00,2026,NL2,2,False,4914170,13,499,away,8817,1,1,played,16,10,False,28,0,0,2,1,1,0,,62,,0,0
 1065043,Pontus Dahbo,2026-10-28T19:00:00+00:00,2026,NLP,8,False,5065497,3,499,away,1426,2,0,played,16,10,False,18,0,0,0,0,0,0,,72,,0,0
 1065043,Pontus Dahbo,2026-10-23T18:00:00+00:00,2026,NL2,2,False,4914161,12,499,home,1283,0,2,played,16,10,False,45,0,0,0,0,0,0,,,46,0,0
 1065043,Pontus Dahbo,2026-10-16T18:00:00+00:00,2026,NL2,2,False,4914144,11,499,away,3892,1,0,played,16,10,False,58,0,0,0,0,0,0,44,,58,0,0
@@ -238,6 +259,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1065043,Pontus Dahbo,2026-08-28T18:00:00+00:00,2026,NL2,2,False,4913019,4,499,away,404,4,1,played,16,10,False,64,0,0,1,0,1,0,,,64,0,0
 1065043,Pontus Dahbo,2026-08-21T18:00:00+00:00,2026,NL2,2,False,4913044,3,499,home,723,0,3,played,16,10,False,25,0,0,0,0,0,0,,65,,0,0
 1065043,Pontus Dahbo,2026-08-17T18:00:00+00:00,2026,NL2,2,False,4913018,2,499,away,17596,3,1,played,16,10,False,27,0,0,1,0,1,0,,63,,0,0
+806994,Mikkel Ladefoged,2026-11-07T15:00:00+00:00,2026,GB2,2,False,4923533,15,1198,away,1039,1,2,played,11,14,False,59,0,0,1,0,1,0,,,59,0,0
+806994,Mikkel Ladefoged,2026-11-03T19:45:00+00:00,2026,GB2,2,False,4923519,14,1198,away,1010,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 806994,Mikkel Ladefoged,2026-10-31T12:30:00+00:00,2026,GB2,2,False,4923479,13,1198,home,337,1,3,played,11,14,False,84,0,1,2,0,2,0,25,,84,0,0
 806994,Mikkel Ladefoged,2026-10-24T14:00:00+00:00,2026,GB2,2,False,4923493,12,1198,home,1132,4,1,played,11,14,False,81,2,0,4,2,2,0,,,81,0,0
 806994,Mikkel Ladefoged,2026-10-17T11:30:00+00:00,2026,GB2,2,False,4923446,11,1198,away,1028,2,2,played,11,0,False,1,0,0,0,0,0,0,,90,,0,0
@@ -251,6 +274,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 806994,Mikkel Ladefoged,2026-09-01T18:45:00+00:00,2026,GB2,2,False,4911152,4,1198,home,164,0,0,played,11,0,False,13,0,0,0,0,0,0,,77,,0,0
 806994,Mikkel Ladefoged,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1219990,Elton Hedström,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022342,2,8882,away,23438,1,0,played,0,0,False,25,0,0,0,0,0,0,,65,,0,0
+980081,Demirel Hodzic,2026-11-07T17:00:00+00:00,2026,KR1,1,False,4892833,13,999,home,144,3,1,played,5,6,False,90,0,0,0,0,0,0,90,,,0,0
+980081,Demirel Hodzic,2026-11-03T16:00:00+00:00,2026,KRC,8,False,5054733,3,999,home,20949,3,0,played,5,0,False,25,0,0,0,0,0,0,,65,,0,0
 980081,Demirel Hodzic,2026-10-30T17:00:00+00:00,2026,KR1,1,False,4892827,12,999,away,2362,2,0,played,5,6,False,90,0,0,0,0,0,0,,,,0,0
 980081,Demirel Hodzic,2026-10-26T17:00:00+00:00,2026,KR1,1,False,4892822,11,999,home,447,2,2,played,5,6,False,60,0,0,0,0,0,0,30,,60,0,0
 980081,Demirel Hodzic,2026-10-17T13:00:00+00:00,2026,KR1,1,False,4892818,10,999,away,11194,0,2,played,5,6,False,69,0,0,0,0,0,0,,,69,0,0
@@ -261,6 +286,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 980081,Demirel Hodzic,2026-09-06T13:00:00+00:00,2026,IT4B,4,False,5011075,1,41107,home,46293,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 980081,Demirel Hodzic,2026-09-02T12:00:00+00:00,2026,PLIC,16,False,5022236,1,41107,away,9261,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 980081,Demirel Hodzic,2026-08-29T16:00:00+00:00,2026,ITC4,21,False,5014421,2,41107,home,27458,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+986786,Salifou Soumah,2026-11-07T17:30:00+00:00,2026,GR1,1,False,4973581,10,6418,away,605,0,3,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 986786,Salifou Soumah,2026-11-01T16:00:00+00:00,2026,GR1,1,False,4973577,9,6418,home,653,0,1,played,11,0,False,32,0,0,0,0,0,0,,58,,0,0
 986786,Salifou Soumah,2026-10-24T17:00:00+00:00,2026,GR1,1,False,4973565,8,6418,away,2441,0,5,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 986786,Salifou Soumah,2026-10-18T14:00:00+00:00,2026,GR1,1,False,4973563,7,6418,home,683,0,2,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
@@ -270,6 +296,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 986786,Salifou Soumah,2026-09-06T17:00:00+00:00,2026,GR1,1,False,4973526,3,6418,away,2672,2,0,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 986786,Salifou Soumah,2026-08-29T18:30:00+00:00,2026,GR1,1,False,4973515,2,6418,home,9,2,0,played,11,0,False,12,1,0,2,1,1,0,,78,,0,0
 986786,Salifou Soumah,2026-08-23T18:30:00+00:00,2026,GR1,1,False,4973521,1,6418,home,6676,3,1,played,11,0,False,6,0,0,0,0,0,0,,84,,0,0
+989508,Victor Gonçalves Andersson,2026-11-08T18:00:00+00:00,2026,PO1,1,False,4921595,11,2420,home,720,1,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+989508,Victor Gonçalves Andersson,2026-11-02T20:15:00+00:00,2026,PO1,1,False,4921609,10,2420,away,2424,0,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 989508,Victor Gonçalves Andersson,2026-10-23T19:45:00+00:00,2026,PO1,1,False,4921622,9,2420,home,1301,5,0,played,19,11,False,24,0,0,0,0,0,0,,66,,0,0
 989508,Victor Gonçalves Andersson,2026-10-17T13:00:00+00:00,2026,POPO,8,False,5064282,3,2420,away,67660,1,0,played,19,11,False,90,0,0,0,0,0,0,82,,,0,0
 989508,Victor Gonçalves Andersson,2026-10-11T17:00:00+00:00,2026,PO1,1,False,4921469,8,2420,away,294,0,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
@@ -279,6 +307,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 989508,Victor Gonçalves Andersson,2026-08-31T19:15:00+00:00,2026,PO1,1,False,4921527,4,2420,away,1075,0,1,played,19,12,False,14,0,0,0,0,0,0,,76,,0,0
 989508,Victor Gonçalves Andersson,2026-08-23T14:30:00+00:00,2026,PO1,1,False,4921478,3,2420,home,982,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 989508,Victor Gonçalves Andersson,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+667869,Johan Karlsson,2026-11-06T17:00:00+00:00,2026,DK2,2,False,4919267,14,443,home,5776,1,0,played,23,5,False,90,0,0,1,0,1,0,,,,0,0
 667869,Johan Karlsson,2026-11-01T13:00:00+00:00,2026,DK2,2,False,4919330,13,443,away,19657,1,1,played,23,5,False,90,0,0,1,0,1,0,,,,0,0
 667869,Johan Karlsson,2026-10-24T16:30:00+00:00,2026,DK2,2,False,4919339,12,443,home,5784,0,0,played,23,5,False,90,0,0,0,0,0,0,,,,0,0
 667869,Johan Karlsson,2026-10-17T11:30:00+00:00,2026,DK2,2,False,4919308,11,443,away,1053,1,0,played,23,5,False,90,0,0,0,0,0,0,,,,0,0
@@ -293,6 +322,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 667869,Johan Karlsson,2026-08-21T16:00:00+00:00,2026,DK2,2,False,4919255,5,443,home,3426,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1584715,Philip Abrahamsson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1584715,Philip Abrahamsson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1010277,Bork Bang-Kittilsen,2026-11-06T17:00:00+00:00,2026,DK2,2,False,4919267,14,5776,away,443,0,1,played,8,0,False,6,0,0,2,2,0,0,,84,,0,0
 1010277,Bork Bang-Kittilsen,2026-10-31T12:30:00+00:00,2026,DK2,2,False,4919325,13,5776,home,362,3,1,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1010277,Bork Bang-Kittilsen,2026-10-24T11:30:00+00:00,2026,DK2,2,False,4919340,12,5776,away,3426,1,2,played,8,12,False,68,0,0,1,0,1,0,,,68,0,0
 1010277,Bork Bang-Kittilsen,2026-10-17T16:30:00+00:00,2026,DK2,2,False,4919307,11,5776,home,5818,3,0,played,8,12,False,45,0,0,1,0,0,1,,,46,0,0
@@ -303,7 +333,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1010277,Bork Bang-Kittilsen,2026-08-30T11:00:00+00:00,2026,DK2,2,False,4919286,6,5776,away,1894,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1010277,Bork Bang-Kittilsen,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 1010277,Bork Bang-Kittilsen,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-1010277,Bork Bang-Kittilsen,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+405313,Hampus Finndell,2026-11-08T13:45:00+00:00,2026,PL1,1,False,4895845,14,2300,home,6456,1,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
+405313,Hampus Finndell,2026-11-05T17:45:00+00:00,2026,EL,10,False,5037487,4,2300,away,156,0,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 405313,Hampus Finndell,2026-10-31T13:45:00+00:00,2026,PL1,1,False,4895830,13,2300,away,30974,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 405313,Hampus Finndell,2026-10-28T19:30:00+00:00,2026,POPU,8,False,5055177,3,2300,away,4000,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 405313,Hampus Finndell,2026-10-25T13:45:00+00:00,2026,PL1,1,False,4895820,12,2300,home,2118,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -319,10 +350,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 405313,Hampus Finndell,2026-08-30T12:45:00+00:00,2026,PL1,1,False,4895762,6,2300,away,9644,5,2,played,14,0,False,21,0,0,0,0,0,0,,69,,0,0
 405313,Hampus Finndell,2026-08-27T16:00:00+00:00,2026,ELQ,10,False,5013797,8,2300,away,41133,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1330788,Wilson Lindberg Uhrström,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,18,0,False,2,0,0,0,0,0,0,,88,,0,0
-1330788,Wilson Lindberg Uhrström,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
-1330788,Wilson Lindberg Uhrström,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 496989,Nino Zugelj,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,11,0,False,55,1,0,0,0,0,0,,,55,0,0
 1420029,Finlay Neat,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031311,2,9611,away,32845,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1303481,Frode Aronsson,2026-11-07T12:30:00+00:00,2026,DK2,2,False,4919265,14,3426,away,5818,1,0,injured,,,False,0,0,0,0,0,0,0,,,,305,0
 1303481,Frode Aronsson,2026-10-31T15:00:00+00:00,2026,DK2,2,False,4919329,13,3426,home,1894,1,1,injured,,,False,0,0,0,0,0,0,0,,,,305,0
 1303481,Frode Aronsson,2026-10-28T16:00:00+00:00,2026,DKP,8,False,5060683,4,3426,home,2778,0,1,injured,,,False,0,0,0,0,0,0,0,,,,305,0
 1303481,Frode Aronsson,2026-10-24T11:30:00+00:00,2026,DK2,2,False,4919340,12,3426,home,5776,2,1,injured,,,False,0,0,0,0,0,0,0,,,,305,0
@@ -334,6 +364,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1303481,Frode Aronsson,2026-09-05T12:00:00+00:00,2026,DK2,2,False,4919274,7,3426,away,5776,0,1,played,2,5,False,61,0,0,0,0,0,0,,,61,0,0
 1303481,Frode Aronsson,2026-08-30T13:00:00+00:00,2026,DK2,2,False,4919288,6,3426,home,19657,0,2,played,2,0,False,28,0,0,0,0,0,0,,62,,0,0
 1303481,Frode Aronsson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,28,0,False,86,1,0,0,0,0,0,,,86,0,0
+620696,Ibrahim Diabate,2026-11-08T10:30:00+00:00,2026,TR1,1,False,4934439,11,39722,away,126,1,2,played,19,14,False,90,1,0,2,1,1,0,,,,0,0
 620696,Ibrahim Diabate,2026-10-31T10:30:00+00:00,2026,TR1,1,False,4934120,10,39722,home,37951,1,3,played,19,14,False,22,1,0,3,1,2,0,,68,,0,0
 620696,Ibrahim Diabate,2026-10-24T13:00:00+00:00,2026,TR1,1,False,4934085,9,39722,away,2832,3,1,played,19,14,False,13,0,0,0,0,0,0,,77,,0,0
 620696,Ibrahim Diabate,2026-10-17T10:30:00+00:00,2026,TR1,1,False,4934102,8,39722,home,7160,2,0,played,19,14,False,19,0,0,0,0,0,0,,71,,0,0
@@ -349,6 +380,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 300536,Erik Lindell,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,played,12,0,False,19,0,0,0,0,0,0,,71,,0,0
 1519161,Alexander Berisson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519159,Olle Leonardsson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+418559,Erik Botheim,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035994,4,239,home,63993,4,1,played,22,14,False,90,2,0,4,2,0,2,,,,0,0
 418559,Erik Botheim,2026-10-21T19:00:00+00:00,2026,CL,10,False,5035907,3,239,away,405,1,3,played,22,14,False,63,0,0,0,0,0,0,,,63,0,0
 418559,Erik Botheim,2026-10-13T19:00:00+00:00,2026,CL,10,False,5035991,2,239,home,27,3,3,played,22,14,False,85,0,1,1,0,1,0,,,85,0,0
 418559,Erik Botheim,2026-10-04T18:45:00+00:00,2026,UNLA,11,True,4825115,4,3440,away,3300,1,2,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
@@ -362,6 +394,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 579292,Noel Milleskog,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1110466,August Ljungberg,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,played,36,0,False,90,0,0,0,0,0,0,,,,0,0
 864665,Henry Atola Meja,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+805190,Sebastian Clemmensen,2026-11-08T20:30:00+00:00,2026,PO1,1,False,4921592,11,2425,home,1075,0,1,played,80,8,False,69,0,0,0,0,0,0,,,69,0,0
 805190,Sebastian Clemmensen,2026-11-01T18:00:00+00:00,2026,PO1,1,False,4921605,10,2425,away,7788,1,2,played,80,8,False,81,0,0,2,1,1,0,,,81,0,0
 805190,Sebastian Clemmensen,2026-10-25T18:00:00+00:00,2026,PO1,1,False,4921619,9,2425,home,3329,0,4,played,80,12,False,65,0,0,1,0,0,1,,,65,0,0
 805190,Sebastian Clemmensen,2026-10-17T16:00:00+00:00,2026,POPO,8,False,5064285,3,2425,away,3352,1,0,played,80,12,False,90,0,0,0,0,0,0,,,,0,0
@@ -370,16 +403,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 805190,Sebastian Clemmensen,2026-09-14T17:45:00+00:00,2026,PO1,1,False,4921513,6,2425,home,2431,3,3,played,80,8,False,54,0,0,1,0,0,1,,,54,0,0
 805190,Sebastian Clemmensen,2026-09-06T14:30:00+00:00,2026,PO1,1,False,4921503,5,2425,away,2423,0,4,played,80,12,False,45,0,0,0,0,0,0,,46,,0,0
 805190,Sebastian Clemmensen,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-805190,Sebastian Clemmensen,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,7,12,False,90,0,0,0,0,0,0,,,,0,0
-805190,Sebastian Clemmensen,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,7,8,False,90,0,0,0,0,0,0,,,,0,0
+369911,Filip Ottosson,2026-11-05T17:45:00+00:00,2026,EL,10,False,5037482,4,353,home,941,0,1,played,21,6,False,90,0,0,1,1,0,0,,,,0,0
 369911,Filip Ottosson,2026-10-28T17:00:00+00:00,2026,NOPO,8,False,5074322,3,353,home,2038,2,1,played,21,0,False,25,0,0,0,0,0,0,,65,,0,0
 369911,Filip Ottosson,2026-10-22T19:00:00+00:00,2026,EL,10,False,5037481,3,353,home,681,0,6,played,21,6,False,90,0,0,1,0,0,1,,,,0,0
 369911,Filip Ottosson,2026-10-15T16:45:00+00:00,2026,EL,10,False,5037376,2,353,away,197,1,1,played,21,6,False,90,0,0,0,0,0,0,,,,0,0
 369911,Filip Ottosson,2026-10-01T16:00:00+00:00,2026,NOPO,8,False,5040697,2,353,away,2555,5,1,played,21,6,False,78,0,0,0,0,0,0,,,78,0,0
 369911,Filip Ottosson,2026-09-17T19:00:00+00:00,2026,EL,10,False,5037484,1,353,home,2432,1,2,played,21,6,False,76,0,0,2,1,0,1,,,76,0,0
 369911,Filip Ottosson,2026-09-02T16:00:00+00:00,2026,NOPO,8,False,4896547,1,353,away,142943,3,0,played,21,0,False,45,0,0,0,0,0,0,,46,,0,0
-369911,Filip Ottosson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,16,0,False,7,0,1,0,0,0,0,,83,,0,0
-369911,Filip Ottosson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+1321938,Rufai Mohammed,2026-11-06T19:45:00+00:00,2026,IT1,1,False,4893452,11,607,home,410,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1321938,Rufai Mohammed,2026-11-01T11:30:00+00:00,2026,IT1,1,False,4893435,10,607,away,1047,0,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1321938,Rufai Mohammed,2026-10-28T17:30:00+00:00,2026,IT1,1,False,4893432,9,607,home,46,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1321938,Rufai Mohammed,2026-10-25T14:00:00+00:00,2026,IT1,1,False,4893416,8,607,away,252,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -393,6 +424,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 258561,Tim Erlandsson,2026-10-28T17:00:00+00:00,2026,NOPO,8,False,5074320,3,1058,home,6399,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 258561,Tim Erlandsson,2026-09-16T16:00:00+00:00,2026,NOPO,8,False,5040691,2,1058,away,9908,3,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 258561,Tim Erlandsson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+875631,Sanders Ngabo,2026-11-06T18:00:00+00:00,2026,DK1,1,False,4921833,14,369,away,1177,0,1,in squad,22,,False,0,0,0,1,0,1,0,,,,0,0
+875631,Sanders Ngabo,2026-11-03T17:00:00+00:00,2026,DKP,8,False,5060681,4,369,home,5724,1,0,played,22,9,False,90,0,0,2,0,1,1,90,,,0,0
 875631,Sanders Ngabo,2026-10-30T18:00:00+00:00,2026,DK1,1,False,4921824,13,369,home,5724,2,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 875631,Sanders Ngabo,2026-10-25T13:00:00+00:00,2026,DK1,1,False,4921818,12,369,away,865,2,3,played,22,0,False,1,0,0,0,0,0,0,,90,,0,0
 875631,Sanders Ngabo,2026-10-18T12:00:00+00:00,2026,DK1,1,False,4921813,11,369,home,2778,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -402,6 +435,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 875631,Sanders Ngabo,2026-09-09T15:30:00+00:00,2026,DKP,8,False,5049520,3,369,away,5842,2,0,played,22,11,False,59,0,0,0,0,0,0,,,59,0,0
 875631,Sanders Ngabo,2026-09-04T17:00:00+00:00,2026,DK1,1,False,4921790,7,369,away,1063,2,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 875631,Sanders Ngabo,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
+673173,Frederik Ihler,2026-11-06T19:00:00+00:00,2026,NL2,2,False,4914185,14,724,away,500,3,2,in squad,67,,False,0,0,0,0,0,0,0,,,,0,0
 673173,Frederik Ihler,2026-10-30T19:00:00+00:00,2026,NL2,2,False,4914164,13,724,home,642,1,2,played,67,0,False,7,0,0,0,0,0,0,,83,,0,0
 673173,Frederik Ihler,2026-10-27T19:00:00+00:00,2026,NLP,8,False,5065501,3,724,away,3892,3,5,played,67,14,False,90,0,0,2,1,1,0,,,,0,0
 673173,Frederik Ihler,2026-10-23T18:00:00+00:00,2026,NL2,2,False,4914157,12,724,home,17596,6,2,played,67,14,False,45,2,1,5,4,1,0,,46,,0,0
@@ -413,6 +447,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 673173,Frederik Ihler,2026-09-13T14:45:00+00:00,2026,NL2,2,False,4913058,6,724,home,404,2,0,played,67,14,False,10,0,0,0,0,0,0,,80,,0,0
 673173,Frederik Ihler,2026-09-04T18:00:00+00:00,2026,NL2,2,False,4913000,5,724,away,1283,3,5,played,67,14,False,24,0,0,0,0,0,0,,66,,0,0
 673173,Frederik Ihler,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,24,0,False,90,1,0,0,0,0,0,,,,0,0
+501454,Noah Christoffersson,2026-11-08T15:30:00+00:00,2026,C1,1,False,4897363,13,938,home,26,3,3,played,26,0,False,13,0,0,0,0,0,0,,77,,0,0
+501454,Noah Christoffersson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037603,3,938,home,43,3,1,played,26,0,False,25,0,0,1,0,1,0,,65,,0,0
 501454,Noah Christoffersson,2026-11-01T15:30:00+00:00,2026,C1,1,False,4897354,12,938,away,527,5,4,played,26,0,False,14,0,2,0,0,0,0,,76,,0,0
 501454,Noah Christoffersson,2026-10-25T13:00:00+00:00,2026,C1,1,False,4897350,11,938,home,2790,2,3,played,26,0,False,25,0,0,1,0,1,0,,65,,0,0
 501454,Noah Christoffersson,2026-10-22T19:00:00+00:00,2026,UCOL,10,False,5037604,2,938,home,447,0,1,played,26,0,False,20,0,0,1,0,1,0,,70,,0,0
@@ -429,39 +465,42 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1376024,Charlie Rosenqvist,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,13,0,False,45,0,0,0,0,0,0,,46,,0,0
 1446292,Alexander Lindgren,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1176778,Abdul Daramy,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1176778,Abdul Daramy,2026-08-12T14:00:00+00:00,2026,DKDL,7,False,4924207,2,16104,away,14363,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1176778,Abdul Daramy,2026-08-08T10:30:00+00:00,2026,DKDL,7,False,4924188,1,16104,away,25016,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+328003,Robin Wallinder,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 328003,Robin Wallinder,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 328003,Robin Wallinder,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 328003,Robin Wallinder,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 328003,Robin Wallinder,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
 328003,Robin Wallinder,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
-328003,Robin Wallinder,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
+1072289,Sebastian Hansen,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1072289,Sebastian Hansen,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1072289,Sebastian Hansen,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1072289,Sebastian Hansen,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1072289,Sebastian Hansen,2026-08-22T14:00:00+00:00,2026,NOPO,8,False,4896536,1,1058,away,115573,10,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+184745,Alexander Lundin,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
 184745,Alexander Lundin,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
 184745,Alexander Lundin,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,35,1,False,90,0,0,0,0,0,0,,,,0,0
 184745,Alexander Lundin,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+184745,Alexander Lundin,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+184745,Alexander Lundin,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+184745,Alexander Lundin,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 184745,Alexander Lundin,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 184745,Alexander Lundin,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
-184745,Alexander Lundin,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 1579035,Melker Ahlstrand,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1579035,Melker Ahlstrand,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1579035,Melker Ahlstrand,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+701224,Abdullah Iqbal,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 701224,Abdullah Iqbal,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,5,3,False,90,0,0,2,0,2,0,,,,0,0
 701224,Abdullah Iqbal,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,5,3,False,88,0,1,0,0,0,0,,,88,0,0
 701224,Abdullah Iqbal,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 701224,Abdullah Iqbal,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 701224,Abdullah Iqbal,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,5,3,False,90,0,0,1,0,1,0,,,,0,0
-701224,Abdullah Iqbal,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+416104,Axel Norén,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,4,3,False,90,0,0,1,0,1,0,,,,0,0
 416104,Axel Norén,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,4,3,False,90,0,0,1,0,1,0,,,,0,0
 416104,Axel Norén,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,4,3,False,90,1,0,1,1,0,0,,,,0,0
 416104,Axel Norén,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,4,0,False,90,0,0,0,0,0,0,,,,0,0
 416104,Axel Norén,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 416104,Axel Norén,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
-416104,Axel Norén,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+668709,Martin Agnarsson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 668709,Martin Agnarsson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 668709,Martin Agnarsson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,3,9,False,90,0,0,0,0,0,0,,,,0,0
 668709,Martin Agnarsson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -471,7 +510,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 668709,Martin Agnarsson,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824876,1,9173,home,9110,1,1,played,13,4,False,90,0,0,0,0,0,0,,,,0,0
 668709,Martin Agnarsson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,3,0,False,29,0,0,0,0,0,0,,61,,0,0
 668709,Martin Agnarsson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
-668709,Martin Agnarsson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,3,0,False,3,0,0,0,0,0,0,,87,,0,0
+579761,Tony Miettinen,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 579761,Tony Miettinen,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,33,3,False,84,0,0,3,0,2,1,,,84,0,0
 579761,Tony Miettinen,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 579761,Tony Miettinen,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825171,4,3443,neutral,3450,0,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
@@ -481,19 +520,19 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 579761,Tony Miettinen,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824869,1,3443,away,10521,7,0,played,4,0,False,45,0,0,0,0,0,0,,46,,0,0
 579761,Tony Miettinen,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 579761,Tony Miettinen,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,33,3,False,90,0,0,1,0,1,0,,,,0,0
-579761,Tony Miettinen,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,33,0,False,34,0,0,0,0,0,0,,56,,0,0
+675285,Ludvig Svanberg,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 675285,Ludvig Svanberg,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 675285,Ludvig Svanberg,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 675285,Ludvig Svanberg,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,2,0,False,90,0,0,0,0,0,0,,,,0,0
 675285,Ludvig Svanberg,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,2,0,False,16,0,0,0,0,0,0,,74,,0,0
 675285,Ludvig Svanberg,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-675285,Ludvig Svanberg,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,2,3,False,56,0,0,0,0,0,0,,,56,0,0
+469852,Ian Hoffmann,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,26,0,False,9,0,0,0,0,0,0,,81,,0,0
 469852,Ian Hoffmann,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,26,9,False,90,0,0,1,0,1,0,,,,0,0
 469852,Ian Hoffmann,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 469852,Ian Hoffmann,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 469852,Ian Hoffmann,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 469852,Ian Hoffmann,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,26,0,False,20,0,0,0,0,0,0,,70,,0,0
-469852,Ian Hoffmann,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,26,9,False,56,0,0,0,0,0,0,,,56,0,0
+1245971,Christian Tchouante,2026-11-07T16:00:00+00:00,2026,SER1,1,False,4974577,15,59358,home,4645,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1245971,Christian Tchouante,2026-11-02T17:00:00+00:00,2026,SER1,1,False,4974571,14,59358,away,7567,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1245971,Christian Tchouante,2026-10-28T14:00:00+00:00,2026,SER1,1,False,4937752,2,59358,away,4645,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1245971,Christian Tchouante,2026-10-23T16:00:00+00:00,2026,SER1,1,False,4945537,13,59358,away,32113,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -505,22 +544,26 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1245971,Christian Tchouante,2026-09-04T17:00:00+00:00,2026,SER1,1,False,4945506,8,59358,away,4633,0,2,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 1245971,Christian Tchouante,2026-08-29T17:00:00+00:00,2026,SER1,1,False,4939893,7,59358,home,33328,5,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 1245971,Christian Tchouante,2026-08-23T19:00:00+00:00,2026,SER1,1,False,4939883,6,59358,away,448,0,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
-1245971,Christian Tchouante,2026-08-09T19:00:00+00:00,2026,SER1,1,False,4939861,4,59358,away,53,2,2,played,3,3,False,64,0,0,0,0,0,0,,,64,0,0
+95377,Tom Pettersson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 95377,Tom Pettersson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,24,3,False,6,1,0,1,1,0,0,,84,,0,0
 95377,Tom Pettersson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,24,0,False,2,0,0,0,0,0,0,,88,,0,0
 95377,Tom Pettersson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 95377,Tom Pettersson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,24,3,False,90,0,0,0,0,0,0,,,,0,0
 95377,Tom Pettersson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,24,3,False,90,0,0,2,0,1,1,,,,0,0
-95377,Tom Pettersson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,24,3,False,90,0,0,0,0,0,0,42,,,0,0
+752778,Mads Enggård,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,6,0,False,33,1,0,1,1,0,0,,57,,0,0
 752778,Mads Enggård,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,6,7,False,25,0,0,1,1,0,0,,65,,0,0
 752778,Mads Enggård,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,6,7,False,62,0,0,0,0,0,0,26,,62,0,0
 752778,Mads Enggård,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 752778,Mads Enggård,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,6,7,False,56,0,0,0,0,0,0,,,56,0,0
 752778,Mads Enggård,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,6,0,False,6,0,0,0,0,0,0,,84,,0,0
+920272,Ludwig Malachowski Thorell,2026-11-08T15:30:00+00:00,2026,C1,1,False,4897363,13,26,away,938,3,3,played,8,6,False,53,0,1,0,0,0,0,,,53,0,0
 920272,Ludwig Malachowski Thorell,2026-11-01T15:30:00+00:00,2026,C1,1,False,4897355,12,26,away,2790,1,2,played,8,10,False,80,0,0,0,0,0,0,,,80,0,0
 920272,Ludwig Malachowski Thorell,2026-10-25T15:30:00+00:00,2026,C1,1,False,4897347,11,26,home,504,0,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 920272,Ludwig Malachowski Thorell,2026-10-16T18:15:00+00:00,2026,SCC,8,False,5019281,2,26,away,5507,3,0,played,8,0,False,9,0,0,0,0,0,0,,81,,0,0
 920272,Ludwig Malachowski Thorell,2026-10-11T14:30:00+00:00,2026,C1,1,False,4897346,10,26,away,163,0,3,played,8,0,False,19,0,0,0,0,0,0,,71,,0,0
+920272,Ludwig Malachowski Thorell,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+920272,Ludwig Malachowski Thorell,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+920272,Ludwig Malachowski Thorell,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 920272,Ludwig Malachowski Thorell,2026-09-20T14:30:00+00:00,2026,C1,1,False,4897339,9,26,home,257,1,3,played,8,0,False,45,0,0,0,0,0,0,,46,,0,0
 920272,Ludwig Malachowski Thorell,2026-09-13T14:30:00+00:00,2026,C1,1,False,4897334,8,26,away,434,4,2,played,8,0,False,18,0,0,0,0,0,0,,72,,0,0
 920272,Ludwig Malachowski Thorell,2026-09-06T14:30:00+00:00,2026,C1,1,False,4897327,7,26,home,2790,1,3,played,8,7,False,45,0,0,0,0,0,0,,,46,0,0
@@ -528,25 +571,25 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 920272,Ludwig Malachowski Thorell,2026-08-29T18:30:00+00:00,2026,C1,1,False,4897313,5,26,away,452,3,3,played,8,7,False,33,0,0,0,0,0,0,,,33,0,0
 920272,Ludwig Malachowski Thorell,2026-08-22T18:30:00+00:00,2026,C1,1,False,4897306,4,26,away,260,2,1,played,8,7,False,52,0,0,0,0,0,0,19,,52,0,0
 920272,Ludwig Malachowski Thorell,2026-08-15T14:00:00+00:00,2026,SCC,8,False,4912822,1,26,away,16315,6,1,played,8,7,False,58,1,0,0,0,0,0,,,58,0,0
-920272,Ludwig Malachowski Thorell,2026-08-09T14:30:00+00:00,2026,C1,1,False,4897299,3,26,home,938,4,2,played,8,7,False,60,0,0,0,0,0,0,,,60,0,0
+1324494,Dani Hodzic,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1324494,Dani Hodzic,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1324494,Dani Hodzic,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1324494,Dani Hodzic,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1324494,Dani Hodzic,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1324494,Dani Hodzic,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1324494,Dani Hodzic,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+660979,Jeppe Kjær,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,10,10,False,81,0,0,2,1,0,1,,,81,0,0
 660979,Jeppe Kjær,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 660979,Jeppe Kjær,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,10,7,False,88,0,0,4,2,1,1,,,88,0,0
 660979,Jeppe Kjær,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,10,0,False,68,0,0,0,0,0,0,,,68,0,0
 660979,Jeppe Kjær,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,10,12,False,74,0,0,0,0,0,0,,,74,0,0
 660979,Jeppe Kjær,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,10,12,False,90,0,0,2,0,1,1,,,90,0,0
-660979,Jeppe Kjær,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,10,10,False,72,0,0,0,0,0,0,,,72,0,0
+501555,Viktor Gustafson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,7,10,False,90,0,0,1,0,0,1,,,,0,0
 501555,Viktor Gustafson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,7,6,False,65,0,0,0,0,0,0,45,,65,0,0
 501555,Viktor Gustafson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,7,13,False,76,0,0,0,0,0,0,55,,76,0,0
 501555,Viktor Gustafson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,7,0,False,90,0,0,0,0,0,0,,,,0,0
 501555,Viktor Gustafson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,7,11,False,75,0,0,0,0,0,0,19,,75,0,0
 501555,Viktor Gustafson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,7,7,False,84,0,0,0,0,0,0,,,84,0,0
-501555,Viktor Gustafson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,7,6,False,87,0,0,0,0,0,0,,,87,0,0
+1342148,Romeo Arrhenius Leandersson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,39,6,False,57,0,0,1,1,0,0,,,57,0,0
 1342148,Romeo Arrhenius Leandersson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
 1342148,Romeo Arrhenius Leandersson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
 1342148,Romeo Arrhenius Leandersson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
@@ -555,43 +598,47 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1342148,Romeo Arrhenius Leandersson,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,16,7,False,66,0,0,0,0,0,0,,,66,0,0
 1342148,Romeo Arrhenius Leandersson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,39,0,False,15,0,0,0,0,0,0,,75,,0,0
 1342148,Romeo Arrhenius Leandersson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-1342148,Romeo Arrhenius Leandersson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
+223896,Jesper Gustavsson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,22,6,True,90,0,0,1,1,0,0,,,,0,0
 223896,Jesper Gustavsson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,22,6,True,90,0,0,1,1,0,0,62,,,0,0
 223896,Jesper Gustavsson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,22,7,True,90,0,0,0,0,0,0,,,,0,0
 223896,Jesper Gustavsson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,22,0,False,90,0,0,0,0,0,0,,,,0,0
 223896,Jesper Gustavsson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,22,7,True,90,0,0,0,0,0,0,,,,0,0
 223896,Jesper Gustavsson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,22,7,True,90,0,0,0,0,0,0,,,,0,0
-223896,Jesper Gustavsson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,22,6,True,90,0,0,0,0,0,0,,,,0,0
+501568,Villiam Granath,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,14,9,False,90,0,0,1,0,1,0,,,,0,0
 501568,Villiam Granath,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,14,8,False,65,0,0,3,0,2,1,,,65,0,0
 501568,Villiam Granath,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,14,8,False,90,0,0,3,0,2,1,59,,,0,0
 501568,Villiam Granath,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,14,0,False,90,0,0,0,0,0,0,,,,0,0
 501568,Villiam Granath,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,14,9,False,74,0,0,1,0,1,0,22,,74,0,0
 501568,Villiam Granath,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,14,0,False,19,0,0,0,0,0,0,,71,,0,0
-501568,Villiam Granath,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,14,8,False,72,0,0,0,0,0,0,49,,72,0,0
+807309,Max Nielsen,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,25,8,False,81,0,0,1,0,0,1,,,81,0,0
 807309,Max Nielsen,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,25,8,False,25,0,0,0,0,0,0,90,65,,0,0
 807309,Max Nielsen,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 807309,Max Nielsen,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,25,0,False,6,0,0,0,0,0,0,,84,,0,0
 807309,Max Nielsen,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,25,8,False,61,0,0,1,1,0,0,,,61,0,0
 807309,Max Nielsen,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,25,8,False,90,0,0,1,0,1,0,,,,0,0
-807309,Max Nielsen,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1400913,Olle Lindberg,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1400913,Olle Lindberg,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,29,12,False,90,0,0,2,0,1,1,,,,0,0
 1400913,Olle Lindberg,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,29,0,False,14,0,0,0,0,0,0,,76,,0,0
 1400913,Olle Lindberg,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,29,0,False,22,0,0,0,0,0,0,,68,,0,0
 1400913,Olle Lindberg,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,29,0,False,34,0,0,0,0,0,0,,56,,0,0
 1400913,Olle Lindberg,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,29,11,False,71,0,0,2,0,2,0,,,71,0,0
-1400913,Olle Lindberg,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,29,0,False,18,0,0,0,0,0,0,,72,,0,0
+1030933,Ludvig Tidstrand,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1030933,Ludvig Tidstrand,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,27,10,False,6,0,0,1,0,1,0,,84,,0,0
 1030933,Ludvig Tidstrand,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,27,0,False,2,0,0,0,0,0,0,,88,,0,0
 1030933,Ludvig Tidstrand,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,27,0,False,90,0,0,0,0,0,0,17,,,0,0
 1030933,Ludvig Tidstrand,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1030933,Ludvig Tidstrand,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,27,0,False,1,0,0,0,0,0,0,,90,,0,0
-1030933,Ludvig Tidstrand,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,27,0,False,18,0,0,0,0,0,0,,72,,0,0
+1069502,Måns Isaksson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069502,Måns Isaksson,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069502,Måns Isaksson,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069502,Måns Isaksson,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069502,Måns Isaksson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069502,Måns Isaksson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069502,Måns Isaksson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069502,Måns Isaksson,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069502,Måns Isaksson,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069502,Måns Isaksson,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1069502,Måns Isaksson,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069502,Måns Isaksson,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1303480,Isak Andersen,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1428563,Charles Rosén,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1428563,Charles Rosén,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -599,12 +646,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1428563,Charles Rosén,2026-08-04T16:00:00+00:00,2026,CLQ,10,False,4973490,5,2719,home,540,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1428563,Charles Rosén,2026-07-28T16:00:00+00:00,2026,CLQ,10,False,4897900,4,2719,away,38204,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1428563,Charles Rosén,2026-07-21T16:00:00+00:00,2026,CLQ,10,False,4897888,3,2719,home,38204,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1068963,Teo Helge,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1068963,Teo Helge,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1068963,Teo Helge,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1068963,Teo Helge,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1068963,Teo Helge,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1068963,Teo Helge,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1068963,Teo Helge,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+668731,Áki Samuelsen,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,23,0,False,9,0,1,0,0,0,0,,81,,0,0
 668731,Áki Samuelsen,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,23,11,False,84,0,0,5,1,3,1,,,84,0,0
 668731,Áki Samuelsen,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,23,0,False,28,0,0,1,1,0,0,,62,,0,0
 668731,Áki Samuelsen,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -614,45 +662,46 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 668731,Áki Samuelsen,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824876,1,9173,home,9110,1,1,played,10,12,False,80,1,0,2,1,0,1,,,80,0,0
 668731,Áki Samuelsen,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 668731,Áki Samuelsen,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,23,9,False,70,0,0,0,0,0,0,58,,70,0,0
-668731,Áki Samuelsen,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,23,10,False,90,0,0,0,0,0,0,,,,0,0
+554726,Jacob Bergström,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,played,18,14,False,90,1,0,2,1,0,1,,,,0,0
 554726,Jacob Bergström,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,played,18,14,False,90,0,0,2,1,1,0,,,,0,0
 554726,Jacob Bergström,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,played,18,14,False,90,1,0,4,3,1,0,,,,0,0
 554726,Jacob Bergström,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
 554726,Jacob Bergström,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,18,14,False,90,0,0,0,0,0,0,45,,,0,0
 554726,Jacob Bergström,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,played,18,14,False,90,0,0,1,1,0,0,,,,0,0
-554726,Jacob Bergström,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,18,14,False,90,0,0,0,0,0,0,,,,0,0
+501131,Ali Youssef,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 501131,Ali Youssef,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 501131,Ali Youssef,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 501131,Ali Youssef,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,played,9,0,False,84,0,0,0,0,0,0,66,,84,0,0
 501131,Ali Youssef,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 501131,Ali Youssef,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-501131,Ali Youssef,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,played,9,0,False,34,0,0,0,0,0,0,,56,,0,0
+1140556,Villum Dalsgaard,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1140556,Villum Dalsgaard,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1140556,Villum Dalsgaard,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1140556,Villum Dalsgaard,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1140556,Villum Dalsgaard,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,played,21,0,False,16,0,0,1,1,0,0,,74,,0,0
 1140556,Villum Dalsgaard,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
-1140556,Villum Dalsgaard,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973759,6,2778,home,1033,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1140556,Villum Dalsgaard,2026-08-06T18:30:00+00:00,2026,ECLQ,10,False,4973729,5,2778,away,1033,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+363717,Timo Stavitski,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 363717,Timo Stavitski,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 363717,Timo Stavitski,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 363717,Timo Stavitski,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 363717,Timo Stavitski,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 363717,Timo Stavitski,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-363717,Timo Stavitski,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1384865,Ibrahim Adewale,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031311,2,9611,away,32845,2,0,played,13,0,False,54,0,0,0,0,0,0,,,54,0,0
+1394884,Olle Nilsson Löv,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1394884,Olle Nilsson Löv,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1394884,Olle Nilsson Löv,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1394884,Olle Nilsson Löv,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1394884,Olle Nilsson Löv,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013798,8,2719,away,409,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1394884,Olle Nilsson Löv,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013756,7,2719,home,409,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1394884,Olle Nilsson Löv,2026-08-11T18:15:00+00:00,2026,CLQ,10,False,4973500,6,2719,away,540,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1595180,Paul Colley,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037612,3,2719,home,3900,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1595180,Paul Colley,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,2719,away,41133,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1595180,Paul Colley,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037613,1,2719,home,41916,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1595180,Paul Colley,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,2719,away,9015,0,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 75458,Robin Olsen,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 41653,Johan Dahlin,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1016314,William Nieroth Lundgren,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,50,0,False,90,0,0,0,0,0,0,,,,0,0
+1016314,William Nieroth Lundgren,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016314,William Nieroth Lundgren,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 698742,Busanello,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069508,Bleon Kurtulus,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,4,0,False,90,1,0,0,0,0,0,,,,0,0
 794758,Warren Kamanzi,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -666,7 +715,15 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 69646,Jens Stryger,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,17,0,False,45,0,0,0,0,0,0,,,46,0,0
 1026247,Malte Frejd Pålsson,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,44,0,False,90,0,0,0,0,0,0,,,,0,0
 861568,Noah Åstrand John,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1376817,Vicente Ponnert Hidalgo,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
+1376817,Vicente Ponnert Hidalgo,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1376817,Vicente Ponnert Hidalgo,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1376817,Vicente Ponnert Hidalgo,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,0,0,False,45,0,0,0,0,0,0,,46,,0,0
+1069507,Amadeus Sundgren,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069507,Amadeus Sundgren,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069507,Amadeus Sundgren,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069507,Amadeus Sundgren,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069507,Amadeus Sundgren,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 667249,Otto Rosengren,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,7,0,False,90,1,0,0,0,0,0,,,,0,0
 1457761,Theodor Lundbergh,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,15,0,False,81,0,0,0,0,0,0,,,81,0,0
 1457761,Theodor Lundbergh,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,15,0,False,34,0,0,0,0,0,0,,56,,0,0
@@ -679,12 +736,20 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 77259,Anders Christiansen,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1331431,Anton Höög,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,45,0,False,36,0,0,0,0,0,0,,54,,0,0
 1055216,Viggo Jeppsson,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,42,0,False,20,0,0,0,0,0,0,,70,,0,0
+1069511,Gentian Lajqi,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069511,Gentian Lajqi,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069511,Gentian Lajqi,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069511,Gentian Lajqi,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146607,Antonio Palac,2026-10-23T12:30:00+00:00,2026,FS,11,True,5069474,10,41525,away,28155,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146607,Antonio Palac,2026-10-03T10:00:00+00:00,2026,FS,11,True,5052870,3,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146607,Antonio Palac,2026-09-30T15:00:00+00:00,2026,FS,11,True,5052843,2,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146607,Antonio Palac,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146607,Antonio Palac,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1146607,Antonio Palac,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,46,0,False,11,0,0,0,0,0,0,,79,,0,0
 795274,Mayckel Lahdo,2026-08-29T16:45:00+00:00,2026,NL1,1,False,4894694,4,1090,home,1435,5,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 795274,Mayckel Lahdo,2026-08-22T14:30:00+00:00,2026,NL1,1,False,4894683,3,1090,away,385,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 795274,Mayckel Lahdo,2026-08-15T16:45:00+00:00,2026,NL1,1,False,4894676,2,1090,away,200,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-795274,Mayckel Lahdo,2026-08-08T19:00:00+00:00,2026,NL1,1,False,4894511,1,1090,home,1268,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+731771,Taha Ali,2026-11-08T19:00:00+00:00,2026,GR1,1,False,4973583,10,1091,away,683,1,1,injured,,,False,0,0,0,0,0,0,0,,,,65,0
 731771,Taha Ali,2026-11-01T17:00:00+00:00,2026,GR1,1,False,4973578,9,1091,home,6676,2,1,injured,,,False,0,0,0,0,0,0,0,,,,65,0
 731771,Taha Ali,2026-10-28T18:30:00+00:00,2026,GRP,8,False,5033912,4,1091,home,2441,3,1,injured,,,False,0,0,0,0,0,0,0,,,,65,0
 731771,Taha Ali,2026-10-25T18:00:00+00:00,2026,GR1,1,False,4973570,8,1091,away,653,1,2,injured,,,False,0,0,0,0,0,0,0,,,,65,0
@@ -699,13 +764,12 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 731771,Taha Ali,2026-08-27T17:00:00+00:00,2026,ECLQ,10,False,5013841,8,1091,away,1100,2,3,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 731771,Taha Ali,2026-08-23T18:00:00+00:00,2026,GR1,1,False,4973522,1,1091,home,2672,4,0,injured,,,False,0,0,0,0,0,0,0,,,,65,0
 731771,Taha Ali,2026-08-20T17:45:00+00:00,2026,ECLQ,10,False,5013817,7,1091,home,1100,1,1,injured,,,False,0,0,0,0,0,0,0,,,,65,0
-731771,Taha Ali,2026-08-13T18:30:00+00:00,2026,ELQ,10,False,4973712,6,1091,away,58,2,3,injured,,,False,0,0,0,0,0,0,0,,,,65,0
-731771,Taha Ali,2026-08-06T17:45:00+00:00,2026,ELQ,10,False,4973699,5,1091,home,58,0,1,injured,,,False,0,0,0,0,0,0,0,,,,65,0
 349300,Sead Haksabanovic,2026-10-05T18:45:00+00:00,2026,UNLC,11,True,4825174,4,11953,home,6219,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 349300,Sead Haksabanovic,2026-10-02T18:45:00+00:00,2026,UNLC,11,True,4825175,3,11953,away,3555,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 349300,Sead Haksabanovic,2026-09-28T16:00:00+00:00,2026,UNLC,11,True,4824871,2,11953,away,6219,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 349300,Sead Haksabanovic,2026-09-25T18:45:00+00:00,2026,UNLC,11,True,4824872,1,11953,home,3668,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 349300,Sead Haksabanovic,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,29,0,False,79,0,0,0,0,0,0,,,79,0,0
+377665,Arnór Sigurdsson,2026-11-08T15:00:00+00:00,2026,GR1,1,False,4973580,10,9,away,6676,1,1,played,10,12,False,80,0,0,0,0,0,0,,,80,0,0
 377665,Arnór Sigurdsson,2026-11-02T17:30:00+00:00,2026,GR1,1,False,4973573,9,9,home,47,1,1,played,10,12,False,90,0,0,2,0,0,2,,,,0,0
 377665,Arnór Sigurdsson,2026-10-28T13:00:00+00:00,2026,GRP,8,False,5033916,4,9,away,40445,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 377665,Arnór Sigurdsson,2026-10-25T14:00:00+00:00,2026,GR1,1,False,4973569,8,9,away,683,0,5,played,10,10,False,90,0,0,0,0,0,0,,,,0,0
@@ -731,116 +795,74 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 927094,Daníel Gudjohnsen,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,32,0,False,90,1,0,0,0,0,0,,,,0,0
 603891,Emmanuel Ekong,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1566526,Isaac Assibu,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,played,39,0,False,54,0,0,0,0,0,0,,,54,0,0
+1421668,Omar Krajina,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076064,4,26101,neutral,28028,7,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1421668,Omar Krajina,2026-10-05T14:00:00+00:00,2026,FS,11,True,5079079,50,26101,home,30519,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1421668,Omar Krajina,2026-10-02T14:00:00+00:00,2026,FS,11,True,5074329,48,26101,home,30519,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1421668,Omar Krajina,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031316,2,496,away,12644,5,1,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 111180,Warner Hahn,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-111180,Warner Hahn,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-111180,Warner Hahn,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 390038,Felix Jakobsson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,27,0,False,90,0,0,0,0,0,0,,,,0,0
-390038,Felix Jakobsson,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
-390038,Felix Jakobsson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1069496,Elton Fischerström Opancar,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1069496,Elton Fischerström Opancar,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1069496,Elton Fischerström Opancar,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1138101,Hampus Skoglund,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825148,4,3557,away,3447,1,0,played,14,0,False,1,0,0,1,0,1,0,,89,,0,0
 1138101,Hampus Skoglund,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825151,3,3557,away,3446,1,1,played,14,5,False,90,0,0,0,0,0,0,,,,0,0
 1138101,Hampus Skoglund,2026-09-28T18:45:00+00:00,2026,UNLB,11,True,4824856,2,3557,home,3442,3,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1138101,Hampus Skoglund,2026-09-25T18:45:00+00:00,2026,UNLB,11,True,4824855,1,3557,home,3447,2,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1138101,Hampus Skoglund,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-1138101,Hampus Skoglund,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
-1138101,Hampus Skoglund,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
 592084,Victor Eriksson,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825148,4,3557,away,3447,1,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 592084,Victor Eriksson,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825151,3,3557,away,3446,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 592084,Victor Eriksson,2026-09-28T18:45:00+00:00,2026,UNLB,11,True,4824856,2,3557,home,3442,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 592084,Victor Eriksson,2026-09-25T18:45:00+00:00,2026,UNLB,11,True,4824855,1,3557,home,3447,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 592084,Victor Eriksson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-592084,Victor Eriksson,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,4,3,False,78,0,0,0,0,0,0,,,78,0,0
-592084,Victor Eriksson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 666922,Ibrahima Fofana,2026-10-01T16:00:00+00:00,2026,AFCQ,19,True,5047009,4,3856,home,8987,1,0,played,6,5,False,90,0,0,1,0,0,1,,,,0,0
 666922,Ibrahima Fofana,2026-09-26T13:00:00+00:00,2026,AFCQ,19,True,5046879,3,3856,away,3806,1,2,played,6,5,False,63,0,0,0,0,0,0,,,63,0,0
 666922,Ibrahima Fofana,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,6,0,False,90,1,0,0,0,0,0,,,,0,0
-666922,Ibrahima Fofana,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,6,0,False,12,0,0,0,0,0,0,,78,,0,0
-666922,Ibrahima Fofana,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,6,3,False,90,0,0,0,0,0,0,,,,0,0
 867674,Noah Persson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-867674,Noah Persson,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,16,4,False,78,0,0,0,0,0,0,,,78,0,0
-867674,Noah Persson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,16,9,False,90,0,0,0,0,0,0,12,,90,0,0
 569349,Frederik Winther,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-569349,Frederik Winther,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,3,3,False,90,0,0,0,0,0,0,58,,,0,0
-569349,Frederik Winther,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,3,4,False,90,0,0,0,0,0,0,81,,,0,0
 933725,Waylon Renecke,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
-933725,Waylon Renecke,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
-933725,Waylon Renecke,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,24,0,False,1,0,0,0,0,0,0,,90,,0,0
 1016301,Oscar Steinke Brånby,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,31,0,False,90,0,0,0,0,0,0,,,,0,0
-1016301,Oscar Steinke Brånby,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,31,0,False,12,0,0,0,0,0,0,,78,,0,0
-1016301,Oscar Steinke Brånby,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+1016301,Oscar Steinke Brånby,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016301,Oscar Steinke Brånby,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1516489,Hampus Thorsson,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,played,14,0,False,90,0,0,0,0,0,0,,,,0,0
+1516489,Hampus Thorsson,2026-11-04T16:00:00+00:00,2026,19YL,16,False,5047699,6,62109,away,145616,0,2,played,4,3,False,90,0,0,0,0,0,0,90,,,0,0
 1516489,Hampus Thorsson,2026-10-28T18:00:00+00:00,2026,19YL,16,False,5047667,5,62109,home,145616,1,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 1516489,Hampus Thorsson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,played,13,0,False,30,0,0,0,0,0,0,,60,,0,0
 1516489,Hampus Thorsson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1516489,Hampus Thorsson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 944817,Essayas Lwampindy-Bofua,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,32,0,False,90,0,0,0,0,0,0,,,,0,0
-944817,Essayas Lwampindy-Bofua,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-944817,Essayas Lwampindy-Bofua,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1170094,Björn Hedlöf,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
-1170094,Björn Hedlöf,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1170094,Björn Hedlöf,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 688042,Markus Karlsson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
-688042,Markus Karlsson,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,8,6,False,90,0,0,0,0,0,0,,,,0,0
-688042,Markus Karlsson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,8,6,False,79,0,0,0,0,0,0,,,79,0,0
 911482,Amin Boudri,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
-911482,Amin Boudri,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,17,9,False,54,0,0,0,0,0,0,45,,,0,0
-911482,Amin Boudri,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
 952210,Frank Junior Adjei,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,28,0,False,71,0,0,0,0,0,0,,,71,0,0
-952210,Frank Junior Adjei,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,28,0,False,30,0,0,0,0,0,0,,60,,0,0
-952210,Frank Junior Adjei,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,28,8,False,79,0,0,0,0,0,0,,,79,0,0
 283185,Tesfaldet Tekie,2026-09-30T16:00:00+00:00,2026,AFCQ,19,True,5047010,4,13953,away,3806,0,5,played,9,6,False,90,0,0,1,0,1,0,,,,0,0
 283185,Tesfaldet Tekie,2026-09-26T13:00:00+00:00,2026,AFCQ,19,True,5046880,3,13953,away,8987,1,1,played,9,7,False,67,0,0,0,0,0,0,,,67,0,0
 283185,Tesfaldet Tekie,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,5,0,False,90,0,0,0,0,0,0,,,,0,0
-283185,Tesfaldet Tekie,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,5,6,False,60,0,0,0,0,0,0,,,60,0,0
-283185,Tesfaldet Tekie,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,5,6,False,90,0,0,0,0,0,0,,,,0,0
 270855,Oscar Johansson Schellhas,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,11,0,False,78,1,0,0,0,0,0,,,78,0,0
-270855,Oscar Johansson Schellhas,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
-270855,Oscar Johansson Schellhas,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,11,0,False,11,0,0,0,0,0,0,,79,,0,0
 81755,Nahir Besara,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,20,0,False,19,0,0,0,0,0,0,,71,,0,0
-81755,Nahir Besara,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,20,10,True,60,0,0,0,0,0,0,,,60,0,0
-81755,Nahir Besara,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,20,10,True,66,0,0,0,0,0,0,,,66,0,0
 527336,Dennis Collander,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
+1590127,Filip Jakobsson,2026-11-04T16:00:00+00:00,2026,19YL,16,False,5047699,6,62109,away,145616,0,2,played,6,6,False,90,0,0,0,0,0,0,,,,0,0
 1590127,Filip Jakobsson,2026-10-28T18:00:00+00:00,2026,19YL,16,False,5047667,5,62109,home,145616,1,0,played,6,10,False,90,0,0,0,0,0,0,,,,0,0
 1590127,Filip Jakobsson,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,6,0,False,16,0,0,0,0,0,0,,74,,0,0
 1590127,Filip Jakobsson,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,6,7,False,56,0,0,0,0,0,0,,,56,0,0
 1590127,Filip Jakobsson,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,6,0,False,24,0,0,0,0,0,0,,66,,0,0
 1590127,Filip Jakobsson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,0,0,False,12,0,0,0,0,0,0,,78,,0,0
+1517356,Sourou Koné,2026-11-04T16:00:00+00:00,2026,19YL,16,False,5047699,6,62109,away,145616,0,2,played,7,10,False,77,0,0,0,0,0,0,,,77,0,0
 1517356,Sourou Koné,2026-10-28T18:00:00+00:00,2026,19YL,16,False,5047667,5,62109,home,145616,1,0,played,7,8,False,66,0,0,0,0,0,0,,,66,0,0
 1517356,Sourou Koné,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1517356,Sourou Koné,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,injured,,,False,0,0,0,0,0,0,0,,,,195,0
-1517356,Sourou Koné,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 590835,Victor Lind,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,9,0,False,11,0,0,0,0,0,0,,79,,0,0
-590835,Victor Lind,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,9,0,False,30,0,0,0,0,0,0,,60,,0,0
-590835,Victor Lind,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,9,14,False,66,0,0,0,0,0,0,,,66,0,0
 850132,Montader Madjed,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
-850132,Montader Madjed,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,26,8,False,90,0,0,0,0,0,0,,,,0,0
-850132,Montader Madjed,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,26,0,False,24,0,0,0,0,0,0,,66,,0,0
 579289,Paulos Abraham,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825148,4,3557,away,3447,1,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 579289,Paulos Abraham,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825151,3,3557,away,3446,1,1,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 579289,Paulos Abraham,2026-09-28T18:45:00+00:00,2026,UNLB,11,True,4824856,2,3557,home,3442,3,1,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 579289,Paulos Abraham,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-579289,Paulos Abraham,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,7,14,False,89,0,0,0,0,0,0,,,89,0,0
-579289,Paulos Abraham,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,played,7,0,False,24,0,0,0,0,0,0,,66,,0,0
 923531,Oliver Jordan Hagen,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,15,0,False,90,1,0,0,0,0,0,,,,0,0
-923531,Oliver Jordan Hagen,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-923531,Oliver Jordan Hagen,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 503496,Nikola Vasic,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,0,0,False,70,0,0,0,0,0,0,,,70,0,0
 1433011,Suwaibou Kebbeh,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,30,0,False,79,0,0,0,0,0,0,,,79,0,0
-1433011,Suwaibou Kebbeh,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973767,6,1059,home,9644,0,1,played,30,0,False,1,0,0,0,0,0,0,,89,,0,0
-1433011,Suwaibou Kebbeh,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973737,5,1059,away,9644,0,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1435188,Oskar Moczarny,2026-08-26T16:30:00+00:00,2026,SEC,8,False,4945606,2,1059,away,53133,3,0,played,0,0,False,79,0,0,0,0,0,0,,,79,0,0
+1461579,Felix Bjernvall,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,played,9,0,False,77,0,0,0,0,0,0,4,,77,0,0
+1461579,Felix Bjernvall,2026-11-04T16:00:00+00:00,2026,19YL,16,False,5047699,6,62109,away,145616,0,2,played,11,14,False,86,0,0,0,0,0,0,,,86,0,0
 1461579,Felix Bjernvall,2026-10-28T18:00:00+00:00,2026,19YL,16,False,5047667,5,62109,home,145616,1,0,played,11,14,False,90,0,0,0,0,0,0,,,,0,0
 1461579,Felix Bjernvall,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,played,9,14,False,45,0,0,0,0,0,0,,,46,0,0
 1461579,Felix Bjernvall,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,9,14,False,73,1,0,0,0,0,0,45,,73,0,0
 1461579,Felix Bjernvall,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,9,0,False,30,1,0,0,0,0,0,,60,,0,0
-1461579,Felix Bjernvall,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,played,9,14,False,90,2,0,0,0,0,0,90,,,0,0
-1461579,Felix Bjernvall,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,played,9,0,False,13,1,0,0,0,0,0,,77,,0,0
-1461579,Felix Bjernvall,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,played,9,0,False,65,1,0,0,0,0,0,38,,65,0,0
 210528,Jacob Rinne,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 136601,Lukas Jonsson,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
 963084,Max Larsson,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,24,0,False,90,1,0,0,0,0,0,,,,0,0
@@ -866,6 +888,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 951296,Christos Almyras,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,7,0,False,90,1,0,0,0,0,0,70,,,0,0
 925827,Peter Langhoff,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
 302319,Daniel Stensson,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1395811,Carl Selfvén,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1395811,Carl Selfvén,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1271029,Alexander Johansson,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,played,10,0,False,90,0,0,0,0,0,0,,,,0,0
 1271029,Alexander Johansson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,played,10,0,True,90,0,0,0,0,0,0,,,,0,0
 1271029,Alexander Johansson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,played,10,0,False,82,0,0,0,0,0,0,,,82,0,0
 1271029,Alexander Johansson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
@@ -876,7 +901,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 741239,Abdul Abdulmalik,2026-08-22T11:30:00+00:00,2026,CNAT,5,False,4940081,3,3867,away,3455,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 741239,Abdul Abdulmalik,2026-08-18T18:00:00+00:00,2026,NLC,14,False,5013517,1,3867,home,20116,5,2,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 741239,Abdul Abdulmalik,2026-08-15T14:00:00+00:00,2026,CNAT,5,False,4940067,2,3867,away,1127,3,1,played,10,9,False,87,1,1,0,0,0,0,,,87,0,0
-741239,Abdul Abdulmalik,2026-08-08T14:00:00+00:00,2026,CNAT,5,False,4940055,1,3867,home,3539,3,3,played,10,0,False,34,0,1,0,0,0,0,,56,,0,0
+403673,Mikael Anderson,2026-11-08T13:00:00+00:00,2026,DK1,1,False,4921832,14,678,home,2414,2,0,injured,,,False,0,0,0,0,0,0,0,,,,306,0
+403673,Mikael Anderson,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037596,3,678,home,1075,0,0,injured,,,False,0,0,0,0,0,0,0,,,,306,0
 403673,Mikael Anderson,2026-11-01T17:00:00+00:00,2026,DK1,1,False,4921825,13,678,away,206,0,2,injured,,,False,0,0,0,0,0,0,0,,,,306,0
 403673,Mikael Anderson,2026-10-28T19:00:00+00:00,2026,DKP,8,False,5060682,4,678,away,1842,2,1,injured,,,False,0,0,0,0,0,0,0,,,,306,0
 403673,Mikael Anderson,2026-10-25T17:00:00+00:00,2026,DK1,1,False,4921819,12,678,home,1063,2,1,injured,,,False,0,0,0,0,0,0,0,,,,306,0
@@ -898,21 +924,15 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 403673,Mikael Anderson,2026-08-23T12:00:00+00:00,2026,DK1,1,False,4921778,5,678,home,173,2,2,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 403673,Mikael Anderson,2026-08-20T19:00:00+00:00,2026,ELQ,10,False,5013760,7,678,away,294,1,3,played,23,0,False,9,0,0,0,0,0,0,,81,,0,0
 403673,Mikael Anderson,2026-08-14T17:00:00+00:00,2026,DK1,1,False,4921772,4,678,away,1063,1,2,played,23,11,False,72,0,0,5,0,1,4,,,72,0,0
-403673,Mikael Anderson,2026-08-11T16:00:00+00:00,2026,CLQ,10,False,4973502,6,678,away,63993,0,4,played,23,8,False,25,0,0,1,0,0,1,,65,,0,0
-403673,Mikael Anderson,2026-08-05T17:10:00+00:00,2026,CLQ,10,False,4973492,5,678,home,63993,2,1,played,23,8,False,81,0,0,2,0,0,2,,,81,0,0
 345591,Jeppe Okkels,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-484818,Santeri Haarala,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973768,6,1008,away,987,0,2,played,29,7,False,68,0,0,0,0,0,0,,,68,0,0
-484818,Santeri Haarala,2026-08-06T16:00:00+00:00,2026,ECLQ,10,False,4973738,5,1008,home,987,1,1,played,29,10,False,80,0,0,0,0,0,0,,,80,0,0
 594556,Oskar Fallenius,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,11,0,False,62,0,0,0,0,0,0,,,62,0,0
 474160,Sander Ringberg,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,27,0,False,62,0,0,0,0,0,0,,,62,0,0
 1599665,Angelo Agbejoye,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,26,0,False,10,1,0,0,0,0,0,,80,,0,0
+1407851,Alexander Andersson,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,played,10,0,False,90,0,0,0,0,0,0,,,,0,0
 1407851,Alexander Andersson,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,played,10,8,True,90,1,0,0,0,0,0,,,,0,0
 1407851,Alexander Andersson,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,10,11,True,69,1,0,0,0,0,0,,,69,0,0
 1407851,Alexander Andersson,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,10,0,False,45,0,0,0,0,0,0,,46,,0,0
 1407851,Alexander Andersson,2026-09-10T17:00:00+00:00,2026,SEC,8,False,5031318,2,1044,away,49885,7,1,played,28,0,False,80,1,0,0,0,0,0,,,80,0,0
-1407851,Alexander Andersson,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,played,10,11,False,90,0,0,0,0,0,0,,,90,0,0
-1407851,Alexander Andersson,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,played,10,0,True,57,1,0,0,0,0,0,,,57,0,0
-1407851,Alexander Andersson,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,played,10,0,False,75,0,0,0,0,0,0,,,75,0,0
 366458,Kalle Joelsson,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
 75890,Kristoffer Nordfeldt,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1446713,Norton Otterud,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
@@ -921,7 +941,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 425808,Sebastian Hausner,2026-08-28T17:00:00+00:00,2026,DK1,1,False,4921785,6,2414,home,1063,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 425808,Sebastian Hausner,2026-08-23T14:00:00+00:00,2026,DK1,1,False,4921779,5,2414,home,369,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 425808,Sebastian Hausner,2026-08-16T12:00:00+00:00,2026,DK1,1,False,4921768,4,2414,away,173,2,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
-425808,Sebastian Hausner,2026-08-09T16:00:00+00:00,2026,DK1,1,False,4921767,3,2414,home,206,0,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 281252,Mads Thychosen,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 203558,Hervé Matthys,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
 696598,Ibrahim Cissé,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,injured,,,False,0,0,0,0,0,0,0,,,,99,0
@@ -932,6 +951,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 97616,Sotirios Papagiannopoulos,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 1183666,Oskar Pukelis,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
 1140116,Ladji Camara,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,47,0,False,5,0,0,0,0,0,0,,85,,0,0
+719926,Áron Csongvai,2026-11-07T19:00:00+00:00,2026,FR2,2,False,4895704,12,618,home,1080,2,0,played,14,6,False,90,0,0,1,1,0,0,,,,0,0
 719926,Áron Csongvai,2026-10-31T19:00:00+00:00,2026,FR2,2,False,4895694,11,618,away,855,0,3,played,14,6,False,45,0,0,1,0,1,0,,,46,0,0
 719926,Áron Csongvai,2026-10-24T18:45:00+00:00,2026,FR2,2,False,4895685,10,618,home,995,1,0,played,14,6,False,90,0,0,2,0,1,1,,,,0,0
 719926,Áron Csongvai,2026-10-17T18:00:00+00:00,2026,FR2,2,False,4895675,9,618,away,1154,1,0,played,14,6,False,90,0,0,1,0,1,0,,,,0,0
@@ -946,8 +966,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 719926,Áron Csongvai,2026-08-31T18:45:00+00:00,2026,FR2,2,False,4895522,4,618,away,2969,3,2,played,14,6,False,90,0,0,1,1,0,0,,,,0,0
 719926,Áron Csongvai,2026-08-22T18:00:00+00:00,2026,FR2,2,False,4895517,3,618,home,1290,4,0,played,14,6,False,90,1,0,2,2,0,0,,,,0,0
 719926,Áron Csongvai,2026-08-14T18:45:00+00:00,2026,FR2,2,False,4895509,2,618,home,3524,3,1,played,14,6,False,90,0,1,1,0,1,0,,,,0,0
-719926,Áron Csongvai,2026-08-08T18:45:00+00:00,2026,FR2,2,False,4895500,1,618,away,750,3,0,played,14,6,False,90,0,0,1,0,1,0,,,,0,0
 1167022,Axel Kouame,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+229695,Bersant Celina,2026-11-07T13:00:00+00:00,2026,SA1,1,False,4976968,13,7732,home,1114,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 229695,Bersant Celina,2026-10-31T13:30:00+00:00,2026,SA1,1,False,4977000,12,7732,away,28844,1,1,played,43,10,False,90,0,1,3,1,1,1,,,,0,0
 229695,Bersant Celina,2026-10-24T15:05:00+00:00,2026,SA1,1,False,4976934,11,7732,away,91427,3,0,played,43,10,False,90,1,1,1,1,0,0,,,,0,0
 229695,Bersant Celina,2026-10-20T18:00:00+00:00,2026,SA1,1,False,4976958,10,7732,home,8023,1,4,played,43,12,False,45,0,0,1,0,1,0,,46,,0,0
@@ -972,13 +992,21 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 963314,Abdihakim Ali,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,18,6,False,90,0,0,0,0,0,0,,,,0,0
 361772,Dino Besirovic,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,19,5,True,85,0,0,0,0,0,0,,,85,0,0
 263718,Martin Ellingsen,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
-1058791,Andreas Redkin,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1058791,Andreas Redkin,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,injured,,,False,0,0,0,0,0,0,0,,,,1,0
+1058791,Andreas Redkin,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,injured,,,False,0,0,0,0,0,0,0,,,,1,0
+1058791,Andreas Redkin,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,injured,,,False,0,0,0,0,0,0,0,,,,1,0
+1058791,Andreas Redkin,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,injured,,,False,0,0,0,0,0,0,0,,,,1,0
 1232069,Linus Järeteg,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,28,0,False,16,0,0,0,0,0,0,,74,,0,0
 1564118,Mohammed Shilla,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,41,0,False,6,0,0,0,0,0,0,,84,,0,0
+1416965,David Malki,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
+1416965,David Malki,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1416965,David Malki,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,played,18,0,False,70,0,0,0,0,0,0,,,70,0,0
 1416965,David Malki,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,played,18,0,False,90,1,0,0,0,0,0,,,,0,0
 1416965,David Malki,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
+1416965,David Malki,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1416965,David Malki,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,in squad,44,,False,0,0,0,0,0,0,0,,,,0,0
+1421433,Zadok Yohanna,2026-11-08T14:00:00+00:00,2026,GB1,1,False,4899346,10,1237,home,1148,2,0,injured,,,False,0,0,0,0,0,0,0,,,,355,0
+1421433,Zadok Yohanna,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037551,3,1237,away,3709,1,0,injured,,,False,0,0,0,0,0,0,0,,,,355,0
 1421433,Zadok Yohanna,2026-10-31T15:00:00+00:00,2026,GB1,1,False,4899342,9,1237,away,281,1,0,injured,,,False,0,0,0,0,0,0,0,,,,355,0
 1421433,Zadok Yohanna,2026-10-28T19:30:00+00:00,2026,CGB,14,False,5056515,5,1237,away,281,5,6,injured,,,False,0,0,0,0,0,0,0,,,,355,0
 1421433,Zadok Yohanna,2026-10-25T14:00:00+00:00,2026,GB1,1,False,4899332,8,1237,away,31,0,2,injured,,,False,0,0,0,0,0,0,0,,,,355,0
@@ -996,7 +1024,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1421433,Zadok Yohanna,2026-08-20T17:00:00+00:00,2026,ECLQ,10,False,5013813,7,1237,away,1293,0,0,played,36,12,False,3,0,0,0,0,0,0,,87,,0,0
 1576755,Robin Krügel,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1172431,Kevin Filling,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,29,11,False,61,1,0,0,0,0,0,,,61,0,0
+1016056,Linus Carlstrand,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016056,Linus Carlstrand,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016056,Linus Carlstrand,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1016056,Linus Carlstrand,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,9,12,False,74,0,0,0,0,0,0,,,74,0,0
+893929,Erik Flataker,2026-11-07T20:00:00+00:00,2026,NL1,1,False,4896406,12,1435,away,798,1,0,played,29,14,False,30,0,0,0,0,0,0,,60,,0,0
 893929,Erik Flataker,2026-10-31T20:00:00+00:00,2026,NL1,1,False,4896399,11,1435,away,133,0,4,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 893929,Erik Flataker,2026-10-27T20:00:00+00:00,2026,NLP,8,False,5065503,3,1435,away,28378,5,0,played,29,0,False,11,0,0,0,0,0,0,,79,,0,0
 893929,Erik Flataker,2026-10-23T18:00:00+00:00,2026,NL1,1,False,4895369,10,1435,home,1434,3,2,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1008,9 +1040,15 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 893929,Erik Flataker,2026-08-29T16:45:00+00:00,2026,NL1,1,False,4894694,4,1435,away,1090,2,5,played,29,14,False,45,0,0,0,0,0,0,,,46,0,0
 893929,Erik Flataker,2026-08-23T10:15:00+00:00,2026,NL1,1,False,4894687,3,1435,home,1268,3,1,played,29,14,False,67,0,0,1,0,0,1,,,67,0,0
 893929,Erik Flataker,2026-08-16T12:30:00+00:00,2026,NL1,1,False,4894680,2,1435,away,234,2,2,played,29,14,False,73,0,0,1,0,1,0,,,73,0,0
-893929,Erik Flataker,2026-08-08T16:45:00+00:00,2026,NL1,1,False,4894509,1,1435,home,403,4,1,played,29,14,False,28,1,0,3,2,1,0,,62,,0,0
 920310,Taha Ayari,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-10-23T12:30:00+00:00,2026,FS,11,True,5069474,10,41525,away,28155,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-10-03T10:00:00+00:00,2026,FS,11,True,5052870,3,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-09-30T15:00:00+00:00,2026,FS,11,True,5052843,2,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146598,Sixten Gustafsson,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1146598,Sixten Gustafsson,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,16,14,False,85,0,0,0,0,0,0,,,85,0,0
+1146598,Sixten Gustafsson,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1434779,Nana-Kofi Donkor,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 964105,Adrián Helm,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,played,22,0,False,29,1,0,0,0,0,0,,61,,0,0
 1585468,Muslim Adamovich Sultygov,2026-08-20T16:30:00+00:00,2026,SEC,8,False,5022349,2,272,away,46170,3,0,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1022,8 +1060,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 986760,Mohamed Soumah,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 344693,Oscar Krusnell,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 464597,Tobias Anker,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-714252,Saba Mamatsashvili,2026-08-13T19:00:00+00:00,2026,ECLQ,10,False,4973752,6,602,away,447,0,4,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
-714252,Saba Mamatsashvili,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973722,5,602,home,447,2,5,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 253159,Henrik Rönnlöf Castegren,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 214621,Simon Sandberg,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
 1104139,Victor Ekström,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,played,20,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1047,7 +1083,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 721666,Zalán Vancsa,2026-08-29T18:45:00+00:00,2026,BE1,1,False,4911796,4,5026,away,520,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 721666,Zalán Vancsa,2026-08-23T14:00:00+00:00,2026,BE1,1,False,4911839,3,5026,home,968,4,0,played,11,0,False,85,0,0,2,0,0,2,,5,,0,0
 721666,Zalán Vancsa,2026-08-16T17:15:00+00:00,2026,BE1,1,False,4911816,2,5026,home,172,0,1,played,11,0,False,5,0,0,0,0,0,0,,85,,0,0
-721666,Zalán Vancsa,2026-08-08T18:45:00+00:00,2026,BE1,1,False,4911788,1,5026,away,475,1,1,played,11,0,False,34,0,0,0,0,0,0,,56,,0,0
 1364195,Odera Samuel Onuchukwu Adindu,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031312,2,7945,away,7904,2,0,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
 1232067,Åke Andersson,2026-08-20T16:30:00+00:00,2026,SEC,8,False,4890977,2,2844,away,2283,2,1,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
 1532157,Munaser Mohamud,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,1055,home,5202,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1073,6 +1108,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 225676,Adam Lundkvist,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,21,0,False,65,0,0,0,0,0,0,,,65,0,0
 944095,Olle Samuelsson,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,23,0,False,90,0,0,0,0,0,0,,,,0,0
 198067,Filip Helander,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+867678,Harun Ibrahim,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
+685657,Silas Andersen,2026-11-07T20:30:00+00:00,2026,PO1,1,False,4921594,11,336,home,979,1,0,played,4,7,False,90,0,0,2,0,1,1,,,,0,0
+685657,Silas Andersen,2026-11-03T17:45:00+00:00,2026,CL,10,False,5035956,4,336,neutral,660,1,0,played,4,7,False,90,0,0,1,0,1,0,,,,0,0
 685657,Silas Andersen,2026-10-30T20:15:00+00:00,2026,PO1,1,False,4921608,10,336,away,3268,2,0,played,4,6,False,62,0,0,0,0,0,0,29,,62,0,0
 685657,Silas Andersen,2026-10-27T20:15:00+00:00,2026,POCP,14,False,5099042,1,336,home,1301,2,1,played,4,6,False,90,0,0,0,0,0,0,,,,0,0
 685657,Silas Andersen,2026-10-25T20:30:00+00:00,2026,PO1,1,False,4921621,9,336,home,7788,1,2,played,4,6,False,5,0,0,0,0,0,0,,85,,0,0
@@ -1086,14 +1124,15 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 685657,Silas Andersen,2026-08-28T19:15:00+00:00,2026,PO1,1,False,4921531,4,336,away,2425,4,0,played,4,0,False,25,0,0,0,0,0,0,,65,,0,0
 685657,Silas Andersen,2026-08-22T19:30:00+00:00,2026,PO1,1,False,4921477,3,336,home,2521,3,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 685657,Silas Andersen,2026-08-14T19:15:00+00:00,2026,PO1,1,False,4921433,2,336,home,2420,3,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
-685657,Silas Andersen,2026-08-08T19:30:00+00:00,2026,PO1,1,False,4921479,1,336,away,2431,2,2,played,4,0,False,29,0,0,0,0,0,0,,61,,0,0
+692608,Ben Engdahl,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 692608,Ben Engdahl,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519157,Abdoulaye Doumbia,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
 728722,Julius Lindberg,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,11,0,False,88,0,0,0,0,0,0,,,88,0,0
 370879,Simen Hestnes,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 665582,David Seger,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
-867678,Harun Ibrahim,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 51349,Mikkel Rygaard,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1057820,Jeremy Agbonifo,2026-11-08T13:45:00+00:00,2026,PL1,1,False,4895845,14,2300,home,6456,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1057820,Jeremy Agbonifo,2026-11-05T17:45:00+00:00,2026,EL,10,False,5037487,4,2300,away,156,0,1,played,10,12,False,45,0,0,1,1,0,0,,,46,0,0
 1057820,Jeremy Agbonifo,2026-10-31T13:45:00+00:00,2026,PL1,1,False,4895830,13,2300,away,30974,3,1,played,10,0,False,13,0,0,1,0,1,0,,77,,0,0
 1057820,Jeremy Agbonifo,2026-10-28T19:30:00+00:00,2026,POPU,8,False,5055177,3,2300,away,4000,6,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 1057820,Jeremy Agbonifo,2026-10-25T13:45:00+00:00,2026,PL1,1,False,4895820,12,2300,home,2118,1,0,played,10,12,False,58,0,0,2,0,1,1,,,58,0,0
@@ -1101,6 +1140,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1057820,Jeremy Agbonifo,2026-10-18T12:45:00+00:00,2026,PL1,1,False,4895809,11,2300,away,168,0,1,played,10,0,False,21,0,0,0,0,0,0,,69,,0,0
 1057820,Jeremy Agbonifo,2026-10-15T19:00:00+00:00,2026,EL,10,False,5037448,2,2300,home,53453,3,1,played,10,0,False,24,0,0,2,0,1,1,,66,,0,0
 1057820,Jeremy Agbonifo,2026-10-10T18:15:00+00:00,2026,PL1,1,False,4895802,10,2300,home,428,1,3,played,10,0,False,25,0,0,0,0,0,0,71,65,,0,0
+1057820,Jeremy Agbonifo,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1057820,Jeremy Agbonifo,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1057820,Jeremy Agbonifo,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1057820,Jeremy Agbonifo,2026-09-20T15:30:00+00:00,2026,PL1,1,False,4895791,9,2300,home,255,1,3,played,10,0,False,25,0,0,1,0,0,1,,65,,0,0
 1057820,Jeremy Agbonifo,2026-09-16T19:00:00+00:00,2026,EL,10,False,5037339,1,2300,away,683,1,2,played,10,0,False,3,0,0,0,0,0,0,,87,,0,0
 1057820,Jeremy Agbonifo,2026-09-11T18:30:00+00:00,2026,PL1,1,False,4895776,8,2300,away,422,0,2,played,10,12,False,45,0,0,0,0,0,0,,,46,0,0
@@ -1109,22 +1151,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1057820,Jeremy Agbonifo,2026-08-30T12:45:00+00:00,2026,PL1,1,False,4895762,6,2300,away,9644,5,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1057820,Jeremy Agbonifo,2026-08-27T16:00:00+00:00,2026,ELQ,10,False,5013797,8,2300,away,41133,2,1,played,10,12,False,45,0,0,1,1,0,0,,,46,0,0
 1057820,Jeremy Agbonifo,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013755,7,2300,home,41133,4,0,played,10,12,False,60,1,1,0,0,0,0,,,60,0,0
-1057820,Jeremy Agbonifo,2026-08-13T18:30:00+00:00,2026,ELQ,10,False,4973711,6,2300,away,124,1,1,played,10,0,False,7,0,0,0,0,0,0,,83,,0,0
-1057820,Jeremy Agbonifo,2026-08-09T18:15:00+00:00,2026,PL1,1,False,4895621,3,2300,home,88,0,2,played,10,12,False,45,0,0,1,0,0,1,45,,46,0,0
-1057820,Jeremy Agbonifo,2026-08-06T16:00:00+00:00,2026,ELQ,10,False,4973698,5,2300,home,124,2,1,played,10,0,False,25,0,0,0,0,0,0,,65,,0,0
 1138038,Philip Pawlowski,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 793873,Mads Agger,2026-08-29T18:15:00+00:00,2026,PL1,1,False,4895765,6,324,away,168,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 793873,Mads Agger,2026-08-23T18:15:00+00:00,2026,PL1,1,False,4895636,5,324,home,422,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-793873,Mads Agger,2026-08-08T15:30:00+00:00,2026,PL1,1,False,4895617,3,324,home,3527,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1018784,Adrian Svanbäck,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825171,4,3443,neutral,3450,0,1,played,9,12,False,58,0,0,1,0,1,0,,,58,0,0
 1018784,Adrian Svanbäck,2026-10-03T13:00:00+00:00,2026,UNLC,11,True,4825170,3,3443,home,3561,2,1,played,9,12,False,90,0,0,1,0,1,0,,,,0,0
 1018784,Adrian Svanbäck,2026-09-29T18:45:00+00:00,2026,UNLC,11,True,4824868,2,3443,home,3450,0,0,played,9,12,False,2,0,0,0,0,0,0,,88,,0,0
 1018784,Adrian Svanbäck,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824869,1,3443,away,10521,7,0,played,22,12,False,90,1,2,3,1,1,1,,,,0,0
 1018784,Adrian Svanbäck,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,20,0,False,35,1,0,0,0,0,0,,55,,0,0
 877260,Markus Haaland,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,0,0,False,67,0,0,0,0,0,0,,,67,0,0
-877260,Markus Haaland,2026-08-11T17:00:00+00:00,2026,ECLQ,10,False,4973765,6,1100,away,429,4,2,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
-877260,Markus Haaland,2026-08-05T17:00:00+00:00,2026,ECLQ,10,False,4973735,5,1100,home,429,0,1,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 900199,Gustav Lindgren,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,9,0,False,88,1,0,0,0,0,0,,,88,0,0
+208880,Amor Layouni,2026-11-06T17:00:00+00:00,2026,ZYP1,1,False,4971079,9,2156,home,42109,4,1,played,14,12,False,68,1,0,0,0,0,0,,,68,0,0
 208880,Amor Layouni,2026-10-31T14:00:00+00:00,2026,ZYP1,1,False,4970331,8,2156,away,57870,2,2,played,14,9,False,90,0,0,0,0,0,0,,,,0,0
 208880,Amor Layouni,2026-10-26T17:00:00+00:00,2026,ZYP1,1,False,4970315,7,2156,home,829,2,0,played,14,9,False,74,1,0,0,0,0,0,,,74,0,0
 208880,Amor Layouni,2026-10-21T14:00:00+00:00,2026,CPO1,8,False,5065604,1,2156,home,31010,3,2,played,14,0,False,51,0,1,0,0,0,0,,69,,0,0
@@ -1134,41 +1171,26 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 208880,Amor Layouni,2026-09-13T16:00:00+00:00,2026,ZYP1,1,False,4970281,3,2156,home,45457,0,1,played,14,12,False,90,0,0,0,0,0,0,,,,0,0
 208880,Amor Layouni,2026-09-06T16:00:00+00:00,2026,ZYP1,1,False,4970272,2,2156,away,18945,4,1,played,14,12,False,58,0,0,0,0,0,0,,,58,0,0
 208880,Amor Layouni,2026-08-29T16:00:00+00:00,2026,ZYP1,1,False,4970261,1,2156,home,2784,3,1,played,14,12,False,61,0,0,0,0,0,0,,,61,0,0
-208880,Amor Layouni,2026-07-30T17:30:00+00:00,2026,ECLQ,10,False,4898030,4,2156,away,3793,6,6,played,14,12,False,46,0,0,0,0,0,0,,,46,0,0
 1270792,Christ Wawa,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,27,0,False,55,0,0,0,0,0,0,,,55,0,0
 1179842,Bamir Sadiku,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,0,0,False,23,0,0,0,0,0,0,,67,,0,0
 1433084,Sabri Kondo,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031308,2,1109,away,13653,2,1,played,25,0,False,2,0,0,0,0,0,0,,88,,0,0
 920307,Elis Bishesari,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
-920307,Elis Bishesari,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
-920307,Elis Bishesari,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 934722,Viktor Andersson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
-934722,Viktor Andersson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
-934722,Viktor Andersson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
 204409,Jonathan Rasheed,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-204409,Jonathan Rasheed,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
-204409,Jonathan Rasheed,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1255754,Noah Tolf,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,22,0,False,45,0,0,0,0,0,0,,46,,0,0
-1255754,Noah Tolf,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,22,4,False,90,0,0,0,0,0,0,,,,0,0
-1255754,Noah Tolf,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,22,4,False,90,0,0,0,0,0,0,45,,,0,0
 357622,Alexander Jallow,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-357622,Alexander Jallow,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,17,5,False,45,0,0,0,0,0,0,35,,46,0,0
-357622,Alexander Jallow,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,17,5,False,90,0,0,0,0,0,0,,,,0,0
 187147,Hjörtur Hermannsson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
-187147,Hjörtur Hermannsson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,6,3,False,90,0,0,0,0,0,0,,,,0,0
-187147,Hjörtur Hermannsson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,6,3,False,83,0,0,0,0,0,0,,,83,0,0
 931834,Felix Eriksson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,18,0,False,69,1,0,0,0,0,0,,,69,0,0
-931834,Felix Eriksson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
-931834,Felix Eriksson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 1309800,Issaka Seidu,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,28,0,False,90,0,0,0,0,0,0,,,,0,0
-1309800,Issaka Seidu,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1309800,Issaka Seidu,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
 260829,Jonas Bager,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,5,0,False,90,0,0,0,0,0,0,,,,0,0
-260829,Jonas Bager,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-260829,Jonas Bager,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 1003352,Gabriel Elias Ersoy,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,20,0,False,21,0,0,0,0,0,0,,69,,0,0
-1003352,Gabriel Elias Ersoy,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1003352,Gabriel Elias Ersoy,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069497,Rasmus Nåfors Dahlin,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069497,Rasmus Nåfors Dahlin,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069497,Rasmus Nåfors Dahlin,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069497,Rasmus Nåfors Dahlin,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1069497,Rasmus Nåfors Dahlin,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069497,Rasmus Nåfors Dahlin,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022342,2,8882,away,23438,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1172441,Benjamin Brantlind,2026-11-06T19:45:00+00:00,2026,FR1,1,False,4894989,10,667,away,415,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1172441,Benjamin Brantlind,2026-11-01T14:00:00+00:00,2026,FR1,1,False,4894979,9,667,home,290,5,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1172441,Benjamin Brantlind,2026-11-01T14:00:00+00:00,2026,FR5E,5,False,4967214,6,7968,home,11374,4,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1172441,Benjamin Brantlind,2026-10-25T16:15:00+00:00,2026,FR1,1,False,4894970,8,667,away,273,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1183,24 +1205,18 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1172441,Benjamin Brantlind,2026-08-29T15:15:00+00:00,2026,FR1,1,False,4894917,2,667,home,826,2,1,in squad,45,,False,0,0,0,0,0,0,0,,,,0,0
 1172441,Benjamin Brantlind,2026-08-21T18:45:00+00:00,2026,FR1,1,False,4894904,1,667,away,244,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1336074,Emil Fasth,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,9015,home,2719,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1336074,Emil Fasth,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1336074,Emil Fasth,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1336074,Emil Fasth,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1336074,Emil Fasth,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,4,0,False,45,0,0,0,0,0,0,,46,,0,0
 1336074,Emil Fasth,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,4,3,False,76,0,0,0,0,0,0,,,76,0,0
 1336074,Emil Fasth,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,4,0,False,35,0,0,0,0,0,0,,55,,0,0
 1336074,Emil Fasth,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,26,0,False,90,0,0,0,0,0,0,,,,0,0
-1336074,Emil Fasth,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1336074,Emil Fasth,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 428050,August Erlingmark,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-428050,August Erlingmark,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,3,3,True,90,0,0,0,0,0,0,90,,,0,0
-428050,August Erlingmark,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,3,0,False,7,0,0,0,0,0,0,,83,,0,0
 569654,David Kruse,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
-569654,David Kruse,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,15,6,False,90,0,0,0,0,0,0,,,,0,0
-569654,David Kruse,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,15,7,False,90,0,0,0,0,0,0,,,,0,0
 159668,Sam Larsson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-159668,Sam Larsson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,8,7,False,83,0,0,0,0,0,0,,,83,0,0
-159668,Sam Larsson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,8,14,False,90,0,0,0,0,0,0,,,,0,0
 464447,Kolbeinn Thórdarson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-464447,Kolbeinn Thórdarson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,23,0,False,30,0,0,0,0,0,0,,60,,0,0
-464447,Kolbeinn Thórdarson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,23,7,False,77,0,0,0,0,0,0,,,77,0,0
+692609,Imam Jagne,2026-11-07T15:00:00+00:00,2026,GR1,1,False,4973582,10,30120,away,60949,3,1,played,19,7,False,90,0,0,0,0,0,0,,,,0,0
 692609,Imam Jagne,2026-10-31T17:00:00+00:00,2026,GR1,1,False,4973574,9,30120,home,683,2,3,absent,,,False,0,0,0,0,0,0,0,,,,0,1
 692609,Imam Jagne,2026-10-27T15:30:00+00:00,2026,GRP,8,False,5033910,4,30120,away,6676,2,0,played,19,7,False,90,0,0,0,0,0,0,,,,0,0
 692609,Imam Jagne,2026-10-24T16:00:00+00:00,2026,GR1,1,False,4973571,8,30120,away,47,3,2,played,19,7,False,58,0,1,2,0,1,1,,,58,0,0
@@ -1215,54 +1231,33 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 692609,Imam Jagne,2026-08-30T18:00:00+00:00,2026,GR1,1,False,4973513,2,30120,home,2441,1,1,played,19,7,False,75,0,0,2,1,1,0,18,,75,0,0
 692609,Imam Jagne,2026-08-19T14:00:00+00:00,2026,GRP,8,False,4983169,2,30120,away,9415,6,1,played,19,7,False,79,1,0,0,0,0,0,,,79,0,0
 238084,Ramon Pascal Lundqvist,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-238084,Ramon Pascal Lundqvist,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-238084,Ramon Pascal Lundqvist,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 527340,Lucas Kåhed,2026-08-18T16:30:00+00:00,2026,SEC,8,False,5010636,2,10507,away,107288,5,0,played,0,0,False,66,0,0,0,0,0,0,,,66,0,0
 1562634,Natanael Lundén,2026-10-06T15:00:00+00:00,2026,SEC,8,False,4945607,2,9015,home,2719,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1133956,Ifeoluwa Adewale Olowoporoku,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133956,Ifeoluwa Adewale Olowoporoku,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133956,Ifeoluwa Adewale Olowoporoku,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1336073,Leo Radakovic,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,21,0,False,45,0,0,0,0,0,0,,46,,0,0
-1336073,Leo Radakovic,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1336073,Leo Radakovic,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1376819,Oliver Månsson,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1376819,Oliver Månsson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,played,8,0,False,45,0,0,0,0,0,0,,,46,0,0
 1376819,Oliver Månsson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,played,8,0,False,45,0,0,0,0,0,0,,,46,0,0
 1376819,Oliver Månsson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,played,8,0,True,90,0,0,0,0,0,0,,,,0,0
 1376819,Oliver Månsson,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
-1376819,Oliver Månsson,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,24,7,False,60,0,0,0,0,0,0,,,60,0,0
-1376819,Oliver Månsson,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,24,0,False,13,0,0,0,0,0,0,,77,,0,0
 329714,Tobias Heintz,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,14,0,True,45,1,0,0,0,0,0,,,46,0,0
-329714,Tobias Heintz,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,14,11,False,41,0,0,0,0,0,0,,,41,0,0
-329714,Tobias Heintz,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,14,9,True,83,0,0,0,0,0,0,,,83,0,0
 578920,Max Fenger,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,9,0,False,35,1,0,0,0,0,0,,55,,0,0
-578920,Max Fenger,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-578920,Max Fenger,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 935358,Alexander Simmelhack,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,47,0,False,55,1,0,0,0,0,0,,,55,0,0
 935358,Alexander Simmelhack,2026-08-30T12:00:00+00:00,2026,DK1,1,False,4921783,6,1177,home,865,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 935358,Alexander Simmelhack,2026-08-27T17:30:00+00:00,2026,DKP,8,False,5014464,2,1177,away,443,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 935358,Alexander Simmelhack,2026-08-24T17:00:00+00:00,2026,DK1,1,False,4921776,5,1177,away,206,1,3,played,9,0,False,19,0,0,1,1,0,0,,71,,0,0
 935358,Alexander Simmelhack,2026-08-16T12:00:00+00:00,2026,DK1,1,False,4921773,4,1177,away,2778,0,1,played,9,0,False,28,0,0,0,0,0,0,,62,,0,0
-935358,Alexander Simmelhack,2026-08-10T17:00:00+00:00,2026,DK1,1,False,4921766,3,1177,home,173,1,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 467232,Arbnor Mucolli,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
-467232,Arbnor Mucolli,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
-467232,Arbnor Mucolli,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 326505,Adam Bergmark Wiberg,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,29,0,False,45,0,0,0,0,0,0,,,46,0,0
-326505,Adam Bergmark Wiberg,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,29,14,False,83,0,0,0,0,0,0,,,83,0,0
-326505,Adam Bergmark Wiberg,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,29,14,False,90,0,0,0,0,0,0,,,,0,0
 1002288,Tiago Coimbra,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
-1002288,Tiago Coimbra,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,played,30,0,False,49,0,0,0,0,0,0,,41,,0,0
-1002288,Tiago Coimbra,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,played,30,0,False,7,0,0,0,0,0,0,,83,,0,0
 1336088,Alfons Borén,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,played,27,0,False,35,0,0,0,0,0,0,,55,,0,0
 1336088,Alfons Borén,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022342,2,8882,away,23438,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1336088,Alfons Borén,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1336088,Alfons Borén,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 799899,Theo Sander,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1134368,Lazarus Laku,2026-09-02T17:00:00+00:00,2026,SEC,8,False,4890602,2,801,away,45631,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1134368,Lazarus Laku,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973770,6,801,away,157,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1134368,Lazarus Laku,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973740,5,801,home,157,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 296458,Isak Pettersson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 503865,Alexander Jensen,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,0,0,False,20,0,0,0,0,0,0,,70,,0,0
 205307,Lucas Hägg Johansson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+743024,Ibrahim Buhari,2026-11-08T13:30:00+00:00,2026,A1,1,False,4904897,12,14,away,2446,1,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 743024,Ibrahim Buhari,2026-11-01T16:00:00+00:00,2026,A1,1,False,4904890,11,14,home,170,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 743024,Ibrahim Buhari,2026-10-27T17:00:00+00:00,2026,ofb,8,False,5047402,3,14,home,4467,4,6,played,3,3,False,64,0,0,0,0,0,0,35,,64,0,0
 743024,Ibrahim Buhari,2026-10-23T17:30:00+00:00,2026,A1,1,False,4904885,10,14,away,3551,1,2,played,3,3,False,90,0,0,1,0,1,0,87,,,0,0
@@ -1276,9 +1271,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 743024,Ibrahim Buhari,2026-08-27T18:30:00+00:00,2026,ECLQ,10,False,5013848,8,14,home,1075,0,0,injured,,,False,0,0,0,0,0,0,0,,,,91,0
 743024,Ibrahim Buhari,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013824,7,14,away,1075,0,2,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
 743024,Ibrahim Buhari,2026-08-16T15:00:00+00:00,2026,A1,1,False,4904842,3,14,away,4467,2,0,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
-743024,Ibrahim Buhari,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973762,6,14,home,3793,5,4,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
-743024,Ibrahim Buhari,2026-08-09T17:00:00+00:00,2026,A1,1,False,4904838,2,14,home,413,0,2,played,3,3,False,90,0,0,1,0,1,0,,,,0,0
-743024,Ibrahim Buhari,2026-08-06T17:30:00+00:00,2026,ECLQ,10,False,4973732,5,14,neutral,3793,2,1,played,3,3,False,45,0,0,0,0,0,0,,,46,0,0
 504243,Rasmus Wikström,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
 322075,Thomas Isherwood,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 116900,Simon Hedlund,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,15,0,False,79,0,0,0,0,0,0,,,79,0,0
@@ -1295,6 +1287,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1129935,Momoh Kamara,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1069501,Ossian Nordvall,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,0,0,False,70,0,0,0,0,0,0,,,70,0,0
 1290658,Leo Östman,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,21,0,False,11,0,0,0,0,0,0,,79,,0,0
+222876,Arbër Zeneli,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+222876,Arbër Zeneli,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+222876,Arbër Zeneli,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 222876,Arbër Zeneli,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 920297,Gottfrid Rapp,2026-09-16T16:00:00+00:00,2026,NOPO,8,False,5040690,2,1274,away,6037,1,2,played,20,11,False,120,0,0,0,0,0,0,,,,0,0
 920297,Gottfrid Rapp,2026-08-22T14:00:00+00:00,2026,NOPO,8,False,4896553,1,1274,away,73771,2,0,played,20,11,False,64,0,0,0,0,0,0,,,64,0,0
@@ -1302,6 +1297,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 652272,Ari Sigurpálsson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,25,0,False,70,0,0,0,0,0,0,,,70,0,0
 734054,Dion Krasniqi,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,22,0,False,90,0,0,0,0,0,0,,,,0,0
 216148,Per Frick,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1244516,Gabríel Snaer Gunnarsson,2026-11-11T15:00:00+00:00,2026,U19Q,20,True,5076059,4,25785,away,12609,2,2,played,9,0,False,78,1,0,0,0,0,0,,,78,0,0
 1244516,Gabríel Snaer Gunnarsson,2026-08-18T16:30:00+00:00,2026,SEC,8,False,4976640,2,1101,away,5027,4,0,played,0,0,False,20,0,0,0,0,0,0,,70,,0,0
 205364,Mergim Krasniqi,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 811169,Andreas Hermansen,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,33,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1322,8 +1318,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 577222,Henry Sletsjøe,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,10,0,False,70,0,0,0,0,0,0,,,70,0,0
 297370,Christos Gravius,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,0,0,False,30,0,0,0,0,0,0,,60,,0,0
 889505,Max Andersson,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
-1220226,Mohamed Bawa,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,27,0,False,20,0,0,0,0,0,0,,70,,0,0
 116944,Jonas Lindberg,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1220226,Mohamed Bawa,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,27,0,False,20,0,0,0,0,0,0,,70,,0,0
+1519093,Andrej Zovko,2026-11-07T10:00:00+00:00,2026,IJ1,7,False,4906589,10,5618,away,8517,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519093,Andrej Zovko,2026-10-31T10:00:00+00:00,2026,IJ1,7,False,4906582,9,5618,home,14848,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519093,Andrej Zovko,2026-10-28T11:00:00+00:00,2026,CITP,15,False,4913862,3,5618,home,14821,5,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519093,Andrej Zovko,2026-10-24T09:00:00+00:00,2026,IJ1,7,False,4906571,8,5618,away,11008,2,3,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1334,13 +1331,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1519093,Andrej Zovko,2026-09-04T09:00:00+00:00,2026,IJ1,7,False,4906521,3,5618,home,11997,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519093,Andrej Zovko,2026-08-30T09:00:00+00:00,2026,IJ1,7,False,4906514,2,5618,away,12130,3,3,played,6,6,False,55,0,0,0,0,0,0,,,55,0,0
 1519093,Andrej Zovko,2026-08-22T09:00:00+00:00,2026,IJ1,7,False,4906500,1,5618,home,12816,1,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
+1378926,Elias Younan,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,played,11,0,False,13,0,0,0,0,0,0,,77,,0,0
 1378926,Elias Younan,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1378926,Elias Younan,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,16,6,False,69,0,0,0,0,0,0,,,69,0,0
 1378926,Elias Younan,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,16,0,False,45,0,0,0,0,0,0,,46,,0,0
 1378926,Elias Younan,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1378926,Elias Younan,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1378926,Elias Younan,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1378926,Elias Younan,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 987325,Gustav Lundgren,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,injured,,,False,0,0,0,0,0,0,0,,,,29,0
 577816,Oscar Pettersson,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,played,32,0,False,90,0,0,0,0,0,0,,,,0,0
 1105875,Rasmus Niklasson Petrovic,2026-08-27T16:30:00+00:00,2026,SEC,8,False,5031317,2,7009,away,7556,7,0,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1352,7 +1347,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 398971,Samuel Brolin,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
 554819,Jakob Kindberg,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 939246,Casper Andersson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
-566823,Achraf Dari,2026-11-02T17:00:00+00:00,2026,EGLC,14,False,5039466,2,7,home,3369,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566823,Achraf Dari,2026-11-07T18:00:00+00:00,2026,EGYP,8,False,5126899,3,7,home,28198,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+566823,Achraf Dari,2026-11-02T17:00:00+00:00,2026,EGLC,14,False,5039466,2,7,home,3369,1,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 566823,Achraf Dari,2026-10-29T14:00:00+00:00,2026,EGY1,1,False,5009012,8,7,away,68770,1,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 566823,Achraf Dari,2026-10-25T16:00:00+00:00,2026,CAFC,10,False,5020190,4,7,home,77852,4,0,played,3,3,False,45,0,0,0,0,0,0,,,46,0,0
 566823,Achraf Dari,2026-10-21T17:00:00+00:00,2026,EGY1,1,False,5008928,7,7,home,24297,3,3,played,3,3,False,90,1,0,2,1,1,0,,,,0,0
@@ -1370,20 +1366,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 638733,Aboubacar Keita,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 646815,Alexander Almqvist,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 388646,Sivert Øverby,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,3,0,False,90,0,0,0,0,0,0,,,,0,0
-716894,Miska Ylitolva,2026-08-13T18:30:00+00:00,2026,ECLQ,10,False,4973768,6,1008,away,987,0,2,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
-716894,Miska Ylitolva,2026-08-06T16:00:00+00:00,2026,ECLQ,10,False,4973738,5,1008,home,987,1,1,played,28,5,False,66,0,0,0,0,0,0,56,,66,0,0
 392743,Jesper Löfgren,2026-08-29T16:00:00+00:00,2026,C1,1,False,4897312,5,434,away,61,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 392743,Jesper Löfgren,2026-08-22T16:00:00+00:00,2026,C1,1,False,4897305,4,434,home,527,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 392743,Jesper Löfgren,2026-08-16T13:00:00+00:00,2026,SCC,8,False,4912836,1,434,away,5503,3,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
-392743,Jesper Löfgren,2026-08-09T14:30:00+00:00,2026,C1,1,False,4897304,3,434,away,257,2,2,played,3,0,False,7,0,0,0,0,0,0,,83,,0,0
 128041,Lars Sætra,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
+1564116,Fabian Björklund,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,0,0,False,28,0,0,0,0,0,0,,62,,0,0
 1505734,Sodiq Lawal,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,18,0,False,14,0,0,0,0,0,0,,76,,0,0
 805055,Tobias Lauritsen,2026-08-30T12:00:00+00:00,2026,DK2,2,False,4919283,6,443,away,5784,0,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 805055,Tobias Lauritsen,2026-08-27T17:30:00+00:00,2026,DKP,8,False,5014464,2,443,home,1177,3,0,played,8,0,False,29,0,0,0,0,0,0,,61,,0,0
 805055,Tobias Lauritsen,2026-08-21T16:00:00+00:00,2026,DK2,2,False,4919255,5,443,home,3426,4,2,injured,,,False,0,0,0,0,0,0,0,,,,306,0
 805055,Tobias Lauritsen,2026-08-14T17:00:00+00:00,2026,DK2,2,False,4919248,4,443,away,12275,3,2,played,8,7,False,71,0,0,0,0,0,0,,,71,0,0
-805055,Tobias Lauritsen,2026-08-09T12:00:00+00:00,2026,DK2,2,False,4919244,3,443,home,49675,5,4,played,8,7,False,70,0,1,1,0,1,0,51,,70,0,0
-805055,Tobias Lauritsen,2026-08-05T16:30:00+00:00,2026,DKP,8,False,5004306,1,443,away,40804,3,0,played,8,7,False,45,0,0,0,0,0,0,,,46,0,0
 430823,Carl Gustafsson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 203773,Melker Hallberg,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,5,0,False,62,0,0,0,0,0,0,,,62,0,0
 909689,Marius Söderbäck,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,10,0,False,76,1,0,0,0,0,0,,,76,0,0
@@ -1391,8 +1383,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 187103,Robert Gojani,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,23,0,False,28,0,0,0,0,0,0,,62,,0,0
 604859,Abdussalam Magashy,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,21,0,False,90,3,0,0,0,0,0,,,,0,0
 1093464,Wilmer Andersson,2026-06-10T17:30:00+00:00,2026,SEC,8,False,4889193,1,57117,away,113903,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016312,William Andersson,2026-08-23T10:30:00+00:00,2026,FS,11,True,5039485,3,57021,away,20791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1016312,William Andersson,2026-08-20T15:00:00+00:00,2026,FS,11,True,5039484,2,57021,home,20791,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1016312,William Andersson,2026-06-10T17:30:00+00:00,2026,SEC,8,False,4889193,1,57117,away,113903,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1564116,Fabian Björklund,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,0,0,False,28,0,0,0,0,0,0,,62,,0,0
+1519055,Elion Imeri,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1519055,Elion Imeri,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 627760,Noah Shamoun,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052009,2,13674,away,3563,1,4,played,20,11,False,59,0,0,0,0,0,0,,,59,0,0
 627760,Noah Shamoun,2026-09-27T17:00:00+00:00,2026,FS,11,True,5052818,2,13674,away,15737,1,1,played,0,0,False,60,0,0,0,0,0,0,,,60,0,0
@@ -1400,7 +1394,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 796037,Charles Sagoe Jr,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,24,0,False,45,0,0,0,0,0,0,,,46,0,0
 549405,Malcolm Stolt,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,9,0,False,62,1,0,0,0,0,0,,,62,0,0
 560881,Eskild Dall,2026-08-14T17:00:00+00:00,2026,DK2,2,False,4919247,4,5776,away,1053,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-560881,Eskild Dall,2026-08-09T13:00:00+00:00,2026,DK2,2,False,4919246,3,5776,home,19657,1,1,played,19,0,False,27,0,0,4,1,2,1,,63,,0,0
 564453,Emeka Nnamani,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022340,2,3654,away,3625,7,0,played,70,0,False,28,2,0,0,0,0,0,,62,,0,0
 1389474,Elis Jäger,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 121612,Anton Fagerström,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1436,13 +1429,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 991476,Mattias Hellisdal,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,30,0,False,45,0,0,0,0,0,0,,46,,0,0
 987195,Jens Magnusson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1376274,Musab Abdi Mohamud,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,32,0,False,19,0,0,0,0,0,0,,71,,0,0
+1449280,Levi Hansas,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,played,7,0,False,90,0,0,0,0,0,0,,,,0,0
 1449280,Levi Hansas,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,played,7,9,False,90,0,0,0,0,0,0,,,,0,0
 1449280,Levi Hansas,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,7,5,False,35,0,0,0,0,0,0,,55,,0,0
 1449280,Levi Hansas,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,7,7,True,60,0,0,0,0,0,0,,,60,0,0
 1449280,Levi Hansas,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
-1449280,Levi Hansas,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,played,7,12,True,45,0,0,0,0,0,0,,,46,0,0
-1449280,Levi Hansas,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,played,7,0,False,33,0,0,0,0,0,0,,57,,0,0
-1449280,Levi Hansas,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,played,7,0,True,90,0,0,0,0,0,0,,,,0,0
 380936,Simon Gefvert,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,11,0,False,1,0,0,0,0,0,0,,89,,0,0
 492104,Abdelrahman Boudah,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,0,0,False,71,1,0,0,0,0,0,,,71,0,0
 952989,Lucas Sibelius,2026-08-18T16:30:00+00:00,2026,SEC,8,False,5010636,2,10507,away,107288,5,0,played,0,0,False,24,0,0,0,0,0,0,,66,,0,0
@@ -1450,7 +1441,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1436657,Moussa Diallo,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1262282,Casper Risbjerg,2026-08-21T17:00:00+00:00,2026,DK3O,3,False,4919373,4,947,home,3732,3,0,played,23,0,False,27,0,0,0,0,0,0,,63,,0,0
 1262282,Casper Risbjerg,2026-08-14T17:00:00+00:00,2026,DK3O,3,False,4919369,3,947,away,5733,0,4,played,23,14,False,90,0,0,0,0,0,0,,,,0,0
-1262282,Casper Risbjerg,2026-08-07T17:00:00+00:00,2026,DK3O,3,False,4919362,2,947,home,1842,1,2,played,23,14,False,90,0,0,0,0,0,0,,,,0,0
 1390371,Melvin Ljungqvist,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022345,2,5202,away,1055,2,1,played,20,0,False,90,0,0,0,0,0,0,35,,,0,0
 1247255,Leo Cavallius,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,in squad,40,,False,0,0,0,0,0,0,0,,,,0,0
 138408,Davor Blazevic,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1464,13 +1454,23 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1368527,Oskar Cotton,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,32,0,False,90,0,0,0,0,0,0,,,,0,0
 1056184,Baba Salifu Apiiga,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 103405,Simon Strand,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,16,0,False,45,0,0,0,0,0,0,,46,,0,0
+1236103,Rasmus Bergvall,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1236103,Rasmus Bergvall,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1236103,Rasmus Bergvall,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1236103,Rasmus Bergvall,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,22,0,False,45,0,0,0,0,0,0,,,46,0,0
 1236103,Rasmus Bergvall,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,22,0,False,25,0,0,0,0,0,0,,65,,0,0
 1236103,Rasmus Bergvall,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,22,5,False,79,0,0,0,0,0,0,,,79,0,0
 1236103,Rasmus Bergvall,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,22,0,False,45,0,0,0,0,0,0,,,46,0,0
+688019,Lukas Björklund,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+688019,Lukas Björklund,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+688019,Lukas Björklund,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 688019,Lukas Björklund,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,30,0,False,90,0,0,0,0,0,0,,,,0,0
+1272445,Emir El-Kathemi,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1272445,Emir El-Kathemi,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1272445,Emir El-Kathemi,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1272445,Emir El-Kathemi,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 959047,Wilmer Odefalk,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
+454628,Alex Timossi Andersson,2026-11-07T13:45:00+00:00,2026,PL1,1,False,4895843,14,759,home,6112,0,0,played,21,8,False,90,0,0,0,0,0,0,81,,,0,0
 454628,Alex Timossi Andersson,2026-11-02T17:00:00+00:00,2026,PL1,1,False,4895832,13,759,away,7154,1,3,played,21,8,False,90,0,0,0,0,0,0,,,,0,0
 454628,Alex Timossi Andersson,2026-10-29T19:30:00+00:00,2026,POPU,8,False,5055183,3,759,away,5699,1,2,played,21,0,False,50,0,1,0,0,0,0,,70,,0,0
 454628,Alex Timossi Andersson,2026-10-25T11:15:00+00:00,2026,PL1,1,False,4895817,12,759,home,30974,2,0,played,21,8,False,83,0,0,1,0,1,0,,,83,0,0
@@ -1483,8 +1483,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 454628,Alex Timossi Andersson,2026-08-28T18:30:00+00:00,2026,PL1,1,False,4895761,6,759,away,255,1,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 454628,Alex Timossi Andersson,2026-08-22T18:15:00+00:00,2026,PL1,1,False,4895639,5,759,home,88,3,3,played,21,8,False,45,0,0,0,0,0,0,,,46,0,0
 454628,Alex Timossi Andersson,2026-08-15T12:45:00+00:00,2026,PL1,1,False,4895630,4,759,away,168,1,2,played,21,8,False,74,0,0,0,0,0,0,,,74,0,0
-454628,Alex Timossi Andersson,2026-08-09T12:45:00+00:00,2026,PL1,1,False,4895620,3,759,home,5689,0,0,played,21,0,False,30,0,0,0,0,0,0,,60,,0,0
 709982,Kaare Barslund,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,27,0,False,30,0,0,0,0,0,0,,60,,0,0
+1180835,Issiaga Camara,2026-11-08T16:15:00+00:00,2026,FR1,1,False,4894981,10,417,away,1420,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1180835,Issiaga Camara,2026-10-30T18:00:00+00:00,2026,FR1,1,False,4894977,9,417,home,273,5,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1180835,Issiaga Camara,2026-10-23T18:45:00+00:00,2026,FR1,1,False,4894965,8,417,away,3911,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1180835,Issiaga Camara,2026-10-18T18:45:00+00:00,2026,FR1,1,False,4894959,7,417,away,1041,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1497,6 +1497,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 226118,Oliver Berg,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 946783,Mohamed Wael Derbali,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,0,0,False,60,0,0,0,0,0,0,,,60,0,0
 340784,Rasmus Örqvist,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1184990,Atle Wahlund,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1184990,Atle Wahlund,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1184990,Atle Wahlund,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1184990,Atle Wahlund,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,8,0,False,9,0,0,0,0,0,0,,81,,0,0
 1184990,Atle Wahlund,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,8,7,False,56,0,0,0,0,0,0,,,56,0,0
 1184990,Atle Wahlund,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,8,0,False,24,0,0,0,0,0,0,,66,,0,0
@@ -1510,13 +1513,12 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1105787,Evans Botchway,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1401544,Bidemi Amole,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1436267,Courage Otokwefor,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1449279,Carl Aurell,2026-11-11T13:00:00+00:00,2026,U17Q,20,True,4939608,1,23487,away,30118,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1449279,Carl Aurell,2026-09-28T09:00:00+00:00,2026,FS,11,True,4944325,9,23487,away,23140,3,2,played,11,14,False,90,1,0,0,0,0,0,,,,0,0
 1449279,Carl Aurell,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,played,11,7,False,73,2,0,0,0,0,0,,,73,0,0
 1449279,Carl Aurell,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,played,11,0,False,30,0,0,0,0,0,0,,60,,0,0
 1449279,Carl Aurell,2026-08-27T15:30:00+00:00,2026,SEC,8,False,5031314,2,1092,away,8915,1,2,played,0,0,False,6,0,0,0,0,0,0,,84,,0,0
-1449279,Carl Aurell,2026-08-12T10:00:00+00:00,2026,FS,11,True,5020223,8,41525,neutral,20792,2,2,played,11,10,False,90,0,0,0,0,0,0,40,,,0,0
-1449279,Carl Aurell,2026-08-09T13:00:00+00:00,2026,FS,11,True,5020220,7,41525,away,36495,2,1,played,11,0,False,33,0,0,0,0,0,0,,57,,0,0
-1449279,Carl Aurell,2026-08-07T13:00:00+00:00,2026,FS,11,True,5020219,6,41525,away,20901,2,4,played,11,0,False,87,0,0,0,0,0,0,,,87,0,0
+929626,William Lykke,2026-11-07T12:30:00+00:00,2026,DK2,2,False,4919265,14,3426,away,5818,1,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 929626,William Lykke,2026-10-31T15:00:00+00:00,2026,DK2,2,False,4919329,13,3426,home,1894,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 929626,William Lykke,2026-10-28T16:00:00+00:00,2026,DKP,8,False,5060683,4,3426,home,2778,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 929626,William Lykke,2026-10-24T11:30:00+00:00,2026,DK2,2,False,4919340,12,3426,home,5776,2,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -1530,8 +1532,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 929626,William Lykke,2026-08-25T17:00:00+00:00,2026,DKP,8,False,5014457,2,3426,away,5781,5,1,played,1,1,False,90,0,0,0,0,0,0,67,,,0,0
 929626,William Lykke,2026-08-21T16:00:00+00:00,2026,DK2,2,False,4919255,5,3426,away,443,2,4,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 929626,William Lykke,2026-08-15T12:00:00+00:00,2026,DK2,2,False,4919250,4,3426,home,5818,1,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-929626,William Lykke,2026-08-09T11:00:00+00:00,2026,DK2,2,False,4919243,3,3426,away,1894,1,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-929626,William Lykke,2026-08-06T16:00:00+00:00,2026,DKP,8,False,5004297,1,3426,away,80309,6,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
+1072025,Luka Petrovic,2026-10-23T12:30:00+00:00,2026,FS,11,True,5069474,10,41525,away,28155,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1072025,Luka Petrovic,2026-10-03T10:00:00+00:00,2026,FS,11,True,5052870,3,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1072025,Luka Petrovic,2026-09-30T15:00:00+00:00,2026,FS,11,True,5052843,2,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1072025,Luka Petrovic,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1072025,Luka Petrovic,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 377465,Tim Rönning,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
 1518940,Adam Wihed,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 663093,André Boman,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,17,0,False,6,0,0,0,0,0,0,,84,,0,0
@@ -1541,6 +1546,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 488280,Erko Tougjas,2026-09-29T18:45:00+00:00,2026,UNLC,11,True,4824880,2,6133,away,3394,0,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 488280,Erko Tougjas,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824879,1,6133,away,3574,1,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 488280,Erko Tougjas,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,16,0,False,90,0,0,0,0,0,0,,,,0,0
+488280,Erko Tougjas,2026-08-26T08:00:00+00:00,2026,FS,11,True,5028083,1,28243,away,33699,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+488280,Erko Tougjas,2026-08-23T15:00:00+00:00,2026,FS,11,True,5028082,1,28243,away,65141,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+488280,Erko Tougjas,2026-08-21T09:00:00+00:00,2026,FS,11,True,5025182,1,28243,away,69561,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 464461,Filip Schyberg,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,4,0,False,90,0,0,0,0,0,0,87,,,0,0
 253664,Pascal Gregor,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 274373,Rami Kaib,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1554,28 +1562,36 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 95472,Joel Allansson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1244514,Vincent Johansson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1381051,Iddrisu Moro,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1291830,Ludvig Arvidsson,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1291830,Ludvig Arvidsson,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1291830,Ludvig Arvidsson,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1291830,Ludvig Arvidsson,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052836,2,23488,away,21102,2,1,played,17,0,False,63,0,0,0,0,0,0,,,63,0,0
 1291830,Ludvig Arvidsson,2026-09-27T13:00:00+00:00,2026,FS,11,True,5053961,4,23488,neutral,20794,2,2,played,17,0,False,34,0,0,0,0,0,0,,56,,0,0
 1291830,Ludvig Arvidsson,2026-09-24T13:00:00+00:00,2026,FS,11,True,5056062,38,23488,away,21233,2,1,played,17,12,False,55,0,0,0,0,0,0,,,55,0,0
 1291830,Ludvig Arvidsson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,29,0,False,62,0,0,0,0,0,0,,,62,0,0
 668041,Omar Faraj,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,0,0,False,90,2,0,0,0,0,0,,,,0,0
 496321,Ajdin Zeljković,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,0,0,False,63,0,0,0,0,0,0,,,63,0,0
+1011469,Emmanuel Yeboah,2026-11-07T18:30:00+00:00,2026,RO1,1,False,4914663,15,41061,away,301,1,0,played,99,8,False,81,0,0,1,0,1,0,,,81,0,0
 1011469,Emmanuel Yeboah,2026-10-31T14:00:00+00:00,2026,RO1,1,False,4914590,14,41061,home,41278,2,0,played,99,8,False,90,0,0,0,0,0,0,,,,0,0
 1011469,Emmanuel Yeboah,2026-10-27T17:30:00+00:00,2026,ROMP,8,False,5059970,6,41061,home,455,0,0,played,99,14,False,66,0,0,0,0,0,0,21,,66,0,0
 1011469,Emmanuel Yeboah,2026-10-23T18:00:00+00:00,2026,RO1,1,False,4914733,13,41061,home,6429,0,3,absent,,,False,0,0,0,0,0,0,0,,,,0,1
-1011469,Emmanuel Yeboah,2026-10-17T18:30:00+00:00,2026,RO1,1,False,4914604,12,41061,away,455,0,2,played,99,8,False,66,0,0,0,0,0,0,12,,66,0,0
+1011469,Emmanuel Yeboah,2026-10-17T18:30:00+00:00,2026,RO1,1,False,4914604,12,41061,away,455,0,2,played,99,12,False,66,0,0,0,0,0,0,12,,66,0,0
 1011469,Emmanuel Yeboah,2026-10-09T15:00:00+00:00,2026,RO1,1,False,4914523,11,41061,home,40843,3,2,played,99,8,False,81,1,0,4,1,3,0,,,81,0,0
 1011469,Emmanuel Yeboah,2026-09-21T15:00:00+00:00,2026,RO1,1,False,4914570,10,41061,away,4959,3,2,played,99,13,False,90,0,1,3,2,0,1,49,,,0,0
-1011469,Emmanuel Yeboah,2026-09-13T17:30:00+00:00,2026,RO1,1,False,4914713,9,41061,home,40812,0,1,played,99,8,False,90,0,0,1,1,0,0,,,,0,0
+1011469,Emmanuel Yeboah,2026-09-13T17:30:00+00:00,2026,RO1,1,False,4914713,9,41061,home,40812,0,1,played,99,10,False,90,0,0,1,1,0,0,,,,0,0
 1011469,Emmanuel Yeboah,2026-09-06T12:00:00+00:00,2026,RO1,1,False,4914688,8,41061,away,9465,0,2,played,99,8,False,69,0,0,1,0,1,0,29,,69,0,0
 1011469,Emmanuel Yeboah,2026-09-02T15:45:00+00:00,2026,ROMP,8,False,5039487,5,41061,away,8818,1,0,played,99,14,False,62,1,0,0,0,0,0,,,62,0,0
 1011469,Emmanuel Yeboah,2026-08-29T18:30:00+00:00,2026,RO1,1,False,4914608,7,41061,home,312,1,1,played,99,10,False,90,0,0,2,1,0,1,73,,,0,0
 1011469,Emmanuel Yeboah,2026-08-22T15:30:00+00:00,2026,RO1,1,False,4914552,6,41061,away,952,0,0,played,99,8,False,88,0,0,2,0,0,2,,,88,0,0
 1011469,Emmanuel Yeboah,2026-08-19T14:00:00+00:00,2026,ROMP,8,False,5016025,4,41061,away,11267,3,2,played,99,10,False,19,0,0,0,0,0,0,,71,,0,0
 1011469,Emmanuel Yeboah,2026-08-16T18:30:00+00:00,2026,RO1,1,False,4914624,5,41061,home,7769,3,0,played,99,10,False,90,0,0,3,0,2,1,,,,0,0
-1011469,Emmanuel Yeboah,2026-08-10T15:30:00+00:00,2026,RO1,1,False,4914560,4,41061,away,8818,0,0,played,99,9,False,90,0,0,2,0,1,1,,,,0,0
 1407924,Malte Persson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 223912,Joel Nilsson,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,0,0,False,84,0,0,0,0,0,0,,,84,0,0
+1146597,Oliver Kapsimalis,2026-10-23T12:30:00+00:00,2026,FS,11,True,5069474,10,41525,away,28155,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146597,Oliver Kapsimalis,2026-10-03T10:00:00+00:00,2026,FS,11,True,5052870,3,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146597,Oliver Kapsimalis,2026-09-30T15:00:00+00:00,2026,FS,11,True,5052843,2,41525,away,38018,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146597,Oliver Kapsimalis,2026-09-25T09:00:00+00:00,2026,FS,11,True,5065492,46,41525,away,30431,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1146597,Oliver Kapsimalis,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,41525,away,25790,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1146597,Oliver Kapsimalis,2026-08-26T16:30:00+00:00,2026,SEC,8,False,5031310,2,1011,away,5965,2,1,played,33,0,False,90,0,0,0,0,0,0,,,,0,0
 594364,Hampus Gustafsson,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396298,Mathias Nilsson,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1589,6 +1605,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 96043,Mikael Dyrestam,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276874,Hampus Dahlqvist,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,played,16,0,False,87,0,0,0,0,0,0,,,87,0,0
 1417395,Viggo Synnergren,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+400799,Owen Parker-Price,2026-11-12T06:10:00+00:00,2026,FS,11,True,5119483,5,9171,away,13957,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 400799,Owen Parker-Price,2026-10-05T09:30:00+00:00,2026,FS,11,True,5072319,4,9171,away,3435,1,2,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 400799,Owen Parker-Price,2026-10-01T06:10:00+00:00,2026,FS,11,True,5009516,3,9171,away,3577,5,3,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 400799,Owen Parker-Price,2026-09-27T23:35:00+00:00,2026,FS,11,True,5037851,20,9171,away,5598,3,0,played,23,0,False,11,1,0,0,0,0,0,,79,,0,0
@@ -1603,12 +1620,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 800230,Viktor Ekblom,2026-08-27T18:30:00+00:00,2026,ECLQ,10,False,5013837,8,1293,away,1237,0,4,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 800230,Viktor Ekblom,2026-08-22T14:00:00+00:00,2026,NOPO,8,False,4896499,1,1293,away,6389,5,0,played,15,14,False,63,0,1,0,0,0,0,,,63,0,0
 800230,Viktor Ekblom,2026-08-20T17:00:00+00:00,2026,ECLQ,10,False,5013813,7,1293,home,1237,0,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-800230,Viktor Ekblom,2026-08-13T17:00:00+00:00,2026,ECLQ,10,False,4973763,6,1293,home,7769,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-800230,Viktor Ekblom,2026-08-06T16:30:00+00:00,2026,ECLQ,10,False,4973733,5,1293,away,7769,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 224313,Daniel Paulson,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,played,14,0,False,47,0,0,0,0,0,0,,73,,0,0
 891757,William Hofvander,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,played,17,0,False,60,2,0,0,0,0,0,,60,,0,0
 395451,Jerome Tibbling Ugwo,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,played,15,0,False,120,1,0,0,0,0,0,,,,0,0
 75901,Tobias Sana,2026-08-25T16:30:00+00:00,2026,SEC,8,False,5031309,2,1118,away,39591,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1445469,Marlon Ebietomere,2026-11-11T13:00:00+00:00,2026,FS,11,True,5069484,11,24978,away,22998,0,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1445469,Marlon Ebietomere,2026-10-06T09:00:00+00:00,2026,FS,11,True,5052772,2,24978,away,16337,0,0,played,17,0,False,30,0,0,0,0,0,0,,60,,0,0
 1445469,Marlon Ebietomere,2026-10-03T13:00:00+00:00,2026,FS,11,True,5052866,3,24978,away,16297,4,1,played,17,0,False,72,0,0,0,0,0,0,,,72,0,0
 1445469,Marlon Ebietomere,2026-10-01T14:00:00+00:00,2026,FS,11,True,5052846,3,24978,away,116699,1,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1638,6 +1654,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 217357,Sebastian Ohlsson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,played,16,0,False,25,0,0,0,0,0,0,,46,71,0,0
 1436659,Gideon Yiriyon,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 334810,Ludvig Fritzson,2026-08-19T16:30:00+00:00,2026,SEC,8,False,5022344,2,3641,away,44161,5,1,played,14,0,False,90,3,0,0,0,0,0,,,,0,0
+944822,Marcus Rafferty,2026-11-06T17:00:00+00:00,2026,TR1,1,False,4934436,11,10484,away,2832,2,0,played,19,11,False,27,0,0,0,0,0,0,,63,,0,0
 944822,Marcus Rafferty,2026-11-01T16:00:00+00:00,2026,TR1,1,False,4934113,10,10484,home,114,2,2,played,19,12,False,7,1,0,1,1,0,0,,83,,0,0
 944822,Marcus Rafferty,2026-10-29T15:00:00+00:00,2026,TRP,8,False,5081638,3,10484,home,44008,3,1,played,19,14,False,55,0,0,0,0,0,0,,,55,0,0
 944822,Marcus Rafferty,2026-10-24T10:30:00+00:00,2026,TR1,1,False,4934086,9,10484,away,7160,1,0,played,19,10,False,11,0,0,0,0,0,0,,79,,0,0

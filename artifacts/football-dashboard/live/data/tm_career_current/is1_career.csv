@@ -1,31 +1,31 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
-1130618,Davíd Helgi Aronsson,2026,DKP,369,False,2,2,0,210,0,0,0,0,1
-1130618,Davíd Helgi Aronsson,2026,DK1,369,False,13,9,0,640,0,0,0,0,1
-652274,Arnór Gauti Jónsson,2026,KRC,2362,False,1,0,0,0,0,0,0,0,0
-652274,Arnór Gauti Jónsson,2026,KR1,2362,False,12,5,0,110,0,0,1,0,0
+1130618,Davíd Helgi Aronsson,2026,DKP,369,False,3,3,0,300,0,0,0,0,1
+1130618,Davíd Helgi Aronsson,2026,DK1,369,False,14,10,0,730,0,0,0,0,1
+652274,Arnór Gauti Jónsson,2026,KRC,2362,False,2,0,0,0,0,0,0,0,0
+652274,Arnór Gauti Jónsson,2026,KR1,2362,False,13,5,0,110,0,0,1,0,0
 1235060,Kristján Oddur Kristjánsson,2026,ECLQ,1033,False,2,0,0,0,0,0,0,0,0
 1108194,Haukur Örn Brink,2026,ECLQ,21875,False,2,1,0,3,0,0,0,0,0
-598274,Marcel Zapytowski,2026,NOPO,2692,False,3,2,0,180,0,0,0,0,0
+598274,Marcel Zapytowski,2026,NOPO,2692,False,3,3,0,270,0,0,0,0,0
 930082,Ingimar Arnar Kristjánsson,2026,DKP,5784,False,4,1,0,90,0,0,0,0,0
-930082,Ingimar Arnar Kristjánsson,2026,DK2,5784,False,12,4,0,54,0,0,2,1,0
+930082,Ingimar Arnar Kristjánsson,2026,DK2,5784,False,13,5,0,63,0,0,2,1,0
 908857,Ágúst Orri Thorsteinsson,2026,NLP,798,False,1,1,0,29,0,0,0,0,0
-908857,Ágúst Orri Thorsteinsson,2026,NL1,798,False,9,8,0,532,0,2,4,1,2
+908857,Ágúst Orri Thorsteinsson,2026,NL1,798,False,10,9,0,611,0,2,5,1,2
 63821,Aron Gunnarsson,2026,UNLC,3574,True,4,1,0,45,0,0,0,0,0
-63821,Aron Gunnarsson,2026,QSL,965,False,8,4,0,237,1,0,2,1,1
+63821,Aron Gunnarsson,2026,QSL,965,False,9,5,0,249,1,0,2,1,1
 63821,Aron Gunnarsson,2026,QSCP,965,False,2,0,0,0,0,0,0,0,0
 286825,Bjarni Mark Antonsson Duffield,2026,ECLQ,1033,False,4,4,0,71,0,0,1,1,0
-819831,Halid Al-Ghoul,2026,KR2,22559,False,10,4,0,49,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DKP,369,False,1,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DKDL,14363,False,5,1,0,90,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DK1,369,False,7,0,0,0,0,0,0,0,0
+819831,Halid Al-Ghoul,2026,KR2,22559,False,11,5,0,94,0,0,0,0,0
 291070,Gunnar Vatnhamar,2026,UNLC,9173,True,4,4,0,360,0,0,3,0,0
 291070,Gunnar Vatnhamar,2026,ELQ,5849,False,2,2,0,180,0,0,0,0,1
 291070,Gunnar Vatnhamar,2026,ECLQ,5849,False,2,2,0,172,0,0,0,0,0
 291070,Gunnar Vatnhamar,2026,DKP,443,False,1,0,0,0,0,0,0,0,0
-291070,Gunnar Vatnhamar,2026,DK2,443,False,7,6,0,458,1,0,7,2,0
+291070,Gunnar Vatnhamar,2026,DK2,443,False,8,7,0,548,1,0,9,4,0
 291070,Gunnar Vatnhamar,2026,CLQ,5849,False,4,2,0,166,0,0,0,0,1
+1172622,Jón Sölvi Símonarson,2026,DKP,369,False,2,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2026,DKDL,14363,False,5,1,0,90,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2026,DK1,369,False,8,0,0,0,0,0,0,0,0
 342573,Muhamed Al-Ghoul,2026,AFCP,76413,False,2,2,0,146,0,0,0,0,0
-825208,Breki Baxter,2026,NOPO,2692,False,2,1,0,77,0,0,0,0,0
+825208,Breki Baxter,2026,NOPO,2692,False,2,2,0,79,0,0,0,0,0
 110581,Ingvar Jónsson,2026,ELQ,5849,False,2,0,2,0,0,0,0,0,0
 110581,Ingvar Jónsson,2026,ECLQ,5849,False,2,0,2,0,0,0,0,0,0
 110581,Ingvar Jónsson,2026,CLQ,5849,False,4,0,4,0,0,0,0,0,0
@@ -56,8 +56,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 187664,Davíð Örn Atlason,2026,ELQ,5849,False,2,2,0,45,0,0,2,0,0
 187664,Davíð Örn Atlason,2026,ECLQ,5849,False,2,0,0,0,0,0,0,0,0
 187664,Davíð Örn Atlason,2026,CLQ,5849,False,4,1,0,13,0,0,0,0,0
-1334378,Gestur Alexander Hafthórsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
-1334378,Gestur Alexander Hafthórsson,2026,CLQ,5849,False,3,0,0,0,0,0,0,0,0
+1334378,Gestur Alexander Hafthórsson,2026,ELQ,5849,False,2,0,0,0,0,0,0,0,0
+1334378,Gestur Alexander Hafthórsson,2026,ECLQ,5849,False,2,0,0,0,0,0,0,0,0
+1334378,Gestur Alexander Hafthórsson,2026,CLQ,5849,False,4,0,0,0,0,0,0,0,0
 1015870,Sölvi Stefánsson,2026,ELQ,5849,False,2,0,0,0,0,0,0,0,0
 1015870,Sölvi Stefánsson,2026,ECLQ,5849,False,2,0,0,0,0,0,0,0,0
 1015870,Sölvi Stefánsson,2026,CLQ,5849,False,2,0,0,0,0,0,0,0,0
@@ -112,30 +113,32 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 914943,Stígur Thórdarson,2026,ELQ,5849,False,2,2,0,180,1,0,1,1,0
 914943,Stígur Thórdarson,2026,ECLQ,5849,False,2,2,0,143,0,0,0,0,0
 914943,Stígur Thórdarson,2026,CLQ,5849,False,4,2,0,76,0,0,0,0,0
-1192117,Thorri Ingólfsson,2026,U19Q,25785,True,2,2,0,123,0,0,0,0,0
+1192117,Thorri Ingólfsson,2026,U19Q,25785,True,3,3,0,168,0,0,0,0,0
 1192117,Thorri Ingólfsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1192117,Thorri Ingólfsson,2026,CLQ,5849,False,3,0,0,0,0,0,0,0,0
 1531221,Hilmir Thor Christiansen,2026,CLQ,5849,False,3,0,0,0,0,0,0,0,0
+1159868,Sölvi Snær Ásgeirsson,2026,U19Q,25785,True,3,1,0,90,0,0,0,0,0
 1192088,Skarphédinn Gauti Ingimarsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
-1192116,Sigurdur Breki Kárason,2026,U19Q,25785,True,2,2,0,136,1,0,0,0,0
-1192116,Sigurdur Breki Kárason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
+1192116,Sigurður Kárason,2026,U19Q,25785,True,3,3,0,201,1,0,0,0,0
+1192116,Sigurður Kárason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1062729,Amin Cosic,2026,NOPO,239,False,2,1,0,79,0,0,0,0,0
 1062729,Amin Cosic,2026,CLQ,239,False,2,0,0,0,0,0,0,0,0
-1062729,Amin Cosic,2026,CL,239,False,3,1,0,15,0,0,1,0,0
-1294009,Alexander Rafn Pálmason,2026,U19Q,25785,True,2,2,0,123,0,0,0,0,0
+1062729,Amin Cosic,2026,CL,239,False,4,1,0,15,0,0,1,0,0
+1294009,Alexander Rafn Pálmason,2026,U19Q,25785,True,3,3,0,178,0,0,0,0,0
 1294009,Alexander Rafn Pálmason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
-1294009,Alexander Rafn Pálmason,2026,DKDL,14355,False,9,0,0,0,0,0,0,0,0
+1294009,Alexander Rafn Pálmason,2026,DKDL,14355,False,10,0,0,0,0,0,0,0,0
 325087,Anton Ari Einarsson,2026,UNLC,3574,True,4,0,0,0,0,0,0,0,0
 1334358,Elmar Ágúst Halldórsson,2026,U17Q,26034,True,3,1,0,90,0,0,0,0,0
 1334358,Elmar Ágúst Halldórsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
-1072744,Gylfi Berg Snaehólm,2026,U19Q,25785,True,2,2,0,153,0,0,0,0,0
-1412052,Kristinn Narfi Björgvinsson,2026,U19Q,25785,True,2,0,0,0,0,0,0,0,0
+1072744,Gylfi Berg Snaehólm,2026,U19Q,25785,True,3,2,0,153,0,0,0,0,0
+1412052,Kristinn Narfi Björgvinsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
+1529735,Bjartur Orri Jónsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1334377,Arnar Gunnleifsson,2026,U17Q,26034,True,3,3,0,122,0,0,0,0,0
-1334377,Arnar Gunnleifsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
 89663,Árni Snaer Ólafsson,2026,ECLQ,21875,False,4,4,0,390,0,0,0,0,0
+1192087,Duro Stefan Beic,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 1017191,Darri Bergmann Gylfason,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 369633,Ari Leifsson,2026,ECLQ,21875,False,3,0,0,0,0,0,0,0,0
-464439,Sindri Thór Ingimarsson,2026,ECLQ,21875,False,3,2,0,92,0,0,0,0,0
+464439,Sindri Thór Ingimarsson,2026,ECLQ,21875,False,4,2,0,92,0,0,0,0,0
 987218,Örvar Logi Örvarsson,2026,ECLQ,21875,False,4,4,0,390,0,0,0,0,1
 295624,Damil Dankerlui,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 468812,Thorri Mar Thórisson,2026,ECLQ,21875,False,4,4,0,310,0,0,0,0,3
@@ -158,6 +161,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 824080,Ibrahim Turay,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 1554466,Arnar Breki Björnsson,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 1554465,Bjarki Fridjon Saemundsson,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
+1559668,Eythór Orri Thorsteinsson,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 488999,Örvar Eggertsson,2026,ECLQ,21875,False,4,4,0,362,0,0,0,0,0
 336176,Birnir Snaer Ingason,2026,ECLQ,21875,False,4,4,0,339,1,0,0,0,0
 225796,Emil Atlason,2026,ECLQ,21875,False,4,4,0,378,3,0,0,0,1
@@ -165,9 +169,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 160109,Árni Vilhjálmsson,2026,ECLQ,21875,False,3,2,0,16,0,0,0,0,0
 1334363,Bjarki Gardarsson,2026,U17Q,26034,True,3,2,0,151,3,0,0,0,0
 1334363,Bjarki Gardarsson,2026,DFBJ,1464,False,1,1,0,90,3,0,0,0,0
-1334363,Bjarki Gardarsson,2026,19YL,41570,False,2,2,0,156,2,0,0,0,0
-1334363,Bjarki Gardarsson,2026,19D8,1464,False,9,8,0,461,8,0,0,0,0
-1326518,Benjamin Björnsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
+1334363,Bjarki Gardarsson,2026,19YL,41570,False,3,3,0,244,3,0,0,0,0
+1334363,Bjarki Gardarsson,2026,19D8,1464,False,10,9,0,539,10,0,0,0,0
 1326518,Benjamin Björnsson,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
 279338,Frederik Schram,2026,ECLQ,1033,False,4,4,0,360,0,0,0,0,0
 654680,Stefán Thór Ágústsson,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
@@ -191,6 +194,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1537697,Pétur Eiríksson,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
 1560998,Novak Tufegdzic,2026,FS,70766,True,2,2,0,135,1,0,0,0,0
 1560998,Novak Tufegdzic,2026,FS,43925,True,3,3,0,202,1,0,0,0,0
+1568536,Óskar Sveinn Einarsson,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
 307093,Tryggvi Hrafn Haraldsson,2026,ECLQ,1033,False,4,4,0,360,3,0,2,1,1
 375053,Jónatan Ingi Jónsson,2026,ECLQ,1033,False,4,4,0,328,0,1,1,0,0
 271904,Albin Skoglund,2026,ECLQ,1033,False,4,3,0,240,0,0,0,0,0
@@ -199,34 +203,33 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 864699,Birkir Jakob Jónsson,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
 1555000,Gunnar Karl Heiddal,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
 1555003,Jon Petur Wissler,2026,ECLQ,1033,False,4,0,0,0,0,0,0,0,0
+1192109,Snorri Kristinsson,2026,U19Q,25785,True,1,1,0,90,0,0,0,0,1
 1192109,Snorri Kristinsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1334376,Sigurdur Nói Jóhannsson,2026,U17Q,26034,True,3,3,0,199,1,2,0,0,0
-1334376,Sigurdur Nói Jóhannsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
-1244517,Styrmir Jóhann Ellertsson,2026,U19Q,25785,True,2,2,0,180,0,0,0,0,0
+1244517,Styrmir Jóhann Ellertsson,2026,U19Q,25785,True,3,2,0,180,0,0,0,0,0
 1334354,Aron Zumbergs,2026,U17Q,26034,True,3,2,0,47,0,0,0,0,1
-1334354,Aron Zumbergs,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
+1408763,Brynjar Ódinn Atlason,2026,U19Q,25785,True,1,1,0,90,0,0,0,0,0
 1408763,Brynjar Ódinn Atlason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1523576,Styrmir Gíslason,2026,U17Q,26034,True,3,3,0,79,1,0,0,0,0
-1064533,Jón Breki Gudmundsson,2026,U19Q,25785,True,2,0,0,0,0,0,0,0,0
-1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,2,2,0,84,1,0,0,0,0
+1064533,Jón Breki Gudmundsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
+1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,3,3,0,162,2,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2026,SEC,1101,False,1,1,0,20,0,0,0,0,0
 1334374,Róbert Hugi Saevarsson,2026,U19Q,25785,True,2,1,0,1,0,0,0,0,0
 1334374,Róbert Hugi Saevarsson,2026,U17Q,26034,True,3,3,0,270,0,0,0,0,0
-1334374,Róbert Hugi Saevarsson,2026,FS,70766,True,1,0,0,0,0,0,0,0,0
-1072750,Ásgeir Steinn Steinarsson,2026,U19Q,25785,True,2,0,0,0,0,0,0,0,0
+1072750,Ásgeir Steinn Steinarsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
 605668,Ari Petersen,2026,UNLC,9173,True,4,0,0,0,0,0,0,0,0
 376632,Milan Jezdimirovic,2026,SERP,3069,False,1,1,0,62,0,0,0,0,0
-376632,Milan Jezdimirovic,2026,SER2,3069,False,16,5,0,77,0,0,0,0,1
+376632,Milan Jezdimirovic,2026,SER2,3069,False,17,5,0,77,0,0,0,0,1
 1376035,Emil Gautason,2026,U17Q,26034,True,3,1,0,45,0,0,0,0,0
 442337,Filip Stuparevic,2026,SERP,788,False,1,1,0,21,0,0,0,0,0
-442337,Filip Stuparevic,2026,SER2,788,False,16,15,0,852,5,0,0,0,1
+442337,Filip Stuparevic,2026,SER2,788,False,17,17,0,958,6,0,0,0,2
 1493539,Lucas Vieira Thomas,2026,19YL,145629,False,2,2,0,180,0,0,0,0,0
-1181321,Ásbjörn Líndal Arnarsson,2026,U19Q,25785,True,2,1,0,1,0,0,0,0,0
+1181321,Ásbjörn Líndal Arnarsson,2026,U19Q,25785,True,3,2,0,91,1,0,0,0,0
 1181321,Ásbjörn Líndal Arnarsson,2026,19YL,145629,False,1,1,0,90,0,0,0,0,0
-1072746,Sverrir Páll Ingason,2026,U19Q,25785,True,2,2,0,180,0,1,0,0,1
+1072746,Sverrir Páll Ingason,2026,U19Q,25785,True,3,2,0,180,0,1,0,0,1
 1072746,Sverrir Páll Ingason,2026,19YL,145629,False,1,1,0,90,0,1,0,0,1
 1192092,Kristófer Kató Fridriksson,2026,19YL,145629,False,1,1,0,36,0,0,0,0,1
-1072748,Einar Freyr Halldórsson,2026,U19Q,25785,True,2,2,0,180,0,0,0,0,1
+1072748,Einar Freyr Halldórsson,2026,U19Q,25785,True,3,3,0,270,0,0,0,0,2
 1464367,Smári Signar Vidarsson,2026,U17Q,26034,True,3,3,0,97,0,0,0,0,1
 1464367,Smári Signar Vidarsson,2026,19YL,145629,False,2,2,0,150,0,0,0,0,1
 1417858,Ólíver Sesar Bjarnason,2026,19YL,145629,False,2,2,0,180,1,0,0,0,1

@@ -1,20 +1,19 @@
 {
   "last_attempt": {
-    "started_at": "2026-11-13T01:19:41.046406+00:00",
-    "status": "incomplete",
-    "reason": "budget_exhausted"
+    "started_at": "2026-11-13T02:11:04.505276+00:00",
+    "status": "success"
   },
   "last_success": {
-    "completed_at": "2026-11-02T10:30:08.284727+00:00",
+    "completed_at": "2026-11-11T23:49:37.001424+00:00",
     "sha256": {
-      "summary": "270932721d60803ec7c7f99453778f6b5c318ee4bb1fbd48ccb2e42080eaeee9",
-      "career": "70f8e9b166f1ac9686a80bff7344ac71f4b148a3543bdec5707a13df3a58964b",
-      "matches": "f3b247f6b14689cb447da611efcb6fce4294136734ac5405086cb90e8309fa08",
-      "competitions_seen": "fea5489467da40711dc4fbc887c57b439c4b46e5b713dafead7137182b3b7557"
+      "summary": "61e88610245ecb4c38e63a732f1f35258c213b6790dd0a87bd1ce0abe27ce590",
+      "career": "52304d8c4c3f4263dfd71d2248de1d19bd0d494a06c95184b5d82cc82cf78612",
+      "matches": "2516a40874cbba6f3857027c30e068ee21fd2c2a811e2e5334cca12d37c0e4b5",
+      "competitions_seen": "34bb190006c8f09736359d2c8dc6d508b7c93bd3ee54d62b3ddc31941344f050"
     },
-    "campaign": "run-41428279596-e3g1",
+    "campaign": "run-43059335910-e3g1",
     "response_version": 1,
-    "collected_from": "2026-11-02T10:30:08.284727+00:00",
-    "collected_through": "2026-11-03T15:35:34.259963+00:00"
+    "collected_from": "2026-11-11T23:49:37.001424+00:00",
+    "collected_through": "2026-11-13T02:15:17.994016+00:00"
   }
 }

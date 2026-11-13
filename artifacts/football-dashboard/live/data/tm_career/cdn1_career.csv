@@ -1,6 +1,6 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
 806684,Justin Araujo-Wilson,2026,TSP,5225,False,3,0,0,0,0,0,0,0,0
-806684,Justin Araujo-Wilson,2026,TS1,5225,False,13,0,0,0,0,0,0,0,0
+806684,Justin Araujo-Wilson,2026,TS1,5225,False,14,0,0,0,0,0,0,0,0
 806684,Justin Araujo-Wilson,2025,TSP,5225,False,2,2,0,148,1,1,0,0,0
 806684,Justin Araujo-Wilson,2025,TS2,5225,False,7,2,0,7,0,0,0,0,0
 806684,Justin Araujo-Wilson,2025,TS2,3795,False,22,7,1,284,0,0,0,0,1
@@ -20,7 +20,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 806684,Justin Araujo-Wilson,2020,TS2,7975,False,26,8,0,144,0,0,0,0,1
 806684,Justin Araujo-Wilson,2020,CZ3M,8788,False,7,4,0,245,1,0,0,0,0
 806684,Justin Araujo-Wilson,2018,CO17,27273,True,4,3,0,270,3,0,12,4,0
-1017421,Tyler Crawford,2026,VIE1,13950,False,6,6,0,477,0,3,0,0,2
+1017421,Tyler Crawford,2026,VIE1,13950,False,7,6,0,477,0,3,0,0,2
 1017421,Tyler Crawford,2025,CDN1,94560,False,14,2,0,81,0,0,0,0,0
 1017421,Tyler Crawford,2025,CCL,94560,False,2,2,0,102,0,0,0,0,0
 1017421,Tyler Crawford,2025,CAN,94560,False,3,0,0,0,0,0,0,0,0
@@ -43,7 +43,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 918989,Max Piepgrass,2020,CAN,67000,False,2,1,0,7,0,0,0,0,0
 351025,Erling Myklebust,2026,NOPO,14761,False,2,1,0,46,0,1,0,0,0
 351025,Erling Myklebust,2025,NOPO,14761,False,2,2,0,180,2,1,0,0,0
-351025,Erling Myklebust,2025,NO2,14761,False,8,8,0,472,1,0,0,0,1
+351025,Erling Myklebust,2025,NO2,14761,False,9,9,0,562,1,0,0,0,1
 351025,Erling Myklebust,2025,CDN1,79097,False,14,8,0,390,0,1,2,2,0
 351025,Erling Myklebust,2025,CCL,79097,False,2,2,0,95,0,0,1,0,0
 351025,Erling Myklebust,2025,CAN,79097,False,2,1,0,17,0,0,0,0,0
@@ -79,19 +79,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 798768,Bakary Kaboré,2019,F19A,12278,False,19,0,0,0,0,0,0,0,0
 798768,Bakary Kaboré,2018,FRYC,12278,False,2,0,0,0,0,0,0,0,0
 798768,Bakary Kaboré,2018,F19A,12278,False,26,0,0,0,0,0,0,0,0
-990800,Jay Herdman,2026,IN1L,49425,False,8,5,0,98,0,2,0,0,1
-990800,Jay Herdman,2025,CDN1,67000,False,17,9,0,273,0,2,9,3,0
-990800,Jay Herdman,2025,CAN,67000,False,3,2,0,41,0,0,1,1,0
-990800,Jay Herdman,2024,CDN1,94560,False,11,3,0,186,0,1,1,1,0
-990800,Jay Herdman,2024,CDN1,67000,False,17,14,0,461,0,1,6,1,1
-990800,Jay Herdman,2024,CCL,67000,False,2,2,0,133,0,1,2,1,0
+990800,Jay Herdman,2026,IN1L,49425,False,9,6,0,123,0,2,0,0,2
+990800,Jay Herdman,2026,ILC3,49425,False,1,1,0,90,0,3,0,0,0
+990800,Jay Herdman,2025,CDN1,67000,False,17,9,0,273,0,2,0,0,0
+990800,Jay Herdman,2025,CAN,67000,False,3,2,0,41,0,0,0,0,0
+990800,Jay Herdman,2024,CDN1,94560,False,11,3,0,186,0,1,0,0,0
+990800,Jay Herdman,2024,CDN1,67000,False,17,14,0,461,0,1,0,0,1
+990800,Jay Herdman,2024,CCL,67000,False,2,2,0,133,0,1,0,0,0
 990800,Jay Herdman,2024,CAN,94560,False,3,0,0,0,0,0,0,0,0
 990800,Jay Herdman,2024,CAN,67000,False,3,2,0,166,0,0,0,0,0
 990800,Jay Herdman,2023,USMX,6321,False,3,0,0,0,0,0,0,0,0
-990800,Jay Herdman,2023,OLYM,53827,True,3,3,0,134,0,0,1,1,0
+990800,Jay Herdman,2023,OLYM,53827,True,3,3,0,134,0,0,0,0,0
 990800,Jay Herdman,2023,MNP3,46721,False,24,20,0,1691,6,3,0,0,3
-990800,Jay Herdman,2023,MLS1,6321,False,26,1,0,9,0,0,1,0,0
-990800,Jay Herdman,2023,CDN1,67000,False,6,6,0,259,1,1,4,2,2
+990800,Jay Herdman,2023,MLS1,6321,False,26,1,0,9,0,0,0,0,0
+990800,Jay Herdman,2023,CDN1,67000,False,6,6,0,259,1,1,0,0,2
 990800,Jay Herdman,2023,CCL,6321,False,2,0,0,0,0,0,0,0,0
 990800,Jay Herdman,2023,CAPL,67000,False,2,2,0,142,0,0,0,0,0
 990800,Jay Herdman,2023,CAN,6321,False,4,0,0,0,0,0,0,0,0
@@ -99,15 +100,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 990800,Jay Herdman,2022,MNP3,46721,False,28,8,0,412,1,1,0,0,0
 990800,Jay Herdman,2022,FS,32207,True,2,2,0,96,1,0,0,0,0
 990800,Jay Herdman,2022,FS,27263,True,4,2,0,105,1,0,0,0,0
-990800,Jay Herdman,2022,20WC,27263,True,4,4,0,312,1,0,3,2,1
+990800,Jay Herdman,2022,20WC,27263,True,4,4,0,312,1,0,0,0,1
 990800,Jay Herdman,2021,MNP3,46721,False,24,18,0,942,2,1,0,0,5
 1250604,Matheus de Souza,2025,CDN1,94560,False,17,1,0,90,0,0,0,0,0
 1250604,Matheus de Souza,2025,CCL,94560,False,2,0,0,0,0,0,0,0,0
 1250604,Matheus de Souza,2025,CAN,94560,False,3,0,0,0,0,0,0,0,0
 1250604,Matheus de Souza,2024,CDN1,94560,False,3,0,0,0,0,0,0,0,0
 1250604,Matheus de Souza,2023,MNP3,46721,False,15,0,0,0,0,0,0,0,0
+1393221,Henri Godbout,2025,CDN1,94560,False,17,6,0,53,0,0,1,0,0
+1393221,Henri Godbout,2025,CCL,94560,False,2,0,0,0,0,0,0,0,0
+1393221,Henri Godbout,2025,CAN,94560,False,3,0,0,0,0,0,0,0,0
+1393221,Henri Godbout,2024,CDN1,94560,False,18,16,0,588,1,0,13,3,1
+1393221,Henri Godbout,2024,CAN,94560,False,4,1,0,82,0,0,0,0,1
 1162090,Cyprian Kachwele,2026,UKRP,3592,False,2,1,0,8,0,0,0,0,0
-1162090,Cyprian Kachwele,2026,UKR1,3592,False,6,2,0,72,0,0,0,0,1
+1162090,Cyprian Kachwele,2026,UKR1,3592,False,7,3,0,79,0,0,0,0,1
+1162090,Cyprian Kachwele,2026,UA2P,12516,False,1,1,0,45,0,0,0,0,0
 1162090,Cyprian Kachwele,2026,AFCQ,14666,True,2,1,0,69,1,0,3,1,0
 1162090,Cyprian Kachwele,2025,MNP3,46721,False,3,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2025,FS,14666,True,4,0,0,0,0,0,0,0,0
@@ -120,19 +127,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1162090,Cyprian Kachwele,2024,AFCQ,14666,True,6,2,0,8,0,0,0,0,0
 1162090,Cyprian Kachwele,2024,AFCN,14666,True,4,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2024,20AC,87610,True,4,4,0,240,0,0,8,1,1
-1162090,Cyprian Kachwele,2023,WMQ2,14666,True,5,0,0,0,0,0,0,0,0
+1162090,Cyprian Kachwele,2023,WMQ2,14666,True,7,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2023,USMX,6321,False,3,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2023,POUS,6321,False,4,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2023,MNPP,46721,False,1,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2023,MNP3,46721,False,28,20,0,946,4,0,0,0,2
 1162090,Cyprian Kachwele,2023,MLS1,6321,False,24,1,0,2,0,0,0,0,0
-1162090,Cyprian Kachwele,2023,FS,14666,True,1,0,0,0,0,0,0,0,0
+1162090,Cyprian Kachwele,2023,FS,14666,True,3,0,0,0,0,0,0,0,0
 1162090,Cyprian Kachwele,2023,CAN,6321,False,5,2,0,51,0,0,1,1,0
-1393221,Henri Godbout,2025,CDN1,94560,False,17,6,0,53,0,0,1,0,0
-1393221,Henri Godbout,2025,CCL,94560,False,2,0,0,0,0,0,0,0,0
-1393221,Henri Godbout,2025,CAN,94560,False,3,0,0,0,0,0,0,0,0
-1393221,Henri Godbout,2024,CDN1,94560,False,18,16,0,588,1,0,13,3,1
-1393221,Henri Godbout,2024,CAN,94560,False,4,1,0,82,0,0,0,0,1
+1162090,Cyprian Kachwele,2023,AFCN,14666,True,3,0,0,0,0,0,0,0,0
 1040655,Michael Harms,2025,CDN1,67000,False,10,0,0,0,0,0,0,0,0
 1040655,Michael Harms,2025,CAN,67000,False,1,0,0,0,0,0,0,0,0
 1040655,Michael Harms,2024,CDN1,67000,False,28,2,0,46,0,0,0,0,0
@@ -321,7 +324,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1607729,Ilan Hassan Farah,2026,FS,48635,True,3,3,0,154,0,0,0,0,0
 934233,Christopher Kalongo,2025,MNP3,46823,False,10,0,0,0,0,0,0,0,0
 934233,Christopher Kalongo,2025,CDN1,79097,False,22,18,0,1620,0,0,0,0,0
-934233,Christopher Kalongo,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+934233,Christopher Kalongo,2025,CAPL,79097,False,2,2,0,180,0,0,0,0,0
 934233,Christopher Kalongo,2025,CAN,79097,False,2,2,0,180,0,0,0,0,0
 934233,Christopher Kalongo,2024,CDN1,68029,False,28,1,0,1,0,0,0,0,0
 934233,Christopher Kalongo,2024,CCL,68029,False,2,0,0,0,0,0,0,0,0
@@ -345,19 +348,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 934233,Christopher Kalongo,2019,CAN,68029,False,1,0,0,0,0,0,0,0,0
 1385262,Tristan Crampton,2025,CDN1,79097,False,28,7,0,630,0,0,0,0,0
 1385262,Tristan Crampton,2025,CCL,79097,False,2,0,0,0,0,0,0,0,0
-1385262,Tristan Crampton,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1385262,Tristan Crampton,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1385262,Tristan Crampton,2025,CAN,79097,False,3,1,0,90,0,0,0,0,0
 1385262,Tristan Crampton,2024,CDN1,79097,False,28,0,0,0,0,0,0,0,0
 1385262,Tristan Crampton,2024,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1385262,Tristan Crampton,2024,CAN,79097,False,5,0,0,0,0,0,0,0,0
 1516567,Roberto Paguaga-Frankovic,2025,CDN1,79097,False,28,0,0,0,0,0,0,0,0
 1516567,Roberto Paguaga-Frankovic,2025,CCL,79097,False,2,0,0,0,0,0,0,0,0
-1516567,Roberto Paguaga-Frankovic,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1516567,Roberto Paguaga-Frankovic,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1516567,Roberto Paguaga-Frankovic,2025,CAN,79097,False,3,0,0,0,0,0,0,0,0
 817966,Noah Abatneh,2025,FS,3510,True,1,1,0,20,0,0,0,0,0
 817966,Noah Abatneh,2025,CDN1,79097,False,28,11,0,901,1,0,3,1,0
 817966,Noah Abatneh,2025,CCL,79097,False,2,2,0,180,0,0,0,0,0
-817966,Noah Abatneh,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+817966,Noah Abatneh,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 817966,Noah Abatneh,2025,CAN,79097,False,3,1,0,90,0,0,1,0,0
 817966,Noah Abatneh,2024,CDN1,79097,False,28,23,0,1976,1,0,10,4,4
 817966,Noah Abatneh,2024,CAPL,79097,False,2,2,0,210,0,0,0,0,1
@@ -372,13 +375,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 817966,Noah Abatneh,2022,CAPL,67002,False,1,0,0,0,0,0,0,0,0
 817966,Noah Abatneh,2022,CAN,67002,False,2,0,0,0,0,0,0,0,0
 817966,Noah Abatneh,2021,ITJ7,82685,False,30,19,9,1302,0,1,0,0,2
-817966,Noah Abatneh,2021,FS,27261,True,1,0,0,0,0,0,0,0,0
 817966,Noah Abatneh,2021,C220,27261,True,4,1,0,45,0,0,0,0,1
 817966,Noah Abatneh,2020,ITJ8,49740,False,8,0,8,0,0,0,0,0,0
 817966,Noah Abatneh,2020,ITJ4,49740,False,3,0,0,0,0,0,0,0,0
 1132591,Tyr Walker,2025,CDN1,79097,False,28,6,0,263,1,0,2,1,1
 1132591,Tyr Walker,2025,CCL,79097,False,2,2,0,165,0,0,0,0,0
-1132591,Tyr Walker,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1132591,Tyr Walker,2025,CAPL,79097,False,2,1,0,2,0,0,0,0,0
 1132591,Tyr Walker,2025,CAN,79097,False,3,0,0,0,0,0,0,0,0
 1132591,Tyr Walker,2024,CDN1,79097,False,28,15,1,747,0,0,6,1,3
 1132591,Tyr Walker,2024,CAPL,79097,False,2,2,0,13,0,0,0,0,0
@@ -390,7 +392,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1132591,Tyr Walker,2022,CAN,79097,False,1,0,0,0,0,0,0,0,0
 1067255,Joaquim Coulanges,2025,CDN1,79097,False,28,28,0,1504,1,2,5,3,1
 1067255,Joaquim Coulanges,2025,CCL,79097,False,2,1,0,57,0,0,0,0,0
-1067255,Joaquim Coulanges,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1067255,Joaquim Coulanges,2025,CAPL,79097,False,2,2,0,178,0,1,0,0,0
 1067255,Joaquim Coulanges,2025,CAN,79097,False,3,1,0,45,0,0,0,0,0
 1067255,Joaquim Coulanges,2024,CDN1,79097,False,28,18,0,578,2,0,8,6,1
 1067255,Joaquim Coulanges,2024,CAPL,79097,False,2,1,0,1,0,0,0,0,0
@@ -399,7 +401,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1164970,Sergey Kozlovskiy,2025,FS,27261,True,6,2,0,161,1,0,0,0,0
 1164970,Sergey Kozlovskiy,2025,CDN1,79097,False,28,16,0,1139,0,0,4,2,7
 1164970,Sergey Kozlovskiy,2025,CCL,79097,False,2,2,0,122,0,0,0,0,0
-1164970,Sergey Kozlovskiy,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1164970,Sergey Kozlovskiy,2025,CAPL,79097,False,2,2,0,180,0,0,0,0,0
 1164970,Sergey Kozlovskiy,2025,CAN,79097,False,3,3,0,213,0,1,2,0,1
 1164970,Sergey Kozlovskiy,2025,C220,27261,True,5,5,0,418,0,1,2,1,2
 1164970,Sergey Kozlovskiy,2025,C20Q,27261,True,4,3,0,190,0,0,0,0,2
@@ -412,7 +414,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1164970,Sergey Kozlovskiy,2023,C220,27261,True,4,0,0,0,0,0,0,0,0
 1164970,Sergey Kozlovskiy,2023,C20Q,27261,True,3,2,0,106,1,0,0,0,0
 801613,Wesley Timóteo,2025,CDN1,79097,False,28,15,0,696,1,1,4,2,2
-801613,Wesley Timóteo,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+801613,Wesley Timóteo,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 801613,Wesley Timóteo,2025,CAN,79097,False,3,3,0,162,1,0,1,1,0
 801613,Wesley Timóteo,2024,CDN1,67001,False,28,27,0,1936,1,4,21,4,5
 801613,Wesley Timóteo,2024,CAPL,67001,False,1,1,0,49,0,1,0,0,0
@@ -428,23 +430,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 801613,Wesley Timóteo,2020,CPO1,55927,False,1,0,0,0,0,0,0,0,0
 1002285,Loïc Cloutier,2025,CDN1,79097,False,28,20,0,1549,1,0,5,1,4
 1002285,Loïc Cloutier,2025,CCL,79097,False,2,2,0,73,0,0,1,0,0
-1002285,Loïc Cloutier,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1002285,Loïc Cloutier,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1002285,Loïc Cloutier,2025,CAN,79097,False,3,2,0,135,0,0,0,0,0
 1002285,Loïc Cloutier,2024,CDN1,79097,False,28,24,0,2078,0,1,5,1,2
 1002285,Loïc Cloutier,2024,CAPL,79097,False,2,2,0,198,0,1,0,0,0
 1002285,Loïc Cloutier,2024,CAN,79097,False,5,5,0,429,0,0,0,0,2
-1057832,Rony Mbomio,2026,AFCQ,13485,True,2,2,0,140,0,0,0,0,0
-1057832,Rony Mbomio,2025,FS,13485,True,3,2,0,93,0,0,0,0,0
+1057832,Rony Mbomio,2026,AFCQ,13485,True,3,3,0,230,0,0,1,0,0
+1057832,Rony Mbomio,2025,FS,13485,True,4,3,0,113,0,0,0,0,0
 1057832,Rony Mbomio,2025,CDN1,79097,False,28,18,0,1455,0,1,15,3,2
 1057832,Rony Mbomio,2025,CCL,79097,False,2,0,0,0,0,0,0,0,0
-1057832,Rony Mbomio,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1057832,Rony Mbomio,2025,CAPL,79097,False,2,1,0,45,0,1,0,0,0
 1057832,Rony Mbomio,2025,CAN,79097,False,3,3,0,225,0,0,0,0,0
 1057832,Rony Mbomio,2024,CDN1,79097,False,8,5,0,412,0,0,3,1,0
 1057832,Rony Mbomio,2024,CAPL,79097,False,2,2,0,210,0,0,0,0,0
 1057832,Rony Mbomio,2024,CAN,79097,False,1,1,0,90,0,0,1,0,0
+1057832,Rony Mbomio,2024,AFCN,13485,True,3,0,0,0,0,0,0,0,0
 1057832,Rony Mbomio,2022,19YL,41581,False,8,6,0,337,0,0,0,0,0
 494823,Julian Dunn,2025,CDN1,79097,False,18,9,0,586,0,0,3,0,1
-494823,Julian Dunn,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+494823,Julian Dunn,2025,CAPL,79097,False,2,2,0,180,0,0,0,0,0
 494823,Julian Dunn,2025,CAN,79097,False,2,1,0,45,0,0,2,0,1
 494823,Julian Dunn,2024,CDN1,67001,False,28,5,17,61,0,0,0,0,1
 494823,Julian Dunn,2024,CAPL,67001,False,1,0,0,0,0,0,0,0,0
@@ -487,13 +490,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1031810,Marko Stojadinovic,2022,AJ2,9445,False,10,3,0,70,0,0,0,0,0
 1519860,Luca Levillain,2025,CDN1,79097,False,12,0,0,0,0,0,0,0,0
 1519860,Luca Levillain,2025,CCL,79097,False,1,0,0,0,0,0,0,0,0
-1519860,Luca Levillain,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1519860,Luca Levillain,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 907430,Jonantán Villal,2025,MEXA,40188,False,17,0,0,0,0,0,0,0,0
 907430,Jonantán Villal,2025,MEX1,40188,False,4,0,0,0,0,0,0,0,0
 907430,Jonantán Villal,2025,M21A,110468,False,17,16,0,1154,2,0,0,0,2
 907430,Jonantán Villal,2025,CDN1,79097,False,28,11,0,601,1,0,6,2,1
 907430,Jonantán Villal,2025,CCL,79097,False,2,2,0,126,0,0,1,0,0
-907430,Jonantán Villal,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+907430,Jonantán Villal,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 907430,Jonantán Villal,2025,CAN,79097,False,3,1,0,74,0,0,0,0,0
 907430,Jonantán Villal,2024,USMX,40188,False,3,1,0,26,0,0,0,0,0
 907430,Jonantán Villal,2024,POMX,40188,False,4,0,0,0,0,0,0,0,0
@@ -515,7 +518,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 907430,Jonantán Villal,2020,USL,64328,False,2,2,0,47,0,0,0,0,0
 670183,Daniel Aguilar,2025,CDN1,79097,False,28,21,0,1222,0,1,14,4,4
 670183,Daniel Aguilar,2025,CCL,79097,False,2,2,0,60,0,0,1,1,0
-670183,Daniel Aguilar,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+670183,Daniel Aguilar,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 670183,Daniel Aguilar,2025,CAN,79097,False,3,3,0,240,0,0,1,1,1
 670183,Daniel Aguilar,2024,VZOC,531,False,6,5,0,209,0,0,1,0,1
 670183,Daniel Aguilar,2024,VZ1C,531,False,13,7,4,274,0,1,2,1,2
@@ -563,7 +566,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 670183,Daniel Aguilar,2016,M20A,23166,False,17,0,0,0,0,0,0,0,0
 283293,Manny Aparicio,2025,CDN1,79097,False,28,27,0,2430,1,2,25,3,6
 283293,Manny Aparicio,2025,CCL,79097,False,2,2,0,180,0,0,0,0,0
-283293,Manny Aparicio,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+283293,Manny Aparicio,2025,CAPL,79097,False,2,2,0,180,0,0,1,1,0
 283293,Manny Aparicio,2025,CAN,79097,False,3,3,0,270,0,0,1,0,2
 283293,Manny Aparicio,2024,CDN1,79097,False,28,28,0,2399,1,5,37,11,6
 283293,Manny Aparicio,2024,CAPL,79097,False,2,2,0,210,0,2,0,0,0
@@ -604,7 +607,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718092,Kamron Habibullah,2025,SEC,8843,False,1,0,0,0,0,0,0,0,0
 718092,Kamron Habibullah,2025,CDN1,79097,False,28,25,0,779,3,3,23,7,1
 718092,Kamron Habibullah,2025,CCL,79097,False,2,2,0,54,0,0,1,1,0
-718092,Kamron Habibullah,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+718092,Kamron Habibullah,2025,CAPL,79097,False,2,2,0,153,0,1,1,1,0
 718092,Kamron Habibullah,2025,CAN,79097,False,3,3,0,45,0,0,2,2,0
 718092,Kamron Habibullah,2024,SE2,8843,False,30,1,0,17,0,0,0,0,0
 718092,Kamron Habibullah,2023,MNP3,51604,False,28,26,0,2000,11,5,0,0,7
@@ -616,7 +619,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718092,Kamron Habibullah,2022,CCL,6321,False,4,0,0,0,0,0,0,0,0
 718092,Kamron Habibullah,2022,CAN,6321,False,3,0,0,0,0,0,0,0,0
 718092,Kamron Habibullah,2021,MLS1,6321,False,2,0,0,0,0,0,0,0,0
-718092,Kamron Habibullah,2021,FS,27261,True,1,0,0,0,0,0,0,0,0
 718092,Kamron Habibullah,2021,CDN1,68221,False,28,14,0,519,0,1,5,2,1
 718092,Kamron Habibullah,2021,CAPL,68221,False,2,2,0,140,0,1,4,0,0
 718092,Kamron Habibullah,2021,CAN,68221,False,1,0,0,0,0,0,0,0,0
@@ -628,7 +630,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718092,Kamron Habibullah,2018,17WC,32645,True,3,3,0,217,0,1,11,6,1
 994504,Gabriel Antinoro,2025,CDN1,79097,False,28,26,0,1859,3,2,44,10,3
 994504,Gabriel Antinoro,2025,CCL,79097,False,2,2,0,135,0,0,0,0,0
-994504,Gabriel Antinoro,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+994504,Gabriel Antinoro,2025,CAPL,79097,False,2,2,0,54,0,0,0,0,0
 994504,Gabriel Antinoro,2025,CAN,79097,False,3,3,0,264,0,0,1,1,2
 994504,Gabriel Antinoro,2024,CDN1,79097,False,28,28,0,2259,3,3,36,14,1
 994504,Gabriel Antinoro,2024,CAPL,79097,False,2,2,0,209,1,0,0,0,1
@@ -641,7 +643,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 994504,Gabriel Antinoro,2021,TDV,91714,False,4,4,0,110,0,1,0,0,0
 262092,Juan Castro,2025,CDN1,79097,False,28,27,0,1628,0,0,11,3,4
 262092,Juan Castro,2025,CCL,79097,False,2,2,0,165,0,0,1,0,0
-262092,Juan Castro,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+262092,Juan Castro,2025,CAPL,79097,False,2,1,0,2,0,0,0,0,0
 262092,Juan Castro,2025,CAN,79097,False,3,2,0,179,0,0,2,0,0
 262092,Juan Castro,2024,CDN1,79097,False,28,25,0,1998,0,4,19,4,7
 262092,Juan Castro,2024,CAPL,79097,False,2,2,0,150,0,0,0,0,0
@@ -696,7 +698,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 262092,Juan Castro,2011,MEX2,5138,False,3,3,0,148,0,0,0,0,0
 402786,Diego Gutiérrez,2025,KHM1,16043,False,11,0,11,0,0,0,0,0,0
 402786,Diego Gutiérrez,2025,CDN1,79097,False,14,9,0,580,0,0,6,1,3
-402786,Diego Gutiérrez,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+402786,Diego Gutiérrez,2025,CAPL,79097,False,2,2,0,178,1,0,1,0,0
 402786,Diego Gutiérrez,2025,CAN,79097,False,1,0,0,0,0,0,0,0,0
 402786,Diego Gutiérrez,2025,AFCP,16043,False,2,2,0,151,0,0,0,0,1
 402786,Diego Gutiérrez,2024,CDN1,67000,False,28,11,0,758,1,1,11,4,5
@@ -735,11 +737,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 402786,Diego Gutiérrez,2014,CH1C,6536,False,5,0,0,0,0,0,0,0,0
 1516578,Tim Arnaud,2025,CDN1,79097,False,28,16,0,1013,1,1,8,3,3
 1516578,Tim Arnaud,2025,CCL,79097,False,2,1,0,4,0,0,0,0,0
-1516578,Tim Arnaud,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1516578,Tim Arnaud,2025,CAPL,79097,False,2,2,0,135,0,0,0,0,0
 1516578,Tim Arnaud,2025,CAN,79097,False,3,2,0,68,0,0,0,0,0
 408886,Ballou Tabla,2025,CDN1,79097,False,28,27,0,2274,11,2,52,23,3
 408886,Ballou Tabla,2025,CCL,79097,False,2,2,0,180,0,0,0,0,0
-408886,Ballou Tabla,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+408886,Ballou Tabla,2025,CAPL,79097,False,2,2,0,180,1,0,2,1,0
 408886,Ballou Tabla,2025,CAN,79097,False,3,3,0,270,4,0,10,6,0
 408886,Ballou Tabla,2024,CDN1,79097,False,28,27,0,2143,12,3,56,23,4
 408886,Ballou Tabla,2024,CAPL,79097,False,2,2,0,175,0,0,0,0,0
@@ -774,11 +776,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 408886,Ballou Tabla,2015,USL,45817,False,30,21,0,1712,5,3,0,0,1
 408886,Ballou Tabla,2015,FS,27261,True,1,1,0,90,0,0,0,0,0
 408886,Ballou Tabla,2014,FS,48635,True,1,1,0,80,0,0,0,0,0
-408886,Ballou Tabla,2014,CO17,32645,True,6,3,0,270,0,0,0,0,1
+408886,Ballou Tabla,2014,CO17,32645,True,5,3,0,270,0,0,0,0,1
 1242701,Nicolas Fleuriau Chateau,2025,IRPO,42394,False,1,0,0,0,0,0,0,0,0
 1242701,Nicolas Fleuriau Chateau,2025,IR1,42394,False,23,3,0,31,0,0,1,0,0
 1242701,Nicolas Fleuriau Chateau,2025,CDN1,79097,False,15,15,0,1166,7,3,35,14,1
-1242701,Nicolas Fleuriau Chateau,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1242701,Nicolas Fleuriau Chateau,2025,CAPL,79097,False,2,2,0,178,3,0,6,4,0
 1242701,Nicolas Fleuriau Chateau,2025,CAN,79097,False,1,1,0,90,2,0,6,2,0
 1242701,Nicolas Fleuriau Chateau,2024,MNP3,46721,False,1,1,0,90,0,0,0,0,0
 1242701,Nicolas Fleuriau Chateau,2024,MLS1,6321,False,6,2,0,6,0,0,2,1,0
@@ -800,7 +802,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 186415,Amaury Escoto,2025,MEXB,64345,False,14,1,0,19,0,0,0,0,1
 186415,Amaury Escoto,2025,MEX2,64345,False,14,7,0,307,5,0,0,0,2
 186415,Amaury Escoto,2025,CDN1,79097,False,6,2,0,28,0,0,0,0,0
-186415,Amaury Escoto,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+186415,Amaury Escoto,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 186415,Amaury Escoto,2024,MXBC,64345,False,2,2,0,49,1,0,0,0,0
 186415,Amaury Escoto,2024,MEXA,49283,False,4,0,0,0,0,0,0,0,0
 186415,Amaury Escoto,2024,MEX2,64345,False,14,12,0,945,9,2,0,0,5
@@ -880,7 +882,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726153,Emiliano García,2025,M21A,110468,False,17,8,0,260,0,0,0,0,0
 726153,Emiliano García,2025,CDN1,79097,False,28,27,0,1402,6,1,31,15,5
 726153,Emiliano García,2025,CCL,79097,False,2,2,0,119,0,0,1,0,0
-726153,Emiliano García,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+726153,Emiliano García,2025,CAPL,79097,False,2,2,0,141,0,0,0,0,0
 726153,Emiliano García,2025,CAN,79097,False,3,2,0,118,0,0,0,0,2
 726153,Emiliano García,2024,M2LC,110468,False,2,2,0,138,0,0,0,0,0
 726153,Emiliano García,2024,M23C,110468,False,17,15,0,771,4,0,0,0,4
@@ -891,6 +893,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726153,Emiliano García,2023,M2LC,110450,False,2,2,0,148,0,0,0,0,0
 726153,Emiliano García,2023,M23C,110450,False,17,13,0,714,2,0,0,0,0
 726153,Emiliano García,2023,M23A,110450,False,17,15,0,1123,5,0,0,0,2
+726153,Emiliano García,2023,FS,92717,True,1,0,0,0,0,0,0,0,0
 726153,Emiliano García,2022,USMX,5662,False,1,0,0,0,0,0,0,0,0
 726153,Emiliano García,2022,POMX,5662,False,3,0,0,0,0,0,0,0,0
 726153,Emiliano García,2022,POME,5662,False,1,0,0,0,0,0,0,0,0
@@ -900,14 +903,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726153,Emiliano García,2022,M2L1,25129,False,2,2,0,94,0,0,0,0,1
 726153,Emiliano García,2022,M20C,25129,False,17,15,0,1124,6,0,0,0,4
 726153,Emiliano García,2022,M20A,25129,False,17,9,0,590,1,0,0,0,4
-726153,Emiliano García,2021,FS,92717,True,1,1,0,34,0,0,0,0,0
+726153,Emiliano García,2021,FS,92717,True,2,1,0,34,0,0,0,0,0
 726153,Emiliano García,2021,19YL,50915,False,6,3,0,71,1,0,2,1,1
 726153,Emiliano García,2020,M20A,25129,False,17,13,0,929,5,0,0,0,2
 726153,Emiliano García,2019,MEXA,5662,False,1,1,0,1,0,0,0,0,0
 726153,Emiliano García,2019,M20C,25129,False,10,5,0,213,0,0,0,0,1
 842419,Jean-Aniel Assi,2025,CDN1,79097,False,28,26,0,1073,3,1,5,3,2
 842419,Jean-Aniel Assi,2025,CCL,79097,False,2,0,0,0,0,0,0,0,0
-842419,Jean-Aniel Assi,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+842419,Jean-Aniel Assi,2025,CAPL,79097,False,2,2,0,12,0,0,0,0,0
 842419,Jean-Aniel Assi,2025,CAN,79097,False,3,3,0,119,0,0,1,1,0
 842419,Jean-Aniel Assi,2024,E3G2,12361,False,17,3,0,34,0,0,0,0,0
 842419,Jean-Aniel Assi,2024,CDR,12361,False,3,1,0,55,0,0,0,0,0
@@ -927,7 +930,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 842419,Jean-Aniel Assi,2020,MLS1,4078,False,34,0,0,0,0,0,0,0,0
 842419,Jean-Aniel Assi,2020,CAN,4078,False,3,0,0,0,0,0,0,0,0
 842419,Jean-Aniel Assi,2019,CCL,4078,False,1,1,0,7,0,0,0,0,0
-1095864,Santiago López,2026,MEXA,7633,False,15,3,0,7,0,0,0,0,0
+1095864,Santiago López,2026,MEXA,7633,False,16,3,0,7,0,0,0,0,0
 1095864,Santiago López,2026,M21A,110448,False,8,4,0,289,1,0,0,0,0
 1095864,Santiago López,2025,USMX,7633,False,3,0,0,0,0,0,0,0,0
 1095864,Santiago López,2025,POMX,7633,False,1,1,0,45,0,0,0,0,0
@@ -954,7 +957,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1095864,Santiago López,2022,M20A,23169,False,1,0,0,0,0,0,0,0,0
 442319,Richie Ennin,2025,CDN1,79097,False,28,0,28,0,0,0,0,0,0
 442319,Richie Ennin,2025,CCL,79097,False,2,0,0,0,0,0,0,0,0
-442319,Richie Ennin,2025,CAPL,79097,False,1,0,1,0,0,0,0,0,0
+442319,Richie Ennin,2025,CAPL,79097,False,2,0,2,0,0,0,0,0,0
 442319,Richie Ennin,2025,CAN,79097,False,3,0,3,0,0,0,0,0,0
 442319,Richie Ennin,2024,CDN1,79097,False,5,1,0,16,1,0,1,1,0
 442319,Richie Ennin,2024,CAPL,79097,False,2,1,0,8,0,0,0,0,0
@@ -985,22 +988,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1405115,Ralph Khoury,2026,FS,3586,True,2,2,0,37,0,0,0,0,0
 1405115,Ralph Khoury,2025,CDN1,79097,False,28,14,0,212,1,1,7,3,3
 1405115,Ralph Khoury,2025,CCL,79097,False,2,1,0,67,0,0,2,0,0
-1405115,Ralph Khoury,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1405115,Ralph Khoury,2025,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1405115,Ralph Khoury,2025,CAN,79097,False,3,1,0,29,0,0,1,0,0
 1405115,Ralph Khoury,2024,CDN1,79097,False,24,7,0,69,0,0,3,1,0
 1405115,Ralph Khoury,2024,CAPL,79097,False,2,0,0,0,0,0,0,0,0
 1405115,Ralph Khoury,2024,CAN,79097,False,5,0,0,0,0,0,0,0,0
 1578825,Reinaldo Abraham,2025,CDN1,79097,False,12,7,0,108,0,0,2,1,0
-1578825,Reinaldo Abraham,2025,CAPL,79097,False,1,0,0,0,0,0,0,0,0
+1578825,Reinaldo Abraham,2025,CAPL,79097,False,2,1,0,2,0,0,0,0,0
 1578825,Reinaldo Abraham,2025,CAN,79097,False,1,0,0,0,0,0,0,0,0
 371816,Dimitry Bertaud,2026,FS,3854,True,2,1,0,90,0,0,0,0,0
-371816,Dimitry Bertaud,2026,AFCQ,3854,True,2,0,0,0,0,0,0,0,0
+371816,Dimitry Bertaud,2026,AFCQ,3854,True,3,0,0,0,0,0,0,0,0
 371816,Dimitry Bertaud,2025,POWM,3854,True,1,0,0,0,0,0,0,0,0
 371816,Dimitry Bertaud,2025,FS,3854,True,4,0,0,0,0,0,0,0,0
 371816,Dimitry Bertaud,2025,FIWC,3854,True,4,0,0,0,0,0,0,0,0
 371816,Dimitry Bertaud,2025,CDN1,68029,False,28,23,0,2070,0,0,0,0,0
 371816,Dimitry Bertaud,2025,CCL,68029,False,2,2,0,180,0,0,0,0,0
-371816,Dimitry Bertaud,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+371816,Dimitry Bertaud,2025,CAPL,68029,False,2,2,0,180,0,0,0,0,0
 371816,Dimitry Bertaud,2025,CAN,68029,False,6,6,0,570,0,0,0,0,0
 371816,Dimitry Bertaud,2024,FS,3854,True,2,1,0,90,0,0,0,0,0
 371816,Dimitry Bertaud,2024,FRC,969,False,1,1,0,90,0,0,0,0,0
@@ -1054,7 +1057,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 371816,Dimitry Bertaud,2013,FS,10844,True,2,1,0,80,0,0,0,0,0
 1002284,Dino Bontis,2025,CDN1,68029,False,28,5,0,450,0,0,0,0,0
 1002284,Dino Bontis,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-1002284,Dino Bontis,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1002284,Dino Bontis,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2025,CAN,68029,False,6,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2024,CDN1,68029,False,24,1,0,89,0,0,0,0,0
 1002284,Dino Bontis,2024,CAPL,68029,False,2,0,0,0,0,0,0,0,0
@@ -1062,7 +1065,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1002284,Dino Bontis,2023,CDN1,68029,False,22,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2023,CCL,68029,False,2,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2023,CAN,68029,False,5,0,0,0,0,0,0,0,0
-1002284,Dino Bontis,2021,FS,27261,True,1,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2021,CDN1,68029,False,15,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2021,CAN,68029,False,2,0,0,0,0,0,0,0,0
 1002284,Dino Bontis,2021,C220,27261,True,4,0,0,0,0,0,0,0,0
@@ -1071,7 +1073,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 335146,Antoine Batisse,2025,SER1,32113,False,20,16,2,1273,0,0,3,0,2
 335146,Antoine Batisse,2025,CDN1,68029,False,28,26,0,2208,4,2,23,9,5
 335146,Antoine Batisse,2025,CCL,68029,False,2,2,0,180,0,0,1,0,0
-335146,Antoine Batisse,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+335146,Antoine Batisse,2025,CAPL,68029,False,2,2,0,180,0,0,2,0,0
 335146,Antoine Batisse,2025,CAN,68029,False,6,5,0,392,3,0,5,4,1
 335146,Antoine Batisse,2024,SR1R,32113,False,7,7,0,630,1,1,5,1,0
 335146,Antoine Batisse,2024,SERP,32113,False,3,1,0,90,0,0,0,0,0
@@ -1109,7 +1111,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 335146,Antoine Batisse,2014,FR2,1161,False,34,7,0,377,0,0,0,0,1
 1109945,Dan Nimick,2025,CDN1,68029,False,28,26,0,2340,4,3,15,7,7
 1109945,Dan Nimick,2025,CCL,68029,False,2,2,0,180,0,0,1,0,0
-1109945,Dan Nimick,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1109945,Dan Nimick,2025,CAPL,68029,False,2,2,0,180,1,0,1,1,0
 1109945,Dan Nimick,2025,CAN,68029,False,6,6,0,570,0,0,3,1,2
 1109945,Dan Nimick,2024,CDN1,68029,False,28,28,0,2504,2,4,14,4,2
 1109945,Dan Nimick,2024,CCL,68029,False,2,2,0,180,0,0,0,0,0
@@ -1123,7 +1125,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1109945,Dan Nimick,2021,NCD1,64927,False,3,0,0,0,0,0,0,0,0
 403534,Rezart Rama,2025,CDN1,68029,False,28,24,1,1932,0,1,12,2,5
 403534,Rezart Rama,2025,CCL,68029,False,2,2,0,180,0,0,1,0,0
-403534,Rezart Rama,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+403534,Rezart Rama,2025,CAPL,68029,False,2,2,0,180,0,0,2,1,0
 403534,Rezart Rama,2025,CAN,68029,False,6,4,0,390,0,0,2,0,0
 403534,Rezart Rama,2024,ECLQ,27114,False,2,1,0,1,0,0,0,0,0
 403534,Rezart Rama,2024,CLQ,27114,False,2,1,0,12,0,0,0,0,0
@@ -1166,7 +1168,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 403534,Rezart Rama,2015,FS,44247,True,2,2,0,180,0,0,0,0,0
 586895,Marko Jevremović,2025,CDN1,68029,False,28,23,0,2025,2,0,29,12,2
 586895,Marko Jevremović,2025,CCL,68029,False,2,2,0,180,0,0,2,1,0
-586895,Marko Jevremović,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+586895,Marko Jevremović,2025,CAPL,68029,False,2,2,0,180,1,0,2,0,0
 586895,Marko Jevremović,2025,CAN,68029,False,6,6,0,555,0,0,5,0,2
 586895,Marko Jevremović,2024,CDN1,68029,False,28,25,0,1945,0,3,12,3,5
 586895,Marko Jevremović,2024,CCL,68029,False,2,2,0,173,0,0,3,0,0
@@ -1193,7 +1195,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 222686,Manjrekar James,2025,CRPD,6478,False,4,0,0,0,0,0,0,0,0
 222686,Manjrekar James,2025,CDN1,68029,False,8,8,0,622,1,0,9,3,2
 222686,Manjrekar James,2025,CCAC,6478,False,2,0,0,0,0,0,0,0,0
-222686,Manjrekar James,2025,CAPL,68029,False,1,0,1,0,0,0,0,0,0
+222686,Manjrekar James,2025,CAPL,68029,False,2,2,0,180,0,0,1,0,0
 222686,Manjrekar James,2025,CAN,68029,False,2,2,0,135,0,0,2,0,1
 222686,Manjrekar James,2025,AUS1,8445,False,26,20,4,1465,2,0,10,5,1
 222686,Manjrekar James,2024,PDV1,6478,False,4,0,4,0,0,0,0,0,0
@@ -1251,12 +1253,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 222686,Manjrekar James,2014,UNGP,3233,False,6,3,0,63,0,0,0,0,1
 222686,Manjrekar James,2014,UNG1,3233,False,30,16,2,1193,1,0,0,0,4
 222686,Manjrekar James,2014,GOCU,3510,True,3,0,0,0,0,0,0,0,0
-222686,Manjrekar James,2014,FS,3510,True,4,2,0,158,0,0,0,0,2
+222686,Manjrekar James,2014,FS,3510,True,7,2,0,158,0,0,0,0,2
 222686,Manjrekar James,2013,FS,3510,True,2,0,0,0,0,0,0,0,0
 222686,Manjrekar James,2012,C220,27261,True,3,1,0,57,0,0,0,0,0
 356082,Daniël Krutzen,2025,CDN1,68029,False,28,17,0,628,1,0,8,4,0
 356082,Daniël Krutzen,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-356082,Daniël Krutzen,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+356082,Daniël Krutzen,2025,CAPL,68029,False,2,1,0,12,0,0,0,0,0
 356082,Daniël Krutzen,2025,CAN,68029,False,6,4,0,215,1,0,4,1,1
 356082,Daniël Krutzen,2022,USLP,33414,False,4,3,0,62,0,0,0,0,0
 356082,Daniël Krutzen,2022,USL,33414,False,34,25,0,1844,0,0,12,2,4
@@ -1287,12 +1289,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1510613,Noah Bickford,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
 971614,Maxime Bourgeois,2025,CDN1,68029,False,28,26,0,1285,2,3,13,6,2
 971614,Maxime Bourgeois,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-971614,Maxime Bourgeois,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+971614,Maxime Bourgeois,2025,CAPL,68029,False,2,2,0,133,0,0,0,0,0
 971614,Maxime Bourgeois,2025,CAN,68029,False,6,5,0,357,0,2,6,1,0
 971614,Maxime Bourgeois,2018,CO17,32645,True,6,3,0,270,0,0,1,0,1
 503782,Ben Paton,2025,CDN1,68029,False,28,28,0,2188,4,2,39,11,1
 503782,Ben Paton,2025,CCL,68029,False,2,2,0,171,0,0,1,0,0
-503782,Ben Paton,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+503782,Ben Paton,2025,CAPL,68029,False,2,2,0,93,0,0,0,0,0
 503782,Ben Paton,2025,CAN,68029,False,6,6,0,372,1,0,6,3,0
 503782,Ben Paton,2024,CDN1,68029,False,28,25,0,1082,1,1,12,4,1
 503782,Ben Paton,2024,CCL,68029,False,2,2,0,18,0,0,1,1,0
@@ -1319,7 +1321,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 503782,Ben Paton,2016,18GB,6949,False,7,5,0,434,2,1,0,0,0
 985695,Noah Jensen,2025,CDN1,68029,False,28,24,0,1089,3,5,28,10,0
 985695,Noah Jensen,2025,CCL,68029,False,2,2,0,42,0,0,0,0,0
-985695,Noah Jensen,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+985695,Noah Jensen,2025,CAPL,68029,False,2,2,0,156,0,1,2,1,0
 985695,Noah Jensen,2025,CAN,68029,False,6,5,0,232,0,2,2,1,0
 985695,Noah Jensen,2024,CDN1,68029,False,28,24,0,1059,2,1,18,10,0
 985695,Noah Jensen,2024,CCL,68029,False,2,2,0,48,0,0,3,0,0
@@ -1340,7 +1342,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 985695,Noah Jensen,2019,CAN,68029,False,1,0,0,0,0,0,0,0,0
 916422,Anthony Aromatario,2025,CDN1,68029,False,28,24,0,1933,1,2,8,1,10
 916422,Anthony Aromatario,2025,CCL,68029,False,2,2,0,119,0,0,0,0,0
-916422,Anthony Aromatario,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+916422,Anthony Aromatario,2025,CAPL,68029,False,2,2,0,160,1,0,1,0,1
 916422,Anthony Aromatario,2025,CAN,68029,False,6,6,0,495,0,0,0,0,1
 916422,Anthony Aromatario,2023,SMRP,10617,False,2,0,0,0,0,0,0,0,0
 916422,Anthony Aromatario,2023,SMR1,10617,False,30,21,1,1038,0,0,0,0,5
@@ -1353,7 +1355,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 916422,Anthony Aromatario,2021,IT3B,22294,False,17,0,0,0,0,0,0,0,0
 364640,Mo Babouli,2025,CDN1,68029,False,28,14,0,589,0,0,13,4,1
 364640,Mo Babouli,2025,CCL,68029,False,2,2,0,87,0,0,2,0,0
-364640,Mo Babouli,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+364640,Mo Babouli,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 364640,Mo Babouli,2025,CAN,68029,False,6,2,0,72,0,0,1,0,0
 364640,Mo Babouli,2024,CDN1,68029,False,28,24,0,1676,4,2,29,8,1
 364640,Mo Babouli,2024,CCL,68029,False,2,2,0,146,0,0,1,0,0
@@ -1387,7 +1389,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 364640,Mo Babouli,2014,OLCC,29112,True,5,3,0,50,1,0,0,0,0
 1130259,Khadim Kane,2025,CDN1,68029,False,28,0,0,0,0,0,0,0,0
 1130259,Khadim Kane,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-1130259,Khadim Kane,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1130259,Khadim Kane,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 1130259,Khadim Kane,2025,CAN,68029,False,6,0,0,0,0,0,0,0,0
 1130259,Khadim Kane,2024,CDN1,68029,False,28,14,0,451,1,0,4,1,0
 1130259,Khadim Kane,2024,CCL,68029,False,2,2,0,20,0,0,0,0,0
@@ -1403,7 +1405,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1130259,Khadim Kane,2022,CAN,68029,False,3,0,0,0,0,0,0,0,0
 1336581,Keito Lipovschek,2025,CDN1,68029,False,28,0,0,0,0,0,0,0,0
 1336581,Keito Lipovschek,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-1336581,Keito Lipovschek,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1336581,Keito Lipovschek,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 1336581,Keito Lipovschek,2025,CAN,68029,False,6,0,0,0,0,0,0,0,0
 1336581,Keito Lipovschek,2024,UAEP,103824,False,1,1,0,21,0,0,0,0,0
 1336581,Keito Lipovschek,2024,CDN1,68029,False,28,4,0,86,0,0,1,0,0
@@ -1412,7 +1414,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1336581,Keito Lipovschek,2024,CAN,68029,False,5,0,0,0,0,0,0,0,0
 1341187,Aghilas Sadek,2025,FS,32645,True,4,0,0,0,0,0,0,0,0
 1341187,Aghilas Sadek,2025,CDN1,68029,False,28,18,0,986,2,1,27,7,2
-1341187,Aghilas Sadek,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1341187,Aghilas Sadek,2025,CAPL,68029,False,2,2,0,103,0,1,5,1,0
 1341187,Aghilas Sadek,2025,CAN,68029,False,6,5,0,273,0,0,4,2,0
 1341187,Aghilas Sadek,2025,C20Q,27261,True,4,4,0,172,1,2,0,0,0
 1341187,Aghilas Sadek,2024,FS,32645,True,3,1,0,45,1,0,0,0,0
@@ -1422,7 +1424,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1234107,Zayne Bruno,2025,FS,27261,True,4,0,0,0,0,0,0,0,0
 1234107,Zayne Bruno,2025,CDN1,68029,False,28,3,0,3,0,0,0,0,0
 1234107,Zayne Bruno,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-1234107,Zayne Bruno,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1234107,Zayne Bruno,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 1234107,Zayne Bruno,2025,CAN,68029,False,6,0,0,0,0,0,0,0,0
 1234107,Zayne Bruno,2025,C220,27261,True,5,5,0,311,0,1,0,0,0
 1234107,Zayne Bruno,2025,C20Q,27261,True,4,3,0,158,2,1,0,0,0
@@ -1436,7 +1438,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1234107,Zayne Bruno,2023,CAN,68029,False,5,0,0,0,0,0,0,0,0
 221038,Lucas Cavallini,2025,MEXA,5662,False,17,1,0,27,0,0,1,0,1
 221038,Lucas Cavallini,2025,CDN1,68029,False,7,6,0,396,2,1,15,5,1
-221038,Lucas Cavallini,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+221038,Lucas Cavallini,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 221038,Lucas Cavallini,2025,CAN,68029,False,1,1,0,42,0,0,1,0,1
 221038,Lucas Cavallini,2024,USMX,5662,False,4,0,0,0,0,0,0,0,0
 221038,Lucas Cavallini,2024,MEXA,5662,False,17,4,0,328,4,0,17,8,1
@@ -1511,7 +1513,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 221038,Lucas Cavallini,2010,C220,27261,True,3,3,0,270,1,0,0,0,0
 482623,Brian Wright,2025,CDN1,68029,False,28,19,0,890,4,1,16,4,2
 482623,Brian Wright,2025,CCL,68029,False,2,2,0,55,1,0,2,1,0
-482623,Brian Wright,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+482623,Brian Wright,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 482623,Brian Wright,2025,CAN,68029,False,6,4,0,232,2,0,5,4,0
 482623,Brian Wright,2024,CDN1,68029,False,28,26,0,1824,12,0,50,24,4
 482623,Brian Wright,2024,CCL,68029,False,2,2,0,147,0,0,0,0,0
@@ -1545,7 +1547,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 482623,Brian Wright,2015,MLSP,48530,False,1,0,0,0,0,0,0,0,0
 402531,Tristan Borges,2025,CDN1,68029,False,28,26,0,1409,3,4,38,9,3
 402531,Tristan Borges,2025,CCL,68029,False,2,2,0,138,0,0,2,1,0
-402531,Tristan Borges,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+402531,Tristan Borges,2025,CAPL,68029,False,2,2,0,24,0,0,1,0,0
 402531,Tristan Borges,2025,CAN,68029,False,6,5,0,264,2,0,7,4,0
 402531,Tristan Borges,2024,CDN1,68029,False,28,21,0,1150,4,3,29,11,1
 402531,Tristan Borges,2024,CCL,68029,False,2,2,0,180,0,0,4,2,1
@@ -1585,12 +1587,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 402531,Tristan Borges,2016,NLAE,4779,False,18,10,0,757,3,0,0,0,0
 402531,Tristan Borges,2016,C220,27261,True,3,3,0,241,0,0,0,0,0
 402531,Tristan Borges,2015,NLAE,4779,False,18,1,0,43,0,0,0,0,0
-402531,Tristan Borges,2014,CO17,32645,True,6,4,0,334,1,0,0,0,0
+402531,Tristan Borges,2014,CO17,32645,True,5,4,0,334,1,0,0,0,0
 1089582,Levonte Johnson,2025,USLC,45805,False,4,1,0,45,0,0,1,0,0
 1089582,Levonte Johnson,2025,USL,45805,False,16,8,0,274,1,0,5,0,0
 1089582,Levonte Johnson,2025,MLSP,45805,False,4,2,0,144,0,0,1,0,0
 1089582,Levonte Johnson,2025,CDN1,68029,False,15,7,0,230,1,1,5,3,1
-1089582,Levonte Johnson,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1089582,Levonte Johnson,2025,CAPL,68029,False,2,1,0,25,0,0,0,0,0
 1089582,Levonte Johnson,2025,CAN,68029,False,3,2,0,76,0,0,0,0,0
 1089582,Levonte Johnson,2024,USLP,45805,False,1,1,0,20,0,0,0,0,0
 1089582,Levonte Johnson,2024,USLC,45805,False,4,3,0,142,0,0,6,2,1
@@ -1611,7 +1613,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1089582,Levonte Johnson,2020,NCD1,56233,False,1,0,0,0,0,0,0,0,0
 429086,Nana Ampomah,2025,CDN1,68029,False,28,14,0,595,3,1,20,6,3
 429086,Nana Ampomah,2025,CCL,68029,False,2,0,0,0,0,0,0,0,0
-429086,Nana Ampomah,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+429086,Nana Ampomah,2025,CAPL,68029,False,2,2,0,27,0,0,0,0,2
 429086,Nana Ampomah,2025,CAN,68029,False,6,3,0,217,1,1,6,1,2
 429086,Nana Ampomah,2024,CDN1,68029,False,28,19,0,1313,6,3,41,14,9
 429086,Nana Ampomah,2024,CCL,68029,False,2,1,0,6,0,0,0,0,0
@@ -1651,7 +1653,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 429086,Nana Ampomah,2016,BE1,28643,False,30,13,0,266,0,1,0,0,2
 1374563,Hoce Massunda,2025,CDN1,68029,False,28,26,0,1788,4,2,39,14,3
 1374563,Hoce Massunda,2025,CCL,68029,False,2,2,0,138,0,0,3,2,0
-1374563,Hoce Massunda,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1374563,Hoce Massunda,2025,CAPL,68029,False,2,1,0,82,1,0,5,2,0
 1374563,Hoce Massunda,2025,CAN,68029,False,6,6,0,376,0,1,0,0,0
 1374563,Hoce Massunda,2024,CDN1,68029,False,28,25,0,1475,4,5,24,8,1
 1374563,Hoce Massunda,2024,CCL,68029,False,2,0,0,0,0,0,0,0,0
@@ -1659,13 +1661,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1374563,Hoce Massunda,2024,CAN,68029,False,5,4,0,95,0,1,0,0,0
 1500685,Ismael Oketokoun,2025,CDN1,68029,False,28,22,0,806,5,3,25,9,3
 1500685,Ismael Oketokoun,2025,CCL,68029,False,2,2,0,125,0,0,2,1,1
-1500685,Ismael Oketokoun,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1500685,Ismael Oketokoun,2025,CAPL,68029,False,2,2,0,77,0,0,1,1,0
 1500685,Ismael Oketokoun,2025,CAN,68029,False,6,6,0,185,0,0,7,3,0
 1149058,Kevaughn Tavernier,2025,CDN1,68029,False,28,3,0,127,0,0,0,0,0
 1149058,Kevaughn Tavernier,2025,CCL,68029,False,2,1,0,5,0,0,1,0,0
-1149058,Kevaughn Tavernier,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1149058,Kevaughn Tavernier,2025,CAPL,68029,False,2,0,0,0,0,0,0,0,0
 1149058,Kevaughn Tavernier,2025,CAN,68029,False,6,0,0,0,0,0,0,0,0
-1149058,Kevaughn Tavernier,2023,FS,32645,True,1,0,0,0,0,0,0,0,0
 1149058,Kevaughn Tavernier,2023,CDN1,68029,False,11,5,0,39,0,0,0,0,1
 1149058,Kevaughn Tavernier,2023,CCL,68029,False,2,2,0,24,1,0,1,1,1
 1149058,Kevaughn Tavernier,2023,CAN,68029,False,3,0,0,0,0,0,0,0,0
@@ -1675,7 +1676,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1149058,Kevaughn Tavernier,2022,17WC,32645,True,3,3,0,140,0,0,3,2,0
 1374358,Maxime Filion,2025,CDN1,68029,False,28,15,0,515,2,1,16,7,1
 1374358,Maxime Filion,2025,CCL,68029,False,2,2,0,25,0,0,0,0,0
-1374358,Maxime Filion,2025,CAPL,68029,False,1,0,0,0,0,0,0,0,0
+1374358,Maxime Filion,2025,CAPL,68029,False,2,1,0,8,0,0,0,0,0
 1374358,Maxime Filion,2025,CAN,68029,False,6,3,0,94,0,0,1,0,0
 1374358,Maxime Filion,2024,CDN1,68029,False,18,15,0,217,3,0,8,4,0
 1374358,Maxime Filion,2024,CCL,68029,False,2,2,0,33,0,0,0,0,0
@@ -2132,6 +2133,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 398224,Ollie Bassett,2015,GB4,972,False,46,2,0,144,0,0,0,0,0
 398224,Ollie Bassett,2015,FAC,972,False,4,0,0,0,0,0,0,0,0
 398224,Ollie Bassett,2015,CGB,972,False,1,0,0,0,0,0,0,0,0
+573949,Steffen Yeates,2026,CNNF,7149,True,1,0,0,0,0,0,0,0,0
+573949,Steffen Yeates,2026,CNLA,7149,True,4,0,0,0,0,0,0,0,0
+573949,Steffen Yeates,2025,FS,7149,True,5,0,0,0,0,0,0,0,0
 573949,Steffen Yeates,2025,CDN1,67002,False,28,25,0,2064,5,3,18,8,6
 573949,Steffen Yeates,2025,CAN,67002,False,1,1,0,90,0,0,0,0,0
 573949,Steffen Yeates,2024,GOCU,7149,True,3,2,0,58,0,0,0,0,0
@@ -2645,6 +2649,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1067266,Liam MacKenzie,2023,MNP3,46721,False,26,21,0,1238,1,1,0,0,0
 1067266,Liam MacKenzie,2022,MNP3,46721,False,2,1,0,13,0,0,0,0,0
 1067266,Liam MacKenzie,2022,CO17,32645,True,6,5,0,289,1,1,5,3,0
+644592,Andre Rampersad,2026,CNNF,7149,True,1,0,0,0,0,0,0,0,0
 644592,Andre Rampersad,2026,CNLA,7149,True,4,4,0,249,0,0,0,0,0
 644592,Andre Rampersad,2025,FS,7149,True,5,4,0,360,0,0,1,0,2
 644592,Andre Rampersad,2025,CDN1,67001,False,28,21,0,396,1,0,9,1,0
@@ -2784,14 +2789,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 749855,Jason Bahamboula,2022,P3As,15136,False,6,3,0,181,0,0,0,0,0
 749855,Jason Bahamboula,2021,PT3A,15136,False,22,19,0,882,2,2,0,0,2
 749855,Jason Bahamboula,2021,P3Au,15136,False,6,5,0,290,0,0,0,0,1
-749855,Jason Bahamboula,2020,PT23,68188,False,2,2,0,111,0,0,0,0,0
-749855,Jason Bahamboula,2020,P232,68188,False,8,8,0,391,1,0,0,0,1
+749855,Jason Bahamboula,2020,PT23,68188,False,7,2,0,111,0,0,0,0,0
+749855,Jason Bahamboula,2020,P232,68188,False,14,8,0,391,1,0,0,0,1
 749855,Jason Bahamboula,2020,CPSB,15136,False,22,0,0,0,0,0,0,0,0
 749855,Jason Bahamboula,2019,PT23,68188,False,13,2,0,127,1,0,0,0,0
-749855,Jason Bahamboula,2019,FR5F,12770,False,12,0,0,0,0,0,0,0,0
-749855,Jason Bahamboula,2018,FR5F,12770,False,26,0,0,0,0,0,0,0,0
+749855,Jason Bahamboula,2019,F19A,12771,False,14,0,0,0,0,0,0,0,0
+749855,Jason Bahamboula,2018,FR5F,12770,False,1,0,0,0,0,0,0,0,0
 749855,Jason Bahamboula,2018,F19F,12771,False,1,1,0,90,2,0,0,0,0
+749855,Jason Bahamboula,2018,F19A,12771,False,26,0,0,0,0,0,0,0,0
 749855,Jason Bahamboula,2017,FR5F,12770,False,1,1,0,25,0,0,0,0,0
+497483,Ryan Telfer,2026,CNNF,7149,True,1,0,0,0,0,0,0,0,0
 497483,Ryan Telfer,2026,CNLA,7149,True,4,4,0,285,0,0,0,0,0
 497483,Ryan Telfer,2025,FS,7149,True,5,3,0,233,0,0,1,0,0
 497483,Ryan Telfer,2025,CDN1,67001,False,28,21,0,1640,1,3,12,5,1
@@ -2834,7 +2841,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 497483,Ryan Telfer,2018,CAN1,67002,False,10,10,0,900,1,0,21,6,0
 497483,Ryan Telfer,2018,CAN,67002,False,6,6,0,478,2,1,13,2,1
 497483,Ryan Telfer,2018,CA1F,67002,False,18,16,0,1317,7,1,46,23,2
-497483,Ryan Telfer,2017,USL,46823,False,9,9,0,671,0,2,8,2,0
+497483,Ryan Telfer,2017,USL,46823,False,22,9,0,671,0,2,8,2,0
 497483,Ryan Telfer,2017,MLS1,11141,False,31,15,0,813,1,2,8,3,1
 497483,Ryan Telfer,2017,CCL,11141,False,2,0,0,0,0,0,0,0,0
 497483,Ryan Telfer,2017,CAN,11141,False,4,4,0,229,0,1,3,2,0
@@ -2905,7 +2912,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 814858,Victor Akinwale,2020,GB18,6950,False,24,24,0,1707,8,3,31,14,2
 814858,Victor Akinwale,2020,FAYC,6950,False,1,1,0,90,0,0,0,0,0
 418368,Nathan Ingham,2025,CDN1,67000,False,28,27,0,2430,0,1,0,0,3
-418368,Nathan Ingham,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+418368,Nathan Ingham,2025,CAPL,67000,False,2,2,0,180,0,0,0,0,0
 418368,Nathan Ingham,2025,CAN,67000,False,3,3,0,270,0,0,0,0,0
 418368,Nathan Ingham,2024,CDN1,79097,False,28,28,0,2520,0,0,0,0,1
 418368,Nathan Ingham,2024,CAPL,79097,False,2,2,0,210,0,0,0,0,0
@@ -2939,7 +2946,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 418368,Nathan Ingham,2015,CAN,28170,False,2,0,0,0,0,0,0,0,0
 418368,Nathan Ingham,2013,NCD1,38984,False,1,0,0,0,0,0,0,0,0
 903081,Joseph Holliday,2025,CDN1,67000,False,28,1,0,90,0,0,0,0,0
-903081,Joseph Holliday,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+903081,Joseph Holliday,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 903081,Joseph Holliday,2025,CAN,67000,False,3,0,0,0,0,0,0,0,0
 903081,Joseph Holliday,2024,CDN1,67000,False,28,0,0,0,0,0,0,0,0
 903081,Joseph Holliday,2024,CCL,67000,False,2,0,0,0,0,0,0,0,0
@@ -2955,9 +2962,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 903081,Joseph Holliday,2020,CDN1,28170,False,28,0,0,0,0,0,0,0,0
 903081,Joseph Holliday,2020,CAN,28170,False,1,0,0,0,0,0,0,0,0
 1588497,Cristiano de Sousa,2025,CDN1,67000,False,15,0,0,0,0,0,0,0,0
-1588497,Cristiano de Sousa,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1588497,Cristiano de Sousa,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 400671,Daan Klomp,2025,CDN1,67000,False,28,27,0,2414,6,1,28,9,3
-400671,Daan Klomp,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+400671,Daan Klomp,2025,CAPL,67000,False,2,2,0,180,0,0,2,0,0
 400671,Daan Klomp,2025,CAN,67000,False,3,3,0,270,2,0,5,2,0
 400671,Daan Klomp,2025,BE1,3901,False,3,0,0,0,0,0,0,0,0
 400671,Daan Klomp,2024,CDN1,67000,False,10,10,0,826,2,0,5,2,3
@@ -2994,7 +3001,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 400671,Daan Klomp,2015,NLBE,8523,False,9,3,0,89,0,0,0,0,0
 400671,Daan Klomp,2015,NLBA,8523,False,6,1,0,90,0,0,0,0,0
 425248,Amer Didić,2025,CDN1,67000,False,28,26,0,2340,4,3,23,8,3
-425248,Amer Didić,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+425248,Amer Didić,2025,CAPL,67000,False,2,2,0,180,0,0,0,0,0
 425248,Amer Didić,2025,CAN,67000,False,3,3,0,270,0,0,1,0,1
 425248,Amer Didić,2024,CDN1,79097,False,28,4,23,302,0,0,3,0,2
 425248,Amer Didić,2024,CAPL,79097,False,2,0,2,0,0,0,0,0,0
@@ -3012,9 +3019,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 425248,Amer Didić,2020,CDN1,28170,False,28,24,0,2084,3,1,22,8,4
 425248,Amer Didić,2020,CAN,28170,False,1,1,0,29,0,0,1,1,0
 425248,Amer Didić,2019,FS,3510,True,3,2,0,180,1,0,0,0,0
-425248,Amer Didić,2019,CNLA,3510,True,2,0,0,0,0,0,0,0,0
+425248,Amer Didić,2019,CNLA,3510,True,4,0,0,0,0,0,0,0,0
 425248,Amer Didić,2019,CDN1,28170,False,7,3,3,241,0,0,2,0,0
 425248,Amer Didić,2018,USL,52910,False,6,2,0,180,0,0,3,0,0
+425248,Amer Didić,2018,GOCU,3510,True,4,0,0,0,0,0,0,0,0
+425248,Amer Didić,2018,CNLQ,3510,True,4,0,0,0,0,0,0,0,0
 425248,Amer Didić,2018,CAN1,28170,False,10,6,0,480,0,1,5,1,1
 425248,Amer Didić,2018,CAN,28170,False,2,1,0,24,0,0,1,0,0
 425248,Amer Didić,2018,CA1F,28170,False,18,13,0,1170,0,2,18,9,2
@@ -3023,7 +3032,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 425248,Amer Didić,2017,POUS,4284,False,4,0,0,0,0,0,0,0,0
 425248,Amer Didić,2017,MLSP,4284,False,3,1,0,90,0,0,1,0,0
 425248,Amer Didić,2017,MLS1,4284,False,32,0,0,0,0,0,0,0,0
-425248,Amer Didić,2017,FS,3510,True,1,0,0,0,0,0,0,0,0
+425248,Amer Didić,2017,FS,3510,True,3,0,0,0,0,0,0,0,0
 425248,Amer Didić,2016,USLP,51604,False,4,4,0,420,1,0,0,0,2
 425248,Amer Didić,2016,USL,51604,False,30,21,0,1811,1,0,0,0,4
 425248,Amer Didić,2016,POUS,4284,False,1,0,0,0,0,0,0,0,0
@@ -3036,7 +3045,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 425248,Amer Didić,2015,MLS1,4284,False,8,0,0,0,0,0,0,0,0
 1001941,Adam Pearlman,2025,MLS1,11141,False,5,0,0,0,0,0,0,0,0
 1001941,Adam Pearlman,2025,CDN1,67000,False,28,27,0,2234,1,3,8,2,8
-1001941,Adam Pearlman,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1001941,Adam Pearlman,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 1001941,Adam Pearlman,2025,CAN,67000,False,3,3,0,133,0,0,0,0,0
 1001941,Adam Pearlman,2024,MLS1,11141,False,1,0,0,0,0,0,0,0,0
 1001941,Adam Pearlman,2024,CDN1,67001,False,28,26,0,2261,2,2,9,5,8
@@ -3057,7 +3066,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1001941,Adam Pearlman,2021,CAN,11141,False,3,0,0,0,0,0,0,0,0
 1001941,Adam Pearlman,2019,CAN,11141,False,1,0,0,0,0,0,0,0,0
 826451,Curtis Ofori,2025,CDN1,67000,False,28,13,0,143,0,0,0,0,1
-826451,Curtis Ofori,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+826451,Curtis Ofori,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 826451,Curtis Ofori,2025,CAN,67000,False,3,2,0,27,0,0,0,0,0
 826451,Curtis Ofori,2024,USMX,623,False,3,0,0,0,0,0,0,0,0
 826451,Curtis Ofori,2024,MNPP,39815,False,4,4,0,92,0,0,0,0,0
@@ -3077,7 +3086,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 826451,Curtis Ofori,2021,USL,39815,False,34,27,0,1893,0,0,12,3,8
 826451,Curtis Ofori,2020,USL,39815,False,32,14,0,376,0,0,0,0,0
 438136,Bradley Kamdem,2025,CDN1,67000,False,28,24,0,1987,2,1,4,3,3
-438136,Bradley Kamdem,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+438136,Bradley Kamdem,2025,CAPL,67000,False,2,2,0,180,0,0,0,0,1
 438136,Bradley Kamdem,2025,CAN,67000,False,3,3,0,243,0,1,2,2,0
 438136,Bradley Kamdem,2024,CDN1,67000,False,28,14,0,914,0,0,7,1,4
 438136,Bradley Kamdem,2024,CCL,67000,False,2,2,0,180,0,0,0,0,0
@@ -3105,7 +3114,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 438136,Bradley Kamdem,2015,USL,3372,False,30,25,0,1633,0,3,0,0,4
 438136,Bradley Kamdem,2015,MLSP,3372,False,3,1,0,90,0,0,0,0,0
 586982,Levi Laing,2025,CDN1,67000,False,28,15,0,749,1,0,4,3,2
-586982,Levi Laing,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+586982,Levi Laing,2025,CAPL,67000,False,2,2,0,74,0,0,0,0,0
 586982,Levi Laing,2025,CAN,67000,False,3,3,0,137,0,0,0,0,0
 586982,Levi Laing,2024,NLC,9267,False,2,2,0,140,0,0,0,0,0
 586982,Levi Laing,2024,GBFL,3371,False,4,1,2,90,0,0,2,0,0
@@ -3144,11 +3153,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 586982,Levi Laing,2017,FS,53638,True,2,1,0,80,0,0,0,0,0
 1588547,Daniel Pribytov,2026,FS,48635,True,3,2,0,180,0,0,0,0,0
 1588547,Daniel Pribytov,2025,CDN1,67000,False,11,0,0,0,0,0,0,0,0
-1588547,Daniel Pribytov,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1588547,Daniel Pribytov,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 1588548,Kacper Plocinski,2025,CDN1,67000,False,11,1,0,3,0,0,0,0,0
-1588548,Kacper Plocinski,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1588548,Kacper Plocinski,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 395833,Harry Paton,2025,CDN1,67000,False,28,23,0,1494,2,1,21,5,10
-395833,Harry Paton,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+395833,Harry Paton,2025,CAPL,67000,False,2,2,0,104,0,0,1,0,1
 395833,Harry Paton,2025,CAN,67000,False,3,2,0,44,0,1,0,0,0
 395833,Harry Paton,2024,SFA,987,False,1,0,0,0,0,0,0,0,0
 395833,Harry Paton,2024,SCPA,987,False,5,3,0,160,0,0,3,1,0
@@ -3163,9 +3172,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 395833,Harry Paton,2023,FS,3510,True,1,1,0,29,0,0,0,0,0
 395833,Harry Paton,2022,SCPA,987,False,5,3,0,86,0,0,0,0,0
 395833,Harry Paton,2022,SC1,987,False,4,4,0,157,0,0,2,0,1
+395833,Harry Paton,2022,GOCU,3510,True,4,0,0,0,0,0,0,0,0
+395833,Harry Paton,2022,FS,3510,True,3,0,0,0,0,0,0,0,0
+395833,Harry Paton,2022,CNNF,3510,True,2,0,0,0,0,0,0,0,0
+395833,Harry Paton,2022,CNLA,3510,True,4,0,0,0,0,0,0,0,0
 395833,Harry Paton,2021,SFA,2759,False,1,1,0,4,0,0,0,0,0
 395833,Harry Paton,2021,SCPM,2759,False,5,3,0,108,0,0,4,2,0
 395833,Harry Paton,2021,SC1,2759,False,33,28,0,1845,0,3,18,8,8
+395833,Harry Paton,2021,FS,3510,True,1,0,0,0,0,0,0,0,0
+395833,Harry Paton,2021,FIWC,3510,True,3,0,0,0,0,0,0,0,0
+395833,Harry Paton,2020,WMQ3,3510,True,14,0,0,0,0,0,0,0,0
 395833,Harry Paton,2020,SFA,2759,False,1,0,0,0,0,0,0,0,0
 395833,Harry Paton,2020,SCPA,2759,False,5,3,0,47,0,0,0,0,0
 395833,Harry Paton,2020,SCP,2759,False,6,5,0,375,1,0,3,2,0
@@ -3192,9 +3208,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 395833,Harry Paton,2016,SCP,43,False,1,0,0,0,0,0,0,0,0
 395833,Harry Paton,2016,SC1,43,False,38,0,0,0,0,0,0,0,0
 395833,Harry Paton,2015,GB21,9262,False,2,1,0,3,0,0,0,0,0
-395833,Harry Paton,2014,CO17,32645,True,6,4,0,270,0,2,0,0,1
+395833,Harry Paton,2014,CO17,32645,True,5,4,0,270,0,2,0,0,1
 784862,Eryk Kobza,2025,CDN1,67000,False,28,25,0,1783,1,4,22,3,9
-784862,Eryk Kobza,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+784862,Eryk Kobza,2025,CAPL,67000,False,2,1,0,90,0,0,0,0,0
 784862,Eryk Kobza,2025,CAN,67000,False,3,3,0,270,0,0,2,1,2
 784862,Eryk Kobza,2024,CDN1,67000,False,28,19,0,1539,2,0,19,6,6
 784862,Eryk Kobza,2024,CCL,67000,False,2,2,0,180,0,0,1,0,0
@@ -3211,7 +3227,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 784862,Eryk Kobza,2020,PL34,9486,False,20,20,0,1711,1,1,0,0,2
 784862,Eryk Kobza,2020,PL2L,30747,False,14,6,0,138,1,0,0,0,0
 493611,Michael Baldisimo,2025,CDN1,67000,False,28,16,1,570,0,0,3,0,1
-493611,Michael Baldisimo,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+493611,Michael Baldisimo,2025,CAPL,67000,False,2,2,0,166,0,0,0,0,2
 493611,Michael Baldisimo,2025,CAN,67000,False,3,3,0,142,1,0,2,2,0
 493611,Michael Baldisimo,2025,AG18,135887,True,3,3,0,210,0,0,0,0,0
 493611,Michael Baldisimo,2024,FS,15234,True,5,2,0,119,0,0,0,0,1
@@ -3248,7 +3264,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 493611,Michael Baldisimo,2016,USL,46721,False,32,12,0,596,0,0,0,0,1
 493611,Michael Baldisimo,2016,CO17,32645,True,3,1,0,45,0,0,0,0,1
 189031,Sergio Camargo,2025,CDN1,67000,False,28,22,0,1655,4,2,25,9,4
-189031,Sergio Camargo,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+189031,Sergio Camargo,2025,CAPL,67000,False,2,1,0,62,0,0,0,0,0
 189031,Sergio Camargo,2025,CAN,67000,False,3,3,0,225,0,1,3,2,0
 189031,Sergio Camargo,2024,CDN1,67000,False,28,27,0,2179,8,6,44,16,5
 189031,Sergio Camargo,2024,CCL,67000,False,2,2,0,133,0,0,0,0,1
@@ -3284,7 +3300,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 189031,Sergio Camargo,2011,MLSR,79531,False,8,4,0,245,0,0,0,0,0
 189031,Sergio Camargo,2010,17WC,32645,True,3,2,0,13,0,0,0,0,0
 1239932,Nathaniel Edwards,2025,CDN1,67000,False,28,25,0,1461,6,0,32,18,2
-1239932,Nathaniel Edwards,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1239932,Nathaniel Edwards,2025,CAPL,67000,False,2,2,0,180,0,0,1,1,0
 1239932,Nathaniel Edwards,2025,CAN,67000,False,3,1,0,70,0,0,0,0,0
 1239932,Nathaniel Edwards,2024,MNP3,46823,False,28,25,0,1679,3,3,0,0,3
 1239932,Nathaniel Edwards,2024,MLS1,11141,False,34,0,0,0,0,0,0,0,0
@@ -3295,7 +3311,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1239932,Nathaniel Edwards,2023,CAN,11141,False,4,1,0,45,0,0,1,1,0
 1239932,Nathaniel Edwards,2022,NCD1,36097,False,2,0,0,0,0,0,0,0,0
 1130261,Niko Myroniuk,2025,CDN1,67000,False,28,21,0,717,1,1,12,2,1
-1130261,Niko Myroniuk,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1130261,Niko Myroniuk,2025,CAPL,67000,False,2,1,0,1,0,0,0,0,0
 1130261,Niko Myroniuk,2025,CAN,67000,False,3,2,0,45,0,0,1,0,0
 1130261,Niko Myroniuk,2024,CDN1,67000,False,28,13,0,351,1,0,9,2,1
 1130261,Niko Myroniuk,2024,CCL,67000,False,2,0,0,0,0,0,0,0,0
@@ -3309,7 +3325,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1130261,Niko Myroniuk,2021,CDN1,67000,False,6,0,0,0,0,0,0,0,0
 1130261,Niko Myroniuk,2021,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 993917,Owen Antoniuk,2025,CDN1,67000,False,28,15,0,317,3,0,12,5,1
-993917,Owen Antoniuk,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+993917,Owen Antoniuk,2025,CAPL,67000,False,2,1,0,2,0,0,0,0,0
 993917,Owen Antoniuk,2025,CAN,67000,False,3,0,0,0,0,0,0,0,0
 993917,Owen Antoniuk,2024,CDN1,67000,False,18,4,0,7,0,0,0,0,0
 993917,Owen Antoniuk,2024,CCL,67000,False,2,0,0,0,0,0,0,0,0
@@ -3318,7 +3334,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 993917,Owen Antoniuk,2021,CDN1,79097,False,14,5,0,166,0,0,2,1,1
 993917,Owen Antoniuk,2021,CAPL,79097,False,3,0,0,0,0,0,0,0,0
 1314744,James McGlinchey,2025,CDN1,67000,False,28,7,0,191,0,0,0,0,0
-1314744,James McGlinchey,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1314744,James McGlinchey,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 1314744,James McGlinchey,2025,CAN,67000,False,3,0,0,0,0,0,0,0,0
 1314744,James McGlinchey,2025,C20Q,27261,True,3,1,0,22,0,0,0,0,0
 1314744,James McGlinchey,2024,CDN1,67000,False,28,1,0,1,0,0,0,0,0
@@ -3327,7 +3343,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1314744,James McGlinchey,2023,CDN1,67000,False,7,0,0,0,0,0,0,0,0
 1314744,James McGlinchey,2023,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 389804,Tobias Warschewski,2025,CDN1,67000,False,28,26,0,2295,11,10,80,33,2
-389804,Tobias Warschewski,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+389804,Tobias Warschewski,2025,CAPL,67000,False,2,2,0,180,1,0,3,0,0
 389804,Tobias Warschewski,2025,CAN,67000,False,3,2,0,180,1,0,3,1,0
 389804,Tobias Warschewski,2024,CDN1,67000,False,28,27,0,2300,8,5,79,28,4
 389804,Tobias Warschewski,2024,CCL,67000,False,2,2,0,180,1,0,3,2,1
@@ -3356,9 +3372,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 389804,Tobias Warschewski,2016,AJ2,10029,False,26,8,0,663,8,1,0,0,0
 389804,Tobias Warschewski,2016,19EU,5710,True,3,2,0,37,1,0,0,0,0
 389804,Tobias Warschewski,2015,AJ2,10029,False,26,24,0,2002,7,0,0,0,2
+294729,Ali Musse,2026,AFCQ,13974,True,5,1,0,21,0,0,0,0,0
 294729,Ali Musse,2025,FS,13974,True,1,1,0,73,0,0,0,0,0
 294729,Ali Musse,2025,CDN1,67000,False,28,24,0,1594,7,5,57,19,2
-294729,Ali Musse,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+294729,Ali Musse,2025,CAPL,67000,False,2,2,0,173,1,0,3,3,0
 294729,Ali Musse,2025,CAN,67000,False,3,3,0,202,1,0,9,2,1
 294729,Ali Musse,2024,FARQ,13974,True,1,1,0,90,0,0,0,0,0
 294729,Ali Musse,2024,CDN1,67000,False,28,23,0,1881,9,7,68,22,3
@@ -3392,7 +3409,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 294729,Ali Musse,2012,CO17,32645,True,5,5,0,119,0,0,0,0,1
 294729,Ali Musse,2012,17WC,32645,True,3,1,0,45,0,0,0,0,0
 803839,Goteh Ntignee,2025,CDN1,67000,False,28,19,0,1372,3,6,35,8,6
-803839,Goteh Ntignee,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+803839,Goteh Ntignee,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 803839,Goteh Ntignee,2025,CAN,67000,False,3,3,0,260,0,1,5,1,1
 803839,Goteh Ntignee,2024,FRC,30204,False,4,2,0,122,3,0,0,0,1
 803839,Goteh Ntignee,2024,FR2,30204,False,34,1,0,6,0,0,0,0,0
@@ -3414,7 +3431,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1341188,Owen Graham-Roache,2025,FS,32645,True,4,3,0,225,0,0,0,0,0
 1341188,Owen Graham-Roache,2025,FS,27261,True,4,2,0,122,0,0,0,0,0
 1341188,Owen Graham-Roache,2025,CDN1,67000,False,7,4,0,116,0,1,4,1,0
-1341188,Owen Graham-Roache,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1341188,Owen Graham-Roache,2025,CAPL,67000,False,2,2,0,59,0,0,0,0,0
 1341188,Owen Graham-Roache,2025,CAN,4078,False,5,2,0,14,0,0,0,0,0
 1341188,Owen Graham-Roache,2025,C220,27261,True,5,5,0,346,1,1,8,1,0
 1341188,Owen Graham-Roache,2025,C20Q,27261,True,4,4,0,282,5,2,0,0,0
@@ -3426,7 +3443,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 330795,Caniggia Elva,2026,CNLB,17761,True,4,4,0,360,1,2,0,0,1
 330795,Caniggia Elva,2025,FS,17761,True,1,0,0,0,0,0,0,0,0
 330795,Caniggia Elva,2025,CDN1,67000,False,28,25,0,1255,5,2,31,12,0
-330795,Caniggia Elva,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+330795,Caniggia Elva,2025,CAPL,67000,False,2,2,0,121,1,0,1,1,0
 330795,Caniggia Elva,2025,CAN,67000,False,3,3,0,141,0,0,3,1,0
 330795,Caniggia Elva,2024,CNLB,17761,True,6,6,0,431,3,0,0,0,0
 330795,Caniggia Elva,2024,CDN1,67000,False,28,18,0,460,4,2,20,9,0
@@ -3458,7 +3475,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 330795,Caniggia Elva,2014,FR3,667,False,15,0,2,0,0,0,0,0,0
 330795,Caniggia Elva,2014,DFB,79,False,1,0,0,0,0,0,0,0,0
 746754,Hassan Ayari,2025,CDN1,67000,False,8,3,0,42,0,0,0,0,0
-746754,Hassan Ayari,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+746754,Hassan Ayari,2025,CAPL,67000,False,2,0,0,0,0,0,0,0,0
 746754,Hassan Ayari,2025,BU2,11255,False,14,12,0,548,2,1,0,0,0
 746754,Hassan Ayari,2024,MNP3,46823,False,28,27,0,2180,6,4,0,0,0
 746754,Hassan Ayari,2023,USMX,11141,False,3,0,0,0,0,0,0,0,0
@@ -3473,7 +3490,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 746754,Hassan Ayari,2020,20AC,43903,True,6,6,0,416,1,1,0,0,0
 746754,Hassan Ayari,2019,FAYC,12806,False,1,1,0,10,0,0,0,0,0
 1002287,Maël Henry,2025,CDN1,67000,False,28,11,0,121,1,0,3,2,2
-1002287,Maël Henry,2025,CAPL,67000,False,1,0,0,0,0,0,0,0,0
+1002287,Maël Henry,2025,CAPL,67000,False,2,2,0,49,0,0,0,0,0
 1002287,Maël Henry,2025,CAN,67000,False,3,0,0,0,0,0,0,0,0
 1002287,Maël Henry,2024,CDN1,67000,False,28,12,0,373,0,0,9,2,2
 1002287,Maël Henry,2024,CCL,67000,False,2,1,0,23,0,0,1,0,0
@@ -3487,7 +3504,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1002287,Maël Henry,2022,CDN1,67000,False,17,12,0,512,2,1,12,2,1
 1002287,Maël Henry,2022,CAPL,67000,False,3,3,0,48,0,0,3,1,0
 1002287,Maël Henry,2022,CAN,94560,False,1,0,0,0,0,0,0,0,0
-1002287,Maël Henry,2021,FS,27261,True,1,0,0,0,0,0,0,0,0
 1002287,Maël Henry,2021,C220,27261,True,4,3,0,69,1,0,4,2,1
 707069,Eleias Himaras,2025,CDN1,68221,False,28,15,0,1350,0,0,0,0,0
 707069,Eleias Himaras,2025,CAN,68221,False,1,1,0,90,0,0,0,0,0
@@ -3976,7 +3992,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 888509,Bul Juach,2025,FFAC,6981,False,5,3,0,288,2,0,11,4,0
 888509,Bul Juach,2025,CDN1,68221,False,11,8,0,67,1,0,2,1,1
 888509,Bul Juach,2025,CAN,68221,False,1,1,0,58,0,0,0,0,0
-888509,Bul Juach,2025,AU3C,6981,False,3,2,0,88,0,0,0,0,0
+888509,Bul Juach,2025,AU3C,6981,False,4,3,0,88,0,0,0,0,0
 888509,Bul Juach,2025,A2VI,6981,False,8,7,0,395,2,0,0,0,0
 888509,Bul Juach,2024,NPVF,3080,False,2,2,0,176,2,0,0,0,0
 888509,Bul Juach,2024,FFAC,3080,False,5,5,0,414,3,1,6,3,1
@@ -4472,7 +4488,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 549954,Mohamed Amissi,2023,WMQ2,13943,True,10,5,0,108,0,0,0,0,0
 549954,Mohamed Amissi,2023,POCP,2639,False,2,0,0,0,0,0,0,0,0
 549954,Mohamed Amissi,2023,PO2,2639,False,1,0,0,0,0,0,0,0,0
-549954,Mohamed Amissi,2023,FS,13943,True,3,2,0,135,0,0,0,0,0
+549954,Mohamed Amissi,2023,FS,13943,True,3,2,0,116,0,0,0,0,0
 549954,Mohamed Amissi,2023,EGYP,9093,False,1,0,0,0,0,0,0,0,0
 549954,Mohamed Amissi,2023,EGY1,9093,False,34,21,0,1543,0,0,21,5,3
 549954,Mohamed Amissi,2023,EGLC,9093,False,3,3,0,270,1,0,0,0,0
@@ -4538,6 +4554,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1261897,Kian Proctor,2025,CDN1,94560,False,28,26,0,1904,2,1,14,3,1
 1261897,Kian Proctor,2025,CCL,94560,False,2,2,0,78,0,0,0,0,0
 1261897,Kian Proctor,2025,CAN,94560,False,3,3,0,227,0,1,2,0,0
+1261897,Kian Proctor,2024,CAN,78748,False,1,0,0,0,0,0,0,0,0
 1261897,Kian Proctor,2023,CAN,78748,False,1,0,0,0,0,0,0,0,0
 1225181,Vitor Lucas,2025,SPjr,19325,False,6,0,0,0,0,0,0,0,0
 1225181,Vitor Lucas,2025,CDN1,94560,False,28,1,0,7,0,0,1,0,0
@@ -4548,7 +4565,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1225181,Vitor Lucas,2023,SPjr,19325,False,1,1,0,22,1,0,0,0,0
 1225181,Vitor Lucas,2023,CB20,19325,False,5,3,0,42,0,0,0,0,0
 596581,Joakim Milli,2025,CDN1,136159,False,28,26,0,2340,0,0,1,1,0
-596581,Joakim Milli,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+596581,Joakim Milli,2025,CAPL,136159,False,2,2,0,180,0,0,0,0,0
 596581,Joakim Milli,2025,CAN,136159,False,5,5,0,450,0,0,0,0,0
 596581,Joakim Milli,2022,IT3C,49939,False,38,1,0,90,0,0,0,0,0
 596581,Joakim Milli,2022,CILP,49939,False,1,0,0,0,0,0,0,0,0
@@ -4568,7 +4585,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 596581,Joakim Milli,2018,CIT,1005,False,2,0,0,0,0,0,0,0,0
 1434981,Jolan Faury,2025,FS,97311,True,4,2,0,83,0,0,0,0,0
 1434981,Jolan Faury,2025,CDN1,136159,False,28,0,0,0,0,0,0,0,0
-1434981,Jolan Faury,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1434981,Jolan Faury,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1434981,Jolan Faury,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 1539163,Mario Gerges,2025,CDN1,136159,False,8,2,0,180,0,0,0,0,0
 1539163,Mario Gerges,2025,CAN,136159,False,1,0,0,0,0,0,0,0,0
@@ -4576,7 +4593,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 395676,Zachary Brault-Guillard,2025,ELQ,2790,False,2,0,0,0,0,0,0,0,0
 395676,Zachary Brault-Guillard,2025,ECLQ,2790,False,2,1,0,45,0,0,1,0,0
 395676,Zachary Brault-Guillard,2025,CDN1,136159,False,9,8,0,627,0,0,6,3,2
-395676,Zachary Brault-Guillard,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+395676,Zachary Brault-Guillard,2025,CAPL,136159,False,2,2,0,160,1,0,0,0,0
 395676,Zachary Brault-Guillard,2025,CAN,136159,False,1,1,0,24,0,0,0,0,0
 395676,Zachary Brault-Guillard,2025,C1,2790,False,38,18,1,375,0,0,1,0,2
 395676,Zachary Brault-Guillard,2024,UCOL,2790,False,8,2,0,180,0,0,1,0,0
@@ -4623,13 +4640,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 395676,Zachary Brault-Guillard,2015,F19F,7813,False,2,2,0,180,0,0,0,0,0
 395676,Zachary Brault-Guillard,2013,F17M,106295,False,3,0,0,0,0,0,0,0,0
 1532462,Makhoudia Diop,2025,CDN1,136159,False,28,0,0,0,0,0,0,0,0
-1532462,Makhoudia Diop,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1532462,Makhoudia Diop,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1532462,Makhoudia Diop,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 1511019,Matisse Chrétien,2025,CDN1,136159,False,28,26,0,2295,4,0,13,5,7
-1511019,Matisse Chrétien,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1511019,Matisse Chrétien,2025,CAPL,136159,False,2,2,0,180,0,0,0,0,0
 1511019,Matisse Chrétien,2025,CAN,136159,False,5,5,0,435,0,0,5,2,1
 594497,Diyaeddine Abzi,2025,CDN1,136159,False,28,22,0,1710,1,5,31,7,9
-594497,Diyaeddine Abzi,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+594497,Diyaeddine Abzi,2025,CAPL,136159,False,2,2,0,180,0,0,2,0,0
 594497,Diyaeddine Abzi,2025,CAN,136159,False,5,4,0,360,1,1,3,1,1
 594497,Diyaeddine Abzi,2023,FR2,3166,False,2,0,0,0,0,0,0,0,0
 594497,Diyaeddine Abzi,2023,ES2,1244,False,41,4,10,34,0,0,1,1,0
@@ -4648,7 +4665,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 594497,Diyaeddine Abzi,2018,CA1F,67002,False,18,14,0,1121,1,4,22,9,2
 594497,Diyaeddine Abzi,2017,CAN,65014,False,4,2,0,75,0,0,0,0,0
 924006,Zach Fernandez,2025,CDN1,136159,False,21,9,0,106,0,0,4,0,1
-924006,Zach Fernandez,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+924006,Zach Fernandez,2025,CAPL,136159,False,2,1,0,20,0,0,0,0,0
 924006,Zach Fernandez,2025,CAN,136159,False,4,1,0,3,0,0,0,0,0
 924006,Zach Fernandez,2024,CDN1,67215,False,28,14,0,1194,1,0,2,1,1
 924006,Zach Fernandez,2024,CAN,67215,False,3,2,0,163,0,1,1,0,1
@@ -4661,10 +4678,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 924006,Zach Fernandez,2021,CAN,67001,False,2,2,0,180,0,0,1,0,0
 924006,Zach Fernandez,2020,CAN,65014,False,1,1,0,86,0,0,0,0,0
 1511021,Ismaël Yeo,2025,CDN1,136159,False,28,3,25,218,0,0,3,1,0
-1511021,Ismaël Yeo,2025,CAPL,136159,False,1,0,1,0,0,0,0,0,0
+1511021,Ismaël Yeo,2025,CAPL,136159,False,2,0,2,0,0,0,0,0,0
 1511021,Ismaël Yeo,2025,CAN,136159,False,5,0,5,0,0,0,0,0,0
 718095,Keesean Ferdinand,2025,CDN1,136159,False,28,20,0,1528,1,0,8,3,2
-718095,Keesean Ferdinand,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+718095,Keesean Ferdinand,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 718095,Keesean Ferdinand,2025,CAN,136159,False,5,4,0,349,0,0,1,0,0
 718095,Keesean Ferdinand,2024,MNP3,95333,False,28,15,0,1119,2,0,0,0,3
 718095,Keesean Ferdinand,2024,MLSP,95333,False,3,3,0,252,1,0,0,0,0
@@ -4685,19 +4702,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718095,Keesean Ferdinand,2018,CO17,32645,True,6,3,0,270,0,0,0,0,0
 718095,Keesean Ferdinand,2018,17WC,32645,True,3,2,0,180,0,0,0,0,1
 1511020,Thomas Lebeuf,2025,CDN1,136159,False,28,10,0,617,0,0,4,1,3
-1511020,Thomas Lebeuf,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1511020,Thomas Lebeuf,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1511020,Thomas Lebeuf,2025,CAN,136159,False,5,1,0,73,0,0,0,0,0
 1535067,Isaiah Byer,2025,CDN1,136159,False,28,0,0,0,0,0,0,0,0
-1535067,Isaiah Byer,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1535067,Isaiah Byer,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1535067,Isaiah Byer,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 1548199,Sasha Deslandes,2025,CDN1,136159,False,24,5,0,296,0,0,2,1,0
-1548199,Sasha Deslandes,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1548199,Sasha Deslandes,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1548199,Sasha Deslandes,2025,CAN,136159,False,4,2,0,105,0,0,0,0,0
 1535066,Eliakim Awonongbadje,2025,CDN1,136159,False,28,5,0,307,0,0,1,0,0
-1535066,Eliakim Awonongbadje,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1535066,Eliakim Awonongbadje,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1535066,Eliakim Awonongbadje,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 718099,Sean Rea,2025,CDN1,136159,False,28,26,0,2249,7,6,77,29,4
-718099,Sean Rea,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+718099,Sean Rea,2025,CAPL,136159,False,2,2,0,176,0,0,3,1,0
 718099,Sean Rea,2025,CAN,136159,False,5,5,0,404,2,0,10,4,1
 718099,Sean Rea,2024,CDN1,67001,False,28,28,0,1877,1,4,50,12,4
 718099,Sean Rea,2024,CAPL,67001,False,1,1,0,80,0,1,0,0,1
@@ -4715,7 +4732,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718099,Sean Rea,2019,CCL,4078,False,1,0,0,0,0,0,0,0,0
 718099,Sean Rea,2018,17WC,32645,True,3,2,0,35,0,0,2,1,0
 1067260,Alessandro Biello,2025,CDN1,136159,False,28,23,2,1678,0,1,5,2,3
-1067260,Alessandro Biello,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1067260,Alessandro Biello,2025,CAPL,136159,False,2,2,0,180,0,0,2,0,2
 1067260,Alessandro Biello,2025,CAN,136159,False,5,5,0,416,0,0,2,2,1
 1067260,Alessandro Biello,2024,CDN1,67001,False,28,21,0,349,0,1,3,0,1
 1067260,Alessandro Biello,2024,CAPL,67001,False,1,0,0,0,0,0,0,0,0
@@ -4730,7 +4747,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1067260,Alessandro Biello,2022,CO17,32645,True,6,5,0,433,1,0,6,1,1
 1067260,Alessandro Biello,2022,17WC,32645,True,1,1,0,38,0,0,0,0,0
 730445,Aboubacar Sissoko,2025,CDN1,136159,False,28,27,0,1601,1,1,24,3,5
-730445,Aboubacar Sissoko,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+730445,Aboubacar Sissoko,2025,CAPL,136159,False,2,2,0,180,0,0,4,1,0
 730445,Aboubacar Sissoko,2025,CAN,136159,False,5,4,0,184,1,1,5,2,0
 730445,Aboubacar Sissoko,2024,CDN1,79097,False,28,21,0,438,1,0,10,2,1
 730445,Aboubacar Sissoko,2024,CAPL,79097,False,2,2,0,60,0,0,0,0,1
@@ -4750,7 +4767,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 730445,Aboubacar Sissoko,2019,CAPL,67001,False,4,3,0,176,0,0,0,0,0
 730445,Aboubacar Sissoko,2019,CAN,68029,False,1,1,0,75,0,1,0,0,0
 1089606,Charles Auguste,2025,CDN1,136159,False,28,26,0,2169,0,1,18,2,7
-1089606,Charles Auguste,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1089606,Charles Auguste,2025,CAPL,136159,False,2,2,0,180,0,0,0,0,0
 1089606,Charles Auguste,2025,CAN,136159,False,5,5,0,400,0,1,1,0,2
 1089606,Charles Auguste,2022,USMX,9168,False,4,0,0,0,0,0,0,0,0
 1089606,Charles Auguste,2022,POUS,9168,False,5,0,0,0,0,0,0,0,0
@@ -4761,17 +4778,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1089606,Charles Auguste,2021,NCD1,9738,False,5,1,0,90,0,0,0,0,0
 1089606,Charles Auguste,2020,NCD1,9738,False,2,0,0,0,0,0,0,0,0
 1261906,Safwane Mlah,2025,CDN1,136159,False,28,23,0,1159,4,1,16,8,5
-1261906,Safwane Mlah,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1261906,Safwane Mlah,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1261906,Safwane Mlah,2025,CAN,136159,False,5,5,0,281,0,0,2,0,1
 1261906,Safwane Mlah,2024,CDN1,67215,False,28,23,0,968,0,1,14,5,3
 1261906,Safwane Mlah,2024,CAN,67215,False,3,2,0,105,0,0,1,0,0
 1261906,Safwane Mlah,2023,CDN1,67215,False,16,14,0,891,1,1,11,2,2
 1261906,Safwane Mlah,2023,CAN,92448,False,3,3,0,270,0,0,8,4,2
 1511022,Omar El Kalkouli,2025,CDN1,136159,False,28,21,0,962,0,0,9,3,2
-1511022,Omar El Kalkouli,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1511022,Omar El Kalkouli,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1511022,Omar El Kalkouli,2025,CAN,136159,False,5,3,0,45,0,0,1,0,0
 684047,Calin Calaidjoglu,2025,CDN1,136159,False,28,2,0,73,0,0,4,0,0
-684047,Calin Calaidjoglu,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+684047,Calin Calaidjoglu,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 684047,Calin Calaidjoglu,2025,CAN,136159,False,5,1,0,17,0,0,1,1,0
 684047,Calin Calaidjoglu,2024,CAN,91481,False,1,1,0,90,0,0,3,0,0
 684047,Calin Calaidjoglu,2023,MWP1,46643,False,1,0,0,0,0,0,0,0,0
@@ -4785,13 +4802,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 684047,Calin Calaidjoglu,2021,MO1N,31276,False,10,5,0,161,0,0,0,0,0
 684047,Calin Calaidjoglu,2020,FR4D,10867,False,5,0,0,0,0,0,0,0,0
 985529,Wesley Wandje,2025,CDN1,136159,False,28,7,0,190,0,0,0,0,0
-985529,Wesley Wandje,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+985529,Wesley Wandje,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 985529,Wesley Wandje,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 985529,Wesley Wandje,2024,CDN1,67215,False,17,2,0,51,0,0,0,0,0
 985529,Wesley Wandje,2024,CAN,67215,False,3,1,0,20,0,0,0,0,0
 985529,Wesley Wandje,2023,CAN,92448,False,3,3,0,270,0,0,4,2,1
 133080,Oussema Boughanmi,2025,CDN1,136159,False,28,9,0,428,1,0,3,1,2
-133080,Oussema Boughanmi,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+133080,Oussema Boughanmi,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 133080,Oussema Boughanmi,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 133080,Oussema Boughanmi,2023,CAN,92448,False,3,3,0,220,0,0,3,0,1
 133080,Oussema Boughanmi,2022,SA2L,26586,False,34,0,0,0,0,0,0,0,0
@@ -4823,7 +4840,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 133080,Oussema Boughanmi,2008,FR4D,12748,False,34,0,0,0,0,0,0,0,0
 133080,Oussema Boughanmi,2006,17WC,27274,True,4,3,0,232,1,0,0,0,2
 436293,David Choinière,2025,CDN1,136159,False,28,23,0,1542,0,5,24,10,1
-436293,David Choinière,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+436293,David Choinière,2025,CAPL,136159,False,2,2,0,180,0,0,2,0,0
 436293,David Choinière,2025,CAN,136159,False,5,5,0,365,2,1,7,4,1
 436293,David Choinière,2024,CDN1,68029,False,28,22,0,1124,2,4,20,10,1
 436293,David Choinière,2024,CCL,68029,False,2,2,0,147,0,0,1,1,1
@@ -4864,7 +4881,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 436293,David Choinière,2015,CAN,4078,False,2,1,0,3,0,0,0,0,0
 436293,David Choinière,2014,FS,48635,True,3,3,0,218,1,2,0,0,0
 589005,Clément Bayiha,2025,CDN1,136159,False,28,19,0,938,1,2,13,6,0
-589005,Clément Bayiha,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+589005,Clément Bayiha,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 589005,Clément Bayiha,2025,CAN,136159,False,5,2,0,97,0,0,3,3,0
 589005,Clément Bayiha,2024,ISP,21864,False,4,3,0,183,1,0,0,0,0
 589005,Clément Bayiha,2024,ISL,21864,False,2,1,0,20,0,0,0,0,0
@@ -4891,27 +4908,27 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 589005,Clément Bayiha,2017,CAN,4078,False,1,0,0,0,0,0,0,0,0
 589005,Clément Bayiha,2017,C220,27261,True,5,5,0,285,1,0,0,0,0
 1261907,Loïc Kwemi,2025,CDN1,136159,False,28,26,0,1961,15,3,79,31,3
-1261907,Loïc Kwemi,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1261907,Loïc Kwemi,2025,CAPL,136159,False,2,2,0,180,0,1,3,0,1
 1261907,Loïc Kwemi,2025,CAN,136159,False,5,5,0,349,1,2,15,8,0
 1261907,Loïc Kwemi,2023,CDN1,67215,False,16,14,0,409,0,2,7,4,2
 1261907,Loïc Kwemi,2023,CAN,92448,False,3,3,0,245,1,0,11,5,1
 961707,Riad Bey,2025,CDN1,136159,False,28,15,0,537,0,0,16,3,1
-961707,Riad Bey,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+961707,Riad Bey,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 961707,Riad Bey,2025,CAN,136159,False,5,5,0,163,0,1,5,0,2
 961707,Riad Bey,2023,CAN,92448,False,3,3,0,142,0,1,2,1,0
 961707,Riad Bey,2022,CAN,91481,False,1,1,0,67,0,0,0,0,0
 1406730,Ibrahim Condé,2025,CDN1,136159,False,28,19,0,1216,6,2,28,11,4
-1406730,Ibrahim Condé,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1406730,Ibrahim Condé,2025,CAPL,136159,False,2,2,0,150,0,0,0,0,0
 1406730,Ibrahim Condé,2025,CAN,136159,False,5,4,0,295,3,1,8,5,2
 1406730,Ibrahim Condé,2024,NCD1,33705,False,5,5,0,452,0,0,0,0,0
 1406730,Ibrahim Condé,2024,CAN,91481,False,1,1,0,53,0,0,0,0,0
 1406730,Ibrahim Condé,2023,UL2P,41467,False,5,2,0,160,0,0,0,0,1
 1406730,Ibrahim Condé,2022,NCD1,51977,False,2,0,0,0,0,0,0,0,0
 1535069,Alexandre Marcoux,2025,CDN1,136159,False,28,5,0,106,1,0,3,2,0
-1535069,Alexandre Marcoux,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1535069,Alexandre Marcoux,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1535069,Alexandre Marcoux,2025,CAN,136159,False,5,1,0,73,0,0,2,1,0
 131186,Jack McInerney,2025,CDN1,136159,False,7,2,0,17,0,0,0,0,0
-131186,Jack McInerney,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+131186,Jack McInerney,2025,CAPL,136159,False,2,1,0,4,0,0,0,0,0
 131186,Jack McInerney,2020,NIFS,69044,False,2,2,0,180,1,0,0,0,1
 131186,Jack McInerney,2020,NIFP,69044,False,5,5,0,250,1,1,0,0,0
 131186,Jack McInerney,2019,NISR,69044,False,2,2,0,180,2,0,0,0,1
@@ -4947,10 +4964,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 131186,Jack McInerney,2008,17WC,25514,True,4,4,0,360,2,0,0,0,2
 1535068,Alexander Makarova,2026,FS,48635,True,3,1,0,2,1,0,0,0,0
 1535068,Alexander Makarova,2025,CDN1,136159,False,28,2,0,80,0,0,1,1,0
-1535068,Alexander Makarova,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1535068,Alexander Makarova,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1535068,Alexander Makarova,2025,CAN,136159,False,5,2,0,19,0,0,0,0,0
 1527171,Olivier Correa,2025,CDN1,136159,False,28,2,0,41,0,0,1,1,0
-1527171,Olivier Correa,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+1527171,Olivier Correa,2025,CAPL,136159,False,2,0,0,0,0,0,0,0,0
 1527171,Olivier Correa,2025,CAN,136159,False,5,0,0,0,0,0,0,0,0
 993553,Noah Santos,2026,PT3A,3267,False,2,0,0,0,0,0,0,0,0
 993553,Noah Santos,2025,POPO,3267,False,1,1,0,65,0,0,0,0,0
@@ -4958,7 +4975,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 993553,Noah Santos,2025,CPSP,3267,False,6,6,0,186,1,0,0,0,2
 993553,Noah Santos,2025,CPSB,3267,False,26,21,0,871,2,2,0,0,2
 993553,Noah Santos,2025,CDN1,136159,False,11,9,0,292,2,0,11,6,1
-993553,Noah Santos,2025,CAPL,136159,False,1,0,0,0,0,0,0,0,0
+993553,Noah Santos,2025,CAPL,136159,False,2,2,0,30,0,0,0,0,0
 993553,Noah Santos,2025,CAN,136159,False,2,2,0,14,0,0,1,0,0
 993553,Noah Santos,2024,PT3A,2990,False,15,14,0,475,2,1,0,0,4
 993553,Noah Santos,2024,POPO,2990,False,2,2,0,160,1,0,0,0,1

@@ -1,5 +1,5 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
-1220465,Igor Toledo,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969465,11,67731,away,91910,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1220465,Igor Toledo,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969465,11,67731,away,91910,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220465,Igor Toledo,2026-10-27T11:00:00+00:00,2026,PT23,7,False,4969457,10,67731,home,67837,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220465,Igor Toledo,2026-10-20T14:00:00+00:00,2026,PT23,7,False,4969448,9,67731,away,68110,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220465,Igor Toledo,2026-10-13T10:00:00+00:00,2026,PT23,7,False,4969438,8,67731,home,110988,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -9,7 +9,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1220465,Igor Toledo,2026-09-01T10:00:00+00:00,2026,PT23,7,False,4969396,4,67731,away,142579,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220465,Igor Toledo,2026-08-25T16:30:00+00:00,2026,PT23,7,False,4969389,3,67731,home,91911,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220465,Igor Toledo,2026-08-18T16:00:00+00:00,2026,PT23,7,False,4969377,2,67731,away,109718,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1220465,Igor Toledo,2026-08-11T16:00:00+00:00,2026,PT23,7,False,4969371,1,67731,home,144058,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+62415,Panagiotis Tachtsidis,2026-11-06T17:00:00+00:00,2026,ZYP1,1,False,4971079,9,42109,away,2156,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+62415,Panagiotis Tachtsidis,2026-11-03T17:00:00+00:00,2026,CPO1,8,False,5065612,1,42109,home,24326,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 62415,Panagiotis Tachtsidis,2026-10-30T17:00:00+00:00,2026,ZYP1,1,False,4970332,8,42109,home,1402,1,0,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
 62415,Panagiotis Tachtsidis,2026-10-25T15:00:00+00:00,2026,ZYP1,1,False,4970313,7,42109,home,429,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 62415,Panagiotis Tachtsidis,2026-10-17T15:00:00+00:00,2026,ZYP1,1,False,4970304,6,42109,away,57870,1,2,played,77,6,True,45,0,0,0,0,0,0,,,46,0,0
@@ -18,6 +19,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 62415,Panagiotis Tachtsidis,2026-09-12T16:00:00+00:00,2026,ZYP1,1,False,4970279,3,42109,home,16024,1,1,played,77,6,True,90,0,0,0,0,0,0,,,,0,0
 62415,Panagiotis Tachtsidis,2026-09-04T16:00:00+00:00,2026,ZYP1,1,False,4970274,2,42109,away,91288,2,2,played,77,6,True,90,0,1,0,0,0,0,63,,,0,0
 62415,Panagiotis Tachtsidis,2026-08-30T17:00:00+00:00,2026,ZYP1,1,False,4970259,1,42109,home,45457,0,3,played,77,6,True,90,0,0,0,0,0,0,,,,0,0
+964591,Naves,2026-11-07T01:00:00+00:00,2026,MEXA,1,False,5065293,16,1146,home,13353,1,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 964591,Naves,2026-11-01T23:00:00+00:00,2026,MEXA,1,False,5065330,15,1146,away,1403,0,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 964591,Naves,2026-10-24T01:00:00+00:00,2026,MEXA,1,False,5065279,14,1146,home,49283,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 964591,Naves,2026-10-21T00:07:00+00:00,2026,MEXA,1,False,5065324,13,1146,away,6711,0,1,played,5,3,False,90,0,0,1,0,1,0,,,,0,0
@@ -30,6 +32,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 964591,Naves,2026-08-29T01:00:00+00:00,2026,MEXA,1,False,4926755,6,1146,home,3711,1,3,played,5,3,False,45,0,0,0,0,0,0,,,46,0,0
 964591,Naves,2026-08-24T01:00:00+00:00,2026,MEXA,1,False,4926752,5,1146,away,7633,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 964591,Naves,2026-08-18T01:00:00+00:00,2026,MEXA,1,False,4926736,4,1146,home,4941,1,2,played,5,3,False,64,0,0,0,0,0,0,57,,64,0,0
+1083238,Gui Meira,2026-11-08T11:00:00+00:00,2026,PO2,2,False,4939100,10,3349,home,8189,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083238,Gui Meira,2026-11-02T18:00:00+00:00,2026,PO2,2,False,4939137,9,3349,away,3327,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083238,Gui Meira,2026-10-24T13:00:00+00:00,2026,PO2,2,False,4938929,8,3349,home,10330,0,0,played,77,12,False,71,0,0,0,0,0,0,,,71,0,0
 1083238,Gui Meira,2026-10-11T13:00:00+00:00,2026,PO2,2,False,4938981,7,3349,away,4294,1,2,played,77,14,False,56,0,0,0,0,0,0,,,56,0,0
@@ -39,7 +42,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083238,Gui Meira,2026-08-30T13:00:00+00:00,2026,PO2,2,False,4938935,4,3349,away,110302,0,2,played,77,10,False,78,0,0,0,0,0,0,,,78,0,0
 1083238,Gui Meira,2026-08-24T19:15:00+00:00,2026,PO2,2,False,4938946,3,3349,home,10331,0,1,played,77,10,False,86,0,0,0,0,0,0,,,86,0,0
 1083238,Gui Meira,2026-08-14T17:00:00+00:00,2026,PO2,2,False,4938952,2,3349,away,2990,0,1,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
-1083238,Gui Meira,2026-08-09T14:30:00+00:00,2026,PO2,2,False,4938920,1,3349,home,1701,0,0,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
+742034,Léo Linck,2026-11-08T20:30:00+00:00,2026,PO1,1,False,4921588,11,2431,home,294,2,3,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 742034,Léo Linck,2026-10-31T15:30:00+00:00,2026,PO1,1,False,4921611,10,2431,away,979,1,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 742034,Léo Linck,2026-10-24T14:30:00+00:00,2026,PO1,1,False,4921615,9,2431,home,3268,0,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 742034,Léo Linck,2026-10-17T14:30:00+00:00,2026,POPO,8,False,5064278,3,2431,away,7320,2,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
@@ -50,13 +53,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 742034,Léo Linck,2026-09-05T14:30:00+00:00,2026,PO1,1,False,4921498,5,2431,home,3329,2,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 742034,Léo Linck,2026-08-30T14:30:00+00:00,2026,PO1,1,False,4921530,4,2431,away,982,3,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 742034,Léo Linck,2026-08-15T14:30:00+00:00,2026,PO1,1,False,4921426,2,2431,away,2521,2,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
-742034,Léo Linck,2026-08-08T19:30:00+00:00,2026,PO1,1,False,4921479,1,2431,home,336,2,2,played,24,1,False,90,0,0,0,0,0,0,,,,0,0
 1083245,Murilo Rhikman,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083245,Murilo Rhikman,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083245,Murilo Rhikman,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1083245,Murilo Rhikman,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1083245,Murilo Rhikman,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1083600,Nathan Fernandes,2026-10-31T12:00:00+00:00,2026,BU1,1,False,4909926,14,31614,away,2259,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1083600,Nathan Fernandes,2026-11-07T16:30:00+00:00,2026,BU1,1,False,4909989,13,31614,home,61955,2,2,played,10,0,False,5,0,0,0,0,0,0,,85,,0,0
+1083600,Nathan Fernandes,2026-10-31T12:00:00+00:00,2026,BU1,1,False,4909926,14,31614,away,2259,3,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 1083600,Nathan Fernandes,2026-10-26T17:30:00+00:00,2026,BU1,1,False,4910001,12,31614,away,208,0,2,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 1083600,Nathan Fernandes,2026-10-17T15:00:00+00:00,2026,BULP,8,False,5074654,1,31614,away,6764,3,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 1083600,Nathan Fernandes,2026-10-12T17:00:00+00:00,2026,BU1,1,False,4909969,11,31614,home,40604,5,0,played,10,0,False,22,0,0,0,0,0,0,,68,,0,0
@@ -65,7 +66,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083600,Nathan Fernandes,2026-08-30T16:00:00+00:00,2026,BU1,1,False,4909920,7,31614,away,9599,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083600,Nathan Fernandes,2026-08-22T16:00:00+00:00,2026,BU1,1,False,4909864,6,31614,home,675,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083600,Nathan Fernandes,2026-08-15T18:15:00+00:00,2026,BU1,1,False,4909899,5,31614,home,2531,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1083600,Nathan Fernandes,2026-08-09T16:00:00+00:00,2026,BU1,1,False,4909882,4,31614,away,967,3,2,played,10,0,False,45,0,0,0,0,0,0,68,46,,0,0
+1083635,Davi Schuindt,2026-11-06T18:45:00+00:00,2026,PO2,2,False,4939097,10,110302,home,6912,2,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 1083635,Davi Schuindt,2026-10-31T18:00:00+00:00,2026,PO2,2,False,4939134,9,110302,away,2639,1,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 1083635,Davi Schuindt,2026-10-25T11:00:00+00:00,2026,PO2,2,False,4938926,8,110302,home,7179,2,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 1083635,Davi Schuindt,2026-10-17T15:00:00+00:00,2026,POPO,8,False,5064281,3,110302,home,979,1,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
@@ -76,7 +77,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083635,Davi Schuindt,2026-08-30T13:00:00+00:00,2026,PO2,2,False,4938935,4,110302,home,3349,2,0,played,4,3,False,4,0,0,0,0,0,0,,86,,0,0
 1083635,Davi Schuindt,2026-08-23T10:00:00+00:00,2026,PO2,2,False,4938944,3,110302,away,3325,2,2,played,4,3,False,59,0,0,0,0,0,0,,,59,0,0
 1083635,Davi Schuindt,2026-08-17T17:00:00+00:00,2026,PO2,2,False,4938954,2,110302,away,1701,1,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
-1083635,Davi Schuindt,2026-08-09T14:30:00+00:00,2026,PO2,2,False,4938916,1,110302,home,10949,0,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
+644157,Hugo Moura,2026-11-05T13:00:00+00:00,2026,SA1,1,False,4976974,13,50531,away,26069,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 644157,Hugo Moura,2026-10-31T14:55:00+00:00,2026,SA1,1,False,4976994,12,50531,home,28848,4,1,played,5,7,False,90,1,0,3,2,0,1,33,,,0,0
 644157,Hugo Moura,2026-10-22T13:40:00+00:00,2026,SA1,1,False,4976932,11,50531,away,9131,2,2,played,5,7,False,80,0,0,0,0,0,0,,,80,0,0
 644157,Hugo Moura,2026-10-19T15:05:00+00:00,2026,SA1,1,False,4976960,10,50531,home,18487,2,3,played,5,6,False,80,1,0,1,1,0,0,,,80,0,0
@@ -89,7 +90,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 644157,Hugo Moura,2026-08-25T16:10:00+00:00,2026,SA1,1,False,4976879,3,50531,away,28844,0,0,played,5,6,False,90,0,0,1,1,0,0,,,,0,0
 644157,Hugo Moura,2026-08-20T18:00:00+00:00,2026,SA1,1,False,4976867,2,50531,home,1114,0,3,played,5,6,False,90,0,0,3,1,0,2,,,,0,0
 644157,Hugo Moura,2026-08-17T18:00:00+00:00,2026,SAKC,8,False,4971027,1,50531,away,55544,2,0,played,5,6,False,78,2,0,2,2,0,0,,,78,0,0
-644157,Hugo Moura,2026-08-14T16:50:00+00:00,2026,SA1,1,False,4976888,1,50531,away,34911,1,2,played,5,6,False,90,1,0,2,1,0,1,,,,0,0
+323740,Aitor Cantalapiedra,2026-11-08T16:30:00+00:00,2026,GR1,1,False,4973584,10,653,home,3060,0,0,played,10,0,False,19,0,0,0,0,0,0,,71,,0,0
+323740,Aitor Cantalapiedra,2026-11-05T20:00:00+00:00,2026,EL,10,False,5037472,4,653,away,2976,2,0,played,10,0,False,26,0,0,1,0,1,0,,64,,0,0
 323740,Aitor Cantalapiedra,2026-11-01T16:00:00+00:00,2026,GR1,1,False,4973577,9,653,away,6418,1,0,played,10,12,False,68,0,0,1,0,1,0,,,68,0,0
 323740,Aitor Cantalapiedra,2026-10-28T17:30:00+00:00,2026,GRP,8,False,5033913,4,653,away,4603,0,1,played,10,0,False,12,0,0,0,0,0,0,,78,,0,0
 323740,Aitor Cantalapiedra,2026-10-25T18:00:00+00:00,2026,GR1,1,False,4973570,8,653,home,1091,2,1,played,10,12,False,72,0,1,1,0,1,0,,,72,0,0
@@ -107,7 +109,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 323740,Aitor Cantalapiedra,2026-08-27T18:00:00+00:00,2026,ELQ,10,False,5013803,8,653,away,208,2,0,played,10,11,False,71,0,0,1,1,0,0,,,71,0,0
 323740,Aitor Cantalapiedra,2026-08-23T16:30:00+00:00,2026,GR1,1,False,4973519,1,653,home,60949,2,0,played,10,0,False,27,0,0,0,0,0,0,,63,,0,0
 323740,Aitor Cantalapiedra,2026-08-20T18:00:00+00:00,2026,ELQ,10,False,5013761,7,653,home,208,3,0,played,10,11,False,90,0,0,0,0,0,0,,,,0,0
-323740,Aitor Cantalapiedra,2026-08-12T17:00:00+00:00,2026,GRSC,9,False,4884159,1,653,neutral,2441,7,6,played,10,14,False,86,0,2,0,0,0,0,,,86,0,0
+1091893,Zé Breno,2026-11-10T12:00:00+00:00,2026,PT23,7,False,4969383,3,109718,away,110983,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1091893,Zé Breno,2026-11-09T20:15:00+00:00,2026,PO2,2,False,4939104,10,2432,home,2639,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1091893,Zé Breno,2026-11-05T20:00:00+00:00,2026,EL,10,False,5037468,4,2432,home,53453,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1091893,Zé Breno,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969467,11,109718,away,110988,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1091893,Zé Breno,2026-10-31T14:00:00+00:00,2026,PO2,2,False,4939138,9,2432,away,7378,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1091893,Zé Breno,2026-10-27T17:00:00+00:00,2026,PT23,7,False,4969459,10,109718,home,101419,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1091893,Zé Breno,2026-10-26T20:45:00+00:00,2026,PO2,2,False,4938933,8,2432,home,7789,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -127,8 +132,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1091893,Zé Breno,2026-08-22T17:00:00+00:00,2026,PO2,2,False,4938947,3,2432,away,8189,2,2,in squad,55,,False,0,0,0,0,0,0,0,,,,0,0
 1091893,Zé Breno,2026-08-18T16:00:00+00:00,2026,PT23,7,False,4969377,2,109718,home,67731,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1091893,Zé Breno,2026-08-15T17:00:00+00:00,2026,PO2,2,False,4938960,2,2432,home,3327,2,2,played,55,6,False,45,0,0,0,0,0,0,,,46,0,0
-1091893,Zé Breno,2026-08-11T10:00:00+00:00,2026,PT23,7,False,4969366,1,109718,away,75337,2,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1091893,Zé Breno,2026-08-09T10:00:00+00:00,2026,PO2,2,False,4938919,1,2432,away,4294,1,2,played,55,6,False,45,0,0,0,0,0,0,,46,,0,0
+438202,Bruno Tabata,2026-11-08T14:15:00+00:00,2026,QSL,1,False,5024757,9,965,away,77101,2,3,injured,,,False,0,0,0,0,0,0,0,,,,1,0
 438202,Bruno Tabata,2026-10-30T16:30:00+00:00,2026,QSL,1,False,5024751,8,965,home,6297,0,2,injured,,,False,0,0,0,0,0,0,0,,,,1,0
 438202,Bruno Tabata,2026-10-23T14:30:00+00:00,2026,QSL,1,False,5024721,7,965,away,10775,3,2,injured,,,False,0,0,0,0,0,0,0,,,,1,0
 438202,Bruno Tabata,2026-10-17T14:30:00+00:00,2026,QSL,1,False,5024762,6,965,away,4630,2,2,injured,,,False,0,0,0,0,0,0,0,,,,1,0
@@ -139,7 +143,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 438202,Bruno Tabata,2026-09-03T14:00:00+00:00,2026,QSL,1,False,5024728,3,965,away,3612,0,1,played,10,12,False,18,0,0,1,0,0,1,,,18,0,0
 438202,Bruno Tabata,2026-08-28T16:30:00+00:00,2026,QSL,1,False,5024740,2,965,home,656,2,6,played,10,14,False,79,0,0,3,1,0,2,,,79,0,0
 438202,Bruno Tabata,2026-08-20T14:15:00+00:00,2026,QSL,1,False,5024714,1,965,away,13509,2,2,played,10,12,False,90,1,0,4,1,1,2,,,,0,0
-708723,Matheus Donelli,2026-10-30T15:35:00+00:00,2026,UAE1,1,False,5077600,7,60529,home,38040,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+708723,Matheus Donelli,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077595,8,60529,away,13613,0,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
+708723,Matheus Donelli,2026-11-03T18:15:00+00:00,2026,ACLE,10,False,5021814,4,60529,away,1114,0,2,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
 708723,Matheus Donelli,2026-10-27T16:00:00+00:00,2026,ACLE,10,False,5021797,3,60529,home,1076,2,0,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
 708723,Matheus Donelli,2026-10-22T16:00:00+00:00,2026,UAEP,8,False,5094215,4,60529,home,2150,3,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 708723,Matheus Donelli,2026-10-17T15:45:00+00:00,2026,UAE1,1,False,5053673,6,60529,home,2150,2,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
@@ -150,14 +155,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 708723,Matheus Donelli,2026-08-28T16:30:00+00:00,2026,UAE1,1,False,5022612,3,60529,away,16214,1,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 708723,Matheus Donelli,2026-08-22T14:00:00+00:00,2026,UAE1,1,False,5022607,2,60529,home,14456,2,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 708723,Matheus Donelli,2026-08-15T16:45:00+00:00,2026,UAE1,1,False,5022603,1,60529,away,26351,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-225432,Zé Rafael,2026-10-24T17:00:00+00:00,2026,PO1,1,False,4921614,9,2521,home,8024,0,1,played,93,0,False,15,0,0,0,0,0,0,,75,,0,0
-225432,Zé Rafael,2026-10-18T14:00:00+00:00,2026,POPO,8,False,5064275,3,2521,away,7179,0,2,played,93,7,False,64,0,0,0,0,0,0,,,64,0,0
-225432,Zé Rafael,2026-10-12T19:15:00+00:00,2026,PO1,1,False,4921465,8,2521,away,3329,4,1,played,93,0,False,24,0,0,1,0,0,1,,66,,0,0
-225432,Zé Rafael,2026-09-19T17:00:00+00:00,2026,PO1,1,False,4921551,7,2521,home,2425,1,0,played,93,0,False,6,0,0,0,0,0,0,,84,,0,0
-225432,Zé Rafael,2026-09-12T14:30:00+00:00,2026,PO1,1,False,4921512,6,2521,away,982,3,1,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
-225432,Zé Rafael,2026-09-05T17:00:00+00:00,2026,PO1,1,False,4921497,5,2521,home,1075,1,2,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
-225432,Zé Rafael,2026-08-29T14:30:00+00:00,2026,PO1,1,False,4921525,4,2521,home,2423,1,1,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
-929866,João Moreira,2026-11-01T15:35:00+00:00,2026,UAE1,1,False,5077621,7,5432,away,13613,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+929866,João Moreira,2026-11-08T12:55:00+00:00,2026,UAE1,1,False,5077602,8,5432,home,94732,4,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 929866,João Moreira,2026-10-23T16:00:00+00:00,2026,UAEP,8,False,5094217,4,5432,home,4785,0,1,played,30,0,False,43,0,0,0,0,0,0,,77,,0,0
 929866,João Moreira,2026-10-17T13:05:00+00:00,2026,UAE1,1,False,5053672,6,5432,home,17195,2,0,played,30,0,False,30,0,0,0,0,0,0,,60,,0,0
 929866,João Moreira,2026-09-10T13:40:00+00:00,2026,UAE1,1,False,5049663,5,5432,away,2524,1,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
@@ -165,6 +163,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 929866,João Moreira,2026-08-29T16:30:00+00:00,2026,UAE1,1,False,5022615,3,5432,away,2150,1,2,played,30,0,False,9,0,0,0,0,0,0,,81,,0,0
 929866,João Moreira,2026-08-21T16:35:00+00:00,2026,UAE1,1,False,5022605,2,5432,home,161,1,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 929866,João Moreira,2026-08-14T14:10:00+00:00,2026,UAE1,1,False,5022597,1,5432,home,38040,2,2,played,30,0,False,18,0,0,0,0,0,0,,72,,0,0
+225432,Zé Rafael,2026-11-07T18:00:00+00:00,2026,PO1,1,False,4921587,11,2521,home,3268,1,1,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
+225432,Zé Rafael,2026-11-02T20:15:00+00:00,2026,PO1,1,False,4921613,10,2521,away,294,0,1,played,93,0,False,15,0,0,0,0,0,0,,75,,0,0
+225432,Zé Rafael,2026-10-24T17:00:00+00:00,2026,PO1,1,False,4921614,9,2521,home,8024,0,1,played,93,0,False,15,0,0,0,0,0,0,,75,,0,0
+225432,Zé Rafael,2026-10-18T14:00:00+00:00,2026,POPO,8,False,5064275,3,2521,away,7179,0,2,played,93,7,False,64,0,0,0,0,0,0,,,64,0,0
+225432,Zé Rafael,2026-10-12T19:15:00+00:00,2026,PO1,1,False,4921465,8,2521,away,3329,4,1,played,93,0,False,24,0,0,1,0,0,1,,66,,0,0
+225432,Zé Rafael,2026-09-19T17:00:00+00:00,2026,PO1,1,False,4921551,7,2521,home,2425,1,0,played,93,0,False,6,0,0,0,0,0,0,,84,,0,0
+225432,Zé Rafael,2026-09-12T14:30:00+00:00,2026,PO1,1,False,4921512,6,2521,away,982,3,1,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
+225432,Zé Rafael,2026-09-05T17:00:00+00:00,2026,PO1,1,False,4921497,5,2521,home,1075,1,2,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
+225432,Zé Rafael,2026-08-29T14:30:00+00:00,2026,PO1,1,False,4921525,4,2521,home,2423,1,1,in squad,93,,False,0,0,0,0,0,0,0,,,,0,0
+813044,Elias Manoel,2026-11-07T01:00:00+00:00,2026,MEXA,1,False,5065293,16,13353,away,1146,0,1,played,13,0,False,45,0,0,1,0,1,0,,46,,0,0
 813044,Elias Manoel,2026-11-01T01:05:00+00:00,2026,MEXA,1,False,5065316,15,13353,away,2407,3,3,played,13,0,False,21,0,0,0,0,0,0,,69,,0,0
 813044,Elias Manoel,2026-10-29T03:00:00+00:00,2026,MEXA,1,False,4926775,7,13353,away,3631,1,1,played,13,14,False,90,1,0,3,2,0,1,,,,0,0
 813044,Elias Manoel,2026-10-26T03:10:00+00:00,2026,MEXA,1,False,5065336,14,13353,home,1403,4,1,not in squad,,,False,0,0,0,1,0,1,0,,,,0,0
@@ -188,6 +196,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 662739,Gonzalo Tapia,2026-10-07T02:30:00+00:00,2026,FS,11,True,5052882,4,3700,away,6303,2,0,played,16,14,False,90,0,1,0,0,0,0,,,90,0,0
 662739,Gonzalo Tapia,2026-09-30T00:00:00+00:00,2026,FS,11,True,5004444,2,3700,away,3505,2,4,played,16,14,False,6,0,0,0,0,0,0,,84,,0,0
 662739,Gonzalo Tapia,2026-09-26T23:00:00+00:00,2026,FS,11,True,5046184,10,3700,away,3510,0,1,played,16,14,False,62,0,0,1,1,0,0,,,62,0,0
+796796,Ian Luccas,2026-11-07T18:00:00+00:00,2026,PO1,1,False,4921587,11,2521,home,3268,1,1,played,25,7,False,90,1,0,2,1,0,1,22,,,0,0
+796796,Ian Luccas,2026-11-02T20:15:00+00:00,2026,PO1,1,False,4921613,10,2521,away,294,0,1,played,25,7,False,75,0,0,0,0,0,0,63,,75,0,0
 796796,Ian Luccas,2026-10-24T17:00:00+00:00,2026,PO1,1,False,4921614,9,2521,home,8024,0,1,played,25,0,False,45,0,0,1,0,1,0,,46,,0,0
 796796,Ian Luccas,2026-10-18T14:00:00+00:00,2026,POPO,8,False,5064275,3,2521,away,7179,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 796796,Ian Luccas,2026-10-12T19:15:00+00:00,2026,PO1,1,False,4921465,8,2521,away,3329,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -197,7 +207,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 796796,Ian Luccas,2026-08-29T14:30:00+00:00,2026,PO1,1,False,4921525,4,2521,home,2423,1,1,played,25,6,False,63,0,0,2,0,2,0,,,63,0,0
 796796,Ian Luccas,2026-08-22T19:30:00+00:00,2026,PO1,1,False,4921477,3,2521,away,336,1,3,played,25,10,False,75,0,0,0,0,0,0,,,75,0,0
 796796,Ian Luccas,2026-08-15T14:30:00+00:00,2026,PO1,1,False,4921426,2,2521,home,2431,2,2,played,25,6,False,83,1,0,1,1,0,0,,,83,0,0
-796796,Ian Luccas,2026-08-09T17:00:00+00:00,2026,PO1,1,False,4921484,1,2521,away,720,0,2,played,25,6,False,74,0,0,4,1,3,0,,,74,0,0
+1275068,Kauã Prates,2026-11-07T14:30:00+00:00,2026,L1,1,False,4916195,9,16,home,64,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1275068,Kauã Prates,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035893,4,16,home,150,2,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1275068,Kauã Prates,2026-11-04T15:00:00+00:00,2026,19YL,16,False,5047680,6,41570,home,122305,2,2,played,36,4,False,57,0,0,0,0,0,0,,,57,0,0
 1275068,Kauã Prates,2026-10-31T17:30:00+00:00,2026,L1,1,False,4916186,8,16,away,27,2,2,injured,,,False,0,0,0,0,0,0,0,,,,58,0
 1275068,Kauã Prates,2026-10-27T19:45:00+00:00,2026,DFB,8,False,5046655,2,16,home,86,3,2,injured,,,False,0,0,0,0,0,0,0,,,,58,0
 1275068,Kauã Prates,2026-10-24T16:30:00+00:00,2026,L1,1,False,4916177,7,16,home,24,1,0,injured,,,False,0,0,0,0,0,0,0,,,,58,0
@@ -216,8 +228,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1275068,Kauã Prates,2026-08-29T16:30:00+00:00,2026,L1,1,False,4916115,1,16,home,41,2,0,played,36,4,False,6,0,0,1,0,1,0,,84,,0,0
 1275068,Kauã Prates,2026-08-26T18:00:00+00:00,2026,PLIC,16,False,5022262,1,17,away,9262,4,1,played,42,4,False,90,0,0,0,0,0,0,,,,0,0
 1275068,Kauã Prates,2026-08-22T18:30:00+00:00,2026,DFL,9,False,4889954,1,16,home,27,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1275068,Kauã Prates,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1275068,Kauã Prates,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+520093,Raul,2026-11-06T18:45:00+00:00,2026,PO2,2,False,4939097,10,110302,home,6912,2,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 520093,Raul,2026-10-31T18:00:00+00:00,2026,PO2,2,False,4939134,9,110302,away,2639,1,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 520093,Raul,2026-10-25T11:00:00+00:00,2026,PO2,2,False,4938926,8,110302,home,7179,2,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 520093,Raul,2026-10-17T15:00:00+00:00,2026,POPO,8,False,5064281,3,110302,home,979,1,0,played,25,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -228,7 +239,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 520093,Raul,2026-08-30T13:00:00+00:00,2026,PO2,2,False,4938935,4,110302,home,3349,2,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 520093,Raul,2026-08-23T10:00:00+00:00,2026,PO2,2,False,4938944,3,110302,away,3325,2,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 520093,Raul,2026-08-17T17:00:00+00:00,2026,PO2,2,False,4938954,2,110302,away,1701,1,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
-520093,Raul,2026-08-09T14:30:00+00:00,2026,PO2,2,False,4938916,1,110302,home,10949,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1500420,Bruninho,2026-11-08T16:00:00+00:00,2026,UKR1,1,False,4974377,12,660,home,338,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1500420,Bruninho,2026-11-03T17:45:00+00:00,2026,CL,10,False,5035956,4,660,neutral,336,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1500420,Bruninho,2026-10-30T16:00:00+00:00,2026,UKR1,1,False,4974495,11,660,home,39097,2,0,played,99,12,False,61,0,0,0,0,0,0,,,61,0,0
 1500420,Bruninho,2026-10-27T16:00:00+00:00,2026,UKRP,8,False,5055602,3,660,home,338,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1500420,Bruninho,2026-10-24T15:00:00+00:00,2026,UKR1,1,False,4974475,10,660,home,10690,0,0,played,99,12,False,45,0,0,0,0,0,0,,,46,0,0
@@ -247,8 +259,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1500420,Bruninho,2026-09-05T15:00:00+00:00,2026,UKR1,1,False,4974324,5,660,away,85465,2,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1500420,Bruninho,2026-08-29T15:00:00+00:00,2026,UKR1,1,False,4974426,4,660,home,53646,0,2,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
 1500420,Bruninho,2026-08-16T12:30:00+00:00,2026,UKR1,1,False,4974312,3,660,away,55686,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1500420,Bruninho,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,7,12,False,90,1,0,0,0,0,0,,,,0,0
-1500420,Bruninho,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,7,12,False,45,1,0,0,0,0,0,,,46,0,0
+366450,Iury Castilho,2026-11-07T05:00:00+00:00,2026,JAP2,2,False,4903427,16,8344,home,37689,1,0,played,9,0,False,7,0,0,0,0,0,0,,83,,0,0
 366450,Iury Castilho,2026-11-03T05:00:00+00:00,2026,JAP2,2,False,4903115,15,8344,away,10999,1,0,played,9,0,False,7,0,0,0,0,0,0,,83,,0,0
 366450,Iury Castilho,2026-10-31T05:00:00+00:00,2026,JAP2,2,False,4903436,14,8344,home,22173,2,3,played,9,0,False,62,1,0,0,0,0,0,,28,,0,0
 366450,Iury Castilho,2026-10-25T05:00:00+00:00,2026,JAP2,2,False,4903386,13,8344,home,6395,2,1,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
@@ -265,7 +276,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 366450,Iury Castilho,2026-08-29T09:00:00+00:00,2026,JAP2,2,False,4903403,4,8344,away,53668,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 366450,Iury Castilho,2026-08-22T10:00:00+00:00,2026,JAP2,2,False,4903285,3,8344,home,25716,1,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 366450,Iury Castilho,2026-08-15T10:00:00+00:00,2026,JAP2,2,False,4903097,2,8344,home,16032,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-366450,Iury Castilho,2026-08-08T10:00:00+00:00,2026,JAP2,2,False,4903125,1,8344,away,7452,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1097101,João Bom,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969466,11,143199,away,99764,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097101,João Bom,2026-10-19T14:00:00+00:00,2026,PT23,7,False,4969445,9,143199,away,91910,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097101,João Bom,2026-10-13T14:00:00+00:00,2026,PT23,7,False,4969442,8,143199,home,68110,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097101,João Bom,2026-10-06T16:00:00+00:00,2026,PT23,7,False,4969422,6,143199,home,101419,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -275,7 +286,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1097101,João Bom,2026-09-01T16:00:00+00:00,2026,PT23,7,False,4969401,4,143199,home,68403,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097101,João Bom,2026-08-25T16:00:00+00:00,2026,PT23,7,False,4969385,3,143199,away,75337,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097101,João Bom,2026-08-18T16:00:00+00:00,2026,PT23,7,False,4969381,2,143199,home,68077,0,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
-729587,Bruno Leonardo,2026-11-01T12:55:00+00:00,2026,UAE1,1,False,5077607,7,17195,away,161,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+729587,Bruno Leonardo,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077591,8,17195,home,26351,1,2,played,33,3,False,90,0,1,0,0,0,0,45,,,0,0
 729587,Bruno Leonardo,2026-10-24T16:00:00+00:00,2026,UAEP,8,False,5094220,4,17195,home,94732,1,0,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 729587,Bruno Leonardo,2026-10-17T13:05:00+00:00,2026,UAE1,1,False,5053672,6,17195,away,5432,0,2,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 729587,Bruno Leonardo,2026-09-11T13:40:00+00:00,2026,UAE1,1,False,5049666,5,17195,home,14456,1,2,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -285,6 +296,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 729587,Bruno Leonardo,2026-08-16T14:10:00+00:00,2026,UAE1,1,False,5022600,1,17195,home,2524,0,2,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 1503651,Daniel Thuram,2026-09-30T15:00:00+00:00,2026,FS,11,True,5074343,48,94748,away,146303,2,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 1503651,Daniel Thuram,2026-09-27T16:00:00+00:00,2026,FS,11,True,5073682,47,94748,away,20947,1,3,played,0,0,False,45,0,0,0,0,0,0,,46,,0,0
+1223916,Sorriso,2026-11-06T13:00:00+00:00,2026,SA1,1,False,4976969,13,27221,home,31008,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223916,Sorriso,2026-10-31T18:00:00+00:00,2026,SA1,1,False,4976995,12,27221,away,1114,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223916,Sorriso,2026-10-22T14:45:00+00:00,2026,SA1,1,False,4976931,11,27221,home,9840,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223916,Sorriso,2026-10-18T18:00:00+00:00,2026,SA1,1,False,4976959,10,27221,home,6070,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -297,6 +309,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1223916,Sorriso,2026-08-26T16:00:00+00:00,2026,SA1,1,False,4976882,3,27221,away,28848,1,1,played,23,0,False,19,0,0,0,0,0,0,,71,,0,0
 1223916,Sorriso,2026-08-22T15:45:00+00:00,2026,SA1,1,False,4976872,2,27221,home,7732,0,1,played,23,0,False,30,0,0,0,0,0,0,,60,,0,0
 1223916,Sorriso,2026-08-19T18:00:00+00:00,2026,SAKC,8,False,4971036,1,27221,away,107818,0,3,played,23,0,False,23,0,0,1,0,1,0,,67,,0,0
+1083970,JP,2026-11-07T18:00:00+00:00,2026,PO1,1,False,4921587,11,3268,away,2521,1,1,in squad,98,,False,0,0,0,0,0,0,0,,,,0,0
 1083970,JP,2026-10-30T20:15:00+00:00,2026,PO1,1,False,4921608,10,3268,home,336,0,2,in squad,98,,False,0,0,0,0,0,0,0,,,,0,0
 1083970,JP,2026-10-24T14:30:00+00:00,2026,PO1,1,False,4921615,9,3268,away,2431,2,0,in squad,98,,False,0,0,0,0,0,0,0,,,,0,0
 1083970,JP,2026-10-18T14:00:00+00:00,2026,POPO,8,False,5064284,3,3268,away,24785,1,0,played,98,10,False,45,0,0,0,0,0,0,,,46,0,0
@@ -306,8 +319,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083970,JP,2026-09-06T17:00:00+00:00,2026,PO1,1,False,4921505,5,3268,away,2420,0,0,played,98,7,False,45,0,0,0,0,0,0,72,46,,0,0
 1083970,JP,2026-08-30T17:00:00+00:00,2026,PO1,1,False,4921528,4,3268,home,979,0,1,in squad,98,,False,0,0,0,0,0,0,0,,,,0,0
 1083970,JP,2026-08-24T19:15:00+00:00,2026,PO1,1,False,4921472,3,3268,away,2424,0,2,in squad,98,,False,0,0,0,0,0,0,0,,,,0,0
+628223,Alex,2026-11-08T15:20:00+00:00,2026,SA2L,2,False,4975158,11,71665,home,68028,0,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 628223,Alex,2026-11-03T12:35:00+00:00,2026,SA2L,2,False,4975185,10,71665,away,50532,3,4,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
-628223,Alex,2026-10-26T15:00:00+00:00,2026,SA2L,2,False,4975232,9,71665,away,75312,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 628223,Alex,2026-10-20T16:50:00+00:00,2026,SA2L,2,False,4975192,8,71665,home,55544,1,3,played,5,3,False,90,0,0,1,0,1,0,,,,0,0
 628223,Alex,2026-10-14T15:30:00+00:00,2026,SA2L,2,False,4975175,7,71665,away,78886,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 628223,Alex,2026-10-08T17:00:00+00:00,2026,SA2L,2,False,4975163,6,71665,home,107818,1,5,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -317,6 +330,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 628223,Alex,2026-08-26T16:10:00+00:00,2026,SA2L,2,False,5037836,2,71665,away,68748,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 628223,Alex,2026-08-22T16:20:00+00:00,2026,SA2L,2,False,4975110,1,71665,away,40079,2,0,played,5,3,False,90,1,0,2,1,0,1,,,,0,0
 628223,Alex,2026-08-18T16:15:00+00:00,2026,SAKC,8,False,4971029,1,71665,home,6070,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+564919,João Neto,2026-11-08T20:00:00+00:00,2026,PT3A,3,False,4944983,9,2995,home,3348,4,3,played,10,7,False,30,0,0,0,0,0,0,,60,,0,0
 564919,João Neto,2026-10-30T20:00:00+00:00,2026,PT3A,3,False,4944973,8,2995,away,3326,1,3,played,10,0,False,45,0,0,0,0,0,0,,45,,0,0
 564919,João Neto,2026-10-23T19:30:00+00:00,2026,PT3A,3,False,4944962,7,2995,home,3267,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 564919,João Neto,2026-10-11T13:00:00+00:00,2026,PT3A,3,False,4944952,6,2995,away,15136,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -325,6 +339,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 564919,João Neto,2026-08-29T19:00:00+00:00,2026,POPO,8,False,4985877,1,2995,home,3326,0,1,played,10,6,False,61,0,0,0,0,0,0,30,,61,0,0
 564919,João Neto,2026-08-22T19:30:00+00:00,2026,PT3A,3,False,4944920,3,2995,home,4297,1,4,played,10,7,False,45,0,0,0,0,0,0,51,46,,0,0
 1499536,Arthur Monteiro,2026-09-27T16:00:00+00:00,2026,FS,11,True,5073682,47,94748,away,20947,1,3,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+964590,Kaique Pereira,2026-11-07T20:30:00+00:00,2026,PO1,1,False,4921594,11,336,home,979,1,0,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
+964590,Kaique Pereira,2026-11-03T17:45:00+00:00,2026,CL,10,False,5035956,4,336,neutral,660,1,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 964590,Kaique Pereira,2026-10-30T20:15:00+00:00,2026,PO1,1,False,4921608,10,336,away,3268,2,0,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
 964590,Kaique Pereira,2026-10-27T20:15:00+00:00,2026,POCP,14,False,5099042,1,336,home,1301,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 964590,Kaique Pereira,2026-10-25T20:30:00+00:00,2026,PO1,1,False,4921621,9,336,home,7788,1,2,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -335,7 +351,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 964590,Kaique Pereira,2026-09-13T19:30:00+00:00,2026,PO1,1,False,4921510,6,336,away,3329,1,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 964590,Kaique Pereira,2026-09-09T19:00:00+00:00,2026,CL,10,False,5035902,1,336,home,141,3,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 964590,Kaique Pereira,2026-09-05T19:30:00+00:00,2026,PO1,1,False,4921504,5,336,home,982,2,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
-598838,Adonis Frías,2026-10-31T01:00:00+00:00,2026,MEXA,1,False,5065280,15,8590,away,40188,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+598838,Adonis Frías,2026-11-07T23:00:00+00:00,2026,MEXA,1,False,5065310,16,8590,home,4035,1,4,played,19,3,False,79,0,0,1,1,0,0,,,,0,0
+598838,Adonis Frías,2026-10-31T01:00:00+00:00,2026,MEXA,1,False,5065280,15,8590,away,40188,1,0,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
 598838,Adonis Frías,2026-10-25T23:00:00+00:00,2026,MEXA,1,False,5065315,14,8590,home,5662,4,3,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
 598838,Adonis Frías,2026-10-22T01:00:00+00:00,2026,MEXA,1,False,5065340,13,8590,home,3631,2,5,played,19,3,False,90,0,0,1,0,1,0,,,,0,0
 598838,Adonis Frías,2026-10-17T01:00:00+00:00,2026,MEXA,1,False,5065276,12,8590,away,1146,2,0,played,19,3,False,90,0,0,1,0,1,0,77,,,0,0
@@ -345,6 +362,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 598838,Adonis Frías,2026-09-12T23:05:00+00:00,2026,MEXA,1,False,4926782,8,8590,away,1804,2,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 598838,Adonis Frías,2026-09-06T03:00:00+00:00,2026,MEXA,1,False,4926776,7,8590,home,6709,1,1,played,19,3,False,90,0,0,1,0,1,0,,,,0,0
 598838,Adonis Frías,2026-08-29T23:00:00+00:00,2026,MEXA,1,False,4926758,6,8590,home,4961,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1094501,Hugo Leonardo,2026-11-08T08:00:00+00:00,2026,JAP1,1,False,4901595,14,21975,away,672,0,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 1094501,Hugo Leonardo,2026-10-31T05:00:00+00:00,2026,JAP1,1,False,4901614,13,21975,home,2697,0,3,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 1094501,Hugo Leonardo,2026-10-28T10:00:00+00:00,2026,JAPC,14,False,4985840,4,21975,home,1022,1,3,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 1094501,Hugo Leonardo,2026-10-25T07:00:00+00:00,2026,JAP1,1,False,4901639,12,21975,away,6631,0,6,played,38,6,False,63,0,0,1,0,1,0,,,63,0,0
@@ -359,6 +377,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1094501,Hugo Leonardo,2026-09-05T10:00:00+00:00,2026,JAP1,1,False,4901567,6,21975,away,9597,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1094501,Hugo Leonardo,2026-09-02T10:00:00+00:00,2026,JAP1,1,False,4901528,5,21975,home,2241,4,2,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 1094501,Hugo Leonardo,2026-08-29T09:00:00+00:00,2026,JAP1,1,False,4901498,4,21975,home,23568,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+371968,Clayton,2026-11-07T11:00:00+00:00,2026,RU1,1,False,4974179,14,1124,home,121,1,2,played,40,3,False,90,0,0,1,1,0,0,87,,,0,0
 371968,Clayton,2026-10-31T12:15:00+00:00,2026,RU1,1,False,4974171,13,1124,away,2698,0,1,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
 371968,Clayton,2026-10-27T15:00:00+00:00,2026,RUP,8,False,4904814,11,1124,home,3725,3,1,played,40,3,False,15,0,0,0,0,0,0,,75,,0,0
 371968,Clayton,2026-10-24T12:00:00+00:00,2026,RU1,1,False,4974163,12,1124,home,59024,0,1,played,40,3,False,90,0,0,0,0,0,0,51,,,0,0
@@ -370,10 +389,12 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 371968,Clayton,2026-09-05T16:00:00+00:00,2026,RU1,1,False,4904740,7,1124,away,1083,1,3,played,40,3,False,90,0,0,3,0,2,1,,,,0,0
 371968,Clayton,2026-09-01T15:00:00+00:00,2026,RUP,8,False,4904797,9,1124,home,16704,4,5,played,40,3,False,73,0,0,0,0,0,0,,,73,0,0
 371968,Clayton,2026-08-29T12:00:00+00:00,2026,RU1,1,False,4904736,6,1124,home,964,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1082631,Allan,2026-11-07T17:30:00+00:00,2026,GB1,1,False,4899353,10,281,away,703,1,3,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
+1082631,Allan,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035944,4,281,away,23826,3,2,played,37,12,False,7,0,0,0,0,0,0,,83,,0,0
 1082631,Allan,2026-10-31T15:00:00+00:00,2026,GB1,1,False,4899342,9,281,home,1237,0,1,played,37,0,False,11,0,0,1,0,0,1,,79,,0,0
 1082631,Allan,2026-10-28T19:30:00+00:00,2026,CGB,14,False,5056515,5,281,home,1237,6,5,played,37,11,False,61,0,0,1,0,0,1,,,61,0,0
 1082631,Allan,2026-10-24T11:30:00+00:00,2026,GB1,1,False,4899326,8,281,away,405,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1082631,Allan,2026-10-20T19:00:00+00:00,2026,CL,10,False,5035879,3,281,home,2441,5,1,played,37,9,False,90,0,0,2,1,1,0,,,,0,0
+1082631,Allan,2026-10-20T19:00:00+00:00,2026,CL,10,False,5035879,3,281,home,2441,5,1,played,37,11,False,90,0,0,2,1,1,0,,,,0,0
 1082631,Allan,2026-10-17T14:00:00+00:00,2026,GB1,1,False,4899313,7,281,home,677,3,2,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1082631,Allan,2026-10-14T19:00:00+00:00,2026,CL,10,False,5035876,2,281,home,583,2,4,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1082631,Allan,2026-10-11T15:30:00+00:00,2026,GB1,1,False,4899304,6,281,away,31,3,0,played,37,12,False,10,0,0,0,0,0,0,,80,,0,0
@@ -382,10 +403,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1082631,Allan,2026-09-13T15:30:00+00:00,2026,GB1,1,False,4899284,4,281,away,985,1,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1082631,Allan,2026-09-08T19:00:00+00:00,2026,CL,10,False,5035908,1,281,away,720,2,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1082631,Allan,2026-09-05T14:00:00+00:00,2026,GB1,1,False,4899274,3,281,home,990,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1009030,Lorran,2026-11-01T15:35:00+00:00,2026,UAE1,1,False,5077621,7,13613,home,5432,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1009030,Lorran,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077595,8,13613,home,60529,2,0,played,57,8,False,83,0,0,4,2,2,0,,,83,0,0
 1009030,Lorran,2026-10-24T13:00:00+00:00,2026,UAEP,8,False,5094219,4,13613,home,51771,1,0,played,57,0,False,20,0,0,0,0,0,0,,70,,0,0
 1009030,Lorran,2026-10-18T15:45:00+00:00,2026,UAE1,1,False,5053676,6,13613,away,24724,3,1,played,57,12,False,45,0,0,0,0,0,0,,,46,0,0
-688593,Santiago Ramos Mingo,2026-11-01T03:10:00+00:00,2026,MEXA,1,False,5065322,15,3631,home,1804,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+688593,Santiago Ramos Mingo,2026-11-08T03:10:00+00:00,2026,MEXA,1,False,5065334,16,3631,away,7633,2,2,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
+688593,Santiago Ramos Mingo,2026-11-01T03:10:00+00:00,2026,MEXA,1,False,5065322,15,3631,home,1804,2,2,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 688593,Santiago Ramos Mingo,2026-10-29T03:00:00+00:00,2026,MEXA,1,False,4926775,7,3631,home,13353,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 688593,Santiago Ramos Mingo,2026-10-26T01:05:00+00:00,2026,MEXA,1,False,5065321,14,3631,home,4035,1,2,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 688593,Santiago Ramos Mingo,2026-10-22T01:00:00+00:00,2026,MEXA,1,False,5065340,13,3631,away,8590,5,2,played,15,3,False,90,0,0,1,0,1,0,,,,0,0
@@ -394,6 +416,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 688593,Santiago Ramos Mingo,2026-09-28T03:10:00+00:00,2026,MEXA,1,False,5065342,10,3631,away,1146,4,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 688593,Santiago Ramos Mingo,2026-09-20T03:15:00+00:00,2026,MEXA,1,False,4926799,9,3631,home,6711,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 688593,Santiago Ramos Mingo,2026-09-13T03:15:00+00:00,2026,MEXA,1,False,4926783,8,3631,away,3711,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+980854,Ythallo,2026-11-08T15:30:00+00:00,2026,PO1,1,False,4921593,11,2423,home,2424,1,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 980854,Ythallo,2026-11-01T18:00:00+00:00,2026,PO1,1,False,4921610,10,2423,away,1301,2,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 980854,Ythallo,2026-10-26T18:45:00+00:00,2026,PO1,1,False,4921620,9,2423,home,294,1,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 980854,Ythallo,2026-10-19T09:00:00+00:00,2026,PT23,7,False,4969443,9,110983,home,68077,1,1,played,3,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -402,6 +425,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 980854,Ythallo,2026-09-20T17:00:00+00:00,2026,PO1,1,False,4921557,7,2423,home,1075,0,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 980854,Ythallo,2026-09-13T17:00:00+00:00,2026,PO1,1,False,4921507,6,2423,away,8024,2,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 980854,Ythallo,2026-09-06T14:30:00+00:00,2026,PO1,1,False,4921503,5,2423,home,2425,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1228661,Gabriel Mec,2026-11-08T18:00:00+00:00,2026,PO1,1,False,4921595,11,720,away,2420,2,1,injured,,,False,0,0,0,0,0,0,0,,,,303,0
+1228661,Gabriel Mec,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035910,4,720,home,6195,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1228661,Gabriel Mec,2026-10-31T20:30:00+00:00,2026,PO1,1,False,4921612,10,720,home,1465,4,0,played,37,12,False,12,0,0,0,0,0,0,,78,,0,0
 1228661,Gabriel Mec,2026-10-28T20:30:00+00:00,2026,POCP,14,False,5099043,1,720,home,7788,1,0,played,37,14,False,73,0,0,4,1,3,0,,,73,0,0
 1228661,Gabriel Mec,2026-10-24T19:30:00+00:00,2026,PO1,1,False,4921617,9,720,away,2424,1,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
@@ -413,6 +438,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1228661,Gabriel Mec,2026-09-12T17:00:00+00:00,2026,PO1,1,False,4921509,6,720,away,3268,4,1,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1228661,Gabriel Mec,2026-09-08T19:00:00+00:00,2026,CL,10,False,5035908,1,720,home,281,0,2,injured,,,False,0,0,0,0,0,0,0,,,,37,0
 1228661,Gabriel Mec,2026-09-04T19:15:00+00:00,2026,PO1,1,False,4921502,5,720,home,979,2,1,injured,,,False,0,0,0,0,0,0,0,,,,37,0
+1355385,Robinho Junior,2026-11-08T14:00:00+00:00,2026,IT1,1,False,4893445,11,252,home,5,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1355385,Robinho Junior,2026-11-07T10:00:00+00:00,2026,IJ1,7,False,4906589,10,8517,home,5618,1,4,played,77,13,False,90,0,0,0,0,0,0,58,,,0,0
 1355385,Robinho Junior,2026-11-01T17:00:00+00:00,2026,IT1,1,False,4893439,10,252,away,1005,2,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1355385,Robinho Junior,2026-11-01T12:00:00+00:00,2026,IJ1,7,False,4906579,9,8517,home,16996,1,1,played,77,10,False,78,0,0,0,0,0,0,,,78,0,0
 1355385,Robinho Junior,2026-10-28T19:45:00+00:00,2026,IT1,1,False,4893425,9,252,home,506,2,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
@@ -429,6 +456,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1355385,Robinho Junior,2026-09-12T13:00:00+00:00,2026,IT1,1,False,4893375,4,252,home,8970,1,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1355385,Robinho Junior,2026-09-11T15:00:00+00:00,2026,IJ1,7,False,4906531,4,8517,away,5243,1,2,played,77,0,False,30,0,0,0,0,0,0,,60,,0,0
 1355385,Robinho Junior,2026-09-04T18:45:00+00:00,2026,IT1,1,False,4893367,3,252,home,1047,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1027026,Maik,2026-11-07T14:30:00+00:00,2026,SLO1,1,False,4974779,14,20758,home,365,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1027026,Maik,2026-11-04T16:00:00+00:00,2026,SKC,8,False,5127103,4,20758,home,7918,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1027026,Maik,2026-11-01T17:00:00+00:00,2026,SLO1,1,False,4974833,13,20758,home,4529,0,2,played,42,5,False,58,0,0,1,0,1,0,,,58,0,0
 1027026,Maik,2026-10-24T13:30:00+00:00,2026,SLO1,1,False,4974819,12,20758,away,540,2,2,played,42,5,False,90,0,0,0,0,0,0,,,,0,0
 1027026,Maik,2026-10-18T13:30:00+00:00,2026,SLO1,1,False,4974843,11,20758,home,20063,1,0,played,42,5,False,90,0,0,1,1,0,0,,,,0,0
@@ -437,6 +466,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1027026,Maik,2026-09-19T16:00:00+00:00,2026,SLO1,1,False,4974804,9,20758,away,13744,0,1,played,42,0,False,13,0,0,1,0,1,0,,77,,0,0
 1027026,Maik,2026-09-12T16:00:00+00:00,2026,SLO1,1,False,4974788,8,20758,home,35488,3,2,played,42,0,False,19,0,0,0,0,0,0,,71,,0,0
 1027026,Maik,2026-09-06T15:00:00+00:00,2026,SLO1,1,False,4974758,7,20758,away,51316,0,3,played,42,0,False,13,0,0,0,0,0,0,,77,,0,0
+329720,Pedro Henrique,2026-11-07T13:00:00+00:00,2026,SA1,1,False,4976968,13,7732,home,1114,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 329720,Pedro Henrique,2026-10-31T13:30:00+00:00,2026,SA1,1,False,4977000,12,7732,away,28844,1,1,played,5,3,False,90,0,0,1,1,0,0,,,,0,0
 329720,Pedro Henrique,2026-10-24T15:05:00+00:00,2026,SA1,1,False,4976934,11,7732,away,91427,3,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 329720,Pedro Henrique,2026-10-20T18:00:00+00:00,2026,SA1,1,False,4976958,10,7732,home,8023,1,4,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -444,7 +474,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 329720,Pedro Henrique,2026-10-10T14:55:00+00:00,2026,SA1,1,False,4976940,8,7732,home,6070,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 329720,Pedro Henrique,2026-09-11T15:25:00+00:00,2026,SA1,1,False,4976924,7,7732,away,26069,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 329720,Pedro Henrique,2026-09-08T15:30:00+00:00,2026,SA1,1,False,4976914,6,7732,home,28848,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1219851,Paulinho,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969467,11,109718,away,110988,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1219851,Paulinho,2026-11-10T12:00:00+00:00,2026,PT23,7,False,4969383,3,109718,away,110983,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1219851,Paulinho,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969467,11,109718,away,110988,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1219851,Paulinho,2026-10-27T17:00:00+00:00,2026,PT23,7,False,4969459,10,109718,home,101419,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1219851,Paulinho,2026-10-20T14:00:00+00:00,2026,PT23,7,False,4969451,9,109718,away,132946,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1219851,Paulinho,2026-10-13T16:00:00+00:00,2026,PT23,7,False,4969439,8,109718,home,75123,1,3,played,39,0,False,72,0,0,0,0,0,0,,,72,0,0
@@ -452,12 +483,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1219851,Paulinho,2026-09-19T19:00:00+00:00,2026,PT23,7,False,4969429,7,109718,away,68780,0,3,played,39,0,False,69,0,0,0,0,0,0,,,69,0,0
 1219851,Paulinho,2026-09-08T10:00:00+00:00,2026,PT23,7,False,4969409,5,109718,away,68110,3,2,played,39,0,False,63,0,0,0,0,0,0,,,63,0,0
 1219851,Paulinho,2026-08-31T14:00:00+00:00,2026,PT23,7,False,4969397,4,109718,home,68077,1,1,played,39,14,False,67,0,0,0,0,0,0,,,67,0,0
+1084667,Isaac,2026-11-07T15:30:00+00:00,2026,ISR1,1,False,4912890,10,5223,away,1064,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1084667,Isaac,2026-10-31T17:30:00+00:00,2026,ISR1,1,False,4912922,9,5223,home,43119,1,1,played,7,9,False,78,1,0,2,1,1,0,66,,,0,0
 1084667,Isaac,2026-10-24T16:00:00+00:00,2026,ISR1,1,False,4912938,8,5223,away,51070,1,1,played,7,9,False,63,0,0,5,2,2,1,,,63,0,0
 1084667,Isaac,2026-10-17T16:15:00+00:00,2026,ISR1,1,False,4912909,7,5223,home,6028,1,0,played,7,9,False,63,0,0,0,0,0,0,,,63,0,0
 1084667,Isaac,2026-10-10T16:15:00+00:00,2026,ISR1,1,False,4912979,6,5223,away,262,3,0,played,7,9,False,90,0,0,2,1,0,1,,,,0,0
 1084667,Isaac,2026-09-19T17:00:00+00:00,2026,ISR1,1,False,4912959,5,5223,home,119,1,2,played,7,0,False,45,0,0,1,0,1,0,,46,,0,0
-1092429,João Almeida,2026-10-31T19:45:00+00:00,2026,FR1,1,False,4894980,9,1164,away,1095,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1092429,João Almeida,2026-11-08T16:15:00+00:00,2026,FR1,1,False,4894985,10,1164,home,162,1,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1092429,João Almeida,2026-11-07T17:00:00+00:00,2026,FR5B,5,False,4966853,7,9802,away,7722,2,3,played,11,9,False,90,0,0,0,0,0,0,,,,0,0
+1092429,João Almeida,2026-10-31T19:45:00+00:00,2026,FR1,1,False,4894980,9,1164,away,1095,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1092429,João Almeida,2026-10-31T17:00:00+00:00,2026,FR5B,5,False,4966846,6,9802,home,24218,1,1,played,11,9,False,45,0,0,0,0,0,0,25,,46,0,0
 1092429,João Almeida,2026-10-25T16:15:00+00:00,2026,FR1,1,False,4894964,8,1164,away,290,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1092429,João Almeida,2026-10-17T16:00:00+00:00,2026,FR5B,5,False,4966837,5,9802,away,78185,0,0,played,11,9,False,64,0,0,0,0,0,0,,,64,0,0
 1092429,João Almeida,2026-10-16T18:45:00+00:00,2026,FR1,1,False,4894956,7,1164,home,415,0,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -466,13 +501,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1092429,João Almeida,2026-09-19T18:45:00+00:00,2026,FR1,1,False,4894938,5,1164,home,1158,2,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1092429,João Almeida,2026-09-19T16:00:00+00:00,2026,FR5B,5,False,4966824,3,9802,away,80573,2,2,played,11,9,False,90,0,0,0,0,0,0,,,,0,0
 1092429,João Almeida,2026-09-13T15:15:00+00:00,2026,FR1,1,False,4894930,4,1164,home,826,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+740085,Ênio,2026-11-08T15:20:00+00:00,2026,SA2L,2,False,4975158,11,68028,away,71665,1,0,played,10,12,False,71,0,0,2,0,1,1,,,71,0,0
 740085,Ênio,2026-11-02T12:30:00+00:00,2026,SA2L,2,False,4975182,10,68028,home,68748,3,0,played,10,11,False,90,1,1,4,3,1,0,,,,0,0
 740085,Ênio,2026-10-28T15:05:00+00:00,2026,SA2L,2,False,4975240,9,68028,home,22381,1,0,played,10,11,False,78,0,0,2,0,1,1,,,78,0,0
 740085,Ênio,2026-10-21T16:50:00+00:00,2026,SA2L,2,False,4975195,8,68028,away,58858,1,0,played,10,12,False,86,0,0,3,1,1,1,,,86,0,0
 740085,Ênio,2026-10-13T15:15:00+00:00,2026,SA2L,2,False,4975177,7,68028,away,95443,3,1,played,10,12,False,87,1,0,1,1,0,0,,,87,0,0
 740085,Ênio,2026-09-20T15:55:00+00:00,2026,SA2L,2,False,4975166,6,68028,home,39536,0,0,played,10,10,False,45,0,0,2,0,2,0,,46,,0,0
 740085,Ênio,2026-09-13T15:30:00+00:00,2026,SA2L,2,False,4975142,5,68028,away,32343,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1089955,JP Chermont,2026-11-01T15:35:00+00:00,2026,UAE1,1,False,5077621,7,13613,home,5432,0,0,injured,,,False,0,0,0,0,0,0,0,,,,337,0
+1089955,JP Chermont,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077595,8,13613,home,60529,2,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 1089955,JP Chermont,2026-10-24T13:00:00+00:00,2026,UAEP,8,False,5094219,4,13613,home,51771,1,0,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
 1089955,JP Chermont,2026-10-18T15:45:00+00:00,2026,UAE1,1,False,5053676,6,13613,away,24724,3,1,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 188862,Guillermo Varela,2026-10-06T14:00:00+00:00,2026,FS,11,True,5052881,4,3449,away,13957,6,1,played,13,5,False,45,0,0,0,0,0,0,,46,,0,0
@@ -481,11 +517,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1193868,João Souza,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 1193868,João Souza,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,3,3,False,90,0,0,0,0,0,0,33,,,0,0
 1193868,João Souza,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,3,3,False,85,0,0,0,0,0,0,,,85,0,0
-1193868,João Souza,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,3,3,False,90,0,0,0,0,0,0,0,,,0,0
-1193868,João Souza,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,3,3,True,77,0,0,0,0,0,0,,,77,0,0
 248410,Giorgian de Arrascaeta,2026-10-06T14:00:00+00:00,2026,FS,11,True,5052881,4,3449,away,13957,6,1,injured,,,False,0,0,0,0,0,0,0,,,,159,0
 248410,Giorgian de Arrascaeta,2026-09-28T11:00:00+00:00,2026,FS,11,True,5052822,2,3449,away,3589,4,1,played,10,10,False,77,1,1,2,1,1,0,,,77,0,0
 248410,Giorgian de Arrascaeta,2026-09-24T10:05:00+00:00,2026,FS,11,True,5009515,1,3449,away,3435,1,3,played,10,10,False,22,0,0,0,0,0,0,,68,,0,0
+1226703,Guilherme Gomes,2026-11-08T15:30:00+00:00,2026,PO1,1,False,4921593,11,2424,away,2423,2,1,played,19,0,False,6,0,0,0,0,0,0,,84,,0,0
 1226703,Guilherme Gomes,2026-11-02T20:15:00+00:00,2026,PO1,1,False,4921609,10,2424,home,2420,0,0,played,19,0,False,14,0,0,0,0,0,0,,76,,0,0
 1226703,Guilherme Gomes,2026-10-29T20:45:00+00:00,2026,POCP,14,False,5099045,1,2424,away,294,1,4,played,19,7,False,45,0,0,0,0,0,0,,,46,0,0
 1226703,Guilherme Gomes,2026-10-24T19:30:00+00:00,2026,PO1,1,False,4921617,9,2424,home,720,0,1,played,19,10,False,14,0,0,0,0,0,0,,76,,0,0
@@ -507,7 +542,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 974374,Anthony Valencia,2026-08-30T14:00:00+00:00,2026,BE1,1,False,4911795,4,1096,home,475,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 974374,Anthony Valencia,2026-08-22T18:45:00+00:00,2026,BE1,1,False,4911837,3,1096,home,1184,4,4,played,7,12,False,45,1,0,3,1,2,0,,,46,0,0
 974374,Anthony Valencia,2026-08-15T16:15:00+00:00,2026,BE1,1,False,4911815,2,1096,away,601,3,0,played,7,12,False,70,2,0,3,3,0,0,,,70,0,0
-974374,Anthony Valencia,2026-08-09T17:15:00+00:00,2026,BE1,1,False,4911792,1,1096,home,28643,2,1,played,7,0,False,24,0,0,1,0,0,1,90,66,,0,0
+1355837,Alan Santos,2026-11-08T17:30:00+00:00,2026,PT23,7,False,4969469,11,68780,home,91911,2,0,played,9,14,False,78,1,0,0,0,0,0,,,78,0,0
 1355837,Alan Santos,2026-10-23T14:00:00+00:00,2026,PT23,7,False,4969460,10,68780,away,68077,3,4,played,17,0,False,24,0,0,0,0,0,0,90,66,,0,0
 1355837,Alan Santos,2026-10-19T16:00:00+00:00,2026,PT23,7,False,4969449,9,68780,home,142579,1,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1355837,Alan Santos,2026-10-13T16:00:00+00:00,2026,PT23,7,False,4969434,8,68780,away,144058,1,3,played,19,0,False,19,0,0,0,0,0,0,,71,,0,0
@@ -517,6 +552,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1355837,Alan Santos,2026-09-09T16:00:00+00:00,2026,PT23,7,False,4969410,5,68780,home,91910,0,1,played,17,0,False,30,0,0,0,0,0,0,,60,,0,0
 1355837,Alan Santos,2026-09-02T16:00:00+00:00,2026,PT23,7,False,4969398,4,68780,home,110988,1,2,played,11,0,False,60,0,0,0,0,0,0,,,60,0,0
 1355837,Alan Santos,2026-08-25T19:00:00+00:00,2026,PT23,7,False,4969392,3,68780,away,67909,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1093863,Aranha,2026-11-07T20:30:00+00:00,2026,PO1,1,False,4921594,11,979,away,336,0,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1093863,Aranha,2026-10-31T15:30:00+00:00,2026,PO1,1,False,4921611,10,979,home,2431,2,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1093863,Aranha,2026-10-25T15:30:00+00:00,2026,PO1,1,False,4921616,9,979,away,1465,3,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1093863,Aranha,2026-10-17T15:00:00+00:00,2026,POPO,8,False,5064281,3,979,away,110302,0,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
@@ -527,12 +563,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1093863,Aranha,2026-09-04T19:15:00+00:00,2026,PO1,1,False,4921502,5,979,away,720,1,2,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1093863,Aranha,2026-08-30T17:00:00+00:00,2026,PO1,1,False,4921528,4,979,away,3268,1,0,in squad,1,,False,0,0,0,0,0,0,0,75,,,0,0
 1093863,Aranha,2026-08-16T17:00:00+00:00,2026,PO1,1,False,4921427,2,979,away,8024,0,4,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
-1093863,Aranha,2026-08-09T19:30:00+00:00,2026,PO1,1,False,4921483,1,979,home,1075,2,2,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1229317,Kauan Lima,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,1,1,False,81,0,0,0,0,0,0,,,81,0,0
 1229317,Kauan Lima,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1229317,Kauan Lima,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-1229317,Kauan Lima,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-1229317,Kauan Lima,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,1,1,False,77,0,0,0,0,0,0,,,77,0,0
 496268,Joaquín Piquerez,2026-10-06T14:00:00+00:00,2026,FS,11,True,5052881,4,3449,away,13957,6,1,played,22,4,False,63,0,0,0,0,0,0,,,63,0,0
 496268,Joaquín Piquerez,2026-09-28T11:00:00+00:00,2026,FS,11,True,5052822,2,3449,away,3589,4,1,played,22,4,False,90,0,0,1,0,1,0,,,,0,0
 496268,Joaquín Piquerez,2026-09-24T10:05:00+00:00,2026,FS,11,True,5009515,1,3449,away,3435,1,3,played,22,4,False,11,0,0,0,0,0,0,,79,,0,0
@@ -543,6 +576,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 215390,Gustavo Gómez,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,played,15,3,True,78,0,0,0,0,0,0,,,78,0,0
 678439,Mauricio,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3581,away,3816,1,0,played,11,0,False,5,0,0,0,0,0,0,,85,,0,0
 678439,Mauricio,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,played,11,8,False,61,0,0,0,0,0,0,30,,61,0,0
+432953,Raphael Veiga,2026-11-08T03:10:00+00:00,2026,MEXA,1,False,5065334,16,3631,away,7633,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 432953,Raphael Veiga,2026-11-01T03:10:00+00:00,2026,MEXA,1,False,5065322,15,3631,home,1804,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 432953,Raphael Veiga,2026-10-29T03:00:00+00:00,2026,MEXA,1,False,4926775,7,3631,home,13353,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 432953,Raphael Veiga,2026-10-26T01:05:00+00:00,2026,MEXA,1,False,5065321,14,3631,home,4035,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -561,8 +595,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1180021,Erick Belé,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,11,11,False,66,0,1,0,0,0,0,,,66,0,0
 1180021,Erick Belé,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,11,0,False,25,0,1,0,0,0,0,,65,,0,0
 1180021,Erick Belé,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,11,11,False,72,0,0,0,0,0,0,,,72,0,0
-1180021,Erick Belé,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,10,10,False,80,0,0,0,0,0,0,0,,80,0,0
-1180021,Erick Belé,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,10,10,False,77,0,1,0,0,0,0,,,77,0,0
 588989,Jhon Arias,2026-10-06T23:45:00+00:00,2026,FS,11,True,5052883,4,3816,away,3584,2,0,played,10,10,False,60,0,0,1,0,0,1,,,60,0,0
 588989,Jhon Arias,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3816,home,3581,0,1,played,10,11,False,88,0,0,1,0,0,1,,,88,0,0
 588989,Jhon Arias,2026-09-27T01:00:00+00:00,2026,FS,11,True,5052717,2,3816,away,6303,1,1,played,10,12,False,90,0,0,1,1,0,0,,,,0,0
@@ -573,14 +605,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 745191,Ramón Sosa,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,played,7,0,False,29,0,0,0,0,0,0,,61,,0,0
 1499235,Eduardo Conceição,2026-09-30T15:00:00+00:00,2026,FS,11,True,5074343,48,94748,away,146303,2,1,played,10,10,True,90,0,0,0,0,0,0,,,,0,0
 1499235,Eduardo Conceição,2026-09-27T16:00:00+00:00,2026,FS,11,True,5073682,47,94748,away,20947,1,3,played,10,11,False,73,0,0,0,0,0,0,,,73,0,0
+1499235,Eduardo Conceição,2026-09-24T13:00:00+00:00,2026,FS,11,True,5076304,47,23130,away,32645,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1499235,Eduardo Conceição,2026-08-23T13:00:00+00:00,2026,FS,11,True,5076306,45,23130,away,41373,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1499235,Eduardo Conceição,2026-08-20T14:00:00+00:00,2026,FS,11,True,5076229,45,23130,away,41373,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380266,Heittor,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,19,14,False,66,1,0,0,0,0,0,,,66,0,0
 1380266,Heittor,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,19,0,False,45,1,0,0,0,0,0,,46,,0,0
 1380266,Heittor,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,19,14,False,59,1,0,0,0,0,0,,,59,0,0
-1380266,Heittor,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,9,14,False,45,0,0,0,0,0,0,,,46,0,0
-1380266,Heittor,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,9,14,False,66,1,0,0,0,0,0,,,66,0,0
 997947,Otávio,2026-10-03T14:00:00+00:00,2026,FS,11,True,5052850,3,3439,away,13957,4,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 997947,Otávio,2026-09-29T10:00:00+00:00,2026,FS,11,True,5052827,2,3439,away,3433,4,2,played,12,1,False,90,0,0,0,0,0,0,,,,0,0
 997947,Otávio,2026-09-25T10:00:00+00:00,2026,FS,11,True,5052812,1,3439,away,3433,1,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+879217,Kaiki,2026-11-08T17:00:00+00:00,2026,IT1,1,False,4893446,11,1047,away,46,0,2,played,16,4,False,16,0,0,0,0,0,0,,74,,0,0
+879217,Kaiki,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035990,4,1047,away,826,9,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 879217,Kaiki,2026-11-01T11:30:00+00:00,2026,IT1,1,False,4893435,10,1047,home,607,1,0,played,16,4,False,90,0,0,2,0,1,1,86,,,0,0
 879217,Kaiki,2026-10-27T19:45:00+00:00,2026,IT1,1,False,4893431,9,1047,away,416,3,1,played,16,4,False,20,0,0,0,0,0,0,,70,,0,0
 879217,Kaiki,2026-10-24T13:00:00+00:00,2026,IT1,1,False,4893415,8,1047,home,6574,2,0,played,16,4,False,90,0,1,0,0,0,0,,,,0,0
@@ -594,6 +629,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 879217,Kaiki,2026-09-04T18:45:00+00:00,2026,IT1,1,False,4893367,3,1047,away,252,4,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 879217,Kaiki,2026-08-30T16:30:00+00:00,2026,IT1,1,False,4893361,2,1047,away,6195,2,1,played,16,9,False,9,0,0,1,1,0,0,,81,,0,0
 879217,Kaiki,2026-08-22T16:30:00+00:00,2026,IT1,1,False,4893351,1,1047,away,410,1,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
+1083247,Bruno Alves,2026-11-07T12:30:00+00:00,2026,GB2,2,False,4923527,15,1123,away,698,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1083247,Bruno Alves,2026-11-03T19:45:00+00:00,2026,GB2,2,False,4923515,14,1123,away,22,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083247,Bruno Alves,2026-10-31T12:30:00+00:00,2026,GB2,2,False,4923482,13,1123,home,1010,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083247,Bruno Alves,2026-10-24T11:30:00+00:00,2026,GB2,2,False,4923492,12,1123,away,358,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083247,Bruno Alves,2026-10-17T14:00:00+00:00,2026,GB2,2,False,4923447,11,1123,home,1020,0,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -615,7 +652,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083247,Bruno Alves,2026-08-25T18:00:00+00:00,2026,CGB,14,False,5016483,3,1123,away,603,2,1,played,28,3,False,70,0,0,0,0,0,0,,,70,0,0
 1083247,Bruno Alves,2026-08-22T11:30:00+00:00,2026,GB2,2,False,4911083,2,1123,away,1028,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083247,Bruno Alves,2026-08-15T14:00:00+00:00,2026,GB2,2,False,4911096,1,1123,home,984,1,2,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
-1083247,Bruno Alves,2026-08-08T14:00:00+00:00,2026,CGB,14,False,4926007,2,1123,home,991,4,1,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
+1097224,Janderson,2026-11-07T20:30:00+00:00,2026,PO1,1,False,4921594,11,979,away,336,0,1,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+1097224,Janderson,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969463,11,142579,away,67837,0,1,played,3,0,False,78,0,0,0,0,0,0,,,78,0,0
 1097224,Janderson,2026-10-31T15:30:00+00:00,2026,PO1,1,False,4921611,10,979,home,2431,2,1,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 1097224,Janderson,2026-10-27T13:00:00+00:00,2026,PT23,7,False,4969456,10,142579,home,99764,2,0,played,3,0,False,65,0,0,0,0,0,0,10,,65,0,0
 1097224,Janderson,2026-10-25T15:30:00+00:00,2026,PO1,1,False,4921616,9,979,away,1465,3,1,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
@@ -633,7 +671,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1097224,Janderson,2026-09-04T19:15:00+00:00,2026,PO1,1,False,4921502,5,979,away,720,1,2,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 1097224,Janderson,2026-08-30T17:00:00+00:00,2026,PO1,1,False,4921528,4,979,away,3268,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1097224,Janderson,2026-08-16T17:00:00+00:00,2026,PO1,1,False,4921427,2,979,away,8024,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1097224,Janderson,2026-08-09T19:30:00+00:00,2026,PO1,1,False,4921483,1,979,home,1075,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+658678,Christian,2026-11-07T16:30:00+00:00,2026,RU1,1,False,4974176,14,16704,home,2410,4,2,played,18,8,False,90,0,2,1,1,0,0,,,,0,0
 658678,Christian,2026-10-31T16:45:00+00:00,2026,RU1,1,False,4974170,13,16704,away,59024,1,2,played,18,8,False,90,1,0,4,1,2,1,30,,,0,0
 658678,Christian,2026-10-27T17:30:00+00:00,2026,RUP,8,False,4904813,11,16704,home,121,2,1,played,18,9,False,90,0,0,0,0,0,0,,,,0,0
 658678,Christian,2026-10-24T16:30:00+00:00,2026,RU1,1,False,4974157,12,16704,home,2741,1,1,played,18,8,False,75,0,0,0,0,0,0,67,,75,0,0
@@ -648,16 +686,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 658678,Christian,2026-08-23T14:30:00+00:00,2026,RU1,1,False,4904723,5,16704,away,75231,1,0,played,18,8,False,90,0,0,2,1,1,0,,,,0,0
 658678,Christian,2026-08-19T17:45:00+00:00,2026,RUP,8,False,4904789,8,16704,away,121,1,0,played,18,8,False,24,0,0,0,0,0,0,,66,,0,0
 658678,Christian,2026-08-15T17:45:00+00:00,2026,RU1,1,False,4904717,4,16704,home,3725,1,0,played,18,8,False,90,1,0,2,1,1,0,,,,0,0
-658678,Christian,2026-08-09T17:00:00+00:00,2026,RU1,1,False,4904706,3,16704,away,232,2,1,played,18,8,False,86,0,0,0,0,0,0,,,86,0,0
-658678,Christian,2026-08-05T17:45:00+00:00,2026,RUP,8,False,4904782,7,16704,home,3725,6,5,played,18,8,False,45,0,0,0,0,0,0,,,46,0,0
 1365897,Zé Lucas,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,8,0,False,15,0,0,0,0,0,0,,75,,0,0
 1365897,Zé Lucas,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1365897,Zé Lucas,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,8,6,False,59,0,0,0,0,0,0,,,59,0,0
-1365897,Zé Lucas,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1365897,Zé Lucas,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1074584,Keny Arroyo,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,5750,neutral,3577,6,7,played,11,0,False,19,0,0,0,0,0,0,,71,,0,0
 1074584,Keny Arroyo,2026-10-01T10:10:00+00:00,2026,FS,11,True,5009517,3,5750,away,3435,4,5,played,11,13,False,67,0,0,0,0,0,0,,,67,0,0
 1074584,Keny Arroyo,2026-09-24T11:00:00+00:00,2026,FS,11,True,5050972,5,5750,away,3589,0,3,played,11,12,False,66,0,0,1,0,1,0,21,,66,0,0
+1182665,Néiser Villarreal,2026-11-12T13:00:00+00:00,2026,FS,11,True,5133453,5,28266,away,22982,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 574901,Hugo Souza,2026-10-03T14:00:00+00:00,2026,FS,11,True,5052850,3,3439,away,13957,4,0,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 574901,Hugo Souza,2026-09-29T10:00:00+00:00,2026,FS,11,True,5052827,2,3439,away,3433,4,2,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 574901,Hugo Souza,2026-09-25T10:00:00+00:00,2026,FS,11,True,5052812,1,3439,away,3433,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -678,21 +713,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 742095,Gabriel Pereira,2026-08-23T16:00:00+00:00,2026,DK1,1,False,4921777,5,190,away,1063,0,4,played,5,3,False,90,0,0,1,0,1,0,,,,0,0
 742095,Gabriel Pereira,2026-08-20T16:00:00+00:00,2026,ECLQ,10,False,5013811,7,190,away,8042,0,0,played,5,3,False,90,0,0,1,1,0,0,,,,0,0
 742095,Gabriel Pereira,2026-08-16T16:00:00+00:00,2026,DK1,1,False,4921769,4,190,away,5724,4,0,played,5,3,False,90,0,0,1,0,0,1,,,,0,0
-742095,Gabriel Pereira,2026-08-12T16:00:00+00:00,2026,ECLQ,10,False,4973773,6,190,home,84,5,1,played,5,3,False,90,0,0,1,0,1,0,,,,0,0
-742095,Gabriel Pereira,2026-08-06T17:00:00+00:00,2026,ECLQ,10,False,4973743,5,190,away,84,3,0,played,5,3,False,90,1,0,1,1,0,0,,,,0,0
 1355257,Bruno André,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 1355257,Bruno André,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1355257,Bruno André,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,23,3,False,5,0,0,0,0,0,0,,85,,0,0
-1355257,Bruno André,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1355257,Bruno André,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,4,3,False,45,0,0,0,0,0,0,,,46,0,0
 1221773,Ramon Rique,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,17,0,False,24,0,0,0,0,0,0,,66,,0,0
 1221773,Ramon Rique,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,17,6,False,45,0,0,0,0,0,0,,,46,0,0
 1221773,Ramon Rique,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-1221773,Ramon Rique,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1221773,Ramon Rique,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 957461,Andrés Gómez,2026-10-06T23:45:00+00:00,2026,FS,11,True,5052883,4,3816,away,3584,2,0,played,26,9,False,61,0,0,3,1,1,1,,,61,0,0
 957461,Andrés Gómez,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3816,home,3581,0,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 957461,Andrés Gómez,2026-09-27T01:00:00+00:00,2026,FS,11,True,5052717,2,3816,away,6303,1,1,played,26,11,False,66,0,0,0,0,0,0,,,66,0,0
+743597,Matheus França,2026-11-07T18:00:00+00:00,2026,PO1,1,False,4921587,11,2521,home,3268,1,1,played,26,0,False,23,0,0,1,0,1,0,,67,,0,0
+743597,Matheus França,2026-11-02T20:15:00+00:00,2026,PO1,1,False,4921613,10,2521,away,294,0,1,played,26,0,False,31,0,0,1,1,0,0,,59,,0,0
 743597,Matheus França,2026-10-24T17:00:00+00:00,2026,PO1,1,False,4921614,9,2521,home,8024,0,1,played,26,0,False,28,0,0,2,1,1,0,,62,,0,0
 743597,Matheus França,2026-10-18T14:00:00+00:00,2026,POPO,8,False,5064275,3,2521,away,7179,0,2,played,26,11,False,64,0,0,0,0,0,0,,,64,0,0
 743597,Matheus França,2026-10-12T19:15:00+00:00,2026,PO1,1,False,4921465,8,2521,away,3329,4,1,played,26,0,False,16,0,0,1,0,1,0,,74,,0,0
@@ -704,8 +735,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 598629,Bruno Duarte,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013795,8,159,away,941,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 598629,Bruno Duarte,2026-08-23T17:00:00+00:00,2026,SER1,1,False,4939882,6,159,home,6621,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 598629,Bruno Duarte,2026-08-20T18:00:00+00:00,2026,ELQ,10,False,5013753,7,159,home,941,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-598629,Bruno Duarte,2026-08-11T18:00:00+00:00,2026,CLQ,10,False,4973504,6,159,home,2976,0,2,played,17,9,False,90,0,0,0,0,0,0,,,,0,0
-598629,Bruno Duarte,2026-08-08T18:00:00+00:00,2026,SER1,1,False,4939862,4,159,home,4633,2,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+1083962,GB,2026-11-07T14:00:00+00:00,2026,PO2,2,False,4939098,10,3325,home,3327,2,3,played,99,13,False,10,1,0,0,0,0,0,,80,,0,0
 1083962,GB,2026-10-31T18:00:00+00:00,2026,PO2,2,False,4939133,9,3325,away,10330,1,3,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
 1083962,GB,2026-10-23T17:45:00+00:00,2026,PO2,2,False,4938927,8,3325,home,6912,2,1,in squad,99,,False,0,0,0,0,0,0,0,,,,0,0
 1083962,GB,2026-10-16T19:00:00+00:00,2026,POPO,8,False,5064291,3,3325,home,8026,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -716,7 +746,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1083962,GB,2026-08-30T17:00:00+00:00,2026,PO2,2,False,4938937,4,3325,away,1701,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083962,GB,2026-08-23T10:00:00+00:00,2026,PO2,2,False,4938944,3,3325,home,110302,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1083962,GB,2026-08-15T14:30:00+00:00,2026,PO2,2,False,4938959,2,3325,away,10949,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1083962,GB,2026-08-08T10:00:00+00:00,2026,PO2,2,False,4938918,1,3325,home,2990,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+111819,Neto,2026-11-08T19:45:00+00:00,2026,IT1,1,False,4893444,11,506,away,430,2,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
+111819,Neto,2026-11-05T20:00:00+00:00,2026,EL,10,False,5037333,4,506,away,1090,2,1,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 111819,Neto,2026-11-01T19:45:00+00:00,2026,IT1,1,False,4893437,10,506,home,6195,2,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 111819,Neto,2026-10-28T19:45:00+00:00,2026,IT1,1,False,4893425,9,506,away,252,0,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 111819,Neto,2026-10-25T17:00:00+00:00,2026,IT1,1,False,4893419,8,506,away,1005,2,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
@@ -735,6 +766,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1364573,Huguinho,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,15,0,False,45,0,0,0,0,0,0,,46,,0,0
 1364573,Huguinho,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,15,6,False,90,0,1,0,0,0,0,,,,0,0
 1364573,Huguinho,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,15,6,False,45,0,0,0,0,0,0,,46,,0,0
+1087334,Jordan Barrera,2026-11-12T13:00:00+00:00,2026,FS,11,True,5133453,5,28266,away,22982,0,0,injured,,,False,0,0,0,0,0,0,0,,,,25,0
+538810,Chris Ramos,2026-11-07T15:15:00+00:00,2026,ES2,2,False,4919066,13,2497,away,2687,2,1,injured,,,False,0,0,0,0,0,0,0,,,,2,0
 538810,Chris Ramos,2026-11-02T15:15:00+00:00,2026,ES2,2,False,4919082,12,2497,home,472,2,3,injured,,,False,0,0,0,0,0,0,0,,,,2,0
 538810,Chris Ramos,2026-10-29T17:00:00+00:00,2026,CDR,8,False,5074750,3,2497,away,2296,5,7,injured,,,False,0,0,0,0,0,0,0,,,,2,0
 538810,Chris Ramos,2026-10-24T19:00:00+00:00,2026,ES2,2,False,4919087,11,2497,away,3302,2,2,injured,,,False,0,0,0,0,0,0,0,,,,2,0
@@ -748,13 +781,15 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 538810,Chris Ramos,2026-08-29T17:00:00+00:00,2026,ES2,2,False,4918811,3,2497,away,1532,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 538810,Chris Ramos,2026-08-22T15:00:00+00:00,2026,ES2,2,False,4918764,2,2497,home,1244,0,1,played,9,14,False,79,0,0,2,0,2,0,28,,79,0,0
 538810,Chris Ramos,2026-08-15T17:00:00+00:00,2026,ES2,2,False,4918753,1,2497,home,16795,0,0,played,9,14,False,90,0,0,3,1,2,0,,,,0,0
+1464878,Kadir Barría,2026-11-13T00:00:00+00:00,2026,CNNF,11,True,5077677,3,3577,away,32364,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1464878,Kadir Barría,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,3577,neutral,5750,7,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1464878,Kadir Barría,2026-10-01T06:10:00+00:00,2026,FS,11,True,5009516,3,3577,away,9171,3,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1464878,Kadir Barría,2026-09-25T13:30:00+00:00,2026,FS,11,True,5034436,1,3577,away,13957,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1568045,Lucas Emanuel,2026-09-30T15:00:00+00:00,2026,FS,11,True,5074343,48,94748,away,146303,2,1,played,19,14,False,90,0,0,0,0,0,0,,,,0,0
 1568045,Lucas Emanuel,2026-09-27T16:00:00+00:00,2026,FS,11,True,5073682,47,94748,away,20947,1,3,played,0,0,False,45,0,0,0,0,0,0,59,46,,0,0
 1220614,Ruan Pablo,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 1220614,Ruan Pablo,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,25,11,False,45,0,0,0,0,0,0,,,46,0,0
 1220614,Ruan Pablo,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,25,12,False,0,0,0,0,0,0,0,,,,0,0
-1220614,Ruan Pablo,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,21,0,False,45,0,0,0,0,0,0,,46,,0,0
-1220614,Ruan Pablo,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,21,0,False,45,0,0,0,0,0,0,,46,,0,0
 1423021,Kauê Furquim,2026-09-30T15:00:00+00:00,2026,FS,11,True,5074343,48,94748,away,146303,2,1,played,7,0,False,10,1,0,0,0,0,0,,80,,0,0
 1423021,Kauê Furquim,2026-09-27T16:00:00+00:00,2026,FS,11,True,5073682,47,94748,away,20947,1,3,played,7,12,False,90,1,0,0,0,0,0,74,,,0,0
 1423021,Kauê Furquim,2026-09-24T13:00:00+00:00,2026,FS,11,True,5076304,47,23130,away,32645,6,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -763,6 +798,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 815558,Martinelli,2026-10-03T14:00:00+00:00,2026,FS,11,True,5052850,3,3439,away,13957,4,0,played,20,0,False,29,0,0,0,0,0,0,,61,,0,0
 815558,Martinelli,2026-09-29T10:00:00+00:00,2026,FS,11,True,5052827,2,3439,away,3433,4,2,played,20,0,False,7,0,0,0,0,0,0,,83,,0,0
 815558,Martinelli,2026-09-25T10:00:00+00:00,2026,FS,11,True,5052812,1,3439,away,3433,1,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
+898350,Facundo Bernal,2026-11-08T13:00:00+00:00,2026,ES1,1,False,4918437,12,150,away,1531,2,0,absent,,,False,0,0,0,0,0,0,0,,,,0,3
+898350,Facundo Bernal,2026-11-04T20:00:00+00:00,2026,CL,10,False,5035893,4,150,away,16,1,2,played,6,6,False,78,0,0,1,0,1,0,,,78,0,0
 898350,Facundo Bernal,2026-10-31T17:30:00+00:00,2026,ES1,1,False,4918426,11,150,home,1084,2,1,absent,,,False,0,0,0,0,0,0,0,,,,0,3
 898350,Facundo Bernal,2026-10-25T15:15:00+00:00,2026,ES1,1,False,4918418,10,150,away,940,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,3
 898350,Facundo Bernal,2026-10-21T19:00:00+00:00,2026,CL,10,False,5035922,3,150,home,234,1,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -783,21 +820,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 387611,Lima,2026-08-30T01:05:00+00:00,2026,MEXA,1,False,4926760,6,3631,home,5662,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 387611,Lima,2026-08-22T03:10:00+00:00,2026,MEXA,1,False,4926745,5,3631,away,49283,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 387611,Lima,2026-08-16T23:00:00+00:00,2026,MEXA,1,False,4926733,4,3631,home,40188,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1264076,João Pedro,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,22,0,False,9,0,0,0,0,0,0,,81,,0,0
-1264076,João Pedro,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
-1264076,João Pedro,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
-1264076,João Pedro,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
-1264076,João Pedro,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 1256755,João Ananias,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,4,3,False,81,1,0,0,0,0,0,,,81,0,0
 1256755,João Ananias,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 1256755,João Ananias,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
-1256755,João Ananias,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1256755,João Ananias,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 185966,Rodinei,2026-08-30T18:00:00+00:00,2026,GR1,1,False,4973509,2,683,away,6676,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,2
 185966,Rodinei,2026-08-22T18:30:00+00:00,2026,GR1,1,False,4973518,1,683,home,3060,1,0,played,23,5,False,90,0,0,1,0,0,1,65,,,0,0
-185966,Rodinei,2026-08-11T17:30:00+00:00,2026,CLQ,10,False,4973505,6,683,away,467,1,2,played,23,5,False,120,0,0,0,0,0,0,55,,,0,0
-1279318,Rafael Gonzaga,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,16,0,False,30,0,0,0,0,0,0,,60,,0,0
-1279318,Rafael Gonzaga,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1089958,Gabriel Bontempo,2026-10-03T14:00:00+00:00,2026,FS,11,True,5052850,3,3439,away,13957,4,0,played,25,7,False,45,0,0,0,0,0,0,,,46,0,0
 1089958,Gabriel Bontempo,2026-09-29T10:00:00+00:00,2026,FS,11,True,5052827,2,3439,away,3433,4,2,played,25,7,False,61,0,1,1,0,0,1,,,61,0,0
 1089958,Gabriel Bontempo,2026-09-25T10:00:00+00:00,2026,FS,11,True,5052812,1,3439,away,3433,1,1,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
@@ -807,29 +834,27 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1063811,Miguelito,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,5233,away,3581,0,2,played,7,14,False,88,0,0,0,0,0,0,,,88,0,0
 891672,Gustavo Caballero,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3581,away,3816,1,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 891672,Gustavo Caballero,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,played,24,0,False,19,0,0,0,0,0,0,,71,,0,0
+1264076,João Pedro,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,22,0,False,9,0,0,0,0,0,0,,81,,0,0
+1264076,João Pedro,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+1264076,João Pedro,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 450241,Angelo Preciado,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,5750,neutral,3577,6,7,played,17,5,False,64,0,0,0,0,0,0,,,64,0,0
 450241,Angelo Preciado,2026-10-01T10:10:00+00:00,2026,FS,11,True,5009517,3,5750,away,3435,4,5,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 450241,Angelo Preciado,2026-09-24T11:00:00+00:00,2026,FS,11,True,5050972,5,5750,away,3589,0,3,played,17,5,False,90,0,0,0,0,0,0,52,,,0,0
 1355484,Kauã Pascini,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,16,4,False,75,0,0,0,0,0,0,,,75,0,0
 1355484,Kauã Pascini,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,16,0,False,45,0,0,0,0,0,0,,46,,0,0
 1355484,Kauã Pascini,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,16,4,False,90,0,1,0,0,0,0,,,,0,0
-1355484,Kauã Pascini,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1355484,Kauã Pascini,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 273000,Júnior Alonso,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3581,away,3816,1,0,played,6,4,False,90,0,0,0,0,0,0,,,,0,0
 273000,Júnior Alonso,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 1355486,Vitão,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1355486,Vitão,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,14,3,False,90,0,0,0,0,0,0,,,,0,0
 1355486,Vitão,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,14,3,False,45,0,0,0,0,0,0,,46,,0,0
-1355486,Vitão,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1355486,Vitão,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-191614,Fred,2026-08-11T18:30:00+00:00,2026,CLQ,10,False,4973507,6,36,away,122,1,0,played,7,10,False,27,0,0,0,0,0,0,,63,,0,0
-191614,Fred,2026-08-05T18:00:00+00:00,2026,CLQ,10,False,4973497,5,36,home,122,2,0,played,7,10,False,21,0,0,0,0,0,0,,69,,0,0
 857948,Kevin Castaño,2026-10-06T23:45:00+00:00,2026,FS,11,True,5052883,4,3816,away,3584,2,0,played,5,0,False,29,0,0,0,0,0,0,,61,,0,0
 857948,Kevin Castaño,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3816,home,3581,0,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 857948,Kevin Castaño,2026-09-27T01:00:00+00:00,2026,FS,11,True,5052717,2,3816,away,6303,1,1,played,5,6,False,71,0,0,0,0,0,0,,,71,0,0
 400960,Alan Franco,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,5750,neutral,3577,6,7,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 400960,Alan Franco,2026-10-01T10:10:00+00:00,2026,FS,11,True,5009517,3,5750,away,3435,4,5,played,21,5,False,45,0,0,0,0,0,0,,,46,0,0
 400960,Alan Franco,2026-09-24T11:00:00+00:00,2026,FS,11,True,5050972,5,5750,away,3589,0,3,played,21,6,False,90,0,0,1,0,0,1,,,,0,0
+1220180,Mateus Iseppe,2026-11-08T15:30:00+00:00,2026,PO1,1,False,4921591,11,982,home,7788,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220180,Mateus Iseppe,2026-11-01T15:30:00+00:00,2026,PO1,1,False,4921606,10,982,away,8024,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220180,Mateus Iseppe,2026-10-25T18:00:00+00:00,2026,PO1,1,False,4921618,9,982,home,1075,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1220180,Mateus Iseppe,2026-10-17T14:00:00+00:00,2026,POPO,8,False,5064283,3,982,away,6023,0,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
@@ -840,7 +865,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1220180,Mateus Iseppe,2026-08-30T14:30:00+00:00,2026,PO1,1,False,4921530,4,982,home,2431,2,3,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1220180,Mateus Iseppe,2026-08-23T14:30:00+00:00,2026,PO1,1,False,4921478,3,982,away,2420,0,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1220180,Mateus Iseppe,2026-08-16T14:30:00+00:00,2026,PO1,1,False,4921431,2,982,home,1465,2,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
-1220180,Mateus Iseppe,2026-08-10T19:15:00+00:00,2026,PO1,1,False,4921485,1,982,away,2423,2,2,played,23,11,False,10,0,0,0,0,0,0,,80,,0,0
 897051,Alan Minda,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,5750,neutral,3577,6,7,played,14,13,False,45,0,0,0,0,0,0,,,46,0,0
 897051,Alan Minda,2026-10-01T10:10:00+00:00,2026,FS,11,True,5009517,3,5750,away,3435,4,5,played,14,0,False,4,0,0,0,0,0,0,,86,,0,0
 897051,Alan Minda,2026-09-24T11:00:00+00:00,2026,FS,11,True,5050972,5,5750,away,3589,0,3,played,14,0,False,16,0,0,1,0,0,1,,74,,0,0
@@ -850,7 +874,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 580461,Kevin Viveros,2026-10-06T23:45:00+00:00,2026,FS,11,True,5052883,4,3816,away,3584,2,0,played,20,0,False,29,0,0,2,1,0,1,,61,,0,0
 580461,Kevin Viveros,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3816,home,3581,0,1,played,20,0,False,45,0,0,1,0,1,0,,46,,0,0
 580461,Kevin Viveros,2026-09-27T01:00:00+00:00,2026,FS,11,True,5052717,2,3816,away,6303,1,1,played,20,14,False,24,0,0,1,0,0,1,,66,,0,0
-593205,Julimar,2026-11-01T15:35:00+00:00,2026,UAE1,1,False,5077621,7,13613,home,5432,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+593205,Julimar,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077595,8,13613,home,60529,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 593205,Julimar,2026-10-24T13:00:00+00:00,2026,UAEP,8,False,5094219,4,13613,home,51771,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 593205,Julimar,2026-10-18T15:45:00+00:00,2026,UAE1,1,False,5053676,6,13613,away,24724,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 593205,Julimar,2026-09-11T16:15:00+00:00,2026,UAE1,1,False,5049669,5,13613,away,161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -864,10 +888,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1311456,Ryan Augusto,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,2,0,False,24,0,0,0,0,0,0,,66,,0,0
 1311456,Ryan Augusto,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,2,5,False,65,0,0,0,0,0,0,,,65,0,0
 1311456,Ryan Augusto,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,2,5,False,85,0,0,0,0,0,0,,,85,0,0
-1311456,Ryan Augusto,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,2,5,False,60,0,0,0,0,0,0,,,60,0,0
-1311456,Ryan Augusto,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,2,5,False,66,0,0,0,0,0,0,,,66,0,0
-1362912,Breno,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,15,0,False,45,0,0,0,0,0,0,,46,,0,0
-1362912,Breno,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,15,0,False,13,0,0,0,0,0,0,,77,,0,0
+1381735,Weimar Vivas,2026-11-12T13:00:00+00:00,2026,FS,11,True,5133453,5,28266,away,22982,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1082596,Marquinhos,2026-11-10T12:00:00+00:00,2026,PT23,7,False,4969383,3,109718,away,110983,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1082596,Marquinhos,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969467,11,109718,away,110988,2,1,in squad,40,,False,0,0,0,0,0,0,0,,,,0,0
 1082596,Marquinhos,2026-10-27T17:00:00+00:00,2026,PT23,7,False,4969459,10,109718,home,101419,3,2,played,40,0,False,27,0,0,0,0,0,0,,63,,0,0
 1082596,Marquinhos,2026-10-20T14:00:00+00:00,2026,PT23,7,False,4969451,9,109718,away,132946,2,0,played,40,0,False,23,0,0,0,0,0,0,,67,,0,0
 1082596,Marquinhos,2026-10-13T16:00:00+00:00,2026,PT23,7,False,4969439,8,109718,home,75123,1,3,in squad,75,,False,0,0,0,0,0,0,0,,,,0,0
@@ -876,7 +899,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1082596,Marquinhos,2026-09-08T10:00:00+00:00,2026,PT23,7,False,4969409,5,109718,away,68110,3,2,played,40,0,False,63,1,0,0,0,0,0,,,63,0,0
 1082596,Marquinhos,2026-08-31T14:00:00+00:00,2026,PT23,7,False,4969397,4,109718,home,68077,1,1,played,40,7,False,90,0,1,0,0,0,0,,,,0,0
 1082596,Marquinhos,2026-08-18T16:00:00+00:00,2026,PT23,7,False,4969377,2,109718,home,67731,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1082596,Marquinhos,2026-08-11T10:00:00+00:00,2026,PT23,7,False,4969366,1,109718,away,75337,2,2,played,81,0,False,19,0,0,0,0,0,0,,,19,0,0
+1130185,Yuri Leles,2026-11-06T17:30:00+00:00,2026,A2,2,False,4907012,12,37024,home,11853,4,1,played,37,12,False,82,0,1,4,1,2,1,,,82,0,0
 1130185,Yuri Leles,2026-10-31T14:30:00+00:00,2026,A2,2,False,4907006,11,37024,away,7001,2,1,played,37,12,False,90,1,0,5,2,1,2,,,,0,0
 1130185,Yuri Leles,2026-10-24T13:30:00+00:00,2026,A2,2,False,4906995,10,37024,home,936,2,2,played,37,14,False,61,1,0,2,1,0,1,57,,61,0,0
 1130185,Yuri Leles,2026-10-17T15:30:00+00:00,2026,A2,2,False,4906986,9,37024,away,2157,1,4,played,37,0,False,45,0,0,0,0,0,0,,46,,0,0
@@ -889,9 +912,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1130185,Yuri Leles,2026-08-28T16:30:00+00:00,2026,A2,2,False,4906961,5,37024,away,3260,3,2,played,37,11,False,74,0,0,1,1,0,0,,,74,0,0
 1130185,Yuri Leles,2026-08-21T16:30:00+00:00,2026,A2,2,False,4906948,4,37024,home,4383,2,1,played,37,12,False,90,0,1,2,1,1,0,,,,0,0
 1130185,Yuri Leles,2026-08-16T08:30:00+00:00,2026,A2,2,False,4906940,3,37024,away,2364,2,2,played,37,0,False,8,0,0,0,0,0,0,,82,,0,0
-1130185,Yuri Leles,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,20,0,False,45,0,0,0,0,0,0,,46,,0,0
-1130185,Yuri Leles,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,20,0,False,24,0,0,0,0,0,0,,66,,0,0
-1130185,Yuri Leles,2026-08-07T16:30:00+00:00,2026,A2,2,False,4906932,2,37024,home,23158,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1417166,Jhuan,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,19,0,False,6,0,0,0,0,0,0,,84,,0,0
 1417166,Jhuan,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,19,0,False,24,0,0,0,0,0,0,,66,,0,0
 1193867,Pedro Lima,2026-09-06T11:00:00+00:00,2026,GB2,2,False,4911127,5,543,away,337,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -899,8 +919,22 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1193867,Pedro Lima,2026-08-29T11:30:00+00:00,2026,GB2,2,False,4911113,3,543,home,512,4,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1193867,Pedro Lima,2026-08-25T18:45:00+00:00,2026,CGB,14,False,5016478,3,543,away,1035,2,0,played,17,5,False,90,0,0,0,0,0,0,,,,0,0
 1193867,Pedro Lima,2026-08-22T14:00:00+00:00,2026,GB2,2,False,4911084,2,543,away,466,3,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-1193867,Pedro Lima,2026-08-14T19:00:00+00:00,2026,GB2,2,False,4911091,1,543,home,164,2,2,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
-1193867,Pedro Lima,2026-08-07T18:45:00+00:00,2026,CGB,14,False,4925993,2,543,home,1211,3,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+258039,Aurélio Buta,2026-10-06T12:00:00+00:00,2026,FS,11,True,5064593,38,23137,home,20901,1,0,injured,,,False,0,0,0,0,0,0,0,,,,47,0
+258039,Aurélio Buta,2026-10-03T14:00:00+00:00,2026,FS,11,True,5064592,37,23137,home,28553,1,0,injured,,,False,0,0,0,0,0,0,0,,,,47,0
+258039,Aurélio Buta,2026-09-30T14:00:00+00:00,2026,FS,11,True,5064591,36,23137,home,23139,2,0,injured,,,False,0,0,0,0,0,0,0,,,,47,0
+1219848,Igor Felisberto,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,13,5,False,66,0,0,0,0,0,0,,,66,0,0
+1219848,Igor Felisberto,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,13,0,False,25,1,0,0,0,0,0,,65,,0,0
+1219848,Igor Felisberto,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,13,5,False,5,0,0,0,0,0,0,,85,,0,0
+1383716,Djhordney,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,18,7,True,45,0,0,0,0,0,0,31,,46,0,0
+1383716,Djhordney,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
+1383716,Djhordney,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,18,7,False,31,0,0,0,0,0,0,,59,,0,0
+1362701,Pedro Ferreira,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1362701,Pedro Ferreira,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1362701,Pedro Ferreira,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1355277,Tetê,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,24,0,False,24,0,0,0,0,0,0,,66,,0,0
+1355277,Tetê,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+1355277,Tetê,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
+503343,Alan Franco,2026-11-08T01:00:00+00:00,2026,MEXA,1,False,5065318,16,7055,home,3711,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 503343,Alan Franco,2026-10-31T23:00:00+00:00,2026,MEXA,1,False,5065301,15,7055,away,4035,0,3,played,15,3,False,80,0,0,0,0,0,0,,,,0,0
 503343,Alan Franco,2026-10-25T03:10:00+00:00,2026,MEXA,1,False,5065308,14,7055,away,7633,1,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 503343,Alan Franco,2026-10-21T03:10:00+00:00,2026,MEXA,1,False,5065294,13,7055,home,4941,0,2,played,15,3,False,90,0,0,2,1,1,0,,,,0,0
@@ -913,6 +947,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 503343,Alan Franco,2026-08-30T03:10:00+00:00,2026,MEXA,1,False,4926761,6,7055,away,1403,0,0,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 503343,Alan Franco,2026-08-22T01:00:00+00:00,2026,MEXA,1,False,4926749,5,7055,home,6709,2,0,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 503343,Alan Franco,2026-08-16T03:10:00+00:00,2026,MEXA,1,False,4926731,4,7055,away,8590,1,2,played,15,3,False,80,0,0,0,0,0,0,,,80,0,0
+213841,Matheus Dória,2026-11-08T16:00:00+00:00,2026,TR2,2,False,4935968,14,3211,away,68377,1,1,played,21,3,True,90,0,0,0,0,0,0,,,,0,0
 213841,Matheus Dória,2026-10-31T16:00:00+00:00,2026,TR2,2,False,4935956,13,3211,away,48913,1,2,played,21,3,True,90,0,0,4,1,1,2,,,,0,0
 213841,Matheus Dória,2026-10-25T10:30:00+00:00,2026,TR2,2,False,4935947,12,3211,home,45269,3,2,played,21,3,True,90,0,0,1,1,0,0,,,,0,0
 213841,Matheus Dória,2026-10-18T13:00:00+00:00,2026,TR2,2,False,4935933,11,3211,away,3205,2,2,played,21,3,True,90,0,0,0,0,0,0,,,,0,0
@@ -925,28 +960,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 213841,Matheus Dória,2026-08-29T18:30:00+00:00,2026,TR2,2,False,4935867,4,3211,home,2381,2,1,played,21,3,True,90,0,0,4,0,4,0,,,,0,0
 213841,Matheus Dória,2026-08-23T18:30:00+00:00,2026,TR2,2,False,4935854,3,3211,away,518,2,1,played,21,3,True,90,0,0,1,0,1,0,,,,0,0
 213841,Matheus Dória,2026-08-17T18:30:00+00:00,2026,TR2,2,False,4935847,2,3211,home,3207,2,0,played,21,3,True,90,0,0,0,0,0,0,,,,0,0
-213841,Matheus Dória,2026-08-10T18:30:00+00:00,2026,TR2,2,False,4935831,1,3211,away,3209,2,2,played,21,3,True,90,0,0,0,0,0,0,,,,0,0
-1219848,Igor Felisberto,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,13,5,False,66,0,0,0,0,0,0,,,66,0,0
-1219848,Igor Felisberto,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,13,0,False,25,1,0,0,0,0,0,,65,,0,0
-1219848,Igor Felisberto,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,13,5,False,5,0,0,0,0,0,0,,85,,0,0
-1219848,Igor Felisberto,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1219848,Igor Felisberto,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1383716,Djhordney,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,18,7,True,45,0,0,0,0,0,0,31,,46,0,0
-1383716,Djhordney,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
-1383716,Djhordney,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,played,18,7,False,31,0,0,0,0,0,0,,59,,0,0
-1383716,Djhordney,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,8,7,False,45,0,0,0,0,0,0,,,46,0,0
-1383716,Djhordney,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,8,7,False,45,0,0,0,0,0,0,,,46,0,0
-1362701,Pedro Ferreira,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1362701,Pedro Ferreira,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1362701,Pedro Ferreira,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1362701,Pedro Ferreira,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,11,11,False,84,0,1,0,0,0,0,,,84,0,0
-1362701,Pedro Ferreira,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,11,11,False,66,0,0,0,0,0,0,,,66,0,0
-1355277,Tetê,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,24,0,False,24,0,0,0,0,0,0,,66,,0,0
-1355277,Tetê,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
-1355277,Tetê,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
-1355277,Tetê,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1355277,Tetê,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-950393,Viery,2026-11-02T17:30:00+00:00,2026,IT1,1,False,4893441,10,430,away,6574,2,2,played,33,3,False,68,0,0,2,0,2,0,,,,0,0
+950393,Viery,2026-11-08T19:45:00+00:00,2026,IT1,1,False,4893444,11,430,home,506,2,2,played,33,3,False,90,0,0,1,0,1,0,,,,0,0
+950393,Viery,2026-11-02T17:30:00+00:00,2026,IT1,1,False,4893441,10,430,away,6574,4,2,played,33,3,False,90,0,0,2,0,2,0,,,,0,0
 950393,Viery,2026-10-29T19:45:00+00:00,2026,IT1,1,False,4893423,9,430,home,800,2,2,played,33,3,False,90,0,0,0,0,0,0,30,,,0,0
 950393,Viery,2026-10-25T11:30:00+00:00,2026,IT1,1,False,4893417,8,430,away,46,1,2,played,33,3,False,39,0,0,0,0,0,0,70,51,,0,0
 950393,Viery,2026-10-18T13:00:00+00:00,2026,IT1,1,False,4893404,7,430,home,1047,1,3,played,33,4,False,64,0,0,1,1,0,0,,,64,0,0
@@ -957,20 +972,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 950393,Viery,2026-09-05T13:00:00+00:00,2026,IT1,1,False,4893365,3,430,home,416,1,2,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 950393,Viery,2026-08-29T16:30:00+00:00,2026,IT1,1,False,4893355,2,430,home,8970,0,3,played,33,3,False,29,0,0,0,0,0,0,,61,,0,0
 950393,Viery,2026-08-24T18:45:00+00:00,2026,IT1,1,False,4893349,1,430,away,12,0,4,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
-950393,Viery,2026-08-14T19:15:00+00:00,2026,CIT,8,False,4904469,2,430,home,4171,4,1,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 1253927,Pedro Gabriel,2026-10-04T09:00:00+00:00,2026,FS,11,True,5076152,50,7658,away,26092,4,0,played,26,0,False,15,0,1,0,0,0,0,,75,,0,0
 1253927,Pedro Gabriel,2026-10-01T16:00:00+00:00,2026,FS,11,True,5076151,50,7658,away,11946,2,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 1253927,Pedro Gabriel,2026-09-28T16:00:00+00:00,2026,FS,11,True,5052823,2,7658,away,28076,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1253927,Pedro Gabriel,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,6,4,False,60,0,0,0,0,0,0,0,,60,0,0
-1253927,Pedro Gabriel,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,6,4,False,90,0,0,0,0,0,0,,,,0,0
-1355268,Luis Eduardo,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,7658,away,29702,2,0,played,14,3,False,45,0,0,0,0,0,0,,,46,0,0
-1355268,Luis Eduardo,2026-08-09T14:00:00+00:00,2026,FS,11,True,5076153,45,7658,away,29702,2,0,played,14,0,False,45,0,0,0,0,0,0,,46,,0,0
 723853,Erick Noriega,2026-10-06T23:45:00+00:00,2026,FS,11,True,5052883,4,3584,away,3816,0,2,played,8,3,False,90,0,0,1,0,1,0,51,,,0,0
 723853,Erick Noriega,2026-10-03T18:00:00+00:00,2026,FS,11,True,5052851,3,3584,away,3510,0,2,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 723853,Erick Noriega,2026-09-30T02:30:00+00:00,2026,FS,11,True,5052832,2,3584,away,6303,1,1,played,8,3,False,90,0,0,0,0,0,0,,,,0,0
 723853,Erick Noriega,2026-09-26T20:30:00+00:00,2026,FS,11,True,5004443,1,3584,away,3505,1,4,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 436385,Mathías Villasanti,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3581,away,3816,1,0,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
 436385,Mathías Villasanti,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,played,20,0,False,45,0,0,0,0,0,0,,46,,0,0
+1024605,André Henrique,2026-11-07T16:00:00+00:00,2026,TR1,1,False,4934440,11,1467,home,6890,1,2,played,7,14,False,24,0,0,1,0,0,1,,66,,0,0
 1024605,André Henrique,2026-10-31T16:00:00+00:00,2026,TR1,1,False,4934118,10,1467,away,36,2,1,played,7,14,False,25,1,0,1,1,0,0,,65,,0,0
 1024605,André Henrique,2026-10-25T16:00:00+00:00,2026,TR1,1,False,4934089,9,1467,home,37951,2,0,played,7,14,False,83,0,0,2,2,0,0,,,83,0,0
 1024605,André Henrique,2026-10-18T13:00:00+00:00,2026,TR1,1,False,4934101,8,1467,away,120,2,1,played,7,14,False,83,0,0,2,0,1,1,76,,83,0,0
@@ -983,10 +994,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1024605,André Henrique,2026-08-17T18:30:00+00:00,2026,TR1,1,False,4932846,1,1467,away,152,3,3,played,7,14,False,61,0,0,1,0,0,1,,,61,0,0
 448466,Jovane Cabral,2026-09-29T16:00:00+00:00,2026,AFCQ,19,True,5047023,4,4311,home,3855,1,2,played,7,0,False,28,0,0,1,0,0,1,,62,,0,0
 448466,Jovane Cabral,2026-09-25T19:00:00+00:00,2026,AFCQ,19,True,5046893,3,4311,away,3674,1,3,played,7,0,False,23,0,0,0,0,0,0,,67,,0,0
+249730,Guillermo Maripán,2026-10-07T02:30:00+00:00,2026,FS,11,True,5052882,4,3700,away,6303,2,0,injured,,,False,0,0,0,0,0,0,0,,,,299,0
+249730,Guillermo Maripán,2026-09-30T00:00:00+00:00,2026,FS,11,True,5004444,2,3700,away,3505,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+249730,Guillermo Maripán,2026-09-26T23:00:00+00:00,2026,FS,11,True,5046184,10,3700,away,3510,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 468174,Félix Torres,2026-10-05T06:30:00+00:00,2026,FS,11,True,5072320,2,5750,neutral,3577,6,7,played,2,3,True,90,0,0,0,0,0,0,,,,0,0
 468174,Félix Torres,2026-10-01T10:10:00+00:00,2026,FS,11,True,5009517,3,5750,away,3435,4,5,played,2,0,False,45,0,0,0,0,0,0,,46,,0,0
 468174,Félix Torres,2026-09-24T11:00:00+00:00,2026,FS,11,True,5050972,5,5750,away,3589,0,3,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-251813,Niclas Eliasson,2026-08-12T17:00:00+00:00,2026,GRSC,9,False,4884159,1,2441,neutral,653,6,7,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1095552,Gustavo Prado,2026-11-08T16:00:00+00:00,2026,UKR1,1,False,4974377,12,338,away,660,0,0,played,47,11,False,2,0,0,0,0,0,0,,88,,0,0
+1095552,Gustavo Prado,2026-11-03T10:00:00+00:00,2026,UA2P,7,False,5094035,11,21218,away,12516,2,1,played,22,0,False,89,0,0,0,0,0,0,24,,89,0,0
 1095552,Gustavo Prado,2026-11-02T11:00:00+00:00,2026,UKR1,1,False,4974389,11,338,away,3592,2,0,in squad,47,,False,0,0,0,0,0,0,0,,,,0,0
 1095552,Gustavo Prado,2026-10-27T16:00:00+00:00,2026,UKRP,8,False,5055602,3,338,away,660,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1095552,Gustavo Prado,2026-10-24T09:00:00+00:00,2026,UA2P,7,False,5078418,10,21218,home,143052,5,1,played,22,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1004,6 +1019,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 234523,Antonio Sanabria,2026-10-03T00:00:00+00:00,2026,FS,11,True,5052849,2,3581,away,3816,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 234523,Antonio Sanabria,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,3581,away,5233,2,0,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 234523,Antonio Sanabria,2026-08-17T18:45:00+00:00,2026,CIT,8,False,4904460,2,2239,home,1038,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1223828,Luís Miguel,2026-11-08T20:00:00+00:00,2026,PT3A,3,False,4944983,9,3348,away,2995,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223828,Luís Miguel,2026-10-31T15:00:00+00:00,2026,PT3A,3,False,4944974,8,3348,home,2829,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223828,Luís Miguel,2026-10-24T15:00:00+00:00,2026,PT3A,3,False,4944964,7,3348,away,5222,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1223828,Luís Miguel,2026-10-11T15:30:00+00:00,2026,PT3A,3,False,4944954,6,3348,away,3326,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1018,7 +1034,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 462070,Nicolás Fonseca,2026-08-29T01:00:00+00:00,2026,MEXA,1,False,4926756,6,4941,away,6709,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 462070,Nicolás Fonseca,2026-08-22T01:00:00+00:00,2026,MEXA,1,False,4926748,5,4941,home,2407,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 462070,Nicolás Fonseca,2026-08-18T01:00:00+00:00,2026,MEXA,1,False,4926736,4,4941,away,1146,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1027788,Enzo Vagner,2026-10-31T19:45:00+00:00,2026,FR1,1,False,4894980,9,1164,away,1095,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1027788,Enzo Vagner,2026-11-08T16:15:00+00:00,2026,FR1,1,False,4894985,10,1164,home,162,1,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1027788,Enzo Vagner,2026-11-07T17:00:00+00:00,2026,FR5B,5,False,4966853,7,9802,away,7722,2,3,played,16,0,False,28,0,0,0,0,0,0,,62,,0,0
+1027788,Enzo Vagner,2026-10-31T19:45:00+00:00,2026,FR1,1,False,4894980,9,1164,away,1095,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1027788,Enzo Vagner,2026-10-31T17:00:00+00:00,2026,FR5B,5,False,4966846,6,9802,home,24218,1,1,played,9,14,False,72,0,0,0,0,0,0,,,72,0,0
 1027788,Enzo Vagner,2026-10-25T16:15:00+00:00,2026,FR1,1,False,4894964,8,1164,away,290,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1027788,Enzo Vagner,2026-10-17T16:00:00+00:00,2026,FR5B,5,False,4966837,5,9802,away,78185,0,0,played,9,14,False,76,0,0,0,0,0,0,75,,76,0,0
 1027788,Enzo Vagner,2026-10-16T18:45:00+00:00,2026,FR1,1,False,4894956,7,1164,home,415,0,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1032,6 +1051,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1027788,Enzo Vagner,2026-08-30T15:15:00+00:00,2026,FR1,1,False,4894916,2,1164,away,273,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1027788,Enzo Vagner,2026-08-29T16:00:00+00:00,2026,FR5B,5,False,4966812,1,9802,away,53254,1,0,played,9,14,False,83,0,0,0,0,0,0,,,83,0,0
 1027788,Enzo Vagner,2026-08-22T18:45:00+00:00,2026,FR1,1,False,4894902,1,1164,home,3911,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+445101,Rodrigues,2026-11-08T15:00:00+00:00,2026,GR1,1,False,4973580,10,9,away,6676,1,1,played,97,3,False,90,0,0,0,0,0,0,38,,,0,0
 445101,Rodrigues,2026-11-02T17:30:00+00:00,2026,GR1,1,False,4973573,9,9,home,47,1,1,played,97,3,False,90,0,0,1,0,1,0,,,,0,0
 445101,Rodrigues,2026-10-28T13:00:00+00:00,2026,GRP,8,False,5033916,4,9,away,40445,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 445101,Rodrigues,2026-10-25T14:00:00+00:00,2026,GR1,1,False,4973569,8,9,away,683,0,5,played,97,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -1045,6 +1065,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 445101,Rodrigues,2026-08-29T18:30:00+00:00,2026,GR1,1,False,4973515,2,9,away,6418,0,2,played,97,3,False,90,0,0,0,0,0,0,,,,0,0
 445101,Rodrigues,2026-08-22T17:00:00+00:00,2026,GR1,1,False,4973517,1,9,home,605,2,3,played,97,3,False,80,0,0,0,0,0,0,44,,80,0,0
 445101,Rodrigues,2026-08-19T14:15:00+00:00,2026,GRP,8,False,4983175,2,9,home,6418,4,2,played,97,3,False,90,0,0,0,0,0,0,,,,0,0
+373193,Yuri Lara,2026-11-08T05:00:00+00:00,2026,JAP2,2,False,4903428,16,937,home,8457,1,1,played,15,3,False,90,1,0,0,0,0,0,90,,,0,0
 373193,Yuri Lara,2026-11-03T05:00:00+00:00,2026,JAP2,2,False,4903117,15,937,away,25716,2,1,played,15,3,False,87,0,0,0,0,0,0,,,87,0,0
 373193,Yuri Lara,2026-10-31T05:00:00+00:00,2026,JAP2,2,False,4903437,14,937,home,22177,2,0,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 373193,Yuri Lara,2026-10-25T06:00:00+00:00,2026,JAP2,2,False,4903383,13,937,away,53668,1,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -1062,9 +1083,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 373193,Yuri Lara,2026-08-29T09:00:00+00:00,2026,JAP2,2,False,4903404,4,937,away,29307,3,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 373193,Yuri Lara,2026-08-22T10:00:00+00:00,2026,JAP2,2,False,4903287,3,937,home,17832,2,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 373193,Yuri Lara,2026-08-16T09:00:00+00:00,2026,JAP2,2,False,4903091,2,937,away,943,1,3,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
-373193,Yuri Lara,2026-08-08T10:00:00+00:00,2026,JAP2,2,False,4903126,1,937,home,23580,1,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 490760,Tchamba,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047016,4,3434,away,3702,1,1,played,12,3,False,75,0,0,1,1,0,0,,,75,0,0
 490760,Tchamba,2026-09-24T19:00:00+00:00,2026,AFCQ,19,True,5046885,3,3434,home,16430,3,1,played,12,3,False,90,0,0,1,0,1,0,,,,0,0
+415843,Walter Clar,2026-11-07T03:00:00+00:00,2026,MEXA,1,False,5065302,16,6709,home,1403,0,2,played,37,9,False,75,0,0,0,0,0,0,,,75,0,0
 415843,Walter Clar,2026-11-01T01:07:00+00:00,2026,MEXA,1,False,5065309,15,6709,away,6711,2,4,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 415843,Walter Clar,2026-10-24T03:00:00+00:00,2026,MEXA,1,False,5065289,14,6709,home,40188,0,1,played,37,9,False,20,0,0,3,2,1,0,,70,,0,0
 415843,Walter Clar,2026-10-21T01:00:00+00:00,2026,MEXA,1,False,5065286,13,6709,away,49283,1,0,played,37,9,False,11,0,0,0,0,0,0,,79,,0,0
@@ -1078,7 +1099,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 415843,Walter Clar,2026-08-22T01:00:00+00:00,2026,MEXA,1,False,4926749,5,6709,away,7055,0,2,played,37,4,False,58,0,0,0,0,0,0,,,58,0,0
 415843,Walter Clar,2026-08-15T23:00:00+00:00,2026,MEXA,1,False,4926729,4,6709,home,1804,0,0,played,37,9,False,61,0,0,0,0,0,0,,29,,0,0
 931677,Miguel Carvalho,2026-08-17T16:15:00+00:00,2026,SAKC,8,False,4971026,1,26069,away,40079,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-931677,Miguel Carvalho,2026-08-13T18:00:00+00:00,2026,SA1,1,False,4976886,1,26069,away,9840,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+740378,Wermeson,2026-11-08T11:00:00+00:00,2026,PO2,2,False,4939102,10,7378,away,10331,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+740378,Wermeson,2026-11-03T15:00:00+00:00,2026,PT23,7,False,4969465,11,67731,away,91910,2,1,played,11,0,False,90,1,0,0,0,0,0,,,,0,0
 740378,Wermeson,2026-10-31T14:00:00+00:00,2026,PO2,2,False,4939138,9,7378,home,2432,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 740378,Wermeson,2026-10-27T11:00:00+00:00,2026,PT23,7,False,4969457,10,67731,home,67837,3,2,played,11,0,False,82,1,0,0,0,0,0,,,82,0,0
 740378,Wermeson,2026-10-24T10:00:00+00:00,2026,PO2,2,False,4938932,8,7378,away,10949,0,3,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1098,4 +1120,3 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 740378,Wermeson,2026-08-21T17:00:00+00:00,2026,PO2,2,False,4938943,3,7378,away,10330,1,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 740378,Wermeson,2026-08-18T16:00:00+00:00,2026,PT23,7,False,4969377,2,67731,away,109718,1,1,played,10,0,False,90,0,0,0,0,0,0,,,,0,0
 740378,Wermeson,2026-08-16T10:00:00+00:00,2026,PO2,2,False,4938958,2,7378,home,6912,2,0,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
-740378,Wermeson,2026-08-08T13:00:00+00:00,2026,PO2,2,False,4938922,1,7378,away,3327,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

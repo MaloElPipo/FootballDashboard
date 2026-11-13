@@ -1,5 +1,5 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
-340864,Jaume Grau,2026,ACLE,27190,False,3,3,0,241,1,2,4,1,0
+340864,Jaume Grau,2026,ACLE,27190,False,4,4,0,317,1,2,5,1,1
 589614,Zihao Huang,2026,FS,47233,True,3,0,0,0,0,0,0,0,0
 1134838,Weijie Mao,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
 607991,Zhuoyi Lü,2026,FS,47233,True,3,0,0,0,0,0,0,0,0
@@ -9,7 +9,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 224161,Junling Yan,2026,ACLE,27190,False,4,4,0,360,0,0,0,0,0
 363795,Wei Chen,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1244273,Zhiliang Li,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
-335744,Miguel Campos,2026,ACLE,27190,False,3,3,0,249,1,0,3,2,1
+335744,Miguel Campos,2026,ACLE,27190,False,4,4,0,251,1,0,3,2,1
 1430644,Yuhang Zhang,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1012988,Alex Yang,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
 1012988,Alex Yang,2026,ACLE,27190,False,4,3,0,270,0,1,5,0,0
@@ -41,7 +41,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1382898,Ruilong Li,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1521696,Zhezhe Cao,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 546292,Léo Souza,2026,ACLE,27190,False,4,4,0,173,2,1,7,3,0
-562734,Prince Ampem,2026,ACLE,27190,False,3,3,0,243,5,0,8,6,0
+562734,Prince Ampem,2026,ACLE,27190,False,4,4,0,319,6,1,10,7,0
 523850,Gabrielzinho,2026,ACLE,27190,False,4,0,4,0,0,0,0,0,0
 140436,Lei Wu,2026,ACLE,27190,False,4,3,0,187,1,1,6,2,0
 589611,Zhurun Liu,2026,ACLE,27190,False,4,4,0,97,0,0,1,0,0
@@ -92,8 +92,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 148891,Xi Wu,2026,ACL2,3183,False,4,1,0,74,0,0,1,0,0
 1267248,Bin Zhang,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
 1396692,Shilin Wang,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
-606849,Makhtar Gueye,2026,ACL2,3183,False,2,0,2,0,0,0,0,0,0
-702911,Luis Asué,2026,ACL2,3183,False,3,3,0,182,0,0,6,2,0
+606849,Makhtar Gueye,2026,ACL2,3183,False,4,0,4,0,0,0,0,0,0
+702911,Luis Asué,2026,AFCQ,13485,True,3,0,0,0,0,0,0,0,0
+702911,Luis Asué,2026,ACL2,3183,False,4,4,0,272,0,0,10,4,1
 289802,Rafael Ratão,2026,ACL2,3183,False,4,3,0,232,1,0,10,5,0
 1125732,Chengyu Liu,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
 1125732,Chengyu Liu,2026,ACL2,3183,False,4,2,0,116,0,0,4,3,0
@@ -112,7 +113,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147782,Sen Hou,2026,ACLE,3176,False,4,4,0,360,0,0,0,0,0
 946737,Nureli Abbas,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 966946,Shaoziyang Liu,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
-340521,Gui Ramos,2026,ACLE,3176,False,3,3,0,270,0,0,3,0,1
+340521,Gui Ramos,2026,ACLE,3176,False,4,4,0,328,0,0,3,0,1
 160222,Uros Spajic,2026,ACLE,3176,False,4,2,1,180,0,1,0,0,0
 542228,Tze-Nam Yue,2026,ACLE,3176,False,4,4,0,225,0,0,0,0,0
 468283,Shaocong Wu,2026,ACLE,3176,False,4,0,4,0,0,0,0,0,0
@@ -127,7 +128,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1569203,Zixiang Luo,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 329013,Serginho,2026,ACLE,3176,False,4,4,0,171,0,0,5,0,1
 649017,Boubacar Konté,2026,ACLE,3176,False,4,3,0,270,0,0,2,1,1
-147359,Jeremy Dudziak,2026,ACLE,3176,False,3,3,0,208,2,0,4,2,0
+147359,Jeremy Dudziak,2026,U19Q,5710,True,3,0,0,0,0,0,0,0,0
+147359,Jeremy Dudziak,2026,FS,5710,True,3,0,0,0,0,0,0,0,0
+147359,Jeremy Dudziak,2026,ACLE,3176,False,4,4,0,271,2,1,4,2,0
 539224,Dawhan,2026,ACLE,3176,False,4,4,0,360,2,0,4,2,0
 150163,Xizhe Zhang,2026,ACLE,3176,False,4,4,0,257,1,2,2,1,0
 911064,Yu Wang,2026,ACLE,3176,False,4,1,0,8,0,0,0,0,1
@@ -139,7 +142,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1484728,Haoran Zhang,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1569204,Junze Liu,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1569205,Kangyue Chen,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
-435208,Béni Nkololo,2026,ACLE,3176,False,3,3,0,262,0,0,7,1,0
+435208,Béni Nkololo,2026,ACLE,3176,False,4,4,0,339,0,0,7,1,0
 292398,Fabio Abreu,2026,ACLE,3176,False,4,2,2,38,1,0,2,1,0
 264429,Yuning Zhang,2026,ACLE,3176,False,4,2,0,51,0,0,0,0,0
 247459,Chadrac Akolo,2026,ACLE,3176,False,4,4,0,223,2,0,9,4,0
@@ -178,10 +181,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 527716,Jiahui Huang,2026,FS,5598,True,4,4,0,162,0,0,0,0,0
 228326,Shangyuan Wang,2026,FS,5598,True,4,4,0,260,0,1,2,0,0
 331498,Jordi Mboula,2026,GRP,30120,False,4,4,0,235,1,0,0,0,0
-331498,Jordi Mboula,2026,GR1,30120,False,9,5,0,87,1,1,2,1,0
+331498,Jordi Mboula,2026,GR1,30120,False,10,6,0,149,1,1,4,1,0
 317154,Yihao Zhong,2026,FS,5598,True,4,2,0,55,0,0,0,0,2
 788152,Hao Li,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
 1299727,Gengrui Wang,2026,FS,5598,True,4,2,0,68,0,1,0,0,0
 587421,Longhai He,2026,FS,47233,True,3,0,0,0,0,0,0,0,0
 1515779,Zhicheng Liu,2026,FS,26944,True,4,3,0,123,0,0,0,0,0
 337995,Junshuai Liu,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
+1281957,Zhaolei Kuang,2026,FS,26944,True,4,0,0,0,0,0,0,0,0

@@ -1,15 +1,15 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
 1118893,Benjamin Dunbar,25580,Melbourne City FC,Central Midfield,20,Australia,42,4,3,7,62,14,465,0,1,3,3,3,3,2021,2024
-1373902,Daniel Lazarevski,7006,Melbourne Victory,Centre-Forward,20,Australia,31,3,3,6,70,29,1731,6,3,1,1,2,1,2021,2025
-1064377,Paul Okon-Engstler,8054,Sydney FC,Defensive Midfield,21,Australia,24,5,5,17,183,117,8397,1,7,20,6,20,35,2022,2026
+1373902,Daniel Lazarevski,7006,Melbourne Victory,Centre-Forward,20,Australia,31,3,3,6,71,29,1731,6,3,1,1,2,1,2021,2025
+1064377,Paul Okon-Engstler,8054,Sydney FC,Defensive Midfield,21,Australia,24,5,5,17,192,118,8487,1,7,20,6,20,35,2022,2026
 1338239,Logan Sambrook,6954,Central Coast Mariners,Attacking Midfield,18,Australia,39,1,1,3,36,23,1102,0,0,1,0,1,4,2024,2024
-149579,Elbasan Rashani,25580,Melbourne City FC,Left Winger,33,Kosovo,11,18,8,25,734,435,26425,67,55,290,98,58,46,2009,2026
+149579,Elbasan Rashani,25580,Melbourne City FC,Left Winger,33,Kosovo,11,18,8,25,735,435,26425,67,55,290,98,58,46,2009,2026
 1150896,Lachlan Middleton,8054,Sydney FC,Central Midfield,20,Australia,27,5,2,6,176,85,6636,3,2,5,2,7,1,2021,2025
-1225803,Luke Brooke-Smith,8445,Wellington Phoenix,Attacking Midfield,18,New Zealand,29,4,4,11,123,71,3177,9,4,33,10,5,9,2023,2026
+1225803,Luke Brooke-Smith,8445,Wellington Phoenix,Attacking Midfield,18,New Zealand,29,4,4,11,125,71,3177,9,4,33,10,5,9,2023,2026
 1110883,Jesse Cameron,36100,Western Sydney Wanderers,Right-Back,20,Australia,41,4,3,7,180,100,7339,4,4,5,2,16,4,2022,2025
-1255623,Khoa Ngo,970,Perth Glory,Left Winger,20,Vietnam,0,4,2,7,78,53,2146,5,4,1,1,4,3,2023,2026
-888140,Nishan Velupillay,7006,Melbourne Victory,Left Winger,25,Australia,17,7,2,12,218,170,8547,32,16,213,82,7,22,2020,2026
-897306,James Mitchell,118373,Auckland FC,Central Midfield,20,New Zealand,0,6,5,7,172,88,5837,2,1,0,0,14,0,2021,2026
+1255623,Khoa Ngo,970,Perth Glory,Left Winger,20,Vietnam,0,4,2,8,80,55,2268,5,4,1,1,4,5,2023,2026
+888140,Nishan Velupillay,7006,Melbourne Victory,Left Winger,25,Australia,17,7,2,12,219,171,8619,32,16,213,82,7,22,2020,2026
+897306,James Mitchell,118373,Auckland FC,Central Midfield,20,New Zealand,0,6,5,7,172,89,5927,2,1,0,0,14,0,2021,2026
 1142610,Blake Callinan,118373,Auckland FC,Goalkeeper,20,New Zealand,40,3,3,6,107,24,2160,0,0,0,0,2,0,2023,2025
 1375572,Eli Jones,118373,Auckland FC,Goalkeeper,19,New Zealand,50,3,2,9,120,28,2487,0,0,0,0,2,1,2024,2026
 835325,Aidan Carey,118373,Auckland FC,Centre-Back,25,New Zealand,0,6,3,11,234,120,8352,7,2,0,0,11,0,2020,2025
@@ -21,12 +21,12 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 171721,Adam Taggart,970,Perth Glory,Centre-Forward,33,Australia,22,17,9,29,740,370,24993,151,20,647,247,25,35,2010,2026
 1104715,Zach De Jesus,8054,Sydney FC,Right-Back,20,Australia,21,6,3,11,238,93,5508,1,4,9,2,11,11,2021,2026
 867764,Aaron Gurd,8054,Sydney FC,Centre-Back,24,Thailand,0,7,4,9,203,80,5937,1,2,15,5,10,0,2019,2025
-1104718,Mitch Glasson,8054,Sydney FC,Centre-Forward,20,Australia,19,4,4,14,207,120,6089,30,6,59,20,15,9,2022,2025
-44068,Juan Mata,7006,Melbourne Victory,Attacking Midfield,38,Spain,64,21,8,33,1152,771,50704,168,182,150,61,54,72,2005,2025
+1104718,Mitch Glasson,8054,Sydney FC,Centre-Forward,20,Australia,19,4,4,14,208,120,6089,30,6,59,20,15,9,2022,2025
+44068,Juan Mata,7006,Melbourne Victory,Attacking Midfield,38,Spain,64,21,8,33,1150,771,50704,168,182,150,61,54,72,2005,2025
 1273785,Malual Nichola,875,Adelaide United,Centre-Back,18,Australia,78,4,2,8,71,6,288,0,0,0,0,1,4,2023,2026
-1234191,Lachie Charles,25580,Melbourne City FC,Goalkeeper,19,Australia,42,3,4,8,80,21,1878,0,0,0,0,0,0,2023,2025
-983578,Patrick Beach,25580,Melbourne City FC,Goalkeeper,21,Australia,1,7,4,12,195,104,9449,0,0,0,0,4,18,2020,2026
-1066861,Arion Sulemani,970,Perth Glory,Centre-Forward,21,Australia,17,5,3,7,140,28,1253,4,2,18,7,0,5,2021,2025
+1234191,Lachie Charles,25580,Melbourne City FC,Goalkeeper,19,Australia,42,3,4,8,81,21,1878,0,0,0,0,0,0,2023,2025
+983578,Patrick Beach,25580,Melbourne City FC,Goalkeeper,21,Australia,1,7,4,12,197,104,9449,0,0,0,0,4,18,2020,2026
+1066861,Arion Sulemani,970,Perth Glory,Centre-Forward,21,Australia,17,5,3,7,141,28,1253,4,2,18,7,0,5,2021,2025
 1064381,James Nieuwenhuizen,25580,Melbourne City FC,Goalkeeper,22,Australia,40,8,2,11,237,16,1395,0,0,0,0,1,2,2019,2026
 734488,Dakota Ochsenham,25580,Melbourne City FC,Goalkeeper,25,Australia,0,5,3,4,84,3,300,0,0,0,0,0,0,2019,2025
 556038,Nathaniel Atkinson,25580,Melbourne City FC,Right-Back,27,Australia,13,10,2,20,368,235,16975,8,17,125,37,49,20,2017,2026
@@ -39,9 +39,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1275360,Mathew Baker,25580,Melbourne City FC,Left-Back,17,Indonesia,36,4,2,11,109,43,3478,1,3,10,2,4,28,2023,2026
 60599,Samuel Souprayen,25580,Melbourne City FC,Centre-Back,36,France,26,19,8,24,778,483,40816,8,11,31,11,84,9,2007,2025
 1234223,Jayden Necovski,25580,Melbourne City FC,Centre-Back,18,Australia,34,4,3,8,112,20,1613,3,1,1,0,3,6,2023,2026
-691326,Kai Trewin,25580,Melbourne City FC,Defensive Midfield,24,Australia,0,8,3,13,270,196,16214,5,3,113,28,20,16,2018,2025
+691326,Kai Trewin,25580,Melbourne City FC,Defensive Midfield,24,Australia,0,8,3,13,275,196,16214,5,3,113,28,20,16,2018,2025
 1102336,Ryan Kalms,25580,Melbourne City FC,Centre-Back,20,Australia,26,5,3,8,78,25,2059,1,0,0,0,1,2,2022,2026
-616431,Ryan Teague,25580,Melbourne City FC,Defensive Midfield,23,Australia,8,10,7,25,285,186,13480,8,8,69,15,17,33,2017,2026
+616431,Ryan Teague,25580,Melbourne City FC,Defensive Midfield,23,Australia,8,10,7,25,287,186,13480,8,8,69,15,17,33,2017,2026
 1234222,Kavian Rahmani,25580,Melbourne City FC,Attacking Midfield,19,Australia,24,4,3,7,82,62,3133,2,4,40,12,5,2,2023,2026
 1111965,Zane Schreiber,5551,Newcastle United Jets,Defensive Midfield,21,Australia,6,6,4,9,152,94,4750,3,2,28,8,18,8,2021,2026
 186798,Andreas Kuen,25580,Melbourne City FC,Central Midfield,30,Austria,30,16,11,20,686,342,22495,32,51,164,50,45,8,2010,2025
@@ -49,9 +49,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1066862,Emin Durakovic,7831,Brisbane Roar,Central Midfield,21,Australia,14,6,3,7,153,43,1633,1,3,17,4,1,3,2021,2026
 1273787,Besian Kutleshi,25580,Melbourne City FC,Defensive Midfield,17,Australia,14,4,3,9,123,43,2530,1,1,18,5,6,15,2023,2026
 1289575,Lawrence Wong,25580,Melbourne City FC,Attacking Midfield,19,Australia,41,4,2,7,110,46,1907,6,4,23,6,4,7,2023,2026
-1099720,Marcus Younis,25580,Melbourne City FC,Right Winger,19,Australia,28,5,6,14,184,131,7903,37,24,181,65,24,12,2022,2026
+1099720,Marcus Younis,25580,Melbourne City FC,Right Winger,19,Australia,28,5,6,14,185,131,7903,37,24,181,65,24,12,2022,2026
 1432379,Angus Mackintosh,25580,Melbourne City FC,Central Midfield,18,Australia,0,2,2,5,64,22,1702,1,1,0,0,5,0,2024,2025
-399997,Daniel Arzani,25580,Melbourne City FC,Left Winger,26,Australia,14,14,10,33,528,198,10876,24,33,209,79,32,23,2013,2026
+399997,Daniel Arzani,25580,Melbourne City FC,Left Winger,26,Australia,14,14,10,33,543,200,10883,24,34,210,80,32,23,2013,2026
 899868,Max Caputo,25580,Melbourne City FC,Centre-Forward,21,Australia,9,7,1,9,217,98,5047,25,6,146,67,8,9,2020,2026
 1183854,Medin Memeti,25580,Melbourne City FC,Centre-Forward,19,Australia,23,5,3,10,154,76,4203,28,8,83,42,3,14,2022,2026
 126214,Mathew Leckie,25580,Melbourne City FC,Left Winger,35,Australia,7,19,9,21,848,478,32127,85,56,228,84,62,84,2007,2026
@@ -72,49 +72,49 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 616430,Joel King,7831,Brisbane Roar,Left-Back,26,Australia,16,10,4,16,329,192,14029,5,14,41,10,20,9,2017,2026
 108108,Rhyan Grant,8054,Sydney FC,Right-Back,35,Australia,23,19,1,14,664,435,35930,20,37,163,47,75,27,2008,2026
 1291441,Ethan Dyer,8054,Sydney FC,Centre-Back,17,New Zealand,28,4,2,6,63,34,2233,1,1,0,0,2,13,2023,2026
-871655,Piero Quispe,8054,Sydney FC,Attacking Midfield,23,Peru,7,7,3,17,274,212,13853,19,18,178,67,19,13,2020,2026
+871655,Piero Quispe,8054,Sydney FC,Attacking Midfield,23,Peru,7,7,3,17,276,214,13898,19,18,179,67,19,13,2020,2026
 1226710,Tyler Williams,8054,Sydney FC,Centre-Back,18,Australia,34,4,2,7,159,88,6364,0,0,2,0,15,11,2023,2026
 1109205,Tiago Quintal,8054,Sydney FC,Attacking Midfield,20,Australia,20,6,2,13,182,124,6384,26,12,80,27,10,31,2021,2026
-296787,Takahiro Sekine,8054,Sydney FC,Left Midfield,31,Japan,14,15,5,20,617,446,27676,44,55,279,81,48,3,2012,2026
+296787,Takahiro Sekine,8054,Sydney FC,Left Midfield,31,Japan,14,15,5,20,618,447,27759,44,55,280,81,48,3,2012,2026
 1158288,Wataru Kamijo,8054,Sydney FC,Central Midfield,20,Australia,8,5,2,6,167,77,4626,2,3,15,2,13,1,2022,2026
 1075719,Rhys Youlley,8054,Sydney FC,Central Midfield,21,Australia,36,6,5,15,219,102,7012,6,4,71,24,13,19,2021,2026
-209686,Ahmet Arslan,8054,Sydney FC,Attacking Midfield,31,Türkiye,70,15,14,18,591,403,28451,163,78,310,114,56,0,2012,2026
+209686,Ahmet Arslan,8054,Sydney FC,Attacking Midfield,31,Türkiye,70,15,14,18,592,404,28541,163,78,310,114,56,0,2012,2026
 890186,Corey Hollman,8054,Sydney FC,Defensive Midfield,21,Australia,6,6,2,10,160,78,4677,1,4,28,5,4,2,2020,2025
 1158702,Joseph Lacey,8054,Sydney FC,Central Midfield,19,Wales,29,5,2,8,169,58,3481,5,6,9,2,12,5,2022,2026
 1226706,Nickolas Alfaro,8054,Sydney FC,Central Midfield,17,Australia,0,3,2,9,126,45,1803,2,1,1,1,3,14,2023,2025
 287167,Joe Lolley,5551,Newcastle United Jets,Right Winger,34,England,11,14,6,13,604,416,26821,84,69,747,239,18,0,2013,2026
-547924,Apostolos Stamatelopoulos,71085,Macarthur FC,Centre-Forward,27,Australia,16,11,8,14,327,169,9867,45,10,220,90,22,5,2016,2026
+547924,Apostolos Stamatelopoulos,71085,Macarthur FC,Centre-Forward,27,Australia,16,11,8,14,328,170,9957,46,10,222,92,22,5,2016,2026
 394285,Víctor Campuzano,8054,Sydney FC,Centre-Forward,29,Spain,0,12,5,13,453,253,11745,47,10,191,89,23,1,2015,2026
-1334905,Akol Akon,8054,Sydney FC,Right Winger,17,Australia,7,3,3,8,111,45,2228,1,11,30,12,3,12,2024,2026
 692440,Al Hassan Touré,8054,Sydney FC,Left Winger,26,Australia,35,9,7,14,263,158,7745,30,13,173,53,11,7,2018,2026
+1334905,Akol Akon,8054,Sydney FC,Right Winger,17,Australia,7,3,3,8,111,45,2228,1,11,30,12,3,12,2024,2026
 1146650,Abel Walatee,8054,Sydney FC,Left Winger,22,Australia,11,4,4,8,106,52,2244,8,0,33,17,3,2,2023,2026
 833603,Patrick Wood,5551,Newcastle United Jets,Centre-Forward,24,Australia,8,8,4,10,235,147,5098,34,8,178,83,20,7,2019,2026
 692321,Gabriel Popovic,8054,Sydney FC,Centre-Forward,23,Australia,16,8,7,17,272,107,5287,25,2,21,12,8,8,2018,2026
 1226712,Mathias Macallister,8054,Sydney FC,Centre-Forward,19,Australia,22,4,2,8,138,77,4204,27,2,19,11,6,10,2023,2026
 1179902,Marin France,8054,Sydney FC,Left Winger,19,Australia,33,5,2,6,165,63,3682,12,3,2,1,5,1,2022,2026
-350347,Michael Woud,118373,Auckland FC,Goalkeeper,27,New Zealand,1,12,9,36,526,189,16985,0,1,1,0,11,33,2014,2026
+350347,Michael Woud,118373,Auckland FC,Goalkeeper,27,New Zealand,1,12,9,36,527,189,16985,0,1,1,0,11,33,2014,2026
 290838,Oliver Sail,118373,Auckland FC,Goalkeeper,30,New Zealand,20,15,6,19,534,196,17268,0,0,0,0,13,13,2012,2026
 740164,Oscar Mason,118373,Auckland FC,Goalkeeper,20,New Zealand,1,7,5,9,223,150,13480,0,0,0,0,9,1,2019,2025
 1128985,James Hilton,71085,Macarthur FC,Goalkeeper,24,Australia,13,5,3,7,128,90,8115,0,0,0,0,5,0,2022,2026
-867761,Jake Girdwood-Reich,118373,Auckland FC,Centre-Back,21,Australia,3,8,6,16,237,133,8188,3,2,48,13,10,8,2019,2026
-833592,Daniel Hall,118373,Auckland FC,Centre-Back,26,Australia,23,7,3,8,231,147,12113,4,2,37,14,15,0,2020,2026
+867761,Jake Girdwood-Reich,118373,Auckland FC,Centre-Back,21,Australia,3,8,6,18,255,134,8278,3,2,48,13,10,8,2019,2026
+833592,Daniel Hall,118373,Auckland FC,Centre-Back,26,Australia,23,7,3,8,232,147,12113,4,2,37,14,15,0,2020,2026
 887859,Joseph Knowles,118373,Auckland FC,Goalkeeper,22,New Zealand,30,7,6,11,222,75,6780,0,0,0,0,1,1,2020,2026
-207061,Francis de Vries,118373,Auckland FC,Left-Back,31,New Zealand,15,12,8,24,403,279,22756,18,34,36,12,27,21,2011,2026
-482204,Callan Elliot,118373,Auckland FC,Right-Back,27,New Zealand,17,11,6,20,369,180,11462,6,8,42,11,27,31,2016,2026
+207061,Francis de Vries,118373,Auckland FC,Left-Back,31,New Zealand,15,12,8,24,404,280,22816,18,34,36,12,27,22,2011,2026
+482204,Callan Elliot,118373,Auckland FC,Right-Back,27,New Zealand,17,11,6,20,370,181,11522,6,9,42,11,27,32,2016,2026
 83002,Hiroki Sakai,118373,Auckland FC,Right-Back,36,Japan,2,19,6,35,1000,603,48628,21,57,96,35,96,93,2008,2026
-455425,Nando Pijnaker,118373,Auckland FC,Centre-Back,27,New Zealand,4,9,8,29,374,191,15041,6,6,88,24,31,34,2018,2026
+455425,Nando Pijnaker,118373,Auckland FC,Centre-Back,27,New Zealand,4,9,8,29,375,192,15124,6,6,88,24,31,35,2018,2026
 1153793,Luka Vicelich,118373,Auckland FC,Centre-Back,18,New Zealand,25,4,3,12,127,39,2344,2,0,5,3,5,8,2023,2026
-264905,Michael den Heijer,118373,Auckland FC,Centre-Back,29,New Zealand,5,13,8,25,443,222,16985,20,6,0,0,22,7,2012,2025
+264905,Michael den Heijer,118373,Auckland FC,Centre-Back,29,New Zealand,5,13,8,25,443,223,17012,20,6,0,0,22,7,2012,2025
 627143,Ronan Wynne,118373,Auckland FC,Centre-Back,25,New Zealand,23,9,8,13,128,97,8116,2,2,1,0,11,2,2018,2026
-617015,Nathan Lobo,118373,Auckland FC,Left-Back,22,New Zealand,13,8,4,15,270,161,12581,4,6,1,0,11,12,2017,2025
-880131,Adama Coulibaly,118373,Auckland FC,Centre-Back,20,New Zealand,0,6,4,10,236,108,6981,7,0,0,0,7,5,2020,2025
-1092672,Matthew d'Hotman,118373,Auckland FC,Left-Back,19,New Zealand,0,5,4,10,157,76,5038,4,4,1,1,5,6,2022,2026
+617015,Nathan Lobo,118373,Auckland FC,Left-Back,22,New Zealand,13,8,4,15,270,162,12658,4,6,1,0,11,12,2017,2025
+880131,Adama Coulibaly,118373,Auckland FC,Centre-Back,20,New Zealand,0,6,4,10,236,109,7037,8,0,0,0,7,5,2020,2025
+1092672,Matthew d'Hotman,118373,Auckland FC,Left-Back,19,New Zealand,0,5,4,10,157,77,5128,4,4,1,1,5,6,2022,2026
 1375570,Ryan Mackay,118373,Auckland FC,Centre-Back,18,New Zealand,0,2,2,6,100,19,1594,0,0,0,0,1,0,2024,2025
 561049,Tass Mourdoukoutas,118373,Auckland FC,Centre-Back,26,Australia,3,9,7,16,289,165,12722,4,2,33,6,14,11,2017,2025
 724726,Zac Zoricich,118373,Auckland FC,Right-Back,22,New Zealand,24,6,6,12,229,144,11189,6,7,9,2,13,5,2019,2025
 255162,Aaron Calver,118373,Auckland FC,Centre-Back,30,Australia,28,16,8,15,525,200,13727,9,8,55,23,31,1,2011,2026
 396841,Louis Verstraete,118373,Auckland FC,Central Midfield,26,Belgium,6,12,6,18,421,232,16498,17,15,148,49,67,19,2015,2026
-1109358,Lachlan Bayliss,118373,Auckland FC,Attacking Midfield,24,New Zealand,10,5,4,8,148,106,7091,17,16,126,43,13,9,2022,2026
+1109358,Lachlan Bayliss,118373,Auckland FC,Attacking Midfield,24,New Zealand,10,5,4,8,149,107,7181,18,16,126,43,14,10,2022,2026
 337282,Jake Brimmer,118373,Auckland FC,Central Midfield,28,Malta,22,14,5,14,343,230,14237,23,26,228,81,21,9,2013,2026
 172323,Cameron Howieson,118373,Auckland FC,Central Midfield,31,New Zealand,7,17,6,33,632,290,20781,41,41,26,10,40,38,2010,2026
 155054,Luis Felipe Gallegos,118373,Auckland FC,Central Midfield,34,Chile,8,19,9,41,794,452,30322,36,35,151,30,64,3,2008,2026
@@ -124,27 +124,27 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1010896,Oliver Middleton,118373,Auckland FC,Central Midfield,21,New Zealand,19,6,3,11,217,84,5917,8,1,2,1,4,3,2021,2026
 724770,Matthew Ellis,970,Perth Glory,Attacking Midfield,25,New Zealand,21,8,4,13,264,113,7285,31,8,3,3,8,1,2019,2026
 1289282,Van Fitzharris,118373,Auckland FC,Attacking Midfield,18,New Zealand,57,4,3,11,103,50,2894,6,6,1,0,2,7,2023,2026
-677509,Jesse Randall,118373,Auckland FC,Right Winger,22,New Zealand,21,9,7,23,271,166,11164,66,31,167,67,8,30,2018,2026
-951958,James Bayliss,118373,Auckland FC,Defensive Midfield,24,Australia,8,6,4,7,197,104,8002,3,10,12,6,15,0,2020,2025
+677509,Jesse Randall,118373,Auckland FC,Right Winger,22,New Zealand,21,9,7,23,272,167,11254,67,31,173,68,8,30,2018,2026
+951958,James Bayliss,118373,Auckland FC,Defensive Midfield,24,Australia,8,6,4,7,198,104,8002,3,10,12,6,15,0,2020,2025
 479718,Guillermo May,7006,Melbourne Victory,Centre-Forward,28,Uruguay,21,10,9,19,326,226,14673,56,17,210,63,19,0,2017,2026
 507115,Lachlan Brook,118373,Auckland FC,Left Winger,25,Australia,77,10,6,20,338,167,9110,32,8,272,104,15,19,2016,2026
 351691,Sam Cosgrove,118373,Auckland FC,Centre-Forward,29,England,9,13,14,20,559,332,17942,82,24,495,184,54,0,2014,2026
-312317,Logan Rogerson,118373,Auckland FC,Right Winger,28,New Zealand,27,14,11,36,583,301,18990,76,63,105,36,20,55,2013,2026
-878242,Liam Gillion,36100,Western Sydney Wanderers,Left Winger,24,New Zealand,21,7,4,16,250,152,9521,43,13,44,16,1,6,2020,2026
+312317,Logan Rogerson,118373,Auckland FC,Right Winger,28,New Zealand,27,14,11,36,584,302,19050,76,63,105,36,20,56,2013,2026
+878242,Liam Gillion,36100,Western Sydney Wanderers,Left Winger,24,New Zealand,21,7,4,16,251,153,9551,43,14,44,16,1,7,2020,2026
 1016716,Jonty Bidois,118373,Auckland FC,Centre-Forward,22,New Zealand,35,5,4,8,143,59,3628,21,3,10,2,3,0,2022,2026
 801427,Marlee Francois,118373,Auckland FC,Left Winger,22,Australia,11,8,5,12,139,47,2113,3,1,36,12,5,5,2018,2025
 1104291,Isa Prins,118373,Auckland FC,Left Winger,21,New Zealand,21,5,4,11,147,100,6444,38,4,0,0,8,0,2022,2026
 1000925,Ralph Rutherford,118373,Auckland FC,Right Winger,21,New Zealand,37,6,3,7,175,88,5402,11,18,0,0,1,0,2021,2026
 953397,Kian Donkers,118373,Auckland FC,Centre-Forward,20,New Zealand,29,6,4,13,148,72,3382,37,3,1,0,3,11,2020,2025
 166078,Emiliano Tade,118373,Auckland FC,Centre-Forward,37,Argentina,20,16,7,18,501,320,21089,192,71,3,0,33,0,2010,2025
-1291443,Aaron Cartwright,118373,Auckland FC,Right Winger,18,New Zealand,24,4,4,10,49,25,1463,8,5,8,2,2,8,2023,2026
+1291443,Aaron Cartwright,118373,Auckland FC,Right Winger,18,New Zealand,24,4,4,10,51,26,1518,8,5,8,2,2,8,2023,2026
 190687,Joshua Smits,875,Adelaide United,Goalkeeper,34,Netherlands,22,16,9,20,700,237,21383,0,0,0,0,5,0,2011,2026
 745416,Ethan Cox,875,Adelaide United,Goalkeeper,22,Australia,40,8,1,11,238,12,1035,0,0,0,0,0,4,2019,2026
 1001362,Max Vartuli,875,Adelaide United,Goalkeeper,21,Australia,13,6,6,14,169,17,1461,0,0,0,0,1,2,2021,2026
 1099708,Panagiotis Kikianis,875,Adelaide United,Centre-Back,21,Australia,4,5,1,9,120,82,7233,8,2,35,10,17,16,2022,2026
 486972,Dylan Pierias,875,Adelaide United,Right-Back,26,Australia,20,11,5,10,287,170,9268,18,14,217,84,6,4,2016,2026
 296454,Ryan Kitto,875,Adelaide United,Left-Back,32,Australia,7,14,2,7,365,272,18948,23,23,158,43,22,0,2012,2026
-129991,Bart Vriends,875,Adelaide United,Centre-Back,35,Netherlands,3,18,6,17,582,415,34954,24,6,98,33,51,1,2008,2026
+129991,Bart Vriends,875,Adelaide United,Centre-Back,35,Netherlands,3,18,6,17,583,415,34954,24,6,98,33,51,1,2008,2026
 1038443,Panashe Madanha,36100,Western Sydney Wanderers,Right-Back,22,Australia,36,6,2,4,131,48,2054,0,4,13,2,3,4,2021,2026
 1104727,Sotiri Phillis,875,Adelaide United,Centre-Back,20,Australia,52,4,1,8,49,18,1412,0,0,3,0,3,6,2022,2026
 1289687,Harry Crawford,875,Adelaide United,Right-Back,19,Australia,58,4,1,7,65,31,1608,2,0,11,2,3,8,2023,2026
@@ -159,9 +159,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1241886,Ryan White,875,Adelaide United,Central Midfield,21,Australia,44,4,1,6,72,52,2676,3,2,28,9,2,2,2023,2026
 703660,Luke Duzel,875,Adelaide United,Defensive Midfield,24,Australia,23,10,2,10,230,83,3896,3,0,38,10,9,14,2017,2026
 85357,Juan Muñiz,875,Adelaide United,Attacking Midfield,34,Spain,10,18,9,23,732,472,27944,79,69,180,79,111,6,2009,2026
-1038441,Luka Jovanović,875,Adelaide United,Centre-Forward,20,Australia,9,5,3,10,171,117,5926,35,9,168,72,9,23,2021,2025
+1038441,Luka Jovanović,875,Adelaide United,Centre-Forward,20,Australia,9,5,3,10,172,118,5927,35,9,168,72,9,23,2021,2025
 114341,Anselmo,875,Adelaide United,Attacking Midfield,37,Brazil,87,19,12,29,826,409,30318,38,18,335,102,120,0,2008,2026
-652487,Yaya Dukuly,875,Adelaide United,Right Winger,22,Australia,19,9,4,14,256,135,7278,13,13,99,38,9,15,2018,2026
+652487,Yaya Dukuly,875,Adelaide United,Right Winger,22,Australia,19,9,4,14,259,136,7342,13,13,99,38,9,15,2018,2026
 214798,Craig Goodwin,875,Adelaide United,Left Winger,34,Australia,11,16,6,18,613,424,31199,100,82,447,187,51,32,2011,2026
 1403601,Brody Burkitt,875,Adelaide United,Centre-Forward,20,Australia,35,2,1,5,32,23,918,5,2,28,15,4,0,2025,2026
 532107,Ben Folami,875,Adelaide United,Left Winger,27,Australia,17,9,5,18,287,156,8562,14,12,183,71,8,9,2017,2026
@@ -172,7 +172,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 983840,Ajak Riak,875,Adelaide United,Centre-Forward,25,Southern Sudan,99,6,6,17,179,75,4187,13,6,66,23,4,15,2021,2026
 1110729,Alex Robinson,71085,Macarthur FC,Goalkeeper,21,Australia,1,6,3,12,224,51,4562,0,0,1,0,1,7,2021,2026
 104376,Filip Kurto,71085,Macarthur FC,Goalkeeper,34,Poland,12,18,11,22,663,365,32211,0,1,0,0,13,11,2008,2025
-1176143,Joshua Lakkis,71085,Macarthur FC,Goalkeeper,20,Australia,0,3,2,3,38,0,0,0,0,0,0,0,0,2022,2026
+1176143,Joshua Lakkis,71085,Macarthur FC,Goalkeeper,20,Lebanon,30,3,2,3,38,0,0,0,0,0,0,0,0,2022,2026
 1118085,Harry Politidis,71085,Macarthur FC,Left-Back,24,Australia,19,5,2,5,109,60,3130,3,6,40,13,4,0,2022,2026
 843401,Callum Talbot,71085,Macarthur FC,Right-Back,25,Australia,25,8,4,13,259,174,12839,4,12,109,30,25,12,2019,2026
 560827,Walter Scott,8445,Wellington Phoenix,Left-Back,27,Australia,5,10,7,8,230,112,7496,1,15,23,9,18,3,2017,2026
@@ -183,21 +183,21 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 57370,Damien Da Silva,71085,Macarthur FC,Centre-Back,37,France,3,21,10,17,1074,567,49251,24,10,193,48,98,1,2006,2026
 68499,Matthew Jurman,71085,Macarthur FC,Centre-Back,35,Australia,5,18,9,24,632,367,28558,7,3,74,12,67,11,2008,2025
 1179903,Sebastian Krslovic,71085,Macarthur FC,Centre-Back,20,Australia,31,4,2,4,52,6,480,0,0,1,0,2,0,2022,2026
-1150897,Harry Menham,71085,Macarthur FC,Left-Back,20,Australia,33,4,2,3,43,29,2318,1,2,0,0,2,0,2022,2026
+1150897,Harry Menham,71085,Macarthur FC,Left-Back,21,Australia,33,4,2,3,43,29,2318,1,2,0,0,2,0,2022,2026
 226739,Anthony Cáceres,71085,Macarthur FC,Central Midfield,32,Australia,10,15,7,12,486,401,30019,29,44,335,107,41,4,2012,2026
 329834,Liam Rose,71085,Macarthur FC,Defensive Midfield,29,Australia,22,16,6,15,401,242,15558,2,7,49,9,49,1,2011,2026
 114365,Luke Brattan,71085,Macarthur FC,Defensive Midfield,35,Australia,26,17,8,19,639,372,29734,18,35,215,48,85,1,2009,2025
-1110867,Oliver Randazzo,71085,Macarthur FC,Central Midfield,19,Australia,17,5,2,9,132,62,2663,1,3,14,4,4,12,2022,2026
-1109957,Frans Deli,71085,Macarthur FC,Central Midfield,19,Australia,23,4,4,9,140,69,3661,0,3,11,2,13,15,2022,2025
+1110867,Oliver Randazzo,71085,Macarthur FC,Central Midfield,20,Australia,17,5,2,9,132,62,2663,1,3,14,4,4,12,2022,2026
+1109957,Frans Deli,71085,Macarthur FC,Central Midfield,19,Australia,23,4,4,9,141,69,3661,0,3,11,2,13,15,2022,2025
 659622,Kristian Popovic,6954,Central Coast Mariners,Defensive Midfield,25,Australia,29,9,7,11,179,50,1974,3,0,12,5,3,2,2018,2026
 1385157,Michael Pratezina,71085,Macarthur FC,Attacking Midfield,18,Australia,14,3,2,7,55,21,974,2,1,1,0,2,3,2024,2026
 552958,Rafael Durán,8445,Wellington Phoenix,Centre-Forward,29,Mexico,9,12,13,26,485,317,17223,94,8,44,20,12,4,2015,2026
 1234443,Luke Vickery,71085,Macarthur FC,Right Winger,21,Indonesia,8,4,2,6,87,59,2682,9,5,48,18,3,8,2023,2026
-257682,Connor Pain,71085,Macarthur FC,Left Winger,32,Australia,7,16,6,13,437,362,26385,30,53,177,67,38,11,2009,2026
+257682,Connor Pain,71085,Macarthur FC,Left Winger,33,Australia,7,16,6,13,437,362,26385,30,53,177,67,38,11,2009,2026
 883217,Bernardo Oliveira,71085,Macarthur FC,Right Winger,22,Australia,11,8,2,10,214,86,3584,16,8,80,37,6,11,2019,2026
 1144775,Dean Bosnjak,71085,Macarthur FC,Left Winger,20,Australia,24,6,2,7,114,63,2516,6,2,42,16,8,7,2021,2026
 483593,Harry Sawyer,7006,Melbourne Victory,Centre-Forward,29,Australia,9,10,8,18,288,154,8508,54,18,195,79,25,0,2016,2026
-177775,Mitchell Duke,71085,Macarthur FC,Centre-Forward,34,Australia,15,17,7,24,725,503,29355,97,40,509,173,43,53,2010,2026
+177775,Mitchell Duke,71085,Macarthur FC,Centre-Forward,34,Australia,15,17,7,24,728,505,29420,97,40,510,174,44,53,2010,2026
 1109825,Ben Gibson,71085,Macarthur FC,Centre-Forward,23,Australia,9,6,4,5,145,111,5620,31,16,83,42,9,2,2021,2026
 248483,Chris Ikonomidis,71085,Macarthur FC,Right Winger,30,Australia,9,15,10,33,593,286,16373,58,25,232,82,28,18,2012,2026
 186647,Sime Grzan,71085,Macarthur FC,Right Winger,31,Croatia,7,17,10,16,611,384,25154,34,28,126,37,38,5,2010,2026
@@ -217,34 +217,34 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1104722,Andriano Lebib,970,Perth Glory,Centre-Back,20,Australia,24,6,1,6,102,33,1958,3,1,10,3,10,12,2021,2026
 1285841,Tadiwanashe Kuzamba,970,Perth Glory,Right-Back,19,Australia,30,3,1,2,32,5,366,1,0,0,0,1,0,2023,2026
 1408382,Riley Foxe,970,Perth Glory,Centre-Back,20,Australia,44,2,1,2,27,4,9,0,0,0,0,0,0,2025,2026
-1064380,Kaelan Majekodunmi,970,Perth Glory,Centre-Back,21,Australia,0,5,3,12,142,47,3391,2,0,10,4,10,10,2022,2026
-1195422,Zach Lisolajski,970,Perth Glory,Left-Back,19,Australia,15,3,3,8,110,40,2083,2,0,15,1,4,9,2023,2025
+1064380,Kaelan Majekodunmi,970,Perth Glory,Centre-Back,21,Australia,0,5,3,12,143,48,3481,2,0,10,4,10,10,2022,2026
+1195422,Zach Lisolajski,970,Perth Glory,Left-Back,19,Australia,15,3,3,8,111,40,2083,2,0,15,1,4,9,2023,2025
 160614,Josh Risdon,970,Perth Glory,Right-Back,32,Australia,19,17,4,9,543,321,27030,6,33,115,29,90,14,2009,2025
-373898,Nicholas Pennington,970,Perth Glory,Central Midfield,26,Australia,7,13,7,16,402,299,19525,25,24,99,27,52,1,2014,2026
+373898,Nicholas Pennington,970,Perth Glory,Central Midfield,26,Australia,7,13,7,16,403,299,19525,25,24,99,27,52,1,2014,2026
 229970,Tom Lawrence,970,Perth Glory,Attacking Midfield,32,Wales,34,17,14,36,926,465,33328,91,60,445,151,80,40,2010,2026
 1169749,William Freney,970,Perth Glory,Central Midfield,21,Australia,27,5,2,3,71,39,2553,0,1,15,3,6,0,2022,2026
 1404854,Sebastian Despotovski,970,Perth Glory,Attacking Midfield,21,Australia,25,3,1,2,33,24,1491,3,2,0,0,5,0,2024,2026
-916461,Rhys Bozinovski,970,Perth Glory,Defensive Midfield,21,Australia,0,7,3,10,178,90,5138,6,4,68,18,12,10,2020,2026
+916461,Rhys Bozinovski,970,Perth Glory,Defensive Midfield,21,Australia,0,7,3,10,181,90,5138,6,4,68,18,12,10,2020,2026
 1145213,Giovanni De Abreu,970,Perth Glory,Central Midfield,19,Australia,39,3,1,4,29,27,1585,1,2,14,6,9,5,2022,2026
 539287,Callum Timmins,970,Perth Glory,Central Midfield,25,England,8,9,3,5,179,131,7780,4,5,86,23,25,0,2017,2026
 258912,Luke Amos,970,Perth Glory,Central Midfield,28,England,0,15,9,20,712,226,13867,13,1,57,13,45,3,2012,2026
 1050131,Lucas Scicluna,970,Perth Glory,Defensive Midfield,21,Malta,16,6,5,10,171,83,5276,3,2,17,1,12,15,2021,2026
 218371,Brandon O'Neill,970,Perth Glory,Defensive Midfield,31,Australia,0,15,5,10,429,262,19332,12,15,87,19,45,1,2011,2025
 1137438,Adam Bugarija,970,Perth Glory,Attacking Midfield,20,Australia,0,4,5,8,163,76,3416,18,9,42,12,4,9,2022,2025
-1023268,Nathanael Blair,6954,Central Coast Mariners,Centre-Forward,21,Australia,18,6,6,9,197,93,4588,30,5,94,41,5,8,2021,2026
+1023268,Nathanael Blair,6954,Central Coast Mariners,Centre-Forward,21,Australia,18,6,6,9,198,93,4588,30,5,94,41,5,8,2021,2026
 1415926,Oliver Evans,970,Perth Glory,Attacking Midfield,18,Australia,36,3,1,2,32,1,46,0,0,0,0,0,0,2024,2026
 867754,Jaiden Kucharski,970,Perth Glory,Centre-Forward,24,Australia,9,9,4,8,227,129,5434,25,13,174,61,8,6,2017,2026
 560763,Henry Hore,970,Perth Glory,Left Winger,27,Australia,13,7,4,4,181,120,7949,21,13,146,54,18,0,2020,2026
 714272,Stefan Colakovski,970,Perth Glory,Left Winger,26,North Macedonia,7,9,3,5,196,104,3864,14,8,83,41,12,2,2018,2026
 499735,Lachlan Wales,970,Perth Glory,Right Winger,27,Australia,11,10,5,8,268,206,14199,23,35,207,76,21,5,2016,2025
 692320,Trent Ostler,970,Perth Glory,Right Winger,24,Australia,20,9,1,6,209,83,4300,6,5,34,15,5,3,2018,2026
-985797,Luca Tevere,970,Perth Glory,Right Winger,23,Australia,18,6,5,5,163,95,6969,21,19,60,24,9,0,2020,2025
+985797,Luca Tevere,970,Perth Glory,Right Winger,23,Australia,18,6,5,5,164,95,6969,21,19,60,24,9,0,2020,2025
 1273793,Anthony Didulica,970,Perth Glory,Right Winger,18,Australia,23,4,1,6,41,15,609,6,0,5,2,2,9,2023,2026
 1155207,Joel Anasmo,970,Perth Glory,Right Winger,20,Australia,31,4,4,6,87,27,603,1,0,0,0,0,0,2022,2025
 399981,James Delianov,5551,Newcastle United Jets,Goalkeeper,27,Australia,1,13,4,7,297,105,9511,0,0,0,0,2,4,2013,2026
 471494,Noah James,5551,Newcastle United Jets,Goalkeeper,24,Australia,21,9,5,8,241,39,3510,0,0,0,0,2,1,2017,2025
 1336425,Alex Nassiep,5551,Newcastle United Jets,Goalkeeper,20,Australia,20,6,2,6,70,1,90,0,0,0,0,0,1,2021,2026
-813296,Mark Natta,5551,Newcastle United Jets,Centre-Back,22,Australia,33,7,3,9,198,125,10262,4,3,34,11,8,5,2020,2026
+813296,Mark Natta,5551,Newcastle United Jets,Centre-Back,22,Australia,33,7,3,9,199,125,10262,4,3,34,11,8,5,2020,2026
 1286282,Jordan Baylis,5551,Newcastle United Jets,Goalkeeper,21,Australia,40,4,1,4,48,0,0,0,0,0,0,0,0,2023,2026
 660145,Daniel Wilmering,5551,Newcastle United Jets,Left-Back,25,Australia,23,9,3,5,231,138,10070,5,19,53,14,10,0,2018,2026
 1105789,Joel Bertolissio,5551,Newcastle United Jets,Right-Back,23,Australia,22,6,4,6,178,92,7435,2,4,30,10,11,0,2021,2026
@@ -259,13 +259,13 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 500924,Kosta Grozos,71085,Macarthur FC,Defensive Midfield,26,Australia,23,10,4,4,252,138,8745,6,8,84,31,15,0,2017,2026
 343049,Max Burgess,5551,Newcastle United Jets,Defensive Midfield,31,Australia,14,12,6,11,309,191,10995,16,27,225,70,25,0,2014,2026
 1251566,Alex Nunes,5551,Newcastle United Jets,Attacking Midfield,19,Australia,24,4,1,5,75,18,375,3,2,6,2,0,2,2023,2026
-899856,Eli Adams,5551,Newcastle United Jets,Right Winger,23,Australia,7,7,4,9,173,90,4789,21,9,155,53,6,0,2020,2026
+899856,Eli Adams,5551,Newcastle United Jets,Right Winger,23,Australia,7,7,4,9,175,92,4906,23,9,162,55,7,0,2020,2026
+1109827,Clayton Taylor,5551,Newcastle United Jets,Left Winger,21,Australia,13,7,3,9,147,113,7583,31,18,209,80,2,1,2020,2026
 1286283,Christian Bracco,5551,Newcastle United Jets,Defensive Midfield,21,Australia,45,3,1,3,40,12,325,0,0,0,0,0,0,2023,2025
-1109827,Clayton Taylor,5551,Newcastle United Jets,Left Winger,21,Australia,13,7,3,8,145,111,7538,31,17,209,80,2,1,2020,2026
-840008,Lachlan Rose,5551,Newcastle United Jets,Centre-Forward,26,Australia,9,8,5,7,207,164,8597,37,8,267,107,9,0,2016,2026
+840008,Lachlan Rose,5551,Newcastle United Jets,Centre-Forward,26,Australia,9,8,5,7,208,165,8604,37,8,267,107,9,0,2016,2026
 246351,Zach Clough,5551,Newcastle United Jets,Right Winger,31,England,10,15,9,17,613,319,20199,70,47,210,83,18,0,2012,2026
 118302,Nikolaos Vergos,5551,Newcastle United Jets,Centre-Forward,30,Greece,9,17,14,29,722,369,19980,110,17,218,93,29,37,2010,2026
-79419,Kota Mizunuma,5551,Newcastle United Jets,Right Winger,35,Japan,18,21,8,21,903,645,36225,97,113,295,116,32,10,2006,2026
+79419,Kota Mizunuma,5551,Newcastle United Jets,Right Winger,35,Japan,18,21,8,22,949,645,36225,97,113,295,116,32,10,2006,2026
 1432451,Xavier Bertoncello,5551,Newcastle United Jets,Left Winger,21,Australia,43,3,1,4,42,41,1833,10,2,14,5,0,0,2024,2026
 1144781,Oscar Fryer,5551,Newcastle United Jets,Left Winger,20,Australia,25,5,2,5,91,26,1392,8,3,29,8,0,0,2022,2026
 1203231,Ethan Debono,5551,Newcastle United Jets,Right Winger,20,Malta,46,4,3,9,36,12,445,2,0,3,1,1,3,2023,2026
@@ -273,10 +273,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1005338,Jack Warshawsky,7006,Melbourne Victory,Goalkeeper,22,Australia,1,7,6,14,261,65,5756,0,0,0,0,0,10,2019,2026
 171382,Jack Duncan,7006,Melbourne Victory,Goalkeeper,33,Australia,25,17,6,14,494,188,16819,0,0,0,0,8,3,2010,2026
 1118086,Sebastian Esposito,7006,Melbourne Victory,Centre-Back,20,Australia,15,5,4,12,193,91,7686,4,2,16,5,15,15,2021,2025
-703658,Joshua Rawlins,7006,Melbourne Victory,Right-Back,21,Australia,22,9,4,15,263,168,11871,4,7,45,12,17,30,2018,2026
+703658,Joshua Rawlins,7006,Melbourne Victory,Right-Back,21,Australia,22,9,4,15,265,169,11961,4,7,46,12,17,30,2018,2026
 1106575,Daniel Graskoski,7006,Melbourne Victory,Goalkeeper,19,Australia,30,5,3,12,139,15,1254,0,0,0,0,0,5,2022,2026
-152627,Philipp Ziereis,7006,Melbourne Victory,Centre-Back,33,Germany,4,18,8,17,669,357,28866,9,10,89,20,68,0,2009,2026
-87856,Roderick Miranda,7006,Melbourne Victory,Centre-Back,34,Portugal,21,20,11,32,785,403,33586,11,12,101,20,84,45,2007,2026
+152627,Philipp Ziereis,7006,Melbourne Victory,Centre-Back,33,Germany,4,18,8,17,671,359,29042,9,10,89,20,69,0,2009,2026
+87856,Roderick Miranda,7006,Melbourne Victory,Centre-Back,34,Portugal,21,20,11,32,785,404,33676,11,12,101,20,84,45,2007,2026
 1132512,Joshua Inserra,7006,Melbourne Victory,Right-Back,21,Australia,16,5,2,9,139,50,3700,0,2,11,0,7,16,2022,2026
 1144488,Franco Lino,7006,Melbourne Victory,Left-Back,21,Australia,18,5,3,12,145,46,3301,5,1,9,3,5,8,2022,2026
 207742,Tom Lockyer,7006,Melbourne Victory,Centre-Back,31,Wales,15,16,5,22,794,495,41645,14,7,114,33,72,23,2011,2026
@@ -289,53 +289,53 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 677510,Keegan Jelacic,7006,Melbourne Victory,Attacking Midfield,24,Australia,23,8,6,13,193,125,8290,18,14,140,51,13,10,2018,2026
 561650,Louis D'Arrigo,7006,Melbourne Victory,Defensive Midfield,25,Australia,6,10,3,13,321,183,10893,12,6,96,28,25,20,2017,2026
 1232652,Xavier Stella,7006,Melbourne Victory,Defensive Midfield,20,Australia,22,6,3,8,65,27,1155,0,0,4,1,0,6,2021,2026
-1356499,Oliver Dragicevic,7006,Melbourne Victory,Central Midfield,19,Australia,19,4,2,6,93,38,1901,3,4,1,0,4,4,2023,2026
-1452115,Emre Saglam,7006,Melbourne Victory,Central Midfield,20,Australia,24,2,3,5,43,0,0,0,0,0,0,0,0,2025,2026
+1356499,Oliver Dragicevic,7006,Melbourne Victory,Central Midfield,19,Australia,19,4,2,7,99,38,1901,3,4,1,0,4,4,2023,2026
+1452115,Emre Saglam,7006,Melbourne Victory,Central Midfield,20,Australia,24,2,3,5,44,0,0,0,0,0,0,0,0,2025,2026
 1373901,Jack Mihailidis,7006,Melbourne Victory,Attacking Midfield,20,Australia,26,3,2,4,36,23,1587,3,3,0,0,2,0,2024,2026
 697520,Santos,7006,Melbourne Victory,Left Winger,25,Brazil,11,8,6,12,239,199,12076,31,17,103,40,17,0,2019,2026
 1127122,Matthew Grimaldi,7006,Melbourne Victory,Right Winger,22,Australia,14,5,2,6,108,102,4911,15,8,42,12,7,6,2022,2026
-265093,Reno Piscopo,7006,Melbourne Victory,Left Winger,27,Australia,7,15,8,20,410,241,13505,24,23,262,87,21,21,2012,2026
+265093,Reno Piscopo,7006,Melbourne Victory,Left Winger,27,Australia,7,15,8,20,410,241,13505,24,23,0,0,21,21,2012,2026
 856284,Charles Nduka,7006,Melbourne Victory,Centre-Forward,28,Japan,44,7,4,9,218,169,10064,33,17,156,60,13,0,2020,2026
 1234302,Mikey Ghossaini,7006,Melbourne Victory,Left Winger,19,Australia,29,4,3,6,50,25,609,0,1,8,2,1,3,2023,2026
 433164,Joshua Oluwayemi,8445,Wellington Phoenix,Goalkeeper,24,Nigeria,1,11,8,16,315,145,12744,0,0,0,0,7,1,2015,2025
 877280,Alby Kelly-Heald,8445,Wellington Phoenix,Goalkeeper,21,New Zealand,30,7,3,10,217,77,6800,0,0,0,0,2,5,2020,2026
-1079362,Eamonn McCarron,8445,Wellington Phoenix,Goalkeeper,19,New Zealand,40,6,2,9,116,38,3364,0,1,0,0,1,1,2021,2026
+1079362,Eamonn McCarron,8445,Wellington Phoenix,Goalkeeper,19,New Zealand,40,6,2,9,117,39,3454,0,1,0,0,1,1,2021,2026
 1277093,Joseph Chalabi,8445,Wellington Phoenix,Goalkeeper,16,New Zealand,0,4,3,8,105,14,1260,0,0,0,0,0,7,2023,2026
 953953,Isaac Hughes,8445,Wellington Phoenix,Centre-Back,22,New Zealand,15,7,2,10,183,121,9723,5,3,21,8,19,11,2020,2026
-877290,Lukas Kelly-Heald,8445,Wellington Phoenix,Centre-Back,21,New Zealand,18,7,3,13,209,132,8559,1,7,19,5,7,22,2020,2026
-877294,Matthew Sheridan,8445,Wellington Phoenix,Right-Back,22,New Zealand,27,7,3,7,148,114,8420,3,3,14,5,4,4,2020,2026
-149901,Tim Payne,8445,Wellington Phoenix,Right-Back,31,New Zealand,6,17,9,33,630,367,28325,20,38,60,18,41,71,2009,2025
-222686,Manjrekar James,8445,Wellington Phoenix,Centre-Back,31,Canada,4,14,13,34,540,302,22914,15,7,52,20,74,18,2012,2025
-172333,Bill Tuiloma,8445,Wellington Phoenix,Centre-Back,31,New Zealand,28,17,11,35,787,345,24280,30,9,180,49,44,70,2010,2026
+877290,Lukas Kelly-Heald,8445,Wellington Phoenix,Centre-Back,21,New Zealand,18,7,3,14,223,132,8559,1,7,19,5,7,22,2020,2026
+877294,Matthew Sheridan,8445,Wellington Phoenix,Right-Back,22,New Zealand,27,7,3,8,149,115,8450,3,3,14,5,4,5,2020,2026
+149901,Tim Payne,8445,Wellington Phoenix,Right-Back,31,New Zealand,6,17,9,33,632,368,28415,20,38,60,18,41,71,2009,2025
+222686,Manjrekar James,8445,Wellington Phoenix,Centre-Back,31,Canada,4,14,13,34,544,304,23094,15,7,53,20,74,18,2012,2025
+172333,Bill Tuiloma,8445,Wellington Phoenix,Centre-Back,31,New Zealand,28,17,11,35,788,346,24370,30,9,180,49,44,71,2010,2026
 881221,Tze-Xuan Loke,8445,Wellington Phoenix,Right-Back,21,New Zealand,24,7,4,7,189,69,5310,6,1,7,2,9,6,2020,2026
-998447,Ryan Lee,8445,Wellington Phoenix,Centre-Back,18,New Zealand,0,6,3,7,164,83,5778,4,1,1,0,10,6,2021,2026
-1183555,Jayden Smith,8445,Wellington Phoenix,Centre-Back,19,New Zealand,39,5,2,7,148,44,3143,2,0,1,0,5,3,2022,2026
-1415065,Mac Munro,8445,Wellington Phoenix,Centre-Back,18,New Zealand,0,3,2,5,87,36,2769,2,0,0,0,5,0,2024,2026
-480874,Dan Edwards,8445,Wellington Phoenix,Left-Back,26,New Zealand,12,8,7,9,189,99,8064,5,7,10,5,6,0,2016,2025
-350357,Sarpreet Singh,8445,Wellington Phoenix,Central Midfield,26,New Zealand,9,13,11,27,540,288,19203,46,61,294,104,47,55,2014,2026
-437852,Sander Kartum,8445,Wellington Phoenix,Attacking Midfield,29,Norway,16,15,7,15,344,260,18054,43,36,173,61,44,0,2011,2026
-256019,Alex Rufer,8445,Wellington Phoenix,Defensive Midfield,30,New Zealand,14,15,3,16,522,280,19953,14,18,149,24,66,47,2012,2026
+998447,Ryan Lee,8445,Wellington Phoenix,Centre-Back,18,New Zealand,0,6,3,7,164,84,5868,4,1,1,0,10,6,2021,2026
+1183555,Jayden Smith,8445,Wellington Phoenix,Centre-Back,19,New Zealand,39,5,2,7,155,45,3188,2,0,1,0,5,3,2022,2026
+1415065,Mac Munro,8445,Wellington Phoenix,Centre-Back,18,New Zealand,0,3,2,5,87,37,2859,2,0,0,0,5,0,2024,2026
+480874,Dan Edwards,8445,Wellington Phoenix,Left-Back,26,New Zealand,12,8,7,9,190,99,8064,5,7,10,5,6,0,2016,2025
+350357,Sarpreet Singh,8445,Wellington Phoenix,Central Midfield,26,New Zealand,9,13,11,27,541,289,19248,46,61,294,104,47,55,2014,2026
+437852,Sander Kartum,8445,Wellington Phoenix,Attacking Midfield,29,Norway,16,15,7,15,345,262,18102,43,36,174,61,45,0,2011,2026
+256019,Alex Rufer,8445,Wellington Phoenix,Defensive Midfield,30,New Zealand,14,15,3,16,523,281,20013,14,18,149,24,66,48,2012,2026
 857968,Fin Roa Conchie,8445,Wellington Phoenix,Defensive Midfield,23,New Zealand,6,7,3,12,214,113,6656,1,7,9,2,14,16,2020,2026
 165783,Hideki Ishige,8445,Wellington Phoenix,Attacking Midfield,30,Japan,0,16,5,11,638,336,20062,35,38,116,33,8,5,2010,2025
 263685,Kazuki Nagasawa,8445,Wellington Phoenix,Left Winger,34,Japan,25,15,8,15,594,372,24003,20,35,147,46,38,1,2012,2026
-1092674,Anaru Cassidy,8445,Wellington Phoenix,Defensive Midfield,20,New Zealand,37,5,2,6,113,61,4203,6,1,2,1,11,5,2022,2026
+1092674,Anaru Cassidy,8445,Wellington Phoenix,Defensive Midfield,20,New Zealand,37,5,2,6,130,62,4293,6,1,2,1,11,5,2022,2026
 257685,Paulo Retre,8445,Wellington Phoenix,Defensive Midfield,32,Australia,8,14,5,12,446,298,17435,8,10,96,16,55,0,2012,2025
 741045,Ifeanyi Eze,8445,Wellington Phoenix,Centre-Forward,26,Nigeria,7,7,6,6,179,124,9670,37,6,62,25,16,0,2019,2026
-888602,Corban Piper,8445,Wellington Phoenix,Centre-Forward,24,New Zealand,99,7,4,9,194,144,9974,20,6,62,29,21,0,2020,2026
+888602,Corban Piper,8445,Wellington Phoenix,Centre-Forward,24,New Zealand,99,7,4,10,195,145,9991,20,6,62,29,21,1,2020,2026
 623962,Carlo Armiento,8445,Wellington Phoenix,Left Winger,26,Australia,11,10,6,6,210,102,4969,13,15,151,60,12,0,2017,2026
 448337,Ramy Najjarine,8445,Wellington Phoenix,Right Winger,25,Lebanon,20,11,6,11,312,146,6676,11,12,147,47,8,17,2016,2026
-1200303,Nathan Walker,8445,Wellington Phoenix,Left Winger,20,New Zealand,17,5,2,8,111,68,3346,12,2,15,9,3,10,2022,2026
+1200303,Nathan Walker,8445,Wellington Phoenix,Left Winger,20,New Zealand,17,5,2,9,112,69,3363,12,2,15,9,3,11,2022,2026
 1092670,Luke Supyk,8445,Wellington Phoenix,Centre-Forward,19,New Zealand,23,5,3,12,197,86,4834,30,0,15,6,7,15,2022,2026
 1092678,Gabriel Sloane-Rodrigues,8445,Wellington Phoenix,Right Winger,17,New Zealand,17,4,2,9,121,54,2934,11,1,8,2,1,14,2022,2025
 285775,Nikola Mileusnic,8445,Wellington Phoenix,Right Winger,31,Australia,10,10,5,7,310,214,12889,31,24,240,89,5,0,2016,2025
 181337,Lawrence Thomas,36100,Western Sydney Wanderers,Goalkeeper,34,Australia,20,17,4,15,541,304,27226,0,0,2,1,14,1,2010,2026
 399158,Jordan Holmes,36100,Western Sydney Wanderers,Goalkeeper,29,Australia,30,12,6,16,245,79,7026,0,0,1,1,6,2,2015,2026
-1013240,Alex Bonetig,36100,Western Sydney Wanderers,Centre-Back,22,Australia,0,6,3,6,170,85,6860,1,1,28,5,5,0,2019,2025
+1013240,Alex Bonetig,36100,Western Sydney Wanderers,Centre-Back,22,Australia,0,6,3,6,171,85,6860,1,1,28,5,5,0,2019,2025
 1077355,Tristan Vidackovic,36100,Western Sydney Wanderers,Goalkeeper,23,Australia,55,5,4,8,190,54,4832,0,0,0,0,4,0,2022,2026
+949477,Jacob Farrell,8054,Sydney FC,Left-Back,23,Australia,5,7,4,11,227,108,8680,7,15,72,22,34,8,2020,2026
 873755,Anthony Pantazopoulos,36100,Western Sydney Wanderers,Centre-Back,23,Australia,22,7,3,7,191,103,8367,6,7,90,26,33,4,2020,2026
-949477,Jacob Farrell,8054,Sydney FC,Left-Back,23,Australia,5,7,4,11,226,108,8680,7,15,72,22,34,8,2020,2026
 331017,Alex Gersbach,36100,Western Sydney Wanderers,Left-Back,29,Australia,3,16,12,37,621,271,18963,6,22,36,10,28,18,2011,2026
-716810,Phillip Cancar,36100,Western Sydney Wanderers,Centre-Back,24,Croatia,14,8,5,10,219,87,5869,5,2,25,7,21,0,2019,2026
+716810,Phillip Cancar,36100,Western Sydney Wanderers,Centre-Back,24,Croatia,14,8,5,10,221,88,5959,5,2,25,7,21,0,2019,2026
 867763,Aidan Simmons,36100,Western Sydney Wanderers,Right-Back,22,Australia,31,8,4,11,218,113,7864,7,9,53,15,18,9,2019,2026
 749273,Jarrod Carluccio,36100,Western Sydney Wanderers,Right-Back,25,Australia,17,8,3,6,219,118,5859,7,5,64,23,21,2,2019,2026
 1145212,Nathan Barrie,36100,Western Sydney Wanderers,Centre-Back,20,Australia,24,5,2,6,127,50,3466,0,0,5,2,9,4,2022,2026
@@ -349,7 +349,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 262971,Steven Ugarkovic,36100,Western Sydney Wanderers,Defensive Midfield,32,Australia,6,15,6,9,422,349,26204,22,19,251,66,45,5,2012,2026
 732828,Mohamed Al-Taay,36100,Western Sydney Wanderers,Defensive Midfield,25,Iraq,0,8,6,7,221,101,4316,0,2,14,5,13,4,2019,2026
 171307,Joshua Brillante,36100,Western Sydney Wanderers,Defensive Midfield,32,Australia,0,16,10,22,591,373,29467,13,29,133,41,40,18,2010,2025
-146795,Ryan Fraser,71085,Macarthur FC,Left Winger,32,Scotland,10,17,8,21,812,442,26385,57,69,248,106,31,43,2010,2026
+146795,Ryan Fraser,71085,Macarthur FC,Left Winger,32,Scotland,10,17,8,21,813,443,26418,57,69,248,106,31,43,2010,2026
 1419331,Oscar Morrison,36100,Western Sydney Wanderers,Midfield,19,Australia,16,3,2,3,53,34,2627,3,0,0,0,2,0,2024,2026
 293592,Brandon Borrello,36100,Western Sydney Wanderers,Centre-Forward,31,Australia,26,14,8,16,512,286,18998,55,48,361,120,42,17,2013,2026
 1109206,Miguel Di Pizio,36100,Western Sydney Wanderers,Right Winger,20,Australia,10,6,3,11,173,98,5768,17,8,120,39,5,15,2021,2026
@@ -364,27 +364,27 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1413326,Georgio Hassarati,36100,Western Sydney Wanderers,Centre-Forward,17,Australia,29,3,2,7,56,30,1384,19,0,6,4,1,15,2024,2026
 631103,Macklin Freke,25580,Melbourne City FC,Goalkeeper,27,Australia,1,10,2,4,216,78,6976,0,0,0,0,5,0,2017,2026
 50104,Dean Bouzanis,7831,Brisbane Roar,Goalkeeper,36,Australia,1,21,17,26,702,319,27978,0,2,2,0,20,3,2006,2026
-1279984,Lucas Herrington,7831,Brisbane Roar,Centre-Back,17,Australia,0,5,3,12,110,81,6420,3,1,20,7,11,23,2022,2026
+1279984,Lucas Herrington,7831,Brisbane Roar,Centre-Back,17,Australia,0,5,3,14,152,82,6441,3,1,20,7,11,23,2022,2026
 1240369,Oscar Page,7831,Brisbane Roar,Goalkeeper,20,Australia,23,3,2,2,33,0,0,0,0,0,0,0,0,2024,2026
 1056224,Dimitri Valkanis,7831,Brisbane Roar,Centre-Back,21,Australia,3,5,4,7,120,85,7118,4,0,17,4,19,2,2022,2026
-223197,Marius Lode,7831,Brisbane Roar,Centre-Back,32,Norway,5,16,7,19,578,429,34398,2,10,26,7,46,3,2011,2026
-345343,James McGarry,8445,Wellington Phoenix,Left-Back,28,New Zealand,23,13,10,25,535,235,15693,23,14,131,40,25,20,2014,2026
+223197,Marius Lode,7831,Brisbane Roar,Centre-Back,32,Norway,5,16,7,19,579,430,34488,2,10,26,7,47,3,2011,2026
+345343,James McGarry,8445,Wellington Phoenix,Left-Back,28,New Zealand,23,13,10,25,536,236,15723,23,14,131,40,25,21,2014,2026
 710470,Hosine Bility,7831,Brisbane Roar,Centre-Back,25,Australia,15,8,8,24,344,92,6492,0,0,8,3,16,7,2019,2026
 285225,Ben Warland,7831,Brisbane Roar,Centre-Back,28,Australia,4,13,3,5,389,116,8027,4,2,41,12,14,0,2013,2025
 1183452,Austin Ludwik,7831,Brisbane Roar,Centre-Back,28,Australia,6,4,3,3,46,22,1637,2,0,12,2,5,0,2020,2025
-583641,Antonee Burke-Gilroy,7831,Brisbane Roar,Right-Back,27,Australia,21,10,6,9,268,139,9575,4,10,65,18,17,0,2016,2025
+583641,Antonee Burke-Gilroy,7831,Brisbane Roar,Right-Back,27,Australia,21,10,6,9,269,139,9575,4,10,65,18,17,0,2016,2025
 1234224,Mikael Evagorou-Alao,7831,Brisbane Roar,Right-Back,18,Australia,0,2,2,4,27,3,149,0,0,0,0,1,1,2023,2025
+976123,Sam Klein,7831,Brisbane Roar,Central Midfield,21,Australia,8,6,3,6,123,59,4156,9,2,116,40,11,3,2020,2026
 1475753,Jackson O'Reilly,7831,Brisbane Roar,Centre-Back,17,New Zealand,0,2,1,2,5,2,40,0,0,1,0,0,2,2024,2025
-976123,Sam Klein,7831,Brisbane Roar,Central Midfield,21,Australia,8,6,3,6,121,58,4111,9,2,114,40,10,3,2020,2026
 499341,Milorad Stajic,7831,Brisbane Roar,Defensive Midfield,24,Bosnia-Herzegovina,77,10,7,17,269,164,10174,8,2,31,6,40,2,2017,2026
-481692,Georgios Vrakas,7831,Brisbane Roar,Attacking Midfield,24,Greece,10,11,9,18,377,198,9939,18,11,84,30,24,20,2016,2026
+481692,Georgios Vrakas,7831,Brisbane Roar,Attacking Midfield,24,Greece,10,11,9,18,378,198,9939,18,11,84,30,24,20,2016,2026
 322958,Youstin Salas,7831,Brisbane Roar,Defensive Midfield,29,Costa Rica,2,14,8,23,685,326,22655,13,22,20,4,98,7,2013,2026
 1326936,Noah Maieroni,7831,Brisbane Roar,Defensive Midfield,21,Australia,6,3,2,2,32,26,1636,1,2,13,3,10,0,2023,2026
 1099425,Jordan Lauton,7831,Brisbane Roar,Central Midfield,23,Australia,44,6,2,3,88,43,1105,3,3,8,2,4,0,2021,2026
 1168791,Quinn MacNicol,25580,Melbourne City FC,Attacking Midfield,18,Australia,19,5,2,6,113,43,1720,13,1,46,11,3,16,2022,2026
 68327,Jay O'Shea,970,Perth Glory,Central Midfield,38,Ireland,8,22,13,17,888,671,50042,124,90,459,140,63,7,2005,2026
 1484878,Emmett Shaw,7831,Brisbane Roar,Central Midfield,17,Australia,41,2,1,6,35,11,342,0,0,1,0,0,3,2025,2026
-399165,Nick D'Agostino,7831,Brisbane Roar,Centre-Forward,27,Australia,25,12,5,19,411,189,8788,45,17,251,93,23,14,2015,2026
+399165,Nick D'Agostino,7831,Brisbane Roar,Centre-Forward,27,Australia,25,12,5,19,413,189,8788,45,17,251,93,23,14,2015,2026
 1336426,James Durrington,7831,Brisbane Roar,Attacking Midfield,20,Australia,47,3,1,2,20,3,152,0,0,0,0,0,0,2024,2026
 1116294,Justin Vidic,7831,Brisbane Roar,Centre-Forward,22,Australia,17,5,3,3,114,63,2387,13,3,80,28,10,0,2022,2026
 1158287,Jacob Brazete,875,Adelaide United,Left Winger,20,Australia,21,6,4,5,145,60,2601,2,3,41,17,1,0,2021,2026
@@ -403,7 +403,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 145840,Trent Sainsbury,6954,Central Coast Mariners,Centre-Back,34,Australia,4,17,10,39,697,391,31780,22,11,78,26,78,64,2010,2026
 221713,James Donachie,6954,Central Coast Mariners,Centre-Back,32,Australia,2,15,9,14,463,293,24161,6,5,63,15,55,4,2011,2025
 1043709,Diesel Herrington,6954,Central Coast Mariners,Centre-Back,22,Australia,3,5,4,8,154,43,2670,1,0,3,1,6,0,2022,2026
-1089414,Noah McCann,6954,Central Coast Mariners,Centre-Back,21,Scotland,12,5,6,8,50,28,2354,2,0,1,0,2,2,2022,2026
+1089414,Noah McCann,6954,Central Coast Mariners,Centre-Back,21,Scotland,12,5,6,8,51,29,2444,2,0,1,0,2,2,2022,2026
 1121271,Jacob Nasso,7831,Brisbane Roar,Right-Back,20,Australia,2,4,3,3,28,12,508,1,0,15,6,1,0,2021,2026
 1111966,Will Kennedy,5551,Newcastle United Jets,Left-Back,21,Australia,16,5,4,5,136,50,2725,1,0,0,0,11,0,2022,2026
 1238274,Michael Paragalli,6954,Central Coast Mariners,Centre-Back,19,Australia,0,3,2,4,86,52,4239,3,1,0,0,7,0,2023,2025
@@ -428,26 +428,26 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1110942,Abdul Faisal,6954,Central Coast Mariners,Left Winger,19,Iraq,0,5,5,6,124,83,3463,7,3,31,11,7,6,2022,2026
 1413330,Luke Becvinovski,6954,Central Coast Mariners,Centre-Forward,17,Australia,43,3,3,8,52,29,1285,5,0,8,3,1,16,2024,2026
 485792,Christian Theoharous,6954,Central Coast Mariners,Left Winger,25,Australia,7,10,5,10,328,167,5392,12,12,96,41,30,2,2016,2025
-1092671,Marley Leuluai,118373,Auckland FC,Defensive Midfield,20,New Zealand,18,5,7,14,97,39,1944,0,0,2,0,4,4,2022,2026
+1092671,Marley Leuluai,118373,Auckland FC,Defensive Midfield,20,New Zealand,18,5,7,14,100,40,2030,0,0,2,0,4,4,2022,2026
 1154164,James Overy,8054,Sydney FC,Right-Back,19,Australia,2,3,3,11,118,52,2925,1,6,14,6,2,11,2024,2026
 811400,Jake Hollman,8054,Sydney FC,Attacking Midfield,25,Australia,15,8,4,15,256,139,8126,20,10,179,64,24,12,2019,2026
 957466,Oriola Sunday,8054,Sydney FC,Centre-Forward,23,Nigeria,9,6,4,8,211,111,6870,21,12,112,39,12,0,2021,2026
 1575937,Zach Harrison,8054,Sydney FC,Attack,16,Australia,18,2,1,2,5,0,0,0,0,0,0,0,0,2025,2026
-1273796,Jonty Benfield,25580,Melbourne City FC,Goalkeeper,18,Australia,0,3,1,5,14,0,0,0,0,0,0,0,0,2023,2026
-445000,Matheus Rossetto,25580,Melbourne City FC,Central Midfield,30,Brazil,5,13,6,22,603,291,17790,11,9,85,26,30,0,2014,2026
-232964,Emiliano Marcondes,25580,Melbourne City FC,Attacking Midfield,31,Denmark,10,16,9,23,747,368,20419,76,44,257,106,34,30,2011,2026
-194909,Julio Cascante,25580,Melbourne City FC,Centre-Back,33,Costa Rica,18,14,7,28,727,329,25237,21,10,137,45,60,21,2011,2026
-255729,Awer Mabil,25580,Melbourne City FC,Left Winger,31,Australia,11,15,11,34,649,418,22432,64,70,344,129,34,44,2012,2026
-1484877,Luka Demuth,25580,Melbourne City FC,Defensive Midfield,16,Australia,0,2,2,6,32,18,953,1,0,1,1,2,12,2025,2026
 1594872,Denver Minster,875,Adelaide United,Left-Back,16,Australia,88,1,1,2,7,0,0,0,0,0,0,0,0,2026,2026
 1594871,Mitchell Smith,875,Adelaide United,Centre-Forward,19,Australia,27,1,1,2,7,3,151,0,0,4,2,0,0,2026,2026
+1273796,Jonty Benfield,25580,Melbourne City FC,Goalkeeper,18,Australia,0,3,1,5,14,0,0,0,0,0,0,0,0,2023,2026
+445000,Matheus Rossetto,25580,Melbourne City FC,Central Midfield,30,Brazil,5,13,6,22,604,292,17846,12,9,87,27,30,0,2014,2026
+232964,Emiliano Marcondes,25580,Melbourne City FC,Attacking Midfield,31,Denmark,10,16,9,23,752,369,20492,76,44,257,106,34,30,2011,2026
+194909,Julio Cascante,25580,Melbourne City FC,Centre-Back,33,Costa Rica,18,14,7,28,727,329,25237,21,10,137,45,60,21,2011,2026
+255729,Awer Mabil,25580,Melbourne City FC,Left Winger,31,Australia,11,15,11,35,663,419,22497,64,70,345,130,34,44,2012,2026
+1484877,Luka Demuth,25580,Melbourne City FC,Defensive Midfield,16,Australia,0,2,2,6,32,18,953,1,0,1,1,2,12,2025,2026
 1279262,Daniel Solsky,970,Perth Glory,Goalkeeper,23,Australia,29,4,4,6,90,50,4500,0,0,0,0,4,0,2023,2026
-734487,Calem Nieuwenhof,970,Perth Glory,Defensive Midfield,25,Australia,28,8,5,16,274,100,6745,9,6,77,25,18,7,2019,2026
+734487,Calem Nieuwenhof,970,Perth Glory,Defensive Midfield,25,Australia,28,8,5,16,275,100,6745,9,6,77,25,18,7,2019,2026
 1233818,Cher Deng,970,Perth Glory,Centre-Back,21,Australia,18,4,5,6,58,41,3263,1,0,9,3,5,0,2023,2026
 1603333,Pieter Jacobsz,970,Perth Glory,Centre-Forward,25,Australia,17,1,1,1,4,4,233,0,0,0,0,0,0,2026,2026
 188113,Tatsuki Nara,71085,Macarthur FC,Centre-Back,33,Japan,3,17,8,17,738,372,31704,8,2,52,18,58,3,2010,2026
 1544725,Sebastian Kukucka,970,Perth Glory,Right Winger,18,Australia,11,2,2,3,35,21,1404,4,2,3,1,0,0,2025,2026
-1069960,Musa Touré,71085,Macarthur FC,Centre-Forward,20,Australia,99,5,6,15,173,59,2540,13,0,61,22,6,12,2022,2026
+1069960,Musa Touré,71085,Macarthur FC,Centre-Forward,21,Australia,99,5,6,15,174,60,2630,13,1,65,25,7,12,2022,2026
 1129403,Dylan Rose,71085,Macarthur FC,Defensive Midfield,20,Australia,18,6,3,6,170,97,6461,1,1,1,1,22,1,2021,2026
 567150,Kai Kennedy,71085,Macarthur FC,Left Winger,24,Scotland,6,10,11,18,324,212,14696,28,45,185,96,27,15,2017,2026
 1249078,Angus Reid,5551,Newcastle United Jets,Centre-Back,19,Australia,61,3,2,3,63,17,404,0,0,0,0,0,0,2023,2026
@@ -459,25 +459,25 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1373941,John Radimisis,7006,Melbourne Victory,Defender,19,Australia,0,2,2,3,21,19,1381,0,0,0,0,2,0,2024,2026
 1413324,William Kengni,7006,Melbourne Victory,Left-Back,17,Australia,28,3,1,7,44,9,691,0,0,0,0,0,9,2024,2026
 1373953,Malik Olukhale,7006,Melbourne Victory,Right Winger,17,Australia,24,3,2,8,48,13,341,1,1,0,0,0,6,2024,2026
-877945,Henry Gray,8445,Wellington Phoenix,Goalkeeper,21,New Zealand,13,7,8,19,232,109,9651,0,0,1,1,11,9,2020,2026
+877945,Henry Gray,8445,Wellington Phoenix,Goalkeeper,21,New Zealand,13,7,8,19,233,109,9651,0,0,1,1,11,9,2020,2026
 1036209,Dylan Gardiner,8445,Wellington Phoenix,Centre-Back,20,New Zealand,34,6,3,8,154,90,7011,3,0,0,0,14,7,2021,2026
 396561,Max Anderson,8445,Wellington Phoenix,Central Midfield,25,Scotland,8,11,6,15,344,209,13435,16,12,120,45,26,1,2016,2026
-1516176,Ben Trenberth,8445,Wellington Phoenix,Attacking Midfield,16,New Zealand,32,3,2,6,41,22,1650,4,0,0,0,2,4,2024,2026
-739675,Bryce Duke,8445,Wellington Phoenix,Right Winger,25,United States,7,8,7,10,287,180,9432,9,18,117,42,19,0,2019,2026
+1516176,Ben Trenberth,8445,Wellington Phoenix,Attacking Midfield,16,New Zealand,32,3,2,6,42,23,1726,4,0,0,0,2,4,2024,2026
+739675,Bryce Duke,8445,Wellington Phoenix,Right Winger,25,United States,7,8,7,10,288,181,9522,9,18,120,42,19,0,2019,2026
 1147437,Luke Mitchell,8445,Wellington Phoenix,Central Midfield,20,New Zealand,35,5,4,6,108,89,5400,7,0,3,0,7,3,2022,2026
 724808,Riley Bidois,8445,Wellington Phoenix,Centre-Forward,24,New Zealand,11,8,6,14,207,131,7419,57,13,80,45,13,3,2019,2026
 1484876,Emile Katrib,36100,Western Sydney Wanderers,Defender,17,Australia,25,2,2,8,55,26,1705,1,7,0,0,2,15,2025,2026
 1413350,Marcus Savic,36100,Western Sydney Wanderers,Centre-Back,17,Australia,35,3,2,7,63,23,1142,1,2,1,0,3,17,2024,2026
-794777,Nicolas Milanovic,36100,Western Sydney Wanderers,Right Winger,24,Australia,14,7,4,13,221,147,7117,35,15,243,102,25,8,2020,2026
+794777,Nicolas Milanovic,36100,Western Sydney Wanderers,Right Winger,24,Australia,14,7,4,13,222,148,7207,36,15,249,105,25,8,2020,2026
 1387679,Joshua Cetinic,36100,Western Sydney Wanderers,Central Midfield,18,Australia,28,3,2,7,59,22,1527,1,0,0,0,3,2,2024,2026
 1336427,George Plusnin,7831,Brisbane Roar,Goalkeeper,18,Australia,40,2,1,5,14,7,630,0,1,0,0,0,4,2025,2026
 95076,Tom Aldred,7831,Brisbane Roar,Centre-Back,36,Scotland,5,19,13,20,748,480,41602,24,7,141,40,91,0,2008,2026
 589458,Tate Russell,7831,Brisbane Roar,Right-Back,27,Australia,13,10,4,7,239,139,10080,8,7,73,23,9,4,2017,2026
 118451,Tae-hee Nam,7831,Brisbane Roar,Attacking Midfield,35,"Korea, South",10,18,6,26,824,551,40516,141,107,276,110,34,60,2009,2026
-528888,Tyrese Francois,7831,Brisbane Roar,Central Midfield,26,Australia,8,10,7,19,504,149,11430,6,6,76,14,13,9,2017,2026
+528888,Tyrese Francois,7831,Brisbane Roar,Central Midfield,26,Australia,8,10,7,19,505,150,11513,6,6,77,14,13,9,2017,2026
 1378246,Archie Mitchell,7831,Brisbane Roar,Left-Back,17,Australia,53,2,1,5,18,7,560,0,2,2,0,1,6,2025,2026
-536519,Virgiliu Postolachi,7831,Brisbane Roar,Centre-Forward,26,Moldova,9,10,11,30,452,283,14086,35,11,193,63,17,42,2017,2026
-595096,Marko Ilic,7831,Brisbane Roar,Left Winger,27,Germany,11,9,4,9,252,199,11652,36,30,7,3,19,0,2018,2026
+536519,Virgiliu Postolachi,7831,Brisbane Roar,Centre-Forward,26,Moldova,9,10,11,30,453,284,14128,35,11,193,63,17,42,2017,2026
+595096,Marko Ilic,7831,Brisbane Roar,Left Winger,27,Germany,11,9,4,9,253,200,11671,36,30,7,3,19,0,2018,2026
 1333552,Max Court,7831,Brisbane Roar,Attacking Midfield,17,Australia,21,4,3,10,105,42,1591,8,3,6,2,1,9,2023,2026
 1567445,Taj Sorensen,7831,Brisbane Roar,Attack,17,Australia,38,2,1,2,4,0,0,0,0,0,0,0,0,2025,2026
 1400027,Abubakar Rufai,6954,Central Coast Mariners,Goalkeeper,18,Nigeria,20,3,2,4,21,7,541,0,0,0,0,1,1,2024,2026

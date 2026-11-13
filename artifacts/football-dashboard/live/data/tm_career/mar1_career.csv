@@ -94,7 +94,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 823069,Imad Askar,2021,MAR1,12721,False,30,0,0,0,0,0,0,0,0
 823069,Imad Askar,2020,MAR1,12721,False,11,2,0,180,0,0,0,0,0
 823069,Imad Askar,2019,MAR1,12721,False,1,1,0,90,0,0,0,0,0
-902847,Faraji Karmoune,2026,MAR1,6371,False,7,6,0,540,0,0,0,0,0
+902847,Faraji Karmoune,2026,MAR1,6371,False,7,7,0,630,0,0,0,0,1
 902847,Faraji Karmoune,2025,MARP,22944,False,1,1,0,90,0,0,0,0,0
 902847,Faraji Karmoune,2025,MAR1,22944,False,30,28,0,2430,7,0,0,0,3
 902847,Faraji Karmoune,2025,FS,134572,True,2,1,0,90,0,0,0,0,0
@@ -544,7 +544,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 364239,Moussa Koné,2015,C1,260,False,25,4,7,103,0,0,0,0,0
 364239,Moussa Koné,2014,20WC,37497,True,7,6,0,481,1,0,0,0,1
 364239,Moussa Koné,2014,20AC,37497,True,5,5,0,421,2,0,0,0,0
-974042,Younes Najari,2026,MAR1,12721,False,7,5,0,284,2,2,0,0,0
+974042,Younes Najari,2026,MAR1,12721,False,7,6,0,372,2,2,0,0,0
 974042,Younes Najari,2025,MARP,22944,False,1,1,0,90,1,0,0,0,0
 974042,Younes Najari,2025,MAR1,22944,False,22,20,0,1130,1,4,0,0,6
 974042,Younes Najari,2025,MAR1,2068,False,7,5,0,73,1,0,0,0,1
@@ -559,7 +559,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 974042,Younes Najari,2022,MAR1,22944,False,30,21,0,1195,2,2,0,0,2
 974042,Younes Najari,2021,MARP,22944,False,2,1,0,14,0,0,0,0,0
 974042,Younes Najari,2021,MAR1,22944,False,15,12,0,466,1,2,0,0,2
-518828,Saad El Morsli,2026,MAR1,30625,False,7,6,0,538,0,1,0,0,1
+518828,Saad El Morsli,2026,MAR1,30625,False,7,7,0,628,0,1,0,0,1
 518828,Saad El Morsli,2025,MARP,22944,False,1,0,0,0,0,0,0,0,0
 518828,Saad El Morsli,2025,MAR1,22944,False,29,25,0,1989,0,1,0,0,3
 518828,Saad El Morsli,2025,CAFC,22944,False,14,11,0,825,0,0,5,1,0
@@ -874,7 +874,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1338252,Mohamed Adjar,2025,MAR1,59771,False,30,25,0,1350,2,4,0,0,2
 1338252,Mohamed Adjar,2024,MRR1,59771,False,2,2,0,42,2,0,0,0,1
 1338252,Mohamed Adjar,2024,MEC1,59771,False,10,7,0,552,4,1,0,0,0
-1338805,Mounir El Gouje,2026,MAR1,3282,False,7,1,0,4,0,0,0,0,0
+1338805,Mounir El Gouje,2026,MAR1,3282,False,7,2,0,13,0,0,0,0,0
 1338805,Mounir El Gouje,2026,ACL,3282,False,4,1,0,5,0,0,0,0,0
 1338805,Mounir El Gouje,2025,MRR1,59771,False,2,2,0,180,0,0,0,0,1
 1338805,Mounir El Gouje,2025,MARP,59771,False,2,2,0,109,0,1,0,0,0
@@ -918,7 +918,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 902833,Mohamed Hamdi,2018,MARP,59771,False,2,0,0,0,0,0,0,0,0
 902833,Mohamed Hamdi,2017,MARP,59771,False,2,0,0,0,0,0,0,0,0
 902833,Mohamed Hamdi,2016,MARP,59771,False,2,0,0,0,0,0,0,0,0
-1203860,Yassine Jabrane,2026,MAR1,6603,False,7,5,0,52,0,0,0,0,0
+1203860,Yassine Jabrane,2026,MAR1,6603,False,7,6,0,85,0,0,0,0,0
 1203860,Yassine Jabrane,2025,MRR1,59771,False,2,0,0,0,0,0,0,0,0
 1203860,Yassine Jabrane,2025,MARP,59771,False,2,1,0,90,1,0,0,0,0
 1203860,Yassine Jabrane,2025,MAR1,59771,False,30,23,0,1336,3,4,0,0,2
@@ -1074,7 +1074,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 244921,Mohamed Nasser Allah Jamal,2025,MARP,103954,False,2,0,0,0,0,0,0,0,0
 244921,Mohamed Nasser Allah Jamal,2025,MAR1,103954,False,30,12,0,491,0,0,0,0,0
 244921,Mohamed Nasser Allah Jamal,2024,MEC1,103954,False,7,4,0,360,0,1,0,0,0
-1338336,Adil Khalloufi,2026,MAR1,6603,False,7,6,0,482,0,0,0,0,1
+1338336,Adil Khalloufi,2026,MAR1,6603,False,7,7,0,572,0,0,0,0,1
 1338336,Adil Khalloufi,2025,MARP,103954,False,2,2,0,158,0,0,0,0,0
 1338336,Adil Khalloufi,2025,MAR1,103954,False,30,29,0,2594,0,1,0,0,1
 1338336,Adil Khalloufi,2024,MEC1,103954,False,7,3,0,177,0,0,0,0,0
@@ -1085,7 +1085,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1338344,Jalal-Eddine El Khfiyef,2025,MAR1,103954,False,8,5,0,345,1,1,0,0,2
 1338344,Jalal-Eddine El Khfiyef,2025,ACL,9099,False,10,5,0,41,0,0,1,0,0
 1338344,Jalal-Eddine El Khfiyef,2024,MEC1,103954,False,4,2,0,115,0,0,0,0,0
-1105266,Zakaria Ajoughlal,2026,MAR1,74953,False,7,6,0,451,0,1,0,0,1
+1105266,Zakaria Ajoughlal,2026,MAR1,74953,False,7,7,0,541,0,1,0,0,1
 1105266,Zakaria Ajoughlal,2025,MARP,9099,False,1,0,0,0,0,0,0,0,0
 1105266,Zakaria Ajoughlal,2025,MARP,103954,False,2,2,0,128,0,0,0,0,0
 1105266,Zakaria Ajoughlal,2025,MAR1,9099,False,8,2,0,29,1,0,0,0,1
@@ -1135,7 +1135,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1297881,Fahd El Kaaba,2025,MARP,103954,False,2,0,0,0,0,0,0,0,0
 1297881,Fahd El Kaaba,2025,MAR1,103954,False,30,5,0,224,0,0,0,0,0
 1297881,Fahd El Kaaba,2024,MEC1,103954,False,7,7,0,630,2,1,0,0,0
-262895,Soufyan Ahannach,2026,MAR1,12721,False,7,6,0,360,0,1,0,0,0
+262895,Soufyan Ahannach,2026,MAR1,12721,False,7,7,0,436,0,1,0,0,0
 262895,Soufyan Ahannach,2025,MARP,103954,False,2,2,0,210,0,0,0,0,0
 262895,Soufyan Ahannach,2025,MAR1,103954,False,29,27,0,1942,2,4,0,0,4
 262895,Soufyan Ahannach,2024,MEC1,79389,False,4,3,0,196,0,1,0,0,0
@@ -1366,8 +1366,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1139810,Issa M'Bareck,2022,ACL,18921,False,2,0,0,0,0,0,0,0,0
 1262531,Younes El Bahraoui,2026,SAKC,28844,False,1,1,0,90,0,1,1,0,0
 1262531,Younes El Bahraoui,2026,SA1,28844,False,12,11,1,533,0,1,17,5,1
-1262531,Younes El Bahraoui,2026,FS,34903,True,1,1,0,8,0,0,0,0,0
-1262531,Younes El Bahraoui,2026,ACL2,28844,False,3,3,0,237,1,1,9,3,0
+1262531,Younes El Bahraoui,2026,FS,34903,True,2,2,0,71,1,0,0,0,0
+1262531,Younes El Bahraoui,2026,ACL2,28844,False,4,4,0,314,1,3,11,4,0
 1262531,Younes El Bahraoui,2025,MARP,4697,False,2,0,0,0,0,0,0,0,0
 1262531,Younes El Bahraoui,2025,MAR1,4697,False,29,22,2,1143,4,3,0,0,2
 1262531,Younes El Bahraoui,2025,FS,37630,True,4,2,0,165,1,0,0,0,0
@@ -1496,7 +1496,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 823072,Oussama Al Aiz,2020,MARP,12721,False,2,0,0,0,0,0,0,0,0
 823072,Oussama Al Aiz,2020,MAR1,12721,False,30,7,0,508,0,1,0,0,1
 823072,Oussama Al Aiz,2019,MAR1,12721,False,1,1,0,45,0,0,0,0,0
-1303960,Papa Magueye Gaye,2026,E3G1,5650,False,9,4,0,211,1,1,6,2,1
+1303960,Papa Magueye Gaye,2026,E3G1,5650,False,10,5,0,252,1,1,7,3,1
 1303960,Papa Magueye Gaye,2026,CDR,5650,False,1,1,0,31,0,0,0,0,0
 1303960,Papa Magueye Gaye,2025,MARP,12721,False,1,1,0,25,0,0,0,0,0
 1303960,Papa Magueye Gaye,2025,MAR1,12721,False,30,20,4,918,2,0,0,0,5
@@ -1688,7 +1688,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 199704,Yunis Abdelhamid,2012,FR2,11300,False,38,34,0,3060,2,1,0,0,5
 199704,Yunis Abdelhamid,2011,FRC,11300,False,1,0,0,0,0,0,0,0,0
 199704,Yunis Abdelhamid,2011,FR2,11300,False,33,18,0,1498,1,0,0,0,3
-981522,Rachid Ghanimi,2026,MAR1,6603,False,7,3,0,270,0,0,0,0,0
+981522,Rachid Ghanimi,2026,MAR1,6603,False,7,4,0,360,0,0,0,0,0
 981522,Rachid Ghanimi,2025,MARP,6371,False,1,1,0,90,0,0,0,0,0
 981522,Rachid Ghanimi,2025,MAR1,6371,False,30,3,0,270,0,0,0,0,0
 981522,Rachid Ghanimi,2025,FS,3575,True,3,0,0,0,0,0,0,0,0
@@ -1730,7 +1730,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 926806,Abdallah Boukhanfer,2022,MAR1,22935,False,30,13,0,344,0,0,0,0,0
 926806,Abdallah Boukhanfer,2021,MARP,22935,False,2,2,0,120,0,0,0,0,0
 926806,Abdallah Boukhanfer,2021,MAR1,22935,False,30,12,0,725,0,1,0,0,0
-975918,Mohamed Bakhkhach,2026,MAR1,6371,False,7,6,0,378,1,1,0,0,1
+975918,Mohamed Bakhkhach,2026,MAR1,6371,False,7,7,0,423,1,1,0,0,1
 975918,Mohamed Bakhkhach,2025,MARP,22935,False,1,1,0,120,1,0,0,0,0
 975918,Mohamed Bakhkhach,2025,MAR1,22935,False,30,26,0,1031,1,2,0,0,4
 975918,Mohamed Bakhkhach,2024,MRR1,22935,False,2,2,0,124,0,0,0,0,0
@@ -1743,7 +1743,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 975918,Mohamed Bakhkhach,2022,MAR1,22935,False,30,10,0,123,0,0,0,0,1
 975918,Mohamed Bakhkhach,2021,MARP,22935,False,2,2,0,49,1,0,0,0,0
 975918,Mohamed Bakhkhach,2021,MAR1,22935,False,15,2,0,30,0,0,0,0,0
-990144,Nadir Lougmani,2026,MAR1,9099,False,7,3,0,221,0,0,0,0,0
+990144,Nadir Lougmani,2026,MAR1,9099,False,7,4,0,311,0,0,0,0,0
 990144,Nadir Lougmani,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 990144,Nadir Lougmani,2025,MARP,4697,False,2,2,0,210,0,0,0,0,0
 990144,Nadir Lougmani,2025,MAR1,4697,False,30,26,0,2094,0,0,0,0,7
@@ -1778,7 +1778,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1175868,Souhayl Zamrat,2023,MARP,79389,False,2,2,0,160,1,0,0,0,0
 1175868,Souhayl Zamrat,2023,MAR1,79389,False,30,25,0,985,3,2,0,0,2
 1175868,Souhayl Zamrat,2021,MARP,79389,False,1,1,0,90,0,0,0,0,0
-1267109,Youness Dahmani,2026,MAR1,2068,False,7,6,0,272,0,0,0,0,0
+1267109,Youness Dahmani,2026,MAR1,2068,False,7,7,0,308,0,0,0,0,0
 1267109,Youness Dahmani,2026,CAFC,2068,False,2,2,0,95,0,0,0,0,0
 1267109,Youness Dahmani,2025,MRR1,79389,False,2,2,0,180,0,1,0,0,2
 1267109,Youness Dahmani,2025,MARP,79389,False,1,1,0,45,0,0,0,0,0
@@ -1789,7 +1789,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1267109,Youness Dahmani,2024,MAR1,79389,False,12,12,0,820,2,4,0,0,1
 1267109,Youness Dahmani,2023,MARP,38668,False,1,1,0,50,1,0,0,0,0
 1183709,Adam Darazi,2026,FRC,871,False,2,1,0,90,1,0,0,0,0
-1183709,Adam Darazi,2026,FR5G,871,False,4,2,0,110,0,0,0,0,0
+1183709,Adam Darazi,2026,FR5G,871,False,3,2,0,110,0,0,0,0,0
 1183709,Adam Darazi,2025,MARP,12721,False,1,0,0,0,0,0,0,0,0
 1183709,Adam Darazi,2025,MAR1,12721,False,30,8,0,100,0,0,0,0,0
 1183709,Adam Darazi,2024,MEC1,12721,False,2,1,0,90,0,0,0,0,0
@@ -1848,7 +1848,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 588635,Johnstone Omurwa,2019,AFCQ,8987,True,6,1,0,75,0,0,0,0,0
 588635,Johnstone Omurwa,2017,TRIN,8987,True,4,0,0,0,0,0,0,0,0
 588635,Johnstone Omurwa,2017,FS,8987,True,1,0,0,0,0,0,0,0,0
-216954,Anas Zniti,2026,MAR1,30625,False,7,6,0,540,0,0,0,0,0
+216954,Anas Zniti,2026,MAR1,30625,False,7,7,0,630,0,0,0,0,0
 216954,Anas Zniti,2025,MARP,37176,False,1,0,0,0,0,0,0,0,0
 216954,Anas Zniti,2025,MAR1,37176,False,24,17,0,1462,0,0,0,0,0
 216954,Anas Zniti,2025,ACL,37176,False,7,4,0,360,0,0,0,0,0
@@ -1998,7 +1998,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 681691,Amine Aboulfath,2019,MAR1,37415,False,30,26,0,2265,2,1,0,0,4
 681691,Amine Aboulfath,2018,MARP,37415,False,1,0,0,0,0,0,0,0,0
 681691,Amine Aboulfath,2018,MAR1,37415,False,30,8,0,641,1,0,0,0,0
-1027244,Nabil Khali,2026,MAR1,4697,False,7,6,0,484,0,0,0,0,1
+1027244,Nabil Khali,2026,MAR1,4697,False,7,7,0,574,0,0,0,0,2
 1027244,Nabil Khali,2025,MO1N,30686,False,10,10,0,709,2,3,0,0,1
 1027244,Nabil Khali,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 1027244,Nabil Khali,2025,MAR1,6603,False,22,12,0,646,0,0,0,0,3
@@ -2060,7 +2060,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 255642,Saad Ait Khorsa,2014,FS,34903,True,4,4,0,297,0,1,0,0,0
 255642,Saad Ait Khorsa,2013,MAR1,22944,False,30,4,0,310,1,0,0,0,0
 255642,Saad Ait Khorsa,2012,MAR1,22944,False,1,1,0,90,0,0,0,0,0
-1274436,Ayoub Maamouri,2026,MAR1,4697,False,7,6,0,445,2,1,0,0,1
+1274436,Ayoub Maamouri,2026,MAR1,4697,False,7,7,0,514,2,1,0,0,1
 1274436,Ayoub Maamouri,2025,MARP,2068,False,1,1,0,76,0,0,0,0,0
 1274436,Ayoub Maamouri,2025,MAR1,2068,False,30,14,0,655,1,0,0,0,1
 1274436,Ayoub Maamouri,2024,MEC1,2068,False,10,2,2,135,0,0,0,0,1
@@ -2078,7 +2078,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1113613,Karim Lagrouch,2023,MAR1,2073,False,30,24,0,1183,2,1,0,0,1
 1113613,Karim Lagrouch,2022,MARP,2073,False,3,1,0,90,0,0,0,0,0
 1113613,Karim Lagrouch,2022,MAR1,2073,False,21,6,0,80,0,0,0,0,1
-352125,Nassim Ouammou,2026,ZYP1,42109,False,8,5,0,403,0,0,0,0,2
+352125,Nassim Ouammou,2026,ZYP1,42109,False,9,6,0,493,0,0,0,0,2
+352125,Nassim Ouammou,2026,CPO1,42109,False,1,0,0,0,0,0,0,0,0
 352125,Nassim Ouammou,2025,MARP,22935,False,1,0,0,0,0,0,0,0,0
 352125,Nassim Ouammou,2025,MAR1,22935,False,30,14,0,870,0,0,0,0,0
 352125,Nassim Ouammou,2024,FRC,750,False,6,1,0,54,0,0,0,0,0
@@ -2176,7 +2177,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1133028,Redouane Mennioui,2024,MARP,4697,False,2,1,0,90,0,0,0,0,0
 1133028,Redouane Mennioui,2023,MARP,39084,False,2,2,0,210,0,0,0,0,0
 1133028,Redouane Mennioui,2022,MARP,39084,False,1,1,0,90,0,0,0,0,0
-841736,Hamza El Janati,2026,MAR1,30625,False,7,6,0,443,1,1,0,0,1
+841736,Hamza El Janati,2026,MAR1,30625,False,7,7,0,533,1,1,0,0,2
 841736,Hamza El Janati,2025,MARP,4697,False,2,2,0,134,0,0,0,0,0
 841736,Hamza El Janati,2025,MAR1,4697,False,30,25,0,1557,5,0,0,0,5
 841736,Hamza El Janati,2024,MEC1,3282,False,5,1,0,80,0,1,0,0,1
@@ -2226,7 +2227,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 245346,Brahim El Bahraoui,2012,MAR1,22944,False,30,16,0,929,1,0,0,0,3
 245346,Brahim El Bahraoui,2012,FS,34903,True,1,1,0,29,0,0,0,0,0
 245346,Brahim El Bahraoui,2011,MAR1,22944,False,30,8,0,470,1,0,0,0,2
-790406,Zakaria Bahrou,2026,MAR1,30625,False,7,6,0,422,1,0,0,0,0
+790406,Zakaria Bahrou,2026,MAR1,30625,False,7,7,0,467,1,0,0,0,0
 790406,Zakaria Bahrou,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 790406,Zakaria Bahrou,2025,MAR1,74953,False,30,7,0,462,1,0,0,0,1
 790406,Zakaria Bahrou,2024,MEC1,74953,False,7,0,0,0,0,0,0,0,0
@@ -2274,24 +2275,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 440323,Ismael Benktib,2017,ES2P,1531,False,6,0,0,0,0,0,0,0,0
 440323,Ismael Benktib,2017,CDR,1531,False,3,0,0,0,0,0,0,0,0
 440323,Ismael Benktib,2016,FS,37630,True,2,1,0,90,0,0,0,0,0
-807438,Hamza Darai,2026,LPL,125436,False,3,0,0,0,0,0,0,0,0
-807438,Hamza Darai,2025,LPL2,125436,False,5,5,0,450,0,0,0,0,0
-807438,Hamza Darai,2025,LPL,125436,False,16,15,0,1254,8,3,0,0,3
-807438,Hamza Darai,2024,MEC1,9100,False,6,0,0,0,0,0,0,0,0
-807438,Hamza Darai,2024,MARP,9100,False,4,4,0,360,1,0,0,0,0
-807438,Hamza Darai,2024,MAR1,9100,False,30,26,0,2255,9,4,0,0,3
-807438,Hamza Darai,2024,FS,34903,True,2,1,0,90,0,0,0,0,0
-807438,Hamza Darai,2023,MARP,14462,False,1,1,0,90,0,0,0,0,0
-807438,Hamza Darai,2022,MARP,14462,False,3,3,0,270,2,0,0,0,0
-807438,Hamza Darai,2022,MAR1,14462,False,30,19,0,999,1,2,0,0,2
-807438,Hamza Darai,2021,MARP,14462,False,2,1,0,43,0,0,0,0,0
-807438,Hamza Darai,2021,MAR1,14462,False,30,19,0,254,0,0,0,0,2
-807438,Hamza Darai,2020,MARP,14462,False,1,0,0,0,0,0,0,0,0
-807438,Hamza Darai,2020,MAR1,14462,False,30,15,0,281,1,1,0,0,1
-807438,Hamza Darai,2020,20AC,37630,True,3,1,0,28,0,0,0,0,0
-807438,Hamza Darai,2019,MAR1,14462,False,10,2,0,109,0,0,0,0,1
-306668,Amine Oudrhiri,2026,PO2,2432,False,7,6,0,392,0,0,0,0,3
-306668,Amine Oudrhiri,2026,EL,2432,False,3,3,0,270,0,1,1,0,0
+306668,Amine Oudrhiri,2026,PO2,2432,False,8,6,0,392,0,0,0,0,3
+306668,Amine Oudrhiri,2026,EL,2432,False,4,4,0,284,0,1,1,0,0
 306668,Amine Oudrhiri,2025,MARP,3282,False,1,1,0,90,0,0,0,0,0
 306668,Amine Oudrhiri,2025,MAR1,3282,False,30,26,0,712,0,0,0,0,2
 306668,Amine Oudrhiri,2024,POPO,2425,False,3,2,0,71,0,0,0,0,1
@@ -2333,6 +2318,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 306668,Amine Oudrhiri,2013,FR1,995,False,1,0,0,0,0,0,0,0,0
 306668,Amine Oudrhiri,2012,FRC,1154,False,2,1,0,90,1,0,0,0,1
 306668,Amine Oudrhiri,2012,FR3,1154,False,38,29,0,2121,2,0,0,0,5
+807438,Hamza Darai,2026,LPL,125436,False,3,0,0,0,0,0,0,0,0
+807438,Hamza Darai,2025,LPL2,125436,False,5,5,0,450,0,0,0,0,0
+807438,Hamza Darai,2025,LPL,125436,False,16,15,0,1254,8,3,0,0,3
+807438,Hamza Darai,2024,MEC1,9100,False,6,0,0,0,0,0,0,0,0
+807438,Hamza Darai,2024,MARP,9100,False,4,4,0,360,1,0,0,0,0
+807438,Hamza Darai,2024,MAR1,9100,False,30,26,0,2255,9,4,0,0,3
+807438,Hamza Darai,2024,FS,34903,True,2,1,0,90,0,0,0,0,0
+807438,Hamza Darai,2023,MARP,14462,False,1,1,0,90,0,0,0,0,0
+807438,Hamza Darai,2022,MARP,14462,False,3,3,0,270,2,0,0,0,0
+807438,Hamza Darai,2022,MAR1,14462,False,30,19,0,999,1,2,0,0,2
+807438,Hamza Darai,2021,MARP,14462,False,2,1,0,43,0,0,0,0,0
+807438,Hamza Darai,2021,MAR1,14462,False,30,19,0,254,0,0,0,0,2
+807438,Hamza Darai,2020,MARP,14462,False,1,0,0,0,0,0,0,0,0
+807438,Hamza Darai,2020,MAR1,14462,False,30,15,0,281,1,1,0,0,1
+807438,Hamza Darai,2020,20AC,37630,True,3,1,0,28,0,0,0,0,0
+807438,Hamza Darai,2019,MAR1,14462,False,10,2,0,109,0,0,0,0,1
 881744,Mohamed El Ouardi,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 881744,Mohamed El Ouardi,2025,MAR1,6603,False,30,2,0,180,0,0,0,0,0
 881744,Mohamed El Ouardi,2025,CAFC,6603,False,10,0,0,0,0,0,0,0,0
@@ -2350,9 +2351,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 881744,Mohamed El Ouardi,2020,ACL,6603,False,5,0,0,0,0,0,0,0,0
 667995,Tawfik Bentayeb,2026,FS,3575,True,1,1,0,1,0,0,0,0,0
 667995,Tawfik Bentayeb,2026,ELQ,58,False,1,0,0,0,0,0,0,0,0
-667995,Tawfik Bentayeb,2026,EL,58,False,3,2,0,41,0,0,1,1,0
+667995,Tawfik Bentayeb,2026,EL,58,False,4,3,0,45,0,0,2,2,0
 667995,Tawfik Bentayeb,2026,CCB,58,False,1,1,0,78,0,0,0,0,0
-667995,Tawfik Bentayeb,2026,BE1,58,False,8,7,0,345,3,1,10,6,0
+667995,Tawfik Bentayeb,2026,BE1,58,False,9,7,0,345,3,1,10,6,0
 667995,Tawfik Bentayeb,2026,AFCQ,3575,True,2,1,1,6,0,0,0,0,0
 667995,Tawfik Bentayeb,2025,MRR1,79389,False,2,0,0,0,0,0,0,0,0
 667995,Tawfik Bentayeb,2025,MAR1,79389,False,2,0,1,0,0,0,0,0,0
@@ -2458,7 +2459,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1375920,Moussa Koté,2024,MARP,12721,False,1,0,0,0,0,0,0,0,0
 1375920,Moussa Koté,2024,MAR1,12721,False,10,1,0,8,0,0,0,0,0
 1302320,Abdoulaye Sanogo,2026,UAEP,5432,False,1,1,0,120,0,0,0,0,0
-1302320,Abdoulaye Sanogo,2026,UAE1,5432,False,6,2,0,180,0,0,0,0,1
+1302320,Abdoulaye Sanogo,2026,UAE1,5432,False,6,3,0,270,0,0,0,0,1
 1302320,Abdoulaye Sanogo,2025,MARP,14462,False,1,0,0,0,0,0,0,0,0
 1302320,Abdoulaye Sanogo,2025,MAR1,14462,False,30,25,0,2165,1,0,0,0,1
 1302320,Abdoulaye Sanogo,2024,ACL,1955,False,10,9,0,810,0,0,1,0,0
@@ -2548,7 +2549,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1044891,Amine Azri,2023,CAFC,6371,False,4,4,0,110,0,1,0,0,0
 1044891,Amine Azri,2022,MARP,6371,False,4,2,0,130,0,0,0,0,0
 1044891,Amine Azri,2022,MAR1,6371,False,30,27,0,1578,1,4,0,0,3
-182912,Ange-Freddy Plumain,2026,ZYP1,16024,False,6,3,0,44,0,0,0,0,0
+182912,Ange-Freddy Plumain,2026,ZYP1,16024,False,7,3,0,44,0,0,0,0,0
 182912,Ange-Freddy Plumain,2026,CPO1,16024,False,1,1,0,90,0,1,0,0,0
 182912,Ange-Freddy Plumain,2026,CNLB,19755,True,4,4,0,312,0,1,0,0,0
 182912,Ange-Freddy Plumain,2025,MARP,22935,False,1,0,0,0,0,0,0,0,0
@@ -2572,7 +2573,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 182912,Ange-Freddy Plumain,2022,GCQU,19755,True,2,2,0,118,0,1,0,0,0
 182912,Ange-Freddy Plumain,2022,CNLB,19755,True,6,5,0,317,0,0,0,0,0
 182912,Ange-Freddy Plumain,2021,TR2,152,False,2,0,0,0,0,0,0,0,0
-182912,Ange-Freddy Plumain,2021,ISRF,1017,False,10,10,0,832,2,0,0,0,0
+182912,Ange-Freddy Plumain,2021,ISRF,1017,False,10,10,0,832,2,1,0,0,0
 182912,Ange-Freddy Plumain,2021,ISR1,1017,False,1,0,0,0,0,0,0,0,0
 182912,Ange-Freddy Plumain,2020,TRP,152,False,1,1,0,45,0,0,0,0,0
 182912,Ange-Freddy Plumain,2020,TR2,152,False,17,6,3,325,0,0,9,2,0
@@ -2638,7 +2639,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 853693,Broulaye Seydou Sidibe,2021,TUN1,51774,False,14,0,0,0,0,0,0,0,0
 853693,Broulaye Seydou Sidibe,2021,TPL2,51774,False,1,0,0,0,0,0,0,0,0
 853693,Broulaye Seydou Sidibe,2020,CAFC,1995,False,4,3,0,91,0,0,0,0,0
-731876,Montassir Lahtimi,2026,MAR1,6371,False,7,6,0,491,1,0,0,0,0
+731876,Montassir Lahtimi,2026,MAR1,6371,False,7,7,0,581,1,0,0,0,0
 731876,Montassir Lahtimi,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 731876,Montassir Lahtimi,2025,MAR1,74953,False,30,22,0,1161,5,3,0,0,3
 731876,Montassir Lahtimi,2024,TR1,449,False,7,0,0,0,0,0,0,0,0
@@ -2906,7 +2907,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1176891,Youssef Dalouzi,2023,MARP,2073,False,2,2,0,171,1,0,0,0,0
 1176891,Youssef Dalouzi,2023,MAR1,2073,False,30,14,0,1007,1,0,0,0,1
 546225,Mohamed Bouchouari,2026,NLP,132,False,1,1,0,45,0,0,1,1,1
-546225,Mohamed Bouchouari,2026,NL2,132,False,9,4,0,123,1,0,3,1,0
+546225,Mohamed Bouchouari,2026,NL2,132,False,10,4,0,123,1,0,3,1,0
 546225,Mohamed Bouchouari,2025,MARP,6603,False,1,1,0,90,0,0,0,0,0
 546225,Mohamed Bouchouari,2025,MAR1,6603,False,30,14,0,680,0,1,0,0,1
 546225,Mohamed Bouchouari,2025,FR2,11273,False,3,3,0,270,0,0,4,1,0
@@ -2938,7 +2939,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 217111,Hakim Ziyech,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 217111,Hakim Ziyech,2025,MAR1,6603,False,26,12,4,831,8,2,0,0,2
 217111,Hakim Ziyech,2025,CAFC,6603,False,9,4,1,277,1,0,29,9,0
-217111,Hakim Ziyech,2025,BRA1,537,False,8,6,0,355,0,0,15,5,0
+217111,Hakim Ziyech,2025,BRA1,537,False,9,6,0,355,0,0,15,5,0
 217111,Hakim Ziyech,2025,ACLE,26091,False,3,0,0,0,0,0,0,0,0
 217111,Hakim Ziyech,2025,ACEQ,26091,False,1,0,0,0,0,0,0,0,0
 217111,Hakim Ziyech,2024,TRS,141,False,1,1,0,60,0,0,1,0,0
@@ -3060,7 +3061,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1033958,Zakaria Fatihi,2023,MAR1,2073,False,30,20,0,632,0,1,0,0,1
 1033958,Zakaria Fatihi,2022,MARP,2073,False,3,0,0,0,0,0,0,0,0
 1033958,Zakaria Fatihi,2022,MAR1,2073,False,30,4,0,123,0,0,0,0,1
-988205,Mehdi Mchakhchekh,2026,AZ1,46710,False,6,6,0,337,1,0,0,0,1
+988205,Mehdi Mchakhchekh,2026,AZ1,46710,False,7,7,0,400,1,0,0,0,1
 988205,Mehdi Mchakhchekh,2026,ASPK,46710,False,1,1,0,46,0,0,0,0,1
 988205,Mehdi Mchakhchekh,2025,MARP,2068,False,1,1,0,90,1,0,0,0,1
 988205,Mehdi Mchakhchekh,2025,MAR1,2068,False,30,12,0,431,0,0,0,0,1
@@ -3146,8 +3147,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1246533,Taha Majni,2026,PLIC,6945,False,2,1,0,45,0,0,0,0,0
 1246533,Taha Majni,2026,GBFL,6945,False,3,2,1,180,0,1,0,0,0
 1246533,Taha Majni,2026,GB21,6945,False,4,1,0,69,0,0,0,0,0
-1246533,Taha Majni,2026,FS,37630,True,10,1,0,74,0,0,0,0,0
-1246533,Taha Majni,2026,FS,34903,True,1,0,0,0,0,0,0,0,0
+1246533,Taha Majni,2026,FS,37630,True,7,1,0,74,0,0,0,0,0
+1246533,Taha Majni,2026,FS,34903,True,2,1,0,8,0,0,0,0,0
 1246533,Taha Majni,2025,MRR1,79389,False,2,2,0,11,0,0,0,0,0
 1246533,Taha Majni,2025,MARP,79389,False,1,0,0,0,0,0,0,0,0
 1246533,Taha Majni,2025,MAR1,79389,False,30,15,4,1079,0,0,0,0,4
@@ -3159,7 +3160,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1246533,Taha Majni,2024,20WC,37630,True,7,6,0,220,0,0,3,1,0
 1246533,Taha Majni,2023,FS,37524,True,2,1,0,20,0,0,0,0,0
 1074351,Hossam Essadak,2026,SA1,27221,False,7,2,0,90,0,1,2,1,0
-1074351,Hossam Essadak,2026,FS,34903,True,1,1,0,90,0,1,0,0,0
+1074351,Hossam Essadak,2026,FS,34903,True,2,2,0,172,0,1,0,0,0
 1074351,Hossam Essadak,2025,MRR1,79389,False,2,0,0,0,0,0,0,0,0
 1074351,Hossam Essadak,2025,MARP,79389,False,1,0,0,0,0,0,0,0,0
 1074351,Hossam Essadak,2025,MAR1,79389,False,30,13,4,837,0,2,0,0,5
@@ -3210,7 +3211,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 593478,Hamza Bousqal,2019,FS,37630,True,5,0,0,0,0,0,0,0,0
 593478,Hamza Bousqal,2018,FS,37630,True,2,2,0,48,0,0,0,0,0
 593478,Hamza Bousqal,2017,FS,37630,True,4,3,0,270,0,0,0,0,2
-496570,Badr Gaddarine,2026,MAR1,30625,False,7,4,0,186,0,0,0,0,0
+496570,Badr Gaddarine,2026,MAR1,30625,False,7,5,0,276,0,0,0,0,1
 496570,Badr Gaddarine,2025,MARP,12721,False,1,1,0,120,0,0,0,0,0
 496570,Badr Gaddarine,2025,MAR1,12721,False,30,26,0,2264,0,2,0,0,1
 496570,Badr Gaddarine,2024,MEC1,12721,False,2,1,0,90,0,0,0,0,0
@@ -3452,6 +3453,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 837173,Abdellah Farah,2022,MARP,14462,False,3,2,0,180,0,0,0,0,0
 837173,Abdellah Farah,2022,MAR1,14462,False,30,23,0,1611,6,0,0,0,4
 837173,Abdellah Farah,2022,FS,34903,True,4,1,0,70,0,0,0,0,0
+837173,Abdellah Farah,2022,ARBC,2068,False,4,0,0,0,0,0,0,0,0
 837173,Abdellah Farah,2021,MARP,2068,False,3,2,0,138,0,2,0,0,0
 837173,Abdellah Farah,2021,MAR1,2068,False,30,12,1,431,1,0,0,0,2
 837173,Abdellah Farah,2021,FS,34903,True,2,2,0,180,0,0,0,0,0
@@ -3530,7 +3532,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 863629,Yassine Belfadla,2020,MARP,22944,False,1,0,0,0,0,0,0,0,0
 863629,Yassine Belfadla,2020,MAR1,22944,False,22,0,0,0,0,0,0,0,0
 481198,Ramiro Vaca,2026,UAEP,26351,False,1,1,0,85,0,0,0,0,0
-481198,Ramiro Vaca,2026,UAE1,26351,False,5,1,0,90,1,0,4,2,0
+481198,Ramiro Vaca,2026,UAE1,26351,False,5,2,0,171,1,0,6,2,0
 481198,Ramiro Vaca,2026,FS,5233,True,2,2,0,90,0,0,0,0,0
 481198,Ramiro Vaca,2025,POWM,5233,True,2,2,0,158,0,1,10,3,1
 481198,Ramiro Vaca,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
@@ -3586,7 +3588,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 481198,Ramiro Vaca,2015,WMQ4,5233,True,6,0,0,0,0,0,0,0,0
 1264630,Mouhssin Zouhar,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
 1264630,Mouhssin Zouhar,2023,MARP,85473,False,2,1,0,90,0,0,0,0,0
-441982,Hamza Elowasti,2026,MAR1,30625,False,7,6,0,515,3,0,0,0,1
+441982,Hamza Elowasti,2026,MAR1,30625,False,7,7,0,585,3,0,0,0,1
 441982,Hamza Elowasti,2025,MARP,6603,False,1,1,0,14,0,0,0,0,0
 441982,Hamza Elowasti,2025,MAR1,6603,False,30,10,5,525,0,1,0,0,1
 441982,Hamza Elowasti,2025,CAFC,6603,False,10,6,2,186,0,0,2,0,0
@@ -3632,7 +3634,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 885704,Kamal Bilal,2020,MAR1,37176,False,16,0,0,0,0,0,0,0,0
 885704,Kamal Bilal,2020,CAFS,37176,False,1,0,0,0,0,0,0,0,0
 885704,Kamal Bilal,2020,CAFC,37176,False,6,0,0,0,0,0,0,0,0
-904465,Taoufik Razko,2026,MAR1,30625,False,7,5,0,181,2,0,0,0,1
+904465,Taoufik Razko,2026,MAR1,30625,False,7,6,0,201,2,0,0,0,2
 904465,Taoufik Razko,2025,MARP,9099,False,1,1,0,13,0,0,0,0,0
 904465,Taoufik Razko,2025,MAR1,9099,False,30,11,4,236,0,0,0,0,0
 904465,Taoufik Razko,2025,ACL,9099,False,16,1,3,3,0,0,0,0,0
@@ -3880,7 +3882,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 234900,Mehdi El Jourbaoui,2018,MARP,74953,False,2,0,0,0,0,0,0,0,0
 234900,Mehdi El Jourbaoui,2017,MARP,74953,False,1,0,0,0,0,0,0,0,0
 234900,Mehdi El Jourbaoui,2015,MAR1,9099,False,14,0,0,0,0,0,0,0,0
-727075,Mohamed Ferni,2026,MAR1,74953,False,7,3,0,270,0,0,0,0,0
+727075,Mohamed Ferni,2026,MAR1,74953,False,7,4,0,360,0,0,0,0,0
 727075,Mohamed Ferni,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 727075,Mohamed Ferni,2025,MAR1,74953,False,30,5,0,450,0,0,0,0,0
 727075,Mohamed Ferni,2024,MEC1,74953,False,7,1,0,90,0,0,0,0,0
@@ -3907,6 +3909,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 499511,Marouane Fakhr,2023,MAR1,2068,False,15,0,0,0,0,0,0,0,0
 499511,Marouane Fakhr,2022,MARP,2068,False,5,0,0,0,0,0,0,0,0
 499511,Marouane Fakhr,2022,MAR1,2068,False,30,3,9,270,0,0,0,0,0
+499511,Marouane Fakhr,2022,ARBC,2068,False,4,0,0,0,0,0,0,0,0
 499511,Marouane Fakhr,2022,ACL,2068,False,10,1,2,90,0,0,0,0,1
 499511,Marouane Fakhr,2021,MARP,2068,False,3,0,0,0,0,0,0,0,0
 499511,Marouane Fakhr,2021,MAR1,22941,False,15,2,0,180,0,0,0,0,0
@@ -3941,7 +3944,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 556868,Aissa Sioudi,2018,MAR1,30650,False,13,1,0,90,0,0,0,0,0
 556868,Aissa Sioudi,2017,MARP,30650,False,1,0,0,0,0,0,0,0,0
 556868,Aissa Sioudi,2017,MAR1,9100,False,20,0,0,0,0,0,0,0,0
-855878,James Ajako,2026,MAR1,74953,False,7,5,0,450,1,0,0,0,0
+855878,James Ajako,2026,MAR1,74953,False,7,6,0,540,1,0,0,0,0
 855878,James Ajako,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 855878,James Ajako,2025,MAR1,74953,False,30,25,0,2166,0,0,0,0,4
 855878,James Ajako,2024,MEC1,74953,False,5,1,0,90,0,0,0,0,0
@@ -3970,6 +3973,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 858917,Abdessamad Badaoui,2023,MAR1,2068,False,15,8,0,391,1,0,0,0,1
 858917,Abdessamad Badaoui,2022,MARP,2068,False,5,4,0,390,0,0,0,0,0
 858917,Abdessamad Badaoui,2022,MAR1,2068,False,30,13,2,1017,0,0,0,0,4
+858917,Abdessamad Badaoui,2022,ARBC,2068,False,4,0,0,0,0,0,0,0,0
 858917,Abdessamad Badaoui,2022,ACL,2068,False,10,6,0,382,0,0,1,0,0
 858917,Abdessamad Badaoui,2021,MARP,2068,False,3,1,0,22,0,0,0,0,0
 858917,Abdessamad Badaoui,2021,MAR1,79390,False,15,3,0,171,0,0,0,0,0
@@ -4065,7 +4069,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 558706,Zouheir El Hachemi,2017,MAR1,18702,False,17,14,0,1221,0,0,0,0,0
 558706,Zouheir El Hachemi,2017,FS,34903,True,1,0,0,0,0,0,0,0,0
 558706,Zouheir El Hachemi,2016,MAR1,18702,False,5,1,0,90,0,0,0,0,0
-1331844,Mohamed Abdouramane,2026,MAR1,74953,False,7,3,0,270,0,0,0,0,0
+1331844,Mohamed Abdouramane,2026,MAR1,74953,False,7,4,0,360,0,0,0,0,0
 1331844,Mohamed Abdouramane,2026,FS,14163,True,1,1,0,90,0,0,0,0,0
 1331844,Mohamed Abdouramane,2026,AFCQ,14163,True,2,2,0,180,0,0,0,0,0
 1331844,Mohamed Abdouramane,2025,TUN1,22812,False,13,12,0,985,0,1,0,0,2
@@ -4077,7 +4081,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1331844,Mohamed Abdouramane,2024,AFCQ,14163,True,4,2,0,180,0,0,0,0,0
 1331844,Mohamed Abdouramane,2023,WMQ2,14163,True,6,2,0,145,0,0,0,0,0
 1331844,Mohamed Abdouramane,2023,CAFC,38869,False,2,0,0,0,0,0,0,0,0
-1060545,Ousmane Diallo,2026,MAR1,74953,False,7,4,0,221,0,0,0,0,0
+1060545,Ousmane Diallo,2026,MAR1,74953,False,7,5,0,311,0,0,0,0,0
 1060545,Ousmane Diallo,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 1060545,Ousmane Diallo,2025,MAR1,74953,False,30,7,0,506,1,0,0,0,2
 1060545,Ousmane Diallo,2024,AFCQ,3674,True,6,1,0,8,0,0,0,0,0
@@ -4092,7 +4096,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172376,Soufiane Chakerni,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 1172376,Soufiane Chakerni,2025,MAR1,74953,False,23,0,0,0,0,0,0,0,0
 1172376,Soufiane Chakerni,2024,MEC1,59679,False,6,1,0,90,0,0,0,0,0
-1242834,Mohamed Naoufal Tahiri,2026,MAR1,9099,False,1,1,0,1,0,0,0,0,0
+1242834,Mohamed Naoufal Tahiri,2026,MAR1,9099,False,3,1,0,1,0,0,0,0,0
 1242834,Mohamed Naoufal Tahiri,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 1242834,Mohamed Naoufal Tahiri,2025,MAR1,74953,False,23,20,0,1531,2,0,0,0,3
 1242834,Mohamed Naoufal Tahiri,2024,MEC1,22938,False,7,4,0,326,1,0,0,0,0
@@ -4103,7 +4107,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1203684,Abdellatif El Bajjani,2024,MEC1,74953,False,7,2,0,180,0,0,0,0,0
 1203684,Abdellatif El Bajjani,2024,MARP,74953,False,2,0,0,0,0,0,0,0,0
 1203684,Abdellatif El Bajjani,2024,MAR1,74953,False,30,20,0,732,1,0,0,0,6
-1076082,Anass El Ghannouj,2026,MAR1,74953,False,7,3,0,124,0,0,0,0,1
+1076082,Anass El Ghannouj,2026,MAR1,74953,False,7,4,0,214,0,0,0,0,1
 1076082,Anass El Ghannouj,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 1076082,Anass El Ghannouj,2025,MAR1,74953,False,30,10,0,597,0,0,0,0,1
 1076082,Anass El Ghannouj,2024,MEC1,74953,False,7,1,0,26,0,0,0,0,0
@@ -4212,7 +4216,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1263222,Yazid Faffa,2023,MARP,97695,False,2,2,0,180,0,0,0,0,0
 1263222,Yazid Faffa,2022,MARP,97695,False,2,2,0,180,0,0,0,0,0
 1263222,Yazid Faffa,2021,MAR1,6603,False,1,1,0,7,0,0,0,0,0
-520270,Mohamed Kamal,2026,MAR1,74953,False,7,6,0,478,0,0,0,0,1
+520270,Mohamed Kamal,2026,MAR1,74953,False,7,7,0,568,0,0,0,0,1
 520270,Mohamed Kamal,2025,MARP,74953,False,1,0,0,0,0,0,0,0,0
 520270,Mohamed Kamal,2025,MAR1,74953,False,23,20,0,1224,0,2,0,0,4
 520270,Mohamed Kamal,2024,SA2L,26587,False,3,0,0,0,0,0,0,0,0
@@ -4286,7 +4290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1133038,Youssef Lakhal,2023,MAR1,74953,False,30,5,0,122,2,0,0,0,2
 1133038,Youssef Lakhal,2021,MARP,28210,False,1,0,0,0,0,0,0,0,0
 1133038,Youssef Lakhal,2020,MARP,28210,False,1,0,0,0,0,0,0,0,0
-1317901,Jawad Essaghir,2026,MAR1,74953,False,7,6,0,512,2,1,0,0,1
+1317901,Jawad Essaghir,2026,MAR1,74953,False,7,7,0,602,2,1,0,0,1
 1317901,Jawad Essaghir,2025,MARP,37415,False,1,0,0,0,0,0,0,0,0
 1317901,Jawad Essaghir,2025,MAR1,74953,False,4,0,0,0,0,0,0,0,0
 1317901,Jawad Essaghir,2024,MEC1,74953,False,7,7,0,576,3,1,0,0,0
@@ -4329,7 +4333,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 623875,Ismail El Harrach,2017,MARP,18702,False,1,0,0,0,0,0,0,0,0
 1468249,Brahim El Yamlahi,2026,MAR1,59814,False,7,0,0,0,0,0,0,0,0
 1468249,Brahim El Yamlahi,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
-518780,Rabie Ajlid,2026,MAR1,59814,False,7,6,0,540,0,0,0,0,0
+518780,Rabie Ajlid,2026,MAR1,59814,False,7,7,0,630,0,0,0,0,0
 518780,Rabie Ajlid,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
 518780,Rabie Ajlid,2017,MARP,22938,False,2,1,0,90,0,0,0,0,0
 518780,Rabie Ajlid,2016,MARP,22938,False,2,0,0,0,0,0,0,0,0
@@ -4356,7 +4360,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1224451,Said Lbeyd,2015,MAR1,22935,False,30,0,0,0,0,0,0,0,0
 1410434,Lahcen Kabiri,2026,MAR1,59814,False,4,2,0,3,0,0,0,0,0
 1410434,Lahcen Kabiri,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
-1546947,Nizar Cherki,2026,MAR1,59814,False,7,6,0,540,0,0,0,0,1
+1546947,Nizar Cherki,2026,MAR1,59814,False,7,7,0,630,0,0,0,0,1
 1546947,Nizar Cherki,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
 1546948,Souhail Amri,2026,MAR1,59814,False,7,0,0,0,0,0,0,0,0
 1546948,Souhail Amri,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
@@ -4366,15 +4370,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1546948,Souhail Amri,2022,KLUB,6603,False,1,0,0,0,0,0,0,0,0
 1546948,Souhail Amri,2022,CAFS,6603,False,1,0,0,0,0,0,0,0,0
 1546948,Souhail Amri,2022,ACL,6603,False,14,0,0,0,0,0,0,0,0
-1410436,Mohamed Belkaida,2026,MAR1,59814,False,7,6,0,540,0,0,0,0,2
+1410436,Mohamed Belkaida,2026,MAR1,59814,False,7,7,0,630,0,0,0,0,2
 1410436,Mohamed Belkaida,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
-1410428,Othman Sabri,2026,MAR1,59814,False,7,4,1,98,3,0,0,0,0
+1410428,Othman Sabri,2026,MAR1,59814,False,7,5,1,188,3,0,0,0,0
 1410428,Othman Sabri,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
 1410428,Othman Sabri,2023,MARP,59814,False,1,0,0,0,0,0,0,0,0
 1560496,Ismail Sbahe,2026,MAR1,59814,False,7,3,0,138,0,0,0,0,0
 1560496,Ismail Sbahe,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
 1560496,Ismail Sbahe,2022,MARP,22933,False,1,0,0,0,0,0,0,0,0
-1468248,Rabiae Bounit,2026,MAR1,59814,False,7,6,0,540,0,0,0,0,0
+1468248,Rabiae Bounit,2026,MAR1,59814,False,7,7,0,630,0,0,0,0,0
 1468248,Rabiae Bounit,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
 1468248,Rabiae Bounit,2021,MARP,93241,False,1,0,0,0,0,0,0,0,0
 859909,Anouar Frindi,2025,MARP,59814,False,1,0,0,0,0,0,0,0,0
@@ -4385,10 +4389,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 859909,Anouar Frindi,2018,MARP,22936,False,3,0,0,0,0,0,0,0,0
 1560494,Mohamed Assraoui,2026,MAR1,59814,False,7,4,0,103,0,1,0,0,0
 1560494,Mohamed Assraoui,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
-988194,Akram Khouidssi,2026,MAR1,59814,False,7,6,0,537,2,1,0,0,2
+988194,Akram Khouidssi,2026,MAR1,59814,False,7,7,0,627,2,1,0,0,2
 988194,Akram Khouidssi,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
 988194,Akram Khouidssi,2024,MEC1,22938,False,4,3,0,115,0,0,0,0,0
-902802,Zakaria Oulbenna,2026,MAR1,59814,False,7,4,0,225,1,1,0,0,0
+902802,Zakaria Oulbenna,2026,MAR1,59814,False,7,5,0,315,1,1,0,0,0
 902802,Zakaria Oulbenna,2025,MARP,59814,False,1,1,0,120,0,0,0,0,0
 902802,Zakaria Oulbenna,2022,MARP,85473,False,1,0,0,0,0,0,0,0,0
 1178985,Youssef Faqir,2026,MAR1,85473,False,7,6,0,540,0,0,0,0,0
@@ -4594,7 +4598,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1407216,Abderrazak El Wadi,2025,MAR1,6603,False,17,0,0,0,0,0,0,0,0
 1407216,Abderrazak El Wadi,2024,MEC1,2068,False,4,1,0,1,0,0,0,0,0
 1407216,Abderrazak El Wadi,2024,MAR1,2068,False,3,0,0,0,0,0,0,0,0
-860052,Ayman El Wafi,2026,MAR1,6603,False,6,0,0,0,0,0,0,0,0
+860052,Ayman El Wafi,2026,MAR1,6603,False,7,0,0,0,0,0,0,0,0
 860052,Ayman El Wafi,2025,SCC,2790,False,1,1,0,57,0,0,0,0,0
 860052,Ayman El Wafi,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 860052,Ayman El Wafi,2025,MAR1,6603,False,22,15,0,1208,0,0,0,0,1
@@ -4626,7 +4630,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1370961,Aymen El Jaafary,2024,MARP,6603,False,2,0,0,0,0,0,0,0,0
 1370961,Aymen El Jaafary,2024,MAR1,6603,False,11,0,0,0,0,0,0,0,0
 1370961,Aymen El Jaafary,2024,KLUB,6603,False,3,0,0,0,0,0,0,0,0
-800363,Mohamed Moufid,2026,MAR1,6603,False,7,6,0,530,0,1,0,0,1
+800363,Mohamed Moufid,2026,MAR1,6603,False,7,7,0,620,0,1,0,0,1
 800363,Mohamed Moufid,2025,MARP,6603,False,1,1,0,90,0,0,0,0,0
 800363,Mohamed Moufid,2025,MAR1,6603,False,30,21,0,1751,2,4,0,0,4
 800363,Mohamed Moufid,2025,FS,3575,True,3,0,0,0,0,0,0,0,0
@@ -4656,9 +4660,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 800363,Mohamed Moufid,2020,MARP,9099,False,5,4,0,450,0,0,0,0,0
 800363,Mohamed Moufid,2020,MAR1,9099,False,30,26,0,2070,0,4,0,0,1
 800363,Mohamed Moufid,2019,MAR1,9099,False,10,10,0,900,0,2,0,0,1
-342719,Bart Meijers,2026,UCOL,3900,False,2,2,0,180,0,0,0,0,1
+342719,Bart Meijers,2026,UCOL,3900,False,3,3,0,270,0,0,0,0,1
 342719,Bart Meijers,2026,ECLQ,3900,False,6,5,0,394,0,0,0,0,2
-342719,Bart Meijers,2026,BOS1,3900,False,12,5,0,450,0,0,0,0,0
+342719,Bart Meijers,2026,BOS1,3900,False,13,5,0,450,0,0,0,0,0
 342719,Bart Meijers,2026,BIHP,3900,False,1,0,0,0,0,0,0,0,0
 342719,Bart Meijers,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 342719,Bart Meijers,2025,MAR1,6603,False,29,7,0,542,0,0,0,0,2
@@ -4729,7 +4733,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 245194,Ayoub Boucheta,2017,MAR1,38668,False,15,0,0,0,0,0,0,0,0
 245194,Ayoub Boucheta,2016,MARP,37415,False,2,0,0,0,0,0,0,0,0
 245194,Ayoub Boucheta,2011,MAR1,2068,False,1,1,0,13,0,0,0,0,0
-920972,Sallah Moussaddaq,2026,MAR1,6603,False,7,6,0,540,0,0,0,0,1
+920972,Sallah Moussaddaq,2026,MAR1,6603,False,7,7,0,630,0,0,0,0,2
 920972,Sallah Moussaddaq,2025,MARP,6603,False,1,1,0,90,1,0,0,0,0
 920972,Sallah Moussaddaq,2025,MAR1,6603,False,22,20,0,1731,2,3,0,0,5
 920972,Sallah Moussaddaq,2025,ESCU,664,False,2,0,0,0,0,0,0,0,0
@@ -4815,7 +4819,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1330444,Brahim Laafouri,2024,MARP,6603,False,2,0,0,0,0,0,0,0,0
 1330444,Brahim Laafouri,2024,MAR1,6603,False,29,0,0,0,0,0,0,0,0
 1330444,Brahim Laafouri,2024,KLUB,6603,False,3,0,0,0,0,0,0,0,0
-667970,Oussama Zemraoui,2026,MAR1,6603,False,7,6,0,449,1,1,0,0,3
+667970,Oussama Zemraoui,2026,MAR1,6603,False,7,7,0,539,2,1,0,0,3
 667970,Oussama Zemraoui,2025,MAR1,6603,False,10,7,1,333,0,1,0,0,0
 667970,Oussama Zemraoui,2025,EGYP,9094,False,1,1,0,22,0,0,0,0,0
 667970,Oussama Zemraoui,2025,EGY1,9094,False,8,4,0,217,1,0,1,1,1
@@ -4840,12 +4844,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 667970,Oussama Zemraoui,2020,MAR1,2073,False,30,4,0,216,0,0,0,0,0
 667970,Oussama Zemraoui,2020,20AC,37630,True,4,3,0,77,0,0,0,0,0
 667970,Oussama Zemraoui,2018,17AC,37524,True,3,1,0,67,0,0,0,0,1
-1302206,Joseph Bakasu,2026,MAR1,6603,False,7,2,0,180,0,0,0,0,1
+1302206,Joseph Bakasu,2026,MAR1,6603,False,7,3,0,237,0,0,0,0,1
 1302206,Joseph Bakasu,2025,MARP,6603,False,1,1,0,90,0,0,0,0,0
 1302206,Joseph Bakasu,2025,MAR1,6603,False,30,24,0,1842,2,1,0,0,9
 1302206,Joseph Bakasu,2025,CAFC,6603,False,10,8,0,538,1,0,2,0,1
 1302206,Joseph Bakasu,2024,ACL,18102,False,10,10,0,729,1,0,8,4,2
-967148,Naïm Byar,2026,MAR1,6603,False,6,3,0,249,0,0,0,0,1
+967148,Naïm Byar,2026,MAR1,6603,False,7,3,0,249,0,0,0,0,1
 967148,Naïm Byar,2025,MARP,6603,False,1,1,0,35,0,0,0,0,0
 967148,Naïm Byar,2025,MAR1,6603,False,22,17,0,1034,0,0,0,0,4
 967148,Naïm Byar,2025,IT3C,704,False,19,8,5,357,0,0,0,0,0
@@ -5065,7 +5069,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072321,Moisés Paniagua,2022,BO1A,42208,False,32,23,0,931,3,1,21,11,1
 1072321,Moisés Paniagua,2022,BO12,42208,False,12,10,0,544,0,1,9,2,1
 1072321,Moisés Paniagua,2021,BO1C,42208,False,1,1,0,22,1,0,1,1,0
-517712,Hamza Hannouri,2026,MAR1,6603,False,7,6,0,128,0,0,0,0,1
+517712,Hamza Hannouri,2026,MAR1,6603,False,7,7,0,149,0,0,0,0,1
 517712,Hamza Hannouri,2025,MARP,6603,False,1,0,0,0,0,0,0,0,0
 517712,Hamza Hannouri,2025,MAR1,6603,False,30,21,0,1318,6,3,0,0,3
 517712,Hamza Hannouri,2025,FS,134572,True,1,1,0,90,0,0,0,0,0
@@ -5333,7 +5337,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 513275,Tumisang Orebonye,2017,AFCQ,15229,True,6,5,0,137,0,0,0,0,0
 513275,Tumisang Orebonye,2017,ACL,16515,False,4,0,0,0,0,0,0,0,0
 513275,Tumisang Orebonye,2016,FS,15229,True,1,1,0,25,0,0,0,0,0
-1253671,Mouad Enzo,2026,MAR1,6603,False,7,5,0,364,0,0,0,0,0
+1253671,Mouad Enzo,2026,MAR1,6603,False,7,6,0,385,0,0,0,0,0
 1253671,Mouad Enzo,2025,MARP,30625,False,1,0,0,0,0,0,0,0,0
 1253671,Mouad Enzo,2025,MAR1,6603,False,8,3,0,47,0,0,0,0,0
 1253671,Mouad Enzo,2025,MAR1,30625,False,20,14,0,1023,1,2,0,0,1
@@ -5352,7 +5356,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1309132,Ahmed Rhailouf,2024,MARP,2073,False,1,1,0,90,0,1,0,0,0
 1309132,Ahmed Rhailouf,2024,MAR1,2073,False,30,21,0,1446,3,0,0,0,5
 55619,Nordin Amrabat,2026,NLP,200,False,1,1,0,9,0,0,0,0,0
-55619,Nordin Amrabat,2026,NL1,200,False,7,2,0,33,0,0,3,0,0
+55619,Nordin Amrabat,2026,NL1,200,False,8,3,0,64,0,1,3,0,1
 55619,Nordin Amrabat,2025,MARP,6603,False,1,1,0,85,1,0,0,0,0
 55619,Nordin Amrabat,2025,MAR1,6603,False,30,27,2,1465,2,3,0,0,2
 55619,Nordin Amrabat,2025,CAFC,6603,False,10,7,1,478,1,0,7,2,2
@@ -5907,7 +5911,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 191407,Oussama Haddadi,2009,TUN1,819,False,26,0,0,0,0,0,0,0,0
 191407,Oussama Haddadi,2009,ACL,819,False,2,0,0,0,0,0,0,0,0
 1258578,Ilyass Mahsoub,2026,MAR1,37176,False,3,0,0,0,0,0,0,0,0
-1258578,Ilyass Mahsoub,2026,FS,34903,True,1,0,0,0,0,0,0,0,0
+1258578,Ilyass Mahsoub,2026,FS,34903,True,2,0,0,0,0,0,0,0,0
 1258578,Ilyass Mahsoub,2025,MAR1,37176,False,3,1,0,59,0,0,0,0,0
 1258578,Ilyass Mahsoub,2025,FS,37630,True,4,2,0,159,0,0,0,0,0
 1258578,Ilyass Mahsoub,2024,MEC1,37176,False,8,7,0,577,0,0,0,0,1
@@ -6127,14 +6131,25 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 882910,Reda Hajji,2020,MAR1,37176,False,18,1,0,11,0,0,0,0,0
 882910,Reda Hajji,2020,CAFS,37176,False,1,0,0,0,0,0,0,0,0
 882910,Reda Hajji,2020,CAFC,37176,False,6,2,0,88,0,0,1,0,0
-1337459,Mohammed Handouz,2025,MARP,37176,False,1,0,0,0,0,0,0,0,0
-1337459,Mohammed Handouz,2025,MAR1,37176,False,20,1,0,12,0,0,0,0,0
-1337459,Mohammed Handouz,2025,ACL,37176,False,4,0,0,0,0,0,0,0,0
-1337459,Mohammed Handouz,2024,MEC1,37176,False,8,6,0,432,0,0,0,0,0
-1337459,Mohammed Handouz,2024,MARP,37176,False,5,0,0,0,0,0,0,0,0
-1337459,Mohammed Handouz,2024,MAR1,37176,False,29,0,0,0,0,0,0,0,0
-1337459,Mohammed Handouz,2024,CAFC,37176,False,14,0,0,0,0,0,0,0,0
-355641,Mounir Chouiar,2026,MAR1,37176,False,6,4,0,353,0,0,0,0,0
+1091178,Mohamed Ouyahia,2026,MAR1,37176,False,7,3,0,131,0,0,0,0,0
+1091178,Mohamed Ouyahia,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2025,MARP,37176,False,1,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2025,MAR1,37176,False,30,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2025,CAFS,37176,False,1,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2025,ACL,37176,False,14,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2024,MEC1,37176,False,4,2,0,135,0,0,0,0,0
+1091178,Mohamed Ouyahia,2024,MARP,37176,False,5,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2024,MAR1,37176,False,23,5,0,191,0,0,0,0,0
+1091178,Mohamed Ouyahia,2024,FS,37630,True,2,1,0,35,0,0,0,0,0
+1091178,Mohamed Ouyahia,2024,CAFC,37176,False,12,2,0,91,0,0,1,0,0
+1091178,Mohamed Ouyahia,2023,MARP,37176,False,1,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2023,MAR1,37176,False,17,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2023,FS,37630,True,5,3,0,205,0,0,0,0,0
+1091178,Mohamed Ouyahia,2023,CAFC,37176,False,8,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2022,MARP,37176,False,3,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2022,MAR1,37176,False,22,0,0,0,0,0,0,0,0
+1091178,Mohamed Ouyahia,2022,FS,37630,True,1,0,0,0,0,0,0,0,0
+355641,Mounir Chouiar,2026,MAR1,37176,False,7,6,0,462,1,1,0,0,0
 355641,Mounir Chouiar,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 355641,Mounir Chouiar,2025,MARP,37176,False,1,1,0,90,0,0,0,0,0
 355641,Mounir Chouiar,2025,MAR1,37176,False,30,28,0,2411,9,9,0,0,4
@@ -6189,24 +6204,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 355641,Mounir Chouiar,2015,FRYC,10824,False,1,1,0,45,0,0,0,0,0
 355641,Mounir Chouiar,2015,FR4A,8152,False,2,2,0,180,2,0,0,0,0
 355641,Mounir Chouiar,2014,FS,10844,True,1,1,0,63,0,0,0,0,0
-1091178,Mohamed Ouyahia,2026,MAR1,37176,False,7,3,0,131,0,0,0,0,0
-1091178,Mohamed Ouyahia,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2025,MARP,37176,False,1,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2025,MAR1,37176,False,30,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2025,CAFS,37176,False,1,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2025,ACL,37176,False,14,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2024,MEC1,37176,False,4,2,0,135,0,0,0,0,0
-1091178,Mohamed Ouyahia,2024,MARP,37176,False,5,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2024,MAR1,37176,False,23,5,0,191,0,0,0,0,0
-1091178,Mohamed Ouyahia,2024,FS,37630,True,2,1,0,35,0,0,0,0,0
-1091178,Mohamed Ouyahia,2024,CAFC,37176,False,12,2,0,91,0,0,1,0,0
-1091178,Mohamed Ouyahia,2023,MARP,37176,False,1,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2023,MAR1,37176,False,17,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2023,FS,37630,True,5,3,0,205,0,0,0,0,0
-1091178,Mohamed Ouyahia,2023,CAFC,37176,False,8,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2022,MARP,37176,False,3,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2022,MAR1,37176,False,22,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2022,FS,37630,True,1,0,0,0,0,0,0,0,0
+1337459,Mohammed Handouz,2025,MARP,37176,False,1,0,0,0,0,0,0,0,0
+1337459,Mohammed Handouz,2025,MAR1,37176,False,20,1,0,12,0,0,0,0,0
+1337459,Mohammed Handouz,2025,ACL,37176,False,4,0,0,0,0,0,0,0,0
+1337459,Mohammed Handouz,2024,MEC1,37176,False,8,6,0,432,0,0,0,0,0
+1337459,Mohammed Handouz,2024,MARP,37176,False,5,0,0,0,0,0,0,0,0
+1337459,Mohammed Handouz,2024,MAR1,37176,False,29,0,0,0,0,0,0,0,0
+1337459,Mohammed Handouz,2024,CAFC,37176,False,14,0,0,0,0,0,0,0,0
 868636,Youssef Mehri,2026,MAR1,37176,False,7,6,0,357,1,0,0,0,0
 868636,Youssef Mehri,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 868636,Youssef Mehri,2025,MARP,37176,False,1,1,0,69,1,1,0,0,0
@@ -6290,7 +6294,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1338007,Hamza Raji,2024,FS,118369,True,2,1,0,20,0,0,0,0,0
 1338007,Hamza Raji,2024,CAFC,37176,False,14,0,0,0,0,0,0,0,0
 1338007,Hamza Raji,2024,20WC,37630,True,7,0,0,0,0,0,0,0,0
-356586,Salaheddine Chihab,2026,MAR1,3282,False,7,6,0,540,0,0,0,0,0
+356586,Salaheddine Chihab,2026,MAR1,3282,False,7,7,0,630,0,0,0,0,0
 356586,Salaheddine Chihab,2026,ACL,3282,False,4,2,0,180,0,0,0,0,0
 356586,Salaheddine Chihab,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
 356586,Salaheddine Chihab,2025,MAR1,3282,False,30,28,0,2520,0,0,0,0,6
@@ -6339,7 +6343,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1341102,Walid Laghrissi,2025,MAR1,3282,False,30,0,0,0,0,0,0,0,0
 1341102,Walid Laghrissi,2025,FS,118369,True,3,0,0,0,0,0,0,0,0
 1341102,Walid Laghrissi,2024,FS,37524,True,6,0,0,0,0,0,0,0,0
-863795,Marouane Ouhrou,2026,MAR1,3282,False,7,4,0,360,0,0,0,0,1
+863795,Marouane Ouhrou,2026,MAR1,3282,False,7,5,0,450,0,0,0,0,2
 863795,Marouane Ouhrou,2026,ACL,3282,False,4,2,0,180,0,0,0,0,0
 863795,Marouane Ouhrou,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
 863795,Marouane Ouhrou,2025,MAR1,3282,False,30,28,0,2488,0,4,0,0,6
@@ -6373,7 +6377,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 692591,Hamza Ait Allal,2020,ACL,6603,False,12,2,0,103,0,0,2,0,0
 692591,Hamza Ait Allal,2019,MAR1,59679,False,30,2,0,42,0,0,0,0,0
 692591,Hamza Ait Allal,2018,MARP,59679,False,3,1,0,90,0,0,0,0,0
-664571,Salaheddine Ghedamsi,2026,MAR1,3282,False,7,4,0,235,0,0,0,0,0
+664571,Salaheddine Ghedamsi,2026,MAR1,3282,False,7,5,0,325,0,0,0,0,0
 664571,Salaheddine Ghedamsi,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 664571,Salaheddine Ghedamsi,2025,TUN1,250,False,16,15,0,1274,0,0,0,0,3
 664571,Salaheddine Ghedamsi,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
@@ -6396,7 +6400,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 664571,Salaheddine Ghedamsi,2020,TUNP,22817,False,1,1,0,120,0,0,0,0,0
 664571,Salaheddine Ghedamsi,2019,TUN1,250,False,10,0,0,0,0,0,0,0,0
 664571,Salaheddine Ghedamsi,2018,TUNP,250,False,1,0,0,0,0,0,0,0,0
-712126,Aymane Chbani,2026,MAR1,3282,False,7,5,0,450,0,0,0,0,0
+712126,Aymane Chbani,2026,MAR1,3282,False,7,6,0,540,0,0,0,0,0
 712126,Aymane Chbani,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 712126,Aymane Chbani,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
 712126,Aymane Chbani,2025,MAR1,3282,False,30,19,0,1583,3,0,0,0,1
@@ -6426,7 +6430,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 682847,Benjamin Tanimu,2022,NPPL,2979,False,5,5,0,450,0,0,0,0,0
 682847,Benjamin Tanimu,2022,NPFL,2979,False,18,16,0,1440,0,0,0,0,2
 682847,Benjamin Tanimu,2018,NPFL,2979,False,22,15,0,1350,0,0,0,0,0
-262953,Adil Rhaili,2026,MAR1,3282,False,7,0,0,0,0,0,0,0,0
+262953,Adil Rhaili,2026,MAR1,3282,False,7,1,0,9,0,0,0,0,0
 262953,Adil Rhaili,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 262953,Adil Rhaili,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
 262953,Adil Rhaili,2025,MAR1,3282,False,30,21,0,1719,1,2,0,0,6
@@ -6502,7 +6506,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1176890,Oussama Noureddine,2023,MAR1,2073,False,30,28,0,2202,1,0,0,0,3
 1176890,Oussama Noureddine,2022,MARP,2073,False,3,0,0,0,0,0,0,0,0
 1176890,Oussama Noureddine,2022,MAR1,2073,False,30,0,0,0,0,0,0,0,0
-858584,Hamza Afsal,2026,MAR1,3282,False,7,2,0,60,0,0,0,0,0
+858584,Hamza Afsal,2026,MAR1,3282,False,7,3,0,126,1,0,0,0,0
 858584,Hamza Afsal,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 858584,Hamza Afsal,2025,MARP,3282,False,1,1,0,74,0,0,0,0,0
 858584,Hamza Afsal,2025,MAR1,3282,False,30,30,0,1433,3,1,0,0,1
@@ -6536,7 +6540,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 367149,Achraf Harmach,2015,MAR1,9099,False,30,8,0,324,0,0,0,0,0
 367149,Achraf Harmach,2014,MAR1,9099,False,30,2,0,177,0,0,0,0,0
 367149,Achraf Harmach,2013,MAR1,9099,False,30,8,0,323,0,0,0,0,1
-308265,Anas Tahiri,2026,MAR1,3282,False,7,5,0,363,0,1,0,0,0
+308265,Anas Tahiri,2026,MAR1,3282,False,7,6,0,444,0,1,0,0,0
 308265,Anas Tahiri,2026,ACL,3282,False,4,2,0,58,0,0,0,0,0
 308265,Anas Tahiri,2025,NL2,723,False,1,0,0,0,0,0,0,0,0
 308265,Anas Tahiri,2025,MARP,3282,False,1,1,0,16,0,0,0,0,0
@@ -6581,7 +6585,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 308265,Anas Tahiri,2013,POBE,204,False,6,5,0,280,0,0,0,0,0
 308265,Anas Tahiri,2013,CCB,204,False,1,0,0,0,0,0,0,0,0
 308265,Anas Tahiri,2013,BE1,204,False,15,1,0,3,0,0,0,0,0
-842564,El Habib Brija,2026,MAR1,3282,False,7,3,0,23,0,0,0,0,0
+842564,El Habib Brija,2026,MAR1,3282,False,7,4,0,113,0,0,0,0,1
 842564,El Habib Brija,2026,ACL,3282,False,4,1,0,90,0,0,0,0,0
 842564,El Habib Brija,2025,MARP,3282,False,1,1,0,90,0,0,0,0,0
 842564,El Habib Brija,2025,MAR1,3282,False,30,12,0,72,0,0,0,0,1
@@ -6602,7 +6606,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1091105,Mohamed Loumim,2024,MAR1,3282,False,30,5,0,77,0,1,0,0,0
 1091105,Mohamed Loumim,2022,MARP,3282,False,1,0,0,0,0,0,0,0,0
 1091105,Mohamed Loumim,2022,MAR1,3282,False,22,6,0,121,0,0,0,0,0
-913361,Soufiane Benjdida,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+913361,Soufiane Benjdida,2026,EGYP,7,False,1,1,0,15,0,0,0,0,0
 913361,Soufiane Benjdida,2026,EGY1,7,False,8,8,0,395,0,2,9,5,0
 913361,Soufiane Benjdida,2026,EGLC,7,False,2,2,0,153,1,0,0,0,0
 913361,Soufiane Benjdida,2026,CAFC,7,False,2,2,0,116,0,0,0,0,0
@@ -6619,6 +6623,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 913361,Soufiane Benjdida,2022,MARP,2068,False,5,4,0,183,0,0,0,0,1
 913361,Soufiane Benjdida,2022,MAR1,2068,False,30,24,0,803,2,0,0,0,1
 913361,Soufiane Benjdida,2022,FS,34903,True,5,3,0,162,1,0,0,0,0
+913361,Soufiane Benjdida,2022,ARBC,2068,False,4,0,0,0,0,0,0,0,0
 913361,Soufiane Benjdida,2022,ACL,2068,False,10,9,0,292,3,1,9,5,0
 913361,Soufiane Benjdida,2021,MARP,2068,False,3,3,0,172,0,1,0,0,0
 913361,Soufiane Benjdida,2021,MAR1,2068,False,18,17,0,792,8,2,0,0,0
@@ -6658,14 +6663,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 508643,Soulyman Allouch,2018,17WC,10933,True,7,3,0,136,0,0,1,1,0
 508643,Soulyman Allouch,2018,17EU,10933,True,6,5,0,135,0,0,0,0,0
 508643,Soulyman Allouch,2017,TDV,7460,False,3,3,0,153,0,0,0,0,0
-1370739,Adam Brika,2026,MAR1,3282,False,7,5,0,204,0,0,0,0,0
+1370739,Adam Brika,2026,MAR1,3282,False,7,6,0,228,0,0,0,0,0
 1370739,Adam Brika,2026,ACL,3282,False,4,2,0,110,1,0,0,0,0
 1370739,Adam Brika,2025,MARP,3282,False,1,0,0,0,0,0,0,0,0
 1370739,Adam Brika,2025,MAR1,3282,False,30,27,0,1753,1,3,0,0,7
 1370739,Adam Brika,2024,MEC1,3282,False,2,1,0,74,0,0,0,0,0
 1370739,Adam Brika,2024,MARP,3282,False,1,0,0,0,0,0,0,0,0
 1370739,Adam Brika,2024,MAR1,3282,False,11,1,0,5,0,0,0,0,0
-863506,Khalid Baba,2026,MAR1,3282,False,7,6,0,136,0,1,0,0,0
+863506,Khalid Baba,2026,MAR1,3282,False,7,7,0,201,0,2,0,0,0
 863506,Khalid Baba,2026,ACL,3282,False,4,2,0,162,0,0,0,0,0
 863506,Khalid Baba,2025,MARP,3282,False,1,1,0,65,0,0,0,0,1
 863506,Khalid Baba,2025,MAR1,3282,False,22,7,0,128,0,0,0,0,0
@@ -6725,7 +6730,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1433378,Cheikhna Semega,2025,JO1L,69471,False,12,12,0,940,5,0,0,0,3
 1344495,Privat Djéssan Bi,2025,MAR1,3282,False,8,0,0,0,0,0,0,0,0
 1344495,Privat Djéssan Bi,2024,FS,34868,True,1,0,0,0,0,0,0,0,0
-822538,El Mehdi Al Harrar,2026,MAR1,2068,False,7,6,0,540,0,0,0,0,0
+822538,El Mehdi Al Harrar,2026,MAR1,2068,False,7,7,0,630,0,0,0,0,0
 822538,El Mehdi Al Harrar,2026,CAFC,2068,False,2,1,0,90,0,0,0,0,0
 822538,El Mehdi Al Harrar,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
 822538,El Mehdi Al Harrar,2025,MAR1,2068,False,30,21,0,1890,0,0,0,0,3
@@ -6893,7 +6898,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 245193,Badr Benoun,2013,MAR1,28210,False,30,0,0,0,0,0,0,0,0
 245193,Badr Benoun,2013,MAR1,2068,False,2,1,0,1,0,0,0,0,0
 245193,Badr Benoun,2012,FS,34903,True,1,1,0,90,0,0,0,0,0
-560873,Mohamed Boulacsout,2026,MAR1,2068,False,7,5,0,437,0,1,0,0,3
+560873,Mohamed Boulacsout,2026,MAR1,2068,False,7,6,0,522,0,2,0,0,3
 560873,Mohamed Boulacsout,2026,CAFC,2068,False,2,1,0,87,0,0,0,0,0
 560873,Mohamed Boulacsout,2025,MARP,2068,False,1,1,0,75,0,0,0,0,0
 560873,Mohamed Boulacsout,2025,MAR1,2068,False,30,26,0,1760,1,1,0,0,2
@@ -6920,7 +6925,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 560873,Mohamed Boulacsout,2017,MARP,4697,False,1,0,0,0,0,0,0,0,0
 560873,Mohamed Boulacsout,2017,MAR1,4697,False,30,6,0,249,0,0,0,0,0
 560873,Mohamed Boulacsout,2016,MARP,4697,False,2,0,0,0,0,0,0,0,0
-617592,Ismail Mokadem,2026,MAR1,2068,False,7,2,0,153,0,0,0,0,0
+617592,Ismail Mokadem,2026,MAR1,2068,False,7,3,0,243,0,0,0,0,1
 617592,Ismail Mokadem,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 617592,Ismail Mokadem,2025,MARP,2068,False,1,1,0,15,0,0,0,0,0
 617592,Ismail Mokadem,2025,MAR1,2068,False,30,27,0,1960,0,1,0,0,5
@@ -6945,7 +6950,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 617592,Ismail Mokadem,2017,MARP,37176,False,5,1,0,120,0,0,0,0,0
 617592,Ismail Mokadem,2017,MAR1,37176,False,16,0,0,0,0,0,0,0,0
 617592,Ismail Mokadem,2017,CAFC,37176,False,14,4,0,360,0,0,0,0,0
-375634,Ayoub El Amloud,2026,MAR1,2068,False,7,2,0,118,0,0,0,0,0
+375634,Ayoub El Amloud,2026,MAR1,2068,False,7,3,0,208,1,0,0,0,0
 375634,Ayoub El Amloud,2026,CAFC,2068,False,2,1,0,3,0,0,0,0,0
 375634,Ayoub El Amloud,2025,MARP,2068,False,1,1,0,80,0,0,0,0,0
 375634,Ayoub El Amloud,2025,MAR1,2068,False,22,15,0,898,4,2,0,0,0
@@ -6994,7 +6999,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 375634,Ayoub El Amloud,2016,MAR1,9099,False,30,22,0,1871,0,0,0,0,0
 375634,Ayoub El Amloud,2014,MAR1,9099,False,30,1,0,3,0,0,0,0,0
 375634,Ayoub El Amloud,2013,MAR1,9099,False,30,1,0,22,0,0,0,0,0
-401938,Amine Khammas,2026,MAR1,2068,False,5,0,0,0,0,0,0,0,0
+401938,Amine Khammas,2026,MAR1,2068,False,7,1,0,5,0,0,0,0,0
 401938,Amine Khammas,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 401938,Amine Khammas,2025,ZYP1,829,False,18,7,0,247,0,0,0,0,1
 401938,Amine Khammas,2025,UCOL,829,False,6,2,0,180,0,0,1,0,0
@@ -7045,7 +7050,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 401938,Amine Khammas,2016,WMQ2,3575,True,2,0,0,0,0,0,0,0,0
 401938,Amine Khammas,2016,FS,37630,True,2,1,0,90,0,0,0,0,0
 401938,Amine Khammas,2015,FS,23219,True,1,1,0,17,0,0,0,0,0
-569755,Abdellah Khafifi,2026,MAR1,3282,False,7,6,0,540,0,0,0,0,0
+569755,Abdellah Khafifi,2026,MAR1,3282,False,7,7,0,630,0,0,0,0,0
 569755,Abdellah Khafifi,2026,ACL,3282,False,4,2,0,180,0,0,0,0,0
 569755,Abdellah Khafifi,2025,MARP,2068,False,1,1,0,90,0,0,0,0,0
 569755,Abdellah Khafifi,2025,MAR1,2068,False,30,26,1,2297,6,1,0,0,9
@@ -7069,7 +7074,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 569755,Abdellah Khafifi,2018,MAR1,22941,False,30,28,0,2520,2,0,0,0,1
 569755,Abdellah Khafifi,2016,MARP,22941,False,2,0,0,0,0,0,0,0,0
 569755,Abdellah Khafifi,2015,MAR1,22941,False,30,9,0,666,0,0,0,0,1
-969934,Bouchaib Arrassi,2026,MAR1,2068,False,7,4,0,321,0,1,0,0,1
+969934,Bouchaib Arrassi,2026,MAR1,2068,False,7,5,0,411,0,1,0,0,1
 969934,Bouchaib Arrassi,2026,CAFC,2068,False,2,2,0,180,0,0,0,0,0
 969934,Bouchaib Arrassi,2025,MAR1,2068,False,9,0,1,0,0,0,0,0,0
 969934,Bouchaib Arrassi,2025,ARSC,53453,False,1,1,0,90,0,0,0,0,0
@@ -7089,7 +7094,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 969934,Bouchaib Arrassi,2021,MARP,2068,False,2,0,0,0,0,0,0,0,0
 969934,Bouchaib Arrassi,2021,MAR1,2068,False,17,1,0,90,0,0,0,0,0
 969934,Bouchaib Arrassi,2021,ACL,2068,False,8,0,0,0,0,0,0,0,0
-371606,Abdelkarim Baadi,2026,MAR1,4697,False,7,3,0,70,0,0,0,0,1
+371606,Abdelkarim Baadi,2026,MAR1,4697,False,7,4,0,71,0,0,0,0,1
 371606,Abdelkarim Baadi,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
 371606,Abdelkarim Baadi,2025,MAR1,2068,False,28,12,0,476,0,0,0,0,1
 371606,Abdelkarim Baadi,2024,MEC1,2068,False,10,1,2,90,0,0,0,0,1
@@ -7127,7 +7132,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 371606,Abdelkarim Baadi,2016,MARP,22935,False,4,0,0,0,0,0,0,0,0
 371606,Abdelkarim Baadi,2016,MAR1,22935,False,30,2,0,133,1,0,0,0,0
 371606,Abdelkarim Baadi,2014,MAR1,22935,False,4,1,0,1,0,0,0,0,0
-274235,Mohamed Al-Makahasi,2026,MAR1,2068,False,7,4,0,189,0,0,0,0,0
+274235,Mohamed Al-Makahasi,2026,MAR1,2068,False,7,5,0,242,0,0,0,0,0
 274235,Mohamed Al-Makahasi,2026,CAFC,2068,False,2,2,0,180,0,0,0,0,0
 274235,Mohamed Al-Makahasi,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
 274235,Mohamed Al-Makahasi,2025,MAR1,2068,False,30,26,0,2265,0,4,0,0,6
@@ -7158,7 +7163,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 274235,Mohamed Al-Makahasi,2014,MAR1,9100,False,1,0,0,0,0,0,0,0,0
 274235,Mohamed Al-Makahasi,2013,MAR1,9100,False,10,2,0,2,0,0,0,0,0
 274235,Mohamed Al-Makahasi,2012,MAR1,9100,False,7,2,0,91,0,0,0,0,0
-315332,Aymen Barkok,2026,MAR1,2068,False,7,5,0,297,0,0,0,0,0
+315332,Aymen Barkok,2026,MAR1,2068,False,7,6,0,387,1,0,0,0,0
 315332,Aymen Barkok,2026,CAFC,2068,False,2,2,0,180,1,0,0,0,0
 315332,Aymen Barkok,2025,MARP,2068,False,1,1,0,90,0,0,0,0,0
 315332,Aymen Barkok,2025,MAR1,2068,False,23,18,3,1107,1,2,0,0,6
@@ -7314,7 +7319,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 318904,Sabir Bougrine,2015,BE2,204,False,32,32,0,2783,2,0,0,0,2
 318904,Sabir Bougrine,2014,FS,16338,True,3,2,0,135,0,0,0,0,0
 318904,Sabir Bougrine,2014,EBEL,204,False,1,1,0,29,0,0,0,0,0
-904603,Othmane Chraibi,2026,MAR1,2068,False,7,4,0,246,1,0,0,0,1
+904603,Othmane Chraibi,2026,MAR1,2068,False,7,5,0,251,1,0,0,0,1
 904603,Othmane Chraibi,2026,CAFC,2068,False,2,1,0,82,0,0,0,0,0
 904603,Othmane Chraibi,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
 904603,Othmane Chraibi,2025,MAR1,2068,False,30,16,0,820,0,1,0,0,4
@@ -7413,7 +7418,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 152241,Besar Halimi,2010,BJ3,21049,False,26,19,0,1370,7,0,0,0,4
 152241,Besar Halimi,2010,AJ3,2613,False,14,6,0,368,0,0,0,0,1
 152241,Besar Halimi,2009,BJ3,21049,False,1,1,0,19,0,0,0,0,0
-238634,Adam Ennaffati,2026,MAR1,2068,False,6,3,0,126,1,1,0,0,0
+238634,Adam Ennaffati,2026,MAR1,2068,False,7,4,0,211,1,2,0,0,0
 238634,Adam Ennaffati,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 238634,Adam Ennaffati,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
 238634,Adam Ennaffati,2025,MAR1,2068,False,28,18,6,1239,6,3,0,0,3
@@ -7470,7 +7475,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 238634,Adam Ennaffati,2013,FR4A,12765,False,28,18,0,1133,2,0,0,0,1
 238634,Adam Ennaffati,2012,FS,34903,True,1,1,0,75,0,0,0,0,0
 238634,Adam Ennaffati,2012,FR4A,12765,False,34,10,0,369,1,0,0,0,0
-241324,Bilal Ould-Chikh,2026,MAR1,2068,False,5,2,0,122,0,0,0,0,0
+241324,Bilal Ould-Chikh,2026,MAR1,2068,False,7,2,0,122,0,0,0,0,0
 241324,Bilal Ould-Chikh,2026,CAFC,2068,False,2,1,0,22,0,0,0,0,0
 241324,Bilal Ould-Chikh,2025,PON2,724,False,2,2,0,103,1,1,3,3,0
 241324,Bilal Ould-Chikh,2025,NLP,724,False,1,1,0,81,0,0,0,0,0
@@ -7516,7 +7521,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 241324,Bilal Ould-Chikh,2013,17EU,10933,True,5,5,0,300,1,1,0,0,0
 241324,Bilal Ould-Chikh,2012,NLJB,6200,False,1,1,0,80,0,0,0,0,0
 241324,Bilal Ould-Chikh,2012,NLAJ,6200,False,17,6,0,374,0,0,0,0,0
-677986,Mohammad Abu Zrayq,2026,MAR1,2068,False,7,3,0,134,0,0,0,0,0
+677986,Mohammad Abu Zrayq,2026,MAR1,2068,False,7,4,0,188,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2026,FS,15737,True,2,2,0,37,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2026,CAFC,2068,False,2,2,0,153,1,1,0,0,0
 677986,Mohammad Abu Zrayq,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
@@ -7556,7 +7561,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 677986,Mohammad Abu Zrayq,2019,ACLQ,4630,False,1,0,0,0,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2018,WAF1,15737,True,3,2,0,46,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2018,FS,15737,True,3,2,0,20,0,0,0,0,0
-607249,Mathias Oyewusi,2026,MAR1,2068,False,5,3,0,139,1,0,0,0,0
+607249,Mathias Oyewusi,2026,MAR1,2068,False,7,6,0,406,1,0,0,0,0
 607249,Mathias Oyewusi,2026,CAFC,2068,False,2,2,0,138,1,1,0,0,0
 607249,Mathias Oyewusi,2025,UKR1,48332,False,13,12,0,400,1,1,0,0,1
 607249,Mathias Oyewusi,2025,MARP,2068,False,1,0,0,0,0,0,0,0,0
@@ -7601,7 +7606,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1150962,Mouad Dahak,2023,MAR1,79389,False,15,8,0,371,1,0,0,0,1
 1150962,Mouad Dahak,2023,FS,37630,True,14,9,0,585,4,1,0,0,0
 1150962,Mouad Dahak,2022,FS,37630,True,7,1,0,90,1,0,0,0,0
-707310,Ismail Khafi,2026,MAR1,2068,False,7,4,0,146,1,1,0,0,1
+707310,Ismail Khafi,2026,MAR1,2068,False,7,5,0,215,1,1,0,0,1
 707310,Ismail Khafi,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 707310,Ismail Khafi,2025,MARP,2068,False,1,1,0,90,1,0,0,0,0
 707310,Ismail Khafi,2025,MAR1,2068,False,30,27,0,1254,3,2,0,0,6
@@ -7693,7 +7698,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1330869,Azzedine Laftah,2024,MARP,2068,False,2,0,0,0,0,0,0,0,0
 1330869,Azzedine Laftah,2024,MAR1,2068,False,29,3,0,63,0,0,0,0,0
 1330869,Azzedine Laftah,2024,ACL,2068,False,8,0,0,0,0,0,0,0,0
-238997,Ahmed Reda Tagnaouti,2026,MAR1,9099,False,7,5,1,450,0,0,0,0,1
+238997,Ahmed Reda Tagnaouti,2026,MAR1,9099,False,7,6,1,540,0,0,0,0,1
 238997,Ahmed Reda Tagnaouti,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
 238997,Ahmed Reda Tagnaouti,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 238997,Ahmed Reda Tagnaouti,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
@@ -7808,7 +7813,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1247671,Marouane Cherquaoui,2023,FS,72607,True,1,1,0,90,0,0,0,0,0
 1247671,Marouane Cherquaoui,2023,FS,107694,True,6,1,0,90,0,0,0,0,0
 1247671,Marouane Cherquaoui,2022,FS,72607,True,3,1,0,90,0,0,0,0,0
-635927,Fallou Mendy,2026,MAR1,9099,False,7,5,0,450,0,0,0,0,2
+635927,Fallou Mendy,2026,MAR1,9099,False,7,6,0,540,0,0,0,0,2
 635927,Fallou Mendy,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 635927,Fallou Mendy,2025,MARP,9099,False,1,1,0,45,0,0,0,0,0
 635927,Fallou Mendy,2025,MAR1,9099,False,30,25,0,2049,2,0,0,0,2
@@ -7831,7 +7836,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 635927,Fallou Mendy,2020,UAE2,44289,False,20,0,0,0,0,0,0,0,0
 635927,Fallou Mendy,2018,T211,43013,False,26,4,0,289,1,0,0,0,1
 635927,Fallou Mendy,2018,T191,73909,False,3,3,0,267,2,0,0,0,0
-518801,Marouane Louadni,2026,MAR1,9099,False,7,5,0,450,0,0,0,0,1
+518801,Marouane Louadni,2026,MAR1,9099,False,7,6,0,540,0,0,0,0,1
 518801,Marouane Louadni,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 518801,Marouane Louadni,2025,MARP,9099,False,1,1,0,90,0,0,0,0,0
 518801,Marouane Louadni,2025,MAR1,9099,False,30,24,0,2126,0,0,0,0,8
@@ -7865,7 +7870,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 518801,Marouane Louadni,2016,CAFC,6371,False,12,0,0,0,0,0,0,0,0
 518801,Marouane Louadni,2016,ACL,6371,False,4,0,0,0,0,0,0,0,0
 518801,Marouane Louadni,2015,CAFC,6371,False,6,0,0,0,0,0,0,0,0
-573065,Tó Carneiro,2026,MAR1,9099,False,7,4,0,294,0,0,0,0,0
+573065,Tó Carneiro,2026,MAR1,9099,False,7,5,0,384,0,0,0,0,0
 573065,Tó Carneiro,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 573065,Tó Carneiro,2026,AFCQ,3585,True,2,0,0,0,0,0,0,0,0
 573065,Tó Carneiro,2025,MARP,9099,False,1,1,0,77,0,0,0,0,0
@@ -7932,7 +7937,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1180823,Omar El Khattab,2024,FS,118369,True,6,3,0,225,0,0,0,0,0
 1180823,Omar El Khattab,2023,FS,107694,True,3,3,0,109,0,0,0,0,0
 1180823,Omar El Khattab,2022,FS,107694,True,5,2,0,160,0,0,0,0,0
-518802,Anas Bach,2026,MAR1,9099,False,7,5,0,450,1,2,0,0,0
+518802,Anas Bach,2026,MAR1,9099,False,7,6,0,540,1,2,0,0,0
 518802,Anas Bach,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 518802,Anas Bach,2025,MARP,9099,False,1,1,0,90,0,0,0,0,0
 518802,Anas Bach,2025,MAR1,9099,False,30,30,0,2478,2,2,0,0,2
@@ -7990,7 +7995,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 631508,Khalid Aït Ouarkhane,2019,MAR1,9099,False,30,6,0,48,1,0,0,0,0
 631508,Khalid Aït Ouarkhane,2018,MARP,9099,False,2,0,0,0,0,0,0,0,0
 631508,Khalid Aït Ouarkhane,2018,MAR1,9099,False,18,1,0,90,0,0,0,0,0
-711281,Abdelfettah Hadraf,2026,MAR1,9099,False,7,4,0,247,1,2,0,0,0
+711281,Abdelfettah Hadraf,2026,MAR1,9099,False,7,5,0,337,1,2,0,0,0
 711281,Abdelfettah Hadraf,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 711281,Abdelfettah Hadraf,2025,MARP,9099,False,1,1,0,77,0,0,0,0,0
 711281,Abdelfettah Hadraf,2025,MAR1,9099,False,30,23,6,1520,1,5,0,0,4
@@ -8014,7 +8019,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 711281,Abdelfettah Hadraf,2019,MAR1,14462,False,30,25,0,2154,1,1,0,0,2
 711281,Abdelfettah Hadraf,2018,MARP,14462,False,4,1,0,90,0,0,0,0,0
 276768,Nolan Mbemba,2026,FRC,1564,False,2,2,0,98,0,0,0,0,0
-276768,Nolan Mbemba,2026,FR3,1564,False,6,2,0,135,0,1,1,0,0
+276768,Nolan Mbemba,2026,FR3,1564,False,7,2,0,135,0,1,1,0,0
 276768,Nolan Mbemba,2025,MARP,9099,False,1,1,0,90,0,0,0,0,1
 276768,Nolan Mbemba,2025,MAR1,9099,False,22,18,3,820,0,1,0,0,1
 276768,Nolan Mbemba,2025,IRQC,91740,False,1,0,0,0,0,0,0,0,0
@@ -8064,7 +8069,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 276768,Nolan Mbemba,2014,BE1,29228,False,30,11,0,751,0,2,0,0,1
 276768,Nolan Mbemba,2013,FR4A,12765,False,28,26,0,1811,5,0,0,0,3
 276768,Nolan Mbemba,2012,FR4A,12765,False,18,12,0,713,2,0,0,0,0
-711572,Zineddine Derrag,2026,MAR1,9099,False,7,4,0,199,0,0,0,0,0
+711572,Zineddine Derrag,2026,MAR1,9099,False,7,5,0,289,0,0,0,0,0
 711572,Zineddine Derrag,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 711572,Zineddine Derrag,2025,MARP,9099,False,1,0,1,0,0,0,0,0,0
 711572,Zineddine Derrag,2025,MAR1,9099,False,30,14,16,1020,0,0,0,0,2
@@ -8084,7 +8089,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 711572,Zineddine Derrag,2019,MAR1,18702,False,30,27,0,1953,0,1,0,0,2
 711572,Zineddine Derrag,2018,MARP,18702,False,1,0,0,0,0,0,0,0,0
 711572,Zineddine Derrag,2018,MAR1,18702,False,16,1,0,23,0,0,0,0,0
-660041,Youssef El Fahli,2026,MAR1,9099,False,7,5,0,439,4,0,0,0,0
+660041,Youssef El Fahli,2026,MAR1,9099,False,7,6,0,529,4,0,0,0,0
 660041,Youssef El Fahli,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 660041,Youssef El Fahli,2025,MARP,9099,False,1,1,0,36,0,0,0,0,0
 660041,Youssef El Fahli,2025,MAR1,9099,False,30,26,0,2054,9,4,0,0,1
@@ -8213,7 +8218,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 507374,Ahmed Hammoudan,2011,MAR1,9100,False,30,0,0,0,0,0,0,0,0
 507374,Ahmed Hammoudan,2010,MAR1,9100,False,17,0,0,0,0,0,0,0,0
 1004383,Ricardo Coutinho,2026,FRC,7124,False,2,2,0,34,0,0,0,0,0
-1004383,Ricardo Coutinho,2026,FR3,7124,False,11,7,0,400,1,0,0,0,1
+1004383,Ricardo Coutinho,2026,FR3,7124,False,12,7,0,400,1,0,0,0,1
 1004383,Ricardo Coutinho,2025,MARP,9099,False,1,0,0,0,0,0,0,0,0
 1004383,Ricardo Coutinho,2025,MAR1,9099,False,22,3,0,8,0,0,0,0,0
 1004383,Ricardo Coutinho,2025,ACL,9099,False,9,1,0,3,0,0,0,0,0
@@ -8231,7 +8236,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1004383,Ricardo Coutinho,2022,F19D,10884,False,22,9,0,649,2,0,0,0,2
 1004383,Ricardo Coutinho,2021,FRYC,10884,False,3,3,0,62,0,0,0,0,0
 1004383,Ricardo Coutinho,2021,F19D,10884,False,4,0,0,0,0,0,0,0,0
-872090,Mouhcine Bouriga,2026,MAR1,9099,False,7,4,0,154,0,0,0,0,0
+872090,Mouhcine Bouriga,2026,MAR1,9099,False,7,5,0,244,0,0,0,0,0
 872090,Mouhcine Bouriga,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 872090,Mouhcine Bouriga,2025,MARP,9099,False,1,1,0,54,0,0,0,0,0
 872090,Mouhcine Bouriga,2025,MAR1,9099,False,30,17,0,768,1,3,0,0,1
@@ -8283,7 +8288,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1256645,Achraf Missou,2024,ACL,9099,False,10,0,0,0,0,0,0,0,0
 1256645,Achraf Missou,2023,FS,37524,True,11,4,0,164,0,1,0,0,0
 1256645,Achraf Missou,2022,17WC,37524,True,5,0,0,0,0,0,0,0,0
-556272,Ayoub Lakred,2026,MAR1,6371,False,7,6,0,540,0,0,0,0,1
+556272,Ayoub Lakred,2026,MAR1,6371,False,7,7,0,630,0,0,0,0,1
 556272,Ayoub Lakred,2025,MARP,6371,False,1,0,0,0,0,0,0,0,0
 556272,Ayoub Lakred,2025,MAR1,6371,False,30,19,0,1710,0,0,0,0,4
 556272,Ayoub Lakred,2024,CAFC,14191,False,14,0,4,0,0,0,0,0,0
@@ -8333,7 +8338,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 737182,Oussama Soukhane,2019,MAR1,2068,False,26,5,0,383,0,1,0,0,0
 737182,Oussama Soukhane,2019,ACL,2068,False,9,0,0,0,0,0,0,0,0
 627926,Hodaifa El Mhassani,2026,RUP,1124,False,5,4,0,285,0,0,0,0,0
-627926,Hodaifa El Mhassani,2026,RU1,1124,False,11,3,0,137,0,0,1,1,1
+627926,Hodaifa El Mhassani,2026,RU1,1124,False,12,4,0,146,0,0,1,1,1
 627926,Hodaifa El Mhassani,2025,MARP,6371,False,1,1,0,13,0,0,0,0,0
 627926,Hodaifa El Mhassani,2025,MAR1,6371,False,28,25,0,2163,3,0,0,0,4
 627926,Hodaifa El Mhassani,2024,MEC1,6371,False,8,1,0,22,0,0,0,0,0
@@ -8378,7 +8383,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1055193,Yassine Amhih,2023,MAR1,9100,False,30,14,0,1065,0,0,0,0,0
 1055193,Yassine Amhih,2022,MARP,9100,False,1,1,0,90,0,0,0,0,0
 1055193,Yassine Amhih,2022,MAR1,9100,False,30,4,0,112,0,0,0,0,0
-618818,Fernando Chamboco,2026,MAR1,6371,False,7,4,0,360,0,0,0,0,0
+618818,Fernando Chamboco,2026,MAR1,6371,False,7,5,0,450,0,0,0,0,0
 618818,Fernando Chamboco,2026,AFCQ,5129,True,2,1,0,24,0,0,0,0,0
 618818,Fernando Chamboco,2025,MARP,6371,False,1,0,0,0,0,0,0,0,0
 618818,Fernando Chamboco,2025,MAR1,6371,False,22,12,0,987,0,0,0,0,4
@@ -8463,7 +8468,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1247662,Walid El Hani,2024,MAR1,6371,False,5,0,0,0,0,0,0,0,0
 1247662,Walid El Hani,2023,FS,107694,True,6,2,0,180,0,0,0,0,0
 1247662,Walid El Hani,2022,FS,72607,True,1,0,0,0,0,0,0,0,0
-1247658,Hamza Bouhaddi,2026,MAR1,6371,False,7,2,2,38,0,0,0,0,0
+1247658,Hamza Bouhaddi,2026,MAR1,6371,False,7,3,2,128,0,0,0,0,0
 1247658,Hamza Bouhaddi,2026,FS,37630,True,10,10,0,890,0,1,0,0,0
 1247658,Hamza Bouhaddi,2025,MAR1,6371,False,4,0,0,0,0,0,0,0,0
 1247658,Hamza Bouhaddi,2025,FS,37524,True,7,5,1,287,0,0,0,0,0
@@ -8476,7 +8481,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1247658,Hamza Bouhaddi,2023,FS,72607,True,1,1,0,90,0,0,0,0,0
 1247658,Hamza Bouhaddi,2023,FS,107694,True,8,5,0,435,0,0,0,0,0
 1247658,Hamza Bouhaddi,2022,FS,72607,True,2,2,0,180,0,0,0,0,0
-717213,Anas Serrhat,2026,MAR1,6371,False,7,6,0,494,1,0,0,0,0
+717213,Anas Serrhat,2026,MAR1,6371,False,7,7,0,573,1,0,0,0,0
 717213,Anas Serrhat,2025,MARP,6371,False,1,0,0,0,0,0,0,0,0
 717213,Anas Serrhat,2025,MAR1,6371,False,30,29,0,2610,2,2,0,0,6
 717213,Anas Serrhat,2024,MEC1,6371,False,8,0,0,0,0,0,0,0,0
@@ -8500,7 +8505,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 717213,Anas Serrhat,2018,MAR1,14462,False,30,0,0,0,0,0,0,0,0
 717213,Anas Serrhat,2017,MARP,14462,False,3,0,0,0,0,0,0,0,0
 717213,Anas Serrhat,2017,ACL,14462,False,4,0,0,0,0,0,0,0,0
-507134,Amine El Msane,2026,MAR1,6371,False,6,6,0,540,0,0,0,0,0
+507134,Amine El Msane,2026,MAR1,6371,False,7,7,0,630,0,0,0,0,1
 507134,Amine El Msane,2025,MARP,6371,False,1,1,0,90,0,0,0,0,0
 507134,Amine El Msane,2025,MAR1,6371,False,29,25,0,2200,0,2,0,0,8
 507134,Amine El Msane,2024,MEC1,6371,False,8,1,0,90,0,0,0,0,1
@@ -8520,7 +8525,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 507134,Amine El Msane,2016,MARP,14462,False,4,0,0,0,0,0,0,0,0
 507134,Amine El Msane,2016,MAR1,14462,False,30,0,0,0,0,0,0,0,0
 507134,Amine El Msane,2015,MAR1,14462,False,30,13,0,832,0,0,0,0,2
-811084,Abdessamad Mahir,2026,MAR1,6371,False,5,5,0,450,0,0,0,0,0
+811084,Abdessamad Mahir,2026,MAR1,6371,False,6,6,0,540,0,0,0,0,0
 811084,Abdessamad Mahir,2025,MARP,6371,False,1,0,0,0,0,0,0,0,0
 811084,Abdessamad Mahir,2025,MAR1,6371,False,30,29,0,2544,2,0,0,0,4
 811084,Abdessamad Mahir,2024,MEC1,6371,False,8,0,0,0,0,0,0,0,0
@@ -8539,7 +8544,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1232068,Soufiane Tazi,2024,MAR1,6371,False,29,22,0,851,3,0,0,0,2
 1232068,Soufiane Tazi,2023,MARP,6371,False,1,0,0,0,0,0,0,0,0
 1232068,Soufiane Tazi,2023,MAR1,6371,False,12,4,0,225,0,0,0,0,0
-593405,Ismail Moutaraji,2026,MAR1,6371,False,7,5,0,112,0,0,0,0,1
+593405,Ismail Moutaraji,2026,MAR1,6371,False,7,6,0,123,0,0,0,0,1
 593405,Ismail Moutaraji,2025,MARP,6371,False,1,1,0,90,0,2,0,0,1
 593405,Ismail Moutaraji,2025,MAR1,6371,False,30,18,0,358,0,0,0,0,1
 593405,Ismail Moutaraji,2024,MEC1,6603,False,8,2,0,124,0,0,0,0,0
@@ -8613,7 +8618,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1389000,Wassim Ouarab,2024,MAR1,6371,False,5,0,0,0,0,0,0,0,0
 844300,Ayoub Mouloua,2026,SSC,6199,False,1,1,0,45,2,0,3,3,0
 844300,Ayoub Mouloua,2026,SCP,370,False,7,7,0,145,0,0,1,1,0
-844300,Ayoub Mouloua,2026,SC1,370,False,11,11,0,386,2,0,10,5,2
+844300,Ayoub Mouloua,2026,SC1,370,False,12,11,0,386,2,0,10,5,2
 844300,Ayoub Mouloua,2025,MARP,6371,False,1,0,0,0,0,0,0,0,0
 844300,Ayoub Mouloua,2025,MAR1,6371,False,28,21,0,1580,6,1,0,0,2
 844300,Ayoub Mouloua,2024,MEC1,6371,False,8,1,0,84,1,0,0,0,1
@@ -8626,7 +8631,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 844300,Ayoub Mouloua,2021,MAR1,6371,False,23,1,0,1,0,0,0,0,0
 844300,Ayoub Mouloua,2020,MAR1,6371,False,14,2,0,19,0,0,0,0,0
 844300,Ayoub Mouloua,2020,20AC,37630,True,4,3,0,238,1,0,0,0,1
-738951,Amine Souane,2026,MAR1,6371,False,7,6,0,457,1,1,0,0,1
+738951,Amine Souane,2026,MAR1,6371,False,7,7,0,536,1,1,0,0,1
 738951,Amine Souane,2025,MARP,6371,False,1,1,0,77,1,0,0,0,0
 738951,Amine Souane,2025,MAR1,6371,False,30,28,0,1813,3,2,0,0,5
 738951,Amine Souane,2024,MEC1,6371,False,8,1,0,90,0,0,0,0,0
@@ -8646,7 +8651,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 738951,Amine Souane,2021,FS,34903,True,2,0,0,0,0,0,0,0,0
 738951,Amine Souane,2020,MAR1,22941,False,10,2,0,25,0,0,0,0,0
 738951,Amine Souane,2019,MAR1,22941,False,16,1,0,17,0,0,0,0,0
-1072377,Déo Bassinga,2026,MAR1,6371,False,7,2,0,158,0,0,0,0,0
+1072377,Déo Bassinga,2026,MAR1,6371,False,7,3,0,203,0,0,0,0,0
 1072377,Déo Bassinga,2026,AFCQ,3702,True,2,1,0,7,0,0,0,0,0
 1072377,Déo Bassinga,2025,MARP,6371,False,1,1,0,84,0,0,0,0,0
 1072377,Déo Bassinga,2025,MAR1,6371,False,22,19,0,1040,1,1,0,0,3
@@ -8706,7 +8711,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1060862,Moctar Diallo,2022,ACL,22419,False,2,1,0,45,0,0,0,0,0
 1060862,Moctar Diallo,2021,SEN1,22419,False,25,0,0,0,0,0,0,0,0
 1060862,Moctar Diallo,2020,SEN1,22419,False,4,0,0,0,0,0,0,0,0
-1036559,Badreddine Abyir,2026,MAR1,12721,False,7,4,2,360,0,0,0,0,1
+1036559,Badreddine Abyir,2026,MAR1,12721,False,7,5,2,450,0,0,0,0,1
 1036559,Badreddine Abyir,2025,MARP,22935,False,1,0,0,0,0,0,0,0,0
 1036559,Badreddine Abyir,2025,MAR1,22935,False,30,30,0,2700,0,1,0,0,2
 1036559,Badreddine Abyir,2024,MRR1,22935,False,2,2,0,180,0,0,0,0,0
@@ -8815,7 +8820,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1233132,Ismail Hrila,2023,MARP,22935,False,3,0,0,0,0,0,0,0,0
 1233132,Ismail Hrila,2023,MAR1,22935,False,17,7,0,504,0,0,0,0,0
 913644,Zakary Lamgahez,2026,FRC,1564,False,2,0,0,0,0,0,0,0,0
-913644,Zakary Lamgahez,2026,FR3,1564,False,11,10,0,815,0,0,4,0,2
+913644,Zakary Lamgahez,2026,FR3,1564,False,12,11,0,816,0,0,4,0,2
 913644,Zakary Lamgahez,2025,MARP,22935,False,1,0,0,0,0,0,0,0,0
 913644,Zakary Lamgahez,2025,MAR1,22935,False,28,5,0,334,0,0,0,0,1
 913644,Zakary Lamgahez,2024,FRC,1164,False,7,3,0,225,0,0,1,0,2
@@ -9039,7 +9044,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1309843,Anis Zouagui,2024,MARP,22935,False,2,0,0,0,0,0,0,0,0
 1309843,Anis Zouagui,2024,MAR1,22935,False,29,3,0,13,0,0,0,0,0
 1337458,Baba Bello Ilou,2026,UAEP,2150,False,1,0,0,0,0,0,0,0,0
-1337458,Baba Bello Ilou,2026,UAE1,2150,False,7,5,0,157,1,0,8,2,0
+1337458,Baba Bello Ilou,2026,UAE1,2150,False,7,6,0,224,1,0,10,2,0
 1337458,Baba Bello Ilou,2026,ACLE,2150,False,4,3,0,81,0,1,6,3,0
 1337458,Baba Bello Ilou,2025,MARP,22935,False,1,1,0,120,2,0,0,0,0
 1337458,Baba Bello Ilou,2025,MAR1,37176,False,2,0,1,0,0,0,0,0,0
@@ -9285,7 +9290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 375635,Reda Bounaga,2013,MAR1,22944,False,15,1,0,90,0,0,0,0,0
 375635,Reda Bounaga,2011,MAR1,22936,False,30,0,0,0,0,0,0,0,0
 1564652,Ahmed Mjidou,2025,MAR1,30625,False,2,0,0,0,0,0,0,0,0
-842528,Karim El Bounagate,2026,MAR1,30625,False,7,5,0,450,0,0,0,0,1
+842528,Karim El Bounagate,2026,MAR1,30625,False,7,6,0,540,0,0,0,0,1
 842528,Karim El Bounagate,2025,MARP,30625,False,1,1,0,90,0,0,0,0,0
 842528,Karim El Bounagate,2025,MAR1,30625,False,30,26,0,2041,1,0,0,0,3
 842528,Karim El Bounagate,2024,MEC1,22944,False,2,2,0,153,0,0,0,0,0
@@ -9320,7 +9325,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 712124,Youssef Limouri,2020,MAR1,6371,False,30,26,0,2197,2,1,0,0,2
 712124,Youssef Limouri,2019,MAR1,6371,False,23,22,0,1980,0,1,0,0,2
 712124,Youssef Limouri,2018,FS,37630,True,2,2,0,100,0,0,0,0,0
-520441,Oussama Daoui,2026,MAR1,30625,False,7,2,0,49,0,0,0,0,1
+520441,Oussama Daoui,2026,MAR1,30625,False,7,3,0,80,0,0,0,0,1
 520441,Oussama Daoui,2025,MARP,30625,False,1,1,0,90,0,0,0,0,0
 520441,Oussama Daoui,2025,MAR1,30625,False,30,24,0,1882,1,1,0,0,5
 520441,Oussama Daoui,2024,MEC1,30625,False,8,1,0,90,0,0,0,0,0
@@ -9330,7 +9335,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 520441,Oussama Daoui,2016,MARP,9100,False,2,0,0,0,0,0,0,0,0
 520441,Oussama Daoui,2016,MARP,30652,False,4,0,0,0,0,0,0,0,0
 520441,Oussama Daoui,2016,MAR1,9100,False,30,6,0,465,0,0,0,0,0
-1309589,Ayoub Lourhraz,2026,MAR1,30625,False,7,6,0,495,0,0,0,0,2
+1309589,Ayoub Lourhraz,2026,MAR1,30625,False,7,7,0,528,0,0,0,0,2
 1309589,Ayoub Lourhraz,2025,MARP,30625,False,1,1,0,90,0,0,0,0,0
 1309589,Ayoub Lourhraz,2025,MAR1,30625,False,30,19,0,1314,0,1,0,0,3
 1309589,Ayoub Lourhraz,2024,MEC1,30625,False,8,0,6,0,0,0,0,0,0
@@ -9352,7 +9357,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 484572,Anass Nouader,2017,FR5J,10840,False,30,14,0,1123,0,0,0,0,1
 484572,Anass Nouader,2016,FS,37630,True,4,1,0,90,0,0,0,0,1
 484572,Anass Nouader,2016,FR5D,10840,False,26,10,0,788,0,0,0,0,2
-903850,Ayoub Lakhlifi,2026,MAR1,30625,False,7,4,0,272,1,0,0,0,1
+903850,Ayoub Lakhlifi,2026,MAR1,30625,False,7,5,0,362,1,0,0,0,1
 903850,Ayoub Lakhlifi,2025,MARP,30625,False,1,0,0,0,0,0,0,0,0
 903850,Ayoub Lakhlifi,2025,MAR1,30625,False,22,17,0,916,1,0,0,0,2
 903850,Ayoub Lakhlifi,2024,MRR1,79390,False,2,2,0,180,0,0,0,0,1
@@ -9398,7 +9403,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 703639,Driss El Abdi,2017,MARP,74953,False,1,0,0,0,0,0,0,0,0
 703639,Driss El Abdi,2016,MARP,30652,False,4,0,0,0,0,0,0,0,0
 703639,Driss El Abdi,2016,MAR1,30652,False,30,0,0,0,0,0,0,0,0
-239127,Larbi Naji,2026,MAR1,30625,False,7,6,0,420,0,0,0,0,1
+239127,Larbi Naji,2026,MAR1,30625,False,7,7,0,510,0,0,0,0,1
 239127,Larbi Naji,2026,FS,34903,True,1,0,0,0,0,0,0,0,0
 239127,Larbi Naji,2025,MARP,30625,False,1,1,0,90,0,0,0,0,0
 239127,Larbi Naji,2025,MAR1,30625,False,30,24,0,2012,2,1,0,0,6
@@ -9492,7 +9497,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1459802,Marius Mbou,2026,MAR1,30625,False,7,0,0,0,0,0,0,0,0
 1459802,Marius Mbou,2025,MARP,30625,False,1,0,0,0,0,0,0,0,0
 1459802,Marius Mbou,2025,MAR1,30625,False,30,2,0,34,0,0,0,0,0
-1557642,Yassine Miloudi,2026,MAR1,30625,False,6,4,0,82,0,0,0,0,0
+1557642,Yassine Miloudi,2026,MAR1,30625,False,7,5,0,108,0,0,0,0,0
 1557642,Yassine Miloudi,2025,MAR1,30625,False,9,5,0,60,1,0,0,0,1
 857713,Mustapha Sahd,2026,MAR1,22935,False,7,3,0,101,0,0,0,0,1
 857713,Mustapha Sahd,2025,MARP,30625,False,1,1,0,70,1,0,0,0,0
@@ -9589,7 +9594,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1339348,Oussama Msahli,2025,MAR1,30625,False,28,10,0,214,0,1,0,0,2
 1339348,Oussama Msahli,2024,MEC1,30625,False,8,7,0,547,0,0,0,0,0
 1339348,Oussama Msahli,2024,MAR1,30625,False,29,2,0,59,0,0,0,0,0
-846673,Amine El Ouaad,2026,MAR1,4697,False,7,6,0,540,0,0,0,0,0
+846673,Amine El Ouaad,2026,MAR1,4697,False,7,7,0,630,0,0,0,0,1
 846673,Amine El Ouaad,2025,MARP,12721,False,1,1,0,120,0,0,0,0,0
 846673,Amine El Ouaad,2025,MAR1,12721,False,29,27,0,2383,0,0,0,0,2
 846673,Amine El Ouaad,2024,MEC1,12721,False,2,0,0,0,0,0,0,0,0
@@ -9669,7 +9674,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1309848,Yassine Hachloufi,2024,MEC1,12721,False,6,2,0,180,0,0,0,0,0
 1309848,Yassine Hachloufi,2024,MARP,12721,False,1,0,0,0,0,0,0,0,0
 1309848,Yassine Hachloufi,2024,MAR1,12721,False,30,0,0,0,0,0,0,0,0
-859901,Bilal El Ouadghiri,2026,MAR1,12721,False,7,6,0,540,0,0,0,0,1
+859901,Bilal El Ouadghiri,2026,MAR1,12721,False,7,7,0,630,0,0,0,0,2
 859901,Bilal El Ouadghiri,2025,MARP,12721,False,1,1,0,95,1,0,0,0,0
 859901,Bilal El Ouadghiri,2025,MAR1,12721,False,30,23,0,1876,4,0,0,0,5
 859901,Bilal El Ouadghiri,2024,MEC1,6371,False,1,0,0,0,0,0,0,0,0
@@ -9717,7 +9722,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 240721,Mohamed Saoud,2014,MAR1,9100,False,1,0,0,0,0,0,0,0,0
 240721,Mohamed Saoud,2012,17WC,37524,True,4,2,0,180,0,0,0,0,1
 240721,Mohamed Saoud,2012,17AC,37524,True,3,2,0,180,0,0,0,0,0
-717214,Zakaria Kiani,2026,MAR1,12721,False,7,6,0,540,0,0,0,0,0
+717214,Zakaria Kiani,2026,MAR1,12721,False,7,7,0,630,0,0,0,0,0
 717214,Zakaria Kiani,2025,MARP,12721,False,1,1,0,120,0,0,0,0,0
 717214,Zakaria Kiani,2025,MAR1,12721,False,30,26,0,2225,1,0,0,0,2
 717214,Zakaria Kiani,2024,MEC1,12721,False,6,0,0,0,0,0,0,0,0
@@ -9764,7 +9769,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 245202,Anass Lamrabat,2013,MAR1,9100,False,30,25,0,2246,0,1,0,0,3
 245202,Anass Lamrabat,2012,MAR1,9100,False,30,22,0,1943,0,0,0,0,2
 245202,Anass Lamrabat,2012,FS,34903,True,1,1,0,88,0,0,0,0,0
-1064714,Akram El Wahabi,2026,MAR1,12721,False,7,4,0,96,0,0,0,0,0
+1064714,Akram El Wahabi,2026,MAR1,12721,False,7,5,0,186,0,0,0,0,0
 1064714,Akram El Wahabi,2025,MARP,12721,False,1,1,0,120,0,0,0,0,0
 1064714,Akram El Wahabi,2025,MAR1,12721,False,30,12,0,721,0,0,0,0,1
 1064714,Akram El Wahabi,2024,MEC1,12721,False,6,5,0,450,2,0,0,0,0
@@ -9777,7 +9782,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1506543,Saad Karouat,2026,MAR1,12721,False,7,0,0,0,0,0,0,0,0
 1506543,Saad Karouat,2025,MARP,12721,False,1,0,0,0,0,0,0,0,0
 1506543,Saad Karouat,2025,MAR1,12721,False,21,0,0,0,0,0,0,0,0
-743533,Mohamed El Arouch,2026,MAR1,12721,False,7,6,0,396,0,0,0,0,0
+743533,Mohamed El Arouch,2026,MAR1,12721,False,7,7,0,441,0,0,0,0,0
 743533,Mohamed El Arouch,2025,MARP,12721,False,1,1,0,54,0,0,0,0,0
 743533,Mohamed El Arouch,2025,MAR1,12721,False,22,17,0,1190,1,1,0,0,5
 743533,Mohamed El Arouch,2025,CCB,54189,False,2,0,0,0,0,0,0,0,0
@@ -9808,7 +9813,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 743533,Mohamed El Arouch,2020,F17C,106295,False,8,0,0,0,0,0,0,0,0
 743533,Mohamed El Arouch,2019,FS,10844,True,8,7,0,359,1,0,0,0,0
 743533,Mohamed El Arouch,2019,19YL,50633,False,1,1,0,61,0,0,0,0,0
-660039,Ennaama El Bellali,2026,MAR1,12721,False,7,3,0,121,0,0,0,0,1
+660039,Ennaama El Bellali,2026,MAR1,12721,False,7,4,0,166,0,0,0,0,1
 660039,Ennaama El Bellali,2025,MARP,12721,False,1,1,0,120,0,0,0,0,0
 660039,Ennaama El Bellali,2025,MAR1,12721,False,30,18,0,1115,0,0,0,0,4
 660039,Ennaama El Bellali,2024,MEC1,79390,False,4,0,0,0,0,0,0,0,0
@@ -9860,7 +9865,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 539612,Siriky Sanogo,2017,ITJF,55778,False,2,1,0,77,0,0,0,0,0
 539612,Siriky Sanogo,2017,ITJ6,55778,False,26,22,0,1750,4,0,0,0,0
 539612,Siriky Sanogo,2017,IT1,4171,False,5,2,0,38,0,0,0,0,0
-972603,Hamza El Moudene,2026,MAR1,12721,False,7,2,0,66,1,0,0,0,1
+972603,Hamza El Moudene,2026,MAR1,12721,False,7,3,0,80,1,0,0,0,1
 972603,Hamza El Moudene,2025,MARP,12721,False,1,0,0,0,0,0,0,0,0
 972603,Hamza El Moudene,2025,MAR1,12721,False,30,16,1,841,0,0,0,0,4
 972603,Hamza El Moudene,2024,MEC1,74953,False,2,0,0,0,0,0,0,0,0
@@ -9919,8 +9924,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1506544,Akram Tali,2026,MAR1,12721,False,7,1,0,19,0,0,0,0,0
 1506544,Akram Tali,2025,MARP,12721,False,1,0,0,0,0,0,0,0,0
 1506544,Akram Tali,2025,MAR1,12721,False,21,4,0,32,0,0,0,0,0
-1134280,Abdelhamid Maali,2026,MAR1,12721,False,7,5,1,321,1,1,0,0,1
-1134280,Abdelhamid Maali,2026,FS,34903,True,1,1,0,20,0,0,0,0,0
+1134280,Abdelhamid Maali,2026,MAR1,12721,False,7,6,1,366,1,1,0,0,1
+1134280,Abdelhamid Maali,2026,FS,34903,True,2,2,0,47,0,0,0,0,0
 1134280,Abdelhamid Maali,2025,MARP,12721,False,1,1,0,66,0,0,0,0,0
 1134280,Abdelhamid Maali,2025,MAR1,12721,False,22,21,0,1264,0,7,0,0,3
 1134280,Abdelhamid Maali,2025,FS,34903,True,3,0,0,0,0,0,0,0,0
@@ -9943,7 +9948,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1134280,Abdelhamid Maali,2022,17WC,37524,True,5,5,0,359,0,3,13,4,1
 1134280,Abdelhamid Maali,2022,17AC,37524,True,6,5,0,355,0,3,8,2,0
 1134280,Abdelhamid Maali,2021,FS,37524,True,16,8,0,631,4,0,0,0,0
-701611,Jawad Ghabra,2026,MAR1,4697,False,7,6,0,373,2,1,0,0,2
+701611,Jawad Ghabra,2026,MAR1,4697,False,7,7,0,463,2,1,0,0,2
 701611,Jawad Ghabra,2025,MARP,12721,False,1,1,0,90,0,0,0,0,0
 701611,Jawad Ghabra,2025,MAR1,12721,False,28,24,0,1836,3,5,0,0,6
 701611,Jawad Ghabra,2024,MEC1,12721,False,6,0,0,0,0,0,0,0,0
@@ -9984,7 +9989,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1170795,Abdoulaye Kanou,2022,CAFC,1955,False,2,0,0,0,0,0,0,0,0
 1170795,Abdoulaye Kanou,2022,ACL,1955,False,4,0,0,0,0,0,0,0,0
 1170795,Abdoulaye Kanou,2021,SEN1,68479,False,25,0,0,0,0,0,0,0,0
-176573,Babacar Niasse,2026,MAR1,14462,False,2,2,0,180,0,0,0,0,0
+176573,Babacar Niasse,2026,MAR1,14462,False,6,3,0,270,0,0,0,0,0
 176573,Babacar Niasse,2026,AFCQ,14238,True,2,0,0,0,0,0,0,0,0
 176573,Babacar Niasse,2025,MARP,14462,False,1,0,0,0,0,0,0,0,0
 176573,Babacar Niasse,2025,MAR1,14462,False,29,28,0,2506,0,0,0,0,3
@@ -10064,7 +10069,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 882909,Mohamed Bentarcha,2020,CAFC,37176,False,8,1,0,90,0,0,0,0,0
 882909,Mohamed Bentarcha,2019,MAR1,37176,False,17,0,0,0,0,0,0,0,0
 882909,Mohamed Bentarcha,2019,CAFC,37176,False,5,0,0,0,0,0,0,0,0
-1178984,Hamza Malki,2026,MAR1,14462,False,7,0,0,0,0,0,0,0,0
+1178984,Hamza Malki,2026,MAR1,14462,False,7,1,0,90,0,0,0,0,0
 1178984,Hamza Malki,2025,MARP,14462,False,1,0,0,0,0,0,0,0,0
 1178984,Hamza Malki,2025,MAR1,14462,False,30,24,0,1652,0,0,0,0,1
 1178984,Hamza Malki,2024,MEC1,30625,False,8,2,0,135,0,0,0,0,0
@@ -10214,7 +10219,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 820480,Youssef Michte,2020,MARP,22944,False,1,1,0,58,0,0,0,0,0
 820480,Youssef Michte,2020,MAR1,22944,False,30,12,0,591,0,0,0,0,2
 820480,Youssef Michte,2019,MAR1,22944,False,3,2,0,156,0,0,0,0,1
-1172375,Brahim El Idrissi Bouzidi,2026,MAR1,14462,False,7,6,0,540,0,2,0,0,2
+1172375,Brahim El Idrissi Bouzidi,2026,MAR1,14462,False,7,7,0,630,0,2,0,0,2
 1172375,Brahim El Idrissi Bouzidi,2025,MARP,14462,False,1,1,0,90,0,0,0,0,0
 1172375,Brahim El Idrissi Bouzidi,2025,MAR1,14462,False,30,24,0,1947,1,2,0,0,2
 1172375,Brahim El Idrissi Bouzidi,2024,MEC1,74953,False,2,0,0,0,0,0,0,0,0
@@ -10225,7 +10230,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172375,Brahim El Idrissi Bouzidi,2023,MAR1,74953,False,30,25,0,1658,1,0,0,0,4
 1172375,Brahim El Idrissi Bouzidi,2021,MARP,28210,False,1,0,0,0,0,0,0,0,0
 1172375,Brahim El Idrissi Bouzidi,2020,MARP,28210,False,1,0,0,0,0,0,0,0,0
-1002677,Mouad Mouchtanim,2026,MAR1,14462,False,7,6,0,406,2,2,0,0,1
+1002677,Mouad Mouchtanim,2026,MAR1,14462,False,7,7,0,496,2,2,0,0,1
 1002677,Mouad Mouchtanim,2025,MARP,14462,False,1,0,0,0,0,0,0,0,0
 1002677,Mouad Mouchtanim,2025,MAR1,14462,False,30,23,0,733,3,1,0,0,4
 1002677,Mouad Mouchtanim,2024,MEC1,62626,False,7,2,0,135,0,0,0,0,1
@@ -10260,7 +10265,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 366775,Achraf Al Idrissi,2015,MAR1,30650,False,10,6,0,138,0,0,0,0,0
 366775,Achraf Al Idrissi,2014,MAR1,30650,False,1,0,0,0,0,0,0,0,0
 366775,Achraf Al Idrissi,2013,MAR1,30650,False,1,0,0,0,0,0,0,0,0
-1210182,Ayoub El Khafi,2026,MAR1,14462,False,7,5,0,372,0,2,0,0,3
+1210182,Ayoub El Khafi,2026,MAR1,14462,False,7,6,0,462,0,2,0,0,3
 1210182,Ayoub El Khafi,2025,MARP,14462,False,1,1,0,16,0,0,0,0,0
 1210182,Ayoub El Khafi,2025,MAR1,14462,False,30,11,0,494,0,1,0,0,0
 1210182,Ayoub El Khafi,2024,MRR1,59771,False,2,2,0,101,0,0,0,0,0
@@ -10303,7 +10308,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 840930,Imad Sabik,2020,CAFC,70125,False,1,0,0,0,0,0,0,0,0
 840930,Imad Sabik,2018,MARP,79392,False,1,0,0,0,0,0,0,0,0
 840930,Imad Sabik,2017,MARP,79392,False,1,0,0,0,0,0,0,0,0
-891953,Abderrazak Ennakouss,2026,MAR1,14462,False,7,6,0,387,6,0,0,0,3
+891953,Abderrazak Ennakouss,2026,MAR1,14462,False,7,7,0,477,6,0,0,0,3
 891953,Abderrazak Ennakouss,2025,MARP,14462,False,1,1,0,8,0,0,0,0,0
 891953,Abderrazak Ennakouss,2025,MAR1,14462,False,30,19,0,722,3,2,0,0,2
 891953,Abderrazak Ennakouss,2024,MEC1,2073,False,6,0,0,0,0,0,0,0,0
@@ -10369,7 +10374,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1440454,Hamza Fassoukh,2024,MARP,4697,False,2,1,0,90,0,0,0,0,0
 1440454,Hamza Fassoukh,2023,MARP,4697,False,1,0,0,0,0,0,0,0,0
 1440454,Hamza Fassoukh,2022,MARP,102593,False,2,2,0,191,0,0,0,0,0
-1203849,Hamza Smaali,2026,MAR1,4697,False,7,6,0,540,0,0,0,0,1
+1203849,Hamza Smaali,2026,MAR1,4697,False,7,7,0,630,0,0,0,0,1
 1203849,Hamza Smaali,2025,MARP,4697,False,2,1,0,27,0,0,0,0,0
 1203849,Hamza Smaali,2025,MAR1,4697,False,30,15,0,970,1,0,0,0,4
 1203849,Hamza Smaali,2024,MEC1,62626,False,4,3,0,270,0,0,0,0,0
@@ -10426,9 +10431,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1230677,Ismail Gazaoui,2023,MAR1,6603,False,15,5,0,370,0,0,0,0,0
 1230677,Ismail Gazaoui,2023,ACL,6603,False,2,0,0,0,0,0,0,0,0
 1230677,Ismail Gazaoui,2022,MARP,97695,False,2,2,0,180,0,0,0,0,0
-1564666,Abdellah Bouallali,2026,MAR1,4697,False,7,5,0,450,0,0,0,0,0
+1564666,Abdellah Bouallali,2026,MAR1,4697,False,7,6,0,540,0,0,0,0,0
 1564666,Abdellah Bouallali,2025,MAR1,4697,False,1,1,0,90,0,0,0,0,0
-840926,Youssef Raiani,2026,MAR1,4697,False,7,3,0,146,0,0,0,0,1
+840926,Youssef Raiani,2026,MAR1,4697,False,7,4,0,167,0,0,0,0,1
 840926,Youssef Raiani,2025,MARP,4697,False,2,2,0,125,0,1,0,0,0
 840926,Youssef Raiani,2025,MAR1,4697,False,30,21,0,1483,2,3,0,0,8
 840926,Youssef Raiani,2024,MEC1,4697,False,3,0,0,0,0,0,0,0,0
@@ -10440,13 +10445,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 840926,Youssef Raiani,2022,ACL,2068,False,10,0,0,0,0,0,0,0,0
 840926,Youssef Raiani,2021,MARP,70125,False,1,0,0,0,0,0,0,0,0
 840926,Youssef Raiani,2020,CAFC,70125,False,5,4,0,200,1,0,0,0,0
-1459207,Hamza Rafaa,2026,MAR1,4697,False,7,6,0,388,0,1,0,0,1
+1459207,Hamza Rafaa,2026,MAR1,4697,False,7,7,0,478,0,1,0,0,2
 1459207,Hamza Rafaa,2025,MARP,4697,False,2,1,0,90,0,0,0,0,0
 1459207,Hamza Rafaa,2025,MAR1,4697,False,30,16,0,1217,0,0,0,0,3
 1459207,Hamza Rafaa,2024,MEC1,4697,False,7,0,0,0,0,0,0,0,0
 1459207,Hamza Rafaa,2024,MARP,4697,False,2,0,0,0,0,0,0,0,0
 1459207,Hamza Rafaa,2023,MARP,4697,False,1,0,0,0,0,0,0,0,0
-841118,Oussama Mahrous,2026,MAR1,4697,False,7,6,0,527,0,0,0,0,1
+841118,Oussama Mahrous,2026,MAR1,4697,False,7,7,0,580,1,1,0,0,1
 841118,Oussama Mahrous,2025,MARP,4697,False,2,1,0,71,0,0,0,0,0
 841118,Oussama Mahrous,2025,MAR1,4697,False,30,20,0,1294,0,0,0,0,2
 841118,Oussama Mahrous,2024,MEC1,6603,False,4,2,0,124,0,0,0,0,1
@@ -10463,7 +10468,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 841118,Oussama Mahrous,2020,MAR1,22944,False,30,27,0,2262,0,1,0,0,4
 841118,Oussama Mahrous,2018,MARP,79390,False,2,0,0,0,0,0,0,0,0
 841118,Oussama Mahrous,2016,MARP,59771,False,2,0,0,0,0,0,0,0,0
-902813,Khalil Tamrani,2026,MAR1,4697,False,7,5,0,73,0,0,0,0,1
+902813,Khalil Tamrani,2026,MAR1,4697,False,7,6,0,110,0,0,0,0,1
 902813,Khalil Tamrani,2025,MARP,4697,False,2,1,0,49,0,1,0,0,0
 902813,Khalil Tamrani,2025,MAR1,4697,False,30,14,0,411,0,1,0,0,0
 902813,Khalil Tamrani,2023,MARP,79390,False,2,0,0,0,0,0,0,0,0
@@ -10544,7 +10549,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1033957,Ismail Mihrab,2023,MAR1,2073,False,30,27,0,2091,2,2,0,0,5
 1033957,Ismail Mihrab,2022,MARP,2073,False,3,1,0,46,0,0,0,0,0
 1033957,Ismail Mihrab,2022,MAR1,2073,False,30,12,0,441,0,0,0,0,1
-536879,Youssef Zghoudi,2026,MAR1,4697,False,7,3,0,145,0,0,0,0,1
+536879,Youssef Zghoudi,2026,MAR1,4697,False,7,4,0,166,0,0,0,0,2
 536879,Youssef Zghoudi,2025,MARP,4697,False,2,1,0,72,0,0,0,0,0
 536879,Youssef Zghoudi,2025,MAR1,4697,False,30,16,0,876,1,0,0,0,2
 536879,Youssef Zghoudi,2024,MEC1,37176,False,8,0,0,0,0,0,0,0,0
@@ -10570,7 +10575,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 536879,Youssef Zghoudi,2018,MARP,37176,False,1,0,0,0,0,0,0,0,0
 536879,Youssef Zghoudi,2017,MARP,38668,False,1,0,0,0,0,0,0,0,0
 536879,Youssef Zghoudi,2017,MAR1,38668,False,30,17,0,1061,1,0,0,0,0
-841119,Saleh Essallami,2026,MAR1,4697,False,7,6,0,460,3,2,0,0,2
+841119,Saleh Essallami,2026,MAR1,4697,False,7,7,0,550,4,2,0,0,2
 841119,Saleh Essallami,2025,MARP,4697,False,2,2,0,100,1,0,0,0,0
 841119,Saleh Essallami,2025,MAR1,4697,False,30,22,0,679,1,0,0,0,4
 841119,Saleh Essallami,2024,MEC1,4697,False,7,1,0,90,0,0,0,0,0
@@ -10739,7 +10744,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 869457,Walid Hasbi,2022,F19B,11199,False,17,10,0,900,0,0,0,0,1
 869457,Walid Hasbi,2021,FS,37630,True,10,3,0,270,0,0,0,0,0
 1134255,Fouad Zahouani,2026,NL2,8817,False,14,3,0,108,0,0,0,0,2
-1134255,Fouad Zahouani,2026,FS,34903,True,1,1,0,90,0,0,0,0,0
+1134255,Fouad Zahouani,2026,FS,34903,True,2,2,0,180,0,0,0,0,1
 1134255,Fouad Zahouani,2025,MARP,79389,False,1,0,0,0,0,0,0,0,0
 1134255,Fouad Zahouani,2025,MAR1,79389,False,28,12,6,908,1,1,0,0,5
 1134255,Fouad Zahouani,2025,FS,37630,True,4,1,0,90,0,0,0,0,0
@@ -10906,9 +10911,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 64490,Ilias Haddad,2018,CAFS,2068,False,1,0,0,0,0,0,0,0,0
 64490,Ilias Haddad,2018,CAFC,2068,False,10,6,0,433,0,0,1,1,2
 64490,Ilias Haddad,2017,MARP,2068,False,4,3,0,156,0,0,0,0,0
-64490,Ilias Haddad,2017,MAR1,9099,False,23,23,0,1862,0,0,0,0,2
+64490,Ilias Haddad,2017,MAR1,9099,False,29,23,0,1862,0,0,0,0,2
 64490,Ilias Haddad,2017,CAFC,2068,False,10,0,0,0,0,0,0,0,0
-64490,Ilias Haddad,2016,MARP,9099,False,2,2,0,180,0,0,0,0,1
+64490,Ilias Haddad,2016,MARP,9099,False,6,2,0,180,0,0,0,0,1
 64490,Ilias Haddad,2016,MAR1,9099,False,30,28,0,2451,1,0,0,0,0
 64490,Ilias Haddad,2015,MAR1,9099,False,30,27,0,2118,2,0,0,0,0
 64490,Ilias Haddad,2014,NLP,1455,False,2,1,1,90,0,0,0,0,1
@@ -10930,7 +10935,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 64490,Ilias Haddad,2009,NL2,1434,False,37,26,1,2280,0,0,0,0,8
 64490,Ilias Haddad,2007,U19Q,16341,True,6,1,0,90,0,0,0,0,1
 64490,Ilias Haddad,2007,NLJB,7460,False,2,0,0,0,0,0,0,0,0
-64490,Ilias Haddad,2007,FS,16341,True,2,1,0,90,0,0,0,0,0
+64490,Ilias Haddad,2007,FS,16341,True,3,1,0,90,0,0,0,0,0
 1180814,Khalid Kasbi,2026,MAR1,79389,False,7,0,2,0,0,0,0,0,0
 1180814,Khalid Kasbi,2026,FS,37630,True,10,8,0,479,2,0,0,0,0
 1180814,Khalid Kasbi,2025,MRR1,79389,False,2,0,0,0,0,0,0,0,0
@@ -10961,7 +10966,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1055339,Redouan Ait Lamkadem,2022,MAR1,79389,False,30,26,0,1872,1,1,0,0,5
 1055339,Redouan Ait Lamkadem,2016,FS,34903,True,2,0,0,0,0,0,0,0,0
 1245251,Zakaria Kessary,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
-1245251,Zakaria Kessary,2026,PO1,2521,False,9,3,0,50,0,0,2,1,0
+1245251,Zakaria Kessary,2026,PO1,2521,False,11,3,0,50,0,0,2,1,0
 1245251,Zakaria Kessary,2025,PO1,2521,False,17,3,0,4,0,0,0,0,0
 1245251,Zakaria Kessary,2025,MAR1,79389,False,8,8,0,601,1,0,0,0,2
 1245251,Zakaria Kessary,2024,MEC1,79389,False,8,5,0,200,0,0,0,0,0
@@ -11235,7 +11240,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 234942,Mohamed El Yousfi,2012,FS,34903,True,1,1,0,90,0,0,0,0,0
 234942,Mohamed El Yousfi,2011,MAR1,9100,False,30,1,0,90,0,0,0,0,0
 234942,Mohamed El Yousfi,2010,MAR1,9100,False,30,0,0,0,0,0,0,0,0
-902815,Zakaria Benabbou,2026,MAR1,9100,False,7,6,0,540,0,0,0,0,1
+902815,Zakaria Benabbou,2026,MAR1,9100,False,7,7,0,630,0,0,0,0,1
 902815,Zakaria Benabbou,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 902815,Zakaria Benabbou,2024,MRR1,37175,False,2,0,0,0,0,0,0,0,0
 902815,Zakaria Benabbou,2024,MEC1,37175,False,6,0,0,0,0,0,0,0,0
@@ -11247,7 +11252,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1275266,Yassine Amaadour,2024,MARP,9100,False,4,0,0,0,0,0,0,0,0
 1275266,Yassine Amaadour,2024,MAR1,9100,False,25,0,0,0,0,0,0,0,0
 1275266,Yassine Amaadour,2023,MAR1,9100,False,1,0,0,0,0,0,0,0,0
-682117,Achraf Marzak,2026,MAR1,9100,False,7,6,0,506,0,0,0,0,1
+682117,Achraf Marzak,2026,MAR1,9100,False,7,7,0,596,0,0,0,0,1
 682117,Achraf Marzak,2025,MARP,9100,False,1,0,0,0,0,0,0,0,0
 682117,Achraf Marzak,2024,MEC1,74953,False,7,1,0,90,0,0,0,0,0
 682117,Achraf Marzak,2024,MARP,74953,False,2,1,0,9,0,0,0,0,0
@@ -11265,7 +11270,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 682117,Achraf Marzak,2018,MARP,9099,False,2,2,0,180,0,0,0,0,0
 682117,Achraf Marzak,2017,MARP,28210,False,5,0,0,0,0,0,0,0,0
 682117,Achraf Marzak,2016,MARP,28210,False,2,0,0,0,0,0,0,0,0
-593430,Soulayman Driouech,2026,MAR1,9100,False,7,6,0,540,0,0,0,0,0
+593430,Soulayman Driouech,2026,MAR1,9100,False,7,7,0,621,0,0,0,0,1
 593430,Soulayman Driouech,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 593430,Soulayman Driouech,2024,MEC1,9100,False,4,0,0,0,0,0,0,0,0
 593430,Soulayman Driouech,2024,MEC1,103954,False,3,1,0,90,0,0,0,0,0
@@ -11284,7 +11289,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1318239,Mohamed Dades,2024,MEC1,9100,False,6,2,0,180,0,0,0,0,0
 1318239,Mohamed Dades,2024,MARP,9100,False,4,2,0,150,0,0,0,0,0
 1318239,Mohamed Dades,2024,MAR1,9100,False,30,12,0,1023,0,0,0,0,0
-1263682,Yassine Karraz,2026,MAR1,9100,False,7,4,0,87,0,0,0,0,0
+1263682,Yassine Karraz,2026,MAR1,9100,False,7,5,0,88,0,0,0,0,0
 1263682,Yassine Karraz,2025,MARP,9100,False,1,0,0,0,0,0,0,0,0
 1263682,Yassine Karraz,2024,MEC1,9100,False,6,6,0,495,1,0,0,0,0
 1263682,Yassine Karraz,2024,MARP,9100,False,4,1,0,63,0,0,0,0,0
@@ -11299,7 +11304,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 520796,Yassine Aboursas,2017,MAR1,9100,False,30,0,0,0,0,0,0,0,0
 520796,Yassine Aboursas,2016,MARP,9100,False,2,0,0,0,0,0,0,0,0
 520796,Yassine Aboursas,2016,MAR1,9100,False,30,2,0,91,0,0,0,0,0
-1263685,Issam Bouabsidi,2026,MAR1,9100,False,7,6,0,381,0,0,0,0,1
+1263685,Issam Bouabsidi,2026,MAR1,9100,False,7,7,0,471,0,0,0,0,1
 1263685,Issam Bouabsidi,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 1263685,Issam Bouabsidi,2024,MEC1,9100,False,6,2,0,135,0,0,0,0,1
 1263685,Issam Bouabsidi,2024,MARP,9100,False,4,1,0,30,0,0,0,0,0
@@ -11317,7 +11322,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 721825,Ayoub El Ouardighi,2020,MAR1,9100,False,30,17,0,774,1,0,0,0,3
 721825,Ayoub El Ouardighi,2019,MAR1,9100,False,30,15,0,707,0,0,0,0,3
 721825,Ayoub El Ouardighi,2018,MARP,9100,False,4,1,0,22,0,0,0,0,0
-1091426,Mouad Karmoun,2026,MAR1,9100,False,6,6,0,540,1,0,0,0,0
+1091426,Mouad Karmoun,2026,MAR1,9100,False,7,7,0,630,1,0,0,0,1
 1091426,Mouad Karmoun,2025,MARP,9100,False,1,0,0,0,0,0,0,0,0
 1091426,Mouad Karmoun,2024,MEC1,9100,False,6,5,0,273,0,0,0,0,0
 1091426,Mouad Karmoun,2024,MARP,9100,False,4,4,0,257,0,0,0,0,1
@@ -11353,13 +11358,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 235071,Noussair El Mimouni,2012,FS,34903,True,1,1,0,71,0,0,0,0,0
 235071,Noussair El Mimouni,2011,MAR1,9100,False,30,18,0,1620,0,1,0,0,2
 235071,Noussair El Mimouni,2010,MAR1,9100,False,30,2,0,110,0,0,0,0,0
-1332257,Diae-Eddine Eddaoudi,2026,MAR1,9100,False,7,6,0,513,0,1,0,0,2
+1332257,Diae-Eddine Eddaoudi,2026,MAR1,9100,False,7,7,0,558,0,1,0,0,2
 1332257,Diae-Eddine Eddaoudi,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 1332257,Diae-Eddine Eddaoudi,2025,FS,37630,True,2,1,0,90,0,0,0,0,0
 1332257,Diae-Eddine Eddaoudi,2024,MEC1,9100,False,5,3,0,244,0,0,0,0,0
 1332257,Diae-Eddine Eddaoudi,2024,MARP,9100,False,4,4,0,171,0,1,0,0,0
 1332257,Diae-Eddine Eddaoudi,2024,MAR1,9100,False,29,22,0,764,0,0,0,0,0
-926517,Mohamed Kassou,2026,MAR1,9100,False,7,6,0,500,1,0,0,0,1
+926517,Mohamed Kassou,2026,MAR1,9100,False,7,7,0,590,1,0,0,0,1
 926517,Mohamed Kassou,2025,MARP,9100,False,1,0,0,0,0,0,0,0,0
 926517,Mohamed Kassou,2024,MEC1,18702,False,6,4,0,315,2,1,0,0,0
 926517,Mohamed Kassou,2024,MARP,18702,False,3,1,0,63,0,0,0,0,0
@@ -11390,12 +11395,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1418103,Mustapha El Crachna,2026,MAR1,9100,False,7,2,0,42,0,0,0,0,0
 1418103,Mustapha El Crachna,2025,MARP,9100,False,1,1,0,75,0,0,0,0,0
 1418103,Mustapha El Crachna,2024,MARP,9100,False,2,0,0,0,0,0,0,0,0
-530969,Hicham Zeghari,2026,MAR1,9100,False,7,6,0,502,0,0,0,0,1
+530969,Hicham Zeghari,2026,MAR1,9100,False,7,7,0,592,0,0,0,0,1
 530969,Hicham Zeghari,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 530969,Hicham Zeghari,2024,MARP,70125,False,2,2,0,180,0,0,0,0,1
 530969,Hicham Zeghari,2022,MARP,70125,False,1,0,0,0,0,0,0,0,0
 530969,Hicham Zeghari,2016,MAR1,12721,False,2,0,0,0,0,0,0,0,0
-1055840,Anwar Oussarhan,2026,MAR1,9100,False,7,6,0,163,0,1,0,0,0
+1055840,Anwar Oussarhan,2026,MAR1,9100,False,7,7,0,172,0,1,0,0,0
 1055840,Anwar Oussarhan,2025,MARP,9100,False,1,1,0,120,0,0,0,0,0
 1055840,Anwar Oussarhan,2024,MRR1,59771,False,2,2,0,54,0,0,0,0,0
 1055840,Anwar Oussarhan,2024,MEC1,59771,False,10,7,0,568,2,1,0,0,1
@@ -11421,7 +11426,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1261262,Ziad Nejjary,2024,MARP,2068,False,2,0,0,0,0,0,0,0,0
 1261262,Ziad Nejjary,2024,MAR1,2068,False,25,0,0,0,0,0,0,0,0
 1261262,Ziad Nejjary,2024,ACL,2068,False,6,0,0,0,0,0,0,0,0
-844299,Mohamed Jaouab,2026,MAR1,3282,False,6,1,0,88,0,0,0,0,0
+844299,Mohamed Jaouab,2026,MAR1,3282,False,7,1,0,88,0,0,0,0,0
 844299,Mohamed Jaouab,2026,ACL,3282,False,4,1,0,90,0,0,0,0,0
 844299,Mohamed Jaouab,2025,ES2,366,False,42,7,0,372,1,0,1,1,2
 844299,Mohamed Jaouab,2025,CDR,366,False,1,0,0,0,0,0,0,0,0
@@ -11437,7 +11442,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 844299,Mohamed Jaouab,2022,FS,34903,True,1,0,1,0,0,0,0,0,0
 844299,Mohamed Jaouab,2022,FR4A,8154,False,28,18,0,1284,1,0,0,0,4
 396429,Diogo Calila,2026,PO1,2423,False,4,4,0,355,0,1,1,0,0
-396429,Diogo Calila,2026,MAR1,3282,False,6,2,0,180,0,0,0,0,1
+396429,Diogo Calila,2026,MAR1,3282,False,7,2,0,180,0,0,0,0,1
 396429,Diogo Calila,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 396429,Diogo Calila,2025,POPO,2423,False,3,1,0,32,1,1,0,0,0
 396429,Diogo Calila,2025,POCP,2423,False,1,1,0,66,0,0,1,0,0
@@ -11475,7 +11480,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1496489,Samba Mbengue,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 1496489,Samba Mbengue,2025,SEN1,113294,False,30,26,0,2248,0,0,0,0,3
 1496489,Samba Mbengue,2024,SEN1,113384,False,30,0,0,0,0,0,0,0,0
-342489,Tshegofatso Mabasa,2026,MAR1,3282,False,7,6,0,372,2,0,0,0,0
+342489,Tshegofatso Mabasa,2026,MAR1,3282,False,7,7,0,438,2,0,0,0,0
 342489,Tshegofatso Mabasa,2026,ACL,3282,False,4,2,0,114,0,1,0,0,0
 342489,Tshegofatso Mabasa,2025,TELK,2557,False,4,1,0,28,0,0,1,1,0
 342489,Tshegofatso Mabasa,2025,SFAL,2557,False,4,2,0,74,1,1,4,2,0
@@ -11524,7 +11529,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 342489,Tshegofatso Mabasa,2015,NEDC,8607,False,1,0,0,0,0,0,0,0,0
 342489,Tshegofatso Mabasa,2014,TELK,8607,False,1,1,0,14,0,0,0,0,0
 342489,Tshegofatso Mabasa,2014,SFA1,8607,False,23,1,0,11,0,0,0,0,0
-303410,Christopher Ibayi,2026,MAR1,3282,False,6,3,0,137,1,0,0,0,0
+303410,Christopher Ibayi,2026,MAR1,3282,False,7,5,0,207,1,0,0,0,0
 303410,Christopher Ibayi,2026,ELQ,938,False,1,0,0,0,0,0,0,0,0
 303410,Christopher Ibayi,2026,CLQ,938,False,2,2,0,25,0,0,0,0,1
 303410,Christopher Ibayi,2026,C1,938,False,2,0,0,0,0,0,0,0,0
@@ -11554,7 +11559,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 303410,Christopher Ibayi,2018,FR5A,51549,False,4,0,0,0,0,0,0,0,0
 303410,Christopher Ibayi,2018,FR4C,41128,False,23,22,0,1581,11,0,0,0,5
 303410,Christopher Ibayi,2017,FRC,51549,False,1,0,0,0,0,0,0,0,0
-303410,Christopher Ibayi,2017,FR5I,51549,False,26,0,0,0,0,0,0,0,0
+303410,Christopher Ibayi,2017,FR5I,51549,False,26,18,0,1000,6,0,0,0,2
 303410,Christopher Ibayi,2016,FRC,51549,False,1,0,0,0,0,0,0,0,0
 303410,Christopher Ibayi,2015,FR5A,18008,False,26,0,0,0,0,0,0,0,0
 303410,Christopher Ibayi,2014,FRL,595,False,2,0,0,0,0,0,0,0,0
@@ -11562,7 +11567,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 303410,Christopher Ibayi,2014,FR5C,9652,False,26,16,0,807,4,0,0,0,2
 303410,Christopher Ibayi,2014,FR1,595,False,17,0,0,0,0,0,0,0,0
 303410,Christopher Ibayi,2013,FR5A,9652,False,26,0,0,0,0,0,0,0,0
-639225,Amine El Farissi,2026,MAR1,3282,False,6,2,0,29,0,0,0,0,0
+639225,Amine El Farissi,2026,MAR1,3282,False,7,2,0,29,0,0,0,0,0
 639225,Amine El Farissi,2026,ACL,3282,False,4,1,0,4,0,0,0,0,0
 639225,Amine El Farissi,2025,FRC,7042,False,1,1,0,63,0,0,0,0,0
 639225,Amine El Farissi,2025,FR2,7042,False,34,31,1,2131,5,4,51,16,5
@@ -11582,7 +11587,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 639225,Amine El Farissi,2016,FR5C,58098,False,26,12,0,472,0,0,0,0,0
 1203845,Anas El Mahraoui,2026,RUP,3725,False,1,0,0,0,0,0,0,0,0
 1203845,Anas El Mahraoui,2026,RU1,3725,False,3,0,0,0,0,0,0,0,0
-1203845,Anas El Mahraoui,2026,MAR1,3282,False,6,5,0,286,2,1,0,0,0
+1203845,Anas El Mahraoui,2026,MAR1,3282,False,7,7,0,400,2,1,0,0,0
 1203845,Anas El Mahraoui,2026,ACL,3282,False,4,2,0,54,0,0,0,0,0
 1203845,Anas El Mahraoui,2025,RUP,3725,False,3,1,0,30,0,0,0,0,0
 1203845,Anas El Mahraoui,2025,RUP,14589,False,1,1,0,84,0,0,0,0,0
@@ -11593,7 +11598,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1203845,Anas El Mahraoui,2024,FS,34903,True,2,1,0,90,0,0,0,0,0
 1203845,Anas El Mahraoui,2024,CHAN,3575,True,7,3,0,125,0,0,2,1,0
 852608,Devin Titus,2026,SFA1,23287,False,3,2,0,107,1,0,4,1,0
-852608,Devin Titus,2026,MAR1,3282,False,7,6,0,471,0,2,0,0,0
+852608,Devin Titus,2026,MAR1,3282,False,7,7,0,552,0,2,0,0,0
 852608,Devin Titus,2026,ACL,3282,False,4,2,0,42,1,1,0,0,0
 852608,Devin Titus,2025,TELK,23287,False,2,2,0,165,0,0,5,0,0
 852608,Devin Titus,2025,SFAL,23287,False,4,4,0,354,1,1,8,2,0
@@ -11622,7 +11627,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1400725,Youssef Hafidi,2025,MARP,102639,False,1,1,0,90,0,0,0,0,0
 1400725,Youssef Hafidi,2024,MARP,105208,False,1,1,0,45,0,0,0,0,0
 366746,Yahia Attiyat Allah,2026,RU2,41231,False,4,0,0,0,0,0,0,0,0
-366746,Yahia Attiyat Allah,2026,MAR1,6603,False,6,5,0,450,0,1,0,0,1
+366746,Yahia Attiyat Allah,2026,MAR1,6603,False,7,7,0,630,0,1,0,0,1
 366746,Yahia Attiyat Allah,2025,RUP,41231,False,6,1,2,68,0,0,0,0,0
 366746,Yahia Attiyat Allah,2025,RU1,41231,False,30,8,5,648,0,1,5,0,4
 366746,Yahia Attiyat Allah,2024,RU2,41231,False,4,0,0,0,0,0,0,0,0
@@ -11678,7 +11683,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1133781,Abdoul Kabir Ouédraogo,2026,ACL,3282,False,2,0,0,0,0,0,0,0,0
 1133781,Abdoul Kabir Ouédraogo,2025,ACL,48935,False,4,2,0,93,0,0,0,0,0
 1133781,Abdoul Kabir Ouédraogo,2022,17AC,25502,True,1,0,0,0,0,0,0,0,0
-255749,Yahya Jabrane,2026,MAR1,6603,False,6,2,0,59,0,0,0,0,0
+255749,Yahya Jabrane,2026,MAR1,6603,False,7,2,0,59,0,0,0,0,0
 255749,Yahya Jabrane,2025,UAE1,24724,False,12,11,0,689,0,0,3,1,2
 255749,Yahya Jabrane,2025,LPL,25926,False,7,6,0,540,1,0,0,0,1
 255749,Yahya Jabrane,2024,ACL2,15482,False,6,5,0,450,1,0,4,2,0
@@ -11733,7 +11738,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 255749,Yahya Jabrane,2015,MAR1,22941,False,30,27,0,2430,1,0,0,0,0
 255749,Yahya Jabrane,2012,MAR1,37175,False,30,10,0,402,0,0,0,0,2
 326150,Issoufou Dayo,2026,QU2L,10920,False,3,0,0,0,0,0,0,0,0
-326150,Issoufou Dayo,2026,MAR1,6603,False,7,6,0,540,0,0,0,0,0
+326150,Issoufou Dayo,2026,MAR1,6603,False,7,7,0,630,0,0,0,0,0
 326150,Issoufou Dayo,2025,QSL,10920,False,22,7,0,519,0,0,1,1,1
 326150,Issoufou Dayo,2025,QSCP,10920,False,12,2,0,180,0,0,0,0,0
 326150,Issoufou Dayo,2025,QEC1,10920,False,2,0,0,0,0,0,0,0,0
@@ -11829,7 +11834,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 734751,Nizar Al-Rashdan,2019,23AF,64232,True,4,0,0,0,0,0,0,0,0
 312819,Silvere Ganvoula,2026,SAKC,50531,False,1,1,0,17,0,0,0,0,0
 312819,Silvere Ganvoula,2026,SA1,50531,False,7,3,0,122,0,0,6,2,1
-312819,Silvere Ganvoula,2026,MAR1,6603,False,6,5,0,385,3,0,0,0,0
+312819,Silvere Ganvoula,2026,MAR1,6603,False,7,7,0,534,4,1,0,0,0
 312819,Silvere Ganvoula,2025,SAKC,50531,False,1,1,0,120,0,0,5,2,0
 312819,Silvere Ganvoula,2025,SA1,50531,False,34,29,1,1193,4,0,35,10,2
 312819,Silvere Ganvoula,2025,IT2,2919,False,1,0,1,0,0,0,0,0,0
@@ -11895,7 +11900,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 312819,Silvere Ganvoula,2012,TDV,31519,True,3,1,0,68,0,0,0,0,0
 312819,Silvere Ganvoula,2012,17AC,31519,True,3,0,0,0,0,0,0,0,0
 779752,Soufiane Hetli,2026,NL1,1434,False,2,2,0,153,0,0,5,1,0
-779752,Soufiane Hetli,2026,MAR1,6603,False,6,0,6,0,0,0,0,0,0
+779752,Soufiane Hetli,2026,MAR1,6603,False,7,0,7,0,0,0,0,0,0
 779752,Soufiane Hetli,2025,NLP,1434,False,5,3,0,119,1,0,0,0,0
 779752,Soufiane Hetli,2025,NL1,1434,False,34,31,0,1618,3,1,53,14,2
 779752,Soufiane Hetli,2024,PON2,1434,False,6,0,0,0,0,0,0,0,0
@@ -11905,7 +11910,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 779752,Soufiane Hetli,2023,NLP,2838,False,3,2,0,32,0,0,0,0,0
 779752,Soufiane Hetli,2022,NTD,2838,False,34,20,0,821,2,0,0,0,1
 779752,Soufiane Hetli,2022,NLP,2838,False,1,0,0,0,0,0,0,0,0
-362287,Aymane El Hassouni,2026,MAR1,6603,False,7,6,0,375,1,0,0,0,2
+362287,Aymane El Hassouni,2026,MAR1,6603,False,7,7,0,444,1,0,0,0,3
 362287,Aymane El Hassouni,2025,LPL3,38559,False,1,0,0,0,0,0,0,0,0
 362287,Aymane El Hassouni,2025,LPL2,38559,False,5,1,0,28,0,0,0,0,0
 362287,Aymane El Hassouni,2025,LPL,38559,False,18,12,0,860,4,0,0,0,3
@@ -11950,7 +11955,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 362287,Aymane El Hassouni,2012,FS,37630,True,1,1,0,90,1,0,0,0,0
 612041,Jamal Harkass,2026,SAKC,50532,False,1,0,0,0,0,0,0,0,0
 612041,Jamal Harkass,2026,SA2L,50532,False,5,0,0,0,0,0,0,0,0
-612041,Jamal Harkass,2026,MAR1,37176,False,6,4,0,322,1,0,0,0,1
+612041,Jamal Harkass,2026,MAR1,37176,False,7,6,0,502,1,0,0,0,2
 612041,Jamal Harkass,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 612041,Jamal Harkass,2025,SAKC,50532,False,1,1,0,90,0,0,0,0,1
 612041,Jamal Harkass,2025,SA1,50532,False,34,31,1,2675,2,1,18,4,9
@@ -11979,7 +11984,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 612041,Jamal Harkass,2018,MAR1,22941,False,30,26,0,2221,0,1,0,0,1
 612041,Jamal Harkass,2016,MARP,22941,False,2,0,0,0,0,0,0,0,0
 612041,Jamal Harkass,2015,MAR1,22941,False,30,0,0,0,0,0,0,0,0
-1606862,Haitam Hamani,2026,MAR1,6603,False,7,6,0,82,0,1,0,0,0
+1606862,Haitam Hamani,2026,MAR1,6603,False,7,7,0,88,0,1,0,0,0
 593431,Adil Tahif,2026,MAR1,37176,False,7,1,0,90,0,0,0,0,0
 593431,Adil Tahif,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 593431,Adil Tahif,2025,QSL,10920,False,22,15,0,1186,0,1,6,1,2
@@ -12013,7 +12018,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 593431,Adil Tahif,2018,FS,37630,True,2,2,0,160,0,1,0,0,0
 593431,Adil Tahif,2017,FS,37630,True,4,4,0,360,1,0,0,0,1
 265569,Youssef Aït Bennasser,2026,TR2,3205,False,4,0,0,0,0,0,0,0,0
-265569,Youssef Aït Bennasser,2026,MAR1,37176,False,6,4,0,342,0,0,0,0,1
+265569,Youssef Aït Bennasser,2026,MAR1,37176,False,7,5,0,387,0,0,0,0,1
 265569,Youssef Aït Bennasser,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 265569,Youssef Aït Bennasser,2025,TRP,3205,False,2,0,0,0,0,0,0,0,0
 265569,Youssef Aït Bennasser,2025,TR1,3205,False,31,21,10,1476,0,0,7,0,7
@@ -12067,8 +12072,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 265569,Youssef Aït Bennasser,2013,FR5C,10840,False,19,2,0,116,0,0,0,0,0
 265569,Youssef Aït Bennasser,2012,17AC,37524,True,1,1,0,90,0,0,0,0,0
 265569,Youssef Aït Bennasser,2011,F17M,69159,False,3,0,0,0,0,0,0,0,0
-891380,Omar El Manssouri,2026,SL1,433,False,10,1,0,45,0,0,0,0,0
-891380,Omar El Manssouri,2026,MAR1,37176,False,6,2,0,45,0,0,0,0,0
+891380,Omar El Manssouri,2026,SL1,433,False,9,1,0,45,0,0,0,0,0
+891380,Omar El Manssouri,2026,MAR1,37176,False,7,4,0,122,0,0,0,0,0
 891380,Omar El Manssouri,2026,ECLQ,433,False,2,0,0,0,0,0,0,0,0
 891380,Omar El Manssouri,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 891380,Omar El Manssouri,2025,SL1,433,False,7,2,0,60,0,0,0,0,0
@@ -12085,7 +12090,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 891380,Omar El Manssouri,2019,F19B,11199,False,26,6,0,474,0,0,0,0,1
 891380,Omar El Manssouri,2018,FR5I,7968,False,1,0,0,0,0,0,0,0,0
 891380,Omar El Manssouri,2017,F17M,33906,False,1,0,0,0,0,0,0,0,0
-111627,Ryan Mendes,2026,MAR1,37176,False,6,2,0,156,0,0,0,0,0
+111627,Ryan Mendes,2026,MAR1,37176,False,7,4,0,213,0,1,0,0,0
 111627,Ryan Mendes,2026,AFCQ,4311,True,2,2,0,161,0,1,0,0,0
 111627,Ryan Mendes,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 111627,Ryan Mendes,2025,TRP,74664,False,6,4,0,164,0,0,0,0,0
@@ -12191,7 +12196,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1263254,Hamza Kattoussi,2022,MAR1,37176,False,23,1,0,1,0,0,0,0,0
 1263254,Hamza Kattoussi,2021,MAR1,37176,False,1,0,0,0,0,0,0,0,0
 478347,Marian Huja,2026,RO1,7769,False,4,0,0,0,0,0,0,0,0
-478347,Marian Huja,2026,MAR1,2068,False,5,4,0,360,0,0,0,0,1
+478347,Marian Huja,2026,MAR1,2068,False,7,5,0,450,0,0,0,0,1
 478347,Marian Huja,2026,ECLQ,7769,False,4,1,0,11,0,0,0,0,0
 478347,Marian Huja,2026,CAFC,2068,False,2,2,0,180,1,0,0,0,0
 478347,Marian Huja,2025,ROMP,7769,False,2,1,0,90,0,0,0,0,0
@@ -12222,7 +12227,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478347,Marian Huja,2018,DK2,23297,False,33,27,3,2233,0,0,0,0,5
 478347,Marian Huja,2017,FAYC,10732,False,2,0,0,0,0,0,0,0,0
 478347,Marian Huja,2016,FS,16371,True,2,1,0,45,0,0,0,0,0
-542525,Younes Bakiz,2026,MAR1,2068,False,5,3,0,223,0,0,0,0,1
+542525,Younes Bakiz,2026,MAR1,2068,False,7,3,0,223,0,0,0,0,1
 542525,Younes Bakiz,2026,DKRE,62693,False,1,1,0,90,0,0,0,0,0
 542525,Younes Bakiz,2026,DKP,1177,False,1,1,0,90,0,0,0,0,0
 542525,Younes Bakiz,2026,DK1,1177,False,8,5,0,129,0,0,5,1,0
@@ -12260,7 +12265,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 542525,Younes Bakiz,2018,DK2,1842,False,33,15,0,694,4,0,0,0,2
 542525,Younes Bakiz,2017,DKDD,16109,False,24,10,0,756,2,0,0,0,0
 542525,Younes Bakiz,2016,DKDD,16109,False,22,9,0,652,5,0,0,0,2
-722365,Michael Agbekpornu,2026,MAR1,2068,False,5,2,0,180,0,0,0,0,2
+722365,Michael Agbekpornu,2026,MAR1,2068,False,7,5,0,272,0,0,0,0,3
 722365,Michael Agbekpornu,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 722365,Michael Agbekpornu,2025,KRC,2362,False,2,1,0,62,0,0,0,0,0
 722365,Michael Agbekpornu,2025,KR1,2362,False,20,17,1,1138,1,1,5,2,6
@@ -12280,7 +12285,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 722365,Michael Agbekpornu,2018,23AC,46770,True,5,5,0,425,0,1,4,1,1
 1610951,Souleymane Sy,2026,MAR1,37176,False,1,1,0,27,0,0,0,0,0
 610484,Adel Bettaieb,2026,TUN1,3342,False,2,0,0,0,0,0,0,0,0
-610484,Adel Bettaieb,2026,MAR1,2068,False,5,3,1,195,1,0,0,0,0
+610484,Adel Bettaieb,2026,MAR1,2068,False,7,5,1,233,1,0,0,0,0
 610484,Adel Bettaieb,2026,CAFC,2068,False,2,0,2,0,0,0,0,0,0
 610484,Adel Bettaieb,2025,ROMP,41278,False,6,5,0,255,0,2,0,0,0
 610484,Adel Bettaieb,2025,RO1C,41278,False,10,9,1,668,4,0,20,7,4
@@ -12312,7 +12317,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 610484,Adel Bettaieb,2016,FR5A,16672,False,26,22,0,930,2,0,0,0,3
 610484,Adel Bettaieb,2015,FR5A,16672,False,25,5,0,282,1,0,0,0,1
 610484,Adel Bettaieb,2014,FR5A,16672,False,23,11,0,369,1,0,0,0,0
-627163,Mounaïm El Idrissy,2026,MAR1,2068,False,5,1,0,11,0,0,0,0,0
+627163,Mounaïm El Idrissy,2026,MAR1,2068,False,7,1,0,11,0,0,0,0,0
 627163,Mounaïm El Idrissy,2026,CAFC,2068,False,2,1,0,20,0,0,0,0,0
 627163,Mounaïm El Idrissy,2025,FRC,1095,False,5,3,1,123,1,0,2,0,1
 627163,Mounaïm El Idrissy,2025,FR2,1095,False,34,26,4,681,4,2,15,7,7
@@ -12367,7 +12372,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 843459,Nabil Marmouk,2021,FS,34903,True,2,2,0,180,0,0,0,0,0
 843459,Nabil Marmouk,2020,MARP,3282,False,2,2,0,240,0,0,0,0,0
 843459,Nabil Marmouk,2020,MAR1,3282,False,30,27,1,2430,3,2,0,0,3
-398886,Merveil Ndockyt,2026,MAR1,9099,False,5,3,0,252,0,0,0,0,1
+398886,Merveil Ndockyt,2026,MAR1,9099,False,7,4,0,342,0,0,0,0,1
 398886,Merveil Ndockyt,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2026,AFCQ,3702,True,2,2,0,114,0,0,3,1,0
 398886,Merveil Ndockyt,2025,UCOL,144,False,10,8,1,446,0,0,7,2,3
@@ -12377,38 +12382,47 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 398886,Merveil Ndockyt,2025,CLQ,144,False,2,2,0,133,0,0,0,0,0
 398886,Merveil Ndockyt,2024,KRC,24575,False,3,1,0,69,0,0,0,0,0
 398886,Merveil Ndockyt,2024,KR1,24575,False,36,32,2,2324,2,3,33,10,9
+398886,Merveil Ndockyt,2024,CHAN,3702,True,3,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2024,AFCQ,3702,True,6,6,0,491,0,0,16,3,0
-398886,Merveil Ndockyt,2023,WMQ2,3702,True,2,2,0,163,0,0,0,0,1
+398886,Merveil Ndockyt,2023,WMQ2,3702,True,9,2,0,163,0,0,0,0,1
 398886,Merveil Ndockyt,2023,KRC,24575,False,3,2,0,73,0,0,0,0,0
 398886,Merveil Ndockyt,2023,KR1,24575,False,36,13,0,1140,2,1,19,8,4
+398886,Merveil Ndockyt,2023,FS,3702,True,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2022,KRC,24575,False,2,1,0,90,0,0,0,0,0
 398886,Merveil Ndockyt,2022,KR1,327,False,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2022,KR1,24575,False,34,29,0,1481,3,1,32,9,4
+398886,Merveil Ndockyt,2022,FS,3702,True,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2022,ECLQ,327,False,1,0,0,0,0,0,0,0,0
+398886,Merveil Ndockyt,2022,CHAN,3702,True,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2021,KRC,327,False,4,2,0,180,0,0,0,0,0
 398886,Merveil Ndockyt,2021,KR1,327,False,36,7,0,179,0,1,4,1,0
+398886,Merveil Ndockyt,2021,FS,3702,True,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2021,ECLQ,327,False,4,1,0,12,0,0,0,0,0
+398886,Merveil Ndockyt,2021,AFCQ,3702,True,6,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2020,KRC,327,False,3,0,1,0,0,0,0,0,0
 398886,Merveil Ndockyt,2020,KR1,327,False,36,12,20,628,0,2,10,4,1
 398886,Merveil Ndockyt,2020,FS,3702,True,1,1,0,90,0,0,0,0,0
 398886,Merveil Ndockyt,2020,ELQ,327,False,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2020,CHAN,3702,True,4,0,3,0,0,0,0,0,0
-398886,Merveil Ndockyt,2019,WMQ2,3702,True,4,1,0,75,0,0,1,0,0
+398886,Merveil Ndockyt,2019,WMQ2,3702,True,6,1,0,75,0,0,1,0,0
 398886,Merveil Ndockyt,2019,KRC,327,False,4,3,0,180,0,0,0,0,2
 398886,Merveil Ndockyt,2019,KR1,327,False,30,27,0,1532,0,3,0,0,5
+398886,Merveil Ndockyt,2019,FS,3702,True,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2019,ES3A,8510,False,1,1,0,74,0,0,0,0,0
 398886,Merveil Ndockyt,2019,ES1,3709,False,2,0,0,0,0,0,0,0,0
-398886,Merveil Ndockyt,2019,AFCQ,3702,True,4,2,2,180,0,0,0,0,0
+398886,Merveil Ndockyt,2019,AFCQ,3702,True,6,2,2,180,0,0,0,0,0
 398886,Merveil Ndockyt,2018,ES3C,2464,False,16,10,1,489,2,1,0,0,0
 398886,Merveil Ndockyt,2018,ES2,237,False,22,5,0,234,0,0,3,0,0
 398886,Merveil Ndockyt,2018,ES1,3709,False,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2018,CDR,3709,False,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2018,CDR,237,False,3,2,0,143,0,1,2,0,1
+398886,Merveil Ndockyt,2017,FS,3702,True,1,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2017,ES1,3709,False,20,6,0,62,0,0,0,0,1
 398886,Merveil Ndockyt,2017,ELQ,2049,False,2,2,0,180,0,0,0,0,0
 398886,Merveil Ndockyt,2017,E3PL,8510,False,4,3,0,121,0,0,0,0,1
+398886,Merveil Ndockyt,2017,CHAN,3702,True,4,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2017,AFCQ,3702,True,6,5,0,374,1,2,0,0,0
-398886,Merveil Ndockyt,2016,WMQ2,3702,True,7,2,0,96,0,0,0,0,0
+398886,Merveil Ndockyt,2016,WMQ2,3702,True,8,2,0,96,0,0,0,0,0
 398886,Merveil Ndockyt,2016,FS,3702,True,2,0,0,0,0,0,0,0,0
 398886,Merveil Ndockyt,2016,ALBP,2049,False,9,7,0,615,2,0,0,0,0
 398886,Merveil Ndockyt,2016,ALB1,2049,False,36,29,0,2472,5,3,0,0,3
@@ -12504,7 +12518,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1389006,Mustapha El Meskini,2024,MEC1,6371,False,3,0,0,0,0,0,0,0,0
 1389006,Mustapha El Meskini,2024,MARP,6371,False,1,0,0,0,0,0,0,0,0
 1389006,Mustapha El Meskini,2024,MAR1,6371,False,5,0,0,0,0,0,0,0,0
-366740,Issam Naji,2026,MAR1,6371,False,7,5,0,310,0,0,0,0,2
+366740,Issam Naji,2026,MAR1,6371,False,7,6,0,400,0,0,0,0,3
 366740,Issam Naji,2025,MARP,22938,False,2,2,0,20,0,0,0,0,0
 366740,Issam Naji,2024,MEC1,22938,False,7,6,0,362,1,2,0,0,0
 366740,Issam Naji,2023,MARP,22938,False,1,0,0,0,0,0,0,0,0
@@ -12552,7 +12566,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 533060,Anderson Cruz,2015,CPSB,49866,False,18,0,0,0,0,0,0,0,0
 1386920,Yassine Belghroudi,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
 1386920,Yassine Belghroudi,2024,MEC1,37176,False,1,0,0,0,0,0,0,0,0
-1416427,Mohamed Ferhane,2026,MAR1,6371,False,7,4,0,87,0,0,0,0,3
+1416427,Mohamed Ferhane,2026,MAR1,6371,False,7,5,0,98,0,0,0,0,3
 1416427,Mohamed Ferhane,2025,MARP,22938,False,2,1,0,32,0,0,0,0,0
 1416427,Mohamed Ferhane,2025,MAR1,30625,False,8,0,0,0,0,0,0,0,0
 388477,Gaya Merbah,2026,MAR1,22935,False,7,7,0,630,0,0,0,0,1
@@ -12661,7 +12675,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1123779,Chouaib Boutrid,2024,MEC1,46681,False,6,4,0,360,0,0,0,0,0
 1123779,Chouaib Boutrid,2021,MARP,46681,False,2,0,0,0,0,0,0,0,0
 1123779,Chouaib Boutrid,2020,MARP,46681,False,1,0,0,0,0,0,0,0,0
-678296,Mohamed Zrida,2026,MAR1,30625,False,7,5,0,287,0,0,0,0,1
+678296,Mohamed Zrida,2026,MAR1,30625,False,7,6,0,357,0,0,0,0,1
 678296,Mohamed Zrida,2025,LPL,13505,False,8,5,0,68,0,0,0,0,1
 678296,Mohamed Zrida,2025,CAFC,13505,False,4,2,0,68,0,0,0,0,0
 678296,Mohamed Zrida,2024,MEC1,2068,False,5,0,0,0,0,0,0,0,0
@@ -12694,7 +12708,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 858913,Mohamed Aanane,2020,MARP,37175,False,4,4,0,390,0,0,0,0,0
 858913,Mohamed Aanane,2019,MAR1,37175,False,20,0,0,0,0,0,0,0,0
 1152442,Willy Onana,2026,TUN1,581,False,2,0,0,0,0,0,0,0,0
-1152442,Willy Onana,2026,MAR1,30625,False,7,5,0,316,1,0,0,0,0
+1152442,Willy Onana,2026,MAR1,30625,False,7,6,0,336,1,0,0,0,0
 1152442,Willy Onana,2025,TUNP,581,False,4,1,0,3,0,0,0,0,0
 1152442,Willy Onana,2025,TUN1,581,False,30,19,0,394,2,0,0,0,0
 1152442,Willy Onana,2024,LPL3,31527,False,4,1,0,39,0,0,0,0,0
@@ -12711,7 +12725,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 812367,Hassan Zraibi,2022,MARP,12721,False,2,1,0,90,1,0,0,0,0
 812367,Hassan Zraibi,2022,MAR1,12721,False,30,23,0,1697,1,0,0,0,1
 812367,Hassan Zraibi,2017,MARP,22938,False,1,0,0,0,0,0,0,0,0
-690038,Joseph Guédé Gnadou,2026,MAR1,30625,False,7,6,0,118,0,0,0,0,1
+690038,Joseph Guédé Gnadou,2026,MAR1,30625,False,7,7,0,163,0,0,0,0,1
 690038,Joseph Guédé Gnadou,2026,CAFC,100692,False,2,0,0,0,0,0,0,0,0
 690038,Joseph Guédé Gnadou,2025,CAFC,100692,False,5,4,0,229,1,0,6,3,0
 690038,Joseph Guédé Gnadou,2024,JO1L,15796,False,11,4,0,149,0,0,0,0,0
@@ -12729,7 +12743,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 690038,Joseph Guédé Gnadou,2020,MAR1,9099,False,30,28,0,2014,3,1,0,0,2
 690038,Joseph Guédé Gnadou,2019,MAR1,9099,False,30,28,0,2274,10,4,0,0,6
 690038,Joseph Guédé Gnadou,2018,MARP,9099,False,2,2,0,180,1,1,0,0,0
-902862,Achraf Laâziri,2026,MAR1,12721,False,6,5,0,450,0,0,0,0,2
+902862,Achraf Laâziri,2026,MAR1,12721,False,7,7,0,630,0,0,0,0,2
 902862,Achraf Laâziri,2025,FRC,1041,False,4,0,0,0,0,0,0,0,0
 902862,Achraf Laâziri,2025,FR5H,12764,False,4,4,0,360,0,0,0,0,0
 902862,Achraf Laâziri,2025,FR1,1041,False,34,0,0,0,0,0,0,0,0
@@ -12774,7 +12788,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 775979,Reda El Meliani,2021,NLBJ,39212,False,7,6,0,477,0,0,0,0,0
 775979,Reda El Meliani,2021,181S,81337,False,1,1,0,60,0,0,0,0,0
 1585826,Yassine Kermadi,2026,MAR1,12721,False,7,0,0,0,0,0,0,0,0
-847432,Babacar Sarr,2026,MAR1,12721,False,7,5,0,450,0,0,0,0,2
+847432,Babacar Sarr,2026,MAR1,12721,False,7,6,0,540,0,0,0,0,2
 847432,Babacar Sarr,2025,ALGP,13366,False,2,0,0,0,0,0,0,0,0
 847432,Babacar Sarr,2025,ALG1,13366,False,30,28,0,1809,2,2,0,0,4
 847432,Babacar Sarr,2025,ACL,13366,False,10,8,0,504,2,0,4,2,1
@@ -12791,7 +12805,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 847432,Babacar Sarr,2020,SEN1,68479,False,26,0,0,0,0,0,0,0,0
 847432,Babacar Sarr,2020,ACL,68479,False,10,6,0,433,0,0,1,0,0
 847432,Babacar Sarr,2017,CAFC,46322,False,2,2,0,180,0,0,0,0,1
-353875,Gape Edwin Mohutsiwa,2026,MAR1,12721,False,7,3,0,232,0,1,0,0,1
+353875,Gape Edwin Mohutsiwa,2026,MAR1,12721,False,7,4,0,308,0,1,0,0,1
 353875,Gape Edwin Mohutsiwa,2026,AFCQ,15229,True,2,2,0,180,0,1,2,0,1
 353875,Gape Edwin Mohutsiwa,2025,FS,15229,True,3,0,0,0,0,0,0,0,0
 353875,Gape Edwin Mohutsiwa,2025,ALGP,8851,False,1,1,0,78,0,0,0,0,1
@@ -12826,7 +12840,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 353875,Gape Edwin Mohutsiwa,2015,FS,15229,True,2,0,0,0,0,0,0,0,0
 353875,Gape Edwin Mohutsiwa,2015,AFCQ,15229,True,6,0,0,0,0,0,0,0,0
 353875,Gape Edwin Mohutsiwa,2014,FS,15229,True,3,1,0,90,0,0,0,0,0
-409472,Ousama Siddiki,2026,MAR1,12721,False,6,2,0,61,0,0,0,0,0
+409472,Ousama Siddiki,2026,MAR1,12721,False,7,3,0,63,0,0,0,0,0
 409472,Ousama Siddiki,2025,E3G2,16022,False,38,32,0,2299,6,6,0,0,10
 409472,Ousama Siddiki,2025,CDR,16022,False,1,1,0,77,0,0,0,0,0
 409472,Ousama Siddiki,2024,ES2P,16022,False,2,2,0,59,0,0,0,0,0
@@ -12847,7 +12861,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 409472,Ousama Siddiki,2018,E3PL,52109,False,2,1,0,90,0,0,0,0,0
 409472,Ousama Siddiki,2016,FS,37630,True,2,0,0,0,0,0,0,0,0
 409472,Ousama Siddiki,2016,19YL,41596,False,3,1,0,16,0,0,0,0,0
-331169,Senad Jarovic,2026,MAR1,12721,False,7,4,0,113,0,0,0,0,0
+331169,Senad Jarovic,2026,MAR1,12721,False,7,5,0,127,0,0,0,0,0
 331169,Senad Jarovic,2025,KOP1,29053,False,3,2,0,116,1,0,0,0,0
 331169,Senad Jarovic,2025,KO1,29053,False,36,32,3,2508,16,4,0,0,7
 331169,Senad Jarovic,2024,KOP1,29053,False,2,2,0,180,0,2,0,0,0
@@ -12896,14 +12910,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 331169,Senad Jarovic,2015,SLP,6248,False,2,2,0,78,0,0,0,0,1
 331169,Senad Jarovic,2015,SL1,6248,False,14,3,0,121,1,1,0,0,1
 331169,Senad Jarovic,2014,BJ2,23005,False,26,16,0,737,5,0,0,0,0
-1401866,Ibrahima Dieng,2026,MAR1,12721,False,7,6,0,524,1,1,0,0,0
+1401866,Ibrahima Dieng,2026,MAR1,12721,False,7,7,0,569,1,1,0,0,0
 1401866,Ibrahima Dieng,2025,SEN1,34895,False,30,13,0,981,2,1,0,0,2
 1401866,Ibrahima Dieng,2024,SEN1,34895,False,30,0,0,0,0,0,0,0,0
 1401866,Ibrahima Dieng,2024,20AC,37497,True,4,4,0,381,1,0,12,4,0
 1401866,Ibrahima Dieng,2023,SEN1,35070,False,8,0,0,0,0,0,0,0,0
 1401866,Ibrahima Dieng,2023,SEN1,34895,False,18,0,0,0,0,0,0,0,0
 1401866,Ibrahima Dieng,2022,SEN1,35070,False,26,0,0,0,0,0,0,0,0
-909924,Anas Moulhami,2026,MAR1,14462,False,7,4,0,331,0,0,0,0,2
+909924,Anas Moulhami,2026,MAR1,14462,False,7,5,0,421,0,0,0,0,2
 909924,Anas Moulhami,2025,MRR1,22937,False,2,0,0,0,0,0,0,0,0
 909924,Anas Moulhami,2025,MARP,22937,False,2,0,0,0,0,0,0,0,0
 909924,Anas Moulhami,2024,MEC1,3282,False,6,3,0,270,0,0,0,0,1
@@ -12920,7 +12934,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1133961,Israel Nwachukwu Usulor,2025,SA2P,68028,False,1,0,0,0,0,0,0,0,0
 1133961,Israel Nwachukwu Usulor,2025,SA2L,68028,False,32,2,0,99,0,0,2,0,1
 1133961,Israel Nwachukwu Usulor,2022,17AC,23135,True,3,1,0,38,0,0,0,0,0
-1066775,Boulkassoum Diarra,2026,MAR1,14462,False,7,6,0,389,0,0,0,0,2
+1066775,Boulkassoum Diarra,2026,MAR1,14462,False,7,7,0,479,0,0,0,0,2
 1066775,Boulkassoum Diarra,2025,CAFC,1955,False,10,4,0,360,0,0,0,0,0
 1066775,Boulkassoum Diarra,2024,ACL,1955,False,10,0,0,0,0,0,0,0,0
 1066775,Boulkassoum Diarra,2023,ACL,1956,False,4,1,0,40,0,0,0,0,0
@@ -12930,7 +12944,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1406012,Yassine Lhjale,2025,MARP,22937,False,2,0,0,0,0,0,0,0,0
 1406012,Yassine Lhjale,2024,MARP,88553,False,1,1,0,90,0,0,0,0,0
 1406012,Yassine Lhjale,2023,MARP,102751,False,1,0,0,0,0,0,0,0,0
-711428,Megue,2026,MAR1,14462,False,7,6,0,511,0,0,0,0,0
+711428,Megue,2026,MAR1,14462,False,7,7,0,601,0,0,0,0,0
 711428,Megue,2025,SAKC,68028,False,1,1,0,73,0,0,1,1,0
 711428,Megue,2025,SA2P,68028,False,1,1,0,90,0,0,0,0,1
 711428,Megue,2025,SA2L,68028,False,34,33,1,2604,3,4,38,12,4
@@ -12975,9 +12989,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1337469,Omar Hmamouch,2026,MAR1,14462,False,7,1,0,18,0,0,0,0,0
 1337469,Omar Hmamouch,2025,MARP,28210,False,2,0,0,0,0,0,0,0,0
 1337469,Omar Hmamouch,2024,MEC1,28210,False,10,7,0,331,2,0,0,0,0
-1496496,Ibra Lo,2026,MAR1,14462,False,7,5,0,364,2,0,0,0,1
+1496496,Ibra Lo,2026,MAR1,14462,False,7,6,0,454,2,0,0,0,1
 1496496,Ibra Lo,2025,SEN1,113294,False,30,27,0,2077,3,0,0,0,3
-692590,Mohssine Rabja,2026,MAR1,4697,False,6,5,0,405,1,0,0,0,0
+692590,Mohssine Rabja,2026,MAR1,4697,False,7,6,0,495,1,0,0,0,0
 692590,Mohssine Rabja,2025,UALC,14456,False,2,2,0,180,0,0,0,0,0
 692590,Mohssine Rabja,2025,UAEP,14456,False,1,1,0,120,0,0,0,0,1
 692590,Mohssine Rabja,2025,UAE1,14456,False,26,22,0,1704,0,0,7,3,5
@@ -12995,7 +13009,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 692590,Mohssine Rabja,2017,MARP,22938,False,2,1,0,90,0,0,0,0,0
 692590,Mohssine Rabja,2016,CAFC,3282,False,6,2,0,180,1,0,0,0,0
 692590,Mohssine Rabja,2013,MAR1,28210,False,1,1,0,30,0,0,0,0,0
-806170,Aboubacar Camara,2026,MAR1,4697,False,6,0,0,0,0,0,0,0,0
+806170,Aboubacar Camara,2026,MAR1,4697,False,7,0,0,0,0,0,0,0,0
 806170,Aboubacar Camara,2025,ROMP,37624,False,4,1,1,90,0,0,0,0,0
 806170,Aboubacar Camara,2025,RO1R,37624,False,9,8,0,720,0,0,2,0,1
 806170,Aboubacar Camara,2025,RO1,37624,False,27,17,6,1347,0,0,5,3,5
@@ -13010,12 +13024,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 806170,Aboubacar Camara,2020,FR4B,10820,False,9,3,0,26,0,0,0,0,0
 806170,Aboubacar Camara,2019,FR5J,10820,False,1,0,0,0,0,0,0,0,0
 806170,Aboubacar Camara,2019,F19B,7817,False,6,6,0,540,0,0,0,0,0
-1239727,Reda Ech-Chgraoui,2026,MAR1,14462,False,7,3,0,205,0,1,0,0,1
+1239727,Reda Ech-Chgraoui,2026,MAR1,14462,False,7,4,0,295,0,1,0,0,1
 1239727,Reda Ech-Chgraoui,2025,MARP,37175,False,2,2,0,180,0,0,0,0,1
 1239727,Reda Ech-Chgraoui,2024,MRR1,37175,False,2,2,0,142,0,0,0,0,0
 1239727,Reda Ech-Chgraoui,2024,MEC1,37175,False,6,1,0,90,0,0,0,0,0
 1239727,Reda Ech-Chgraoui,2024,MARP,37175,False,1,1,0,90,0,0,0,0,0
-862363,Abdellah Haimoud,2026,MAR1,4697,False,7,6,0,346,0,0,0,0,1
+862363,Abdellah Haimoud,2026,MAR1,4697,False,7,7,0,415,0,0,0,0,1
 862363,Abdellah Haimoud,2025,LPL,93343,False,16,12,0,767,0,1,0,0,3
 862363,Abdellah Haimoud,2024,FR3,1564,False,17,10,1,727,0,0,4,0,2
 862363,Abdellah Haimoud,2023,MARP,6603,False,1,1,0,56,0,0,0,0,0
@@ -13085,6 +13099,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1125069,Ayoub Ajerrar,2024,MARP,22941,False,1,1,0,90,0,0,0,0,0
 1125069,Ayoub Ajerrar,2023,MARP,85473,False,2,0,0,0,0,0,0,0,0
 1606798,Abdeljalil Chaynane,2026,MAR1,79389,False,7,7,0,265,0,0,0,0,2
+857716,Amine Moutaouakil,2026,MAR1,74953,False,1,0,0,0,0,0,0,0,0
+857716,Amine Moutaouakil,2019,MAR1,59679,False,18,1,0,90,0,0,0,0,0
+857716,Amine Moutaouakil,2017,MARP,37681,False,1,0,0,0,0,0,0,0,0
 1134258,Hamza Jlid,2026,MAR1,74953,False,7,0,0,0,0,0,0,0,0
 1134258,Hamza Jlid,2023,FS,37524,True,6,0,0,0,0,0,0,0,0
 1134258,Hamza Jlid,2023,FS,118369,True,7,3,0,270,0,0,0,0,0
@@ -13092,7 +13109,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1134258,Hamza Jlid,2022,17WC,37524,True,5,0,0,0,0,0,0,0,0
 1134258,Hamza Jlid,2022,17AC,37524,True,6,1,0,90,0,0,0,0,0
 1134258,Hamza Jlid,2021,FS,37524,True,16,2,0,180,0,0,0,0,0
-1270325,Aiman El Aatga,2026,MAR1,74953,False,7,5,0,367,0,0,0,0,0
+1270325,Aiman El Aatga,2026,MAR1,74953,False,7,6,0,457,0,0,0,0,0
 1270325,Aiman El Aatga,2025,MARP,37415,False,1,0,0,0,0,0,0,0,0
 1270325,Aiman El Aatga,2024,MEC1,74953,False,7,4,0,360,0,0,0,0,0
 1270325,Aiman El Aatga,2024,MARP,74953,False,2,0,0,0,0,0,0,0,0
@@ -13135,13 +13152,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1373603,Mouad Mouzalim,2025,MARP,22941,False,1,1,0,120,0,0,0,0,0
 1373603,Mouad Mouzalim,2024,MEC1,22941,False,4,2,0,101,0,0,0,0,0
 1373603,Mouad Mouzalim,2024,MARP,22941,False,1,0,0,0,0,0,0,0,0
-904073,Oussama Dahr,2026,MAR1,74953,False,7,6,0,430,0,0,0,0,0
+904073,Oussama Dahr,2026,MAR1,74953,False,7,7,0,520,0,0,0,0,0
 904073,Oussama Dahr,2025,MARP,39084,False,1,0,0,0,0,0,0,0,0
 904073,Oussama Dahr,2024,MEC1,6371,False,8,2,0,180,0,0,0,0,0
 904073,Oussama Dahr,2024,MARP,6371,False,1,0,0,0,0,0,0,0,0
 904073,Oussama Dahr,2024,MAR1,6371,False,29,0,0,0,0,0,0,0,0
 904073,Oussama Dahr,2020,MAR1,6371,False,3,1,0,64,0,0,0,0,1
-1172372,Youness Moukhlis,2026,MAR1,74953,False,7,6,0,486,1,0,0,0,0
+1172372,Youness Moukhlis,2026,MAR1,74953,False,7,7,0,576,1,0,0,0,0
 1172372,Youness Moukhlis,2025,MARP,79390,False,1,1,0,45,0,0,0,0,0
 1172372,Youness Moukhlis,2024,MRR1,79390,False,2,0,0,0,0,0,0,0,0
 1172372,Youness Moukhlis,2024,MEC1,79390,False,2,1,0,61,0,0,0,0,0
@@ -13294,7 +13311,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 673509,Ghofrane Naouali,2019,ACL,250,False,6,0,0,0,0,0,0,0,0
 673509,Ghofrane Naouali,2018,TUNP,250,False,2,0,0,0,0,0,0,0,0
 673509,Ghofrane Naouali,2018,TUN1,250,False,5,0,0,0,0,0,0,0,0
-1608801,Wissam Erbate,2026,MAR1,9100,False,4,4,0,360,0,0,0,0,0
+1608801,Wissam Erbate,2026,MAR1,9100,False,5,5,0,450,0,0,0,0,0
 1334368,Akram Eddaoudi,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 1334368,Akram Eddaoudi,2024,MEC1,6371,False,8,8,0,646,0,1,0,0,0
 1334368,Akram Eddaoudi,2024,MARP,6371,False,1,0,0,0,0,0,0,0,0
@@ -13387,13 +13404,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1401773,Seydi Diouck,2025,SEN1,34895,False,30,15,0,667,1,0,0,0,1
 1401773,Seydi Diouck,2024,SEN1,34895,False,30,0,0,0,0,0,0,0,0
 1401773,Seydi Diouck,2024,20AC,37497,True,4,2,0,33,0,0,0,0,0
-1275264,Aymane Zerri,2026,MAR1,9100,False,6,2,0,100,0,0,0,0,0
+1275264,Aymane Zerri,2026,MAR1,9100,False,7,3,0,190,0,0,0,0,0
 1275264,Aymane Zerri,2025,MARP,9100,False,1,0,0,0,0,0,0,0,0
 1275264,Aymane Zerri,2024,MEC1,9100,False,6,6,0,540,0,0,0,0,0
 1275264,Aymane Zerri,2024,MARP,9100,False,4,2,0,97,0,0,0,0,0
 1275264,Aymane Zerri,2024,MAR1,9100,False,30,2,0,180,0,0,0,0,1
 1275264,Aymane Zerri,2023,MAR1,9100,False,1,0,0,0,0,0,0,0,0
-1371506,Yassin Crachna,2026,MAR1,9100,False,5,3,0,48,0,0,0,0,0
+1371506,Yassin Crachna,2026,MAR1,9100,False,7,3,0,48,0,0,0,0,0
 1371506,Yassin Crachna,2024,MEC1,9100,False,2,0,0,0,0,0,0,0,0
 1371506,Yassin Crachna,2024,MARP,9100,False,4,0,0,0,0,0,0,0,0
 1371506,Yassin Crachna,2024,MAR1,9100,False,11,0,0,0,0,0,0,0,0
@@ -13422,7 +13439,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1102872,Abdessamad Sendague,2024,MARP,21904,False,1,1,0,90,0,0,0,0,0
 1102872,Abdessamad Sendague,2023,MARP,102751,False,1,1,0,90,0,0,0,0,0
 1102872,Abdessamad Sendague,2022,MARP,62626,False,2,0,0,0,0,0,0,0,0
-1371505,Nadir El Fadili,2026,MAR1,9100,False,7,6,0,526,0,0,0,0,0
+1371505,Nadir El Fadili,2026,MAR1,9100,False,7,7,0,616,0,0,0,0,0
 1371505,Nadir El Fadili,2024,MEC1,9100,False,2,1,0,90,0,0,0,0,0
 1371505,Nadir El Fadili,2024,MARP,9100,False,4,0,0,0,0,0,0,0,0
 1371505,Nadir El Fadili,2024,MAR1,9100,False,11,0,0,0,0,0,0,0,0
@@ -13511,7 +13528,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072048,Hatim Siouahe,2022,FS,37630,True,15,1,0,90,0,0,0,0,0
 1072048,Hatim Siouahe,2022,ACL,2068,False,8,0,0,0,0,0,0,0,0
 1072048,Hatim Siouahe,2021,FS,37630,True,10,1,0,90,0,0,0,0,0
-1056145,Zakaria Labib,2026,MAR1,59814,False,7,6,0,478,0,1,0,0,3
+1056145,Zakaria Labib,2026,MAR1,59814,False,7,7,0,568,0,1,0,0,3
 1056145,Zakaria Labib,2025,MARP,79390,False,1,1,0,90,0,0,0,0,0
 1056145,Zakaria Labib,2024,MEC1,2068,False,10,2,0,156,0,0,0,0,0
 1056145,Zakaria Labib,2024,MARP,2068,False,2,0,0,0,0,0,0,0,0
@@ -13525,6 +13542,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1056145,Zakaria Labib,2022,MAR1,2068,False,30,4,0,114,0,0,0,0,0
 1056145,Zakaria Labib,2022,FS,37630,True,9,6,0,422,1,0,0,0,0
 1056145,Zakaria Labib,2022,FS,34903,True,5,3,0,184,0,1,0,0,0
+1056145,Zakaria Labib,2022,ARBC,2068,False,4,0,0,0,0,0,0,0,0
 1056145,Zakaria Labib,2022,ACL,2068,False,10,2,0,91,0,1,1,0,0
 1056145,Zakaria Labib,2022,23AC,34903,True,5,2,0,114,0,0,0,0,0
 1056145,Zakaria Labib,2021,FS,37630,True,10,2,0,135,0,0,0,0,0
@@ -13539,7 +13557,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1339705,Ayoub Belcadi,2025,MARP,62626,False,2,1,0,90,0,0,0,0,0
 1339705,Ayoub Belcadi,2024,MEC1,62626,False,7,5,0,450,0,0,0,0,0
 1339705,Ayoub Belcadi,2024,MARP,62626,False,3,1,0,90,0,0,0,0,0
-593428,Karim Ait Mohamed,2026,MAR1,59814,False,7,2,0,19,0,0,0,0,0
+593428,Karim Ait Mohamed,2026,MAR1,59814,False,7,3,0,109,0,0,0,0,0
 593428,Karim Ait Mohamed,2025,MARP,22938,False,2,2,0,173,0,1,0,0,0
 593428,Karim Ait Mohamed,2024,MEC1,74953,False,2,0,0,0,0,0,0,0,0
 593428,Karim Ait Mohamed,2024,MEC1,22938,False,5,1,0,77,0,1,0,0,0
@@ -13592,7 +13610,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 234996,Taoufik Ijrouten,2013,MAR1,6603,False,30,8,0,264,0,0,0,0,0
 234996,Taoufik Ijrouten,2012,MAR1,22938,False,30,27,0,2084,2,1,0,0,0
 234996,Taoufik Ijrouten,2011,MAR1,22938,False,30,15,0,754,0,0,0,0,1
-895171,Oussama Essafi,2026,MAR1,59814,False,7,5,0,299,0,1,0,0,0
+895171,Oussama Essafi,2026,MAR1,59814,False,7,6,0,389,0,1,0,0,0
 895171,Oussama Essafi,2025,MARP,79390,False,1,1,0,90,1,0,0,0,1
 895171,Oussama Essafi,2024,MRR1,79390,False,2,1,0,1,0,0,0,0,0
 895171,Oussama Essafi,2024,MEC1,79390,False,2,1,0,29,1,0,0,0,0
@@ -13616,7 +13634,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1388894,Mohamed Wail Babah,2024,MEC1,18702,False,2,0,0,0,0,0,0,0,0
 1388894,Mohamed Wail Babah,2024,MARP,18702,False,3,0,0,0,0,0,0,0,0
 1388894,Mohamed Wail Babah,2023,MARP,22938,False,1,0,0,0,0,0,0,0,0
-1178316,Oussama Essabri,2026,MAR1,59814,False,7,6,0,381,0,0,0,0,0
+1178316,Oussama Essabri,2026,MAR1,59814,False,7,7,0,471,0,0,0,0,0
 1178316,Oussama Essabri,2025,MARP,102639,False,1,1,0,90,0,0,0,0,0
 1178316,Oussama Essabri,2023,MARP,18702,False,3,0,0,0,0,0,0,0,0
 1178316,Oussama Essabri,2023,MAR1,74953,False,1,0,0,0,0,0,0,0,0

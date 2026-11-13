@@ -26,7 +26,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 867382,Oberdan,2026-09-02T10:00:00+00:00,2026,JAP1,1,False,4901529,5,22171,away,672,2,1,played,80,6,False,90,0,0,2,0,1,1,,,,0,0
 867382,Oberdan,2026-08-29T10:00:00+00:00,2026,JAP1,1,False,4901503,4,22171,away,1066,1,2,played,80,6,False,90,0,0,1,0,1,0,,,,0,0
 867382,Oberdan,2026-08-22T09:30:00+00:00,2026,JAP1,1,False,4901526,3,22171,home,3734,0,0,played,80,6,False,90,0,0,2,0,1,1,,,,0,0
-867382,Oberdan,2026-08-15T09:55:00+00:00,2026,JAP1,1,False,4901516,2,22171,home,23581,1,0,played,80,6,False,90,0,0,1,0,0,1,,,,0,0
 862094,Jun-seok Song,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1227023,Min-ho Kim,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892117,5,78388,home,6499,2,3,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 645842,Chan-gi An,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -57,8 +56,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 429730,Geon-ung Kim,2026-09-02T10:00:00+00:00,2026,JAPC,14,False,4904252,1,16032,away,42629,1,0,played,29,6,False,81,0,0,0,0,0,0,,,81,0,0
 429730,Geon-ung Kim,2026-08-29T10:00:00+00:00,2026,JAP2,2,False,4903407,4,16032,away,10999,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 429730,Geon-ung Kim,2026-08-22T06:00:00+00:00,2026,JAP2,2,False,4903281,3,16032,home,7452,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-429730,Geon-ung Kim,2026-08-15T10:00:00+00:00,2026,JAP2,2,False,4903097,2,16032,away,8344,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 709155,Jae-hyeok Oh,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+545501,Ho-jae Lee,2026-11-07T12:00:00+00:00,2026,L2,2,False,4916512,11,105,away,4,0,2,played,9,14,False,48,0,0,0,0,0,0,,,48,0,0
 545501,Ho-jae Lee,2026-10-31T12:00:00+00:00,2026,L2,2,False,4916504,10,105,home,187,1,1,played,9,14,False,27,0,0,1,0,1,0,,63,,0,0
 545501,Ho-jae Lee,2026-10-27T19:45:00+00:00,2026,DFB,8,False,5046664,2,105,away,64,2,0,played,9,14,False,88,0,0,1,0,0,1,,,88,0,0
 545501,Ho-jae Lee,2026-10-23T16:30:00+00:00,2026,L2,2,False,4916493,9,105,home,35,0,0,played,9,14,False,28,0,0,0,0,0,0,,62,,0,0
@@ -106,6 +105,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1501701,Tae-hun An,2026-09-06T14:30:00+00:00,2026,AU2C,20,True,4937420,3,22983,away,85708,0,0,played,11,0,False,17,0,0,0,0,0,0,,73,,0,0
 1501701,Tae-hun An,2026-08-31T14:30:00+00:00,2026,AU2C,20,True,4937376,1,22983,neutral,22574,3,2,played,11,0,False,8,0,0,0,0,0,0,87,82,,0,0
 1501701,Tae-hun An,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892121,5,6502,home,87108,5,7,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+927795,Ye-geon Kim,2026-11-08T18:00:00+00:00,2026,SER1,1,False,4974580,15,159,away,448,1,0,played,19,0,False,3,0,0,0,0,0,0,,87,,0,0
+927795,Ye-geon Kim,2026-11-05T17:45:00+00:00,2026,UCOL,10,False,5037535,3,159,home,41916,2,1,played,19,11,False,45,0,0,2,1,0,1,,,46,0,0
 927795,Ye-geon Kim,2026-10-31T16:00:00+00:00,2026,SER1,1,False,4974567,14,159,away,4657,4,2,played,19,0,False,25,0,1,0,0,0,0,,65,,0,0
 927795,Ye-geon Kim,2026-10-28T18:00:00+00:00,2026,SERP,8,False,5079167,2,159,away,20887,5,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 927795,Ye-geon Kim,2026-10-25T15:00:00+00:00,2026,SER1,1,False,4945541,13,159,away,53,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -123,6 +124,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 927795,Ye-geon Kim,2026-08-30T18:00:00+00:00,2026,SER1,1,False,4939895,7,159,away,3521,2,0,played,19,11,False,11,0,0,0,0,0,0,,79,,0,0
 927795,Ye-geon Kim,2026-08-27T17:00:00+00:00,2026,ELQ,10,False,5013795,8,159,away,941,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 927795,Ye-geon Kim,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892121,5,6502,home,87108,5,7,played,73,12,False,46,0,0,0,0,0,0,,,46,0,0
+581977,Min-kyu Song,2026-11-08T15:30:00+00:00,2026,PO1,1,False,4921591,11,982,home,7788,1,0,played,12,11,False,78,0,0,4,2,0,2,,,78,0,0
 581977,Min-kyu Song,2026-11-01T15:30:00+00:00,2026,PO1,1,False,4921606,10,982,away,8024,0,1,played,12,11,False,81,0,0,0,0,0,0,,,81,0,0
 581977,Min-kyu Song,2026-10-25T18:00:00+00:00,2026,PO1,1,False,4921618,9,982,home,1075,1,0,played,12,11,False,68,0,1,0,0,0,0,,,68,0,0
 581977,Min-kyu Song,2026-10-17T14:00:00+00:00,2026,POPO,8,False,5064283,3,982,away,6023,0,1,played,12,11,False,90,0,0,0,0,0,0,,,,0,0
@@ -276,6 +278,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1233465,Ji-seop Shin,2026-10-28T12:15:00+00:00,2026,ACL2,10,False,5021927,3,6500,away,57443,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1233465,Ji-seop Shin,2026-10-14T08:45:00+00:00,2026,ACL2,10,False,5021911,2,6500,away,7006,0,3,played,73,0,False,10,0,0,0,0,0,0,,80,,0,0
 1233465,Ji-seop Shin,2026-09-16T10:00:00+00:00,2026,ACL2,10,False,5021895,1,6500,home,14105,0,1,played,73,4,False,45,0,0,1,0,1,0,,,46,0,0
+403723,Hrvoje Babec,2026-11-04T10:00:00+00:00,2026,ACL2,10,False,5021972,4,6500,home,57443,3,0,played,6,6,False,90,0,0,0,0,0,0,,,90,0,0
 403723,Hrvoje Babec,2026-10-28T12:15:00+00:00,2026,ACL2,10,False,5021927,3,6500,away,57443,5,0,played,6,7,False,64,0,2,1,0,1,0,,,64,0,0
 403723,Hrvoje Babec,2026-10-14T08:45:00+00:00,2026,ACL2,10,False,5021911,2,6500,away,7006,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 403723,Hrvoje Babec,2026-09-16T10:00:00+00:00,2026,ACL2,10,False,5021895,1,6500,home,14105,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -298,7 +301,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 192740,Aleksandar Paločević,2026-09-02T10:00:00+00:00,2026,JAPC,14,False,4904244,1,37689,away,24321,1,2,played,26,10,False,63,0,0,0,0,0,0,,,63,0,0
 192740,Aleksandar Paločević,2026-08-29T10:00:00+00:00,2026,JAP2,2,False,4903410,4,37689,home,16190,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 192740,Aleksandar Paločević,2026-08-22T09:30:00+00:00,2026,JAP2,2,False,4903286,3,37689,away,22173,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-192740,Aleksandar Paločević,2026-08-15T10:00:00+00:00,2026,JAP2,2,False,4903100,2,37689,home,7452,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 402166,Seung-mo Lee,2026-11-04T10:00:00+00:00,2026,ACL2,10,False,5021972,4,6500,home,57443,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 402166,Seung-mo Lee,2026-10-28T12:15:00+00:00,2026,ACL2,10,False,5021927,3,6500,away,57443,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 402166,Seung-mo Lee,2026-10-14T08:45:00+00:00,2026,ACL2,10,False,5021911,2,6500,away,7006,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -396,6 +398,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 402168,Ju-hyeon Lee,2026-10-14T10:00:00+00:00,2026,ACLE,10,False,5021789,2,6502,away,3958,0,2,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 402168,Ju-hyeon Lee,2026-09-16T10:00:00+00:00,2026,ACLE,10,False,5021650,1,6502,home,6632,2,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 402168,Ju-hyeon Lee,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892121,5,6502,home,87108,5,7,played,1,1,False,120,0,0,0,0,0,0,,,,0,0
+844534,Si-hyeon Gong,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 844534,Si-hyeon Gong,2026-11-03T10:00:00+00:00,2026,ACLE,10,False,5021816,4,6502,home,15817,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 844534,Si-hyeon Gong,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,6502,away,3176,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 844534,Si-hyeon Gong,2026-10-14T10:00:00+00:00,2026,ACLE,10,False,5021789,2,6502,away,3958,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -579,6 +582,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 576188,Seung-sub Kim,2026-10-14T10:00:00+00:00,2026,ACLE,10,False,5021789,2,6502,away,3958,0,2,played,11,8,False,45,0,0,1,1,0,0,,,46,0,0
 576188,Seung-sub Kim,2026-09-16T10:00:00+00:00,2026,ACLE,10,False,5021650,1,6502,home,6632,2,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 576188,Seung-sub Kim,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892121,5,6502,home,87108,5,7,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+675708,Gytis Paulauskas,2026-11-03T10:00:00+00:00,2026,ACLE,10,False,5021816,4,6502,home,15817,2,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 675708,Gytis Paulauskas,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,6502,away,3176,2,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 675708,Gytis Paulauskas,2026-10-14T10:00:00+00:00,2026,ACLE,10,False,5021789,2,6502,away,3958,0,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 675708,Gytis Paulauskas,2026-09-16T10:00:00+00:00,2026,ACLE,10,False,5021650,1,6502,home,6632,2,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
@@ -637,6 +641,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 402164,Jun-seo Lee,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021786,2,6499,away,27190,1,1,played,25,1,False,90,0,0,0,0,0,0,,,,0,0
 402164,Jun-seo Lee,2026-09-15T10:00:00+00:00,2026,ACLE,10,False,5021645,1,6499,home,593,1,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 402164,Jun-seo Lee,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892117,5,6499,away,78388,3,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
+1193709,Min-soo Kim,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1193709,Min-soo Kim,2026-11-03T10:00:00+00:00,2026,ACLE,10,False,5021818,4,6499,away,6632,0,2,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 1193709,Min-soo Kim,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021801,3,6499,home,3958,0,1,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 1193709,Min-soo Kim,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021786,2,6499,away,27190,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -819,6 +824,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1340977,Hun-min Koo,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892117,5,6499,away,78388,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 402135,Jun-su Ahn,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 709742,Man-ho Park,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
+940174,Sang-young Park,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 940174,Sang-young Park,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 784335,Jun-soo Byeon,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 654693,Min-seo Park,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892122,5,6505,away,39429,1,2,played,44,0,False,5,0,0,0,0,0,0,,85,,0,0
@@ -886,6 +892,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 549553,Marko Tuci,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 549553,Marko Tuci,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 549553,Marko Tuci,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892123,5,21459,home,3610,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1227015,Min-ha Shin,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1227015,Min-ha Shin,2026-11-05T12:15:00+00:00,2026,ACL2,10,False,5021978,4,21459,away,62736,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1227015,Min-ha Shin,2026-10-29T10:00:00+00:00,2026,ACL2,10,False,5021933,3,21459,home,62736,1,0,played,47,3,False,90,0,0,0,0,0,0,,,,0,0
 1227015,Min-ha Shin,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -962,6 +969,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 564915,Dong-hyun Kim,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 564915,Dong-hyun Kim,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 564915,Dong-hyun Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892123,5,21459,home,3610,4,3,played,6,6,True,120,0,0,0,0,0,0,,,,0,0
+639245,Young-jun Goh,2026-11-05T12:15:00+00:00,2026,ACL2,10,False,5021978,4,21459,away,62736,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 639245,Young-jun Goh,2026-10-29T10:00:00+00:00,2026,ACL2,10,False,5021933,3,21459,home,62736,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 639245,Young-jun Goh,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 639245,Young-jun Goh,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1026,6 +1034,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1579861,Seul-ki Kim,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1579861,Seul-ki Kim,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1579861,Seul-ki Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892123,5,21459,home,3610,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+437392,Jesse Sekidika,2026-11-05T12:15:00+00:00,2026,ACL2,10,False,5021978,4,21459,away,62736,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 437392,Jesse Sekidika,2026-10-29T10:00:00+00:00,2026,ACL2,10,False,5021933,3,21459,home,62736,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 437392,Jesse Sekidika,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,played,70,0,False,5,0,0,0,0,0,0,,62,67,0,0
 437392,Jesse Sekidika,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1075,6 +1084,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 924718,Won-woo Cho,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,played,26,11,False,90,0,0,2,1,1,0,,,,0,0
 924718,Won-woo Cho,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021901,1,21459,away,15979,0,0,played,26,11,False,90,0,0,0,0,0,0,,,,0,0
 924718,Won-woo Cho,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892123,5,21459,home,3610,4,3,played,26,11,False,120,0,0,0,0,0,0,,,,0,0
+1165714,Jun-seo Jin,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1165714,Jun-seo Jin,2026-11-05T12:15:00+00:00,2026,ACL2,10,False,5021978,4,21459,away,62736,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1165714,Jun-seo Jin,2026-10-29T10:00:00+00:00,2026,ACL2,10,False,5021933,3,21459,home,62736,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1165714,Jun-seo Jin,2026-10-15T10:00:00+00:00,2026,ACL2,10,False,5021917,2,21459,home,16043,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1194,12 +1204,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1405487,Jung-min Go,2026-08-31T14:30:00+00:00,2026,AU2C,20,True,4937376,1,22983,neutral,22574,3,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1154346,Jun-seop Lee,2026-09-06T14:30:00+00:00,2026,AU2C,20,True,4937420,3,22983,away,85708,0,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1154346,Jun-seop Lee,2026-08-31T14:30:00+00:00,2026,AU2C,20,True,4937376,1,22983,neutral,22574,3,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+149738,Stefan Mugosa,2026-11-11T14:00:00+00:00,2026,U17Q,20,True,4939590,1,40099,away,23260,1,6,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-10-06T09:00:00+00:00,2026,FS,11,True,5076052,50,34071,away,37913,0,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-10-04T11:00:00+00:00,2026,FS,11,True,5074661,50,34071,away,37913,1,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-09-28T09:00:00+00:00,2026,FS,11,True,5050472,13,40099,away,30118,1,5,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-09-25T14:00:00+00:00,2026,FS,11,True,5050471,12,40099,home,30118,2,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-08-27T16:00:00+00:00,2026,FS,11,True,5021707,4,40099,away,22906,1,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 149738,Stefan Mugosa,2026-08-25T16:00:00+00:00,2026,FS,11,True,5021706,3,40099,away,22906,0,3,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+284736,Morgan Ferrier,2026-10-04T19:00:00+00:00,2026,CNLB,11,True,5016329,4,15736,away,16033,8,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+284736,Morgan Ferrier,2026-10-01T21:00:00+00:00,2026,CNLB,11,True,5016309,3,15736,away,16033,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+284736,Morgan Ferrier,2026-09-27T19:00:00+00:00,2026,CNLB,11,True,5016301,2,15736,away,17751,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+284736,Morgan Ferrier,2026-09-24T19:00:00+00:00,2026,CNLB,11,True,5016289,1,15736,away,17759,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 903106,Ho-min Park,2026-11-07T05:00:00+00:00,2026,JAP2,2,False,4903430,16,22177,home,22173,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 903106,Ho-min Park,2026-11-03T05:00:00+00:00,2026,JAP2,2,False,4903114,15,22177,away,8457,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 903106,Ho-min Park,2026-10-31T05:00:00+00:00,2026,JAP2,2,False,4903437,14,22177,away,937,0,2,played,19,0,False,13,0,0,0,0,0,0,,77,,0,0
@@ -1219,6 +1234,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 903106,Ho-min Park,2026-08-29T10:00:00+00:00,2026,JAP2,2,False,4903406,4,22177,away,943,2,2,played,19,0,False,4,0,0,0,0,0,0,,86,,0,0
 903106,Ho-min Park,2026-08-22T10:00:00+00:00,2026,JAP2,2,False,4903288,3,22177,home,29307,1,3,played,19,0,False,12,0,0,0,0,0,0,,78,,0,0
 903106,Ho-min Park,2026-08-16T10:00:00+00:00,2026,JAP2,2,False,4903099,2,22177,away,17832,0,0,played,19,0,False,1,0,0,0,0,0,0,,90,,0,0
+1161178,Min-gyu Baek,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 523915,Hyeong-keun Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 910291,Hyeon-yeob Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,21,1,False,120,0,0,0,0,0,0,,,,0,0
 560903,Patrick William,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1234,6 +1250,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 263821,Seong-jun Jo,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,83,9,False,84,0,0,0,0,0,0,,,84,0,0
 718967,Jong-min Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,2,3,False,120,0,0,0,0,0,0,59,,,0,0
 386501,Bong-hun Yeo,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,25,8,False,120,0,0,0,0,0,0,,,,0,0
+1177190,Ye-chan Lee,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1177190,Ye-chan Lee,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,44,3,False,120,0,0,0,0,0,0,,,,0,0
 706966,Seung-hyun Yu,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,in squad,66,,False,0,0,0,0,0,0,0,,,,0,0
 552241,Rodrigo Bassani,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1262,6 +1279,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 573941,John Montaño,2026-08-21T15:15:00+00:00,2026,UAE2,2,False,5027323,1,44289,away,94192,3,1,played,9,0,False,72,0,1,0,0,0,0,,,72,0,0
 676363,Min-jun Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,13,12,False,91,0,0,0,0,0,0,,,91,0,0
 658874,Seung-bin Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,71,11,False,120,0,0,0,0,0,0,,,,0,0
+1154529,Chung-hyun Lee,2026-11-08T12:30:00+00:00,2026,L2,2,False,4916516,11,187,home,35,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1154529,Chung-hyun Lee,2026-10-31T12:00:00+00:00,2026,RLN4,4,False,4931834,15,6649,home,440,1,1,played,38,12,False,63,0,0,0,0,0,0,,,63,0,0
 1154529,Chung-hyun Lee,2026-10-31T12:00:00+00:00,2026,L2,2,False,4916504,10,187,away,105,1,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1154529,Chung-hyun Lee,2026-10-28T19:45:00+00:00,2026,DFB,8,False,5046665,2,187,away,27,1,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1283,8 +1301,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1154529,Chung-hyun Lee,2026-08-25T17:00:00+00:00,2026,RLN4,4,False,4931754,6,6649,home,9572,1,0,played,38,11,False,79,0,0,0,0,0,0,,,79,0,0
 1154529,Chung-hyun Lee,2026-08-23T13:30:00+00:00,2026,DFB,8,False,4893870,1,187,away,1193,4,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1154529,Chung-hyun Lee,2026-08-15T12:00:00+00:00,2026,RLN4,4,False,4931738,5,6649,away,111,1,4,played,38,11,False,75,0,0,0,0,0,0,,,75,0,0
-1154529,Chung-hyun Lee,2026-08-15T11:00:00+00:00,2026,L2,2,False,4916437,2,187,away,81,3,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1154529,Chung-hyun Lee,2026-08-11T17:00:00+00:00,2026,RLN4,4,False,4931735,4,6649,home,90,3,1,played,38,12,False,90,0,0,0,0,0,0,,,90,0,0
 874287,Gustavo Nescau,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,99,0,False,36,0,0,0,0,0,0,,84,,0,0
 909127,Kyu-min Kim,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 721879,Eui-hyeong Lee,2026-08-19T10:30:00+00:00,2026,RKPO,8,False,4892124,5,35759,away,2582,5,3,played,18,0,False,62,0,0,0,0,0,0,,58,,0,0
@@ -1316,6 +1332,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 912572,Hui-su Kang,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 728122,Yong-jun Hong,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,played,99,0,False,29,0,0,0,0,0,0,,61,,0,0
 928495,Woo-jin Kim,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,played,70,9,False,89,0,0,0,0,0,0,,,89,0,0
+364314,Adriel Ba Loua,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047008,4,3591,away,13974,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+364314,Adriel Ba Loua,2026-09-24T19:00:00+00:00,2026,AFCQ,19,True,5046877,3,3591,home,3441,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 364314,Adriel Ba Loua,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,played,50,8,False,70,1,0,0,0,0,0,,,70,0,0
 1155002,Gyu-min Jung,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 715309,Emir Saitoski,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892118,5,30925,away,71578,1,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1375,6 +1393,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 908728,Si-woo Jin,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,played,5,0,False,45,0,0,0,0,0,0,,46,,0,0
 908728,Si-woo Jin,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 908728,Si-woo Jin,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892119,5,311,home,78462,3,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+1015957,Chang-woo Lee,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1015957,Chang-woo Lee,2026-11-04T10:00:00+00:00,2026,ACLE,10,False,5021821,4,311,home,596,3,3,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1015957,Chang-woo Lee,2026-10-28T10:00:00+00:00,2026,ACLE,10,False,5021805,3,311,away,2241,0,3,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1015957,Chang-woo Lee,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,played,14,0,False,18,0,0,0,0,0,0,,72,,0,0
@@ -1429,6 +1448,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 875800,Seo-woong Hwang,2026-10-03T05:00:00+00:00,2026,FS,11,True,5050221,45,76096,away,32270,2,1,played,7,0,False,90,0,0,0,0,0,0,,,,0,0
 875800,Seo-woong Hwang,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,in squad,70,,False,0,0,0,0,0,0,0,,,,0,0
 875800,Seo-woong Hwang,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892119,5,311,home,78462,3,1,played,70,7,False,90,1,0,0,0,0,0,,,,0,0
+875799,Ho-jin Kim,2026-11-11T13:00:00+00:00,2026,FS,11,True,5127567,1,28208,away,70222,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 875799,Ho-jin Kim,2026-11-04T10:00:00+00:00,2026,ACLE,10,False,5021821,4,311,home,596,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 875799,Ho-jin Kim,2026-10-28T10:00:00+00:00,2026,ACLE,10,False,5021805,3,311,away,2241,0,3,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 875799,Ho-jin Kim,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1466,6 +1486,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 556377,Ki-jong Won,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 556377,Ki-jong Won,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 556377,Ki-jong Won,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892119,5,311,home,78462,3,1,played,7,0,False,36,0,1,0,0,0,0,,54,,0,0
+686462,Jakob Tranziska,2026-11-04T10:00:00+00:00,2026,ACLE,10,False,5021821,4,311,home,596,3,3,played,10,11,False,72,0,0,2,2,0,0,,,72,0,0
 686462,Jakob Tranziska,2026-10-28T10:00:00+00:00,2026,ACLE,10,False,5021805,3,311,away,2241,0,3,played,10,14,False,60,0,0,1,0,1,0,,,60,0,0
 686462,Jakob Tranziska,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,played,10,14,False,45,0,0,0,0,0,0,,,46,0,0
 686462,Jakob Tranziska,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,played,10,14,False,90,1,0,2,1,0,1,,,,0,0
@@ -1475,6 +1496,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 677471,Jae-joon An,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 677471,Jae-joon An,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,played,9,9,False,45,0,0,1,1,0,0,,,46,0,0
 677471,Jae-joon An,2026-08-19T10:00:00+00:00,2026,RKPO,8,False,4892119,5,311,home,78462,3,1,played,9,11,False,62,0,0,0,0,0,0,,,62,0,0
+706960,Yong-hak Kim,2026-11-04T10:00:00+00:00,2026,ACLE,10,False,5021821,4,311,home,596,3,3,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 706960,Yong-hak Kim,2026-10-28T10:00:00+00:00,2026,ACLE,10,False,5021805,3,311,away,2241,0,3,played,30,0,False,14,0,0,0,0,0,0,,76,,0,0
 706960,Yong-hak Kim,2026-10-13T10:00:00+00:00,2026,ACLE,10,False,5021785,2,311,home,15817,0,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 706960,Yong-hak Kim,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,311,away,3176,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

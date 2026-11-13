@@ -1,5 +1,5 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
-1430645,Jinhong Liang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1430645,Jinhong Liang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,57,0,False,45,0,0,0,0,0,0,,,46,0,0
 1430645,Jinhong Liang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,played,57,0,False,21,0,0,0,0,0,0,,,21,0,0
 1430645,Jinhong Liang,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,115122,home,107764,2,3,played,57,0,False,13,0,0,0,0,0,0,,77,,0,0
 1430645,Jinhong Liang,2026-10-17T11:30:00+00:00,2025,CH3P,3,False,5046672,27,115122,away,36881,0,0,played,57,0,False,18,0,0,0,0,0,0,,72,,0,0
@@ -9,7 +9,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1430645,Jinhong Liang,2026-09-12T08:00:00+00:00,2025,CH3P,3,False,5046636,23,115122,home,36881,1,0,played,57,0,False,12,0,0,0,0,0,0,,78,,0,0
 1430645,Jinhong Liang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,57,0,False,22,0,0,0,0,0,0,,68,,0,0
 1430645,Jinhong Liang,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,57,0,False,15,0,0,0,0,0,0,,75,,0,0
-1089665,Daoxin Ye,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046684,30,107764,home,125947,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1089665,Daoxin Ye,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046684,30,107764,home,125947,1,4,played,22,0,False,90,0,0,0,0,0,0,88,,,0,0
 1089665,Daoxin Ye,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046681,29,107764,away,94351,1,1,played,22,0,False,90,0,0,0,0,0,0,,,,0,0
 1089665,Daoxin Ye,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,107764,away,115122,3,2,played,22,0,False,90,1,0,0,0,0,0,,,,0,0
 1089665,Daoxin Ye,2026-10-17T11:30:00+00:00,2025,CH3P,3,False,5046671,27,107764,home,115121,0,0,played,22,0,False,89,0,0,0,0,0,0,,,89,0,0
@@ -29,7 +29,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1509924,Boyang Zhao,2026-09-13T11:00:00+00:00,2025,CH3R,3,False,5046716,23,108134,away,53326,0,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1509924,Boyang Zhao,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841338,22,108134,home,78681,0,2,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1509924,Boyang Zhao,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841333,21,108134,away,36881,2,0,played,29,0,False,17,0,0,0,0,0,0,74,73,,0,0
-1376884,Zicheng Tang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1376884,Zicheng Tang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
 1376884,Zicheng Tang,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
 1376884,Zicheng Tang,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
 1376884,Zicheng Tang,2026-10-18T11:35:00+00:00,2025,CH3R,3,False,5047066,27,125740,home,54432,1,3,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
@@ -39,6 +39,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1376884,Zicheng Tang,2026-09-12T11:30:00+00:00,2025,CH3R,3,False,5046712,23,125740,away,54432,1,1,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
 1376884,Zicheng Tang,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841340,22,125740,home,36881,0,1,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
 1376884,Zicheng Tang,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841335,21,125740,away,116467,0,0,in squad,60,,False,0,0,0,0,0,0,0,,,,0,0
+1382252,Ke Li,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,in squad,51,,False,0,0,0,0,0,0,0,,,,0,0
 1382252,Ke Li,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,in squad,51,,False,0,0,0,0,0,0,0,,,,0,0
 1382252,Ke Li,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,in squad,51,,False,0,0,0,0,0,0,0,,,,0,0
 1382252,Ke Li,2026-10-18T11:35:00+00:00,2025,CH3R,3,False,5047066,27,125740,home,54432,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -48,7 +49,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1382252,Ke Li,2026-09-12T11:30:00+00:00,2025,CH3R,3,False,5046712,23,125740,away,54432,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382252,Ke Li,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841340,22,125740,home,36881,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382252,Ke Li,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841335,21,125740,away,116467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1382252,Ke Li,2026-08-08T11:35:00+00:00,2025,CL3S,3,False,4841329,20,125740,home,56198,3,2,in squad,51,,False,0,0,0,0,0,0,0,,,,0,0
 450985,Qi Cui,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,93753,home,70657,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 450985,Qi Cui,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,93753,home,98080,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 450985,Qi Cui,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,93753,away,70662,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -59,7 +59,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 450985,Qi Cui,2026-08-29T11:00:00+00:00,2025,CSL,1,False,4827907,25,93753,away,17276,0,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 450985,Qi Cui,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827900,24,93753,away,3176,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 450985,Qi Cui,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,93753,home,98080,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-991483,Haixuan Zhang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046686,30,94351,away,36881,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+991483,Haixuan Zhang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046686,30,94351,away,36881,1,3,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 991483,Haixuan Zhang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046681,29,94351,home,107764,1,1,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 991483,Haixuan Zhang,2026-10-24T08:00:00+00:00,2025,CH3P,3,False,5046677,28,94351,away,116467,0,1,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 991483,Haixuan Zhang,2026-10-17T07:00:00+00:00,2025,CH3P,3,False,5046673,27,94351,home,119083,1,0,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -80,7 +80,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 662481,Keqiang Chen,2026-09-05T11:00:00+00:00,2025,CLO,2,False,4838985,22,73135,away,85923,0,2,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 662481,Keqiang Chen,2026-08-29T11:00:00+00:00,2025,CLO,2,False,4838977,21,73135,away,108084,1,3,played,11,0,False,35,0,0,2,1,1,0,,55,,0,0
 662481,Keqiang Chen,2026-08-22T11:00:00+00:00,2025,CLO,2,False,4838970,20,73135,away,41626,3,2,played,11,14,False,45,0,0,1,0,1,0,,,46,0,0
-662481,Keqiang Chen,2026-08-15T10:00:00+00:00,2025,CLO,2,False,4838961,19,73135,home,57778,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1485063,Yang Yang,2026-06-28T11:00:00+00:00,2025,CSL,1,False,4827818,16,3183,away,98080,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1485063,Yang Yang,2026-06-20T11:30:00+00:00,2025,CHFA,8,False,4837971,8,3183,away,85480,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1485063,Yang Yang,2026-05-30T10:00:00+00:00,2025,CSL,1,False,4827802,15,3183,away,70662,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -143,7 +142,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 493532,Ziyi Tian,2026-09-05T11:00:00+00:00,2025,CLO,2,False,4838986,22,4768,home,41626,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 493532,Ziyi Tian,2026-08-30T11:30:00+00:00,2025,CLO,2,False,4838984,21,4768,away,107713,0,3,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 493532,Ziyi Tian,2026-08-23T11:00:00+00:00,2025,CLO,2,False,4838975,20,4768,home,54134,6,0,played,32,0,False,9,0,0,0,0,0,0,,81,,0,0
-493532,Ziyi Tian,2026-08-14T11:30:00+00:00,2025,CLO,2,False,4838963,19,4768,away,108084,1,2,played,32,0,False,45,0,0,0,0,0,0,48,46,,0,0
+340864,Jaume Grau,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+340864,Jaume Grau,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,16,7,False,76,0,0,1,0,1,0,62,,76,0,0
 340864,Jaume Grau,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,16,7,False,61,0,1,2,0,0,2,,,61,0,0
 340864,Jaume Grau,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,27190,away,3187,3,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 340864,Jaume Grau,2026-10-18T12:00:00+00:00,2025,CSL,1,False,4827943,28,27190,home,65791,3,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
@@ -155,7 +155,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 340864,Jaume Grau,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 340864,Jaume Grau,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 340864,Jaume Grau,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-340864,Jaume Grau,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 211159,Peng Li,2025-11-08T06:30:00+00:00,2024,CLO,2,False,4621275,30,50973,home,54134,5,0,injured,,,False,0,0,0,0,0,0,0,,,,4,0
 211159,Peng Li,2025-11-01T06:30:00+00:00,2024,CLO,2,False,4621265,29,50973,away,72879,1,1,injured,,,False,0,0,0,0,0,0,0,,,,4,0
 211159,Peng Li,2025-10-26T07:00:00+00:00,2024,CLO,2,False,4621253,28,50973,home,46487,1,0,injured,,,False,0,0,0,0,0,0,0,,,,4,0
@@ -166,7 +165,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 211159,Peng Li,2025-09-21T11:00:00+00:00,2024,CLO,2,False,4607944,23,50973,away,57778,1,1,injured,,,False,0,0,0,0,0,0,0,,,,4,0
 211159,Peng Li,2025-09-13T11:00:00+00:00,2024,CLO,2,False,4607933,22,50973,away,108084,1,3,injured,,,False,0,0,0,0,0,0,0,,,,4,0
 211159,Peng Li,2025-08-16T11:00:00+00:00,2024,CLO,2,False,4607518,21,50973,home,53326,2,1,injured,,,False,0,0,0,0,0,0,0,,,,4,0
-1520804,Yiran Zheng,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1520804,Yiran Zheng,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1520804,Yiran Zheng,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1520804,Yiran Zheng,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1520804,Yiran Zheng,2026-10-17T09:00:00+00:00,2025,CH3R,3,False,5047069,27,125741,home,94345,2,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
@@ -186,7 +185,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 846123,Mbouri Yamkam,2026-05-20T11:35:00+00:00,2025,CSL,1,False,4827772,13,70657,away,3183,2,2,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
 846123,Mbouri Yamkam,2026-05-16T11:00:00+00:00,2025,CSL,1,False,4827755,12,70657,home,50973,2,2,played,3,3,False,90,0,0,1,0,1,0,,,,0,0
 846123,Mbouri Yamkam,2026-05-10T09:30:00+00:00,2025,CSL,1,False,4827738,11,70657,away,70662,1,1,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
-1246319,Kuanjie Jing,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046689,30,137958,away,56198,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1246319,Kuanjie Jing,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046689,30,137958,away,56198,0,0,played,29,0,False,90,0,0,0,0,0,0,,,,0,0
 1246319,Kuanjie Jing,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046697,29,137958,home,99488,1,2,played,29,0,False,90,0,0,0,0,0,0,,,,0,0
 1246319,Kuanjie Jing,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046705,28,137958,away,115892,2,1,played,29,0,False,90,1,0,0,0,0,0,,,,0,0
 1246319,Kuanjie Jing,2026-10-18T08:00:00+00:00,2025,CH3R,3,False,5047070,27,137958,home,78681,4,0,played,29,0,False,90,2,0,0,0,0,0,,,,0,0
@@ -196,7 +195,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1246319,Kuanjie Jing,2026-09-13T11:30:00+00:00,2025,CH3R,3,False,5046713,23,137958,away,78681,0,1,played,29,0,False,90,0,0,0,0,0,0,,,,0,0
 1246319,Kuanjie Jing,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played,29,0,False,70,0,0,0,0,0,0,,,70,0,0
 1246319,Kuanjie Jing,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played,29,0,False,90,0,0,0,0,0,0,,,90,0,0
-1266954,Jingwei Ruan,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1266954,Jingwei Ruan,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,34,0,False,1,0,0,0,0,0,0,,90,,0,0
 1266954,Jingwei Ruan,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,34,0,False,39,0,0,0,0,0,0,,51,,0,0
 1266954,Jingwei Ruan,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,34,0,False,3,0,0,0,0,0,0,,87,,0,0
 1266954,Jingwei Ruan,2026-10-17T09:00:00+00:00,2025,CH3R,3,False,5047069,27,125741,home,94345,2,0,played,34,0,False,17,0,0,0,0,0,0,,73,,0,0
@@ -206,7 +205,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1266954,Jingwei Ruan,2026-09-12T09:00:00+00:00,2025,CH3R,3,False,5046718,23,125741,away,94345,0,0,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 1266954,Jingwei Ruan,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 1266954,Jingwei Ruan,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,34,0,False,7,0,0,0,0,0,0,,83,,0,0
-1014269,Xiaoxi Xia,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1014269,Xiaoxi Xia,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,57,0,False,87,0,0,0,0,0,0,76,,87,0,0
 1014269,Xiaoxi Xia,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,57,0,False,90,0,0,0,0,0,0,,,,0,0
 1014269,Xiaoxi Xia,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,57,0,False,32,0,0,0,0,0,0,,58,,0,0
 1014269,Xiaoxi Xia,2026-10-17T09:00:00+00:00,2025,CH3R,3,False,5047069,27,125741,home,94345,2,0,played,57,0,False,28,0,0,0,0,0,0,,62,,0,0
@@ -246,6 +245,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1396624,Junzhen Xue,2026-05-15T12:00:00+00:00,2025,CSL,1,False,4827754,12,70662,away,98080,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396624,Junzhen Xue,2026-05-10T09:30:00+00:00,2025,CSL,1,False,4827738,11,70662,home,70657,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396624,Junzhen Xue,2026-05-05T11:00:00+00:00,2025,CSL,1,False,4826238,10,70662,home,3187,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+396294,Pavle Vagic,2026-11-08T15:30:00+00:00,2025,SE1,1,False,4802872,28,1092,home,2719,0,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 396294,Pavle Vagic,2026-11-01T15:30:00+00:00,2025,SE1,1,False,4802867,27,1092,away,5202,0,1,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 396294,Pavle Vagic,2026-10-28T18:00:00+00:00,2025,SE1,1,False,4802856,26,1092,home,1109,0,0,played,2,0,False,18,0,0,0,0,0,0,,72,,0,0
 396294,Pavle Vagic,2026-10-24T15:30:00+00:00,2025,SE1,1,False,4802851,25,1092,away,3654,3,0,played,2,0,False,13,0,0,0,0,0,0,,77,,0,0
@@ -257,7 +257,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 396294,Pavle Vagic,2026-08-31T17:00:00+00:00,2025,SE1,1,False,4802799,19,1092,away,7009,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396294,Pavle Vagic,2026-08-29T11:35:00+00:00,2025,CSL,1,False,4827909,25,50973,away,65791,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396294,Pavle Vagic,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,50973,home,9982,4,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-396294,Pavle Vagic,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,50973,home,51120,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+553727,Saulo Mineiro,2026-11-08T22:15:00+00:00,2025,BRA2,2,False,4841964,37,2029,home,2863,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 553727,Saulo Mineiro,2026-11-02T21:00:00+00:00,2025,BRA2,2,False,4842152,36,2029,away,64918,1,2,played,73,14,False,74,1,0,3,1,2,0,,,74,0,0
 553727,Saulo Mineiro,2026-10-27T23:00:00+00:00,2025,BRA2,2,False,4841804,35,2029,home,3197,0,2,played,73,14,False,90,0,0,4,1,3,0,54,,,0,0
 553727,Saulo Mineiro,2026-10-17T19:30:00+00:00,2025,BRA2,2,False,4841944,34,2029,home,10492,2,2,played,73,9,False,90,2,0,3,2,1,0,90,,,0,0
@@ -396,7 +396,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1068102,Kangbo Sun,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1068102,Kangbo Sun,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,played,28,0,False,16,0,0,0,0,0,0,,74,,0,0
 1068102,Kangbo Sun,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1068102,Kangbo Sun,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played,28,0,False,90,0,0,0,0,0,0,25,,,0,0
 419477,Jiabao Wen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 419477,Jiabao Wen,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 419477,Jiabao Wen,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
@@ -451,8 +450,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 266874,Yue Song,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,98080,away,99249,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 266874,Yue Song,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,played,6,0,False,90,0,0,0,0,0,0,68,,90,0,0
 266874,Yue Song,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,played,6,3,False,90,0,0,0,0,0,0,,,,0,0
-1134833,Junhao Zeng,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134833,Junhao Zeng,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1134833,Junhao Zeng,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046689,30,137958,away,56198,0,0,played,56,0,False,45,0,0,0,0,0,0,,,46,0,0
 1134833,Junhao Zeng,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134833,Junhao Zeng,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046697,29,137958,home,99488,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134833,Junhao Zeng,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046705,28,137958,away,115892,2,1,played,56,0,False,90,0,0,0,0,0,0,,,,0,0
 1134833,Junhao Zeng,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1134833,Junhao Zeng,2026-10-18T08:00:00+00:00,2025,CH3R,3,False,5047070,27,137958,home,78681,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -469,7 +470,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1134833,Junhao Zeng,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played,56,0,False,45,0,0,0,0,0,0,,46,,0,0
 1134833,Junhao Zeng,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134833,Junhao Zeng,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1134833,Junhao Zeng,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played,56,0,False,1,0,0,0,0,0,0,,90,,0,0
+148372,Nicolae Stanciu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,played,10,10,True,86,0,0,4,1,2,1,,,86,0,0
 148372,Nicolae Stanciu,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,played,10,6,True,90,1,0,5,1,2,2,,,,0,0
 148372,Nicolae Stanciu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,played,10,10,True,90,0,1,1,0,1,0,,,,0,0
 148372,Nicolae Stanciu,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,98080,home,51120,3,1,played,10,10,True,90,1,0,9,4,3,2,,,,0,0
@@ -501,7 +502,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1428963,Shunjie Peng,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1428963,Shunjie Peng,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,played,5,0,False,1,0,0,0,0,0,0,,90,,0,0
 1428963,Shunjie Peng,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-1428963,Shunjie Peng,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 204659,Isnik Alimi,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,played,4,6,False,90,0,0,1,0,0,1,,,,0,0
 204659,Isnik Alimi,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,played,4,7,False,90,0,0,1,0,1,0,,,,0,0
 204659,Isnik Alimi,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,played,4,6,False,90,0,0,0,0,0,0,40,,,0,0
@@ -560,7 +560,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1235856,Shan Huang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1235856,Shan Huang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,played,23,0,False,21,0,0,0,0,0,0,,69,,0,0
 1235856,Shan Huang,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
-1235856,Shan Huang,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 156057,Peng Lü,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,played,21,0,False,4,0,0,0,0,0,0,,86,,0,0
 156057,Peng Lü,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,played,21,0,False,23,0,0,0,0,0,0,,67,,0,0
 156057,Peng Lü,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,played,21,0,False,3,0,0,0,0,0,0,,87,,0,0
@@ -584,7 +583,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1267468,Yihan Yan,2026-09-05T11:30:00+00:00,2025,CLO,2,False,4838988,22,57778,away,54134,0,0,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 1267468,Yihan Yan,2026-08-30T11:00:00+00:00,2025,CLO,2,False,4838982,21,57778,home,46487,3,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 1267468,Yihan Yan,2026-08-22T11:00:00+00:00,2025,CLO,2,False,4838969,20,57778,home,85923,2,1,played,25,0,False,45,0,0,0,0,0,0,,46,,0,0
-1267468,Yihan Yan,2026-08-15T10:00:00+00:00,2025,CLO,2,False,4838961,19,57778,away,73135,1,3,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
 1299729,Chengrui Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1299729,Chengrui Zhang,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1299729,Chengrui Zhang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
@@ -602,7 +600,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1299729,Chengrui Zhang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played,37,0,False,45,0,0,0,0,0,0,,,46,0,0
 1299729,Chengrui Zhang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1299729,Chengrui Zhang,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1299729,Chengrui Zhang,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played,37,0,False,71,0,0,0,0,0,0,,,71,0,0
 22686,Cephas Malele,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 22686,Cephas Malele,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,injured,,,False,0,0,0,0,0,0,0,,,,361,0
 22686,Cephas Malele,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,injured,,,False,0,0,0,0,0,0,0,,,,361,0
@@ -690,7 +687,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1390293,Lirong Xiao,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841090,22,137958,home,27839,3,4,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1390293,Lirong Xiao,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,98080,away,27190,1,1,played,59,0,False,16,0,0,0,0,0,0,,74,,0,0
 1390293,Lirong Xiao,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827894,23,98080,away,93753,1,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1390293,Lirong Xiao,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,137958,away,115121,1,0,played,59,0,False,45,0,0,0,0,0,0,,,46,0,0
 211841,Jinhao Bi,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,98080,home,3187,3,1,played,24,0,False,23,0,1,0,0,0,0,,67,,0,0
 211841,Jinhao Bi,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,98080,away,93753,3,4,injured,,,False,0,0,0,0,0,0,0,,,,299,0
 211841,Jinhao Bi,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,98080,away,65791,1,0,injured,,,False,0,0,0,0,0,0,0,,,,299,0
@@ -719,7 +715,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 224161,Junling Yan,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,1,1,True,90,0,0,0,0,0,0,,,,0,0
 224161,Junling Yan,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 224161,Junling Yan,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,1,1,False,90,0,0,0,0,0,0,16,,,0,0
-224161,Junling Yan,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 363795,Wei Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 363795,Wei Chen,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 363795,Wei Chen,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
@@ -739,8 +734,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 363795,Wei Chen,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 363795,Wei Chen,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 363795,Wei Chen,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
-363795,Wei Chen,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
-1244273,Zhiliang Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1244273,Zhiliang Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1244273,Zhiliang Li,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,53,0,False,90,0,0,0,0,0,0,,,,0,0
 1244273,Zhiliang Li,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1244273,Zhiliang Li,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,played,53,0,False,90,0,0,0,0,0,0,,,,0,0
 1244273,Zhiliang Li,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -762,7 +757,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1244273,Zhiliang Li,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,53,1,False,90,0,0,0,0,0,0,,,,0,0
 1244273,Zhiliang Li,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1244273,Zhiliang Li,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,53,1,False,90,0,0,0,0,0,0,,,,0,0
-1244273,Zhiliang Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+335744,Miguel Campos,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+335744,Miguel Campos,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,44,0,False,2,0,0,0,0,0,0,,88,,0,0
 335744,Miguel Campos,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,44,3,False,89,1,0,1,1,0,0,,,89,0,0
 335744,Miguel Campos,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,27190,away,3187,3,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 335744,Miguel Campos,2026-10-18T12:00:00+00:00,2025,CSL,1,False,4827943,28,27190,home,65791,3,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
@@ -774,7 +770,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 335744,Miguel Campos,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 335744,Miguel Campos,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 335744,Miguel Campos,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-335744,Miguel Campos,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 1430644,Yuhang Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1430644,Yuhang Zhang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1430644,Yuhang Zhang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -792,7 +787,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1430644,Yuhang Zhang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1430644,Yuhang Zhang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1430644,Yuhang Zhang,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1430644,Yuhang Zhang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1012988,Alex Yang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,22,8,False,70,0,0,0,0,0,0,,,70,0,0
 1012988,Alex Yang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,22,8,False,90,0,1,1,0,0,1,,,,0,0
 1012988,Alex Yang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,22,8,False,90,0,0,4,0,3,1,,,,0,0
@@ -813,7 +807,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1012988,Alex Yang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,22,0,False,17,0,0,0,0,0,0,,73,,0,0
 1012988,Alex Yang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,22,5,False,90,0,2,0,0,0,0,,,,0,0
 1012988,Alex Yang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,22,5,False,90,0,0,0,0,0,0,,,90,0,0
-1012988,Alex Yang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,22,5,False,90,0,0,1,1,0,0,,,,0,0
 424939,Zhen Wei,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,13,3,False,90,0,0,0,0,0,0,,,,0,0
 424939,Zhen Wei,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,13,3,False,90,0,0,1,0,1,0,,,,0,0
 424939,Zhen Wei,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
@@ -831,7 +824,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 424939,Zhen Wei,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,13,3,False,90,0,0,0,0,0,0,,,,0,0
 424939,Zhen Wei,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 424939,Zhen Wei,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,13,3,False,90,0,0,3,0,1,2,27,,,0,0
-424939,Zhen Wei,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,13,3,False,90,1,0,1,1,0,0,,,,0,0
 956819,Umidjan Yusup,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,40,3,False,90,0,0,1,0,1,0,,,,0,0
 956819,Umidjan Yusup,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
 956819,Umidjan Yusup,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,40,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -846,7 +838,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 956819,Umidjan Yusup,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,injured,,,False,0,0,0,0,0,0,0,,,,187,0
 956819,Umidjan Yusup,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,injured,,,False,0,0,0,0,0,0,0,,,,187,0
 956819,Umidjan Yusup,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,40,0,False,26,0,0,1,1,0,0,,64,,0,0
-956819,Umidjan Yusup,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,40,3,False,64,0,0,0,0,0,0,11,,64,0,0
 156934,Tyias Browning,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,3,3,False,75,0,0,0,0,0,0,,,75,0,0
 156934,Tyias Browning,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,3,3,False,88,0,0,0,0,0,0,,,88,0,0
 156934,Tyias Browning,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -864,7 +855,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 156934,Tyias Browning,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,3,0,False,45,0,0,0,0,0,0,,46,,0,0
 156934,Tyias Browning,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,3,3,False,90,0,0,1,0,1,0,,,,0,0
 156934,Tyias Browning,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,3,3,False,64,0,0,0,0,0,0,,,64,0,0
-156934,Tyias Browning,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,3,0,False,26,0,0,0,0,0,0,,64,,0,0
 279525,Shuai Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,32,9,False,75,0,0,2,1,0,1,,,75,0,0
 279525,Shuai Li,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,32,9,False,81,0,0,1,0,1,0,75,,81,0,0
 279525,Shuai Li,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,32,9,False,90,0,0,3,1,0,2,,,,0,0
@@ -878,7 +868,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 279525,Shuai Li,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,32,4,False,62,0,0,0,0,0,0,,,62,0,0
 279525,Shuai Li,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,32,0,False,36,0,0,0,0,0,0,,54,,0,0
 279525,Shuai Li,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,32,0,False,26,0,0,0,0,0,0,,64,,0,0
-279525,Shuai Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,32,0,False,45,0,0,1,1,0,0,,46,,0,0
 527720,Zhen'ao Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,19,0,False,20,0,0,0,0,0,0,,70,,0,0
 527720,Zhen'ao Wang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 527720,Zhen'ao Wang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
@@ -898,7 +887,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 527720,Zhen'ao Wang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,19,5,False,73,0,0,0,0,0,0,8,,73,0,0
 527720,Zhen'ao Wang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 527720,Zhen'ao Wang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,19,4,False,64,0,0,0,0,0,0,,,64,0,0
-527720,Zhen'ao Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 288513,Xin Yue,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 288513,Xin Yue,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,28,0,False,9,0,0,1,1,0,0,,81,,0,0
 288513,Xin Yue,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
@@ -913,7 +901,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 288513,Xin Yue,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,28,0,False,28,0,0,0,0,0,0,,62,,0,0
 288513,Xin Yue,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,28,4,False,54,0,0,0,0,0,0,,,54,0,0
 288513,Xin Yue,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,28,,False,0,0,0,0,0,0,0,,,,0,0
-288513,Xin Yue,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,28,4,False,45,0,0,0,0,0,0,,,46,0,0
 1237516,Shimeng Bao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 1237516,Shimeng Bao,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1237516,Shimeng Bao,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -928,7 +915,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1237516,Shimeng Bao,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1237516,Shimeng Bao,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1237516,Shimeng Bao,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1237516,Shimeng Bao,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 250199,Huan Fu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 250199,Huan Fu,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 250199,Huan Fu,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
@@ -942,7 +928,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 250199,Huan Fu,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 250199,Huan Fu,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 250199,Huan Fu,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
-250199,Huan Fu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,23,6,False,64,0,0,0,0,0,0,41,,64,0,0
 236672,Shenchao Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,4,0,False,15,0,0,1,0,1,0,,75,,0,0
 236672,Shenchao Wang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 236672,Shenchao Wang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
@@ -956,7 +941,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 236672,Shenchao Wang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 236672,Shenchao Wang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,4,0,False,4,0,0,0,0,0,0,,86,,0,0
 236672,Shenchao Wang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,4,0,False,1,0,0,0,0,0,0,,90,,0,0
-236672,Shenchao Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 140437,Linpeng Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,5,0,False,15,0,0,0,0,0,0,,75,,0,0
 140437,Linpeng Zhang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 140437,Linpeng Zhang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,injured,,,False,0,0,0,0,0,0,0,,,,101,0
@@ -970,7 +954,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 140437,Linpeng Zhang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,5,3,False,45,0,0,0,0,0,0,,,46,0,0
 140437,Linpeng Zhang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,5,3,False,86,0,0,0,0,0,0,,,86,0,0
 140437,Linpeng Zhang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-140437,Linpeng Zhang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,5,0,False,6,0,0,0,0,0,0,,84,,0,0
 1382894,Jinglei Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382894,Jinglei Wang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382894,Jinglei Wang,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,115122,home,107764,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -981,7 +964,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1382894,Jinglei Wang,2026-09-12T08:00:00+00:00,2025,CH3P,3,False,5046636,23,115122,home,36881,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382894,Jinglei Wang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,59,4,False,90,0,1,0,0,0,0,,,,0,0
 1382894,Jinglei Wang,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1382895,Dongcheng Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1382895,Dongcheng Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1382895,Dongcheng Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,in squad,54,,False,0,0,0,0,0,0,0,,,,0,0
 1382895,Dongcheng Wang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1382895,Dongcheng Wang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,in squad,54,,False,0,0,0,0,0,0,0,,,,0,0
 1382895,Dongcheng Wang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1003,7 +987,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1382895,Dongcheng Wang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1382895,Dongcheng Wang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382895,Dongcheng Wang,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,in squad,54,,False,0,0,0,0,0,0,0,,,,0,0
-1382895,Dongcheng Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1520572,Yufei Jiang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520572,Yufei Jiang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520572,Yufei Jiang,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,115122,home,107764,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1027,7 +1010,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 408958,Mateus Vital,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,10,0,False,10,0,0,2,1,1,0,,80,,0,0
 408958,Mateus Vital,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,10,7,False,90,0,0,0,0,0,0,,,,0,0
 408958,Mateus Vital,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,10,7,False,64,0,0,2,0,1,1,,,64,0,0
-408958,Mateus Vital,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,10,7,False,90,0,1,1,0,1,0,,,,0,0
 448344,Óscar Melendo,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,21,7,False,70,0,0,0,0,0,0,,,70,0,0
 448344,Óscar Melendo,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,21,12,False,88,0,1,1,0,1,0,,,88,0,0
 448344,Óscar Melendo,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,21,7,False,89,0,0,0,0,0,0,,,89,0,0
@@ -1041,7 +1023,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 448344,Óscar Melendo,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,21,7,False,90,0,0,1,1,0,0,,,,0,0
 448344,Óscar Melendo,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,21,10,False,90,0,0,0,0,0,0,60,,,0,0
 448344,Óscar Melendo,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,21,10,False,90,0,0,0,0,0,0,,,,0,0
-448344,Óscar Melendo,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,21,10,False,90,0,1,1,0,1,0,,,,0,0
 967981,Jean Claude,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 967981,Jean Claude,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,8,0,False,2,0,0,0,0,0,0,,88,,0,0
 967981,Jean Claude,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1057,7 +1038,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 967981,Jean Claude,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,8,6,False,90,0,0,1,1,0,0,,,,0,0
 967981,Jean Claude,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,8,6,False,45,0,0,0,0,0,0,,,46,0,0
 967981,Jean Claude,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,8,6,False,90,0,0,0,0,0,0,,,,0,0
-967981,Jean Claude,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,8,0,False,26,0,0,1,0,1,0,,64,,0,0
 1068096,Jiwen Kuai,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 1068096,Jiwen Kuai,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 1068096,Jiwen Kuai,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,47,12,False,61,0,0,2,0,2,0,,,61,0,0
@@ -1078,7 +1058,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1068096,Jiwen Kuai,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,47,10,False,90,1,0,2,1,1,0,,,,0,0
 1068096,Jiwen Kuai,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,47,0,False,45,0,0,0,0,0,0,,46,,0,0
 1068096,Jiwen Kuai,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,47,0,False,26,0,0,1,0,1,0,,64,,0,0
-1068096,Jiwen Kuai,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,47,,False,0,0,0,0,0,0,0,,,,0,0
 890691,Yongtao Lu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 890691,Yongtao Lu,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 890691,Yongtao Lu,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1092,7 +1071,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 890691,Yongtao Lu,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 890691,Yongtao Lu,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 890691,Yongtao Lu,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
-890691,Yongtao Lu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 439768,Yuan Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,6,0,False,20,0,0,0,0,0,0,,70,,0,0
 439768,Yuan Zhang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 439768,Yuan Zhang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,6,0,False,1,0,0,1,0,1,0,,89,,0,0
@@ -1112,7 +1090,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 439768,Yuan Zhang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 439768,Yuan Zhang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 439768,Yuan Zhang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
-439768,Yuan Zhang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 254621,Shiyuan Yang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
 254621,Shiyuan Yang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 254621,Shiyuan Yang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1126,8 +1103,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 254621,Shiyuan Yang,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
 254621,Shiyuan Yang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
 254621,Shiyuan Yang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-254621,Shiyuan Yang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1382898,Ruilong Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1382898,Ruilong Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1382898,Ruilong Li,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 1382898,Ruilong Li,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1382898,Ruilong Li,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,played,24,0,False,69,0,0,0,0,0,0,,21,,0,0
 1382898,Ruilong Li,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1149,8 +1126,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1382898,Ruilong Li,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,24,3,False,90,0,0,0,0,0,0,,,,0,0
 1382898,Ruilong Li,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382898,Ruilong Li,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,24,3,False,90,0,0,0,0,0,0,,,,0,0
-1382898,Ruilong Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1521696,Zhezhe Cao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1521696,Zhezhe Cao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1521696,Zhezhe Cao,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,58,0,False,45,0,0,0,0,0,0,,46,,0,0
 1521696,Zhezhe Cao,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1521696,Zhezhe Cao,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,in squad,58,,False,0,0,0,0,0,0,0,,,,0,0
 1521696,Zhezhe Cao,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1172,7 +1149,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1521696,Zhezhe Cao,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,in squad,58,,False,0,0,0,0,0,0,0,,,,0,0
 1521696,Zhezhe Cao,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1521696,Zhezhe Cao,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1521696,Zhezhe Cao,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 546292,Léo Souza,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,45,14,False,90,2,2,3,2,1,0,,,,0,0
 546292,Léo Souza,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,45,14,False,90,1,1,3,1,1,1,,,,0,0
 546292,Léo Souza,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,45,0,False,29,0,0,0,0,0,0,,61,,0,0
@@ -1186,7 +1162,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 546292,Léo Souza,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,45,14,False,62,0,0,1,0,0,1,,,62,0,0
 546292,Léo Souza,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,45,14,False,90,0,0,3,1,1,1,,,,0,0
 546292,Léo Souza,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,45,14,False,90,0,0,5,2,2,1,,,,0,0
-546292,Léo Souza,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,45,14,False,84,0,0,3,0,2,1,64,,84,0,0
+562734,Prince Ampem,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,17,11,False,90,2,2,4,2,2,0,,,,0,0
+562734,Prince Ampem,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,17,11,False,76,1,1,2,1,0,1,,,76,0,0
 562734,Prince Ampem,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,17,11,False,90,1,0,2,2,0,0,,,,0,0
 562734,Prince Ampem,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,27190,away,3187,3,1,played,17,11,False,67,1,1,1,1,0,0,,,67,0,0
 562734,Prince Ampem,2026-10-18T12:00:00+00:00,2025,CSL,1,False,4827943,28,27190,home,65791,3,0,played,17,11,False,90,0,1,2,0,0,2,,,,0,0
@@ -1198,7 +1175,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 562734,Prince Ampem,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,17,11,False,90,0,0,2,2,0,0,,,,0,0
 562734,Prince Ampem,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,17,11,False,71,0,0,0,0,0,0,,,71,0,0
 562734,Prince Ampem,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,17,11,False,77,0,0,0,0,0,0,,,77,0,0
-562734,Prince Ampem,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,17,11,False,90,2,0,2,2,0,0,,,,0,0
 523850,Gabrielzinho,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,injured,,,False,0,0,0,0,0,0,0,,,,82,9
 523850,Gabrielzinho,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,injured,,,False,0,0,0,0,0,0,0,,,,82,0
 523850,Gabrielzinho,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,injured,,,False,0,0,0,0,0,0,0,,,,82,0
@@ -1212,7 +1188,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 523850,Gabrielzinho,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,injured,,,False,0,0,0,0,0,0,0,,,,82,9
 523850,Gabrielzinho,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,injured,,,False,0,0,0,0,0,0,0,,,,82,9
 523850,Gabrielzinho,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,injured,,,False,0,0,0,0,0,0,0,,,,82,9
-523850,Gabrielzinho,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,injured,,,False,0,0,0,0,0,0,0,,,,82,9
 140436,Lei Wu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,7,12,True,78,2,1,4,2,1,1,,,78,0,0
 140436,Lei Wu,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 140436,Lei Wu,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,7,14,True,61,0,0,2,0,1,1,,,61,0,0
@@ -1226,7 +1201,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 140436,Lei Wu,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,7,0,False,28,0,1,1,0,1,0,,62,,0,0
 140436,Lei Wu,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,7,12,True,71,2,0,4,2,0,2,,,71,0,0
 140436,Lei Wu,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,7,12,True,73,0,0,3,0,2,1,,,73,0,0
-140436,Lei Wu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,7,12,True,68,0,0,0,0,0,0,,,68,0,0
 589611,Zhurun Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 589611,Zhurun Liu,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,33,0,False,14,0,0,0,0,0,0,,76,,0,0
 589611,Zhurun Liu,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,33,0,False,29,0,0,0,0,0,0,,61,,0,0
@@ -1240,7 +1214,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 589611,Zhurun Liu,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 589611,Zhurun Liu,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,33,0,False,19,0,0,3,1,1,1,,71,,0,0
 589611,Zhurun Liu,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,33,0,False,13,0,1,1,1,0,0,,77,,0,0
-589611,Zhurun Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played,33,0,False,22,0,0,2,0,1,1,,68,,0,0
 465128,Ruofan Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 465128,Ruofan Liu,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 465128,Ruofan Liu,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1260,7 +1233,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 465128,Ruofan Liu,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 465128,Ruofan Liu,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 465128,Ruofan Liu,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-465128,Ruofan Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1244269,Xinxiang Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played,49,0,False,12,0,0,0,0,0,0,,78,,0,0
 1244269,Xinxiang Li,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played,49,0,False,14,1,0,1,1,0,0,,76,,0,0
 1244269,Xinxiang Li,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,played,49,0,False,1,0,0,0,0,0,0,,89,,0,0
@@ -1280,7 +1252,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1244269,Xinxiang Li,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,played,49,12,False,80,0,0,0,0,0,0,,,80,0,0
 1244269,Xinxiang Li,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,played,49,0,False,19,0,0,0,0,0,0,,71,,0,0
 1244269,Xinxiang Li,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,played,49,0,False,17,1,0,1,1,0,0,,73,,0,0
-1244269,Xinxiang Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
 605150,Matt Orr,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 605150,Matt Orr,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 605150,Matt Orr,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1297,7 +1268,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 605150,Matt Orr,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,27190,away,51120,1,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 605150,Matt Orr,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,27190,home,8536,2,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 605150,Matt Orr,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
-605150,Matt Orr,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 1423231,Dan Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1423231,Dan Wang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1423231,Dan Wang,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,115122,home,107764,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1327,8 +1297,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1382897,Junxiang Wen,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,35,14,False,68,0,0,0,0,0,0,,,68,0,0
 1382897,Junxiang Wen,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1382897,Junxiang Wen,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,35,14,False,65,0,0,0,0,0,0,,,65,0,0
-1382897,Junxiang Wen,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1068100,Junjie Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1068100,Junjie Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1068100,Junjie Zhang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,37,0,False,45,0,0,0,0,0,0,,,46,0,0
 1068100,Junjie Zhang,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1068100,Junjie Zhang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,played,37,0,False,90,0,0,0,0,0,0,,,,0,0
 1068100,Junjie Zhang,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1350,8 +1320,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1068100,Junjie Zhang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,37,11,False,87,0,1,0,0,0,0,,,87,0,0
 1068100,Junjie Zhang,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1068100,Junjie Zhang,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,37,11,False,85,0,0,0,0,0,0,,,85,0,0
-1068100,Junjie Zhang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1436253,Juncheng Cui,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1436253,Juncheng Cui,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,27190,home,50973,6,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1436253,Juncheng Cui,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,played,46,0,False,45,0,0,0,0,0,0,,46,,0,0
 1436253,Juncheng Cui,2026-11-03T07:45:00+00:00,2026,ACLE,10,False,5021815,4,27190,away,5551,4,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1436253,Juncheng Cui,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,played,46,0,False,23,0,0,0,0,0,0,,67,,0,0
 1436253,Juncheng Cui,2026-10-27T10:00:00+00:00,2026,ACLE,10,False,5021799,3,27190,home,81455,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1373,7 +1343,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1436253,Juncheng Cui,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,115122,home,53326,2,0,played,46,0,False,17,0,0,0,0,0,0,,73,,0,0
 1436253,Juncheng Cui,2026-08-19T11:35:00+00:00,2025,CSL,1,False,4827846,18,27190,home,98080,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1436253,Juncheng Cui,2026-08-15T11:30:00+00:00,2025,CHL3,3,False,4841080,21,115122,away,50971,0,1,played,46,0,False,5,0,0,0,0,0,0,,85,,0,0
-1436253,Juncheng Cui,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,27190,away,70657,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 281719,Bo Zhao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,17276,home,9982,4,0,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
 281719,Bo Zhao,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
 281719,Bo Zhao,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,played,33,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -1514,6 +1483,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 825878,Pengbo Wang,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 825878,Pengbo Wang,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 825878,Pengbo Wang,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+349264,Marko Tolic,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,17276,home,9982,4,0,played,10,10,False,90,1,0,2,2,0,0,,,,0,0
 349264,Marko Tolic,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,played,10,10,False,90,0,1,2,0,1,1,,,,0,0
 349264,Marko Tolic,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,played,10,10,False,23,0,0,0,0,0,0,,,23,0,0
 349264,Marko Tolic,2026-10-09T12:00:00+00:00,2025,CSL,1,False,4827922,27,17276,home,27190,2,4,played,10,10,False,90,0,0,4,2,1,1,90,,,0,0
@@ -1523,7 +1493,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 349264,Marko Tolic,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,played,10,0,False,25,0,0,2,1,0,1,,65,,0,0
 349264,Marko Tolic,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,played,10,0,False,25,0,0,0,0,0,0,,65,,0,0
 349264,Marko Tolic,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,played,10,6,False,61,0,0,0,0,0,0,46,,61,0,0
-349264,Marko Tolic,2026-07-26T12:00:00+00:00,2025,CSL,1,False,4827863,20,17276,home,98080,3,2,played,10,10,False,66,1,0,3,1,2,0,,,66,0,0
 1570097,Yanbin Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,in squad,47,,False,0,0,0,0,0,0,0,,,,0,0
 1570097,Yanbin Wang,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1570097,Yanbin Wang,2026-10-09T12:00:00+00:00,2025,CSL,1,False,4827922,27,17276,home,27190,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1585,7 +1554,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 359404,Wei Wu,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 359404,Wei Wu,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 359404,Wei Wu,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
-1015923,Ablikim Abdusalam,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046684,30,107764,home,125947,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1015923,Ablikim Abdusalam,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046684,30,107764,home,125947,1,4,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
 1015923,Ablikim Abdusalam,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046681,29,107764,away,94351,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1015923,Ablikim Abdusalam,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,107764,away,115122,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1015923,Ablikim Abdusalam,2026-10-17T11:30:00+00:00,2025,CH3P,3,False,5046671,27,107764,home,115121,0,0,played,18,0,False,62,0,0,0,0,0,0,54,,62,0,0
@@ -1645,6 +1614,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 209649,Alexandru Mitriță,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,played,28,9,False,90,0,0,0,0,0,0,,,,0,0
 209649,Alexandru Mitriță,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,played,28,9,False,90,1,0,4,3,0,1,,,,0,0
 209649,Alexandru Mitriță,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,played,28,14,False,90,0,0,4,1,2,1,,,,0,0
+596067,Felippe Cardoso,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,17276,home,9982,4,0,played,27,14,False,81,2,1,7,3,3,1,,,81,0,0
 596067,Felippe Cardoso,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,played,27,0,False,35,1,0,2,1,1,0,,55,,0,0
 596067,Felippe Cardoso,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 596067,Felippe Cardoso,2026-10-09T12:00:00+00:00,2025,CSL,1,False,4827922,27,17276,home,27190,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1654,7 +1624,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 596067,Felippe Cardoso,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,played,27,14,False,90,1,0,2,1,1,0,,,,0,0
 596067,Felippe Cardoso,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,played,27,14,False,83,0,0,0,0,0,0,,,83,0,0
 596067,Felippe Cardoso,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,played,27,0,False,29,0,0,0,0,0,0,,61,,0,0
-596067,Felippe Cardoso,2026-07-26T12:00:00+00:00,2025,CSL,1,False,4827863,20,17276,home,98080,3,2,played,27,0,False,24,1,0,3,3,0,0,,66,,0,0
+814273,Saúl Guarirapa,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,17276,home,9982,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 814273,Saúl Guarirapa,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 814273,Saúl Guarirapa,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 814273,Saúl Guarirapa,2026-10-09T12:00:00+00:00,2025,CSL,1,False,4827922,27,17276,home,27190,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1664,7 +1634,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 814273,Saúl Guarirapa,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,17276,away,51120,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 814273,Saúl Guarirapa,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,17276,home,65791,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 814273,Saúl Guarirapa,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827872,21,17276,away,3176,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-814273,Saúl Guarirapa,2026-07-26T12:00:00+00:00,2025,CSL,1,False,4827863,20,17276,home,98080,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1125720,Yudong Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,17276,home,9982,4,0,played,11,8,False,75,0,1,3,1,1,1,,,75,0,0
 1125720,Yudong Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,17276,away,50973,4,2,played,11,14,False,89,1,0,3,3,0,0,,,89,0,0
 1125720,Yudong Wang,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,17276,away,3182,0,5,played,11,14,False,90,0,0,4,2,1,1,,,,0,0
@@ -2208,6 +2177,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1396692,Shilin Wang,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827898,24,3183,away,65791,5,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396692,Shilin Wang,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3183,home,3176,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396692,Shilin Wang,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827895,23,3183,home,9982,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+606849,Makhtar Gueye,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,3183,home,70662,4,0,injured,,,False,0,0,0,0,0,0,0,,,,29,9
+606849,Makhtar Gueye,2026-11-05T10:00:00+00:00,2026,ACL2,10,False,5021975,4,3183,away,23568,1,2,injured,,,False,0,0,0,0,0,0,0,,,,29,0
+606849,Makhtar Gueye,2026-10-29T12:15:00+00:00,2026,ACL2,10,False,5021932,3,3183,home,23568,0,1,injured,,,False,0,0,0,0,0,0,0,,,,29,0
 606849,Makhtar Gueye,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,3183,away,51120,1,2,injured,,,False,0,0,0,0,0,0,0,,,,29,9
 606849,Makhtar Gueye,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,3183,away,70657,3,1,injured,,,False,0,0,0,0,0,0,0,,,,29,9
 606849,Makhtar Gueye,2026-10-15T12:15:00+00:00,2026,ACL2,10,False,5021915,2,3183,away,25383,0,0,injured,,,False,0,0,0,0,0,0,0,,,,29,0
@@ -2219,11 +2191,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 606849,Makhtar Gueye,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827898,24,3183,away,65791,5,4,injured,,,False,0,0,0,0,0,0,0,,,,29,9
 606849,Makhtar Gueye,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3183,home,3176,0,3,injured,,,False,0,0,0,0,0,0,0,,,,29,9
 606849,Makhtar Gueye,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827895,23,3183,home,9982,4,1,injured,,,False,0,0,0,0,0,0,0,,,,29,9
+702911,Luis Asué,2026-11-12T16:00:00+00:00,2026,AFCQ,19,True,5074852,5,13485,away,3583,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+702911,Luis Asué,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,3183,home,70662,4,0,played,19,14,False,90,0,0,1,0,1,0,,,,0,0
+702911,Luis Asué,2026-11-05T10:00:00+00:00,2026,ACL2,10,False,5021975,4,3183,away,23568,1,2,played,19,12,False,90,0,0,4,2,1,1,48,,,0,0
 702911,Luis Asué,2026-10-29T12:15:00+00:00,2026,ACL2,10,False,5021932,3,3183,home,23568,0,1,played,19,6,False,80,0,0,2,1,0,1,,,80,0,0
 702911,Luis Asué,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,3183,away,51120,1,2,played,19,12,False,90,0,0,2,2,0,0,,,,0,0
 702911,Luis Asué,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,3183,away,70657,3,1,played,19,12,False,86,1,0,3,1,2,0,43,,86,0,0
 702911,Luis Asué,2026-10-15T12:15:00+00:00,2026,ACL2,10,False,5021915,2,3183,away,25383,0,0,played,19,12,False,12,0,0,0,0,0,0,,,12,0,0
 702911,Luis Asué,2026-10-10T11:35:00+00:00,2025,CSL,1,False,4827923,27,3183,home,93753,7,1,played,19,12,False,79,0,1,5,3,2,0,,,79,0,0
+702911,Luis Asué,2026-09-28T16:00:00+00:00,2026,AFCQ,19,True,5047011,4,13485,home,6187,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+702911,Luis Asué,2026-09-24T16:00:00+00:00,2026,AFCQ,19,True,5046881,3,13485,away,3854,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 702911,Luis Asué,2026-09-17T12:15:00+00:00,2026,ACL2,10,False,5021900,1,3183,home,6731,2,1,played,19,8,False,90,0,0,4,1,2,1,,,,0,0
 702911,Luis Asué,2026-09-06T11:00:00+00:00,2025,CSL,1,False,4827917,26,3183,away,99249,3,1,played,19,12,False,82,1,0,3,2,0,1,,,82,0,0
 702911,Luis Asué,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039640,10,3183,away,98080,0,1,played,19,14,False,90,0,0,4,0,2,2,84,,,0,0
@@ -2316,7 +2293,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 884833,Jinyong Yu,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 884833,Jinyong Yu,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 884833,Jinyong Yu,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-884833,Jinyong Yu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1242741,Qiwei Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1242741,Qiwei Liu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1242741,Qiwei Liu,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2341,7 +2317,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 143068,Dalei Wang,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 143068,Dalei Wang,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 143068,Dalei Wang,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-143068,Dalei Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+375376,Pedro Álvaro,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,23,3,False,90,0,0,1,0,1,0,,,,0,0
 375376,Pedro Álvaro,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 375376,Pedro Álvaro,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 375376,Pedro Álvaro,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827928,27,3182,away,99249,1,1,played,23,3,False,90,0,0,0,0,0,0,66,,,0,0
@@ -2351,7 +2327,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 375376,Pedro Álvaro,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 375376,Pedro Álvaro,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,23,3,False,45,0,0,1,0,0,1,,,46,0,0
 375376,Pedro Álvaro,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3182,home,3187,2,1,played,23,3,False,69,0,0,0,0,0,0,,,69,0,0
-375376,Pedro Álvaro,2026-08-01T11:35:00+00:00,2025,CSL,1,False,4827871,21,3182,away,27190,1,0,played,23,0,False,12,0,0,0,0,0,0,,78,,0,0
 572110,Qihang Sun,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 572110,Qihang Sun,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 572110,Qihang Sun,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2377,7 +2352,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 789635,Xiao Peng,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 789635,Xiao Peng,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,3,3,False,12,0,0,0,0,0,0,,78,,0,0
 789635,Xiao Peng,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,3,0,False,17,0,0,0,0,0,0,,73,,0,0
-789635,Xiao Peng,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 316041,Yang Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,11,3,False,90,0,0,0,0,0,0,,,,0,0
 316041,Yang Liu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,11,3,False,90,0,1,0,0,0,0,,,,0,0
 316041,Yang Liu,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,played,11,9,False,90,0,0,0,0,0,0,,,,0,0
@@ -2396,7 +2370,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 316041,Yang Liu,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,11,4,False,90,0,0,1,0,1,0,,,,0,0
 316041,Yang Liu,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,11,3,False,45,0,0,1,0,0,1,,,46,0,0
 316041,Yang Liu,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,11,4,False,90,0,0,1,0,0,1,,,,0,0
-316041,Yang Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,11,3,False,90,1,0,3,2,1,0,,,,0,0
 279521,Zhunyi Gao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 279521,Zhunyi Gao,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 279521,Zhunyi Gao,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2415,7 +2388,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 279521,Zhunyi Gao,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
 279521,Zhunyi Gao,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,33,3,False,45,0,0,0,0,0,0,89,46,,0,0
 279521,Zhunyi Gao,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,33,5,False,73,0,0,0,0,0,0,,,73,0,0
-279521,Zhunyi Gao,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,33,3,False,90,0,0,0,0,0,0,,,,0,0
+1127611,Songchen Shi,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
 1127611,Songchen Shi,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,15,0,False,85,0,0,0,0,0,0,,,85,0,0
 1127611,Songchen Shi,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,played,15,0,False,45,0,0,0,0,0,0,,46,,0,0
 1127611,Songchen Shi,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,15,0,False,24,0,0,0,0,0,0,75,66,,0,0
@@ -2437,8 +2410,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1127611,Songchen Shi,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 1127611,Songchen Shi,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 1127611,Songchen Shi,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1127611,Songchen Shi,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,15,0,False,45,0,0,0,0,0,0,,46,,0,0
-1127611,Songchen Shi,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,15,0,False,14,0,0,0,0,0,0,90,76,,0,0
 185375,Tong Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,6,0,False,10,0,0,0,0,0,0,,80,,0,0
 185375,Tong Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 185375,Tong Wang,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2479,8 +2450,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1242751,Shemshidin Yusupjan,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1242751,Shemshidin Yusupjan,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1242751,Shemshidin Yusupjan,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-1242751,Shemshidin Yusupjan,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-1242751,Shemshidin Yusupjan,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 148011,Zheng Zheng,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 148011,Zheng Zheng,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 148011,Zheng Zheng,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2491,7 +2460,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 148011,Zheng Zheng,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 148011,Zheng Zheng,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 148011,Zheng Zheng,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3182,home,3187,2,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-1244211,Qiancheng Qi,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1244211,Qiancheng Qi,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1244211,Qiancheng Qi,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,44,0,False,90,0,0,0,0,0,0,,,,0,0
 1244211,Qiancheng Qi,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,44,0,False,90,0,0,0,0,0,0,,,,0,0
 1244211,Qiancheng Qi,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,in squad,44,,False,0,0,0,0,0,0,0,,,,0,0
 1244211,Qiancheng Qi,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2507,8 +2477,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1244211,Qiancheng Qi,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1244211,Qiancheng Qi,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1244211,Qiancheng Qi,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played,44,0,True,90,0,0,0,0,0,0,,,90,0,0
-1244211,Qiancheng Qi,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,44,0,True,90,0,0,0,0,0,0,,,,0,0
-1244211,Qiancheng Qi,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1282892,Fubo Hao,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282892,Fubo Hao,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282892,Fubo Hao,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,60,0,False,88,0,0,0,0,0,0,,,88,0,0
@@ -2526,8 +2494,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1282892,Fubo Hao,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282892,Fubo Hao,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1282892,Fubo Hao,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played,60,0,False,45,0,0,0,0,0,0,,46,,0,0
-1282892,Fubo Hao,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,60,0,False,79,0,0,0,0,0,0,22,,79,0,0
-1282892,Fubo Hao,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1081036,Guilherme Madruga,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,8,7,False,90,1,0,2,1,0,1,,,,0,0
 1081036,Guilherme Madruga,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,8,6,False,90,0,1,1,0,1,0,,,,0,0
 1081036,Guilherme Madruga,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,played,8,3,False,90,1,0,3,1,1,1,,,,0,0
@@ -2548,7 +2514,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 424780,Zhengyu Huang,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,35,7,False,45,0,0,1,0,1,0,,,46,0,0
 424780,Zhengyu Huang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,35,6,False,64,0,0,2,0,2,0,,,64,0,0
 424780,Zhengyu Huang,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3182,home,3187,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-946650,Zeshi Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+946650,Zeshi Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+946650,Zeshi Chen,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,37,0,False,90,0,0,0,0,0,0,,,,0,0
 946650,Zeshi Chen,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,37,0,False,35,0,0,0,0,0,0,,55,,0,0
 946650,Zeshi Chen,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,played,37,0,False,45,0,0,0,0,0,0,,46,,0,0
 946650,Zeshi Chen,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,37,0,False,11,0,0,0,0,0,0,,79,,0,0
@@ -2565,7 +2532,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 946650,Zeshi Chen,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 946650,Zeshi Chen,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 946650,Zeshi Chen,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-946650,Zeshi Chen,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 571342,Liuyu Duan,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,93753,home,70657,2,1,played,22,0,False,23,0,0,0,0,0,0,,67,,0,0
 571342,Liuyu Duan,2026-11-01T11:35:00+00:00,2025,CHFA,8,False,5043029,11,93753,home,98080,4,3,played,22,0,False,12,0,1,0,0,0,0,,78,,0,0
 571342,Liuyu Duan,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,93753,away,70662,1,1,played,22,0,False,21,0,0,0,0,0,0,,69,,0,0
@@ -2619,8 +2585,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1127610,Imran Memet,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,38,7,False,45,0,0,0,0,0,0,,,46,0,0
 1127610,Imran Memet,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,38,0,False,45,0,0,0,0,0,0,,46,,0,0
 1127610,Imran Memet,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1127610,Imran Memet,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,38,0,False,45,0,0,0,0,0,0,,46,,0,0
-1127610,Imran Memet,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,38,0,False,26,0,0,0,0,0,0,,64,,0,0
 994221,Jiaxi Yin,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 994221,Jiaxi Yin,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 994221,Jiaxi Yin,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,played,34,0,False,1,0,0,0,0,0,0,,89,,0,0
@@ -2673,7 +2637,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 824087,Wenneng Xie,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,7,5,False,60,0,0,0,0,0,0,,,60,0,0
 824087,Wenneng Xie,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,absent,,,False,0,0,0,0,0,0,0,,,,0,2
 824087,Wenneng Xie,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,7,8,False,73,0,0,3,1,1,1,45,,73,0,0
-824087,Wenneng Xie,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,7,0,False,45,0,0,1,1,0,0,,46,,0,0
 376597,Pu Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,29,9,False,80,0,0,1,0,1,0,,,80,0,0
 376597,Pu Chen,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,29,9,False,66,0,0,2,2,0,0,,,66,0,0
 376597,Pu Chen,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,played,29,0,False,29,0,1,2,2,0,0,,61,,0,0
@@ -2686,7 +2649,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 376597,Pu Chen,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,29,0,False,19,0,0,0,0,0,0,,71,,0,0
 376597,Pu Chen,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,29,9,False,90,0,0,1,0,0,1,,,,0,0
 376597,Pu Chen,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,29,9,False,45,0,0,1,0,1,0,,,46,0,0
-376597,Pu Chen,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,29,9,False,90,0,0,1,1,0,0,,,,0,0
 1046583,Raphaël Merkies,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played,17,0,False,82,1,0,4,1,2,1,11,8,,0,0
 1046583,Raphaël Merkies,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played,17,0,False,45,0,0,1,0,1,0,,46,,0,0
 1046583,Raphaël Merkies,2026-10-17T12:00:00+00:00,2025,CSL,1,False,4827940,28,3182,home,17276,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2698,7 +2660,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1046583,Raphaël Merkies,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039642,10,3182,home,27190,0,3,played,17,0,False,30,0,0,0,0,0,0,,60,,0,0
 1046583,Raphaël Merkies,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,played,17,8,False,24,1,0,1,1,0,0,,66,,0,0
 1046583,Raphaël Merkies,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played,17,0,False,30,0,0,0,0,0,0,,60,,0,0
-1046583,Raphaël Merkies,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played,17,0,False,26,1,0,1,1,0,0,,64,,0,0
 218268,Binbin Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,33,0,False,20,0,0,0,0,0,0,,70,,0,0
 218268,Binbin Liu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 218268,Binbin Liu,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,33,0,False,14,0,0,0,0,0,0,,76,,0,0
@@ -2709,7 +2670,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 218268,Binbin Liu,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 218268,Binbin Liu,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 218268,Binbin Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
-1125749,Shuaijun Mei,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1125749,Shuaijun Mei,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1125749,Shuaijun Mei,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,40,0,False,90,0,0,0,0,0,0,,,,0,0
 1125749,Shuaijun Mei,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,40,0,False,90,1,0,0,0,0,0,,,,0,0
 1125749,Shuaijun Mei,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,played,40,0,False,90,0,0,0,0,0,0,,,,0,0
 1125749,Shuaijun Mei,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2725,8 +2687,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1125749,Shuaijun Mei,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1125749,Shuaijun Mei,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1125749,Shuaijun Mei,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played,40,0,False,90,0,0,0,0,0,0,,,,0,0
-1125749,Shuaijun Mei,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1125749,Shuaijun Mei,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1244210,Yixiang Peng,2026-09-18T11:30:00+00:00,2025,CH3P,3,False,5046639,24,115121,away,36881,1,2,played,42,0,False,45,0,0,0,0,0,0,,46,,0,0
 1244210,Yixiang Peng,2026-09-13T11:00:00+00:00,2025,CH3P,3,False,5046635,23,115121,home,107764,0,0,played,42,0,False,13,0,0,0,0,0,0,,77,,0,0
 1244210,Yixiang Peng,2026-09-05T12:00:00+00:00,2025,CSL,1,False,4827916,26,3182,home,51120,1,1,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2737,7 +2697,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1244210,Yixiang Peng,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,42,0,False,45,0,0,0,0,0,0,,46,,0,0
 1244210,Yixiang Peng,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
 1244210,Yixiang Peng,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3182,home,3187,2,1,played,42,0,False,21,0,1,0,0,0,0,,69,,0,0
-1242754,Junwei Lu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1242754,Junwei Lu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1242754,Junwei Lu,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,41,0,False,45,0,0,0,0,0,0,,46,,0,0
 1242754,Junwei Lu,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,41,0,False,27,1,0,0,0,0,0,,63,,0,0
 1242754,Junwei Lu,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,played,41,0,False,17,0,0,0,0,0,0,,73,,0,0
 1242754,Junwei Lu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2753,9 +2714,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1242754,Junwei Lu,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
 1242754,Junwei Lu,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1242754,Junwei Lu,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played,41,0,False,36,1,0,0,0,0,0,,54,,0,0
-1242754,Junwei Lu,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,41,0,False,11,0,0,0,0,0,0,,79,,0,0
-1242754,Junwei Lu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
-1282891,Yuxuan Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1282891,Yuxuan Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,3182,home,65791,3,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1282891,Yuxuan Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046685,30,115121,away,116467,1,1,played,43,0,False,45,0,0,0,0,0,0,,,46,0,0
 1282891,Yuxuan Wang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046683,29,115121,home,119083,3,2,played,43,0,False,90,0,0,0,0,0,0,,,,0,0
 1282891,Yuxuan Wang,2026-10-26T07:30:00+00:00,2025,CH3P,3,False,5046676,28,115121,home,36881,2,1,played,43,0,False,68,0,0,0,0,0,0,,,68,0,0
 1282891,Yuxuan Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,3182,away,70657,5,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2771,8 +2731,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1282891,Yuxuan Wang,2026-08-28T11:35:00+00:00,2025,CSL,1,False,4827910,25,3182,away,3183,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282891,Yuxuan Wang,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,3182,away,70662,0,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1282891,Yuxuan Wang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841091,22,115121,away,54432,2,2,played,43,0,False,90,0,0,0,0,0,0,,,,0,0
-1282891,Yuxuan Wang,2026-08-15T11:00:00+00:00,2025,CHL3,3,False,4841085,21,115121,home,137958,0,1,played,43,0,False,90,0,0,0,0,0,0,,,,0,0
-1282891,Yuxuan Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,3182,home,8536,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 563419,Jiaqi Han,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,3176,home,99249,1,0,played,22,0,False,1,0,0,0,0,0,0,,90,,0,0
 563419,Jiaqi Han,2026-11-03T12:15:00+00:00,2026,ACLE,10,False,5021819,4,3176,away,27092,4,7,injured,,,False,0,0,0,0,0,0,0,,,,260,0
 563419,Jiaqi Han,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,3176,home,6502,2,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2848,6 +2806,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 966946,Shaoziyang Liu,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827900,24,3176,home,93753,3,3,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 966946,Shaoziyang Liu,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3176,away,3183,3,0,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 966946,Shaoziyang Liu,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3176,away,3187,4,2,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
+340521,Gui Ramos,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,3176,home,99249,1,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+340521,Gui Ramos,2026-11-03T12:15:00+00:00,2026,ACLE,10,False,5021819,4,3176,away,27092,4,7,played,5,3,False,58,0,0,0,0,0,0,,,,0,0
 340521,Gui Ramos,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,3176,home,6502,2,2,played,5,3,False,90,0,0,2,0,2,0,,,,0,0
 340521,Gui Ramos,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827947,29,3176,away,9982,4,3,played,5,3,False,90,0,0,1,1,0,0,,,,0,0
 340521,Gui Ramos,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,3176,home,70662,1,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -2998,7 +2958,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 839306,Wenhao Jiang,2026-09-05T07:30:00+00:00,2025,CLO,2,False,4838987,22,108084,home,45500,2,1,played,27,0,False,23,0,0,0,0,0,0,,67,,0,0
 839306,Wenhao Jiang,2026-08-29T11:00:00+00:00,2025,CLO,2,False,4838977,21,108084,home,73135,3,1,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 839306,Wenhao Jiang,2026-08-22T11:30:00+00:00,2025,CLO,2,False,4838971,20,108084,away,46487,1,4,played,27,0,False,17,0,0,0,0,0,0,,73,,0,0
-839306,Wenhao Jiang,2026-08-14T11:30:00+00:00,2025,CLO,2,False,4838963,19,108084,home,4768,2,1,played,27,0,False,10,0,0,1,0,1,0,,80,,0,0
 211060,Lei Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,3176,home,99249,1,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 211060,Lei Li,2026-11-03T12:15:00+00:00,2026,ACLE,10,False,5021819,4,3176,away,27092,4,7,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 211060,Lei Li,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,3176,home,6502,2,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3083,11 +3042,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 649017,Boubacar Konté,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827900,24,3176,home,93753,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 649017,Boubacar Konté,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3176,away,3183,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 649017,Boubacar Konté,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3176,away,3187,4,2,played,8,7,False,90,0,0,0,0,0,0,52,,,0,0
+147359,Jeremy Dudziak,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,3176,home,99249,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+147359,Jeremy Dudziak,2026-11-03T12:15:00+00:00,2026,ACLE,10,False,5021819,4,3176,away,27092,4,7,played,28,12,False,63,0,1,0,0,0,0,,,63,0,0
 147359,Jeremy Dudziak,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,3176,home,6502,2,2,played,28,8,False,66,1,0,2,1,0,1,,,66,0,0
 147359,Jeremy Dudziak,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827947,29,3176,away,9982,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 147359,Jeremy Dudziak,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,3176,home,70662,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 147359,Jeremy Dudziak,2026-10-13T12:15:00+00:00,2026,ACLE,10,False,5021787,2,3176,away,25449,1,0,played,28,8,False,60,0,0,1,0,1,0,,,60,0,0
 147359,Jeremy Dudziak,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827925,27,3176,away,8536,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+147359,Jeremy Dudziak,2026-10-03T09:00:00+00:00,2026,FS,11,True,5049391,3,5710,away,21102,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+147359,Jeremy Dudziak,2026-09-30T09:00:00+00:00,2026,FS,11,True,5049390,5,5710,neutral,20794,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+147359,Jeremy Dudziak,2026-09-27T15:00:00+00:00,2026,FS,11,True,5049389,1,5710,away,21233,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 147359,Jeremy Dudziak,2026-09-15T12:15:00+00:00,2026,ACLE,10,False,5021649,1,3176,home,311,3,1,played,28,8,False,82,1,0,1,1,0,0,,,82,0,0
 147359,Jeremy Dudziak,2026-09-05T11:35:00+00:00,2025,CSL,1,False,4827914,26,3176,away,27190,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 147359,Jeremy Dudziak,2026-09-01T11:35:00+00:00,2025,CHFA,8,False,5039641,10,3176,home,50971,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3165,7 +3129,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 252282,Zhongguo Chi,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827900,24,3176,home,93753,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 252282,Zhongguo Chi,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3176,away,3183,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 252282,Zhongguo Chi,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3176,away,3187,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1251747,Jia'ao Wei,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,27839,home,125741,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1251747,Jia'ao Wei,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,27839,home,125741,0,3,played,18,0,False,84,0,0,0,0,0,0,,,84,0,0
 1251747,Jia'ao Wei,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,27839,away,125740,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1251747,Jia'ao Wei,2026-10-24T07:30:00+00:00,2025,CH3R,3,False,5046708,28,27839,home,108134,2,2,played,18,0,False,78,0,0,0,0,0,0,,,78,0,0
 1251747,Jia'ao Wei,2026-10-17T11:00:00+00:00,2025,CH3R,3,False,5047063,27,27839,away,94364,1,1,played,18,0,False,86,0,0,0,0,0,0,,,86,0,0
@@ -3259,6 +3223,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1569205,Kangyue Chen,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827900,24,3176,home,93753,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1569205,Kangyue Chen,2026-08-18T11:35:00+00:00,2025,CSL,1,False,4827842,18,3176,away,3183,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1569205,Kangyue Chen,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3176,away,3187,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+435208,Béni Nkololo,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,3176,home,99249,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+435208,Béni Nkololo,2026-11-03T12:15:00+00:00,2026,ACLE,10,False,5021819,4,3176,away,27092,4,7,played,20,14,False,77,0,0,0,0,0,0,,,77,0,0
 435208,Béni Nkololo,2026-10-27T12:15:00+00:00,2026,ACLE,10,False,5021803,3,3176,home,6502,2,2,played,20,14,False,90,0,0,2,0,1,1,,,,0,0
 435208,Béni Nkololo,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827947,29,3176,away,9982,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 435208,Béni Nkololo,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,3176,home,70662,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3418,7 +3384,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 509007,Peng Peng,2026-09-05T12:00:00+00:00,2025,CSL,1,False,4827916,26,51120,away,3182,1,1,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
 509007,Peng Peng,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,51120,home,27190,0,1,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
 509007,Peng Peng,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,51120,home,17276,1,1,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
-509007,Peng Peng,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,51120,away,50973,2,1,played,13,1,False,90,0,0,0,0,0,0,,,,0,0
 587304,Minzhe Wei,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 587304,Minzhe Wei,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 587304,Minzhe Wei,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3429,6 +3394,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 587304,Minzhe Wei,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,51120,away,50973,2,1,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 587304,Minzhe Wei,2026-08-07T11:35:00+00:00,2025,CSL,1,False,4827880,22,51120,away,3176,0,4,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 587304,Minzhe Wei,2026-08-02T12:00:00+00:00,2025,CSL,1,False,4827874,21,51120,home,99249,2,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+740501,Gabriel Xavier,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,played,3,3,False,90,0,0,0,0,0,0,45,,,0,0
 740501,Gabriel Xavier,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
 740501,Gabriel Xavier,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,played,3,3,False,90,0,0,2,0,1,1,,,,0,0
 740501,Gabriel Xavier,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827921,27,51120,home,9982,2,2,played,3,3,False,90,0,0,2,0,2,0,,,,0,0
@@ -3438,7 +3404,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 740501,Gabriel Xavier,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,51120,away,50973,2,1,played,3,3,False,90,0,0,2,0,2,0,,,,0,0
 740501,Gabriel Xavier,2026-08-07T11:35:00+00:00,2025,CSL,1,False,4827880,22,51120,away,3176,0,4,played,3,3,False,90,0,0,2,0,0,2,,,,0,0
 740501,Gabriel Xavier,2026-08-02T12:00:00+00:00,2025,CSL,1,False,4827874,21,51120,home,99249,2,0,played,3,3,False,90,0,0,0,0,0,0,,,,0,0
-740501,Gabriel Xavier,2026-07-26T11:00:00+00:00,2025,CSL,1,False,4827860,20,51120,away,93753,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1376993,Haonan Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1376993,Haonan Zhang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1376993,Haonan Zhang,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3588,7 +3553,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 522543,Wai-Tsun Dai,2026-09-05T12:00:00+00:00,2025,CSL,1,False,4827916,26,51120,away,3182,1,1,played,10,14,False,88,1,0,2,2,0,0,,,88,0,0
 522543,Wai-Tsun Dai,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,51120,home,27190,0,1,played,10,14,False,58,0,0,0,0,0,0,,,58,0,0
 522543,Wai-Tsun Dai,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,51120,home,17276,1,1,played,10,14,False,57,0,0,1,0,1,0,,,57,0,0
-522543,Wai-Tsun Dai,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,51120,away,50973,2,1,played,10,0,False,33,0,0,0,0,0,0,,57,90,0,0
 1252393,Menghui Yu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
 1252393,Menghui Yu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
 1252393,Menghui Yu,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3622,7 +3586,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 316083,Junsheng Yao,2026-09-05T12:00:00+00:00,2025,CSL,1,False,4827916,26,51120,away,3182,1,1,played,6,6,False,88,0,0,2,0,1,1,,,88,0,0
 316083,Junsheng Yao,2026-08-28T12:00:00+00:00,2025,CSL,1,False,4827906,25,51120,home,27190,0,1,played,6,10,False,58,0,0,0,0,0,0,,,58,0,0
 316083,Junsheng Yao,2026-08-22T11:35:00+00:00,2025,CSL,1,False,4827899,24,51120,home,17276,1,1,played,6,0,False,3,0,0,1,0,0,1,,87,,0,0
-316083,Junsheng Yao,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,51120,away,50973,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 448423,Long Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 448423,Long Li,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,played,14,0,False,7,0,0,0,0,0,0,,83,,0,0
 448423,Long Li,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
@@ -3717,7 +3680,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1054689,Shahzat Ghojaehmet,2026-09-05T07:30:00+00:00,2025,CLO,2,False,4838987,22,108084,home,45500,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1054689,Shahzat Ghojaehmet,2026-08-29T11:00:00+00:00,2025,CLO,2,False,4838977,21,108084,home,73135,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1054689,Shahzat Ghojaehmet,2026-08-22T11:30:00+00:00,2025,CLO,2,False,4838971,20,108084,away,46487,1,4,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
-1054689,Shahzat Ghojaehmet,2026-08-14T11:30:00+00:00,2025,CLO,2,False,4838963,19,108084,home,4768,2,1,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 655560,Dalong Xia,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,51120,away,8536,2,2,played,29,0,False,40,0,0,3,2,1,0,,50,,0,0
 655560,Dalong Xia,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827948,29,51120,home,3183,2,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 655560,Dalong Xia,2026-10-17T11:00:00+00:00,2025,CSL,1,False,4827937,28,51120,away,98080,1,3,played,29,0,False,11,0,0,0,0,0,0,,79,,0,0
@@ -3771,6 +3733,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 946197,Weifeng Ran,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,65791,away,17276,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 946197,Weifeng Ran,2026-08-08T12:00:00+00:00,2025,CSL,1,False,4827884,22,65791,away,93753,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 946197,Weifeng Ran,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,65791,home,70657,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1252394,Haochen Peng,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,played,55,0,True,90,0,0,0,0,0,0,,,,0,0
 1252394,Haochen Peng,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,played,55,0,True,90,0,0,0,0,0,0,,,,0,0
 1252394,Haochen Peng,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,played,55,0,True,90,0,0,0,0,0,0,,,,0,0
 1252394,Haochen Peng,2026-10-18T11:35:00+00:00,2025,CH3R,3,False,5047066,27,125740,home,54432,1,3,played,55,0,True,90,0,0,0,0,0,0,,,,0,0
@@ -3780,7 +3743,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1252394,Haochen Peng,2026-09-12T11:30:00+00:00,2025,CH3R,3,False,5046712,23,125740,away,54432,1,1,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 1252394,Haochen Peng,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841340,22,125740,home,36881,0,1,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 1252394,Haochen Peng,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841335,21,125740,away,116467,0,0,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
-1252394,Haochen Peng,2026-08-08T11:35:00+00:00,2025,CL3S,3,False,4841329,20,125740,home,56198,3,2,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 288721,Egor Sorokin,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,played,28,3,False,90,0,0,1,0,1,0,,,,0,0
 288721,Egor Sorokin,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,65791,home,98080,0,1,played,28,3,False,90,0,0,1,0,1,0,,,,0,0
 288721,Egor Sorokin,2026-10-18T12:00:00+00:00,2025,CSL,1,False,4827943,28,65791,away,27190,0,3,played,28,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -3875,6 +3837,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 267531,Yanfeng Dong,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,65791,away,17276,3,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 267531,Yanfeng Dong,2026-08-08T12:00:00+00:00,2025,CSL,1,False,4827884,22,65791,away,93753,0,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 267531,Yanfeng Dong,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,65791,home,70657,1,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+1252402,Siliang Chen,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,played,53,0,False,80,0,0,0,0,0,0,,,80,0,0
 1252402,Siliang Chen,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,played,53,0,False,90,0,0,0,0,0,0,,,,0,0
 1252402,Siliang Chen,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,played,53,0,False,35,0,0,0,0,0,0,,55,,0,0
 1252402,Siliang Chen,2026-10-18T11:35:00+00:00,2025,CH3R,3,False,5047066,27,125740,home,54432,1,3,played,53,0,False,7,0,0,0,0,0,0,,83,,0,0
@@ -3884,8 +3847,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1252402,Siliang Chen,2026-09-12T11:30:00+00:00,2025,CH3R,3,False,5046712,23,125740,away,54432,1,1,played,53,0,False,45,0,0,0,0,0,0,,46,,0,0
 1252402,Siliang Chen,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841340,22,125740,home,36881,0,1,in squad,53,,False,0,0,0,0,0,0,0,,,,0,0
 1252402,Siliang Chen,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841335,21,125740,away,116467,0,0,played,53,0,False,7,0,0,0,0,0,0,87,83,,0,0
-1252402,Siliang Chen,2026-08-08T11:35:00+00:00,2025,CL3S,3,False,4841329,20,125740,home,56198,3,2,played,53,0,False,1,0,0,0,0,0,0,,89,,0,0
-1252410,Ziteng Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1252410,Ziteng Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1252410,Ziteng Wang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,played,59,0,False,90,0,0,0,0,0,0,,,,0,0
 1252410,Ziteng Wang,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,played,59,0,False,90,0,0,0,0,0,0,,,,0,0
 1252410,Ziteng Wang,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,played,59,0,False,90,0,0,0,0,0,0,,,,0,0
 1252410,Ziteng Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,65791,home,98080,0,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3959,7 +3922,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 269035,Chao Gan,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,65791,away,17276,3,2,played,39,0,False,13,0,0,1,0,0,1,,77,,0,0
 269035,Chao Gan,2026-08-08T12:00:00+00:00,2025,CSL,1,False,4827884,22,65791,away,93753,0,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
 269035,Chao Gan,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,65791,home,70657,1,1,in squad,39,,False,0,0,0,0,0,0,0,,,,0,0
-1252411,Moyu Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1252411,Moyu Li,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1252411,Moyu Li,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,played,48,0,False,90,0,0,0,0,0,0,,,,0,0
 1252411,Moyu Li,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,played,48,0,False,90,1,0,0,0,0,0,,,,0,0
 1252411,Moyu Li,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,played,48,0,False,90,0,0,0,0,0,0,,,,0,0
 1252411,Moyu Li,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,65791,home,98080,0,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4106,7 +4070,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 212191,Issa Kallon,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827892,23,65791,away,17276,3,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 212191,Issa Kallon,2026-08-08T12:00:00+00:00,2025,CSL,1,False,4827884,22,65791,away,93753,0,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 212191,Issa Kallon,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,65791,home,70657,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-1129592,Ezimet Qeyser,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1129592,Ezimet Qeyser,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827957,30,65791,away,3182,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1129592,Ezimet Qeyser,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046688,30,125740,away,53326,2,0,played,45,0,False,90,1,0,0,0,0,0,,,,0,0
 1129592,Ezimet Qeyser,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046696,29,125740,home,27839,1,1,played,45,0,False,90,0,0,0,0,0,0,,,,0,0
 1129592,Ezimet Qeyser,2026-10-24T08:00:00+00:00,2025,CH3R,3,False,5046704,28,125740,away,94345,1,3,played,45,0,False,80,0,0,0,0,0,0,,,80,0,0
 1129592,Ezimet Qeyser,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827945,29,65791,home,98080,0,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4703,7 +4668,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 363791,Binbin Chen,2026-09-06T11:35:00+00:00,2025,CSL,1,False,4827918,26,50973,away,93753,0,5,played,11,0,False,7,0,0,0,0,0,0,,83,,0,0
 363791,Binbin Chen,2026-08-29T11:35:00+00:00,2025,CSL,1,False,4827909,25,50973,away,65791,1,2,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 363791,Binbin Chen,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,50973,home,9982,4,4,played,11,9,False,45,0,0,1,0,1,0,,,46,0,0
-363791,Binbin Chen,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,50973,home,51120,1,2,played,11,9,False,65,0,0,0,0,0,0,,,65,0,0
 571341,Yuda Tian,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,50973,away,27190,1,6,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 571341,Yuda Tian,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,50973,home,17276,2,4,played,17,0,False,5,0,0,0,0,0,0,,85,,0,0
 571341,Yuda Tian,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,50973,away,8536,4,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4715,7 +4679,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 571341,Yuda Tian,2026-09-06T11:35:00+00:00,2025,CSL,1,False,4827918,26,50973,away,93753,0,5,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 571341,Yuda Tian,2026-08-29T11:35:00+00:00,2025,CSL,1,False,4827909,25,50973,away,65791,1,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 571341,Yuda Tian,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,50973,home,9982,4,4,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-571341,Yuda Tian,2026-08-15T11:00:00+00:00,2025,CSL,1,False,4827891,23,50973,home,51120,1,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 810621,Zihan Gui,2026-11-07T06:30:00+00:00,2025,CLO,2,False,4839054,30,85923,home,4768,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 810621,Zihan Gui,2026-10-31T06:30:00+00:00,2025,CLO,2,False,4839044,29,85923,away,98029,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 810621,Zihan Gui,2026-10-25T11:00:00+00:00,2025,CLO,2,False,4839038,28,85923,home,108084,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4729,7 +4692,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 810621,Zihan Gui,2026-09-05T11:00:00+00:00,2025,CLO,2,False,4838985,22,85923,home,73135,2,0,played,22,4,False,90,0,0,0,0,0,0,,,90,0,0
 810621,Zihan Gui,2026-08-29T11:30:00+00:00,2025,CLO,2,False,4838980,21,85923,away,85480,0,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 810621,Zihan Gui,2026-08-22T11:00:00+00:00,2025,CLO,2,False,4838969,20,85923,away,57778,1,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
-810621,Zihan Gui,2026-08-15T11:00:00+00:00,2025,CLO,2,False,4838962,19,85923,home,107713,0,3,played,22,0,False,20,0,0,0,0,0,0,,70,,0,0
 224622,Yifeng Zang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827952,30,50973,away,27190,1,6,played,14,0,False,25,0,0,0,0,0,0,,65,,0,0
 224622,Yifeng Zang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827949,29,50973,home,17276,2,4,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 224622,Yifeng Zang,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,50973,away,8536,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4765,7 +4727,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1068103,Haoyang Yao,2026-09-02T12:00:00+00:00,2025,CHFA,8,False,5039643,10,99249,away,93753,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1068103,Haoyang Yao,2026-08-29T12:00:00+00:00,2025,CSL,1,False,4827912,25,99249,away,9982,1,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
 1068103,Haoyang Yao,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-1068103,Haoyang Yao,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1239342,Zitong Wu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 1239342,Zitong Wu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
 1239342,Zitong Wu,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4866,7 +4827,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 890082,Xuheng Huang,2026-09-13T11:00:00+00:00,2025,CH3R,3,False,5046716,23,53326,home,108134,1,0,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 890082,Xuheng Huang,2026-08-22T08:00:00+00:00,2025,CHL3,3,False,4841086,22,53326,away,115122,0,2,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 890082,Xuheng Huang,2026-08-19T11:30:00+00:00,2025,CHL3,3,False,4841079,20,53326,away,54432,1,1,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
-890082,Xuheng Huang,2026-08-15T08:00:00+00:00,2025,CHL3,3,False,4841083,21,53326,home,94351,1,0,played,55,0,False,90,0,0,0,0,0,0,,,,0,0
 156506,Pengxiang Jin,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 156506,Pengxiang Jin,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 156506,Pengxiang Jin,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4887,7 +4847,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1282889,Ruijie Yue,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,4,3,False,66,0,0,0,0,0,0,,,66,0,0
 1282889,Ruijie Yue,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 1282889,Ruijie Yue,2026-08-09T11:35:00+00:00,2025,CSL,1,False,4827886,22,99249,home,27190,2,3,played,4,3,False,58,0,0,0,0,0,0,,,58,0,0
-1508793,Haowen Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046686,30,94351,away,36881,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1508793,Haowen Wang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046686,30,94351,away,36881,1,3,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 1508793,Haowen Wang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046681,29,94351,home,107764,1,1,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 1508793,Haowen Wang,2026-10-24T08:00:00+00:00,2025,CH3P,3,False,5046677,28,94351,away,116467,0,1,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 1508793,Haowen Wang,2026-10-17T07:00:00+00:00,2025,CH3P,3,False,5046673,27,94351,home,119083,1,0,played,24,0,False,1,0,0,0,0,0,0,,89,,0,0
@@ -4959,7 +4919,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 839313,Yujun Ma,2026-09-05T11:30:00+00:00,2025,CLO,2,False,4838988,22,57778,away,54134,0,0,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
 839313,Yujun Ma,2026-08-30T11:00:00+00:00,2025,CLO,2,False,4838982,21,57778,home,46487,3,2,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
 839313,Yujun Ma,2026-08-22T11:00:00+00:00,2025,CLO,2,False,4838969,20,57778,home,85923,2,1,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
-839313,Yujun Ma,2026-08-15T10:00:00+00:00,2025,CLO,2,False,4838961,19,57778,away,73135,1,3,in squad,42,,False,0,0,0,0,0,0,0,,,,0,0
+311489,Landry Dimata,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,11,0,False,45,0,0,0,0,0,0,,46,,0,0
 311489,Landry Dimata,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,11,14,False,52,1,0,1,1,0,0,,,52,0,0
 311489,Landry Dimata,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,played,11,14,False,83,0,1,1,0,0,1,,,83,0,0
 311489,Landry Dimata,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827928,27,99249,home,3182,1,1,played,11,14,False,82,0,0,0,0,0,0,,,82,0,0
@@ -4969,7 +4929,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 311489,Landry Dimata,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,11,14,False,45,0,0,0,0,0,0,,,46,0,0
 311489,Landry Dimata,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,11,0,False,36,0,0,1,0,1,0,,54,,0,0
 311489,Landry Dimata,2026-08-09T11:35:00+00:00,2025,CSL,1,False,4827886,22,99249,home,27190,2,3,played,11,14,False,90,0,1,1,0,1,0,,,,0,0
-311489,Landry Dimata,2026-08-02T12:00:00+00:00,2025,CSL,1,False,4827874,21,99249,away,51120,0,2,played,11,14,False,90,0,0,0,0,0,0,87,,,0,0
+687846,Alexandru Cîmpanu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,9,0,False,45,0,0,3,1,2,0,,46,,0,0
 687846,Alexandru Cîmpanu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,9,8,False,78,1,0,4,3,1,0,,,78,0,0
 687846,Alexandru Cîmpanu,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,played,9,8,False,90,1,0,1,1,0,0,,,,0,0
 687846,Alexandru Cîmpanu,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827928,27,99249,home,3182,1,1,played,9,8,False,82,0,1,0,0,0,0,,,82,0,0
@@ -4979,7 +4939,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 687846,Alexandru Cîmpanu,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,9,8,False,45,0,0,3,0,3,0,,,46,0,0
 687846,Alexandru Cîmpanu,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,9,8,False,78,0,0,4,1,2,1,,,78,0,0
 687846,Alexandru Cîmpanu,2026-08-09T11:35:00+00:00,2025,CSL,1,False,4827886,22,99249,home,27190,2,3,played,9,8,False,80,0,0,1,0,1,0,,,80,0,0
-687846,Alexandru Cîmpanu,2026-08-02T12:00:00+00:00,2025,CSL,1,False,4827874,21,99249,away,51120,0,2,played,9,0,False,45,0,0,2,0,1,1,,46,,0,0
 1299726,Jiale Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,21,8,False,45,0,0,0,0,0,0,,,46,0,0
 1299726,Jiale Liu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,21,0,False,12,0,0,1,0,0,1,,78,,0,0
 1299726,Jiale Liu,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4990,6 +4949,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1299726,Jiale Liu,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1299726,Jiale Liu,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1299726,Jiale Liu,2026-08-09T11:35:00+00:00,2025,CSL,1,False,4827886,22,99249,home,27190,2,3,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
+1012801,Yuezheng Du,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,19,14,False,45,0,0,0,0,0,0,,,46,0,0
 1012801,Yuezheng Du,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,19,0,False,38,0,0,3,1,1,1,,52,,0,0
 1012801,Yuezheng Du,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,played,19,0,False,14,0,0,0,0,0,0,,76,,0,0
 1012801,Yuezheng Du,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827928,27,99249,home,3182,1,1,played,19,0,False,8,0,0,1,0,1,0,90,82,,0,0
@@ -5001,7 +4961,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1012801,Yuezheng Du,2026-09-02T12:00:00+00:00,2025,CHFA,8,False,5039643,10,99249,away,93753,0,1,played,19,0,False,12,0,0,0,0,0,0,,78,,0,0
 1012801,Yuezheng Du,2026-08-29T12:00:00+00:00,2025,CSL,1,False,4827912,25,99249,away,9982,1,1,played,19,14,False,57,0,0,1,0,0,1,,,57,0,0
 1012801,Yuezheng Du,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,19,0,False,45,0,0,2,1,0,1,,46,,0,0
-1012801,Yuezheng Du,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,19,14,False,54,0,0,2,0,1,1,,,54,0,0
 1136184,Yuwang Xiang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,7,0,False,14,0,0,1,1,0,0,,76,,0,0
 1136184,Yuwang Xiang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,7,14,True,78,0,1,3,2,0,1,,,78,0,0
 1136184,Yuwang Xiang,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,played,7,14,True,76,0,0,2,0,0,2,,,76,0,0
@@ -5017,7 +4976,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1136184,Yuwang Xiang,2026-09-02T12:00:00+00:00,2025,CHFA,8,False,5039643,10,99249,away,93753,0,1,played,7,0,False,25,0,0,1,0,1,0,,53,78,0,0
 1136184,Yuwang Xiang,2026-08-29T12:00:00+00:00,2025,CSL,1,False,4827912,25,99249,away,9982,1,1,played,7,14,True,90,0,0,0,0,0,0,,,,0,0
 1136184,Yuwang Xiang,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,7,9,True,79,0,0,0,0,0,0,,,79,0,0
-1136184,Yuwang Xiang,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,played,7,0,False,36,0,0,1,0,0,1,,54,,0,0
 491968,Chunxin Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,played,15,0,False,20,0,0,1,0,1,0,,70,,0,0
 491968,Chunxin Chen,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,played,15,0,False,29,0,0,1,1,0,0,,61,,0,0
 491968,Chunxin Chen,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5042,7 +5000,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 930159,Yu-Hei Ng,2026-09-02T12:00:00+00:00,2025,CHFA,8,False,5039643,10,99249,away,93753,0,1,played,17,9,False,53,0,0,3,0,2,1,,,53,0,0
 930159,Yu-Hei Ng,2026-08-29T12:00:00+00:00,2025,CSL,1,False,4827912,25,99249,away,9982,1,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 930159,Yu-Hei Ng,2026-08-23T12:00:00+00:00,2025,CSL,1,False,4827904,24,99249,home,98080,0,1,played,17,0,False,24,0,0,1,1,0,0,,66,,0,0
-930159,Yu-Hei Ng,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,99249,away,70662,0,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1239341,Yutao Bai,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827955,30,99249,away,3176,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1239341,Yutao Bai,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,99249,home,8536,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1239341,Yutao Bai,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827939,28,99249,away,93753,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5083,7 +5040,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1282886,Zihao Li,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282886,Zihao Li,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1282886,Zihao Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1125738,Jianqiu He,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1125738,Jianqiu He,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1125738,Jianqiu He,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,1,0,True,90,0,0,0,0,0,0,,,,0,0
 1125738,Jianqiu He,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,1,0,True,90,0,0,0,0,0,0,,,,0,0
 1125738,Jianqiu He,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,1,0,True,90,0,0,0,0,0,0,,,,0,0
 1125738,Jianqiu He,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5101,7 +5059,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1125738,Jianqiu He,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
 1125738,Jianqiu He,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1125738,Jianqiu He,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
-1125738,Jianqiu He,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 587423,Haofeng Xu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 587423,Haofeng Xu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,4,4,False,59,0,0,0,0,0,0,35,,59,0,0
 587423,Haofeng Xu,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,4,4,False,90,0,0,0,0,0,0,88,,,0,0
@@ -5122,7 +5079,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 448145,Shenyuan Li,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70657,home,70662,2,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 448145,Shenyuan Li,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 448145,Shenyuan Li,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-448145,Shenyuan Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 312368,Tian Ming,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,23,5,False,90,0,0,0,0,0,0,83,,,0,0
 312368,Tian Ming,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,23,5,False,90,0,0,1,0,1,0,,,,0,0
 312368,Tian Ming,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5178,7 +5134,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 257394,Yiming Liu,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70657,home,70662,2,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 257394,Yiming Liu,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,19,0,False,13,0,0,0,0,0,0,,77,,0,0
 257394,Yiming Liu,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
-257394,Yiming Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 236638,Guan He,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,2,3,True,90,0,0,0,0,0,0,,,,0,0
 236638,Guan He,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,2,3,True,90,1,0,1,1,0,0,51,,,0,0
 236638,Guan He,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,2,3,True,90,0,0,0,0,0,0,,,,0,0
@@ -5189,6 +5144,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 236638,Guan He,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,2,3,True,64,0,0,0,0,0,0,,,64,0,0
 236638,Guan He,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,2,3,True,45,0,0,1,1,0,0,,,46,0,0
 236638,Guan He,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,2,3,True,90,0,0,1,0,1,0,,,,0,0
+687743,Adriano Firmino,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,20,7,False,90,0,0,1,1,0,0,62,,,0,0
 687743,Adriano Firmino,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,20,7,False,90,0,0,1,0,1,0,,,,0,0
 687743,Adriano Firmino,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,20,7,False,90,0,0,2,1,0,1,,,,0,0
 687743,Adriano Firmino,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827927,27,70657,away,50973,1,1,played,20,7,False,90,0,0,1,0,1,0,84,,,0,0
@@ -5198,8 +5154,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 687743,Adriano Firmino,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,20,7,False,90,0,2,3,1,1,1,,,,0,0
 687743,Adriano Firmino,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,20,7,False,85,0,0,2,0,1,1,45,,85,0,0
 687743,Adriano Firmino,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,20,7,False,90,0,0,2,2,0,0,,,,0,0
-687743,Adriano Firmino,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,70657,away,65791,1,1,played,20,7,False,85,0,0,1,1,0,0,,,85,0,0
-1028329,Tianle Yu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1028329,Tianle Yu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1028329,Tianle Yu,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,35,0,False,19,0,0,0,0,0,0,,71,,0,0
 1028329,Tianle Yu,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,35,0,False,90,0,0,0,0,0,0,,,,0,0
 1028329,Tianle Yu,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,35,0,False,90,0,0,0,0,0,0,13,,,0,0
 1028329,Tianle Yu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5217,7 +5173,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1028329,Tianle Yu,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,35,0,False,90,0,0,0,0,0,0,,,,0,0
 1028329,Tianle Yu,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1028329,Tianle Yu,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,35,0,False,90,0,0,0,0,0,0,,,,0,0
-1028329,Tianle Yu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 279526,Wei Long,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 279526,Wei Long,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,6,0,False,22,0,0,0,0,0,0,,68,,0,0
 279526,Wei Long,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5243,7 +5198,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 267529,Zhechao Chen,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70657,home,70662,2,2,played,15,0,False,5,0,0,1,0,1,0,,85,,0,0
 267529,Zhechao Chen,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,15,0,False,13,0,0,0,0,0,0,,77,,0,0
 267529,Zhechao Chen,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
-267529,Zhechao Chen,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,15,0,False,24,0,0,0,0,0,0,,66,,0,0
 259686,Jinbao Zhong,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 259686,Jinbao Zhong,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 259686,Jinbao Zhong,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5254,7 +5208,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 259686,Jinbao Zhong,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 259686,Jinbao Zhong,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 259686,Jinbao Zhong,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1095612,Zixi Min,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1095612,Zixi Min,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1095612,Zixi Min,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,16,0,False,90,1,0,0,0,0,0,,,,0,0
 1095612,Zixi Min,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,16,0,False,90,0,0,0,0,0,0,,,,0,0
 1095612,Zixi Min,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,16,0,False,58,0,0,0,0,0,0,,,58,0,0
 1095612,Zixi Min,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5272,7 +5227,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1095612,Zixi Min,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,16,0,False,62,0,0,0,0,0,0,,,62,0,0
 1095612,Zixi Min,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1095612,Zixi Min,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1095612,Zixi Min,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 218291,Kaimu Zheng,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 218291,Kaimu Zheng,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 218291,Kaimu Zheng,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5301,8 +5255,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1266957,Halit Abdugheni,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,17,0,False,90,2,0,0,0,0,0,,,,0,0
 1266957,Halit Abdugheni,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1266957,Halit Abdugheni,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,17,0,False,45,0,0,0,0,0,0,,46,,0,0
-1266957,Halit Abdugheni,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
-1028333,Zihao Xia,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1028333,Zihao Xia,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1028333,Zihao Xia,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,27,0,False,90,0,0,0,0,0,0,,,,0,0
+1028333,Zihao Xia,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1028333,Zihao Xia,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,27,0,False,87,0,0,0,0,0,0,63,,87,0,0
 1028333,Zihao Xia,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1028333,Zihao Xia,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5319,7 +5274,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1028333,Zihao Xia,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,27,0,False,90,0,0,0,0,0,0,,,,0,0
 1028333,Zihao Xia,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1028333,Zihao Xia,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,27,0,False,90,0,0,0,0,0,0,,,,0,0
-1028333,Zihao Xia,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+271256,Jhonder Cádiz,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,29,14,False,90,1,0,7,1,4,2,,,,0,0
 271256,Jhonder Cádiz,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,29,0,False,45,2,0,7,3,2,2,,46,,0,0
 271256,Jhonder Cádiz,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,29,14,False,90,1,0,6,3,3,0,,,,0,0
 271256,Jhonder Cádiz,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827927,27,70657,away,50973,1,1,played,29,14,False,90,0,0,0,0,0,0,38,,,0,0
@@ -5331,7 +5286,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 271256,Jhonder Cádiz,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70657,home,70662,2,2,played,29,14,False,90,0,0,6,3,0,3,,,,0,0
 271256,Jhonder Cádiz,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,29,14,False,90,2,0,5,2,3,0,,,,0,0
 271256,Jhonder Cádiz,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,29,14,False,90,0,0,7,0,4,3,,,,0,0
-271256,Jhonder Cádiz,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,29,14,False,90,1,0,4,1,2,1,,,,0,0
+608430,Kilian Bevis,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,10,9,False,86,0,0,1,0,0,1,,,86,0,0
 608430,Kilian Bevis,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,10,9,False,90,0,0,2,0,2,0,,,,0,0
 608430,Kilian Bevis,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,10,9,False,90,0,0,1,1,0,0,,,,0,0
 608430,Kilian Bevis,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827927,27,70657,away,50973,1,1,played,10,9,False,87,0,0,0,0,0,0,,,87,0,0
@@ -5341,7 +5296,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 608430,Kilian Bevis,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,10,9,False,90,1,0,4,2,1,1,,,,0,0
 608430,Kilian Bevis,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,10,9,False,85,0,0,3,1,1,1,,,85,0,0
 608430,Kilian Bevis,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,10,9,False,90,0,1,1,1,0,0,,,,0,0
-608430,Kilian Bevis,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,70657,away,65791,1,1,played,10,11,False,90,0,0,5,2,3,0,,,,0,0
+467486,Antoine Leautey,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played,50,8,False,90,0,0,0,0,0,0,,,,0,0
 467486,Antoine Leautey,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played,50,8,False,90,0,2,0,0,0,0,,,,0,0
 467486,Antoine Leautey,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,50,0,False,45,0,1,1,1,0,0,,46,,0,0
 467486,Antoine Leautey,2026-10-11T11:35:00+00:00,2025,CSL,1,False,4827927,27,70657,away,50973,1,1,played,50,0,False,18,1,0,1,1,0,0,,72,,0,0
@@ -5351,7 +5306,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 467486,Antoine Leautey,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,played,50,8,False,77,0,0,0,0,0,0,,,77,0,0
 467486,Antoine Leautey,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,50,8,False,90,0,0,4,0,1,3,,,,0,0
 467486,Antoine Leautey,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,50,8,False,90,1,0,2,2,0,0,71,,,0,0
-467486,Antoine Leautey,2026-08-01T12:00:00+00:00,2025,CSL,1,False,4827873,21,70657,away,65791,1,1,played,50,0,False,24,0,0,0,0,0,0,,66,,0,0
 1281972,Zhengpeng Xu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1281972,Zhengpeng Xu,2026-11-01T17:15:00+00:00,2026,FS,11,True,5115740,18,26944,away,30403,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1281972,Zhengpeng Xu,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,54,0,False,29,0,0,0,0,0,0,,61,,0,0
@@ -5371,7 +5325,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1281972,Zhengpeng Xu,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,in squad,54,,False,0,0,0,0,0,0,0,,,,0,0
 1281972,Zhengpeng Xu,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1281972,Zhengpeng Xu,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,played,54,0,False,60,0,0,0,0,0,0,,,60,0,0
-1281972,Zhengpeng Xu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 336158,Gustavo Sauer,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 336158,Gustavo Sauer,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 336158,Gustavo Sauer,2026-10-18T10:00:00+00:00,2025,CSL,1,False,4827941,28,70657,home,3183,1,3,played,7,14,False,76,0,0,0,0,0,0,,,76,0,0
@@ -5412,7 +5365,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1184400,Jizheng Xiong,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,70657,away,8536,5,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1184400,Jizheng Xiong,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played,21,0,False,17,0,0,2,1,1,0,,73,,0,0
 1184400,Jizheng Xiong,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played,21,0,False,24,0,0,0,0,0,0,,66,,0,0
-1266952,Lixun Jiang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1266952,Lixun Jiang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827954,30,70657,away,93753,1,2,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
+1266952,Lixun Jiang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046695,30,125741,away,27839,3,0,played,24,0,False,90,1,0,0,0,0,0,,,,0,0
 1266952,Lixun Jiang,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046700,29,125741,home,53326,0,1,played,24,0,False,90,0,0,0,0,0,0,,,,0,0
 1266952,Lixun Jiang,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046710,28,125741,away,54432,0,3,played,24,0,False,77,0,0,0,0,0,0,,,77,0,0
 1266952,Lixun Jiang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827946,29,70657,home,3182,3,5,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5430,7 +5384,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1266952,Lixun Jiang,2026-08-23T11:30:00+00:00,2025,CL3S,3,False,4841342,22,125741,home,94364,4,0,played,24,0,False,87,0,0,0,0,0,0,,,87,0,0
 1266952,Lixun Jiang,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,70657,home,3187,0,0,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 1266952,Lixun Jiang,2026-08-16T11:30:00+00:00,2025,CL3S,3,False,4841332,21,125741,away,99488,0,3,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
-1266952,Lixun Jiang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827889,23,70657,home,27190,2,3,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
 625273,Bingliang Yan,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,3187,away,98080,1,3,played,25,1,False,90,0,0,0,0,0,0,,,,0,0
 625273,Bingliang Yan,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,3187,home,27190,1,3,played,25,1,False,90,0,0,0,0,0,0,,,,0,0
 625273,Bingliang Yan,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,3187,away,9982,1,0,played,25,1,False,90,0,0,0,0,0,0,83,,,0,0
@@ -5454,6 +5407,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 468278,Yuxi Qi,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,3187,away,70657,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 468278,Yuxi Qi,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3187,home,3176,2,4,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 468278,Yuxi Qi,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3187,away,3182,1,2,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
+350197,Aitor Córdoba,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,3187,away,98080,1,3,played,18,3,False,90,0,0,1,1,0,0,,,,0,0
 350197,Aitor Córdoba,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,3187,home,27190,1,3,played,18,3,False,90,0,0,1,1,0,0,,,,0,0
 350197,Aitor Córdoba,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,3187,away,9982,1,0,played,18,3,False,90,0,0,0,0,0,0,,,,0,0
 350197,Aitor Córdoba,2026-10-10T11:35:00+00:00,2025,CSL,1,False,4827924,27,3187,away,65791,1,0,played,18,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -5463,7 +5417,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 350197,Aitor Córdoba,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,3187,away,70657,0,0,played,18,3,False,90,0,0,0,0,0,0,,,,0,0
 350197,Aitor Córdoba,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3187,home,3176,2,4,played,18,3,False,90,0,0,1,0,1,0,,,,0,0
 350197,Aitor Córdoba,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3187,away,3182,1,2,played,18,3,False,90,0,0,0,0,0,0,,,,0,0
-350197,Aitor Córdoba,2026-08-01T11:00:00+00:00,2025,CSL,1,False,4827870,21,3187,home,93753,3,2,played,18,3,False,90,0,0,1,0,1,0,,,,0,0
 1267201,Haoran Zhang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,3187,away,98080,1,3,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 1267201,Haoran Zhang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,3187,home,27190,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1267201,Haoran Zhang,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,3187,away,9982,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5670,6 +5623,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1390298,Ninglin Naibo,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,3187,away,70657,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1390298,Ninglin Naibo,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3187,home,3176,2,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1390298,Ninglin Naibo,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3187,away,3182,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+371245,Guilherme Schettine,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,3187,away,98080,1,3,played,7,14,False,90,0,0,1,1,0,0,,,,0,0
 371245,Guilherme Schettine,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,3187,home,27190,1,3,played,7,14,False,81,0,0,0,0,0,0,,,81,0,0
 371245,Guilherme Schettine,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,3187,away,9982,1,0,played,7,14,False,72,1,0,3,2,1,0,,,72,0,0
 371245,Guilherme Schettine,2026-10-10T11:35:00+00:00,2025,CSL,1,False,4827924,27,3187,away,65791,1,0,played,7,0,False,57,0,0,0,0,0,0,,33,,0,0
@@ -5679,7 +5633,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 371245,Guilherme Schettine,2026-08-22T11:00:00+00:00,2025,CSL,1,False,4827897,24,3187,away,70657,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 371245,Guilherme Schettine,2026-08-15T11:35:00+00:00,2025,CSL,1,False,4827893,23,3187,home,3176,2,4,played,7,14,False,62,0,0,1,0,0,1,,,62,0,0
 371245,Guilherme Schettine,2026-08-09T12:00:00+00:00,2025,CSL,1,False,4827887,22,3187,away,3182,1,2,played,7,14,False,66,0,0,1,0,1,0,,,66,0,0
-371245,Guilherme Schettine,2026-08-01T11:00:00+00:00,2025,CSL,1,False,4827870,21,3187,home,93753,3,2,played,7,14,False,68,0,0,5,1,2,2,,,68,0,0
 351541,Alberto Quiles,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827956,30,3187,away,98080,1,3,played,9,14,True,53,0,0,1,1,0,0,,,53,0,0
 351541,Alberto Quiles,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827944,29,3187,home,27190,1,3,played,9,14,False,90,0,1,2,1,1,0,,,,0,0
 351541,Alberto Quiles,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,3187,away,9982,1,0,played,9,14,False,90,0,0,0,0,0,0,,,,0,0
@@ -5975,6 +5928,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1265885,Ekber Osman,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,9982,away,50973,4,4,played,39,0,False,1,0,0,0,0,0,0,,90,,0,0
 1265885,Ekber Osman,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827895,23,9982,away,3183,1,4,played,39,0,False,26,0,0,0,0,0,0,,64,,0,0
 1265885,Ekber Osman,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,9982,home,70662,0,0,played,39,0,False,1,0,0,0,0,0,0,,89,,0,0
+642591,Maranhão,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,9982,away,17276,0,4,played,8,10,False,90,0,0,4,2,2,0,66,,,0,0
 642591,Maranhão,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827947,29,9982,home,3176,3,4,played,8,8,False,90,0,0,1,0,1,0,26,,,0,0
 642591,Maranhão,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,9982,home,3187,0,1,played,8,8,False,72,0,0,0,0,0,0,,,72,0,0
 642591,Maranhão,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827921,27,9982,away,51120,2,2,played,8,9,False,90,0,0,1,0,0,1,,,,0,0
@@ -5984,7 +5938,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 642591,Maranhão,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,9982,away,50973,4,4,played,8,8,False,90,0,0,5,2,3,0,,,90,0,0
 642591,Maranhão,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827895,23,9982,away,3183,1,4,played,8,8,False,86,0,0,2,1,0,1,,,86,0,0
 642591,Maranhão,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,9982,home,70662,0,0,played,8,8,False,90,0,0,0,0,0,0,,,,0,0
-642591,Maranhão,2026-07-31T11:35:00+00:00,2025,CSL,1,False,4827869,21,9982,home,98080,1,1,played,8,8,False,90,0,0,1,1,0,0,,,,0,0
 1520767,Hanyang Chen,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827958,30,9982,away,17276,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520767,Hanyang Chen,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827947,29,9982,home,3176,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520767,Hanyang Chen,2026-10-16T11:35:00+00:00,2025,CSL,1,False,4827936,28,9982,home,3187,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5995,6 +5948,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1520767,Hanyang Chen,2026-08-23T11:00:00+00:00,2025,CSL,1,False,4827902,24,9982,away,50973,4,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520767,Hanyang Chen,2026-08-15T12:00:00+00:00,2025,CSL,1,False,4827895,23,9982,away,3183,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1520767,Hanyang Chen,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,9982,home,70662,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+331498,Jordi Mboula,2026-11-07T15:00:00+00:00,2026,GR1,1,False,4973582,10,30120,away,60949,3,1,played,11,11,False,62,0,0,2,0,0,2,,,62,0,0
 331498,Jordi Mboula,2026-10-31T17:00:00+00:00,2026,GR1,1,False,4973574,9,30120,home,683,2,3,played,11,0,False,14,1,1,1,1,0,0,,76,,0,0
 331498,Jordi Mboula,2026-10-27T15:30:00+00:00,2026,GRP,8,False,5033910,4,30120,away,6676,2,0,played,11,11,False,64,1,0,0,0,0,0,,,64,0,0
 331498,Jordi Mboula,2026-10-24T16:00:00+00:00,2026,GR1,1,False,4973571,8,30120,away,47,3,2,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6085,7 +6039,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 788152,Hao Li,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70662,away,70657,2,2,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 788152,Hao Li,2026-08-29T11:00:00+00:00,2025,CSL,1,False,4827908,25,70662,away,3187,1,1,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 788152,Hao Li,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,70662,home,3182,2,0,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
-788152,Hao Li,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 363246,Shibo Liu,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,70662,away,3183,0,4,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 363246,Shibo Liu,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,70662,home,93753,1,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 363246,Shibo Liu,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,70662,away,3176,0,1,played,26,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -6126,6 +6079,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1521936,Ziquan Wang,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1521936,Ziquan Wang,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,70662,away,9982,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1521936,Ziquan Wang,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,70662,home,8536,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+411838,Bruno Viana,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,70662,away,3183,0,4,played,2,3,False,90,0,0,1,0,1,0,,,,0,0
 411838,Bruno Viana,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,70662,home,93753,1,1,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
 411838,Bruno Viana,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,70662,away,3176,0,1,played,2,3,False,90,0,0,1,0,0,1,,,,0,0
 411838,Bruno Viana,2026-10-11T10:00:00+00:00,2025,CSL,1,False,4827926,27,70662,home,98080,0,4,played,2,3,False,90,0,0,0,0,0,0,32,,,0,0
@@ -6135,7 +6089,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 411838,Bruno Viana,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
 411838,Bruno Viana,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,70662,away,9982,0,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 411838,Bruno Viana,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,70662,home,8536,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-411838,Bruno Viana,2026-07-25T11:35:00+00:00,2025,CSL,1,False,4827857,20,70662,away,50973,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 238595,Samir Memisevic,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,70662,away,3183,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 238595,Samir Memisevic,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,70662,home,93753,1,1,played,5,6,False,90,0,0,2,1,0,1,78,,,0,0
 238595,Samir Memisevic,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,70662,away,3176,0,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -6157,7 +6110,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1299727,Gengrui Wang,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70662,away,70657,2,2,played,22,4,False,83,0,0,0,0,0,0,,,83,0,0
 1299727,Gengrui Wang,2026-08-29T11:00:00+00:00,2025,CSL,1,False,4827908,25,70662,away,3187,1,1,played,22,4,False,84,0,0,1,0,0,1,,,84,0,0
 1299727,Gengrui Wang,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,70662,home,3182,2,0,played,22,4,False,80,0,0,0,0,0,0,,,80,0,0
-1299727,Gengrui Wang,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,played,22,4,False,82,0,0,0,0,0,0,,,82,0,0
 812537,Haoyu Song,2026-11-07T06:30:00+00:00,2025,CLO,2,False,4839053,30,85480,away,73135,1,1,played,12,5,False,60,0,0,0,0,0,0,41,,60,0,0
 812537,Haoyu Song,2026-10-31T06:30:00+00:00,2025,CLO,2,False,4839046,29,85480,home,107713,1,1,played,12,0,False,45,0,0,0,0,0,0,,46,,0,0
 812537,Haoyu Song,2026-10-24T11:30:00+00:00,2025,CLO,2,False,4839037,28,85480,home,41626,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6190,7 +6142,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 587421,Longhai He,2026-09-05T11:00:00+00:00,2025,CSL,1,False,4827913,26,70662,away,70657,2,2,played,20,0,False,21,0,0,1,0,1,0,,69,,0,0
 587421,Longhai He,2026-08-29T11:00:00+00:00,2025,CSL,1,False,4827908,25,70662,away,3187,1,1,played,20,0,False,6,0,0,0,0,0,0,,84,,0,0
 587421,Longhai He,2026-08-22T12:00:00+00:00,2025,CSL,1,False,4827901,24,70662,home,3182,2,0,played,20,0,False,10,0,0,0,0,0,0,,80,,0,0
-587421,Longhai He,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,played,20,0,False,8,0,0,0,0,0,0,,82,,0,0
 287567,Peng Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827953,30,70662,away,3183,0,4,played,15,3,False,77,0,0,1,0,0,1,,,77,0,0
 287567,Peng Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827951,29,70662,home,93753,1,1,played,15,3,False,90,0,0,1,1,0,0,,,,0,0
 287567,Peng Wang,2026-10-18T11:00:00+00:00,2025,CSL,1,False,4827942,28,70662,away,3176,0,1,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6403,7 +6354,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1478509,Weiwei Jia,2026-08-14T12:00:00+00:00,2025,CSL,1,False,4827890,23,70662,home,99249,0,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1478509,Weiwei Jia,2026-08-09T11:00:00+00:00,2025,CSL,1,False,4827885,22,70662,away,9982,0,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1478509,Weiwei Jia,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,70662,home,8536,2,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
-1514807,Xinyou Wang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046692,30,99488,home,50971,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1514807,Xinyou Wang,2026-11-07T06:30:00+00:00,2025,CH3R,3,False,5046692,30,99488,home,50971,0,1,played,17,0,False,90,0,0,0,0,0,0,,,,0,0
 1514807,Xinyou Wang,2026-10-31T06:30:00+00:00,2025,CH3R,3,False,5046697,29,99488,away,137958,2,1,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1514807,Xinyou Wang,2026-10-25T11:30:00+00:00,2025,CH3R,3,False,5046711,28,99488,home,99384,0,0,played,17,0,False,84,0,0,0,0,0,0,,,84,0,0
 1514807,Xinyou Wang,2026-10-17T07:30:00+00:00,2025,CH3R,3,False,5047064,27,99488,away,107467,1,1,played,17,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -6519,7 +6470,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 337524,Hailong Li,2026-09-05T11:35:00+00:00,2025,CSL,1,False,4827915,26,8536,away,98080,1,2,played,16,5,False,78,0,0,0,0,0,0,,,78,0,0
 337524,Hailong Li,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,8536,home,70657,1,5,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 337524,Hailong Li,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,8536,away,27190,1,2,played,16,5,False,81,0,0,0,0,0,0,,,81,0,0
-337524,Hailong Li,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,played,16,5,False,62,0,0,0,0,0,0,,,62,0,0
 281516,Qiao Wang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,played,17,5,False,86,0,0,0,0,0,0,,,86,0,0
 281516,Qiao Wang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 281516,Qiao Wang,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6530,7 +6480,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 281516,Qiao Wang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,played,17,0,False,28,0,0,0,0,0,0,,62,,0,0
 281516,Qiao Wang,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,played,17,0,False,20,0,0,0,0,0,0,,70,,0,0
 281516,Qiao Wang,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-254642,Wei Zhang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+254642,Wei Zhang,2026-11-08T06:30:00+00:00,2025,CH3P,3,False,5046687,30,115122,away,119083,0,1,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 254642,Wei Zhang,2026-11-01T06:30:00+00:00,2025,CH3P,3,False,5046680,29,115122,home,116467,0,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 254642,Wei Zhang,2026-10-23T07:30:00+00:00,2025,CH3P,3,False,5046675,28,115122,home,107764,2,3,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 254642,Wei Zhang,2026-10-17T11:30:00+00:00,2025,CH3P,3,False,5046672,27,115122,away,36881,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6590,6 +6540,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 211849,Jiashen Liu,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,played,33,0,False,22,0,0,0,0,0,0,,68,,0,0
 211849,Jiashen Liu,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 211849,Jiashen Liu,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
+468704,Malcom Edjouma,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 468704,Malcom Edjouma,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,played,6,7,False,90,0,0,1,0,0,1,,,,0,0
 468704,Malcom Edjouma,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,played,6,6,False,75,0,0,4,0,4,0,,,75,0,0
 468704,Malcom Edjouma,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827925,27,8536,home,3176,0,3,played,6,7,False,90,0,0,3,2,1,0,,,,0,0
@@ -6599,7 +6550,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 468704,Malcom Edjouma,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,played,6,7,False,90,0,0,4,1,3,0,,,,0,0
 468704,Malcom Edjouma,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,played,6,6,False,90,0,0,4,0,1,3,,,,0,0
 468704,Malcom Edjouma,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-468704,Malcom Edjouma,2026-07-25T09:30:00+00:00,2025,CSL,1,False,4827856,20,8536,home,3187,0,2,played,6,7,False,90,0,0,5,2,3,0,90,,,0,0
+257466,Lazar Tufegdzic,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 257466,Lazar Tufegdzic,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,played,32,14,False,45,0,0,0,0,0,0,,,46,0,0
 257466,Lazar Tufegdzic,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 257466,Lazar Tufegdzic,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827925,27,8536,home,3176,0,3,played,32,14,False,68,0,0,1,0,0,1,,,68,0,0
@@ -6609,7 +6560,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 257466,Lazar Tufegdzic,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 257466,Lazar Tufegdzic,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 257466,Lazar Tufegdzic,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-257466,Lazar Tufegdzic,2026-07-25T09:30:00+00:00,2025,CSL,1,False,4827856,20,8536,home,3187,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396517,Xinyang Yi,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396517,Xinyang Yi,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1396517,Xinyang Yi,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,played,52,0,False,21,0,0,0,0,0,0,,69,,0,0
@@ -6633,7 +6583,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 832658,Cheuk-Pan Ngan,2026-09-05T11:35:00+00:00,2025,CSL,1,False,4827915,26,8536,away,98080,1,2,played,24,0,False,12,0,0,0,0,0,0,,78,,0,0
 832658,Cheuk-Pan Ngan,2026-08-29T09:00:00+00:00,2025,CSL,1,False,4827911,25,8536,home,70657,1,5,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 832658,Cheuk-Pan Ngan,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,8536,away,27190,1,2,played,24,0,False,13,0,0,0,0,0,0,,77,,0,0
-832658,Cheuk-Pan Ngan,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 1043429,Zixian Wei,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,played,37,0,False,4,0,0,0,0,0,0,,86,,0,0
 1043429,Zixian Wei,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,played,37,5,False,90,0,0,0,0,0,0,,,,0,0
 1043429,Zixian Wei,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,played,37,5,False,90,0,0,1,0,1,0,,,,0,0
@@ -6735,6 +6684,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 252689,Carlos Strandberg,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,played,10,0,False,20,0,0,1,0,0,1,,70,,0,0
 252689,Carlos Strandberg,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,played,10,14,False,55,0,0,0,0,0,0,,,55,0,0
 1281957,Zhaolei Kuang,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1281957,Zhaolei Kuang,2026-11-01T17:15:00+00:00,2026,FS,11,True,5115740,18,26944,away,30403,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1281957,Zhaolei Kuang,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1281957,Zhaolei Kuang,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,played,27,0,False,45,0,0,0,0,0,0,,46,,0,0
 1281957,Zhaolei Kuang,2026-10-09T11:35:00+00:00,2025,CSL,1,False,4827925,27,8536,home,3176,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6743,7 +6693,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1281957,Zhaolei Kuang,2026-08-23T11:35:00+00:00,2025,CSL,1,False,4827903,24,8536,away,27190,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1281957,Zhaolei Kuang,2026-08-14T11:35:00+00:00,2025,CSL,1,False,4827888,23,8536,away,3182,1,3,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 1281957,Zhaolei Kuang,2026-08-08T11:00:00+00:00,2025,CSL,1,False,4827881,22,8536,home,3183,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1281957,Zhaolei Kuang,2026-08-02T10:00:00+00:00,2025,CSL,1,False,4827875,21,8536,away,70662,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 993650,Yonghao Jin,2026-11-08T07:30:00+00:00,2025,CSL,1,False,4827959,30,8536,home,51120,2,2,played,34,9,False,78,0,0,2,0,1,1,,,78,0,0
 993650,Yonghao Jin,2026-10-24T07:30:00+00:00,2025,CSL,1,False,4827950,29,8536,away,99249,0,2,played,34,9,False,82,0,0,2,2,0,0,,,82,0,0
 993650,Yonghao Jin,2026-10-17T11:35:00+00:00,2025,CSL,1,False,4827938,28,8536,home,50973,0,4,played,34,11,False,90,0,0,1,0,0,1,,,,0,0

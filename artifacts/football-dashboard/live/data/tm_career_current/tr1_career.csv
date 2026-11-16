@@ -1,6 +1,6 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
 361032,Bilal Bayazıt,2026,TR1,152,False,11,3,0,270,0,0,0,0,1
-1189049,Deniz Dönmezer,2026,U19Q,22585,True,4,0,0,0,0,0,0,0,0
+1189049,Deniz Dönmezer,2026,U19Q,22585,True,5,0,0,0,0,0,0,0,0
 1189049,Deniz Dönmezer,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 1189049,Deniz Dönmezer,2026,TR2,3205,False,14,0,0,0,0,0,0,0,0
 1189049,Deniz Dönmezer,2026,FS,22585,True,3,2,0,180,0,0,0,0,0
@@ -10,6 +10,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 257785,Gökhan Sazdağı,2026,TR1,37951,False,11,10,1,870,0,2,1,1,4
 207006,Joshua Brenet,2026,TRP,3205,False,1,1,0,90,0,0,0,0,0
 207006,Joshua Brenet,2026,TR2,3205,False,14,0,0,0,0,0,0,0,0
+207006,Joshua Brenet,2026,CNNF,32364,True,2,2,0,153,0,0,0,0,0
 207006,Joshua Brenet,2026,CNLA,32364,True,4,1,0,12,0,0,0,0,0
 265542,Semih Güler,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 265542,Semih Güler,2026,TR2,3205,False,14,13,1,1161,0,0,10,3,5
@@ -23,7 +24,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 282560,Ramazan Civelek,2026,TR2,6646,False,14,11,0,627,1,0,7,4,1
 247661,Gideon Jung,2026,MRPO,8,False,2,1,1,65,0,0,0,0,0
 247661,Gideon Jung,2026,L3,8,False,13,5,6,274,0,0,0,0,1
-11530,Lionel Carole,2026,FRC,1162,False,2,0,0,0,0,0,0,0,0
+11530,Lionel Carole,2026,FRC,1162,False,3,0,0,0,0,0,0,0,0
 11530,Lionel Carole,2026,FR3,1162,False,12,10,0,804,0,1,2,0,2
 340251,Burak Kapacak,2026,TR2,2381,False,14,13,0,670,0,3,9,1,1
 1303968,Kayra Cihan,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
@@ -36,7 +37,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 243188,László Bénes,2026,CCB,157,False,1,1,0,46,0,0,0,0,0
 243188,László Bénes,2026,BE1,157,False,11,5,3,215,0,0,2,1,0
 1243174,Mustafa Tarık Obut,2026,TRP,99680,False,2,2,0,180,0,0,0,0,0
-1243174,Mustafa Tarık Obut,2026,TR4A,99680,False,11,4,0,242,0,0,0,0,0
+1243174,Mustafa Tarık Obut,2026,TR4A,99680,False,12,4,0,242,0,0,0,0,0
 1243174,Mustafa Tarık Obut,2026,TR2,3205,False,4,0,0,0,0,0,0,0,0
 988710,Baran Gezek,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 988710,Baran Gezek,2026,TR1,11282,False,11,11,0,804,0,0,0,0,0
@@ -75,7 +76,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 654374,Nurettin Korkmaz,2026,TR2,3207,False,9,6,0,281,0,0,2,1,0
 654374,Nurettin Korkmaz,2026,TR2,3205,False,5,0,0,0,0,0,0,0,0
 1182635,Arda Kaya,2026,TRP,22089,False,1,1,0,71,0,0,0,0,0
-1182635,Arda Kaya,2026,TR4A,22089,False,11,1,0,45,0,0,0,0,0
+1182635,Arda Kaya,2026,TR4A,22089,False,12,1,0,45,0,0,0,0,0
 1182635,Arda Kaya,2026,TR2,3205,False,3,0,0,0,0,0,0,0,0
 1383479,Arda Kabukcı,2026,T191,73906,False,5,4,0,145,0,0,0,0,0
 393371,Abdullah Yiğiter,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
@@ -86,8 +87,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 176936,Julián Cuesta,2026,TR2,589,False,14,2,0,180,0,0,0,0,0
 1047622,Kağan Arıcan,2026,TRP,589,False,1,1,0,90,0,0,0,0,0
 1047622,Kağan Arıcan,2026,TR2,589,False,14,0,0,0,0,0,0,0,0
+247596,Kenneth Paal,2026,U17Q,10933,True,2,0,0,0,0,0,0,0,0
 247596,Kenneth Paal,2026,TRP,589,False,1,1,0,90,0,0,0,0,0
 247596,Kenneth Paal,2026,TR2,589,False,14,0,0,0,0,0,0,0,0
+247596,Kenneth Paal,2026,FS,15359,True,2,0,0,0,0,0,0,0,0
 247596,Kenneth Paal,2026,FS,10933,True,3,0,0,0,0,0,0,0,0
 247596,Kenneth Paal,2026,CNLA,15359,True,4,4,0,346,0,0,0,0,1
 620072,Bünyamin Balcı,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
@@ -106,7 +109,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 52281,Güray Vural,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
 52281,Güray Vural,2026,TR2,589,False,14,9,1,591,2,1,9,2,3
 1257307,Alp Ada Abay,2026,TRP,2292,False,1,1,0,90,0,0,0,0,0
-1257307,Alp Ada Abay,2026,TR3A,2292,False,10,2,0,14,0,0,0,0,0
+1257307,Alp Ada Abay,2026,TR3A,2292,False,11,2,0,14,0,0,0,0,0
 1257307,Alp Ada Abay,2026,TR2,589,False,5,0,0,0,0,0,0,0,0
 1076670,Ensar Buğra Tivsiz,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
 1076670,Ensar Buğra Tivsiz,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
@@ -130,12 +133,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 544148,Tomas Cvancara,2026,TS1,1897,False,9,8,0,673,4,1,18,9,3
 544148,Tomas Cvancara,2026,L1,18,False,1,0,0,0,0,0,0,0,0
 544148,Tomas Cvancara,2026,DFB,18,False,1,0,0,0,0,0,0,0,0
-1223303,Yakub İlçin,2026,U19Q,22585,True,1,1,0,10,0,0,0,0,0
+1223303,Yakub İlçin,2026,U19Q,22585,True,2,2,0,19,0,0,0,0,0
 1223303,Yakub İlçin,2026,TRP,589,False,1,1,0,90,0,0,0,0,0
 1223303,Yakub İlçin,2026,TR2,589,False,14,10,0,271,0,1,5,0,0
 183120,Nikola Storm,2026,TR2,589,False,5,4,0,221,1,1,5,2,1
 183120,Nikola Storm,2026,CCB,968,False,1,0,1,0,0,0,0,0,0
 183120,Nikola Storm,2026,BE1,968,False,7,5,2,94,2,0,4,2,0
+309977,Samuel Ballet,2026,UNLB,3384,True,1,1,0,3,0,0,0,0,0
 309977,Samuel Ballet,2026,TR2,589,False,1,0,0,0,0,0,0,0,0
 309977,Samuel Ballet,2026,TR1,12382,False,11,10,1,780,4,1,28,11,2
 993407,Poyraz Yıldırım,2026,TR2,2378,False,14,14,0,964,0,2,19,5,0
@@ -147,12 +151,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 190222,Sander van de Streek,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
 190222,Sander van de Streek,2026,TR2,589,False,14,14,0,1145,4,3,30,9,1
 1223332,Ali Demirbilek,2026,T191,41854,False,10,8,0,469,4,0,0,0,0
-1223332,Ali Demirbilek,2026,FS,22584,True,3,3,0,106,0,0,0,0,0
+1223332,Ali Demirbilek,2026,FS,22584,True,4,4,0,126,0,0,0,0,0
 1223332,Ali Demirbilek,2026,19YL,145167,False,1,1,0,24,0,0,0,0,0
 1458978,Bachir Gueye,2026,TRP,589,False,1,1,0,90,0,1,0,0,0
 1458978,Bachir Gueye,2026,TR2,589,False,14,1,0,7,0,0,0,0,0
 1254152,Berkay Topdemir,2026,TRP,43875,False,1,1,0,27,0,0,0,0,0
-1254152,Berkay Topdemir,2026,TR3A,43875,False,10,2,0,11,0,0,0,0,0
+1254152,Berkay Topdemir,2026,TR3A,43875,False,11,3,0,17,0,0,0,0,0
 1254152,Berkay Topdemir,2026,TR2,589,False,3,0,0,0,0,0,0,0,0
 1175609,Kerem Kayaarası,2026,TR2,44006,False,14,4,0,28,0,0,0,0,0
 226073,Ivo Grbic,2026,GB2,350,False,3,0,0,0,0,0,0,0,0
@@ -161,15 +165,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 226073,Ivo Grbic,2026,BU1,31614,False,6,0,0,0,0,0,0,0,0
 460218,Furkan Bekleviç,2026,TR2,20760,False,14,1,0,90,0,0,0,0,0
 1105394,Kerem Yandal,2026,TRP,44352,False,2,2,0,180,0,0,0,0,0
-1105394,Kerem Yandal,2026,TR4C,44352,False,11,0,0,0,0,0,0,0,0
+1105394,Kerem Yandal,2026,TR4C,44352,False,12,0,0,0,0,0,0,0,0
 1223507,Berke Can Evli,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 1223507,Berke Can Evli,2026,TR2,6646,False,14,0,0,0,0,0,0,0,0
 315208,Atakan Çankaya,2026,TR2,48913,False,14,13,0,1170,1,1,13,2,2
+209513,Igor Lichnovsky,2026,TR2,6646,False,1,0,0,0,0,0,0,0,0
+209513,Igor Lichnovsky,2026,FS,3700,True,3,1,0,1,0,0,0,0,0
 139395,Ricardo Esgaio,2026,POPO,2424,False,1,1,0,58,0,0,0,0,1
 139395,Ricardo Esgaio,2026,POCP,2424,False,1,1,0,90,0,0,0,0,0
 139395,Ricardo Esgaio,2026,PO1,2424,False,11,11,0,963,0,0,2,2,4
-209513,Igor Lichnovsky,2026,TR2,6646,False,1,0,0,0,0,0,0,0,0
-209513,Igor Lichnovsky,2026,FS,3700,True,3,1,0,1,0,0,0,0,0
 181410,Jure Balkovec,2026,ZYP1,829,False,9,7,1,581,0,0,0,0,1
 181410,Jure Balkovec,2026,UNLB,3588,True,4,1,0,16,0,0,0,0,0
 181410,Jure Balkovec,2026,ELQ,829,False,4,4,0,360,0,0,1,0,1
@@ -184,7 +188,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 168063,Filip Mladenovic,2026,SER1,6622,False,6,5,0,366,0,0,1,0,3
 724968,Nikoloz Ugrekhelidze,2026,ECLQ,663,False,4,2,2,95,1,0,0,0,0
 337516,Fatih Kurucuk,2026,TRP,7088,False,2,2,0,180,0,0,0,0,1
-337516,Fatih Kurucuk,2026,TR3B,7088,False,9,4,0,231,0,0,0,0,0
+337516,Fatih Kurucuk,2026,TR3B,7088,False,10,5,0,321,0,0,0,0,1
 982344,Anıl Yiğit Çınar,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 982344,Anıl Yiğit Çınar,2026,TR2,6646,False,14,7,0,546,0,0,3,0,2
 859924,Burhan Ersoy,2026,TRP,6646,False,1,1,0,106,0,0,0,0,0
@@ -204,11 +208,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 159668,Sam Larsson,2026,SEC,801,False,1,0,0,0,0,0,0,0,0
 159668,Sam Larsson,2026,ECLQ,801,False,4,4,0,275,0,1,0,0,0
 169092,Daniel Johnson,2026,GBFL,349,False,1,1,0,45,1,0,1,1,0
-169092,Daniel Johnson,2026,GB3,349,False,5,1,0,12,0,0,0,0,0
+169092,Daniel Johnson,2026,GB3,349,False,6,2,0,68,0,0,0,0,0
 169092,Daniel Johnson,2026,FAC,349,False,1,1,0,63,0,0,0,0,0
 571085,Alper Demirol,2026,SEC,2843,False,1,1,0,65,0,0,0,0,1
 880403,Ömer Gümüş,2026,TRP,50907,False,2,1,0,90,1,0,0,0,0
-880403,Ömer Gümüş,2026,TR4C,50907,False,11,10,0,449,1,1,0,0,0
+880403,Ömer Gümüş,2026,TR4C,50907,False,12,11,0,494,1,1,0,0,0
 1372498,Kerem Özmen,2026,TR2,6646,False,12,0,0,0,0,0,0,0,0
 787232,David Datro Fofana,2026,SCC,61,False,1,0,1,0,0,0,0,0,0
 787232,David Datro Fofana,2026,GB1,631,False,2,0,0,0,0,0,0,0,0
@@ -220,7 +224,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 916920,Shavy Babicka,2026,UAE1,94732,False,7,6,0,232,2,1,3,2,0
 916920,Shavy Babicka,2026,SER1,159,False,1,0,0,0,0,0,0,0,0
 916920,Shavy Babicka,2026,CLQ,159,False,1,0,0,0,0,0,0,0,0
-916920,Shavy Babicka,2026,AFCQ,5704,True,2,2,0,147,0,0,0,0,0
+916920,Shavy Babicka,2026,AFCQ,5704,True,3,3,0,162,0,0,0,0,0
 256361,Daniele Verde,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 256361,Daniele Verde,2026,TR2,6646,False,14,9,0,353,2,0,8,4,0
 456449,Serginho,2026,GRP,3060,False,3,2,0,99,0,0,0,0,0
@@ -230,24 +234,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 594276,Tiago Çukur,2026,TRP,6646,False,1,1,0,120,0,0,0,0,1
 594276,Tiago Çukur,2026,TR2,6646,False,14,13,0,613,0,2,16,5,0
 529251,Ahmet Sivri,2026,TRP,37956,False,1,0,0,0,0,0,0,0,0
-529251,Ahmet Sivri,2026,TR3B,37956,False,9,8,0,351,2,3,0,0,1
+529251,Ahmet Sivri,2026,TR3B,37956,False,10,9,0,427,2,3,0,0,1
 1498276,Ahmed Traore,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 1498276,Ahmed Traore,2026,TR2,6646,False,14,13,1,948,3,3,25,9,6
 1261862,Tarık Buğra Kalpaklı,2026,TRP,6646,False,1,1,0,39,0,0,0,0,0
 1261862,Tarık Buğra Kalpaklı,2026,TR2,6646,False,14,2,0,22,0,0,0,0,0
-1261862,Tarık Buğra Kalpaklı,2026,FS,22584,True,3,3,0,174,0,0,0,0,0
+1261862,Tarık Buğra Kalpaklı,2026,FS,22584,True,4,4,0,248,0,0,0,0,0
 1500143,Moussa Kone,2026,TRP,6646,False,1,1,0,45,0,0,0,0,0
 1500143,Moussa Kone,2026,TR2,6646,False,14,0,0,0,0,0,0,0,0
 658401,Veysel Sönmezsoy,2026,TRP,75381,False,1,1,0,76,0,1,0,0,0
-658401,Veysel Sönmezsoy,2026,TR3A,75381,False,10,9,0,743,5,3,0,0,5
+658401,Veysel Sönmezsoy,2026,TR3A,75381,False,11,10,0,821,6,5,0,0,5
 811791,Ayberk Kaygısız,2026,TRP,20698,False,2,2,0,44,0,0,0,0,1
-811791,Ayberk Kaygısız,2026,TR4B,20698,False,11,10,0,722,0,3,0,0,3
+811791,Ayberk Kaygısız,2026,TR4B,20698,False,12,11,0,812,0,3,0,0,4
 973234,Eren Karaağaç,2026,TRP,75381,False,1,0,0,0,0,0,0,0,0
-973234,Eren Karaağaç,2026,TR3A,75381,False,10,9,0,612,0,0,0,0,4
+973234,Eren Karaağaç,2026,TR3A,75381,False,11,9,0,612,0,0,0,0,4
 498529,Miguel Crespo,2026,SAKC,6070,False,1,0,0,0,0,0,0,0,0
 498529,Miguel Crespo,2026,SA1,6070,False,13,10,0,696,0,0,10,3,2
 1067687,Onur İnan,2026,TRP,12497,False,1,1,0,56,0,0,0,0,0
-1067687,Onur İnan,2026,TR3B,12497,False,10,5,0,37,0,0,0,0,1
+1067687,Onur İnan,2026,TR3B,12497,False,11,5,0,37,0,0,0,0,1
 1067687,Onur İnan,2026,TR1,6890,False,2,0,0,0,0,0,0,0,0
 1067687,Onur İnan,2026,ECLQ,6890,False,2,0,0,0,0,0,0,0,0
 521956,Erdem Canpolat,2026,TR2,45269,False,14,14,0,1260,0,0,0,0,3
@@ -256,24 +260,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 458588,Benhur Keser,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 458588,Benhur Keser,2026,TR2,3205,False,14,12,2,778,4,2,18,10,1
 928352,Muhammet Özbaskıcı,2026,TRP,2463,False,2,2,0,170,0,0,0,0,1
-928352,Muhammet Özbaskıcı,2026,TR3B,2463,False,9,6,0,79,0,0,0,0,1
+928352,Muhammet Özbaskıcı,2026,TR3B,2463,False,10,7,0,102,0,0,0,0,1
 341019,Güven Yalçın,2026,TRP,10484,False,1,1,0,90,0,1,0,0,0
 341019,Güven Yalçın,2026,TR1,10484,False,11,11,0,499,2,1,11,2,2
 225873,Karol Linetty,2026,TR1,120,False,3,0,0,0,0,0,0,0,0
 225873,Karol Linetty,2026,POPU,759,False,2,2,0,177,0,0,0,0,0
 225873,Karol Linetty,2026,PL1,759,False,8,8,0,581,0,0,1,1,2
-386786,Darko Churlinov,2026,UNLB,5148,True,4,0,0,0,0,0,0,0,0
+386786,Darko Churlinov,2026,UNLB,5148,True,5,1,0,64,0,0,0,0,0
 386786,Darko Churlinov,2026,POPU,324,False,1,1,0,82,0,0,0,0,0
 386786,Darko Churlinov,2026,PL1,324,False,12,12,0,848,4,0,20,11,0
 165711,Erkan Kaş,2026,TR2,45269,False,14,11,0,450,0,1,0,0,2
 197981,Pedrinho,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
 197981,Pedrinho,2026,TR2,589,False,14,12,0,1017,0,0,7,2,1
 655905,Abdullah Tazgel,2026,TRP,75511,False,1,1,0,90,0,0,0,0,0
-655905,Abdullah Tazgel,2026,TR3A,75511,False,10,4,0,191,0,0,0,0,0
+655905,Abdullah Tazgel,2026,TR3A,75511,False,11,4,0,191,0,0,0,0,0
 1062474,Berat Yılmaz,2026,TRP,24245,False,1,0,0,0,0,0,0,0,0
 1062474,Berat Yılmaz,2026,TR2,24245,False,14,13,1,753,2,3,15,7,3
 1193441,Engin Can Biterge,2026,TRP,83909,False,1,1,0,120,0,0,0,0,0
-1193441,Engin Can Biterge,2026,TR3B,83909,False,10,0,2,0,0,0,0,0,0
+1193441,Engin Can Biterge,2026,TR3B,83909,False,11,0,2,0,0,0,0,0,0
 1193441,Engin Can Biterge,2026,CLQ,36,False,1,0,0,0,0,0,0,0,0
 1055247,Yiğit Fidan,2026,TR2,2378,False,14,13,1,1144,0,0,5,3,6
 1055247,Yiğit Fidan,2026,CLQ,36,False,1,0,1,0,0,0,0,0,0
@@ -287,28 +291,28 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 743096,Ali Şahin Yılmaz,2026,TR2,44006,False,14,6,0,473,0,0,1,0,1
 1070028,Boran Başkan,2026,TR2,44006,False,14,9,2,309,0,1,4,0,3
 1067782,Zekeriya Bulut,2026,TRP,44290,False,2,1,0,63,1,0,0,0,0
-1067782,Zekeriya Bulut,2026,TR4B,44290,False,11,9,0,431,1,4,0,0,2
+1067782,Zekeriya Bulut,2026,TR4B,44290,False,12,10,0,510,1,5,0,0,2
 645932,Emre Kaplan,2026,TR2,44006,False,14,13,0,818,0,0,5,0,3
 645932,Emre Kaplan,2026,ECLQ,6890,False,1,0,1,0,0,0,0,0,0
 1208425,Halit Emre Acun,2026,TRP,75381,False,1,1,0,90,0,1,0,0,0
-1208425,Halit Emre Acun,2026,TR3A,75381,False,10,2,0,180,0,0,0,0,1
+1208425,Halit Emre Acun,2026,TR3A,75381,False,11,2,0,180,0,0,0,0,1
 1208425,Halit Emre Acun,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 1009300,Berkay Aydoğmuş,2026,TRP,50814,False,1,1,0,45,0,0,0,0,0
-1009300,Berkay Aydoğmuş,2026,TR3A,50814,False,10,7,2,77,0,1,0,0,0
+1009300,Berkay Aydoğmuş,2026,TR3A,50814,False,11,8,2,87,0,1,0,0,0
 1009300,Berkay Aydoğmuş,2026,ECLQ,6890,False,1,0,1,0,0,0,0,0,0
 685329,Anıl Yaşar,2026,TRP,7160,False,1,1,0,90,0,0,0,0,0
 685329,Anıl Yaşar,2026,TR1,7160,False,11,7,0,485,0,0,3,2,3
 874758,Osman Arslantaş,2026,TRP,825,False,2,2,0,115,1,0,0,0,0
-874758,Osman Arslantaş,2026,TR4B,825,False,11,9,0,342,0,0,0,0,2
+874758,Osman Arslantaş,2026,TR4B,825,False,12,10,0,363,0,0,0,0,2
 620083,Adem Eren Kabak,2026,TR2,68377,False,14,14,0,754,0,0,2,1,2
 269503,Sander Svendsen,2026,NOPO,21101,False,3,2,0,58,0,0,0,0,0
 585339,Pape Habib Guèye,2026,TR2,45269,False,14,2,0,129,0,0,3,0,1
 1557912,Stann Élysée Dalo,2026,TRP,518,False,1,0,0,0,0,0,0,0,0
 1557912,Stann Élysée Dalo,2026,TR2,518,False,14,3,0,10,0,0,0,0,1
 808985,Berkay Arı,2026,TRP,50349,False,1,1,0,90,0,0,0,0,1
-808985,Berkay Arı,2026,TR4C,50349,False,11,6,0,495,0,0,0,0,1
+808985,Berkay Arı,2026,TR4C,50349,False,12,6,0,495,0,0,0,0,1
 685127,Buğra Çağlıyan,2026,TRP,44008,False,1,0,0,0,0,0,0,0,0
-685127,Buğra Çağlıyan,2026,TR3A,44008,False,10,4,0,66,0,0,0,0,0
+685127,Buğra Çağlıyan,2026,TR3A,44008,False,11,4,0,66,0,0,0,0,0
 322873,İrfan Can Eğribayat,2026,TRP,820,False,1,0,0,0,0,0,0,0,0
 322873,İrfan Can Eğribayat,2026,TR1,820,False,11,11,0,990,0,1,0,0,1
 322873,İrfan Can Eğribayat,2026,CLQ,36,False,4,0,4,0,0,0,0,0,0
@@ -317,14 +321,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 944442,Salih Malkoçoğlu,2026,UAE1,2524,False,7,1,0,1,0,0,0,0,0
 944442,Salih Malkoçoğlu,2026,ACL2,2524,False,4,0,0,0,0,0,0,0,0
 944442,Salih Malkoçoğlu,2026,ACEQ,2524,False,1,1,0,22,0,0,0,0,0
-1290539,Thierry Karadeniz,2026,U19Q,22585,True,4,4,0,360,2,0,0,0,0
+1290539,Thierry Karadeniz,2026,U19Q,22585,True,5,5,0,392,2,0,0,0,0
 1290539,Thierry Karadeniz,2026,TRP,75381,False,1,1,0,75,2,0,0,0,0
-1290539,Thierry Karadeniz,2026,TR3A,75381,False,10,8,1,213,1,1,0,0,0
+1290539,Thierry Karadeniz,2026,TR3A,75381,False,11,8,1,213,1,1,0,0,0
 1290539,Thierry Karadeniz,2026,FS,22585,True,3,3,0,193,0,0,0,0,0
 586756,Festy Ebosele,2026,TR1,39722,False,11,7,1,164,0,0,1,1,0
 586756,Festy Ebosele,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 988249,Yağız Dilek,2026,TRP,44281,False,1,1,0,45,0,0,0,0,0
-988249,Yağız Dilek,2026,TR3B,44281,False,9,7,0,462,0,0,0,0,0
+988249,Yağız Dilek,2026,TR3B,44281,False,10,7,0,462,0,0,0,0,0
 483063,Berat Özdemir,2026,TR1,37951,False,11,8,1,403,0,0,0,0,1
 483063,Berat Özdemir,2026,ECLQ,6890,False,2,2,0,98,0,0,0,0,0
 687800,Muhamed Buljubasic,2026,TR2,45269,False,14,7,0,316,1,0,10,1,2
@@ -334,26 +338,27 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 594240,Tunahan Taşçı,2026,TRP,24245,False,1,1,0,110,0,1,0,0,0
 594240,Tunahan Taşçı,2026,TR2,24245,False,14,11,0,392,0,3,5,2,0
 860721,Mehmet Ali Büyüksayar,2026,TRP,83909,False,1,1,0,62,0,0,0,0,1
-860721,Mehmet Ali Büyüksayar,2026,TR3B,83909,False,10,10,0,692,2,1,0,0,0
+860721,Mehmet Ali Büyüksayar,2026,TR3B,83909,False,11,11,0,782,3,2,0,0,0
 1070797,Adnan Aktaş,2026,TRP,43875,False,1,1,0,90,0,0,0,0,0
-1070797,Adnan Aktaş,2026,TR3A,43875,False,10,3,0,73,0,0,0,0,0
+1070797,Adnan Aktaş,2026,TR3A,43875,False,11,3,0,73,0,0,0,0,0
 701834,Erdem Çetinkaya,2026,TRP,12524,False,1,0,0,0,0,0,0,0,0
-701834,Erdem Çetinkaya,2026,TR3B,12524,False,10,9,0,605,2,4,0,0,1
+701834,Erdem Çetinkaya,2026,TR3B,12524,False,11,10,0,684,3,4,0,0,1
 1043641,Berk Can Yıldızlı,2026,TRP,27603,False,2,2,0,29,0,0,0,0,0
-1043641,Berk Can Yıldızlı,2026,TR3B,27603,False,9,3,0,36,0,0,0,0,0
+1043641,Berk Can Yıldızlı,2026,TR3B,27603,False,10,3,0,36,0,0,0,0,0
 1043641,Berk Can Yıldızlı,2026,TR1,10484,False,2,0,0,0,0,0,0,0,0
 954167,Sarp Yavrucu,2026,TRP,39798,False,2,0,0,0,0,0,0,0,0
-954167,Sarp Yavrucu,2026,TR4B,39798,False,11,0,0,0,0,0,0,0,0
+954167,Sarp Yavrucu,2026,TR4B,39798,False,12,0,0,0,0,0,0,0,0
 954167,Sarp Yavrucu,2026,TR1,10484,False,3,0,0,0,0,0,0,0,0
 876725,Onur Başyiğit,2026,TRP,54636,False,1,1,0,18,0,0,0,0,0
-876725,Onur Başyiğit,2026,TR3A,54636,False,10,7,0,455,0,2,0,0,0
+876725,Onur Başyiğit,2026,TR3A,54636,False,11,8,0,545,0,2,0,0,0
 876725,Onur Başyiğit,2026,TR1,2832,False,2,0,0,0,0,0,0,0,0
 622830,Hasan Emre Yeşilyurt,2026,TRP,518,False,1,0,0,0,0,0,0,0,0
 622830,Hasan Emre Yeşilyurt,2026,TR2,518,False,14,9,0,501,0,0,7,1,1
 1432630,Ayaz Arslan,2026,TRP,50907,False,2,2,0,158,0,0,0,0,0
-1432630,Ayaz Arslan,2026,TR4C,50907,False,11,1,0,90,0,0,0,0,0
+1432630,Ayaz Arslan,2026,TR4C,50907,False,12,1,0,90,0,0,0,0,0
 497188,Florent Hasani,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 497188,Florent Hasani,2026,TR2,3205,False,14,14,0,702,5,0,28,10,1
+748807,Joseph Nonge,2026,FS,9315,True,1,0,0,0,0,0,0,0,0
 748807,Joseph Nonge,2026,FR1,3911,False,10,8,0,215,0,0,3,0,0
 600842,Daniel Moreno,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 600842,Daniel Moreno,2026,TR2,3205,False,14,14,0,926,11,2,41,21,1
@@ -369,14 +374,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 727147,Emre Bilgin,2026,TR1,7160,False,11,4,0,315,0,0,0,0,0
 727147,Emre Bilgin,2026,ELQ,114,False,4,0,0,0,0,0,0,0,0
 1011214,Furkan Malak,2026,TRP,43875,False,1,0,0,0,0,0,0,0,0
-1011214,Furkan Malak,2026,TR3A,43875,False,10,10,0,876,0,0,0,0,3
+1011214,Furkan Malak,2026,TR3A,43875,False,11,11,0,961,1,0,0,0,3
 1268578,Tibet Durakçay,2026,TRP,20698,False,2,2,0,165,1,0,0,0,1
-1268578,Tibet Durakçay,2026,TR4B,20698,False,11,4,0,29,0,0,0,0,0
+1268578,Tibet Durakçay,2026,TR4B,20698,False,12,5,0,30,0,0,0,0,0
 94037,Ferhat Yazgan,2026,TR2,45269,False,13,10,0,314,0,0,1,0,1
 605194,Eren Karadağ,2026,TRP,518,False,1,0,0,0,0,0,0,0,0
 605194,Eren Karadağ,2026,TR2,518,False,13,9,0,217,0,0,12,3,1
 634693,Polat Abay,2026,TRP,99680,False,2,0,0,0,0,0,0,0,0
-634693,Polat Abay,2026,TR4A,99680,False,11,0,0,0,0,0,0,0,0
+634693,Polat Abay,2026,TR4A,99680,False,12,0,0,0,0,0,0,0,0
 634693,Polat Abay,2026,TR1,37951,False,3,0,0,0,0,0,0,0,0
 685887,Matchoi Djaló,2026,POPO,982,False,1,1,0,67,0,0,0,0,0
 685887,Matchoi Djaló,2026,PO1,982,False,10,9,0,324,2,0,6,4,1
@@ -388,17 +393,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 606967,Arbnor Muja,2026,CCB,475,False,1,0,1,0,0,0,0,0,0
 606967,Arbnor Muja,2026,BE1,475,False,10,5,4,192,0,0,5,2,1
 1367128,Abdoulaye Yoro,2026,SCP,1519,False,1,1,0,27,0,0,2,0,1
-1367128,Abdoulaye Yoro,2026,SC1,1519,False,11,10,0,300,0,1,6,5,2
+1367128,Abdoulaye Yoro,2026,SC1,1519,False,10,10,0,300,0,1,6,5,2
 1367128,Abdoulaye Yoro,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 952098,Yusuf Delen,2026,TRP,83917,False,2,2,0,94,0,0,0,0,0
-952098,Yusuf Delen,2026,TR4B,83917,False,11,9,2,618,1,0,0,0,0
+952098,Yusuf Delen,2026,TR4B,83917,False,12,10,2,627,1,0,0,0,0
 952098,Yusuf Delen,2026,TR1,2832,False,3,0,0,0,0,0,0,0,0
 1254156,Şant Kazancı,2026,T191,73905,False,11,3,0,270,0,0,0,0,0
 1233280,Berkay Muratoğlu,2026,TRP,45238,False,1,1,0,90,0,0,0,0,0
-1233280,Berkay Muratoğlu,2026,TR3B,45238,False,10,10,0,823,0,2,0,0,2
+1233280,Berkay Muratoğlu,2026,TR3B,45238,False,11,11,0,913,0,2,0,0,2
 1233280,Berkay Muratoğlu,2026,TR1,10484,False,2,0,0,0,0,0,0,0,0
 891989,Oğuzhan Yılmaz,2026,TRP,39805,False,2,2,0,64,0,0,0,0,1
-891989,Oğuzhan Yılmaz,2026,TR4A,39805,False,11,9,1,787,0,0,0,0,3
+891989,Oğuzhan Yılmaz,2026,TR4A,39805,False,12,9,1,787,0,0,0,0,3
 891989,Oğuzhan Yılmaz,2026,TR1,10484,False,3,0,0,0,0,0,0,0,0
 566271,Yusuf Barası,2026,TRP,7160,False,1,1,0,84,0,0,0,0,0
 566271,Yusuf Barası,2026,TR1,7160,False,11,11,0,462,0,0,14,5,0
@@ -406,51 +411,51 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 341649,Abdulsamed Damlu,2026,TRP,3173,False,1,0,0,0,0,0,0,0,0
 341649,Abdulsamed Damlu,2026,TR2,3173,False,13,6,0,540,0,0,0,0,0
 315209,Çekdar Orhan,2026,TRP,6630,False,1,0,0,0,0,0,0,0,0
-315209,Çekdar Orhan,2026,TR3A,6630,False,10,9,0,710,2,2,0,0,0
+315209,Çekdar Orhan,2026,TR3A,6630,False,11,10,0,783,3,3,0,0,0
 315209,Çekdar Orhan,2026,TR1,12382,False,3,0,0,0,0,0,0,0,0
 1456741,Gilbert Mendy,2026,TR1,7160,False,5,0,0,0,0,0,0,0,0
-1456741,Gilbert Mendy,2026,SER2,2674,False,9,2,0,15,0,0,0,0,0
+1456741,Gilbert Mendy,2026,SER2,2674,False,10,2,0,15,0,0,0,0,0
 1414670,Ismaila Manga,2026,TR2,3209,False,13,6,5,107,1,0,1,1,1
 1036405,Omar Fayed,2026,TR1,36,False,1,0,0,0,0,0,0,0,0
 1036405,Omar Fayed,2026,IT1,8970,False,11,2,0,26,0,0,0,0,0
 1036405,Omar Fayed,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
 1036405,Omar Fayed,2026,CLQ,36,False,5,0,5,0,0,0,0,0,0
 1036405,Omar Fayed,2026,CIT,8970,False,1,1,0,28,0,0,0,0,0
-1036405,Omar Fayed,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+1036405,Omar Fayed,2026,AFCQ,3672,True,3,0,0,0,0,0,0,0,0
 986288,Sidiki Chérif,2026,TR1,36,False,1,0,1,0,0,0,0,0,0
 986288,Sidiki Chérif,2026,GB1,990,False,10,6,0,256,1,1,6,2,0
 986288,Sidiki Chérif,2026,CLQ,36,False,5,1,2,3,0,0,0,0,0
 986288,Sidiki Chérif,2026,CGB,990,False,2,2,0,78,0,0,4,1,0
 872051,Eren Özdemir,2026,TRP,99680,False,2,1,0,75,0,0,0,0,1
-872051,Eren Özdemir,2026,TR4A,99680,False,11,9,0,590,1,0,0,0,3
+872051,Eren Özdemir,2026,TR4A,99680,False,12,10,0,592,1,0,0,0,3
 872051,Eren Özdemir,2026,TR1,39722,False,3,0,0,0,0,0,0,0,0
 511401,Anthony Musaba,2026,TR1,36,False,1,0,1,0,0,0,0,0,0
 511401,Anthony Musaba,2026,GB2,1123,False,14,13,0,668,3,3,23,11,0
 511401,Anthony Musaba,2026,CLQ,36,False,5,1,2,20,0,0,1,0,0
 511401,Anthony Musaba,2026,CGB,1123,False,2,2,0,73,0,0,2,0,0
 1047596,Çağrı Fedai,2026,TRP,12497,False,1,1,0,120,1,0,0,0,0
-1047596,Çağrı Fedai,2026,TR3B,12497,False,10,9,0,340,1,0,0,0,0
+1047596,Çağrı Fedai,2026,TR3B,12497,False,11,10,0,430,1,0,0,0,0
 1047596,Çağrı Fedai,2026,TR1,36,False,1,0,0,0,0,0,0,0,0
 1047596,Çağrı Fedai,2026,CLQ,36,False,5,0,0,0,0,0,0,0,0
 1223334,Ada Yüzgeç,2026,TR1,141,False,11,0,0,0,0,0,0,0,0
-1223334,Ada Yüzgeç,2026,T191,41591,False,10,9,0,768,5,0,0,0,0
-1223334,Ada Yüzgeç,2026,FS,22584,True,3,2,0,115,0,0,0,0,0
+1223334,Ada Yüzgeç,2026,T191,41591,False,11,10,0,857,5,0,0,0,0
+1223334,Ada Yüzgeç,2026,FS,22584,True,4,3,0,160,0,0,0,0,0
 1223334,Ada Yüzgeç,2026,CL,141,False,4,0,0,0,0,0,0,0,0
 1223334,Ada Yüzgeç,2026,19YL,45512,False,4,4,0,249,0,1,0,0,1
-1223330,Yağız Şen,2026,U19Q,22585,True,1,1,0,90,0,0,0,0,1
+1223330,Yağız Şen,2026,U19Q,22585,True,2,2,0,180,0,1,0,0,2
 1223330,Yağız Şen,2026,TRP,518,False,1,1,0,90,1,0,0,0,0
 1223330,Yağız Şen,2026,TR2,518,False,14,5,0,181,0,0,2,1,0
 1223330,Yağız Şen,2026,FS,22584,True,3,3,0,228,0,1,0,0,1
 1236117,Efe Fettahoğlu,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
-1236117,Efe Fettahoğlu,2026,T191,41854,False,10,9,0,522,3,1,0,0,0
+1236117,Efe Fettahoğlu,2026,T191,41854,False,10,10,0,608,3,1,0,0,0
 1236117,Efe Fettahoğlu,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
 1236117,Efe Fettahoğlu,2026,CL,36,False,4,0,0,0,0,0,0,0,0
 1236117,Efe Fettahoğlu,2026,19YL,145167,False,4,4,0,351,0,3,0,0,2
 646478,Elias Jelert,2026,TR1,141,False,1,0,0,0,0,0,0,0,0
 646478,Elias Jelert,2026,FR1,738,False,10,4,5,279,0,0,0,0,0
 1223302,Eren Sayar,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
-1223302,Eren Sayar,2026,T191,41854,False,10,8,0,645,3,0,0,0,5
-1223302,Eren Sayar,2026,FS,22584,True,3,3,0,93,0,0,0,0,0
+1223302,Eren Sayar,2026,T191,41854,False,10,9,0,735,3,0,0,0,5
+1223302,Eren Sayar,2026,FS,22584,True,4,4,0,157,0,0,0,0,0
 1223302,Eren Sayar,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
 1223302,Eren Sayar,2026,CL,36,False,4,0,0,0,0,0,0,0,0
 1223302,Eren Sayar,2026,19YL,145167,False,4,4,0,352,3,0,0,0,1
@@ -478,21 +483,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1054907,Furkan Orak,2026,TR2,45269,False,12,9,0,554,0,2,2,0,3
 1054907,Furkan Orak,2026,TR1,126,False,1,0,0,0,0,0,0,0,0
 950779,Hüseyincan Kırıkcı,2026,TRP,44352,False,2,0,0,0,0,0,0,0,0
-950779,Hüseyincan Kırıkcı,2026,TR4C,44352,False,11,7,0,305,0,1,0,0,1
+950779,Hüseyincan Kırıkcı,2026,TR4C,44352,False,12,7,0,305,0,1,0,0,1
 950779,Hüseyincan Kırıkcı,2026,TR1,126,False,1,0,1,0,0,0,0,0,0
 951695,Eren Emre Aydın,2026,TRP,44290,False,2,1,0,27,0,0,0,0,0
-951695,Eren Emre Aydın,2026,TR4B,44290,False,11,10,0,764,0,1,0,0,3
+951695,Eren Emre Aydın,2026,TR4B,44290,False,12,11,0,851,0,2,0,0,3
 951695,Eren Emre Aydın,2026,TR1,126,False,2,0,0,0,0,0,0,0,0
 815262,Emirhan Çavuş,2026,TRP,45238,False,1,1,0,90,0,0,0,0,0
-815262,Emirhan Çavuş,2026,TR3B,45238,False,10,7,0,149,0,0,0,0,0
+815262,Emirhan Çavuş,2026,TR3B,45238,False,11,8,0,153,0,0,0,0,0
 815262,Emirhan Çavuş,2026,TR1,11282,False,2,0,1,0,0,0,0,0,0
 1304053,Tuncay Elgün,2026,T191,73906,False,11,8,0,716,1,0,0,0,1
 1439014,Egehan Şensoy,2026,TRP,69593,False,3,3,0,146,0,0,0,0,1
-1439014,Egehan Şensoy,2026,TR4A,69593,False,9,0,0,0,0,0,0,0,0
+1439014,Egehan Şensoy,2026,TR4A,69593,False,10,0,0,0,0,0,0,0,0
 1439014,Egehan Şensoy,2026,TR1,2293,False,5,0,0,0,0,0,0,0,0
 1439014,Egehan Şensoy,2026,T191,73906,False,5,0,0,0,0,0,0,0,0
 1311910,Ahmet Dağdevir,2026,TRP,69486,False,3,2,0,180,0,0,0,0,1
-1311910,Ahmet Dağdevir,2026,TR4C,69486,False,11,9,0,651,0,0,0,0,2
+1311910,Ahmet Dağdevir,2026,TR4C,69486,False,12,9,0,651,0,0,0,0,2
 1311910,Ahmet Dağdevir,2026,T191,73906,False,3,0,0,0,0,0,0,0,0
 1223299,Efe Seçil,2026,T191,73906,False,11,8,0,613,0,0,0,0,2
 1223299,Efe Seçil,2026,FS,22584,True,3,2,0,90,0,0,0,0,0
@@ -502,24 +507,25 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1460433,Eren Yağmur,2026,T191,73906,False,1,1,0,71,0,0,0,0,0
 1460433,Eren Yağmur,2026,ALBP,22140,False,1,0,0,0,0,0,0,0,0
 1460433,Eren Yağmur,2026,ALB1,22140,False,9,1,0,4,0,0,0,0,0
+1076665,Enes Seven,2026,TR4C,37962,False,2,0,0,0,0,0,0,0,0
 1395711,Arda Var,2026,T191,73906,False,11,11,0,990,0,1,0,0,2
 391282,Celal Hanalp,2026,TRP,3173,False,1,0,0,0,0,0,0,0,0
 391282,Celal Hanalp,2026,TR2,3173,False,12,8,0,343,0,0,0,0,0
 391282,Celal Hanalp,2026,TR1,12382,False,1,0,1,0,0,0,0,0,0
 1351480,Cıvan Süer,2026,TRP,45238,False,1,1,0,90,0,0,0,0,0
-1351480,Cıvan Süer,2026,TR3B,45238,False,10,7,0,220,0,1,0,0,0
+1351480,Cıvan Süer,2026,TR3B,45238,False,11,8,0,234,0,1,0,0,0
 1351480,Cıvan Süer,2026,TR1,12382,False,3,0,0,0,0,0,0,0,0
 889343,Ali Mevran Ablak,2026,TRP,41552,False,1,0,0,0,0,0,0,0,0
-889343,Ali Mevran Ablak,2026,TR4C,41552,False,11,10,0,772,0,1,0,0,1
+889343,Ali Mevran Ablak,2026,TR4C,41552,False,12,10,0,772,0,1,0,0,1
 889343,Ali Mevran Ablak,2026,TR1,2832,False,3,0,0,0,0,0,0,0,0
 1201482,Bünyamin Dalkılıç,2026,TRP,107563,False,1,1,0,54,0,0,0,0,0
-1201482,Bünyamin Dalkılıç,2026,TR4A,107563,False,11,10,0,536,1,1,0,0,0
+1201482,Bünyamin Dalkılıç,2026,TR4A,107563,False,12,11,0,626,1,1,0,0,0
 1201482,Bünyamin Dalkılıç,2026,TR1,120,False,1,0,0,0,0,0,0,0,0
-1438144,Erk Aslan,2026,U19Q,22585,True,1,0,0,0,0,0,0,0,0
+1438144,Erk Aslan,2026,U19Q,22585,True,2,1,0,58,0,0,0,0,0
 1438144,Erk Aslan,2026,TRP,820,False,1,1,0,45,0,0,0,0,0
 1438144,Erk Aslan,2026,TR1,820,False,11,0,0,0,0,0,0,0,0
-1438144,Erk Aslan,2026,T191,74474,False,2,2,0,180,0,0,0,0,0
-205927,Dominik Livakovic,2026,UNLA,3556,True,4,4,0,360,0,0,0,0,0
+1438144,Erk Aslan,2026,T191,74474,False,3,3,0,270,0,0,0,0,0
+205927,Dominik Livakovic,2026,UNLA,3556,True,6,6,0,540,0,0,0,0,0
 205927,Dominik Livakovic,2026,TR1,36,False,2,0,2,0,0,0,0,0,0
 205927,Dominik Livakovic,2026,ES1,131,False,11,1,0,90,0,0,0,0,0
 205927,Dominik Livakovic,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
@@ -553,10 +559,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 655912,Göktan Gürpüz,2026,ELQ,449,False,1,0,1,0,0,0,0,0,0
 1162593,Mohamed Hassan Fofana,2026,TR1,6890,False,2,0,0,0,0,0,0,0,0
 1162593,Mohamed Hassan Fofana,2026,POPO,3325,False,2,2,0,97,0,0,0,0,0
-1162593,Mohamed Hassan Fofana,2026,PO2,3325,False,7,5,0,318,0,0,0,0,3
+1162593,Mohamed Hassan Fofana,2026,PO2,3325,False,8,5,0,318,0,0,0,0,3
 1162593,Mohamed Hassan Fofana,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 981856,Doğukan Tuzcu,2026,TRP,83909,False,1,1,0,90,0,0,0,0,0
-981856,Doğukan Tuzcu,2026,TR3B,83909,False,10,3,0,114,0,0,0,0,1
+981856,Doğukan Tuzcu,2026,TR3B,83909,False,11,3,0,114,0,0,0,0,1
 981856,Doğukan Tuzcu,2026,TR1,6890,False,2,0,2,0,0,0,0,0,0
 981856,Doğukan Tuzcu,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 1001554,Berkay Aslan,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
@@ -564,18 +570,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1001554,Berkay Aslan,2026,FS,22586,True,3,3,0,245,1,0,0,0,0
 1001554,Berkay Aslan,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 1181573,Semih Akyıldız,2026,TRP,12524,False,1,1,0,45,0,0,0,0,0
-1181573,Semih Akyıldız,2026,TR3B,12524,False,10,10,0,301,2,0,0,0,0
+1181573,Semih Akyıldız,2026,TR3B,12524,False,11,11,0,323,2,0,0,0,0
 1181573,Semih Akyıldız,2026,TR1,37951,False,2,0,1,0,0,0,0,0,0
 764863,Richie Omorowa,2026,TR1,152,False,2,0,2,0,0,0,0,0,0
 764863,Richie Omorowa,2026,NL2,17596,False,11,10,0,425,0,0,9,2,0
 1173277,Emre Köroğlu,2026,TRP,1515,False,1,0,0,0,0,0,0,0,0
-1173277,Emre Köroğlu,2026,TR4A,1515,False,11,6,0,341,3,0,0,0,0
+1173277,Emre Köroğlu,2026,TR4A,1515,False,12,7,0,431,4,0,0,0,0
 1173277,Emre Köroğlu,2026,TR1,152,False,2,0,2,0,0,0,0,0,0
 1581183,Alpha Fofana,2026,T191,73906,False,11,10,0,835,0,0,0,0,5
 1581174,Mohamed Fofana,2026,TR1,2293,False,3,0,0,0,0,0,0,0,0
 1581174,Mohamed Fofana,2026,T191,73906,False,3,3,0,173,0,0,0,0,1
 1581174,Mohamed Fofana,2026,ALBP,27116,False,1,0,0,0,0,0,0,0,0
-1581174,Mohamed Fofana,2026,ALB2,27116,False,10,0,0,0,0,0,0,0,0
+1581174,Mohamed Fofana,2026,ALB2,27116,False,10,1,0,14,0,0,0,0,0
 1581184,Ibrahima Bah,2026,TR1,2293,False,3,0,1,0,0,0,0,0,0
 1581184,Ibrahima Bah,2026,T191,73906,False,2,2,0,90,0,0,0,0,2
 1581184,Ibrahima Bah,2026,ALBP,27116,False,1,0,0,0,0,0,0,0,0
@@ -583,39 +589,39 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1160504,Burak Gültekin,2026,TR2,3209,False,11,2,0,64,0,0,0,0,0
 1160504,Burak Gültekin,2026,TR1,10484,False,2,0,0,0,0,0,0,0,0
 1047884,Emrullah Ertuş,2026,TRP,20333,False,2,0,0,0,0,0,0,0,0
-1047884,Emrullah Ertuş,2026,TR4A,20333,False,11,11,0,916,1,0,0,0,2
+1047884,Emrullah Ertuş,2026,TR4A,20333,False,12,12,0,1006,1,0,0,0,2
 1047884,Emrullah Ertuş,2026,TR1,12382,False,2,0,0,0,0,0,0,0,0
 1159134,Serkan Köse,2026,TRP,12497,False,1,1,0,49,0,0,0,0,0
-1159134,Serkan Köse,2026,TR3B,12497,False,10,10,0,888,6,2,0,0,2
+1159134,Serkan Köse,2026,TR3B,12497,False,11,11,0,972,8,2,0,0,2
 1159134,Serkan Köse,2026,TR1,39722,False,2,0,0,0,0,0,0,0,0
 355757,Samet Yalçın,2026,TRP,589,False,1,1,0,77,0,0,0,0,1
 355757,Samet Yalçın,2026,TR2,589,False,11,6,0,49,1,0,1,1,0
 355757,Samet Yalçın,2026,TR1,120,False,2,0,2,0,0,0,0,0,0
-422951,Victor Nelsson,2026,UNLA,3436,True,4,0,0,0,0,0,0,0,0
+422951,Victor Nelsson,2026,UNLA,3436,True,5,1,0,8,0,0,0,0,0
 422951,Victor Nelsson,2026,UCOL,2778,False,3,3,0,203,0,0,1,0,2
 422951,Victor Nelsson,2026,TR1,141,False,3,0,0,0,0,0,0,0,0
 422951,Victor Nelsson,2026,DKP,2778,False,2,0,1,0,0,0,0,0,0
 422951,Victor Nelsson,2026,DK1,2778,False,9,6,1,540,0,0,2,0,2
 1173689,Berkay Kumlu,2026,TRP,50820,False,2,2,0,180,0,0,0,0,0
-1173689,Berkay Kumlu,2026,TR4C,50820,False,11,2,0,51,1,0,0,0,0
+1173689,Berkay Kumlu,2026,TR4C,50820,False,12,3,0,52,1,0,0,0,0
 1173689,Berkay Kumlu,2026,TR1,7160,False,2,0,2,0,0,0,0,0,0
 329145,Diego Carlos,2026,TR1,36,False,3,0,0,0,0,0,0,0,0
 329145,Diego Carlos,2026,IT1,130,False,9,6,0,423,0,0,4,2,1
 329145,Diego Carlos,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
 329145,Diego Carlos,2026,CIT,130,False,1,0,0,0,0,0,0,0,0
 695475,Siraçhan Nas,2026,TRP,83909,False,1,1,0,120,0,1,0,0,0
-695475,Siraçhan Nas,2026,TR3B,83909,False,10,5,0,115,1,1,0,0,0
+695475,Siraçhan Nas,2026,TR3B,83909,False,11,6,0,122,1,1,0,0,0
 695475,Siraçhan Nas,2026,TR1,141,False,3,0,3,0,0,0,0,0,0
 320141,Çağlar Söyüncü,2026,TR1,37951,False,8,6,1,440,1,0,2,1,1
 320141,Çağlar Söyüncü,2026,TR1,36,False,3,0,3,0,0,0,0,0,0
 320141,Çağlar Söyüncü,2026,CLQ,36,False,6,0,2,0,0,0,0,0,0
 1457931,Adem Yeşilyurt,2026,TRP,12497,False,1,1,0,71,0,0,0,0,0
-1457931,Adem Yeşilyurt,2026,TR3B,12497,False,10,1,0,22,0,0,0,0,0
+1457931,Adem Yeşilyurt,2026,TR3B,12497,False,11,1,0,22,0,0,0,0,0
 1457931,Adem Yeşilyurt,2026,TR1,36,False,3,0,0,0,0,0,0,0,0
 1457931,Adem Yeşilyurt,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
 156941,John Lundstram,2026,TR1,449,False,3,0,2,0,0,0,0,0,0
 156941,John Lundstram,2026,GBFL,1003,False,3,1,0,90,1,0,1,1,0
-156941,John Lundstram,2026,GB3,1003,False,10,7,0,595,3,0,8,5,1
+156941,John Lundstram,2026,GB3,1003,False,11,7,0,595,3,0,8,5,1
 156941,John Lundstram,2026,FAC,1003,False,1,1,0,90,0,0,0,0,0
 156941,John Lundstram,2026,ELQ,449,False,2,0,2,0,0,0,0,0,0
 1007972,Élan Ricardo,2026,UNGP,6055,False,2,2,0,135,0,0,0,0,0
@@ -640,17 +646,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 149729,João Mário,2026,ELQ,114,False,6,0,6,0,0,0,0,0,0
 149729,João Mário,2026,CL,2441,False,4,2,1,82,0,0,0,0,0
 983817,Fahri Ay,2026,TRP,44008,False,1,0,0,0,0,0,0,0,0
-983817,Fahri Ay,2026,TR3A,44008,False,10,0,0,0,0,0,0,0,0
+983817,Fahri Ay,2026,TR3A,44008,False,11,0,0,0,0,0,0,0,0
 983817,Fahri Ay,2026,TR1,114,False,3,0,0,0,0,0,0,0,0
 983817,Fahri Ay,2026,ELQ,114,False,6,0,2,0,0,0,0,0,0
 935550,Arda Kılıç,2026,TRP,27603,False,2,1,0,65,0,0,0,0,0
-935550,Arda Kılıç,2026,TR3B,27603,False,9,5,0,268,2,0,0,0,1
+935550,Arda Kılıç,2026,TR3B,27603,False,10,5,0,268,2,0,0,0,1
 935550,Arda Kılıç,2026,TR1,114,False,3,0,3,0,0,0,0,0,0
 935550,Arda Kılıç,2026,ELQ,114,False,6,0,6,0,0,0,0,0,0
 1015829,Tuğra Turhan,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
 1015829,Tuğra Turhan,2026,TR1,6890,False,3,0,1,0,0,0,0,0,0
 1015829,Tuğra Turhan,2026,GBFL,3684,False,3,3,0,98,0,0,7,3,0
-1015829,Tuğra Turhan,2026,GB3,3684,False,9,1,0,14,1,0,1,1,0
+1015829,Tuğra Turhan,2026,GB3,3684,False,10,1,0,14,1,0,1,1,0
 1015829,Tuğra Turhan,2026,FS,22586,True,3,3,0,205,1,0,0,0,0
 1015829,Tuğra Turhan,2026,FAC,3684,False,1,1,0,54,0,0,1,0,0
 1015829,Tuğra Turhan,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
@@ -658,100 +664,100 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 306166,Nuno da Costa,2026,TR2,589,False,9,8,0,580,2,1,14,3,0
 306166,Nuno da Costa,2026,TR1,6890,False,3,0,0,0,0,0,0,0,0
 306166,Nuno da Costa,2026,ECLQ,6890,False,2,2,0,34,0,0,2,0,0
-306166,Nuno da Costa,2026,AFCQ,4311,True,2,2,0,51,0,0,3,0,0
+306166,Nuno da Costa,2026,AFCQ,4311,True,3,2,0,51,0,0,3,0,0
 1341829,Taha Rençber,2026,TR1,39722,False,8,0,0,0,0,0,0,0,0
 1341829,Taha Rençber,2026,TR1,37951,False,3,0,2,0,0,0,0,0,0
-1341829,Taha Rençber,2026,T191,73909,False,5,0,0,0,0,0,0,0,0
+1341829,Taha Rençber,2026,T191,73909,False,6,0,0,0,0,0,0,0,0
 1173278,Ali Tarkan,2026,TRP,55732,False,2,2,0,28,0,0,0,0,0
-1173278,Ali Tarkan,2026,TR4C,55732,False,11,8,1,568,0,0,0,0,1
+1173278,Ali Tarkan,2026,TR4C,55732,False,12,8,1,568,0,0,0,0,1
 1173278,Ali Tarkan,2026,TR1,152,False,3,0,2,0,0,0,0,0,0
 1015607,Alper Efe Pazar,2026,TRP,55732,False,2,1,0,54,0,0,0,0,0
-1015607,Alper Efe Pazar,2026,TR4C,55732,False,11,6,0,107,0,0,0,0,1
+1015607,Alper Efe Pazar,2026,TR4C,55732,False,12,7,0,121,0,0,0,0,1
 1015607,Alper Efe Pazar,2026,TR1,152,False,3,0,2,0,0,0,0,0,0
 1567412,Cheick Tidiane Diabate,2026,TR1,152,False,3,0,0,0,0,0,0,0,0
-1567412,Cheick Tidiane Diabate,2026,KRC,11083,False,1,0,0,0,0,0,0,0,0
+1567412,Cheick Tidiane Diabate,2026,KRC,11083,False,2,1,0,48,0,0,0,0,0
 1567412,Cheick Tidiane Diabate,2026,KR1,11083,False,8,2,0,90,0,0,0,0,0
 1432633,Ebrima Ceesay,2026,TR2,2381,False,9,8,0,359,0,3,11,4,3
 1432633,Ebrima Ceesay,2026,TR1,152,False,3,0,3,0,0,0,0,0,0
 1071936,Habil Özbakır,2026,TRP,83917,False,2,2,0,180,0,0,0,0,1
-1071936,Habil Özbakır,2026,TR4B,83917,False,11,3,0,19,0,0,0,0,1
+1071936,Habil Özbakır,2026,TR4B,83917,False,12,3,0,19,0,0,0,0,1
 1071936,Habil Özbakır,2026,TR1,126,False,3,0,0,0,0,0,0,0,0
 1303293,Muhammed Baltacı,2026,TRP,9197,False,2,0,0,0,0,0,0,0,0
-1303293,Muhammed Baltacı,2026,TR4A,9197,False,11,11,0,799,2,0,0,0,1
+1303293,Muhammed Baltacı,2026,TR4A,9197,False,12,12,0,853,2,0,0,0,1
 616467,Yusuf Karagöz,2026,TRP,45238,False,1,1,0,90,0,0,0,0,0
-616467,Yusuf Karagöz,2026,TR3B,45238,False,10,1,0,90,0,0,0,0,0
+616467,Yusuf Karagöz,2026,TR3B,45238,False,11,1,0,90,0,0,0,0,0
 616467,Yusuf Karagöz,2026,TR1,11282,False,3,0,0,0,0,0,0,0,0
 745596,Batuhan Yavuz,2026,TRP,924,False,1,1,0,90,0,0,0,0,0
 745596,Batuhan Yavuz,2026,TR2,924,False,9,0,0,0,0,0,0,0,0
 745596,Batuhan Yavuz,2026,TR1,11282,False,3,0,0,0,0,0,0,0,0
 1243736,Yusuf Can Karademir,2026,U19Q,22585,True,3,3,0,193,1,0,0,0,0
 1243736,Yusuf Can Karademir,2026,TRP,107563,False,1,1,0,44,0,0,0,0,0
-1243736,Yusuf Can Karademir,2026,TR4A,107563,False,11,8,0,470,1,0,0,0,1
+1243736,Yusuf Can Karademir,2026,TR4A,107563,False,12,8,0,470,1,0,0,0,1
 1243736,Yusuf Can Karademir,2026,TR1,11282,False,3,0,0,0,0,0,0,0,0
 1243736,Yusuf Can Karademir,2026,T191,73902,False,2,2,0,180,0,0,0,0,0
 647120,Veysel Ünal,2026,TRP,2330,False,2,0,0,0,0,0,0,0,0
-647120,Veysel Ünal,2026,TR4B,2330,False,11,9,0,610,3,1,0,0,1
+647120,Veysel Ünal,2026,TR4B,2330,False,12,9,0,610,3,1,0,0,1
 647120,Veysel Ünal,2026,TR1,11282,False,3,0,0,0,0,0,0,0,0
 1185812,Utku Eriş,2026,TRP,27603,False,2,2,0,154,0,0,0,0,0
-1185812,Utku Eriş,2026,TR3B,27603,False,9,4,0,288,0,0,0,0,1
+1185812,Utku Eriş,2026,TR3B,27603,False,10,4,0,288,0,0,0,0,1
 1185812,Utku Eriş,2026,TR1,2293,False,3,0,3,0,0,0,0,0,0
 1182902,Eric Konaté,2026,TR1,2293,False,3,0,0,0,0,0,0,0,0
 1182902,Eric Konaté,2026,ALBP,22140,False,1,0,0,0,0,0,0,0,0
 1182902,Eric Konaté,2026,ALB1,22140,False,9,0,0,0,0,0,0,0,0
 1233291,Berke Özçelik,2026,TRP,44352,False,2,2,0,101,0,0,0,0,0
-1233291,Berke Özçelik,2026,TR4C,44352,False,11,0,0,0,0,0,0,0,0
+1233291,Berke Özçelik,2026,TR4C,44352,False,12,0,0,0,0,0,0,0,0
 1233291,Berke Özçelik,2026,TR1,2293,False,3,0,0,0,0,0,0,0,0
 1233291,Berke Özçelik,2026,T191,73906,False,3,3,0,176,2,0,0,0,2
 1047598,Kaan Akyazı,2026,TRP,2319,False,1,1,0,43,0,0,0,0,0
-1047598,Kaan Akyazı,2026,TR3B,2319,False,9,3,0,65,0,0,0,0,0
+1047598,Kaan Akyazı,2026,TR3B,2319,False,10,3,0,65,0,0,0,0,0
 1047598,Kaan Akyazı,2026,TR1,2293,False,3,0,3,0,0,0,0,0,0
 867079,Ramazan Özkanlı,2026,TRP,50820,False,2,2,0,155,0,0,0,0,0
-867079,Ramazan Özkanlı,2026,TR4C,50820,False,11,1,0,90,0,0,0,0,0
+867079,Ramazan Özkanlı,2026,TR4C,50820,False,12,1,0,90,0,0,0,0,0
 867079,Ramazan Özkanlı,2026,TR1,10484,False,3,0,0,0,0,0,0,0,0
 289713,Mamadou Fall,2026,TRP,924,False,1,0,0,0,0,0,0,0,0
 289713,Mamadou Fall,2026,TR2,924,False,9,9,0,587,1,0,8,3,0
 289713,Mamadou Fall,2026,TR1,10484,False,3,0,3,0,0,0,0,0,0
 872050,Enes Yiğit,2026,TRP,48569,False,3,2,0,180,0,0,0,0,2
-872050,Enes Yiğit,2026,TR4B,48569,False,11,6,0,378,0,0,0,0,0
+872050,Enes Yiğit,2026,TR4B,48569,False,12,7,0,423,0,0,0,0,0
 872050,Enes Yiğit,2026,TR1,39722,False,3,0,0,0,0,0,0,0,0
 863611,Enes Karakaş,2026,TRP,2330,False,2,2,0,114,0,0,0,0,0
-863611,Enes Karakaş,2026,TR4B,2330,False,11,8,0,375,0,0,0,0,2
+863611,Enes Karakaş,2026,TR4B,2330,False,12,9,0,420,0,0,0,0,2
 863611,Enes Karakaş,2026,TR1,39722,False,3,0,0,0,0,0,0,0,0
 1489335,Kerem Erener,2026,TRP,84002,False,1,0,0,0,0,0,0,0,0
-1489335,Kerem Erener,2026,TR4C,84002,False,11,10,0,751,2,4,0,0,2
+1489335,Kerem Erener,2026,TR4C,84002,False,12,11,0,791,2,4,0,0,2
 1489335,Kerem Erener,2026,TR1,39722,False,3,0,3,0,0,0,0,0,0
 875254,Berat Can Sebat,2026,TRP,99649,False,2,1,0,90,0,0,0,0,1
-875254,Berat Can Sebat,2026,TR4A,99649,False,11,8,0,335,0,0,0,0,0
+875254,Berat Can Sebat,2026,TR4A,99649,False,12,9,0,339,0,0,0,0,0
 875254,Berat Can Sebat,2026,TR1,820,False,3,0,0,0,0,0,0,0,0
 934617,Emirhan Ünal,2026,TR1,820,False,3,0,0,0,0,0,0,0,0
 714612,Dilhan Demir,2026,TR1,820,False,3,0,3,0,0,0,0,0,0
 714612,Dilhan Demir,2026,TR1,12382,False,8,0,8,0,0,0,0,0,0
 1225269,Erdem Çalık,2026,TRP,22089,False,1,1,0,83,0,0,0,0,0
-1225269,Erdem Çalık,2026,TR4A,22089,False,11,11,0,487,0,0,0,0,1
+1225269,Erdem Çalık,2026,TR4A,22089,False,12,12,0,546,0,0,0,0,1
 1225269,Erdem Çalık,2026,TR1,7160,False,2,0,2,0,0,0,0,0,0
 669000,Habib Keïta,2026,TR1,120,False,3,0,0,0,0,0,0,0,0
-1362377,Mikdat Çil,2026,TRP,70142,False,1,1,0,90,0,0,0,0,0
-1362377,Mikdat Çil,2026,TR4B,70142,False,11,4,0,231,0,0,0,0,0
-1362377,Mikdat Çil,2026,TR1,120,False,2,0,0,0,0,0,0,0,0
 410158,Rodrigo Becão,2026,TR1,36,False,4,0,0,0,0,0,0,0,0
 410158,Rodrigo Becão,2026,RUP,59024,False,2,1,1,45,0,0,0,0,0
 410158,Rodrigo Becão,2026,RU1,59024,False,7,5,0,443,0,1,2,0,1
 410158,Rodrigo Becão,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
+1362377,Mikdat Çil,2026,TRP,70142,False,1,1,0,90,0,0,0,0,0
+1362377,Mikdat Çil,2026,TR4B,70142,False,12,5,0,321,0,0,0,0,0
+1362377,Mikdat Çil,2026,TR1,120,False,2,0,0,0,0,0,0,0,0
 1201580,Yusuf Yılmaz,2026,TRP,99652,False,1,0,0,0,0,0,0,0,0
-1201580,Yusuf Yılmaz,2026,TR4B,99652,False,10,10,0,900,0,0,0,0,0
+1201580,Yusuf Yılmaz,2026,TR4B,99652,False,11,11,0,990,0,0,0,0,0
 1201580,Yusuf Yılmaz,2026,TR1,6890,False,4,0,3,0,0,0,0,0,0
 1201580,Yusuf Yılmaz,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 1460268,Albert Gomez,2026,TR1,6890,False,4,0,0,0,0,0,0,0,0
 1460268,Albert Gomez,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 1460268,Albert Gomez,2026,AZ1,8031,False,7,0,0,0,0,0,0,0,0
-1133732,Abdou Aziz Fall,2026,T191,41854,False,10,2,3,56,0,0,0,0,0
-1583411,Muhammed Damar,2026,T191,120040,False,11,9,0,810,0,0,0,0,2
+1133732,Abdou Aziz Fall,2026,T191,41854,False,10,3,3,142,0,0,0,0,0
+1583411,Muhammed Damar,2026,T191,120040,False,11,10,0,900,0,0,0,0,2
 1048119,Taha Güneş,2026,TR1,2832,False,7,0,6,0,0,0,0,0,0
 1474871,Muhammet Akmelek,2026,T191,74653,False,11,10,1,868,4,0,0,0,2
 1189059,Berk Deniz Çukurcu,2026,T191,74474,False,11,2,0,180,0,0,0,0,0
 1210236,Arda Akgül,2026,TR1,820,False,7,0,0,0,0,0,0,0,0
 1487376,Yiğit Baran Karaoğlan,2026,TR1,39722,False,7,0,0,0,0,0,0,0,0
-292199,Uğurcan Çakır,2026,UNLA,3381,True,4,3,1,267,0,0,0,0,0
+292199,Uğurcan Çakır,2026,UNLA,3381,True,6,4,2,357,0,0,0,0,0
 292199,Uğurcan Çakır,2026,TR1,141,False,11,10,0,900,0,0,0,0,0
 292199,Uğurcan Çakır,2026,CL,141,False,4,4,0,360,0,0,0,0,0
 727077,Jankat Yılmaz,2026,TR1,141,False,11,1,0,90,0,0,0,0,0
@@ -762,7 +768,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 114422,Günay Güvenç,2026,CL,141,False,4,0,2,0,0,0,0,0,0
 1178926,Arda Yılmaz,2026,U19Q,22585,True,3,2,0,114,0,0,0,0,0
 1178926,Arda Yılmaz,2026,TR1,141,False,11,0,0,0,0,0,0,0,0
-1178926,Arda Yılmaz,2026,T191,41591,False,9,6,0,540,0,0,0,0,0
+1178926,Arda Yılmaz,2026,T191,41591,False,10,7,0,630,0,0,0,0,0
 1178926,Arda Yılmaz,2026,CL,141,False,4,0,4,0,0,0,0,0,0
 1178926,Arda Yılmaz,2026,19YL,45512,False,4,4,0,360,0,0,0,0,0
 648779,Wilfried Singo,2026,TR1,141,False,11,5,5,140,0,0,0,0,0
@@ -770,9 +776,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1105505,Enes Emre Büyük,2026,TR1,141,False,11,0,0,0,0,0,0,0,0
 1105505,Enes Emre Büyük,2026,CL,141,False,4,0,0,0,0,0,0,0,0
 341429,Davinson Sánchez,2026,TR1,141,False,11,11,0,950,1,1,10,2,3
-341429,Davinson Sánchez,2026,FS,3816,True,3,3,0,270,0,0,0,0,0
+341429,Davinson Sánchez,2026,FS,3816,True,4,4,0,360,0,0,0,0,0
 341429,Davinson Sánchez,2026,CL,141,False,4,4,0,360,0,1,1,1,0
-332798,Roland Sallai,2026,UNLB,3468,True,4,0,4,0,0,0,0,0,0
+332798,Roland Sallai,2026,UNLB,3468,True,5,1,4,86,0,0,1,1,0
 332798,Roland Sallai,2026,TR1,141,False,11,10,0,859,1,2,15,4,3
 332798,Roland Sallai,2026,CL,141,False,4,4,0,271,0,1,2,1,2
 475413,Sacha Boey,2026,L1,27,False,9,3,0,46,0,0,1,0,0
@@ -781,10 +787,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 475413,Sacha Boey,2026,CL,27,False,4,1,0,1,0,0,0,0,0
 375137,Ismail Jakobs,2026,TR1,141,False,11,10,0,662,0,1,7,1,0
 375137,Ismail Jakobs,2026,CL,141,False,4,4,0,347,0,0,0,0,2
-199316,Abdülkerim Bardakcı,2026,UNLA,3381,True,4,4,0,315,0,0,5,0,2
+199316,Abdülkerim Bardakcı,2026,UNLA,3381,True,6,5,1,405,1,0,9,1,2
 199316,Abdülkerim Bardakcı,2026,TR1,141,False,11,9,2,701,2,0,10,4,1
 199316,Abdülkerim Bardakcı,2026,CL,141,False,4,2,0,180,0,0,0,0,0
-616894,Eren Elmalı,2026,UNLA,3381,True,4,3,0,194,0,1,3,0,0
+616894,Eren Elmalı,2026,UNLA,3381,True,6,4,0,275,0,1,3,0,0
 616894,Eren Elmalı,2026,TR1,141,False,11,11,0,443,0,0,3,2,1
 616894,Eren Elmalı,2026,CL,141,False,4,4,0,208,0,0,0,0,1
 697149,Kazımcan Karataş,2026,TR1,141,False,11,3,0,27,0,0,3,1,0
@@ -794,24 +800,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1048118,Arda Ünyay,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
 1048118,Arda Ünyay,2026,TR1,141,False,11,0,0,0,0,0,0,0,0
 1048118,Arda Ünyay,2026,CL,141,False,4,0,4,0,0,0,0,0,0
-1371546,Dağhan Kahraman,2026,U19Q,22585,True,4,3,0,203,1,0,0,0,0
-1371546,Dağhan Kahraman,2026,T191,41591,False,11,10,0,900,3,0,0,0,1
+1371546,Dağhan Kahraman,2026,U19Q,22585,True,5,3,0,203,1,0,0,0,0
+1371546,Dağhan Kahraman,2026,T191,41591,False,11,11,0,990,3,0,0,0,1
 1371546,Dağhan Kahraman,2026,FS,22585,True,3,2,0,135,1,0,0,0,0
 1371546,Dağhan Kahraman,2026,19YL,45512,False,4,3,0,266,0,0,0,0,2
-1417528,Cihan Akgün,2026,T191,41591,False,11,9,0,606,0,0,0,0,2
-1417528,Cihan Akgün,2026,FS,22584,True,3,3,0,186,0,0,0,0,0
+1417528,Cihan Akgün,2026,T191,41591,False,11,10,0,696,0,0,0,0,2
+1417528,Cihan Akgün,2026,FS,22584,True,4,4,0,250,0,0,0,0,0
 1417528,Cihan Akgün,2026,19YL,45512,False,4,3,1,254,0,0,0,0,1
 553469,Gabriel Sara,2026,TR1,141,False,11,11,0,711,2,5,24,7,1
 553469,Gabriel Sara,2026,CL,141,False,4,4,0,185,0,1,4,1,0
 1396595,Renato Nhaga,2026,TR1,141,False,11,4,0,47,0,0,1,0,0
 1396595,Renato Nhaga,2026,CL,141,False,4,2,0,15,0,0,0,0,0
-1396595,Renato Nhaga,2026,AFCQ,3701,True,2,2,0,131,0,1,3,0,0
+1396595,Renato Nhaga,2026,AFCQ,3701,True,3,3,0,151,1,1,5,2,0
 318077,Lucas Torreira,2026,TR1,141,False,11,10,1,788,1,3,6,2,0
-318077,Lucas Torreira,2026,FS,3449,True,3,3,0,225,0,0,0,0,0
+318077,Lucas Torreira,2026,FS,3449,True,4,4,0,301,0,0,0,0,0
 318077,Lucas Torreira,2026,CL,141,False,4,4,0,346,0,1,3,0,1
 170934,Mario Lemina,2026,TR1,141,False,11,8,2,513,1,0,4,1,0
 170934,Mario Lemina,2026,CL,141,False,4,3,1,169,0,0,1,1,0
-170934,Mario Lemina,2026,AFCQ,5704,True,2,0,2,0,0,0,0,0,0
+170934,Mario Lemina,2026,AFCQ,5704,True,3,1,2,75,0,0,3,0,0
 53622,İlkay Gündoğan,2026,TR1,141,False,11,3,0,64,0,0,0,0,0
 53622,İlkay Gündoğan,2026,CL,141,False,4,2,0,10,0,0,0,0,0
 469787,Berkan Kutlu,2026,TRP,120,False,1,1,0,30,0,1,0,0,0
@@ -821,35 +827,36 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 884821,Gökdeniz Gürpüz,2026,L3,1,False,13,6,0,253,2,1,1,1,2
 884821,Gökdeniz Gürpüz,2026,DFB,1,False,1,0,0,0,0,0,0,0,0
 1076673,Ege Araç,2026,TRP,83909,False,1,1,0,90,0,0,0,0,0
-1076673,Ege Araç,2026,TR3B,83909,False,10,10,0,562,0,0,0,0,3
+1076673,Ege Araç,2026,TR3B,83909,False,11,11,0,584,0,0,0,0,4
 1076673,Ege Araç,2026,T191,41591,False,3,0,0,0,0,0,0,0,0
 1085751,Furkan Koçak,2026,TR1,141,False,11,0,0,0,0,0,0,0,0
-1085751,Furkan Koçak,2026,T191,41591,False,11,10,0,833,2,4,0,0,1
+1085751,Furkan Koçak,2026,T191,41591,False,11,11,0,923,2,4,0,0,2
 1085751,Furkan Koçak,2026,CL,141,False,4,0,0,0,0,0,0,0,0
 1085751,Furkan Koçak,2026,19YL,45512,False,4,4,0,360,0,1,0,0,1
-1223633,Eyüp Karasu,2026,T191,41591,False,11,10,0,790,5,0,0,0,1
+1223633,Eyüp Karasu,2026,T191,41591,False,11,11,0,880,5,0,0,0,1
 1223633,Eyüp Karasu,2026,19YL,45512,False,4,4,0,349,0,1,0,0,0
 401923,Victor Osimhen,2026,TR1,141,False,11,8,3,555,9,3,57,25,1
 401923,Victor Osimhen,2026,CL,141,False,4,3,1,264,1,0,12,2,0
-339332,Noa Lang,2026,UNLA,3379,True,4,2,0,103,0,0,3,0,1
+339332,Noa Lang,2026,UNLA,3379,True,5,3,0,118,0,0,4,1,1
 339332,Noa Lang,2026,IT1,6195,False,11,9,0,604,1,2,15,6,1
 339332,Noa Lang,2026,CL,6195,False,4,3,0,121,0,0,5,4,1
-541537,Barış Alper Yılmaz,2026,UNLA,3381,True,4,3,1,213,1,0,4,1,2
+541537,Barış Alper Yılmaz,2026,UNLA,3381,True,6,5,1,374,1,0,6,2,3
 541537,Barış Alper Yılmaz,2026,TR1,141,False,11,10,0,750,2,1,17,6,1
 541537,Barış Alper Yılmaz,2026,CL,141,False,4,4,0,300,0,1,4,0,1
 392085,Nicolò Zaniolo,2026,UNLA,3376,True,4,0,4,0,0,0,0,0,0
 392085,Nicolò Zaniolo,2026,IT1,410,False,11,6,5,388,1,0,14,1,2
 392085,Nicolò Zaniolo,2026,CIT,410,False,2,1,1,63,0,0,4,1,1
-396908,Yunus Akgün,2026,UNLA,3381,True,4,2,0,133,0,0,3,2,0
+396908,Yunus Akgün,2026,UNLA,3381,True,6,4,0,244,0,0,4,3,0
 396908,Yunus Akgün,2026,TR1,141,False,11,11,0,823,2,1,18,5,1
 396908,Yunus Akgün,2026,CL,141,False,4,4,0,309,1,0,2,2,0
-857818,Yáser Asprilla,2026,FS,3816,True,3,3,0,154,0,0,5,1,1
-857818,Yáser Asprilla,2026,ES2,12321,False,13,11,0,553,5,1,20,10,0
+857818,Yáser Asprilla,2026,FS,3816,True,4,4,0,184,0,0,5,1,1
+857818,Yáser Asprilla,2026,ES2,12321,False,14,11,0,553,5,1,20,10,0
 857818,Yáser Asprilla,2026,CDR,12321,False,1,0,0,0,0,0,0,0,0
 192565,Leroy Sané,2026,TR1,141,False,11,11,0,450,0,0,12,5,1
 192565,Leroy Sané,2026,CL,141,False,4,4,0,117,0,0,2,0,0
 452084,Ahmed Kutucu,2026,TR1,126,False,11,9,2,604,0,0,27,8,0
 548031,Yusuf Demir,2026,ofb,170,False,3,2,1,111,1,0,0,0,0
+548031,Yusuf Demir,2026,UNLB,3383,True,5,0,0,0,0,0,0,0,0
 548031,Yusuf Demir,2026,ECLQ,170,False,6,5,0,359,1,2,17,5,0
 548031,Yusuf Demir,2026,A1,170,False,12,12,0,1016,5,6,30,15,1
 1070983,Armando Güner,2026,TR1,141,False,11,0,7,0,0,0,0,0,0
@@ -862,9 +869,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1189066,Çağrı Balta,2026,CL,36,False,4,0,0,0,0,0,0,0,0
 1189066,Çağrı Balta,2026,19YL,145167,False,4,4,0,311,0,1,0,0,1
 495722,Devis Vásquez,2026,IT1,12,False,11,1,0,90,0,0,0,0,0
-495722,Devis Vásquez,2026,FS,3816,True,3,0,0,0,0,0,0,0,0
+495722,Devis Vásquez,2026,FS,3816,True,4,0,0,0,0,0,0,0,0
 495722,Devis Vásquez,2026,CL,12,False,4,1,0,90,0,0,0,0,0
-500091,Ersin Destanoğlu,2026,UNLA,3381,True,4,0,0,0,0,0,0,0,0
+500091,Ersin Destanoğlu,2026,UNLA,3381,True,6,0,0,0,0,0,0,0,0
 500091,Ersin Destanoğlu,2026,UAEP,2524,False,1,1,0,90,0,0,0,0,0
 500091,Ersin Destanoğlu,2026,UAE1,2524,False,7,7,0,630,0,0,0,0,0
 500091,Ersin Destanoğlu,2026,ACL2,2524,False,4,4,0,360,0,0,0,0,0
@@ -875,11 +882,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 683895,Emmanuel Agbadou,2026,TR1,114,False,11,11,0,908,0,1,5,0,1
 683895,Emmanuel Agbadou,2026,ELQ,114,False,6,3,0,30,0,0,0,0,0
 683895,Emmanuel Agbadou,2026,EL,114,False,4,3,0,205,0,0,1,0,1
-683895,Emmanuel Agbadou,2026,AFCQ,3591,True,2,1,0,90,0,0,0,0,0
+683895,Emmanuel Agbadou,2026,AFCQ,3591,True,3,2,0,91,0,0,0,0,0
 935552,Emir Yaşar,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
 935552,Emir Yaşar,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
 935552,Emir Yaşar,2026,EL,114,False,4,0,0,0,0,0,0,0,0
-531332,Emirhan Topçu,2026,UNLA,3381,True,4,0,1,0,0,0,0,0,0
+531332,Emirhan Topçu,2026,UNLA,3381,True,6,1,1,90,0,0,0,0,0
 531332,Emirhan Topçu,2026,TR1,114,False,11,9,0,719,1,0,2,1,3
 531332,Emirhan Topçu,2026,ELQ,114,False,6,6,0,540,0,0,6,2,1
 531332,Emirhan Topçu,2026,EL,114,False,4,3,0,270,0,0,0,0,1
@@ -890,10 +897,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 354482,Amir Murillo,2026,FS,3577,True,3,3,0,225,0,0,0,0,0
 354482,Amir Murillo,2026,ELQ,114,False,6,6,0,535,1,0,9,3,1
 354482,Amir Murillo,2026,EL,114,False,4,4,0,296,2,0,3,2,1
+354482,Amir Murillo,2026,CNNF,3577,True,2,2,0,180,0,1,0,0,0
 477930,Rıdvan Yılmaz,2026,TR1,114,False,11,10,1,788,1,1,5,1,1
 477930,Rıdvan Yılmaz,2026,ELQ,114,False,6,5,0,324,0,2,1,0,0
 477930,Rıdvan Yılmaz,2026,EL,114,False,4,2,0,8,0,0,0,0,0
-500054,David Jurásek,2026,UNLA,3445,True,4,0,4,0,0,0,0,0,0
+500054,David Jurásek,2026,UNLA,3445,True,6,1,4,90,0,0,0,0,0
 500054,David Jurásek,2026,TSP,62,False,2,1,0,77,1,0,0,0,0
 500054,David Jurásek,2026,TS1,62,False,14,5,7,295,2,1,8,4,0
 500054,David Jurásek,2026,CL,62,False,4,2,2,33,0,1,1,0,0
@@ -901,7 +909,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1043003,Yasin Özcan,2026,ELQ,114,False,6,2,0,29,0,0,1,0,1
 1043003,Yasin Özcan,2026,EL,114,False,4,0,0,0,0,0,0,0,0
 810100,Taylan Bulut,2026,TR1,114,False,11,5,0,206,0,0,1,0,0
-810100,Taylan Bulut,2026,SU20,5709,True,3,3,0,180,0,0,2,0,0
+810100,Taylan Bulut,2026,SU20,5709,True,4,4,0,249,0,0,2,0,0
 810100,Taylan Bulut,2026,ELQ,114,False,6,1,0,5,0,0,0,0,0
 810100,Taylan Bulut,2026,EL,114,False,4,1,0,64,0,0,0,0,0
 462772,Tayyip Talha Sanuç,2026,TR1,126,False,11,5,0,82,0,0,0,0,0
@@ -909,15 +917,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 873445,Emrecan Terzi,2026,TRP,74664,False,1,1,0,2,0,0,0,0,0
 873445,Emrecan Terzi,2026,TR2,74664,False,14,0,0,0,0,0,0,0,0
 1342158,Asım Efe Işık,2026,TRP,44008,False,1,1,0,90,0,0,0,0,1
-1342158,Asım Efe Işık,2026,TR3A,44008,False,10,0,0,0,0,0,0,0,0
+1342158,Asım Efe Işık,2026,TR3A,44008,False,11,0,0,0,0,0,0,0,0
 1342158,Asım Efe Işık,2026,TR1,114,False,3,0,0,0,0,0,0,0,0
 1342158,Asım Efe Işık,2026,T191,41852,False,3,0,0,0,0,0,0,0,0
 1342158,Asım Efe Işık,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
-454567,Orkun Kökçü,2026,UNLA,3381,True,4,1,3,45,0,0,0,0,0
+454567,Orkun Kökçü,2026,UNLA,3381,True,6,3,3,112,0,0,1,0,0
 454567,Orkun Kökçü,2026,TR1,114,False,11,8,3,655,2,2,26,8,4
 454567,Orkun Kökçü,2026,ELQ,114,False,6,5,0,436,3,0,24,6,0
 454567,Orkun Kökçü,2026,EL,114,False,4,3,1,130,1,2,4,3,0
-543771,Kristjan Asllani,2026,UNLC,3561,True,4,4,0,343,3,1,8,4,1
+543771,Kristjan Asllani,2026,UNLC,3561,True,6,6,0,523,3,1,15,6,1
 543771,Kristjan Asllani,2026,UAEP,2524,False,1,1,0,27,0,0,0,0,0
 543771,Kristjan Asllani,2026,UAE1,2524,False,5,4,0,190,1,0,6,4,0
 543771,Kristjan Asllani,2026,IT1,46,False,1,0,0,0,0,0,0,0,0
@@ -926,13 +934,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 900938,Junior Olaitan,2026,FS,3955,True,1,1,0,64,0,0,3,1,0
 900938,Junior Olaitan,2026,ELQ,114,False,6,6,0,450,0,2,7,1,0
 900938,Junior Olaitan,2026,EL,114,False,4,4,0,276,2,3,10,4,0
-900938,Junior Olaitan,2026,AFCQ,3955,True,2,2,0,171,0,0,2,1,1
+900938,Junior Olaitan,2026,AFCQ,3955,True,3,3,0,238,0,1,7,2,1
 875337,Demir Ege Tıknaz,2026,UNLA,3381,True,4,2,0,19,0,0,0,0,0
 875337,Demir Ege Tıknaz,2026,UCOL,1075,False,3,2,0,109,0,0,0,0,0
 875337,Demir Ege Tıknaz,2026,POCP,1075,False,1,1,0,73,0,0,6,1,0
 875337,Demir Ege Tıknaz,2026,PO1,1075,False,11,7,1,434,0,2,3,2,1
 875337,Demir Ege Tıknaz,2026,ECLQ,1075,False,6,6,0,308,0,0,1,0,0
-583917,Ernest Muci,2026,UNLC,3561,True,4,4,0,250,1,0,8,2,0
+583917,Ernest Muci,2026,UNLC,3561,True,6,5,1,332,2,0,12,5,0
 583917,Ernest Muci,2026,UCOL,449,False,3,2,0,106,0,1,5,0,0
 583917,Ernest Muci,2026,TR1,449,False,11,10,1,709,3,6,28,12,2
 583917,Ernest Muci,2026,ELQ,449,False,2,2,0,72,0,0,5,1,0
@@ -945,7 +953,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 274839,Wilfred Ndidi,2026,FS,3444,True,1,0,0,0,0,0,0,0,0
 274839,Wilfred Ndidi,2026,ELQ,114,False,6,2,2,38,0,1,1,0,0
 274839,Wilfred Ndidi,2026,EL,114,False,4,3,0,199,1,0,1,1,1
-274839,Wilfred Ndidi,2026,AFCQ,3444,True,2,2,0,166,0,0,3,0,0
+274839,Wilfred Ndidi,2026,AFCQ,3444,True,3,3,0,256,0,1,5,1,0
 461951,Kartal Yılmaz,2026,TR1,114,False,11,4,0,47,0,0,0,0,0
 461951,Kartal Yılmaz,2026,ELQ,114,False,6,2,0,103,0,0,2,0,1
 461951,Kartal Yılmaz,2026,EL,114,False,4,1,0,64,0,0,0,0,0
@@ -956,7 +964,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 331726,Tammy Abraham,2026,CL,405,False,4,4,0,54,1,0,2,1,0
 331726,Tammy Abraham,2026,CGB,405,False,2,2,0,84,2,0,3,2,0
 639246,Hyeon-gyu Oh,2026,TR1,114,False,11,9,0,274,1,1,13,5,0
-639246,Hyeon-gyu Oh,2026,FS,3589,True,4,4,0,233,1,0,7,5,0
+639246,Hyeon-gyu Oh,2026,FS,3589,True,5,5,0,299,2,0,9,6,0
 639246,Hyeon-gyu Oh,2026,ELQ,114,False,6,6,0,411,1,1,21,5,2
 639246,Hyeon-gyu Oh,2026,EL,114,False,4,4,0,238,2,1,9,2,1
 649016,El Bilal Touré,2026,IT1,130,False,11,11,0,832,0,2,13,7,0
@@ -968,7 +976,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 242063,Vaclav Cerny,2026,TR1,114,False,11,10,0,646,2,1,15,7,1
 242063,Vaclav Cerny,2026,ELQ,114,False,6,6,0,411,1,1,14,3,2
 242063,Vaclav Cerny,2026,EL,114,False,4,3,1,169,1,0,4,1,0
-1074584,Keny Arroyo,2026,FS,5750,True,3,3,0,152,0,0,1,0,1
+1074584,Keny Arroyo,2026,FS,5750,True,4,4,0,242,0,0,7,2,1
 238055,Rafa Silva,2026,POCP,294,False,1,1,0,12,0,1,0,0,0
 238055,Rafa Silva,2026,PO1,294,False,11,11,0,708,1,0,17,5,0
 238055,Rafa Silva,2026,ELQ,294,False,6,6,0,415,4,1,11,8,0
@@ -976,7 +984,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1071252,Mustafa Hekimoğlu,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
 1071252,Mustafa Hekimoğlu,2026,ELQ,114,False,6,2,0,7,0,0,0,0,0
 1071252,Mustafa Hekimoğlu,2026,EL,114,False,4,0,0,0,0,0,0,0,0
-291739,Milot Rashica,2026,UNLB,53982,True,4,3,0,59,0,0,4,0,0
+291739,Milot Rashica,2026,UNLB,53982,True,5,4,0,127,0,0,5,1,0
 291739,Milot Rashica,2026,TR1,114,False,11,3,3,28,0,0,3,3,0
 291739,Milot Rashica,2026,ELQ,114,False,6,5,0,94,1,0,1,1,0
 291739,Milot Rashica,2026,EL,114,False,4,0,4,0,0,0,0,0,0
@@ -985,13 +993,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1076666,Ahmet Sami Bircan,2026,EL,114,False,4,0,0,0,0,0,0,0,0
 1254161,Tuna Baran Demir,2026,U19Q,22585,True,3,3,0,104,1,1,0,0,1
 1254161,Tuna Baran Demir,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
-1254161,Tuna Baran Demir,2026,T191,41852,False,11,9,0,755,7,0,0,0,0
+1254161,Tuna Baran Demir,2026,T191,41852,False,11,10,0,845,7,0,0,0,0
 1254161,Tuna Baran Demir,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
 1254161,Tuna Baran Demir,2026,EL,114,False,4,0,0,0,0,0,0,0,0
 238223,Ederson,2026,TR1,36,False,11,10,1,900,0,0,0,0,1
 238223,Ederson,2026,CLQ,36,False,6,2,1,180,0,0,0,0,0
 238223,Ederson,2026,CL,36,False,4,4,0,360,0,0,0,0,0
-1254162,Ali Pağda,2026,T191,41852,False,11,7,2,328,2,0,0,0,2
+1254162,Ali Pağda,2026,T191,41852,False,11,8,2,418,2,0,0,0,2
 286170,Tarık Çetin,2026,TR1,36,False,11,1,0,90,0,0,0,0,0
 286170,Tarık Çetin,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
 286170,Tarık Çetin,2026,CL,36,False,4,0,0,0,0,0,0,0,0
@@ -1002,9 +1010,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 591361,Jayden Oosterwolde,2026,CLQ,36,False,6,3,3,210,0,0,1,0,1
 591361,Jayden Oosterwolde,2026,CL,36,False,4,0,4,0,0,0,0,0,0
 1100642,Yusuf Akçiçek,2026,SAKC,1114,False,1,1,0,90,0,0,1,1,0
-1100642,Yusuf Akçiçek,2026,SA1,1114,False,12,2,0,53,0,0,1,1,0
+1100642,Yusuf Akçiçek,2026,SA1,1114,False,11,2,0,53,0,0,1,1,0
 1100642,Yusuf Akçiçek,2026,ACLE,1114,False,4,4,0,336,0,1,2,1,0
-204069,Milan Škriniar,2026,UNLC,3503,True,4,4,0,360,0,0,6,1,0
+204069,Milan Škriniar,2026,UNLC,3503,True,5,5,0,450,0,0,7,2,0
 204069,Milan Škriniar,2026,TR1,36,False,11,11,0,970,1,0,7,3,2
 204069,Milan Škriniar,2026,CLQ,36,False,6,6,0,540,0,1,1,0,2
 204069,Milan Škriniar,2026,CL,36,False,4,4,0,360,0,1,2,1,1
@@ -1026,21 +1034,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 250844,Alexander Djiku,2026,AFCQ,3441,True,1,1,0,71,0,0,0,0,0
 851551,Ognjen Mimović,2026,UNLA,3438,True,4,0,0,0,0,0,0,0,0
 851551,Ognjen Mimović,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
-851551,Ognjen Mimović,2026,FS,9566,True,2,2,0,90,0,0,0,0,0
+851551,Ognjen Mimović,2026,FS,9566,True,5,3,0,135,0,0,0,0,0
 851551,Ognjen Mimović,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
 851551,Ognjen Mimović,2026,CL,36,False,4,0,0,0,0,0,0,0,0
 465830,Mattéo Guendouzi,2026,TR1,36,False,11,11,0,939,2,1,9,4,1
 465830,Mattéo Guendouzi,2026,CLQ,36,False,6,6,0,540,0,0,3,2,2
 465830,Mattéo Guendouzi,2026,CL,36,False,4,3,1,270,0,0,4,0,1
-320748,Sebastian Szymański,2026,UNLB,3442,True,4,4,0,327,1,1,8,5,0
+320748,Sebastian Szymański,2026,UNLB,3442,True,5,5,0,417,1,1,9,5,0
 320748,Sebastian Szymański,2026,FR1,273,False,10,8,0,493,4,1,9,4,0
 320748,Sebastian Szymański,2026,EL,273,False,4,4,0,219,0,0,3,0,0
 1442626,Kamil Efe Üregen,2026,TRP,50845,False,2,1,0,120,0,0,0,0,0
-1442626,Kamil Efe Üregen,2026,TR3B,50845,False,10,4,0,130,0,0,0,0,1
+1442626,Kamil Efe Üregen,2026,TR3B,50845,False,11,4,0,130,0,0,0,0,1
 1442626,Kamil Efe Üregen,2026,T191,41854,False,3,0,0,0,0,0,0,0,0
 401356,Edson Álvarez,2026,GB2,379,False,15,0,0,0,0,0,0,0,0
 401356,Edson Álvarez,2026,CGB,379,False,3,1,0,75,0,0,1,1,1
-613725,İsmail Yüksek,2026,UNLA,3381,True,4,4,0,297,0,0,4,2,0
+613725,İsmail Yüksek,2026,UNLA,3381,True,6,6,0,428,0,0,5,3,1
 613725,İsmail Yüksek,2026,TR1,36,False,11,8,0,342,0,0,8,4,0
 613725,İsmail Yüksek,2026,CLQ,36,False,6,3,0,85,0,0,2,1,0
 613725,İsmail Yüksek,2026,CL,36,False,4,4,0,257,0,0,2,0,2
@@ -1070,28 +1078,28 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 671591,Dorgeles Nene,2026,FS,3674,True,2,1,0,65,0,0,0,0,0
 671591,Dorgeles Nene,2026,CLQ,36,False,6,2,4,31,0,0,3,0,1
 671591,Dorgeles Nene,2026,CL,36,False,4,2,0,48,0,0,3,1,0
-671591,Dorgeles Nene,2026,AFCQ,3674,True,2,2,0,154,2,0,6,3,0
+671591,Dorgeles Nene,2026,AFCQ,3674,True,3,3,0,218,2,0,7,4,0
 649317,Jhon Durán,2026,POCP,294,False,1,1,0,84,1,0,5,1,0
 649317,Jhon Durán,2026,PO1,294,False,11,10,0,113,1,0,8,1,2
 649317,Jhon Durán,2026,ELQ,294,False,6,5,0,162,1,0,11,3,0
 649317,Jhon Durán,2026,EL,294,False,4,3,0,237,2,0,11,4,1
 433049,Youssef En-Nesyri,2026,SAKC,8023,False,1,0,0,0,0,0,0,0,0
-433049,Youssef En-Nesyri,2026,SA1,8023,False,12,11,0,665,7,1,27,10,1
+433049,Youssef En-Nesyri,2026,SA1,8023,False,11,11,0,665,7,1,27,10,1
 433049,Youssef En-Nesyri,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
-433049,Youssef En-Nesyri,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
+433049,Youssef En-Nesyri,2026,AFCQ,3575,True,3,1,0,21,1,0,1,1,0
 433049,Youssef En-Nesyri,2026,ACLE,8023,False,4,4,0,271,1,0,9,4,0
 433049,Youssef En-Nesyri,2026,ACEQ,8023,False,1,1,0,72,0,1,0,0,0
 283223,Emre Mor,2026,NL1,467,False,12,4,8,73,0,1,4,0,0
 283223,Emre Mor,2026,EL,467,False,4,0,4,0,0,0,0,0,0
 283223,Emre Mor,2026,CLQ,467,False,4,3,1,163,1,0,4,2,0
-563749,Oğuz Aydın,2026,UNLA,3381,True,4,4,0,234,0,1,4,1,0
+563749,Oğuz Aydın,2026,UNLA,3381,True,6,6,0,313,0,1,4,1,0
 563749,Oğuz Aydın,2026,TR1,36,False,11,11,0,629,3,5,19,8,2
 563749,Oğuz Aydın,2026,CLQ,36,False,6,5,0,139,0,0,4,2,0
 563749,Oğuz Aydın,2026,CL,36,False,4,4,0,172,1,0,9,1,1
 45671,Cenk Tosun,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 45671,Cenk Tosun,2026,TR2,6646,False,14,12,0,653,2,0,29,9,1
 1311982,Alaettin Ekici,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
-1311982,Alaettin Ekici,2026,T191,41854,False,8,7,0,533,4,0,0,0,3
+1311982,Alaettin Ekici,2026,T191,41854,False,9,8,0,619,5,0,0,0,4
 1311982,Alaettin Ekici,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
 1311982,Alaettin Ekici,2026,CL,36,False,4,0,0,0,0,0,0,0,0
 1311982,Alaettin Ekici,2026,19YL,145167,False,4,4,0,355,2,1,0,0,2
@@ -1115,7 +1123,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 985825,Chibuike Nwaiwu,2026,TR1,449,False,11,11,0,983,1,2,9,3,4
 985825,Chibuike Nwaiwu,2026,FS,3444,True,1,0,0,0,0,0,0,0,0
 985825,Chibuike Nwaiwu,2026,ELQ,449,False,2,1,1,90,0,0,1,0,0
-985825,Chibuike Nwaiwu,2026,AFCQ,3444,True,2,0,0,0,0,0,0,0,0
+985825,Chibuike Nwaiwu,2026,AFCQ,3444,True,3,0,0,0,0,0,0,0,0
 1072017,Wagner Pina,2026,UCOL,449,False,3,3,0,200,0,1,0,0,0
 1072017,Wagner Pina,2026,TR1,449,False,11,10,0,829,1,1,4,2,0
 1072017,Wagner Pina,2026,ELQ,449,False,2,2,0,128,0,0,1,1,0
@@ -1124,15 +1132,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 665048,Arseniy Batagov,2026,TR1,449,False,11,0,11,0,0,0,0,0,0
 665048,Arseniy Batagov,2026,ELQ,449,False,2,0,2,0,0,0,0,0,0
 661212,Mathias Løvik,2026,NOPO,687,False,3,1,0,90,0,0,0,0,0
-390379,Mustafa Eskihellaç,2026,UNLA,3381,True,4,0,0,0,0,0,0,0,0
+390379,Mustafa Eskihellaç,2026,UNLA,3381,True,6,0,0,0,0,0,0,0,0
 390379,Mustafa Eskihellaç,2026,UCOL,449,False,3,1,2,87,0,0,0,0,0
 390379,Mustafa Eskihellaç,2026,TR1,449,False,11,10,1,692,0,2,8,2,1
 390379,Mustafa Eskihellaç,2026,ELQ,449,False,2,2,0,52,0,0,0,0,0
 655899,Serdar Saatçı,2026,TR1,37951,False,11,3,4,225,0,0,0,0,1
 394872,Rayyan Baniya,2026,TR1,2293,False,11,10,0,729,0,0,6,1,2
 801693,Arif Boşluk,2026,TR1,2293,False,11,1,0,90,0,0,0,0,0
-107010,Stefan Savić,2026,UNLC,11953,True,4,3,0,270,0,0,1,0,0
+107010,Stefan Savić,2026,UNLC,11953,True,6,4,1,327,0,0,2,0,1
 107010,Stefan Savić,2026,UCOL,449,False,3,0,2,0,0,0,0,0,0
+107010,Stefan Savić,2026,U17Q,40099,True,2,0,0,0,0,0,0,0,0
 107010,Stefan Savić,2026,TR1,449,False,11,11,0,989,1,0,8,4,3
 107010,Stefan Savić,2026,FS,40099,True,4,0,0,0,0,0,0,0,0
 107010,Stefan Savić,2026,ELQ,449,False,2,1,0,90,0,0,0,0,1
@@ -1140,15 +1149,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1304033,Deniz Tuncer,2026,TR2,924,False,14,5,2,214,0,0,0,0,1
 1279526,Christ Inao Oulaï,2026,IT1,430,False,11,7,0,305,0,0,3,0,2
 1279526,Christ Inao Oulaï,2026,CIT,430,False,2,2,0,122,0,0,0,0,1
-1279526,Christ Inao Oulaï,2026,AFCQ,3591,True,2,2,0,83,0,0,2,1,1
+1279526,Christ Inao Oulaï,2026,AFCQ,3591,True,3,2,0,83,0,0,2,1,1
 1304032,Yakuphan Sarıalioğlu,2026,TRP,924,False,1,0,0,0,0,0,0,0,0
 1304032,Yakuphan Sarıalioğlu,2026,TR2,924,False,14,0,0,0,0,0,0,0,0
-395234,Batista Mendy,2026,UCOL,449,False,3,3,0,200,0,0,2,0,1
-395234,Batista Mendy,2026,TR1,449,False,11,0,11,0,0,0,0,0,0
-395234,Batista Mendy,2026,ELQ,449,False,2,0,2,0,0,0,0,0,0
 674241,Tim Jabol-Folcarelli,2026,UCOL,449,False,3,2,1,106,0,0,1,0,0
 674241,Tim Jabol-Folcarelli,2026,TR1,449,False,11,4,7,123,0,0,0,0,0
 674241,Tim Jabol-Folcarelli,2026,ELQ,449,False,2,0,2,0,0,0,0,0,0
+395234,Batista Mendy,2026,UCOL,449,False,3,3,0,200,0,0,2,0,1
+395234,Batista Mendy,2026,TR1,449,False,11,0,11,0,0,0,0,0,0
+395234,Batista Mendy,2026,ELQ,449,False,2,0,2,0,0,0,0,0,0
 422281,Muhammed Cham,2026,UCOL,159,False,3,2,0,54,0,1,0,0,0
 422281,Muhammed Cham,2026,SERP,159,False,1,1,0,28,0,0,0,0,0
 422281,Muhammed Cham,2026,SER1,159,False,15,10,0,492,0,0,11,5,1
@@ -1166,15 +1175,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1189055,Oğuzhan Ertem,2026,UCOL,449,False,3,0,0,0,0,0,0,0,0
 1189055,Oğuzhan Ertem,2026,U19Q,22585,True,3,1,0,59,0,1,0,0,0
 1189055,Oğuzhan Ertem,2026,TR1,449,False,4,0,0,0,0,0,0,0,0
-1189055,Oğuzhan Ertem,2026,T191,41798,False,11,10,0,868,13,4,0,0,2
+1189055,Oğuzhan Ertem,2026,T191,41798,False,11,11,0,958,13,4,0,0,2
 1376717,Yiğithan Çubukcu,2026,UCOL,449,False,3,0,0,0,0,0,0,0,0
 1376717,Yiğithan Çubukcu,2026,TR1,449,False,11,0,0,0,0,0,0,0,0
-1376717,Yiğithan Çubukcu,2026,T191,41798,False,11,10,0,885,3,5,0,0,3
+1376717,Yiğithan Çubukcu,2026,T191,41798,False,11,11,0,958,3,5,0,0,4
 1376717,Yiğithan Çubukcu,2026,ELQ,449,False,2,0,0,0,0,0,0,0,0
 834899,Felipe Augusto,2026,RUSS,964,False,1,1,0,31,0,0,2,0,0
 834899,Felipe Augusto,2026,RUP,964,False,5,5,0,405,2,0,0,0,1
 834899,Felipe Augusto,2026,RU1,964,False,14,13,0,348,2,0,16,8,0
-417228,Danylo Sikan,2026,UNLB,3699,True,4,3,1,138,1,0,2,1,2
+417228,Danylo Sikan,2026,UNLB,3699,True,5,4,1,228,1,0,4,2,2
 417228,Danylo Sikan,2026,ELQ,58,False,6,6,0,473,5,0,8,3,2
 417228,Danylo Sikan,2026,EL,58,False,4,3,0,102,0,0,3,1,0
 417228,Danylo Sikan,2026,CCB,58,False,1,0,0,0,0,0,0,0,0
@@ -1201,7 +1210,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1209829,Onuralp Çakıroğlu,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
 1209829,Onuralp Çakıroğlu,2026,TR2,3209,False,14,3,0,14,0,0,0,0,0
 1304034,Esat Yiğit Alkurt,2026,TRP,44008,False,1,1,0,90,0,1,0,0,1
-1304034,Esat Yiğit Alkurt,2026,TR3A,44008,False,10,5,0,139,0,0,0,0,2
+1304034,Esat Yiğit Alkurt,2026,TR3A,44008,False,11,6,0,152,0,0,0,0,2
 1304034,Esat Yiğit Alkurt,2026,T191,41798,False,3,0,0,0,0,0,0,0,0
 576033,Doğan Alemdar,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
 576033,Doğan Alemdar,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
@@ -1217,7 +1226,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1057178,Luca Stancic,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 408563,Jerome Opoku,2026,TR1,6890,False,11,6,5,454,0,0,2,0,1
 408563,Jerome Opoku,2026,ECLQ,6890,False,2,1,0,29,0,0,0,0,0
-408563,Jerome Opoku,2026,AFCQ,3441,True,2,2,0,180,0,0,1,0,0
+408563,Jerome Opoku,2026,AFCQ,3441,True,3,2,0,180,0,0,1,0,0
 469976,Christopher Operi,2026,TR1,6890,False,11,5,5,423,1,0,4,1,2
 469976,Christopher Operi,2026,ECLQ,6890,False,2,1,1,90,0,0,1,0,0
 988247,Hamza Güreler,2026,TR1,6890,False,11,4,0,96,0,0,2,1,1
@@ -1237,12 +1246,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 293998,Onur Ergün,2026,TR1,6890,False,11,6,2,124,0,0,1,0,1
 293998,Onur Ergün,2026,ECLQ,6890,False,2,0,0,0,0,0,0,0,0
 754037,Abbosbek Fayzullaev,2026,TR1,6890,False,11,8,0,339,1,2,11,4,1
-754037,Abbosbek Fayzullaev,2026,FS,3563,True,3,3,0,235,0,1,1,1,1
+754037,Abbosbek Fayzullaev,2026,FS,3563,True,4,4,0,315,0,1,2,1,1
 754037,Abbosbek Fayzullaev,2026,ECLQ,6890,False,2,2,0,74,0,0,4,2,0
 372711,Amine Harit,2026,FR1,244,False,10,10,0,798,3,1,10,6,1
 372711,Amine Harit,2026,EL,244,False,4,2,0,118,0,0,4,2,1
 358166,Eldor Shomurodov,2026,TR1,6890,False,11,11,0,929,8,1,29,11,0
-358166,Eldor Shomurodov,2026,FS,3563,True,3,2,0,179,2,0,1,0,0
+358166,Eldor Shomurodov,2026,FS,3563,True,4,3,0,259,2,0,2,0,0
 358166,Eldor Shomurodov,2026,ECLQ,6890,False,2,2,0,146,0,0,5,2,0
 517376,Yusuf Sarı,2026,TR1,6890,False,11,7,2,249,0,0,10,4,0
 517376,Yusuf Sarı,2026,ECLQ,6890,False,2,2,0,167,0,1,6,0,0
@@ -1263,6 +1272,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 647787,Malcom Bokele,2026,TR1,1467,False,11,10,1,900,0,0,10,5,1
 745233,Taha Altıkardeş,2026,TR1,1467,False,11,11,0,990,0,0,10,2,2
 782935,Amin Cherni,2026,TR1,1467,False,3,1,0,90,0,0,1,0,0
+782935,Amin Cherni,2026,FRC,995,False,1,1,0,31,0,0,0,0,0
 782935,Amin Cherni,2026,FR2,995,False,8,3,0,95,0,0,2,0,0
 782935,Amin Cherni,2026,AFCQ,3670,True,2,2,0,97,0,0,1,0,0
 676115,Héliton,2026,L2,48,False,8,2,2,20,0,0,0,0,0
@@ -1274,13 +1284,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 700034,Uğur Kaan Yıldız,2026,TR1,120,False,11,11,0,706,0,1,5,2,1
 681814,Allan Godói,2026,TR1,1467,False,11,4,7,224,0,0,1,0,1
 707915,Erkam Kömür,2026,TRP,85234,False,2,2,0,180,0,0,0,0,0
-707915,Erkam Kömür,2026,TR4C,85234,False,11,10,0,900,1,0,0,0,3
+707915,Erkam Kömür,2026,TR4C,85234,False,12,11,0,976,1,0,0,0,3
 700031,Arda Okan Kurtulan,2026,TR1,1467,False,11,11,0,982,1,1,5,1,3
 486814,Filip Krastev,2026,NLP,1269,False,1,0,1,0,0,0,0,0,0
 486814,Filip Krastev,2026,NL1,1269,False,8,0,8,0,0,0,0,0,0
 486814,Filip Krastev,2026,BE1,5026,False,4,0,4,0,0,0,0,0,0
 833315,Novatus Miroshi,2026,TR1,1467,False,11,9,2,771,2,1,14,6,1
-833315,Novatus Miroshi,2026,AFCQ,14666,True,2,0,1,0,0,0,0,0,0
+833315,Novatus Miroshi,2026,AFCQ,14666,True,3,1,1,90,0,1,0,0,0
 638269,Rhaldney,2026,TR1,1467,False,11,11,0,792,1,0,15,4,2
 346898,Alexis Antunes,2026,TR1,1467,False,11,9,2,585,1,2,16,4,3
 327402,Efkan Bekiroğlu,2026,TR1,1467,False,11,9,0,217,2,0,6,4,1
@@ -1306,7 +1316,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 46252,Ibrahim Sehic,2026,TRP,518,False,1,0,0,0,0,0,0,0,0
 46252,Ibrahim Sehic,2026,TR2,518,False,14,13,0,1170,0,0,0,0,1
 270486,Hasan Hüseyin Akınay,2026,TRP,12497,False,1,0,0,0,0,0,0,0,0
-270486,Hasan Hüseyin Akınay,2026,TR3B,12497,False,10,9,0,810,0,0,0,0,2
+270486,Hasan Hüseyin Akınay,2026,TR3B,12497,False,11,10,0,900,0,0,0,0,2
 353863,Arda Şengül,2026,TR1,37951,False,11,5,0,117,0,0,0,0,1
 573981,Cemali Sertel,2026,TR1,37951,False,11,0,3,0,0,0,0,0,0
 477929,Kerem Kalafat,2026,TR2,3209,False,14,11,2,825,0,0,4,1,4
@@ -1332,13 +1342,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 98512,Serdar Gürler,2026,TR2,74664,False,9,9,0,633,4,1,19,8,2
 98512,Serdar Gürler,2026,TR1,37951,False,3,3,0,172,0,0,4,1,0
 955935,Mert Aktaş,2026,TRP,50814,False,1,1,0,70,0,0,0,0,0
-955935,Mert Aktaş,2026,TR3A,50814,False,10,4,0,51,1,0,0,0,0
+955935,Mert Aktaş,2026,TR3A,50814,False,11,5,0,79,1,0,0,0,1
 204189,Okan Kocuk,2026,UNLA,3381,True,2,0,0,0,0,0,0,0,0
 204189,Okan Kocuk,2026,TR1,152,False,11,8,0,720,0,0,0,0,0
 712378,Albert Posiadala,2026,NOPO,687,False,3,2,0,180,0,0,0,0,0
 1200793,Mehmet Efe Karslı,2026,TR1,152,False,11,0,0,0,0,0,0,0,0
 1200793,Mehmet Efe Karslı,2026,T191,83792,False,11,2,0,172,0,0,0,0,0
-1237420,Efe Yiğit Üstün,2026,U19Q,22585,True,4,2,0,156,0,0,0,0,0
+1237420,Efe Yiğit Üstün,2026,U19Q,22585,True,5,2,0,156,0,0,0,0,0
 1237420,Efe Yiğit Üstün,2026,TR1,152,False,11,0,0,0,0,0,0,0,0
 1237420,Efe Yiğit Üstün,2026,T191,83792,False,11,8,0,720,0,0,0,0,1
 1237420,Efe Yiğit Üstün,2026,FS,22585,True,3,1,0,72,0,0,0,0,0
@@ -1351,10 +1361,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 396342,Toni Borevković,2026,TR1,152,False,3,3,0,225,0,0,0,0,1
 396342,Toni Borevković,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 396342,Toni Borevković,2026,PO1,2420,False,7,6,0,456,1,0,5,3,5
-472873,Logi Tómasson,2026,UNLC,3574,True,4,4,0,127,0,0,2,1,0
+472873,Logi Tómasson,2026,UNLC,3574,True,5,5,0,217,0,0,3,1,0
 472873,Logi Tómasson,2026,TR1,152,False,11,11,0,990,2,0,12,4,2
 168408,Lubomir Satka,2026,ZYP1,829,False,9,9,0,765,2,1,0,0,0
-168408,Lubomir Satka,2026,UNLC,3503,True,4,1,0,8,0,0,0,0,0
+168408,Lubomir Satka,2026,UNLC,3503,True,5,2,0,98,0,0,0,0,0
 168408,Lubomir Satka,2026,ELQ,829,False,3,0,0,0,0,0,0,0,0
 168408,Lubomir Satka,2026,EL,829,False,4,4,0,360,0,0,1,0,0
 168408,Lubomir Satka,2026,CYSC,829,False,1,0,0,0,0,0,0,0,0
@@ -1371,14 +1381,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1173403,Kerem Fidan,2026,TR1,152,False,11,0,11,0,0,0,0,0,0
 460651,Antoine Makoumbou,2026,TR1,152,False,2,1,1,70,0,0,2,0,0
 460651,Antoine Makoumbou,2026,IT2,1038,False,10,10,0,828,0,0,3,1,1
-460651,Antoine Makoumbou,2026,AFCQ,3702,True,2,0,0,0,0,0,0,0,0
+460651,Antoine Makoumbou,2026,AFCQ,3702,True,3,1,0,45,0,0,0,0,0
 375378,Afonso Sousa,2026,TR1,152,False,11,5,6,189,0,0,4,1,2
 605266,Yalçın Kayan,2026,TR1,152,False,11,8,0,527,0,0,9,3,0
 336074,Celil Yüksel,2026,TR1,152,False,11,8,3,577,1,0,12,4,0
+1435403,Franck Atoen,2026,FRC,9202,False,1,1,0,65,0,0,0,0,0
 1435403,Franck Atoen,2026,FR2,9202,False,12,5,0,27,0,0,0,0,1
 85291,Soner Aydoğdu,2026,TR2,20,False,14,11,0,492,0,0,2,0,0
 1303364,Eyüp Değirmenci,2026,TRP,50820,False,2,1,0,13,0,0,0,0,0
-1303364,Eyüp Değirmenci,2026,TR4C,50820,False,11,2,0,14,0,0,0,0,0
+1303364,Eyüp Değirmenci,2026,TR4C,50820,False,12,3,0,18,0,0,0,0,1
 1303364,Eyüp Değirmenci,2026,TR1,152,False,3,0,0,0,0,0,0,0,0
 1303364,Eyüp Değirmenci,2026,T191,83792,False,1,1,0,90,0,0,0,0,1
 598399,Marius Mouandilmadji,2026,TR1,152,False,5,2,3,180,1,0,8,1,0
@@ -1393,14 +1404,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 208848,Emre Kılınç,2026,TR1,152,False,11,8,3,675,1,1,11,3,1
 852616,Polat Yaldır,2026,TR2,3211,False,14,12,1,867,3,1,8,6,1
 1142144,Tahsin Bülbül,2026,TRP,6630,False,1,0,0,0,0,0,0,0,0
-1142144,Tahsin Bülbül,2026,TR3A,6630,False,10,7,0,344,1,3,0,0,1
+1142144,Tahsin Bülbül,2026,TR3A,6630,False,11,8,0,373,2,3,0,0,1
 1142144,Tahsin Bülbül,2026,TR1,152,False,3,2,0,9,0,0,0,0,0
 418651,Yahia Fofana,2026,TR1,126,False,11,9,0,810,0,1,0,0,0
-418651,Yahia Fofana,2026,AFCQ,3591,True,2,2,0,180,0,0,0,0,0
+418651,Yahia Fofana,2026,AFCQ,3591,True,3,3,0,270,0,0,0,0,0
 576566,Zafer Görgen,2026,TR1,126,False,11,2,0,180,0,0,0,0,0
 966488,Efe Doğan,2026,TR1,126,False,11,0,0,0,0,0,0,0,0
 1303287,Osman Topçu,2026,TRP,1515,False,1,1,0,90,0,0,0,0,0
-1303287,Osman Topçu,2026,TR4A,1515,False,11,0,0,0,0,0,0,0,0
+1303287,Osman Topçu,2026,TR4A,1515,False,12,0,0,0,0,0,0,0,0
 1303287,Osman Topçu,2026,TR1,126,False,2,0,0,0,0,0,0,0,0
 1303287,Osman Topçu,2026,T191,73904,False,2,0,0,0,0,0,0,0,0
 703720,Mithat Pala,2026,TR1,126,False,11,11,0,990,0,3,7,1,3
@@ -1408,7 +1419,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 496996,Attila Mocsi,2026,TR1,126,False,11,8,1,713,0,0,5,1,3
 524925,Modibo Sagnan,2026,TR1,126,False,11,10,1,898,0,0,10,3,4
 524925,Modibo Sagnan,2026,FS,3674,True,2,1,0,45,0,0,0,0,1
-524925,Modibo Sagnan,2026,AFCQ,3674,True,2,1,0,1,0,0,0,0,0
+524925,Modibo Sagnan,2026,AFCQ,3674,True,3,1,0,1,0,0,0,0,0
 581429,Khusniddin Alikulov,2026,TR1,126,False,11,0,11,0,0,0,0,0,0
 295024,Samet Akaydin,2026,UNLA,3381,True,2,0,0,0,0,0,0,0,0
 295024,Samet Akaydin,2026,UCOL,449,False,3,2,0,180,0,0,1,0,2
@@ -1420,7 +1431,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1351512,Yakup Ayan,2026,T191,73904,False,9,4,0,360,0,0,0,0,1
 1212181,Emir Bora Çoban,2026,TR1,126,False,11,0,0,0,0,0,0,0,0
 1212181,Emir Bora Çoban,2026,T191,73904,False,11,10,0,900,0,0,0,0,1
-290552,Qazim Laci,2026,UNLC,3561,True,4,0,2,0,0,0,0,0,0
+290552,Qazim Laci,2026,UNLC,3561,True,6,2,2,156,0,0,5,1,0
 290552,Qazim Laci,2026,TR1,126,False,11,11,0,886,3,0,24,9,1
 672597,Ibrahim Olawoyin,2026,TR1,126,False,11,11,0,829,1,1,17,6,0
 433105,Dal Varesanovic,2026,TR1,126,False,11,7,0,123,0,0,6,1,1
@@ -1430,13 +1441,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 586834,Jesurun Rak-Sakyi,2026,TR1,10484,False,8,7,1,406,1,2,7,1,1
 586834,Jesurun Rak-Sakyi,2026,GB1,873,False,2,0,0,0,0,0,0,0,0
 1357451,Bayram Berk Çapoğlu,2026,TR1,126,False,11,0,0,0,0,0,0,0,0
-1357451,Bayram Berk Çapoğlu,2026,T191,73904,False,11,9,0,623,1,0,0,0,2
+1357451,Bayram Berk Çapoğlu,2026,T191,73904,False,11,10,0,712,1,0,0,0,3
 719672,Adedire Mebude,2026,TR1,126,False,11,8,0,498,0,3,4,2,1
 535469,Valentin Mihăilă,2026,UNLB,3447,True,4,4,0,116,0,0,3,0,1
 535469,Valentin Mihăilă,2026,TR1,126,False,11,6,5,212,0,0,9,3,1
 492955,Frantzdy Pierrot,2026,GRSC,2441,False,1,0,0,0,0,0,0,0,0
 492955,Frantzdy Pierrot,2026,GRP,2441,False,3,0,0,0,0,0,0,0,0
 492955,Frantzdy Pierrot,2026,GR1,2441,False,9,0,0,0,0,0,0,0,0
+492955,Frantzdy Pierrot,2026,CNNF,14161,True,1,0,0,0,0,0,0,0,0
 492955,Frantzdy Pierrot,2026,CNLA,14161,True,4,3,0,36,0,0,0,0,0
 492955,Frantzdy Pierrot,2026,CLQ,2441,False,2,0,0,0,0,0,0,0,0
 492955,Frantzdy Pierrot,2026,CL,2441,False,4,0,4,0,0,0,0,0,0
@@ -1445,7 +1457,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 248355,Vaclav Jurecka,2026,TSP,377,False,3,2,0,165,2,1,0,0,0
 248355,Vaclav Jurecka,2026,TS1,377,False,13,12,0,586,1,0,10,6,0
 1303292,Deniz Yaşar,2026,TRP,12524,False,1,0,0,0,0,0,0,0,0
-1303292,Deniz Yaşar,2026,TR3B,12524,False,10,10,0,704,6,3,0,0,0
+1303292,Deniz Yaşar,2026,TR3B,12524,False,11,11,0,715,6,3,0,0,0
 226802,Andreas Gianniotis,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 226802,Andreas Gianniotis,2026,TR1,10484,False,11,11,0,990,0,0,0,0,0
 435135,Ali Emre Yanar,2026,TRP,10484,False,1,1,0,90,0,0,0,0,0
@@ -1457,18 +1469,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1071742,Adem Arous,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 1071742,Adem Arous,2026,TR1,10484,False,11,10,0,723,2,1,6,2,1
 1071742,Adem Arous,2026,FS,3670,True,1,0,0,0,0,0,0,0,0
-1071742,Adem Arous,2026,AFCQ,3670,True,2,2,0,180,1,0,2,1,0
-263380,Attila Szalai,2026,UNLB,3468,True,4,0,0,0,0,0,0,0,0
+1071742,Adem Arous,2026,AFCQ,3670,True,3,2,0,180,1,0,2,1,0
+263380,Attila Szalai,2026,UNLB,3468,True,5,0,0,0,0,0,0,0,0
 263380,Attila Szalai,2026,POPU,324,False,1,1,0,90,0,0,0,0,0
 263380,Attila Szalai,2026,PL1,324,False,13,12,0,818,1,1,3,1,0
 364244,Godfried Frimpong,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 364244,Godfried Frimpong,2026,TR1,10484,False,11,0,8,0,0,0,0,0,0
-396516,Nicholas Opoku,2026,ES2,472,False,13,0,6,0,0,0,0,0,0
+396516,Nicholas Opoku,2026,ES2,472,False,14,1,6,1,0,0,0,0,0
 396516,Nicholas Opoku,2026,CDR,472,False,1,1,0,72,0,0,0,0,0
 181783,Cláudio Winck,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 181783,Cláudio Winck,2026,TR1,10484,False,11,11,0,985,2,3,18,6,3
 1067930,Taylan Aydın,2026,TRP,12524,False,1,0,0,0,0,0,0,0,0
-1067930,Taylan Aydın,2026,TR3B,12524,False,10,10,0,595,0,0,0,0,2
+1067930,Taylan Aydın,2026,TR3B,12524,False,11,11,0,685,0,0,0,0,2
 1067930,Taylan Aydın,2026,TR1,10484,False,2,0,0,0,0,0,0,0,0
 204201,Emre Taşdemir,2026,TR2,68377,False,14,10,3,561,0,2,6,0,4
 110686,Kamil Ahmet Çörekçi,2026,TRP,10484,False,1,0,1,0,0,0,0,0,0
@@ -1487,11 +1499,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 203655,Cafú,2026,CPO1,786,False,1,0,0,0,0,0,0,0,0
 815014,Atakan Müjde,2026,TRP,10484,False,1,1,0,68,0,0,0,0,1
 815014,Atakan Müjde,2026,TR1,10484,False,11,2,0,9,0,0,0,0,0
-454386,Adrian Benedyczak,2026,UNLB,3442,True,4,0,2,0,0,0,0,0,0
+454386,Adrian Benedyczak,2026,UNLB,3442,True,5,1,2,20,0,0,3,1,0
 454386,Adrian Benedyczak,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 454386,Adrian Benedyczak,2026,TR1,10484,False,11,11,0,952,7,2,37,15,0
 116611,Loret Sadiku,2026,SEC,699,False,1,0,0,0,0,0,0,0,0
 646733,Jim Allevinah,2026,FR1,1420,False,10,10,0,662,0,0,18,5,1
+646733,Jim Allevinah,2026,AFCQ,5704,True,3,1,0,59,0,0,0,0,0
 230921,Mortadha Ben Ouanes,2026,TRP,10484,False,1,1,0,35,0,1,0,0,0
 230921,Mortadha Ben Ouanes,2026,TR1,10484,False,11,1,10,78,0,0,0,0,1
 364861,Fousseni Diabaté,2026,TRP,10484,False,1,1,0,68,0,0,0,0,1
@@ -1501,7 +1514,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1020670,Emirhan Yiğit,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 1020670,Emirhan Yiğit,2026,TR1,10484,False,11,0,0,0,0,0,0,0,0
 952550,Yasin Eratilla,2026,TRP,2463,False,2,2,0,180,0,0,0,0,1
-952550,Yasin Eratilla,2026,TR3B,2463,False,9,6,0,204,0,0,0,0,0
+952550,Yasin Eratilla,2026,TR3B,2463,False,10,7,0,294,0,0,0,0,0
 920138,Mert Bayram,2026,TRP,11282,False,1,1,0,90,0,0,0,0,0
 920138,Mert Bayram,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
 91945,Ertuğrul Taşkıran,2026,TR1,39722,False,11,9,0,810,0,0,0,0,0
@@ -1524,18 +1537,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 922892,Baran Moğultay,2026,TR2,74664,False,14,0,0,0,0,0,0,0,0
 1256117,Semih Doğanay,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 1256117,Semih Doğanay,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
-1256117,Semih Doğanay,2026,T191,73902,False,11,9,0,754,0,0,0,0,2
+1256117,Semih Doğanay,2026,T191,73902,False,11,10,0,844,0,0,0,0,3
 666551,Maestro,2026,TRP,11282,False,1,1,0,45,0,0,0,0,0
 666551,Maestro,2026,TR1,11282,False,11,5,6,314,0,0,3,0,1
-666551,Maestro,2026,AFCQ,3585,True,2,0,2,0,0,0,0,0,0
+666551,Maestro,2026,AFCQ,3585,True,3,1,2,75,0,0,0,0,0
 1053933,Ruan,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 1053933,Ruan,2026,TR1,11282,False,11,11,0,926,2,1,20,6,0
 450173,Gaius Makouta,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 450173,Gaius Makouta,2026,TR1,11282,False,11,10,0,808,2,0,12,5,1
-450173,Gaius Makouta,2026,AFCQ,3702,True,2,2,0,180,0,0,0,0,0
+450173,Gaius Makouta,2026,AFCQ,3702,True,3,3,0,270,0,0,2,1,0
 652426,Yusuf Özdemir,2026,TRP,11282,False,1,1,0,90,1,0,0,0,0
 652426,Yusuf Özdemir,2026,TR1,11282,False,11,7,0,208,0,0,1,0,0
-282076,Ianis Hagi,2026,UNLB,3447,True,4,3,0,155,0,0,6,0,0
+282076,Ianis Hagi,2026,UNLB,3447,True,5,4,0,222,0,0,7,0,1
 282076,Ianis Hagi,2026,TRP,11282,False,1,1,0,45,0,0,0,0,1
 282076,Ianis Hagi,2026,TR1,11282,False,11,8,1,240,0,1,9,2,1
 238809,Florent Hadergjonaj,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
@@ -1543,7 +1556,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 423678,Meschack Elia,2026,TRP,11282,False,1,1,0,90,0,2,0,0,0
 423678,Meschack Elia,2026,TR1,11282,False,11,8,1,299,0,0,5,2,2
 423678,Meschack Elia,2026,FS,3854,True,2,0,0,0,0,0,0,0,0
-423678,Meschack Elia,2026,AFCQ,3854,True,2,0,0,0,0,0,0,0,0
+423678,Meschack Elia,2026,AFCQ,3854,True,3,0,0,0,0,0,0,0,0
 712127,İbrahim Kaya,2026,TRP,11282,False,1,1,0,24,0,1,0,0,0
 712127,İbrahim Kaya,2026,TR1,11282,False,11,10,0,527,0,0,14,5,0
 324803,Nicolas Janvier,2026,TR2,45269,False,14,14,0,881,0,1,10,1,2
@@ -1564,14 +1577,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 174694,Rony Lopes,2026,POPU,3527,False,2,1,0,72,0,0,0,0,0
 174694,Rony Lopes,2026,PO2,7179,False,4,0,0,0,0,0,0,0,0
 174694,Rony Lopes,2026,PL1,3527,False,8,7,0,454,1,0,24,5,0
-179860,Andraz Sporar,2026,UNLB,3588,True,4,1,0,74,0,0,2,1,0
-179860,Andraz Sporar,2026,SLO1,540,False,14,7,4,501,5,0,31,18,0
+179860,Andraz Sporar,2026,UNLB,3588,True,5,1,0,74,0,0,2,1,0
+179860,Andraz Sporar,2026,SLO1,540,False,14,8,4,575,5,0,35,20,0
 179860,Andraz Sporar,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 179860,Andraz Sporar,2026,CLQ,540,False,6,3,3,152,2,0,3,2,0
 179860,Andraz Sporar,2026,CL,540,False,4,3,0,236,0,0,5,1,0
 50655,Efecan Karaca,2026,TRP,518,False,1,1,0,24,0,0,0,0,0
 50655,Efecan Karaca,2026,TR2,518,False,14,14,0,1216,1,1,13,6,2
-1223336,Hüseyin Şen,2026,T191,73902,False,11,9,0,663,2,0,0,0,2
+1223336,Hüseyin Şen,2026,T191,73902,False,11,10,0,753,2,0,0,0,3
 1223336,Hüseyin Şen,2026,FS,22584,True,3,2,0,75,0,0,0,0,0
 882568,Deniz Ertaş,2026,TR1,2293,False,11,4,0,252,0,0,0,0,0
 882568,Deniz Ertaş,2026,FS,34692,True,3,0,0,0,0,0,0,0,0
@@ -1585,17 +1598,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 354173,Adil Demirbağ,2026,TR1,2293,False,11,7,4,563,0,0,3,1,3
 295955,Uğurcan Yazğılı,2026,TR1,2293,False,11,9,1,554,0,0,3,1,0
 342218,Yhoan Andzouana,2026,TR1,2293,False,11,9,1,654,0,1,3,1,0
-342218,Yhoan Andzouana,2026,AFCQ,3702,True,2,1,1,68,0,0,0,0,0
+342218,Yhoan Andzouana,2026,AFCQ,3702,True,3,2,1,134,0,0,0,0,0
 375719,Yasir Subaşı,2026,TR2,3211,False,14,11,0,691,1,0,3,1,3
 1223318,Ata Yanık,2026,TR1,2293,False,11,0,3,0,0,0,0,0,0
 1223318,Ata Yanık,2026,T191,73906,False,7,5,0,450,1,0,0,0,1
-1223318,Ata Yanık,2026,FS,22584,True,3,3,0,184,1,0,0,0,0
+1223318,Ata Yanık,2026,FS,22584,True,4,4,0,248,1,0,0,0,0
 1076672,Ahmet Tırpancı,2026,TRP,69486,False,3,3,0,243,0,0,0,0,1
-1076672,Ahmet Tırpancı,2026,TR4C,69486,False,11,2,0,154,0,0,0,0,1
+1076672,Ahmet Tırpancı,2026,TR4C,69486,False,12,2,0,154,0,0,0,0,1
 391555,Melih İbrahimoğlu,2026,TR1,2293,False,11,11,0,954,0,0,7,1,3
+258015,Diogo Gonçalves,2026,U17Q,23137,True,1,0,0,0,0,0,0,0,0
 258015,Diogo Gonçalves,2026,TR1,2293,False,11,10,0,668,0,2,8,4,0
 258015,Diogo Gonçalves,2026,FS,23137,True,3,0,0,0,0,0,0,0,0
-245014,Enis Bardhi,2026,UNLB,5148,True,4,4,0,263,0,0,1,0,1
+245014,Enis Bardhi,2026,UNLB,5148,True,5,5,0,353,0,1,5,1,1
 245014,Enis Bardhi,2026,TR1,2293,False,11,9,2,232,0,0,5,1,1
 638573,Jin-ho Jo,2026,TR2,3211,False,14,13,1,1160,0,6,10,2,4
 256000,Marko Jevtović,2026,TR1,2293,False,11,11,0,772,0,0,4,2,3
@@ -1603,10 +1617,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 241251,Ufuk Akyol,2026,TR2,589,False,14,0,0,0,0,0,0,0,0
 724050,Mücahit Ibrahimoglu,2026,TR1,2293,False,11,0,6,0,0,0,0,0,0
 1178929,Esat Buğa,2026,TRP,2292,False,1,1,0,90,0,0,0,0,0
-1178929,Esat Buğa,2026,TR3A,2292,False,10,6,0,42,0,0,0,0,0
+1178929,Esat Buğa,2026,TR3A,2292,False,11,7,0,45,0,0,0,0,1
 1178929,Esat Buğa,2026,FS,22586,True,3,3,0,201,0,0,0,0,0
 1409834,Eren Doğan,2026,T191,73906,False,11,0,0,0,0,0,0,0,0
 549966,Jackson Muleka,2026,TR1,2293,False,11,11,0,806,0,0,16,4,2
+549966,Jackson Muleka,2026,FS,3854,True,2,1,0,90,0,0,0,0,0
+549966,Jackson Muleka,2026,AFCQ,3854,True,2,0,0,0,0,0,0,0,0
 697917,Melih Bostan,2026,TRP,24245,False,1,1,0,64,1,0,0,0,0
 697917,Melih Bostan,2026,TR2,24245,False,14,12,0,564,2,0,15,4,1
 742063,Pedrinho,2026,TR2,3211,False,14,13,1,665,5,0,19,8,6
@@ -1631,7 +1647,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 292545,Murat Uçar,2026,TRP,3205,False,1,0,0,0,0,0,0,0,0
 292545,Murat Uçar,2026,TR2,3205,False,14,14,0,1161,0,1,6,1,1
 158118,Tarkan Serbest,2026,TRP,12497,False,1,1,0,74,0,0,0,0,0
-158118,Tarkan Serbest,2026,TR3B,12497,False,10,8,0,633,0,0,0,0,1
+158118,Tarkan Serbest,2026,TR3B,12497,False,11,8,0,633,0,0,0,0,1
 158118,Tarkan Serbest,2026,TR1,12382,False,2,0,0,0,0,0,0,0,0
 403834,Kahraman Demirtaş,2026,TR1,12382,False,11,1,0,5,0,0,0,0,0
 1506930,Berat Perçin,2026,TR1,12382,False,11,0,11,0,0,0,0,0,0
@@ -1640,7 +1656,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 244285,Sinan Kurt,2026,TR2,3205,False,14,13,1,1103,0,1,10,1,3
 872380,Felix Afena-Gyan,2026,TRP,74664,False,1,1,0,45,0,0,0,0,0
 872380,Felix Afena-Gyan,2026,TR2,74664,False,14,14,0,842,3,1,29,9,3
-872380,Felix Afena-Gyan,2026,AFCQ,3441,True,2,2,0,116,1,0,6,2,0
+872380,Felix Afena-Gyan,2026,AFCQ,3441,True,3,3,0,180,2,0,7,3,0
 587688,Zdravko Dimitrov,2026,UNLC,3394,True,4,3,0,136,0,0,3,2,0
 587688,Zdravko Dimitrov,2026,TR2,68377,False,14,14,0,1155,3,3,18,8,2
 271966,Mbaye Diagne,2026,TR1,12382,False,11,9,1,300,2,0,10,4,1
@@ -1651,13 +1667,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1181959,İbrahim Kağan Alkış,2026,TRP,2832,False,1,0,0,0,0,0,0,0,0
 1181959,İbrahim Kağan Alkış,2026,TR1,2832,False,11,0,0,0,0,0,0,0,0
 1322748,Yusuf Nacar,2026,TRP,37983,False,2,1,0,45,0,0,0,0,0
-1322748,Yusuf Nacar,2026,TR4A,37983,False,11,0,0,0,0,0,0,0,0
+1322748,Yusuf Nacar,2026,TR4A,37983,False,12,0,0,0,0,0,0,0,0
 1322748,Yusuf Nacar,2026,TR1,2832,False,3,0,0,0,0,0,0,0,0
 1322748,Yusuf Nacar,2026,T191,74653,False,3,0,0,0,0,0,0,0,0
 1197999,Cemilhan Aslan,2026,TRP,2832,False,1,0,0,0,0,0,0,0,0
 1197999,Cemilhan Aslan,2026,TR1,2832,False,11,0,0,0,0,0,0,0,0
 1197999,Cemilhan Aslan,2026,T191,74653,False,6,6,0,540,0,0,0,0,0
-380919,Nihad Mujakic,2026,UNLB,3446,True,4,1,0,9,0,0,0,0,0
+380919,Nihad Mujakic,2026,UNLB,3446,True,5,1,0,9,0,0,0,0,0
 380919,Nihad Mujakic,2026,TR1,39722,False,11,11,0,967,0,0,1,0,0
 358115,Luis Pérez,2026,TRP,2832,False,1,0,0,0,0,0,0,0,0
 358115,Luis Pérez,2026,TR1,2832,False,11,11,0,921,0,0,3,0,0
@@ -1665,6 +1681,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 532905,Arda Kızıldağ,2026,TR1,2832,False,11,6,2,384,0,0,3,0,1
 254003,Myenty Abena,2026,TRP,2832,False,1,1,0,90,0,0,0,0,0
 254003,Myenty Abena,2026,TR1,2832,False,11,10,1,855,1,0,5,1,4
+254003,Myenty Abena,2026,FS,15359,True,2,2,0,119,0,0,0,0,0
 254003,Myenty Abena,2026,CNLA,15359,True,4,4,0,360,0,0,0,0,1
 206947,Kévin Rodrigues,2026,TRP,820,False,1,0,1,0,0,0,0,0,0
 206947,Kévin Rodrigues,2026,TR1,820,False,11,0,11,0,0,0,0,0,0
@@ -1676,6 +1693,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 554284,Kacper Kozlowski,2026,TR1,2832,False,11,11,0,915,2,1,20,7,3
 348863,Juninho Bacuna,2026,TRP,2832,False,1,1,0,62,0,0,0,0,1
 348863,Juninho Bacuna,2026,TR1,2832,False,11,6,2,390,0,2,8,2,2
+348863,Juninho Bacuna,2026,CNNF,32364,True,2,2,0,180,0,0,0,0,0
 348863,Juninho Bacuna,2026,CNLA,32364,True,4,4,0,315,2,3,0,0,1
 614742,Drissa Camara,2026,TRP,2832,False,1,0,0,0,0,0,0,0,0
 614742,Drissa Camara,2026,TR1,2832,False,11,10,1,599,0,0,20,8,2
@@ -1687,7 +1705,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1209519,Victor Gidado,2026,TR1,2832,False,11,10,0,617,0,1,10,3,1
 1111215,Karamba Gassama,2026,TRP,2832,False,1,1,0,90,1,0,0,0,0
 1111215,Karamba Gassama,2026,TR1,2832,False,11,5,3,129,0,0,5,2,0
-1111215,Karamba Gassama,2026,AFCQ,6186,True,2,0,0,0,0,0,0,0,0
+1111215,Karamba Gassama,2026,AFCQ,6186,True,3,1,0,7,0,0,0,0,0
 701845,Ogün Özçiçek,2026,TRP,2832,False,1,0,1,0,0,0,0,0,0
 701845,Ogün Özçiçek,2026,TR1,2832,False,11,4,2,201,0,0,1,0,0
 129513,Alexandru Maxim,2026,TRP,2832,False,1,1,0,28,0,0,0,0,0
@@ -1742,14 +1760,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 267473,Matej Hanousek,2026,TS2,450,False,14,12,0,975,0,1,0,0,0
 1168398,Umut İslamoğlu,2026,TRP,924,False,1,0,0,0,0,0,0,0,0
 1168398,Umut İslamoğlu,2026,TR2,924,False,12,4,0,351,0,0,0,0,0
-1417530,Hamza Aydar,2026,U19Q,22585,True,1,1,0,45,0,0,0,0,1
+1417530,Hamza Aydar,2026,U19Q,22585,True,2,1,0,45,0,0,0,0,1
 1417530,Hamza Aydar,2026,TRP,820,False,1,1,0,90,0,0,0,0,0
 1417530,Hamza Aydar,2026,TR1,820,False,11,3,0,204,0,0,0,0,0
 1078111,Arda Çağan Çelik,2026,TRP,820,False,1,1,0,90,0,0,0,0,0
 1078111,Arda Çağan Çelik,2026,TR1,820,False,11,2,0,180,0,0,0,0,0
 1489506,Ousmane Diabate,2026,TRP,820,False,1,0,0,0,0,0,0,0,0
 1489506,Ousmane Diabate,2026,TR1,820,False,11,10,1,815,1,1,11,4,5
-1489506,Ousmane Diabate,2026,AFCQ,3856,True,2,2,0,135,0,0,0,0,0
+1489506,Ousmane Diabate,2026,AFCQ,3856,True,3,3,0,225,0,0,1,1,0
 530851,Franco Tongya,2026,TRP,820,False,1,0,0,0,0,0,0,0,0
 530851,Franco Tongya,2026,TR1,820,False,11,11,0,956,2,2,12,6,0
 346472,Tom Dele-Bashiru,2026,GRP,605,False,4,2,0,114,0,0,0,0,0
@@ -1774,6 +1792,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 402010,Sékou Koïta,2026,AFCQ,3674,True,2,2,0,13,0,0,0,0,0
 364405,Adama Traoré,2026,TRP,820,False,1,1,0,62,0,0,0,0,0
 364405,Adama Traoré,2026,TR1,820,False,11,9,2,650,1,2,12,5,1
+157501,M'Baye Niang,2026,FRC,9202,False,1,1,0,17,0,0,0,0,0
 157501,M'Baye Niang,2026,FR2,9202,False,7,4,0,51,0,0,2,2,0
 294100,Metehan Mimaroğlu,2026,UCOL,449,False,3,0,3,0,0,0,0,0,0
 294100,Metehan Mimaroğlu,2026,TR1,449,False,11,5,0,122,0,1,2,2,0
@@ -1784,14 +1803,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 445788,Kevin Csoboth,2026,C1,257,False,13,0,0,0,0,0,0,0,0
 1442800,Prince Martor Jr.,2026,TRP,820,False,1,1,0,28,0,1,0,0,1
 1442800,Prince Martor Jr.,2026,TR1,820,False,11,5,0,30,0,0,2,1,0
-1442800,Prince Martor Jr.,2026,AFCQ,9172,True,2,0,0,0,0,0,0,0,0
+1442800,Prince Martor Jr.,2026,AFCQ,9172,True,3,1,0,27,0,0,0,0,0
 1437503,Ayaz Özcan,2026,TRP,820,False,1,1,0,16,1,0,0,0,0
 1437503,Ayaz Özcan,2026,TR1,820,False,11,1,0,4,0,0,0,0,0
-1437503,Ayaz Özcan,2026,T191,74474,False,7,7,0,564,3,0,0,0,2
-1437503,Ayaz Özcan,2026,FS,22584,True,3,2,0,61,0,0,0,0,0
+1437503,Ayaz Özcan,2026,T191,74474,False,9,8,0,654,3,0,0,0,3
+1437503,Ayaz Özcan,2026,FS,22584,True,4,3,0,87,0,0,0,0,0
 1438141,Hasan Temel,2026,TRP,820,False,1,0,0,0,0,0,0,0,0
 1438141,Hasan Temel,2026,TR1,820,False,11,0,0,0,0,0,0,0,0
-1438141,Hasan Temel,2026,T191,74474,False,11,9,0,598,2,0,0,0,3
+1438141,Hasan Temel,2026,T191,74474,False,11,10,0,677,3,0,0,0,3
+722650,Serhat Öztaşdelen,2026,UNLA,3381,True,1,0,0,0,0,0,0,0,0
 722650,Serhat Öztaşdelen,2026,TRP,120,False,1,0,0,0,0,0,0,0,0
 722650,Serhat Öztaşdelen,2026,TR1,120,False,11,11,0,990,0,0,0,0,1
 256567,Aleksandar Jovanović,2026,TRP,120,False,1,0,0,0,0,0,0,0,0
@@ -1816,9 +1836,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 539822,Muharrem Cinan,2026,TR1,120,False,11,7,0,173,0,0,0,0,0
 291758,Ahmet Oğuz,2026,TR1,2293,False,8,0,1,0,0,0,0,0,0
 254249,Aaron Appindangoyé,2026,TR2,2381,False,14,8,3,720,0,0,3,1,0
-254249,Aaron Appindangoyé,2026,AFCQ,5704,True,2,0,1,0,0,0,0,0,0
+254249,Aaron Appindangoyé,2026,AFCQ,5704,True,3,0,1,0,0,0,0,0,0
 1439194,Muhammed Efe Küçük,2026,TRP,107563,False,1,0,0,0,0,0,0,0,0
-1439194,Muhammed Efe Küçük,2026,TR4A,107563,False,11,5,0,300,0,0,0,0,0
+1439194,Muhammed Efe Küçük,2026,TR4A,107563,False,12,5,0,300,0,0,0,0,0
 1439194,Muhammed Efe Küçük,2026,TR1,120,False,1,0,0,0,0,0,0,0,0
 1439190,Deniz Ceylan,2026,TRP,120,False,1,0,0,0,0,0,0,0,0
 1439190,Deniz Ceylan,2026,TR1,120,False,6,0,0,0,0,0,0,0,0
@@ -1832,11 +1852,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 184440,Tayfur Bingöl,2026,TRP,120,False,1,1,0,45,0,0,0,0,0
 184440,Tayfur Bingöl,2026,TR1,120,False,11,5,0,246,0,0,7,1,3
 672852,Mesut Can Tunalı,2026,TRP,83909,False,1,0,0,0,0,0,0,0,0
-672852,Mesut Can Tunalı,2026,TR3B,83909,False,10,0,0,0,0,0,0,0,0
+672852,Mesut Can Tunalı,2026,TR3B,83909,False,11,0,0,0,0,0,0,0,0
 1321749,Ege Bilim,2026,TRP,120,False,1,1,0,90,0,0,0,0,0
 1321749,Ege Bilim,2026,TR1,120,False,11,4,0,40,0,0,4,0,0
 1439199,Esat Narin,2026,TRP,107563,False,1,0,0,0,0,0,0,0,0
-1439199,Esat Narin,2026,TR4A,107563,False,11,11,0,791,3,0,0,0,3
+1439199,Esat Narin,2026,TR4A,107563,False,12,12,0,854,3,0,0,0,3
 1439199,Esat Narin,2026,T191,76116,False,3,1,0,90,0,0,0,0,0
 367195,Dan Agyei,2026,TRP,120,False,1,1,0,81,1,0,0,0,1
 367195,Dan Agyei,2026,TR1,120,False,11,11,0,671,2,0,15,9,2
@@ -1844,6 +1864,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 256358,Bruno Petkovic,2026,TR1,120,False,11,0,11,0,0,0,0,0,0
 451353,Rigoberto Rivas,2026,TRP,120,False,1,0,0,0,0,0,0,0,0
 451353,Rigoberto Rivas,2026,TR1,120,False,11,6,5,389,0,2,5,1,1
+451353,Rigoberto Rivas,2026,FS,3590,True,1,1,0,81,0,0,0,0,0
 451353,Rigoberto Rivas,2026,CNLA,3590,True,4,0,1,0,0,0,0,0,0
 451642,Can Keleş,2026,TR1,114,False,11,0,3,0,0,0,0,0,0
 451642,Can Keleş,2026,ELQ,114,False,6,0,6,0,0,0,0,0,0
@@ -1854,7 +1875,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 849404,Furkan Gedik,2026,TRP,518,False,1,1,0,90,0,0,0,0,0
 849404,Furkan Gedik,2026,TR2,518,False,14,9,0,418,1,0,14,6,1
 111627,Ryan Mendes,2026,MAR1,37176,False,7,4,0,213,0,1,0,0,0
-111627,Ryan Mendes,2026,AFCQ,4311,True,2,2,0,161,0,1,0,0,0
+111627,Ryan Mendes,2026,AFCQ,4311,True,3,3,0,237,0,2,0,0,0
 111627,Ryan Mendes,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 299717,Ahmet Sağat,2026,TRP,589,False,1,0,0,0,0,0,0,0,0
 299717,Ahmet Sağat,2026,TR2,589,False,13,11,0,445,3,0,9,4,0
@@ -1867,14 +1888,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 587903,Erkan Anapa,2026,TR1,39722,False,11,0,0,0,0,0,0,0,0
 885682,Şerefhan Sağlık,2026,TR1,39722,False,11,0,8,0,0,0,0,0,0
 872080,Yakup Kırtay,2026,TR1,39722,False,11,7,0,336,0,0,4,0,0
-866177,Amar Gerxhaliu,2026,U19Q,54396,True,3,0,0,0,0,0,0,0,0
+866177,Amar Gerxhaliu,2026,U19Q,54396,True,4,0,0,0,0,0,0,0,0
 866177,Amar Gerxhaliu,2026,TR1,39722,False,11,11,0,990,1,0,7,1,1
 330277,Guram Giorbelidze,2026,TR1,39722,False,11,9,0,809,1,2,9,5,1
 1296109,Ömer Arda Kara,2026,U19Q,22585,True,2,0,0,0,0,0,0,0,0
 1296109,Ömer Arda Kara,2026,TR1,39722,False,11,0,1,0,0,0,0,0,0
 1296109,Ömer Arda Kara,2026,FS,22586,True,3,1,0,72,0,0,0,0,0
 459621,Salih Sarıkaya,2026,TRP,2463,False,2,0,0,0,0,0,0,0,0
-459621,Salih Sarıkaya,2026,TR3B,2463,False,9,9,0,710,0,0,0,0,3
+459621,Salih Sarıkaya,2026,TR3B,2463,False,10,9,0,710,0,0,0,0,3
 620111,Cengizhan Bayrak,2026,TR1,39722,False,11,1,0,1,0,0,0,0,0
 76176,Mustafa Yumlu,2026,TR1,39722,False,11,8,1,570,0,1,5,1,2
 170239,Orhan Ovacıklı,2026,TR1,39722,False,11,11,0,921,0,1,3,1,1
@@ -1887,7 +1908,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 388913,Murat Cem Akpınar,2026,TR1,39722,False,3,1,0,15,0,0,0,0,0
 187309,Martín Rodríguez,2026,TR1,39722,False,11,11,0,796,0,0,12,1,1
 986918,Mert Önal,2026,TRP,75381,False,1,1,0,14,0,0,0,0,0
-986918,Mert Önal,2026,TR3A,75381,False,10,8,0,341,0,0,0,0,1
+986918,Mert Önal,2026,TR3A,75381,False,11,9,0,353,0,0,0,0,1
 986918,Mert Önal,2026,TR1,39722,False,3,0,0,0,0,0,0,0,0
 618887,Mustafa Fettahoğlu,2026,TR1,39722,False,11,9,0,364,0,1,7,1,0
 1054212,İlkan Sever,2026,TRP,3173,False,1,0,0,0,0,0,0,0,0
@@ -1897,17 +1918,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 236537,Fernando Andrade,2026,TR1,39722,False,3,2,0,84,0,0,2,1,0
 809132,Cheikne Sylla,2026,TR2,48913,False,14,12,2,1048,7,2,29,9,1
 136212,Eren Tozlu,2026,TR1,39722,False,11,11,0,780,3,1,20,8,2
-361256,Berke Özer,2026,UNLA,3381,True,4,0,0,0,0,0,0,0,0
+211133,Hüsamettin Yener,2026,TRP,6630,False,1,0,0,0,0,0,0,0,0
+211133,Hüsamettin Yener,2026,TR3A,6630,False,11,9,0,331,2,3,0,0,0
+361256,Berke Özer,2026,UNLA,3381,True,6,1,0,90,0,0,0,0,0
 361256,Berke Özer,2026,FR1,1082,False,10,9,0,810,0,0,0,0,1
 361256,Berke Özer,2026,CL,1082,False,4,4,0,360,0,0,0,0,0
-211133,Hüsamettin Yener,2026,TRP,6630,False,1,0,0,0,0,0,0,0,0
-211133,Hüsamettin Yener,2026,TR3A,6630,False,10,8,0,258,1,2,0,0,0
 283166,Marcos Felipe,2026,TR1,37951,False,11,11,0,990,0,0,0,0,0
 1045821,Umut Keseci,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
 1045821,Umut Keseci,2026,TR1,7160,False,11,0,0,0,0,0,0,0,0
 511119,Halil Yeral,2026,TRP,43875,False,1,0,0,0,0,0,0,0,0
-511119,Halil Yeral,2026,TR3A,43875,False,10,8,0,675,0,0,0,0,0
-610740,Alp Köseer,2026,TR4C,39807,False,11,5,0,450,0,0,0,0,0
+511119,Halil Yeral,2026,TR3A,43875,False,11,9,0,765,0,0,0,0,0
+610740,Alp Köseer,2026,TR4C,39807,False,12,5,0,450,0,0,0,0,0
 1352922,Kerim Yerlikaya,2026,T191,89919,False,11,8,0,720,0,0,0,0,0
 686597,Calegari,2026,TR1,7160,False,3,1,2,90,0,0,0,0,0
 708111,Talha Ülvan,2026,TRP,7160,False,1,1,0,45,0,0,0,0,0
@@ -1918,13 +1939,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 175179,Luccas Claro,2026,TR2,45269,False,14,13,0,1125,1,0,9,3,3
 1175508,Arda Yavuz,2026,TRP,7160,False,1,1,0,45,0,0,0,0,0
 1175508,Arda Yavuz,2026,TR1,7160,False,11,3,0,20,0,0,0,0,0
-1374186,Ömer Ahmet Ceyhan,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
-1374186,Ömer Ahmet Ceyhan,2026,TR1,7160,False,11,1,0,63,0,0,0,0,0
-1374186,Ömer Ahmet Ceyhan,2026,T191,89919,False,1,1,0,90,0,0,0,0,0
+1374186,Ahmet Ceyhan,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
+1374186,Ahmet Ceyhan,2026,TR1,7160,False,11,1,0,63,0,0,0,0,0
+1374186,Ahmet Ceyhan,2026,T191,89919,False,1,1,0,90,0,0,0,0,0
 1414664,Diabel Ndoye,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
 1414664,Diabel Ndoye,2026,TR1,7160,False,11,0,8,0,0,0,0,0,0
-1178853,Berhan Kutlay Şatlı,2026,TRP,7160,False,1,1,0,6,0,0,0,0,0
-1178853,Berhan Kutlay Şatlı,2026,TR1,7160,False,11,1,0,27,0,0,0,0,0
+1178853,Kutlay Şatlı,2026,TRP,7160,False,1,1,0,6,0,0,0,0,0
+1178853,Kutlay Şatlı,2026,TR1,7160,False,11,1,0,27,0,0,0,0,0
 603368,Svit Seslar,2026,SLP,710,False,1,1,0,45,1,0,0,0,0
 603368,Svit Seslar,2026,SL1,710,False,14,11,0,927,4,0,0,0,2
 603368,Svit Seslar,2026,EL,710,False,4,4,0,360,2,1,6,4,0
@@ -1937,6 +1958,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 727152,Hamza Akman,2026,TR1,7160,False,11,8,0,161,0,0,1,0,0
 278654,Emre Akbaba,2026,TRP,6646,False,1,0,0,0,0,0,0,0,0
 278654,Emre Akbaba,2026,TR2,6646,False,14,14,0,1155,2,1,36,11,2
+200082,Taşkın İlter,2026,U17Q,29840,True,1,0,0,0,0,0,0,0,0
 200082,Taşkın İlter,2026,TRP,7160,False,1,0,1,0,0,0,0,0,0
 200082,Taşkın İlter,2026,TR1,7160,False,11,4,6,283,0,0,1,1,0
 200082,Taşkın İlter,2026,FS,29840,True,1,0,1,0,0,0,0,0,0
@@ -1964,12 +1986,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1458907,Christ Sadia,2026,TR1,7160,False,11,2,0,77,0,0,2,0,0
 1458907,Christ Sadia,2026,T191,89919,False,2,2,0,156,3,0,0,0,0
 711999,Lesley Ugochukwu,2026,TR1,141,False,11,5,2,86,0,0,1,0,0
+711999,Lesley Ugochukwu,2026,FS,9323,True,1,1,0,79,0,0,3,1,0
 711999,Lesley Ugochukwu,2026,CL,141,False,4,2,0,37,0,0,1,1,0
 357164,Rafael Leão,2026,UNLA,3300,True,4,2,0,97,0,0,3,1,0
 357164,Rafael Leão,2026,TR1,141,False,9,8,1,447,2,0,23,9,3
 357164,Rafael Leão,2026,IT1,5,False,2,0,1,0,0,0,0,0,0
 357164,Rafael Leão,2026,CL,141,False,4,3,1,144,0,1,1,0,1
-1063292,Deniz Gül,2026,UNLA,3381,True,4,4,0,36,0,0,2,0,0
+1063292,Deniz Gül,2026,UNLA,3381,True,6,6,0,158,0,0,5,1,0
 1063292,Deniz Gül,2026,TR1,141,False,8,7,0,288,1,0,12,4,1
 1063292,Deniz Gül,2026,POSU,720,False,1,1,0,28,0,0,0,0,0
 1063292,Deniz Gül,2026,PO1,720,False,4,3,0,92,0,0,4,0,0
@@ -1977,24 +2000,30 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 720286,Aleksey Batrakov,2026,TR1,141,False,10,9,0,547,2,4,12,5,0
 720286,Aleksey Batrakov,2026,RUP,932,False,2,1,0,90,0,0,0,0,0
 720286,Aleksey Batrakov,2026,RU1,932,False,4,4,0,360,1,1,9,2,3
-720286,Aleksey Batrakov,2026,FS,3448,True,3,3,0,182,0,1,0,0,0
+720286,Aleksey Batrakov,2026,FS,3448,True,4,4,0,272,0,1,3,0,0
 720286,Aleksey Batrakov,2026,CL,141,False,4,4,0,284,4,0,5,5,0
-195778,Alexander Nübel,2026,UNLA,3262,True,4,1,0,90,0,0,0,0,0
+195778,Alexander Nübel,2026,UNLA,3262,True,5,1,0,90,0,0,0,0,0
 195778,Alexander Nübel,2026,TR1,114,False,11,11,0,990,0,0,0,0,0
 195778,Alexander Nübel,2026,ELQ,114,False,6,6,0,540,0,0,0,0,0
 195778,Alexander Nübel,2026,EL,114,False,4,4,0,360,0,0,0,0,0
+947360,Kassoum Ouattara,2026,TR1,114,False,11,6,0,202,0,0,2,0,2
+947360,Kassoum Ouattara,2026,ELQ,114,False,6,4,1,187,0,0,0,0,1
+947360,Kassoum Ouattara,2026,EL,114,False,4,4,0,353,0,0,1,0,0
+947360,Kassoum Ouattara,2026,AFCQ,3591,True,1,1,0,20,0,0,0,0,0
 1076981,Berat Luş,2026,U19Q,22585,True,3,0,0,0,0,0,0,0,0
 1076981,Berat Luş,2026,TR1,141,False,11,0,1,0,0,0,0,0,0
 1076981,Berat Luş,2026,FS,22586,True,3,3,0,159,0,0,0,0,0
 1076981,Berat Luş,2026,CL,141,False,4,0,0,0,0,0,0,0,0
 1076981,Berat Luş,2026,19YL,45512,False,1,1,0,72,1,0,0,0,0
-947360,Kassoum Ouattara,2026,TR1,114,False,11,6,0,202,0,0,2,0,2
-947360,Kassoum Ouattara,2026,ELQ,114,False,6,4,1,187,0,0,0,0,1
-947360,Kassoum Ouattara,2026,EL,114,False,4,4,0,353,0,0,1,0,0
 571607,Fabio Miretti,2026,TR1,114,False,9,4,5,225,0,0,6,1,1
 571607,Fabio Miretti,2026,IT1,506,False,1,0,0,0,0,0,0,0,0
 571607,Fabio Miretti,2026,EL,114,False,4,3,1,92,0,0,1,1,1
-244940,Salih Özcan,2026,UNLA,3381,True,4,4,0,273,0,0,4,3,1
+1189064,Azem Yortaç,2026,U19Q,22585,True,3,2,0,74,0,0,0,0,0
+1189064,Azem Yortaç,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
+1189064,Azem Yortaç,2026,T191,41852,False,9,8,0,528,0,0,0,0,0
+1189064,Azem Yortaç,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
+1189064,Azem Yortaç,2026,EL,114,False,4,0,0,0,0,0,0,0,0
+244940,Salih Özcan,2026,UNLA,3381,True,6,6,0,322,0,0,4,3,2
 244940,Salih Özcan,2026,TR1,114,False,11,11,0,907,0,0,4,1,1
 244940,Salih Özcan,2026,ELQ,114,False,6,6,0,521,0,0,5,2,0
 244940,Salih Özcan,2026,EL,114,False,4,4,0,229,0,1,2,0,0
@@ -2006,63 +2035,29 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718303,Ernest Poku,2026,ELQ,114,False,1,0,1,0,0,0,0,0,0
 718303,Ernest Poku,2026,EL,114,False,4,2,0,109,1,1,3,2,0
 718303,Ernest Poku,2026,DFB,15,False,1,0,0,0,0,0,0,0,0
-144028,Leandro Trossard,2026,UNLA,3382,True,4,2,2,18,0,0,0,0,0
+144028,Leandro Trossard,2026,UNLA,3382,True,6,4,2,43,0,0,0,0,0
 144028,Leandro Trossard,2026,TR1,114,False,11,10,1,828,2,4,33,11,3
 144028,Leandro Trossard,2026,ELQ,114,False,6,2,4,96,0,0,3,1,0
 144028,Leandro Trossard,2026,EL,114,False,4,3,1,270,0,0,7,0,0
 875334,Semih Kılıçsoy,2026,TR1,114,False,11,2,0,67,0,0,0,0,0
 875334,Semih Kılıçsoy,2026,ELQ,114,False,6,3,0,66,1,0,5,2,0
 875334,Semih Kılıçsoy,2026,EL,114,False,4,1,0,5,0,0,1,0,0
-1189064,Azem Yortaç,2026,U19Q,22585,True,3,2,0,74,0,0,0,0,0
-1189064,Azem Yortaç,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
-1189064,Azem Yortaç,2026,T191,41852,False,8,7,0,438,0,0,0,0,0
-1189064,Azem Yortaç,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
-1189064,Azem Yortaç,2026,EL,114,False,4,0,0,0,0,0,0,0,0
-1047101,İlhan Fakılı,2026,UNLA,3381,True,2,2,0,44,0,0,2,1,0
+1047101,İlhan Fakılı,2026,UNLA,3381,True,4,2,0,44,0,0,2,1,0
 1047101,İlhan Fakılı,2026,TR1,114,False,11,10,0,373,2,1,12,8,2
 1047101,İlhan Fakılı,2026,ELQ,114,False,6,6,0,442,0,1,13,3,0
 1047101,İlhan Fakılı,2026,EL,114,False,4,4,0,254,1,1,4,1,0
-1177020,Ozan Sevim,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
-1177020,Ozan Sevim,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
-1177020,Ozan Sevim,2026,EL,114,False,4,0,0,0,0,0,0,0,0
-1113451,Kojo Oppong,2026,TR1,36,False,9,5,0,230,0,0,1,0,0
-1113451,Kojo Oppong,2026,FR1,417,False,1,0,0,0,0,0,0,0,0
-1113451,Kojo Oppong,2026,CL,36,False,4,2,0,159,0,0,0,0,0
-1113451,Kojo Oppong,2026,AFCQ,3441,True,2,2,0,145,0,0,0,0,1
-177476,Nathan Aké,2026,UNLA,3379,True,4,0,0,0,0,0,0,0,0
-177476,Nathan Aké,2026,TR1,36,False,11,8,3,720,0,0,3,1,0
-177476,Nathan Aké,2026,FS,10933,True,3,0,0,0,0,0,0,0,0
-177476,Nathan Aké,2026,CLQ,36,False,6,6,0,495,0,0,1,0,0
-177476,Nathan Aké,2026,CL,36,False,4,3,1,201,0,0,1,0,0
-532826,Mason Greenwood,2026,TR1,36,False,11,10,1,716,6,2,35,14,1
-532826,Mason Greenwood,2026,CLQ,36,False,6,6,0,354,2,1,12,5,1
-532826,Mason Greenwood,2026,CL,36,False,4,4,0,330,2,1,11,4,0
-256267,Vedat Muriqi,2026,UNLB,53982,True,4,3,1,235,1,0,7,5,0
-256267,Vedat Muriqi,2026,TR1,36,False,11,11,0,461,7,2,21,12,1
-256267,Vedat Muriqi,2026,CLQ,36,False,6,3,2,175,1,0,5,3,0
-256267,Vedat Muriqi,2026,CL,36,False,4,4,0,231,1,0,5,5,0
-96341,Romelu Lukaku,2026,UNLA,3382,True,4,3,0,106,1,0,3,2,1
-96341,Romelu Lukaku,2026,TR1,36,False,11,10,1,483,1,3,13,4,2
-96341,Romelu Lukaku,2026,CLQ,36,False,2,2,0,18,0,0,1,0,0
-96341,Romelu Lukaku,2026,CL,36,False,4,4,0,129,0,0,3,1,0
-1185782,Kuzey Sapaz,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
-1185782,Kuzey Sapaz,2026,T191,41854,False,8,6,0,540,0,1,0,0,0
-1185782,Kuzey Sapaz,2026,FS,22585,True,3,1,0,18,0,0,0,0,0
-1185782,Kuzey Sapaz,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
-1185782,Kuzey Sapaz,2026,CL,36,False,4,0,0,0,0,0,0,0,0
-1185782,Kuzey Sapaz,2026,19YL,145167,False,4,3,0,270,0,0,0,0,1
 611855,Sidny Lopes Cabral,2026,UCOL,449,False,3,1,2,90,0,0,2,0,1
 611855,Sidny Lopes Cabral,2026,TR1,449,False,11,11,0,558,0,0,11,2,1
 611855,Sidny Lopes Cabral,2026,ELQ,449,False,2,2,0,147,0,0,3,1,1
-611855,Sidny Lopes Cabral,2026,AFCQ,4311,True,2,2,0,180,1,0,5,3,0
+611855,Sidny Lopes Cabral,2026,AFCQ,4311,True,3,3,0,225,1,0,5,3,1
 615350,Cenk Özkacar,2026,UCOL,449,False,3,3,0,270,0,0,3,1,0
 615350,Cenk Özkacar,2026,TR1,449,False,11,5,0,42,0,0,0,0,0
 615350,Cenk Özkacar,2026,ELQ,449,False,2,2,0,180,0,0,2,0,0
-1133736,Amara Diouf,2026,TR1,36,False,11,0,11,0,0,0,0,0,0
-1133736,Amara Diouf,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
-1133736,Amara Diouf,2026,CL,36,False,4,0,4,0,0,0,0,0,0
+1177020,Ozan Sevim,2026,TR1,114,False,11,0,0,0,0,0,0,0,0
+1177020,Ozan Sevim,2026,ELQ,114,False,6,0,0,0,0,0,0,0,0
+1177020,Ozan Sevim,2026,EL,114,False,4,0,0,0,0,0,0,0,0
 1377025,Kuzey Akçay,2026,UCOL,449,False,3,1,0,3,0,0,0,0,0
-1377025,Kuzey Akçay,2026,U17Q,22462,True,1,1,0,24,0,0,0,0,0
+1377025,Kuzey Akçay,2026,U17Q,22462,True,2,2,0,69,0,0,0,0,0
 1377025,Kuzey Akçay,2026,TR1,449,False,4,0,0,0,0,0,0,0,0
 1377025,Kuzey Akçay,2026,T191,41798,False,11,7,2,578,0,1,0,0,1
 1377025,Kuzey Akçay,2026,FS,22462,True,7,5,0,113,0,0,0,0,0
@@ -2076,7 +2071,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 148455,Mohamed Salah,2026,TR1,449,False,11,11,0,913,9,3,32,17,2
 148455,Mohamed Salah,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
 148455,Mohamed Salah,2026,ELQ,449,False,2,2,0,154,0,0,6,1,0
-148455,Mohamed Salah,2026,AFCQ,3672,True,2,1,0,61,0,0,1,1,0
+148455,Mohamed Salah,2026,AFCQ,3672,True,3,2,0,151,2,0,7,5,0
 929090,Franculino,2026,UCOL,449,False,3,2,1,170,3,1,7,5,0
 929090,Franculino,2026,TR1,449,False,8,6,2,375,4,2,12,9,0
 929090,Franculino,2026,ELQ,865,False,2,2,0,102,0,0,6,1,0
@@ -2085,6 +2080,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 929090,Franculino,2026,AFCQ,3701,True,2,2,0,148,2,0,4,3,0
 671669,Noah Saviolo,2026,UCOL,449,False,3,3,0,212,0,0,1,1,1
 671669,Noah Saviolo,2026,TR1,449,False,11,9,1,391,2,1,9,8,0
+671669,Noah Saviolo,2026,FS,16374,True,1,1,0,1,0,0,0,0,0
 671669,Noah Saviolo,2026,ELQ,449,False,2,2,0,127,0,0,3,1,0
 514887,Aral Şimşir,2026,UNLA,3381,True,4,1,0,70,1,0,3,1,0
 514887,Aral Şimşir,2026,UCOL,449,False,3,2,1,93,0,0,6,1,0
@@ -2100,6 +2096,54 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 892611,Ali Habeşoğlu,2026,UCOL,449,False,3,0,3,0,0,0,0,0,0
 892611,Ali Habeşoğlu,2026,TR2,44006,False,5,5,0,424,0,0,15,3,0
 892611,Ali Habeşoğlu,2026,TR1,449,False,8,1,0,1,0,0,0,0,0
+1113451,Kojo Oppong,2026,TR1,36,False,9,5,0,230,0,0,1,0,0
+1113451,Kojo Oppong,2026,FR1,417,False,1,0,0,0,0,0,0,0,0
+1113451,Kojo Oppong,2026,CL,36,False,4,2,0,159,0,0,0,0,0
+1113451,Kojo Oppong,2026,AFCQ,3441,True,3,2,0,145,0,0,0,0,1
+177476,Nathan Aké,2026,UNLA,3379,True,4,0,0,0,0,0,0,0,0
+177476,Nathan Aké,2026,U17Q,10933,True,1,0,0,0,0,0,0,0,0
+177476,Nathan Aké,2026,TR1,36,False,11,8,3,720,0,0,3,1,0
+177476,Nathan Aké,2026,FS,10933,True,3,0,0,0,0,0,0,0,0
+177476,Nathan Aké,2026,CLQ,36,False,6,6,0,495,0,0,1,0,0
+177476,Nathan Aké,2026,CL,36,False,4,3,1,201,0,0,1,0,0
+532826,Mason Greenwood,2026,TR1,36,False,11,10,1,716,6,2,35,14,1
+532826,Mason Greenwood,2026,CLQ,36,False,6,6,0,354,2,1,12,5,1
+532826,Mason Greenwood,2026,CL,36,False,4,4,0,330,2,1,11,4,0
+256267,Vedat Muriqi,2026,UNLB,53982,True,5,4,1,303,1,0,10,5,0
+256267,Vedat Muriqi,2026,TR1,36,False,11,11,0,461,7,2,21,12,1
+256267,Vedat Muriqi,2026,CLQ,36,False,6,3,2,175,1,0,5,3,0
+256267,Vedat Muriqi,2026,CL,36,False,4,4,0,231,1,0,5,5,0
+96341,Romelu Lukaku,2026,UNLA,3382,True,6,3,1,106,1,0,3,2,1
+96341,Romelu Lukaku,2026,TR1,36,False,11,10,1,483,1,3,13,4,2
+96341,Romelu Lukaku,2026,CLQ,36,False,2,2,0,18,0,0,1,0,0
+96341,Romelu Lukaku,2026,CL,36,False,4,4,0,129,0,0,3,1,0
+1185782,Kuzey Sapaz,2026,TR1,36,False,11,0,0,0,0,0,0,0,0
+1185782,Kuzey Sapaz,2026,T191,41854,False,9,7,0,630,0,1,0,0,0
+1185782,Kuzey Sapaz,2026,FS,22585,True,3,1,0,18,0,0,0,0,0
+1185782,Kuzey Sapaz,2026,CLQ,36,False,6,0,0,0,0,0,0,0,0
+1185782,Kuzey Sapaz,2026,CL,36,False,4,0,0,0,0,0,0,0,0
+1185782,Kuzey Sapaz,2026,19YL,145167,False,4,3,0,270,0,0,0,0,1
+1133736,Amara Diouf,2026,TR1,36,False,11,0,11,0,0,0,0,0,0
+1133736,Amara Diouf,2026,CLQ,36,False,6,0,6,0,0,0,0,0,0
+1133736,Amara Diouf,2026,CL,36,False,4,0,4,0,0,0,0,0,0
+615430,Arda Özçimen,2026,TR1,1467,False,11,8,0,675,0,0,0,0,0
+407491,Luka Gugeshashvili,2026,UNLB,3669,True,5,0,0,0,0,0,0,0,0
+407491,Luka Gugeshashvili,2026,TR1,1467,False,11,4,7,315,0,0,0,0,0
+407491,Luka Gugeshashvili,2026,ELQ,1091,False,1,0,0,0,0,0,0,0,0
+433181,Tino Anjorin,2026,TR1,1467,False,8,8,0,156,0,1,5,1,1
+433181,Tino Anjorin,2026,IT1,416,False,2,0,1,0,0,0,0,0,0
+433181,Tino Anjorin,2026,CIT,416,False,2,1,1,26,0,0,1,0,0
+249121,Noah Sonko Sundberg,2026,TR1,1467,False,11,4,7,360,0,0,1,0,0
+670850,Alex Matos,2026,TR1,1467,False,11,8,0,278,1,0,7,1,3
+1081721,Richard Akonnor,2026,UAE1,2524,False,1,1,0,24,0,0,0,0,0
+1081721,Richard Akonnor,2026,TR1,1467,False,10,10,0,789,0,2,9,2,2
+1081721,Richard Akonnor,2026,FS,5147,True,2,0,0,0,0,0,0,0,0
+1081721,Richard Akonnor,2026,ACEQ,2524,False,1,1,0,22,0,1,0,0,0
+1024605,André Henrique,2026,TR1,1467,False,11,11,0,660,4,1,26,9,2
+724532,Sinclair Armstrong,2026,TR1,1467,False,11,10,0,230,2,0,9,4,2
+500972,Bekir Turaç Böke,2026,TR2,2381,False,2,1,0,63,0,0,2,0,0
+500972,Bekir Turaç Böke,2026,TR1,1467,False,10,5,0,35,0,1,1,0,1
+345105,Gökdeniz Bayrakdar,2026,TR1,1467,False,11,0,4,0,0,0,0,0,0
 655902,Emin Bayram,2026,TR1,6890,False,11,11,0,956,1,0,4,2,0
 655902,Emin Bayram,2026,ECLQ,6890,False,2,2,0,180,1,0,2,1,0
 1245279,Ege Öztürk,2026,TR1,6890,False,11,0,0,0,0,0,0,0,0
@@ -2112,31 +2156,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1193794,Saba Kharebashvili,2026,ECLQ,663,False,4,0,0,0,0,0,0,0,0
 401604,Michal Karbownik,2026,TR1,6890,False,11,9,0,612,0,0,4,2,1
 401604,Michal Karbownik,2026,ECLQ,6890,False,2,1,0,90,0,0,1,1,0
-432982,Andreas Skov Olsen,2026,UNLA,3436,True,4,1,0,80,0,0,0,0,0
+432982,Andreas Skov Olsen,2026,UNLA,3436,True,5,2,0,104,0,0,0,0,0
 432982,Andreas Skov Olsen,2026,TR1,6890,False,11,11,0,838,2,3,18,6,0
 432982,Andreas Skov Olsen,2026,ECLQ,6890,False,1,0,1,0,0,0,0,0,0
 889264,Efe Arda Koyuncu,2026,TR1,6890,False,11,0,8,0,0,0,0,0,0
 889264,Efe Arda Koyuncu,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 875249,Batuhan Çelik,2026,TR1,6890,False,11,0,9,0,0,0,0,0,0
 875249,Batuhan Çelik,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
-615430,Arda Özçimen,2026,TR1,1467,False,11,8,0,675,0,0,0,0,0
-407491,Luka Gugeshashvili,2026,UNLB,3669,True,4,0,0,0,0,0,0,0,0
-407491,Luka Gugeshashvili,2026,TR1,1467,False,11,4,7,315,0,0,0,0,0
-407491,Luka Gugeshashvili,2026,ELQ,1091,False,1,0,0,0,0,0,0,0,0
-433181,Tino Anjorin,2026,TR1,1467,False,8,8,0,156,0,1,5,1,1
-433181,Tino Anjorin,2026,IT1,416,False,2,0,1,0,0,0,0,0,0
-433181,Tino Anjorin,2026,CIT,416,False,2,1,1,26,0,0,1,0,0
-249121,Noah Sonko Sundberg,2026,TR1,1467,False,11,4,7,360,0,0,1,0,0
-670850,Alex Matos,2026,TR1,1467,False,11,8,0,278,1,0,7,1,3
-1081721,Richard Akonnor,2026,UAE1,2524,False,1,1,0,24,0,0,0,0,0
-1081721,Richard Akonnor,2026,TR1,1467,False,10,10,0,789,0,2,9,2,2
-1081721,Richard Akonnor,2026,FS,5147,True,1,0,0,0,0,0,0,0,0
-1081721,Richard Akonnor,2026,ACEQ,2524,False,1,1,0,22,0,1,0,0,0
-1024605,André Henrique,2026,TR1,1467,False,11,11,0,660,4,1,26,9,2
-724532,Sinclair Armstrong,2026,TR1,1467,False,11,10,0,230,2,0,9,4,2
-500972,Bekir Turaç Böke,2026,TR2,2381,False,2,1,0,63,0,0,2,0,0
-500972,Bekir Turaç Böke,2026,TR1,1467,False,10,5,0,35,0,1,1,0,1
-345105,Gökdeniz Bayrakdar,2026,TR1,1467,False,11,0,4,0,0,0,0,0,0
 479643,Alexandre Penetra,2026,TR1,37951,False,11,9,0,630,0,0,1,0,0
 479643,Alexandre Penetra,2026,NLSC,1090,False,1,0,0,0,0,0,0,0,0
 920118,Arif Şimşir,2026,TR1,37951,False,11,0,0,0,0,0,0,0,0
@@ -2147,11 +2173,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 658531,Mohamed Diomandé,2026,TR1,37951,False,11,11,0,772,1,2,7,1,2
 658531,Mohamed Diomandé,2026,SC1,124,False,2,2,0,135,0,0,4,1,0
 658531,Mohamed Diomandé,2026,ELQ,124,False,1,1,0,90,0,0,0,0,0
-803049,Ermin Mahmic,2026,UNLB,3446,True,4,4,0,152,1,0,6,1,1
+803049,Ermin Mahmic,2026,UNLB,3446,True,5,5,0,203,1,1,6,1,1
 803049,Ermin Mahmic,2026,TSP,697,False,1,0,0,0,0,0,0,0,0
 803049,Ermin Mahmic,2026,TS1,697,False,5,0,0,0,0,0,0,0,0
 803049,Ermin Mahmic,2026,TR1,37951,False,9,9,0,306,2,1,17,10,0
-442703,Ylber Ramadani,2026,UNLC,3561,True,4,3,0,199,0,0,1,0,1
+442703,Ylber Ramadani,2026,UNLC,3561,True,6,4,1,269,0,0,1,0,2
 442703,Ylber Ramadani,2026,TR1,37951,False,11,10,1,740,0,0,4,1,2
 519882,Markus Karlsbakk,2026,TR1,37951,False,11,7,0,219,1,0,1,1,0
 859269,Kenan Fakılı,2026,TR2,44006,False,9,1,4,16,0,0,0,0,0
@@ -2163,7 +2189,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 467720,Youssoufa Moukoko,2026,TR1,37951,False,8,8,0,151,1,1,8,5,1
 467720,Youssoufa Moukoko,2026,ECLQ,190,False,6,3,0,121,0,0,5,0,0
 467720,Youssoufa Moukoko,2026,DK1,190,False,5,2,0,180,0,0,2,0,0
-586538,Alexandros Kyziridis,2026,UNLA,3378,True,4,1,0,45,0,0,0,0,0
+586538,Alexandros Kyziridis,2026,UNLA,3378,True,5,1,0,45,0,0,0,0,0
 586538,Alexandros Kyziridis,2026,TR1,37951,False,11,9,2,736,4,4,22,11,1
 586538,Alexandros Kyziridis,2026,SC1,43,False,2,0,0,0,0,0,0,0,0
 586538,Alexandros Kyziridis,2026,ELQ,43,False,1,1,0,86,0,0,2,0,0
@@ -2173,7 +2199,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 957634,Hasan Abdulkareem,2026,IRQ1,23806,False,10,10,0,786,2,3,0,0,2
 1197994,Hasanege Akdoğan,2026,U19Q,22585,True,3,3,0,170,2,2,0,0,1
 1197994,Hasanege Akdoğan,2026,TR1,37951,False,11,0,0,0,0,0,0,0,0
-574660,Strahinja Erakovic,2026,UNLA,3438,True,4,3,0,188,0,0,0,0,0
+574660,Strahinja Erakovic,2026,UNLA,3438,True,5,3,0,188,0,0,0,0,0
 574660,Strahinja Erakovic,2026,TR1,152,False,8,7,0,472,0,0,3,1,1
 574660,Strahinja Erakovic,2026,SER1,159,False,5,3,0,182,0,0,0,0,2
 574660,Strahinja Erakovic,2026,RUP,964,False,1,0,0,0,0,0,0,0,0
@@ -2182,6 +2208,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 745427,Gabriele Guarino,2026,TR1,152,False,11,9,0,671,0,0,7,1,0
 704970,Igor Drapiński,2026,TR1,152,False,11,4,2,264,0,0,0,0,0
 704970,Igor Drapiński,2026,PL1,6112,False,2,2,0,180,0,0,1,0,1
+704970,Igor Drapiński,2026,FS,9324,True,1,1,0,90,0,0,0,0,0
 1224200,Yusuf Efe Yurtsever,2026,TR1,152,False,2,0,0,0,0,0,0,0,0
 1224200,Yusuf Efe Yurtsever,2026,T191,83792,False,11,10,0,900,1,1,0,0,0
 1178476,Antoine Sekongo,2026,TR1,152,False,11,11,0,516,1,0,8,2,1
@@ -2200,12 +2227,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 979235,Moussa Diakité,2026,TR1,126,False,11,7,0,206,0,0,2,1,0
 1050693,Iustin Doicaru,2026,U19Q,21428,True,2,0,0,0,0,0,0,0,0
 1050693,Iustin Doicaru,2026,TR1,126,False,9,7,0,162,1,1,9,3,0
+1050693,Iustin Doicaru,2026,SU20,73100,True,1,1,0,27,0,0,0,0,0
 1050693,Iustin Doicaru,2026,ROMP,29831,False,1,0,0,0,0,0,0,0,0
 1050693,Iustin Doicaru,2026,RO1,29831,False,6,6,0,511,3,1,19,11,0
 1050693,Iustin Doicaru,2026,FS,37515,True,3,0,0,0,0,0,0,0,0
 1111241,Mame Mor Faye,2026,TR2,45269,False,10,8,2,627,3,0,19,5,2
 1111241,Mame Mor Faye,2026,TR1,126,False,3,2,0,19,0,0,1,0,0
-1474364,Mustafa Coşkun Tosun,2026,U19Q,22585,True,1,1,0,66,1,0,0,0,0
+1474364,Mustafa Coşkun Tosun,2026,U19Q,22585,True,2,2,0,88,1,0,0,0,0
 1474364,Mustafa Coşkun Tosun,2026,TR1,126,False,11,2,0,11,0,0,0,0,0
 1474364,Mustafa Coşkun Tosun,2026,T191,73904,False,8,8,0,622,2,0,0,0,2
 1474364,Mustafa Coşkun Tosun,2026,FS,22584,True,3,3,0,139,1,0,0,0,0
@@ -2213,7 +2241,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 629637,Kévin Mouanga,2026,TR1,10484,False,9,4,3,274,0,0,0,0,0
 629637,Kévin Mouanga,2026,SCC,527,False,1,0,0,0,0,0,0,0,0
 629637,Kévin Mouanga,2026,C1,527,False,4,3,1,270,0,0,1,0,0
-615930,Matei Ilie,2026,UNLB,3447,True,4,2,0,180,0,0,1,0,0
+615930,Matei Ilie,2026,UNLB,3447,True,5,3,0,189,0,0,1,0,0
 615930,Matei Ilie,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
 615930,Matei Ilie,2026,TR1,10484,False,11,11,0,990,0,0,2,0,2
 1045547,Ayberk Karapo,2026,TRP,10484,False,1,0,0,0,0,0,0,0,0
@@ -2227,7 +2255,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1438186,Salih Arıcı,2026,T191,73905,False,11,10,0,884,0,0,0,0,3
 1173606,Elson Mendes,2026,TRP,10484,False,1,1,0,22,0,0,0,0,0
 1173606,Elson Mendes,2026,TR1,10484,False,11,11,0,811,0,1,10,6,4
-1173606,Elson Mendes,2026,AFCQ,4311,True,2,0,0,0,0,0,0,0,0
+1173606,Elson Mendes,2026,AFCQ,4311,True,3,0,0,0,0,0,0,0,0
 1313802,Emirhan Boz,2026,TRP,10484,False,1,1,0,85,0,0,0,0,1
 1313802,Emirhan Boz,2026,TR1,10484,False,11,5,0,86,0,0,0,0,1
 922828,Thiemoko Diarra,2026,TRP,10484,False,1,1,0,90,1,0,0,0,0
@@ -2242,72 +2270,74 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1018802,Sinan Alkaş,2026,TR1,10484,False,11,1,0,1,0,0,0,0,0
 1223297,Bilal Demirağ,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 1223297,Bilal Demirağ,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
+956094,Şahin Dik,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
+956094,Şahin Dik,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
 1441826,Eymen Karataş,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
 1441826,Eymen Karataş,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
-1441826,Eymen Karataş,2026,T191,73902,False,11,8,0,662,0,0,0,0,0
+1441826,Eymen Karataş,2026,T191,73902,False,11,9,0,727,0,0,0,0,0
+1577095,Arouna Soro,2026,TRP,11282,False,1,1,0,90,0,0,0,0,0
+1577095,Arouna Soro,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
+1577095,Arouna Soro,2026,T191,73902,False,10,10,0,900,2,0,0,0,3
+716163,Iván Cédric,2026,TRP,11282,False,1,1,0,45,1,0,0,0,0
+716163,Iván Cédric,2026,TR2,3173,False,2,0,0,0,0,0,0,0,0
+716163,Iván Cédric,2026,TR1,11282,False,10,5,1,285,0,1,6,3,0
+716163,Iván Cédric,2026,AFCQ,3434,True,4,1,0,10,0,0,0,0,0
+1244036,Omar Ben Ali,2026,TRP,11282,False,1,1,0,66,1,0,0,0,0
+1244036,Omar Ben Ali,2026,TR1,11282,False,11,9,0,225,0,0,11,4,1
+1244036,Omar Ben Ali,2026,FS,49062,True,3,0,0,0,0,0,0,0,0
 284876,Paolo Fernandes,2026,TRP,11282,False,1,0,1,0,0,0,0,0,0
 284876,Paolo Fernandes,2026,TR1,11282,False,9,4,4,215,1,0,8,2,0
 284876,Paolo Fernandes,2026,GRSC,2441,False,1,0,0,0,0,0,0,0,0
 284876,Paolo Fernandes,2026,GR1,2441,False,1,0,0,0,0,0,0,0,0
 284876,Paolo Fernandes,2026,CLQ,2441,False,1,0,0,0,0,0,0,0,0
-956094,Şahin Dik,2026,TRP,11282,False,1,0,0,0,0,0,0,0,0
-956094,Şahin Dik,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
-1577095,Arouna Soro,2026,TRP,11282,False,1,1,0,90,0,0,0,0,0
-1577095,Arouna Soro,2026,TR1,11282,False,11,0,0,0,0,0,0,0,0
-1577095,Arouna Soro,2026,T191,73902,False,9,9,0,810,1,0,0,0,3
-716163,Iván Cédric,2026,TRP,11282,False,1,1,0,45,1,0,0,0,0
-716163,Iván Cédric,2026,TR2,3173,False,2,0,0,0,0,0,0,0,0
-716163,Iván Cédric,2026,TR1,11282,False,10,5,1,285,0,1,6,3,0
-716163,Iván Cédric,2026,AFCQ,3434,True,2,0,0,0,0,0,0,0,0
-1244036,Omar Ben Ali,2026,TRP,11282,False,1,1,0,66,1,0,0,0,0
-1244036,Omar Ben Ali,2026,TR1,11282,False,11,9,0,225,0,0,11,4,1
-1244036,Omar Ben Ali,2026,FS,49062,True,3,0,0,0,0,0,0,0,0
 358143,Chidozie Awaziem,2026,TR1,2293,False,11,9,0,693,2,0,5,2,2
 181380,Arthur Masuaku,2026,TR1,2293,False,11,10,0,740,0,0,2,0,2
 181380,Arthur Masuaku,2026,FS,3854,True,2,0,0,0,0,0,0,0,0
-181380,Arthur Masuaku,2026,AFCQ,3854,True,2,1,0,90,0,0,1,0,0
+181380,Arthur Masuaku,2026,AFCQ,3854,True,3,2,0,173,0,1,2,0,0
 1347138,Emir Gündoğdu,2026,TR1,2293,False,11,0,0,0,0,0,0,0,0
 1347138,Emir Gündoğdu,2026,T191,73906,False,11,9,0,810,0,0,0,0,0
-1347138,Emir Gündoğdu,2026,FS,22584,True,3,2,0,135,0,0,0,0,0
+1347138,Emir Gündoğdu,2026,FS,22584,True,4,2,0,135,0,0,0,0,0
 1005007,Da Mata,2026,TR1,2293,False,11,0,0,0,0,0,0,0,0
 462348,Mostafa Mohamed,2026,TR1,2293,False,8,8,0,212,0,0,5,1,0
 462348,Mostafa Mohamed,2026,FR2,995,False,4,0,0,0,0,0,0,0,0
-1138547,Rajmund Tóth,2026,UNLB,3468,True,4,3,1,63,0,1,1,1,1
+1138547,Rajmund Tóth,2026,UNLB,3468,True,5,4,1,83,0,1,1,1,1
 1138547,Rajmund Tóth,2026,UNG1,6055,False,3,0,0,0,0,0,0,0,0
 1138547,Rajmund Tóth,2026,TR1,2293,False,10,10,0,579,1,0,9,5,1
 1138547,Rajmund Tóth,2026,ECLQ,6055,False,4,1,0,77,0,0,0,0,1
 1138547,Rajmund Tóth,2026,CLQ,6055,False,2,2,0,157,0,0,0,0,1
 699980,Enis Destan,2026,TR1,2293,False,11,5,4,112,0,0,4,0,1
 291222,Jean-Luc Dompé,2026,TR1,2293,False,9,7,2,310,0,0,3,0,0
+291222,Jean-Luc Dompé,2026,FS,9323,True,1,0,0,0,0,0,0,0,0
 291222,Jean-Luc Dompé,2026,DFB,41,False,1,0,0,0,0,0,0,0,0
 567217,Ebrima Colley,2026,TR1,2293,False,11,10,0,337,1,0,7,3,0
-567217,Ebrima Colley,2026,AFCQ,6186,True,2,2,0,100,3,0,7,3,1
+567217,Ebrima Colley,2026,AFCQ,6186,True,3,3,0,145,3,0,7,3,1
 357117,Alban Lafont,2026,TR1,12382,False,11,11,0,990,0,0,0,0,3
-357117,Alban Lafont,2026,AFCQ,3591,True,2,0,0,0,0,0,0,0,0
+357117,Alban Lafont,2026,AFCQ,3591,True,3,0,0,0,0,0,0,0,0
 338055,Veysel Sapan,2026,TR1,12382,False,11,0,11,0,0,0,0,0,0
 1485581,Yakup Girişen,2026,TR1,12382,False,11,0,0,0,0,0,0,0,0
 1485581,Yakup Girişen,2026,T191,120040,False,2,1,0,90,0,0,0,0,0
+272539,David Bates,2026,UNLB,3380,True,5,0,0,0,0,0,0,0,0
 272539,David Bates,2026,TR1,12382,False,11,11,0,961,0,0,3,0,2
 542469,Lumbardh Dellova,2026,UNLB,53982,True,4,4,0,360,0,0,2,2,1
 542469,Lumbardh Dellova,2026,TR1,12382,False,11,9,2,777,0,1,3,0,4
 542469,Lumbardh Dellova,2026,ELQ,208,False,1,0,0,0,0,0,0,0,0
 1189317,Amadou Cissé,2026,TR1,12382,False,11,5,1,155,0,0,1,0,1
-1189317,Amadou Cissé,2026,AFCQ,3856,True,2,0,0,0,0,0,0,0,0
+1189317,Amadou Cissé,2026,AFCQ,3856,True,3,0,0,0,0,0,0,0,0
 606893,Ermal Krasniqi,2026,UNLB,53982,True,4,4,0,161,0,0,6,0,0
 606893,Ermal Krasniqi,2026,TR1,12382,False,11,11,0,929,1,2,17,2,3
 354197,Miraç Acer,2026,TR1,12382,False,11,3,0,9,0,0,0,0,0
 269171,Gökhan Gül,2026,TR1,12382,False,11,8,3,276,1,0,4,1,0
 344576,Rayan Raveloson,2026,TR1,12382,False,11,11,0,980,0,3,12,2,3
-344576,Rayan Raveloson,2026,AFCQ,14635,True,2,2,0,180,0,0,3,1,0
+344576,Rayan Raveloson,2026,AFCQ,14635,True,3,3,0,270,0,0,5,2,0
 1018259,Gift Orban,2026,TR1,12382,False,11,11,0,839,10,5,35,16,2
 673382,Yira Sor,2026,TR1,12382,False,11,5,6,275,2,1,7,4,0
 954090,Rayan Lutin,2026,TR1,12382,False,11,7,0,218,0,2,4,1,0
 954090,Rayan Lutin,2026,FS,16430,True,1,1,0,19,0,0,0,0,0
 954090,Rayan Lutin,2026,FR3,1416,False,1,0,0,0,0,0,0,0,0
-954090,Rayan Lutin,2026,AFCQ,16430,True,2,1,0,22,0,0,0,0,0
+954090,Rayan Lutin,2026,AFCQ,16430,True,3,2,0,112,0,0,0,0,0
 453987,Mohamed Khalil,2026,TR1,12382,False,11,6,0,239,0,1,4,1,1
 1583414,İsmail Duyu,2026,TR1,12382,False,5,0,0,0,0,0,0,0,0
-1583414,İsmail Duyu,2026,T191,120040,False,11,8,0,453,0,0,0,0,1
+1583414,İsmail Duyu,2026,T191,120040,False,11,9,0,543,0,0,0,0,1
 1047511,Hasan Yıldırım,2026,TR1,12382,False,11,0,11,0,0,0,0,0,0
 1065428,Berk Kızıldemir,2026,TR1,12382,False,11,0,0,0,0,0,0,0,0
 962555,Abakar Sylla,2026,TRP,2832,False,1,0,0,0,0,0,0,0,0
@@ -2323,6 +2353,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1526772,Mehmet Ali Genç,2026,TRP,2832,False,1,1,0,90,0,0,0,0,0
 1526772,Mehmet Ali Genç,2026,TR1,2832,False,2,0,0,0,0,0,0,0,0
 1526772,Mehmet Ali Genç,2026,T191,74653,False,11,10,0,754,0,0,0,0,4
+1526772,Mehmet Ali Genç,2026,FS,22584,True,1,0,0,0,0,0,0,0,0
 581447,Ulrich Meleke,2026,TRP,2832,False,1,0,1,0,0,0,0,0,0
 581447,Ulrich Meleke,2026,TR1,2832,False,11,7,3,549,0,0,5,1,1
 485582,Sontje Hansen,2026,TRP,2832,False,1,0,1,0,0,0,0,0,0
@@ -2348,7 +2379,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 644032,Cheikh Niasse,2026,TR1,820,False,10,3,6,192,0,0,1,0,1
 644032,Cheikh Niasse,2026,CIT,276,False,1,0,0,0,0,0,0,0,0
 1444729,Bilal Sarı,2026,TR1,820,False,2,0,0,0,0,0,0,0,0
-1444729,Bilal Sarı,2026,T191,74474,False,11,8,0,682,0,0,0,0,2
+1444729,Bilal Sarı,2026,T191,74474,False,11,9,0,772,0,0,0,0,3
 479638,Tiago Gouveia,2026,TRP,820,False,1,1,0,62,0,1,0,0,0
 479638,Tiago Gouveia,2026,TR1,820,False,10,10,0,753,2,1,21,10,1
 479638,Tiago Gouveia,2026,PO1,294,False,2,0,0,0,0,0,0,0,0
@@ -2398,6 +2429,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 733410,Lawrence Agyekum,2026,BE1,520,False,4,2,2,31,0,0,0,0,0
 862859,Emre Erdem,2026,TR1,39722,False,11,0,0,0,0,0,0,0,0
 268112,Gyrano Kerk,2026,TR1,39722,False,11,8,1,243,0,2,2,2,1
+268112,Gyrano Kerk,2026,FS,15359,True,2,1,0,90,1,0,0,0,0
 268112,Gyrano Kerk,2026,CNLA,15359,True,4,4,0,346,1,2,0,0,0
 808651,Emirhan Acar,2026,TR2,20760,False,5,5,0,167,0,0,2,2,0
 808651,Emirhan Acar,2026,TR1,39722,False,8,0,0,0,0,0,0,0,0
@@ -2422,7 +2454,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1015619,Ahmed Abdullahi,2026,TR1,7160,False,11,9,2,613,2,0,11,6,0
 752455,Chandrel Massanga,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
 752455,Chandrel Massanga,2026,TR1,7160,False,11,11,0,971,0,0,9,2,1
-752455,Chandrel Massanga,2026,AFCQ,3702,True,2,1,0,62,0,0,0,0,0
+752455,Chandrel Massanga,2026,AFCQ,3702,True,3,1,0,62,0,0,0,0,0
 344151,Bilal Boutobba,2026,TRP,7160,False,1,0,0,0,0,0,0,0,0
 344151,Bilal Boutobba,2026,TR1,7160,False,11,11,0,524,0,0,17,4,0
 387160,Konrad Michalak,2026,TRP,7160,False,1,0,1,0,0,0,0,0,0

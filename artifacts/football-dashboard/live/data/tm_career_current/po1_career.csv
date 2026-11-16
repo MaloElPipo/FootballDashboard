@@ -1,16 +1,16 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
-568154,Lucas Cañizares,2026,POPO,7179,False,2,0,0,0,0,0,0,0,0
-568154,Lucas Cañizares,2026,PO2,7179,False,10,3,0,249,0,0,0,0,1
 719646,Bernardo,2026,UCOL,1075,False,3,3,0,270,0,0,0,0,0
 719646,Bernardo,2026,POCP,1075,False,1,1,0,90,0,0,0,0,0
 719646,Bernardo,2026,PO1,1075,False,11,11,0,990,0,0,0,0,0
 719646,Bernardo,2026,ECLQ,1075,False,6,5,0,450,0,0,0,0,0
+568154,Lucas Cañizares,2026,POPO,7179,False,2,0,0,0,0,0,0,0,0
+568154,Lucas Cañizares,2026,PO2,7179,False,11,3,0,249,0,0,0,0,1
 375770,Gabriel Souza,2026,POPO,8189,False,2,1,0,90,0,0,0,0,0
-375770,Gabriel Souza,2026,PO2,8189,False,10,1,0,57,0,0,0,0,0
+375770,Gabriel Souza,2026,PO2,8189,False,11,1,0,57,0,0,0,0,0
 989929,Brayan Medina,2026,POPO,7179,False,2,1,0,27,0,0,0,0,1
-989929,Brayan Medina,2026,PO2,7179,False,10,3,0,270,0,0,0,0,0
+989929,Brayan Medina,2026,PO2,7179,False,11,4,0,360,0,0,0,0,1
 539807,Christian Marques,2026,POPO,7179,False,2,2,0,210,0,0,0,0,0
-539807,Christian Marques,2026,PO2,7179,False,10,8,0,716,0,0,0,0,0
+539807,Christian Marques,2026,PO2,7179,False,11,9,0,806,0,0,0,0,0
 461903,João Silva,2026,RUP,14589,False,2,1,0,68,0,0,0,0,1
 461903,João Silva,2026,RU1,14589,False,7,2,0,24,0,0,0,0,0
 592498,Tiago Manso,2026,GRP,30120,False,4,0,0,0,0,0,0,0,0
@@ -25,11 +25,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1194211,Diego Tavares,2026,PT3A,41539,False,9,9,0,788,0,0,0,0,2
 1194211,Diego Tavares,2026,POPO,41539,False,3,2,0,174,0,0,0,0,1
 124548,Bebeto,2026,POPO,7179,False,2,2,0,166,1,0,0,0,0
-124548,Bebeto,2026,PO2,7179,False,10,5,0,109,1,0,0,0,2
+124548,Bebeto,2026,PO2,7179,False,11,5,0,109,1,0,0,0,2
 211107,João Afonso,2026,POPO,7179,False,2,1,0,10,0,0,0,0,0
-211107,João Afonso,2026,PO2,7179,False,10,2,0,180,0,0,0,0,0
+211107,João Afonso,2026,PO2,7179,False,11,3,0,183,0,0,0,0,0
 670683,Hugo Félix,2026,POPO,7179,False,2,2,0,177,1,1,0,0,0
-670683,Hugo Félix,2026,PO2,7179,False,10,10,0,724,1,1,0,0,2
+670683,Hugo Félix,2026,PO2,7179,False,11,11,0,800,1,1,0,0,2
 503975,Joe Hodge,2026,SCP,987,False,1,1,0,62,0,0,0,0,0
 503975,Joe Hodge,2026,SC1,987,False,11,11,0,924,0,0,11,2,2
 503975,Joe Hodge,2026,PO2,7179,False,1,0,0,0,0,0,0,0,0
@@ -37,16 +37,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 401736,Yaya Sithole,2026,POPO,7179,False,2,2,0,84,0,1,0,0,1
 401736,Yaya Sithole,2026,PO2,7179,False,10,7,0,156,0,0,0,0,0
 401736,Yaya Sithole,2026,FS,3806,True,1,1,0,90,0,0,0,0,1
-401736,Yaya Sithole,2026,AFCQ,3806,True,2,2,0,169,1,1,3,1,0
+401736,Yaya Sithole,2026,AFCQ,3806,True,3,3,0,259,1,1,3,1,0
 476355,Cícero,2026,POPO,7179,False,2,1,0,81,0,0,0,0,0
-476355,Cícero,2026,PO2,7179,False,10,5,0,393,0,0,0,0,3
+476355,Cícero,2026,PO2,7179,False,11,5,0,393,0,0,0,0,3
 512129,André Ceitil,2026,POPO,7788,False,1,1,0,79,0,0,0,0,0
 512129,André Ceitil,2026,POCP,7788,False,1,1,0,90,0,0,1,0,0
 512129,André Ceitil,2026,PO1,7788,False,11,3,0,137,0,0,1,1,2
 634125,Xabi Huarte,2026,POPO,7179,False,2,1,0,45,0,0,0,0,0
-634125,Xabi Huarte,2026,PO2,7179,False,10,7,0,168,0,1,0,0,1
+634125,Xabi Huarte,2026,PO2,7179,False,11,8,0,192,1,1,0,0,1
 134608,Hélder Tavares,2026,POPO,7179,False,2,1,0,33,0,2,0,0,0
-134608,Hélder Tavares,2026,PO2,7179,False,10,8,0,532,0,0,0,0,2
+134608,Hélder Tavares,2026,PO2,7179,False,11,9,0,598,0,0,0,0,2
 355369,Jordan,2026,L2,65,False,8,6,1,205,0,0,4,0,0
 355369,Jordan,2026,FR2,1421,False,4,0,0,0,0,0,0,0,0
 174694,Rony Lopes,2026,POPU,3527,False,2,1,0,72,0,0,0,0,0
@@ -54,7 +54,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 174694,Rony Lopes,2026,PL1,3527,False,8,7,0,454,1,0,24,5,0
 1043831,Miro,2026,RUP,75231,False,5,3,0,115,0,0,0,0,0
 1043831,Miro,2026,RU1,75231,False,14,14,0,820,2,0,16,6,2
-1043831,Miro,2026,AFCQ,3585,True,2,2,0,28,1,0,1,1,0
+1043831,Miro,2026,AFCQ,3585,True,3,3,0,53,2,1,4,2,0
 813152,Makan Aïko,2026,POPU,3527,False,2,2,0,105,0,0,0,0,0
 813152,Makan Aïko,2026,PL1,3527,False,14,14,0,520,2,1,14,6,2
 433652,Benjamin Kimpioka,2026,GRP,6676,False,4,2,0,119,0,0,0,0,0
@@ -63,9 +63,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1112292,Yefrei Rodríguez,2026,PT3A,8827,False,9,9,0,540,3,3,0,0,3
 1112292,Yefrei Rodríguez,2026,POPO,8827,False,2,2,0,106,1,0,0,0,0
 462087,Arjen van der Heide,2026,POPO,7179,False,2,2,0,115,1,1,0,0,1
-462087,Arjen van der Heide,2026,PO2,7179,False,10,8,0,429,2,0,0,0,1
+462087,Arjen van der Heide,2026,PO2,7179,False,11,9,0,495,2,0,0,0,1
 927644,Afonso Rodrigues,2026,POPO,2990,False,2,2,0,95,1,1,0,0,1
-927644,Afonso Rodrigues,2026,PO2,2990,False,10,8,0,595,1,1,0,0,3
+927644,Afonso Rodrigues,2026,PO2,2990,False,11,9,0,655,1,1,0,0,3
 927644,Afonso Rodrigues,2026,CLQ,27114,False,2,0,0,0,0,0,0,0,0
 808445,Adriel,2026,POSU,2432,False,1,1,0,90,0,0,0,0,0
 808445,Adriel,2026,PO2,2432,False,10,8,0,687,0,0,0,0,1
@@ -73,10 +73,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 685805,João Gonçalves,2026,POPO,982,False,1,1,0,90,0,0,0,0,0
 685805,João Gonçalves,2026,PO1,982,False,11,0,0,0,0,0,0,0,0
 538253,Simão,2026,POPO,3345,False,2,0,0,0,0,0,0,0,0
-538253,Simão,2026,PO2,3345,False,10,2,0,135,0,0,0,0,0
+538253,Simão,2026,PO2,3345,False,11,2,0,135,0,0,0,0,0
 858252,Diogo Spencer,2026,POPO,2521,False,1,1,0,81,0,0,0,0,0
 858252,Diogo Spencer,2026,PO1,2521,False,11,7,0,550,0,3,7,1,2
+1000828,Sidi Bane,2026,FRC,1080,False,1,1,0,90,0,0,0,0,0
 1000828,Sidi Bane,2026,FR2,1080,False,12,5,2,379,1,0,2,1,0
+726697,Cristian Devenish,2026,FRC,347,False,1,1,0,90,0,0,0,0,0
 726697,Cristian Devenish,2026,FR2,347,False,12,12,0,1069,0,0,6,1,3
 979625,Paulo Vitor,2026,SA2L,39536,False,5,2,0,122,0,0,0,0,0
 979625,Paulo Vitor,2026,RUP,71985,False,3,1,0,90,0,0,0,0,0
@@ -84,7 +86,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 690124,Daniel Rivas,2026,POPO,110302,False,2,1,0,79,0,0,0,0,0
 690124,Daniel Rivas,2026,PO2,110302,False,10,8,0,691,0,1,2,0,3
 602156,Guillem Molina,2026,PO2,110302,False,3,2,0,30,0,0,0,0,0
-602156,Guillem Molina,2026,E3G2,5358,False,11,8,0,635,0,0,0,0,0
+602156,Guillem Molina,2026,E3G2,5358,False,12,8,0,635,0,0,0,0,0
 602156,Guillem Molina,2026,CDR,5358,False,1,0,0,0,0,0,0,0,0
 341516,Ponck,2026,POPO,110302,False,2,1,0,11,0,0,0,0,0
 341516,Ponck,2026,PO2,110302,False,10,6,0,396,0,0,0,0,1
@@ -96,19 +98,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 461629,Gustavo Assunção,2026,ECLQ,429,False,4,1,0,46,0,0,0,0,0
 340864,Jaume Grau,2026,ACLE,27190,False,4,4,0,317,1,2,5,1,1
 638589,Ángel Algobia,2026,PO2,110302,False,4,1,0,37,0,0,0,0,0
-638589,Ángel Algobia,2026,E3G1,4542,False,10,8,0,477,1,0,8,3,1
+638589,Ángel Algobia,2026,E3G1,4542,False,11,9,0,567,1,0,9,3,2
 638589,Ángel Algobia,2026,CDR,4542,False,1,1,0,90,0,0,0,0,0
 314942,Bruno Lourenço,2026,SL1,4772,False,15,12,0,465,0,1,0,0,1
 816135,Pedro Lima,2026,POCP,336,False,1,1,0,78,2,0,5,4,0
 816135,Pedro Lima,2026,PO1,336,False,11,3,0,82,1,0,8,4,0
 816135,Pedro Lima,2026,CL,336,False,4,1,0,5,0,0,0,0,0
 225151,Rafael Barbosa,2026,POPO,3345,False,2,0,0,0,0,0,0,0,0
-225151,Rafael Barbosa,2026,PO2,3345,False,10,9,0,612,0,1,1,0,1
+225151,Rafael Barbosa,2026,PO2,3345,False,11,10,0,689,0,1,1,0,1
 637788,Gustavo Mendonça,2026,UCOL,10482,False,3,3,0,251,0,0,3,1,1
 637788,Gustavo Mendonça,2026,ELQ,10482,False,2,2,0,135,0,0,0,0,0
 637788,Gustavo Mendonça,2026,CLQ,10482,False,4,4,0,255,0,0,0,0,2
 1015624,Óscar Perea,2026,MEXA,3631,False,14,12,0,512,3,2,28,11,0
-1015624,Óscar Perea,2026,FS,3816,True,3,0,0,0,0,0,0,0,0
+1015624,Óscar Perea,2026,FS,3816,True,4,1,0,45,0,0,0,0,1
+1015624,Óscar Perea,2026,FS,28266,True,2,0,0,0,0,0,0,0,0
 1442787,António Machado,2026,PT23,75337,False,3,1,0,9,0,0,0,0,0
 390478,Kobamelo Kodisang,2026,SFAL,6356,False,3,0,0,0,0,0,0,0,0
 390478,Kobamelo Kodisang,2026,SFA1,6356,False,8,0,0,0,0,0,0,0,0
@@ -119,28 +122,28 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 463666,Antoine Baroan,2026,ROMP,455,False,2,0,2,0,0,0,0,0,0
 463666,Antoine Baroan,2026,RO1,455,False,15,0,15,0,0,0,0,0,0
 309841,Andre Green,2026,IND1,45277,False,4,4,0,300,1,0,11,5,0
-568155,Jordi Escobar,2026,ES2,8568,False,13,13,0,682,4,1,30,11,2
+568155,Jordi Escobar,2026,ES2,8568,False,14,14,0,772,4,1,32,11,2
 568155,Jordi Escobar,2026,CDR,8568,False,1,1,0,45,1,0,0,0,0
 139393,Tomané,2026,POPO,7179,False,2,1,0,81,0,0,0,0,0
-139393,Tomané,2026,PO2,7179,False,10,10,0,674,4,1,0,0,3
+139393,Tomané,2026,PO2,7179,False,11,11,0,764,5,1,0,0,3
 1065761,Guilherme Neiva,2026,POPO,110302,False,2,2,0,91,0,0,0,0,1
 1065761,Guilherme Neiva,2026,PO2,110302,False,10,10,0,616,1,1,2,0,2
 314944,Ricardo Mangas,2026,IT1,2919,False,11,11,0,891,1,2,7,3,1
 314944,Ricardo Mangas,2026,CIT,2919,False,2,2,0,160,0,0,5,2,0
 810096,Ismaël Gharbi,2026,FS,3670,True,1,0,0,0,0,0,0,0,0
-810096,Ismaël Gharbi,2026,ES2,1244,False,13,12,0,907,2,1,22,6,2
+810096,Ismaël Gharbi,2026,ES2,1244,False,14,12,0,907,2,1,22,6,2
 810096,Ismaël Gharbi,2026,ECLQ,1075,False,1,0,0,0,0,0,0,0,0
 810096,Ismaël Gharbi,2026,CDR,1244,False,1,0,0,0,0,0,0,0,0
-810096,Ismaël Gharbi,2026,AFCQ,3670,True,2,2,0,159,0,0,7,1,1
+810096,Ismaël Gharbi,2026,AFCQ,3670,True,3,3,0,249,0,0,8,1,1
 1058056,Edson Mucuana,2026,PT3A,4275,False,9,9,0,515,2,1,0,0,0
 1058056,Edson Mucuana,2026,POPO,4275,False,1,0,0,0,0,0,0,0,0
-1058056,Edson Mucuana,2026,AFCQ,5129,True,1,1,0,24,0,0,0,0,0
+1058056,Edson Mucuana,2026,AFCQ,5129,True,2,1,0,24,0,0,0,0,0
 1006448,Sandro Vidigal,2026,CCB,1245,False,2,2,0,121,0,0,0,0,0
 1006448,Sandro Vidigal,2026,BE2,1245,False,9,6,0,277,2,1,8,5,2
 1191154,Ibrahima Ba,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 1191154,Ibrahima Ba,2026,PO1,336,False,11,2,0,180,0,0,3,0,0
 1191154,Ibrahima Ba,2026,CL,336,False,4,0,0,0,0,0,0,0,0
-658815,Nodar Lominadze,2026,UNLB,3669,True,4,1,0,25,0,0,0,0,1
+658815,Nodar Lominadze,2026,UNLB,3669,True,5,1,0,25,0,0,0,0,1
 923299,Felipe Lima,2026,PT23,68780,False,6,5,0,414,0,1,0,0,0
 923299,Felipe Lima,2026,PO2,10330,False,10,4,0,95,1,0,0,0,0
 393581,Bruno Almeida,2026,ZYP1,786,False,9,3,0,66,0,0,0,0,0
@@ -148,26 +151,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 352425,Witi,2026,ECLQ,10301,False,2,2,0,56,0,0,1,0,2
 352425,Witi,2026,ARPO,10301,False,1,1,0,90,0,0,0,0,0
 352425,Witi,2026,ARM1,10301,False,13,11,0,659,1,2,0,0,0
-352425,Witi,2026,AFCQ,5129,True,2,2,0,132,1,1,1,1,1
-636697,Arnau Solà,2026,E3G2,3679,False,11,11,0,952,0,1,6,1,0
+352425,Witi,2026,AFCQ,5129,True,3,3,0,177,1,1,2,1,1
+636697,Arnau Solà,2026,E3G2,3679,False,12,12,0,979,0,1,7,1,0
 564968,Francisco Meixedo,2026,POPO,3349,False,1,1,0,90,0,0,0,0,0
 564968,Francisco Meixedo,2026,PO2,3349,False,10,0,0,0,0,0,0,0,0
 927107,Ni,2026,POPO,2990,False,2,1,0,90,0,1,0,0,1
-927107,Ni,2026,PO2,2990,False,10,8,0,675,0,0,0,0,1
+927107,Ni,2026,PO2,2990,False,11,9,0,721,0,0,0,0,2
 1159175,Mathew Gbomadu,2026,ECLQ,663,False,2,0,0,0,0,0,0,0,0
 351751,Rodrigo Borges,2026,POPO,4294,False,2,2,0,95,0,0,0,0,0
-351751,Rodrigo Borges,2026,PO2,4294,False,10,3,0,80,0,0,0,0,0
+351751,Rodrigo Borges,2026,PO2,4294,False,11,4,0,170,0,0,0,0,0
 448264,Afonso Freitas,2026,POPO,1701,False,2,2,0,174,1,0,0,0,1
-448264,Afonso Freitas,2026,PO2,1701,False,10,9,0,656,0,0,0,0,2
+448264,Afonso Freitas,2026,PO2,1701,False,11,10,0,702,0,0,0,0,3
 1288395,Tyler Keating,2026,PT23,67837,False,11,8,0,682,0,0,0,0,1
-650568,António Silva,2026,UNLA,3300,True,4,0,0,0,0,0,0,0,0
+650568,António Silva,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 650568,António Silva,2026,GB1,989,False,10,10,0,900,0,0,6,2,4
 650568,António Silva,2026,ELQ,294,False,2,2,0,180,0,0,1,1,0
 650568,António Silva,2026,EL,989,False,4,3,0,270,0,0,2,0,0
 650568,António Silva,2026,CGB,989,False,2,2,0,172,0,0,2,0,1
 197613,Alexandre Guedes,2026,POPO,3349,False,1,1,0,77,0,0,0,0,0
 197613,Alexandre Guedes,2026,PO2,3349,False,8,6,0,363,0,0,0,0,0
-629773,Lukas Hornicek,2026,UNLA,3445,True,4,2,0,180,0,0,0,0,0
+629773,Lukas Hornicek,2026,UNLA,3445,True,6,2,0,180,0,0,0,0,0
 629773,Lukas Hornicek,2026,GB1,762,False,10,10,0,900,0,0,0,0,1
 629773,Lukas Hornicek,2026,ECLQ,1075,False,2,1,0,90,0,0,0,0,0
 629773,Lukas Hornicek,2026,CGB,762,False,3,2,0,180,0,0,0,0,0
@@ -177,12 +180,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 666971,Souleymane Faye,2026,FR1,1158,False,10,7,0,223,0,0,5,0,1
 898721,Chissumba,2026,POPO,2521,False,1,1,0,70,0,0,0,0,0
 898721,Chissumba,2026,PO1,2521,False,11,10,0,575,1,0,5,1,1
-394134,Felix Bacher,2026,UNLB,3383,True,3,1,0,90,0,0,0,0,0
+898721,Chissumba,2026,FS,16374,True,1,1,0,1,0,0,0,0,0
+394134,Felix Bacher,2026,UNLB,3383,True,4,1,0,90,0,0,0,0,0
 394134,Felix Bacher,2026,FR1,1041,False,10,9,0,731,1,1,8,3,1
 394134,Felix Bacher,2026,EL,1041,False,4,4,0,270,0,0,1,0,0
 394134,Felix Bacher,2026,CLQ,1041,False,4,0,0,0,0,0,0,0,0
 982575,Gustavo Sá,2026,GRP,683,False,3,2,0,170,1,0,0,0,0
 982575,Gustavo Sá,2026,GR1,683,False,10,8,1,241,0,1,7,2,1
+982575,Gustavo Sá,2026,FS,16374,True,1,1,0,82,0,1,4,1,1
 982575,Gustavo Sá,2026,EL,683,False,4,3,1,94,0,0,1,0,0
 982575,Gustavo Sá,2026,CLQ,683,False,2,1,0,61,0,0,1,0,1
 921090,Dieu-Merci Michel,2026,UAEP,94732,False,1,1,0,15,0,0,0,0,0
@@ -193,36 +198,36 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1056441,Miguel Pires,2026,POPO,6912,False,2,0,0,0,0,0,0,0,0
 1056441,Miguel Pires,2026,PO2,6912,False,10,7,0,486,1,0,0,0,1
 874853,Mateus Sarará,2026,POPO,7179,False,2,2,0,200,0,0,0,0,1
-874853,Mateus Sarará,2026,PO2,7179,False,10,6,0,460,1,0,0,0,2
+874853,Mateus Sarará,2026,PO2,7179,False,11,7,0,547,1,0,0,0,3
 1094885,Otávio,2026,L1,24,False,9,1,0,5,0,0,0,0,1
 1094885,Otávio,2026,DFB,24,False,2,1,0,90,0,0,1,0,0
 705808,Max Svensson,2026,POPO,3327,False,2,2,0,50,1,0,0,0,1
-705808,Max Svensson,2026,PO2,3327,False,10,10,0,841,6,4,0,0,3
+705808,Max Svensson,2026,PO2,3327,False,11,11,0,931,7,4,0,0,3
 366278,Rodrigo Pinho,2026,POPO,110302,False,2,2,0,145,2,0,0,0,0
 366278,Rodrigo Pinho,2026,PO2,110302,False,10,8,0,660,4,2,3,2,0
 1096224,Renan Santana,2026,AZ1,36999,False,10,10,0,841,0,1,0,0,2
 1096224,Renan Santana,2026,ASPK,36999,False,1,1,0,76,0,1,0,0,1
 718152,Otso Liimatta,2026,SEC,7945,False,1,0,0,0,0,0,0,0,0
 139336,Paulo Oliveira,2026,SAKC,50531,False,1,0,0,0,0,0,0,0,0
-139336,Paulo Oliveira,2026,SA1,50531,False,13,6,7,526,0,0,1,0,0
+139336,Paulo Oliveira,2026,SA1,50531,False,12,6,6,526,0,0,1,0,0
 524964,Orest Lebedenko,2026,POPO,8024,False,1,1,0,120,0,1,0,0,0
 524964,Orest Lebedenko,2026,PO1,8024,False,11,11,0,916,0,1,6,3,2
 367652,Rodrigo Abascal,2026,SAKC,31008,False,1,1,0,90,0,0,0,0,0
 367652,Rodrigo Abascal,2026,SA1,31008,False,12,10,1,816,1,1,11,4,0
 367652,Rodrigo Abascal,2026,PO1,2420,False,1,0,0,0,0,0,0,0,0
 1082539,Edney,2026,POPO,7378,False,2,2,0,104,0,0,0,0,0
-1082539,Edney,2026,PO2,7378,False,10,10,0,811,1,1,0,0,1
+1082539,Edney,2026,PO2,7378,False,11,11,0,901,1,1,0,0,1
 749557,Thauan Lara,2026,PT23,67731,False,1,1,0,45,0,0,0,0,0
 749557,Thauan Lara,2026,POPO,7378,False,2,2,0,166,0,0,0,0,1
-749557,Thauan Lara,2026,PO2,7378,False,10,5,0,42,0,0,0,0,0
-749557,Thauan Lara,2026,FS,7658,True,5,0,0,0,0,0,0,0,0
+749557,Thauan Lara,2026,PO2,7378,False,11,5,0,42,0,0,0,0,0
+749557,Thauan Lara,2026,FS,7658,True,6,0,0,0,0,0,0,0,0
 647540,Douglas Borel,2026,POPO,3327,False,2,2,0,180,0,0,0,0,0
-647540,Douglas Borel,2026,PO2,3327,False,10,8,0,416,0,0,0,0,0
+647540,Douglas Borel,2026,PO2,3327,False,11,9,0,506,0,0,0,0,1
 924533,Jader Gentil,2026,PT23,67731,False,1,1,0,87,0,0,0,0,1
 924533,Jader Gentil,2026,POPO,7378,False,2,2,0,70,0,0,0,0,2
-924533,Jader Gentil,2026,PO2,7378,False,10,0,0,0,0,0,0,0,0
+924533,Jader Gentil,2026,PO2,7378,False,11,0,0,0,0,0,0,0,0
 369258,Dudu,2026,POPO,7378,False,2,0,0,0,0,0,0,0,0
-369258,Dudu,2026,PO2,7378,False,10,10,0,900,0,0,0,0,0
+369258,Dudu,2026,PO2,7378,False,11,11,0,990,0,0,0,0,0
 905013,Chilohem Onuoha,2026,ofb,4467,False,2,0,0,0,0,0,0,0,0
 905013,Chilohem Onuoha,2026,ARLS,10224,False,10,9,0,558,1,2,0,0,3
 905013,Chilohem Onuoha,2026,A1,4467,False,11,2,0,34,0,0,1,0,0
@@ -244,7 +249,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 284701,Samuel Portugal,2026,PO1,720,False,1,0,0,0,0,0,0,0,0
 284701,Samuel Portugal,2026,PO1,2424,False,10,0,0,0,0,0,0,0,0
 1073115,Yanis da Rocha,2026,POPO,7378,False,2,2,0,135,0,0,0,0,0
-1073115,Yanis da Rocha,2026,PO2,7378,False,9,9,0,383,1,0,0,0,2
+1073115,Yanis da Rocha,2026,PO2,7378,False,10,9,0,383,1,0,0,0,2
 1073115,Yanis da Rocha,2026,PO1,1075,False,1,0,0,0,0,0,0,0,0
 1073115,Yanis da Rocha,2026,ECLQ,1075,False,3,0,0,0,0,0,0,0,0
 1093809,Gui,2026,PT3A,15136,False,9,0,0,0,0,0,0,0,0
@@ -261,25 +266,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 931415,João Rego,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 931415,João Rego,2026,PO1,3268,False,9,8,0,691,1,0,14,3,0
 931415,João Rego,2026,PO1,294,False,2,0,0,0,0,0,0,0,0
+931415,João Rego,2026,FS,16374,True,1,1,0,8,0,0,0,0,0
 931415,João Rego,2026,ELQ,294,False,5,1,0,6,0,0,0,0,0
-405564,Giorgi Kochorashvili,2026,UNLB,3669,True,4,4,0,270,0,0,0,0,2
+405564,Giorgi Kochorashvili,2026,UNLB,3669,True,5,4,1,270,0,0,0,0,2
 405564,Giorgi Kochorashvili,2026,PO1,336,False,2,0,0,0,0,0,0,0,0
-405564,Giorgi Kochorashvili,2026,ES1,368,False,11,7,0,276,0,1,4,0,1
+405564,Giorgi Kochorashvili,2026,ES1,368,False,11,7,1,276,0,1,4,0,1
 405564,Giorgi Kochorashvili,2026,CDR,368,False,1,1,0,67,0,0,2,0,0
 610335,Iván Jaime,2026,POSU,720,False,1,0,0,0,0,0,0,0,0
 610335,Iván Jaime,2026,PO1,720,False,2,0,0,0,0,0,0,0,0
-610335,Iván Jaime,2026,ES2,472,False,12,11,0,814,2,3,19,6,3
+610335,Iván Jaime,2026,ES2,472,False,13,12,0,904,2,3,21,8,3
 610335,Iván Jaime,2026,CDR,472,False,1,0,0,0,0,0,0,0,0
 967688,Armando Jr,2026,POPO,3325,False,2,2,0,61,0,0,0,0,0
-967688,Armando Jr,2026,PO2,3325,False,8,3,0,42,1,0,0,0,1
+967688,Armando Jr,2026,PO2,3325,False,9,4,0,68,1,0,0,0,1
 967688,Armando Jr,2026,PO1,2521,False,2,0,0,0,0,0,0,0,0
-662415,Vladislav Morozov,2026,UNLC,3450,True,4,0,0,0,0,0,0,0,0
+662415,Vladislav Morozov,2026,UNLC,3450,True,6,1,0,17,0,0,1,1,0
 662415,Vladislav Morozov,2026,PO1,8024,False,2,0,0,0,0,0,0,0,0
 662415,Vladislav Morozov,2026,DKP,12275,False,2,0,2,0,0,0,0,0,0
 662415,Vladislav Morozov,2026,DK2,12275,False,10,6,3,240,2,2,8,4,0
 965613,Isaac,2026,POPO,3349,False,1,1,0,90,0,0,0,0,0
 965613,Isaac,2026,PO2,3349,False,10,5,0,282,0,0,0,0,0
-1293043,Vital Maia,2026,PT23,110983,False,10,7,0,383,1,0,0,0,1
+1293043,Vital Maia,2026,PT23,110983,False,10,8,0,465,1,0,0,0,1
 24846,Ricardo Batista,2026,PT3A,3275,False,7,0,0,0,0,0,0,0,0
 24846,Ricardo Batista,2026,POPO,3275,False,1,0,0,0,0,0,0,0,0
 24846,Ricardo Batista,2026,PO1,3268,False,1,0,0,0,0,0,0,0,0
@@ -289,17 +295,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1335899,David Silva,2026,PT23,110988,False,11,0,0,0,0,0,0,0,0
 997827,Thiago Helguera,2026,PO1,1075,False,1,0,0,0,0,0,0,0,0
 997827,Thiago Helguera,2026,ECLQ,1075,False,5,0,0,0,0,0,0,0,0
-997827,Thiago Helguera,2026,E3G2,3679,False,11,7,0,423,0,2,2,0,0
+997827,Thiago Helguera,2026,E3G2,3679,False,12,7,0,423,0,2,2,0,0
 1326281,Deco,2026,CPSC,85471,False,1,0,0,0,0,0,0,0,0
 1326281,Deco,2026,AZ1,103512,False,9,7,0,443,0,0,0,0,1
 1326281,Deco,2026,ASPK,103512,False,1,0,0,0,0,0,0,0,0
 805065,Iyad Mohamed,2026,PO1,3268,False,3,0,0,0,0,0,0,0,0
 805065,Iyad Mohamed,2026,GB2,1020,False,13,9,0,460,0,0,3,0,1
 805065,Iyad Mohamed,2026,FS,16430,True,1,1,0,89,0,0,0,0,0
-805065,Iyad Mohamed,2026,AFCQ,16430,True,2,2,0,158,0,0,2,0,1
+805065,Iyad Mohamed,2026,AFCQ,16430,True,3,2,0,158,0,0,2,0,1
 1479323,Gigal,2026,PT23,67837,False,10,9,0,518,0,0,0,0,1
 461943,Daniel Bragança,2026,PO1,336,False,4,0,0,0,0,0,0,0,0
-461943,Daniel Bragança,2026,IT1,416,False,9,9,0,557,1,0,7,1,1
+461943,Daniel Bragança,2026,IT1,416,False,9,9,0,557,1,0,0,0,1
 461943,Daniel Bragança,2026,CIT,416,False,1,0,0,0,0,0,0,0,0
 627221,Gabriel Veron,2026,PO2,10331,False,10,5,0,382,0,0,0,0,0
 426620,Pedro Gonçalves,2026,PO1,336,False,4,0,0,0,0,0,0,0,0
@@ -318,7 +324,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 891971,João Marques,2026,EL,2432,False,4,4,0,308,0,0,2,0,0
 891971,João Marques,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
 1338526,Gonzalo Pastor,2026,PT23,75337,False,3,0,0,0,0,0,0,0,0
-1338526,Gonzalo Pastor,2026,E3G1,52397,False,10,6,0,323,0,1,4,2,1
+1338526,Gonzalo Pastor,2026,E3G1,52397,False,11,7,0,413,0,1,5,2,1
 1338526,Gonzalo Pastor,2026,CDR,52397,False,1,1,0,8,0,0,0,0,0
 181773,Charles,2026,PO1,2420,False,4,0,0,0,0,0,0,0,0
 409884,Miguel Nóbrega,2026,POPO,2639,False,2,1,0,90,0,0,0,0,0
@@ -334,38 +340,39 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1044429,Diogo Brasido,2026,PO2,110302,False,6,5,0,84,0,0,0,0,0
 1044429,Diogo Brasido,2026,PO1,1465,False,4,0,0,0,0,0,0,0,0
 636096,Raúl Blanco,2026,PO1,3268,False,4,0,0,0,0,0,0,0,0
-636096,Raúl Blanco,2026,E3G1,1176,False,10,10,0,304,0,0,7,3,2
+636096,Raúl Blanco,2026,E3G1,1176,False,11,10,0,304,0,0,7,3,2
 569368,Kelian Nsona,2026,PO1,3268,False,4,0,0,0,0,0,0,0,0
+569368,Kelian Nsona,2026,FRC,11273,False,1,1,0,17,0,0,0,0,0
 569368,Kelian Nsona,2026,FR5A,60456,False,1,1,0,85,0,0,0,0,0
 569368,Kelian Nsona,2026,FR2,11273,False,8,7,0,323,1,0,11,3,0
 349536,Nico Mantl,2026,SC1,2553,False,5,3,0,270,0,0,0,0,0
 349536,Nico Mantl,2026,PO1,8024,False,4,0,0,0,0,0,0,0,0
 832326,Romualdas Jansonas,2026,PO1,8024,False,4,0,0,0,0,0,0,0,0
 832326,Romualdas Jansonas,2026,FS,44295,True,5,0,0,0,0,0,0,0,0
-832326,Romualdas Jansonas,2026,E3G1,60225,False,10,7,2,181,0,0,3,0,0
+832326,Romualdas Jansonas,2026,E3G1,60225,False,11,8,2,195,0,1,3,0,0
 832326,Romualdas Jansonas,2026,CDR,60225,False,1,1,0,39,0,0,0,0,0
 574761,Alysson,2026,POPO,3345,False,2,2,0,91,0,0,0,0,1
-574761,Alysson,2026,PO2,3345,False,6,1,0,90,0,0,0,0,0
+574761,Alysson,2026,PO2,3345,False,7,1,0,90,0,0,0,0,0
 574761,Alysson,2026,PO1,2423,False,4,0,0,0,0,0,0,0,0
+856423,João Costa,2026,POPO,1701,False,2,0,0,0,0,0,0,0,0
+856423,João Costa,2026,PO2,1701,False,7,1,0,12,0,0,0,0,0
+856423,João Costa,2026,PO1,2423,False,4,0,0,0,0,0,0,0,0
 505655,Henrique Pereira,2026,POPO,3349,False,1,1,0,27,0,0,0,0,0
 505655,Henrique Pereira,2026,PO2,3349,False,6,6,0,285,0,1,0,0,0
 505655,Henrique Pereira,2026,PO1,2423,False,4,0,0,0,0,0,0,0,0
-856423,João Costa,2026,POPO,1701,False,2,0,0,0,0,0,0,0,0
-856423,João Costa,2026,PO2,1701,False,6,0,0,0,0,0,0,0,0
-856423,João Costa,2026,PO1,2423,False,4,0,0,0,0,0,0,0,0
 1176866,Motez Nourani,2026,PO1,982,False,4,0,0,0,0,0,0,0,0
 1081568,Gustavo Ferreira,2026,PT23,75337,False,7,5,0,154,2,0,0,0,2
 1075884,João Aragão,2026,U19Q,16372,True,3,3,0,159,0,0,0,0,0
 1075884,João Aragão,2026,PT23,68077,False,4,4,0,243,0,0,0,0,0
-1075884,João Aragão,2026,CPSA,10789,False,8,3,0,160,2,0,0,0,1
+1075884,João Aragão,2026,CPSA,10789,False,8,3,0,155,2,0,0,0,1
 741650,Khayon Edwards,2026,PO1,1465,False,5,0,0,0,0,0,0,0,0
-741650,Khayon Edwards,2026,GRS2,4585,False,6,0,0,0,0,0,0,0,0
+741650,Khayon Edwards,2026,GRS2,4585,False,7,0,0,0,0,0,0,0,0
 428954,Stéphane Diarra,2026,PT3A,74155,False,5,4,0,184,0,0,0,0,0
 428954,Stéphane Diarra,2026,POPO,74155,False,2,1,0,56,0,0,0,0,0
 428954,Stéphane Diarra,2026,PO1,2521,False,5,0,0,0,0,0,0,0,0
 1363706,Gabriel Carioca,2026,CPSC,85471,False,7,3,0,261,1,0,0,0,1
 1005424,Pedro Jesus,2026,PT23,110983,False,1,1,0,6,0,0,0,0,1
-1005424,Pedro Jesus,2026,CPSD,122445,False,7,7,0,516,0,0,0,0,3
+1005424,Pedro Jesus,2026,CPSD,122445,False,8,7,0,516,0,0,0,0,3
 1041169,Tomás Silva,2026,PT3A,10140,False,5,3,0,101,0,0,0,0,2
 1041169,Tomás Silva,2026,PO1,7788,False,5,0,0,0,0,0,0,0,0
 139396,Bruma,2026,PO1,294,False,6,0,0,0,0,0,0,0,0
@@ -374,16 +381,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 139396,Bruma,2026,ELQ,294,False,6,0,0,0,0,0,0,0,0
 990860,Amine Rehmi,2026,PO1,2425,False,4,0,0,0,0,0,0,0,0
 1076584,Bassco Soyer,2026,PT23,99764,False,11,7,3,572,1,1,0,0,1
-1076584,Bassco Soyer,2026,FS,3584,True,4,2,0,78,0,0,1,0,0
+1076584,Bassco Soyer,2026,FS,3584,True,5,3,0,85,0,0,1,0,0
 1283819,Raphael Nunes,2026,PT23,110988,False,11,6,0,540,0,0,0,0,0
 863819,Kimiss Zavala,2026,PT23,67837,False,11,9,0,810,0,0,0,0,0
-863819,Kimiss Zavala,2026,AFCQ,5129,True,2,0,0,0,0,0,0,0,0
+863819,Kimiss Zavala,2026,AFCQ,5129,True,3,0,0,0,0,0,0,0,0
 955355,Arthur Tchaptchet,2026,PT23,99764,False,11,0,11,0,0,0,0,0,0
 813121,Mateus,2026,PO1,2521,False,7,0,0,0,0,0,0,0,0
 813121,Mateus,2026,CPSC,85471,False,3,2,0,133,0,0,0,0,1
 1035894,Si-woo Yang,2026,PT23,101419,False,7,0,0,0,0,0,0,0,0
 1035894,Si-woo Yang,2026,FS,28208,True,1,0,0,0,0,0,0,0,0
-357153,Diogo Costa,2026,UNLA,3300,True,4,4,0,360,0,0,0,0,0
+357153,Diogo Costa,2026,UNLA,3300,True,5,5,0,450,0,0,0,0,0
 357153,Diogo Costa,2026,POSU,720,False,1,1,0,90,0,0,0,0,0
 357153,Diogo Costa,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 357153,Diogo Costa,2026,PO1,720,False,11,11,0,990,0,0,0,0,0
@@ -392,7 +399,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 155396,Cláudio Ramos,2026,POCP,720,False,1,1,0,90,0,0,0,0,0
 155396,Cláudio Ramos,2026,PO1,720,False,11,0,0,0,0,0,0,0,0
 155396,Cláudio Ramos,2026,CL,720,False,4,0,0,0,0,0,0,0,0
-425918,Jakub Kiwior,2026,UNLB,3442,True,4,4,0,315,0,0,4,1,1
+425918,Jakub Kiwior,2026,UNLB,3442,True,5,5,0,405,0,0,5,1,2
 425918,Jakub Kiwior,2026,POSU,720,False,1,1,0,90,0,0,0,0,1
 425918,Jakub Kiwior,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 425918,Jakub Kiwior,2026,PO1,720,False,11,11,0,990,1,1,6,2,1
@@ -401,6 +408,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 198638,João Costa,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 198638,João Costa,2026,PO1,720,False,11,0,3,0,0,0,0,0,0
 198638,João Costa,2026,CL,720,False,4,0,1,0,0,0,0,0,0
+877139,Alberto Costa,2026,UNLA,3300,True,1,1,0,90,0,0,1,1,0
 877139,Alberto Costa,2026,POSU,720,False,1,1,0,83,0,0,0,0,0
 877139,Alberto Costa,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 877139,Alberto Costa,2026,PO1,720,False,11,10,0,800,0,1,11,3,0
@@ -408,8 +416,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 935480,Martim Fernandes,2026,POSU,720,False,1,1,0,7,0,0,0,0,0
 935480,Martim Fernandes,2026,POCP,720,False,1,1,0,90,0,0,1,1,0
 935480,Martim Fernandes,2026,PO1,720,False,11,6,2,284,1,0,2,1,0
+935480,Martim Fernandes,2026,FS,16374,True,1,1,0,90,0,0,2,1,0
 935480,Martim Fernandes,2026,CL,720,False,4,3,0,199,0,0,1,0,0
-243028,Jan Bednarek,2026,UNLB,3442,True,4,4,0,360,1,0,3,1,2
+243028,Jan Bednarek,2026,UNLB,3442,True,5,4,0,360,1,0,3,1,2
 243028,Jan Bednarek,2026,POSU,720,False,1,1,0,45,0,0,1,0,0
 243028,Jan Bednarek,2026,POCP,720,False,1,1,0,12,0,0,0,0,0
 243028,Jan Bednarek,2026,PO1,720,False,11,11,0,903,1,0,9,3,1
@@ -433,18 +442,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 921533,Dominik Prpić,2026,CL,720,False,4,0,0,0,0,0,0,0,0
 670715,Gabriel Brás,2026,PO2,10331,False,1,0,0,0,0,0,0,0,0
 670715,Gabriel Brás,2026,NL1,467,False,11,6,0,384,0,0,2,0,1
+670715,Gabriel Brás,2026,FS,16374,True,1,1,0,8,0,0,0,0,0
 670715,Gabriel Brás,2026,EL,467,False,4,3,0,189,0,0,0,0,0
 670715,Gabriel Brás,2026,CLQ,467,False,2,0,0,0,0,0,0,0,0
 544784,Zaidu Sanusi,2026,POSU,720,False,1,1,0,90,0,0,0,0,0
 544784,Zaidu Sanusi,2026,POCP,720,False,1,1,0,17,0,0,0,0,0
 544784,Zaidu Sanusi,2026,PO1,720,False,11,7,3,513,0,0,2,0,0
 544784,Zaidu Sanusi,2026,CL,720,False,4,2,1,92,0,0,0,0,0
-957653,Rodrigo Mora,2026,UNLA,3300,True,4,0,0,0,0,0,0,0,0
+957653,Rodrigo Mora,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 957653,Rodrigo Mora,2026,POSU,720,False,1,0,0,0,0,0,0,0,0
 957653,Rodrigo Mora,2026,PO1,720,False,2,1,0,15,0,0,0,0,0
 957653,Rodrigo Mora,2026,IT1,12,False,11,9,0,399,4,0,18,7,0
 957653,Rodrigo Mora,2026,CL,12,False,4,4,0,196,0,2,3,2,0
-926993,Victor Froholdt,2026,UNLA,3436,True,4,4,0,184,0,0,2,0,0
+926993,Victor Froholdt,2026,UNLA,3436,True,5,5,0,201,0,0,3,1,0
 926993,Victor Froholdt,2026,POSU,720,False,1,1,0,90,1,0,2,1,0
 926993,Victor Froholdt,2026,POCP,720,False,1,1,0,12,0,0,1,0,0
 926993,Victor Froholdt,2026,PO1,720,False,11,10,1,900,3,0,13,7,0
@@ -478,7 +488,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 644255,João Teixeira,2026,PO2,10331,False,10,8,0,310,0,0,0,0,1
 644255,João Teixeira,2026,PO1,720,False,6,0,0,0,0,0,0,0,0
 644255,João Teixeira,2026,CL,720,False,4,0,0,0,0,0,0,0,0
-1076056,Bernardo Lima,2026,U19Q,16372,True,3,0,0,0,0,0,0,0,0
+1076056,Bernardo Lima,2026,U19Q,16372,True,5,2,0,113,0,0,0,0,1
 1076056,Bernardo Lima,2026,PO2,10331,False,10,9,0,647,0,0,0,0,5
 1076056,Bernardo Lima,2026,FS,16372,True,3,3,0,166,0,1,0,0,0
 1076056,Bernardo Lima,2026,19YL,41588,False,4,4,0,354,0,1,1,1,2
@@ -514,7 +524,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 538874,Terem Moffi,2026,DFB,41,False,2,1,0,82,1,0,2,1,0
 646739,Ángel Alarcón,2026,NLP,200,False,1,1,0,61,0,0,2,0,0
 646739,Ángel Alarcón,2026,NL1,200,False,12,12,0,774,4,1,28,11,0
-1063292,Deniz Gül,2026,UNLA,3381,True,4,4,0,36,0,0,2,0,0
+646739,Ángel Alarcón,2026,FS,9567,True,1,1,0,61,1,0,1,1,0
+1063292,Deniz Gül,2026,UNLA,3381,True,6,6,0,158,0,0,5,1,0
 1063292,Deniz Gül,2026,TR1,141,False,8,7,0,288,1,0,12,4,1
 1063292,Deniz Gül,2026,POSU,720,False,1,1,0,28,0,0,0,0,0
 1063292,Deniz Gül,2026,PO1,720,False,4,3,0,92,0,0,4,0,0
@@ -531,23 +542,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1083389,André Miranda,2026,19YL,41588,False,1,1,0,18,0,0,0,0,0
 324804,Yann Karamoh,2026,IT2,1038,False,9,7,0,132,0,0,3,0,1
 1088389,Brayan Caicedo,2026,PO2,10331,False,10,0,0,0,0,0,0,0,0
-537844,Anatoliy Trubin,2026,UNLB,3699,True,4,2,0,180,0,0,0,0,0
+537844,Anatoliy Trubin,2026,UNLB,3699,True,5,3,0,270,0,0,0,0,0
 537844,Anatoliy Trubin,2026,POCP,294,False,1,1,0,90,0,0,0,0,0
 537844,Anatoliy Trubin,2026,PO1,294,False,11,0,0,0,0,0,0,0,0
 537844,Anatoliy Trubin,2026,ELQ,294,False,6,2,0,180,0,0,0,0,0
 537844,Anatoliy Trubin,2026,EL,294,False,4,4,0,360,0,0,0,0,0
-504072,Samuel Soares,2026,UNLA,3300,True,4,0,0,0,0,0,0,0,0
+504072,Samuel Soares,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 504072,Samuel Soares,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 504072,Samuel Soares,2026,PO1,294,False,11,11,0,990,0,0,0,0,0
 504072,Samuel Soares,2026,ELQ,294,False,6,4,0,360,0,0,0,0,0
 504072,Samuel Soares,2026,EL,294,False,4,0,0,0,0,0,0,0,0
 801446,Diogo Ferreira,2026,PO2,10330,False,10,7,0,630,0,0,0,0,0
+801446,Diogo Ferreira,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
 801446,Diogo Ferreira,2026,19YL,41582,False,1,1,0,90,0,0,0,0,0
 819383,Arnas Voitinovičius,2026,UNLD,3851,True,3,0,0,0,0,0,0,0,0
 819383,Arnas Voitinovičius,2026,PT23,68780,False,2,2,0,180,0,0,0,0,0
 819383,Arnas Voitinovičius,2026,PO2,10330,False,10,3,0,270,0,0,0,0,0
-819383,Arnas Voitinovičius,2026,FS,3851,True,1,0,0,0,0,0,0,0,0
-519184,Amar Dedic,2026,UNLB,3446,True,4,0,0,0,0,0,0,0,0
+819383,Arnas Voitinovičius,2026,FS,3851,True,2,1,0,45,0,0,0,0,0
+519184,Amar Dedic,2026,UNLB,3446,True,5,1,0,90,0,0,2,0,0
 519184,Amar Dedic,2026,PO1,294,False,2,1,0,8,0,0,0,0,0
 519184,Amar Dedic,2026,GB1,762,False,10,8,0,626,0,2,5,0,1
 519184,Amar Dedic,2026,ELQ,294,False,4,2,0,103,0,0,3,0,0
@@ -562,7 +574,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 605396,Samuel Dahl,2026,PO1,294,False,11,11,0,967,1,1,7,2,1
 605396,Samuel Dahl,2026,ELQ,294,False,6,5,0,450,0,0,3,2,0
 605396,Samuel Dahl,2026,EL,294,False,4,2,0,66,0,0,0,0,1
-452607,Alexander Bah,2026,UNLA,3436,True,4,0,0,0,0,0,0,0,0
+452607,Alexander Bah,2026,UNLA,3436,True,5,1,0,90,0,0,0,0,0
 452607,Alexander Bah,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 452607,Alexander Bah,2026,PO1,294,False,11,9,0,706,1,1,10,4,2
 452607,Alexander Bah,2026,ELQ,294,False,6,5,0,437,0,2,4,0,1
@@ -570,16 +582,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 611855,Sidny Lopes Cabral,2026,UCOL,449,False,3,1,2,90,0,0,2,0,1
 611855,Sidny Lopes Cabral,2026,TR1,449,False,11,11,0,558,0,0,11,2,1
 611855,Sidny Lopes Cabral,2026,ELQ,449,False,2,2,0,147,0,0,3,1,1
-611855,Sidny Lopes Cabral,2026,AFCQ,4311,True,2,2,0,180,1,0,5,3,0
+611855,Sidny Lopes Cabral,2026,AFCQ,4311,True,3,3,0,225,1,0,5,3,1
 1134199,Daniel Banjaqui,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 1134199,Daniel Banjaqui,2026,PO2,10330,False,5,3,0,250,0,0,0,0,0
 1134199,Daniel Banjaqui,2026,PO1,294,False,11,3,0,177,0,0,1,0,0
+1134199,Daniel Banjaqui,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
 1134199,Daniel Banjaqui,2026,ELQ,294,False,6,0,0,0,0,0,0,0,0
 1134199,Daniel Banjaqui,2026,EL,294,False,4,2,0,180,0,0,2,1,2
+1078918,Gonçalo Oliveira,2026,FS,16374,True,1,1,0,90,0,0,0,0,0
 1078918,Gonçalo Oliveira,2026,FR5C,8154,False,1,1,0,90,2,0,0,0,0
 1078918,Gonçalo Oliveira,2026,FR1,273,False,10,1,0,82,0,0,0,0,0
 1078918,Gonçalo Oliveira,2026,EL,273,False,4,1,0,90,0,0,0,0,0
-1233701,José Neto,2026,U19Q,16372,True,3,0,0,0,0,0,0,0,0
+1233701,José Neto,2026,U19Q,16372,True,5,1,0,83,0,0,0,0,0
 1233701,José Neto,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 1233701,José Neto,2026,PO2,10330,False,10,5,0,405,0,1,0,0,0
 1233701,José Neto,2026,PO1,294,False,11,0,0,0,0,0,0,0,0
@@ -592,14 +606,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1173926,Leandro Santos,2026,PO1,979,False,11,6,0,249,0,0,1,0,1
 866086,Joshua Wynder,2026,PO2,10330,False,4,0,0,0,0,0,0,0,0
 866086,Joshua Wynder,2026,FS,25514,True,4,0,0,0,0,0,0,0,0
-983554,João Fonseca,2026,SU20,16373,True,3,2,0,171,0,0,0,0,1
+983554,João Fonseca,2026,SU20,16373,True,4,3,0,261,0,0,0,0,1
 983554,João Fonseca,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 983554,João Fonseca,2026,PO2,10330,False,10,10,0,900,0,2,1,0,0
 983554,João Fonseca,2026,PO1,294,False,2,0,0,0,0,0,0,0,0
 983554,João Fonseca,2026,EL,294,False,1,0,0,0,0,0,0,0,0
 1050218,Kevin Pinto,2026,PT23,68780,False,4,4,0,241,0,0,0,0,0
 1050218,Kevin Pinto,2026,PO2,10330,False,10,0,0,0,0,0,0,0,0
-623325,Georgiy Sudakov,2026,UNLB,3699,True,4,2,1,158,0,1,5,1,0
+623325,Georgiy Sudakov,2026,UNLB,3699,True,5,3,1,230,0,1,5,1,0
 623325,Georgiy Sudakov,2026,POCP,294,False,1,1,0,72,1,0,1,1,0
 623325,Georgiy Sudakov,2026,PO1,294,False,11,9,0,478,1,0,13,3,2
 623325,Georgiy Sudakov,2026,ELQ,294,False,6,6,0,458,0,1,12,4,0
@@ -632,7 +646,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 670718,Diogo Prioste,2026,POPO,2424,False,1,1,0,62,0,0,0,0,1
 670718,Diogo Prioste,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
 670718,Diogo Prioste,2026,PO1,2424,False,11,9,0,684,0,0,7,2,1
-1061744,Gonçalo Moreira,2026,SU20,16373,True,3,0,0,0,0,0,0,0,0
+670718,Diogo Prioste,2026,FS,16374,True,1,1,0,1,0,0,0,0,0
+1061744,Gonçalo Moreira,2026,SU20,16373,True,4,1,0,86,0,0,0,0,0
 1061744,Gonçalo Moreira,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 1061744,Gonçalo Moreira,2026,PO2,10330,False,10,8,0,709,4,3,1,0,1
 1061744,Gonçalo Moreira,2026,PO1,294,False,11,1,0,10,0,0,0,0,0
@@ -652,23 +667,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 937720,Tiago Freitas,2026,PO2,10330,False,10,8,0,472,1,2,3,1,1
 937720,Tiago Freitas,2026,PO1,294,False,4,0,0,0,0,0,0,0,0
 937720,Tiago Freitas,2026,EL,294,False,3,0,0,0,0,0,0,0,0
-670103,Andreas Schjelderup,2026,UNLA,3440,True,4,4,0,279,0,0,6,2,0
+670103,Andreas Schjelderup,2026,UNLA,3440,True,5,5,0,303,1,0,8,3,0
 670103,Andreas Schjelderup,2026,POCP,294,False,1,1,0,72,0,0,6,2,0
 670103,Andreas Schjelderup,2026,PO1,294,False,11,11,0,454,1,3,15,3,0
 670103,Andreas Schjelderup,2026,ELQ,294,False,6,5,0,162,1,1,6,3,0
 670103,Andreas Schjelderup,2026,EL,294,False,4,4,0,197,0,0,5,2,0
 1000674,Gianluca Prestianni,2026,POCP,294,False,1,1,0,18,0,0,0,0,0
 1000674,Gianluca Prestianni,2026,PO1,294,False,11,11,0,932,7,4,37,15,1
-1000674,Gianluca Prestianni,2026,FS,3437,True,3,2,0,101,1,1,1,1,0
+1000674,Gianluca Prestianni,2026,FS,3437,True,4,3,0,131,1,2,2,1,0
 1000674,Gianluca Prestianni,2026,ELQ,294,False,6,4,2,257,3,0,11,8,1
 1000674,Gianluca Prestianni,2026,EL,294,False,4,4,0,159,2,2,14,6,1
-324503,Vangelis Pavlidis,2026,UNLA,3378,True,4,4,0,279,0,1,5,1,0
+324503,Vangelis Pavlidis,2026,UNLA,3378,True,5,5,0,343,0,1,6,1,0
 324503,Vangelis Pavlidis,2026,POCP,294,False,1,0,0,0,0,0,0,0,0
 324503,Vangelis Pavlidis,2026,PO1,294,False,11,11,0,901,11,3,34,16,1
 324503,Vangelis Pavlidis,2026,FS,39435,True,3,0,0,0,0,0,0,0,0
 324503,Vangelis Pavlidis,2026,ELQ,294,False,6,5,0,364,6,1,19,9,1
 324503,Vangelis Pavlidis,2026,EL,294,False,4,3,0,110,2,0,6,4,1
-303259,Dodi Lukébakio,2026,UNLA,3382,True,4,4,0,190,2,1,8,6,1
+303259,Dodi Lukébakio,2026,UNLA,3382,True,6,6,0,215,2,1,8,6,1
 303259,Dodi Lukébakio,2026,POCP,294,False,1,1,0,90,2,0,4,2,0
 303259,Dodi Lukébakio,2026,PO1,294,False,11,10,0,250,0,0,7,4,0
 303259,Dodi Lukébakio,2026,ELQ,294,False,6,3,0,110,1,1,8,3,0
@@ -677,21 +692,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 382528,Kerem Aktürkoğlu,2026,TR1,36,False,11,10,1,513,1,4,15,3,2
 382528,Kerem Aktürkoğlu,2026,CLQ,36,False,6,5,1,387,0,2,6,6,1
 382528,Kerem Aktürkoğlu,2026,CL,36,False,4,3,0,169,0,0,5,2,1
-1092964,Anísio Cabral,2026,U19Q,16372,True,3,3,0,177,0,0,0,0,0
+1092964,Anísio Cabral,2026,U19Q,16372,True,5,5,0,253,0,0,0,0,1
 1092964,Anísio Cabral,2026,POCP,294,False,1,1,0,6,0,0,2,1,0
 1092964,Anísio Cabral,2026,PO2,10330,False,9,5,0,288,1,0,2,0,3
 1092964,Anísio Cabral,2026,PO1,294,False,11,0,0,0,0,0,0,0,0
+1092964,Anísio Cabral,2026,FS,16372,True,3,0,0,0,0,0,0,0,0
 1092964,Anísio Cabral,2026,ELQ,294,False,6,0,0,0,0,0,0,0,0
 1092964,Anísio Cabral,2026,EL,294,False,4,1,0,13,0,0,1,1,0
 238055,Rafa Silva,2026,POCP,294,False,1,1,0,12,0,1,0,0,0
 238055,Rafa Silva,2026,PO1,294,False,11,11,0,708,1,0,17,5,0
 238055,Rafa Silva,2026,ELQ,294,False,6,6,0,415,4,1,11,8,0
 238055,Rafa Silva,2026,EL,294,False,4,2,0,131,1,0,3,2,0
-984544,Rodrigo Rêgo,2026,ES2,2502,False,13,6,0,151,0,0,6,1,0
+984544,Rodrigo Rêgo,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
+984544,Rodrigo Rêgo,2026,ES2,2502,False,14,6,0,151,0,0,6,1,0
 984544,Rodrigo Rêgo,2026,CDR,2502,False,1,1,0,72,0,0,0,0,0
 931416,Ivan Lima,2026,POPU,6112,False,2,2,0,148,0,2,0,0,0
 931416,Ivan Lima,2026,PL1,6112,False,14,12,0,675,0,3,21,4,2
-234811,Rui Silva,2026,UNLA,3300,True,4,0,0,0,0,0,0,0,0
+234811,Rui Silva,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 234811,Rui Silva,2026,POCP,336,False,1,1,0,90,0,0,0,0,0
 234811,Rui Silva,2026,PO1,336,False,11,8,0,720,0,0,0,0,0
 234811,Rui Silva,2026,CL,336,False,4,2,0,180,0,0,0,0,0
@@ -704,16 +721,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 974982,Ousmane Diomande,2026,PO1,336,False,1,0,0,0,0,0,0,0,0
 974982,Ousmane Diomande,2026,GB1,703,False,10,5,0,344,0,0,3,0,0
 974982,Ousmane Diomande,2026,CGB,703,False,1,1,0,60,0,0,0,0,0
-974982,Ousmane Diomande,2026,AFCQ,3591,True,2,1,0,90,0,0,0,0,0
+974982,Ousmane Diomande,2026,AFCQ,3591,True,3,2,0,180,0,0,0,0,0
 741492,Francisco Silva,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 741492,Francisco Silva,2026,PO2,10949,False,10,6,0,540,0,0,0,0,0
 741492,Francisco Silva,2026,PO1,336,False,2,0,0,0,0,0,0,0,0
 741492,Francisco Silva,2026,CL,336,False,1,0,0,0,0,0,0,0,0
 572675,Maxi Araújo,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 572675,Maxi Araújo,2026,PO1,336,False,11,10,1,830,1,2,13,5,4
-572675,Maxi Araújo,2026,FS,3449,True,3,3,0,264,3,1,3,1,0
+572675,Maxi Araújo,2026,FS,3449,True,4,4,0,349,4,1,4,2,0
 572675,Maxi Araújo,2026,CL,336,False,4,4,0,358,0,0,4,2,1
-549006,Gonçalo Inácio,2026,UNLA,3300,True,3,0,0,0,0,0,0,0,0
+549006,Gonçalo Inácio,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 549006,Gonçalo Inácio,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 549006,Gonçalo Inácio,2026,PO1,336,False,11,10,0,900,1,0,6,2,1
 549006,Gonçalo Inácio,2026,CL,336,False,4,4,0,360,0,0,1,0,0
@@ -724,11 +741,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 946883,Iván Fresneda,2026,UNLA,3375,True,3,1,0,90,0,0,0,0,0
 946883,Iván Fresneda,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 946883,Iván Fresneda,2026,PO1,336,False,11,11,0,824,0,4,8,4,0
+946883,Iván Fresneda,2026,FS,9567,True,1,1,0,61,0,0,3,0,0
 946883,Iván Fresneda,2026,CL,336,False,4,4,0,193,0,0,0,0,0
 504073,Eduardo Quaresma,2026,POCP,336,False,1,1,0,90,0,0,0,0,1
 504073,Eduardo Quaresma,2026,PO1,336,False,11,7,0,498,0,0,1,0,2
 504073,Eduardo Quaresma,2026,CL,336,False,4,4,0,354,0,0,2,1,0
-546186,Georgios Vagiannidis,2026,UNLA,3378,True,4,2,2,135,0,0,0,0,1
+546186,Georgios Vagiannidis,2026,UNLA,3378,True,5,3,2,152,0,0,1,0,1
 546186,Georgios Vagiannidis,2026,POCP,336,False,1,1,0,90,0,0,1,1,0
 546186,Georgios Vagiannidis,2026,PO1,336,False,11,5,0,236,0,0,1,1,0
 546186,Georgios Vagiannidis,2026,CL,336,False,4,1,0,84,0,0,0,0,0
@@ -737,7 +755,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478317,Diogo Travassos,2026,UCOL,1075,False,3,2,0,174,0,0,3,2,1
 478317,Diogo Travassos,2026,POCP,1075,False,1,1,0,26,0,0,0,0,0
 478317,Diogo Travassos,2026,PO1,1075,False,11,7,0,462,0,0,7,2,1
+478317,Diogo Travassos,2026,FS,16374,True,1,1,0,89,0,0,1,0,0
 478317,Diogo Travassos,2026,ECLQ,1075,False,6,5,0,165,0,0,1,1,0
+1294105,Salvador Blopa,2026,SU20,16373,True,1,1,0,26,0,0,0,0,1
 1294105,Salvador Blopa,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 1294105,Salvador Blopa,2026,PO2,10949,False,10,3,6,156,0,0,0,0,0
 1294105,Salvador Blopa,2026,PO1,336,False,2,0,0,0,0,0,0,0,0
@@ -751,6 +771,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1044831,David Moreira,2026,POPO,2424,False,1,1,0,120,0,1,0,0,0
 1044831,David Moreira,2026,POCP,2424,False,1,1,0,80,0,0,1,1,0
 1044831,David Moreira,2026,PO1,2424,False,11,9,0,733,0,0,6,2,0
+1044831,David Moreira,2026,AFCQ,4311,True,3,0,0,0,0,0,0,0,0
 984439,João Muniz,2026,PT23,67909,False,2,2,0,87,0,0,0,0,0
 984439,João Muniz,2026,PO2,10949,False,10,0,0,0,0,0,0,0,0
 984439,João Muniz,2026,PLIC,67909,False,1,1,0,45,1,0,0,0,0
@@ -762,7 +783,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 139395,Ricardo Esgaio,2026,POPO,2424,False,1,1,0,58,0,0,0,0,1
 139395,Ricardo Esgaio,2026,POCP,2424,False,1,1,0,90,0,0,0,0,0
 139395,Ricardo Esgaio,2026,PO1,2424,False,11,11,0,963,0,0,2,2,4
-461496,Morten Hjulmand,2026,UNLA,3436,True,4,4,0,342,0,0,5,1,0
+461496,Morten Hjulmand,2026,UNLA,3436,True,5,5,0,432,0,0,7,1,0
 461496,Morten Hjulmand,2026,ES1,13,False,12,11,0,620,0,0,8,0,2
 461496,Morten Hjulmand,2026,CL,13,False,4,3,1,96,0,0,1,0,0
 524315,Hidemasa Morita,2026,GB1,3008,False,10,5,5,106,0,0,0,0,0
@@ -770,27 +791,29 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 958937,João Simões,2026,POCP,336,False,1,1,0,85,0,0,0,0,0
 958937,João Simões,2026,PO2,10949,False,1,1,0,27,0,0,2,1,0
 958937,João Simões,2026,PO1,336,False,11,2,5,20,0,0,0,0,0
+958937,João Simões,2026,FS,16374,True,1,1,0,19,0,0,1,0,0
 958937,João Simões,2026,CL,336,False,4,3,1,142,0,0,2,1,1
 1081566,Eduardo Felicíssimo,2026,POCP,336,False,1,1,0,90,0,0,0,0,0
 1081566,Eduardo Felicíssimo,2026,PO2,10949,False,10,7,0,515,0,0,0,0,1
 1081566,Eduardo Felicíssimo,2026,PO1,336,False,11,0,0,0,0,0,0,0,0
+1081566,Eduardo Felicíssimo,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
 1081566,Eduardo Felicíssimo,2026,CL,336,False,4,1,0,90,0,0,0,0,0
 726705,Samuel Justo,2026,POCP,336,False,1,1,0,5,0,0,0,0,0
 726705,Samuel Justo,2026,PO2,10949,False,10,10,0,803,1,0,1,1,1
-1138758,Geovany Quenda,2026,UNLA,3300,True,4,0,0,0,0,0,0,0,0
+1138758,Geovany Quenda,2026,UNLA,3300,True,5,0,0,0,0,0,0,0,0
 1138758,Geovany Quenda,2026,GB1,631,False,10,6,0,112,0,0,2,0,0
 1138758,Geovany Quenda,2026,CGB,631,False,3,0,0,0,0,0,0,0,0
 1087842,Rayan Lucas,2026,POPO,2521,False,1,1,0,120,0,0,0,0,0
 1087842,Rayan Lucas,2026,PO1,2521,False,11,9,0,492,0,1,4,0,0
-412669,Francisco Trincão,2026,UNLA,3300,True,4,3,0,37,0,0,1,1,0
+412669,Francisco Trincão,2026,UNLA,3300,True,5,4,0,63,0,0,4,2,0
 412669,Francisco Trincão,2026,SAKC,18487,False,1,1,0,85,0,0,3,0,0
-412669,Francisco Trincão,2026,SA1,18487,False,12,11,0,910,6,3,28,12,0
+412669,Francisco Trincão,2026,SA1,18487,False,11,11,0,910,6,3,28,12,0
 412669,Francisco Trincão,2026,FIC1,18487,False,2,2,0,169,0,0,0,0,0
 412669,Francisco Trincão,2026,ACLE,18487,False,4,3,0,235,1,1,3,1,0
 701979,Geny Catamo,2026,POCP,336,False,1,1,0,90,0,0,3,0,0
 701979,Geny Catamo,2026,PO1,336,False,11,11,0,687,2,4,19,8,3
 701979,Geny Catamo,2026,CL,336,False,4,4,0,318,1,0,6,1,0
-701979,Geny Catamo,2026,AFCQ,5129,True,2,2,0,180,1,0,4,1,0
+701979,Geny Catamo,2026,AFCQ,5129,True,3,3,0,245,1,0,6,2,0
 830365,Alisson Santos,2026,IT1,6195,False,11,4,7,216,0,0,14,4,0
 830365,Alisson Santos,2026,CL,6195,False,4,1,3,58,0,0,1,0,0
 807386,Conrad Harder,2026,L1,23826,False,1,1,0,7,0,0,2,1,0
@@ -798,9 +821,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 807386,Conrad Harder,2026,DFB,23826,False,1,1,0,26,1,0,3,1,0
 424784,Luis Suárez,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 424784,Luis Suárez,2026,PO1,336,False,11,11,0,739,9,1,31,12,4
-424784,Luis Suárez,2026,FS,3816,True,3,3,0,172,1,0,4,2,1
+424784,Luis Suárez,2026,FS,3816,True,4,4,0,254,1,0,7,3,1
 424784,Luis Suárez,2026,CL,336,False,4,4,0,339,4,0,15,7,1
-532444,Fotis Ioannidis,2026,UNLA,3378,True,4,4,0,217,1,1,4,2,0
+532444,Fotis Ioannidis,2026,UNLA,3378,True,5,5,0,281,1,1,4,2,0
 532444,Fotis Ioannidis,2026,POCP,336,False,1,1,0,85,0,0,1,1,0
 532444,Fotis Ioannidis,2026,PO1,336,False,11,10,1,324,2,3,17,5,0
 532444,Fotis Ioannidis,2026,CL,336,False,4,4,0,101,0,0,0,0,0
@@ -808,26 +831,31 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 991800,Luís Guilherme,2026,PO1,336,False,11,9,0,352,0,0,7,4,0
 991800,Luís Guilherme,2026,CL,336,False,4,3,0,125,0,0,1,0,0
 726701,Rodrigo Ribeiro,2026,L1,167,False,9,9,0,275,2,0,10,2,2
+726701,Rodrigo Ribeiro,2026,FS,16374,True,1,1,0,89,0,0,0,0,0
 726701,Rodrigo Ribeiro,2026,DFB,167,False,2,2,0,87,2,1,4,2,1
-1294120,Flávio Gonçalves,2026,SU20,16373,True,3,0,0,0,0,0,0,0,0
+1294120,Flávio Gonçalves,2026,SU20,16373,True,4,1,0,77,0,0,0,0,0
 1294120,Flávio Gonçalves,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 1294120,Flávio Gonçalves,2026,PO1,336,False,11,10,0,539,3,1,13,7,1
 1294120,Flávio Gonçalves,2026,CL,336,False,4,2,0,47,0,0,0,0,0
 1057523,Rafael Nel,2026,POCP,336,False,1,1,0,5,0,0,0,0,0
 1057523,Rafael Nel,2026,PO2,10949,False,9,6,0,526,3,1,1,1,4
 1057523,Rafael Nel,2026,PO1,336,False,11,1,0,15,0,0,1,1,0
+1057523,Rafael Nel,2026,FS,16374,True,1,1,0,1,0,0,0,0,0
 1057523,Rafael Nel,2026,CL,336,False,4,0,0,0,0,0,0,0,0
 1056907,Mauro Couto,2026,POCP,336,False,1,1,0,12,0,0,0,0,0
 1056907,Mauro Couto,2026,PO2,10949,False,10,10,0,833,5,3,5,3,0
 1056907,Mauro Couto,2026,PO1,336,False,2,0,0,0,0,0,0,0,0
+1056907,Mauro Couto,2026,FS,16374,True,1,1,0,19,0,0,0,0,0
 1056907,Mauro Couto,2026,CL,336,False,1,0,0,0,0,0,0,0,0
 670686,Lucas Anjos,2026,PO2,10949,False,10,2,0,47,0,0,0,0,1
+1318916,Chris Ivan,2026,U19Q,16372,True,2,2,0,117,0,0,0,0,0
 1318916,Chris Ivan,2026,PO2,10949,False,10,3,0,131,0,0,0,0,0
 1318916,Chris Ivan,2026,FS,16372,True,3,3,0,117,0,0,0,0,0
 1318916,Chris Ivan,2026,19YL,45510,False,4,4,0,274,1,1,0,0,0
 929868,João Carvalho,2026,UCOL,1075,False,3,0,0,0,0,0,0,0,0
 929868,João Carvalho,2026,POCP,1075,False,1,0,0,0,0,0,0,0,0
 929868,João Carvalho,2026,PO1,1075,False,11,0,0,0,0,0,0,0,0
+929868,João Carvalho,2026,FS,16374,True,1,1,0,90,0,0,0,0,0
 929868,João Carvalho,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
 929868,João Carvalho,2026,CPSA,10789,False,4,2,0,180,0,0,0,0,0
 667991,Alaa Bellaarouch,2026,ROMP,312,False,2,0,0,0,0,0,0,0,0
@@ -836,7 +864,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 286908,Tiago Sá,2026,POCP,1075,False,1,0,0,0,0,0,0,0,0
 286908,Tiago Sá,2026,PO1,1075,False,11,0,0,0,0,0,0,0,0
 286908,Tiago Sá,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
-1134197,Romário Cunha,2026,U19Q,16372,True,3,3,0,270,0,0,0,0,0
+1134197,Romário Cunha,2026,U19Q,16372,True,5,5,0,450,0,0,0,0,0
 1134197,Romário Cunha,2026,PT23,68077,False,1,1,0,90,0,0,0,0,0
 1134197,Romário Cunha,2026,FS,16372,True,3,2,0,90,0,0,0,0,0
 1134197,Romário Cunha,2026,CPSA,10789,False,8,6,0,540,0,0,0,0,0
@@ -844,7 +872,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 495601,Víctor Gómez,2026,POCP,1075,False,1,1,0,90,0,0,2,1,0
 495601,Víctor Gómez,2026,PO1,1075,False,11,11,0,840,0,1,11,1,1
 495601,Víctor Gómez,2026,ECLQ,1075,False,6,6,0,540,0,0,1,0,0
-485395,Gustaf Lagerbielke,2026,UNLB,3557,True,4,0,0,0,0,0,0,0,0
+485395,Gustaf Lagerbielke,2026,UNLB,3557,True,5,1,0,90,0,0,1,1,1
 485395,Gustaf Lagerbielke,2026,UCOL,1075,False,3,3,0,270,0,0,4,0,0
 485395,Gustaf Lagerbielke,2026,POCP,1075,False,1,1,0,45,0,0,0,0,1
 485395,Gustaf Lagerbielke,2026,PO1,1075,False,11,8,0,711,0,0,9,3,2
@@ -858,7 +886,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 413118,Sikou Niakaté,2026,PO1,1075,False,11,0,11,0,0,0,0,0,0
 413118,Sikou Niakaté,2026,ECLQ,1075,False,6,0,6,0,0,0,0,0,0
 669956,Leonardo Lelo,2026,PO1,1075,False,2,0,0,0,0,0,0,0,0
-669956,Leonardo Lelo,2026,ES2,3302,False,10,7,0,410,0,0,4,1,0
+669956,Leonardo Lelo,2026,ES2,3302,False,11,8,0,500,0,0,4,1,0
 669956,Leonardo Lelo,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
 669956,Leonardo Lelo,2026,CDR,3302,False,1,1,0,120,0,0,0,0,0
 553062,Vítor Carvalho,2026,UCOL,1075,False,3,0,0,0,0,0,0,0,0
@@ -876,12 +904,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1061378,Jonatás Noro,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
 982559,Nuno Matos,2026,CPSA,10789,False,8,8,0,720,0,0,0,0,2
 1172179,Fodé Pascoal,2026,CPSA,10789,False,8,2,0,180,0,0,0,0,0
-1006450,Afonso Sousa,2026,SU20,16373,True,3,2,0,171,0,0,0,0,0
+1006450,Afonso Sousa,2026,SU20,16373,True,4,3,0,261,0,0,0,0,0
 1006450,Afonso Sousa,2026,FS,31372,True,6,0,0,0,0,0,0,0,0
 1006450,Afonso Sousa,2026,CPSA,10789,False,8,4,0,246,0,0,0,0,1
 606752,Rodrigo Zalazar,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 606752,Rodrigo Zalazar,2026,PO1,336,False,11,9,0,562,2,1,12,4,0
-606752,Rodrigo Zalazar,2026,FS,3449,True,3,3,0,99,1,0,1,0,0
+606752,Rodrigo Zalazar,2026,FS,3449,True,4,3,0,99,1,0,1,0,0
 606752,Rodrigo Zalazar,2026,CL,336,False,4,2,2,86,1,0,1,1,0
 1045972,Mario Dorgeles,2026,UCOL,1075,False,3,3,0,97,0,0,7,3,0
 1045972,Mario Dorgeles,2026,POCP,1075,False,1,1,0,13,0,0,1,1,0
@@ -912,7 +940,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 984540,Diego Rodrigues,2026,ECLQ,1075,False,6,4,0,168,1,0,2,1,0
 898715,Vasconcelos,2026,POPO,2423,False,1,1,0,74,0,1,0,0,0
 898715,Vasconcelos,2026,PO1,2423,False,11,6,0,166,1,0,2,1,2
-1333915,Luisinho,2026,SU20,16373,True,3,3,0,176,0,1,0,0,1
+1333915,Luisinho,2026,SU20,16373,True,4,4,0,180,0,1,0,0,1
 1333915,Luisinho,2026,POPO,3349,False,1,1,0,90,0,0,0,0,1
 1333915,Luisinho,2026,PO2,3349,False,6,5,0,388,0,0,0,0,2
 1333915,Luisinho,2026,PO1,1075,False,2,0,0,0,0,0,0,0,0
@@ -945,7 +973,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1006449,Afonso Patrão,2026,BE1,968,False,4,0,0,0,0,0,0,0,0
 1218658,Samy Merheg,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
 1218658,Samy Merheg,2026,PO1,2521,False,11,4,0,86,0,0,0,0,0
-1218658,Samy Merheg,2026,FS,3586,True,2,2,0,132,0,0,0,0,0
+1218658,Samy Merheg,2026,FS,3586,True,3,2,0,132,0,0,0,0,0
 1074179,Mordomo,2026,PT3A,74155,False,9,9,0,747,1,1,0,0,2
 1074179,Mordomo,2026,POPO,74155,False,2,2,0,186,4,0,0,0,0
 344457,Lazar Carević,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
@@ -970,7 +998,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 847484,Pedro Bondo,2026,POPO,3329,False,1,1,0,35,0,0,0,0,1
 847484,Pedro Bondo,2026,POCP,3329,False,1,1,0,63,0,0,1,0,0
 847484,Pedro Bondo,2026,PO1,3329,False,11,10,0,718,0,0,4,0,2
-847484,Pedro Bondo,2026,AFCQ,3585,True,2,2,0,174,0,2,1,0,1
+847484,Pedro Bondo,2026,AFCQ,3585,True,3,3,0,227,0,2,4,0,1
 574758,Garcia,2026,POPO,3329,False,1,1,0,55,0,0,0,0,0
 574758,Garcia,2026,POCP,3329,False,1,1,0,27,0,0,0,0,0
 574758,Garcia,2026,PO1,3329,False,11,4,0,249,0,0,2,0,0
@@ -987,6 +1015,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1061975,Mathias de Amorim,2026,POPO,3329,False,1,1,0,90,0,0,0,0,0
 1061975,Mathias de Amorim,2026,POCP,3329,False,1,1,0,27,0,0,0,0,0
 1061975,Mathias de Amorim,2026,PO1,3329,False,11,11,0,977,0,3,7,0,3
+1061975,Mathias de Amorim,2026,FS,16374,True,1,1,0,71,0,0,1,0,0
 420189,Tom van de Looi,2026,POPO,3329,False,1,1,0,89,0,0,0,0,0
 420189,Tom van de Looi,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
 420189,Tom van de Looi,2026,PO1,3329,False,11,7,0,558,0,0,7,1,0
@@ -998,15 +1027,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1153105,Yassir Zabiri,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
 1153105,Yassir Zabiri,2026,ES1,630,False,12,12,0,804,9,0,29,15,4
 1153105,Yassir Zabiri,2026,CDR,630,False,1,0,0,0,0,0,0,0,0
-1153105,Yassir Zabiri,2026,AFCQ,3575,True,2,1,0,62,0,0,2,0,0
+1153105,Yassir Zabiri,2026,AFCQ,3575,True,3,2,0,131,1,0,4,2,0
 983571,Rodrigo Ribeiro,2026,POPO,1701,False,2,2,0,78,0,0,0,0,0
-983571,Rodrigo Ribeiro,2026,PO2,1701,False,10,9,0,376,0,0,1,0,1
+983571,Rodrigo Ribeiro,2026,PO2,1701,False,11,10,0,388,0,0,1,0,1
 868101,Sorriso,2026,POPO,3329,False,1,1,0,90,0,0,0,0,0
 868101,Sorriso,2026,POCP,3329,False,1,1,0,17,0,0,0,0,0
 868101,Sorriso,2026,PO1,3329,False,11,11,0,877,2,2,19,7,2
 652332,Óscar Aranda,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
 652332,Óscar Aranda,2026,POCP,3329,False,1,1,0,73,0,0,1,0,0
 652332,Óscar Aranda,2026,PO1,3329,False,11,10,0,188,2,1,10,6,2
+1028162,Antoine Joujou,2026,FRC,995,False,1,1,0,90,2,0,0,0,0
 1028162,Antoine Joujou,2026,FR2,995,False,10,8,0,116,1,0,3,1,0
 1028162,Antoine Joujou,2026,CIT,130,False,1,0,0,0,0,0,0,0,0
 329723,Gil Dias,2026,POPO,3329,False,1,1,0,35,0,0,0,0,0
@@ -1031,14 +1061,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 290336,Rochinha,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 290336,Rochinha,2026,PO1,3268,False,11,5,0,308,0,0,10,2,0
 1061686,Rudi Almeida,2026,POPO,7789,False,2,2,0,66,1,0,0,0,0
-1061686,Rudi Almeida,2026,PO2,7789,False,6,5,0,169,1,0,0,0,2
+1061686,Rudi Almeida,2026,PO2,7789,False,7,6,0,191,1,0,0,0,2
 1061686,Rudi Almeida,2026,PO1,3329,False,4,1,0,4,0,0,1,0,0
 662446,Juan Castillo,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 662446,Juan Castillo,2026,PO1,2420,False,11,0,0,0,0,0,0,0,0
 1087843,Lucas Furtado,2026,PT3A,15136,False,1,1,0,90,0,0,0,0,0
 1087843,Lucas Furtado,2026,POPO,2420,False,1,1,0,90,0,0,0,0,0
 1087843,Lucas Furtado,2026,PO1,2420,False,11,3,0,270,0,0,0,0,0
-1004681,Tony Strata,2026,UNLB,3447,True,4,1,0,9,0,0,0,0,0
+1004681,Tony Strata,2026,UNLB,3447,True,5,1,0,9,0,0,0,0,0
 1004681,Tony Strata,2026,POPO,2420,False,1,1,0,75,0,0,0,0,0
 1004681,Tony Strata,2026,PO1,2420,False,11,11,0,867,0,1,6,2,2
 396342,Toni Borevković,2026,TR1,152,False,3,3,0,225,0,0,0,0,1
@@ -1055,6 +1085,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1335120,Francisco Dias,2026,PT3A,15136,False,9,0,0,0,0,0,0,0,0
 1335120,Francisco Dias,2026,POPO,2420,False,1,1,0,15,0,0,0,0,0
 1335120,Francisco Dias,2026,PO1,2420,False,11,0,0,0,0,0,0,0,0
+937729,Diogo Sousa,2026,SU20,16373,True,1,1,0,77,0,0,0,0,0
 937729,Diogo Sousa,2026,FR1,667,False,10,9,0,561,1,1,9,4,1
 1265198,André Oliveira,2026,PT3A,15136,False,9,3,0,248,0,0,0,0,0
 877140,Gonçalo Nogueira,2026,POPO,2420,False,1,1,0,45,0,0,0,0,1
@@ -1066,7 +1097,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 645588,Tomás Händel,2026,CLQ,159,False,4,0,0,0,0,0,0,0,0
 666539,Beni Mukendi,2026,POPO,2420,False,1,1,0,45,0,0,0,0,0
 666539,Beni Mukendi,2026,PO1,2420,False,11,11,0,662,0,0,1,0,0
-666539,Beni Mukendi,2026,AFCQ,3585,True,2,0,0,0,0,0,0,0,0
+666539,Beni Mukendi,2026,AFCQ,3585,True,3,0,0,0,0,0,0,0,0
 291939,Samu,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 291939,Samu,2026,PO1,2420,False,11,11,0,870,1,1,21,7,2
 367468,Nuno Santos,2026,TELK,6356,False,2,2,0,32,0,0,1,0,0
@@ -1082,14 +1113,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 236997,Tiago Silva,2026,ACLE,10775,False,4,4,0,356,0,0,4,1,0
 959979,Matija Mitrović,2026,POPO,2420,False,1,1,0,45,0,0,0,0,0
 959979,Matija Mitrović,2026,PO1,2420,False,11,4,0,80,0,0,4,0,1
-959979,Matija Mitrović,2026,FS,9566,True,4,4,0,231,3,3,0,0,1
+959979,Matija Mitrović,2026,FS,9566,True,5,4,0,231,3,3,0,0,1
 902869,Rica Rocha,2026,PT3A,15136,False,9,8,0,714,1,0,0,0,2
 1199783,Zeega,2026,U19Q,16372,True,3,2,0,83,0,0,0,0,0
 1199783,Zeega,2026,PT3A,15136,False,9,9,0,510,0,0,0,0,1
 1077059,Hugo Nunes,2026,POPO,2990,False,2,2,0,135,1,1,0,0,0
-1077059,Hugo Nunes,2026,PO2,2990,False,10,9,0,187,0,0,0,0,2
+1077059,Hugo Nunes,2026,PO2,2990,False,11,10,0,217,0,0,0,0,2
 671669,Noah Saviolo,2026,UCOL,449,False,3,3,0,212,0,0,1,1,1
 671669,Noah Saviolo,2026,TR1,449,False,11,9,1,391,2,1,9,8,0
+671669,Noah Saviolo,2026,FS,16374,True,1,1,0,1,0,0,0,0,0
 671669,Noah Saviolo,2026,ELQ,449,False,2,2,0,127,0,0,3,1,0
 1053206,Oumar Camara,2026,POPO,2420,False,1,1,0,31,0,0,0,0,1
 1053206,Oumar Camara,2026,PO1,2420,False,11,11,0,699,1,0,24,8,1
@@ -1107,7 +1139,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 648909,Fabio Blanco,2026,PO1,2420,False,11,0,0,0,0,0,0,0,0
 1050219,Rodrigo Duarte,2026,PT3A,15136,False,9,8,0,545,0,0,0,0,0
 72768,Nélson Oliveira,2026,POPO,4294,False,2,1,0,62,0,0,0,0,0
-72768,Nélson Oliveira,2026,PO2,4294,False,8,4,0,230,0,0,0,0,1
+72768,Nélson Oliveira,2026,PO2,4294,False,9,4,0,230,0,0,0,0,1
 1277216,Gui Paula,2026,PT3A,15136,False,9,8,0,521,0,1,0,0,1
 670710,André Gomes,2026,POPO,3268,False,1,0,1,0,0,0,0,0,0
 670710,André Gomes,2026,PO1,3268,False,11,5,6,389,0,0,0,0,0
@@ -1130,6 +1162,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726721,Gonçalo Esteves,2026,CIT,4097,False,1,0,0,0,0,0,0,0,0
 1105188,Julián Martínez,2026,POPO,2521,False,1,0,1,0,0,0,0,0,0
 1105188,Julián Martínez,2026,PO1,2521,False,11,0,9,0,0,0,0,0,0
+1105188,Julián Martínez,2026,FS,3590,True,1,1,0,57,0,0,0,0,0
 1105188,Julián Martínez,2026,CNLA,3590,True,4,0,4,0,0,0,0,0,0
 92947,Sergi Gómez,2026,POPO,2521,False,1,1,0,95,0,0,0,0,0
 92947,Sergi Gómez,2026,PO1,2521,False,11,8,0,638,0,0,1,0,0
@@ -1144,7 +1177,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 638269,Rhaldney,2026,TR1,1467,False,11,11,0,792,1,0,15,4,2
 487180,Nabil Touaizi,2026,POPO,2521,False,1,1,0,50,0,0,0,0,0
 487180,Nabil Touaizi,2026,PO1,2521,False,11,6,0,396,0,0,4,1,1
-646734,Tomás Mendes,2026,E4G1,8880,False,10,1,0,5,0,0,0,0,1
+646734,Tomás Mendes,2026,E4G1,8880,False,11,1,0,5,0,0,0,0,1
 1321322,Davy Gui,2026,POPO,2521,False,1,1,0,56,0,0,0,0,0
 1321322,Davy Gui,2026,PO1,2521,False,11,10,0,719,0,0,11,3,4
 648812,Sabit Abdulai,2026,POPO,2521,False,1,0,1,0,0,0,0,0,0
@@ -1164,11 +1197,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 845568,Marko Milovanović,2026,CGB,1020,False,1,1,0,30,0,0,1,0,0
 859923,Cédric Nuozzi,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
 859923,Cédric Nuozzi,2026,PO1,2521,False,11,4,0,30,0,0,2,0,0
+969153,Mathis Clairicia,2026,FRC,750,False,1,1,0,90,0,0,0,0,0
 969153,Mathis Clairicia,2026,FR2,750,False,12,12,0,631,1,0,17,5,1
 1070645,Fabrício Garcia,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
 1070645,Fabrício Garcia,2026,PO1,1465,False,11,6,0,175,0,0,1,0,0
 696507,Tiago Leite,2026,POPO,1701,False,2,2,0,89,1,1,0,0,0
-696507,Tiago Leite,2026,PO2,1701,False,10,9,0,506,3,0,1,1,0
+696507,Tiago Leite,2026,PO2,1701,False,11,10,0,584,4,0,1,1,0
 284739,Sandro Lima,2026,ELQ,53453,False,2,2,0,180,1,0,2,2,1
 284739,Sandro Lima,2026,EL,53453,False,4,4,0,319,0,1,5,2,0
 284739,Sandro Lima,2026,CLQ,53453,False,6,6,0,519,3,0,0,0,0
@@ -1182,13 +1216,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 707350,Max Scholze,2026,PO1,2431,False,11,11,0,836,1,1,5,1,3
 797572,Stefan Lekovic,2026,POPO,2431,False,1,0,0,0,0,0,0,0,0
 797572,Stefan Lekovic,2026,PO1,2431,False,11,9,0,810,0,0,7,2,3
-797572,Stefan Lekovic,2026,FS,9566,True,4,0,0,0,0,0,0,0,0
+797572,Stefan Lekovic,2026,FS,9566,True,5,0,0,0,0,0,0,0,0
 658674,Luan Patrick,2026,POPO,2431,False,1,1,0,90,0,0,0,0,0
 658674,Luan Patrick,2026,PO1,2431,False,11,10,0,900,0,0,3,1,2
 631472,Bruno Langa,2026,ELQ,10625,False,4,4,0,233,0,0,0,0,1
 631472,Bruno Langa,2026,ECLQ,10625,False,4,4,0,199,0,0,0,0,1
 631472,Bruno Langa,2026,AZ1,10625,False,10,10,0,900,0,1,0,0,0
-631472,Bruno Langa,2026,AFCQ,5129,True,2,2,0,180,0,0,1,1,1
+631472,Bruno Langa,2026,AFCQ,5129,True,3,3,0,270,0,0,2,2,1
 681829,Nilton,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 681829,Nilton,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
 681829,Nilton,2026,PO1,1301,False,8,4,0,81,0,0,1,1,0
@@ -1203,13 +1237,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 699679,Bernardo Schappo,2026,PO1,2431,False,11,4,0,260,0,0,2,0,0
 448468,Jefferson Encada,2026,POPO,2431,False,1,1,0,88,0,1,0,0,0
 448468,Jefferson Encada,2026,PO1,2431,False,11,8,0,178,0,0,0,0,1
-448468,Jefferson Encada,2026,AFCQ,3701,True,2,2,0,180,0,0,0,0,0
+448468,Jefferson Encada,2026,AFCQ,3701,True,3,3,0,270,0,0,0,0,1
 593410,Yahya Kalley,2026,PO1,2431,False,1,0,0,0,0,0,0,0,0
 1104233,Semeu Commey,2026,POPO,3345,False,2,0,0,0,0,0,0,0,0
-1104233,Semeu Commey,2026,PO2,3345,False,10,5,0,195,0,0,0,0,1
+1104233,Semeu Commey,2026,PO2,3345,False,11,5,0,195,0,0,0,0,1
 980575,Oumar Ngom,2026,IT1,1005,False,11,11,0,755,0,0,11,4,2
 980575,Oumar Ngom,2026,CIT,1005,False,1,1,0,74,0,0,0,0,0
-980575,Oumar Ngom,2026,AFCQ,14238,True,2,2,0,166,0,1,1,1,0
+980575,Oumar Ngom,2026,AFCQ,14238,True,3,2,0,166,0,1,1,1,0
 1159661,Eddy Doué,2026,POPO,2431,False,1,0,0,0,0,0,0,0,0
 1159661,Eddy Doué,2026,PO1,2431,False,11,9,0,722,0,3,6,2,4
 1159661,Eddy Doué,2026,AFCQ,3591,True,1,0,0,0,0,0,0,0,0
@@ -1222,11 +1256,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 626854,Kevin Höög Jansson,2026,PO1,2431,False,11,6,0,215,0,0,3,1,0
 782889,Tom Moustier,2026,POPO,2431,False,1,1,0,90,2,0,0,0,1
 782889,Tom Moustier,2026,PO1,2431,False,11,3,0,30,0,0,3,1,0
-963316,Assane Ndiaye,2026,E3G1,4542,False,11,5,0,122,0,0,1,0,1
+963316,Assane Ndiaye,2026,E3G1,4542,False,12,6,0,153,0,0,1,0,1
 963316,Assane Ndiaye,2026,CDR,4542,False,1,1,0,69,0,0,0,0,1
 1216111,Alex Sola,2026,ISR1,6028,False,10,9,0,716,0,0,7,1,5
 1004346,Pape Führer,2026,PT23,101419,False,1,0,0,0,0,0,0,0,0
-1004346,Pape Führer,2026,CZ3C,11116,False,9,7,0,585,0,0,0,0,0
+1004346,Pape Führer,2026,CZ3C,11116,False,10,7,0,585,0,0,0,0,0
+547754,Ianis Stoica,2026,UNLB,3447,True,1,1,0,17,0,0,1,0,0
 547754,Ianis Stoica,2026,POPO,2431,False,1,1,0,63,0,0,0,0,0
 547754,Ianis Stoica,2026,PO1,2431,False,11,11,0,747,4,2,22,6,0
 892926,Leandro Antonetti,2026,POPO,2431,False,1,1,0,76,0,0,0,0,0
@@ -1247,23 +1282,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 383807,Kikas,2026,BE2,1245,False,9,9,0,381,2,1,9,3,2
 742454,Jorge Meireles,2026,POPO,110302,False,2,2,0,73,0,0,0,0,1
 742454,Jorge Meireles,2026,PO2,110302,False,10,10,0,173,1,0,1,0,0
-668277,Alan Godoy,2026,E3G1,11000,False,10,9,0,261,4,1,21,9,1
+668277,Alan Godoy,2026,E3G1,11000,False,11,10,0,294,4,1,23,9,1
 575715,João Resende,2026,POPO,4294,False,2,2,0,180,1,0,0,0,0
-575715,João Resende,2026,PO2,4294,False,10,10,0,677,1,2,0,0,0
-826225,Gonzalo Calçada,2026,E3G2,13702,False,11,7,0,380,1,0,6,2,0
+575715,João Resende,2026,PO2,4294,False,11,11,0,752,1,2,0,0,0
+826225,Gonzalo Calçada,2026,E3G2,13702,False,12,8,0,450,1,0,6,2,0
 826225,Gonzalo Calçada,2026,CDR,13702,False,1,1,0,26,0,0,0,0,1
 1321718,João Gastão,2026,PT23,91911,False,1,1,0,85,1,0,0,0,0
 1321718,João Gastão,2026,POPO,4294,False,2,0,0,0,0,0,0,0,0
-1321718,João Gastão,2026,PO2,4294,False,10,4,0,116,0,0,0,0,1
+1321718,João Gastão,2026,PO2,4294,False,11,5,0,175,0,0,0,0,1
 1270605,Alisson Souza,2026,POPO,2431,False,1,1,0,63,0,0,0,0,0
 1270605,Alisson Souza,2026,PO1,2431,False,11,6,0,40,0,0,1,0,1
 1433067,Henrique Poniewas,2026,PT23,101419,False,11,6,0,407,3,0,0,0,1
 1433067,Henrique Poniewas,2026,POPO,2431,False,1,1,0,14,0,0,0,0,0
 1433067,Henrique Poniewas,2026,PO1,2431,False,11,0,0,0,0,0,0,0,0
 700643,Martin Turk,2026,POPO,1465,False,1,1,0,120,0,0,0,0,0
-700643,Martin Turk,2026,PO1,1465,False,11,1,0,90,0,0,0,0,0
+700643,Martin Turk,2026,PO1,1465,False,10,1,0,90,0,0,0,0,0
 101118,Joel Robles,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-101118,Joel Robles,2026,PO1,1465,False,11,9,0,810,0,0,0,0,0
+101118,Joel Robles,2026,PO1,1465,False,10,9,0,810,0,0,0,0,0
 906307,Diogo Dias,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
 906307,Diogo Dias,2026,PO1,1465,False,11,0,0,0,0,0,0,0,0
 709727,Kévin Boma,2026,ofb,409,False,3,1,0,90,0,0,0,0,0
@@ -1272,34 +1307,34 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 709727,Kévin Boma,2026,AFCQ,3815,True,2,2,0,180,0,0,3,0,1
 709727,Kévin Boma,2026,A1,409,False,12,10,1,845,1,1,10,4,1
 388545,Ricard Sánchez,2026,POPO,1465,False,1,1,0,38,0,0,0,0,0
-388545,Ricard Sánchez,2026,PO1,1465,False,11,10,0,648,1,0,4,3,1
+388545,Ricard Sánchez,2026,PO1,1465,False,10,10,0,648,1,0,4,3,1
 319623,Pedro Amaral,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 319623,Pedro Amaral,2026,PO1,2425,False,8,3,0,172,0,0,0,0,0
 294321,Ferro,2026,POPO,1465,False,1,1,0,120,0,0,0,0,0
-294321,Ferro,2026,PO1,1465,False,11,8,1,677,0,0,3,1,3
+294321,Ferro,2026,PO1,1465,False,10,8,1,677,0,0,3,1,3
 1072238,Pedro Carvalho,2026,POPO,1465,False,1,1,0,120,0,0,0,0,0
-1072238,Pedro Carvalho,2026,PO1,1465,False,11,10,0,263,0,1,1,0,1
+1072238,Pedro Carvalho,2026,PO1,1465,False,10,10,0,263,0,1,1,0,1
 383014,Gonçalo Costa,2026,PO1,1465,False,4,1,0,15,0,0,0,0,0
-383014,Gonçalo Costa,2026,KRC,24575,False,1,0,0,0,0,0,0,0,0
+383014,Gonçalo Costa,2026,KRC,24575,False,2,0,0,0,0,0,0,0,0
 383014,Gonçalo Costa,2026,KR1,24575,False,7,5,0,349,0,0,2,1,1
 925417,Tiago Parente,2026,POPO,1465,False,1,1,0,14,0,0,0,0,0
-925417,Tiago Parente,2026,PO1,1465,False,11,3,0,127,0,0,0,0,0
+925417,Tiago Parente,2026,PO1,1465,False,10,3,0,127,0,0,0,0,0
 950442,Or Israelov,2026,ISR1,262,False,6,6,0,458,0,0,2,0,2
 950442,Or Israelov,2026,ISR1,1017,False,4,0,0,0,0,0,0,0,0
 950442,Or Israelov,2026,ECLQ,1017,False,6,0,0,0,0,0,0,0,0
 1166516,Longin Bimai,2026,PT23,68403,False,11,0,0,0,0,0,0,0,0
 938149,Jan Montes,2026,PT23,68403,False,11,4,0,179,0,0,0,0,0
 429309,Jordan Holsgrove,2026,POPO,1465,False,1,1,0,60,0,0,0,0,0
-429309,Jordan Holsgrove,2026,PO1,1465,False,11,7,0,493,0,1,8,4,1
+429309,Jordan Holsgrove,2026,PO1,1465,False,10,7,0,493,0,1,8,4,1
 258005,João Carvalho,2026,POPO,1465,False,1,1,0,120,0,0,0,0,1
-258005,João Carvalho,2026,PO1,1465,False,11,9,0,768,0,1,17,5,2
+258005,João Carvalho,2026,PO1,1465,False,10,9,0,768,0,1,17,5,2
 503858,Antef Tsoungui,2026,POPO,1465,False,1,1,0,82,0,0,0,0,1
-503858,Antef Tsoungui,2026,PO1,1465,False,11,9,0,662,0,0,7,1,2
+503858,Antef Tsoungui,2026,PO1,1465,False,10,9,0,662,0,0,7,1,2
 388548,Jandro Orellana,2026,PO1,1465,False,3,2,0,12,0,0,0,0,0
-388548,Jandro Orellana,2026,ES2,2687,False,11,7,0,464,0,1,3,0,2
+388548,Jandro Orellana,2026,ES2,2687,False,12,7,0,464,0,1,3,0,2
 388548,Jandro Orellana,2026,CDR,2687,False,1,0,0,0,0,0,0,0,0
 290256,Xeka,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-290256,Xeka,2026,PO1,1465,False,11,5,0,209,0,0,6,2,1
+290256,Xeka,2026,PO1,1465,False,10,5,0,209,0,0,6,2,1
 1020686,Tiago Brito,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
 1020686,Tiago Brito,2026,PO1,1465,False,11,4,0,104,0,0,2,1,0
 826490,Luís Gomes,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
@@ -1309,13 +1344,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 569376,Yanis Begraoui,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
 569376,Yanis Begraoui,2026,PO1,1465,False,11,7,0,630,2,0,17,7,1
 394328,Rafik Guitane,2026,POPO,1465,False,1,1,0,60,1,0,0,0,0
-394328,Rafik Guitane,2026,PO1,1465,False,11,9,0,548,1,0,14,5,0
-525602,Alejandro Marqués,2026,ES2,16795,False,13,8,4,325,2,0,10,4,0
+394328,Rafik Guitane,2026,PO1,1465,False,10,9,0,548,1,0,14,5,0
+525602,Alejandro Marqués,2026,ES2,16795,False,14,9,4,348,2,0,10,4,0
 525602,Alejandro Marqués,2026,CDR,16795,False,1,0,1,0,0,0,0,0,0
 752442,André Lacximicant,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-752442,André Lacximicant,2026,PO1,1465,False,11,10,0,617,0,0,19,9,1
+752442,André Lacximicant,2026,PO1,1465,False,10,10,0,617,0,0,19,9,1
 1159044,Peixinho,2026,POPO,1465,False,1,1,0,60,0,0,0,0,0
-1159044,Peixinho,2026,PO1,1465,False,11,7,0,186,1,0,5,2,0
+1159044,Peixinho,2026,PO1,1465,False,10,7,0,186,1,0,5,2,0
 487167,Cezary Miszta,2026,POPO,2425,False,1,0,1,0,0,0,0,0,0
 487167,Cezary Miszta,2026,PO1,2425,False,11,0,11,0,0,0,0,0,0
 529425,Ennio van der Gouw,2026,POPO,2425,False,1,1,0,90,0,0,0,0,0
@@ -1326,7 +1361,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 923129,Antzelo Sina,2026,PO1,2425,False,11,0,0,0,0,0,0,0,0
 537367,Alfonso Pastor,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 537367,Alfonso Pastor,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-537367,Alfonso Pastor,2026,PO1,1301,False,11,6,0,540,0,0,0,0,0
+537367,Alfonso Pastor,2026,PO1,1301,False,10,6,0,540,0,0,0,0,0
 724035,Andreas Ntoi,2026,UNLA,3378,True,2,0,0,0,0,0,0,0,0
 724035,Andreas Ntoi,2026,POPO,2425,False,1,1,0,90,0,0,0,0,0
 724035,Andreas Ntoi,2026,PO1,2425,False,11,9,1,702,0,0,3,0,1
@@ -1344,9 +1379,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 566677,Nelson Abbey,2026,PO1,2425,False,11,4,2,279,0,0,0,0,1
 985683,Francisco Petrasso,2026,POPO,2425,False,1,1,0,90,0,0,0,0,0
 985683,Francisco Petrasso,2026,PO1,2425,False,11,10,0,754,1,0,2,1,3
+653415,Leonardo Buta,2026,FRC,1154,False,1,1,0,84,0,0,0,0,0
 653415,Leonardo Buta,2026,FR2,1154,False,10,4,0,141,0,0,0,0,0
 653415,Leonardo Buta,2026,CIT,410,False,1,0,0,0,0,0,0,0,0
-897481,Eric da Silva Moreira,2026,SU20,5709,True,3,3,0,124,1,0,1,1,0
+897481,Eric da Silva Moreira,2026,SU20,5709,True,4,4,0,146,2,0,1,1,0
 897481,Eric da Silva Moreira,2026,NLP,798,False,1,1,0,90,0,0,1,1,0
 897481,Eric da Silva Moreira,2026,NL1,798,False,10,8,0,489,0,0,2,0,0
 897481,Eric da Silva Moreira,2026,GB1,703,False,1,0,0,0,0,0,0,0,0
@@ -1389,7 +1425,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 947404,Diogo Bezerra,2026,PO1,2425,False,11,11,0,892,1,3,17,7,1
 842517,Tamble,2026,POPO,2425,False,1,1,0,24,0,0,0,0,0
 842517,Tamble,2026,PO1,2425,False,11,11,0,464,1,0,7,3,1
-842517,Tamble,2026,AFCQ,3701,True,2,1,0,11,0,1,1,0,0
+842517,Tamble,2026,AFCQ,3701,True,3,2,0,32,0,2,1,0,0
 403290,Dario Špikić,2026,POPO,2425,False,1,1,0,24,0,0,0,0,1
 403290,Dario Špikić,2026,PO1,2425,False,11,6,0,174,0,0,3,0,0
 1097263,Rafael Lobato,2026,POPO,110302,False,2,2,0,118,0,0,0,0,0
@@ -1405,8 +1441,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 376486,Marc Gual,2026,CLQ,10482,False,6,6,0,544,1,0,5,0,0
 367651,Ignacio de Arruabarrena,2026,POPO,8024,False,1,1,0,120,0,0,0,0,0
 367651,Ignacio de Arruabarrena,2026,PO1,8024,False,11,11,0,990,0,0,0,0,1
+367651,Ignacio de Arruabarrena,2026,FS,3449,True,1,0,0,0,0,0,0,0,0
 532900,João Valido,2026,POPO,3325,False,2,0,0,0,0,0,0,0,0
-532900,João Valido,2026,PO2,3325,False,10,9,0,810,0,0,0,0,1
+532900,João Valido,2026,PO2,3325,False,11,10,0,900,0,0,0,0,1
 912688,Jakub Vinarčík,2026,POPO,8024,False,1,0,0,0,0,0,0,0,0
 912688,Jakub Vinarčík,2026,PO1,8024,False,11,0,0,0,0,0,0,0,0
 609361,José Fontán,2026,POPO,8024,False,1,1,0,120,0,0,0,0,0
@@ -1414,7 +1451,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 649087,Amadou Dante,2026,TSP,5225,False,3,1,0,45,0,0,0,0,0
 649087,Amadou Dante,2026,TS1,5225,False,14,14,0,1177,1,2,5,3,3
 649087,Amadou Dante,2026,FS,3674,True,2,1,0,17,0,1,0,0,0
-649087,Amadou Dante,2026,AFCQ,3674,True,2,0,0,0,0,0,0,0,0
+649087,Amadou Dante,2026,AFCQ,3674,True,3,0,0,0,0,0,0,0,0
 470796,Boris Popović,2026,POPO,8024,False,1,0,0,0,0,0,0,0,0
 470796,Boris Popović,2026,PO1,8024,False,11,2,0,113,0,0,0,0,0
 340853,Javi Sánchez,2026,POPO,8024,False,1,1,0,120,0,0,0,0,1
@@ -1426,14 +1463,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1036405,Omar Fayed,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
 1036405,Omar Fayed,2026,CLQ,36,False,5,0,5,0,0,0,0,0,0
 1036405,Omar Fayed,2026,CIT,8970,False,1,1,0,28,0,0,0,0,0
-1036405,Omar Fayed,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+1036405,Omar Fayed,2026,AFCQ,3672,True,3,0,0,0,0,0,0,0,0
 581121,Tiago Esgaio,2026,POPO,8024,False,1,1,0,120,0,1,0,0,0
 581121,Tiago Esgaio,2026,PO1,8024,False,11,11,0,988,1,0,6,2,0
 1102159,José Silva,2026,POPO,2424,False,1,0,0,0,0,0,0,0,0
 1102159,José Silva,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
 1102159,José Silva,2026,PO1,2424,False,11,4,0,145,0,0,1,0,0
 415645,Alex Pinto,2026,POPO,4294,False,2,0,0,0,0,0,0,0,0
-415645,Alex Pinto,2026,PO2,4294,False,10,10,0,899,0,0,0,0,3
+415645,Alex Pinto,2026,PO2,4294,False,11,11,0,989,0,0,0,0,4
 670713,Diogo Monteiro,2026,POPO,8024,False,1,0,0,0,0,0,0,0,0
 670713,Diogo Monteiro,2026,PO1,8024,False,11,1,0,17,0,0,0,0,1
 868622,Taichi Fukui,2026,POPO,8024,False,1,1,0,61,0,0,0,0,0
@@ -1447,12 +1484,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1061283,Mateo Flores,2026,PO1,8024,False,11,10,0,375,0,0,5,2,0
 941869,Yellu Santiago,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 941869,Yellu Santiago,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-941869,Yellu Santiago,2026,PO1,1301,False,11,1,0,1,0,0,0,0,0
+941869,Yellu Santiago,2026,PO1,1301,False,10,1,0,1,0,0,0,0,0
 622992,Pablo Gozálbez,2026,POPO,8024,False,1,1,0,61,0,0,0,0,0
 622992,Pablo Gozálbez,2026,PO1,8024,False,11,9,0,365,0,1,4,2,2
 657435,Pedro Santos,2026,POPO,8024,False,1,1,0,59,0,0,0,0,1
 657435,Pedro Santos,2026,PO1,8024,False,11,9,0,252,0,0,1,0,3
-364237,Mamadou Loum,2026,ES2,2448,False,13,9,0,163,0,0,8,3,2
+364237,Mamadou Loum,2026,ES2,2448,False,14,10,0,167,0,0,8,3,2
 364237,Mamadou Loum,2026,CDR,2448,False,1,1,0,90,0,1,0,0,0
 514514,Iván Barbero,2026,POPO,8024,False,1,1,0,61,1,0,0,0,0
 514514,Iván Barbero,2026,PO1,8024,False,11,11,0,779,5,0,20,10,2
@@ -1470,6 +1507,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 632901,Miguel Puche,2026,PO1,8024,False,11,0,11,0,0,0,0,0,0
 378482,Patrick Sequeira,2026,POPO,3268,False,1,1,0,90,0,0,0,0,0
 378482,Patrick Sequeira,2026,PO1,3268,False,11,3,0,270,0,0,0,0,1
+378482,Patrick Sequeira,2026,FS,8497,True,1,1,0,90,0,0,0,0,0
 378482,Patrick Sequeira,2026,CNLA,8497,True,4,0,0,0,0,0,0,0,0
 815219,Ivan Mandić,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 815219,Ivan Mandić,2026,PO1,3268,False,11,4,0,331,0,0,0,0,2
@@ -1485,6 +1523,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 740159,David Sousa,2026,PO1,3268,False,11,11,0,947,0,0,8,3,4
 805864,Fahem Benaïssa,2026,IT2,2581,False,11,11,0,990,1,1,5,1,2
 805864,Fahem Benaïssa,2026,CIT,2581,False,2,2,0,175,0,0,2,1,0
+805864,Fahem Benaïssa,2026,AFCQ,3614,True,1,0,0,0,0,0,0,0,0
 490760,Tchamba,2026,AFCQ,3434,True,2,2,0,165,0,0,2,1,0
 633377,Kaique Rocha,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 633377,Kaique Rocha,2026,PO1,3268,False,11,0,0,0,0,0,0,0,0
@@ -1494,11 +1533,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 696504,Pedro Rosas,2026,PO1,3268,False,11,11,0,753,0,0,6,1,3
 1241219,Kaly,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 1241219,Kaly,2026,PO1,3268,False,11,9,1,633,0,0,2,1,3
+1241219,Kaly,2026,AFCQ,3585,True,1,0,0,0,0,0,0,0,0
 154319,André Geraldes,2026,POPO,3268,False,1,1,0,90,0,0,0,0,0
 154319,André Geraldes,2026,PO1,3268,False,11,11,0,990,0,0,1,0,2
 1396595,Renato Nhaga,2026,TR1,141,False,11,4,0,47,0,0,1,0,0
 1396595,Renato Nhaga,2026,CL,141,False,4,2,0,15,0,0,0,0,0
-1396595,Renato Nhaga,2026,AFCQ,3701,True,2,2,0,131,0,1,3,0,0
+1396595,Renato Nhaga,2026,AFCQ,3701,True,3,3,0,151,1,1,5,2,0
 566911,Yassin Oukili,2026,NLP,385,False,1,0,0,0,0,0,0,0,0
 566911,Yassin Oukili,2026,NL1,385,False,12,6,4,246,0,0,4,0,0
 536081,Lawrence Ofori,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
@@ -1507,17 +1547,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1221003,Kevin Prieto,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 1221003,Kevin Prieto,2026,PO1,3268,False,11,5,0,196,0,0,1,0,0
 587107,Miguel Sousa,2026,POPO,3345,False,2,2,0,134,0,0,0,0,1
-587107,Miguel Sousa,2026,PO2,3345,False,10,5,0,188,0,0,0,0,2
+587107,Miguel Sousa,2026,PO2,3345,False,11,6,0,201,0,0,0,0,2
 182108,Seba Pérez,2026,POPO,3268,False,1,1,0,31,1,0,0,0,0
 182108,Seba Pérez,2026,PO1,3268,False,11,8,0,500,0,1,5,1,2
 1534934,Abdu Dafé,2026,POPO,3268,False,1,1,0,37,0,0,0,0,1
 1534934,Abdu Dafé,2026,PO1,3268,False,11,4,0,77,0,0,4,0,0
-815652,Tiago Morais,2026,FR5D,12765,False,5,2,0,65,1,0,0,0,0
+815652,Tiago Morais,2026,FR5D,12765,False,6,3,0,110,1,0,0,0,0
 815652,Tiago Morais,2026,FR1,1082,False,10,0,0,0,0,0,0,0,0
 815652,Tiago Morais,2026,CL,1082,False,4,0,0,0,0,0,0,0,0
 676411,Dailon Livramento,2026,IT2,276,False,11,11,0,572,0,2,17,3,4
 676411,Dailon Livramento,2026,CIT,276,False,2,2,0,155,0,0,2,0,0
-676411,Dailon Livramento,2026,AFCQ,4311,True,2,1,0,15,0,0,0,0,0
+676411,Dailon Livramento,2026,AFCQ,4311,True,3,2,0,99,1,0,2,2,0
 324806,Jérémy Livolant,2026,POPO,3268,False,1,0,0,0,0,0,0,0,0
 324806,Jérémy Livolant,2026,PO1,3268,False,11,3,0,130,0,0,1,1,0
 778540,Xander Severina,2026,CLQ,63993,False,8,8,0,213,1,1,8,3,0
@@ -1529,21 +1569,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 238367,Cassiano,2026,POPO,3268,False,1,1,0,31,0,0,0,0,0
 238367,Cassiano,2026,PO1,3268,False,11,6,0,148,0,0,2,2,0
 699501,Clau Mendes,2026,POPO,3327,False,2,2,0,130,1,0,0,0,0
-699501,Clau Mendes,2026,PO2,3327,False,6,4,0,45,2,0,0,0,0
+699501,Clau Mendes,2026,PO2,3327,False,7,5,0,54,2,0,0,0,0
 699501,Clau Mendes,2026,PO1,3268,False,4,1,0,21,0,0,2,1,0
 529730,Kiki,2026,PT3A,3348,False,9,9,0,490,0,1,0,0,0
 529730,Kiki,2026,POPO,3348,False,1,1,0,32,0,0,0,0,0
 290346,André Ferreira,2026,POPO,979,False,1,1,0,90,0,0,0,0,0
 290346,André Ferreira,2026,PO1,979,False,11,11,0,990,0,0,0,0,0
 175188,Caio Secco,2026,POPO,3345,False,2,2,0,180,0,0,0,0,0
-175188,Caio Secco,2026,PO2,3345,False,10,0,0,0,0,0,0,0,0
+175188,Caio Secco,2026,PO2,3345,False,11,1,0,90,0,0,0,0,0
 663254,Dinis Pinto,2026,POPO,979,False,1,0,0,0,0,0,0,0,0
 663254,Dinis Pinto,2026,PO1,979,False,11,10,0,831,1,0,11,3,1
 934031,Kiko,2026,POPO,979,False,1,1,0,90,0,0,0,0,0
 934031,Kiko,2026,PO1,979,False,11,10,1,833,1,0,5,1,2
 816572,Gilberto Batista,2026,POPO,979,False,1,1,0,46,0,0,0,0,0
 816572,Gilberto Batista,2026,PO1,979,False,11,11,0,990,0,0,1,0,4
-816572,Gilberto Batista,2026,AFCQ,3701,True,2,0,0,0,0,0,0,0,0
+816572,Gilberto Batista,2026,AFCQ,3701,True,3,1,0,90,0,0,1,0,0
 887834,Michel,2026,ACLE,13306,False,4,3,0,250,0,0,1,0,1
 1116537,Kevyn,2026,POPO,979,False,1,1,0,90,0,0,0,0,0
 1116537,Kevyn,2026,PO1,979,False,11,8,0,389,0,0,2,0,1
@@ -1557,6 +1597,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 428786,Alan,2026,PO1,2420,False,7,5,0,139,1,2,4,3,0
 698539,Mateja Stjepanović,2026,POPO,979,False,1,0,0,0,0,0,0,0,0
 698539,Mateja Stjepanović,2026,PO1,979,False,11,8,0,272,0,0,1,0,1
+698539,Mateja Stjepanović,2026,FS,9566,True,5,1,0,45,0,0,0,0,0
 698539,Mateja Stjepanović,2026,FS,43925,True,3,0,0,0,0,0,0,0,0
 668178,Rodri Alonso,2026,POPO,979,False,1,1,0,17,0,0,0,0,0
 668178,Rodri Alonso,2026,PO1,979,False,11,11,0,404,0,0,0,0,1
@@ -1576,15 +1617,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1510255,Miguel Silva,2026,PO1,979,False,1,0,0,0,0,0,0,0,0
 1219689,Landerson,2026,POPO,979,False,1,1,0,29,0,0,0,0,0
 1219689,Landerson,2026,PO1,979,False,11,11,0,576,1,0,5,1,1
-536831,Cedric Teguia,2026,ES2,8568,False,13,7,0,464,0,0,8,2,1
+536831,Cedric Teguia,2026,ES2,8568,False,14,8,0,509,0,0,11,3,1
 536831,Cedric Teguia,2026,CDR,8568,False,1,0,0,0,0,0,0,0,0
 840687,Luís Semedo,2026,GB1,289,False,2,0,0,0,0,0,0,0,0
+840687,Luís Semedo,2026,FRC,3524,False,1,1,0,90,0,0,0,0,0
 840687,Luís Semedo,2026,FR2,3524,False,8,4,0,166,0,0,6,2,1
 590302,Kiko Bondoso,2026,POPO,979,False,1,1,0,44,0,0,0,0,0
 590302,Kiko Bondoso,2026,PO1,979,False,11,8,0,356,0,1,1,0,1
 862568,Yan Maranhão,2026,POPO,979,False,1,1,0,29,0,0,0,0,0
 862568,Yan Maranhão,2026,PO1,979,False,11,8,0,158,0,0,6,3,0
-633114,Joel Jorquera,2026,E3G2,171,False,11,10,0,779,2,3,23,6,1
+633114,Joel Jorquera,2026,E3G2,171,False,12,11,0,815,2,3,24,6,1
 633114,Joel Jorquera,2026,CEF1,171,False,3,2,0,51,1,0,0,0,0
 412372,Lucão,2026,POPO,2424,False,1,0,0,0,0,0,0,0,0
 412372,Lucão,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
@@ -1612,7 +1654,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 137313,Buatu,2026,POPO,2424,False,1,1,0,120,0,0,0,0,0
 137313,Buatu,2026,POCP,2424,False,1,1,0,90,0,0,0,0,0
 137313,Buatu,2026,PO1,2424,False,11,11,0,990,0,0,2,0,0
-137313,Buatu,2026,AFCQ,3585,True,2,2,0,180,0,0,1,1,0
+137313,Buatu,2026,AFCQ,3585,True,3,3,0,270,0,0,4,2,0
 886047,Antonio Espigares,2026,POPO,2424,False,1,1,0,62,0,0,0,0,1
 886047,Antonio Espigares,2026,POCP,2424,False,1,1,0,82,0,0,0,0,0
 886047,Antonio Espigares,2026,PO1,2424,False,11,3,0,94,0,0,2,0,0
@@ -1620,7 +1662,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 721952,Jonathan Mutombo,2026,PO2,2432,False,10,5,0,248,1,1,0,0,0
 721952,Jonathan Mutombo,2026,EL,2432,False,4,3,0,219,0,0,0,0,2
 1173054,Diogo Costa,2026,POPO,7789,False,2,2,0,166,0,0,0,0,1
-1173054,Diogo Costa,2026,PO2,7789,False,10,9,0,598,0,0,0,0,1
+1173054,Diogo Costa,2026,PO2,7789,False,11,9,0,598,0,0,0,0,1
 609518,Luís Esteves,2026,MEXA,8590,False,16,16,0,1163,5,3,27,11,3
 732096,Santi García,2026,POPO,2424,False,1,1,0,120,1,0,0,0,0
 732096,Santi García,2026,POCP,2424,False,1,1,0,90,0,0,1,0,0
@@ -1630,7 +1672,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1178475,Mohamed Bamba,2026,POPO,2424,False,1,0,1,0,0,0,0,0,0
 1178475,Mohamed Bamba,2026,POCP,2424,False,1,0,1,0,0,0,0,0,0
 1178475,Mohamed Bamba,2026,PO1,2424,False,11,0,10,0,0,0,0,0,0
-937727,Gil Martins,2026,SU20,16373,True,3,3,0,176,2,0,0,0,0
+937727,Gil Martins,2026,SU20,16373,True,4,4,0,240,2,0,0,0,0
 937727,Gil Martins,2026,POPO,2424,False,1,0,0,0,0,0,0,0,0
 937727,Gil Martins,2026,POCP,2424,False,1,1,0,45,0,0,0,0,0
 937727,Gil Martins,2026,PO1,2424,False,11,10,0,702,1,2,15,4,1
@@ -1650,7 +1692,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 931900,Gustavo Varela,2026,CIT,2919,False,2,1,1,81,2,0,3,2,0
 1292845,Gui Beleza,2026,PT23,99764,False,11,11,0,958,1,1,0,0,1
 1292845,Gui Beleza,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
-1292845,Gui Beleza,2026,PO1,2424,False,3,0,0,0,0,0,0,0,0
+1292845,Gui Beleza,2026,PO1,2424,False,4,0,0,0,0,0,0,0,0
 581140,Joelson Fernandes,2026,POPO,2424,False,1,1,0,62,0,0,0,0,0
 581140,Joelson Fernandes,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
 581140,Joelson Fernandes,2026,PO1,2424,False,11,9,0,391,0,0,12,2,0
@@ -1672,7 +1714,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 927714,Carlos Eduardo,2026,PO1,2424,False,4,2,0,106,0,0,3,1,0
 927714,Carlos Eduardo,2026,CL,63993,False,4,0,0,0,0,0,0,0,0
 927714,Carlos Eduardo,2026,AZ1,63993,False,7,6,0,298,1,1,0,0,0
-1333982,Rodrigo Rodrigues,2026,SU20,16373,True,3,3,0,176,1,2,0,0,0
+1333982,Rodrigo Rodrigues,2026,SU20,16373,True,4,4,0,202,1,2,0,0,0
 1333982,Rodrigo Rodrigues,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 1333982,Rodrigo Rodrigues,2026,PO2,10949,False,10,10,0,833,0,1,0,0,1
 1333982,Rodrigo Rodrigues,2026,PO1,336,False,2,0,0,0,0,0,0,0,0
@@ -1680,6 +1722,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1083369,João Afonso,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 1083369,João Afonso,2026,PO2,10331,False,10,9,0,810,0,0,0,0,0
 1083369,João Afonso,2026,PO1,720,False,11,0,0,0,0,0,0,0,0
+1083369,João Afonso,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
 1083369,João Afonso,2026,CL,720,False,4,0,0,0,0,0,0,0,0
 983843,Neneca,2026,PT23,110983,False,1,1,0,90,0,0,0,0,0
 983843,Neneca,2026,POPO,2423,False,1,1,0,120,0,0,0,0,0
@@ -1693,11 +1736,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 657155,Sidney Lima,2026,PO1,2423,False,4,1,0,90,0,0,1,0,0
 684061,Lucas Soares,2026,POPO,2423,False,1,1,0,120,0,0,0,0,1
 684061,Lucas Soares,2026,PO1,2423,False,11,8,0,630,0,1,5,3,2
-875511,Paulo Victor,2026,MEXA,4961,False,15,14,0,555,0,0,3,1,4
+875511,Paulo Victor,2026,MEXA,4961,False,16,15,0,589,0,0,3,1,4
 519879,Guilherme Romão,2026,POPO,2423,False,1,1,0,92,0,0,0,0,0
 519879,Guilherme Romão,2026,PO1,2423,False,11,10,0,868,0,1,3,0,2
 396429,Diogo Calila,2026,PO1,2423,False,4,4,0,355,0,1,1,0,0
 396429,Diogo Calila,2026,MAR1,3282,False,7,2,0,180,0,0,0,0,1
+396429,Diogo Calila,2026,AFCQ,5129,True,3,1,0,65,0,0,2,1,0
 396429,Diogo Calila,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 290508,Pedro Pacheco,2026,POPO,2423,False,1,1,0,120,0,0,0,0,1
 290508,Pedro Pacheco,2026,PO1,2423,False,11,11,0,962,0,1,4,1,2
@@ -1705,7 +1749,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1083239,Henrique Silva,2026,PO1,2423,False,11,5,0,61,0,0,2,0,0
 131658,Luís Rocha,2026,POPO,6912,False,2,2,0,115,0,0,0,0,0
 131658,Luís Rocha,2026,PO2,6912,False,10,8,0,374,0,0,0,0,0
-1054149,Zé Franco,2026,PT23,110983,False,10,7,0,501,0,0,0,0,1
+1054149,Zé Franco,2026,PT23,110983,False,10,8,0,591,1,0,0,0,1
 1054149,Zé Franco,2026,CPSD,122445,False,6,3,0,44,1,0,0,0,1
 836547,Serginho,2026,EL,156,False,4,4,0,315,0,0,3,1,0
 836547,Serginho,2026,CLQ,156,False,8,8,0,703,1,3,3,0,1
@@ -1716,7 +1760,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 337799,Pedro Ferreira,2026,PO1,2423,False,11,9,0,805,0,0,5,0,2
 1292917,Djé,2026,POPO,2423,False,1,1,0,45,1,0,0,0,1
 1292917,Djé,2026,PO1,2423,False,11,10,0,749,1,1,10,1,2
-1292917,Djé,2026,AFCQ,4311,True,2,2,0,68,0,0,0,0,0
+1292917,Djé,2026,AFCQ,4311,True,3,3,0,144,1,0,3,1,0
 402825,Luquinhas,2026,POPU,7154,False,2,2,0,134,0,1,0,0,0
 402825,Luquinhas,2026,PL1,7154,False,14,14,0,1044,0,3,16,5,3
 570582,Darlan,2026,THFA,25449,False,1,0,0,0,0,0,0,0,0
@@ -1727,7 +1771,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 606719,Gustavo Klismahn,2026,AZ1,8031,False,11,11,0,616,4,0,0,0,3
 1070916,Tiago Queiroz,2026,PT3A,2995,False,9,5,0,147,0,0,0,0,0
 1070916,Tiago Queiroz,2026,POPO,2995,False,1,1,0,59,0,0,0,0,0
-1485121,Luiz Otávio,2026,PT23,110983,False,10,2,0,51,1,0,0,0,1
+1485121,Luiz Otávio,2026,PT23,110983,False,10,3,0,106,1,0,0,0,1
 1485121,Luiz Otávio,2026,CPSD,122445,False,1,1,0,63,0,0,0,0,0
 627224,Gabriel Silva,2026,UCOL,1075,False,3,2,0,101,0,0,6,1,0
 627224,Gabriel Silva,2026,POCP,1075,False,1,0,0,0,0,0,0,0,0
@@ -1745,7 +1789,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 687361,Welinton Torrão,2026,POPO,2423,False,1,1,0,32,0,0,0,0,0
 687361,Welinton Torrão,2026,PO1,2423,False,11,8,0,144,0,1,1,0,0
 1179089,Melvin Costa,2026,POPO,7789,False,2,1,0,90,1,0,0,0,0
-1179089,Melvin Costa,2026,PO2,7789,False,10,6,0,456,2,1,0,0,0
+1179089,Melvin Costa,2026,PO2,7789,False,11,6,0,456,2,1,0,0,0
 303385,Anthony Carter,2026,POPO,6912,False,2,0,0,0,0,0,0,0,0
 303385,Anthony Carter,2026,PO2,6912,False,10,7,0,394,2,0,0,0,2
 1127847,Adriel Moraes,2026,POPO,3349,False,1,0,0,0,0,0,0,0,0
@@ -1769,9 +1813,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 678991,Ulisses,2026,PO1,982,False,11,0,11,0,0,0,0,0,0
 305946,José Gomes,2026,POPO,982,False,1,0,0,0,0,0,0,0,0
 305946,José Gomes,2026,PO1,982,False,11,1,6,45,0,0,2,0,0
+371148,Lenny Vallier,2026,FRC,9202,False,1,1,0,11,0,0,0,0,0
 371148,Lenny Vallier,2026,FR2,9202,False,12,8,0,454,0,0,2,1,0
 340524,Ivanildo Fernandes,2026,POPO,982,False,1,1,0,90,0,0,0,0,0
 340524,Ivanildo Fernandes,2026,PO1,982,False,11,1,0,45,0,0,0,0,0
+340524,Ivanildo Fernandes,2026,AFCQ,4311,True,3,0,0,0,0,0,0,0,0
 1020652,Chico Gonçalves,2026,POPO,982,False,1,0,0,0,0,0,0,0,0
 1020652,Chico Gonçalves,2026,PO1,982,False,11,7,0,630,0,1,3,1,1
 815384,Matheus Dias,2026,POPO,982,False,1,1,0,45,0,0,0,0,0
@@ -1847,7 +1893,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 911487,Samba Koné,2026,ELQ,2481,False,4,4,0,263,0,0,0,0,0
 911487,Samba Koné,2026,ECLQ,2481,False,2,2,0,94,0,0,6,4,1
 818083,Rodrigo Guedes,2026,POPO,7789,False,2,1,0,28,0,0,0,0,0
-818083,Rodrigo Guedes,2026,PO2,7789,False,10,4,0,34,0,0,0,0,1
+818083,Rodrigo Guedes,2026,PO2,7789,False,11,5,0,34,0,0,0,0,2
 193319,Luís Silva,2026,POPO,7788,False,1,1,0,11,0,0,0,0,0
 193319,Luís Silva,2026,POCP,7788,False,1,0,0,0,0,0,0,0,0
 193319,Luís Silva,2026,PO1,7788,False,11,9,0,699,0,0,5,1,3
@@ -1862,10 +1908,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 808443,João Guilherme,2026,PO1,7788,False,11,11,0,915,3,0,20,5,1
 514240,Diogo Almeida,2026,AZ1,103512,False,11,11,0,858,3,0,0,0,0
 514240,Diogo Almeida,2026,ASPK,103512,False,1,1,0,90,0,0,0,0,0
+744932,Gautier Ott,2026,FRC,855,False,1,0,0,0,0,0,0,0,0
 744932,Gautier Ott,2026,FR5C,12748,False,2,2,0,113,0,0,0,0,0
 744932,Gautier Ott,2026,FR2,855,False,12,1,8,8,0,0,1,1,0
 1172592,Simão Silva,2026,POPO,7789,False,2,1,0,90,2,0,0,0,0
-1172592,Simão Silva,2026,PO2,7789,False,7,7,0,445,2,0,0,0,0
+1172592,Simão Silva,2026,PO2,7789,False,8,8,0,513,3,0,0,0,0
 1172592,Simão Silva,2026,PO1,7788,False,3,0,0,0,0,0,0,0,0
 1256478,Lorougnon Gohi,2026,POPO,7788,False,1,0,0,0,0,0,0,0,0
 1256478,Lorougnon Gohi,2026,POCP,7788,False,1,1,0,61,0,0,0,0,0
@@ -1874,7 +1921,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 466812,Nils Mortimer,2026,POCP,7788,False,1,1,0,29,0,0,1,0,0
 466812,Nils Mortimer,2026,PO1,7788,False,11,8,0,316,0,0,6,1,2
 344415,Dominik Steczyk,2026,PO1,7788,False,5,3,0,62,0,0,1,0,0
-689635,Eduvie Ikoba,2026,SER1,3521,False,15,1,13,13,0,0,0,0,0
+689635,Eduvie Ikoba,2026,SER1,3521,False,15,1,14,13,0,0,0,0,0
 891973,Rodrigo Pereira,2026,PT3A,4297,False,9,8,0,322,0,0,0,0,0
 891973,Rodrigo Pereira,2026,POPO,4297,False,2,2,0,139,0,0,0,0,0
 962060,Issoufi Maïga,2026,PT23,110988,False,11,0,0,0,0,0,0,0,0
@@ -1882,46 +1929,47 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 827991,Lucas Gabriel,2026,POPO,7056,False,3,0,0,0,0,0,0,0,0
 640821,Samu,2026,ISR1,5223,False,10,10,0,900,0,1,0,0,0
 947115,Xavi Grande,2026,POPO,2990,False,2,2,0,180,1,0,0,0,0
-947115,Xavi Grande,2026,PO2,2990,False,6,5,0,434,0,1,0,0,1
+947115,Xavi Grande,2026,PO2,2990,False,7,6,0,524,0,1,0,0,1
 947115,Xavi Grande,2026,ES1,3368,False,3,0,0,0,0,0,0,0,0
 416088,Romain Correia,2026,POPO,1301,False,1,1,0,45,0,0,0,0,1
 416088,Romain Correia,2026,POCP,1301,False,1,1,0,90,0,0,0,0,0
-416088,Romain Correia,2026,PO1,1301,False,11,10,0,900,1,0,8,1,0
+416088,Romain Correia,2026,PO1,1301,False,10,10,0,900,1,0,8,1,0
 292365,Paulo Henrique,2026,POPO,1301,False,1,1,0,90,0,0,0,0,1
 292365,Paulo Henrique,2026,POCP,1301,False,1,1,0,90,0,0,2,0,0
-292365,Paulo Henrique,2026,PO1,1301,False,11,10,0,900,1,0,11,3,0
+292365,Paulo Henrique,2026,PO1,1301,False,10,10,0,900,1,0,11,3,0
 796739,Júnior Almeida,2026,CLQ,63993,False,8,2,0,91,0,0,0,0,0
 796739,Júnior Almeida,2026,CL,63993,False,4,1,0,14,0,0,0,0,0
 796739,Júnior Almeida,2026,AZ1,63993,False,10,6,0,354,0,1,0,0,1
 223977,Igor Julião,2026,POPO,1301,False,1,1,0,90,0,0,0,0,0
 223977,Igor Julião,2026,POCP,1301,False,1,1,0,90,0,1,2,2,0
-223977,Igor Julião,2026,PO1,1301,False,11,10,0,888,0,0,4,3,4
+223977,Igor Julião,2026,PO1,1301,False,10,10,0,888,0,0,4,3,4
 456898,Vladan Danilović,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 456898,Vladan Danilović,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-456898,Vladan Danilović,2026,PO1,1301,False,11,7,0,513,0,0,4,1,1
+456898,Vladan Danilović,2026,PO1,1301,False,10,7,0,513,0,0,4,1,1
 696656,Rodri Andrade,2026,POPO,1301,False,1,1,0,90,0,0,0,0,1
 696656,Rodri Andrade,2026,POCP,1301,False,1,1,0,72,0,0,0,0,0
-696656,Rodri Andrade,2026,PO1,1301,False,11,10,0,751,0,0,4,2,3
+696656,Rodri Andrade,2026,PO1,1301,False,10,10,0,751,0,0,4,2,3
 670682,Marco Cruz,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 670682,Marco Cruz,2026,PO1,2420,False,11,0,0,0,0,0,0,0,0
 710292,Ibrahima Guirassy,2026,POPO,2639,False,2,1,0,90,0,0,0,0,0
 710292,Ibrahima Guirassy,2026,PO2,2639,False,10,10,0,891,0,0,0,0,3
 197880,Raphael Guzzo,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 197880,Raphael Guzzo,2026,POCP,1301,False,1,1,0,85,0,0,1,1,0
-197880,Raphael Guzzo,2026,PO1,1301,False,11,10,0,838,1,0,5,4,4
+197880,Raphael Guzzo,2026,PO1,1301,False,10,10,0,838,1,0,5,4,4
 1210902,Nélio Batista,2026,PT23,67837,False,11,9,0,438,2,0,0,0,2
 1210902,Nélio Batista,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 1210902,Nélio Batista,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-1210902,Nélio Batista,2026,PO1,1301,False,11,0,0,0,0,0,0,0,0
+1210902,Nélio Batista,2026,PO1,1301,False,10,0,0,0,0,0,0,0,0
+1210902,Nélio Batista,2026,FS,16371,True,1,1,0,26,0,0,0,0,0
 941883,Martín Tejón,2026,POPO,1301,False,1,1,0,90,0,0,0,0,1
 941883,Martín Tejón,2026,POCP,1301,False,1,1,0,31,0,0,1,1,0
-941883,Martín Tejón,2026,PO1,1301,False,11,10,0,836,1,1,27,7,0
+941883,Martín Tejón,2026,PO1,1301,False,10,10,0,836,1,1,27,7,0
 537375,Simo Bouzaidi,2026,POPO,1301,False,1,1,0,75,1,1,0,0,0
 537375,Simo Bouzaidi,2026,POCP,1301,False,1,1,0,85,0,0,1,0,0
-537375,Simo Bouzaidi,2026,PO1,1301,False,11,6,0,315,1,0,5,1,1
+537375,Simo Bouzaidi,2026,PO1,1301,False,10,6,0,315,1,0,5,1,1
 596884,Adrián Butzke,2026,POPO,1301,False,1,1,0,15,0,0,0,0,0
 596884,Adrián Butzke,2026,POCP,1301,False,1,1,0,31,1,0,2,1,0
-596884,Adrián Butzke,2026,PO1,1301,False,11,10,0,817,1,0,15,3,1
+596884,Adrián Butzke,2026,PO1,1301,False,10,10,0,817,1,0,15,3,1
 939765,José Melro,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 939765,José Melro,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
 939765,José Melro,2026,PO1,1301,False,11,0,0,0,0,0,0,0,0
@@ -1944,13 +1992,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 365394,In-beom Hwang,2026,POSU,720,False,1,1,0,17,0,0,1,1,0
 365394,In-beom Hwang,2026,POCP,720,False,1,1,0,90,0,0,1,1,0
 365394,In-beom Hwang,2026,PO1,720,False,11,9,0,339,1,1,3,1,3
-365394,In-beom Hwang,2026,FS,3589,True,4,2,0,125,0,0,1,1,1
+365394,In-beom Hwang,2026,FS,3589,True,5,3,0,215,0,0,3,2,1
 365394,In-beom Hwang,2026,CL,720,False,4,4,0,85,0,1,1,0,0
 552955,Santiago Gimenez,2026,POCP,720,False,1,1,0,90,1,0,4,2,0
 552955,Santiago Gimenez,2026,PO1,720,False,7,4,0,73,1,0,4,3,0
 552955,Santiago Gimenez,2026,IT1,5,False,2,0,2,0,0,0,0,0,0
 552955,Santiago Gimenez,2026,FS,6303,True,4,3,0,127,0,0,1,0,0
 552955,Santiago Gimenez,2026,FS,26092,True,2,0,0,0,0,0,0,0,0
+552955,Santiago Gimenez,2026,CNNF,6303,True,1,1,0,71,0,0,0,0,0
 552955,Santiago Gimenez,2026,CL,720,False,4,3,0,45,0,1,4,3,1
 942925,Luís Gomes,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 942925,Luís Gomes,2026,PO2,10331,False,10,9,0,644,0,0,0,0,3
@@ -1964,6 +2013,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1228661,Gabriel Mec,2026,PO1,720,False,7,1,2,12,0,0,0,0,0
 1228661,Gabriel Mec,2026,CL,720,False,4,0,1,0,0,0,0,0,0
 1228661,Gabriel Mec,2026,19YL,41588,False,1,1,0,45,0,0,0,0,0
+1182538,Duarte Cunha,2026,U19Q,16372,True,2,2,0,92,1,0,0,0,0
 1182538,Duarte Cunha,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 1182538,Duarte Cunha,2026,PO2,10331,False,10,10,0,524,1,0,0,0,2
 1182538,Duarte Cunha,2026,PO1,720,False,11,0,0,0,0,0,0,0,0
@@ -1972,7 +2022,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1182538,Duarte Cunha,2026,19YL,41588,False,4,4,0,232,1,0,0,0,0
 867137,Alessandro Circati,2026,POCP,294,False,1,1,0,90,0,0,1,0,0
 867137,Alessandro Circati,2026,PO1,294,False,9,5,0,203,0,0,2,0,1
-867137,Alessandro Circati,2026,FS,3433,True,2,2,0,180,1,1,4,1,0
+867137,Alessandro Circati,2026,FS,3433,True,3,3,0,245,1,1,5,2,0
 867137,Alessandro Circati,2026,ELQ,294,False,2,1,0,6,0,0,0,0,0
 867137,Alessandro Circati,2026,EL,294,False,4,4,0,280,0,0,4,0,0
 867137,Alessandro Circati,2026,CIT,130,False,1,1,0,90,0,0,0,0,0
@@ -1982,12 +2032,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 541134,Souffian El Karouani,2026,PO1,294,False,8,2,0,17,0,0,0,0,0
 541134,Souffian El Karouani,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
 541134,Souffian El Karouani,2026,EL,294,False,4,4,0,294,0,1,2,1,2
-541134,Souffian El Karouani,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
+541134,Souffian El Karouani,2026,AFCQ,3575,True,3,1,0,21,0,0,0,0,0
 182904,Clément Lenglet,2026,POCP,294,False,1,1,0,90,0,0,2,0,0
 182904,Clément Lenglet,2026,PO1,294,False,11,10,0,845,1,1,6,2,2
 182904,Clément Lenglet,2026,ELQ,294,False,6,6,0,472,1,1,5,2,0
 182904,Clément Lenglet,2026,EL,294,False,4,1,0,90,0,0,0,0,0
-1471256,Eduardo Ferreira,2026,U19Q,16372,True,3,3,0,107,1,0,0,0,1
+1471256,Eduardo Ferreira,2026,U19Q,16372,True,5,5,0,227,1,0,0,0,1
 1471256,Eduardo Ferreira,2026,POCP,720,False,1,0,0,0,0,0,0,0,0
 1471256,Eduardo Ferreira,2026,PO2,10331,False,10,9,0,548,2,1,0,0,1
 1471256,Eduardo Ferreira,2026,PO1,720,False,10,0,0,0,0,0,0,0,0
@@ -1999,7 +2049,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 994536,Claudio Echeverri,2026,GBCS,281,False,1,0,0,0,0,0,0,0,0
 994536,Claudio Echeverri,2026,GB1,281,False,2,0,0,0,0,0,0,0,0
 994536,Claudio Echeverri,2026,EL,294,False,4,3,0,157,0,0,8,2,0
-257455,João Palhinha,2026,UNLA,3300,True,4,3,0,166,0,0,1,0,1
+257455,João Palhinha,2026,UNLA,3300,True,5,4,0,192,0,0,3,0,2
 257455,João Palhinha,2026,POCP,294,False,1,1,0,72,0,0,1,0,1
 257455,João Palhinha,2026,PO1,294,False,9,9,0,713,0,0,14,2,2
 257455,João Palhinha,2026,ELQ,294,False,1,0,0,0,0,0,0,0,0
@@ -2023,7 +2073,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 466801,Sergi Altimira,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 466801,Sergi Altimira,2026,PO1,336,False,11,11,0,982,1,0,6,1,2
 466801,Sergi Altimira,2026,CL,336,False,4,4,0,360,0,0,1,1,1
-924349,Issa Doumbia,2026,UNLA,3376,True,4,4,0,137,0,0,4,2,0
+924349,Issa Doumbia,2026,UNLA,3376,True,6,6,0,199,0,0,6,2,0
 924349,Issa Doumbia,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 924349,Issa Doumbia,2026,PO1,336,False,11,11,0,848,0,2,12,0,1
 924349,Issa Doumbia,2026,CL,336,False,4,4,0,327,2,0,5,2,1
@@ -2031,6 +2081,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1263687,Moncef Zekri,2026,POCP,336,False,1,1,0,73,0,0,1,0,0
 1263687,Moncef Zekri,2026,PO2,10949,False,1,1,0,45,0,0,0,0,0
 1263687,Moncef Zekri,2026,PO1,336,False,8,0,0,0,0,0,0,0,0
+1263687,Moncef Zekri,2026,FS,37630,True,1,1,0,90,0,0,0,0,0
 1263687,Moncef Zekri,2026,CL,336,False,4,0,0,0,0,0,0,0,0
 1263687,Moncef Zekri,2026,BE1,354,False,3,1,0,90,0,0,0,0,0
 1263687,Moncef Zekri,2026,19YL,45510,False,2,2,0,154,0,1,0,0,0
@@ -2041,16 +2092,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 481688,Sotiris Alexandropoulos,2026,PO1,336,False,11,0,0,0,0,0,0,0,0
 481688,Sotiris Alexandropoulos,2026,CL,336,False,4,0,4,0,0,0,0,0,0
 1135611,Jesse Derry,2026,U19Q,21340,True,3,0,0,0,0,0,0,0,0
-1135611,Jesse Derry,2026,SU20,22907,True,3,3,0,157,1,2,2,1,0
+1135611,Jesse Derry,2026,SU20,22907,True,4,4,0,221,1,3,4,1,0
 1135611,Jesse Derry,2026,POCP,336,False,1,1,0,73,0,1,1,0,0
 1135611,Jesse Derry,2026,PO1,336,False,11,4,0,32,0,0,1,1,1
 1135611,Jesse Derry,2026,CL,336,False,4,2,0,28,0,0,3,1,0
 956920,Nestory Irankunda,2026,POCP,336,False,1,0,0,0,0,0,0,0,0
 956920,Nestory Irankunda,2026,PO1,336,False,9,9,0,414,0,1,11,4,1
-956920,Nestory Irankunda,2026,FS,3433,True,2,2,0,157,1,0,4,2,1
+956920,Nestory Irankunda,2026,FS,3433,True,3,3,0,222,2,0,6,4,1
 956920,Nestory Irankunda,2026,CL,336,False,4,2,0,152,0,2,3,0,0
 956920,Nestory Irankunda,2026,CGB,1010,False,1,0,0,0,0,0,0,0,0
-582987,Adrian Bajrami,2026,UNLB,3384,True,4,1,0,3,0,0,0,0,0
+582987,Adrian Bajrami,2026,UNLB,3384,True,5,1,0,3,0,0,0,0,0
 582987,Adrian Bajrami,2026,UCOL,1075,False,3,0,0,0,0,0,0,0,0
 582987,Adrian Bajrami,2026,POCP,1075,False,1,0,0,0,0,0,0,0,0
 582987,Adrian Bajrami,2026,PO1,1075,False,11,7,0,406,0,0,1,0,2
@@ -2069,10 +2120,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 678479,Denis Huseinbasic,2026,ECLQ,1075,False,6,5,0,244,0,1,3,2,0
 1333545,Diogo Lobo,2026,UCOL,1075,False,1,0,0,0,0,0,0,0,0
 1333545,Diogo Lobo,2026,PO1,1075,False,2,0,0,0,0,0,0,0,0
-1333545,Diogo Lobo,2026,CPSA,10789,False,8,7,0,512,0,0,0,0,2
+1333545,Diogo Lobo,2026,CPSA,10789,False,8,7,0,505,0,0,0,0,3
 943795,Jovan Milosevic,2026,UCOL,1075,False,3,2,0,76,0,0,1,0,0
 943795,Jovan Milosevic,2026,POCP,1075,False,1,0,0,0,0,0,0,0,0
 943795,Jovan Milosevic,2026,PO1,1075,False,10,6,0,240,0,0,13,4,0
+943795,Jovan Milosevic,2026,FS,9566,True,5,1,0,45,0,0,0,0,0
 943795,Jovan Milosevic,2026,ECLQ,1075,False,2,1,0,7,0,0,0,0,0
 391004,Jonas Wind,2026,UCOL,1075,False,3,2,0,88,0,0,2,0,0
 391004,Jonas Wind,2026,POCP,1075,False,1,1,0,17,0,0,1,0,0
@@ -2084,11 +2136,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 959049,João Trovisco,2026,PO1,1075,False,10,0,0,0,0,0,0,0,0
 959049,João Trovisco,2026,FS,31372,True,6,0,0,0,0,0,0,0,0
 959049,João Trovisco,2026,ECLQ,1075,False,2,0,0,0,0,0,0,0,0
-959049,João Trovisco,2026,CPSA,10789,False,8,5,0,273,0,0,0,0,0
+959049,João Trovisco,2026,CPSA,10789,False,8,6,0,301,0,0,0,0,0
 1436884,Flinto Costa,2026,UCOL,1075,False,1,1,0,1,0,0,0,0,0
 1436884,Flinto Costa,2026,POCP,1075,False,1,1,0,26,0,0,0,0,1
 1436884,Flinto Costa,2026,PO1,1075,False,2,1,0,15,0,0,0,0,0
 1436884,Flinto Costa,2026,CPSA,10789,False,8,6,0,505,1,0,0,0,2
+1436884,Flinto Costa,2026,AFCQ,3701,True,1,1,0,21,0,0,1,0,0
 705016,Finn van Breemen,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
 705016,Finn van Breemen,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
 705016,Finn van Breemen,2026,PO1,3329,False,11,9,0,765,1,0,4,1,3
@@ -2096,18 +2149,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 709999,Víctor Rofino,2026,POCP,3329,False,1,1,0,90,0,0,1,0,0
 709999,Víctor Rofino,2026,PO2,2639,False,4,2,0,180,0,0,0,0,1
 709999,Víctor Rofino,2026,PO1,3329,False,7,6,0,540,1,0,1,1,2
-709999,Víctor Rofino,2026,AFCQ,3701,True,2,2,0,180,0,0,0,0,0
-678843,Leny Meyer,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
-678843,Leny Meyer,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
-678843,Leny Meyer,2026,PO1,3329,False,11,4,0,91,0,0,1,0,1
+709999,Víctor Rofino,2026,AFCQ,3701,True,3,2,0,180,0,0,0,0,0
 1304150,Juvenal Correia,2026,PT23,75337,False,11,8,0,559,0,0,0,0,1
 1304150,Juvenal Correia,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
 1304150,Juvenal Correia,2026,PO1,3329,False,3,1,0,14,0,0,0,0,0
+678843,Leny Meyer,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
+678843,Leny Meyer,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
+678843,Leny Meyer,2026,PO1,3329,False,11,4,0,91,0,0,1,0,1
 1185887,Mathis Jangéal,2026,PT23,75337,False,6,3,0,191,0,0,0,0,0
 1185887,Mathis Jangéal,2026,POPO,3329,False,1,0,0,0,0,0,0,0,0
 1185887,Mathis Jangéal,2026,POCP,3329,False,1,0,0,0,0,0,0,0,0
 1185887,Mathis Jangéal,2026,PO1,3329,False,11,2,0,7,0,0,0,0,1
-933240,Tamás Szűcs,2026,UNLB,3468,True,4,4,0,100,0,0,1,0,1
+933240,Tamás Szűcs,2026,UNLB,3468,True,5,4,0,100,0,0,1,0,1
 933240,Tamás Szűcs,2026,POPO,3329,False,1,1,0,55,0,0,0,0,0
 933240,Tamás Szűcs,2026,POCP,3329,False,1,1,0,17,0,0,1,0,0
 933240,Tamás Szűcs,2026,PO1,3329,False,11,6,0,338,0,0,4,0,0
@@ -2123,19 +2176,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 808477,Ahmed Sidibé,2026,PO1,2420,False,11,5,0,403,0,0,2,1,0
 555074,Oliwier Zych,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 555074,Oliwier Zych,2026,PO1,2420,False,11,8,0,720,0,0,0,0,0
+555074,Oliwier Zych,2026,FS,9324,True,1,0,0,0,0,0,0,0,0
 1163638,Yeimar Mosquera,2026,POPO,2420,False,1,1,0,30,0,0,0,0,0
 1163638,Yeimar Mosquera,2026,PO1,2420,False,11,1,0,12,1,0,1,1,0
+1163638,Yeimar Mosquera,2026,FS,28266,True,2,0,0,0,0,0,0,0,0
 830265,Lohann Doucet,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 830265,Lohann Doucet,2026,PO1,2420,False,11,11,0,485,0,0,2,0,1
 830265,Lohann Doucet,2026,FS,5872,True,1,0,0,0,0,0,0,0,0
-830265,Lohann Doucet,2026,AFCQ,5872,True,2,2,0,180,0,0,4,1,0
+830265,Lohann Doucet,2026,AFCQ,5872,True,3,3,0,204,0,0,4,1,0
 1134256,Mohammed Kebdani,2026,PT3A,15136,False,9,0,0,0,0,0,0,0,0
 1134256,Mohammed Kebdani,2026,PO1,2420,False,3,0,0,0,0,0,0,0,0
 1134256,Mohammed Kebdani,2026,FS,34903,True,1,0,0,0,0,0,0,0,0
-1093061,Santi Verdi,2026,U19Q,16372,True,3,2,0,119,0,0,0,0,0
+1093061,Santi Verdi,2026,U19Q,16372,True,5,3,0,179,0,0,0,0,0
 1093061,Santi Verdi,2026,PT3A,15136,False,3,3,0,191,0,0,0,0,0
 1093061,Santi Verdi,2026,POPO,2420,False,1,1,0,45,0,0,0,0,1
 1093061,Santi Verdi,2026,PO1,2420,False,11,1,0,13,0,0,0,0,0
+1093061,Santi Verdi,2026,FS,16372,True,3,0,0,0,0,0,0,0,0
 268426,Arnel Jakupovic,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 268426,Arnel Jakupovic,2026,PO1,2420,False,7,7,0,491,2,0,20,6,1
 268426,Arnel Jakupovic,2026,KR1,327,False,5,4,0,114,2,0,8,4,1
@@ -2144,13 +2200,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 989508,Victor Andersson,2026,PO1,2420,False,9,3,0,56,0,0,1,0,0
 1099652,Patrick Ouotro,2026,POPO,2420,False,1,1,0,90,0,0,0,0,0
 1099652,Patrick Ouotro,2026,PO1,2420,False,11,5,0,36,0,0,3,1,0
+1099652,Patrick Ouotro,2026,FS,25249,True,1,0,0,0,0,0,0,0,0
 986180,Noah Raveyre,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
 986180,Noah Raveyre,2026,PO1,2521,False,11,0,0,0,0,0,0,0,0
 212216,Jhonatan,2026,POPO,2521,False,1,1,0,120,0,0,0,0,0
 212216,Jhonatan,2026,PO1,2521,False,11,0,0,0,0,0,0,0,0
 1135770,Yaya Bojang,2026,POPO,2521,False,1,1,0,120,0,0,0,0,0
 1135770,Yaya Bojang,2026,PO1,2521,False,11,10,0,777,0,0,3,1,4
-1135770,Yaya Bojang,2026,AFCQ,6186,True,2,2,0,135,0,1,1,0,1
+1135770,Yaya Bojang,2026,AFCQ,6186,True,3,3,0,225,0,1,1,0,1
 1344793,Toni Tamarit,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
 1344793,Toni Tamarit,2026,PO1,2521,False,11,1,0,90,0,0,0,0,0
 1336067,Óscar Torrellas,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
@@ -2158,6 +2215,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1336067,Óscar Torrellas,2026,CPSC,85471,False,8,8,0,663,0,0,0,0,2
 1044495,Mofe Jemide,2026,POPO,2521,False,1,1,0,25,0,0,0,0,0
 1044495,Mofe Jemide,2026,PO1,2521,False,9,1,0,10,0,0,0,0,0
+1457605,Rodrigo Catraio,2026,CPSC,85471,False,8,8,0,715,3,0,0,0,4
 796796,Ian Luccas,2026,POPO,2521,False,1,0,0,0,0,0,0,0,0
 796796,Ian Luccas,2026,PO1,2521,False,11,9,0,666,2,0,11,3,3
 225432,Zé Rafael,2026,POPO,2521,False,1,1,0,64,0,0,0,0,0
@@ -2175,10 +2233,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 891923,Dawda Camara,2026,POPO,2521,False,1,1,0,81,0,0,0,0,0
 891923,Dawda Camara,2026,PO1,2521,False,7,7,0,447,3,0,12,7,1
 891923,Dawda Camara,2026,ES2,12321,False,3,2,0,113,0,0,2,0,1
-891923,Dawda Camara,2026,AFCQ,14238,True,2,2,0,159,1,0,5,1,0
+891923,Dawda Camara,2026,AFCQ,14238,True,3,3,0,178,1,0,5,1,0
 1014243,Vivaldo Semedo,2026,POPO,2521,False,1,1,0,39,0,0,0,0,0
 1014243,Vivaldo Semedo,2026,PO1,2521,False,11,10,0,421,3,0,10,4,1
 628697,Marco Essimi,2026,PO1,2521,False,4,4,0,57,0,0,1,0,1
+628697,Marco Essimi,2026,FRC,11273,False,1,0,0,0,0,0,0,0,0
 628697,Marco Essimi,2026,FR5A,60456,False,1,1,0,90,0,0,0,0,0
 628697,Marco Essimi,2026,FR2,11273,False,8,4,0,97,1,1,3,2,0
 426624,André Vidigal,2026,POPO,2521,False,1,1,0,39,0,0,0,0,0
@@ -2186,7 +2245,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 426624,André Vidigal,2026,GBFL,2805,False,1,0,0,0,0,0,0,0,0
 426624,André Vidigal,2026,GB3,2805,False,1,0,0,0,0,0,0,0,0
 426624,André Vidigal,2026,CGB,2805,False,1,0,0,0,0,0,0,0,0
-1457605,Rodrigo Catraio,2026,CPSC,85471,False,8,8,0,715,3,0,0,0,4
 742034,Léo Linck,2026,POPO,2431,False,1,0,0,0,0,0,0,0,0
 742034,Léo Linck,2026,PO1,2431,False,11,11,0,990,0,0,0,0,0
 982393,Lucas Mincarelli,2026,POPO,2431,False,1,1,0,90,0,0,0,0,0
@@ -2205,7 +2263,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 971663,Jeremy Arévalo,2026,PO1,2431,False,8,0,8,0,0,0,0,0,0
 971663,Jeremy Arévalo,2026,L1,79,False,1,0,1,0,0,0,0,0,0
 971663,Jeremy Arévalo,2026,DFB,79,False,1,0,1,0,0,0,0,0,0
-1117939,Vuk Pavicevic,2026,U19Q,26101,True,3,1,0,90,0,2,0,0,0
+1117939,Vuk Pavicevic,2026,U19Q,26101,True,4,2,0,162,0,2,0,0,1
 1117939,Vuk Pavicevic,2026,PT23,101419,False,4,4,0,322,0,0,0,0,1
 1117939,Vuk Pavicevic,2026,POPO,2431,False,1,0,0,0,0,0,0,0,0
 1117939,Vuk Pavicevic,2026,PO1,2431,False,8,0,0,0,0,0,0,0,0
@@ -2226,52 +2284,53 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1296567,Fletcher Smythe-Lowe,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
 1296567,Fletcher Smythe-Lowe,2026,PO1,1465,False,6,0,0,0,0,0,0,0,0
 718195,Ismael Sierra,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-718195,Ismael Sierra,2026,PO1,1465,False,11,7,0,630,0,0,9,1,3
+718195,Ismael Sierra,2026,PO1,1465,False,10,7,0,630,0,0,9,1,3
 613964,Stelios Andreou,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-613964,Stelios Andreou,2026,PO1,1465,False,11,2,0,134,0,0,1,0,0
+613964,Stelios Andreou,2026,PO1,1465,False,10,2,0,134,0,0,1,0,0
 613964,Stelios Andreou,2026,PL1,88,False,2,0,0,0,0,0,0,0,0
 570721,Roko Jurisic,2026,POPO,1465,False,1,1,0,106,0,0,0,0,0
 570721,Roko Jurisic,2026,PO1,1465,False,7,4,0,344,0,0,1,0,0
 570721,Roko Jurisic,2026,KR1,327,False,5,5,0,406,0,1,2,0,0
 461619,Fernando Medrano,2026,POPO,1465,False,1,1,0,38,0,0,0,0,0
-461619,Fernando Medrano,2026,PO1,1465,False,11,6,0,438,0,1,3,0,1
+461619,Fernando Medrano,2026,PO1,1465,False,10,6,0,438,0,1,3,0,1
 569876,Xavi Sintes,2026,POPO,1465,False,1,1,0,120,0,0,0,0,0
-569876,Xavi Sintes,2026,PO1,1465,False,8,4,0,321,0,0,2,0,0
-1384113,Jordan Arnolin,2026,U19Q,16372,True,3,2,0,120,0,0,0,0,0
+569876,Xavi Sintes,2026,PO1,1465,False,7,4,0,321,0,0,2,0,0
+1384113,Jordan Arnolin,2026,U19Q,16372,True,5,3,0,210,0,0,0,0,0
 1384113,Jordan Arnolin,2026,PT23,68403,False,1,1,0,90,0,0,0,0,0
 1384113,Jordan Arnolin,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-1384113,Jordan Arnolin,2026,PO1,1465,False,11,5,0,179,0,0,4,2,2
+1384113,Jordan Arnolin,2026,PO1,1465,False,10,5,0,179,0,0,4,2,2
 1384113,Jordan Arnolin,2026,FS,16372,True,3,3,0,180,1,0,0,0,0
 1026524,Sam Amissah,2026,U19Q,21340,True,3,0,0,0,0,0,0,0,0
 1026524,Sam Amissah,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-1026524,Sam Amissah,2026,PO1,1465,False,8,3,0,143,0,0,0,0,0
+1026524,Sam Amissah,2026,PO1,1465,False,7,3,0,143,0,0,0,0,0
 1026524,Sam Amissah,2026,PLIC,9262,False,1,0,0,0,0,0,0,0,0
 1026524,Sam Amissah,2026,NLC,9262,False,1,0,0,0,0,0,0,0,0
 1026524,Sam Amissah,2026,GB21,9262,False,1,0,0,0,0,0,0,0,0
-371143,Milan Robin,2026,POPO,1465,False,1,1,0,60,0,0,0,0,1
-371143,Milan Robin,2026,PO1,1465,False,7,3,0,195,0,0,4,2,0
-371143,Milan Robin,2026,FR1,1164,False,2,1,0,9,0,0,0,0,0
 1127815,Kazim,2026,PT23,68403,False,11,9,0,718,0,1,0,0,1
 1127815,Kazim,2026,PO1,1465,False,1,0,0,0,0,0,0,0,0
+371143,Milan Robin,2026,POPO,1465,False,1,1,0,60,0,0,0,0,1
+371143,Milan Robin,2026,PO1,1465,False,6,3,0,195,0,0,4,2,0
+371143,Milan Robin,2026,FR1,1164,False,2,1,0,9,0,0,0,0,0
 924800,Axel Camblan,2026,POPO,1465,False,1,1,0,82,0,0,0,0,0
-924800,Axel Camblan,2026,PO1,1465,False,7,3,0,131,0,0,0,0,0
+924800,Axel Camblan,2026,PO1,1465,False,6,3,0,131,0,0,0,0,0
 924800,Axel Camblan,2026,FR1,3911,False,2,1,0,19,0,0,1,0,0
 797824,Nail Omerovic,2026,UNLB,3446,True,4,0,0,0,0,0,0,0,0
 797824,Nail Omerovic,2026,POPO,1465,False,1,1,0,120,0,0,0,0,0
-797824,Nail Omerovic,2026,PO1,1465,False,7,5,0,267,0,0,9,2,1
+797824,Nail Omerovic,2026,PO1,1465,False,6,5,0,267,0,0,9,2,1
 797824,Nail Omerovic,2026,KR1,327,False,5,5,0,390,5,0,25,12,0
 634430,Israel Salazar,2026,POPO,1465,False,1,0,1,0,0,0,0,0,0
 634430,Israel Salazar,2026,PO1,1465,False,11,0,11,0,0,0,0,0,0
 868073,Vítor Hugo,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 868073,Vítor Hugo,2026,PO2,8189,False,4,4,0,360,0,0,0,0,0
 868073,Vítor Hugo,2026,PO1,2425,False,7,3,0,270,0,0,0,0,0
-1460610,Rodrigo Real,2026,U19Q,16372,True,3,0,0,0,0,0,0,0,0
+1460610,Rodrigo Real,2026,U19Q,16372,True,5,0,0,0,0,0,0,0,0
 1460610,Rodrigo Real,2026,PT23,68110,False,11,9,0,729,0,0,0,0,1
 1460610,Rodrigo Real,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
-1460610,Rodrigo Real,2026,PO1,2425,False,6,0,0,0,0,0,0,0,0
+1460610,Rodrigo Real,2026,PO1,2425,False,7,0,0,0,0,0,0,0,0
 1460610,Rodrigo Real,2026,FS,16372,True,3,2,0,90,0,0,0,0,0
 1202035,Simón García,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 1202035,Simón García,2026,PO1,2425,False,7,3,0,194,0,0,1,0,1
+1202035,Simón García,2026,FS,28266,True,2,0,0,0,0,0,0,0,0
 1374960,Caike,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 1374960,Caike,2026,PO1,2425,False,11,2,0,25,0,0,0,0,0
 654099,Diogo Nascimento,2026,POPO,2425,False,1,1,0,45,0,0,0,0,0
@@ -2279,15 +2338,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 811430,Malik Sellouki,2026,POPO,2425,False,1,1,0,45,0,0,0,0,0
 811430,Malik Sellouki,2026,PO1,2425,False,8,7,0,228,0,0,5,2,0
 811430,Malik Sellouki,2026,FR2,1080,False,3,2,0,156,0,0,4,1,0
+1412007,Miguel Patricío,2026,SU20,16373,True,1,1,0,4,0,0,0,0,0
 1412007,Miguel Patricío,2026,POPO,2425,False,1,1,0,66,0,0,0,0,0
 1412007,Miguel Patricío,2026,PO1,2425,False,11,8,0,435,1,0,8,5,1
 1380099,Antoine Wenck,2026,POPO,2425,False,1,1,0,13,0,0,0,0,0
 1380099,Antoine Wenck,2026,PO1,2425,False,11,1,0,16,0,0,0,0,0
 1293525,Dai Baldé,2026,PT23,68110,False,11,11,0,855,0,0,0,0,2
 1293525,Dai Baldé,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
-1293525,Dai Baldé,2026,PO1,2425,False,9,0,0,0,0,0,0,0,0
+1293525,Dai Baldé,2026,PO1,2425,False,10,0,0,0,0,0,0,0,0
 1046726,Radek Siler,2026,SLO1,20063,False,6,6,0,460,3,0,14,4,2
-1046726,Radek Siler,2026,SKC,20063,False,1,0,0,0,0,0,0,0,0
+1046726,Radek Siler,2026,SKC,20063,False,1,1,0,29,0,0,0,0,0
 1046726,Radek Siler,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 1046726,Radek Siler,2026,PO1,2425,False,7,0,0,0,0,0,0,0,0
 805190,Sebastian Clemmensen,2026,SEC,801,False,1,0,0,0,0,0,0,0,0
@@ -2382,10 +2442,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1268194,Tiago Ferreira,2026,POPO,2424,False,1,0,0,0,0,0,0,0,0
 1268194,Tiago Ferreira,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
 1268194,Tiago Ferreira,2026,PO1,2424,False,11,0,0,0,0,0,0,0,0
+1268194,Tiago Ferreira,2026,FS,16371,True,1,0,0,0,0,0,0,0,0
 1098980,Manu Teixeira,2026,PT23,99764,False,11,10,0,882,0,2,0,0,3
 1098980,Manu Teixeira,2026,POPO,2424,False,1,0,0,0,0,0,0,0,0
 1098980,Manu Teixeira,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
-1098980,Manu Teixeira,2026,PO1,2424,False,6,0,0,0,0,0,0,0,0
+1098980,Manu Teixeira,2026,PO1,2424,False,7,0,0,0,0,0,0,0,0
 1595797,Malick Gning,2026,PT23,99764,False,11,6,0,508,0,0,0,0,0
 1595797,Malick Gning,2026,POCP,2424,False,1,0,0,0,0,0,0,0,0
 1595797,Malick Gning,2026,PO1,2424,False,1,0,0,0,0,0,0,0,0
@@ -2404,7 +2465,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1013713,Tomé Sousa,2026,PT23,91911,False,1,0,0,0,0,0,0,0,0
 1013713,Tomé Sousa,2026,PT23,110983,False,10,8,0,720,0,0,0,0,0
 1013713,Tomé Sousa,2026,PO1,2423,False,2,0,0,0,0,0,0,0,0
-1013713,Tomé Sousa,2026,CPSD,122445,False,5,0,0,0,0,0,0,0,0
+1013713,Tomé Sousa,2026,CPSD,122445,False,6,1,0,90,0,0,0,0,0
 927733,Emanuel Moreira,2026,POPO,2423,False,1,1,0,120,0,0,0,0,0
 927733,Emanuel Moreira,2026,PO1,2423,False,11,10,0,887,0,1,3,0,5
 980854,Ythallo,2026,PT23,110983,False,1,1,0,90,0,0,0,0,0
@@ -2423,15 +2484,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077990,Fredy,2026,PT23,110983,False,7,5,0,363,0,0,0,0,3
 1077990,Fredy,2026,POPO,2423,False,1,0,0,0,0,0,0,0,0
 1077990,Fredy,2026,PO1,2423,False,11,1,0,5,0,0,0,0,0
-1077990,Fredy,2026,CPSD,122445,False,4,3,0,246,2,0,0,0,2
+1077990,Fredy,2026,CPSD,122445,False,5,4,0,336,2,0,0,0,2
 1542314,Seydou Fofana,2026,PT23,110983,False,7,3,0,225,0,0,0,0,0
 1542314,Seydou Fofana,2026,POPO,2423,False,1,0,0,0,0,0,0,0,0
 1542314,Seydou Fofana,2026,PO1,2423,False,8,0,0,0,0,0,0,0,0
-1542314,Seydou Fofana,2026,CPSD,122445,False,7,4,0,360,0,0,0,0,1
+1542314,Seydou Fofana,2026,CPSD,122445,False,8,4,0,360,0,0,0,0,1
 959680,Kamika,2026,PT23,110983,False,7,4,0,315,0,0,0,0,0
 959680,Kamika,2026,POPO,2423,False,1,0,0,0,0,0,0,0,0
 959680,Kamika,2026,PO1,2423,False,11,1,0,88,0,0,0,0,1
-959680,Kamika,2026,CPSD,122445,False,7,4,0,291,0,0,0,0,2
+959680,Kamika,2026,CPSD,122445,False,8,4,0,291,0,0,0,0,2
 1219125,Sorriso,2026,PT23,110983,False,1,1,0,84,0,0,0,0,0
 1219125,Sorriso,2026,POPO,2423,False,1,0,0,0,0,0,0,0,0
 1219125,Sorriso,2026,PO1,2423,False,11,8,1,305,0,2,9,2,3
@@ -2463,7 +2524,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 581977,Min-kyu Song,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
 581977,Min-kyu Song,2026,POPO,982,False,1,1,0,90,0,0,0,0,0
 581977,Min-kyu Song,2026,PO1,982,False,8,6,0,398,0,1,5,2,0
-581977,Min-kyu Song,2026,FS,3589,True,4,2,0,120,0,1,0,0,0
+581977,Min-kyu Song,2026,FS,3589,True,5,2,0,120,0,1,0,0,0
 1050373,Allen Obando,2026,POPO,982,False,1,1,0,23,0,0,0,0,0
 1050373,Allen Obando,2026,PO1,982,False,10,7,0,191,0,0,5,2,0
 1236397,Njoya Abdel,2026,POPO,982,False,1,1,0,67,0,0,0,0,0
@@ -2488,7 +2549,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 775403,Hugo Gambor,2026,PO1,7788,False,7,1,0,26,0,0,0,0,0
 775403,Hugo Gambor,2026,ECLQ,157,False,6,0,6,0,0,0,0,0,0
 775403,Hugo Gambor,2026,BE1,157,False,4,0,0,0,0,0,0,0,0
-775403,Hugo Gambor,2026,AFCQ,12933,True,2,2,0,180,0,0,0,0,0
+775403,Hugo Gambor,2026,AFCQ,12933,True,3,3,0,264,0,0,0,0,1
 713649,Miguel Ángel Brau,2026,POPO,7788,False,1,0,0,0,0,0,0,0,0
 713649,Miguel Ángel Brau,2026,POCP,7788,False,1,0,0,0,0,0,0,0,0
 713649,Miguel Ángel Brau,2026,PO1,7788,False,8,6,0,421,0,0,0,0,0
@@ -2521,7 +2582,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 842718,Paulinho,2026,PL1,30974,False,3,3,0,48,0,0,0,0,0
 551182,Fran Vieites,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 551182,Fran Vieites,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-551182,Fran Vieites,2026,PO1,1301,False,10,4,0,360,0,0,0,0,1
+551182,Fran Vieites,2026,PO1,1301,False,9,4,0,360,0,0,0,0,1
 551182,Fran Vieites,2026,CGB,1003,False,1,0,0,0,0,0,0,0,0
 540182,Gonçalo Tabuaço,2026,POPO,1301,False,1,1,0,90,0,0,0,0,0
 540182,Gonçalo Tabuaço,2026,POCP,1301,False,1,1,0,90,0,0,0,0,0
@@ -2531,44 +2592,44 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 698454,Pedro Teixeira,2026,CPSB,5753,False,4,0,0,0,0,0,0,0,0
 744074,Rafael Fernandes,2026,POPO,1301,False,1,1,0,45,0,0,0,0,1
 744074,Rafael Fernandes,2026,POCP,1301,False,1,1,0,90,0,0,0,0,1
-744074,Rafael Fernandes,2026,PO1,1301,False,11,7,0,627,0,0,2,0,0
+744074,Rafael Fernandes,2026,PO1,1301,False,10,7,0,627,0,0,2,0,0
 830057,Gábor Szalai,2026,POPO,1301,False,1,1,0,90,0,0,0,0,0
 830057,Gábor Szalai,2026,POCP,1301,False,1,1,0,90,0,0,1,0,0
-830057,Gábor Szalai,2026,PO1,1301,False,11,6,0,347,1,0,4,2,1
+830057,Gábor Szalai,2026,PO1,1301,False,10,6,0,347,1,0,4,2,1
 830057,Gábor Szalai,2026,ELQ,279,False,3,0,0,0,0,0,0,0,0
 433168,Nathanael Ogbeta,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 433168,Nathanael Ogbeta,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-433168,Nathanael Ogbeta,2026,PO1,1301,False,11,0,0,0,0,0,0,0,0
+433168,Nathanael Ogbeta,2026,PO1,1301,False,10,0,0,0,0,0,0,0,0
 550549,Tomás Tavares,2026,POPO,1301,False,1,1,0,5,0,0,0,0,0
 550549,Tomás Tavares,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-550549,Tomás Tavares,2026,PO1,1301,False,11,4,0,124,0,0,0,0,2
+550549,Tomás Tavares,2026,PO1,1301,False,10,4,0,124,0,0,0,0,2
 1367276,Ibrahim Alani,2026,POPO,1301,False,1,1,0,26,0,0,0,0,0
 1367276,Ibrahim Alani,2026,POCP,1301,False,1,1,0,18,0,0,0,0,0
-1367276,Ibrahim Alani,2026,PO1,1301,False,10,4,0,146,0,0,1,0,0
+1367276,Ibrahim Alani,2026,PO1,1301,False,9,4,0,146,0,0,1,0,0
 207561,Maxime Dominguez,2026,POPO,1301,False,1,1,0,85,0,0,0,0,1
 207561,Maxime Dominguez,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-207561,Maxime Dominguez,2026,PO1,1301,False,11,6,0,249,0,1,2,1,1
+207561,Maxime Dominguez,2026,PO1,1301,False,10,6,0,249,0,1,2,1,1
 1129892,Israel Isaac Ayuma,2026,POPO,1301,False,1,1,0,64,0,1,0,0,0
 1129892,Israel Isaac Ayuma,2026,POCP,1301,False,1,1,0,5,0,0,1,1,0
-1129892,Israel Isaac Ayuma,2026,PO1,1301,False,11,6,0,122,1,0,2,1,1
+1129892,Israel Isaac Ayuma,2026,PO1,1301,False,10,6,0,122,1,0,2,1,1
 1129892,Israel Isaac Ayuma,2026,KR1,999,False,1,0,0,0,0,0,0,0,0
 502288,Bryan Limbombe,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 502288,Bryan Limbombe,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-502288,Bryan Limbombe,2026,PO1,1301,False,11,4,0,188,0,0,0,0,0
+502288,Bryan Limbombe,2026,PO1,1301,False,10,4,0,188,0,0,0,0,0
 1100298,Francisco Silva,2026,PT23,67837,False,11,11,0,723,0,1,0,0,1
 1100298,Francisco Silva,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 1100298,Francisco Silva,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
 1100298,Francisco Silva,2026,PO1,1301,False,11,0,0,0,0,0,0,0,0
 684318,Samuel Bamba,2026,POPO,1301,False,1,0,0,0,0,0,0,0,0
 684318,Samuel Bamba,2026,POCP,1301,False,1,1,0,5,0,0,0,0,0
-684318,Samuel Bamba,2026,PO1,1301,False,11,8,0,129,0,0,3,1,0
+684318,Samuel Bamba,2026,PO1,1301,False,10,8,0,129,0,0,3,1,0
 805595,Maurice Boakye,2026,POPO,1301,False,1,1,0,75,1,0,0,0,0
 805595,Maurice Boakye,2026,POCP,1301,False,1,1,0,59,0,0,1,0,0
-805595,Maurice Boakye,2026,PO1,1301,False,11,10,0,122,1,2,4,2,0
+805595,Maurice Boakye,2026,PO1,1301,False,10,10,0,122,1,2,4,2,0
 391377,Mons Bassouamina,2026,ZYP1,45457,False,1,0,0,0,0,0,0,0,0
 391377,Mons Bassouamina,2026,POPO,1301,False,1,1,0,15,0,0,0,0,0
 391377,Mons Bassouamina,2026,POCP,1301,False,1,1,0,59,0,0,0,0,0
-391377,Mons Bassouamina,2026,PO1,1301,False,7,5,0,109,0,0,5,1,0
+391377,Mons Bassouamina,2026,PO1,1301,False,6,5,0,109,0,0,5,1,0
 391377,Mons Bassouamina,2026,ELQ,45457,False,4,0,0,0,0,0,0,0,0
 391377,Mons Bassouamina,2026,ECLQ,45457,False,2,0,0,0,0,0,0,0,0
-391377,Mons Bassouamina,2026,AFCQ,3702,True,2,2,0,67,0,0,3,1,0
+391377,Mons Bassouamina,2026,AFCQ,3702,True,3,3,0,112,0,0,4,2,0

@@ -1,12 +1,12 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
 617009,Alex Paulsen,2026,SCP,987,False,1,0,0,0,0,0,0,0,0
 617009,Alex Paulsen,2026,SC1,987,False,13,13,0,1170,0,0,0,0,0
-617009,Alex Paulsen,2026,FS,9171,True,4,3,0,270,0,0,0,0,0
+617009,Alex Paulsen,2026,FS,9171,True,6,5,0,450,0,0,0,0,0
 617009,Alex Paulsen,2026,ECLQ,987,False,6,6,0,540,0,0,0,0,0
 727119,Szymon Weirauch,2026,POPU,4000,False,2,1,0,90,0,0,0,0,0
 727119,Szymon Weirauch,2026,PL2,4000,False,14,6,0,540,0,0,0,0,0
 1063079,Kacper Gutowski,2026,POPU,4000,False,1,0,0,0,0,0,0,0,0
-1063079,Kacper Gutowski,2026,PL32,55718,False,9,8,0,720,0,1,0,0,2
+1063079,Kacper Gutowski,2026,PL32,55718,False,10,8,0,720,0,1,0,0,2
 1063079,Kacper Gutowski,2026,PL2,4000,False,7,0,0,0,0,0,0,0,0
 1459287,Michał Kaczorowski,2026,PL2,4000,False,2,0,0,0,0,0,0,0,0
 726014,Maksym Dyachuk,2026,TSP,377,False,3,1,2,90,0,0,0,0,0
@@ -27,7 +27,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1061721,Indrit Mavraj,2026,PL2,4000,False,14,2,10,180,0,1,0,0,0
 1061721,Indrit Mavraj,2026,FS,56252,True,3,0,3,0,0,0,0,0,0
 618404,Bartosz Brzęk,2026,POPU,26564,False,3,3,0,237,0,0,0,0,0
-618404,Bartosz Brzęk,2026,PL2L,26564,False,15,14,0,1071,0,0,0,0,0
+618404,Bartosz Brzęk,2026,PL2L,26564,False,16,15,0,1161,0,0,0,0,0
 417229,Ivan Zhelizko,2026,POPU,4000,False,1,0,0,0,0,0,0,0,0
 417229,Ivan Zhelizko,2026,PL2,4000,False,7,2,0,180,0,0,0,0,0
 417229,Ivan Zhelizko,2026,BULP,31614,False,1,1,0,75,0,2,0,0,0
@@ -44,7 +44,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 717390,Anton Tsarenko,2026,ofb,2157,False,2,2,0,210,0,1,0,0,0
 717390,Anton Tsarenko,2026,ELQ,338,False,1,0,0,0,0,0,0,0,0
 717390,Anton Tsarenko,2026,A2,2157,False,12,11,1,925,2,2,1,0,0
-510103,Tomas Bobcek,2026,UNLC,3503,True,4,1,0,24,0,0,0,0,0
+510103,Tomas Bobcek,2026,UNLC,3503,True,5,2,0,25,0,0,0,0,0
 510103,Tomas Bobcek,2026,PL2,4000,False,5,0,0,0,0,0,0,0,0
 510103,Tomas Bobcek,2026,IT1,8970,False,10,3,0,65,0,0,4,1,0
 510103,Tomas Bobcek,2026,CIT,8970,False,1,1,0,27,0,0,2,1,0
@@ -54,6 +54,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 653596,Camilo Mena,2026,POPU,4000,False,1,0,0,0,0,0,0,0,0
 653596,Camilo Mena,2026,PL2,4000,False,7,6,0,495,1,4,0,0,0
 653596,Camilo Mena,2026,PL1,6110,False,8,8,0,564,3,1,15,4,0
+653596,Camilo Mena,2026,FS,3816,True,1,0,0,0,0,0,0,0,0
 452218,Aleksandar Cirkovic,2026,UNG1,279,False,4,0,0,0,0,0,0,0,0
 452218,Aleksandar Cirkovic,2026,POPU,2300,False,1,1,0,90,0,1,0,0,1
 452218,Aleksandar Cirkovic,2026,PL1,2300,False,9,5,0,128,0,0,2,0,0
@@ -82,16 +83,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 384524,Serafin Szota,2026,POPU,6107,False,2,1,0,90,0,0,0,0,0
 384524,Serafin Szota,2026,PL2,6107,False,14,11,1,955,1,1,0,0,4
 518073,Julien Célestine,2026,RKPO,19684,False,2,1,0,74,0,0,0,0,0
-531824,Kike Hermoso,2026,E3G1,11000,False,10,7,0,458,0,0,4,1,2
+531824,Kike Hermoso,2026,E3G1,11000,False,11,8,0,548,0,0,5,2,2
 278690,Michał Marcjanik,2026,POPU,2745,False,2,0,1,0,0,0,0,0,0
 278690,Michał Marcjanik,2026,PL2,2745,False,14,9,5,810,1,0,0,0,1
 330210,Dawid Gojny,2026,POPU,6107,False,2,1,0,90,0,0,0,0,0
 330210,Dawid Gojny,2026,PL2,6107,False,14,14,0,1240,0,3,0,0,2
 496606,Dominick Zator,2026,RO1,4959,False,8,6,0,398,1,0,6,2,0
 286330,Przemysław Stolc,2026,POPU,26564,False,3,2,0,135,0,0,0,0,0
-286330,Przemysław Stolc,2026,PL2L,26564,False,15,10,0,804,0,0,0,0,0
+286330,Przemysław Stolc,2026,PL2L,26564,False,16,11,0,894,0,0,0,0,0
 929467,Kamil Jakubczyk,2026,POPU,6110,False,2,2,0,180,0,0,0,0,0
 929467,Kamil Jakubczyk,2026,PL1,6110,False,14,14,0,1102,0,1,11,4,3
+1292977,Oskar Kubiak,2026,UNLB,3442,True,1,1,0,90,0,0,0,0,0
 1292977,Oskar Kubiak,2026,TSP,62,False,2,2,0,103,0,1,0,0,0
 1292977,Oskar Kubiak,2026,TS1,62,False,14,6,5,366,0,1,10,3,1
 1292977,Oskar Kubiak,2026,CL,62,False,4,4,0,256,0,0,6,3,1
@@ -116,29 +118,30 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 237356,Michał Rzuchowski,2026,POPU,6107,False,2,1,0,29,0,0,0,0,0
 237356,Michał Rzuchowski,2026,PL2,6107,False,14,2,0,35,0,0,0,0,0
 168427,Dawid Abramowicz,2026,POPU,26564,False,3,2,0,119,0,0,0,0,1
-168427,Dawid Abramowicz,2026,PL2L,26564,False,15,14,1,1260,2,5,0,0,6
+168427,Dawid Abramowicz,2026,PL2L,26564,False,16,15,1,1350,2,5,0,0,6
 628624,Adam Ratajczyk,2026,POPU,9109,False,2,1,0,74,0,0,0,0,0
 628624,Adam Ratajczyk,2026,PL31,14073,False,6,5,0,330,2,2,0,0,0
-628624,Adam Ratajczyk,2026,PL2L,9109,False,9,6,0,470,2,4,0,0,1
+628624,Adam Ratajczyk,2026,PL2L,9109,False,10,6,0,470,2,4,0,0,1
 366729,Nazariy Rusyn,2026,UKRP,85465,False,3,3,0,206,0,1,0,0,1
 366729,Nazariy Rusyn,2026,UKR1,85465,False,12,10,1,758,3,1,0,0,3
 929450,Marcel Predenkiewicz,2026,POPU,6560,False,1,1,0,90,0,0,0,0,0
-929450,Marcel Predenkiewicz,2026,PL33,6560,False,16,15,0,772,0,2,0,0,1
-192710,Vladislavs Gutkovskis,2026,UNLC,3555,True,4,4,0,250,0,1,8,0,1
+929450,Marcel Predenkiewicz,2026,PL33,6560,False,17,16,0,801,1,2,0,0,1
+192710,Vladislavs Gutkovskis,2026,UNLC,3555,True,6,6,0,351,0,1,13,4,1
 192710,Vladislavs Gutkovskis,2026,POPU,6107,False,2,1,0,90,0,1,0,0,0
 192710,Vladislavs Gutkovskis,2026,PL2,6107,False,14,14,0,1091,8,1,0,0,0
-565523,Edu Espiau,2026,E3G2,142,False,11,8,0,401,3,2,15,8,0
+565523,Edu Espiau,2026,E3G2,142,False,12,8,0,401,3,2,15,8,0
 565523,Edu Espiau,2026,CDR,142,False,1,0,0,0,0,0,0,0,0
-828338,Diego Percan,2026,ES2,993,False,13,13,0,842,6,1,34,12,3
+828338,Diego Percan,2026,ES2,993,False,14,14,0,920,6,3,37,12,3
 828338,Diego Percan,2026,CDR,993,False,1,0,0,0,0,0,0,0,0
 164489,Szymon Sobczak,2026,POPU,50162,False,3,3,0,179,0,0,0,0,0
-164489,Szymon Sobczak,2026,PL2L,50162,False,15,15,0,685,4,0,0,0,3
+164489,Szymon Sobczak,2026,PL2L,50162,False,16,16,0,764,4,0,0,0,3
 366213,Miłosz Mleczko,2026,POPU,5699,False,2,1,0,90,0,0,0,0,0
 366213,Miłosz Mleczko,2026,PL2,5699,False,14,4,0,360,0,0,0,0,0
 299561,Adrian Chovan,2026,POPU,15906,False,2,0,0,0,0,0,0,0,0
 299561,Adrian Chovan,2026,PL2,15906,False,14,14,0,1260,0,1,0,0,2
-1300440,Maciej Janicki,2026,PL34,9101,False,16,14,0,1174,0,0,0,0,2
+1300440,Maciej Janicki,2026,PL34,9101,False,17,15,0,1264,0,0,0,0,2
 751104,Miłosz Matysik,2026,ZYP1,10586,False,9,8,0,655,2,0,0,0,3
+751104,Miłosz Matysik,2026,FS,9324,True,1,1,0,90,0,0,0,0,0
 751104,Miłosz Matysik,2026,CPO1,10586,False,1,0,0,0,0,0,0,0,0
 441098,Lucas Masoero,2026,POPU,15906,False,2,2,0,180,0,0,0,0,0
 441098,Lucas Masoero,2026,PL2,15906,False,14,14,0,1163,0,0,0,0,0
@@ -191,39 +194,40 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 435587,Jonatan Braut Brunes,2026,CLQ,197,False,2,2,0,148,0,0,2,0,0
 965106,Kamil Soberka,2026,POPU,8641,False,1,0,0,0,0,0,0,0,0
 965106,Kamil Soberka,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
-965106,Kamil Soberka,2026,PL2L,8641,False,15,2,0,116,0,0,0,0,0
+965106,Kamil Soberka,2026,PL2L,8641,False,16,2,0,116,0,0,0,0,0
 965106,Kamil Soberka,2026,CLQ,428,False,1,0,0,0,0,0,0,0,0
+1177261,Antoni Bałabuch,2026,POPU,428,False,1,0,0,0,0,0,0,0,0
 1177261,Antoni Bałabuch,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
-1177261,Antoni Bałabuch,2026,PL1,428,False,6,0,0,0,0,0,0,0,0
+1177261,Antoni Bałabuch,2026,PL1,428,False,14,0,0,0,0,0,0,0,0
 1177261,Antoni Bałabuch,2026,ELQ,428,False,2,0,0,0,0,0,0,0,0
 1177261,Antoni Bałabuch,2026,ECLQ,428,False,2,0,0,0,0,0,0,0,0
 1177261,Antoni Bałabuch,2026,CLQ,428,False,2,0,0,0,0,0,0,0,0
 1111833,Gédéon Nongo,2026,POPU,8641,False,1,1,0,34,0,0,0,0,0
 1111833,Gédéon Nongo,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
-1111833,Gédéon Nongo,2026,PL2L,8641,False,15,11,0,730,0,0,0,0,2
+1111833,Gédéon Nongo,2026,PL2L,8641,False,16,11,0,730,0,0,0,0,2
 1111833,Gédéon Nongo,2026,CLQ,428,False,1,0,0,0,0,0,0,0,0
 553757,Aleksander Buksa,2026,POPU,9510,False,2,1,0,30,2,0,0,0,0
 553757,Aleksander Buksa,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
 553757,Aleksander Buksa,2026,PL2,9510,False,14,7,0,373,3,0,0,0,1
-1070002,Michał Niedbała,2026,PL34,60584,False,16,11,0,990,0,0,0,0,1
+1070002,Michał Niedbała,2026,PL34,60584,False,17,11,0,990,0,0,0,0,1
 1070002,Michał Niedbała,2026,PL1,6110,False,1,0,0,0,0,0,0,0,0
 911500,Adam Chojecki,2026,POPU,10704,False,2,2,0,180,0,0,0,0,0
 911500,Adam Chojecki,2026,PL2L,10704,False,14,12,0,556,0,0,0,0,2
 1165326,Adam Hańćko,2026,POPU,6110,False,2,0,0,0,0,0,0,0,0
 1165326,Adam Hańćko,2026,POPU,10134,False,1,1,0,90,0,0,0,0,0
 1165326,Adam Hańćko,2026,PLZJ,15520,False,1,1,0,90,0,0,0,0,0
-1165326,Adam Hańćko,2026,PL34,10134,False,16,16,0,928,2,2,0,0,0
+1165326,Adam Hańćko,2026,PL34,10134,False,17,17,0,1018,2,2,0,0,0
 1165326,Adam Hańćko,2026,PL1,6110,False,14,0,0,0,0,0,0,0,0
 1046338,Mateusz Głowiński,2026,POPU,9109,False,3,2,0,137,0,0,0,0,1
-1046338,Mateusz Głowiński,2026,PL2L,9109,False,15,7,0,137,1,0,0,0,0
-1149465,Rafał Jakubowski,2026,PL34,31004,False,16,12,1,1080,1,0,0,0,5
+1046338,Mateusz Głowiński,2026,PL2L,9109,False,16,8,0,208,1,0,0,0,0
+1149465,Rafał Jakubowski,2026,PL34,31004,False,17,13,1,1082,1,0,0,0,5
 1149465,Rafał Jakubowski,2026,PL1,324,False,1,0,0,0,0,0,0,0,0
-1112174,Oskar Jez,2026,PL34,9486,False,16,16,0,1440,0,0,0,0,2
+1112174,Oskar Jez,2026,PL34,9486,False,17,16,0,1440,0,0,0,0,2
 1255660,Łukasz Trepka,2026,POPU,4896,False,3,2,0,103,0,0,0,0,0
 1255660,Łukasz Trepka,2026,PL2,4896,False,14,7,0,611,0,1,0,0,1
 1255660,Łukasz Trepka,2026,ECLQ,6456,False,1,0,0,0,0,0,0,0,0
 1294282,Oskar Dari,2026,POPU,10367,False,3,3,0,89,0,1,0,0,0
-1294282,Oskar Dari,2026,PL2L,10367,False,15,11,0,257,1,0,0,0,2
+1294282,Oskar Dari,2026,PL2L,10367,False,16,12,0,286,1,0,0,0,3
 581113,Bryan Fiabema,2026,U19Q,22515,True,3,0,0,0,0,0,0,0,0
 581113,Bryan Fiabema,2026,PLSC,238,False,1,0,0,0,0,0,0,0,0
 581113,Bryan Fiabema,2026,PL1,238,False,3,0,0,0,0,0,0,0,0
@@ -231,25 +235,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 581113,Bryan Fiabema,2026,ELQ,238,False,3,0,0,0,0,0,0,0,0
 581113,Bryan Fiabema,2026,CLQ,238,False,2,0,0,0,0,0,0,0,0
 916875,Szymon Rygiel,2026,POPU,22568,False,3,3,0,270,0,0,0,0,1
-916875,Szymon Rygiel,2026,PL2L,22568,False,15,15,0,1249,2,0,0,0,3
+916875,Szymon Rygiel,2026,PL2L,22568,False,16,16,0,1339,2,0,0,0,3
 864041,Natan Dziegielewski,2026,POPU,6107,False,2,1,0,61,0,0,0,0,0
 864041,Natan Dziegielewski,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
 864041,Natan Dziegielewski,2026,PL2,6107,False,12,8,0,315,0,0,0,0,0
 864041,Natan Dziegielewski,2026,PL1,428,False,1,0,0,0,0,0,0,0,0
 864041,Natan Dziegielewski,2026,CLQ,428,False,2,0,0,0,0,0,0,0,0
-1260503,Konrad Golonka,2026,PL34,9101,False,16,3,0,266,0,0,0,0,0
+1260503,Konrad Golonka,2026,PL34,9101,False,17,3,0,266,0,0,0,0,0
 1260503,Konrad Golonka,2026,PL1,5689,False,1,0,0,0,0,0,0,0,0
 723613,Miłosz Strzeboński,2026,POPU,6110,False,2,0,0,0,0,0,0,0,0
 723613,Miłosz Strzeboński,2026,POPU,10134,False,1,0,0,0,0,0,0,0,0
-723613,Miłosz Strzeboński,2026,PL34,10134,False,11,6,0,231,1,0,0,0,1
+723613,Miłosz Strzeboński,2026,PL34,10134,False,17,6,0,231,1,0,0,0,1
 723613,Miłosz Strzeboński,2026,PL1,6110,False,14,0,0,0,0,0,0,0,0
 683545,Wojciech Kamiński,2026,POPU,6110,False,1,0,0,0,0,0,0,0,0
 683545,Wojciech Kamiński,2026,PL1,6110,False,6,0,0,0,0,0,0,0,0
-1218115,Oumar Conté,2026,PL34,6354,False,16,13,1,645,4,0,0,0,6
+1218115,Oumar Conté,2026,PL34,6354,False,17,13,1,645,4,0,0,0,6
 991455,Filip Rejczyk,2026,PL2,7146,False,7,4,0,155,0,0,0,0,1
 991455,Filip Rejczyk,2026,PL1,6456,False,6,0,0,0,0,0,0,0,0
 991455,Filip Rejczyk,2026,ECLQ,6456,False,4,0,0,0,0,0,0,0,0
-128804,Adrian Błąd,2026,PL1,6456,False,11,0,0,0,0,0,0,0,0
+128804,Adrian Błąd,2026,POPU,6456,False,1,0,0,0,0,0,0,0,0
+128804,Adrian Błąd,2026,PL1,6456,False,14,0,0,0,0,0,0,0,0
 128804,Adrian Błąd,2026,ECLQ,6456,False,4,0,0,0,0,0,0,0,0
 553217,Jacky Donkor,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
 553217,Jacky Donkor,2026,PL1,30974,False,14,0,0,0,0,0,0,0,0
@@ -264,7 +269,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 335294,Damian Warchoł,2026,PL1,759,False,14,0,0,0,0,0,0,0,0
 208168,Miłosz Kozak,2026,PL1,759,False,3,0,0,0,0,0,0,0,0
 613964,Stelios Andreou,2026,POPO,1465,False,1,0,0,0,0,0,0,0,0
-613964,Stelios Andreou,2026,PO1,1465,False,11,2,0,134,0,0,1,0,0
+613964,Stelios Andreou,2026,PO1,1465,False,10,2,0,134,0,0,1,0,0
 613964,Stelios Andreou,2026,PL1,88,False,2,0,0,0,0,0,0,0,0
 1150073,Jesús Díaz,2026,PL1,9644,False,2,0,0,0,0,0,0,0,0
 1150073,Jesús Díaz,2026,ECLQ,9644,False,3,0,0,0,0,0,0,0,0
@@ -278,7 +283,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1036423,Wiktor Staszak,2026,POPU,8377,False,2,2,0,97,0,0,0,0,0
 1036423,Wiktor Staszak,2026,PL2,8377,False,12,10,1,435,0,0,0,0,2
 1036423,Wiktor Staszak,2026,PL1,422,False,2,0,0,0,0,0,0,0,0
-925779,Piotr Urbański,2026,PL33,68461,False,3,2,0,88,0,0,0,0,0
+925779,Piotr Urbański,2026,PL33,68461,False,4,3,0,101,0,0,0,0,0
 889193,AZ Jackson,2026,PL1,2300,False,3,0,0,0,0,0,0,0,0
 889193,AZ Jackson,2026,ELQ,2300,False,1,0,0,0,0,0,0,0,0
 924895,Michal Matys,2026,POPU,6361,False,1,0,0,0,0,0,0,0,0
@@ -300,6 +305,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 391929,Leon Flach,2026,ELQ,2300,False,4,0,0,0,0,0,0,0,0
 391929,Leon Flach,2026,DFB,81,False,1,0,0,0,0,0,0,0,0
 693637,Pape Meïssa Ba,2026,PL1,88,False,6,0,0,0,0,0,0,0,0
+693637,Pape Meïssa Ba,2026,FRC,1159,False,1,0,0,0,0,0,0,0,0
 693637,Pape Meïssa Ba,2026,FR2,1159,False,8,8,0,442,2,1,12,4,1
 894710,Kacper Szymanek,2026,POPU,3527,False,1,0,0,0,0,0,0,0,0
 894710,Kacper Szymanek,2026,PL2,7146,False,7,7,0,374,2,0,0,0,2
@@ -310,7 +316,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 707499,Igor Brzyski,2026,PL1,324,False,6,0,0,0,0,0,0,0,0
 707499,Igor Brzyski,2026,CZ3M,6038,False,3,2,0,160,0,0,0,0,1
 1007396,Patryk Stechnij,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
-1007396,Patryk Stechnij,2026,PL34,101472,False,14,14,0,1260,0,0,0,0,0
+1007396,Patryk Stechnij,2026,PL34,101472,False,15,15,0,1350,0,0,0,0,0
 1007396,Patryk Stechnij,2026,PL1,30974,False,14,0,0,0,0,0,0,0,0
 345452,Bartosz Mrozek,2026,PLSC,238,False,1,0,0,0,0,0,0,0,0
 345452,Bartosz Mrozek,2026,PL1,238,False,3,0,0,0,0,0,0,0,0
@@ -319,10 +325,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 345452,Bartosz Mrozek,2026,CLQ,238,False,2,0,0,0,0,0,0,0,0
 345452,Bartosz Mrozek,2026,CIT,410,False,1,1,0,90,0,0,0,0,0
 468035,Theodoros Tsirigotis,2026,PL1,428,False,6,0,0,0,0,0,0,0,0
-468035,Theodoros Tsirigotis,2026,GRS2,3062,False,8,8,0,430,2,0,0,0,1
+468035,Theodoros Tsirigotis,2026,GRS2,3062,False,9,9,0,457,2,0,0,0,2
 468035,Theodoros Tsirigotis,2026,ELQ,428,False,2,0,0,0,0,0,0,0,0
 468035,Theodoros Tsirigotis,2026,ECLQ,428,False,2,0,0,0,0,0,0,0,0
-859218,Plamen Andreev,2026,UNLC,3394,True,4,0,0,0,0,0,0,0,0
+859218,Plamen Andreev,2026,UNLC,3394,True,6,1,0,0,0,0,0,0,0
 859218,Plamen Andreev,2026,UNGP,84,False,2,0,0,0,0,0,0,0,0
 859218,Plamen Andreev,2026,UNG1,84,False,13,12,0,1066,0,0,1,0,1
 859218,Plamen Andreev,2026,ECLQ,84,False,4,3,0,270,0,0,0,0,0
@@ -345,6 +351,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 991779,Michał Gurgul,2026,POPU,238,False,1,1,0,17,0,0,0,0,0
 991779,Michał Gurgul,2026,PLSC,238,False,1,1,0,90,0,0,0,0,0
 991779,Michał Gurgul,2026,PL1,238,False,13,13,0,1125,1,2,11,2,2
+991779,Michał Gurgul,2026,FS,9324,True,1,0,0,0,0,0,0,0,0
 991779,Michał Gurgul,2026,ELQ,238,False,4,4,0,360,0,2,0,0,1
 991779,Michał Gurgul,2026,EL,238,False,4,4,0,360,0,0,4,3,0
 991779,Michał Gurgul,2026,CLQ,238,False,2,2,0,210,0,0,2,2,0
@@ -386,13 +393,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1295659,Hubert Janyszka,2026,PLSC,238,False,1,0,0,0,0,0,0,0,0
 1295659,Hubert Janyszka,2026,PL32,8468,False,11,8,0,720,1,0,0,0,1
 1295659,Hubert Janyszka,2026,PL1,238,False,13,1,0,32,0,0,0,0,0
-1295659,Hubert Janyszka,2026,FS,16297,True,2,2,0,103,0,0,0,0,0
+1295659,Hubert Janyszka,2026,FS,16297,True,4,3,0,193,0,0,0,0,0
 1295659,Hubert Janyszka,2026,ELQ,238,False,4,0,0,0,0,0,0,0,0
 1295659,Hubert Janyszka,2026,EL,238,False,4,0,0,0,0,0,0,0,0
 1295659,Hubert Janyszka,2026,CLQ,238,False,2,0,0,0,0,0,0,0,0
 555057,Antoni Kozubal,2026,POPU,238,False,1,0,0,0,0,0,0,0,0
 555057,Antoni Kozubal,2026,PLSC,238,False,1,1,0,73,1,1,0,0,1
 555057,Antoni Kozubal,2026,PL1,238,False,13,9,4,671,2,0,15,7,0
+555057,Antoni Kozubal,2026,FS,9324,True,1,1,0,70,0,0,0,0,0
 555057,Antoni Kozubal,2026,ELQ,238,False,4,4,0,305,1,2,2,1,0
 555057,Antoni Kozubal,2026,EL,238,False,4,3,1,251,0,0,3,1,0
 555057,Antoni Kozubal,2026,CLQ,238,False,2,2,0,210,0,1,2,0,1
@@ -425,14 +433,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 220969,Radosław Murawski,2026,ELQ,238,False,4,4,0,206,1,0,4,1,2
 220969,Radosław Murawski,2026,EL,238,False,4,3,1,260,0,0,1,0,1
 220969,Radosław Murawski,2026,CLQ,238,False,2,2,0,152,0,0,0,0,1
-959917,Bartłomiej Barański,2026,SU20,16299,True,2,2,0,135,1,1,0,0,0
+959917,Bartłomiej Barański,2026,SU20,16299,True,3,3,0,180,1,1,0,0,0
 959917,Bartłomiej Barański,2026,POPU,5699,False,2,2,0,83,0,0,0,0,0
 959917,Bartłomiej Barański,2026,PL2,5699,False,14,11,0,635,0,0,0,0,2
 1137026,Sammy Dudek,2026,U19Q,16298,True,4,4,0,184,0,0,0,0,1
 1137026,Sammy Dudek,2026,POPU,30753,False,1,1,0,46,0,0,0,0,0
 1137026,Sammy Dudek,2026,PL2,30753,False,14,11,0,631,1,0,0,0,2
 1137026,Sammy Dudek,2026,FS,16298,True,3,1,0,26,0,0,0,0,0
-721470,Patrik Wålemark,2026,UNLB,3557,True,4,2,0,93,0,1,3,2,0
+721470,Patrik Wålemark,2026,UNLB,3557,True,2,2,0,93,0,1,3,2,0
 721470,Patrik Wålemark,2026,POPU,238,False,1,1,0,17,0,0,0,0,0
 721470,Patrik Wålemark,2026,PLSC,238,False,1,1,0,65,0,1,0,0,0
 721470,Patrik Wålemark,2026,PL1,238,False,13,13,0,898,7,3,41,16,3
@@ -444,6 +452,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 539043,Luis Palma,2026,POPU,238,False,1,1,0,45,0,0,0,0,0
 539043,Luis Palma,2026,PLSC,238,False,1,1,0,90,0,0,0,0,0
 539043,Luis Palma,2026,PL1,238,False,13,12,0,516,2,3,19,8,1
+539043,Luis Palma,2026,FS,3590,True,1,1,0,90,0,0,0,0,0
 539043,Luis Palma,2026,ELQ,238,False,4,4,0,275,0,1,2,0,0
 539043,Luis Palma,2026,EL,238,False,4,4,0,236,0,0,9,5,0
 539043,Luis Palma,2026,CNLA,3590,True,4,4,0,308,1,1,0,0,0
@@ -460,7 +469,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 294772,Ali Gholizadeh,2026,ELQ,238,False,4,0,4,0,0,0,0,0,0
 294772,Ali Gholizadeh,2026,EL,238,False,4,0,4,0,0,0,0,0,0
 294772,Ali Gholizadeh,2026,CLQ,238,False,2,0,2,0,0,0,0,0,0
-448284,Daniel Håkans,2026,UNLC,3443,True,4,3,0,123,0,0,3,0,0
+448284,Daniel Håkans,2026,UNLC,3443,True,6,4,0,157,1,0,6,2,0
 448284,Daniel Håkans,2026,POPU,238,False,1,0,0,0,0,0,0,0,0
 448284,Daniel Håkans,2026,PLSC,238,False,1,0,0,0,0,0,0,0,0
 448284,Daniel Håkans,2026,PL1,238,False,13,7,0,222,0,3,2,1,0
@@ -510,7 +519,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1207415,Wojciech Szymczak,2026,CLQ,238,False,2,0,0,0,0,0,0,0,0
 658111,Kacper Tobiasz,2026,TRP,2832,False,1,0,1,0,0,0,0,0,0
 658111,Kacper Tobiasz,2026,TR1,2832,False,11,9,2,810,0,1,0,0,0
-744075,Otto Hindrich,2026,UNLB,3447,True,4,2,0,180,0,0,0,0,0
+744075,Otto Hindrich,2026,UNLB,3447,True,5,3,0,270,0,0,0,0,0
 744075,Otto Hindrich,2026,POPU,255,False,1,1,0,90,0,0,0,0,0
 744075,Otto Hindrich,2026,PL1,255,False,14,14,0,1260,0,0,0,0,0
 559998,Gabriel Kobylak,2026,POPU,6456,False,1,0,0,0,0,0,0,0,0
@@ -527,21 +536,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 717910,Marcel Mendes-Dudziński,2026,PL1,6112,False,14,0,0,0,0,0,0,0,0
 679709,Steve Kapuadi,2026,POPU,88,False,1,1,0,90,0,0,0,0,0
 679709,Steve Kapuadi,2026,PL1,88,False,14,13,0,1140,3,1,8,4,2
-679709,Steve Kapuadi,2026,FS,3854,True,2,1,0,90,0,0,0,0,0
-679709,Steve Kapuadi,2026,AFCQ,3854,True,2,0,0,0,0,0,0,0,0
+679709,Steve Kapuadi,2026,FS,3854,True,2,2,0,180,0,0,0,0,0
+679709,Steve Kapuadi,2026,AFCQ,3854,True,3,0,0,0,0,0,0,0,0
 479268,Marco Burch,2026,SCC,61,False,2,2,0,168,1,0,0,0,1
 479268,Marco Burch,2026,C1,61,False,13,12,1,1080,1,1,11,1,4
 606893,Ermal Krasniqi,2026,UNLB,53982,True,4,4,0,161,0,0,6,0,0
 606893,Ermal Krasniqi,2026,TR1,12382,False,11,11,0,929,1,2,17,2,3
-345449,Kamil Piatkowski,2026,UNLB,3442,True,4,0,0,0,0,0,0,0,0
-345449,Kamil Piatkowski,2026,POPU,255,False,1,1,0,90,0,0,0,0,0
-345449,Kamil Piatkowski,2026,PL1,255,False,14,13,0,1168,0,1,10,2,0
+345449,Kamil Piątkowski,2026,UNLB,3442,True,5,0,0,0,0,0,0,0,0
+345449,Kamil Piątkowski,2026,POPU,255,False,1,1,0,90,0,0,0,0,0
+345449,Kamil Piątkowski,2026,PL1,255,False,14,13,0,1168,0,1,10,2,0
 322798,Radovan Pankov,2026,IN1L,14107,False,9,9,0,723,0,0,0,0,3
 322798,Radovan Pankov,2026,ILC3,14107,False,1,0,0,0,0,0,0,0,0
 264796,Rafał Augustyniak,2026,POPU,255,False,1,1,0,90,0,0,0,0,0
 264796,Rafał Augustyniak,2026,PL1,255,False,14,14,0,1260,4,3,22,7,1
 42401,Artur Jędrzejczyk,2026,PL1,255,False,6,1,0,2,0,0,0,0,0
-699442,Kacper Urbański,2026,UNLB,3442,True,4,3,0,42,0,0,2,0,0
+699442,Kacper Urbański,2026,UNLB,3442,True,5,3,0,42,0,0,2,0,0
 699442,Kacper Urbański,2026,POPU,428,False,1,1,0,120,0,0,0,0,0
 699442,Kacper Urbański,2026,PLSC,428,False,1,1,0,73,0,1,0,0,0
 699442,Kacper Urbański,2026,PL1,428,False,14,14,0,1107,5,2,27,10,1
@@ -555,6 +564,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 357158,Rúben Vinagre,2026,PL1,255,False,14,11,0,823,1,3,9,4,1
 618424,Wojciech Urbański,2026,POPU,255,False,1,1,0,84,0,0,0,0,0
 618424,Wojciech Urbański,2026,PL1,255,False,14,13,0,899,0,0,9,1,1
+618424,Wojciech Urbański,2026,FS,9324,True,1,1,0,29,0,0,0,0,0
 1138091,Samuel Kovacik,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
 1138091,Samuel Kovacik,2026,POPU,255,False,1,0,0,0,0,0,0,0,0
 1138091,Samuel Kovacik,2026,PL2L,6628,False,7,2,0,90,0,0,0,0,0
@@ -567,6 +577,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 399348,Vahan Bichakhchyan,2026,PL1,255,False,14,4,0,103,1,1,4,2,0
 1163767,Pascal Mozie,2026,U19Q,16298,True,4,4,0,337,1,0,0,0,0
 1163767,Pascal Mozie,2026,FS,16298,True,3,3,0,192,0,0,0,0,1
+1163767,Pascal Mozie,2026,FRC,30204,False,1,0,0,0,0,0,0,0,0
 1163767,Pascal Mozie,2026,FR2,30204,False,12,10,0,135,0,0,1,0,0
 259881,Damian Szymański,2026,POPU,255,False,1,1,0,67,0,0,0,0,0
 259881,Damian Szymański,2026,PL1,255,False,14,11,0,476,0,0,7,4,1
@@ -604,9 +615,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 549982,Rafał Adamski,2026,PL1,255,False,14,11,0,566,4,0,16,9,3
 225055,Jean-Pierre Nsame,2026,POPU,324,False,1,1,0,8,0,0,0,0,0
 225055,Jean-Pierre Nsame,2026,PL1,324,False,13,5,0,189,0,1,7,5,0
-208166,Bartlomiej Dragowski,2026,UNLB,3442,True,4,0,0,0,0,0,0,0,0
-208166,Bartlomiej Dragowski,2026,POPU,88,False,1,0,0,0,0,0,0,0,0
-208166,Bartlomiej Dragowski,2026,PL1,88,False,14,14,0,1260,0,0,0,0,0
+208166,Bartłomiej Drągowski,2026,UNLB,3442,True,5,1,0,90,0,0,0,0,0
+208166,Bartłomiej Drągowski,2026,POPU,88,False,1,0,0,0,0,0,0,0,0
+208166,Bartłomiej Drągowski,2026,PL1,88,False,14,14,0,1260,0,0,0,0,0
 160668,Antonio Colak,2026,POPU,255,False,1,0,0,0,0,0,0,0,0
 160668,Antonio Colak,2026,PL2L,6628,False,6,2,0,148,1,0,0,0,0
 160668,Antonio Colak,2026,PL1,255,False,14,1,4,6,0,0,0,0,0
@@ -629,10 +640,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 578547,Christopher Cheng,2026,PL1,88,False,14,5,8,321,0,0,3,0,2
 661368,Marcel Krajewski,2026,POPU,88,False,1,1,0,90,0,0,0,0,0
 661368,Marcel Krajewski,2026,PL1,88,False,14,11,0,747,0,0,7,1,3
+661368,Marcel Krajewski,2026,FS,9324,True,1,1,0,45,0,0,0,0,0
 396324,Carlos Isaac,2026,POPU,88,False,1,0,1,0,0,0,0,0,0
 396324,Carlos Isaac,2026,PL1,88,False,14,0,14,0,0,0,0,0,0
 429713,Samuel Kozlovsky,2026,SLO1,540,False,14,8,0,664,1,0,4,1,0
-429713,Samuel Kozlovsky,2026,SKC,540,False,2,1,0,73,0,0,0,0,0
+429713,Samuel Kozlovsky,2026,SKC,540,False,2,2,0,163,0,1,0,0,0
 429713,Samuel Kozlovsky,2026,CLQ,540,False,6,0,0,0,0,0,0,0,0
 429713,Samuel Kozlovsky,2026,CL,540,False,4,1,0,90,0,0,0,0,0
 428444,Peter Therkildsen,2026,DKP,173,False,3,1,0,12,0,0,0,0,0
@@ -643,10 +655,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 630989,Ricardo Visus,2026,PL1,88,False,14,7,0,395,0,0,6,0,0
 735419,Polydefkis Volanakis,2026,SLO1,13744,False,14,11,0,982,0,0,5,1,2
 735419,Polydefkis Volanakis,2026,SKC,13744,False,4,2,0,180,0,0,0,0,0
-1136224,Dion Gallapeni,2026,UNLB,53982,True,4,4,0,301,0,0,2,0,0
+1136224,Dion Gallapeni,2026,UNLB,53982,True,5,5,0,391,0,0,2,0,0
 1136224,Dion Gallapeni,2026,POPU,2118,False,2,2,0,164,0,2,0,0,0
 1136224,Dion Gallapeni,2026,PL1,2118,False,13,12,0,852,0,1,10,1,2
-528021,Juljan Shehu,2026,UNLC,3561,True,4,4,0,162,0,0,4,1,0
+528021,Juljan Shehu,2026,UNLC,3561,True,6,6,0,272,0,0,4,1,0
 528021,Juljan Shehu,2026,POPU,88,False,1,0,1,0,0,0,0,0,0
 528021,Juljan Shehu,2026,PL1,88,False,14,10,4,733,0,1,7,3,3
 455068,Emil Kornvig,2026,POPU,88,False,1,1,0,81,0,0,0,0,0
@@ -663,10 +675,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 153667,Bartłomiej Pawłowski,2026,PL2,6107,False,14,6,0,194,0,1,0,0,0
 76655,Marek Hanousek,2026,POPU,14073,False,1,1,0,73,0,0,0,0,0
 76655,Marek Hanousek,2026,PL31,14073,False,16,8,8,585,0,0,0,0,1
-1167813,Leon Madej,2026,PL33,6560,False,14,13,0,546,4,1,0,0,0
+1167813,Leon Madej,2026,PL33,6560,False,15,14,0,618,4,1,0,0,0
 1426749,Kuba Nawrocki,2026,POPU,88,False,1,0,0,0,0,0,0,0,0
 1426749,Kuba Nawrocki,2026,PL31,14073,False,7,4,0,265,1,0,0,0,0
-1426749,Kuba Nawrocki,2026,PL2L,8641,False,8,8,0,549,0,1,0,0,0
+1426749,Kuba Nawrocki,2026,PL2L,8641,False,9,9,0,639,0,1,0,0,0
 1426749,Kuba Nawrocki,2026,PL1,88,False,7,0,0,0,0,0,0,0,0
 548650,Osman Bukari,2026,UCOL,159,False,3,1,0,45,0,0,2,0,0
 548650,Osman Bukari,2026,SERP,159,False,1,0,0,0,0,0,0,0,0
@@ -682,7 +694,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 697468,Mariusz Fornalczyk,2026,POPU,88,False,1,1,0,90,0,0,0,0,0
 697468,Mariusz Fornalczyk,2026,PL1,88,False,14,12,2,773,2,1,23,3,4
 578878,Ángel Baena,2026,PL1,88,False,6,6,0,317,1,1,4,3,1
-578878,Ángel Baena,2026,ES2,11422,False,10,10,0,712,3,1,20,6,1
+578878,Ángel Baena,2026,ES2,11422,False,11,11,0,802,3,1,21,6,1
 1233348,Kamil Cybulski,2026,POPU,22431,False,1,1,0,59,0,0,0,0,0
 1233348,Kamil Cybulski,2026,PL2,22431,False,11,11,0,772,2,1,0,0,2
 1233348,Kamil Cybulski,2026,PL1,88,False,3,0,0,0,0,0,0,0,0
@@ -690,9 +702,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1085939,Antoni Klukowski,2026,POPU,14073,False,1,0,0,0,0,0,0,0,0
 1085939,Antoni Klukowski,2026,PL31,14073,False,10,4,0,253,0,0,0,0,0
 1085939,Antoni Klukowski,2026,PL1,88,False,14,4,0,27,0,0,0,0,1
-965043,Milosz Piekutowski,2026,SU20,16299,True,2,1,0,90,0,0,0,0,0
+965043,Milosz Piekutowski,2026,SU20,16299,True,3,2,0,180,0,0,0,0,0
 965043,Milosz Piekutowski,2026,FR1,667,False,10,0,0,0,0,0,0,0,0
-805834,Slawomir Abramowicz,2026,UNLB,3442,True,4,0,0,0,0,0,0,0,0
+805834,Slawomir Abramowicz,2026,UNLB,3442,True,5,0,0,0,0,0,0,0,0
 805834,Slawomir Abramowicz,2026,POPU,2300,False,1,1,0,90,0,0,0,0,0
 805834,Slawomir Abramowicz,2026,PL1,2300,False,13,12,0,1080,0,0,0,0,0
 805834,Slawomir Abramowicz,2026,ELQ,2300,False,4,4,0,360,0,0,0,0,0
@@ -716,6 +728,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 589013,Bartlomiej Wdowik,2026,PL1,2300,False,9,5,0,245,0,0,2,1,0
 589013,Bartlomiej Wdowik,2026,EL,2300,False,4,1,0,90,0,0,1,0,0
 589013,Bartlomiej Wdowik,2026,ECLQ,1075,False,6,0,0,0,0,0,0,0,0
+494236,Andy Pelmard,2026,FRC,3524,False,1,1,0,59,0,0,0,0,0
 494236,Andy Pelmard,2026,FR2,3524,False,12,2,0,180,0,0,1,0,0
 575717,Guilherme Montóia,2026,POPU,2300,False,1,1,0,90,0,0,0,0,0
 575717,Guilherme Montóia,2026,PL1,2300,False,13,10,0,790,1,1,7,3,3
@@ -751,6 +764,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1046873,Bartłomiej Krasiewicz,2026,ELQ,2300,False,4,0,0,0,0,0,0,0,0
 1046873,Bartłomiej Krasiewicz,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
 1118873,Bartosz Mazurek,2026,ofb,409,False,3,3,0,158,1,1,1,1,0
+1118873,Bartosz Mazurek,2026,UNLB,3442,True,1,1,0,20,0,0,0,0,0
 1118873,Bartosz Mazurek,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
 1118873,Bartosz Mazurek,2026,ELQ,409,False,4,4,0,252,0,0,4,1,0
 1118873,Bartosz Mazurek,2026,EL,409,False,4,4,0,315,0,0,4,2,2
@@ -767,12 +781,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1066230,Eryk Kozłowski,2026,SU20,16299,True,2,2,0,74,0,0,0,0,1
 1066230,Eryk Kozłowski,2026,POPU,2300,False,1,1,0,33,0,0,0,0,0
 1066230,Eryk Kozłowski,2026,PL1,2300,False,13,7,0,341,0,0,5,1,1
+1066230,Eryk Kozłowski,2026,FS,9324,True,1,1,0,20,0,0,0,0,0
 1066230,Eryk Kozłowski,2026,ELQ,2300,False,4,2,0,28,0,0,1,0,0
 1066230,Eryk Kozłowski,2026,EL,2300,False,4,4,0,170,0,0,0,0,2
 461939,Tomás Silva,2026,BULP,9599,False,1,0,0,0,0,0,0,0,0
 461939,Tomás Silva,2026,BU1,9599,False,14,10,0,643,0,0,0,0,0
 895298,Dawid Drachal,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
 895298,Dawid Drachal,2026,PL1,2300,False,13,2,0,75,0,0,1,0,0
+895298,Dawid Drachal,2026,FS,9324,True,1,1,0,61,0,0,0,0,0
 895298,Dawid Drachal,2026,ELQ,2300,False,4,2,0,22,0,0,1,0,0
 895298,Dawid Drachal,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
 176423,Jesús Imaz,2026,POPU,2300,False,1,1,0,65,1,0,0,0,0
@@ -790,7 +806,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1162012,Oskar Pietuszewski,2026,CL,720,False,4,2,1,89,0,0,3,0,0
 861913,Toki Hirosawa,2026,POPU,6361,False,2,2,0,166,0,1,0,0,0
 861913,Toki Hirosawa,2026,PL2,6361,False,14,12,0,640,0,2,0,0,0
-710969,Samed Bazdar,2026,UNLB,3446,True,4,1,0,12,0,0,0,0,0
+710969,Samed Bazdar,2026,UNLB,3446,True,5,1,0,12,0,0,0,0,0
 710969,Samed Bazdar,2026,UCOL,475,False,3,3,0,109,0,1,4,1,0
 710969,Samed Bazdar,2026,ELQ,475,False,2,2,0,126,0,1,5,1,1
 710969,Samed Bazdar,2026,CCB,475,False,1,1,0,28,0,0,0,0,0
@@ -799,8 +815,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 341272,Álex Pozo,2026,NL1,1268,False,6,3,3,74,0,0,0,0,1
 341272,Álex Pozo,2026,ES2,3302,False,3,0,0,0,0,0,0,0,0
 410649,Afimico Pululu,2026,SAKC,9131,False,1,1,0,90,2,0,3,3,0
-410649,Afimico Pululu,2026,SA1,9131,False,13,9,0,756,2,1,13,3,1
-410649,Afimico Pululu,2026,FS,3854,True,2,1,0,90,0,0,0,0,0
+410649,Afimico Pululu,2026,SA1,9131,False,12,9,0,756,2,1,13,3,1
+410649,Afimico Pululu,2026,FS,3854,True,1,1,0,45,0,0,0,0,0
 410649,Afimico Pululu,2026,AFCQ,3854,True,2,0,0,0,0,0,0,0,0
 658730,Kajetan Szmyt,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
 658730,Kajetan Szmyt,2026,PL1,2300,False,13,13,0,976,1,2,24,5,0
@@ -837,6 +853,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1325371,Zachary Zalewski,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
 656250,Marcel Lubik,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
 656250,Marcel Lubik,2026,PL1,422,False,14,14,0,1260,0,0,0,0,1
+656250,Marcel Lubik,2026,FS,9324,True,1,1,0,90,0,0,0,0,0
 260706,Tomasz Loska,2026,POPU,428,False,1,1,0,120,0,0,0,0,0
 260706,Tomasz Loska,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
 260706,Tomasz Loska,2026,PL1,428,False,14,0,0,0,0,0,0,0,0
@@ -887,7 +904,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 174522,Erik Janza,2026,ELQ,428,False,2,2,0,179,0,0,2,1,0
 174522,Erik Janza,2026,ECLQ,428,False,2,1,0,90,0,1,0,0,1
 174522,Erik Janza,2026,CLQ,428,False,2,2,0,180,0,0,3,2,1
-1048756,Dominik Szala,2026,SU20,16299,True,2,2,0,46,0,0,0,0,0
+1048756,Dominik Szala,2026,SU20,16299,True,3,3,0,122,0,0,0,0,0
 1048756,Dominik Szala,2026,POPU,759,False,2,1,0,106,0,0,0,0,1
 1048756,Dominik Szala,2026,POPU,22568,False,1,0,0,0,0,0,0,0,0
 1048756,Dominik Szala,2026,PL2L,22568,False,10,4,0,301,0,1,0,0,0
@@ -901,7 +918,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 153638,Rafał Janicki,2026,ELQ,428,False,2,2,0,180,0,0,0,0,0
 153638,Rafał Janicki,2026,ECLQ,428,False,2,2,0,180,0,0,0,0,0
 153638,Rafał Janicki,2026,CLQ,428,False,2,2,0,180,0,0,0,0,1
-671548,Lukas Ambros,2026,UNLA,3445,True,4,4,0,215,0,0,1,0,0
+671548,Lukas Ambros,2026,UNLA,3445,True,6,6,0,317,0,0,1,0,0
 671548,Lukas Ambros,2026,ELQ,58,False,6,6,0,422,2,2,1,1,1
 671548,Lukas Ambros,2026,EL,58,False,4,4,0,294,0,0,3,2,0
 671548,Lukas Ambros,2026,CCB,58,False,1,0,0,0,0,0,0,0,0
@@ -940,7 +957,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 529548,Michał Rakoczy,2026,ECLQ,428,False,2,0,0,0,0,0,0,0,0
 529548,Michał Rakoczy,2026,CLQ,428,False,2,0,0,0,0,0,0,0,0
 117469,Paweł Olkowski,2026,POPU,1750,False,3,2,0,210,0,2,0,0,0
-117469,Paweł Olkowski,2026,PL2L,1750,False,15,14,0,1192,2,4,0,0,0
+117469,Paweł Olkowski,2026,PL2L,1750,False,15,15,0,1282,2,4,0,0,0
 1071651,Ousmane Sow,2026,POPU,2300,False,1,1,0,65,3,0,0,0,0
 1071651,Ousmane Sow,2026,PL1,2300,False,10,8,0,393,3,0,11,7,0
 1071651,Ousmane Sow,2026,ELQ,2300,False,2,2,0,75,0,0,1,0,0
@@ -959,14 +976,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1001785,Yvan Ikia Dimi,2026,ELQ,428,False,2,2,0,63,0,0,1,0,0
 1001785,Yvan Ikia Dimi,2026,ECLQ,428,False,2,1,0,45,0,0,0,0,0
 1001785,Yvan Ikia Dimi,2026,CLQ,428,False,2,2,0,144,0,0,1,0,0
-1001785,Yvan Ikia Dimi,2026,AFCQ,3702,True,2,2,0,103,0,1,2,1,0
+1001785,Yvan Ikia Dimi,2026,AFCQ,3702,True,3,3,0,193,0,1,2,1,0
 442474,Sondre Liseth,2026,POPU,428,False,1,1,0,74,0,0,0,0,0
 442474,Sondre Liseth,2026,PLSC,428,False,1,1,0,25,0,0,0,0,0
 442474,Sondre Liseth,2026,PL1,428,False,14,11,0,574,1,2,16,6,2
 442474,Sondre Liseth,2026,ELQ,428,False,2,1,0,28,0,0,0,0,0
 442474,Sondre Liseth,2026,ECLQ,428,False,2,2,0,114,1,0,2,2,0
 442474,Sondre Liseth,2026,CLQ,428,False,2,2,0,45,0,0,0,0,0
-804708,Brandon Dominguès,2026,ES2,2497,False,13,0,9,0,0,0,0,0,0
+804708,Brandon Dominguès,2026,ES2,2497,False,14,0,9,0,0,0,0,0,0
 804708,Brandon Dominguès,2026,CDR,2497,False,1,0,0,0,0,0,0,0,0
 1006467,Borislav Rupanov,2026,POPO,2639,False,2,0,2,0,0,0,0,0,0
 1006467,Borislav Rupanov,2026,PO2,2639,False,10,0,10,0,0,0,0,0,0
@@ -980,23 +997,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 431561,Roberto Massimo,2026,ECLQ,428,False,1,0,0,0,0,0,0,0,0
 431561,Roberto Massimo,2026,CLQ,428,False,2,0,2,0,0,0,0,0,0
 534024,Gabriel Barbosa,2026,POPO,4294,False,2,2,0,84,1,1,0,0,2
-534024,Gabriel Barbosa,2026,PO2,4294,False,10,8,0,232,0,0,0,0,2
+534024,Gabriel Barbosa,2026,PO2,4294,False,11,9,0,263,0,0,0,0,3
 678277,Mathias Sauer,2026,NOPO,6399,False,3,2,0,151,0,1,0,0,0
 1368324,Abbati Abdullahi,2026,SLO1,35488,False,14,8,0,426,2,0,16,5,2
 1368324,Abbati Abdullahi,2026,SKC,35488,False,4,3,0,165,0,0,0,0,0
 555074,Oliwier Zych,2026,POPO,2420,False,1,0,0,0,0,0,0,0,0
 555074,Oliwier Zych,2026,PO1,2420,False,11,8,0,720,0,0,0,0,0
+555074,Oliwier Zych,2026,FS,9324,True,1,0,0,0,0,0,0,0,0
 720120,Kacper Trelowski,2026,POPU,9644,False,1,1,0,91,0,0,0,0,0
 720120,Kacper Trelowski,2026,PL1,9644,False,14,11,0,990,0,0,0,0,0
 720120,Kacper Trelowski,2026,ECLQ,9644,False,6,6,0,570,0,0,0,0,1
 1284269,Wiktor Żołneczko,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
 1284269,Wiktor Żołneczko,2026,PL33,41149,False,14,9,0,810,0,0,0,0,0
 1284269,Wiktor Żołneczko,2026,PL1,9644,False,14,1,0,90,0,0,0,0,0
-1284269,Wiktor Żołneczko,2026,FS,16297,True,1,1,0,90,0,0,0,0,0
+1284269,Wiktor Żołneczko,2026,FS,16297,True,3,2,0,180,0,0,0,0,0
 1284269,Wiktor Żołneczko,2026,ECLQ,9644,False,6,0,0,0,0,0,0,0,0
 910780,Jakub Mądrzyk,2026,POPU,1750,False,3,2,1,180,0,0,0,0,0
 910780,Jakub Mądrzyk,2026,PL2L,1750,False,15,6,8,540,0,0,0,0,1
-1511247,Dominik Czeremski,2026,PL33,50208,False,16,16,0,1440,0,0,0,0,0
+1511247,Dominik Czeremski,2026,PL33,50208,False,17,17,0,1530,0,0,0,0,0
 1511247,Dominik Czeremski,2026,PL1,9644,False,1,0,0,0,0,0,0,0,0
 1511247,Dominik Czeremski,2026,ECLQ,9644,False,2,0,0,0,0,0,0,0,0
 318257,Stratos Svarnas,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
@@ -1017,7 +1035,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1048759,Jerzy Napieraj,2026,PL33,41149,False,5,3,0,270,0,0,0,0,1
 1048759,Jerzy Napieraj,2026,PL1,9644,False,14,3,0,246,0,0,0,0,1
 1048759,Jerzy Napieraj,2026,ECLQ,9644,False,6,1,0,90,0,0,0,0,0
-616948,Péter Baráth,2026,UNLB,3468,True,4,0,4,0,0,0,0,0,0
+616948,Péter Baráth,2026,UNLB,3468,True,5,0,4,0,0,0,0,0,0
 616948,Péter Baráth,2026,TSP,2311,False,1,1,0,74,0,0,0,0,0
 616948,Péter Baráth,2026,TS1,2311,False,14,10,4,829,3,2,16,5,1
 495669,Lamine Diaby-Fadiga,2026,POPU,9644,False,1,1,0,59,1,0,0,0,0
@@ -1033,8 +1051,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 384823,Oskar Repka,2026,ECLQ,9644,False,6,6,0,547,0,1,0,0,0
 555062,Tomasz Pieńko,2026,POPU,9644,False,1,1,0,38,0,0,0,0,0
 555062,Tomasz Pieńko,2026,PL1,9644,False,14,12,0,832,1,0,13,6,2
+555062,Tomasz Pieńko,2026,FS,9324,True,1,1,0,83,1,0,0,0,0
 555062,Tomasz Pieńko,2026,ECLQ,9644,False,6,4,0,170,1,1,0,0,2
-1249778,Adam Basse,2026,SU20,16299,True,2,2,0,106,1,0,0,0,0
+1249778,Adam Basse,2026,SU20,16299,True,3,3,0,151,1,0,0,0,0
 1249778,Adam Basse,2026,POPU,9644,False,1,1,0,38,0,0,0,0,0
 1249778,Adam Basse,2026,PL33,41149,False,1,1,0,90,2,1,0,0,0
 1249778,Adam Basse,2026,PL1,9644,False,14,9,0,168,0,0,7,1,0
@@ -1065,7 +1084,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 282434,Jean Carlos Silva,2026,ECLQ,9644,False,6,6,0,325,0,0,0,0,0
 442118,Erick Otieno,2026,POPU,9644,False,1,1,0,61,0,0,0,0,1
 442118,Erick Otieno,2026,PL1,9644,False,14,7,0,528,1,2,3,2,0
+442118,Erick Otieno,2026,FS,8987,True,1,0,0,0,0,0,0,0,0
 442118,Erick Otieno,2026,ECLQ,9644,False,6,6,0,245,0,1,0,0,1
+442118,Erick Otieno,2026,AFCQ,8987,True,3,1,0,9,0,0,0,0,0
 1366314,Abraham Ojo,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
 1366314,Abraham Ojo,2026,PL33,41149,False,13,3,0,136,0,0,0,0,2
 1366314,Abraham Ojo,2026,PL1,9644,False,14,2,0,56,0,0,0,0,0
@@ -1101,7 +1122,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 627717,Pau Resta,2026,ECLQ,6456,False,4,1,0,90,0,0,0,0,0
 453156,Wiktor Długosz,2026,POPU,6110,False,2,1,0,90,0,1,0,0,0
 453156,Wiktor Długosz,2026,PL1,6110,False,14,13,1,1148,0,8,14,4,4
-617460,Slobodan Rubežić,2026,UNLC,11953,True,4,1,0,90,0,0,0,0,0
+617460,Slobodan Rubežić,2026,UNLC,11953,True,6,2,0,174,0,0,0,0,0
 617460,Slobodan Rubežić,2026,POPU,6110,False,2,2,0,180,0,0,0,0,1
 617460,Slobodan Rubežić,2026,PL1,6110,False,14,12,1,1080,0,0,11,3,4
 585080,Marcel Pięczek,2026,POPU,6110,False,2,2,0,151,0,0,0,0,0
@@ -1130,10 +1151,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1042674,Jakub Budnicki,2026,PL2,2745,False,14,13,0,1123,0,1,0,0,1
 469695,Tamar Svetlin,2026,UNLB,3588,True,4,0,0,0,0,0,0,0,0
 469695,Tamar Svetlin,2026,PL1,6110,False,2,1,0,84,0,0,2,0,0
+469695,Tamar Svetlin,2026,FRC,618,False,1,0,1,0,0,0,0,0,0
 469695,Tamar Svetlin,2026,FR2,618,False,11,6,4,376,0,1,4,2,1
 309847,Martin Remacle,2026,POPU,6110,False,2,2,0,133,0,0,0,0,0
 309847,Martin Remacle,2026,PL1,6110,False,14,13,0,730,0,1,23,8,2
-255474,Simon Gustafson,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+255474,Simon Gustafson,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 255474,Simon Gustafson,2026,POPU,6110,False,2,1,0,17,0,0,0,0,0
 255474,Simon Gustafson,2026,PL1,6110,False,14,8,0,335,1,0,4,2,0
 255474,Simon Gustafson,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
@@ -1154,9 +1176,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 210363,Mariusz Stępiński,2026,PL1,6110,False,14,14,0,1028,6,0,40,15,0
 370555,Dawid Błanik,2026,POPU,6110,False,2,1,0,10,0,0,0,0,0
 370555,Dawid Błanik,2026,PL1,6110,False,14,5,0,119,0,0,4,0,0
-610336,Antoñín,2026,E3G2,7971,False,11,10,1,698,2,0,18,9,0
+610336,Antoñín,2026,E3G2,7971,False,12,10,1,698,2,0,18,9,0
 1046816,Daniel Bąk,2026,POPU,6110,False,2,2,0,64,2,0,0,0,0
 1046816,Daniel Bąk,2026,PL1,6110,False,14,13,0,221,0,0,7,0,1
+1046816,Daniel Bąk,2026,FS,9324,True,1,1,0,20,0,0,0,0,0
 475431,Vladimir Nikolov,2026,UNLC,3394,True,4,2,0,31,0,0,1,0,0
 475431,Vladimir Nikolov,2026,BULP,675,False,1,0,0,0,0,0,0,0,0
 475431,Vladimir Nikolov,2026,BU1,675,False,14,11,0,832,0,1,0,0,3
@@ -1177,7 +1200,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 676266,Mauro Perkovic,2026,PL1,5689,False,14,10,0,752,1,2,14,5,0
 743517,Brahim Traoré,2026,POPU,5689,False,1,1,0,120,0,0,0,0,0
 743517,Brahim Traoré,2026,PL1,5689,False,14,14,0,1260,0,0,2,2,0
-214250,Otar Kakabadze,2026,UNLB,3669,True,4,4,0,360,0,0,0,0,0
+214250,Otar Kakabadze,2026,UNLB,3669,True,5,5,0,450,0,0,0,0,0
 214250,Otar Kakabadze,2026,POPU,5689,False,1,1,0,59,0,0,0,0,1
 214250,Otar Kakabadze,2026,PL1,5689,False,14,14,0,966,0,2,12,2,3
 368565,Gustav Henriksson,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
@@ -1199,21 +1222,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 942738,Milan Aleksic,2026,FS,9566,True,4,4,0,141,0,0,0,0,0
 942738,Milan Aleksic,2026,ECLQ,669,False,6,5,0,177,0,0,3,0,1
 1143311,Fabian Bzdyl,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
-1143311,Fabian Bzdyl,2026,SU20,16299,True,2,2,0,74,1,0,0,0,0
+1143311,Fabian Bzdyl,2026,SU20,16299,True,3,3,0,119,2,0,0,0,0
 1143311,Fabian Bzdyl,2026,SLO1,1443,False,14,14,0,1127,3,2,23,7,2
 1143311,Fabian Bzdyl,2026,SKC,1443,False,3,1,0,45,1,0,0,0,0
 1143311,Fabian Bzdyl,2026,ELQ,1443,False,2,2,0,114,0,0,0,0,0
 1143311,Fabian Bzdyl,2026,ECLQ,1443,False,2,2,0,170,0,0,0,0,0
 303766,Amir Al-Ammari,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
 303766,Amir Al-Ammari,2026,PL1,5689,False,14,14,0,1242,0,0,4,0,3
-392576,Jani Atanasov,2026,UNLB,5148,True,4,2,0,130,0,0,3,0,2
+303766,Amir Al-Ammari,2026,FS,3560,True,1,1,0,28,0,0,0,0,0
+392576,Jani Atanasov,2026,UNLB,5148,True,5,2,0,130,0,0,3,0,2
+392576,Jani Atanasov,2026,FS,65141,True,3,0,0,0,0,0,0,0,0
+392576,Jani Atanasov,2026,FS,43877,True,3,0,0,0,0,0,0,0,0
+392576,Jani Atanasov,2026,FS,43210,True,2,0,0,0,0,0,0,0,0
+392576,Jani Atanasov,2026,FS,37913,True,2,0,0,0,0,0,0,0,0
 629005,Dijon Kameri,2026,POPU,5689,False,1,1,0,39,0,0,0,0,0
 629005,Dijon Kameri,2026,PL1,5689,False,14,6,0,377,0,0,14,3,2
 265545,Mikkel Maigaard,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
 265545,Mikkel Maigaard,2026,PL1,30974,False,14,14,0,1260,0,0,27,5,2
 207561,Maxime Dominguez,2026,POPO,1301,False,1,1,0,85,0,0,0,0,1
 207561,Maxime Dominguez,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-207561,Maxime Dominguez,2026,PO1,1301,False,11,6,0,249,0,1,2,1,1
+207561,Maxime Dominguez,2026,PO1,1301,False,10,6,0,249,0,1,2,1,1
 940220,Beno Selan,2026,POPU,5689,False,1,1,0,120,0,0,0,0,1
 940220,Beno Selan,2026,PL1,5689,False,14,4,0,143,0,0,2,1,0
 940220,Beno Selan,2026,FS,25728,True,3,0,0,0,0,0,0,0,0
@@ -1236,7 +1264,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 522851,Ajdin Hasic,2026,PL1,5689,False,14,14,0,1157,7,2,44,19,2
 886501,Wiktor Bogacz,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
 886501,Wiktor Bogacz,2026,PL1,5689,False,14,1,1,23,0,0,0,0,0
-1061123,Pau Sans,2026,E3G2,142,False,11,10,0,398,1,1,20,9,3
+1061123,Pau Sans,2026,E3G2,142,False,12,11,0,418,2,1,21,10,3
 1061123,Pau Sans,2026,CDR,142,False,1,1,0,62,2,0,0,0,0
 481128,Martin Minchev,2026,UNLC,3394,True,4,2,0,117,0,0,3,2,0
 481128,Martin Minchev,2026,POPU,5689,False,1,1,0,39,0,0,0,0,0
@@ -1254,6 +1282,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 999090,Axel Holewiński,2026,POPU,4000,False,2,1,0,90,0,0,0,0,0
 999090,Axel Holewiński,2026,PL2,4000,False,11,8,0,720,0,0,0,0,0
 999090,Axel Holewiński,2026,PL1,324,False,3,0,0,0,0,0,0,0,0
+999090,Axel Holewiński,2026,FS,9324,True,1,0,0,0,0,0,0,0,0
 172874,Krzysztof Kamiński,2026,POPU,30998,False,1,0,0,0,0,0,0,0,0
 172874,Krzysztof Kamiński,2026,PL2,30998,False,14,13,0,1170,0,0,0,0,0
 1261639,Alex Peškovič,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
@@ -1261,10 +1290,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1261639,Alex Peškovič,2026,FS,30430,True,4,2,0,135,0,0,0,0,0
 1209551,Kuba Bochniarz,2026,POPU,10704,False,2,0,0,0,0,0,0,0,0
 1209551,Kuba Bochniarz,2026,PL2L,10704,False,15,10,0,895,0,0,0,0,0
-1209551,Kuba Bochniarz,2026,FS,16297,True,2,1,0,90,0,0,0,0,1
+1209551,Kuba Bochniarz,2026,FS,16297,True,4,2,0,180,0,0,0,0,1
 861192,Dimitrios Keramitsis,2026,POPU,324,False,1,1,0,90,0,0,0,0,0
 861192,Dimitrios Keramitsis,2026,PL1,324,False,13,13,0,1170,1,0,10,3,3
-263380,Attila Szalai,2026,UNLB,3468,True,4,0,0,0,0,0,0,0,0
+263380,Attila Szalai,2026,UNLB,3468,True,5,0,0,0,0,0,0,0,0
 263380,Attila Szalai,2026,POPU,324,False,1,1,0,90,0,0,0,0,0
 263380,Attila Szalai,2026,PL1,324,False,13,12,0,818,1,1,3,1,0
 478347,Marian Huja,2026,RO1,7769,False,4,0,0,0,0,0,0,0,0
@@ -1296,11 +1325,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 532178,Sam Greenwood,2026,CGB,698,False,1,1,0,68,0,0,0,0,0
 1428280,Natan Ława,2026,POPU,324,False,1,1,0,45,0,0,0,0,0
 1428280,Natan Ława,2026,PL1,324,False,13,6,0,166,0,0,5,2,0
-1428280,Natan Ława,2026,FS,16297,True,2,2,0,112,0,0,0,0,1
+1428280,Natan Ława,2026,FS,16297,True,4,4,0,279,0,2,0,0,1
 189895,Kellyn Acosta,2026,POPU,324,False,1,1,0,90,0,0,0,0,0
 189895,Kellyn Acosta,2026,PL1,324,False,13,13,0,596,1,1,7,1,1
 1149462,Maciej Wojciechowski,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
-1149462,Maciej Wojciechowski,2026,SU20,16299,True,2,2,0,74,0,0,0,0,0
+1149462,Maciej Wojciechowski,2026,SU20,16299,True,3,3,0,119,0,0,0,0,0
 1149462,Maciej Wojciechowski,2026,POPU,324,False,1,1,0,89,0,0,0,0,0
 1149462,Maciej Wojciechowski,2026,PL1,324,False,13,12,0,916,1,1,11,3,2
 566355,Jan Biegański,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
@@ -1342,7 +1371,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1038684,Jacek Czapliński,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
 1038684,Jacek Czapliński,2026,PL1,324,False,13,2,0,21,0,0,3,0,0
 716547,Mateusz Bąk,2026,POPU,42451,False,1,1,0,90,0,0,0,0,0
-716547,Mateusz Bąk,2026,PL32,42451,False,16,12,0,903,1,2,0,0,3
+716547,Mateusz Bąk,2026,PL32,42451,False,17,12,0,903,1,2,0,0,3
 1413392,Sebastian Rojek,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
 1413392,Sebastian Rojek,2026,PL1,324,False,8,0,0,0,0,0,0,0,0
 278676,Dominik Hladun,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
@@ -1352,7 +1381,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 28308,Jasmin Buric,2026,PL33,8372,False,1,1,0,90,0,0,0,0,0
 28308,Jasmin Buric,2026,PL1,168,False,14,1,0,90,0,0,0,0,0
 1024787,Adam Matysek,2026,POPU,3291,False,3,0,0,0,0,0,0,0,0
-1024787,Adam Matysek,2026,PL2L,3291,False,15,15,0,1350,0,0,0,0,0
+1024787,Adam Matysek,2026,PL2L,3291,False,16,16,0,1440,0,0,0,0,0
 311213,Roman Yakuba,2026,POPU,168,False,1,1,0,90,0,0,0,0,0
 311213,Roman Yakuba,2026,PL33,8372,False,3,2,0,180,0,0,0,0,0
 311213,Roman Yakuba,2026,PL1,168,False,14,11,1,900,0,2,4,0,4
@@ -1367,15 +1396,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1295655,Maciej Urbański,2026,POPU,168,False,1,1,0,71,0,0,0,0,0
 1295655,Maciej Urbański,2026,PL33,8372,False,14,5,0,423,0,0,0,0,3
 1295655,Maciej Urbański,2026,PL1,168,False,14,0,0,0,0,0,0,0,0
-1125761,Marcel Reguła,2026,UNLB,3442,True,4,2,0,46,0,0,2,2,0
+1125761,Marcel Reguła,2026,UNLB,3442,True,5,3,0,136,1,0,3,3,1
 1125761,Marcel Reguła,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 1125761,Marcel Reguła,2026,PL1,168,False,14,14,0,1237,5,1,44,17,3
 820540,Filip Kocaba,2026,POPU,168,False,1,1,0,45,0,0,0,0,0
 820540,Filip Kocaba,2026,PL1,168,False,14,14,0,1250,1,0,7,2,2
-991454,Igor Orlikowski,2026,SU20,16299,True,2,2,0,161,0,0,0,0,0
+820540,Filip Kocaba,2026,FS,9324,True,1,1,0,29,0,0,0,0,0
+991454,Igor Orlikowski,2026,SU20,16299,True,3,3,0,237,0,0,0,0,0
 991454,Igor Orlikowski,2026,POPU,168,False,1,1,0,90,0,1,0,0,0
 991454,Igor Orlikowski,2026,PL1,168,False,14,6,0,295,0,1,1,0,0
 1064464,Mateusz Dziewiatowski,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
+1064464,Mateusz Dziewiatowski,2026,SU20,16299,True,1,1,0,31,0,0,0,0,0
 1064464,Mateusz Dziewiatowski,2026,POPU,168,False,1,1,0,90,0,0,0,0,1
 1064464,Mateusz Dziewiatowski,2026,PL33,8372,False,10,3,0,169,0,1,0,0,1
 1064464,Mateusz Dziewiatowski,2026,PL1,168,False,14,6,0,260,0,1,3,0,0
@@ -1393,7 +1424,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 295495,Mateusz Wdowiak,2026,ECLQ,6456,False,4,2,0,23,1,2,0,0,0
 244782,Mateusz Grzybek,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 244782,Mateusz Grzybek,2026,PL1,168,False,14,9,1,575,0,1,4,3,4
-215644,Josip Corluka,2026,U19Q,21705,True,3,0,0,0,0,0,0,0,0
+215644,Josip Corluka,2026,U19Q,21705,True,4,0,0,0,0,0,0,0,0
 215644,Josip Corluka,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 215644,Josip Corluka,2026,PL1,168,False,14,11,0,820,1,2,8,1,1
 504601,Jakub Sypek,2026,POPU,168,False,1,1,0,90,0,0,0,0,0
@@ -1419,7 +1450,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 144721,Arkadiusz Woźniak,2026,PL33,8372,False,6,1,0,90,0,0,0,0,0
 144721,Arkadiusz Woźniak,2026,PL1,168,False,14,2,0,76,0,0,1,0,0
 1345954,Seweryn Marek,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
-1345954,Seweryn Marek,2026,PL33,8372,False,16,13,1,1021,7,1,0,0,4
+1345954,Seweryn Marek,2026,PL33,8372,False,17,14,1,1111,7,1,0,0,4
 1345954,Seweryn Marek,2026,PL1,168,False,14,0,0,0,0,0,0,0,0
 342989,Levente Szabó,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 342989,Levente Szabó,2026,PL1,168,False,14,3,0,111,1,0,2,1,1
@@ -1443,6 +1474,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1545440,Borys Mołdach,2026,PL1,3527,False,14,0,0,0,0,0,0,0,0
 618417,Filip Luberecki,2026,POPU,3527,False,2,2,0,158,0,0,0,0,0
 618417,Filip Luberecki,2026,PL1,3527,False,14,14,0,1252,0,0,6,1,2
+618417,Filip Luberecki,2026,FS,9324,True,1,0,0,0,0,0,0,0,0
 523476,Thomas Santos,2026,POPU,3527,False,2,2,0,97,0,0,0,0,0
 523476,Thomas Santos,2026,PL1,3527,False,14,11,0,631,0,0,4,0,1
 203558,Hervé Matthys,2026,SEC,272,False,1,1,0,90,0,0,0,0,0
@@ -1481,12 +1513,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 384844,Mathieu Scalet,2026,PL2,5699,False,14,9,0,491,0,0,0,0,1
 1106059,Kacper Plichta,2026,POPU,3527,False,1,0,0,0,0,0,0,0,0
 1106059,Kacper Plichta,2026,POPU,1750,False,1,1,0,56,2,0,0,0,0
-1106059,Kacper Plichta,2026,PL2L,1750,False,8,6,0,220,1,0,0,0,0
+1106059,Kacper Plichta,2026,PL2L,1750,False,8,7,0,247,1,0,0,0,0
 1106059,Kacper Plichta,2026,PL1,3527,False,7,0,0,0,0,0,0,0,0
 1106059,Kacper Plichta,2026,FS,28647,True,4,0,0,0,0,0,0,0,0
-1205424,Sebastian Koziej,2026,PL34,31004,False,16,9,0,339,0,0,0,0,1
+1205424,Sebastian Koziej,2026,PL34,31004,False,17,10,0,427,0,0,0,0,1
 1365255,Franciszek Lewandowski,2026,POPU,3527,False,1,0,0,0,0,0,0,0,0
-1365255,Franciszek Lewandowski,2026,PL31,9232,False,10,10,0,829,2,1,0,0,3
+1365255,Franciszek Lewandowski,2026,PL31,9232,False,11,11,0,919,2,1,0,0,3
 1365255,Franciszek Lewandowski,2026,PL1,3527,False,6,0,0,0,0,0,0,0,0
 852858,Mbaye Ndiaye,2026,POPU,3527,False,2,2,0,119,2,0,0,0,0
 852858,Mbaye Ndiaye,2026,PL1,3527,False,14,14,0,1219,4,4,39,12,3
@@ -1494,13 +1526,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 742506,Fábio Ronaldo,2026,PL1,3527,False,14,14,0,774,0,2,14,6,1
 335461,Renat Dadashov,2026,UNLD,8605,True,3,2,0,86,0,0,3,3,0
 335461,Renat Dadashov,2026,UKRP,21903,False,1,1,0,90,0,0,0,0,0
-335461,Renat Dadashov,2026,UKR1,21903,False,6,3,0,106,0,0,0,0,0
+335461,Renat Dadashov,2026,UKR1,21903,False,7,3,0,106,0,0,0,0,0
 335461,Renat Dadashov,2026,FS,8605,True,1,1,0,45,0,0,0,0,0
 622871,Karol Czubak,2026,POPU,3527,False,2,2,0,176,1,1,0,0,0
 622871,Karol Czubak,2026,PL1,3527,False,14,14,0,1260,7,0,59,25,2
 361071,Bradly van Hoeven,2026,SSC,1241,False,1,1,0,75,0,0,1,0,0
 361071,Bradly van Hoeven,2026,SCP,1241,False,3,0,0,0,0,0,0,0,0
-361071,Bradly van Hoeven,2026,SC2,1241,False,14,12,0,696,2,0,8,4,1
+361071,Bradly van Hoeven,2026,SC2,1241,False,15,13,0,752,2,0,8,4,1
 587660,Florian Haxha,2026,POPU,3527,False,2,0,0,0,0,0,0,0,0
 587660,Florian Haxha,2026,PL1,3527,False,14,5,0,24,0,0,1,0,0
 911502,Patryk Letkiewicz,2026,POPU,422,False,1,1,0,64,0,0,0,0,0
@@ -1509,6 +1541,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 345408,Anton Chichkan,2026,PL2,22431,False,1,1,0,90,0,0,0,0,0
 888643,Jakub Krzyzanowski,2026,POPU,422,False,1,1,0,45,0,0,0,0,0
 888643,Jakub Krzyzanowski,2026,PL1,422,False,14,14,0,1259,1,0,20,4,0
+888643,Jakub Krzyzanowski,2026,FS,9324,True,1,1,0,90,0,0,0,0,0
 361567,Raoul Giger,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
 361567,Raoul Giger,2026,PL1,422,False,14,12,0,1024,0,1,0,0,1
 337673,Julian Lelieveld,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
@@ -1530,13 +1563,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 261874,Bartosz Jaroch,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
 261874,Bartosz Jaroch,2026,PL1,422,False,14,0,0,0,0,0,0,0,0
 303455,Joseph Colley,2026,ALB1,2049,False,11,9,1,680,0,0,0,0,2
-303455,Joseph Colley,2026,AFCQ,6186,True,2,0,0,0,0,0,0,0,0
-634003,Kuba Wiśniewski,2026,PL31,6190,False,16,13,1,745,0,1,0,0,4
+303455,Joseph Colley,2026,AFCQ,6186,True,3,0,0,0,0,0,0,0,0
+634003,Kuba Wiśniewski,2026,PL31,6190,False,17,13,1,745,0,1,0,0,4
 847073,Kacper Skrobański,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
 847073,Kacper Skrobański,2026,PL34,6354,False,14,5,0,70,0,0,0,0,1
 847073,Kacper Skrobański,2026,PL1,422,False,14,0,0,0,0,0,0,0,0
 555067,Kacper Duda,2026,POPU,422,False,1,1,0,26,0,0,0,0,0
 555067,Kacper Duda,2026,PL1,422,False,14,14,0,1191,1,1,18,6,3
+555067,Kacper Duda,2026,FS,9324,True,1,1,0,90,1,0,0,0,0
 286622,Julius Ertlthaler,2026,POPU,422,False,1,1,0,26,0,0,0,0,1
 286622,Julius Ertlthaler,2026,PL1,422,False,14,14,0,1106,1,2,23,9,2
 375849,James Igbekeme,2026,POPU,422,False,1,1,0,64,0,0,0,0,0
@@ -1548,9 +1582,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 487116,Marc Carbó,2026,POPU,422,False,1,1,0,73,0,0,0,0,0
 487116,Marc Carbó,2026,PL1,422,False,14,5,0,148,1,0,5,1,0
 1066834,Filip Baniowski,2026,POPU,50162,False,3,1,0,21,0,0,0,0,0
-1066834,Filip Baniowski,2026,PL2L,50162,False,15,15,0,911,0,2,0,0,2
+1066834,Filip Baniowski,2026,PL2L,50162,False,16,16,0,922,0,2,0,0,2
 608656,Dawid Olejarka,2026,POPU,26564,False,3,3,0,150,0,3,0,0,1
-608656,Dawid Olejarka,2026,PL2L,26564,False,15,15,0,1235,0,7,0,0,2
+608656,Dawid Olejarka,2026,PL2L,26564,False,16,16,0,1309,0,7,0,0,2
 440332,Ángel Rodado,2026,POPU,422,False,1,1,0,90,0,1,0,0,1
 440332,Ángel Rodado,2026,PL1,422,False,14,14,0,956,4,1,49,11,1
 901070,Maciej Kuziemka,2026,POPU,422,False,1,1,0,90,1,0,0,0,0
@@ -1573,7 +1607,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 555060,Piotr Starzyński,2026,PL1,422,False,14,0,0,0,0,0,0,0,0
 826506,Antoni Mikułko,2026,POPU,30974,False,1,1,0,90,0,0,0,0,0
 826506,Antoni Mikułko,2026,PL1,30974,False,14,4,0,360,0,0,0,0,0
-1427689,Antoni Kustra,2026,PL31,6190,False,15,0,0,0,0,0,0,0,0
+1427689,Antoni Kustra,2026,PL31,6190,False,16,0,0,0,0,0,0,0,0
 831597,Aleksandar Djermanovic,2026,POPU,30974,False,1,1,0,90,0,0,0,0,0
 831597,Aleksandar Djermanovic,2026,PL1,30974,False,14,9,0,810,0,0,2,1,3
 384482,Kamil Pestka,2026,POPU,30974,False,1,1,0,19,0,0,0,0,0
@@ -1585,14 +1619,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 448567,Daniel Mikolajewski,2026,IN1L,50276,False,6,0,4,0,0,0,0,0,0
 448567,Daniel Mikolajewski,2026,ASCC,50276,False,1,1,0,25,0,0,0,0,0
 448567,Daniel Mikolajewski,2026,AFCP,50276,False,2,2,0,108,0,0,0,0,0
-74722,Rafał Pietrzak,2026,PL34,101472,False,16,13,0,1060,0,0,0,0,2
+74722,Rafał Pietrzak,2026,U17Q,23136,True,2,0,0,0,0,0,0,0,0
+74722,Rafał Pietrzak,2026,PL34,101472,False,17,14,0,1150,0,0,0,0,2
 74722,Rafał Pietrzak,2026,FS,23136,True,3,0,0,0,0,0,0,0,0
-185679,Michał Koj,2026,PL34,101472,False,16,12,1,949,1,1,0,0,4
+185679,Michał Koj,2026,PL34,101472,False,17,12,1,949,1,1,0,0,4
 242846,Dawid Szymonowicz,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
-242846,Dawid Szymonowicz,2026,PL34,101472,False,14,7,0,599,0,0,0,0,0
+242846,Dawid Szymonowicz,2026,PL34,101472,False,15,8,0,689,0,0,0,0,0
 242846,Dawid Szymonowicz,2026,PL1,30974,False,14,0,0,0,0,0,0,0,0
 1435606,Kacper Zagrodzki,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
-1435606,Kacper Zagrodzki,2026,PL34,101472,False,16,8,0,658,0,0,0,0,2
+1435606,Kacper Zagrodzki,2026,PL34,101472,False,17,9,0,748,0,0,0,0,2
 1435606,Kacper Zagrodzki,2026,PL1,30974,False,14,0,0,0,0,0,0,0,0
 706511,Nikola Knezevic,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
 706511,Nikola Knezevic,2026,PL34,101472,False,1,1,0,90,1,0,0,0,0
@@ -1601,11 +1636,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 176485,Lucas Piazón,2026,PL1,30974,False,14,14,0,1222,4,2,24,10,3
 390169,Petar Pusic,2026,POPU,30974,False,1,1,0,61,0,0,0,0,0
 390169,Petar Pusic,2026,PL1,30974,False,14,11,0,365,0,1,6,0,2
-266170,Tomasz Swędrowski,2026,PL31,29205,False,16,9,0,804,5,2,0,0,0
+266170,Tomasz Swędrowski,2026,PL31,29205,False,17,10,0,819,5,2,0,0,0
 121411,Joan Román,2026,POPU,8984,False,2,1,0,8,0,0,0,0,0
 121411,Joan Román,2026,PL2L,8984,False,13,9,0,286,0,0,0,0,0
 288542,Michał Trąbka,2026,POPU,1750,False,3,3,0,294,0,0,0,0,0
-288542,Michał Trąbka,2026,PL2L,1750,False,15,13,0,1170,1,1,0,0,2
+288542,Michał Trąbka,2026,PL2L,1750,False,15,14,0,1246,1,1,0,0,2
 842718,Paulinho,2026,POPO,7788,False,1,1,0,70,0,0,0,0,0
 842718,Paulinho,2026,POCP,7788,False,1,0,0,0,0,0,0,0,0
 842718,Paulinho,2026,PO1,7788,False,9,1,0,1,0,0,0,0,0
@@ -1614,7 +1649,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 404949,Stefan Feiertag,2026,PL1,30974,False,14,1,0,79,1,0,2,1,0
 225431,Lisandro Semedo,2026,POPU,30974,False,1,1,0,90,0,0,0,0,0
 225431,Lisandro Semedo,2026,PL1,30974,False,14,14,0,905,4,1,22,9,1
-228885,Carlitos,2026,E4G3,67212,False,9,9,0,399,5,0,0,0,0
+228885,Carlitos,2026,E4G3,67212,False,10,10,0,458,5,0,0,0,0
 1143675,Tobiasz Mras,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
 1143675,Tobiasz Mras,2026,PL34,101472,False,16,7,0,467,0,0,0,0,0
 1143675,Tobiasz Mras,2026,PL1,30974,False,14,4,0,167,0,0,4,0,0
@@ -1625,11 +1660,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 697880,Jakub Burek,2026,PL1,2118,False,13,0,0,0,0,0,0,0,0
 1121278,Stanisław Pruszkowski,2026,POPU,30753,False,1,0,0,0,0,0,0,0,0
 1121278,Stanisław Pruszkowski,2026,PL2,30753,False,14,14,0,1260,0,0,0,0,0
-495839,Andrias Edmundsson,2026,UNLC,9173,True,4,3,0,270,0,1,8,3,2
+495839,Andrias Edmundsson,2026,UNLC,9173,True,5,4,0,360,0,1,9,3,3
 495839,Andrias Edmundsson,2026,IT2,276,False,11,10,1,877,0,0,2,1,4
 495839,Andrias Edmundsson,2026,CIT,276,False,2,2,0,180,0,0,1,1,0
 1308198,Oskar Klat,2026,POPU,26564,False,3,0,0,0,0,0,0,0,0
-1308198,Oskar Klat,2026,PL2L,26564,False,15,0,0,0,0,0,0,0,0
+1308198,Oskar Klat,2026,PL2L,26564,False,16,0,0,0,0,0,0,0,0
 566983,Aleksandre Kalandadze,2026,ECLQ,663,False,4,4,0,379,0,0,0,0,1
 221074,Marcus Haglind-Sangré,2026,POPU,2118,False,2,1,0,90,0,0,0,0,0
 221074,Marcus Haglind-Sangré,2026,PL1,2118,False,13,13,0,1161,1,0,10,6,3
@@ -1637,10 +1672,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 332142,Quentin Lecoeuche,2026,GR1,60949,False,10,4,6,263,0,0,0,0,0
 550549,Tomás Tavares,2026,POPO,1301,False,1,1,0,5,0,0,0,0,0
 550549,Tomás Tavares,2026,POCP,1301,False,1,0,0,0,0,0,0,0,0
-550549,Tomás Tavares,2026,PO1,1301,False,11,4,0,124,0,0,0,0,2
+550549,Tomás Tavares,2026,PO1,1301,False,10,4,0,124,0,0,0,0,2
 317035,Marin Karamarko,2026,PL1,2118,False,4,1,0,45,0,0,2,0,0
 317035,Marin Karamarko,2026,BOS1,2573,False,11,11,0,982,0,0,0,0,0
 317035,Marin Karamarko,2026,BIHP,2573,False,1,1,0,90,0,0,0,0,0
+129358,Marcin Kamiński,2026,U17Q,23136,True,1,0,0,0,0,0,0,0,0
 129358,Marcin Kamiński,2026,POPU,2118,False,2,1,0,120,0,0,0,0,0
 129358,Marcin Kamiński,2026,PL1,2118,False,13,13,0,1170,0,0,7,1,0
 129358,Marcin Kamiński,2026,FS,23136,True,3,0,0,0,0,0,0,0,0
@@ -1651,10 +1687,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1171955,Matvey Bokhno,2026,POPU,20965,False,1,1,0,90,0,0,0,0,0
 1171955,Matvey Bokhno,2026,PL31,20965,False,16,12,0,1080,0,2,0,0,2
 1171955,Matvey Bokhno,2026,PL1,2118,False,13,0,0,0,0,0,0,0,0
+1171955,Matvey Bokhno,2026,FS,22247,True,2,2,0,120,0,0,0,0,0
 717662,Dawid Barnowski,2026,POPU,9109,False,3,3,0,300,1,0,0,0,0
-717662,Dawid Barnowski,2026,PL2L,9109,False,15,15,0,1350,3,1,0,0,3
+717662,Dawid Barnowski,2026,PL2L,9109,False,16,16,0,1440,3,1,0,0,3
 1068256,Filip Zając,2026,POPU,20965,False,1,0,1,0,0,0,0,0,0
-1068256,Filip Zając,2026,PL31,20965,False,16,0,13,0,0,0,0,0,0
+1068256,Filip Zając,2026,PL31,20965,False,17,0,13,0,0,0,0,0,0
 1073747,Dominik Sarapata,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
 1073747,Dominik Sarapata,2026,TSP,24325,False,2,2,0,170,0,1,0,0,0
 1073747,Dominik Sarapata,2026,TS1,24325,False,8,6,0,224,0,0,2,1,0
@@ -1663,7 +1700,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1073747,Dominik Sarapata,2026,CZ3M,88889,False,1,1,0,45,0,0,0,0,0
 371861,Zan Rogelj,2026,POPU,2118,False,2,1,0,49,0,0,0,0,0
 371861,Zan Rogelj,2026,PL1,2118,False,13,13,0,1170,1,2,10,3,1
-1018224,Wiktor Nowak,2026,UNLB,3442,True,4,4,0,287,0,0,6,1,0
+1018224,Wiktor Nowak,2026,UNLB,3442,True,5,5,0,377,0,0,8,1,0
 1018224,Wiktor Nowak,2026,TSP,62,False,2,1,0,77,1,0,0,0,0
 1018224,Wiktor Nowak,2026,TS1,62,False,14,13,0,977,5,1,32,10,3
 1018224,Wiktor Nowak,2026,CL,62,False,4,4,0,290,1,0,5,2,1
@@ -1676,7 +1713,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 981937,Gleb Kuchko,2026,PL1,2118,False,13,3,0,29,0,0,2,1,0
 784429,Jorge Jiménez,2026,POPU,2118,False,2,0,0,0,0,0,0,0,0
 784429,Jorge Jiménez,2026,PL1,2118,False,13,6,0,361,0,0,5,2,0
-523947,Kevin Custovic,2026,KRC,24575,False,1,1,0,71,0,0,0,0,0
+523947,Kevin Custovic,2026,KRC,24575,False,2,1,0,71,0,0,0,0,0
 523947,Kevin Custovic,2026,KR1,24575,False,13,9,0,292,0,0,0,0,0
 274858,Kyriakos Savvidis,2026,POPU,2118,False,2,1,0,120,0,0,0,0,1
 274858,Kyriakos Savvidis,2026,PL1,2118,False,13,4,0,67,0,0,0,0,0
@@ -1696,12 +1733,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 194139,Fabian Hiszpański,2026,PL1,2118,False,13,10,0,290,0,1,3,2,2
 1434459,Nikodem Rogowski,2026,POPU,2118,False,2,0,0,0,0,0,0,0,0
 1434459,Nikodem Rogowski,2026,POPU,20965,False,1,1,0,80,0,0,0,0,0
-1434459,Nikodem Rogowski,2026,PL31,20965,False,16,13,0,971,1,4,0,0,2
+1434459,Nikodem Rogowski,2026,PL31,20965,False,17,14,0,1056,1,4,0,0,2
 1434459,Nikodem Rogowski,2026,PL1,2118,False,13,0,0,0,0,0,0,0,0
 652996,Said Hamulic,2026,POPU,2118,False,2,2,0,104,1,0,0,0,0
 652996,Said Hamulic,2026,PL1,2118,False,13,11,0,495,2,0,27,11,0
 1434386,Mateusz Leśniewski,2026,POPU,20965,False,1,1,0,10,0,0,0,0,0
-1434386,Mateusz Leśniewski,2026,PL31,20965,False,16,13,0,501,0,1,0,0,1
+1434386,Mateusz Leśniewski,2026,PL31,20965,False,17,14,0,571,0,1,0,0,2
 407697,Deni Jurić,2026,POPU,2118,False,2,1,0,99,0,0,0,0,0
 407697,Deni Jurić,2026,PL1,2118,False,13,6,0,90,0,0,2,0,0
 554404,Giannis Niarchos,2026,TSP,5544,False,3,1,0,64,0,0,0,0,0
@@ -1722,7 +1759,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 667692,Patryk Szczuka,2026,PL1,6456,False,5,0,0,0,0,0,0,0,0
 667692,Patryk Szczuka,2026,ECLQ,6456,False,4,0,0,0,0,0,0,0,0
 266239,Dawid Kudła,2026,POPU,6560,False,1,1,0,90,0,0,0,0,0
-266239,Dawid Kudła,2026,PL33,6560,False,16,16,0,1440,0,1,0,0,2
+266239,Dawid Kudła,2026,PL33,6560,False,17,17,0,1530,0,1,0,0,2
 1535382,Wojciech Pańkowski,2026,POPU,6456,False,1,0,0,0,0,0,0,0,0
 1535382,Wojciech Pańkowski,2026,PL1,6456,False,14,0,0,0,0,0,0,0,0
 1535382,Wojciech Pańkowski,2026,ECLQ,6456,False,4,0,0,0,0,0,0,0,0
@@ -1748,6 +1785,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 579448,Konrad Gruszkowski,2026,PL2,6107,False,14,13,0,958,1,1,0,0,3
 919469,Mateusz Kowalczyk,2026,POPU,6456,False,1,1,0,15,0,0,0,0,0
 919469,Mateusz Kowalczyk,2026,PL1,6456,False,14,12,0,883,1,1,5,2,3
+919469,Mateusz Kowalczyk,2026,FS,9324,True,1,1,0,61,0,0,0,0,0
 919469,Mateusz Kowalczyk,2026,ECLQ,6456,False,4,2,0,96,0,0,0,0,0
 374321,Eman Marković,2026,POPU,6456,False,1,0,0,0,0,0,0,0,0
 374321,Eman Marković,2026,PL1,6456,False,14,10,0,486,1,0,22,7,1
@@ -1781,12 +1819,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 391374,Marcin Wasielewski,2026,ECLQ,6456,False,4,4,0,195,0,0,0,0,0
 331278,Mateusz Marzec,2026,POPU,4896,False,3,2,0,164,0,0,0,0,0
 331278,Mateusz Marzec,2026,PL2,4896,False,14,14,0,475,0,0,0,0,2
-255905,Jakub Łukowski,2026,PL2L,7153,False,5,4,0,215,1,1,0,0,0
-1237868,Kacper Ćwielong,2026,PL33,10372,False,16,16,0,820,2,0,0,0,0
+255905,Jakub Łukowski,2026,PL2L,7153,False,5,5,0,293,1,1,0,0,0
+1237868,Kacper Ćwielong,2026,PL33,10372,False,17,17,0,827,2,0,0,0,0
 296499,Grzegorz Rogala,2026,POPU,3291,False,3,3,0,198,0,0,0,0,0
-296499,Grzegorz Rogala,2026,PL2L,3291,False,15,15,0,913,3,2,0,0,1
+296499,Grzegorz Rogala,2026,PL2L,3291,False,16,16,0,1003,3,2,0,0,1
 1030359,Alan Bród,2026,POPU,50162,False,3,3,0,163,0,2,0,0,1
-1030359,Alan Bród,2026,PL2L,50162,False,15,5,0,280,0,0,0,0,0
+1030359,Alan Bród,2026,PL2L,50162,False,16,5,0,280,0,0,0,0,0
 261155,Adam Zrelak,2026,POPU,6456,False,1,0,0,0,0,0,0,0,0
 261155,Adam Zrelak,2026,PL1,6456,False,14,4,0,63,0,0,2,1,0
 261155,Adam Zrelak,2026,ECLQ,6456,False,4,3,0,163,1,0,0,0,0
@@ -1801,7 +1839,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 925734,Bartosz Głogowski,2026,PL2L,8984,False,15,5,0,450,0,0,0,0,0
 1019689,Hubert Śliczniak,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
 1019689,Hubert Śliczniak,2026,POPU,22568,False,3,0,0,0,0,0,0,0,0
-1019689,Hubert Śliczniak,2026,PL2L,22568,False,14,5,0,450,0,0,0,0,0
+1019689,Hubert Śliczniak,2026,PL2L,22568,False,16,6,0,540,0,0,0,0,0
 1019689,Hubert Śliczniak,2026,PL1,759,False,14,0,0,0,0,0,0,0,0
 742943,Michal Rosiak,2026,UCOL,317,False,3,1,0,4,0,0,0,0,0
 742943,Michal Rosiak,2026,PL1,759,False,6,6,0,347,0,0,6,0,2
@@ -1811,16 +1849,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1301689,Dominik Klint,2026,PL2L,22568,False,15,10,0,900,0,0,0,0,0
 1301689,Dominik Klint,2026,PL1,759,False,14,0,0,0,0,0,0,0,0
 964757,Krzysztof Kurowski,2026,UCOL,317,False,3,0,0,0,0,0,0,0,0
-964757,Krzysztof Kurowski,2026,SU20,16299,True,2,2,0,90,1,0,0,0,0
+964757,Krzysztof Kurowski,2026,SU20,16299,True,3,2,0,90,1,0,0,0,0
 964757,Krzysztof Kurowski,2026,NL1,317,False,12,1,0,13,0,0,1,1,0
 964757,Krzysztof Kurowski,2026,ELQ,317,False,2,0,0,0,0,0,0,0,0
 964757,Krzysztof Kurowski,2026,ECLQ,317,False,4,1,0,45,0,1,2,1,0
 964757,Krzysztof Kurowski,2026,211F,18026,False,1,1,0,90,0,0,0,0,0
 699118,Yegor Matsenko,2026,POPU,759,False,2,2,0,148,1,0,0,0,0
-699118,Yegor Matsenko,2026,PL1,759,False,14,11,0,981,0,1,14,2,0
+699118,Yegor Matsenko,2026,PL1,759,False,14,11,2,981,0,1,14,2,0
 353374,Lamine Ba,2026,POPU,759,False,2,2,0,210,0,0,0,0,0
 353374,Lamine Ba,2026,PL1,759,False,14,12,2,1055,0,0,2,0,2
-353374,Lamine Ba,2026,AFCQ,14238,True,2,2,0,180,0,0,0,0,0
+353374,Lamine Ba,2026,AFCQ,14238,True,3,2,0,180,0,0,0,0,0
 331871,Mariusz Malec,2026,POPU,759,False,2,2,0,119,0,0,0,0,0
 331871,Mariusz Malec,2026,PL1,759,False,14,13,0,925,0,0,0,0,0
 502981,Marko Dijakovic,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
@@ -1845,16 +1883,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1146124,Dorian Markowski,2026,PL1,759,False,14,3,0,128,0,0,0,0,0
 284871,Patryk Sokołowski,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
 284871,Patryk Sokołowski,2026,POPU,22568,False,3,2,0,180,0,0,0,0,0
-284871,Patryk Sokołowski,2026,PL2L,22568,False,14,10,1,632,0,1,0,0,3
+284871,Patryk Sokołowski,2026,PL2L,22568,False,15,11,1,722,0,1,0,0,3
 284871,Patryk Sokołowski,2026,PL1,759,False,14,0,0,0,0,0,0,0,0
-818899,Simon Schierack,2026,SAPO,497,False,2,2,0,177,0,1,0,0,1
+818899,Simon Schierack,2026,SAPO,497,False,3,2,0,177,0,1,0,0,1
 818899,Simon Schierack,2026,RLN4,497,False,16,16,0,1039,1,0,0,0,3
-930125,Maksymilian Dziuba,2026,PL32,8468,False,16,16,0,1421,6,5,0,0,1
+930125,Maksymilian Dziuba,2026,PL32,8468,False,16,16,0,1421,6,6,0,0,1
 813506,Wiktor Niewiarowski,2026,POPU,3291,False,3,1,0,21,0,0,0,0,0
-813506,Wiktor Niewiarowski,2026,PL2L,3291,False,15,7,0,306,2,1,0,0,1
+813506,Wiktor Niewiarowski,2026,PL2L,3291,False,16,8,0,368,2,1,0,0,1
 925733,Oskar Wojtczak,2026,POPU,1750,False,3,3,0,112,0,1,0,0,0
-925733,Oskar Wojtczak,2026,PL2L,1750,False,15,4,0,177,0,0,0,0,1
-1334172,Przemyslaw Mazan,2026,U17Q,23136,True,1,1,0,90,0,0,0,0,1
+925733,Oskar Wojtczak,2026,PL2L,1750,False,15,5,0,191,0,0,0,0,1
+1334172,Przemyslaw Mazan,2026,U17Q,23136,True,2,2,0,170,0,0,2,0,1
 1334172,Przemyslaw Mazan,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
 1334172,Przemyslaw Mazan,2026,POPU,22568,False,2,2,0,56,0,0,0,0,0
 1334172,Przemyslaw Mazan,2026,PLZJ,15530,False,12,9,0,549,0,0,0,0,1
@@ -1884,7 +1922,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 790524,Wiktor Koptas,2026,POPU,7154,False,2,0,0,0,0,0,0,0,0
 790524,Wiktor Koptas,2026,PL1,7154,False,14,0,0,0,0,0,0,0,0
 1126322,Michał Jerke,2026,POPU,26564,False,3,3,0,300,0,0,0,0,0
-1126322,Michał Jerke,2026,PL2L,26564,False,15,15,0,1350,0,0,0,0,0
+1126322,Michał Jerke,2026,PL2L,26564,False,16,16,0,1440,0,0,0,0,0
 576121,Josh Wilson-Esbrand,2026,GBFL,9265,False,3,2,0,90,0,1,0,0,0
 576121,Josh Wilson-Esbrand,2026,GBCS,281,False,1,0,0,0,0,0,0,0,0
 576121,Josh Wilson-Esbrand,2026,GB21,9265,False,4,1,0,58,0,0,0,0,0
@@ -1897,7 +1935,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 604293,Steve Kingue,2026,PL1,7154,False,14,5,0,450,1,0,6,1,1
 517845,Jérémy Blasco,2026,POPU,7154,False,1,1,0,90,0,0,0,0,0
 517845,Jérémy Blasco,2026,PL1,7154,False,6,2,0,4,0,0,0,0,0
-517845,Jérémy Blasco,2026,E3G2,13241,False,10,8,0,720,0,0,2,0,1
+517845,Jérémy Blasco,2026,E3G2,13241,False,11,9,0,810,0,0,2,0,2
 264278,Jan Grzesik,2026,POPU,7154,False,2,2,0,210,0,0,0,0,1
 264278,Jan Grzesik,2026,PL1,7154,False,14,14,0,1253,5,4,32,9,1
 876440,João Pedro,2026,RKPO,30925,False,2,0,0,0,0,0,0,0,0
@@ -1914,8 +1952,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 415646,Bruno Jordão,2026,BULS,208,False,1,1,0,2,0,0,0,0,0
 415646,Bruno Jordão,2026,BULP,208,False,1,1,0,90,0,0,0,0,1
 415646,Bruno Jordão,2026,BU1,208,False,14,13,0,890,2,0,0,0,3
-379150,Paulius Golubickas,2026,UNLD,3851,True,3,0,0,0,0,0,0,0,0
-379150,Paulius Golubickas,2026,FS,3851,True,1,0,0,0,0,0,0,0,0
+379150,Paulius Golubickas,2026,UNLD,3851,True,4,0,0,0,0,0,0,0,0
+379150,Paulius Golubickas,2026,FS,3851,True,2,1,0,45,0,0,0,0,0
 379150,Paulius Golubickas,2026,ECLQ,602,False,6,6,0,481,0,2,0,0,0
 249983,Roberto Alves,2026,POPU,7154,False,2,0,0,0,0,0,0,0,0
 249983,Roberto Alves,2026,PL1,7154,False,14,7,0,510,2,0,8,2,1
@@ -1938,11 +1976,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 640735,Abdoul Tapsoba,2026,POPU,7154,False,2,1,0,77,1,0,0,0,0
 640735,Abdoul Tapsoba,2026,PL1,7154,False,14,11,1,521,0,1,16,2,4
 640735,Abdoul Tapsoba,2026,FS,5872,True,1,0,0,0,0,0,0,0,0
-640735,Abdoul Tapsoba,2026,AFCQ,5872,True,2,1,0,59,0,0,1,0,0
+640735,Abdoul Tapsoba,2026,AFCQ,5872,True,3,2,0,65,0,0,1,0,0
 374987,Elves Baldé,2026,POPU,7154,False,2,1,0,60,0,1,0,0,0
 374987,Elves Baldé,2026,PL1,7154,False,14,2,0,65,0,0,3,0,0
-885694,Depú,2026,AFCQ,3585,True,2,0,0,0,0,0,0,0,0
-885694,Depú,2026,ACL,7084,False,2,2,0,180,2,0,0,0,0
+885694,Depú,2026,AFCQ,3585,True,3,0,0,0,0,0,0,0,0
+885694,Depú,2026,ACL,7084,False,4,2,0,180,2,0,0,0,0
 973575,Guilherme Zimovski,2026,CYP2,21958,False,7,3,0,49,0,0,0,0,1
 884823,Alex Niziołek,2026,POPU,7154,False,1,0,0,0,0,0,0,0,0
 884823,Alex Niziołek,2026,PL1,7154,False,8,0,0,0,0,0,0,0,0
@@ -1951,6 +1989,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 404345,Frantisek Plach,2026,PL1,6112,False,14,0,14,0,0,0,0,0,0
 704970,Igor Drapiński,2026,TR1,152,False,11,4,2,264,0,0,0,0,0
 704970,Igor Drapiński,2026,PL1,6112,False,2,2,0,180,0,0,1,0,1
+704970,Igor Drapiński,2026,FS,9324,True,1,1,0,90,0,0,0,0,0
 1510054,Jakub Grelich,2026,POPU,6112,False,2,0,0,0,0,0,0,0,0
 1510054,Jakub Grelich,2026,PL1,6112,False,14,0,0,0,0,0,0,0,0
 929423,Jakub Lewicki,2026,POPU,6112,False,2,2,0,136,0,0,0,0,0
@@ -1979,17 +2018,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726397,Szczepan Mucha,2026,PL1,6112,False,14,9,0,268,1,1,8,4,1
 117683,Michał Chrapek,2026,POPU,318,False,2,2,0,95,2,0,0,0,0
 117683,Michał Chrapek,2026,PL2,318,False,14,12,0,822,2,1,0,0,2
-1257586,Oliwier Maziarz,2026,SU20,16299,True,2,2,0,106,0,0,0,0,0
+1257586,Oliwier Maziarz,2026,SU20,16299,True,3,3,0,151,0,0,0,0,0
 1257586,Oliwier Maziarz,2026,POPU,6112,False,2,2,0,88,0,0,0,0,0
 1257586,Oliwier Maziarz,2026,PL1,6112,False,14,7,0,43,1,0,1,1,0
-1428281,Kamil Lubowiecki,2026,PL33,22475,False,16,16,0,1407,0,2,0,0,3
+1428281,Kamil Lubowiecki,2026,PL33,22475,False,17,17,0,1497,0,2,0,0,3
 539154,Leandro Sanca,2026,POPU,6112,False,2,2,0,77,0,0,0,0,0
 539154,Leandro Sanca,2026,PL1,6112,False,14,14,0,976,4,1,39,14,2
 931416,Ivan Lima,2026,POPU,6112,False,2,2,0,148,0,2,0,0,0
 931416,Ivan Lima,2026,PL1,6112,False,14,12,0,675,0,3,21,4,2
 628301,Hugo Vallejo,2026,POPU,6112,False,2,2,0,70,0,0,0,0,0
 628301,Hugo Vallejo,2026,PL1,6112,False,14,14,0,1163,5,1,23,9,0
-755211,German Barkovskiy,2026,UNLC,3450,True,4,4,0,225,0,0,2,2,2
+755211,German Barkovskiy,2026,UNLC,3450,True,6,5,0,287,0,0,4,2,3
 755211,German Barkovskiy,2026,TS1,1897,False,3,0,3,0,0,0,0,0,0
 755211,German Barkovskiy,2026,POPU,2745,False,1,1,0,22,0,0,0,0,1
 755211,German Barkovskiy,2026,PL2,28893,False,4,4,0,338,0,0,0,0,0
@@ -2007,7 +2046,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 345437,Mateusz Lis,2026,CLQ,238,False,2,2,0,210,0,0,0,0,0
 251930,Jorge Félix,2026,POPU,6112,False,2,1,0,81,1,0,0,0,0
 251930,Jorge Félix,2026,PL1,6112,False,14,7,0,132,0,0,1,0,0
-1334166,Aleks Olsztyn,2026,U17Q,23136,True,1,0,0,0,0,0,0,0,0
+1334166,Aleks Olsztyn,2026,U17Q,23136,True,2,0,0,0,0,0,0,0,0
 1334166,Aleks Olsztyn,2026,POPU,238,False,1,0,0,0,0,0,0,0,0
 1334166,Aleks Olsztyn,2026,PLZJ,15519,False,13,9,0,810,0,0,0,0,0
 1334166,Aleks Olsztyn,2026,PL32,8468,False,8,0,0,0,0,0,0,0,0
@@ -2031,7 +2070,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1237144,Piotr Bartczak,2026,PLZJ,15519,False,1,1,0,90,0,0,0,0,0
 1237144,Piotr Bartczak,2026,PL32,8468,False,15,10,0,686,1,0,0,0,4
 1237144,Piotr Bartczak,2026,PL1,238,False,7,0,0,0,0,0,0,0,0
-1237144,Piotr Bartczak,2026,FS,16297,True,2,2,0,104,0,0,0,0,0
+1237144,Piotr Bartczak,2026,FS,16297,True,4,4,0,278,1,0,0,0,0
 1237144,Piotr Bartczak,2026,EL,238,False,4,0,0,0,0,0,0,0,0
 258007,Gustav Berggren,2026,POPU,238,False,1,1,0,90,0,0,0,0,0
 258007,Gustav Berggren,2026,PL1,238,False,10,8,0,254,0,0,4,0,0
@@ -2064,6 +2103,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1297215,Jan Bienduga,2026,19YL,50938,False,2,2,0,180,0,0,0,0,0
 821923,Robert Deziel Jr.,2026,POPU,255,False,1,1,0,83,0,0,0,0,0
 821923,Robert Deziel Jr.,2026,PL1,255,False,14,13,0,1139,0,0,4,0,1
+821923,Robert Deziel Jr.,2026,FS,35707,True,1,0,0,0,0,0,0,0,0
 1265957,Mateusz Lauryn,2026,U19Q,16298,True,4,4,0,360,0,0,0,0,0
 1265957,Mateusz Lauryn,2026,PL2L,6628,False,15,13,0,1080,1,0,0,0,2
 1265957,Mateusz Lauryn,2026,PL1,255,False,7,0,0,0,0,0,0,0,0
@@ -2073,13 +2113,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1209572,Bartosz Korżynski,2026,PLZJ,14706,False,1,1,0,90,0,0,0,0,0
 1209572,Bartosz Korżynski,2026,PL2L,6628,False,15,12,1,950,0,0,0,0,0
 1209572,Bartosz Korżynski,2026,PL1,255,False,14,0,0,0,0,0,0,0,0
-1209572,Bartosz Korżynski,2026,FS,16297,True,2,2,0,180,0,0,0,0,0
+1209572,Bartosz Korżynski,2026,FS,16297,True,4,4,0,360,0,0,0,0,0
 1209572,Bartosz Korżynski,2026,19YL,50938,False,2,2,0,180,0,0,0,0,0
 1073744,Mateusz Szczepaniak,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
 1073744,Mateusz Szczepaniak,2026,SU20,16299,True,1,1,0,45,0,1,0,0,0
 1073744,Mateusz Szczepaniak,2026,POPU,255,False,1,1,0,6,0,0,0,0,0
 1073744,Mateusz Szczepaniak,2026,PL2L,6628,False,15,6,0,376,1,1,0,0,2
 1073744,Mateusz Szczepaniak,2026,PL1,255,False,14,7,0,354,0,0,9,2,1
+1073744,Mateusz Szczepaniak,2026,FS,9324,True,1,1,0,7,0,0,0,0,0
 1073744,Mateusz Szczepaniak,2026,19YL,50938,False,1,1,0,89,0,1,0,0,1
 651731,Michal Sevcik,2026,POPU,255,False,1,1,0,23,0,0,0,0,0
 651731,Michal Sevcik,2026,PL2L,6628,False,3,2,0,90,0,0,0,0,0
@@ -2087,7 +2128,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 576454,Shinnosuke Fukuda,2026,PL2L,6628,False,7,2,0,180,0,0,0,0,0
 576454,Shinnosuke Fukuda,2026,PL1,255,False,8,2,0,32,0,0,0,0,0
 576454,Shinnosuke Fukuda,2026,JAP1,593,False,5,4,0,360,1,1,5,1,0
-1405659,Franciszek Stępniewski,2026,U17Q,23136,True,1,1,0,45,0,0,0,0,0
+1268897,Erik Mikanovich,2026,POPU,255,False,1,0,0,0,0,0,0,0,0
+1268897,Erik Mikanovich,2026,PL2L,6628,False,15,12,0,858,0,1,0,0,1
+1268897,Erik Mikanovich,2026,PL1,255,False,14,1,0,8,0,0,1,0,0
+1268897,Erik Mikanovich,2026,19YL,50938,False,2,2,0,180,0,0,0,0,0
+1405659,Franciszek Stępniewski,2026,U17Q,23136,True,2,2,0,135,0,0,4,1,0
 1405659,Franciszek Stępniewski,2026,PLZJ,14706,False,4,2,0,156,0,0,0,0,0
 1405659,Franciszek Stępniewski,2026,PL2L,6628,False,11,6,0,338,2,3,0,0,0
 1405659,Franciszek Stępniewski,2026,PL1,255,False,5,1,0,45,0,0,1,0,0
@@ -2099,10 +2144,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1194250,Filip Przybyłko,2026,PL1,255,False,14,0,0,0,0,0,0,0,0
 1194250,Filip Przybyłko,2026,FS,16298,True,3,3,0,200,0,0,0,0,1
 1194250,Filip Przybyłko,2026,19YL,50938,False,2,2,0,180,0,0,0,0,1
-1268897,Erik Mikanovich,2026,POPU,255,False,1,0,0,0,0,0,0,0,0
-1268897,Erik Mikanovich,2026,PL2L,6628,False,15,12,0,858,0,1,0,0,1
-1268897,Erik Mikanovich,2026,PL1,255,False,14,1,0,8,0,0,1,0,0
-1268897,Erik Mikanovich,2026,19YL,50938,False,2,2,0,180,0,0,0,0,0
 334802,Jan Kuchta,2026,TS1,197,False,3,1,0,67,0,0,2,1,0
 334802,Jan Kuchta,2026,POPU,255,False,1,1,0,34,0,0,0,0,0
 334802,Jan Kuchta,2026,PL2L,6628,False,1,1,0,61,0,0,0,0,0
@@ -2121,10 +2162,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 372445,Dani Silva,2026,DK1,865,False,5,0,0,0,0,0,0,0,0
 448058,Giannis Papanikolaou,2026,POPU,88,False,1,1,0,26,0,0,0,0,1
 448058,Giannis Papanikolaou,2026,PL1,88,False,14,10,3,649,0,1,11,2,3
-330126,Karol Swiderski,2026,UNLB,3442,True,4,4,0,184,0,0,3,1,1
-330126,Karol Swiderski,2026,POPU,88,False,1,1,0,26,0,0,0,0,0
-330126,Karol Swiderski,2026,PL1,88,False,14,14,0,987,5,1,30,10,2
-1549309,Franciszek Golański,2026,U17Q,23136,True,1,0,0,0,0,0,0,0,0
+330126,Karol Świderski,2026,UNLB,3442,True,5,5,0,254,0,0,3,1,1
+330126,Karol Świderski,2026,POPU,88,False,1,1,0,26,0,0,0,0,0
+330126,Karol Świderski,2026,PL1,88,False,14,14,0,987,5,1,30,10,2
+1549309,Franciszek Golański,2026,U17Q,23136,True,2,1,0,86,0,0,0,0,0
 1549309,Franciszek Golański,2026,POPU,14073,False,1,1,0,90,0,0,0,0,0
 1549309,Franciszek Golański,2026,PL31,14073,False,14,12,0,1080,0,0,0,0,0
 1549309,Franciszek Golański,2026,PL1,88,False,4,0,0,0,0,0,0,0,0
@@ -2135,6 +2176,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 507479,Darian Males,2026,C1,452,False,4,0,1,0,0,0,0,0,0
 544895,Paulinho Bóia,2026,POPU,88,False,1,0,1,0,0,0,0,0,0
 544895,Paulinho Bóia,2026,PL1,88,False,12,1,8,6,0,0,1,0,1
+928037,Ioan Vermeșan,2026,SU20,73100,True,1,1,0,27,0,0,0,0,0
 928037,Ioan Vermeșan,2026,PL31,14073,False,1,1,0,80,0,0,0,0,1
 928037,Ioan Vermeșan,2026,PL1,88,False,7,3,0,54,0,0,2,0,1
 928037,Ioan Vermeșan,2026,IT2,276,False,3,0,0,0,0,0,0,0,0
@@ -2179,7 +2221,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1212049,Jakub Kucharski,2026,PL2,9510,False,7,0,0,0,0,0,0,0,0
 1212049,Jakub Kucharski,2026,PL1,2300,False,7,1,0,1,0,0,0,0,0
 1212049,Jakub Kucharski,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
-1057820,Jeremy Agbonifo,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+1057820,Jeremy Agbonifo,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2026,PL1,2300,False,13,9,0,264,0,0,6,1,2
 1057820,Jeremy Agbonifo,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
@@ -2195,16 +2237,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 469690,Nik Prelec,2026,PL1,2300,False,13,12,0,830,4,2,19,7,1
 469690,Nik Prelec,2026,ELQ,2300,False,4,4,0,320,1,0,0,0,0
 469690,Nik Prelec,2026,EL,2300,False,4,3,0,247,0,1,4,0,0
+1105398,Maksim Kononov,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
+1105398,Maksim Kononov,2026,PL31,8716,False,16,15,0,1170,4,0,0,0,2
+1105398,Maksim Kononov,2026,PL1,2300,False,13,0,0,0,0,0,0,0,0
+1105398,Maksim Kononov,2026,FS,22247,True,2,2,0,105,2,0,0,0,1
+1105398,Maksim Kononov,2026,ELQ,2300,False,4,0,0,0,0,0,0,0,0
+1105398,Maksim Kononov,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
 1260542,Paweł Pakieła,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
 1260542,Paweł Pakieła,2026,PL31,8716,False,16,11,0,462,0,0,0,0,2
 1260542,Paweł Pakieła,2026,PL1,2300,False,13,0,0,0,0,0,0,0,0
 1260542,Paweł Pakieła,2026,ELQ,2300,False,4,0,0,0,0,0,0,0,0
 1260542,Paweł Pakieła,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
-1105398,Maksim Kononov,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
-1105398,Maksim Kononov,2026,PL31,8716,False,16,15,0,1170,4,0,0,0,2
-1105398,Maksim Kononov,2026,PL1,2300,False,13,0,0,0,0,0,0,0,0
-1105398,Maksim Kononov,2026,ELQ,2300,False,4,0,0,0,0,0,0,0,0
-1105398,Maksim Kononov,2026,EL,2300,False,4,0,0,0,0,0,0,0,0
 574203,Philipp Schulze,2026,POPU,428,False,1,0,0,0,0,0,0,0,0
 574203,Philipp Schulze,2026,PLSC,428,False,1,1,0,90,0,0,0,0,0
 574203,Philipp Schulze,2026,PL1,428,False,14,14,0,1260,0,0,0,0,1
@@ -2213,13 +2256,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 574203,Philipp Schulze,2026,CLQ,428,False,2,2,0,180,0,0,0,0,0
 1382712,Wiktor Kania,2026,POPU,428,False,1,0,0,0,0,0,0,0,0
 1382712,Wiktor Kania,2026,POPU,10891,False,1,1,0,90,0,0,0,0,0
-1382712,Wiktor Kania,2026,PLZJ,15515,False,14,13,0,1170,0,0,0,0,1
+1382712,Wiktor Kania,2026,PLZJ,15515,False,15,14,0,1260,0,0,0,0,1
 1382712,Wiktor Kania,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
 1382712,Wiktor Kania,2026,PL1,428,False,14,0,0,0,0,0,0,0,0
 1382712,Wiktor Kania,2026,ELQ,428,False,2,0,0,0,0,0,0,0,0
 1382712,Wiktor Kania,2026,ECLQ,428,False,2,0,0,0,0,0,0,0,0
 1382712,Wiktor Kania,2026,CLQ,428,False,2,0,0,0,0,0,0,0,0
 1118867,Michał Synoś,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
+1118867,Michał Synoś,2026,SU20,16299,True,1,1,0,14,0,0,0,0,0
 1118867,Michał Synoś,2026,POPU,15906,False,1,1,0,90,0,0,0,0,0
 1118867,Michał Synoś,2026,PLSC,428,False,1,0,0,0,0,0,0,0,0
 1118867,Michał Synoś,2026,PL2,15906,False,7,6,0,259,0,0,0,0,0
@@ -2275,6 +2319,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 538974,Janis Antiste,2026,POPU,428,False,1,1,0,20,0,0,0,0,1
 538974,Janis Antiste,2026,PL1,428,False,12,8,0,408,1,0,6,2,3
 538974,Janis Antiste,2026,ECLQ,428,False,2,2,0,31,1,0,1,1,0
+538974,Janis Antiste,2026,CNNF,19758,True,1,1,0,45,0,0,0,0,0
 538974,Janis Antiste,2026,CNLA,19758,True,4,4,0,315,2,1,0,0,0
 1172620,Bruno Durdov,2026,POPU,428,False,1,0,0,0,0,0,0,0,0
 1172620,Bruno Durdov,2026,PLSC,428,False,1,1,0,17,0,0,0,0,0
@@ -2282,7 +2327,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172620,Bruno Durdov,2026,ELQ,428,False,2,0,0,0,0,0,0,0,0
 1172620,Bruno Durdov,2026,ECLQ,428,False,2,1,0,16,0,0,0,0,0
 1172620,Bruno Durdov,2026,CLQ,428,False,2,1,0,9,0,0,0,0,0
-446573,Erik Prekop,2026,UNLC,3503,True,4,2,0,27,0,0,0,0,0
+446573,Erik Prekop,2026,UNLC,3503,True,6,4,0,186,1,0,2,1,0
 446573,Erik Prekop,2026,POPU,428,False,1,1,0,46,0,0,0,0,0
 446573,Erik Prekop,2026,PLSC,428,False,1,1,0,65,0,0,0,0,0
 446573,Erik Prekop,2026,PL1,428,False,14,14,0,456,2,1,17,5,2
@@ -2305,8 +2350,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 868793,Dieudonné Gaucho Debohi,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
 868793,Dieudonné Gaucho Debohi,2026,PL33,41149,False,1,1,0,90,0,0,0,0,0
 868793,Dieudonné Gaucho Debohi,2026,PL1,9644,False,14,4,0,237,0,0,0,0,2
+868793,Dieudonné Gaucho Debohi,2026,FS,13497,True,1,1,0,90,0,0,0,0,0
 868793,Dieudonné Gaucho Debohi,2026,ECLQ,9644,False,6,4,0,278,0,0,0,0,1
 1567997,Nikodem Całko,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
+1567997,Nikodem Całko,2026,PLZJ,41208,False,1,1,0,90,0,0,0,0,0
 1567997,Nikodem Całko,2026,PL33,41149,False,15,13,1,1157,0,0,0,0,4
 1567997,Nikodem Całko,2026,PL1,9644,False,14,0,0,0,0,0,0,0,0
 1567997,Nikodem Całko,2026,ECLQ,9644,False,6,0,0,0,0,0,0,0,0
@@ -2314,7 +2361,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 864189,Ádin Molnár,2026,PL33,41149,False,2,2,0,180,0,0,0,0,0
 864189,Ádin Molnár,2026,PL1,9644,False,14,10,0,234,0,0,3,0,0
 864189,Ádin Molnár,2026,ECLQ,9644,False,6,3,0,139,1,1,2,0,0
-944583,Marko Perovic,2026,UNLC,11953,True,4,1,0,30,0,0,1,1,0
+944583,Marko Perovic,2026,UNLC,11953,True,6,1,2,30,0,0,1,1,0
 944583,Marko Perovic,2026,POPU,9644,False,1,0,0,0,0,0,0,0,0
 944583,Marko Perovic,2026,PL33,41149,False,13,4,0,314,0,2,0,0,0
 944583,Marko Perovic,2026,PL1,9644,False,12,6,2,120,0,0,1,0,0
@@ -2323,12 +2370,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1279298,Oliwier Kwiatkowski,2026,PL33,41149,False,1,1,0,90,0,0,0,0,0
 1279298,Oliwier Kwiatkowski,2026,PL1,9644,False,14,4,0,125,2,1,5,2,0
 1279298,Oliwier Kwiatkowski,2026,ECLQ,9644,False,6,5,0,195,0,1,0,0,0
-1167711,Jakub Jendryka,2026,SU20,16299,True,2,2,0,90,0,0,0,0,0
+1167711,Jakub Jendryka,2026,SU20,16299,True,3,3,0,135,0,1,0,0,0
 1167711,Jakub Jendryka,2026,POPU,9644,False,1,1,0,59,0,1,0,0,0
 1167711,Jakub Jendryka,2026,PL33,41149,False,11,3,0,240,1,0,0,0,0
 1167711,Jakub Jendryka,2026,PL1,9644,False,14,6,0,187,1,0,5,3,0
 1167711,Jakub Jendryka,2026,ECLQ,9644,False,6,2,0,40,0,0,0,0,0
-255957,Mahir Emreli,2026,UNLD,8605,True,3,3,0,270,1,0,13,5,1
+255957,Mahir Emreli,2026,UNLD,8605,True,4,4,0,360,2,0,21,10,1
 255957,Mahir Emreli,2026,POPU,9644,False,1,1,0,82,0,0,0,0,0
 255957,Mahir Emreli,2026,PL1,9644,False,14,14,0,1082,3,3,44,14,0
 255957,Mahir Emreli,2026,FS,8605,True,1,1,0,45,0,0,0,0,0
@@ -2355,6 +2402,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 795231,Aleksander Bobek,2026,PL1,5689,False,6,0,0,0,0,0,0,0,0
 920939,Vincent Burlet,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
 920939,Vincent Burlet,2026,PL1,5689,False,14,9,0,569,0,1,9,1,3
+920939,Vincent Burlet,2026,FS,9315,True,1,1,0,26,0,0,0,0,0
 206906,Dominik Baumgartner,2026,POPU,5689,False,1,1,0,61,0,0,0,0,0
 206906,Dominik Baumgartner,2026,PL1,5689,False,14,5,0,121,0,0,1,0,2
 1469681,Jakub Chrapusta,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
@@ -2374,7 +2422,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 388220,Sayfallah Ltaief,2026,FS,3670,True,1,0,0,0,0,0,0,0,0
 388220,Sayfallah Ltaief,2026,ELQ,317,False,2,0,2,0,0,0,0,0,0
 388220,Sayfallah Ltaief,2026,ECLQ,317,False,2,0,2,0,0,0,0,0,0
-388220,Sayfallah Ltaief,2026,AFCQ,3670,True,2,2,0,128,0,0,1,0,0
+388220,Sayfallah Ltaief,2026,AFCQ,3670,True,3,3,0,199,0,0,2,0,0
 895402,Mohamed Berte,2026,POPU,5689,False,1,1,0,66,0,0,0,0,0
 895402,Mohamed Berte,2026,PL1,5689,False,10,10,0,443,2,0,12,5,1
 895402,Mohamed Berte,2026,BE2,9010,False,1,0,0,0,0,0,0,0,0
@@ -2382,13 +2430,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1142182,Alex Marciniak,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
 1142182,Alex Marciniak,2026,PL1,5689,False,14,0,0,0,0,0,0,0,0
 1142182,Alex Marciniak,2026,FS,26181,True,3,2,0,86,0,0,0,0,0
-925777,Kacper Śmiglewski,2026,SU20,16299,True,2,2,0,74,1,0,0,0,0
+925777,Kacper Śmiglewski,2026,SU20,16299,True,3,3,0,105,1,0,0,0,0
 925777,Kacper Śmiglewski,2026,POPU,5689,False,1,0,0,0,0,0,0,0,0
 925777,Kacper Śmiglewski,2026,PL1,5689,False,14,3,0,16,0,0,2,0,0
 735364,Nikolaos Botis,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
 735364,Nikolaos Botis,2026,PL1,324,False,13,1,0,90,0,0,0,0,0
 987494,Siem Eyob-Abraha,2026,PL1,5689,False,8,0,0,0,0,0,0,0,0
-987494,Siem Eyob-Abraha,2026,AFCQ,13953,True,4,2,0,35,1,0,0,0,0
+987494,Siem Eyob-Abraha,2026,AFCQ,13953,True,5,2,0,35,1,0,0,0,0
 987494,Siem Eyob-Abraha,2026,21PL,8824,False,1,0,0,0,0,0,0,0,0
 366212,Kevin Dąbrowski,2026,SLO1,51316,False,6,2,0,180,0,0,0,0,0
 366212,Kevin Dąbrowski,2026,SKC,51316,False,2,0,0,0,0,0,0,0,0
@@ -2396,7 +2444,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1603247,Hubert Renka,2026,PL1,324,False,6,0,0,0,0,0,0,0,0
 574501,Lukas Willen,2026,POPU,324,False,1,1,0,8,0,0,0,0,0
 574501,Lukas Willen,2026,PL1,324,False,12,9,0,601,0,0,2,1,2
-1385667,Antoni Fojut,2026,U17Q,23136,True,1,1,0,90,0,0,0,0,0
+1385667,Antoni Fojut,2026,U17Q,23136,True,2,2,0,94,0,0,0,0,0
 1385667,Antoni Fojut,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
 1385667,Antoni Fojut,2026,PL1,324,False,9,0,0,0,0,0,0,0,0
 1385667,Antoni Fojut,2026,FS,23136,True,3,1,0,90,0,0,0,0,0
@@ -2404,7 +2452,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 487835,Alessandro Riccio,2026,IT2,1038,False,3,0,0,0,0,0,0,0,0
 487835,Alessandro Riccio,2026,CIT,1038,False,1,0,0,0,0,0,0,0,0
 1136967,Isaiah Eichie,2026,PL1,324,False,7,4,0,77,0,0,1,0,0
-386786,Darko Churlinov,2026,UNLB,5148,True,4,0,0,0,0,0,0,0,0
+386786,Darko Churlinov,2026,UNLB,5148,True,5,1,0,64,0,0,0,0,0
 386786,Darko Churlinov,2026,POPU,324,False,1,1,0,82,0,0,0,0,0
 386786,Darko Churlinov,2026,PL1,324,False,12,12,0,848,4,0,20,11,0
 1402442,Andrzej Ossowski,2026,POPU,324,False,1,0,0,0,0,0,0,0,0
@@ -2413,7 +2461,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 47594,Zlatan Alomerovic,2026,PL1,168,False,14,13,0,1170,0,0,0,0,2
 1406439,Franciszek Nowak,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 1406439,Franciszek Nowak,2026,PLZJ,15535,False,9,6,0,540,0,0,0,0,1
-1406439,Franciszek Nowak,2026,PL33,8372,False,15,10,0,900,0,0,0,0,0
+1406439,Franciszek Nowak,2026,PL33,8372,False,16,11,0,990,0,0,0,0,0
 1406439,Franciszek Nowak,2026,PL1,168,False,14,0,0,0,0,0,0,0,0
 371000,David Colina,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 371000,David Colina,2026,PL1,168,False,14,10,1,559,0,0,3,0,4
@@ -2425,7 +2473,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 820541,Szymon Karasiński,2026,PL2,256,False,8,7,0,396,1,1,0,0,1
 820541,Szymon Karasiński,2026,PL1,168,False,5,0,0,0,0,0,0,0,0
 1521588,Patryk Dziekoński,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
-1521588,Patryk Dziekoński,2026,PL33,8372,False,16,10,0,709,1,0,0,0,1
+1521588,Patryk Dziekoński,2026,PL33,8372,False,17,11,0,799,1,0,0,0,1
 1521588,Patryk Dziekoński,2026,PL1,168,False,14,0,0,0,0,0,0,0,0
 623412,Mihai Popa,2026,POPU,3527,False,2,1,0,120,0,0,0,0,0
 623412,Mihai Popa,2026,PL1,3527,False,14,5,0,450,0,0,0,0,0
@@ -2434,14 +2482,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1168850,Pawel Kosmalski,2026,POPU,168,False,1,0,0,0,0,0,0,0,0
 1168850,Pawel Kosmalski,2026,PL33,8372,False,6,6,0,381,4,0,0,0,1
 1168850,Pawel Kosmalski,2026,PL1,168,False,14,0,0,0,0,0,0,0,0
-144143,Bartosz Bereszyński,2026,POPU,3527,False,2,2,0,176,0,1,0,0,1
-144143,Bartosz Bereszyński,2026,PL1,3527,False,14,13,0,1111,1,0,7,2,2
 570466,Mateusz Łęgowski,2026,POPU,3527,False,2,2,0,210,0,1,0,0,0
 570466,Mateusz Łęgowski,2026,PL1,3527,False,14,12,0,652,1,0,10,3,1
+144143,Bartosz Bereszyński,2026,POPU,3527,False,2,2,0,176,0,1,0,0,1
+144143,Bartosz Bereszyński,2026,PL1,3527,False,14,13,0,1111,1,0,7,2,2
 525131,Yacine Bourhane,2026,POPU,3527,False,2,2,0,125,0,0,0,0,0
 525131,Yacine Bourhane,2026,PL1,3527,False,14,12,0,896,1,1,7,3,3
 525131,Yacine Bourhane,2026,FS,16430,True,1,1,0,89,0,0,0,0,0
-525131,Yacine Bourhane,2026,AFCQ,16430,True,2,2,0,121,0,0,0,0,0
+525131,Yacine Bourhane,2026,AFCQ,16430,True,3,3,0,211,0,0,0,0,0
 1497345,Alioune Oumar Tall,2026,POPU,3527,False,1,1,0,29,0,0,0,0,0
 1497345,Alioune Oumar Tall,2026,PL1,3527,False,7,4,0,72,0,0,1,1,1
 1497345,Alioune Oumar Tall,2026,ECLQ,32017,False,4,4,0,234,0,0,0,0,1
@@ -2453,7 +2501,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 813152,Makan Aïko,2026,POPU,3527,False,2,2,0,105,0,0,0,0,0
 813152,Makan Aïko,2026,PL1,3527,False,14,14,0,520,2,1,14,6,2
 1570131,Konrad Kraska,2026,POPU,3527,False,1,0,0,0,0,0,0,0,0
-1570131,Konrad Kraska,2026,PL34,6108,False,10,10,0,435,2,1,0,0,1
+1570131,Konrad Kraska,2026,PL34,6108,False,11,10,0,435,2,1,0,0,1
 1570131,Konrad Kraska,2026,PL1,3527,False,6,0,0,0,0,0,0,0,0
 1156333,Dominik Gregorski,2026,POPU,3527,False,2,0,0,0,0,0,0,0,0
 1156333,Dominik Gregorski,2026,PL1,3527,False,14,2,0,9,0,1,0,0,0
@@ -2484,19 +2532,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 871213,Karol Tokarczyk,2026,PL34,6354,False,16,10,6,496,5,2,0,0,1
 871213,Karol Tokarczyk,2026,PL1,422,False,14,0,5,0,0,0,0,0,0
 1195427,Oliwier Pławiński,2026,POPU,422,False,1,0,0,0,0,0,0,0,0
-1195427,Oliwier Pławiński,2026,PL34,6354,False,16,11,0,746,2,2,0,0,0
+1195427,Oliwier Pławiński,2026,PL34,6354,False,16,11,0,746,2,3,0,0,0
 1195427,Oliwier Pławiński,2026,PL1,422,False,14,2,0,6,0,0,0,0,0
-1195427,Oliwier Pławiński,2026,FS,16297,True,2,2,0,73,0,0,0,0,0
+1195427,Oliwier Pławiński,2026,FS,16297,True,4,3,0,79,1,0,0,0,0
 587505,Nikola Cavlina,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
 587505,Nikola Cavlina,2026,PL34,101472,False,1,1,0,90,0,0,0,0,0
 587505,Nikola Cavlina,2026,PL1,30974,False,14,2,0,180,0,0,0,0,0
-208172,Mateusz Wieteska,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
-208172,Mateusz Wieteska,2026,PL1,30974,False,13,5,0,450,1,0,1,1,1
-404055,Mateusz Kochalski,2026,UNLB,3442,True,4,0,0,0,0,0,0,0,0
+404055,Mateusz Kochalski,2026,UNLB,3442,True,5,0,0,0,0,0,0,0,0
 404055,Mateusz Kochalski,2026,PL1,30974,False,8,8,0,720,0,0,0,0,0
 404055,Mateusz Kochalski,2026,ELQ,10625,False,4,4,0,390,0,0,0,0,0
 404055,Mateusz Kochalski,2026,ECLQ,10625,False,4,1,0,90,0,0,0,0,0
 404055,Mateusz Kochalski,2026,AZ1,10625,False,3,2,0,180,0,0,0,0,0
+208172,Mateusz Wieteska,2026,POPU,30974,False,1,0,0,0,0,0,0,0,0
+208172,Mateusz Wieteska,2026,PL1,30974,False,13,5,0,450,1,0,1,1,1
 895531,Duje Dujmovic,2026,POPU,30974,False,1,1,0,90,0,0,0,0,1
 895531,Duje Dujmovic,2026,PL34,101472,False,1,1,0,90,0,0,0,0,0
 895531,Duje Dujmovic,2026,PL1,30974,False,14,10,0,588,2,1,7,3,3
@@ -2517,6 +2565,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1292572,Szymon Wadas,2026,PL1,2118,False,13,0,0,0,0,0,0,0,0
 941937,Afonso Silva,2026,POPU,2118,False,2,2,0,111,0,0,0,0,0
 941937,Afonso Silva,2026,PL1,2118,False,10,10,0,892,1,1,12,5,1
+941937,Afonso Silva,2026,FS,16374,True,1,0,0,0,0,0,0,0,0
 900848,Przemysław Misiak,2026,POPU,2118,False,2,1,0,120,0,0,0,0,0
 900848,Przemysław Misiak,2026,POPU,20965,False,1,0,0,0,0,0,0,0,0
 900848,Przemysław Misiak,2026,PL31,20965,False,12,5,0,422,1,0,0,0,3
@@ -2525,7 +2574,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 187973,Marcin Flis,2026,PL1,2118,False,13,6,0,333,1,0,6,2,1
 1197555,Marcin Więckowski,2026,POPU,2118,False,2,1,0,90,0,0,0,0,1
 1197555,Marcin Więckowski,2026,POPU,20965,False,1,0,0,0,0,0,0,0,0
-1197555,Marcin Więckowski,2026,PL31,20965,False,15,7,0,602,0,0,0,0,2
+1197555,Marcin Więckowski,2026,PL31,20965,False,16,8,0,692,0,0,0,0,2
 1197555,Marcin Więckowski,2026,PL1,2118,False,13,1,0,8,0,0,0,0,0
 511813,Sidnei Tavares,2026,POPU,2118,False,2,1,0,55,0,0,0,0,0
 511813,Sidnei Tavares,2026,PL1,2118,False,8,6,0,430,0,0,4,1,2
@@ -2560,14 +2609,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 225873,Karol Linetty,2026,TR1,120,False,3,0,0,0,0,0,0,0,0
 225873,Karol Linetty,2026,POPU,759,False,2,2,0,177,0,0,0,0,0
 225873,Karol Linetty,2026,PL1,759,False,8,8,0,581,0,0,1,1,2
-890272,Karol Borys,2026,SU20,16299,True,2,0,0,0,0,0,0,0,0
+890272,Karol Borys,2026,SU20,16299,True,3,1,0,45,0,0,0,0,0
 890272,Karol Borys,2026,POPU,759,False,1,1,0,14,0,0,0,0,0
 890272,Karol Borys,2026,PL2L,22568,False,3,2,0,130,1,0,0,0,1
 890272,Karol Borys,2026,PL1,759,False,7,0,0,0,0,0,0,0,0
 890272,Karol Borys,2026,BE1,968,False,5,1,0,10,0,0,1,0,0
 1297238,Adrian Żulewski,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
-1297238,Adrian Żulewski,2026,POPU,22568,False,2,0,0,0,0,0,0,0,0
-1297238,Adrian Żulewski,2026,PL2L,22568,False,11,9,0,765,0,2,0,0,1
+1297238,Adrian Żulewski,2026,POPU,22568,False,3,0,0,0,0,0,0,0,0
+1297238,Adrian Żulewski,2026,PL2L,22568,False,15,10,0,855,0,2,0,0,1
 1297238,Adrian Żulewski,2026,PL1,759,False,14,2,0,10,0,0,0,0,0
 454628,Alex Timossi Andersson,2026,POPU,759,False,2,2,0,140,0,1,0,0,0
 454628,Alex Timossi Andersson,2026,PL1,759,False,14,13,0,867,0,1,3,1,2
@@ -2579,11 +2628,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 744903,Ieltsin Camões,2026,NOPO,1293,False,1,1,0,27,0,0,0,0,0
 744903,Ieltsin Camões,2026,ELQ,1293,False,2,2,0,90,0,0,0,0,0
 744903,Ieltsin Camões,2026,ECLQ,1293,False,4,4,0,181,0,1,0,0,0
+744903,Ieltsin Camões,2026,AFCQ,4311,True,3,1,0,6,0,0,0,0,0
 508940,Malaly Dembélé,2026,POPU,759,False,2,2,0,103,0,0,0,0,0
 508940,Malaly Dembélé,2026,PL1,759,False,14,14,0,777,3,2,27,7,0
 1002309,Maksymilian Stangret,2026,POPU,759,False,2,0,0,0,0,0,0,0,0
 1002309,Maksymilian Stangret,2026,POPU,22568,False,3,3,0,159,2,1,0,0,0
-1002309,Maksymilian Stangret,2026,PL2L,22568,False,14,14,0,843,3,1,0,0,1
+1002309,Maksymilian Stangret,2026,PL2L,22568,False,15,15,0,904,3,1,0,0,1
 1002309,Maksymilian Stangret,2026,PL1,759,False,11,1,0,1,0,0,0,0,0
 520503,Bartłomiej Gradecki,2026,POPU,7154,False,2,1,0,120,0,0,0,0,0
 520503,Bartłomiej Gradecki,2026,PL1,7154,False,14,1,0,90,0,0,0,0,0
@@ -2600,6 +2650,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 243606,Anastasios Donis,2026,GR1,605,False,3,0,0,0,0,0,0,0,0
 825583,Filip Koperski,2026,POPU,7154,False,2,1,0,120,0,0,0,0,0
 825583,Filip Koperski,2026,PL1,7154,False,14,12,0,946,2,0,8,2,2
+825583,Filip Koperski,2026,FS,9324,True,1,1,0,45,0,0,0,0,0
 326030,Ché Nunnely,2026,POPU,7154,False,2,2,0,105,0,0,0,0,0
 326030,Ché Nunnely,2026,PL1,7154,False,14,11,0,366,0,0,8,3,1
 326030,Ché Nunnely,2026,CNLA,15359,True,4,2,0,73,0,0,0,0,0
@@ -2624,4 +2675,4 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 796892,Samuel Ntamack,2026,PL1,6112,False,14,14,0,981,2,1,23,11,0
 1209576,Maciej Kucharski,2026,POPU,6112,False,2,2,0,133,1,0,0,0,0
 1209576,Maciej Kucharski,2026,PL1,6112,False,14,3,0,14,0,1,1,1,0
-1209576,Maciej Kucharski,2026,FS,16297,True,2,2,0,58,0,0,0,0,0
+1209576,Maciej Kucharski,2026,FS,16297,True,4,3,0,81,0,0,0,0,0

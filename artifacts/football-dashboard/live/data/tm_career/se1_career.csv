@@ -78,7 +78,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 216160,Malkolm Nilsson Säfqvist,2015,SEC,1011,False,5,2,0,180,0,0,0,0,1
 216160,Malkolm Nilsson Säfqvist,2015,SE3S,1236,False,12,12,0,1080,0,0,0,0,0
 216160,Malkolm Nilsson Säfqvist,2015,SE2,1011,False,15,0,0,0,0,0,0,0,0
-216160,Malkolm Nilsson Säfqvist,2014,SE3S,1236,False,5,5,0,450,0,0,0,0,0
+216160,Malkolm Nilsson Säfqvist,2014,SE3S,1236,False,8,5,0,450,0,0,0,0,0
 216160,Malkolm Nilsson Säfqvist,2014,SE1,1011,False,30,1,0,90,0,0,0,0,0
 216160,Malkolm Nilsson Säfqvist,2014,S21S,41549,False,13,9,0,810,0,0,0,0,0
 216160,Malkolm Nilsson Säfqvist,2014,S21P,41549,False,4,4,0,308,0,0,0,0,0
@@ -100,7 +100,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1178536,Ville Nilsson,2023,SE1,3654,False,30,1,21,6,0,0,0,0,0
 1178536,Ville Nilsson,2022,SE1,3654,False,9,0,0,0,0,0,0,0,0
 950400,Ahmad Faqa,2026,SEC,3641,False,1,0,0,0,0,0,0,0,0
-950400,Ahmad Faqa,2026,FS,13674,True,2,2,0,180,0,0,0,0,0
+950400,Ahmad Faqa,2026,FS,13674,True,3,3,0,270,0,0,0,0,0
 950400,Ahmad Faqa,2025,SEC,272,False,4,2,0,14,0,0,0,0,0
 950400,Ahmad Faqa,2025,SE1,3641,False,15,14,1,1124,0,0,3,1,3
 950400,Ahmad Faqa,2025,SE1,272,False,13,6,0,94,0,0,0,0,0
@@ -329,14 +329,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 976550,Kalipha Jawla,2022,FS,24978,True,1,1,0,81,1,0,0,0,0
 976550,Kalipha Jawla,2022,FS,23487,True,1,1,0,90,0,0,0,0,0
 976550,Kalipha Jawla,2021,FS,23487,True,2,2,0,71,0,0,0,0,0
-1184983,Ahmed Saeed,2026,U19Q,23488,True,3,2,0,100,1,0,0,0,0
+1184983,Ahmed Saeed,2026,U19Q,23488,True,5,5,0,220,3,0,0,0,0
 1184983,Ahmed Saeed,2026,FS,23488,True,3,3,0,138,0,0,0,0,0
 1184983,Ahmed Saeed,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1184983,Ahmed Saeed,2025,SEC,1044,False,5,2,0,28,0,0,0,0,0
 1184983,Ahmed Saeed,2025,SE3N,75138,False,12,9,0,302,0,0,0,0,1
 1184983,Ahmed Saeed,2025,SE3N,53133,False,4,3,0,96,0,0,0,0,0
 1184983,Ahmed Saeed,2025,SE1,1044,False,13,3,0,42,0,0,1,0,0
-1184983,Ahmed Saeed,2025,FS,24978,True,5,5,0,355,3,0,0,0,1
+1184983,Ahmed Saeed,2025,FS,24978,True,6,6,0,445,3,0,0,0,1
 1184983,Ahmed Saeed,2025,FS,23488,True,1,1,0,90,1,0,0,0,0
 1184983,Ahmed Saeed,2025,FS,23487,True,7,3,0,178,0,1,0,0,0
 1184983,Ahmed Saeed,2024,UCOL,1044,False,2,0,0,0,0,0,0,0,0
@@ -521,7 +521,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 511852,Anthony Olusanya,2016,FI3C,21041,False,17,4,0,177,0,0,0,0,0
 868630,Philip Bergqvist,2025,SE1,1118,False,4,0,0,0,0,0,0,0,0
 868630,Philip Bergqvist,2022,ITJ5,55773,False,26,11,0,596,1,0,0,0,0
-687622,Elliot Stroud,2026,UNLB,3557,True,4,1,0,90,0,0,1,0,0
+687622,Elliot Stroud,2026,UNLB,3557,True,5,2,0,99,0,0,1,0,0
 687622,Elliot Stroud,2026,GB1,3008,False,10,8,0,504,0,1,5,1,3
 687622,Elliot Stroud,2026,CLQ,2719,False,3,3,0,233,1,0,0,0,0
 687622,Elliot Stroud,2026,CGB,3008,False,2,2,0,27,0,0,0,0,1
@@ -539,7 +539,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 687622,Elliot Stroud,2021,SEC,6018,False,2,1,0,80,1,0,0,0,0
 687622,Elliot Stroud,2021,SE3S,6018,False,30,28,0,2450,6,0,0,0,3
 687622,Elliot Stroud,2018,SE3S,6018,False,17,9,0,548,0,0,0,0,2
-1449278,Zebedee Kennedy,2026,U17Q,23487,True,1,1,0,23,0,0,0,0,0
+1449278,Zebedee Kennedy,2026,U17Q,23487,True,2,2,0,57,0,0,0,0,0
 1449278,Zebedee Kennedy,2026,ITJ5,49777,False,8,8,0,672,8,1,0,0,0
 1449278,Zebedee Kennedy,2026,IT1,1047,False,2,0,0,0,0,0,0,0,0
 1449278,Zebedee Kennedy,2026,IJ1,14694,False,10,0,0,0,0,0,0,0,0
@@ -553,7 +553,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1449278,Zebedee Kennedy,2025,FS,57021,True,6,5,0,182,3,0,0,0,2
 1449278,Zebedee Kennedy,2025,FS,41525,True,6,5,0,201,1,0,0,0,0
 490288,Mamadouba Diaby,2026,SEC,3641,False,1,0,0,0,0,0,0,0,0
-490288,Mamadouba Diaby,2026,E3G2,43454,False,11,8,0,473,0,1,0,0,4
+490288,Mamadouba Diaby,2026,E3G2,43454,False,12,9,0,558,0,2,0,0,4
 490288,Mamadouba Diaby,2025,SEC,3641,False,4,1,0,22,0,0,0,0,0
 490288,Mamadouba Diaby,2025,SE1,3641,False,17,1,0,23,0,0,0,0,0
 490288,Mamadouba Diaby,2024,SEC,3641,False,4,4,0,292,0,0,0,0,3
@@ -677,6 +677,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1529472,Christopher Sliwo,2026,SEC,2283,False,2,2,0,164,1,0,0,0,0
 1529472,Christopher Sliwo,2025,SEC,1044,False,4,0,0,0,0,0,0,0,0
 1529472,Christopher Sliwo,2025,SE3N,2283,False,30,25,0,1198,9,2,0,0,1
+1529472,Christopher Sliwo,2025,REET,2283,False,1,1,0,90,1,0,0,0,0
 333323,Filip Manojlovic,2026,NOPO,267,False,3,1,2,90,0,0,0,0,0
 333323,Filip Manojlovic,2025,SEC,1044,False,5,3,0,270,0,0,0,0,0
 333323,Filip Manojlovic,2025,SE1,1044,False,14,1,0,90,0,0,0,0,0
@@ -732,7 +733,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 664349,Leon Hien,2025,SEC,3641,False,1,0,0,0,0,0,0,0,0
 664349,Leon Hien,2025,SEC,1044,False,4,1,0,1,0,0,0,0,0
 664349,Leon Hien,2025,SE1,1044,False,14,5,0,132,0,0,5,1,0
-664349,Leon Hien,2025,NO45,35028,False,1,1,0,45,0,0,0,0,0
+664349,Leon Hien,2025,NO45,35028,False,11,2,0,90,0,0,0,0,0
 664349,Leon Hien,2025,NO1,1293,False,10,8,2,663,0,0,3,1,1
 664349,Leon Hien,2024,SEC,3641,False,3,3,0,190,0,0,0,0,1
 664349,Leon Hien,2024,SE1,3641,False,30,26,1,2193,2,1,25,3,7
@@ -757,15 +758,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1377921,Alvin Didriksson,2025,SE1,7009,False,16,0,0,0,0,0,0,0,0
 1377921,Alvin Didriksson,2024,SEC,7009,False,2,0,0,0,0,0,0,0,0
 1377921,Alvin Didriksson,2024,SE1,7009,False,18,0,0,0,0,0,0,0,0
-1164781,Vilmer Tyrén,2026,SEC,8882,False,1,0,0,0,0,0,0,0,0
-1164781,Vilmer Tyrén,2025,SEC,801,False,2,1,0,3,0,0,0,0,0
-1164781,Vilmer Tyrén,2025,SEC,3654,False,2,0,0,0,0,0,0,0,0
-1164781,Vilmer Tyrén,2025,SE2,8882,False,14,9,0,778,1,3,0,0,2
-1164781,Vilmer Tyrén,2025,SE1,3654,False,20,14,0,722,1,1,22,8,1
-1164781,Vilmer Tyrén,2024,SE3S,8882,False,30,27,1,2258,19,3,0,0,4
-1164781,Vilmer Tyrén,2024,SE1,801,False,12,1,0,5,0,0,0,0,0
-1164781,Vilmer Tyrén,2023,SEC,801,False,1,1,0,90,1,0,0,0,0
-1164781,Vilmer Tyrén,2022,SE1,801,False,10,2,0,6,0,0,0,0,0
 1368526,Sion Oppong,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1368526,Sion Oppong,2026,FR1,415,False,10,7,0,236,1,1,3,1,1
 1368526,Sion Oppong,2025,U21Q,8595,True,2,2,0,49,0,0,0,0,0
@@ -779,7 +771,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1368526,Sion Oppong,2024,SE3N,53133,False,12,8,0,435,3,0,0,0,0
 1368526,Sion Oppong,2024,SE1,1092,False,17,2,0,68,0,0,1,1,0
 1368526,Sion Oppong,2024,FS,24978,True,5,4,0,151,0,0,2,0,0
-836892,Abdi Sabriye,2026,AFCQ,13974,True,2,1,0,35,0,0,0,0,0
+836892,Abdi Sabriye,2026,AFCQ,13974,True,3,1,0,35,0,0,0,0,0
 836892,Abdi Sabriye,2025,SEC,3654,False,4,1,0,45,0,0,0,0,0
 836892,Abdi Sabriye,2025,SE1,3654,False,15,0,0,0,0,0,0,0,0
 836892,Abdi Sabriye,2025,POFI,3650,False,2,1,0,30,0,0,2,0,0
@@ -806,7 +798,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072185,Elohim Kaboré,2026,ECLQ,1059,False,1,0,0,0,0,0,0,0,0
 1072185,Elohim Kaboré,2026,CCB,28643,False,1,1,0,45,0,0,0,0,0
 1072185,Elohim Kaboré,2026,BE1,28643,False,10,10,0,524,2,0,14,6,0
-1072185,Elohim Kaboré,2026,AFCQ,5872,True,2,2,0,43,0,0,2,0,0
+1072185,Elohim Kaboré,2026,AFCQ,5872,True,3,3,0,49,1,0,3,1,0
 1072185,Elohim Kaboré,2025,SEC,1059,False,7,5,0,229,3,0,0,0,1
 1072185,Elohim Kaboré,2025,SE1,1059,False,16,8,0,196,0,0,6,3,1
 1072185,Elohim Kaboré,2025,FS,5872,True,4,3,0,109,4,0,0,0,0
@@ -835,7 +827,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 786613,Gustav Friberg,2020,SE3S,5965,False,30,25,0,2236,0,0,0,0,6
 786613,Gustav Friberg,2020,RESU,5965,False,2,2,0,180,0,0,0,0,0
 786613,Gustav Friberg,2019,SE3S,5965,False,30,18,0,822,0,0,0,0,0
-783373,Robbie Ure,2026,UNLB,3380,True,4,4,0,116,0,0,2,0,0
+783373,Robbie Ure,2026,UNLB,3380,True,5,4,0,116,0,0,2,0,0
 783373,Robbie Ure,2026,ES1,368,False,12,12,0,582,1,3,13,3,1
 783373,Robbie Ure,2026,CDR,368,False,1,1,0,90,1,0,5,1,0
 783373,Robbie Ure,2025,U21Q,16868,True,1,0,0,0,0,0,0,0,0
@@ -994,7 +986,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 666951,Saidou Alioum,2026,TS1,1322,False,11,10,1,501,1,1,19,8,4
 666951,Saidou Alioum,2026,ECLQ,801,False,4,2,0,64,2,0,0,0,1
 666951,Saidou Alioum,2026,ECLQ,1322,False,2,0,2,0,0,0,0,0,0
-666951,Saidou Alioum,2026,AFCQ,3434,True,2,2,0,87,0,0,1,0,1
+666951,Saidou Alioum,2026,AFCQ,3434,True,4,4,0,190,2,0,4,2,1
 666951,Saidou Alioum,2025,SEC,801,False,5,5,0,328,2,0,0,0,0
 666951,Saidou Alioum,2025,SE1,801,False,16,13,0,612,0,1,15,4,2
 666951,Saidou Alioum,2025,FS,3434,True,3,3,0,134,1,0,5,3,0
@@ -1075,7 +1067,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 156937,Johan Hammar,2012,CNAT,1098,False,7,6,0,465,0,0,0,0,0
 156937,Johan Hammar,2011,GBR,9261,False,1,1,0,90,0,0,0,0,0
 1065043,Pontus Dahbo,2026,NLP,499,False,1,1,0,18,0,0,0,0,0
-1065043,Pontus Dahbo,2026,NL2,499,False,13,9,0,432,0,0,6,1,2
+1065043,Pontus Dahbo,2026,NL2,499,False,13,10,0,443,0,0,6,1,2
 1065043,Pontus Dahbo,2025,UCOL,1109,False,6,4,0,213,0,0,3,1,2
 1065043,Pontus Dahbo,2025,SEC,1109,False,4,4,0,174,1,0,0,0,0
 1065043,Pontus Dahbo,2025,SE1,1109,False,16,9,0,177,0,0,7,0,1
@@ -1083,7 +1075,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1065043,Pontus Dahbo,2025,ECLQ,1109,False,2,2,0,38,0,0,0,0,0
 1065043,Pontus Dahbo,2024,SEC,1109,False,7,7,0,518,0,0,0,0,0
 1065043,Pontus Dahbo,2024,SE1,1109,False,30,23,1,1203,1,2,16,6,3
-1065043,Pontus Dahbo,2024,FS,8595,True,5,5,0,180,0,0,0,0,0
+1065043,Pontus Dahbo,2024,FS,8595,True,6,6,0,210,0,0,0,0,0
 1065043,Pontus Dahbo,2024,FS,46607,True,2,2,0,74,0,0,0,0,0
 1065043,Pontus Dahbo,2024,ECLQ,1109,False,6,3,0,176,0,1,0,0,0
 1065043,Pontus Dahbo,2023,U19Q,23488,True,3,3,0,255,0,0,0,0,1
@@ -1488,7 +1480,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1519159,Olle Leonardsson,2025,SEC,3641,False,3,2,0,127,0,0,0,0,0
 1519159,Olle Leonardsson,2025,SE3N,53133,False,12,9,0,282,0,0,0,0,0
 1519159,Olle Leonardsson,2025,SE1,3641,False,18,12,0,227,0,0,2,0,1
-418559,Erik Botheim,2026,UNLA,3440,True,4,0,0,0,0,0,0,0,0
+418559,Erik Botheim,2026,UNLA,3440,True,5,0,0,0,0,0,0,0,0
 418559,Erik Botheim,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
 418559,Erik Botheim,2026,NOPO,239,False,2,0,0,0,0,0,0,0,0
 418559,Erik Botheim,2026,CL,239,False,4,4,0,266,2,1,5,2,0
@@ -1732,6 +1724,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 258561,Tim Erlandsson,2012,17WC,23487,True,7,0,0,0,0,0,0,0,0
 258561,Tim Erlandsson,2012,17EU,23487,True,4,0,0,0,0,0,0,0,0
 875631,Sanders Ngabo,2026,SEC,1109,False,1,0,0,0,0,0,0,0,0
+875631,Sanders Ngabo,2026,DKRE,62691,False,1,1,0,60,0,0,0,0,0
 875631,Sanders Ngabo,2026,DKP,369,False,2,2,0,149,0,0,2,0,1
 875631,Sanders Ngabo,2026,DK1,369,False,8,2,0,12,0,0,1,1,0
 875631,Sanders Ngabo,2025,UCOL,1109,False,6,3,0,62,0,0,1,0,0
@@ -1770,7 +1763,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 875631,Sanders Ngabo,2020,DKDL,14363,False,13,7,0,358,2,0,0,0,0
 673173,Frederik Ihler,2026,SEC,1101,False,1,1,0,90,1,0,0,0,0
 673173,Frederik Ihler,2026,NLP,724,False,1,1,0,90,0,0,2,1,0
-673173,Frederik Ihler,2026,NL2,724,False,10,9,0,194,3,1,11,9,1
+673173,Frederik Ihler,2026,NL2,724,False,11,10,0,207,3,1,12,9,1
 673173,Frederik Ihler,2025,SEC,1101,False,4,4,0,296,0,0,0,0,0
 673173,Frederik Ihler,2025,SE1,1101,False,19,14,0,546,2,1,16,6,2
 673173,Frederik Ihler,2024,UCOL,687,False,10,9,0,294,4,0,8,5,0
@@ -1929,7 +1922,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 220590,Jesper Jonasson Westermark,2011,JUSÖ,7913,False,22,15,0,1350,12,0,0,0,9
 1176778,Abdul Daramy,2026,SEC,1092,False,1,0,0,0,0,0,0,0,0
 1176778,Abdul Daramy,2026,DKDL,16104,False,2,0,0,0,0,0,0,0,0
-1176778,Abdul Daramy,2025,SE1,1092,False,9,0,0,0,0,0,0,0,0
+1176778,Abdul Daramy,2025,SE1,1092,False,10,0,0,0,0,0,0,0,0
 1176778,Abdul Daramy,2025,FS,21741,True,8,8,0,354,1,0,0,0,0
 1176778,Abdul Daramy,2025,DKRE,62683,False,3,3,0,182,1,0,0,0,0
 1176778,Abdul Daramy,2025,DKDL,16104,False,26,12,0,653,2,1,0,0,1
@@ -1979,7 +1972,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072289,Sebastian Hansen,2022,NO44,35023,False,8,1,0,90,0,0,0,0,0
 1072289,Sebastian Hansen,2021,NO31,35023,False,2,1,0,90,0,0,0,0,0
 184745,Alexander Lundin,2026,UCOL,2719,False,3,3,0,270,0,0,0,0,0
-184745,Alexander Lundin,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+184745,Alexander Lundin,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 184745,Alexander Lundin,2026,SEC,2719,False,1,0,0,0,0,0,0,0,0
 184745,Alexander Lundin,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 184745,Alexander Lundin,2026,ELQ,2719,False,2,0,0,0,0,0,0,0,0
@@ -2061,7 +2054,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 701224,Abdullah Iqbal,2026,CLQ,2719,False,4,4,0,298,0,0,0,0,0
 701224,Abdullah Iqbal,2025,SEC,2719,False,7,5,0,401,0,0,0,0,0
 701224,Abdullah Iqbal,2025,SE1,2719,False,28,25,1,2045,0,2,7,2,5
-701224,Abdullah Iqbal,2025,SAC1,15352,True,2,0,0,0,0,0,0,0,0
+701224,Abdullah Iqbal,2025,SAC1,15352,True,3,1,0,90,0,0,0,0,0
 701224,Abdullah Iqbal,2025,FS,15352,True,3,2,0,180,0,1,0,0,1
 701224,Abdullah Iqbal,2025,FS,142475,True,1,1,0,90,0,0,0,0,1
 701224,Abdullah Iqbal,2025,ASD1,15352,True,3,3,0,270,0,1,0,0,0
@@ -2118,7 +2111,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 416104,Axel Norén,2016,JUSÖ,9019,False,24,7,0,630,0,0,0,0,1
 416104,Axel Norén,2015,JUSÖ,9019,False,26,19,0,1710,2,0,0,0,7
 416104,Axel Norén,2014,JUSÖ,9019,False,1,0,0,0,0,0,0,0,0
-668709,Martin Agnarsson,2026,UNLC,9173,True,4,4,0,260,0,0,1,0,1
+668709,Martin Agnarsson,2026,UNLC,9173,True,6,5,0,339,0,0,1,0,1
 668709,Martin Agnarsson,2026,UCOL,2719,False,3,1,0,90,0,0,0,0,0
 668709,Martin Agnarsson,2026,SEC,2719,False,1,0,0,0,0,0,0,0,0
 668709,Martin Agnarsson,2026,ELQ,2719,False,2,1,0,29,0,0,0,0,0
@@ -2171,7 +2164,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668709,Martin Agnarsson,2019,FAR2,37078,False,27,25,0,2151,3,0,0,0,2
 668709,Martin Agnarsson,2019,FAPO,10532,False,3,1,0,59,1,0,0,0,0
 668709,Martin Agnarsson,2018,FS,26033,True,3,3,0,231,0,0,0,0,0
-579761,Tony Miettinen,2026,UNLC,3443,True,4,3,0,197,0,0,1,0,0
+579761,Tony Miettinen,2026,UNLC,3443,True,6,4,0,228,0,0,1,0,0
 579761,Tony Miettinen,2026,UCOL,2719,False,3,3,0,264,0,0,3,0,0
 579761,Tony Miettinen,2026,SEC,2719,False,1,0,0,0,0,0,0,0,0
 579761,Tony Miettinen,2026,ELQ,2719,False,2,2,0,180,0,0,1,0,0
@@ -2398,7 +2391,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 752778,Mads Enggård,2020,DKMR,5724,False,10,0,0,0,0,0,0,0,0
 752778,Mads Enggård,2020,DKDL,15709,False,13,11,0,901,0,0,0,0,5
 752778,Mads Enggård,2020,DK1,5724,False,22,0,0,0,0,0,0,0,0
-920272,Ludwig Malachowski Thorell,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+920272,Ludwig Malachowski Thorell,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2026,SCC,26,False,2,2,0,67,1,0,0,0,0
 920272,Ludwig Malachowski Thorell,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2026,C1,26,False,13,12,0,549,0,1,1,0,2
@@ -2411,7 +2404,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 920272,Ludwig Malachowski Thorell,2024,SEC,8843,False,1,1,0,62,1,0,0,0,0
 920272,Ludwig Malachowski Thorell,2024,SEC,2719,False,4,2,0,90,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2024,SE1,2719,False,30,26,1,1251,3,2,20,6,4
-920272,Ludwig Malachowski Thorell,2024,FS,8595,True,1,0,0,0,0,0,0,0,0
+920272,Ludwig Malachowski Thorell,2024,FS,8595,True,2,1,0,69,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2024,FS,23488,True,5,0,0,0,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2023,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 920272,Ludwig Malachowski Thorell,2023,SEC,8877,False,1,1,0,90,0,0,0,0,0
@@ -2495,7 +2488,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 501555,Viktor Gustafson,2016,SE3S,57117,False,26,24,0,2071,2,2,0,0,5
 501555,Viktor Gustafson,2014,S21P,9018,False,1,1,0,90,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2026,UCOL,2719,False,3,1,0,57,0,0,1,1,0
-1342148,Romeo Arrhenius Leandersson,2026,U19Q,23488,True,3,3,0,251,0,1,0,0,0
+1342148,Romeo Arrhenius Leandersson,2026,U19Q,23488,True,5,5,0,431,0,1,0,0,0
 1342148,Romeo Arrhenius Leandersson,2026,SEC,2719,False,1,0,0,0,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2026,FS,23488,True,3,3,0,190,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2026,ELQ,2719,False,2,1,0,15,0,0,0,0,0
@@ -2503,7 +2496,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1342148,Romeo Arrhenius Leandersson,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2025,SEC,2719,False,7,5,0,78,1,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2025,SE1,2719,False,28,14,0,403,0,0,1,0,2
-1342148,Romeo Arrhenius Leandersson,2025,FS,24978,True,5,5,0,320,0,0,0,0,0
+1342148,Romeo Arrhenius Leandersson,2025,FS,24978,True,6,5,0,320,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2025,FS,23488,True,1,0,0,0,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2025,FS,23487,True,7,3,0,197,0,0,0,0,0
 1342148,Romeo Arrhenius Leandersson,2024,U17Q,23487,True,3,1,0,1,0,0,0,0,0
@@ -2655,7 +2648,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1068963,Teo Helge,2022,SEC,9611,False,3,3,0,181,0,0,0,0,1
 1068963,Teo Helge,2022,SE3S,9611,False,30,24,0,1599,1,2,0,0,1
 1068963,Teo Helge,2021,SE2,9611,False,6,0,0,0,0,0,0,0,0
-668731,Áki Samuelsen,2026,UNLC,9173,True,4,4,0,282,1,0,6,2,0
+668731,Áki Samuelsen,2026,UNLC,9173,True,6,6,0,424,3,0,13,4,1
 668731,Áki Samuelsen,2026,UCOL,2719,False,3,3,0,121,0,1,6,2,0
 668731,Áki Samuelsen,2026,SEC,2719,False,1,0,0,0,0,0,0,0,0
 668731,Áki Samuelsen,2026,ELQ,2719,False,2,1,0,70,0,0,0,0,1
@@ -3107,6 +3100,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 698742,Busanello,2018,BRA4,40196,False,8,0,0,0,0,0,0,0,0
 698742,Busanello,2016,BRSC,17776,False,4,0,0,0,0,0,0,0,0
 698742,Busanello,2016,BRC2,17776,False,1,1,0,90,0,0,0,0,0
+1069508,Bleon Kurtulus,2026,UNLB,53982,True,1,0,0,0,0,0,0,0,0
 1069508,Bleon Kurtulus,2026,SEC,496,False,1,1,0,90,1,0,0,0,0
 1069508,Bleon Kurtulus,2025,U21Q,8595,True,8,7,0,512,0,0,0,0,2
 1069508,Bleon Kurtulus,2025,SEC,496,False,4,2,0,90,0,0,0,0,0
@@ -3115,7 +3109,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1069508,Bleon Kurtulus,2025,FS,8595,True,1,1,0,86,0,0,0,0,0
 1069508,Bleon Kurtulus,2024,SEC,1011,False,4,4,0,355,0,0,0,0,1
 1069508,Bleon Kurtulus,2024,SE1,1011,False,30,28,1,2515,1,0,14,4,3
-1069508,Bleon Kurtulus,2024,FS,8595,True,1,1,0,55,0,0,0,0,0
+1069508,Bleon Kurtulus,2024,FS,8595,True,2,1,0,55,0,0,0,0,0
 1069508,Bleon Kurtulus,2024,FS,24978,True,7,4,0,360,0,0,1,0,0
 1069508,Bleon Kurtulus,2023,U17Q,23487,True,6,6,0,537,0,1,0,0,1
 1069508,Bleon Kurtulus,2023,SEC,1011,False,5,0,0,0,0,0,0,0,0
@@ -3296,7 +3290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 125314,Pontus Jansson,2008,SEC,5200,False,1,0,0,0,0,0,0,0,0
 125314,Pontus Jansson,2008,SE1,496,False,18,2,0,20,0,0,0,0,0
 125314,Pontus Jansson,2007,U17Q,23487,True,5,4,0,248,0,0,0,0,1
-706560,Andrej Djuric,2026,UNLC,11953,True,4,2,0,180,0,1,1,0,0
+706560,Andrej Djuric,2026,UNLC,11953,True,6,3,0,210,0,1,2,1,0
 706560,Andrej Djuric,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
 706560,Andrej Djuric,2025,SEC,496,False,5,1,0,90,0,0,0,0,0
 706560,Andrej Djuric,2025,SE1,496,False,28,21,3,1780,1,0,19,2,6
@@ -3459,10 +3453,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 861568,Noah Åstrand John,2021,IJ1,11676,False,33,26,1,2292,1,1,0,0,5
 861568,Noah Åstrand John,2021,CITP,11676,False,3,0,0,0,0,0,0,0,0
 861568,Noah Åstrand John,2019,JUNO,67742,False,1,0,0,0,0,0,0,0,0
-1376817,Vicente Ponnert Hidalgo,2026,U17Q,23487,True,1,0,0,0,0,0,0,0,0
 1376817,Vicente Ponnert Hidalgo,2026,SEC,496,False,1,1,0,45,0,0,0,0,0
-1376817,Vicente Ponnert Hidalgo,2026,FS,24978,True,1,0,0,0,0,0,0,0,0
-1376817,Vicente Ponnert Hidalgo,2026,FS,23487,True,1,0,0,0,0,0,0,0,0
+1376817,Vicente Ponnert Hidalgo,2026,FS,24978,True,2,1,0,90,0,0,0,0,0
 1376817,Vicente Ponnert Hidalgo,2025,U17Q,23487,True,6,6,0,540,1,0,0,0,0
 1376817,Vicente Ponnert Hidalgo,2025,SEC,496,False,4,0,0,0,0,0,0,0,0
 1376817,Vicente Ponnert Hidalgo,2025,SE1,496,False,23,0,0,0,0,0,0,0,0
@@ -3507,7 +3499,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 667249,Otto Rosengren,2021,SE1,2719,False,30,26,0,1774,0,3,13,3,6
 667249,Otto Rosengren,2020,SEC,2719,False,1,0,0,0,0,0,0,0,0
 667249,Otto Rosengren,2020,SE1,2719,False,23,2,0,66,0,0,1,0,0
-1457761,Theodor Lundbergh,2026,U19Q,23488,True,3,3,0,251,0,0,0,0,0
+1457761,Theodor Lundbergh,2026,U19Q,23488,True,5,5,0,410,0,0,0,0,1
 1457761,Theodor Lundbergh,2026,SEC,496,False,1,1,0,90,0,0,0,0,1
 1457761,Theodor Lundbergh,2026,FS,23488,True,3,3,0,194,0,0,0,0,1
 1457761,Theodor Lundbergh,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
@@ -3519,6 +3511,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1457761,Theodor Lundbergh,2024,SE1,496,False,3,1,0,1,0,0,0,0,0
 946045,Jovan Milosavljevic,2026,U19Q,17383,True,3,0,0,0,0,0,0,0,0
 946045,Jovan Milosavljevic,2026,SEC,496,False,1,1,0,70,1,0,0,0,0
+946045,Jovan Milosavljevic,2026,FS,9566,True,1,1,0,90,1,0,0,0,0
 946045,Jovan Milosavljevic,2025,U19Q,17383,True,6,4,0,355,0,0,0,0,2
 946045,Jovan Milosavljevic,2025,SERP,59358,False,2,2,0,151,0,0,0,0,0
 946045,Jovan Milosavljevic,2025,SER1,59358,False,20,17,0,990,2,3,20,8,0
@@ -3870,7 +3863,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 731771,Taha Ali,2019,SEC,75341,False,1,1,0,77,0,0,0,0,0
 731771,Taha Ali,2019,SEC,23224,False,3,3,0,270,1,0,0,0,0
 731771,Taha Ali,2019,SE3N,23224,False,30,29,0,2126,10,5,0,0,2
-349300,Sead Haksabanovic,2026,UNLC,11953,True,4,0,0,0,0,0,0,0,0
+349300,Sead Haksabanovic,2026,UNLC,11953,True,6,2,0,105,0,1,2,0,1
 349300,Sead Haksabanovic,2026,SEC,496,False,1,1,0,79,0,0,0,0,0
 349300,Sead Haksabanovic,2025,SEC,496,False,5,4,0,110,0,0,0,0,0
 349300,Sead Haksabanovic,2025,SE1,496,False,28,27,1,2214,5,6,70,20,5
@@ -3948,7 +3941,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 349300,Sead Haksabanovic,2014,FS,41525,True,3,3,0,186,1,1,0,0,0
 349300,Sead Haksabanovic,2013,SEC,1011,False,3,2,0,35,0,0,0,0,0
 349300,Sead Haksabanovic,2013,JUSÖ,7915,False,2,2,0,158,0,0,0,0,0
-377665,Arnór Sigurdsson,2026,UNLC,3574,True,4,3,0,65,0,0,1,1,0
+852727,Diego García,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
+852727,Diego García,2025,SE1,496,False,18,13,0,596,4,0,19,10,2
+852727,Diego García,2025,ES2,1244,False,42,38,0,1804,4,1,42,15,4
+852727,Diego García,2025,CDR,1244,False,2,0,0,0,0,0,0,0,0
+852727,Diego García,2024,ES1,1244,False,38,28,0,1190,3,0,29,9,2
+852727,Diego García,2024,CDR,1244,False,5,4,0,279,1,1,9,3,0
+852727,Diego García,2023,ES2,1244,False,42,42,0,2805,12,1,81,31,3
+852727,Diego García,2023,CDR,1244,False,2,2,0,35,0,0,0,0,0
+852727,Diego García,2022,E3G1,16486,False,38,36,0,2817,13,0,0,0,3
+852727,Diego García,2022,CDR,16486,False,1,1,0,78,0,0,0,0,0
+852727,Diego García,2021,ES2,1244,False,42,4,0,96,0,0,3,0,0
+852727,Diego García,2021,E4G1,17686,False,34,28,0,2052,8,0,0,0,2
+852727,Diego García,2021,CDR,1244,False,3,1,0,46,0,0,1,0,0
+852727,Diego García,2020,ES2,1244,False,4,2,0,6,0,0,0,0,0
+852727,Diego García,2020,ES1P,1244,False,2,1,0,15,0,0,1,0,0
+377665,Arnór Sigurdsson,2026,UNLC,3574,True,5,4,0,126,0,0,5,1,0
 377665,Arnór Sigurdsson,2026,GRP,9,False,4,2,0,72,0,0,0,0,1
 377665,Arnór Sigurdsson,2026,GR1,9,False,10,7,0,454,1,0,4,2,1
 377665,Arnór Sigurdsson,2025,SEC,496,False,5,4,0,308,1,0,0,0,0
@@ -4021,21 +4029,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 377665,Arnór Sigurdsson,2015,IS1,1231,False,22,6,0,104,0,0,0,0,0
 377665,Arnór Sigurdsson,2015,FS,53670,True,1,1,0,10,0,0,0,0,0
 377665,Arnór Sigurdsson,2014,IS1,1231,False,15,1,0,18,0,0,0,0,0
-852727,Diego García,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
-852727,Diego García,2025,SE1,496,False,18,13,0,596,4,0,19,10,2
-852727,Diego García,2025,ES2,1244,False,42,38,0,1804,4,1,42,15,4
-852727,Diego García,2025,CDR,1244,False,2,0,0,0,0,0,0,0,0
-852727,Diego García,2024,ES1,1244,False,38,28,0,1190,3,0,29,9,2
-852727,Diego García,2024,CDR,1244,False,5,4,0,279,1,1,9,3,0
-852727,Diego García,2023,ES2,1244,False,42,42,0,2805,12,1,81,31,3
-852727,Diego García,2023,CDR,1244,False,2,2,0,35,0,0,0,0,0
-852727,Diego García,2022,E3G1,16486,False,38,36,0,2817,13,0,0,0,3
-852727,Diego García,2022,CDR,16486,False,1,1,0,78,0,0,0,0,0
-852727,Diego García,2021,ES2,1244,False,42,4,0,96,0,0,3,0,0
-852727,Diego García,2021,E4G1,17686,False,34,28,0,2052,8,0,0,0,2
-852727,Diego García,2021,CDR,1244,False,3,1,0,46,0,0,1,0,0
-852727,Diego García,2020,ES2,1244,False,4,2,0,6,0,0,0,0,0
-852727,Diego García,2020,ES1P,1244,False,2,1,0,15,0,0,1,0,0
 1126111,Oscar Sjöstrand,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
 1126111,Oscar Sjöstrand,2025,U21Q,8595,True,2,2,0,89,0,0,0,0,0
 1126111,Oscar Sjöstrand,2025,SE1,496,False,28,12,0,745,1,1,24,7,1
@@ -4048,7 +4041,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1126111,Oscar Sjöstrand,2023,SE2,8843,False,15,13,1,253,1,0,0,0,2
 927094,Daníel Gudjohnsen,2026,UNLC,3574,True,3,0,0,0,0,0,0,0,0
 927094,Daníel Gudjohnsen,2026,SEC,496,False,1,1,0,90,1,0,0,0,0
-927094,Daníel Gudjohnsen,2025,U21Q,22414,True,5,5,0,405,7,0,0,0,1
+927094,Daníel Gudjohnsen,2025,U21Q,22414,True,6,6,0,483,7,0,0,0,2
 927094,Daníel Gudjohnsen,2025,SEC,496,False,5,4,0,24,0,0,0,0,0
 927094,Daníel Gudjohnsen,2025,SE1,496,False,28,20,0,672,1,1,21,11,2
 927094,Daníel Gudjohnsen,2025,FS,3574,True,5,1,0,7,0,0,1,0,0
@@ -4117,7 +4110,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1566526,Isaac Assibu,2026,SEC,496,False,1,1,0,54,0,0,0,0,0
 1566526,Isaac Assibu,2025,SE1,496,False,17,8,0,195,0,0,8,0,0
 1614689,Tarik Karic,2025,SE1,496,False,1,0,0,0,0,0,0,0,0
-1421668,Omar Krajina,2026,U19Q,26101,True,3,0,0,0,0,0,0,0,0
+1421668,Omar Krajina,2026,U19Q,26101,True,4,0,0,0,0,0,0,0,0
 1421668,Omar Krajina,2026,SEC,496,False,1,0,0,0,0,0,0,0,0
 1421668,Omar Krajina,2026,FS,26101,True,2,0,0,0,0,0,0,0,0
 1421668,Omar Krajina,2025,U19Q,26101,True,3,3,0,100,0,0,0,0,0
@@ -4257,7 +4250,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1069496,Elton Fischerström Opancar,2023,17EU,23487,True,3,1,0,90,0,0,0,0,0
 1069496,Elton Fischerström Opancar,2022,FS,57021,True,2,1,0,90,0,0,0,0,0
 1069496,Elton Fischerström Opancar,2022,FS,41525,True,6,1,0,90,0,0,0,0,0
-1138101,Hampus Skoglund,2026,UNLB,3557,True,4,2,0,91,0,0,1,0,0
+1138101,Hampus Skoglund,2026,UNLB,3557,True,5,2,0,91,0,0,1,0,0
 1138101,Hampus Skoglund,2026,SEC,1059,False,1,0,0,0,0,0,0,0,0
 1138101,Hampus Skoglund,2026,ELQ,1059,False,2,2,0,180,0,0,0,0,0
 1138101,Hampus Skoglund,2026,ECLQ,1059,False,2,2,0,180,0,0,0,0,0
@@ -4267,7 +4260,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1138101,Hampus Skoglund,2025,ECLQ,1059,False,4,4,0,322,0,0,0,0,0
 1138101,Hampus Skoglund,2024,SEC,1059,False,5,4,0,360,0,0,0,0,0
 1138101,Hampus Skoglund,2024,SE1,1059,False,30,27,0,2105,0,4,24,4,0
-1138101,Hampus Skoglund,2024,FS,8595,True,5,5,0,314,1,0,0,0,0
+1138101,Hampus Skoglund,2024,FS,8595,True,6,6,0,335,1,0,0,0,0
 1138101,Hampus Skoglund,2023,U21Q,8595,True,4,1,0,6,0,0,0,0,0
 1138101,Hampus Skoglund,2023,SE1,1059,False,30,29,0,2129,0,3,13,2,2
 1138101,Hampus Skoglund,2023,FS,8595,True,2,2,0,54,0,0,0,0,0
@@ -4308,7 +4301,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 666922,Ibrahima Fofana,2026,SEC,1059,False,1,1,0,90,1,0,0,0,0
 666922,Ibrahima Fofana,2026,ELQ,1059,False,2,1,0,14,0,0,0,0,0
 666922,Ibrahima Fofana,2026,ECLQ,1059,False,2,2,0,102,0,0,0,0,0
-666922,Ibrahima Fofana,2026,AFCQ,3856,True,2,2,0,153,0,0,1,0,0
+666922,Ibrahima Fofana,2026,AFCQ,3856,True,4,4,0,276,0,1,2,0,0
 666922,Ibrahima Fofana,2025,SEC,1059,False,7,5,0,257,0,0,0,0,0
 666922,Ibrahima Fofana,2025,SE1,1059,False,28,22,1,1556,1,1,10,3,2
 666922,Ibrahima Fofana,2025,FS,3856,True,5,3,0,213,0,0,1,1,0
@@ -4457,7 +4450,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1016301,Oscar Steinke Brånby,2022,FS,24978,True,1,1,0,33,0,0,0,0,0
 1016301,Oscar Steinke Brånby,2021,FS,57021,True,2,0,0,0,0,0,0,0,0
 1016301,Oscar Steinke Brånby,2021,FS,41525,True,2,1,0,56,0,0,0,0,0
-1516489,Hampus Thorsson,2026,FS,24978,True,4,3,0,210,0,0,0,0,0
+1516489,Hampus Thorsson,2026,FS,24978,True,5,3,0,210,0,0,0,0,0
 1516489,Hampus Thorsson,2026,19YL,62109,False,2,2,0,180,0,0,0,0,1
 1516489,Hampus Thorsson,2025,U17Q,23487,True,3,2,0,108,0,0,0,0,0
 1516489,Hampus Thorsson,2025,SE1,1059,False,5,0,0,0,0,0,0,0,0
@@ -4479,7 +4472,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1170094,Björn Hedlöf,2025,SEC,1059,False,6,1,0,21,0,0,0,0,0
 1170094,Björn Hedlöf,2025,SE3N,17938,False,30,12,10,925,1,0,0,0,1
 1170094,Björn Hedlöf,2025,SE1,1059,False,18,1,0,5,0,0,0,0,0
-1170094,Björn Hedlöf,2025,FS,24978,True,3,3,0,199,0,0,0,0,0
+1170094,Björn Hedlöf,2025,FS,24978,True,6,3,0,199,0,0,0,0,0
 1170094,Björn Hedlöf,2025,FS,23488,True,1,1,0,90,0,0,0,0,0
 1170094,Björn Hedlöf,2025,FS,23487,True,7,3,0,208,0,0,0,0,0
 1170094,Björn Hedlöf,2024,U17Q,23487,True,6,3,0,65,1,0,1,1,0
@@ -4500,7 +4493,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 688042,Markus Karlsson,2025,ECLQ,1059,False,4,4,0,390,0,0,0,0,0
 688042,Markus Karlsson,2024,SEC,1059,False,5,4,0,360,0,0,0,0,0
 688042,Markus Karlsson,2024,SE1,1059,False,30,28,0,2488,3,1,26,10,3
-688042,Markus Karlsson,2024,FS,8595,True,5,5,0,304,0,0,0,0,0
+688042,Markus Karlsson,2024,FS,8595,True,6,6,0,349,0,0,0,0,0
 688042,Markus Karlsson,2024,FS,46607,True,2,2,0,135,0,0,0,0,0
 688042,Markus Karlsson,2023,U21Q,8595,True,9,0,0,0,0,0,0,0,0
 688042,Markus Karlsson,2023,SEC,1059,False,4,3,0,180,0,0,0,0,0
@@ -4531,7 +4524,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 911482,Amin Boudri,2025,CCL,51828,False,8,3,4,157,0,0,4,1,0
 911482,Amin Boudri,2024,SEC,7009,False,4,2,0,164,0,0,0,0,1
 911482,Amin Boudri,2024,SE1,7009,False,30,26,2,2037,6,2,59,13,7
-911482,Amin Boudri,2024,FS,8595,True,5,3,0,182,0,0,0,0,0
+911482,Amin Boudri,2024,FS,8595,True,6,4,0,227,0,0,0,0,0
 911482,Amin Boudri,2024,FS,46607,True,2,2,0,106,0,0,0,0,1
 911482,Amin Boudri,2023,SEC,7009,False,3,3,0,211,0,0,0,0,2
 911482,Amin Boudri,2023,SE1,7009,False,30,22,0,873,2,0,28,8,4
@@ -4564,7 +4557,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 283185,Tesfaldet Tekie,2026,SEC,1059,False,1,1,0,90,0,0,0,0,0
 283185,Tesfaldet Tekie,2026,ELQ,1059,False,2,2,0,180,0,0,0,0,0
 283185,Tesfaldet Tekie,2026,ECLQ,1059,False,2,2,0,150,0,0,0,0,0
-283185,Tesfaldet Tekie,2026,AFCQ,13953,True,2,2,0,157,0,0,1,0,0
+283185,Tesfaldet Tekie,2026,AFCQ,13953,True,3,3,0,247,0,0,4,2,0
 283185,Tesfaldet Tekie,2025,SEC,1059,False,7,3,0,137,0,0,0,0,0
 283185,Tesfaldet Tekie,2025,SE1,1059,False,28,20,1,1075,1,0,13,4,2
 283185,Tesfaldet Tekie,2025,ECLQ,1059,False,4,3,0,158,0,0,0,0,0
@@ -4735,6 +4728,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 527336,Dennis Collander,2018,17EU,23487,True,3,2,0,147,0,0,0,0,1
 527336,Dennis Collander,2017,FS,57021,True,4,4,0,218,0,1,0,0,0
 527336,Dennis Collander,2017,FS,41525,True,3,2,0,138,0,0,0,0,0
+1590127,Filip Jakobsson,2026,U19Q,23488,True,2,2,0,91,1,0,0,0,0
 1590127,Filip Jakobsson,2026,SEC,1059,False,1,1,0,12,0,0,0,0,0
 1590127,Filip Jakobsson,2026,FS,23488,True,3,3,0,96,0,0,0,0,0
 1590127,Filip Jakobsson,2026,19YL,62109,False,2,2,0,180,0,0,0,0,0
@@ -4790,6 +4784,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 590835,Victor Lind,2019,19YL,50935,False,6,6,0,298,0,1,0,0,1
 590835,Victor Lind,2018,FS,28143,True,9,9,0,338,4,2,0,0,0
 850132,Montader Madjed,2026,SEC,1059,False,1,0,0,0,0,0,0,0,0
+850132,Montader Madjed,2026,FS,3560,True,1,0,0,0,0,0,0,0,0
 850132,Montader Madjed,2026,ELQ,1059,False,2,2,0,156,0,0,0,0,0
 850132,Montader Madjed,2026,ECLQ,1059,False,2,2,0,114,0,0,0,0,0
 850132,Montader Madjed,2025,SEC,1059,False,7,7,0,541,2,0,0,0,0
@@ -4825,7 +4820,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 850132,Montader Madjed,2021,SE1,10507,False,17,6,0,215,0,0,8,1,0
 850132,Montader Madjed,2021,FS,23487,True,6,5,0,338,0,0,0,0,0
 850132,Montader Madjed,2020,SE1,10507,False,30,2,0,43,0,0,1,0,0
-579289,Paulos Abraham,2026,UNLB,3557,True,3,0,0,0,0,0,0,0,0
+579289,Paulos Abraham,2026,UNLB,3557,True,4,0,0,0,0,0,0,0,0
 579289,Paulos Abraham,2026,SEC,1059,False,1,0,0,0,0,0,0,0,0
 579289,Paulos Abraham,2026,ELQ,1059,False,2,2,0,156,1,0,0,0,1
 579289,Paulos Abraham,2026,ECLQ,1059,False,2,2,0,113,0,0,0,0,0
@@ -4913,7 +4908,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1435188,Oskar Moczarny,2025,SE3N,17938,False,30,28,0,2306,6,7,0,0,1
 1435188,Oskar Moczarny,2025,SE1,1059,False,6,1,0,4,0,0,0,0,0
 1435188,Oskar Moczarny,2024,SE3N,17938,False,1,0,0,0,0,0,0,0,0
-1461579,Felix Bjernvall,2026,U17Q,23487,True,1,1,0,77,0,0,0,0,1
+1461579,Felix Bjernvall,2026,U17Q,23487,True,2,2,0,167,1,0,0,0,1
 1461579,Felix Bjernvall,2026,FS,41525,True,5,5,0,271,6,0,0,0,3
 1461579,Felix Bjernvall,2026,FS,23487,True,1,1,0,45,0,0,0,0,0
 1461579,Felix Bjernvall,2026,19YL,62109,False,2,2,0,176,0,0,0,0,0
@@ -5047,7 +5042,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 963084,Max Larsson,2021,SEC,5202,False,1,0,0,0,0,0,0,0,0
 963084,Max Larsson,2021,SE2,5202,False,30,27,0,1529,2,0,0,0,5
 963084,Max Larsson,2020,SE2,5202,False,6,0,0,0,0,0,0,0,0
-223920,Adam Ståhl,2026,UNLC,3443,True,4,3,0,225,0,0,6,1,1
+223920,Adam Ståhl,2026,UNLC,3443,True,6,4,0,284,0,0,6,1,1
 223920,Adam Ståhl,2026,SEC,1044,False,1,1,0,45,0,0,0,0,0
 223920,Adam Ståhl,2025,SEC,1044,False,5,2,0,101,1,0,0,0,0
 223920,Adam Ståhl,2025,SE1,1044,False,28,24,0,1581,1,2,8,4,2
@@ -5086,7 +5081,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 223920,Adam Ståhl,2013,SE3S,9611,False,26,25,0,1654,3,4,0,0,2
 223920,Adam Ståhl,2012,SEC,9611,False,1,0,0,0,0,0,0,0,0
 223920,Adam Ståhl,2011,JUSÖ,7916,False,19,2,0,180,0,0,0,0,0
-273064,Miro Tenho,2026,UNLC,3443,True,4,1,0,90,0,0,1,0,0
+273064,Miro Tenho,2026,UNLC,3443,True,6,2,0,157,0,0,3,1,0
 273064,Miro Tenho,2026,SEC,1044,False,1,0,0,0,0,0,0,0,0
 273064,Miro Tenho,2025,SEC,1044,False,5,5,0,371,0,0,0,0,0
 273064,Miro Tenho,2025,SE1,1044,False,28,25,2,2232,2,0,17,6,6
@@ -5288,6 +5283,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1126108,Melvin Vučenović Persson,2025,SEC,1044,False,2,0,0,0,0,0,0,0,0
 1126108,Melvin Vučenović Persson,2025,SE3N,2283,False,25,14,1,970,0,1,0,0,3
 1126108,Melvin Vučenović Persson,2025,SE1,1044,False,6,0,0,0,0,0,0,0,0
+1126108,Melvin Vučenović Persson,2025,REET,2283,False,1,0,0,0,0,0,0,0,0
 1126108,Melvin Vučenović Persson,2025,FS,23488,True,6,5,0,346,0,0,0,0,1
 1126108,Melvin Vučenović Persson,2024,UCOL,1044,False,4,1,0,9,0,0,0,0,0
 1126108,Melvin Vučenović Persson,2024,SE1,1044,False,11,0,0,0,0,0,0,0,0
@@ -5313,7 +5309,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1162486,Daryl Tschoumy-Nana,2023,BJ2,21085,False,26,25,1,2229,9,0,0,0,6
 1162486,Daryl Tschoumy-Nana,2023,AJ2,3862,False,14,2,0,105,0,0,0,0,0
 1018035,Matias Siltanen,2026,SEC,1044,False,1,0,0,0,0,0,0,0,0
-1018035,Matias Siltanen,2025,U21Q,20796,True,10,10,0,886,3,5,0,0,2
+1018035,Matias Siltanen,2025,U21Q,20796,True,11,11,0,976,3,5,0,0,2
 1018035,Matias Siltanen,2025,SEC,1044,False,5,5,0,450,0,0,0,0,1
 1018035,Matias Siltanen,2025,SE1,1044,False,28,28,0,2429,0,3,14,3,3
 1018035,Matias Siltanen,2025,FS,20796,True,2,2,0,160,2,0,0,0,1
@@ -5342,6 +5338,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1018035,Matias Siltanen,2021,FS,34682,True,5,5,0,231,0,0,0,0,0
 1018035,Matias Siltanen,2021,FI3A,95361,False,15,11,0,902,0,0,0,0,3
 912072,Bo Hegland,2026,SEC,1044,False,1,0,0,0,0,0,0,0,0
+912072,Bo Hegland,2026,FS,16854,True,1,1,0,61,0,0,0,0,0
 912072,Bo Hegland,2025,U21Q,16854,True,8,2,0,96,0,2,0,0,0
 912072,Bo Hegland,2025,SEC,1044,False,5,5,0,271,1,2,0,0,0
 912072,Bo Hegland,2025,SE1,1044,False,28,28,0,2348,11,17,67,28,2
@@ -5384,7 +5381,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 675823,Patric Åslund,2019,SEC,5202,False,1,0,0,0,0,0,0,0,0
 675823,Patric Åslund,2018,SE2,5202,False,1,0,0,0,0,0,0,0,0
 951296,Christos Almyras,2026,SEC,1044,False,1,1,0,90,1,0,0,0,1
-951296,Christos Almyras,2025,U21Q,9317,True,5,5,0,403,2,0,0,0,2
+951296,Christos Almyras,2025,U21Q,9317,True,6,6,0,483,2,0,0,0,2
 951296,Christos Almyras,2025,SE1,1044,False,17,14,1,332,1,0,13,5,1
 951296,Christos Almyras,2025,S2PA,120649,False,3,3,0,205,0,0,0,0,0
 951296,Christos Almyras,2025,S1PO,6676,False,10,10,0,795,1,1,20,2,2
@@ -5465,7 +5462,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1567007,Hannes Hyllenbom,2025,SE1,1044,False,7,0,0,0,0,0,0,0,0
 1271029,Alexander Johansson,2026,SEC,75341,False,1,1,0,71,0,0,0,0,0
 1271029,Alexander Johansson,2026,SEC,1044,False,1,1,0,88,2,1,0,0,0
-1271029,Alexander Johansson,2026,FS,24978,True,4,3,0,262,0,0,0,0,0
+1271029,Alexander Johansson,2026,FS,24978,True,5,5,0,294,0,0,0,0,0
 1271029,Alexander Johansson,2025,U17Q,23487,True,6,6,0,283,0,2,0,0,0
 1271029,Alexander Johansson,2025,SE3N,75341,False,14,14,0,1157,5,5,0,0,1
 1271029,Alexander Johansson,2025,SE1,1044,False,17,3,0,24,0,0,0,0,0
@@ -5518,7 +5515,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 741239,Abdul Abdulmalik,2019,FS,23260,True,3,3,0,98,0,1,0,0,0
 741239,Abdul Abdulmalik,2019,FAYC,14620,False,4,4,0,344,4,0,0,0,0
 741239,Abdul Abdulmalik,2018,FAYC,14620,False,1,1,0,22,0,0,1,0,0
-403673,Mikael Anderson,2026,UNLC,3574,True,4,3,0,195,0,1,2,0,0
+403673,Mikael Anderson,2026,UNLC,3574,True,5,3,0,195,0,1,2,0,0
 403673,Mikael Anderson,2026,UCOL,678,False,3,1,2,21,0,0,0,0,0
 403673,Mikael Anderson,2026,ELQ,678,False,2,2,0,71,0,0,1,0,0
 403673,Mikael Anderson,2026,DKP,678,False,2,1,1,55,1,0,0,0,0
@@ -5768,13 +5765,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 474160,Sander Ringberg,2015,NOPO,12419,False,1,1,0,11,0,0,0,0,0
 1172429,Milian Jansson,2025,SE3N,50061,False,12,10,0,540,0,0,0,0,1
 1172429,Milian Jansson,2025,SE1,1044,False,14,0,0,0,0,0,0,0,0
+1172429,Milian Jansson,2025,FS,24978,True,1,0,0,0,0,0,0,0,0
 1172429,Milian Jansson,2025,FS,23488,True,1,0,0,0,0,0,0,0,0
 1172429,Milian Jansson,2024,FS,41525,True,3,2,0,69,0,0,0,0,0
 1172429,Milian Jansson,2023,FS,57021,True,2,2,0,69,0,0,0,0,0
 1172429,Milian Jansson,2023,FS,41525,True,3,3,0,89,0,0,0,0,1
 1599665,Angelo Agbejoye,2026,SEC,1044,False,1,1,0,10,1,0,0,0,0
 1599665,Angelo Agbejoye,2025,SE1,1044,False,18,0,0,0,0,0,0,0,0
-1407851,Alexander Andersson,2026,U17Q,23487,True,1,1,0,90,0,0,0,0,0
+1407851,Alexander Andersson,2026,U17Q,23487,True,2,2,0,180,0,0,0,0,0
 1407851,Alexander Andersson,2026,SEC,1044,False,1,1,0,80,1,0,0,0,0
 1407851,Alexander Andersson,2026,FS,41525,True,5,5,0,336,2,0,0,0,0
 1407851,Alexander Andersson,2026,FS,23487,True,1,1,0,90,1,0,0,0,0
@@ -5916,21 +5914,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 75890,Kristoffer Nordfeldt,2008,21EU,8595,True,4,0,0,0,0,0,0,0,0
 75890,Kristoffer Nordfeldt,2007,U19Q,23488,True,2,1,0,90,0,0,0,0,0
 75890,Kristoffer Nordfeldt,2007,SE2,1092,False,30,29,0,2596,0,0,0,0,0
-1446713,Norton Otterud,2026,U19Q,23488,True,2,0,0,0,0,0,0,0,0
+1446713,Norton Otterud,2026,U19Q,23488,True,4,0,0,0,0,0,0,0,0
 1446713,Norton Otterud,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
-1446713,Norton Otterud,2026,FS,23488,True,1,0,0,0,0,0,0,0,0
+1446713,Norton Otterud,2026,FS,24978,True,5,0,0,0,0,0,0,0,0
+1446713,Norton Otterud,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 1446713,Norton Otterud,2025,U19Q,23488,True,2,0,0,0,0,0,0,0,0
 1446713,Norton Otterud,2025,SEC,272,False,1,0,0,0,0,0,0,0,0
-1446713,Norton Otterud,2025,SE1,272,False,17,0,0,0,0,0,0,0,0
-1446713,Norton Otterud,2025,FS,24978,True,2,1,0,90,0,0,0,0,0
+1446713,Norton Otterud,2025,SE1,272,False,19,0,0,0,0,0,0,0,0
+1446713,Norton Otterud,2025,FS,24978,True,3,2,0,180,0,0,0,0,0
 1446713,Norton Otterud,2025,FS,23488,True,1,1,0,90,0,0,0,0,0
 1446713,Norton Otterud,2024,SE1,272,False,10,0,0,0,0,0,0,0,0
-1183410,Charlie Pavey,2026,U19Q,23488,True,3,3,0,211,0,1,0,0,0
+1183410,Charlie Pavey,2026,U19Q,23488,True,5,5,0,322,1,1,0,0,0
 1183410,Charlie Pavey,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
+1183410,Charlie Pavey,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 1183410,Charlie Pavey,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1183410,Charlie Pavey,2025,SEC,272,False,5,3,0,265,0,0,0,0,1
 1183410,Charlie Pavey,2025,SE1,272,False,28,6,0,393,1,0,4,3,2
-1183410,Charlie Pavey,2025,FS,24978,True,5,5,0,312,1,0,0,0,0
+1183410,Charlie Pavey,2025,FS,24978,True,6,5,0,312,1,0,0,0,0
 1183410,Charlie Pavey,2025,FS,23488,True,1,0,0,0,0,0,0,0,0
 1183410,Charlie Pavey,2025,FS,23487,True,7,2,0,114,0,0,0,0,0
 1183410,Charlie Pavey,2025,ECLQ,272,False,4,1,0,32,0,0,0,0,0
@@ -6340,13 +6340,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 97616,Sotirios Papagiannopoulos,2008,SEC,8877,False,3,0,0,0,0,0,0,0,0
 97616,Sotirios Papagiannopoulos,2008,SE2,8877,False,30,9,0,403,0,0,0,0,0
 97616,Sotirios Papagiannopoulos,2007,SE2,8877,False,10,1,0,7,0,0,0,0,0
-1183666,Oskar Pukelis,2026,U19Q,28149,True,2,2,0,180,0,3,0,0,1
+1183666,Oskar Pukelis,2026,U19Q,28149,True,4,3,0,270,0,3,0,0,1
 1183666,Oskar Pukelis,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
+1183666,Oskar Pukelis,2026,FS,28149,True,2,0,0,0,0,0,0,0,0
 1183666,Oskar Pukelis,2025,U21Q,24962,True,2,1,0,90,0,0,0,0,0
 1183666,Oskar Pukelis,2025,U19Q,28149,True,3,3,0,270,0,0,0,0,1
 1183666,Oskar Pukelis,2025,SEC,272,False,4,0,0,0,0,0,0,0,0
-1183666,Oskar Pukelis,2025,SE1,272,False,26,2,0,26,0,0,0,0,0
-1183666,Oskar Pukelis,2025,FS,28149,True,4,3,0,239,0,0,0,0,0
+1183666,Oskar Pukelis,2025,SE1,272,False,28,2,0,26,0,0,0,0,0
+1183666,Oskar Pukelis,2025,FS,28149,True,6,3,0,239,0,0,0,0,0
 1183666,Oskar Pukelis,2025,FS,24962,True,2,2,0,119,0,0,0,0,0
 1183666,Oskar Pukelis,2024,U17Q,28030,True,5,4,0,224,0,0,0,0,0
 1183666,Oskar Pukelis,2024,FS,28030,True,4,2,0,135,0,0,0,0,1
@@ -6362,7 +6363,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1140116,Ladji Camara,2023,F17M,107690,False,2,1,0,3,0,0,0,0,0
 1140116,Ladji Camara,2023,F17C,107690,False,22,18,0,1203,1,0,0,0,3
 1140116,Ladji Camara,2022,F17D,107690,False,25,21,0,1580,1,0,0,0,3
-719926,Áron Csongvai,2026,UNLB,3468,True,4,3,0,145,0,0,2,0,1
+719926,Áron Csongvai,2026,UNLB,3468,True,5,4,0,174,0,0,2,0,1
+719926,Áron Csongvai,2026,FRC,618,False,1,0,0,0,0,0,0,0,0
 719926,Áron Csongvai,2026,FR2,618,False,12,12,0,1035,1,2,13,5,1
 719926,Áron Csongvai,2025,SEC,272,False,5,5,0,450,0,1,0,0,0
 719926,Áron Csongvai,2025,SE1,272,False,12,12,0,1052,1,1,8,3,1
@@ -6640,7 +6642,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1421514,Yannick Geiger,2022,FS,57021,True,1,1,0,27,0,0,0,0,0
 1311107,Stanley Wilson Omondi,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
 1311107,Stanley Wilson Omondi,2026,FS,8987,True,1,0,0,0,0,0,0,0,0
-1311107,Stanley Wilson Omondi,2026,AFCQ,8987,True,2,1,0,25,0,0,1,0,0
+1311107,Stanley Wilson Omondi,2026,AFCQ,8987,True,3,2,0,70,0,0,1,0,0
 1311107,Stanley Wilson Omondi,2025,SEC,272,False,5,4,0,360,0,0,0,0,0
 1311107,Stanley Wilson Omondi,2025,SE1,272,False,28,14,0,1010,0,2,7,1,3
 1311107,Stanley Wilson Omondi,2025,FS,8987,True,6,2,0,135,0,0,0,0,1
@@ -6787,9 +6789,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1232069,Linus Järeteg,2023,17EU,23487,True,3,3,0,87,0,0,0,0,0
 1564118,Mohammed Shilla,2026,SEC,272,False,1,1,0,6,0,0,0,0,0
 1564118,Mohammed Shilla,2025,SE1,272,False,17,0,0,0,0,0,0,0,0
-1416965,David Malki,2026,U17Q,23487,True,1,0,0,0,0,0,0,0,0
+1416965,David Malki,2026,U17Q,23487,True,2,0,0,0,0,0,0,0,0
 1416965,David Malki,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
-1416965,David Malki,2026,FS,24978,True,4,3,0,250,1,0,0,0,0
+1416965,David Malki,2026,FS,24978,True,5,3,0,250,1,0,0,0,0
 1416965,David Malki,2026,FS,23487,True,1,0,0,0,0,0,0,0,0
 1416965,David Malki,2025,U17Q,23487,True,6,0,0,0,0,0,0,0,0
 1416965,David Malki,2025,SEC,7406,False,1,1,0,65,0,0,0,0,0
@@ -7011,7 +7013,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 322107,Ismael Diawara,2014,NOPO,10940,False,3,3,0,270,0,0,0,0,1
 322107,Ismael Diawara,2013,SE3N,7923,False,26,25,0,2250,0,0,0,0,2
 986760,Mohamed Soumah,2026,SEC,7945,False,1,0,0,0,0,0,0,0,0
-986760,Mohamed Soumah,2026,AFCQ,3856,True,2,1,0,90,0,0,0,0,0
+986760,Mohamed Soumah,2026,AFCQ,3856,True,4,3,0,208,2,0,2,1,0
 986760,Mohamed Soumah,2025,SEC,7945,False,5,5,0,510,2,0,0,0,0
 986760,Mohamed Soumah,2025,SE1,7945,False,28,23,5,1885,4,0,11,5,6
 986760,Mohamed Soumah,2025,FS,3856,True,5,4,0,288,0,0,0,0,1
@@ -7280,6 +7282,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1088713,Isaac Yawe Höök,2023,SEC,23302,False,2,1,0,12,0,0,0,0,0
 1088713,Isaac Yawe Höök,2022,SEC,23302,False,3,1,0,9,0,0,0,0,0
 1088713,Isaac Yawe Höök,2022,SE3N,23302,False,30,3,0,25,0,0,0,0,1
+1517960,Elliot Eld,2026,U19Q,23488,True,2,0,0,0,0,0,0,0,0
 1517960,Elliot Eld,2026,SEC,7945,False,1,0,0,0,0,0,0,0,0
 1517960,Elliot Eld,2026,FS,23488,True,3,2,0,74,0,0,0,0,0
 1517960,Elliot Eld,2025,SEC,7945,False,5,0,0,0,0,0,0,0,0
@@ -7634,7 +7637,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 199221,Andreas Linde,2011,SE1,699,False,30,0,0,0,0,0,0,0,0
 199221,Andreas Linde,2011,JUSÖ,8659,False,22,7,0,630,0,0,0,0,0
 199221,Andreas Linde,2011,FS,23488,True,5,2,0,135,0,0,0,0,0
-77825,Etrit Berisha,2026,UNLC,3561,True,4,2,1,112,0,0,0,0,0
+77825,Etrit Berisha,2026,UNLC,3561,True,6,4,1,292,0,0,0,0,0
 77825,Etrit Berisha,2026,SEC,1109,False,1,0,0,0,0,0,0,0,0
 77825,Etrit Berisha,2025,UCOL,1109,False,6,5,1,450,0,0,0,0,1
 77825,Etrit Berisha,2025,SEC,1109,False,4,2,0,153,0,0,0,0,0
@@ -7711,7 +7714,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 77825,Etrit Berisha,2009,SEC,3654,False,4,1,0,120,0,0,0,0,0
 77825,Etrit Berisha,2009,SE1,3654,False,30,14,0,1260,0,0,0,0,1
 77825,Etrit Berisha,2008,SE1,3654,False,1,0,0,0,0,0,0,0,0
-1236102,Kristan Marinković,2026,U19Q,23488,True,3,1,0,28,0,0,0,0,0
+1236102,Kristan Marinković,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 1236102,Kristan Marinković,2026,SEC,9015,False,1,0,0,0,0,0,0,0,0
 1236102,Kristan Marinković,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 1236102,Kristan Marinković,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
@@ -7753,6 +7756,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172422,Filip Öhman,2025,U19Q,23488,True,6,6,0,477,1,0,0,0,1
 1172422,Filip Öhman,2025,SEC,1109,False,4,1,0,45,0,0,0,0,0
 1172422,Filip Öhman,2025,SE1,1109,False,28,1,0,81,0,0,1,0,0
+1172422,Filip Öhman,2025,FS,24978,True,1,1,0,90,0,0,0,0,0
 1172422,Filip Öhman,2025,FS,23488,True,6,5,0,301,0,0,0,0,0
 1172422,Filip Öhman,2025,ELQ,1109,False,6,0,0,0,0,0,0,0,0
 1172422,Filip Öhman,2025,ECLQ,1109,False,2,0,0,0,0,0,0,0,0
@@ -8069,7 +8073,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 685657,Silas Andersen,2026,PO1,336,False,11,9,0,311,0,0,2,0,1
 685657,Silas Andersen,2026,CL,336,False,4,3,0,123,0,1,2,0,0
 685657,Silas Andersen,2025,UCOL,1109,False,6,6,0,517,1,1,10,3,0
-685657,Silas Andersen,2025,U21Q,16783,True,8,8,0,500,2,1,0,0,2
+685657,Silas Andersen,2025,U21Q,16783,True,9,9,0,583,2,1,0,0,3
 685657,Silas Andersen,2025,SEC,1109,False,4,3,0,218,1,0,0,0,1
 685657,Silas Andersen,2025,SE1,1109,False,10,9,1,783,3,0,18,6,4
 685657,Silas Andersen,2025,FS,16783,True,2,2,0,90,0,0,0,0,0
@@ -8286,7 +8290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 51349,Mikkel Rygaard,2008,DK2,445,False,15,7,0,243,0,0,0,0,1
 51349,Mikkel Rygaard,2008,CGB,358,False,1,0,0,0,0,0,0,0,0
 51349,Mikkel Rygaard,2007,FS,20902,True,2,1,0,45,0,0,0,0,0
-1057820,Jeremy Agbonifo,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+1057820,Jeremy Agbonifo,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2026,POPU,2300,False,1,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2026,PL1,2300,False,13,9,0,264,0,0,6,1,2
 1057820,Jeremy Agbonifo,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
@@ -8304,7 +8308,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1057820,Jeremy Agbonifo,2025,C1,26,False,21,8,2,295,0,0,9,1,1
 1057820,Jeremy Agbonifo,2024,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2024,SEC,1109,False,1,1,0,33,0,0,0,0,0
-1057820,Jeremy Agbonifo,2024,FS,8595,True,5,5,0,194,1,0,0,0,1
+1057820,Jeremy Agbonifo,2024,FS,8595,True,6,6,0,284,1,0,0,0,1
 1057820,Jeremy Agbonifo,2024,FS,46607,True,2,2,0,106,0,0,0,0,0
 1057820,Jeremy Agbonifo,2024,FS,23488,True,5,0,0,0,0,0,0,0,0
 1057820,Jeremy Agbonifo,2024,FR5E,8152,False,5,3,0,204,0,1,0,0,0
@@ -8346,7 +8350,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 793873,Mads Agger,2020,DK2R,5781,False,10,9,0,335,3,0,0,0,1
 793873,Mads Agger,2020,DK2,5781,False,22,18,0,391,0,0,0,0,0
 793873,Mads Agger,2019,DKP,1909,False,2,1,0,90,0,0,0,0,0
-1018784,Adrian Svanbäck,2026,UNLC,3443,True,4,4,0,240,1,2,5,1,0
+1018784,Adrian Svanbäck,2026,UNLC,3443,True,6,5,0,322,4,2,8,4,0
 1018784,Adrian Svanbäck,2026,SEC,1109,False,1,1,0,35,1,0,0,0,0
 1018784,Adrian Svanbäck,2025,UCOL,1109,False,6,6,0,401,0,0,9,3,0
 1018784,Adrian Svanbäck,2025,U21Q,20796,True,2,2,0,132,4,1,0,0,0
@@ -8480,6 +8484,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 208880,Amor Layouni,2012,SE2,3362,False,15,15,0,959,0,0,0,0,1
 208880,Amor Layouni,2010,SE3N,23302,False,15,0,0,0,0,0,0,0,0
 1270792,Christ Wawa,2026,SEC,1109,False,1,1,0,55,0,0,0,0,0
+1270792,Christ Wawa,2026,FS,25249,True,1,0,0,0,0,0,0,0,0
 1270792,Christ Wawa,2025,UCOL,1109,False,6,0,0,0,0,0,0,0,0
 1270792,Christ Wawa,2025,SEC,1109,False,4,0,0,0,0,0,0,0,0
 1270792,Christ Wawa,2025,SE1,1109,False,28,4,0,80,1,0,3,2,1
@@ -8512,7 +8517,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 920307,Elis Bishesari,2025,SE1,801,False,28,13,0,1170,0,0,0,0,0
 920307,Elis Bishesari,2024,SEC,801,False,6,3,0,270,0,0,0,0,0
 920307,Elis Bishesari,2024,SE1,801,False,30,23,0,2019,0,0,0,0,1
-920307,Elis Bishesari,2024,FS,8595,True,5,4,0,225,0,0,0,0,0
+920307,Elis Bishesari,2024,FS,8595,True,6,5,0,315,0,0,0,0,0
 920307,Elis Bishesari,2023,U19Q,23488,True,3,2,0,180,0,0,0,0,0
 920307,Elis Bishesari,2023,SEC,801,False,4,0,0,0,0,0,0,0,0
 920307,Elis Bishesari,2023,SE1,801,False,30,16,1,1389,0,0,0,0,1
@@ -8611,7 +8616,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1255754,Noah Tolf,2025,FS,8595,True,1,0,0,0,0,0,0,0,0
 1255754,Noah Tolf,2024,SEC,801,False,6,6,0,484,0,1,0,0,2
 1255754,Noah Tolf,2024,SE1,801,False,30,29,1,2360,1,0,11,3,4
-1255754,Noah Tolf,2024,FS,8595,True,1,1,0,35,0,0,0,0,0
+1255754,Noah Tolf,2024,FS,8595,True,2,2,0,80,0,0,0,0,0
 1255754,Noah Tolf,2024,19YL,122312,False,2,2,0,170,0,0,0,0,1
 1255754,Noah Tolf,2023,SE1,801,False,26,2,0,12,0,0,0,0,0
 357622,Alexander Jallow,2026,SEC,801,False,1,0,0,0,0,0,0,0,0
@@ -8873,14 +8878,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1069497,Rasmus Nåfors Dahlin,2022,SE1,801,False,4,0,0,0,0,0,0,0,0
 1069497,Rasmus Nåfors Dahlin,2022,FS,57021,True,3,2,0,89,0,0,0,0,0
 1069497,Rasmus Nåfors Dahlin,2022,FS,41525,True,6,4,0,263,0,0,0,0,0
-1172441,Benjamin Brantlind,2026,U19Q,23488,True,3,3,0,256,4,1,0,0,1
+1172441,Benjamin Brantlind,2026,U19Q,23488,True,5,5,0,436,5,1,0,0,1
 1172441,Benjamin Brantlind,2026,FS,23488,True,3,3,0,185,2,0,0,0,1
 1172441,Benjamin Brantlind,2026,FR5E,7968,False,1,1,0,90,0,0,0,0,0
 1172441,Benjamin Brantlind,2026,FR1,667,False,10,0,0,0,0,0,0,0,0
 1172441,Benjamin Brantlind,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1172441,Benjamin Brantlind,2025,SEC,801,False,5,3,0,70,0,0,0,0,0
 1172441,Benjamin Brantlind,2025,SE1,801,False,10,9,0,367,1,0,10,5,1
-1172441,Benjamin Brantlind,2025,FS,24978,True,5,5,0,290,1,0,0,0,0
+1172441,Benjamin Brantlind,2025,FS,24978,True,6,5,0,290,1,0,0,0,0
 1172441,Benjamin Brantlind,2025,FS,23488,True,1,1,0,90,1,0,0,0,0
 1172441,Benjamin Brantlind,2024,U17Q,23487,True,6,6,0,518,4,2,0,0,1
 1172441,Benjamin Brantlind,2024,SEC,801,False,6,4,0,33,0,0,0,0,0
@@ -8892,15 +8897,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172441,Benjamin Brantlind,2023,SE1,801,False,30,1,0,1,0,0,0,0,0
 1172441,Benjamin Brantlind,2023,FS,57021,True,2,2,0,112,0,0,0,0,0
 1172441,Benjamin Brantlind,2023,FS,41525,True,10,8,0,391,1,0,0,0,0
+1336074,Emil Fasth,2026,U19Q,23488,True,2,2,0,94,0,0,0,0,0
 1336074,Emil Fasth,2026,SEC,9015,False,2,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2026,SEC,801,False,1,1,0,90,0,0,0,0,0
-1336074,Emil Fasth,2026,FS,24978,True,3,0,0,0,0,0,0,0,0
+1336074,Emil Fasth,2026,FS,24978,True,5,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2026,FS,23488,True,3,3,0,156,0,0,0,0,0
 1336074,Emil Fasth,2026,ECLQ,801,False,4,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2025,SEC,801,False,1,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2025,SE3S,9015,False,30,18,1,1620,0,0,0,0,3
 1336074,Emil Fasth,2025,SE1,801,False,19,4,0,112,0,0,0,0,0
-1336074,Emil Fasth,2025,FS,24978,True,3,1,0,45,0,0,0,0,0
+1336074,Emil Fasth,2025,FS,24978,True,3,2,0,135,0,0,0,0,0
 1336074,Emil Fasth,2025,FS,23488,True,1,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2024,SE1,801,False,17,0,0,0,0,0,0,0,0
 1336074,Emil Fasth,2024,19YL,122312,False,1,0,0,0,0,0,0,0,0
@@ -9241,7 +9247,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1336073,Leo Radakovic,2024,SE1,801,False,10,0,0,0,0,0,0,0,0
 1336073,Leo Radakovic,2024,19YL,122312,False,2,2,0,177,0,0,0,0,0
 1376819,Oliver Månsson,2026,SEC,801,False,1,1,0,90,0,0,0,0,0
-1376819,Oliver Månsson,2026,FS,24978,True,4,3,0,180,0,0,0,0,0
+1376819,Oliver Månsson,2026,FS,24978,True,5,4,0,270,0,0,0,0,1
 1376819,Oliver Månsson,2026,ECLQ,801,False,4,3,0,193,0,0,0,0,0
 1376819,Oliver Månsson,2025,U17Q,23487,True,6,6,0,534,1,0,0,0,1
 1376819,Oliver Månsson,2025,SE1,801,False,28,17,0,1349,0,2,15,2,2
@@ -9480,7 +9486,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1336088,Alfons Borén,2024,SE1,801,False,30,1,0,1,0,0,0,0,0
 1336088,Alfons Borén,2024,19YL,122312,False,2,2,0,135,0,0,0,0,1
 799899,Theo Sander,2026,SEC,1101,False,1,1,0,90,0,0,0,0,0
-799899,Theo Sander,2025,U21Q,16783,True,8,8,0,720,0,0,0,0,0
+799899,Theo Sander,2025,U21Q,16783,True,9,9,0,810,0,0,0,0,0
 799899,Theo Sander,2025,SE1,1101,False,16,3,0,270,0,0,0,0,0
 799899,Theo Sander,2025,FS,16783,True,2,2,0,105,0,0,0,0,0
 799899,Theo Sander,2025,DKRE,62690,False,3,2,0,180,0,0,0,0,0
@@ -10266,7 +10272,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 205809,Marcus Rohdén,2011,SE1,1101,False,30,22,0,709,3,0,0,0,2
 205809,Marcus Rohdén,2010,SE3S,5965,False,8,4,0,248,0,0,0,0,1
 1129935,Momoh Kamara,2026,SEC,1101,False,1,0,0,0,0,0,0,0,0
-1129935,Momoh Kamara,2026,AFCQ,6187,True,2,2,0,151,0,0,3,0,0
+1129935,Momoh Kamara,2026,AFCQ,6187,True,3,3,0,241,0,0,4,0,0
 1129935,Momoh Kamara,2025,SE1,1101,False,28,24,0,1564,6,3,52,16,1
 1129935,Momoh Kamara,2025,MNP3,95337,False,4,2,0,180,0,1,0,0,1
 1129935,Momoh Kamara,2025,FS,6187,True,3,0,0,0,0,0,0,0,0
@@ -10613,7 +10619,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 216148,Per Frick,2011,SEC,1101,False,4,1,0,10,0,0,0,0,0
 216148,Per Frick,2011,SE1,1101,False,30,1,0,13,0,0,0,0,0
 216148,Per Frick,2008,U17Q,23487,True,1,1,0,29,0,0,0,0,0
-1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,3,3,0,162,2,0,0,0,0
+1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,4,4,0,188,2,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2026,SEC,1101,False,1,1,0,20,0,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2025,U19Q,25785,True,3,2,0,68,0,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2025,SE1,1101,False,17,0,0,0,0,0,0,0,0
@@ -10892,7 +10898,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 369367,Joackim Fagerjord,2014,JUSL,7913,False,1,1,0,90,0,0,0,0,0
 927463,Róbert Frosti Thorkelsson,2026,SEC,7009,False,1,1,0,60,2,0,0,0,0
 927463,Róbert Frosti Thorkelsson,2026,ECLQ,7009,False,2,2,0,163,0,0,6,2,0
-927463,Róbert Frosti Thorkelsson,2025,U21Q,22414,True,10,6,0,303,0,0,0,0,1
+927463,Róbert Frosti Thorkelsson,2025,U21Q,22414,True,11,6,0,303,0,0,0,0,1
 927463,Róbert Frosti Thorkelsson,2025,SEC,7009,False,6,6,0,206,0,0,0,0,1
 927463,Róbert Frosti Thorkelsson,2025,SE1,7009,False,28,19,0,1583,4,0,44,18,1
 927463,Róbert Frosti Thorkelsson,2024,SEC,7009,False,3,2,0,17,0,0,0,0,0
@@ -11062,7 +11068,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1519093,Andrej Zovko,2026,CITP,5618,False,1,0,0,0,0,0,0,0,0
 1519093,Andrej Zovko,2025,SEC,7009,False,5,0,0,0,0,0,0,0,0
 1519093,Andrej Zovko,2025,SE1,7009,False,11,0,0,0,0,0,0,0,0
-1378926,Elias Younan,2026,U17Q,23487,True,1,1,0,13,0,0,0,0,0
+1378926,Elias Younan,2026,U17Q,23487,True,2,1,0,13,0,0,0,0,0
 1378926,Elias Younan,2026,SEC,7009,False,1,0,0,0,0,0,0,0,0
 1378926,Elias Younan,2026,SEC,5965,False,1,0,0,0,0,0,0,0,0
 1378926,Elias Younan,2026,FS,41525,True,5,2,0,114,0,0,0,0,0
@@ -11315,7 +11321,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 939246,Casper Andersson,2021,SE1,3654,False,30,0,0,0,0,0,0,0,0
 939246,Casper Andersson,2021,17EU,23487,True,3,0,0,0,0,0,0,0,0
 939246,Casper Andersson,2020,SE1,3654,False,1,0,0,0,0,0,0,0,0
-566823,Achraf Dari,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+566823,Achraf Dari,2026,EGYP,7,False,1,1,0,90,0,0,0,0,0
 566823,Achraf Dari,2026,EGY1,7,False,8,2,4,180,1,0,2,1,0
 566823,Achraf Dari,2026,EGLC,7,False,2,1,0,90,0,0,0,0,0
 566823,Achraf Dari,2026,CAFC,7,False,2,2,0,135,0,0,0,0,0
@@ -11401,7 +11407,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 537221,Victor Larsson,2016,S21S,8872,False,3,0,0,0,0,0,0,0,0
 537221,Victor Larsson,2016,JUSÖ,7917,False,13,6,0,540,0,0,0,0,0
 638733,Aboubacar Keita,2026,SEC,3654,False,1,0,0,0,0,0,0,0,0
-638733,Aboubacar Keita,2026,AFCQ,3856,True,2,2,0,135,0,0,2,0,0
+638733,Aboubacar Keita,2026,AFCQ,3856,True,3,3,0,225,0,0,2,0,1
 638733,Aboubacar Keita,2025,SEC,3654,False,4,0,3,0,0,0,0,0,0
 638733,Aboubacar Keita,2025,SE1,3654,False,28,10,10,703,2,0,6,3,0
 638733,Aboubacar Keita,2024,SEC,3654,False,3,0,0,0,0,0,0,0,0
@@ -11477,7 +11483,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 388646,Sivert Øverby,2014,NOPO,632,False,4,0,0,0,0,0,0,0,0
 388646,Sivert Øverby,2014,NO2,632,False,25,0,0,0,0,0,0,0,0
 716894,Miska Ylitolva,2026,ECLQ,1008,False,4,2,0,156,0,0,0,0,1
-716894,Miska Ylitolva,2025,U21Q,20796,True,10,10,0,885,2,3,0,0,2
+716894,Miska Ylitolva,2025,U21Q,20796,True,11,11,0,975,2,3,0,0,2
 716894,Miska Ylitolva,2025,SE1,3654,False,9,9,0,808,0,0,8,0,2
 716894,Miska Ylitolva,2025,FS,20796,True,2,2,0,122,0,1,0,0,0
 716894,Miska Ylitolva,2025,FIS,1008,False,4,3,0,245,0,2,0,0,1
@@ -11785,7 +11791,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 613189,Kasper Paananen,2019,FS,20791,True,1,1,0,80,3,0,0,0,0
 613189,Kasper Paananen,2018,FS,20791,True,9,8,0,429,4,0,0,0,0
 909689,Marius Söderbäck,2026,SEC,3654,False,1,1,0,76,1,0,0,0,0
-909689,Marius Söderbäck,2025,U21Q,20796,True,10,10,0,721,5,4,0,0,0
+909689,Marius Söderbäck,2025,U21Q,20796,True,11,11,0,806,5,4,0,0,0
 909689,Marius Söderbäck,2025,SEC,3654,False,3,3,0,270,2,0,0,0,0
 909689,Marius Söderbäck,2025,SE1,3654,False,28,26,0,1484,1,3,31,10,1
 909689,Marius Söderbäck,2025,FS,20796,True,2,2,0,132,0,0,0,0,0
@@ -11935,7 +11941,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1519055,Elion Imeri,2025,SEC,3654,False,3,3,0,129,0,0,0,0,0
 1519055,Elion Imeri,2025,SE1,3654,False,28,1,0,1,0,0,0,0,0
 627760,Noah Shamoun,2026,SEC,3654,False,1,0,0,0,0,0,0,0,0
-627760,Noah Shamoun,2026,FS,13674,True,2,2,0,119,0,0,0,0,0
+627760,Noah Shamoun,2026,FS,13674,True,3,3,0,176,0,0,0,0,0
 627760,Noah Shamoun,2026,DK1,5724,False,2,0,0,0,0,0,0,0,0
 627760,Noah Shamoun,2025,SEC,3622,False,1,0,0,0,0,0,0,0,0
 627760,Noah Shamoun,2025,SE2,3622,False,14,7,0,327,0,1,0,0,0
@@ -12100,6 +12106,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 564453,Emeka Nnamani,2018,DKDL,14355,False,22,20,0,1472,15,0,0,0,4
 564453,Emeka Nnamani,2017,DKRE,62689,False,4,3,0,86,0,0,0,0,0
 564453,Emeka Nnamani,2017,DKDL,14355,False,11,10,0,774,8,0,0,0,2
+1164781,Vilmer Tyrén,2026,SEC,8882,False,1,0,0,0,0,0,0,0,0
+1164781,Vilmer Tyrén,2025,SEC,801,False,2,1,0,3,0,0,0,0,0
+1164781,Vilmer Tyrén,2025,SEC,3654,False,2,0,0,0,0,0,0,0,0
+1164781,Vilmer Tyrén,2025,SE2,8882,False,9,9,0,778,1,3,0,0,2
+1164781,Vilmer Tyrén,2025,SE1,3654,False,20,14,0,722,1,1,22,8,1
+1164781,Vilmer Tyrén,2024,SE3S,8882,False,30,27,1,2258,19,3,0,0,4
+1164781,Vilmer Tyrén,2024,SE1,801,False,12,1,0,5,0,0,0,0,0
+1164781,Vilmer Tyrén,2023,SEC,801,False,1,1,0,90,1,0,0,0,0
+1164781,Vilmer Tyrén,2022,SE1,801,False,10,2,0,6,0,0,0,0,0
 1481942,Amara Camara,2025,SE1,3654,False,9,4,0,262,1,0,9,2,0
 1481942,Amara Camara,2025,ACL,2871,False,2,2,0,133,0,0,0,0,0
 1389474,Elis Jäger,2026,SEC,5202,False,1,0,0,0,0,0,0,0,0
@@ -12163,7 +12178,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 515254,André Bernardini,2016,BPP,6135,False,4,4,0,390,0,0,0,0,0
 1614649,Alvin Kvist,2025,SE1,5202,False,1,0,0,0,0,0,0,0,0
 340031,Frédéric Nsabiyumva,2026,SEC,5202,False,1,0,0,0,0,0,0,0,0
-340031,Frédéric Nsabiyumva,2026,AFCQ,13943,True,4,3,0,270,0,0,1,0,0
+340031,Frédéric Nsabiyumva,2026,AFCQ,13943,True,5,4,0,360,0,0,3,0,0
 340031,Frédéric Nsabiyumva,2025,SEC,5202,False,4,3,0,270,0,0,0,0,1
 340031,Frédéric Nsabiyumva,2025,SE1,5202,False,28,15,0,864,2,0,7,4,1
 340031,Frédéric Nsabiyumva,2025,FS,13943,True,1,0,0,0,0,0,0,0,0
@@ -12306,7 +12321,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1126112,Jack Tagesson,2024,SE3N,50885,False,30,28,0,2507,1,0,0,0,7
 1126112,Jack Tagesson,2023,SE1,1044,False,4,0,0,0,0,0,0,0,0
 1042600,Madiou Keita,2026,SEC,5202,False,1,0,0,0,0,0,0,0,0
-1042600,Madiou Keita,2026,AFCQ,3856,True,2,0,0,0,0,0,0,0,0
+1042600,Madiou Keita,2026,AFCQ,3856,True,4,0,0,0,0,0,0,0,0
 1042600,Madiou Keita,2025,SE1,5202,False,17,6,0,402,0,0,0,0,1
 1042600,Madiou Keita,2025,FS,3856,True,5,1,0,72,0,0,0,0,0
 1042600,Madiou Keita,2025,CCB,54189,False,2,0,0,0,0,0,0,0,0
@@ -12455,7 +12470,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 671101,Ismet Lushaku,2018,SE1,8877,False,23,13,0,845,0,0,1,0,2
 1107314,Axel Sountonoma Taonsa,2026,SEC,5202,False,1,1,0,12,0,0,0,0,0
 1107314,Axel Sountonoma Taonsa,2026,FS,5872,True,1,0,0,0,0,0,0,0,0
-1107314,Axel Sountonoma Taonsa,2026,AFCQ,5872,True,2,1,0,26,0,0,0,0,0
+1107314,Axel Sountonoma Taonsa,2026,AFCQ,5872,True,3,1,0,26,0,0,0,0,0
 1107314,Axel Sountonoma Taonsa,2025,SEC,5202,False,4,2,0,178,1,0,0,0,0
 1107314,Axel Sountonoma Taonsa,2025,SE1,5202,False,28,26,1,1998,10,2,75,29,3
 1107314,Axel Sountonoma Taonsa,2024,SEC,5202,False,3,1,0,1,0,0,0,0,1
@@ -12512,7 +12527,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 180137,Jonathan Ring,2010,SEC,3622,False,1,0,0,0,0,0,0,0,0
 180137,Jonathan Ring,2010,SE2,3622,False,30,27,0,2115,5,8,0,0,3
 180137,Jonathan Ring,2010,RESU,3622,False,2,2,0,166,0,0,0,0,0
-991476,Mattias Hellisdal,2026,UNLC,9173,True,4,3,0,103,0,0,3,0,0
+991476,Mattias Hellisdal,2026,UNLC,9173,True,6,3,0,103,0,0,3,0,0
 991476,Mattias Hellisdal,2026,SEC,5202,False,1,1,0,45,0,0,0,0,0
 991476,Mattias Hellisdal,2025,U21Q,24959,True,7,7,0,551,1,0,0,0,2
 991476,Mattias Hellisdal,2025,SEC,5202,False,3,3,0,49,0,0,0,0,1
@@ -12554,7 +12569,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1376274,Musab Abdi Mohamud,2025,SE1,5202,False,19,6,0,12,0,0,0,0,0
 1376274,Musab Abdi Mohamud,2024,SEC,5202,False,3,1,0,4,0,0,0,0,0
 1376274,Musab Abdi Mohamud,2024,SE2,5202,False,30,2,0,2,0,0,0,0,0
-1449280,Levi Hansas,2026,U17Q,23487,True,1,1,0,90,0,0,0,0,0
+1449280,Levi Hansas,2026,U17Q,23487,True,2,2,0,180,0,0,0,0,0
 1449280,Levi Hansas,2026,SEC,5202,False,1,0,0,0,0,0,0,0,0
 1449280,Levi Hansas,2026,FS,41525,True,5,5,0,263,0,0,0,0,0
 1449280,Levi Hansas,2026,FS,23487,True,1,1,0,90,0,0,0,0,0
@@ -12708,13 +12723,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 138408,Davor Blazevic,2009,SE3N,22163,False,26,13,0,1097,0,0,0,0,0
 138408,Davor Blazevic,2009,SE1,1092,False,27,0,0,0,0,0,0,0,0
 138408,Davor Blazevic,2009,FS,23487,True,1,1,0,90,0,0,0,0,0
-1172427,John-Oliver Lacayo,2026,U19Q,23488,True,3,3,0,270,0,0,0,0,0
+1172427,John-Oliver Lacayo,2026,U19Q,23488,True,5,5,0,450,0,0,0,0,0
 1172427,John-Oliver Lacayo,2026,SEC,1092,False,1,0,0,0,0,0,0,0,0
 1172427,John-Oliver Lacayo,2026,FS,23488,True,3,3,0,270,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,SEC,1092,False,2,0,0,0,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,SE1,1092,False,20,0,0,0,0,0,0,0,0
-1172427,John-Oliver Lacayo,2025,FS,24978,True,5,3,0,225,0,0,0,0,0
+1172427,John-Oliver Lacayo,2025,FS,24978,True,6,3,0,225,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,FS,23488,True,1,0,0,0,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,FS,23487,True,7,2,0,180,0,0,0,0,0
 1172427,John-Oliver Lacayo,2025,19YL,134136,False,1,1,0,90,0,0,0,0,0
@@ -12848,7 +12863,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668949,Andreas Troelsen,2021,DK2,3426,False,7,4,0,158,0,0,0,0,1
 668949,Andreas Troelsen,2020,DKDL,14349,False,26,20,0,1515,5,1,0,0,1
 668949,Andreas Troelsen,2019,DKRE,62698,False,1,1,0,35,0,0,0,0,0
-718462,Hlynur Freyr Karlsson,2025,U21Q,22414,True,10,8,0,638,0,1,0,0,0
+718462,Hlynur Freyr Karlsson,2025,U21Q,22414,True,11,8,0,638,0,1,0,0,0
 718462,Hlynur Freyr Karlsson,2025,SEC,1092,False,4,1,0,90,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2025,SE1,1092,False,12,1,0,5,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2025,IS1P,3737,False,5,5,0,395,0,0,1,1,0
@@ -12955,9 +12970,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 103405,Simon Strand,2012,SE3N,6012,False,26,25,0,2191,0,0,0,0,3
 103405,Simon Strand,2011,SEC,6012,False,3,2,0,120,0,0,0,0,0
 103405,Simon Strand,2011,SE3N,8877,False,26,25,0,2209,4,0,0,0,4
-1236103,Rasmus Bergvall,2026,U19Q,23488,True,3,3,0,99,0,0,0,0,0
+1236103,Rasmus Bergvall,2026,U19Q,23488,True,5,5,0,189,0,0,0,0,1
 1236103,Rasmus Bergvall,2026,SEC,1092,False,1,1,0,45,0,0,0,0,0
-1236103,Rasmus Bergvall,2026,FS,24978,True,3,0,0,0,0,0,0,0,0
+1236103,Rasmus Bergvall,2026,FS,24978,True,5,0,0,0,0,0,0,0,0
 1236103,Rasmus Bergvall,2026,FS,23488,True,3,3,0,149,0,0,0,0,0
 1236103,Rasmus Bergvall,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1236103,Rasmus Bergvall,2025,SEC,1092,False,3,0,0,0,0,0,0,0,0
@@ -12969,7 +12984,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1236103,Rasmus Bergvall,2024,FS,41525,True,5,5,0,126,0,0,0,0,1
 1236103,Rasmus Bergvall,2024,FS,23487,True,5,4,0,302,0,0,0,0,0
 1236103,Rasmus Bergvall,2023,FS,41525,True,6,3,0,73,0,0,0,0,0
-688019,Lukas Björklund,2026,U19Q,23488,True,3,0,0,0,0,0,0,0,0
+688019,Lukas Björklund,2026,U19Q,23488,True,5,0,0,0,0,0,0,0,0
 688019,Lukas Björklund,2026,SEC,1092,False,1,1,0,90,0,0,0,0,0
 688019,Lukas Björklund,2026,FS,23488,True,3,0,0,0,0,0,0,0,0
 688019,Lukas Björklund,2025,U21Q,8595,True,8,8,0,463,0,0,0,0,2
@@ -12981,7 +12996,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 688019,Lukas Björklund,2025,DK1,5817,False,6,4,0,116,0,0,1,0,1
 688019,Lukas Björklund,2024,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 688019,Lukas Björklund,2024,SE1,1092,False,9,8,1,549,0,1,4,1,3
-688019,Lukas Björklund,2024,FS,8595,True,5,5,0,396,2,0,3,0,0
+688019,Lukas Björklund,2024,FS,8595,True,6,6,0,441,2,0,3,0,0
 688019,Lukas Björklund,2024,FS,23488,True,5,0,0,0,0,0,0,0,0
 688019,Lukas Björklund,2024,DKRE,62692,False,3,2,0,116,0,0,0,0,0
 688019,Lukas Björklund,2024,DKP,5817,False,3,1,0,28,0,0,0,0,1
@@ -13033,7 +13048,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 959047,Wilmer Odefalk,2025,CL,45457,False,8,0,8,0,0,0,0,0,0
 959047,Wilmer Odefalk,2024,SEC,1092,False,4,3,0,193,0,0,0,0,0
 959047,Wilmer Odefalk,2024,SE1,1092,False,22,20,0,918,1,2,8,5,1
-959047,Wilmer Odefalk,2024,FS,8595,True,5,3,0,196,0,0,0,0,0
+959047,Wilmer Odefalk,2024,FS,8595,True,6,4,0,241,0,0,0,0,0
 959047,Wilmer Odefalk,2023,U21Q,8595,True,4,0,0,0,0,0,0,0,0
 959047,Wilmer Odefalk,2023,SEC,1092,False,5,4,0,287,2,0,0,0,0
 959047,Wilmer Odefalk,2023,SE1,1092,False,30,28,0,2138,3,3,41,13,1
@@ -13235,13 +13250,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 340784,Rasmus Örqvist,2017,SE3S,5965,False,30,21,0,1671,3,3,0,0,5
 340784,Rasmus Örqvist,2016,SE3S,5965,False,26,21,0,1568,7,2,0,0,1
 340784,Rasmus Örqvist,2013,SE3S,5965,False,7,2,0,3,0,0,0,0,0
-1184990,Atle Wahlund,2026,U19Q,23488,True,3,2,0,11,0,0,0,0,0
+1184990,Atle Wahlund,2026,U19Q,23488,True,5,3,0,15,0,0,0,0,0
 1184990,Atle Wahlund,2026,SEC,1092,False,1,1,0,60,0,0,0,0,0
-1184990,Atle Wahlund,2026,FS,24978,True,3,0,0,0,0,0,0,0,0
+1184990,Atle Wahlund,2026,FS,24978,True,5,0,0,0,0,0,0,0,0
 1184990,Atle Wahlund,2026,FS,23488,True,3,3,0,89,0,0,0,0,0
 1184990,Atle Wahlund,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1184990,Atle Wahlund,2025,SE1,1092,False,25,3,0,128,0,0,2,0,1
-1184990,Atle Wahlund,2025,FS,24978,True,3,1,0,59,0,0,0,0,0
+1184990,Atle Wahlund,2025,FS,24978,True,3,2,0,149,0,0,0,0,0
 1184990,Atle Wahlund,2025,FS,23488,True,1,1,0,90,0,0,0,0,0
 1184990,Atle Wahlund,2025,19YL,134136,False,2,2,0,180,0,0,0,0,0
 1184990,Atle Wahlund,2024,SE1,1092,False,5,0,0,0,0,0,0,0,0
@@ -13426,7 +13441,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1436267,Courage Otokwefor,2025,SE1,1092,False,28,0,0,0,0,0,0,0,0
 1436267,Courage Otokwefor,2025,19YL,134136,False,2,2,0,159,0,0,0,0,0
 1436267,Courage Otokwefor,2024,SE1,1092,False,9,0,0,0,0,0,0,0,0
-1449279,Carl Aurell,2026,U17Q,23487,True,1,0,0,0,0,0,0,0,0
+1449279,Carl Aurell,2026,U17Q,23487,True,2,0,0,0,0,0,0,0,0
 1449279,Carl Aurell,2026,SEC,1092,False,1,1,0,6,0,0,0,0,0
 1449279,Carl Aurell,2026,FS,41525,True,5,5,0,313,2,0,0,0,1
 1449279,Carl Aurell,2026,FS,23487,True,1,1,0,90,1,0,0,0,0
@@ -13567,7 +13582,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 504242,Gabriel Wallentin,2016,JUSÖ,7915,False,8,5,0,289,0,0,0,0,0
 504242,Gabriel Wallentin,2016,FS,57021,True,4,4,0,225,0,0,0,0,0
 504242,Gabriel Wallentin,2015,FS,41525,True,1,1,0,77,0,0,0,0,0
-488280,Erko Tougjas,2026,UNLC,6133,True,4,2,0,180,0,0,0,0,0
+488280,Erko Tougjas,2026,UNLC,6133,True,6,4,0,278,0,0,0,0,0
 488280,Erko Tougjas,2026,SEC,1011,False,1,1,0,90,0,0,0,0,0
 488280,Erko Tougjas,2026,FS,28243,True,5,0,0,0,0,0,0,0,0
 488280,Erko Tougjas,2025,SEC,1011,False,3,3,0,270,0,0,0,0,0
@@ -14059,9 +14074,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1381051,Iddrisu Moro,2025,SE1,1011,False,28,0,0,0,0,0,0,0,0
 1381051,Iddrisu Moro,2024,SEC,1011,False,1,0,0,0,0,0,0,0,0
 1381051,Iddrisu Moro,2024,SE1,1011,False,30,0,0,0,0,0,0,0,0
-1291830,Ludvig Arvidsson,2026,U19Q,23488,True,3,2,0,95,0,0,0,0,0
+1291830,Ludvig Arvidsson,2026,U19Q,23488,True,5,4,0,249,0,1,0,0,0
 1291830,Ludvig Arvidsson,2026,SEC,1011,False,1,1,0,62,0,0,0,0,0
-1291830,Ludvig Arvidsson,2026,FS,24978,True,3,0,0,0,0,0,0,0,0
+1291830,Ludvig Arvidsson,2026,FS,24978,True,5,0,0,0,0,0,0,0,0
 1291830,Ludvig Arvidsson,2026,FS,23488,True,3,3,0,152,0,0,0,0,0
 1291830,Ludvig Arvidsson,2025,U19Q,23488,True,3,0,0,0,0,0,0,0,0
 1291830,Ludvig Arvidsson,2025,SEC,1011,False,4,4,0,256,0,0,0,0,0
@@ -14581,7 +14596,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1417395,Viggo Synnergren,2024,SE2,1118,False,19,0,0,0,0,0,0,0,0
 1417395,Viggo Synnergren,2024,RESE,1118,False,2,0,0,0,0,0,0,0,0
 400799,Owen Parker-Price,2026,SEC,1118,False,1,1,0,15,0,0,0,0,0
-400799,Owen Parker-Price,2026,FS,9171,True,5,2,0,87,1,0,0,0,0
+400799,Owen Parker-Price,2026,FS,9171,True,6,4,0,189,1,0,0,0,0
 400799,Owen Parker-Price,2025,SEC,22170,False,1,0,0,0,0,0,0,0,0
 400799,Owen Parker-Price,2025,SEC,1118,False,4,4,0,316,2,0,0,0,1
 400799,Owen Parker-Price,2025,SE1,1118,False,28,27,0,2226,0,5,14,4,3
@@ -14933,7 +14948,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 75901,Tobias Sana,2008,RESU,8884,False,2,0,0,0,0,0,0,0,0
 75901,Tobias Sana,2007,SE2,8884,False,30,21,0,1333,2,2,0,0,1
 1445469,Marlon Ebietomere,2026,SEC,1118,False,1,1,0,73,0,0,0,0,0
-1445469,Marlon Ebietomere,2026,FS,24978,True,4,2,0,102,0,0,0,0,0
+1445469,Marlon Ebietomere,2026,FS,24978,True,5,4,0,175,1,0,0,0,0
 1445469,Marlon Ebietomere,2025,SEC,1118,False,4,4,0,110,1,0,0,0,0
 1445469,Marlon Ebietomere,2025,SE1,1118,False,28,12,0,204,0,0,1,1,1
 944202,Liam Filip Andersson,2026,SEC,1118,False,1,1,0,60,0,0,0,0,0
@@ -14973,7 +14988,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 860079,David Obou,2021,GB18,6950,False,21,8,0,270,1,0,7,4,0
 860079,David Obou,2021,FAYC,6950,False,2,0,0,0,0,0,0,0,0
 860079,David Obou,2020,GB18,6950,False,1,0,0,0,0,0,0,0,0
-198981,Matvei Igonen,2026,UNLC,6133,True,4,2,0,180,0,0,0,0,0
+198981,Matvei Igonen,2026,UNLC,6133,True,6,2,0,180,0,0,0,0,0
 198981,Matvei Igonen,2026,SEC,3641,False,1,0,0,0,0,0,0,0,0
 198981,Matvei Igonen,2025,SEC,3641,False,4,4,0,360,0,0,0,0,0
 198981,Matvei Igonen,2025,SE1,3641,False,28,28,0,2520,0,1,0,0,2
@@ -15353,7 +15368,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 892087,Kazper Karlsson,2020,SE1,1011,False,26,0,0,0,0,0,0,0,0
 892087,Kazper Karlsson,2020,RESE,1011,False,2,0,0,0,0,0,0,0,0
 255768,Nahom Girmai Netabay,2026,SEC,3641,False,1,0,0,0,0,0,0,0,0
-255768,Nahom Girmai Netabay,2026,AFCQ,13953,True,4,4,0,347,1,0,2,2,0
+255768,Nahom Girmai Netabay,2026,AFCQ,13953,True,5,5,0,437,1,1,2,2,1
 255768,Nahom Girmai Netabay,2025,SEC,3641,False,4,3,0,270,1,0,0,0,0
 255768,Nahom Girmai Netabay,2025,SE1,3641,False,28,25,1,2013,2,3,32,6,5
 255768,Nahom Girmai Netabay,2024,SEC,3641,False,4,3,0,270,0,0,0,0,1

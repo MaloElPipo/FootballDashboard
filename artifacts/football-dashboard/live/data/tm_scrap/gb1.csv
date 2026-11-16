@@ -4198,7 +4198,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 335721,Ben White,11,Arsenal FC,2026,GB1,4,Right-Back,29,England,9,7,0,534
 357662,Declan Rice,11,Arsenal FC,2026,GB1,41,Central Midfield,27,England,10,10,0,827
 316264,Martin Ødegaard,11,Arsenal FC,2026,GB1,8,Attacking Midfield,27,Norway,10,10,3,830
-520624,Bruno Guimarães,11,Arsenal FC,2026,GB1,39,Central Midfield,28,Brazil,9,8,2,390
+520624,Bruno Guimarães,11,Arsenal FC,2026,GB1,39,Central Midfield,29,Brazil,9,8,2,390
 423440,Martín Zubimendi,11,Arsenal FC,2026,GB1,36,Defensive Midfield,27,Spain,10,7,0,100
 890721,Myles Lewis-Skelly,11,Arsenal FC,2026,GB1,49,Defensive Midfield,20,England,10,7,0,432
 479999,Eberechi Eze,11,Arsenal FC,2026,GB1,10,Attacking Midfield,28,England,10,7,0,231
@@ -4241,6 +4241,36 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 341092,Federico Chiesa,31,Liverpool FC,2026,GB1,14,Right Winger,29,Italy,2,1,0,2
 922462,Lewis Koumas,31,Liverpool FC,2026,GB1,67,Centre-Forward,21,Wales,10,8,0,131
 939290,Jayden Danns,31,Liverpool FC,2026,GB1,76,Centre-Forward,20,England,0,0,0,0
+315858,Gianluigi Donnarumma,281,Manchester City,2026,GB1,1,Goalkeeper,27,Italy,10,10,0,900
+229604,Gerónimo Rulli,281,Manchester City,2026,GB1,28,Goalkeeper,34,Argentina,10,0,0,0
+116648,Marcus Bettinelli,281,Manchester City,2026,GB1,13,Goalkeeper,34,England,0,0,0,0
+392757,Marc Guéhi,281,Manchester City,2026,GB1,6,Centre-Back,26,England,10,9,1,720
+475959,Josko Gvardiol,281,Manchester City,2026,GB1,24,Left-Back,24,Croatia,10,10,1,702
+743413,Nico O'Reilly,281,Manchester City,2026,GB1,33,Left-Back,21,England,9,8,0,363
+258004,Rúben Dias,281,Manchester City,2026,GB1,3,Centre-Back,29,Portugal,10,10,0,900
+763079,Abdukodir Khusanov,281,Manchester City,2026,GB1,45,Centre-Back,22,Uzbekistan,10,7,0,553
+601883,Matheus Nunes,281,Manchester City,2026,GB1,27,Right-Back,28,Portugal,8,7,0,514
+578391,Rayan Aït-Nouri,281,Manchester City,2026,GB1,21,Left-Back,25,Algeria,6,0,0,0
+1005575,Vitor Reis,281,Manchester City,2026,GB1,22,Centre-Back,20,Brazil,7,1,0,1
+701057,Rico Lewis,281,Manchester City,2026,GB1,82,Right-Back,21,England,9,2,0,102
+1078156,Kaden Braithwaite,281,Manchester City,2026,GB1,0,Centre-Back,18,England,1,1,0,1
+567576,Elliot Anderson,281,Manchester City,2026,GB1,5,Defensive Midfield,24,England,10,10,0,788
+648195,Enzo Fernández,281,Manchester City,2026,GB1,17,Central Midfield,25,Argentina,8,8,1,600
+607223,Rayan Cherki,281,Manchester City,2026,GB1,10,Attacking Midfield,23,France,10,9,5,565
+1097139,Ayyoub Bouaddi,281,Manchester City,2026,GB1,32,Defensive Midfield,19,Morocco,9,5,0,177
+406635,Phil Foden,281,Manchester City,2026,GB1,47,Attacking Midfield,26,England,8,8,1,364
+466805,Nico González,281,Manchester City,2026,GB1,0,Defensive Midfield,24,Spain,1,0,0,0
+994536,Claudio Echeverri,281,Manchester City,2026,GB1,0,Attacking Midfield,20,Argentina,1,0,0,0
+51471,Mateo Kovacic,281,Manchester City,2026,GB1,8,Central Midfield,32,Croatia,10,3,0,92
+1263739,Floyd Samba,281,Manchester City,2026,GB1,0,Central Midfield,17,Germany,1,0,0,0
+418560,Erling Haaland,281,Manchester City,2026,GB1,9,Centre-Forward,26,Norway,10,10,9,890
+583255,Antoine Semenyo,281,Manchester City,2026,GB1,42,Right Winger,26,Ghana,7,7,2,553
+486049,Jérémy Doku,281,Manchester City,2026,GB1,11,Left Winger,24,Belgium,6,6,1,396
+623570,Iliman Ndiaye,281,Manchester City,2026,GB1,7,Left Winger,26,Senegal,8,8,0,591
+445939,Omar Marmoush,281,Manchester City,2026,GB1,0,Centre-Forward,27,Egypt,1,0,0,0
+1082631,Allan,281,Manchester City,2026,GB1,37,Right Winger,22,Brazil,6,2,0,21
+203460,Jack Grealish,281,Manchester City,2026,GB1,0,Left Winger,31,England,1,1,0,8
+1187640,Ryan McAidoo,281,Manchester City,2026,GB1,56,Right Winger,18,England,3,3,0,32
 834397,Mike Penders,631,Chelsea FC,2026,GB1,39,Goalkeeper,21,Belgium,10,4,0,285
 403151,Robert Sánchez,631,Chelsea FC,2026,GB1,0,Goalkeeper,28,Spain,1,1,0,90
 111873,Emiliano Martínez,631,Chelsea FC,2026,GB1,1,Goalkeeper,34,Argentina,6,6,0,525
@@ -4282,46 +4312,16 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 938158,Marc Guiu,631,Chelsea FC,2026,GB1,0,Centre-Forward,20,Spain,0,0,0,0
 67063,Danny Welbeck,631,Chelsea FC,2026,GB1,18,Centre-Forward,35,England,10,8,0,127
 787232,David Datro Fofana,631,Chelsea FC,2026,GB1,0,Centre-Forward,23,Cote d'Ivoire,0,0,0,0
-315858,Gianluigi Donnarumma,281,Manchester City,2026,GB1,1,Goalkeeper,27,Italy,10,10,0,900
-229604,Gerónimo Rulli,281,Manchester City,2026,GB1,28,Goalkeeper,34,Argentina,10,0,0,0
-116648,Marcus Bettinelli,281,Manchester City,2026,GB1,13,Goalkeeper,34,England,0,0,0,0
-392757,Marc Guéhi,281,Manchester City,2026,GB1,6,Centre-Back,26,England,10,9,1,720
-475959,Josko Gvardiol,281,Manchester City,2026,GB1,24,Left-Back,24,Croatia,10,10,1,702
-743413,Nico O'Reilly,281,Manchester City,2026,GB1,33,Left-Back,21,England,9,8,0,363
-258004,Rúben Dias,281,Manchester City,2026,GB1,3,Centre-Back,29,Portugal,10,10,0,900
-763079,Abdukodir Khusanov,281,Manchester City,2026,GB1,45,Centre-Back,22,Uzbekistan,10,7,0,553
-601883,Matheus Nunes,281,Manchester City,2026,GB1,27,Right-Back,28,Portugal,8,7,0,514
-578391,Rayan Aït-Nouri,281,Manchester City,2026,GB1,21,Left-Back,25,Algeria,6,0,0,0
-1005575,Vitor Reis,281,Manchester City,2026,GB1,22,Centre-Back,20,Brazil,7,1,0,1
-701057,Rico Lewis,281,Manchester City,2026,GB1,82,Right-Back,21,England,9,2,0,102
-1078156,Kaden Braithwaite,281,Manchester City,2026,GB1,0,Centre-Back,18,England,1,1,0,1
-567576,Elliot Anderson,281,Manchester City,2026,GB1,5,Defensive Midfield,24,England,10,10,0,788
-648195,Enzo Fernández,281,Manchester City,2026,GB1,17,Central Midfield,25,Argentina,8,8,1,600
-607223,Rayan Cherki,281,Manchester City,2026,GB1,10,Attacking Midfield,23,France,10,9,5,565
-1097139,Ayyoub Bouaddi,281,Manchester City,2026,GB1,32,Defensive Midfield,19,Morocco,9,5,0,177
-406635,Phil Foden,281,Manchester City,2026,GB1,47,Attacking Midfield,26,England,8,8,1,364
-466805,Nico González,281,Manchester City,2026,GB1,0,Defensive Midfield,24,Spain,1,0,0,0
-994536,Claudio Echeverri,281,Manchester City,2026,GB1,0,Attacking Midfield,20,Argentina,1,0,0,0
-51471,Mateo Kovacic,281,Manchester City,2026,GB1,8,Central Midfield,32,Croatia,10,3,0,92
-1263739,Floyd Samba,281,Manchester City,2026,GB1,0,Central Midfield,17,Germany,1,0,0,0
-418560,Erling Haaland,281,Manchester City,2026,GB1,9,Centre-Forward,26,Norway,10,10,9,890
-583255,Antoine Semenyo,281,Manchester City,2026,GB1,42,Right Winger,26,Ghana,7,7,2,553
-486049,Jérémy Doku,281,Manchester City,2026,GB1,11,Left Winger,24,Belgium,6,6,1,396
-623570,Iliman Ndiaye,281,Manchester City,2026,GB1,7,Left Winger,26,Senegal,8,8,0,591
-445939,Omar Marmoush,281,Manchester City,2026,GB1,0,Centre-Forward,27,Egypt,1,0,0,0
-1082631,Allan,281,Manchester City,2026,GB1,37,Right Winger,22,Brazil,6,2,0,21
-203460,Jack Grealish,281,Manchester City,2026,GB1,0,Left Winger,31,England,1,1,0,8
-1187640,Ryan McAidoo,281,Manchester City,2026,GB1,56,Right Winger,18,England,3,3,0,32
 503883,Senne Lammens,985,Manchester United,2026,GB1,1,Goalkeeper,24,Belgium,10,10,0,900
 99397,Karl Darlow,985,Manchester United,2026,GB1,12,Goalkeeper,36,Wales,10,0,0,0
 34130,Tom Heaton,985,Manchester United,2026,GB1,22,Goalkeeper,40,England,0,0,0,0
 620362,Dermot Mee,985,Manchester United,2026,GB1,45,Goalkeeper,23,Northern Ireland,0,0,0,0
 480762,Lisandro Martínez,985,Manchester United,2026,GB1,6,Centre-Back,28,Argentina,9,8,0,583
-923831,Leny Yoro,985,Manchester United,2026,GB1,15,Centre-Back,20,France,10,7,0,441
+923831,Leny Yoro,985,Manchester United,2026,GB1,15,Centre-Back,21,France,10,7,0,441
 357147,Diogo Dalot,985,Manchester United,2026,GB1,2,Right-Back,27,Portugal,10,10,0,715
 1078163,Ayden Heaven,985,Manchester United,2026,GB1,26,Centre-Back,20,England,8,5,0,225
 326031,Matthijs de Ligt,985,Manchester United,2026,GB1,4,Centre-Back,27,Netherlands,4,0,0,0
-340456,Noussair Mazraoui,985,Manchester United,2026,GB1,3,Right-Back,28,Morocco,9,5,0,233
+340456,Noussair Mazraoui,985,Manchester United,2026,GB1,3,Right-Back,29,Morocco,9,5,0,233
 177907,Harry Maguire,985,Manchester United,2026,GB1,5,Centre-Back,33,England,10,10,0,855
 183288,Luke Shaw,985,Manchester United,2026,GB1,23,Left-Back,31,England,5,5,0,427
 1011738,Harry Amass,985,Manchester United,2026,GB1,41,Left-Back,19,England,1,0,0,0
@@ -4413,7 +4413,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 892160,Luka Vuskovic,1237,Brighton & Hove Albion,2026,GB1,44,Centre-Back,19,Croatia,10,10,1,888
 369316,Ferdi Kadıoğlu,1237,Brighton & Hove Albion,2026,GB1,24,Left-Back,27,Türkiye,8,7,0,520
 429915,Maxim De Cuyper,1237,Brighton & Hove Albion,2026,GB1,29,Left-Back,25,Belgium,10,10,2,827
-415381,Mats Wieffer,1237,Brighton & Hove Albion,2026,GB1,27,Right-Back,26,Netherlands,4,4,0,229
+415381,Mats Wieffer,1237,Brighton & Hove Albion,2026,GB1,27,Right-Back,27,Netherlands,4,4,0,229
 410708,Pascal Struijk,1237,Brighton & Hove Albion,2026,GB1,4,Centre-Back,27,Netherlands,6,4,0,156
 318508,Olivier Boscagli,1237,Brighton & Hove Albion,2026,GB1,21,Centre-Back,28,France,10,10,0,786
 750903,Jaouen Hadjam,1237,Brighton & Hove Albion,2026,GB1,3,Left-Back,23,Algeria,9,3,1,37
@@ -4629,7 +4629,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 532775,Melvin Bard,399,Leeds United,2026,GB1,26,Left-Back,26,France,8,2,0,63
 1122308,Jayden Lienou,399,Leeds United,2026,GB1,0,Left-Back,18,Wales,1,0,0,0
 392771,Ethan Ampadu,399,Leeds United,2026,GB1,4,Defensive Midfield,26,Wales,10,10,0,900
-344069,Anton Stach,399,Leeds United,2026,GB1,18,Defensive Midfield,27,Germany,9,9,1,677
+344069,Anton Stach,399,Leeds United,2026,GB1,18,Defensive Midfield,28,Germany,9,9,1,677
 393323,Brenden Aaronson,399,Leeds United,2026,GB1,11,Attacking Midfield,26,United States,10,8,0,286
 489359,Ao Tanaka,399,Leeds United,2026,GB1,22,Central Midfield,28,Japan,10,9,0,640
 346707,Sean Longstaff,399,Leeds United,2026,GB1,8,Central Midfield,29,England,10,6,0,135

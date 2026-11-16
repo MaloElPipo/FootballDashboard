@@ -4265,6 +4265,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 339816,Tete Morente,1005,US Lecce,2025,IT1,0,Left Winger,28,Spain,17,16,0,859
 649490,Konan N’Dri,1005,US Lecce,2025,IT1,11,Right Winger,24,Niger,38,27,2,521
 386455,Riccardo Sottil,1005,US Lecce,2025,IT1,23,Left Winger,26,Italy,25,21,1,1072
+1017950,Vernon Addo,1005,US Lecce,2026,IT1,0,Left-Back,21,Netherlands,0,0,0,0
 388516,Josep Martínez,46,Inter Milan,2026,IT1,1,Goalkeeper,28,Spain,11,9,0,810
 197929,Ivan Provedel,46,Inter Milan,2026,IT1,49,Goalkeeper,32,Italy,10,2,0,180
 1070076,Alain Taho,46,Inter Milan,2026,IT1,0,Goalkeeper,19,Albania,1,0,0,0
@@ -4432,7 +4433,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 668951,Matías Soulé,12,AS Roma,2026,IT1,18,Right Winger,23,Argentina,11,11,3,763
 849520,Santiago Castro,12,AS Roma,2026,IT1,9,Centre-Forward,22,Argentina,11,9,1,327
 1131161,Robinio Vaz,12,AS Roma,2026,IT1,0,Centre-Forward,19,France,1,0,0,0
-206050,Paulo Dybala,12,AS Roma,2026,IT1,21,Second Striker,32,Argentina,6,6,0,496
+206050,Paulo Dybala,12,AS Roma,2026,IT1,21,Second Striker,33,Argentina,6,6,0,496
 1251220,Antonio Arena,12,AS Roma,2026,IT1,68,Centre-Forward,17,Italy,3,0,0,0
 1332978,Mandjou Camara,12,AS Roma,2026,IT1,0,Centre-Forward,17,Guinea,4,0,0,0
 1310462,Lorenzo Paratici,12,AS Roma,2026,IT1,0,Centre-Forward,18,Italy,1,0,0,0
@@ -4443,7 +4444,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1206710,Mattia Sonzogni,800,Atalanta BC,2026,IT1,0,Goalkeeper,17,Italy,6,0,0,0
 571604,Giorgio Scalvini,800,Atalanta BC,2026,IT1,42,Centre-Back,22,Italy,9,9,0,783
 503075,Isak Hien,800,Atalanta BC,2026,IT1,4,Centre-Back,27,Sweden,0,0,0,0
-708635,Lorenzo Bernasconi,800,Atalanta BC,2026,IT1,47,Left-Back,22,Italy,11,9,0,612
+708635,Lorenzo Bernasconi,800,Atalanta BC,2026,IT1,47,Left-Back,23,Italy,11,9,0,612
 698259,Thomas Kristensen,800,Atalanta BC,2026,IT1,31,Centre-Back,24,Denmark,7,5,0,364
 644771,Odilon Kossounou,800,Atalanta BC,2026,IT1,3,Centre-Back,25,Cote d'Ivoire,4,4,0,360
 357992,Raoul Bellanova,800,Atalanta BC,2026,IT1,16,Right-Back,26,Italy,8,7,0,468
@@ -4492,7 +4493,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 315969,Scott McTominay,6195,SSC Napoli,2026,IT1,8,Central Midfield,29,Scotland,8,8,2,625
 423744,Billy Gilmour,6195,SSC Napoli,2026,IT1,6,Defensive Midfield,25,Scotland,11,8,1,451
 703245,Antonio Vergara,6195,SSC Napoli,2026,IT1,26,Attacking Midfield,23,Italy,9,7,1,271
-354361,Frank Anguissa,6195,SSC Napoli,2026,IT1,99,Central Midfield,30,Cameroon,9,8,1,491
+354361,Frank Anguissa,6195,SSC Napoli,2026,IT1,99,Central Midfield,31,Cameroon,9,8,1,491
 192735,Stanislav Lobotka,6195,SSC Napoli,2026,IT1,68,Defensive Midfield,31,Slovakia,9,9,1,628
 88755,Kevin De Bruyne,6195,SSC Napoli,2026,IT1,11,Attacking Midfield,35,Belgium,11,11,4,623
 1311269,Andrea Chiummariello,6195,SSC Napoli,2026,IT1,0,Central Midfield,18,Italy,2,0,0,0
@@ -4575,7 +4576,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 457736,Tijjani Noslin,398,SS Lazio,2026,IT1,14,Left Winger,27,Netherlands,11,10,4,668
 283735,Mattia Zaccagni,398,SS Lazio,2026,IT1,10,Left Winger,31,Italy,10,10,2,845
 550106,Matteo Cancellieri,398,SS Lazio,2026,IT1,22,Right Winger,24,Italy,9,7,1,332
-626913,Boulaye Dia,398,SS Lazio,2026,IT1,0,Centre-Forward,29,Senegal,2,2,0,159
+626913,Boulaye Dia,398,SS Lazio,2026,IT1,0,Centre-Forward,30,Senegal,2,2,0,159
 976207,Federico Serra,398,SS Lazio,2026,IT1,63,Centre-Forward,20,Italy,9,0,0,0
 992569,Massimo Pessina,1025,Bologna FC 1909,2026,IT1,25,Goalkeeper,18,Italy,11,2,0,180
 80894,Lukasz Skorupski,1025,Bologna FC 1909,2026,IT1,1,Goalkeeper,35,Poland,11,9,0,810
@@ -4639,7 +4640,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 390163,Andrea Ghion,6574,US Sassuolo,2026,IT1,8,Defensive Midfield,26,Italy,11,2,0,30
 579930,Armand Laurienté,6574,US Sassuolo,2026,IT1,45,Left Winger,27,France,11,11,2,901
 538918,Sebastiano Esposito,6574,US Sassuolo,2026,IT1,94,Centre-Forward,24,Italy,9,8,2,494
-746891,Cristian Volpato,6574,US Sassuolo,2026,IT1,7,Right Winger,22,Australia,7,5,1,209
+746891,Cristian Volpato,6574,US Sassuolo,2026,IT1,7,Right Winger,23,Australia,7,5,1,209
 961022,Benja Domínguez,6574,US Sassuolo,2026,IT1,25,Left Winger,23,Argentina,11,6,0,169
 647280,Kieron Bowie,6574,US Sassuolo,2026,IT1,9,Centre-Forward,24,Scotland,11,11,1,550
 177843,Domenico Berardi,6574,US Sassuolo,2026,IT1,10,Right Winger,32,Italy,9,9,2,620
@@ -4678,7 +4679,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 559333,Kian Fitz-Jim,416,Torino FC,2026,IT1,28,Central Midfield,23,Netherlands,11,8,1,571
 1191921,Andrea Luongo,416,Torino FC,2026,IT1,79,Central Midfield,18,Italy,3,0,0,0
 934527,Alieu Njie,416,Torino FC,2026,IT1,0,Left Winger,21,Sweden,2,1,0,20
-282388,Giovanni Simeone,416,Torino FC,2026,IT1,18,Centre-Forward,31,Argentina,11,11,3,832
+282388,Giovanni Simeone,416,Torino FC,2026,IT1,18,Centre-Forward,31,Argentina,11,11,2,832
 393238,Zakaria Aboukhlal,416,Torino FC,2026,IT1,7,Right Winger,26,Morocco,11,6,0,106
 346779,Ché Adams,416,Torino FC,2026,IT1,19,Centre-Forward,30,Scotland,9,9,4,616
 357778,Sandro Kulenović,416,Torino FC,2026,IT1,17,Centre-Forward,26,Croatia,11,9,2,199
@@ -4783,7 +4784,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1058366,Simone Lontani,130,Parma Calcio 1913,2026,IT1,76,Second Striker,18,Italy,11,11,3,547
 862606,Nesta Elphege,130,Parma Calcio 1913,2026,IT1,23,Centre-Forward,25,France,8,7,0,235
 300532,Pontus Almqvist,130,Parma Calcio 1913,2026,IT1,11,Right Winger,27,Sweden,8,7,1,98
-962149,Ousmane Diallo,130,Parma Calcio 1913,2026,IT1,7,Left Winger,19,Spain,9,1,0,15
+962149,Ousmane Diallo,130,Parma Calcio 1913,2026,IT1,7,Left Winger,19,Spain,9,2,0,35
 1231230,Thomás De Martis,130,Parma Calcio 1913,2026,IT1,25,Centre-Forward,18,Argentina,7,0,0,0
 421873,Elia Caprile,1390,Cagliari Calcio,2026,IT1,1,Goalkeeper,25,Italy,11,11,0,990
 304144,Alen Sherri,1390,Cagliari Calcio,2026,IT1,12,Goalkeeper,28,Albania,11,0,0,0
@@ -4939,7 +4940,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 433329,Corrie Ndaba,1005,US Lecce,2026,IT1,3,Left-Back,26,Ireland,11,4,0,210
 1118086,Sebastian Esposito,1005,US Lecce,2026,IT1,0,Centre-Back,21,Australia,0,0,0,0
 1105124,Elijah Scott,1005,US Lecce,2026,IT1,31,Centre-Back,20,United States,9,0,0,0
-1017950,Vernon Addo,1005,US Lecce,2026,IT1,0,Left-Back,21,Netherlands,0,0,0,0
 745595,Marlon Ubani,1005,US Lecce,2026,IT1,36,Right-Back,21,Germany,0,0,0,0
 470794,Ivan Ilić,1005,US Lecce,2026,IT1,20,Central Midfield,25,Serbia,5,5,0,256
 583046,Medon Berisha,1005,US Lecce,2026,IT1,10,Central Midfield,23,Albania,2,1,0,8
@@ -4955,7 +4955,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 674806,Santiago Pierotti,1005,US Lecce,2026,IT1,50,Right Winger,25,Argentina,7,7,0,454
 595650,Nikola Stulic,1005,US Lecce,2026,IT1,9,Centre-Forward,25,Serbia,10,9,0,445
 410787,Joël Monteiro,1005,US Lecce,2026,IT1,99,Left Winger,27,Switzerland,8,8,1,416
-649490,Konan N’Dri,1005,US Lecce,2026,IT1,11,Right Winger,26,Niger,11,11,2,517
+649490,Konan N’Dri,1005,US Lecce,2026,IT1,11,Right Winger,26,Niger,11,11,1,517
 1200320,Hjalte Lærke,1005,US Lecce,2026,IT1,0,Right Winger,19,Denmark,2,0,0,0
 931841,Amar Fatah,1005,US Lecce,2026,IT1,7,Left Winger,22,Sweden,10,10,1,455
 937954,Paco Esteban,1005,US Lecce,2026,IT1,22,Centre-Forward,20,Spain,11,7,0,234

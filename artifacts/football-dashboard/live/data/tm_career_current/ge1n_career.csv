@@ -2,7 +2,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 412614,Levan Kharabadze,2026,ECLQ,663,False,4,2,0,96,0,0,0,0,0
 669305,Viktor Bliznichenko,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 688309,Wellissol,2026,UAEP,51771,False,4,1,0,26,0,0,0,0,0
-688309,Wellissol,2026,UAE2,51771,False,9,4,0,204,1,0,0,0,0
+688309,Wellissol,2026,UAE2,51771,False,9,5,0,290,2,0,0,0,0
 1219485,Andrey,2026,UKRP,26459,False,3,0,0,0,0,0,0,0,0
 1219485,Andrey,2026,UKR1,26459,False,12,1,0,1,0,0,0,0,0
 1219485,Andrey,2026,UA2P,62552,False,10,9,0,810,0,0,0,0,2
@@ -12,10 +12,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077427,Tsotne Berelidze,2026,TS2,6377,False,13,4,0,54,0,0,0,0,1
 461941,Manuel Pami,2026,PT3A,74155,False,9,5,0,136,0,0,0,0,2
 461941,Manuel Pami,2026,POPO,74155,False,2,1,0,24,0,0,0,0,1
-681627,Warley,2026,ECLQ,253,False,2,0,2,0,0,0,0,0,0
 1434779,Nana-Kofi Donkor,2026,SEC,272,False,1,0,0,0,0,0,0,0,0
 1434779,Nana-Kofi Donkor,2026,ECLQ,32017,False,4,2,1,65,0,0,0,0,0
 430592,Nikoloz Kutateladze,2026,ESTP,5771,False,2,1,0,75,2,0,0,0,0
+681627,Warley,2026,ECLQ,253,False,2,0,2,0,0,0,0,0,0
 1565531,Gabriel Gogua,2026,U17Q,25787,True,1,1,0,90,0,0,0,0,0
 1565531,Gabriel Gogua,2026,FS,25787,True,3,2,0,150,0,0,0,0,0
 1565531,Gabriel Gogua,2026,ECLQ,663,False,4,0,0,0,0,0,0,0,0
@@ -26,10 +26,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1319831,Mate Gagvishvili,2026,ECLQ,663,False,1,0,0,0,0,0,0,0,0
 1077433,Giorgi Meparishvili,2026,ECLQ,663,False,3,0,0,0,0,0,0,0,0
 1435152,Levan Khozrevanidze,2026,SKC,34775,False,2,1,0,24,0,0,0,0,0
-1435152,Levan Khozrevanidze,2026,SK2,34775,False,11,0,0,0,0,0,0,0,0
+1435152,Levan Khozrevanidze,2026,SK2,34775,False,12,0,0,0,0,0,0,0,0
 464494,Franklin Nyenetue,2026,NOPO,13519,False,3,3,0,170,2,2,0,0,1
 464494,Franklin Nyenetue,2026,ECLQ,32017,False,4,2,0,75,0,0,0,0,0
-464494,Franklin Nyenetue,2026,AFCQ,9172,True,2,2,0,158,0,0,0,0,0
+464494,Franklin Nyenetue,2026,AFCQ,9172,True,3,3,0,222,1,0,1,1,0
 1196163,Daniel Kvartskhava,2026,UCOL,41133,False,3,0,0,0,0,0,0,0,0
 1196163,Daniel Kvartskhava,2026,ELQ,41133,False,1,0,0,0,0,0,0,0,0
 1196163,Daniel Kvartskhava,2026,ECLQ,663,False,4,2,0,64,0,0,0,0,0
@@ -53,10 +53,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077440,Aleksandre Amisulashvili,2026,FS,40458,True,2,0,0,0,0,0,0,0,0
 1077440,Aleksandre Amisulashvili,2026,ELQ,41133,False,4,4,0,380,0,0,0,0,0
 1077440,Aleksandre Amisulashvili,2026,CLQ,41133,False,4,4,0,360,0,0,0,0,1
-351072,Vahid Selimovic,2026,UNLC,3580,True,4,2,0,180,0,0,3,0,1
+351072,Vahid Selimovic,2026,UNLC,3580,True,6,4,0,360,0,0,3,0,1
 351072,Vahid Selimovic,2026,UCOL,41133,False,3,3,0,270,0,0,0,0,1
 351072,Vahid Selimovic,2026,ELQ,41133,False,4,4,0,390,0,0,2,0,1
 351072,Vahid Selimovic,2026,CLQ,41133,False,4,4,0,345,0,0,0,0,0
+819419,Armel Zohouri,2026,FRC,1421,False,1,1,0,90,0,0,0,0,0
 819419,Armel Zohouri,2026,FR2,1421,False,12,6,3,259,0,1,1,0,1
 819419,Armel Zohouri,2026,CLQ,41133,False,2,2,0,176,0,0,0,0,0
 502665,Jemali-Giorgi Jinjolava,2026,UCOL,41133,False,3,3,0,270,1,0,5,2,1
@@ -71,6 +72,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 319447,Giorgi Kobuladze,2026,ELQ,41133,False,4,4,0,331,0,0,1,0,1
 319447,Giorgi Kobuladze,2026,CLQ,41133,False,4,4,0,166,0,0,0,0,0
 1392025,Nikoloz Bochorishvili,2026,UCOL,41133,False,3,0,0,0,0,0,0,0,0
+1392025,Nikoloz Bochorishvili,2026,FS,48174,True,1,0,0,0,0,0,0,0,0
 1392025,Nikoloz Bochorishvili,2026,ELQ,41133,False,4,2,0,40,0,0,0,0,0
 1392025,Nikoloz Bochorishvili,2026,CLQ,41133,False,4,2,0,29,0,0,0,0,0
 1560880,Luka Mamulashvili,2026,19YL,122621,False,1,1,0,45,0,0,0,0,0
@@ -107,7 +109,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 264137,Giorgi Beridze,2026,UNGP,708,False,1,0,0,0,0,0,0,0,0
 264137,Giorgi Beridze,2026,UNG1,708,False,7,0,0,0,0,0,0,0,0
 264137,Giorgi Beridze,2026,UCOL,41133,False,3,0,3,0,0,0,0,0,0
-1401121,Saba Avdoevi,2026,U19Q,25740,True,3,3,0,49,0,0,0,0,0
+1401121,Saba Avdoevi,2026,U19Q,25740,True,4,4,0,139,0,0,0,0,0
 1401121,Saba Avdoevi,2026,FS,25740,True,2,1,0,63,0,0,0,0,0
 1401121,Saba Avdoevi,2026,ELQ,41133,False,4,0,0,0,0,0,0,0,0
 1401121,Saba Avdoevi,2026,CLQ,41133,False,4,0,0,0,0,0,0,0,0
@@ -151,7 +153,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1193792,Giorgi Gvasalia,2026,ECLQ,663,False,4,0,4,0,0,0,0,0,0
 341025,Paris Psaltis,2026,ECLQ,663,False,4,4,0,253,0,0,0,0,1
 1083088,Léo Santos,2026,ECLQ,663,False,4,4,0,390,2,0,0,0,1
-1248065,Giorgi Lomidze,2026,U19Q,25740,True,3,2,0,180,0,0,0,0,1
+1248065,Giorgi Lomidze,2026,U19Q,25740,True,4,2,0,180,0,0,0,0,1
 1248065,Giorgi Lomidze,2026,FS,25740,True,2,1,0,90,0,0,0,0,1
 1248065,Giorgi Lomidze,2026,ECLQ,663,False,4,0,0,0,0,0,0,0,0
 1248065,Giorgi Lomidze,2026,19YL,55968,False,4,4,0,360,1,1,0,0,2
@@ -162,16 +164,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1332185,Yussif Musah,2026,ECLQ,663,False,2,0,0,0,0,0,0,0,0
 229007,Lyes Houri,2026,ECLQ,663,False,2,1,0,68,0,0,0,0,0
 1367128,Abdoulaye Yoro,2026,SCP,1519,False,1,1,0,27,0,0,2,0,1
-1367128,Abdoulaye Yoro,2026,SC1,1519,False,11,10,0,300,0,1,6,5,2
+1367128,Abdoulaye Yoro,2026,SC1,1519,False,10,10,0,300,0,1,6,5,2
 1367128,Abdoulaye Yoro,2026,ECLQ,6890,False,2,0,2,0,0,0,0,0,0
 345194,Nikoloz Ninua,2026,ECLQ,663,False,4,4,0,385,1,2,0,0,0
 250897,Giorgi Kharaishvili,2026,ECLQ,663,False,4,0,4,0,0,0,0,0,0
 324329,Barnes Osei,2026,ECLQ,663,False,4,4,0,363,0,0,0,0,1
-1386532,Luka Tsikolia,2026,U19Q,25740,True,3,3,0,222,0,0,0,0,0
+1386532,Luka Tsikolia,2026,U19Q,25740,True,4,3,0,222,0,0,0,0,0
 1386532,Luka Tsikolia,2026,FS,25740,True,2,2,0,117,0,0,0,0,0
 1386532,Luka Tsikolia,2026,ECLQ,663,False,4,3,0,56,0,0,0,0,0
 1386532,Luka Tsikolia,2026,19YL,55968,False,4,3,0,225,0,0,0,0,0
-1330184,Koba Kakashvili,2026,U19Q,25740,True,3,3,0,181,0,0,0,0,1
+1330184,Koba Kakashvili,2026,U19Q,25740,True,4,4,0,206,0,0,0,0,1
 1330184,Koba Kakashvili,2026,FS,25740,True,2,2,0,117,0,0,0,0,0
 1330184,Koba Kakashvili,2026,ECLQ,663,False,4,4,0,198,0,0,0,0,0
 1330184,Koba Kakashvili,2026,19YL,55968,False,4,4,0,254,0,0,0,0,0
@@ -179,10 +181,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1228055,Nikoloz Tkalia,2026,ECLQ,663,False,4,2,0,40,0,0,0,0,0
 25758,Jaba Kankava,2026,ECLQ,663,False,4,0,2,0,0,0,0,0,0
 825834,Rodrigo Ramos,2026,PT3A,5227,False,2,1,0,11,0,0,0,0,0
-1488390,Abdoulie Njie,2026,T191,73900,False,11,8,1,700,2,0,0,0,2
+1488390,Abdoulie Njie,2026,T191,73900,False,11,8,1,689,3,0,0,0,2
 666924,Algassime Bah,2026,ECLQ,663,False,4,4,0,390,1,1,0,0,1
 315930,Maxime Do Couto,2026,ECLQ,663,False,4,4,0,379,0,0,0,0,1
-1330102,Tornike Kvaratskhelia,2026,U19Q,25740,True,1,1,0,69,0,0,0,0,0
+1330102,Tornike Kvaratskhelia,2026,U19Q,25740,True,2,2,0,107,0,0,0,0,0
 1330102,Tornike Kvaratskhelia,2026,ECLQ,663,False,4,4,0,216,0,0,0,0,0
 1330102,Tornike Kvaratskhelia,2026,19YL,55968,False,4,4,0,242,2,2,0,0,0
 1159175,Mathew Gbomadu,2026,ECLQ,663,False,2,0,0,0,0,0,0,0,0
@@ -191,19 +193,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1193799,Reziko Danelia,2026,FS,40458,True,2,0,0,0,0,0,0,0,0
 1193799,Reziko Danelia,2026,ECLQ,663,False,4,1,0,1,0,0,0,0,0
 87142,Mate Vatsadze,2026,ECLQ,663,False,4,4,0,138,2,0,0,0,1
-1248067,Shota Diakonidze,2026,U19Q,25740,True,3,3,0,56,0,0,0,0,0
+1248067,Shota Diakonidze,2026,U19Q,25740,True,4,4,0,146,0,0,0,0,0
+1248067,Shota Diakonidze,2026,FS,48174,True,1,0,0,0,0,0,0,0,0
 1248067,Shota Diakonidze,2026,FS,25740,True,2,1,0,56,0,0,0,0,1
 1248067,Shota Diakonidze,2026,19YL,55968,False,4,3,0,135,1,0,0,0,1
 1382068,Rati Aleksidze,2026,ECLQ,663,False,4,0,0,0,0,0,0,0,0
 1382068,Rati Aleksidze,2026,19YL,55968,False,4,4,0,245,1,0,0,0,1
-550466,Ivan Turitsov,2026,UNLC,3394,True,4,3,0,253,0,0,1,0,0
+501532,Nodari Kalichava,2026,UNLB,3669,True,1,0,0,0,0,0,0,0,0
+550466,Ivan Turitsov,2026,UNLC,3394,True,6,3,0,253,0,0,1,0,0
 593410,Yahya Kalley,2026,PO1,2431,False,1,0,0,0,0,0,0,0,0
-329055,Enes Mahmutovic,2026,UNLC,3580,True,4,3,0,263,0,0,1,1,2
-341530,Dirk Carlson,2026,UNLC,3580,True,4,4,0,360,0,0,0,0,2
+329055,Enes Mahmutovic,2026,UNLC,3580,True,5,4,0,295,0,0,1,1,2
+341530,Dirk Carlson,2026,UNLC,3580,True,6,5,0,450,0,0,0,0,2
 341530,Dirk Carlson,2026,FS,47912,True,3,0,0,0,0,0,0,0,0
 114728,Mamuka Kobakhidze,2026,FS,25787,True,3,0,0,0,0,0,0,0,0
+1330183,Alika Getiashvili,2026,FS,48174,True,1,1,0,87,0,0,0,0,0
 400715,Sandro Altunashvili,2026,UNLB,3669,True,4,0,0,0,0,0,0,0,0
-351616,Dmitri Mandricenco,2026,UNLC,6090,True,4,1,0,45,0,0,1,0,0
+351616,Dmitri Mandricenco,2026,UNLC,6090,True,5,1,0,45,0,0,1,0,0
 250896,Oto Goshadze,2026,ECLQ,253,False,2,2,0,180,0,0,0,0,1
 84802,Filip Kljajic,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 465619,Demetre Buliskeria,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
@@ -213,20 +218,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 863567,Soso Kopaliani,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 410212,Sori Mané,2026,ECLQ,253,False,2,1,0,38,0,0,0,0,0
 410212,Sori Mané,2026,AFCP,13678,False,3,3,0,217,0,0,0,0,0
+297376,Matej Simic,2026,ECLQ,253,False,2,2,0,180,0,0,0,0,0
 462248,Jorginho,2026,UCOL,6251,False,3,1,0,30,0,0,1,0,0
 462248,Jorginho,2026,ELQ,6251,False,2,0,0,0,0,0,0,0,0
 462248,Jorginho,2026,ECLQ,6251,False,2,0,0,0,0,0,0,0,0
 462248,Jorginho,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 462248,Jorginho,2026,CLQ,6251,False,2,0,0,0,0,0,0,0,0
-297376,Matej Simic,2026,ECLQ,253,False,2,2,0,180,0,0,0,0,0
 1122625,Dato Bukia,2026,ECLQ,253,False,2,2,0,180,0,0,0,0,1
 319453,Tsotne Nadaraia,2026,ECLQ,253,False,2,1,0,33,0,0,0,0,0
-1330172,Luka Kuprava,2026,U19Q,25740,True,3,3,0,270,0,0,0,0,0
+1330172,Luka Kuprava,2026,U19Q,25740,True,4,4,0,349,0,0,0,0,0
 1330172,Luka Kuprava,2026,FS,25740,True,2,2,0,124,0,0,0,0,0
 1330172,Luka Kuprava,2026,ECLQ,253,False,2,2,0,157,0,0,0,0,1
 1138810,Amiran Tkeshelashvili,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 1255384,Nikolozi Sajaia,2026,ARM1,74661,False,1,0,0,0,0,0,0,0,0
-658815,Nodar Lominadze,2026,UNLB,3669,True,4,1,0,25,0,0,0,0,1
+658815,Nodar Lominadze,2026,UNLB,3669,True,5,1,0,25,0,0,0,0,1
 1330185,Glib Katkov,2026,FS,21233,True,3,1,0,45,0,0,0,0,0
 1330185,Glib Katkov,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 319450,Vladimer Mamuchashvili,2026,ECLQ,253,False,2,2,0,180,0,0,0,0,0
@@ -239,6 +244,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1521781,Tornike Antia,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 1468084,Davit Pertaia,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
 1558419,Temur Tsikoridze,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
+1535697,Giorgi Gergedava,2026,FS,48174,True,1,1,0,63,0,0,0,0,0
 292717,Giorgi Arabidze,2026,ECLQ,253,False,2,2,0,157,0,0,0,0,0
 900488,Aleko Basiladze,2026,TSP,697,False,3,2,0,156,0,0,0,0,0
 900488,Aleko Basiladze,2026,TS1,697,False,13,2,0,105,0,0,1,0,0
@@ -249,6 +255,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 389441,Virgile Pinson,2026,ECLQ,253,False,2,2,0,135,0,0,0,0,0
 250906,Akaki Shulaia,2026,ECLQ,253,False,1,0,0,0,0,0,0,0,0
 1122626,Luka Pridonishvili,2026,ECLQ,253,False,2,0,0,0,0,0,0,0,0
+1601772,Nikoloz Khatoiani,2026,FS,48174,True,1,1,0,18,0,0,0,0,0
 411612,Davit Kereselidze,2026,UNLB,3669,True,4,0,0,0,0,0,0,0,0
 411612,Davit Kereselidze,2026,ECLQ,32017,False,4,4,0,360,0,0,0,0,0
 400716,Luka Sanikidze,2026,ECLQ,32017,False,4,0,0,0,0,0,0,0,0
@@ -266,11 +273,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1205576,Maik Poeketie,2026,ECLQ,32017,False,4,1,0,6,0,0,0,0,0
 1363741,Dunga,2026,ECLQ,32017,False,4,0,0,0,0,0,0,0,0
 1017651,Lasha Menteshashvili,2026,ECLQ,32017,False,4,4,0,301,0,0,0,0,0
-668676,Aviel Zargari,2026,ROMP,58049,False,1,0,0,0,0,0,0,0,0
-907917,Kristaps Grabovskis,2026,UNLC,3555,True,4,0,1,0,0,0,0,0,0
+668676,Aviel Zargary,2026,ROMP,58049,False,1,0,0,0,0,0,0,0,0
+907917,Kristaps Grabovskis,2026,UNLC,3555,True,6,1,1,1,0,0,0,0,0
 907917,Kristaps Grabovskis,2026,DK3O,947,False,1,0,0,0,0,0,0,0,0
 688706,Blankson Anoff,2026,ECLQ,32017,False,4,3,0,229,1,0,0,0,1
-1242649,Georgiy Kobakhidze,2026,U19Q,25740,True,3,1,0,29,0,0,0,0,0
+1242649,Georgiy Kobakhidze,2026,U19Q,25740,True,4,2,0,94,0,0,0,0,0
 1242649,Georgiy Kobakhidze,2026,FS,25740,True,2,1,0,63,0,0,0,0,0
 1242649,Georgiy Kobakhidze,2026,ECLQ,32017,False,4,3,0,126,0,0,0,0,0
 1240448,Malik Olatunji,2026,ECLQ,32017,False,4,0,4,0,0,0,0,0,0
@@ -289,7 +296,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 809841,Papuna Beruashvili,2026,FS,40458,True,2,0,0,0,0,0,0,0,0
 1598889,Guri Kakabadze,2026,U17Q,25787,True,1,1,0,18,0,0,0,0,0
 1598889,Guri Kakabadze,2026,FS,25787,True,3,3,0,165,0,1,0,0,1
-1193793,Mate Shatirishvili,2026,U19Q,25740,True,3,2,0,180,1,0,0,0,0
+1193793,Mate Shatirishvili,2026,U19Q,25740,True,4,3,0,270,1,0,0,0,1
+1193793,Mate Shatirishvili,2026,FS,48174,True,1,0,0,0,0,0,0,0,0
 1193793,Mate Shatirishvili,2026,FS,25740,True,2,1,0,90,1,0,0,0,1
 734417,Abdoulie Jarjue Kabia,2026,WRPO,23664,False,2,2,0,180,0,0,0,0,0
 734417,Abdoulie Jarjue Kabia,2026,AFCQ,6187,True,2,0,0,0,0,0,0,0,0
@@ -297,10 +305,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1341515,Saba Chkhetiani,2026,FS,25740,True,2,2,0,58,0,0,0,0,0
 1241218,Otar Chochia,2026,U19Q,25740,True,3,0,0,0,0,0,0,0,0
 1241218,Otar Chochia,2026,FS,25740,True,2,0,0,0,0,0,0,0,0
-1561143,Luka Gurchiani,2026,U19Q,25740,True,1,1,0,21,0,0,0,0,0
+1561143,Luka Gurchiani,2026,U19Q,25740,True,2,1,0,21,0,0,0,0,0
 1561143,Luka Gurchiani,2026,FS,25740,True,2,1,0,56,0,0,0,0,0
+1330091,Giorgi Jamarauli,2026,FS,48174,True,1,1,0,63,0,0,0,0,0
 809906,Dimitri Ghurtskaia,2026,RUP,14590,False,3,3,0,196,1,1,0,0,1
-809906,Dimitri Ghurtskaia,2026,RU2,14590,False,17,5,0,200,1,0,0,0,1
+809906,Dimitri Ghurtskaia,2026,RU2,14590,False,18,5,0,200,1,0,0,0,1
 809906,Dimitri Ghurtskaia,2026,FS,40458,True,2,0,0,0,0,0,0,0,0
 931184,Giorgi Pirtakhia,2026,FS,40458,True,2,0,0,0,0,0,0,0,0
 809897,Saba Gegiadze,2026,FS,40458,True,2,0,0,0,0,0,0,0,0

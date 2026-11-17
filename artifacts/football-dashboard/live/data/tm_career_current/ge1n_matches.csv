@@ -1,5 +1,5 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
-688309,Wellissol,2026-11-08T12:45:00+00:00,2026,UAE2,2,False,5082499,9,51771,home,122768,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+688309,Wellissol,2026-11-08T12:45:00+00:00,2026,UAE2,2,False,5082499,9,51771,home,122768,2,0,played,11,0,False,86,1,0,0,0,0,0,,,86,0,0
 688309,Wellissol,2026-11-01T12:50:00+00:00,2026,UAE2,2,False,5082491,8,51771,away,90721,1,1,played,11,0,False,75,0,0,0,0,0,0,,,75,0,0
 688309,Wellissol,2026-10-24T13:00:00+00:00,2026,UAEP,8,False,5094219,4,51771,away,13613,0,1,played,11,0,False,26,0,0,0,0,0,0,,64,,0,0
 688309,Wellissol,2026-10-16T13:00:00+00:00,2026,UAE2,2,False,5082503,7,51771,home,26713,1,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
@@ -31,7 +31,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1219485,Andrey,2026-08-31T09:00:00+00:00,2026,UA2P,7,False,5021280,4,62552,away,143078,0,3,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1219485,Andrey,2026-08-30T12:30:00+00:00,2026,UKR1,1,False,4974424,4,26459,away,63007,1,0,in squad,53,,False,0,0,0,0,0,0,0,,,,0,0
 1219485,Andrey,2026-08-22T12:00:00+00:00,2026,UKRP,8,False,5022357,1,26459,away,49364,4,1,in squad,53,,False,0,0,0,0,0,0,0,,,,0,0
-1219485,Andrey,2026-08-15T09:00:00+00:00,2026,UA2P,7,False,5010593,3,62552,away,143082,0,0,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1077427,Tsotne Berelidze,2026-11-06T17:00:00+00:00,2026,TS2,2,False,4905424,14,6377,home,892,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1077427,Tsotne Berelidze,2026-10-30T16:00:00+00:00,2026,TS2,2,False,4905417,13,6377,away,13299,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1077427,Tsotne Berelidze,2026-10-23T15:30:00+00:00,2026,TS2,2,False,4905408,12,6377,home,13726,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -43,7 +42,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1077427,Tsotne Berelidze,2026-08-29T16:00:00+00:00,2026,TS2,2,False,4905357,6,6377,away,28596,1,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1077427,Tsotne Berelidze,2026-08-25T15:00:00+00:00,2026,TSP,8,False,5020394,3,6377,away,8541,3,4,played,17,7,False,59,0,0,0,0,0,0,,,59,0,0
 1077427,Tsotne Berelidze,2026-08-21T16:00:00+00:00,2026,TS2,2,False,4905354,5,6377,home,450,3,1,played,17,7,False,20,0,0,0,0,0,0,,70,,0,0
-1077427,Tsotne Berelidze,2026-08-17T16:00:00+00:00,2026,TS2,2,False,4905342,4,6377,away,804,0,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 461941,Manuel Pami,2026-11-06T19:00:00+00:00,2026,PT3A,3,False,4944986,9,74155,home,7056,2,1,played,6,6,False,11,0,0,0,0,0,0,90,79,,0,0
 461941,Manuel Pami,2026-10-31T15:00:00+00:00,2026,PT3A,3,False,4944976,8,74155,away,5227,1,3,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 461941,Manuel Pami,2026-10-25T20:00:00+00:00,2026,PT3A,3,False,4944965,7,74155,home,41539,2,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -74,6 +72,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1142097,Alexandre Kutateladze,2026-09-20T16:00:00+00:00,2026,ZYP1,1,False,4970284,4,42109,away,10586,0,0,played,23,0,False,7,0,0,0,0,0,0,,83,,0,0
 1142097,Alexandre Kutateladze,2026-09-12T16:00:00+00:00,2026,ZYP1,1,False,4970279,3,42109,home,16024,1,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1319831,Mate Gagvishvili,2026-07-30T17:00:00+00:00,2026,ECLQ,10,False,4945489,4,663,away,602,2,7,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1435152,Levan Khozrevanidze,2026-11-14T12:00:00+00:00,2026,SK2,2,False,5134883,17,34775,away,61909,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1435152,Levan Khozrevanidze,2026-11-07T10:00:00+00:00,2026,SK2,2,False,5119307,16,34775,away,46955,5,3,in squad,88,,False,0,0,0,0,0,0,0,,,,0,0
 1435152,Levan Khozrevanidze,2026-10-31T14:00:00+00:00,2026,SK2,2,False,5101485,15,34775,away,12005,0,0,in squad,88,,False,0,0,0,0,0,0,0,,,,0,0
 1435152,Levan Khozrevanidze,2026-10-24T12:30:00+00:00,2026,SK2,2,False,5087204,14,34775,home,38269,2,1,in squad,88,,False,0,0,0,0,0,0,0,,,,0,0
@@ -87,6 +86,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1435152,Levan Khozrevanidze,2026-09-08T14:30:00+00:00,2026,SKC,8,False,5051014,2,34775,away,20615,2,1,played,88,12,False,24,0,0,0,0,0,0,,,24,0,0
 1435152,Levan Khozrevanidze,2026-09-05T14:00:00+00:00,2026,SK2,2,False,5041898,7,34775,away,64255,2,1,in squad,88,,False,0,0,0,0,0,0,0,,,,0,0
 1435152,Levan Khozrevanidze,2026-08-29T14:30:00+00:00,2026,SK2,2,False,5037525,6,34775,home,20634,2,1,in squad,88,,False,0,0,0,0,0,0,0,,,,0,0
+464494,Franklin Nyenetue,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074863,5,9172,away,4311,2,4,played,17,8,False,64,1,0,1,1,0,0,,,64,0,0
 464494,Franklin Nyenetue,2026-10-28T17:00:00+00:00,2026,NOPO,8,False,5074314,3,13519,home,3837,2,5,played,17,12,False,73,0,1,0,0,0,0,,,73,0,0
 464494,Franklin Nyenetue,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047024,4,9172,home,3674,0,1,played,17,12,False,83,0,0,0,0,0,0,,,83,0,0
 464494,Franklin Nyenetue,2026-09-25T16:00:00+00:00,2026,AFCQ,19,True,5046894,3,9172,away,3855,1,3,played,17,12,False,75,0,0,0,0,0,0,,,75,0,0
@@ -131,6 +131,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1077440,Aleksandre Amisulashvili,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1077440,Aleksandre Amisulashvili,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013755,7,41133,away,2300,0,4,played,25,3,False,80,0,0,0,0,0,0,,,80,0,0
 1077440,Aleksandre Amisulashvili,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+351072,Vahid Selimovic,2026-11-16T17:00:00+00:00,2026,UNLC,11,True,4825218,6,3580,away,3574,0,3,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+351072,Vahid Selimovic,2026-11-13T19:45:00+00:00,2026,UNLC,11,True,4825220,5,3580,home,6133,0,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 351072,Vahid Selimovic,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037521,3,41133,away,190,1,2,played,4,3,False,90,0,0,0,0,0,0,76,,,0,0
 351072,Vahid Selimovic,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,41133,home,2719,1,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 351072,Vahid Selimovic,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -140,6 +142,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 351072,Vahid Selimovic,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824878,1,3580,away,3394,2,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
 351072,Vahid Selimovic,2026-08-27T16:00:00+00:00,2026,ELQ,10,False,5013797,8,41133,home,2300,1,2,played,4,3,False,90,0,0,2,0,2,0,,,,0,0
 351072,Vahid Selimovic,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013755,7,41133,away,2300,0,4,played,4,3,False,90,0,0,0,0,0,0,61,,,0,0
+819419,Armel Zohouri,2026-11-14T13:00:00+00:00,2026,FRC,8,False,5102523,3,1421,away,2975,1,0,played,4,5,False,90,0,0,0,0,0,0,,,,0,0
 819419,Armel Zohouri,2026-11-06T19:00:00+00:00,2026,FR2,2,False,4895700,12,1421,away,1290,2,3,played,63,0,False,26,0,0,0,0,0,0,,64,,0,0
 819419,Armel Zohouri,2026-11-02T19:45:00+00:00,2026,FR2,2,False,4895693,11,1421,home,750,2,0,played,63,0,False,2,0,0,0,0,0,0,,88,,0,0
 819419,Armel Zohouri,2026-10-26T19:45:00+00:00,2026,FR2,2,False,4895678,10,1421,away,7042,1,1,in squad,63,,False,0,0,0,0,0,0,0,,,,0,0
@@ -150,7 +153,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 819419,Armel Zohouri,2026-09-05T12:00:00+00:00,2026,FR2,2,False,4895536,5,1421,home,855,2,2,in squad,63,,False,0,0,0,0,0,0,0,,,,0,0
 819419,Armel Zohouri,2026-08-29T12:00:00+00:00,2026,FR2,2,False,4895527,4,1421,away,1154,4,1,absent,,,False,0,0,0,0,0,0,0,,,,0,3
 819419,Armel Zohouri,2026-08-24T18:45:00+00:00,2026,FR2,2,False,4895516,3,1421,home,30204,3,1,absent,,,False,0,0,0,0,0,0,0,,,,0,3
-819419,Armel Zohouri,2026-08-14T18:45:00+00:00,2026,FR2,2,False,4895508,2,1421,home,9202,3,3,played,63,5,False,74,0,0,0,0,0,0,,,,0,0
 502665,Jemali-Giorgi Jinjolava,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037521,3,41133,away,190,1,2,played,5,4,True,90,0,0,0,0,0,0,,,,0,0
 502665,Jemali-Giorgi Jinjolava,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,41133,home,2719,1,1,played,5,4,True,90,1,0,3,1,2,0,60,,,0,0
 502665,Jemali-Giorgi Jinjolava,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,played,5,4,True,90,0,0,2,1,1,0,,,,0,0
@@ -173,6 +175,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 319447,Giorgi Kobuladze,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,played,40,5,False,6,0,0,0,0,0,0,,84,,0,0
 319447,Giorgi Kobuladze,2026-08-27T16:00:00+00:00,2026,ELQ,10,False,5013797,8,41133,home,2300,1,2,played,40,5,False,71,0,0,1,0,0,1,,,71,0,0
 319447,Giorgi Kobuladze,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013755,7,41133,away,2300,0,4,played,40,5,False,80,0,0,0,0,0,0,49,,80,0,0
+1392025,Nikoloz Bochorishvili,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1392025,Nikoloz Bochorishvili,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037521,3,41133,away,190,1,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1392025,Nikoloz Bochorishvili,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,41133,home,2719,1,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1392025,Nikoloz Bochorishvili,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
@@ -241,14 +244,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 264137,Giorgi Beridze,2026-09-06T15:45:00+00:00,2026,UNG1,1,False,4975545,7,708,away,279,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 264137,Giorgi Beridze,2026-08-29T17:30:00+00:00,2026,UNG1,1,False,4944295,6,708,home,5378,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 264137,Giorgi Beridze,2026-08-21T15:30:00+00:00,2026,UNG1,1,False,4944287,5,708,away,12163,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-264137,Giorgi Beridze,2026-08-15T14:30:00+00:00,2026,UNG1,1,False,4944282,4,708,home,634,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1401121,Saba Avdoevi,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,5,7,False,90,0,0,0,0,0,0,,,,0,0
 1401121,Saba Avdoevi,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,5,6,False,29,0,0,0,0,0,0,,61,,0,0
 1401121,Saba Avdoevi,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,18,0,False,63,0,0,0,0,0,0,,,63,0,0
 1401121,Saba Avdoevi,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 1401121,Saba Avdoevi,2026-08-27T16:00:00+00:00,2026,ELQ,10,False,5013797,8,41133,home,2300,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1401121,Saba Avdoevi,2026-08-20T16:00:00+00:00,2026,ELQ,10,False,5013755,7,41133,away,2300,0,4,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
 1401121,Saba Avdoevi,2026-08-11T16:00:00+00:00,2026,ELQ,10,False,4973704,6,41133,home,3461,2,1,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
-1401121,Saba Avdoevi,2026-08-04T19:00:00+00:00,2026,ELQ,10,False,4973691,5,41133,away,3461,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 945467,Amiran Dzagania,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037521,3,41133,away,190,1,2,played,9,14,False,90,1,0,1,1,0,0,,,,0,0
 945467,Amiran Dzagania,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,41133,home,2719,1,1,played,9,14,False,80,0,0,0,0,0,0,,,80,0,0
 945467,Amiran Dzagania,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,played,9,14,False,79,0,0,0,0,0,0,,,79,0,0
@@ -284,7 +286,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 733022,Tornike Akhvlediani,2026-09-04T16:15:00+00:00,2026,AZ1,1,False,5038070,4,8956,away,7090,4,1,played,9,14,False,62,1,0,0,0,0,0,,,62,0,0
 733022,Tornike Akhvlediani,2026-08-29T14:00:00+00:00,2026,AZ1,1,False,5038077,3,8956,away,22010,0,0,played,9,0,False,45,0,0,0,0,0,0,,46,,0,0
 733022,Tornike Akhvlediani,2026-08-23T14:30:00+00:00,2026,AZ1,1,False,4974746,2,8956,away,9526,0,0,played,9,14,False,62,0,0,0,0,0,0,,,62,0,0
-733022,Tornike Akhvlediani,2026-08-17T15:30:00+00:00,2026,AZ1,1,False,4974736,1,8956,away,10625,1,3,played,9,14,False,32,0,0,0,0,0,0,,58,,0,0
 566671,Lado Chikhradze,2026-11-05T20:00:00+00:00,2026,UCOL,10,False,5037521,3,41133,away,190,1,2,played,29,0,False,1,0,0,0,0,0,0,,89,,0,0
 566671,Lado Chikhradze,2026-10-22T16:45:00+00:00,2026,UCOL,10,False,5037616,2,41133,home,2719,1,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 566671,Lado Chikhradze,2026-10-15T19:00:00+00:00,2026,UCOL,10,False,5037568,1,41133,away,475,0,2,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
@@ -316,6 +317,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1193794,Saba Kharebashvili,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1193794,Saba Kharebashvili,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1319760,Mate Ghaghvishvili,2026-07-30T17:00:00+00:00,2026,ECLQ,10,False,4945489,4,663,away,602,2,7,in squad,40,,False,0,0,0,0,0,0,0,,,,0,0
+1248065,Giorgi Lomidze,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,in squad,3,,False,0,0,0,0,0,0,0,,,,0,0
 1248065,Giorgi Lomidze,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,3,3,True,90,0,0,0,0,0,0,,,,0,0
 1248065,Giorgi Lomidze,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,4,3,True,90,0,0,0,0,0,0,58,,,0,0
 1248065,Giorgi Lomidze,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,4,3,True,90,0,0,0,0,0,0,,,,0,0
@@ -333,9 +335,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1460268,Albert Gomez,2026-09-04T17:00:00+00:00,2026,TR1,1,False,4933664,4,6890,home,141,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1460268,Albert Gomez,2026-08-30T18:30:00+00:00,2026,TR1,1,False,4933655,3,6890,home,10484,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1460268,Albert Gomez,2026-08-23T16:00:00+00:00,2026,TR1,1,False,4933644,2,6890,away,449,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1460268,Albert Gomez,2026-08-16T16:00:00+00:00,2026,TR1,1,False,4932840,1,6890,home,120,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1367128,Abdoulaye Yoro,2026-11-07T15:00:00+00:00,2026,SC1,1,False,4910439,13,1519,home,987,1,1,played,26,0,False,25,0,0,1,1,0,0,,65,,0,0
-1367128,Abdoulaye Yoro,2026-10-31T15:00:00+00:00,2026,SC1,1,False,4910443,12,1519,home,43,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1367128,Abdoulaye Yoro,2026-10-28T19:45:00+00:00,2026,SC1,1,False,4910432,11,1519,away,371,2,2,played,26,0,False,17,0,0,1,1,0,0,,73,,0,0
 1367128,Abdoulaye Yoro,2026-10-24T14:00:00+00:00,2026,SC1,1,False,4910425,10,1519,home,370,3,2,played,26,0,False,16,0,0,0,0,0,0,,74,,0,0
 1367128,Abdoulaye Yoro,2026-10-17T14:00:00+00:00,2026,SC1,1,False,4910361,9,1519,away,2578,1,1,played,26,0,False,45,0,0,0,0,0,0,,46,,0,0
@@ -345,7 +345,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1367128,Abdoulaye Yoro,2026-09-02T18:45:00+00:00,2026,SC1,1,False,4910379,5,1519,away,987,0,3,played,26,7,False,20,0,0,0,0,0,0,,,20,0,0
 1367128,Abdoulaye Yoro,2026-08-29T14:00:00+00:00,2026,SC1,1,False,4910342,4,1519,away,2553,4,0,played,26,7,False,63,0,0,1,1,0,0,,,63,0,0
 1367128,Abdoulaye Yoro,2026-08-22T16:45:00+00:00,2026,SC1,1,False,4910326,3,1519,home,511,0,2,played,26,7,False,68,0,0,2,1,0,1,59,,68,0,0
-1367128,Abdoulaye Yoro,2026-08-15T16:45:00+00:00,2026,SCP,14,False,4985912,6,1519,home,371,0,4,played,26,0,False,27,0,0,2,0,1,1,67,63,,0,0
+1386532,Luka Tsikolia,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 1386532,Luka Tsikolia,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,6,6,False,61,0,0,0,0,0,0,,,61,0,0
 1386532,Luka Tsikolia,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
 1386532,Luka Tsikolia,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
@@ -353,6 +353,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1386532,Luka Tsikolia,2026-10-10T15:00:00+00:00,2026,19YL,16,False,5047600,2,55968,home,112376,3,4,played,8,7,False,45,0,0,0,0,0,0,,,46,0,0
 1386532,Luka Tsikolia,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,6,0,False,27,0,0,0,0,0,0,,63,,0,0
 1386532,Luka Tsikolia,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
+1330184,Koba Kakashvili,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,10,10,False,25,0,0,0,0,0,0,,65,,0,0
 1330184,Koba Kakashvili,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,10,7,False,61,0,0,0,0,0,0,,,61,0,0
 1330184,Koba Kakashvili,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
 1330184,Koba Kakashvili,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
@@ -364,7 +365,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1193796,Luka Tsulaia,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 825834,Rodrigo Ramos,2026-11-08T15:00:00+00:00,2026,PT3A,3,False,4944985,9,5227,away,41539,1,0,played,7,0,False,11,0,0,0,0,0,0,,79,,0,0
 825834,Rodrigo Ramos,2026-10-31T15:00:00+00:00,2026,PT3A,3,False,4944976,8,5227,home,74155,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1488390,Abdoulie Njie,2026-11-07T12:00:00+00:00,2026,T191,7,False,5009240,11,73900,away,73899,1,0,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
+1488390,Abdoulie Njie,2026-11-07T12:00:00+00:00,2026,T191,7,False,5009240,11,73900,away,73899,1,0,played,0,0,False,79,1,0,0,0,0,0,,,79,0,0
 1488390,Abdoulie Njie,2026-11-01T10:00:00+00:00,2026,T191,7,False,5009247,10,73900,home,83792,2,1,played,0,0,False,80,0,0,0,0,0,0,,,80,0,0
 1488390,Abdoulie Njie,2026-10-26T11:00:00+00:00,2026,T191,7,False,5009279,9,73900,away,41852,1,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1488390,Abdoulie Njie,2026-10-18T12:00:00+00:00,2026,T191,7,False,5009283,8,73900,home,74653,1,0,played,0,0,False,90,1,0,0,0,0,0,59,,90,0,0
@@ -374,7 +375,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1488390,Abdoulie Njie,2026-09-04T13:00:00+00:00,2026,T191,7,False,5009265,4,73900,home,41591,3,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1488390,Abdoulie Njie,2026-08-30T14:00:00+00:00,2026,T191,7,False,5009229,3,73900,home,73905,3,0,played,10,0,False,88,1,0,0,0,0,0,,,88,0,0
 1488390,Abdoulie Njie,2026-08-23T11:00:00+00:00,2026,T191,7,False,5009218,2,73900,away,41798,0,5,absent,,,False,0,0,0,0,0,0,0,,,,0,2
-1488390,Abdoulie Njie,2026-08-16T13:00:00+00:00,2026,T191,7,False,5009215,1,73900,home,76116,2,2,played,10,0,False,86,0,0,0,0,0,0,0,,,0,0
+1330102,Tornike Kvaratskhelia,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,11,11,False,38,0,0,0,0,0,0,,52,,0,0
 1330102,Tornike Kvaratskhelia,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,11,11,False,69,0,0,0,0,0,0,,,69,0,0
 1330102,Tornike Kvaratskhelia,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,11,11,False,45,0,0,0,0,0,0,,,46,0,0
 1330102,Tornike Kvaratskhelia,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,11,11,False,69,2,1,0,0,0,0,,,69,0,0
@@ -382,6 +383,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1330102,Tornike Kvaratskhelia,2026-10-10T15:00:00+00:00,2026,19YL,16,False,5047600,2,55968,home,112376,3,4,played,11,11,False,62,0,0,0,0,0,0,,,62,0,0
 1193799,Reziko Danelia,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1193799,Reziko Danelia,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1248067,Shota Diakonidze,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1248067,Shota Diakonidze,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,17,12,False,90,0,0,0,0,0,0,,,,0,0
 1248067,Shota Diakonidze,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,17,14,False,21,0,0,0,0,0,0,,69,,0,0
 1248067,Shota Diakonidze,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,20,0,False,45,0,0,0,0,0,0,,46,,0,0
 1248067,Shota Diakonidze,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,20,0,False,21,0,0,0,0,0,0,,69,,0,0
@@ -389,20 +392,24 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1248067,Shota Diakonidze,2026-10-10T15:00:00+00:00,2026,19YL,16,False,5047600,2,55968,home,112376,3,4,played,2,5,False,69,1,0,0,0,0,0,32,,69,0,0
 1248067,Shota Diakonidze,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,17,0,False,56,0,0,0,0,0,0,47,,56,0,0
 1248067,Shota Diakonidze,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
-1248067,Shota Diakonidze,2026-06-09T15:00:00+00:00,2026,U19Q,20,True,4825285,3,25740,home,25785,2,3,played,7,0,False,34,0,0,0,0,0,0,,56,,0,0
-1248067,Shota Diakonidze,2026-06-03T15:00:00+00:00,2026,U19Q,20,True,4825279,1,25740,home,26101,1,1,played,7,0,False,1,0,0,0,0,0,0,,90,,0,0
 1382068,Rati Aleksidze,2026-11-04T13:00:00+00:00,2026,19YL,16,False,5047697,6,55968,away,41586,5,7,played,9,14,False,57,0,0,0,0,0,0,19,,57,0,0
 1382068,Rati Aleksidze,2026-10-28T15:00:00+00:00,2026,19YL,16,False,5047660,5,55968,home,41586,3,0,played,9,14,False,63,0,0,0,0,0,0,,,63,0,0
 1382068,Rati Aleksidze,2026-10-14T12:00:00+00:00,2026,19YL,16,False,5047610,3,55968,neutral,112376,6,3,played,9,14,False,80,1,0,0,0,0,0,,,80,0,0
 1382068,Rati Aleksidze,2026-10-10T15:00:00+00:00,2026,19YL,16,False,5047600,2,55968,home,112376,3,4,played,19,14,False,45,0,0,0,0,0,0,,46,,0,0
+501532,Nodari Kalichava,2026-11-14T17:00:00+00:00,2026,UNLB,11,True,4825156,5,3669,home,3468,0,2,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+550466,Ivan Turitsov,2026-11-16T17:00:00+00:00,2026,UNLC,11,True,4825219,6,3394,away,6133,1,2,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+550466,Ivan Turitsov,2026-11-13T19:45:00+00:00,2026,UNLC,11,True,4825217,5,3394,home,3574,0,5,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 550466,Ivan Turitsov,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825183,4,3394,away,3580,2,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 550466,Ivan Turitsov,2026-10-03T16:00:00+00:00,2026,UNLC,11,True,4825181,3,3394,away,3574,0,3,played,19,5,False,90,0,0,0,0,0,0,,,,0,0
 550466,Ivan Turitsov,2026-09-29T18:45:00+00:00,2026,UNLC,11,True,4824880,2,3394,home,6133,0,0,played,19,5,False,73,0,0,1,0,0,1,,,73,0,0
 550466,Ivan Turitsov,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824878,1,3394,home,3580,1,2,played,19,5,False,90,0,0,0,0,0,0,,,,0,0
+329055,Enes Mahmutovic,2026-11-13T19:45:00+00:00,2026,UNLC,11,True,4825220,5,3580,home,6133,0,1,played,3,0,False,32,0,0,0,0,0,0,,58,,0,0
 329055,Enes Mahmutovic,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825183,4,3580,home,3394,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 329055,Enes Mahmutovic,2026-10-03T16:00:00+00:00,2026,UNLC,11,True,4825182,3,3580,away,6133,0,1,played,3,3,False,83,0,0,0,0,0,0,29,,83,0,0
 329055,Enes Mahmutovic,2026-09-29T18:45:00+00:00,2026,UNLC,11,True,4824881,2,3580,home,3574,0,3,played,3,3,False,90,0,0,0,0,0,0,90,,,0,0
 329055,Enes Mahmutovic,2026-09-26T16:00:00+00:00,2026,UNLC,11,True,4824878,1,3580,away,3394,2,1,played,3,3,False,90,0,0,1,1,0,0,,,,0,0
+341530,Dirk Carlson,2026-11-16T17:00:00+00:00,2026,UNLC,11,True,4825218,6,3580,away,3574,0,3,played,13,3,False,90,0,0,0,0,0,0,,,,0,0
+341530,Dirk Carlson,2026-11-13T19:45:00+00:00,2026,UNLC,11,True,4825220,5,3580,home,6133,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 341530,Dirk Carlson,2026-11-04T12:00:00+00:00,2026,FS,11,True,5052784,1,47912,away,23282,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 341530,Dirk Carlson,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825183,4,3580,home,3394,0,2,played,13,3,False,90,0,0,0,0,0,0,81,,,0,0
 341530,Dirk Carlson,2026-10-03T16:00:00+00:00,2026,UNLC,11,True,4825182,3,3580,away,6133,0,1,played,13,4,False,90,0,0,0,0,0,0,,,,0,0
@@ -413,10 +420,12 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 114728,Mamuka Kobakhidze,2026-09-30T09:00:00+00:00,2026,FS,11,True,5047748,45,25787,away,23136,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 114728,Mamuka Kobakhidze,2026-09-27T13:00:00+00:00,2026,FS,11,True,5052820,2,25787,away,26035,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 114728,Mamuka Kobakhidze,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,25787,away,23132,6,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1330183,Alika Getiashvili,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,played,4,0,False,87,0,0,0,0,0,0,,,87,0,0
 400715,Sandro Altunashvili,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825140,4,3669,away,5674,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 400715,Sandro Altunashvili,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825143,3,3669,away,3468,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 400715,Sandro Altunashvili,2026-09-28T16:00:00+00:00,2026,UNLB,11,True,4824847,2,3669,home,3699,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 400715,Sandro Altunashvili,2026-09-25T16:00:00+00:00,2026,UNLB,11,True,4824845,1,3669,home,5674,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+351616,Dmitri Mandricenco,2026-11-13T19:45:00+00:00,2026,UNLC,11,True,4825213,5,6090,home,9110,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 351616,Dmitri Mandricenco,2026-10-06T18:45:00+00:00,2026,UNLC,11,True,4825177,4,6090,home,3503,0,4,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 351616,Dmitri Mandricenco,2026-10-02T14:00:00+00:00,2026,UNLC,11,True,4825179,3,6090,away,9110,2,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 351616,Dmitri Mandricenco,2026-09-29T18:45:00+00:00,2026,UNLC,11,True,4824874,2,6090,home,9173,1,1,played,21,14,False,45,0,0,1,0,0,1,,,46,0,0
@@ -433,11 +442,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 462248,Jorginho,2026-10-15T16:45:00+00:00,2026,UCOL,10,False,5037555,1,6251,home,449,2,4,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 462248,Jorginho,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,6251,home,3258,1,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 462248,Jorginho,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,6251,away,3258,1,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
+1330172,Luka Kuprava,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,2,5,False,79,0,0,0,0,0,0,,,79,0,0
 1330172,Luka Kuprava,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
 1330172,Luka Kuprava,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,5,0,False,34,0,0,0,0,0,0,,56,,0,0
 1330172,Luka Kuprava,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,played,2,0,False,90,0,0,0,0,0,0,,,,0,0
 1138810,Amiran Tkeshelashvili,2026-07-16T16:00:00+00:00,2026,ECLQ,10,False,4897273,2,253,home,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1138810,Amiran Tkeshelashvili,2026-07-08T16:00:00+00:00,2026,ECLQ,10,False,4897247,1,253,away,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+658815,Nodar Lominadze,2026-11-14T17:00:00+00:00,2026,UNLB,11,True,4825156,5,3669,home,3468,0,2,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 658815,Nodar Lominadze,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825140,4,3669,away,5674,0,0,played,8,7,False,25,0,0,0,0,0,0,83,65,,0,0
 658815,Nodar Lominadze,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825143,3,3669,away,3468,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 658815,Nodar Lominadze,2026-09-28T16:00:00+00:00,2026,UNLB,11,True,4824847,2,3669,home,3699,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -449,6 +460,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1521781,Tornike Antia,2026-07-08T16:00:00+00:00,2026,ECLQ,10,False,4897247,1,253,away,46710,0,3,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1558419,Temur Tsikoridze,2026-07-16T16:00:00+00:00,2026,ECLQ,10,False,4897273,2,253,home,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1558419,Temur Tsikoridze,2026-07-08T16:00:00+00:00,2026,ECLQ,10,False,4897247,1,253,away,46710,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1535697,Giorgi Gergedava,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,played,8,0,False,63,0,0,0,0,0,0,,,63,0,0
 900488,Aleko Basiladze,2026-11-07T14:00:00+00:00,2026,TS1,1,False,4902068,14,697,home,715,1,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 900488,Aleko Basiladze,2026-10-31T14:00:00+00:00,2026,TS1,1,False,4902061,13,697,away,1496,2,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 900488,Aleko Basiladze,2026-10-27T16:00:00+00:00,2026,TSP,8,False,5076429,5,697,home,814,1,0,played,6,11,False,66,0,0,0,0,0,0,,,66,0,0
@@ -463,9 +475,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 900488,Aleko Basiladze,2026-08-30T13:00:00+00:00,2026,TS1,1,False,4901997,6,697,home,1897,2,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 900488,Aleko Basiladze,2026-08-26T15:30:00+00:00,2026,TSP,8,False,5020392,3,697,away,64764,2,0,played,6,4,False,90,0,0,0,0,0,0,,,,0,0
 900488,Aleko Basiladze,2026-08-22T15:00:00+00:00,2026,TS1,1,False,4901991,5,697,away,5545,1,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
-900488,Aleko Basiladze,2026-08-16T18:00:00+00:00,2026,TS1,1,False,4901978,4,697,home,62,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 260316,Komnen Andric,2026-09-28T14:00:00+00:00,2026,FS,11,True,5049993,2,21137,home,21668,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 260316,Komnen Andric,2026-09-25T14:00:00+00:00,2026,FS,11,True,5049992,1,21137,home,21668,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1601772,Nikoloz Khatoiani,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,played,7,0,False,18,0,0,0,0,0,0,,72,,0,0
 411612,Davit Kereselidze,2026-10-05T18:45:00+00:00,2026,UNLB,11,True,4825140,4,3669,away,5674,0,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 411612,Davit Kereselidze,2026-10-02T18:45:00+00:00,2026,UNLB,11,True,4825143,3,3669,away,3468,0,1,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 411612,Davit Kereselidze,2026-09-28T16:00:00+00:00,2026,UNLB,11,True,4824847,2,3669,home,3699,0,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
@@ -484,10 +496,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1363741,Dunga,2026-07-23T16:00:00+00:00,2026,ECLQ,10,False,4897969,3,32017,home,429,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1363741,Dunga,2026-07-16T19:00:00+00:00,2026,ECLQ,10,False,4897259,2,32017,away,10613,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1363741,Dunga,2026-07-09T16:00:00+00:00,2026,ECLQ,10,False,4897233,1,32017,home,10613,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+907917,Kristaps Grabovskis,2026-11-15T14:00:00+00:00,2026,UNLC,11,True,4825212,6,3555,home,6219,0,0,played,16,12,False,1,0,0,0,0,0,0,,90,,0,0
+907917,Kristaps Grabovskis,2026-11-12T19:45:00+00:00,2026,UNLC,11,True,4825211,5,3555,away,11953,1,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 907917,Kristaps Grabovskis,2026-10-05T16:00:00+00:00,2026,UNLC,11,True,4825172,4,3555,away,3668,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 907917,Kristaps Grabovskis,2026-10-02T18:45:00+00:00,2026,UNLC,11,True,4825175,3,3555,home,11953,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 907917,Kristaps Grabovskis,2026-09-28T16:00:00+00:00,2026,UNLC,11,True,4824873,2,3555,home,3668,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 907917,Kristaps Grabovskis,2026-09-25T16:00:00+00:00,2026,UNLC,11,True,4824870,1,3555,away,6219,0,2,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+1242649,Georgiy Kobakhidze,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,16,7,False,65,0,0,0,0,0,0,,,65,0,0
 1242649,Georgiy Kobakhidze,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,16,7,False,29,0,0,0,0,0,0,,61,,0,0
 1242649,Georgiy Kobakhidze,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,16,0,True,63,0,0,0,0,0,0,,,63,0,0
 1242649,Georgiy Kobakhidze,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
@@ -502,7 +517,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 572425,Tray Fuller,2026-09-05T16:30:00+00:00,2026,AZ1,1,False,5038066,4,37246,away,8031,1,4,played,7,13,False,45,0,0,0,0,0,0,,46,,0,0
 572425,Tray Fuller,2026-08-29T16:15:00+00:00,2026,AZ1,1,False,5038082,3,37246,home,103512,0,1,played,7,14,False,13,0,0,0,0,0,0,,77,,0,0
 572425,Tray Fuller,2026-08-22T14:30:00+00:00,2026,AZ1,1,False,4974741,2,37246,away,22010,1,0,played,7,13,False,27,0,0,0,0,0,0,,63,,0,0
-572425,Tray Fuller,2026-08-16T17:00:00+00:00,2026,AZ1,1,False,4974740,1,37246,away,46710,0,2,played,7,14,False,66,0,0,0,0,0,0,,,66,0,0
 1241217,Lekso Otinashvili,2026-09-30T09:00:00+00:00,2026,FS,11,True,5047748,45,25787,away,23136,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1241217,Lekso Otinashvili,2026-09-27T13:00:00+00:00,2026,FS,11,True,5052820,2,25787,away,26035,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1241217,Lekso Otinashvili,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,25787,away,23132,6,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -512,6 +526,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1598889,Guri Kakabadze,2026-09-30T09:00:00+00:00,2026,FS,11,True,5047748,45,25787,away,23136,1,3,played,9,0,False,90,0,1,0,0,0,0,,,,0,0
 1598889,Guri Kakabadze,2026-09-27T13:00:00+00:00,2026,FS,11,True,5052820,2,25787,away,26035,2,3,played,9,0,False,30,0,0,0,0,0,0,90,60,,0,0
 1598889,Guri Kakabadze,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,25787,away,23132,6,5,played,9,0,False,45,0,0,0,0,0,0,,46,,0,0
+1193793,Mate Shatirishvili,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1193793,Mate Shatirishvili,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,played,13,3,True,90,0,0,0,0,0,0,88,,,0,0
 1193793,Mate Shatirishvili,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,13,3,False,90,1,0,0,0,0,0,,,,0,0
 1193793,Mate Shatirishvili,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 1193793,Mate Shatirishvili,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,played,13,0,False,90,1,0,0,0,0,0,24,,,0,0
@@ -523,9 +539,12 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1241218,Otar Chochia,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1241218,Otar Chochia,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1241218,Otar Chochia,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1561143,Luka Gurchiani,2026-11-14T10:00:00+00:00,2026,U19Q,20,True,5076103,5,25740,neutral,21705,0,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1561143,Luka Gurchiani,2026-11-11T10:00:00+00:00,2026,U19Q,20,True,5076066,4,25740,neutral,20902,2,5,played,19,11,False,21,0,0,0,0,0,0,,69,,0,0
 1561143,Luka Gurchiani,2026-10-05T15:00:00+00:00,2026,FS,11,True,5063963,2,25740,home,28426,1,1,played,25,0,False,56,0,0,0,0,0,0,,,56,0,0
 1561143,Luka Gurchiani,2026-10-02T14:00:00+00:00,2026,FS,11,True,5063962,1,25740,home,28426,2,2,in squad,25,,False,0,0,0,0,0,0,0,,,,0,0
+1330091,Giorgi Jamarauli,2026-11-15T13:00:00+00:00,2026,FS,11,True,5137568,43,48174,home,46451,1,2,played,10,0,False,63,0,0,0,0,0,0,,,63,0,0
+809906,Dimitri Ghurtskaia,2026-11-15T11:30:00+00:00,2026,RU2,2,False,5093849,19,14590,away,28095,3,3,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 809906,Dimitri Ghurtskaia,2026-11-08T17:00:00+00:00,2026,RU2,2,False,5084174,17,14590,home,49702,0,4,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 809906,Dimitri Ghurtskaia,2026-11-03T16:30:00+00:00,2026,RUP,8,False,5081869,6,14590,home,70777,2,3,played,11,11,False,45,0,0,0,0,0,0,,,46,0,0
 809906,Dimitri Ghurtskaia,2026-10-30T15:00:00+00:00,2026,RU2,2,False,5076168,16,14590,away,58065,1,1,played,11,11,False,66,1,0,0,0,0,0,,,66,0,0
@@ -542,7 +561,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 809906,Dimitri Ghurtskaia,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 809906,Dimitri Ghurtskaia,2026-08-21T16:30:00+00:00,2026,RU2,2,False,5025090,8,14590,away,1186,0,3,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 809906,Dimitri Ghurtskaia,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-809906,Dimitri Ghurtskaia,2026-08-17T16:30:00+00:00,2026,RU2,2,False,5016067,6,14590,home,28095,1,1,in squad,11,,False,0,0,0,0,0,0,0,,,,0,0
 931184,Giorgi Pirtakhia,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 931184,Giorgi Pirtakhia,2026-08-20T11:30:00+00:00,2026,FS,11,True,5027637,45,40458,away,28161,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 809897,Saba Gegiadze,2026-08-22T13:00:00+00:00,2026,FS,11,True,5027638,45,40458,away,28161,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

@@ -131,7 +131,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 941543,Logi Mar Hjaltested,2019,FS,70766,True,2,2,0,67,0,0,0,0,0
 1130618,Davíd Helgi Aronsson,2026,DKP,369,False,3,3,0,300,0,0,0,0,1
 1130618,Davíd Helgi Aronsson,2026,DK1,369,False,14,10,0,730,0,0,0,0,1
-1130618,Davíd Helgi Aronsson,2025,U21Q,22414,True,3,3,0,269,1,0,0,0,1
+1130618,Davíd Helgi Aronsson,2025,U21Q,22414,True,4,4,0,359,1,0,0,0,1
 1130618,Davíd Helgi Aronsson,2025,U19Q,25785,True,3,3,0,270,0,0,0,0,0
 1130618,Davíd Helgi Aronsson,2025,ISL,8037,False,1,0,0,0,0,0,0,0,0
 1130618,Davíd Helgi Aronsson,2025,ISL,5849,False,4,0,0,0,0,0,0,0,0
@@ -168,7 +168,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 981714,Viktor Vidarsson,2023,19YL,50632,False,2,2,0,31,0,0,0,0,0
 981714,Viktor Vidarsson,2022,FS,23282,True,15,11,0,552,0,0,0,0,1
 981714,Viktor Vidarsson,2021,FS,34680,True,7,7,0,307,1,1,0,0,0
-1536037,Bjarki Már Ásmundsson,2025,IS1,5849,False,14,0,0,0,0,0,0,0,0
 652274,Arnór Gauti Jónsson,2026,KRC,2362,False,2,0,0,0,0,0,0,0,0
 652274,Arnór Gauti Jónsson,2026,KR1,2362,False,13,5,0,110,0,0,1,0,0
 652274,Arnór Gauti Jónsson,2025,UCOL,3737,False,6,5,0,342,0,0,3,1,1
@@ -210,6 +209,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 652274,Arnór Gauti Jónsson,2018,IS2,21881,False,22,19,0,1490,1,0,0,0,3
 652274,Arnór Gauti Jónsson,2018,FS,26034,True,1,1,0,80,0,0,0,0,0
 652274,Arnór Gauti Jónsson,2017,ISP,21881,False,3,0,0,0,0,0,0,0,0
+1536037,Bjarki Már Ásmundsson,2025,IS1,5849,False,14,0,0,0,0,0,0,0,0
 1107823,Dagur Fjeldsted,2025,ISL,3737,False,4,0,0,0,0,0,0,0,0
 1107823,Dagur Fjeldsted,2025,IS1P,3737,False,5,3,0,162,0,0,2,0,0
 1107823,Dagur Fjeldsted,2025,IS1,3737,False,22,10,0,366,0,1,8,1,2
@@ -250,23 +250,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1235060,Kristján Oddur Kristjánsson,2023,ISP,25873,False,2,0,0,0,0,0,0,0,0
 1235060,Kristján Oddur Kristjánsson,2023,ISL,25873,False,4,3,0,64,0,0,0,0,0
 1235060,Kristján Oddur Kristjánsson,2023,IS2,25873,False,22,6,0,173,0,0,0,0,0
-1108194,Haukur Örn Brink,2026,ECLQ,21875,False,2,1,0,3,0,0,0,0,0
-1108194,Haukur Örn Brink,2025,ISL,21875,False,6,1,0,90,0,0,0,0,1
-1108194,Haukur Örn Brink,2025,IS2,21881,False,8,6,0,393,3,0,0,0,0
-1108194,Haukur Örn Brink,2025,IS1,21875,False,14,12,0,353,1,1,7,3,1
-1108194,Haukur Örn Brink,2024,ISP,21875,False,4,1,0,23,0,0,0,0,0
-1108194,Haukur Örn Brink,2024,ISL,21875,False,5,4,0,148,1,0,0,0,0
-1108194,Haukur Örn Brink,2024,IS1P,21875,False,5,1,0,5,0,0,0,0,0
-1108194,Haukur Örn Brink,2024,IS1,21875,False,16,10,0,205,0,0,5,1,0
-1108194,Haukur Örn Brink,2024,ECLQ,21875,False,4,4,0,122,0,1,0,0,1
-1108194,Haukur Örn Brink,2023,ISP,21875,False,4,0,0,0,0,0,0,0,0
-1108194,Haukur Örn Brink,2023,ISL,21875,False,5,1,0,79,0,0,0,0,0
-1108194,Haukur Örn Brink,2023,IS1P,21875,False,5,0,0,0,0,0,0,0,0
-1108194,Haukur Örn Brink,2023,IS1,21875,False,22,14,0,665,5,1,17,11,4
-1108194,Haukur Örn Brink,2022,ISP,21875,False,1,0,0,0,0,0,0,0,0
-1108194,Haukur Örn Brink,2022,ISL3,29366,False,22,2,0,92,0,0,0,0,1
-1108194,Haukur Örn Brink,2022,ISL,21875,False,5,2,0,31,0,0,0,0,0
-1108194,Haukur Örn Brink,2022,IS1,21875,False,3,0,0,0,0,0,0,0,0
 1109082,Breki Hólm Baldursson,2025,ISL,1839,False,4,0,0,0,0,0,0,0,0
 1109082,Breki Hólm Baldursson,2025,IS2P,11382,False,2,2,0,24,0,0,0,0,0
 1109082,Breki Hólm Baldursson,2025,IS2,11382,False,6,5,0,189,1,0,0,0,1
@@ -525,7 +508,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 908857,Ágúst Orri Thorsteinsson,2026,NLP,798,False,1,1,0,29,0,0,0,0,0
 908857,Ágúst Orri Thorsteinsson,2026,NL1,798,False,10,9,0,611,0,2,5,1,2
 908857,Ágúst Orri Thorsteinsson,2025,UCOL,3737,False,6,6,0,514,0,1,9,0,2
-908857,Ágúst Orri Thorsteinsson,2025,U21Q,22414,True,10,5,0,351,1,1,0,0,1
+908857,Ágúst Orri Thorsteinsson,2025,U21Q,22414,True,11,6,0,441,1,2,0,0,1
 908857,Ágúst Orri Thorsteinsson,2025,ISL,3737,False,4,0,0,0,0,0,0,0,0
 908857,Ágúst Orri Thorsteinsson,2025,IS1,3737,False,19,18,0,1582,6,3,31,14,2
 908857,Ágúst Orri Thorsteinsson,2025,FS,3574,True,1,1,0,77,0,0,0,0,1
@@ -562,7 +545,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 908857,Ágúst Orri Thorsteinsson,2021,ECLQ,3737,False,5,0,0,0,0,0,0,0,0
 908857,Ágúst Orri Thorsteinsson,2020,IS1,3737,False,8,1,0,1,0,0,0,0,0
 908857,Ágúst Orri Thorsteinsson,2019,FS,70766,True,2,2,0,119,0,0,0,0,0
-63821,Aron Gunnarsson,2026,UNLC,3574,True,4,1,0,45,0,0,0,0,0
+63821,Aron Gunnarsson,2026,UNLC,3574,True,6,3,0,89,0,0,0,0,0
 63821,Aron Gunnarsson,2026,QSL,965,False,9,5,0,249,1,0,2,1,1
 63821,Aron Gunnarsson,2026,QSCP,965,False,2,0,0,0,0,0,0,0,0
 63821,Aron Gunnarsson,2025,QSL,6297,False,22,18,0,1331,1,1,4,3,4
@@ -674,9 +657,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 63821,Aron Gunnarsson,2007,NL1,1090,False,11,1,0,14,0,0,0,0,0
 63821,Aron Gunnarsson,2007,FS,3574,True,6,4,0,339,0,0,0,0,1
 63821,Aron Gunnarsson,2007,FS,22414,True,1,1,0,90,0,0,0,0,0
+63821,Aron Gunnarsson,2006,UEFA,1090,False,4,0,0,0,0,0,0,0,0
 63821,Aron Gunnarsson,2006,U19Q,25785,True,5,1,0,90,0,0,0,0,0
+63821,Aron Gunnarsson,2006,PONL,1090,False,4,0,0,0,0,0,0,0,0
 63821,Aron Gunnarsson,2006,NLP,11368,False,1,1,0,90,0,0,0,0,1
+63821,Aron Gunnarsson,2006,NLP,1090,False,2,0,0,0,0,0,0,0,0
 63821,Aron Gunnarsson,2006,NLJB,7460,False,1,0,0,0,0,0,0,0,0
+63821,Aron Gunnarsson,2006,NL1,1090,False,8,0,0,0,0,0,0,0,0
 63821,Aron Gunnarsson,2005,IS2,21864,False,3,0,0,0,0,0,0,0,0
 286825,Bjarni Mark Antonsson Duffield,2026,ECLQ,1033,False,4,4,0,71,0,0,1,1,0
 286825,Bjarni Mark Antonsson Duffield,2025,SE3S,701,False,12,11,1,894,0,1,0,0,5
@@ -741,7 +728,27 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 819831,Halid Al-Ghoul,2021,KR2,12817,False,17,5,0,296,0,0,0,0,3
 819831,Halid Al-Ghoul,2021,FS,64297,True,1,1,0,90,0,0,0,0,0
 819831,Halid Al-Ghoul,2020,KR2,44796,False,28,3,0,32,0,0,0,0,0
-291070,Gunnar Vatnhamar,2026,UNLC,9173,True,4,4,0,360,0,0,3,0,0
+1172622,Jón Sölvi Símonarson,2026,DKRE,62691,False,1,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2026,DKP,369,False,2,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2026,DKDL,14363,False,5,1,0,90,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2026,DK1,369,False,8,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2025,U19Q,25785,True,3,3,0,270,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2025,ISL,1231,False,1,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2025,IS1,3737,False,6,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2025,IS1,1231,False,14,8,0,720,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2025,FS,25785,True,3,3,0,170,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,U19Q,25785,True,6,4,0,360,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,ISP,1231,False,2,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,ISL,1231,False,5,1,0,90,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,IS1P,1231,False,5,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,IS1,1231,False,22,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,FS,25785,True,2,2,0,153,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2024,ECLQ,3737,False,2,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2023,U17Q,26034,True,3,2,0,180,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2023,ISL,3737,False,1,0,0,0,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2023,FS,26034,True,5,5,0,189,0,0,0,0,0
+1172622,Jón Sölvi Símonarson,2022,IS1,3737,False,1,0,0,0,0,0,0,0,0
+291070,Gunnar Vatnhamar,2026,UNLC,9173,True,6,6,0,540,0,0,3,0,0
 291070,Gunnar Vatnhamar,2026,ELQ,5849,False,2,2,0,180,0,0,0,0,1
 291070,Gunnar Vatnhamar,2026,ECLQ,5849,False,2,2,0,172,0,0,0,0,0
 291070,Gunnar Vatnhamar,2026,DKP,443,False,1,0,0,0,0,0,0,0,0
@@ -818,25 +825,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 291070,Gunnar Vatnhamar,2013,FARO,24832,False,27,13,0,291,0,0,0,0,1
 291070,Gunnar Vatnhamar,2013,FAPO,24832,False,4,2,0,42,0,0,0,0,0
 291070,Gunnar Vatnhamar,2012,FARO,24832,False,7,1,0,5,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DKP,369,False,2,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DKDL,14363,False,5,1,0,90,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2026,DK1,369,False,8,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2025,U19Q,25785,True,3,3,0,270,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2025,ISL,1231,False,1,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2025,IS1,3737,False,6,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2025,IS1,1231,False,14,8,0,720,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2025,FS,25785,True,3,3,0,170,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,U19Q,25785,True,6,4,0,360,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,ISP,1231,False,2,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,ISL,1231,False,5,1,0,90,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,IS1P,1231,False,5,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,IS1,1231,False,22,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,FS,25785,True,2,2,0,153,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2024,ECLQ,3737,False,2,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2023,U17Q,26034,True,3,2,0,180,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2023,ISL,3737,False,1,0,0,0,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2023,FS,26034,True,5,5,0,189,0,0,0,0,0
-1172622,Jón Sölvi Símonarson,2022,IS1,3737,False,1,0,0,0,0,0,0,0,0
 342573,Muhamed Al-Ghoul,2026,AFCP,76413,False,2,2,0,146,0,0,0,0,0
 342573,Muhamed Al-Ghoul,2025,ISL,8037,False,5,0,0,0,0,0,0,0,0
 342573,Muhamed Al-Ghoul,2025,IS1P,8037,False,1,1,0,90,1,0,2,1,0
@@ -1566,7 +1554,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 489000,Daníel Hafsteinsson,2016,ISP,1839,False,1,1,0,90,0,0,0,0,0
 489000,Daníel Hafsteinsson,2016,ISL,1839,False,7,5,0,303,1,0,0,0,0
 489000,Daníel Hafsteinsson,2016,IS1,1839,False,22,8,0,112,0,0,0,0,0
-90466,Gylfi Sigurdsson,2026,UNLC,3574,True,4,4,0,200,0,1,3,0,0
+90466,Gylfi Sigurdsson,2026,UNLC,3574,True,6,6,0,264,0,1,7,2,0
 90466,Gylfi Sigurdsson,2026,ELQ,5849,False,2,2,0,180,1,0,6,1,1
 90466,Gylfi Sigurdsson,2026,ECLQ,5849,False,2,2,0,180,1,0,0,0,0
 90466,Gylfi Sigurdsson,2026,CLQ,5849,False,4,4,0,360,0,1,3,1,0
@@ -2379,7 +2367,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 914943,Stígur Thórdarson,2026,ELQ,5849,False,2,2,0,180,1,0,1,1,0
 914943,Stígur Thórdarson,2026,ECLQ,5849,False,2,2,0,143,0,0,0,0,0
 914943,Stígur Thórdarson,2026,CLQ,5849,False,4,2,0,76,0,0,0,0,0
-914943,Stígur Thórdarson,2025,U21Q,22414,True,4,3,0,75,0,0,0,0,2
+914943,Stígur Thórdarson,2025,U21Q,22414,True,5,3,0,75,0,0,0,0,2
 914943,Stígur Thórdarson,2025,ISLS,5849,False,1,1,0,82,0,0,0,0,0
 914943,Stígur Thórdarson,2025,ISL,5849,False,5,0,0,0,0,0,0,0,0
 914943,Stígur Thórdarson,2025,IS1P,5849,False,5,5,0,396,3,0,17,8,0
@@ -2405,7 +2393,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 914943,Stígur Thórdarson,2021,FS,53670,True,2,2,0,119,1,0,0,0,0
 914943,Stígur Thórdarson,2020,ISP,5849,False,5,0,0,0,0,0,0,0,0
 914943,Stígur Thórdarson,2020,IS1,5849,False,16,0,0,0,0,0,0,0,0
-1192117,Thorri Ingólfsson,2026,U19Q,25785,True,3,3,0,168,0,0,0,0,0
+1192117,Thorri Ingólfsson,2026,U19Q,25785,True,4,4,0,232,0,0,0,0,0
 1192117,Thorri Ingólfsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1192117,Thorri Ingólfsson,2026,CLQ,5849,False,3,0,0,0,0,0,0,0,0
 1192117,Thorri Ingólfsson,2025,U17Q,26034,True,5,5,0,427,2,1,0,0,0
@@ -2423,7 +2411,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1531221,Hilmir Thor Christiansen,2026,CLQ,5849,False,3,0,0,0,0,0,0,0,0
 1531221,Hilmir Thor Christiansen,2025,ISLS,5849,False,1,0,0,0,0,0,0,0,0
 1531221,Hilmir Thor Christiansen,2025,IS1,5849,False,16,0,0,0,0,0,0,0,0
-875363,Halldór Snaer Georgsson,2025,U21Q,22414,True,11,0,0,0,0,0,0,0,0
+875363,Halldór Snaer Georgsson,2025,U21Q,22414,True,12,0,0,0,0,0,0,0,0
 875363,Halldór Snaer Georgsson,2025,ISL,3237,False,7,1,0,27,0,0,0,0,0
 875363,Halldór Snaer Georgsson,2025,IS1P,3237,False,5,1,0,90,0,0,0,0,0
 875363,Halldór Snaer Georgsson,2025,IS1,3237,False,22,21,0,1835,0,0,0,0,1
@@ -2776,7 +2764,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 472867,Hjalti Sigurdsson,2016,FS,53670,True,2,0,0,0,0,0,0,0,0
 472867,Hjalti Sigurdsson,2016,FS,26034,True,2,2,0,67,0,0,0,0,1
 472867,Hjalti Sigurdsson,2015,FS,53670,True,1,1,0,36,0,0,0,0,0
-1159868,Sölvi Snær Ásgeirsson,2026,U19Q,25785,True,3,1,0,90,0,0,0,0,0
+1159868,Sölvi Snær Ásgeirsson,2026,U19Q,25785,True,4,1,0,90,0,0,0,0,0
 1159868,Sölvi Snær Ásgeirsson,2025,U19Q,25785,True,3,1,0,70,0,0,0,0,0
 1159868,Sölvi Snær Ásgeirsson,2025,JGD2,4420,False,1,1,0,63,0,0,0,0,0
 1159868,Sölvi Snær Ásgeirsson,2025,IS2,7690,False,5,0,0,0,0,0,0,0,0
@@ -2922,7 +2910,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 822906,Hrafn Tómasson,2020,ELQ,3237,False,1,0,0,0,0,0,0,0,0
 822906,Hrafn Tómasson,2019,ISP,3237,False,1,0,0,0,0,0,0,0,0
 822906,Hrafn Tómasson,2019,IS1,3237,False,6,0,0,0,0,0,0,0,0
-1192116,Sigurður Kárason,2026,U19Q,25785,True,3,3,0,201,1,0,0,0,0
+1192116,Sigurður Kárason,2026,U19Q,25785,True,4,4,0,227,1,0,0,0,0
 1192116,Sigurður Kárason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1192116,Sigurður Kárason,2025,U17Q,26034,True,5,3,0,123,1,0,0,0,0
 1192116,Sigurður Kárason,2025,ISL,3237,False,7,1,0,90,1,0,0,0,0
@@ -3099,7 +3087,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1062729,Amin Cosic,2026,NOPO,239,False,2,1,0,79,0,0,0,0,0
 1062729,Amin Cosic,2026,CLQ,239,False,2,0,0,0,0,0,0,0,0
 1062729,Amin Cosic,2026,CL,239,False,4,1,0,15,0,0,1,0,0
-1062729,Amin Cosic,2025,U21Q,22414,True,5,4,0,228,0,1,0,0,0
+1062729,Amin Cosic,2025,U21Q,22414,True,6,5,0,240,0,1,0,0,1
 1062729,Amin Cosic,2025,NO1,239,False,15,6,0,175,0,0,4,1,0
 1062729,Amin Cosic,2025,ISL,3237,False,7,1,0,90,1,0,0,0,0
 1062729,Amin Cosic,2025,IS1,3237,False,15,14,0,1123,4,1,38,14,2
@@ -3180,7 +3168,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 150732,Aron Sigurdarson,2010,IS2,21855,False,22,15,0,762,1,0,0,0,0
 150732,Aron Sigurdarson,2009,IS2,21855,False,22,3,0,49,0,0,0,0,0
 150732,Aron Sigurdarson,2008,IS1,21855,False,5,0,0,0,0,0,0,0,0
-1294009,Alexander Rafn Pálmason,2026,U19Q,25785,True,3,3,0,178,0,0,0,0,0
+1294009,Alexander Rafn Pálmason,2026,U19Q,25785,True,4,4,0,268,0,0,0,0,0
 1294009,Alexander Rafn Pálmason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1294009,Alexander Rafn Pálmason,2026,DKDL,14355,False,10,0,0,0,0,0,0,0,0
 1294009,Alexander Rafn Pálmason,2025,U17Q,26034,True,5,5,0,386,1,2,0,0,0
@@ -3334,7 +3322,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 472868,Stefán Árni Geirsson,2016,ISP,3237,False,3,0,0,0,0,0,0,0,0
 472868,Stefán Árni Geirsson,2016,ISL,3237,False,5,1,0,3,0,0,0,0,0
 472868,Stefán Árni Geirsson,2016,IS1,3237,False,22,1,0,2,0,0,0,0,0
-927439,Galdur Guðmundsson,2025,U21Q,22414,True,10,5,0,216,0,2,0,0,0
+927439,Galdur Guðmundsson,2025,U21Q,22414,True,12,7,0,318,0,2,0,0,0
 927439,Galdur Guðmundsson,2025,ISL,3237,False,7,0,0,0,0,0,0,0,0
 927439,Galdur Guðmundsson,2025,IS1P,3237,False,5,5,0,424,6,1,14,11,1
 927439,Galdur Guðmundsson,2025,IS1,3237,False,22,17,0,827,3,4,20,7,1
@@ -3371,7 +3359,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1495388,Fannar Heimisson,2025,IS1,3237,False,16,4,0,44,0,0,4,2,0
 1495388,Fannar Heimisson,2025,FS,70766,True,3,3,0,208,0,0,0,0,0
 1568535,Birgir Kjartan Ísleifsson,2025,IS1,3237,False,1,0,0,0,0,0,0,0,0
-325087,Anton Ari Einarsson,2026,UNLC,3574,True,4,0,0,0,0,0,0,0,0
+325087,Anton Ari Einarsson,2026,UNLC,3574,True,6,0,0,0,0,0,0,0,0
 325087,Anton Ari Einarsson,2025,UCOL,3737,False,6,6,0,540,0,0,0,0,0
 325087,Anton Ari Einarsson,2025,ISL,3737,False,4,0,0,0,0,0,0,0,0
 325087,Anton Ari Einarsson,2025,IS1P,3737,False,5,3,0,270,0,0,0,0,0
@@ -3470,7 +3458,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1334358,Elmar Ágúst Halldórsson,2025,FS,70766,True,3,0,0,0,0,0,0,0,0
 1334358,Elmar Ágúst Halldórsson,2025,FS,53670,True,7,6,0,339,0,0,0,0,0
 1334358,Elmar Ágúst Halldórsson,2024,FS,70766,True,3,3,0,179,0,0,0,0,0
-718462,Hlynur Freyr Karlsson,2025,U21Q,22414,True,10,8,0,638,0,1,0,0,0
+718462,Hlynur Freyr Karlsson,2025,U21Q,22414,True,11,8,0,638,0,1,0,0,0
 718462,Hlynur Freyr Karlsson,2025,SEC,1092,False,4,1,0,90,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2025,SE1,1092,False,12,1,0,5,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2025,IS1P,3737,False,5,5,0,395,0,0,1,1,0
@@ -3511,7 +3499,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 718462,Hlynur Freyr Karlsson,2019,ISP,3737,False,2,1,0,2,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2019,IS1,3737,False,11,1,0,1,0,0,0,0,0
 718462,Hlynur Freyr Karlsson,2019,FS,26034,True,2,2,0,107,0,0,0,0,1
-1072744,Gylfi Berg Snaehólm,2026,U19Q,25785,True,3,2,0,153,0,0,0,0,0
+1072744,Gylfi Berg Snaehólm,2026,U19Q,25785,True,4,3,0,243,0,0,0,0,0
 1072744,Gylfi Berg Snaehólm,2025,UCOL,3737,False,6,0,0,0,0,0,0,0,0
 1072744,Gylfi Berg Snaehólm,2025,U19Q,25785,True,3,0,0,0,0,0,0,0,0
 1072744,Gylfi Berg Snaehólm,2025,ISL,3737,False,4,0,0,0,0,0,0,0,0
@@ -4254,7 +4242,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 110170,Andri Rafn Yeoman,2008,ISP,3737,False,1,1,0,22,0,0,0,0,0
 110170,Andri Rafn Yeoman,2008,ISL,3737,False,1,0,0,0,0,0,0,0,0
 110170,Andri Rafn Yeoman,2008,IS1,3737,False,22,9,0,586,0,0,0,0,1
-1412052,Kristinn Narfi Björgvinsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
+1412052,Kristinn Narfi Björgvinsson,2026,U19Q,25785,True,4,0,0,0,0,0,0,0,0
 1412052,Kristinn Narfi Björgvinsson,2025,UCOL,3737,False,6,0,0,0,0,0,0,0,0
 1412052,Kristinn Narfi Björgvinsson,2025,ISL,3737,False,4,0,0,0,0,0,0,0,0
 1412052,Kristinn Narfi Björgvinsson,2025,IS1P,3737,False,5,1,0,90,0,0,0,0,0
@@ -5052,7 +5040,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 313569,Heidar Aegisson,2013,FS,25785,True,2,2,0,65,0,0,0,0,0
 1074842,Bjarki Hauksson,2026,ECLQ,21875,False,4,3,0,56,0,1,0,0,0
 1074842,Bjarki Hauksson,2025,ISL,21875,False,6,1,0,90,0,0,0,0,0
-1074842,Bjarki Hauksson,2025,IS1P,21875,False,5,5,0,396,0,0,4,0,1
+1074842,Bjarki Hauksson,2025,IS1P,21875,False,5,5,0,396,0,1,4,0,1
 1074842,Bjarki Hauksson,2025,IS1,21875,False,22,17,0,818,1,0,15,2,2
 1074842,Bjarki Hauksson,2024,U19Q,25785,True,6,5,0,119,0,0,1,0,0
 1074842,Bjarki Hauksson,2024,ISP,21875,False,4,0,0,0,0,0,0,0,0
@@ -5345,14 +5333,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 392377,Alex Thór Hauksson,2015,19YL,50924,False,2,2,0,180,0,0,0,0,0
 392377,Alex Thór Hauksson,2014,IS1,21875,False,7,0,0,0,0,0,0,0,0
 824080,Ibrahim Turay,2026,ECLQ,21875,False,4,0,0,0,0,0,0,0,0
+824080,Ibrahim Turay,2026,AFCQ,6187,True,3,1,0,45,0,0,0,0,0
 824080,Ibrahim Turay,2025,ISL,21875,False,6,1,0,73,1,0,0,0,0
 824080,Ibrahim Turay,2025,IS1P,21875,False,5,3,0,173,0,0,0,0,0
 824080,Ibrahim Turay,2025,IS1,21875,False,22,10,0,536,0,0,4,2,2
+824080,Ibrahim Turay,2025,FS,6187,True,3,0,0,0,0,0,0,0,0
 824080,Ibrahim Turay,2024,IS1P,21875,False,5,0,0,0,0,0,0,0,0
 824080,Ibrahim Turay,2024,IS1,21875,False,4,0,0,0,0,0,0,0,0
 824080,Ibrahim Turay,2024,AFCQ,6187,True,6,0,0,0,0,0,0,0,0
 824080,Ibrahim Turay,2024,ACL,82754,False,2,1,0,90,0,0,0,0,0
-824080,Ibrahim Turay,2023,WMQ2,6187,True,6,1,0,12,1,0,0,0,0
+824080,Ibrahim Turay,2023,WMQ2,6187,True,10,1,0,12,1,0,0,0,0
 824080,Ibrahim Turay,2023,FS,6187,True,3,1,0,90,0,0,0,0,0
 824080,Ibrahim Turay,2023,ACL,82754,False,4,3,0,154,1,0,0,0,0
 824080,Ibrahim Turay,2022,FS,6187,True,1,0,0,0,0,0,0,0,0
@@ -5414,7 +5404,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 488999,Örvar Eggertsson,2016,IS1,5849,False,22,10,0,164,0,1,0,0,0
 336176,Birnir Snaer Ingason,2026,ECLQ,21875,False,4,4,0,339,1,0,0,0,0
 336176,Birnir Snaer Ingason,2025,ISL,21875,False,6,1,0,90,0,0,0,0,0
-336176,Birnir Snaer Ingason,2025,IS1P,21875,False,5,5,0,382,2,0,9,4,0
+336176,Birnir Snaer Ingason,2025,IS1P,21875,False,5,5,0,382,2,1,9,4,0
 336176,Birnir Snaer Ingason,2025,IS1,21875,False,22,22,0,1680,4,4,61,24,1
 336176,Birnir Snaer Ingason,2025,FS,3574,True,1,1,0,13,0,0,0,0,0
 336176,Birnir Snaer Ingason,2025,ECLQ,1839,False,2,2,0,115,0,0,1,1,0
@@ -5621,6 +5611,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 702775,Alpha Conteh,2020,FS,6187,True,2,0,0,0,0,0,0,0,0
 702775,Alpha Conteh,2019,WMQ2,6187,True,2,0,0,0,0,0,0,0,0
 702775,Alpha Conteh,2019,AFCQ,6187,True,6,0,0,0,0,0,0,0,0
+1108194,Haukur Örn Brink,2026,ECLQ,21875,False,2,1,0,3,0,0,0,0,0
+1108194,Haukur Örn Brink,2025,ISL,21875,False,6,1,0,90,0,0,0,0,1
+1108194,Haukur Örn Brink,2025,IS2,21881,False,8,6,0,393,3,0,0,0,0
+1108194,Haukur Örn Brink,2025,IS1,21875,False,14,12,0,353,1,1,7,3,1
+1108194,Haukur Örn Brink,2024,ISP,21875,False,4,1,0,23,0,0,0,0,0
+1108194,Haukur Örn Brink,2024,ISL,21875,False,5,4,0,148,1,0,0,0,0
+1108194,Haukur Örn Brink,2024,IS1P,21875,False,5,1,0,5,0,0,0,0,0
+1108194,Haukur Örn Brink,2024,IS1,21875,False,16,10,0,205,0,0,5,1,0
+1108194,Haukur Örn Brink,2024,ECLQ,21875,False,4,4,0,122,0,1,0,0,1
+1108194,Haukur Örn Brink,2023,ISP,21875,False,4,0,0,0,0,0,0,0,0
+1108194,Haukur Örn Brink,2023,ISL,21875,False,5,1,0,79,0,0,0,0,0
+1108194,Haukur Örn Brink,2023,IS1P,21875,False,5,0,0,0,0,0,0,0,0
+1108194,Haukur Örn Brink,2023,IS1,21875,False,22,14,0,665,5,1,17,11,4
+1108194,Haukur Örn Brink,2022,ISP,21875,False,1,0,0,0,0,0,0,0,0
+1108194,Haukur Örn Brink,2022,ISL3,29366,False,22,2,0,92,0,0,0,0,1
+1108194,Haukur Örn Brink,2022,ISL,21875,False,5,2,0,31,0,0,0,0,0
+1108194,Haukur Örn Brink,2022,IS1,21875,False,3,0,0,0,0,0,0,0,0
 160109,Árni Vilhjálmsson,2026,ECLQ,21875,False,3,2,0,16,0,0,0,0,0
 160109,Árni Vilhjálmsson,2025,IS1P,21875,False,5,3,0,43,0,0,0,0,0
 160109,Árni Vilhjálmsson,2025,IS1,21875,False,8,7,0,295,1,0,9,3,0
@@ -7293,7 +7300,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 332665,Aegir Jarl Jónasson,2014,ISL,21855,False,8,6,0,188,0,0,0,0,0
 332665,Aegir Jarl Jónasson,2014,IS1,21855,False,22,3,0,11,0,0,0,0,0
 332665,Aegir Jarl Jónasson,2014,FS,26034,True,4,3,0,153,0,0,0,0,0
-1112880,Freyr Sigurdsson,2025,U21Q,22414,True,9,2,0,24,0,0,0,0,0
+1112880,Freyr Sigurdsson,2025,U21Q,22414,True,10,4,0,180,0,0,0,0,0
 1112880,Freyr Sigurdsson,2025,ISL,3832,False,5,1,0,90,2,0,0,0,0
 1112880,Freyr Sigurdsson,2025,IS1P,3832,False,5,4,0,284,1,0,10,3,0
 1112880,Freyr Sigurdsson,2025,IS1,3832,False,22,21,0,1559,5,2,37,10,3
@@ -8215,7 +8222,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1023377,Ívar Logi Jóhannsson,2023,ISL3,82873,False,2,0,0,0,0,0,0,0,0
 1023377,Ívar Logi Jóhannsson,2022,ISL3,82873,False,1,0,0,0,0,0,0,0,0
 1023377,Ívar Logi Jóhannsson,2021,ISL3,82873,False,3,0,0,0,0,0,0,0,0
-1192109,Snorri Kristinsson,2026,U19Q,25785,True,1,1,0,90,0,0,0,0,1
+1192109,Snorri Kristinsson,2026,U19Q,25785,True,2,2,0,106,0,0,0,0,1
 1192109,Snorri Kristinsson,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1192109,Snorri Kristinsson,2025,U17Q,26034,True,5,4,0,360,0,1,0,0,2
 1192109,Snorri Kristinsson,2025,ISL,1839,False,5,0,0,0,0,0,0,0,0
@@ -8384,38 +8391,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 123683,Jóan Símun Edmundsson,2008,WMQ6,9173,True,5,1,0,62,0,0,0,0,0
 123683,Jóan Símun Edmundsson,2008,U19Q,30232,True,3,3,0,255,0,0,0,0,1
 123683,Jóan Símun Edmundsson,2006,U17Q,26033,True,1,1,0,14,0,0,0,0,0
-568585,Oliver Heidarsson,2025,KRC,11194,False,1,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2025,KR1,11194,False,10,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2025,IS1P,1839,False,5,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2025,IS1,1839,False,21,12,8,843,1,2,19,8,2
-568585,Oliver Heidarsson,2024,ISP,8036,False,3,1,0,90,0,1,0,0,0
-568585,Oliver Heidarsson,2024,ISL,8036,False,5,5,0,405,3,0,0,0,2
-568585,Oliver Heidarsson,2024,IS1P,8036,False,5,5,0,430,2,1,13,7,1
-568585,Oliver Heidarsson,2024,IS1,8036,False,22,15,0,1141,2,2,31,14,2
-568585,Oliver Heidarsson,2023,ISP,8036,False,2,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2023,ISL,8036,False,5,4,0,244,2,0,0,0,0
-568585,Oliver Heidarsson,2023,IS2,8036,False,22,20,1,1637,14,0,0,0,6
-568585,Oliver Heidarsson,2022,ISP,1185,False,1,1,0,90,0,0,0,0,0
-568585,Oliver Heidarsson,2022,ISL,1185,False,4,3,0,137,1,0,0,0,0
-568585,Oliver Heidarsson,2022,IS1P,8036,False,5,3,0,130,0,1,3,0,1
-568585,Oliver Heidarsson,2022,IS1,8036,False,20,18,1,1402,2,3,34,14,4
-568585,Oliver Heidarsson,2022,IS1,1185,False,3,2,0,23,0,0,0,0,0
-568585,Oliver Heidarsson,2021,ISP,1185,False,5,3,0,215,2,0,0,0,1
-568585,Oliver Heidarsson,2021,ISL,1185,False,7,6,0,410,2,0,0,0,3
-568585,Oliver Heidarsson,2021,IS1P,1185,False,5,5,0,387,1,1,0,0,0
-568585,Oliver Heidarsson,2021,IS1,1185,False,22,21,0,911,1,2,0,0,3
-568585,Oliver Heidarsson,2021,ECLQ,1185,False,4,4,0,18,0,0,0,0,0
-568585,Oliver Heidarsson,2020,ISP,1185,False,2,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2020,ISL,9175,False,2,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2020,ISL,1185,False,3,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2020,IS1,1185,False,22,12,0,319,3,1,0,0,2
-568585,Oliver Heidarsson,2019,ISP,9175,False,3,3,0,182,0,0,0,0,0
-568585,Oliver Heidarsson,2019,ISL,9175,False,4,4,0,276,0,0,0,0,0
-568585,Oliver Heidarsson,2019,IS2,9175,False,20,19,0,1452,4,3,0,0,5
-568585,Oliver Heidarsson,2018,ISP,9175,False,2,0,0,0,0,0,0,0,0
-568585,Oliver Heidarsson,2018,ISL,9175,False,4,1,0,26,0,0,0,0,0
-568585,Oliver Heidarsson,2018,IS2,9175,False,22,3,0,43,0,0,0,0,0
-568585,Oliver Heidarsson,2017,ISL,9175,False,3,0,0,0,0,0,0,0,0
 272424,Ásgeir Sigurgeirsson,2025,ISL,1839,False,5,0,5,0,0,0,0,0,0
 272424,Ásgeir Sigurgeirsson,2025,IS1P,1839,False,5,0,2,0,0,0,0,0,0
 272424,Ásgeir Sigurgeirsson,2025,IS1,1839,False,22,1,19,12,0,0,1,0,0
@@ -8465,6 +8440,38 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 272424,Ásgeir Sigurgeirsson,2012,U17Q,26034,True,3,3,0,180,0,0,0,0,1
 272424,Ásgeir Sigurgeirsson,2012,ISL,28433,False,7,6,0,457,0,0,0,0,0
 272424,Ásgeir Sigurgeirsson,2012,IS2,28433,False,20,15,0,1024,2,0,0,0,2
+568585,Oliver Heidarsson,2025,KRC,11194,False,1,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2025,KR1,11194,False,10,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2025,IS1P,1839,False,5,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2025,IS1,1839,False,21,12,8,843,1,2,19,8,2
+568585,Oliver Heidarsson,2024,ISP,8036,False,3,1,0,90,0,1,0,0,0
+568585,Oliver Heidarsson,2024,ISL,8036,False,5,5,0,405,3,0,0,0,2
+568585,Oliver Heidarsson,2024,IS1P,8036,False,5,5,0,430,2,1,13,7,1
+568585,Oliver Heidarsson,2024,IS1,8036,False,22,15,0,1141,2,2,31,14,2
+568585,Oliver Heidarsson,2023,ISP,8036,False,2,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2023,ISL,8036,False,5,4,0,244,2,0,0,0,0
+568585,Oliver Heidarsson,2023,IS2,8036,False,22,20,1,1637,14,0,0,0,6
+568585,Oliver Heidarsson,2022,ISP,1185,False,1,1,0,90,0,0,0,0,0
+568585,Oliver Heidarsson,2022,ISL,1185,False,4,3,0,137,1,0,0,0,0
+568585,Oliver Heidarsson,2022,IS1P,8036,False,5,3,0,130,0,1,3,0,1
+568585,Oliver Heidarsson,2022,IS1,8036,False,20,18,1,1402,2,3,34,14,4
+568585,Oliver Heidarsson,2022,IS1,1185,False,3,2,0,23,0,0,0,0,0
+568585,Oliver Heidarsson,2021,ISP,1185,False,5,3,0,215,2,0,0,0,1
+568585,Oliver Heidarsson,2021,ISL,1185,False,7,6,0,410,2,0,0,0,3
+568585,Oliver Heidarsson,2021,IS1P,1185,False,5,5,0,387,1,1,0,0,0
+568585,Oliver Heidarsson,2021,IS1,1185,False,22,21,0,911,1,2,0,0,3
+568585,Oliver Heidarsson,2021,ECLQ,1185,False,4,4,0,18,0,0,0,0,0
+568585,Oliver Heidarsson,2020,ISP,1185,False,2,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2020,ISL,9175,False,2,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2020,ISL,1185,False,3,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2020,IS1,1185,False,22,12,0,319,3,1,0,0,2
+568585,Oliver Heidarsson,2019,ISP,9175,False,3,3,0,182,0,0,0,0,0
+568585,Oliver Heidarsson,2019,ISL,9175,False,4,4,0,276,0,0,0,0,0
+568585,Oliver Heidarsson,2019,IS2,9175,False,20,19,0,1452,4,3,0,0,5
+568585,Oliver Heidarsson,2018,ISP,9175,False,2,0,0,0,0,0,0,0,0
+568585,Oliver Heidarsson,2018,ISL,9175,False,4,1,0,26,0,0,0,0,0
+568585,Oliver Heidarsson,2018,IS2,9175,False,22,3,0,43,0,0,0,0,0
+568585,Oliver Heidarsson,2017,ISL,9175,False,3,0,0,0,0,0,0,0,0
 358275,Jakob Snaer Árnason,2025,ISL,1839,False,5,0,0,0,0,0,0,0,0
 358275,Jakob Snaer Árnason,2025,IS1P,1839,False,5,5,0,392,2,0,9,2,3
 358275,Jakob Snaer Árnason,2025,IS1,1839,False,22,16,0,830,4,0,14,6,4
@@ -8900,7 +8907,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1113203,Hilmar Elís Hilmarsson,2021,ISP,32672,False,3,1,0,17,0,0,0,0,0
 1113203,Hilmar Elís Hilmarsson,2020,ISP,32672,False,1,0,0,0,0,0,0,0,0
 1113203,Hilmar Elís Hilmarsson,2020,ISL3,32672,False,21,0,0,0,0,0,0,0,0
-1244517,Styrmir Jóhann Ellertsson,2026,U19Q,25785,True,3,2,0,180,0,0,0,0,0
+1244517,Styrmir Jóhann Ellertsson,2026,U19Q,25785,True,4,3,0,270,0,0,0,0,0
 1244517,Styrmir Jóhann Ellertsson,2025,U19Q,25785,True,3,0,0,0,0,0,0,0,0
 1244517,Styrmir Jóhann Ellertsson,2025,IS1P,1231,False,5,5,0,379,1,0,2,1,1
 1244517,Styrmir Jóhann Ellertsson,2025,IS1,1231,False,22,11,0,696,0,0,2,0,2
@@ -8919,7 +8926,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1334354,Aron Zumbergs,2024,FS,70766,True,3,3,0,121,0,0,0,0,0
 1554462,Isak Theodor Eidem,2025,IS1P,1231,False,5,0,0,0,0,0,0,0,0
 1554462,Isak Theodor Eidem,2025,IS1,1231,False,18,0,0,0,0,0,0,0,0
-1408763,Brynjar Ódinn Atlason,2026,U19Q,25785,True,1,1,0,90,0,0,0,0,0
+1408763,Brynjar Ódinn Atlason,2026,U19Q,25785,True,2,2,0,180,0,0,0,0,0
 1408763,Brynjar Ódinn Atlason,2026,U17Q,26034,True,3,0,0,0,0,0,0,0,0
 1408763,Brynjar Ódinn Atlason,2025,U17Q,26034,True,5,3,0,164,0,0,0,0,1
 1408763,Brynjar Ódinn Atlason,2025,IS1P,1231,False,5,3,0,207,0,0,0,0,0
@@ -8929,7 +8936,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1408763,Brynjar Ódinn Atlason,2024,IS1P,1231,False,2,0,0,0,0,0,0,0,0
 1408763,Brynjar Ódinn Atlason,2024,IS1,1231,False,20,0,0,0,0,0,0,0,0
 1408763,Brynjar Ódinn Atlason,2024,FS,53670,True,3,3,0,186,0,0,0,0,0
-928464,Haukur Andri Haraldsson,2025,U21Q,22414,True,11,5,0,233,1,0,0,0,2
+928464,Haukur Andri Haraldsson,2025,U21Q,22414,True,12,6,0,257,1,0,0,0,2
 928464,Haukur Andri Haraldsson,2025,ISL,1231,False,4,0,0,0,0,0,0,0,0
 928464,Haukur Andri Haraldsson,2025,IS1P,1231,False,5,4,0,234,0,1,0,0,1
 928464,Haukur Andri Haraldsson,2025,IS1,1231,False,22,20,0,1724,2,2,19,7,4
@@ -9038,47 +9045,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 879350,Ómar Stefánsson,2020,ISP,2576,False,3,0,0,0,0,0,0,0,0
 879350,Ómar Stefánsson,2020,ISL,2576,False,5,0,0,0,0,0,0,0,0
 879350,Ómar Stefánsson,2020,IS1,2576,False,20,1,0,23,0,0,0,0,0
-307106,Steinar Thorsteinsson,2025,ISL,1231,False,4,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2025,IS1P,1231,False,5,4,0,259,0,0,7,4,0
-307106,Steinar Thorsteinsson,2025,IS1,1231,False,22,13,0,594,1,0,13,3,1
-307106,Steinar Thorsteinsson,2024,ISP,1231,False,2,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2024,ISL,1231,False,5,1,0,28,0,0,0,0,0
-307106,Steinar Thorsteinsson,2024,IS1P,1231,False,5,5,0,108,0,0,5,1,0
-307106,Steinar Thorsteinsson,2024,IS1,1231,False,22,8,0,411,2,0,9,4,1
-307106,Steinar Thorsteinsson,2023,ISP,1231,False,2,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2023,ISL,1231,False,7,7,0,374,3,0,0,0,0
-307106,Steinar Thorsteinsson,2023,IS1P,1231,False,5,4,0,336,1,1,5,3,1
-307106,Steinar Thorsteinsson,2023,IS1,1231,False,22,21,1,1666,2,6,21,8,5
-307106,Steinar Thorsteinsson,2022,ISP,1231,False,2,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2022,ISL,1231,False,5,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2022,IS2,1231,False,22,21,0,1560,2,2,0,0,3
-307106,Steinar Thorsteinsson,2021,ISP,1231,False,2,2,0,180,1,0,0,0,0
-307106,Steinar Thorsteinsson,2021,ISL,1231,False,5,5,0,437,2,0,0,0,0
-307106,Steinar Thorsteinsson,2021,IS1P,1231,False,5,4,0,292,0,2,0,0,0
-307106,Steinar Thorsteinsson,2021,IS1,1231,False,22,20,0,1766,2,1,0,0,3
-307106,Steinar Thorsteinsson,2020,ISP,1231,False,5,3,0,201,0,1,0,0,1
-307106,Steinar Thorsteinsson,2020,ISL,1231,False,5,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2020,IS1,1231,False,22,20,0,1389,4,0,0,0,5
-307106,Steinar Thorsteinsson,2019,ISP,1231,False,2,2,0,89,1,0,0,0,0
-307106,Steinar Thorsteinsson,2019,ISL,1231,False,5,5,0,450,2,0,0,0,0
-307106,Steinar Thorsteinsson,2019,IS1,1231,False,18,16,0,1141,3,1,0,0,1
-307106,Steinar Thorsteinsson,2018,ISP,1231,False,2,1,0,90,0,0,0,0,0
-307106,Steinar Thorsteinsson,2018,ISL,1231,False,7,7,0,405,0,0,0,0,0
-307106,Steinar Thorsteinsson,2018,IS1,1231,False,22,20,0,890,2,3,0,0,1
-307106,Steinar Thorsteinsson,2017,ISP,1231,False,4,3,0,270,2,0,0,0,0
-307106,Steinar Thorsteinsson,2017,ISL,1231,False,5,3,0,252,1,0,0,0,0
-307106,Steinar Thorsteinsson,2017,IS2,1231,False,22,22,0,1947,5,0,0,0,1
-307106,Steinar Thorsteinsson,2016,ISP,1231,False,3,1,0,120,0,0,0,0,0
-307106,Steinar Thorsteinsson,2016,ISL,1231,False,6,6,0,440,2,0,0,0,0
-307106,Steinar Thorsteinsson,2016,IS1,1231,False,22,21,0,1391,5,0,0,0,1
-307106,Steinar Thorsteinsson,2016,FS,22414,True,2,2,0,40,0,0,0,0,0
-307106,Steinar Thorsteinsson,2015,ISP,1231,False,2,1,0,74,0,0,0,0,0
-307106,Steinar Thorsteinsson,2015,ISL,1231,False,5,5,0,355,2,0,0,0,0
-307106,Steinar Thorsteinsson,2015,IS1,1231,False,22,12,0,361,0,0,0,0,0
-307106,Steinar Thorsteinsson,2014,ISL,1231,False,9,4,0,108,0,0,0,0,0
-307106,Steinar Thorsteinsson,2014,IS1,1231,False,9,1,0,19,0,0,0,0,0
-307106,Steinar Thorsteinsson,2013,FS,26034,True,1,0,0,0,0,0,0,0,0
-307106,Steinar Thorsteinsson,2012,ISL,1231,False,1,1,0,7,0,0,0,0,0
 90008,Rúnar Már Sigurjónsson,2025,ISL,1231,False,4,0,0,0,0,0,0,0,0
 90008,Rúnar Már Sigurjónsson,2025,IS1P,1231,False,5,2,0,84,0,0,2,0,0
 90008,Rúnar Már Sigurjónsson,2025,IS1,1231,False,22,8,0,355,2,1,12,2,1
@@ -9160,12 +9126,53 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 90008,Rúnar Már Sigurjónsson,2008,U19Q,25785,True,3,3,0,199,0,0,0,0,0
 90008,Rúnar Már Sigurjónsson,2008,IS2,11382,False,22,0,0,0,0,0,0,0,0
 90008,Rúnar Már Sigurjónsson,2007,IS1,11382,False,22,12,0,672,2,0,0,0,1
+307106,Steinar Thorsteinsson,2025,ISL,1231,False,4,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2025,IS1P,1231,False,5,4,0,259,0,0,7,4,0
+307106,Steinar Thorsteinsson,2025,IS1,1231,False,22,13,0,594,1,0,13,3,1
+307106,Steinar Thorsteinsson,2024,ISP,1231,False,2,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2024,ISL,1231,False,5,1,0,28,0,0,0,0,0
+307106,Steinar Thorsteinsson,2024,IS1P,1231,False,5,5,0,108,0,0,5,1,0
+307106,Steinar Thorsteinsson,2024,IS1,1231,False,22,8,0,411,2,0,9,4,1
+307106,Steinar Thorsteinsson,2023,ISP,1231,False,2,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2023,ISL,1231,False,7,7,0,374,3,0,0,0,0
+307106,Steinar Thorsteinsson,2023,IS1P,1231,False,5,4,0,336,1,1,5,3,1
+307106,Steinar Thorsteinsson,2023,IS1,1231,False,22,21,1,1666,2,6,21,8,5
+307106,Steinar Thorsteinsson,2022,ISP,1231,False,2,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2022,ISL,1231,False,5,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2022,IS2,1231,False,22,21,0,1560,2,2,0,0,3
+307106,Steinar Thorsteinsson,2021,ISP,1231,False,2,2,0,180,1,0,0,0,0
+307106,Steinar Thorsteinsson,2021,ISL,1231,False,5,5,0,437,2,0,0,0,0
+307106,Steinar Thorsteinsson,2021,IS1P,1231,False,5,4,0,292,0,2,0,0,0
+307106,Steinar Thorsteinsson,2021,IS1,1231,False,22,20,0,1766,2,1,0,0,3
+307106,Steinar Thorsteinsson,2020,ISP,1231,False,5,3,0,201,0,1,0,0,1
+307106,Steinar Thorsteinsson,2020,ISL,1231,False,5,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2020,IS1,1231,False,22,20,0,1389,4,0,0,0,5
+307106,Steinar Thorsteinsson,2019,ISP,1231,False,2,2,0,89,1,0,0,0,0
+307106,Steinar Thorsteinsson,2019,ISL,1231,False,5,5,0,450,2,0,0,0,0
+307106,Steinar Thorsteinsson,2019,IS1,1231,False,18,16,0,1141,3,1,0,0,1
+307106,Steinar Thorsteinsson,2018,ISP,1231,False,2,1,0,90,0,0,0,0,0
+307106,Steinar Thorsteinsson,2018,ISL,1231,False,7,7,0,405,0,0,0,0,0
+307106,Steinar Thorsteinsson,2018,IS1,1231,False,22,20,0,890,2,3,0,0,1
+307106,Steinar Thorsteinsson,2017,ISP,1231,False,4,3,0,270,2,0,0,0,0
+307106,Steinar Thorsteinsson,2017,ISL,1231,False,5,3,0,252,1,0,0,0,0
+307106,Steinar Thorsteinsson,2017,IS2,1231,False,22,22,0,1947,5,0,0,0,1
+307106,Steinar Thorsteinsson,2016,ISP,1231,False,3,1,0,120,0,0,0,0,0
+307106,Steinar Thorsteinsson,2016,ISL,1231,False,6,6,0,440,2,0,0,0,0
+307106,Steinar Thorsteinsson,2016,IS1,1231,False,22,21,0,1391,5,0,0,0,1
+307106,Steinar Thorsteinsson,2016,FS,22414,True,2,2,0,40,0,0,0,0,0
+307106,Steinar Thorsteinsson,2015,ISP,1231,False,2,1,0,74,0,0,0,0,0
+307106,Steinar Thorsteinsson,2015,ISL,1231,False,5,5,0,355,2,0,0,0,0
+307106,Steinar Thorsteinsson,2015,IS1,1231,False,22,12,0,361,0,0,0,0,0
+307106,Steinar Thorsteinsson,2014,ISL,1231,False,9,4,0,108,0,0,0,0,0
+307106,Steinar Thorsteinsson,2014,IS1,1231,False,9,1,0,19,0,0,0,0,0
+307106,Steinar Thorsteinsson,2013,FS,26034,True,1,0,0,0,0,0,0,0,0
+307106,Steinar Thorsteinsson,2012,ISL,1231,False,1,1,0,7,0,0,0,0,0
 1543616,Emil Karl Jóhannesson,2025,IS1,1231,False,3,0,0,0,0,0,0,0,0
 1543616,Emil Karl Jóhannesson,2025,FS,53670,True,3,3,0,111,0,0,0,0,0
 1523576,Styrmir Gíslason,2026,U17Q,26034,True,3,3,0,79,1,0,0,0,0
 1523576,Styrmir Gíslason,2025,IS1,1231,False,1,0,0,0,0,0,0,0,0
 1523576,Styrmir Gíslason,2025,FS,53670,True,4,4,0,189,0,0,0,0,0
-1064533,Jón Breki Gudmundsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
+1064533,Jón Breki Gudmundsson,2026,U19Q,25785,True,4,0,0,0,0,0,0,0,0
 1064533,Jón Breki Gudmundsson,2025,ISL,1231,False,4,0,0,0,0,0,0,0,0
 1064533,Jón Breki Gudmundsson,2025,IS1P,1231,False,5,0,0,0,0,0,0,0,0
 1064533,Jón Breki Gudmundsson,2025,IS1,1231,False,22,0,0,0,0,0,0,0,0
@@ -9238,7 +9245,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1187886,Markús Páll Ellertsson,2023,IS1P,3832,False,5,4,0,211,1,0,7,4,0
 1187886,Markús Páll Ellertsson,2023,IS1,3832,False,22,3,0,8,0,0,3,0,1
 1187886,Markús Páll Ellertsson,2022,IS1P,3832,False,1,0,0,0,0,0,0,0,0
-1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,3,3,0,162,2,0,0,0,0
+1244516,Gabríel Snaer Gunnarsson,2026,U19Q,25785,True,4,4,0,188,2,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2026,SEC,1101,False,1,1,0,20,0,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2025,U19Q,25785,True,3,2,0,68,0,0,0,0,0
 1244516,Gabríel Snaer Gunnarsson,2025,SE1,1101,False,17,0,0,0,0,0,0,0,0
@@ -9527,7 +9534,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 472866,Ísak Óli Ólafsson,2016,FS,26034,True,2,1,0,80,0,0,0,0,0
 472866,Ísak Óli Ólafsson,2015,FS,53670,True,1,1,0,80,0,0,0,0,0
 332534,Birkir Valur Jónsson,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
-332534,Birkir Valur Jónsson,2025,IS1P,1185,False,5,5,0,412,0,1,2,1,1
+332534,Birkir Valur Jónsson,2025,IS1P,1185,False,5,5,0,412,0,2,2,1,1
 332534,Birkir Valur Jónsson,2025,IS1,1185,False,22,17,0,1145,0,0,4,1,3
 332534,Birkir Valur Jónsson,2024,ISP,1185,False,1,1,0,90,0,0,0,0,1
 332534,Birkir Valur Jónsson,2024,ISL,1185,False,4,2,0,80,0,0,0,0,0
@@ -9575,9 +9582,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 332534,Birkir Valur Jónsson,2014,IS2,11382,False,22,6,0,225,0,0,0,0,1
 332534,Birkir Valur Jónsson,2014,FS,26034,True,4,4,0,252,0,0,0,0,0
 332534,Birkir Valur Jónsson,2013,IS2,11382,False,2,0,0,0,0,0,0,0,0
-927461,Baldur Kári Helgason,2025,U21Q,22414,True,11,5,0,379,0,0,0,0,0
+927461,Baldur Kári Helgason,2025,U21Q,22414,True,12,5,0,379,0,0,0,0,0
 927461,Baldur Kári Helgason,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
-927461,Baldur Kári Helgason,2025,IS1P,1185,False,5,5,0,426,0,0,5,0,0
+927461,Baldur Kári Helgason,2025,IS1P,1185,False,5,5,0,426,0,1,5,0,0
 927461,Baldur Kári Helgason,2025,IS1,1185,False,22,21,0,1888,0,1,11,2,6
 927461,Baldur Kári Helgason,2025,FS,3574,True,1,1,0,5,0,0,0,0,0
 927461,Baldur Kári Helgason,2024,ISP,1185,False,1,1,0,68,0,0,0,0,1
@@ -9792,7 +9799,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1235396,Óttar Uni Steinbjörnsson,2023,IS1P,1185,False,5,1,0,84,0,0,0,0,1
 1235396,Óttar Uni Steinbjörnsson,2023,IS1,1185,False,22,1,0,14,0,0,1,0,1
 1235396,Óttar Uni Steinbjörnsson,2022,ISP,28495,False,1,0,0,0,0,0,0,0,0
-868161,Tómas Orri Róbertsson,2025,U21Q,22414,True,11,7,0,413,0,0,0,0,1
+868161,Tómas Orri Róbertsson,2025,U21Q,22414,True,12,9,0,587,0,0,0,0,1
 868161,Tómas Orri Róbertsson,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
 868161,Tómas Orri Róbertsson,2025,IS1P,1185,False,5,4,0,262,2,0,9,3,1
 868161,Tómas Orri Róbertsson,2025,IS1,1185,False,22,20,0,1587,4,2,31,12,9
@@ -9836,7 +9843,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 878350,Kári Kristjánsson,2020,ISP,9175,False,2,0,0,0,0,0,0,0,0
 878350,Kári Kristjánsson,2020,ISL,9175,False,4,2,0,113,0,0,0,0,0
 878350,Kári Kristjánsson,2020,IS2,9175,False,22,4,0,31,0,0,0,0,0
-1334374,Róbert Hugi Saevarsson,2026,U19Q,25785,True,2,1,0,1,0,0,0,0,0
+1334374,Róbert Hugi Saevarsson,2026,U19Q,25785,True,4,1,0,1,0,0,0,0,0
 1334374,Róbert Hugi Saevarsson,2026,U17Q,26034,True,3,3,0,270,0,0,0,0,0
 1334374,Róbert Hugi Saevarsson,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
 1334374,Róbert Hugi Saevarsson,2025,IS1P,1185,False,5,2,0,103,0,0,0,0,0
@@ -9860,7 +9867,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 940412,Allan Purisevic,2021,FS,70766,True,2,2,0,81,0,0,0,0,0
 940412,Allan Purisevic,2021,FS,53670,True,2,1,0,80,0,0,0,0,0
 665297,Kjartan Kári Halldórsson,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
-665297,Kjartan Kári Halldórsson,2025,IS1P,1185,False,5,5,0,440,3,0,17,9,0
+665297,Kjartan Kári Halldórsson,2025,IS1P,1185,False,5,5,0,440,3,3,17,9,0
 665297,Kjartan Kári Halldórsson,2025,IS1,1185,False,22,22,0,1930,5,8,87,25,3
 665297,Kjartan Kári Halldórsson,2024,ISP,1185,False,1,1,0,90,0,0,0,0,0
 665297,Kjartan Kári Halldórsson,2024,ISL,1185,False,4,3,0,234,1,0,0,0,0
@@ -9890,7 +9897,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 665297,Kjartan Kári Halldórsson,2018,IS2,25873,False,1,0,0,0,0,0,0,0,0
 665297,Kjartan Kári Halldórsson,2018,FS,53670,True,1,0,0,0,0,0,0,0,0
 205650,Kristján Flóki Finnbogason,2025,ISL,1185,False,5,0,0,0,0,0,0,0,0
-205650,Kristján Flóki Finnbogason,2025,IS1P,1185,False,5,5,0,365,0,0,7,2,1
+205650,Kristján Flóki Finnbogason,2025,IS1P,1185,False,5,5,0,365,0,1,7,2,1
 205650,Kristján Flóki Finnbogason,2025,IS1,1185,False,22,16,0,737,0,2,11,3,2
 205650,Kristján Flóki Finnbogason,2024,ISP,1185,False,1,1,0,22,0,0,0,0,0
 205650,Kristján Flóki Finnbogason,2024,ISL,1185,False,4,1,0,15,0,0,0,0,0
@@ -10065,7 +10072,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1055664,Ísak Atli Atlason,2022,IS1P,1185,False,1,0,0,0,0,0,0,0,0
 1055664,Ísak Atli Atlason,2022,FS,70766,True,2,2,0,65,0,0,0,0,0
 1055602,Gils Gíslason,2025,ISL,1185,False,5,1,0,90,0,0,0,0,0
-1055602,Gils Gíslason,2025,IS1P,1185,False,5,5,0,367,4,1,14,7,0
+1055602,Gils Gíslason,2025,IS1P,1185,False,5,5,0,367,4,3,14,7,0
 1055602,Gils Gíslason,2025,IS1,1185,False,22,18,0,765,5,1,25,15,2
 1055602,Gils Gíslason,2024,ISP,1185,False,1,1,0,3,0,0,0,0,0
 1055602,Gils Gíslason,2024,ISL,1185,False,4,4,0,227,3,0,0,0,0
@@ -10077,7 +10084,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1055602,Gils Gíslason,2022,FS,70766,True,2,2,0,113,2,0,0,0,0
 1055602,Gils Gíslason,2021,IS1P,1185,False,1,1,0,1,0,0,0,0,0
 464449,Arnór Borg Gudjohnsen,2025,ISL,1185,False,5,0,0,0,0,0,0,0,0
-464449,Arnór Borg Gudjohnsen,2025,IS1P,1185,False,5,3,0,56,0,0,1,0,0
+464449,Arnór Borg Gudjohnsen,2025,IS1P,1185,False,5,3,0,56,0,1,1,0,0
 464449,Arnór Borg Gudjohnsen,2025,IS1,1185,False,22,14,0,561,0,0,10,4,0
 464449,Arnór Borg Gudjohnsen,2024,ISP,29224,False,4,1,0,70,0,1,0,0,0
 464449,Arnór Borg Gudjohnsen,2024,ISP,1185,False,1,1,0,83,0,0,0,0,0
@@ -10118,6 +10125,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 464449,Arnór Borg Gudjohnsen,2017,GB18,14626,False,22,13,0,819,0,1,0,0,0
 464449,Arnór Borg Gudjohnsen,2017,FAYC,14626,False,2,0,0,0,0,0,0,0,0
 464449,Arnór Borg Gudjohnsen,2016,19YL,55954,False,2,1,0,16,0,0,0,0,0
+1537539,Benjamín Bæring,2025,IS1P,1185,False,5,3,0,45,0,0,1,0,0
 1537539,Benjamín Bæring,2025,IS1,1185,False,22,11,0,219,1,0,4,2,0
 1192094,Aron Dadi Svavarsson,2025,IS1P,1185,False,4,1,0,4,0,0,0,0,0
 1192094,Aron Dadi Svavarsson,2025,IS1,1185,False,14,0,0,0,0,0,0,0,0
@@ -10127,7 +10135,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1192094,Aron Dadi Svavarsson,2024,FS,53670,True,3,3,0,161,1,0,0,0,0
 1192094,Aron Dadi Svavarsson,2023,FS,70766,True,2,1,0,33,0,0,0,0,0
 1192094,Aron Dadi Svavarsson,2022,FS,70766,True,1,1,0,90,0,0,0,0,0
-1072750,Ásgeir Steinn Steinarsson,2026,U19Q,25785,True,3,0,0,0,0,0,0,0,0
+1072750,Ásgeir Steinn Steinarsson,2026,U19Q,25785,True,4,0,0,0,0,0,0,0,0
 1072750,Ásgeir Steinn Steinarsson,2025,IS1P,1185,False,5,2,0,52,0,0,0,0,0
 1072750,Ásgeir Steinn Steinarsson,2025,IS1,1185,False,17,1,0,2,0,0,0,0,0
 1072750,Ásgeir Steinn Steinarsson,2025,FS,25785,True,3,2,0,53,0,0,0,0,0
@@ -10143,7 +10151,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1143068,Bastian Andersen,2024,DKDL,15709,False,26,23,0,1154,7,0,0,0,1
 1143068,Bastian Andersen,2023,DKDL,15709,False,26,23,0,904,8,0,0,0,1
 1143068,Bastian Andersen,2022,DKRE,62688,False,1,1,0,19,0,0,0,0,0
-605668,Ari Petersen,2026,UNLC,9173,True,4,0,0,0,0,0,0,0,0
+605668,Ari Petersen,2026,UNLC,9173,True,6,0,0,0,0,0,0,0,0
 605668,Ari Petersen,2025,ISL,8036,False,1,0,0,0,0,0,0,0,0
 605668,Ari Petersen,2025,IS1P,8036,False,5,5,0,438,0,0,0,0,0
 605668,Ari Petersen,2025,IS1,8036,False,22,18,0,1620,0,0,0,0,0
@@ -10185,7 +10193,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 943984,Ivan Vidrih,2021,SB17,68979,False,13,2,0,100,0,0,0,0,0
 943984,Ivan Vidrih,2021,SB17,66822,False,17,0,0,0,0,0,0,0,0
 376632,Milan Jezdimirovic,2026,SERP,3069,False,1,1,0,62,0,0,0,0,0
-376632,Milan Jezdimirovic,2026,SER2,3069,False,17,5,0,77,0,0,0,0,1
+376632,Milan Jezdimirovic,2026,SER2,3069,False,18,5,0,77,0,0,0,0,1
 376632,Milan Jezdimirovic,2025,ISL,8036,False,3,0,0,0,0,0,0,0,0
 376632,Milan Jezdimirovic,2025,IS1,8036,False,12,7,0,457,0,0,3,2,2
 376632,Milan Jezdimirovic,2024,SR1R,36922,False,7,4,0,290,0,0,0,0,1
@@ -10326,7 +10334,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 422298,Sigurdur Arnar Magnússon,2008,IS1,8036,False,22,0,0,0,0,0,0,0,0
 422298,Sigurdur Arnar Magnússon,2007,IS2,8036,False,1,0,0,0,0,0,0,0,0
 571309,Arnór Ingi Kristinsson,2025,ISL,8036,False,3,0,0,0,0,0,0,0,0
-571309,Arnór Ingi Kristinsson,2025,IS1P,8036,False,5,5,0,445,1,0,6,2,1
+571309,Arnór Ingi Kristinsson,2025,IS1P,8036,False,5,5,0,445,1,1,6,2,1
 571309,Arnór Ingi Kristinsson,2025,IS1,8036,False,22,19,0,1457,0,0,12,3,4
 571309,Arnór Ingi Kristinsson,2024,ISP,8036,False,3,2,0,103,0,0,0,0,0
 571309,Arnór Ingi Kristinsson,2024,ISL,8036,False,5,5,0,392,0,0,0,0,3
@@ -10439,7 +10447,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 652823,Bjarki Björn Gunnarsson,2018,ISL,5849,False,1,0,0,0,0,0,0,0,0
 1034027,Róbert Elís Hlynsson,2025,U19Q,25785,True,3,2,0,113,0,0,0,0,0
 1034027,Róbert Elís Hlynsson,2025,ISL,3237,False,1,0,0,0,0,0,0,0,0
-1034027,Róbert Elís Hlynsson,2025,IS1P,8036,False,5,4,0,186,0,0,5,2,1
+1034027,Róbert Elís Hlynsson,2025,IS1P,8036,False,5,4,0,186,0,1,5,2,1
 1034027,Róbert Elís Hlynsson,2025,IS1,8036,False,22,20,0,1320,4,1,30,12,3
 1034027,Róbert Elís Hlynsson,2025,FS,25785,True,3,0,0,0,0,0,0,0,0
 1034027,Róbert Elís Hlynsson,2024,U19Q,25785,True,3,2,0,32,0,0,0,0,0
@@ -10592,7 +10600,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1376035,Emil Gautason,2024,IS1P,8036,False,5,0,0,0,0,0,0,0,0
 1376035,Emil Gautason,2024,IS1,8036,False,8,1,0,1,0,0,0,0,0
 442337,Filip Stuparevic,2026,SERP,788,False,1,1,0,21,0,0,0,0,0
-442337,Filip Stuparevic,2026,SER2,788,False,17,17,0,958,6,0,0,0,2
+442337,Filip Stuparevic,2026,SER2,788,False,18,18,0,1048,6,0,0,0,2
 442337,Filip Stuparevic,2025,SFA,987,False,2,0,2,0,0,0,0,0,0
 442337,Filip Stuparevic,2025,SCP,987,False,7,0,7,0,0,0,0,0,0
 442337,Filip Stuparevic,2025,SC1,987,False,31,0,30,0,0,0,0,0,0
@@ -10691,7 +10699,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 914929,Viggó Valgeirsson,2021,ISP,26361,False,2,0,0,0,0,0,0,0,0
 914929,Viggó Valgeirsson,2020,IS2,8036,False,1,0,0,0,0,0,0,0,0
 696603,Omar Sowe,2025,ISL,8036,False,3,0,0,0,0,0,0,0,0
-696603,Omar Sowe,2025,IS1P,8036,False,5,4,0,234,1,0,11,4,0
+696603,Omar Sowe,2025,IS1P,8036,False,5,4,0,234,1,1,11,4,0
 696603,Omar Sowe,2025,IS1,8036,False,22,12,0,584,5,0,28,15,1
 696603,Omar Sowe,2024,ISP,8036,False,3,1,0,76,2,0,0,0,0
 696603,Omar Sowe,2024,ISL,8036,False,5,4,0,179,0,0,0,0,1
@@ -10906,7 +10914,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 930081,Ragnar Óli Ragnarsson,2021,IS2,21864,False,22,15,0,881,0,0,0,0,1
 930081,Ragnar Óli Ragnarsson,2020,ISP,21864,False,2,0,0,0,0,0,0,0,0
 930081,Ragnar Óli Ragnarsson,2020,IS2,21864,False,17,0,0,0,0,0,0,0,0
-1181321,Ásbjörn Líndal Arnarsson,2026,U19Q,25785,True,3,2,0,91,1,0,0,0,0
+1181321,Ásbjörn Líndal Arnarsson,2026,U19Q,25785,True,4,3,0,181,1,0,0,0,0
 1181321,Ásbjörn Líndal Arnarsson,2026,19YL,145629,False,1,1,0,90,0,0,0,0,0
 1181321,Ásbjörn Líndal Arnarsson,2025,U19Q,25785,True,3,0,0,0,0,0,0,0,0
 1181321,Ásbjörn Líndal Arnarsson,2025,ISL,21864,False,5,0,0,0,0,0,0,0,0
@@ -10980,7 +10988,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 656408,Vilhelm Ottó Ottósson,2021,ISL,21864,False,1,0,0,0,0,0,0,0,0
 656408,Vilhelm Ottó Ottósson,2021,IS2,21864,False,9,5,0,251,0,0,0,0,0
 656408,Vilhelm Ottó Ottósson,2018,ISL,21864,False,1,0,0,0,0,0,0,0,0
-1072746,Sverrir Páll Ingason,2026,U19Q,25785,True,3,2,0,180,0,1,0,0,1
+1072746,Sverrir Páll Ingason,2026,U19Q,25785,True,4,2,0,180,0,1,0,0,1
 1072746,Sverrir Páll Ingason,2026,19YL,145629,False,1,1,0,90,0,1,0,0,1
 1072746,Sverrir Páll Ingason,2025,ISL,21864,False,5,0,0,0,0,0,0,0,0
 1072746,Sverrir Páll Ingason,2025,IS1P,21864,False,5,3,0,252,1,0,2,1,1
@@ -11026,7 +11034,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1192092,Kristófer Kató Fridriksson,2024,FS,53670,True,3,3,0,124,0,0,0,0,0
 1192092,Kristófer Kató Fridriksson,2023,FS,70766,True,2,2,0,113,0,0,0,0,0
 1192092,Kristófer Kató Fridriksson,2022,FS,70766,True,1,1,0,8,0,0,0,0,0
-1072748,Einar Freyr Halldórsson,2026,U19Q,25785,True,3,3,0,270,0,0,0,0,2
+1072748,Einar Freyr Halldórsson,2026,U19Q,25785,True,4,3,0,270,0,0,0,0,2
 1072748,Einar Freyr Halldórsson,2025,U19Q,25785,True,3,2,0,24,0,0,0,0,0
 1072748,Einar Freyr Halldórsson,2025,ISL,21864,False,5,0,0,0,0,0,0,0,0
 1072748,Einar Freyr Halldórsson,2025,IS1P,21864,False,5,5,0,448,0,0,7,4,2
@@ -11472,7 +11480,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1376232,Peter Ingi Helgason,2024,ISP,21864,False,4,1,0,1,1,0,0,0,0
 1376232,Peter Ingi Helgason,2024,ISL,21864,False,4,1,0,17,0,0,0,0,0
 1376232,Peter Ingi Helgason,2024,IS2,21864,False,22,4,0,47,0,0,0,0,0
-1021115,Ásgeir Orri Magnússon,2025,U21Q,22414,True,11,0,0,0,0,0,0,0,0
+1021115,Ásgeir Orri Magnússon,2025,U21Q,22414,True,12,0,0,0,0,0,0,0,0
 1021115,Ásgeir Orri Magnússon,2025,ISL,8037,False,3,0,0,0,0,0,0,0,0
 1021115,Ásgeir Orri Magnússon,2025,IS1P,8037,False,5,5,0,450,0,0,0,0,0
 1021115,Ásgeir Orri Magnússon,2025,IS1,8037,False,22,22,0,1980,0,0,1,0,2
@@ -11623,7 +11631,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 322071,Anton Kralj,2014,JUSÖ,7917,False,26,20,0,1800,0,0,0,0,3
 322071,Anton Kralj,2014,FS,23487,True,8,7,0,514,0,1,0,0,0
 322071,Anton Kralj,2014,19YL,45506,False,5,5,0,447,0,0,0,0,2
-322071,Anton Kralj,2013,JUSÖ,7917,False,3,0,0,0,0,0,0,0,0
+322071,Anton Kralj,2013,JUSÖ,7917,False,18,0,0,0,0,0,0,0,0
 322071,Anton Kralj,2013,FS,41525,True,2,1,0,80,0,0,0,0,0
 531840,Elvis Bwomono,2025,SCPA,370,False,5,2,0,15,0,0,0,0,0
 531840,Elvis Bwomono,2025,SC1,370,False,2,1,0,5,0,0,0,0,0

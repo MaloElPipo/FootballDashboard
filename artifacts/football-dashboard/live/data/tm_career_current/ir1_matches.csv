@@ -1,4 +1,5 @@
 player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is_national_team,game_id,game_day,club_id,venue,opponent_club_id,club_goals,opponent_goals,participation_state,shirt_number,position_id,is_captain,played_minutes,goals,assists,shots_total,shots_on_goal,shots_off_goal,shots_blocked,yellow_card_minute,substituted_in_minute,substituted_out_minute,injury_id,absence_id
+514370,Jubril Okedina,2026-11-14T15:00:00+00:00,2026,GB3,3,False,4911413,15,349,away,1071,1,2,played,12,5,False,90,0,0,1,0,1,0,,,,0,0
 514370,Jubril Okedina,2026-11-11T19:00:00+00:00,2026,GBFL,21,False,5052809,3,349,home,1078,5,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 514370,Jubril Okedina,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083988,1,349,home,3717,7,2,played,12,5,False,90,0,1,0,0,0,0,65,,,0,0
 514370,Jubril Okedina,2026-10-31T15:00:00+00:00,2026,GB3,3,False,4911391,14,349,home,988,1,1,played,12,0,False,78,0,1,0,0,0,0,,12,,0,0
@@ -10,11 +11,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 514370,Jubril Okedina,2026-09-22T18:00:00+00:00,2026,GBFL,21,False,5052808,1,349,home,20116,3,4,played,12,3,False,90,0,0,0,0,0,0,,,,0,0
 514370,Jubril Okedina,2026-09-19T11:30:00+00:00,2026,GB3,3,False,4911212,7,349,home,1003,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 514370,Jubril Okedina,2026-09-15T18:30:00+00:00,2026,CGB,14,False,5045444,4,349,away,1072,9,10,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+1005113,Maill Lundgren,2026-11-16T17:00:00+00:00,2026,AFCQ,19,True,5074873,6,13953,home,3856,1,3,played,23,9,False,78,0,0,0,0,0,0,,,78,0,0
+1005113,Maill Lundgren,2026-11-12T17:00:00+00:00,2026,AFCQ,19,True,5074849,5,13953,away,3856,1,2,played,23,0,False,20,1,0,2,1,0,1,,70,,0,0
 1005113,Maill Lundgren,2026-10-28T17:00:00+00:00,2026,NOPO,8,False,5074314,3,13519,home,3837,2,5,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 1005113,Maill Lundgren,2026-09-30T16:00:00+00:00,2026,AFCQ,19,True,5047010,4,13953,away,3806,0,5,played,23,0,False,32,0,0,0,0,0,0,,58,,0,0
 1005113,Maill Lundgren,2026-09-26T13:00:00+00:00,2026,AFCQ,19,True,5046880,3,13953,away,8987,1,1,played,23,0,False,12,0,0,0,0,0,0,,78,,0,0
 1005113,Maill Lundgren,2026-09-16T16:00:00+00:00,2026,NOPO,8,False,5040675,2,13519,away,32682,2,0,played,7,12,False,67,0,0,0,0,0,0,,,67,0,0
 1005113,Maill Lundgren,2026-08-22T14:00:00+00:00,2026,NOPO,8,False,4896505,1,13519,away,22478,6,0,played,7,11,False,90,1,1,0,0,0,0,,,,0,0
+1299765,Callum Doherty,2026-11-13T19:45:00+00:00,2026,NIR2,2,False,4917962,16,47059,away,6068,0,3,played,16,0,False,29,0,0,0,0,0,0,,61,,0,0
 1299765,Callum Doherty,2026-11-06T19:45:00+00:00,2026,NIR2,2,False,4917955,15,47059,home,63172,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1299765,Callum Doherty,2026-10-30T19:45:00+00:00,2026,NIR2,2,False,4917948,14,47059,away,59986,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1299765,Callum Doherty,2026-10-23T18:45:00+00:00,2026,NIR2,2,False,4917939,13,47059,home,21929,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -28,7 +32,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1299765,Callum Doherty,2026-09-05T14:00:00+00:00,2026,NIR2,2,False,4917882,6,47059,away,63169,0,6,played,16,0,False,56,0,0,0,0,0,0,,,56,0,0
 1299765,Callum Doherty,2026-08-28T18:45:00+00:00,2026,NIR2,2,False,4917870,5,47059,home,24104,1,2,played,16,0,False,28,0,0,0,0,0,0,,62,,0,0
 1299765,Callum Doherty,2026-08-22T14:00:00+00:00,2026,NIR2,2,False,4917868,4,47059,home,41137,1,2,played,16,0,False,25,0,0,0,0,0,0,,65,,0,0
-1299765,Callum Doherty,2026-08-15T14:00:00+00:00,2026,NIR2,2,False,4917854,3,47059,away,3463,1,4,played,16,0,False,21,0,0,0,0,0,0,,69,,0,0
+1475565,Shea Callister,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917572,32,21532,away,8714,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1475565,Shea Callister,2026-11-07T15:00:00+00:00,2026,NIR1,1,False,4917468,15,21532,away,21531,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1475565,Shea Callister,2026-10-31T15:00:00+00:00,2026,NIR1,1,False,4917466,14,21532,away,15250,4,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1475565,Shea Callister,2026-10-24T14:00:00+00:00,2026,NIR1,1,False,4917458,13,21532,home,3831,0,5,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -44,7 +48,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1475565,Shea Callister,2026-09-01T18:45:00+00:00,2026,CASH,21,False,5082153,1,21532,home,15244,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1475565,Shea Callister,2026-08-29T14:00:00+00:00,2026,NIR1,1,False,4916729,4,21532,away,9026,2,1,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
 1475565,Shea Callister,2026-08-22T17:00:00+00:00,2026,NIR1,1,False,4916735,3,21532,home,5594,3,2,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
-1475565,Shea Callister,2026-08-15T14:00:00+00:00,2026,NIR1,1,False,4916764,2,21532,home,15244,2,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+957309,Jason Healy,2026-11-13T19:45:00+00:00,2026,NIR2,2,False,4917964,16,41137,away,59986,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 957309,Jason Healy,2026-11-07T15:00:00+00:00,2026,NIR2,2,False,4917953,15,41137,home,14958,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 957309,Jason Healy,2026-10-24T14:00:00+00:00,2026,NIR2,2,False,4917935,13,41137,home,21825,1,2,played,1,0,False,90,0,0,0,0,0,0,,,,0,0
 957309,Jason Healy,2026-10-20T18:45:00+00:00,2026,NILC,8,False,5049246,1,41137,away,21930,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -57,7 +61,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 957309,Jason Healy,2026-09-05T14:00:00+00:00,2026,NIR2,2,False,4917880,6,41137,away,63171,4,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 957309,Jason Healy,2026-08-28T18:45:00+00:00,2026,NIR2,2,False,4917873,5,41137,home,63170,2,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 957309,Jason Healy,2026-08-22T14:00:00+00:00,2026,NIR2,2,False,4917868,4,41137,away,47059,2,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-957309,Jason Healy,2026-08-15T14:00:00+00:00,2026,NIR2,2,False,4917855,3,41137,home,21930,1,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+683665,Rob Slevin,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917475,16,3831,home,5594,3,0,played,19,0,False,33,0,0,0,0,0,0,,57,,0,0
 683665,Rob Slevin,2026-11-07T18:00:00+00:00,2026,NIR1,1,False,4917472,15,3831,away,3471,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 683665,Rob Slevin,2026-10-30T19:45:00+00:00,2026,NIR1,1,False,4917464,14,3831,home,9026,1,1,played,19,3,False,16,0,0,0,0,0,0,,74,,0,0
 683665,Rob Slevin,2026-10-24T14:00:00+00:00,2026,NIR1,1,False,4917458,13,3831,away,21532,5,0,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -73,7 +77,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 683665,Rob Slevin,2026-09-01T18:45:00+00:00,2026,NWSC,21,False,5041567,1,3831,home,35843,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 683665,Rob Slevin,2026-08-28T18:45:00+00:00,2026,NIR1,1,False,4916731,4,3831,away,5594,3,0,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
 683665,Rob Slevin,2026-08-22T14:00:00+00:00,2026,NIR1,1,False,4916734,3,3831,away,8714,2,0,played,19,3,False,90,0,0,0,0,0,0,31,,,0,0
-683665,Rob Slevin,2026-08-15T14:00:00+00:00,2026,NIR1,1,False,4916763,2,3831,home,3461,0,0,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
+596142,Wessel Speel,2026-11-14T19:00:00+00:00,2026,NL2,2,False,4914174,15,723,home,500,6,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 596142,Wessel Speel,2026-11-06T19:00:00+00:00,2026,NL2,2,False,4914187,14,723,away,11368,3,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 596142,Wessel Speel,2026-10-30T19:00:00+00:00,2026,NL2,2,False,4914167,13,723,away,235,2,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 596142,Wessel Speel,2026-10-27T19:00:00+00:00,2026,NLP,8,False,5065515,3,723,away,1434,2,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -87,9 +91,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 596142,Wessel Speel,2026-09-04T18:00:00+00:00,2026,NL2,2,False,4912999,5,723,home,8817,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 596142,Wessel Speel,2026-08-29T14:30:00+00:00,2026,NL2,2,False,4913026,4,723,away,642,4,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 596142,Wessel Speel,2026-08-21T18:00:00+00:00,2026,NL2,2,False,4913044,3,723,away,499,3,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
-596142,Wessel Speel,2026-08-14T18:00:00+00:00,2026,NL2,2,False,4913009,2,723,home,9715,3,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 546159,Will Fitzgerald,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,played,24,4,False,90,0,0,0,0,0,0,,,,0,0
 546159,Will Fitzgerald,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,played,24,9,False,90,0,0,0,0,0,0,,,,0,0
+1110017,Jesse Dempsey,2026-11-14T17:30:00+00:00,2026,GB4,4,False,4919896,15,11177,home,1074,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1110017,Jesse Dempsey,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083987,1,11177,home,1088,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1110017,Jesse Dempsey,2026-11-02T19:00:00+00:00,2026,21PL,15,False,5062763,4,53088,away,130649,0,1,played,3,4,False,90,0,0,0,0,0,0,,,,0,0
 1110017,Jesse Dempsey,2026-10-31T15:00:00+00:00,2026,GB4,4,False,4911624,14,11177,home,2455,3,1,played for a different team,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -112,8 +116,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1110017,Jesse Dempsey,2026-08-29T14:00:00+00:00,2026,GB4,4,False,4911287,3,11177,away,1034,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1110017,Jesse Dempsey,2026-08-25T18:45:00+00:00,2026,CGB,14,False,5016480,3,11177,home,3054,4,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1110017,Jesse Dempsey,2026-08-22T14:00:00+00:00,2026,GB4,4,False,4911251,2,11177,home,2814,0,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
-1110017,Jesse Dempsey,2026-08-18T18:00:00+00:00,2026,21PL,15,False,5062758,1,53088,home,130649,1,2,played,5,3,False,66,0,0,0,0,0,0,,,66,0,0
-1110017,Jesse Dempsey,2026-08-15T14:00:00+00:00,2026,GB4,4,False,4911262,1,11177,away,1219,1,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
+1472548,Ryan Long,2026-11-14T14:00:00+00:00,2026,NIR3,3,False,4946708,11,35843,away,68651,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1472548,Ryan Long,2026-11-07T15:00:00+00:00,2026,NIR3,3,False,4946706,10,35843,home,109766,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1472548,Ryan Long,2026-10-31T14:00:00+00:00,2026,NIR3,3,False,4946698,9,35843,away,48871,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1472548,Ryan Long,2026-10-10T14:00:00+00:00,2026,NIR3,3,False,4946687,7,35843,away,21931,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -123,7 +126,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1472548,Ryan Long,2026-09-01T18:45:00+00:00,2026,NWSC,21,False,5041567,1,35843,away,3831,1,5,played,0,0,False,45,0,0,0,0,0,0,,,46,0,0
 1472548,Ryan Long,2026-08-22T12:00:00+00:00,2026,NIR3,3,False,4946662,3,35843,home,9025,0,0,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1472548,Ryan Long,2026-08-18T18:45:00+00:00,2026,NIR3,3,False,4946656,2,35843,home,4421,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1472548,Ryan Long,2026-08-08T12:00:00+00:00,2026,NIR3,3,False,4946648,1,35843,away,21932,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1260401,TJ Molloy,2026-11-13T19:45:00+00:00,2026,NIR2,2,False,4917959,16,21930,away,12903,0,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260401,TJ Molloy,2026-11-07T15:00:00+00:00,2026,NIR2,2,False,4917949,15,21930,home,24104,0,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260401,TJ Molloy,2026-10-31T15:00:00+00:00,2026,NIR2,2,False,4917943,14,21930,away,21929,1,0,played,14,0,False,59,0,0,0,0,0,0,,,59,0,0
 1260401,TJ Molloy,2026-10-24T14:00:00+00:00,2026,NIR2,2,False,4917934,13,21930,home,14958,1,1,played,14,0,False,11,0,0,0,0,0,0,,79,,0,0
@@ -138,7 +141,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1260401,TJ Molloy,2026-09-04T18:45:00+00:00,2026,NIR2,2,False,4917881,6,21930,away,6068,2,2,played,14,11,False,86,0,0,0,0,0,0,,,86,0,0
 1260401,TJ Molloy,2026-08-28T18:45:00+00:00,2026,NIR2,2,False,4917876,5,21930,away,63171,0,1,played,0,0,False,87,0,0,0,0,0,0,,,87,0,0
 1260401,TJ Molloy,2026-08-22T14:00:00+00:00,2026,NIR2,2,False,4917863,4,21930,home,3463,2,2,played,0,0,False,90,2,0,0,0,0,0,,,,0,0
-1260401,TJ Molloy,2026-08-15T14:00:00+00:00,2026,NIR2,2,False,4917855,3,21930,away,41137,0,1,played,14,0,False,70,0,0,0,0,0,0,,,70,0,0
+1134233,Alex Noonan,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,1,1,True,90,0,0,0,0,0,0,,,,0,0
 1134233,Alex Noonan,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1134233,Alex Noonan,2026-11-10T19:45:00+00:00,2026,GBFL,21,False,5016647,3,26117,away,1060,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134233,Alex Noonan,2026-11-03T19:45:00+00:00,2026,NLC,14,False,5013576,4,26117,away,3717,5,0,in squad,31,,False,0,0,0,0,0,0,0,,,,0,0
@@ -159,6 +162,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1134233,Alex Noonan,2026-09-08T18:00:00+00:00,2026,NLC,14,False,5013537,2,26117,away,3868,0,3,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1134233,Alex Noonan,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
 1134233,Alex Noonan,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,in squad,41,,False,0,0,0,0,0,0,0,,,,0,0
+939272,Maleace Asamoah,2026-11-14T15:00:00+00:00,2026,GB4,4,False,4919897,15,1211,home,3688,4,2,played,27,0,False,5,0,0,0,0,0,0,,85,,0,0
 939272,Maleace Asamoah,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083997,1,1211,home,2964,4,2,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 939272,Maleace Asamoah,2026-10-31T12:30:00+00:00,2026,GB4,4,False,4911628,14,1211,home,1088,4,2,played,27,0,False,3,0,0,0,0,0,0,,87,,0,0
 939272,Maleace Asamoah,2026-10-27T19:00:00+00:00,2026,GBFL,21,False,5016604,3,1211,home,9265,5,0,played,27,8,False,90,1,0,2,2,0,0,,,,0,0
@@ -180,6 +184,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 184007,Rory Gaffney,2026-08-04T19:00:00+00:00,2026,ELQ,10,False,4973694,5,3258,home,27114,3,1,injured,,,False,0,0,0,0,0,0,0,,,,154,0
 184007,Rory Gaffney,2026-07-28T19:00:00+00:00,2026,CLQ,10,False,4942886,4,3258,home,53453,2,1,injured,,,False,0,0,0,0,0,0,0,,,,154,0
 184007,Rory Gaffney,2026-07-21T16:00:00+00:00,2026,CLQ,10,False,4942868,3,3258,away,53453,0,2,injured,,,False,0,0,0,0,0,0,0,,,,154,0
+1226925,Rhys Brennan,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917474,16,3471,away,15244,3,0,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1226925,Rhys Brennan,2026-11-07T18:00:00+00:00,2026,NIR1,1,False,4917472,15,3471,home,3831,3,0,played,19,9,False,73,1,0,0,0,0,0,,,73,0,0
 1226925,Rhys Brennan,2026-10-31T15:00:00+00:00,2026,NIR1,1,False,4917467,14,3471,home,21515,1,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1226925,Rhys Brennan,2026-10-23T18:45:00+00:00,2026,NIR1,1,False,4917461,13,3471,away,5594,2,1,played,19,8,False,90,1,0,0,0,0,0,,,,0,0
@@ -191,6 +196,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1226925,Rhys Brennan,2026-09-15T18:45:00+00:00,2026,NIR1,1,False,4916743,7,3471,away,5594,1,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1226925,Rhys Brennan,2026-09-12T17:00:00+00:00,2026,NIR1,1,False,4916753,6,3471,away,21515,1,0,played,19,11,False,25,0,0,0,0,0,0,,65,,0,0
 1226925,Rhys Brennan,2026-09-05T14:00:00+00:00,2026,NIR1,1,False,4916773,5,3471,home,8714,1,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+355376,Jamie McGonigle,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917479,16,15250,home,1251,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 355376,Jamie McGonigle,2026-11-07T15:00:00+00:00,2026,NIR1,1,False,4917471,15,15250,away,21515,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 355376,Jamie McGonigle,2026-10-31T15:00:00+00:00,2026,NIR1,1,False,4917466,14,15250,home,21532,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 355376,Jamie McGonigle,2026-10-27T19:45:00+00:00,2026,NIR1,1,False,4916737,3,15250,away,3461,1,1,played,10,14,False,90,0,0,0,0,0,0,,,,0,0
@@ -205,6 +211,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 355376,Jamie McGonigle,2026-09-15T18:45:00+00:00,2026,NIR1,1,False,4916742,7,15250,home,21531,3,1,played,10,14,False,70,3,0,0,0,0,0,,,70,0,0
 355376,Jamie McGonigle,2026-09-12T14:00:00+00:00,2026,NIR1,1,False,4916752,6,15250,away,21532,2,1,played,10,14,False,90,1,0,0,0,0,0,,,90,0,0
 355376,Jamie McGonigle,2026-09-05T14:00:00+00:00,2026,NIR1,1,False,4916772,5,15250,home,21515,0,2,played,10,0,False,90,0,0,0,0,0,0,,,,0,0
+1069756,Mitchell Bates,2026-11-13T19:45:00+00:00,2026,WALE,8,False,5084040,3,29221,away,10734,0,5,played,16,0,False,58,0,0,0,0,0,0,,,58,0,0
 1069756,Mitchell Bates,2026-11-06T19:45:00+00:00,2026,WAL1,1,False,4920615,16,29221,away,50597,1,3,played,16,10,False,90,0,1,0,0,0,0,,,,0,0
 1069756,Mitchell Bates,2026-10-30T19:45:00+00:00,2026,WAL1,1,False,4920611,15,29221,home,45574,3,0,played,16,10,False,89,0,0,0,0,0,0,74,,89,0,0
 1069756,Mitchell Bates,2026-10-23T18:45:00+00:00,2026,WAL1,1,False,4920602,14,29221,away,22461,1,3,played,16,10,False,73,0,0,0,0,0,0,66,,73,0,0
@@ -297,7 +304,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 577557,Danny Grant,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,injured,,,False,0,0,0,0,0,0,0,,,,303,0
 577557,Danny Grant,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,injured,,,False,0,0,0,0,0,0,0,,,,303,0
 1259889,Adam Brennan,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1259889,Adam Brennan,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1259889,Adam Brennan,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1259889,Adam Brennan,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1259889,Adam Brennan,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,played,19,0,False,8,0,0,0,0,0,0,,82,,0,0
@@ -308,6 +314,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 307513,Gary O'Neill,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1061560,John O'Sullivan,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,played,26,6,False,63,0,0,0,0,0,0,29,,63,0,0
 1061560,John O'Sullivan,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
+1134231,Michael Noonan,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,9,14,False,84,0,1,0,0,0,0,,,84,0,0
 1134231,Michael Noonan,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,played,9,14,False,84,1,1,0,0,0,0,,,84,0,0
 1134231,Michael Noonan,2026-10-03T09:00:00+00:00,2026,FS,11,True,5074344,12,23102,away,21142,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134231,Michael Noonan,2026-10-01T14:00:00+00:00,2026,FS,11,True,5074801,50,23102,neutral,39283,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -323,6 +330,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 444209,Jonathan Afolabi,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,played,18,14,False,69,0,0,0,0,0,0,,,69,0,0
 177892,Graham Burke,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,played,10,0,False,27,0,0,0,0,0,0,,63,,0,0
 177892,Graham Burke,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,played,10,14,False,68,0,0,0,0,0,0,,,68,0,0
+1134229,Max Kovalevskis,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,18,0,False,31,0,0,0,0,0,0,,59,,0,0
 1134229,Max Kovalevskis,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,played,18,12,False,6,0,0,0,0,0,0,,84,,0,0
 1134229,Max Kovalevskis,2026-10-03T09:00:00+00:00,2026,FS,11,True,5074344,12,23102,away,21142,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134229,Max Kovalevskis,2026-10-01T14:00:00+00:00,2026,FS,11,True,5074801,50,23102,neutral,39283,1,1,played,0,0,False,68,0,0,0,0,0,0,,,68,0,0
@@ -340,12 +348,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1380362,Ben Mahon,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1380362,Ben Mahon,2026-08-27T15:00:00+00:00,2026,ECLQ,10,False,5013829,8,3258,away,6251,0,1,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 1380362,Ben Mahon,2026-08-20T19:00:00+00:00,2026,ECLQ,10,False,5013805,7,3258,home,6251,1,1,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
+576099,Joseph Anang,2026-11-16T15:00:00+00:00,2026,AFCQ,19,True,5074872,6,3441,away,13974,1,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+576099,Joseph Anang,2026-11-12T15:00:00+00:00,2026,AFCQ,19,True,5074847,5,3441,home,13974,2,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 576099,Joseph Anang,2026-09-29T16:00:00+00:00,2026,AFCQ,19,True,5047007,4,3441,home,6186,2,4,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 576099,Joseph Anang,2026-09-24T19:00:00+00:00,2026,AFCQ,19,True,5046877,3,3441,away,3591,0,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+1260402,Darragh Brunton,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
-1260402,Darragh Brunton,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,1,0,False,45,0,0,0,0,0,0,,,46,0,0
 1260402,Darragh Brunton,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,in squad,1,,False,0,0,0,0,0,0,0,,,,0,0
@@ -353,6 +363,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1260402,Darragh Brunton,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260402,Darragh Brunton,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1165129,Luke Cullen,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1165129,Luke Cullen,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1165129,Luke Cullen,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 1165129,Luke Cullen,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -364,10 +375,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 224799,Anto Breslin,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 224799,Anto Breslin,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 224799,Anto Breslin,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1380428,Josh O'Connor,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,4,3,False,90,0,0,0,0,0,0,3,,,0,0
 1380428,Josh O'Connor,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
-1380428,Josh O'Connor,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,24,0,False,45,0,0,0,0,0,0,,,46,0,0
 1380428,Josh O'Connor,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,24,0,False,30,0,0,0,0,0,0,,60,,0,0
@@ -375,6 +386,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1380428,Josh O'Connor,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380428,Josh O'Connor,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1238018,Billy Canny,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 1238018,Billy Canny,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,in squad,15,,False,0,0,0,0,0,0,0,,,,0,0
 1238018,Billy Canny,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
 1238018,Billy Canny,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,2,5,False,78,0,0,0,0,0,0,,,78,0,0
@@ -384,10 +396,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1238018,Billy Canny,2026-09-25T18:00:00+00:00,2026,FS,11,True,5055984,1,23102,away,21340,0,1,played,15,0,False,19,0,0,0,0,0,0,,71,,0,0
 1134241,Sam Steward,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 1134241,Sam Steward,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
+1260400,Kian Quigley,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,8,7,False,90,0,0,0,0,0,0,51,,,0,0
-1260400,Kian Quigley,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,5,0,False,45,0,0,0,0,0,0,,,46,0,0
 1260400,Kian Quigley,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,5,0,False,25,0,0,0,0,0,0,,65,,0,0
@@ -395,10 +407,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1260400,Kian Quigley,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260400,Kian Quigley,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1260405,Joe Carroll-Byrne,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260405,Joe Carroll-Byrne,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260405,Joe Carroll-Byrne,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,11,11,False,90,0,0,0,0,0,0,,,,0,0
 1260405,Joe Carroll-Byrne,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,7,11,False,90,0,1,0,0,0,0,,,,0,0
-1260405,Joe Carroll-Byrne,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260405,Joe Carroll-Byrne,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,11,0,False,45,0,0,0,0,0,0,,,46,0,0
 1260405,Joe Carroll-Byrne,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,31,0,0,0,0,0,0,,59,,0,0
 1260405,Joe Carroll-Byrne,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,11,0,False,60,0,0,0,0,0,0,,,60,0,0
@@ -412,8 +424,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1260394,Niall Sullivan,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260394,Niall Sullivan,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260394,Niall Sullivan,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1442224,Ryan Sheridan,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442224,Ryan Sheridan,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1442224,Ryan Sheridan,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442224,Ryan Sheridan,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,8,0,False,59,0,0,0,0,0,0,,,59,0,0
 1442224,Ryan Sheridan,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,71,0,0,0,0,0,0,,,71,0,0
 1442224,Ryan Sheridan,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,8,0,False,30,0,0,0,0,0,0,,60,,0,0
@@ -421,6 +433,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1442224,Ryan Sheridan,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442224,Ryan Sheridan,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442224,Ryan Sheridan,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134228,Billy Hayes,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,19,0,False,6,0,0,0,0,0,0,,84,,0,0
 1134228,Billy Hayes,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1134228,Billy Hayes,2026-11-04T17:00:00+00:00,2026,19YL,16,False,5047696,6,92847,away,92840,1,0,played,3,4,False,88,0,0,0,0,0,0,,,88,0,0
 1134228,Billy Hayes,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,11,12,False,90,0,0,0,0,0,0,,,,0,0
@@ -433,25 +446,28 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1260406,Sammy Ogungbe,2026-10-28T19:30:00+00:00,2026,19YL,16,False,5047655,5,92847,home,92840,1,1,played,14,14,False,33,1,0,0,0,0,0,70,57,,0,0
 1260406,Sammy Ogungbe,2026-09-17T09:00:00+00:00,2026,FS,11,True,5048234,2,30323,away,10844,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260406,Sammy Ogungbe,2026-09-15T14:00:00+00:00,2026,FS,11,True,5048233,1,30323,away,10844,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1260710,Finn McDonnell,2026-11-14T12:00:00+00:00,2026,U19Q,20,True,5076110,5,28031,away,26100,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260710,Finn McDonnell,2026-11-11T12:00:00+00:00,2026,U19Q,20,True,5076072,4,28031,away,25784,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260710,Finn McDonnell,2026-10-05T09:00:00+00:00,2026,FS,11,True,5065770,46,28031,away,26181,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260710,Finn McDonnell,2026-10-02T13:30:00+00:00,2026,FS,11,True,5052768,2,28031,away,16338,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1121731,Markuss Strods,2026-11-15T14:00:00+00:00,2026,UNLC,11,True,4825212,6,3555,home,6219,0,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
+1121731,Markuss Strods,2026-11-12T19:45:00+00:00,2026,UNLC,11,True,4825211,5,3555,away,11953,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1121731,Markuss Strods,2026-10-05T16:00:00+00:00,2026,UNLC,11,True,4825172,4,3555,away,3668,1,2,played,17,8,False,45,0,0,0,0,0,0,,,46,0,0
 1121731,Markuss Strods,2026-10-02T18:45:00+00:00,2026,UNLC,11,True,4825175,3,3555,home,11953,1,2,played,17,8,False,12,1,0,4,1,1,2,,78,,0,0
 1121731,Markuss Strods,2026-09-28T16:00:00+00:00,2026,UNLC,11,True,4824873,2,3555,home,3668,0,0,played,17,0,False,12,0,0,0,0,0,0,,78,,0,0
 1121731,Markuss Strods,2026-09-25T16:00:00+00:00,2026,UNLC,11,True,4824870,1,3555,away,6219,0,2,played,17,11,False,68,0,0,1,0,0,1,,,68,0,0
+1380190,Hugh Martin,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,9,0,False,31,1,0,0,0,0,0,,59,,0,0
-1380190,Hugh Martin,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,9,0,False,60,0,0,0,0,0,0,,,60,0,0
 1380190,Hugh Martin,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052838,2,23132,away,26035,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1380190,Hugh Martin,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+655177,Zeno Ibsen Rossi,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917477,16,9026,home,21531,2,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-11-07T15:00:00+00:00,2026,NIR1,1,False,4917469,15,9026,away,8714,0,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-10-30T19:45:00+00:00,2026,NIR1,1,False,4917464,14,9026,away,3831,1,1,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
-655177,Zeno Ibsen Rossi,2026-10-24T14:00:00+00:00,2026,NIR1,1,False,4917460,13,9026,home,15244,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-10-17T14:00:00+00:00,2026,NIR1,1,False,4917454,12,9026,home,15250,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-10-09T18:45:00+00:00,2026,NIR1,1,False,4917449,11,9026,away,5594,0,0,injured,,,False,0,0,0,0,0,0,0,,,,312,0
 655177,Zeno Ibsen Rossi,2026-10-03T14:00:00+00:00,2026,NIR1,1,False,4917441,10,9026,home,21515,2,0,injured,,,False,0,0,0,0,0,0,0,,,,312,0
@@ -462,11 +478,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 655177,Zeno Ibsen Rossi,2026-09-04T18:45:00+00:00,2026,NIR1,1,False,4916771,5,9026,away,3461,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-08-29T14:00:00+00:00,2026,NIR1,1,False,4916729,4,9026,home,21532,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 655177,Zeno Ibsen Rossi,2026-08-21T18:45:00+00:00,2026,NIR1,1,False,4916733,3,9026,away,15244,2,0,played,4,0,False,90,0,0,0,0,0,0,,,,0,0
-655177,Zeno Ibsen Rossi,2026-08-15T14:00:00+00:00,2026,NIR1,1,False,4916766,2,9026,away,3471,1,2,played,4,0,False,90,0,0,0,0,0,0,,,,0,0
 1005770,James Roche,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1005770,James Roche,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1005770,James Roche,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1005770,James Roche,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+746622,Harry Wood,2026-11-14T15:00:00+00:00,2026,GB3,3,False,4911412,15,1098,home,1032,3,1,played,16,11,False,74,0,1,4,1,2,1,59,,74,0,0
 746622,Harry Wood,2026-11-10T19:00:00+00:00,2026,GBFL,21,False,5016610,3,1098,home,1074,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 746622,Harry Wood,2026-11-08T14:15:00+00:00,2026,FAC,8,False,5083996,1,1098,away,31564,3,2,played,16,7,False,120,0,0,5,1,1,3,,,,0,0
 746622,Harry Wood,2026-10-31T15:00:00+00:00,2026,GB3,3,False,4911400,14,1098,home,3884,2,1,played,16,0,False,25,0,0,0,0,0,0,,65,,0,0
@@ -483,8 +499,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 746622,Harry Wood,2026-09-02T18:45:00+00:00,2026,GB3,3,False,4911230,4,1098,away,1031,0,2,played,16,11,False,75,0,0,1,1,0,0,,,75,0,0
 746622,Harry Wood,2026-08-29T14:00:00+00:00,2026,GB3,3,False,4911174,3,1098,home,2805,5,1,played,16,11,False,64,2,0,3,2,1,0,,,64,0,0
 746622,Harry Wood,2026-08-22T14:00:00+00:00,2026,GB3,3,False,4911184,2,1098,home,1181,1,2,played,16,10,False,58,0,0,3,1,1,1,,,58,0,0
-746622,Harry Wood,2026-08-18T18:00:00+00:00,2026,GBFL,21,False,5016606,1,1098,home,9261,6,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-746622,Harry Wood,2026-08-15T14:00:00+00:00,2026,GB3,3,False,4911245,1,1098,away,2262,3,1,played,16,9,False,60,0,0,2,0,2,0,,,60,0,0
 1461853,Alex Flynn,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1461853,Alex Flynn,2026-10-03T09:00:00+00:00,2026,FS,11,True,5074344,12,23102,away,21142,2,1,played,0,0,False,58,0,0,0,0,0,0,,,58,0,0
 1461853,Alex Flynn,2026-10-01T14:00:00+00:00,2026,FS,11,True,5074801,50,23102,neutral,39283,1,1,played,0,0,False,15,0,0,0,0,0,0,,75,,0,0
@@ -502,8 +516,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1109578,Dan Ring,2026-09-25T18:00:00+00:00,2026,FS,11,True,5055984,1,23102,away,21340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1109578,Dan Ring,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1109578,Dan Ring,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1442225,Joey Wuna,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442225,Joey Wuna,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1442225,Joey Wuna,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442225,Joey Wuna,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,17,0,False,45,0,0,0,0,0,0,,46,,0,0
 1442225,Joey Wuna,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,59,0,0,0,0,0,0,,,59,0,0
 1442225,Joey Wuna,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,17,0,False,30,0,0,0,0,0,0,,60,,0,0
@@ -511,6 +525,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1442225,Joey Wuna,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442225,Joey Wuna,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1442225,Joey Wuna,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+908491,Alex Bannon,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917479,16,1251,away,15250,1,2,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
 908491,Alex Bannon,2026-11-06T19:45:00+00:00,2026,NIR1,1,False,4917470,15,1251,home,3461,4,2,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
 908491,Alex Bannon,2026-11-03T19:45:00+00:00,2026,CASH,21,False,5119304,2,1251,home,21531,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 908491,Alex Bannon,2026-10-31T15:00:00+00:00,2026,NIR1,1,False,4917463,14,1251,home,8714,7,1,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -526,7 +541,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 908491,Alex Bannon,2026-09-05T14:00:00+00:00,2026,NIR1,1,False,4916769,5,1251,home,5594,3,1,played,25,5,False,90,0,0,0,0,0,0,,,,0,0
 908491,Alex Bannon,2026-08-29T14:00:00+00:00,2026,NIR1,1,False,4916728,4,1251,home,21515,0,2,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
 908491,Alex Bannon,2026-08-21T18:45:00+00:00,2026,NIR1,1,False,4916732,3,1251,away,3471,0,1,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
-908491,Alex Bannon,2026-08-15T14:00:00+00:00,2026,NIR1,1,False,4916762,2,1251,away,21531,3,0,played,25,0,False,90,0,0,0,0,0,0,,,,0,0
+453993,Ben Doherty,2026-11-13T19:45:00+00:00,2026,NIR1,1,False,4917475,16,3831,home,5594,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 453993,Ben Doherty,2026-11-07T18:00:00+00:00,2026,NIR1,1,False,4917472,15,3831,away,3471,0,3,played,23,9,False,90,0,0,0,0,0,0,,,,0,0
 453993,Ben Doherty,2026-10-30T19:45:00+00:00,2026,NIR1,1,False,4917464,14,3831,home,9026,1,1,played,23,9,False,90,0,0,0,0,0,0,,,,0,0
 453993,Ben Doherty,2026-10-24T14:00:00+00:00,2026,NIR1,1,False,4917458,13,3831,away,21532,5,0,played,23,9,False,45,0,1,0,0,0,0,23,,46,0,0
@@ -544,15 +559,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 453993,Ben Doherty,2026-09-01T18:45:00+00:00,2026,NWSC,21,False,5041567,1,3831,home,35843,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 453993,Ben Doherty,2026-08-28T18:45:00+00:00,2026,NIR1,1,False,4916731,4,3831,away,5594,3,0,played,23,4,False,81,0,1,0,0,0,0,,,81,0,0
 453993,Ben Doherty,2026-08-22T14:00:00+00:00,2026,NIR1,1,False,4916734,3,3831,away,8714,2,0,played,23,4,False,89,1,0,0,0,0,0,,,89,0,0
-453993,Ben Doherty,2026-08-15T14:00:00+00:00,2026,NIR1,1,False,4916763,2,3831,home,3461,0,0,played,23,0,False,90,0,0,0,0,0,0,,,,0,0
+1559827,Oisin O'Brien,2026-11-14T15:30:00+00:00,2026,U17Q,20,True,4939629,2,25790,away,29840,4,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 1559827,Oisin O'Brien,2026-11-11T15:30:00+00:00,2026,U17Q,20,True,4939627,1,25790,away,28030,2,4,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 1559827,Oisin O'Brien,2026-09-28T09:00:00+00:00,2026,FS,11,True,5069006,47,25790,away,30431,0,2,played,2,0,False,54,0,0,0,0,0,0,,,54,0,0
 1559827,Oisin O'Brien,2026-09-25T14:00:00+00:00,2026,FS,11,True,4944324,9,25790,away,23140,2,1,played,2,0,False,20,0,0,0,0,0,0,,70,,0,0
 1559827,Oisin O'Brien,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,25790,away,41525,1,4,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
+1334062,Liam Kelly,2026-11-14T15:30:00+00:00,2026,U17Q,20,True,4939629,2,25790,away,29840,4,0,played,7,7,False,90,0,1,0,0,0,0,,,,0,0
 1334062,Liam Kelly,2026-11-11T15:30:00+00:00,2026,U17Q,20,True,4939627,1,25790,away,28030,2,4,played,7,8,False,90,0,0,0,0,0,0,,,,0,0
 1334062,Liam Kelly,2026-09-28T09:00:00+00:00,2026,FS,11,True,5069006,47,25790,away,30431,0,2,played,7,0,False,86,0,0,0,0,0,0,,,86,0,0
 1334062,Liam Kelly,2026-09-25T14:00:00+00:00,2026,FS,11,True,4944324,9,25790,away,23140,2,1,played,7,0,False,34,0,0,0,0,0,0,,56,,0,0
 1334062,Liam Kelly,2026-09-23T14:00:00+00:00,2026,FS,11,True,5063978,2,25790,away,41525,1,4,played,7,0,False,55,0,0,0,0,0,0,,,55,0,0
+369561,Dipo Akinyemi,2026-11-14T15:00:00+00:00,2026,GB4,4,False,4919898,15,1252,away,1088,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 369561,Dipo Akinyemi,2026-11-10T19:30:00+00:00,2026,GBFL,21,False,5016599,2,1252,away,1027,0,4,played,20,14,False,90,0,0,4,2,1,1,,,,0,0
 369561,Dipo Akinyemi,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5084009,1,1252,home,1302,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 369561,Dipo Akinyemi,2026-10-31T12:30:00+00:00,2026,GB4,4,False,4911625,14,1252,away,1034,2,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -570,7 +587,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 369561,Dipo Akinyemi,2026-09-01T18:45:00+00:00,2026,GB4,4,False,4911297,4,1252,away,3371,2,3,injured,,,False,0,0,0,0,0,0,0,,,,303,0
 369561,Dipo Akinyemi,2026-08-29T14:00:00+00:00,2026,GB4,4,False,4911294,3,1252,home,6699,2,1,injured,,,False,0,0,0,0,0,0,0,,,,303,0
 369561,Dipo Akinyemi,2026-08-22T14:00:00+00:00,2026,GB4,4,False,4911254,2,1252,away,1194,1,1,injured,,,False,0,0,0,0,0,0,0,,,,303,0
-369561,Dipo Akinyemi,2026-08-15T14:00:00+00:00,2026,GB4,4,False,4911270,1,1252,home,2455,3,2,played,20,14,False,43,0,0,1,1,0,0,,,43,0,0
+551011,Josh Thomas,2026-11-14T17:30:00+00:00,2026,GB4,4,False,4919896,15,11177,home,1074,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 551011,Josh Thomas,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083987,1,11177,home,1088,1,2,played,11,0,False,10,0,0,0,0,0,0,,110,,0,0
 551011,Josh Thomas,2026-11-02T19:00:00+00:00,2026,21PL,15,False,5062763,4,53088,away,130649,0,1,played,10,10,False,45,0,0,0,0,0,0,,,46,0,0
 551011,Josh Thomas,2026-10-31T15:00:00+00:00,2026,GB4,4,False,4911624,14,11177,home,2455,3,1,played,11,0,False,1,0,0,0,0,0,0,,90,,0,0
@@ -593,7 +610,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 551011,Josh Thomas,2026-08-29T14:00:00+00:00,2026,GB4,4,False,4911287,3,11177,away,1034,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 551011,Josh Thomas,2026-08-25T18:45:00+00:00,2026,CGB,14,False,5016480,3,11177,home,3054,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 551011,Josh Thomas,2026-08-22T14:00:00+00:00,2026,GB4,4,False,4911251,2,11177,home,2814,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-551011,Josh Thomas,2026-08-15T14:00:00+00:00,2026,GB4,4,False,4911262,1,11177,away,1219,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1075754,Henry Rylah,2026-11-14T15:00:00+00:00,2026,CNAT,5,False,4940254,17,12335,away,3052,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075754,Henry Rylah,2026-10-31T15:00:00+00:00,2026,CNAT,5,False,4940241,16,12335,home,1195,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075754,Henry Rylah,2026-10-27T19:45:00+00:00,2026,CNAT,5,False,4940227,15,12335,away,4117,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075754,Henry Rylah,2026-10-24T14:00:00+00:00,2026,CNAT,5,False,4940218,14,12335,home,1220,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -611,9 +628,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1075754,Henry Rylah,2026-08-31T14:00:00+00:00,2026,CNAT,5,False,4940108,5,12335,home,22672,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075754,Henry Rylah,2026-08-28T18:45:00+00:00,2026,CNAT,5,False,4940097,4,12335,away,2964,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1075754,Henry Rylah,2026-08-22T11:30:00+00:00,2026,CNAT,5,False,4940084,3,12335,home,2793,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1075754,Henry Rylah,2026-08-18T18:00:00+00:00,2026,NLC,14,False,5013523,3,12335,home,9256,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1075754,Henry Rylah,2026-08-15T14:00:00+00:00,2026,CNAT,5,False,4940070,2,12335,home,3489,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1553934,Michael McColgan,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1553934,Michael McColgan,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052838,2,23132,away,26035,3,2,played,10,0,False,45,0,0,0,0,0,0,,46,,0,0
 1553934,Michael McColgan,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,played,0,0,False,31,0,0,0,0,0,0,,59,,0,0
 1553934,Michael McColgan,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,played,0,0,False,62,0,0,0,0,0,0,,,62,0,0
@@ -622,6 +636,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1005774,Daniel Mare,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1005774,Daniel Mare,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1005774,Daniel Mare,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+532460,Shane Blaney,2026-11-14T15:00:00+00:00,2026,SC2,2,False,4910621,15,1241,home,3026,2,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 532460,Shane Blaney,2026-11-07T15:00:00+00:00,2026,SC2,2,False,4910591,14,1241,away,2451,1,1,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 532460,Shane Blaney,2026-11-03T13:00:00+00:00,2026,SSC,21,False,5102180,7,1241,away,17602,2,0,played,30,3,False,90,1,0,2,1,1,0,72,,,0,0
 532460,Shane Blaney,2026-10-30T19:30:00+00:00,2026,SC2,2,False,4910583,13,1241,away,3012,3,0,played,30,0,False,15,0,0,0,0,0,0,,75,,0,0
@@ -635,6 +650,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 532460,Shane Blaney,2026-09-04T18:30:00+00:00,2026,SC2,2,False,4910397,5,1241,home,3012,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 532460,Shane Blaney,2026-08-29T14:00:00+00:00,2026,SC2,2,False,4910390,4,1241,away,3021,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 532460,Shane Blaney,2026-08-22T14:00:00+00:00,2026,SC2,2,False,4910387,3,1241,home,1270,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1333928,Charlie McGarvey,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1333928,Charlie McGarvey,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 1333928,Charlie McGarvey,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052838,2,23132,away,26035,3,2,played,23,1,False,45,0,0,0,0,0,0,,,46,0,0
 1333928,Charlie McGarvey,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,played,23,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -646,13 +662,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1261926,Aidan Gabbidon,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,12,0,False,45,0,0,0,0,0,0,,,46,0,0
 1261926,Aidan Gabbidon,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,90,0,0,0,0,0,0,,,,0,0
 1261926,Aidan Gabbidon,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,12,0,False,30,0,0,0,0,0,0,,60,,0,0
+1465757,Jamie O'Donnell,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,played,9,0,False,7,0,0,0,0,0,0,,83,,0,0
 1465757,Jamie O'Donnell,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,played,9,14,False,11,0,0,0,0,0,0,,79,,0,0
 1465757,Jamie O'Donnell,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052838,2,23132,away,26035,3,2,played,9,0,False,9,0,0,0,0,0,0,,81,,0,0
 1465757,Jamie O'Donnell,2026-09-27T09:00:00+00:00,2026,FS,11,True,5047747,4,23132,away,23136,1,2,played,9,0,False,72,0,0,0,0,0,0,,,72,0,0
 1465757,Jamie O'Donnell,2026-09-25T13:00:00+00:00,2026,FS,11,True,5067265,36,23132,away,25787,5,6,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1465757,Jamie O'Donnell,2026-09-23T17:30:00+00:00,2026,FS,11,True,5063530,1,23132,away,23260,1,5,played,9,14,False,62,0,0,2,0,2,0,,,62,0,0
+1231216,Vinnie Leonard,2026-11-16T19:00:00+00:00,2026,21PL,15,False,5062787,4,33614,home,130582,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1231216,Vinnie Leonard,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,13,3,False,90,2,0,0,0,0,0,,,,0,0
 1231216,Vinnie Leonard,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
-1231216,Vinnie Leonard,2026-11-07T16:00:00+00:00,2026,GB21,18,False,5045530,7,33614,away,36546,2,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1231216,Vinnie Leonard,2026-11-07T16:00:00+00:00,2026,GB21,18,False,5045530,7,33614,away,36546,2,5,played,5,3,False,63,0,0,0,0,0,0,41,,63,0,0
 1231216,Vinnie Leonard,2026-11-03T19:30:00+00:00,2026,NLC,14,False,5013575,4,33614,away,6340,1,3,played,16,0,False,18,0,0,0,0,0,0,,72,,0,0
 1231216,Vinnie Leonard,2026-10-26T19:00:00+00:00,2026,GB21,18,False,5045519,6,33614,away,39337,4,3,played,16,0,False,45,0,0,0,0,0,0,57,46,,0,0
 1231216,Vinnie Leonard,2026-10-21T18:00:00+00:00,2026,21PL,15,False,5062786,3,33614,home,39304,1,1,played,16,0,False,29,0,0,0,0,0,0,85,61,,0,0
@@ -665,10 +684,9 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1231216,Vinnie Leonard,2026-09-08T18:30:00+00:00,2026,NLC,14,False,5013545,2,33614,away,8123,5,4,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 1231216,Vinnie Leonard,2026-08-28T19:30:00+00:00,2026,GB21,18,False,5036089,2,33614,home,24219,0,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
 1231216,Vinnie Leonard,2026-08-23T12:00:00+00:00,2026,GB21,18,False,5027113,1,33614,away,9256,1,0,injured,,,False,0,0,0,0,0,0,0,,,,101,0
-1231216,Vinnie Leonard,2026-08-18T18:00:00+00:00,2026,NLC,14,False,5013521,1,33614,away,3868,2,1,injured,,,False,0,0,0,0,0,0,0,,,,101,0
+1260391,Sean Spaight,2026-11-14T11:00:00+00:00,2026,U17Q,20,True,4939643,2,23132,away,30431,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260391,Sean Spaight,2026-11-11T11:00:00+00:00,2026,U17Q,20,True,4939645,1,23132,neutral,26032,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260391,Sean Spaight,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059887,2,37709,away,26471,1,1,played,4,0,False,45,0,0,0,0,0,0,,46,,0,0
-1260391,Sean Spaight,2026-10-06T11:00:00+00:00,2026,FS,11,True,5059889,2,37709,away,26471,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1260391,Sean Spaight,2026-10-03T14:00:00+00:00,2026,FS,11,True,5055749,3,37709,away,16340,0,1,played,0,0,False,19,0,0,0,0,0,0,,71,,0,0
 1260391,Sean Spaight,2026-09-30T10:00:00+00:00,2026,FS,11,True,5072236,4,37709,away,31200,1,1,played,4,0,True,90,0,0,0,0,0,0,,,,0,0
 1260391,Sean Spaight,2026-09-30T09:00:00+00:00,2026,FS,11,True,5052838,2,23132,away,26035,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -679,6 +697,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 178139,Daryl Horgan,2026-10-01T14:00:00+00:00,2026,FS,11,True,5074801,50,23102,neutral,39283,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 178139,Daryl Horgan,2026-09-28T09:00:00+00:00,2026,FS,11,True,5070647,2,23102,away,30232,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 178139,Daryl Horgan,2026-09-25T18:00:00+00:00,2026,FS,11,True,5055984,1,23102,away,21340,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+993050,Gbemi Arubi,2026-11-14T15:00:00+00:00,2026,GB3,3,False,4911408,15,2963,away,991,2,6,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 993050,Gbemi Arubi,2026-11-10T19:00:00+00:00,2026,GBFL,21,False,5016616,3,2963,home,1045,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 993050,Gbemi Arubi,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083995,1,2963,home,46946,4,0,played,9,0,False,32,0,1,1,1,0,0,,58,,0,0
 993050,Gbemi Arubi,2026-10-31T15:00:00+00:00,2026,GB3,3,False,4911402,14,2963,away,2805,0,2,played,9,10,False,82,0,0,2,2,0,0,,,82,0,0
@@ -696,7 +715,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 993050,Gbemi Arubi,2026-09-02T18:45:00+00:00,2026,GB3,3,False,4911226,4,2963,home,3884,4,1,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 993050,Gbemi Arubi,2026-08-29T14:00:00+00:00,2026,GB3,3,False,4911169,3,2963,away,1045,1,2,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 993050,Gbemi Arubi,2026-08-22T14:00:00+00:00,2026,GB3,3,False,4911178,2,2963,away,1003,2,1,injured,,,False,0,0,0,0,0,0,0,,,,195,0
-993050,Gbemi Arubi,2026-08-15T14:00:00+00:00,2026,GB3,3,False,4911238,1,2963,home,3684,1,1,injured,,,False,0,0,0,0,0,0,0,,,,195,0
 1079595,Eoin Kenny,2026-11-07T12:30:00+00:00,2026,GB2,2,False,4923531,15,1020,home,512,1,2,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 1079595,Eoin Kenny,2026-11-03T19:45:00+00:00,2026,GB2,2,False,4923516,14,1020,home,2288,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1079595,Eoin Kenny,2026-10-31T15:00:00+00:00,2026,GB2,2,False,4923478,13,1020,away,1132,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -711,13 +729,14 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1079595,Eoin Kenny,2026-09-01T18:45:00+00:00,2026,GB2,2,False,4911153,4,1020,home,22,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1079595,Eoin Kenny,2026-08-29T14:00:00+00:00,2026,GB2,2,False,4911105,3,1020,away,698,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1079595,Eoin Kenny,2026-08-22T11:30:00+00:00,2026,GB2,2,False,4911082,2,1020,away,1198,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1079595,Eoin Kenny,2026-08-15T14:00:00+00:00,2026,GB2,2,False,4911097,1,1020,home,1039,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 667510,Evan Watts,2026-10-30T19:00:00+00:00,2026,21PL,15,False,5062739,4,33616,away,24212,3,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 667510,Evan Watts,2026-09-07T18:00:00+00:00,2026,21PL,15,False,5062735,2,33616,home,130650,2,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 667510,Evan Watts,2026-08-14T18:00:00+00:00,2026,21PL,15,False,5062733,1,33616,home,24212,3,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 964683,Arthur Parker,2026-10-30T19:00:00+00:00,2026,21PL,15,False,5062739,4,33616,away,24212,3,0,played,5,3,False,90,0,0,0,0,0,0,64,,,0,0
 964683,Arthur Parker,2026-09-07T18:00:00+00:00,2026,21PL,15,False,5062735,2,33616,home,130650,2,2,played,5,3,True,90,0,1,0,0,0,0,43,,,0,0
 964683,Arthur Parker,2026-08-14T18:00:00+00:00,2026,21PL,15,False,5062733,1,33616,home,24212,3,0,played,5,3,False,71,0,0,0,0,0,0,,,71,0,0
+1134239,Muhammad Oladiti,2026-11-14T17:30:00+00:00,2026,GB4,4,False,4919896,15,11177,home,1074,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134239,Muhammad Oladiti,2026-11-14T17:00:00+00:00,2026,U19Q,20,True,5076091,5,23102,away,23101,2,2,played,12,7,False,59,0,0,0,0,0,0,32,,59,0,0
 1134239,Muhammad Oladiti,2026-11-11T14:00:00+00:00,2026,U19Q,20,True,5076054,4,23102,away,22246,2,0,played,12,6,False,90,0,0,0,0,0,0,,,,0,0
 1134239,Muhammad Oladiti,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083987,1,11177,home,1088,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134239,Muhammad Oladiti,2026-11-02T19:00:00+00:00,2026,21PL,15,False,5062763,4,53088,away,130649,0,1,played,8,6,False,64,0,0,0,0,0,0,,,,0,0
@@ -737,7 +756,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1134239,Muhammad Oladiti,2026-09-25T18:00:00+00:00,2026,FS,11,True,5055984,1,23102,away,21340,0,1,played,12,6,False,73,0,0,1,1,0,0,,,73,0,0
 1134239,Muhammad Oladiti,2026-09-22T18:00:00+00:00,2026,GBFL,21,False,5016618,1,11177,away,1078,0,1,played,39,0,False,17,0,0,0,0,0,0,,73,,0,0
 1134239,Muhammad Oladiti,2026-09-08T18:00:00+00:00,2026,21PL,15,False,5062760,2,53088,home,24214,1,2,played,11,7,False,69,0,0,0,0,0,0,,,69,0,0
-1134239,Muhammad Oladiti,2026-08-18T18:00:00+00:00,2026,21PL,15,False,5062758,1,53088,home,130649,1,2,played,8,7,False,90,1,0,0,0,0,0,76,,,0,0
+586765,Conor Carty,2026-11-14T15:00:00+00:00,2026,CNAT,5,False,4940251,17,1127,away,1195,1,1,played,9,14,False,66,0,0,0,0,0,0,,,66,0,0
 586765,Conor Carty,2026-11-07T15:00:00+00:00,2026,FAC,8,False,5083998,1,1127,away,3371,0,2,played,9,14,False,90,0,0,1,0,1,0,,,90,0,0
 586765,Conor Carty,2026-11-03T19:00:00+00:00,2026,NLC,14,False,5013567,4,1127,home,38588,3,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 586765,Conor Carty,2026-10-31T12:30:00+00:00,2026,CNAT,5,False,4940239,16,1127,home,972,2,0,played,9,14,False,90,0,0,0,0,0,0,,,,0,0
@@ -756,5 +775,3 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 586765,Conor Carty,2026-09-01T18:45:00+00:00,2026,CNAT,5,False,4940104,5,1127,home,2577,1,0,played,9,14,False,90,0,0,0,0,0,0,,,90,0,0
 586765,Conor Carty,2026-08-28T18:45:00+00:00,2026,CNAT,5,False,4940091,4,1127,away,2962,1,2,played,9,14,False,85,0,0,0,0,0,0,,,85,0,0
 586765,Conor Carty,2026-08-22T11:30:00+00:00,2026,CNAT,5,False,4940080,3,1127,home,3539,4,1,played,9,14,False,75,1,0,0,0,0,0,,,75,0,0
-586765,Conor Carty,2026-08-18T18:00:00+00:00,2026,NLC,14,False,5013519,1,1127,home,39337,6,2,played,9,14,False,61,1,0,0,0,0,0,,,61,0,0
-586765,Conor Carty,2026-08-15T14:00:00+00:00,2026,CNAT,5,False,4940067,2,1127,home,3867,1,3,played,9,14,False,74,0,1,0,0,0,0,,,74,0,0

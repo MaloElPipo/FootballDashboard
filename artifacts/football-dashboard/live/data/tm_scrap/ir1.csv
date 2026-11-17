@@ -1668,6 +1668,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 121393,Anthony O'Connor,42394,Galway United FC,2026,IR1,2,Centre-Back,34,Ireland,0,0,0,0
 585818,Frantz Pierrot,42394,Galway United FC,2026,IR1,23,Centre-Forward,27,Haiti,0,0,0,0
 251838,Dylan Connolly,42394,Galway United FC,2026,IR1,21,Right Winger,31,Ireland,0,0,0,0
+200956,Danny Rogers,1189,St. Patrick's Athletic,2026,IR1,1,Goalkeeper,32,Ireland,0,0,0,0
 478712,Ed McGinty,3258,Shamrock Rovers,2025,IR1,1,Goalkeeper,27,Ireland,36,36,0,3195
 217752,Lee Steacy,3258,Shamrock Rovers,2025,IR1,25,Goalkeeper,33,Ireland,8,1,0,45
 1134233,Alex Noonan,3258,Shamrock Rovers,2025,IR1,0,Goalkeeper,18,Ireland,28,0,0,0
@@ -1698,7 +1699,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 713240,John McGovern,3258,Shamrock Rovers,2025,IR1,88,Centre-Forward,24,Northern Ireland,33,31,10,1486
 264206,Jake Mulraney,3258,Shamrock Rovers,2025,IR1,11,Right Winger,30,Ireland,32,28,0,1411
 177892,Graham Burke,3258,Shamrock Rovers,2025,IR1,10,Second Striker,33,Ireland,33,31,9,1954
-939272,Maleace Asamoah,3258,Shamrock Rovers,2025,IR1,0,Right Winger,23,England,14,10,1,422
+939272,Maleace Asamoah,3258,Shamrock Rovers,2025,IR1,0,Right Winger,24,England,14,10,1,422
 546159,Will Fitzgerald,3258,Shamrock Rovers,2025,IR1,24,Left Winger,27,Ireland,11,9,0,526
 444209,Jonathan Afolabi,3258,Shamrock Rovers,2025,IR1,18,Centre-Forward,26,Ireland,10,9,1,291
 1134229,Max Kovalevskis,3258,Shamrock Rovers,2025,IR1,38,Right Winger,18,Ireland,7,4,0,89
@@ -1740,7 +1741,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1226935,Eric Koufie,3258,Shamrock Rovers,2026,IR1,0,Centre-Forward,19,Ireland,0,0,0,0
 1380362,Ben Mahon,3258,Shamrock Rovers,2026,IR1,34,Centre-Forward,17,Ireland,0,0,0,0
 576099,Joseph Anang,1189,St. Patrick's Athletic,2025,IR1,94,Goalkeeper,26,Ghana,32,32,0,2880
-200956,Danny Rogers,1189,St. Patrick's Athletic,2025,IR1,1,Goalkeeper,32,Ireland,26,4,0,360
+200956,Danny Rogers,1189,St. Patrick's Athletic,2025,IR1,0,Goalkeeper,32,Ireland,26,4,0,360
 941427,Sean Molloy,1189,St. Patrick's Athletic,2025,IR1,49,Goalkeeper,22,Ireland,14,0,0,0
 1260402,Darragh Brunton,1189,St. Patrick's Athletic,2025,IR1,43,Goalkeeper,17,Ireland,0,0,0,0
 1165129,Luke Cullen,1189,St. Patrick's Athletic,2025,IR1,44,Goalkeeper,17,Ireland,0,0,0,0
@@ -1781,7 +1782,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1165138,Sam Rooney,1189,St. Patrick's Athletic,2025,IR1,35,Centre-Forward,17,Ireland,21,7,0,64
 1260406,Sammy Ogungbe,1189,St. Patrick's Athletic,2025,IR1,47,Right Winger,17,Ireland,0,0,0,0
 576099,Joseph Anang,1189,St. Patrick's Athletic,2026,IR1,94,Goalkeeper,26,Ghana,0,0,0,0
-200956,Danny Rogers,1189,St. Patrick's Athletic,2026,IR1,1,Goalkeeper,32,Ireland,0,0,0,0
 941427,Sean Molloy,1189,St. Patrick's Athletic,2026,IR1,49,Goalkeeper,22,Ireland,0,0,0,0
 1260402,Darragh Brunton,1189,St. Patrick's Athletic,2026,IR1,43,Goalkeeper,17,Ireland,0,0,0,0
 1165129,Luke Cullen,1189,St. Patrick's Athletic,2026,IR1,44,Goalkeeper,17,Ireland,0,0,0,0
@@ -1873,7 +1873,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1380190,Hugh Martin,9211,Bohemian Football Club,2026,IR1,28,Centre-Forward,17,Ireland,0,0,0,0
 596142,Wessel Speel,3909,Shelbourne FC,2025,IR1,0,Goalkeeper,25,Netherlands,24,24,0,2160
 732120,Eddie Beach,3909,Shelbourne FC,2025,IR1,19,Goalkeeper,23,Wales,11,11,0,916
-719677,Murray Johnson,3909,Shelbourne FC,2025,IR1,13,Goalkeeper,21,Scotland,6,0,0,0
+719677,Murray Johnson,3909,Shelbourne FC,2025,IR1,31,Goalkeeper,22,Scotland,6,0,0,0
 741226,Conor Walsh,3909,Shelbourne FC,2025,IR1,31,Goalkeeper,21,Ireland,28,2,0,164
 1284436,Cillian Campion,3909,Shelbourne FC,2025,IR1,0,Goalkeeper,19,Ireland,1,0,0,0
 1365582,Finn Moylan,3909,Shelbourne FC,2025,IR1,0,Goalkeeper,18,Ireland,2,0,0,0
@@ -1909,7 +1909,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1109578,Dan Ring,3909,Shelbourne FC,2025,IR1,44,Centre-Forward,19,Ireland,11,3,0,23
 1442225,Joey Wuna,3909,Shelbourne FC,2025,IR1,56,Centre-Forward,17,Ireland,9,1,0,8
 732120,Eddie Beach,3909,Shelbourne FC,2026,IR1,19,Goalkeeper,23,Wales,0,0,0,0
-719677,Murray Johnson,3909,Shelbourne FC,2026,IR1,13,Goalkeeper,21,Scotland,0,0,0,0
+719677,Murray Johnson,3909,Shelbourne FC,2026,IR1,31,Goalkeeper,22,Scotland,0,0,0,0
 741226,Conor Walsh,3909,Shelbourne FC,2026,IR1,31,Goalkeeper,21,Ireland,0,0,0,0
 1284436,Cillian Campion,3909,Shelbourne FC,2026,IR1,0,Goalkeeper,19,Ireland,0,0,0,0
 1365582,Finn Moylan,3909,Shelbourne FC,2026,IR1,0,Goalkeeper,18,Ireland,0,0,0,0
@@ -1982,7 +1982,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1551670,Terence Doherty,920,Derry City,2025,IR1,32,Centre-Forward,17,Ireland,14,5,2,128
 1553934,Michael McColgan,920,Derry City,2025,IR1,36,Centre-Forward,0,Ireland,2,1,0,1
 1580873,Eoghan Curran,920,Derry City,2025,IR1,37,Right Winger,17,Ireland,0,0,0,0
-1459268,Yoann Prigent,920,Derry City,2025,IR1,38,Left Winger,17,Ireland,2,1,0,19
+1459268,Yoann Prigent,920,Derry City,2025,IR1,38,Left Winger,18,Ireland,2,1,0,19
 434205,Brian Maher,920,Derry City,2026,IR1,1,Goalkeeper,26,Ireland,0,0,0,0
 1354012,Conal McDermott,920,Derry City,2026,IR1,0,Goalkeeper,19,Ireland,0,0,0,0
 828171,Tom Norcott,920,Derry City,2026,IR1,13,Goalkeeper,21,England,0,0,0,0
@@ -2015,7 +2015,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1551670,Terence Doherty,920,Derry City,2026,IR1,32,Centre-Forward,17,Ireland,0,0,0,0
 1553934,Michael McColgan,920,Derry City,2026,IR1,36,Centre-Forward,0,Ireland,0,0,0,0
 1580873,Eoghan Curran,920,Derry City,2026,IR1,37,Right Winger,17,Ireland,0,0,0,0
-1459268,Yoann Prigent,920,Derry City,2026,IR1,38,Left Winger,17,Ireland,0,0,0,0
+1459268,Yoann Prigent,920,Derry City,2026,IR1,38,Left Winger,18,Ireland,0,0,0,0
 745768,Luke Dennison,4277,Drogheda United FC,2025,IR1,1,Goalkeeper,30,United States,32,22,0,1934
 568176,Fynn Talley,4277,Drogheda United FC,2025,IR1,44,Goalkeeper,24,England,36,15,0,1306
 1371606,Theo Hennessy,4277,Drogheda United FC,2025,IR1,36,Goalkeeper,19,Ireland,5,0,0,0
@@ -2045,7 +2045,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1230607,Dare Kareem,4277,Drogheda United FC,2025,IR1,0,Centre-Forward,20,Nigeria,24,12,0,296
 981903,Bridel Bosakani,4277,Drogheda United FC,2025,IR1,0,Centre-Forward,22,Ireland,10,0,0,0
 1303687,Ryan Markey,4277,Drogheda United FC,2025,IR1,25,Centre-Forward,20,Ireland,12,6,0,140
-1043841,Michael Cardo,4277,Drogheda United FC,2025,IR1,0,Centre-Forward,22,United States,4,0,0,0
+1043841,Michael Cardo,4277,Drogheda United FC,2025,IR1,0,Centre-Forward,23,United States,4,0,0,0
 1371028,Keegan Ancelin,4277,Drogheda United FC,2025,IR1,9,Centre-Forward,23,United States,8,8,1,252
 1523368,Cian O'Connor,4277,Drogheda United FC,2025,IR1,30,Centre-Forward,18,Ireland,15,1,0,3
 1005774,Daniel Mare,4277,Drogheda United FC,2025,IR1,32,Right Winger,19,Ireland,20,1,0,1
@@ -2170,7 +2170,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 204401,Conor O'Keeffe,6066,Dundalk FC,2025,IR1,2,Right-Back,33,Ireland,8,6,0,424
 261902,Rob Cornwall,6066,Dundalk FC,2025,IR1,24,Centre-Back,32,Ireland,23,21,1,1528
 1335736,Calum Woods,6066,Dundalk FC,2025,IR1,0,Defender,17,Northern Ireland,0,0,0,0
-1005773,Luke Mulligan,6066,Dundalk FC,2025,IR1,12,Right-Back,18,Ireland,27,2,0,58
+1005773,Luke Mulligan,6066,Dundalk FC,2025,IR1,12,Right-Back,19,Ireland,27,2,0,58
 1109570,Egor Vassenin,6066,Dundalk FC,2025,IR1,16,Centre-Back,19,Ireland,10,9,0,476
 1319776,Ethan Hall,6066,Dundalk FC,2025,IR1,16,Right-Back,20,Ireland,0,0,0,0
 1260391,Sean Spaight,6066,Dundalk FC,2025,IR1,19,Defender,17,Ireland,28,4,0,180
@@ -2209,7 +2209,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 204401,Conor O'Keeffe,6066,Dundalk FC,2026,IR1,2,Right-Back,33,Ireland,0,0,0,0
 261902,Rob Cornwall,6066,Dundalk FC,2026,IR1,24,Centre-Back,32,Ireland,0,0,0,0
 1335736,Calum Woods,6066,Dundalk FC,2026,IR1,0,Defender,17,Northern Ireland,0,0,0,0
-1005773,Luke Mulligan,6066,Dundalk FC,2026,IR1,12,Right-Back,18,Ireland,0,0,0,0
+1005773,Luke Mulligan,6066,Dundalk FC,2026,IR1,12,Right-Back,19,Ireland,0,0,0,0
 1109570,Egor Vassenin,6066,Dundalk FC,2026,IR1,16,Centre-Back,19,Ireland,0,0,0,0
 1319776,Ethan Hall,6066,Dundalk FC,2026,IR1,16,Right-Back,20,Ireland,0,0,0,0
 1260391,Sean Spaight,6066,Dundalk FC,2026,IR1,19,Defender,17,Ireland,0,0,0,0
@@ -2255,7 +2255,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1069756,Mitchell Bates,42394,Galway United FC,2025,IR1,0,Attacking Midfield,22,Wales,4,0,0,0
 120780,Conor McCormack,42394,Galway United FC,2025,IR1,0,Central Midfield,36,Ireland,22,13,0,482
 1404479,Junior Thiam,42394,Galway United FC,2025,IR1,17,Defensive Midfield,20,Ireland,21,7,0,53
-1568292,Conor Whittaker,42394,Galway United FC,2025,IR1,54,Right Midfield,17,Ireland,9,1,0,17
+1568292,Conor Whittaker,42394,Galway United FC,2025,IR1,54,Right Midfield,18,Ireland,9,1,0,17
 293372,Kris Twardek,42394,Galway United FC,2025,IR1,11,Right Winger,29,Canada,31,29,8,1687
 585818,Frantz Pierrot,42394,Galway United FC,2025,IR1,0,Centre-Forward,27,Haiti,32,29,5,981
 1242701,Nicolas Fleuriau Chateau,42394,Galway United FC,2025,IR1,0,Centre-Forward,24,Canada,18,3,0,31
@@ -2283,7 +2283,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 878277,Ed McCarthy,42394,Galway United FC,2026,IR1,24,Right Midfield,25,Ireland,0,0,0,0
 136179,Jimmy Keohane,42394,Galway United FC,2026,IR1,4,Central Midfield,35,Ireland,0,0,0,0
 1404479,Junior Thiam,42394,Galway United FC,2026,IR1,17,Defensive Midfield,20,Ireland,0,0,0,0
-1568292,Conor Whittaker,42394,Galway United FC,2026,IR1,54,Right Midfield,17,Ireland,0,0,0,0
+1568292,Conor Whittaker,42394,Galway United FC,2026,IR1,54,Right Midfield,18,Ireland,0,0,0,0
 293372,Kris Twardek,42394,Galway United FC,2026,IR1,11,Right Winger,29,Canada,0,0,0,0
 798171,Francely Lomboto,42394,Galway United FC,2026,IR1,9,Left Winger,26,Ireland,0,0,0,0
 750777,Dara McGuinness,42394,Galway United FC,2026,IR1,27,Centre-Forward,22,Ireland,0,0,0,0

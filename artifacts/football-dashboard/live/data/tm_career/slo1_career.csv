@@ -1,6 +1,6 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
 495830,Adrian Knurovsky,2026,SKC,4531,False,3,0,0,0,0,0,0,0,0
-495830,Adrian Knurovsky,2026,SK2,4531,False,16,13,0,1166,0,0,0,0,1
+495830,Adrian Knurovsky,2026,SK2,4531,False,17,14,0,1256,0,0,0,0,1
 495830,Adrian Knurovsky,2025,SLO1,4531,False,22,2,0,180,0,0,0,0,0
 495830,Adrian Knurovsky,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
 495830,Adrian Knurovsky,2025,SKC,4531,False,7,7,0,660,0,0,0,0,0
@@ -89,7 +89,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 120175,Pavol Bajza,2009,U19Q,25960,True,6,5,0,450,0,0,0,0,2
 120175,Pavol Bajza,2009,SLO1,7392,False,33,14,0,1201,0,0,0,0,3
 120175,Pavol Bajza,2009,FS,25960,True,2,1,0,90,0,0,0,0,1
-342151,Daniels Balodis,2026,UNLC,3555,True,4,1,0,90,0,0,0,0,0
+342151,Daniels Balodis,2026,UNLC,3555,True,6,2,0,180,0,0,2,1,0
 342151,Daniels Balodis,2026,SKC,4531,False,1,0,0,0,0,0,0,0,0
 342151,Daniels Balodis,2026,SK2,4531,False,5,0,0,0,0,0,0,0,0
 342151,Daniels Balodis,2025,UNPO,3555,True,2,2,0,135,0,0,0,0,1
@@ -153,7 +153,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 342151,Daniels Balodis,2014,U17Q,28832,True,3,2,0,96,0,0,0,0,0
 342151,Daniels Balodis,2014,LET1,1043,False,2,0,0,0,0,0,0,0,0
 342151,Daniels Balodis,2014,FS,28832,True,2,2,0,160,0,0,0,0,0
-396225,Vaclav Mika,2026,CZ3C,8751,False,14,1,13,56,0,0,0,0,0
+396225,Vaclav Mika,2026,CZ3C,8751,False,15,1,14,56,0,0,0,0,0
 396225,Vaclav Mika,2025,TSP,941,False,1,0,1,0,0,0,0,0,0
 396225,Vaclav Mika,2025,TS1,941,False,11,0,11,0,0,0,0,0,0
 396225,Vaclav Mika,2025,T1MR,941,False,5,0,5,0,0,0,0,0,0
@@ -196,7 +196,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 396225,Vaclav Mika,2016,CZ19,13907,False,25,16,0,1311,1,0,0,0,1
 396225,Vaclav Mika,2015,FS,25793,True,12,4,0,264,0,0,0,0,0
 269351,Maksym Kuchynskyi,2026,SKC,4531,False,3,0,0,0,0,0,0,0,0
-269351,Maksym Kuchynskyi,2026,SK2,4531,False,16,0,0,0,0,0,0,0,0
+269351,Maksym Kuchynskyi,2026,SK2,4531,False,17,0,0,0,0,0,0,0,0
 269351,Maksym Kuchynskyi,2025,SLO1,4531,False,22,0,0,0,0,0,0,0,0
 269351,Maksym Kuchynskyi,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
 269351,Maksym Kuchynskyi,2025,SKC,4531,False,7,0,0,0,0,0,0,0,0
@@ -270,7 +270,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 654787,Denys Taraduda,2017,UKRP,339,False,1,1,0,26,0,0,0,0,0
 654787,Denys Taraduda,2017,UA3L,339,False,33,21,0,823,0,0,0,0,4
 654787,Denys Taraduda,2016,FS,23313,True,5,4,0,320,0,0,0,0,1
-405058,Ioan-Calin Revenco,2026,UNLC,6090,True,4,2,0,162,0,0,2,1,0
+405058,Ioan-Calin Revenco,2026,UNLC,6090,True,6,4,0,288,0,0,2,1,0
 405058,Ioan-Calin Revenco,2026,SKC,4531,False,1,0,0,0,0,0,0,0,0
 405058,Ioan-Calin Revenco,2026,SK2,4531,False,6,0,0,0,0,0,0,0,0
 405058,Ioan-Calin Revenco,2026,MWP1,46643,False,1,0,0,0,0,0,0,0,0
@@ -414,7 +414,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 452222,Moritz Römling,2017,BJ2,21085,False,26,12,0,686,2,0,0,0,1
 452222,Moritz Römling,2016,BJ2,21085,False,1,1,0,17,0,0,0,0,0
 239957,Michal Siplak,2026,SKC,4531,False,3,2,0,90,0,0,0,0,0
-239957,Michal Siplak,2026,SK2,4531,False,16,14,0,1187,0,1,0,0,2
+239957,Michal Siplak,2026,SK2,4531,False,17,15,0,1277,0,1,0,0,2
 239957,Michal Siplak,2026,FS,25723,True,2,0,0,0,0,0,0,0,0
 239957,Michal Siplak,2025,SLO1,4531,False,22,21,0,1845,1,4,12,3,6
 239957,Michal Siplak,2025,SLMR,4531,False,10,6,0,464,0,0,3,0,0
@@ -521,10 +521,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 333024,Taras Bondarenko,2014,UKR2,23634,False,29,22,1,1587,0,0,0,0,5
 333024,Taras Bondarenko,2011,UA3L,12518,False,26,25,0,1854,2,0,0,0,3
 958383,Séverin Tatolna,2026,UKRP,86209,False,3,1,0,64,0,0,0,0,0
-958383,Séverin Tatolna,2026,UKR1,86209,False,10,4,0,184,0,0,0,0,0
+958383,Séverin Tatolna,2026,UKR1,86209,False,11,4,0,184,0,0,0,0,0
 958383,Séverin Tatolna,2026,UA2P,143046,False,4,2,0,126,0,0,0,0,0
 958383,Séverin Tatolna,2026,SLO1,20063,False,2,0,0,0,0,0,0,0,0
-958383,Séverin Tatolna,2026,AFCQ,12933,True,2,1,0,7,0,0,0,0,0
+958383,Séverin Tatolna,2026,AFCQ,12933,True,3,1,0,7,0,0,0,0,0
 958383,Séverin Tatolna,2025,SLO1,4531,False,4,3,0,145,0,1,2,1,1
 958383,Séverin Tatolna,2025,SLO1,20063,False,18,7,0,182,0,2,3,0,0
 958383,Séverin Tatolna,2025,SLMR,4531,False,10,7,0,489,0,0,1,0,1
@@ -545,7 +545,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 958383,Séverin Tatolna,2021,FS,12933,True,2,0,0,0,0,0,0,0,0
 958383,Séverin Tatolna,2021,AFCQ,12933,True,6,1,0,45,0,0,1,0,0
 958383,Séverin Tatolna,2019,WMQ2,12933,True,2,0,0,0,0,0,0,0,0
-299587,Juraj Kotula,2026,A4B,22044,False,14,12,0,1035,0,0,0,0,2
+299587,Juraj Kotula,2026,A4B,22044,False,15,13,0,1125,0,0,0,0,2
 299587,Juraj Kotula,2025,SLO1,4531,False,22,19,0,1534,1,0,7,1,0
 299587,Juraj Kotula,2025,SLMR,4531,False,10,6,0,379,0,0,1,0,0
 299587,Juraj Kotula,2025,SKC,4531,False,7,6,0,450,0,0,0,0,0
@@ -601,7 +601,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 299587,Juraj Kotula,2013,U19Q,25960,True,3,0,0,0,0,0,0,0,0
 299587,Juraj Kotula,2012,FS,30430,True,2,2,0,55,0,0,0,0,0
 403512,Jozef Menich,2026,SKC,4531,False,3,2,0,135,0,0,0,0,0
-403512,Jozef Menich,2026,SK2,4531,False,16,15,0,1350,0,1,0,0,1
+403512,Jozef Menich,2026,SK2,4531,False,17,16,0,1440,0,1,0,0,1
 403512,Jozef Menich,2025,SLO1,4531,False,22,11,0,878,0,0,1,0,1
 403512,Jozef Menich,2025,SLMR,4531,False,10,7,0,630,0,0,7,2,3
 403512,Jozef Menich,2025,SKC,4531,False,7,3,0,225,0,0,0,0,0
@@ -695,6 +695,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 988188,Dominique Simon,2026,UAE1,17195,False,2,2,0,150,0,0,3,2,0
 988188,Dominique Simon,2026,TSP,1496,False,2,2,0,123,0,0,0,0,1
 988188,Dominique Simon,2026,TS1,1496,False,9,1,0,67,0,0,0,0,1
+988188,Dominique Simon,2026,CNNF,14161,True,1,1,0,28,0,0,0,0,0
 988188,Dominique Simon,2026,CNLA,14161,True,4,0,0,0,0,0,0,0,0
 988188,Dominique Simon,2025,TS1,1496,False,4,1,0,11,0,0,1,0,0
 988188,Dominique Simon,2025,SLO1,4531,False,18,11,5,510,1,0,11,5,1
@@ -724,7 +725,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 988188,Dominique Simon,2020,FR5H,26594,False,6,0,0,0,0,0,0,0,0
 988188,Dominique Simon,2019,FR5H,26594,False,18,0,0,0,0,0,0,0,0
 132375,Patrik Simko,2026,SKC,4531,False,3,0,2,0,0,0,0,0,0
-132375,Patrik Simko,2026,SK2,4531,False,16,7,7,518,0,2,0,0,1
+132375,Patrik Simko,2026,SK2,4531,False,17,8,7,608,0,2,0,0,1
 132375,Patrik Simko,2025,SLO1,4531,False,22,18,0,1446,0,0,20,3,7
 132375,Patrik Simko,2025,SLMR,4531,False,10,1,0,60,0,0,0,0,0
 132375,Patrik Simko,2025,SKC,4531,False,7,4,0,316,0,0,0,0,2
@@ -780,7 +781,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 132375,Patrik Simko,2009,U19Q,25960,True,6,6,0,540,0,0,0,0,1
 132375,Patrik Simko,2009,FS,25960,True,2,2,0,180,0,0,0,0,1
 474143,Roman Begala,2026,SLO1,365,False,14,12,0,732,0,1,9,3,2
-474143,Roman Begala,2026,SKC,365,False,3,2,0,135,0,0,0,0,1
+474143,Roman Begala,2026,SKC,365,False,4,2,0,135,0,0,0,0,1
 474143,Roman Begala,2026,ECLQ,365,False,2,2,0,210,0,0,0,0,1
 474143,Roman Begala,2025,SLO1,4531,False,22,22,0,1961,2,1,33,7,4
 474143,Roman Begala,2025,SLMR,4531,False,10,9,1,661,1,0,6,1,2
@@ -808,7 +809,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 474143,Roman Begala,2016,SKC,779,False,1,0,0,0,0,0,0,0,0
 474143,Roman Begala,2016,SK2P,779,False,12,1,0,60,0,0,0,0,0
 474143,Roman Begala,2016,SK2,779,False,18,2,0,32,0,0,0,0,0
-672840,Filip Soucek,2026,SLO1,7087,False,14,11,0,878,0,2,10,1,1
+672840,Filip Soucek,2026,SLO1,7087,False,14,12,0,957,0,2,10,1,1
 672840,Filip Soucek,2026,SKC,7087,False,3,0,0,0,0,0,0,0,0
 672840,Filip Soucek,2025,SLO1,4531,False,22,11,0,667,1,1,11,4,1
 672840,Filip Soucek,2025,SLMR,4531,False,10,8,0,537,1,1,18,6,3
@@ -867,7 +868,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 935047,Kyrylo Sigeev,2022,21EU,16274,True,5,0,0,0,0,0,0,0,0
 935047,Kyrylo Sigeev,2022,19YL,41576,False,7,6,0,540,1,0,1,1,2
 935047,Kyrylo Sigeev,2021,19YL,41576,False,6,6,0,426,2,0,0,0,0
-604104,Bleron Krasniqi,2026,RLSW,39470,False,15,3,0,94,0,1,0,0,1
+604104,Bleron Krasniqi,2026,RLSW,39470,False,16,4,0,157,0,1,0,0,1
 604104,Bleron Krasniqi,2026,HEPO,39470,False,1,0,0,0,0,0,0,0,0
 604104,Bleron Krasniqi,2025,ofb,2394,False,2,1,0,90,0,1,0,0,1
 604104,Bleron Krasniqi,2025,SLO1,4531,False,13,8,2,185,0,1,6,3,0
@@ -912,7 +913,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 818240,Hélder Morim,2020,PO2,3345,False,4,4,0,55,0,0,0,0,0
 818240,Hélder Morim,2020,P232,75123,False,10,9,0,688,0,0,0,0,2
 344314,Denis Potoma,2026,POPU,31568,False,1,1,0,90,0,0,0,0,0
-344314,Denis Potoma,2026,PL2L,31568,False,15,6,0,100,0,0,0,0,0
+344314,Denis Potoma,2026,PL2L,31568,False,16,6,0,100,0,0,0,0,0
 344314,Denis Potoma,2025,SLO1,4531,False,7,2,0,112,0,0,1,0,1
 344314,Denis Potoma,2025,SKC,4531,False,1,0,0,0,0,0,0,0,0
 344314,Denis Potoma,2025,SKC,36107,False,1,1,0,85,0,0,0,0,0
@@ -985,7 +986,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 278267,Boris Gall,2013,SKC,779,False,5,0,0,0,0,0,0,0,0
 1138683,Artur Ukhan,2026,U19Q,21233,True,3,0,0,0,0,0,0,0,0
 1138683,Artur Ukhan,2026,SKC,4531,False,3,2,0,135,1,1,0,0,0
-1138683,Artur Ukhan,2026,SK2,4531,False,16,13,0,204,0,0,0,0,1
+1138683,Artur Ukhan,2026,SK2,4531,False,17,13,0,204,0,0,0,0,1
 1138683,Artur Ukhan,2025,U19Q,21233,True,3,2,0,125,0,1,0,0,0
 1138683,Artur Ukhan,2025,SLO1,4531,False,17,3,0,17,0,0,0,0,1
 1138683,Artur Ukhan,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
@@ -996,7 +997,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1138683,Artur Ukhan,2023,U17Q,23313,True,3,3,0,72,1,0,0,0,0
 1138683,Artur Ukhan,2022,FS,31726,True,3,3,0,180,0,0,0,0,0
 1237871,Jakub Molnar,2026,SKC,4531,False,3,1,0,45,0,0,0,0,0
-1237871,Jakub Molnar,2026,SK2,4531,False,16,10,0,585,0,0,0,0,2
+1237871,Jakub Molnar,2026,SK2,4531,False,17,11,0,675,0,0,0,0,2
 1237871,Jakub Molnar,2025,SLO1,4531,False,17,0,0,0,0,0,0,0,0
 1237871,Jakub Molnar,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
 1237871,Jakub Molnar,2025,SKC,4531,False,7,2,0,46,0,0,0,0,0
@@ -1004,7 +1005,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1237871,Jakub Molnar,2024,SK19,24529,False,26,23,0,1555,0,0,0,0,3
 1237871,Jakub Molnar,2023,SK19,24529,False,11,4,0,47,0,0,0,0,0
 534024,Gabriel Barbosa,2026,POPO,4294,False,2,2,0,84,1,1,0,0,2
-534024,Gabriel Barbosa,2026,PO2,4294,False,10,8,0,232,0,0,0,0,2
+534024,Gabriel Barbosa,2026,PO2,4294,False,11,9,0,263,0,0,0,0,3
 534024,Gabriel Barbosa,2025,SLO1,4531,False,2,2,0,135,0,0,9,2,0
 534024,Gabriel Barbosa,2025,SLMR,4531,False,10,9,0,591,1,0,17,6,1
 534024,Gabriel Barbosa,2025,SKC,4531,False,3,3,0,141,2,1,0,0,1
@@ -1040,7 +1041,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 534024,Gabriel Barbosa,2017,IJ2A,22276,False,24,20,0,1308,6,0,0,0,4
 534024,Gabriel Barbosa,2017,CITP,22276,False,1,1,0,61,0,0,0,0,0
 1267383,Marek Terpak,2026,SKC,4531,False,3,2,0,180,0,0,0,0,0
-1267383,Marek Terpak,2026,SK2,4531,False,16,2,0,103,0,0,0,0,1
+1267383,Marek Terpak,2026,SK2,4531,False,17,2,0,103,0,0,0,0,1
 1267383,Marek Terpak,2025,SLO1,4531,False,17,0,0,0,0,0,0,0,0
 1267383,Marek Terpak,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
 1267383,Marek Terpak,2025,SKC,4531,False,7,2,0,180,0,0,0,0,0
@@ -1048,7 +1049,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1267383,Marek Terpak,2024,SK19,75185,False,26,22,0,1808,0,0,0,0,4
 1267383,Marek Terpak,2023,SK19,24522,False,5,1,0,1,0,0,0,0,0
 382211,Martin Regali,2026,SKC,4531,False,3,2,0,90,2,0,0,0,0
-382211,Martin Regali,2026,SK2,4531,False,16,16,0,1395,7,7,0,0,3
+382211,Martin Regali,2026,SK2,4531,False,17,17,0,1485,7,8,0,0,3
 382211,Martin Regali,2025,SLO1,4531,False,22,20,0,1636,8,0,44,18,7
 382211,Martin Regali,2025,SLMR,4531,False,10,10,0,829,1,1,9,3,1
 382211,Martin Regali,2025,SKC,4531,False,7,5,0,222,2,4,0,0,0
@@ -1101,7 +1102,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 382211,Martin Regali,2013,SK2,13744,False,33,26,0,635,2,0,0,0,1
 382211,Martin Regali,2012,SK2,13744,False,33,16,0,733,5,0,0,0,3
 655731,Stanislav Olejnik,2026,SKC,4531,False,3,0,3,0,0,0,0,0,0
-655731,Stanislav Olejnik,2026,SK2,4531,False,16,0,16,0,0,0,0,0,0
+655731,Stanislav Olejnik,2026,SK2,4531,False,17,0,17,0,0,0,0,0,0
 655731,Stanislav Olejnik,2025,SLO1,4531,False,22,20,0,1554,3,3,42,17,3
 655731,Stanislav Olejnik,2025,SLMR,4531,False,10,3,6,216,0,0,5,3,1
 655731,Stanislav Olejnik,2025,SKC,4531,False,7,5,1,327,1,5,0,0,1
@@ -1128,7 +1129,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 655731,Stanislav Olejnik,2019,SKC,20610,False,5,2,0,135,0,0,0,0,0
 655731,Stanislav Olejnik,2019,SK2P,20610,False,4,0,0,0,0,0,0,0,0
 655731,Stanislav Olejnik,2019,SK2,20610,False,17,4,0,67,1,0,0,0,0
-655731,Stanislav Olejnik,2019,FS,30430,True,4,3,0,195,0,0,0,0,0
+655731,Stanislav Olejnik,2019,FS,30430,True,6,3,0,195,0,0,0,0,0
 655731,Stanislav Olejnik,2018,SK2,4531,False,13,10,0,708,2,0,0,0,2
 345739,Shayon Harrison,2025,SLO1,4531,False,4,0,0,0,0,0,0,0,0
 345739,Shayon Harrison,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
@@ -1220,7 +1221,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 356515,Lukasz Wolsztynski,2014,PL2L,32007,False,15,13,0,685,3,0,0,0,0
 356515,Lukasz Wolsztynski,2014,PL1,428,False,13,0,0,0,0,0,0,0,0
 908677,Landing Sagna,2026,SKC,4531,False,3,2,0,135,0,0,0,0,0
-908677,Landing Sagna,2026,SK2,4531,False,16,16,0,486,4,1,0,0,1
+908677,Landing Sagna,2026,SK2,4531,False,17,16,0,486,4,1,0,0,1
 908677,Landing Sagna,2025,SLO1,4531,False,22,16,0,712,2,0,15,6,2
 908677,Landing Sagna,2025,SLMR,4531,False,10,8,0,210,0,0,6,5,1
 908677,Landing Sagna,2025,SKC,4531,False,7,5,0,256,1,1,0,0,1
@@ -1302,13 +1303,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 705830,Peter Juritka,2019,FS,25723,True,2,2,0,95,0,0,0,0,0
 705830,Peter Juritka,2018,FS,34689,True,2,2,0,70,0,0,0,0,0
 1450730,David Griger,2026,SKC,4531,False,3,2,0,90,1,0,0,0,0
-1450730,David Griger,2026,SK2,4531,False,16,11,0,540,0,0,0,0,0
+1450730,David Griger,2026,SK2,4531,False,17,12,0,568,0,0,0,0,0
 1450730,David Griger,2025,SLO1,4531,False,12,2,0,7,0,0,0,0,0
 1450730,David Griger,2025,SLMR,4531,False,10,0,0,0,0,0,0,0,0
 1450730,David Griger,2025,SKC,4531,False,6,1,0,29,0,0,0,0,0
 1450730,David Griger,2025,SK19,24522,False,26,26,0,2214,15,0,0,0,4
 1466079,Rachid Sande Barro,2026,SKC,34775,False,3,3,0,270,0,0,0,0,0
-1466079,Rachid Sande Barro,2026,SK2,34775,False,16,16,0,506,0,2,0,0,3
+1466079,Rachid Sande Barro,2026,SK2,34775,False,17,16,0,506,0,2,0,0,3
 1466079,Rachid Sande Barro,2026,ECLQ,4529,False,1,0,0,0,0,0,0,0,0
 1466079,Rachid Sande Barro,2025,SLO1,4529,False,15,3,0,22,0,0,0,0,0
 1466079,Rachid Sande Barro,2025,SLAR,4529,False,10,0,8,0,0,0,0,0,0
@@ -1358,7 +1359,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726672,Adrian Fiala,2021,FS,25792,True,5,2,0,87,0,0,0,0,0
 726672,Adrian Fiala,2021,AA17,25792,True,3,2,0,62,0,0,0,0,0
 969346,Alex Hudok,2026,SKC,34775,False,3,0,0,0,0,0,0,0,0
-969346,Alex Hudok,2026,SK2,34775,False,16,16,0,1440,0,0,0,0,0
+969346,Alex Hudok,2026,SK2,34775,False,17,17,0,1530,0,0,0,0,0
 969346,Alex Hudok,2025,SLO1,7918,False,22,3,0,270,0,0,0,0,0
 969346,Alex Hudok,2025,SLMR,7918,False,10,0,0,0,0,0,0,0,0
 969346,Alex Hudok,2025,SKC,7918,False,5,1,0,90,0,0,0,0,0
@@ -1381,8 +1382,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 969346,Alex Hudok,2021,FS,25723,True,2,1,0,90,0,0,0,0,0
 969346,Alex Hudok,2020,FS,34689,True,1,1,0,80,0,0,0,0,0
 1190130,Lukas Pristach,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
+1190130,Lukas Pristach,2026,U17Q,25792,True,2,0,0,0,0,0,0,0,0
 1190130,Lukas Pristach,2026,SKC,46955,False,1,0,0,0,0,0,0,0,0
-1190130,Lukas Pristach,2026,SK2,46955,False,16,3,0,29,0,0,0,0,0
+1190130,Lukas Pristach,2026,SK2,46955,False,17,3,0,29,0,0,0,0,0
 1190130,Lukas Pristach,2026,FS,25792,True,2,0,0,0,0,0,0,0,0
 1190130,Lukas Pristach,2026,ECLQ,365,False,1,0,0,0,0,0,0,0,0
 1190130,Lukas Pristach,2025,U19Q,25960,True,6,5,0,361,0,0,0,0,0
@@ -1405,7 +1407,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1190130,Lukas Pristach,2022,U17Q,25792,True,3,0,0,0,0,0,0,0,0
 1190130,Lukas Pristach,2022,FS,25792,True,3,0,0,0,0,0,0,0,0
 1146632,Jakub Michlik,2026,SKC,38269,False,2,1,0,27,1,0,0,0,0
-1146632,Jakub Michlik,2026,SK2,38269,False,16,13,1,986,7,3,0,0,6
+1146632,Jakub Michlik,2026,SK2,38269,False,17,14,1,1042,7,3,0,0,7
 1146632,Jakub Michlik,2025,SLO1,4531,False,2,0,0,0,0,0,0,0,0
 1146632,Jakub Michlik,2025,SKC,68352,False,3,3,0,94,1,0,0,0,1
 1146632,Jakub Michlik,2025,SK2,68352,False,17,16,0,1361,4,4,0,0,6
@@ -1415,8 +1417,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1146632,Jakub Michlik,2023,SK19,24522,False,22,22,0,1605,2,0,0,0,3
 1146632,Jakub Michlik,2023,SK19,19857,False,4,1,0,21,0,0,0,0,0
 1146632,Jakub Michlik,2022,SK19,19857,False,18,9,0,565,0,0,0,0,0
-1303146,Patrik Filippov,2026,SKC,38269,False,2,1,0,63,0,0,0,0,0
-1303146,Patrik Filippov,2026,SK2,38269,False,16,15,0,394,0,0,0,0,1
+1303146,Patrik Filippov,2026,SKC,38269,False,2,2,0,134,0,0,0,0,0
+1303146,Patrik Filippov,2026,SK2,38269,False,17,16,0,457,0,0,0,0,1
 1303146,Patrik Filippov,2025,SLO1,20063,False,4,1,0,8,0,0,0,0,0
 1303146,Patrik Filippov,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
 1303146,Patrik Filippov,2025,SKC,20063,False,3,0,0,0,0,0,0,0,0
@@ -1509,20 +1511,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 546820,Patrik Leitner,2023,SLO1,1443,False,22,12,0,768,1,0,6,2,1
 546820,Patrik Leitner,2023,SLAR,1443,False,10,2,0,93,0,0,1,0,0
 546820,Patrik Leitner,2023,SKC,1443,False,4,4,0,306,0,0,0,0,0
-546820,Patrik Leitner,2023,SK2,20634,False,5,5,0,413,0,1,0,0,1
+546820,Patrik Leitner,2023,SK2,20634,False,25,5,0,413,0,1,0,0,1
 546820,Patrik Leitner,2023,FS,24965,True,9,8,0,500,0,0,0,0,1
 546820,Patrik Leitner,2023,ECLQ,1443,False,4,1,0,90,0,0,0,0,0
 546820,Patrik Leitner,2022,SWEP,1443,False,2,0,0,0,0,0,0,0,0
 546820,Patrik Leitner,2022,SLO1,1443,False,22,19,0,1633,0,0,6,0,6
 546820,Patrik Leitner,2022,SLAR,1443,False,10,4,0,315,0,1,1,1,0
 546820,Patrik Leitner,2022,SKC,1443,False,3,2,0,180,0,0,0,0,1
-546820,Patrik Leitner,2022,SK2,20634,False,2,2,0,180,0,0,0,0,0
+546820,Patrik Leitner,2022,SK2,20634,False,11,2,0,180,0,0,0,0,0
 546820,Patrik Leitner,2022,FS,24965,True,5,3,0,153,0,0,0,0,0
 546820,Patrik Leitner,2021,SWEP,1443,False,1,0,0,0,0,0,0,0,0
 546820,Patrik Leitner,2021,SLO1,1443,False,10,0,0,0,0,0,0,0,0
 546820,Patrik Leitner,2021,SLAR,1443,False,10,5,0,360,0,0,0,0,1
 546820,Patrik Leitner,2021,SKC,1443,False,3,1,0,90,1,0,0,0,0
-546820,Patrik Leitner,2021,SK2,20634,False,21,15,0,1220,2,2,0,0,1
+546820,Patrik Leitner,2021,SK2,20634,False,28,15,0,1220,2,2,0,0,1
 546820,Patrik Leitner,2021,19YL,69404,False,6,5,0,450,0,0,0,0,1
 546820,Patrik Leitner,2020,SWEP,1443,False,2,0,0,0,0,0,0,0,0
 546820,Patrik Leitner,2020,SLO1,1443,False,14,0,0,0,0,0,0,0,0
@@ -1530,10 +1532,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 546820,Patrik Leitner,2020,SKC,1443,False,6,0,0,0,0,0,0,0,0
 546820,Patrik Leitner,2020,SK2,20634,False,28,14,0,895,0,1,0,0,3
 546820,Patrik Leitner,2020,FS,25960,True,1,1,0,90,0,0,0,0,0
-546820,Patrik Leitner,2019,SK2P,20634,False,2,2,0,112,0,0,0,0,1
-546820,Patrik Leitner,2019,FS,30430,True,4,4,0,360,0,0,0,0,0
+546820,Patrik Leitner,2019,SK2P,20634,False,3,2,0,112,0,0,0,0,1
+546820,Patrik Leitner,2019,FS,30430,True,6,6,0,495,0,0,0,0,1
 546820,Patrik Leitner,2018,U17Q,25792,True,6,6,0,540,1,0,0,0,1
-546820,Patrik Leitner,2018,FS,25792,True,2,1,0,90,0,0,0,0,0
+546820,Patrik Leitner,2018,FS,25792,True,3,1,0,90,0,0,0,0,0
 546820,Patrik Leitner,2017,FS,25723,True,2,1,0,80,0,0,0,0,0
 546820,Patrik Leitner,2016,FS,34689,True,2,1,0,80,0,0,0,0,0
 641662,Viktor Uradnik,2025,SWRP,36093,False,2,2,0,161,0,0,0,0,0
@@ -1561,7 +1563,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 641662,Viktor Uradnik,2019,FS,25723,True,1,1,0,80,0,0,0,0,0
 641662,Viktor Uradnik,2018,FS,34689,True,2,2,0,41,0,0,0,0,0
 1146646,Lukas Dvorsky,2026,SKC,36093,False,3,1,0,90,0,0,0,0,0
-1146646,Lukas Dvorsky,2026,SK2,36093,False,16,14,0,503,0,0,0,0,0
+1146646,Lukas Dvorsky,2026,SK2,36093,False,17,15,0,507,0,0,0,0,0
 1146646,Lukas Dvorsky,2025,SWRP,36093,False,2,1,0,2,0,0,0,0,0
 1146646,Lukas Dvorsky,2025,SKC,36093,False,3,2,0,135,0,0,0,0,0
 1146646,Lukas Dvorsky,2025,SK2,36093,False,30,24,0,1735,0,4,0,0,2
@@ -1635,7 +1637,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 614420,Alden Suvalija,2018,BI19,5610,False,19,5,0,116,0,1,0,0,0
 614420,Alden Suvalija,2018,BI17,48188,False,32,27,0,1936,5,7,0,0,2
 614420,Alden Suvalija,2017,BI17,48188,False,33,16,0,442,5,3,0,0,1
-1077479,Christos Makrygiannis,2026,GRS2,5572,False,10,6,0,292,0,1,0,0,1
+1077479,Christos Makrygiannis,2026,GRS2,5572,False,11,7,0,337,0,1,0,0,1
 1077479,Christos Makrygiannis,2026,GRP,5572,False,4,4,0,360,1,0,0,0,2
 1077479,Christos Makrygiannis,2025,SLO1,13744,False,4,0,0,0,0,0,0,0,0
 1077479,Christos Makrygiannis,2025,SLAR,13744,False,10,4,0,152,0,0,0,0,0
@@ -1662,7 +1664,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1076103,Dimos Papakonstantinou,2023,GR20,14778,False,26,19,0,1509,1,0,0,0,4
 1076103,Dimos Papakonstantinou,2022,GR20,14778,False,13,2,0,156,0,0,0,0,0
 930393,David Petrik,2026,SKC,61909,False,3,2,0,180,0,1,0,0,0
-930393,David Petrik,2026,SK2,61909,False,16,8,0,287,1,0,0,0,1
+930393,David Petrik,2026,SK2,61909,False,17,8,0,287,1,0,0,0,1
 930393,David Petrik,2025,SLO1,13744,False,20,0,18,0,0,0,0,0,0
 930393,David Petrik,2025,SKC,13744,False,4,0,4,0,0,0,0,0,0
 930393,David Petrik,2025,SK2,68352,False,13,11,0,668,1,1,0,0,1
@@ -1687,7 +1689,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 930393,David Petrik,2021,FS,25792,True,5,5,0,370,1,0,0,0,0
 930393,David Petrik,2021,AA17,25792,True,3,3,0,127,0,0,0,0,0
 1198209,Jakub Peter Bamburak,2026,SKC,61909,False,3,2,0,104,1,0,0,0,0
-1198209,Jakub Peter Bamburak,2026,SK2,61909,False,16,15,0,539,1,0,0,0,0
+1198209,Jakub Peter Bamburak,2026,SK2,61909,False,17,16,0,557,1,0,0,0,0
 1198209,Jakub Peter Bamburak,2025,SLAR,13744,False,8,1,0,5,0,0,0,0,0
 1198209,Jakub Peter Bamburak,2025,SK19,45727,False,26,18,0,1386,4,0,0,0,3
 1198209,Jakub Peter Bamburak,2024,SK19,45727,False,26,23,0,1618,0,0,0,0,4
@@ -1816,7 +1818,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 579631,Sharani Zuberu,2026,SLO1,540,False,3,0,0,0,0,0,0,0,0
 579631,Sharani Zuberu,2026,ISR1,43119,False,10,8,0,328,0,1,3,1,0
 579631,Sharani Zuberu,2026,CLQ,540,False,4,2,0,37,0,0,0,0,0
-579631,Sharani Zuberu,2026,AFCQ,3815,True,2,2,0,101,0,1,4,0,1
+579631,Sharani Zuberu,2026,AFCQ,3815,True,3,2,0,101,0,1,4,0,1
 579631,Sharani Zuberu,2025,UCOL,540,False,6,0,0,0,0,0,0,0,0
 579631,Sharani Zuberu,2025,SLO1,540,False,22,5,0,391,0,0,2,0,0
 579631,Sharani Zuberu,2025,SLAR,540,False,10,3,0,74,0,0,1,0,1
@@ -1866,7 +1868,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 579631,Sharani Zuberu,2017,GHPL,37487,False,12,12,0,1008,4,0,0,0,1
 1084447,Karol Blasko,2026,SLO1,4529,False,2,0,0,0,0,0,0,0,0
 1084447,Karol Blasko,2026,SKC,34775,False,3,1,0,30,0,0,0,0,0
-1084447,Karol Blasko,2026,SK2,34775,False,14,1,0,24,0,0,0,0,0
+1084447,Karol Blasko,2026,SK2,34775,False,15,2,0,28,0,0,0,0,0
 1084447,Karol Blasko,2026,ECLQ,4529,False,3,0,0,0,0,0,0,0,0
 1084447,Karol Blasko,2025,U21Q,24965,True,4,3,0,132,1,0,0,0,1
 1084447,Karol Blasko,2025,U19Q,25960,True,3,2,0,155,1,0,0,0,0
@@ -1888,7 +1890,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1084447,Karol Blasko,2021,FS,34689,True,2,2,0,70,0,0,0,0,0
 998428,Nentaka Bangs,2026,SLO1,7918,False,2,0,0,0,0,0,0,0,0
 998428,Nentaka Bangs,2026,SKC,24526,False,2,0,0,0,0,0,0,0,0
-998428,Nentaka Bangs,2026,SK2,24526,False,13,13,0,1072,4,4,0,0,4
+998428,Nentaka Bangs,2026,SK2,24526,False,14,14,0,1162,4,4,0,0,4
 998428,Nentaka Bangs,2025,SLO1,7918,False,4,4,0,91,0,0,2,0,0
 998428,Nentaka Bangs,2025,SLMR,7918,False,10,1,0,11,0,0,1,0,0
 998428,Nentaka Bangs,2025,SKC,7918,False,1,1,0,11,0,0,0,0,0
@@ -1956,7 +1958,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1383447,Alex-Jason Amadin,2024,NLC,1078,False,2,1,0,1,0,0,0,0,0
 1383447,Alex-Jason Amadin,2024,CNAT,1078,False,7,0,0,0,0,0,0,0,0
 381487,Benjamin Szaraz,2026,SLO1,365,False,5,0,0,0,0,0,0,0,0
-381487,Benjamin Szaraz,2026,SKC,365,False,1,0,0,0,0,0,0,0,0
+381487,Benjamin Szaraz,2026,SKC,365,False,2,0,0,0,0,0,0,0,0
 381487,Benjamin Szaraz,2025,SWRP,32314,False,2,0,2,0,0,0,0,0,0
 381487,Benjamin Szaraz,2025,SLO1,32314,False,22,15,3,1334,0,0,0,0,0
 381487,Benjamin Szaraz,2025,SLMR,32314,False,10,1,9,50,0,0,0,0,0
@@ -2083,7 +2085,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 502355,Nino Kukovec,2017,17EU,22906,True,3,3,0,95,0,0,0,0,0
 502355,Nino Kukovec,2015,FS,53687,True,5,3,0,48,0,0,0,0,0
 1255421,Shakhmurza Adyrbekov,2026,SKC,40834,False,2,0,0,0,0,0,0,0,0
-1255421,Shakhmurza Adyrbekov,2026,FS,24960,True,1,1,0,45,0,0,0,0,0
+1255421,Shakhmurza Adyrbekov,2026,FS,24960,True,2,2,0,59,0,0,0,0,0
 1255421,Shakhmurza Adyrbekov,2025,SLO1,7918,False,15,7,0,235,0,0,5,1,2
 1255421,Shakhmurza Adyrbekov,2025,SLMR,7918,False,10,3,0,98,0,0,0,0,0
 1255421,Shakhmurza Adyrbekov,2025,SKC,7918,False,4,2,0,50,0,1,0,0,1
@@ -2131,7 +2133,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 580622,Emilian Metu,2026,SLO1,51316,False,5,0,0,0,0,0,0,0,0
 580622,Emilian Metu,2026,SKC,51316,False,2,0,0,0,0,0,0,0,0
 580622,Emilian Metu,2026,SKC,216,False,1,1,0,45,0,0,0,0,0
-580622,Emilian Metu,2026,SK2,216,False,10,10,0,855,3,4,0,0,1
+580622,Emilian Metu,2026,SK2,216,False,11,11,0,945,3,5,0,0,1
 580622,Emilian Metu,2025,SLO1,51316,False,22,9,0,323,0,0,1,0,3
 580622,Emilian Metu,2025,SLMR,51316,False,10,6,0,232,0,0,1,0,1
 580622,Emilian Metu,2025,SKC,51316,False,8,5,0,368,2,2,0,0,0
@@ -2174,7 +2176,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 710897,Alex Lacza,2022,FS,28316,True,2,1,0,71,1,0,0,0,0
 710897,Alex Lacza,2021,FS,30430,True,8,4,0,147,1,0,0,0,0
 710897,Alex Lacza,2018,FS,34689,True,2,2,0,94,1,0,0,0,0
-471164,Dominik Takac,2026,UNLC,3503,True,4,0,0,0,0,0,0,0,0
+471164,Dominik Takac,2026,UNLC,3503,True,6,0,0,0,0,0,0,0,0
 471164,Dominik Takac,2026,SLO1,540,False,14,8,0,720,0,0,0,0,0
 471164,Dominik Takac,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 471164,Dominik Takac,2026,CLQ,540,False,6,5,0,480,0,0,0,0,0
@@ -2364,7 +2366,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 470790,Svetozar Markovic,2015,SB17,68979,False,30,0,0,0,0,0,0,0,0
 470790,Svetozar Markovic,2015,FS,33183,True,3,2,0,160,2,0,0,0,0
 381477,Matus Macik,2026,SLO1,540,False,14,0,0,0,0,0,0,0,0
-381477,Matus Macik,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
+381477,Matus Macik,2026,SKC,540,False,2,1,0,90,0,0,0,0,0
 381477,Matus Macik,2026,SK2,20635,False,9,5,0,450,0,0,0,0,0
 381477,Matus Macik,2026,CLQ,540,False,6,0,0,0,0,0,0,0,0
 381477,Matus Macik,2026,CL,540,False,4,0,0,0,0,0,0,0,0
@@ -2420,9 +2422,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 381477,Matus Macik,2013,SKC,20611,False,1,1,0,90,0,0,0,0,0
 381477,Matus Macik,2013,SK2,20611,False,33,6,0,540,0,0,0,0,0
 381477,Matus Macik,2012,SK2,20611,False,33,0,0,0,0,0,0,0,0
-440383,César Blackman,2026,SLO1,540,False,14,9,0,592,0,4,6,0,1
+440383,César Blackman,2026,SLO1,540,False,14,10,0,596,0,4,6,0,1
 440383,César Blackman,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 440383,César Blackman,2026,FS,3577,True,3,3,0,225,0,0,0,0,1
+440383,César Blackman,2026,CNNF,3577,True,2,1,0,26,0,0,0,0,0
 440383,César Blackman,2026,CLQ,540,False,6,6,0,505,0,0,1,0,2
 440383,César Blackman,2026,CL,540,False,4,4,0,360,0,0,2,0,1
 440383,César Blackman,2025,UCOL,540,False,6,6,0,520,1,0,3,1,2
@@ -2498,7 +2501,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 440383,César Blackman,2015,PN1C,18952,False,6,5,0,450,0,0,0,0,0
 440383,César Blackman,2015,PN1A,18952,False,18,16,1,1395,1,1,0,0,4
 440383,César Blackman,2014,PN1A,18952,False,1,1,0,90,0,0,0,0,0
-226793,Kenan Bajric,2026,SLO1,540,False,14,9,0,725,2,0,9,3,2
+226793,Kenan Bajric,2026,SLO1,540,False,14,10,0,815,2,0,9,3,2
 226793,Kenan Bajric,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 226793,Kenan Bajric,2026,CLQ,540,False,6,6,0,570,0,1,2,2,1
 226793,Kenan Bajric,2026,CL,540,False,4,3,0,202,0,0,0,0,0
@@ -2574,11 +2577,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 226793,Kenan Bajric,2012,SLP,4772,False,2,0,0,0,0,0,0,0,0
 226793,Kenan Bajric,2012,SL1,4772,False,20,2,0,102,0,0,0,0,0
 226793,Kenan Bajric,2011,SL1,4772,False,2,2,0,52,0,0,0,0,1
-481627,Sandro Cruz,2026,SLO1,540,False,14,6,0,500,0,1,6,1,2
+481627,Sandro Cruz,2026,SLO1,540,False,14,7,0,590,0,1,7,2,2
 481627,Sandro Cruz,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 481627,Sandro Cruz,2026,CLQ,540,False,6,6,0,570,0,3,2,0,2
 481627,Sandro Cruz,2026,CL,540,False,4,4,0,292,0,0,1,0,0
-481627,Sandro Cruz,2026,AFCQ,3585,True,2,0,0,0,0,0,0,0,0
+481627,Sandro Cruz,2026,AFCQ,3585,True,4,2,0,66,0,0,0,0,0
 481627,Sandro Cruz,2025,UCOL,540,False,6,4,0,357,0,0,0,0,0
 481627,Sandro Cruz,2025,SLO1,540,False,22,18,0,1351,1,2,10,2,2
 481627,Sandro Cruz,2025,SLAR,540,False,10,10,0,843,0,1,4,1,1
@@ -2618,8 +2621,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1234104,Sidoine Fogning,2025,ELQ,540,False,2,1,0,11,0,0,1,0,0
 1234104,Sidoine Fogning,2025,CLQ,540,False,2,0,0,0,0,0,0,0,0
 1234104,Sidoine Fogning,2024,PO1,2503,False,13,13,0,1170,0,0,3,0,3
-122675,Kevin Wimmer,2026,SLO1,540,False,14,9,0,688,0,0,4,1,0
-122675,Kevin Wimmer,2026,SKC,540,False,2,1,0,90,0,1,0,0,1
+122675,Kevin Wimmer,2026,SLO1,540,False,14,10,0,778,0,0,4,1,0
+122675,Kevin Wimmer,2026,SKC,540,False,2,2,0,148,0,1,0,0,1
 122675,Kevin Wimmer,2026,CLQ,540,False,6,2,0,91,0,0,0,0,0
 122675,Kevin Wimmer,2026,CL,540,False,4,3,0,68,0,0,0,0,1
 122675,Kevin Wimmer,2025,UCOL,540,False,6,5,0,386,0,0,1,0,1
@@ -2908,8 +2911,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 349264,Marko Tolic,2015,KR2,12109,False,14,10,0,559,2,0,0,0,1
 349264,Marko Tolic,2014,KR2,25029,False,14,8,0,200,0,0,0,0,1
 349264,Marko Tolic,2014,KR1,11194,False,1,1,0,2,0,0,0,0,0
-490595,Peter Pokorný,2026,UNLC,3503,True,4,1,0,8,0,0,0,0,0
-490595,Peter Pokorný,2026,SLO1,540,False,14,9,0,723,1,1,8,1,2
+490595,Peter Pokorný,2026,UNLC,3503,True,6,2,0,84,0,0,0,0,1
+490595,Peter Pokorný,2026,SLO1,540,False,14,10,0,813,1,1,8,1,2
 490595,Peter Pokorný,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 490595,Peter Pokorný,2026,CLQ,540,False,6,6,0,570,0,0,2,0,0
 490595,Peter Pokorný,2026,CL,540,False,4,4,0,285,0,0,1,0,1
@@ -2956,11 +2959,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 490595,Peter Pokorný,2017,FS,25792,True,5,3,0,200,0,0,0,0,1
 490595,Peter Pokorný,2016,FS,25723,True,2,1,0,80,1,0,0,0,0
 490595,Peter Pokorný,2015,FS,34689,True,2,2,0,150,0,0,0,0,0
-711597,Rahim Ibrahim,2026,SLO1,540,False,14,9,0,441,4,1,16,5,0
-711597,Rahim Ibrahim,2026,SKC,540,False,2,1,0,40,0,0,0,0,0
+711597,Rahim Ibrahim,2026,SLO1,540,False,14,10,0,515,5,1,18,7,0
+711597,Rahim Ibrahim,2026,SKC,540,False,2,2,0,98,1,0,0,0,0
 711597,Rahim Ibrahim,2026,CLQ,540,False,6,6,0,256,0,0,2,1,1
 711597,Rahim Ibrahim,2026,CL,540,False,4,2,0,129,0,0,0,0,0
-711597,Rahim Ibrahim,2026,AFCQ,3441,True,3,1,0,4,0,0,1,0,0
+711597,Rahim Ibrahim,2026,AFCQ,3441,True,4,2,0,83,0,0,1,0,0
 711597,Rahim Ibrahim,2025,UCOL,540,False,6,5,0,294,1,0,1,1,2
 711597,Rahim Ibrahim,2025,SLO1,540,False,22,18,0,964,1,1,17,3,5
 711597,Rahim Ibrahim,2025,SLAR,540,False,10,10,0,538,1,0,6,2,1
@@ -2986,9 +2989,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 711597,Rahim Ibrahim,2020,SLO1,7918,False,13,0,0,0,0,0,0,0,0
 711597,Rahim Ibrahim,2020,SLAR,7918,False,10,0,0,0,0,0,0,0,0
 711597,Rahim Ibrahim,2020,SKC,7918,False,2,0,0,0,0,0,0,0,0
-641657,Artur Gajdos,2026,UNLC,3503,True,4,0,0,0,0,0,0,0,0
-641657,Artur Gajdos,2026,SLO1,540,False,14,8,0,633,1,2,9,1,2
-641657,Artur Gajdos,2026,SKC,540,False,2,1,0,90,0,0,0,0,0
+641657,Artur Gajdos,2026,UNLC,3503,True,6,1,0,45,0,0,1,0,1
+641657,Artur Gajdos,2026,SLO1,540,False,14,9,0,699,1,2,10,1,2
+641657,Artur Gajdos,2026,SKC,540,False,2,2,0,122,0,0,0,0,0
 641657,Artur Gajdos,2026,CLQ,540,False,6,3,0,172,0,0,0,0,1
 641657,Artur Gajdos,2026,CL,540,False,4,3,0,94,0,0,0,0,0
 641657,Artur Gajdos,2025,UCOL,540,False,6,3,0,63,0,0,1,1,0
@@ -3038,8 +3041,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 641657,Artur Gajdos,2020,FS,25960,True,2,2,0,78,0,0,0,0,0
 641657,Artur Gajdos,2019,FS,25723,True,4,4,0,240,2,0,0,0,0
 641657,Artur Gajdos,2018,FS,34689,True,2,2,0,24,0,0,0,0,0
-576449,Daiki Matsuoka,2026,SLO1,540,False,14,11,0,692,2,1,14,3,0
-576449,Daiki Matsuoka,2026,SKC,540,False,2,1,0,90,1,0,0,0,0
+576449,Daiki Matsuoka,2026,SLO1,540,False,14,12,0,782,2,1,14,3,0
+576449,Daiki Matsuoka,2026,SKC,540,False,2,2,0,180,1,1,0,0,1
 576449,Daiki Matsuoka,2026,CLQ,540,False,6,4,0,63,0,0,1,1,0
 576449,Daiki Matsuoka,2026,CL,540,False,4,0,0,0,0,0,0,0,0
 576449,Daiki Matsuoka,2025,SLO1,540,False,4,1,0,2,0,0,0,0,0
@@ -3083,7 +3086,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 576449,Daiki Matsuoka,2017,JAPC,22177,False,3,0,0,0,0,0,0,0,0
 576449,Daiki Matsuoka,2017,JAP1,22177,False,7,0,0,0,0,0,0,0,0
 376082,Danylo Ignatenko,2026,SLO1,540,False,14,7,0,453,0,0,7,2,4
-376082,Danylo Ignatenko,2026,SKC,540,False,2,1,0,90,0,0,0,0,0
+376082,Danylo Ignatenko,2026,SKC,540,False,2,2,0,180,0,1,0,0,0
 376082,Danylo Ignatenko,2026,CLQ,540,False,6,1,0,15,0,0,0,0,0
 376082,Danylo Ignatenko,2026,CL,540,False,4,0,0,0,0,0,0,0,0
 376082,Danylo Ignatenko,2025,UCOL,540,False,6,5,0,386,0,0,9,4,3
@@ -3139,7 +3142,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 376082,Danylo Ignatenko,2015,UKRP,6994,False,1,0,0,0,0,0,0,0,0
 376082,Danylo Ignatenko,2015,UKR1,6994,False,16,10,0,369,1,0,0,0,3
 376082,Danylo Ignatenko,2014,UKR1,6994,False,1,1,0,28,0,0,0,0,0
-368631,Alen Mustafic,2026,SLO1,540,False,14,12,0,518,3,1,11,5,2
+368631,Alen Mustafic,2026,SLO1,540,False,14,13,0,542,3,1,11,5,2
 368631,Alen Mustafic,2026,SKC,540,False,2,1,0,50,0,0,0,0,0
 368631,Alen Mustafic,2026,CLQ,540,False,6,6,0,292,0,0,1,0,2
 368631,Alen Mustafic,2026,CL,540,False,4,4,0,231,0,0,2,1,0
@@ -3197,7 +3200,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 368631,Alen Mustafic,2017,BOS1,282,False,14,9,0,362,0,0,0,0,2
 368631,Alen Mustafic,2017,BI19,5610,False,13,13,0,1018,8,6,0,0,1
 368631,Alen Mustafic,2016,BI19,5610,False,33,31,0,1826,4,3,0,0,5
-1077729,Maxim Mateas,2026,U19Q,25960,True,4,4,0,342,0,0,0,0,0
+1077729,Maxim Mateas,2026,U19Q,25960,True,6,6,0,477,1,2,0,0,0
 1077729,Maxim Mateas,2026,SLO1,51316,False,14,10,0,194,0,0,4,2,0
 1077729,Maxim Mateas,2026,SKC,51316,False,3,1,0,90,0,0,0,0,0
 1077729,Maxim Mateas,2026,FS,25960,True,3,3,0,206,1,0,0,0,0
@@ -3344,10 +3347,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 344322,Filip Lichy,2017,FS,25792,True,9,3,0,213,0,0,0,0,0
 344322,Filip Lichy,2016,FS,25723,True,2,2,0,101,0,0,0,0,0
 344322,Filip Lichy,2015,FS,34689,True,2,2,0,39,0,0,0,0,0
-1250436,Leo Hofstädter,2026,U19Q,25960,True,1,1,0,60,0,0,0,0,0
+1250436,Leo Hofstädter,2026,U19Q,25960,True,3,3,0,195,0,0,0,0,1
 1250436,Leo Hofstädter,2026,SLO1,540,False,14,3,0,18,0,0,1,1,0
-1250436,Leo Hofstädter,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
-1250436,Leo Hofstädter,2026,SK2,20635,False,16,12,0,777,2,2,0,0,0
+1250436,Leo Hofstädter,2026,SKC,540,False,2,1,0,90,2,1,0,0,0
+1250436,Leo Hofstädter,2026,SK2,20635,False,17,12,0,777,2,2,0,0,0
 1250436,Leo Hofstädter,2026,FS,25960,True,3,3,0,138,1,0,0,0,0
 1250436,Leo Hofstädter,2026,CLQ,540,False,6,1,0,7,0,0,0,0,0
 1250436,Leo Hofstädter,2026,CL,540,False,4,1,0,27,0,0,1,1,0
@@ -3361,7 +3364,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1250436,Leo Hofstädter,2025,SK19,19858,False,26,22,0,1849,8,0,0,0,1
 1250436,Leo Hofstädter,2025,FS,25792,True,4,3,0,174,1,0,0,0,0
 1250436,Leo Hofstädter,2024,FS,25723,True,7,4,0,209,0,0,0,0,0
-482836,David Strelec,2026,UNLC,3503,True,4,4,0,248,1,0,5,3,1
+482836,David Strelec,2026,UNLC,3503,True,6,6,0,346,1,0,7,4,1
 482836,David Strelec,2026,GB2,641,False,15,5,6,99,0,0,1,0,0
 482836,David Strelec,2026,CGB,641,False,3,2,1,73,0,0,2,0,0
 482836,David Strelec,2025,SLO1,540,False,5,3,0,141,1,0,5,2,0
@@ -3440,7 +3443,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 482836,David Strelec,2017,FS,25792,True,9,8,0,399,5,0,0,0,0
 482836,David Strelec,2017,FS,25723,True,2,2,0,91,1,0,0,0,1
 482836,David Strelec,2016,FS,25723,True,8,6,0,399,2,0,0,0,0
-726661,Nino Marcelli,2026,SLO1,540,False,14,10,0,445,0,2,18,5,1
+726661,Nino Marcelli,2026,UNLC,3503,True,2,2,0,27,0,0,3,1,0
+726661,Nino Marcelli,2026,SLO1,540,False,14,11,0,511,0,3,20,5,1
 726661,Nino Marcelli,2026,SKC,540,False,2,1,0,73,0,0,0,0,0
 726661,Nino Marcelli,2026,CLQ,540,False,6,1,0,47,0,1,3,0,0
 726661,Nino Marcelli,2026,CL,540,False,4,4,0,183,0,0,3,0,0
@@ -3510,8 +3514,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 730126,Mykola Kukharevych,2020,FS,16274,True,6,3,3,129,0,0,0,0,0
 730126,Mykola Kukharevych,2019,UKR2,48726,False,11,6,0,159,2,0,0,0,2
 730126,Mykola Kukharevych,2019,U21Q,16274,True,2,2,0,151,3,0,0,0,0
-179860,Andraz Sporar,2026,UNLB,3588,True,4,1,0,74,0,0,2,1,0
-179860,Andraz Sporar,2026,SLO1,540,False,14,7,4,501,5,0,31,18,0
+179860,Andraz Sporar,2026,UNLB,3588,True,5,1,0,74,0,0,2,1,0
+179860,Andraz Sporar,2026,SLO1,540,False,14,8,4,575,5,0,35,20,0
 179860,Andraz Sporar,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 179860,Andraz Sporar,2026,CLQ,540,False,6,3,3,152,2,0,3,2,0
 179860,Andraz Sporar,2026,CL,540,False,4,3,0,236,0,0,5,1,0
@@ -3612,11 +3616,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 179860,Andraz Sporar,2011,SL2,11006,False,27,21,0,1816,10,0,0,0,3
 179860,Andraz Sporar,2011,FS,21142,True,5,3,0,121,2,0,0,0,0
 1231655,Alasana Yirajang,2026,SLO1,540,False,14,7,0,247,1,1,5,2,0
-1231655,Alasana Yirajang,2026,SKC,540,False,2,1,0,17,0,0,0,0,0
+1231655,Alasana Yirajang,2026,SKC,540,False,2,2,0,88,0,2,0,0,0
 1231655,Alasana Yirajang,2026,SK2,20635,False,1,1,0,60,1,0,0,0,1
 1231655,Alasana Yirajang,2026,CLQ,540,False,6,5,0,277,2,0,1,0,0
 1231655,Alasana Yirajang,2026,CL,540,False,4,2,0,44,0,0,0,0,0
-1231655,Alasana Yirajang,2026,AFCQ,6186,True,3,0,0,0,0,0,0,0,0
+1231655,Alasana Yirajang,2026,AFCQ,6186,True,1,0,0,0,0,0,0,0,0
 1231655,Alasana Yirajang,2025,UCOL,540,False,6,6,0,216,1,0,2,2,0
 1231655,Alasana Yirajang,2025,SLO1,540,False,22,17,0,623,0,2,15,3,0
 1231655,Alasana Yirajang,2025,SLAR,540,False,10,3,5,113,0,0,6,4,0
@@ -3631,7 +3635,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1231655,Alasana Yirajang,2023,SLO1,20063,False,4,1,0,31,0,0,0,0,0
 1231655,Alasana Yirajang,2023,SLAR,20063,False,10,5,0,274,0,0,6,4,1
 1231655,Alasana Yirajang,2023,SKC,20063,False,3,0,0,0,0,0,0,0,0
-270605,Tigran Barseghyan,2026,SLO1,540,False,14,11,2,648,3,2,35,8,1
+270605,Tigran Barseghyan,2026,SLO1,540,False,14,12,2,734,4,2,38,9,1
 270605,Tigran Barseghyan,2026,SKC,540,False,2,1,0,90,1,1,0,0,0
 270605,Tigran Barseghyan,2026,CLQ,540,False,6,3,3,202,0,0,3,0,0
 270605,Tigran Barseghyan,2026,CL,540,False,4,4,0,211,0,1,7,4,1
@@ -3720,8 +3724,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 270605,Tigran Barseghyan,2010,ARSC,11411,False,1,1,0,21,0,0,0,0,0
 270605,Tigran Barseghyan,2010,ARPO,11411,False,1,0,0,0,0,0,0,0,0
 270605,Tigran Barseghyan,2010,ARM1,11411,False,17,1,0,1,0,0,0,0,0
-641676,Adam Griger,2026,SLO1,540,False,14,8,0,480,2,0,14,5,0
-641676,Adam Griger,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
+641676,Adam Griger,2026,SLO1,540,False,14,9,0,496,2,0,14,5,0
+641676,Adam Griger,2026,SKC,540,False,2,1,0,32,0,0,0,0,0
 641676,Adam Griger,2026,SK2,20635,False,7,3,0,223,0,0,0,0,0
 641676,Adam Griger,2026,CLQ,540,False,6,0,0,0,0,0,0,0,0
 641676,Adam Griger,2026,CL,540,False,4,0,4,0,0,0,0,0,0
@@ -3766,7 +3770,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 641676,Adam Griger,2019,FS,25723,True,3,3,0,139,1,0,0,0,0
 641676,Adam Griger,2018,FS,34689,True,2,2,0,88,0,0,0,0,0
 1113217,Alexej Maros,2026,SLO1,540,False,14,8,0,370,1,2,15,5,0
-1113217,Alexej Maros,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
+1113217,Alexej Maros,2026,SKC,540,False,2,1,0,58,3,0,0,0,0
 1113217,Alexej Maros,2026,CLQ,540,False,6,4,0,233,0,1,1,0,0
 1113217,Alexej Maros,2026,CL,540,False,4,3,0,94,0,0,1,1,0
 1113217,Alexej Maros,2025,UCOL,540,False,3,0,0,0,0,0,0,0,0
@@ -3790,7 +3794,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1113217,Alexej Maros,2022,SK19,19858,False,26,24,0,1474,2,0,0,0,3
 1173528,Matus Tomasko,2026,SLO1,540,False,14,1,0,28,0,0,0,0,0
 1173528,Matus Tomasko,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
-1173528,Matus Tomasko,2026,SK2,20635,False,16,6,0,334,0,1,0,0,2
+1173528,Matus Tomasko,2026,SK2,20635,False,17,7,0,409,0,1,0,0,2
 1173528,Matus Tomasko,2026,SK19,19858,False,3,2,0,149,0,0,0,0,1
 1173528,Matus Tomasko,2026,FS,30430,True,4,3,0,179,0,1,0,0,0
 1173528,Matus Tomasko,2026,CLQ,540,False,6,1,0,6,0,0,0,0,0
@@ -4077,7 +4081,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 92180,Robert Mak,2006,U17Q,25792,True,6,6,0,396,1,0,0,0,1
 726654,Jakub Badzgon,2026,SLO1,1443,False,14,1,0,90,0,0,0,0,0
 726654,Jakub Badzgon,2026,SKC,1443,False,3,1,0,90,0,0,0,0,0
-726654,Jakub Badzgon,2026,SK2,20634,False,1,1,0,90,0,0,0,0,0
+726654,Jakub Badzgon,2026,SK2,20634,False,3,2,0,180,0,0,0,0,0
 726654,Jakub Badzgon,2026,ELQ,1443,False,2,2,0,180,0,0,0,0,0
 726654,Jakub Badzgon,2026,ECLQ,1443,False,2,2,0,180,0,0,0,0,1
 726654,Jakub Badzgon,2025,U21Q,24965,True,4,0,0,0,0,0,0,0,0
@@ -4169,6 +4173,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 269167,Dominik Svacek,2015,CZ3C,19058,False,19,0,0,0,0,0,0,0,0
 269167,Dominik Svacek,2015,CZ21,8751,False,32,9,0,810,0,0,0,0,0
 269167,Dominik Svacek,2015,CZ19,13907,False,38,0,0,0,0,0,0,0,0
+1187621,Tobias Paliscak,2026,UNLC,3503,True,2,1,0,86,0,0,1,0,0
 1187621,Tobias Paliscak,2026,TSP,941,False,1,1,0,90,0,0,0,0,0
 1187621,Tobias Paliscak,2026,TS1,941,False,9,8,0,553,0,1,3,0,1
 1187621,Tobias Paliscak,2026,SLO1,1443,False,6,6,0,473,0,1,2,0,1
@@ -4197,7 +4202,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1187621,Tobias Paliscak,2023,19YL,69404,False,5,2,0,63,0,0,0,0,0
 1187621,Tobias Paliscak,2022,FS,25792,True,2,2,0,119,0,0,0,0,1
 969348,Jakub Jokl,2026,SKC,36107,False,3,0,3,0,0,0,0,0,0
-969348,Jakub Jokl,2026,SK2,36107,False,16,1,14,4,0,0,0,0,0
+969348,Jakub Jokl,2026,SK2,36107,False,17,1,15,4,0,0,0,0,0
 969348,Jakub Jokl,2025,SLO1,1443,False,22,0,0,0,0,0,0,0,0
 969348,Jakub Jokl,2025,SLAR,1443,False,10,0,0,0,0,0,0,0,0
 969348,Jakub Jokl,2025,SKC,1443,False,8,0,0,0,0,0,0,0,0
@@ -4360,6 +4365,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 570264,Krisztian Bari,2019,FS,25960,True,5,4,0,298,0,0,0,0,0
 570264,Krisztian Bari,2018,FS,30430,True,2,2,0,66,0,0,1,1,0
 570264,Krisztian Bari,2017,U17Q,25792,True,3,1,0,61,0,0,0,0,0
+1018020,Timotej Hranica,2026,UNLC,3503,True,1,0,0,0,0,0,0,0,0
 1018020,Timotej Hranica,2026,SLO1,1443,False,14,13,0,992,3,1,25,9,0
 1018020,Timotej Hranica,2026,SKC,1443,False,3,1,0,28,0,1,0,0,0
 1018020,Timotej Hranica,2026,ELQ,1443,False,2,2,0,172,0,0,0,0,0
@@ -4543,7 +4549,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726660,Michal Svoboda,2021,AA17,25792,True,3,2,0,126,0,0,0,0,0
 726660,Michal Svoboda,2020,ITJF,55773,False,2,0,0,0,0,0,0,0,0
 726660,Michal Svoboda,2020,ITJ8,55773,False,8,1,0,2,0,0,0,0,0
-1387187,Manuel Yendare,2026,SK2,20634,False,16,13,0,998,0,0,0,0,2
+1387187,Manuel Yendare,2026,SK2,20634,False,17,14,0,1088,0,0,0,0,2
 1387187,Manuel Yendare,2025,SLO1,1443,False,14,0,0,0,0,0,0,0,0
 1387187,Manuel Yendare,2025,SLAR,1443,False,10,0,0,0,0,0,0,0,0
 1387187,Manuel Yendare,2025,SKC,1443,False,6,0,0,0,0,0,0,0,0
@@ -4565,7 +4571,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1041224,Nikita Kelembet,2022,SK2,2781,False,21,0,0,0,0,0,0,0,0
 1041224,Nikita Kelembet,2022,SK19,19851,False,26,24,1,2063,2,0,0,0,9
 1143311,Fabian Bzdyl,2026,U19Q,16298,True,3,0,0,0,0,0,0,0,0
-1143311,Fabian Bzdyl,2026,SU20,16299,True,2,2,0,74,1,0,0,0,0
+1143311,Fabian Bzdyl,2026,SU20,16299,True,3,3,0,119,2,0,0,0,0
 1143311,Fabian Bzdyl,2026,SLO1,1443,False,14,14,0,1127,3,2,23,7,2
 1143311,Fabian Bzdyl,2026,SKC,1443,False,3,1,0,45,1,0,0,0,0
 1143311,Fabian Bzdyl,2026,ELQ,1443,False,2,2,0,114,0,0,0,0,0
@@ -4754,7 +4760,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 186382,Miroslav Kacer,2011,FS,25723,True,3,3,0,170,1,0,0,0,0
 186382,Miroslav Kacer,2010,FS,34689,True,2,2,0,160,0,0,0,0,0
 186382,Miroslav Kacer,2010,FS,25723,True,1,1,0,90,0,0,0,0,0
-104977,Michal Skvarka,2026,SK2,20634,False,16,12,0,993,2,0,0,0,1
+104977,Michal Skvarka,2026,SK2,20634,False,17,13,0,1083,2,0,0,0,1
 104977,Michal Skvarka,2025,SLO1,1443,False,8,2,0,81,0,0,3,0,0
 104977,Michal Skvarka,2025,SLAR,1443,False,10,0,0,0,0,0,0,0,0
 104977,Michal Skvarka,2025,SKC,1443,False,5,1,0,71,0,0,0,0,0
@@ -4877,7 +4883,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 497543,David Duris,2018,SKC,1443,False,7,1,0,45,1,0,0,0,0
 497543,David Duris,2018,SK2,20634,False,30,30,0,2092,4,4,0,0,2
 497543,David Duris,2017,SK2,20634,False,30,4,0,104,0,0,0,0,0
-546822,Adrián Kaprálik,2026,UNLC,3503,True,4,1,0,63,0,0,0,0,0
+546822,Adrián Kaprálik,2026,UNLC,3503,True,6,2,0,67,1,0,1,1,0
 546822,Adrián Kaprálik,2026,L2,269,False,11,11,0,884,1,2,20,3,2
 546822,Adrián Kaprálik,2026,DFB,269,False,2,2,0,197,1,1,4,1,1
 546822,Adrián Kaprálik,2025,SLO1,1443,False,4,4,0,200,2,1,6,3,0
@@ -4938,7 +4944,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 546822,Adrián Kaprálik,2016,FS,34689,True,2,2,0,120,0,0,0,0,0
 969354,Frantisek Kosa,2026,SLO1,1443,False,14,13,0,560,2,3,22,9,0
 969354,Frantisek Kosa,2026,SKC,1443,False,3,0,0,0,0,0,0,0,0
-969354,Frantisek Kosa,2026,SK2,20634,False,1,1,0,62,0,0,0,0,0
+969354,Frantisek Kosa,2026,SK2,20634,False,5,2,0,152,0,0,0,0,0
 969354,Frantisek Kosa,2026,ELQ,1443,False,2,2,0,129,0,1,0,0,0
 969354,Frantisek Kosa,2026,ECLQ,1443,False,2,2,0,151,1,0,0,0,0
 969354,Frantisek Kosa,2025,U21Q,24965,True,1,1,0,45,0,0,0,0,0
@@ -5370,7 +5376,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147550,Lukas Julis,2010,17WC,26035,True,3,3,0,270,2,0,0,0,0
 147550,Lukas Julis,2010,17EU,26035,True,3,3,0,176,1,0,0,0,0
 147550,Lukas Julis,2009,FS,25793,True,11,11,0,549,5,0,0,0,0
-1018981,Teodor Stanik,2026,SK2,20634,False,16,13,0,967,0,3,0,0,4
+1018981,Teodor Stanik,2026,SK2,20634,False,17,14,0,1057,0,3,0,0,5
 1018981,Teodor Stanik,2025,SLO1,1443,False,16,1,0,14,0,0,0,0,1
 1018981,Teodor Stanik,2025,SLAR,1443,False,10,0,0,0,0,0,0,0,0
 1018981,Teodor Stanik,2025,SKC,1443,False,7,1,0,30,2,0,0,0,0
@@ -5394,7 +5400,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1322848,Nehuén Mendoza,2023,CLPF,28181,False,14,5,0,104,0,0,0,0,0
 1322848,Nehuén Mendoza,2022,CLPI,28181,False,1,0,0,0,0,0,0,0,0
 1322848,Nehuén Mendoza,2022,ARY3,28181,False,1,0,0,0,0,0,0,0,0
-376449,Aleksandar Popovic,2026,SLO1,540,False,14,5,0,450,0,0,0,0,0
+376449,Aleksandar Popovic,2026,SLO1,540,False,14,6,0,540,0,0,0,0,0
 376449,Aleksandar Popovic,2026,SKC,540,False,2,1,0,90,0,0,0,0,0
 376449,Aleksandar Popovic,2026,CLQ,540,False,6,1,0,90,0,0,0,0,0
 376449,Aleksandar Popovic,2026,CL,540,False,4,1,0,90,0,0,0,0,0
@@ -5597,7 +5603,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1027165,Attila Nemeth,2023,SK2,34775,False,30,3,0,233,0,0,0,0,0
 1027165,Attila Nemeth,2022,SK19,24529,False,26,21,0,1890,0,0,0,0,4
 1027165,Attila Nemeth,2021,SK19,24529,False,25,1,0,90,0,0,0,0,1
-705121,Márk Csinger,2026,UNLB,3468,True,4,4,0,354,1,0,3,1,0
+705121,Márk Csinger,2026,UNLB,3468,True,5,5,0,444,1,0,3,1,0
 705121,Márk Csinger,2026,UNG1,6055,False,2,0,0,0,0,0,0,0,0
 705121,Márk Csinger,2026,NLP,202,False,1,1,0,45,0,0,0,0,1
 705121,Márk Csinger,2026,NL1,202,False,11,11,0,719,0,0,1,0,2
@@ -5637,7 +5643,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 705121,Márk Csinger,2019,IJ2A,22276,False,1,0,0,0,0,0,0,0,0
 705121,Márk Csinger,2018,17WC,25721,True,2,0,0,0,0,0,0,0,0
 1076091,Vasilios Kaltsas,2026,SKC,34775,False,3,3,0,270,0,0,0,0,1
-1076091,Vasilios Kaltsas,2026,SK2,34775,False,16,0,0,0,0,0,0,0,0
+1076091,Vasilios Kaltsas,2026,SK2,34775,False,17,0,0,0,0,0,0,0,0
 1076091,Vasilios Kaltsas,2025,U19Q,22246,True,6,1,0,90,0,0,0,0,0
 1076091,Vasilios Kaltsas,2025,SLO1,4529,False,16,0,0,0,0,0,0,0,0
 1076091,Vasilios Kaltsas,2025,SKC,4529,False,4,0,0,0,0,0,0,0,0
@@ -5980,7 +5986,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1111843,Mahmudu Bajo,2026,SER1,159,False,15,7,3,393,1,1,7,3,1
 1111843,Mahmudu Bajo,2026,ELQ,159,False,2,2,0,66,0,0,0,0,0
 1111843,Mahmudu Bajo,2026,CLQ,159,False,4,0,4,0,0,0,0,0,0
-1111843,Mahmudu Bajo,2026,AFCQ,6186,True,2,1,0,90,0,0,0,0,0
+1111843,Mahmudu Bajo,2026,AFCQ,6186,True,3,2,0,153,0,0,0,0,0
 1111843,Mahmudu Bajo,2025,SR1C,159,False,7,5,1,245,1,0,5,2,0
 1111843,Mahmudu Bajo,2025,SLO1,4529,False,1,1,0,90,0,0,0,0,0
 1111843,Mahmudu Bajo,2025,SERP,159,False,5,2,0,105,0,0,0,0,0
@@ -6003,7 +6009,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1111843,Mahmudu Bajo,2022,20WC,27257,True,4,4,0,360,0,0,3,0,0
 1111843,Mahmudu Bajo,2022,20AC,27257,True,6,5,0,450,1,1,6,1,1
 969357,Adam Lami,2026,SKC,216,False,3,1,0,90,0,0,0,0,0
-969357,Adam Lami,2026,SK2,216,False,16,3,0,191,0,0,0,0,1
+969357,Adam Lami,2026,SK2,216,False,17,3,0,191,0,0,0,0,1
 969357,Adam Lami,2025,SLO1,4529,False,19,0,0,0,0,0,0,0,0
 969357,Adam Lami,2025,SLAR,4529,False,10,0,0,0,0,0,0,0,0
 969357,Adam Lami,2025,SKC,4529,False,5,1,0,45,0,0,0,0,0
@@ -6056,7 +6062,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 521333,Samsindin Ouro,2026,SLO1,4529,False,14,12,0,986,2,2,23,7,3
 521333,Samsindin Ouro,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
 521333,Samsindin Ouro,2026,ECLQ,4529,False,4,4,0,315,0,0,2,0,0
-521333,Samsindin Ouro,2026,AFCQ,3815,True,2,2,0,62,0,0,1,1,0
+521333,Samsindin Ouro,2026,AFCQ,3815,True,3,3,0,132,0,0,1,1,0
 521333,Samsindin Ouro,2025,UNG1,6055,False,4,3,0,192,1,0,5,1,0
 521333,Samsindin Ouro,2025,SLO1,4529,False,18,17,0,1250,1,5,23,7,1
 521333,Samsindin Ouro,2025,SLAR,4529,False,10,7,0,545,0,3,9,2,1
@@ -6091,7 +6097,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1380598,Julien Bationo,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
 1380598,Julien Bationo,2026,FS,5872,True,1,0,0,0,0,0,0,0,0
 1380598,Julien Bationo,2026,ECLQ,4529,False,4,4,0,277,0,0,0,0,0
-1380598,Julien Bationo,2026,AFCQ,5872,True,2,0,0,0,0,0,0,0,0
+1380598,Julien Bationo,2026,AFCQ,5872,True,3,0,0,0,0,0,0,0,0
 1380598,Julien Bationo,2025,SLO1,4529,False,17,3,0,33,0,0,0,0,1
 1380598,Julien Bationo,2025,SLAR,4529,False,10,9,0,724,0,0,10,1,1
 1380598,Julien Bationo,2025,SKC,4529,False,4,1,0,45,0,0,0,0,0
@@ -6220,7 +6226,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 961053,Rabby Mateta Pepa,2022,U17Q,23219,True,3,3,0,105,1,1,0,0,0
 961053,Rabby Mateta Pepa,2022,FS,23219,True,3,2,0,135,0,0,0,0,0
 961053,Rabby Mateta Pepa,2021,FS,23282,True,13,10,0,531,1,1,0,0,0
-1077728,Martin Jencus,2026,U19Q,25960,True,4,2,0,114,0,0,0,0,1
+1077728,Martin Jencus,2026,U19Q,25960,True,6,2,0,114,0,0,0,0,1
 1077728,Martin Jencus,2026,SLO1,4529,False,14,8,0,195,0,0,3,1,0
 1077728,Martin Jencus,2026,SKC,4529,False,2,1,0,90,0,1,0,0,0
 1077728,Martin Jencus,2026,SK19,24529,False,1,1,0,90,0,0,0,0,0
@@ -6242,7 +6248,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077728,Martin Jencus,2023,FS,25723,True,7,7,0,381,0,0,0,0,0
 1077728,Martin Jencus,2022,FS,34689,True,10,10,0,444,1,0,3,0,0
 715956,Damir Redzic,2026,ofb,409,False,3,1,2,67,2,0,3,3,0
-715956,Damir Redzic,2026,UNLB,3468,True,4,1,3,62,0,0,1,1,0
+715956,Damir Redzic,2026,UNLB,3468,True,5,1,3,62,0,0,1,1,0
 715956,Damir Redzic,2026,ELQ,409,False,4,4,0,306,0,2,10,3,0
 715956,Damir Redzic,2026,EL,409,False,4,4,0,151,0,2,2,0,1
 715956,Damir Redzic,2026,A1,409,False,12,9,3,492,2,0,8,5,0
@@ -6287,53 +6293,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077719,Adam Labo,2023,FS,25792,True,2,0,0,0,0,0,0,0,0
 1077719,Adam Labo,2023,FS,25723,True,7,6,0,333,1,0,0,0,0
 1077719,Adam Labo,2022,FS,34689,True,10,10,0,440,4,0,0,0,0
-760493,Viktor Djukanovic,2026,UNLC,11953,True,4,2,0,74,0,0,1,0,0
-760493,Viktor Djukanovic,2026,UNGP,6055,False,2,2,0,140,1,0,0,0,0
-760493,Viktor Djukanovic,2026,UNG1,6055,False,13,13,0,974,5,1,28,10,1
-760493,Viktor Djukanovic,2026,ECLQ,6055,False,4,4,0,284,1,0,6,4,0
-760493,Viktor Djukanovic,2025,U21Q,16267,True,10,3,2,263,1,0,0,0,0
-760493,Viktor Djukanovic,2025,SLO1,4529,False,22,17,2,1228,9,1,70,24,2
-760493,Viktor Djukanovic,2025,SLAR,4529,False,10,2,5,29,0,0,0,0,0
-760493,Viktor Djukanovic,2025,SKC,4529,False,5,3,1,160,1,1,0,0,0
-760493,Viktor Djukanovic,2025,SE1,1059,False,2,0,0,0,0,0,0,0,0
-760493,Viktor Djukanovic,2025,FS,16267,True,1,0,0,0,0,0,0,0,0
-760493,Viktor Djukanovic,2025,FS,11953,True,5,3,2,118,1,0,0,0,0
-760493,Viktor Djukanovic,2024,WMQ6,11953,True,8,2,0,47,0,0,2,1,0
-760493,Viktor Djukanovic,2024,UNLB,11953,True,6,0,2,0,0,0,0,0,0
-760493,Viktor Djukanovic,2024,SWEP,4529,False,2,2,0,172,1,0,9,4,0
-760493,Viktor Djukanovic,2024,SLO1,4529,False,4,4,0,87,0,0,2,1,2
-760493,Viktor Djukanovic,2024,SLAR,4529,False,10,10,0,509,3,1,17,4,0
-760493,Viktor Djukanovic,2024,FS,16267,True,3,3,0,225,1,1,0,0,1
-760493,Viktor Djukanovic,2024,FS,11953,True,1,0,0,0,0,0,0,0,0
-760493,Viktor Djukanovic,2024,CCB,3057,False,2,1,0,18,0,0,0,0,0
-760493,Viktor Djukanovic,2024,BE1,3057,False,23,4,2,44,0,0,0,0,0
-760493,Viktor Djukanovic,2023,U21Q,16267,True,10,2,4,180,1,0,0,0,0
-760493,Viktor Djukanovic,2023,SEC,1059,False,4,4,0,333,1,0,0,0,1
-760493,Viktor Djukanovic,2023,SE1,1059,False,16,12,0,556,2,1,19,9,0
-760493,Viktor Djukanovic,2023,FS,11953,True,5,1,1,67,0,0,0,0,0
-760493,Viktor Djukanovic,2023,ECLQ,1059,False,2,2,0,109,0,0,0,0,0
-760493,Viktor Djukanovic,2022,UNLB,11953,True,3,1,0,2,0,0,0,0,0
-760493,Viktor Djukanovic,2022,U19Q,26101,True,3,3,0,270,3,0,0,0,2
-760493,Viktor Djukanovic,2022,SEC,1059,False,5,5,0,351,1,0,0,0,0
-760493,Viktor Djukanovic,2022,SE1,1059,False,30,25,0,1416,11,0,78,29,3
-760493,Viktor Djukanovic,2022,MNEC,4391,False,1,1,0,120,0,0,0,0,0
-760493,Viktor Djukanovic,2022,MNE1,4391,False,19,17,0,1217,1,0,0,0,1
-760493,Viktor Djukanovic,2022,FS,16267,True,7,1,0,75,0,0,0,0,0
-760493,Viktor Djukanovic,2022,FS,11953,True,3,0,0,0,0,0,0,0,0
-760493,Viktor Djukanovic,2022,EMQ,11953,True,8,2,1,28,0,0,2,0,0
-760493,Viktor Djukanovic,2022,ECLQ,4391,False,4,4,0,308,2,0,0,0,0
-760493,Viktor Djukanovic,2021,U21Q,16267,True,2,2,0,180,2,0,0,0,1
-760493,Viktor Djukanovic,2021,U19Q,26101,True,3,3,0,257,0,0,0,0,1
-760493,Viktor Djukanovic,2021,MNEC,4391,False,5,5,0,389,4,2,0,0,1
-760493,Viktor Djukanovic,2021,MNE1,4391,False,36,31,0,1627,9,4,0,0,2
-760493,Viktor Djukanovic,2021,FS,26101,True,9,0,0,0,0,0,0,0,0
-760493,Viktor Djukanovic,2021,ECLQ,4391,False,2,1,0,45,0,0,0,0,0
-760493,Viktor Djukanovic,2021,CLQ,4391,False,2,2,0,56,0,0,0,0,0
-760493,Viktor Djukanovic,2020,MNEC,4391,False,4,3,0,107,1,1,0,0,0
-760493,Viktor Djukanovic,2020,MNE1,4391,False,28,20,0,708,2,0,0,0,0
-760493,Viktor Djukanovic,2020,FS,40099,True,2,2,0,130,1,0,0,0,0
-760493,Viktor Djukanovic,2020,FS,26101,True,2,2,0,163,1,0,0,0,1
-760493,Viktor Djukanovic,2019,FS,34415,True,6,4,0,248,0,0,0,0,0
 490811,Ammar Ramadan,2026,SLO1,4529,False,14,14,0,1148,10,10,58,24,2
 490811,Ammar Ramadan,2026,SKC,4529,False,2,1,0,19,0,0,0,0,0
 490811,Ammar Ramadan,2026,ECLQ,4529,False,4,4,0,281,2,0,7,3,1
@@ -6379,7 +6338,53 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 490811,Ammar Ramadan,2017,ITJF,49567,False,3,3,0,85,1,0,0,0,0
 490811,Ammar Ramadan,2017,ITJ4,49567,False,26,16,4,429,4,0,0,0,0
 490811,Ammar Ramadan,2016,ITJ4,49567,False,7,2,0,19,0,0,0,0,0
-550492,Giorgi Gagua,2026,UNLB,3669,True,4,0,0,0,0,0,0,0,0
+760493,Viktor Djukanovic,2026,UNLC,11953,True,6,2,0,74,0,0,1,0,0
+760493,Viktor Djukanovic,2026,UNGP,6055,False,2,2,0,140,1,0,0,0,0
+760493,Viktor Djukanovic,2026,UNG1,6055,False,13,13,0,974,5,1,28,10,1
+760493,Viktor Djukanovic,2026,ECLQ,6055,False,4,4,0,284,1,0,6,4,0
+760493,Viktor Djukanovic,2025,U21Q,16267,True,6,3,0,263,1,0,0,0,0
+760493,Viktor Djukanovic,2025,SLO1,4529,False,22,17,2,1228,9,1,70,24,2
+760493,Viktor Djukanovic,2025,SLAR,4529,False,10,2,5,29,0,0,0,0,0
+760493,Viktor Djukanovic,2025,SKC,4529,False,5,3,1,160,1,1,0,0,0
+760493,Viktor Djukanovic,2025,SE1,1059,False,2,0,0,0,0,0,0,0,0
+760493,Viktor Djukanovic,2025,FS,11953,True,5,3,2,118,1,0,0,0,0
+760493,Viktor Djukanovic,2024,WMQ6,11953,True,8,2,0,47,0,0,2,1,0
+760493,Viktor Djukanovic,2024,UNLB,11953,True,6,0,2,0,0,0,0,0,0
+760493,Viktor Djukanovic,2024,SWEP,4529,False,2,2,0,172,1,0,9,4,0
+760493,Viktor Djukanovic,2024,SLO1,4529,False,4,4,0,87,0,0,2,1,2
+760493,Viktor Djukanovic,2024,SLAR,4529,False,10,10,0,509,3,1,17,4,0
+760493,Viktor Djukanovic,2024,FS,16267,True,3,3,0,225,1,1,0,0,1
+760493,Viktor Djukanovic,2024,FS,11953,True,1,0,0,0,0,0,0,0,0
+760493,Viktor Djukanovic,2024,CCB,3057,False,2,1,0,18,0,0,0,0,0
+760493,Viktor Djukanovic,2024,BE1,3057,False,23,4,2,44,0,0,0,0,0
+760493,Viktor Djukanovic,2023,U21Q,16267,True,10,2,4,180,1,0,0,0,0
+760493,Viktor Djukanovic,2023,SEC,1059,False,4,4,0,333,1,0,0,0,1
+760493,Viktor Djukanovic,2023,SE1,1059,False,16,12,0,556,2,1,19,9,0
+760493,Viktor Djukanovic,2023,FS,11953,True,5,1,1,67,0,0,0,0,0
+760493,Viktor Djukanovic,2023,ECLQ,1059,False,2,2,0,109,0,0,0,0,0
+760493,Viktor Djukanovic,2022,UNLB,11953,True,3,1,0,2,0,0,0,0,0
+760493,Viktor Djukanovic,2022,U19Q,26101,True,3,3,0,270,3,0,0,0,2
+760493,Viktor Djukanovic,2022,SEC,1059,False,5,5,0,351,1,0,0,0,0
+760493,Viktor Djukanovic,2022,SE1,1059,False,30,25,0,1416,11,0,78,29,3
+760493,Viktor Djukanovic,2022,MNEC,4391,False,1,1,0,120,0,0,0,0,0
+760493,Viktor Djukanovic,2022,MNE1,4391,False,19,17,0,1217,1,0,0,0,1
+760493,Viktor Djukanovic,2022,FS,16267,True,7,1,0,75,0,0,0,0,0
+760493,Viktor Djukanovic,2022,FS,11953,True,3,0,0,0,0,0,0,0,0
+760493,Viktor Djukanovic,2022,EMQ,11953,True,8,2,1,28,0,0,2,0,0
+760493,Viktor Djukanovic,2022,ECLQ,4391,False,4,4,0,308,2,0,0,0,0
+760493,Viktor Djukanovic,2021,U21Q,16267,True,2,2,0,180,2,0,0,0,1
+760493,Viktor Djukanovic,2021,U19Q,26101,True,3,3,0,257,0,0,0,0,1
+760493,Viktor Djukanovic,2021,MNEC,4391,False,5,5,0,389,4,2,0,0,1
+760493,Viktor Djukanovic,2021,MNE1,4391,False,36,31,0,1627,9,4,0,0,2
+760493,Viktor Djukanovic,2021,FS,26101,True,9,0,0,0,0,0,0,0,0
+760493,Viktor Djukanovic,2021,ECLQ,4391,False,2,1,0,45,0,0,0,0,0
+760493,Viktor Djukanovic,2021,CLQ,4391,False,2,2,0,56,0,0,0,0,0
+760493,Viktor Djukanovic,2020,MNEC,4391,False,4,3,0,107,1,1,0,0,0
+760493,Viktor Djukanovic,2020,MNE1,4391,False,28,20,0,708,2,0,0,0,0
+760493,Viktor Djukanovic,2020,FS,40099,True,2,2,0,130,1,0,0,0,0
+760493,Viktor Djukanovic,2020,FS,26101,True,2,2,0,163,1,0,0,0,1
+760493,Viktor Djukanovic,2019,FS,34415,True,6,4,0,248,0,0,0,0,0
+550492,Giorgi Gagua,2026,UNLB,3669,True,5,0,0,0,0,0,0,0,0
 550492,Giorgi Gagua,2026,SLO1,4529,False,14,14,0,1138,5,5,24,9,1
 550492,Giorgi Gagua,2026,SKC,4529,False,2,1,0,63,1,0,0,0,0
 550492,Giorgi Gagua,2026,ECLQ,4529,False,4,4,0,268,1,1,5,4,1
@@ -6410,6 +6415,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 550492,Giorgi Gagua,2018,FS,25740,True,7,3,0,181,1,0,0,0,0
 550492,Giorgi Gagua,2017,U17Q,25787,True,3,1,0,7,0,0,0,0,0
 550492,Giorgi Gagua,2017,FS,25787,True,6,1,0,3,0,0,0,0,0
+652698,Matej Trusa,2026,UNLC,3503,True,1,0,0,0,0,0,0,0,0
 652698,Matej Trusa,2026,SLO1,4529,False,14,14,0,1051,9,3,44,23,1
 652698,Matej Trusa,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
 652698,Matej Trusa,2026,ECLQ,4529,False,4,4,0,99,0,1,0,0,0
@@ -6661,8 +6667,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 663128,Luka Damjanovic,2018,FS,43405,True,3,2,0,130,0,0,0,0,0
 663128,Luka Damjanovic,2018,FS,22901,True,2,1,0,90,0,0,0,0,0
 663128,Luka Damjanovic,2018,BI19,25088,False,5,2,0,180,0,0,0,0,0
-1173520,Marek Jurak,2026,U19Q,25960,True,1,1,0,90,0,0,0,0,0
-1173520,Marek Jurak,2026,U17Q,25792,True,1,0,0,0,0,0,0,0,0
+1173520,Marek Jurak,2026,U19Q,25960,True,3,3,0,270,0,0,0,0,0
+1173520,Marek Jurak,2026,U17Q,25792,True,2,0,0,0,0,0,0,0,0
 1173520,Marek Jurak,2026,SLO1,7918,False,13,0,0,0,0,0,0,0,0
 1173520,Marek Jurak,2026,SKC,7918,False,4,0,0,0,0,0,0,0,0
 1173520,Marek Jurak,2026,FS,25960,True,3,1,0,90,0,0,0,0,0
@@ -6783,7 +6789,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 529512,Kristo Hussar,2017,ES17,65264,False,18,17,0,1360,2,0,0,0,4
 371150,Loïc Bessilé,2026,SLO1,7918,False,14,10,0,728,0,0,6,2,0
 371150,Loïc Bessilé,2026,SKC,7918,False,4,2,0,180,0,0,0,0,0
-371150,Loïc Bessilé,2026,AFCQ,3815,True,2,2,0,69,0,0,0,0,0
+371150,Loïc Bessilé,2026,AFCQ,3815,True,4,3,0,89,0,0,1,0,0
 371150,Loïc Bessilé,2025,SLO1,7918,False,22,21,0,1845,1,0,15,3,1
 371150,Loïc Bessilé,2025,SLMR,7918,False,10,0,0,0,0,0,0,0,0
 371150,Loïc Bessilé,2025,SKC,7918,False,5,3,0,270,0,1,0,0,0
@@ -6891,7 +6897,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 471135,Richard Krizan,2016,SK2,1562,False,22,9,0,721,1,0,0,0,1
 471135,Richard Krizan,2015,SK2P,1562,False,5,2,0,91,0,0,0,0,0
 726671,Samuel Bagin,2026,SKC,12005,False,4,2,0,135,0,0,0,0,0
-726671,Samuel Bagin,2026,SK2,12005,False,16,11,0,908,0,1,0,0,3
+726671,Samuel Bagin,2026,SK2,12005,False,17,12,0,998,0,1,0,0,3
 726671,Samuel Bagin,2025,U21Q,24965,True,10,0,0,0,0,0,0,0,0
 726671,Samuel Bagin,2025,SLO1,7918,False,18,6,0,347,0,0,1,0,3
 726671,Samuel Bagin,2025,SKC,7918,False,4,1,0,90,0,0,0,0,0
@@ -6974,7 +6980,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 232390,Lukas Skovajsa,2013,ELQ,7918,False,4,0,0,0,0,0,0,0,0
 232390,Lukas Skovajsa,2012,SLO1,7918,False,33,0,0,0,0,0,0,0,0
 232390,Lukas Skovajsa,2012,SKC,7918,False,1,1,0,14,0,0,0,0,0
-591755,Justen Kranthove,2026,NTD,28378,False,9,9,0,667,1,0,0,0,1
+591755,Justen Kranthove,2026,NTD,28378,False,10,10,0,680,1,0,0,0,1
 591755,Justen Kranthove,2026,NLP,28378,False,3,3,0,265,0,0,0,0,0
 591755,Justen Kranthove,2025,SLO1,7918,False,19,8,0,444,0,1,1,0,3
 591755,Justen Kranthove,2025,SKC,7918,False,4,1,0,90,0,2,0,0,0
@@ -7125,7 +7131,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726668,Tadeas Hajovsky,2021,SK19,16181,False,1,1,0,32,0,0,0,0,0
 726668,Tadeas Hajovsky,2021,FS,25792,True,5,2,0,180,1,0,0,0,2
 726668,Tadeas Hajovsky,2021,AA17,25792,True,3,3,0,140,0,0,0,0,1
-322683,Markus Poom,2026,UNLC,6133,True,4,4,0,360,0,0,7,0,1
+322683,Markus Poom,2026,UNLC,6133,True,6,5,0,422,0,1,7,0,1
 322683,Markus Poom,2026,SLO1,7918,False,14,13,0,845,2,0,12,3,1
 322683,Markus Poom,2026,SKC,7918,False,4,3,0,236,0,2,0,0,0
 322683,Markus Poom,2025,SLO1,7918,False,4,3,0,208,0,0,3,0,0
@@ -7222,7 +7228,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 322683,Markus Poom,2013,EE17,47130,False,20,16,0,1130,10,0,0,0,0
 495963,Richie Musaba,2026,SLO1,7918,False,2,0,0,0,0,0,0,0,0
 495963,Richie Musaba,2026,ITC4,22200,False,1,1,0,78,0,0,0,0,0
-495963,Richie Musaba,2026,IT4A,22200,False,11,10,0,581,0,0,0,0,0
+495963,Richie Musaba,2026,IT4A,22200,False,12,12,0,633,0,0,0,0,0
 495963,Richie Musaba,2025,SLO1,7918,False,4,4,0,249,0,1,3,0,1
 495963,Richie Musaba,2025,SLMR,7918,False,10,2,0,47,0,0,0,0,0
 495963,Richie Musaba,2025,SKC,7918,False,1,0,0,0,0,0,0,0,0
@@ -7260,6 +7266,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 495963,Richie Musaba,2016,NLAE,7465,False,1,0,0,0,0,0,0,0,0
 902200,Jesse Khan,2026,TRP,3173,False,1,1,0,90,0,0,0,0,0
 902200,Jesse Khan,2026,TR2,3173,False,14,9,0,161,0,0,4,0,0
+902200,Jesse Khan,2026,CNNF,7149,True,2,1,0,45,0,2,0,0,0
 902200,Jesse Khan,2026,CNLA,7149,True,4,2,0,139,0,0,0,0,0
 902200,Jesse Khan,2025,SLO1,7918,False,22,13,9,921,3,0,26,7,4
 902200,Jesse Khan,2025,SLMR,7918,False,10,0,10,0,0,0,0,0,0
@@ -7293,7 +7300,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1009483,Antonio Bazdaric,2026,SLO1,7918,False,4,0,0,0,0,0,0,0,0
 1009483,Antonio Bazdaric,2026,SKC,7918,False,1,0,0,0,0,0,0,0,0
 1009483,Antonio Bazdaric,2026,NLP,3892,False,1,1,0,11,0,0,0,0,0
-1009483,Antonio Bazdaric,2026,NL2,3892,False,11,8,0,305,1,0,6,4,0
+1009483,Antonio Bazdaric,2026,NL2,3892,False,12,9,0,315,2,0,7,5,0
 1009483,Antonio Bazdaric,2026,FS,28207,True,4,0,0,0,0,0,0,0,0
 1009483,Antonio Bazdaric,2025,SLO1,7918,False,22,13,0,769,0,0,11,2,2
 1009483,Antonio Bazdaric,2025,SLMR,7918,False,10,7,0,189,0,0,1,0,1
@@ -7314,7 +7321,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1009483,Antonio Bazdaric,2022,FS,21141,True,6,6,0,213,0,0,0,0,0
 1009483,Antonio Bazdaric,2022,CR19,26029,False,2,2,0,127,0,0,0,0,0
 1009483,Antonio Bazdaric,2021,FS,34699,True,3,3,0,105,0,0,0,0,0
-1191207,Fedor Kasana,2026,U19Q,25960,True,4,4,0,235,0,0,0,0,0
+1191207,Fedor Kasana,2026,U19Q,25960,True,6,5,0,259,0,0,0,0,0
 1191207,Fedor Kasana,2026,SLO1,7918,False,14,8,0,220,0,0,9,3,0
 1191207,Fedor Kasana,2026,SKC,7918,False,4,3,0,166,1,0,0,0,0
 1191207,Fedor Kasana,2026,FS,25960,True,3,0,0,0,0,0,0,0,0
@@ -7546,7 +7553,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1059344,Lukas Mikulaj,2022,19YL,101597,False,1,1,0,2,0,0,0,0,0
 1107958,Jude Sunday,2026,TSP,1321,False,1,0,0,0,0,0,0,0,0
 1107958,Jude Sunday,2026,LUXP,11914,False,2,2,0,155,1,0,0,0,0
-1107958,Jude Sunday,2026,LUX1,11914,False,7,6,0,303,1,2,0,0,2
+1107958,Jude Sunday,2026,LUX1,11914,False,7,7,0,324,1,2,0,0,2
 1107958,Jude Sunday,2026,CZ3C,1321,False,4,0,0,0,0,0,0,0,0
 1107958,Jude Sunday,2025,TSP,1321,False,2,2,0,106,1,0,0,0,0
 1107958,Jude Sunday,2025,TS2,1321,False,24,16,2,961,1,1,0,0,0
@@ -7641,7 +7648,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 854484,Dylann Kam,2020,CAFC,46649,False,9,2,0,68,0,0,1,0,0
 687464,Franko Sabljic,2026,SLO1,7918,False,6,0,0,0,0,0,0,0,0
 687464,Franko Sabljic,2026,SKC,7918,False,2,0,0,0,0,0,0,0,0
-687464,Franko Sabljic,2026,GRS2,40445,False,9,9,0,479,1,0,0,0,1
+687464,Franko Sabljic,2026,GRS2,40445,False,10,10,0,510,1,0,0,0,1
 687464,Franko Sabljic,2026,GRP,40445,False,1,0,0,0,0,0,0,0,0
 687464,Franko Sabljic,2025,SLO1,7918,False,22,18,0,1263,2,1,23,6,0
 687464,Franko Sabljic,2025,SLMR,7918,False,10,0,0,0,0,0,0,0,0
@@ -7676,7 +7683,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 687464,Franko Sabljic,2018,BI17,50305,False,32,0,0,0,0,0,0,0,0
 1146794,Denis Adamkovic,2026,SLO1,7918,False,2,1,0,3,0,0,0,0,0
 1146794,Denis Adamkovic,2026,SKC,12005,False,4,3,0,256,0,0,0,0,0
-1146794,Denis Adamkovic,2026,SK2,12005,False,14,14,0,1260,3,0,0,0,2
+1146794,Denis Adamkovic,2026,SK2,12005,False,15,15,0,1350,3,0,0,0,2
 1146794,Denis Adamkovic,2025,SLO1,7918,False,22,8,0,195,0,0,3,1,0
 1146794,Denis Adamkovic,2025,SLMR,7918,False,10,5,0,141,0,0,1,0,0
 1146794,Denis Adamkovic,2025,SKC,7918,False,5,2,0,15,1,0,0,0,0
@@ -7700,7 +7707,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1217371,Rayan-Elie Guibero,2023,WER1,17224,False,15,10,0,625,1,0,0,0,0
 1217371,Rayan-Elie Guibero,2023,MWP1,90107,False,2,2,0,180,1,0,0,0,0
 1295593,Nicholas Dmitrovic,2026,SKC,24455,False,3,0,0,0,0,0,0,0,0
-1295593,Nicholas Dmitrovic,2026,SK2,24455,False,16,6,0,285,2,1,0,0,2
+1295593,Nicholas Dmitrovic,2026,SK2,24455,False,17,7,0,357,2,1,0,0,2
 1295593,Nicholas Dmitrovic,2025,SLO1,7918,False,18,2,0,5,0,0,0,0,0
 1295593,Nicholas Dmitrovic,2025,SKC,7918,False,4,1,0,21,1,1,0,0,0
 1295593,Nicholas Dmitrovic,2025,SK2,24455,False,13,13,0,908,3,1,0,0,3
@@ -7802,7 +7809,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 383774,Ziga Frelih,2016,19YL,50918,False,2,2,0,180,0,0,0,0,0
 383774,Ziga Frelih,2015,SL1,710,False,1,0,0,0,0,0,0,0,0
 415529,Martin Vantruba,2026,SLO1,365,False,14,14,0,1260,0,0,0,0,1
-415529,Martin Vantruba,2026,SKC,365,False,3,1,0,90,0,0,0,0,0
+415529,Martin Vantruba,2026,SKC,365,False,4,1,0,90,0,0,0,0,0
 415529,Martin Vantruba,2026,ECLQ,365,False,2,2,0,210,0,0,0,0,0
 415529,Martin Vantruba,2025,SLO1,365,False,22,0,0,0,0,0,0,0,0
 415529,Martin Vantruba,2025,SLAR,365,False,10,10,0,900,0,0,0,0,1
@@ -7872,7 +7879,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 415529,Martin Vantruba,2015,FS,30430,True,9,4,0,344,0,0,0,0,0
 415529,Martin Vantruba,2013,FS,25723,True,1,1,0,80,0,0,0,0,0
 726666,Patrik Vasil,2026,SKC,12005,False,4,1,0,75,0,0,0,0,0
-726666,Patrik Vasil,2026,SK2,12005,False,16,16,0,1440,0,0,0,0,0
+726666,Patrik Vasil,2026,SK2,12005,False,17,17,0,1530,0,0,0,0,0
 726666,Patrik Vasil,2025,SLO1,365,False,22,0,0,0,0,0,0,0,0
 726666,Patrik Vasil,2025,SLAR,365,False,10,0,0,0,0,0,0,0,0
 726666,Patrik Vasil,2025,SKC,365,False,5,1,0,90,0,0,0,0,0
@@ -7894,8 +7901,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726666,Patrik Vasil,2020,SLAR,365,False,3,0,0,0,0,0,0,0,0
 726666,Patrik Vasil,2019,FS,25723,True,1,1,0,80,0,0,0,0,0
 435511,Patrick Nwadike,2026,SLO1,365,False,14,5,1,237,0,0,4,2,1
-435511,Patrick Nwadike,2026,SKC,365,False,3,2,0,94,0,0,0,0,0
+435511,Patrick Nwadike,2026,SKC,365,False,4,2,0,94,0,0,0,0,0
 435511,Patrick Nwadike,2026,ECLQ,365,False,2,0,2,0,0,0,0,0,0
+435511,Patrick Nwadike,2026,CNNF,14161,True,1,1,0,90,0,0,0,0,0
 435511,Patrick Nwadike,2025,SLO1,365,False,22,10,4,900,0,0,4,1,1
 435511,Patrick Nwadike,2025,SLAR,365,False,10,0,10,0,0,0,0,0,0
 435511,Patrick Nwadike,2025,SKC,365,False,5,1,2,90,0,0,0,0,0
@@ -7918,7 +7926,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 435511,Patrick Nwadike,2018,RESU,2294,False,2,2,0,180,0,0,0,0,0
 435511,Patrick Nwadike,2015,JUSÖ,15677,False,25,12,0,1027,1,0,0,0,5
 323903,Libor Holik,2026,SLO1,365,False,14,6,0,137,0,0,1,0,1
-323903,Libor Holik,2026,SKC,365,False,3,3,0,270,0,0,0,0,0
+323903,Libor Holik,2026,SKC,365,False,4,3,0,270,0,0,0,0,0
 323903,Libor Holik,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 323903,Libor Holik,2025,SLO1,365,False,22,16,0,1236,0,3,20,4,1
 323903,Libor Holik,2025,SLAR,365,False,10,3,7,270,0,0,3,0,0
@@ -7994,7 +8002,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 323903,Libor Holik,2014,17EU,26035,True,3,2,0,160,0,0,0,0,0
 323903,Libor Holik,2013,FS,25793,True,2,2,0,145,0,0,0,0,0
 736922,Marek Ujlaky,2026,SLO1,365,False,14,13,0,1077,0,0,3,0,1
-736922,Marek Ujlaky,2026,SKC,365,False,3,0,0,0,0,0,0,0,0
+736922,Marek Ujlaky,2026,SKC,365,False,4,0,0,0,0,0,0,0,0
 736922,Marek Ujlaky,2026,ECLQ,365,False,2,1,0,80,0,0,0,0,1
 736922,Marek Ujlaky,2025,SLO1,365,False,19,4,13,360,0,0,2,0,0
 736922,Marek Ujlaky,2025,SLO1,35488,False,3,3,0,175,0,0,0,0,1
@@ -8065,7 +8073,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 686693,Roko Jureskin,2019,SK2P,20634,False,1,0,0,0,0,0,0,0,0
 686693,Roko Jureskin,2019,SK2,20634,False,1,1,0,25,0,0,0,0,0
 542451,Lazar Stojsavljevic,2026,SERP,3137,False,1,1,0,90,1,0,0,0,1
-542451,Lazar Stojsavljevic,2026,SER2,3137,False,10,7,0,435,0,0,0,0,0
+542451,Lazar Stojsavljevic,2026,SER2,3137,False,11,8,0,525,0,0,0,0,0
 542451,Lazar Stojsavljevic,2025,SLO1,365,False,16,9,2,661,0,0,3,0,1
 542451,Lazar Stojsavljevic,2025,SLAR,365,False,10,9,0,770,0,0,2,0,2
 542451,Lazar Stojsavljevic,2025,SKC,365,False,4,4,0,360,0,0,0,0,2
@@ -8175,7 +8183,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 344321,Michal Tomic,2015,FS,25792,True,1,0,0,0,0,0,0,0,0
 344321,Michal Tomic,2014,FS,25723,True,4,4,0,231,0,0,0,0,0
 108405,Kristian Kostrna,2026,SLO1,365,False,14,11,0,940,1,2,7,1,5
-108405,Kristian Kostrna,2026,SKC,365,False,3,1,0,34,0,0,0,0,0
+108405,Kristian Kostrna,2026,SKC,365,False,4,1,0,34,0,0,0,0,0
 108405,Kristian Kostrna,2026,ECLQ,365,False,2,2,0,210,0,0,0,0,1
 108405,Kristian Kostrna,2025,SLO1,365,False,22,14,0,1013,0,0,3,0,4
 108405,Kristian Kostrna,2025,SLAR,365,False,10,5,0,406,0,0,2,0,2
@@ -8263,7 +8271,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 736920,Patrick Karhan,2020,SLAR,365,False,5,1,1,2,0,0,0,0,0
 736920,Patrick Karhan,2018,FS,25723,True,2,2,0,73,0,0,0,0,0
 147113,Martin Mikovic,2026,SLO1,365,False,14,4,0,311,0,0,3,1,1
-147113,Martin Mikovic,2026,SKC,365,False,3,1,0,22,0,1,0,0,0
+147113,Martin Mikovic,2026,SKC,365,False,4,1,0,22,0,1,0,0,0
 147113,Martin Mikovic,2026,ECLQ,365,False,2,2,0,196,0,0,0,0,1
 147113,Martin Mikovic,2025,SLO1,365,False,22,16,0,1162,1,4,31,3,4
 147113,Martin Mikovic,2025,SLAR,365,False,10,6,0,397,0,0,7,0,2
@@ -8328,7 +8336,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147113,Martin Mikovic,2009,SLO1,365,False,8,6,0,385,0,0,0,0,1
 147113,Martin Mikovic,2009,SKC,365,False,3,1,0,90,0,0,0,0,1
 155597,Erik Sabo,2026,SLO1,365,False,14,13,0,986,2,1,12,3,6
-155597,Erik Sabo,2026,SKC,365,False,3,0,0,0,0,0,0,0,0
+155597,Erik Sabo,2026,SKC,365,False,4,0,0,0,0,0,0,0,0
 155597,Erik Sabo,2026,ECLQ,365,False,2,2,0,210,0,0,0,0,1
 155597,Erik Sabo,2025,SLO1,365,False,22,18,0,1378,2,2,13,5,3
 155597,Erik Sabo,2025,SLAR,365,False,10,9,1,810,0,1,4,2,5
@@ -8494,8 +8502,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 93873,Filip Twardzik,2008,FS,25793,True,2,2,0,180,1,0,0,0,0
 93873,Filip Twardzik,2008,BJ1,21066,False,15,12,0,552,0,0,0,0,0
 93873,Filip Twardzik,2007,BJ1,21072,False,26,24,0,1866,2,0,0,0,4
-1077716,Peter Pittel,2026,U19Q,25960,True,4,2,0,100,0,0,0,0,0
-1077716,Peter Pittel,2026,SK19,18746,False,11,11,0,932,4,0,0,0,4
+1077716,Peter Pittel,2026,U19Q,25960,True,6,4,0,215,0,1,0,0,0
+1077716,Peter Pittel,2026,SK19,18746,False,11,11,0,923,4,0,0,0,4
 1077716,Peter Pittel,2026,FS,25960,True,3,3,0,155,0,0,0,0,0
 1077716,Peter Pittel,2025,SLO1,365,False,5,0,0,0,0,0,0,0,0
 1077716,Peter Pittel,2025,SLAR,365,False,10,0,0,0,0,0,0,0,0
@@ -8614,8 +8622,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 289464,Milos Kratochvil,2014,FS,21102,True,3,3,0,180,2,0,0,0,0
 289464,Milos Kratochvil,2013,FS,25565,True,18,8,0,417,1,0,0,0,0
 289464,Milos Kratochvil,2013,19YL,41589,False,6,4,0,335,1,0,0,0,1
+659743,Giorgi Moistsrapishvili,2026,UNLB,3669,True,1,0,0,0,0,0,0,0,0
+659743,Giorgi Moistsrapishvili,2026,U17Q,25787,True,1,0,0,0,0,0,0,0,0
 659743,Giorgi Moistsrapishvili,2026,SLO1,365,False,14,11,0,679,0,1,9,2,2
-659743,Giorgi Moistsrapishvili,2026,SKC,365,False,3,2,0,117,0,0,0,0,0
+659743,Giorgi Moistsrapishvili,2026,SKC,365,False,4,2,0,117,0,0,0,0,0
 659743,Giorgi Moistsrapishvili,2026,FS,25787,True,3,0,0,0,0,0,0,0,0
 659743,Giorgi Moistsrapishvili,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 659743,Giorgi Moistsrapishvili,2025,U17Q,25787,True,5,0,0,0,0,0,0,0,0
@@ -8673,7 +8683,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 659743,Giorgi Moistsrapishvili,2017,U17Q,25787,True,5,1,0,1,0,0,0,0,0
 659743,Giorgi Moistsrapishvili,2017,FS,25787,True,6,0,0,0,0,0,0,0,0
 582431,Timotej Kudlicka,2026,SLO1,365,False,14,13,0,1069,8,2,40,20,4
-582431,Timotej Kudlicka,2026,SKC,365,False,3,3,0,85,1,0,0,0,0
+582431,Timotej Kudlicka,2026,SKC,365,False,4,3,0,85,1,0,0,0,0
 582431,Timotej Kudlicka,2026,ECLQ,365,False,2,2,0,97,0,0,0,0,0
 582431,Timotej Kudlicka,2025,SLO1,365,False,22,19,0,901,5,1,26,14,6
 582431,Timotej Kudlicka,2025,SLAR,365,False,10,10,0,636,0,1,12,6,2
@@ -8694,7 +8704,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 582431,Timotej Kudlicka,2018,FS,25723,True,2,2,0,64,0,0,0,0,0
 582431,Timotej Kudlicka,2017,FS,34689,True,2,2,0,58,0,0,0,0,0
 989159,Luka Khorkheli,2026,SLO1,365,False,14,13,0,954,1,3,19,7,2
-989159,Luka Khorkheli,2026,SKC,365,False,3,2,0,63,0,0,0,0,0
+989159,Luka Khorkheli,2026,SKC,365,False,4,2,0,63,0,0,0,0,0
 989159,Luka Khorkheli,2026,ECLQ,365,False,2,2,0,195,0,0,0,0,1
 989159,Luka Khorkheli,2025,SLO1,365,False,17,14,0,421,1,1,15,4,3
 989159,Luka Khorkheli,2025,SLAR,365,False,10,9,0,572,5,1,10,5,2
@@ -8714,7 +8724,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 989159,Luka Khorkheli,2020,GEO2,10531,False,36,33,0,1888,5,3,0,0,3
 989159,Luka Khorkheli,2019,GEP1,72702,False,2,2,0,180,0,0,0,0,0
 671304,Marin Lausic,2026,SLO1,365,False,14,13,0,1089,1,4,11,5,3
-671304,Marin Lausic,2026,SKC,365,False,3,2,0,79,0,0,0,0,0
+671304,Marin Lausic,2026,SKC,365,False,4,2,0,79,0,0,0,0,0
 671304,Marin Lausic,2026,ECLQ,365,False,2,2,0,210,0,0,0,0,0
 671304,Marin Lausic,2025,SLO1,365,False,4,1,0,66,0,0,0,0,0
 671304,Marin Lausic,2025,SLAR,365,False,10,10,0,851,0,2,3,0,2
@@ -8740,7 +8750,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 671304,Marin Lausic,2020,KR2,8101,False,34,28,0,1372,3,4,0,0,4
 671304,Marin Lausic,2018,KR2,8101,False,4,1,0,1,0,0,0,0,0
 80690,Roman Prochazka,2026,SLO1,365,False,14,5,0,36,0,0,0,0,0
-80690,Roman Prochazka,2026,SKC,365,False,3,3,0,270,2,0,0,0,0
+80690,Roman Prochazka,2026,SKC,365,False,4,3,0,270,2,0,0,0,0
 80690,Roman Prochazka,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 80690,Roman Prochazka,2025,SLO1,365,False,22,11,0,854,4,1,19,6,3
 80690,Roman Prochazka,2025,SLAR,365,False,10,8,0,156,0,0,0,0,3
@@ -8864,7 +8874,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 350398,Abdulrahman Taiwo,2017,CZ21,8890,False,9,2,0,78,0,0,0,0,0
 350398,Abdulrahman Taiwo,2015,FS,31096,True,1,1,0,14,0,0,0,0,0
 913305,Idjessi Metsoko,2026,SCP,1519,False,5,4,0,146,1,2,3,2,0
-913305,Idjessi Metsoko,2026,SC1,1519,False,13,8,0,346,0,1,4,3,0
+913305,Idjessi Metsoko,2026,SC1,1519,False,12,8,0,346,0,1,4,3,0
 913305,Idjessi Metsoko,2025,SLO1,365,False,22,7,13,316,3,0,9,5,0
 913305,Idjessi Metsoko,2025,SLAR,365,False,10,8,0,449,1,0,17,5,1
 913305,Idjessi Metsoko,2025,SKC,365,False,5,2,3,180,1,0,0,0,0
@@ -8894,7 +8904,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 913305,Idjessi Metsoko,2019,F19B,7817,False,26,5,0,330,0,0,0,0,1
 913305,Idjessi Metsoko,2018,FR5J,10820,False,1,0,0,0,0,0,0,0,0
 1138092,Filip Trello,2026,SLO1,365,False,14,14,0,985,3,1,19,7,1
-1138092,Filip Trello,2026,SKC,365,False,3,2,0,63,1,0,0,0,0
+1138092,Filip Trello,2026,SKC,365,False,4,2,0,63,1,0,0,0,0
 1138092,Filip Trello,2026,ECLQ,365,False,2,2,0,132,0,0,0,0,0
 1138092,Filip Trello,2025,U21Q,24965,True,1,1,0,4,0,0,0,0,1
 1138092,Filip Trello,2025,U19Q,25960,True,6,6,0,232,0,0,0,0,0
@@ -8920,7 +8930,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1138092,Filip Trello,2022,FS,25792,True,3,0,0,0,0,0,0,0,0
 1138092,Filip Trello,2022,FS,25723,True,3,2,0,90,0,0,0,0,0
 589746,Stefan Skrbo,2026,SLO1,365,False,14,3,0,77,0,0,1,1,0
-589746,Stefan Skrbo,2026,SKC,365,False,3,0,0,0,0,0,0,0,0
+589746,Stefan Skrbo,2026,SKC,365,False,4,0,0,0,0,0,0,0,0
 589746,Stefan Skrbo,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 589746,Stefan Skrbo,2025,SLO1,365,False,22,20,0,1280,2,2,19,6,2
 589746,Stefan Skrbo,2025,SLAR,365,False,10,7,0,197,0,0,2,1,1
@@ -8944,7 +8954,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 589746,Stefan Skrbo,2019,A4T,24866,False,15,0,0,0,0,0,0,0,0
 589746,Stefan Skrbo,2018,A4T,24866,False,30,0,0,0,0,0,0,0,0
 539262,Philip Azango,2026,SLO1,365,False,14,12,0,628,3,3,18,5,0
-539262,Philip Azango,2026,SKC,365,False,3,2,0,162,0,1,0,0,0
+539262,Philip Azango,2026,SKC,365,False,4,2,0,162,0,1,0,0,0
 539262,Philip Azango,2026,ECLQ,365,False,2,1,0,77,0,0,0,0,0
 539262,Philip Azango,2025,SLO1,365,False,22,16,0,855,2,1,29,7,1
 539262,Philip Azango,2025,SLAR,365,False,10,7,0,406,1,1,10,2,0
@@ -9294,8 +9304,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 74872,Michal Duris,2006,SLO1,4786,False,22,10,0,337,0,1,0,0,2
 74872,Michal Duris,2006,FS,25960,True,1,0,0,0,0,0,0,0,0
 74872,Michal Duris,2005,SLO1,4786,False,20,14,0,850,0,1,0,0,2
-996474,Lukas Domanisky,2026,SLO1,20063,False,14,8,0,682,0,0,0,0,0
-996474,Lukas Domanisky,2026,SKC,20063,False,4,1,0,90,0,0,0,0,0
+996474,Lukas Domanisky,2026,SLO1,20063,False,14,11,0,952,0,0,0,0,0
+996474,Lukas Domanisky,2026,SKC,20063,False,4,2,0,180,0,0,0,0,0
 996474,Lukas Domanisky,2025,SLO1,20063,False,4,0,0,0,0,0,0,0,0
 996474,Lukas Domanisky,2025,SLAR,20063,False,10,4,0,360,0,0,0,0,0
 996474,Lukas Domanisky,2025,SKC,38269,False,2,1,0,90,0,0,0,0,0
@@ -9381,7 +9391,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 546824,Ivan Rehak,2018,EL,365,False,6,0,0,0,0,0,0,0,0
 546824,Ivan Rehak,2017,U17Q,25792,True,6,5,0,400,0,0,0,0,0
 546824,Ivan Rehak,2017,FS,25792,True,5,2,0,160,0,0,0,0,0
-704979,Peter Kovacik,2026,SLO1,20063,False,14,11,0,826,4,1,24,9,2
+704979,Peter Kovacik,2026,SLO1,20063,False,14,14,0,1068,4,3,26,10,2
 704979,Peter Kovacik,2026,SKC,20063,False,4,3,0,210,0,1,0,0,0
 704979,Peter Kovacik,2025,SLO1,20063,False,15,11,0,843,4,0,20,9,1
 704979,Peter Kovacik,2025,SLAR,20063,False,10,10,0,748,1,0,10,4,1
@@ -9418,23 +9428,23 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704979,Peter Kovacik,2020,FS,24965,True,5,3,0,189,0,0,0,0,0
 704979,Peter Kovacik,2019,SK2P,20063,False,3,3,0,270,0,0,0,0,0
 704979,Peter Kovacik,2019,SK2,20063,False,9,5,0,388,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2026,SLO1,20063,False,14,11,0,990,0,3,9,1,3
-912892,Rene Rantusa Lampreht,2026,SKC,20063,False,4,2,0,180,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2025,SLO1,20063,False,4,2,0,180,2,0,4,2,0
-912892,Rene Rantusa Lampreht,2025,SLAR,20063,False,10,9,0,810,0,0,2,0,2
-912892,Rene Rantusa Lampreht,2025,SL1,6248,False,18,18,0,1620,1,1,0,0,2
-912892,Rene Rantusa Lampreht,2025,SKC,20063,False,3,3,0,270,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2024,SL1,6248,False,36,27,0,2055,2,0,0,0,2
-912892,Rene Rantusa Lampreht,2024,POSL,6248,False,2,2,0,180,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2024,FS,16272,True,2,2,0,100,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2023,U21Q,16272,True,8,0,1,0,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2023,SLP,55601,False,5,2,1,106,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2023,SL1,55601,False,36,20,8,1622,0,0,0,0,2
-912892,Rene Rantusa Lampreht,2023,FS,16272,True,1,1,0,5,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2022,SLP,55601,False,3,3,0,207,0,0,0,0,1
-912892,Rene Rantusa Lampreht,2022,SL2,55601,False,30,29,0,2610,0,1,0,0,4
-912892,Rene Rantusa Lampreht,2022,FS,16272,True,3,1,0,15,0,0,0,0,0
-912892,Rene Rantusa Lampreht,2021,SL2,55601,False,30,22,0,1588,3,0,0,0,3
+912892,Rene Lampreht,2026,SLO1,20063,False,14,13,0,1170,0,3,9,1,4
+912892,Rene Lampreht,2026,SKC,20063,False,4,3,0,209,0,0,0,0,0
+912892,Rene Lampreht,2025,SLO1,20063,False,4,2,0,180,2,0,4,2,0
+912892,Rene Lampreht,2025,SLAR,20063,False,10,9,0,810,0,0,2,0,2
+912892,Rene Lampreht,2025,SL1,6248,False,18,18,0,1620,1,1,0,0,2
+912892,Rene Lampreht,2025,SKC,20063,False,3,3,0,270,0,0,0,0,0
+912892,Rene Lampreht,2024,SL1,6248,False,36,27,0,2055,2,0,0,0,2
+912892,Rene Lampreht,2024,POSL,6248,False,2,2,0,180,0,0,0,0,0
+912892,Rene Lampreht,2024,FS,16272,True,2,2,0,100,0,0,0,0,0
+912892,Rene Lampreht,2023,U21Q,16272,True,8,0,1,0,0,0,0,0,0
+912892,Rene Lampreht,2023,SLP,55601,False,5,2,1,106,0,0,0,0,0
+912892,Rene Lampreht,2023,SL1,55601,False,36,20,8,1622,0,0,0,0,2
+912892,Rene Lampreht,2023,FS,16272,True,1,1,0,5,0,0,0,0,0
+912892,Rene Lampreht,2022,SLP,55601,False,3,3,0,207,0,0,0,0,1
+912892,Rene Lampreht,2022,SL2,55601,False,30,29,0,2610,0,1,0,0,4
+912892,Rene Lampreht,2022,FS,16272,True,3,1,0,15,0,0,0,0,0
+912892,Rene Lampreht,2021,SL2,55601,False,30,22,0,1588,3,0,0,0,3
 672831,Alex Markovic,2026,TSP,13726,False,1,1,0,85,0,0,0,0,0
 672831,Alex Markovic,2026,TS2,13726,False,10,7,0,250,0,1,0,0,0
 672831,Alex Markovic,2026,TS1,5225,False,3,0,0,0,0,0,0,0,0
@@ -9462,8 +9472,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 672831,Alex Markovic,2019,FS,21137,True,2,2,0,71,0,0,0,0,0
 672831,Alex Markovic,2019,CITP,14909,False,2,1,0,28,0,0,0,0,1
 672831,Alex Markovic,2018,ITJ6,49774,False,12,8,0,358,1,0,0,0,0
-582389,Jakub Luka,2026,SLO1,20063,False,14,11,0,960,0,0,6,0,3
-582389,Jakub Luka,2026,SKC,20063,False,4,3,0,270,0,0,0,0,1
+582389,Jakub Luka,2026,SLO1,20063,False,14,14,0,1154,0,1,7,1,4
+582389,Jakub Luka,2026,SKC,20063,False,4,4,0,315,0,0,0,0,1
 582389,Jakub Luka,2025,SLO1,20063,False,22,14,0,1109,0,0,2,0,5
 582389,Jakub Luka,2025,SLAR,20063,False,10,8,0,698,0,0,5,0,4
 582389,Jakub Luka,2025,SKC,20063,False,7,5,0,450,0,0,0,0,1
@@ -9492,7 +9502,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 582389,Jakub Luka,2020,FS,30430,True,1,0,0,0,0,0,0,0,0
 582389,Jakub Luka,2020,FS,25960,True,2,2,0,171,0,0,0,0,0
 260979,Branislav Ninaj,2026,SKC,2781,False,2,0,0,0,0,0,0,0,0
-260979,Branislav Ninaj,2026,SK2,2781,False,16,15,0,1304,1,0,0,0,7
+260979,Branislav Ninaj,2026,SK2,2781,False,17,15,0,1304,1,0,0,0,7
 260979,Branislav Ninaj,2025,SLO1,35488,False,4,2,0,108,0,0,1,0,0
 260979,Branislav Ninaj,2025,SLO1,20063,False,18,11,0,871,0,0,7,2,3
 260979,Branislav Ninaj,2025,SLMR,35488,False,10,3,0,148,0,0,0,0,1
@@ -9627,8 +9637,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 389619,Matej Oravec,2015,SK2,20636,False,4,4,0,360,0,0,0,0,1
 389619,Matej Oravec,2015,FS,30430,True,13,9,0,840,1,0,0,0,0
 1243042,Alex Lajciak,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
-1243042,Alex Lajciak,2026,SKC,38269,False,2,1,0,90,0,0,0,0,0
-1243042,Alex Lajciak,2026,SK2,38269,False,16,12,1,971,0,0,0,0,3
+1243042,Alex Lajciak,2026,SKC,38269,False,2,2,0,180,0,0,0,0,0
+1243042,Alex Lajciak,2026,SK2,38269,False,17,13,1,1061,0,0,0,0,4
 1243042,Alex Lajciak,2025,U19Q,25960,True,6,4,0,229,0,0,0,0,3
 1243042,Alex Lajciak,2025,SLO1,20063,False,22,1,0,5,0,0,0,0,0
 1243042,Alex Lajciak,2025,SLAR,20063,False,10,2,0,97,0,0,0,0,0
@@ -9646,19 +9656,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1243042,Alex Lajciak,2023,SK19,52988,False,12,7,0,630,0,0,0,0,3
 1243042,Alex Lajciak,2023,FS,30430,True,3,3,0,178,0,0,0,0,0
 1511148,Bernard Mendy,2026,SKC,38269,False,2,0,0,0,0,0,0,0,0
-1511148,Bernard Mendy,2026,SK2,38269,False,16,14,1,1166,0,1,0,0,3
+1511148,Bernard Mendy,2026,SK2,38269,False,17,15,1,1256,0,1,0,0,3
 1511148,Bernard Mendy,2025,SLO1,20063,False,4,0,0,0,0,0,0,0,0
 1511148,Bernard Mendy,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
 1511148,Bernard Mendy,2025,SKC,20063,False,3,0,0,0,0,0,0,0,0
 1511148,Bernard Mendy,2025,CZ3C,37464,False,11,0,11,0,0,0,0,0,0
 1517205,Mohammad Sarr,2026,SKC,61909,False,1,1,0,90,0,0,0,0,1
 1517205,Mohammad Sarr,2026,SKC,38269,False,1,1,0,90,0,0,0,0,0
-1517205,Mohammad Sarr,2026,SK2,61909,False,9,8,0,305,0,0,0,0,2
+1517205,Mohammad Sarr,2026,SK2,61909,False,10,8,0,305,0,0,0,0,2
 1517205,Mohammad Sarr,2026,SK2,38269,False,8,0,0,0,0,0,0,0,0
 1517205,Mohammad Sarr,2025,SLO1,20063,False,2,0,0,0,0,0,0,0,0
 1517205,Mohammad Sarr,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
 1517205,Mohammad Sarr,2025,SKC,20063,False,3,0,0,0,0,0,0,0,0
-571037,Kevor Palumets,2026,UNLC,6133,True,4,4,0,255,0,0,4,3,0
+571037,Kevor Palumets,2026,UNLC,6133,True,6,6,0,390,1,0,5,4,0
 571037,Kevor Palumets,2026,SLO1,51316,False,14,13,0,761,2,1,7,3,0
 571037,Kevor Palumets,2026,SKC,51316,False,3,1,0,90,0,1,0,0,0
 571037,Kevor Palumets,2025,SLO1,20063,False,22,21,0,1335,3,6,15,3,5
@@ -9711,8 +9721,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 571037,Kevor Palumets,2018,EST3,29213,False,19,12,0,972,4,0,0,0,3
 571037,Kevor Palumets,2018,EE19,72106,False,5,3,0,207,1,0,0,0,0
 571037,Kevor Palumets,2017,ES17,65264,False,18,16,0,1230,20,0,0,0,3
-906458,Vincent Chyla,2026,SLO1,20063,False,14,11,0,875,0,2,16,7,3
-906458,Vincent Chyla,2026,SKC,20063,False,4,2,0,114,0,0,0,0,1
+906458,Vincent Chyla,2026,SLO1,20063,False,14,14,0,1034,1,2,20,9,4
+906458,Vincent Chyla,2026,SKC,20063,False,4,3,0,159,0,1,0,0,1
 906458,Vincent Chyla,2025,U21Q,24965,True,10,6,0,328,0,0,0,0,1
 906458,Vincent Chyla,2025,SLO1,20063,False,22,21,0,1080,1,0,9,1,2
 906458,Vincent Chyla,2025,SLAR,20063,False,10,10,0,577,1,1,8,3,2
@@ -9733,9 +9743,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 906458,Vincent Chyla,2022,SK19,18751,False,26,25,0,2152,2,0,0,0,5
 906458,Vincent Chyla,2021,SK2,20634,False,12,5,0,197,1,0,0,0,0
 906458,Vincent Chyla,2021,SK19,18751,False,26,21,0,1030,8,0,0,0,1
-925893,Ondrej Deml,2026,SLO1,20063,False,14,11,0,901,0,0,25,7,3
-925893,Ondrej Deml,2026,SKC,20063,False,4,3,0,200,1,0,0,0,1
-925893,Ondrej Deml,2026,FS,25565,True,3,0,0,0,0,0,0,0,0
+925893,Ondrej Deml,2026,SLO1,20063,False,14,14,0,1109,2,1,34,13,3
+925893,Ondrej Deml,2026,SKC,20063,False,4,4,0,229,1,1,0,0,1
+925893,Ondrej Deml,2026,FS,25565,True,4,0,0,0,0,0,0,0,0
 925893,Ondrej Deml,2025,SU20,22987,True,1,1,0,45,0,0,0,0,0
 925893,Ondrej Deml,2025,SLO1,20063,False,22,17,0,1232,2,2,20,6,1
 925893,Ondrej Deml,2025,SLAR,20063,False,10,1,0,45,0,1,0,0,0
@@ -9758,8 +9768,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 925893,Ondrej Deml,2022,CZ3C,8751,False,16,13,0,916,2,3,0,0,0
 925893,Ondrej Deml,2022,CZ19,13907,False,29,12,0,787,3,0,0,0,1
 925893,Ondrej Deml,2022,19YL,41589,False,6,6,0,397,1,0,2,0,1
-969330,Simon Fasko,2026,SLO1,20063,False,14,6,0,265,1,0,7,4,1
-969330,Simon Fasko,2026,SKC,20063,False,4,2,0,136,0,0,0,0,1
+969330,Simon Fasko,2026,SLO1,20063,False,14,7,0,279,1,0,7,4,2
+969330,Simon Fasko,2026,SKC,20063,False,4,2,0,135,0,0,0,0,1
 969330,Simon Fasko,2025,SLO1,20063,False,22,0,0,0,0,0,0,0,0
 969330,Simon Fasko,2025,SLAR,20063,False,10,5,0,132,0,0,0,0,0
 969330,Simon Fasko,2025,SKC,20063,False,7,0,0,0,0,0,0,0,0
@@ -9785,7 +9795,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 969330,Simon Fasko,2021,SK19,52988,False,13,5,0,163,0,0,0,0,0
 969330,Simon Fasko,2021,FS,25723,True,5,5,0,320,0,0,0,0,0
 876501,Davit Hakobyan,2026,SLO1,20063,False,8,2,0,23,0,0,0,0,2
-876501,Davit Hakobyan,2026,SKC,20063,False,2,1,0,60,0,0,0,0,0
+876501,Davit Hakobyan,2026,SKC,20063,False,2,2,0,150,0,0,0,0,0
 876501,Davit Hakobyan,2026,ARPO,10301,False,1,1,0,45,0,0,0,0,0
 876501,Davit Hakobyan,2026,ARM1,10301,False,6,3,0,210,0,1,0,0,0
 876501,Davit Hakobyan,2025,U21Q,23912,True,10,10,0,669,1,0,0,0,2
@@ -9833,8 +9843,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 729438,Andriy Gavrylenko,2020,UA3L,29914,False,22,21,0,1570,1,0,0,0,3
 729438,Andriy Gavrylenko,2019,UA3L,29914,False,9,7,0,322,0,0,0,0,1
 1376450,Mohammed Sallah,2026,SK2,38269,False,3,0,0,0,0,0,0,0,0
-1376450,Mohammed Sallah,2026,BRBL,1523,False,10,7,0,534,1,0,0,0,2
-1376450,Mohammed Sallah,2026,BBPO,1523,False,4,1,0,90,0,0,0,0,0
+1376450,Mohammed Sallah,2026,BRBL,1523,False,10,8,0,624,1,0,0,0,2
+1376450,Mohammed Sallah,2026,BBPO,1523,False,5,2,0,180,0,0,0,0,1
 1376450,Mohammed Sallah,2025,SLO1,20063,False,20,7,0,98,0,0,0,0,1
 1376450,Mohammed Sallah,2025,SKC,20063,False,4,2,0,153,0,0,0,0,0
 1376450,Mohammed Sallah,2025,SK2,38269,False,13,3,0,58,0,0,0,0,1
@@ -9842,7 +9852,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1376450,Mohammed Sallah,2024,SLO1,20063,False,2,0,0,0,0,0,0,0,0
 1376450,Mohammed Sallah,2024,SLAR,20063,False,10,0,0,0,0,0,0,0,0
 1376450,Mohammed Sallah,2024,SK19,52988,False,2,2,0,159,0,0,0,0,1
-404349,Rene Paraj,2026,SLO1,20063,False,14,11,0,696,0,1,7,2,1
+404349,Rene Paraj,2026,SLO1,20063,False,14,14,0,907,0,1,7,2,3
 404349,Rene Paraj,2026,SKC,20063,False,4,1,0,90,0,0,0,0,0
 404349,Rene Paraj,2025,SLO1,20063,False,22,17,0,870,0,0,6,0,6
 404349,Rene Paraj,2025,SLAR,20063,False,10,8,0,425,0,0,2,0,3
@@ -9880,7 +9890,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 404349,Rene Paraj,2014,SKR2,38269,False,10,10,0,820,1,0,0,0,2
 404349,Rene Paraj,2014,SK2,38269,False,22,20,0,1639,2,0,0,0,4
 404349,Rene Paraj,2013,SK2,38269,False,33,26,0,1819,3,0,0,0,5
-132376,Samuel Stefanik,2026,SLO1,20063,False,14,4,0,245,1,0,1,1,2
+132376,Samuel Stefanik,2026,SLO1,20063,False,14,7,0,455,1,3,4,2,2
 132376,Samuel Stefanik,2026,SKC,20063,False,4,2,0,100,0,1,0,0,0
 132376,Samuel Stefanik,2025,SLO1,20063,False,22,21,0,1645,1,3,19,6,2
 132376,Samuel Stefanik,2025,SLAR,20063,False,10,10,0,633,0,1,5,2,2
@@ -9941,7 +9951,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 132376,Samuel Stefanik,2011,FS,24965,True,5,5,0,314,1,0,0,0,0
 132376,Samuel Stefanik,2010,FS,24965,True,5,3,0,162,0,0,0,0,0
 1046726,Radek Siler,2026,SLO1,20063,False,6,6,0,460,3,0,14,4,2
-1046726,Radek Siler,2026,SKC,20063,False,1,0,0,0,0,0,0,0,0
+1046726,Radek Siler,2026,SKC,20063,False,1,1,0,29,0,0,0,0,0
 1046726,Radek Siler,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 1046726,Radek Siler,2026,PO1,2425,False,7,0,0,0,0,0,0,0,0
 1046726,Radek Siler,2025,U21Q,8771,True,2,1,0,62,1,0,0,0,0
@@ -9966,6 +9976,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1046726,Radek Siler,2023,CZ3C,18981,False,15,15,0,1247,10,0,0,0,6
 1046726,Radek Siler,2022,TSP,6383,False,1,1,0,11,0,0,0,0,0
 1046726,Radek Siler,2022,CZ3C,18981,False,15,10,0,442,3,2,0,0,2
+1243041,Adrian Petic,2026,SKC,38269,False,2,2,0,76,0,1,0,0,0
+1243041,Adrian Petic,2026,SK2,38269,False,17,17,0,1371,1,2,0,0,3
+1243041,Adrian Petic,2025,SLO1,20063,False,16,1,0,5,0,0,0,0,0
+1243041,Adrian Petic,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
+1243041,Adrian Petic,2025,SKC,20063,False,6,3,0,57,1,0,0,0,0
+1243041,Adrian Petic,2025,SK19,52988,False,26,22,0,1894,4,0,0,0,5
+1243041,Adrian Petic,2025,FS,25960,True,1,1,0,24,0,0,0,0,0
+1243041,Adrian Petic,2024,SK19,52988,False,26,26,0,2230,1,0,0,0,4
+1243041,Adrian Petic,2023,SK19,52988,False,11,3,0,225,0,0,0,0,0
 627030,Roland Galcik,2026,POPO,2425,False,1,0,0,0,0,0,0,0,0
 627030,Roland Galcik,2026,PO1,2425,False,11,9,0,338,1,0,5,2,1
 627030,Roland Galcik,2025,SLO1,20063,False,22,17,0,1191,7,5,48,19,3
@@ -10000,7 +10019,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 627030,Roland Galcik,2018,FS,30430,True,3,2,0,90,0,0,0,0,0
 624300,Daniel Smekal,2026,TSP,1496,False,3,3,0,160,2,0,0,0,1
 624300,Daniel Smekal,2026,TS1,1496,False,14,11,0,475,0,0,18,5,1
-624300,Daniel Smekal,2026,CZ3C,40315,False,1,1,0,90,1,1,0,0,0
+624300,Daniel Smekal,2026,CZ3C,40315,False,5,2,0,180,2,1,0,0,0
 624300,Daniel Smekal,2025,TSP,1496,False,2,2,0,181,1,0,0,0,0
 624300,Daniel Smekal,2025,TS1,1496,False,24,21,0,1078,4,3,33,12,0
 624300,Daniel Smekal,2025,T1EL,1496,False,2,2,0,102,0,0,2,1,0
@@ -10031,17 +10050,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 624300,Daniel Smekal,2018,CZ3M,43084,False,15,0,0,0,0,0,0,0,0
 624300,Daniel Smekal,2018,CZ19,15762,False,13,1,0,90,1,0,0,0,0
 624300,Daniel Smekal,2017,CZ3M,43084,False,15,3,0,106,0,0,0,0,0
-1243041,Adrian Petic,2026,SKC,38269,False,2,1,0,45,0,0,0,0,0
-1243041,Adrian Petic,2026,SK2,38269,False,16,16,0,1308,1,2,0,0,3
-1243041,Adrian Petic,2025,SLO1,20063,False,16,1,0,5,0,0,0,0,0
-1243041,Adrian Petic,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
-1243041,Adrian Petic,2025,SKC,20063,False,6,3,0,57,1,0,0,0,0
-1243041,Adrian Petic,2025,SK19,52988,False,26,22,0,1894,4,0,0,0,5
-1243041,Adrian Petic,2025,FS,25960,True,1,1,0,24,0,0,0,0,0
-1243041,Adrian Petic,2024,SK19,52988,False,26,26,0,2230,1,0,0,0,4
-1243041,Adrian Petic,2023,SK19,52988,False,11,3,0,225,0,0,0,0,0
-465624,Luka Silagadze,2026,SLO1,20063,False,14,10,0,272,0,0,10,2,0
-465624,Luka Silagadze,2026,SKC,20063,False,4,3,0,170,2,0,0,0,1
+465624,Luka Silagadze,2026,SLO1,20063,False,14,11,0,317,0,0,12,4,0
+465624,Luka Silagadze,2026,SKC,20063,False,4,4,0,231,3,0,0,0,1
 465624,Luka Silagadze,2025,SLO1,20063,False,4,3,0,185,1,1,3,2,0
 465624,Luka Silagadze,2025,SLAR,20063,False,10,10,0,489,0,0,7,4,3
 465624,Luka Silagadze,2025,SKC,20063,False,3,3,0,218,0,1,0,0,1
@@ -10077,8 +10087,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 465624,Luka Silagadze,2017,GE1N,1799,False,36,14,0,867,0,0,0,0,1
 465624,Luka Silagadze,2016,GE1N,6365,False,18,1,0,25,0,1,0,0,0
 465624,Luka Silagadze,2016,19YL,55968,False,2,0,0,0,0,0,0,0,0
-944549,Balsa Mrvaljevic,2026,SLO1,20063,False,14,11,0,433,1,1,21,7,2
-944549,Balsa Mrvaljevic,2026,SKC,20063,False,4,1,0,60,1,0,0,0,0
+944549,Balsa Mrvaljevic,2026,SLO1,20063,False,14,14,0,691,4,2,30,13,3
+944549,Balsa Mrvaljevic,2026,SKC,20063,False,4,2,0,121,2,0,0,0,0
 944549,Balsa Mrvaljevic,2025,U21Q,16267,True,10,10,0,594,4,2,0,0,2
 944549,Balsa Mrvaljevic,2025,SLO1,20063,False,4,1,0,10,0,0,1,0,0
 944549,Balsa Mrvaljevic,2025,SLAR,20063,False,10,10,0,368,2,0,14,6,1
@@ -10101,9 +10111,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 944549,Balsa Mrvaljevic,2022,FS,26101,True,8,6,0,317,1,0,0,0,0
 944549,Balsa Mrvaljevic,2021,U17Q,40099,True,3,3,0,143,1,0,0,0,0
 944549,Balsa Mrvaljevic,2021,FS,34071,True,4,4,0,248,1,0,0,0,0
-1044918,Maksym Khyminets,2026,SLO1,20063,False,14,10,0,420,1,0,9,3,2
-1044918,Maksym Khyminets,2026,SKC,20063,False,4,1,0,80,0,0,0,0,0
-1044918,Maksym Khyminets,2026,FS,16274,True,1,1,0,45,0,0,0,0,0
+1044918,Maksym Khyminets,2026,SLO1,20063,False,14,13,0,572,1,0,15,5,2
+1044918,Maksym Khyminets,2026,SKC,20063,False,4,2,0,141,0,1,0,0,0
+1044918,Maksym Khyminets,2026,FS,16274,True,2,1,0,45,0,0,0,0,0
 1044918,Maksym Khyminets,2025,SLO1,20063,False,4,3,0,74,0,0,5,3,0
 1044918,Maksym Khyminets,2025,SLAR,20063,False,10,7,0,287,0,0,5,1,2
 1044918,Maksym Khyminets,2025,SKC,38269,False,2,2,0,135,0,2,0,0,0
@@ -10128,14 +10138,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1233807,Ousman Kujabi,2023,SLO1,20063,False,1,0,0,0,0,0,0,0,0
 1233807,Ousman Kujabi,2023,SK2,38269,False,13,5,0,172,0,0,0,0,0
 1233807,Ousman Kujabi,2023,SK19,62637,False,12,11,0,949,12,0,0,0,0
-1418461,Muhammed Dumbuya,2026,SKC,38269,False,2,1,0,90,0,1,0,0,0
-1418461,Muhammed Dumbuya,2026,SK2,38269,False,16,16,0,1033,4,1,0,0,0
+1418461,Muhammed Dumbuya,2026,SKC,38269,False,2,2,0,121,0,1,0,0,0
+1418461,Muhammed Dumbuya,2026,SK2,38269,False,17,17,0,1067,4,1,0,0,0
 1418461,Muhammed Dumbuya,2025,SLO1,20063,False,21,4,0,73,0,0,1,0,0
 1418461,Muhammed Dumbuya,2025,SKC,20063,False,4,4,0,241,0,1,0,0,0
 1418461,Muhammed Dumbuya,2025,SK2,216,False,13,9,0,432,0,0,0,0,1
 1418461,Muhammed Dumbuya,2025,SK19,52988,False,12,7,0,551,3,0,0,0,0
-1243192,Jakub Rehak,2026,SU20,22987,True,1,1,0,27,0,0,0,0,0
-1243192,Jakub Rehak,2026,SK2,20635,False,16,14,0,643,5,1,0,0,1
+1243192,Jakub Rehak,2026,SU20,22987,True,2,2,0,86,0,0,1,0,0
+1243192,Jakub Rehak,2026,SK2,20635,False,17,14,0,643,5,1,0,0,1
 1243192,Jakub Rehak,2025,U19Q,21102,True,3,2,0,91,0,0,0,0,0
 1243192,Jakub Rehak,2025,SLO1,20063,False,16,3,0,5,0,0,1,0,0
 1243192,Jakub Rehak,2025,SLAR,20063,False,10,0,0,0,0,0,0,0,0
@@ -10148,11 +10158,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1243192,Jakub Rehak,2024,CZ3C,8751,False,1,0,0,0,0,0,0,0,0
 1243192,Jakub Rehak,2024,CZ19,13907,False,30,24,0,1596,10,0,0,0,5
 1243192,Jakub Rehak,2023,CZ19,13907,False,15,6,0,245,0,0,0,0,2
-1084491,Alin Lerint,2026,U19Q,25960,True,1,0,0,0,0,0,0,0,0
+1084491,Alin Lerint,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
 1084491,Alin Lerint,2026,SLO1,7087,False,10,0,0,0,0,0,0,0,0
 1084491,Alin Lerint,2026,SKC,7087,False,3,1,0,31,0,0,0,0,0
 1084491,Alin Lerint,2026,SK2,38269,False,1,0,0,0,0,0,0,0,0
-1084491,Alin Lerint,2026,SK19,19857,False,11,10,0,845,6,0,0,0,3
+1084491,Alin Lerint,2026,SK19,19857,False,11,11,0,916,7,0,0,0,3
 1084491,Alin Lerint,2026,FS,25960,True,2,2,0,96,0,0,0,0,0
 1084491,Alin Lerint,2025,SLO1,20063,False,20,0,0,0,0,0,0,0,0
 1084491,Alin Lerint,2025,SKC,20063,False,4,1,0,90,1,0,0,0,0
@@ -10264,8 +10274,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 366212,Kevin Dąbrowski,2015,PLJZ,15519,False,14,9,0,810,0,0,0,0,2
 366212,Kevin Dąbrowski,2015,FS,16297,True,1,1,0,90,0,0,0,0,0
 366212,Kevin Dąbrowski,2013,PLJF,15519,False,4,0,0,0,0,0,0,0,0
-1173536,Michal Duraj,2026,SLO1,20063,False,12,2,0,32,0,0,1,0,0
-1173536,Michal Duraj,2026,SKC,20063,False,4,2,0,89,0,0,0,0,0
+1173536,Michal Duraj,2026,SLO1,20063,False,13,2,0,32,0,0,1,0,0
+1173536,Michal Duraj,2026,SKC,20063,False,4,3,0,180,0,0,0,0,0
 1173536,Michal Duraj,2026,SK19,52988,False,11,7,0,574,4,0,0,0,1
 1173536,Michal Duraj,2026,FS,30430,True,4,3,0,158,0,0,0,0,0
 1173536,Michal Duraj,2025,U17Q,25792,True,6,6,0,290,0,0,0,0,0
@@ -10366,7 +10376,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 366935,Matus Kira,2013,SKC,13744,False,1,0,0,0,0,0,0,0,0
 366935,Matus Kira,2013,SK2,13744,False,33,3,0,270,0,0,0,0,0
 366935,Matus Kira,2012,SK2,13744,False,32,0,0,0,0,0,0,0,0
-1173521,Filip Kalanin,2026,U17Q,25792,True,1,0,0,0,0,0,0,0,0
+1173521,Filip Kalanin,2026,U17Q,25792,True,3,0,0,0,0,0,0,0,0
 1173521,Filip Kalanin,2026,SLO1,51316,False,14,0,0,0,0,0,0,0,0
 1173521,Filip Kalanin,2026,SKC,51316,False,3,1,0,46,0,0,0,0,0
 1173521,Filip Kalanin,2026,SK19,75185,False,5,4,0,360,0,0,0,0,0
@@ -10382,7 +10392,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1173521,Filip Kalanin,2024,FS,25723,True,2,1,0,90,0,0,0,0,0
 1173521,Filip Kalanin,2023,FS,34689,True,5,2,0,160,0,0,0,0,0
 1148697,Michal Kovacik,2026,SKC,24455,False,3,1,0,90,0,0,0,0,0
-1148697,Michal Kovacik,2026,SK2,24455,False,16,0,0,0,0,0,0,0,0
+1148697,Michal Kovacik,2026,SK2,24455,False,17,0,0,0,0,0,0,0,0
 1148697,Michal Kovacik,2026,FS,30430,True,4,0,0,0,0,0,0,0,0
 1148697,Michal Kovacik,2025,SLO1,51316,False,18,1,0,21,0,0,0,0,0
 1148697,Michal Kovacik,2025,SKC,51316,False,4,0,0,0,0,0,0,0,0
@@ -10446,7 +10456,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 582429,Sebastian Kosa,2017,FS,34689,True,5,4,0,240,0,0,0,0,0
 1173527,Tomas Durko,2026,SLO1,51316,False,14,0,0,0,0,0,0,0,0
 1173527,Tomas Durko,2026,SKC,51316,False,3,0,0,0,0,0,0,0,0
-1173527,Tomas Durko,2026,SK19,75185,False,3,3,0,258,1,0,0,0,1
+1173527,Tomas Durko,2026,SK19,75185,False,6,6,0,528,1,0,0,0,4
 1173527,Tomas Durko,2026,FS,30430,True,4,3,0,180,0,0,0,0,0
 1173527,Tomas Durko,2025,U17Q,25792,True,6,6,0,540,0,0,0,0,1
 1173527,Tomas Durko,2025,SLO1,51316,False,9,5,0,322,0,0,1,0,1
@@ -10486,7 +10496,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 998481,Jakub Jakubko,2021,SK19,75185,False,26,26,0,2340,2,0,0,0,4
 419576,Osman Kakay,2026,SLO1,51316,False,14,14,0,1206,4,2,23,7,3
 419576,Osman Kakay,2026,SKC,51316,False,3,0,0,0,0,0,0,0,0
-419576,Osman Kakay,2026,AFCQ,6187,True,3,3,0,270,0,0,0,0,0
+419576,Osman Kakay,2026,AFCQ,6187,True,4,4,0,276,0,0,0,0,0
 419576,Osman Kakay,2025,SLO1,51316,False,22,19,0,1047,0,1,18,2,3
 419576,Osman Kakay,2025,SLMR,51316,False,10,10,0,608,0,2,5,0,1
 419576,Osman Kakay,2025,SKC,51316,False,8,7,0,454,0,0,0,0,0
@@ -10764,7 +10774,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 720939,Mátyás Kovács,2019,U17Q,25721,True,3,2,0,160,0,1,0,0,0
 720939,Mátyás Kovács,2019,FS,25721,True,2,2,0,98,0,0,0,0,0
 720939,Mátyás Kovács,2018,17WC,25721,True,3,0,0,0,0,0,0,0,0
-938696,Erlantz Palacín,2026,E3G1,16122,False,11,8,0,190,0,0,1,0,1
+938696,Erlantz Palacín,2026,E3G1,16122,False,12,8,0,190,0,0,1,0,1
 938696,Erlantz Palacín,2025,SLO1,51316,False,22,4,0,64,1,0,1,1,0
 938696,Erlantz Palacín,2025,SLMR,51316,False,10,0,0,0,0,0,0,0,0
 938696,Erlantz Palacín,2025,SKC,51316,False,8,3,0,225,1,0,0,0,0
@@ -10932,38 +10942,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 243260,Marek Zsigmund,2016,SLO1,7087,False,7,0,0,0,0,0,0,0,0
 243260,Marek Zsigmund,2016,SKC,46919,False,4,3,0,199,0,0,0,0,0
 243260,Marek Zsigmund,2012,FS,25723,True,1,1,0,40,0,0,0,0,0
-491033,Edin Julardzija,2026,SLO1,51316,False,14,0,0,0,0,0,0,0,0
-491033,Edin Julardzija,2026,SKC,51316,False,3,0,0,0,0,0,0,0,0
-491033,Edin Julardzija,2025,SLO1,51316,False,4,3,0,122,0,0,5,2,0
-491033,Edin Julardzija,2025,SLMR,51316,False,10,6,0,156,0,0,1,1,1
-491033,Edin Julardzija,2025,SKC,51316,False,4,3,0,127,0,0,0,0,0
-491033,Edin Julardzija,2025,ECLQ,282,False,2,0,0,0,0,0,0,0,0
-491033,Edin Julardzija,2025,BOS1,282,False,19,2,0,5,0,0,0,0,0
-491033,Edin Julardzija,2025,BIHP,282,False,1,1,0,83,0,0,0,0,0
-491033,Edin Julardzija,2024,SLP,4059,False,2,1,0,22,0,0,0,0,0
-491033,Edin Julardzija,2024,SL1,4059,False,29,23,0,973,0,1,0,0,3
-491033,Edin Julardzija,2024,ECLQ,282,False,4,4,0,31,0,0,0,0,1
-491033,Edin Julardzija,2024,BOS1,282,False,4,3,0,53,0,0,0,0,0
-491033,Edin Julardzija,2023,SL1,6248,False,3,3,0,270,1,0,0,0,0
-491033,Edin Julardzija,2023,ECLQ,6248,False,2,2,0,165,0,0,0,0,1
-491033,Edin Julardzija,2023,BOS1,282,False,31,27,1,2064,1,3,0,0,3
-491033,Edin Julardzija,2023,BIHP,282,False,4,3,0,270,0,0,0,0,0
-491033,Edin Julardzija,2022,KRC,24575,False,2,2,0,120,0,0,0,0,0
-491033,Edin Julardzija,2022,KR1,24575,False,36,13,3,304,0,0,3,2,1
-491033,Edin Julardzija,2021,KR2,44796,False,14,0,14,0,0,0,0,0,0
-491033,Edin Julardzija,2021,KR1,223,False,19,10,7,238,0,0,2,0,1
-491033,Edin Julardzija,2020,KRC,2362,False,2,1,0,6,0,0,0,0,0
-491033,Edin Julardzija,2020,KR2,44796,False,17,17,0,1384,3,0,0,0,2
-491033,Edin Julardzija,2020,KR1,2362,False,17,8,0,264,0,0,5,2,1
-491033,Edin Julardzija,2020,FS,29380,True,2,2,0,47,0,0,0,0,0
-491033,Edin Julardzija,2019,KR1,419,False,3,2,0,19,0,0,0,0,0
-491033,Edin Julardzija,2019,FS,17379,True,2,2,0,71,0,0,0,0,0
-491033,Edin Julardzija,2019,19YL,50634,False,7,7,0,390,0,1,0,0,2
-491033,Edin Julardzija,2018,KR2,44796,False,1,1,0,15,0,0,0,0,0
-491033,Edin Julardzija,2018,FS,28207,True,4,4,0,176,0,0,0,0,0
-491033,Edin Julardzija,2018,19YL,50634,False,7,6,0,420,0,1,1,0,1
-491033,Edin Julardzija,2017,U17Q,21141,True,3,1,0,31,0,0,0,0,0
-491033,Edin Julardzija,2016,FS,34699,True,1,1,0,53,0,0,0,0,0
 168405,Matej Jakubek,2026,SLO1,51316,False,14,0,12,0,0,0,0,0,0
 168405,Matej Jakubek,2026,SKC,51316,False,3,0,3,0,0,0,0,0,0
 168405,Matej Jakubek,2025,SLO1,51316,False,22,18,1,1447,3,1,34,12,2
@@ -11008,6 +10986,38 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 168405,Matej Jakubek,2011,U17Q,25792,True,3,3,0,109,0,0,0,0,1
 168405,Matej Jakubek,2011,SK2,7392,False,1,1,0,5,0,0,0,0,0
 168405,Matej Jakubek,2010,FS,25723,True,1,1,0,90,0,0,0,0,0
+491033,Edin Julardzija,2026,SLO1,51316,False,14,0,0,0,0,0,0,0,0
+491033,Edin Julardzija,2026,SKC,51316,False,3,0,0,0,0,0,0,0,0
+491033,Edin Julardzija,2025,SLO1,51316,False,4,3,0,122,0,0,5,2,0
+491033,Edin Julardzija,2025,SLMR,51316,False,10,6,0,156,0,0,1,1,1
+491033,Edin Julardzija,2025,SKC,51316,False,4,3,0,127,0,0,0,0,0
+491033,Edin Julardzija,2025,ECLQ,282,False,2,0,0,0,0,0,0,0,0
+491033,Edin Julardzija,2025,BOS1,282,False,19,2,0,5,0,0,0,0,0
+491033,Edin Julardzija,2025,BIHP,282,False,1,1,0,83,0,0,0,0,0
+491033,Edin Julardzija,2024,SLP,4059,False,2,1,0,22,0,0,0,0,0
+491033,Edin Julardzija,2024,SL1,4059,False,29,23,0,973,0,1,0,0,3
+491033,Edin Julardzija,2024,ECLQ,282,False,4,4,0,31,0,0,0,0,1
+491033,Edin Julardzija,2024,BOS1,282,False,4,3,0,53,0,0,0,0,0
+491033,Edin Julardzija,2023,SL1,6248,False,3,3,0,270,1,0,0,0,0
+491033,Edin Julardzija,2023,ECLQ,6248,False,2,2,0,165,0,0,0,0,1
+491033,Edin Julardzija,2023,BOS1,282,False,31,27,1,2064,1,3,0,0,3
+491033,Edin Julardzija,2023,BIHP,282,False,4,3,0,270,0,0,0,0,0
+491033,Edin Julardzija,2022,KRC,24575,False,2,2,0,120,0,0,0,0,0
+491033,Edin Julardzija,2022,KR1,24575,False,36,13,3,304,0,0,3,2,1
+491033,Edin Julardzija,2021,KR2,44796,False,14,0,14,0,0,0,0,0,0
+491033,Edin Julardzija,2021,KR1,223,False,19,10,7,238,0,0,2,0,1
+491033,Edin Julardzija,2020,KRC,2362,False,2,1,0,6,0,0,0,0,0
+491033,Edin Julardzija,2020,KR2,44796,False,17,17,0,1384,3,0,0,0,2
+491033,Edin Julardzija,2020,KR1,2362,False,17,8,0,264,0,0,5,2,1
+491033,Edin Julardzija,2020,FS,29380,True,2,2,0,47,0,0,0,0,0
+491033,Edin Julardzija,2019,KR1,419,False,3,2,0,19,0,0,0,0,0
+491033,Edin Julardzija,2019,FS,17379,True,2,2,0,71,0,0,0,0,0
+491033,Edin Julardzija,2019,19YL,50634,False,7,7,0,390,0,1,0,0,2
+491033,Edin Julardzija,2018,KR2,44796,False,1,1,0,15,0,0,0,0,0
+491033,Edin Julardzija,2018,FS,28207,True,4,4,0,176,0,0,0,0,0
+491033,Edin Julardzija,2018,19YL,50634,False,7,6,0,420,0,1,1,0,1
+491033,Edin Julardzija,2017,U17Q,21141,True,3,1,0,31,0,0,0,0,0
+491033,Edin Julardzija,2016,FS,34699,True,1,1,0,53,0,0,0,0,0
 728617,Juraj Teplan,2026,SLO1,51316,False,14,0,14,0,0,0,0,0,0
 728617,Juraj Teplan,2026,SKC,51316,False,3,0,3,0,0,0,0,0,0
 728617,Juraj Teplan,2025,SLO1,51316,False,22,10,4,641,0,0,1,0,2
@@ -11026,7 +11036,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 728617,Juraj Teplan,2020,CZ19,24950,False,7,7,0,563,0,0,0,0,0
 728617,Juraj Teplan,2019,CZ19,24950,False,17,16,0,1408,4,0,0,0,3
 1029109,Dominik Vesely,2026,SKC,61909,False,3,0,0,0,0,0,0,0,0
-1029109,Dominik Vesely,2026,SK2,61909,False,16,1,0,90,0,0,0,0,0
+1029109,Dominik Vesely,2026,SK2,61909,False,17,1,0,90,0,0,0,0,0
 1029109,Dominik Vesely,2025,SLO1,51316,False,18,1,0,11,0,0,0,0,0
 1029109,Dominik Vesely,2025,SKC,51316,False,4,2,0,180,0,0,0,0,0
 1029109,Dominik Vesely,2025,ECLQ,51316,False,2,0,0,0,0,0,0,0,0
@@ -11041,10 +11051,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1029109,Dominik Vesely,2022,SK2,51316,False,18,0,0,0,0,0,0,0,0
 1029109,Dominik Vesely,2022,SK19,75185,False,26,25,0,2250,0,0,0,0,0
 1029109,Dominik Vesely,2021,SK19,75185,False,12,4,0,52,0,0,0,0,0
-1323489,Viliam Vrabel,2026,U19Q,25960,True,1,1,0,90,0,0,0,0,0
+1323489,Viliam Vrabel,2026,U19Q,25960,True,3,2,0,134,0,0,0,0,0
 1323489,Viliam Vrabel,2026,SLO1,51316,False,14,2,0,11,0,0,0,0,0
 1323489,Viliam Vrabel,2026,SKC,51316,False,3,0,0,0,0,0,0,0,0
-1323489,Viliam Vrabel,2026,SK19,75185,False,3,3,0,270,0,0,0,0,0
+1323489,Viliam Vrabel,2026,SK19,75185,False,6,4,0,337,0,0,0,0,1
 1323489,Viliam Vrabel,2026,FS,25960,True,3,3,0,138,0,0,0,0,1
 1323489,Viliam Vrabel,2025,SLO1,51316,False,5,0,0,0,0,0,0,0,0
 1323489,Viliam Vrabel,2025,SLMR,51316,False,10,1,0,15,0,0,1,0,0
@@ -11073,7 +11083,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1245787,David Halcisak,2025,SK19,75185,False,26,23,0,1987,0,0,0,0,1
 1245787,David Halcisak,2024,SK19,75185,False,26,18,0,1364,1,0,0,0,0
 1245787,David Halcisak,2023,SK19,75185,False,2,1,0,12,0,0,0,0,0
-760492,Vladimir Perisic,2026,UNLC,11953,True,4,0,0,0,0,0,0,0,0
+760492,Vladimir Perisic,2026,UNLC,11953,True,5,0,0,0,0,0,0,0,0
 760492,Vladimir Perisic,2026,TSP,24325,False,2,2,0,75,1,0,0,0,0
 760492,Vladimir Perisic,2026,TS2,6541,False,7,0,0,0,0,0,0,0,0
 760492,Vladimir Perisic,2026,TS1,24325,False,7,4,0,70,0,0,2,0,1
@@ -11113,7 +11123,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 760492,Vladimir Perisic,2019,FS,34415,True,6,4,0,115,0,0,0,0,0
 546879,Roman Cerepkai,2026,SLO1,540,False,11,4,0,109,0,0,2,0,0
 546879,Roman Cerepkai,2026,SLO1,51316,False,3,2,0,134,2,0,3,3,0
-546879,Roman Cerepkai,2026,SKC,540,False,2,1,0,90,1,0,0,0,0
+546879,Roman Cerepkai,2026,SKC,540,False,2,2,0,109,1,0,0,0,0
 546879,Roman Cerepkai,2026,CLQ,540,False,2,2,0,101,1,0,5,3,0
 546879,Roman Cerepkai,2026,CL,540,False,4,1,0,9,0,0,0,0,0
 546879,Roman Cerepkai,2025,SLO1,51316,False,22,20,0,1645,8,5,55,24,1
@@ -11149,7 +11159,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 546879,Roman Cerepkai,2021,SKC,540,False,5,0,0,0,0,0,0,0,0
 546879,Roman Cerepkai,2021,SK2,20635,False,29,16,8,1199,5,3,0,0,0
 546879,Roman Cerepkai,2020,SK2,20635,False,14,7,4,256,2,0,0,0,0
-546879,Roman Cerepkai,2019,FS,30430,True,4,4,0,197,3,1,0,0,0
+546879,Roman Cerepkai,2019,FS,30430,True,6,6,0,348,3,1,0,0,0
 546879,Roman Cerepkai,2019,19YL,76796,False,4,4,0,203,0,1,0,0,0
 546879,Roman Cerepkai,2018,U17Q,25792,True,6,6,0,357,3,0,0,0,0
 546879,Roman Cerepkai,2018,ITJ4,49745,False,12,8,0,546,1,0,0,0,0
@@ -11180,7 +11190,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 726662,Milan Rehus,2021,FS,30430,True,2,2,0,91,0,0,0,0,0
 726662,Milan Rehus,2021,BJ3,21082,False,17,16,0,809,1,6,0,0,3
 726662,Milan Rehus,2021,AA17,25792,True,3,0,0,0,0,0,0,0,0
-587512,Karlo Miljanic,2026,SLO1,20063,False,14,9,0,433,0,3,12,2,1
+587512,Karlo Miljanic,2026,SLO1,20063,False,14,10,0,457,0,3,13,2,1
 587512,Karlo Miljanic,2026,SKC,20063,False,4,2,0,131,0,0,0,0,1
 587512,Karlo Miljanic,2025,SLO1,51316,False,22,15,0,589,1,1,20,4,1
 587512,Karlo Miljanic,2025,SLMR,51316,False,10,7,0,265,1,0,8,4,0
@@ -11269,7 +11279,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 973315,Dominik Tapaj,2021,SK19,19857,False,26,16,0,1440,0,0,0,0,1
 973315,Dominik Tapaj,2021,FS,30430,True,5,1,0,90,0,0,0,0,0
 482833,Adam Goljan,2026,SKC,2781,False,2,1,0,45,1,0,0,0,0
-482833,Adam Goljan,2026,SK2,2781,False,16,14,0,555,3,0,0,0,0
+482833,Adam Goljan,2026,SK2,2781,False,17,14,0,555,3,0,0,0,0
 482833,Adam Goljan,2025,SLO1,51316,False,18,5,0,203,0,0,6,3,0
 482833,Adam Goljan,2025,SKC,51316,False,4,3,0,154,0,3,0,0,0
 482833,Adam Goljan,2025,SK2,2779,False,13,13,0,882,1,2,0,0,0
@@ -11304,7 +11314,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 482833,Adam Goljan,2018,FS,30430,True,1,1,0,66,0,0,1,0,0
 482833,Adam Goljan,2017,FS,25792,True,2,2,0,88,0,0,0,0,0
 482833,Adam Goljan,2016,FS,25723,True,1,1,0,51,0,0,0,0,0
-1033780,David Huska,2026,SLO1,7087,False,14,2,0,180,0,0,0,0,0
+1033780,David Huska,2026,SLO1,7087,False,14,3,0,270,0,0,0,0,0
 1033780,David Huska,2026,SKC,7087,False,3,2,0,180,0,0,0,0,0
 1033780,David Huska,2025,SLO1,7087,False,22,5,0,405,0,0,0,0,0
 1033780,David Huska,2025,SLMR,7087,False,10,10,0,900,0,0,0,0,0
@@ -11372,7 +11382,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 809926,Attila Horvath,2020,SLAR,4529,False,10,0,0,0,0,0,0,0,0
 809926,Attila Horvath,2020,SKC,4529,False,2,0,0,0,0,0,0,0,0
 809926,Attila Horvath,2020,SK2,34775,False,1,1,0,90,0,0,0,0,1
-621945,Alexander Selecky,2026,SLO1,7087,False,14,12,0,1076,2,0,16,6,3
+621945,Alexander Selecky,2026,SLO1,7087,False,14,13,0,1166,2,0,16,6,4
 621945,Alexander Selecky,2026,SKC,7087,False,3,1,0,45,0,1,0,0,0
 621945,Alexander Selecky,2025,SLO1,7087,False,22,20,0,1736,3,4,10,6,3
 621945,Alexander Selecky,2025,SLMR,7087,False,10,8,0,624,1,0,5,1,1
@@ -11400,7 +11410,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 621945,Alexander Selecky,2018,U17Q,25792,True,3,1,0,45,0,0,0,0,0
 621945,Alexander Selecky,2018,FS,25792,True,3,1,0,90,0,0,0,0,0
 621945,Alexander Selecky,2017,FS,25723,True,2,2,0,160,0,0,0,0,0
-293358,Daniel Köstl,2026,SLO1,7087,False,14,12,0,1039,0,1,9,2,3
+293358,Daniel Köstl,2026,SLO1,7087,False,14,13,0,1129,0,1,10,2,3
 293358,Daniel Köstl,2026,SKC,7087,False,3,1,0,56,0,0,0,0,1
 293358,Daniel Köstl,2025,SLO1,7087,False,22,17,0,1502,2,1,13,5,4
 293358,Daniel Köstl,2025,SLMR,7087,False,10,5,0,405,0,1,3,0,0
@@ -11518,7 +11528,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 817174,Dominik Masek,2021,CZ3C,19042,False,14,13,0,1112,1,0,0,0,2
 817174,Dominik Masek,2020,CZ19,15786,False,8,7,0,535,0,0,0,0,2
 817174,Dominik Masek,2019,CZ19,15786,False,18,0,0,0,0,0,0,0,0
-546831,Alexander Mojzis,2026,SLO1,7087,False,14,6,0,493,0,0,4,0,0
+546831,Alexander Mojzis,2026,SLO1,7087,False,14,7,0,583,0,0,4,0,0
 546831,Alexander Mojzis,2026,SKC,7087,False,3,1,0,90,0,0,0,0,0
 546831,Alexander Mojzis,2025,SLO1,7087,False,22,12,6,916,0,0,6,1,3
 546831,Alexander Mojzis,2025,SLMR,7087,False,10,10,0,788,0,0,7,0,1
@@ -11603,7 +11613,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 429717,Adrian Slavik,2017,SWEP,7918,False,1,1,0,52,0,0,0,0,0
 429717,Adrian Slavik,2015,U17Q,25792,True,3,2,0,77,0,0,0,0,1
 652886,Martin Gomola,2026,SKC,4531,False,3,1,0,90,0,0,0,0,0
-652886,Martin Gomola,2026,SK2,4531,False,16,15,0,1332,0,4,0,0,3
+652886,Martin Gomola,2026,SK2,4531,False,17,16,0,1422,0,4,0,0,3
 652886,Martin Gomola,2025,SLO1,7087,False,22,12,0,712,0,0,5,3,1
 652886,Martin Gomola,2025,SLMR,7087,False,10,1,0,14,0,0,0,0,0
 652886,Martin Gomola,2025,SKC,7087,False,4,2,0,79,0,1,0,0,0
@@ -11629,7 +11639,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 652886,Martin Gomola,2018,U17Q,25792,True,3,3,0,78,0,0,0,0,1
 652886,Martin Gomola,2018,FS,25792,True,2,2,0,99,0,0,0,0,0
 973328,Giuliano Antonio Marek,2026,SKC,34775,False,3,2,0,118,0,0,0,0,0
-973328,Giuliano Antonio Marek,2026,SK2,34775,False,16,16,0,1408,3,8,0,0,4
+973328,Giuliano Antonio Marek,2026,SK2,34775,False,17,17,0,1498,3,8,0,0,4
 973328,Giuliano Antonio Marek,2025,SLO1,7087,False,10,2,0,39,0,0,0,0,0
 973328,Giuliano Antonio Marek,2025,SLMR,7087,False,10,0,0,0,0,0,0,0,0
 973328,Giuliano Antonio Marek,2025,SKC,7087,False,1,1,0,90,1,0,0,0,0
@@ -11650,7 +11660,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 973328,Giuliano Antonio Marek,2022,SK19,19857,False,26,26,0,2340,3,0,0,0,3
 973328,Giuliano Antonio Marek,2022,FS,30430,True,4,4,0,184,0,0,0,0,1
 973328,Giuliano Antonio Marek,2021,SK19,19857,False,1,1,0,1,0,0,0,0,0
-1059339,Daniel Prekop,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
+1059339,Daniel Prekop,2026,U19Q,25960,True,4,0,0,0,0,0,0,0,0
 1059339,Daniel Prekop,2026,SLO1,7087,False,14,3,0,78,0,0,0,0,0
 1059339,Daniel Prekop,2026,SKC,7087,False,3,3,0,225,0,0,0,0,1
 1059339,Daniel Prekop,2026,FS,25960,True,3,0,0,0,0,0,0,0,0
@@ -11738,7 +11748,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 671547,Samuel Grygar,2019,FS,25793,True,5,4,0,258,0,0,0,0,1
 671547,Samuel Grygar,2018,FS,34690,True,12,10,0,410,0,0,0,0,0
 1084449,Martin Bacik,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
-1084449,Martin Bacik,2026,SLO1,7087,False,14,11,0,583,1,1,7,2,2
+1084449,Martin Bacik,2026,SLO1,7087,False,14,12,0,673,1,1,8,2,2
 1084449,Martin Bacik,2026,SKC,7087,False,3,3,0,135,0,1,0,0,0
 1084449,Martin Bacik,2025,U19Q,25960,True,6,5,0,232,0,0,0,0,1
 1084449,Martin Bacik,2025,SLO1,7087,False,22,21,0,1036,1,0,15,5,4
@@ -11908,10 +11918,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 721808,Tomas Buchvaldek,2020,CZ3M,8684,False,11,6,0,72,0,1,0,0,1
 721808,Tomas Buchvaldek,2019,CZ3M,8684,False,1,0,0,0,0,0,0,0,0
 721808,Tomas Buchvaldek,2019,CZ19,15759,False,1,0,0,0,0,0,0,0,0
-1384178,Peter Doros,2026,U19Q,25960,True,1,1,0,90,0,0,0,0,0
+1384178,Peter Doros,2026,U19Q,25960,True,3,3,0,225,0,0,0,0,0
 1384178,Peter Doros,2026,SLO1,7087,False,10,0,0,0,0,0,0,0,0
 1384178,Peter Doros,2026,SKC,7087,False,3,0,0,0,0,0,0,0,0
-1384178,Peter Doros,2026,SK19,19857,False,11,0,0,0,0,0,0,0,0
 1384178,Peter Doros,2026,FS,25960,True,3,2,0,115,0,0,0,0,0
 1384178,Peter Doros,2025,SLO1,7087,False,14,0,0,0,0,0,0,0,0
 1384178,Peter Doros,2025,SLMR,7087,False,10,0,0,0,0,0,0,0,0
@@ -11919,7 +11928,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1384178,Peter Doros,2025,SK19,19857,False,26,13,0,1128,1,0,0,0,0
 1384178,Peter Doros,2025,FS,30430,True,2,1,0,90,0,0,0,0,0
 1384178,Peter Doros,2024,SK19,19857,False,2,1,0,90,0,0,0,0,0
-698254,Adam Tucny,2026,SLO1,7087,False,14,13,0,595,2,0,12,6,2
+698254,Adam Tucny,2026,SLO1,7087,False,14,14,0,606,2,0,12,6,2
 698254,Adam Tucny,2026,SKC,7087,False,3,3,0,225,0,1,0,0,0
 698254,Adam Tucny,2025,SLO1,7087,False,22,20,0,1190,2,2,21,5,0
 698254,Adam Tucny,2025,SLMR,7087,False,10,8,0,269,2,0,7,1,1
@@ -11954,9 +11963,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 698254,Adam Tucny,2020,FS,25960,True,1,1,0,90,0,1,0,0,0
 698254,Adam Tucny,2019,SWEP,7918,False,1,0,0,0,0,0,0,0,0
 698254,Adam Tucny,2019,SLMR,7918,False,5,1,0,12,0,0,0,0,0
-698254,Adam Tucny,2019,FS,30430,True,4,4,0,174,0,0,0,0,0
-252712,Martin Chrien,2026,SLO1,20063,False,14,11,0,789,3,0,13,7,1
-252712,Martin Chrien,2026,SKC,20063,False,4,3,0,181,1,1,0,0,0
+698254,Adam Tucny,2019,FS,30430,True,6,6,0,264,0,0,0,0,0
+252712,Martin Chrien,2026,SLO1,20063,False,14,14,0,1022,6,0,22,14,2
+252712,Martin Chrien,2026,SKC,20063,False,4,4,0,225,1,1,0,0,0
 252712,Martin Chrien,2025,SLO1,7087,False,22,11,2,640,1,1,9,4,0
 252712,Martin Chrien,2025,SLMR,7087,False,10,9,0,462,1,0,11,2,0
 252712,Martin Chrien,2025,SKC,7087,False,4,3,0,164,1,2,0,0,0
@@ -12351,7 +12360,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 674498,Michal Trnovsky,2020,SK2,20758,False,1,0,0,0,0,0,0,0,0
 674498,Michal Trnovsky,2018,SKC,20063,False,1,0,0,0,0,0,0,0,0
 1178157,Branko Maruniak,2026,SKC,36093,False,3,1,0,90,0,0,0,0,0
-1178157,Branko Maruniak,2026,SK2,36093,False,16,1,0,90,0,0,0,0,0
+1178157,Branko Maruniak,2026,SK2,36093,False,17,1,0,90,0,0,0,0,0
 1178157,Branko Maruniak,2025,SKC,20758,False,3,0,0,0,0,0,0,0,0
 1178157,Branko Maruniak,2025,SK2,20758,False,30,2,0,180,0,0,0,0,1
 1178157,Branko Maruniak,2023,SK2,18870,False,2,2,0,180,0,0,0,0,0
@@ -12789,8 +12798,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1159608,Davi Alves,2023,SLO1,35488,False,19,9,0,312,1,0,7,5,3
 1159608,Davi Alves,2023,SLMR,35488,False,10,7,0,370,0,0,6,0,0
 1159608,Davi Alves,2023,SKC,35488,False,5,4,0,224,0,0,0,0,0
-1052197,Marin Calusic,2026,U19Q,17379,True,4,0,0,0,0,0,0,0,0
-1052197,Marin Calusic,2026,IT3C,22408,False,13,8,0,164,0,0,0,0,1
+1052197,Marin Calusic,2026,U19Q,17379,True,5,0,0,0,0,0,0,0,0
+1052197,Marin Calusic,2026,IT3C,22408,False,14,8,0,164,0,0,0,0,1
 1052197,Marin Calusic,2026,FS,17379,True,3,0,0,0,0,0,0,0,0
 1052197,Marin Calusic,2026,CILP,22408,False,3,2,0,154,0,0,0,0,0
 1052197,Marin Calusic,2025,U19Q,17379,True,6,0,0,0,0,0,0,0,0
@@ -12947,7 +12956,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1378132,Praisegod Okechukwu,2025,SK2,20758,False,30,21,0,778,5,4,0,0,3
 1378132,Praisegod Okechukwu,2024,SK19,76474,False,12,12,0,800,3,0,0,0,0
 1029111,Oliver Reiter,2026,SKC,34775,False,3,2,0,90,0,0,0,0,0
-1029111,Oliver Reiter,2026,SK2,34775,False,16,13,0,276,0,1,0,0,1
+1029111,Oliver Reiter,2026,SK2,34775,False,17,14,0,321,0,1,0,0,1
 1029111,Oliver Reiter,2025,SKC,20758,False,3,2,0,127,1,0,0,0,0
 1029111,Oliver Reiter,2025,SK2,20758,False,30,23,0,468,1,2,0,0,4
 1029111,Oliver Reiter,2024,SK2,20611,False,12,11,0,854,6,1,0,0,1
@@ -12984,11 +12993,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 607568,Boris Krstic,2018,SB17,68979,False,30,0,0,0,0,0,0,0,0
 607568,Boris Krstic,2018,FS,33183,True,13,11,0,589,6,0,0,0,0
 1300049,Tomas Kajsin,2026,SKC,36093,False,3,1,0,45,0,0,0,0,1
-1300049,Tomas Kajsin,2026,SK2,36093,False,16,12,0,369,1,0,0,0,3
+1300049,Tomas Kajsin,2026,SK2,36093,False,17,12,0,369,1,0,0,0,3
 1300049,Tomas Kajsin,2025,SKC,20758,False,3,1,0,20,0,0,0,0,0
 1300049,Tomas Kajsin,2025,SK2,20758,False,29,6,0,136,0,0,0,0,1
 1300049,Tomas Kajsin,2024,SK19,76474,False,26,25,0,2020,1,0,0,0,5
-232596,Stefan Gerec,2026,SLO1,7087,False,7,3,0,7,0,0,0,0,0
+232596,Stefan Gerec,2026,SLO1,7087,False,8,3,0,7,0,0,0,0,0
 232596,Stefan Gerec,2026,SKC,7087,False,2,1,0,27,1,0,0,0,0
 232596,Stefan Gerec,2025,SKC,20758,False,3,0,0,0,0,0,0,0,0
 232596,Stefan Gerec,2025,SK2,20758,False,30,28,0,1761,8,4,0,0,2
@@ -13039,7 +13048,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 232596,Stefan Gerec,2012,SKC,7087,False,3,0,0,0,0,0,0,0,0
 232596,Stefan Gerec,2012,SK2,4529,False,14,12,0,863,4,0,0,0,1
 232596,Stefan Gerec,2011,SK2,20633,False,33,29,0,1907,4,0,0,0,1
-258267,Adam Jakubech,2026,SLO1,13744,False,14,13,0,1170,0,0,0,0,0
+258267,Adam Jakubech,2026,SLO1,13744,False,14,14,0,1260,0,0,0,0,0
 258267,Adam Jakubech,2026,SKC,13744,False,4,0,0,0,0,0,0,0,0
 258267,Adam Jakubech,2025,SLO1,13744,False,22,1,0,45,0,0,0,0,0
 258267,Adam Jakubech,2025,SLAR,13744,False,10,8,0,720,0,0,0,0,0
@@ -13178,7 +13187,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 735419,Polydefkis Volanakis,2020,SLO1,13744,False,22,0,0,0,0,0,0,0,0
 735419,Polydefkis Volanakis,2020,SLMR,13744,False,10,0,0,0,0,0,0,0,0
 735419,Polydefkis Volanakis,2020,SKC,13744,False,3,1,0,8,0,0,0,0,0
-465622,Tornike Dzotsenidze,2026,SLO1,13744,False,14,10,0,883,0,1,3,0,5
+465622,Tornike Dzotsenidze,2026,SLO1,13744,False,14,11,0,973,0,1,3,0,6
 465622,Tornike Dzotsenidze,2026,SKC,13744,False,4,2,0,180,0,0,0,0,0
 465622,Tornike Dzotsenidze,2025,SLO1,13744,False,22,15,0,1237,1,0,9,2,4
 465622,Tornike Dzotsenidze,2025,SLAR,13744,False,10,9,0,804,0,2,2,0,4
@@ -13266,7 +13275,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 344309,Martin Bednar,2015,SLO1,13744,False,29,2,0,12,0,0,0,0,0
 344309,Martin Bednar,2015,SKC,13744,False,1,0,0,0,0,0,0,0,0
 344309,Martin Bednar,2014,FS,25723,True,4,4,0,223,0,0,0,0,0
-646376,Franck Bahi,2026,SLO1,13744,False,14,6,0,540,0,0,3,1,0
+646376,Franck Bahi,2026,SLO1,13744,False,14,7,0,598,0,0,3,1,0
 646376,Franck Bahi,2026,SKC,13744,False,4,3,0,199,0,1,0,0,1
 646376,Franck Bahi,2025,SLO1,13744,False,22,12,0,643,0,2,6,0,2
 646376,Franck Bahi,2025,SLAR,13744,False,10,2,0,107,0,0,0,0,0
@@ -13344,7 +13353,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 323294,Matej Curma,2013,FS,25723,True,3,0,0,0,0,0,0,0,0
 323294,Matej Curma,2012,FS,25723,True,1,0,0,0,0,0,0,0,0
 323294,Matej Curma,2011,FS,25723,True,4,2,0,93,0,0,0,0,0
-877852,Tae-rang Park,2026,SLO1,13744,False,14,3,0,270,0,0,1,0,0
+877852,Tae-rang Park,2026,SLO1,13744,False,14,4,0,315,0,0,1,0,0
 877852,Tae-rang Park,2026,SKC,13744,False,4,3,0,270,0,0,0,0,1
 877852,Tae-rang Park,2025,SLO1,13744,False,22,11,0,660,0,0,3,0,2
 877852,Tae-rang Park,2025,SLAR,13744,False,10,6,0,533,1,0,3,0,2
@@ -13357,7 +13366,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 877852,Tae-rang Park,2018,K18C,88033,False,2,0,0,0,0,0,0,0,0
 877852,Tae-rang Park,2017,K18C,88033,False,4,0,0,0,0,0,0,0,0
 179762,Lukas Pauschek,2026,U17Q,25792,True,1,0,0,0,0,0,0,0,0
-179762,Lukas Pauschek,2026,SLO1,13744,False,14,13,0,1170,0,0,2,1,1
+179762,Lukas Pauschek,2026,SLO1,13744,False,14,14,0,1260,0,0,2,1,1
 179762,Lukas Pauschek,2026,SKC,13744,False,4,2,0,180,0,0,0,0,0
 179762,Lukas Pauschek,2026,FS,25792,True,2,0,0,0,0,0,0,0,0
 179762,Lukas Pauschek,2025,U17Q,25792,True,6,0,0,0,0,0,0,0,0
@@ -13563,7 +13572,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 891395,Hugo Ahl,2021,SEC,8039,False,1,1,0,90,0,0,0,0,0
 891395,Hugo Ahl,2021,SEC,37609,False,1,0,0,0,0,0,0,0,0
 891395,Hugo Ahl,2021,LTVP,71282,False,2,2,0,180,0,0,0,0,0
-891395,Hugo Ahl,2021,LTU2,71282,False,15,12,0,1069,2,0,0,0,1
+891395,Hugo Ahl,2021,LTU2,71282,False,15,13,0,1141,2,0,0,0,1
 891395,Hugo Ahl,2020,SE3S,37609,False,15,11,0,593,1,0,0,0,2
 262682,Kingsley Madu,2025,SLO1,13744,False,18,5,0,165,0,0,2,0,0
 262682,Kingsley Madu,2025,SKC,13744,False,4,3,0,179,0,0,0,0,0
@@ -13634,7 +13643,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 833187,Samuel Ramos,2021,E4G4,11610,False,25,5,0,206,0,2,0,0,0
 833187,Samuel Ramos,2021,E3PL,11614,False,1,1,0,120,2,0,0,0,0
 833187,Samuel Ramos,2020,ES3D,11610,False,4,2,0,17,0,0,0,0,1
-470597,Ben Cottrell,2026,SLO1,13744,False,14,12,0,1007,0,1,14,4,4
+470597,Ben Cottrell,2026,SLO1,13744,False,14,13,1,1096,0,1,14,4,4
 470597,Ben Cottrell,2026,SKC,13744,False,4,2,0,83,0,0,0,0,1
 470597,Ben Cottrell,2025,SLO1,13744,False,22,19,0,1545,4,3,20,9,5
 470597,Ben Cottrell,2025,SLAR,13744,False,10,7,0,480,3,0,11,3,1
@@ -13670,8 +13679,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 470597,Ben Cottrell,2018,18GB,5679,False,1,1,0,90,0,1,1,1,1
 470597,Ben Cottrell,2017,GB18,5679,False,3,1,0,69,0,0,0,0,0
 470597,Ben Cottrell,2016,FS,30322,True,3,3,0,143,0,0,0,0,0
-493424,Nikita Mihhailov,2026,UNLC,6133,True,4,0,0,0,0,0,0,0,0
-493424,Nikita Mihhailov,2026,SLO1,13744,False,14,6,0,250,0,0,0,0,0
+493424,Nikita Mihhailov,2026,UNLC,6133,True,6,0,0,0,0,0,0,0,0
+493424,Nikita Mihhailov,2026,SLO1,13744,False,14,7,0,282,0,0,1,0,0
 493424,Nikita Mihhailov,2026,SKC,13744,False,4,2,0,135,0,0,0,0,0
 493424,Nikita Mihhailov,2025,SLAR,13744,False,9,3,0,102,0,0,2,0,0
 493424,Nikita Mihhailov,2025,FS,6133,True,4,0,0,0,0,0,0,0,0
@@ -13724,7 +13733,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 493424,Nikita Mihhailov,2017,EE19,25532,False,9,6,0,471,2,0,0,0,0
 493424,Nikita Mihhailov,2016,EST1,7130,False,17,1,0,20,0,0,0,0,0
 493424,Nikita Mihhailov,2016,ES17,47152,False,17,16,0,1280,2,0,0,0,1
-477307,Abdul Zubairu,2026,SLO1,13744,False,14,8,0,509,1,0,4,2,3
+477307,Abdul Zubairu,2026,SLO1,13744,False,14,9,0,554,1,0,4,2,3
 477307,Abdul Zubairu,2026,SKC,13744,False,4,2,0,70,0,1,0,0,0
 477307,Abdul Zubairu,2025,SLO1,13744,False,22,20,0,1537,0,1,10,5,5
 477307,Abdul Zubairu,2025,SLAR,13744,False,10,8,0,332,0,0,4,0,0
@@ -13952,7 +13961,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 40060,Igor Zofcak,2001,U19Q,25960,True,2,2,0,180,0,0,0,0,0
 40060,Igor Zofcak,2001,19EU,25960,True,4,1,0,26,0,0,0,0,0
 344310,Matus Begala,2026,POPU,1750,False,3,3,0,194,0,0,0,0,1
-344310,Matus Begala,2026,PL2L,1750,False,15,13,1,1110,0,0,0,0,4
+344310,Matus Begala,2026,PL2L,1750,False,15,14,1,1200,0,0,0,0,4
 344310,Matus Begala,2025,SLO1,13744,False,14,6,0,74,0,0,0,0,3
 344310,Matus Begala,2025,SLAR,13744,False,10,2,0,115,0,0,1,0,0
 344310,Matus Begala,2025,SKC,13744,False,3,3,0,209,0,0,0,0,0
@@ -14046,7 +14055,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 675708,Gytis Paulauskas,2017,LTVP,56502,False,1,0,0,0,0,0,0,0,0
 675708,Gytis Paulauskas,2016,LTVP,56502,False,2,0,0,0,0,0,0,0,0
 675708,Gytis Paulauskas,2016,LTU2,19953,False,1,1,0,10,0,0,0,0,1
-540331,Patrik Danek,2026,SLO1,13744,False,14,10,3,574,2,2,12,5,1
+540331,Patrik Danek,2026,SLO1,13744,False,14,11,3,619,2,2,12,5,1
 540331,Patrik Danek,2026,SKC,13744,False,4,2,0,84,1,1,0,0,0
 540331,Patrik Danek,2025,SLO1,13744,False,4,4,0,191,1,1,5,2,0
 540331,Patrik Danek,2025,SLAR,13744,False,10,3,0,201,0,1,5,3,0
@@ -14076,7 +14085,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 540331,Patrik Danek,2017,U17Q,25792,True,3,1,0,5,0,0,0,0,0
 540331,Patrik Danek,2017,FS,25792,True,5,1,0,64,0,0,0,0,0
 540331,Patrik Danek,2017,19YL,55950,False,1,0,0,0,0,0,0,0,0
-1355559,Kai Brosnan,2026,SLO1,13744,False,14,10,0,507,1,0,19,7,0
+1355559,Kai Brosnan,2026,SLO1,13744,False,14,11,0,552,1,0,20,7,0
 1355559,Kai Brosnan,2026,SKC,13744,False,4,4,0,258,1,1,0,0,1
 1355559,Kai Brosnan,2025,SLO1,13744,False,22,19,0,1123,2,4,27,14,2
 1355559,Kai Brosnan,2025,SLAR,13744,False,10,10,0,529,0,1,18,10,0
@@ -14114,7 +14123,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 586985,Kido Taylor-Hart,2018,GB18,5679,False,1,1,0,10,1,0,2,1,0
 586985,Kido Taylor-Hart,2018,FS,23260,True,2,1,0,63,0,0,0,0,0
 586985,Kido Taylor-Hart,2017,GB18,5679,False,1,1,0,29,0,0,0,0,0
-1234502,Luka Lemishko,2026,SLO1,13744,False,14,13,0,1032,3,0,17,4,2
+1234502,Luka Lemishko,2026,SLO1,13744,False,14,14,0,1122,3,0,18,5,3
 1234502,Luka Lemishko,2026,SKC,13744,False,4,4,0,216,0,0,0,0,1
 1234502,Luka Lemishko,2026,FS,16274,True,1,1,0,64,0,0,0,0,0
 1234502,Luka Lemishko,2025,SLO1,13744,False,22,4,0,16,0,0,0,0,0
@@ -14155,7 +14164,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 618410,Tomasz Walczak,2021,PL1,2118,False,28,6,0,20,0,0,1,0,0
 618410,Tomasz Walczak,2021,FS,23136,True,3,3,0,93,1,0,0,0,0
 618410,Tomasz Walczak,2020,FS,28647,True,2,2,0,60,1,0,0,0,0
-649678,José López,2026,SLO1,13744,False,14,3,4,188,0,0,2,0,1
+649678,José López,2026,SLO1,13744,False,14,4,4,200,1,0,3,1,1
 649678,José López,2026,SKC,13744,False,4,2,0,40,0,0,0,0,1
 649678,José López,2025,SLO1,13744,False,20,15,1,638,0,1,5,0,2
 649678,José López,2025,SLAR,13744,False,10,2,8,125,1,0,3,2,0
@@ -14193,7 +14202,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 649678,José López,2018,M2L1,25014,False,2,2,0,131,1,0,0,0,0
 649678,José López,2018,M20C,25014,False,17,15,0,1099,5,0,0,0,4
 649678,José López,2018,M20A,25014,False,17,14,0,846,3,0,0,0,0
-1213037,Vasilios Theofanopoulos,2026,SLO1,13744,False,14,6,5,115,0,0,5,1,0
+1213037,Vasilios Theofanopoulos,2026,SLO1,13744,False,14,7,5,160,0,0,7,2,0
 1213037,Vasilios Theofanopoulos,2026,SKC,13744,False,4,4,0,221,3,1,0,0,2
 1213037,Vasilios Theofanopoulos,2025,SLO1,13744,False,21,0,0,0,0,0,0,0,0
 1213037,Vasilios Theofanopoulos,2025,SLAR,13744,False,10,5,0,146,1,0,3,1,0
@@ -14302,7 +14311,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 594657,Niko Vukancic,2019,AJ1,5343,False,26,6,0,317,0,0,0,0,1
 594657,Niko Vukancic,2018,BJ1,21087,False,26,16,0,1029,0,0,0,0,2
 594657,Niko Vukancic,2018,BJ,21087,False,2,2,0,160,0,0,0,0,1
-1461520,Michal Hornacek,2026,SK19,60780,False,11,10,0,855,0,0,0,0,1
+1461520,Michal Hornacek,2026,SK19,60780,False,11,11,0,945,0,0,0,0,1
 1461520,Michal Hornacek,2025,SLO1,35488,False,17,0,0,0,0,0,0,0,0
 1461520,Michal Hornacek,2025,SLMR,35488,False,10,0,0,0,0,0,0,0,0
 1461520,Michal Hornacek,2025,SKC,35488,False,4,0,0,0,0,0,0,0,0
@@ -14412,7 +14421,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 720769,Adam Gazi,2020,FS,30430,True,2,2,0,123,0,0,0,0,0
 720769,Adam Gazi,2020,FS,25960,True,2,2,0,135,0,1,0,0,0
 720769,Adam Gazi,2019,U17Q,25792,True,3,1,0,1,0,0,0,0,0
-388047,Mario Suver,2026,RLSW,71,False,2,1,0,82,0,0,0,0,0
+388047,Mario Suver,2026,RLSW,71,False,3,2,0,172,0,0,0,0,0
 388047,Mario Suver,2025,SLO1,35488,False,22,21,0,1764,0,0,7,2,1
 388047,Mario Suver,2025,SLMR,35488,False,10,8,0,553,1,0,5,3,0
 388047,Mario Suver,2025,SKC,35488,False,4,4,0,275,1,0,0,0,0
@@ -14460,7 +14469,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478431,Martin Cernek,2014,SK2P,35488,False,12,0,0,0,0,0,0,0,0
 478431,Martin Cernek,2014,SK2,35488,False,22,4,0,289,0,0,0,0,0
 465016,Lukas Fabis,2026,SLO1,365,False,7,3,0,177,0,0,4,1,0
-465016,Lukas Fabis,2026,SKC,365,False,1,1,0,69,0,1,0,0,0
+465016,Lukas Fabis,2026,SKC,365,False,2,1,0,69,0,1,0,0,0
 465016,Lukas Fabis,2025,TSP,7975,False,1,1,0,90,0,0,0,0,0
 465016,Lukas Fabis,2025,TS2,7975,False,8,8,0,720,0,2,0,0,2
 465016,Lukas Fabis,2025,SLO1,35488,False,4,3,0,270,0,1,0,0,0
@@ -14541,7 +14550,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 382207,Oliver Podhorin,2011,SK2,13744,False,33,7,0,630,0,0,0,0,1
 512965,Peter Guinari,2026,SLO1,35488,False,14,7,0,528,0,0,5,0,0
 512965,Peter Guinari,2026,SKC,35488,False,4,1,0,45,0,0,0,0,0
-512965,Peter Guinari,2026,AFCQ,12933,True,3,1,0,14,0,0,0,0,0
+512965,Peter Guinari,2026,AFCQ,12933,True,4,2,0,104,0,0,0,0,0
 512965,Peter Guinari,2025,SLO1,35488,False,15,2,0,160,0,0,1,0,0
 512965,Peter Guinari,2025,SLMR,35488,False,10,0,0,0,0,0,0,0,0
 512965,Peter Guinari,2025,SKC,35488,False,3,3,0,270,0,0,0,0,0
@@ -14567,7 +14576,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 512965,Peter Guinari,2019,WMQ2,12933,True,6,6,0,540,0,0,0,0,0
 512965,Peter Guinari,2018,OLB2,73,False,1,0,0,0,0,0,0,0,0
 447560,Michal Ranko,2026,SKC,34775,False,3,2,1,126,1,0,0,0,0
-447560,Michal Ranko,2026,SK2,34775,False,14,5,4,221,0,0,0,0,1
+447560,Michal Ranko,2026,SK2,34775,False,15,5,4,221,0,0,0,0,1
 447560,Michal Ranko,2025,SLO1,35488,False,22,0,22,0,0,0,0,0,0
 447560,Michal Ranko,2025,SLMR,35488,False,10,0,3,0,0,0,0,0,0
 447560,Michal Ranko,2025,SKC,35488,False,4,0,4,0,0,0,0,0,0
@@ -14699,7 +14708,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 570141,Mario Holly,2026,SLO1,35488,False,4,2,0,25,0,0,0,0,1
 570141,Mario Holly,2026,SKC,4531,False,2,1,1,61,0,0,0,0,0
 570141,Mario Holly,2026,SKC,35488,False,1,1,0,90,0,0,0,0,0
-570141,Mario Holly,2026,SK2,4531,False,12,5,7,415,0,0,0,0,1
+570141,Mario Holly,2026,SK2,4531,False,13,5,8,415,0,0,0,0,1
 570141,Mario Holly,2025,SLO1,35488,False,22,11,9,415,1,0,5,1,0
 570141,Mario Holly,2025,SLMR,35488,False,10,4,0,122,0,0,0,0,0
 570141,Mario Holly,2025,SKC,35488,False,4,1,3,90,0,0,0,0,0
@@ -14876,7 +14885,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 344434,Marek Svec,2020,SKC,12005,False,2,0,0,0,0,0,0,0,0
 344434,Marek Svec,2019,FS,25792,True,2,2,0,107,0,0,0,0,0
 594724,Sean Seitz,2026,WFVP,83,False,3,2,0,180,2,0,0,0,0
-594724,Sean Seitz,2026,RLSW,83,False,15,2,9,106,1,0,0,0,1
+594724,Sean Seitz,2026,RLSW,83,False,16,3,9,133,1,0,0,0,2
 594724,Sean Seitz,2025,SLO1,35488,False,18,7,0,212,0,0,2,1,0
 594724,Sean Seitz,2025,SKC,35488,False,4,3,0,119,1,0,0,0,0
 594724,Sean Seitz,2025,RLSW,104,False,14,5,9,250,0,0,0,0,1
@@ -15028,7 +15037,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 179240,Roman Potocny,2010,TSP,715,False,1,0,0,0,0,0,0,0,0
 179240,Roman Potocny,2010,TS1,715,False,30,2,0,42,0,0,0,0,0
 465053,Marek Fabry,2026,SKC,46955,False,1,1,0,75,0,1,0,0,1
-465053,Marek Fabry,2026,SK2,46955,False,16,13,0,787,1,1,0,0,5
+465053,Marek Fabry,2026,SK2,46955,False,17,14,0,832,1,1,0,0,6
 465053,Marek Fabry,2025,SLO1,35488,False,18,8,0,195,1,0,3,2,0
 465053,Marek Fabry,2025,SKC,35488,False,4,1,0,69,0,0,0,0,0
 465053,Marek Fabry,2025,SK2,46955,False,13,13,0,1015,4,1,0,0,4
@@ -15085,7 +15094,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 793693,Filip Dlubac,2020,SKC,20063,False,4,0,0,0,0,0,0,0,0
 793693,Filip Dlubac,2020,SK2,20063,False,28,0,0,0,0,0,0,0,0
 793693,Filip Dlubac,2019,SK2P,20063,False,1,0,0,0,0,0,0,0,0
-749749,Sebastian Jung,2026,SAPO,275,False,2,1,0,90,0,0,0,0,0
+749749,Sebastian Jung,2026,SAPO,275,False,3,1,0,90,0,0,0,0,0
 749749,Sebastian Jung,2026,RLN4,275,False,9,0,0,0,0,0,0,0,0
 749749,Sebastian Jung,2026,L2,65,False,3,0,0,0,0,0,0,0,0
 749749,Sebastian Jung,2026,DFB,65,False,1,0,0,0,0,0,0,0,0
@@ -15763,7 +15772,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1446143,István Vojtko,2025,SLMR,32314,False,10,0,0,0,0,0,0,0,0
 1446143,István Vojtko,2025,SKC,32314,False,3,1,0,90,0,0,0,0,0
 1446143,István Vojtko,2022,TDV,17118,False,5,0,0,0,0,0,0,0,0
-330275,Elvis Mashike,2026,SLO1,13744,False,14,13,0,884,3,1,19,11,3
+330275,Elvis Mashike,2026,SLO1,13744,False,14,14,0,962,3,1,21,11,3
 330275,Elvis Mashike,2026,SKC,13744,False,4,3,0,164,1,0,0,0,0
 330275,Elvis Mashike,2025,SWRP,32314,False,2,0,0,0,0,0,0,0,0
 330275,Elvis Mashike,2025,SLO1,32314,False,22,22,0,1163,4,2,32,13,0
@@ -15905,7 +15914,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 641660,Martin Misovic,2021,19EU,25960,True,4,3,0,113,0,0,0,0,0
 641660,Martin Misovic,2020,SK2,20635,False,3,3,0,225,0,0,0,0,0
 641660,Martin Misovic,2018,FS,34689,True,2,2,0,32,0,0,0,0,0
-1171485,Jakub Palan,2026,SU20,22987,True,1,1,0,21,0,1,0,0,0
+1171485,Jakub Palan,2026,SU20,22987,True,2,2,0,78,0,1,0,0,0
 1171485,Jakub Palan,2026,SLO1,32314,False,14,11,0,305,0,1,5,1,1
 1171485,Jakub Palan,2026,SKC,32314,False,3,3,0,199,1,0,0,0,0
 1171485,Jakub Palan,2025,TS2,6541,False,1,0,0,0,0,0,0,0,0
@@ -15943,7 +15952,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1010818,Sahmkou Camara,2022,FR4C,36693,False,30,28,0,2403,1,0,0,0,5
 1010818,Sahmkou Camara,2021,FR4C,36693,False,30,3,0,270,0,0,0,0,1
 429713,Samuel Kozlovsky,2026,SLO1,540,False,14,8,0,664,1,0,4,1,0
-429713,Samuel Kozlovsky,2026,SKC,540,False,2,1,0,73,0,0,0,0,0
+429713,Samuel Kozlovsky,2026,SKC,540,False,2,2,0,163,0,1,0,0,0
 429713,Samuel Kozlovsky,2026,CLQ,540,False,6,0,0,0,0,0,0,0,0
 429713,Samuel Kozlovsky,2026,CL,540,False,4,1,0,90,0,0,0,0,0
 429713,Samuel Kozlovsky,2025,POPU,88,False,4,2,0,196,0,1,0,0,0
@@ -15990,9 +15999,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 429713,Samuel Kozlovsky,2016,FS,25960,True,11,5,0,405,1,0,0,0,0
 429713,Samuel Kozlovsky,2015,U17Q,25792,True,2,2,0,95,0,0,0,0,0
 429713,Samuel Kozlovsky,2014,FS,25723,True,4,2,0,106,0,0,0,0,0
-419247,Cristian Martínez,2026,SLO1,540,False,14,8,0,349,0,0,1,0,0
+419247,Cristian Martínez,2026,SLO1,540,False,14,9,0,365,0,0,1,0,0
 419247,Cristian Martínez,2026,SKC,540,False,2,1,0,17,0,0,0,0,0
 419247,Cristian Martínez,2026,FS,3577,True,3,2,0,142,0,0,0,0,0
+419247,Cristian Martínez,2026,CNNF,3577,True,2,2,0,166,0,1,0,0,1
 419247,Cristian Martínez,2026,CLQ,540,False,6,5,0,362,1,1,2,1,1
 419247,Cristian Martínez,2026,CL,540,False,4,4,0,251,0,0,4,0,2
 419247,Cristian Martínez,2025,ISRA,6028,False,7,6,0,471,0,1,3,0,0
@@ -16070,7 +16080,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 419247,Cristian Martínez,2014,PN1A,18952,False,18,15,1,1147,1,2,0,0,6
 419247,Cristian Martínez,2013,PN1C,18952,False,1,1,0,15,0,0,0,0,0
 419247,Cristian Martínez,2012,PN1A,18952,False,9,4,0,175,0,0,0,0,1
-707568,Suleiman Camara,2026,SLO1,540,False,12,9,0,500,0,1,14,4,1
+707568,Suleiman Camara,2026,SLO1,540,False,12,10,0,524,0,1,14,4,1
 707568,Suleiman Camara,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
 707568,Suleiman Camara,2026,CLQ,540,False,4,4,0,280,2,1,2,0,1
 707568,Suleiman Camara,2026,CL,540,False,4,4,0,276,1,0,5,2,1
@@ -16111,7 +16121,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1027157,Zoran Ivanics,2022,SK19,19858,False,26,25,0,1837,8,0,0,0,2
 1027157,Zoran Ivanics,2021,SK19,19858,False,1,1,0,1,0,0,0,0,0
 1465427,Manasse Kianga,2026,SLO1,540,False,14,5,0,270,2,2,9,3,0
-1465427,Manasse Kianga,2026,SKC,540,False,2,0,0,0,0,0,0,0,0
+1465427,Manasse Kianga,2026,SKC,540,False,2,1,0,81,2,0,0,0,0
 1465427,Manasse Kianga,2026,SK2,20635,False,6,6,0,375,1,0,0,0,0
 1465427,Manasse Kianga,2026,CLQ,540,False,6,3,0,76,1,0,0,0,0
 1465427,Manasse Kianga,2026,CL,540,False,4,0,4,0,0,0,0,0,0
@@ -16146,20 +16156,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 469685,Zan Trontelj,2016,U17Q,22906,True,5,4,0,320,0,0,0,0,1
 469685,Zan Trontelj,2016,FS,22906,True,2,2,0,56,0,0,0,0,0
 469685,Zan Trontelj,2015,FS,25728,True,2,2,0,44,0,0,0,0,1
-692822,Phillip Zivanovic,2026,SLO1,4529,False,14,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2026,ECLQ,4529,False,4,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2025,ofb,19578,False,2,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2025,SK2,34775,False,13,12,0,1080,0,0,0,0,2
-692822,Phillip Zivanovic,2025,ATRO,19578,False,16,10,0,855,0,0,0,0,1
-692822,Phillip Zivanovic,2024,A4N,4375,False,30,21,0,1890,0,0,0,0,0
-692822,Phillip Zivanovic,2024,A2,503,False,18,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2022,JGD2,9699,False,24,8,0,720,0,0,0,0,0
-692822,Phillip Zivanovic,2021,JGD3,42816,False,8,5,0,450,0,0,0,0,0
-692822,Phillip Zivanovic,2021,JGD2,9699,False,24,10,0,888,0,0,0,0,1
-692822,Phillip Zivanovic,2020,JGD3,42816,False,22,5,0,405,0,0,0,0,0
-692822,Phillip Zivanovic,2020,JGD2,9699,False,1,0,0,0,0,0,0,0,0
-692822,Phillip Zivanovic,2019,JGD3,42816,False,8,0,0,0,0,0,0,0,0
 230985,Simen Juklerød,2026,SLO1,4529,False,14,8,0,459,0,0,1,0,2
 230985,Simen Juklerød,2026,SKC,4529,False,2,1,0,63,0,0,0,0,0
 230985,Simen Juklerød,2026,ECLQ,4529,False,4,4,0,348,0,2,2,0,1
@@ -16208,6 +16204,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 230985,Simen Juklerød,2013,NO2,2555,False,30,25,0,1561,0,2,0,0,1
 230985,Simen Juklerød,2012,NOPO,2555,False,2,0,0,0,0,0,0,0,0
 230985,Simen Juklerød,2011,NO2,2555,False,19,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2026,SLO1,4529,False,14,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2026,ECLQ,4529,False,4,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2025,ofb,19578,False,2,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2025,SK2,34775,False,13,12,0,1080,0,0,0,0,2
+692822,Phillip Zivanovic,2025,ATRO,19578,False,16,10,0,855,0,0,0,0,1
+692822,Phillip Zivanovic,2024,A4N,4375,False,30,21,0,1890,0,0,0,0,0
+692822,Phillip Zivanovic,2024,A2,503,False,18,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2022,JGD2,9699,False,24,8,0,720,0,0,0,0,0
+692822,Phillip Zivanovic,2021,JGD3,42816,False,8,5,0,450,0,0,0,0,0
+692822,Phillip Zivanovic,2021,JGD2,9699,False,24,10,0,888,0,0,0,0,1
+692822,Phillip Zivanovic,2020,JGD3,42816,False,22,5,0,405,0,0,0,0,0
+692822,Phillip Zivanovic,2020,JGD2,9699,False,1,0,0,0,0,0,0,0,0
+692822,Phillip Zivanovic,2019,JGD3,42816,False,8,0,0,0,0,0,0,0,0
 1372502,Joseph Pacheco,2026,SLO1,4529,False,14,0,0,0,0,0,0,0,0
 1372502,Joseph Pacheco,2026,SKC,4529,False,2,0,0,0,0,0,0,0,0
 1372502,Joseph Pacheco,2026,ECLQ,4529,False,4,0,0,0,0,0,0,0,0
@@ -16343,7 +16353,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1300092,Tomas Sallai,2024,SK19,24529,False,26,20,0,1370,0,0,0,0,2
 1266959,Tamas Tarcsi,2026,SLO1,1443,False,14,0,0,0,0,0,0,0,0
 1266959,Tamas Tarcsi,2026,SKC,1443,False,3,0,0,0,0,0,0,0,0
-1266959,Tamas Tarcsi,2026,SK2,20634,False,16,14,0,1260,0,0,0,0,0
+1266959,Tamas Tarcsi,2026,SK2,20634,False,17,14,0,1260,0,0,0,0,0
 1266959,Tamas Tarcsi,2026,ELQ,1443,False,2,0,0,0,0,0,0,0,0
 1266959,Tamas Tarcsi,2026,ECLQ,1443,False,2,0,0,0,0,0,0,0,0
 1266959,Tamas Tarcsi,2025,SLAR,1443,False,1,0,0,0,0,0,0,0,0
@@ -16366,7 +16376,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 989628,Johan Albin,2021,SEC,39591,False,2,1,0,3,0,0,0,0,0
 1377458,Marcus Traore,2026,SLO1,1443,False,11,4,0,92,0,0,1,1,0
 1377458,Marcus Traore,2026,SKC,1443,False,3,1,0,90,0,0,0,0,0
-1377458,Marcus Traore,2026,SK2,20634,False,16,8,0,694,2,0,0,0,1
+1377458,Marcus Traore,2026,SK2,20634,False,17,8,0,694,2,0,0,0,1
 1377458,Marcus Traore,2025,SLO1,1443,False,15,0,0,0,0,0,0,0,0
 1377458,Marcus Traore,2025,SKC,1443,False,4,2,0,72,1,2,0,0,0
 1377458,Marcus Traore,2025,SK2,2779,False,13,9,0,650,0,0,0,0,4
@@ -16390,7 +16400,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1073397,Kenan Bilalovic,2024,SEC,5965,False,1,0,0,0,0,0,0,0,0
 1073397,Kenan Bilalovic,2024,SEC,3622,False,3,3,0,178,0,0,0,0,0
 1073397,Kenan Bilalovic,2024,SE1,3622,False,19,18,0,582,1,0,16,6,0
-1073397,Kenan Bilalovic,2024,FS,8595,True,1,1,0,15,0,0,0,0,0
+1073397,Kenan Bilalovic,2024,FS,8595,True,2,2,0,45,0,0,0,0,0
 1073397,Kenan Bilalovic,2023,SEC,3622,False,4,4,0,177,1,0,0,0,0
 1073397,Kenan Bilalovic,2023,SE2,5965,False,16,8,0,371,0,0,0,0,1
 1073397,Kenan Bilalovic,2023,SE1,3622,False,14,4,0,79,0,0,0,0,0
@@ -16599,7 +16609,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1037335,Mikkel Boye,2022,DK2R,5818,False,2,2,0,5,0,0,0,0,0
 1037335,Mikkel Boye,2021,DKRQ,62695,False,1,1,0,30,2,0,0,0,0
 488869,Martin Janacek,2026,SLO1,365,False,14,0,0,0,0,0,0,0,0
-488869,Martin Janacek,2026,SKC,365,False,3,2,0,180,0,0,0,0,0
+488869,Martin Janacek,2026,SKC,365,False,4,2,0,180,0,0,0,0,0
 488869,Martin Janacek,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 488869,Martin Janacek,2025,ALP3,98106,False,3,2,0,180,0,0,0,0,0
 488869,Martin Janacek,2025,ALBP,98106,False,5,2,2,210,0,0,0,0,1
@@ -16641,12 +16651,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1270112,Filip Slovak,2023,SK19,16181,False,2,2,0,30,0,0,0,0,0
 1270112,Filip Slovak,2023,FS,30430,True,3,3,0,112,2,0,0,0,0
 1302400,Oskar Casagrande,2026,SLO1,365,False,14,0,0,0,0,0,0,0,0
-1302400,Oskar Casagrande,2026,SKC,365,False,3,0,0,0,0,0,0,0,0
+1302400,Oskar Casagrande,2026,SKC,365,False,4,0,0,0,0,0,0,0,0
 1302400,Oskar Casagrande,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 1302400,Oskar Casagrande,2025,SL2,23246,False,30,16,0,1440,0,0,0,0,1
 1302400,Oskar Casagrande,2024,SL19,65227,False,29,5,0,405,0,0,0,0,0
 396108,Juanmi Carrión,2026,SLO1,365,False,14,12,0,949,1,0,8,3,1
-396108,Juanmi Carrión,2026,SKC,365,False,3,3,0,156,0,1,0,0,0
+396108,Juanmi Carrión,2026,SKC,365,False,4,3,0,156,0,1,0,0,0
 396108,Juanmi Carrión,2026,ECLQ,365,False,2,2,0,14,0,0,0,0,0
 396108,Juanmi Carrión,2025,BULP,61955,False,3,3,0,102,0,1,0,0,0
 396108,Juanmi Carrión,2025,BU1,61955,False,36,14,1,664,0,1,0,0,1
@@ -16668,7 +16678,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 396108,Juanmi Carrión,2016,ES2,8519,False,1,0,0,0,0,0,0,0,0
 396108,Juanmi Carrión,2015,19YL,50474,False,7,7,0,630,0,1,0,0,2
 856069,Melos Bajrami,2026,SLO1,365,False,14,1,0,90,0,0,0,0,0
-856069,Melos Bajrami,2026,SKC,365,False,3,2,0,176,0,0,0,0,0
+856069,Melos Bajrami,2026,SKC,365,False,4,2,0,176,0,0,0,0,0
 856069,Melos Bajrami,2026,ECLQ,365,False,2,2,0,130,0,0,0,0,1
 856069,Melos Bajrami,2025,ECLQ,8671,False,4,4,0,311,1,0,0,0,3
 856069,Melos Bajrami,2025,ALP3,8671,False,3,2,1,143,0,0,0,0,1
@@ -16696,7 +16706,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 856069,Melos Bajrami,2020,ALBP,12469,False,3,3,0,195,0,0,0,0,0
 856069,Melos Bajrami,2020,ALB1,12469,False,23,17,1,1280,0,0,0,0,4
 854085,Ivan Mensah,2026,SLO1,365,False,14,2,0,121,0,0,1,0,0
-854085,Ivan Mensah,2026,SKC,365,False,3,3,0,236,0,0,0,0,2
+854085,Ivan Mensah,2026,SKC,365,False,4,3,0,236,0,0,0,0,2
 854085,Ivan Mensah,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 854085,Ivan Mensah,2025,UCOL,197,False,8,0,0,0,0,0,0,0,0
 854085,Ivan Mensah,2025,TSP,197,False,3,0,0,0,0,0,0,0,0
@@ -16716,7 +16726,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 854085,Ivan Mensah,2020,GHPL,32840,False,14,3,0,270,0,0,0,0,0
 854085,Ivan Mensah,2020,20AC,22978,True,6,1,0,25,0,0,0,0,0
 1190749,Tomas Jablonicky,2026,SLO1,365,False,14,0,0,0,0,0,0,0,0
-1190749,Tomas Jablonicky,2026,SKC,365,False,3,0,0,0,0,0,0,0,0
+1190749,Tomas Jablonicky,2026,SKC,365,False,4,0,0,0,0,0,0,0,0
 1190749,Tomas Jablonicky,2026,SK19,18746,False,11,8,0,720,0,0,0,0,1
 1190749,Tomas Jablonicky,2026,ECLQ,365,False,2,0,0,0,0,0,0,0,0
 1190749,Tomas Jablonicky,2025,SK19,18746,False,26,23,0,2032,0,0,0,0,3
@@ -16725,7 +16735,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1190749,Tomas Jablonicky,2023,CZ3M,46942,False,8,0,0,0,0,0,0,0,0
 1080002,Kristian Pavol Strucka,2026,SLO1,365,False,6,1,0,45,0,0,0,0,0
 1080002,Kristian Pavol Strucka,2026,SKC,365,False,2,1,0,61,0,0,0,0,0
-1080002,Kristian Pavol Strucka,2026,SK2,46955,False,10,7,0,630,0,1,0,0,2
+1080002,Kristian Pavol Strucka,2026,SK2,46955,False,11,7,0,630,0,1,0,0,2
 1080002,Kristian Pavol Strucka,2026,ECLQ,365,False,2,1,0,14,0,0,0,0,1
 1080002,Kristian Pavol Strucka,2025,U19Q,25960,True,6,5,0,434,0,0,0,0,2
 1080002,Kristian Pavol Strucka,2025,SK2,46955,False,13,6,0,237,0,0,0,0,0
@@ -16749,10 +16759,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1080002,Kristian Pavol Strucka,2022,FS,25792,True,3,2,0,95,0,0,0,0,0
 1080002,Kristian Pavol Strucka,2022,FS,25723,True,5,5,0,279,0,0,0,0,0
 1080002,Kristian Pavol Strucka,2021,FS,34689,True,2,2,0,90,0,0,0,0,0
-1323491,Jakov Terenkov,2026,U19Q,25960,True,1,0,0,0,0,0,0,0,0
+1323491,Jakov Terenkov,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
 1323491,Jakov Terenkov,2026,SLO1,365,False,8,0,0,0,0,0,0,0,0
-1323491,Jakov Terenkov,2026,SKC,365,False,1,0,0,0,0,0,0,0,0
-1323491,Jakov Terenkov,2026,SK19,18746,False,11,9,0,728,1,0,0,0,1
+1323491,Jakov Terenkov,2026,SKC,365,False,2,0,0,0,0,0,0,0,0
+1323491,Jakov Terenkov,2026,SK19,18746,False,11,9,0,714,1,0,0,0,1
 1323491,Jakov Terenkov,2026,FS,25960,True,3,3,0,76,0,0,0,0,0
 1323491,Jakov Terenkov,2025,SK19,18746,False,26,6,0,326,1,0,0,0,1
 1323491,Jakov Terenkov,2024,U17Q,25792,True,3,0,0,0,0,0,0,0,0
@@ -16760,17 +16770,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1323491,Jakov Terenkov,2024,FS,25792,True,5,5,0,268,1,0,0,0,0
 1323491,Jakov Terenkov,2023,FS,25792,True,2,2,0,62,0,0,0,0,1
 1360086,Patrik Tejzr,2026,SLO1,365,False,2,0,0,0,0,0,0,0,0
-1360086,Patrik Tejzr,2026,SK19,18746,False,11,11,0,948,3,0,0,0,2
+1360086,Patrik Tejzr,2026,SKC,365,False,1,0,0,0,0,0,0,0,0
+1360086,Patrik Tejzr,2026,SK19,18746,False,11,11,0,948,4,0,0,0,2
 1360086,Patrik Tejzr,2025,SK19,18746,False,26,25,0,1968,4,0,0,0,4
 1360086,Patrik Tejzr,2025,FS,30430,True,5,5,0,191,0,0,0,0,0
 1360086,Patrik Tejzr,2024,SK19,18746,False,13,4,0,269,0,0,0,0,0
 1447017,Dennis Konney,2026,SLO1,365,False,6,1,0,12,0,0,0,0,0
-1447017,Dennis Konney,2026,SKC,365,False,1,1,0,56,0,0,0,0,0
+1447017,Dennis Konney,2026,SKC,365,False,2,1,0,56,0,0,0,0,0
 1447017,Dennis Konney,2026,PO2,10331,False,5,0,0,0,0,0,0,0,0
 1447017,Dennis Konney,2025,PO2,10331,False,20,0,0,0,0,0,0,0,0
-1077726,David Poltak,2026,U19Q,25960,True,1,0,0,0,0,0,0,0,0
+1077726,David Poltak,2026,U19Q,25960,True,3,0,0,0,0,0,0,0,0
 1077726,David Poltak,2026,SLO1,365,False,14,7,0,311,2,1,8,5,0
-1077726,David Poltak,2026,SKC,365,False,3,2,0,74,0,1,0,0,0
+1077726,David Poltak,2026,SKC,365,False,4,2,0,74,0,1,0,0,0
 1077726,David Poltak,2026,FS,25960,True,3,3,0,187,1,0,0,0,1
 1077726,David Poltak,2026,ECLQ,365,False,2,1,0,40,0,0,0,0,0
 1077726,David Poltak,2025,SKC,46955,False,3,2,0,81,0,0,0,0,1
@@ -16784,7 +16795,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1077726,David Poltak,2023,FS,25723,True,7,7,0,252,0,0,0,0,0
 1077726,David Poltak,2022,FS,34689,True,6,6,0,205,1,0,0,0,0
 1085215,David Bukovsky,2026,SLO1,365,False,14,7,0,180,1,0,6,2,2
-1085215,David Bukovsky,2026,SKC,365,False,3,3,0,241,3,1,0,0,0
+1085215,David Bukovsky,2026,SKC,365,False,4,3,0,241,3,1,0,0,0
 1085215,David Bukovsky,2026,ECLQ,365,False,2,2,0,60,0,0,0,0,1
 1085215,David Bukovsky,2025,U19Q,25960,True,6,5,0,185,0,0,0,0,2
 1085215,David Bukovsky,2025,SKC,46955,False,3,2,0,135,0,0,0,0,0
@@ -16807,7 +16818,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1085215,David Bukovsky,2022,FS,25792,True,3,0,0,0,0,0,0,0,0
 1085215,David Bukovsky,2022,FS,25723,True,7,5,0,238,0,0,0,0,0
 587666,Tijmen Wildeboer,2026,SLO1,365,False,14,9,0,280,1,0,13,4,0
-587666,Tijmen Wildeboer,2026,SKC,365,False,3,1,0,45,0,0,0,0,0
+587666,Tijmen Wildeboer,2026,SKC,365,False,4,1,0,45,0,0,0,0,0
 587666,Tijmen Wildeboer,2026,ECLQ,365,False,2,2,0,139,0,0,0,0,0
 587666,Tijmen Wildeboer,2025,NLP,1228,False,2,2,0,47,0,0,1,0,1
 587666,Tijmen Wildeboer,2025,NL2,1228,False,38,34,0,2315,8,0,74,32,0
@@ -16833,7 +16844,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 587666,Tijmen Wildeboer,2018,NLJB,7460,False,2,2,0,46,0,0,0,0,0
 587666,Tijmen Wildeboer,2018,NLAJ,7460,False,14,6,0,151,0,0,0,0,0
 1126893,Lorent Mehmeti,2026,SLO1,365,False,14,13,0,363,1,1,13,3,1
-1126893,Lorent Mehmeti,2026,SKC,365,False,3,3,0,191,1,0,0,0,0
+1126893,Lorent Mehmeti,2026,SKC,365,False,4,3,0,191,1,0,0,0,0
 1126893,Lorent Mehmeti,2026,ECLQ,365,False,2,1,0,1,0,0,0,0,0
 1126893,Lorent Mehmeti,2025,SE2,50885,False,14,12,0,687,3,1,0,0,2
 1126893,Lorent Mehmeti,2024,SEC,13653,False,4,1,0,15,0,0,0,0,0
@@ -16970,6 +16981,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 314280,Taylor Moore,2013,17EU,23260,True,5,4,0,252,0,1,0,0,0
 986312,Bojan Damjanović,2026,SLO1,51316,False,14,9,1,722,0,1,3,1,3
 986312,Bojan Damjanović,2026,SKC,51316,False,3,1,0,90,0,0,0,0,0
+986312,Bojan Damjanović,2026,FS,16267,True,1,1,0,90,0,0,0,0,0
 986312,Bojan Damjanović,2025,U21Q,16267,True,2,1,0,90,0,0,0,0,0
 986312,Bojan Damjanović,2025,MNEC,3070,False,2,2,0,135,1,0,0,0,0
 986312,Bojan Damjanović,2025,MNE1,3070,False,36,18,0,930,3,1,0,0,1
@@ -16999,6 +17011,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1300019,Jakub Marko,2025,19YL,69404,False,5,4,0,66,0,0,0,0,1
 1300019,Jakub Marko,2024,SK2,20634,False,5,2,0,25,0,0,0,0,0
 1300019,Jakub Marko,2024,SK19,18751,False,26,21,0,1070,2,0,0,0,1
+878340,Aleksa Maras,2026,UNLC,11953,True,2,1,0,4,1,0,2,1,1
 878340,Aleksa Maras,2026,SLO1,51316,False,14,14,0,1019,9,3,48,21,1
 878340,Aleksa Maras,2026,SKC,51316,False,3,1,0,68,1,0,0,0,0
 878340,Aleksa Maras,2025,GR1,3385,False,14,12,1,542,3,0,15,4,3
@@ -17031,11 +17044,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1126314,Taiga Seguchi,2026,SKC,51316,False,1,1,0,11,0,0,0,0,0
 1126314,Taiga Seguchi,2026,JAP1,3958,False,7,0,0,0,0,0,0,0,0
 1126314,Taiga Seguchi,2026,FS,40436,True,3,0,0,0,0,0,0,0,0
+1126314,Taiga Seguchi,2026,FS,28425,True,5,1,1,90,0,0,0,0,0
 1126314,Taiga Seguchi,2026,AU2C,22360,True,3,3,0,207,0,0,0,0,0
 1126314,Taiga Seguchi,2025,JEMP,3958,False,1,0,0,0,0,0,0,0,0
 1126314,Taiga Seguchi,2025,J1YV,3958,False,20,0,0,0,0,0,0,0,0
 1126314,Taiga Seguchi,2025,FS,40436,True,15,0,0,0,0,0,0,0,0
-1126314,Taiga Seguchi,2025,FS,28425,True,3,1,0,73,0,1,0,0,0
+1126314,Taiga Seguchi,2025,FS,28425,True,4,1,0,73,0,1,0,0,0
 1126314,Taiga Seguchi,2025,FS,25507,True,5,2,0,134,0,0,0,0,0
 1126314,Taiga Seguchi,2025,ACLE,3958,False,7,0,0,0,0,0,0,0,0
 1126314,Taiga Seguchi,2024,J18W,24135,False,20,17,0,1458,6,11,0,0,2
@@ -17084,7 +17098,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1146640,Tomas Husarcik,2026,SLO1,51316,False,5,1,0,1,0,0,0,0,0
 1146640,Tomas Husarcik,2026,SKC,51316,False,1,0,0,0,0,0,0,0,0
 1146640,Tomas Husarcik,2026,SKC,36093,False,2,1,0,45,1,0,0,0,0
-1146640,Tomas Husarcik,2026,SK2,36093,False,10,10,0,449,0,0,0,0,0
+1146640,Tomas Husarcik,2026,SK2,36093,False,11,11,0,453,0,0,0,0,0
 1146640,Tomas Husarcik,2024,SK19,19857,False,26,24,0,1785,12,0,0,0,0
 1146640,Tomas Husarcik,2024,FS,25960,True,2,2,0,92,0,0,0,0,0
 1146640,Tomas Husarcik,2023,SLO1,7087,False,18,0,0,0,0,0,0,0,0
@@ -17094,10 +17108,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1146640,Tomas Husarcik,2023,FS,30430,True,7,7,0,249,2,0,0,0,0
 1146640,Tomas Husarcik,2022,SK19,19858,False,18,2,0,14,0,0,0,0,0
 1146640,Tomas Husarcik,2022,FS,30430,True,1,1,0,10,0,0,0,0,0
-1077722,Mario Rabatin,2026,U19Q,25960,True,1,1,0,72,0,0,0,0,0
+1077722,Mario Rabatin,2026,U19Q,25960,True,3,3,0,124,0,0,0,0,0
 1077722,Mario Rabatin,2026,SLO1,51316,False,5,3,0,39,0,0,0,0,0
 1077722,Mario Rabatin,2026,SKC,51316,False,1,1,0,22,0,0,0,0,0
-1077722,Mario Rabatin,2026,SK19,75185,False,11,8,0,720,3,0,0,0,1
+1077722,Mario Rabatin,2026,SK19,75185,False,11,9,0,810,3,0,0,0,1
 1077722,Mario Rabatin,2026,FS,25960,True,3,3,0,206,0,0,0,0,0
 1077722,Mario Rabatin,2025,SLO1,51316,False,17,0,0,0,0,0,0,0,0
 1077722,Mario Rabatin,2025,SLMR,51316,False,10,0,0,0,0,0,0,0,0
@@ -17156,7 +17170,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 489854,Ivan Krajcirik,2016,U17Q,25792,True,3,0,0,0,0,0,0,0,0
 489854,Ivan Krajcirik,2016,SLO1,7087,False,14,0,0,0,0,0,0,0,0
 489854,Ivan Krajcirik,2016,FS,25792,True,7,4,0,280,0,0,0,0,0
-398001,Dominik Kostka,2026,SLO1,7087,False,14,13,0,1145,1,2,21,6,3
+398001,Dominik Kostka,2026,SLO1,7087,False,14,14,0,1235,1,2,23,7,3
 398001,Dominik Kostka,2026,SKC,7087,False,3,3,0,180,0,2,0,0,1
 398001,Dominik Kostka,2025,TSP,5546,False,5,5,0,332,1,0,0,0,0
 398001,Dominik Kostka,2025,TS1,5546,False,30,26,1,2126,3,2,22,12,4
@@ -17198,7 +17212,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1255377,Boris Halada,2023,SK19,18746,False,1,0,0,0,0,0,0,0,0
 619300,Dario Grgic,2026,TSP,2311,False,1,0,0,0,0,0,0,0,0
 619300,Dario Grgic,2026,TS1,2311,False,7,0,0,0,0,0,0,0,0
-619300,Dario Grgic,2026,SLO1,7087,False,6,3,0,141,0,0,5,1,1
+619300,Dario Grgic,2026,SLO1,7087,False,6,4,0,196,0,0,5,1,1
 619300,Dario Grgic,2026,SKC,7087,False,1,1,0,56,0,0,0,0,0
 619300,Dario Grgic,2025,UCOL,2311,False,4,0,4,0,0,0,0,0,0
 619300,Dario Grgic,2025,TS1,2311,False,11,3,0,32,0,0,3,0,0
@@ -17232,7 +17246,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 619300,Dario Grgic,2018,SB17,56959,False,30,0,0,0,0,0,0,0,0
 619300,Dario Grgic,2018,FS,33183,True,13,11,0,667,2,0,0,0,1
 483954,Samuel Lavrincik,2026,TS1,1322,False,2,0,0,0,0,0,0,0,0
-483954,Samuel Lavrincik,2026,SLO1,7087,False,12,9,0,728,0,0,19,0,2
+483954,Samuel Lavrincik,2026,SLO1,7087,False,12,10,2,818,1,0,20,1,2
 483954,Samuel Lavrincik,2026,SKC,7087,False,3,2,0,107,0,2,0,0,0
 483954,Samuel Lavrincik,2026,ECLQ,1322,False,2,0,2,0,0,0,0,0,0
 483954,Samuel Lavrincik,2025,TSP,1322,False,6,3,0,253,0,0,0,0,0
@@ -17271,7 +17285,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 483954,Samuel Lavrincik,2017,FS,25792,True,9,5,0,316,0,0,0,0,0
 483954,Samuel Lavrincik,2017,FS,25723,True,2,2,0,153,0,0,0,0,0
 483954,Samuel Lavrincik,2016,FS,25723,True,8,4,0,138,0,0,0,0,1
-1027151,Tomas Marusin,2026,SLO1,7087,False,14,12,0,874,0,0,3,2,3
+1027151,Tomas Marusin,2026,SLO1,7087,False,14,13,0,964,0,0,3,2,3
 1027151,Tomas Marusin,2026,SKC,7087,False,3,1,0,45,0,0,0,0,0
 1027151,Tomas Marusin,2025,U21Q,24965,True,1,0,0,0,0,0,0,0,0
 1027151,Tomas Marusin,2025,SK2,20635,False,30,24,0,2101,1,1,0,0,3
@@ -17294,7 +17308,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1343775,Tobias Jan Mirko,2025,SK19,19857,False,26,15,0,1023,1,0,0,0,1
 1343775,Tobias Jan Mirko,2025,FS,25792,True,4,3,0,180,0,0,0,0,0
 1343775,Tobias Jan Mirko,2024,SK19,19857,False,19,1,0,57,0,0,0,0,0
-635888,Matej Koubek,2026,SLO1,7087,False,14,9,0,369,1,0,8,3,1
+635888,Matej Koubek,2026,SLO1,7087,False,14,10,0,404,1,0,10,4,1
 635888,Matej Koubek,2026,SKC,7087,False,3,2,0,119,1,0,0,0,0
 635888,Matej Koubek,2025,TSP,5545,False,3,3,0,250,1,1,0,0,1
 635888,Matej Koubek,2025,TS1,5545,False,30,23,0,679,2,2,14,6,1
@@ -17335,8 +17349,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 635888,Matej Koubek,2018,CZJ2,37465,False,7,3,0,180,0,0,0,0,0
 635888,Matej Koubek,2018,CZ21,37465,False,14,4,0,238,2,0,0,0,0
 635888,Matej Koubek,2017,CZ19,15763,False,34,19,0,1362,7,0,0,0,0
-908061,Vojtech Hranos,2026,SU20,22987,True,4,4,0,198,0,0,2,0,0
-908061,Vojtech Hranos,2026,SLO1,7087,False,14,12,1,907,3,0,25,9,2
+908061,Vojtech Hranos,2026,SU20,22987,True,5,5,0,274,2,0,2,0,0
+908061,Vojtech Hranos,2026,SLO1,7087,False,14,13,1,997,3,0,27,9,2
 908061,Vojtech Hranos,2026,SKC,7087,False,3,3,0,120,3,1,0,0,0
 908061,Vojtech Hranos,2025,TSP,13718,False,2,2,0,79,1,1,0,0,0
 908061,Vojtech Hranos,2025,TS2,13718,False,30,27,1,1629,5,1,0,0,2
@@ -17370,25 +17384,27 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 740592,Kevin Huna,2019,FS,34690,True,3,3,0,150,0,0,0,0,0
 1379606,Ebenezer Kpozo,2026,SLO1,20063,False,6,0,0,0,0,0,0,0,0
 1379606,Ebenezer Kpozo,2026,SKC,61909,False,2,1,1,87,0,0,0,0,1
-1379606,Ebenezer Kpozo,2026,SKC,20063,False,1,0,0,0,0,0,0,0,0
-1379606,Ebenezer Kpozo,2026,SK2,61909,False,10,8,2,546,0,0,0,0,0
+1379606,Ebenezer Kpozo,2026,SKC,20063,False,1,1,0,90,0,0,0,0,0
+1379606,Ebenezer Kpozo,2026,SK2,61909,False,11,9,2,553,0,0,0,0,0
 1379606,Ebenezer Kpozo,2025,SK2,38269,False,13,8,0,359,0,0,0,0,4
 1379606,Ebenezer Kpozo,2024,GEP1,41310,False,1,1,0,45,0,0,0,0,1
 1379606,Ebenezer Kpozo,2024,GE2P,41310,False,2,0,0,0,0,0,0,0,0
 1379606,Ebenezer Kpozo,2024,GE1N,41310,False,36,23,0,1807,1,0,0,0,7
-1380624,Radek Kejval,2026,SLO1,20063,False,14,2,0,180,0,0,4,1,1
-1380624,Radek Kejval,2026,SKC,20063,False,4,3,0,270,1,0,0,0,0
+1380624,Radek Kejval,2026,SLO1,20063,False,14,5,0,450,0,0,4,1,2
+1380624,Radek Kejval,2026,SKC,20063,False,4,4,0,360,1,0,0,0,0
 1380624,Radek Kejval,2025,TSP,892,False,1,0,0,0,0,0,0,0,0
 1380624,Radek Kejval,2025,TS2,892,False,25,9,0,565,0,0,0,0,0
 1380624,Radek Kejval,2024,TS2,892,False,14,0,0,0,0,0,0,0,0
 666613,Samson Tijani,2026,TSP,450,False,2,1,0,78,0,0,0,0,0
 666613,Samson Tijani,2026,TS2,450,False,6,2,0,38,0,0,0,0,0
-666613,Samson Tijani,2026,SLO1,20063,False,8,3,0,59,0,0,0,0,0
+666613,Samson Tijani,2026,SLO1,20063,False,8,6,0,284,0,0,1,0,1
 666613,Samson Tijani,2026,SKC,20063,False,3,1,0,90,0,0,0,0,0
+666613,Samson Tijani,2026,FS,3444,True,1,0,0,0,0,0,0,0,0
+666613,Samson Tijani,2026,AFCQ,3444,True,3,0,0,0,0,0,0,0,0
 666613,Samson Tijani,2025,TSP,450,False,3,2,0,159,0,0,0,0,0
 666613,Samson Tijani,2025,TS1,450,False,30,23,1,1474,0,0,8,1,5
 666613,Samson Tijani,2025,T1AR,450,False,5,3,0,251,0,0,1,0,1
-666613,Samson Tijani,2025,FS,3444,True,5,2,0,167,0,0,0,0,0
+666613,Samson Tijani,2025,FS,3444,True,7,2,0,167,0,0,0,0,0
 666613,Samson Tijani,2025,CZ3C,37464,False,1,1,0,86,0,0,0,0,0
 666613,Samson Tijani,2024,ofb,409,False,2,0,0,0,0,0,0,0,0
 666613,Samson Tijani,2024,KLUB,409,False,3,0,3,0,0,0,0,0,0
@@ -17431,7 +17447,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 666613,Samson Tijani,2019,AFCQ,3444,True,4,0,0,0,0,0,0,0,0
 666613,Samson Tijani,2018,17WC,23135,True,4,4,0,360,2,0,13,5,0
 666613,Samson Tijani,2018,17AC,23135,True,5,5,0,450,0,1,0,0,0
-497816,Matus Rusnak,2026,SLO1,20063,False,14,5,0,173,0,0,1,0,2
+497816,Matus Rusnak,2026,SLO1,20063,False,14,6,0,195,0,0,1,0,2
 497816,Matus Rusnak,2026,SKC,20063,False,4,2,0,89,0,0,0,0,0
 497816,Matus Rusnak,2025,TSP,377,False,4,2,0,189,0,0,0,0,0
 497816,Matus Rusnak,2025,TS1,377,False,30,13,0,622,0,1,12,2,1
@@ -17471,8 +17487,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 497816,Matus Rusnak,2019,SK2P,20634,False,2,2,0,90,0,0,0,0,0
 497816,Matus Rusnak,2019,SK2,20634,False,18,14,0,807,3,0,0,0,1
 497816,Matus Rusnak,2018,SK2,20634,False,29,23,0,1376,1,1,0,0,4
-690246,Francis Momoh,2026,SLO1,20063,False,5,2,0,108,0,0,3,0,0
-690246,Francis Momoh,2026,SKC,20063,False,2,1,0,44,0,0,0,0,0
+690246,Francis Momoh,2026,SLO1,20063,False,5,3,0,116,0,0,3,0,0
+690246,Francis Momoh,2026,SKC,20063,False,2,1,0,45,0,0,0,0,0
 690246,Francis Momoh,2026,SCC,242,False,1,0,0,0,0,0,0,0,0
 690246,Francis Momoh,2026,C2,242,False,9,0,0,0,0,0,0,0,0
 690246,Francis Momoh,2025,UKRP,63007,False,1,0,0,0,0,0,0,0,0
@@ -17497,13 +17513,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 690246,Francis Momoh,2019,CHC2,5502,False,4,3,0,190,3,0,0,0,0
 690246,Francis Momoh,2019,C2,504,False,34,7,7,73,0,0,0,0,2
 690246,Francis Momoh,2017,NPFL,11321,False,24,12,0,571,1,0,0,0,0
-1467786,Saidy Saibo,2026,SLO1,20063,False,14,2,0,11,0,0,0,0,0
-1467786,Saidy Saibo,2026,SKC,20063,False,4,3,0,100,0,0,0,0,0
+1467786,Saidy Saibo,2026,SLO1,20063,False,14,3,0,12,0,0,0,0,0
+1467786,Saidy Saibo,2026,SKC,20063,False,4,4,0,190,0,1,0,0,1
 1467786,Saidy Saibo,2025,FIS,21520,False,3,2,0,180,0,0,0,0,0
 1467786,Saidy Saibo,2025,FI2,21520,False,15,10,0,866,4,0,0,0,3
 1467786,Saidy Saibo,2024,SE3N,2283,False,6,2,0,153,0,2,0,0,0
-1567644,Alexander Amoafo,2026,SLO1,20063,False,14,1,0,9,0,0,1,0,0
+1567644,Alexander Amoafo,2026,SLO1,20063,False,14,3,0,22,0,0,3,0,0
 1567644,Alexander Amoafo,2026,SKC,20063,False,4,1,0,6,0,0,0,0,0
+1320069,Vladimir Janos,2026,SLO1,20063,False,10,2,0,32,0,0,1,0,0
+1320069,Vladimir Janos,2026,SKC,20063,False,4,3,0,75,1,0,0,0,0
+1320069,Vladimir Janos,2026,SK19,52988,False,11,11,0,990,6,0,0,0,4
+1320069,Vladimir Janos,2025,SK19,52988,False,26,25,0,2022,16,0,0,0,2
+1320069,Vladimir Janos,2024,SK19,52988,False,26,14,0,959,7,0,0,0,1
+1320069,Vladimir Janos,2024,FS,25792,True,3,3,0,97,0,0,0,0,0
+1194042,Matej Dula,2026,SLO1,13744,False,14,0,0,0,0,0,0,0,0
+1194042,Matej Dula,2026,SKC,13744,False,4,2,0,180,0,0,0,0,0
+1194042,Matej Dula,2025,SLAR,13744,False,1,0,0,0,0,0,0,0,0
+1194042,Matej Dula,2025,SK19,45727,False,26,22,0,1980,0,0,0,0,2
+1194042,Matej Dula,2024,SK19,45727,False,26,15,0,1286,0,0,0,0,1
+1194042,Matej Dula,2023,SKC,14986,False,2,0,0,0,0,0,0,0,0
+1194042,Matej Dula,2023,SK2,14986,False,21,0,0,0,0,0,0,0,0
 382204,Martin Koscelník,2026,TS1,5544,False,5,1,0,32,0,0,2,0,0
 382204,Martin Koscelník,2026,SLO1,13744,False,9,4,0,239,0,0,1,1,0
 382204,Martin Koscelník,2026,SKC,13744,False,4,1,0,90,1,0,0,0,0
@@ -17565,14 +17594,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 382204,Martin Koscelník,2015,FS,24965,True,1,1,0,45,0,0,0,0,0
 382204,Martin Koscelník,2014,SK2P,13744,False,12,10,0,518,0,0,0,0,1
 382204,Martin Koscelník,2014,SK2,13744,False,22,17,0,834,5,0,0,0,1
-1194042,Matej Dula,2026,SLO1,13744,False,14,0,0,0,0,0,0,0,0
-1194042,Matej Dula,2026,SKC,13744,False,4,2,0,180,0,0,0,0,0
-1194042,Matej Dula,2025,SLAR,13744,False,1,0,0,0,0,0,0,0,0
-1194042,Matej Dula,2025,SK19,45727,False,26,22,0,1980,0,0,0,0,2
-1194042,Matej Dula,2024,SK19,45727,False,26,15,0,1286,0,0,0,0,1
-1194042,Matej Dula,2023,SKC,14986,False,2,0,0,0,0,0,0,0,0
-1194042,Matej Dula,2023,SK2,14986,False,21,0,0,0,0,0,0,0,0
-861577,Tommy Pilling,2026,SLO1,13744,False,14,10,0,709,0,0,5,2,0
+861577,Tommy Pilling,2026,SLO1,13744,False,14,11,0,799,0,0,6,2,0
 861577,Tommy Pilling,2026,SKC,13744,False,4,3,0,145,0,1,0,0,0
 861577,Tommy Pilling,2025,GBFL,9252,False,3,3,0,270,0,0,1,0,0
 861577,Tommy Pilling,2025,GB21,9252,False,20,19,0,1631,3,2,18,7,3
@@ -17600,7 +17622,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 861577,Tommy Pilling,2021,19YL,45333,False,3,1,0,1,0,0,0,0,0
 861577,Tommy Pilling,2020,GB18,6922,False,12,3,0,107,0,1,4,1,0
 861577,Tommy Pilling,2020,FAYC,6922,False,4,0,0,0,0,0,0,0,0
-969352,Rastislav Korba,2026,SLO1,13744,False,14,9,0,258,0,0,4,3,1
+969352,Rastislav Korba,2026,SLO1,13744,False,14,10,0,303,0,0,5,3,1
 969352,Rastislav Korba,2026,SKC,13744,False,4,4,0,336,1,1,0,0,0
 969352,Rastislav Korba,2025,SKC,68352,False,3,3,0,120,2,1,0,0,0
 969352,Rastislav Korba,2025,SK2,68352,False,30,26,1,1904,4,3,0,0,8
@@ -17626,7 +17648,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1450579,Lubomir Malik,2026,SKC,13744,False,4,0,0,0,0,0,0,0,0
 1450579,Lubomir Malik,2026,SK19,45727,False,11,9,0,730,1,0,0,0,3
 1450579,Lubomir Malik,2025,SK19,45727,False,26,26,0,2000,4,0,0,0,4
-1326862,Konstantinos Oikonomou,2026,SK19,45727,False,11,8,0,541,2,0,0,0,1
+1326862,Konstantinos Oikonomou,2026,SK19,45727,False,11,8,0,541,2,0,0,0,2
 1326862,Konstantinos Oikonomou,2025,SK19,45727,False,13,10,0,863,1,0,0,0,2
 1326862,Konstantinos Oikonomou,2025,GR20,8511,False,16,6,0,85,1,0,0,0,0
 1326862,Konstantinos Oikonomou,2025,G19C,8511,False,2,1,0,16,0,0,0,0,0
@@ -17652,10 +17674,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 659517,Noa Cervantes,2020,FR4B,11204,False,9,4,0,131,0,2,0,0,0
 659517,Noa Cervantes,2019,FRYC,12774,False,1,1,0,80,0,0,0,0,0
 659517,Noa Cervantes,2018,FS,10844,True,2,2,0,93,0,0,0,0,0
-1481807,Oleg Zahradnik,2026,U17Q,25792,True,1,1,0,21,0,0,0,0,0
+1481807,Oleg Zahradnik,2026,U17Q,25792,True,3,2,0,22,0,0,0,0,1
 1481807,Oleg Zahradnik,2026,SLO1,13744,False,14,1,0,9,0,0,0,0,0
 1481807,Oleg Zahradnik,2026,SKC,13744,False,4,0,0,0,0,0,0,0,0
-1481807,Oleg Zahradnik,2026,SK19,45727,False,11,11,0,929,5,0,0,0,4
+1481807,Oleg Zahradnik,2026,SK19,45727,False,11,11,0,907,6,0,0,0,4
 1481807,Oleg Zahradnik,2026,FS,25792,True,2,2,0,11,0,0,0,0,0
 1481807,Oleg Zahradnik,2025,SK19,45727,False,1,1,0,16,0,0,0,0,0
 1481807,Oleg Zahradnik,2025,FS,25723,True,3,3,0,191,0,0,0,0,0
@@ -17764,7 +17786,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 898137,Martin Gjorgievski,2026,SLO1,20758,False,7,7,0,584,1,0,14,4,1
 898137,Martin Gjorgievski,2026,SKC,20758,False,2,1,0,9,0,0,0,0,0
 898137,Martin Gjorgievski,2026,FS,65141,True,3,0,0,0,0,0,0,0,0
-898137,Martin Gjorgievski,2026,FS,16844,True,1,0,0,0,0,0,0,0,0
+898137,Martin Gjorgievski,2026,FS,16844,True,2,1,0,70,0,0,0,0,0
 898137,Martin Gjorgievski,2026,CZ3M,8890,False,3,2,0,148,1,1,0,0,0
 898137,Martin Gjorgievski,2025,U21Q,16844,True,10,7,0,288,1,0,0,0,0
 898137,Martin Gjorgievski,2025,TSP,5225,False,2,1,0,64,1,1,0,0,0
@@ -17854,7 +17876,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 389621,Kristian Vallo,2014,SK2P,20634,False,10,7,0,186,1,0,0,0,1
 1447919,Simon Kostial,2026,SLO1,20758,False,12,0,0,0,0,0,0,0,0
 1447919,Simon Kostial,2026,SKC,20758,False,4,4,0,164,0,0,0,0,0
-1447919,Simon Kostial,2026,SK19,76294,False,11,5,0,435,0,0,0,0,0
+1447919,Simon Kostial,2026,SK19,76294,False,11,6,0,525,0,0,0,0,0
 1447919,Simon Kostial,2025,SK19,76294,False,26,26,0,2207,2,0,0,0,1
 631402,Mikulas Bakala,2026,SLO1,20758,False,14,13,0,1170,1,0,4,3,2
 631402,Mikulas Bakala,2026,SKC,20758,False,4,3,0,180,0,0,0,0,1
@@ -17880,6 +17902,28 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 631402,Mikulas Bakala,2019,SK2P,20063,False,3,1,0,14,0,0,0,0,0
 631402,Mikulas Bakala,2019,SK2,20063,False,9,0,0,0,0,0,0,0,0
 631402,Mikulas Bakala,2018,SLO1,20063,False,1,0,0,0,0,0,0,0,0
+473438,Viktor Toth,2026,SLO1,20758,False,14,10,0,326,0,0,5,1,3
+473438,Viktor Toth,2026,SKC,20758,False,4,4,0,259,0,0,0,0,0
+473438,Viktor Toth,2025,SWRP,36093,False,2,2,0,180,0,1,0,0,0
+473438,Viktor Toth,2025,SKC,36093,False,3,1,0,90,0,0,0,0,0
+473438,Viktor Toth,2025,SK2,36093,False,30,29,0,2530,5,1,0,0,9
+473438,Viktor Toth,2024,SKC,36093,False,1,0,0,0,0,0,0,0,0
+473438,Viktor Toth,2024,SK2,36093,False,26,11,0,976,2,2,0,0,6
+473438,Viktor Toth,2021,SKC,20758,False,2,2,0,148,0,0,0,0,1
+473438,Viktor Toth,2021,SK2,20758,False,19,6,0,38,0,0,0,0,0
+473438,Viktor Toth,2020,SWRP,20758,False,2,0,0,0,0,0,0,0,0
+473438,Viktor Toth,2020,SKC,20758,False,6,5,0,297,1,2,0,0,1
+473438,Viktor Toth,2020,SK2,20758,False,28,16,1,537,0,2,0,0,3
+473438,Viktor Toth,2019,SKC,20758,False,4,2,0,158,0,0,0,0,1
+473438,Viktor Toth,2019,SK2P,20758,False,4,4,0,236,1,1,0,0,0
+473438,Viktor Toth,2019,SK2,20758,False,18,13,0,785,1,3,0,0,0
+473438,Viktor Toth,2018,SKC,20758,False,1,0,0,0,0,0,0,0,0
+473438,Viktor Toth,2018,SK2,20758,False,30,21,0,1193,1,3,0,0,1
+473438,Viktor Toth,2017,SKC,216,False,3,1,0,45,0,0,0,0,0
+473438,Viktor Toth,2017,SK2,36093,False,13,13,0,936,1,0,0,0,2
+473438,Viktor Toth,2017,SK2,216,False,15,1,0,55,0,0,0,0,0
+473438,Viktor Toth,2016,SKR2,4786,False,10,0,0,0,0,0,0,0,0
+473438,Viktor Toth,2016,SK2,4786,False,8,1,0,16,0,0,0,0,0
 291234,Robert Polievka,2026,SLO1,20758,False,14,10,0,802,3,0,29,11,1
 291234,Robert Polievka,2026,SKC,20758,False,4,0,0,0,0,0,0,0,0
 291234,Robert Polievka,2025,UNGP,634,False,3,3,0,116,1,0,0,0,0
@@ -17930,28 +17974,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 291234,Robert Polievka,2014,FS,28316,True,1,1,0,4,0,0,0,0,0
 291234,Robert Polievka,2014,FS,25960,True,6,4,0,289,1,0,0,0,0
 291234,Robert Polievka,2013,FS,25792,True,1,1,0,58,0,0,0,0,0
-473438,Viktor Toth,2026,SLO1,20758,False,14,10,0,326,0,0,5,1,3
-473438,Viktor Toth,2026,SKC,20758,False,4,4,0,259,0,0,0,0,0
-473438,Viktor Toth,2025,SWRP,36093,False,2,2,0,180,0,1,0,0,0
-473438,Viktor Toth,2025,SKC,36093,False,3,1,0,90,0,0,0,0,0
-473438,Viktor Toth,2025,SK2,36093,False,30,29,0,2530,5,1,0,0,9
-473438,Viktor Toth,2024,SKC,36093,False,1,0,0,0,0,0,0,0,0
-473438,Viktor Toth,2024,SK2,36093,False,26,11,0,976,2,2,0,0,6
-473438,Viktor Toth,2021,SKC,20758,False,2,2,0,148,0,0,0,0,1
-473438,Viktor Toth,2021,SK2,20758,False,19,6,0,38,0,0,0,0,0
-473438,Viktor Toth,2020,SWRP,20758,False,2,0,0,0,0,0,0,0,0
-473438,Viktor Toth,2020,SKC,20758,False,6,5,0,297,1,2,0,0,1
-473438,Viktor Toth,2020,SK2,20758,False,28,16,1,537,0,2,0,0,3
-473438,Viktor Toth,2019,SKC,20758,False,4,2,0,158,0,0,0,0,1
-473438,Viktor Toth,2019,SK2P,20758,False,4,4,0,236,1,1,0,0,0
-473438,Viktor Toth,2019,SK2,20758,False,18,13,0,785,1,3,0,0,0
-473438,Viktor Toth,2018,SKC,20758,False,1,0,0,0,0,0,0,0,0
-473438,Viktor Toth,2018,SK2,20758,False,30,21,0,1193,1,3,0,0,1
-473438,Viktor Toth,2017,SKC,216,False,3,1,0,45,0,0,0,0,0
-473438,Viktor Toth,2017,SK2,36093,False,13,13,0,936,1,0,0,0,2
-473438,Viktor Toth,2017,SK2,216,False,15,1,0,55,0,0,0,0,0
-473438,Viktor Toth,2016,SKR2,4786,False,10,0,0,0,0,0,0,0,0
-473438,Viktor Toth,2016,SK2,4786,False,8,1,0,16,0,0,0,0,0
 1298753,Nikolas Kubala,2026,SLO1,20758,False,14,7,0,390,0,1,4,0,0
 1298753,Nikolas Kubala,2026,SKC,20758,False,4,4,0,279,1,0,0,0,0
 1298753,Nikolas Kubala,2025,SK2,20758,False,1,0,0,0,0,0,0,0,0

@@ -1,9 +1,9 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
-521634,Karol Niemczycki,6105,FC Ashdod,Goalkeeper,26,Poland,25,11,12,27,453,228,20327,0,1,0,0,11,3,2016,2026
 1515280,Noam Nuna,1017,Hapoel Tel Aviv,Midfield,16,Israel,0,1,0,2,6,2,112,0,1,0,0,0,2,2025,2025
+521634,Karol Niemczycki,6105,FC Ashdod,Goalkeeper,26,Poland,25,11,12,27,453,228,20327,0,1,0,0,11,3,2016,2026
 211768,Raz Karmi,6105,FC Ashdod,Goalkeeper,30,Israel,1,12,6,6,430,104,9079,0,0,0,0,5,0,2015,2026
-480395,Timothy Awany,6105,FC Ashdod,Centre-Back,29,Uganda,4,12,3,14,392,250,20247,2,1,14,1,23,35,2015,2026
 1086571,Tomer Amar,6105,FC Ashdod,Goalkeeper,23,Israel,0,3,2,4,48,3,190,0,0,0,0,1,0,2021,2023
+480395,Timothy Awany,6105,FC Ashdod,Centre-Back,29,Uganda,4,12,3,14,392,250,20247,2,1,14,1,23,35,2015,2026
 422715,Arial Mendy,810,Hapoel Haifa,Left-Back,32,Senegal,77,12,10,19,410,178,12099,5,13,95,19,30,0,2015,2026
 1361508,Ibrahim Diakité,6105,FC Ashdod,Centre-Back,22,Cote d'Ivoire,3,3,2,5,53,51,4599,3,0,18,6,9,0,2024,2026
 1048446,Mohamad Amer,6105,FC Ashdod,Left-Back,22,Israel,87,5,2,4,125,61,3514,2,2,15,3,14,0,2022,2026
@@ -11,14 +11,14 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 247633,Raz Meir,6105,FC Ashdod,Right-Back,29,Israel,55,15,9,17,488,258,16318,7,16,5,3,28,22,2012,2026
 323451,Avishay Cohen,262,Hapoel Petah Tikva,Right-Back,31,Israel,2,14,7,12,508,265,17643,11,16,25,8,42,2,2013,2026
 225980,Tom Ben Zaken,6105,FC Ashdod,Right-Back,31,Israel,15,16,1,9,603,236,17471,3,8,23,5,53,0,2011,2026
-129788,Nir Bitton,6105,FC Ashdod,Centre-Back,34,Israel,5,19,3,27,1172,540,39314,36,27,92,19,77,61,2007,2025
 967547,Shaked Hakmon,6105,FC Ashdod,Centre-Back,23,Israel,0,5,2,6,155,51,3494,1,0,2,1,4,1,2021,2025
+129788,Nir Bitton,6105,FC Ashdod,Centre-Back,34,Israel,5,19,3,27,1172,540,39314,36,27,92,19,77,61,2007,2025
 1466139,Reem Tal,6105,FC Ashdod,Centre-Back,21,Israel,20,2,1,4,48,17,523,0,0,2,1,3,0,2025,2026
-1042202,Victor Ochayi,6105,FC Ashdod,Defensive Midfield,24,Nigeria,6,5,4,9,95,80,6373,5,2,4,2,22,0,2022,2026
 741698,Karim Kimvuidi,262,Hapoel Petah Tikva,Attacking Midfield,24,DR Congo,26,8,5,17,268,112,6184,9,8,98,27,14,1,2019,2026
+1042202,Victor Ochayi,6105,FC Ashdod,Defensive Midfield,24,Nigeria,6,5,4,9,95,80,6373,5,2,4,2,22,0,2022,2026
 781207,Ilay Tamam,6105,FC Ashdod,Central Midfield,24,Israel,10,8,4,5,243,172,10467,14,7,81,33,23,0,2019,2026
-960062,Emmanuel Agyei,6105,FC Ashdod,Central Midfield,21,Ghana,0,6,4,10,203,130,9912,2,3,42,8,31,1,2021,2026
 919540,Noam Muche,3793,Beitar Jerusalem,Central Midfield,23,Israel,15,7,3,10,150,119,6889,10,1,90,34,17,19,2020,2026
+960062,Emmanuel Agyei,6105,FC Ashdod,Central Midfield,21,Ghana,0,6,4,10,202,130,9912,2,3,42,8,31,1,2021,2026
 267732,Israel Coll,6105,FC Ashdod,Defensive Midfield,32,Argentina,0,15,7,23,508,302,21026,15,22,28,5,36,0,2011,2025
 916992,Ilay Hajaj,4769,Ihud Bnei Sakhnin,Right Midfield,25,Israel,0,7,5,12,248,145,8463,18,10,50,17,28,9,2020,2026
 129722,Roei Gordana,6105,FC Ashdod,Central Midfield,35,Israel,8,19,7,16,762,485,31030,40,33,49,14,119,2,2008,2026
@@ -30,47 +30,46 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1261466,Amitay Yamin,6105,FC Ashdod,Midfield,18,Israel,19,4,1,6,48,19,908,0,0,4,1,1,12,2023,2026
 1332181,Hayford Boahen,6105,FC Ashdod,Attacking Midfield,20,Ghana,77,3,1,6,37,25,1201,4,0,10,4,3,5,2024,2026
 926481,Ori Azo,3793,Beitar Jerusalem,Left Winger,21,Israel,0,6,4,14,147,66,3521,14,5,46,12,14,15,2019,2026
-1416741,Jean Batoum,6105,FC Ashdod,Centre-Forward,24,Cameroon,0,3,4,7,55,42,2362,8,4,38,16,0,2,2024,2026
 296681,Eugene Ansah,3793,Beitar Jerusalem,Left Winger,31,Ghana,13,14,9,22,546,355,21249,74,32,157,54,52,1,2013,2026
+1416741,Jean Batoum,6105,FC Ashdod,Centre-Forward,24,Cameroon,0,3,4,7,55,42,2362,8,4,38,16,0,2,2024,2026
 896052,Ben Hadadi,6105,FC Ashdod,Second Striker,22,Israel,0,7,3,3,203,126,6577,28,5,1,0,9,0,2020,2026
 396641,Eylon Almog,5223,Maccabi Netanya,Centre-Forward,27,Israel,0,13,9,20,459,255,12396,52,22,100,40,17,45,2014,2026
 668592,Stav Nachmani,4769,Ihud Bnei Sakhnin,Centre-Forward,22,Israel,19,10,9,17,314,172,8261,36,4,57,33,3,30,2017,2026
 870571,Adir Levi,6105,FC Ashdod,Left Winger,24,Israel,0,8,1,7,163,74,3177,6,6,41,12,6,1,2019,2026
-157500,Lenny Nangis,6105,FC Ashdod,Left Winger,32,Guadeloupe,0,17,18,32,742,450,29002,44,37,142,42,72,41,2009,2026
+157500,Lenny Nangis,6105,FC Ashdod,Left Winger,32,Guadeloupe,0,17,18,32,743,451,29064,44,37,142,42,72,41,2009,2026
 1105821,Nehoray Dabush,6105,FC Ashdod,Centre-Forward,21,Israel,7,6,2,7,149,64,1920,11,0,54,18,4,0,2021,2026
 951858,Elia Gethon,6105,FC Ashdod,Right Winger,21,Israel,21,6,2,8,115,33,1357,0,1,9,4,4,2,2021,2026
 1061538,Ben Levy,6105,FC Ashdod,Centre-Forward,22,Israel,80,4,2,5,76,5,163,2,0,0,0,0,2,2019,2025
 1323726,Avishay David,51070,Ironi Tiberias,Right-Back,22,Israel,0,6,3,3,12,3,235,0,0,0,0,2,0,2021,2026
-919516,Lior Gliklich,70178,Maccabi Bnei Reineh,Goalkeeper,23,Israel,31,6,5,9,157,65,5803,0,0,0,0,6,11,2021,2026
 928398,Guy Herman,70178,Maccabi Bnei Reineh,Goalkeeper,25,Israel,99,8,7,9,207,61,5234,0,0,0,0,3,0,2017,2026
-129859,Gad Amos,51070,Ironi Tiberias,Goalkeeper,37,Israel,1,21,11,12,690,339,30415,0,0,0,0,30,0,2006,2026
+919516,Lior Gliklich,70178,Maccabi Bnei Reineh,Goalkeeper,23,Israel,31,6,5,9,157,65,5803,0,0,0,0,6,11,2021,2026
 1231389,Maharan Gadir,70178,Maccabi Bnei Reineh,Goalkeeper,31,Israel,0,5,1,5,61,0,0,0,0,0,0,0,0,2020,2025
+129859,Gad Amos,51070,Ironi Tiberias,Goalkeeper,37,Israel,1,21,11,12,690,339,30415,0,0,0,0,30,0,2006,2026
 1448000,Braa Amara,70178,Maccabi Bnei Reineh,Goalkeeper,18,Israel,0,1,1,1,1,0,0,0,0,0,0,0,0,2025,2025
 298102,Eyad Abu Abaid,4769,Ihud Bnei Sakhnin,Centre-Back,31,Israel,5,14,7,13,527,367,29626,15,6,22,7,82,14,2013,2026
-222838,Miladin Stevanovic,70178,Maccabi Bnei Reineh,Centre-Back,30,Serbia,66,17,8,25,641,302,24230,9,18,41,4,57,41,2010,2026
 268483,Ayid Habshi,70178,Maccabi Bnei Reineh,Centre-Back,30,Israel,5,15,6,14,525,359,29276,19,6,8,2,66,31,2012,2026
-314969,Júnior Pius,70178,Maccabi Bnei Reineh,Centre-Back,30,Nigeria,40,12,11,17,422,150,12331,8,4,53,12,37,0,2014,2025
+222838,Miladin Stevanovic,70178,Maccabi Bnei Reineh,Centre-Back,30,Serbia,66,17,8,25,641,302,24230,9,18,41,4,57,41,2010,2026
 671018,Nevo Shedo,3793,Beitar Jerusalem,Left-Back,24,Israel,91,8,5,8,186,144,9655,18,13,16,3,15,10,2017,2026
+314969,Júnior Pius,70178,Maccabi Bnei Reineh,Centre-Back,30,Nigeria,40,12,11,17,422,150,12331,8,4,53,12,37,0,2014,2025
 325545,Abdallah Jaber,70178,Maccabi Bnei Reineh,Left-Back,33,Palestine,14,16,6,14,384,239,18266,6,15,24,6,34,54,2011,2026
-1086174,Mor Brami,70178,Maccabi Bnei Reineh,Centre-Back,23,Israel,3,5,2,5,136,50,2714,0,0,8,1,8,0,2022,2026
 129944,Iyad Hutba,70178,Maccabi Bnei Reineh,Right-Back,38,Israel,29,19,5,10,677,465,38120,9,20,20,1,103,1,2007,2025
 1342483,Aiham Mater,70178,Maccabi Bnei Reineh,Defender,19,Israel,0,3,1,4,77,10,109,0,0,1,0,0,0,2024,2026
-542995,Aleksa Pejic,70178,Maccabi Bnei Reineh,Defensive Midfield,26,Serbia,0,10,9,20,304,221,14648,10,5,54,18,53,2,2017,2026
+1086174,Mor Brami,70178,Maccabi Bnei Reineh,Centre-Back,23,Israel,3,5,2,5,136,50,2714,0,0,8,1,8,0,2022,2026
 1475637,Mahmoud Jabarin,70178,Maccabi Bnei Reineh,Defender,19,Israel,0,2,2,4,35,5,170,0,0,0,0,2,0,2025,2026
+542995,Aleksa Pejic,70178,Maccabi Bnei Reineh,Defensive Midfield,26,Serbia,0,10,9,20,304,221,14648,10,5,54,18,53,2,2017,2026
 490308,Emmanuel Banda,70178,Maccabi Bnei Reineh,Central Midfield,28,Zambia,12,10,7,27,485,274,14159,30,25,190,57,29,51,2016,2025
-571821,Christ Tiéhi,43119,Hapoel Jerusalem,Defensive Midfield,28,Cote d'Ivoire,0,12,17,29,472,266,20121,13,9,109,31,37,2,2015,2026
 625530,Fares Abu Akel,51070,Ironi Tiberias,Defensive Midfield,29,Israel,6,8,5,8,303,230,16594,4,11,35,8,68,0,2018,2025
-443752,Ilay Elmkies,51070,Ironi Tiberias,Central Midfield,25,Israel,0,12,12,25,435,242,15103,6,18,27,7,41,37,2015,2026
+571821,Christ Tiéhi,43119,Hapoel Jerusalem,Defensive Midfield,28,Cote d'Ivoire,0,12,17,29,472,266,20121,13,9,109,31,37,2,2015,2026
 1083166,Ahmad Taha,4769,Ihud Bnei Sakhnin,Defensive Midfield,21,Israel,6,7,2,8,206,68,3000,1,0,28,11,9,8,2020,2026
+443752,Ilay Elmkies,51070,Ironi Tiberias,Central Midfield,25,Israel,0,12,12,25,435,242,15103,6,18,27,7,41,37,2015,2026
 458464,Saar Fadida,810,Hapoel Haifa,Attacking Midfield,28,Israel,0,11,6,11,404,251,11770,22,10,80,31,31,0,2016,2026
 458014,Ihab Ganayem,70178,Maccabi Bnei Reineh,Defensive Midfield,29,Israel,6,11,6,9,378,276,18845,8,11,26,5,100,0,2016,2026
 151098,Roei Shukrani,70178,Maccabi Bnei Reineh,Defensive Midfield,35,Israel,0,19,8,9,606,464,31842,6,25,21,3,75,0,2008,2026
 1386668,Ali Ibrahim,70178,Maccabi Bnei Reineh,Midfield,20,Israel,0,3,1,4,49,5,113,0,0,0,0,1,0,2024,2026
-376571,Antonio Sefer,4769,Ihud Bnei Sakhnin,Right Winger,26,Romania,0,13,8,21,420,283,17588,46,30,223,95,34,28,2014,2026
+457782,Owusu Kwabena,70178,Maccabi Bnei Reineh,Left Winger,28,Ghana,0,10,11,23,455,295,17621,75,23,187,71,53,9,2016,2025
 354136,Vitalie Damascan,43119,Hapoel Jerusalem,Centre-Forward,27,Moldova,10,13,15,38,592,352,18513,86,24,286,104,46,79,2014,2026
 340538,Zé Turbo,70178,Maccabi Bnei Reineh,Centre-Forward,29,Guinea-Bissau,9,13,17,39,474,290,15435,76,26,80,31,32,15,2014,2026
 389441,Virgile Pinson,70178,Maccabi Bnei Reineh,Left Winger,30,France,10,12,10,24,398,217,12405,24,19,60,19,31,0,2014,2026
-457782,Owusu Kwabena,70178,Maccabi Bnei Reineh,Left Winger,28,Ghana,0,10,11,23,455,295,17621,75,23,187,71,53,9,2016,2025
 1121989,Iyad Khalaili,1064,Maccabi Haifa,Left Winger,20,Israel,29,5,3,10,123,82,4041,8,2,44,15,5,23,2022,2026
 212003,Mohamad Shaker,70178,Maccabi Bnei Reineh,Right Winger,29,Israel,16,12,4,7,399,323,21789,44,42,75,28,74,2,2015,2026
 1099219,Asil Kna'ani,70178,Maccabi Bnei Reineh,Centre-Forward,24,Israel,17,5,5,7,157,121,6333,21,7,29,11,8,0,2022,2026
@@ -84,17 +83,17 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1158795,Ofir Godosi,3793,Beitar Jerusalem,Right Winger,21,Israel,0,3,1,3,22,0,0,0,0,0,0,0,0,2023,2025
 668597,Ido Sharon,51070,Ironi Tiberias,Goalkeeper,24,Israel,22,9,4,8,194,87,7596,0,1,0,0,6,13,2017,2026
 1359997,Yoav Librus,1017,Hapoel Tel Aviv,Attack,24,Israel,0,5,3,5,43,5,127,0,1,0,0,0,3,2017,2025
-494437,Freddy Vargas,5223,Maccabi Netanya,Left Winger,27,Venezuela,0,11,7,20,437,282,18929,34,36,147,46,53,4,2016,2026
 926467,Fares Agbaria,5223,Maccabi Netanya,Left-Back,21,Israel,0,7,4,7,122,43,2267,4,0,0,0,8,17,2020,2026
+494437,Freddy Vargas,5223,Maccabi Netanya,Left Winger,27,Venezuela,0,11,7,20,437,282,18929,34,36,147,46,53,4,2016,2026
 1307956,Yehonatan Hasson,262,Hapoel Petah Tikva,Centre-Back,21,Israel,0,2,2,4,36,1,3,0,0,0,0,0,0,2024,2025
 1267001,Maxim Babko,262,Hapoel Petah Tikva,Attacking Midfield,22,Israel,0,3,1,4,41,5,125,0,0,0,0,0,0,2023,2025
 1099220,Raz Zarbailov,262,Hapoel Petah Tikva,Centre-Forward,23,Israel,0,4,1,4,113,9,194,0,0,2,1,1,0,2021,2024
 1324381,David Ben Lulu,4769,Ihud Bnei Sakhnin,Goalkeeper,25,Israel,30,4,4,4,52,11,811,0,0,0,0,2,0,2020,2025
 980199,Maicom David,4769,Ihud Bnei Sakhnin,Defensive Midfield,26,Brazil,8,8,6,12,158,105,7506,4,4,2,0,18,0,2017,2025
 847467,Glid Otanga,4769,Ihud Bnei Sakhnin,Central Midfield,25,Congo,14,7,6,14,145,82,6051,0,3,12,2,22,5,2020,2026
-523777,Johan N'zi,4769,Ihud Bnei Sakhnin,Attacking Midfield,31,Madagascar,75,9,9,16,265,145,9538,14,8,11,5,25,12,2017,2026
-213434,Artur Miranyan,51070,Ironi Tiberias,Centre-Forward,30,Armenia,0,16,9,23,570,267,17548,73,12,58,29,11,53,2011,2026
-244043,James Adeniyi,4769,Ihud Bnei Sakhnin,Centre-Forward,33,Nigeria,77,16,12,13,575,457,34246,130,46,135,61,41,0,2011,2026
+523777,Johan N'zi,4769,Ihud Bnei Sakhnin,Attacking Midfield,31,Madagascar,75,9,9,16,265,145,9583,14,8,11,5,26,12,2017,2026
+213434,Artur Miranyan,51070,Ironi Tiberias,Centre-Forward,30,Armenia,0,16,9,23,575,268,17560,73,12,59,29,11,54,2011,2026
+244043,James Adeniyi,4769,Ihud Bnei Sakhnin,Centre-Forward,33,Nigeria,77,16,12,13,575,458,34313,130,46,135,61,41,0,2011,2026
 1231361,Harel Attia,810,Hapoel Haifa,Goalkeeper,23,Israel,0,4,3,4,89,4,350,0,0,0,0,0,0,2023,2026
 325307,Oren Biton,810,Hapoel Haifa,Left-Back,32,Israel,12,14,6,11,467,290,21882,5,32,11,3,49,4,2013,2026
 653832,Ofek Biton,810,Hapoel Haifa,Attacking Midfield,26,Israel,18,8,6,9,276,173,11146,23,18,61,24,16,0,2018,2025
@@ -107,18 +106,18 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 834720,Yonatan Teper,51070,Ironi Tiberias,Defensive Midfield,25,Israel,5,6,5,7,191,137,7437,5,12,41,9,17,0,2020,2025
 1343787,Matan Dgani,51070,Ironi Tiberias,Defensive Midfield,21,Israel,44,3,1,4,36,0,0,0,0,0,0,0,0,2022,2025
 967559,Adir Córdoba,119,Maccabi Tel Aviv,Centre-Back,22,Israel,0,7,4,8,131,73,5568,1,0,0,0,17,11,2019,2026
-912586,Niv Eliasi,2976,Hapoel Beer Sheva,Goalkeeper,24,Israel,55,7,3,16,303,124,11085,0,0,0,0,10,7,2020,2026
 1454117,Lior Mashansky,119,Maccabi Tel Aviv,Midfield,20,Israel,0,1,2,4,40,7,96,0,0,0,0,0,0,2025,2025
+912586,Niv Eliasi,2976,Hapoel Beer Sheva,Goalkeeper,24,Israel,55,7,3,16,303,124,11085,0,0,0,0,10,7,2020,2026
 509301,Or Dadia,3785,Maccabi Petah Tikva,Right-Back,29,Israel,0,11,6,16,447,224,15171,2,11,2,1,31,1,2016,2026
-684998,Kings Kangwa,2976,Hapoel Beer Sheva,Central Midfield,27,Zambia,17,9,6,27,388,268,18892,58,48,339,127,40,46,2018,2026
 1320521,Ariel Elmalem,2976,Hapoel Beer Sheva,Left-Back,22,Israel,0,4,2,3,13,5,398,0,0,0,0,1,0,2023,2026
+684998,Kings Kangwa,2976,Hapoel Beer Sheva,Central Midfield,27,Zambia,17,9,6,27,388,268,18892,58,48,339,127,40,46,2018,2026
 1342363,Ofek Peretz,2976,Hapoel Beer Sheva,Central Midfield,21,Israel,0,3,2,8,69,33,1480,0,0,0,0,3,0,2023,2026
 1342367,Amir Sabag,2976,Hapoel Beer Sheva,Midfield,20,Israel,0,3,2,7,59,25,1333,6,0,0,0,4,0,2023,2026
-775709,Georgiy Yermakov,1064,Maccabi Haifa,Goalkeeper,24,Ukraine,0,6,3,10,198,96,8396,0,0,0,0,7,7,2021,2026
 1318693,Alon Ben Ami,3793,Beitar Jerusalem,Right-Back,21,Israel,0,4,2,5,50,1,8,0,0,0,0,0,0,2020,2025
+775709,Georgiy Yermakov,1064,Maccabi Haifa,Goalkeeper,24,Ukraine,0,6,3,10,198,96,8396,0,0,0,0,7,7,2021,2026
 1002517,Adi Tzur,1064,Maccabi Haifa,Central Midfield,20,Israel,0,3,1,3,54,29,1195,1,3,0,0,4,2,2021,2026
+1476313,Abed Elmajeed Shadafna,1064,Maccabi Haifa,Midfield,21,Israel,0,3,2,3,19,0,0,0,0,0,0,0,0,2024,2026
 263843,Matías Nahuel,1064,Maccabi Haifa,Left Winger,29,Spain,0,15,12,27,729,370,22179,48,24,204,61,51,11,2012,2026
-1476313,Abed Elmajeed Shadafna,1064,Maccabi Haifa,Midfield,21,Israel,0,3,2,3,18,0,0,0,0,0,0,0,0,2024,2026
 703416,Nehoray Ifrah,1064,Maccabi Haifa,Right Winger,23,Israel,0,9,7,13,282,130,6960,15,10,0,0,22,32,2018,2026
 1137553,Shon Ben Nesher,1017,Hapoel Tel Aviv,Goalkeeper,20,Israel,13,5,3,5,122,12,873,0,0,0,0,0,0,2022,2026
 1016139,Roey Levi,1017,Hapoel Tel Aviv,Centre-Back,21,Israel,77,6,2,5,115,44,2902,0,0,0,0,8,13,2021,2026
@@ -152,22 +151,22 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 531650,Naftali Balay,810,Hapoel Haifa,Left-Back,29,Israel,16,11,8,6,364,176,10850,8,7,21,5,41,0,2016,2026
 1208433,Asaf Siman Tov,2785,Hapoel Ramat Gan Givatayim,Centre-Back,22,Israel,0,3,2,2,27,2,93,0,0,0,0,1,0,2023,2025
 1206436,Harel Shasha,2785,Hapoel Ramat Gan Givatayim,Midfield,20,Israel,0,3,3,3,98,21,413,2,0,0,0,0,0,2023,2025
-375854,Sodiq Fatai,2785,Hapoel Ramat Gan Givatayim,Right Winger,30,Nigeria,77,11,12,12,413,335,22056,19,27,132,45,67,0,2015,2025
 1099221,Daniel De Wahdelaer,2785,Hapoel Ramat Gan Givatayim,Midfield,21,Israel,0,4,2,2,13,4,163,0,0,0,0,1,0,2022,2025
+375854,Sodiq Fatai,2785,Hapoel Ramat Gan Givatayim,Right Winger,30,Nigeria,77,11,12,12,413,335,22056,19,27,132,45,67,0,2015,2025
 1002506,Adir Waheb,1064,Maccabi Haifa,Centre-Back,20,Israel,0,6,3,8,81,60,4481,0,2,0,0,10,24,2021,2026
 992532,Pedrinho,5223,Maccabi Netanya,Right Winger,23,Brazil,20,8,7,17,204,104,4929,19,14,19,8,10,0,2019,2026
-211845,Yonas Malede,2976,Hapoel Beer Sheva,Centre-Forward,26,Israel,14,10,5,17,427,207,7813,18,10,65,20,14,10,2017,2026
+211845,Yonas Malede,2976,Hapoel Beer Sheva,Centre-Forward,27,Israel,14,10,5,17,427,207,7813,18,10,65,20,14,10,2017,2026
 713005,Daniel Joulani,51070,Ironi Tiberias,Left-Back,23,Ukraine,0,8,5,9,208,117,6533,8,9,25,10,9,3,2018,2026
 1002513,Itay Ehud,262,Hapoel Petah Tikva,Defensive Midfield,20,Israel,0,6,4,9,77,60,4023,2,2,0,0,18,18,2021,2026
 620914,Omer Nir'on,1064,Maccabi Haifa,Goalkeeper,25,Israel,99,10,6,16,373,191,16996,0,0,0,0,14,24,2017,2026
-1305242,Yoav Koren,3785,Maccabi Petah Tikva,Right Winger,20,Israel,0,4,4,7,99,49,3321,8,0,8,2,9,1,2023,2026
+1305242,Yoav Koren,3785,Maccabi Petah Tikva,Right Winger,21,Israel,0,4,4,7,99,49,3321,8,0,8,2,9,1,2023,2026
 976921,Mor Siman Tov,6028,Ironi Kiryat Shmona,Right Winger,23,Israel,16,6,3,8,187,106,3317,11,4,17,9,8,0,2021,2026
 1074456,Noam Schwartz,2785,Hapoel Ramat Gan,Right-Back,20,Israel,0,4,3,10,83,63,4568,1,1,1,0,6,22,2022,2026
-947166,Henry Addo,119,Maccabi Tel Aviv,Left Winger,23,Ghana,0,6,7,21,258,99,4432,19,8,44,23,11,0,2021,2026
 1164755,Eran Ginat,119,Maccabi Tel Aviv,Central Midfield,18,Israel,0,4,1,3,40,20,1043,0,1,0,0,0,18,2023,2026
+947166,Henry Addo,119,Maccabi Tel Aviv,Left Winger,23,Ghana,0,6,7,21,259,100,4446,19,8,44,23,11,0,2021,2026
 930549,Orel Baye,119,Maccabi Tel Aviv,Left Winger,22,Israel,0,7,7,10,198,97,5319,23,1,8,2,4,10,2019,2026
-666592,Peter Agba,1064,Maccabi Haifa,Defensive Midfield,23,Nigeria,80,8,5,17,208,167,11867,10,4,38,10,25,1,2018,2026
 1123857,Ofer Gelbard,1017,Hapoel Tel Aviv,Left-Back,20,Israel,92,5,3,9,123,18,682,0,0,0,0,0,8,2022,2026
+666592,Peter Agba,1064,Maccabi Haifa,Defensive Midfield,23,Nigeria,80,8,5,17,208,167,11867,10,4,38,10,25,1,2018,2026
 1138609,Ran Meir,3785,Maccabi Petah Tikva,Defensive Midfield,22,Israel,0,4,5,6,100,52,3227,5,8,0,0,10,0,2022,2026
 703461,Amir Altoury,3785,Maccabi Petah Tikva,Left Winger,22,Israel,0,9,5,9,231,113,5312,16,4,13,5,10,13,2018,2026
 713008,Moshe Meir,262,Hapoel Petah Tikva,Centre-Back,24,Israel,0,5,5,5,133,48,2948,1,0,0,0,5,0,2019,2026
@@ -179,22 +178,22 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1174940,Anis Porat Ayash,810,Hapoel Haifa,Left Winger,21,Israel,0,4,3,11,142,62,1996,5,0,27,13,0,10,2023,2026
 582907,Roy Baranes,1017,Hapoel Tel Aviv,Goalkeeper,24,Israel,99,8,3,9,206,41,3500,0,0,0,0,1,4,2017,2026
 527295,Ori Dahan,4769,Ihud Bnei Sakhnin,Centre-Back,26,Israel,0,10,4,15,364,181,14095,5,2,53,6,32,3,2017,2026
-486766,Aílson Tavares,3793,Beitar Jerusalem,Defensive Midfield,28,Cape Verde,42,11,8,16,285,129,8038,1,1,20,6,34,8,2016,2026
+486766,Aílson Tavares,3793,Beitar Jerusalem,Defensive Midfield,28,Cape Verde,42,11,8,16,286,130,8128,1,1,20,6,34,8,2016,2026
 1306588,Nadav Markovich,6028,Ironi Kiryat Shmona,Defensive Midfield,22,Israel,24,3,4,4,95,56,2371,1,0,6,2,8,0,2024,2026
-1072324,Chipyoka Songa,262,Hapoel Petah Tikva,Attacking Midfield,21,Zambia,17,5,4,11,136,99,7240,23,20,48,16,17,4,2022,2026
 1002502,Anas Sarsur,3785,Maccabi Petah Tikva,Right Winger,20,Israel,0,4,2,5,44,30,1160,2,0,0,0,5,9,2021,2026
-1231372,Noam Shahar,2976,Hapoel Beer Sheva,Centre-Forward,22,Israel,0,5,3,8,100,41,793,9,0,0,0,1,0,2021,2026
+1072324,Chipyoka Songa,262,Hapoel Petah Tikva,Attacking Midfield,21,Zambia,17,5,4,11,136,99,7240,23,20,48,16,17,4,2022,2026
+1231372,Noam Shahar,2976,Hapoel Beer Sheva,Centre-Forward,22,Israel,0,5,3,9,114,41,793,9,0,0,0,1,0,2021,2026
 1098925,Itay Malma,119,Maccabi Tel Aviv,Centre-Back,19,Israel,0,3,2,9,71,13,593,0,0,0,0,1,2,2022,2026
-896338,Kervin Andrade,119,Maccabi Tel Aviv,Attacking Midfield,21,Venezuela,10,7,5,23,315,169,7306,22,13,125,33,19,12,2020,2026
+896338,Kervin Andrade,119,Maccabi Tel Aviv,Attacking Midfield,21,Venezuela,10,7,5,23,316,169,7306,22,13,125,33,19,12,2020,2026
 1341625,Arad Gaist,1064,Maccabi Haifa,Defender,18,Israel,39,3,1,2,10,6,194,0,0,0,0,0,4,2024,2026
-396645,Goni Naor,2785,Hapoel Ramat Gan,Defensive Midfield,27,Israel,5,12,5,17,403,248,17622,9,7,11,2,39,5,2015,2026
 1083164,Lior Kassa,3785,Maccabi Petah Tikva,Central Midfield,21,Israel,0,7,5,14,244,63,3050,1,4,21,4,14,16,2020,2026
+396645,Goni Naor,2785,Hapoel Ramat Gan,Defensive Midfield,27,Israel,5,12,5,17,403,248,17622,9,7,11,2,39,5,2015,2026
 1594843,Dixon Mohammed,1064,Maccabi Haifa,Central Midfield,18,Ghana,0,1,1,2,10,9,431,1,0,0,0,4,0,2026,2026
 322702,Manuel Benson,1064,Maccabi Haifa,Right Winger,29,Angola,14,14,9,27,585,283,14691,40,43,310,101,12,13,2013,2026
 1075641,Omer Dahan,1064,Maccabi Haifa,Centre-Forward,21,Israel,0,5,3,9,109,40,2154,13,0,4,0,1,11,2022,2026
-950442,Or Israelov,262,Hapoel Petah Tikva,Centre-Back,22,Israel,0,6,4,15,209,81,6019,1,0,5,0,12,29,2021,2026
-258011,Xande Silva,1017,Hapoel Tel Aviv,Left Winger,29,Portugal,10,16,12,37,894,331,17021,52,19,241,96,45,64,2011,2026
 1057292,Hamza Shibli,1064,Maccabi Haifa,Left Winger,22,Israel,0,5,8,13,158,102,3767,5,6,20,8,6,12,2022,2026
+950442,Or Israelov,262,Hapoel Petah Tikva,Centre-Back,22,Israel,0,6,4,15,209,81,6019,1,0,5,0,12,29,2021,2026
+258011,Xande Silva,1017,Hapoel Tel Aviv,Left Winger,29,Portugal,10,16,12,37,896,331,17021,52,19,241,96,45,64,2011,2026
 1364959,Amit Korenfein,3793,Beitar Jerusalem,Goalkeeper,21,Israel,1,3,1,4,69,0,0,0,0,0,0,0,0,2024,2026
 926474,Yan Yusupov,3793,Beitar Jerusalem,Right Winger,21,Israel,21,6,4,9,147,40,1941,7,1,7,3,4,13,2021,2026
 1231375,Ilay Tovim,3785,Maccabi Petah Tikva,Goalkeeper,22,Israel,0,3,2,3,57,0,0,0,0,0,0,0,0,2023,2026
@@ -205,13 +204,14 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1181944,Omer Shirazi,3785,Maccabi Petah Tikva,Right-Back,25,Israel,14,6,3,4,114,70,5483,4,2,0,0,15,0,2020,2026
 1476943,Yanir Zeigerman,3785,Maccabi Petah Tikva,Centre-Back,21,Israel,3,2,1,3,39,0,0,0,0,0,0,0,0,2025,2026
 1381679,Noam Shemesh,3785,Maccabi Petah Tikva,Attacking Midfield,20,Israel,16,3,3,4,62,24,1139,2,0,0,0,7,0,2024,2026
-604796,Carlitos,4769,Ihud Bnei Sakhnin,Central Midfield,27,Angola,18,9,6,7,253,115,7492,6,3,0,0,18,0,2018,2026
 982569,Yuval Kretzo,3785,Maccabi Petah Tikva,Attacking Midfield,21,Israel,91,5,2,9,102,26,959,0,2,2,0,1,10,2021,2026
+604796,Carlitos,4769,Ihud Bnei Sakhnin,Central Midfield,27,Angola,18,9,6,7,253,115,7492,6,3,0,0,18,0,2018,2026
 1002505,Amit Banay,2785,Hapoel Ramat Gan,Centre-Back,20,Israel,44,5,2,6,58,12,834,0,0,0,0,0,11,2021,2026
 640522,Hod Messika,2785,Hapoel Ramat Gan,Right Winger,26,Israel,14,10,2,3,296,152,7768,8,8,0,0,33,0,2017,2026
 378972,Guy Hadida,3785,Maccabi Petah Tikva,Attacking Midfield,31,Israel,0,13,13,12,408,280,16155,50,23,94,40,29,0,2014,2026
 1476659,Shalev Sardal,810,Hapoel Haifa,Right-Back,20,Israel,0,1,2,2,3,0,0,0,0,0,0,0,0,2025,2025
 1325532,Yanal Bazdog,1017,Hapoel Tel Aviv,Goalkeeper,17,Israel,33,3,1,3,18,9,732,0,0,0,0,0,9,2024,2026
+376571,Antonio Sefer,4769,Ihud Bnei Sakhnin,Right Winger,26,Romania,0,13,8,21,420,283,17588,46,30,223,95,34,28,2014,2026
 1191694,Jad Shibli,1064,Maccabi Haifa,Right Winger,20,Israel,0,4,4,7,54,17,567,1,1,1,0,2,6,2023,2026
 1396408,Yuval Shalev,3793,Beitar Jerusalem,Centre-Back,20,Israel,0,3,1,4,57,0,0,0,0,0,0,0,0,2024,2026
 1494469,Ben Parduaro,2785,Hapoel Ramat Gan,Goalkeeper,20,Israel,22,2,1,3,43,0,0,0,0,0,0,0,0,2025,2026
@@ -219,96 +219,96 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 930521,Ofek Melika,119,Maccabi Tel Aviv,Goalkeeper,21,Israel,22,7,3,15,196,81,7074,0,0,0,0,3,33,2020,2026
 359975,Yoav Gerafi,810,Hapoel Haifa,Goalkeeper,33,Israel,1,16,6,16,600,319,28473,0,1,0,0,22,4,2011,2026
 200575,Roi Mishpati,119,Maccabi Tel Aviv,Goalkeeper,33,Israel,90,18,4,15,678,233,20660,0,0,0,0,21,0,2009,2026
-919538,Roy Revivo,119,Maccabi Tel Aviv,Left-Back,23,Israel,0,7,3,22,295,217,17376,14,37,132,44,41,56,2020,2026
 1364962,Shalev Saadya,119,Maccabi Tel Aviv,Goalkeeper,20,Israel,51,3,1,8,77,0,0,0,0,0,0,0,0,2024,2026
+919538,Roy Revivo,119,Maccabi Tel Aviv,Left-Back,23,Israel,0,7,3,22,296,217,17376,14,37,132,44,41,56,2020,2026
 811805,Tyrese Asante,119,Maccabi Tel Aviv,Centre-Back,24,Netherlands,6,7,4,15,312,206,15600,9,7,68,20,45,6,2020,2026
-426723,Mohamed Camara,119,Maccabi Tel Aviv,Centre-Back,29,Guinea,5,12,5,23,582,320,25913,14,8,104,30,92,35,2015,2026
+426723,Mohamed Camara,119,Maccabi Tel Aviv,Centre-Back,29,Guinea,5,12,5,23,583,321,26093,14,8,104,30,92,36,2015,2026
 982568,Noam Ben Harush,119,Maccabi Tel Aviv,Right-Back,21,Israel,21,6,2,15,208,156,11140,4,12,54,21,19,44,2021,2026
 815672,Heitor,119,Maccabi Tel Aviv,Centre-Back,25,Brazil,4,8,6,20,311,140,10767,7,4,37,5,20,0,2019,2026
-396635,Raz Shlomo,119,Maccabi Tel Aviv,Centre-Back,27,Israel,13,12,4,22,521,345,26389,13,6,43,9,70,55,2015,2026
+396635,Raz Shlomo,119,Maccabi Tel Aviv,Centre-Back,27,Israel,13,12,4,22,522,346,26479,13,6,43,9,71,56,2015,2026
 668590,Itay Ben Hemo,119,Maccabi Tel Aviv,Centre-Back,24,Israel,41,10,4,13,268,161,11763,12,4,22,8,29,24,2017,2026
 624717,Denny Gropper,119,Maccabi Tel Aviv,Left-Back,27,Israel,14,10,6,22,498,185,10768,8,8,8,2,19,18,2017,2026
 1178431,Idan Weinberg,119,Maccabi Tel Aviv,Centre-Back,18,Israel,52,5,2,7,59,17,920,0,0,0,0,2,8,2022,2026
 507223,Kristijan Belic,119,Maccabi Tel Aviv,Defensive Midfield,25,Serbia,17,11,9,30,427,206,12417,8,13,87,26,71,21,2016,2026
 740674,Issouf Sissokho,119,Maccabi Tel Aviv,Defensive Midfield,24,Mali,28,8,3,14,277,175,10728,3,8,72,16,42,3,2019,2026
-204987,Dor Peretz,119,Maccabi Tel Aviv,Attacking Midfield,31,Israel,42,16,3,25,745,545,40586,105,46,422,172,96,84,2010,2026
+204987,Dor Peretz,119,Maccabi Tel Aviv,Attacking Midfield,31,Israel,42,16,3,25,746,546,40676,105,46,422,172,96,85,2010,2026
 519506,Ido Shahar,119,Maccabi Tel Aviv,Central Midfield,25,Israel,36,11,6,25,453,316,18059,47,23,108,38,18,67,2016,2026
-1261451,Ilay Ben Simon,119,Maccabi Tel Aviv,Attacking Midfield,17,Israel,60,4,2,11,87,39,2228,9,3,4,3,0,28,2023,2026
-366929,Ben Lederman,119,Maccabi Tel Aviv,Defensive Midfield,25,Poland,23,8,4,15,311,156,7866,3,10,40,10,21,3,2019,2026
+1261451,Ilay Ben Simon,119,Maccabi Tel Aviv,Attacking Midfield,17,Israel,60,4,2,11,89,40,2306,9,3,4,3,0,29,2023,2026
 648091,Itamar Noy,119,Maccabi Tel Aviv,Defensive Midfield,25,Israel,30,9,6,14,271,199,9647,20,15,41,11,19,4,2018,2026
 1181939,Roei Magor,119,Maccabi Tel Aviv,Defensive Midfield,19,Israel,53,3,1,5,43,18,1036,3,0,1,1,0,18,2023,2025
+366929,Ben Lederman,119,Maccabi Tel Aviv,Defensive Midfield,25,Poland,23,8,4,15,311,156,7866,3,10,40,10,21,3,2019,2026
 1121990,Lotem Asras,119,Maccabi Tel Aviv,Central Midfield,19,Israel,0,5,2,11,54,23,1237,5,1,1,0,3,14,2022,2026
-840836,Hélio Varela,119,Maccabi Tel Aviv,Left Winger,24,Cape Verde,29,7,6,26,237,167,10583,21,14,154,51,16,23,2020,2026
 1002520,Sayed Abu Farkhi,119,Maccabi Tel Aviv,Centre-Forward,20,Israel,0,6,4,18,217,150,8354,31,8,121,42,22,40,2021,2026
+840836,Hélio Varela,119,Maccabi Tel Aviv,Left Winger,24,Cape Verde,29,7,6,26,240,168,10673,21,14,155,51,16,24,2020,2026
 211847,Osher Davida,119,Maccabi Tel Aviv,Right Winger,25,Israel,77,10,4,20,378,304,16306,38,32,198,74,38,49,2017,2026
-403177,Emir Sahiti,119,Maccabi Tel Aviv,Right Winger,26,Kosovo,70,13,8,19,507,283,16682,38,29,233,74,34,18,2014,2026
 1079637,Elad Madmon,119,Maccabi Tel Aviv,Centre-Forward,22,Israel,19,5,2,14,191,146,6861,26,10,167,70,18,14,2022,2026
+403177,Emir Sahiti,119,Maccabi Tel Aviv,Right Winger,26,Kosovo,70,13,8,19,507,283,16682,38,29,233,74,34,18,2014,2026
 438310,Ion Nicolaescu,119,Maccabi Tel Aviv,Centre-Forward,28,Moldova,98,12,8,27,494,295,15586,83,20,221,101,36,67,2015,2026
 293603,Sagiv Jehezkel,119,Maccabi Tel Aviv,Right Winger,31,Israel,11,16,7,20,599,340,19383,63,38,135,54,96,30,2011,2026
 1164740,Itay Zafrani,810,Hapoel Haifa,Centre-Forward,19,Israel,0,4,2,3,20,15,640,3,1,1,0,0,9,2022,2026
 496005,Sharif Kaiuf,1064,Maccabi Haifa,Goalkeeper,25,Israel,40,10,4,18,366,195,17276,0,2,0,0,20,32,2016,2025
 411030,Roei Fucs,1064,Maccabi Haifa,Goalkeeper,26,Israel,77,10,4,12,382,26,2169,0,0,0,0,0,0,2016,2025
 1164747,Glenn Alvin,1064,Maccabi Haifa,Goalkeeper,19,Israel,90,4,2,4,27,4,315,0,0,0,0,1,3,2023,2026
-1057319,Lisav Eissat,1064,Maccabi Haifa,Centre-Back,20,Romania,24,7,4,14,134,102,8057,5,3,36,10,20,20,2019,2026
-460378,Jelle Bataille,1064,Maccabi Haifa,Right-Back,27,Belgium,25,11,3,17,438,312,22724,8,27,86,33,45,16,2016,2026
+1057319,Lisav Eissat,1064,Maccabi Haifa,Centre-Back,20,Romania,24,7,4,14,135,103,8147,5,3,36,10,21,21,2019,2026
 1381476,Yinon Faingezicht,1064,Maccabi Haifa,Left-Back,19,Israel,29,3,2,7,60,39,2534,1,2,11,3,6,9,2024,2026
+460378,Jelle Bataille,1064,Maccabi Haifa,Right-Back,27,Belgium,25,11,3,17,438,312,22724,8,27,86,33,45,16,2016,2026
 585264,Pedrão,1064,Maccabi Haifa,Centre-Back,29,Brazil,44,11,7,17,419,169,14508,7,2,76,23,55,0,2015,2026
 204982,Shon Goldberg,1064,Maccabi Haifa,Centre-Back,31,Israel,3,17,7,22,642,412,33065,4,13,35,6,42,47,2010,2026
 536156,Pierre Cornud,1064,Maccabi Haifa,Left-Back,29,France,27,14,11,24,484,306,23969,2,28,32,10,80,0,2013,2026
 265383,Abdoulaye Seck,1064,Maccabi Haifa,Centre-Back,33,Senegal,30,16,7,27,617,376,29998,35,16,162,55,72,23,2010,2026
+1469687,Noam Sztejfman,1064,Maccabi Haifa,Centre-Back,18,Israel,35,4,2,8,59,37,2513,5,1,4,2,2,15,2023,2026
 668589,Roey Elimelech,3793,Beitar Jerusalem,Right-Back,24,Israel,14,9,4,13,260,163,10957,12,5,54,15,33,29,2017,2026
-1469687,Noam Sztejfman,1064,Maccabi Haifa,Centre-Back,18,Israel,35,4,2,8,58,37,2513,5,1,4,2,2,15,2023,2026
 709267,Zohar Zasano,1064,Maccabi Haifa,Right-Back,24,Israel,2,8,3,6,288,195,12430,1,7,20,4,23,8,2019,2026
 1123856,Elad Amir,1064,Maccabi Haifa,Centre-Back,20,Israel,37,5,2,6,103,19,1310,2,0,1,1,0,2,2022,2026
 1453823,Tommy Tsitsuashvili,1064,Maccabi Haifa,Left-Back,19,Israel,0,2,3,5,54,25,992,0,2,0,0,2,0,2025,2026
-668603,Ethane Azoulay,1064,Maccabi Haifa,Central Midfield,24,Israel,19,9,4,15,322,232,15269,21,10,180,62,59,37,2018,2026
+668603,Ethane Azoulay,1064,Maccabi Haifa,Central Midfield,24,Israel,19,9,4,15,323,233,15339,21,10,182,62,59,38,2018,2026
 668940,Cédric Don,1064,Maccabi Haifa,Central Midfield,22,Cote d'Ivoire,45,6,2,5,160,136,8931,20,6,134,45,7,3,2018,2026
-339006,Ali Mohamed,1064,Maccabi Haifa,Defensive Midfield,31,Niger,4,15,5,17,642,454,33817,9,29,19,5,80,48,2012,2026
+339006,Ali Mohamed,1064,Maccabi Haifa,Defensive Midfield,31,Niger,4,15,5,17,643,455,33862,9,29,19,5,80,49,2012,2026
 1456603,Navot Ratner,1064,Maccabi Haifa,Defensive Midfield,19,Israel,36,2,2,7,46,32,2081,1,2,12,3,5,6,2025,2026
-209019,Kenny Saief,1064,Maccabi Haifa,Left Midfield,32,United States,16,18,12,26,767,444,27863,54,43,138,43,69,18,2008,2026
 1191693,Amit Arazi,1064,Maccabi Haifa,Central Midfield,21,Israel,31,4,3,6,60,37,2703,3,0,1,0,8,0,2023,2026
+209019,Kenny Saief,1064,Maccabi Haifa,Left Midfield,32,United States,16,18,12,26,767,444,27863,54,43,138,43,69,18,2008,2026
+1381475,Daniel Darzi,1064,Maccabi Haifa,Attacking Midfield,18,Israel,0,3,3,6,51,24,1062,2,1,2,1,1,2,2024,2026
 169670,Michael Ohana,1064,Maccabi Haifa,Attacking Midfield,29,Israel,26,16,6,16,563,302,17003,32,22,32,9,26,36,2010,2025
 880054,Trivante Stewart,1064,Maccabi Haifa,Centre-Forward,25,Jamaica,9,7,8,18,245,177,11991,61,5,199,76,22,4,2019,2026
-1381475,Daniel Darzi,1064,Maccabi Haifa,Attacking Midfield,18,Israel,0,3,3,6,51,24,1062,2,1,2,1,1,2,2024,2026
+783327,Silva Kani,1064,Maccabi Haifa,Right Winger,23,Israel,26,8,5,10,273,151,5864,26,9,54,22,11,0,2019,2026
 540827,Suf Podgoreanu,1064,Maccabi Haifa,Left Winger,23,Israel,0,11,7,24,398,164,9070,15,23,80,20,16,33,2016,2026
 778540,Xander Severina,1064,Maccabi Haifa,Right Winger,24,Curacao,0,7,6,25,289,171,9157,27,24,151,72,13,5,2020,2026
-783327,Silva Kani,1064,Maccabi Haifa,Right Winger,23,Israel,26,8,5,10,273,151,5864,26,9,54,22,11,0,2019,2026
-374889,Kenji Gorré,1064,Maccabi Haifa,Left Winger,32,Curacao,11,15,10,33,663,347,22243,71,65,330,118,45,43,2009,2026
-376460,Djordje Jovanovic,1064,Maccabi Haifa,Centre-Forward,26,Serbia,99,13,8,28,510,262,14894,86,25,192,81,27,29,2014,2026
 142532,Guy Melamed,1064,Maccabi Haifa,Centre-Forward,33,Israel,18,16,9,17,619,433,27865,162,25,236,116,23,3,2011,2026
+374889,Kenji Gorré,1064,Maccabi Haifa,Left Winger,32,Curacao,11,15,10,34,665,349,22331,71,65,330,118,45,45,2009,2026
 1474305,Niv Gabay,6028,Ironi Kiryat Shmona,Centre-Forward,19,Israel,39,2,3,5,41,26,1076,4,2,18,10,2,2,2025,2026
-112008,Ofir Marciano,2976,Hapoel Beer Sheva,Goalkeeper,37,Israel,1,20,5,27,859,425,37661,0,0,0,0,15,40,2007,2026
+376460,Djordje Jovanovic,1064,Maccabi Haifa,Centre-Forward,26,Serbia,99,13,8,28,510,262,14894,86,25,192,81,27,29,2014,2026
 1002504,Itay Hemi,2976,Hapoel Beer Sheva,Goalkeeper,19,Israel,0,4,2,8,63,14,1200,0,0,0,0,0,3,2021,2026
+112008,Ofir Marciano,2976,Hapoel Beer Sheva,Goalkeeper,37,Israel,1,20,5,27,859,425,37661,0,0,0,0,15,40,2007,2026
 1159590,Yonatan Shani,2976,Hapoel Beer Sheva,Goalkeeper,20,Israel,36,4,1,9,72,2,180,0,0,0,0,0,2,2023,2026
 468540,Or Blorian,2976,Hapoel Beer Sheva,Centre-Back,25,Israel,5,11,5,21,414,254,20319,7,8,41,15,50,47,2015,2025
-704071,Guy Mizrahi,2976,Hapoel Beer Sheva,Right-Back,25,Israel,2,9,6,15,316,239,18188,9,14,59,21,34,19,2018,2026
+704071,Guy Mizrahi,2976,Hapoel Beer Sheva,Right-Back,25,Israel,2,9,6,15,317,239,18188,9,14,59,21,34,19,2018,2026
 568733,Djibril Diop,2976,Hapoel Beer Sheva,Centre-Back,27,Senegal,44,11,7,19,249,144,10493,6,1,44,15,27,0,2015,2026
-355395,Matan Baltaxa,2976,Hapoel Beer Sheva,Centre-Back,31,Israel,3,14,7,21,642,329,23366,17,13,36,8,55,5,2013,2026
 468548,Roy Levy,262,Hapoel Petah Tikva,Right-Back,26,Israel,0,12,5,14,338,210,12610,16,30,71,32,20,11,2015,2026
-171068,Hélder Lopes,2976,Hapoel Beer Sheva,Left-Back,36,Portugal,22,18,9,20,654,449,36587,34,36,131,37,109,0,2009,2026
+355395,Matan Baltaxa,2976,Hapoel Beer Sheva,Centre-Back,31,Israel,3,14,7,21,642,329,23366,17,13,36,8,55,5,2013,2026
+171068,Hélder Lopes,2976,Hapoel Beer Sheva,Left-Back,36,Portugal,22,18,9,20,655,449,36587,34,36,131,37,109,0,2009,2026
 57814,Miguel Vítor,2976,Hapoel Beer Sheva,Centre-Back,37,Israel,4,20,6,27,1056,547,43560,49,14,81,22,132,36,2007,2026
 140570,Ofir Davidzada,2976,Hapoel Beer Sheva,Left-Back,35,Israel,13,18,3,21,907,510,37438,9,31,15,3,65,32,2009,2026
-520994,Lucas Ventura,2976,Hapoel Beer Sheva,Defensive Midfield,28,Brazil,25,11,6,24,469,219,15010,2,5,145,34,45,0,2016,2026
+520994,Lucas Ventura,2976,Hapoel Beer Sheva,Defensive Midfield,28,Brazil,25,11,6,24,469,219,15010,2,6,145,34,45,0,2016,2026
 444018,Eliel Peretz,2976,Hapoel Beer Sheva,Central Midfield,29,Israel,7,12,7,20,503,337,20270,55,47,173,74,67,27,2015,2026
 467149,Hamode Kanaan,2976,Hapoel Beer Sheva,Attacking Midfield,26,Israel,8,12,3,18,407,252,15318,55,34,145,59,41,51,2015,2026
-848641,Yoan Stoyanov,2976,Hapoel Beer Sheva,Attacking Midfield,25,Bulgaria,27,7,3,17,319,188,12058,21,17,82,28,22,17,2020,2026
 1140586,Itay Hazut,2976,Hapoel Beer Sheva,Attacking Midfield,20,Israel,0,5,2,8,105,19,649,3,1,9,2,4,0,2022,2026
+848641,Yoan Stoyanov,2976,Hapoel Beer Sheva,Attacking Midfield,25,Bulgaria,27,7,3,17,321,190,12238,21,17,82,28,22,19,2020,2026
 966005,Amir Ganah,2976,Hapoel Beer Sheva,Left Winger,22,Israel,11,6,1,12,215,154,7931,18,19,197,68,8,13,2021,2026
 399361,Dan Biton,2976,Hapoel Beer Sheva,Right Winger,31,Israel,10,13,4,16,565,361,23324,74,62,307,121,23,14,2014,2026
-701300,Zahi Ahmed,2976,Hapoel Beer Sheva,Left Winger,25,Israel,9,8,3,9,303,233,14995,43,21,105,44,33,0,2019,2026
+701300,Zahi Ahmed,2976,Hapoel Beer Sheva,Left Winger,25,Israel,9,8,3,10,304,233,14995,43,21,105,44,33,0,2019,2026
 343965,Igor Zlatanovic,2976,Hapoel Beer Sheva,Centre-Forward,28,Serbia,66,14,8,20,527,356,24763,110,29,212,88,39,24,2013,2026
 1078063,Muhammad Abu Rumi,2976,Hapoel Beer Sheva,Right Winger,22,Israel,45,5,2,11,187,121,7352,18,12,88,29,26,18,2022,2026
-563479,Javon East,2976,Hapoel Beer Sheva,Right Winger,31,Jamaica,14,13,6,31,690,480,33449,178,58,78,43,50,24,2013,2026
-1536479,Amit Ohana,2976,Hapoel Beer Sheva,Centre-Forward,19,Israel,19,2,1,6,33,8,195,1,0,7,4,0,0,2025,2026
-1111660,Joseph Sabobo,2976,Hapoel Beer Sheva,Left Winger,19,Zambia,0,5,5,16,179,74,3668,8,1,36,9,7,18,2022,2026
+563479,Javon East,2976,Hapoel Beer Sheva,Right Winger,31,Jamaica,14,13,6,31,691,481,33532,178,58,78,43,50,25,2013,2026
+1536479,Amit Ohana,2976,Hapoel Beer Sheva,Centre-Forward,20,Israel,19,2,1,6,33,8,195,1,0,7,4,0,0,2025,2026
+1111660,Joseph Sabobo,2976,Hapoel Beer Sheva,Left Winger,19,Zambia,0,5,5,16,180,74,3668,8,1,36,9,7,18,2022,2026
 177249,Alon Turgeman,810,Hapoel Haifa,Centre-Forward,35,Israel,17,18,9,18,683,514,30292,142,39,204,101,41,14,2009,2026
 807391,Samir Farhud,51070,Ironi Tiberias,Centre-Forward,25,Israel,0,7,6,7,204,96,4060,10,4,10,5,10,0,2020,2026
-489614,Assaf Tzur,1017,Hapoel Tel Aviv,Goalkeeper,28,Israel,22,12,5,17,429,238,21328,0,1,0,0,21,21,2015,2026
+489614,Assaf Tzur,1017,Hapoel Tel Aviv,Goalkeeper,28,Israel,22,12,5,17,430,238,21328,0,1,0,0,21,21,2015,2026
 1083167,Dor Benyamini,1017,Hapoel Tel Aviv,Goalkeeper,21,Israel,1,5,1,9,124,13,1018,0,0,0,0,0,11,2022,2026
 1017876,Sagi Pinhas,1017,Hapoel Tel Aviv,Goalkeeper,23,Israel,55,7,5,5,203,13,1093,0,0,0,0,1,0,2020,2026
 612342,Chico,1017,Hapoel Tel Aviv,Centre-Back,28,Brazil,4,10,3,13,455,214,15911,10,4,87,23,26,0,2016,2026
-353365,Marcus Coco,1017,Hapoel Tel Aviv,Right-Back,30,Guadeloupe,97,14,6,22,599,377,21325,16,19,165,34,59,20,2013,2026
-413245,Fernand Mayembo,1017,Hapoel Tel Aviv,Centre-Back,30,Congo,5,13,9,19,488,285,24350,6,1,71,14,50,17,2014,2026
+413245,Fernand Mayembo,1017,Hapoel Tel Aviv,Centre-Back,30,Congo,5,13,9,19,488,285,24350,6,3,71,14,50,17,2014,2026
+353365,Marcus Coco,1017,Hapoel Tel Aviv,Right-Back,30,Guadeloupe,97,14,6,22,601,378,21415,16,19,165,34,59,21,2013,2026
 668596,Doron Leidner,1017,Hapoel Tel Aviv,Left-Back,24,Israel,16,9,6,24,358,147,9341,5,11,19,5,25,23,2018,2026
 919539,Tal Archel,1017,Hapoel Tel Aviv,Centre-Back,23,Israel,18,6,2,9,150,79,5709,1,0,15,1,11,15,2021,2026
 204988,Shahar Piven,1017,Hapoel Tel Aviv,Right-Back,31,Israel,21,14,5,15,510,295,21403,2,3,30,2,47,8,2010,2026
@@ -316,7 +316,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 831137,Yazen Nassar,262,Hapoel Petah Tikva,Left-Back,29,Israel,72,10,5,5,240,137,8674,3,6,12,1,24,0,2017,2026
 1312769,Ofek Chiprot,1017,Hapoel Tel Aviv,Left-Back,17,Israel,0,3,1,3,17,12,725,0,0,0,0,1,12,2023,2025
 1498008,Elay Mori,1017,Hapoel Tel Aviv,Right-Back,18,Israel,0,2,2,3,15,8,602,0,0,0,0,1,0,2025,2026
-820371,Andrian Kraev,1017,Hapoel Tel Aviv,Central Midfield,27,Bulgaria,6,10,5,16,348,231,16098,18,16,67,11,61,22,2016,2026
+820371,Andrian Kraev,1017,Hapoel Tel Aviv,Central Midfield,27,Bulgaria,6,10,5,16,350,233,16259,18,16,67,11,63,24,2016,2026
 984971,Ran Binyamin,1017,Hapoel Tel Aviv,Central Midfield,21,Israel,0,5,2,11,217,154,8658,22,18,55,21,20,32,2021,2025
 967560,Roei Alkukin,1017,Hapoel Tel Aviv,Attacking Midfield,22,Israel,15,6,2,9,139,114,5100,11,11,42,14,11,14,2021,2026
 643195,Falcão,1017,Hapoel Tel Aviv,Defensive Midfield,28,Brazil,98,9,7,16,408,265,16274,3,1,77,11,57,0,2018,2026
@@ -324,10 +324,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 919522,Ari Cohen,51070,Ironi Tiberias,Central Midfield,23,Israel,8,6,4,7,165,100,4886,12,4,14,3,7,2,2021,2026
 761351,El Yam Kancepolsky,1017,Hapoel Tel Aviv,Defensive Midfield,22,Israel,14,8,1,12,237,127,6361,3,6,19,4,20,33,2019,2026
 1410260,Yishay Brosh,1017,Hapoel Tel Aviv,Defensive Midfield,18,Israel,0,3,2,3,18,6,446,1,0,0,0,2,0,2024,2026
-615033,Loizos Loizou,1017,Hapoel Tel Aviv,Right Winger,21,Cyprus,75,9,4,22,424,309,18082,47,36,123,51,25,57,2018,2026
 806427,Stav Turiel,1017,Hapoel Tel Aviv,Right Winger,25,Israel,11,7,3,8,256,180,10815,47,35,100,41,15,5,2020,2026
-332612,Emmanuel Boateng,1017,Hapoel Tel Aviv,Centre-Forward,30,Ghana,9,13,7,22,479,329,19428,68,29,365,119,48,11,2013,2026
+615033,Loizos Loizou,1017,Hapoel Tel Aviv,Right Winger,21,Cyprus,75,9,4,22,426,310,18159,47,36,124,51,26,58,2018,2026
 1309653,Daniel Dappa,1017,Hapoel Tel Aviv,Centre-Forward,19,Israel,44,3,2,7,103,81,3814,11,5,92,39,5,10,2024,2026
+332612,Emmanuel Boateng,1017,Hapoel Tel Aviv,Centre-Forward,30,Ghana,9,13,7,22,479,329,19428,68,29,365,119,48,11,2013,2026
 668591,Roy Korine,1017,Hapoel Tel Aviv,Right Winger,24,Israel,7,10,4,9,307,165,6621,22,17,38,10,17,20,2017,2026
 185191,Omri Altman,1017,Hapoel Tel Aviv,Left Winger,32,Israel,51,17,9,27,626,427,27901,85,36,155,55,51,34,2010,2026
 376895,Liran Rotman,810,Hapoel Haifa,Left Winger,30,Israel,26,13,7,8,432,277,15739,41,28,99,36,31,0,2014,2026
@@ -340,66 +340,65 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1312807,Ido Zavaro,3793,Beitar Jerusalem,Goalkeeper,17,Israel,0,2,1,5,35,3,225,0,0,0,0,0,3,2024,2025
 431453,Luka Gadrani,3793,Beitar Jerusalem,Centre-Back,29,Georgia,44,12,8,21,389,222,18134,10,3,36,10,39,4,2014,2026
 652362,Brayan Carabalí,3793,Beitar Jerusalem,Centre-Back,27,Colombia,4,10,6,15,338,191,15946,11,1,71,16,50,2,2017,2026
-608977,Nana Antwi,3793,Beitar Jerusalem,Right-Back,26,Ghana,2,9,6,14,310,233,17264,5,17,25,4,34,0,2018,2026
 211897,Gil Cohen,3793,Beitar Jerusalem,Centre-Back,26,Israel,5,12,2,9,372,252,19625,3,0,15,5,32,40,2015,2026
+608977,Nana Antwi,3793,Beitar Jerusalem,Right-Back,26,Ghana,2,9,6,14,310,233,17264,5,17,25,4,34,0,2018,2026
 459559,Yarden Cohen,3793,Beitar Jerusalem,Left-Back,29,Israel,16,12,3,11,411,265,20369,13,21,70,21,42,5,2015,2026
 166275,Grigoriy Morozov,5223,Maccabi Netanya,Left-Back,32,Russia,2,18,8,19,643,382,28310,20,24,87,18,88,30,2009,2026
 972728,Liel Deri,3793,Beitar Jerusalem,Centre-Back,23,Israel,25,5,3,6,126,31,1572,0,0,2,0,4,0,2021,2026
-926479,Yarin Levi,1064,Maccabi Haifa,Central Midfield,21,Israel,8,6,3,12,174,114,7843,2,4,62,11,14,29,2021,2026
+926479,Yarin Levi,1064,Maccabi Haifa,Central Midfield,21,Israel,8,6,3,12,162,114,7843,2,4,62,11,14,29,2021,2026
 965996,Adi Yona,3793,Beitar Jerusalem,Attacking Midfield,22,Israel,10,6,1,11,245,164,9485,21,12,124,47,10,25,2021,2026
 624829,Boris Enow,3793,Beitar Jerusalem,Defensive Midfield,26,Cameroon,40,9,6,15,257,204,14415,11,7,85,19,56,1,2018,2026
-668676,Aviel Zargari,3793,Beitar Jerusalem,Defensive Midfield,22,Israel,0,10,6,17,320,149,8805,2,3,25,7,34,32,2017,2026
 1057294,Ziv Ben Shimol,3793,Beitar Jerusalem,Attacking Midfield,22,Israel,8,5,5,11,158,108,5458,10,5,17,10,8,5,2022,2026
-178195,Dor Micha,3793,Beitar Jerusalem,Attacking Midfield,33,Israel,0,18,5,22,791,637,40016,56,120,52,17,59,22,2009,2026
+668676,Aviel Zargari,3793,Beitar Jerusalem,Defensive Midfield,22,Israel,0,10,6,17,320,149,8805,2,3,25,7,34,32,2017,2026
 1516106,Shahar Visagie,3793,Beitar Jerusalem,Central Midfield,19,Israel,0,2,2,3,7,0,0,0,0,0,0,0,0,2025,2026
+178195,Dor Micha,3793,Beitar Jerusalem,Attacking Midfield,33,Israel,0,18,5,22,791,637,40016,56,120,52,17,59,22,2009,2026
 1533445,Itay Shushan,3793,Beitar Jerusalem,Midfield,18,Israel,0,1,1,2,3,0,0,0,0,0,0,0,0,2025,2025
-144410,Yarden Shua,3793,Beitar Jerusalem,Left Winger,27,Israel,7,12,3,13,437,317,21408,83,78,210,84,72,20,2015,2026
+144410,Yarden Shua,3793,Beitar Jerusalem,Left Winger,27,Israel,7,12,3,13,438,318,21422,83,78,210,84,72,21,2015,2026
 294568,Omer Atzili,3793,Beitar Jerusalem,Right Winger,33,Israel,77,17,8,27,763,505,33535,164,94,280,120,79,11,2010,2026
-838636,Timothy Muzie,3793,Beitar Jerusalem,Right Winger,25,Israel,11,7,5,10,266,203,11234,23,14,125,42,37,2,2020,2026
 993537,Johnbosco Samuel Kalu,3793,Beitar Jerusalem,Centre-Forward,28,Nigeria,9,6,2,7,173,89,5770,22,5,168,58,12,0,2021,2026
+838636,Timothy Muzie,3793,Beitar Jerusalem,Right Winger,25,Israel,11,7,5,10,266,203,11234,23,14,125,42,37,2,2020,2026
 840883,Efmamjjasond González,3793,Beitar Jerusalem,Centre-Forward,26,Colombia,0,6,8,15,206,142,9182,48,8,260,98,34,0,2020,2025
 293602,Dor Hugi,5223,Maccabi Netanya,Centre-Forward,31,Israel,11,16,12,18,542,415,23723,79,50,204,82,21,25,2010,2026
 919542,Ravid Abergil,3793,Beitar Jerusalem,Left Winger,22,Israel,18,6,4,8,132,64,2316,8,2,41,15,15,2,2021,2026
 1516107,Yan Shicot,3793,Beitar Jerusalem,Left Winger,19,Israel,21,2,1,2,23,2,12,0,0,1,0,0,0,2025,2026
 307401,Niv Antman,5223,Maccabi Netanya,Goalkeeper,34,Israel,45,16,8,9,505,176,15670,0,2,0,0,4,1,2010,2026
 984970,Tomer Tzarfati,5223,Maccabi Netanya,Goalkeeper,21,Israel,1,7,2,12,202,55,4843,0,0,0,0,7,18,2019,2026
-1060543,Bakary Konaté,5223,Maccabi Netanya,Centre-Back,23,Mali,6,5,4,11,146,61,4803,3,0,10,2,13,0,2022,2026
 1121987,Daniel Cohen,5223,Maccabi Netanya,Goalkeeper,20,Israel,75,4,1,6,53,2,38,0,0,0,0,0,1,2022,2026
+1060543,Bakary Konaté,5223,Maccabi Netanya,Centre-Back,23,Mali,6,5,4,11,146,61,4803,3,0,10,2,13,0,2022,2026
 661758,Karem Jaber,5223,Maccabi Netanya,Right-Back,26,Israel,26,9,1,9,294,236,17292,3,12,11,2,64,22,2018,2026
 724957,Saba Khvadagiani,5223,Maccabi Netanya,Centre-Back,23,Georgia,40,9,3,22,339,199,16085,11,8,15,3,34,49,2018,2026
-781572,Rotem Keller,5223,Maccabi Netanya,Left-Back,22,Israel,72,10,5,10,258,165,11042,4,6,51,22,16,7,2017,2026
 1341620,Benny Feldman,5223,Maccabi Netanya,Centre-Back,19,Israel,44,3,1,6,53,18,1246,0,0,8,2,2,4,2024,2026
-426943,Mohamed Djetei,5223,Maccabi Netanya,Centre-Back,30,Cameroon,0,12,6,17,415,228,18119,9,2,42,6,40,9,2015,2026
+781572,Rotem Keller,5223,Maccabi Netanya,Left-Back,22,Israel,72,10,5,10,258,165,11042,4,6,51,22,16,7,2017,2026
 966028,Denis Kulikov,5223,Maccabi Netanya,Centre-Back,22,Israel,5,6,2,8,162,62,4431,1,0,8,3,7,11,2021,2026
+426943,Mohamed Djetei,5223,Maccabi Netanya,Centre-Back,30,Cameroon,0,12,6,17,416,228,18119,9,2,42,6,40,9,2015,2026
 925796,Itay Ben Shabat,5223,Maccabi Netanya,Centre-Back,26,Israel,4,7,2,5,232,111,8997,5,1,19,6,11,1,2020,2026
 500271,Amit Cohen,5223,Maccabi Netanya,Right-Back,27,Israel,24,11,6,9,362,224,16525,11,11,23,8,24,9,2016,2026
 739943,Li On Mizrahi,43119,Hapoel Jerusalem,Left-Back,24,Israel,18,10,4,8,262,101,3846,3,1,30,5,7,7,2017,2026
-929371,Basam Zaarura,5223,Maccabi Netanya,Central Midfield,23,Israel,16,6,4,9,214,123,6744,16,8,72,31,16,3,2021,2026
+929371,Basam Zaarura,5223,Maccabi Netanya,Central Midfield,24,Israel,16,6,4,9,214,123,6744,16,8,72,31,16,3,2021,2026
 782015,Oz Bilu,5223,Maccabi Netanya,Attacking Midfield,25,Israel,10,8,2,8,263,216,11102,23,22,186,86,18,13,2019,2026
 678100,Aziz Ouattara,5223,Maccabi Netanya,Defensive Midfield,25,Cote d'Ivoire,32,9,6,17,321,181,11444,10,2,73,12,51,1,2018,2026
 661754,Yuval Sade,5223,Maccabi Netanya,Defensive Midfield,25,Israel,8,9,4,12,336,188,11668,8,6,35,13,28,10,2018,2026
 466538,Maor Levi,5223,Maccabi Netanya,Central Midfield,26,Israel,15,12,4,16,369,209,11044,27,17,105,39,41,24,2015,2026
 347275,Maxim Plakushchenko,2785,Hapoel Ramat Gan,Central Midfield,30,Israel,7,15,6,11,452,343,19908,46,40,168,48,41,22,2012,2026
 182889,Wylan Cyprien,5223,Maccabi Netanya,Central Midfield,31,France,25,17,10,20,625,362,24379,49,22,293,84,49,13,2010,2026
-920394,Gontie Junior Diomandé,5223,Maccabi Netanya,Attacking Midfield,22,Cote d'Ivoire,57,6,6,8,237,124,5657,19,2,43,14,18,0,2021,2026
 761327,Omri Shamir,5223,Maccabi Netanya,Defensive Midfield,23,Israel,18,8,2,5,245,164,10267,7,0,13,5,29,4,2019,2026
 1371927,Lee-Yam Dan,3785,Maccabi Petah Tikva,Defensive Midfield,21,Israel,0,3,3,4,66,27,1801,1,0,2,0,6,0,2024,2026
+920394,Gontie Junior Diomandé,5223,Maccabi Netanya,Attacking Midfield,22,Cote d'Ivoire,57,6,6,8,237,124,5657,19,2,43,14,18,0,2021,2026
 445517,Heri Tavares,5223,Maccabi Netanya,Left Winger,28,Cape Verde,91,13,9,21,467,360,21053,65,39,300,97,56,25,2011,2026
-670522,Matheus Davó,5223,Maccabi Netanya,Centre-Forward,27,Brazil,83,10,12,17,382,204,12770,45,24,370,146,9,0,2016,2026
 576847,Wilson Harris,5223,Maccabi Netanya,Centre-Forward,25,United States,0,9,6,9,332,232,13501,82,10,395,173,31,0,2017,2025
-1075186,Luccas Paraizo,5223,Maccabi Netanya,Centre-Forward,22,Brazil,0,7,8,11,140,91,3911,14,3,47,20,5,0,2019,2026
+1075186,Luccas Paraizo,5223,Maccabi Netanya,Centre-Forward,22,Brazil,0,7,8,11,141,92,3924,14,3,47,20,5,0,2019,2026
 831242,Loai Helf,4769,Ihud Bnei Sakhnin,Second Striker,26,Israel,0,9,6,7,225,131,4808,9,3,43,20,7,0,2017,2026
+670522,Matheus Davó,5223,Maccabi Netanya,Centre-Forward,27,Brazil,83,10,12,17,382,204,12770,45,24,370,146,9,0,2016,2026
 1399755,Liam Cohen,5223,Maccabi Netanya,Right Winger,20,Israel,14,3,1,4,51,10,229,0,0,4,1,0,0,2024,2026
-555831,Marco Wolff,2976,Hapoel Beer Sheva,Goalkeeper,29,Argentina,34,11,4,18,363,140,12689,0,0,0,0,11,0,2016,2026
 875139,Maor Erlich,3785,Maccabi Petah Tikva,Goalkeeper,23,Israel,39,8,2,9,182,83,7425,0,0,0,0,5,5,2019,2026
 926476,Guy Dezent,3785,Maccabi Petah Tikva,Right-Back,21,Israel,26,7,1,11,202,106,6303,3,8,17,6,8,26,2020,2026
 464999,Mohammed Hindi,3785,Maccabi Petah Tikva,Left-Back,31,Israel,0,12,6,9,397,314,24848,23,16,20,10,55,2,2014,2026
 919521,Hadar Fuchs,3785,Maccabi Petah Tikva,Centre-Back,21,Israel,5,8,2,10,233,112,9110,3,0,8,2,8,9,2018,2026
 211877,Aviv Salem,3785,Maccabi Petah Tikva,Left-Back,26,Israel,17,10,6,8,294,205,13899,4,14,20,9,29,0,2017,2026
-919545,Gal Ma'atuk,51070,Ironi Tiberias,Left-Back,23,Israel,0,7,3,8,158,66,4085,2,9,4,1,10,6,2018,2026
+555831,Marco Wolff,2976,Hapoel Beer Sheva,Goalkeeper,29,Argentina,34,11,4,18,363,140,12689,0,0,0,0,11,0,2016,2026
 225803,Ben Vahaba,3785,Maccabi Petah Tikva,Centre-Back,33,Israel,23,16,8,13,613,413,34185,11,6,12,4,94,19,2011,2026
-129771,Eitan Tibi,3785,Maccabi Petah Tikva,Centre-Back,38,Israel,81,21,9,21,982,674,56637,17,6,18,2,67,57,2006,2026
-926457,Niv Yehoshua,2976,Hapoel Beer Sheva,Central Midfield,21,Israel,28,7,2,13,168,156,12172,12,9,63,13,22,38,2019,2026
+129771,Eitan Tibi,3785,Maccabi Petah Tikva,Centre-Back,39,Israel,81,21,9,21,982,674,56637,17,6,18,2,67,57,2006,2026
+919545,Gal Ma'atuk,51070,Ironi Tiberias,Left-Back,23,Israel,0,7,3,8,158,66,4085,2,9,4,1,10,6,2018,2026
 992415,Liran Hazan,3785,Maccabi Petah Tikva,Attacking Midfield,20,Israel,53,6,1,11,162,127,8038,28,15,82,27,12,33,2021,2026
 1083165,Ido Cohen,3785,Maccabi Petah Tikva,Defensive Midfield,21,Israel,20,6,1,10,119,96,7360,8,1,18,6,9,20,2019,2026
 653994,Nowaf Bazea,3785,Maccabi Petah Tikva,Attacking Midfield,24,Israel,7,10,7,6,324,191,10035,29,11,12,4,17,0,2017,2026
@@ -415,24 +414,24 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 930551,Yonatan Laish,43119,Hapoel Jerusalem,Centre-Back,22,Israel,4,7,4,12,207,115,8105,6,2,16,4,3,24,2019,2026
 733893,Noam Malmud,43119,Hapoel Jerusalem,Centre-Back,24,Israel,3,8,1,8,276,183,14113,1,3,7,3,20,10,2019,2026
 640531,Omer Agvadish,43119,Hapoel Jerusalem,Right-Back,25,Israel,16,10,1,8,329,174,11170,2,5,32,6,17,1,2017,2026
-318844,David Domgjoni,43119,Hapoel Jerusalem,Centre-Back,28,Kosovo,66,15,12,26,512,261,19086,7,3,45,9,57,15,2012,2026
 396647,Ofek Nadir,43119,Hapoel Jerusalem,Left-Back,27,Israel,20,12,4,9,304,195,14483,4,14,7,1,17,18,2015,2026
+318844,David Domgjoni,43119,Hapoel Jerusalem,Centre-Back,28,Kosovo,66,15,12,26,512,261,19086,7,3,45,9,57,15,2012,2026
 1305028,Tamir Haimovich,43119,Hapoel Jerusalem,Centre-Back,24,Israel,22,5,4,4,101,72,5798,4,0,16,3,14,0,2022,2026
 492926,Harel Shalom,262,Hapoel Petah Tikva,Left-Back,28,Israel,3,12,5,6,378,227,15215,10,11,11,2,34,0,2015,2026
 311858,Yinon Eliyahu,43119,Hapoel Jerusalem,Right-Back,31,Israel,2,13,8,9,444,260,19214,13,9,16,4,48,0,2014,2026
-1489152,John Otomewo,43119,Hapoel Jerusalem,Defensive Midfield,18,Nigeria,13,2,2,4,36,30,1937,1,0,26,8,5,0,2025,2026
+1489152,John Otomewo,43119,Hapoel Jerusalem,Defensive Midfield,18,Nigeria,13,2,2,5,37,30,1937,1,0,26,8,5,0,2025,2026
 872981,Ayano Farada,43119,Hapoel Jerusalem,Defensive Midfield,24,Israel,21,8,1,9,234,65,4280,3,3,11,2,14,8,2019,2026
 703419,Ilay Madmon,43119,Hapoel Jerusalem,Central Midfield,23,Israel,8,9,4,14,329,195,10937,10,14,41,11,21,44,2018,2026
-538303,Awaka Eshata,43119,Hapoel Jerusalem,Defensive Midfield,25,Israel,16,10,2,7,366,245,14464,12,6,55,22,48,0,2016,2025
 926473,Yanai Distalfeld,43119,Hapoel Jerusalem,Central Midfield,21,Israel,11,8,2,7,120,84,4164,6,7,36,6,4,21,2019,2026
+538303,Awaka Eshata,43119,Hapoel Jerusalem,Defensive Midfield,25,Israel,16,10,2,7,366,245,14464,12,6,55,22,48,0,2016,2025
 1002515,Ido Oli,2785,Hapoel Ramat Gan,Central Midfield,20,Israel,21,6,5,7,106,73,4488,9,3,12,1,7,30,2021,2026
 1448011,Netanel Shiferaw,43119,Hapoel Jerusalem,Central Midfield,19,Israel,23,2,1,3,40,10,374,0,0,5,0,0,0,2025,2026
 1344714,Ori Katz,43119,Hapoel Jerusalem,Central Midfield,21,Israel,0,2,1,2,5,0,0,0,0,0,0,0,0,2023,2025
-457184,Marko Rakonjac,3785,Maccabi Petah Tikva,Centre-Forward,26,Montenegro,0,12,10,23,398,226,9769,43,11,213,81,17,23,2015,2026
 1447979,Israel Dappa,43119,Hapoel Jerusalem,Centre-Forward,17,Israel,33,2,1,5,55,28,1257,0,1,25,11,7,7,2025,2026
+457184,Marko Rakonjac,3785,Maccabi Petah Tikva,Centre-Forward,26,Montenegro,0,12,10,23,398,226,9769,43,11,213,81,17,23,2015,2026
 856625,Andrew Idoko,43119,Hapoel Jerusalem,Left Winger,20,Nigeria,25,5,3,4,155,109,7597,20,6,88,33,9,0,2020,2026
 933143,Ohad Almagor,43119,Hapoel Jerusalem,Left Winger,24,Israel,77,6,2,6,192,145,7652,15,10,98,42,26,1,2021,2026
-547479,Ruel Sotiriou,43119,Hapoel Jerusalem,Centre-Forward,24,Cyprus,10,10,8,14,450,270,15272,56,15,329,121,45,12,2017,2026
+547479,Ruel Sotiriou,43119,Hapoel Jerusalem,Centre-Forward,24,Cyprus,10,10,8,14,451,270,15272,56,15,329,121,45,12,2017,2026
 378174,Jardel,43119,Hapoel Jerusalem,Centre-Forward,27,Guinea-Bissau,0,11,11,18,352,159,7282,26,5,144,51,9,13,2014,2026
 951357,Ibeh Ransom,43119,Hapoel Jerusalem,Centre-Forward,22,Nigeria,30,6,5,7,173,123,6222,21,9,24,9,16,0,2021,2026
 413712,Guy Badash,262,Hapoel Petah Tikva,Right Winger,32,Israel,24,13,8,7,465,286,18067,34,25,91,34,46,1,2014,2026
@@ -452,26 +451,26 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 530308,Shalev Desta,6028,Ironi Kiryat Shmona,Right-Back,23,Israel,0,8,2,5,192,73,3608,2,0,0,0,10,1,2017,2026
 937273,Or Hasin,6028,Ironi Kiryat Shmona,Centre-Back,23,Israel,0,5,1,5,115,8,428,1,0,0,0,0,0,2017,2024
 1393678,Yoav Karadi,6028,Ironi Kiryat Shmona,Left-Back,20,Israel,0,3,2,4,54,14,791,0,0,2,1,3,0,2024,2026
-419247,Cristian Martínez,6028,Ironi Kiryat Shmona,Defensive Midfield,28,Panama,0,15,15,34,658,368,25131,25,41,65,20,58,76,2012,2026
-672933,Yaw Ackah,6028,Ironi Kiryat Shmona,Defensive Midfield,26,Ghana,0,8,6,10,273,146,7816,1,1,34,8,27,0,2018,2025
+419247,Cristian Martínez,6028,Ironi Kiryat Shmona,Defensive Midfield,28,Panama,0,15,15,34,660,371,25313,25,42,65,20,59,78,2012,2026
 666929,Sekou Bangoura,6028,Ironi Kiryat Shmona,Central Midfield,23,Guinea,0,7,8,20,267,163,11156,16,12,91,22,30,11,2018,2025
+672933,Yaw Ackah,6028,Ironi Kiryat Shmona,Defensive Midfield,26,Ghana,0,8,6,10,273,146,7816,1,1,34,8,27,0,2018,2025
 833604,Ariel Sheratzky,6028,Ironi Kiryat Shmona,Attacking Midfield,25,Israel,15,8,1,5,231,118,6168,13,10,49,18,12,0,2019,2026
 698986,Ofir Benbenishti,6028,Ironi Kiryat Shmona,Defensive Midfield,26,Israel,6,9,3,5,271,176,11142,3,7,18,2,25,0,2018,2026
 347271,Aviv Avraham,6028,Ironi Kiryat Shmona,Central Midfield,29,Israel,0,14,5,14,442,306,16566,21,18,32,10,64,10,2013,2026
 1380886,Yehonatan Malka,6028,Ironi Kiryat Shmona,Central Midfield,19,Israel,29,3,1,3,45,5,75,0,0,0,0,0,0,2024,2026
-325726,Adrián Ugarriza,6028,Ironi Kiryat Shmona,Centre-Forward,29,Peru,0,14,10,17,553,312,19727,69,28,411,166,34,17,2013,2026
+325726,Adrián Ugarriza,6028,Ironi Kiryat Shmona,Centre-Forward,29,Peru,0,14,10,17,554,313,19762,69,28,411,166,34,18,2013,2026
 1138606,Yair Mordechai,1064,Maccabi Haifa,Left Winger,23,Israel,7,5,2,4,121,110,5384,21,10,141,55,20,0,2022,2026
+451338,Fernando Pacheco,6028,Ironi Kiryat Shmona,Left Winger,26,Peru,0,11,8,22,493,240,10404,16,20,126,46,34,11,2015,2025
 655691,Wale Musa Alli,6028,Ironi Kiryat Shmona,Left Winger,24,Nigeria,0,9,8,17,302,269,17557,34,42,132,47,23,0,2018,2026
-451338,Fernando Pacheco,6028,Ironi Kiryat Shmona,Left Winger,26,Peru,0,11,8,22,492,239,10371,16,20,125,45,34,11,2015,2025
 140803,Anthony Limbombe,6028,Ironi Kiryat Shmona,Left Winger,30,Belgium,0,18,12,27,740,417,24103,70,68,221,91,38,20,2009,2026
 1380885,Jwan Halabi,6028,Ironi Kiryat Shmona,Centre-Forward,21,Israel,12,4,1,4,48,23,516,2,1,11,5,1,1,2020,2026
 1359808,Ori Shnaper,6028,Ironi Kiryat Shmona,Centre-Forward,22,Israel,18,3,1,3,79,3,48,1,0,3,2,0,0,2024,2026
 1342365,Majid Suleiman,4769,Ihud Bnei Sakhnin,Goalkeeper,22,Israel,32,6,1,4,81,2,161,0,0,0,0,0,0,2021,2026
 813066,Mohammed Abu Nil,4769,Ihud Bnei Sakhnin,Goalkeeper,25,Israel,22,8,2,5,213,113,10072,0,1,0,0,9,0,2019,2026
-1136796,Abed Yassin,4769,Ihud Bnei Sakhnin,Goalkeeper,21,Palestine,0,5,1,8,111,26,2263,0,0,0,0,3,10,2022,2026
+1136796,Abed Yassin,4769,Ihud Bnei Sakhnin,Goalkeeper,21,Palestine,0,5,1,8,112,26,2263,0,0,0,0,3,10,2022,2026
 1475271,Avishay Yahav,4769,Ihud Bnei Sakhnin,Goalkeeper,18,Israel,0,2,2,2,2,0,0,0,0,0,0,0,0,2025,2026
-518402,Hasan Hilu,4769,Ihud Bnei Sakhnin,Centre-Back,25,Israel,17,10,4,11,303,188,13987,2,2,22,5,58,2,2016,2026
 466534,Alon Azugi,5223,Maccabi Netanya,Right-Back,27,Israel,12,9,7,9,316,164,12033,6,12,53,21,30,0,2018,2026
+518402,Hasan Hilu,4769,Ihud Bnei Sakhnin,Centre-Back,25,Israel,17,10,4,11,303,188,13987,2,2,22,5,58,2,2016,2026
 458012,Maroun Gantus,4769,Ihud Bnei Sakhnin,Centre-Back,30,Israel,2,12,1,7,378,271,21466,3,4,19,7,54,2,2015,2026
 115447,Karlo Brucic,4769,Ihud Bnei Sakhnin,Centre-Back,33,Croatia,3,19,13,34,681,423,34942,13,33,19,2,50,16,2008,2026
 347270,Maksim Grechkin,4769,Ihud Bnei Sakhnin,Left-Back,29,Israel,55,13,10,12,410,230,17213,3,9,8,3,29,2,2014,2026
@@ -496,8 +495,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 531628,Omer Katz,262,Hapoel Petah Tikva,Goalkeeper,28,Israel,1,11,4,9,372,232,20714,0,0,0,0,15,0,2015,2026
 499379,Shahar Amsalem,262,Hapoel Petah Tikva,Goalkeeper,26,Israel,55,11,7,7,313,129,11432,0,0,0,0,10,0,2016,2026
 926455,Amit Mashiah,262,Hapoel Petah Tikva,Goalkeeper,21,Israel,18,6,1,6,105,9,675,0,0,0,0,0,8,2020,2026
-850875,Alex Moucketou-Moussounda,262,Hapoel Petah Tikva,Centre-Back,26,Gabon,0,9,6,18,266,168,11633,4,2,17,5,31,31,2017,2026
 713007,Itay Rotman,2976,Hapoel Beer Sheva,Centre-Back,24,Israel,12,8,6,9,237,169,14041,12,7,26,9,31,1,2019,2026
+850875,Alex Moucketou-Moussounda,262,Hapoel Petah Tikva,Centre-Back,26,Gabon,0,9,6,18,267,169,11678,4,2,17,5,31,32,2017,2026
 668600,Shahar Rosen,119,Maccabi Tel Aviv,Left-Back,24,Israel,25,8,6,11,233,154,11252,4,15,12,1,30,5,2017,2026
 396637,Noam Cohen,810,Hapoel Haifa,Right-Back,27,Israel,2,12,8,13,342,257,18034,3,11,20,2,24,28,2015,2026
 247587,Idan Cohen,43119,Hapoel Jerusalem,Right-Back,30,Israel,26,14,9,11,418,274,21078,3,13,9,4,38,16,2012,2026
@@ -511,10 +510,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 344206,Tomer Altman,262,Hapoel Petah Tikva,Central Midfield,28,Israel,8,14,7,15,373,263,16801,9,13,26,5,31,27,2013,2026
 696937,Golan Beni,262,Hapoel Petah Tikva,Central Midfield,24,Israel,0,9,4,6,248,201,11923,22,18,18,7,20,2,2018,2026
 1217375,Boni Amian,262,Hapoel Petah Tikva,Central Midfield,23,Cote d'Ivoire,29,4,5,9,105,72,4148,7,0,14,5,14,0,2023,2026
+1381478,Noam Cohen,262,Hapoel Petah Tikva,Attacking Midfield,18,Israel,0,3,1,6,55,33,1231,4,2,11,5,2,11,2024,2026
 1322090,Jocelin Ta Bi,262,Hapoel Petah Tikva,Right Winger,20,Cote d'Ivoire,0,3,4,9,100,49,3419,10,8,34,13,13,3,2024,2026
-1381478,Noam Cohen,262,Hapoel Petah Tikva,Attacking Midfield,18,Israel,0,3,1,6,53,32,1164,4,2,11,5,2,10,2024,2026
-249036,Márk Koszta,262,Hapoel Petah Tikva,Centre-Forward,28,Hungary,9,15,11,19,483,340,20207,99,32,147,65,42,10,2012,2026
 408026,Yonatan Cohen,262,Hapoel Petah Tikva,Right Winger,29,Israel,14,12,7,24,549,340,19563,83,47,139,46,36,16,2015,2026
+249036,Márk Koszta,262,Hapoel Petah Tikva,Centre-Forward,28,Hungary,9,15,11,19,483,340,20207,99,32,147,65,42,10,2012,2026
 402002,Mamady Diarra,262,Hapoel Petah Tikva,Right Winger,25,Mali,24,10,8,21,309,206,10381,23,22,56,17,14,4,2014,2026
 621383,Shavit Mazal,262,Hapoel Petah Tikva,Centre-Forward,24,Israel,0,9,7,5,274,192,10056,30,5,57,18,26,4,2018,2026
 719217,Clé,262,Hapoel Petah Tikva,Left Winger,28,Cape Verde,77,8,5,19,199,149,10131,37,14,51,14,17,5,2018,2026
@@ -525,39 +524,40 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 353581,Dudu Twitto,2785,Hapoel Ramat Gan,Left-Back,32,Israel,36,14,8,11,501,333,26938,9,23,8,3,57,5,2013,2026
 412807,Niv Sardal,2785,Hapoel Ramat Gan,Right-Back,32,Israel,18,13,9,5,504,373,27963,6,26,0,0,28,0,2013,2025
 1058583,Degats Worko,3793,Beitar Jerusalem,Central Midfield,22,Israel,26,5,2,7,181,106,6366,8,0,12,2,19,7,2022,2026
-211506,Amit Meir,2785,Hapoel Ramat Gan,Defensive Midfield,24,Israel,8,10,7,9,279,209,11369,3,1,6,0,55,23,2017,2026
+926457,Niv Yehoshua,2976,Hapoel Beer Sheva,Central Midfield,21,Israel,28,7,2,14,169,157,12262,12,9,63,13,22,39,2019,2026
 1351337,David Asanka,2785,Hapoel Ramat Gan,Attacking Midfield,22,Israel,11,3,2,4,53,47,3053,9,1,15,3,8,0,2024,2026
-417535,Moti Barshazky,2785,Hapoel Ramat Gan,Attacking Midfield,28,Israel,15,14,8,7,485,371,22342,51,37,10,3,53,14,2013,2026
+211506,Amit Meir,2785,Hapoel Ramat Gan,Defensive Midfield,24,Israel,8,10,7,9,279,209,11369,3,1,6,0,55,23,2017,2026
 1304815,Ido Mizrahi,2785,Hapoel Ramat Gan,Central Midfield,22,Israel,37,3,1,3,89,40,2721,2,0,0,0,12,0,2024,2026
+417535,Moti Barshazky,2785,Hapoel Ramat Gan,Attacking Midfield,28,Israel,15,14,8,7,485,371,22342,51,37,10,3,53,14,2013,2026
 1361720,Ollie Cohen Bergman,2785,Hapoel Ramat Gan,Attacking Midfield,20,Israel,18,3,1,3,50,16,196,0,0,0,0,2,0,2024,2026
 964589,Yuval Sason,2785,Hapoel Ramat Gan,Centre-Forward,23,Israel,9,6,4,3,206,148,7631,32,3,0,0,23,0,2021,2026
 242724,Ezekiel Henty,2785,Hapoel Ramat Gan,Centre-Forward,32,Nigeria,13,15,19,35,599,389,25283,111,32,182,74,61,0,2012,2026
 312430,Matan Ambar,810,Hapoel Haifa,Goalkeeper,31,Israel,23,15,8,6,467,248,22152,0,0,0,0,22,0,2012,2026
-277125,Benjamin Machini,810,Hapoel Haifa,Goalkeeper,28,Sweden,22,14,16,20,438,107,9547,0,0,0,0,7,0,2012,2026
 1447987,Ori Levy,810,Hapoel Haifa,Goalkeeper,19,Israel,0,2,2,3,35,0,0,0,0,0,0,0,0,2025,2026
-385118,Ivan Kricak,810,Hapoel Haifa,Centre-Back,30,Serbia,5,14,9,10,450,292,23845,12,2,64,18,72,0,2013,2026
+277125,Benjamin Machini,810,Hapoel Haifa,Goalkeeper,28,Sweden,22,14,16,20,438,107,9547,0,0,0,0,7,0,2012,2026
 481337,George Diba,810,Hapoel Haifa,Centre-Back,28,Israel,25,10,5,5,262,201,16011,2,3,15,3,26,0,2016,2026
+385118,Ivan Kricak,810,Hapoel Haifa,Centre-Back,30,Serbia,5,14,9,10,450,292,23845,12,2,64,18,72,0,2013,2026
 520300,Saná,4769,Ihud Bnei Sakhnin,Left-Back,27,Guinea-Bissau,92,10,12,27,342,158,12183,4,12,34,10,52,7,2017,2026
 165381,Dario Zuparic,810,Hapoel Haifa,Centre-Back,34,Croatia,13,17,5,21,656,500,42153,10,9,51,14,94,18,2010,2026
 669270,Tamir Arbel,810,Hapoel Haifa,Centre-Back,24,Israel,3,7,3,10,219,135,8563,1,2,12,5,21,8,2018,2026
-112737,Dor Malul,810,Hapoel Haifa,Right-Back,37,Israel,4,21,5,15,759,541,38653,6,33,10,3,66,10,2006,2026
 348267,Bruno Ramires,810,Hapoel Haifa,Centre-Back,31,Brazil,0,14,12,24,452,235,15986,6,2,61,12,38,0,2012,2025
-966006,Roy Nawi,810,Hapoel Haifa,Defensive Midfield,21,Israel,14,6,4,14,174,110,7400,4,3,51,12,25,33,2021,2026
-400715,Sandro Altunashvili,810,Hapoel Haifa,Central Midfield,28,Georgia,19,14,5,26,545,345,24523,10,41,28,4,63,23,2013,2026
+112737,Dor Malul,810,Hapoel Haifa,Right-Back,37,Israel,4,21,5,15,759,541,38653,6,33,10,3,66,10,2006,2026
 1447986,Yali Vaknin,810,Hapoel Haifa,Defender,17,Israel,0,1,1,3,34,0,0,0,0,0,0,0,0,2025,2025
+966006,Roy Nawi,810,Hapoel Haifa,Defensive Midfield,21,Israel,14,6,4,14,174,110,7400,4,3,51,12,25,33,2021,2026
 926941,Yonatan Farber,1017,Hapoel Tel Aviv,Attacking Midfield,25,Israel,8,5,4,7,127,92,3366,5,7,87,26,8,0,2020,2026
-311890,Naor Sabag,810,Hapoel Haifa,Central Midfield,33,Israel,55,13,9,9,430,316,22846,19,20,55,17,61,0,2013,2026
+400715,Sandro Altunashvili,810,Hapoel Haifa,Central Midfield,28,Georgia,19,14,5,26,545,345,24523,10,41,28,4,63,23,2013,2026
 1304986,Haim Mekonen,810,Hapoel Haifa,Attacking Midfield,25,Israel,0,5,5,3,95,49,3133,1,0,0,0,7,0,2020,2026
+311890,Naor Sabag,810,Hapoel Haifa,Central Midfield,33,Israel,55,13,9,9,430,316,22846,19,20,55,17,61,0,2013,2026
 543384,Salam Jiddou,810,Hapoel Haifa,Attacking Midfield,25,Mali,0,9,5,11,179,77,3972,3,6,3,0,12,14,2016,2025
 571867,Larry Angulo,810,Hapoel Haifa,Defensive Midfield,29,Colombia,0,11,9,22,416,221,14279,20,12,143,43,67,0,2013,2025
 1367021,Yaad Gonen,810,Hapoel Haifa,Right Winger,20,Israel,15,3,1,4,63,22,915,1,1,14,6,2,0,2024,2026
-614194,Andrija Radulovic,810,Hapoel Haifa,Right Winger,22,Montenegro,49,10,10,24,391,242,14691,56,25,243,90,15,23,2017,2026
 990772,Yasmao Cabeda,810,Hapoel Haifa,Defensive Midfield,24,Israel,0,5,3,4,143,48,2268,0,0,1,1,11,0,2021,2025
+614194,Andrija Radulovic,810,Hapoel Haifa,Right Winger,22,Montenegro,49,10,10,24,391,242,14691,56,25,243,90,15,23,2017,2026
 414246,Rotem Hatuel,810,Hapoel Haifa,Left Winger,27,Israel,9,11,8,12,391,249,10995,54,13,121,37,50,4,2015,2025
 711640,Régis N'Do,810,Hapoel Haifa,Right Winger,24,Burkina Faso,77,8,7,16,218,147,6543,12,9,117,35,27,0,2019,2026
 1367022,Saar Elkayam,810,Hapoel Haifa,Right Winger,19,Israel,0,3,1,5,35,8,299,0,0,2,1,2,3,2024,2026
-357788,Rogério,51070,Ironi Tiberias,Goalkeeper,26,Portugal,1,11,8,16,356,113,9848,0,0,0,0,15,3,2016,2026
 1512183,Ahmad Hamam,810,Hapoel Haifa,Centre-Forward,20,Israel,20,2,1,3,44,1,45,0,0,0,0,1,0,2025,2026
+357788,Rogério,51070,Ironi Tiberias,Goalkeeper,26,Portugal,1,11,8,16,356,113,9848,0,0,0,0,15,3,2016,2026
 1342742,Jones Abu Ganima,51070,Ironi Tiberias,Goalkeeper,22,Israel,55,5,1,4,95,1,90,0,0,0,0,0,0,2022,2026
 431058,Ondrej Baco,51070,Ironi Tiberias,Centre-Back,30,Czech Republic,37,12,7,20,484,320,26919,16,2,22,9,67,4,2015,2026
 276899,Sambinha,51070,Ironi Tiberias,Centre-Back,34,Guinea-Bissau,4,16,9,21,570,316,25692,13,5,35,11,76,12,2011,2026
@@ -569,52 +569,52 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 848015,Niv Gotlieb,51070,Ironi Tiberias,Attacking Midfield,24,Israel,11,7,4,8,191,149,8079,11,10,41,15,24,2,2020,2026
 326427,David Keltjens,51070,Ironi Tiberias,Defensive Midfield,31,Israel,3,14,5,18,500,330,23533,8,14,27,10,58,15,2012,2026
 409103,Usman Mohammed,51070,Ironi Tiberias,Central Midfield,31,Nigeria,10,14,10,25,581,246,17136,17,10,80,24,60,15,2013,2026
-511669,Stanislav Bilenkyi,51070,Ironi Tiberias,Centre-Forward,26,Ukraine,0,11,9,24,365,267,18160,64,29,149,62,26,9,2016,2026
 1061544,Yarin Swisa,51070,Ironi Tiberias,Central Midfield,21,Israel,27,5,3,6,111,28,885,1,1,20,5,1,2,2022,2026
+511669,Stanislav Bilenkyi,51070,Ironi Tiberias,Centre-Forward,26,Ukraine,0,11,9,24,365,267,18160,64,29,149,62,26,9,2016,2026
 533776,Waheb Habiballah,810,Hapoel Haifa,Right Winger,28,Israel,14,10,6,5,336,282,17217,39,16,75,19,37,0,2017,2026
 499382,Itamar Shviro,51070,Ironi Tiberias,Centre-Forward,28,Israel,0,11,7,13,393,278,15398,67,14,75,35,23,4,2016,2026
 569955,Peter Michael,51070,Ironi Tiberias,Centre-Forward,27,Nigeria,90,11,12,22,396,210,11572,58,17,204,78,14,0,2016,2026
 1267000,Idan Barnes,2785,Hapoel Ramat Gan,Left Winger,22,Israel,8,4,5,4,86,62,2197,9,2,23,8,2,0,2023,2026
 1341623,Agam Yehuda,51070,Ironi Tiberias,Centre-Forward,19,Israel,77,3,3,6,54,3,24,0,0,1,0,0,0,2024,2026
-408422,Idan Nachmias,2976,Hapoel Beer Sheva,Centre-Back,29,Israel,15,12,5,23,515,308,23686,17,4,23,9,45,42,2015,2026
 564544,Pedro Amador,2976,Hapoel Beer Sheva,Left-Back,27,Portugal,5,10,7,15,354,186,12670,4,19,75,14,17,0,2017,2026
-842370,João Victor,2976,Hapoel Beer Sheva,Left Winger,22,Brazil,70,7,5,17,264,93,4619,15,8,60,19,11,0,2020,2026
+408422,Idan Nachmias,2976,Hapoel Beer Sheva,Centre-Back,29,Israel,15,12,5,23,516,309,23762,17,4,23,9,45,43,2015,2026
 650944,Amankwah Forson,2976,Hapoel Beer Sheva,Central Midfield,23,Ghana,17,8,8,18,326,170,8558,23,23,177,46,13,2,2019,2026
-62094,James Tavernier,119,Maccabi Tel Aviv,Right-Back,35,England,2,18,12,23,920,720,62138,154,163,607,258,76,0,2009,2026
+842370,João Victor,2976,Hapoel Beer Sheva,Left Winger,22,Brazil,70,7,5,17,264,93,4619,15,8,60,19,11,0,2020,2026
 1164754,Idan Trau,119,Maccabi Tel Aviv,Goalkeeper,19,Israel,50,5,2,5,22,8,630,0,0,0,0,0,6,2022,2026
-398258,Gabi Kanichowsky,119,Maccabi Tel Aviv,Central Midfield,29,Israel,16,12,6,21,550,467,35211,64,81,182,71,50,36,2015,2026
-1529817,Noam Levi,119,Maccabi Tel Aviv,Centre-Back,18,Israel,0,2,2,4,13,9,358,0,0,0,0,1,8,2025,2026
-481244,Ester Sokler,119,Maccabi Tel Aviv,Centre-Forward,27,Slovenia,9,11,7,16,386,271,13671,67,13,141,65,46,7,2016,2026
-694512,Hisham Layous,119,Maccabi Tel Aviv,Left Winger,25,Israel,33,8,6,19,296,181,11175,22,21,83,32,18,10,2019,2026
-347268,Omri Glazer,1064,Maccabi Haifa,Goalkeeper,30,Israel,55,14,5,23,648,300,26647,0,2,0,0,19,35,2013,2026
+1529817,Noam Levi,119,Maccabi Tel Aviv,Centre-Back,18,Israel,0,2,2,4,15,10,448,0,0,0,0,1,9,2025,2026
+62094,James Tavernier,119,Maccabi Tel Aviv,Right-Back,35,England,2,18,12,23,920,720,62138,154,163,607,258,76,0,2009,2026
+398258,Gabi Kanichowsky,119,Maccabi Tel Aviv,Central Midfield,29,Israel,16,12,6,21,551,467,35211,64,81,182,71,50,36,2015,2026
 247589,Dan Glazer,119,Maccabi Tel Aviv,Defensive Midfield,30,Israel,18,15,8,30,597,408,29201,5,10,18,1,106,45,2012,2026
+481244,Ester Sokler,119,Maccabi Tel Aviv,Centre-Forward,27,Slovenia,9,11,7,16,386,271,13671,67,13,141,65,46,7,2016,2026
+694512,Hisham Layous,119,Maccabi Tel Aviv,Left Winger,26,Israel,33,8,6,19,296,181,11175,22,21,83,32,18,10,2019,2026
+1474310,Mark Golenkov,1064,Maccabi Haifa,Goalkeeper,18,Israel,70,2,1,3,19,7,630,0,0,0,0,0,2,2025,2026
+347268,Omri Glazer,1064,Maccabi Haifa,Goalkeeper,30,Israel,55,14,5,23,649,300,26647,0,2,0,0,19,35,2013,2026
 639754,Tsunami,1064,Maccabi Haifa,Left-Back,30,Brazil,66,12,9,19,382,259,20359,18,17,20,6,50,0,2015,2026
-1474310,Mark Golenkov,1064,Maccabi Haifa,Goalkeeper,18,Israel,70,2,1,3,17,7,630,0,0,0,0,0,2,2025,2026
-163847,Eli Dasa,1064,Maccabi Haifa,Right-Back,33,Israel,2,18,7,27,816,572,45394,14,58,129,24,73,112,2009,2026
 566043,Nigel Lonwijk,1064,Maccabi Haifa,Centre-Back,24,Suriname,21,11,12,22,364,204,14509,7,10,56,20,36,1,2013,2026
+163847,Eli Dasa,1064,Maccabi Haifa,Right-Back,33,Israel,2,18,7,27,817,573,45456,14,58,129,24,74,113,2009,2026
 584083,Bruninho,1064,Maccabi Haifa,Attacking Midfield,26,Brazil,10,10,9,18,472,223,11366,42,18,176,68,19,0,2017,2026
+1325551,Adam Grimberg,1064,Maccabi Haifa,Centre-Forward,17,Israel,38,3,2,6,47,37,1844,12,2,16,7,2,23,2024,2026
 577590,Pedro Brazão,1064,Maccabi Haifa,Right Winger,23,Portugal,30,10,7,21,370,221,11967,31,19,166,54,31,36,2017,2026
-1325551,Adam Grimberg,1064,Maccabi Haifa,Centre-Forward,17,Israel,38,3,2,6,45,36,1766,12,2,16,7,2,22,2024,2026
+1194862,Ben Sørensen,1017,Hapoel Tel Aviv,Goalkeeper,19,Denmark,13,3,3,7,109,16,1386,0,0,0,0,0,0,2023,2026
 336160,Andrija Novakovich,1064,Maccabi Haifa,Centre-Forward,30,United States,9,14,12,19,519,387,23305,90,42,368,154,28,9,2013,2026
 541020,Yannick Leliendal,1017,Hapoel Tel Aviv,Left-Back,24,Suriname,32,9,7,13,293,177,13465,6,16,84,26,24,20,2017,2026
-1194862,Ben Sørensen,1017,Hapoel Tel Aviv,Goalkeeper,19,Denmark,13,3,3,7,109,16,1386,0,0,0,0,0,0,2023,2026
+1178432,Itay Shavit,1017,Hapoel Tel Aviv,Central Midfield,19,Israel,17,4,2,6,96,59,3310,1,3,1,0,5,6,2022,2026
 1305075,Douglas Owusu,1017,Hapoel Tel Aviv,Right Winger,20,Ghana,35,3,3,9,102,79,5633,14,12,93,34,11,0,2024,2026
 1266698,Sami Adam,1017,Hapoel Tel Aviv,Left Winger,21,Israel,0,3,3,4,76,30,889,3,0,0,0,4,0,2023,2025
-1178432,Itay Shavit,1017,Hapoel Tel Aviv,Central Midfield,19,Israel,17,4,2,6,96,59,3310,1,3,1,0,5,6,2022,2026
 703448,Dvir Nir,3793,Beitar Jerusalem,Goalkeeper,23,Israel,33,9,2,6,156,16,1340,0,0,0,0,0,13,2018,2026
+648260,Alexis Serna,3793,Beitar Jerusalem,Central Midfield,28,Colombia,0,12,5,12,402,190,12893,25,8,65,21,32,0,2011,2026
 645137,Tomer Yosefi,3793,Beitar Jerusalem,Attacking Midfield,27,Israel,30,9,4,14,351,231,11911,30,20,111,40,30,11,2018,2026
-247652,Shon Weissman,3793,Beitar Jerusalem,Centre-Forward,30,Israel,19,16,10,22,602,421,25038,126,28,422,184,41,72,2010,2026
 640821,Samu,5223,Maccabi Netanya,Goalkeeper,27,Portugal,1,10,7,7,334,90,8003,0,1,0,0,10,0,2017,2026
+247652,Shon Weissman,3793,Beitar Jerusalem,Centre-Forward,30,Israel,19,16,10,22,602,421,25038,126,28,422,184,41,72,2010,2026
 504125,Olivier Verdon,5223,Maccabi Netanya,Centre-Back,31,Benin,23,13,9,26,647,421,35519,26,2,31,9,66,48,2014,2026
 447557,Gabriel Simion,5223,Maccabi Netanya,Defensive Midfield,28,Romania,0,12,9,18,459,275,18259,1,3,68,13,48,0,2015,2026
-648260,Alexis Serna,3793,Beitar Jerusalem,Central Midfield,28,Colombia,0,12,5,12,402,190,12893,25,8,65,21,32,0,2011,2026
 1601800,Itay Shwartzman,5223,Maccabi Netanya,Midfield,19,Israel,0,1,1,1,1,0,0,0,0,0,0,0,0,2026,2026
 1084667,Isaac,5223,Maccabi Netanya,Left Winger,22,Brazil,0,6,4,12,268,74,2859,4,4,28,7,6,0,2021,2026
-1456602,Oleksiy Talpa,5223,Maccabi Netanya,Left Winger,19,Ukraine,21,2,1,4,24,10,291,2,1,2,1,1,4,2025,2026
+1456602,Oleksiy Talpa,5223,Maccabi Netanya,Left Winger,19,Ukraine,21,2,1,4,25,10,291,2,1,2,1,1,4,2025,2026
 1515279,Yarin Abuhatzira,5223,Maccabi Netanya,Centre-Forward,16,Israel,17,2,1,3,22,13,721,2,1,7,0,0,9,2025,2026
 698887,Dor Hevron,3785,Maccabi Petah Tikva,Goalkeeper,25,Israel,1,8,5,6,272,131,11698,0,0,0,0,16,0,2019,2026
-456996,Pavlos Correa,3785,Maccabi Petah Tikva,Centre-Back,28,Cyprus,44,11,6,17,369,165,11860,4,2,13,3,36,15,2016,2026
 268590,Eloge Yao,3785,Maccabi Petah Tikva,Right-Back,30,Cote d'Ivoire,0,15,9,17,488,290,23153,7,7,25,7,24,0,2012,2026
+456996,Pavlos Correa,3785,Maccabi Petah Tikva,Centre-Back,28,Cyprus,44,11,6,17,369,165,11860,4,2,13,3,36,15,2016,2026
 1266696,Bashar Abdach,3785,Maccabi Petah Tikva,Centre-Back,21,Israel,22,4,2,5,85,50,4155,1,1,4,1,13,0,2023,2026
 1164751,Yaniv Peretz,3785,Maccabi Petah Tikva,Defender,19,Israel,0,5,1,4,26,17,985,1,0,0,0,0,16,2022,2026
 1341622,Itay Baruch,3785,Maccabi Petah Tikva,Left-Back,19,Israel,0,3,1,4,26,18,851,0,2,1,0,1,12,2024,2026
@@ -626,35 +626,35 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1057298,Noam Shavit,43119,Hapoel Jerusalem,Goalkeeper,21,Israel,0,8,2,7,120,3,225,0,0,0,0,0,1,2019,2026
 1433083,Guy Bar,43119,Hapoel Jerusalem,Goalkeeper,19,United States,13,2,2,2,22,1,90,0,0,0,0,0,0,2025,2026
 1453835,Hilay Sharabi Melman,43119,Hapoel Jerusalem,Centre-Back,22,Israel,21,2,2,3,48,39,3433,2,0,2,0,10,0,2025,2026
-579631,Sharani Zuberu,43119,Hapoel Jerusalem,Left-Back,26,Togo,0,10,9,18,429,218,9941,33,13,75,30,15,2,2017,2026
-490309,Edward Chilufya,43119,Hapoel Jerusalem,Right Winger,27,Zambia,0,11,5,23,493,264,12773,48,23,239,94,12,35,2016,2026
 1615018,Hamza Mohammed,43119,Hapoel Jerusalem,Central Midfield,18,Nigeria,31,1,1,1,2,1,11,0,0,0,0,0,0,2026,2026
+579631,Sharani Zuberu,43119,Hapoel Jerusalem,Left-Back,26,Togo,0,10,9,18,430,218,9941,33,13,75,30,15,2,2017,2026
+1564630,Sani Abdulsalam,43119,Hapoel Jerusalem,Right Winger,19,Nigeria,17,1,1,1,10,4,200,1,0,7,2,1,0,2026,2026
+490309,Edward Chilufya,43119,Hapoel Jerusalem,Right Winger,27,Zambia,0,11,5,23,505,265,12853,49,23,241,95,12,36,2016,2026
 900040,Raul Bălbărău,4769,Ihud Bnei Sakhnin,Goalkeeper,25,Romania,1,7,5,11,187,96,8391,0,0,0,0,9,1,2020,2026
 257988,Leeroy Owusu,4769,Ihud Bnei Sakhnin,Right-Back,30,Netherlands,0,15,13,24,533,426,36008,22,48,207,67,26,19,2012,2026
-1564630,Sani Abdulsalam,43119,Hapoel Jerusalem,Right Winger,19,Nigeria,17,1,1,1,10,4,200,1,0,7,2,1,0,2026,2026
-278553,Dimitri Cavaré,4769,Ihud Bnei Sakhnin,Centre-Back,31,Guadeloupe,0,15,10,27,690,309,24425,14,12,109,40,53,16,2012,2026
 1549689,Ali Gnameh,4769,Ihud Bnei Sakhnin,Centre-Back,19,Israel,44,2,1,2,11,1,90,0,0,0,0,0,0,2025,2026
-262636,Modestas Vorobjovas,4769,Ihud Bnei Sakhnin,Defensive Midfield,30,Lithuania,8,15,7,21,618,468,34837,13,19,60,15,69,58,2012,2026
+278553,Dimitri Cavaré,4769,Ihud Bnei Sakhnin,Centre-Back,31,Guadeloupe,0,15,10,27,690,309,24425,14,12,109,40,53,16,2012,2026
 1050290,Niv Livnat,4769,Ihud Bnei Sakhnin,Right Midfield,24,Israel,0,6,6,5,172,130,7298,12,3,0,0,9,0,2021,2026
-605543,Daniel Paraschiv,4769,Ihud Bnei Sakhnin,Centre-Forward,27,Romania,0,9,9,14,305,239,14623,67,12,191,75,12,1,2018,2026
+262636,Modestas Vorobjovas,4769,Ihud Bnei Sakhnin,Defensive Midfield,30,Lithuania,8,15,7,21,618,468,34837,13,19,60,15,69,58,2012,2026
 1597874,Emad Elden Abdalla,4769,Ihud Bnei Sakhnin,Midfield,20,Israel,0,1,1,1,10,0,0,0,0,0,0,0,0,2026,2026
+605543,Daniel Paraschiv,4769,Ihud Bnei Sakhnin,Centre-Forward,27,Romania,0,9,9,14,305,239,14623,67,12,191,75,12,1,2018,2026
 799342,Nikola Djurkovic,6028,Ironi Kiryat Shmona,Goalkeeper,24,Serbia,1,8,5,8,256,131,11676,0,0,0,0,15,0,2019,2026
 930572,Tomer Alon,6028,Ironi Kiryat Shmona,Goalkeeper,23,Israel,0,6,4,7,102,7,610,0,0,0,0,1,1,2021,2026
 919537,Shon Edri,6028,Ironi Kiryat Shmona,Centre-Back,23,Israel,0,6,6,11,200,158,10787,14,5,5,2,27,23,2021,2026
+1307926,Shay Sabah,6028,Ironi Kiryat Shmona,Left-Back,21,Israel,0,3,4,3,62,39,2879,2,3,6,2,8,0,2024,2026
 627222,Talles Costa,6028,Ironi Kiryat Shmona,Central Midfield,24,Brazil,8,10,5,17,370,150,7857,5,11,22,7,31,9,2017,2026
 1216111,Alex Sola,6028,Ironi Kiryat Shmona,Central Midfield,22,Angola,63,4,4,7,132,45,2484,0,1,9,1,12,0,2023,2026
 434892,Alexandru Pop,6028,Ironi Kiryat Shmona,Centre-Forward,26,Romania,9,12,8,13,304,256,14974,51,16,138,58,18,8,2015,2026
-1307926,Shay Sabah,6028,Ironi Kiryat Shmona,Left-Back,21,Israel,0,3,4,3,62,39,2879,2,3,6,2,8,0,2024,2026
-530115,Rüfat Abdullazada,6028,Ironi Kiryat Shmona,Right Winger,25,Azerbaijan,21,10,5,13,342,205,11205,22,25,20,3,22,26,2017,2026
 649025,Amadou Sagna,6028,Ironi Kiryat Shmona,Right Winger,27,Senegal,7,9,9,15,316,196,12239,27,26,184,57,10,9,2018,2026
+530115,Rüfat Abdullazada,6028,Ironi Kiryat Shmona,Right Winger,25,Azerbaijan,21,10,5,13,344,206,11233,22,25,22,3,22,27,2017,2026
 925801,Awajo Asefa,6028,Ironi Kiryat Shmona,Left Winger,27,Israel,30,7,5,5,189,85,4501,9,3,1,0,4,0,2018,2026
-1098098,Diego Arroyo,262,Hapoel Petah Tikva,Centre-Back,21,Bolivia,4,5,5,18,179,29,1863,0,1,4,1,5,15,2022,2026
 1002503,Liran Dayan,262,Hapoel Petah Tikva,Goalkeeper,20,Israel,0,3,1,3,20,9,810,0,0,0,0,0,9,2021,2026
+1098098,Diego Arroyo,262,Hapoel Petah Tikva,Centre-Back,21,Bolivia,4,5,5,18,180,29,1863,0,1,4,1,5,15,2022,2026
 622062,Stav Israeli,262,Hapoel Petah Tikva,Centre-Back,27,Israel,12,10,6,4,304,176,13886,1,1,1,0,22,0,2017,2026
 1551099,Zohar Greenberg,262,Hapoel Petah Tikva,Right-Back,19,Israel,0,2,1,2,5,0,0,0,0,0,0,0,0,2025,2026
+1318641,Edmond Asante,262,Hapoel Petah Tikva,Central Midfield,20,Ghana,0,3,2,3,80,25,1192,4,0,2,0,0,0,2024,2026
 1096637,Yves Erick Bile,262,Hapoel Petah Tikva,Centre-Forward,21,Cote d'Ivoire,29,5,6,16,217,146,8102,40,10,84,32,12,0,2022,2026
 419293,Hamidou Keyta,262,Hapoel Petah Tikva,Left Winger,31,France,0,14,16,26,551,351,19154,68,33,19,6,43,0,2013,2026
-1318641,Edmond Asante,262,Hapoel Petah Tikva,Central Midfield,20,Ghana,0,3,2,3,80,25,1192,4,0,2,0,0,0,2024,2026
 1571850,Nachman Assal,262,Hapoel Petah Tikva,Right Winger,19,Israel,15,1,1,1,4,0,0,0,0,0,0,0,0,2026,2026
 1529819,Omri Cohen,262,Hapoel Petah Tikva,Centre-Forward,18,Israel,34,2,1,4,17,8,182,0,2,0,0,1,5,2025,2026
 138324,Arik Yanko,2785,Hapoel Ramat Gan,Goalkeeper,34,Israel,0,19,9,12,666,408,36629,0,0,0,0,41,2,2008,2026
@@ -664,27 +664,27 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 488096,Ofek Ovadia,2785,Hapoel Ramat Gan,Right-Back,25,Israel,27,11,7,8,256,179,10367,24,10,2,0,16,34,2016,2026
 578094,Fard Ibrahim,2785,Hapoel Ramat Gan,Left-Back,26,Ghana,0,10,8,16,278,165,12559,3,6,2,0,19,0,2017,2026
 926477,Getachew Yabelo,2785,Hapoel Ramat Gan,Right-Back,21,Israel,2,8,4,9,107,66,4393,1,2,0,0,6,19,2019,2026
-143558,Srdjan Mijailovic,2785,Hapoel Ramat Gan,Defensive Midfield,33,Serbia,22,18,6,34,810,463,33748,13,15,129,54,118,36,2009,2026
-1048113,Moshe Semel,2785,Hapoel Ramat Gan,Attacking Midfield,23,Israel,10,5,3,6,163,102,5941,17,7,29,7,18,0,2022,2026
 1103827,Daniel Tishler,2785,Hapoel Ramat Gan,Centre-Back,20,Israel,3,5,3,9,72,47,3445,4,2,6,0,10,13,2022,2026
+1048113,Moshe Semel,2785,Hapoel Ramat Gan,Attacking Midfield,23,Israel,10,5,3,6,163,102,5941,17,7,29,7,18,0,2022,2026
+143558,Srdjan Mijailovic,2785,Hapoel Ramat Gan,Defensive Midfield,33,Serbia,22,18,6,34,810,463,33748,13,15,129,54,118,36,2009,2026
 1045766,Christopher Boniface,2785,Hapoel Ramat Gan,Attacking Midfield,24,Nigeria,0,5,4,8,141,101,6042,19,7,7,4,15,0,2022,2026
 468549,Tamir Glazer,2785,Hapoel Ramat Gan,Defensive Midfield,26,Israel,24,12,9,16,313,199,13870,2,3,24,6,54,15,2015,2026
-819249,Luan Campos,2785,Hapoel Ramat Gan,Left Winger,24,Brazil,99,8,8,19,253,103,6437,22,8,61,19,13,0,2019,2026
 357701,Marius Noubissi,2785,Hapoel Ramat Gan,Centre-Forward,29,Cameroon,0,12,10,22,427,264,15608,85,20,142,55,47,0,2014,2026
+819249,Luan Campos,2785,Hapoel Ramat Gan,Left Winger,24,Brazil,99,8,8,19,253,103,6437,22,8,61,19,13,0,2019,2026
 1115641,Amit Tzur,2785,Hapoel Ramat Gan,Right Winger,22,Israel,15,4,4,6,96,67,2850,2,0,3,0,9,3,2022,2026
 1364964,Ilay Hazan,810,Hapoel Haifa,Centre-Back,19,Israel,35,1,1,1,1,0,0,0,0,0,0,0,0,2024,2024
 1057291,Israel Sali Pahima,810,Hapoel Haifa,Attacking Midfield,21,Israel,11,5,4,6,95,44,1982,7,0,6,2,5,0,2021,2026
 1099867,Cheick Keita,810,Hapoel Haifa,Central Midfield,21,Mali,8,3,3,5,45,14,1051,2,0,5,2,4,1,2023,2026
 1137552,Tal Naim,810,Hapoel Haifa,Defensive Midfield,23,Israel,42,5,3,4,129,80,4241,5,4,0,0,18,0,2022,2026
 1586065,Liam Nahum,810,Hapoel Haifa,Defensive Midfield,20,Israel,0,1,1,1,10,0,0,0,0,0,0,0,0,2026,2026
-564388,Willy Agada,810,Hapoel Haifa,Centre-Forward,27,Nigeria,9,9,5,10,316,239,15271,65,13,253,81,37,0,2018,2026
 1068539,Cheickna Diakité,810,Hapoel Haifa,Left Winger,21,Mali,0,5,3,6,47,37,1834,2,2,22,7,6,9,2022,2026
+564388,Willy Agada,810,Hapoel Haifa,Centre-Forward,27,Nigeria,9,9,5,10,316,239,15271,65,13,253,81,37,0,2018,2026
 1343731,Guy Sanker,51070,Ironi Tiberias,Right-Back,24,Israel,14,5,4,4,67,47,4014,4,1,4,1,12,0,2020,2026
+1583728,Ran Haliwa,51070,Ironi Tiberias,Centre-Back,20,Israel,0,1,2,2,6,1,79,0,0,0,0,0,0,2026,2026
 577439,Chriso,51070,Ironi Tiberias,Central Midfield,26,Cote d'Ivoire,23,10,8,20,354,183,10688,7,5,59,17,26,0,2017,2026
 621379,Bar Cohen,51070,Ironi Tiberias,Attacking Midfield,25,Israel,10,10,9,15,315,231,10282,24,22,58,22,14,18,2017,2026
-1583728,Ran Haliwa,51070,Ironi Tiberias,Centre-Back,20,Israel,0,1,2,2,6,1,79,0,0,0,0,0,0,2026,2026
-786170,Yarin Sardal,51070,Ironi Tiberias,Defensive Midfield,25,Israel,0,8,5,5,231,60,1609,1,0,0,0,6,0,2019,2026
 1584311,Ravid Shamay,51070,Ironi Tiberias,Midfield,22,Israel,0,2,2,2,11,0,0,0,0,0,0,0,0,2024,2026
+786170,Yarin Sardal,51070,Ironi Tiberias,Defensive Midfield,25,Israel,0,8,5,5,231,60,1609,1,0,0,0,6,0,2019,2026
 464953,Qays Ghanem,51070,Ironi Tiberias,Centre-Forward,28,Israel,12,12,8,12,413,237,14060,41,17,103,40,41,1,2015,2026
 913085,Néné Gbamblé,51070,Ironi Tiberias,Right Winger,24,Cote d'Ivoire,84,7,9,14,199,109,6187,8,10,13,4,18,0,2020,2026
 1264090,Mansour Badjie,51070,Ironi Tiberias,Left Winger,21,The Gambia,30,4,2,3,92,72,4284,8,12,13,5,11,0,2023,2026

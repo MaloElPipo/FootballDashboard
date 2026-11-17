@@ -1,20 +1,19 @@
 {
   "last_attempt": {
-    "started_at": "2026-11-17T05:33:28.515670+00:00",
-    "status": "incomplete",
-    "reason": "access_blocked"
+    "started_at": "2026-11-17T15:39:07.261757+00:00",
+    "status": "success"
   },
   "last_success": {
-    "completed_at": "2026-11-11T23:06:10.469842+00:00",
+    "completed_at": "2026-11-16T11:12:18.976558+00:00",
     "sha256": {
-      "summary": "0a1e5bcd5db5016433f4be594e73254769426a99e9b6cc90c15adbadf6dce130",
-      "career": "25c1851661d4ab63684e04b0e5f8fafbeeea0abe16090d07121220b5f07b7565",
-      "matches": "bee4647b4e1ad89832e12fde71497bed5fe66f283ab20595c9d7321fa80f3324",
-      "competitions_seen": "b8c0d4a39ae16222c3fdefcbeec8903feb137cbc99fcdcf0202b896a48b3531e"
+      "summary": "f277bf29b3b86ef5a6a797da8f6c560781d71c1a69985a0d3fa4ff0cad08c4c4",
+      "career": "c95a580df67740d24fddcf42cb06175eeaf47be3ca5b9bba3321073f5fbdcc13",
+      "matches": "c90514e2bae0a89581e75ef602895284b506317f5392e2bf7036f4efcd7862d9",
+      "competitions_seen": "48a9fc960c6f6da1a04c81848b857b1eef6c409f2a5a16c5ce687b30f039b67e"
     },
-    "campaign": "run-43059335910-isr1",
+    "campaign": "run-43854292968-isr1",
     "response_version": 1,
-    "collected_from": "2026-11-11T23:06:10.469842+00:00",
-    "collected_through": "2026-11-12T17:10:30.191810+00:00"
+    "collected_from": "2026-11-16T11:12:18.976558+00:00",
+    "collected_through": "2026-11-17T15:40:42.699304+00:00"
   }
 }

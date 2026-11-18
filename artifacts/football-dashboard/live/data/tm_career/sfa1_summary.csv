@@ -1,16 +1,16 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
-887629,Gilberto,2557,Orlando Pirates,Right Winger,25,Angola,0,6,3,10,113,65,3506,4,2,53,11,5,23,2021,2026
-724150,Sekhoane Moerane,45783,Orbit College FC,Goalkeeper,28,Lesotho,16,8,2,8,87,61,5408,1,0,1,0,3,43,2019,2026
+887629,Gilberto,2557,Orlando Pirates,Right Winger,25,Angola,0,6,3,10,115,66,3596,4,2,56,11,5,24,2021,2026
+724150,Sekhoane Moerane,45783,Orbit College FC,Goalkeeper,28,Lesotho,16,8,2,8,89,63,5588,1,0,1,0,3,45,2019,2026
 437731,Sabelo Nkomo,45783,Orbit College FC,Goalkeeper,0,South Africa,1,8,5,4,52,18,1651,0,0,0,0,1,0,2015,2025
-357561,Cyril Chibwe,45783,Orbit College FC,Goalkeeper,32,Zambia,32,11,8,10,230,37,3180,0,1,0,0,1,9,2014,2025
 391573,Tshepo Mamabolo,45783,Orbit College FC,Goalkeeper,32,South Africa,34,7,5,4,48,2,208,0,0,0,0,0,0,2015,2025
+357561,Cyril Chibwe,45783,Orbit College FC,Goalkeeper,32,Zambia,32,11,8,10,230,37,3180,0,1,0,0,1,9,2014,2025
 699346,Katlego Mkhabela,45783,Orbit College FC,Right-Back,30,South Africa,21,7,3,5,147,55,4016,0,0,8,0,8,0,2019,2025
 566501,Olaoleng Mokgosi,45783,Orbit College FC,Centre-Back,0,South Africa,4,4,1,4,32,19,1711,0,0,1,0,3,0,2017,2025
 1392334,Yanga Madiba,61852,Marumo Gallants FC,Left-Back,25,South Africa,0,4,3,5,97,21,1340,0,1,7,2,4,0,2023,2026
 1210868,Thabang Nhlapo,45783,Orbit College FC,Centre-Back,0,South Africa,23,3,1,4,38,30,2729,0,0,4,1,6,0,2023,2025
-1210866,Thulani Jingana,45783,Orbit College FC,Left-Back,23,Eswatini,29,4,2,7,43,27,2386,0,1,4,0,5,2,2023,2026
+1210866,Thulani Jingana,45783,Orbit College FC,Left-Back,23,Eswatini,29,4,2,7,44,27,2386,0,1,4,0,5,2,2023,2026
 208076,Brian Onyango,45783,Orbit College FC,Centre-Back,31,Kenya,48,15,5,14,518,199,14759,12,1,17,6,30,40,2011,2025
-739939,Mohammed Abubakar,45783,Orbit College FC,Left-Back,25,Ghana,0,8,3,5,198,77,5815,1,3,0,0,8,0,2019,2026
+739939,Mohammed Abubakar,45783,Orbit College FC,Left-Back,25,Ghana,0,8,3,5,199,77,5815,1,3,0,0,8,0,2019,2026
 1210864,Kobamelo Setlhodi,45783,Orbit College FC,Right-Back,0,South Africa,26,3,1,4,38,11,778,0,2,0,0,2,0,2023,2025
 1211153,Halalisani Vilakazi,12668,Richards Bay FC,Right-Back,27,South Africa,0,3,3,5,42,31,2363,0,0,7,2,3,0,2023,2025
 1115483,Ndumiso Ngiba,45783,Orbit College FC,Centre-Back,0,South Africa,30,4,2,4,39,17,800,0,0,0,0,4,0,2022,2025
@@ -29,8 +29,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 426157,Tshepo Matsemela,45783,Orbit College FC,Attacking Midfield,30,South Africa,20,10,7,6,128,35,1413,1,0,11,1,1,0,2014,2025
 1477774,Monwabisi Mngqibisa,45783,Orbit College FC,Central Midfield,0,South Africa,38,2,1,4,37,3,204,0,0,1,0,0,0,2024,2025
 1450245,Oarabile Moeti,45783,Orbit College FC,Midfield,0,South Africa,39,1,1,3,32,1,1,0,0,0,0,0,0,2025,2025
-1450003,Ikaneng Ramosala,45783,Orbit College FC,Attacking Midfield,0,South Africa,45,3,1,3,34,3,179,0,0,4,0,0,0,2023,2025
 636980,Cameron Chweu,45783,Orbit College FC,Central Midfield,0,South Africa,0,2,3,3,17,4,112,0,0,4,3,0,0,2018,2025
+1450003,Ikaneng Ramosala,45783,Orbit College FC,Attacking Midfield,0,South Africa,45,3,1,3,34,3,179,0,0,4,0,0,0,2023,2025
 231562,Pogiso Mahlangu,45783,Orbit College FC,Attacking Midfield,33,South Africa,43,13,5,5,213,71,3245,6,1,27,5,13,0,2012,2025
 1376075,Thapelo Mokwena,45783,Orbit College FC,Defensive Midfield,0,South Africa,0,2,2,3,18,3,204,0,0,0,0,1,0,2024,2025
 1352385,Tlhalefang Manyedi,45783,Orbit College FC,Central Midfield,0,South Africa,3,2,1,4,37,0,0,0,0,0,0,0,0,2024,2025
@@ -44,15 +44,15 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 160558,Letsie Koapeng,14187,Durban City Football Club,Centre-Forward,34,South Africa,19,16,12,7,413,165,7253,21,5,92,31,8,3,2010,2026
 1210862,Gomolemo Khoto,85501,Sekhukhune United FC,Left Winger,23,South Africa,0,4,2,5,53,27,1359,3,1,23,6,1,0,2023,2026
 1239749,Thabang Mahlangu,85501,Sekhukhune United FC,Centre-Forward,21,South Africa,0,4,4,7,106,32,748,3,0,26,9,0,11,2023,2026
-529926,Lebohang Lesako,45783,Orbit College FC,Right Winger,26,Lesotho,22,7,5,8,125,30,1269,1,2,33,7,3,3,2020,2026
+529926,Lebohang Lesako,45783,Orbit College FC,Right Winger,26,Lesotho,22,7,5,8,131,32,1423,1,4,39,10,3,5,2020,2026
 1376086,Lucky Mahlatsi,21202,Polokwane City FC,Centre-Forward,20,South Africa,0,3,3,4,45,18,1007,1,0,24,7,1,0,2024,2026
 663339,Kgotso Masangane,45783,Orbit College FC,Right Winger,27,South Africa,0,8,4,8,234,206,16409,15,20,1,0,18,0,2018,2025
 643640,Mpho Khabane,45783,Orbit College FC,Centre-Forward,24,South Africa,0,8,3,4,51,16,439,1,0,2,0,1,0,2018,2025
 844623,Katlego Cwinyane,45783,Orbit College FC,Centre-Forward,26,South Africa,0,6,4,7,87,5,203,1,0,0,0,0,0,2020,2025
 146329,Bradley Ralani,45783,Orbit College FC,Left Winger,38,South Africa,10,18,10,14,521,356,24610,50,58,68,25,15,0,2008,2025
 487675,Thabang Maponya,45783,Orbit College FC,Right Winger,30,South Africa,35,8,6,6,125,10,500,0,0,1,1,3,0,2016,2025
-437713,Simphiwe Ndlovu,45783,Orbit College FC,Centre-Forward,32,South Africa,0,6,4,4,28,8,379,1,0,0,0,0,0,2015,2025
 1352389,Muhluri Ubisi,45783,Orbit College FC,Centre-Forward,0,South Africa,0,3,2,4,22,3,93,0,0,0,0,1,0,2023,2025
+437713,Simphiwe Ndlovu,45783,Orbit College FC,Centre-Forward,32,South Africa,0,6,4,4,28,8,379,1,0,0,0,0,0,2015,2025
 862052,Alphonia Lekeno,45783,Orbit College FC,Right Winger,23,South Africa,0,4,3,2,9,2,46,0,0,0,0,0,0,2020,2024
 1136645,Lemohang Maseko,45783,Orbit College FC,Right Winger,22,South Africa,0,4,3,4,40,2,133,0,0,0,0,0,0,2022,2025
 1238138,Reotshepile Letlhake,45783,Orbit College FC,Left Winger,0,South Africa,33,3,2,2,4,2,70,0,0,0,0,0,0,2023,2025
@@ -104,7 +104,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 338242,Sekela Sithole,61852,Marumo Gallants FC,Attacking Midfield,29,South Africa,26,12,8,4,124,98,6935,13,6,70,28,20,0,2014,2025
 196110,Siyabonga Nhlapo,61852,Marumo Gallants FC,Central Midfield,37,South Africa,50,15,7,9,525,340,25359,6,18,22,6,41,8,2011,2026
 312253,Jaisen Clifford,132785,Siwelele Football Club,Centre-Forward,30,South Africa,0,11,10,17,273,129,6642,17,2,24,7,23,0,2015,2026
-531279,Goodman Mosele,31283,Chippa United,Central Midfield,26,South Africa,0,10,3,11,381,218,16610,7,7,49,10,35,8,2017,2026
+531279,Goodman Mosele,31283,Chippa United,Central Midfield,27,South Africa,0,10,3,11,381,218,16610,7,7,49,10,35,8,2017,2026
 853132,Glody Lilepo,568,Kaizer Chiefs,Right Winger,29,DR Congo,99,9,6,13,184,131,9042,31,10,236,96,6,11,2017,2026
 647576,Fezile Gcaba,14187,Durban City Football Club,Centre-Back,27,South Africa,0,7,5,7,101,54,4026,6,0,30,8,9,6,2018,2026
 1145004,Isaac Cissé,7011,Lamontville Golden Arrows,Defensive Midfield,19,Cote d'Ivoire,19,4,2,6,52,39,2034,5,1,36,14,3,2,2022,2026
@@ -117,22 +117,22 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 341967,Gadinkame Modise,21202,Polokwane City FC,Left-Back,27,South Africa,27,12,6,8,178,103,7604,1,5,28,9,5,7,2014,2026
 1268371,Abraham Mashele,21202,Polokwane City FC,Right-Back,0,South Africa,48,4,2,4,47,6,205,0,0,1,0,1,0,2023,2026
 540918,Giovanni Philander,21202,Polokwane City FC,Left Winger,26,South Africa,18,4,3,4,77,44,2246,1,2,46,12,2,0,2020,2026
-683126,Mehdi Ouamri,67074,TS Galaxy FC,Centre-Forward,26,Algeria,13,8,9,18,231,138,9211,31,17,29,8,20,0,2019,2026
+683126,Mehdi Ouamri,67074,TS Galaxy FC,Centre-Forward,26,Algeria,13,8,9,18,231,139,9212,31,17,29,8,20,0,2019,2026
 1526357,Matthew Marou,132785,Siwelele Football Club,Centre-Forward,22,South Africa,0,2,2,3,29,8,253,0,0,0,0,0,0,2025,2026
 861305,Mlungisi Sikakane,61852,Marumo Gallants FC,Centre-Back,32,South Africa,0,7,4,5,88,27,2174,0,0,11,1,5,0,2020,2026
 1370531,Cheswyn Philander,54142,Milford FC,Centre-Forward,22,South Africa,19,2,2,4,32,9,339,1,0,3,1,0,0,2024,2025
 556784,Sphiwe Msimango,23287,Stellenbosch FC,Centre-Back,29,South Africa,30,11,4,7,313,169,14623,5,0,43,7,13,1,2016,2026
 478498,Ashley du Preez,23287,Stellenbosch FC,Centre-Forward,29,South Africa,10,10,2,6,257,173,11624,32,17,192,73,9,2,2016,2026
-661584,Kitso Mangolo,12668,Richards Bay FC,Left-Back,27,Botswana,0,7,3,8,69,31,2295,0,0,1,1,8,17,2019,2026
+661584,Kitso Mangolo,12668,Richards Bay FC,Left-Back,27,Botswana,0,7,3,8,76,31,2295,0,0,1,1,8,17,2019,2026
 857924,Oumar Comara,7011,Lamontville Golden Arrows,Centre-Back,25,Cote d'Ivoire,15,6,5,6,139,42,2657,0,0,14,1,11,0,2020,2026
 565900,Siphesihle Maduna,9370,AmaZulu FC,Central Midfield,26,South Africa,0,10,3,5,285,153,9151,8,9,66,17,21,0,2017,2026
 560463,Neo Maema,6356,Mamelodi Sundowns FC,Attacking Midfield,30,South Africa,0,10,3,9,363,200,11007,21,21,156,53,12,4,2017,2026
 478366,Miguel Reisinho,6356,Mamelodi Sundowns FC,Central Midfield,27,Portugal,7,12,3,12,345,134,7389,11,5,75,24,34,12,1992,2026
 1001899,Dublin Boon,2557,Orlando Pirates,Goalkeeper,21,New Zealand,0,5,7,16,166,31,2745,0,0,0,0,1,0,2021,2026
-1107984,Faiz Abrahams,568,Kaizer Chiefs,Right Winger,21,South Africa,35,5,4,9,125,26,1367,3,4,11,0,2,3,2022,2026
+1107984,Faiz Abrahams,568,Kaizer Chiefs,Attacking Midfield,21,South Africa,35,5,4,9,125,26,1367,3,4,11,0,2,3,2022,2026
 412123,Knox Mutizwa,12668,Richards Bay FC,Centre-Forward,32,Zimbabwe,18,15,4,10,381,259,17373,67,25,154,65,18,11,2010,2026
 126635,Gladwin Shitolo,7011,Lamontville Golden Arrows,Centre-Back,37,South Africa,5,16,5,9,457,236,19134,10,2,37,9,26,6,2008,2026
-1145003,Eroine Agnikoi,7011,Lamontville Golden Arrows,Centre-Back,20,Cote d'Ivoire,0,5,4,9,132,47,4111,2,0,12,4,2,5,2022,2026
+1145003,Eroine Agnikoi,7011,Lamontville Golden Arrows,Centre-Back,20,Cote d'Ivoire,0,5,4,9,133,47,4111,2,0,12,4,2,5,2022,2026
 1226625,Romaric Dognimin Ouattara,61852,Marumo Gallants FC,Centre-Forward,21,Cote d'Ivoire,22,3,3,6,101,20,841,2,1,7,3,3,0,2023,2025
 1437504,Doudy James,61852,Marumo Gallants FC,Right Winger,26,South Africa,21,2,1,3,36,3,43,0,0,0,0,0,0,2025,2026
 1095449,Paulinho,67074,TS Galaxy FC,Left Winger,20,Brazil,21,5,2,7,83,23,585,1,0,0,0,1,0,2022,2026
@@ -143,7 +143,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1401168,Sifiso Timba,568,Kaizer Chiefs,Right-Back,20,South Africa,0,3,2,6,19,10,725,0,0,5,1,1,9,2024,2026
 1069610,Samkelo Zwane,568,Kaizer Chiefs,Central Midfield,24,South Africa,0,5,2,5,131,43,1816,0,1,28,4,6,0,2022,2026
 985119,Ethan Visagie,2557,Orlando Pirates,Goalkeeper,24,South Africa,0,4,2,5,98,1,19,0,0,0,0,0,0,2021,2025
-1131788,Thato Sibiya,6356,Mamelodi Sundowns FC,Left-Back,20,South Africa,45,4,2,8,56,17,1140,0,1,4,1,1,9,2022,2026
+1131788,Thato Sibiya,6356,Mamelodi Sundowns FC,Left-Back,20,South Africa,45,4,2,8,56,18,1230,0,1,4,1,1,9,2022,2026
 1163148,Sanele Radebe,7011,Lamontville Golden Arrows,Left Winger,25,South Africa,45,4,2,4,76,4,193,0,0,2,0,0,0,2023,2026
 872381,Moremi Seketso,61852,Marumo Gallants FC,Right Winger,29,South Africa,0,7,6,4,56,19,1050,1,2,22,4,2,0,2020,2026
 646389,Ibrahim Bancé,31283,Chippa United,Central Midfield,25,Burkina Faso,0,11,7,15,230,73,4322,2,1,17,3,14,9,2013,2026
@@ -158,8 +158,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 110082,Darren Keet,14187,Durban City Football Club,Goalkeeper,37,South Africa,1,18,5,20,734,445,39978,0,3,0,0,26,17,2008,2025
 912585,Sazi Gumbi,12668,Richards Bay FC,Attacking Midfield,25,South Africa,0,6,2,4,179,26,1152,0,0,10,1,0,0,2021,2026
 1238157,Thamsanqa Magwaza,85501,Sekhukhune United FC,Right Winger,22,South Africa,0,2,3,4,35,6,230,0,0,3,0,0,0,2023,2025
-625595,Brian Bwire,21202,Polokwane City FC,Goalkeeper,26,Kenya,50,10,3,10,131,46,4002,0,0,0,0,3,8,2017,2026
-1109254,Thabang Matuludi,6356,Mamelodi Sundowns FC,Right-Back,27,South Africa,22,7,2,12,137,84,7235,8,3,118,30,11,4,2020,2026
+625595,Brian Bwire,21202,Polokwane City FC,Goalkeeper,26,Kenya,50,10,3,11,147,46,4002,0,0,0,0,3,8,2017,2026
+1109254,Thabang Matuludi,6356,Mamelodi Sundowns FC,Right-Back,27,South Africa,22,7,2,12,139,86,7416,8,3,119,30,11,6,2020,2026
 258306,Trevor Mathiane,61852,Marumo Gallants FC,Centre-Back,37,South Africa,25,14,4,5,365,185,15480,6,1,19,4,17,0,2012,2025
 699341,Bongolwethu Siyasi,61852,Marumo Gallants FC,Right-Back,23,South Africa,6,4,3,2,11,2,210,0,0,1,0,1,0,2019,2024
 1340826,Dimakatso Mashao,61852,Marumo Gallants FC,Midfield,25,South Africa,23,3,1,3,74,1,9,0,0,1,0,0,0,2024,2026
@@ -185,13 +185,13 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1096437,Sikhosonke Langa,120423,Kruger United FC,Left-Back,32,South Africa,0,4,2,6,81,32,2052,1,1,6,2,5,0,2022,2025
 844772,Douglas Mapfumo,120423,Kruger United FC,Centre-Forward,26,Zimbabwe,0,5,5,7,100,42,2407,5,2,47,14,3,7,2020,2024
 898983,Kerwin Peters,31283,Chippa United,Left-Back,26,South Africa,0,8,3,4,141,8,454,0,0,2,0,1,0,2019,2026
-453370,Sipho Chaine,2557,Orlando Pirates,Goalkeeper,29,South Africa,24,11,3,12,426,194,17207,0,1,0,0,21,5,2016,2026
+453370,Sipho Chaine,2557,Orlando Pirates,Goalkeeper,29,South Africa,24,11,3,12,428,194,17207,0,1,0,0,21,5,2016,2026
 605905,Melusi Buthelezi,85501,Sekhukhune United FC,Goalkeeper,28,South Africa,44,9,4,6,260,68,5944,0,0,1,1,6,1,2018,2026
-1378320,Mbekezeli Mbokazi,2557,Orlando Pirates,Centre-Back,19,South Africa,0,3,2,13,130,76,6589,3,2,45,9,11,14,2023,2025
+1378320,Mbekezeli Mbokazi,2557,Orlando Pirates,Centre-Back,19,South Africa,0,4,2,14,135,77,6608,3,2,46,10,11,15,2023,2026
 1312701,Siyabonga Dladla,2557,Orlando Pirates,Goalkeeper,25,South Africa,40,3,1,5,116,1,90,0,0,0,0,0,0,2024,2026
 399068,Nkosinathi Sibisi,2557,Orlando Pirates,Centre-Back,31,South Africa,5,12,2,11,502,276,22929,8,3,51,15,48,22,2015,2026
 994370,Kamogelo Sebelebele,2557,Orlando Pirates,Right-Back,24,South Africa,36,6,2,10,196,149,9755,18,9,161,62,19,6,2021,2026
-1042094,Lebone Seema,2557,Orlando Pirates,Centre-Back,23,South Africa,6,5,2,7,169,86,6060,4,2,37,6,10,2,2022,2026
+1042094,Lebone Seema,2557,Orlando Pirates,Centre-Back,23,South Africa,6,5,2,7,171,86,6060,4,2,37,6,10,2,2022,2026
 329542,Tapelo Xoki,2557,Orlando Pirates,Centre-Back,31,South Africa,27,13,2,8,420,223,18444,17,4,56,18,48,1,2014,2026
 680905,Olisa Ndah,23287,Stellenbosch FC,Centre-Back,27,Nigeria,99,9,5,13,356,146,12172,1,1,23,5,27,4,2018,2026
 1126593,Nkosikhona Ndaba,2557,Orlando Pirates,Left-Back,24,South Africa,3,5,2,6,152,70,5410,0,7,15,3,5,0,2022,2026
@@ -199,10 +199,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1071030,Tshepho Mashiloane,85501,Sekhukhune United FC,Right-Back,24,South Africa,0,5,3,6,62,35,2971,3,2,20,7,5,0,2022,2026
 845966,Thabiso Sesane,132785,Siwelele Football Club,Centre-Back,26,South Africa,0,7,4,7,202,60,4693,0,3,8,1,9,0,2020,2026
 966666,Mpho Chabatsane,2557,Orlando Pirates,Centre-Back,24,South Africa,43,6,3,5,97,44,3314,0,2,17,3,5,0,2021,2026
-273903,Deon Hotto,2557,Orlando Pirates,Left-Back,36,Namibia,7,15,4,11,595,508,39551,54,91,231,87,43,66,2011,2026
+273903,Deon Hotto,2557,Orlando Pirates,Left-Back,36,Namibia,7,15,4,11,596,509,39641,54,91,231,87,43,67,2011,2026
 647573,Thabiso Lebitso,23287,Stellenbosch FC,Right-Back,34,South Africa,0,10,5,6,266,136,9438,3,5,51,12,17,0,2014,2026
-735697,Thalente Mbatha,2557,Orlando Pirates,Central Midfield,26,South Africa,16,8,3,12,300,145,9591,9,5,157,53,18,19,2019,2026
-436374,Sipho Mbule,2557,Orlando Pirates,Central Midfield,27,South Africa,23,11,5,16,459,222,12457,18,17,85,23,26,18,2016,2026
+735697,Thalente Mbatha,2557,Orlando Pirates,Central Midfield,26,South Africa,16,8,3,12,305,146,9678,9,5,160,53,18,20,2019,2026
+436374,Sipho Mbule,2557,Orlando Pirates,Central Midfield,27,South Africa,23,11,5,16,459,222,12492,18,17,85,23,26,18,2016,2026
 555606,Patrick Maswanganyi,2557,Orlando Pirates,Attacking Midfield,28,South Africa,0,8,5,14,270,173,12012,32,25,194,71,30,5,2019,2026
 264903,Andre de Jong,2557,Orlando Pirates,Attacking Midfield,30,New Zealand,14,15,8,17,470,294,19384,72,43,156,59,18,23,2012,2026
 304978,Sihle Nduli,2557,Orlando Pirates,Defensive Midfield,31,South Africa,30,10,4,6,270,166,11734,2,4,57,14,34,0,2017,2026
@@ -211,19 +211,19 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1407743,Cemran Dansin,2557,Orlando Pirates,Central Midfield,21,South Africa,46,3,1,5,72,24,1009,1,1,13,3,1,0,2024,2026
 803083,Selaelo Rasebotja,132785,Siwelele Football Club,Right Midfield,25,South Africa,0,7,3,6,188,57,2269,3,0,8,3,7,0,2019,2026
 1423790,Abdoulaye Mariko,61852,Marumo Gallants FC,Central Midfield,23,Mali,0,3,3,5,69,16,699,0,0,7,3,0,0,2024,2026
-333179,Makhehlene Makhaula,2557,Orlando Pirates,Defensive Midfield,36,South Africa,8,13,4,6,450,277,20636,5,4,45,12,54,0,2014,2026
+333179,Makhehlene Makhaula,2557,Orlando Pirates,Defensive Midfield,37,South Africa,8,13,4,6,450,277,20636,5,4,45,12,54,0,2014,2026
 1404746,Simphiwe Selepe,2557,Orlando Pirates,Central Midfield,21,South Africa,47,3,1,6,74,22,1479,1,0,3,1,5,2,2024,2026
-1125037,Relebohile Mofokeng,2557,Orlando Pirates,Left Winger,20,South Africa,38,5,2,16,206,160,11394,36,35,276,125,9,18,2022,2026
+1125037,Relebohile Mofokeng,2557,Orlando Pirates,Left Winger,20,South Africa,38,5,2,16,207,161,11484,37,35,280,126,9,19,2022,2026
 1151539,Cebo Mchunu,2557,Orlando Pirates,Attacking Midfield,0,South Africa,22,4,3,5,69,2,133,0,0,0,0,0,0,2023,2026
-673381,Oswin Appollis,2557,Orlando Pirates,Left Winger,25,South Africa,12,9,4,12,261,160,11229,31,29,290,122,8,35,2018,2026
-844485,Tshepang Moremi,2557,Orlando Pirates,Left Winger,26,South Africa,11,7,4,11,202,150,8860,26,15,203,70,10,13,2020,2026
+673381,Oswin Appollis,2557,Orlando Pirates,Left Winger,25,South Africa,12,9,4,12,263,162,11383,31,29,294,124,8,37,2018,2026
+844485,Tshepang Moremi,2557,Orlando Pirates,Left Winger,26,South Africa,11,7,4,11,204,151,8917,26,15,204,70,10,14,2020,2026
 342489,Tshegofatso Mabasa,23287,Stellenbosch FC,Centre-Forward,28,South Africa,37,13,6,8,478,259,13180,76,12,227,99,27,1,2014,2026
 746781,Evidence Makgopa,2557,Orlando Pirates,Centre-Forward,26,South Africa,17,8,2,12,343,210,12937,45,18,198,78,5,33,2019,2026
 1028883,Yanela Mbuthuma,2557,Orlando Pirates,Centre-Forward,24,South Africa,9,5,2,12,192,131,7330,22,14,209,73,10,3,2022,2026
 1106548,Sinoxolo Kwayiba,23287,Stellenbosch FC,Centre-Forward,26,South Africa,0,5,4,8,126,79,6065,23,3,123,58,9,3,2022,2026
-1147135,Daniel Msendami,61852,Marumo Gallants FC,Right Winger,26,Zimbabwe,0,4,3,9,128,85,5562,6,4,139,40,8,16,2023,2026
+1147135,Daniel Msendami,61852,Marumo Gallants FC,Right Winger,26,Zimbabwe,0,4,3,9,129,86,5568,6,4,139,40,8,17,2023,2026
 959354,Boitumelo Radiopane,2557,Orlando Pirates,Centre-Forward,24,South Africa,42,6,2,7,203,46,1548,5,2,37,20,1,0,2021,2026
-945876,Fiacre Ntwari,120423,Kruger United FC,Goalkeeper,27,Rwanda,0,8,5,8,177,72,6489,0,0,0,0,1,30,2017,2026
+945876,Fiacre Ntwari,120423,Kruger United FC,Goalkeeper,27,Rwanda,0,8,5,8,179,74,6669,0,0,0,0,1,32,2017,2026
 498985,Bruce Bvuma,568,Kaizer Chiefs,Goalkeeper,31,South Africa,44,11,1,10,415,84,7516,0,1,0,0,9,0,2016,2026
 268567,Brandon Petersen,568,Kaizer Chiefs,Goalkeeper,32,South Africa,1,15,3,7,418,152,13567,0,0,0,0,14,0,2012,2026
 1131781,Takalani Mazhamba,568,Kaizer Chiefs,Goalkeeper,19,South Africa,41,4,1,8,52,1,90,0,0,0,0,1,0,2022,2026
@@ -236,11 +236,11 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 478611,Dillan Solomons,568,Kaizer Chiefs,Right-Back,29,South Africa,18,11,6,6,252,119,7351,6,9,65,15,12,0,2016,2026
 409574,Paseka Mako,568,Kaizer Chiefs,Left-Back,32,South Africa,29,13,4,8,450,257,18747,3,15,27,7,23,2,2014,2026
 332245,Zitha Kwinika,568,Kaizer Chiefs,Centre-Back,32,South Africa,4,13,5,8,420,256,21403,3,2,20,5,39,2,2014,2026
-467610,Nkanyiso Shinga,568,Kaizer Chiefs,Left-Back,26,South Africa,74,9,8,14,246,69,4554,0,2,11,3,10,5,2016,2026
+467610,Nkanyiso Shinga,568,Kaizer Chiefs,Left-Back,26,South Africa,74,9,8,14,228,69,4554,0,2,11,3,10,5,2016,2026
 965991,Mduduzi Shabalala,568,Kaizer Chiefs,Attacking Midfield,22,South Africa,7,6,1,8,185,123,7133,15,10,175,62,6,1,2021,2026
 446715,Siphesihle Ndlovu,568,Kaizer Chiefs,Central Midfield,30,South Africa,8,11,4,7,408,264,19069,15,13,77,23,48,2,2016,2026
 1235402,Mfundo Vilakazi,568,Kaizer Chiefs,Attacking Midfield,20,South Africa,28,4,1,7,118,83,3482,8,8,154,53,4,9,2023,2026
-471293,Nkosingiphile Ngcobo,568,Kaizer Chiefs,Attacking Midfield,26,South Africa,12,10,1,8,372,137,7530,8,4,50,16,7,8,2017,2026
+471293,Nkosingiphile Ngcobo,568,Kaizer Chiefs,Attacking Midfield,27,South Africa,12,10,1,8,372,137,7530,8,4,50,16,7,8,2017,2026
 827517,Sibongiseni Mthethwa,568,Kaizer Chiefs,Defensive Midfield,32,South Africa,5,8,4,8,226,159,12538,0,4,32,4,23,4,2019,2026
 420543,Lebohang Maboe,568,Kaizer Chiefs,Central Midfield,32,South Africa,6,12,5,11,504,310,22438,31,39,159,47,35,7,2015,2026
 555601,Lehlogonolo Matlou,23287,Stellenbosch FC,Attacking Midfield,28,South Africa,0,10,6,9,259,88,4279,0,3,32,8,11,0,2017,2026
@@ -250,23 +250,23 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 341952,Khanyisa Mayo,568,Kaizer Chiefs,Centre-Forward,28,South Africa,0,12,6,17,261,174,11316,42,9,239,86,14,17,2014,2026
 494812,Etiosa Ighodaro,568,Kaizer Chiefs,Centre-Forward,25,Nigeria,50,8,7,7,189,109,6434,26,4,177,59,11,0,2016,2026
 1093091,Wandile Duba,568,Kaizer Chiefs,Right Winger,22,South Africa,47,5,1,5,148,69,3509,16,5,98,36,11,0,2022,2026
-356450,Flávio Silva,568,Kaizer Chiefs,Centre-Forward,30,Guinea-Bissau,77,14,13,20,433,250,13694,71,21,47,21,23,9,2011,2026
+356450,Flávio Silva,568,Kaizer Chiefs,Centre-Forward,30,Guinea-Bissau,77,14,13,20,434,250,13694,71,21,47,21,23,9,2011,2026
 613120,Pule Mmodi,568,Kaizer Chiefs,Left Winger,33,South Africa,13,9,3,8,241,193,14657,28,14,178,67,24,3,2018,2026
 1131780,Luke Baartman,568,Kaizer Chiefs,Centre-Forward,20,South Africa,11,5,2,7,90,32,1406,3,0,36,10,2,5,2022,2026
 699343,Asanele Velebayi,568,Kaizer Chiefs,Right Winger,23,South Africa,17,8,3,6,108,54,2584,2,2,47,12,5,0,2019,2026
 282252,Tashreeq Morris,14187,Durban City Football Club,Centre-Forward,32,South Africa,0,14,6,6,443,231,12344,34,14,114,35,32,3,2013,2026
 401811,Gastón Sirino,14187,Durban City Football Club,Left Winger,35,Uruguay,0,16,6,13,539,310,18975,56,58,234,94,50,0,2011,2026
 1264193,Donay Jansen,568,Kaizer Chiefs,Right Winger,23,South Africa,0,3,2,4,77,5,147,0,0,0,0,0,0,2023,2025
-175577,Ronwen Williams,6356,Mamelodi Sundowns FC,Goalkeeper,34,South Africa,30,17,2,18,835,607,54812,0,1,0,0,39,73,2010,2026
-68096,Denis Onyango,6356,Mamelodi Sundowns FC,Goalkeeper,41,Uganda,1,23,6,15,1104,465,40859,1,1,1,0,40,83,2004,2026
+175577,Ronwen Williams,6356,Mamelodi Sundowns FC,Goalkeeper,34,South Africa,30,17,2,18,837,609,54992,0,1,0,0,39,75,2010,2026
+68096,Denis Onyango,6356,Mamelodi Sundowns FC,Goalkeeper,41,Uganda,1,23,6,15,1106,466,40901,1,1,1,0,40,84,2004,2026
 160572,Reyaad Pieterse,6356,Mamelodi Sundowns FC,Goalkeeper,34,South Africa,26,16,4,16,715,102,8977,0,0,0,0,7,0,2011,2026
-353432,Aubrey Modiba,6356,Mamelodi Sundowns FC,Left-Back,31,South Africa,6,13,3,18,667,449,31916,34,55,195,57,56,58,2014,2026
+353432,Aubrey Modiba,6356,Mamelodi Sundowns FC,Left-Back,31,South Africa,6,13,3,18,669,450,32006,34,55,195,57,56,59,2014,2026
 1283140,Khulumani Ndamane,6356,Mamelodi Sundowns FC,Centre-Back,22,South Africa,3,4,2,13,125,81,6827,0,2,42,7,20,6,2023,2026
-478520,Fawaaz Basadien,6356,Mamelodi Sundowns FC,Left-Back,29,South Africa,23,11,7,15,312,177,12852,11,20,126,34,17,5,2016,2026
+478520,Fawaaz Basadien,6356,Mamelodi Sundowns FC,Left-Back,29,South Africa,23,11,7,15,314,177,12852,11,20,126,34,17,5,2016,2026
 450806,Khuliso Mudau,6356,Mamelodi Sundowns FC,Right-Back,31,South Africa,25,11,3,14,436,287,22459,10,12,69,20,58,36,2016,2026
 390595,Keanu Cupido,6356,Mamelodi Sundowns FC,Centre-Back,28,South Africa,24,13,4,15,432,202,14785,1,3,35,13,29,4,2014,2026
 1317634,Malibongwe Khoza,6356,Mamelodi Sundowns FC,Centre-Back,22,South Africa,2,4,1,10,134,62,4789,4,0,26,5,6,4,2023,2026
-297509,Thapelo Morena,6356,Mamelodi Sundowns FC,Right-Back,33,South Africa,27,14,3,15,739,448,31152,36,42,135,57,13,37,2013,2026
+297509,Thapelo Morena,6356,Mamelodi Sundowns FC,Right-Back,33,South Africa,27,14,3,15,741,448,31152,36,42,135,57,13,37,2013,2026
 659775,Kegan Johannes,6356,Mamelodi Sundowns FC,Right-Back,25,South Africa,37,9,4,12,242,101,7504,5,1,53,14,23,6,2018,2026
 573039,Divine Lunga,6356,Mamelodi Sundowns FC,Left-Back,31,Zimbabwe,29,11,2,14,433,213,16109,3,8,27,8,39,30,2013,2026
 370606,Mothobi Mvala,6356,Mamelodi Sundowns FC,Centre-Back,32,South Africa,40,13,2,15,446,249,18266,29,6,60,13,53,25,2014,2026
@@ -274,22 +274,22 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 43030,Grant Kekana,6356,Mamelodi Sundowns FC,Centre-Back,34,South Africa,20,17,3,13,713,436,35721,13,9,42,14,68,16,2010,2026
 236788,Mosa Lebusa,23287,Stellenbosch FC,Centre-Back,34,South Africa,31,15,3,12,655,372,30216,19,7,47,17,56,6,2012,2026
 367468,Nuno Santos,6356,Mamelodi Sundowns FC,Attacking Midfield,27,Portugal,10,13,10,27,465,350,19894,53,46,257,75,36,46,2014,2026
-436372,Teboho Mokoena,6356,Mamelodi Sundowns FC,Defensive Midfield,29,South Africa,4,11,2,20,585,427,33362,52,39,470,142,92,68,2016,2026
+436372,Teboho Mokoena,6356,Mamelodi Sundowns FC,Defensive Midfield,29,South Africa,4,11,2,20,587,429,33509,52,39,472,143,92,70,2016,2026
 739996,Matías Esquivel,6356,Mamelodi Sundowns FC,Central Midfield,27,Argentina,0,9,5,19,339,164,8040,15,17,122,33,20,0,2017,2026
 972468,Tsiki Ntsabeleng,6356,Mamelodi Sundowns FC,Attacking Midfield,28,South Africa,34,9,4,12,219,110,4117,5,8,36,8,13,0,2018,2026
 401702,Marcelo Allende,6356,Mamelodi Sundowns FC,Attacking Midfield,27,Chile,11,13,5,28,486,348,26560,43,44,165,58,52,20,2014,2026
 492135,Sphelele Mkhulise,6356,Mamelodi Sundowns FC,Attacking Midfield,30,South Africa,21,11,3,10,435,195,10983,11,5,61,22,22,1,2016,2026
-495271,Bathusi Aubaas,6356,Mamelodi Sundowns FC,Defensive Midfield,31,South Africa,15,11,4,16,386,180,11788,3,5,108,29,33,18,2016,2026
+495271,Bathusi Aubaas,6356,Mamelodi Sundowns FC,Defensive Midfield,31,South Africa,15,11,4,16,388,182,11797,3,5,108,29,33,20,2016,2026
 1131790,Gomolemo Kekana,6356,Mamelodi Sundowns FC,Defensive Midfield,20,South Africa,44,4,1,10,85,18,1571,2,0,12,4,4,15,2022,2026
 804472,Jayden Adams,6356,Mamelodi Sundowns FC,Central Midfield,24,South Africa,8,7,2,13,294,215,14092,16,13,111,40,30,9,2019,2025
-337884,Iqraam Rayners,6356,Mamelodi Sundowns FC,Centre-Forward,30,South Africa,13,13,4,15,350,258,17303,96,44,409,185,18,20,2014,2026
-512980,Tashreeq Matthews,6356,Mamelodi Sundowns FC,Left Winger,26,South Africa,17,10,10,17,355,249,15147,52,40,311,111,19,2,2017,2026
+337884,Iqraam Rayners,6356,Mamelodi Sundowns FC,Centre-Forward,30,South Africa,13,13,4,15,352,260,17423,96,44,412,188,18,22,2014,2026
+512980,Tashreeq Matthews,6356,Mamelodi Sundowns FC,Left Winger,26,South Africa,17,10,10,18,357,250,15154,52,40,311,111,19,3,2017,2026
 862145,Brayan León,6356,Mamelodi Sundowns FC,Centre-Forward,26,Colombia,12,7,4,13,329,258,16155,66,33,307,129,82,0,2020,2026
 905691,Arthur Sales,6356,Mamelodi Sundowns FC,Centre-Forward,24,Brazil,9,8,6,24,337,202,10606,50,29,207,85,15,0,2019,2026
-397937,Peter Shalulile,6356,Mamelodi Sundowns FC,Centre-Forward,31,Namibia,38,12,3,13,505,373,28866,156,37,449,190,26,57,2015,2026
+397937,Peter Shalulile,6356,Mamelodi Sundowns FC,Centre-Forward,31,Namibia,38,12,3,13,506,374,28941,156,37,450,191,26,58,2015,2026
 427161,Lebo Mothiba,6356,Mamelodi Sundowns FC,Centre-Forward,30,South Africa,35,13,8,21,496,237,12115,54,13,202,80,10,20,2014,2026
 1246263,Kutlwano Lethlaku,6356,Mamelodi Sundowns FC,Right Winger,20,South Africa,43,4,1,10,157,48,1895,6,9,39,14,4,8,2023,2026
-176578,Themba Zwane,6356,Mamelodi Sundowns FC,Left Winger,37,South Africa,18,17,2,16,870,536,37213,96,68,207,93,40,56,2010,2026
+176578,Themba Zwane,6356,Mamelodi Sundowns FC,Left Winger,37,South Africa,18,17,2,16,870,536,37212,96,68,207,93,40,56,2010,2026
 1119031,Siyabonga Mabena,6356,Mamelodi Sundowns FC,Left Winger,19,South Africa,22,5,1,11,207,30,926,3,0,29,8,1,5,2022,2026
 1131793,Bennet Mokoena,6356,Mamelodi Sundowns FC,Right Winger,19,South Africa,46,3,1,8,63,12,488,1,0,22,6,1,2,2022,2026
 1514851,Yanga Mjoli,9370,AmaZulu FC,Defender,23,South Africa,0,2,4,2,24,1,61,0,0,0,0,0,0,2024,2025
@@ -299,7 +299,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1551205,Lindani Nene,9370,AmaZulu FC,Goalkeeper,0,South Africa,0,1,1,1,1,0,0,0,0,0,0,0,0,2025,2025
 533546,Keegan Allan,9370,AmaZulu FC,Centre-Back,26,South Africa,5,7,5,7,157,112,9310,6,3,49,20,15,1,2017,2026
 1002292,Nkosikhona Radebe,9370,AmaZulu FC,Right-Back,25,South Africa,14,6,2,4,155,96,5634,9,10,67,20,10,0,2021,2026
-514203,Riaan Hanamub,9370,AmaZulu FC,Left-Back,31,Namibia,4,10,3,10,296,259,23222,4,18,89,20,21,53,2017,2026
+514203,Riaan Hanamub,9370,AmaZulu FC,Left-Back,31,Namibia,4,10,3,10,297,260,23312,4,18,90,20,21,54,2017,2026
 420526,Sandile Mthethwa,9370,AmaZulu FC,Centre-Back,29,South Africa,42,12,4,9,356,149,11647,10,3,47,18,13,8,2015,2026
 243750,Taariq Fielies,9370,AmaZulu FC,Centre-Back,34,South Africa,12,14,5,8,374,294,25715,14,7,88,22,62,1,2012,2026
 1434466,Minenhle Ngcobo,9370,AmaZulu FC,Left-Back,21,South Africa,36,2,1,4,48,12,822,0,1,2,0,1,0,2025,2026
@@ -310,7 +310,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 967603,Liam Bern,9370,AmaZulu FC,Defensive Midfield,23,South Africa,17,7,2,5,87,51,3711,0,1,10,3,8,0,2020,2026
 1370592,Siphamandla Zikhali,9370,AmaZulu FC,Central Midfield,23,South Africa,19,3,2,4,49,25,1260,1,0,11,2,3,0,2024,2026
 1390564,Bayanda Thabede,9370,AmaZulu FC,Attacking Midfield,19,South Africa,22,3,1,4,54,14,360,0,0,6,2,2,0,2024,2026
-240892,Bongani Zungu,9370,AmaZulu FC,Central Midfield,32,South Africa,34,16,9,28,667,342,20692,22,13,48,12,64,31,2011,2026
+240892,Bongani Zungu,9370,AmaZulu FC,Central Midfield,32,South Africa,34,16,9,28,668,342,20692,22,13,48,12,64,31,2011,2026
 1140190,Luyolo Slatsha,9370,AmaZulu FC,Central Midfield,24,South Africa,44,5,2,5,105,36,1505,0,0,2,0,2,0,2022,2026
 922359,Gustavo Lopes,9370,AmaZulu FC,Defensive Midfield,26,Brazil,28,6,5,10,121,19,507,0,0,2,0,1,0,2020,2026
 1450951,Rocco Rocha,9370,AmaZulu FC,Attacking Midfield,18,South Africa,18,2,1,4,48,0,0,0,0,0,0,0,0,2025,2026
@@ -318,7 +318,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 699337,Mlondi Mbanjwa,9370,AmaZulu FC,Right Winger,28,South Africa,15,8,3,5,123,100,5123,8,5,47,17,8,1,2019,2026
 312245,Ryan Moon,9370,AmaZulu FC,Centre-Forward,30,South Africa,9,14,6,8,416,174,7726,29,10,122,45,18,2,2013,2026
 1238624,Andiswa Sithole,9370,AmaZulu FC,Right Winger,24,South Africa,11,4,2,4,82,39,1032,2,2,13,5,0,0,2023,2026
-934180,Thandolwenkosi Ngwenya,9370,AmaZulu FC,Centre-Forward,23,Zimbabwe,23,5,2,9,66,34,2593,18,2,63,31,5,3,2021,2026
+934180,Thandolwenkosi Ngwenya,9370,AmaZulu FC,Centre-Forward,23,Zimbabwe,23,5,2,9,67,35,2664,19,2,67,33,5,4,2021,2026
 1210349,Athini Maqokola,9370,AmaZulu FC,Right Winger,24,South Africa,2,4,2,4,45,43,3238,7,7,59,20,5,0,2023,2026
 1348775,Tebogo Mashigo,9370,AmaZulu FC,Right Winger,23,South Africa,20,3,1,4,73,34,1390,2,3,25,7,4,0,2024,2026
 417536,Thabiso Kutumela,61852,Marumo Gallants FC,Centre-Forward,33,South Africa,0,13,8,12,458,217,12306,45,17,95,33,14,11,2014,2026
@@ -328,7 +328,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1434465,Thandanani Mhlongo,9370,AmaZulu FC,Attack,17,South Africa,37,2,1,5,51,4,158,1,0,5,2,0,3,2025,2026
 512979,Renaldo Leaner,568,Kaizer Chiefs,Goalkeeper,28,South Africa,16,8,5,10,220,67,5910,0,0,0,0,7,3,2019,2026
 407787,Toaster Nsabata,85501,Sekhukhune United FC,Goalkeeper,32,Zambia,1,14,3,12,280,106,9199,0,0,0,0,4,31,2013,2026
-932630,Manuel Sapunga,85501,Sekhukhune United FC,Goalkeeper,33,Equatorial Guinea,30,9,4,9,183,54,4913,0,0,0,0,2,7,2015,2026
+932630,Manuel Sapunga,85501,Sekhukhune United FC,Goalkeeper,33,Equatorial Guinea,30,9,4,9,184,54,4913,0,0,0,0,2,7,2015,2026
 1401161,Kgoleng Ratisani,85501,Sekhukhune United FC,Goalkeeper,20,South Africa,40,3,1,6,55,0,0,0,0,0,0,0,0,2024,2026
 1279745,Vuyo Letlapa,85501,Sekhukhune United FC,Left-Back,23,South Africa,25,4,1,6,88,64,5173,2,6,67,17,7,0,2023,2026
 468686,Shaune Mogaila,85501,Sekhukhune United FC,Right-Back,30,South Africa,12,8,4,5,259,169,11139,10,13,65,21,11,0,2018,2025
@@ -366,7 +366,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1574639,Palelo Mafuyeka,85501,Sekhukhune United FC,Centre-Forward,0,South Africa,0,1,1,2,7,0,0,0,0,0,0,0,0,2026,2026
 315816,Salim Magoola,14187,Durban City Football Club,Goalkeeper,31,Uganda,0,14,6,12,336,149,13019,0,1,0,0,6,17,2013,2026
 904860,Ashay Sewlall,12668,Richards Bay FC,Centre-Back,23,South Africa,0,4,1,4,80,1,30,0,0,0,0,0,0,2020,2023
-1399172,Asimbonge Mdunge,12668,Richards Bay FC,Central Midfield,0,South Africa,0,3,1,1,10,5,73,0,0,1,0,0,0,2024,2026
+1399172,Asimbonge Mdunge,12668,Richards Bay FC,Central Midfield,0,South Africa,0,2,1,1,9,5,73,0,0,1,0,0,0,2024,2025
 1434464,Mbulelo Nombengula,12668,Richards Bay FC,Left Winger,0,South Africa,0,2,1,3,28,7,243,1,1,1,1,0,0,2025,2026
 723960,Ian Otieno,12668,Richards Bay FC,Goalkeeper,33,Kenya,1,13,2,12,179,67,5913,0,0,0,0,3,13,2014,2026
 1434879,Siphesihle Mtshali,12668,Richards Bay FC,Goalkeeper,22,South Africa,32,2,1,4,47,3,270,0,0,0,0,0,0,2025,2026
@@ -404,16 +404,16 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1528683,Khayalethu Ndlangamandla,12668,Richards Bay FC,Centre-Forward,0,South Africa,0,1,1,1,9,1,15,0,0,0,0,0,0,2025,2025
 735974,Joel Madondo,12668,Richards Bay FC,Centre-Forward,28,Uganda,0,6,5,6,95,7,370,0,2,0,0,1,0,2019,2026
 932359,Vincent Oburu,12668,Richards Bay FC,Left Winger,29,Kenya,0,4,3,5,58,1,90,0,0,0,0,0,0,2017,2025
-160289,Sage Stephens,23287,Stellenbosch FC,Goalkeeper,35,South Africa,17,17,4,13,570,235,20899,0,1,0,0,33,2,2010,2026
+160289,Sage Stephens,23287,Stellenbosch FC,Goalkeeper,35,South Africa,17,17,4,13,571,235,20899,0,1,0,0,33,2,2010,2026
 417537,Oscarine Masuluke,21202,Polokwane City FC,Goalkeeper,33,South Africa,30,12,4,6,285,117,10455,1,1,0,0,12,0,2015,2026
 42826,Lee Langeveldt,23287,Stellenbosch FC,Goalkeeper,38,South Africa,35,18,4,6,476,83,7131,0,0,0,0,9,0,2007,2025
-1459573,Dejean Ah Shene,23287,Stellenbosch FC,Goalkeeper,20,South Africa,32,1,1,4,15,0,0,0,0,0,0,0,0,2025,2025
 579124,Thabo Moloisane,568,Kaizer Chiefs,Centre-Back,27,South Africa,42,8,4,11,217,165,14491,4,4,38,8,34,5,2018,2026
-529332,Turan Manafov,23287,Stellenbosch FC,Left-Back,28,Azerbaijan,0,10,9,14,330,184,14905,8,7,4,0,20,8,2017,2026
 964052,Athenkosi Mcaba,85501,Sekhukhune United FC,Centre-Back,24,South Africa,32,6,2,6,209,77,6021,1,0,9,2,12,1,2021,2026
+529332,Turan Manafov,23287,Stellenbosch FC,Left-Back,28,Azerbaijan,0,10,9,14,330,184,14905,8,7,4,0,20,8,2017,2026
 743030,Enyinnaya Kazie Godswill,23287,Stellenbosch FC,Right-Back,26,Nigeria,16,8,4,9,282,238,20445,11,14,56,15,23,0,2018,2025
 1282163,Omega Mdaka,9370,AmaZulu FC,Left-Back,23,South Africa,0,3,2,5,110,62,3874,1,1,18,4,7,0,2024,2026
 1235103,Siviwe Nkwali,23287,Stellenbosch FC,Centre-Back,21,South Africa,14,4,2,7,87,46,3570,1,2,11,2,4,11,2023,2026
+1459573,Dejean Ah Shene,23287,Stellenbosch FC,Goalkeeper,20,South Africa,32,1,1,4,15,0,0,0,0,0,0,0,0,2025,2025
 533627,Henri Stanic,23287,Stellenbosch FC,Centre-Back,22,Belgium,4,6,5,13,138,97,7024,9,0,27,11,15,1,2017,2026
 282407,Wayde Jooste,23287,Stellenbosch FC,Right-Back,33,South Africa,66,13,7,7,456,217,12893,8,11,52,12,20,4,2013,2025
 744153,Genino Palace,23287,Stellenbosch FC,Central Midfield,27,South Africa,19,9,4,10,302,159,8506,7,2,54,21,8,0,2018,2026
@@ -426,11 +426,11 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 849262,Khomotjo Lekoloane,9370,AmaZulu FC,Left Winger,30,South Africa,0,7,5,6,114,65,2412,4,1,55,23,2,0,2020,2026
 1191223,Shakeel April,23287,Stellenbosch FC,Right Winger,20,South Africa,77,4,2,8,115,32,1387,2,3,29,12,4,11,2023,2026
 548666,Fredrick Asare,14187,Durban City Football Club,Goalkeeper,27,Ghana,33,7,3,11,201,98,8700,0,0,0,0,8,0,2018,2026
-160637,Ayanda Mtshali,14187,Durban City Football Club,Goalkeeper,38,South Africa,16,15,6,6,376,73,6520,0,1,0,0,10,0,2010,2026
+160637,Ayanda Mtshali,14187,Durban City Football Club,Goalkeeper,38,South Africa,16,14,6,5,360,73,6520,0,1,0,0,10,0,2010,2025
 967778,Aden Dreyer,14187,Durban City Football Club,Goalkeeper,23,South Africa,32,6,2,6,91,0,0,0,0,0,0,0,0,2021,2026
 538416,Terrence Mashego,23287,Stellenbosch FC,Left-Back,30,South Africa,0,10,6,13,345,173,13388,4,9,42,8,25,11,2017,2026
 557323,Mfanafuthi Mkhize,14187,Durban City Football Club,Centre-Back,28,South Africa,30,7,3,5,83,40,3643,3,1,16,6,9,0,2019,2026
-1245476,Emmanuel Jalai,14187,Durban City Football Club,Right-Back,26,Zimbabwe,2,4,3,8,57,40,2864,0,1,6,2,3,19,2023,2026
+1245476,Emmanuel Jalai,14187,Durban City Football Club,Right-Back,26,Zimbabwe,2,4,3,8,58,41,2954,0,1,6,2,3,20,2023,2026
 861302,Siphamandla Ncanana,14187,Durban City Football Club,Centre-Back,26,South Africa,46,7,4,6,101,49,4462,0,0,30,7,8,0,2020,2026
 998319,Liam de Kock,14187,Durban City Football Club,Centre-Back,25,South Africa,22,5,3,5,152,20,1188,0,0,1,1,1,0,2022,2026
 1190289,Collins Nwoburuoke,14187,Durban City Football Club,Centre-Back,21,Nigeria,6,4,2,6,122,67,5681,1,1,0,0,3,0,2023,2026
@@ -442,7 +442,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 801355,Taahir Goedeman,14187,Durban City Football Club,Central Midfield,25,South Africa,27,7,2,7,220,96,4415,5,3,67,14,10,0,2019,2025
 1044310,Kyle Jurgens,14187,Durban City Football Club,Defensive Midfield,23,South Africa,0,6,2,5,194,90,5302,0,1,28,10,16,0,2021,2026
 386340,Thabo Nodada,14187,Durban City Football Club,Central Midfield,31,South Africa,26,12,2,9,403,287,19131,19,17,88,29,36,2,2015,2026
-533547,Brooklyn Poggenpoel,14187,Durban City Football Club,Defensive Midfield,27,South Africa,18,10,5,8,169,114,7454,1,4,48,9,19,3,2017,2026
+533547,Brooklyn Poggenpoel,14187,Durban City Football Club,Defensive Midfield,27,South Africa,18,10,5,8,171,114,7454,1,4,48,9,19,3,2017,2026
 980483,Luphumlo Sifumba,14187,Durban City Football Club,Central Midfield,21,South Africa,35,6,3,9,160,46,1614,2,4,26,8,4,0,2021,2026
 353056,Haashim Domingo,14187,Durban City Football Club,Attacking Midfield,31,South Africa,7,13,8,15,524,283,15794,24,20,118,44,24,8,2014,2026
 566474,Athini Jodwana,14187,Durban City Football Club,Central Midfield,33,South Africa,8,9,5,6,127,54,3553,1,0,24,2,11,0,2017,2026
@@ -462,7 +462,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1352410,Bongani Mthembu,14187,Durban City Football Club,Right Winger,0,South Africa,3,3,2,5,54,9,173,0,1,0,0,0,0,2024,2026
 397939,Joslin Kamatuka,14187,Durban City Football Club,Centre-Forward,33,Namibia,14,11,4,9,162,73,3490,6,0,26,11,14,20,2013,2025
 1515077,Onele Rulwana,14187,Durban City Football Club,Left Winger,0,South Africa,47,1,2,2,20,2,88,0,0,0,0,0,0,2025,2025
-258304,Ricardo Goss,6356,Mamelodi Sundowns FC,Goalkeeper,32,South Africa,31,15,6,15,536,164,14574,0,2,0,0,11,7,2012,2026
+258304,Ricardo Goss,6356,Mamelodi Sundowns FC,Goalkeeper,32,South Africa,31,15,6,15,538,164,14574,0,2,0,0,11,7,2012,2026
 277485,Thakasani Mbanjwa,7011,Lamontville Golden Arrows,Goalkeeper,30,South Africa,27,14,7,7,434,66,5906,0,0,1,0,3,0,2013,2026
 889365,Samukelo Xulu,132785,Siwelele Football Club,Goalkeeper,25,South Africa,30,6,2,6,156,8,720,0,0,0,0,0,4,2020,2026
 1515313,Mandla Vilakati,132785,Siwelele Football Club,Goalkeeper,19,South Africa,0,1,1,2,4,0,0,0,0,0,0,0,0,2025,2025
@@ -474,7 +474,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 386054,Pogiso Sanoka,132785,Siwelele Football Club,Centre-Back,33,South Africa,4,12,4,5,393,260,20579,6,2,29,6,50,0,2014,2025
 152501,Lyle Lakay,132785,Siwelele Football Club,Left-Back,33,South Africa,7,17,5,10,610,412,26154,26,55,176,72,36,6,2009,2025
 1369950,Siyabonga Ndebele,132785,Siwelele Football Club,Centre-Back,21,South Africa,33,3,2,3,64,34,2885,1,1,16,2,3,0,2024,2026
-382205,Thabo Makhele,132785,Siwelele Football Club,Centre-Back,30,Lesotho,5,13,9,9,188,105,8952,2,1,33,8,3,22,2014,2026
+382205,Thabo Makhele,132785,Siwelele Football Club,Centre-Back,30,Lesotho,5,13,9,9,190,106,9042,2,1,33,8,4,23,2014,2026
 1462496,Keabetswe Khonyane,132785,Siwelele Football Club,Centre-Back,22,South Africa,27,2,1,3,44,8,624,0,0,1,0,1,0,2025,2026
 1106973,Bilal Baloyi,132785,Siwelele Football Club,Centre-Back,23,South Africa,14,5,2,5,132,31,2037,1,0,7,4,4,0,2022,2026
 158559,Buhle Mkhwanazi,132785,Siwelele Football Club,Centre-Back,35,South Africa,35,12,6,11,514,290,24772,10,3,1,0,56,20,2010,2025
@@ -489,7 +489,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1338533,Thato Letshedi,132785,Siwelele Football Club,Attacking Midfield,25,South Africa,36,3,2,4,70,39,1970,0,1,24,8,10,0,2024,2026
 1525887,Manelisi Mazibuko,132785,Siwelele Football Club,Attacking Midfield,19,South Africa,41,2,1,3,28,18,971,0,1,22,5,2,0,2025,2026
 1401171,Lazola Maku,6356,Mamelodi Sundowns FC,Defensive Midfield,19,South Africa,0,3,2,7,48,16,1217,1,0,8,2,3,11,2024,2026
-1166198,Thabang Makubo,132785,Siwelele Football Club,Attacking Midfield,22,South Africa,0,4,3,5,124,6,113,1,0,3,2,2,0,2023,2026
+1166198,Thabang Makubo,85501,Sekhukhune United FC,Attacking Midfield,22,South Africa,0,4,3,5,112,6,113,1,0,3,2,2,0,2023,2026
 1235052,Benjamin Sabre,132785,Siwelele Football Club,Midfield,0,South Africa,0,3,2,4,39,1,6,0,0,0,0,0,0,2023,2026
 604391,Ghampani Lungu,2557,Orlando Pirates,Right Winger,28,Zambia,0,10,3,11,386,237,15522,33,16,134,44,18,13,2017,2026
 1099035,Christian Saile,132785,Siwelele Football Club,Right Winger,26,DR Congo,11,5,3,4,131,101,5710,13,4,159,55,6,0,2022,2026
@@ -529,20 +529,20 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 730591,Nqobeko Dlamini,7011,Lamontville Golden Arrows,Defensive Midfield,31,South Africa,24,8,2,4,183,131,10146,7,4,90,23,12,0,2019,2026
 291072,Lungelo Dube,7011,Lamontville Golden Arrows,Defensive Midfield,32,South Africa,23,14,1,4,420,94,6481,0,1,16,0,13,0,2013,2026
 1438112,Sboniso Madonsela,7011,Lamontville Golden Arrows,Central Midfield,22,South Africa,47,2,1,4,51,15,846,0,1,3,0,1,0,2025,2026
+1163085,Siyanda Ndlovu,6356,Mamelodi Sundowns FC,Right Winger,23,South Africa,38,4,2,8,120,91,5860,11,16,99,40,5,1,2023,2026
 730561,Siphesile Msomi,7011,Lamontville Golden Arrows,Central Midfield,28,South Africa,46,8,4,6,175,66,3596,1,0,18,8,7,0,2019,2026
-1163085,Siyanda Ndlovu,6356,Mamelodi Sundowns FC,Right Winger,23,South Africa,38,4,2,7,119,90,5833,11,16,99,40,5,0,2023,2026
 291082,Nduduzo Sibiya,7011,Lamontville Golden Arrows,Right Winger,31,South Africa,11,14,1,4,420,243,14108,30,22,125,44,11,0,2013,2026
 847379,Junior Dion,7011,Lamontville Golden Arrows,Centre-Forward,28,Chad,18,7,4,6,200,143,9247,45,6,202,83,14,0,2020,2026
 647908,Angelo Van Rooi,7011,Lamontville Golden Arrows,Left Winger,29,South Africa,14,7,3,4,117,71,4319,3,5,64,20,4,0,2018,2026
-1102171,Jerome Karelse,7011,Lamontville Golden Arrows,Right Winger,24,South Africa,22,3,2,4,54,28,913,4,3,27,14,4,0,2022,2026
 1068638,Philani Kumalo,7011,Lamontville Golden Arrows,Left Winger,25,South Africa,36,3,2,5,74,32,1489,2,9,24,6,1,0,2022,2026
+1102171,Jerome Karelse,7011,Lamontville Golden Arrows,Right Winger,24,South Africa,22,3,2,4,54,28,913,4,3,27,14,4,0,2022,2026
 799626,Lungelo Nguse,7011,Lamontville Golden Arrows,Centre-Forward,27,South Africa,40,8,5,4,171,55,2380,9,2,50,15,4,0,2019,2026
 1441818,Nhlanhla Gasa,7011,Lamontville Golden Arrows,Left Winger,20,South Africa,49,2,1,4,51,27,1306,1,2,17,5,0,0,2025,2026
 1237929,Lwanda Mbanjwa,120423,Kruger United FC,Centre-Forward,20,South Africa,0,4,3,3,93,17,626,1,0,10,1,1,0,2023,2026
 1352411,Thokozani Khumalo,7011,Lamontville Golden Arrows,Centre-Forward,31,South Africa,37,3,2,4,52,22,836,4,2,18,8,2,0,2024,2026
 1450627,Andiswa Booysen,7011,Lamontville Golden Arrows,Left Winger,18,South Africa,39,3,1,5,55,9,330,0,2,7,3,0,4,2024,2026
 1334575,Philani Sithebe,12668,Richards Bay FC,Right Winger,24,South Africa,0,3,3,3,58,6,80,0,0,3,0,0,0,2024,2026
-677856,Stanley Nwabali,31283,Chippa United,Goalkeeper,30,Nigeria,0,11,7,12,380,212,19111,0,1,0,0,39,36,2014,2026
+677856,Stanley Nwabali,31283,Chippa United,Goalkeeper,30,Nigeria,0,11,7,12,382,214,19291,0,1,0,0,39,38,2014,2026
 926165,Kewen Prince,31283,Chippa United,Goalkeeper,25,South Africa,0,3,1,3,99,2,153,0,0,0,0,0,0,2021,2023
 887114,Elson Sithole,31283,Chippa United,Goalkeeper,26,South Africa,1,7,5,6,97,3,191,0,0,0,0,0,0,2020,2026
 304977,Dumsani Msibi,31283,Chippa United,Goalkeeper,31,South Africa,0,13,9,7,156,40,3593,0,0,0,0,3,8,2014,2026
@@ -556,17 +556,17 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 609640,Seun Ndlovu,31283,Chippa United,Centre-Back,28,South Africa,5,4,2,3,80,38,2092,2,0,16,3,4,0,2018,2026
 390594,Katlego Mohamme,120423,Kruger United FC,Centre-Back,28,South Africa,26,12,7,16,275,61,4409,1,0,21,2,16,21,2014,2026
 553453,Harold Majadibodu,31283,Chippa United,Centre-Back,31,South Africa,35,11,6,7,175,54,4148,3,1,10,5,4,3,2016,2026
-1384169,Isheanesu Mauchi,31283,Chippa United,Centre-Back,23,Zimbabwe,66,4,2,6,41,7,390,0,0,0,0,0,4,2023,2026
 1485094,Lonwabo Magugwana,31283,Chippa United,Centre-Back,23,South Africa,6,1,1,2,18,1,10,0,0,0,0,1,0,2025,2025
+1384169,Isheanesu Mauchi,31283,Chippa United,Centre-Back,23,Zimbabwe,66,4,2,6,41,7,390,0,0,0,0,0,4,2023,2026
 925739,Azola Matrose,31283,Chippa United,Attacking Midfield,23,South Africa,10,6,2,5,184,76,4544,7,2,50,17,2,0,2021,2026
 840556,Azola Tshobeni,31283,Chippa United,Attacking Midfield,24,South Africa,15,7,3,6,145,32,1457,1,0,9,5,4,0,2020,2026
 386494,Sammy Seabi,31283,Chippa United,Central Midfield,31,South Africa,21,12,5,6,408,198,13461,8,4,33,10,31,0,2015,2026
 743187,Banele Hlophe,31283,Chippa United,Attacking Midfield,25,South Africa,11,6,3,3,48,12,599,0,0,1,0,1,0,2019,2026
 1245764,Asanele Bonani,31283,Chippa United,Attacking Midfield,21,South Africa,36,4,1,3,90,23,711,0,0,9,2,2,0,2023,2026
-604952,Justice Figuareido,31283,Chippa United,Centre-Forward,28,Eswatini,9,10,6,8,244,144,8856,15,10,148,40,8,23,2017,2026
+604952,Justice Figuareido,31283,Chippa United,Centre-Forward,28,Eswatini,9,10,6,8,245,145,8921,15,10,148,40,8,24,2017,2026
 968178,Xolani Sithole,31283,Chippa United,Left Winger,28,South Africa,47,7,4,3,80,39,1888,1,0,17,4,4,0,2020,2026
 1056267,Bandile Dlamini,31283,Chippa United,Left Winger,23,South Africa,26,5,2,4,110,18,441,0,1,6,1,1,0,2022,2026
-564547,Bienvenu Eva Nga,31283,Chippa United,Centre-Forward,33,Cameroon,7,10,6,13,314,160,9152,29,7,126,48,20,0,2017,2026
+564547,Bienvenu Eva Nga,31283,Chippa United,Centre-Forward,33,Cameroon,7,9,6,13,303,160,9152,29,7,126,48,20,0,2017,2025
 809637,Khaya Mfecane,31283,Chippa United,Right Winger,25,South Africa,8,8,3,4,93,47,2073,3,1,13,8,3,0,2019,2026
 1195602,Keabetswe Ramotsei,31283,Chippa United,Centre-Forward,0,South Africa,0,4,4,5,64,5,145,0,0,0,0,0,0,2022,2025
 1266431,Sisanda Mbhele,31283,Chippa United,Left Winger,0,South Africa,0,4,2,3,61,3,40,0,0,1,1,0,0,2023,2026
@@ -581,7 +581,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1044311,Qobolwakhe Sibande,23287,Stellenbosch FC,Left-Back,26,South Africa,0,6,3,8,176,77,3442,0,3,26,7,6,0,2021,2026
 699347,Kganyane Letsoenyo,67074,TS Galaxy FC,Left-Back,27,South Africa,3,7,3,4,177,96,6951,1,10,34,6,3,0,2019,2025
 862347,Patrick Fisher,67074,TS Galaxy FC,Right-Back,24,South Africa,23,7,3,7,188,45,2338,0,2,7,0,7,0,2020,2026
-864511,Igor Salatiel,67074,TS Galaxy FC,Centre-Back,25,Brazil,5,7,6,13,104,44,3596,3,0,17,7,5,0,2019,2026
+864511,Igor Salatiel,67074,TS Galaxy FC,Centre-Back,26,Brazil,5,7,6,13,104,44,3596,3,0,17,7,5,0,2019,2026
 1292058,Lentswe Motaung,67074,TS Galaxy FC,Right-Back,21,South Africa,22,3,1,4,62,34,2661,0,0,3,1,8,0,2024,2026
 1541121,Mondli Mncwango,67074,TS Galaxy FC,Centre-Back,20,South Africa,35,2,1,3,32,14,1152,0,0,5,0,3,0,2025,2026
 1543623,Siyanda Xulu,67074,TS Galaxy FC,Right-Back,34,South Africa,42,2,1,3,32,10,598,0,0,3,1,0,0,2025,2026
@@ -596,7 +596,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 329526,Mpho Mvelase,67074,TS Galaxy FC,Defensive Midfield,37,South Africa,2,13,6,5,393,232,17628,15,10,98,26,39,0,2014,2026
 419646,Jeffrey Dlamini,67074,TS Galaxy FC,Defensive Midfield,34,South Africa,6,10,4,6,160,66,4270,1,1,22,3,7,0,2015,2025
 1408779,Khayelihle Mncube,12668,Richards Bay FC,Central Midfield,0,South Africa,0,3,2,4,39,4,89,0,0,2,0,1,0,2024,2026
-1151605,Puso Dithejane,67074,TS Galaxy FC,Right Winger,20,South Africa,0,4,3,9,136,99,5347,14,16,100,41,10,1,2023,2026
+1151605,Puso Dithejane,67074,TS Galaxy FC,Right Winger,20,South Africa,0,4,3,10,138,101,5384,14,16,100,41,10,3,2023,2026
 637876,Nhlanhla Mgaga,67074,TS Galaxy FC,Attacking Midfield,29,South Africa,12,8,4,6,239,177,9040,2,15,91,18,12,0,2018,2025
 1408780,Seluleko Mahlambi,67074,TS Galaxy FC,Left Winger,22,South Africa,27,3,1,4,50,46,3633,6,6,54,18,8,0,2024,2026
 603123,Junior Zindoga,67074,TS Galaxy FC,Right Winger,28,Zimbabwe,9,6,4,8,150,53,3706,4,3,56,20,5,3,2017,2026
@@ -633,10 +633,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 448018,Kamohelo Sithole,61852,Marumo Gallants FC,Left Winger,29,South Africa,7,8,4,5,160,39,1622,4,1,14,8,0,0,2019,2026
 1317635,Thapelo Dhludhlu,61852,Marumo Gallants FC,Right Winger,21,South Africa,11,3,1,3,81,29,1553,2,0,29,9,4,0,2024,2026
 863743,Emmanuel Mwiinde,61852,Marumo Gallants FC,Centre-Forward,25,Zambia,28,6,6,5,91,19,1085,1,0,10,2,1,0,2019,2025
-568414,Mofossé Karidioula,61852,Marumo Gallants FC,Right Winger,28,Cote d'Ivoire,81,6,4,9,107,48,3134,6,4,20,11,1,0,2017,2026
+568414,Mofossé Karidioula,61852,Marumo Gallants FC,Right Winger,28,Cote d'Ivoire,81,6,4,9,107,49,3204,6,4,20,11,1,0,2017,2026
 966676,Mlungisi Khumalo,61852,Marumo Gallants FC,Centre-Forward,27,South Africa,0,7,5,3,61,17,682,0,1,7,3,0,0,2017,2025
 1516402,Hector Tshabangu,21202,Polokwane City FC,Right Winger,0,South Africa,0,2,2,3,9,1,80,0,0,0,0,0,0,2025,2026
-704462,Marcel Dandjinou,120423,Kruger United FC,Goalkeeper,28,Benin,16,8,3,8,93,52,4479,0,0,0,0,3,31,2019,2026
+704462,Marcel Dandjinou,120423,Kruger United FC,Goalkeeper,28,Benin,16,8,3,8,94,53,4569,0,0,0,0,3,32,2019,2026
 1121019,Philasande Manqele,120423,Kruger United FC,Goalkeeper,23,South Africa,0,5,2,3,59,3,300,0,0,0,0,0,0,2022,2026
 304988,Kabelo Seriba,120423,Kruger United FC,Right-Back,29,South Africa,0,6,2,7,114,91,7711,1,5,0,0,15,10,2014,2026
 500635,Thulani Ndlela,120423,Kruger United FC,Centre-Back,35,South Africa,5,10,7,3,32,16,1280,0,0,0,0,3,0,2016,2026
@@ -659,9 +659,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1211192,Mpho Mvundlela,21202,Polokwane City FC,Centre-Back,40,South Africa,5,4,2,4,49,26,1809,0,0,5,1,6,0,2023,2026
 1373403,Surprise Manthosi,21202,Polokwane City FC,Right-Back,21,South Africa,42,3,1,4,64,26,2144,1,0,22,2,11,0,2024,2026
 1106572,Edwin Ramaja,21202,Polokwane City FC,Centre-Back,25,South Africa,22,4,2,4,48,19,1780,0,0,8,1,3,0,2022,2026
-968488,Bulelani Nikani,21202,Polokwane City FC,Centre-Back,33,South Africa,4,6,1,4,113,80,6914,3,0,36,9,7,0,2021,2026
+968488,Bulelani Nikani,21202,Polokwane City FC,Centre-Back,34,South Africa,4,6,1,4,113,80,6914,3,0,36,9,7,0,2021,2026
 1106586,Lebohang Nkaki,21202,Polokwane City FC,Centre-Back,33,South Africa,34,5,1,4,112,105,9607,9,3,62,16,8,0,2022,2026
-1369881,Ayabonga Gwangqa,21202,Polokwane City FC,Left-Back,22,South Africa,43,4,2,4,66,6,518,0,0,3,0,1,0,2023,2026
+1369881,Ayabonga Gwangqa,21202,Polokwane City FC,Left-Back,23,South Africa,43,4,2,4,66,6,518,0,0,3,0,1,0,2023,2026
 1106577,Sihle Makhubela,21202,Polokwane City FC,Right-Back,24,South Africa,0,4,2,4,55,22,1768,0,0,4,0,2,0,2022,2025
 1437482,Lebogang Mankga,21202,Polokwane City FC,Centre-Back,0,South Africa,0,1,1,2,16,0,0,0,0,0,0,0,0,2025,2025
 1528198,Tshilidzi Nemutandani,21202,Polokwane City FC,Defender,0,South Africa,0,1,1,1,7,0,0,0,0,0,0,0,0,2025,2025
@@ -669,7 +669,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1445665,Banele Mnguni,21202,Polokwane City FC,Attacking Midfield,22,South Africa,35,2,1,4,45,24,1299,1,2,19,1,3,0,2025,2026
 1236316,Monty Batlhabane,21202,Polokwane City FC,Central Midfield,21,South Africa,47,4,2,5,85,35,1375,0,0,14,1,4,0,2023,2026
 742672,Sapholwethu Kelepu,21202,Polokwane City FC,Defensive Midfield,27,South Africa,6,7,4,5,60,18,871,0,0,5,0,1,0,2019,2026
-514196,Manuel Kambala,21202,Polokwane City FC,Defensive Midfield,35,Mozambique,21,10,4,11,296,217,17303,7,1,127,19,27,40,2016,2026
+514196,Manuel Kambala,21202,Polokwane City FC,Defensive Midfield,35,Mozambique,21,10,4,11,298,218,17348,7,1,129,19,27,41,2016,2026
 1515258,Juan Mutudza,21202,Polokwane City FC,Central Midfield,27,Zimbabwe,36,2,2,4,30,11,549,1,2,9,4,0,0,2025,2026
 282173,Puleng Marema,21202,Polokwane City FC,Attacking Midfield,35,South Africa,10,14,1,7,361,222,13127,37,18,54,20,33,2,2013,2026
 1528199,Mosa Ramasobane,21202,Polokwane City FC,Defensive Midfield,0,South Africa,0,1,1,1,10,0,0,0,0,0,0,0,0,2025,2025
@@ -686,7 +686,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 547788,Sifiso Mdluli,54142,Milford FC,Left-Back,33,South Africa,0,4,2,4,24,21,1996,1,3,12,3,1,0,2017,2026
 437673,Phakamani Ngxongo,54142,Milford FC,Centre-Back,37,South Africa,13,5,1,3,22,10,633,0,0,0,0,0,0,2015,2026
 1514861,Konke Khwanya,54142,Milford FC,Centre-Back,0,South Africa,18,2,1,4,20,12,874,0,0,1,0,0,0,2025,2026
-1238094,Skhumbuzo Siyaya,54142,Milford FC,Centre-Back,30,South Africa,20,4,1,4,24,6,295,0,0,2,0,0,0,2023,2026
+1238094,Skhumbuzo Siyaya,54142,Milford FC,Right-Back,30,South Africa,20,4,1,4,24,6,295,0,0,2,0,0,0,2023,2026
 1097645,Olwethu Cele,54142,Milford FC,Centre-Back,24,South Africa,22,5,2,4,27,22,1848,0,0,10,3,4,0,2022,2026
 1245621,Thobani Bhengu,54142,Milford FC,Right-Back,24,South Africa,31,4,1,4,25,19,1684,0,0,1,0,4,0,2023,2026
 341971,Mnelisi Mbhele,54142,Milford FC,Centre-Back,27,South Africa,0,8,5,3,27,7,645,0,0,0,0,0,0,2019,2026
@@ -700,23 +700,35 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1238092,Jabulile Gxakoshe,54142,Milford FC,Left Winger,22,South Africa,0,4,1,4,24,16,695,2,1,7,5,4,0,2023,2026
 1211156,Bulelani Sigomoshe,54142,Milford FC,Right Winger,26,South Africa,0,4,2,6,31,18,1026,1,5,11,4,0,0,2023,2026
 1351467,Nqaba Xulu,12668,Richards Bay FC,Centre-Forward,23,South Africa,0,3,2,4,23,17,1001,7,0,33,13,1,0,2024,2026
-467611,Mjabulise Mkhize,54142,Milford FC,Right Winger,26,South Africa,10,5,1,5,31,22,1264,0,1,3,0,3,5,2016,2026
+467611,Mjabulise Mkhize,54142,Milford FC,Central Midfield,26,South Africa,8,5,1,5,31,22,1264,0,1,3,0,3,5,2016,2026
 1521423,Phakamani Jwara,54142,Milford FC,Left Winger,0,South Africa,13,2,1,4,19,5,119,1,0,1,1,0,0,2025,2026
 1211155,Siphosethu Ndlabi,54142,Milford FC,Centre-Forward,27,South Africa,21,4,1,4,26,22,1536,7,1,33,13,3,0,2023,2026
 1514864,Lilitha Dyonasi,54142,Milford FC,Left Winger,0,South Africa,26,2,1,4,20,2,53,0,0,0,0,0,0,2025,2026
 1351468,Comfort Sibiya,54142,Milford FC,Centre-Forward,22,South Africa,28,3,1,4,23,7,402,0,0,5,1,0,0,2024,2026
 1211152,Mvelo Zikakayo,54142,Milford FC,Right Winger,22,South Africa,40,4,1,4,26,24,1411,4,0,16,6,0,0,2023,2026
 985173,Siphamandla Mhlongo,54142,Milford FC,Right Winger,0,South Africa,47,4,2,4,25,3,167,0,0,0,0,1,0,2021,2026
+1574932,Oumar Komara,7011,Lamontville Golden Arrows,Defender,25,Cote d'Ivoire,0,0,0,0,0,0,0,0,0,0,0,0,0,,
+26618,Wandisile Letlabika,120423,Kruger United FC,Centre-Back,37,South Africa,0,14,5,5,453,200,16781,2,1,10,1,31,0,2011,2025
+541548,Thobela Sikhakhane,120423,Kruger United FC,Centre-Forward,31,South Africa,0,6,3,2,16,4,301,1,0,0,0,0,0,2018,2026
+420533,Zolani Nkombelo,54142,Milford FC,Left-Back,32,South Africa,0,8,5,5,167,48,3624,2,3,1,0,5,0,2015,2023
+437670,Sphamiso Khumalo,54142,Milford FC,Defender,0,South Africa,0,1,1,1,1,0,0,0,0,0,0,0,0,2015,2015
+846415,Mbonisi Chagi,54142,Milford FC,Left-Back,28,South Africa,0,4,4,1,8,2,133,0,0,0,0,0,0,2019,2024
+1211154,Unathi Somabhele,54142,Milford FC,Left-Back,0,South Africa,7,2,1,1,6,3,273,0,0,0,0,0,0,2023,2024
+730451,Andile Nkosi,54142,Milford FC,Midfield,0,South Africa,0,2,2,1,3,0,0,0,0,0,0,0,0,2019,2023
+1212470,Andile Zuma,54142,Milford FC,Attacking Midfield,0,South Africa,33,1,1,1,3,1,45,0,0,0,0,0,0,2023,2023
+647675,Bonginkosi Nyambe,54142,Milford FC,Attack,31,South Africa,0,2,2,1,4,2,171,1,0,0,0,0,0,2018,2023
+500501,Thabiso Radebe,54142,Milford FC,Right Winger,0,South Africa,38,2,2,1,4,0,0,0,0,0,0,0,0,2016,2023
+1245620,Xolisani Ngcobo,54142,Milford FC,Centre-Forward,0,South Africa,77,1,1,1,2,0,0,0,0,0,0,0,0,2023,2023
 1433390,Matome Mmolai,2557,Orlando Pirates,Central Midfield,23,South Africa,0,3,3,5,38,2,10,0,0,0,0,1,0,2024,2026
 1236525,Mohau Nkota,2557,Orlando Pirates,Right Winger,22,South Africa,0,4,2,11,119,72,4560,11,11,101,39,5,9,2023,2026
 1575188,Simphiwe Masilela,2557,Orlando Pirates,Attacking Midfield,22,South Africa,48,1,1,4,20,13,731,1,1,16,7,3,0,2026,2026
 395652,Sebastian Pedersen,2557,Orlando Pirates,Centre-Forward,27,Norway,0,14,10,14,419,189,10497,66,10,9,3,13,15,2009,2026
 1591679,Mpho Padime,2557,Orlando Pirates,Right Winger,19,South Africa,38,1,1,4,20,7,180,1,1,6,1,0,0,2026,2026
-898140,Antonio Van Wyk,6356,Mamelodi Sundowns FC,Right Winger,24,South Africa,29,7,3,12,199,144,6833,15,20,119,44,1,0,2020,2026
-1050866,Cassius Mailula,6356,Mamelodi Sundowns FC,Centre-Forward,25,South Africa,33,6,5,23,244,99,5472,27,12,105,51,7,4,2021,2026
 967272,Kabelo Kgositsile,2557,Orlando Pirates,Right Winger,22,South Africa,49,6,2,6,43,22,1163,3,2,18,4,0,0,2021,2026
 1575438,Kabelo Nkgwesa,568,Kaizer Chiefs,Centre-Back,0,South Africa,0,1,1,4,15,2,24,0,0,0,0,0,0,2026,2026
 968496,Elias Mokwana,568,Kaizer Chiefs,Right Winger,27,South Africa,14,6,5,17,213,143,8549,17,16,104,41,20,11,2021,2026
+898140,Antonio Van Wyk,6356,Mamelodi Sundowns FC,Right Winger,24,South Africa,29,7,3,12,199,144,6833,15,20,119,44,1,0,2020,2026
+1050866,Cassius Mailula,6356,Mamelodi Sundowns FC,Centre-Forward,25,South Africa,33,6,5,23,245,100,5473,27,12,105,51,7,5,2021,2026
 590268,Adolf Bitegeko,568,Kaizer Chiefs,Defensive Midfield,27,Tanzania,22,9,5,12,154,77,6144,6,0,4,0,16,5,2017,2026
 1211186,Siphelele Zulu,9370,AmaZulu FC,Goalkeeper,0,South Africa,0,4,3,3,18,1,90,0,0,0,0,1,0,2023,2026
 1331543,Faveur Wilfried Kouassi,9370,AmaZulu FC,Goalkeeper,24,Cote d'Ivoire,0,3,3,6,51,12,1110,0,0,0,0,0,0,2024,2026
@@ -728,7 +740,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 985178,D'Angelo Kazeem,85501,Sekhukhune United FC,Left-Back,22,South Africa,0,6,4,5,29,14,1028,0,2,2,0,4,0,2021,2026
 354115,Siphesihle Sangweni,85501,Sekhukhune United FC,Central Midfield,29,South Africa,0,7,5,3,18,6,353,0,0,0,0,1,0,2014,2026
 471292,Givemore Khupe,85501,Sekhukhune United FC,Defensive Midfield,26,South Africa,33,9,4,7,168,55,3628,2,2,12,2,5,7,2018,2026
-1040039,Bethuel Muzeu,85501,Sekhukhune United FC,Centre-Forward,26,Namibia,0,6,2,8,52,40,2272,5,3,26,7,2,28,2021,2026
+1040039,Bethuel Muzeu,85501,Sekhukhune United FC,Centre-Forward,26,Namibia,0,6,2,8,53,41,2317,5,3,26,7,2,29,2021,2026
 1351516,Oageng Phiri,85501,Sekhukhune United FC,Left Winger,23,South Africa,0,3,3,5,22,10,419,1,1,10,4,0,0,2024,2026
 1515867,Thabo Nkwana,85501,Sekhukhune United FC,Right Winger,24,South Africa,0,4,4,4,21,8,322,0,0,7,4,1,0,2023,2026
 1513926,Kabelo Mofokeng,132785,Siwelele Football Club,Right-Back,23,South Africa,0,3,3,5,23,6,420,0,0,4,0,1,0,2024,2026
@@ -752,9 +764,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1575190,Raoul Daniels,23287,Stellenbosch FC,Left Winger,19,South Africa,0,1,1,2,12,11,576,1,3,8,3,1,0,2026,2026
 1575193,Quwan Plaatjies,23287,Stellenbosch FC,Left Winger,20,South Africa,11,1,1,2,12,9,470,3,0,14,7,2,0,2026,2026
 1575191,Orlando Avuzwa Mbembe,23287,Stellenbosch FC,Right Winger,20,South Africa,24,1,1,2,12,1,62,0,0,3,1,0,0,2026,2026
-1574932,Oumar Komara,7011,Lamontville Golden Arrows,Defender,25,Cote d'Ivoire,0,0,0,0,0,0,0,0,0,0,0,0,0,,
 1513433,Tyrese Mncube,7011,Lamontville Golden Arrows,Centre-Back,23,South Africa,32,2,2,4,17,2,180,0,0,0,0,0,0,2025,2026
-405683,Jonah Fabisch,7011,Lamontville Golden Arrows,Central Midfield,25,Zimbabwe,0,11,7,17,366,227,17534,37,23,27,6,41,13,2016,2026
+405683,Jonah Fabisch,7011,Lamontville Golden Arrows,Central Midfield,25,Zimbabwe,0,11,7,17,367,227,17534,37,23,27,6,41,13,2016,2026
 1575186,Phabonke Mbatha,7011,Lamontville Golden Arrows,Right-Back,24,South Africa,44,2,2,4,16,1,79,0,0,1,0,0,0,2025,2026
 1210345,Tshenzhelani Radzadzhi,7011,Lamontville Golden Arrows,Attacking Midfield,21,South Africa,0,4,3,5,24,4,128,0,0,1,0,0,0,2023,2026
 1514898,Keabetswe Rakosa,7011,Lamontville Golden Arrows,Central Midfield,28,South Africa,0,4,2,4,20,4,137,0,0,0,0,0,0,2023,2026
@@ -771,17 +782,17 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1604100,Siyabonga Gumede,12668,Richards Bay FC,Centre-Back,23,South Africa,24,1,1,2,11,3,270,0,0,1,0,0,0,2026,2026
 799111,Nikolay Pantev,12668,Richards Bay FC,Central Midfield,24,Bulgaria,73,5,4,5,31,1,90,0,0,0,0,1,0,2018,2026
 1595858,Wandile Ngidi,12668,Richards Bay FC,Right Winger,0,South Africa,26,1,1,2,11,1,23,0,0,0,0,0,0,2026,2026
-402723,Goitseone Phoko,132785,Siwelele Football Club,Goalkeeper,31,Botswana,0,14,3,8,112,46,4140,0,0,0,0,6,27,2012,2026
+402723,Goitseone Phoko,132785,Siwelele Football Club,Goalkeeper,31,Botswana,0,14,3,8,114,48,4264,0,0,0,0,6,29,2012,2026
 1097652,Wandile Mthombeni,132785,Siwelele Football Club,Goalkeeper,26,South Africa,0,5,2,4,26,8,780,0,0,0,0,2,0,2022,2026
 457014,Njabulo Ngcobo,132785,Siwelele Football Club,Centre-Back,32,South Africa,0,11,8,9,209,96,7104,3,0,29,4,10,3,2016,2026
 341972,Felix Noge,132785,Siwelele Football Club,Left-Back,28,South Africa,0,4,3,3,18,5,379,0,1,3,0,0,0,2020,2026
 1576089,Kwanda Lupalule,132785,Siwelele Football Club,Right-Back,22,South Africa,0,1,1,2,12,1,45,0,0,0,0,0,0,2026,2026
-1620481,Raymond Makhuvele,132785,Siwelele Football Club,Midfield,0,South Africa,0,1,1,2,3,1,59,1,0,1,1,0,0,2026,2026
+1620481,Raymond Makhuvele,132785,Siwelele Football Club,Defensive Midfield,0,South Africa,39,1,1,2,12,1,59,1,0,1,1,0,0,2026,2026
 1193096,Hamza Issah,132785,Siwelele Football Club,Centre-Forward,24,Ghana,0,4,2,3,114,93,7017,23,4,5,0,2,0,2023,2026
-639102,Neo Mokhachane,132785,Siwelele Football Club,Left Winger,30,Lesotho,0,9,3,7,74,39,1701,1,1,16,4,2,23,2018,2026
+639102,Neo Mokhachane,132785,Siwelele Football Club,Left Winger,30,Lesotho,0,9,3,7,76,40,1790,1,1,19,5,3,24,2018,2026
 1576075,Blessing Thulo,132785,Siwelele Football Club,Left Winger,0,South Africa,0,1,1,2,12,6,353,0,0,8,4,0,0,2026,2026
 1576096,Jordan Marks,132785,Siwelele Football Club,Right Winger,0,South Africa,0,1,1,2,12,3,52,0,0,2,1,0,0,2026,2026
-1597285,Michel N'Guessan,132785,Siwelele Football Club,Centre-Forward,0,Cote d'Ivoire,0,1,1,2,5,4,95,2,0,7,4,1,0,2026,2026
+1597285,Michel N'Guessan,132785,Siwelele Football Club,Centre-Forward,0,Cote d'Ivoire,0,1,1,2,8,4,95,2,0,7,4,1,0,2026,2026
 930458,Obakhe Tshaya,31283,Chippa United,Right-Back,23,South Africa,33,3,2,3,29,1,45,0,0,0,0,0,0,2023,2026
 1352423,Imraan Jones,31283,Chippa United,Left-Back,24,South Africa,31,3,2,3,14,13,1110,1,0,6,2,2,0,2024,2026
 1108345,Tshepang Makara,31283,Chippa United,Centre-Back,0,South Africa,37,5,3,4,24,14,995,0,0,7,5,2,0,2022,2026
@@ -799,16 +810,16 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1211174,Camagu Mdevulana,67074,TS Galaxy FC,Midfield,25,South Africa,36,4,2,4,23,6,337,0,1,1,0,1,0,2023,2026
 1243254,Azola Jakalashe,67074,TS Galaxy FC,Centre-Forward,22,South Africa,20,4,3,3,34,4,35,1,0,2,1,0,0,2022,2026
 1513436,Mpho Maoke,67074,TS Galaxy FC,Left Winger,23,South Africa,18,2,2,3,13,5,178,1,0,1,1,0,0,2025,2026
-1178119,Emile Lako,61852,Marumo Gallants FC,Goalkeeper,27,Cameroon,0,4,3,7,27,11,990,0,0,0,0,0,0,2023,2026
+1178119,Emile Lako,61852,Marumo Gallants FC,Goalkeeper,27,Cameroon,0,4,3,7,28,11,990,0,0,0,0,0,0,2023,2026
 1589402,Nelson Ralenkoane,61852,Marumo Gallants FC,Centre-Back,24,South Africa,0,1,1,2,11,2,128,0,0,0,0,0,0,2026,2026
 1614366,Patrick Motsoeneng,61852,Marumo Gallants FC,Centre-Back,0,South Africa,17,2,2,3,13,3,270,0,0,0,0,0,0,2025,2026
 494975,Khomotso Marebane,61852,Marumo Gallants FC,Central Midfield,29,South Africa,0,11,6,5,54,18,1382,0,0,4,0,4,0,2016,2026
-1579070,Lebogang Button,61852,Marumo Gallants FC,Midfield,0,South Africa,0,1,1,2,11,4,99,0,0,2,1,0,0,2026,2026
 1585067,Thabiso Mkhwanazi,61852,Marumo Gallants FC,Attacking Midfield,20,South Africa,0,1,1,2,11,2,48,0,1,0,0,0,0,2026,2026
 1600665,Prince Manku,61852,Marumo Gallants FC,Defensive Midfield,23,South Africa,0,1,1,2,11,3,270,0,0,1,0,0,0,2026,2026
 1211191,Ntsako Mathebula,61852,Marumo Gallants FC,Attacking Midfield,22,South Africa,8,3,2,1,6,2,81,0,0,0,0,1,0,2023,2025
 429978,Thabang Sesinyi,61852,Marumo Gallants FC,Right Winger,34,Botswana,0,12,3,10,151,67,4382,11,3,25,7,8,30,2015,2026
 1589403,Kelvin Etemesi,61852,Marumo Gallants FC,Centre-Forward,22,Kenya,0,1,1,2,9,4,281,0,0,2,0,0,0,2026,2026
+1579070,Lebogang Button,61852,Marumo Gallants FC,Centre-Forward,0,South Africa,29,1,1,2,11,4,99,0,0,2,1,0,0,2026,2026
 867504,Mothetho Mosotho,21202,Polokwane City FC,Left-Back,26,South Africa,0,2,2,4,13,1,25,0,0,0,0,0,0,2020,2026
 1577939,Tshepang Matube,21202,Polokwane City FC,Defensive Midfield,0,South Africa,0,1,1,3,12,3,235,0,0,1,0,0,0,2026,2026
 1513908,Kamogelo Ngwane,21202,Polokwane City FC,Left Winger,24,South Africa,0,3,2,4,14,1,90,0,0,0,0,0,0,2024,2026
@@ -817,7 +828,6 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1520318,Tidimalo Molokwane,21202,Polokwane City FC,Centre-Forward,23,South Africa,44,2,2,4,13,12,1023,3,1,33,10,0,0,2025,2026
 553452,Andile Mbanjwa,120423,Kruger United FC,Goalkeeper,28,South Africa,0,8,4,7,104,5,385,0,0,0,0,0,1,2017,2026
 234019,Kwanda Mngonyama,120423,Kruger United FC,Centre-Back,33,South Africa,0,15,8,13,616,234,18564,8,7,17,4,57,12,2012,2026
-26618,Wandisile Letlabika,120423,Kruger United FC,Centre-Back,37,South Africa,0,15,5,5,464,200,16781,2,1,10,1,31,0,2011,2026
 341974,Thendo Mukumela,120423,Kruger United FC,Centre-Back,28,South Africa,0,12,6,13,135,43,3519,1,1,9,2,4,23,2014,2026
 1099654,Moise Gbai,120423,Kruger United FC,Left-Back,27,Cote d'Ivoire,0,2,1,3,19,2,142,0,0,0,0,0,2,2022,2024
 357345,Shane Saralina,120423,Kruger United FC,Centre-Back,29,South Africa,3,9,6,4,92,10,659,0,0,2,0,1,0,2016,2026
@@ -827,30 +837,21 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1352400,Neo Legalamitlwa,120423,Kruger United FC,Defender,23,South Africa,0,2,1,1,3,1,1,0,0,0,0,0,0,2024,2025
 547790,Celimpilo Ngema,120423,Kruger United FC,Attacking Midfield,29,South Africa,0,9,4,5,205,154,11416,10,11,125,46,34,0,2018,2026
 478661,Ntsako Makhubela,120423,Kruger United FC,Attacking Midfield,32,South Africa,10,9,8,6,213,134,9620,7,4,62,12,24,0,2017,2026
-1575434,Kgopotso Mkhonza,120423,Kruger United FC,Central Midfield,19,South Africa,0,1,1,2,11,0,0,0,0,0,0,0,0,2026,2026
+1620805,Tumelo Mmakgolane,120423,Kruger United FC,Attacking Midfield,0,South Africa,0,5,3,4,22,1,1,0,0,0,0,0,0,2022,2026
 1352391,Nkosinathi Thwala,120423,Kruger United FC,Central Midfield,21,South Africa,28,3,1,3,14,5,334,0,0,3,0,1,0,2024,2026
-1106590,Tatenda Tavengwa,120423,Kruger United FC,Defensive Midfield,29,Zimbabwe,44,8,2,8,64,13,741,0,0,4,0,3,2,2019,2026
+1575434,Kgopotso Mkhonza,120423,Kruger United FC,Central Midfield,20,South Africa,31,1,1,2,11,0,0,0,0,0,0,0,0,2026,2026
+1106590,Tatenda Tavengwa,120423,Kruger United FC,Defensive Midfield,29,Zimbabwe,44,8,2,8,65,13,741,0,0,4,0,3,2,2019,2026
 312246,Zama Rambuwane,120423,Kruger United FC,Left Winger,29,South Africa,0,9,5,9,243,32,1111,1,2,0,0,2,0,2013,2026
 437720,Kagiso Malinga,120423,Kruger United FC,Right Winger,31,South Africa,0,10,5,5,202,108,5369,8,2,125,45,11,0,2015,2026
 1234708,Heaven Sereetsi,120423,Kruger United FC,Left Winger,23,South Africa,0,4,2,5,69,36,1464,1,0,24,8,1,0,2023,2026
 1268372,Thokozani Sibanyoni,120423,Kruger United FC,Centre-Forward,22,South Africa,0,4,2,4,47,18,506,3,0,12,7,4,0,2023,2026
-541548,Thobela Sikhakhane,120423,Kruger United FC,Centre-Forward,31,South Africa,0,6,3,3,23,4,301,1,0,0,0,0,0,2018,2026
 969475,Kagiso Shezi,120423,Kruger United FC,Left Winger,24,South Africa,0,6,3,3,19,4,218,0,0,1,0,0,0,2021,2026
 1246223,Mlungisi Zwane,120423,Kruger United FC,Left Winger,23,South Africa,7,4,3,4,35,20,812,1,1,18,6,3,0,2023,2026
 1487827,Aphiwe Mphothe,120423,Kruger United FC,Right Winger,0,South Africa,50,2,1,3,12,9,532,0,0,10,4,0,0,2025,2026
-1370585,Sanele Mthembu,54142,Milford FC,Goalkeeper,0,South Africa,0,3,3,3,14,3,270,0,0,0,0,1,0,2024,2026
-420533,Zolani Nkombelo,54142,Milford FC,Left-Back,32,South Africa,0,9,5,5,170,48,3624,2,3,1,0,5,0,2015,2024
-437670,Sphamiso Khumalo,54142,Milford FC,Defender,0,South Africa,0,1,1,1,1,0,0,0,0,0,0,0,0,2015,2015
-846415,Mbonisi Chagi,54142,Milford FC,Left-Back,28,South Africa,0,5,4,2,17,2,133,0,0,0,0,0,0,2019,2025
+1370585,Sanele Mthembu,54142,Milford FC,Goalkeeper,0,South Africa,34,3,3,3,14,3,270,0,0,0,0,1,0,2024,2026
 1614370,Mnqobi Mbhele,54142,Milford FC,Centre-Back,0,South Africa,3,1,1,2,11,2,135,0,0,0,0,0,0,2026,2026
-1211154,Unathi Somabhele,54142,Milford FC,Left-Back,0,South Africa,7,3,1,2,15,3,273,0,0,0,0,0,0,2023,2025
 1591045,Admiro Chabanhu,54142,Milford FC,Left-Back,22,South Africa,26,1,1,2,11,1,2,0,0,1,1,0,0,2026,2026
-730451,Andile Nkosi,54142,Milford FC,Midfield,0,South Africa,0,4,2,2,15,0,0,0,0,0,0,0,0,2019,2025
 1107160,Thabana Mabena,54142,Milford FC,Attacking Midfield,0,South Africa,0,5,3,3,17,10,526,1,0,18,6,0,0,2022,2026
 1370447,Yanelisa Nomandela,54142,Milford FC,Central Midfield,23,South Africa,0,3,3,3,14,10,721,0,0,1,1,1,0,2024,2026
 1618591,Ndumiso Siphosakhe Biyela,54142,Milford FC,Midfield,0,South Africa,0,1,1,2,2,0,0,0,0,0,0,0,0,2026,2026
-1212470,Andile Zuma,54142,Milford FC,Attacking Midfield,0,South Africa,33,2,1,1,6,1,45,0,0,0,0,0,0,2023,2024
-647675,Bonginkosi Nyambe,54142,Milford FC,Attack,31,South Africa,0,3,2,1,7,2,171,1,0,0,0,0,0,2018,2024
 1369915,Sicelo Masilela,54142,Milford FC,Centre-Forward,23,South Africa,0,3,2,3,13,13,574,1,0,18,6,1,0,2024,2026
-500501,Thabiso Radebe,54142,Milford FC,Right Winger,0,South Africa,38,1,1,1,1,0,0,0,0,0,0,0,0,2016,2016
-1245620,Xolisani Ngcobo,54142,Milford FC,Centre-Forward,0,South Africa,77,3,1,2,14,0,0,0,0,0,0,0,0,2023,2025

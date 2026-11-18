@@ -5,7 +5,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 647912,Karim Yehia,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 647912,Karim Yehia,2026,EGY1,68770,False,8,0,0,0,0,0,0,0,0
 647912,Karim Yehia,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
-468831,Joseph Ngwem,2026,EGYP,43316,False,2,0,0,0,0,0,0,0,0
+468831,Joseph Ngwem,2026,EGYP,43316,False,3,0,0,0,0,0,0,0,0
 453923,Seif Elkhashab,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 453923,Seif Elkhashab,2026,EGY1,9218,False,8,6,0,477,0,0,2,0,0
 453923,Seif Elkhashab,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -23,14 +23,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 981050,Maged Hany,2026,EGY1,47010,False,8,0,0,0,0,0,0,0,0
 981050,Maged Hany,2026,EGLC,47010,False,2,0,0,0,0,0,0,0,0
 981050,Maged Hany,2026,CAFC,47010,False,4,0,0,0,0,0,0,0,0
-340298,Islam Abdelnaim,2026,EGYP,43316,False,2,0,0,0,0,0,0,0,0
+340298,Islam Abdelnaim,2026,EGYP,43316,False,3,0,0,0,0,0,0,0,0
 983422,Seif El Agouz,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 983422,Seif El Agouz,2026,EGY1,39575,False,8,0,0,0,0,0,0,0,0
 983422,Seif El Agouz,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
 702910,Ali Sulieman,2026,EGYP,9094,False,1,0,0,0,0,0,0,0,0
 702910,Ali Sulieman,2026,EGY1,9094,False,8,5,0,213,0,0,6,2,0
 702910,Ali Sulieman,2026,EGLC,9094,False,2,0,0,0,0,0,0,0,0
-702910,Ali Sulieman,2026,AFCQ,13953,True,5,5,0,449,3,1,9,3,1
+702910,Ali Sulieman,2026,AFCQ,13953,True,6,6,0,539,4,1,11,4,1
 490268,Mohamed Shika,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 490268,Mohamed Shika,2026,EGY1,57439,False,8,4,0,44,0,0,1,0,0
 490268,Mohamed Shika,2026,EGLC,57439,False,2,1,0,90,0,0,0,0,0
@@ -53,23 +53,28 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 799177,Hatem Sukar,2026,EGYP,62448,False,1,0,0,0,0,0,0,0,0
 799177,Hatem Sukar,2026,EGY1,62448,False,8,0,0,0,0,0,0,0,0
 799177,Hatem Sukar,2026,EGLC,62448,False,1,0,0,0,0,0,0,0,0
-1437012,Konta,2026,FS,16121,True,5,5,0,433,0,0,0,0,2
+1437012,Konta,2026,FS,16121,True,6,5,0,433,0,0,0,0,2
 1437012,Konta,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
-373705,Eric Traoré,2026,INIL,67176,False,2,2,0,20,0,0,0,0,0
+373705,Eric Traoré,2026,INIL,67176,False,3,3,0,65,0,0,0,0,1
 902001,Mohamed Abdelsamia,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 902001,Mohamed Abdelsamia,2026,EGY1,23387,False,8,1,0,28,0,0,0,0,0
 902001,Mohamed Abdelsamia,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
+624735,Abdelrahman El Dah,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
 1333540,Ibrahim El Nagaawy,2026,TS2,6541,False,10,2,0,41,0,0,0,0,0
-1333540,Ibrahim El Nagaawy,2026,FS,16121,True,1,1,0,9,0,0,0,0,0
+1333540,Ibrahim El Nagaawy,2026,FS,16121,True,2,2,0,99,0,0,0,0,0
 1333540,Ibrahim El Nagaawy,2026,CZ3C,131709,False,4,3,0,175,0,1,0,0,0
 1333540,Ibrahim El Nagaawy,2026,19YL,76578,False,2,1,0,14,0,0,0,0,0
 866846,Marwan Hamdi,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 866846,Marwan Hamdi,2026,EGY1,23387,False,8,3,0,76,0,0,2,0,0
 866846,Marwan Hamdi,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-887985,Khaled Al-Nabris,2026,FS,17758,True,3,3,0,178,0,1,0,0,1
+887985,Khaled Al-Nabris,2026,FS,17758,True,5,5,0,348,0,1,0,0,1
 887985,Khaled Al-Nabris,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 887985,Khaled Al-Nabris,2026,EGY1,57439,False,8,4,0,98,1,0,4,1,1
 887985,Khaled Al-Nabris,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
+1184163,Nader Farag,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
+1276260,Mohamed Khatary,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
+1278505,Omar El Kot,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
+987465,Ali El Malawany,2026,EGYP,3595,False,1,0,0,0,0,0,0,0,0
 260559,Mahmoud El Zanfaly,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 260559,Mahmoud El Zanfaly,2026,EGY1,68770,False,8,0,0,0,0,0,0,0,0
 260559,Mahmoud El Zanfaly,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
@@ -83,14 +88,17 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 804376,Momen Awad,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 804376,Momen Awad,2026,EGY1,3963,False,8,8,0,720,0,0,4,1,2
 804376,Momen Awad,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
+1165220,Mohamed El Deghemy,2026,EGYP,43316,False,3,0,0,0,0,0,0,0,0
 1158726,Moataz Mohamed,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1158726,Moataz Mohamed,2026,EGY1,3963,False,8,0,0,0,0,0,0,0,0
 1158726,Moataz Mohamed,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
+463197,Mohamed Gaber,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
 1148102,Mahmoud Ouka,2026,EGYP,47010,False,1,0,0,0,0,0,0,0,0
 1148102,Mahmoud Ouka,2026,EGY1,47010,False,8,8,0,590,0,0,9,2,1
 1148102,Mahmoud Ouka,2026,EGLC,47010,False,2,1,0,90,0,0,0,0,0
 1148102,Mahmoud Ouka,2026,CAFC,47010,False,4,2,0,116,0,0,0,0,0
-907061,Ibrahim Al-Dawoud,2026,BH2S,84891,False,15,14,1,1186,2,3,0,0,1
+907061,Ibrahim Al-Dawoud,2026,BH2S,84891,False,16,15,1,1276,2,3,0,0,1
+1008460,Aziz Abid,2026,EGYP,12093,False,1,0,0,0,0,0,0,0,0
 160551,Mohamed Hamdi,2026,EGYP,24297,False,1,0,0,0,0,0,0,0,0
 160551,Mohamed Hamdi,2026,EGY1,24297,False,8,6,0,130,2,0,7,2,1
 160551,Mohamed Hamdi,2026,EGLC,24297,False,2,0,0,0,0,0,0,0,0
@@ -98,16 +106,18 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 951946,Ismail Ashraf,2026,EGYP,16216,False,1,0,0,0,0,0,0,0,0
 951946,Ismail Ashraf,2026,EGY1,16216,False,8,5,0,295,0,0,3,1,2
 951946,Ismail Ashraf,2026,EGLC,16216,False,2,1,0,45,0,0,0,0,0
+851047,Ziad Tarek,2026,EGYP,13447,False,3,0,0,0,0,0,0,0,0
 936100,Mohamed Shika,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 936100,Mohamed Shika,2026,EGY1,39575,False,8,1,0,90,0,0,0,0,0
 936100,Mohamed Shika,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
 479688,Ahmed Daador,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
+1032462,Mohamed Nadim,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
 1111048,Babacar Ndiaye,2026,QU2L,10920,False,6,5,0,419,0,1,3,1,1
 1111048,Babacar Ndiaye,2026,QSCP,10920,False,2,0,0,0,0,0,0,0,0
 729276,Gaber Kamel,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 729276,Gaber Kamel,2026,EGY1,39575,False,8,4,0,322,0,0,0,0,0
 729276,Gaber Kamel,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
-830077,Moaz Ahmed,2026,FS,15922,True,1,0,0,0,0,0,0,0,0
+830077,Moaz Ahmed,2026,FS,15922,True,3,0,0,0,0,0,0,0,0
 830077,Moaz Ahmed,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 830077,Moaz Ahmed,2026,EGY1,57439,False,8,1,0,90,0,0,0,0,0
 830077,Moaz Ahmed,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
@@ -145,6 +155,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1229767,Mohamed Ezz,2026,EGY1,47010,False,8,5,0,288,0,0,1,1,0
 1229767,Mohamed Ezz,2026,EGLC,47010,False,2,0,0,0,0,0,0,0,0
 1229767,Mohamed Ezz,2026,CAFC,47010,False,4,2,0,141,0,0,0,0,0
+936241,Ahmed El Bahrawi,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
+842545,Hassan Yassin,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
+1124934,Abdallah Mohamed,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
+734638,Karim El Tayeb,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
+1053295,Ali Yasser,2026,EGYP,9093,False,2,0,0,0,0,0,0,0,0
 948651,Emad Mayhoub,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 948651,Emad Mayhoub,2026,EGY1,9218,False,8,8,0,657,2,2,12,5,0
 948651,Emad Mayhoub,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -204,15 +219,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 257833,Ahmed Samir,2026,EGYP,9093,False,2,0,0,0,0,0,0,0,0
 344283,Ahmed Ayman Mansour,2026,LPL,43628,False,3,0,0,0,0,0,0,0,0
 934847,Bonheur Mugisha,2026,SAKC,9131,False,1,1,0,90,0,0,1,1,0
-934847,Bonheur Mugisha,2026,SA1,9131,False,13,12,0,1080,1,0,11,3,2
+934847,Bonheur Mugisha,2026,SA1,9131,False,12,12,0,1080,1,0,11,3,2
 934847,Bonheur Mugisha,2026,FS,3855,True,1,0,0,0,0,0,0,0,0
-934847,Bonheur Mugisha,2026,AFCQ,3855,True,2,2,0,170,0,0,1,0,2
+934847,Bonheur Mugisha,2026,AFCQ,3855,True,4,3,0,260,0,0,3,0,2
 717898,Ziad Farag,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 717898,Ziad Farag,2026,EGY1,39575,False,8,1,0,35,0,0,0,0,0
 717898,Ziad Farag,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
 1165926,Youssry Wahid,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1165926,Youssry Wahid,2026,EGY1,3963,False,8,8,0,285,0,1,8,1,0
 1165926,Youssry Wahid,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
+1231331,Oumar Yacine Doumbouya,2026,EGYP,16215,False,2,0,0,0,0,0,0,0,0
 1073007,Islam Abdellah,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1073007,Islam Abdellah,2026,EGY1,3963,False,8,0,0,0,0,0,0,0,0
 1073007,Islam Abdellah,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
@@ -223,10 +239,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1458831,Sekou Sonko,2026,TR2,68377,False,6,0,0,0,0,0,0,0,0
 312114,Fejiri Okenabirhie,2026,NLC,4117,False,2,0,0,0,0,0,0,0,0
 312114,Fejiri Okenabirhie,2026,FAC,4117,False,1,1,0,45,0,0,4,2,0
-312114,Fejiri Okenabirhie,2026,CNAT,4117,False,7,7,0,334,3,1,0,0,0
+312114,Fejiri Okenabirhie,2026,CNAT,4117,False,8,8,0,368,3,1,0,0,0
 550748,Ibrahim Galal,2026,EGYP,89903,False,2,0,0,0,0,0,0,0,0
 560598,Khaled Kourdoghli,2026,IRQ1,28333,False,13,12,0,888,0,0,0,0,0
-560598,Khaled Kourdoghli,2026,FS,13674,True,2,2,0,121,0,0,0,0,0
+560598,Khaled Kourdoghli,2026,FS,13674,True,4,4,0,210,0,0,0,0,1
 1309198,Ahmed Essam,2026,EGYP,28198,False,3,1,0,90,0,0,0,0,0
 1488010,Ahmed Fathi,2026,EGYP,28198,False,3,1,0,90,0,0,0,0,0
 942731,Ahmed Mahmoud,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
@@ -237,9 +253,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1277732,Ahmed Magdy,2026,EGLC,16216,False,2,1,0,90,0,0,0,0,1
 577881,Mohamed Ali Ben Romdhane,2026,QSL,10775,False,9,7,0,407,0,2,6,4,1
 577881,Mohamed Ali Ben Romdhane,2026,QSCP,10775,False,2,0,0,0,0,0,0,0,0
-577881,Mohamed Ali Ben Romdhane,2026,FS,49062,True,2,0,0,0,0,0,0,0,0
+577881,Mohamed Ali Ben Romdhane,2026,FS,49062,True,4,0,0,0,0,0,0,0,0
 577881,Mohamed Ali Ben Romdhane,2026,FS,3670,True,1,0,0,0,0,0,0,0,0
-577881,Mohamed Ali Ben Romdhane,2026,AFCQ,3670,True,2,2,0,103,0,0,2,1,0
+577881,Mohamed Ali Ben Romdhane,2026,AFCQ,3670,True,4,4,0,261,0,0,4,1,1
 577881,Mohamed Ali Ben Romdhane,2026,ACLE,10775,False,4,4,0,360,1,2,5,1,0
 557938,Marwan Hamdi,2026,IRQ1,103329,False,13,11,0,477,4,2,0,0,2
 606507,Mohamed Adel,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
@@ -308,7 +324,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 968736,Mohamed Hany Treka,2026,EGYP,24297,False,1,0,0,0,0,0,0,0,0
 968736,Mohamed Hany Treka,2026,EGY1,24297,False,8,3,0,58,0,0,0,0,1
 968736,Mohamed Hany Treka,2026,EGLC,24297,False,2,0,0,0,0,0,0,0,0
-1438953,Mahmoud Salah,2026,FS,16121,True,5,4,0,189,1,0,0,0,0
+1438953,Mahmoud Salah,2026,FS,16121,True,6,4,0,189,1,0,0,0,0
 1438953,Mahmoud Salah,2026,EGYP,7,False,1,1,0,15,0,1,0,0,0
 1438953,Mahmoud Salah,2026,EGY1,7,False,8,0,0,0,0,0,0,0,0
 1438953,Mahmoud Salah,2026,EGLC,7,False,2,1,0,61,0,0,0,0,0
@@ -357,13 +373,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 661455,Oufa Shobeir,2026,EGY1,7,False,8,6,0,540,0,0,0,0,0
 661455,Oufa Shobeir,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
 661455,Oufa Shobeir,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
-661455,Oufa Shobeir,2026,AFCQ,3672,True,2,2,0,180,0,0,0,0,0
+661455,Oufa Shobeir,2026,AFCQ,3672,True,4,4,0,360,0,0,0,0,0
 134573,Mohamed El Shenawy,2026,FS,3672,True,1,0,1,0,0,0,0,0,0
 134573,Mohamed El Shenawy,2026,EGYP,7,False,1,1,0,90,0,0,0,0,0
 134573,Mohamed El Shenawy,2026,EGY1,7,False,8,2,0,180,0,0,0,0,0
 134573,Mohamed El Shenawy,2026,EGLC,7,False,2,0,1,0,0,0,0,0,0
 134573,Mohamed El Shenawy,2026,CAFC,7,False,2,2,0,180,0,0,0,0,0
-134573,Mohamed El Shenawy,2026,AFCQ,3672,True,2,0,2,0,0,0,0,0,0
+134573,Mohamed El Shenawy,2026,AFCQ,3672,True,4,0,2,0,0,0,0,0,0
 820393,Hamza Alaa,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
 820393,Hamza Alaa,2026,EGY1,7,False,8,0,0,0,0,0,0,0,0
 820393,Hamza Alaa,2026,EGLC,7,False,2,2,0,180,0,0,0,0,0
@@ -372,16 +388,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 518804,Youssef Belammari,2026,EGY1,7,False,8,0,8,0,0,0,0,0,0
 518804,Youssef Belammari,2026,EGLC,7,False,2,0,2,0,0,0,0,0,0
 518804,Youssef Belammari,2026,CAFC,7,False,2,0,2,0,0,0,0,0,0
-343974,Mohamed Hany,2026,FS,3672,True,1,1,0,90,0,0,1,0,1
-343974,Mohamed Hany,2026,EGYP,7,False,1,1,0,90,0,2,0,0,0
-343974,Mohamed Hany,2026,EGY1,7,False,8,6,0,540,1,1,2,0,1
-343974,Mohamed Hany,2026,EGLC,7,False,2,1,0,90,0,1,0,0,0
-343974,Mohamed Hany,2026,CAFC,7,False,2,1,0,1,0,0,0,0,0
-343974,Mohamed Hany,2026,AFCQ,3672,True,2,2,0,180,0,0,1,0,0
-566823,Achraf Dari,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+566823,Achraf Dari,2026,EGYP,7,False,1,1,0,90,0,0,0,0,0
 566823,Achraf Dari,2026,EGY1,7,False,8,2,4,180,1,0,2,1,0
 566823,Achraf Dari,2026,EGLC,7,False,2,1,0,90,0,0,0,0,0
 566823,Achraf Dari,2026,CAFC,7,False,2,2,0,135,0,0,0,0,0
+343974,Mohamed Hany,2026,FS,3672,True,1,1,0,90,0,0,1,0,1
+343974,Mohamed Hany,2026,EGYP,7,False,1,1,0,90,0,2,0,0,0
+343974,Mohamed Hany,2026,EGY1,7,False,8,6,0,540,0,2,2,0,1
+343974,Mohamed Hany,2026,EGLC,7,False,2,1,0,90,0,1,0,0,0
+343974,Mohamed Hany,2026,CAFC,7,False,2,1,0,1,0,0,0,0,0
+343974,Mohamed Hany,2026,AFCQ,3672,True,4,4,0,360,1,1,3,2,0
 403405,Beckham,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 403405,Beckham,2026,EGY1,57439,False,8,6,0,493,0,2,3,1,3
 403405,Beckham,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
@@ -423,13 +439,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 410427,Aliou Dieng,2026,FS,3674,True,2,1,0,17,0,0,0,0,1
 410427,Aliou Dieng,2026,ES1,1049,False,12,6,0,232,0,0,0,0,0
 410427,Aliou Dieng,2026,CDR,1049,False,1,0,0,0,0,0,0,0,0
-410427,Aliou Dieng,2026,AFCQ,3674,True,2,2,0,119,0,0,0,0,1
+410427,Aliou Dieng,2026,AFCQ,3674,True,3,2,0,119,0,0,0,0,1
 734542,Marwan Ateya,2026,FS,3672,True,1,1,0,69,0,0,2,0,0
 734542,Marwan Ateya,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
 734542,Marwan Ateya,2026,EGY1,7,False,8,8,0,720,1,1,13,3,2
 734542,Marwan Ateya,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
 734542,Marwan Ateya,2026,CAFC,7,False,2,2,0,149,0,1,0,0,0
-734542,Marwan Ateya,2026,AFCQ,3672,True,2,1,0,81,0,1,0,0,1
+734542,Marwan Ateya,2026,AFCQ,3672,True,4,3,0,174,0,1,1,1,1
 789005,Ahmed Kouka,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
 789005,Ahmed Kouka,2026,EGY1,7,False,8,5,0,356,0,0,3,0,0
 789005,Ahmed Kouka,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
@@ -442,30 +458,34 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1259085,Hamza Abdelkarim,2026,ES1,131,False,12,2,0,12,0,0,0,0,0
 1259085,Hamza Abdelkarim,2026,E4G2,2464,False,1,1,0,74,1,0,0,0,0
 1259085,Hamza Abdelkarim,2026,CL,131,False,4,0,0,0,0,0,0,0,0
-1259085,Hamza Abdelkarim,2026,AFCQ,3672,True,2,2,0,31,1,0,2,1,0
+1259085,Hamza Abdelkarim,2026,AFCQ,3672,True,3,3,0,49,1,0,3,1,0
 1259085,Hamza Abdelkarim,2026,19YL,41584,False,1,1,0,45,0,0,0,0,0
 234189,Trezeguet,2026,SAKC,31008,False,1,1,0,90,0,1,4,0,0
-234189,Trezeguet,2026,SA1,31008,False,12,9,1,667,2,1,25,4,0
+234189,Trezeguet,2026,SA1,31008,False,11,9,1,667,2,1,25,4,0
+234189,Trezeguet,2026,FS,3672,True,1,0,1,0,0,0,0,0,0
+234189,Trezeguet,2026,AFCQ,3672,True,4,2,2,147,0,0,4,2,1
 1029240,Ahmed Reda,2026,EGYP,7,False,1,1,0,90,0,0,0,0,0
 1029240,Ahmed Reda,2026,EGY1,7,False,8,5,0,78,0,0,0,0,0
 1029240,Ahmed Reda,2026,EGLC,7,False,2,2,0,170,0,0,0,0,0
 1029240,Ahmed Reda,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
 320722,Zizo,2026,FS,3672,True,1,1,0,21,0,0,2,1,0
+320722,Zizo,2026,FS,30951,True,1,0,0,0,0,0,0,0,0
 320722,Zizo,2026,EGYP,7,False,1,1,0,61,2,0,0,0,0
 320722,Zizo,2026,EGY1,7,False,8,8,0,672,3,2,16,7,1
 320722,Zizo,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
 320722,Zizo,2026,CAFC,7,False,2,2,0,44,1,0,0,0,0
-320722,Zizo,2026,AFCQ,3672,True,2,2,0,38,0,0,0,0,0
+320722,Zizo,2026,AFCQ,3672,True,4,3,0,100,0,1,4,1,0
 744903,Ieltsin Camões,2026,POPU,759,False,1,1,0,80,0,0,0,0,0
 744903,Ieltsin Camões,2026,PL1,759,False,8,7,0,235,0,0,5,2,1
 744903,Ieltsin Camões,2026,NOPO,1293,False,1,1,0,27,0,0,0,0,0
 744903,Ieltsin Camões,2026,ELQ,1293,False,2,2,0,90,0,0,0,0,0
 744903,Ieltsin Camões,2026,ECLQ,1293,False,4,4,0,181,0,1,0,0,0
+744903,Ieltsin Camões,2026,AFCQ,4311,True,3,1,0,6,0,0,0,0,0
 361925,Achraf Bencharki,2026,EGYP,7,False,1,1,0,61,0,0,0,0,0
-361925,Achraf Bencharki,2026,EGY1,7,False,8,8,0,656,1,4,15,7,0
+361925,Achraf Bencharki,2026,EGY1,7,False,8,8,0,656,2,3,15,7,0
 361925,Achraf Bencharki,2026,EGLC,7,False,2,1,0,29,1,0,0,0,0
 361925,Achraf Bencharki,2026,CAFC,7,False,2,1,0,4,0,0,0,0,0
-566791,Ahmed Abdelkader,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+566791,Ahmed Abdelkader,2026,EGYP,44664,False,1,1,0,29,0,0,0,0,0
 566791,Ahmed Abdelkader,2026,EGY1,44664,False,8,6,0,160,0,0,4,3,0
 566791,Ahmed Abdelkader,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 566791,Ahmed Abdelkader,2026,ACL,44664,False,4,4,0,185,0,1,0,0,0
@@ -473,7 +493,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 310645,Taher Mohamed,2026,EGY1,7,False,8,6,0,200,1,0,7,2,1
 310645,Taher Mohamed,2026,EGLC,7,False,2,2,0,179,0,2,0,0,0
 310645,Taher Mohamed,2026,CAFC,7,False,2,2,0,176,1,1,0,0,0
-310645,Taher Mohamed,2026,AFCQ,14238,True,2,0,2,0,0,0,0,0,0
+310645,Taher Mohamed,2026,AFCQ,14238,True,3,0,3,0,0,0,0,0,0
 1025249,Marwan Otaka,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 1025249,Marwan Otaka,2026,EGY1,57439,False,8,8,0,493,1,0,5,4,0
 1025249,Marwan Otaka,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
@@ -497,7 +517,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 104951,El Mahdi Soliman,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 104951,El Mahdi Soliman,2026,EGY1,664,False,8,7,0,630,0,0,0,0,0
 104951,El Mahdi Soliman,2026,EGLC,664,False,2,0,0,0,0,0,0,0,0
-104951,El Mahdi Soliman,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+104951,El Mahdi Soliman,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 104951,El Mahdi Soliman,2026,ACL,664,False,4,2,0,180,0,0,0,0,0
 184818,Mohamed Awad,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 184818,Mohamed Awad,2026,EGY1,664,False,8,1,0,90,0,0,0,0,0
@@ -507,7 +527,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 737524,Hossam Abdelmaguid,2026,ECLQ,31614,False,2,0,0,0,0,0,0,0,0
 737524,Hossam Abdelmaguid,2026,BULP,31614,False,1,0,0,0,0,0,0,0,0
 737524,Hossam Abdelmaguid,2026,BU1,31614,False,13,6,3,456,0,0,0,0,2
-737524,Hossam Abdelmaguid,2026,AFCQ,3672,True,2,2,0,180,0,0,1,0,0
+737524,Hossam Abdelmaguid,2026,AFCQ,3672,True,3,3,0,270,0,0,1,0,1
 1274483,Mahmoud El Shenawy,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1274483,Mahmoud El Shenawy,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
 1274483,Mahmoud El Shenawy,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
@@ -523,12 +543,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 465966,Ahmed Fatouh,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
 465966,Ahmed Fatouh,2026,EGY1,664,False,8,6,0,378,0,0,3,0,1
 465966,Ahmed Fatouh,2026,EGLC,664,False,1,0,0,0,0,0,0,0,0
-465966,Ahmed Fatouh,2026,AFCQ,3672,True,2,2,0,143,0,1,2,0,0
+465966,Ahmed Fatouh,2026,AFCQ,3672,True,4,3,0,233,0,1,3,1,0
 465966,Ahmed Fatouh,2026,ACL,664,False,4,3,0,225,0,0,0,0,0
 920972,Sallah Moussaddaq,2026,MAR1,6603,False,7,7,0,630,0,0,0,0,2
+308526,Mahmoud El Wensh,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
 308526,Mahmoud El Wensh,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 308526,Mahmoud El Wensh,2026,EGY1,664,False,8,8,0,720,0,0,1,0,2
 308526,Mahmoud El Wensh,2026,EGLC,664,False,2,0,0,0,0,0,0,0,0
+308526,Mahmoud El Wensh,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 308526,Mahmoud El Wensh,2026,ACL,664,False,4,4,0,360,0,0,0,0,0
 1289096,Mohamed Ibrahim,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1289096,Mohamed Ibrahim,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
@@ -550,16 +572,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1496859,Ahmed Khodary,2026,EGY1,664,False,8,1,0,1,0,0,0,0,0
 1496859,Ahmed Khodary,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
 1496859,Ahmed Khodary,2026,ACL,664,False,4,1,0,83,0,0,0,0,0
-1496858,Mohamed Farag,2026,FS,16121,True,5,1,0,7,0,0,0,0,0
+1496858,Mohamed Farag,2026,FS,16121,True,6,1,0,7,0,0,0,0,0
 1496858,Mohamed Farag,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1496858,Mohamed Farag,2026,EGY1,664,False,8,1,0,52,0,0,0,0,0
 1496858,Mohamed Farag,2026,EGLC,664,False,2,2,0,177,0,0,0,0,0
 1496858,Mohamed Farag,2026,ACL,664,False,4,0,0,0,0,0,0,0,0
 355593,Nasser Maher,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
-355593,Nasser Maher,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+355593,Nasser Maher,2026,EGYP,44664,False,1,1,0,77,0,2,0,0,0
 355593,Nasser Maher,2026,EGY1,44664,False,8,8,0,501,2,0,14,6,2
 355593,Nasser Maher,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
-355593,Nasser Maher,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+355593,Nasser Maher,2026,AFCQ,3672,True,4,2,0,127,1,0,2,1,0
 355593,Nasser Maher,2026,ACL,44664,False,4,4,0,181,1,0,0,0,0
 479683,Nabil Dunga,2026,SAKC,32328,False,1,0,0,0,0,0,0,0,0
 479683,Nabil Dunga,2026,SA2L,32328,False,11,5,0,405,0,0,7,2,3
@@ -567,7 +589,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 731666,Mohamed Shehata,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 731666,Mohamed Shehata,2026,EGY1,664,False,8,8,0,720,0,0,7,2,1
 731666,Mohamed Shehata,2026,EGLC,664,False,2,0,0,0,0,0,0,0,0
-731666,Mohamed Shehata,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+731666,Mohamed Shehata,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 731666,Mohamed Shehata,2026,ACL,664,False,4,4,0,343,1,0,0,0,0
 1238125,Mohamed El Sayed,2026,FS,30403,True,10,0,0,0,0,0,0,0,0
 1238125,Mohamed El Sayed,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
@@ -590,7 +612,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 413100,Ahmed Hamdi,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 413100,Ahmed Hamdi,2026,EGY1,3963,False,8,1,0,10,0,0,0,0,0
 413100,Ahmed Hamdi,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
-1259072,Mohamed Hamad,2026,FS,16121,True,5,5,0,294,2,1,0,0,1
+1259072,Mohamed Hamad,2026,FS,16121,True,6,5,0,294,2,1,0,0,1
 1259072,Mohamed Hamad,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1259072,Mohamed Hamad,2026,EGY1,664,False,8,4,0,143,1,1,4,3,0
 1259072,Mohamed Hamad,2026,EGLC,664,False,2,0,0,0,0,0,0,0,0
@@ -607,13 +629,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1489439,Youssef Wael,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
 1489439,Youssef Wael,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
 1489439,Youssef Wael,2026,ACL,664,False,4,0,0,0,0,0,0,0,0
-561217,Oday Dabbagh,2026,FS,17758,True,3,3,0,193,4,1,0,0,0
+561217,Oday Dabbagh,2026,FS,17758,True,5,5,0,293,4,1,0,0,0
 561217,Oday Dabbagh,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 561217,Oday Dabbagh,2026,EGY1,664,False,8,8,0,494,0,3,8,2,1
 561217,Oday Dabbagh,2026,EGLC,664,False,2,0,0,0,0,0,0,0,0
 561217,Oday Dabbagh,2026,ACL,664,False,4,4,0,233,0,1,0,0,0
 1134280,Abdelhamid Maali,2026,MAR1,12721,False,7,6,1,366,1,1,0,0,1
-1134280,Abdelhamid Maali,2026,FS,34903,True,2,2,0,47,0,0,0,0,0
+1134280,Abdelhamid Maali,2026,FS,34903,True,3,3,0,137,1,2,0,0,0
 537192,Nasser Mansy,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 537192,Nasser Mansy,2026,EGY1,664,False,8,4,0,171,0,0,5,0,0
 537192,Nasser Mansy,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
@@ -621,7 +643,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 574352,Chico Banza,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 574352,Chico Banza,2026,EGY1,664,False,8,8,0,580,2,1,14,7,2
 574352,Chico Banza,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
-574352,Chico Banza,2026,AFCQ,3585,True,2,1,0,20,0,0,1,0,0
+574352,Chico Banza,2026,AFCQ,3585,True,4,3,0,134,1,0,5,2,0
 574352,Chico Banza,2026,ACL,664,False,4,4,0,262,1,2,0,0,2
 801415,Ahmed Sherif,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 801415,Ahmed Sherif,2026,EGY1,664,False,8,7,0,395,3,0,14,6,1
@@ -646,7 +668,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 625015,Mahmoud Gad,2026,EGY1,44664,False,8,0,0,0,0,0,0,0,0
 625015,Mahmoud Gad,2026,EGLC,44664,False,2,1,0,90,0,0,0,0,0
 625015,Mahmoud Gad,2026,ACL,44664,False,4,0,0,0,0,0,0,0,0
-124578,Ahmed El Shenawy,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+124578,Ahmed El Shenawy,2026,EGYP,44664,False,1,1,0,90,0,0,0,0,0
 124578,Ahmed El Shenawy,2026,EGY1,44664,False,8,8,0,720,0,0,0,0,0
 124578,Ahmed El Shenawy,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 124578,Ahmed El Shenawy,2026,ACL,44664,False,4,4,0,360,0,0,0,0,0
@@ -655,31 +677,32 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1401980,Ziad Haytham,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 1401980,Ziad Haytham,2026,ACL,44664,False,4,0,0,0,0,0,0,0,0
 476625,Mahmoud Marei,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
-476625,Mahmoud Marei,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+476625,Mahmoud Marei,2026,EGYP,44664,False,1,1,0,90,0,0,0,0,1
 476625,Mahmoud Marei,2026,EGY1,44664,False,8,6,0,540,0,0,0,0,1
 476625,Mahmoud Marei,2026,EGLC,44664,False,2,1,0,90,0,0,0,0,0
-476625,Mahmoud Marei,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+476625,Mahmoud Marei,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 476625,Mahmoud Marei,2026,ACL,44664,False,4,2,0,108,0,0,0,0,1
 369901,Mohamed Hamdi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
 369901,Mohamed Hamdi,2026,EGY1,44664,False,8,1,0,27,0,0,0,0,0
 369901,Mohamed Hamdi,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 369901,Mohamed Hamdi,2026,ACL,44664,False,4,0,0,0,0,0,0,0,0
-197714,Mohamed Chibi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+197714,Mohamed Chibi,2026,EGYP,44664,False,1,1,0,45,0,0,0,0,0
 197714,Mohamed Chibi,2026,EGY1,44664,False,8,8,0,693,0,3,5,0,1
 197714,Mohamed Chibi,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 197714,Mohamed Chibi,2026,ACL,44664,False,4,4,0,301,0,0,0,0,0
 333004,Karim Hafez,2026,FS,3672,True,1,1,0,90,0,0,0,0,0
-333004,Karim Hafez,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+333004,Karim Hafez,2026,FS,30951,True,1,0,0,0,0,0,0,0,0
+333004,Karim Hafez,2026,EGYP,44664,False,1,1,0,77,0,0,0,0,0
 333004,Karim Hafez,2026,EGY1,44664,False,8,8,0,677,0,1,5,0,2
 333004,Karim Hafez,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
-333004,Karim Hafez,2026,AFCQ,3672,True,2,1,0,37,0,0,0,0,0
+333004,Karim Hafez,2026,AFCQ,3672,True,4,2,0,127,0,0,1,0,0
 333004,Karim Hafez,2026,ACL,44664,False,4,3,0,211,0,1,0,0,1
-453363,Osama Galal,2026,EGY1,44664,False,4,1,0,12,0,0,0,0,0
-453363,Osama Galal,2026,ACL,44664,False,1,0,0,0,0,0,0,0,0
-304778,Ahmed Samy,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+304778,Ahmed Samy,2026,EGYP,44664,False,1,1,0,90,0,0,0,0,0
 304778,Ahmed Samy,2026,EGY1,44664,False,8,7,0,630,1,2,7,1,2
 304778,Ahmed Samy,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 304778,Ahmed Samy,2026,ACL,44664,False,4,4,0,315,0,0,0,0,1
+453363,Osama Galal,2026,EGY1,44664,False,4,1,0,12,0,0,0,0,0
+453363,Osama Galal,2026,ACL,44664,False,1,0,0,0,0,0,0,0,0
 1036410,Mohamed Hamdi,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 1036410,Mohamed Hamdi,2026,EGY1,9218,False,8,8,0,571,0,0,8,1,3
 1036410,Mohamed Hamdi,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -688,19 +711,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1087789,Tarek Alaa,2026,EGY1,47010,False,8,8,0,645,0,1,6,2,2
 1087789,Tarek Alaa,2026,EGLC,47010,False,2,1,0,18,0,0,0,0,0
 1087789,Tarek Alaa,2026,CAFC,47010,False,4,1,0,90,0,0,0,0,0
-1087789,Tarek Alaa,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+1087789,Tarek Alaa,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 479682,Mohanad Lasheen,2026,FS,3672,True,1,1,0,90,0,0,0,0,0
-479682,Mohanad Lasheen,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+479682,Mohanad Lasheen,2026,EGYP,44664,False,1,1,0,90,0,0,0,0,0
 479682,Mohanad Lasheen,2026,EGY1,44664,False,8,8,0,701,2,3,8,4,1
 479682,Mohanad Lasheen,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
-479682,Mohanad Lasheen,2026,AFCQ,3672,True,2,2,0,180,0,1,0,0,0
+479682,Mohanad Lasheen,2026,AFCQ,3672,True,4,4,0,351,0,1,0,0,0
 479682,Mohanad Lasheen,2026,ACL,44664,False,4,2,0,180,0,0,0,0,0
-1071774,Otta,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+1071774,Otta,2026,EGYP,44664,False,1,1,0,13,0,0,0,0,0
 1071774,Otta,2026,EGY1,44664,False,8,5,0,222,0,0,6,2,1
 1071774,Otta,2026,EGLC,44664,False,2,1,0,90,0,1,0,0,1
 1071774,Otta,2026,ACL,44664,False,4,4,0,142,0,0,0,0,0
 815004,Hamed Hamdan,2026,FS,17758,True,3,3,0,153,0,1,0,0,1
-815004,Hamed Hamdan,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+815004,Hamed Hamdan,2026,EGYP,44664,False,1,1,0,45,0,0,0,0,0
 815004,Hamed Hamdan,2026,EGY1,44664,False,8,4,0,103,0,0,4,1,0
 815004,Hamed Hamdan,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 815004,Hamed Hamdan,2026,ACL,44664,False,4,2,0,59,0,0,0,0,0
@@ -729,7 +752,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 727157,Fiston Mayele,2026,LPL,13504,False,3,0,0,0,0,0,0,0,0
 727157,Fiston Mayele,2026,FS,3854,True,2,0,0,0,0,0,0,0,0
 727157,Fiston Mayele,2026,CAFC,13504,False,4,0,0,0,0,0,0,0,0
-727157,Fiston Mayele,2026,AFCQ,3854,True,3,1,0,1,0,0,1,0,0
+727157,Fiston Mayele,2026,AFCQ,3854,True,4,1,0,1,0,0,1,0,0
 456893,Ewerton,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
 456893,Ewerton,2026,EGY1,44664,False,8,1,0,14,0,0,0,0,0
 456893,Ewerton,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
@@ -738,20 +761,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1058852,Zalaka,2026,EGY1,44664,False,8,7,0,271,2,1,6,3,2
 1058852,Zalaka,2026,EGLC,44664,False,2,1,0,65,0,0,0,0,0
 1058852,Zalaka,2026,ACL,44664,False,4,2,0,82,1,0,0,0,0
-305287,Mostafa Fathi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+305287,Mostafa Fathi,2026,EGYP,44664,False,1,1,0,77,1,0,0,0,0
 305287,Mostafa Fathi,2026,EGY1,44664,False,8,8,0,416,0,0,15,1,1
 305287,Mostafa Fathi,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 305287,Mostafa Fathi,2026,ACL,44664,False,4,2,0,152,1,0,0,0,0
-1252820,Odeh Fakhoury,2026,FS,15737,True,2,1,0,65,0,0,0,0,0
-1252820,Odeh Fakhoury,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+1252820,Odeh Fakhoury,2026,FS,15737,True,3,2,0,66,0,0,0,0,0
+1252820,Odeh Fakhoury,2026,EGYP,44664,False,1,1,0,61,0,0,0,0,0
 1252820,Odeh Fakhoury,2026,EGY1,44664,False,8,3,0,181,2,0,4,2,0
 1252820,Odeh Fakhoury,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 1252820,Odeh Fakhoury,2026,ACL,44664,False,4,1,0,14,0,0,0,0,0
-311125,Youssef Obama,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+311125,Youssef Obama,2026,EGYP,44664,False,1,1,0,90,1,0,0,0,0
 311125,Youssef Obama,2026,EGY1,44664,False,8,7,0,464,2,1,11,2,1
 311125,Youssef Obama,2026,EGLC,44664,False,2,1,0,16,0,0,0,0,1
 311125,Youssef Obama,2026,ACL,44664,False,4,4,0,276,1,2,0,0,0
-540300,Abdelrahman Magdi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+540300,Abdelrahman Magdi,2026,EGYP,44664,False,1,1,0,13,0,0,0,0,0
 540300,Abdelrahman Magdi,2026,EGY1,44664,False,8,1,0,21,0,0,0,0,0
 540300,Abdelrahman Magdi,2026,EGLC,44664,False,2,1,0,80,1,0,0,0,0
 540300,Abdelrahman Magdi,2026,ACL,44664,False,4,4,0,329,2,1,0,0,1
@@ -873,7 +896,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 435929,Hassan Ali,2026,EGYP,9094,False,1,0,0,0,0,0,0,0,0
 435929,Hassan Ali,2026,EGY1,9094,False,8,3,0,180,0,0,0,0,3
 435929,Hassan Ali,2026,EGLC,9094,False,2,1,0,90,0,0,0,0,0
-896713,Ameed Sawafta,2026,FS,17758,True,3,3,0,207,0,0,0,0,0
+896713,Ameed Sawafta,2026,FS,17758,True,5,4,0,272,0,0,0,0,1
 896713,Ameed Sawafta,2026,EGYP,9094,False,1,0,0,0,0,0,0,0,0
 896713,Ameed Sawafta,2026,EGY1,9094,False,8,0,0,0,0,0,0,0,0
 896713,Ameed Sawafta,2026,EGLC,9094,False,2,0,0,0,0,0,0,0,0
@@ -899,7 +922,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 854891,Mounder Temine,2026,EGYP,9094,False,1,0,0,0,0,0,0,0,0
 854891,Mounder Temine,2026,EGY1,9094,False,8,2,0,66,0,0,0,0,0
 854891,Mounder Temine,2026,EGLC,9094,False,2,1,0,90,0,0,0,0,0
-854891,Mounder Temine,2026,AFCQ,3614,True,2,0,0,0,0,0,0,0,0
+854891,Mounder Temine,2026,AFCQ,3614,True,3,0,0,0,0,0,0,0,0
 320078,Karim Bambo,2026,EGYP,9094,False,1,0,0,0,0,0,0,0,0
 320078,Karim Bambo,2026,EGY1,9094,False,8,4,0,52,0,0,0,0,0
 320078,Karim Bambo,2026,EGLC,9094,False,2,0,0,0,0,0,0,0,0
@@ -991,7 +1014,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 494350,Yaw Annor,2026,EGYP,62448,False,1,0,0,0,0,0,0,0,0
 494350,Yaw Annor,2026,EGY1,62448,False,8,8,0,361,0,1,18,3,0
 494350,Yaw Annor,2026,EGLC,62448,False,1,0,0,0,0,0,0,0,0
-494350,Yaw Annor,2026,AFCQ,3815,True,1,0,0,0,0,0,0,0,0
+494350,Yaw Annor,2026,AFCQ,3815,True,4,0,0,0,0,0,0,0,0
 842577,Mostafa Shalaby,2026,EGYP,62448,False,1,0,0,0,0,0,0,0,0
 842577,Mostafa Shalaby,2026,EGY1,62448,False,8,7,0,377,0,1,14,4,1
 842577,Mostafa Shalaby,2026,EGLC,62448,False,1,0,0,0,0,0,0,0,0
@@ -1030,14 +1053,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 801850,Ali Lala,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 801850,Ali Lala,2026,EGY1,23387,False,8,6,0,337,0,0,0,0,0
 801850,Ali Lala,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-844742,Ahmed Castelo,2026,EGYP,47010,False,1,0,1,0,0,0,0,0,0
-844742,Ahmed Castelo,2026,EGY1,47010,False,8,0,8,0,0,0,0,0,0
-844742,Ahmed Castelo,2026,EGLC,47010,False,2,0,2,0,0,0,0,0,0
-844742,Ahmed Castelo,2026,CAFC,47010,False,4,0,4,0,0,0,0,0,0
 554995,Abdallah Bakri,2026,EGYP,47010,False,1,0,0,0,0,0,0,0,0
 554995,Abdallah Bakri,2026,EGY1,47010,False,8,7,0,585,0,0,1,0,2
 554995,Abdallah Bakri,2026,EGLC,47010,False,2,1,0,45,0,0,0,0,0
 554995,Abdallah Bakri,2026,CAFC,47010,False,4,2,0,180,0,0,0,0,0
+844742,Ahmed Castelo,2026,EGYP,47010,False,1,0,1,0,0,0,0,0,0
+844742,Ahmed Castelo,2026,EGY1,47010,False,8,0,8,0,0,0,0,0,0
+844742,Ahmed Castelo,2026,EGLC,47010,False,2,0,2,0,0,0,0,0,0
+844742,Ahmed Castelo,2026,CAFC,47010,False,4,0,4,0,0,0,0,0,0
 789007,Mohamed Ashraf,2026,EGYP,47010,False,1,0,1,0,0,0,0,0,0
 789007,Mohamed Ashraf,2026,EGY1,47010,False,8,0,8,0,0,0,0,0,0
 789007,Mohamed Ashraf,2026,EGLC,47010,False,2,0,2,0,0,0,0,0,0
@@ -1059,16 +1082,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1232890,Abdallah Bostangy,2026,EGLC,47010,False,2,0,0,0,0,0,0,0,0
 1232890,Abdallah Bostangy,2026,CAFC,47010,False,4,0,0,0,0,0,0,0,0
 729390,Mahmoud Saber,2026,FS,3672,True,1,0,0,0,0,0,0,0,0
-729390,Mahmoud Saber,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+729390,Mahmoud Saber,2026,EGYP,44664,False,1,1,0,90,0,0,0,0,0
 729390,Mahmoud Saber,2026,EGY1,44664,False,8,7,0,418,2,0,17,8,0
 729390,Mahmoud Saber,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
-729390,Mahmoud Saber,2026,AFCQ,3672,True,2,1,0,40,0,0,3,0,0
+729390,Mahmoud Saber,2026,AFCQ,3672,True,4,3,0,93,0,0,4,0,0
 729390,Mahmoud Saber,2026,ACL,44664,False,4,3,0,231,2,0,0,0,1
 1164688,Maata Magassa,2026,EGYP,47010,False,1,0,1,0,0,0,0,0,0
 1164688,Maata Magassa,2026,EGY1,47010,False,8,2,6,100,0,0,0,0,0
 1164688,Maata Magassa,2026,EGLC,47010,False,2,0,2,0,0,0,0,0,0
 1164688,Maata Magassa,2026,CAFC,47010,False,4,1,3,13,0,0,0,0,0
-1164688,Maata Magassa,2026,AFCQ,14238,True,2,0,2,0,0,0,0,0,0
+1164688,Maata Magassa,2026,AFCQ,14238,True,4,2,2,104,0,0,2,1,1
 710318,Ahmed El-Saghiri,2026,EGYP,47010,False,1,0,0,0,0,0,0,0,0
 710318,Ahmed El-Saghiri,2026,EGY1,47010,False,8,5,0,383,0,0,0,0,0
 710318,Ahmed El-Saghiri,2026,EGLC,47010,False,2,0,0,0,0,0,0,0,0
@@ -1134,7 +1157,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 731665,Mohamed Samir,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 731665,Mohamed Samir,2026,EGY1,9218,False,8,0,0,0,0,0,0,0,0
 731665,Mohamed Samir,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
-1425842,Mohamed Sharkia,2026,FS,16121,True,2,0,0,0,0,0,0,0,0
+1425842,Mohamed Sharkia,2026,FS,16121,True,3,1,0,90,0,0,0,0,0
 1425842,Mohamed Sharkia,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 1425842,Mohamed Sharkia,2026,EGY1,9218,False,8,3,0,231,0,0,0,0,0
 1425842,Mohamed Sharkia,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -1185,7 +1208,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1420914,Aqtay Abdallah,2026,EGY1,7,False,8,3,0,14,0,0,1,0,0
 1420914,Aqtay Abdallah,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
 1420914,Aqtay Abdallah,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
-1300228,Ali Ehab,2026,FS,16121,True,4,0,0,0,0,0,0,0,0
+1300228,Ali Ehab,2026,FS,16121,True,6,0,0,0,0,0,0,0,0
 1300228,Ali Ehab,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 1300228,Ali Ehab,2026,EGY1,9218,False,8,8,0,459,1,0,5,3,1
 1300228,Ali Ehab,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -1238,6 +1261,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1376641,Moamen Sherif,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1376641,Moamen Sherif,2026,EGY1,3963,False,8,1,0,24,0,0,0,0,0
 1376641,Moamen Sherif,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
+342630,Body,2026,EGYP,47058,False,2,0,0,0,0,0,0,0,0
 434332,Mohamed Tony,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 434332,Mohamed Tony,2026,EGY1,3963,False,8,7,0,422,1,0,3,1,1
 434332,Mohamed Tony,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
@@ -1252,12 +1276,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 789041,Abdelghani Mohamed,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 789041,Abdelghani Mohamed,2026,EGY1,23387,False,8,6,0,362,0,0,1,0,0
 789041,Abdelghani Mohamed,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-1451490,Ahmed Nagy,2026,FS,16121,True,4,0,0,0,0,0,0,0,0
+1451490,Ahmed Nagy,2026,FS,16121,True,6,0,0,0,0,0,0,0,0
 1451490,Ahmed Nagy,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1451490,Ahmed Nagy,2026,EGY1,3963,False,8,1,0,24,0,0,1,1,0
 1451490,Ahmed Nagy,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
 801352,Naser Naser,2026,EGYP,28198,False,3,0,0,0,0,0,0,0,0
-215505,Mabululu,2026,AFCQ,3585,True,2,2,0,152,1,0,6,2,0
+215505,Mabululu,2026,AFCQ,3585,True,4,4,0,250,1,0,9,2,0
 215505,Mabululu,2026,ACL,88756,False,4,4,0,360,4,0,0,0,0
 405724,John Ebuka,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 405724,John Ebuka,2026,EGY1,3963,False,8,8,0,94,1,1,8,3,1
@@ -1369,17 +1393,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 304196,Mohamed Dabash,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 304196,Mohamed Dabash,2026,EGY1,39575,False,8,5,0,450,0,0,5,2,1
 304196,Mohamed Dabash,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
+983774,Ahmed Hakam,2026,EGYP,13447,False,3,0,0,0,0,0,0,0,0
 1111927,Attidjikou Samadou,2026,FS,3955,True,1,1,0,1,0,0,0,0,0
 1111927,Attidjikou Samadou,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 1111927,Attidjikou Samadou,2026,EGY1,23387,False,8,6,0,352,0,0,3,0,0
 1111927,Attidjikou Samadou,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-1111927,Attidjikou Samadou,2026,AFCQ,3955,True,3,2,0,11,0,0,0,0,0
+1111927,Attidjikou Samadou,2026,AFCQ,3955,True,4,2,0,11,0,0,0,0,0
 376717,Samir Fekri,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 376717,Samir Fekri,2026,EGY1,23387,False,8,8,0,665,0,1,8,2,2
 376717,Samir Fekri,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-975371,Ahmed Fawzi,2026,EGY1,44664,False,2,0,0,0,0,0,0,0,0
-975371,Ahmed Fawzi,2026,EGLC,44664,False,1,1,0,90,0,0,0,0,1
-975371,Ahmed Fawzi,2026,ACL,44664,False,1,0,0,0,0,0,0,0,0
+975371,Ahmed Fawzi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+975371,Ahmed Fawzi,2026,EGY1,44664,False,5,0,0,0,0,0,0,0,0
+975371,Ahmed Fawzi,2026,EGLC,44664,False,2,1,0,90,0,0,0,0,1
+975371,Ahmed Fawzi,2026,ACL,44664,False,3,0,0,0,0,0,0,0,0
 340489,Khaled El Ghandour,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 340489,Khaled El Ghandour,2026,EGY1,23387,False,8,8,0,641,0,1,8,1,0
 340489,Khaled El Ghandour,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
@@ -1395,7 +1421,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1104545,Bibo Ahmed Hassan,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1104545,Bibo Ahmed Hassan,2026,EGY1,3963,False,8,0,0,0,0,0,0,0,0
 1104545,Bibo Ahmed Hassan,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
-1154290,Ahmed Ali Amin,2026,FS,16121,True,4,0,0,0,0,0,0,0,0
+1154290,Ahmed Ali Amin,2026,FS,16121,True,6,0,0,0,0,0,0,0,0
 1154290,Ahmed Ali Amin,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 1154290,Ahmed Ali Amin,2026,EGY1,23387,False,8,0,0,0,0,0,0,0,0
 1154290,Ahmed Ali Amin,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
@@ -1416,7 +1442,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1521347,Emmanuel Nweke,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 1521347,Emmanuel Nweke,2026,EGY1,23387,False,8,3,0,46,0,0,0,0,0
 1521347,Emmanuel Nweke,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-578132,Stephen Amankona,2026,GHPL,28374,False,10,10,0,879,6,0,0,0,0
+578132,Stephen Amankona,2026,GHPL,28374,False,11,10,0,879,6,0,0,0,0
 628450,Ahmed Khaled,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 628450,Ahmed Khaled,2026,EGY1,39575,False,8,5,0,275,0,0,1,0,0
 628450,Ahmed Khaled,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
@@ -1508,10 +1534,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1094321,Amadou Djoulde Bah,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 1094321,Amadou Djoulde Bah,2026,EGY1,10957,False,8,3,0,121,0,0,2,0,0
 1094321,Amadou Djoulde Bah,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
+385713,Momen Atef,2026,EGYP,10765,False,2,0,0,0,0,0,0,0,0
 496273,Mostafa El Badry,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 496273,Mostafa El Badry,2026,EGY1,10957,False,8,7,0,519,3,1,9,3,1
 496273,Mostafa El Badry,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
-842530,Badr Mousa,2026,FS,17758,True,3,2,0,63,0,0,0,0,0
+842530,Badr Mousa,2026,FS,17758,True,5,3,0,120,0,0,0,0,0
 842530,Badr Mousa,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 842530,Badr Mousa,2026,EGY1,10957,False,8,8,0,536,1,1,25,3,1
 842530,Badr Mousa,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
@@ -1554,7 +1581,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1269142,Hamdi Marcelo,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 1269142,Hamdi Marcelo,2026,EGY1,68770,False,8,1,0,2,0,0,0,0,0
 1269142,Hamdi Marcelo,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
-403434,Mahmoud Shaaban,2026,EGYP,43316,False,2,0,0,0,0,0,0,0,0
+403434,Mahmoud Shaaban,2026,EGYP,43316,False,3,0,0,0,0,0,0,0,0
 1312799,Tarek Mohamed,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 1312799,Tarek Mohamed,2026,EGY1,68770,False,8,3,0,144,0,0,0,0,0
 1312799,Tarek Mohamed,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
@@ -1668,7 +1695,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 953231,Ahmed Etman,2026,EGYP,13446,False,1,0,0,0,0,0,0,0,0
 953231,Ahmed Etman,2026,EGY1,13446,False,8,5,0,232,0,0,4,1,1
 953231,Ahmed Etman,2026,EGLC,13446,False,1,0,0,0,0,0,0,0,0
-1493134,Ahmed Yasser,2026,FS,16121,True,1,0,0,0,0,0,0,0,0
+1493134,Ahmed Yasser,2026,FS,16121,True,2,1,0,90,0,0,0,0,0
 1493134,Ahmed Yasser,2026,EGYP,13446,False,1,0,0,0,0,0,0,0,0
 1493134,Ahmed Yasser,2026,EGY1,13446,False,8,4,0,175,0,0,4,0,1
 1493134,Ahmed Yasser,2026,EGLC,13446,False,1,0,0,0,0,0,0,0,0
@@ -1747,7 +1774,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 444637,Mohamed Magdy,2026,EGYP,9219,False,1,0,0,0,0,0,0,0,0
 444637,Mohamed Magdy,2026,EGY1,9219,False,8,0,0,0,0,0,0,0,0
 444637,Mohamed Magdy,2026,EGLC,9219,False,1,0,0,0,0,0,0,0,0
-921590,Khaled Awad,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
+921590,Khaled Awad,2026,EGYP,44664,False,1,1,0,13,0,0,0,0,0
 921590,Khaled Awad,2026,EGY1,44664,False,8,2,0,33,0,0,0,0,0
 921590,Khaled Awad,2026,EGLC,44664,False,2,1,0,90,0,0,0,0,0
 921590,Khaled Awad,2026,ACL,44664,False,4,2,0,135,0,0,0,0,0
@@ -1780,6 +1807,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 564524,Houssem Eddine Souissi,2026,EGY1,9219,False,8,1,0,3,0,0,0,0,0
 564524,Houssem Eddine Souissi,2026,EGLC,9219,False,1,0,0,0,0,0,0,0,0
 1378901,Ghaith Al-Madadha,2026,JO1L,13592,False,8,1,0,10,0,0,0,0,1
+1378901,Ghaith Al-Madadha,2026,FS,15737,True,1,1,0,15,0,1,0,0,0
 1378901,Ghaith Al-Madadha,2026,ACL2,13592,False,4,4,0,278,0,0,2,0,1
 1512633,Yehia Mostafa,2026,EGYP,9219,False,1,0,0,0,0,0,0,0,0
 1512633,Yehia Mostafa,2026,EGY1,9219,False,8,7,1,509,0,0,5,0,2
@@ -1813,7 +1841,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1307898,Mohamed Alaa,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 1307898,Mohamed Alaa,2026,EGY1,57439,False,8,4,0,360,0,0,0,0,0
 1307898,Mohamed Alaa,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
-1307898,Mohamed Alaa,2026,AFCQ,3672,True,2,0,0,0,0,0,0,0,0
+1307898,Mohamed Alaa,2026,AFCQ,3672,True,4,0,0,0,0,0,0,0,0
 261434,Ahmed Masoud,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 261434,Ahmed Masoud,2026,EGY1,20572,False,8,3,0,256,0,0,0,0,0
 261434,Ahmed Masoud,2026,EGLC,20572,False,1,1,0,14,0,0,0,0,0
@@ -1832,7 +1860,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072392,Alpha Turay,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 1072392,Alpha Turay,2026,EGY1,20572,False,8,4,0,262,0,0,0,0,0
 1072392,Alpha Turay,2026,EGLC,20572,False,1,0,0,0,0,0,0,0,0
-1072392,Alpha Turay,2026,AFCQ,6187,True,3,2,0,172,0,0,0,0,0
+1072392,Alpha Turay,2026,AFCQ,6187,True,4,2,0,172,0,0,0,0,0
 936095,Saber El Shimi,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 936095,Saber El Shimi,2026,EGY1,20572,False,8,7,0,578,1,0,5,1,1
 936095,Saber El Shimi,2026,EGLC,20572,False,1,0,0,0,0,0,0,0,0
@@ -1869,7 +1897,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 515552,Ali El Zahdi,2026,EGLC,20572,False,1,1,0,78,0,0,0,0,0
 724403,Arnaud Randrianantenaina,2026,ROMP,72860,False,4,1,0,77,0,0,0,0,0
 724403,Arnaud Randrianantenaina,2026,RO2,72860,False,13,6,0,341,0,0,0,0,0
-724403,Arnaud Randrianantenaina,2026,AFCQ,14635,True,3,1,0,25,0,0,0,0,0
+724403,Arnaud Randrianantenaina,2026,AFCQ,14635,True,4,2,0,54,0,0,0,0,0
 149532,Marwan Mohsen,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 149532,Marwan Mohsen,2026,EGY1,20572,False,8,8,0,535,1,0,12,6,1
 149532,Marwan Mohsen,2026,EGLC,20572,False,1,1,0,90,0,0,0,0,0
@@ -1946,54 +1974,29 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1307925,Omar Ibrahim,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 1307925,Omar Ibrahim,2026,EGY1,39575,False,8,7,0,507,1,0,17,7,2
 1307925,Omar Ibrahim,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
+1148737,Adham Hamada,2026,EGYP,43316,False,3,0,0,0,0,0,0,0,0
+863679,Mohamed Essam,2026,EGYP,10765,False,2,0,0,0,0,0,0,0,0
 1492495,Mohamed Camara,2026,EGY1,39575,False,4,4,0,179,0,0,2,0,0
 1492495,Mohamed Camara,2026,EGLC,39575,False,1,0,0,0,0,0,0,0,0
 479686,Hesham Ramadan,2026,EGYP,39575,False,1,0,0,0,0,0,0,0,0
 479686,Hesham Ramadan,2026,EGY1,39575,False,8,0,0,0,0,0,0,0,0
 479686,Hesham Ramadan,2026,EGLC,39575,False,2,0,0,0,0,0,0,0,0
 1309197,Mohamed Magdy,2026,EGY1,39575,False,1,1,0,32,0,0,1,0,0
-1254974,Omar Abdelaziz,2026,FS,16121,True,5,5,0,450,0,0,0,0,0
+1254974,Omar Abdelaziz,2026,FS,16121,True,6,5,0,450,0,0,0,0,0
 1254974,Omar Abdelaziz,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1254974,Omar Abdelaziz,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
 1254974,Omar Abdelaziz,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
 1254974,Omar Abdelaziz,2026,ACL,664,False,4,0,0,0,0,0,0,0,0
-1489441,Ahmed Safwat,2026,FS,30403,True,11,9,0,648,1,5,0,0,0
+1489441,Ahmed Safwat,2026,FS,30403,True,14,10,0,738,1,5,0,0,0
 1489441,Ahmed Safwat,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1489441,Ahmed Safwat,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
 1489441,Ahmed Safwat,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
 1489441,Ahmed Safwat,2026,ACL,664,False,4,0,0,0,0,0,0,0,0
-1530243,Adham Hasseib,2026,FS,30403,True,11,9,0,349,1,0,0,0,1
+1530243,Adham Hasseib,2026,FS,30403,True,14,10,0,439,1,0,0,0,1
 1530243,Adham Hasseib,2026,EGYP,664,False,1,0,0,0,0,0,0,0,0
 1530243,Adham Hasseib,2026,EGY1,664,False,8,0,0,0,0,0,0,0,0
 1530243,Adham Hasseib,2026,EGLC,664,False,2,1,0,90,0,0,0,0,0
 1530243,Adham Hasseib,2026,ACL,664,False,4,0,0,0,0,0,0,0,0
-854382,Mounsef Bakrar,2026,FS,3614,True,1,1,0,61,0,0,0,0,0
-854382,Mounsef Bakrar,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
-854382,Mounsef Bakrar,2026,EGY1,7,False,8,8,0,472,1,0,14,5,0
-854382,Mounsef Bakrar,2026,EGLC,7,False,2,1,0,1,0,0,0,0,0
-854382,Mounsef Bakrar,2026,CLQ,419,False,1,0,0,0,0,0,0,0,0
-854382,Mounsef Bakrar,2026,CAFC,7,False,2,1,0,90,0,0,0,0,0
-854382,Mounsef Bakrar,2026,AFCQ,3614,True,2,1,0,26,0,0,0,0,0
-913361,Soufiane Benjdida,2026,EGYP,7,False,1,1,0,15,0,0,0,0,0
-913361,Soufiane Benjdida,2026,EGY1,7,False,8,8,0,395,0,2,9,5,0
-913361,Soufiane Benjdida,2026,EGLC,7,False,2,2,0,153,1,0,0,0,0
-913361,Soufiane Benjdida,2026,CAFC,7,False,2,2,0,116,0,0,0,0,0
-689431,Reda Slim,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
-689431,Reda Slim,2026,EGY1,7,False,8,0,4,0,0,0,0,0,0
-689431,Reda Slim,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
-689431,Reda Slim,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
-416148,Akram Tawfik,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
-416148,Akram Tawfik,2026,EGY1,7,False,8,3,2,270,0,0,1,1,0
-416148,Akram Tawfik,2026,EGLC,7,False,2,2,0,135,0,0,0,0,0
-416148,Akram Tawfik,2026,CAFC,7,False,2,2,0,180,0,1,0,0,1
-950684,Cristo,2026,EGYP,7,False,1,0,1,0,0,0,0,0,0
-950684,Cristo,2026,EGY1,7,False,8,0,8,0,0,0,0,0,0
-950684,Cristo,2026,EGLC,7,False,2,0,2,0,0,0,0,0,0
-950684,Cristo,2026,CAFC,7,False,2,0,2,0,0,0,0,0,0
-1330625,Omar Moawad,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
-1330625,Omar Moawad,2026,EGY1,7,False,8,0,4,0,0,0,0,0,0
-1330625,Omar Moawad,2026,EGLC,7,False,2,2,0,27,1,0,0,0,0
-1330625,Omar Moawad,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
 1036407,Eyad El Askalany,2026,RU1,1083,False,1,0,0,0,0,0,0,0,0
 1036407,Eyad El Askalany,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
 1036407,Eyad El Askalany,2026,EGY1,44664,False,8,4,0,280,0,0,4,2,0
@@ -2014,11 +2017,39 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1401984,Hassan Tarek,2026,EGY1,44664,False,8,0,0,0,0,0,0,0,0
 1401984,Hassan Tarek,2026,EGLC,44664,False,2,0,0,0,0,0,0,0,0
 1401984,Hassan Tarek,2026,ACL,44664,False,4,0,0,0,0,0,0,0,0
-1530247,Ziad Saoudi,2026,FS,30403,True,11,10,0,342,2,5,0,0,0
+1530247,Ziad Saoudi,2026,FS,30403,True,14,10,0,342,2,5,0,0,0
 1530247,Ziad Saoudi,2026,EGYP,44664,False,1,0,0,0,0,0,0,0,0
 1530247,Ziad Saoudi,2026,EGY1,44664,False,8,0,0,0,0,0,0,0,0
 1530247,Ziad Saoudi,2026,EGLC,44664,False,2,1,0,25,0,0,0,0,0
 1530247,Ziad Saoudi,2026,ACL,44664,False,4,0,0,0,0,0,0,0,0
+854382,Mounsef Bakrar,2026,FS,3614,True,1,1,0,61,0,0,0,0,0
+854382,Mounsef Bakrar,2026,EGYP,7,False,1,1,0,75,0,0,0,0,0
+854382,Mounsef Bakrar,2026,EGY1,7,False,8,8,0,472,1,0,14,5,0
+854382,Mounsef Bakrar,2026,EGLC,7,False,2,1,0,1,0,0,0,0,0
+854382,Mounsef Bakrar,2026,CLQ,419,False,1,0,0,0,0,0,0,0,0
+854382,Mounsef Bakrar,2026,CAFC,7,False,2,1,0,90,0,0,0,0,0
+854382,Mounsef Bakrar,2026,AFCQ,3614,True,3,1,0,26,0,0,0,0,0
+913361,Soufiane Benjdida,2026,EGYP,7,False,1,1,0,15,0,0,0,0,0
+913361,Soufiane Benjdida,2026,EGY1,7,False,8,8,0,395,0,2,9,5,0
+913361,Soufiane Benjdida,2026,EGLC,7,False,2,2,0,153,1,0,0,0,0
+913361,Soufiane Benjdida,2026,CAFC,7,False,2,2,0,116,0,0,0,0,0
+689431,Reda Slim,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+689431,Reda Slim,2026,EGY1,7,False,8,0,4,0,0,0,0,0,0
+689431,Reda Slim,2026,EGLC,7,False,2,0,0,0,0,0,0,0,0
+689431,Reda Slim,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
+416148,Akram Tawfik,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+416148,Akram Tawfik,2026,EGY1,7,False,8,3,2,270,0,0,1,1,0
+416148,Akram Tawfik,2026,EGLC,7,False,2,2,0,135,0,0,0,0,0
+416148,Akram Tawfik,2026,CAFC,7,False,2,2,0,180,0,1,0,0,1
+950684,Cristo,2026,EGYP,7,False,1,0,1,0,0,0,0,0,0
+950684,Cristo,2026,EGY1,7,False,8,0,8,0,0,0,0,0,0
+950684,Cristo,2026,EGLC,7,False,2,0,2,0,0,0,0,0,0
+950684,Cristo,2026,CAFC,7,False,2,0,2,0,0,0,0,0,0
+1330625,Omar Moawad,2026,EGYP,7,False,1,0,0,0,0,0,0,0,0
+1330625,Omar Moawad,2026,EGY1,7,False,8,0,4,0,0,0,0,0,0
+1330625,Omar Moawad,2026,EGLC,7,False,2,2,0,27,1,0,0,0,0
+1330625,Omar Moawad,2026,CAFC,7,False,2,0,0,0,0,0,0,0,0
+430824,Peter Gwargis,2026,FS,3560,True,2,1,0,45,0,0,0,0,0
 430824,Peter Gwargis,2026,EGYP,57439,False,1,0,0,0,0,0,0,0,0
 430824,Peter Gwargis,2026,EGY1,57439,False,8,4,0,266,1,0,7,4,0
 430824,Peter Gwargis,2026,EGLC,57439,False,2,0,0,0,0,0,0,0,0
@@ -2075,6 +2106,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 807690,Marwane Hajij,2026,EGY1,47010,False,8,6,0,246,0,0,5,0,1
 807690,Marwane Hajij,2026,EGLC,47010,False,2,1,0,73,1,0,0,0,0
 807690,Marwane Hajij,2026,CAFC,47010,False,4,2,0,152,0,0,0,0,0
+1168851,Omar Khedr,2026,FS,30951,True,1,0,0,0,0,0,0,0,0
 1168851,Omar Khedr,2026,EGYP,47010,False,1,0,0,0,0,0,0,0,0
 1168851,Omar Khedr,2026,EGY1,47010,False,8,2,0,43,1,0,2,1,0
 1168851,Omar Khedr,2026,EGLC,47010,False,2,0,0,0,0,0,0,0,0
@@ -2092,11 +2124,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 874466,Mostafa Fawzy,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 874466,Mostafa Fawzy,2026,EGY1,9218,False,8,0,0,0,0,0,0,0,0
 874466,Mostafa Fawzy,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
-1259090,Anas Roshdy,2026,FS,16121,True,5,4,0,262,1,0,0,0,2
+1259090,Anas Roshdy,2026,FS,16121,True,6,5,0,352,1,0,0,0,2
 1259090,Anas Roshdy,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 1259090,Anas Roshdy,2026,EGY1,9218,False,8,1,0,1,0,0,0,0,0
 1259090,Anas Roshdy,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
-1259185,Omar Ahmed El Azab,2026,FS,16121,True,5,5,0,433,0,1,0,0,1
+1259185,Omar Ahmed El Azab,2026,FS,16121,True,6,5,0,433,0,1,0,0,1
 1259185,Omar Ahmed El Azab,2026,EGYP,9218,False,1,0,0,0,0,0,0,0,0
 1259185,Omar Ahmed El Azab,2026,EGY1,9218,False,1,1,0,4,0,0,0,0,0
 1259185,Omar Ahmed El Azab,2026,EGLC,9218,False,1,0,0,0,0,0,0,0,0
@@ -2124,11 +2156,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1492561,Mazen Osama,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 1492561,Mazen Osama,2026,EGY1,3963,False,8,0,0,0,0,0,0,0,0
 1492561,Mazen Osama,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
-863075,Kenneth Semakula,2026,FS,13497,True,2,0,0,0,0,0,0,0,0
+863075,Kenneth Semakula,2026,FS,13497,True,2,1,0,90,0,0,0,0,0
 863075,Kenneth Semakula,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 863075,Kenneth Semakula,2026,EGY1,3963,False,8,5,0,254,0,0,3,0,1
 863075,Kenneth Semakula,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
-863075,Kenneth Semakula,2026,AFCQ,13497,True,2,2,0,180,0,0,1,0,0
+863075,Kenneth Semakula,2026,AFCQ,13497,True,4,3,0,270,0,0,1,0,0
 933697,Ahmed El Sayed,2026,EGYP,3963,False,1,0,0,0,0,0,0,0,0
 933697,Ahmed El Sayed,2026,EGY1,3963,False,8,0,0,0,0,0,0,0,0
 933697,Ahmed El Sayed,2026,EGLC,3963,False,1,0,0,0,0,0,0,0,0
@@ -2146,7 +2178,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1072297,Dokou Dodo,2026,EGYP,3369,False,1,0,0,0,0,0,0,0,0
 1072297,Dokou Dodo,2026,EGY1,3369,False,8,8,0,594,0,0,3,0,2
 1072297,Dokou Dodo,2026,EGLC,3369,False,2,0,0,0,0,0,0,0,0
-1072297,Dokou Dodo,2026,AFCQ,3955,True,3,3,0,33,0,0,1,0,0
+1072297,Dokou Dodo,2026,AFCQ,3955,True,4,4,0,34,0,0,1,0,0
 1558848,Youssef Safina,2026,EGYP,3369,False,1,0,0,0,0,0,0,0,0
 1558848,Youssef Safina,2026,EGY1,3369,False,8,1,0,10,0,0,0,0,0
 1558848,Youssef Safina,2026,EGLC,3369,False,2,1,0,45,0,0,0,0,0
@@ -2156,11 +2188,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 702354,Idrissa Thiam,2026,EGYP,3369,False,1,0,0,0,0,0,0,0,0
 702354,Idrissa Thiam,2026,EGY1,3369,False,8,8,0,601,4,3,7,4,2
 702354,Idrissa Thiam,2026,EGLC,3369,False,2,1,0,90,0,0,0,0,0
-702354,Idrissa Thiam,2026,AFCQ,14238,True,2,1,0,66,0,0,1,0,0
+702354,Idrissa Thiam,2026,AFCQ,14238,True,4,3,0,142,0,1,3,0,0
 1501111,Mohamed Refaat,2026,EGYP,3369,False,1,0,0,0,0,0,0,0,0
 1501111,Mohamed Refaat,2026,EGY1,3369,False,8,4,0,126,0,0,5,1,0
 1501111,Mohamed Refaat,2026,EGLC,3369,False,2,1,0,60,0,0,0,0,0
 887987,Anas Baniouwda,2026,FS,79972,True,5,0,0,0,0,0,0,0,0
+887987,Anas Baniouwda,2026,FS,17758,True,2,2,0,100,0,0,0,0,0
 887987,Anas Baniouwda,2026,EGYP,3369,False,1,0,0,0,0,0,0,0,0
 887987,Anas Baniouwda,2026,EGY1,3369,False,8,3,0,148,1,0,2,2,0
 887987,Anas Baniouwda,2026,EGLC,3369,False,2,2,0,57,0,0,0,0,0
@@ -2178,7 +2211,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 958433,Clement Niyigena,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 958433,Clement Niyigena,2026,EGY1,23387,False,8,1,0,5,0,0,0,0,0
 958433,Clement Niyigena,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
-958433,Clement Niyigena,2026,AFCQ,3855,True,2,0,0,0,0,0,0,0,0
+958433,Clement Niyigena,2026,AFCQ,3855,True,4,0,0,0,0,0,0,0,0
 1238126,Hady Amer,2026,EGYP,23387,False,1,0,0,0,0,0,0,0,0
 1238126,Hady Amer,2026,EGY1,23387,False,8,0,0,0,0,0,0,0,0
 1238126,Hady Amer,2026,EGLC,23387,False,1,0,0,0,0,0,0,0,0
@@ -2188,7 +2221,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1492546,Omar Diyaa,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 1492546,Omar Diyaa,2026,EGY1,10957,False,8,3,0,242,0,0,2,1,0
 1492546,Omar Diyaa,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
-1586303,Youssef Abdeltawab,2026,FS,16121,True,1,0,0,0,0,0,0,0,0
+1586303,Youssef Abdeltawab,2026,FS,16121,True,2,0,0,0,0,0,0,0,0
 1586303,Youssef Abdeltawab,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 1586303,Youssef Abdeltawab,2026,EGY1,10957,False,8,8,0,500,0,0,3,0,1
 1586303,Youssef Abdeltawab,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
@@ -2198,7 +2231,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1185060,Abdelrahman Ramadan,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 1185060,Abdelrahman Ramadan,2026,EGY1,10957,False,8,5,0,100,0,0,2,0,0
 1185060,Abdelrahman Ramadan,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
-1076751,Abdulhadi Rashid,2026,FS,17758,True,3,1,0,5,0,0,0,0,0
+1076751,Abdulhadi Rashid,2026,FS,17758,True,5,2,0,38,0,0,0,0,0
 1076751,Abdulhadi Rashid,2026,EGYP,10957,False,1,0,0,0,0,0,0,0,0
 1076751,Abdulhadi Rashid,2026,EGY1,10957,False,8,0,0,0,0,0,0,0,0
 1076751,Abdulhadi Rashid,2026,EGLC,10957,False,1,0,0,0,0,0,0,0,0
@@ -2227,8 +2260,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1495312,Mostafa Gamal,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 1495312,Mostafa Gamal,2026,EGY1,68770,False,8,0,0,0,0,0,0,0,0
 1495312,Mostafa Gamal,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
-1544243,Omar Amin,2026,FS,30403,True,11,0,0,0,0,0,0,0,0
-1544243,Omar Amin,2026,FS,16121,True,5,4,0,100,0,1,0,0,1
+1544243,Omar Amin,2026,FS,30403,True,13,0,0,0,0,0,0,0,0
+1544243,Omar Amin,2026,FS,16121,True,6,5,0,190,0,1,0,0,1
 1544243,Omar Amin,2026,EGYP,68770,False,1,0,0,0,0,0,0,0,0
 1544243,Omar Amin,2026,EGY1,68770,False,8,0,0,0,0,0,0,0,0
 1544243,Omar Amin,2026,EGLC,68770,False,2,0,0,0,0,0,0,0,0
@@ -2267,7 +2300,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1358409,Ahmed Raafat,2026,EGYP,13446,False,1,0,0,0,0,0,0,0,0
 1358409,Ahmed Raafat,2026,EGY1,13446,False,8,0,0,0,0,0,0,0,0
 1358409,Ahmed Raafat,2026,EGLC,13446,False,1,0,0,0,0,0,0,0,0
-1530257,Adel Alaa,2026,FS,30403,True,11,8,0,720,0,0,0,0,0
+1530257,Adel Alaa,2026,FS,30403,True,14,8,0,720,0,0,0,0,0
 1530257,Adel Alaa,2026,EGYP,13446,False,1,0,0,0,0,0,0,0,0
 1530257,Adel Alaa,2026,EGY1,13446,False,8,0,0,0,0,0,0,0,0
 1530257,Adel Alaa,2026,EGLC,13446,False,1,0,0,0,0,0,0,0,0
@@ -2295,8 +2328,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1306502,Komi Arnaud Komlavi,2026,EGYP,9219,False,1,0,0,0,0,0,0,0,0
 1306502,Komi Arnaud Komlavi,2026,EGY1,9219,False,8,7,0,159,0,0,3,0,2
 1306502,Komi Arnaud Komlavi,2026,EGLC,9219,False,1,0,0,0,0,0,0,0,0
-1306502,Komi Arnaud Komlavi,2026,AFCQ,3815,True,2,1,0,55,0,0,1,1,0
-1549615,Ali El Garhi,2026,FS,16121,True,5,4,0,157,0,0,0,0,1
+1306502,Komi Arnaud Komlavi,2026,AFCQ,3815,True,4,1,0,55,0,0,1,1,0
+1549615,Ali El Garhi,2026,FS,16121,True,6,5,0,247,0,0,0,0,1
 1549615,Ali El Garhi,2026,EGYP,9219,False,1,0,0,0,0,0,0,0,0
 1549615,Ali El Garhi,2026,EGY1,9219,False,8,0,0,0,0,0,0,0,0
 1549615,Ali El Garhi,2026,EGLC,9219,False,1,0,0,0,0,0,0,0,0
@@ -2315,7 +2348,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1413663,Wilfried Teukeu,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 1413663,Wilfried Teukeu,2026,EGY1,20572,False,8,4,1,136,0,0,2,1,1
 1413663,Wilfried Teukeu,2026,EGLC,20572,False,1,1,0,45,0,0,0,0,0
-1611534,Ismail Zazaa,2026,FS,16121,True,1,1,0,29,1,0,0,0,0
+1611534,Ismail Zazaa,2026,FS,16121,True,2,1,0,29,1,0,0,0,0
 1611534,Ismail Zazaa,2026,EGYP,20572,False,1,0,0,0,0,0,0,0,0
 1611534,Ismail Zazaa,2026,EGY1,20572,False,8,0,0,0,0,0,0,0,0
 1611534,Ismail Zazaa,2026,EGLC,20572,False,1,1,0,68,0,0,0,0,0

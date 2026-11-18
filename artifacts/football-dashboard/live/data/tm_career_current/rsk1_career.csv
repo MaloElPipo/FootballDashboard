@@ -1,11 +1,11 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
 118451,Tae-hee Nam,2026,AUS1,7831,False,3,3,0,263,1,0,3,2,0
-429677,Tae-wook Jeong,2026,THFA,55265,False,1,1,0,90,0,0,0,0,0
-429677,Tae-wook Jeong,2026,THA1,55265,False,8,8,0,720,0,0,3,0,1
 677470,Yool Heo,2026,RKPO,6505,False,1,0,0,0,0,0,0,0,0
 677470,Yool Heo,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 867382,Oberdan,2026,JAPC,22171,False,2,1,0,47,0,0,0,0,0
 867382,Oberdan,2026,JAP1,22171,False,14,13,1,1072,1,1,13,2,2
+429677,Tae-wook Jeong,2026,THFA,55265,False,1,1,0,90,0,0,0,0,0
+429677,Tae-wook Jeong,2026,THA1,55265,False,8,8,0,720,0,0,3,0,1
 862094,Jun-seok Song,2026,RKPO,6505,False,1,0,0,0,0,0,0,0,0
 1227023,Min-ho Kim,2026,RKPO,78388,False,1,0,0,0,0,0,0,0,0
 1227023,Min-ho Kim,2026,RKPO,38898,False,1,1,0,4,0,0,0,0,0
@@ -16,7 +16,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1172655,Jae-won Heo,2026,19D4,1462,False,10,1,0,90,0,0,1,1,0
 429730,Geon-ung Kim,2026,RKPO,19684,False,1,0,0,0,0,0,0,0,0
 429730,Geon-ung Kim,2026,JAPC,16032,False,2,2,0,171,0,0,0,0,0
-429730,Geon-ung Kim,2026,JAP2,16032,False,16,5,0,99,0,0,0,0,0
+429730,Geon-ung Kim,2026,JAP2,16032,False,17,5,0,99,0,0,0,0,0
 709155,Jae-hyeok Oh,2026,RKPO,6505,False,1,0,0,0,0,0,0,0,0
 709155,Jae-hyeok Oh,2026,RKPO,19684,False,1,0,0,0,0,0,0,0,0
 545501,Ho-jae Lee,2026,L2,105,False,11,11,0,471,2,1,11,4,0
@@ -57,7 +57,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 581977,Min-kyu Song,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
 581977,Min-kyu Song,2026,POPO,982,False,1,1,0,90,0,0,0,0,0
 581977,Min-kyu Song,2026,PO1,982,False,8,6,0,398,0,1,5,2,0
-581977,Min-kyu Song,2026,FS,3589,True,4,2,0,120,0,1,0,0,0
+581977,Min-kyu Song,2026,FS,3589,True,5,2,0,120,0,1,0,0,0
 638570,Min-hyuk Lee,2026,RKPO,3535,False,1,1,0,90,0,0,0,0,0
 1139571,Do-yeon Kim,2026,RLB3,28,False,12,8,0,438,0,1,0,0,0
 1139571,Do-yeon Kim,2026,RKPO,6499,False,1,0,0,0,0,0,0,0,0
@@ -91,7 +91,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 749936,Jeong-won Eo,2026,RKPO,311,False,1,0,0,0,0,0,0,0,0
 749936,Jeong-won Eo,2026,ACLE,311,False,1,0,0,0,0,0,0,0,0
 238030,Sung-yun Gu,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
-238030,Sung-yun Gu,2026,FS,3589,True,4,1,0,6,0,0,0,0,0
+238030,Sung-yun Gu,2026,FS,3589,True,5,1,0,6,0,0,0,0,0
 238030,Sung-yun Gu,2026,ACL2,6500,False,4,0,0,0,0,0,0,0,0
 312424,Hyeon-mu Kang,2026,RKPO,6500,False,1,1,0,45,0,0,0,0,0
 312424,Hyeon-mu Kang,2026,ACL2,6500,False,4,1,0,90,0,0,0,0,0
@@ -100,12 +100,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1004332,Ki-wook Yun,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
 1004332,Ki-wook Yun,2026,ACL2,6500,False,4,0,0,0,0,0,0,0,0
 539961,Yazan Al-Arab,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
-539961,Yazan Al-Arab,2026,FS,15737,True,2,1,0,89,0,0,0,0,0
+539961,Yazan Al-Arab,2026,FS,15737,True,3,2,0,179,0,0,0,0,1
 539961,Yazan Al-Arab,2026,ACL2,6500,False,4,2,0,97,0,0,2,1,1
 256018,Juan Antonio Ros,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
 256018,Juan Antonio Ros,2026,ACL2,6500,False,4,2,0,180,0,0,0,0,0
 630167,Jun Choi,2026,RKPO,6500,False,1,1,0,1,0,0,0,0,0
-630167,Jun Choi,2026,FS,3589,True,4,3,0,34,0,0,0,0,0
+630167,Jun Choi,2026,FS,3589,True,6,5,0,148,0,0,1,1,1
 630167,Jun Choi,2026,ACL2,6500,False,4,1,0,45,0,0,0,0,0
 552541,Soo-il Park,2026,RKPO,6500,False,1,1,0,90,0,0,0,0,0
 552541,Soo-il Park,2026,ACL2,6500,False,4,3,0,225,0,0,1,0,0
@@ -128,13 +128,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 403723,Hrvoje Babec,2026,ACL2,6500,False,4,2,0,154,0,2,1,0,0
 1284164,Kang-jun Kim,2026,ACL2,6500,False,4,0,0,0,0,0,0,0,0
 192740,Aleksandar Paločević,2026,JAPC,37689,False,1,1,0,63,0,0,0,0,0
-192740,Aleksandar Paločević,2026,JAP2,37689,False,16,8,1,464,0,1,0,0,3
+192740,Aleksandar Paločević,2026,JAP2,37689,False,17,8,1,464,0,1,0,0,3
 402166,Seung-mo Lee,2026,RKPO,6500,False,1,1,0,73,0,0,0,0,0
 402166,Seung-mo Lee,2026,ACL2,6500,False,4,0,0,0,0,0,0,0,0
 865677,Do-yoon Hwang,2026,RKPO,6500,False,1,1,0,90,0,0,0,0,0
 865677,Do-yoon Hwang,2026,ACL2,6500,False,4,2,1,148,1,0,1,1,0
 1154996,Jeong-beom Son,2026,RKPO,6500,False,1,1,0,17,0,0,0,0,0
 1154996,Jeong-beom Son,2026,FS,76096,True,2,1,0,90,0,1,0,0,0
+1154996,Jeong-beom Son,2026,FS,3589,True,2,0,0,0,0,0,0,0,0
 1154996,Jeong-beom Son,2026,ACL2,6500,False,4,3,0,103,0,1,0,0,1
 711710,Jang Han-gyeol Park,2026,RKPO,6500,False,1,1,0,73,0,0,0,0,0
 711710,Jang Han-gyeol Park,2026,ACL2,6500,False,4,2,0,166,0,0,2,0,0
@@ -149,7 +150,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 594550,Anderson Oliveira,2026,RKPO,6500,False,1,1,0,17,0,0,0,0,0
 594550,Anderson Oliveira,2026,ACL2,6500,False,4,2,0,150,2,1,2,1,0
 497440,Seung-won Jeong,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
-497440,Seung-won Jeong,2026,FS,3589,True,4,3,0,94,0,0,1,0,1
+497440,Seung-won Jeong,2026,FS,3589,True,5,3,0,94,0,0,1,0,1
 497440,Seung-won Jeong,2026,ACL2,6500,False,4,0,0,0,0,0,0,0,0
 387153,Patryk Klimala,2026,RKPO,6500,False,1,0,0,0,0,0,0,0,0
 387153,Patryk Klimala,2026,ACL2,6500,False,4,2,0,67,0,0,0,0,0
@@ -169,7 +170,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1233466,Hyun-woong Jeong,2026,AU2C,22983,True,2,0,0,0,0,0,0,0,0
 1233466,Hyun-woong Jeong,2026,ACL2,6500,False,4,2,0,42,0,0,1,0,0
 508237,Bum-keun Song,2026,RKPO,6502,False,1,0,0,0,0,0,0,0,0
-508237,Bum-keun Song,2026,FS,3589,True,4,1,0,90,0,0,0,0,0
+508237,Bum-keun Song,2026,FS,3589,True,6,2,0,180,0,0,0,0,0
 508237,Bum-keun Song,2026,ACLE,6502,False,4,4,0,360,0,0,0,0,0
 402168,Ju-hyeon Lee,2026,RKPO,6502,False,1,1,0,120,0,0,0,0,0
 402168,Ju-hyeon Lee,2026,ACLE,6502,False,4,0,0,0,0,0,0,0,0
@@ -181,10 +182,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1282268,Dae-young Chung,2026,RKPO,6502,False,1,0,0,0,0,0,0,0,0
 1282268,Dae-young Chung,2026,ACLE,6502,False,4,0,0,0,0,0,0,0,0
 508366,Tae-hyeon Kim,2026,RKPO,6502,False,1,1,0,120,0,0,0,0,0
-508366,Tae-hyeon Kim,2026,FS,3589,True,4,2,0,107,0,0,0,0,0
+508366,Tae-hyeon Kim,2026,FS,3589,True,5,2,0,107,0,0,0,0,0
 508366,Tae-hyeon Kim,2026,ACLE,6502,False,4,3,0,252,0,0,0,0,1
 550978,Wi-je Cho,2026,RKPO,6502,False,1,1,0,9,0,0,0,0,0
-550978,Wi-je Cho,2026,FS,3589,True,4,2,0,24,0,0,0,0,0
+550978,Wi-je Cho,2026,FS,3589,True,5,2,0,24,0,0,0,0,0
 550978,Wi-je Cho,2026,ACLE,6502,False,4,1,0,90,0,0,0,0,0
 260197,Ji-su Park,2026,RKPO,6502,False,1,1,0,120,0,0,0,0,0
 260197,Ji-su Park,2026,ACLE,6502,False,4,4,0,272,0,0,0,0,0
@@ -222,9 +223,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 654312,Seong-ung Maeng,2026,ACLE,6502,False,4,3,0,166,0,0,0,0,0
 486601,Yeong-jae Lee,2026,RKPO,6502,False,1,1,0,120,0,0,0,0,0
 486601,Yeong-jae Lee,2026,ACLE,6502,False,4,4,0,203,1,1,7,1,0
+913164,Tae-ho Jin,2026,RKPO,135830,False,1,1,0,90,0,0,0,0,0
 364406,João Gamboa,2026,RKPO,6502,False,1,1,0,67,0,0,0,0,0
 364406,João Gamboa,2026,ACLE,6502,False,4,3,0,194,0,0,0,0,0
-913164,Tae-ho Jin,2026,RKPO,135830,False,1,1,0,90,0,0,0,0,0
 865587,Young-whan Kim,2026,RKPO,2996,False,1,1,0,90,0,0,0,0,0
 1154480,Seok-jin Han,2026,RKPO,6502,False,1,1,0,62,1,0,0,0,0
 1154480,Seok-jin Han,2026,ACLE,6502,False,4,0,0,0,0,0,0,0,0
@@ -264,7 +265,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 921776,Jun-hwi Lim,2026,RKPO,6502,False,1,0,0,0,0,0,0,0,0
 921776,Jun-hwi Lim,2026,ACLE,6502,False,4,0,0,0,0,0,0,0,0
 260171,Hyeon-woo Jo,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
-260171,Hyeon-woo Jo,2026,FS,3589,True,4,1,0,84,0,0,0,0,0
+260171,Hyeon-woo Jo,2026,FS,3589,True,6,1,0,84,0,0,0,0,0
 429676,Jung-in Moon,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 426129,Byeong-keun Hwang,2026,RKPO,3535,False,1,1,0,90,0,0,0,0,0
 1139557,Ju-ho Choi,2026,RKPO,3535,False,1,0,1,0,0,0,0,0,0
@@ -273,7 +274,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 379438,Seung-hyun Jung,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 261394,Sang-woo Kang,2026,RKPO,3535,False,1,1,0,61,0,0,0,0,0
 677469,Hyun-taek Cho,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
-677469,Hyun-taek Cho,2026,FS,3589,True,4,4,0,280,0,0,3,2,1
+677469,Hyun-taek Cho,2026,FS,3589,True,6,6,0,349,0,0,3,2,2
 347038,Thomas Oude Kotte,2026,RKPO,3535,False,1,0,1,0,0,0,0,0,0
 402163,Jong-gyu Yoon,2026,RKPO,3535,False,1,1,0,88,0,0,0,0,0
 297709,Jae-ik Lee,2026,RKPO,3535,False,1,1,0,90,0,0,0,0,0
@@ -283,7 +284,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 126640,Young-gwon Kim,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 1134716,Seong-bin Jung,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 558086,Dong-gyeong Lee,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
-558086,Dong-gyeong Lee,2026,FS,3589,True,4,3,0,47,1,0,2,2,0
+558086,Dong-gyeong Lee,2026,FS,3589,True,6,4,0,71,1,0,3,2,0
 184526,Darijan Bojanic,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 389181,Gyu-sung Lee,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
 132748,Jin-hyun Lee,2026,RKPO,3535,False,1,0,0,0,0,0,0,0,0
@@ -312,13 +313,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 524592,Moon-hwan Kim,2026,ACLE,6499,False,4,1,0,90,0,0,0,0,0
 510244,Chang-rae Ha,2026,RKPO,6499,False,1,1,0,90,0,0,0,0,0
 510244,Chang-rae Ha,2026,ACLE,6499,False,4,2,0,180,0,0,1,0,0
-358648,Anton Kryvotsiuk,2026,UNLD,8605,True,3,1,0,90,0,0,0,0,0
+358648,Anton Kryvotsiuk,2026,UNLD,8605,True,4,1,0,90,0,0,0,0,0
 358648,Anton Kryvotsiuk,2026,RKPO,6499,False,1,1,0,45,0,0,0,0,0
-358648,Anton Kryvotsiuk,2026,FS,8605,True,1,0,0,0,0,0,0,0,0
+358648,Anton Kryvotsiuk,2026,FS,8605,True,2,0,0,0,0,0,0,0,0
 358648,Anton Kryvotsiuk,2026,ACLE,6499,False,4,4,0,315,0,0,1,0,0
 652527,Min-duk Kim,2026,RKPO,6499,False,1,0,0,0,0,0,0,0,0
 652527,Min-duk Kim,2026,ACLE,6499,False,4,1,0,45,0,0,0,0,0
 314773,Myung-jae Lee,2026,RKPO,6499,False,1,1,0,90,0,2,0,0,0
+314773,Myung-jae Lee,2026,FS,3589,True,6,2,0,111,0,0,0,0,0
 314773,Myung-jae Lee,2026,ACLE,6499,False,4,2,0,180,0,0,0,0,0
 639240,Kyu-hyun Park,2026,RKPO,6499,False,1,0,0,0,0,0,0,0,0
 639240,Kyu-hyun Park,2026,ACLE,6499,False,4,2,0,179,0,0,1,0,1
@@ -336,7 +338,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 126642,Jae-suk Oh,2026,ACLE,6499,False,4,0,0,0,0,0,0,0,0
 985491,Yoo-seok Lim,2026,RKPO,44242,False,1,0,0,0,0,0,0,0,0
 782763,Bong-soo Kim,2026,RKPO,6499,False,1,1,0,45,0,0,0,0,0
-782763,Bong-soo Kim,2026,FS,3589,True,4,4,0,94,0,1,0,0,0
+782763,Bong-soo Kim,2026,FS,3589,True,6,5,0,160,0,1,0,0,0
 782763,Bong-soo Kim,2026,ACLE,6499,False,4,4,0,280,0,0,2,0,0
 468323,Bobsin,2026,RKPO,6499,False,1,1,0,45,0,0,0,0,0
 468323,Bobsin,2026,ACLE,6499,False,4,1,0,80,1,0,1,1,0
@@ -394,7 +396,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 925152,Jun-young Lim,2026,RKPO,39418,False,2,2,0,180,0,0,0,0,0
 402151,Sang-heon Lee,2026,RKPO,6505,False,2,2,0,144,0,0,0,0,0
 586944,Tae-joon Park,2026,RKPO,6505,False,2,0,0,0,0,0,0,0,0
-586944,Tae-joon Park,2026,FS,3589,True,4,2,0,28,0,0,0,0,0
+586944,Tae-joon Park,2026,FS,3589,True,6,3,0,42,0,0,0,0,0
 968728,Kyeong-hyeon Min,2026,RKPO,6505,False,2,0,0,0,0,0,0,0,0
 716435,Kang-hyun Lee,2026,RKPO,6505,False,2,0,0,0,0,0,0,0,0
 735036,Won-jin Hong,2026,RKPO,6505,False,1,0,0,0,0,0,0,0,0
@@ -435,6 +437,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 549553,Marko Tuci,2026,ACL2,21459,False,4,1,0,45,0,0,0,0,0
 549553,Marko Tuci,2026,ACEQ,21459,False,1,1,0,120,0,0,0,0,0
 1227015,Min-ha Shin,2026,RKPO,21459,False,1,1,0,120,0,0,0,0,0
+1227015,Min-ha Shin,2026,FS,3589,True,2,0,0,0,0,0,0,0,0
 1227015,Min-ha Shin,2026,FS,28208,True,1,0,0,0,0,0,0,0,0
 1227015,Min-ha Shin,2026,ACL2,21459,False,4,1,1,90,0,0,0,0,0
 1227015,Min-ha Shin,2026,ACEQ,21459,False,1,1,0,48,0,0,0,0,1
@@ -565,8 +568,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 639090,Jeong-hoon Kim,2026,RKPO,38898,False,2,0,0,0,0,0,0,0,0
 126639,Da-sol Kim,2026,RKPO,38898,False,2,2,0,180,0,0,0,0,0
 1010240,Sung-dong Kim,2026,RKPO,38898,False,2,0,0,0,0,0,0,0,0
-250440,Danny Bakker,2026,RKPO,38898,False,2,1,0,8,0,0,0,0,0
 1282182,Min-jae Jung,2026,RKPO,38898,False,1,0,0,0,0,0,0,0,0
+250440,Danny Bakker,2026,RKPO,38898,False,2,1,0,8,0,0,0,0,0
 260189,Kyung-won Kwon,2026,RKPO,38898,False,2,0,0,0,0,0,0,0,0
 132527,Dong-jin Kim,2026,RKPO,38898,False,2,1,0,90,0,0,0,0,0
 282843,Chang-yong Lee,2026,RKPO,38898,False,2,0,0,0,0,0,0,0,0
@@ -621,8 +624,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 261401,Chang-min Lee,2026,FS,25511,True,4,0,4,0,0,0,0,0,0
 755386,Su-bin Park,2026,RKPO,3610,False,2,2,0,119,0,0,0,0,0
 755386,Su-bin Park,2026,RKPO,19684,False,1,0,0,0,0,0,0,0,0
-916386,Jae-min Kim,2026,RKPO,19684,False,2,0,0,0,0,0,0,0,0
 793150,Bon-seo Gu,2026,RKPO,19684,False,1,0,0,0,0,0,0,0,0
+916386,Jae-min Kim,2026,RKPO,19684,False,2,0,0,0,0,0,0,0,0
 1307873,Dong-hwi Kang,2026,RKPO,19684,False,2,0,1,0,0,0,0,0,0
 1307873,Dong-hwi Kang,2026,AU2C,22983,True,2,2,0,60,0,0,0,0,0
 858495,Emerson Negueba,2026,RKPO,19684,False,2,2,0,102,1,0,0,0,0
@@ -642,7 +645,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1154345,Min-jun Wang,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
 411294,Juan Ibiza,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
 1060671,Gun-hee Kim,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
-1060671,Gun-hee Kim,2026,FS,3589,True,4,0,0,0,0,0,0,0,0
+1060671,Gun-hee Kim,2026,FS,3589,True,5,0,0,0,0,0,0,0,0
 876290,Kyung-sub Park,2026,RKPO,2996,False,1,1,0,90,0,0,0,0,1
 911286,Myung-soon Kim,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
 1161179,Seung-gu Choi,2026,RKPO,2996,False,1,1,0,90,0,0,0,0,0
@@ -671,10 +674,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 643328,Dong-ryul Lee,2026,RKPO,2996,False,1,1,0,45,0,0,0,0,0
 429695,Chi-in Jeong,2026,RKPO,2996,False,1,1,0,86,0,0,0,0,0
 284736,Morgan Ferrier,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
-284736,Morgan Ferrier,2026,CNLB,15736,True,4,0,0,0,0,0,0,0,0
+284736,Morgan Ferrier,2026,CNLB,15736,True,6,1,0,45,1,0,0,0,0
 81801,Chung-yong Lee,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
 903106,Ho-min Park,2026,JAPC,22177,False,4,2,0,56,1,0,0,0,0
-903106,Ho-min Park,2026,JAP2,22177,False,16,7,0,65,0,0,0,0,1
+903106,Ho-min Park,2026,JAP2,22177,False,17,7,0,65,0,0,0,0,1
 747407,Seong-min Kim,2026,RKPO,2996,False,1,1,0,45,0,0,0,0,0
 1161178,Min-gyu Baek,2026,RKPO,2996,False,1,0,0,0,0,0,0,0,0
 1161178,Min-gyu Baek,2026,FS,28208,True,1,0,0,0,0,0,0,0,0
@@ -686,9 +689,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 639698,Jae-won Shin,2026,FS,66879,True,4,0,0,0,0,0,0,0,0
 530447,Tae-hyun An,2026,RKPO,35759,False,2,0,0,0,0,0,0,0,0
 319774,Dong-gyu Baek,2026,RKPO,35759,False,2,0,0,0,0,0,0,0,0
-858645,Jae-won Lee,2026,RKPO,35759,False,2,2,0,85,0,0,0,0,0
 263821,Seong-jun Jo,2026,RKPO,70272,False,2,0,0,0,0,0,0,0,0
 263821,Seong-jun Jo,2026,RKPO,35759,False,2,2,0,174,1,0,0,0,0
+858645,Jae-won Lee,2026,RKPO,35759,False,2,2,0,85,0,0,0,0,0
 718967,Jong-min Kim,2026,RKPO,35759,False,2,2,0,210,0,0,0,0,2
 386501,Bong-hun Yeo,2026,RKPO,35759,False,2,2,0,184,0,0,0,0,1
 1177190,Ye-chan Lee,2026,RKPO,35759,False,2,2,0,210,0,0,0,0,0
@@ -712,11 +715,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 573941,John Montaño,2026,UAEP,44289,False,1,1,0,90,0,0,0,0,0
 573941,John Montaño,2026,UAE2,44289,False,8,7,0,592,2,3,0,0,0
 676363,Min-jun Kim,2026,RKPO,35759,False,2,2,0,155,0,0,0,0,0
+874287,Gustavo Nescau,2026,RKPO,35759,False,1,1,0,36,0,0,0,0,0
 658874,Seung-bin Kim,2026,RKPO,35759,False,2,2,0,131,1,0,0,0,0
 1154529,Chung-hyun Lee,2026,RLN4,6649,False,14,11,0,710,0,0,0,0,0
 1154529,Chung-hyun Lee,2026,L2,187,False,11,0,0,0,0,0,0,0,0
 1154529,Chung-hyun Lee,2026,DFB,187,False,2,0,0,0,0,0,0,0,0
-874287,Gustavo Nescau,2026,RKPO,35759,False,1,1,0,36,0,0,0,0,0
 909127,Kyu-min Kim,2026,RKPO,35759,False,2,0,0,0,0,0,0,0,0
 721879,Eui-hyeong Lee,2026,RKPO,35759,False,2,2,0,141,0,0,0,0,0
 180771,Ji-ho Han,2026,RKPO,35759,False,2,1,0,90,0,0,0,0,0

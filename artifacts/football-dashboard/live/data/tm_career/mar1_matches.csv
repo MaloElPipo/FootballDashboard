@@ -341,7 +341,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 929321,Karim L'Koucha,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922909,30,30625,away,12721,1,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 929321,Karim L'Koucha,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919629,29,30625,home,9099,3,2,in squad,33,,False,0,0,0,0,0,0,0,,,,0,0
 929321,Karim L'Koucha,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905254,28,30625,away,22944,2,2,played,33,12,False,90,0,0,0,0,0,0,,,,0,0
-742502,Achref Habbassi,2026-11-05T13:00:00+00:00,2026,IRQ1,1,False,5028478,13,39637,away,42035,1,2,played,18,12,False,90,0,0,0,0,0,0,,,0,0,0
+742502,Achref Habbassi,2026-11-05T13:00:00+00:00,2026,IRQ1,1,False,5028478,13,39637,away,42035,1,2,played,18,12,False,45,0,0,0,0,0,0,,,46,0,0
 742502,Achref Habbassi,2026-10-31T13:30:00+00:00,2026,IRQ1,1,False,5028470,12,39637,away,48098,0,0,played,18,0,False,17,0,0,0,0,0,0,,73,,0,0
 742502,Achref Habbassi,2026-10-22T14:00:00+00:00,2026,IRQ1,1,False,5028458,11,39637,home,13595,2,1,played,18,12,False,45,0,0,0,0,0,0,7,,46,0,0
 742502,Achref Habbassi,2026-10-17T15:45:00+00:00,2026,IRQ1,1,False,5028447,10,39637,away,42274,0,2,played,18,12,False,68,0,0,0,0,0,0,59,,68,0,0
@@ -1069,6 +1069,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 240708,Walid Sabbar,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905245,27,6603,home,3282,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 240708,Walid Sabbar,2026-06-21T14:00:00+00:00,2025,MAR1,1,False,4901053,26,6603,away,14462,0,1,played,6,6,False,72,0,0,0,0,0,0,,,72,0,0
 240708,Walid Sabbar,2026-06-18T14:00:00+00:00,2025,MAR1,1,False,4896971,25,6603,home,6371,1,2,played,6,0,False,6,0,0,0,0,0,0,,84,,0,0
+1330427,Selemani Mwalimu,2026-11-17T13:00:00+00:00,2026,AFCQ,19,True,5074890,6,14666,away,3444,0,0,played,19,0,False,18,0,0,1,0,0,1,,72,,0,0
+1330427,Selemani Mwalimu,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074866,5,14666,away,3444,1,3,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1330427,Selemani Mwalimu,2026-10-21T16:00:00+00:00,2026,ACL,10,False,5082163,4,9052,home,93256,4,1,played,30,0,False,90,2,0,0,0,0,0,,,,0,0
 1330427,Selemani Mwalimu,2026-10-17T11:00:00+00:00,2026,ACL,10,False,5082162,3,9052,away,93256,4,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1330427,Selemani Mwalimu,2026-09-29T14:00:00+00:00,2026,AFCQ,19,True,5047025,4,14666,away,14635,1,1,played,19,0,False,9,0,0,0,0,0,0,,81,,0,0
@@ -1077,8 +1079,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1330427,Selemani Mwalimu,2026-09-05T17:00:00+00:00,2026,ACL,10,False,5009562,1,9052,away,29852,1,1,in squad,30,,False,0,1,0,0,0,0,0,,,,0,0
 1330427,Selemani Mwalimu,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1330427,Selemani Mwalimu,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,6603,away,37176,0,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-1330427,Selemani Mwalimu,2026-03-29T13:00:00+00:00,2025,FS,11,True,4852119,3,14666,away,16432,6,0,played,19,0,False,19,0,0,0,0,0,0,,71,,0,0
-1330427,Selemani Mwalimu,2026-03-26T14:30:00+00:00,2025,FS,11,True,4831080,25,14666,away,5673,0,1,played,19,7,False,71,0,0,0,0,0,0,,,71,0,0
 1139810,Issa M'Bareck,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922913,30,3282,home,59771,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1139810,Issa M'Bareck,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919625,29,3282,away,4697,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 1139810,Issa M'Bareck,2026-06-09T12:00:00+00:00,2025,FS,11,True,4926276,30,95304,away,34867,3,1,played,23,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -1089,6 +1089,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1139810,Issa M'Bareck,2025-10-18T19:00:00+00:00,2025,MAR1,1,False,4749049,5,3282,home,79389,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1139810,Issa M'Bareck,2025-10-03T19:00:00+00:00,2025,MAR1,1,False,4734744,4,3282,away,2068,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1139810,Issa M'Bareck,2025-09-28T17:00:00+00:00,2025,MAR1,1,False,4734739,3,3282,home,30625,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1262531,Younes El Bahraoui,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,played,9,14,False,77,1,0,0,0,0,0,,,77,0,0
 1262531,Younes El Bahraoui,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,played,9,14,False,63,1,0,0,0,0,0,,,63,0,0
 1262531,Younes El Bahraoui,2026-11-04T18:15:00+00:00,2026,ACL2,10,False,5021968,4,28844,home,13592,3,1,played,47,8,False,77,0,2,2,1,1,0,,,77,0,0
 1262531,Younes El Bahraoui,2026-10-31T13:30:00+00:00,2026,SA1,1,False,4977000,12,28844,home,7732,1,1,played,47,0,False,28,0,0,1,0,1,0,,62,,0,0
@@ -1106,8 +1107,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1262531,Younes El Bahraoui,2026-08-28T18:00:00+00:00,2026,SA1,1,False,4976897,4,28844,away,18544,1,2,played,47,11,False,59,0,0,2,1,0,1,,,59,0,0
 1262531,Younes El Bahraoui,2026-08-25T16:10:00+00:00,2026,SA1,1,False,4976879,3,28844,home,50531,0,0,played,47,11,False,73,0,0,4,1,2,1,,,73,0,0
 1262531,Younes El Bahraoui,2026-08-22T16:10:00+00:00,2026,SA1,1,False,4976873,2,28844,away,91427,2,3,played,47,11,False,45,0,1,0,0,0,0,,46,,0,0
-1262531,Younes El Bahraoui,2026-08-19T16:15:00+00:00,2026,SAKC,8,False,4971034,1,28844,away,50532,3,0,played,47,11,False,90,0,1,1,0,1,0,,,,0,0
-1262531,Younes El Bahraoui,2026-08-15T16:15:00+00:00,2026,SA1,1,False,4976891,1,28844,home,6070,0,0,played,47,11,False,22,0,0,1,1,0,0,,68,,0,0
 519192,Mohamed El Morabit,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,9100,home,30625,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 519192,Mohamed El Morabit,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,9100,away,6603,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 519192,Mohamed El Morabit,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1118,6 +1117,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 519192,Mohamed El Morabit,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,37176,home,6603,2,0,played,10,0,False,1,0,0,0,0,0,0,,90,,0,0
 519192,Mohamed El Morabit,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905259,28,37176,away,6371,1,2,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 519192,Mohamed El Morabit,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905243,27,37176,home,9099,2,2,played,10,0,False,22,0,0,0,0,0,0,,68,,0,0
+876730,Nouh Mohamed El Abd,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074878,6,14238,home,5872,1,3,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+876730,Nouh Mohamed El Abd,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074854,5,14238,away,5872,0,1,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
 876730,Nouh Mohamed El Abd,2026-11-07T13:00:00+00:00,2026,ALG1,1,False,5010085,9,13366,away,40319,0,0,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 876730,Nouh Mohamed El Abd,2026-10-30T16:45:00+00:00,2026,ALG1,1,False,5010140,8,13366,home,56165,1,0,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
 876730,Nouh Mohamed El Abd,2026-10-24T14:00:00+00:00,2026,ALG1,1,False,5010118,7,13366,away,42093,3,0,played,23,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -1163,6 +1164,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 823072,Oussama Al Aiz,2026-06-14T15:00:00+00:00,2025,MAR1,1,False,4894537,24,12721,home,103954,2,1,played,13,0,False,1,0,0,0,0,0,0,,90,,0,0
 823072,Oussama Al Aiz,2026-06-08T18:00:00+00:00,2025,MAR1,1,False,4894500,23,12721,away,37176,0,1,played,13,0,False,45,0,0,0,0,0,0,,45,,0,0
 823072,Oussama Al Aiz,2026-06-03T18:00:00+00:00,2025,MAR1,1,False,4888853,22,12721,home,6603,2,1,in squad,13,,False,0,0,0,0,0,0,0,,,,0,0
+1303960,Papa Magueye Gaye,2026-11-15T11:00:00+00:00,2026,E3G1,3,False,4984656,12,5650,away,101648,3,2,played,3,12,False,86,2,0,6,2,3,1,,,86,0,0
 1303960,Papa Magueye Gaye,2026-11-07T15:30:00+00:00,2026,E3G1,3,False,4984650,11,5650,home,60225,1,0,played,3,14,False,41,0,0,1,1,0,0,,,41,0,0
 1303960,Papa Magueye Gaye,2026-11-01T11:00:00+00:00,2026,E3G1,3,False,4984624,10,5650,away,3708,0,0,played,3,14,False,65,0,0,2,0,1,1,,,65,0,0
 1303960,Papa Magueye Gaye,2026-10-27T20:00:00+00:00,2026,CDR,8,False,5074752,3,5650,away,20220,0,2,played,3,0,False,31,0,0,0,0,0,0,,59,,0,0
@@ -1218,7 +1220,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1273576,Abdellah Ziani,2026-11-04T17:00:00+00:00,2026,EGLC,14,False,5039468,2,9094,home,10957,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1273576,Abdellah Ziani,2026-10-28T14:00:00+00:00,2026,EGY1,1,False,5009000,8,9094,away,62448,1,1,played,27,9,False,61,0,0,2,0,2,0,,,61,0,0
 1273576,Abdellah Ziani,2026-10-19T17:00:00+00:00,2026,EGY1,1,False,5008919,7,9094,home,39575,1,1,played,27,9,False,63,0,0,0,0,0,0,,,63,0,0
-1273576,Abdellah Ziani,2026-10-11T14:00:00+00:00,2026,EGY1,1,False,5008959,6,9094,away,24297,1,1,played,27,11,False,90,0,0,3,2,0,1,,,,0,0
+1273576,Abdellah Ziani,2026-10-11T14:00:00+00:00,2026,EGY1,1,False,5008959,6,9094,away,24297,1,1,played,27,9,False,90,0,0,3,2,0,1,,,,0,0
 1273576,Abdellah Ziani,2026-10-07T16:00:00+00:00,2026,EGLC,14,False,5039457,1,9094,away,57439,1,0,played,27,11,False,90,0,0,0,0,0,0,,,,0,0
 1273576,Abdellah Ziani,2026-09-15T17:00:00+00:00,2026,EGY1,1,False,5008960,5,9094,home,3963,0,2,played,27,0,False,45,0,0,4,1,2,1,,46,,0,0
 1273576,Abdellah Ziani,2026-09-07T17:00:00+00:00,2026,EGY1,1,False,5008946,4,9094,away,10957,1,2,played,27,0,False,26,0,0,3,1,1,1,,64,,0,0
@@ -1335,6 +1337,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1267109,Youness Dahmani,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,2068,away,3282,0,0,played,20,11,False,39,0,0,0,0,0,0,,,39,0,0
 1267109,Youness Dahmani,2026-10-03T20:00:00+00:00,2026,MAR1,1,False,5060443,2,2068,home,74953,1,0,played,20,11,False,56,0,0,0,0,0,0,,,56,0,0
 1267109,Youness Dahmani,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,played,7,11,False,90,0,1,0,0,0,0,45,,,0,0
+1183709,Adam Darazi,2026-11-14T17:00:00+00:00,2026,FR5G,5,False,4967643,7,871,home,2618,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1183709,Adam Darazi,2026-10-31T17:00:00+00:00,2026,FR5G,5,False,4967641,6,871,away,79737,0,2,played,8,0,False,90,0,0,0,0,0,0,,,,0,0
 1183709,Adam Darazi,2026-10-24T16:00:00+00:00,2026,FRC,8,False,5082333,2,871,away,109847,5,6,played,0,0,False,90,1,0,0,0,0,0,,,,0,0
 1183709,Adam Darazi,2026-10-17T14:00:00+00:00,2026,FR5G,5,False,4967633,5,871,away,8524,1,2,played,15,0,False,20,0,0,0,0,0,0,,70,,0,0
@@ -1344,7 +1347,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1183709,Adam Darazi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919632,29,12721,away,79389,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1183709,Adam Darazi,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905255,28,12721,home,2068,1,1,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 1183709,Adam Darazi,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905247,27,12721,away,59771,0,2,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
-1183709,Adam Darazi,2026-06-21T14:00:00+00:00,2025,MAR1,1,False,4901049,26,12721,home,74953,1,0,in squad,29,,False,0,0,0,0,0,0,0,,,,0,0
 507358,Haytham El Bahja,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,9100,home,30625,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507358,Haytham El Bahja,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,9100,away,6603,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507358,Haytham El Bahja,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1486,7 +1488,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1133028,Redouane Mennioui,2026-09-02T17:40:00+00:00,2026,SA2L,2,False,4975141,3,22381,away,107818,0,2,played,13,3,False,69,0,0,0,0,0,0,,,69,0,0
 1133028,Redouane Mennioui,2026-08-28T16:05:00+00:00,2026,SA2L,2,False,4975131,2,22381,home,32343,2,3,played,13,3,False,90,0,0,0,0,0,0,82,,,0,0
 1133028,Redouane Mennioui,2026-08-22T17:50:00+00:00,2026,SA2L,2,False,4975111,1,22381,away,39536,1,0,played,13,3,False,90,0,0,1,0,1,0,,,,0,0
-1133028,Redouane Mennioui,2026-08-17T18:00:00+00:00,2026,SAKC,8,False,4971028,1,22381,home,1114,0,2,played,13,3,False,90,0,0,0,0,0,0,,,,0,0
 841736,Hamza El Janati,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,30625,away,9100,1,0,played,21,10,False,90,0,0,0,0,0,0,35,,,0,0
 841736,Hamza El Janati,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,30625,home,9099,0,0,played,21,10,False,85,0,0,0,0,0,0,,,85,0,0
 841736,Hamza El Janati,2026-10-24T16:00:00+00:00,2026,MAR1,1,False,5087470,5,30625,away,85473,2,1,played,21,10,False,90,0,0,0,0,0,0,,,,0,0
@@ -1721,6 +1722,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1044891,Amine Azri,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922912,30,37176,away,14462,3,1,played,21,0,False,48,0,0,0,0,0,0,,42,,0,0
 1044891,Amine Azri,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,37176,home,6603,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1044891,Amine Azri,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905259,28,37176,away,6371,1,2,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
+182912,Ange-Freddy Plumain,2026-11-16T19:00:00+00:00,2026,CNLB,11,True,5077694,6,19755,away,15735,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+182912,Ange-Freddy Plumain,2026-11-12T19:00:00+00:00,2026,CNLB,11,True,5077686,5,19755,home,16030,3,0,played,8,10,False,88,1,0,0,0,0,0,,,88,0,0
 182912,Ange-Freddy Plumain,2026-11-06T17:00:00+00:00,2026,ZYP1,1,False,4971083,9,16024,away,18945,2,3,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 182912,Ange-Freddy Plumain,2026-11-01T17:00:00+00:00,2026,ZYP1,1,False,4970334,8,16024,home,2784,1,2,in squad,38,,False,0,0,0,0,0,0,0,,,,0,0
 182912,Ange-Freddy Plumain,2026-10-28T15:00:00+00:00,2026,CPO1,8,False,5065609,1,16024,home,4582,6,3,played,38,10,False,90,0,1,0,0,0,0,,,,0,0
@@ -1863,6 +1866,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1176891,Youssef Dalouzi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922913,30,3282,home,59771,2,0,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
 1176891,Youssef Dalouzi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919625,29,3282,away,4697,0,0,played,77,0,False,1,0,0,0,0,0,0,,90,,0,0
 1176891,Youssef Dalouzi,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905258,28,3282,home,103954,2,1,played,77,0,False,6,0,0,0,0,0,0,,84,,0,0
+546225,Mohamed Bouchouari,2026-11-14T15:30:00+00:00,2026,NL2,2,False,4914173,15,132,home,1283,4,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 546225,Mohamed Bouchouari,2026-11-06T19:00:00+00:00,2026,NL2,2,False,4914183,14,132,away,1455,0,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 546225,Mohamed Bouchouari,2026-11-02T19:00:00+00:00,2026,NL2,2,False,4914172,13,132,away,9715,2,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 546225,Mohamed Bouchouari,2026-10-28T19:00:00+00:00,2026,NLP,8,False,5065519,3,132,away,7534,3,1,played,17,5,False,45,0,0,1,1,0,0,17,,46,0,0
@@ -1954,6 +1958,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 904578,Hassan Aqboub,2025-10-31T15:00:00+00:00,2025,MAR1,1,False,4758560,7,79389,away,4697,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 904578,Hassan Aqboub,2025-10-26T15:00:00+00:00,2025,MAR1,1,False,4749058,6,79389,home,103954,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 904578,Hassan Aqboub,2025-10-18T19:00:00+00:00,2025,MAR1,1,False,4749049,5,79389,away,3282,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1246533,Taha Majni,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1246533,Taha Majni,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,played,13,0,False,8,0,0,0,0,0,0,,82,,0,0
 1246533,Taha Majni,2026-11-08T12:00:00+00:00,2026,GB21,18,False,5045534,7,6945,home,9261,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1246533,Taha Majni,2026-11-03T19:00:00+00:00,2026,GBFL,21,False,5016653,3,6945,away,3716,2,1,played,45,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -1971,6 +1976,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1246533,Taha Majni,2026-08-26T08:30:00+00:00,2026,FS,11,True,5022419,45,37630,away,43877,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1246533,Taha Majni,2026-08-24T08:30:00+00:00,2026,FS,11,True,5022418,45,37630,away,26236,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1246533,Taha Majni,2026-08-22T19:00:00+00:00,2026,FS,11,True,5027632,45,37630,away,22586,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1074351,Hossam Essadak,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,played,8,6,True,71,0,0,0,0,0,0,,,71,0,0
 1074351,Hossam Essadak,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,played,8,7,True,82,0,0,0,0,0,0,,,82,0,0
 1074351,Hossam Essadak,2026-10-31T18:00:00+00:00,2026,SA1,1,False,4976995,12,27221,away,1114,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1074351,Hossam Essadak,2026-10-22T14:45:00+00:00,2026,SA1,1,False,4976931,11,27221,home,9840,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -1980,7 +1986,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1074351,Hossam Essadak,2026-10-01T15:00:00+00:00,2026,FS,11,True,5063430,1,34903,home,46122,1,1,played,8,10,True,90,0,1,0,0,0,0,,,,0,0
 1074351,Hossam Essadak,2026-09-13T16:20:00+00:00,2026,SA1,1,False,4976929,7,27221,away,34911,2,4,played,20,0,False,9,0,0,1,1,0,0,,81,,0,0
 1074351,Hossam Essadak,2026-09-09T18:00:00+00:00,2026,SA1,1,False,4976919,6,27221,home,52358,1,2,in squad,20,,False,0,0,0,0,0,0,0,,,,0,0
-1074351,Hossam Essadak,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1443774,Zakaria Aiada,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1443774,Zakaria Aiada,2026-07-17T19:00:00+00:00,2025,MRR1,12,False,4942700,1,79389,away,22937,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1443774,Zakaria Aiada,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,79389,away,6603,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2321,6 +2326,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 863629,Yassine Belfadla,2024-11-22T19:00:00+00:00,2024,MAR1,1,False,4498539,11,22944,home,30625,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 863629,Yassine Belfadla,2024-11-09T15:00:00+00:00,2024,MAR1,1,False,4475367,10,22944,away,74953,1,2,played,9,0,False,1,0,0,0,0,0,0,,89,,0,0
 863629,Yassine Belfadla,2024-11-01T15:00:00+00:00,2024,MAR1,1,False,4475357,9,22944,home,79390,1,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
+481198,Ramiro Vaca,2026-11-17T23:30:00+00:00,2026,FS,11,True,5119521,6,5233,away,5750,0,2,played,10,10,False,90,0,0,1,0,1,0,,,90,0,0
+481198,Ramiro Vaca,2026-11-14T01:00:00+00:00,2026,FS,11,True,5119492,5,5233,away,3584,0,2,played,10,7,False,90,0,0,4,1,1,2,,,,0,0
 481198,Ramiro Vaca,2026-11-07T15:30:00+00:00,2026,UAE1,1,False,5077591,8,26351,away,17195,2,1,played,80,10,False,81,0,0,2,0,0,2,,,81,0,0
 481198,Ramiro Vaca,2026-10-24T12:55:00+00:00,2026,UAEP,8,False,5094218,4,26351,home,14456,3,2,played,80,7,False,85,0,0,0,0,0,0,,,85,0,0
 481198,Ramiro Vaca,2026-10-18T13:05:00+00:00,2026,UAE1,1,False,5053674,6,26351,home,161,2,3,played,80,10,False,90,1,0,4,2,1,1,,,,0,0
@@ -2329,8 +2336,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 481198,Ramiro Vaca,2026-09-11T13:40:00+00:00,2026,UAE1,1,False,5049667,5,26351,home,4785,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 481198,Ramiro Vaca,2026-09-04T16:15:00+00:00,2026,UAE1,1,False,5022620,4,26351,away,16214,2,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 481198,Ramiro Vaca,2026-08-29T13:55:00+00:00,2026,UAE1,1,False,5022614,3,26351,home,14456,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-481198,Ramiro Vaca,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,played,10,10,False,90,0,0,0,0,0,0,,,,0,0
-481198,Ramiro Vaca,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,6603,away,37176,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1264630,Mouhssin Zouhar,2026-04-18T14:00:00+00:00,2025,MARP,8,False,4867858,1,59814,away,37681,3,4,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 1264630,Mouhssin Zouhar,2024-04-04T21:00:00+00:00,2023,MARP,8,False,4324813,2,85473,home,59771,0,3,played,14,0,False,90,0,0,0,0,0,0,,,,0,0
 1264630,Mouhssin Zouhar,2024-03-27T22:00:00+00:00,2023,MARP,8,False,4318850,1,85473,home,101874,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -2394,6 +2399,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1125067,Younes Sakhi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922909,30,30625,away,12721,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1125067,Younes Sakhi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919629,29,30625,home,9099,3,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1125067,Younes Sakhi,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905254,28,30625,away,22944,2,2,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+665741,Abdelhay Forsy,2026-11-14T14:00:00+00:00,2026,INR1,24,False,5117676,8,122123,away,122128,2,1,played,7,10,False,90,1,1,0,0,0,0,,,,0,0
 665741,Abdelhay Forsy,2026-11-06T14:00:00+00:00,2026,INR1,24,False,5117672,7,122123,home,122127,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 665741,Abdelhay Forsy,2026-11-01T14:00:00+00:00,2026,INR1,24,False,5055793,6,122123,home,122119,2,6,played,7,12,False,90,0,0,0,0,0,0,,,,0,0
 665741,Abdelhay Forsy,2026-10-26T14:00:00+00:00,2026,INR1,24,False,5055790,5,122123,home,122126,3,0,played,7,10,False,90,0,1,0,0,0,0,,,,0,0
@@ -2403,7 +2409,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 665741,Abdelhay Forsy,2026-09-27T14:00:00+00:00,2026,INR1,24,False,5055774,1,122123,away,122127,0,1,played,7,12,False,90,0,0,0,0,0,0,,,,0,0
 665741,Abdelhay Forsy,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 665741,Abdelhay Forsy,2026-07-17T19:00:00+00:00,2025,MRR1,12,False,4942700,1,79389,away,22937,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-665741,Abdelhay Forsy,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,79389,away,6603,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276255,Yacine Bammou,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,played,9,14,False,74,0,0,0,0,0,0,,,74,0,0
 276255,Yacine Bammou,2026-07-17T19:00:00+00:00,2025,MRR1,12,False,4942700,1,79389,away,22937,1,1,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 276255,Yacine Bammou,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,79389,away,6603,2,1,played,9,0,False,51,0,0,0,0,0,0,,32,83,0,0
@@ -2614,6 +2619,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 558706,Zouheir El Hachemi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922908,30,74953,away,9099,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 558706,Zouheir El Hachemi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919627,29,74953,home,6371,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
 558706,Zouheir El Hachemi,2026-04-19T14:00:00+00:00,2025,MARP,8,False,4867867,1,102639,away,86326,0,1,played,7,0,False,90,0,0,0,0,0,0,,,,0,0
+1331844,Mohamed Abdouramane,2026-11-17T20:00:00+00:00,2026,AFCQ,19,True,5074868,6,14163,home,3575,0,1,played,13,3,False,90,0,0,2,1,0,1,,,,0,0
+1331844,Mohamed Abdouramane,2026-11-13T20:00:00+00:00,2026,AFCQ,19,True,5074844,5,14163,away,3575,1,5,played,13,3,False,90,1,0,1,1,0,0,,,,0,0
 1331844,Mohamed Abdouramane,2026-11-08T16:00:00+00:00,2026,MAR1,1,False,5101425,7,74953,home,59814,1,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1331844,Mohamed Abdouramane,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,74953,away,12721,0,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1331844,Mohamed Abdouramane,2026-10-25T16:00:00+00:00,2026,MAR1,1,False,5087473,5,74953,home,6371,0,1,played,19,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -3318,6 +3325,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1330446,Rayane Mahtou,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,played,17,0,False,11,0,0,0,0,0,0,,79,,0,0
 1330446,Rayane Mahtou,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,6603,away,37176,0,2,played,17,6,False,90,0,0,0,0,0,0,,,,0,0
 1330446,Rayane Mahtou,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905257,28,6603,home,59771,1,3,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
+1247673,Mohamed Mounssef,2026-11-16T16:00:00+00:00,2026,FS,11,True,5136221,51,37630,away,25249,1,0,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
+1247673,Mohamed Mounssef,2026-11-13T17:00:00+00:00,2026,FS,11,True,5136220,50,37630,home,25249,0,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1247673,Mohamed Mounssef,2026-10-06T13:00:00+00:00,2026,FS,11,True,5048813,5,37630,away,39580,2,3,played,8,7,False,90,1,0,0,0,0,0,81,,,0,0
 1247673,Mohamed Mounssef,2026-10-03T17:00:00+00:00,2026,FS,11,True,5048812,4,37630,away,16121,2,0,played,8,7,False,82,0,0,0,0,0,0,,,82,0,0
 1247673,Mohamed Mounssef,2026-09-30T13:30:00+00:00,2026,FS,11,True,5048810,3,37630,away,32344,3,1,played,8,7,False,90,1,0,0,0,0,0,,,,0,0
@@ -3327,7 +3336,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1247673,Mohamed Mounssef,2026-08-26T08:30:00+00:00,2026,FS,11,True,5022419,45,37630,away,43877,5,1,played,8,7,False,84,1,0,0,0,0,0,,,84,0,0
 1247673,Mohamed Mounssef,2026-08-24T08:30:00+00:00,2026,FS,11,True,5022418,45,37630,away,26236,0,1,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1247673,Mohamed Mounssef,2026-08-22T19:00:00+00:00,2026,FS,11,True,5027632,45,37630,away,22586,2,2,played,8,7,False,90,0,0,0,0,0,0,,,,0,0
-1247673,Mohamed Mounssef,2026-07-30T20:30:00+00:00,2026,FS,11,True,4976143,45,37630,away,69282,2,1,played,8,7,False,48,0,0,0,0,0,0,,,48,0,0
+1072321,Moisés Paniagua,2026-11-17T23:30:00+00:00,2026,FS,11,True,5119521,6,5233,away,5750,0,2,played,13,10,False,80,0,0,0,0,0,0,,,80,0,0
+1072321,Moisés Paniagua,2026-11-14T01:00:00+00:00,2026,FS,11,True,5119492,5,5233,away,3584,0,2,played,13,11,False,90,0,0,0,0,0,0,,,,0,0
 1072321,Moisés Paniagua,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1072321,Moisés Paniagua,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1072321,Moisés Paniagua,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3337,7 +3347,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1072321,Moisés Paniagua,2026-10-01T00:00:00+00:00,2026,FS,11,True,5052835,2,5233,away,3437,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1072321,Moisés Paniagua,2026-09-27T20:30:00+00:00,2026,FS,11,True,5052709,4,5233,away,3581,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1072321,Moisés Paniagua,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1072321,Moisés Paniagua,2026-08-12T13:00:00+00:00,2026,FS,11,True,5076154,45,29702,away,7658,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 517712,Hamza Hannouri,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,19,0,False,21,0,0,0,0,0,0,,69,,0,0
 517712,Hamza Hannouri,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,19,0,False,10,0,0,0,0,0,0,86,80,,0,0
 517712,Hamza Hannouri,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,19,0,False,20,0,0,0,0,0,0,,70,,0,0
@@ -3358,16 +3367,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 273432,Mohamed Rayhi,2026-10-09T14:00:00+00:00,2026,JO1L,1,False,5008651,4,15795,home,22721,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 273432,Mohamed Rayhi,2026-09-19T16:00:00+00:00,2026,JO1L,1,False,5008649,3,15795,away,15832,3,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 273432,Mohamed Rayhi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,6603,away,37176,0,2,played,8,10,False,55,0,0,0,0,0,0,,,55,0,0
-330726,Thembinkosi Lorch,2026-10-27T17:00:00+00:00,2026,LPL,1,False,5117341,3,13505,home,114967,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-10-20T17:00:00+00:00,2026,LPL,1,False,5084109,2,13505,home,113576,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-10-14T17:00:00+00:00,2026,LPL,1,False,5078528,1,13505,away,111129,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-05-24T15:00:00+00:00,2025,LPL2,12,False,4878593,5,13505,home,26246,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-05-20T15:00:00+00:00,2025,LPL2,12,False,4878588,4,13505,away,78405,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-05-14T15:00:00+00:00,2025,LPL2,12,False,4878606,3,13505,home,38559,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-05-10T15:00:00+00:00,2025,LPL2,12,False,4878599,2,13505,home,13506,2,1,played,11,11,False,32,0,0,0,0,0,0,,,32,0,0
-330726,Thembinkosi Lorch,2026-05-07T15:00:00+00:00,2025,LPL2,12,False,4878580,1,13505,away,13504,0,0,played,11,11,False,66,0,0,0,0,0,0,,,66,0,0
-330726,Thembinkosi Lorch,2026-04-25T14:00:00+00:00,2025,LPL,1,False,4851651,18,13505,away,134679,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-330726,Thembinkosi Lorch,2026-04-20T14:30:00+00:00,2025,LPL,1,False,4840280,17,13505,home,78405,1,1,played,4,0,False,18,0,0,0,0,0,0,,72,,0,0
 146854,Wissam Ben Yedder,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,played,9,14,False,85,1,0,0,0,0,0,,,85,0,0
 146854,Wissam Ben Yedder,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905257,28,6603,home,59771,1,3,played,9,11,False,90,1,0,0,0,0,0,,,,0,0
 146854,Wissam Ben Yedder,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905245,27,6603,home,3282,0,1,played,9,0,False,23,0,0,0,0,0,0,89,67,,0,0
@@ -3378,6 +3377,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 146854,Wissam Ben Yedder,2026-06-03T18:00:00+00:00,2025,MAR1,1,False,4888853,22,6603,away,12721,1,2,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 146854,Wissam Ben Yedder,2026-05-23T18:00:00+00:00,2025,MAR1,1,False,4888844,21,6603,home,22935,3,2,in squad,9,,False,0,0,0,0,0,0,0,,,,0,0
 146854,Wissam Ben Yedder,2026-05-17T15:00:00+00:00,2025,MARP,8,False,4877703,2,6603,away,37175,2,0,played,9,0,False,5,0,0,0,0,0,0,,85,,0,0
+330726,Thembinkosi Lorch,2026-10-27T17:00:00+00:00,2026,LPL,1,False,5117341,3,13505,home,114967,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-10-20T17:00:00+00:00,2026,LPL,1,False,5084109,2,13505,home,113576,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-10-14T17:00:00+00:00,2026,LPL,1,False,5078528,1,13505,away,111129,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-05-24T15:00:00+00:00,2025,LPL2,12,False,4878593,5,13505,home,26246,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-05-20T15:00:00+00:00,2025,LPL2,12,False,4878588,4,13505,away,78405,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-05-14T15:00:00+00:00,2025,LPL2,12,False,4878606,3,13505,home,38559,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-05-10T15:00:00+00:00,2025,LPL2,12,False,4878599,2,13505,home,13506,2,1,played,11,11,False,32,0,0,0,0,0,0,,,32,0,0
+330726,Thembinkosi Lorch,2026-05-07T15:00:00+00:00,2025,LPL2,12,False,4878580,1,13505,away,13504,0,0,played,11,11,False,66,0,0,0,0,0,0,,,66,0,0
+330726,Thembinkosi Lorch,2026-04-25T14:00:00+00:00,2025,LPL,1,False,4851651,18,13505,away,134679,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+330726,Thembinkosi Lorch,2026-04-20T14:30:00+00:00,2025,LPL,1,False,4840280,17,13505,home,78405,1,1,played,4,0,False,18,0,0,0,0,0,0,,72,,0,0
 916708,Walid Nassi,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,injured,,,False,0,0,0,0,0,0,0,,,,299,0
 916708,Walid Nassi,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,injured,,,False,0,0,0,0,0,0,0,,,,299,0
 916708,Walid Nassi,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,injured,,,False,0,0,0,0,0,0,0,,,,299,0
@@ -3388,6 +3397,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 916708,Walid Nassi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,played,28,11,False,90,0,0,0,0,0,0,,,,0,0
 916708,Walid Nassi,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,6603,away,37176,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 916708,Walid Nassi,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905257,28,6603,home,59771,1,3,played,28,12,False,78,0,1,0,0,0,0,,,78,0,0
+513275,Tumisang Orebonye,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074881,6,15229,home,13497,1,1,played,11,14,True,83,0,0,2,0,2,0,80,,83,0,0
+513275,Tumisang Orebonye,2026-11-14T16:00:00+00:00,2026,AFCQ,19,True,5074857,5,15229,away,13497,1,1,played,11,14,False,90,0,0,4,3,1,0,,,90,0,0
 513275,Tumisang Orebonye,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,22935,home,37176,2,2,played,28,14,False,71,1,0,0,0,0,0,48,,71,0,0
 513275,Tumisang Orebonye,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,22935,away,6371,0,1,played,28,0,False,27,0,0,0,0,0,0,,63,,0,0
 513275,Tumisang Orebonye,2026-10-28T18:00:00+00:00,2026,MAR1,1,False,5087475,5,22935,away,2068,1,1,played,28,14,False,71,0,0,0,0,0,0,,,71,0,0
@@ -3397,7 +3408,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 513275,Tumisang Orebonye,2026-09-28T19:00:00+00:00,2026,AFCQ,19,True,5069018,4,15229,away,3670,2,2,played,11,14,False,90,0,0,1,1,0,0,,,,0,0
 513275,Tumisang Orebonye,2026-09-27T20:00:00+00:00,2026,MAR1,1,False,5047392,1,22935,away,4697,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 513275,Tumisang Orebonye,2026-09-24T16:00:00+00:00,2026,AFCQ,19,True,5046888,3,15229,away,6602,2,2,played,11,12,False,61,2,0,2,2,0,0,,,61,0,0
-513275,Tumisang Orebonye,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,6603,home,79389,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1253671,Mouad Enzo,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,22,0,False,21,0,0,0,0,0,0,,69,,0,0
 1253671,Mouad Enzo,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,22,0,False,45,0,0,0,0,0,0,,46,,0,0
 1253671,Mouad Enzo,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3508,6 +3518,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1115476,Zakaria Allaoui,2025-03-14T22:00:00+00:00,2024,MAR1,1,False,4577177,25,3282,away,9099,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1115476,Zakaria Allaoui,2025-03-08T22:00:00+00:00,2024,MAR1,1,False,4570075,24,3282,home,12721,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1115476,Zakaria Allaoui,2025-02-28T17:00:00+00:00,2024,MAR1,1,False,4562373,23,3282,away,2068,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+97925,Munir El Kajoui,2026-11-17T20:00:00+00:00,2026,AFCQ,19,True,5074868,6,3575,away,14163,1,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+97925,Munir El Kajoui,2026-11-13T20:00:00+00:00,2026,AFCQ,19,True,5074844,5,3575,home,14163,5,1,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 97925,Munir El Kajoui,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 97925,Munir El Kajoui,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 97925,Munir El Kajoui,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -3600,6 +3612,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 191407,Oussama Haddadi,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,37176,home,9099,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 191407,Oussama Haddadi,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 191407,Oussama Haddadi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922912,30,37176,away,14462,3,1,played,4,3,False,42,0,0,0,0,0,0,,,42,0,0
+1258578,Ilyass Mahsoub,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1258578,Ilyass Mahsoub,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1258578,Ilyass Mahsoub,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
 1258578,Ilyass Mahsoub,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,in squad,30,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3609,7 +3622,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1258578,Ilyass Mahsoub,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919628,29,37176,home,6603,2,0,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 1258578,Ilyass Mahsoub,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905259,28,37176,away,6371,1,2,in squad,34,,False,0,0,0,0,0,0,0,,,,0,0
 1258578,Ilyass Mahsoub,2025-10-19T23:00:00+00:00,2024,20WC,17,True,4745212,8,37630,away,11940,2,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
-1258578,Ilyass Mahsoub,2025-10-15T20:00:00+00:00,2024,20WC,17,True,4745132,6,37630,away,23658,5,4,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 776215,Mamadou Lamine Camara,2026-11-06T17:00:00+00:00,2026,LPL,1,False,5084111,2,13504,away,111129,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 776215,Mamadou Lamine Camara,2026-11-02T17:00:00+00:00,2026,LPL,1,False,5078531,1,13504,home,71005,8,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 776215,Mamadou Lamine Camara,2026-10-28T17:00:00+00:00,2026,LPL,1,False,5117343,3,13504,away,103794,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3688,7 +3700,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1091178,Mohamed Ouyahia,2026-10-13T18:00:00+00:00,2026,MAR1,1,False,5076327,4,37176,home,74953,2,2,played,32,0,False,4,0,0,0,0,0,0,,86,,0,0
 1091178,Mohamed Ouyahia,2026-10-08T16:00:00+00:00,2026,MAR1,1,False,5074732,3,37176,away,79389,0,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 1091178,Mohamed Ouyahia,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,37176,home,9099,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1091178,Mohamed Ouyahia,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,played,32,0,False,90,0,0,0,0,0,0,,,,0,0
+1091178,Mohamed Ouyahia,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,played,32,0,False,90,0,0,0,0,0,0,78,,,0,0
 1091178,Mohamed Ouyahia,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922912,30,37176,away,14462,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 355641,Mounir Chouiar,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,23,11,False,31,1,0,0,0,0,0,,,31,0,0
 355641,Mounir Chouiar,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,23,11,False,78,0,1,0,0,0,0,,,78,0,0
@@ -3742,7 +3754,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 847288,Paul Bassène,2026-08-30T15:45:00+00:00,2026,IRQ1,1,False,5022539,4,103329,home,39299,2,0,played,28,14,False,90,0,0,0,0,0,0,,,,0,0
 847288,Paul Bassène,2026-08-26T15:45:00+00:00,2026,IRQ1,1,False,5022330,3,103329,away,42035,1,1,played,28,14,False,85,0,0,0,0,0,0,,,85,0,0
 847288,Paul Bassène,2026-08-21T18:00:00+00:00,2026,IRQ1,1,False,5016968,2,103329,home,13593,2,1,played,28,14,False,76,1,0,0,0,0,0,,,76,0,0
-847288,Paul Bassène,2026-08-15T18:00:00+00:00,2026,IRQ1,1,False,5016962,1,103329,home,94968,1,1,played,28,14,False,62,0,0,0,0,0,0,,,62,0,0
 1210200,Youness El Kaabi,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1210200,Youness El Kaabi,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 1210200,Youness El Kaabi,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -3751,8 +3762,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1210200,Youness El Kaabi,2026-10-13T18:00:00+00:00,2026,MAR1,1,False,5076327,4,37176,home,74953,2,2,played,24,0,False,24,1,0,0,0,0,0,,66,,0,0
 1210200,Youness El Kaabi,2026-10-08T16:00:00+00:00,2026,MAR1,1,False,5074732,3,37176,away,79389,0,0,played,24,14,False,63,0,0,0,0,0,0,34,,63,0,0
 1210200,Youness El Kaabi,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,37176,home,9099,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1210200,Youness El Kaabi,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,played,24,0,False,72,0,0,0,0,0,0,,,72,0,0
+1210200,Youness El Kaabi,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,played,21,0,False,72,0,0,0,0,0,0,,,72,0,0
 1210200,Youness El Kaabi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922912,30,37176,away,14462,3,1,played,24,0,False,12,0,0,0,0,0,0,,78,,0,0
+1338007,Hamza Raji,2026-11-16T16:00:00+00:00,2026,FS,11,True,5136221,51,37630,away,25249,1,0,played,7,12,False,90,0,0,0,0,0,0,,,,0,0
+1338007,Hamza Raji,2026-11-13T17:00:00+00:00,2026,FS,11,True,5136220,50,37630,home,25249,0,0,played,7,0,False,28,0,0,0,0,0,0,,62,,0,0
 1338007,Hamza Raji,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,7,0,False,29,0,0,0,0,0,0,,61,,0,0
 1338007,Hamza Raji,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,7,0,False,11,0,1,0,0,0,0,81,79,,0,0
 1338007,Hamza Raji,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,played,7,0,False,13,0,0,0,0,0,0,82,77,,0,0
@@ -4004,6 +4017,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 863506,Khalid Baba,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,played,7,0,False,13,0,0,0,0,0,0,,77,,0,0
 863506,Khalid Baba,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,3282,away,48935,0,0,played,7,0,False,85,0,0,0,0,0,0,,,85,0,0
 863506,Khalid Baba,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,3282,home,48935,4,1,played,7,11,False,77,0,0,0,0,0,0,,,77,0,0
+339552,Kabelo Seakanyeng,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074881,6,15229,home,13497,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+339552,Kabelo Seakanyeng,2026-11-14T16:00:00+00:00,2026,AFCQ,19,True,5074857,5,15229,away,13497,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 339552,Kabelo Seakanyeng,2026-09-28T19:00:00+00:00,2026,AFCQ,19,True,5069018,4,15229,away,3670,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 339552,Kabelo Seakanyeng,2026-09-24T16:00:00+00:00,2026,AFCQ,19,True,5046888,3,15229,away,6602,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 339552,Kabelo Seakanyeng,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922913,30,3282,home,59771,2,0,played,7,11,False,80,0,0,0,0,0,0,,,80,0,0
@@ -4012,8 +4027,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 339552,Kabelo Seakanyeng,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905245,27,3282,away,6603,1,0,played,7,0,False,1,0,0,0,0,0,0,,90,,0,0
 339552,Kabelo Seakanyeng,2026-06-21T14:00:00+00:00,2025,MAR1,1,False,4901052,26,3282,home,37176,1,2,played,7,0,False,9,0,0,0,0,0,0,,81,,0,0
 339552,Kabelo Seakanyeng,2026-06-17T15:00:00+00:00,2025,MAR1,1,False,4896970,25,3282,home,14462,2,1,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
-339552,Kabelo Seakanyeng,2026-06-12T15:00:00+00:00,2025,MAR1,1,False,4894532,24,3282,away,6371,1,1,played,7,0,False,90,0,0,0,0,0,0,,,90,0,0
-339552,Kabelo Seakanyeng,2026-06-09T20:00:00+00:00,2025,MAR1,1,False,4894505,23,3282,home,9099,0,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 1433378,Cheikhna Semega,2026-10-23T12:55:00+00:00,2026,OM1L,1,False,5093666,6,62836,away,54467,0,2,played,7,10,False,71,0,0,0,0,0,0,,,71,0,0
 1433378,Cheikhna Semega,2026-10-18T13:00:00+00:00,2026,OM1L,1,False,5082897,5,62836,home,13948,2,3,played,7,14,False,90,1,0,0,0,0,0,,,,0,0
 1433378,Cheikhna Semega,2026-10-09T13:00:00+00:00,2026,OM1L,1,False,5075462,4,62836,away,38406,0,0,played,7,14,False,75,0,0,0,0,0,0,,,75,0,0
@@ -4063,6 +4076,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 913377,Yassine Zoubir,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,2068,away,3282,0,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 913377,Yassine Zoubir,2026-10-03T20:00:00+00:00,2026,MAR1,1,False,5060443,2,2068,home,74953,1,0,in squad,32,,False,0,0,0,0,0,0,0,,,,0,0
 913377,Yassine Zoubir,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922910,30,2068,away,22944,2,0,played,32,1,False,90,0,0,0,0,0,0,,,,0,0
+1256648,Saad Antra,2026-11-16T16:00:00+00:00,2026,FS,11,True,5136221,51,37630,away,25249,1,0,played,22,1,False,90,0,0,0,0,0,0,,,,0,0
+1256648,Saad Antra,2026-11-13T17:00:00+00:00,2026,FS,11,True,5136220,50,37630,home,25249,0,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1256648,Saad Antra,2026-10-06T13:00:00+00:00,2026,FS,11,True,5048813,5,37630,away,39580,2,3,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1256648,Saad Antra,2026-10-03T17:00:00+00:00,2026,FS,11,True,5048812,4,37630,away,16121,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1256648,Saad Antra,2026-09-30T13:30:00+00:00,2026,FS,11,True,5048810,3,37630,away,32344,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4072,7 +4087,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1256648,Saad Antra,2026-08-26T08:30:00+00:00,2026,FS,11,True,5022419,45,37630,away,43877,5,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1256648,Saad Antra,2026-08-24T08:30:00+00:00,2026,FS,11,True,5022418,45,37630,away,26236,0,1,played,22,1,False,90,0,0,0,0,0,0,,,,0,0
 1256648,Saad Antra,2026-08-22T19:00:00+00:00,2026,FS,11,True,5027632,45,37630,away,22586,2,2,played,22,1,False,90,0,0,0,0,0,0,,,,0,0
-1256648,Saad Antra,2026-07-30T20:30:00+00:00,2026,FS,11,True,4976143,45,37630,away,69282,2,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 518804,Youssef Belammari,2026-11-07T18:00:00+00:00,2026,EGYP,8,False,5126899,3,7,home,28198,3,0,injured,,,False,0,0,0,0,0,0,0,,,,1,9
 518804,Youssef Belammari,2026-11-02T17:00:00+00:00,2026,EGLC,14,False,5039466,2,7,home,3369,1,0,injured,,,False,0,0,0,0,0,0,0,,,,1,9
 518804,Youssef Belammari,2026-10-29T14:00:00+00:00,2026,EGY1,1,False,5009012,8,7,away,68770,1,0,injured,,,False,0,0,0,0,0,0,0,,,,1,9
@@ -4233,6 +4247,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 904603,Othmane Chraibi,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,2068,away,3282,0,0,played,19,7,False,36,0,0,0,0,0,0,,,,0,0
 904603,Othmane Chraibi,2026-10-03T20:00:00+00:00,2026,MAR1,1,False,5060443,2,2068,home,74953,1,0,played,19,7,False,75,1,0,0,0,0,0,,,75,0,0
 904603,Othmane Chraibi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922910,30,2068,away,22944,2,0,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
+1106691,Balla Moussa Conté,2026-10-21T16:00:00+00:00,2026,ACL,10,False,5082163,4,9052,home,93256,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1106691,Balla Moussa Conté,2026-10-17T11:00:00+00:00,2026,ACL,10,False,5082162,3,9052,away,93256,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1106691,Balla Moussa Conté,2026-09-12T13:00:00+00:00,2026,ACL,10,False,5010744,2,9052,home,29852,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1106691,Balla Moussa Conté,2026-09-05T17:00:00+00:00,2026,ACL,10,False,5009562,1,9052,away,29852,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1106691,Balla Moussa Conté,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922910,30,2068,away,22944,2,0,played,26,6,False,90,0,0,0,0,0,0,,,,0,0
@@ -4241,8 +4257,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1106691,Balla Moussa Conté,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905244,27,2068,away,103954,1,2,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 1106691,Balla Moussa Conté,2026-06-21T14:00:00+00:00,2025,MAR1,1,False,4901050,26,2068,home,30625,2,1,played,26,0,False,3,0,0,0,0,0,0,,87,,0,0
 1106691,Balla Moussa Conté,2026-06-17T15:00:00+00:00,2025,MAR1,1,False,4896969,25,2068,away,74953,4,3,played,26,0,False,45,0,0,0,0,0,0,59,46,,0,0
-1106691,Balla Moussa Conté,2026-06-14T15:00:00+00:00,2025,MAR1,1,False,4894535,24,2068,home,79389,1,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
-1106691,Balla Moussa Conté,2026-06-09T18:00:00+00:00,2025,MAR1,1,False,4894504,23,2068,away,4697,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 152241,Besar Halimi,2026-11-08T12:00:00+00:00,2026,KO1,1,False,5076218,13,33741,away,19697,1,1,played,11,10,False,8,0,0,0,0,0,0,,82,,0,0
 152241,Besar Halimi,2026-11-04T12:00:00+00:00,2026,KO1,1,False,4972614,2,33741,home,1918,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 152241,Besar Halimi,2026-10-31T12:00:00+00:00,2026,KO1,1,False,5076210,12,33741,home,28476,3,1,in squad,11,10,False,0,0,0,0,0,0,0,,,,0,0
@@ -4273,6 +4287,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 241324,Bilal Ould-Chikh,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,2068,away,3282,0,0,played,45,12,False,60,0,0,0,0,0,0,,,60,0,0
 241324,Bilal Ould-Chikh,2026-10-03T20:00:00+00:00,2026,MAR1,1,False,5060443,2,2068,home,74953,1,0,played,45,12,False,62,0,0,0,0,0,0,,,62,0,0
 241324,Bilal Ould-Chikh,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922910,30,2068,away,22944,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+677986,Mohammad Abu Zrayq,2026-11-17T16:00:00+00:00,2026,FS,11,True,5119508,6,15737,home,3433,2,0,in squad,7,,False,0,0,0,0,0,0,0,,,,0,0
 677986,Mohammad Abu Zrayq,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,2068,home,12721,2,0,played,27,12,False,54,0,0,0,0,0,0,,,54,0,0
 677986,Mohammad Abu Zrayq,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,2068,away,9099,2,1,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 677986,Mohammad Abu Zrayq,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,2068,away,37176,0,2,played,27,0,False,45,0,0,0,0,0,0,,46,,0,0
@@ -4331,8 +4346,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 679259,Víctor Ábrego,2026-08-31T19:00:00+00:00,2025,BVC1,8,False,5018371,2,17422,away,92979,1,5,played,91,0,False,33,0,0,2,1,0,1,,57,,0,0
 679259,Víctor Ábrego,2026-08-27T22:30:00+00:00,2025,BO1A,1,False,5009846,17,17422,away,30854,1,3,played,91,9,False,90,0,0,2,1,1,0,,,,0,0
 679259,Víctor Ábrego,2026-08-23T21:15:00+00:00,2025,BO1A,1,False,5009838,16,17422,home,8056,1,1,played,91,11,False,83,0,0,3,2,0,1,75,,83,0,0
-679259,Víctor Ábrego,2026-08-18T22:00:00+00:00,2025,BVC1,8,False,5018359,1,17422,home,92977,2,1,played,91,0,False,21,0,0,0,0,0,0,,69,,0,0
-679259,Víctor Ábrego,2026-08-15T21:15:00+00:00,2025,BO1A,1,False,5009827,15,17422,home,5570,3,1,played,91,11,False,90,1,0,4,4,0,0,,,,0,0
 847308,Pape Ousmane Sakho,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,2068,home,12721,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 847308,Pape Ousmane Sakho,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,2068,away,9099,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 847308,Pape Ousmane Sakho,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,2068,away,37176,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4371,6 +4384,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1330869,Azzedine Laftah,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905255,28,2068,away,12721,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1330869,Azzedine Laftah,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905244,27,2068,away,103954,1,2,played,88,11,False,45,0,0,0,0,0,0,,,46,0,0
 1330869,Azzedine Laftah,2026-06-21T14:00:00+00:00,2025,MAR1,1,False,4901050,26,2068,home,30625,2,1,played,88,11,False,62,0,0,0,0,0,0,,,62,0,0
+238997,Ahmed Reda Tagnaouti,2026-11-17T20:00:00+00:00,2026,AFCQ,19,True,5074868,6,3575,away,14163,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+238997,Ahmed Reda Tagnaouti,2026-11-13T20:00:00+00:00,2026,AFCQ,19,True,5074844,5,3575,home,14163,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 238997,Ahmed Reda Tagnaouti,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,16,0,False,90,0,0,0,0,0,0,,,,0,0
 238997,Ahmed Reda Tagnaouti,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,16,1,False,90,0,0,0,0,0,0,90,,,0,0
 238997,Ahmed Reda Tagnaouti,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -4413,6 +4428,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1247671,Marouane Cherquaoui,2026-05-30T19:00:00+00:00,2025,MAR1,1,False,4888848,21,9099,away,6371,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1247671,Marouane Cherquaoui,2026-05-24T19:00:00+00:00,2025,ACL,10,False,4829702,16,9099,home,6356,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1247671,Marouane Cherquaoui,2026-05-17T14:00:00+00:00,2025,ACL,10,False,4829701,15,9099,away,6356,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+635927,Fallou Mendy,2026-11-17T16:00:00+00:00,2026,AFCQ,19,True,5074889,6,3701,home,14635,2,0,in squad,24,,False,0,0,0,0,0,0,0,,,,0,0
 635927,Fallou Mendy,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,4,0,False,90,0,0,0,0,0,0,,,,0,0
 635927,Fallou Mendy,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,4,3,False,90,0,0,0,0,0,0,53,,,0,0
 635927,Fallou Mendy,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -4422,7 +4438,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 635927,Fallou Mendy,2026-10-12T20:00:00+00:00,2026,MAR1,1,False,5076326,4,9099,away,22935,2,2,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 635927,Fallou Mendy,2026-10-08T18:00:00+00:00,2026,MAR1,1,False,5074734,3,9099,home,59814,1,0,played,4,3,False,90,0,0,0,0,0,0,,,,0,0
 635927,Fallou Mendy,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-635927,Fallou Mendy,2026-07-08T19:00:00+00:00,2025,MARP,8,False,4877702,2,9099,home,62626,2,1,played,4,3,False,45,0,0,0,0,0,0,,,45,0,0
 518801,Marouane Louadni,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
 518801,Marouane Louadni,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 518801,Marouane Louadni,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,15,3,False,90,0,0,0,0,0,0,14,,,0,0
@@ -4433,6 +4448,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 518801,Marouane Louadni,2026-10-08T18:00:00+00:00,2026,MAR1,1,False,5074734,3,9099,home,59814,1,0,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
 518801,Marouane Louadni,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 518801,Marouane Louadni,2026-07-08T19:00:00+00:00,2025,MARP,8,False,4877702,2,9099,home,62626,2,1,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
+573065,Tó Carneiro,2026-11-17T13:00:00+00:00,2026,AFCQ,19,True,5074870,6,3585,away,33192,1,0,played,13,4,False,90,0,0,1,0,0,1,,,,0,0
+573065,Tó Carneiro,2026-11-14T19:00:00+00:00,2026,AFCQ,19,True,5074845,5,3585,home,33192,2,0,played,13,0,False,25,0,0,1,0,1,0,,65,,0,0
 573065,Tó Carneiro,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,2,0,False,90,0,0,0,0,0,0,,,,0,0
 573065,Tó Carneiro,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,2,4,False,45,0,0,0,0,0,0,,45,,0,0
 573065,Tó Carneiro,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,2,4,False,90,0,0,0,0,0,0,,,,0,0
@@ -4504,6 +4521,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 711281,Abdelfettah Hadraf,2026-10-08T18:00:00+00:00,2026,MAR1,1,False,5074734,3,9099,home,59814,1,0,in squad,40,,False,0,0,0,0,0,0,0,,,,0,0
 711281,Abdelfettah Hadraf,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 711281,Abdelfettah Hadraf,2026-07-08T19:00:00+00:00,2025,MARP,8,False,4877702,2,9099,home,62626,2,1,played,40,10,False,77,0,0,0,0,0,0,,,77,0,0
+276768,Nolan Mbemba,2026-11-14T17:00:00+00:00,2026,FRC,8,False,5102486,3,1564,away,68739,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276768,Nolan Mbemba,2026-11-07T13:45:00+00:00,2026,FR3,3,False,4912560,12,1564,home,595,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276768,Nolan Mbemba,2026-10-31T13:45:00+00:00,2026,FR3,3,False,4912550,11,1564,home,21688,2,1,played,6,6,False,65,0,0,1,0,1,0,,,65,0,0
 276768,Nolan Mbemba,2026-10-24T17:00:00+00:00,2026,FRC,8,False,5082586,2,1564,away,131254,7,0,played,0,0,False,25,0,0,0,0,0,0,,65,,0,0
@@ -4513,7 +4531,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 276768,Nolan Mbemba,2026-09-24T18:45:00+00:00,2026,FR3,3,False,4912525,8,1564,away,1162,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276768,Nolan Mbemba,2026-09-19T12:45:00+00:00,2026,FR3,3,False,4912515,7,1564,home,42609,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 276768,Nolan Mbemba,2026-09-12T12:45:00+00:00,2026,FR3,3,False,4912507,6,1564,away,94385,4,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-276768,Nolan Mbemba,2026-07-08T19:00:00+00:00,2025,MARP,8,False,4877702,2,9099,home,62626,2,1,played,26,7,False,90,0,0,0,0,0,0,56,,,0,0
 711572,Zineddine Derrag,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
 711572,Zineddine Derrag,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 711572,Zineddine Derrag,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,6,0,False,30,0,0,0,0,0,0,,60,,0,0
@@ -4567,6 +4584,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 507374,Ahmed Hammoudan,2026-10-08T18:00:00+00:00,2026,MAR1,1,False,5074734,3,9099,home,59814,1,0,played,11,11,False,66,0,0,0,0,0,0,,,66,0,0
 507374,Ahmed Hammoudan,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507374,Ahmed Hammoudan,2026-07-08T19:00:00+00:00,2025,MARP,8,False,4877702,2,9099,home,62626,2,1,played,11,11,True,90,0,0,0,0,0,0,,,,0,0
+1004383,Ricardo Coutinho,2026-11-14T17:00:00+00:00,2026,FRC,8,False,5102530,3,7124,away,9202,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1004383,Ricardo Coutinho,2026-11-07T13:45:00+00:00,2026,FR3,3,False,4912565,12,7124,away,18633,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1004383,Ricardo Coutinho,2026-10-31T13:45:00+00:00,2026,FR3,3,False,4912555,11,7124,away,595,0,2,played,29,14,False,81,0,0,0,0,0,0,,,81,0,0
 1004383,Ricardo Coutinho,2026-10-24T16:30:00+00:00,2026,FRC,8,False,5082585,2,7124,away,80422,5,4,played,0,0,False,29,0,0,0,0,0,0,,46,75,0,0
@@ -4652,8 +4670,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 627926,Hodaifa El Mhassani,2026-09-01T15:00:00+00:00,2026,RUP,8,False,4904797,9,1124,home,16704,4,5,played,22,8,False,90,0,0,0,0,0,0,,,,0,0
 627926,Hodaifa El Mhassani,2026-08-29T12:00:00+00:00,2026,RU1,1,False,4904736,6,1124,home,964,0,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 627926,Hodaifa El Mhassani,2026-08-22T12:30:00+00:00,2026,RU1,1,False,4904728,5,1124,home,14589,0,0,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
-627926,Hodaifa El Mhassani,2026-08-18T17:45:00+00:00,2026,RUP,8,False,4904790,8,1124,away,3725,1,2,played,22,8,False,90,0,0,0,0,0,0,,,,0,0
-627926,Hodaifa El Mhassani,2026-08-15T13:15:00+00:00,2026,RU1,1,False,4904718,4,1124,away,2410,0,1,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 816064,Mouad Bahsain,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,22935,home,37176,2,2,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 816064,Mouad Bahsain,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,22935,away,6371,0,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 816064,Mouad Bahsain,2026-10-28T18:00:00+00:00,2026,MAR1,1,False,5087475,5,22935,away,2068,1,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4674,6 +4690,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1055193,Yassine Amhih,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922911,30,6371,home,103954,0,1,played,4,3,False,45,0,0,0,0,0,0,,,45,0,0
 1055193,Yassine Amhih,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919627,29,6371,away,74953,1,1,played,4,3,False,83,0,0,0,0,0,0,,,83,0,0
 1055193,Yassine Amhih,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905259,28,6371,home,37176,2,1,played,4,0,False,90,0,0,0,0,0,0,,,,0,0
+618818,Fernando Chamboco,2026-11-17T13:00:00+00:00,2026,AFCQ,19,True,5074885,6,5129,away,13941,1,0,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
+618818,Fernando Chamboco,2026-11-13T13:00:00+00:00,2026,AFCQ,19,True,5074861,5,5129,home,13941,0,1,played,4,0,False,45,0,0,0,0,0,0,,46,,0,0
 618818,Fernando Chamboco,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,6371,away,3282,0,1,played,31,3,False,90,0,0,0,0,0,0,,,,0,0
 618818,Fernando Chamboco,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,6371,home,22935,1,0,played,31,3,False,90,0,0,0,0,0,0,,,,0,0
 618818,Fernando Chamboco,2026-10-25T16:00:00+00:00,2026,MAR1,1,False,5087473,5,6371,away,74953,1,0,played,31,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -4683,7 +4701,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 618818,Fernando Chamboco,2026-09-29T13:00:00+00:00,2026,AFCQ,19,True,5047021,4,5129,home,13313,4,1,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 618818,Fernando Chamboco,2026-09-26T16:00:00+00:00,2026,MAR1,1,False,5047391,1,6371,away,79389,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 618818,Fernando Chamboco,2026-09-25T13:00:00+00:00,2026,AFCQ,19,True,5046891,3,5129,home,3499,1,1,played,4,0,False,24,0,0,0,0,0,0,,66,,0,0
-618818,Fernando Chamboco,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922911,30,6371,home,103954,0,1,played,31,3,False,90,0,0,0,0,0,0,,,,0,0
 834876,Amine Farhane,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,6371,away,3282,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 834876,Amine Farhane,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,6371,home,22935,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 834876,Amine Farhane,2026-10-25T16:00:00+00:00,2026,MAR1,1,False,5087473,5,6371,away,74953,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -4832,7 +4849,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 844300,Ayoub Mouloua,2026-09-05T14:00:00+00:00,2026,SC1,1,False,4910350,6,370,home,2553,0,0,played,9,0,False,45,0,0,1,1,0,0,52,46,,0,0
 844300,Ayoub Mouloua,2026-09-02T18:45:00+00:00,2026,SC1,1,False,4910374,5,370,away,371,0,3,played,9,14,False,45,0,0,1,0,1,0,,,46,0,0
 844300,Ayoub Mouloua,2026-08-30T11:00:00+00:00,2026,SC1,1,False,4910338,4,370,home,124,0,1,played,9,0,False,15,0,0,0,0,0,0,,75,,0,0
-844300,Ayoub Mouloua,2026-08-15T14:00:00+00:00,2026,SCP,14,False,4985906,6,370,home,511,3,0,played,9,0,False,13,0,0,0,0,0,0,,77,,0,0
 738951,Amine Souane,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,6371,away,3282,0,1,played,14,12,False,79,0,0,0,0,0,0,,,79,0,0
 738951,Amine Souane,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,6371,home,22935,1,0,played,14,12,False,90,0,0,0,0,0,0,90,,,0,0
 738951,Amine Souane,2026-10-25T16:00:00+00:00,2026,MAR1,1,False,5087473,5,6371,away,74953,1,0,played,14,12,False,90,1,0,0,0,0,0,,,90,0,0
@@ -4963,6 +4979,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1233132,Ismail Hrila,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922907,30,22935,home,4697,1,1,played,34,3,False,90,0,0,0,0,0,0,31,,,0,0
 1233132,Ismail Hrila,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919631,29,22935,away,2068,0,2,played,34,3,False,90,0,0,0,0,0,0,,,,0,0
 1233132,Ismail Hrila,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905252,28,22935,home,74953,1,1,played,34,0,False,90,0,0,0,0,0,0,,,,0,0
+913644,Zakary Lamgahez,2026-11-14T17:00:00+00:00,2026,FRC,8,False,5102486,3,1564,away,68739,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 913644,Zakary Lamgahez,2026-11-07T13:45:00+00:00,2026,FR3,3,False,4912560,12,1564,home,595,2,0,played,15,0,False,1,0,0,0,0,0,0,,90,,0,0
 913644,Zakary Lamgahez,2026-10-31T13:45:00+00:00,2026,FR3,3,False,4912550,11,1564,home,21688,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 913644,Zakary Lamgahez,2026-10-24T17:00:00+00:00,2026,FRC,8,False,5082586,2,1564,away,131254,7,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5065,6 +5082,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1174677,Zakaria Ami,2026-06-08T20:00:00+00:00,2025,MAR1,1,False,4894501,23,22935,away,59771,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1174677,Zakaria Ami,2026-06-04T18:00:00+00:00,2025,MAR1,1,False,4888855,22,22935,home,6371,0,0,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
 1174677,Zakaria Ami,2026-05-23T18:00:00+00:00,2025,MAR1,1,False,4888844,21,22935,away,6603,2,3,in squad,8,,False,0,0,0,0,0,0,0,,,,0,0
+467571,Fred Dembi,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074879,6,3702,home,16430,0,1,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
+467571,Fred Dembi,2026-11-13T13:00:00+00:00,2026,AFCQ,19,True,5074856,5,3702,away,16430,0,0,in squad,6,,False,0,0,0,0,0,0,0,,,,0,0
 467571,Fred Dembi,2026-11-06T12:45:00+00:00,2026,UAE2,2,False,5082495,9,56513,away,44289,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 467571,Fred Dembi,2026-10-31T12:55:00+00:00,2026,UAE2,2,False,5082490,8,56513,home,103824,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 467571,Fred Dembi,2026-10-17T13:05:00+00:00,2026,UAE2,2,False,5082505,7,56513,away,94192,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5148,7 +5167,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1337458,Baba Bello Ilou,2026-09-04T13:45:00+00:00,2026,UAE1,1,False,5022619,4,2150,away,38040,2,0,played,18,14,False,58,1,0,3,2,1,0,,,58,0,0
 1337458,Baba Bello Ilou,2026-08-29T16:30:00+00:00,2026,UAE1,1,False,5022615,3,2150,home,5432,2,1,played,18,0,False,19,0,0,0,0,0,0,,71,,0,0
 1337458,Baba Bello Ilou,2026-08-22T16:35:00+00:00,2026,UAE1,1,False,5022608,2,2150,home,26351,2,0,played,18,0,False,45,0,0,2,0,2,0,,45,,0,0
-1337458,Baba Bello Ilou,2026-08-16T16:45:00+00:00,2026,UAE1,1,False,5022599,1,2150,away,4785,4,2,played,18,0,False,12,0,0,0,0,0,0,,78,,0,0
 1386941,Othmane Boudfiri,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922907,30,22935,home,4697,1,1,played,4,0,False,6,0,0,0,0,0,0,,84,,0,0
 1386941,Othmane Boudfiri,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919631,29,22935,away,2068,0,2,in squad,4,,False,0,0,0,0,0,0,0,,,,0,0
 1386941,Othmane Boudfiri,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905252,28,22935,home,74953,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5159,6 +5177,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1386941,Othmane Boudfiri,2026-06-08T20:00:00+00:00,2025,MAR1,1,False,4894501,23,22935,away,59771,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1386941,Othmane Boudfiri,2026-06-04T18:00:00+00:00,2025,MAR1,1,False,4888855,22,22935,home,6371,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1386941,Othmane Boudfiri,2026-05-23T18:00:00+00:00,2025,MAR1,1,False,4888844,21,22935,away,6603,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+507135,Hamid Ahadad,2026-11-13T20:00:00+00:00,2026,AFCQ,19,True,5074844,5,3575,home,14163,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507135,Hamid Ahadad,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,22935,home,37176,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507135,Hamid Ahadad,2026-10-31T20:00:00+00:00,2026,MAR1,1,False,5101415,6,22935,away,6371,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 507135,Hamid Ahadad,2026-10-28T18:00:00+00:00,2026,MAR1,1,False,5087475,5,22935,away,2068,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5491,6 +5510,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 846673,Amine El Ouaad,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919632,29,12721,away,79389,0,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 846673,Amine El Ouaad,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905255,28,12721,home,2068,1,1,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
 846673,Amine El Ouaad,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905247,27,12721,away,59771,0,2,played,1,1,False,90,0,0,0,0,0,0,,,,0,0
+461581,Malcolm Barcola,2026-11-17T16:00:00+00:00,2026,AFCQ,19,True,5074884,6,3815,home,3614,3,0,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
+461581,Malcolm Barcola,2026-11-14T19:00:00+00:00,2026,AFCQ,19,True,5074859,5,3815,away,3614,0,1,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 461581,Malcolm Barcola,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,12721,away,2068,0,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 461581,Malcolm Barcola,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,12721,home,74953,1,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 461581,Malcolm Barcola,2026-10-28T20:00:00+00:00,2026,MAR1,1,False,5087476,5,12721,away,9099,0,2,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5500,7 +5521,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 461581,Malcolm Barcola,2026-09-29T16:00:00+00:00,2026,AFCQ,19,True,5047019,4,3815,away,3703,0,2,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 461581,Malcolm Barcola,2026-09-25T16:00:00+00:00,2026,AFCQ,19,True,5046890,3,3815,home,13943,1,0,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 461581,Malcolm Barcola,2026-09-24T20:00:00+00:00,2026,MAR1,1,False,5047390,1,12721,away,85473,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-461581,Malcolm Barcola,2026-07-19T15:30:00+00:00,2026,FS,11,True,4953793,1,32302,home,38132,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 614506,Ahmed Azmi,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,12721,away,2068,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 614506,Ahmed Azmi,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,12721,home,74953,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 614506,Ahmed Azmi,2026-10-28T20:00:00+00:00,2026,MAR1,1,False,5087476,5,12721,away,9099,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5661,6 +5681,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1506544,Akram Tali,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922909,30,12721,home,30625,2,1,in squad,61,,False,0,0,0,0,0,0,0,,,,0,0
 1506544,Akram Tali,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905255,28,12721,home,2068,1,1,in squad,61,,False,0,0,0,0,0,0,0,,,,0,0
 1506544,Akram Tali,2026-06-25T17:00:00+00:00,2025,MAR1,1,False,4905247,27,12721,away,59771,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134280,Abdelhamid Maali,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,played,17,10,False,90,1,2,0,0,0,0,,,,0,0
 1134280,Abdelhamid Maali,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,played,17,0,False,27,0,0,0,0,0,0,,63,,0,0
 1134280,Abdelhamid Maali,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,12721,away,2068,0,2,played,17,0,False,45,0,0,0,0,0,0,,46,,0,0
 1134280,Abdelhamid Maali,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,12721,home,74953,1,0,played,17,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -5670,7 +5691,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1134280,Abdelhamid Maali,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,12721,home,9100,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,5
 1134280,Abdelhamid Maali,2026-10-01T15:00:00+00:00,2026,FS,11,True,5063430,1,34903,home,46122,1,1,played,28,0,False,20,0,0,0,0,0,0,,70,,0,0
 1134280,Abdelhamid Maali,2026-09-24T20:00:00+00:00,2026,MAR1,1,False,5047390,1,12721,away,85473,3,1,played,17,10,False,85,1,1,0,0,0,0,,,85,0,0
-1134280,Abdelhamid Maali,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922909,30,12721,home,30625,2,1,played,17,0,False,90,0,0,0,0,0,0,,,,0,0
 701611,Jawad Ghabra,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,4697,home,6603,2,1,played,19,14,False,90,0,0,0,0,0,0,,,,0,0
 701611,Jawad Ghabra,2026-10-31T16:00:00+00:00,2026,MAR1,1,False,5101413,6,4697,away,85473,1,0,played,19,14,False,90,1,0,0,0,0,0,,,,0,0
 701611,Jawad Ghabra,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,4697,home,14462,1,1,played,19,14,False,68,1,0,0,0,0,0,42,,68,0,0
@@ -5711,6 +5731,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1170795,Abdoulaye Kanou,2026-05-14T15:00:00+00:00,2025,TUN1,1,False,4870587,30,17534,away,39801,0,0,played,9,0,False,90,0,0,0,0,0,0,,,,0,0
 1170795,Abdoulaye Kanou,2026-05-08T15:00:00+00:00,2025,TUN1,1,False,4870594,29,17534,home,9890,1,0,played,9,0,False,90,0,0,0,0,0,0,,,,0,0
 1170795,Abdoulaye Kanou,2026-05-03T15:00:00+00:00,2025,TUN1,1,False,4861770,28,17534,away,22812,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+176573,Babacar Niasse,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074878,6,14238,home,5872,1,3,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
+176573,Babacar Niasse,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074854,5,14238,away,5872,0,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 176573,Babacar Niasse,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,14462,away,9099,1,3,played,30,0,False,90,0,0,0,0,0,0,,,,0,0
 176573,Babacar Niasse,2026-10-30T20:00:00+00:00,2026,MAR1,1,False,5101412,6,14462,home,79389,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 176573,Babacar Niasse,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,14462,away,4697,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5719,8 +5741,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 176573,Babacar Niasse,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,14462,home,6603,0,2,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
 176573,Babacar Niasse,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047013,4,14238,away,3955,1,2,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
 176573,Babacar Niasse,2026-09-24T16:00:00+00:00,2026,AFCQ,19,True,5046884,3,14238,away,12933,3,1,in squad,16,,False,0,0,0,0,0,0,0,,,,0,0
-176573,Babacar Niasse,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919630,29,14462,away,103954,2,2,played,30,1,False,90,0,0,0,0,0,0,,,,0,0
-176573,Babacar Niasse,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905253,28,14462,home,4697,1,1,played,30,0,False,90,0,0,0,0,0,0,,,,0,0
 1307857,Ayoub Ait Wahmane,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,14462,away,9099,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1307857,Ayoub Ait Wahmane,2026-10-30T20:00:00+00:00,2026,MAR1,1,False,5101412,6,14462,home,79389,1,1,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
 1307857,Ayoub Ait Wahmane,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,14462,away,4697,1,1,played,16,1,False,90,0,0,0,0,0,0,,,,0,0
@@ -5781,16 +5801,16 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 902827,Soufiane Abaaziz,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922912,30,14462,home,37176,1,3,played,23,0,False,90,0,0,0,0,0,0,,,,0,0
 902827,Soufiane Abaaziz,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919630,29,14462,away,103954,2,2,played,23,5,False,90,0,1,0,0,0,0,,,,0,0
 902827,Soufiane Abaaziz,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905253,28,14462,home,4697,1,1,played,23,0,False,90,0,0,0,0,0,0,15,,,0,0
-235116,Marouane Hadhoudi,2026-01-25T15:00:00+00:00,2025,MAR1,1,False,4809273,9,74953,home,30625,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-11-09T15:00:00+00:00,2025,MAR1,1,False,4760784,8,14462,home,6371,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-11-05T17:00:00+00:00,2025,MAR1,1,False,4749236,6,14462,away,22944,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-11-02T17:00:00+00:00,2025,MAR1,1,False,4758564,7,14462,home,9099,0,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-10-19T17:00:00+00:00,2025,MAR1,1,False,4749051,5,14462,home,12721,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-10-05T15:00:00+00:00,2025,MAR1,1,False,4734748,4,14462,away,22935,1,2,played,15,0,False,2,0,0,0,0,0,0,,88,,0,0
-235116,Marouane Hadhoudi,2025-09-28T15:00:00+00:00,2025,MAR1,1,False,4734738,3,14462,home,2068,0,2,played,15,3,False,90,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-09-21T15:00:00+00:00,2025,MAR1,1,False,4725608,2,14462,away,74953,0,0,played,15,0,False,90,0,0,0,0,0,0,62,,,0,0
-235116,Marouane Hadhoudi,2025-09-14T17:00:00+00:00,2025,MAR1,1,False,4706737,1,14462,home,30625,0,0,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
-235116,Marouane Hadhoudi,2025-05-11T19:00:00+00:00,2024,MAR1,1,False,4608522,30,14462,home,12721,2,1,played,15,0,False,90,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-11-13T20:00:00+00:00,2026,AFCQ,19,True,5074844,5,3575,home,14163,5,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-10-04T18:00:00+00:00,2026,FS,11,True,5071456,4,3575,home,3674,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-09-29T13:00:00+00:00,2026,AFCQ,19,True,5047004,4,3575,away,13962,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-09-25T19:00:00+00:00,2026,AFCQ,19,True,5046873,3,3575,home,5704,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-07-09T20:00:00+00:00,2025,FIWC,11,True,4776703,6,3575,away,3377,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-07-04T17:00:00+00:00,2025,FIWC,11,True,4776695,5,3575,away,3510,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-06-30T01:00:00+00:00,2025,FIWC,11,True,4776681,4,3575,away,3379,4,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-06-24T22:00:00+00:00,2025,FIWC,11,True,4776652,3,3575,away,14161,4,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-06-19T22:00:00+00:00,2025,FIWC,11,True,4776628,2,3575,away,3380,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+235116,Marouane Hadhoudi,2026-06-13T22:00:00+00:00,2025,FIWC,11,True,4776603,1,3575,away,3439,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1203850,Oussama Benchchaoui,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,14462,away,9099,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1203850,Oussama Benchchaoui,2026-10-30T20:00:00+00:00,2026,MAR1,1,False,5101412,6,14462,home,79389,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1203850,Oussama Benchchaoui,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,14462,away,4697,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5985,6 +6005,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 897139,Naoufal Ait Oubna,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922907,30,4697,away,22935,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 897139,Naoufal Ait Oubna,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919625,29,4697,home,3282,0,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 897139,Naoufal Ait Oubna,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905253,28,4697,away,14462,1,1,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
+1410532,Anass Rachak,2026-11-16T16:00:00+00:00,2026,FS,11,True,5136221,51,37630,away,25249,1,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
+1410532,Anass Rachak,2026-11-13T17:00:00+00:00,2026,FS,11,True,5136220,50,37630,home,25249,0,0,in squad,12,,False,0,0,0,0,0,0,0,,,,0,0
 1410532,Anass Rachak,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,4697,home,6603,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1410532,Anass Rachak,2026-10-31T16:00:00+00:00,2026,MAR1,1,False,5101413,6,4697,away,85473,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1410532,Anass Rachak,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,4697,home,14462,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -5993,8 +6015,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1410532,Anass Rachak,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060441,2,4697,away,30625,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1410532,Anass Rachak,2026-09-27T20:00:00+00:00,2026,MAR1,1,False,5047392,1,4697,home,22935,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1410532,Anass Rachak,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922907,30,4697,away,22935,1,1,in squad,80,,False,0,0,0,0,0,0,0,,,,0,0
-1410532,Anass Rachak,2026-07-02T17:00:00+00:00,2025,MAR1,1,False,4919625,29,4697,home,3282,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1410532,Anass Rachak,2026-06-28T17:00:00+00:00,2025,MAR1,1,False,4905253,28,4697,away,14462,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1440454,Hamza Fassoukh,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,4697,home,6603,2,1,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 1440454,Hamza Fassoukh,2026-10-31T16:00:00+00:00,2026,MAR1,1,False,5101413,6,4697,away,85473,1,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 1440454,Hamza Fassoukh,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,4697,home,14462,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6147,7 +6167,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1033957,Ismail Mihrab,2026-08-31T18:00:00+00:00,2026,IRQ1,1,False,5022543,4,13595,home,28333,2,0,played,33,0,False,7,0,0,0,0,0,0,,83,,0,0
 1033957,Ismail Mihrab,2026-08-25T15:30:00+00:00,2026,IRQ1,1,False,5022331,3,13595,away,31272,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1033957,Ismail Mihrab,2026-08-21T18:30:00+00:00,2026,IRQ1,1,False,5016969,2,13595,home,23805,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1033957,Ismail Mihrab,2026-08-16T18:00:00+00:00,2026,IRQ1,1,False,5016965,1,13595,home,42035,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 536879,Youssef Zghoudi,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,4697,home,6603,2,1,played,17,0,False,21,0,0,0,0,0,0,87,69,,0,0
 536879,Youssef Zghoudi,2026-10-31T16:00:00+00:00,2026,MAR1,1,False,5101413,6,4697,away,85473,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 536879,Youssef Zghoudi,2026-10-25T18:00:00+00:00,2026,MAR1,1,False,5087474,5,4697,home,14462,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6248,6 +6267,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 869457,Walid Hasbi,2026-07-21T18:00:00+00:00,2025,MRR1,12,False,4942702,2,79389,home,22937,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 869457,Walid Hasbi,2026-07-17T19:00:00+00:00,2025,MRR1,12,False,4942700,1,79389,away,22937,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 869457,Walid Hasbi,2026-07-05T17:00:00+00:00,2025,MAR1,1,False,4922914,30,79389,away,6603,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1134255,Fouad Zahouani,2026-11-17T15:30:00+00:00,2026,FS,11,True,5119239,2,34903,home,147080,5,3,played,15,0,False,13,0,0,0,0,0,0,,77,,0,0
 1134255,Fouad Zahouani,2026-11-12T13:00:00+00:00,2026,FS,11,True,5119238,2,34903,away,147080,1,0,played,15,3,False,90,0,0,0,0,0,0,66,,,0,0
 1134255,Fouad Zahouani,2026-11-06T19:00:00+00:00,2026,NL2,2,False,4914184,14,8817,away,3892,3,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134255,Fouad Zahouani,2026-11-02T19:00:00+00:00,2026,NL2,2,False,4914170,13,8817,home,499,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6262,7 +6282,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1134255,Fouad Zahouani,2026-08-31T18:00:00+00:00,2026,NL2,2,False,4913068,8,8817,away,9715,1,1,in squad,19,,False,0,0,0,0,0,0,0,,,,0,0
 1134255,Fouad Zahouani,2026-08-28T18:00:00+00:00,2026,NL2,2,False,4913021,4,8817,home,500,3,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1134255,Fouad Zahouani,2026-08-22T14:30:00+00:00,2026,NL2,2,False,4913045,3,8817,away,132,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1134255,Fouad Zahouani,2026-08-17T18:00:00+00:00,2026,NL2,2,False,4913017,2,8817,home,1283,4,6,played,15,4,False,12,0,0,0,0,0,0,,78,,0,0
 1028119,Youness Akharraz,2026-11-06T20:00:00+00:00,2026,MAR1,1,False,5101418,7,79389,home,85473,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1028119,Youness Akharraz,2026-10-30T20:00:00+00:00,2026,MAR1,1,False,5101412,6,79389,away,14462,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1028119,Youness Akharraz,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,79389,home,6603,0,1,played,2,0,False,18,0,0,0,0,0,0,,72,,0,0
@@ -6389,7 +6408,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1245251,Zakaria Kessary,2026-09-05T17:00:00+00:00,2026,PO1,1,False,4921497,5,2521,home,1075,1,2,played,18,7,False,19,0,0,0,0,0,0,,71,,0,0
 1245251,Zakaria Kessary,2026-08-29T14:30:00+00:00,2026,PO1,1,False,4921525,4,2521,home,2423,1,1,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 1245251,Zakaria Kessary,2026-08-22T19:30:00+00:00,2026,PO1,1,False,4921477,3,2521,away,336,1,3,played,18,7,False,15,0,0,2,1,1,0,,75,,0,0
-1245251,Zakaria Kessary,2026-08-15T14:30:00+00:00,2026,PO1,1,False,4921426,2,2521,home,2431,2,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 240697,Omar Arjoune,2026-11-06T20:00:00+00:00,2026,MAR1,1,False,5101418,7,79389,home,85473,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 240697,Omar Arjoune,2026-10-30T20:00:00+00:00,2026,MAR1,1,False,5101412,6,79389,away,14462,1,1,played,18,0,False,17,0,0,0,0,0,0,,73,,0,0
 240697,Omar Arjoune,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,79389,home,6603,0,1,played,18,6,False,58,0,0,0,0,0,0,,,58,0,0
@@ -6716,7 +6734,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1418103,Mustapha El Crachna,2026-10-17T20:00:00+00:00,2026,MAR1,1,False,5076331,4,9100,away,14462,1,4,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1418103,Mustapha El Crachna,2026-10-09T20:00:00+00:00,2026,MAR1,1,False,5074736,3,9100,home,6371,0,0,in squad,17,,False,0,0,0,0,0,0,0,,,,0,0
 1418103,Mustapha El Crachna,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,9100,away,12721,1,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
-1418103,Mustapha El Crachna,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,21,0,False,29,0,0,0,0,0,0,,61,,0,0
+1418103,Mustapha El Crachna,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,17,0,False,29,0,0,0,0,0,0,,61,,0,0
 1418103,Mustapha El Crachna,2026-05-15T15:00:00+00:00,2025,MARP,8,False,4877698,2,9100,home,97695,4,3,played,21,0,False,75,0,0,0,0,0,0,,,75,0,0
 1418103,Mustapha El Crachna,2025-06-22T19:00:00+00:00,2024,MARP,8,False,4627616,8,9100,home,37176,0,3,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
 1418103,Mustapha El Crachna,2025-06-15T16:00:00+00:00,2024,MARP,8,False,4622621,7,9100,home,18702,1,0,in squad,49,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6771,6 +6789,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 844299,Mohamed Jaouab,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,in squad,27,,False,0,0,0,0,0,0,0,,,,0,0
 844299,Mohamed Jaouab,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,3282,away,48935,0,0,played,27,0,False,90,0,0,0,0,0,0,,,,0,0
 844299,Mohamed Jaouab,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,3282,home,48935,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+396429,Diogo Calila,2026-11-13T13:00:00+00:00,2026,AFCQ,19,True,5074861,5,5129,home,13941,0,1,played,23,5,False,65,0,0,2,1,1,0,,,65,0,0
 396429,Diogo Calila,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,3282,home,6371,1,0,in squad,2,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-11-01T16:00:00+00:00,2026,MAR1,1,False,5101417,6,3282,away,59814,0,1,played,2,4,False,90,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,3282,home,37176,0,0,played,0,4,False,90,0,0,0,0,0,0,84,,,0,0
@@ -6779,12 +6798,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 396429,Diogo Calila,2026-10-14T20:00:00+00:00,2026,MAR1,1,False,5076329,4,3282,away,12721,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,3282,home,2068,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-10-03T16:00:00+00:00,2026,MAR1,1,False,5060440,2,3282,away,22935,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+396429,Diogo Calila,2026-09-29T13:00:00+00:00,2026,AFCQ,19,True,5047021,4,5129,home,13313,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+396429,Diogo Calila,2026-09-25T13:00:00+00:00,2026,AFCQ,19,True,5046891,3,5129,home,3499,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,3282,away,48935,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,3282,home,48935,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-08-29T14:30:00+00:00,2026,PO1,1,False,4921525,4,2423,away,2521,1,1,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
 396429,Diogo Calila,2026-08-23T17:00:00+00:00,2026,PO1,1,False,4921476,3,2423,home,3329,1,0,played,2,5,False,90,0,0,0,0,0,0,,,,0,0
-396429,Diogo Calila,2026-08-15T17:00:00+00:00,2026,PO1,1,False,4921425,2,2423,away,7788,1,0,played,2,5,False,90,0,0,1,0,1,0,,,,0,0
 1496489,Samba Mbengue,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,3282,home,6371,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1496489,Samba Mbengue,2026-11-01T16:00:00+00:00,2026,MAR1,1,False,5101417,6,3282,away,59814,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1496489,Samba Mbengue,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,3282,home,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6864,91 +6884,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1400725,Youssef Hafidi,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,in squad,23,,False,0,0,0,0,0,0,0,,,,0,0
 1400725,Youssef Hafidi,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,3282,away,48935,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1400725,Youssef Hafidi,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,3282,home,48935,4,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,14,0,False,90,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,14,4,False,90,0,1,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,14,4,False,90,0,0,0,0,0,0,36,,,0,0
-366746,Yahia Attiyat Allah,2026-08-01T13:00:00+00:00,2026,RU2,2,False,4905223,4,41231,away,67107,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-07-26T15:00:00+00:00,2026,RU2,2,False,4905212,3,41231,home,3729,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-366746,Yahia Attiyat Allah,2026-07-19T15:00:00+00:00,2026,RU2,2,False,4905067,2,41231,home,14590,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,3282,home,6371,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-11-01T16:00:00+00:00,2026,MAR1,1,False,5101417,6,3282,away,59814,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,3282,home,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-25T17:00:00+00:00,2026,ACL,10,False,5082175,4,3282,away,3891,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-18T17:00:00+00:00,2026,ACL,10,False,5082174,3,3282,home,3891,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-14T20:00:00+00:00,2026,MAR1,1,False,5076329,4,3282,away,12721,1,2,played,28,0,False,2,0,0,0,0,0,0,,88,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,3282,home,2068,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-10-03T16:00:00+00:00,2026,MAR1,1,False,5060440,2,3282,away,22935,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,48935,home,3282,0,0,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
-1133781,Abdoul Kabir Ouédraogo,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,48935,away,3282,1,4,played,18,0,False,45,1,0,0,0,0,0,,46,,0,0
-255749,Yahya Jabrane,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-255749,Yahya Jabrane,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-255749,Yahya Jabrane,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,5,0,False,1,0,0,0,0,0,0,,90,,0,0
-255749,Yahya Jabrane,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-255749,Yahya Jabrane,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-255749,Yahya Jabrane,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
-255749,Yahya Jabrane,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,5,6,False,58,0,0,0,0,0,0,,,58,0,0
-255749,Yahya Jabrane,2026-05-15T14:10:00+00:00,2025,UAE1,1,False,4885159,26,24724,home,5432,2,2,played,56,7,False,90,0,0,0,0,0,0,67,,90,0,0
-255749,Yahya Jabrane,2026-05-10T15:25:00+00:00,2025,UAE1,1,False,4882624,25,24724,away,44289,2,0,played,56,0,False,30,0,0,1,1,0,0,,60,,0,0
-255749,Yahya Jabrane,2026-05-05T14:05:00+00:00,2025,UAE1,1,False,4869482,24,24724,home,2524,1,1,played,56,0,False,26,0,0,0,0,0,0,,64,,0,0
-326150,Issoufou Dayo,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-09-07T14:00:00+00:00,2026,QU2L,2,False,5034115,3,10920,home,5381,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-08-30T14:15:00+00:00,2026,QU2L,2,False,5034117,2,10920,away,26730,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-326150,Issoufou Dayo,2026-08-25T14:15:00+00:00,2026,QU2L,2,False,5034152,1,10920,home,145123,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-734751,Nizar Al-Rashdan,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
-734751,Nizar Al-Rashdan,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,18,7,False,45,0,0,0,0,0,0,,,46,0,0
-734751,Nizar Al-Rashdan,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,18,7,False,90,0,0,0,0,0,0,,,90,0,0
-734751,Nizar Al-Rashdan,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,18,7,False,90,0,0,0,0,0,0,,,,0,0
-734751,Nizar Al-Rashdan,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
-734751,Nizar Al-Rashdan,2026-10-06T17:00:00+00:00,2026,FS,11,True,5052794,9,15737,home,3504,0,0,played,21,6,False,69,0,0,0,0,0,0,,,69,0,0
-734751,Nizar Al-Rashdan,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-734751,Nizar Al-Rashdan,2026-09-27T17:00:00+00:00,2026,FS,11,True,5052818,2,15737,home,13674,1,1,played,21,0,False,65,0,0,0,0,0,0,,,65,0,0
-734751,Nizar Al-Rashdan,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-734751,Nizar Al-Rashdan,2026-06-28T02:00:00+00:00,2025,FIWC,11,True,4776665,3,15737,away,3437,1,3,played,21,6,False,76,0,0,0,0,0,0,,,76,0,0
-312819,Silvere Ganvoula,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,15,14,False,69,0,1,0,0,0,0,,,69,0,0
-312819,Silvere Ganvoula,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,15,14,False,80,1,0,0,0,0,0,,,80,0,0
-312819,Silvere Ganvoula,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,15,14,False,70,0,0,0,0,0,0,,,70,0,0
-312819,Silvere Ganvoula,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,15,14,False,90,1,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,15,14,False,90,0,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,15,14,False,90,1,0,0,0,0,0,,,90,0,0
-312819,Silvere Ganvoula,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,15,0,False,45,1,0,0,0,0,0,,46,,0,0
-312819,Silvere Ganvoula,2026-09-12T18:00:00+00:00,2026,SA1,1,False,4976926,7,50531,away,9840,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-09-08T18:00:00+00:00,2026,SA1,1,False,4976917,6,50531,away,8023,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-09-03T15:55:00+00:00,2026,SA1,1,False,4976903,5,50531,home,91427,2,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-08-28T16:00:00+00:00,2026,SA1,1,False,4976895,4,50531,home,40039,3,2,played,35,0,False,10,0,0,0,0,0,0,,80,,0,0
-312819,Silvere Ganvoula,2026-08-25T16:10:00+00:00,2026,SA1,1,False,4976879,3,50531,away,28844,0,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
-312819,Silvere Ganvoula,2026-08-20T18:00:00+00:00,2026,SA1,1,False,4976867,2,50531,home,1114,0,3,played,35,0,False,22,0,0,0,0,0,0,,68,,0,0
-312819,Silvere Ganvoula,2026-08-17T18:00:00+00:00,2026,SAKC,8,False,4971027,1,50531,away,55544,2,0,played,35,0,False,17,0,0,0,0,0,0,,73,,0,0
-779752,Soufiane Hetli,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,absent,,,False,0,0,0,0,0,0,0,,,,0,9
-779752,Soufiane Hetli,2026-08-14T18:00:00+00:00,2026,NL1,1,False,4894674,2,1434,home,468,1,3,played,11,11,False,90,0,0,3,0,2,1,,,,0,0
-779752,Soufiane Hetli,2026-08-08T14:30:00+00:00,2026,NL1,1,False,4894508,1,1434,away,467,2,1,played,11,11,False,63,0,0,2,1,1,0,,,63,0,0
-779752,Soufiane Hetli,2026-05-17T12:30:00+00:00,2025,NL1,1,False,4642428,34,1434,away,724,2,1,played,7,0,False,23,0,0,1,0,0,1,,67,,0,0
-362287,Aymane El Hassouni,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,10,10,False,69,0,0,0,0,0,0,41,,69,0,0
-362287,Aymane El Hassouni,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,10,12,False,84,0,0,0,0,0,0,,,84,0,0
-362287,Aymane El Hassouni,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,10,12,False,70,1,0,0,0,0,0,50,,70,0,0
-362287,Aymane El Hassouni,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,10,12,False,86,0,0,0,0,0,0,,,86,0,0
-362287,Aymane El Hassouni,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,10,12,False,45,0,0,0,0,0,0,13,,46,0,0
-362287,Aymane El Hassouni,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,10,12,False,72,0,0,0,0,0,0,,,72,0,0
-362287,Aymane El Hassouni,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,10,0,False,18,0,0,0,0,0,0,,72,,0,0
-362287,Aymane El Hassouni,2026-06-06T17:00:00+00:00,2025,LPL3,12,False,4893063,1,38559,home,13508,5,4,in squad,10,,False,0,0,0,0,0,0,0,88,,,0,0
-362287,Aymane El Hassouni,2026-05-24T15:00:00+00:00,2025,LPL2,12,False,4878592,5,38559,home,13504,0,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
-362287,Aymane El Hassouni,2026-05-20T15:00:00+00:00,2025,LPL2,12,False,4878587,4,38559,away,13506,3,0,played,10,0,False,28,0,0,0,0,0,0,,62,,0,0
 612041,Jamal Harkass,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,5,3,False,90,0,0,0,0,0,0,5,,,0,0
 612041,Jamal Harkass,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
 612041,Jamal Harkass,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,played,5,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -6963,14 +6898,17 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 612041,Jamal Harkass,2026-09-02T16:15:00+00:00,2026,SA2L,2,False,4975140,3,50532,away,17209,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 612041,Jamal Harkass,2026-08-28T17:50:00+00:00,2026,SA2L,2,False,4975132,2,50532,home,39536,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 612041,Jamal Harkass,2026-08-23T16:15:00+00:00,2026,SA2L,2,False,4975113,1,50532,away,95443,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-612041,Jamal Harkass,2026-08-19T16:15:00+00:00,2026,SAKC,8,False,4971034,1,50532,home,28844,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1606862,Haitam Hamani,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,7,12,False,6,0,0,0,0,0,0,,,,0,0
-1606862,Haitam Hamani,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,7,0,False,6,0,0,0,0,0,0,,84,,0,0
-1606862,Haitam Hamani,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,7,0,False,1,0,0,0,0,0,0,,90,,0,0
-1606862,Haitam Hamani,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,7,0,False,15,0,0,0,0,0,0,,75,,0,0
-1606862,Haitam Hamani,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,7,0,False,45,0,0,0,0,0,0,,46,,0,0
-1606862,Haitam Hamani,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,7,0,False,1,0,0,0,0,0,0,,89,,0,0
-1606862,Haitam Hamani,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,7,0,False,14,0,1,0,0,0,0,,76,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-11-07T18:00:00+00:00,2026,MAR1,1,False,5101422,7,3282,home,6371,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-11-01T16:00:00+00:00,2026,MAR1,1,False,5101417,6,3282,away,59814,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,3282,home,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-25T17:00:00+00:00,2026,ACL,10,False,5082175,4,3282,away,3891,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-18T17:00:00+00:00,2026,ACL,10,False,5082174,3,3282,home,3891,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-14T20:00:00+00:00,2026,MAR1,1,False,5076329,4,3282,away,12721,1,2,played,28,0,False,2,0,0,0,0,0,0,,88,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,3282,home,2068,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-10-03T16:00:00+00:00,2026,MAR1,1,False,5060440,2,3282,away,22935,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-09-27T18:00:00+00:00,2026,MAR1,1,False,5047387,1,3282,home,74953,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-09-12T15:00:00+00:00,2026,ACL,10,False,5010753,2,48935,home,3282,0,0,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
+1133781,Abdoul Kabir Ouédraogo,2026-09-06T19:00:00+00:00,2026,ACL,10,False,5009571,1,48935,away,3282,1,4,played,18,0,False,45,1,0,0,0,0,0,,46,,0,0
 593431,Adil Tahif,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 593431,Adil Tahif,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 593431,Adil Tahif,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -6992,7 +6930,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 265569,Youssef Aït Bennasser,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,played,6,0,False,90,0,0,0,0,0,0,,,,0,0
 265569,Youssef Aït Bennasser,2026-08-29T16:00:00+00:00,2026,TR2,2,False,4935863,4,3205,home,20,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 265569,Youssef Aït Bennasser,2026-08-22T16:00:00+00:00,2026,TR2,2,False,4935850,3,3205,away,74664,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-265569,Youssef Aït Bennasser,2026-08-16T16:00:00+00:00,2026,TR2,2,False,4935843,2,3205,home,2381,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 891380,Omar El Manssouri,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,26,0,False,59,0,0,0,0,0,0,,31,,0,0
 891380,Omar El Manssouri,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,26,0,False,18,0,0,0,0,0,0,,72,,0,0
 891380,Omar El Manssouri,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,played,26,0,False,21,0,0,0,0,0,0,,69,,0,0
@@ -7006,7 +6943,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 891380,Omar El Manssouri,2026-09-12T15:30:00+00:00,2026,SL1,1,False,4899775,9,433,home,4772,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 891380,Omar El Manssouri,2026-09-06T18:15:00+00:00,2026,SL1,1,False,4899770,8,433,away,710,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 891380,Omar El Manssouri,2026-08-22T15:30:00+00:00,2026,SL1,1,False,4899759,6,433,away,4059,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-891380,Omar El Manssouri,2026-08-16T18:15:00+00:00,2026,SL1,1,False,4899757,5,433,home,26985,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+111627,Ryan Mendes,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074863,5,4311,home,9172,4,2,played,20,8,True,76,0,1,0,0,0,0,,,76,0,0
 111627,Ryan Mendes,2026-11-06T17:00:00+00:00,2026,MAR1,1,False,5101416,7,37176,away,22935,2,2,played,10,0,False,45,0,1,0,0,0,0,,46,,0,0
 111627,Ryan Mendes,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,37176,home,2068,2,0,played,10,0,False,12,0,0,0,0,0,0,,78,,0,0
 111627,Ryan Mendes,2026-10-29T17:00:00+00:00,2026,MAR1,1,False,5087477,5,37176,away,3282,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7019,6 +6956,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 111627,Ryan Mendes,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 111627,Ryan Mendes,2026-09-25T19:00:00+00:00,2026,AFCQ,19,True,5046893,3,4311,away,3674,1,3,played,20,9,True,86,0,0,0,0,0,0,,,86,0,0
 1263254,Hamza Kattoussi,2026-10-08T16:00:00+00:00,2026,MAR1,1,False,5074732,3,37176,away,79389,0,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
+1263254,Hamza Kattoussi,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,37176,home,9099,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1263254,Hamza Kattoussi,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,37176,away,9100,0,0,in squad,36,,False,0,0,0,0,0,0,0,,,,0,0
 1263254,Hamza Kattoussi,2026-04-18T14:00:00+00:00,2025,MARP,8,False,4867861,1,22941,home,46681,9,10,played,19,0,False,120,0,0,0,0,0,0,,,,0,0
 1263254,Hamza Kattoussi,2025-06-14T16:00:00+00:00,2024,MARP,8,False,4622619,7,39084,away,22944,1,2,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
@@ -7027,7 +6965,85 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1263254,Hamza Kattoussi,2025-03-30T14:30:00+00:00,2024,MARP,8,False,4588149,5,39084,away,105198,3,1,played,19,0,False,90,1,0,0,0,0,0,,,,0,0
 1263254,Hamza Kattoussi,2025-03-20T15:00:00+00:00,2024,MEC1,14,False,4579311,6,39084,away,59679,1,0,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
 1263254,Hamza Kattoussi,2025-02-02T14:00:00+00:00,2024,MEC1,14,False,4541820,5,39084,home,22944,1,1,played,19,0,False,90,0,0,0,0,0,0,,,,0,0
-1263254,Hamza Kattoussi,2024-10-13T15:00:00+00:00,2024,MEC1,14,False,4472583,4,39084,home,2073,1,0,played,19,0,False,90,1,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,14,4,False,90,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,14,4,False,90,0,1,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,14,4,False,90,0,0,0,0,0,0,36,,,0,0
+366746,Yahia Attiyat Allah,2026-08-01T13:00:00+00:00,2026,RU2,2,False,4905223,4,41231,away,67107,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-07-26T15:00:00+00:00,2026,RU2,2,False,4905212,3,41231,home,3729,5,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+366746,Yahia Attiyat Allah,2026-07-19T15:00:00+00:00,2026,RU2,2,False,4905067,2,41231,home,14590,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1610951,Souleymane Sy,2026-10-08T16:00:00+00:00,2026,MAR1,1,False,5074732,3,37176,away,79389,0,0,played,37,0,False,27,0,0,0,0,0,0,,63,,0,0
+255749,Yahya Jabrane,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+255749,Yahya Jabrane,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+255749,Yahya Jabrane,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,5,0,False,1,0,0,0,0,0,0,,90,,0,0
+255749,Yahya Jabrane,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+255749,Yahya Jabrane,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+255749,Yahya Jabrane,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,in squad,5,,False,0,0,0,0,0,0,0,,,,0,0
+255749,Yahya Jabrane,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,5,6,False,58,0,0,0,0,0,0,,,58,0,0
+255749,Yahya Jabrane,2026-05-15T14:10:00+00:00,2025,UAE1,1,False,4885159,26,24724,home,5432,2,2,played,56,7,False,90,0,0,0,0,0,0,67,,90,0,0
+255749,Yahya Jabrane,2026-05-10T15:25:00+00:00,2025,UAE1,1,False,4882624,25,24724,away,44289,2,0,played,56,0,False,30,0,0,1,1,0,0,,60,,0,0
+255749,Yahya Jabrane,2026-05-05T14:05:00+00:00,2025,UAE1,1,False,4869482,24,24724,home,2524,1,1,played,56,0,False,26,0,0,0,0,0,0,,64,,0,0
+326150,Issoufou Dayo,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074878,6,5872,away,14238,3,1,played,14,0,False,8,0,0,0,0,0,0,,82,,0,0
+326150,Issoufou Dayo,2026-11-13T16:00:00+00:00,2026,AFCQ,19,True,5074854,5,5872,home,14238,1,0,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-04T00:00:00+00:00,2026,FS,11,True,5052863,2,5872,away,3437,0,7,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-09-28T16:00:00+00:00,2026,AFCQ,19,True,5047014,4,5872,away,12933,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,25,3,False,90,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-09-25T19:00:00+00:00,2026,AFCQ,19,True,5046883,3,5872,home,3955,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-09-07T14:00:00+00:00,2026,QU2L,2,False,5034115,3,10920,home,5381,1,5,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-08-30T14:15:00+00:00,2026,QU2L,2,False,5034117,2,10920,away,26730,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+326150,Issoufou Dayo,2026-08-25T14:15:00+00:00,2026,QU2L,2,False,5034152,1,10920,home,145123,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+734751,Nizar Al-Rashdan,2026-11-17T16:00:00+00:00,2026,FS,11,True,5119508,6,15737,home,3433,2,0,played,21,7,False,90,0,0,1,0,0,1,89,,,0,0
+734751,Nizar Al-Rashdan,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
+734751,Nizar Al-Rashdan,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,18,7,False,45,0,0,0,0,0,0,,,46,0,0
+734751,Nizar Al-Rashdan,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,18,7,False,90,0,0,0,0,0,0,,,90,0,0
+734751,Nizar Al-Rashdan,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,18,7,False,90,0,0,0,0,0,0,,,,0,0
+734751,Nizar Al-Rashdan,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,18,0,False,45,0,0,0,0,0,0,,46,,0,0
+734751,Nizar Al-Rashdan,2026-10-06T17:00:00+00:00,2026,FS,11,True,5052794,9,15737,home,3504,0,0,played,21,6,False,69,0,0,0,0,0,0,,,69,0,0
+734751,Nizar Al-Rashdan,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+734751,Nizar Al-Rashdan,2026-09-27T17:00:00+00:00,2026,FS,11,True,5052818,2,15737,home,13674,1,1,played,21,0,False,65,0,0,0,0,0,0,,,65,0,0
+734751,Nizar Al-Rashdan,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,15,14,False,69,0,1,0,0,0,0,,,69,0,0
+312819,Silvere Ganvoula,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,15,14,False,80,1,0,0,0,0,0,,,80,0,0
+312819,Silvere Ganvoula,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,15,14,False,70,0,0,0,0,0,0,,,70,0,0
+312819,Silvere Ganvoula,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,15,14,False,90,1,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,15,14,False,90,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,15,14,False,90,1,0,0,0,0,0,,,90,0,0
+312819,Silvere Ganvoula,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,15,0,False,45,1,0,0,0,0,0,,46,,0,0
+312819,Silvere Ganvoula,2026-09-12T18:00:00+00:00,2026,SA1,1,False,4976926,7,50531,away,9840,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-09-08T18:00:00+00:00,2026,SA1,1,False,4976917,6,50531,away,8023,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-09-03T15:55:00+00:00,2026,SA1,1,False,4976903,5,50531,home,91427,2,2,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-08-28T16:00:00+00:00,2026,SA1,1,False,4976895,4,50531,home,40039,3,2,played,35,0,False,10,0,0,0,0,0,0,,80,,0,0
+312819,Silvere Ganvoula,2026-08-25T16:10:00+00:00,2026,SA1,1,False,4976879,3,50531,away,28844,0,0,in squad,35,,False,0,0,0,0,0,0,0,,,,0,0
+312819,Silvere Ganvoula,2026-08-20T18:00:00+00:00,2026,SA1,1,False,4976867,2,50531,home,1114,0,3,played,35,0,False,22,0,0,0,0,0,0,,68,,0,0
+779752,Soufiane Hetli,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,absent,,,False,0,0,0,0,0,0,0,,,,0,9
+779752,Soufiane Hetli,2026-08-14T18:00:00+00:00,2026,NL1,1,False,4894674,2,1434,home,468,1,3,played,11,11,False,90,0,0,3,0,2,1,,,,0,0
+779752,Soufiane Hetli,2026-08-08T14:30:00+00:00,2026,NL1,1,False,4894508,1,1434,away,467,2,1,played,11,11,False,63,0,0,2,1,1,0,,,63,0,0
+779752,Soufiane Hetli,2026-05-17T12:30:00+00:00,2025,NL1,1,False,4642428,34,1434,away,724,2,1,played,7,0,False,23,0,0,1,0,0,1,,67,,0,0
+362287,Aymane El Hassouni,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,10,10,False,69,0,0,0,0,0,0,41,,69,0,0
+362287,Aymane El Hassouni,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,10,12,False,84,0,0,0,0,0,0,,,84,0,0
+362287,Aymane El Hassouni,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,10,12,False,70,1,0,0,0,0,0,50,,70,0,0
+362287,Aymane El Hassouni,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,10,12,False,86,0,0,0,0,0,0,,,86,0,0
+362287,Aymane El Hassouni,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,10,12,False,45,0,0,0,0,0,0,13,,46,0,0
+362287,Aymane El Hassouni,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,10,12,False,72,0,0,0,0,0,0,,,72,0,0
+362287,Aymane El Hassouni,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,10,0,False,18,0,0,0,0,0,0,,72,,0,0
+362287,Aymane El Hassouni,2026-06-06T17:00:00+00:00,2025,LPL3,12,False,4893063,1,38559,home,13508,5,4,in squad,10,,False,0,0,0,0,0,0,0,88,,,0,0
+362287,Aymane El Hassouni,2026-05-24T15:00:00+00:00,2025,LPL2,12,False,4878592,5,38559,home,13504,0,0,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
+362287,Aymane El Hassouni,2026-05-20T15:00:00+00:00,2025,LPL2,12,False,4878587,4,38559,away,13506,3,0,played,10,0,False,28,0,0,0,0,0,0,,62,,0,0
 478347,Marian Huja,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,2068,home,12721,2,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 478347,Marian Huja,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,2068,away,9099,2,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 478347,Marian Huja,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,2068,away,37176,0,2,played,2,3,False,90,0,0,0,0,0,0,,,,0,0
@@ -7052,7 +7068,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 542525,Younes Bakiz,2026-08-30T12:00:00+00:00,2026,DK1,1,False,4921783,6,1177,home,865,1,1,in squad,10,,False,0,0,0,0,0,0,0,,,,0,0
 542525,Younes Bakiz,2026-08-27T17:30:00+00:00,2026,DKP,8,False,5014464,2,1177,away,443,0,3,played,10,11,False,90,0,0,0,0,0,0,,,,0,0
 542525,Younes Bakiz,2026-08-24T17:00:00+00:00,2026,DK1,1,False,4921776,5,1177,away,206,1,3,played,10,0,False,11,0,0,0,0,0,0,,79,,0,0
-542525,Younes Bakiz,2026-08-16T12:00:00+00:00,2026,DK1,1,False,4921773,4,1177,away,2778,0,1,played,10,0,False,45,0,0,2,0,0,2,,46,,0,0
 722365,Michael Agbekpornu,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,2068,home,12721,2,0,played,30,0,False,37,0,0,0,0,0,0,,53,,0,0
 722365,Michael Agbekpornu,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,2068,away,9099,2,1,played,30,6,False,28,0,0,0,0,0,0,85,62,,0,0
 722365,Michael Agbekpornu,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,2068,away,37176,0,2,played,30,0,False,27,0,0,0,0,0,0,,63,,0,0
@@ -7063,7 +7078,13 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 722365,Michael Agbekpornu,2026-10-08T20:00:00+00:00,2026,MAR1,1,False,5074735,3,2068,away,3282,0,0,played,30,6,False,90,0,0,0,0,0,0,26,,,0,0
 722365,Michael Agbekpornu,2026-10-03T20:00:00+00:00,2026,MAR1,1,False,5060443,2,2068,home,74953,1,0,played,30,6,False,90,0,0,0,0,0,0,70,,,0,0
 722365,Michael Agbekpornu,2026-05-31T19:00:00+00:00,2025,ES2,2,False,4647764,42,5358,away,993,1,1,played,22,7,False,78,0,0,1,1,0,0,,,78,0,0
-1610951,Souleymane Sy,2026-10-08T16:00:00+00:00,2026,MAR1,1,False,5074732,3,37176,away,79389,0,0,played,37,0,False,27,0,0,0,0,0,0,,63,,0,0
+1606862,Haitam Hamani,2026-11-07T16:00:00+00:00,2026,MAR1,1,False,5101420,7,6603,away,4697,1,2,played,7,12,False,6,0,0,0,0,0,0,,,,0,0
+1606862,Haitam Hamani,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,6603,home,9100,1,0,played,7,0,False,6,0,0,0,0,0,0,,84,,0,0
+1606862,Haitam Hamani,2026-10-24T18:00:00+00:00,2026,MAR1,1,False,5087471,5,6603,away,79389,1,0,played,7,0,False,1,0,0,0,0,0,0,,90,,0,0
+1606862,Haitam Hamani,2026-10-18T20:00:00+00:00,2026,MAR1,1,False,5076333,4,6603,home,85473,1,1,played,7,0,False,15,0,0,0,0,0,0,,75,,0,0
+1606862,Haitam Hamani,2026-10-11T20:00:00+00:00,2026,MAR1,1,False,5074739,3,6603,home,30625,0,0,played,7,0,False,45,0,0,0,0,0,0,,46,,0,0
+1606862,Haitam Hamani,2026-10-03T18:00:00+00:00,2026,MAR1,1,False,5060442,2,6603,away,14462,2,0,played,7,0,False,1,0,0,0,0,0,0,,89,,0,0
+1606862,Haitam Hamani,2026-09-26T20:00:00+00:00,2026,MAR1,1,False,5047389,1,6603,home,59814,1,3,played,7,0,False,14,0,1,0,0,0,0,,76,,0,0
 610484,Adel Bettaieb,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,2068,home,12721,2,0,played,21,0,False,21,0,0,0,0,0,0,,69,,0,0
 610484,Adel Bettaieb,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,2068,away,9099,2,1,played,21,11,False,17,0,0,0,0,0,0,,73,,0,0
 610484,Adel Bettaieb,2026-11-01T20:00:00+00:00,2026,MAR1,1,False,5101423,6,2068,away,37176,0,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7123,7 +7144,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 843459,Nabil Marmouk,2026-10-08T18:00:00+00:00,2026,MAR1,1,False,5074734,3,9099,home,59814,1,0,in squad,26,,False,0,0,0,0,0,0,0,,,,0,0
 843459,Nabil Marmouk,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 843459,Nabil Marmouk,2025-10-31T14:00:00+00:00,2025,AFCP,10,False,4716283,3,15481,neutral,101333,1,1,played,27,3,False,90,0,0,0,0,0,0,,,,0,0
-398886,Merveil Ndockyt,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+398886,Merveil Ndockyt,2026-11-13T13:00:00+00:00,2026,AFCQ,19,True,5074856,5,3702,away,16430,0,0,played,10,10,True,90,0,0,2,0,1,1,,,90,0,0
+398886,Merveil Ndockyt,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,played,13,0,False,90,0,0,0,0,0,0,,,,0,0
 398886,Merveil Ndockyt,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,13,7,False,90,0,0,0,0,0,0,,,,0,0
 398886,Merveil Ndockyt,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,13,6,False,90,0,0,0,0,0,0,,,90,0,0
 398886,Merveil Ndockyt,2026-10-28T20:00:00+00:00,2026,MAR1,1,False,5087476,5,9099,home,12721,2,0,played,13,7,False,72,0,0,0,0,0,0,,,72,0,0
@@ -7134,6 +7156,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 398886,Merveil Ndockyt,2026-10-02T12:00:00+00:00,2026,MAR1,1,False,5060444,2,9099,away,37176,0,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 398886,Merveil Ndockyt,2026-09-29T19:00:00+00:00,2026,AFCQ,19,True,5047016,4,3702,home,3434,1,1,played,10,10,True,86,0,0,2,1,1,0,,,86,0,0
 398886,Merveil Ndockyt,2026-09-24T13:00:00+00:00,2026,AFCQ,19,True,5046886,3,3702,away,3573,0,1,played,10,0,False,28,0,0,1,0,1,0,,62,,0,0
+494268,Allan Okello,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074881,6,13497,away,15229,1,1,played,21,10,False,83,0,0,1,1,0,0,,,83,0,0
+494268,Allan Okello,2026-11-14T16:00:00+00:00,2026,AFCQ,19,True,5074857,5,13497,home,15229,1,1,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 494268,Allan Okello,2026-11-08T18:00:00+00:00,2026,MAR1,1,False,5101426,7,9099,home,14462,3,1,in squad,14,,False,0,0,0,0,0,0,0,,,,0,0
 494268,Allan Okello,2026-11-04T20:00:00+00:00,2026,MAR1,1,False,5047394,1,9099,home,2068,1,2,played,14,10,False,10,0,0,0,0,0,0,,80,,0,0
 494268,Allan Okello,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101419,6,9099,away,30625,0,0,played,14,0,False,8,0,0,0,0,0,0,,82,,0,0
@@ -7388,6 +7412,8 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 847432,Babacar Sarr,2026-06-05T19:00:00+00:00,2025,ALG1,1,False,4825784,30,13366,home,13365,0,0,played,25,6,False,45,0,0,0,0,0,0,,,46,0,0
 847432,Babacar Sarr,2026-05-20T16:45:00+00:00,2025,ALG1,1,False,4825733,29,13366,away,13364,2,1,played,25,6,False,90,0,0,0,0,0,0,,,,0,0
 847432,Babacar Sarr,2026-05-08T16:45:00+00:00,2025,ALG1,1,False,4825707,28,13366,home,18272,5,1,played,25,6,False,90,0,0,0,0,0,0,,,,0,0
+353875,Gape Edwin Mohutsiwa,2026-11-17T19:00:00+00:00,2026,AFCQ,19,True,5074881,6,15229,home,13497,1,1,played,6,9,False,59,0,0,0,0,0,0,,,59,0,0
+353875,Gape Edwin Mohutsiwa,2026-11-14T16:00:00+00:00,2026,AFCQ,19,True,5074857,5,15229,away,13497,1,1,played,6,6,False,62,0,0,0,0,0,0,,,62,0,0
 353875,Gape Edwin Mohutsiwa,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,12721,away,2068,0,2,played,18,6,False,76,0,0,0,0,0,0,,,76,0,0
 353875,Gape Edwin Mohutsiwa,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,12721,home,74953,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 353875,Gape Edwin Mohutsiwa,2026-10-28T20:00:00+00:00,2026,MAR1,1,False,5087476,5,12721,away,9099,0,2,played,8,6,False,52,0,0,0,0,0,0,,,,0,0
@@ -7397,7 +7423,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 353875,Gape Edwin Mohutsiwa,2026-09-28T19:00:00+00:00,2026,AFCQ,19,True,5069018,4,15229,away,3670,2,2,played,6,6,False,90,0,1,2,0,2,0,43,,,0,0
 353875,Gape Edwin Mohutsiwa,2026-09-24T20:00:00+00:00,2026,MAR1,1,False,5047390,1,12721,away,85473,3,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 353875,Gape Edwin Mohutsiwa,2026-09-24T16:00:00+00:00,2026,AFCQ,19,True,5046888,3,15229,away,6602,2,2,played,6,6,False,90,0,0,0,0,0,0,,,,0,0
-353875,Gape Edwin Mohutsiwa,2026-06-06T17:00:00+00:00,2025,ALG1,1,False,4825785,30,8851,home,6772,2,2,played,15,6,False,82,0,0,0,0,0,0,,,82,0,0
 409472,Ousama Siddiki,2026-11-08T20:00:00+00:00,2026,MAR1,1,False,5101427,7,12721,away,2068,0,2,played,77,0,False,2,0,0,0,0,0,0,,88,,0,0
 409472,Ousama Siddiki,2026-11-01T18:00:00+00:00,2026,MAR1,1,False,5101421,6,12721,home,74953,1,0,in squad,77,,False,0,0,0,0,0,0,0,,,,0,0
 409472,Ousama Siddiki,2026-10-28T20:00:00+00:00,2026,MAR1,1,False,5087476,5,12721,away,9099,0,2,played,77,0,False,16,0,0,0,0,0,0,,74,,0,0
@@ -7794,6 +7819,10 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1608801,Wissam Erbate,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,played,29,3,False,90,0,0,0,0,0,0,,,,0,0
 1608801,Wissam Erbate,2026-10-17T20:00:00+00:00,2026,MAR1,1,False,5076331,4,9100,away,14462,1,4,played,29,3,False,90,0,0,0,0,0,0,,,,0,0
 1608801,Wissam Erbate,2026-10-09T20:00:00+00:00,2026,MAR1,1,False,5074736,3,9100,home,6371,0,0,played,29,3,False,90,0,0,0,0,0,0,,,,0,0
+1608801,Wissam Erbate,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,9100,away,12721,1,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1608801,Wissam Erbate,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,29,0,False,90,0,0,0,0,0,0,,,,0,0
+1264462,Youssef El Maataoui,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,38,0,False,1,0,0,0,0,0,0,,90,,0,0
+1264462,Youssef El Maataoui,2021-07-28T20:30:00+00:00,2020,MAR1,1,False,3625676,30,14462,away,22935,0,2,in squad,22,,False,0,0,0,0,0,0,0,,,,0,0
 1334368,Akram Eddaoudi,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,9100,home,30625,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1334368,Akram Eddaoudi,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,9100,away,6603,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1334368,Akram Eddaoudi,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7824,7 +7853,6 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 775243,Rida Chahid,2026-09-05T13:00:00+00:00,2026,NTD,3,False,4943174,4,20298,away,9933,2,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 775243,Rida Chahid,2026-08-29T13:00:00+00:00,2026,NTD,3,False,4943167,3,20298,home,28378,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 775243,Rida Chahid,2026-08-22T12:30:00+00:00,2026,NTD,3,False,4943126,2,20298,away,11312,1,2,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-775243,Rida Chahid,2026-08-15T15:30:00+00:00,2026,NTD,3,False,4943158,1,20298,home,9545,4,0,played,48,0,False,45,0,0,0,0,0,0,,46,,0,0
 1401773,Seydi Diouck,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,9100,home,30625,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1401773,Seydi Diouck,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,9100,away,6603,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1401773,Seydi Diouck,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7841,7 +7869,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1275264,Aymane Zerri,2026-10-17T20:00:00+00:00,2026,MAR1,1,False,5076331,4,9100,away,14462,1,4,played,18,0,False,10,0,0,0,0,0,0,,80,,0,0
 1275264,Aymane Zerri,2026-10-09T20:00:00+00:00,2026,MAR1,1,False,5074736,3,9100,home,6371,0,0,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 1275264,Aymane Zerri,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,9100,away,12721,1,1,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
-1275264,Aymane Zerri,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1275264,Aymane Zerri,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
 1275264,Aymane Zerri,2026-05-15T15:00:00+00:00,2025,MARP,8,False,4877698,2,9100,home,97695,4,3,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1275264,Aymane Zerri,2025-06-22T19:00:00+00:00,2024,MARP,8,False,4627616,8,9100,home,37176,0,3,played,18,0,False,90,0,0,0,0,0,0,,,,0,0
 1275264,Aymane Zerri,2025-06-15T16:00:00+00:00,2024,MARP,8,False,4622621,7,9100,home,18702,1,0,in squad,18,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7851,10 +7879,11 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1371506,Yassin Crachna,2026-10-17T20:00:00+00:00,2026,MAR1,1,False,5076331,4,9100,away,14462,1,4,played,21,0,False,7,0,0,0,0,0,0,,83,,0,0
 1371506,Yassin Crachna,2026-10-09T20:00:00+00:00,2026,MAR1,1,False,5074736,3,9100,home,6371,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1371506,Yassin Crachna,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,9100,away,12721,1,1,played,0,0,False,29,0,0,0,0,0,0,,61,,0,0
-1371506,Yassin Crachna,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1371506,Yassin Crachna,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,in squad,21,,False,0,0,0,0,0,0,0,,,,0,0
 1371506,Yassin Crachna,2025-06-22T19:00:00+00:00,2024,MARP,8,False,4627616,8,9100,home,37176,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1371506,Yassin Crachna,2025-06-15T16:00:00+00:00,2024,MARP,8,False,4622621,7,9100,home,18702,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1371506,Yassin Crachna,2025-05-11T19:00:00+00:00,2024,MAR1,1,False,4608517,30,9100,home,79390,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
+1628510,Ayman Azzouzi,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,in squad,37,,False,0,0,0,0,0,0,0,,,,0,0
 1460484,Aboubacar Konate,2026-11-07T20:00:00+00:00,2026,MAR1,1,False,5101424,7,9100,home,30625,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1460484,Aboubacar Konate,2026-10-31T18:00:00+00:00,2026,MAR1,1,False,5101414,6,9100,away,6603,0,1,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1460484,Aboubacar Konate,2026-10-24T20:00:00+00:00,2026,MAR1,1,False,5087472,5,9100,home,59814,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
@@ -7877,7 +7906,7 @@ player_id,player_name,game_date_utc,season,competition_id,competition_type_id,is
 1133030,Mounir Habach,2025-06-22T16:00:00+00:00,2024,KLUB,10,False,4506842,2,6603,away,506,1,4,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1332318,Ali Salam,2026-10-09T20:00:00+00:00,2026,MAR1,1,False,5074736,3,9100,home,6371,0,0,played,22,0,False,11,0,0,0,0,0,0,,79,,0,0
 1332318,Ali Salam,2026-10-02T20:00:00+00:00,2026,MAR1,1,False,5060439,2,9100,away,12721,1,1,played,0,0,False,17,0,0,0,0,0,0,,73,,0,0
-1332318,Ali Salam,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,0,0,False,1,0,0,0,0,0,0,,90,,0,0
+1332318,Ali Salam,2026-09-27T16:00:00+00:00,2026,MAR1,1,False,5047393,1,9100,home,37176,0,0,played,22,0,False,1,0,0,0,0,0,0,,90,,0,0
 1332318,Ali Salam,2026-05-15T15:00:00+00:00,2025,MARP,8,False,4877698,2,9100,home,97695,4,3,in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1332318,Ali Salam,2025-06-22T19:00:00+00:00,2024,MARP,8,False,4627616,8,9100,home,37176,0,3,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0
 1332318,Ali Salam,2025-06-15T16:00:00+00:00,2024,MARP,8,False,4622621,7,9100,home,18702,1,0,not in squad,,,False,0,0,0,0,0,0,0,,,,0,0

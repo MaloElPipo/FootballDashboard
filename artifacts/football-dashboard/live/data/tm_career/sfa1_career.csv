@@ -1,5 +1,5 @@
 player_id,player_name,season,competition_id,club_id,is_national_team,matches_total,matches_played,matches_injured_absent,minutes,goals,assists,shots_total,shots_on_goal,yellow_cards
-887629,Gilberto,2026,AFCQ,3585,True,2,1,0,6,0,0,0,0,0
+887629,Gilberto,2026,AFCQ,3585,True,4,2,0,96,0,0,3,0,0
 887629,Gilberto,2026,ACL,88756,False,4,4,0,360,1,0,0,0,0
 887629,Gilberto,2025,FS,3585,True,5,0,0,0,0,0,0,0,0
 887629,Gilberto,2025,ACL,7084,False,10,5,0,210,0,0,0,0,0
@@ -20,7 +20,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 887629,Gilberto,2022,ACL,7084,False,10,10,0,658,1,0,13,4,1
 887629,Gilberto,2021,AFCQ,3585,True,4,2,0,113,0,0,4,0,0
 724150,Sekhoane Moerane,2026,CAFC,52369,False,2,1,0,90,0,0,0,0,0
-724150,Sekhoane Moerane,2026,AFCQ,13962,True,4,4,0,360,0,0,0,0,0
+724150,Sekhoane Moerane,2026,AFCQ,13962,True,6,6,0,540,0,0,0,0,0
 724150,Sekhoane Moerane,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
 724150,Sekhoane Moerane,2025,SFA1,45783,False,30,13,0,1170,0,0,0,0,0
 724150,Sekhoane Moerane,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
@@ -48,6 +48,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 437731,Sabelo Nkomo,2020,NEDC,54893,False,2,0,0,0,0,0,0,0,0
 437731,Sabelo Nkomo,2019,NEDC,54893,False,4,2,0,210,0,0,0,0,0
 437731,Sabelo Nkomo,2015,NEDC,50009,False,1,1,0,90,0,0,0,0,0
+391573,Tshepo Mamabolo,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2025,SFA1,45783,False,30,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2024,NEDC,120423,False,2,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2023,SFAR,23285,False,4,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2023,NEDC,23285,False,4,1,0,118,0,0,0,0,0
+391573,Tshepo Mamabolo,2022,NEDC,23285,False,1,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2017,NEDC,45783,False,1,0,0,0,0,0,0,0,0
+391573,Tshepo Mamabolo,2016,NEDC,14569,False,2,1,0,90,0,0,0,0,0
+391573,Tshepo Mamabolo,2015,NEDC,2695,False,2,0,0,0,0,0,0,0,0
 357561,Cyril Chibwe,2025,SFA1,45783,False,16,7,0,599,0,0,0,0,0
 357561,Cyril Chibwe,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 357561,Cyril Chibwe,2025,CAFC,14579,False,6,0,0,0,0,0,0,0,0
@@ -81,16 +91,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 357561,Cyril Chibwe,2015,SFA1,13831,False,30,0,0,0,0,0,0,0,0
 357561,Cyril Chibwe,2015,NEDC,13831,False,2,0,0,0,0,0,0,0,0
 357561,Cyril Chibwe,2014,NEDC,28677,False,1,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2025,SFA1,45783,False,30,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2024,NEDC,120423,False,2,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2023,SFAR,23285,False,4,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2023,NEDC,23285,False,4,1,0,118,0,0,0,0,0
-391573,Tshepo Mamabolo,2022,NEDC,23285,False,1,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2017,NEDC,45783,False,1,0,0,0,0,0,0,0,0
-391573,Tshepo Mamabolo,2016,NEDC,14569,False,2,1,0,90,0,0,0,0,0
-391573,Tshepo Mamabolo,2015,NEDC,2695,False,2,0,0,0,0,0,0,0,0
 699346,Katlego Mkhabela,2025,TELK,45783,False,1,1,0,120,0,0,0,0,0
 699346,Katlego Mkhabela,2025,SFA1,45783,False,30,17,0,1303,0,0,3,0,4
 699346,Katlego Mkhabela,2025,NEDC,45783,False,1,1,0,16,0,0,0,0,1
@@ -135,7 +135,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1210868,Thabang Nhlapo,2024,SFAR,45783,False,4,4,0,360,0,0,0,0,0
 1210868,Thabang Nhlapo,2024,NEDC,45783,False,1,1,0,90,0,0,0,0,0
 1210868,Thabang Nhlapo,2023,NEDC,45783,False,1,1,0,90,0,0,0,0,0
-1210866,Thulani Jingana,2026,FS,13675,True,1,0,0,0,0,0,0,0,0
+1210866,Thulani Jingana,2026,FS,13675,True,2,0,0,0,0,0,0,0,0
 1210866,Thulani Jingana,2026,AFCQ,13675,True,2,2,0,180,0,0,0,0,0
 1210866,Thulani Jingana,2026,ACL,119640,False,2,0,0,0,0,0,0,0,0
 1210866,Thulani Jingana,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
@@ -212,7 +212,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 208076,Brian Onyango,2011,WMQ2,8987,True,8,8,0,692,1,0,0,0,1
 208076,Brian Onyango,2011,FS,8987,True,3,2,0,180,0,0,0,0,0
 208076,Brian Onyango,2011,AFCQ,8987,True,2,1,0,90,0,0,0,0,0
-739939,Mohammed Abubakar,2026,GHPL,60977,False,10,2,0,163,0,0,0,0,1
+739939,Mohammed Abubakar,2026,GHPL,60977,False,11,2,0,163,0,0,0,0,1
 739939,Mohammed Abubakar,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
 739939,Mohammed Abubakar,2025,SFA1,45783,False,21,0,0,0,0,0,0,0,0
 739939,Mohammed Abubakar,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
@@ -547,15 +547,15 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1450245,Oarabile Moeti,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
 1450245,Oarabile Moeti,2025,SFA1,45783,False,30,1,0,1,0,0,0,0,0
 1450245,Oarabile Moeti,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
+636980,Cameron Chweu,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
+636980,Cameron Chweu,2025,SFA1,45783,False,12,1,0,16,0,0,2,1,0
+636980,Cameron Chweu,2025,NEDC,138970,False,3,2,0,42,0,0,2,2,0
+636980,Cameron Chweu,2018,NEDC,14569,False,1,1,0,54,0,0,0,0,0
 1450003,Ikaneng Ramosala,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
 1450003,Ikaneng Ramosala,2025,SFA1,45783,False,30,3,0,179,0,0,4,0,0
 1450003,Ikaneng Ramosala,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 1450003,Ikaneng Ramosala,2024,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 1450003,Ikaneng Ramosala,2023,NEDC,45783,False,1,0,0,0,0,0,0,0,0
-636980,Cameron Chweu,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
-636980,Cameron Chweu,2025,SFA1,45783,False,12,1,0,16,0,0,2,1,0
-636980,Cameron Chweu,2025,NEDC,138970,False,3,2,0,42,0,0,2,2,0
-636980,Cameron Chweu,2018,NEDC,14569,False,1,1,0,54,0,0,0,0,0
 231562,Pogiso Mahlangu,2025,SFA1,45783,False,20,3,0,79,0,0,1,0,0
 231562,Pogiso Mahlangu,2025,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 231562,Pogiso Mahlangu,2024,TELK,85501,False,1,0,0,0,0,0,0,0,0
@@ -749,10 +749,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1239749,Thabang Mahlangu,2023,SFA1,2891,False,13,4,0,75,0,0,6,2,0
 1239749,Thabang Mahlangu,2023,NEDC,2891,False,2,0,0,0,0,0,0,0,0
 1239749,Thabang Mahlangu,2023,CAFC,2891,False,1,0,0,0,0,0,0,0,0
-529926,Lebohang Lesako,2026,AFCQ,13962,True,2,2,0,148,1,0,0,0,0
+529926,Lebohang Lesako,2026,AFCQ,13962,True,6,4,0,302,1,2,6,3,0
 529926,Lebohang Lesako,2025,SFA1,45783,False,21,13,0,625,0,2,19,4,3
 529926,Lebohang Lesako,2025,NEDC,45783,False,1,1,0,45,0,0,1,0,0
-529926,Lebohang Lesako,2025,FS,13962,True,2,0,0,0,0,0,0,0,0
+529926,Lebohang Lesako,2025,FS,13962,True,4,0,0,0,0,0,0,0,0
 529926,Lebohang Lesako,2024,SFAR,102349,False,4,2,0,133,0,0,5,1,0
 529926,Lebohang Lesako,2024,NEDC,102349,False,1,0,0,0,0,0,0,0,0
 529926,Lebohang Lesako,2023,WMQ2,13962,True,4,1,0,21,0,0,0,0,0
@@ -877,6 +877,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 487675,Thabang Maponya,2019,E3PL,25377,False,1,0,0,0,0,0,0,0,0
 487675,Thabang Maponya,2017,ES3A,20921,False,38,0,0,0,0,0,0,0,0
 487675,Thabang Maponya,2016,ES3A,13226,False,19,1,0,5,0,0,0,0,0
+1352389,Muhluri Ubisi,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
+1352389,Muhluri Ubisi,2025,SFA1,45783,False,14,0,0,0,0,0,0,0,0
+1352389,Muhluri Ubisi,2025,NEDC,120449,False,1,1,0,11,0,0,0,0,1
+1352389,Muhluri Ubisi,2024,SFAR,45783,False,4,1,0,21,0,0,0,0,0
+1352389,Muhluri Ubisi,2024,NEDC,45783,False,1,1,0,61,0,0,0,0,0
+1352389,Muhluri Ubisi,2023,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 437713,Simphiwe Ndlovu,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
 437713,Simphiwe Ndlovu,2025,SFA1,45783,False,14,1,0,1,0,0,0,0,0
 437713,Simphiwe Ndlovu,2025,NEDC,120449,False,1,0,0,0,0,0,0,0,0
@@ -886,12 +892,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 437713,Simphiwe Ndlovu,2022,NEDC,91455,False,1,1,0,62,0,0,0,0,0
 437713,Simphiwe Ndlovu,2021,NEDC,91455,False,3,2,0,128,0,0,0,0,0
 437713,Simphiwe Ndlovu,2015,NEDC,50009,False,1,1,0,90,0,0,0,0,0
-1352389,Muhluri Ubisi,2025,TELK,45783,False,1,0,0,0,0,0,0,0,0
-1352389,Muhluri Ubisi,2025,SFA1,45783,False,14,0,0,0,0,0,0,0,0
-1352389,Muhluri Ubisi,2025,NEDC,120449,False,1,1,0,11,0,0,0,0,1
-1352389,Muhluri Ubisi,2024,SFAR,45783,False,4,1,0,21,0,0,0,0,0
-1352389,Muhluri Ubisi,2024,NEDC,45783,False,1,1,0,61,0,0,0,0,0
-1352389,Muhluri Ubisi,2023,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 862052,Alphonia Lekeno,2024,SFAR,45783,False,4,0,0,0,0,0,0,0,0
 862052,Alphonia Lekeno,2024,NEDC,45783,False,1,0,0,0,0,0,0,0,0
 862052,Alphonia Lekeno,2023,NEDC,45783,False,1,1,0,7,0,0,0,0,0
@@ -1970,7 +1970,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 540918,Giovanni Philander,2024,SFA1,31283,False,28,19,0,1148,0,0,26,7,1
 540918,Giovanni Philander,2024,NEDC,31283,False,2,2,0,103,0,1,4,2,0
 540918,Giovanni Philander,2020,NEDC,32515,False,2,0,0,0,0,0,0,0,0
-683126,Mehdi Ouamri,2026,ALG1,40319,False,8,2,0,22,0,0,0,0,0
+683126,Mehdi Ouamri,2026,ALG1,40319,False,8,3,0,23,0,0,0,0,0
 683126,Mehdi Ouamri,2025,TELK,67074,False,2,2,0,63,1,0,5,3,0
 683126,Mehdi Ouamri,2025,SFA1,67074,False,24,15,0,349,0,1,8,2,0
 683126,Mehdi Ouamri,2025,NEDC,67074,False,5,0,0,0,0,0,0,0,0
@@ -2074,7 +2074,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478498,Ashley du Preez,2018,NEDC,23287,False,1,1,0,120,0,0,0,0,1
 478498,Ashley du Preez,2016,NEDC,23287,False,1,1,0,64,0,0,0,0,0
 661584,Kitso Mangolo,2026,SFA1,12668,False,1,0,0,0,0,0,0,0,0
-661584,Kitso Mangolo,2026,AFCQ,15229,True,2,2,0,180,0,0,0,0,2
+661584,Kitso Mangolo,2026,AFCQ,15229,True,4,2,0,180,0,0,0,0,2
 661584,Kitso Mangolo,2026,ACL,29852,False,2,2,0,180,0,0,0,0,0
 661584,Kitso Mangolo,2025,TELK,12668,False,3,1,0,45,0,0,0,0,0
 661584,Kitso Mangolo,2025,SFAL,12668,False,1,0,0,0,0,0,0,0,0
@@ -2087,7 +2087,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 661584,Kitso Mangolo,2023,FS,15229,True,4,2,0,118,0,0,0,0,0
 661584,Kitso Mangolo,2023,ACL,52369,False,7,6,0,540,0,0,1,1,2
 661584,Kitso Mangolo,2022,FS,15229,True,2,1,0,28,0,0,0,0,0
-661584,Kitso Mangolo,2021,AFCQ,15229,True,4,3,0,193,0,0,0,0,0
+661584,Kitso Mangolo,2021,FS,15229,True,1,0,0,0,0,0,0,0,0
+661584,Kitso Mangolo,2021,AFCQ,15229,True,8,3,0,193,0,0,0,0,0
 661584,Kitso Mangolo,2019,AFCQ,15229,True,2,0,0,0,0,0,0,0,0
 857924,Oumar Comara,2026,SFA1,7011,False,1,0,0,0,0,0,0,0,0
 857924,Oumar Comara,2026,ACL,9052,False,4,2,0,180,0,0,0,0,0
@@ -2336,6 +2337,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1145003,Eroine Agnikoi,2026,TELK,7011,False,2,2,0,180,0,0,1,0,0
 1145003,Eroine Agnikoi,2026,SFAL,7011,False,3,2,0,180,0,0,0,0,1
 1145003,Eroine Agnikoi,2026,SFA1,7011,False,10,5,0,450,0,0,4,1,0
+1145003,Eroine Agnikoi,2026,FS,25249,True,1,0,0,0,0,0,0,0,0
 1145003,Eroine Agnikoi,2025,TELK,61852,False,4,4,0,450,0,0,0,0,0
 1145003,Eroine Agnikoi,2025,SFA1,61852,False,21,14,0,1260,2,0,7,3,0
 1145003,Eroine Agnikoi,2025,NEDC,61852,False,1,1,0,120,0,0,0,0,0
@@ -2519,7 +2521,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 985119,Ethan Visagie,2021,NEDC,71504,False,1,1,0,19,0,0,0,0,0
 1131788,Thato Sibiya,2026,SFAL,6356,False,2,0,0,0,0,0,0,0,0
 1131788,Thato Sibiya,2026,SFA1,6356,False,3,0,0,0,0,0,0,0,0
-1131788,Thato Sibiya,2026,FR5D,12765,False,7,4,0,245,0,0,0,0,0
+1131788,Thato Sibiya,2026,FR5D,12765,False,7,5,0,335,0,0,0,0,0
 1131788,Thato Sibiya,2025,SFA1,6356,False,17,1,0,90,0,1,0,0,0
 1131788,Thato Sibiya,2025,NEDC,6356,False,2,1,0,45,0,0,0,0,0
 1131788,Thato Sibiya,2025,ACL,6356,False,10,2,0,121,0,0,2,1,0
@@ -2911,8 +2913,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1238157,Thamsanqa Magwaza,2023,NEDC,116336,False,2,2,0,119,0,0,0,0,0
 625595,Brian Bwire,2026,SFAL,21202,False,1,0,0,0,0,0,0,0,0
 625595,Brian Bwire,2026,SFA1,21202,False,4,0,0,0,0,0,0,0,0
-625595,Brian Bwire,2026,CAFC,3125,False,2,0,0,0,0,0,0,0,0
-625595,Brian Bwire,2026,AFCQ,8987,True,2,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2026,FS,8987,True,1,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2026,CAFC,3125,False,4,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2026,AFCQ,8987,True,4,0,0,0,0,0,0,0,0
 625595,Brian Bwire,2025,TELK,21202,False,1,1,0,120,0,0,0,0,0
 625595,Brian Bwire,2025,SFAL,21202,False,1,1,0,90,0,0,0,0,0
 625595,Brian Bwire,2025,SFA1,21202,False,30,16,0,1440,0,0,0,0,3
@@ -2930,11 +2933,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 625595,Brian Bwire,2022,FS,8987,True,3,0,0,0,0,0,0,0,0
 625595,Brian Bwire,2021,CAFC,3125,False,2,2,0,180,0,0,0,0,0
 625595,Brian Bwire,2021,ACL,3125,False,4,2,0,180,0,0,0,0,0
-625595,Brian Bwire,2020,FS,8987,True,2,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2020,FS,8987,True,3,0,0,0,0,0,0,0,0
 625595,Brian Bwire,2019,WMQ2,8987,True,6,2,0,180,0,0,0,0,0
-625595,Brian Bwire,2019,AFCQ,8987,True,4,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2019,FS,8987,True,2,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2019,AFCQ,8987,True,6,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2018,FS,8987,True,2,0,0,0,0,0,0,0,0
 625595,Brian Bwire,2018,CAFC,61619,False,2,2,0,180,0,0,0,0,0
-625595,Brian Bwire,2017,AFCQ,8987,True,1,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2018,AFCN,8987,True,3,0,0,0,0,0,0,0,0
+625595,Brian Bwire,2017,AFCQ,8987,True,2,0,0,0,0,0,0,0,0
 1109254,Thabang Matuludi,2026,TELK,6356,False,2,1,0,23,0,0,1,1,0
 1109254,Thabang Matuludi,2026,SFAL,6356,False,1,1,0,90,0,0,1,0,0
 1109254,Thabang Matuludi,2026,SFAL,21202,False,1,0,0,0,0,0,0,0,0
@@ -2942,8 +2948,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1109254,Thabang Matuludi,2026,SFA1,21202,False,5,0,0,0,0,0,0,0,0
 1109254,Thabang Matuludi,2026,FS,3806,True,1,1,0,90,0,0,1,0,0
 1109254,Thabang Matuludi,2026,FIC1,6356,False,1,1,0,85,0,1,0,0,0
-1109254,Thabang Matuludi,2026,CAFS,6356,False,1,1,0,84,0,0,1,0,0
-1109254,Thabang Matuludi,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+1109254,Thabang Matuludi,2026,CAFS,6356,False,1,1,0,85,0,0,1,0,0
+1109254,Thabang Matuludi,2026,AFCQ,3806,True,4,2,0,180,0,0,1,0,0
 1109254,Thabang Matuludi,2026,ACL,6356,False,2,2,0,180,0,0,0,0,0
 1109254,Thabang Matuludi,2025,TELK,21202,False,1,1,0,120,0,0,1,0,0
 1109254,Thabang Matuludi,2025,SFAL,21202,False,1,0,1,0,0,0,0,0,0
@@ -3343,7 +3349,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 453370,Sipho Chaine,2026,SFAL,2557,False,4,4,0,390,0,0,0,0,0
 453370,Sipho Chaine,2026,SFA1,2557,False,10,9,0,810,0,0,0,0,0
 453370,Sipho Chaine,2026,FS,3806,True,1,1,0,62,0,0,0,0,0
-453370,Sipho Chaine,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+453370,Sipho Chaine,2026,AFCQ,3806,True,4,0,0,0,0,0,0,0,0
 453370,Sipho Chaine,2026,ACL,2557,False,4,2,0,180,0,0,0,0,0
 453370,Sipho Chaine,2025,TELK,2557,False,4,4,0,390,0,0,0,0,1
 453370,Sipho Chaine,2025,SFAL,2557,False,4,4,0,390,0,0,0,0,1
@@ -3416,6 +3422,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 605905,Melusi Buthelezi,2020,NEDC,67074,False,1,0,0,0,0,0,0,0,0
 605905,Melusi Buthelezi,2019,NEDC,2238,False,2,0,0,0,0,0,0,0,0
 605905,Melusi Buthelezi,2018,NEDC,2238,False,3,0,0,0,0,0,0,0,0
+1378320,Mbekezeli Mbokazi,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
+1378320,Mbekezeli Mbokazi,2026,AFCQ,3806,True,4,1,0,19,0,0,1,1,0
 1378320,Mbekezeli Mbokazi,2025,USMX,432,False,4,0,4,0,0,0,0,0,0
 1378320,Mbekezeli Mbokazi,2025,TELK,2557,False,4,4,0,390,1,0,5,1,1
 1378320,Mbekezeli Mbokazi,2025,SFAL,2557,False,4,4,0,390,0,1,1,0,0
@@ -3538,7 +3546,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1042094,Lebone Seema,2026,SFAL,2557,False,4,4,0,362,0,0,3,0,0
 1042094,Lebone Seema,2026,SFA1,2557,False,10,9,0,810,2,2,6,2,1
 1042094,Lebone Seema,2026,FS,3806,True,1,1,0,90,0,0,0,0,0
-1042094,Lebone Seema,2026,AFCQ,3806,True,2,1,0,16,0,0,0,0,0
+1042094,Lebone Seema,2026,AFCQ,3806,True,4,1,0,16,0,0,0,0,0
 1042094,Lebone Seema,2026,ACL,2557,False,4,2,0,180,0,0,0,0,0
 1042094,Lebone Seema,2025,TELK,2557,False,4,3,0,300,0,0,2,0,0
 1042094,Lebone Seema,2025,SFAL,2557,False,4,3,1,300,0,0,2,0,0
@@ -3768,7 +3776,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 273903,Deon Hotto,2026,SFAL,2557,False,4,2,0,171,1,0,3,2,0
 273903,Deon Hotto,2026,SFA1,2557,False,10,5,0,368,0,1,3,2,0
 273903,Deon Hotto,2026,FS,3573,True,1,1,0,90,0,0,0,0,0
-273903,Deon Hotto,2026,AFCQ,3573,True,3,3,0,270,0,0,2,1,1
+273903,Deon Hotto,2026,AFCQ,3573,True,4,4,0,360,0,0,2,1,1
 273903,Deon Hotto,2026,ACL,2557,False,4,1,0,90,0,0,0,0,0
 273903,Deon Hotto,2025,TELK,2557,False,4,4,0,184,0,0,3,1,0
 273903,Deon Hotto,2025,SFAL,2557,False,4,4,0,390,0,0,6,1,0
@@ -3869,6 +3877,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 735697,Thalente Mbatha,2026,TELK,2557,False,2,1,0,63,0,1,2,1,1
 735697,Thalente Mbatha,2026,SFAL,2557,False,4,2,0,202,0,0,8,2,0
 735697,Thalente Mbatha,2026,SFA1,2557,False,10,2,2,149,0,0,2,0,0
+735697,Thalente Mbatha,2026,FS,3806,True,1,0,1,0,0,0,0,0,0
+735697,Thalente Mbatha,2026,AFCQ,3806,True,4,1,2,87,0,0,3,0,0
 735697,Thalente Mbatha,2026,ACL,2557,False,4,0,1,0,0,0,0,0,0
 735697,Thalente Mbatha,2025,TELK,2557,False,4,2,0,173,0,0,3,3,0
 735697,Thalente Mbatha,2025,SFAL,2557,False,4,3,0,238,0,0,4,2,0
@@ -3903,7 +3913,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 735697,Thalente Mbatha,2020,NEDC,2891,False,1,0,0,0,0,0,0,0,0
 735697,Thalente Mbatha,2019,SFA1,43056,False,15,4,0,178,0,0,0,0,0
 735697,Thalente Mbatha,2019,NEDC,43056,False,3,0,0,0,0,0,0,0,0
-436374,Sipho Mbule,2026,IRQ1,39637,False,13,12,0,771,1,1,0,0,1
+436374,Sipho Mbule,2026,IRQ1,39637,False,13,12,0,806,1,1,0,0,1
 436374,Sipho Mbule,2025,TELK,2557,False,4,4,0,117,0,0,4,3,0
 436374,Sipho Mbule,2025,SFAL,2557,False,4,4,0,163,0,0,2,0,0
 436374,Sipho Mbule,2025,SFA1,2557,False,30,12,0,431,0,0,11,1,0
@@ -4252,7 +4262,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1125037,Relebohile Mofokeng,2026,CCB,3948,False,1,1,0,25,0,1,0,0,0
 1125037,Relebohile Mofokeng,2026,BESC,3948,False,1,1,0,29,0,0,2,1,0
 1125037,Relebohile Mofokeng,2026,BE1,3948,False,11,10,0,515,4,2,17,8,0
-1125037,Relebohile Mofokeng,2026,AFCQ,3806,True,2,2,0,172,2,0,9,4,0
+1125037,Relebohile Mofokeng,2026,AFCQ,3806,True,3,3,0,262,3,0,13,5,0
 1125037,Relebohile Mofokeng,2025,TELK,2557,False,4,3,0,199,1,0,3,1,0
 1125037,Relebohile Mofokeng,2025,SFAL,2557,False,4,4,0,375,0,0,3,1,1
 1125037,Relebohile Mofokeng,2025,SFA1,2557,False,30,27,0,2132,10,8,69,25,2
@@ -4292,7 +4302,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 673381,Oswin Appollis,2026,SFAL,2557,False,4,4,0,250,0,0,7,3,0
 673381,Oswin Appollis,2026,SFA1,2557,False,10,9,0,416,2,3,14,9,0
 673381,Oswin Appollis,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
-673381,Oswin Appollis,2026,AFCQ,3806,True,2,2,0,172,0,3,6,2,0
+673381,Oswin Appollis,2026,AFCQ,3806,True,4,4,0,326,0,3,10,4,0
 673381,Oswin Appollis,2026,ACL,2557,False,4,2,0,180,0,0,0,0,0
 673381,Oswin Appollis,2025,TELK,2557,False,4,4,0,348,0,1,8,3,0
 673381,Oswin Appollis,2025,SFAL,2557,False,4,4,0,233,1,2,7,2,0
@@ -4332,7 +4342,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 844485,Tshepang Moremi,2026,SFAL,2557,False,4,3,0,210,0,0,7,2,1
 844485,Tshepang Moremi,2026,SFA1,2557,False,10,7,0,540,5,0,11,6,0
 844485,Tshepang Moremi,2026,FS,3806,True,1,1,0,45,0,0,0,0,0
-844485,Tshepang Moremi,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+844485,Tshepang Moremi,2026,AFCQ,3806,True,4,1,0,57,0,0,1,0,0
 844485,Tshepang Moremi,2026,ACL,2557,False,4,0,2,0,0,0,0,0,0
 844485,Tshepang Moremi,2025,TELK,2557,False,4,4,0,344,2,0,13,4,1
 844485,Tshepang Moremi,2025,SFAL,2557,False,4,3,0,95,2,1,5,3,0
@@ -4497,7 +4507,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1147135,Daniel Msendami,2026,SFAL,2557,False,3,0,0,0,0,0,0,0,0
 1147135,Daniel Msendami,2026,SFA1,61852,False,5,0,0,0,0,0,0,0,0
 1147135,Daniel Msendami,2026,SFA1,2557,False,5,2,0,71,1,0,5,2,0
-1147135,Daniel Msendami,2026,AFCQ,3583,True,3,2,0,40,0,0,2,0,0
+1147135,Daniel Msendami,2026,AFCQ,3583,True,4,3,0,46,0,0,2,0,0
 1147135,Daniel Msendami,2026,ACL,2557,False,1,1,0,90,0,0,0,0,0
 1147135,Daniel Msendami,2025,TELK,61852,False,4,3,0,204,0,0,1,0,1
 1147135,Daniel Msendami,2025,SFA1,61852,False,14,13,0,922,1,0,23,8,1
@@ -4539,7 +4549,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 945876,Fiacre Ntwari,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
 945876,Fiacre Ntwari,2026,SFA1,120423,False,10,2,0,180,0,0,0,0,0
 945876,Fiacre Ntwari,2026,FS,3855,True,1,0,0,0,0,0,0,0,0
-945876,Fiacre Ntwari,2026,AFCQ,3855,True,2,2,0,180,0,0,0,0,0
+945876,Fiacre Ntwari,2026,AFCQ,3855,True,4,4,0,360,0,0,0,0,0
 945876,Fiacre Ntwari,2025,TELK,568,False,1,1,0,120,0,0,0,0,0
 945876,Fiacre Ntwari,2025,SFA1,568,False,30,0,11,0,0,0,0,0,0
 945876,Fiacre Ntwari,2025,NEDC,568,False,1,0,0,0,0,0,0,0,0
@@ -5026,7 +5036,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 467610,Nkanyiso Shinga,2025,CAFC,568,False,10,0,0,0,0,0,0,0,0
 467610,Nkanyiso Shinga,2024,POPO,2521,False,3,2,0,40,0,0,0,0,0
 467610,Nkanyiso Shinga,2024,PO2,2521,False,34,20,0,1399,0,0,4,2,3
-467610,Nkanyiso Shinga,2024,CPSC,2521,False,26,0,0,0,0,0,0,0,0
+467610,Nkanyiso Shinga,2024,CPSC,2521,False,8,0,0,0,0,0,0,0,0
 467610,Nkanyiso Shinga,2023,POPO,2431,False,2,2,0,133,0,0,0,0,0
 467610,Nkanyiso Shinga,2023,POCP,2431,False,1,0,0,0,0,0,0,0,0
 467610,Nkanyiso Shinga,2023,PO1,2431,False,34,10,0,516,0,0,1,1,0
@@ -5406,7 +5416,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 356450,Flávio Silva,2026,SFAL,568,False,1,0,0,0,0,0,0,0,0
 356450,Flávio Silva,2026,SFA1,568,False,10,3,0,78,1,0,4,1,0
 356450,Flávio Silva,2026,CAFC,568,False,2,0,0,0,0,0,0,0,0
-356450,Flávio Silva,2026,AFCQ,3701,True,3,1,0,1,0,0,1,1,0
+356450,Flávio Silva,2026,AFCQ,3701,True,4,1,0,1,0,0,1,1,0
 356450,Flávio Silva,2025,TELK,568,False,1,0,0,0,0,0,0,0,0
 356450,Flávio Silva,2025,SFA1,568,False,30,22,0,1101,8,1,33,16,3
 356450,Flávio Silva,2025,NEDC,568,False,1,1,0,90,1,0,2,1,1
@@ -5621,7 +5631,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 175577,Ronwen Williams,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 175577,Ronwen Williams,2026,FIC1,6356,False,1,1,0,90,0,0,0,0,0
 175577,Ronwen Williams,2026,CAFS,6356,False,1,1,0,90,0,0,0,0,0
-175577,Ronwen Williams,2026,AFCQ,3806,True,2,2,0,180,0,0,0,0,0
+175577,Ronwen Williams,2026,AFCQ,3806,True,4,4,0,360,0,0,0,0,0
 175577,Ronwen Williams,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 175577,Ronwen Williams,2025,TELK,6356,False,1,1,0,120,0,0,0,0,0
 175577,Ronwen Williams,2025,SFAL,6356,False,3,3,0,270,0,0,0,0,1
@@ -5728,7 +5738,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 68096,Denis Onyango,2026,SFA1,6356,False,7,0,0,0,0,0,0,0,0
 68096,Denis Onyango,2026,FS,13497,True,2,0,0,0,0,0,0,0,0
 68096,Denis Onyango,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
-68096,Denis Onyango,2026,AFCQ,13497,True,2,2,0,180,0,0,0,0,0
+68096,Denis Onyango,2026,AFCQ,13497,True,4,3,0,222,0,0,0,0,0
 68096,Denis Onyango,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
 68096,Denis Onyango,2025,TELK,6356,False,1,0,0,0,0,0,0,0,0
 68096,Denis Onyango,2025,SFAL,6356,False,3,0,0,0,0,0,0,0,0
@@ -5949,7 +5959,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 353432,Aubrey Modiba,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 353432,Aubrey Modiba,2026,FIC1,6356,False,1,1,0,90,0,0,0,0,0
 353432,Aubrey Modiba,2026,CAFS,6356,False,1,1,0,84,0,0,1,1,0
-353432,Aubrey Modiba,2026,AFCQ,3806,True,2,1,0,57,0,0,1,1,0
+353432,Aubrey Modiba,2026,AFCQ,3806,True,4,2,0,147,0,0,1,1,0
 353432,Aubrey Modiba,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 353432,Aubrey Modiba,2025,TELK,6356,False,1,1,0,120,0,0,2,1,1
 353432,Aubrey Modiba,2025,SFAL,6356,False,3,3,0,182,0,0,1,0,1
@@ -6061,7 +6071,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478520,Fawaaz Basadien,2026,FS,3806,True,1,1,0,90,0,0,0,0,0
 478520,Fawaaz Basadien,2026,FIC1,6356,False,1,1,0,1,0,0,0,0,0
 478520,Fawaaz Basadien,2026,CAFS,6356,False,1,1,0,6,0,0,3,1,0
-478520,Fawaaz Basadien,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+478520,Fawaaz Basadien,2026,AFCQ,3806,True,4,0,0,0,0,0,0,0,0
 478520,Fawaaz Basadien,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 478520,Fawaaz Basadien,2025,TELK,6356,False,1,1,0,31,0,0,0,0,0
 478520,Fawaaz Basadien,2025,SFAL,6356,False,3,1,0,12,0,0,0,0,0
@@ -6233,7 +6243,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 297509,Thapelo Morena,2026,FS,3806,True,1,1,0,13,0,0,0,0,0
 297509,Thapelo Morena,2026,FIC1,6356,False,1,1,0,90,0,0,0,0,0
 297509,Thapelo Morena,2026,CAFS,6356,False,1,1,0,45,0,0,2,1,0
-297509,Thapelo Morena,2026,AFCQ,3806,True,2,1,0,8,0,0,0,0,0
+297509,Thapelo Morena,2026,AFCQ,3806,True,4,1,0,8,0,0,0,0,0
 297509,Thapelo Morena,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 297509,Thapelo Morena,2025,TELK,6356,False,1,1,0,21,0,0,0,0,0
 297509,Thapelo Morena,2025,SFAL,6356,False,3,0,0,0,0,0,0,0,0
@@ -6707,7 +6717,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 436372,Teboho Mokoena,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 436372,Teboho Mokoena,2026,FIC1,6356,False,1,1,0,90,0,1,0,0,1
 436372,Teboho Mokoena,2026,CAFS,6356,False,1,1,0,90,0,0,4,0,0
-436372,Teboho Mokoena,2026,AFCQ,3806,True,2,1,0,90,0,0,4,1,0
+436372,Teboho Mokoena,2026,AFCQ,3806,True,4,3,0,237,0,0,6,2,0
 436372,Teboho Mokoena,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 436372,Teboho Mokoena,2025,TELK,6356,False,1,1,0,59,0,0,2,0,1
 436372,Teboho Mokoena,2025,SFAL,6356,False,3,3,0,270,1,0,7,3,1
@@ -6964,7 +6974,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 495271,Bathusi Aubaas,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 495271,Bathusi Aubaas,2026,FIC1,6356,False,1,1,0,6,0,0,0,0,0
 495271,Bathusi Aubaas,2026,CAFS,6356,False,1,0,0,0,0,0,0,0,0
-495271,Bathusi Aubaas,2026,AFCQ,3806,True,2,2,0,20,0,0,0,0,0
+495271,Bathusi Aubaas,2026,AFCQ,3806,True,4,4,0,29,0,0,0,0,0
 495271,Bathusi Aubaas,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 495271,Bathusi Aubaas,2025,TELK,6356,False,1,1,0,61,0,0,2,0,1
 495271,Bathusi Aubaas,2025,SFAL,6356,False,3,1,0,8,0,0,0,0,0
@@ -7062,7 +7072,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 337884,Iqraam Rayners,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 337884,Iqraam Rayners,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
 337884,Iqraam Rayners,2026,CAFS,6356,False,1,1,0,73,1,0,2,1,0
-337884,Iqraam Rayners,2026,AFCQ,3806,True,2,2,0,142,1,0,5,2,0
+337884,Iqraam Rayners,2026,AFCQ,3806,True,4,4,0,262,1,0,8,5,0
 337884,Iqraam Rayners,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
 337884,Iqraam Rayners,2025,TELK,6356,False,1,1,0,89,0,0,2,0,0
 337884,Iqraam Rayners,2025,SFAL,6356,False,3,3,0,254,3,0,6,5,1
@@ -7116,6 +7126,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 512980,Tashreeq Matthews,2026,FS,3806,True,1,1,0,45,0,0,0,0,0
 512980,Tashreeq Matthews,2026,FIC1,6356,False,1,1,0,85,0,0,0,0,0
 512980,Tashreeq Matthews,2026,CAFS,6356,False,1,1,0,90,0,0,4,0,0
+512980,Tashreeq Matthews,2026,AFCQ,3806,True,2,1,0,7,0,0,0,0,0
 512980,Tashreeq Matthews,2026,ACL,6356,False,2,2,0,180,1,0,0,0,0
 512980,Tashreeq Matthews,2025,TELK,6356,False,1,1,0,89,0,0,5,0,0
 512980,Tashreeq Matthews,2025,SFAL,6356,False,3,3,0,220,0,0,3,2,0
@@ -7222,7 +7233,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 905691,Arthur Sales,2019,CB20,14724,False,19,16,0,1127,4,4,0,0,5
 905691,Arthur Sales,2019,BRA1,978,False,12,0,0,0,0,0,0,0,0
 397937,Peter Shalulile,2026,FS,3573,True,1,1,0,90,0,0,1,0,0
-397937,Peter Shalulile,2026,AFCQ,3573,True,3,3,0,235,0,0,9,3,0
+397937,Peter Shalulile,2026,AFCQ,3573,True,4,4,0,310,0,0,10,4,0
 397937,Peter Shalulile,2026,ACL,9052,False,4,3,0,270,1,0,0,0,0
 397937,Peter Shalulile,2025,TELK,6356,False,1,1,0,31,0,0,2,0,0
 397937,Peter Shalulile,2025,SFAL,6356,False,3,2,0,12,0,0,0,0,0
@@ -7369,7 +7380,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 176578,Themba Zwane,2026,SFA1,6356,False,10,5,0,89,0,0,2,0,0
 176578,Themba Zwane,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
 176578,Themba Zwane,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
-176578,Themba Zwane,2026,CAFS,6356,False,1,1,0,6,0,0,0,0,0
+176578,Themba Zwane,2026,CAFS,6356,False,1,1,0,5,0,0,0,0,0
 176578,Themba Zwane,2026,AFCQ,3806,True,2,1,0,11,0,0,0,0,0
 176578,Themba Zwane,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
 176578,Themba Zwane,2025,TELK,6356,False,1,0,1,0,0,0,0,0,0
@@ -7677,7 +7688,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 514203,Riaan Hanamub,2026,SFAL,9370,False,1,1,0,120,0,0,3,1,0
 514203,Riaan Hanamub,2026,SFA1,9370,False,10,8,0,720,0,0,3,1,0
 514203,Riaan Hanamub,2026,FS,3573,True,1,1,0,90,0,0,0,0,0
-514203,Riaan Hanamub,2026,AFCQ,3573,True,3,3,0,270,0,1,2,1,0
+514203,Riaan Hanamub,2026,AFCQ,3573,True,4,4,0,360,0,1,3,1,0
 514203,Riaan Hanamub,2025,TELK,9370,False,1,1,0,90,0,1,0,0,0
 514203,Riaan Hanamub,2025,SFAL,9370,False,1,1,0,120,0,0,1,0,0
 514203,Riaan Hanamub,2025,SFA1,9370,False,30,28,0,2520,1,2,10,4,1
@@ -7887,7 +7898,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1390564,Bayanda Thabede,2024,SFA1,9370,False,6,2,0,132,0,0,2,0,1
 240892,Bongani Zungu,2026,SFAL,9370,False,1,0,0,0,0,0,0,0,0
 240892,Bongani Zungu,2026,SFA1,9370,False,4,0,0,0,0,0,0,0,0
-240892,Bongani Zungu,2026,INR1,122123,False,7,3,0,165,0,0,0,0,1
+240892,Bongani Zungu,2026,INR1,122123,False,8,3,0,165,0,0,0,0,1
 240892,Bongani Zungu,2025,TELK,9370,False,1,0,0,0,0,0,0,0,0
 240892,Bongani Zungu,2025,SFAL,9370,False,1,1,0,90,0,0,0,0,0
 240892,Bongani Zungu,2025,SFA1,9370,False,30,11,0,427,0,0,3,0,1
@@ -8077,7 +8088,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 934180,Thandolwenkosi Ngwenya,2026,TELK,9370,False,2,2,0,150,0,0,2,0,0
 934180,Thandolwenkosi Ngwenya,2026,SFAL,9370,False,1,1,0,81,2,0,4,3,0
 934180,Thandolwenkosi Ngwenya,2026,SFA1,9370,False,10,9,0,714,9,1,18,11,1
-934180,Thandolwenkosi Ngwenya,2026,AFCQ,3583,True,3,2,0,175,0,0,3,2,0
+934180,Thandolwenkosi Ngwenya,2026,AFCQ,3583,True,4,3,0,246,1,0,7,4,0
 934180,Thandolwenkosi Ngwenya,2025,TELK,9370,False,1,1,0,45,0,0,0,0,0
 934180,Thandolwenkosi Ngwenya,2025,SFAL,9370,False,1,0,0,0,0,0,0,0,0
 934180,Thandolwenkosi Ngwenya,2025,SFA1,9370,False,30,16,0,1152,6,1,25,12,3
@@ -8328,7 +8339,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 932630,Manuel Sapunga,2026,TELK,85501,False,2,1,0,90,0,0,0,0,0
 932630,Manuel Sapunga,2026,SFAL,85501,False,3,0,0,0,0,0,0,0,0
 932630,Manuel Sapunga,2026,SFA1,85501,False,10,0,0,0,0,0,0,0,0
-932630,Manuel Sapunga,2026,AFCQ,13485,True,3,0,0,0,0,0,0,0,0
+932630,Manuel Sapunga,2026,AFCQ,13485,True,4,0,0,0,0,0,0,0,0
 932630,Manuel Sapunga,2025,TELK,85501,False,1,0,0,0,0,0,0,0,0
 932630,Manuel Sapunga,2025,SFAL,85501,False,3,0,0,0,0,0,0,0,0
 932630,Manuel Sapunga,2025,SFA1,85501,False,30,2,0,180,0,0,0,0,0
@@ -9307,7 +9318,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 904860,Ashay Sewlall,2021,NEDC,12668,False,2,1,0,30,0,0,0,0,0
 904860,Ashay Sewlall,2020,SFAR,12668,False,4,0,0,0,0,0,0,0,0
 904860,Ashay Sewlall,2020,NEDC,12668,False,4,0,0,0,0,0,0,0,0
-1399172,Asimbonge Mdunge,2026,SFA1,12668,False,1,0,0,0,0,0,0,0,0
 1399172,Asimbonge Mdunge,2025,SFA1,12668,False,4,3,0,59,0,0,1,0,0
 1399172,Asimbonge Mdunge,2024,SFA1,12668,False,5,2,0,14,0,0,0,0,0
 1434464,Mbulelo Nombengula,2026,TELK,12668,False,1,0,0,0,0,0,0,0,0
@@ -9841,7 +9851,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 160289,Sage Stephens,2026,TELK,23287,False,2,0,0,0,0,0,0,0,0
 160289,Sage Stephens,2026,SFA1,23287,False,10,9,0,810,0,0,0,0,0
 160289,Sage Stephens,2026,FS,3806,True,1,0,0,0,0,0,0,0,0
-160289,Sage Stephens,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+160289,Sage Stephens,2026,AFCQ,3806,True,3,0,0,0,0,0,0,0,0
 160289,Sage Stephens,2025,TELK,23287,False,2,1,0,59,0,0,0,0,0
 160289,Sage Stephens,2025,SFAL,23287,False,4,4,0,420,0,0,0,0,1
 160289,Sage Stephens,2025,SFA1,23287,False,30,29,0,2610,0,0,0,0,2
@@ -9977,10 +9987,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 42826,Lee Langeveldt,2008,SFAL,7204,False,1,0,0,0,0,0,0,0,0
 42826,Lee Langeveldt,2008,SFA1,7204,False,30,6,0,478,0,0,0,0,0
 42826,Lee Langeveldt,2007,SFA1,7204,False,30,10,0,900,0,0,0,0,0
-1459573,Dejean Ah Shene,2025,TELK,23287,False,1,0,0,0,0,0,0,0,0
-1459573,Dejean Ah Shene,2025,SFA1,23287,False,6,0,0,0,0,0,0,0,0
-1459573,Dejean Ah Shene,2025,NEDC,23287,False,1,0,0,0,0,0,0,0,0
-1459573,Dejean Ah Shene,2025,CAFC,23287,False,7,0,0,0,0,0,0,0,0
 579124,Thabo Moloisane,2026,TELK,568,False,2,2,0,175,0,0,1,0,0
 579124,Thabo Moloisane,2026,SFAL,568,False,1,0,0,0,0,0,0,0,0
 579124,Thabo Moloisane,2026,SFA1,568,False,10,7,0,630,0,0,1,0,3
@@ -10011,6 +10017,29 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 579124,Thabo Moloisane,2020,NEDC,37717,False,4,4,0,420,0,0,0,0,0
 579124,Thabo Moloisane,2018,20WC,22984,True,3,2,0,180,0,0,0,0,1
 579124,Thabo Moloisane,2018,20AC,22984,True,5,1,0,90,0,0,0,0,0
+964052,Athenkosi Mcaba,2026,TELK,85501,False,2,2,0,157,0,0,0,0,0
+964052,Athenkosi Mcaba,2026,SFAL,85501,False,3,0,0,0,0,0,0,0,0
+964052,Athenkosi Mcaba,2026,SFA1,85501,False,10,2,0,132,0,0,1,0,0
+964052,Athenkosi Mcaba,2025,TELK,23287,False,2,2,0,210,0,0,1,1,0
+964052,Athenkosi Mcaba,2025,SFAL,23287,False,4,1,0,120,0,0,0,0,1
+964052,Athenkosi Mcaba,2025,SFA1,23287,False,30,7,0,492,1,0,3,1,1
+964052,Athenkosi Mcaba,2025,NEDC,23287,False,2,0,0,0,0,0,0,0,0
+964052,Athenkosi Mcaba,2025,CAFC,23287,False,8,3,0,240,0,0,0,0,0
+964052,Athenkosi Mcaba,2024,TELK,23287,False,2,1,0,84,0,0,0,0,0
+964052,Athenkosi Mcaba,2024,SFAL,23287,False,4,4,0,360,0,0,0,0,0
+964052,Athenkosi Mcaba,2024,SFA1,23287,False,28,10,0,685,0,0,1,0,2
+964052,Athenkosi Mcaba,2024,NEDC,23287,False,3,1,0,90,0,0,0,0,0
+964052,Athenkosi Mcaba,2024,CAFC,23287,False,14,7,0,565,0,0,0,0,1
+964052,Athenkosi Mcaba,2023,TELK,23287,False,4,2,0,141,0,0,0,0,0
+964052,Athenkosi Mcaba,2023,SFAL,23287,False,3,2,0,135,0,0,0,0,0
+964052,Athenkosi Mcaba,2023,SFA1,23287,False,30,10,0,704,0,0,1,0,3
+964052,Athenkosi Mcaba,2023,NEDC,23287,False,4,3,0,300,0,0,0,0,0
+964052,Athenkosi Mcaba,2022,SFAL,23287,False,1,0,0,0,0,0,0,0,0
+964052,Athenkosi Mcaba,2022,SFA1,23287,False,30,5,0,370,0,0,0,0,2
+964052,Athenkosi Mcaba,2022,NEDC,23287,False,4,0,0,0,0,0,0,0,0
+964052,Athenkosi Mcaba,2021,SFA1,23287,False,18,13,0,1124,0,0,2,0,2
+964052,Athenkosi Mcaba,2021,NEDC,23287,False,1,1,0,90,0,0,0,0,0
+964052,Athenkosi Mcaba,2021,FS,3806,True,2,1,0,22,0,0,0,0,0
 529332,Turan Manafov,2026,TELK,23287,False,2,0,0,0,0,0,0,0,0
 529332,Turan Manafov,2026,SFA1,23287,False,10,0,0,0,0,0,0,0,0
 529332,Turan Manafov,2025,TELK,23287,False,2,1,0,90,0,0,1,0,0
@@ -10043,29 +10072,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 529332,Turan Manafov,2017,AZ1,10625,False,28,0,0,0,0,0,0,0,0
 529332,Turan Manafov,2017,ASPK,10625,False,3,0,0,0,0,0,0,0,0
 529332,Turan Manafov,2017,19YL,62102,False,6,5,0,439,0,0,0,0,2
-964052,Athenkosi Mcaba,2026,TELK,85501,False,2,2,0,157,0,0,0,0,0
-964052,Athenkosi Mcaba,2026,SFAL,85501,False,3,0,0,0,0,0,0,0,0
-964052,Athenkosi Mcaba,2026,SFA1,85501,False,10,2,0,132,0,0,1,0,0
-964052,Athenkosi Mcaba,2025,TELK,23287,False,2,2,0,210,0,0,1,1,0
-964052,Athenkosi Mcaba,2025,SFAL,23287,False,4,1,0,120,0,0,0,0,1
-964052,Athenkosi Mcaba,2025,SFA1,23287,False,30,7,0,492,1,0,3,1,1
-964052,Athenkosi Mcaba,2025,NEDC,23287,False,2,0,0,0,0,0,0,0,0
-964052,Athenkosi Mcaba,2025,CAFC,23287,False,8,3,0,240,0,0,0,0,0
-964052,Athenkosi Mcaba,2024,TELK,23287,False,2,1,0,84,0,0,0,0,0
-964052,Athenkosi Mcaba,2024,SFAL,23287,False,4,4,0,360,0,0,0,0,0
-964052,Athenkosi Mcaba,2024,SFA1,23287,False,28,10,0,685,0,0,1,0,2
-964052,Athenkosi Mcaba,2024,NEDC,23287,False,3,1,0,90,0,0,0,0,0
-964052,Athenkosi Mcaba,2024,CAFC,23287,False,14,7,0,565,0,0,0,0,1
-964052,Athenkosi Mcaba,2023,TELK,23287,False,4,2,0,141,0,0,0,0,0
-964052,Athenkosi Mcaba,2023,SFAL,23287,False,3,2,0,135,0,0,0,0,0
-964052,Athenkosi Mcaba,2023,SFA1,23287,False,30,10,0,704,0,0,1,0,3
-964052,Athenkosi Mcaba,2023,NEDC,23287,False,4,3,0,300,0,0,0,0,0
-964052,Athenkosi Mcaba,2022,SFAL,23287,False,1,0,0,0,0,0,0,0,0
-964052,Athenkosi Mcaba,2022,SFA1,23287,False,30,5,0,370,0,0,0,0,2
-964052,Athenkosi Mcaba,2022,NEDC,23287,False,4,0,0,0,0,0,0,0,0
-964052,Athenkosi Mcaba,2021,SFA1,23287,False,18,13,0,1124,0,0,2,0,2
-964052,Athenkosi Mcaba,2021,NEDC,23287,False,1,1,0,90,0,0,0,0,0
-964052,Athenkosi Mcaba,2021,FS,3806,True,2,1,0,22,0,0,0,0,0
 743030,Enyinnaya Kazie Godswill,2025,TELK,23287,False,2,1,0,75,0,0,2,1,0
 743030,Enyinnaya Kazie Godswill,2025,SFAL,23287,False,4,4,0,372,1,0,4,1,0
 743030,Enyinnaya Kazie Godswill,2025,SFA1,23287,False,30,25,0,2101,1,2,20,6,6
@@ -10116,6 +10122,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1235103,Siviwe Nkwali,2024,20AC,22984,True,7,7,0,615,0,0,0,0,0
 1235103,Siviwe Nkwali,2023,SFA1,85615,False,14,14,0,1215,0,0,1,1,1
 1235103,Siviwe Nkwali,2023,NEDC,85615,False,1,1,0,45,0,0,0,0,0
+1459573,Dejean Ah Shene,2025,TELK,23287,False,1,0,0,0,0,0,0,0,0
+1459573,Dejean Ah Shene,2025,SFA1,23287,False,6,0,0,0,0,0,0,0,0
+1459573,Dejean Ah Shene,2025,NEDC,23287,False,1,0,0,0,0,0,0,0,0
+1459573,Dejean Ah Shene,2025,CAFC,23287,False,7,0,0,0,0,0,0,0,0
 533627,Henri Stanic,2026,CAFC,28970,False,2,0,0,0,0,0,0,0,0
 533627,Henri Stanic,2025,TELK,23287,False,2,1,0,90,0,0,0,0,0
 533627,Henri Stanic,2025,SFAL,23287,False,4,3,0,300,0,0,1,0,0
@@ -10372,10 +10382,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 548666,Fredrick Asare,2022,ACL,502,False,2,0,0,0,0,0,0,0,0
 548666,Fredrick Asare,2021,GHPL,63057,False,33,28,0,2421,0,0,0,0,2
 548666,Fredrick Asare,2018,20AC,22978,True,3,0,0,0,0,0,0,0,0
-160637,Ayanda Mtshali,2026,TELK,14187,False,1,0,0,0,0,0,0,0,0
-160637,Ayanda Mtshali,2026,SFAL,14187,False,1,0,0,0,0,0,0,0,0
-160637,Ayanda Mtshali,2026,SFA1,14187,False,10,0,0,0,0,0,0,0,0
-160637,Ayanda Mtshali,2026,CAFC,14187,False,4,0,0,0,0,0,0,0,0
 160637,Ayanda Mtshali,2025,TELK,14187,False,2,0,0,0,0,0,0,0,0
 160637,Ayanda Mtshali,2025,SFA1,14187,False,30,0,0,0,0,0,0,0,0
 160637,Ayanda Mtshali,2025,NEDC,14187,False,5,0,0,0,0,0,0,0,0
@@ -10482,7 +10488,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 557323,Mfanafuthi Mkhize,2022,NEDC,60444,False,1,1,0,90,0,0,0,0,1
 557323,Mfanafuthi Mkhize,2021,NEDC,60444,False,2,2,0,210,0,0,1,0,0
 557323,Mfanafuthi Mkhize,2019,NEDC,60444,False,2,0,0,0,0,0,0,0,0
-1245476,Emmanuel Jalai,2026,AFCQ,3583,True,3,3,0,94,0,0,0,0,0
+1245476,Emmanuel Jalai,2026,AFCQ,3583,True,4,4,0,184,0,0,0,0,0
 1245476,Emmanuel Jalai,2026,ACL,121679,False,4,0,0,0,0,0,0,0,0
 1245476,Emmanuel Jalai,2025,SFA1,14187,False,15,15,0,1171,0,0,3,1,2
 1245476,Emmanuel Jalai,2025,NEDC,14187,False,5,4,0,272,0,0,0,0,0
@@ -10695,7 +10701,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 533547,Brooklyn Poggenpoel,2026,SFA1,14187,False,10,6,0,533,0,0,0,0,1
 533547,Brooklyn Poggenpoel,2026,FS,3806,True,1,1,0,77,0,0,0,0,1
 533547,Brooklyn Poggenpoel,2026,CAFC,14187,False,4,1,0,90,0,0,0,0,0
-533547,Brooklyn Poggenpoel,2026,AFCQ,3806,True,1,1,0,78,0,0,0,0,0
+533547,Brooklyn Poggenpoel,2026,AFCQ,3806,True,3,1,0,78,0,0,0,0,0
 533547,Brooklyn Poggenpoel,2025,TELK,14187,False,2,2,0,57,0,0,0,0,0
 533547,Brooklyn Poggenpoel,2025,SFA1,14187,False,30,21,0,1364,0,0,14,3,2
 533547,Brooklyn Poggenpoel,2025,NEDC,14187,False,5,5,0,489,0,0,1,0,3
@@ -10948,7 +10954,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 258304,Ricardo Goss,2026,FS,3806,True,1,1,0,28,0,0,0,0,0
 258304,Ricardo Goss,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
 258304,Ricardo Goss,2026,CAFS,6356,False,1,0,0,0,0,0,0,0,0
-258304,Ricardo Goss,2026,AFCQ,3806,True,2,0,0,0,0,0,0,0,0
+258304,Ricardo Goss,2026,AFCQ,3806,True,4,0,0,0,0,0,0,0,0
 258304,Ricardo Goss,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
 258304,Ricardo Goss,2025,TELK,132785,False,1,0,0,0,0,0,0,0,0
 258304,Ricardo Goss,2025,SFA1,132785,False,30,29,0,2610,0,0,0,0,3
@@ -11308,7 +11314,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1369950,Siyabonga Ndebele,2025,NEDC,132785,False,1,0,0,0,0,0,0,0,0
 1369950,Siyabonga Ndebele,2024,SFA1,2891,False,17,8,0,717,0,0,3,1,1
 1369950,Siyabonga Ndebele,2024,NEDC,2891,False,3,2,0,210,0,0,1,0,1
-382205,Thabo Makhele,2026,AFCQ,13962,True,4,4,0,360,0,0,3,1,1
+382205,Thabo Makhele,2026,AFCQ,13962,True,6,5,0,450,0,0,3,1,2
 382205,Thabo Makhele,2025,TELK,132785,False,1,1,0,90,0,0,0,0,0
 382205,Thabo Makhele,2025,SFA1,132785,False,30,12,0,907,0,0,2,0,0
 382205,Thabo Makhele,2025,NEDC,132785,False,1,0,0,0,0,0,0,0,0
@@ -11704,9 +11710,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1401171,Lazola Maku,2024,20WC,22984,True,4,4,0,322,1,0,4,2,1
 1401171,Lazola Maku,2024,20AC,22984,True,7,7,0,660,0,0,3,0,2
 1166198,Thabang Makubo,2026,TELK,85501,False,2,2,0,24,1,0,2,1,0
-1166198,Thabang Makubo,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 1166198,Thabang Makubo,2026,SFA1,85501,False,3,2,0,37,0,0,1,1,1
-1166198,Thabang Makubo,2026,SFA1,132785,False,10,0,0,0,0,0,0,0,0
 1166198,Thabang Makubo,2025,TELK,132785,False,1,0,0,0,0,0,0,0,0
 1166198,Thabang Makubo,2025,SFA1,132785,False,30,0,0,0,0,0,0,0,0
 1166198,Thabang Makubo,2025,NEDC,132785,False,1,0,0,0,0,0,0,0,0
@@ -12538,6 +12542,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1438112,Sboniso Madonsela,2025,TELK,7011,False,3,1,0,105,0,0,0,0,0
 1438112,Sboniso Madonsela,2025,SFA1,7011,False,30,11,0,598,0,0,3,0,1
 1438112,Sboniso Madonsela,2025,NEDC,7011,False,3,2,0,132,0,1,0,0,0
+1163085,Siyanda Ndlovu,2026,TELK,6356,False,2,2,0,180,1,0,3,1,0
+1163085,Siyanda Ndlovu,2026,SFAL,6356,False,4,3,0,160,0,0,3,0,0
+1163085,Siyanda Ndlovu,2026,SFA1,6356,False,10,9,0,425,2,3,11,5,0
+1163085,Siyanda Ndlovu,2026,FIC1,6356,False,1,1,0,5,0,0,0,0,0
+1163085,Siyanda Ndlovu,2026,CAFS,6356,False,1,1,0,45,0,0,1,0,0
+1163085,Siyanda Ndlovu,2026,AFCQ,3806,True,1,1,0,27,0,0,0,0,0
+1163085,Siyanda Ndlovu,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
+1163085,Siyanda Ndlovu,2025,TELK,7011,False,3,3,0,244,0,1,3,0,1
+1163085,Siyanda Ndlovu,2025,SFA1,7011,False,30,25,0,1737,4,6,34,16,1
+1163085,Siyanda Ndlovu,2025,NEDC,7011,False,3,3,0,225,0,1,3,1,0
+1163085,Siyanda Ndlovu,2024,TELK,7011,False,1,0,0,0,0,0,0,0,0
+1163085,Siyanda Ndlovu,2024,SFA1,7011,False,28,17,0,1276,2,3,18,9,0
+1163085,Siyanda Ndlovu,2024,NEDC,7011,False,1,1,0,68,0,0,3,1,0
+1163085,Siyanda Ndlovu,2023,TELK,7011,False,2,1,0,11,0,0,0,0,0
+1163085,Siyanda Ndlovu,2023,SFA1,7011,False,30,23,0,1367,2,2,19,7,3
+1163085,Siyanda Ndlovu,2023,NEDC,7011,False,1,1,0,90,0,0,1,0,0
 730561,Siphesile Msomi,2026,TELK,7011,False,2,1,0,69,0,0,1,0,0
 730561,Siphesile Msomi,2026,SFAL,7011,False,3,0,0,0,0,0,0,0,0
 730561,Siphesile Msomi,2026,SFA1,7011,False,10,1,0,45,0,0,1,0,0
@@ -12559,21 +12579,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 730561,Siphesile Msomi,2020,SFAR,54893,False,4,0,0,0,0,0,0,0,0
 730561,Siphesile Msomi,2020,NEDC,54893,False,2,0,0,0,0,0,0,0,0
 730561,Siphesile Msomi,2019,NEDC,33785,False,2,2,0,104,0,0,0,0,0
-1163085,Siyanda Ndlovu,2026,TELK,6356,False,2,2,0,180,1,0,3,1,0
-1163085,Siyanda Ndlovu,2026,SFAL,6356,False,4,3,0,160,0,0,3,0,0
-1163085,Siyanda Ndlovu,2026,SFA1,6356,False,10,9,0,425,2,3,11,5,0
-1163085,Siyanda Ndlovu,2026,FIC1,6356,False,1,1,0,5,0,0,0,0,0
-1163085,Siyanda Ndlovu,2026,CAFS,6356,False,1,1,0,45,0,0,1,0,0
-1163085,Siyanda Ndlovu,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
-1163085,Siyanda Ndlovu,2025,TELK,7011,False,3,3,0,244,0,1,3,0,1
-1163085,Siyanda Ndlovu,2025,SFA1,7011,False,30,25,0,1737,4,6,34,16,1
-1163085,Siyanda Ndlovu,2025,NEDC,7011,False,3,3,0,225,0,1,3,1,0
-1163085,Siyanda Ndlovu,2024,TELK,7011,False,1,0,0,0,0,0,0,0,0
-1163085,Siyanda Ndlovu,2024,SFA1,7011,False,28,17,0,1276,2,3,18,9,0
-1163085,Siyanda Ndlovu,2024,NEDC,7011,False,1,1,0,68,0,0,3,1,0
-1163085,Siyanda Ndlovu,2023,TELK,7011,False,2,1,0,11,0,0,0,0,0
-1163085,Siyanda Ndlovu,2023,SFA1,7011,False,30,23,0,1367,2,2,19,7,3
-1163085,Siyanda Ndlovu,2023,NEDC,7011,False,1,1,0,90,0,0,1,0,0
 291082,Nduduzo Sibiya,2026,TELK,7011,False,2,1,0,13,0,0,0,0,0
 291082,Nduduzo Sibiya,2026,SFAL,7011,False,3,0,0,0,0,0,0,0,0
 291082,Nduduzo Sibiya,2026,SFA1,7011,False,10,0,0,0,0,0,0,0,0
@@ -12651,13 +12656,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 647908,Angelo Van Rooi,2022,NEDC,78609,False,1,1,0,120,0,0,0,0,0
 647908,Angelo Van Rooi,2021,NEDC,78609,False,1,1,0,45,0,0,0,0,0
 647908,Angelo Van Rooi,2018,NEDC,71504,False,1,1,0,90,0,0,0,0,0
-1102171,Jerome Karelse,2026,TELK,7011,False,2,1,0,25,1,0,0,0,1
-1102171,Jerome Karelse,2026,SFAL,7011,False,3,1,0,11,0,0,0,0,0
-1102171,Jerome Karelse,2026,SFA1,7011,False,10,3,0,73,0,0,2,1,0
-1102171,Jerome Karelse,2025,TELK,7011,False,3,3,0,149,1,0,8,4,0
-1102171,Jerome Karelse,2025,SFA1,7011,False,30,18,0,626,2,3,17,9,3
-1102171,Jerome Karelse,2025,NEDC,7011,False,3,1,0,26,0,0,0,0,0
-1102171,Jerome Karelse,2022,SFA1,6356,False,3,1,0,3,0,0,0,0,0
 1068638,Philani Kumalo,2026,TELK,7011,False,2,2,0,91,0,1,1,0,0
 1068638,Philani Kumalo,2026,SFAL,7011,False,3,3,0,111,1,1,3,2,0
 1068638,Philani Kumalo,2026,SFA1,7011,False,10,9,0,460,1,2,9,2,0
@@ -12667,6 +12665,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1068638,Philani Kumalo,2022,SFA1,8607,False,15,1,0,19,0,0,0,0,0
 1068638,Philani Kumalo,2022,NEDC,8607,False,2,0,0,0,0,0,0,0,0
 1068638,Philani Kumalo,2022,CAFC,8607,False,6,1,0,81,0,0,0,0,0
+1102171,Jerome Karelse,2026,TELK,7011,False,2,1,0,25,1,0,0,0,1
+1102171,Jerome Karelse,2026,SFAL,7011,False,3,1,0,11,0,0,0,0,0
+1102171,Jerome Karelse,2026,SFA1,7011,False,10,3,0,73,0,0,2,1,0
+1102171,Jerome Karelse,2025,TELK,7011,False,3,3,0,149,1,0,8,4,0
+1102171,Jerome Karelse,2025,SFA1,7011,False,30,18,0,626,2,3,17,9,3
+1102171,Jerome Karelse,2025,NEDC,7011,False,3,1,0,26,0,0,0,0,0
+1102171,Jerome Karelse,2022,SFA1,6356,False,3,1,0,3,0,0,0,0,0
 799626,Lungelo Nguse,2026,TELK,7011,False,2,0,0,0,0,0,0,0,0
 799626,Lungelo Nguse,2026,SFAL,7011,False,3,0,0,0,0,0,0,0,0
 799626,Lungelo Nguse,2026,SFA1,7011,False,10,2,0,72,0,0,0,0,0
@@ -12729,7 +12734,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 677856,Stanley Nwabali,2026,TELK,31283,False,1,1,0,90,0,0,0,0,0
 677856,Stanley Nwabali,2026,SFA1,31283,False,10,9,0,810,0,0,0,0,1
 677856,Stanley Nwabali,2026,FS,3444,True,1,0,0,0,0,0,0,0,0
-677856,Stanley Nwabali,2026,AFCQ,3444,True,2,2,0,180,0,0,0,0,0
+677856,Stanley Nwabali,2026,AFCQ,3444,True,4,4,0,360,0,0,0,0,0
 677856,Stanley Nwabali,2025,TELK,31283,False,1,1,0,90,0,0,0,0,0
 677856,Stanley Nwabali,2025,SFA1,31283,False,17,11,4,934,0,0,0,0,2
 677856,Stanley Nwabali,2025,FS,3444,True,7,1,0,45,0,0,0,0,0
@@ -13076,6 +13081,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 553453,Harold Majadibodu,2017,NEDC,51616,False,2,2,0,240,0,1,0,0,1
 553453,Harold Majadibodu,2017,ACL,6356,False,3,0,0,0,0,0,0,0,0
 553453,Harold Majadibodu,2016,ACL,6356,False,2,0,0,0,0,0,0,0,0
+1485094,Lonwabo Magugwana,2025,TELK,31283,False,1,0,0,0,0,0,0,0,0
+1485094,Lonwabo Magugwana,2025,SFA1,31283,False,17,1,0,10,0,0,0,0,1
 1384169,Isheanesu Mauchi,2026,TELK,31283,False,1,0,0,0,0,0,0,0,0
 1384169,Isheanesu Mauchi,2026,SFA1,31283,False,10,0,0,0,0,0,0,0,0
 1384169,Isheanesu Mauchi,2025,SFA1,31283,False,12,2,0,11,0,0,0,0,0
@@ -13084,8 +13091,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1384169,Isheanesu Mauchi,2024,FS,3583,True,2,1,0,90,0,0,0,0,0
 1384169,Isheanesu Mauchi,2024,AFCN,3583,True,3,0,0,0,0,0,0,0,0
 1384169,Isheanesu Mauchi,2023,WMQ2,3583,True,6,0,0,0,0,0,0,0,0
-1485094,Lonwabo Magugwana,2025,TELK,31283,False,1,0,0,0,0,0,0,0,0
-1485094,Lonwabo Magugwana,2025,SFA1,31283,False,17,1,0,10,0,0,0,0,1
 925739,Azola Matrose,2026,TELK,31283,False,1,1,0,90,0,0,0,0,0
 925739,Azola Matrose,2026,SFA1,31283,False,10,8,0,642,1,0,14,5,0
 925739,Azola Matrose,2025,TELK,31283,False,1,0,0,0,0,0,0,0,0
@@ -13188,7 +13193,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1245764,Asanele Bonani,2023,NEDC,31283,False,3,1,0,45,0,0,0,0,0
 604952,Justice Figuareido,2026,TELK,31283,False,1,1,0,45,0,0,0,0,0
 604952,Justice Figuareido,2026,SFA1,31283,False,10,9,0,747,0,2,16,3,0
-604952,Justice Figuareido,2026,FS,13675,True,1,1,0,83,0,0,0,0,0
+604952,Justice Figuareido,2026,FS,13675,True,2,2,0,148,0,0,0,0,0
 604952,Justice Figuareido,2026,AFCQ,13675,True,2,2,0,180,1,0,0,0,0
 604952,Justice Figuareido,2025,TELK,31283,False,1,1,0,90,0,0,0,0,0
 604952,Justice Figuareido,2025,SFAL,12668,False,1,0,0,0,0,0,0,0,0
@@ -13249,8 +13254,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1056267,Bandile Dlamini,2022,SFA1,8607,False,24,2,0,39,0,0,0,0,0
 1056267,Bandile Dlamini,2022,NEDC,8607,False,3,0,0,0,0,0,0,0,0
 1056267,Bandile Dlamini,2022,CAFC,8607,False,6,0,0,0,0,0,0,0,0
-564547,Bienvenu Eva Nga,2026,TELK,31283,False,1,0,0,0,0,0,0,0,0
-564547,Bienvenu Eva Nga,2026,SFA1,31283,False,10,0,0,0,0,0,0,0,0
 564547,Bienvenu Eva Nga,2025,TELK,31283,False,1,1,0,83,0,1,3,2,0
 564547,Bienvenu Eva Nga,2025,SFA1,31283,False,24,17,0,718,1,0,11,4,2
 564547,Bienvenu Eva Nga,2025,NEDC,31283,False,1,1,0,74,0,0,0,0,0
@@ -13728,6 +13731,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1408779,Khayelihle Mncube,2025,NEDC,67074,False,5,0,0,0,0,0,0,0,0
 1408779,Khayelihle Mncube,2024,SFA1,67074,False,1,1,0,45,0,0,1,0,0
 1151605,Puso Dithejane,2026,FS,3806,True,1,1,0,77,1,0,3,1,0
+1151605,Puso Dithejane,2026,AFCQ,3806,True,2,2,0,37,0,0,0,0,0
 1151605,Puso Dithejane,2025,USMX,432,False,4,4,0,265,2,1,6,3,1
 1151605,Puso Dithejane,2025,TELK,67074,False,2,2,0,235,0,1,5,1,0
 1151605,Puso Dithejane,2025,SFAL,67074,False,1,1,0,90,0,1,1,0,0
@@ -14466,7 +14470,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 568414,Mofossé Karidioula,2025,NEDC,61852,False,1,0,0,0,0,0,0,0,0
 568414,Mofossé Karidioula,2024,EGYP,12093,False,1,0,0,0,0,0,0,0,0
 568414,Mofossé Karidioula,2024,EGY1,12093,False,17,15,0,943,1,1,3,3,0
-568414,Mofossé Karidioula,2024,EGLC,12093,False,5,0,0,0,0,0,0,0,0
+568414,Mofossé Karidioula,2024,EGLC,12093,False,5,1,0,70,0,0,0,0,0
 568414,Mofossé Karidioula,2024,EGCP,12093,False,8,0,0,0,0,0,0,0,0
 568414,Mofossé Karidioula,2024,CAFC,3891,False,2,0,0,0,0,0,0,0,0
 568414,Mofossé Karidioula,2023,ACL,3891,False,12,11,0,935,2,2,3,2,0
@@ -14491,7 +14495,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704462,Marcel Dandjinou,2026,TELK,120423,False,1,1,0,90,0,0,0,0,1
 704462,Marcel Dandjinou,2026,SFA1,120423,False,10,7,0,630,0,0,0,0,0
 704462,Marcel Dandjinou,2026,FS,3955,True,1,1,0,76,0,0,0,0,0
-704462,Marcel Dandjinou,2026,AFCQ,3955,True,3,3,0,270,0,0,0,0,0
+704462,Marcel Dandjinou,2026,AFCQ,3955,True,4,4,0,360,0,0,0,0,0
 704462,Marcel Dandjinou,2025,NEDC,120423,False,1,1,0,90,0,0,0,0,0
 704462,Marcel Dandjinou,2025,FS,3955,True,5,5,0,360,0,0,0,0,0
 704462,Marcel Dandjinou,2024,NEDC,54668,False,1,0,0,0,0,0,0,0,0
@@ -14921,7 +14925,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 514196,Manuel Kambala,2026,TELK,21202,False,1,1,0,120,0,0,2,0,0
 514196,Manuel Kambala,2026,SFAL,21202,False,1,1,0,120,0,0,0,0,1
 514196,Manuel Kambala,2026,SFA1,21202,False,10,9,0,810,0,0,9,1,1
-514196,Manuel Kambala,2026,AFCQ,5129,True,2,1,0,1,0,0,1,0,0
+514196,Manuel Kambala,2026,AFCQ,5129,True,4,2,0,46,0,0,3,0,0
 514196,Manuel Kambala,2025,TELK,21202,False,1,1,0,120,0,0,2,1,0
 514196,Manuel Kambala,2025,SFAL,21202,False,1,0,0,0,0,0,0,0,0
 514196,Manuel Kambala,2025,SFA1,21202,False,30,28,0,2478,1,0,30,4,2
@@ -15264,6 +15268,91 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 985173,Siphamandla Mhlongo,2025,NEDC,54142,False,5,1,0,27,0,0,0,0,1
 985173,Siphamandla Mhlongo,2024,NEDC,54142,False,3,1,0,75,0,0,0,0,0
 985173,Siphamandla Mhlongo,2021,NEDC,94961,False,2,1,0,65,0,0,0,0,0
+26618,Wandisile Letlabika,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2023,TELK,2695,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2023,SFAL,2695,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2023,SFA1,2695,False,30,1,0,30,0,0,0,0,0
+26618,Wandisile Letlabika,2023,NEDC,2695,False,2,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2022,SFA1,2695,False,30,8,0,644,0,0,1,0,2
+26618,Wandisile Letlabika,2022,NEDC,2695,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2021,SFAR,2695,False,4,4,0,335,0,0,1,0,1
+26618,Wandisile Letlabika,2021,SFAL,2695,False,3,1,0,90,0,0,0,0,0
+26618,Wandisile Letlabika,2021,SFA1,2695,False,30,23,0,2025,1,0,3,1,3
+26618,Wandisile Letlabika,2021,NEDC,2695,False,2,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2020,SFA1,2695,False,30,25,0,1950,0,1,4,0,4
+26618,Wandisile Letlabika,2020,NEDC,2695,False,2,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2019,TELK,8607,False,1,0,1,0,0,0,0,0,0
+26618,Wandisile Letlabika,2019,SFAL,8607,False,1,0,1,0,0,0,0,0,0
+26618,Wandisile Letlabika,2019,SFA1,8607,False,30,10,16,722,0,0,0,0,0
+26618,Wandisile Letlabika,2019,NEDC,8607,False,5,3,0,270,1,0,1,0,0
+26618,Wandisile Letlabika,2018,TELK,8607,False,1,1,0,90,0,0,0,0,0
+26618,Wandisile Letlabika,2018,SFA1,8607,False,30,13,8,1125,0,0,0,0,1
+26618,Wandisile Letlabika,2018,NEDC,8607,False,3,1,0,90,0,0,0,0,0
+26618,Wandisile Letlabika,2017,TELK,8607,False,4,4,0,420,0,0,0,0,1
+26618,Wandisile Letlabika,2017,SFA1,8607,False,30,9,19,659,0,0,0,0,1
+26618,Wandisile Letlabika,2017,NEDC,8607,False,3,0,3,0,0,0,0,0,0
+26618,Wandisile Letlabika,2016,TELK,8607,False,1,1,0,120,0,0,0,0,0
+26618,Wandisile Letlabika,2016,SFA1,8607,False,30,27,0,2385,0,0,0,0,3
+26618,Wandisile Letlabika,2016,NEDC,8607,False,3,2,0,199,0,0,0,0,0
+26618,Wandisile Letlabika,2015,TELK,8607,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2015,SFAL,8607,False,3,1,0,120,0,0,0,0,1
+26618,Wandisile Letlabika,2015,SFA1,8607,False,30,18,0,1566,0,0,0,0,5
+26618,Wandisile Letlabika,2015,NEDC,8607,False,1,1,0,90,0,0,0,0,0
+26618,Wandisile Letlabika,2014,TELK,8607,False,1,1,0,63,0,0,0,0,1
+26618,Wandisile Letlabika,2014,SFAL,8607,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2014,SFA1,8607,False,30,15,0,1239,0,0,0,0,2
+26618,Wandisile Letlabika,2014,NEDC,93182,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2013,TELK,8607,False,1,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2013,SFAL,8607,False,1,1,0,90,0,0,0,0,0
+26618,Wandisile Letlabika,2013,SFA1,8607,False,30,25,0,2069,0,0,0,0,3
+26618,Wandisile Letlabika,2013,NEDC,8607,False,2,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2012,TELK,6356,False,4,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2012,SFAL,6356,False,3,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2012,SFA1,6356,False,30,0,0,0,0,0,0,0,0
+26618,Wandisile Letlabika,2011,TELK,6356,False,1,1,0,90,0,0,0,0,1
+26618,Wandisile Letlabika,2011,SFAL,6356,False,3,1,0,30,0,0,0,0,0
+26618,Wandisile Letlabika,2011,SFA1,6356,False,30,3,0,270,0,0,0,0,2
+26618,Wandisile Letlabika,2011,NEDC,6356,False,1,0,0,0,0,0,0,0,0
+541548,Thobela Sikhakhane,2026,SFA1,120423,False,4,0,0,0,0,0,0,0,0
+541548,Thobela Sikhakhane,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
+541548,Thobela Sikhakhane,2024,NEDC,54142,False,3,1,0,90,1,0,0,0,0
+541548,Thobela Sikhakhane,2023,NEDC,54142,False,3,1,0,69,0,0,0,0,0
+541548,Thobela Sikhakhane,2019,NEDC,67246,False,4,1,0,22,0,0,0,0,0
+541548,Thobela Sikhakhane,2018,NEDC,67246,False,1,1,0,120,0,0,0,0,0
+420533,Zolani Nkombelo,2023,NEDC,54142,False,3,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2021,SFA1,67074,False,17,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2021,NEDC,94960,False,3,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2020,SFA1,7011,False,30,7,0,372,0,1,0,0,0
+420533,Zolani Nkombelo,2020,NEDC,7011,False,1,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2019,TELK,7011,False,3,1,0,45,0,0,0,0,0
+420533,Zolani Nkombelo,2019,SFA1,7011,False,30,7,0,539,0,0,1,0,1
+420533,Zolani Nkombelo,2019,NEDC,7011,False,1,1,0,90,0,0,0,0,0
+420533,Zolani Nkombelo,2018,TELK,7011,False,1,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2018,SFAL,7011,False,1,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2018,SFA1,7011,False,30,1,0,24,0,0,0,0,0
+420533,Zolani Nkombelo,2018,NEDC,7011,False,4,2,0,121,1,1,0,0,0
+420533,Zolani Nkombelo,2017,TELK,7011,False,1,1,0,90,0,0,0,0,0
+420533,Zolani Nkombelo,2017,SFAL,7011,False,1,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2017,SFA1,7011,False,30,24,1,2031,1,1,0,0,4
+420533,Zolani Nkombelo,2017,NEDC,7011,False,1,0,0,0,0,0,0,0,0
+420533,Zolani Nkombelo,2016,NEDC,43711,False,3,1,0,90,0,0,0,0,0
+420533,Zolani Nkombelo,2015,SFAR,43711,False,4,1,0,90,0,0,0,0,0
+420533,Zolani Nkombelo,2015,NEDC,43711,False,3,2,0,132,0,0,0,0,0
+437670,Sphamiso Khumalo,2015,NEDC,54142,False,1,0,0,0,0,0,0,0,0
+846415,Mbonisi Chagi,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
+846415,Mbonisi Chagi,2022,NEDC,100970,False,1,1,0,90,0,0,0,0,0
+846415,Mbonisi Chagi,2020,NEDC,67246,False,3,1,0,43,0,0,0,0,0
+846415,Mbonisi Chagi,2019,NEDC,2695,False,1,0,0,0,0,0,0,0,0
+1211154,Unathi Somabhele,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
+1211154,Unathi Somabhele,2023,NEDC,54142,False,3,3,0,273,0,0,0,0,0
+730451,Andile Nkosi,2023,NEDC,54142,False,2,0,0,0,0,0,0,0,0
+730451,Andile Nkosi,2019,NEDC,32515,False,1,0,0,0,0,0,0,0,0
+1212470,Andile Zuma,2023,NEDC,54142,False,3,1,0,45,0,0,0,0,0
+647675,Bonginkosi Nyambe,2023,NEDC,54142,False,3,1,0,81,0,0,0,0,0
+647675,Bonginkosi Nyambe,2018,NEDC,66272,False,1,1,0,90,1,0,0,0,0
+500501,Thabiso Radebe,2023,NEDC,54142,False,3,0,0,0,0,0,0,0,0
+500501,Thabiso Radebe,2016,NEDC,58281,False,1,0,0,0,0,0,0,0,0
+1245620,Xolisani Ngcobo,2023,NEDC,54142,False,2,0,0,0,0,0,0,0,0
 1433390,Matome Mmolai,2026,TELK,2557,False,2,1,0,4,0,0,0,0,1
 1433390,Matome Mmolai,2026,SFAL,2557,False,4,0,0,0,0,0,0,0,0
 1433390,Matome Mmolai,2026,SFA1,2557,False,10,1,0,6,0,0,0,0,0
@@ -15342,64 +15431,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1591679,Mpho Padime,2026,SFAL,2557,False,4,1,0,6,0,0,0,0,0
 1591679,Mpho Padime,2026,SFA1,2557,False,10,4,0,58,0,0,1,0,0
 1591679,Mpho Padime,2026,ACL,2557,False,4,0,4,0,0,0,0,0,0
-898140,Antonio Van Wyk,2026,TELK,6356,False,2,2,0,166,0,1,7,1,0
-898140,Antonio Van Wyk,2026,SFAL,6356,False,4,2,0,85,2,1,3,3,0
-898140,Antonio Van Wyk,2026,SFA1,6356,False,10,8,0,385,3,0,9,4,0
-898140,Antonio Van Wyk,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
-898140,Antonio Van Wyk,2026,CAFS,6356,False,1,1,0,32,0,0,2,1,0
-898140,Antonio Van Wyk,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
-898140,Antonio Van Wyk,2025,ofb,266,False,5,5,0,405,0,1,0,0,1
-898140,Antonio Van Wyk,2025,A1EL,266,False,3,1,2,84,0,0,1,0,0
-898140,Antonio Van Wyk,2025,A1,266,False,32,29,2,1890,3,4,39,16,0
-898140,Antonio Van Wyk,2024,SFAL,23287,False,3,1,0,59,0,1,1,0,0
-898140,Antonio Van Wyk,2024,CAFC,23287,False,2,1,0,16,0,0,0,0,0
-898140,Antonio Van Wyk,2024,A2,266,False,25,18,4,753,1,2,2,1,0
-898140,Antonio Van Wyk,2023,TELK,23287,False,4,3,0,80,1,0,3,1,0
-898140,Antonio Van Wyk,2023,SFAL,23287,False,3,2,0,89,0,0,0,0,0
-898140,Antonio Van Wyk,2023,SFA1,23287,False,30,25,0,801,3,3,20,7,0
-898140,Antonio Van Wyk,2023,NEDC,23287,False,4,4,0,161,0,1,0,0,0
-898140,Antonio Van Wyk,2022,SFAL,23287,False,1,1,0,73,0,0,0,0,0
-898140,Antonio Van Wyk,2022,SFA1,23287,False,30,25,0,1248,2,3,26,8,0
-898140,Antonio Van Wyk,2022,NEDC,23287,False,4,2,0,20,0,1,1,0,0
-898140,Antonio Van Wyk,2021,SFA1,23287,False,30,13,0,466,0,2,4,2,0
-898140,Antonio Van Wyk,2021,NEDC,23287,False,1,1,0,20,0,0,1,0,0
-898140,Antonio Van Wyk,2020,SFA1,23287,False,2,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2026,TELK,6356,False,2,1,0,24,0,0,0,0,0
-1050866,Cassius Mailula,2026,SFAL,6356,False,4,3,0,181,2,0,6,5,0
-1050866,Cassius Mailula,2026,SFA1,6356,False,10,10,0,524,2,0,16,9,1
-1050866,Cassius Mailula,2026,FS,3806,True,1,1,0,63,0,0,2,1,0
-1050866,Cassius Mailula,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2026,CAFS,6356,False,1,1,0,58,0,0,1,0,0
-1050866,Cassius Mailula,2026,AFCQ,3806,True,2,1,0,16,0,0,0,0,0
-1050866,Cassius Mailula,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
-1050866,Cassius Mailula,2025,FS,3806,True,5,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2025,FIWC,3806,True,4,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2025,CCB,601,False,1,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2025,BE2,601,False,28,3,0,147,0,0,4,0,0
-1050866,Cassius Mailula,2024,MLS1,11141,False,9,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2024,MEC1,6603,False,8,4,0,235,0,0,0,0,1
-1050866,Cassius Mailula,2024,MARP,6603,False,2,2,0,35,0,0,0,0,0
-1050866,Cassius Mailula,2024,MAR1,6603,False,30,27,0,1800,5,7,0,0,2
-1050866,Cassius Mailula,2024,KLUB,6603,False,3,3,0,119,1,0,4,2,1
-1050866,Cassius Mailula,2024,FS,3806,True,2,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2024,CHAN,3806,True,4,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2024,AFCQ,3806,True,6,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2024,AFCN,3806,True,4,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2023,WMQ2,3806,True,10,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2023,USMX,11141,False,3,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2023,MNP3,46823,False,1,1,0,61,0,0,0,0,0
-1050866,Cassius Mailula,2023,MLS1,11141,False,26,2,0,17,0,0,2,1,0
-1050866,Cassius Mailula,2023,FS,3806,True,5,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2023,CAN,11141,False,4,3,0,245,2,1,15,5,0
-1050866,Cassius Mailula,2023,AFCN,3806,True,7,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2022,USMX,11141,False,1,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2022,SFAL,6356,False,3,2,0,8,0,0,0,0,0
-1050866,Cassius Mailula,2022,SFA1,6356,False,26,17,0,1004,9,3,36,19,0
-1050866,Cassius Mailula,2022,NEDC,6356,False,3,2,0,85,0,0,2,1,0
-1050866,Cassius Mailula,2022,MLS1,11141,False,10,3,0,68,0,0,3,1,0
-1050866,Cassius Mailula,2022,FS,3806,True,1,0,0,0,0,0,0,0,0
-1050866,Cassius Mailula,2022,ACL,6356,False,12,10,0,660,6,1,13,7,1
-1050866,Cassius Mailula,2021,AFCQ,3806,True,3,2,0,32,0,0,1,0,1
 967272,Kabelo Kgositsile,2026,TELK,2557,False,2,0,0,0,0,0,0,0,0
 967272,Kabelo Kgositsile,2026,SFAL,2557,False,4,3,0,95,0,0,5,1,0
 967272,Kabelo Kgositsile,2026,SFA1,2557,False,10,7,0,276,1,1,9,2,0
@@ -15444,6 +15475,64 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 968496,Elias Mokwana,2022,NEDC,85501,False,5,4,0,321,1,1,2,1,0
 968496,Elias Mokwana,2022,FS,3806,True,1,1,0,27,0,1,1,0,0
 968496,Elias Mokwana,2021,NEDC,91455,False,3,3,0,283,1,0,0,0,0
+898140,Antonio Van Wyk,2026,TELK,6356,False,2,2,0,166,0,1,7,1,0
+898140,Antonio Van Wyk,2026,SFAL,6356,False,4,2,0,85,2,1,3,3,0
+898140,Antonio Van Wyk,2026,SFA1,6356,False,10,8,0,385,3,0,9,4,0
+898140,Antonio Van Wyk,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
+898140,Antonio Van Wyk,2026,CAFS,6356,False,1,1,0,32,0,0,2,1,0
+898140,Antonio Van Wyk,2026,ACL,6356,False,2,0,0,0,0,0,0,0,0
+898140,Antonio Van Wyk,2025,ofb,266,False,5,5,0,405,0,1,0,0,1
+898140,Antonio Van Wyk,2025,A1EL,266,False,3,1,2,84,0,0,1,0,0
+898140,Antonio Van Wyk,2025,A1,266,False,32,29,2,1890,3,4,39,16,0
+898140,Antonio Van Wyk,2024,SFAL,23287,False,3,1,0,59,0,1,1,0,0
+898140,Antonio Van Wyk,2024,CAFC,23287,False,2,1,0,16,0,0,0,0,0
+898140,Antonio Van Wyk,2024,A2,266,False,25,18,4,753,1,2,2,1,0
+898140,Antonio Van Wyk,2023,TELK,23287,False,4,3,0,80,1,0,3,1,0
+898140,Antonio Van Wyk,2023,SFAL,23287,False,3,2,0,89,0,0,0,0,0
+898140,Antonio Van Wyk,2023,SFA1,23287,False,30,25,0,801,3,3,20,7,0
+898140,Antonio Van Wyk,2023,NEDC,23287,False,4,4,0,161,0,1,0,0,0
+898140,Antonio Van Wyk,2022,SFAL,23287,False,1,1,0,73,0,0,0,0,0
+898140,Antonio Van Wyk,2022,SFA1,23287,False,30,25,0,1248,2,3,26,8,0
+898140,Antonio Van Wyk,2022,NEDC,23287,False,4,2,0,20,0,1,1,0,0
+898140,Antonio Van Wyk,2021,SFA1,23287,False,30,13,0,466,0,2,4,2,0
+898140,Antonio Van Wyk,2021,NEDC,23287,False,1,1,0,20,0,0,1,0,0
+898140,Antonio Van Wyk,2020,SFA1,23287,False,2,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2026,TELK,6356,False,2,1,0,24,0,0,0,0,0
+1050866,Cassius Mailula,2026,SFAL,6356,False,4,3,0,181,2,0,6,5,0
+1050866,Cassius Mailula,2026,SFA1,6356,False,10,10,0,524,2,0,16,9,1
+1050866,Cassius Mailula,2026,FS,3806,True,1,1,0,63,0,0,2,1,0
+1050866,Cassius Mailula,2026,FIC1,6356,False,1,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2026,CAFS,6356,False,1,1,0,58,0,0,1,0,0
+1050866,Cassius Mailula,2026,AFCQ,3806,True,3,2,0,17,0,0,0,0,0
+1050866,Cassius Mailula,2026,ACL,6356,False,2,1,0,90,0,0,0,0,0
+1050866,Cassius Mailula,2025,FS,3806,True,5,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2025,FIWC,3806,True,4,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2025,CCB,601,False,1,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2025,BE2,601,False,28,3,0,147,0,0,4,0,0
+1050866,Cassius Mailula,2024,MLS1,11141,False,9,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2024,MEC1,6603,False,8,4,0,235,0,0,0,0,1
+1050866,Cassius Mailula,2024,MARP,6603,False,2,2,0,35,0,0,0,0,0
+1050866,Cassius Mailula,2024,MAR1,6603,False,30,27,0,1800,5,7,0,0,2
+1050866,Cassius Mailula,2024,KLUB,6603,False,3,3,0,119,1,0,4,2,1
+1050866,Cassius Mailula,2024,FS,3806,True,2,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2024,CHAN,3806,True,4,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2024,AFCQ,3806,True,6,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2024,AFCN,3806,True,4,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2023,WMQ2,3806,True,10,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2023,USMX,11141,False,3,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2023,MNP3,46823,False,1,1,0,61,0,0,0,0,0
+1050866,Cassius Mailula,2023,MLS1,11141,False,26,2,0,17,0,0,2,1,0
+1050866,Cassius Mailula,2023,FS,3806,True,5,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2023,CAN,11141,False,4,3,0,245,2,1,15,5,0
+1050866,Cassius Mailula,2023,AFCN,3806,True,7,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2022,USMX,11141,False,1,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2022,SFAL,6356,False,3,2,0,8,0,0,0,0,0
+1050866,Cassius Mailula,2022,SFA1,6356,False,26,17,0,1004,9,3,36,19,0
+1050866,Cassius Mailula,2022,NEDC,6356,False,3,2,0,85,0,0,2,1,0
+1050866,Cassius Mailula,2022,MLS1,11141,False,10,3,0,68,0,0,3,1,0
+1050866,Cassius Mailula,2022,FS,3806,True,1,0,0,0,0,0,0,0,0
+1050866,Cassius Mailula,2022,ACL,6356,False,12,10,0,660,6,1,13,7,1
+1050866,Cassius Mailula,2021,AFCQ,3806,True,3,2,0,32,0,0,1,0,1
 590268,Adolf Bitegeko,2026,TELK,568,False,2,0,2,0,0,0,0,0,0
 590268,Adolf Bitegeko,2026,SFAL,568,False,1,1,0,87,0,0,1,0,0
 590268,Adolf Bitegeko,2026,SFA1,568,False,10,3,3,61,0,0,2,0,1
@@ -15551,7 +15640,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1040039,Bethuel Muzeu,2026,SFAL,85501,False,3,1,0,72,0,0,1,0,0
 1040039,Bethuel Muzeu,2026,SFA1,85501,False,10,5,0,259,2,1,6,2,0
 1040039,Bethuel Muzeu,2026,FS,3573,True,1,1,0,26,0,0,1,0,0
-1040039,Bethuel Muzeu,2026,AFCQ,3573,True,3,3,0,206,1,0,4,2,0
+1040039,Bethuel Muzeu,2026,AFCQ,3573,True,4,4,0,251,1,0,4,2,0
 1040039,Bethuel Muzeu,2025,NEDC,13487,False,1,1,0,90,0,0,0,0,1
 1040039,Bethuel Muzeu,2025,FS,3573,True,4,2,0,180,0,0,0,0,0
 1040039,Bethuel Muzeu,2024,NEDC,13487,False,1,1,0,120,0,0,0,0,0
@@ -15743,7 +15832,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 405683,Jonah Fabisch,2026,TELK,7011,False,2,0,0,0,0,0,0,0,0
 405683,Jonah Fabisch,2026,SFAL,7011,False,3,0,0,0,0,0,0,0,0
 405683,Jonah Fabisch,2026,SFA1,7011,False,9,0,0,0,0,0,0,0,0
-405683,Jonah Fabisch,2026,AFCQ,3583,True,3,0,0,0,0,0,0,0,0
+405683,Jonah Fabisch,2026,AFCQ,3583,True,4,0,0,0,0,0,0,0,0
 405683,Jonah Fabisch,2025,SAPO,94,False,6,2,1,180,0,1,0,0,1
 405683,Jonah Fabisch,2025,L3,94,False,38,30,3,2130,3,0,1,1,9
 405683,Jonah Fabisch,2025,FS,3583,True,6,6,0,477,0,0,0,0,0
@@ -15856,7 +15945,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1595858,Wandile Ngidi,2026,SFA1,12668,False,10,1,0,23,0,0,0,0,0
 402723,Goitseone Phoko,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 402723,Goitseone Phoko,2026,SFA1,132785,False,10,3,0,270,0,0,0,0,0
-402723,Goitseone Phoko,2026,AFCQ,15229,True,2,2,0,180,0,0,0,0,0
+402723,Goitseone Phoko,2026,AFCQ,15229,True,4,4,0,304,0,0,0,0,0
 402723,Goitseone Phoko,2025,FS,15229,True,3,0,0,0,0,0,0,0,0
 402723,Goitseone Phoko,2025,CAFC,52369,False,4,0,0,0,0,0,0,0,0
 402723,Goitseone Phoko,2024,AFCQ,15229,True,6,6,0,540,0,0,0,0,1
@@ -15927,8 +16016,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 341972,Felix Noge,2020,NEDC,54668,False,3,1,0,90,0,0,0,0,0
 1576089,Kwanda Lupalule,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 1576089,Kwanda Lupalule,2026,SFA1,132785,False,10,1,0,45,0,0,0,0,0
-1620481,Raymond Makhuvele,2026,TELK,132785,False,1,0,0,0,0,0,0,0,0
-1620481,Raymond Makhuvele,2026,SFA1,132785,False,2,1,0,59,1,0,1,1,0
+1620481,Raymond Makhuvele,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
+1620481,Raymond Makhuvele,2026,SFA1,132785,False,10,1,0,59,1,0,1,1,0
 1193096,Hamza Issah,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 1193096,Hamza Issah,2026,SFA1,132785,False,10,3,0,211,0,0,5,0,0
 1193096,Hamza Issah,2025,GHPL,3601,False,34,33,0,2219,5,0,0,0,0
@@ -15936,7 +16025,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1193096,Hamza Issah,2023,GHPL,3601,False,34,28,0,2382,13,2,0,0,0
 639102,Neo Mokhachane,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 639102,Neo Mokhachane,2026,SFA1,132785,False,10,8,0,278,0,0,6,1,1
-639102,Neo Mokhachane,2026,AFCQ,13962,True,4,4,0,219,0,0,3,0,1
+639102,Neo Mokhachane,2026,AFCQ,13962,True,6,5,0,308,0,0,6,1,2
 639102,Neo Mokhachane,2025,FS,13962,True,4,2,0,106,0,0,0,0,0
 639102,Neo Mokhachane,2025,CAFC,52369,False,4,3,0,215,0,0,0,0,0
 639102,Neo Mokhachane,2024,AFCQ,13962,True,6,5,0,172,1,0,3,1,0
@@ -15956,8 +16045,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1576075,Blessing Thulo,2026,SFA1,132785,False,10,5,0,312,0,0,7,3,0
 1576096,Jordan Marks,2026,TELK,132785,False,2,0,0,0,0,0,0,0,0
 1576096,Jordan Marks,2026,SFA1,132785,False,10,3,0,52,0,0,2,1,0
-1597285,Michel N'Guessan,2026,TELK,132785,False,1,1,0,62,0,0,5,3,1
-1597285,Michel N'Guessan,2026,SFA1,132785,False,4,3,0,33,2,0,2,1,0
+1597285,Michel N'Guessan,2026,TELK,132785,False,2,1,0,62,0,0,5,3,1
+1597285,Michel N'Guessan,2026,SFA1,132785,False,6,3,0,33,2,0,2,1,0
 930458,Obakhe Tshaya,2026,TELK,31283,False,1,1,0,45,0,0,0,0,0
 930458,Obakhe Tshaya,2026,SFA1,31283,False,10,0,0,0,0,0,0,0,0
 930458,Obakhe Tshaya,2024,NEDC,85615,False,3,0,0,0,0,0,0,0,0
@@ -16076,7 +16165,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1513436,Mpho Maoke,2025,NEDC,132261,False,2,2,0,123,1,0,0,0,0
 1178119,Emile Lako,2026,TELK,61852,False,1,0,0,0,0,0,0,0,0
 1178119,Emile Lako,2026,SFA1,61852,False,10,6,0,540,0,0,0,0,0
-1178119,Emile Lako,2026,AFCQ,3434,True,3,0,0,0,0,0,0,0,0
+1178119,Emile Lako,2026,AFCQ,3434,True,4,0,0,0,0,0,0,0,0
 1178119,Emile Lako,2025,NEDC,102349,False,5,0,0,0,0,0,0,0,0
 1178119,Emile Lako,2025,FS,3434,True,1,0,0,0,0,0,0,0,0
 1178119,Emile Lako,2024,SFAR,102349,False,4,3,0,270,0,0,0,0,0
@@ -16102,8 +16191,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 494975,Khomotso Marebane,2017,SFAR,2238,False,4,0,0,0,0,0,0,0,0
 494975,Khomotso Marebane,2017,NEDC,2238,False,1,1,0,55,0,0,0,0,0
 494975,Khomotso Marebane,2016,NEDC,2238,False,3,1,0,8,0,0,0,0,1
-1579070,Lebogang Button,2026,TELK,61852,False,1,1,0,22,0,0,1,0,0
-1579070,Lebogang Button,2026,SFA1,61852,False,10,3,0,77,0,0,1,1,0
 1585067,Thabiso Mkhwanazi,2026,TELK,61852,False,1,0,0,0,0,0,0,0,0
 1585067,Thabiso Mkhwanazi,2026,SFA1,61852,False,10,2,0,48,0,1,0,0,0
 1600665,Prince Manku,2026,TELK,61852,False,1,1,0,90,0,0,0,0,0
@@ -16144,6 +16231,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 429978,Thabang Sesinyi,2015,AFCQ,15229,True,4,2,0,97,0,0,0,0,0
 1589403,Kelvin Etemesi,2026,TELK,61852,False,1,0,0,0,0,0,0,0,0
 1589403,Kelvin Etemesi,2026,SFA1,61852,False,8,4,0,281,0,0,2,0,0
+1579070,Lebogang Button,2026,TELK,61852,False,1,1,0,22,0,0,1,0,0
+1579070,Lebogang Button,2026,SFA1,61852,False,10,3,0,77,0,0,1,1,0
 867504,Mothetho Mosotho,2026,TELK,21202,False,1,0,0,0,0,0,0,0,0
 867504,Mothetho Mosotho,2026,SFAL,21202,False,1,0,0,0,0,0,0,0,0
 867504,Mothetho Mosotho,2026,SFA1,21202,False,10,0,0,0,0,0,0,0,0
@@ -16270,53 +16359,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 234019,Kwanda Mngonyama,2012,TELK,6356,False,4,0,0,0,0,0,0,0,0
 234019,Kwanda Mngonyama,2012,SFAL,6356,False,3,0,0,0,0,0,0,0,0
 234019,Kwanda Mngonyama,2012,SFA1,6356,False,30,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2026,SFA1,120423,False,10,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2023,TELK,2695,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2023,SFAL,2695,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2023,SFA1,2695,False,30,1,0,30,0,0,0,0,0
-26618,Wandisile Letlabika,2023,NEDC,2695,False,2,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2022,SFA1,2695,False,30,8,0,644,0,0,1,0,2
-26618,Wandisile Letlabika,2022,NEDC,2695,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2021,SFAR,2695,False,4,4,0,335,0,0,1,0,1
-26618,Wandisile Letlabika,2021,SFAL,2695,False,3,1,0,90,0,0,0,0,0
-26618,Wandisile Letlabika,2021,SFA1,2695,False,30,23,0,2025,1,0,3,1,3
-26618,Wandisile Letlabika,2021,NEDC,2695,False,2,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2020,SFA1,2695,False,30,25,0,1950,0,1,4,0,4
-26618,Wandisile Letlabika,2020,NEDC,2695,False,2,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2019,TELK,8607,False,1,0,1,0,0,0,0,0,0
-26618,Wandisile Letlabika,2019,SFAL,8607,False,1,0,1,0,0,0,0,0,0
-26618,Wandisile Letlabika,2019,SFA1,8607,False,30,10,16,722,0,0,0,0,0
-26618,Wandisile Letlabika,2019,NEDC,8607,False,5,3,0,270,1,0,1,0,0
-26618,Wandisile Letlabika,2018,TELK,8607,False,1,1,0,90,0,0,0,0,0
-26618,Wandisile Letlabika,2018,SFA1,8607,False,30,13,8,1125,0,0,0,0,1
-26618,Wandisile Letlabika,2018,NEDC,8607,False,3,1,0,90,0,0,0,0,0
-26618,Wandisile Letlabika,2017,TELK,8607,False,4,4,0,420,0,0,0,0,1
-26618,Wandisile Letlabika,2017,SFA1,8607,False,30,9,19,659,0,0,0,0,1
-26618,Wandisile Letlabika,2017,NEDC,8607,False,3,0,3,0,0,0,0,0,0
-26618,Wandisile Letlabika,2016,TELK,8607,False,1,1,0,120,0,0,0,0,0
-26618,Wandisile Letlabika,2016,SFA1,8607,False,30,27,0,2385,0,0,0,0,3
-26618,Wandisile Letlabika,2016,NEDC,8607,False,3,2,0,199,0,0,0,0,0
-26618,Wandisile Letlabika,2015,TELK,8607,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2015,SFAL,8607,False,3,1,0,120,0,0,0,0,1
-26618,Wandisile Letlabika,2015,SFA1,8607,False,30,18,0,1566,0,0,0,0,5
-26618,Wandisile Letlabika,2015,NEDC,8607,False,1,1,0,90,0,0,0,0,0
-26618,Wandisile Letlabika,2014,TELK,8607,False,1,1,0,63,0,0,0,0,1
-26618,Wandisile Letlabika,2014,SFAL,8607,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2014,SFA1,8607,False,30,15,0,1239,0,0,0,0,2
-26618,Wandisile Letlabika,2014,NEDC,93182,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2013,TELK,8607,False,1,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2013,SFAL,8607,False,1,1,0,90,0,0,0,0,0
-26618,Wandisile Letlabika,2013,SFA1,8607,False,30,25,0,2069,0,0,0,0,3
-26618,Wandisile Letlabika,2013,NEDC,8607,False,2,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2012,TELK,6356,False,4,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2012,SFAL,6356,False,3,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2012,SFA1,6356,False,30,0,0,0,0,0,0,0,0
-26618,Wandisile Letlabika,2011,TELK,6356,False,1,1,0,90,0,0,0,0,1
-26618,Wandisile Letlabika,2011,SFAL,6356,False,3,1,0,30,0,0,0,0,0
-26618,Wandisile Letlabika,2011,SFA1,6356,False,30,3,0,270,0,0,0,0,2
-26618,Wandisile Letlabika,2011,NEDC,6356,False,1,0,0,0,0,0,0,0,0
 341974,Thendo Mukumela,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
 341974,Thendo Mukumela,2026,SFA1,120423,False,10,3,0,225,0,0,1,0,1
 341974,Thendo Mukumela,2025,NEDC,13487,False,1,1,0,45,0,0,0,0,0
@@ -16437,15 +16479,22 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 478661,Ntsako Makhubela,2019,NEDC,7011,False,1,0,0,0,0,0,0,0,0
 478661,Ntsako Makhubela,2018,NEDC,54893,False,1,1,0,37,0,0,0,0,1
 478661,Ntsako Makhubela,2017,NEDC,54893,False,1,1,0,49,0,0,0,0,0
-1575434,Kgopotso Mkhonza,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
-1575434,Kgopotso Mkhonza,2026,SFA1,120423,False,10,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2026,SFA1,120423,False,10,1,0,1,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2025,NEDC,13487,False,1,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2024,NEDC,30657,False,3,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2023,SFAR,30657,False,4,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2023,NEDC,30657,False,1,0,0,0,0,0,0,0,0
+1620805,Tumelo Mmakgolane,2022,NEDC,30657,False,2,0,0,0,0,0,0,0,0
 1352391,Nkosinathi Thwala,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
 1352391,Nkosinathi Thwala,2026,SFA1,120423,False,10,4,0,256,0,0,3,0,1
 1352391,Nkosinathi Thwala,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
 1352391,Nkosinathi Thwala,2024,NEDC,120423,False,2,1,0,78,0,0,0,0,0
+1575434,Kgopotso Mkhonza,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
+1575434,Kgopotso Mkhonza,2026,SFA1,120423,False,10,0,0,0,0,0,0,0,0
 1106590,Tatenda Tavengwa,2026,TELK,120423,False,1,1,0,33,0,0,1,0,1
 1106590,Tatenda Tavengwa,2026,SFA1,120423,False,10,7,0,290,0,0,3,0,0
-1106590,Tatenda Tavengwa,2026,AFCQ,3583,True,2,0,0,0,0,0,0,0,0
+1106590,Tatenda Tavengwa,2026,AFCQ,3583,True,3,0,0,0,0,0,0,0,0
 1106590,Tatenda Tavengwa,2025,NEDC,91937,False,1,0,0,0,0,0,0,0,0
 1106590,Tatenda Tavengwa,2025,FS,3583,True,6,0,0,0,0,0,0,0,0
 1106590,Tatenda Tavengwa,2024,NEDC,91937,False,2,0,0,0,0,0,0,0,0
@@ -16538,13 +16587,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1268372,Thokozani Sibanyoni,2024,SFA1,67074,False,28,10,0,281,1,0,6,3,3
 1268372,Thokozani Sibanyoni,2024,NEDC,67074,False,2,2,0,62,2,0,2,2,0
 1268372,Thokozani Sibanyoni,2023,SFA1,67074,False,1,1,0,3,0,0,0,0,0
-541548,Thobela Sikhakhane,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
-541548,Thobela Sikhakhane,2026,SFA1,120423,False,10,0,0,0,0,0,0,0,0
-541548,Thobela Sikhakhane,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
-541548,Thobela Sikhakhane,2024,NEDC,54142,False,3,1,0,90,1,0,0,0,0
-541548,Thobela Sikhakhane,2023,NEDC,54142,False,3,1,0,69,0,0,0,0,0
-541548,Thobela Sikhakhane,2019,NEDC,67246,False,4,1,0,22,0,0,0,0,0
-541548,Thobela Sikhakhane,2018,NEDC,67246,False,1,1,0,120,0,0,0,0,0
 969475,Kagiso Shezi,2026,TELK,120423,False,1,0,0,0,0,0,0,0,0
 969475,Kagiso Shezi,2026,SFA1,120423,False,10,0,0,0,0,0,0,0,0
 969475,Kagiso Shezi,2025,NEDC,120423,False,1,0,0,0,0,0,0,0,0
@@ -16567,46 +16609,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1370585,Sanele Mthembu,2026,SFA1,54142,False,10,0,0,0,0,0,0,0,0
 1370585,Sanele Mthembu,2025,NEDC,105454,False,2,2,0,180,0,0,0,0,1
 1370585,Sanele Mthembu,2024,NEDC,66272,False,1,1,0,90,0,0,0,0,0
-420533,Zolani Nkombelo,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2023,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2021,SFA1,67074,False,17,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2021,NEDC,94960,False,3,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2020,SFA1,7011,False,30,7,0,372,0,1,0,0,0
-420533,Zolani Nkombelo,2020,NEDC,7011,False,1,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2019,TELK,7011,False,3,1,0,45,0,0,0,0,0
-420533,Zolani Nkombelo,2019,SFA1,7011,False,30,7,0,539,0,0,1,0,1
-420533,Zolani Nkombelo,2019,NEDC,7011,False,1,1,0,90,0,0,0,0,0
-420533,Zolani Nkombelo,2018,TELK,7011,False,1,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2018,SFAL,7011,False,1,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2018,SFA1,7011,False,30,1,0,24,0,0,0,0,0
-420533,Zolani Nkombelo,2018,NEDC,7011,False,4,2,0,121,1,1,0,0,0
-420533,Zolani Nkombelo,2017,TELK,7011,False,1,1,0,90,0,0,0,0,0
-420533,Zolani Nkombelo,2017,SFAL,7011,False,1,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2017,SFA1,7011,False,30,24,1,2031,1,1,0,0,4
-420533,Zolani Nkombelo,2017,NEDC,7011,False,1,0,0,0,0,0,0,0,0
-420533,Zolani Nkombelo,2016,NEDC,43711,False,3,1,0,90,0,0,0,0,0
-420533,Zolani Nkombelo,2015,SFAR,43711,False,4,1,0,90,0,0,0,0,0
-420533,Zolani Nkombelo,2015,NEDC,43711,False,3,2,0,132,0,0,0,0,0
-437670,Sphamiso Khumalo,2015,NEDC,54142,False,1,0,0,0,0,0,0,0,0
-846415,Mbonisi Chagi,2025,SFAR,54142,False,4,0,0,0,0,0,0,0,0
-846415,Mbonisi Chagi,2025,NEDC,54142,False,5,0,0,0,0,0,0,0,0
-846415,Mbonisi Chagi,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-846415,Mbonisi Chagi,2022,NEDC,100970,False,1,1,0,90,0,0,0,0,0
-846415,Mbonisi Chagi,2020,NEDC,67246,False,3,1,0,43,0,0,0,0,0
-846415,Mbonisi Chagi,2019,NEDC,2695,False,1,0,0,0,0,0,0,0,0
 1614370,Mnqobi Mbhele,2026,TELK,54142,False,1,1,0,45,0,0,0,0,0
 1614370,Mnqobi Mbhele,2026,SFA1,54142,False,10,1,0,90,0,0,0,0,0
-1211154,Unathi Somabhele,2025,SFAR,54142,False,4,0,0,0,0,0,0,0,0
-1211154,Unathi Somabhele,2025,NEDC,54142,False,5,0,0,0,0,0,0,0,0
-1211154,Unathi Somabhele,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-1211154,Unathi Somabhele,2023,NEDC,54142,False,3,3,0,273,0,0,0,0,0
 1591045,Admiro Chabanhu,2026,TELK,54142,False,1,0,0,0,0,0,0,0,0
 1591045,Admiro Chabanhu,2026,SFA1,54142,False,10,1,0,2,0,0,1,1,0
-730451,Andile Nkosi,2025,SFAR,54142,False,4,0,0,0,0,0,0,0,0
-730451,Andile Nkosi,2025,NEDC,54142,False,5,0,0,0,0,0,0,0,0
-730451,Andile Nkosi,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-730451,Andile Nkosi,2023,NEDC,54142,False,2,0,0,0,0,0,0,0,0
-730451,Andile Nkosi,2019,NEDC,32515,False,1,0,0,0,0,0,0,0,0
 1107160,Thabana Mabena,2026,TELK,54142,False,1,1,0,45,0,0,2,0,0
 1107160,Thabana Mabena,2026,SFA1,54142,False,10,7,0,375,1,0,16,6,0
 1107160,Thabana Mabena,2025,NEDC,13487,False,1,0,0,0,0,0,0,0,0
@@ -16619,17 +16625,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1370447,Yanelisa Nomandela,2024,NEDC,125316,False,1,1,0,90,0,0,0,0,0
 1618591,Ndumiso Siphosakhe Biyela,2026,TELK,54142,False,1,0,0,0,0,0,0,0,0
 1618591,Ndumiso Siphosakhe Biyela,2026,SFA1,54142,False,1,0,0,0,0,0,0,0,0
-1212470,Andile Zuma,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-1212470,Andile Zuma,2023,NEDC,54142,False,3,1,0,45,0,0,0,0,0
-647675,Bonginkosi Nyambe,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-647675,Bonginkosi Nyambe,2023,NEDC,54142,False,3,1,0,81,0,0,0,0,0
-647675,Bonginkosi Nyambe,2018,NEDC,66272,False,1,1,0,90,1,0,0,0,0
 1369915,Sicelo Masilela,2026,TELK,54142,False,1,1,0,45,0,0,2,0,0
 1369915,Sicelo Masilela,2026,SFA1,54142,False,10,10,0,443,1,0,14,6,1
 1369915,Sicelo Masilela,2025,NEDC,125315,False,1,1,0,61,0,0,0,0,0
 1369915,Sicelo Masilela,2024,NEDC,125315,False,1,1,0,25,0,0,2,0,0
-500501,Thabiso Radebe,2016,NEDC,58281,False,1,0,0,0,0,0,0,0,0
-1245620,Xolisani Ngcobo,2025,SFAR,54142,False,4,0,0,0,0,0,0,0,0
-1245620,Xolisani Ngcobo,2025,NEDC,54142,False,5,0,0,0,0,0,0,0,0
-1245620,Xolisani Ngcobo,2024,NEDC,54142,False,3,0,0,0,0,0,0,0,0
-1245620,Xolisani Ngcobo,2023,NEDC,54142,False,2,0,0,0,0,0,0,0,0

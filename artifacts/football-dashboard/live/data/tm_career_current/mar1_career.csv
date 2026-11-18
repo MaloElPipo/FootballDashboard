@@ -16,7 +16,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 974042,Younes Najari,2026,MAR1,12721,False,7,6,0,372,2,2,0,0,0
 518828,Saad El Morsli,2026,MAR1,30625,False,7,7,0,628,0,1,0,0,1
 929321,Karim L'Koucha,2026,MAR1,30625,False,7,1,0,60,0,0,0,0,0
-742502,Achref Habbassi,2026,IRQ1,39637,False,9,9,0,489,0,0,0,0,2
+742502,Achref Habbassi,2026,IRQ1,39637,False,9,9,0,444,0,0,0,0,2
 949538,Cheick Keita,2026,IRQ1,48098,False,13,9,0,706,0,0,0,0,1
 1261669,Ismail Soubai,2026,MAR1,74953,False,7,2,0,128,0,0,0,0,0
 238120,Ayoub Benaadi,2026,MAR1,22935,False,7,7,0,620,2,3,0,0,0
@@ -34,20 +34,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1297881,Fahd El Kaaba,2026,MAR1,59814,False,7,6,0,427,0,0,0,0,0
 262895,Soufyan Ahannach,2026,MAR1,12721,False,7,7,0,436,0,1,0,0,0
 240708,Walid Sabbar,2026,ACL2,86257,False,4,4,0,345,0,0,9,3,2
-1330427,Selemani Mwalimu,2026,AFCQ,14666,True,2,2,0,71,0,0,1,0,0
+1330427,Selemani Mwalimu,2026,AFCQ,14666,True,4,3,0,89,0,0,2,0,0
 1330427,Selemani Mwalimu,2026,ACL,9052,False,4,2,0,180,2,0,0,0,0
 1262531,Younes El Bahraoui,2026,SAKC,28844,False,1,1,0,90,0,1,1,0,0
 1262531,Younes El Bahraoui,2026,SA1,28844,False,12,11,1,533,0,1,17,5,1
-1262531,Younes El Bahraoui,2026,FS,34903,True,2,2,0,71,1,0,0,0,0
+1262531,Younes El Bahraoui,2026,FS,34903,True,3,3,0,148,2,0,0,0,0
 1262531,Younes El Bahraoui,2026,ACL2,28844,False,4,4,0,314,1,3,11,4,0
 519192,Mohamed El Morabit,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 876730,Nouh Mohamed El Abd,2026,ALG1,13366,False,8,7,0,555,0,0,0,0,1
-876730,Nouh Mohamed El Abd,2026,AFCQ,14238,True,2,1,0,45,0,0,0,0,1
+876730,Nouh Mohamed El Abd,2026,AFCQ,14238,True,4,1,0,45,0,0,0,0,1
 553100,Mohamed Rabie Hrimat,2026,QSL,10775,False,9,2,0,114,0,0,0,0,1
 553100,Mohamed Rabie Hrimat,2026,QSCP,10775,False,2,0,0,0,0,0,0,0,0
 553100,Mohamed Rabie Hrimat,2026,ACLE,10775,False,4,0,0,0,0,0,0,0,0
 823072,Oussama Al Aiz,2026,MAR1,12721,False,1,0,0,0,0,0,0,0,0
-1303960,Papa Magueye Gaye,2026,E3G1,5650,False,10,5,0,252,1,1,7,3,1
+1303960,Papa Magueye Gaye,2026,E3G1,5650,False,11,6,0,338,3,1,13,5,1
 1303960,Papa Magueye Gaye,2026,CDR,5650,False,1,1,0,31,0,0,0,0,0
 683336,Faouzi Abdoul Mutalib,2026,JO1L,15796,False,8,2,0,158,0,0,0,0,0
 1204741,Livty Kpolo,2026,FR5F,53251,False,7,7,0,595,4,0,0,0,1
@@ -67,7 +67,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1267109,Youness Dahmani,2026,MAR1,2068,False,7,7,0,308,0,0,0,0,0
 1267109,Youness Dahmani,2026,CAFC,2068,False,2,2,0,95,0,0,0,0,0
 1183709,Adam Darazi,2026,FRC,871,False,2,1,0,90,1,0,0,0,0
-1183709,Adam Darazi,2026,FR5G,871,False,3,2,0,110,0,0,0,0,0
+1183709,Adam Darazi,2026,FR5G,871,False,4,2,0,110,0,0,0,0,0
 507358,Haytham El Bahja,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 216954,Anas Zniti,2026,MAR1,30625,False,7,7,0,630,0,0,0,0,0
 1024513,Salaheddine Cofi,2026,MAR1,6603,False,7,0,0,0,0,0,0,0,0
@@ -105,7 +105,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1044891,Amine Azri,2026,MAR1,22935,False,7,7,0,427,1,1,0,0,0
 182912,Ange-Freddy Plumain,2026,ZYP1,16024,False,7,3,0,44,0,0,0,0,0
 182912,Ange-Freddy Plumain,2026,CPO1,16024,False,1,1,0,90,0,1,0,0,0
-182912,Ange-Freddy Plumain,2026,CNLB,19755,True,4,4,0,312,0,1,0,0,0
+182912,Ange-Freddy Plumain,2026,CNLB,19755,True,6,5,0,400,1,1,0,0,0
 667966,Mohamed Amine Essahel,2026,MAR1,37176,False,7,4,0,108,0,0,0,0,0
 667966,Mohamed Amine Essahel,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 731876,Montassir Lahtimi,2026,MAR1,6371,False,7,7,0,581,1,0,0,0,0
@@ -115,7 +115,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 290768,Kevin Yamga,2026,ASCC,20830,False,1,1,0,70,0,0,0,0,0
 1176891,Youssef Dalouzi,2026,MAR1,74953,False,7,2,0,50,0,0,0,0,0
 546225,Mohamed Bouchouari,2026,NLP,132,False,1,1,0,45,0,0,1,1,1
-546225,Mohamed Bouchouari,2026,NL2,132,False,10,4,0,123,1,0,3,1,0
+546225,Mohamed Bouchouari,2026,NL2,132,False,11,4,0,123,1,0,3,1,0
 1330443,Driss El Mahdaoui,2026,MAR1,6603,False,1,0,0,0,0,0,0,0,0
 1033958,Zakaria Fatihi,2026,MAR1,6603,False,1,0,0,0,0,0,0,0,0
 1033958,Zakaria Fatihi,2026,LPL,43628,False,3,0,0,0,0,0,0,0,0
@@ -126,9 +126,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1246533,Taha Majni,2026,GBFL,6945,False,3,2,1,180,0,1,0,0,0
 1246533,Taha Majni,2026,GB21,6945,False,4,1,0,69,0,0,0,0,0
 1246533,Taha Majni,2026,FS,37630,True,7,1,0,74,0,0,0,0,0
-1246533,Taha Majni,2026,FS,34903,True,2,1,0,8,0,0,0,0,0
+1246533,Taha Majni,2026,FS,34903,True,3,1,0,8,0,0,0,0,0
 1074351,Hossam Essadak,2026,SA1,27221,False,7,2,0,90,0,1,2,1,0
-1074351,Hossam Essadak,2026,FS,34903,True,2,2,0,172,0,1,0,0,0
+1074351,Hossam Essadak,2026,FS,34903,True,3,3,0,243,0,1,0,0,0
 496570,Badr Gaddarine,2026,MAR1,30625,False,7,5,0,276,0,0,0,0,1
 867271,Mohamed Jemjami,2026,MAR1,9099,False,7,0,0,0,0,0,0,0,0
 867271,Mohamed Jemjami,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
@@ -137,11 +137,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 837173,Abdellah Farah,2026,MAR1,14462,False,7,4,0,74,1,0,0,0,2
 481198,Ramiro Vaca,2026,UAEP,26351,False,1,1,0,85,0,0,0,0,0
 481198,Ramiro Vaca,2026,UAE1,26351,False,5,2,0,171,1,0,6,2,0
-481198,Ramiro Vaca,2026,FS,5233,True,2,2,0,90,0,0,0,0,0
+481198,Ramiro Vaca,2026,FS,5233,True,4,4,0,270,0,0,5,1,0
 441982,Hamza Elowasti,2026,MAR1,30625,False,7,7,0,585,3,0,0,0,1
 904465,Taoufik Razko,2026,MAR1,30625,False,7,6,0,201,2,0,0,0,2
 1125067,Younes Sakhi,2026,MAR1,85473,False,7,4,0,65,0,0,0,0,0
-665741,Abdelhay Forsy,2026,INR1,122123,False,7,6,0,536,0,5,0,0,1
+665741,Abdelhay Forsy,2026,INR1,122123,False,8,7,0,626,1,6,0,0,1
 234900,Mehdi El Jourbaoui,2026,MAR1,85473,False,7,1,0,90,0,0,0,0,0
 727075,Mohamed Ferni,2026,MAR1,74953,False,7,4,0,360,0,0,0,0,0
 499511,Marouane Fakhr,2026,MAR1,74953,False,7,3,0,270,0,0,0,0,0
@@ -154,7 +154,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 558706,Zouheir El Hachemi,2026,MAR1,74953,False,7,0,0,0,0,0,0,0,0
 1331844,Mohamed Abdouramane,2026,MAR1,74953,False,7,4,0,360,0,0,0,0,0
 1331844,Mohamed Abdouramane,2026,FS,14163,True,1,1,0,90,0,0,0,0,0
-1331844,Mohamed Abdouramane,2026,AFCQ,14163,True,2,2,0,180,0,0,0,0,0
+1331844,Mohamed Abdouramane,2026,AFCQ,14163,True,4,4,0,360,1,0,3,2,0
 1060545,Ousmane Diallo,2026,MAR1,74953,False,7,5,0,311,0,0,0,0,0
 1242834,Mohamed Naoufal Tahiri,2026,MAR1,9099,False,3,1,0,1,0,0,0,0,0
 1203684,Abdellatif El Bajjani,2026,MAR1,74953,False,7,5,0,432,0,0,0,0,0
@@ -217,9 +217,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 382417,Stephane Aziz Ki,2026,ACL,9052,False,4,1,0,90,0,0,0,0,0
 1005645,Pedrinho,2026,MAR1,6603,False,7,0,0,0,0,0,0,0,0
 1330446,Rayane Mahtou,2026,MAR1,6603,False,7,1,0,1,0,0,0,0,0
-1247673,Mohamed Mounssef,2026,FS,37630,True,10,9,0,729,4,0,0,0,2
+1247673,Mohamed Mounssef,2026,FS,37630,True,12,10,0,819,4,0,0,0,2
 1072321,Moisés Paniagua,2026,MAR1,6603,False,7,0,0,0,0,0,0,0,0
-1072321,Moisés Paniagua,2026,FS,5233,True,2,0,0,0,0,0,0,0,0
+1072321,Moisés Paniagua,2026,FS,5233,True,4,2,0,170,0,0,0,0,0
 1072321,Moisés Paniagua,2026,FS,29702,True,2,0,0,0,0,0,0,0,0
 517712,Hamza Hannouri,2026,MAR1,6603,False,7,7,0,149,0,0,0,0,1
 273432,Mohamed Rayhi,2026,JO1L,15795,False,6,0,0,0,0,0,0,0,0
@@ -227,7 +227,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 330726,Thembinkosi Lorch,2026,LPL,13505,False,3,0,0,0,0,0,0,0,0
 916708,Walid Nassi,2026,MAR1,6603,False,7,1,6,71,0,0,0,0,0
 513275,Tumisang Orebonye,2026,MAR1,22935,False,7,5,0,306,1,1,0,0,1
-513275,Tumisang Orebonye,2026,AFCQ,15229,True,2,2,0,151,2,0,3,3,0
+513275,Tumisang Orebonye,2026,AFCQ,15229,True,4,4,0,324,2,0,9,6,1
 1253671,Mouad Enzo,2026,MAR1,6603,False,7,6,0,385,0,0,0,0,0
 1309132,Ahmed Rhailouf,2026,MAR1,6603,False,7,0,0,0,0,0,0,0,0
 55619,Nordin Amrabat,2026,NLP,200,False,1,1,0,9,0,0,0,0,0
@@ -237,7 +237,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 904576,Ismail Laghzali,2026,ACL,3282,False,2,0,0,0,0,0,0,0,0
 97925,Munir El Kajoui,2026,MAR1,37176,False,7,5,2,450,0,0,0,0,0
 97925,Munir El Kajoui,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
-97925,Munir El Kajoui,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
+97925,Munir El Kajoui,2026,AFCQ,3575,True,4,0,0,0,0,0,0,0,0
 97925,Munir El Kajoui,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 599573,Mehdi Maftah,2026,MAR1,37176,False,7,0,0,0,0,0,0,0,0
 599573,Mehdi Maftah,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
@@ -255,7 +255,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 191407,Oussama Haddadi,2026,MAR1,37176,False,7,2,0,135,0,0,0,0,1
 191407,Oussama Haddadi,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 1258578,Ilyass Mahsoub,2026,MAR1,37176,False,3,0,0,0,0,0,0,0,0
-1258578,Ilyass Mahsoub,2026,FS,34903,True,2,0,0,0,0,0,0,0,0
+1258578,Ilyass Mahsoub,2026,FS,34903,True,3,0,0,0,0,0,0,0,0
 776215,Mamadou Lamine Camara,2026,LPL,13504,False,3,0,0,0,0,0,0,0,0
 776215,Mamadou Lamine Camara,2026,CAFC,13504,False,4,0,0,0,0,0,0,0,0
 665738,Ayoub Khairi,2026,MAR1,37176,False,7,3,0,122,0,0,0,0,1
@@ -270,7 +270,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 468244,Rayane Aabid,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 882910,Reda Hajji,2026,MAR1,37176,False,7,0,0,0,0,0,0,0,0
 882910,Reda Hajji,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
-1091178,Mohamed Ouyahia,2026,MAR1,37176,False,7,3,0,131,0,0,0,0,0
+1091178,Mohamed Ouyahia,2026,MAR1,37176,False,7,3,0,131,0,0,0,0,1
 1091178,Mohamed Ouyahia,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 355641,Mounir Chouiar,2026,MAR1,37176,False,7,6,0,462,1,1,0,0,0
 355641,Mounir Chouiar,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
@@ -282,7 +282,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1210200,Youness El Kaabi,2026,MAR1,37176,False,7,3,0,159,1,0,0,0,1
 1210200,Youness El Kaabi,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 1338007,Hamza Raji,2026,MAR1,37176,False,3,3,0,53,0,1,0,0,2
-1338007,Hamza Raji,2026,FS,37630,True,10,10,0,792,3,2,0,0,0
+1338007,Hamza Raji,2026,FS,37630,True,12,12,0,910,3,2,0,0,0
 356586,Salaheddine Chihab,2026,MAR1,3282,False,7,7,0,630,0,0,0,0,0
 356586,Salaheddine Chihab,2026,ACL,3282,False,4,2,0,180,0,0,0,0,0
 1235905,Oussama Errahmany,2026,MAR1,3282,False,7,0,0,0,0,0,0,0,0
@@ -320,7 +320,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1370739,Adam Brika,2026,ACL,3282,False,4,2,0,110,1,0,0,0,0
 863506,Khalid Baba,2026,MAR1,3282,False,7,7,0,201,0,2,0,0,0
 863506,Khalid Baba,2026,ACL,3282,False,4,2,0,162,0,0,0,0,0
-339552,Kabelo Seakanyeng,2026,AFCQ,15229,True,2,0,0,0,0,0,0,0,0
+339552,Kabelo Seakanyeng,2026,AFCQ,15229,True,4,0,0,0,0,0,0,0,0
 1433378,Cheikhna Semega,2026,OM1L,62836,False,6,6,0,481,2,0,0,0,0
 822538,El Mehdi Al Harrar,2026,MAR1,2068,False,7,7,0,630,0,0,0,0,0
 822538,El Mehdi Al Harrar,2026,CAFC,2068,False,2,1,0,90,0,0,0,0,0
@@ -328,7 +328,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 240712,Khalid Kbiri Alaoui,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 913377,Yassine Zoubir,2026,MAR1,2068,False,7,0,0,0,0,0,0,0,0
 913377,Yassine Zoubir,2026,CAFC,2068,False,2,1,0,90,0,0,0,0,0
-1256648,Saad Antra,2026,FS,37630,True,10,4,0,360,0,0,0,0,0
+1256648,Saad Antra,2026,FS,37630,True,12,5,0,450,0,0,0,0,0
 518804,Youssef Belammari,2026,EGYP,7,False,1,0,1,0,0,0,0,0,0
 518804,Youssef Belammari,2026,EGY1,7,False,8,0,8,0,0,0,0,0,0
 518804,Youssef Belammari,2026,EGLC,7,False,2,0,2,0,0,0,0,0,0
@@ -358,14 +358,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 318904,Sabir Bougrine,2026,MAR1,4697,False,4,0,0,0,0,0,0,0,0
 904603,Othmane Chraibi,2026,MAR1,2068,False,7,5,0,251,1,0,0,0,1
 904603,Othmane Chraibi,2026,CAFC,2068,False,2,1,0,82,0,0,0,0,0
-1106691,Balla Moussa Conté,2026,ACL,9052,False,2,0,0,0,0,0,0,0,0
+1106691,Balla Moussa Conté,2026,ACL,9052,False,4,0,0,0,0,0,0,0,0
 152241,Besar Halimi,2026,KO1,33741,False,7,3,2,46,0,0,0,0,1
 238634,Adam Ennaffati,2026,MAR1,2068,False,7,4,0,211,1,2,0,0,0
 238634,Adam Ennaffati,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
 241324,Bilal Ould-Chikh,2026,MAR1,2068,False,7,2,0,122,0,0,0,0,0
 241324,Bilal Ould-Chikh,2026,CAFC,2068,False,2,1,0,22,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2026,MAR1,2068,False,7,4,0,188,0,0,0,0,0
-677986,Mohammad Abu Zrayq,2026,FS,15737,True,2,2,0,37,0,0,0,0,0
+677986,Mohammad Abu Zrayq,2026,FS,15737,True,3,2,0,37,0,0,0,0,0
 677986,Mohammad Abu Zrayq,2026,CAFC,2068,False,2,2,0,153,1,1,0,0,0
 607249,Mathias Oyewusi,2026,MAR1,2068,False,7,6,0,406,1,0,0,0,0
 607249,Mathias Oyewusi,2026,CAFC,2068,False,2,2,0,138,1,1,0,0,0
@@ -382,7 +382,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 238997,Ahmed Reda Tagnaouti,2026,MAR1,9099,False,7,6,1,540,0,0,0,0,1
 238997,Ahmed Reda Tagnaouti,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
 238997,Ahmed Reda Tagnaouti,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-238997,Ahmed Reda Tagnaouti,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
+238997,Ahmed Reda Tagnaouti,2026,AFCQ,3575,True,4,0,0,0,0,0,0,0,0
 859133,Ayoub El Khayati,2026,MAR1,9099,False,7,0,0,0,0,0,0,0,0
 859133,Ayoub El Khayati,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 1073699,Hakim Mesbahi,2026,MAR1,9099,False,7,0,1,0,0,0,0,0,0
@@ -390,11 +390,12 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1073699,Hakim Mesbahi,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 635927,Fallou Mendy,2026,MAR1,9099,False,7,6,0,540,0,0,0,0,2
 635927,Fallou Mendy,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
+635927,Fallou Mendy,2026,AFCQ,3701,True,1,0,0,0,0,0,0,0,0
 518801,Marouane Louadni,2026,MAR1,9099,False,7,6,0,540,0,0,0,0,1
 518801,Marouane Louadni,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 573065,Tó Carneiro,2026,MAR1,9099,False,7,5,0,384,0,0,0,0,0
 573065,Tó Carneiro,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-573065,Tó Carneiro,2026,AFCQ,3585,True,2,0,0,0,0,0,0,0,0
+573065,Tó Carneiro,2026,AFCQ,3585,True,4,2,0,115,0,0,2,0,0
 734155,Jamal Ech-Chamakh,2026,MAR1,9099,False,7,4,0,192,0,0,0,0,0
 734155,Jamal Ech-Chamakh,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 1079652,Ayoub Ait Khassou,2026,MAR1,9099,False,7,0,0,0,0,0,0,0,0
@@ -406,7 +407,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 631508,Khalid Aït Ouarkhane,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 711281,Abdelfettah Hadraf,2026,MAR1,9099,False,7,5,0,337,1,2,0,0,0
 711281,Abdelfettah Hadraf,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-276768,Nolan Mbemba,2026,FRC,1564,False,2,2,0,98,0,0,0,0,0
+276768,Nolan Mbemba,2026,FRC,1564,False,3,2,0,98,0,0,0,0,0
 276768,Nolan Mbemba,2026,FR3,1564,False,7,2,0,135,0,1,1,0,0
 711572,Zineddine Derrag,2026,MAR1,9099,False,7,5,0,289,0,0,0,0,0
 711572,Zineddine Derrag,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
@@ -419,7 +420,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 371211,Hamza Khabba,2026,AFCP,7733,False,3,3,0,248,3,2,0,0,1
 507374,Ahmed Hammoudan,2026,MAR1,9099,False,7,5,0,292,0,0,0,0,2
 507374,Ahmed Hammoudan,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-1004383,Ricardo Coutinho,2026,FRC,7124,False,2,2,0,34,0,0,0,0,0
+1004383,Ricardo Coutinho,2026,FRC,7124,False,3,2,0,34,0,0,0,0,0
 1004383,Ricardo Coutinho,2026,FR3,7124,False,12,7,0,400,1,0,0,0,1
 872090,Mouhcine Bouriga,2026,MAR1,9099,False,7,5,0,244,0,0,0,0,0
 872090,Mouhcine Bouriga,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
@@ -432,7 +433,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 816064,Mouad Bahsain,2026,MAR1,22935,False,7,4,0,303,0,0,0,0,0
 1055193,Yassine Amhih,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
 618818,Fernando Chamboco,2026,MAR1,6371,False,7,5,0,450,0,0,0,0,0
-618818,Fernando Chamboco,2026,AFCQ,5129,True,2,1,0,24,0,0,0,0,0
+618818,Fernando Chamboco,2026,AFCQ,5129,True,4,2,0,69,0,0,0,0,0
 834876,Amine Farhane,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
 667994,Oussama Raoui,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
 1153097,Abdeslam Achhab,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
@@ -459,7 +460,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1059538,Hamza Antara,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 491280,Euclides Cabral,2026,MAR1,22935,False,7,5,0,359,0,0,0,0,1
 1233132,Ismail Hrila,2026,MAR1,22935,False,7,2,0,100,0,0,0,0,0
-913644,Zakary Lamgahez,2026,FRC,1564,False,2,0,0,0,0,0,0,0,0
+913644,Zakary Lamgahez,2026,FRC,1564,False,3,0,0,0,0,0,0,0,0
 913644,Zakary Lamgahez,2026,FR3,1564,False,12,11,0,816,0,0,4,0,2
 238952,Soulaiman El Amrani,2026,MAR1,22935,False,7,5,0,450,0,0,0,0,0
 1338486,Ayman Tarrazi,2026,MAR1,22935,False,7,5,0,271,0,0,0,0,1
@@ -470,7 +471,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1194144,Mehdi Akoumi,2026,MAR1,22935,False,7,6,0,193,0,0,0,0,0
 467571,Fred Dembi,2026,UAEP,56513,False,1,0,0,0,0,0,0,0,0
 467571,Fred Dembi,2026,UAE2,56513,False,9,5,0,431,0,0,0,0,1
-467571,Fred Dembi,2026,AFCQ,3702,True,2,1,0,62,0,0,0,0,0
+467571,Fred Dembi,2026,AFCQ,3702,True,4,1,0,62,0,0,0,0,0
 642295,Rodrigue Kossi Fiogbé,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 709481,Ayoub Yousfi,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 1327935,Hamza Moumadi,2026,MAR1,22935,False,7,2,0,114,1,0,0,0,0
@@ -481,7 +482,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1337458,Baba Bello Ilou,2026,ACLE,2150,False,4,3,0,81,0,1,6,3,0
 507135,Hamid Ahadad,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 507135,Hamid Ahadad,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
-507135,Hamid Ahadad,2026,AFCQ,3575,True,2,0,0,0,0,0,0,0,0
+507135,Hamid Ahadad,2026,AFCQ,3575,True,3,0,0,0,0,0,0,0,0
 721822,Youssef Arbidi,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 918020,Fahd Bendahmane,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
 789533,Walid Jarmouni,2026,MAR1,22935,False,7,0,0,0,0,0,0,0,0
@@ -509,7 +510,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 846673,Amine El Ouaad,2026,MAR1,4697,False,7,7,0,630,0,0,0,0,1
 461581,Malcolm Barcola,2026,MAR1,12721,False,7,2,0,180,0,0,0,0,0
 461581,Malcolm Barcola,2026,FS,32302,True,1,0,0,0,0,0,0,0,0
-461581,Malcolm Barcola,2026,AFCQ,3815,True,2,2,0,180,0,0,0,0,0
+461581,Malcolm Barcola,2026,AFCQ,3815,True,4,4,0,360,0,0,0,0,0
 614506,Ahmed Azmi,2026,MAR1,12721,False,7,0,0,0,0,0,0,0,0
 859901,Bilal El Ouadghiri,2026,MAR1,12721,False,7,7,0,630,0,0,0,0,2
 240721,Mohamed Saoud,2026,MAR1,12721,False,7,4,3,354,1,0,0,0,1
@@ -524,19 +525,21 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1334156,Achraf El Quaraoui,2026,MAR1,12721,False,7,0,0,0,0,0,0,0,0
 1506544,Akram Tali,2026,MAR1,12721,False,7,1,0,19,0,0,0,0,0
 1134280,Abdelhamid Maali,2026,MAR1,12721,False,7,6,1,366,1,1,0,0,1
-1134280,Abdelhamid Maali,2026,FS,34903,True,2,2,0,47,0,0,0,0,0
+1134280,Abdelhamid Maali,2026,FS,34903,True,3,3,0,137,1,2,0,0,0
 701611,Jawad Ghabra,2026,MAR1,4697,False,7,7,0,463,2,1,0,0,2
 1386760,Haytham Bakhlakh,2026,MAR1,12721,False,7,1,0,20,0,0,0,0,0
 1170795,Abdoulaye Kanou,2026,MAR1,14462,False,2,0,0,0,0,0,0,0,0
 1170795,Abdoulaye Kanou,2026,LPL,32078,False,3,0,0,0,0,0,0,0,0
 176573,Babacar Niasse,2026,MAR1,14462,False,6,3,0,270,0,0,0,0,0
-176573,Babacar Niasse,2026,AFCQ,14238,True,2,0,0,0,0,0,0,0,0
+176573,Babacar Niasse,2026,AFCQ,14238,True,4,1,0,90,0,0,0,0,0
 1307857,Ayoub Ait Wahmane,2026,MAR1,14462,False,7,4,0,360,0,0,0,0,0
 1335123,Haitam Azimi,2026,MAR1,14462,False,5,0,0,0,0,0,0,0,0
 882909,Mohamed Bentarcha,2026,MAR1,14462,False,7,2,0,180,0,0,0,0,0
 1178984,Hamza Malki,2026,MAR1,14462,False,7,1,0,90,0,0,0,0,0
 1422476,Zakaria Oubraim,2026,MAR1,14462,False,7,4,0,240,0,0,0,0,1
 902827,Soufiane Abaaziz,2026,MAR1,14462,False,7,2,0,149,1,0,0,0,0
+235116,Marouane Hadhoudi,2026,FS,3575,True,1,0,0,0,0,0,0,0,0
+235116,Marouane Hadhoudi,2026,AFCQ,3575,True,3,0,0,0,0,0,0,0,0
 1203850,Oussama Benchchaoui,2026,MAR1,14462,False,7,2,0,180,0,0,0,0,0
 1506545,Aymen Riyane,2026,MAR1,14462,False,7,1,0,49,0,0,0,0,0
 1087382,Aymane Takoua,2026,MAR1,14462,False,7,0,0,0,0,0,0,0,0
@@ -556,6 +559,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 530999,Mohamed Baayou,2026,MAR1,4697,False,7,0,0,0,0,0,0,0,0
 897139,Naoufal Ait Oubna,2026,MAR1,4697,False,7,0,0,0,0,0,0,0,0
 1410532,Anass Rachak,2026,MAR1,4697,False,7,0,0,0,0,0,0,0,0
+1410532,Anass Rachak,2026,FS,37630,True,2,0,0,0,0,0,0,0,0
 1440454,Hamza Fassoukh,2026,MAR1,4697,False,7,1,0,90,0,0,0,0,0
 1203849,Hamza Smaali,2026,MAR1,4697,False,7,7,0,630,0,0,0,0,1
 1258577,Mohamed Adam Benhita,2026,MAR1,4697,False,7,0,0,0,0,0,0,0,0
@@ -577,7 +581,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 667992,Reda Asmama,2026,MAR1,79389,False,7,7,0,630,0,0,0,0,0
 869457,Walid Hasbi,2026,MAR1,79389,False,7,0,0,0,0,0,0,0,0
 1134255,Fouad Zahouani,2026,NL2,8817,False,14,3,0,108,0,0,0,0,2
-1134255,Fouad Zahouani,2026,FS,34903,True,2,2,0,180,0,0,0,0,1
+1134255,Fouad Zahouani,2026,FS,34903,True,3,3,0,193,0,0,0,0,1
 1028119,Youness Akharraz,2026,MAR1,79389,False,7,4,0,206,0,0,0,0,0
 537209,Hamza Regragui,2026,MAR1,79389,False,7,5,0,272,1,0,0,0,3
 1049354,Mehdi Ashabi,2026,MAR1,79389,False,7,7,0,539,0,1,0,0,1
@@ -624,6 +628,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 844299,Mohamed Jaouab,2026,ACL,3282,False,4,1,0,90,0,0,0,0,0
 396429,Diogo Calila,2026,PO1,2423,False,4,4,0,355,0,1,1,0,0
 396429,Diogo Calila,2026,MAR1,3282,False,7,2,0,180,0,0,0,0,1
+396429,Diogo Calila,2026,AFCQ,5129,True,3,1,0,65,0,0,2,1,0
 396429,Diogo Calila,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
 1496489,Samba Mbengue,2026,MAR1,3282,False,7,0,0,0,0,0,0,0,0
 1496489,Samba Mbengue,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
@@ -646,27 +651,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 852608,Devin Titus,2026,ACL,3282,False,4,2,0,42,1,1,0,0,0
 1400725,Youssef Hafidi,2026,MAR1,3282,False,7,1,0,1,0,0,0,0,0
 1400725,Youssef Hafidi,2026,ACL,3282,False,4,0,0,0,0,0,0,0,0
-366746,Yahia Attiyat Allah,2026,RU2,41231,False,4,0,0,0,0,0,0,0,0
-366746,Yahia Attiyat Allah,2026,MAR1,6603,False,7,7,0,630,0,1,0,0,1
-1133781,Abdoul Kabir Ouédraogo,2026,MAR1,3282,False,7,1,0,2,0,0,0,0,0
-1133781,Abdoul Kabir Ouédraogo,2026,ACL,48935,False,2,2,0,135,1,0,0,0,0
-1133781,Abdoul Kabir Ouédraogo,2026,ACL,3282,False,2,0,0,0,0,0,0,0,0
-255749,Yahya Jabrane,2026,MAR1,6603,False,7,2,0,59,0,0,0,0,0
-326150,Issoufou Dayo,2026,QU2L,10920,False,3,0,0,0,0,0,0,0,0
-326150,Issoufou Dayo,2026,MAR1,6603,False,7,7,0,630,0,0,0,0,0
-734751,Nizar Al-Rashdan,2026,MAR1,6603,False,7,4,0,270,0,0,0,0,0
-734751,Nizar Al-Rashdan,2026,FS,15737,True,2,2,0,134,0,0,0,0,0
-312819,Silvere Ganvoula,2026,SAKC,50531,False,1,1,0,17,0,0,0,0,0
-312819,Silvere Ganvoula,2026,SA1,50531,False,7,3,0,122,0,0,6,2,1
-312819,Silvere Ganvoula,2026,MAR1,6603,False,7,7,0,534,4,1,0,0,0
-779752,Soufiane Hetli,2026,NL1,1434,False,2,2,0,153,0,0,5,1,0
-779752,Soufiane Hetli,2026,MAR1,6603,False,7,0,7,0,0,0,0,0,0
-362287,Aymane El Hassouni,2026,MAR1,6603,False,7,7,0,444,1,0,0,0,3
 612041,Jamal Harkass,2026,SAKC,50532,False,1,0,0,0,0,0,0,0,0
 612041,Jamal Harkass,2026,SA2L,50532,False,5,0,0,0,0,0,0,0,0
 612041,Jamal Harkass,2026,MAR1,37176,False,7,6,0,502,1,0,0,0,2
 612041,Jamal Harkass,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
-1606862,Haitam Hamani,2026,MAR1,6603,False,7,7,0,88,0,1,0,0,0
+1133781,Abdoul Kabir Ouédraogo,2026,MAR1,3282,False,7,1,0,2,0,0,0,0,0
+1133781,Abdoul Kabir Ouédraogo,2026,ACL,48935,False,2,2,0,135,1,0,0,0,0
+1133781,Abdoul Kabir Ouédraogo,2026,ACL,3282,False,2,0,0,0,0,0,0,0,0
 593431,Adil Tahif,2026,MAR1,37176,False,7,1,0,90,0,0,0,0,0
 593431,Adil Tahif,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 265569,Youssef Aït Bennasser,2026,TR2,3205,False,4,0,0,0,0,0,0,0,0
@@ -677,9 +668,25 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 891380,Omar El Manssouri,2026,ECLQ,433,False,2,0,0,0,0,0,0,0,0
 891380,Omar El Manssouri,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
 111627,Ryan Mendes,2026,MAR1,37176,False,7,4,0,213,0,1,0,0,0
-111627,Ryan Mendes,2026,AFCQ,4311,True,2,2,0,161,0,1,0,0,0
+111627,Ryan Mendes,2026,AFCQ,4311,True,3,3,0,237,0,2,0,0,0
 111627,Ryan Mendes,2026,ACL,37176,False,2,0,0,0,0,0,0,0,0
-1263254,Hamza Kattoussi,2026,MAR1,37176,False,2,0,0,0,0,0,0,0,0
+1263254,Hamza Kattoussi,2026,MAR1,37176,False,3,0,0,0,0,0,0,0,0
+366746,Yahia Attiyat Allah,2026,RU2,41231,False,4,0,0,0,0,0,0,0,0
+366746,Yahia Attiyat Allah,2026,MAR1,6603,False,7,7,0,630,0,1,0,0,1
+1610951,Souleymane Sy,2026,MAR1,37176,False,1,1,0,27,0,0,0,0,0
+255749,Yahya Jabrane,2026,MAR1,6603,False,7,2,0,59,0,0,0,0,0
+326150,Issoufou Dayo,2026,QU2L,10920,False,3,0,0,0,0,0,0,0,0
+326150,Issoufou Dayo,2026,MAR1,6603,False,7,7,0,630,0,0,0,0,0
+326150,Issoufou Dayo,2026,FS,5872,True,1,0,0,0,0,0,0,0,0
+326150,Issoufou Dayo,2026,AFCQ,5872,True,4,1,0,8,0,0,0,0,0
+734751,Nizar Al-Rashdan,2026,MAR1,6603,False,7,4,0,270,0,0,0,0,0
+734751,Nizar Al-Rashdan,2026,FS,15737,True,3,3,0,224,0,0,1,0,1
+312819,Silvere Ganvoula,2026,SAKC,50531,False,1,1,0,17,0,0,0,0,0
+312819,Silvere Ganvoula,2026,SA1,50531,False,7,3,0,122,0,0,6,2,1
+312819,Silvere Ganvoula,2026,MAR1,6603,False,7,7,0,534,4,1,0,0,0
+779752,Soufiane Hetli,2026,NL1,1434,False,2,2,0,153,0,0,5,1,0
+779752,Soufiane Hetli,2026,MAR1,6603,False,7,0,7,0,0,0,0,0,0
+362287,Aymane El Hassouni,2026,MAR1,6603,False,7,7,0,444,1,0,0,0,3
 478347,Marian Huja,2026,RO1,7769,False,4,0,0,0,0,0,0,0,0
 478347,Marian Huja,2026,MAR1,2068,False,7,5,0,450,0,0,0,0,1
 478347,Marian Huja,2026,ECLQ,7769,False,4,1,0,11,0,0,0,0,0
@@ -691,7 +698,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 542525,Younes Bakiz,2026,CAFC,2068,False,2,2,0,98,0,0,0,0,0
 722365,Michael Agbekpornu,2026,MAR1,2068,False,7,5,0,272,0,0,0,0,3
 722365,Michael Agbekpornu,2026,CAFC,2068,False,2,0,0,0,0,0,0,0,0
-1610951,Souleymane Sy,2026,MAR1,37176,False,1,1,0,27,0,0,0,0,0
+1606862,Haitam Hamani,2026,MAR1,6603,False,7,7,0,88,0,1,0,0,0
 610484,Adel Bettaieb,2026,TUN1,3342,False,2,0,0,0,0,0,0,0,0
 610484,Adel Bettaieb,2026,MAR1,2068,False,7,5,1,233,1,0,0,0,0
 610484,Adel Bettaieb,2026,CAFC,2068,False,2,0,2,0,0,0,0,0,0
@@ -704,13 +711,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1222907,Felipinho,2026,CAFC,2068,False,2,1,0,90,0,0,0,0,0
 843459,Nabil Marmouk,2026,MAR1,9099,False,7,0,0,0,0,0,0,0,0
 843459,Nabil Marmouk,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-398886,Merveil Ndockyt,2026,MAR1,9099,False,7,4,0,342,0,0,0,0,1
+398886,Merveil Ndockyt,2026,MAR1,9099,False,7,5,0,432,0,0,0,0,1
 398886,Merveil Ndockyt,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-398886,Merveil Ndockyt,2026,AFCQ,3702,True,2,2,0,114,0,0,3,1,0
+398886,Merveil Ndockyt,2026,AFCQ,3702,True,3,3,0,204,0,0,5,1,0
 494268,Allan Okello,2026,MAR1,9099,False,7,4,0,67,0,0,0,0,0
 494268,Allan Okello,2026,FS,13497,True,2,0,0,0,0,0,0,0,0
 494268,Allan Okello,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
-494268,Allan Okello,2026,AFCQ,13497,True,2,2,0,160,0,1,2,1,0
+494268,Allan Okello,2026,AFCQ,13497,True,4,3,0,243,0,1,3,2,0
 648080,Jephte Kitambala,2026,MAR1,9099,False,7,5,0,276,0,0,0,0,1
 648080,Jephte Kitambala,2026,CAFC,9099,False,2,0,0,0,0,0,0,0,0
 851529,Mehdi Bellarabi,2026,MAR1,6371,False,7,0,0,0,0,0,0,0,0
@@ -743,7 +750,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1585826,Yassine Kermadi,2026,MAR1,12721,False,7,0,0,0,0,0,0,0,0
 847432,Babacar Sarr,2026,MAR1,12721,False,7,6,0,540,0,0,0,0,2
 353875,Gape Edwin Mohutsiwa,2026,MAR1,12721,False,7,4,0,308,0,1,0,0,1
-353875,Gape Edwin Mohutsiwa,2026,AFCQ,15229,True,2,2,0,180,0,1,2,0,1
+353875,Gape Edwin Mohutsiwa,2026,AFCQ,15229,True,4,4,0,301,0,1,2,0,1
 409472,Ousama Siddiki,2026,MAR1,12721,False,7,3,0,63,0,0,0,0,0
 331169,Senad Jarovic,2026,MAR1,12721,False,7,5,0,127,0,0,0,0,0
 1401866,Ibrahima Dieng,2026,MAR1,12721,False,7,7,0,569,1,1,0,0,0
@@ -795,7 +802,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 111538,Gabaski,2026,EGY1,68770,False,3,0,0,0,0,0,0,0,0
 738954,Said Lamaiz,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 673509,Ghofrane Naouali,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
-1608801,Wissam Erbate,2026,MAR1,9100,False,5,5,0,450,0,0,0,0,0
+1608801,Wissam Erbate,2026,MAR1,9100,False,7,6,0,540,0,0,0,0,0
+1264462,Youssef El Maataoui,2026,MAR1,9100,False,1,1,0,1,0,0,0,0,0
 1334368,Akram Eddaoudi,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 174344,Fayçal Fajr,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 775243,Rida Chahid,2026,NTD,20298,False,4,1,0,45,0,0,0,0,0
@@ -803,6 +811,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1401773,Seydi Diouck,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 1275264,Aymane Zerri,2026,MAR1,9100,False,7,3,0,190,0,0,0,0,0
 1371506,Yassin Crachna,2026,MAR1,9100,False,7,3,0,48,0,0,0,0,0
+1628510,Ayman Azzouzi,2026,MAR1,9100,False,1,0,0,0,0,0,0,0,0
 1460484,Aboubacar Konate,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 1133030,Mounir Habach,2026,MAR1,9100,False,7,0,0,0,0,0,0,0,0
 1332318,Ali Salam,2026,MAR1,9100,False,3,3,0,29,0,0,0,0,0

@@ -1,6 +1,6 @@
 player_id,player_name,current_team_id,current_team_name,current_position,current_age,nationality,shirt_number,career_seasons,career_clubs,career_competitions,career_matches_in_squad,career_matches_played,career_minutes,career_goals,career_assists,career_shots_total,career_shots_on_goal,career_yellow_cards,career_national_team_matches,first_season,last_season
 1091104,Nizar Guessous,3282,MAS Fès,Attacking Midfield,22,Morocco,23,4,2,3,96,5,342,0,0,0,0,1,0,2022,2025
-732953,Youssef El Motie,37176,Renaissance de Berkane,Goalkeeper,31,Morocco,22,8,5,9,262,141,12522,0,0,0,0,15,0,2018,2026
+732953,Youssef El Motie,37176,Renaissance de Berkane,Goalkeeper,31,Morocco,22,8,5,10,265,144,12792,0,0,0,0,16,0,2018,2026
 681726,Hamza Hamiani,22944,Olympique Safi,Goalkeeper,32,Morocco,12,10,4,7,323,148,13332,0,0,0,0,8,1,2016,2025
 593395,Abderrahmane Kernane,22944,Olympique Safi,Goalkeeper,26,Morocco,1,9,2,5,219,25,2154,0,0,0,0,1,5,2017,2025
 823069,Imad Askar,22944,Olympique Safi,Goalkeeper,27,Morocco,26,7,3,4,162,9,840,0,0,0,0,0,0,2019,2025
@@ -33,10 +33,10 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 974042,Younes Najari,12721,Ittihad Tanger,Right Winger,30,Morocco,7,6,3,5,171,124,7181,21,13,27,10,21,0,2021,2026
 518828,Saad El Morsli,30625,COD Meknès,Left-Back,28,Morocco,27,12,4,4,372,205,13196,5,17,11,4,22,0,2015,2026
 929321,Karim L'Koucha,30625,COD Meknès,Attacking Midfield,26,Morocco,33,6,6,11,169,96,4499,16,9,0,0,6,0,2021,2026
-742502,Achref Habbassi,9099,AS FAR Rabat,Right Winger,24,Tunisia,0,8,4,11,270,154,8334,15,7,9,4,19,4,2019,2026
+742502,Achref Habbassi,9099,AS FAR Rabat,Right Winger,24,Tunisia,0,8,4,12,273,156,8402,15,7,9,4,20,4,2019,2026
 860299,Charki El Bahri,22944,Olympique Safi,Centre-Forward,33,Morocco,0,6,6,8,191,128,8103,24,9,30,9,15,0,2020,2025
 1097559,Anass Eddaou,22944,Olympique Safi,Left Winger,27,Morocco,22,7,3,5,162,82,3241,5,8,2,2,6,0,2019,2025
-933020,Imad Khannouss,30625,COD Meknès,Centre-Forward,32,Morocco,0,7,6,8,144,44,2681,3,3,9,4,9,0,2018,2025
+933020,Imad Khannouss,30625,COD Meknès,Centre-Forward,32,Morocco,0,7,6,9,147,45,2683,3,3,9,4,9,0,2018,2025
 650001,Marwane Elaz,22944,Olympique Safi,Left Winger,29,Morocco,11,12,8,11,363,170,9469,20,9,0,0,16,0,2014,2025
 1256643,Anas Samoudi,22944,Olympique Safi,Right Winger,18,Morocco,7,3,1,5,93,24,809,0,1,0,0,0,4,2023,2025
 902800,Mohamed Idar,59771,Olympique Dcheira,Goalkeeper,40,Morocco,1,6,1,3,38,28,2499,0,0,0,0,3,0,2016,2025
@@ -101,21 +101,21 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1039603,Mohamed El Badoui,6371,FUS Rabat,Centre-Forward,26,Morocco,0,4,3,3,134,102,4068,19,5,0,0,15,0,2022,2025
 1133029,Mehdi Balouk,103954,Union Yacoub El-Mansour,Centre-Forward,27,Morocco,2,3,2,3,40,34,2443,15,1,0,0,3,0,2022,2025
 499513,Zakaria Fati,103954,Union Yacoub El-Mansour,Left Winger,33,Morocco,7,10,7,5,363,240,14738,34,20,5,3,14,0,2016,2025
-465321,Hicham Boussefiane,103954,Union Yacoub El-Mansour,Right Winger,28,Morocco,30,10,7,15,352,162,7633,13,15,38,14,24,4,2016,2025
+465321,Hicham Boussefiane,103954,Union Yacoub El-Mansour,Right Winger,28,Morocco,30,10,7,16,383,164,7684,13,15,38,14,24,4,2016,2025
 1268379,Brahim Mansouri,103954,Union Yacoub El-Mansour,Right Winger,30,Morocco,21,3,2,3,41,31,2200,3,3,0,0,7,0,2022,2025
 1203683,Mouhcine Boussanane,103954,Union Yacoub El-Mansour,Centre-Forward,33,Morocco,9,4,3,3,44,19,507,1,0,0,0,0,0,2022,2025
 502657,Anas Jabroun,103954,Union Yacoub El-Mansour,Left Winger,28,Morocco,11,12,5,7,282,115,5608,12,6,4,2,8,1,2014,2025
 625170,Ilyas Bougafer,103954,Union Yacoub El-Mansour,Left Winger,23,Morocco,25,6,5,9,147,55,2440,9,9,0,0,0,0,2018,2024
-240708,Walid Sabbar,6603,Wydad Casablanca,Central Midfield,30,Morocco,6,15,8,13,435,227,16252,20,30,64,19,30,10,2012,2026
-1330427,Selemani Mwalimu,6603,Wydad Casablanca,Centre-Forward,20,Tanzania,0,4,3,10,61,27,1150,3,2,7,2,1,12,2023,2026
+240708,Walid Sabbar,6603,Wydad Casablanca,Central Midfield,30,Morocco,6,15,8,14,439,227,16252,20,30,64,19,30,10,2012,2026
+1330427,Selemani Mwalimu,6603,Wydad Casablanca,Centre-Forward,20,Tanzania,0,4,3,10,63,28,1168,3,2,8,2,1,13,2023,2026
 1139810,Issa M'Bareck,3282,MAS Fès,Attacking Midfield,22,Mauritania,14,4,2,3,27,7,347,1,0,3,1,0,2,2022,2025
-1262531,Younes El Bahraoui,37176,Renaissance de Berkane,Centre-Forward,21,Morocco,0,4,2,8,74,58,3086,11,8,31,9,3,12,2023,2026
+1262531,Younes El Bahraoui,37176,Renaissance de Berkane,Centre-Forward,21,Morocco,0,4,2,8,75,59,3163,12,8,31,9,3,13,2023,2026
 519192,Mohamed El Morabit,9100,Moghreb Atlético Tétouan,Attacking Midfield,28,Morocco,0,12,5,7,423,265,16936,14,33,11,5,16,4,2015,2026
-876730,Nouh Mohamed El Abd,9099,AS FAR Rabat,Centre-Back,25,Mauritania,24,7,3,11,124,64,5004,2,0,6,1,8,31,2020,2026
+876730,Nouh Mohamed El Abd,9099,AS FAR Rabat,Centre-Back,25,Mauritania,24,7,3,11,126,64,5004,2,0,6,1,8,31,2020,2026
 553100,Mohamed Rabie Hrimat,9099,AS FAR Rabat,Defensive Midfield,31,Morocco,34,12,3,13,452,257,21556,41,28,37,20,48,17,2014,2026
 836632,Youssef Laghzal,12721,Ittihad Tanger,Goalkeeper,25,Morocco,73,7,3,4,137,17,1405,0,0,0,0,2,5,2019,2025
 823072,Oussama Al Aiz,12721,Ittihad Tanger,Centre-Back,25,Morocco,13,8,1,3,197,68,3960,0,1,0,0,12,0,2019,2026
-1303960,Papa Magueye Gaye,12721,Ittihad Tanger,Centre-Forward,20,Senegal,72,3,4,7,81,47,2610,7,1,9,4,7,1,2024,2026
+1303960,Papa Magueye Gaye,12721,Ittihad Tanger,Centre-Forward,20,Senegal,72,3,4,7,82,48,2696,9,1,15,6,7,1,2024,2026
 683336,Faouzi Abdoul Mutalib,12721,Ittihad Tanger,Defensive Midfield,33,Morocco,8,10,3,5,238,138,9050,9,7,0,0,16,0,2017,2026
 203378,Zakaria Bakkali,12721,Ittihad Tanger,Left Winger,30,Belgium,99,16,9,26,656,239,10975,32,12,53,17,25,24,2010,2025
 1204741,Livty Kpolo,12721,Ittihad Tanger,Centre-Forward,24,France,38,4,3,6,81,32,1159,4,2,0,0,1,0,2023,2026
@@ -132,13 +132,13 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1506861,Salim Akaaba,74953,Renaissance Zemamra,Centre-Forward,25,Morocco,9,1,1,2,24,7,193,0,0,0,0,1,0,2025,2025
 1175868,Souhayl Zamrat,79389,Union Touarga Sportif,Attacking Midfield,24,Morocco,17,4,2,4,92,46,1826,4,3,0,0,2,0,2021,2025
 1267109,Youness Dahmani,2068,Raja Club Athletic,Left Winger,25,Morocco,20,4,3,5,69,63,4714,17,9,0,0,9,0,2023,2026
-1183709,Adam Darazi,12721,Ittihad Tanger,Defensive Midfield,21,France,29,5,4,8,114,73,3983,6,0,0,0,3,0,2022,2026
+1183709,Adam Darazi,12721,Ittihad Tanger,Defensive Midfield,21,France,29,5,4,8,115,73,3983,6,0,0,0,3,0,2022,2026
 507358,Haytham El Bahja,9100,Moghreb Atlético Tétouan,Right Winger,32,Morocco,8,10,7,5,271,108,6415,17,12,0,0,22,0,2015,2026
 588635,Johnstone Omurwa,4697,KACM Marrakech,Centre-Back,27,Kenya,55,7,4,14,180,77,6010,0,0,8,2,19,18,2017,2025
-216954,Anas Zniti,30625,COD Meknès,Goalkeeper,38,Morocco,1,20,6,17,844,494,44303,0,1,0,0,27,22,2006,2026
-194433,Reda Jaadi,9100,Moghreb Atlético Tétouan,Central Midfield,31,Morocco,0,14,11,17,424,193,12231,12,18,15,4,35,5,2009,2024
+216954,Anas Zniti,30625,COD Meknès,Goalkeeper,38,Morocco,1,20,6,18,848,497,44573,0,1,0,0,27,22,2006,2026
+194433,Reda Jaadi,9100,Moghreb Atlético Tétouan,Central Midfield,31,Morocco,0,14,11,18,426,193,12231,12,18,15,4,35,5,2009,2024
 1024513,Salaheddine Cofi,6603,Wydad Casablanca,Centre-Back,23,Morocco,32,5,3,4,58,23,1645,0,0,0,0,6,5,2021,2026
-681691,Amine Aboulfath,6603,Wydad Casablanca,Centre-Back,28,Morocco,4,9,4,10,301,173,14750,4,3,26,1,37,0,2018,2026
+681691,Amine Aboulfath,6603,Wydad Casablanca,Centre-Back,28,Morocco,4,9,4,11,304,176,15020,4,3,26,1,39,0,2018,2026
 1027244,Nabil Khali,4697,KACM Marrakech,Left-Back,28,France,25,9,7,14,208,135,8886,13,13,0,0,16,0,2015,2026
 925782,Abdelghafour Lamirat,37176,Renaissance de Berkane,Defensive Midfield,29,Morocco,15,7,4,5,188,144,11617,1,4,8,4,37,0,2020,2026
 255642,Saad Ait Khorsa,12721,Ittihad Tanger,Centre-Back,32,Morocco,27,15,4,5,434,247,20201,18,3,0,0,46,5,2012,2026
@@ -159,7 +159,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 926103,Yassine Zraa,85473,Amal Tiznit,Centre-Forward,26,Morocco,92,8,4,6,100,68,3268,11,1,0,0,6,0,2018,2026
 1165481,Amine El Maswab,74953,Renaissance Zemamra,Centre-Back,26,Morocco,97,4,2,6,155,29,1227,0,1,3,0,1,0,2023,2026
 838829,Imad Riahi,22935,Hassania d'Agadir,Right Winger,26,Morocco,20,9,5,8,272,171,10781,24,26,30,15,19,5,2018,2026
-799742,Salaheddine Benyachou,22935,Hassania d'Agadir,Right Winger,26,Morocco,7,8,4,7,247,132,6621,18,10,0,0,5,0,2019,2026
+799742,Salaheddine Benyachou,22935,Hassania d'Agadir,Right Winger,26,Morocco,7,8,4,8,250,132,6621,18,10,0,0,5,0,2019,2026
 1333330,Louay El Moussaoui,12721,Ittihad Tanger,Left-Back,22,Morocco,49,2,1,3,66,14,800,0,0,0,0,3,0,2024,2025
 1375920,Moussa Koté,12721,Ittihad Tanger,Centre-Forward,20,Senegal,75,2,1,3,40,6,241,1,0,0,0,0,0,2024,2025
 1302320,Abdoulaye Sanogo,14462,Difaâ El Jadida,Centre-Back,22,Mali,5,3,3,5,48,38,3365,1,0,1,0,2,0,2024,2026
@@ -170,11 +170,11 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1548363,Faiçal Id Ahmed,85473,Amal Tiznit,Centre-Forward,25,Morocco,19,1,1,2,4,0,0,0,0,0,0,0,0,2025,2025
 823417,Ibrahim Abdoul Aziz Koné,85473,Amal Tiznit,Centre-Forward,30,Niger,88,7,3,6,44,22,1315,0,1,6,2,1,19,2019,2026
 1044891,Amine Azri,22935,Hassania d'Agadir,Right Winger,31,Morocco,11,5,4,6,161,122,6490,13,14,2,0,15,0,2022,2026
-182912,Ange-Freddy Plumain,22935,Hassania d'Agadir,Left Winger,31,Guadeloupe,15,17,20,35,637,343,20829,54,20,28,9,36,32,2010,2026
+182912,Ange-Freddy Plumain,22935,Hassania d'Agadir,Left Winger,31,Guadeloupe,15,17,20,35,639,344,20917,55,20,28,9,36,33,2010,2026
 667966,Mohamed Amine Essahel,37176,Renaissance de Berkane,Attacking Midfield,23,Morocco,18,8,3,11,151,77,4041,4,8,1,1,7,7,2018,2026
 853693,Broulaye Seydou Sidibe,85473,Amal Tiznit,Centre-Forward,26,Mali,99,4,3,6,27,6,110,0,0,0,0,0,0,2020,2025
-731876,Montassir Lahtimi,6371,FUS Rabat,Right Winger,25,Morocco,9,8,4,14,257,132,7168,15,17,12,3,7,8,2019,2026
-236340,Mohammed Nahiri,9100,Moghreb Atlético Tétouan,Left-Back,34,Morocco,0,16,8,19,646,284,22471,55,16,89,38,37,18,2009,2024
+731876,Montassir Lahtimi,6371,FUS Rabat,Right Winger,25,Morocco,9,8,4,15,260,135,7307,15,18,12,3,7,8,2019,2026
+236340,Mohammed Nahiri,9100,Moghreb Atlético Tétouan,Left-Back,34,Morocco,0,16,8,20,650,284,22471,55,16,89,38,37,18,2009,2024
 236948,Youssef Bouchatta,9100,Moghreb Atlético Tétouan,Right-Back,36,Morocco,6,14,4,5,306,128,10357,2,8,0,0,14,0,2010,2025
 1394705,Reda El Baine,9100,Moghreb Atlético Tétouan,Centre-Back,32,Morocco,4,4,4,2,11,2,210,0,0,0,0,0,0,2018,2025
 235074,Zaid Krouch,9100,Moghreb Atlético Tétouan,Attacking Midfield,35,Morocco,10,17,3,16,501,282,18996,36,25,17,7,27,1,2009,2025
@@ -184,7 +184,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 343949,Zakaria Hamadi,3282,MAS Fès,Left-Back,28,Italy,3,12,9,18,346,177,10446,15,15,0,0,17,6,2014,2025
 290768,Kevin Yamga,3282,MAS Fès,Right Winger,29,France,17,14,15,29,490,314,21921,61,19,44,9,30,0,2013,2026
 1176891,Youssef Dalouzi,74953,Renaissance Zemamra,Right Winger,24,Morocco,9,4,3,3,107,60,3036,4,1,0,0,3,0,2023,2026
-546225,Mohamed Bouchouari,6603,Wydad Casablanca,Right-Back,25,Belgium,34,9,8,22,239,156,10807,10,14,114,37,16,8,2017,2026
+546225,Mohamed Bouchouari,6603,Wydad Casablanca,Right-Back,25,Belgium,34,9,8,22,240,156,10807,10,14,114,37,16,8,2017,2026
 217111,Hakim Ziyech,6603,Wydad Casablanca,Right Winger,33,Morocco,7,16,10,37,940,592,42972,171,152,757,270,67,71,2010,2025
 1330443,Driss El Mahdaoui,6603,Wydad Casablanca,Centre-Back,21,Morocco,0,2,1,4,43,5,450,0,0,0,0,0,0,2024,2026
 1033958,Zakaria Fatihi,6603,Wydad Casablanca,Right Winger,28,Morocco,0,5,4,5,141,73,3087,4,4,0,0,8,0,2022,2026
@@ -193,13 +193,13 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1134249,Taha Benrhozil,6371,FUS Rabat,Goalkeeper,20,Morocco,12,5,1,6,103,37,3315,0,0,0,0,2,24,2021,2025
 838828,Moncef Amri,9100,Moghreb Atlético Tétouan,Left-Back,32,Morocco,0,8,5,4,215,125,9303,5,11,0,0,18,0,2017,2026
 904578,Hassan Aqboub,79389,Union Touarga Sportif,Left Winger,22,Morocco,0,4,3,6,102,16,496,2,0,0,0,1,0,2021,2025
-1246533,Taha Majni,79389,Union Touarga Sportif,Centre-Back,18,Morocco,25,4,2,9,77,37,2269,0,1,3,1,5,14,2023,2026
-1074351,Hossam Essadak,79389,Union Touarga Sportif,Attacking Midfield,21,Morocco,0,5,2,10,168,75,4875,5,13,12,6,11,26,2022,2026
+1246533,Taha Majni,79389,Union Touarga Sportif,Centre-Back,18,Morocco,25,4,2,9,78,37,2269,0,1,3,1,5,14,2023,2026
+1074351,Hossam Essadak,79389,Union Touarga Sportif,Attacking Midfield,21,Morocco,0,5,2,10,169,76,4946,5,13,12,6,11,27,2022,2026
 1443774,Zakaria Aiada,79389,Union Touarga Sportif,Right-Back,26,Morocco,27,2,2,3,35,5,195,0,0,0,0,1,0,2023,2025
 727209,Banfa Sylla,79389,Union Touarga Sportif,Defensive Midfield,30,Cote d'Ivoire,26,7,3,5,189,75,5756,0,2,8,0,2,0,2019,2025
 593478,Hamza Bousqal,79389,Union Touarga Sportif,Defensive Midfield,25,Morocco,16,9,2,6,93,25,892,0,0,0,0,7,6,2017,2025
 496570,Badr Gaddarine,30625,COD Meknès,Centre-Back,29,Morocco,4,11,4,7,383,193,13596,8,10,10,2,20,0,2016,2026
-1134278,Mohamed Amine Katiba,22935,Hassania d'Agadir,Defensive Midfield,20,Morocco,20,5,1,8,157,76,3907,4,4,10,0,9,24,2021,2025
+1134278,Mohamed Amine Katiba,3282,MAS Fès,Defensive Midfield,20,Morocco,0,5,1,8,157,76,3907,4,4,10,0,9,24,2021,2025
 867271,Mohamed Jemjami,9099,AS FAR Rabat,Goalkeeper,27,Morocco,22,6,4,4,72,36,3270,0,0,0,0,1,0,2020,2026
 1330530,Soulaimane Anrar,4697,KACM Marrakech,Left-Back,22,Morocco,76,2,1,3,33,15,900,0,0,0,0,2,0,2024,2025
 691877,Jawad Khalouk,4697,KACM Marrakech,Left-Back,28,Morocco,23,5,2,3,106,26,1803,0,1,0,0,0,0,2018,2025
@@ -231,7 +231,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1211502,Hicham Adardour,59814,Widad Témara,Defender,28,Morocco,21,3,2,2,8,1,90,0,0,0,0,0,0,2023,2025
 1338839,Najib El Hamdi,59814,Widad Témara,Defensive Midfield,21,Morocco,15,2,2,4,41,3,236,0,0,0,0,0,0,2024,2025
 863629,Yassine Belfadla,59814,Widad Témara,Centre-Forward,26,Morocco,19,4,2,3,64,7,243,1,0,0,0,1,0,2020,2025
-481198,Ramiro Vaca,6603,Wydad Casablanca,Attacking Midfield,27,Bolivia,10,12,5,23,503,307,20778,51,64,423,160,38,62,2015,2026
+481198,Ramiro Vaca,6603,Wydad Casablanca,Attacking Midfield,27,Bolivia,10,12,5,23,505,309,20958,51,64,428,161,38,64,2015,2026
 1264630,Mouhssin Zouhar,59814,Widad Témara,Left Winger,29,Morocco,10,2,2,1,3,1,90,0,0,0,0,0,0,2023,2025
 441982,Hamza Elowasti,30625,COD Meknès,Left Winger,31,Morocco,22,11,5,5,379,185,12174,16,16,3,1,10,0,2015,2026
 885704,Kamal Bilal,37176,Renaissance de Berkane,Goalkeeper,28,Morocco,16,6,1,6,250,1,90,0,0,0,0,0,0,2020,2025
@@ -239,7 +239,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 366744,Lamine Diakité,6371,FUS Rabat,Left Winger,35,Cote d'Ivoire,11,14,7,6,417,272,17180,54,30,5,1,36,0,2008,2025
 1203514,Arthur Gitego,6371,FUS Rabat,Centre-Forward,24,Rwanda,66,3,1,5,51,11,198,0,0,0,0,1,7,2023,2025
 1125067,Younes Sakhi,85473,Amal Tiznit,Right Winger,26,Morocco,17,7,3,5,113,72,3591,5,4,0,0,3,1,2015,2026
-665741,Abdelhay Forsy,79389,Union Touarga Sportif,Attacking Midfield,28,Morocco,23,9,7,7,188,82,4310,6,19,0,0,6,0,2017,2026
+665741,Abdelhay Forsy,79389,Union Touarga Sportif,Attacking Midfield,28,Morocco,23,9,7,8,193,84,4476,7,20,0,0,7,0,2017,2026
 276255,Yacine Bammou,79389,Union Touarga Sportif,Centre-Forward,35,Morocco,9,14,13,26,586,380,22871,68,30,391,118,47,7,2012,2025
 1443785,Ahmed Aboulfath,79389,Union Touarga Sportif,Right Winger,29,Morocco,11,1,1,3,33,5,113,0,1,0,0,0,0,2025,2025
 861366,Roshdi Wahabi,9100,Moghreb Atlético Tétouan,Defensive Midfield,32,Morocco,74,6,2,3,136,87,6010,2,1,0,0,13,0,2020,2025
@@ -252,16 +252,16 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1174678,Emmanuel Obounou,74953,Renaissance Zemamra,Centre-Forward,21,Cameroon,0,3,2,3,72,15,611,1,1,0,0,5,0,2023,2025
 234900,Mehdi El Jourbaoui,85473,Amal Tiznit,Goalkeeper,33,Morocco,1,11,6,3,226,95,8440,0,2,0,0,9,0,2015,2026
 727075,Mohamed Ferni,74953,Renaissance Zemamra,Goalkeeper,26,Morocco,22,9,2,3,209,86,7734,0,0,0,0,6,0,2018,2026
-499511,Marouane Fakhr,74953,Renaissance Zemamra,Goalkeeper,37,Morocco,1,12,8,7,395,150,13416,0,0,0,0,7,0,2015,2026
+499511,Marouane Fakhr,74953,Renaissance Zemamra,Goalkeeper,37,Morocco,1,12,8,7,395,151,13506,0,0,0,0,7,0,2015,2026
 556868,Aissa Sioudi,74953,Renaissance Zemamra,Goalkeeper,27,Morocco,0,8,8,5,197,20,1580,0,0,0,0,1,0,2017,2025
 855878,James Ajako,74953,Renaissance Zemamra,Centre-Back,23,Nigeria,2,7,4,6,209,136,11313,5,5,0,0,15,0,2020,2026
-858917,Abdessamad Badaoui,74953,Renaissance Zemamra,Right-Back,27,Morocco,99,7,4,5,179,74,4765,1,1,1,0,7,0,2018,2026
+858917,Abdessamad Badaoui,74953,Renaissance Zemamra,Right-Back,27,Morocco,99,7,4,5,179,77,4916,1,1,1,0,8,0,2018,2026
 727252,Bilal Soufi,74953,Renaissance Zemamra,Centre-Back,27,Morocco,15,7,3,4,158,77,5785,2,1,0,0,6,0,2019,2026
-689435,Abdelilah Madkour,3282,MAS Fès,Right-Back,25,Morocco,0,8,5,7,296,162,11717,0,10,6,1,30,1,2018,2025
+689435,Abdelilah Madkour,3282,MAS Fès,Right-Back,25,Morocco,0,8,5,8,300,162,11717,0,10,6,1,30,1,2018,2025
 1262530,Reda Ait Boughima,74953,Renaissance Zemamra,Centre-Back,25,Morocco,66,6,2,3,50,23,1839,3,0,0,0,5,0,2020,2026
 598505,Salaheddine Bahi,74953,Renaissance Zemamra,Centre-Back,30,Morocco,12,9,7,9,258,149,9287,9,4,8,1,19,0,2017,2026
 558706,Zouheir El Hachemi,74953,Renaissance Zemamra,Right-Back,28,Morocco,23,11,4,5,232,112,8524,6,6,0,0,4,3,2016,2026
-1331844,Mohamed Abdouramane,74953,Renaissance Zemamra,Centre-Back,24,Niger,19,4,3,8,73,40,3222,1,1,4,3,3,17,2023,2026
+1331844,Mohamed Abdouramane,74953,Renaissance Zemamra,Centre-Back,24,Niger,19,4,3,8,75,42,3402,2,1,7,5,3,19,2023,2026
 1060545,Ousmane Diallo,74953,Renaissance Zemamra,Left-Back,27,Mali,3,6,2,9,79,26,1866,1,0,7,1,3,3,2021,2026
 1172376,Soufiane Chakerni,74953,Renaissance Zemamra,Centre-Back,27,Morocco,0,2,2,3,30,1,90,0,0,0,0,0,0,2024,2025
 1242834,Mohamed Naoufal Tahiri,9099,AS FAR Rabat,Defensive Midfield,22,Morocco,0,4,3,4,36,25,1858,3,0,0,0,3,0,2021,2026
@@ -273,9 +273,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 926537,Aymane El Aouani,74953,Renaissance Zemamra,Central Midfield,25,Morocco,0,5,3,3,82,37,2462,3,0,0,0,3,0,2021,2025
 1263222,Yazid Faffa,9099,AS FAR Rabat,Left Winger,25,Morocco,19,6,4,4,84,59,3628,7,5,0,0,10,0,2021,2026
 520270,Mohamed Kamal,74953,Renaissance Zemamra,Right Winger,31,Morocco,31,11,5,6,311,205,15252,34,16,1,0,33,0,2016,2026
-617083,Zacarías Ghailán,6603,Wydad Casablanca,Left Winger,24,Morocco,1,10,7,10,206,77,3923,3,3,2,1,7,6,2017,2026
+617083,Zacarías Ghailán,6603,Wydad Casablanca,Left Winger,24,Morocco,0,10,7,10,206,77,3923,3,3,2,1,7,6,2017,2026
 897600,Abdelaziz El Hamzaoui,74953,Renaissance Zemamra,Centre-Forward,34,Morocco,17,8,4,4,94,70,4515,12,3,0,0,6,0,2017,2026
-800592,Taha Al Achbili,74953,Renaissance Zemamra,Left Winger,24,Morocco,0,7,5,4,38,13,737,1,2,0,0,2,1,2019,2025
+800592,Taha Al Achbili,74953,Renaissance Zemamra,Left Winger,24,Morocco,0,7,5,5,42,15,833,1,2,0,0,2,1,2019,2025
 1133038,Youssef Lakhal,74953,Renaissance Zemamra,Right Winger,24,Morocco,0,5,4,3,46,8,249,2,0,0,0,2,0,2020,2025
 1317901,Jawad Essaghir,74953,Renaissance Zemamra,Centre-Forward,22,Morocco,77,3,2,3,51,27,1454,5,4,0,0,1,0,2024,2026
 366753,Imad Errahouli,9100,Moghreb Atlético Tétouan,Left Winger,32,Morocco,26,12,6,6,285,111,5087,14,8,1,0,7,0,2013,2025
@@ -335,18 +335,18 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1005645,Pedrinho,6603,Wydad Casablanca,Attacking Midfield,22,Brazil,0,8,4,15,287,71,4197,12,0,0,0,6,0,2019,2026
 743585,Arthur Wenderroscky,6603,Wydad Casablanca,Attacking Midfield,20,Brazil,0,7,3,14,250,76,4494,10,5,1,0,7,7,2019,2025
 1330446,Rayane Mahtou,6603,Wydad Casablanca,Defensive Midfield,21,Morocco,17,3,1,5,90,13,452,0,0,0,0,1,0,2024,2026
-1247673,Mohamed Mounssef,6603,Wydad Casablanca,Central Midfield,17,Morocco,0,5,1,3,57,26,1751,7,0,0,0,2,23,2022,2026
-1072321,Moisés Paniagua,6603,Wydad Casablanca,Left Winger,19,Bolivia,20,6,3,17,223,134,7929,27,18,158,79,10,18,2021,2026
+1247673,Mohamed Mounssef,6603,Wydad Casablanca,Central Midfield,17,Morocco,0,5,1,3,59,27,1841,7,0,0,0,2,24,2022,2026
+1072321,Moisés Paniagua,6603,Wydad Casablanca,Left Winger,19,Bolivia,20,6,3,17,225,136,8099,27,18,158,79,10,20,2021,2026
 517712,Hamza Hannouri,6603,Wydad Casablanca,Centre-Forward,28,Morocco,19,11,4,8,330,168,9044,35,10,12,6,21,3,2016,2026
 273432,Mohamed Rayhi,6603,Wydad Casablanca,Left Winger,31,Netherlands,0,16,10,24,593,415,29474,83,51,323,114,34,5,2011,2026
+146854,Wissam Ben Yedder,6603,Wydad Casablanca,Centre-Forward,34,France,9,17,8,28,838,614,41740,289,83,667,299,36,22,2009,2025
 330726,Thembinkosi Lorch,6603,Wydad Casablanca,Left Winger,31,South Africa,0,13,7,16,432,265,18973,54,43,131,41,23,7,2014,2026
-146854,Wissam Ben Yedder,6603,Wydad Casablanca,Centre-Forward,34,France,9,17,8,28,824,614,41740,289,83,667,299,36,22,2009,2025
 916708,Walid Nassi,6603,Wydad Casablanca,Right Winger,26,Morocco,28,7,5,11,245,165,7463,18,27,18,6,8,1,2020,2026
-513275,Tumisang Orebonye,22935,Hassania d'Agadir,Centre-Forward,30,Botswana,28,11,8,14,268,195,12903,25,12,50,20,20,42,2016,2026
+513275,Tumisang Orebonye,22935,Hassania d'Agadir,Centre-Forward,30,Botswana,28,11,8,14,270,197,13076,25,12,56,23,21,44,2016,2026
 1253671,Mouad Enzo,6603,Wydad Casablanca,Left Winger,25,Morocco,22,5,3,5,87,36,1944,1,4,0,0,1,0,2022,2026
 1309132,Ahmed Rhailouf,6603,Wydad Casablanca,Centre-Forward,22,Morocco,0,3,3,3,55,25,1747,4,1,0,0,5,0,2024,2026
 55619,Nordin Amrabat,6603,Wydad Casablanca,Right Winger,38,Morocco,0,21,13,41,1031,739,47994,110,121,277,99,128,82,2006,2026
-240707,Zouhair El Moutaraji,6603,Wydad Casablanca,Left Winger,30,Morocco,77,14,4,12,476,212,10312,40,19,48,25,13,0,2012,2026
+240707,Zouhair El Moutaraji,6603,Wydad Casablanca,Left Winger,30,Morocco,77,14,4,13,479,214,10438,40,19,48,25,13,0,2012,2026
 1374028,Abdessalam Anane,6603,Wydad Casablanca,Centre-Forward,16,Morocco,0,3,1,4,30,6,218,1,2,0,0,0,6,2024,2026
 1543805,Abdoulaye Coulibaly,6603,Wydad Casablanca,Centre-Forward,17,Mali,0,1,1,2,15,8,489,0,0,0,0,1,0,2025,2025
 1262897,Chamss Eddine El Allaly,6603,Wydad Casablanca,Centre-Forward,19,Morocco,0,4,1,5,45,7,332,0,0,0,0,1,3,2021,2025
@@ -354,8 +354,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1317548,Akram Khlifi,3282,MAS Fès,Centre-Back,22,Morocco,30,2,1,3,44,4,143,0,0,0,0,0,0,2024,2025
 904576,Ismail Laghzali,3282,MAS Fès,Right-Back,23,Morocco,0,5,3,4,91,19,1173,0,1,0,0,1,0,2022,2026
 1115476,Zakaria Allaoui,3282,MAS Fès,Centre-Forward,20,Morocco,36,3,1,5,66,15,853,2,0,2,1,0,10,2022,2024
-97925,Munir El Kajoui,37176,Renaissance de Berkane,Goalkeeper,37,Morocco,1,17,6,24,890,477,42802,0,0,0,0,30,58,2010,2026
-599573,Mehdi Maftah,37176,Renaissance de Berkane,Goalkeeper,33,Morocco,12,11,5,7,347,105,9408,0,0,0,0,6,0,2015,2026
+97925,Munir El Kajoui,37176,Renaissance de Berkane,Goalkeeper,37,Morocco,1,17,6,24,892,477,42802,0,0,0,0,30,58,2010,2026
+599573,Mehdi Maftah,37176,Renaissance de Berkane,Goalkeeper,33,Morocco,12,11,5,8,350,105,9408,0,0,0,0,6,0,2015,2026
 575594,Ismaël Kandouss,37176,Renaissance de Berkane,Centre-Back,29,Morocco,27,10,6,21,403,317,25561,9,4,92,20,44,1,2017,2026
 836640,Haytam Manaout,37176,Renaissance de Berkane,Right-Back,25,Morocco,20,6,2,9,201,129,10099,2,10,4,2,24,4,2021,2026
 842418,Abdelhak Assal,37176,Renaissance de Berkane,Centre-Back,27,Morocco,15,7,3,9,254,164,13158,2,7,16,0,20,3,2020,2026
@@ -363,7 +363,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 665744,Et-Tayeb Boukhriss,37176,Renaissance de Berkane,Right-Back,27,Morocco,33,9,3,5,284,166,13243,2,4,1,0,16,0,2018,2026
 373594,Mohamed Aymen Sadil,37176,Renaissance de Berkane,Left-Back,31,Morocco,3,11,5,6,285,113,7504,1,5,1,0,12,0,2014,2026
 191407,Oussama Haddadi,37176,Renaissance de Berkane,Centre-Back,34,Tunisia,4,18,8,28,769,451,36560,8,35,69,26,47,36,2009,2026
-1258578,Ilyass Mahsoub,37176,Renaissance de Berkane,Centre-Back,20,Morocco,0,4,1,6,81,16,1251,0,0,1,0,2,8,2023,2026
+1258578,Ilyass Mahsoub,37176,Renaissance de Berkane,Centre-Back,20,Morocco,0,4,1,6,82,16,1251,0,0,1,0,2,8,2023,2026
 776215,Mamadou Lamine Camara,37176,Renaissance de Berkane,Defensive Midfield,22,Senegal,0,6,2,15,284,147,9882,7,6,30,9,23,17,2021,2026
 665738,Ayoub Khairi,37176,Renaissance de Berkane,Central Midfield,26,Morocco,8,7,2,8,280,156,9382,12,6,37,6,23,6,2018,2026
 522302,Yassine Labhiri,37176,Renaissance de Berkane,Attacking Midfield,32,Morocco,17,12,7,8,416,249,19029,22,23,22,11,26,0,2015,2026
@@ -371,14 +371,14 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1110732,Soumaila Sidibe,37176,Renaissance de Berkane,Defensive Midfield,28,Mali,5,5,2,10,172,76,4480,2,2,5,1,14,0,2022,2026
 468244,Rayane Aabid,37176,Renaissance de Berkane,Central Midfield,34,France,14,14,9,13,514,363,23621,20,18,139,38,30,0,2013,2026
 882910,Reda Hajji,37176,Renaissance de Berkane,Attacking Midfield,26,Morocco,35,6,1,7,212,75,2465,2,5,11,2,11,0,2020,2026
-1091178,Mohamed Ouyahia,37176,Renaissance de Berkane,Central Midfield,21,Morocco,32,5,1,7,158,16,788,0,0,1,0,0,4,2022,2026
+1091178,Mohamed Ouyahia,37176,Renaissance de Berkane,Central Midfield,21,Morocco,32,5,1,7,158,16,788,0,0,1,0,1,4,2022,2026
 355641,Mounir Chouiar,37176,Renaissance de Berkane,Left Winger,27,Morocco,23,13,11,28,537,361,23767,55,42,277,94,42,12,2014,2026
 1337459,Mohammed Handouz,37176,Renaissance de Berkane,Defensive Midfield,19,Morocco,0,2,1,5,81,7,444,0,0,0,0,0,0,2024,2025
 868636,Youssef Mehri,37176,Renaissance de Berkane,Left Winger,27,Morocco,11,7,3,8,217,192,14664,47,25,40,16,19,7,2020,2026
 732950,Oussama Lamlioui,37176,Renaissance de Berkane,Centre-Forward,30,Morocco,9,8,3,7,263,171,11494,73,11,88,39,16,6,2018,2026
 847288,Paul Bassène,37176,Renaissance de Berkane,Centre-Forward,24,Senegal,28,7,4,8,252,146,9416,39,18,44,19,17,0,2020,2026
 1210200,Youness El Kaabi,37176,Renaissance de Berkane,Centre-Forward,25,Morocco,24,7,2,6,75,40,1288,5,0,10,4,3,2,2017,2026
-1338007,Hamza Raji,37176,Renaissance de Berkane,Centre-Forward,19,Morocco,0,3,1,6,88,21,1249,4,3,0,0,2,12,2024,2026
+1338007,Hamza Raji,37176,Renaissance de Berkane,Centre-Forward,19,Morocco,0,3,1,6,90,23,1367,4,3,0,0,2,14,2024,2026
 356586,Salaheddine Chihab,3282,MAS Fès,Goalkeeper,33,Morocco,16,10,6,10,288,146,12989,0,0,0,0,19,3,2014,2026
 1235905,Oussama Errahmany,3282,MAS Fès,Goalkeeper,23,Morocco,12,5,2,4,135,22,1980,0,0,0,0,1,0,2022,2026
 1266264,Oussama Moudam,3282,MAS Fès,Goalkeeper,23,Morocco,0,3,1,3,40,3,270,0,0,0,0,0,0,2022,2025
@@ -401,33 +401,33 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 508643,Soulyman Allouch,3282,MAS Fès,Left Winger,24,Netherlands,11,10,6,19,360,248,15788,42,36,124,44,15,18,2017,2026
 1370739,Adam Brika,3282,MAS Fès,Right Winger,20,Morocco,14,3,1,4,56,37,2170,2,3,0,0,7,0,2024,2026
 863506,Khalid Baba,3282,MAS Fès,Right Winger,26,Morocco,7,6,3,5,135,72,4650,8,8,3,1,8,5,2020,2026
-339552,Kabelo Seakanyeng,3282,MAS Fès,Left Winger,32,Botswana,7,13,8,16,276,161,11378,26,24,15,6,25,51,2014,2026
+339552,Kabelo Seakanyeng,3282,MAS Fès,Left Winger,32,Botswana,7,13,8,16,278,161,11378,26,24,15,6,25,51,2014,2026
 1433378,Cheikhna Semega,3282,MAS Fès,Centre-Forward,26,Mauritania,20,2,3,4,39,18,1421,7,0,0,0,3,0,2025,2026
 1344495,Privat Djéssan Bi,3282,MAS Fès,Centre-Forward,21,Cote d'Ivoire,90,2,1,2,9,0,0,0,0,0,0,0,0,2024,2025
 822538,El Mehdi Al Harrar,2068,Raja Club Athletic,Goalkeeper,25,Morocco,1,8,2,10,256,95,8674,0,0,0,0,11,8,2018,2026
 240712,Khalid Kbiri Alaoui,2068,Raja Club Athletic,Goalkeeper,30,Morocco,12,10,5,4,241,119,10550,0,0,0,0,9,0,2016,2026
-913377,Yassine Zoubir,2068,Raja Club Athletic,Goalkeeper,24,Morocco,32,7,1,6,158,7,630,0,0,0,0,0,0,2020,2026
-1256648,Saad Antra,2068,Raja Club Athletic,Goalkeeper,17,Morocco,0,4,1,2,21,5,440,0,0,0,0,0,5,2023,2026
+913377,Yassine Zoubir,2068,Raja Club Athletic,Goalkeeper,24,Morocco,32,7,1,7,162,7,630,0,0,0,0,0,0,2020,2026
+1256648,Saad Antra,2068,Raja Club Athletic,Goalkeeper,17,Morocco,0,4,1,2,23,6,530,0,0,0,0,0,6,2023,2026
 518804,Youssef Belammari,2068,Raja Club Athletic,Left-Back,26,Morocco,0,11,3,16,410,232,16889,12,38,17,3,21,23,2016,2026
 245193,Badr Benoun,2068,Raja Club Athletic,Centre-Back,33,Morocco,13,15,5,20,589,348,29599,33,11,92,33,51,24,2012,2026
-560873,Mohamed Boulacsout,2068,Raja Club Athletic,Right-Back,28,Morocco,7,10,3,9,322,212,15599,15,15,18,6,34,12,2016,2026
-617592,Ismail Mokadem,2068,Raja Club Athletic,Centre-Back,31,Morocco,4,9,2,6,343,245,20763,3,6,10,2,34,0,2017,2026
-375634,Ayoub El Amloud,2068,Raja Club Athletic,Right-Back,32,Morocco,17,13,5,18,529,290,22424,22,24,48,10,17,2,2013,2026
+560873,Mohamed Boulacsout,2068,Raja Club Athletic,Right-Back,28,Morocco,7,10,3,10,326,216,15808,15,16,18,6,35,12,2016,2026
+617592,Ismail Mokadem,2068,Raja Club Athletic,Centre-Back,31,Morocco,4,9,2,7,347,249,21078,3,6,10,2,35,0,2017,2026
+375634,Ayoub El Amloud,2068,Raja Club Athletic,Right-Back,32,Morocco,17,13,5,19,532,293,22694,23,24,48,10,17,2,2013,2026
 401938,Amine Khammas,2068,Raja Club Athletic,Left-Back,27,Morocco,24,12,7,23,420,242,18293,4,19,24,7,34,7,2015,2026
 569755,Abdellah Khafifi,3282,MAS Fès,Centre-Back,33,Morocco,15,11,4,8,323,250,21923,17,4,20,6,60,0,2015,2026
-969934,Bouchaib Arrassi,2068,Raja Club Athletic,Centre-Back,26,Morocco,5,6,2,10,197,70,3884,3,1,1,0,8,5,2021,2026
+969934,Bouchaib Arrassi,2068,Raja Club Athletic,Centre-Back,26,Morocco,5,6,2,11,201,74,4199,4,1,1,0,8,5,2021,2026
 371606,Abdelkarim Baadi,4697,KACM Marrakech,Right-Back,30,Morocco,33,12,4,10,452,228,16671,2,13,18,3,30,5,2014,2026
-274235,Mohamed Al-Makahasi,2068,Raja Club Athletic,Central Midfield,31,Morocco,23,15,3,7,398,262,17682,5,16,3,1,41,0,2012,2026
+274235,Mohamed Al-Makahasi,2068,Raja Club Athletic,Central Midfield,31,Morocco,23,15,3,8,402,266,17960,5,16,3,1,41,0,2012,2026
 315332,Aymen Barkok,2068,Raja Club Athletic,Attacking Midfield,28,Morocco,6,14,10,20,529,261,13781,23,16,81,30,36,34,2013,2026
 262685,Moses Orkuma,2068,Raja Club Athletic,Defensive Midfield,30,Nigeria,0,15,10,17,386,224,18654,5,7,16,1,31,6,2011,2026
 738952,Hilal Ferdaoussi,6371,FUS Rabat,Central Midfield,27,Morocco,10,8,3,4,211,112,7146,3,2,1,0,17,0,2019,2026
-318904,Sabir Bougrine,4697,KACM Marrakech,Attacking Midfield,30,Morocco,10,13,8,29,495,336,23704,26,39,35,16,35,11,2014,2026
+318904,Sabir Bougrine,4697,KACM Marrakech,Attacking Midfield,30,Morocco,10,13,8,30,498,338,23798,26,39,35,16,35,11,2014,2026
 904603,Othmane Chraibi,2068,Raja Club Athletic,Defensive Midfield,23,Morocco,19,6,4,9,190,98,6015,2,3,5,2,18,7,2021,2026
-1106691,Balla Moussa Conté,2068,Raja Club Athletic,Defensive Midfield,21,Guinea,26,5,3,11,133,74,5295,0,1,6,2,21,2,2022,2026
+1106691,Balla Moussa Conté,2068,Raja Club Athletic,Defensive Midfield,21,Guinea,26,5,3,12,138,76,5453,0,1,6,2,22,2,2022,2026
 152241,Besar Halimi,2068,Raja Club Athletic,Attacking Midfield,30,Kosovo,30,18,17,37,771,448,27226,69,54,91,36,67,35,2009,2026
 238634,Adam Ennaffati,2068,Raja Club Athletic,Left Winger,32,Morocco,77,15,7,15,617,318,20555,58,58,25,11,28,9,2012,2026
 241324,Bilal Ould-Chikh,2068,Raja Club Athletic,Right Winger,29,Morocco,45,15,10,19,553,254,15692,19,42,186,64,17,21,2012,2026
-677986,Mohammad Abu Zrayq,2068,Raja Club Athletic,Right Winger,28,Jordan,27,9,7,25,265,113,5322,20,9,9,5,11,38,2018,2026
+677986,Mohammad Abu Zrayq,2068,Raja Club Athletic,Right Winger,28,Jordan,27,9,7,26,269,116,5457,20,9,9,5,11,38,2018,2026
 607249,Mathias Oyewusi,2068,Raja Club Athletic,Centre-Forward,27,Nigeria,99,9,7,16,316,230,15508,77,23,98,34,40,0,2018,2026
 1150962,Mouad Dahak,79389,Union Touarga Sportif,Left Winger,21,Morocco,22,5,2,7,147,88,4805,18,9,6,1,6,28,2022,2026
 707310,Ismail Khafi,2068,Raja Club Athletic,Centre-Forward,31,Morocco,9,9,6,7,215,168,12113,42,21,34,10,18,2,2017,2026
@@ -435,26 +435,26 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 847308,Pape Ousmane Sakho,2068,Raja Club Athletic,Left Winger,29,Senegal,79,9,7,13,228,84,3834,6,6,10,8,12,1,2017,2026
 1475138,Yahya Iguiz,2068,Raja Club Athletic,Centre-Forward,17,Morocco,18,2,1,4,47,21,701,3,1,0,0,2,11,2025,2026
 1330869,Azzedine Laftah,2068,Raja Club Athletic,Left Winger,22,Morocco,0,3,1,5,62,20,1003,4,1,0,0,1,0,2024,2026
-238997,Ahmed Reda Tagnaouti,9099,AS FAR Rabat,Goalkeeper,30,Morocco,16,14,7,16,623,294,26145,0,1,1,0,23,7,2012,2026
+238997,Ahmed Reda Tagnaouti,9099,AS FAR Rabat,Goalkeeper,30,Morocco,16,14,7,16,625,294,26145,0,1,1,0,23,7,2012,2026
 859133,Ayoub El Khayati,9099,AS FAR Rabat,Goalkeeper,28,Morocco,1,9,2,6,185,45,3998,0,0,0,0,3,0,2017,2026
 1073699,Hakim Mesbahi,9099,AS FAR Rabat,Goalkeeper,21,Morocco,22,6,1,8,131,32,2687,0,0,0,0,1,19,2021,2026
 1247671,Marouane Cherquaoui,9099,AS FAR Rabat,Goalkeeper,17,Morocco,0,3,1,3,33,3,270,0,0,0,0,0,3,2022,2025
-635927,Fallou Mendy,9099,AS FAR Rabat,Centre-Back,26,Senegal,4,8,6,12,244,77,6436,6,1,4,1,11,0,2018,2026
+635927,Fallou Mendy,9099,AS FAR Rabat,Centre-Back,26,Senegal,4,8,6,13,245,77,6436,6,1,4,1,11,0,2018,2026
 518801,Marouane Louadni,9099,AS FAR Rabat,Centre-Back,31,Morocco,15,12,4,12,387,240,20411,13,8,72,19,63,11,2015,2026
-573065,Tó Carneiro,9099,AS FAR Rabat,Left-Back,31,Angola,2,10,2,11,255,150,11768,2,6,19,3,15,38,2017,2026
+573065,Tó Carneiro,9099,AS FAR Rabat,Left-Back,31,Angola,2,10,2,11,257,152,11883,2,6,21,3,15,40,2017,2026
 734155,Jamal Ech-Chamakh,9099,AS FAR Rabat,Left-Back,26,Morocco,23,8,2,7,257,188,14513,10,14,0,0,33,1,2019,2026
 1079652,Ayoub Ait Khassou,9099,AS FAR Rabat,Centre-Back,22,Morocco,27,3,2,6,65,14,828,1,1,0,0,0,0,2024,2026
 1180823,Omar El Khattab,59814,Widad Témara,Right-Back,19,Morocco,32,5,2,2,29,8,494,0,0,0,0,0,8,2022,2026
 518802,Anas Bach,9099,AS FAR Rabat,Defensive Midfield,28,Morocco,3,11,2,9,396,278,23829,11,15,16,3,16,18,2016,2026
 631508,Khalid Aït Ouarkhane,9099,AS FAR Rabat,Attacking Midfield,26,Morocco,8,9,3,7,293,153,9736,21,13,16,6,20,6,2018,2026
 711281,Abdelfettah Hadraf,9099,AS FAR Rabat,Central Midfield,28,Morocco,40,9,2,6,286,205,13748,24,28,15,7,29,0,2018,2026
-276768,Nolan Mbemba,9099,AS FAR Rabat,Defensive Midfield,30,Congo,26,15,12,25,643,276,15506,17,8,65,18,19,9,2012,2026
+276768,Nolan Mbemba,9099,AS FAR Rabat,Defensive Midfield,30,Congo,26,15,12,25,644,276,15506,17,8,65,18,19,9,2012,2026
 711572,Zineddine Derrag,9099,AS FAR Rabat,Defensive Midfield,27,Morocco,6,9,2,5,271,186,12447,2,9,10,1,17,0,2018,2026
 660041,Youssef El Fahli,9099,AS FAR Rabat,Left Winger,29,Morocco,7,10,3,6,355,289,21922,67,40,35,8,29,0,2016,2026
 689431,Reda Slim,9099,AS FAR Rabat,Right Winger,25,Morocco,10,9,2,15,335,204,13572,47,34,40,16,29,5,2018,2026
 371211,Hamza Khabba,9099,AS FAR Rabat,Centre-Forward,29,Morocco,17,13,5,5,355,236,15014,51,27,27,9,26,0,2014,2026
 507374,Ahmed Hammoudan,9099,AS FAR Rabat,Left Winger,35,Morocco,11,14,7,14,485,333,23308,55,47,113,36,28,6,2010,2026
-1004383,Ricardo Coutinho,9099,AS FAR Rabat,Left Winger,19,Portugal,0,6,5,12,247,87,5047,14,1,3,0,12,3,2021,2026
+1004383,Ricardo Coutinho,9099,AS FAR Rabat,Left Winger,19,Portugal,0,6,5,12,248,87,5047,14,1,3,0,12,3,2021,2026
 872090,Mouhcine Bouriga,9099,AS FAR Rabat,Centre-Forward,26,Morocco,9,8,4,7,184,104,5500,18,9,17,6,9,0,2019,2026
 1299944,Destin Maniriho,9099,AS FAR Rabat,Left Winger,25,Burundi,53,2,2,5,24,6,527,0,0,0,0,1,0,2024,2026
 741630,Joel Beya,9099,AS FAR Rabat,Centre-Forward,26,DR Congo,0,8,3,10,135,80,4206,13,2,49,19,3,4,2019,2026
@@ -464,8 +464,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 627926,Hodaifa El Mhassani,6371,FUS Rabat,Right-Back,25,Morocco,22,10,3,5,250,150,11636,8,5,1,1,15,0,2017,2026
 816064,Mouad Bahsain,22935,Hassania d'Agadir,Centre-Back,27,Morocco,6,9,3,4,213,151,11697,2,6,0,0,24,2,2018,2026
 1055193,Yassine Amhih,6371,FUS Rabat,Centre-Back,23,Morocco,4,5,2,4,144,68,5381,0,1,0,0,5,1,2022,2026
-618818,Fernando Chamboco,6371,FUS Rabat,Centre-Back,28,Mozambique,31,8,5,12,140,42,3354,0,0,1,0,5,12,2018,2026
-834876,Amine Farhane,6371,FUS Rabat,Centre-Back,28,Morocco,15,8,3,9,256,93,6941,6,1,10,2,16,0,2019,2026
+618818,Fernando Chamboco,6371,FUS Rabat,Centre-Back,28,Mozambique,31,8,5,12,142,43,3399,0,0,1,0,5,13,2018,2026
+834876,Amine Farhane,6371,FUS Rabat,Centre-Back,28,Morocco,15,8,3,10,259,94,7029,6,1,10,2,16,0,2019,2026
 667994,Oussama Raoui,6371,FUS Rabat,Right-Back,24,Morocco,26,10,1,7,225,95,5491,1,5,0,0,12,12,2017,2026
 1153097,Abdeslam Achhab,6371,FUS Rabat,Left-Back,21,Morocco,19,5,1,5,119,15,1040,0,2,0,0,0,14,2022,2026
 1247662,Walid El Hani,6371,FUS Rabat,Left-Back,18,Morocco,25,5,1,4,46,3,181,0,0,0,0,0,2,2022,2026
@@ -474,8 +474,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 507134,Amine El Msane,6371,FUS Rabat,Defensive Midfield,32,Morocco,3,10,4,4,270,185,15818,3,8,0,0,37,0,2015,2026
 811084,Abdessamad Mahir,6371,FUS Rabat,Central Midfield,29,Morocco,8,7,3,3,124,100,8610,4,2,0,0,15,0,2019,2026
 1232068,Soufiane Tazi,6371,FUS Rabat,Central Midfield,22,Morocco,49,4,1,3,89,56,2980,4,4,0,0,5,0,2023,2026
-593405,Ismail Moutaraji,6371,FUS Rabat,Attacking Midfield,26,Morocco,18,11,4,9,263,140,8120,16,27,1,0,11,8,2015,2026
-628354,Hamza Moujahid,6371,FUS Rabat,Central Midfield,31,Morocco,27,10,6,7,286,163,10475,14,13,0,0,27,0,2016,2026
+593405,Ismail Moutaraji,6371,FUS Rabat,Attacking Midfield,26,Morocco,18,11,4,10,266,143,8256,16,28,1,0,13,8,2015,2026
+628354,Hamza Moujahid,6371,FUS Rabat,Central Midfield,31,Morocco,27,10,6,8,290,163,10475,14,13,0,0,27,0,2016,2026
 1150961,Anas El Makkaoui,6371,FUS Rabat,Defensive Midfield,21,Morocco,16,5,1,6,166,34,1465,1,1,0,0,3,17,2022,2026
 1389000,Wassim Ouarab,6371,FUS Rabat,Attacking Midfield,20,Morocco,0,2,1,4,18,4,223,1,0,0,0,0,1,2024,2025
 844300,Ayoub Mouloua,6371,FUS Rabat,Centre-Forward,22,Morocco,9,6,3,8,141,77,4641,24,5,14,9,14,5,2020,2026
@@ -492,7 +492,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 491280,Euclides Cabral,22935,Hassania d'Agadir,Right-Back,27,Portugal,19,12,10,16,375,206,14224,16,8,41,18,34,0,2013,2026
 1184401,Assane Bèye,22935,Hassania d'Agadir,Centre-Back,25,Senegal,25,4,2,5,121,70,5936,6,0,0,0,11,0,2022,2025
 1233132,Ismail Hrila,22935,Hassania d'Agadir,Centre-Back,22,Morocco,4,4,1,4,98,44,3308,1,1,0,0,4,0,2023,2026
-913644,Zakary Lamgahez,22935,Hassania d'Agadir,Centre-Back,22,France,18,7,7,9,210,68,4417,2,1,8,2,10,0,2020,2026
+913644,Zakary Lamgahez,22935,Hassania d'Agadir,Centre-Back,22,France,18,7,7,9,211,68,4417,2,1,8,2,10,0,2020,2026
 238952,Soulaiman El Amrani,22935,Hassania d'Agadir,Centre-Back,29,Morocco,30,10,4,3,242,141,10954,0,3,0,0,13,0,2017,2026
 1338486,Ayman Tarrazi,22935,Hassania d'Agadir,Right-Back,21,Morocco,27,3,1,4,76,44,2974,0,1,0,0,5,0,2024,2026
 1322435,Younes El Amali,22935,Hassania d'Agadir,Left-Back,22,Morocco,36,3,1,4,78,11,715,0,0,0,0,1,0,2024,2026
@@ -502,7 +502,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1110587,Abdelali Ait Brayim,22935,Hassania d'Agadir,Attacking Midfield,22,Morocco,14,5,1,4,126,47,2624,2,5,0,0,0,0,2022,2026
 1194144,Mehdi Akoumi,22935,Hassania d'Agadir,Central Midfield,20,Morocco,32,5,1,6,93,58,3940,2,0,0,0,5,18,2022,2026
 1174677,Zakaria Ami,22935,Hassania d'Agadir,Defensive Midfield,22,Morocco,8,4,1,4,79,43,2942,0,2,0,0,1,0,2022,2025
-467571,Fred Dembi,22935,Hassania d'Agadir,Defensive Midfield,30,Congo,95,13,12,18,443,247,17726,10,11,12,1,37,13,2013,2026
+467571,Fred Dembi,22935,Hassania d'Agadir,Defensive Midfield,30,Congo,95,13,12,18,445,247,17726,10,11,12,1,37,13,2013,2026
 642295,Rodrigue Kossi Fiogbé,22935,Hassania d'Agadir,Defensive Midfield,26,Benin,16,10,4,14,327,135,8897,1,2,1,0,23,13,2017,2026
 709481,Ayoub Yousfi,22935,Hassania d'Agadir,Attacking Midfield,23,Spain,0,8,7,9,156,66,3996,6,5,0,0,10,0,2019,2026
 1327935,Hamza Moumadi,22935,Hassania d'Agadir,Central Midfield,21,Morocco,17,3,1,5,78,32,1307,1,2,0,0,1,1,2024,2026
@@ -511,12 +511,12 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1309843,Anis Zouagui,22935,Hassania d'Agadir,Attacking Midfield,20,Morocco,0,2,1,4,61,9,199,0,1,0,0,0,0,2024,2025
 1337458,Baba Bello Ilou,22935,Hassania d'Agadir,Centre-Forward,20,Cameroon,17,3,3,7,99,51,3226,24,2,17,5,1,0,2024,2026
 1386941,Othmane Boudfiri,22935,Hassania d'Agadir,Central Midfield,21,Morocco,0,2,1,4,33,4,37,0,0,0,0,0,0,2024,2025
-507135,Hamid Ahadad,22935,Hassania d'Agadir,Centre-Forward,31,Morocco,23,12,8,18,568,269,14890,62,24,53,19,39,3,2015,2026
+507135,Hamid Ahadad,22935,Hassania d'Agadir,Centre-Forward,31,Morocco,23,12,8,18,569,269,14890,62,24,53,19,39,3,2015,2026
 721822,Youssef Arbidi,22935,Hassania d'Agadir,Left Winger,29,Morocco,26,11,8,4,174,108,6123,9,16,0,0,9,0,2016,2026
 918020,Fahd Bendahmane,22935,Hassania d'Agadir,Centre-Forward,25,Morocco,33,5,1,4,127,65,3503,3,3,0,0,9,0,2021,2026
 789533,Walid Jarmouni,22935,Hassania d'Agadir,Centre-Forward,26,France,9,9,9,13,290,149,8738,49,7,3,0,10,0,2018,2026
 920577,Aziz Qaidi,22935,Hassania d'Agadir,Left Winger,28,Morocco,68,5,1,4,166,93,4285,12,6,0,0,7,0,2021,2025
-365354,Mohamed Ounajem,22935,Hassania d'Agadir,Right Winger,33,Morocco,28,12,6,16,557,370,21818,38,81,59,26,34,10,2014,2025
+365354,Mohamed Ounajem,22935,Hassania d'Agadir,Right Winger,33,Morocco,28,12,6,17,560,373,22012,38,81,59,26,35,10,2014,2025
 366783,Aymane Majid,30625,COD Meknès,Goalkeeper,31,Morocco,13,13,5,5,361,144,12884,0,0,0,0,11,0,2014,2026
 1340454,Soufiane Taher,30625,COD Meknès,Goalkeeper,22,Morocco,44,3,1,3,74,6,448,0,0,0,0,2,0,2024,2026
 375635,Reda Bounaga,30625,COD Meknès,Goalkeeper,36,Morocco,34,11,7,3,254,90,7883,0,0,0,0,8,0,2011,2025
@@ -545,7 +545,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 850874,Cruz Ndong Bitheghe,30625,COD Meknès,Centre-Forward,25,Gabon,25,7,5,4,31,9,444,2,0,0,0,0,0,2019,2026
 1339348,Oussama Msahli,30625,COD Meknès,Centre-Forward,22,Morocco,24,2,1,3,66,20,865,0,1,0,0,2,0,2024,2025
 846673,Amine El Ouaad,4697,KACM Marrakech,Goalkeeper,30,Morocco,67,7,3,5,230,103,9382,0,0,0,0,9,0,2020,2026
-461581,Malcolm Barcola,12721,Ittihad Tanger,Goalkeeper,27,Togo,12,11,6,20,394,80,6929,0,0,0,0,5,30,2016,2026
+461581,Malcolm Barcola,12721,Ittihad Tanger,Goalkeeper,27,Togo,12,11,6,20,396,82,7109,0,0,0,0,5,32,2016,2026
 614506,Ahmed Azmi,12721,Ittihad Tanger,Goalkeeper,24,Morocco,90,9,7,13,244,32,2690,0,0,0,0,0,0,2018,2026
 1309848,Yassine Hachloufi,12721,Ittihad Tanger,Goalkeeper,19,Morocco,0,2,1,3,64,2,180,0,0,0,0,0,0,2024,2025
 859901,Bilal El Ouadghiri,12721,Ittihad Tanger,Centre-Back,25,Morocco,6,7,3,5,191,111,8592,9,1,0,0,17,1,2020,2026
@@ -562,19 +562,19 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1275274,Mohamed El Guartit,12721,Ittihad Tanger,Attacking Midfield,21,Morocco,34,4,1,3,71,5,324,0,0,0,0,0,0,2023,2026
 1334156,Achraf El Quaraoui,12721,Ittihad Tanger,Central Midfield,20,Morocco,48,3,1,3,66,8,329,0,0,0,0,0,0,2024,2026
 1506544,Akram Tali,12721,Ittihad Tanger,Attacking Midfield,19,Morocco,16,2,1,2,29,5,51,0,0,0,0,0,0,2025,2026
-1134280,Abdelhamid Maali,12721,Ittihad Tanger,Right Winger,20,Morocco,17,6,2,11,173,111,6175,5,18,24,7,15,29,2021,2026
+1134280,Abdelhamid Maali,12721,Ittihad Tanger,Right Winger,20,Morocco,17,6,2,11,174,112,6265,6,20,24,7,15,30,2021,2026
 701611,Jawad Ghabra,4697,KACM Marrakech,Right Winger,32,Morocco,19,10,3,3,201,134,8836,19,16,0,0,26,0,2017,2026
 1386760,Haytham Bakhlakh,12721,Ittihad Tanger,Right Winger,20,England,67,3,1,3,25,5,148,1,0,0,0,0,0,2024,2026
 1309849,Soulaiman Ait Dani,12721,Ittihad Tanger,Centre-Forward,20,Morocco,0,2,1,3,38,6,332,0,0,0,0,1,0,2024,2025
 1170795,Abdoulaye Kanou,14462,Difaâ El Jadida,Centre-Forward,26,Mali,0,6,6,12,154,74,4934,18,2,21,9,10,0,2021,2026
-176573,Babacar Niasse,14462,Difaâ El Jadida,Goalkeeper,29,Mauritania,30,14,4,22,510,181,16031,0,0,0,0,19,29,2010,2026
+176573,Babacar Niasse,14462,Difaâ El Jadida,Goalkeeper,29,Mauritania,30,14,4,22,512,182,16121,0,0,0,0,19,30,2010,2026
 1307857,Ayoub Ait Wahmane,14462,Difaâ El Jadida,Goalkeeper,24,Morocco,16,3,1,3,75,13,1091,0,0,0,0,0,0,2024,2026
 1335123,Haitam Azimi,14462,Difaâ El Jadida,Goalkeeper,21,Morocco,0,3,1,3,46,1,90,0,0,0,0,0,0,2024,2026
 882909,Mohamed Bentarcha,14462,Difaâ El Jadida,Centre-Back,28,Morocco,14,8,4,6,276,63,4486,2,0,0,0,14,0,2019,2026
 1178984,Hamza Malki,14462,Difaâ El Jadida,Left-Back,30,Morocco,3,7,6,3,111,62,4349,0,1,0,0,5,0,2020,2026
 1422476,Zakaria Oubraim,14462,Difaâ El Jadida,Right-Back,24,Morocco,24,3,1,3,39,26,1621,0,0,0,0,5,1,2017,2026
 902827,Soufiane Abaaziz,14462,Difaâ El Jadida,Left-Back,28,Morocco,23,5,3,3,78,56,3692,1,3,0,0,5,0,2018,2026
-235116,Marouane Hadhoudi,14462,Difaâ El Jadida,Centre-Back,33,Morocco,0,13,5,11,444,286,24375,8,6,10,1,50,2,2011,2025
+235116,Marouane Hadhoudi,14462,Difaâ El Jadida,Centre-Back,33,Morocco,0,14,5,16,586,286,24375,8,6,10,1,50,2,2011,2026
 1203850,Oussama Benchchaoui,14462,Difaâ El Jadida,Right-Back,25,Morocco,2,4,1,3,76,47,2235,2,0,0,0,5,0,2023,2026
 1506545,Aymen Riyane,14462,Difaâ El Jadida,Centre-Back,25,Morocco,13,2,1,2,30,9,273,0,0,0,0,0,0,2025,2026
 1087382,Aymane Takoua,14462,Difaâ El Jadida,Centre-Back,22,Morocco,55,5,2,4,83,6,384,0,0,0,0,0,0,2022,2026
@@ -595,7 +595,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1392482,Yahya Hommane,14462,Difaâ El Jadida,Centre-Forward,17,Morocco,0,2,1,2,6,0,0,0,0,0,0,0,0,2024,2025
 530999,Mohamed Baayou,4697,KACM Marrakech,Goalkeeper,33,Morocco,1,11,4,5,295,90,8130,0,0,0,0,1,0,2016,2026
 897139,Naoufal Ait Oubna,4697,KACM Marrakech,Goalkeeper,25,Morocco,37,4,2,3,57,7,630,0,0,0,0,1,0,2020,2026
-1410532,Anass Rachak,4697,KACM Marrakech,Goalkeeper,19,Morocco,80,3,1,3,41,0,0,0,0,0,0,0,0,2024,2026
+1410532,Anass Rachak,4697,KACM Marrakech,Goalkeeper,19,Morocco,80,3,1,3,43,0,0,0,0,0,0,0,0,2024,2026
 1440454,Hamza Fassoukh,4697,KACM Marrakech,Right-Back,27,Morocco,26,5,2,3,51,30,2445,0,1,0,0,5,0,2022,2026
 1203849,Hamza Smaali,4697,KACM Marrakech,Centre-Back,27,Morocco,14,5,2,3,51,27,1987,1,0,0,0,5,0,2022,2026
 1258577,Mohamed Adam Benhita,4697,KACM Marrakech,Centre-Back,20,Morocco,4,4,1,4,52,16,1071,0,1,0,0,0,1,2023,2026
@@ -605,9 +605,9 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1274618,Mohammed Battah,4697,KACM Marrakech,Left-Back,24,Morocco,27,4,2,2,35,8,624,0,1,0,0,0,0,2022,2026
 1230677,Ismail Gazaoui,4697,KACM Marrakech,Right-Back,27,Morocco,0,4,4,4,39,15,1194,0,1,0,0,2,0,2022,2025
 1564666,Abdellah Bouallali,4697,KACM Marrakech,Right-Back,21,Morocco,15,2,1,1,8,7,630,0,0,0,0,0,0,2025,2026
-840926,Youssef Raiani,4697,KACM Marrakech,Central Midfield,28,Morocco,24,7,4,5,99,34,2142,3,4,0,0,9,0,2020,2026
+840926,Youssef Raiani,4697,KACM Marrakech,Central Midfield,28,Morocco,24,7,4,6,103,34,2142,3,4,0,0,9,0,2020,2026
 1459207,Hamza Rafaa,4697,KACM Marrakech,Central Midfield,25,Morocco,21,4,1,3,49,24,1785,0,1,0,0,5,0,2023,2026
-841118,Oussama Mahrous,4697,KACM Marrakech,Central Midfield,31,Morocco,5,9,5,5,206,135,9945,3,5,1,0,17,0,2016,2026
+841118,Oussama Mahrous,4697,KACM Marrakech,Central Midfield,31,Morocco,5,9,5,6,209,137,10083,3,5,1,0,17,0,2016,2026
 902813,Khalil Tamrani,4697,KACM Marrakech,Attacking Midfield,25,Morocco,8,5,3,2,94,24,697,0,2,0,0,1,0,2020,2026
 236850,Abdelilah Hafidi,4697,KACM Marrakech,Attacking Midfield,33,Morocco,23,15,4,15,645,336,23180,65,85,52,18,24,26,2010,2025
 1414646,Abderrahman Habib Rabi,4697,KACM Marrakech,Central Midfield,16,Morocco,0,2,1,2,2,1,45,0,0,0,0,1,0,2024,2025
@@ -622,7 +622,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 667992,Reda Asmama,79389,Union Touarga Sportif,Goalkeeper,24,Morocco,1,7,1,8,182,35,2746,0,0,0,0,1,3,2018,2026
 235602,Abderahmane El Houasli,79389,Union Touarga Sportif,Goalkeeper,40,Morocco,55,16,8,7,546,338,30339,0,2,0,0,23,0,2009,2025
 869457,Walid Hasbi,79389,Union Touarga Sportif,Goalkeeper,22,Morocco,50,6,3,8,146,41,3567,0,0,0,0,1,7,2021,2026
-1134255,Fouad Zahouani,79389,Union Touarga Sportif,Left-Back,19,Morocco,52,5,2,10,122,65,4757,2,4,12,3,21,38,2022,2026
+1134255,Fouad Zahouani,79389,Union Touarga Sportif,Left-Back,19,Morocco,52,5,2,10,123,66,4770,2,4,12,3,21,39,2022,2026
 1028119,Youness Akharraz,79389,Union Touarga Sportif,Right-Back,22,Morocco,2,4,1,5,88,65,4776,0,1,0,0,9,5,2021,2026
 537209,Hamza Regragui,79389,Union Touarga Sportif,Centre-Back,29,Morocco,15,11,5,12,415,232,16092,12,11,20,6,39,5,2016,2026
 1049354,Mehdi Ashabi,79389,Union Touarga Sportif,Centre-Back,29,Morocco,25,6,4,6,154,98,8109,5,2,2,1,13,0,2021,2026
@@ -642,7 +642,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1484094,Walid El Bellali,79389,Union Touarga Sportif,Defensive Midfield,0,Morocco,0,2,2,2,26,0,0,0,0,0,0,0,0,2023,2025
 1416066,Ahmed Naiba,79389,Union Touarga Sportif,Central Midfield,22,Morocco,0,3,2,3,21,2,118,0,0,0,0,0,0,2023,2025
 1548818,Konan Gatou Koffi,79389,Union Touarga Sportif,Defensive Midfield,19,Cote d'Ivoire,45,2,1,3,23,12,529,0,0,0,0,4,0,2025,2026
-239291,Abdelkabir El Ouadi,79389,Union Touarga Sportif,Left Winger,33,Morocco,14,16,8,12,565,345,21604,51,39,185,69,14,5,2011,2026
+239291,Abdelkabir El Ouadi,79389,Union Touarga Sportif,Left Winger,33,Morocco,14,16,8,12,565,347,21781,51,39,185,69,14,5,2011,2026
 1091486,Nasreddine Moustaghfir,79389,Union Touarga Sportif,Centre-Forward,23,Morocco,9,6,3,4,112,30,1455,4,2,0,0,8,0,2021,2026
 236708,Mohammed Fouzair,79389,Union Touarga Sportif,Right Winger,34,Morocco,29,16,6,14,595,322,23649,67,31,280,121,42,2,2011,2026
 1430198,Salim Ghazzani,79389,Union Touarga Sportif,Right Winger,23,Morocco,37,2,1,3,40,6,102,0,1,0,0,1,0,2025,2026
@@ -674,56 +674,56 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1577500,Reda-Allah Belmine,74953,Renaissance Zemamra,Left-Back,17,Morocco,0,0,0,0,0,0,0,0,0,0,0,0,0,,
 1261262,Ziad Nejjary,74953,Renaissance Zemamra,Left Winger,23,Morocco,0,2,2,4,41,4,214,0,0,0,0,1,0,2024,2025
 844299,Mohamed Jaouab,3282,MAS Fès,Centre-Back,24,Morocco,27,5,5,11,181,75,5518,5,1,10,1,18,4,2022,2026
-396429,Diogo Calila,3282,MAS Fès,Right-Back,28,Mozambique,2,11,5,13,366,199,11508,7,9,53,17,42,8,2015,2026
+396429,Diogo Calila,3282,MAS Fès,Right-Back,28,Mozambique,2,11,5,14,371,200,11573,7,9,55,18,42,9,2015,2026
 1595622,Yahya Safiri,59814,Widad Témara,Defensive Midfield,19,Morocco,0,0,0,0,0,0,0,0,0,0,0,0,0,,
 1496489,Samba Mbengue,3282,MAS Fès,Centre-Back,19,Senegal,4,3,3,3,71,26,2248,0,0,0,0,3,0,2024,2026
 342489,Tshegofatso Mabasa,3282,MAS Fès,Centre-Forward,30,South Africa,9,13,6,8,478,259,13180,76,12,227,99,27,1,2014,2026
 303410,Christopher Ibayi,3282,MAS Fès,Centre-Forward,31,Congo,18,14,11,23,413,257,16223,102,12,121,50,46,5,2013,2026
-639225,Amine El Farissi,3282,MAS Fès,Right Winger,27,France,10,10,6,9,252,191,11458,31,12,51,16,18,0,2016,2026
+639225,Amine El Farissi,3282,MAS Fès,Right Winger,28,France,10,10,6,9,252,191,11458,31,12,51,16,18,0,2016,2026
 1203845,Anas El Mahraoui,3282,MAS Fès,Left Winger,25,Morocco,17,3,4,7,89,51,3134,12,4,5,3,2,4,2024,2026
 852608,Devin Titus,3282,MAS Fès,Right Winger,25,South Africa,26,7,2,8,243,186,13655,37,23,304,119,12,1,2020,2026
 1400725,Youssef Hafidi,3282,MAS Fès,Right Winger,21,Morocco,23,3,3,3,13,3,136,0,0,0,0,0,0,2024,2026
-366746,Yahia Attiyat Allah,6603,Wydad Casablanca,Left-Back,31,Morocco,14,14,5,22,546,360,28877,25,45,70,17,48,22,2013,2026
+612041,Jamal Harkass,37176,Renaissance de Berkane,Centre-Back,30,Morocco,5,11,5,13,360,242,20976,12,13,26,7,53,4,2015,2026
 1133781,Abdoul Kabir Ouédraogo,3282,MAS Fès,Attack,18,Burkina Faso,28,3,2,3,16,5,230,1,0,0,0,0,0,2022,2026
-255749,Yahya Jabrane,6603,Wydad Casablanca,Defensive Midfield,35,Morocco,5,13,8,19,527,370,30623,45,18,52,23,69,21,2012,2026
-326150,Issoufou Dayo,6603,Wydad Casablanca,Centre-Back,35,Burkina Faso,25,14,4,15,644,422,36376,58,10,50,16,53,83,2013,2026
-734751,Nizar Al-Rashdan,6603,Wydad Casablanca,Defensive Midfield,27,Jordan,18,8,7,18,177,108,8179,8,6,102,33,16,52,2019,2026
-312819,Silvere Ganvoula,6603,Wydad Casablanca,Centre-Forward,30,Congo,15,15,11,31,575,351,17726,75,21,390,135,40,35,2012,2026
-779752,Soufiane Hetli,6603,Wydad Casablanca,Centre-Forward,25,Netherlands,0,5,3,6,166,113,5661,22,7,119,31,4,0,2022,2026
-362287,Aymane El Hassouni,6603,Wydad Casablanca,Attacking Midfield,31,Morocco,10,14,5,15,462,317,20067,44,30,117,35,44,8,2012,2026
-612041,Jamal Harkass,37176,Renaissance de Berkane,Centre-Back,30,Morocco,5,11,5,12,356,242,20976,12,13,26,7,53,4,2015,2026
-1606862,Haitam Hamani,6603,Wydad Casablanca,Right Winger,19,Morocco,7,1,1,1,7,7,88,0,1,0,0,0,0,2026,2026
 593431,Adil Tahif,37176,Renaissance de Berkane,Centre-Back,25,Morocco,13,10,4,15,279,166,13207,9,6,17,8,10,19,2017,2026
 265569,Youssef Aït Bennasser,37176,Renaissance de Berkane,Defensive Midfield,30,Morocco,6,16,13,23,562,331,24139,11,14,137,16,44,25,2011,2026
 891380,Omar El Manssouri,37176,Renaissance de Berkane,Attacking Midfield,25,France,26,10,7,12,232,174,12468,23,10,55,23,11,0,2017,2026
-111627,Ryan Mendes,37176,Renaissance de Berkane,Left Winger,36,Cape Verde,10,19,12,28,894,589,39761,128,99,389,140,69,102,2008,2026
-1263254,Hamza Kattoussi,37176,Renaissance de Berkane,Defender,23,Morocco,0,5,3,3,40,11,961,3,0,0,0,0,0,2021,2026
+111627,Ryan Mendes,37176,Renaissance de Berkane,Left Winger,36,Cape Verde,10,19,12,28,895,590,39837,128,100,389,140,69,103,2008,2026
+1263254,Hamza Kattoussi,37176,Renaissance de Berkane,Defender,23,Morocco,0,5,3,3,41,11,961,3,0,0,0,0,0,2021,2026
+366746,Yahia Attiyat Allah,6603,Wydad Casablanca,Left-Back,31,Morocco,14,14,5,22,546,360,28877,25,45,70,17,48,22,2013,2026
+1610951,Souleymane Sy,37176,Renaissance de Berkane,Attack,0,N/A,0,1,1,1,1,1,27,0,0,0,0,0,0,2026,2026
+255749,Yahya Jabrane,6603,Wydad Casablanca,Defensive Midfield,35,Morocco,5,13,8,20,530,372,30749,45,18,52,23,70,21,2012,2026
+326150,Issoufou Dayo,6603,Wydad Casablanca,Centre-Back,35,Burkina Faso,25,14,4,15,653,423,36384,58,10,50,16,53,84,2013,2026
+734751,Nizar Al-Rashdan,6603,Wydad Casablanca,Defensive Midfield,27,Jordan,18,8,7,18,178,109,8269,8,6,103,33,17,53,2019,2026
+312819,Silvere Ganvoula,6603,Wydad Casablanca,Centre-Forward,30,Congo,15,15,11,31,575,351,17726,75,21,390,135,40,35,2012,2026
+779752,Soufiane Hetli,6603,Wydad Casablanca,Centre-Forward,25,Netherlands,0,5,3,6,166,113,5661,22,7,119,31,4,0,2022,2026
+362287,Aymane El Hassouni,6603,Wydad Casablanca,Attacking Midfield,31,Morocco,10,14,5,16,465,317,20067,44,30,117,35,44,8,2012,2026
 478347,Marian Huja,2068,Raja Club Athletic,Centre-Back,27,Portugal,2,11,6,16,324,213,17261,11,4,69,26,40,1,2016,2026
 542525,Younes Bakiz,2068,Raja Club Athletic,Attacking Midfield,27,Denmark,14,11,8,12,374,244,16419,59,24,258,90,34,0,2016,2026
 722365,Michael Agbekpornu,2068,Raja Club Athletic,Defensive Midfield,28,Ghana,30,9,5,11,272,176,12129,2,9,40,7,51,5,2018,2026
-1610951,Souleymane Sy,37176,Renaissance de Berkane,Attack,0,N/A,0,1,1,1,1,1,27,0,0,0,0,0,0,2026,2026
+1606862,Haitam Hamani,6603,Wydad Casablanca,Right Winger,19,Morocco,7,1,1,1,7,7,88,0,1,0,0,0,0,2026,2026
 610484,Adel Bettaieb,2068,Raja Club Athletic,Centre-Forward,29,Tunisia,21,13,10,21,410,278,16887,84,20,155,51,32,0,2014,2026
 627163,Mounaïm El Idrissy,2068,Raja Club Athletic,Centre-Forward,27,France,70,11,6,14,366,228,10562,30,8,145,49,45,0,2016,2026
 1570028,Anas Benomar,2068,Raja Club Athletic,Defensive Midfield,18,Morocco,16,1,1,3,19,9,349,1,0,0,0,0,9,2026,2026
 1222907,Felipinho,2068,Raja Club Athletic,Left Winger,21,Brazil,10,3,3,4,57,11,438,0,0,0,0,1,0,2023,2026
 843459,Nabil Marmouk,9099,AS FAR Rabat,Centre-Back,28,Morocco,26,7,6,10,187,141,11787,7,5,0,0,21,2,2020,2026
-398886,Merveil Ndockyt,9099,AS FAR Rabat,Attacking Midfield,28,Congo,13,13,11,21,502,261,16431,20,19,147,44,38,25,2014,2026
-494268,Allan Okello,9099,AS FAR Rabat,Attacking Midfield,26,Uganda,14,11,5,12,320,146,9575,37,21,42,18,3,38,2016,2026
+398886,Merveil Ndockyt,9099,AS FAR Rabat,Attacking Midfield,28,Congo,13,13,11,21,503,263,16611,20,19,149,44,38,26,2014,2026
+494268,Allan Okello,9099,AS FAR Rabat,Attacking Midfield,26,Uganda,14,11,5,12,322,147,9658,37,21,43,19,3,39,2016,2026
 648080,Jephte Kitambala,9099,AS FAR Rabat,Centre-Forward,23,DR Congo,30,6,4,4,62,44,3310,11,1,98,27,3,4,2019,2026
 851529,Mehdi Bellarabi,6371,FUS Rabat,Goalkeeper,26,Morocco,13,7,2,5,176,14,1350,0,0,0,0,1,0,2020,2026
 1334372,Hamza Lizoul,6371,FUS Rabat,Goalkeeper,20,Morocco,1,2,1,3,45,0,0,0,0,0,0,0,0,2024,2026
 1516002,Hamza Challali,6371,FUS Rabat,Left-Back,17,Morocco,23,2,1,3,19,6,347,0,1,0,0,0,6,2025,2026
 1256641,Abderrahman Arkid,6371,FUS Rabat,Centre-Back,18,Morocco,32,4,1,5,56,18,1255,1,0,0,0,0,18,2022,2026
 1389006,Mustapha El Meskini,6371,FUS Rabat,Right-Back,19,Morocco,36,2,1,3,16,0,0,0,0,0,0,0,0,2024,2026
-366740,Issam Naji,6371,FUS Rabat,Central Midfield,24,Morocco,6,5,2,3,18,14,782,1,2,0,0,3,0,2014,2026
+366740,Issam Naji,6371,FUS Rabat,Central Midfield,25,Morocco,6,5,2,3,18,14,782,1,2,0,0,3,0,2014,2026
 533060,Anderson Cruz,6371,FUS Rabat,Left Winger,30,Angola,21,11,12,28,326,170,10187,10,3,78,21,24,5,2015,2026
 1386920,Yassine Belghroudi,6371,FUS Rabat,Right Winger,19,Morocco,24,2,2,2,8,0,0,0,0,0,0,0,0,2024,2026
 1416427,Mohamed Ferhane,6371,FUS Rabat,Centre-Forward,23,Morocco,22,2,3,2,17,6,130,0,0,0,0,3,0,2025,2026
-388477,Gaya Merbah,22935,Hassania d'Agadir,Goalkeeper,32,Algeria,1,12,7,10,426,187,16772,0,0,0,0,6,1,2015,2026
+388477,Gaya Merbah,22935,Hassania d'Agadir,Goalkeeper,32,Algeria,1,12,7,11,427,187,16772,0,0,0,0,6,1,2015,2026
 235448,Ayoub Qasmi,22935,Hassania d'Agadir,Centre-Back,33,Morocco,15,16,6,12,452,262,20975,7,13,7,3,49,1,2011,2026
 488962,Mohamed Doumbia,22935,Hassania d'Agadir,Central Midfield,27,Cote d'Ivoire,42,10,8,15,324,199,14339,16,11,41,14,29,0,2016,2026
 1123779,Chouaib Boutrid,30625,COD Meknès,Left-Back,26,Morocco,3,5,2,3,18,6,570,0,0,0,0,0,0,2020,2026
-678296,Mohamed Zrida,30625,COD Meknès,Defensive Midfield,27,Morocco,19,9,3,10,293,235,16190,14,23,35,12,40,1,2018,2026
+678296,Mohamed Zrida,30625,COD Meknès,Defensive Midfield,27,Morocco,19,9,3,11,297,238,16460,15,23,35,12,40,1,2018,2026
 858913,Mohamed Aanane,30625,COD Meknès,Attacking Midfield,28,Morocco,14,6,3,3,45,13,1036,1,1,0,0,0,0,2019,2026
 1152442,Willy Onana,30625,COD Meknès,Left Winger,26,Cameroon,10,4,4,9,86,47,1645,9,0,10,4,0,0,2023,2026
 812367,Hassan Zraibi,30625,COD Meknès,Left Winger,29,Morocco,37,6,5,3,95,56,3788,6,2,0,0,3,0,2017,2026
@@ -732,8 +732,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1259252,Aymane Douieb,12721,Ittihad Tanger,Goalkeeper,18,Morocco,13,5,1,2,32,1,45,0,0,0,0,0,1,2022,2026
 775979,Reda El Meliani,12721,Ittihad Tanger,Right-Back,21,Netherlands,2,6,6,13,192,82,4575,0,9,5,1,5,0,2021,2026
 1585826,Yassine Kermadi,12721,Ittihad Tanger,Centre-Back,17,Morocco,98,1,1,1,7,0,0,0,0,0,0,0,0,2026,2026
-847432,Babacar Sarr,12721,Ittihad Tanger,Defensive Midfield,29,Senegal,29,8,7,10,189,128,9748,10,5,8,2,18,0,2017,2026
-353875,Gape Edwin Mohutsiwa,12721,Ittihad Tanger,Defensive Midfield,29,Botswana,18,13,5,9,241,130,9399,6,2,11,4,39,25,2014,2026
+847432,Babacar Sarr,12721,Ittihad Tanger,Defensive Midfield,29,Senegal,29,8,7,11,192,130,9928,10,5,8,2,18,0,2017,2026
+353875,Gape Edwin Mohutsiwa,12721,Ittihad Tanger,Defensive Midfield,29,Botswana,18,13,5,9,243,132,9520,6,2,11,4,39,27,2014,2026
 409472,Ousama Siddiki,12721,Ittihad Tanger,Right Winger,28,Morocco,77,10,7,10,309,197,9513,18,15,15,3,46,0,2016,2026
 331169,Senad Jarovic,12721,Ittihad Tanger,Centre-Forward,28,Germany,99,13,16,27,442,268,15820,80,28,12,5,44,0,2014,2026
 1401866,Ibrahima Dieng,12721,Ittihad Tanger,Centre-Forward,21,Senegal,31,5,3,3,123,24,1931,4,2,12,4,2,4,2022,2026
@@ -748,7 +748,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 692590,Mohssine Rabja,4697,KACM Marrakech,Centre-Back,32,Morocco,20,11,11,7,184,117,9599,11,2,7,3,22,0,2013,2026
 806170,Aboubacar Camara,4697,KACM Marrakech,Centre-Back,25,Guinea,6,8,7,13,188,119,9270,3,0,9,3,15,0,2019,2026
 1239727,Reda Ech-Chgraoui,14462,Difaâ El Jadida,Right Winger,26,Morocco,5,3,2,4,18,10,797,0,1,0,0,2,0,2024,2026
-862363,Abdellah Haimoud,4697,KACM Marrakech,Central Midfield,25,Morocco,13,7,4,10,236,134,6660,3,6,9,1,17,4,2020,2026
+862363,Abdellah Haimoud,4697,KACM Marrakech,Central Midfield,25,Morocco,13,7,4,11,239,137,6863,3,6,9,1,17,4,2020,2026
 1048590,Mahmoud El Kayssoumi,4697,KACM Marrakech,Attacking Midfield,24,Morocco,16,4,3,4,98,17,620,0,0,0,0,1,0,2022,2026
 1133040,Mohamed Dadssi,4697,KACM Marrakech,Attacking Midfield,27,Morocco,88,4,2,3,17,11,596,3,0,0,0,2,0,2023,2026
 1337453,Wassim Mellouk,79389,Union Touarga Sportif,Left-Back,21,Morocco,0,3,2,4,70,4,135,0,0,0,0,1,0,2024,2026
@@ -772,16 +772,18 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1387850,Mouad Rahni,74953,Renaissance Zemamra,Left Winger,21,Morocco,18,3,3,4,19,5,219,0,0,0,0,0,0,2024,2026
 1567663,Issam Jaafra,74953,Renaissance Zemamra,Right Winger,23,Morocco,20,1,1,1,7,2,28,0,0,0,0,0,0,2026,2026
 1339257,Amine El Moutaouakil,74953,Renaissance Zemamra,Centre-Forward,22,Morocco,30,3,2,3,46,2,22,0,0,0,0,1,0,2024,2026
-111538,Gabaski,9100,Moghreb Atlético Tétouan,Goalkeeper,37,Egypt,22,18,6,17,808,315,28415,0,0,0,0,23,19,2008,2026
+111538,Gabaski,9100,Moghreb Atlético Tétouan,Goalkeeper,37,Egypt,22,18,6,17,808,316,28505,0,0,0,0,23,19,2008,2026
 738954,Said Lamaiz,9100,Moghreb Atlético Tétouan,Goalkeeper,26,Morocco,0,8,2,3,151,8,720,0,0,0,0,2,0,2019,2026
 673509,Ghofrane Naouali,9100,Moghreb Atlético Tétouan,Left-Back,27,Tunisia,57,9,2,7,245,115,8869,6,10,3,0,21,0,2018,2026
-1608801,Wissam Erbate,9100,Moghreb Atlético Tétouan,Defender,20,Morocco,0,1,1,1,5,5,450,0,0,0,0,0,0,2026,2026
+1608801,Wissam Erbate,9100,Moghreb Atlético Tétouan,Defender,20,Morocco,0,1,1,1,7,6,540,0,0,0,0,0,0,2026,2026
+1264462,Youssef El Maataoui,9100,Moghreb Atlético Tétouan,Centre-Back,0,Morocco,0,2,2,1,2,1,1,0,0,0,0,0,0,2020,2026
 1334368,Akram Eddaoudi,9100,Moghreb Atlético Tétouan,Right-Back,22,Morocco,0,2,2,3,45,8,646,0,1,0,0,0,0,2024,2026
 174344,Fayçal Fajr,9100,Moghreb Atlético Tétouan,Central Midfield,38,Morocco,99,18,11,25,856,640,48268,69,103,266,90,74,51,2009,2026
 775243,Rida Chahid,9100,Moghreb Atlético Tétouan,Central Midfield,21,Morocco,10,7,6,10,217,74,3404,6,9,9,2,4,0,2020,2026
 1401773,Seydi Diouck,9100,Moghreb Atlético Tétouan,Central Midfield,18,Senegal,0,3,2,3,71,17,700,1,0,0,0,1,2,2024,2026
 1275264,Aymane Zerri,9100,Moghreb Atlético Tétouan,Midfield,22,Morocco,0,4,1,3,49,13,1007,0,0,0,0,1,0,2023,2026
 1371506,Yassin Crachna,9100,Moghreb Atlético Tétouan,Midfield,22,Morocco,0,2,1,3,24,3,48,0,0,0,0,0,0,2024,2026
+1628510,Ayman Azzouzi,9100,Moghreb Atlético Tétouan,Midfield,0,Morocco,0,1,1,1,1,0,0,0,0,0,0,0,0,2026,2026
 1460484,Aboubacar Konate,9100,Moghreb Atlético Tétouan,Attacking Midfield,24,Cote d'Ivoire,23,2,2,2,11,2,180,0,0,0,0,0,0,2025,2026
 1133030,Mounir Habach,9100,Moghreb Atlético Tétouan,Centre-Forward,26,Morocco,95,7,4,6,100,12,642,0,1,0,0,1,0,2018,2026
 1332318,Ali Salam,9100,Moghreb Atlético Tétouan,Centre-Forward,0,Morocco,0,3,1,3,43,4,74,0,0,0,0,0,0,2024,2026
@@ -797,7 +799,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 922104,Soufiane El Azhari,85473,Amal Tiznit,Attacking Midfield,29,Morocco,21,5,4,6,33,6,381,1,0,0,0,0,0,2021,2026
 1102878,Nourddine Komh,85473,Amal Tiznit,Defensive Midfield,32,Morocco,8,7,2,4,20,10,510,0,2,0,0,0,2,2016,2026
 1072048,Hatim Siouahe,59814,Widad Témara,Goalkeeper,22,Morocco,80,5,2,5,126,4,360,0,0,0,0,0,2,2021,2026
-1056145,Zakaria Labib,59814,Widad Témara,Left-Back,23,Morocco,19,6,3,7,178,53,2843,1,3,1,0,4,16,2021,2026
+1056145,Zakaria Labib,59814,Widad Témara,Left-Back,23,Morocco,19,6,3,7,178,54,2906,1,4,1,0,4,16,2021,2026
 1153103,Imad Babassa,59814,Widad Témara,Centre-Back,21,Morocco,6,4,2,5,76,8,609,0,1,0,0,1,2,2022,2026
 1339705,Ayoub Belcadi,59814,Widad Témara,Centre-Back,22,Morocco,30,3,2,3,19,7,630,0,0,0,0,0,0,2024,2026
 593428,Karim Ait Mohamed,59814,Widad Témara,Central Midfield,26,Morocco,5,10,4,5,225,93,5955,4,5,6,1,5,1,2017,2026

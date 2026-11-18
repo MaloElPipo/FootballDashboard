@@ -2592,9 +2592,9 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1550865,Elías Bentancor,14758,Racing Club de Montevideo,2025,URU1,20,Centre-Back,20,Uruguay,0,0,0,0
 1378285,Matías Unyicio,14758,Racing Club de Montevideo,2025,URU1,27,Right-Back,19,Argentina,0,0,0,0
 1343080,Yuri Oyarzo,14758,Racing Club de Montevideo,2025,URU1,37,Left Midfield,18,Uruguay,14,14,2,695
+577258,Agustín Álvarez,14758,Racing Club de Montevideo,2025,URU1,0,Defensive Midfield,25,Uruguay,9,9,0,583
 657421,Felipe Cairus,14758,Racing Club de Montevideo,2025,URU1,0,Central Midfield,26,Uruguay,15,15,1,1241
 741548,Álex Vázquez,14758,Racing Club de Montevideo,2025,URU1,39,Attacking Midfield,24,Uruguay,14,14,2,994
-577258,Agustín Álvarez,14758,Racing Club de Montevideo,2025,URU1,0,Defensive Midfield,25,Uruguay,9,9,0,583
 577261,Erik De Los Santos,14758,Racing Club de Montevideo,2025,URU1,0,Central Midfield,27,Uruguay,15,14,0,863
 1371375,Juan Pablo Bosca,14758,Racing Club de Montevideo,2025,URU1,5,Defensive Midfield,21,Uruguay,10,9,0,559
 1291056,Agustín De la Cuesta,14758,Racing Club de Montevideo,2025,URU1,34,Defensive Midfield,20,Argentina,0,0,0,0
@@ -2603,7 +2603,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 147139,José Varela,14758,Racing Club de Montevideo,2025,URU1,7,Central Midfield,38,Uruguay,5,3,0,24
 1236728,Rodrigo Teliz,14758,Racing Club de Montevideo,2025,URU1,0,Central Midfield,21,Uruguay,0,0,0,0
 1387965,Lucca Loprete,14758,Racing Club de Montevideo,2025,URU1,8,Defensive Midfield,20,Uruguay,3,0,0,0
-802260,Esteban Da Silva,14758,Racing Club de Montevideo,2025,URU1,10,Right Winger,25,Uruguay,15,14,1,791
+802260,Esteban Da Silva,14758,Racing Club de Montevideo,2025,URU1,10,Second Striker,25,Uruguay,15,14,1,791
 1035544,Sebastián da Silva,14758,Racing Club de Montevideo,2025,URU1,9,Centre-Forward,24,Uruguay,11,11,1,814
 1374858,Tomás Habib,14758,Racing Club de Montevideo,2025,URU1,18,Centre-Forward,24,Argentina,14,14,4,916
 878536,Bautista Tomatis,14758,Racing Club de Montevideo,2025,URU1,0,Centre-Forward,22,Argentina,14,10,1,258
@@ -2632,7 +2632,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1291056,Agustín De la Cuesta,14758,Racing Club de Montevideo,2026,URU1,34,Defensive Midfield,20,Argentina,0,0,0,0
 147139,José Varela,14758,Racing Club de Montevideo,2026,URU1,7,Central Midfield,38,Uruguay,0,0,0,0
 1387965,Lucca Loprete,14758,Racing Club de Montevideo,2026,URU1,8,Defensive Midfield,20,Uruguay,0,0,0,0
-802260,Esteban Da Silva,14758,Racing Club de Montevideo,2026,URU1,10,Right Winger,25,Uruguay,0,0,0,0
+802260,Esteban Da Silva,14758,Racing Club de Montevideo,2026,URU1,10,Second Striker,25,Uruguay,0,0,0,0
 1035544,Sebastián da Silva,14758,Racing Club de Montevideo,2026,URU1,9,Centre-Forward,24,Uruguay,0,0,0,0
 1374858,Tomás Habib,14758,Racing Club de Montevideo,2026,URU1,18,Centre-Forward,24,Argentina,0,0,0,0
 1390952,Iván Manzur,14758,Racing Club de Montevideo,2026,URU1,81,Centre-Forward,21,Argentina,0,0,0,0
@@ -2877,8 +2877,8 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 338889,Brian Lozano,2619,Defensor Sporting Club,2025,URU1,0,Left Winger,32,Uruguay,12,11,0,332
 1276028,Alan Torterolo,2619,Defensor Sporting Club,2025,URU1,22,Right Winger,18,Uruguay,14,14,0,612
 318843,Facundo Castro,2619,Defensor Sporting Club,2025,URU1,77,Right Winger,31,Uruguay,11,11,2,648
-1241876,Lautaro Navarro,2619,Defensor Sporting Club,2025,URU1,99,Centre-Forward,18,Uruguay,12,5,0,94
 1029760,Juan Pablo Goicochea,2619,Defensor Sporting Club,2025,URU1,0,Centre-Forward,21,Peru,11,5,0,182
+1241876,Lautaro Navarro,2619,Defensor Sporting Club,2025,URU1,99,Centre-Forward,18,Uruguay,12,5,0,94
 1039040,Nicolás Medina,2619,Defensor Sporting Club,2025,URU1,7,Right Winger,23,Argentina,3,3,0,85
 1425952,Nicolás Scotti,2619,Defensor Sporting Club,2025,URU1,21,Left Winger,16,Uruguay,2,0,0,0
 1237430,Santino Bruschi,2619,Defensor Sporting Club,2025,URU1,0,Right Winger,20,Uruguay,11,4,0,56
@@ -2921,7 +2921,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 860952,Kevin Rolón,17428,CA Juventud,2025,URU1,8,Left-Back,25,Uruguay,0,0,0,0
 1511509,Franco Risso,17428,CA Juventud,2025,URU1,28,Centre-Back,23,Uruguay,13,10,0,792
 1390125,Ignacio Mujica,17428,CA Juventud,2025,URU1,25,Right-Back,20,Uruguay,9,7,0,451
-657752,Axel Prado,17428,CA Juventud,2025,URU1,0,Centre-Back,23,Uruguay,2,1,0,90
+657752,Axel Prado,17428,CA Juventud,2025,URU1,0,Centre-Back,24,Uruguay,2,1,0,90
 1512618,Mauricio Rodríguez,17428,CA Juventud,2025,URU1,18,Right-Back,21,Uruguay,4,2,0,95
 77153,Emmanuel Más,17428,CA Juventud,2025,URU1,23,Left-Back,37,Argentina,11,9,0,724
 54935,Martín Cáceres,17428,CA Juventud,2025,URU1,4,Centre-Back,39,Uruguay,8,8,0,644
@@ -2944,7 +2944,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1115612,Bruno Larregui,17428,CA Juventud,2025,URU1,10,Centre-Forward,25,Uruguay,7,7,0,315
 811982,Marcelo Pérez,17428,CA Juventud,2025,URU1,0,Centre-Forward,25,Paraguay,9,5,0,217
 989203,Agustín Alaniz,17428,CA Juventud,2025,URU1,7,Right Winger,24,Uruguay,10,9,0,388
-1196340,Pablo Lago,17428,CA Juventud,2025,URU1,11,Right Winger,19,Uruguay,13,11,0,488
+1196340,Pablo Lago,17428,CA Juventud,2025,URU1,11,Right Winger,20,Uruguay,13,11,0,488
 857352,Sebastián Guerrero,17428,CA Juventud,2025,URU1,0,Centre-Forward,26,Uruguay,10,4,0,84
 1228248,Bruno Arady,17428,CA Juventud,2025,URU1,20,Left Winger,19,Uruguay,0,0,0,0
 970867,Renzo Sánchez,17428,CA Juventud,2025,URU1,0,Right Winger,22,Uruguay,3,3,0,83
@@ -2976,7 +2976,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 868491,Alejo Cruz,17428,CA Juventud,2026,URU1,15,Left Winger,26,Uruguay,0,0,0,0
 1115612,Bruno Larregui,17428,CA Juventud,2026,URU1,10,Centre-Forward,25,Uruguay,0,0,0,0
 989203,Agustín Alaniz,17428,CA Juventud,2026,URU1,7,Right Winger,24,Uruguay,0,0,0,0
-1196340,Pablo Lago,17428,CA Juventud,2026,URU1,11,Right Winger,19,Uruguay,0,0,0,0
+1196340,Pablo Lago,17428,CA Juventud,2026,URU1,11,Right Winger,20,Uruguay,0,0,0,0
 1228248,Bruno Arady,17428,CA Juventud,2026,URU1,20,Left Winger,19,Uruguay,0,0,0,0
 389538,Martín Boselli,17428,CA Juventud,2026,URU1,27,Left Winger,32,Uruguay,0,0,0,0
 982184,Bruno Antúnez,18074,CA Boston River,2025,URU1,1,Goalkeeper,23,Uruguay,15,14,0,1260
@@ -3007,6 +3007,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 294894,Leo Suárez,18074,CA Boston River,2025,URU1,8,Right Winger,30,Argentina,0,0,0,0
 627296,Francisco Bonfiglio,18074,CA Boston River,2025,URU1,9,Centre-Forward,24,Argentina,15,15,3,689
 463444,Leandro Suhr,18074,CA Boston River,2025,URU1,16,Right Winger,29,Uruguay,12,12,2,822
+481272,Rodrigo Piñeiro,18074,CA Boston River,2025,URU1,0,Right Winger,27,Uruguay,0,0,0,0
 799949,Alexander González,18074,CA Boston River,2025,URU1,0,Centre-Forward,24,Uruguay,15,13,1,652
 216375,Felipe Avenatti,18074,CA Boston River,2025,URU1,20,Centre-Forward,33,Uruguay,0,0,0,0
 815381,Nicolás Siri,18074,CA Boston River,2025,URU1,27,Centre-Forward,22,Uruguay,0,0,0,0
@@ -3039,6 +3040,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 294894,Leo Suárez,18074,CA Boston River,2026,URU1,8,Right Winger,30,Argentina,0,0,0,0
 627296,Francisco Bonfiglio,18074,CA Boston River,2026,URU1,9,Centre-Forward,24,Argentina,0,0,0,0
 463444,Leandro Suhr,18074,CA Boston River,2026,URU1,16,Right Winger,29,Uruguay,0,0,0,0
+481272,Rodrigo Piñeiro,18074,CA Boston River,2026,URU1,0,Right Winger,27,Uruguay,0,0,0,0
 216375,Felipe Avenatti,18074,CA Boston River,2026,URU1,20,Centre-Forward,33,Uruguay,0,0,0,0
 815381,Nicolás Siri,18074,CA Boston River,2026,URU1,27,Centre-Forward,22,Uruguay,0,0,0,0
 1568703,Facundo Aristegui,18074,CA Boston River,2026,URU1,13,Right Winger,19,Uruguay,0,0,0,0
@@ -3408,7 +3410,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 997817,Esteban Crucci,2403,Montevideo Wanderers,2025,URU1,0,Centre-Forward,20,Uruguay,4,1,0,30
 599568,Santiago Ormeño,2403,Montevideo Wanderers,2025,URU1,9,Centre-Forward,32,Peru,0,0,0,0
 1270629,Juan Rodríguez,2403,Montevideo Wanderers,2025,URU1,0,Right Winger,20,Uruguay,1,0,0,0
-1319375,Pablo Suárez,2403,Montevideo Wanderers,2025,URU1,0,Right Winger,20,Uruguay,10,3,0,55
+1319375,Pablo Suárez,2403,Montevideo Wanderers,2025,URU1,0,Right Winger,21,Uruguay,10,3,0,55
 1240648,Santiago Guzmán,2403,Montevideo Wanderers,2025,URU1,20,Second Striker,22,Uruguay,13,3,0,24
 970867,Renzo Sánchez,2403,Montevideo Wanderers,2025,URU1,26,Right Winger,22,Uruguay,0,0,0,0
 1500100,Roque Ricca,2403,Montevideo Wanderers,2025,URU1,0,Centre-Forward,18,Uruguay,8,3,0,63
@@ -3450,7 +3452,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 801653,Fernando Souza,20189,Cerro Largo FC,2025,URU1,0,Right-Back,28,Uruguay,6,4,0,229
 864983,Gabriel Chocobar,20189,Cerro Largo FC,2025,URU1,0,Centre-Back,27,Argentina,8,2,0,90
 1054449,Julián Pou,20189,Cerro Largo FC,2025,URU1,0,Right-Back,22,Uruguay,13,6,0,212
-657752,Axel Prado,20189,Cerro Largo FC,2025,URU1,19,Centre-Back,23,Uruguay,0,0,0,0
+657752,Axel Prado,20189,Cerro Largo FC,2025,URU1,19,Centre-Back,24,Uruguay,0,0,0,0
 1292834,Mateo Monserrat,20189,Cerro Largo FC,2025,URU1,0,Left-Back,21,Argentina,6,6,0,286
 1512632,Facundo Alvez,20189,Cerro Largo FC,2025,URU1,27,Right-Back,20,Uruguay,2,0,0,0
 1567497,Facundo Acosta,20189,Cerro Largo FC,2025,URU1,16,Left-Back,20,Uruguay,0,0,0,0
@@ -3485,7 +3487,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 881643,Santiago Franca,20189,Cerro Largo FC,2026,URU1,20,Left-Back,24,Uruguay,0,0,0,0
 893585,Martín Gianoli,20189,Cerro Largo FC,2026,URU1,32,Centre-Back,26,Uruguay,0,0,0,0
 1247310,Nicolás Ramos,20189,Cerro Largo FC,2026,URU1,28,Centre-Back,21,Uruguay,0,0,0,0
-657752,Axel Prado,20189,Cerro Largo FC,2026,URU1,19,Centre-Back,23,Uruguay,0,0,0,0
+657752,Axel Prado,20189,Cerro Largo FC,2026,URU1,19,Centre-Back,24,Uruguay,0,0,0,0
 1292834,Mateo Monserrat,20189,Cerro Largo FC,2026,URU1,0,Left-Back,21,Argentina,0,0,0,0
 1512632,Facundo Alvez,20189,Cerro Largo FC,2026,URU1,27,Right-Back,20,Uruguay,0,0,0,0
 1567497,Facundo Acosta,20189,Cerro Largo FC,2026,URU1,16,Left-Back,20,Uruguay,0,0,0,0
@@ -3509,11 +3511,11 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1012955,Lucas Píriz,20189,Cerro Largo FC,2026,URU1,9,Left Winger,24,Uruguay,0,0,0,0
 72578,Mauro Goicoechea,1306,Danubio FC,2025,URU1,1,Goalkeeper,38,Uruguay,15,15,0,1350
 1236474,Kevin Martínez,1306,Danubio FC,2025,URU1,32,Goalkeeper,20,Uruguay,15,0,0,0
-358736,Joaquín Pereyra,1306,Danubio FC,2025,URU1,0,Centre-Back,32,Uruguay,14,12,0,887
 189458,Emiliano Velázquez,1306,Danubio FC,2025,URU1,2,Centre-Back,32,Uruguay,14,14,0,1146
 1379674,Facundo Balatti,1306,Danubio FC,2025,URU1,18,Right-Back,18,Uruguay,12,10,0,507
 440835,Mauro Brasil,1306,Danubio FC,2025,URU1,19,Centre-Back,27,Uruguay,0,0,0,0
 832090,Tomás Cavanagh,1306,Danubio FC,2025,URU1,31,Left-Back,25,Argentina,12,12,0,920
+358736,Joaquín Pereyra,1306,Danubio FC,2025,URU1,0,Centre-Back,32,Uruguay,14,12,0,887
 1247963,Mateo Rinaldi,1306,Danubio FC,2025,URU1,4,Centre-Back,26,Argentina,13,5,0,329
 130197,Camilo Mayada,1306,Danubio FC,2025,URU1,0,Right-Back,35,Uruguay,15,15,0,1314
 199856,Leandro Sosa,1306,Danubio FC,2025,URU1,6,Left-Back,35,Uruguay,14,13,0,747

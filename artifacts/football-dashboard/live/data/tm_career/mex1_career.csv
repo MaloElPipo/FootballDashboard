@@ -200,7 +200,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 639390,Facundo Almada,2018,AR1N,1418,False,6,3,0,270,0,0,1,1,0
 639390,Facundo Almada,2017,ARY3,14838,False,7,2,0,180,0,0,0,0,0
 639390,Facundo Almada,2016,ARY3,14838,False,24,1,0,13,0,0,0,0,0
-424984,Lucas Merolla,2025,PR1C,1214,False,19,6,0,450,1,0,4,3,0
+424984,Lucas Merolla,2025,PYC1,1214,False,3,2,0,84,0,0,0,0,0
+424984,Lucas Merolla,2025,PR1C,1214,False,19,8,0,576,1,0,5,3,0
 424984,Lucas Merolla,2025,MEXA,82696,False,17,13,0,761,0,2,4,0,5
 424984,Lucas Merolla,2025,MEX1,82696,False,17,14,0,1094,0,0,10,1,5
 424984,Lucas Merolla,2025,CLI,1214,False,2,0,0,0,0,0,0,0,0
@@ -710,7 +711,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 945134,Alberto Herrera,2020,M20A,25129,False,17,16,0,1336,2,0,0,0,3
 945134,Alberto Herrera,2019,M20C,25929,False,10,1,0,2,0,0,0,0,0
 945134,Alberto Herrera,2019,M20A,25929,False,18,4,0,245,0,0,0,0,1
-596906,Alan Torres,2026,MXBA,100124,False,2,1,0,90,0,0,0,0,1
+596906,Alan Torres,2026,MXBA,100124,False,4,1,0,90,0,0,0,0,1
 596906,Alan Torres,2026,MEXB,100124,False,14,13,0,1097,2,1,11,4,4
 596906,Alan Torres,2025,MEXA,82696,False,17,4,0,95,0,0,0,0,0
 596906,Alan Torres,2025,MEX1,82696,False,17,0,0,0,0,0,0,0,0
@@ -834,7 +835,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1101843,Said Godínez,2022,M20C,83520,False,1,1,0,45,0,0,0,0,0
 1101843,Said Godínez,2021,M20C,83520,False,1,0,0,0,0,0,0,0,0
 950872,Daniel Hernández,2026,MXBA,42781,False,2,1,0,16,0,0,0,0,0
-950872,Daniel Hernández,2026,MEXB,42781,False,15,9,0,352,0,0,7,2,1
+950872,Daniel Hernández,2026,MEXB,42781,False,15,10,0,372,0,0,7,2,1
 950872,Daniel Hernández,2025,MEXA,82696,False,17,12,0,674,0,1,8,0,0
 950872,Daniel Hernández,2025,MEX1,82696,False,17,9,0,251,1,0,2,1,0
 950872,Daniel Hernández,2024,USMX,82696,False,3,3,0,119,0,0,2,1,0
@@ -873,6 +874,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 950872,Daniel Hernández,2019,M20A,25929,False,14,2,0,32,0,0,0,0,0
 283473,Yoel Bárcenas,2026,GR1,47,False,9,3,3,113,1,0,3,2,1
 283473,Yoel Bárcenas,2026,FS,3577,True,3,0,3,0,0,0,0,0,0
+283473,Yoel Bárcenas,2026,CNNF,3577,True,2,1,0,45,0,0,0,0,1
 283473,Yoel Bárcenas,2025,MEXA,82696,False,17,13,1,857,0,0,11,4,1
 283473,Yoel Bárcenas,2025,MEX1,82696,False,17,17,0,1398,3,1,19,10,2
 283473,Yoel Bárcenas,2025,FS,3577,True,7,5,0,286,1,0,2,2,0
@@ -959,7 +961,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 283473,Yoel Bárcenas,2011,PN1A,17522,False,17,3,0,95,0,0,0,0,0
 594561,Dudu Teodora,2025,MEXA,82696,False,17,12,0,384,0,1,6,0,1
 594561,Dudu Teodora,2025,MEX1,82696,False,17,17,0,1306,1,2,16,6,1
-594561,Dudu Teodora,2025,BRA2,8718,False,20,9,0,218,0,0,3,0,1
+594561,Dudu Teodora,2025,BRA2,8718,False,21,9,0,218,0,0,3,0,1
 594561,Dudu Teodora,2024,USMX,82696,False,3,3,0,117,0,1,0,0,0
 594561,Dudu Teodora,2024,POPO,982,False,1,0,1,0,0,0,0,0,0
 594561,Dudu Teodora,2024,POCP,982,False,1,1,0,22,0,0,0,0,0
@@ -1019,7 +1021,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 570547,Brian Rubio,2017,MEX1,1804,False,10,0,0,0,0,0,0,0,0
 548298,Fábio Gomes,2025,MEXA,82696,False,15,13,0,1137,3,0,24,7,2
 548298,Fábio Gomes,2025,MEX1,82696,False,17,10,0,423,1,2,6,3,0
-548298,Fábio Gomes,2025,BRA2,28022,False,19,13,0,832,2,2,19,2,0
+548298,Fábio Gomes,2025,BRA2,28022,False,20,13,0,832,2,2,19,2,0
 548298,Fábio Gomes,2024,USMX,82696,False,3,3,0,219,2,0,5,3,0
 548298,Fábio Gomes,2024,CS,6878,False,1,0,0,0,0,0,0,0,0
 548298,Fábio Gomes,2024,CLI,6878,False,6,6,0,410,4,0,11,6,1
@@ -1288,7 +1290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1118680,Anwar Ben Rhouma,2023,M23A,110456,False,5,4,0,67,1,0,0,0,0
 1118680,Anwar Ben Rhouma,2022,USL,62204,False,15,1,0,4,0,0,0,0,1
 1118680,Anwar Ben Rhouma,2022,MLSP,62204,False,2,0,0,0,0,0,0,0,0
-1029149,Gabriel López,2026,MXBA,143245,False,2,1,0,16,0,0,0,0,0
+1029149,Gabriel López,2026,MXBA,143245,False,4,1,0,16,0,0,0,0,0
 1029149,Gabriel López,2026,MEXB,143245,False,15,13,0,464,1,1,16,6,0
 1029149,Gabriel López,2025,MEXA,82696,False,17,0,0,0,0,0,0,0,0
 1029149,Gabriel López,2025,MEX1,82696,False,17,12,0,186,2,1,9,5,1
@@ -1552,7 +1554,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 295424,Ulises Rivas,2021,POMX,1403,False,3,0,0,0,0,0,0,0,0
 295424,Ulises Rivas,2021,MEXA,1403,False,17,1,0,12,0,0,0,0,0
 295424,Ulises Rivas,2021,MEX1,1403,False,17,12,0,611,0,0,5,3,2
-295424,Ulises Rivas,2021,M20A,25930,False,5,5,0,405,0,0,0,0,0
+295424,Ulises Rivas,2021,M20A,25930,False,12,5,0,405,0,0,0,0,0
 295424,Ulises Rivas,2021,CCL,1403,False,2,1,0,45,0,0,0,0,0
 295424,Ulises Rivas,2020,USMX,1403,False,2,0,0,0,0,0,0,0,0
 295424,Ulises Rivas,2020,POMX,1403,False,1,0,1,0,0,0,0,0,0
@@ -1567,7 +1569,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 295424,Ulises Rivas,2018,MXCA,1403,False,4,3,0,225,0,0,0,0,1
 295424,Ulises Rivas,2018,MEXA,1403,False,17,4,0,136,0,0,0,0,0
 295424,Ulises Rivas,2018,MEX1,1403,False,17,7,0,464,0,0,1,1,0
-295424,Ulises Rivas,2018,M20A,25930,False,4,4,0,360,1,0,0,0,0
+295424,Ulises Rivas,2018,M20A,25930,False,12,4,0,360,1,0,0,0,0
 295424,Ulises Rivas,2018,CCL,1403,False,6,5,0,198,1,0,0,0,1
 295424,Ulises Rivas,2017,POME,1403,False,6,0,0,0,0,0,0,0,0
 295424,Ulises Rivas,2017,MXSC,1403,False,1,1,0,12,0,0,0,0,0
@@ -1613,7 +1615,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 295424,Ulises Rivas,2013,M20A,25930,False,17,4,0,339,0,0,0,0,0
 295424,Ulises Rivas,2013,FS,23134,True,1,1,0,90,0,0,0,0,0
 295424,Ulises Rivas,2013,CLI,1403,False,8,1,0,14,0,0,0,0,0
-295424,Ulises Rivas,2012,M20A,25930,False,2,2,0,153,0,0,0,0,0
+295424,Ulises Rivas,2012,M20A,25930,False,13,2,0,153,0,0,0,0,0
 295424,Ulises Rivas,2012,CO17,23134,True,5,4,0,315,0,0,0,0,0
 295424,Ulises Rivas,2012,17WC,23134,True,7,7,0,629,1,1,0,0,2
 295424,Ulises Rivas,2011,TDV,25930,False,2,2,0,64,0,0,0,0,0
@@ -1622,7 +1624,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 656344,Homer Martínez,2025,MEXA,49283,False,15,14,0,1145,0,1,10,1,4
 656344,Homer Martínez,2025,MEX1,49283,False,17,14,0,612,0,0,6,4,4
 656344,Homer Martínez,2025,COPO,10503,False,1,1,0,90,0,0,0,0,1
-656344,Homer Martínez,2025,COL1,10503,False,18,17,0,1286,0,1,20,6,8
+656344,Homer Martínez,2025,COL1,10503,False,19,18,0,1358,0,1,22,7,8
 656344,Homer Martínez,2025,CLI,10503,False,2,2,0,166,0,0,5,2,1
 656344,Homer Martínez,2024,USMX,49283,False,3,3,0,270,0,0,1,0,0
 656344,Homer Martínez,2024,COLP,10093,False,20,17,2,1271,0,1,21,4,7
@@ -1669,7 +1671,29 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 656344,Homer Martínez,2016,CO22,18127,False,16,15,0,1164,2,0,0,0,5
 656344,Homer Martínez,2016,C2P2,18127,False,2,2,0,180,0,0,0,0,0
 656344,Homer Martínez,2015,COL1,11854,False,1,0,0,0,0,0,0,0,0
-721027,Ángel Robles,2026,MXBA,100124,False,2,1,0,63,0,0,0,0,0
+1118587,Franco Rossi,2026,MEXA,1804,False,2,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2025,POME,1804,False,2,2,0,32,0,0,1,0,0
+1118587,Franco Rossi,2025,MXSC,1804,False,1,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2025,MEX1,1804,False,16,10,0,361,1,0,15,4,1
+1118587,Franco Rossi,2025,CCL,1804,False,7,2,0,13,0,0,0,0,0
+1118587,Franco Rossi,2025,BRC,17776,False,2,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2025,BRA1,17776,False,14,7,0,163,0,0,8,3,0
+1118587,Franco Rossi,2024,URUI,20189,False,7,6,0,173,3,0,0,0,1
+1118587,Franco Rossi,2024,URUC,20189,False,15,15,0,1286,6,2,0,0,3
+1118587,Franco Rossi,2024,URU1,20189,False,15,10,1,424,1,1,0,0,1
+1118587,Franco Rossi,2024,URP1,20189,False,2,2,0,73,0,0,0,0,0
+1118587,Franco Rossi,2024,CS,20189,False,9,5,0,190,0,0,2,0,0
+1118587,Franco Rossi,2023,URU2,17494,False,26,25,1,1367,5,0,0,0,3
+1118587,Franco Rossi,2023,UR2T,17494,False,6,3,0,47,0,0,0,0,0
+1118587,Franco Rossi,2022,URU2,17494,False,26,15,0,638,1,1,0,0,1
+1118587,Franco Rossi,2022,URP1,17494,False,1,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2022,UR2T,17494,False,6,6,0,106,1,0,0,0,0
+1118587,Franco Rossi,2021,URUI,37535,False,7,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2021,URUC,37535,False,15,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2021,URU1,37535,False,15,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2021,URP1,37535,False,3,0,0,0,0,0,0,0,0
+1118587,Franco Rossi,2021,CLI,37535,False,2,0,0,0,0,0,0,0,0
+721027,Ángel Robles,2026,MXBA,100124,False,4,1,0,63,0,0,0,0,0
 721027,Ángel Robles,2026,MEXB,100124,False,14,13,0,900,7,1,46,18,0
 721027,Ángel Robles,2025,MXBC,100124,False,2,1,0,27,0,0,0,0,0
 721027,Ángel Robles,2025,MEXA,5662,False,17,1,0,1,0,0,0,0,0
@@ -1710,32 +1734,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 721027,Ángel Robles,2019,M20A,25129,False,18,16,0,1281,4,0,0,0,0
 721027,Ángel Robles,2019,CPMX,5662,False,2,1,0,22,0,0,0,0,0
 721027,Ángel Robles,2018,M20C,25129,False,16,6,0,190,0,0,0,0,0
-1118587,Franco Rossi,2026,MEXA,1804,False,2,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2025,POME,1804,False,2,2,0,32,0,0,1,0,0
-1118587,Franco Rossi,2025,MXSC,1804,False,1,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2025,MEX1,1804,False,16,10,0,361,1,0,15,4,1
-1118587,Franco Rossi,2025,CCL,1804,False,7,2,0,13,0,0,0,0,0
-1118587,Franco Rossi,2025,BRC,17776,False,2,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2025,BRA1,17776,False,13,7,0,163,0,0,8,3,0
-1118587,Franco Rossi,2024,URUI,20189,False,7,6,0,173,3,0,0,0,1
-1118587,Franco Rossi,2024,URUC,20189,False,15,15,0,1286,6,2,0,0,3
-1118587,Franco Rossi,2024,URU1,20189,False,15,10,1,424,1,1,0,0,1
-1118587,Franco Rossi,2024,URP1,20189,False,2,2,0,73,0,0,0,0,0
-1118587,Franco Rossi,2024,CS,20189,False,9,5,0,190,0,0,2,0,0
-1118587,Franco Rossi,2023,URU2,17494,False,26,25,1,1367,5,0,0,0,3
-1118587,Franco Rossi,2023,UR2T,17494,False,6,3,0,47,0,0,0,0,0
-1118587,Franco Rossi,2022,URU2,17494,False,26,15,0,638,1,1,0,0,1
-1118587,Franco Rossi,2022,URP1,17494,False,1,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2022,UR2T,17494,False,6,6,0,106,1,0,0,0,0
-1118587,Franco Rossi,2021,URUI,37535,False,7,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2021,URUC,37535,False,15,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2021,URU1,37535,False,15,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2021,URP1,37535,False,3,0,0,0,0,0,0,0,0
-1118587,Franco Rossi,2021,CLI,37535,False,2,0,0,0,0,0,0,0,0
 1049404,Thiago Espinosa,2026,MEXA,3631,False,1,0,0,0,0,0,0,0,0
 1049404,Thiago Espinosa,2025,URUP,861,False,1,1,0,90,1,0,0,0,0
 1049404,Thiago Espinosa,2025,URUI,861,False,1,0,0,0,0,0,0,0,0
-1049404,Thiago Espinosa,2025,URUC,861,False,13,11,1,718,0,0,0,0,0
+1049404,Thiago Espinosa,2025,URUC,861,False,14,12,1,741,0,0,0,0,0
 1049404,Thiago Espinosa,2025,URU1,14758,False,1,1,0,73,0,1,0,0,0
 1049404,Thiago Espinosa,2025,URP1,861,False,4,1,0,88,0,0,0,0,0
 1049404,Thiago Espinosa,2025,POME,3631,False,2,1,0,28,0,0,1,1,0
@@ -1755,7 +1757,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1049404,Thiago Espinosa,2022,CLIY,20054,False,5,5,0,233,0,1,0,0,1
 1049404,Thiago Espinosa,2021,FIYO,20054,False,1,0,0,0,0,0,0,0,0
 320739,Santiago Mele,2026,MEXA,2407,False,2,0,0,0,0,0,0,0,0
-320739,Santiago Mele,2026,FS,3449,True,3,1,0,90,0,0,0,0,0
+320739,Santiago Mele,2026,FS,3449,True,4,1,0,90,0,0,0,0,0
 320739,Santiago Mele,2025,POMX,2407,False,4,0,0,0,0,0,0,0,0
 320739,Santiago Mele,2025,MEXA,2407,False,17,15,0,1350,0,0,0,0,2
 320739,Santiago Mele,2025,MEX1,2407,False,17,2,0,180,0,0,0,0,0
@@ -1821,7 +1823,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 320739,Santiago Mele,2014,URUC,3829,False,15,0,0,0,0,0,0,0,0
 320739,Santiago Mele,2014,URU1,3829,False,15,0,0,0,0,0,0,0,0
 320739,Santiago Mele,2013,URUC,3829,False,15,0,0,0,0,0,0,0,0
-469855,Leonardo Sepúlveda,2026,MXBA,23505,False,2,0,0,0,0,0,0,0,0
+469855,Leonardo Sepúlveda,2026,MXBA,23505,False,4,1,0,90,0,0,0,0,1
 469855,Leonardo Sepúlveda,2026,MEXB,23505,False,13,5,0,161,0,0,4,3,1
 469855,Leonardo Sepúlveda,2026,MEXA,6711,False,2,0,0,0,0,0,0,0,0
 469855,Leonardo Sepúlveda,2025,POMX,6711,False,2,0,0,0,0,0,0,0,0
@@ -1888,7 +1890,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 871655,Piero Quispe,2020,CLI,6593,False,6,0,0,0,0,0,0,0,0
 578419,Federico Viñas,2026,MEXA,4941,False,2,0,0,0,0,0,0,0,0
 578419,Federico Viñas,2026,MEXA,1804,False,14,13,0,766,8,1,41,13,0
-578419,Federico Viñas,2026,FS,3449,True,3,2,0,158,0,2,0,0,0
+578419,Federico Viñas,2026,FS,3449,True,4,3,0,172,0,2,0,0,0
 578419,Federico Viñas,2025,USMX,1804,False,6,6,0,450,3,1,14,5,1
 578419,Federico Viñas,2025,FS,3449,True,6,5,0,275,0,3,5,0,0
 578419,Federico Viñas,2025,FIWC,3449,True,3,3,0,193,0,0,6,3,0
@@ -2165,7 +2167,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 181780,Rodrigo Dourado,2010,FS,23130,True,1,1,0,90,0,0,0,0,0
 983609,Jordan García,2026,MEXA,6709,False,13,0,0,0,0,0,0,0,0
 983609,Jordan García,2026,MEXA,4941,False,3,0,0,0,0,0,0,0,0
-983609,Jordan García,2026,FS,28266,True,1,0,0,0,0,0,0,0,0
+983609,Jordan García,2026,FS,28266,True,3,0,0,0,0,0,0,0,0
 983609,Jordan García,2025,USMX,6709,False,1,0,0,0,0,0,0,0,0
 983609,Jordan García,2025,USMX,4941,False,2,0,0,0,0,0,0,0,0
 983609,Jordan García,2025,MEX1,4941,False,17,3,0,270,0,0,0,0,1
@@ -2193,7 +2195,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 983609,Jordan García,2021,CO22,32041,False,14,0,0,0,0,0,0,0,0
 692612,Agustín Rodríguez,2026,MEXA,8590,False,2,0,0,0,0,0,0,0,0
 692612,Agustín Rodríguez,2025,URUI,17428,False,1,0,0,0,0,0,0,0,0
-692612,Agustín Rodríguez,2025,URUC,17428,False,13,2,0,74,0,0,0,0,0
+692612,Agustín Rodríguez,2025,URUC,17428,False,14,2,0,74,0,0,0,0,0
 692612,Agustín Rodríguez,2025,URP1,17428,False,6,0,0,0,0,0,0,0,0
 692612,Agustín Rodríguez,2025,POME,8590,False,2,2,0,40,0,0,0,0,0
 692612,Agustín Rodríguez,2025,MEX1,8590,False,13,10,0,293,1,0,8,1,0
@@ -2227,6 +2229,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 837619,Armando González,2026,GR1,683,False,10,7,0,251,1,0,10,4,0
 837619,Armando González,2026,FS,6303,True,4,3,0,156,0,0,3,1,0
 837619,Armando González,2026,EL,683,False,4,4,0,172,2,0,8,3,0
+837619,Armando González,2026,CNNF,6303,True,1,0,0,0,0,0,0,0,0
 837619,Armando González,2025,USMX,6711,False,3,3,0,164,0,0,2,1,0
 837619,Armando González,2025,POMX,6711,False,2,1,0,62,0,0,0,0,0
 837619,Armando González,2025,POME,6711,False,4,0,4,0,0,0,0,0,0
@@ -2259,7 +2262,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 837619,Armando González,2020,MEXB,13362,False,1,1,0,21,0,0,0,0,1
 294894,Leo Suárez,2026,MEXA,7633,False,4,0,0,0,0,0,0,0,0
 294894,Leo Suárez,2025,USMX,7633,False,3,0,0,0,0,0,0,0,0
-294894,Leo Suárez,2025,URUC,18074,False,10,4,0,136,0,1,0,0,1
+294894,Leo Suárez,2025,URUC,18074,False,11,5,0,155,0,1,0,0,1
 294894,Leo Suárez,2025,URP1,18074,False,6,3,0,118,1,0,0,0,2
 294894,Leo Suárez,2025,POME,7633,False,6,0,0,0,0,0,0,0,0
 294894,Leo Suárez,2025,MEXA,7633,False,3,0,0,0,0,0,0,0,0
@@ -2416,6 +2419,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 73396,David Ospina,2022,SAKC,18544,False,3,1,2,90,0,0,0,0,0
 73396,David Ospina,2022,SA1,18544,False,30,13,17,1170,0,1,0,0,0
 73396,David Ospina,2022,FS,3816,True,8,3,4,270,0,0,0,0,0
+73396,David Ospina,2022,ARBC,18544,False,6,0,6,0,0,0,0,0,0
 73396,David Ospina,2021,IT1,6195,False,38,31,2,2790,0,0,0,0,1
 73396,David Ospina,2021,FS,3816,True,3,0,2,0,0,0,0,0,0
 73396,David Ospina,2021,EL,6195,False,8,1,0,90,0,0,0,0,0
@@ -2497,6 +2501,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 73396,David Ospina,2007,FS,3816,True,7,0,0,0,0,0,0,0,0
 73396,David Ospina,2007,CLI,8172,False,8,7,0,558,0,0,0,0,0
 73396,David Ospina,2006,FS,3816,True,7,1,0,74,0,0,0,0,0
+73396,David Ospina,2006,FS,28266,True,1,0,0,0,0,0,0,0,0
 73396,David Ospina,2006,CS,8172,False,4,4,0,360,0,0,0,0,0
 73396,David Ospina,2006,COPA,3816,True,3,0,0,0,0,0,0,0,0
 73396,David Ospina,2006,2SAM,28266,True,9,1,0,90,0,0,0,0,0
@@ -2650,7 +2655,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 348264,Gustavo Ferrareis,2015,BRC,6600,False,6,2,0,100,0,0,0,0,0
 348264,Gustavo Ferrareis,2015,BRA1,6600,False,38,24,0,1407,2,1,35,4,2
 348264,Gustavo Ferrareis,2013,BRA1,6600,False,2,2,0,48,0,0,1,1,0
-1096389,Juan Cázares,2026,MXBA,23505,False,2,1,0,7,0,0,0,0,0
+1096389,Juan Cázares,2026,MXBA,23505,False,4,2,0,32,0,0,0,0,1
 1096389,Juan Cázares,2026,MEXB,23505,False,9,8,0,125,1,0,7,3,0
 1096389,Juan Cázares,2026,MEXA,4961,False,5,1,0,59,0,0,1,0,0
 1096389,Juan Cázares,2025,USMX,4961,False,3,0,0,0,0,0,0,0,0
@@ -2661,10 +2666,82 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1096389,Juan Cázares,2024,M191,24999,False,17,11,0,218,0,0,0,0,0
 1096389,Juan Cázares,2023,M23A,110460,False,6,2,0,56,0,0,0,0,0
 1096389,Juan Cázares,2022,M20A,23001,False,2,1,0,33,0,0,0,0,0
+189475,Carlos Gruezo,2026,MEXA,1403,False,7,2,0,152,0,0,1,0,1
+189475,Carlos Gruezo,2025,USMX,1403,False,3,2,0,98,0,0,0,0,0
+189475,Carlos Gruezo,2025,MEX1,1403,False,17,12,0,813,1,0,3,1,4
+189475,Carlos Gruezo,2024,ECUP,9855,False,6,3,0,256,0,0,0,0,1
+189475,Carlos Gruezo,2024,ECSC,9855,False,1,1,0,120,0,0,0,0,0
+189475,Carlos Gruezo,2024,ECP1,9855,False,10,10,0,718,2,2,6,4,3
+189475,Carlos Gruezo,2024,EC1N,9855,False,30,26,2,1957,2,2,26,5,10
+189475,Carlos Gruezo,2024,CLI,9855,False,12,11,1,987,0,1,7,1,6
+189475,Carlos Gruezo,2023,WMQ4,5750,True,12,7,0,484,0,0,5,0,3
+189475,Carlos Gruezo,2023,USMX,218,False,4,4,0,327,0,1,1,1,1
+189475,Carlos Gruezo,2023,MLSP,218,False,2,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2023,MLS1,218,False,34,24,7,1978,0,0,18,2,9
+189475,Carlos Gruezo,2023,FS,5750,True,5,5,0,233,0,0,3,1,3
+189475,Carlos Gruezo,2023,COPA,5750,True,4,4,0,122,0,1,0,0,0
+189475,Carlos Gruezo,2022,USMX,218,False,2,2,0,155,0,0,0,0,1
+189475,Carlos Gruezo,2022,POUS,218,False,1,1,0,85,0,0,1,0,0
+189475,Carlos Gruezo,2022,MLSP,218,False,1,1,0,11,0,0,0,0,0
+189475,Carlos Gruezo,2022,MLS1,218,False,34,28,2,2158,0,2,12,4,9
+189475,Carlos Gruezo,2022,L1,167,False,18,13,1,964,0,0,2,0,5
+189475,Carlos Gruezo,2022,FS,5750,True,6,3,2,171,0,0,0,0,0
+189475,Carlos Gruezo,2022,DFB,167,False,2,2,0,157,0,0,2,0,0
+189475,Carlos Gruezo,2021,L1,167,False,34,17,7,969,0,0,10,0,7
+189475,Carlos Gruezo,2021,FS,5750,True,6,2,0,180,0,0,3,0,1
+189475,Carlos Gruezo,2021,FIWC,5750,True,3,1,0,45,0,0,0,0,0
+189475,Carlos Gruezo,2021,DFB,167,False,2,1,0,30,0,0,2,1,0
+189475,Carlos Gruezo,2020,WMQ4,5750,True,18,16,2,1398,1,0,6,2,2
+189475,Carlos Gruezo,2020,L1,167,False,34,28,3,2092,0,0,16,0,4
+189475,Carlos Gruezo,2020,FS,5750,True,1,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2020,DFB,167,False,2,2,0,70,0,0,0,0,0
+189475,Carlos Gruezo,2020,COPA,5750,True,5,1,4,45,0,0,0,0,0
+189475,Carlos Gruezo,2019,L1,167,False,34,11,15,888,0,1,6,0,3
+189475,Carlos Gruezo,2019,FS,5750,True,5,0,5,0,0,0,0,0,0
+189475,Carlos Gruezo,2019,DFB,167,False,1,1,0,90,0,0,1,1,1
+189475,Carlos Gruezo,2018,MLSP,8816,False,2,0,2,0,0,0,0,0,0
+189475,Carlos Gruezo,2018,MLS1,8816,False,19,9,6,784,1,0,7,1,1
+189475,Carlos Gruezo,2018,FS,5750,True,10,7,0,411,0,0,0,0,2
+189475,Carlos Gruezo,2018,COPA,5750,True,3,2,0,180,0,0,0,0,1
+189475,Carlos Gruezo,2017,POUS,8816,False,1,1,0,90,0,0,0,0,1
+189475,Carlos Gruezo,2017,MLSP,8816,False,2,1,0,71,1,0,3,1,0
+189475,Carlos Gruezo,2017,MLS1,8816,False,34,31,0,2509,2,1,28,6,8
+189475,Carlos Gruezo,2017,CCL,8816,False,2,2,0,180,0,0,2,0,0
+189475,Carlos Gruezo,2016,MLSP,8816,False,3,1,0,120,0,0,0,0,0
+189475,Carlos Gruezo,2016,MLS1,8816,False,34,31,0,2613,0,3,0,0,7
+189475,Carlos Gruezo,2016,FS,5750,True,2,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2016,CCL,8816,False,8,6,0,540,1,3,0,0,1
+189475,Carlos Gruezo,2015,WMQ4,5750,True,18,2,0,123,0,0,0,0,1
+189475,Carlos Gruezo,2015,POUS,8816,False,2,2,0,180,0,0,0,0,0
+189475,Carlos Gruezo,2015,MLSP,8816,False,5,3,1,300,0,0,0,0,1
+189475,Carlos Gruezo,2015,MLS1,8816,False,34,27,3,2240,0,0,0,0,9
+189475,Carlos Gruezo,2015,L1,79,False,17,2,0,59,0,0,0,0,0
+189475,Carlos Gruezo,2015,FS,5750,True,2,2,0,89,0,0,0,0,0
+189475,Carlos Gruezo,2015,DFB,79,False,3,1,0,90,0,0,0,0,1
+189475,Carlos Gruezo,2015,CA16,5750,True,4,4,0,331,0,0,0,0,1
+189475,Carlos Gruezo,2014,L1,79,False,34,8,8,439,1,0,0,0,1
+189475,Carlos Gruezo,2014,FS,5750,True,8,4,0,68,0,0,0,0,0
+189475,Carlos Gruezo,2014,DFB,79,False,1,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2014,COPA,5750,True,3,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2013,L1,79,False,16,8,1,627,0,0,0,0,3
+189475,Carlos Gruezo,2013,FS,5750,True,3,3,0,167,0,0,0,0,0
+189475,Carlos Gruezo,2013,FIWC,5750,True,3,2,0,97,0,0,0,0,0
+189475,Carlos Gruezo,2013,ECPE,3523,False,1,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2012,ECSE,3523,False,22,20,0,1604,0,0,0,0,4
+189475,Carlos Gruezo,2012,ECPE,3523,False,22,18,2,1597,2,1,0,0,4
+189475,Carlos Gruezo,2012,CS,3523,False,2,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2012,CLI,3523,False,6,3,0,192,0,0,0,0,1
+189475,Carlos Gruezo,2012,2SAM,31463,True,8,5,3,414,0,2,0,0,1
+189475,Carlos Gruezo,2011,ECSE,3523,False,22,17,3,1384,0,1,0,0,8
+189475,Carlos Gruezo,2011,ECPE,3523,False,22,22,0,1788,1,0,0,0,5
+189475,Carlos Gruezo,2011,CS,3523,False,6,1,0,90,0,0,0,0,1
+189475,Carlos Gruezo,2010,ECSE,19309,False,22,0,0,0,0,0,0,0,0
+189475,Carlos Gruezo,2010,17WC,29809,True,4,4,0,360,1,0,0,0,0
 532389,Sebastián Cáceres,2026,MEXA,3631,False,6,2,0,180,0,0,0,0,0
-532389,Sebastián Cáceres,2026,FS,3449,True,3,0,2,0,0,0,0,0,0
+532389,Sebastián Cáceres,2026,FS,3449,True,4,1,2,32,0,0,0,0,0
 532389,Sebastián Cáceres,2026,ES1,940,False,9,5,0,408,0,0,2,0,1
 532389,Sebastián Cáceres,2026,EL,940,False,4,1,0,90,0,0,0,0,0
+532389,Sebastián Cáceres,2026,CDR,940,False,1,0,0,0,0,0,0,0,0
 532389,Sebastián Cáceres,2025,USMX,3631,False,4,3,0,270,0,0,1,0,0
 532389,Sebastián Cáceres,2025,POMX,3631,False,2,2,0,180,0,0,0,0,0
 532389,Sebastián Cáceres,2025,POME,3631,False,2,1,1,62,0,0,0,0,0
@@ -2799,77 +2876,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 387611,Lima,2015,CDR,237,False,1,0,0,0,0,0,0,0,0
 387611,Lima,2015,BRC,210,False,8,0,0,0,0,0,0,0,0
 387611,Lima,2015,BRA1,210,False,21,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2026,MEXA,1403,False,7,2,0,152,0,0,1,0,1
-189475,Carlos Gruezo,2025,USMX,1403,False,3,2,0,98,0,0,0,0,0
-189475,Carlos Gruezo,2025,MEX1,1403,False,17,12,0,813,1,0,3,1,4
-189475,Carlos Gruezo,2024,ECUP,9855,False,6,3,0,256,0,0,0,0,1
-189475,Carlos Gruezo,2024,ECSC,9855,False,1,1,0,120,0,0,0,0,0
-189475,Carlos Gruezo,2024,ECP1,9855,False,10,10,0,718,2,2,6,4,3
-189475,Carlos Gruezo,2024,EC1N,9855,False,30,26,2,1957,2,2,26,5,10
-189475,Carlos Gruezo,2024,CLI,9855,False,12,11,1,987,0,1,7,1,6
-189475,Carlos Gruezo,2023,WMQ4,5750,True,12,7,0,484,0,0,5,0,3
-189475,Carlos Gruezo,2023,USMX,218,False,4,4,0,327,0,1,1,1,1
-189475,Carlos Gruezo,2023,MLSP,218,False,2,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2023,MLS1,218,False,34,24,7,1978,0,0,18,2,9
-189475,Carlos Gruezo,2023,FS,5750,True,5,5,0,233,0,0,3,1,3
-189475,Carlos Gruezo,2023,COPA,5750,True,4,4,0,122,0,1,0,0,0
-189475,Carlos Gruezo,2022,USMX,218,False,2,2,0,155,0,0,0,0,1
-189475,Carlos Gruezo,2022,POUS,218,False,1,1,0,85,0,0,1,0,0
-189475,Carlos Gruezo,2022,MLSP,218,False,1,1,0,11,0,0,0,0,0
-189475,Carlos Gruezo,2022,MLS1,218,False,34,28,2,2158,0,2,12,4,9
-189475,Carlos Gruezo,2022,L1,167,False,18,13,1,964,0,0,2,0,5
-189475,Carlos Gruezo,2022,FS,5750,True,6,3,2,171,0,0,0,0,0
-189475,Carlos Gruezo,2022,DFB,167,False,2,2,0,157,0,0,2,0,0
-189475,Carlos Gruezo,2021,L1,167,False,34,17,7,969,0,0,10,0,7
-189475,Carlos Gruezo,2021,FS,5750,True,6,2,0,180,0,0,3,0,1
-189475,Carlos Gruezo,2021,FIWC,5750,True,3,1,0,45,0,0,0,0,0
-189475,Carlos Gruezo,2021,DFB,167,False,2,1,0,30,0,0,2,1,0
-189475,Carlos Gruezo,2020,WMQ4,5750,True,18,16,2,1398,1,0,6,2,2
-189475,Carlos Gruezo,2020,L1,167,False,34,28,3,2092,0,0,16,0,4
-189475,Carlos Gruezo,2020,FS,5750,True,1,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2020,DFB,167,False,2,2,0,70,0,0,0,0,0
-189475,Carlos Gruezo,2020,COPA,5750,True,5,1,4,45,0,0,0,0,0
-189475,Carlos Gruezo,2019,L1,167,False,34,11,15,888,0,1,6,0,3
-189475,Carlos Gruezo,2019,FS,5750,True,5,0,5,0,0,0,0,0,0
-189475,Carlos Gruezo,2019,DFB,167,False,1,1,0,90,0,0,1,1,1
-189475,Carlos Gruezo,2018,MLSP,8816,False,2,0,2,0,0,0,0,0,0
-189475,Carlos Gruezo,2018,MLS1,8816,False,19,9,6,784,1,0,7,1,1
-189475,Carlos Gruezo,2018,FS,5750,True,10,7,0,411,0,0,0,0,2
-189475,Carlos Gruezo,2018,COPA,5750,True,3,2,0,180,0,0,0,0,1
-189475,Carlos Gruezo,2017,POUS,8816,False,1,1,0,90,0,0,0,0,1
-189475,Carlos Gruezo,2017,MLSP,8816,False,2,1,0,71,1,0,3,1,0
-189475,Carlos Gruezo,2017,MLS1,8816,False,34,31,0,2509,2,1,28,6,8
-189475,Carlos Gruezo,2017,CCL,8816,False,2,2,0,180,0,0,2,0,0
-189475,Carlos Gruezo,2016,MLSP,8816,False,3,1,0,120,0,0,0,0,0
-189475,Carlos Gruezo,2016,MLS1,8816,False,34,31,0,2613,0,3,0,0,7
-189475,Carlos Gruezo,2016,FS,5750,True,2,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2016,CCL,8816,False,8,6,0,540,1,3,0,0,1
-189475,Carlos Gruezo,2015,WMQ4,5750,True,18,2,0,123,0,0,0,0,1
-189475,Carlos Gruezo,2015,POUS,8816,False,2,2,0,180,0,0,0,0,0
-189475,Carlos Gruezo,2015,MLSP,8816,False,5,3,1,300,0,0,0,0,1
-189475,Carlos Gruezo,2015,MLS1,8816,False,34,27,3,2240,0,0,0,0,9
-189475,Carlos Gruezo,2015,L1,79,False,17,2,0,59,0,0,0,0,0
-189475,Carlos Gruezo,2015,FS,5750,True,2,2,0,89,0,0,0,0,0
-189475,Carlos Gruezo,2015,DFB,79,False,3,1,0,90,0,0,0,0,1
-189475,Carlos Gruezo,2015,CA16,5750,True,4,4,0,331,0,0,0,0,1
-189475,Carlos Gruezo,2014,L1,79,False,34,8,8,439,1,0,0,0,1
-189475,Carlos Gruezo,2014,FS,5750,True,8,4,0,68,0,0,0,0,0
-189475,Carlos Gruezo,2014,DFB,79,False,1,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2014,COPA,5750,True,3,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2013,L1,79,False,16,8,1,627,0,0,0,0,3
-189475,Carlos Gruezo,2013,FS,5750,True,3,3,0,167,0,0,0,0,0
-189475,Carlos Gruezo,2013,FIWC,5750,True,3,2,0,97,0,0,0,0,0
-189475,Carlos Gruezo,2013,ECPE,3523,False,1,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2012,ECSE,3523,False,22,20,0,1604,0,0,0,0,4
-189475,Carlos Gruezo,2012,ECPE,3523,False,22,18,2,1597,2,1,0,0,4
-189475,Carlos Gruezo,2012,CS,3523,False,2,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2012,CLI,3523,False,6,3,0,192,0,0,0,0,1
-189475,Carlos Gruezo,2012,2SAM,31463,True,8,5,3,414,0,2,0,0,1
-189475,Carlos Gruezo,2011,ECSE,3523,False,22,17,3,1384,0,1,0,0,8
-189475,Carlos Gruezo,2011,ECPE,3523,False,22,22,0,1788,1,0,0,0,5
-189475,Carlos Gruezo,2011,CS,3523,False,6,1,0,90,0,0,0,0,1
-189475,Carlos Gruezo,2010,ECSE,19309,False,22,0,0,0,0,0,0,0,0
-189475,Carlos Gruezo,2010,17WC,29809,True,4,4,0,360,1,0,0,0,0
 700503,Santiago Naveda,2026,MXBA,18662,False,2,2,0,180,0,0,0,0,1
 700503,Santiago Naveda,2026,MEXB,18662,False,8,8,0,634,1,0,9,2,3
 700503,Santiago Naveda,2026,MEXA,3631,False,6,0,0,0,0,0,0,0,0
@@ -2961,7 +2967,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1150372,Patricio Salas,2023,CAMC,3631,False,1,0,0,0,0,0,0,0,0
 1150372,Patricio Salas,2022,USMX,3631,False,4,0,0,0,0,0,0,0,0
 846367,Miguel Ramírez,2026,MXBA,42781,False,2,1,0,66,0,0,0,0,0
-846367,Miguel Ramírez,2026,MEXB,42781,False,10,8,0,450,1,0,6,1,2
+846367,Miguel Ramírez,2026,MEXB,42781,False,10,9,0,520,1,0,7,1,2
 846367,Miguel Ramírez,2026,MEXA,3631,False,5,0,0,0,0,0,0,0,0
 846367,Miguel Ramírez,2025,USMX,3631,False,4,0,0,0,0,0,0,0,0
 846367,Miguel Ramírez,2025,MEXA,5662,False,17,11,0,569,0,0,7,2,0
@@ -4074,6 +4080,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 471988,Brian García,2014,M20A,24999,False,10,1,0,52,0,0,0,0,0
 344854,Jesús Gallardo,2026,MEXA,1804,False,16,13,0,1059,2,1,17,5,2
 344854,Jesús Gallardo,2026,FS,6303,True,4,3,0,173,0,1,0,0,1
+344854,Jesús Gallardo,2026,CNNF,6303,True,2,1,0,90,0,0,0,0,0
 344854,Jesús Gallardo,2025,USMX,1804,False,6,6,0,534,1,1,15,8,0
 344854,Jesús Gallardo,2025,POMX,1804,False,6,6,0,570,0,0,6,0,2
 344854,Jesús Gallardo,2025,POME,1804,False,2,0,2,0,0,0,0,0,0
@@ -4465,7 +4472,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 107444,Antonio Briseño,2011,M20C,23166,False,17,7,0,618,2,0,0,0,2
 107444,Antonio Briseño,2011,M20A,23166,False,17,5,0,404,1,0,0,0,2
 107444,Antonio Briseño,2010,17WC,23134,True,7,7,0,630,1,0,0,0,1
-804282,Alek Álvarez,2026,MXBA,83082,False,2,1,0,90,0,0,0,0,0
+804282,Alek Álvarez,2026,MXBA,83082,False,2,2,0,175,0,0,0,0,0
 804282,Alek Álvarez,2026,MEXB,83082,False,15,11,0,860,0,1,3,1,2
 804282,Alek Álvarez,2026,MEXA,1804,False,1,0,0,0,0,0,0,0,0
 804282,Alek Álvarez,2025,POMX,1804,False,6,0,0,0,0,0,0,0,0
@@ -4534,6 +4541,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1011037,Érick Orta,2022,FS,48724,True,3,0,0,0,0,0,0,0,0
 1011037,Érick Orta,2022,FS,47231,True,6,5,0,400,1,0,0,0,0
 1011037,Érick Orta,2021,FS,48724,True,4,3,0,210,0,0,0,0,1
+1193574,Francisco Pumpido,2025,PYC1,7098,False,1,0,0,0,0,0,0,0,0
 1193574,Francisco Pumpido,2025,PR1C,7098,False,14,2,0,90,0,0,1,0,0
 1193574,Francisco Pumpido,2025,POMX,1804,False,6,0,0,0,0,0,0,0,0
 1193574,Francisco Pumpido,2025,POME,1804,False,2,0,0,0,0,0,0,0,0
@@ -4673,7 +4681,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 565899,Nicolás Castro,2019,ARLC,1286,False,1,0,0,0,0,0,0,0,0
 565899,Nicolás Castro,2019,ARCA,1286,False,2,0,0,0,0,0,0,0,0
 565899,Nicolás Castro,2019,AR1N,1286,False,16,3,0,40,0,0,1,0,0
-565899,Nicolás Castro,2017,ARY3,14836,False,15,1,0,17,0,0,0,0,0
+565899,Nicolás Castro,2017,ARY3,14836,False,16,1,0,17,0,0,0,0,0
 565899,Nicolás Castro,2016,ARY3,14836,False,30,0,0,0,0,0,0,0,0
 431533,Sebastián Córdova,2026,MEXA,7633,False,16,3,0,179,1,0,5,1,0
 431533,Sebastián Córdova,2025,USMX,7633,False,3,2,0,46,0,0,1,0,0
@@ -5084,13 +5092,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 955210,Luis Navarrete,2023,M23A,110452,False,17,3,0,221,0,0,0,0,0
 955210,Luis Navarrete,2023,FS,51023,True,5,0,0,0,0,0,0,0,0
 955210,Luis Navarrete,2023,FS,23134,True,1,1,0,90,0,0,0,0,0
-955210,Luis Navarrete,2022,FS,51023,True,3,1,0,90,0,0,0,0,0
+955210,Luis Navarrete,2022,FS,51023,True,3,2,0,180,0,0,0,0,0
 955210,Luis Navarrete,2022,FS,23134,True,5,2,0,180,0,0,0,0,0
 955210,Luis Navarrete,2022,CO17,23134,True,7,7,0,585,1,0,5,1,1
 955210,Luis Navarrete,2022,17WC,23134,True,4,4,0,357,0,1,0,0,0
 955210,Luis Navarrete,2021,FS,23134,True,7,5,0,410,0,0,0,0,0
 424689,Alexis Vega,2026,MEXA,1804,False,16,14,0,888,5,2,29,11,2
 424689,Alexis Vega,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+424689,Alexis Vega,2026,CNNF,6303,True,2,1,0,19,0,0,0,0,0
 424689,Alexis Vega,2025,USMX,1804,False,6,5,0,379,2,1,12,3,0
 424689,Alexis Vega,2025,POMX,1804,False,6,1,5,40,0,0,0,0,0
 424689,Alexis Vega,2025,POME,1804,False,2,0,2,0,0,0,0,0,0
@@ -5603,7 +5612,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1105432,José Arroyo,2024,M191,25781,False,14,14,0,1118,4,0,0,0,0
 1105432,José Arroyo,2024,CAMC,1804,False,1,0,0,0,0,0,0,0,0
 1105432,José Arroyo,2023,FS,51023,True,5,0,0,0,0,0,0,0,0
-1105432,José Arroyo,2022,FS,51023,True,3,1,0,90,0,0,0,0,0
+1105432,José Arroyo,2022,FS,51023,True,3,2,0,180,0,0,0,0,0
 1105432,José Arroyo,2022,FS,23134,True,3,1,0,90,0,0,0,0,0
 1105432,José Arroyo,2022,CO17,23134,True,7,7,0,228,1,1,2,1,1
 1364054,Giovani Bravo,2026,M21A,110452,False,16,1,0,58,0,0,0,0,0
@@ -5883,6 +5892,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1087365,Emmanuel Echeverría,2021,M20A,25930,False,17,16,0,1424,0,0,0,0,5
 1087365,Emmanuel Echeverría,2020,M20C,25930,False,17,15,0,1230,1,0,0,0,3
 1087365,Emmanuel Echeverría,2020,M20A,25930,False,17,17,0,1179,1,0,0,0,3
+1087365,Emmanuel Echeverría,2019,FS,51023,True,2,2,0,180,0,0,0,0,0
 371169,Haret Ortega,2026,MEXA,49283,False,16,5,0,299,0,0,1,1,1
 371169,Haret Ortega,2025,USMX,49283,False,3,2,0,180,0,0,1,0,0
 371169,Haret Ortega,2025,MEXA,1403,False,17,12,2,1024,1,1,9,6,4
@@ -5938,7 +5948,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 339758,Kevin Balanta,2025,MEX1,1403,False,17,13,0,1068,0,0,1,0,4
 339758,Kevin Balanta,2025,CS,11648,False,6,1,3,90,0,0,0,0,0
 339758,Kevin Balanta,2025,COPO,11648,False,3,1,2,90,0,0,0,0,1
-339758,Kevin Balanta,2025,COL1,11648,False,18,3,14,174,0,0,0,0,0
+339758,Kevin Balanta,2025,COL1,11648,False,19,3,15,174,0,0,0,0,0
 339758,Kevin Balanta,2024,USMX,1403,False,3,2,0,180,0,0,1,0,0
 339758,Kevin Balanta,2024,POMX,13353,False,4,4,0,284,0,0,0,0,1
 339758,Kevin Balanta,2024,MEXA,13353,False,17,9,0,592,0,0,3,1,1
@@ -6231,7 +6241,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 627068,Ezequiel Bullaude,2018,ARLC,12574,False,4,4,0,201,0,0,0,0,1
 627068,Ezequiel Bullaude,2018,ARCA,12574,False,3,1,0,80,0,0,0,0,0
 627068,Ezequiel Bullaude,2018,AR1N,12574,False,17,6,0,144,0,0,3,0,1
-627068,Ezequiel Bullaude,2017,ARY3,19445,False,15,9,0,402,1,0,0,0,0
+627068,Ezequiel Bullaude,2017,ARY3,19445,False,16,9,0,402,1,0,0,0,0
 690024,Aldo López,2026,MEXA,1403,False,16,13,0,525,0,0,4,1,3
 690024,Aldo López,2025,USMX,1403,False,3,2,0,180,0,0,1,0,0
 690024,Aldo López,2025,MEXA,1403,False,17,16,0,1196,2,1,18,10,0
@@ -6798,8 +6808,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 131275,Choco Lozano,2008,17WC,25505,True,3,3,0,270,1,0,0,0,2
 385454,Cristian Dájome,2025,MEXA,1403,False,17,16,0,812,4,0,12,6,5
 385454,Cristian Dájome,2025,MEX1,1403,False,17,17,0,606,1,1,14,4,2
-385454,Cristian Dájome,2025,COPO,17425,False,5,4,0,239,1,0,0,0,1
-385454,Cristian Dájome,2025,COL1,17425,False,18,16,0,1127,2,3,18,9,0
+385454,Cristian Dájome,2025,COPO,17425,False,6,4,0,239,1,0,0,0,1
+385454,Cristian Dájome,2025,COL1,17425,False,19,17,0,1207,2,3,21,10,0
 385454,Cristian Dájome,2024,USMX,1403,False,3,3,0,210,1,0,2,1,0
 385454,Cristian Dájome,2024,MEX1,1403,False,17,12,0,690,0,0,13,4,0
 385454,Cristian Dájome,2023,USMX,2440,False,3,3,0,270,1,0,6,2,0
@@ -6845,7 +6855,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 385454,Cristian Dájome,2014,CO2T,20466,False,2,0,0,0,0,0,0,0,0
 385454,Cristian Dájome,2013,COPO,20466,False,10,5,0,450,0,0,0,0,0
 385454,Cristian Dájome,2012,COPO,20466,False,10,1,0,90,1,0,0,0,0
-686447,Jair González,2026,MXBA,12714,False,2,1,0,45,0,0,0,0,0
+686447,Jair González,2026,MXBA,12714,False,2,2,0,118,0,0,0,0,0
 686447,Jair González,2026,MEXB,12714,False,15,7,3,346,0,2,8,3,0
 686447,Jair González,2026,MEXA,1403,False,1,0,0,0,0,0,0,0,0
 686447,Jair González,2025,MEXA,1403,False,17,0,0,0,0,0,0,0,0
@@ -7525,6 +7535,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1091755,César Lugo,2022,M20A,25014,False,17,1,0,90,0,0,0,0,0
 687558,Israel Reyes,2026,MEXA,3631,False,16,11,0,786,0,0,9,2,2
 687558,Israel Reyes,2026,FS,6303,True,4,3,0,270,0,0,0,0,0
+687558,Israel Reyes,2026,CNNF,6303,True,2,2,0,106,0,0,0,0,0
 687558,Israel Reyes,2025,USMX,3631,False,6,5,0,435,0,0,2,0,0
 687558,Israel Reyes,2025,POMX,3631,False,2,2,0,180,0,0,0,0,1
 687558,Israel Reyes,2025,POME,3631,False,2,0,2,0,0,0,0,0,0
@@ -7689,6 +7700,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 959193,Dagoberto Espinoza,2021,FS,26092,True,3,2,0,39,0,0,1,0,0
 572705,Kevin Álvarez,2026,MEXA,3631,False,16,12,0,790,1,3,10,3,4
 572705,Kevin Álvarez,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+572705,Kevin Álvarez,2026,CNNF,6303,True,2,1,0,26,0,0,0,0,0
 572705,Kevin Álvarez,2025,USMX,3631,False,6,6,0,464,0,0,5,0,0
 572705,Kevin Álvarez,2025,POMX,3631,False,2,2,0,180,0,0,0,0,1
 572705,Kevin Álvarez,2025,POME,3631,False,2,2,0,179,0,0,4,2,0
@@ -7871,88 +7883,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1019485,Miguel Vázquez,2021,M2L1,25014,False,2,0,0,0,0,0,0,0,0
 1019485,Miguel Vázquez,2021,M20C,25014,False,11,4,0,279,0,0,0,0,0
 1019485,Miguel Vázquez,2021,M20A,25014,False,1,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2026,MEXA,3631,False,16,12,0,818,1,0,4,1,3
-356099,Cristián Borja,2025,USMX,3631,False,6,6,0,449,0,1,3,0,0
-356099,Cristián Borja,2025,POMX,3631,False,2,2,0,180,0,0,0,0,0
-356099,Cristián Borja,2025,POME,3631,False,2,1,1,45,0,0,0,0,0
-356099,Cristián Borja,2025,MEXA,3631,False,17,16,0,1380,0,2,10,2,3
-356099,Cristián Borja,2025,MEX1,3631,False,17,16,0,1269,0,1,11,2,1
-356099,Cristián Borja,2025,CCL,3631,False,6,5,0,450,0,0,0,0,0
-356099,Cristián Borja,2024,USMX,3631,False,3,2,0,180,0,0,0,0,0
-356099,Cristián Borja,2024,POMX,3631,False,7,6,0,184,1,0,3,2,1
-356099,Cristián Borja,2024,POME,3631,False,6,6,0,490,1,0,3,1,1
-356099,Cristián Borja,2024,MXSC,3631,False,1,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2024,MEXA,3631,False,14,12,0,719,0,1,1,1,0
-356099,Cristián Borja,2024,MEX1,3631,False,17,10,0,597,1,0,4,1,0
-356099,Cristián Borja,2024,CWCQ,3631,False,1,1,0,91,0,0,0,0,0
-356099,Cristián Borja,2024,CCL,3631,False,4,4,0,343,0,0,1,0,0
-356099,Cristián Borja,2023,WMQ4,3816,True,16,4,0,314,0,1,0,0,0
-356099,Cristián Borja,2023,USMX,3631,False,3,3,0,151,0,0,1,0,0
-356099,Cristián Borja,2023,POPO,1075,False,3,1,0,87,0,0,0,0,0
-356099,Cristián Borja,2023,POCP,1075,False,4,3,0,270,0,0,0,0,0
-356099,Cristián Borja,2023,PO1,1075,False,34,30,0,2458,1,5,13,4,3
-356099,Cristián Borja,2023,FS,3816,True,5,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2023,EL,1075,False,2,2,0,158,0,0,1,0,0
-356099,Cristián Borja,2023,COPA,3816,True,6,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2023,CLQ,1075,False,4,1,0,90,0,1,0,0,0
-356099,Cristián Borja,2023,CL,1075,False,6,6,0,520,0,0,0,0,1
-356099,Cristián Borja,2023,CAMC,3631,False,1,1,0,120,0,0,1,0,0
-356099,Cristián Borja,2022,UCOL,1075,False,2,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2022,POPO,1075,False,7,4,0,262,0,0,0,0,1
-356099,Cristián Borja,2022,POCP,1075,False,4,2,0,180,0,0,0,0,0
-356099,Cristián Borja,2022,PO1,1075,False,34,14,0,676,0,0,1,0,1
-356099,Cristián Borja,2022,FS,3816,True,8,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2022,EL,1075,False,6,2,0,16,0,0,0,0,0
-356099,Cristián Borja,2021,TRP,11282,False,6,5,1,465,0,2,0,0,0
-356099,Cristián Borja,2021,TR1,11282,False,38,28,10,2165,1,1,6,3,1
-356099,Cristián Borja,2021,FS,3816,True,3,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2020,WMQ4,3816,True,18,0,4,0,0,0,0,0,0
-356099,Cristián Borja,2020,POPO,336,False,3,2,0,165,0,0,0,0,0
-356099,Cristián Borja,2020,POPO,1075,False,3,2,0,60,0,0,0,0,0
-356099,Cristián Borja,2020,POCP,336,False,3,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2020,PO1,336,False,15,2,3,98,0,0,0,0,0
-356099,Cristián Borja,2020,PO1,1075,False,19,13,0,777,1,0,4,3,1
-356099,Cristián Borja,2020,ELQ,336,False,2,0,2,0,0,0,0,0,0
-356099,Cristián Borja,2020,EL,1075,False,2,2,0,40,0,0,0,0,0
-356099,Cristián Borja,2020,COPA,3816,True,7,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2019,POSU,336,False,1,1,0,6,0,0,0,0,0
-356099,Cristián Borja,2019,POPO,336,False,1,1,0,59,0,0,0,0,0
-356099,Cristián Borja,2019,POCP,336,False,4,1,0,90,0,0,0,0,1
-356099,Cristián Borja,2019,PO1,336,False,34,23,0,1330,1,0,3,1,3
-356099,Cristián Borja,2019,FS,3816,True,6,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2019,EL,336,False,8,4,0,202,0,0,0,0,0
-356099,Cristián Borja,2018,POPO,336,False,3,2,0,164,0,0,0,0,1
-356099,Cristián Borja,2018,POMX,1804,False,2,2,0,24,0,0,1,0,0
-356099,Cristián Borja,2018,PO1,336,False,16,11,2,680,0,1,1,0,2
-356099,Cristián Borja,2018,MXCA,1804,False,4,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2018,MEXA,1804,False,17,15,0,1273,0,1,6,1,3
-356099,Cristián Borja,2018,MEX1,1804,False,4,1,0,9,0,0,0,0,0
-356099,Cristián Borja,2018,FS,3816,True,8,3,0,270,0,0,0,0,0
-356099,Cristián Borja,2018,EL,336,False,2,1,0,90,0,0,0,0,0
-356099,Cristián Borja,2018,COPA,3816,True,4,1,0,90,0,0,0,0,1
-356099,Cristián Borja,2017,POME,1804,False,6,6,0,540,1,0,0,0,0
-356099,Cristián Borja,2017,MXCC,1804,False,7,3,0,258,0,0,0,0,0
-356099,Cristián Borja,2017,MEX1,1804,False,16,13,0,1170,0,2,0,0,2
-356099,Cristián Borja,2016,CS,11648,False,1,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2016,COSP,11648,False,2,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2016,COLP,11648,False,20,6,0,488,0,0,0,0,1
-356099,Cristián Borja,2016,COL1,17467,False,20,13,0,1036,1,1,0,0,3
-356099,Cristián Borja,2016,CLI,11648,False,6,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2015,SURU,11648,False,1,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2015,RECO,11648,False,2,1,0,58,0,0,0,0,0
-356099,Cristián Borja,2015,OLYM,53817,True,4,2,0,180,0,0,0,0,0
-356099,Cristián Borja,2015,CS,11648,False,2,1,0,1,0,0,0,0,0
-356099,Cristián Borja,2015,COPO,11648,False,6,2,0,169,0,0,0,0,0
-356099,Cristián Borja,2015,COLP,11648,False,20,8,0,488,0,0,0,0,0
-356099,Cristián Borja,2015,COLO,11648,False,6,0,0,0,0,0,0,0,0
-356099,Cristián Borja,2015,COLF,11648,False,2,1,0,6,0,0,0,0,0
-356099,Cristián Borja,2015,COL1,11648,False,20,13,0,968,0,1,0,0,1
-356099,Cristián Borja,2015,CLI,11648,False,8,3,0,270,0,1,0,0,0
-356099,Cristián Borja,2014,COPO,17467,False,10,3,0,160,0,0,0,0,0
-356099,Cristián Borja,2014,COLP,17467,False,20,18,0,1230,0,2,0,0,3
-356099,Cristián Borja,2014,COL1,17467,False,20,16,0,1394,1,3,0,0,5
 64134,Néstor Araújo,2026,POPO,3325,False,2,1,0,62,0,0,0,0,1
-64134,Néstor Araújo,2026,PO2,3325,False,6,4,0,283,0,0,0,0,0
+64134,Néstor Araújo,2026,PO2,3325,False,7,4,0,283,0,0,0,0,0
 64134,Néstor Araújo,2025,POMX,3631,False,2,0,0,0,0,0,0,0,0
 64134,Néstor Araújo,2025,POME,3631,False,2,1,0,1,0,0,0,0,1
 64134,Néstor Araújo,2025,MEXA,3631,False,17,0,0,0,0,0,0,0,0
@@ -8146,9 +8078,91 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 432953,Raphael Veiga,2015,BRC2,776,False,2,1,0,21,0,0,0,0,0
 432953,Raphael Veiga,2015,BRC,776,False,3,1,0,17,0,0,0,0,0
 432953,Raphael Veiga,2015,BRA1,776,False,38,19,0,1501,3,3,46,18,2
+356099,Cristián Borja,2026,MEXA,3631,False,16,12,0,818,1,0,4,1,3
+356099,Cristián Borja,2025,USMX,3631,False,6,6,0,449,0,1,3,0,0
+356099,Cristián Borja,2025,POMX,3631,False,2,2,0,180,0,0,0,0,0
+356099,Cristián Borja,2025,POME,3631,False,2,1,1,45,0,0,0,0,0
+356099,Cristián Borja,2025,MEXA,3631,False,17,16,0,1380,0,2,10,2,3
+356099,Cristián Borja,2025,MEX1,3631,False,17,16,0,1269,0,1,11,2,1
+356099,Cristián Borja,2025,CCL,3631,False,6,5,0,450,0,0,0,0,0
+356099,Cristián Borja,2024,USMX,3631,False,3,2,0,180,0,0,0,0,0
+356099,Cristián Borja,2024,POMX,3631,False,7,6,0,184,1,0,3,2,1
+356099,Cristián Borja,2024,POME,3631,False,6,6,0,490,1,0,3,1,1
+356099,Cristián Borja,2024,MXSC,3631,False,1,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2024,MEXA,3631,False,14,12,0,719,0,1,1,1,0
+356099,Cristián Borja,2024,MEX1,3631,False,17,10,0,597,1,0,4,1,0
+356099,Cristián Borja,2024,CWCQ,3631,False,1,1,0,91,0,0,0,0,0
+356099,Cristián Borja,2024,CCL,3631,False,4,4,0,343,0,0,1,0,0
+356099,Cristián Borja,2023,WMQ4,3816,True,16,4,0,314,0,1,0,0,0
+356099,Cristián Borja,2023,USMX,3631,False,3,3,0,151,0,0,1,0,0
+356099,Cristián Borja,2023,POPO,1075,False,3,1,0,87,0,0,0,0,0
+356099,Cristián Borja,2023,POCP,1075,False,4,3,0,270,0,0,0,0,0
+356099,Cristián Borja,2023,PO1,1075,False,34,30,0,2458,1,5,13,4,3
+356099,Cristián Borja,2023,FS,3816,True,5,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2023,EL,1075,False,2,2,0,158,0,0,1,0,0
+356099,Cristián Borja,2023,COPA,3816,True,6,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2023,CLQ,1075,False,4,1,0,90,0,1,0,0,0
+356099,Cristián Borja,2023,CL,1075,False,6,6,0,520,0,0,0,0,1
+356099,Cristián Borja,2023,CAMC,3631,False,1,1,0,120,0,0,1,0,0
+356099,Cristián Borja,2022,UCOL,1075,False,2,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2022,POPO,1075,False,7,4,0,262,0,0,0,0,1
+356099,Cristián Borja,2022,POCP,1075,False,4,2,0,180,0,0,0,0,0
+356099,Cristián Borja,2022,PO1,1075,False,34,14,0,676,0,0,1,0,1
+356099,Cristián Borja,2022,FS,3816,True,8,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2022,EL,1075,False,6,2,0,16,0,0,0,0,0
+356099,Cristián Borja,2021,TRP,11282,False,6,5,1,465,0,2,0,0,0
+356099,Cristián Borja,2021,TR1,11282,False,38,28,10,2165,1,1,6,3,1
+356099,Cristián Borja,2021,FS,3816,True,3,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2020,WMQ4,3816,True,18,0,4,0,0,0,0,0,0
+356099,Cristián Borja,2020,POPO,336,False,3,2,0,165,0,0,0,0,0
+356099,Cristián Borja,2020,POPO,1075,False,3,2,0,60,0,0,0,0,0
+356099,Cristián Borja,2020,POCP,336,False,3,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2020,PO1,336,False,15,2,3,98,0,0,0,0,0
+356099,Cristián Borja,2020,PO1,1075,False,19,13,0,777,1,0,4,3,1
+356099,Cristián Borja,2020,ELQ,336,False,2,0,2,0,0,0,0,0,0
+356099,Cristián Borja,2020,EL,1075,False,2,2,0,40,0,0,0,0,0
+356099,Cristián Borja,2020,COPA,3816,True,7,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2019,POSU,336,False,1,1,0,6,0,0,0,0,0
+356099,Cristián Borja,2019,POPO,336,False,1,1,0,59,0,0,0,0,0
+356099,Cristián Borja,2019,POCP,336,False,4,1,0,90,0,0,0,0,1
+356099,Cristián Borja,2019,PO1,336,False,34,23,0,1330,1,0,3,1,3
+356099,Cristián Borja,2019,FS,3816,True,6,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2019,EL,336,False,8,4,0,202,0,0,0,0,0
+356099,Cristián Borja,2018,POPO,336,False,3,2,0,164,0,0,0,0,1
+356099,Cristián Borja,2018,POMX,1804,False,2,2,0,24,0,0,1,0,0
+356099,Cristián Borja,2018,PO1,336,False,16,11,2,680,0,1,1,0,2
+356099,Cristián Borja,2018,MXCA,1804,False,4,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2018,MEXA,1804,False,17,15,0,1273,0,1,6,1,3
+356099,Cristián Borja,2018,MEX1,1804,False,4,1,0,9,0,0,0,0,0
+356099,Cristián Borja,2018,FS,3816,True,8,3,0,270,0,0,0,0,0
+356099,Cristián Borja,2018,EL,336,False,2,1,0,90,0,0,0,0,0
+356099,Cristián Borja,2018,COPA,3816,True,4,1,0,90,0,0,0,0,1
+356099,Cristián Borja,2017,POME,1804,False,6,6,0,540,1,0,0,0,0
+356099,Cristián Borja,2017,MXCC,1804,False,7,3,0,258,0,0,0,0,0
+356099,Cristián Borja,2017,MEX1,1804,False,16,13,0,1170,0,2,0,0,2
+356099,Cristián Borja,2016,CS,11648,False,1,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2016,COSP,11648,False,2,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2016,COLP,11648,False,20,6,0,488,0,0,0,0,1
+356099,Cristián Borja,2016,COL1,17467,False,20,13,0,1036,1,1,0,0,3
+356099,Cristián Borja,2016,CLI,11648,False,6,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2015,SURU,11648,False,1,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2015,RECO,11648,False,2,1,0,58,0,0,0,0,0
+356099,Cristián Borja,2015,OLYM,53817,True,4,2,0,180,0,0,0,0,0
+356099,Cristián Borja,2015,CS,11648,False,2,1,0,1,0,0,0,0,0
+356099,Cristián Borja,2015,COPO,11648,False,6,2,0,169,0,0,0,0,0
+356099,Cristián Borja,2015,COLP,11648,False,20,8,0,488,0,0,0,0,0
+356099,Cristián Borja,2015,COLO,11648,False,6,0,0,0,0,0,0,0,0
+356099,Cristián Borja,2015,COLF,11648,False,2,1,0,6,0,0,0,0,0
+356099,Cristián Borja,2015,COL1,11648,False,20,13,0,968,0,1,0,0,1
+356099,Cristián Borja,2015,CLI,11648,False,8,3,0,270,0,1,0,0,0
+356099,Cristián Borja,2014,COPO,17467,False,10,3,0,160,0,0,0,0,0
+356099,Cristián Borja,2014,COLP,17467,False,20,18,0,1230,0,2,0,0,3
+356099,Cristián Borja,2014,COL1,17467,False,20,16,0,1394,1,3,0,0,5
 261503,Álvaro Fidalgo,2026,FS,6303,True,4,4,0,210,0,0,1,0,0
 261503,Álvaro Fidalgo,2026,ES1,150,False,12,4,0,66,0,0,0,0,0
+261503,Álvaro Fidalgo,2026,CNNF,6303,True,1,0,0,0,0,0,0,0,0
 261503,Álvaro Fidalgo,2026,CL,150,False,4,1,0,29,0,0,0,0,0
+261503,Álvaro Fidalgo,2026,CDR,150,False,1,0,0,0,0,0,0,0,0
 261503,Álvaro Fidalgo,2025,POMX,3631,False,2,2,0,168,0,0,0,0,0
 261503,Álvaro Fidalgo,2025,MEXA,3631,False,17,16,0,1096,1,0,10,3,1
 261503,Álvaro Fidalgo,2025,MEX1,3631,False,4,3,0,270,0,0,2,0,0
@@ -8200,6 +8214,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 261503,Álvaro Fidalgo,2012,FS,33775,True,2,2,0,67,0,0,0,0,0
 370875,Érick Sánchez,2026,MEXA,3631,False,16,16,0,1113,2,2,30,6,5
 370875,Érick Sánchez,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+370875,Érick Sánchez,2026,CNNF,6303,True,2,0,0,0,0,0,0,0,0
 370875,Érick Sánchez,2025,USMX,3631,False,6,6,0,378,1,0,8,4,2
 370875,Érick Sánchez,2025,POMX,3631,False,2,2,0,96,0,0,0,0,0
 370875,Érick Sánchez,2025,POME,3631,False,2,2,0,152,0,0,6,1,0
@@ -8560,8 +8575,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 60445,Jonathan dos Santos,2009,CL,131,False,12,1,0,1,0,0,0,0,0
 60445,Jonathan dos Santos,2009,CDR,131,False,4,2,0,101,0,1,0,0,0
 60445,Jonathan dos Santos,2008,WMQ3,6303,True,2,0,0,0,0,0,0,0,0
-465818,Brian Rodríguez,2026,MEXA,3631,False,16,11,2,723,5,3,38,19,0
-465818,Brian Rodríguez,2026,FS,3449,True,3,2,0,158,0,0,1,0,0
+465818,Brian Rodríguez,2026,MEXA,3631,False,16,11,4,723,5,3,38,19,0
+465818,Brian Rodríguez,2026,FS,3449,True,2,2,0,158,0,0,1,0,0
 465818,Brian Rodríguez,2025,USMX,3631,False,6,6,0,498,3,3,18,7,1
 465818,Brian Rodríguez,2025,POMX,3631,False,2,2,0,72,0,0,0,0,0
 465818,Brian Rodríguez,2025,POME,3631,False,2,1,0,90,0,1,4,0,0
@@ -8806,6 +8821,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 351505,Álex Zendejas,2012,FS,28437,True,4,4,0,174,1,1,0,0,1
 668496,Isaías Violante,2026,MEXA,3631,False,16,13,0,619,1,2,24,7,0
 668496,Isaías Violante,2026,FS,6303,True,4,4,0,144,0,0,4,2,0
+668496,Isaías Violante,2026,CNNF,6303,True,2,0,0,0,0,0,0,0,0
 668496,Isaías Violante,2025,USMX,3631,False,6,6,0,438,2,0,17,6,0
 668496,Isaías Violante,2025,POMX,3631,False,2,1,0,1,0,0,0,0,0
 668496,Isaías Violante,2025,POME,3631,False,2,2,0,180,1,0,5,1,1
@@ -8857,7 +8873,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668496,Isaías Violante,2020,M2L2,25781,False,4,1,0,90,0,0,0,0,0
 668496,Isaías Violante,2020,M20C,25781,False,17,12,0,598,3,0,0,0,1
 668496,Isaías Violante,2020,M20A,25781,False,17,5,0,332,0,0,0,0,0
-668496,Isaías Violante,2018,FS,47231,True,4,1,0,10,0,0,0,0,0
+668496,Isaías Violante,2019,FS,51023,True,2,1,0,57,0,0,0,0,0
+668496,Isaías Violante,2018,FS,47231,True,4,2,0,35,0,0,0,0,0
 366143,Víctor Dávila,2026,MEXA,3631,False,16,0,16,0,0,0,0,0,0
 366143,Víctor Dávila,2025,USMX,3631,False,6,0,6,0,0,0,0,0,0
 366143,Víctor Dávila,2025,POMX,3631,False,2,2,0,20,0,0,0,0,0
@@ -8941,7 +8958,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 366143,Víctor Dávila,2013,CS,6368,False,6,0,0,0,0,0,0,0,0
 366143,Víctor Dávila,2013,CH1C,6368,False,2,0,0,0,0,0,0,0,0
 189410,Rodrigo Aguirre,2026,MEXA,7055,False,16,14,0,892,3,1,20,5,1
-189410,Rodrigo Aguirre,2026,FS,3449,True,3,2,0,31,1,0,0,0,0
+189410,Rodrigo Aguirre,2026,FS,3449,True,4,3,0,36,1,0,0,0,0
 189410,Rodrigo Aguirre,2025,USMX,7055,False,3,3,0,260,1,1,7,1,0
 189410,Rodrigo Aguirre,2025,POMX,3631,False,2,2,0,145,0,0,0,0,1
 189410,Rodrigo Aguirre,2025,POME,7055,False,2,2,0,123,0,0,0,0,1
@@ -9193,7 +9210,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 688593,Santiago Ramos Mingo,2019,ES3C,2464,False,5,0,5,0,0,0,0,0,0
 688593,Santiago Ramos Mingo,2019,ES2P,2464,False,3,0,0,0,0,0,0,0,0
 688593,Santiago Ramos Mingo,2018,CLI,189,False,1,0,0,0,0,0,0,0,0
-438001,Santiago Bueno,2026,MEXA,3631,False,10,5,0,445,1,0,1,1,0
+438001,Santiago Bueno,2026,MEXA,3631,False,10,5,1,445,1,0,1,1,0
 438001,Santiago Bueno,2026,GB2,543,False,5,0,0,0,0,0,0,0,0
 438001,Santiago Bueno,2026,CGB,543,False,2,0,0,0,0,0,0,0,0
 438001,Santiago Bueno,2025,GB1,543,False,38,29,1,2553,3,2,10,7,4
@@ -9422,7 +9439,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 686449,Emilio Lara,2018,CO17,23134,True,7,3,0,300,0,0,2,1,0
 686449,Emilio Lara,2018,17WC,23134,True,7,4,0,372,0,0,1,0,0
 1015624,Óscar Perea,2026,MEXA,3631,False,14,12,0,512,3,2,28,11,0
-1015624,Óscar Perea,2026,FS,3816,True,3,0,0,0,0,0,0,0,0
+1015624,Óscar Perea,2026,FS,3816,True,4,1,0,45,0,0,0,0,1
+1015624,Óscar Perea,2026,FS,28266,True,2,0,0,0,0,0,0,0,0
 1015624,Óscar Perea,2025,USMX,3631,False,6,5,0,100,1,0,2,1,1
 1015624,Óscar Perea,2025,POPO,110302,False,4,1,1,63,0,1,1,1,0
 1015624,Óscar Perea,2025,PO1,110302,False,30,25,1,1258,2,0,40,11,0
@@ -9839,6 +9857,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 609255,Willer Ditta,2016,C2P2,18127,False,2,2,0,180,0,0,0,0,1
 915155,Jesús Orozco Chiquete,2026,MEXA,3711,False,16,14,0,1134,1,1,11,3,3
 915155,Jesús Orozco Chiquete,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+915155,Jesús Orozco Chiquete,2026,CNNF,6303,True,2,1,0,16,0,0,0,0,0
 915155,Jesús Orozco Chiquete,2025,USMX,3711,False,3,3,0,270,0,0,1,0,0
 915155,Jesús Orozco Chiquete,2025,POMX,3711,False,4,3,0,142,0,0,0,0,0
 915155,Jesús Orozco Chiquete,2025,POME,3711,False,6,1,0,7,0,0,0,0,0
@@ -10249,6 +10268,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1233183,Iván Silva,2023,M23C,110455,False,5,4,0,127,0,0,0,0,0
 602324,Érik Lira,2026,MEXA,3711,False,16,13,0,990,1,1,7,2,2
 602324,Érik Lira,2026,FS,6303,True,4,3,0,233,0,0,1,0,0
+602324,Érik Lira,2026,CNNF,6303,True,2,2,0,106,0,0,0,0,0
 602324,Érik Lira,2025,USMX,3711,False,3,3,0,270,0,1,0,0,1
 602324,Érik Lira,2025,POMX,3711,False,4,4,0,360,0,0,0,0,1
 602324,Érik Lira,2025,POME,3711,False,6,0,5,0,0,0,0,0,0
@@ -10588,6 +10608,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 769063,Luka Romero,2019,E3PL,8494,False,1,1,0,15,0,0,0,0,0
 993722,Andrés Montaño,2026,MEXA,3711,False,16,12,0,524,6,5,24,9,1
 993722,Andrés Montaño,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+993722,Andrés Montaño,2026,CNNF,6303,True,2,0,0,0,0,0,0,0,0
 993722,Andrés Montaño,2025,USMX,3711,False,3,0,0,0,0,0,0,0,0
 993722,Andrés Montaño,2025,POMX,3711,False,4,0,4,0,0,0,0,0,0
 993722,Andrés Montaño,2025,POME,3711,False,6,5,0,38,0,0,0,0,1
@@ -10824,7 +10845,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 553422,Carlos Rotondi,2018,CL2B,19280,False,26,17,0,1480,5,0,6,2,5
 553422,Carlos Rotondi,2018,CH1C,19280,False,1,0,0,0,0,0,0,0,0
 553422,Carlos Rotondi,2018,AR1N,1286,False,17,2,0,51,0,0,1,0,0
-553422,Carlos Rotondi,2017,ARY3,14836,False,15,10,0,775,5,0,0,0,0
+553422,Carlos Rotondi,2017,ARY3,14836,False,16,11,0,865,5,0,0,0,0
 553422,Carlos Rotondi,2017,ARCA,1286,False,3,0,0,0,0,0,0,0,0
 553422,Carlos Rotondi,2016,ARY3,14836,False,30,24,0,1631,5,0,0,0,0
 553422,Carlos Rotondi,2016,ARCA,1286,False,1,1,0,25,0,0,0,0,0
@@ -11250,6 +11271,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1051694,Fernando Sámano,2020,M20A,23169,False,17,7,0,274,1,0,0,0,0
 802855,Raúl Rangel,2026,MEXA,6711,False,16,15,0,1350,0,0,0,0,0
 802855,Raúl Rangel,2026,FS,6303,True,4,2,0,180,0,0,0,0,0
+802855,Raúl Rangel,2026,CNNF,6303,True,2,2,0,106,0,0,0,0,0
 802855,Raúl Rangel,2025,USMX,6711,False,3,2,0,180,0,0,0,0,0
 802855,Raúl Rangel,2025,POMX,6711,False,2,2,0,180,0,0,0,0,0
 802855,Raúl Rangel,2025,POME,6711,False,4,0,4,0,0,0,0,0,0
@@ -11469,6 +11491,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704556,Bryan González,2017,FS,48724,True,3,1,0,64,0,1,0,0,0
 802857,Diego Campillo,2026,MEXA,6711,False,16,15,0,1197,1,1,2,1,1
 802857,Diego Campillo,2026,FS,6303,True,4,2,0,119,0,0,1,0,0
+802857,Diego Campillo,2026,CNNF,6303,True,2,0,0,0,0,0,0,0,0
 802857,Diego Campillo,2025,USMX,6711,False,3,3,0,187,0,0,0,0,0
 802857,Diego Campillo,2025,POMX,6711,False,2,0,0,0,0,0,0,0,0
 802857,Diego Campillo,2025,POME,6711,False,4,4,0,360,0,0,0,0,0
@@ -11698,6 +11721,46 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 596929,Gilberto Sepúlveda,2017,M20A,14700,False,15,4,0,111,0,0,0,0,0
 596929,Gilberto Sepúlveda,2017,FS,26092,True,3,1,0,90,0,0,0,0,0
 596929,Gilberto Sepúlveda,2017,C220,26092,True,8,7,0,585,2,0,5,1,1
+832308,Miguel Gómez,2026,MEXA,6711,False,16,4,0,155,0,0,1,1,1
+832308,Miguel Gómez,2025,USMX,6711,False,3,2,0,127,0,0,5,0,0
+832308,Miguel Gómez,2025,POMX,6711,False,2,1,0,13,0,0,0,0,0
+832308,Miguel Gómez,2025,POME,6711,False,4,4,0,161,0,1,0,0,0
+832308,Miguel Gómez,2025,MEXB,13362,False,1,1,0,86,0,0,0,0,0
+832308,Miguel Gómez,2025,MEXA,6711,False,17,10,0,361,0,2,3,0,1
+832308,Miguel Gómez,2025,MEX1,6711,False,17,11,0,180,0,0,1,0,0
+832308,Miguel Gómez,2025,M21A,110459,False,2,2,0,180,0,0,0,0,0
+832308,Miguel Gómez,2025,CACG,45997,True,5,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2024,USMX,6711,False,3,2,0,31,0,0,0,0,1
+832308,Miguel Gómez,2024,MXBF,13362,False,2,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2024,MXBA,13362,False,6,4,0,239,0,0,0,0,1
+832308,Miguel Gómez,2024,MEXB,13362,False,14,2,10,112,0,0,0,0,0
+832308,Miguel Gómez,2024,MEX2,13362,False,14,1,0,30,0,0,0,0,1
+832308,Miguel Gómez,2024,MEX1,6711,False,17,8,0,563,1,1,5,4,1
+832308,Miguel Gómez,2024,CCL,6711,False,4,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2023,MXBC,13362,False,4,0,4,0,0,0,0,0,0
+832308,Miguel Gómez,2023,MEXB,13362,False,14,14,0,1235,0,0,0,0,3
+832308,Miguel Gómez,2023,MEX2,13362,False,14,0,14,0,0,0,0,0,0
+832308,Miguel Gómez,2023,M23L,110459,False,6,6,0,457,0,0,0,0,0
+832308,Miguel Gómez,2022,MXBF,13362,False,2,2,0,180,0,0,0,0,1
+832308,Miguel Gómez,2022,MXBC,13362,False,6,6,0,555,1,0,0,0,2
+832308,Miguel Gómez,2022,MXBA,13362,False,1,1,0,15,0,0,0,0,0
+832308,Miguel Gómez,2022,MEXB,13362,False,17,13,0,865,0,0,0,0,1
+832308,Miguel Gómez,2022,MEX2,13362,False,17,15,0,1224,0,0,0,0,3
+832308,Miguel Gómez,2022,FS,45997,True,1,1,0,57,0,0,0,0,0
+832308,Miguel Gómez,2022,FS,16418,True,1,1,0,29,0,0,0,0,0
+832308,Miguel Gómez,2022,CACG,48791,True,4,1,0,90,0,0,0,0,0
+832308,Miguel Gómez,2021,POME,6711,False,3,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2021,MXBC,13362,False,1,1,0,90,1,0,0,0,0
+832308,Miguel Gómez,2021,MEXB,13362,False,16,16,0,1360,0,1,0,0,1
+832308,Miguel Gómez,2021,MEX2,13362,False,16,16,0,1307,1,1,0,0,2
+832308,Miguel Gómez,2021,MEX1,6711,False,11,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2020,MXBC,13362,False,3,0,0,0,0,0,0,0,0
+832308,Miguel Gómez,2020,MEXB,13362,False,2,1,0,90,0,0,0,0,1
+832308,Miguel Gómez,2020,MEX2,13362,False,15,1,0,51,0,0,0,0,0
+832308,Miguel Gómez,2020,M2L1,14700,False,6,6,0,405,0,0,0,0,1
+832308,Miguel Gómez,2020,M20C,14700,False,12,12,0,1005,2,0,0,0,0
+832308,Miguel Gómez,2020,M20A,14700,False,17,12,0,948,1,0,0,0,1
+832308,Miguel Gómez,2019,M20C,14700,False,2,2,0,175,0,0,0,0,0
 401340,Miguel Tapias,2026,MEXA,6711,False,16,0,0,0,0,0,0,0,0
 401340,Miguel Tapias,2025,USMX,6711,False,3,0,0,0,0,0,0,0,0
 401340,Miguel Tapias,2025,POMX,6711,False,2,0,0,0,0,0,0,0,0
@@ -11756,46 +11819,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 401340,Miguel Tapias,2015,FS,51023,True,3,3,0,270,0,0,0,0,0
 401340,Miguel Tapias,2014,M20C,25929,False,1,0,0,0,0,0,0,0,0
 401340,Miguel Tapias,2013,M20C,25929,False,1,1,0,19,0,0,0,0,0
-832308,Miguel Gómez,2026,MEXA,6711,False,16,4,0,155,0,0,1,1,1
-832308,Miguel Gómez,2025,USMX,6711,False,3,2,0,127,0,0,5,0,0
-832308,Miguel Gómez,2025,POMX,6711,False,2,1,0,13,0,0,0,0,0
-832308,Miguel Gómez,2025,POME,6711,False,4,4,0,161,0,1,0,0,0
-832308,Miguel Gómez,2025,MEXB,13362,False,1,1,0,86,0,0,0,0,0
-832308,Miguel Gómez,2025,MEXA,6711,False,17,10,0,361,0,2,3,0,1
-832308,Miguel Gómez,2025,MEX1,6711,False,17,11,0,180,0,0,1,0,0
-832308,Miguel Gómez,2025,M21A,110459,False,2,2,0,180,0,0,0,0,0
-832308,Miguel Gómez,2025,CACG,45997,True,5,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2024,USMX,6711,False,3,2,0,31,0,0,0,0,1
-832308,Miguel Gómez,2024,MXBF,13362,False,2,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2024,MXBA,13362,False,6,4,0,239,0,0,0,0,1
-832308,Miguel Gómez,2024,MEXB,13362,False,14,2,10,112,0,0,0,0,0
-832308,Miguel Gómez,2024,MEX2,13362,False,14,1,0,30,0,0,0,0,1
-832308,Miguel Gómez,2024,MEX1,6711,False,17,8,0,563,1,1,5,4,1
-832308,Miguel Gómez,2024,CCL,6711,False,4,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2023,MXBC,13362,False,4,0,4,0,0,0,0,0,0
-832308,Miguel Gómez,2023,MEXB,13362,False,14,14,0,1235,0,0,0,0,3
-832308,Miguel Gómez,2023,MEX2,13362,False,14,0,14,0,0,0,0,0,0
-832308,Miguel Gómez,2023,M23L,110459,False,6,6,0,457,0,0,0,0,0
-832308,Miguel Gómez,2022,MXBF,13362,False,2,2,0,180,0,0,0,0,1
-832308,Miguel Gómez,2022,MXBC,13362,False,6,6,0,555,1,0,0,0,2
-832308,Miguel Gómez,2022,MXBA,13362,False,1,1,0,15,0,0,0,0,0
-832308,Miguel Gómez,2022,MEXB,13362,False,17,13,0,865,0,0,0,0,1
-832308,Miguel Gómez,2022,MEX2,13362,False,17,15,0,1224,0,0,0,0,3
-832308,Miguel Gómez,2022,FS,45997,True,1,1,0,57,0,0,0,0,0
-832308,Miguel Gómez,2022,FS,16418,True,1,1,0,29,0,0,0,0,0
-832308,Miguel Gómez,2022,CACG,48791,True,4,1,0,90,0,0,0,0,0
-832308,Miguel Gómez,2021,POME,6711,False,3,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2021,MXBC,13362,False,1,1,0,90,1,0,0,0,0
-832308,Miguel Gómez,2021,MEXB,13362,False,16,16,0,1360,0,1,0,0,1
-832308,Miguel Gómez,2021,MEX2,13362,False,16,16,0,1307,1,1,0,0,2
-832308,Miguel Gómez,2021,MEX1,6711,False,11,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2020,MXBC,13362,False,3,0,0,0,0,0,0,0,0
-832308,Miguel Gómez,2020,MEXB,13362,False,2,1,0,90,0,0,0,0,1
-832308,Miguel Gómez,2020,MEX2,13362,False,15,1,0,51,0,0,0,0,0
-832308,Miguel Gómez,2020,M2L1,14700,False,6,6,0,405,0,0,0,0,1
-832308,Miguel Gómez,2020,M20C,14700,False,12,12,0,1005,2,0,0,0,0
-832308,Miguel Gómez,2020,M20A,14700,False,17,12,0,948,1,0,0,0,1
-832308,Miguel Gómez,2019,M20C,14700,False,2,2,0,175,0,0,0,0,0
 1095604,Ángel Chávez,2026,MEXB,13362,False,15,5,0,405,0,0,4,0,3
 1095604,Ángel Chávez,2026,MEXA,6711,False,14,1,0,11,0,0,0,0,0
 1095604,Ángel Chávez,2026,M21A,110459,False,1,1,0,90,0,0,0,0,0
@@ -11829,6 +11852,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1260851,Santiago Sandoval,2026,MEXA,6711,False,16,13,0,867,5,1,29,14,2
 1260851,Santiago Sandoval,2026,FS,6303,True,3,3,0,96,0,0,0,0,0
 1260851,Santiago Sandoval,2026,FS,26092,True,2,0,0,0,0,0,0,0,0
+1260851,Santiago Sandoval,2026,CNNF,6303,True,2,1,0,26,0,2,0,0,0
 1260851,Santiago Sandoval,2025,USMX,6711,False,3,1,0,19,1,0,2,2,0
 1260851,Santiago Sandoval,2025,POMX,6711,False,2,2,0,42,0,0,0,0,0
 1260851,Santiago Sandoval,2025,POME,6711,False,4,4,0,286,3,0,0,0,0
@@ -11937,6 +11961,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 724443,Brian Gutiérrez,2018,FS,25514,True,1,1,0,56,0,1,0,0,0
 532938,Luis Romo,2026,MEXA,6711,False,16,12,0,1053,0,2,5,1,1
 532938,Luis Romo,2026,FS,6303,True,4,2,0,74,0,0,2,0,1
+532938,Luis Romo,2026,CNNF,6303,True,2,1,0,64,0,0,0,0,0
 532938,Luis Romo,2025,USMX,6711,False,3,3,0,270,0,1,4,2,0
 532938,Luis Romo,2025,POMX,6711,False,2,2,0,180,0,0,0,0,0
 532938,Luis Romo,2025,POME,6711,False,4,0,4,0,0,0,0,0,0
@@ -12195,6 +12220,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1105433,Samir Inda,2022,CO17,23134,True,7,6,0,170,0,0,7,0,1
 353583,Roberto Alvarado,2026,MEXA,6711,False,16,15,0,1350,5,1,34,15,1
 353583,Roberto Alvarado,2026,FS,6303,True,4,4,0,231,0,0,2,1,0
+353583,Roberto Alvarado,2026,CNNF,6303,True,2,2,0,87,0,0,1,1,0
 353583,Roberto Alvarado,2025,USMX,6711,False,3,3,0,251,1,0,9,8,0
 353583,Roberto Alvarado,2025,POMX,6711,False,2,2,0,166,0,1,0,0,0
 353583,Roberto Alvarado,2025,POME,6711,False,4,0,4,0,0,0,0,0,0
@@ -12445,6 +12471,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 694158,Jonathan Pérez,2019,USLP,33285,False,1,1,0,45,0,0,2,0,0
 694158,Jonathan Pérez,2019,USL,33285,False,16,12,0,801,4,2,17,7,1
 694158,Jonathan Pérez,2019,MLS1,1061,False,19,0,0,0,0,0,0,0,0
+694158,Jonathan Pérez,2019,FS,51023,True,2,2,0,123,0,0,0,0,0
 694158,Jonathan Pérez,2019,FS,47231,True,3,1,0,80,0,0,0,0,0
 1094402,Sergio Aguayo,2026,MEXB,13362,False,2,1,0,65,0,0,2,0,0
 1094402,Sergio Aguayo,2026,MEXA,6711,False,2,0,0,0,0,0,0,0,0
@@ -12453,7 +12480,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1094402,Sergio Aguayo,2025,MEXB,13362,False,14,12,0,753,8,1,0,0,6
 1094402,Sergio Aguayo,2025,MEX2,13362,False,14,8,0,461,3,2,0,0,2
 1094402,Sergio Aguayo,2025,MEX1,6711,False,4,1,0,7,0,0,0,0,0
-1094402,Sergio Aguayo,2025,COL1,10503,False,16,11,0,462,2,0,16,4,0
+1094402,Sergio Aguayo,2025,COL1,10503,False,17,11,0,462,2,0,16,4,0
 1094402,Sergio Aguayo,2025,CLI,10503,False,2,2,0,69,0,0,1,1,0
 1094402,Sergio Aguayo,2024,MXBF,13362,False,2,2,0,157,0,0,0,0,1
 1094402,Sergio Aguayo,2024,MEXA,4035,False,17,6,0,162,1,0,7,2,1
@@ -12589,7 +12616,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 160700,Ángel Sepúlveda,2010,M2L2,26080,False,2,2,0,104,0,0,0,0,1
 160700,Ángel Sepúlveda,2010,M20C,26080,False,17,8,0,567,1,0,0,0,1
 160700,Ángel Sepúlveda,2010,M20A,26080,False,17,9,0,796,9,0,0,0,1
-1127591,Sebastián Liceaga,2026,MEXB,13362,False,10,6,0,540,0,0,0,0,0
+1127591,Sebastián Liceaga,2026,MEXB,13362,False,11,7,0,630,0,0,0,0,0
 1127591,Sebastián Liceaga,2026,MEXA,6711,False,16,0,0,0,0,0,0,0,0
 1127591,Sebastián Liceaga,2026,FS,26092,True,2,0,0,0,0,0,0,0,0
 1127591,Sebastián Liceaga,2025,USMX,6711,False,3,0,0,0,0,0,0,0,0
@@ -13665,7 +13692,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 310744,Fernando Gorriarán,2014,URU1,2419,False,15,9,1,500,0,0,0,0,2
 310744,Fernando Gorriarán,2013,URUC,2419,False,15,13,0,939,0,1,0,0,4
 310744,Fernando Gorriarán,2013,CS,2419,False,4,4,0,282,0,0,0,0,1
-1086869,Bernardo Parra,2026,MEXA,4961,False,15,10,0,299,0,0,3,1,1
+1086869,Bernardo Parra,2026,MEXA,4961,False,16,10,0,299,0,0,3,1,1
 1086869,Bernardo Parra,2025,USMX,4961,False,3,1,0,28,0,0,0,0,0
 1086869,Bernardo Parra,2025,POMX,7055,False,6,0,0,0,0,0,0,0,0
 1086869,Bernardo Parra,2025,MEXA,7055,False,17,9,0,532,0,1,3,0,1
@@ -14001,10 +14028,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668495,Marcelo Flores,2020,FS,6303,True,1,1,0,8,0,0,0,0,0
 668495,Marcelo Flores,2020,FAYC,5679,False,4,3,0,218,0,0,3,0,1
 668495,Marcelo Flores,2019,GB18,5679,False,9,3,0,131,0,0,0,0,0
+668495,Marcelo Flores,2019,FS,51023,True,2,2,0,123,0,0,0,0,0
 668495,Marcelo Flores,2019,FS,47231,True,3,2,0,177,1,0,0,0,0
 668495,Marcelo Flores,2019,FS,23134,True,2,1,0,90,1,0,0,0,0
 668495,Marcelo Flores,2019,FAYC,5679,False,4,2,0,51,0,1,0,0,0
-668495,Marcelo Flores,2018,FS,47231,True,4,3,0,147,0,0,0,0,0
+668495,Marcelo Flores,2018,FS,47231,True,4,4,0,172,0,0,0,0,0
 668495,Marcelo Flores,2018,17WC,23134,True,7,0,0,0,0,0,0,0,0
 355998,Uriel Antuna,2026,MEXA,7633,False,16,15,0,1235,0,2,22,3,2
 355998,Uriel Antuna,2025,USMX,7633,False,3,3,0,190,0,1,2,1,0
@@ -14313,7 +14341,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 503343,Alan Franco,2016,AR1N,1234,False,16,14,0,1260,0,0,6,0,0
 1288364,Jaidyn Contreras,2026,MEXA,7055,False,10,1,0,4,0,0,0,0,0
 1288364,Jaidyn Contreras,2026,M21A,110453,False,3,2,0,152,0,0,0,0,0
-1288364,Jaidyn Contreras,2026,FS,11946,True,3,2,0,119,0,0,0,0,0
+1288364,Jaidyn Contreras,2026,FS,11946,True,5,2,0,119,0,0,0,0,0
 1288364,Jaidyn Contreras,2025,USMX,8816,False,3,0,0,0,0,0,0,0,0
 1288364,Jaidyn Contreras,2025,MNP3,71021,False,21,14,0,876,1,2,0,0,4
 1288364,Jaidyn Contreras,2025,MLS1,8816,False,22,0,0,0,0,0,0,0,0
@@ -14452,7 +14480,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 280379,Luis Cárdenas,2011,M2L1,18498,False,2,0,0,0,0,0,0,0,0
 280379,Luis Cárdenas,2011,M20C,18498,False,17,1,0,90,0,0,0,0,0
 280379,Luis Cárdenas,2011,M20A,18498,False,17,1,0,90,0,0,0,0,0
-686444,Víctor Guzmán,2026,MEXA,2407,False,15,11,0,985,0,0,5,0,0
+686444,Víctor Guzmán,2026,MEXA,2407,False,16,11,0,985,0,0,5,0,0
 686444,Víctor Guzmán,2026,FS,6303,True,4,1,0,61,1,0,1,1,0
 686444,Víctor Guzmán,2025,USMX,2407,False,6,5,0,450,1,0,2,1,0
 686444,Víctor Guzmán,2025,POMX,2407,False,4,2,0,13,0,0,0,0,0
@@ -14513,7 +14541,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 686444,Víctor Guzmán,2018,M20C,32585,False,17,9,0,810,0,0,0,0,3
 686444,Víctor Guzmán,2018,CO17,23134,True,7,6,0,570,0,0,7,0,1
 686444,Víctor Guzmán,2018,17WC,23134,True,7,6,0,570,0,0,0,0,1
-469718,Gerardo Arteaga,2026,MEXA,2407,False,15,13,0,1067,0,0,6,2,1
+469718,Gerardo Arteaga,2026,MEXA,2407,False,16,13,0,1067,0,0,6,2,1
 469718,Gerardo Arteaga,2025,USMX,2407,False,6,5,0,373,0,1,4,0,1
 469718,Gerardo Arteaga,2025,POMX,2407,False,4,4,0,351,0,0,0,0,1
 469718,Gerardo Arteaga,2025,MEXA,2407,False,17,16,0,1150,1,1,9,3,0
@@ -14597,7 +14625,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 469718,Gerardo Arteaga,2016,M20C,25930,False,5,4,0,360,1,0,0,0,2
 469718,Gerardo Arteaga,2016,M20A,25930,False,17,9,0,810,3,0,0,0,0
 469718,Gerardo Arteaga,2015,M20C,25930,False,1,1,0,86,0,0,0,0,0
-833268,Alonso Aceves,2026,MEXA,2407,False,15,8,0,430,0,0,4,0,2
+833268,Alonso Aceves,2026,MEXA,2407,False,16,8,0,430,0,0,4,0,2
 833268,Alonso Aceves,2025,USMX,2407,False,6,2,0,180,0,0,2,1,0
 833268,Alonso Aceves,2025,POMX,4035,False,2,2,0,173,0,0,0,0,0
 833268,Alonso Aceves,2025,MEXA,4035,False,17,15,0,1292,1,2,20,5,2
@@ -14640,7 +14668,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 833268,Alonso Aceves,2019,M20C,25929,False,10,9,0,663,0,0,0,0,1
 833268,Alonso Aceves,2019,M20A,25929,False,18,0,0,0,0,0,0,0,0
 833268,Alonso Aceves,2017,FS,51023,True,1,1,0,90,0,0,0,0,0
-347577,Ricardo Chávez,2026,MEXA,2407,False,15,14,0,1055,0,2,10,2,4
+347577,Ricardo Chávez,2026,MEXA,2407,False,16,14,0,1055,0,2,10,2,4
 347577,Ricardo Chávez,2025,USMX,2407,False,6,6,0,391,0,1,2,0,0
 347577,Ricardo Chávez,2025,POMX,2407,False,4,4,0,229,0,1,0,0,1
 347577,Ricardo Chávez,2025,MEXA,2407,False,17,12,0,874,1,0,5,2,4
@@ -14708,7 +14736,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 347577,Ricardo Chávez,2012,M2L2,23019,False,6,5,0,62,0,0,0,0,0
 347577,Ricardo Chávez,2012,M20C,23019,False,17,10,0,770,0,0,0,0,3
 347577,Ricardo Chávez,2012,M20A,23019,False,1,1,0,15,0,0,0,0,0
-295373,Érick Aguirre,2026,MEXA,2407,False,15,5,0,151,0,0,0,0,0
+295373,Érick Aguirre,2026,MEXA,2407,False,16,5,0,151,0,0,0,0,0
 295373,Érick Aguirre,2025,USMX,2407,False,6,0,0,0,0,0,0,0,0
 295373,Érick Aguirre,2025,POMX,2407,False,4,3,0,131,0,0,0,0,0
 295373,Érick Aguirre,2025,MEXA,2407,False,17,10,0,449,0,1,4,2,1
@@ -14806,7 +14834,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 295373,Érick Aguirre,2013,FS,23134,True,1,1,0,90,0,0,0,0,0
 295373,Érick Aguirre,2012,CO17,23134,True,5,3,0,204,0,0,0,0,1
 295373,Érick Aguirre,2012,17WC,23134,True,7,6,0,496,0,0,0,0,1
-256866,Carlos Salcedo,2026,MEXA,2407,False,15,10,0,780,0,0,4,1,3
+256866,Carlos Salcedo,2026,MEXA,2407,False,16,10,0,780,0,0,4,1,3
 256866,Carlos Salcedo,2025,USMX,2407,False,6,5,0,312,0,0,1,0,1
 256866,Carlos Salcedo,2025,POMX,2407,False,4,0,0,0,0,0,0,0,0
 256866,Carlos Salcedo,2025,MEXA,2407,False,17,4,0,123,0,0,0,0,1
@@ -14966,7 +14994,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 670185,Luis Sánchez,2018,CCL,2407,False,1,0,0,0,0,0,0,0,0
 670185,Luis Sánchez,2017,M20C,18498,False,17,6,0,487,0,0,0,0,1
 670185,Luis Sánchez,2017,M20A,18498,False,4,2,0,92,0,0,0,0,0
-131093,Stefan Medina,2026,MEXA,2407,False,15,7,0,228,0,0,1,0,1
+131093,Stefan Medina,2026,MEXA,2407,False,16,7,0,228,0,0,1,0,1
 131093,Stefan Medina,2025,USMX,2407,False,6,1,0,63,0,0,0,0,0
 131093,Stefan Medina,2025,POMX,2407,False,4,4,0,360,0,0,0,0,1
 131093,Stefan Medina,2025,MEXA,2407,False,17,14,0,1104,0,0,1,1,2
@@ -15075,7 +15103,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 131093,Stefan Medina,2009,COLO,8172,False,6,1,0,90,0,0,0,0,1
 131093,Stefan Medina,2009,COL1,8172,False,18,0,0,0,0,0,0,0,0
 131093,Stefan Medina,2008,17WC,25508,True,7,2,0,102,0,0,0,0,0
-264133,Luis Reyes,2026,MEXA,2407,False,15,5,0,116,0,0,3,2,0
+264133,Luis Reyes,2026,MEXA,2407,False,16,5,0,116,0,0,3,2,0
 264133,Luis Reyes,2025,USMX,2407,False,6,2,0,62,0,0,2,0,1
 264133,Luis Reyes,2025,POMX,2407,False,4,2,0,54,0,0,0,0,1
 264133,Luis Reyes,2025,MEXA,2407,False,17,9,0,601,0,1,2,0,0
@@ -15157,7 +15185,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 264133,Luis Reyes,2011,M20C,23166,False,17,12,0,546,1,0,0,0,3
 264133,Luis Reyes,2011,M20A,23166,False,17,12,0,923,1,0,0,0,3
 264133,Luis Reyes,2010,M20C,23166,False,14,2,0,72,0,0,0,0,0
-944086,César Bustos,2026,MEXA,2407,False,15,0,0,0,0,0,0,0,0
+944086,César Bustos,2026,MEXA,2407,False,16,0,0,0,0,0,0,0,0
 944086,César Bustos,2026,M21A,110461,False,9,8,0,647,1,0,0,0,2
 944086,César Bustos,2025,USMX,2407,False,6,0,0,0,0,0,0,0,0
 944086,César Bustos,2025,POMX,2407,False,4,0,0,0,0,0,0,0,0
@@ -15213,7 +15241,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1429385,Diego García,2025,C220,26092,True,6,0,0,0,0,0,0,0,0
 1429385,Diego García,2025,21MC,110461,False,1,1,0,90,0,0,0,0,0
 1429385,Diego García,2024,M192,18498,False,1,0,0,0,0,0,0,0,0
-1095326,Iker Fimbres,2026,MEXA,2407,False,15,9,0,170,0,0,6,0,0
+1095326,Iker Fimbres,2026,MEXA,2407,False,16,9,0,170,0,0,6,0,0
 1095326,Iker Fimbres,2025,USMX,2407,False,6,3,0,113,0,0,0,0,0
 1095326,Iker Fimbres,2025,POMX,2407,False,4,4,0,170,0,0,0,0,1
 1095326,Iker Fimbres,2025,MEXA,2407,False,17,7,4,267,0,0,4,1,0
@@ -15333,7 +15361,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 66106,Sergio Canales,2008,19EU,12609,True,3,3,0,99,0,0,0,0,1
 66106,Sergio Canales,2007,U17Q,12395,True,2,1,0,40,1,0,0,0,0
 66106,Sergio Canales,2007,17EU,12395,True,5,5,0,173,0,0,0,0,0
-723240,Fidel Ambríz,2026,MEXA,2407,False,15,10,0,413,0,1,6,2,1
+723240,Fidel Ambríz,2026,MEXA,2407,False,16,10,0,413,0,1,6,2,1
 723240,Fidel Ambríz,2025,USMX,2407,False,6,6,0,198,0,0,2,0,0
 723240,Fidel Ambríz,2025,POMX,2407,False,4,4,0,278,0,0,0,0,0
 723240,Fidel Ambríz,2025,MEXA,2407,False,17,13,0,824,1,0,13,3,1
@@ -15397,7 +15425,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 723240,Fidel Ambríz,2019,M20C,23001,False,10,3,0,270,1,0,0,0,0
 723240,Fidel Ambríz,2019,M20A,23001,False,13,2,0,180,0,0,0,0,0
 723240,Fidel Ambríz,2019,CCL,4941,False,2,0,0,0,0,0,0,0,0
-214775,Óliver Torres,2026,MEXA,2407,False,15,15,0,1043,0,5,9,3,4
+214775,Óliver Torres,2026,MEXA,2407,False,16,15,0,1043,0,5,9,3,4
 214775,Óliver Torres,2025,USMX,2407,False,6,5,0,379,0,0,1,0,0
 214775,Óliver Torres,2025,POMX,2407,False,4,4,0,300,0,0,0,0,0
 214775,Óliver Torres,2025,MEXA,2407,False,17,15,0,1209,1,4,4,2,4
@@ -15477,7 +15505,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 214775,Óliver Torres,2011,ES1,13,False,4,0,0,0,0,0,0,0,0
 214775,Óliver Torres,2011,EL,13,False,1,0,0,0,0,0,0,0,0
 214775,Óliver Torres,2011,19EU,12609,True,5,4,0,335,0,0,0,0,1
-333760,Jorge Rodríguez,2026,MEXA,2407,False,15,8,0,383,1,0,1,1,0
+333760,Jorge Rodríguez,2026,MEXA,2407,False,16,8,0,383,1,0,1,1,0
 333760,Jorge Rodríguez,2025,USMX,2407,False,6,4,0,227,0,0,2,0,3
 333760,Jorge Rodríguez,2025,POMX,2407,False,4,3,0,251,0,0,0,0,1
 333760,Jorge Rodríguez,2025,MEXA,2407,False,17,16,0,1115,0,0,9,1,3
@@ -15555,7 +15583,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 955217,Omar Gálvez,2023,M23C,110461,False,1,1,0,28,0,0,0,0,0
 955217,Omar Gálvez,2022,FS,23134,True,2,2,0,148,0,0,0,0,0
 955217,Omar Gálvez,2021,FS,23134,True,7,2,0,180,1,2,0,0,0
-1015089,Sebastián Rodríguez,2026,MEXA,2407,False,15,0,0,0,0,0,0,0,0
+1015089,Sebastián Rodríguez,2026,MEXA,2407,False,16,0,0,0,0,0,0,0,0
 1015089,Sebastián Rodríguez,2026,M21A,110461,False,13,11,0,918,1,0,0,0,0
 1015089,Sebastián Rodríguez,2026,FS,26092,True,2,0,0,0,0,0,0,0,0
 1015089,Sebastián Rodríguez,2025,USMX,2407,False,6,0,0,0,0,0,0,0,0
@@ -15609,7 +15637,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 955219,Álex Urías,2023,USMX,2407,False,2,0,0,0,0,0,0,0,0
 955219,Álex Urías,2023,FS,51023,True,5,0,0,0,0,0,0,0,0
 955219,Álex Urías,2023,FS,23134,True,1,0,0,0,0,0,0,0,0
-955219,Álex Urías,2022,FS,51023,True,3,1,0,90,0,0,0,0,0
+955219,Álex Urías,2022,FS,51023,True,3,2,0,180,0,0,0,0,0
 955219,Álex Urías,2022,FS,23134,True,5,2,0,180,0,0,0,0,0
 955219,Álex Urías,2022,CO17,23134,True,7,6,0,505,5,1,22,12,1
 955219,Álex Urías,2022,17WC,23134,True,4,4,0,154,0,1,3,2,0
@@ -15698,7 +15726,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 955314,Joel Domínguez,2022,M20C,18498,False,12,6,0,413,0,0,0,0,0
 955314,Joel Domínguez,2022,FS,51023,True,6,0,0,0,0,0,0,0,0
 955314,Joel Domínguez,2021,FS,51023,True,3,3,0,188,0,0,0,0,0
-636784,Luca Orellano,2026,MEXA,2407,False,15,13,0,691,1,0,27,14,1
+636784,Luca Orellano,2026,MEXA,2407,False,16,13,0,691,1,0,27,14,1
 636784,Luca Orellano,2025,USMX,2407,False,6,6,0,189,0,0,2,0,1
 636784,Luca Orellano,2025,MEX1,2407,False,17,14,3,1046,3,4,35,14,1
 636784,Luca Orellano,2025,CCL,2407,False,4,4,0,214,0,0,1,0,0
@@ -15734,7 +15762,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 636784,Luca Orellano,2018,ARLC,1029,False,4,0,0,0,0,0,0,0,0
 636784,Luca Orellano,2018,ARCA,1029,False,1,0,0,0,0,0,0,0,0
 636784,Luca Orellano,2018,AR1N,1029,False,13,1,0,3,0,0,0,0,0
-189441,Lucas Ocampos,2026,MEXA,2407,False,15,13,0,1011,7,3,45,16,2
+189441,Lucas Ocampos,2026,MEXA,2407,False,16,13,0,1011,7,3,45,16,2
 189441,Lucas Ocampos,2025,USMX,2407,False,6,6,0,469,1,3,16,5,2
 189441,Lucas Ocampos,2025,POMX,2407,False,4,1,0,12,0,0,0,0,0
 189441,Lucas Ocampos,2025,MEXA,2407,False,17,14,0,909,5,6,42,14,3
@@ -15899,7 +15927,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 182877,Anthony Martial,2011,17EU,10831,True,3,3,0,187,1,0,0,0,1
 182877,Anthony Martial,2010,FS,10844,True,8,8,0,400,3,0,0,0,0
 182877,Anthony Martial,2010,F17M,106295,False,3,0,0,0,0,0,0,0,0
-371168,Roberto de la Rosa,2026,MEXA,2407,False,15,6,0,186,2,0,9,3,0
+371168,Roberto de la Rosa,2026,MEXA,2407,False,16,6,0,186,2,0,9,3,0
 371168,Roberto de la Rosa,2025,USMX,2407,False,6,3,0,84,0,0,4,1,1
 371168,Roberto de la Rosa,2025,POMX,2407,False,4,4,0,98,1,0,0,0,0
 371168,Roberto de la Rosa,2025,MEXA,2407,False,17,6,0,69,1,0,6,2,0
@@ -15960,8 +15988,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 371168,Roberto de la Rosa,2016,CO17,23134,True,6,6,0,507,3,3,0,0,0
 371168,Roberto de la Rosa,2016,17WC,23134,True,4,4,0,353,2,1,0,0,0
 371168,Roberto de la Rosa,2014,FS,48724,True,5,4,0,241,1,0,0,0,0
-125165,Jesús Corona,2026,MEXA,2407,False,15,13,0,788,2,2,15,5,1
+125165,Jesús Corona,2026,MEXA,2407,False,16,13,0,788,2,2,15,5,1
 125165,Jesús Corona,2026,FS,6303,True,4,0,0,0,0,0,0,0,0
+125165,Jesús Corona,2026,CNNF,6303,True,2,2,0,35,0,0,1,0,0
 125165,Jesús Corona,2025,USMX,2407,False,6,6,0,439,0,0,5,0,0
 125165,Jesús Corona,2025,POMX,2407,False,4,3,0,180,0,1,0,0,1
 125165,Jesús Corona,2025,MEXA,2407,False,17,15,0,825,1,1,11,4,1
@@ -16094,7 +16123,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 125165,Jesús Corona,2010,M20C,18498,False,17,8,0,599,0,0,0,0,1
 125165,Jesús Corona,2010,M20A,18498,False,17,11,0,752,0,0,0,0,1
 125165,Jesús Corona,2010,CCL,2407,False,12,2,0,10,0,0,0,0,0
-190804,Uros Djurdjevic,2026,MEXA,2407,False,15,5,0,84,0,0,5,0,1
+190804,Uros Djurdjevic,2026,U17Q,21136,True,2,0,0,0,0,0,0,0,0
+190804,Uros Djurdjevic,2026,MEXA,2407,False,16,5,0,84,0,0,5,0,1
 190804,Uros Djurdjevic,2026,FS,21136,True,2,0,0,0,0,0,0,0,0
 190804,Uros Djurdjevic,2025,USMX,2407,False,6,2,0,77,0,0,2,2,0
 190804,Uros Djurdjevic,2025,U17Q,21136,True,6,0,0,0,0,0,0,0,0
@@ -16232,7 +16262,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1224695,Cristian Reyes,2023,MEX1,2407,False,17,0,0,0,0,0,0,0,0
 1224695,Cristian Reyes,2023,M23C,110461,False,17,14,0,1110,1,0,0,0,2
 1224695,Cristian Reyes,2023,CCL,2407,False,8,0,0,0,0,0,0,0,0
-105888,Esteban Andrada,2026,MEXA,2407,False,15,9,5,810,0,0,0,0,0
+105888,Esteban Andrada,2026,MEXA,2407,False,16,9,5,810,0,0,0,0,0
 105888,Esteban Andrada,2025,USMX,2407,False,6,3,3,270,0,0,0,0,0
 105888,Esteban Andrada,2025,MEXA,2407,False,7,0,3,0,0,0,0,0,0
 105888,Esteban Andrada,2025,ES2,142,False,39,27,6,2430,0,0,0,0,9
@@ -16363,8 +16393,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1105435,Joaquín Moxica,2023,M23C,110461,False,17,7,0,561,2,0,0,0,1
 1105435,Joaquín Moxica,2023,CCL,2407,False,5,0,0,0,0,0,0,0,0
 1105435,Joaquín Moxica,2022,M20C,18498,False,1,1,0,9,0,0,0,0,0
+1105435,Joaquín Moxica,2022,FS,51023,True,1,0,0,0,0,0,0,0,0
 1105435,Joaquín Moxica,2022,CO17,23134,True,7,7,0,229,1,3,9,5,0
-540306,César Ramos,2026,MEXA,2407,False,15,0,0,0,0,0,0,0,0
+540306,César Ramos,2026,MEXA,2407,False,16,0,0,0,0,0,0,0,0
 540306,César Ramos,2026,M21A,110461,False,6,6,0,540,0,0,0,0,0
 540306,César Ramos,2025,USMX,2407,False,6,0,0,0,0,0,0,0,0
 540306,César Ramos,2025,POME,8590,False,2,0,0,0,0,0,0,0,0
@@ -16429,7 +16460,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 540306,César Ramos,2017,M20A,18498,False,14,0,0,0,0,0,0,0,0
 540306,César Ramos,2016,17WC,23134,True,4,0,0,0,0,0,0,0,0
 540306,César Ramos,2015,M20A,18498,False,14,0,0,0,0,0,0,0,0
-334042,Orbelín Pineda,2026,MEXA,2407,False,15,12,0,872,1,2,13,3,1
+334042,Orbelín Pineda,2026,MEXA,2407,False,16,13,0,962,1,2,13,3,1
 334042,Orbelín Pineda,2026,FS,6303,True,4,3,0,171,0,0,3,0,0
 334042,Orbelín Pineda,2025,USMX,2407,False,6,5,0,410,2,0,7,5,1
 334042,Orbelín Pineda,2025,UCOL,2441,False,10,10,0,883,0,2,11,1,2
@@ -16531,7 +16562,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 334042,Orbelín Pineda,2013,MEX1,4961,False,14,0,0,0,0,0,0,0,0
 334042,Orbelín Pineda,2013,M20C,24999,False,17,10,0,885,0,0,0,0,0
 334042,Orbelín Pineda,2012,M20C,24999,False,1,0,0,0,0,0,0,0,0
-1171460,César Garza,2026,MEXA,2407,False,15,8,0,653,1,0,2,1,3
+1171460,César Garza,2026,MEXA,2407,False,16,9,0,698,1,0,3,2,3
 1171460,César Garza,2025,USMX,2407,False,6,1,0,12,0,0,0,0,0
 1171460,César Garza,2025,SCP,511,False,4,3,0,256,0,0,4,2,0
 1171460,César Garza,2025,SC1,511,False,20,2,0,22,0,0,0,0,0
@@ -16555,7 +16586,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1171460,César Garza,2023,FS,26092,True,1,1,0,18,0,0,0,0,1
 1171460,César Garza,2023,CCL,2407,False,8,2,0,29,0,0,2,2,0
 1171460,César Garza,2023,C220,26092,True,6,5,0,435,0,0,3,0,1
-923204,Javier Casillas,2026,MEXA,2407,False,15,0,0,0,0,0,0,0,0
+923204,Javier Casillas,2026,MEXA,2407,False,16,0,0,0,0,0,0,0,0
 923204,Javier Casillas,2026,FS,26092,True,2,0,0,0,0,0,0,0,0
 923204,Javier Casillas,2025,USMX,2407,False,6,0,0,0,0,0,0,0,0
 923204,Javier Casillas,2025,MEXB,18662,False,14,12,0,953,2,3,0,0,1
@@ -16592,8 +16623,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 923204,Javier Casillas,2019,M20C,18498,False,11,10,0,615,0,0,0,0,1
 923204,Javier Casillas,2019,M20A,18498,False,18,13,0,944,0,0,0,0,4
 923204,Javier Casillas,2019,FS,26092,True,1,0,0,0,0,0,0,0,0
-420884,Hugo Cuypers,2026,UNLA,3382,True,1,1,0,11,0,0,1,1,0
-420884,Hugo Cuypers,2026,MEXA,2407,False,14,14,0,1039,6,1,26,16,0
+420884,Hugo Cuypers,2026,UNLA,3382,True,2,1,0,11,0,0,1,1,0
+420884,Hugo Cuypers,2026,MEXA,2407,False,15,14,0,1039,6,1,26,16,0
 420884,Hugo Cuypers,2025,USMX,2407,False,6,6,0,478,3,0,11,3,1
 420884,Hugo Cuypers,2025,MLSP,432,False,2,1,1,64,0,0,3,0,0
 420884,Hugo Cuypers,2025,MLS1,432,False,14,11,3,990,13,1,40,22,1
@@ -16643,7 +16674,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 420884,Hugo Cuypers,2015,POBE,3057,False,6,1,0,7,0,0,0,0,0
 420884,Hugo Cuypers,2015,FS,16338,True,1,1,0,45,0,0,0,0,0
 420884,Hugo Cuypers,2013,BE2,3172,False,1,0,0,0,0,0,0,0,0
-317454,Diego Rossi,2026,MEXA,2407,False,15,14,0,1024,5,3,29,13,2
+317454,Diego Rossi,2026,MEXA,2407,False,16,14,0,1024,5,3,29,13,2
 317454,Diego Rossi,2025,USMX,2407,False,6,6,0,474,2,1,9,4,1
 317454,Diego Rossi,2025,MLSP,813,False,3,1,0,90,0,0,0,0,0
 317454,Diego Rossi,2025,MLS1,813,False,15,15,0,1262,6,1,39,13,0
@@ -16702,7 +16733,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 317454,Diego Rossi,2015,CS,861,False,2,1,0,1,0,0,0,0,0
 317454,Diego Rossi,2015,CLI,861,False,6,1,0,69,0,0,0,0,0
 317454,Diego Rossi,2014,FS,25512,True,3,3,0,174,1,1,0,0,0
-1427169,Paxon Ruffin,2026,MEXA,2407,False,5,2,0,31,0,0,1,0,1
+1427169,Paxon Ruffin,2026,MEXA,2407,False,6,2,0,31,0,0,1,0,1
 1427169,Paxon Ruffin,2026,M191,18498,False,16,0,0,0,0,0,0,0,0
 1427169,Paxon Ruffin,2026,FS,25514,True,4,4,0,181,1,0,0,0,0
 1427169,Paxon Ruffin,2025,FS,48724,True,7,6,0,311,3,0,0,0,0
@@ -16940,7 +16971,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 715428,Rafael Fernández,2018,M20C,24999,False,17,6,0,367,0,0,0,0,1
 715428,Rafael Fernández,2018,M20A,24999,False,17,8,0,690,1,0,0,0,3
 491616,Jackson Porozo,2026,MEXA,13353,False,16,14,0,1260,1,0,10,3,2
-491616,Jackson Porozo,2026,FS,5750,True,3,2,0,180,0,0,0,0,1
+491616,Jackson Porozo,2026,FS,5750,True,5,4,0,360,0,0,2,0,1
 491616,Jackson Porozo,2025,USMX,13353,False,3,3,0,270,0,0,3,1,1
 491616,Jackson Porozo,2025,POMX,13353,False,3,2,0,180,0,0,0,0,2
 491616,Jackson Porozo,2025,MEXA,13353,False,17,17,0,1530,2,0,9,2,5
@@ -17181,6 +17212,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1340121,Alejandro Magallón,2024,M191,32585,False,17,14,0,861,0,0,0,0,0
 1155723,Gilberto Mora,2026,MEXA,13353,False,16,10,4,645,5,1,17,9,0
 1155723,Gilberto Mora,2026,FS,6303,True,4,1,2,64,1,0,1,1,0
+1155723,Gilberto Mora,2026,CNNF,6303,True,2,2,0,106,1,0,1,0,0
 1155723,Gilberto Mora,2025,USMX,13353,False,3,2,0,170,0,0,4,0,0
 1155723,Gilberto Mora,2025,POMX,13353,False,3,3,0,256,2,0,0,0,1
 1155723,Gilberto Mora,2025,MEXA,13353,False,17,11,4,808,3,1,18,7,0
@@ -17679,41 +17711,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 694157,Diego Abreu,2022,17WC,23134,True,4,0,0,0,0,0,0,0,0
 694157,Diego Abreu,2021,FS,92717,True,2,2,0,124,1,0,0,0,0
 694157,Diego Abreu,2021,FS,23134,True,7,0,4,0,0,0,0,0,0
+694157,Diego Abreu,2019,FS,51023,True,1,1,0,41,0,0,0,0,0
 694157,Diego Abreu,2019,FS,47231,True,3,1,0,65,2,0,0,0,0
 694157,Diego Abreu,2019,FS,23134,True,2,1,0,90,1,0,0,0,0
 694157,Diego Abreu,2018,17WC,23134,True,7,0,0,0,0,0,0,0,0
-813048,Vitinho,2025,POMX,13353,False,3,1,0,17,0,0,0,0,0
-813048,Vitinho,2025,MEXA,40188,False,1,0,0,0,0,0,0,0,0
-813048,Vitinho,2025,MEXA,13353,False,16,8,0,214,0,0,4,0,0
-813048,Vitinho,2025,MEX1,13353,False,3,0,0,0,0,0,0,0,0
-813048,Vitinho,2025,BRNE,10870,False,10,7,0,407,4,0,0,0,2
-813048,Vitinho,2025,BRCE,10870,False,6,4,0,156,1,0,4,2,0
-813048,Vitinho,2025,BRC,10870,False,7,5,0,196,1,1,5,0,0
-813048,Vitinho,2025,BRA2,10870,False,37,28,0,1703,6,0,39,19,3
-813048,Vitinho,2024,USMX,13353,False,3,2,0,86,0,0,6,2,0
-813048,Vitinho,2024,POMX,40188,False,4,4,0,274,1,1,8,6,1
-813048,Vitinho,2024,MEXA,40188,False,17,7,2,308,1,0,17,8,1
-813048,Vitinho,2024,MEX1,40188,False,17,17,0,1389,5,2,40,16,3
-813048,Vitinho,2023,USMX,40188,False,2,2,0,160,0,0,7,4,0
-813048,Vitinho,2023,POMX,40188,False,5,4,0,211,1,0,3,2,1
-813048,Vitinho,2023,MEXA,40188,False,17,17,0,854,6,1,36,17,1
-813048,Vitinho,2023,MEX1,40188,False,17,13,0,767,1,3,23,9,2
-813048,Vitinho,2022,USMX,40188,False,2,2,0,107,0,0,3,2,0
-813048,Vitinho,2022,POME,40188,False,3,3,0,238,1,1,7,1,1
-813048,Vitinho,2022,MEXA,40188,False,17,17,0,793,0,0,23,5,2
-813048,Vitinho,2022,MEX1,40188,False,17,15,0,745,2,0,25,9,3
-813048,Vitinho,2021,SPjr,14708,False,8,8,0,649,5,3,0,0,2
-813048,Vitinho,2021,CB20,14708,False,3,0,0,0,0,0,0,0,0
-813048,Vitinho,2020,CLI,585,False,10,0,0,0,0,0,0,0,0
-813048,Vitinho,2020,CB20,14708,False,19,13,0,1066,7,3,0,0,2
-813048,Vitinho,2020,C20P,14708,False,6,5,0,331,1,1,0,0,2
-813048,Vitinho,2020,BRC,585,False,6,0,0,0,0,0,0,0,0
-813048,Vitinho,2020,BRA1,585,False,38,0,0,0,0,0,0,0,0
-813048,Vitinho,2020,BCPF,585,False,4,0,0,0,0,0,0,0,0
-813048,Vitinho,2020,BCP1,585,False,9,2,0,9,0,0,0,0,0
-813048,Vitinho,2019,SPjr,14708,False,7,3,0,118,0,0,0,0,0
-813048,Vitinho,2019,CB20,14708,False,19,13,0,730,1,1,0,0,1
-813048,Vitinho,2019,C20P,14708,False,2,2,0,58,1,0,0,0,0
 527972,Mourad El Ghezouani,2026,MEXA,13353,False,16,13,0,767,4,0,21,8,0
 527972,Mourad El Ghezouani,2025,USMX,13353,False,3,2,0,105,1,0,5,2,0
 527972,Mourad El Ghezouani,2025,POMX,13353,False,3,3,0,259,2,0,0,0,1
@@ -17738,6 +17739,38 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 527972,Mourad El Ghezouani,2019,ES1P,1531,False,4,0,0,0,0,0,0,0,0
 527972,Mourad El Ghezouani,2019,CDR,1531,False,3,3,0,248,2,0,0,0,0
 527972,Mourad El Ghezouani,2018,E3PL,4054,False,2,0,0,0,0,0,0,0,0
+813048,Vitinho,2025,POMX,13353,False,3,1,0,17,0,0,0,0,0
+813048,Vitinho,2025,MEXA,40188,False,1,0,0,0,0,0,0,0,0
+813048,Vitinho,2025,MEXA,13353,False,16,8,0,214,0,0,4,0,0
+813048,Vitinho,2025,MEX1,13353,False,3,0,0,0,0,0,0,0,0
+813048,Vitinho,2025,BRNE,10870,False,10,7,0,407,4,0,0,0,2
+813048,Vitinho,2025,BRCE,10870,False,6,4,0,156,1,0,4,2,0
+813048,Vitinho,2025,BRC,10870,False,7,5,0,196,1,1,5,0,0
+813048,Vitinho,2025,BRA2,10870,False,38,28,0,1703,6,0,39,19,3
+813048,Vitinho,2024,USMX,13353,False,3,2,0,86,0,0,6,2,0
+813048,Vitinho,2024,POMX,40188,False,4,4,0,274,1,1,8,6,1
+813048,Vitinho,2024,MEXA,40188,False,17,7,2,308,1,0,17,8,1
+813048,Vitinho,2024,MEX1,40188,False,17,17,0,1389,5,2,40,16,3
+813048,Vitinho,2023,USMX,40188,False,2,2,0,160,0,0,7,4,0
+813048,Vitinho,2023,POMX,40188,False,5,4,0,211,1,0,3,2,1
+813048,Vitinho,2023,MEXA,40188,False,17,17,0,854,6,1,36,17,1
+813048,Vitinho,2023,MEX1,40188,False,17,13,0,767,1,3,23,9,2
+813048,Vitinho,2022,USMX,40188,False,2,2,0,107,0,0,3,2,0
+813048,Vitinho,2022,POME,40188,False,3,3,0,238,1,1,7,1,1
+813048,Vitinho,2022,MEXA,40188,False,17,17,0,793,0,0,23,5,2
+813048,Vitinho,2022,MEX1,40188,False,17,15,0,745,2,0,25,9,3
+813048,Vitinho,2021,SPjr,14708,False,8,8,0,649,5,3,0,0,2
+813048,Vitinho,2021,CB20,14708,False,3,0,0,0,0,0,0,0,0
+813048,Vitinho,2020,CLI,585,False,10,0,0,0,0,0,0,0,0
+813048,Vitinho,2020,CB20,14708,False,19,13,0,1066,7,3,0,0,2
+813048,Vitinho,2020,C20P,14708,False,6,5,0,331,1,1,0,0,2
+813048,Vitinho,2020,BRC,585,False,6,0,0,0,0,0,0,0,0
+813048,Vitinho,2020,BRA1,585,False,38,0,0,0,0,0,0,0,0
+813048,Vitinho,2020,BCPF,585,False,4,0,0,0,0,0,0,0,0
+813048,Vitinho,2020,BCP1,585,False,9,2,0,9,0,0,0,0,0
+813048,Vitinho,2019,SPjr,14708,False,7,3,0,118,0,0,0,0,0
+813048,Vitinho,2019,CB20,14708,False,19,13,0,730,1,1,0,0,1
+813048,Vitinho,2019,C20P,14708,False,2,2,0,58,1,0,0,0,0
 162569,Josef Martínez,2026,MEXA,13353,False,3,0,0,0,0,0,0,0,0
 162569,Josef Martínez,2025,USMX,813,False,1,1,0,66,0,0,3,2,0
 162569,Josef Martínez,2025,USMX,13353,False,2,0,0,0,0,0,0,0,0
@@ -17930,7 +17963,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 285127,Domingo Blanco,2017,RECO,1234,False,2,0,0,0,0,0,0,0,0
 285127,Domingo Blanco,2017,CS,2402,False,6,4,0,338,0,0,0,0,0
 285127,Domingo Blanco,2017,CLI,1234,False,6,0,0,0,0,0,0,0,0
-285127,Domingo Blanco,2017,ARY3,15372,False,16,5,0,397,1,0,0,0,0
+285127,Domingo Blanco,2017,ARY3,15372,False,12,5,0,397,1,0,0,0,0
 285127,Domingo Blanco,2017,ARCA,2402,False,1,0,0,0,0,0,0,0,0
 285127,Domingo Blanco,2017,AR1N,1234,False,27,5,0,188,0,0,2,1,0
 285127,Domingo Blanco,2016,CS,1234,False,12,2,0,81,0,0,0,0,0
@@ -18054,7 +18087,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 703564,Francisco González,2019,ARCA,1286,False,2,0,0,0,0,0,0,0,0
 703564,Francisco González,2019,AR1N,1286,False,20,1,0,6,0,0,0,0,0
 703564,Francisco González,2018,ARLC,1286,False,1,1,0,69,0,0,0,0,0
-703564,Francisco González,2017,ARY3,14836,False,9,6,0,300,0,0,0,0,0
+703564,Francisco González,2017,ARY3,14836,False,10,7,0,390,0,0,0,0,0
 79422,Keylor Navas,2026,MEXA,7633,False,16,16,0,1440,0,0,0,0,1
 79422,Keylor Navas,2026,CNLA,8497,True,4,2,0,180,0,0,0,0,0
 79422,Keylor Navas,2025,USMX,7633,False,3,3,0,270,0,0,0,0,0
@@ -18686,7 +18719,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 745454,Tony Leone,2019,CCL,51828,False,3,0,0,0,0,0,0,0,0
 745454,Tony Leone,2018,FS,28437,True,3,3,0,177,0,0,1,0,0
 659806,Pedro Vite,2026,MEXA,7633,False,16,15,0,1163,1,1,9,2,5
-659806,Pedro Vite,2026,FS,5750,True,3,3,0,198,0,0,1,0,0
+659806,Pedro Vite,2026,FS,5750,True,5,5,0,362,0,0,2,0,0
 659806,Pedro Vite,2025,USMX,7633,False,3,3,0,192,0,0,2,0,1
 659806,Pedro Vite,2025,POMX,7633,False,1,1,0,45,1,0,0,0,0
 659806,Pedro Vite,2025,POME,7633,False,6,6,0,540,0,1,1,1,1
@@ -18771,7 +18804,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 662451,José Caicedo,2018,COL1,11648,False,20,4,0,286,0,0,0,0,2
 375300,Adalberto Carrasquilla,2026,MEXA,7633,False,16,13,2,793,0,2,12,2,3
 375300,Adalberto Carrasquilla,2026,FS,3577,True,3,3,0,175,0,0,0,0,1
-375300,Adalberto Carrasquilla,2026,CNNF,3577,True,1,1,0,90,0,0,0,0,0
+375300,Adalberto Carrasquilla,2026,CNNF,3577,True,2,2,0,180,0,0,0,0,0
 375300,Adalberto Carrasquilla,2025,USMX,7633,False,3,3,0,199,0,0,4,3,1
 375300,Adalberto Carrasquilla,2025,POMX,7633,False,1,0,0,0,0,0,0,0,0
 375300,Adalberto Carrasquilla,2025,POME,7633,False,6,6,0,428,0,1,5,1,1
@@ -18965,7 +18998,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 950873,Jorge Ruvalcaba,2021,FS,45997,True,5,4,0,130,1,0,0,0,1
 950873,Jorge Ruvalcaba,2021,CCL,7633,False,8,2,0,36,0,0,0,0,0
 832340,Robert Morales,2026,MEXA,7633,False,16,15,0,1336,5,4,33,10,2
-832340,Robert Morales,2026,FS,3581,True,2,1,0,61,0,1,0,0,1
+832340,Robert Morales,2026,FS,3581,True,4,2,0,131,0,1,0,0,1
 832340,Robert Morales,2025,USMX,7633,False,3,1,0,82,0,0,0,0,0
 832340,Robert Morales,2025,POMX,1804,False,6,5,0,129,0,0,1,0,0
 832340,Robert Morales,2025,POME,7633,False,6,6,0,534,1,0,2,0,1
@@ -19417,7 +19450,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704555,Israel Luna,2018,CO17,23134,True,7,7,0,540,5,0,22,8,1
 704555,Israel Luna,2018,17WC,23134,True,7,7,0,414,2,0,12,7,0
 74113,Camilo Vargas,2026,MEXA,8590,False,16,15,0,1350,0,0,0,0,0
-74113,Camilo Vargas,2026,FS,3816,True,3,0,0,0,0,0,0,0,0
+74113,Camilo Vargas,2026,FS,3816,True,5,1,0,90,0,0,0,0,0
 74113,Camilo Vargas,2025,USMX,8590,False,3,3,0,270,0,0,0,0,0
 74113,Camilo Vargas,2025,POME,8590,False,2,2,0,180,0,0,0,0,0
 74113,Camilo Vargas,2025,MEXA,8590,False,17,15,2,1350,0,1,0,0,2
@@ -19670,7 +19703,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 419457,Gaddi Aguirre,2015,M20C,23166,False,17,3,0,270,1,0,0,0,0
 419457,Gaddi Aguirre,2015,M20A,23166,False,17,14,0,1260,1,0,0,0,2
 387129,Róber Pier,2026,MEXA,8590,False,5,0,0,0,0,0,0,0,0
-387129,Róber Pier,2026,E3G1,4542,False,11,6,0,457,1,0,3,1,3
+387129,Róber Pier,2026,E3G1,4542,False,12,6,0,457,1,0,3,1,3
 387129,Róber Pier,2026,CDR,4542,False,1,0,0,0,0,0,0,0,0
 387129,Róber Pier,2025,USMX,8590,False,3,0,0,0,0,0,0,0,0
 387129,Róber Pier,2025,POME,8590,False,2,0,0,0,0,0,0,0,0
@@ -20650,6 +20683,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1233678,José Martín,2023,M23C,110457,False,2,2,0,144,0,0,0,0,1
 1087243,Óscar García,2026,MEXA,4941,False,16,14,0,1260,0,0,0,0,0
 1087243,Óscar García,2026,FS,6303,True,4,1,0,90,0,0,0,0,0
+1087243,Óscar García,2026,CNNF,6303,True,2,0,0,0,0,0,0,0,0
 1087243,Óscar García,2025,USMX,4941,False,6,6,0,540,0,0,0,0,0
 1087243,Óscar García,2025,MEXA,4941,False,17,14,0,1260,0,0,0,0,1
 1087243,Óscar García,2025,MEX1,4941,False,17,14,0,1260,0,0,0,0,0
@@ -21041,7 +21075,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 212699,Stiven Barreiro,2025,MEXA,4941,False,17,15,0,1343,0,0,8,2,6
 212699,Stiven Barreiro,2025,MEX1,4941,False,17,16,0,1350,0,0,8,2,5
 212699,Stiven Barreiro,2025,COPO,2350,False,1,1,0,15,0,0,0,0,0
-212699,Stiven Barreiro,2025,COL1,2350,False,18,16,0,1330,0,0,11,2,2
+212699,Stiven Barreiro,2025,COL1,2350,False,19,17,0,1420,0,0,12,2,3
 212699,Stiven Barreiro,2024,USMX,4941,False,3,2,0,180,0,0,0,0,2
 212699,Stiven Barreiro,2024,POME,4941,False,2,2,0,180,0,0,0,0,1
 212699,Stiven Barreiro,2024,MEXA,4941,False,17,17,0,1507,1,0,13,4,3
@@ -21525,7 +21559,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 549294,Fernando Beltrán,2016,M20C,14700,False,17,15,0,1333,0,0,0,0,3
 549294,Fernando Beltrán,2016,M20A,14700,False,17,15,0,978,0,0,0,0,0
 265726,Rodrigo Echeverría,2026,MEXA,4941,False,16,14,0,1063,0,1,4,2,4
-265726,Rodrigo Echeverría,2026,FS,3700,True,3,3,0,93,0,0,0,0,0
+265726,Rodrigo Echeverría,2026,FS,3700,True,5,5,0,194,0,0,0,0,1
 265726,Rodrigo Echeverría,2025,USMX,4941,False,6,6,0,469,0,0,4,0,0
 265726,Rodrigo Echeverría,2025,MEXA,4941,False,17,16,1,1412,0,0,10,1,4
 265726,Rodrigo Echeverría,2025,MEX1,4941,False,17,17,0,1478,0,1,26,5,3
@@ -21884,7 +21918,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 570431,Alfonso Alvarado,2016,CO17,23134,True,6,3,0,74,0,0,0,0,0
 243298,Ismael Díaz,2026,MEXA,4941,False,16,13,0,724,3,1,23,9,0
 243298,Ismael Díaz,2026,FS,3577,True,3,0,0,0,0,0,0,0,0
-243298,Ismael Díaz,2026,CNNF,3577,True,1,0,0,0,0,0,0,0,0
+243298,Ismael Díaz,2026,CNNF,3577,True,2,1,0,55,0,0,0,0,0
 243298,Ismael Díaz,2025,USMX,4941,False,6,3,0,71,0,0,0,0,0
 243298,Ismael Díaz,2025,MEXA,4941,False,15,12,0,770,5,1,22,9,0
 243298,Ismael Díaz,2025,MEX1,4941,False,17,15,0,1162,5,5,32,12,0
@@ -21976,7 +22010,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 243298,Ismael Díaz,2012,17WC,32652,True,3,3,0,178,0,1,0,0,0
 243298,Ismael Díaz,2011,PN1A,12371,False,18,8,0,294,1,0,0,0,2
 1006054,Daniel Arcila,2026,MEXA,4941,False,16,15,0,1094,4,1,30,15,3
-1006054,Daniel Arcila,2026,FS,3816,True,3,1,0,29,1,0,2,1,0
+1006054,Daniel Arcila,2026,FS,3816,True,5,2,0,100,1,0,3,1,0
 1006054,Daniel Arcila,2025,USMX,4941,False,6,6,0,519,4,1,21,13,2
 1006054,Daniel Arcila,2025,MEXA,4941,False,14,7,0,195,1,0,12,3,0
 1006054,Daniel Arcila,2025,MEX1,4941,False,17,14,0,562,3,0,23,6,2
@@ -22082,7 +22116,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1040204,Nicolás Vallejo,2021,CLPI,15372,False,14,9,0,467,1,0,0,0,0
 1040204,Nicolás Vallejo,2021,ARCA,1234,False,2,2,0,45,0,0,3,1,0
 1040204,Nicolás Vallejo,2021,AR1N,1234,False,18,11,0,266,2,0,11,5,1
-994121,Gael García,2026,MEXB,13362,False,15,11,0,679,3,3,17,10,2
+994121,Gael García,2026,MEXB,13362,False,15,12,0,703,3,3,17,10,2
 994121,Gael García,2025,MEXA,4941,False,17,1,0,5,0,0,0,0,0
 994121,Gael García,2025,MEX1,4941,False,17,0,0,0,0,0,0,0,0
 994121,Gael García,2025,M21C,110460,False,12,7,0,570,0,0,0,0,2
@@ -22451,20 +22485,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 433962,Benny Díaz,2016,M20A,24999,False,17,5,0,450,0,0,0,0,0
 433962,Benny Díaz,2014,M20C,24999,False,14,0,0,0,0,0,0,0,0
 433962,Benny Díaz,2014,M20A,24999,False,1,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2026,MEXA,49283,False,16,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2026,M21A,110446,False,9,4,0,360,0,0,0,0,0
-991158,Guillermo Ruiz,2025,USMX,49283,False,3,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2025,POMX,49283,False,4,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2025,MEXA,49283,False,17,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2025,MEX1,49283,False,17,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2025,M21C,110446,False,17,11,0,990,0,0,0,0,1
-991158,Guillermo Ruiz,2025,M21A,110446,False,17,13,0,1170,0,0,0,0,3
-991158,Guillermo Ruiz,2025,21MA,110446,False,2,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2024,USMX,49283,False,3,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2024,ES1,1244,False,19,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2024,CDR,1244,False,1,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2022,E3PL,92878,False,4,0,0,0,0,0,0,0,0
-991158,Guillermo Ruiz,2021,E4G5,171,False,4,0,0,0,0,0,0,0,0
 817133,Moisés Mosquera,2025,POMX,49283,False,4,0,0,0,0,0,0,0,0
 817133,Moisés Mosquera,2025,MLS1,4284,False,20,8,1,626,0,0,3,0,3
 817133,Moisés Mosquera,2025,MEXA,49283,False,17,13,0,1125,0,0,7,3,2
@@ -22493,6 +22513,20 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 817133,Moisés Mosquera,2020,PO1,1301,False,34,0,0,0,0,0,0,0,0
 817133,Moisés Mosquera,2020,P232,67837,False,10,1,0,90,1,0,0,0,0
 817133,Moisés Mosquera,2019,PT23,67837,False,33,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2026,MEXA,49283,False,16,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2026,M21A,110446,False,9,4,0,360,0,0,0,0,0
+991158,Guillermo Ruiz,2025,USMX,49283,False,3,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2025,POMX,49283,False,4,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2025,MEXA,49283,False,17,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2025,MEX1,49283,False,17,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2025,M21C,110446,False,17,11,0,990,0,0,0,0,1
+991158,Guillermo Ruiz,2025,M21A,110446,False,17,13,0,1170,0,0,0,0,3
+991158,Guillermo Ruiz,2025,21MA,110446,False,2,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2024,USMX,49283,False,3,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2024,ES1,1244,False,19,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2024,CDR,1244,False,1,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2022,E3PL,92878,False,4,0,0,0,0,0,0,0,0
+991158,Guillermo Ruiz,2021,E4G5,171,False,4,0,0,0,0,0,0,0,0
 364058,Jesús Murillo,2026,MEXA,49283,False,16,14,0,1077,0,0,8,0,4
 364058,Jesús Murillo,2025,USMX,49283,False,3,3,0,243,0,0,0,0,2
 364058,Jesús Murillo,2025,POMX,49283,False,4,4,0,360,1,0,0,0,0
@@ -23198,7 +23232,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1086940,Jan Carlo Carmona,2022,M20A,53220,False,17,3,0,213,0,0,0,0,0
 1086940,Jan Carlo Carmona,2021,M20C,53220,False,17,15,0,926,1,0,0,0,2
 1086940,Jan Carlo Carmona,2021,M20A,53220,False,7,3,0,230,1,0,0,0,0
-1087215,Israel Larios,2026,MXBA,100124,False,2,0,0,0,0,0,0,0,0
+1087215,Israel Larios,2026,MXBA,100124,False,4,0,0,0,0,0,0,0,0
 1087215,Israel Larios,2026,MEXB,100124,False,14,9,0,159,1,1,4,1,2
 1087215,Israel Larios,2025,POMX,49283,False,4,0,0,0,0,0,0,0,0
 1087215,Israel Larios,2025,MEXA,49283,False,17,0,0,0,0,0,0,0,0
@@ -23299,7 +23333,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 371185,Jairo Torres,2014,FS,48724,True,5,4,0,255,2,0,0,0,1
 425028,José Luis Rodríguez,2026,MEXA,49283,False,16,15,0,1060,2,3,19,6,1
 425028,José Luis Rodríguez,2026,FS,3577,True,3,2,0,177,0,1,0,0,0
-425028,José Luis Rodríguez,2026,CNNF,3577,True,1,1,0,90,0,0,0,0,0
+425028,José Luis Rodríguez,2026,CNNF,3577,True,2,2,0,125,0,0,0,0,0
 425028,José Luis Rodríguez,2025,USMX,49283,False,3,3,0,233,0,1,5,2,0
 425028,José Luis Rodríguez,2025,POMX,49283,False,4,4,0,309,1,2,0,0,0
 425028,José Luis Rodríguez,2025,MEXA,49283,False,17,17,0,1288,1,3,23,7,4
@@ -24039,7 +24073,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 623444,Danny Leyva,2018,CO17,25514,True,7,7,0,545,0,1,6,1,0
 623444,Danny Leyva,2018,17WC,25514,True,3,3,0,270,0,0,0,0,0
 623444,Danny Leyva,2017,USL,46720,False,1,1,0,90,0,0,1,0,0
-491698,Agustín Almendra,2025,PR1C,1214,False,19,4,0,107,0,1,2,0,0
+491698,Agustín Almendra,2025,PYC1,1214,False,3,0,0,0,0,0,0,0,0
+491698,Agustín Almendra,2025,PR1C,1214,False,19,5,0,152,0,1,2,0,0
 491698,Agustín Almendra,2025,MEX1,1146,False,17,10,0,442,0,0,6,0,0
 491698,Agustín Almendra,2025,CLI,1214,False,2,0,0,0,0,0,0,0,0
 491698,Agustín Almendra,2024,RECO,1444,False,2,1,0,12,0,0,0,0,0
@@ -24350,10 +24385,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 568546,Tomás Badaloni,2018,CLI,12574,False,2,0,0,0,0,0,0,0,0
 568546,Tomás Badaloni,2018,ARCA,12574,False,2,0,0,0,0,0,0,0,0
 568546,Tomás Badaloni,2018,AR1N,12574,False,14,0,0,0,0,0,0,0,0
-568546,Tomás Badaloni,2017,ARY3,19445,False,15,10,0,532,1,0,0,0,0
+568546,Tomás Badaloni,2017,ARY3,19445,False,16,10,0,532,1,0,0,0,0
 568546,Tomás Badaloni,2017,ARCA,12574,False,1,0,0,0,0,0,0,0,0
 568546,Tomás Badaloni,2017,AR1N,12574,False,12,0,0,0,0,0,0,0,0
-536619,Raúl Sánchez,2026,ES2,2502,False,13,7,0,271,0,0,5,2,1
+536619,Raúl Sánchez,2026,ES2,2502,False,14,8,0,292,0,0,7,2,1
 536619,Raúl Sánchez,2026,CDR,2502,False,1,1,0,90,0,0,0,0,0
 536619,Raúl Sánchez,2025,MEXA,1146,False,17,10,0,248,0,0,5,0,2
 536619,Raúl Sánchez,2025,MEX1,1146,False,3,3,0,135,0,0,0,0,0
@@ -24666,33 +24701,33 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 992527,Matías Espíndola,2021,CDCA,11831,False,3,0,0,0,0,0,0,0,0
 992527,Matías Espíndola,2021,ARCA,11831,False,2,0,0,0,0,0,0,0,0
 992527,Matías Espíndola,2021,AR1N,11831,False,27,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2026,MEXA,1146,False,16,10,0,375,0,0,13,7,1
-1031802,Juan Torres,2026,M21A,110451,False,1,1,0,70,0,0,0,0,0
-1031802,Juan Torres,2025,USMX,1146,False,3,2,0,168,1,0,3,2,0
-1031802,Juan Torres,2025,COLP,10503,False,19,14,0,1024,6,4,35,16,5
-1031802,Juan Torres,2025,COLF,10503,False,4,4,0,277,1,0,6,2,0
-1031802,Juan Torres,2025,CLI,10503,False,10,10,0,593,1,2,13,6,2
-1031802,Juan Torres,2024,COSP,8172,False,2,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2024,COPO,10503,False,2,1,0,45,0,0,0,0,1
-1031802,Juan Torres,2024,COLP,8172,False,20,2,0,91,0,0,2,0,0
-1031802,Juan Torres,2024,COLO,10503,False,8,7,0,251,1,1,11,4,0
-1031802,Juan Torres,2024,COLF,8172,False,6,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2024,COL1,10503,False,20,18,0,913,2,4,31,10,3
-1031802,Juan Torres,2024,CLI,8172,False,6,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2023,COPO,8172,False,8,3,0,36,0,1,0,0,0
-1031802,Juan Torres,2023,COLP,8172,False,19,7,0,197,0,0,2,0,1
-1031802,Juan Torres,2023,COLO,8172,False,8,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2023,COL1,8172,False,19,3,0,77,0,0,4,3,0
-1031802,Juan Torres,2023,CLI,8172,False,2,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2022,COSP,8172,False,2,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2022,COPO,8172,False,8,5,0,210,0,0,0,0,0
-1031802,Juan Torres,2022,COLP,8172,False,20,10,0,400,0,0,6,5,1
-1031802,Juan Torres,2022,COLO,8172,False,6,5,0,270,0,0,0,0,1
-1031802,Juan Torres,2022,COLF,8172,False,8,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2022,COL1,8172,False,20,11,0,562,3,1,0,0,1
-1031802,Juan Torres,2022,CLI,8172,False,8,4,0,193,0,0,3,1,0
-1031802,Juan Torres,2021,COPO,8172,False,1,0,0,0,0,0,0,0,0
-1031802,Juan Torres,2021,COL1,8172,False,4,1,0,35,0,0,0,0,0
+1031802,Juan Pablo Torres,2026,MEXA,1146,False,16,10,0,375,0,0,13,7,1
+1031802,Juan Pablo Torres,2026,M21A,110451,False,1,1,0,70,0,0,0,0,0
+1031802,Juan Pablo Torres,2025,USMX,1146,False,3,2,0,168,1,0,3,2,0
+1031802,Juan Pablo Torres,2025,COLP,10503,False,19,14,0,1024,6,4,35,16,5
+1031802,Juan Pablo Torres,2025,COLF,10503,False,4,4,0,277,1,0,6,2,0
+1031802,Juan Pablo Torres,2025,CLI,10503,False,10,10,0,593,1,2,13,6,2
+1031802,Juan Pablo Torres,2024,COSP,8172,False,2,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2024,COPO,10503,False,2,1,0,45,0,0,0,0,1
+1031802,Juan Pablo Torres,2024,COLP,8172,False,20,2,0,91,0,0,2,0,0
+1031802,Juan Pablo Torres,2024,COLO,10503,False,8,7,0,251,1,1,11,4,0
+1031802,Juan Pablo Torres,2024,COLF,8172,False,6,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2024,COL1,10503,False,20,18,0,913,2,4,31,10,3
+1031802,Juan Pablo Torres,2024,CLI,8172,False,6,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2023,COPO,8172,False,8,3,0,36,0,1,0,0,0
+1031802,Juan Pablo Torres,2023,COLP,8172,False,19,7,0,197,0,0,2,0,1
+1031802,Juan Pablo Torres,2023,COLO,8172,False,8,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2023,COL1,8172,False,19,3,0,77,0,0,4,3,0
+1031802,Juan Pablo Torres,2023,CLI,8172,False,2,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2022,COSP,8172,False,2,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2022,COPO,8172,False,8,5,0,210,0,0,0,0,0
+1031802,Juan Pablo Torres,2022,COLP,8172,False,20,10,0,400,0,0,6,5,1
+1031802,Juan Pablo Torres,2022,COLO,8172,False,6,5,0,270,0,0,0,0,1
+1031802,Juan Pablo Torres,2022,COLF,8172,False,8,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2022,COL1,8172,False,20,11,0,562,3,1,0,0,1
+1031802,Juan Pablo Torres,2022,CLI,8172,False,8,4,0,193,0,0,3,1,0
+1031802,Juan Pablo Torres,2021,COPO,8172,False,1,0,0,0,0,0,0,0,0
+1031802,Juan Pablo Torres,2021,COL1,8172,False,4,1,0,35,0,0,0,0,0
 1106878,Juan Valencia,2026,MEXA,1146,False,16,11,0,438,2,1,19,8,2
 1106878,Juan Valencia,2026,M21A,110451,False,1,1,0,86,0,0,0,0,1
 1106878,Juan Valencia,2025,USMX,1146,False,3,2,0,76,1,0,1,1,0
@@ -24817,7 +24852,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 540305,César López,2016,FS,23134,True,2,0,0,0,0,0,0,0,0
 540305,César López,2016,CO17,23134,True,6,6,0,540,0,0,0,0,0
 540305,César López,2016,17WC,23134,True,4,4,0,360,0,0,0,0,0
-446106,Juan Manuel Sanabria,2026,FS,3449,True,3,2,0,106,1,0,0,0,0
+446106,Juan Manuel Sanabria,2026,FS,3449,True,4,2,0,106,1,0,0,0,0
 446106,Juan Manuel Sanabria,2025,USMX,6643,False,4,4,0,256,0,0,3,0,0
 446106,Juan Manuel Sanabria,2025,MLS1,6643,False,34,29,0,2331,2,6,31,10,5
 446106,Juan Manuel Sanabria,2025,MEXA,40188,False,17,16,1,1440,1,4,10,4,3
@@ -25231,12 +25266,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 552948,Benjamín Galindo,2016,FS,51023,True,1,1,0,90,0,0,0,0,0
 552948,Benjamín Galindo,2015,M20C,14700,False,1,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2026,MEXB,28185,False,15,12,0,1080,1,0,14,5,4
-1006077,Javier Suárez,2026,MEXA,3711,False,13,1,0,4,0,0,0,0,0
+1006077,Javier Suárez,2026,MEXA,3711,False,14,1,0,4,0,0,0,0,0
 1006077,Javier Suárez,2025,USMX,3711,False,3,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2025,MEXA,40188,False,17,7,0,377,0,0,1,0,0
 1006077,Javier Suárez,2025,MEX1,40188,False,17,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2025,M21C,110468,False,16,12,0,963,2,0,0,0,1
 1006077,Javier Suárez,2025,M21A,110468,False,9,4,0,360,0,0,0,0,2
+1006077,Javier Suárez,2025,FS,51023,True,1,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2025,CAMC,3711,False,1,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2024,USMX,40188,False,3,1,0,86,0,1,1,0,0
 1006077,Javier Suárez,2024,POMX,3711,False,4,0,0,0,0,0,0,0,0
@@ -25258,10 +25294,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1006077,Javier Suárez,2023,M2LC,110455,False,2,2,0,135,0,0,0,0,0
 1006077,Javier Suárez,2023,M23C,110455,False,17,11,0,710,0,0,0,0,0
 1006077,Javier Suárez,2023,M23A,110455,False,17,11,0,937,0,0,0,0,0
+1006077,Javier Suárez,2023,FS,51023,True,5,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2023,FS,23134,True,1,1,0,90,0,0,0,0,0
 1006077,Javier Suárez,2022,USMX,3711,False,3,0,0,0,0,0,0,0,0
 1006077,Javier Suárez,2022,M20C,25928,False,3,2,0,180,0,0,0,0,0
-1006077,Javier Suárez,2022,FS,51023,True,1,1,0,90,0,0,0,0,0
+1006077,Javier Suárez,2022,FS,51023,True,3,2,0,180,0,0,1,1,0
 1006077,Javier Suárez,2022,FS,23134,True,5,2,0,180,1,0,0,0,0
 1006077,Javier Suárez,2022,CO17,23134,True,7,7,0,597,1,1,2,1,1
 1006077,Javier Suárez,2022,17WC,23134,True,4,3,0,128,0,0,0,0,0
@@ -25632,7 +25669,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 549419,Óscar Macías,2016,M2L1,14700,False,2,2,0,135,1,0,0,0,0
 549419,Óscar Macías,2016,M20C,14700,False,17,16,0,721,0,0,0,0,2
 549419,Óscar Macías,2016,M20A,14700,False,17,9,0,602,0,0,0,0,2
-854686,Jahaziel Marchand,2026,MXBA,23505,False,2,1,0,90,0,0,0,0,0
+854686,Jahaziel Marchand,2026,MXBA,23505,False,4,2,0,180,0,0,0,0,0
 854686,Jahaziel Marchand,2026,MEXB,23505,False,14,13,0,1170,3,0,16,4,4
 854686,Jahaziel Marchand,2025,MEXA,40188,False,17,8,0,49,0,0,0,0,1
 854686,Jahaziel Marchand,2025,MEX1,40188,False,17,0,0,0,0,0,0,0,0
@@ -26465,8 +26502,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 294804,Eduardo Bauermann,2013,BRC,6600,False,5,0,0,0,0,0,0,0,0
 294804,Eduardo Bauermann,2013,BRA1,6600,False,38,0,0,0,0,0,0,0,0
 294804,Eduardo Bauermann,2012,17WC,23130,True,5,5,0,480,0,0,0,0,1
-833269,René López,2026,MXBA,5623,False,2,0,0,0,0,0,0,0,0
-833269,René López,2026,MEXB,5623,False,15,14,0,1207,2,0,22,6,1
+833269,René López,2026,MXBA,5623,False,4,0,0,0,0,0,0,0,0
+833269,René López,2026,MEXB,5623,False,15,15,0,1242,2,0,22,6,1
 833269,René López,2025,POME,4035,False,4,1,0,15,0,0,0,0,0
 833269,René López,2025,MXBA,23505,False,2,2,0,180,0,0,0,0,0
 833269,René López,2025,MEXB,23505,False,14,14,0,1040,0,1,0,0,2
@@ -26742,7 +26779,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 955233,Gael Álvarez,2023,M23C,110447,False,16,10,0,425,0,0,0,0,0
 955233,Gael Álvarez,2023,FS,51023,True,5,0,0,0,0,0,0,0,0
 955233,Gael Álvarez,2023,FS,23134,True,1,0,0,0,0,0,0,0,0
-955233,Gael Álvarez,2022,FS,51023,True,3,0,0,0,0,0,0,0,0
+955233,Gael Álvarez,2022,FS,51023,True,3,1,0,90,0,0,0,0,0
 955233,Gael Álvarez,2022,FS,23134,True,5,2,0,148,0,0,0,0,0
 955233,Gael Álvarez,2022,CO17,23134,True,7,7,0,435,2,1,21,6,1
 955233,Gael Álvarez,2022,17WC,23134,True,4,4,0,178,0,1,5,0,0
@@ -26878,7 +26915,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 139503,Enner Valencia,2025,FIWC,5750,True,4,4,0,290,0,0,10,6,0
 139503,Enner Valencia,2025,CS,189,False,6,5,0,146,0,0,2,0,1
 139503,Enner Valencia,2025,ARGC,189,False,13,10,0,354,3,2,14,6,1
-139503,Enner Valencia,2025,ARCA,189,False,2,2,0,63,3,0,4,3,1
+139503,Enner Valencia,2025,ARCA,189,False,3,3,0,97,3,0,5,3,1
 139503,Enner Valencia,2024,CLI,6600,False,8,5,2,242,1,0,6,1,1
 139503,Enner Valencia,2024,BRRS,6600,False,12,10,0,622,5,1,10,5,0
 139503,Enner Valencia,2024,BRC,6600,False,4,3,1,102,0,0,3,1,0
@@ -27230,8 +27267,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 227404,Luis Quiñónes,2025,POME,4035,False,4,3,0,22,0,0,0,0,0
 227404,Luis Quiñónes,2025,MEXA,4035,False,17,16,0,1154,2,0,29,7,4
 227404,Luis Quiñónes,2025,MEX1,4035,False,17,15,0,425,0,0,11,3,2
-227404,Luis Quiñónes,2025,COPO,2352,False,5,3,0,132,0,0,0,0,1
-227404,Luis Quiñónes,2025,COL1,2352,False,18,16,0,1220,3,6,25,9,4
+227404,Luis Quiñónes,2025,COPO,2352,False,6,3,0,132,0,0,0,0,1
+227404,Luis Quiñónes,2025,COL1,2352,False,19,16,0,1220,3,6,25,9,4
 227404,Luis Quiñónes,2024,USMX,4035,False,4,4,0,244,1,0,3,1,0
 227404,Luis Quiñónes,2024,MEXA,7055,False,5,4,0,172,0,1,4,1,0
 227404,Luis Quiñónes,2024,MEXA,5662,False,11,11,0,880,3,1,12,6,5
@@ -27428,7 +27465,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 400208,Francisco Venegas,2014,17WC,23134,True,7,6,1,540,3,0,0,0,2
 1059499,Pedro Budib,2026,MEXA,4035,False,16,2,0,97,0,0,0,0,1
 1059499,Pedro Budib,2026,M21A,110447,False,5,5,0,426,0,0,0,0,0
-1059499,Pedro Budib,2026,FS,3586,True,2,2,0,77,1,0,0,0,0
+1059499,Pedro Budib,2026,FS,3586,True,4,2,0,77,1,0,0,0,0
 1059499,Pedro Budib,2025,USMX,4035,False,3,1,0,4,0,0,0,0,0
 1059499,Pedro Budib,2025,M21C,110447,False,17,12,0,1065,2,0,0,0,4
 1059499,Pedro Budib,2025,M21A,110447,False,17,4,0,315,1,0,0,0,1
@@ -27560,7 +27597,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704867,Illian Hernández,2020,M20A,25929,False,17,15,0,1302,8,0,0,0,3
 704867,Illian Hernández,2019,MEXB,44772,False,5,0,0,0,0,0,0,0,0
 704867,Illian Hernández,2019,CPMX,44772,False,3,2,0,7,0,0,0,0,0
-401349,José Hernández,2026,MEXA,4961,False,15,0,0,0,0,0,0,0,0
+401349,José Hernández,2026,MEXA,4961,False,16,0,0,0,0,0,0,0,0
 401349,José Hernández,2025,USMX,4961,False,3,1,0,90,0,0,0,0,0
 401349,José Hernández,2025,MEXA,4961,False,17,5,0,450,0,0,0,0,0
 401349,José Hernández,2025,MEX1,4961,False,17,8,0,668,0,0,0,0,0
@@ -27636,7 +27673,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 401349,José Hernández,2015,M20C,23166,False,17,8,0,720,0,0,0,0,1
 401349,José Hernández,2015,M20A,23166,False,17,4,0,360,0,0,0,0,0
 401349,José Hernández,2015,FS,51023,True,3,3,0,225,0,0,0,0,0
-73523,Guillermo Allison,2026,MEXA,4961,False,15,15,0,1350,0,0,0,0,0
+73523,Guillermo Allison,2026,MEXA,4961,False,16,15,0,1350,0,0,0,0,0
 73523,Guillermo Allison,2025,USMX,4961,False,3,2,0,180,0,0,0,0,0
 73523,Guillermo Allison,2025,MEXA,4961,False,17,12,0,1080,0,0,0,0,4
 73523,Guillermo Allison,2025,MEX1,4961,False,17,10,0,862,0,0,0,0,1
@@ -27763,7 +27800,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 828257,Luis Villegas,2019,M20C,24999,False,10,0,0,0,0,0,0,0,0
 828257,Luis Villegas,2019,M20A,24999,False,18,0,0,0,0,0,0,0,0
 828257,Luis Villegas,2018,M20C,24999,False,1,0,0,0,0,0,0,0,0
-689230,Lucas Abascia,2026,MEXA,4961,False,15,14,0,1260,0,0,10,2,6
+689230,Lucas Abascia,2026,MEXA,4961,False,16,14,0,1260,0,0,10,2,6
 689230,Lucas Abascia,2025,USMX,4961,False,3,3,0,222,0,0,1,0,1
 689230,Lucas Abascia,2025,MEX1,4961,False,17,16,0,1440,0,0,5,1,6
 689230,Lucas Abascia,2024,CS,31284,False,4,3,0,250,0,0,0,0,1
@@ -27796,7 +27833,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 689230,Lucas Abascia,2017,ARCA,14597,False,2,0,0,0,0,0,0,0,0
 689230,Lucas Abascia,2016,ARCA,9645,False,1,0,0,0,0,0,0,0,0
 689230,Lucas Abascia,2016,ARCA,14597,False,1,0,0,0,0,0,0,0,0
-370869,Daniel Parra,2026,MEXA,4961,False,15,15,0,1321,0,1,14,2,4
+370869,Daniel Parra,2026,MEXA,4961,False,16,15,0,1321,0,1,14,2,4
 370869,Daniel Parra,2025,USMX,4961,False,3,2,0,180,0,0,2,0,1
 370869,Daniel Parra,2025,MXBA,5623,False,4,3,0,120,0,0,0,0,2
 370869,Daniel Parra,2025,MEXB,5623,False,14,11,0,990,1,1,0,0,5
@@ -27863,7 +27900,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 370869,Daniel Parra,2016,FS,51023,True,2,2,0,180,0,0,0,0,0
 370869,Daniel Parra,2016,CCL,2407,False,4,3,0,245,0,0,0,0,0
 370869,Daniel Parra,2014,FS,47231,True,1,1,0,32,0,0,0,0,1
-131090,Diego Reyes,2026,MEXA,4961,False,15,14,0,1237,0,0,2,1,2
+131090,Diego Reyes,2026,MEXA,4961,False,16,14,0,1237,0,0,2,1,2
 131090,Diego Reyes,2025,USMX,4961,False,3,3,0,225,0,0,1,1,1
 131090,Diego Reyes,2025,MEXA,4961,False,13,10,1,862,0,0,8,0,1
 131090,Diego Reyes,2025,MEX1,4961,False,17,14,0,1260,0,0,3,0,1
@@ -27983,7 +28020,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 131090,Diego Reyes,2009,MEX1,3631,False,2,1,0,4,0,0,0,0,0
 131090,Diego Reyes,2008,CO17,23134,True,1,1,0,90,0,0,0,0,0
 131090,Diego Reyes,2008,17WC,23134,True,4,3,0,239,0,0,0,0,0
-1186946,Bayron Duarte,2026,MEXA,4961,False,15,14,0,896,0,1,5,0,6
+1186946,Bayron Duarte,2026,MEXA,4961,False,16,14,0,896,0,1,5,0,6
 1186946,Bayron Duarte,2025,USMX,4961,False,3,2,0,142,0,0,4,3,0
 1186946,Bayron Duarte,2025,MEX1,4961,False,17,10,0,727,0,0,7,1,4
 1186946,Bayron Duarte,2024,CS,6495,False,2,1,0,88,0,0,2,1,1
@@ -28064,7 +28101,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 244724,Jaime Gómez,2011,M2L2,24999,False,2,2,0,141,0,0,0,0,0
 244724,Jaime Gómez,2011,M20C,24999,False,17,5,0,337,0,0,0,0,2
 244724,Jaime Gómez,2011,M20A,24999,False,17,8,0,486,2,0,0,0,0
-234242,Carlos Villanueva,2026,MEXA,4961,False,15,10,0,391,0,0,0,0,1
+234242,Carlos Villanueva,2026,MEXA,4961,False,16,10,0,391,0,0,0,0,1
 234242,Carlos Villanueva,2025,USMX,4961,False,3,2,0,93,0,0,0,0,0
 234242,Carlos Villanueva,2025,MEXA,4961,False,15,8,0,495,0,0,2,1,2
 234242,Carlos Villanueva,2025,MEX1,4961,False,17,6,0,383,0,0,1,0,0
@@ -28218,7 +28255,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 135851,Omar Mendoza,2006,MEX2,28185,False,17,0,0,0,0,0,0,0,0
 135851,Omar Mendoza,2005,MXBC,28185,False,4,0,0,0,0,0,0,0,0
 135851,Omar Mendoza,2005,MEX2,28185,False,19,0,0,0,0,0,0,0,0
-895679,Santiago Homenchenko,2026,MEXA,4961,False,15,12,3,1080,5,2,32,10,5
+895679,Santiago Homenchenko,2026,MEXA,4961,False,16,12,4,1080,5,2,32,10,5
 895679,Santiago Homenchenko,2025,USMX,4961,False,3,3,0,225,0,0,11,4,2
 895679,Santiago Homenchenko,2025,MEXA,4961,False,14,13,0,1125,4,0,17,7,3
 895679,Santiago Homenchenko,2025,MEXA,4035,False,3,0,0,0,0,0,0,0,0
@@ -28360,7 +28397,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 390926,Jhojan Julio,2014,ECSE,9855,False,19,0,0,0,0,0,0,0,0
 390926,Jhojan Julio,2014,ECPL,9855,False,2,0,0,0,0,0,0,0,0
 390926,Jhojan Julio,2014,CS,9855,False,6,0,0,0,0,0,0,0,0
-627287,Carlo García,2026,MEXA,4961,False,15,15,0,1224,1,0,18,6,2
+627287,Carlo García,2026,MEXA,4961,False,16,15,0,1224,1,0,18,6,2
 627287,Carlo García,2025,USMX,4961,False,3,2,0,169,0,0,4,2,0
 627287,Carlo García,2025,MEXA,4961,False,14,7,0,142,0,0,0,0,0
 627287,Carlo García,2025,MEX1,4961,False,17,17,0,1119,0,1,14,2,2
@@ -28450,7 +28487,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 654144,Eduardo Armenta,2019,M20C,32585,False,10,4,0,64,1,0,0,0,0
 654144,Eduardo Armenta,2019,M20A,32585,False,18,3,0,46,0,0,0,0,0
 654144,Eduardo Armenta,2018,MXCC,10091,False,1,1,0,1,0,0,0,0,0
-792335,Érik Dueñas,2026,MEXA,4961,False,15,4,0,54,0,0,1,0,0
+792335,Érik Dueñas,2026,MEXA,4961,False,16,4,0,54,0,0,1,0,0
 792335,Érik Dueñas,2025,USMX,4961,False,3,3,0,121,0,0,0,0,1
 792335,Érik Dueñas,2025,MEX1,4961,False,17,0,0,0,0,0,0,0,0
 792335,Érik Dueñas,2025,M21C,110467,False,16,15,0,1098,0,0,0,0,3
@@ -28480,7 +28517,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 792335,Érik Dueñas,2019,POUS,51828,False,1,0,0,0,0,0,0,0,0
 792335,Érik Dueñas,2019,MLS1,51828,False,17,2,0,34,0,0,0,0,1
 792335,Érik Dueñas,2019,CCL,51828,False,3,0,0,0,0,0,0,0,0
-838925,Álex Alcalá,2026,MEXA,4961,False,15,9,0,247,0,1,3,0,0
+838925,Álex Alcalá,2026,MEXA,4961,False,16,9,0,247,0,1,3,0,0
 838925,Álex Alcalá,2025,USMX,4961,False,3,1,0,62,0,0,0,0,0
 838925,Álex Alcalá,2025,PLIC,9265,False,2,0,0,0,0,0,0,0,0
 838925,Álex Alcalá,2025,MEX1,4961,False,17,0,0,0,0,0,0,0,0
@@ -28520,7 +28557,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1086831,Christopher Figueroa,2021,M20C,24999,False,17,8,0,416,0,0,0,0,1
 1086831,Christopher Figueroa,2021,M20A,24999,False,17,5,0,219,0,0,0,0,0
 1086831,Christopher Figueroa,2020,M20C,24999,False,1,1,0,63,0,0,0,0,0
-1182550,Jesús Arellano,2026,MEXA,4961,False,15,3,0,91,0,0,1,0,0
+1182550,Jesús Arellano,2026,MEXA,4961,False,16,3,0,91,0,0,1,0,0
 1182550,Jesús Arellano,2026,M21A,110467,False,8,6,0,540,0,0,0,0,2
 1182550,Jesús Arellano,2025,USMX,4961,False,3,1,0,90,0,0,0,0,0
 1182550,Jesús Arellano,2025,MEXA,4961,False,17,1,0,7,0,0,0,0,0
@@ -28533,7 +28570,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1182550,Jesús Arellano,2024,M23C,110467,False,17,14,0,520,1,0,0,0,2
 1182550,Jesús Arellano,2023,MEXB,10091,False,7,3,0,77,0,0,0,0,0
 1182550,Jesús Arellano,2023,MEX2,10091,False,14,7,0,275,0,0,0,0,0
-704557,Alí Ávila,2026,MEXA,4961,False,15,15,0,1333,6,0,32,15,4
+704557,Alí Ávila,2026,MEXA,4961,False,16,15,0,1333,6,0,32,15,4
 704557,Alí Ávila,2025,USMX,4961,False,3,3,0,207,1,0,8,4,1
 704557,Alí Ávila,2025,MEXA,4961,False,15,10,0,599,6,0,12,9,1
 704557,Alí Ávila,2025,MEX1,4961,False,17,14,0,1210,5,1,31,10,4
@@ -28586,7 +28623,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704557,Alí Ávila,2019,FS,23134,True,1,1,0,0,0,0,0,0,0
 704557,Alí Ávila,2018,M20C,18498,False,1,1,0,17,0,0,0,0,0
 704557,Alí Ávila,2018,17WC,23134,True,7,5,0,159,2,0,4,3,1
-685179,Mateo Coronel,2026,MEXA,4961,False,15,14,0,1130,4,2,50,11,2
+685179,Mateo Coronel,2026,MEXA,4961,False,16,14,0,1130,4,2,50,11,2
 685179,Mateo Coronel,2025,USMX,4961,False,3,0,0,0,0,0,0,0,0
 685179,Mateo Coronel,2025,MEXA,4961,False,10,7,0,252,0,0,7,4,0
 685179,Mateo Coronel,2025,MEX1,4961,False,17,17,0,1379,5,0,37,18,3
@@ -28617,7 +28654,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 685179,Mateo Coronel,2018,ARG3,25348,False,15,5,0,208,0,0,0,0,0
 685179,Mateo Coronel,2017,ARY3,15943,False,1,0,0,0,0,0,0,0,0
 685179,Mateo Coronel,2016,ARCA,25348,False,2,1,0,90,0,0,0,0,0
-668487,Juan Robles,2026,MEXA,4961,False,15,1,0,5,0,0,0,0,0
+668487,Juan Robles,2026,MEXA,4961,False,16,1,0,5,0,0,0,0,0
 668487,Juan Robles,2026,M21A,110467,False,2,2,0,177,0,0,0,0,0
 668487,Juan Robles,2025,USMX,4961,False,3,0,0,0,0,0,0,0,0
 668487,Juan Robles,2025,MEXA,4961,False,17,11,0,308,1,0,3,2,3
@@ -28639,8 +28676,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668487,Juan Robles,2022,M20A,25014,False,17,3,0,191,0,0,0,0,0
 668487,Juan Robles,2020,M20C,32585,False,7,2,0,41,0,0,0,0,0
 668487,Juan Robles,2020,M20A,32585,False,17,1,0,21,0,0,0,0,0
+668487,Juan Robles,2019,FS,51023,True,2,1,0,72,0,0,0,0,0
 668487,Juan Robles,2019,FS,47231,True,3,1,0,65,0,0,0,0,1
-668487,Juan Robles,2018,FS,47231,True,4,3,0,173,0,2,0,0,0
+668487,Juan Robles,2018,FS,47231,True,4,3,0,148,0,2,0,0,0
 1067605,Fernando González,2026,MEXB,10091,False,15,13,0,1034,3,5,30,13,2
 1067605,Fernando González,2026,MEXA,4961,False,2,0,0,0,0,0,0,0,0
 1067605,Fernando González,2025,MEXA,4961,False,17,3,0,111,0,0,0,0,0
@@ -28722,7 +28760,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 689837,Luis Gutiérrez,2019,MEXB,9980,False,13,0,0,0,0,0,0,0,0
 689837,Luis Gutiérrez,2019,CPMX,9980,False,4,0,0,0,0,0,0,0,0
 689837,Luis Gutiérrez,2018,FS,51023,True,1,1,0,19,0,0,0,0,0
-582513,Víctor López,2026,MXBA,5623,False,2,0,0,0,0,0,0,0,0
+582513,Víctor López,2026,MXBA,5623,False,4,0,0,0,0,0,0,0,0
 582513,Víctor López,2026,MEXB,5623,False,15,12,0,486,1,0,14,4,0
 582513,Víctor López,2025,SCP,511,False,4,1,0,3,0,0,0,0,0
 582513,Víctor López,2025,SC1,511,False,2,0,0,0,0,0,0,0,0
@@ -28760,7 +28798,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 582513,Víctor López,2020,M20A,18498,False,3,2,0,46,0,0,0,0,0
 582513,Víctor López,2019,M20C,18498,False,4,2,0,162,0,0,0,0,0
 582513,Víctor López,2017,FS,48724,True,3,2,0,150,1,0,0,0,0
-1055320,Waldo Madrid,2026,MEXA,4961,False,15,8,0,151,0,0,3,2,0
+1055320,Waldo Madrid,2026,MEXA,4961,False,16,8,0,151,0,0,3,2,0
 1055320,Waldo Madrid,2025,USMX,4961,False,3,3,0,133,0,0,2,2,0
 1055320,Waldo Madrid,2025,MEXB,18662,False,14,12,0,714,2,7,0,0,4
 1055320,Waldo Madrid,2025,MEX1,4961,False,17,9,0,189,0,0,5,1,0
@@ -28785,7 +28823,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1055320,Waldo Madrid,2021,M20C,28850,False,17,15,0,1149,4,0,0,0,2
 1055320,Waldo Madrid,2021,M20A,28850,False,1,1,0,76,0,0,0,0,0
 1055320,Waldo Madrid,2020,M20C,28850,False,11,7,0,398,0,0,0,0,0
-291262,Eduardo Pérez,2026,MEXA,4961,False,15,6,0,22,0,0,2,1,0
+291262,Eduardo Pérez,2026,MEXA,4961,False,16,6,0,22,0,0,2,1,0
 291262,Eduardo Pérez,2025,USMX,4961,False,3,1,0,63,0,0,2,1,0
 291262,Eduardo Pérez,2025,MXBA,12728,False,6,6,0,457,2,0,0,0,0
 291262,Eduardo Pérez,2025,MEXB,12728,False,14,13,0,805,8,1,0,0,0
@@ -28854,7 +28892,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 291262,Eduardo Pérez,2012,M20C,25129,False,17,4,0,83,0,0,0,0,0
 291262,Eduardo Pérez,2012,M20A,25129,False,17,4,0,105,0,0,0,0,0
 291262,Eduardo Pérez,2011,M20A,25494,False,2,2,0,24,0,0,0,0,1
-875511,Paulo Victor,2026,MEXA,4961,False,15,14,0,555,0,0,3,1,4
+875511,Paulo Victor,2026,MEXA,4961,False,16,15,0,589,0,0,3,1,4
 875511,Paulo Victor,2025,USMX,4961,False,3,3,0,190,0,0,0,0,0
 875511,Paulo Victor,2025,POPO,2423,False,3,3,0,239,0,0,0,0,1
 875511,Paulo Victor,2025,POCP,2423,False,1,0,0,0,0,0,0,0,0
@@ -28901,7 +28939,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1305694,Claudio Robles,2024,M23A,110467,False,13,4,0,110,0,0,0,0,1
 1305694,Claudio Robles,2024,M192,24999,False,16,11,0,725,7,0,0,0,0
 1305694,Claudio Robles,2024,M191,24999,False,17,14,0,973,5,0,0,0,2
-1364024,Sergio Garcia Brothers,2026,MEXA,4961,False,15,0,0,0,0,0,0,0,0
+1364024,Sergio Garcia Brothers,2026,MEXA,4961,False,16,0,0,0,0,0,0,0,0
 1364024,Sergio Garcia Brothers,2026,M21A,110467,False,16,4,0,360,0,0,0,0,1
 1364024,Sergio Garcia Brothers,2025,USMX,4961,False,3,3,0,101,0,0,0,0,0
 1364024,Sergio Garcia Brothers,2025,M21C,110467,False,17,1,0,24,0,0,0,0,0
@@ -28910,7 +28948,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1364024,Sergio Garcia Brothers,2025,M191,24999,False,17,16,0,1282,0,0,0,0,1
 1364024,Sergio Garcia Brothers,2024,M192,24999,False,16,8,0,218,0,0,0,0,0
 1364024,Sergio Garcia Brothers,2024,M191,24999,False,17,10,0,373,0,0,0,0,0
-569088,Enzo Giménez,2026,MEXA,4961,False,15,15,0,1102,0,2,15,5,1
+569088,Enzo Giménez,2026,MEXA,4961,False,16,15,0,1102,0,2,15,5,1
 569088,Enzo Giménez,2025,USMX,4961,False,3,3,0,187,0,0,4,2,0
 569088,Enzo Giménez,2025,CLI,1418,False,6,6,0,381,0,0,5,2,0
 569088,Enzo Giménez,2025,ARG1,1418,False,16,14,0,1246,1,1,19,5,5
@@ -28948,7 +28986,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 569088,Enzo Giménez,2016,PR1C,17483,False,22,22,0,1514,3,0,0,0,2
 569088,Enzo Giménez,2016,PR1A,17483,False,21,6,0,342,0,0,0,0,1
 569088,Enzo Giménez,2016,PR1A,1214,False,1,0,0,0,0,0,0,0,0
-710679,Iker Benito,2026,MEXA,4961,False,12,11,0,595,1,3,11,3,1
+710679,Iker Benito,2026,MEXA,4961,False,13,12,0,650,1,3,13,4,1
 710679,Iker Benito,2025,ES1,331,False,38,6,23,155,1,0,2,1,1
 710679,Iker Benito,2025,CDR,331,False,4,1,3,90,0,1,0,0,0
 710679,Iker Benito,2024,ES2,13222,False,21,21,0,1413,1,2,22,5,2
@@ -28965,13 +29003,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 710679,Iker Benito,2021,CDR,331,False,1,0,0,0,0,0,0,0,0
 710679,Iker Benito,2020,ES3B,8516,False,18,14,0,429,0,0,0,0,1
 710679,Iker Benito,2020,E3FI,8516,False,8,6,0,154,0,0,0,0,0
-1244463,Mono Martínez,2026,MEXA,4961,False,15,6,0,53,0,0,0,0,1
+1244463,Mono Martínez,2026,MEXA,4961,False,16,6,0,53,0,0,0,0,1
 1244463,Mono Martínez,2025,USMX,4961,False,3,3,0,108,0,0,0,0,0
 1244463,Mono Martínez,2025,FS,48724,True,7,6,0,334,5,2,0,0,1
 1244463,Mono Martínez,2025,FS,47231,True,7,4,0,310,1,1,0,0,1
 1244463,Mono Martínez,2024,FS,48724,True,7,7,0,477,5,0,0,0,0
 1097734,Denilson Muñoz,2026,MEXB,23505,False,5,4,0,102,1,0,7,3,0
-1097734,Denilson Muñoz,2026,MEXA,4961,False,10,7,0,310,1,0,6,2,0
+1097734,Denilson Muñoz,2026,MEXA,4961,False,11,7,0,310,1,0,6,2,0
 1097734,Denilson Muñoz,2026,M21A,110467,False,1,1,0,90,0,0,0,0,0
 1097734,Denilson Muñoz,2025,MXBA,23505,False,2,2,0,180,1,0,0,0,1
 1097734,Denilson Muñoz,2025,MEXB,23505,False,14,14,0,1145,5,2,0,0,3
@@ -29102,7 +29140,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 222010,Jesús Rodríguez,2011,M20C,25129,False,17,16,0,1440,0,0,0,0,1
 222010,Jesús Rodríguez,2011,M20A,25129,False,17,17,0,1530,0,0,0,0,2
 222010,Jesús Rodríguez,2010,M20C,25129,False,17,16,0,1440,0,0,0,0,1
-810710,Juan Pablo Gómez,2026,MXBA,143245,False,2,0,0,0,0,0,0,0,0
+810710,Juan Pablo Gómez,2026,MXBA,143245,False,4,0,0,0,0,0,0,0,0
 810710,Juan Pablo Gómez,2026,MEXB,143245,False,15,0,0,0,0,0,0,0,0
 810710,Juan Pablo Gómez,2025,MEXA,5662,False,17,0,0,0,0,0,0,0,0
 810710,Juan Pablo Gómez,2025,MEX1,5662,False,17,0,0,0,0,0,0,0,0
@@ -29281,6 +29319,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1150567,José Pachuca,2023,C220,26092,True,6,4,0,350,0,0,3,1,0
 1150567,José Pachuca,2022,USMX,5662,False,2,0,0,0,0,0,0,0,0
 271907,Juan Pablo Vargas,2026,MEXA,5662,False,16,16,0,1440,0,3,8,3,1
+271907,Juan Pablo Vargas,2026,FS,8497,True,2,2,0,180,0,0,0,0,0
 271907,Juan Pablo Vargas,2026,CNLA,8497,True,4,2,0,161,0,0,0,0,0
 271907,Juan Pablo Vargas,2025,USMX,5662,False,3,2,0,180,0,0,1,0,0
 271907,Juan Pablo Vargas,2025,MEX1,5662,False,17,14,0,1260,1,0,7,1,0
@@ -29383,7 +29422,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 271907,Juan Pablo Vargas,2013,CRPO,6478,False,4,2,0,93,1,0,0,0,0
 271907,Juan Pablo Vargas,2013,CRPD,6478,False,22,0,0,0,0,0,0,0,0
 271907,Juan Pablo Vargas,2013,CCL,6478,False,8,0,0,0,0,0,0,0,0
-400203,Ulises Torres,2026,MXBA,23505,False,2,1,0,39,0,0,0,0,0
+400203,Ulises Torres,2026,MXBA,23505,False,4,1,0,39,0,0,0,0,0
 400203,Ulises Torres,2026,MEXB,23505,False,14,13,0,1125,0,2,4,0,5
 400203,Ulises Torres,2025,MXBA,23505,False,2,2,0,135,0,0,0,0,0
 400203,Ulises Torres,2025,MEXB,23505,False,14,13,0,1117,0,1,0,0,6
@@ -29541,7 +29580,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 644272,Alejandro Organista,2018,M2L1,14700,False,6,6,0,540,0,0,0,0,1
 644272,Alejandro Organista,2018,M20C,14700,False,17,13,0,998,1,0,0,0,5
 644272,Alejandro Organista,2018,M20A,14700,False,17,14,0,891,3,0,0,0,0
-1065383,Ariel Gamarra,2025,PR1C,1214,False,19,13,0,672,0,1,6,0,3
+1065383,Ariel Gamarra,2025,PYC1,1214,False,3,1,0,90,0,0,0,0,0
+1065383,Ariel Gamarra,2025,PR1C,1214,False,19,15,0,773,0,1,6,0,3
 1065383,Ariel Gamarra,2025,MEXA,5662,False,17,11,0,799,0,0,5,1,3
 1065383,Ariel Gamarra,2025,MEX1,5662,False,17,6,0,326,0,0,3,1,0
 1065383,Ariel Gamarra,2025,M21C,110450,False,1,1,0,45,0,0,0,0,0
@@ -29615,7 +29655,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 403148,Ángelo Araos,2025,MEXA,5662,False,11,5,0,169,1,0,4,2,0
 403148,Ángelo Araos,2025,MEX1,5662,False,17,4,0,77,0,0,4,0,0
 403148,Ángelo Araos,2025,M21A,110450,False,2,2,0,107,0,0,0,0,0
-403148,Ángelo Araos,2025,CL2B,4321,False,12,8,3,466,0,1,0,0,2
+403148,Ángelo Araos,2025,CL2B,4321,False,13,9,3,556,1,1,0,0,2
 403148,Ángelo Araos,2025,CH1C,4321,False,1,0,0,0,0,0,0,0,0
 403148,Ángelo Araos,2024,BRGO,15172,False,15,6,0,89,0,0,0,0,0
 403148,Ángelo Araos,2024,BRC,15172,False,2,1,0,45,0,1,0,0,0
@@ -29667,7 +29707,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 403148,Ángelo Araos,2016,CH1C,17222,False,8,2,0,180,0,0,0,0,0
 403148,Ángelo Araos,2016,2SAM,23657,True,4,1,0,20,0,0,0,0,0
 403148,Ángelo Araos,2015,CHLP,17222,False,2,0,0,0,0,0,0,0,0
-403148,Ángelo Araos,2015,CHLA,17222,False,13,6,0,280,0,0,0,0,0
+403148,Ángelo Araos,2015,CHLA,17222,False,14,6,0,280,0,0,0,0,0
 403148,Ángelo Araos,2015,CHL1,17222,False,15,0,0,0,0,0,0,0,0
 403148,Ángelo Araos,2015,CH1C,17222,False,2,0,0,0,0,0,0,0,0
 997056,Alonso Ramírez,2026,MEXA,5662,False,16,10,0,552,0,0,3,1,3
@@ -29824,6 +29864,35 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 401311,Brayan Garnica,2014,M2L1,23166,False,2,2,0,59,0,0,0,0,0
 401311,Brayan Garnica,2014,M20C,23166,False,17,10,0,695,0,0,0,0,0
 401311,Brayan Garnica,2014,M20A,23166,False,17,5,0,81,1,0,0,0,0
+853278,Ignacio Maestro Puch,2026,MEXA,5662,False,16,9,0,457,1,1,11,5,2
+853278,Ignacio Maestro Puch,2025,USMX,5662,False,3,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2025,MEX1,5662,False,17,4,0,57,0,0,1,0,1
+853278,Ignacio Maestro Puch,2024,CS,1234,False,5,3,0,88,0,0,4,0,0
+853278,Ignacio Maestro Puch,2024,ARGC,1234,False,1,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2024,ARGC,10511,False,15,15,0,1117,1,0,26,10,0
+853278,Ignacio Maestro Puch,2024,ARG1,14554,False,15,0,2,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2024,ARG1,1234,False,16,7,3,119,0,1,6,1,0
+853278,Ignacio Maestro Puch,2024,ARCA,14554,False,1,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2024,ARCA,1234,False,1,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2024,A1P1,1234,False,1,1,0,2,0,0,0,0,0
+853278,Ignacio Maestro Puch,2023,CDLP,1234,False,14,12,0,356,1,2,0,0,0
+853278,Ignacio Maestro Puch,2023,ARCA,1234,False,4,1,0,17,0,0,0,0,0
+853278,Ignacio Maestro Puch,2023,AR1N,1234,False,27,13,0,208,1,0,6,4,2
+853278,Ignacio Maestro Puch,2022,FS,11940,True,5,5,0,262,2,0,0,0,0
+853278,Ignacio Maestro Puch,2022,CDLP,14554,False,14,9,1,376,0,0,0,0,0
+853278,Ignacio Maestro Puch,2022,ARCA,14554,False,1,0,1,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2022,AR1N,14554,False,27,17,6,345,0,0,6,2,0
+853278,Ignacio Maestro Puch,2022,2SAM,11940,True,4,4,0,203,0,0,4,0,0
+853278,Ignacio Maestro Puch,2022,20WC,11940,True,4,4,0,120,1,0,6,3,0
+853278,Ignacio Maestro Puch,2021,SAM2,11940,True,3,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2021,FS,11940,True,1,1,0,76,1,0,0,0,1
+853278,Ignacio Maestro Puch,2021,CLPI,90392,False,14,7,0,520,6,0,0,0,0
+853278,Ignacio Maestro Puch,2021,CDLP,14554,False,14,2,0,15,0,0,0,0,0
+853278,Ignacio Maestro Puch,2021,ARCA,14554,False,2,1,0,61,0,0,2,0,0
+853278,Ignacio Maestro Puch,2021,AR1N,14554,False,27,16,4,394,2,1,9,4,1
+853278,Ignacio Maestro Puch,2020,CDLP,14554,False,5,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2020,AR1N,14554,False,25,0,0,0,0,0,0,0,0
+853278,Ignacio Maestro Puch,2019,CDCA,14554,False,1,0,0,0,0,0,0,0,0
 249789,Alexis Canelo,2026,MEXA,5662,False,2,0,0,0,0,0,0,0,0
 249789,Alexis Canelo,2025,MEX1,5662,False,10,6,0,275,0,0,4,1,0
 249789,Alexis Canelo,2025,ARGC,14554,False,15,9,0,288,2,0,5,3,0
@@ -29883,35 +29952,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 249789,Alexis Canelo,2012,ARCA,12672,False,2,1,0,90,0,0,0,0,0
 249789,Alexis Canelo,2011,ARG2,12672,False,29,2,0,75,1,0,0,0,0
 249789,Alexis Canelo,2011,ARCA,12672,False,1,1,0,63,0,0,0,0,0
-853278,Ignacio Maestro Puch,2026,MEXA,5662,False,16,9,0,457,1,1,11,5,2
-853278,Ignacio Maestro Puch,2025,USMX,5662,False,3,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2025,MEX1,5662,False,17,4,0,57,0,0,1,0,1
-853278,Ignacio Maestro Puch,2024,CS,1234,False,5,3,0,88,0,0,4,0,0
-853278,Ignacio Maestro Puch,2024,ARGC,1234,False,1,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2024,ARGC,10511,False,15,15,0,1117,1,0,26,10,0
-853278,Ignacio Maestro Puch,2024,ARG1,14554,False,15,0,2,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2024,ARG1,1234,False,16,7,3,119,0,1,6,1,0
-853278,Ignacio Maestro Puch,2024,ARCA,14554,False,1,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2024,ARCA,1234,False,1,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2024,A1P1,1234,False,1,1,0,2,0,0,0,0,0
-853278,Ignacio Maestro Puch,2023,CDLP,1234,False,14,12,0,356,1,2,0,0,0
-853278,Ignacio Maestro Puch,2023,ARCA,1234,False,4,1,0,17,0,0,0,0,0
-853278,Ignacio Maestro Puch,2023,AR1N,1234,False,27,13,0,208,1,0,6,4,2
-853278,Ignacio Maestro Puch,2022,FS,11940,True,5,5,0,262,2,0,0,0,0
-853278,Ignacio Maestro Puch,2022,CDLP,14554,False,14,9,1,376,0,0,0,0,0
-853278,Ignacio Maestro Puch,2022,ARCA,14554,False,1,0,1,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2022,AR1N,14554,False,27,17,6,345,0,0,6,2,0
-853278,Ignacio Maestro Puch,2022,2SAM,11940,True,4,4,0,203,0,0,4,0,0
-853278,Ignacio Maestro Puch,2022,20WC,11940,True,4,4,0,120,1,0,6,3,0
-853278,Ignacio Maestro Puch,2021,SAM2,11940,True,3,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2021,FS,11940,True,1,1,0,76,1,0,0,0,1
-853278,Ignacio Maestro Puch,2021,CLPI,90392,False,14,7,0,520,6,0,0,0,0
-853278,Ignacio Maestro Puch,2021,CDLP,14554,False,14,2,0,15,0,0,0,0,0
-853278,Ignacio Maestro Puch,2021,ARCA,14554,False,2,1,0,61,0,0,2,0,0
-853278,Ignacio Maestro Puch,2021,AR1N,14554,False,27,16,4,394,2,1,9,4,1
-853278,Ignacio Maestro Puch,2020,CDLP,14554,False,5,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2020,AR1N,14554,False,25,0,0,0,0,0,0,0,0
-853278,Ignacio Maestro Puch,2019,CDCA,14554,False,1,0,0,0,0,0,0,0,0
 1095211,Arez Pérez,2026,M21A,110450,False,16,8,0,485,0,0,0,0,2
 1095211,Arez Pérez,2025,MEX1,5662,False,5,0,0,0,0,0,0,0,0
 1095211,Arez Pérez,2025,M21C,110450,False,17,15,0,1036,0,0,0,0,4
@@ -30084,6 +30124,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1004726,Lucas Camilo,2022,17WC,23130,True,5,3,0,222,0,1,3,2,0
 1004726,Lucas Camilo,2021,FS,23130,True,4,3,0,153,0,0,0,0,0
 634023,Luifer Hernández,2026,MEXA,5662,False,16,13,0,476,1,2,16,7,0
+634023,Luifer Hernández,2026,FS,3504,True,1,0,0,0,0,0,0,0,0
 634023,Luifer Hernández,2025,USMX,5662,False,3,2,0,115,0,0,1,0,1
 634023,Luifer Hernández,2025,UKRP,6992,False,1,1,0,90,1,0,0,0,0
 634023,Luifer Hernández,2025,UKR2,6992,False,14,13,0,751,3,2,0,0,0
@@ -30229,7 +30270,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 674500,Nico Carrera,2018,US3P,71021,False,2,0,0,0,0,0,0,0,0
 674500,Nico Carrera,2018,FS,31200,True,1,0,0,0,0,0,0,0,0
 674500,Nico Carrera,2018,17WC,25514,True,3,2,0,100,0,0,1,0,1
-401944,Diego Cruz,2026,MXBA,143245,False,2,1,0,90,0,1,0,0,0
+401944,Diego Cruz,2026,MXBA,143245,False,4,2,0,180,0,1,0,0,0
 401944,Diego Cruz,2026,MEXB,143245,False,15,13,0,1086,3,1,16,9,4
 401944,Diego Cruz,2025,MXBC,6709,False,2,2,0,180,0,0,0,0,1
 401944,Diego Cruz,2025,MXBA,6709,False,2,2,0,168,0,0,0,0,1
@@ -30568,7 +30609,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 704553,Eugenio Pizzuto,2019,CPMX,4035,False,4,1,0,32,0,0,0,0,0
 704553,Eugenio Pizzuto,2018,CO17,23134,True,7,6,0,456,0,1,3,1,0
 704553,Eugenio Pizzuto,2018,17WC,23134,True,7,6,0,549,1,1,10,2,0
-858916,Johan Alonzo,2026,MXBA,100124,False,2,1,0,90,0,0,0,0,0
+858916,Johan Alonzo,2026,MXBA,100124,False,4,1,0,90,0,0,0,0,0
 858916,Johan Alonzo,2026,MEXB,100124,False,14,14,0,1135,0,0,13,2,0
 858916,Johan Alonzo,2025,MXBC,6709,False,2,0,0,0,0,0,0,0,0
 858916,Johan Alonzo,2025,MXBA,83082,False,2,2,0,123,0,0,0,0,0
@@ -30657,7 +30698,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 400188,Javier Ibarra,2015,M20C,18498,False,17,11,0,889,1,0,0,0,1
 400188,Javier Ibarra,2015,M20A,18498,False,17,3,0,216,0,0,0,0,0
 400188,Javier Ibarra,2014,17WC,23134,True,7,5,0,144,0,0,0,0,0
-737129,Marco García,2026,MXBA,100124,False,2,1,0,81,0,1,0,0,1
+737129,Marco García,2026,MXBA,100124,False,4,1,0,81,0,1,0,0,1
 737129,Marco García,2026,MEXB,100124,False,14,11,0,812,0,3,8,1,0
 737129,Marco García,2025,MXBC,6709,False,2,1,0,21,0,0,0,0,0
 737129,Marco García,2025,MXBA,6709,False,2,1,0,1,0,0,0,0,0
@@ -30869,7 +30910,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 668528,Luis Puente,2019,M20C,14700,False,1,1,0,47,0,0,0,0,0
 668528,Luis Puente,2019,FS,51023,True,2,2,0,98,0,0,0,0,0
 668528,Luis Puente,2019,FS,23134,True,1,1,0,0,0,0,0,0,0
-668528,Luis Puente,2018,FS,47231,True,4,4,0,253,4,0,0,0,1
+668528,Luis Puente,2018,FS,47231,True,4,4,0,240,4,0,0,0,1
 668528,Luis Puente,2018,17WC,23134,True,7,2,0,90,1,0,7,2,0
 725791,Luis Calzadilla,2026,MEXA,6709,False,16,15,0,1262,3,1,33,16,2
 725791,Luis Calzadilla,2025,USMX,6709,False,3,3,0,258,0,0,3,0,0
@@ -31055,6 +31096,24 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1323890,Jeferson Tenorio,2024,MXBA,6709,False,4,0,0,0,0,0,0,0,0
 1323890,Jeferson Tenorio,2024,MEXB,6709,False,11,1,0,8,0,0,0,0,0
 1323890,Jeferson Tenorio,2024,MEX2,6709,False,14,8,0,195,0,0,0,0,3
+804341,Walter Portales,2026,MEXA,6709,False,16,16,0,1378,1,2,11,5,3
+804341,Walter Portales,2025,USMX,6709,False,3,3,0,270,0,0,3,1,0
+804341,Walter Portales,2025,MEXA,5662,False,17,4,0,244,0,0,1,0,0
+804341,Walter Portales,2025,M21C,110449,False,17,14,0,989,1,0,0,0,1
+804341,Walter Portales,2025,M21A,110450,False,4,3,0,194,0,0,0,0,0
+804341,Walter Portales,2025,21MC,110449,False,6,5,0,450,1,0,0,0,1
+804341,Walter Portales,2024,USMX,5662,False,4,1,0,45,0,0,0,0,0
+804341,Walter Portales,2024,POME,3631,False,6,0,0,0,0,0,0,0,0
+804341,Walter Portales,2024,MEX1,3631,False,17,2,0,94,0,0,1,1,0
+804341,Walter Portales,2024,M23L,110449,False,4,4,0,340,0,0,0,0,0
+804341,Walter Portales,2024,M23C,110449,False,17,14,0,1033,3,0,0,0,1
+804341,Walter Portales,2024,M23A,110449,False,17,14,0,1103,0,0,0,0,1
+804341,Walter Portales,2024,CWCQ,3631,False,1,0,0,0,0,0,0,0,0
+804341,Walter Portales,2024,CCL,3631,False,4,0,0,0,0,0,0,0,0
+804341,Walter Portales,2023,M23L,110449,False,2,0,0,0,0,0,0,0,0
+804341,Walter Portales,2023,M23C,110449,False,17,1,0,9,0,0,0,0,0
+804341,Walter Portales,2023,M23A,110449,False,17,4,0,188,0,0,0,0,0
+804341,Walter Portales,2019,USL,33285,False,6,0,0,0,0,0,0,0,0
 415843,Walter Clar,2026,MEXA,6709,False,16,11,0,523,0,0,8,3,1
 415843,Walter Clar,2025,USMX,6709,False,3,0,0,0,0,0,0,0,0
 415843,Walter Clar,2025,CSUS,17776,False,10,2,0,180,0,1,0,0,0
@@ -31098,24 +31157,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 415843,Walter Clar,2015,CS,7656,False,4,1,0,82,0,0,0,0,0
 415843,Walter Clar,2014,PR1C,23170,False,22,0,0,0,0,0,0,0,0
 415843,Walter Clar,2014,PR1A,629,False,22,0,0,0,0,0,0,0,0
-804341,Walter Portales,2026,MEXA,6709,False,16,16,0,1378,1,2,11,5,3
-804341,Walter Portales,2025,USMX,6709,False,3,3,0,270,0,0,3,1,0
-804341,Walter Portales,2025,MEXA,5662,False,17,4,0,244,0,0,1,0,0
-804341,Walter Portales,2025,M21C,110449,False,17,14,0,989,1,0,0,0,1
-804341,Walter Portales,2025,M21A,110450,False,4,3,0,194,0,0,0,0,0
-804341,Walter Portales,2025,21MC,110449,False,6,5,0,450,1,0,0,0,1
-804341,Walter Portales,2024,USMX,5662,False,4,1,0,45,0,0,0,0,0
-804341,Walter Portales,2024,POME,3631,False,6,0,0,0,0,0,0,0,0
-804341,Walter Portales,2024,MEX1,3631,False,17,2,0,94,0,0,1,1,0
-804341,Walter Portales,2024,M23L,110449,False,4,4,0,340,0,0,0,0,0
-804341,Walter Portales,2024,M23C,110449,False,17,14,0,1033,3,0,0,0,1
-804341,Walter Portales,2024,M23A,110449,False,17,14,0,1103,0,0,0,0,1
-804341,Walter Portales,2024,CWCQ,3631,False,1,0,0,0,0,0,0,0,0
-804341,Walter Portales,2024,CCL,3631,False,4,0,0,0,0,0,0,0,0
-804341,Walter Portales,2023,M23L,110449,False,2,0,0,0,0,0,0,0,0
-804341,Walter Portales,2023,M23C,110449,False,17,1,0,9,0,0,0,0,0
-804341,Walter Portales,2023,M23A,110449,False,17,4,0,188,0,0,0,0,0
-804341,Walter Portales,2019,USL,33285,False,6,0,0,0,0,0,0,0,0
 670341,Martín Fernández,2026,MEXA,6709,False,16,9,0,430,0,0,2,0,2
 670341,Martín Fernández,2025,USMX,6709,False,3,2,0,147,0,0,3,1,0
 670341,Martín Fernández,2025,ES2,1532,False,18,14,0,852,0,0,3,0,4

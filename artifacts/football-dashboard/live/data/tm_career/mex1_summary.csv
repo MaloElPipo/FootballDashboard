@@ -3,7 +3,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 371167,André Alcaráz,82696,Mazatlán FC,Goalkeeper,26,Mexico,13,13,8,21,374,141,12488,0,0,0,0,17,4,2014,2026
 820227,Ricardo Rodríguez,3711,CD Cruz Azul,Goalkeeper,25,Mexico,13,9,9,12,296,77,6896,0,0,0,0,5,0,2018,2026
 639390,Facundo Almada,5662,Puebla FC,Centre-Back,28,Argentina,5,11,4,14,324,220,18670,21,5,124,44,34,0,2016,2026
-424984,Lucas Merolla,82696,Mazatlán FC,Centre-Back,30,Argentina,19,11,5,15,369,174,14206,8,4,72,24,59,0,2015,2025
+424984,Lucas Merolla,82696,Mazatlán FC,Centre-Back,30,Argentina,19,11,5,16,372,178,14416,8,4,73,24,59,0,2015,2025
 1087247,Sebastián Santos,4035,CF Pachuca,Right-Back,23,Mexico,12,7,6,15,265,141,8007,11,3,44,13,18,0,2020,2026
 495116,Jair Díaz,5662,Puebla FC,Left-Back,28,Mexico,6,11,9,21,551,271,20950,5,1,41,12,78,3,2016,2026
 1086892,Ramiro Franco,82696,Mazatlán FC,Centre-Back,22,Mexico,3,7,6,13,248,133,10054,2,0,11,3,24,1,2020,2026
@@ -18,15 +18,15 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 335086,José Esquivel,82696,Mazatlán FC,Defensive Midfield,28,Mexico,16,13,9,28,650,324,23236,12,8,94,22,64,39,2014,2026
 1086870,Sebastián Fierro,4941,Club León FC,Defensive Midfield,25,Mexico,15,7,8,19,358,143,9187,7,0,5,0,38,5,2019,2026
 945134,Alberto Herrera,5662,Puebla FC,Defensive Midfield,25,Mexico,3,8,6,13,358,155,8991,15,4,43,13,27,11,2019,2026
-596906,Alan Torres,82696,Mazatlán FC,Defensive Midfield,26,Mexico,18,10,6,17,416,198,11773,5,4,70,19,28,6,2017,2026
+596906,Alan Torres,82696,Mazatlán FC,Defensive Midfield,26,Mexico,18,10,6,17,418,198,11773,5,4,70,19,28,6,2017,2026
 433216,Jorge García,82696,Mazatlán FC,Defensive Midfield,24,Mexico,2,11,7,21,505,185,13520,16,2,2,1,37,2,2015,2026
 1364590,Jesús Inzunza,82696,Mazatlán FC,Midfield,18,Mexico,0,3,4,5,114,63,3556,2,0,0,0,16,0,2024,2026
 1101843,Said Godínez,49283,FC Juárez,Defensive Midfield,22,Mexico,25,6,5,8,171,85,6784,5,0,9,1,8,0,2021,2026
-950872,Daniel Hernández,82696,Mazatlán FC,Right Winger,24,Mexico,28,8,7,17,367,150,7423,17,3,66,21,8,0,2019,2026
-283473,Yoel Bárcenas,82696,Mazatlán FC,Right Winger,32,Panama,11,16,9,30,785,531,36259,72,46,407,150,54,109,2011,2026
-594561,Dudu Teodora,82696,Mazatlán FC,Centre-Forward,26,Brazil,7,7,5,14,269,185,8338,21,10,135,46,12,0,2017,2025
+950872,Daniel Hernández,82696,Mazatlán FC,Right Winger,24,Mexico,28,8,7,17,367,151,7443,17,3,66,21,8,0,2019,2026
+283473,Yoel Bárcenas,82696,Mazatlán FC,Right Winger,32,Panama,11,16,9,30,787,532,36304,72,46,407,150,55,110,2011,2026
+594561,Dudu Teodora,82696,Mazatlán FC,Centre-Forward,26,Brazil,7,7,5,14,270,185,8338,21,10,135,46,12,0,2017,2025
 570547,Brian Rubio,82696,Mazatlán FC,Centre-Forward,29,Mexico,15,10,9,18,344,220,11227,43,11,180,76,47,0,2017,2026
-548298,Fábio Gomes,82696,Mazatlán FC,Centre-Forward,28,Brazil,90,10,12,24,412,253,16279,84,28,424,154,16,0,2016,2025
+548298,Fábio Gomes,82696,Mazatlán FC,Centre-Forward,28,Brazil,90,10,12,24,413,253,16279,84,28,424,154,16,0,2016,2025
 325600,Mauro Laínez,7055,Tigres UANL,Left Winger,30,Mexico,19,14,17,23,648,375,20256,18,20,122,40,50,9,2013,2026
 1087352,Omar Moreno,5662,Puebla FC,Attacking Midfield,21,Mexico,8,6,4,11,242,100,4900,15,3,68,24,5,8,2021,2026
 450237,Billy Arce,82696,Mazatlán FC,Left Winger,27,Ecuador,9,12,14,28,507,289,15750,50,32,287,95,42,0,2011,2025
@@ -35,43 +35,43 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1086884,Gilberto Adame,6709,CF Atlante,Right Winger,22,Mexico,20,5,5,9,207,101,5489,5,0,5,1,7,0,2022,2026
 1200339,Iván González,82696,Mazatlán FC,Right Winger,19,Mexico,199,4,4,9,155,52,2763,2,1,3,1,12,0,2023,2026
 1118680,Anwar Ben Rhouma,82696,Mazatlán FC,Centre-Forward,21,United States,0,5,6,12,197,71,4640,27,0,0,0,13,0,2022,2026
-1029149,Gabriel López,82696,Mazatlán FC,Attack,23,Mexico,0,7,4,13,328,170,10702,33,2,27,12,6,0,2020,2026
+1029149,Gabriel López,82696,Mazatlán FC,Attack,23,Mexico,0,7,4,13,330,170,10702,33,2,27,12,6,0,2020,2026
 1374366,Leonardo Chávez,82696,Mazatlán FC,Attack,20,Mexico,0,2,3,6,64,40,2049,5,0,0,0,0,0,2024,2025
 1374368,Jaime Estrada,82696,Mazatlán FC,Attack,18,Mexico,0,3,4,6,115,44,2009,2,0,0,0,6,0,2024,2026
 266807,Ángel Correa,7055,Tigres UANL,Second Striker,31,Argentina,7,15,4,28,881,646,35507,138,105,624,271,96,42,2012,2026
 631331,Teun Wilke,6711,Deportivo Guadalajara,Centre-Forward,24,Mexico,0,9,11,28,316,160,9301,43,7,57,24,18,7,2017,2025
 135082,Rogelio Funes Mori,4941,Club León FC,Centre-Forward,35,Mexico,18,18,8,31,855,590,40330,224,70,496,196,107,20,2009,2026
-295424,Ulises Rivas,7633,UNAM Pumas,Central Midfield,30,Mexico,15,15,4,19,735,319,22165,19,6,86,29,35,14,2011,2025
-656344,Homer Martínez,49283,FC Juárez,Defensive Midfield,28,Colombia,18,12,6,17,487,326,22982,10,7,133,32,101,1,2015,2026
-721027,Ángel Robles,5662,Puebla FC,Centre-Forward,24,Mexico,0,9,5,16,410,201,11870,65,3,90,33,14,6,2018,2026
-1118587,Franco Rossi,1804,Deportivo Toluca,Centre-Forward,24,Uruguay,0,6,5,15,198,108,4873,18,4,26,7,10,0,2021,2026
-1049404,Thiago Espinosa,3631,CF América,Left-Back,21,Uruguay,0,6,5,13,143,91,5518,7,5,9,2,12,0,2021,2026
-320739,Santiago Mele,2407,CF Monterrey,Goalkeeper,28,Uruguay,0,14,9,34,613,270,24003,0,1,0,0,23,35,2013,2026
-469855,Leonardo Sepúlveda,6711,Deportivo Guadalajara,Left-Back,25,Mexico,27,11,7,20,300,97,6471,1,0,6,3,26,13,2015,2026
+295424,Ulises Rivas,7633,UNAM Pumas,Central Midfield,30,Mexico,15,15,4,19,761,319,22165,19,6,86,29,35,14,2011,2025
+656344,Homer Martínez,49283,FC Juárez,Defensive Midfield,28,Colombia,18,12,6,17,488,327,23054,10,7,135,33,101,1,2015,2026
+1118587,Franco Rossi,1804,Deportivo Toluca,Centre-Forward,24,Uruguay,0,6,5,15,199,108,4873,18,4,26,7,10,0,2021,2026
+721027,Ángel Robles,5662,Puebla FC,Centre-Forward,24,Mexico,0,9,5,16,412,201,11870,65,3,90,33,14,6,2018,2026
+1049404,Thiago Espinosa,3631,CF América,Left-Back,21,Uruguay,0,6,5,13,144,92,5541,7,5,9,2,12,0,2021,2026
+320739,Santiago Mele,2407,CF Monterrey,Goalkeeper,28,Uruguay,0,14,9,34,614,270,24003,0,1,0,0,23,35,2013,2026
+469855,Leonardo Sepúlveda,6711,Deportivo Guadalajara,Left-Back,25,Mexico,27,11,7,20,302,98,6561,1,0,6,3,27,13,2015,2026
 871655,Piero Quispe,7633,UNAM Pumas,Attacking Midfield,24,Peru,0,7,3,17,276,214,13898,19,18,179,67,19,13,2020,2026
-578419,Federico Viñas,1804,Deportivo Toluca,Centre-Forward,28,Uruguay,16,10,6,21,410,297,17189,78,20,439,162,33,23,2017,2026
+578419,Federico Viñas,1804,Deportivo Toluca,Centre-Forward,28,Uruguay,16,10,6,21,411,298,17203,78,20,439,162,33,24,2017,2026
 553816,Juan José Purata,8590,Atlas Guadalajara,Centre-Back,28,Mexico,44,12,5,22,597,256,18795,20,0,75,23,53,1,2015,2026
 441287,Mateo García,8590,Atlas Guadalajara,Right Winger,29,Argentina,0,14,8,22,515,339,19220,39,15,111,46,22,0,2013,2026
 1094384,Owen González,1146,Club Necaxa,Right Winger,23,Mexico,13,6,7,17,239,125,6749,21,4,74,33,11,0,2021,2026
 181780,Rodrigo Dourado,49283,FC Juárez,Defensive Midfield,32,Brazil,13,17,4,19,894,471,38284,28,16,159,48,110,2,2010,2026
-983609,Jordan García,6709,CF Atlante,Goalkeeper,21,Colombia,33,6,5,16,243,80,7011,0,0,0,0,6,19,2021,2026
-692612,Agustín Rodríguez,8590,Atlas Guadalajara,Centre-Forward,28,Uruguay,0,9,8,20,291,172,10377,53,9,98,38,16,0,2018,2026
-837619,Armando González,6711,Deportivo Guadalajara,Centre-Forward,23,Mexico,34,7,5,20,251,164,9497,69,7,164,75,15,11,2020,2026
-294894,Leo Suárez,7633,UNAM Pumas,Right Winger,30,Argentina,0,15,12,28,684,300,16647,49,32,305,114,35,7,2012,2026
+983609,Jordan García,6709,CF Atlante,Goalkeeper,21,Colombia,33,6,5,16,245,80,7011,0,0,0,0,6,19,2021,2026
+692612,Agustín Rodríguez,8590,Atlas Guadalajara,Centre-Forward,28,Uruguay,0,9,8,20,292,172,10377,53,9,98,38,16,0,2018,2026
+837619,Armando González,6711,Deportivo Guadalajara,Centre-Forward,23,Mexico,34,7,5,21,252,164,9497,69,7,164,75,15,11,2020,2026
+294894,Leo Suárez,7633,UNAM Pumas,Right Winger,30,Argentina,0,15,12,28,685,301,16666,49,32,305,114,35,7,2012,2026
 352552,José Juan Manríquez,49283,FC Juárez,Centre-Back,30,Mexico,26,12,8,21,534,247,20518,12,1,50,11,54,0,2014,2026
-73396,David Ospina,6709,CF Atlante,Goalkeeper,37,Colombia,0,23,6,36,1180,622,54799,0,3,0,0,28,132,2004,2026
+73396,David Ospina,6709,CF Atlante,Goalkeeper,37,Colombia,0,23,6,37,1187,622,54799,0,3,0,0,28,132,2004,2026
 1013473,Alejandro Urzua,6709,CF Atlante,Central Midfield,20,United States,0,5,3,7,194,62,3521,3,1,0,0,11,0,2021,2026
 801161,Diego Urtiaga,40188,Atlético de San Luis,Goalkeeper,27,Mexico,0,9,6,16,368,90,8064,0,0,1,0,6,0,2016,2026
 1447409,Matías Velázquez,1403,Santos Laguna,Goalkeeper,17,Mexico,182,3,2,8,83,21,1883,0,0,0,0,0,0,2024,2026
 504258,Rodrigo Schlegel,8590,Atlas Guadalajara,Centre-Back,29,Argentina,21,11,5,17,418,241,19164,8,1,75,20,58,0,2016,2026
 348264,Gustavo Ferrareis,8590,Atlas Guadalajara,Right-Back,30,Brazil,2,13,9,17,526,354,23818,26,21,354,89,62,0,2013,2026
-1096389,Juan Cázares,4961,Querétaro FC,Left Winger,21,Mexico,35,5,6,11,109,59,2309,5,0,14,3,0,0,2022,2026
-532389,Sebastián Cáceres,3631,CF América,Centre-Back,27,Uruguay,4,11,4,25,497,323,26243,5,5,80,16,47,42,2016,2026
-387611,Lima,3631,CF América,Attacking Midfield,30,Brazil,0,12,7,27,721,426,24992,44,38,399,144,52,0,2015,2026
+1096389,Juan Cázares,4961,Querétaro FC,Left Winger,21,Mexico,35,5,6,11,111,60,2334,5,0,14,3,1,0,2022,2026
 189475,Carlos Gruezo,1403,Santos Laguna,Defensive Midfield,31,Ecuador,11,17,8,24,766,490,37490,16,21,171,31,136,74,2010,2026
+532389,Sebastián Cáceres,3631,CF América,Centre-Back,27,Uruguay,4,11,4,26,499,324,26275,5,5,80,16,47,43,2016,2026
+387611,Lima,3631,CF América,Attacking Midfield,30,Brazil,0,12,7,27,721,426,24992,44,38,399,144,52,0,2015,2026
 700503,Santiago Naveda,3631,CF América,Defensive Midfield,25,Mexico,35,9,8,21,438,172,11070,7,3,46,8,29,8,2018,2026
 1150372,Patricio Salas,3631,CF América,Centre-Forward,22,Mexico,33,5,3,18,268,90,5291,14,2,40,14,4,0,2022,2026
-846367,Miguel Ramírez,3631,CF América,Central Midfield,24,Mexico,36,8,6,19,389,165,9713,11,1,19,5,20,0,2019,2026
+846367,Miguel Ramírez,3631,CF América,Central Midfield,24,Mexico,36,8,6,19,389,166,9783,11,1,20,5,20,0,2019,2026
 797702,Esteban Lozano,1403,Santos Laguna,Centre-Forward,23,Mexico,20,8,8,21,380,160,8581,39,8,89,30,11,8,2019,2026
 462070,Nicolás Fonseca,4941,Club León FC,Defensive Midfield,27,Uruguay,0,12,8,28,385,205,13221,7,6,44,6,56,6,2007,2026
 347932,Guillermo Martínez,7055,Tigres UANL,Centre-Forward,31,Mexico,22,16,13,24,775,474,27541,175,16,340,149,90,24,2011,2026
@@ -94,24 +94,24 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 661131,Santiago Simón,1804,Deportivo Toluca,Right-Back,24,Argentina,19,9,2,23,363,201,12125,6,19,91,21,19,11,2018,2026
 955303,Everardo López,1804,Deportivo Toluca,Centre-Back,21,Mexico,25,6,3,19,379,179,13214,4,3,19,8,26,29,2021,2026
 471988,Brian García,1804,Deportivo Toluca,Left-Back,29,Mexico,17,12,10,22,392,245,18739,12,18,102,25,23,2,2014,2026
-344854,Jesús Gallardo,1804,Deportivo Toluca,Left-Back,32,Mexico,20,14,4,26,830,638,48639,75,62,391,129,95,130,2013,2026
+344854,Jesús Gallardo,1804,Deportivo Toluca,Left-Back,32,Mexico,20,14,4,26,832,639,48729,75,62,391,129,95,131,2013,2026
 416083,Diego Barbosa,1804,Deportivo Toluca,Right-Back,30,Mexico,2,12,6,19,540,321,23533,10,11,131,35,58,0,2014,2026
 799707,Mauricio Isaís,4035,CF Pachuca,Left-Back,25,Mexico,6,8,7,17,393,165,9714,10,3,65,20,16,1,2019,2026
 178984,Luan,1804,Deportivo Toluca,Centre-Back,33,Brazil,13,17,4,25,1004,494,39852,24,7,114,37,87,5,2010,2026
 107444,Antonio Briseño,1804,Deportivo Toluca,Centre-Back,32,Mexico,3,17,12,29,854,395,28606,29,6,100,31,96,20,2010,2026
-804282,Alek Álvarez,1804,Deportivo Toluca,Left-Back,22,Mexico,35,7,8,21,441,109,6949,5,3,6,3,15,0,2020,2026
+804282,Alek Álvarez,1804,Deportivo Toluca,Left-Back,22,Mexico,35,7,8,21,441,110,7034,5,3,6,3,15,0,2020,2026
 1011037,Érick Orta,1804,Deportivo Toluca,Centre-Back,18,Mexico,0,6,3,16,177,74,5681,9,0,0,0,14,8,2021,2026
-1193574,Francisco Pumpido,1804,Deportivo Toluca,Right-Back,20,Mexico,0,4,5,18,193,77,5699,4,3,2,1,13,0,2022,2025
+1193574,Francisco Pumpido,1804,Deportivo Toluca,Right-Back,20,Mexico,0,4,5,19,194,77,5699,4,3,2,1,13,0,2022,2025
 597728,Marcel Ruiz,1804,Deportivo Toluca,Central Midfield,26,Mexico,14,9,4,17,424,300,21776,25,26,296,98,62,21,2018,2026
 833115,Franco Romero,1804,Deportivo Toluca,Defensive Midfield,26,Argentina,5,8,5,17,257,167,13278,5,3,36,9,26,0,2019,2026
-565899,Nicolás Castro,1804,Deportivo Toluca,Attacking Midfield,26,Argentina,8,10,6,24,381,229,13536,27,32,352,114,19,0,2016,2026
+565899,Nicolás Castro,1804,Deportivo Toluca,Attacking Midfield,26,Argentina,8,10,6,24,382,229,13536,27,32,352,114,19,0,2016,2026
 431533,Sebastián Córdova,7633,UNAM Pumas,Attacking Midfield,29,Mexico,17,13,8,29,689,381,21905,70,37,392,162,30,46,2014,2026
 325598,Víctor Guzmán,1804,Deportivo Toluca,Attacking Midfield,31,Mexico,7,14,7,22,614,431,28648,85,46,521,158,62,27,2013,2026
 298796,Érick Gutiérrez,1804,Deportivo Toluca,Central Midfield,31,Mexico,35,15,5,33,812,488,33045,50,45,183,49,69,53,2012,2026
 349150,Fernando Arce,1804,Deportivo Toluca,Defensive Midfield,29,United States,24,15,10,24,719,391,26855,27,5,78,27,83,1,2012,2026
 1091863,Víctor Arteaga,7633,UNAM Pumas,Central Midfield,22,Mexico,18,5,4,18,295,124,7916,10,1,25,5,15,0,2022,2026
-955210,Luis Navarrete,1804,Deportivo Toluca,Central Midfield,18,Mexico,0,6,3,21,251,120,9925,14,1,7,1,27,28,2021,2026
-424689,Alexis Vega,1804,Deportivo Toluca,Left Winger,28,Mexico,9,12,4,24,698,436,28890,102,85,624,232,58,69,2015,2026
+955210,Luis Navarrete,1804,Deportivo Toluca,Central Midfield,18,Mexico,0,6,3,21,251,121,10015,14,1,7,1,27,29,2021,2026
+424689,Alexis Vega,1804,Deportivo Toluca,Left Winger,28,Mexico,9,12,4,24,700,437,28909,102,85,624,232,58,70,2015,2026
 412365,Helinho,1804,Deportivo Toluca,Right Winger,26,Brazil,11,12,3,18,530,306,17583,56,41,496,180,60,7,2015,2026
 411709,Jesús Angulo,1804,Deportivo Toluca,Right Winger,29,Mexico,10,13,10,26,591,443,27695,76,38,330,130,21,18,2014,2026
 211072,Paulinho,1804,Deportivo Toluca,Centre-Forward,34,Portugal,26,16,6,24,787,577,39800,228,76,770,338,94,6,2011,2026
@@ -119,22 +119,22 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 370861,Iván López,1804,Deportivo Toluca,Centre-Forward,27,Mexico,21,13,6,22,530,250,12970,56,8,132,65,11,10,2014,2026
 560312,Jorge Díaz Price,1804,Deportivo Toluca,Centre-Forward,28,Mexico,29,11,5,18,463,244,13607,35,19,80,30,28,0,2016,2026
 1087293,Oswaldo Virgen,1804,Deportivo Toluca,Centre-Forward,21,Mexico,23,5,3,20,236,100,6051,52,2,21,8,13,10,2022,2026
-1105432,José Arroyo,1804,Deportivo Toluca,Attack,19,Mexico,0,5,3,21,205,76,5110,16,1,2,1,2,9,2022,2026
+1105432,José Arroyo,1804,Deportivo Toluca,Attack,19,Mexico,0,5,3,21,205,77,5200,16,1,2,1,2,10,2022,2026
 1364054,Giovani Bravo,1804,Deportivo Toluca,Attack,19,Mexico,0,3,3,11,122,48,2244,5,0,0,0,4,0,2024,2026
 1428389,José Estrada,1804,Deportivo Toluca,Attack,18,Mexico,0,3,3,15,157,46,2801,5,0,0,0,7,0,2024,2026
 993723,Ronaldo Beltrán,1804,Deportivo Toluca,Goalkeeper,24,Mexico,12,9,4,19,430,128,11464,1,0,0,0,14,0,2018,2026
 356042,Carlos Acevedo,1403,Santos Laguna,Goalkeeper,30,Mexico,1,14,2,22,674,325,29026,1,0,3,1,10,7,2013,2026
 432222,Héctor Holguín,1403,Santos Laguna,Goalkeeper,25,Mexico,33,12,4,21,458,113,9863,0,0,0,0,8,13,2015,2026
 644676,Bruno Amione,1403,Santos Laguna,Centre-Back,24,Argentina,2,10,6,17,357,161,12591,7,3,51,17,37,22,2017,2026
-1087365,Emmanuel Echeverría,1403,Santos Laguna,Left-Back,23,Mexico,17,7,3,11,281,201,14864,6,0,34,11,37,0,2020,2026
+1087365,Emmanuel Echeverría,1403,Santos Laguna,Left-Back,23,Mexico,17,8,3,12,283,203,15044,6,0,34,11,37,2,2019,2026
 371169,Haret Ortega,49283,FC Juárez,Centre-Back,26,Mexico,23,12,8,18,439,183,13633,13,3,41,17,46,6,2014,2026
-339758,Kevin Balanta,1403,Santos Laguna,Centre-Back,28,Colombia,35,13,8,22,608,324,24657,6,8,73,14,79,16,2013,2025
+339758,Kevin Balanta,1403,Santos Laguna,Centre-Back,28,Colombia,35,13,8,22,609,324,24657,6,8,73,14,79,16,2013,2025
 370868,Efraín Orona,1403,Santos Laguna,Centre-Back,27,Mexico,14,12,8,16,523,250,16602,13,3,64,15,37,14,2014,2026
 1066358,Kevin Picón,1403,Santos Laguna,Right-Back,22,Mexico,22,7,4,12,134,52,3746,0,0,1,0,14,1,2020,2026
 243580,José Abella,1403,Santos Laguna,Right-Back,32,Mexico,4,16,5,22,766,496,39903,12,30,58,17,95,10,2011,2026
 1064246,Geovanni Pérez,1403,Santos Laguna,Centre-Back,21,Mexico,28,5,3,14,233,78,5619,8,0,14,2,13,9,2022,2026
 1305998,Juan Echilvestre,1403,Santos Laguna,Right-Back,18,Mexico,0,3,3,12,146,72,5807,4,0,2,2,8,7,2024,2026
-627068,Ezequiel Bullaude,1403,Santos Laguna,Attacking Midfield,26,Argentina,10,10,9,21,351,217,13224,45,23,216,86,20,0,2017,2026
+627068,Ezequiel Bullaude,1403,Santos Laguna,Attacking Midfield,26,Argentina,10,10,9,21,352,217,13224,45,23,216,86,20,0,2017,2026
 690024,Aldo López,1403,Santos Laguna,Defensive Midfield,26,Mexico,5,11,6,16,447,296,19997,15,4,81,32,17,0,2016,2026
 311680,Fran Villalba,1403,Santos Laguna,Attacking Midfield,28,Spain,21,14,9,18,565,409,25821,32,40,254,67,56,16,2013,2026
 886304,Salvador Mariscal,1403,Santos Laguna,Defensive Midfield,23,Mexico,8,8,3,18,355,162,11684,13,0,35,11,28,12,2019,2026
@@ -148,8 +148,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 432225,Diego Medina,1403,Santos Laguna,Right Winger,25,Mexico,24,12,4,18,445,225,12601,33,6,41,20,11,16,2015,2026
 906775,Kevin Palacios,1403,Santos Laguna,Left Winger,26,Colombia,77,9,7,17,297,156,8372,15,6,64,28,19,0,2018,2026
 131275,Choco Lozano,1403,Santos Laguna,Centre-Forward,32,Honduras,0,17,10,30,884,522,30854,122,37,323,123,85,94,2008,2025
-385454,Cristian Dájome,1403,Santos Laguna,Left Winger,31,Colombia,7,14,11,22,521,398,26077,62,34,415,140,56,0,2012,2025
-686447,Jair González,1403,Santos Laguna,Left Winger,23,Mexico,32,8,6,14,296,124,6517,6,4,29,8,7,2,2019,2026
+385454,Cristian Dájome,1403,Santos Laguna,Left Winger,31,Colombia,7,14,11,22,523,399,26157,62,34,418,141,56,0,2012,2025
+686447,Jair González,1403,Santos Laguna,Left Winger,23,Mexico,32,8,6,14,296,125,6590,6,4,29,8,7,2,2019,2026
 720716,Franco Pardo,1403,Santos Laguna,Centre-Back,29,Argentina,18,10,8,16,287,236,17939,11,3,61,14,38,0,2016,2026
 670800,Mauricio Cuevas,1403,Santos Laguna,Right-Back,23,United States,3,9,4,16,330,166,9618,8,26,41,14,25,19,2018,2026
 1103940,Felipe Sánchez,1403,Santos Laguna,Centre-Back,22,Argentina,25,6,5,11,189,104,7187,4,2,30,3,17,0,2021,2026
@@ -163,29 +163,29 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 819874,Fernando Tapia,3631,CF América,Goalkeeper,25,Mexico,21,9,8,17,482,130,11319,0,0,0,0,8,11,2018,2026
 71401,Rodolfo Cota,3631,CF América,Goalkeeper,39,Mexico,30,23,10,34,1135,543,48678,0,1,1,1,47,10,2004,2026
 1091755,César Lugo,3631,CF América,Goalkeeper,23,Mexico,31,5,3,16,181,25,2188,0,0,0,0,1,0,2022,2026
-687558,Israel Reyes,3631,CF América,Centre-Back,26,Mexico,3,10,5,22,533,351,27672,18,4,119,37,50,41,2017,2026
+687558,Israel Reyes,3631,CF América,Centre-Back,26,Mexico,3,10,5,22,535,353,27778,18,4,119,37,50,43,2017,2026
 699797,Ramón Juárez,3631,CF América,Centre-Back,25,Mexico,29,9,6,18,493,235,16871,15,3,98,27,42,22,2018,2026
 959193,Dagoberto Espinoza,3631,CF América,Right-Back,22,Mexico,34,6,4,20,264,118,7676,3,2,10,2,14,4,2021,2026
-572705,Kevin Álvarez,3631,CF América,Right-Back,27,Mexico,5,12,4,25,583,326,24989,14,26,221,61,43,30,2015,2026
+572705,Kevin Álvarez,3631,CF América,Right-Back,27,Mexico,5,12,4,25,585,327,25015,14,26,221,61,43,31,2015,2026
 1041475,Ralph Orquin,3711,CD Cruz Azul,Left-Back,23,Mexico,15,6,6,15,281,110,8863,2,6,20,6,11,0,2021,2026
 822164,Aarón Mejía,13353,Club Tijuana,Right-Back,25,Mexico,18,8,5,13,261,131,8909,2,4,17,0,26,0,2019,2026
 1019485,Miguel Vázquez,3631,CF América,Centre-Back,22,Mexico,32,6,3,20,365,119,9701,7,0,17,3,17,0,2021,2026
-356099,Cristián Borja,3631,CF América,Left-Back,33,Colombia,26,13,7,36,696,406,29420,11,27,78,22,43,11,2014,2026
-64134,Néstor Araújo,3631,CF América,Centre-Back,33,Mexico,14,19,9,39,1121,555,44839,15,12,78,18,94,81,2008,2026
+64134,Néstor Araújo,3631,CF América,Centre-Back,33,Mexico,14,19,9,39,1122,555,44839,15,12,78,18,94,81,2008,2026
 432953,Raphael Veiga,3631,CF América,Attacking Midfield,31,Brazil,23,12,4,18,771,492,31588,126,73,898,337,53,6,2015,2026
-261503,Álvaro Fidalgo,3631,CF América,Central Midfield,28,Mexico,0,14,7,21,487,416,29734,39,40,210,77,23,14,2012,2026
-370875,Érick Sánchez,3631,CF América,Central Midfield,27,Mexico,28,12,4,27,664,393,28011,42,31,420,127,61,41,2014,2026
+356099,Cristián Borja,3631,CF América,Left-Back,33,Colombia,26,13,7,36,696,406,29420,11,27,78,22,43,11,2014,2026
+261503,Álvaro Fidalgo,3631,CF América,Central Midfield,28,Mexico,0,14,7,22,489,416,29734,39,40,210,77,23,14,2012,2026
+370875,Érick Sánchez,3631,CF América,Central Midfield,27,Mexico,28,12,4,27,666,393,28011,42,31,420,127,61,41,2014,2026
 400173,Alan Cervantes,3631,CF América,Defensive Midfield,28,Mexico,13,13,5,28,595,357,23867,9,4,140,37,45,40,2014,2026
 371171,Alexis Gutiérrez,3631,CF América,Attacking Midfield,26,Mexico,20,12,5,23,515,244,14022,15,19,93,25,6,24,2014,2026
 1095597,Diego Arriaga,3631,CF América,Attacking Midfield,22,Mexico,186,5,3,17,241,101,5465,13,0,18,3,5,0,2022,2026
 60445,Jonathan dos Santos,3631,CF América,Defensive Midfield,35,Mexico,6,18,6,38,1198,565,35968,26,28,88,23,85,58,2008,2025
-465818,Brian Rodríguez,3631,CF América,Left Winger,26,Uruguay,7,11,5,32,523,327,18986,67,61,472,188,14,51,2016,2026
+465818,Brian Rodríguez,3631,CF América,Left Winger,26,Uruguay,7,11,5,32,522,327,18986,67,61,472,188,14,51,2016,2026
 272642,Allan Saint-Maximin,3631,CF América,Left Winger,28,France,0,14,12,27,662,423,28009,60,65,572,206,27,24,2012,2025
 351505,Álex Zendejas,3631,CF América,Right Winger,28,United States,10,15,9,37,831,417,29193,91,44,389,157,52,37,2012,2026
-668496,Isaías Violante,3631,CF América,Right Winger,23,Mexico,12,8,4,18,429,201,9100,30,11,140,52,26,23,2018,2026
+668496,Isaías Violante,3631,CF América,Right Winger,23,Mexico,12,9,4,19,433,203,9182,30,11,140,52,26,25,2018,2026
 366143,Víctor Dávila,3631,CF América,Centre-Forward,29,Chile,0,14,9,26,647,367,21628,84,34,483,185,47,29,2013,2026
-189410,Rodrigo Aguirre,7055,Tigres UANL,Centre-Forward,32,Uruguay,17,17,12,35,711,456,26809,111,39,529,196,111,24,2010,2026
-286339,Henry Martin,3631,CF América,Centre-Forward,33,Mexico,9,14,4,29,852,523,32259,171,78,475,242,17,52,2013,2026
+189410,Rodrigo Aguirre,7055,Tigres UANL,Centre-Forward,32,Uruguay,17,17,12,35,712,457,26814,111,39,529,196,111,25,2010,2026
+286339,Henry Martin,3631,CF América,Centre-Forward,34,Mexico,9,14,4,29,852,523,32259,171,78,475,242,17,52,2013,2026
 690681,José Raúl Zúñiga,3631,CF América,Centre-Forward,32,Colombia,0,8,5,12,282,224,14961,79,12,162,72,24,0,2019,2026
 688593,Santiago Ramos Mingo,3631,CF América,Centre-Back,24,Argentina,15,9,8,22,404,218,17536,8,1,63,17,36,0,2018,2026
 438001,Santiago Bueno,3631,CF América,Centre-Back,28,Uruguay,14,13,7,19,501,287,23935,15,9,73,30,43,34,2014,2026
@@ -194,7 +194,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 668179,Carlos Álvarez,3631,CF América,Attacking Midfield,23,Spain,8,9,5,16,399,235,14377,22,34,116,45,37,25,2018,2026
 652470,Edwin Cerrillo,3631,CF América,Defensive Midfield,26,United States,6,9,4,11,334,240,16735,2,3,97,17,64,1,2018,2026
 686449,Emilio Lara,3631,CF América,Right-Back,24,Mexico,2,9,4,24,517,180,13885,3,8,24,9,33,14,2018,2026
-1015624,Óscar Perea,3631,CF América,Left Winger,21,Colombia,22,6,5,19,250,132,7071,21,11,135,49,9,25,2021,2026
+1015624,Óscar Perea,3631,CF América,Left Winger,21,Colombia,22,6,5,19,253,133,7116,21,11,135,49,10,26,2021,2026
 1223877,Ícaro da Conceição,3631,CF América,Defensive Midfield,19,Brazil,217,4,3,6,80,56,3594,8,1,5,1,9,0,2023,2026
 211397,Miguel Borja,3631,CF América,Centre-Forward,33,Colombia,93,17,15,38,995,573,34056,232,43,728,301,110,40,2010,2026
 1232584,Alejandro Cárdenas,3631,CF América,Centre-Forward,20,Mexico,189,4,3,12,189,102,5603,26,0,7,5,6,0,2023,2026
@@ -202,7 +202,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 421920,Andrés Gudiño,3711,CD Cruz Azul,Goalkeeper,29,Mexico,1,12,5,24,546,131,11689,0,0,1,1,13,0,2015,2026
 723386,Emmanuel Ochoa,3711,CD Cruz Azul,Goalkeeper,21,Mexico,30,8,5,27,507,116,10519,0,0,0,0,8,21,2019,2026
 609255,Willer Ditta,3711,CD Cruz Azul,Centre-Back,28,Colombia,4,11,5,29,566,395,33362,10,6,116,28,90,12,2016,2026
-915155,Jesús Orozco Chiquete,3711,CD Cruz Azul,Centre-Back,24,Mexico,5,7,5,21,381,232,18802,6,8,74,14,44,9,2020,2026
+915155,Jesús Orozco Chiquete,3711,CD Cruz Azul,Centre-Back,24,Mexico,5,7,5,21,383,233,18818,6,8,74,14,44,10,2020,2026
 356044,Jorge Sánchez,8590,Atlas Guadalajara,Right-Back,28,Mexico,3,13,8,36,758,457,35684,12,23,172,49,83,79,2014,2026
 854454,Omar Campos,3711,CD Cruz Azul,Left-Back,24,Mexico,3,9,4,21,385,271,18704,11,16,125,32,20,4,2018,2026
 796063,Alán Montes,3711,CD Cruz Azul,Centre-Back,26,Mexico,12,7,10,19,351,146,11126,12,2,66,29,38,0,2020,2026
@@ -211,18 +211,18 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1150634,Jaziel Mendoza,3711,CD Cruz Azul,Centre-Back,20,Mexico,0,5,4,20,284,64,4079,1,0,5,1,13,8,2022,2026
 959192,Josué Díaz,3711,CD Cruz Azul,Left-Back,20,Mexico,0,7,4,21,338,111,7017,4,0,1,0,20,2,2020,2026
 1233183,Iván Silva,3711,CD Cruz Azul,Right-Back,18,Mexico,0,4,4,14,143,85,4477,3,0,5,1,10,0,2023,2026
-602324,Érik Lira,3711,CD Cruz Azul,Defensive Midfield,26,Mexico,6,10,5,21,518,346,26060,4,6,85,19,52,35,2017,2026
+602324,Érik Lira,3711,CD Cruz Azul,Defensive Midfield,26,Mexico,6,10,5,21,520,348,26166,4,6,85,19,52,37,2017,2026
 639152,José Paradela,3711,CD Cruz Azul,Attacking Midfield,27,Argentina,20,10,7,18,352,255,15897,43,41,316,119,41,0,2017,2026
 737125,Jeremy Márquez,3711,CD Cruz Azul,Central Midfield,26,Mexico,16,9,3,18,400,286,18682,23,12,260,66,30,4,2018,2026
 534620,Carlos Rodríguez,3711,CD Cruz Azul,Central Midfield,29,Mexico,19,12,4,29,723,541,40121,40,61,267,85,66,78,2015,2026
 610590,Agustín Palavecino,3711,CD Cruz Azul,Central Midfield,30,Argentina,8,10,6,23,416,334,22394,56,41,605,204,52,0,2017,2026
-769063,Luka Romero,3711,CD Cruz Azul,Attacking Midfield,21,Argentina,18,8,8,24,365,160,5469,17,6,160,48,12,11,2019,2026
-993722,Andrés Montaño,3711,CD Cruz Azul,Attacking Midfield,24,Mexico,10,7,4,18,366,200,10846,43,11,130,45,10,11,2020,2026
+769063,Luka Romero,3711,CD Cruz Azul,Attacking Midfield,22,Argentina,18,8,8,24,365,160,5469,17,6,160,48,12,11,2019,2026
+993722,Andrés Montaño,3711,CD Cruz Azul,Attacking Midfield,24,Mexico,10,7,4,18,368,200,10846,43,11,130,45,10,11,2020,2026
 690469,Amaury García,3711,CD Cruz Azul,Defensive Midfield,24,Mexico,17,9,6,19,432,177,10581,16,1,17,3,35,3,2018,2026
 881350,Cristian Jiménez,3711,CD Cruz Azul,Defensive Midfield,24,Mexico,32,7,4,21,498,138,10092,6,0,7,1,29,0,2020,2026
 1033267,Ariel Castro,3711,CD Cruz Azul,Attacking Midfield,20,Mexico,0,6,7,20,239,113,6417,18,0,1,0,16,5,2021,2026
 1364177,Emmanuel Sánchez,3711,CD Cruz Azul,Attacking Midfield,19,Mexico,0,3,4,15,141,75,5771,4,1,19,7,14,0,2024,2026
-553422,Carlos Rotondi,3711,CD Cruz Azul,Left Winger,29,Argentina,29,11,6,20,415,323,24440,62,52,400,135,38,0,2016,2026
+553422,Carlos Rotondi,3711,CD Cruz Azul,Left Winger,29,Argentina,29,11,6,20,416,324,24530,62,52,400,135,38,0,2016,2026
 1118326,Amaury Morales,3711,CD Cruz Azul,Right Winger,20,Mexico,194,5,3,20,253,106,3994,15,10,36,12,6,19,2022,2026
 267753,Nicolás Ibáñez,3711,CD Cruz Azul,Centre-Forward,32,Argentina,9,14,8,20,496,411,27551,146,23,700,268,51,0,2012,2026
 401932,Christian Ebere,3711,CD Cruz Azul,Centre-Forward,28,Nigeria,11,13,12,27,357,196,11473,43,13,32,11,14,8,2014,2026
@@ -234,33 +234,33 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1150510,Bryan Gamboa,3711,CD Cruz Azul,Centre-Forward,24,Mexico,27,4,3,17,295,85,5600,20,1,18,9,9,0,2023,2026
 905089,Raymundo Rubio,3711,CD Cruz Azul,Centre-Back,25,Mexico,28,9,7,19,366,149,10752,2,0,3,1,34,0,2018,2026
 1051694,Fernando Sámano,3711,CD Cruz Azul,Attacking Midfield,24,Mexico,25,7,7,18,282,165,10599,27,1,1,1,7,0,2020,2026
-802855,Raúl Rangel,6711,Deportivo Guadalajara,Goalkeeper,26,Mexico,1,10,4,19,429,241,21466,0,0,1,0,21,21,2017,2026
+802855,Raúl Rangel,6711,Deportivo Guadalajara,Goalkeeper,26,Mexico,1,10,4,19,431,243,21572,0,0,1,0,21,23,2017,2026
 504103,Eduardo García,6711,Deportivo Guadalajara,Goalkeeper,22,Mexico,30,10,4,22,386,170,15240,0,0,1,0,6,24,2016,2026
 260662,Óscar Whalley,6711,Deportivo Guadalajara,Goalkeeper,32,Spain,13,15,11,22,600,186,16599,0,1,1,1,12,0,2012,2026
 704556,Bryan González,6711,Deportivo Guadalajara,Left-Back,23,Mexico,5,10,4,23,505,236,16864,34,20,214,74,17,37,2017,2026
-802857,Diego Campillo,6711,Deportivo Guadalajara,Centre-Back,25,Mexico,3,8,5,16,342,243,17725,9,4,54,18,35,10,2019,2026
+802857,Diego Campillo,6711,Deportivo Guadalajara,Centre-Back,25,Mexico,3,8,5,17,344,243,17725,9,4,54,18,35,10,2019,2026
 575367,Richard Ledezma,6711,Deportivo Guadalajara,Right-Back,26,Mexico,37,10,6,23,529,218,12638,16,26,139,60,30,11,2017,2026
 811373,José Castillo,6711,Deportivo Guadalajara,Centre-Back,24,Mexico,2,9,3,12,384,196,15306,9,3,47,14,21,6,2017,2026
 636066,Daniel Aguirre,6711,Deportivo Guadalajara,Centre-Back,27,United States,23,7,3,10,286,140,7820,9,14,96,29,23,0,2020,2026
 596929,Gilberto Sepúlveda,49283,FC Juárez,Centre-Back,27,Mexico,2,10,3,23,528,289,23056,10,0,76,19,66,25,2017,2026
-401340,Miguel Tapias,6711,Deportivo Guadalajara,Centre-Back,29,Mexico,4,14,5,20,549,244,19691,5,3,54,12,23,3,2013,2026
 832308,Miguel Gómez,6711,Deportivo Guadalajara,Right-Back,24,Mexico,24,8,4,18,318,179,12376,7,6,15,5,22,3,2019,2026
+401340,Miguel Tapias,6711,Deportivo Guadalajara,Centre-Back,29,Mexico,4,14,5,20,549,244,19691,5,3,54,12,23,3,2013,2026
 1095604,Ángel Chávez,6711,Deportivo Guadalajara,Centre-Back,20,Mexico,0,5,7,18,263,80,6106,10,3,4,0,21,7,2022,2026
-1260851,Santiago Sandoval,6711,Deportivo Guadalajara,Attacking Midfield,19,Mexico,30,3,3,12,99,80,4526,20,4,80,31,7,8,2024,2026
+1260851,Santiago Sandoval,6711,Deportivo Guadalajara,Attacking Midfield,19,Mexico,30,3,3,13,101,81,4552,20,6,80,31,7,9,2024,2026
 504113,Efraín Álvarez,6711,Deportivo Guadalajara,Attacking Midfield,24,Mexico,10,11,4,19,491,271,15240,44,47,391,142,17,33,2016,2026
 724443,Brian Gutiérrez,6711,Deportivo Guadalajara,Attacking Midfield,23,Mexico,11,9,2,14,336,220,13172,26,35,324,105,23,23,2018,2026
-532938,Luis Romo,6711,Deportivo Guadalajara,Central Midfield,31,Mexico,7,15,7,25,716,470,36551,35,51,423,115,54,75,2012,2026
+532938,Luis Romo,6711,Deportivo Guadalajara,Central Midfield,31,Mexico,7,15,7,25,718,471,36615,35,51,423,115,54,76,2012,2026
 282927,Omar Govea,6711,Deportivo Guadalajara,Defensive Midfield,30,Mexico,6,15,10,32,658,335,23502,16,32,154,39,63,14,2012,2026
 274963,Fernando González,6711,Deportivo Guadalajara,Defensive Midfield,32,Mexico,28,15,7,18,691,464,33003,6,10,84,17,75,0,2012,2026
 1105433,Samir Inda,6711,Deportivo Guadalajara,Defensive Midfield,17,Mexico,0,5,4,20,186,82,6064,4,1,15,2,18,19,2022,2026
-353583,Roberto Alvarado,6711,Deportivo Guadalajara,Right Winger,28,Mexico,25,14,8,26,699,535,37068,81,74,490,180,50,90,2013,2026
+353583,Roberto Alvarado,6711,Deportivo Guadalajara,Right Winger,28,Mexico,25,14,8,26,701,537,37155,81,74,491,181,50,92,2013,2026
 955223,Hugo Camberos,6711,Deportivo Guadalajara,Right Winger,19,Mexico,14,6,3,14,183,109,5669,22,5,73,21,13,30,2021,2026
 400194,Ricardo Marín,6711,Deportivo Guadalajara,Centre-Forward,28,Mexico,17,12,9,21,596,355,24249,120,17,171,76,26,4,2014,2026
 955756,Yael Padilla,13353,Club Tijuana,Left Winger,20,Mexico,31,6,5,16,224,116,4436,12,9,100,32,12,18,2021,2026
-694158,Jonathan Pérez,6711,Deportivo Guadalajara,Left Winger,23,Mexico,18,8,6,14,389,127,6622,18,23,126,41,11,14,2019,2026
-1094402,Sergio Aguayo,6711,Deportivo Guadalajara,Centre-Forward,22,Mexico,0,6,6,20,265,117,6430,43,4,34,10,20,0,2021,2026
+694158,Jonathan Pérez,6711,Deportivo Guadalajara,Left Winger,23,Mexico,18,8,6,14,391,129,6745,18,23,126,41,11,16,2019,2026
+1094402,Sergio Aguayo,6711,Deportivo Guadalajara,Centre-Forward,22,Mexico,0,6,6,20,266,117,6430,43,4,34,10,20,0,2021,2026
 160700,Ángel Sepúlveda,6711,Deportivo Guadalajara,Centre-Forward,35,Mexico,9,17,12,27,973,582,35019,136,60,453,197,51,12,2010,2026
-1127591,Sebastián Liceaga,6711,Deportivo Guadalajara,Goalkeeper,19,Mexico,31,5,4,20,230,66,5821,0,0,0,0,1,6,2022,2026
+1127591,Sebastián Liceaga,6711,Deportivo Guadalajara,Goalkeeper,19,Mexico,31,5,4,20,231,67,5911,0,0,0,0,1,6,2022,2026
 686445,Luis Gabriel Rey,6711,Deportivo Guadalajara,Centre-Back,24,Mexico,16,8,9,17,302,145,9199,16,1,50,13,16,2,2019,2026
 740574,Jordán Carrillo,6711,Deportivo Guadalajara,Attacking Midfield,24,Mexico,33,10,5,18,431,226,12361,37,7,143,48,22,14,2017,2026
 599732,Kevin Castañeda,6711,Deportivo Guadalajara,Attacking Midfield,27,Mexico,19,10,6,14,462,265,14982,55,19,392,114,37,3,2017,2026
@@ -272,7 +272,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 312568,Jesús Angulo,7055,Tigres UANL,Centre-Back,28,Mexico,27,13,4,26,751,436,35870,9,14,93,21,86,34,2014,2026
 429443,Marco Farfán,7055,Tigres UANL,Left-Back,28,United States,3,12,6,13,495,267,19992,6,12,51,12,33,3,2015,2026
 295426,Osvaldo Rodríguez,7055,Tigres UANL,Left-Back,30,Mexico,35,15,6,23,745,316,23034,8,14,57,16,47,18,2012,2026
-599569,Vladímir Loroña,7055,Tigres UANL,Right-Back,27,Mexico,32,12,9,21,515,266,19484,13,7,68,18,60,12,2015,2026
+599569,Vladímir Loroña,7055,Tigres UANL,Right-Back,28,Mexico,32,12,9,21,515,266,19484,13,7,68,18,60,12,2015,2026
 611018,Francisco Reyes,7055,Tigres UANL,Left-Back,28,Mexico,2,9,6,13,330,153,10304,5,7,6,2,22,0,2016,2026
 971630,Rafael Guerrero,7055,Tigres UANL,Centre-Back,23,Mexico,33,7,5,19,349,105,6592,1,1,14,5,31,5,2020,2026
 1086862,Fernando Ordóñez,7055,Tigres UANL,Left-Back,25,Mexico,26,8,4,19,462,140,8985,4,0,5,1,23,0,2019,2026
@@ -280,70 +280,70 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 687359,Rômulo,7055,Tigres UANL,Defensive Midfield,26,Brazil,23,9,6,15,377,197,13531,6,4,80,16,23,0,2018,2026
 690533,César Araújo,7055,Tigres UANL,Defensive Midfield,25,Uruguay,5,9,3,17,317,259,20324,8,16,125,21,67,5,2018,2026
 310744,Fernando Gorriarán,7055,Tigres UANL,Central Midfield,31,Uruguay,8,14,4,22,576,479,37650,43,59,405,104,93,7,2013,2026
-1086869,Bernardo Parra,4961,Querétaro FC,Defensive Midfield,21,Mexico,8,6,4,19,268,150,8587,6,2,11,3,15,9,2021,2026
+1086869,Bernardo Parra,4961,Querétaro FC,Defensive Midfield,21,Mexico,8,6,4,19,269,150,8587,6,2,11,3,15,9,2021,2026
 234227,Juan Pablo Vigón,7055,Tigres UANL,Central Midfield,35,Mexico,6,19,10,19,773,489,28641,52,22,232,88,67,0,2008,2026
 1263461,Henrique Simeone,7055,Tigres UANL,Defensive Midfield,19,Mexico,34,4,4,12,100,49,2960,3,0,5,1,7,8,2023,2026
 371174,Diego Lainez,7055,Tigres UANL,Right Winger,26,Mexico,16,12,5,33,708,387,21831,33,46,266,89,76,65,2014,2026
 629006,Ozziel Herrera,7055,Tigres UANL,Right Winger,25,Mexico,77,9,3,16,443,295,14635,56,22,306,116,34,15,2018,2026
-668495,Marcelo Flores,7055,Tigres UANL,Left Winger,23,Canada,20,9,6,26,459,180,8947,33,14,188,73,4,22,2018,2026
+668495,Marcelo Flores,7055,Tigres UANL,Left Winger,23,Canada,20,9,6,26,461,183,9095,33,14,188,73,4,25,2018,2026
 355998,Uriel Antuna,7633,UNAM Pumas,Right Winger,29,Mexico,21,13,11,35,700,486,32423,79,59,406,171,44,94,2014,2026
 1094408,Diego Sánchez,7055,Tigres UANL,Left Winger,21,Mexico,30,5,3,19,294,115,6355,13,4,38,11,10,16,2022,2026
 43907,André-Pierre Gignac,7055,Tigres UANL,Centre-Forward,39,France,10,22,5,30,1175,865,64098,370,92,1099,406,125,40,2004,2025
 503343,Alan Franco,7055,Tigres UANL,Centre-Back,30,Argentina,15,11,5,22,514,369,30759,7,15,130,25,60,1,2016,2026
-1288364,Jaidyn Contreras,7055,Tigres UANL,Left Winger,19,United States,29,4,4,8,122,63,3501,6,9,2,0,6,18,2023,2026
+1288364,Jaidyn Contreras,7055,Tigres UANL,Left Winger,19,United States,29,4,4,8,124,63,3501,6,9,2,0,6,18,2023,2026
 1086864,Isaias Galván,7055,Tigres UANL,Centre-Forward,20,Mexico,0,6,4,15,201,136,9951,35,0,0,0,7,0,2021,2026
 280379,Luis Cárdenas,2407,CF Monterrey,Goalkeeper,33,Mexico,22,16,6,23,961,247,22087,0,0,0,0,5,3,2011,2026
-686444,Víctor Guzmán,2407,CF Monterrey,Centre-Back,24,Mexico,4,9,3,20,484,266,21401,6,1,57,11,30,30,2018,2026
-469718,Gerardo Arteaga,2407,CF Monterrey,Left-Back,28,Mexico,3,12,4,32,672,425,33557,20,19,149,40,61,34,2015,2026
-833268,Alonso Aceves,2407,CF Monterrey,Left-Back,25,Mexico,19,9,7,19,395,199,14562,6,4,58,16,23,3,2017,2026
-347577,Ricardo Chávez,2407,CF Monterrey,Right-Back,31,Mexico,2,15,8,20,647,443,34950,15,25,176,57,95,1,2012,2026
-295373,Érick Aguirre,2407,CF Monterrey,Right-Back,29,Mexico,14,15,5,28,736,419,28336,16,35,112,37,39,58,2012,2026
-256866,Carlos Salcedo,2407,CF Monterrey,Centre-Back,33,Mexico,13,16,11,37,783,449,35638,12,3,96,27,115,61,2011,2026
+686444,Víctor Guzmán,2407,CF Monterrey,Centre-Back,24,Mexico,4,9,3,20,485,266,21401,6,1,57,11,30,30,2018,2026
+469718,Gerardo Arteaga,2407,CF Monterrey,Left-Back,28,Mexico,3,12,4,32,673,425,33557,20,19,149,40,61,34,2015,2026
+833268,Alonso Aceves,2407,CF Monterrey,Left-Back,25,Mexico,19,9,7,19,396,199,14562,6,4,58,16,23,3,2017,2026
+347577,Ricardo Chávez,2407,CF Monterrey,Right-Back,31,Mexico,2,15,8,20,648,443,34950,15,25,176,57,95,1,2012,2026
+295373,Érick Aguirre,2407,CF Monterrey,Right-Back,29,Mexico,14,15,5,28,737,419,28336,16,35,112,37,39,58,2012,2026
+256866,Carlos Salcedo,2407,CF Monterrey,Centre-Back,33,Mexico,13,16,11,37,784,449,35638,12,3,96,27,115,61,2011,2026
 670185,Luis Sánchez,6709,CF Atlante,Centre-Back,26,Mexico,3,10,9,18,536,208,17040,13,0,21,6,32,0,2017,2026
-131093,Stefan Medina,2407,CF Monterrey,Right-Back,34,Colombia,33,19,3,26,989,629,50493,18,20,111,22,147,32,2008,2026
-264133,Luis Reyes,2407,CF Monterrey,Left-Back,35,Mexico,21,15,7,24,670,366,28000,19,28,176,42,55,9,2010,2026
-944086,César Bustos,2407,CF Monterrey,Centre-Back,21,Mexico,34,7,4,21,387,137,10833,9,0,9,1,16,21,2020,2026
+131093,Stefan Medina,2407,CF Monterrey,Right-Back,34,Colombia,33,19,3,26,990,629,50493,18,20,111,22,147,32,2008,2026
+264133,Luis Reyes,2407,CF Monterrey,Left-Back,35,Mexico,21,15,7,24,671,366,28000,19,28,176,42,55,9,2010,2026
+944086,César Bustos,2407,CF Monterrey,Centre-Back,21,Mexico,34,7,4,21,388,137,10833,9,0,9,1,16,21,2020,2026
 1429385,Diego García,2407,CF Monterrey,Centre-Back,18,Mexico,0,3,3,10,98,41,3338,0,0,0,0,16,0,2024,2026
-1095326,Iker Fimbres,2407,CF Monterrey,Central Midfield,21,Mexico,11,5,3,12,257,125,6618,11,1,83,28,8,8,2022,2026
+1095326,Iker Fimbres,2407,CF Monterrey,Central Midfield,21,Mexico,11,5,3,12,258,125,6618,11,1,83,28,8,8,2022,2026
 66106,Sergio Canales,2407,CF Monterrey,Attacking Midfield,34,Spain,10,20,7,30,1059,680,45860,128,93,658,243,72,42,2007,2026
-723240,Fidel Ambríz,2407,CF Monterrey,Defensive Midfield,23,Mexico,5,8,3,18,443,245,15394,17,4,163,44,20,25,2019,2026
-214775,Óliver Torres,2407,CF Monterrey,Central Midfield,32,Spain,8,16,6,25,854,574,34610,39,68,195,72,57,39,2011,2026
-333760,Jorge Rodríguez,2407,CF Monterrey,Defensive Midfield,31,Argentina,30,14,3,16,515,393,31929,9,16,147,26,57,0,2013,2026
+723240,Fidel Ambríz,2407,CF Monterrey,Defensive Midfield,23,Mexico,5,8,3,18,444,245,15394,17,4,163,44,20,25,2019,2026
+214775,Óliver Torres,2407,CF Monterrey,Central Midfield,32,Spain,8,16,6,25,855,574,34610,39,68,195,72,57,39,2011,2026
+333760,Jorge Rodríguez,2407,CF Monterrey,Defensive Midfield,31,Argentina,30,14,3,16,516,393,31929,9,16,147,26,57,0,2013,2026
 1364134,Allen Rojas,2407,CF Monterrey,Attacking Midfield,19,Mexico,251,3,3,9,138,65,3954,2,0,3,1,8,0,2024,2026
 955217,Omar Gálvez,2407,CF Monterrey,Attacking Midfield,19,Mexico,0,6,3,13,164,71,4378,15,2,2,1,1,4,2021,2026
-1015089,Sebastián Rodríguez,2407,CF Monterrey,Central Midfield,19,Mexico,35,5,4,13,200,93,6496,7,2,0,0,17,1,2022,2026
+1015089,Sebastián Rodríguez,2407,CF Monterrey,Central Midfield,19,Mexico,35,5,4,13,201,93,6496,7,2,0,0,17,1,2022,2026
 1132216,Carlos Frayde,2407,CF Monterrey,Central Midfield,21,Mexico,0,5,3,11,138,79,5152,7,0,0,0,6,0,2022,2026
-955219,Álex Urías,2407,CF Monterrey,Central Midfield,19,Mexico,0,6,3,17,196,73,4988,13,2,25,14,7,15,2021,2026
+955219,Álex Urías,2407,CF Monterrey,Central Midfield,19,Mexico,0,6,3,17,196,74,5078,13,2,25,14,7,16,2021,2026
 401572,Germán Berterame,2407,CF Monterrey,Centre-Forward,26,Mexico,0,13,6,21,473,338,25442,121,31,694,289,37,15,2014,2026
 955314,Joel Domínguez,2407,CF Monterrey,Central Midfield,20,Mexico,0,6,3,17,297,96,7452,5,0,0,0,12,5,2021,2026
-636784,Luca Orellano,2407,CF Monterrey,Right Winger,26,Argentina,10,9,4,18,370,257,14956,33,32,380,155,19,0,2018,2026
-189441,Lucas Ocampos,2407,CF Monterrey,Left Winger,32,Argentina,7,17,8,30,813,615,39474,116,71,786,262,105,16,2010,2026
+636784,Luca Orellano,2407,CF Monterrey,Right Winger,26,Argentina,10,9,4,18,371,257,14956,33,32,380,155,19,0,2018,2026
+189441,Lucas Ocampos,2407,CF Monterrey,Left Winger,32,Argentina,7,17,8,30,814,615,39474,116,71,786,262,105,16,2010,2026
 182877,Anthony Martial,2407,CF Monterrey,Centre-Forward,29,France,9,16,9,34,907,535,31633,147,82,390,171,24,72,2010,2025
-371168,Roberto de la Rosa,2407,CF Monterrey,Centre-Forward,26,Mexico,27,12,4,21,514,304,14893,73,16,317,105,7,24,2014,2026
-125165,Jesús Corona,2407,CF Monterrey,Right Winger,33,Mexico,17,17,6,38,1162,668,40542,82,113,269,87,72,82,2010,2026
-190804,Uros Djurdjevic,2407,CF Monterrey,Centre-Forward,32,Montenegro,32,19,10,34,1045,552,35897,184,33,574,234,114,60,2008,2026
+371168,Roberto de la Rosa,2407,CF Monterrey,Centre-Forward,26,Mexico,27,12,4,21,515,304,14893,73,16,317,105,7,24,2014,2026
+125165,Jesús Corona,2407,CF Monterrey,Right Winger,33,Mexico,17,17,6,38,1165,670,40577,82,113,270,87,72,84,2010,2026
+190804,Uros Djurdjevic,2407,CF Monterrey,Centre-Forward,32,Montenegro,32,19,10,34,1048,552,35897,184,33,574,234,114,60,2008,2026
 1224695,Cristian Reyes,2407,CF Monterrey,Right Winger,19,Mexico,0,4,3,14,230,67,4116,8,1,5,1,13,0,2023,2026
-105888,Esteban Andrada,2407,CF Monterrey,Goalkeeper,35,Argentina,1,19,7,30,891,417,37457,0,1,1,0,51,12,2008,2026
-1105435,Joaquín Moxica,6709,CF Atlante,Centre-Forward,20,Mexico,11,5,4,17,240,101,5675,28,4,37,14,6,11,2022,2026
-540306,César Ramos,2407,CF Monterrey,Goalkeeper,26,Mexico,31,12,6,20,665,126,11268,0,0,0,0,5,0,2015,2026
-334042,Orbelín Pineda,2407,CF Monterrey,Central Midfield,30,Mexico,25,15,9,32,833,614,41293,68,58,435,126,53,102,2012,2026
-1171460,César Garza,2407,CF Monterrey,Defensive Midfield,21,Mexico,18,4,4,15,223,92,5419,3,0,23,7,19,19,2023,2026
-923204,Javier Casillas,2407,CF Monterrey,Right-Back,25,Mexico,36,8,4,13,334,164,12119,7,4,0,0,36,0,2019,2026
-420884,Hugo Cuypers,2407,CF Monterrey,Centre-Forward,29,Belgium,99,13,11,28,514,321,24251,153,43,551,254,19,5,2013,2026
-317454,Diego Rossi,2407,CF Monterrey,Centre-Forward,28,Uruguay,9,13,5,28,531,427,31228,145,80,850,369,21,28,2014,2026
-1427169,Paxon Ruffin,2407,CF Monterrey,Attacking Midfield,16,United States,244,2,2,3,39,16,696,4,0,1,0,1,14,2025,2026
+105888,Esteban Andrada,2407,CF Monterrey,Goalkeeper,35,Argentina,1,19,7,30,892,417,37457,0,1,1,0,51,12,2008,2026
+1105435,Joaquín Moxica,6709,CF Atlante,Centre-Forward,20,Mexico,11,5,4,18,241,101,5675,28,4,37,14,6,11,2022,2026
+540306,César Ramos,2407,CF Monterrey,Goalkeeper,26,Mexico,31,12,6,20,666,126,11268,0,0,0,0,5,0,2015,2026
+334042,Orbelín Pineda,2407,CF Monterrey,Central Midfield,30,Mexico,25,15,9,32,834,615,41383,68,58,435,126,53,102,2012,2026
+1171460,César Garza,2407,CF Monterrey,Defensive Midfield,21,Mexico,18,4,4,15,224,93,5464,3,0,24,8,19,19,2023,2026
+923204,Javier Casillas,2407,CF Monterrey,Right-Back,25,Mexico,36,8,4,13,335,164,12119,7,4,0,0,36,0,2019,2026
+420884,Hugo Cuypers,2407,CF Monterrey,Centre-Forward,29,Belgium,99,13,11,28,516,321,24251,153,43,551,254,19,5,2013,2026
+317454,Diego Rossi,2407,CF Monterrey,Centre-Forward,28,Uruguay,9,13,5,28,532,427,31228,145,80,850,369,21,28,2014,2026
+1427169,Paxon Ruffin,2407,CF Monterrey,Attacking Midfield,16,United States,244,2,2,3,40,16,696,4,0,1,0,1,14,2025,2026
 131074,Antonio Rodríguez,13353,Club Tijuana,Goalkeeper,34,Mexico,2,19,10,28,869,406,36495,1,0,1,1,21,16,2008,2026
 654326,Salim Hernández,13353,Club Tijuana,Goalkeeper,27,Mexico,29,9,5,13,303,130,11700,0,0,0,0,4,0,2018,2026
 504104,Alejandro Gómez,13353,Club Tijuana,Centre-Back,24,Mexico,6,10,7,29,600,225,16961,22,7,70,20,48,32,2016,2026
 715428,Rafael Fernández,13353,Club Tijuana,Right-Back,26,Mexico,3,9,4,11,308,186,13895,5,6,47,11,44,1,2018,2026
-491616,Jackson Porozo,13353,Club Tijuana,Centre-Back,26,Ecuador,12,11,9,32,501,204,16654,12,2,95,27,53,43,2016,2026
+491616,Jackson Porozo,13353,Club Tijuana,Centre-Back,26,Ecuador,12,11,9,32,503,206,16834,12,2,97,27,53,45,2016,2026
 175445,Unai Bilbao,13353,Club Tijuana,Centre-Back,32,Spain,4,14,6,17,519,374,31392,34,11,138,40,65,0,2010,2026
 857897,Alan Vega,13353,Club Tijuana,Left-Back,26,Mexico,16,10,6,14,346,208,14729,17,18,42,10,31,0,2017,2026
 1132762,Diogo Bagüí,6709,CF Atlante,Centre-Back,21,Ecuador,32,5,5,12,154,73,5725,4,0,21,5,4,2,2022,2026
 1086814,Pablo Ortiz,13353,Club Tijuana,Left-Back,24,Mexico,33,7,4,10,258,142,9753,2,3,15,6,30,0,2020,2026
 312576,Óscar Manzanárez,13353,Club Tijuana,Centre-Back,30,Mexico,25,15,8,22,501,227,17445,2,1,17,1,55,0,2012,2026
 1340121,Alejandro Magallón,13353,Club Tijuana,Defender,19,Mexico,0,3,3,11,153,72,5472,0,0,1,0,1,0,2024,2026
-1155723,Gilberto Mora,13353,Club Tijuana,Attacking Midfield,18,Mexico,10,5,2,9,146,88,5408,20,6,106,41,3,22,2022,2026
+1155723,Gilberto Mora,13353,Club Tijuana,Attacking Midfield,18,Mexico,10,5,2,10,148,90,5514,21,6,107,41,3,24,2022,2026
 1087349,Ramiro Árciga,13353,Club Tijuana,Right Midfield,22,Mexico,17,7,4,10,231,137,7506,17,14,83,29,26,9,2020,2026
 646297,Iván Tona,13353,Club Tijuana,Defensive Midfield,26,Mexico,8,10,7,14,396,237,16165,9,7,77,18,44,0,2017,2026
 221805,Ignacio Rivero,13353,Club Tijuana,Central Midfield,34,Uruguay,15,16,5,21,598,511,39561,53,30,527,164,96,0,2011,2026
@@ -355,15 +355,15 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1241242,Joban González,13353,Club Tijuana,Midfield,20,Mexico,0,4,3,11,190,76,4557,17,0,6,0,7,0,2023,2026
 162940,Joe Corona,13353,Club Tijuana,Central Midfield,34,United States,0,17,9,30,798,507,29909,33,27,120,37,63,26,2009,2025
 1282924,Germán Padilla,13353,Club Tijuana,Defensive Midfield,17,Mexico,0,3,4,10,130,75,5669,2,1,5,1,14,0,2024,2026
-694157,Diego Abreu,13353,Club Tijuana,Centre-Forward,23,Uruguay,19,8,4,16,186,90,3795,26,3,29,10,6,5,2018,2026
-813048,Vitinho,13353,Club Tijuana,Right Winger,24,Brazil,0,7,5,16,335,202,11586,45,17,250,102,27,0,2019,2025
+694157,Diego Abreu,13353,Club Tijuana,Centre-Forward,23,Uruguay,19,8,4,16,187,91,3836,26,3,29,10,6,6,2018,2026
 527972,Mourad El Ghezouani,13353,Club Tijuana,Centre-Forward,28,Morocco,9,9,5,12,292,223,13290,47,8,166,62,36,0,2018,2026
+813048,Vitinho,13353,Club Tijuana,Right Winger,24,Brazil,0,7,5,16,336,202,11586,45,17,250,102,27,0,2019,2025
 162569,Josef Martínez,13353,Club Tijuana,Centre-Forward,32,Venezuela,30,18,11,27,862,551,34712,221,50,582,277,33,72,2009,2026
 354666,Shamar Nicholson,13353,Club Tijuana,Centre-Forward,29,Jamaica,0,13,7,30,565,380,21770,115,38,379,159,32,63,2014,2026
-285127,Domingo Blanco,13353,Club Tijuana,Right Winger,30,Argentina,27,12,7,20,479,294,19053,18,15,120,29,54,1,2013,2025
+285127,Domingo Blanco,13353,Club Tijuana,Right Winger,30,Argentina,27,12,7,20,475,294,19053,18,15,120,29,54,1,2013,2025
 656389,Adonis Preciado,13353,Club Tijuana,Left Winger,29,Ecuador,7,10,6,13,355,242,13307,23,27,255,87,49,0,2017,2026
 813044,Elias Manoel,13353,Club Tijuana,Centre-Forward,24,Brazil,13,8,8,22,302,166,7579,41,7,190,79,9,0,2019,2026
-703564,Francisco González,13353,Club Tijuana,Right Winger,25,Argentina,11,10,5,19,342,206,12602,28,35,193,79,22,9,2017,2026
+703564,Francisco González,13353,Club Tijuana,Right Winger,25,Argentina,11,10,5,19,343,207,12692,28,35,193,79,22,9,2017,2026
 79422,Keylor Navas,7633,UNAM Pumas,Goalkeeper,39,Costa Rica,1,24,8,42,1336,691,61916,0,1,0,0,28,130,2002,2026
 955776,Pablo Lara,7633,UNAM Pumas,Goalkeeper,21,Mexico,35,6,3,15,232,60,5390,0,0,0,0,6,14,2021,2026
 1373697,Rodrigo Parra,7633,UNAM Pumas,Goalkeeper,17,Mexico,256,3,3,17,172,19,1710,0,0,0,0,0,0,2024,2026
@@ -377,15 +377,15 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1087306,Pablo Monroy,7633,UNAM Pumas,Right-Back,24,Mexico,13,7,3,12,301,140,6811,2,5,25,2,28,11,2020,2026
 1097847,Ángel Azuaje,7633,UNAM Pumas,Centre-Back,22,Venezuela,34,5,3,12,176,71,4418,1,0,9,2,12,0,2021,2026
 745454,Tony Leone,7633,UNAM Pumas,Centre-Back,22,Mexico,24,9,7,20,457,126,8865,4,4,20,7,9,25,2018,2026
-659806,Pedro Vite,7633,UNAM Pumas,Central Midfield,24,Ecuador,45,9,6,24,372,276,18702,28,29,213,73,32,43,2018,2026
+659806,Pedro Vite,7633,UNAM Pumas,Central Midfield,24,Ecuador,45,9,6,24,374,278,18866,28,29,214,73,32,45,2018,2026
 662451,José Caicedo,7633,UNAM Pumas,Defensive Midfield,23,Colombia,0,8,6,19,362,206,15482,8,3,99,26,39,3,2018,2025
-375300,Adalberto Carrasquilla,7633,UNAM Pumas,Central Midfield,27,Panama,8,13,4,28,620,423,30776,26,43,264,78,101,81,2014,2026
+375300,Adalberto Carrasquilla,7633,UNAM Pumas,Central Midfield,27,Panama,8,13,4,28,621,424,30866,26,43,264,78,101,82,2014,2026
 923688,Santiago Trigos,7633,UNAM Pumas,Defensive Midfield,24,Mexico,20,8,4,14,381,197,10115,5,6,17,7,32,3,2019,2026
 955283,Ángel Rico,7633,UNAM Pumas,Attacking Midfield,21,Mexico,26,6,3,13,201,92,4898,6,0,22,4,7,6,2021,2026
 1279963,Stanley García,7633,UNAM Pumas,Midfield,18,Mexico,0,3,3,14,151,63,3744,4,0,3,1,8,0,2024,2026
 1127595,Dennis Ramírez,7633,UNAM Pumas,Attacking Midfield,18,Mexico,0,3,3,12,123,52,3378,3,0,1,0,4,0,2024,2026
 950873,Jorge Ruvalcaba,7633,UNAM Pumas,Left Winger,23,Mexico,0,5,5,13,266,168,9459,27,10,241,84,39,5,2021,2025
-832340,Robert Morales,7633,UNAM Pumas,Centre-Forward,27,Paraguay,31,8,4,17,350,199,11292,59,21,216,92,12,3,2019,2026
+832340,Robert Morales,7633,UNAM Pumas,Centre-Forward,27,Paraguay,31,8,4,17,352,200,11362,59,21,216,92,12,4,2019,2026
 424676,Juninho,7633,UNAM Pumas,Centre-Forward,29,Brazil,23,13,11,30,627,352,18345,87,25,278,116,19,0,2014,2026
 448414,Alan Medina,7633,UNAM Pumas,Right Winger,29,Mexico,22,12,10,15,532,255,12993,20,15,137,38,18,3,2015,2026
 1095864,Santiago López,7633,UNAM Pumas,Centre-Forward,21,Canada,30,5,4,17,184,70,3977,17,4,27,11,4,10,2022,2026
@@ -394,11 +394,11 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 540315,César Huerta,7633,UNAM Pumas,Left Winger,25,Mexico,10,10,9,26,462,280,17404,52,23,329,129,69,36,2016,2026
 730802,Luciano Herrera,7633,UNAM Pumas,Left Winger,30,Argentina,14,11,6,13,262,211,14160,28,19,130,48,37,0,2016,2026
 704555,Israel Luna,7633,UNAM Pumas,Attacking Midfield,24,Mexico,15,9,5,17,378,159,8234,19,0,67,26,27,17,2018,2026
-74113,Camilo Vargas,8590,Atlas Guadalajara,Goalkeeper,37,Colombia,12,19,5,23,1038,641,57512,3,5,4,1,66,47,2008,2026
+74113,Camilo Vargas,8590,Atlas Guadalajara,Goalkeeper,37,Colombia,12,19,5,23,1040,642,57602,3,5,4,1,66,48,2008,2026
 833271,Antonio Sánchez,8590,Atlas Guadalajara,Goalkeeper,26,Mexico,22,11,5,18,449,126,11145,0,0,0,0,8,0,2015,2026
 687559,Rivaldo Lozano,8590,Atlas Guadalajara,Left-Back,28,Mexico,17,10,8,16,405,196,11724,19,10,68,21,38,0,2017,2026
 419457,Gaddi Aguirre,8590,Atlas Guadalajara,Centre-Back,30,Mexico,13,12,3,17,544,281,21461,13,5,71,8,47,0,2015,2026
-387129,Róber Pier,8590,Atlas Guadalajara,Centre-Back,30,Spain,44,12,5,9,481,276,21747,6,8,58,13,44,0,2015,2026
+387129,Róber Pier,8590,Atlas Guadalajara,Centre-Back,30,Spain,44,12,5,9,482,276,21747,6,8,58,13,44,0,2015,2026
 854360,Jorge Rodríguez,8590,Atlas Guadalajara,Left-Back,25,Mexico,5,9,7,11,355,179,11563,3,1,30,5,46,12,2018,2026
 653152,Manuel Capasso,8590,Atlas Guadalajara,Centre-Back,30,Argentina,28,9,7,17,328,157,13025,16,0,84,28,36,0,2018,2026
 614303,Adrián Mora,8590,Atlas Guadalajara,Centre-Back,29,Mexico,4,11,8,18,513,160,10924,6,3,44,14,30,7,2016,2026
@@ -423,13 +423,13 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 249543,Ryan Mmaee,8590,Atlas Guadalajara,Centre-Forward,29,Morocco,8,15,11,38,640,295,18718,111,51,139,41,25,30,2012,2026
 535959,Duk,8590,Atlas Guadalajara,Right Winger,26,Cape Verde,11,10,6,20,385,286,14863,66,29,211,99,38,20,2017,2026
 1233678,José Martín,8590,Atlas Guadalajara,Centre-Forward,18,Mexico,0,4,3,11,161,59,3891,16,0,8,2,3,0,2023,2026
-1087243,Óscar García,4941,Club León FC,Goalkeeper,23,Mexico,23,7,3,17,343,145,13050,0,0,0,0,8,1,2020,2026
+1087243,Óscar García,4941,Club León FC,Goalkeeper,23,Mexico,23,7,3,18,345,145,13050,0,0,0,0,8,1,2020,2026
 63333,Alfonso Blanco,4941,Club León FC,Goalkeeper,37,Mexico,0,20,13,24,984,332,29727,1,2,0,0,18,6,2006,2025
 125275,Óscar Jiménez,6709,CF Atlante,Goalkeeper,38,Mexico,1,19,11,21,1033,298,26695,0,0,0,0,29,0,2008,2026
 597092,Iván Moreno,4941,Club León FC,Right-Back,28,Mexico,7,11,7,17,496,317,18867,35,20,147,48,29,0,2016,2026
 1027438,Valentín Gauthier,4941,Club León FC,Centre-Back,23,Uruguay,2,6,3,13,194,117,9610,7,1,6,0,31,10,2021,2026
 557070,Salvador Reyes,4941,Club León FC,Left-Back,28,Mexico,26,12,6,21,593,376,26817,51,16,139,56,26,5,2015,2026
-212699,Stiven Barreiro,4941,Club León FC,Centre-Back,31,Colombia,21,16,7,19,633,417,34738,16,6,163,50,90,0,2010,2025
+212699,Stiven Barreiro,4941,Club León FC,Centre-Back,31,Colombia,21,16,7,19,634,418,34828,16,6,164,50,91,0,2010,2025
 384368,Bryan Colula,4941,Club León FC,Right-Back,30,Mexico,4,13,11,19,541,308,22603,16,5,76,24,74,0,2014,2026
 288609,Sebastián Vegas,4941,Club León FC,Centre-Back,29,Chile,5,14,6,26,740,411,32048,25,6,186,56,117,25,2013,2026
 378351,Paul Bellón,4941,Club León FC,Centre-Back,29,Mexico,25,10,5,17,369,197,14883,8,0,36,17,47,0,2014,2026
@@ -438,7 +438,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 988440,Abraham Villegas,4941,Club León FC,Left-Back,23,Mexico,33,7,6,17,347,181,15097,9,0,3,1,29,0,2020,2026
 1279952,Christopher Mora,4941,Club León FC,Left-Back,20,Mexico,0,3,2,8,148,66,5175,5,0,1,0,11,0,2024,2026
 549294,Fernando Beltrán,4941,Club León FC,Central Midfield,28,Mexico,6,11,4,23,600,386,25912,18,19,215,66,36,20,2016,2026
-265726,Rodrigo Echeverría,4941,Club León FC,Defensive Midfield,31,Chile,20,16,5,21,585,396,32410,35,19,241,82,85,38,2011,2026
+265726,Rodrigo Echeverría,4941,Club León FC,Defensive Midfield,31,Chile,20,16,5,21,587,398,32511,35,19,241,82,86,40,2011,2026
 829063,Ángel Estrada,4941,Club León FC,Central Midfield,23,Mexico,30,7,6,20,260,123,7077,15,2,17,2,25,2,2020,2026
 549361,José Rodríguez,4941,Club León FC,Defensive Midfield,30,Mexico,29,13,5,20,574,349,25284,7,7,74,10,50,2,2014,2026
 955282,Jesús Lara,4941,Club León FC,Defensive Midfield,20,Mexico,0,6,4,17,248,98,5884,17,0,5,4,28,3,2021,2026
@@ -447,11 +447,11 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 915016,Juan Domínguez,4941,Club León FC,Right Winger,28,Mexico,8,6,4,14,242,199,11379,24,13,115,50,16,0,2021,2026
 1087262,Emilio Rodríguez,1146,Club Necaxa,Right Winger,23,Mexico,99,6,7,15,196,148,8692,14,6,93,31,24,7,2021,2026
 570431,Alfonso Alvarado,4941,Club León FC,Centre-Forward,26,Mexico,19,11,4,17,549,281,13651,65,8,225,76,11,3,2016,2026
-243298,Ismael Díaz,4941,Club León FC,Left Winger,29,Panama,11,16,7,37,773,389,26236,139,46,437,180,29,75,2011,2026
-1006054,Daniel Arcila,4941,Club León FC,Left Winger,24,Colombia,13,6,3,9,224,141,8101,24,7,165,65,19,1,2021,2026
+243298,Ismael Díaz,4941,Club León FC,Left Winger,29,Panama,11,16,7,37,774,390,26291,139,46,437,180,29,76,2011,2026
+1006054,Daniel Arcila,4941,Club León FC,Left Winger,24,Colombia,13,6,3,9,226,142,8172,24,7,166,65,19,2,2021,2026
 430021,Jordi Cortizo,4941,Club León FC,Right Winger,30,Mexico,16,12,6,18,562,347,17266,28,19,213,66,50,5,2015,2026
 1040204,Nicolás Vallejo,4035,CF Pachuca,Right Winger,22,Argentina,21,6,7,16,222,134,7766,10,18,96,30,14,2,2021,2026
-994121,Gael García,4941,Club León FC,Left Winger,21,Mexico,17,7,6,21,359,167,10964,30,8,18,10,16,3,2020,2026
+994121,Gael García,4941,Club León FC,Left Winger,21,Mexico,17,7,6,21,359,168,10988,30,8,18,10,16,3,2020,2026
 741963,Jhohan Romaña,4941,Club León FC,Centre-Back,28,Colombia,14,11,6,19,338,213,17071,3,5,58,13,62,0,2015,2026
 857638,Juan Guevara,4941,Club León FC,Centre-Back,25,Colombia,3,6,4,11,150,91,6813,2,2,54,9,27,0,2020,2026
 158327,Julio González,4941,Club León FC,Goalkeeper,35,Mexico,12,19,12,27,1073,314,27914,1,0,1,1,19,5,2008,2026
@@ -459,8 +459,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1124128,Santiago Londoño,4941,Club León FC,Centre-Forward,18,Colombia,21,5,4,14,172,63,2984,15,3,32,9,17,16,2022,2026
 450406,Sebastián Jurado,49283,FC Juárez,Goalkeeper,29,Mexico,1,14,6,22,676,302,26947,0,1,0,0,18,7,2013,2026
 433962,Benny Díaz,49283,FC Juárez,Goalkeeper,27,United States,24,12,9,16,505,148,13195,0,1,1,1,9,0,2014,2026
-991158,Guillermo Ruiz,49283,FC Juárez,Goalkeeper,22,Spain,27,5,5,11,133,28,2520,0,0,0,0,4,0,2021,2026
 817133,Moisés Mosquera,49283,FC Juárez,Centre-Back,24,Colombia,3,7,5,16,348,130,10482,2,3,44,9,35,0,2019,2025
+991158,Guillermo Ruiz,49283,FC Juárez,Goalkeeper,22,Spain,27,5,5,11,133,28,2520,0,0,0,0,4,0,2021,2026
 364058,Jesús Murillo,49283,FC Juárez,Centre-Back,32,Colombia,3,16,5,17,661,452,36320,17,13,145,40,124,0,2011,2026
 401344,Alejandro Mayorga,49283,FC Juárez,Left-Back,29,Mexico,4,12,6,20,510,280,20287,12,12,99,27,46,13,2015,2026
 600956,Francisco Nevárez,49283,FC Juárez,Right-Back,25,Mexico,33,10,4,17,473,190,13188,7,3,48,11,49,0,2017,2026
@@ -477,17 +477,17 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1086935,Leonardo Rodríguez,49283,FC Juárez,Defensive Midfield,22,Mexico,183,7,3,15,268,146,10234,3,0,9,1,31,0,2020,2026
 1011024,Juan Sigala,49283,FC Juárez,Central Midfield,19,Mexico,16,6,5,18,204,82,4428,9,2,17,4,7,13,2021,2026
 1086940,Jan Carlo Carmona,49283,FC Juárez,Right Midfield,21,Mexico,0,6,3,14,275,149,11563,31,0,1,1,25,0,2021,2026
-1087215,Israel Larios,49283,FC Juárez,Attacking Midfield,22,Mexico,0,6,6,19,299,135,7736,7,1,14,3,9,0,2021,2026
+1087215,Israel Larios,49283,FC Juárez,Attacking Midfield,22,Mexico,0,6,6,19,301,135,7736,7,1,14,3,9,0,2021,2026
 1356867,Kenneth Martínez,49283,FC Juárez,Midfield,17,Mexico,0,3,3,9,91,57,4125,4,0,1,1,13,9,2024,2026
 371185,Jairo Torres,49283,FC Juárez,Right Winger,26,Mexico,10,13,5,18,549,291,18981,27,20,277,86,63,23,2014,2026
-425028,José Luis Rodríguez,49283,FC Juárez,Left Winger,28,Panama,11,12,9,26,478,315,21742,31,41,310,110,33,76,2014,2026
+425028,José Luis Rodríguez,49283,FC Juárez,Left Winger,28,Panama,11,12,9,26,479,316,21777,31,41,310,110,33,77,2014,2026
 388266,Óscar Estupiñán,49283,FC Juárez,Centre-Forward,29,Colombia,19,14,9,32,546,364,22802,135,22,431,191,38,1,2013,2026
 554300,Madson,49283,FC Juárez,Left Winger,27,Brazil,9,11,9,24,362,253,14705,27,16,224,81,38,0,2016,2026
 600905,Raymundo Fulgencio,49283,FC Juárez,Left Winger,26,Mexico,7,10,7,17,464,241,12726,13,18,121,35,22,1,2017,2026
 831110,Luca Martínez Dupuy,49283,FC Juárez,Centre-Forward,25,Mexico,17,8,5,16,300,167,6427,20,4,99,33,10,14,2019,2026
 671657,Ricardinho,49283,FC Juárez,Left Winger,28,Portugal,21,9,5,14,279,196,11688,24,17,148,60,23,0,2018,2026
 945935,Ettson Ayón,49283,FC Juárez,Centre-Forward,25,Mexico,29,10,6,10,378,180,8770,32,1,85,33,13,18,2017,2026
-982627,Daniel Piña,49283,FC Juárez,Centre-Back,24,Chile,26,6,3,6,166,78,5751,3,1,24,2,8,0,2021,2026
+982627,Daniel Piña,49283,FC Juárez,Centre-Back,25,Chile,26,6,3,6,166,78,5751,3,1,24,2,8,0,2021,2026
 337600,Ezequiel Unsain,1146,Club Necaxa,Goalkeeper,30,Argentina,22,14,6,18,552,377,33825,0,3,2,0,15,0,2012,2025
 1127335,Lucas Romero,49283,FC Juárez,Defensive Midfield,24,Paraguay,15,5,4,10,166,72,4098,2,2,20,6,19,2,2022,2026
 1091807,Luis Jiménez,1146,Club Necaxa,Goalkeeper,22,Mexico,12,6,5,14,273,84,7560,0,0,0,0,15,0,2021,2026
@@ -500,7 +500,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 554799,Kevin Gutiérrez,1146,Club Necaxa,Defensive Midfield,28,Argentina,5,10,9,15,431,280,22400,9,11,195,43,45,1,2016,2025
 1160106,Javier Ruiz,1146,Club Necaxa,Attacking Midfield,22,Argentina,10,5,4,15,184,99,6506,16,8,106,35,14,0,2022,2026
 623444,Danny Leyva,1146,Club Necaxa,Defensive Midfield,23,United States,6,10,4,14,446,213,11583,4,15,107,28,26,12,2017,2026
-491698,Agustín Almendra,1146,Club Necaxa,Central Midfield,25,Argentina,10,10,5,23,506,238,14025,18,13,161,38,36,14,2016,2025
+491698,Agustín Almendra,1146,Club Necaxa,Central Midfield,25,Argentina,10,10,5,24,509,239,14070,18,13,161,38,36,14,2016,2025
 630032,Kevin Rosero,1146,Club Necaxa,Right Midfield,27,Colombia,7,10,6,13,276,232,15302,49,19,155,54,18,0,2017,2026
 181706,Lorenzo Faravelli,1146,Club Necaxa,Central Midfield,33,Argentina,8,17,7,26,677,433,29307,56,35,466,163,90,0,2010,2026
 1105436,Israel Tello,1146,Club Necaxa,Attacking Midfield,20,Mexico,188,5,3,14,171,83,4370,7,1,5,2,19,7,2022,2026
@@ -508,8 +508,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1364504,Joshua Palacios,1146,Club Necaxa,Midfield,18,Mexico,0,3,3,13,172,67,4821,2,0,1,0,17,1,2024,2026
 1095216,Arath Moreno,1146,Club Necaxa,Central Midfield,19,Mexico,0,6,4,15,252,90,5838,7,0,16,2,11,1,2021,2026
 491707,Julián Carranza,1146,Club Necaxa,Centre-Forward,26,Argentina,9,11,7,22,402,262,15646,76,25,417,153,49,4,2016,2026
-568546,Tomás Badaloni,1146,Club Necaxa,Centre-Forward,25,Argentina,9,9,5,15,337,239,11860,41,15,232,82,15,0,2017,2025
-536619,Raúl Sánchez,1146,Club Necaxa,Left Winger,27,Spain,0,9,6,13,325,233,14996,41,19,96,35,36,0,2017,2026
+568546,Tomás Badaloni,1146,Club Necaxa,Centre-Forward,25,Argentina,9,9,5,15,338,239,11860,41,15,232,82,15,0,2017,2025
+536619,Raúl Sánchez,1146,Club Necaxa,Left Winger,27,Spain,0,9,6,13,326,234,15017,41,19,98,35,36,0,2017,2026
 1233676,Luis Ibarra,1146,Club Necaxa,Left Midfield,18,Mexico,0,3,4,9,149,98,5587,28,0,0,0,10,0,2024,2026
 955220,Kevin Armenta,1146,Club Necaxa,Left Winger,19,Mexico,0,6,3,13,215,85,5128,10,0,0,0,12,7,2021,2026
 1095036,Daniel Márquez,1146,Club Necaxa,Left Winger,20,Mexico,0,5,3,11,106,51,2427,1,0,0,0,2,1,2022,2026
@@ -520,12 +520,12 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 508257,Carlos Vargas,1146,Club Necaxa,Left-Back,27,Mexico,88,11,10,23,534,213,14765,2,6,40,10,29,11,2016,2026
 704868,Pedro Pedraza,1146,Club Necaxa,Defensive Midfield,26,Mexico,16,8,5,19,323,174,10082,4,3,24,6,42,0,2019,2026
 992527,Matías Espíndola,1146,Club Necaxa,Attacking Midfield,22,Argentina,21,6,4,19,272,105,7030,15,8,19,6,10,0,2021,2026
-1031802,Juan Torres,1146,Club Necaxa,Attacking Midfield,22,Colombia,11,6,4,10,250,118,5787,15,13,129,56,16,0,2021,2026
+1031802,Juan Pablo Torres,1146,Club Necaxa,Attacking Midfield,22,Colombia,11,6,4,10,250,118,5787,15,13,129,56,16,0,2021,2026
 1106878,Juan Valencia,1146,Club Necaxa,Centre-Forward,22,Colombia,90,5,4,9,149,99,4840,22,8,49,22,14,0,2022,2026
 971399,Misael Pedroza,1146,Club Necaxa,Centre-Forward,23,Mexico,27,7,6,15,241,115,7382,42,2,2,1,20,0,2020,2026
 599331,Andrés Sánchez,40188,Atlético de San Luis,Goalkeeper,29,Mexico,1,13,6,16,379,178,15504,0,0,0,0,17,0,2013,2026
 540305,César López,40188,Atlético de San Luis,Goalkeeper,26,Mexico,23,11,6,21,448,105,9287,0,0,0,0,7,10,2016,2026
-446106,Juan Manuel Sanabria,40188,Atlético de San Luis,Left-Back,25,Uruguay,0,11,8,24,368,305,23964,20,43,201,58,52,45,2016,2026
+446106,Juan Manuel Sanabria,40188,Atlético de San Luis,Left-Back,25,Uruguay,0,11,8,24,369,305,23964,20,43,201,58,52,45,2016,2026
 242580,Gibrán Lajud,40188,Atlético de San Luis,Goalkeeper,32,Mexico,25,18,10,25,938,301,26624,0,1,0,0,22,18,2009,2026
 458715,Robson Bambu,40188,Atlético de San Luis,Centre-Back,29,Brazil,3,12,8,24,496,164,12065,1,1,43,8,38,6,2015,2026
 1035924,Eduardo Águila,40188,Atlético de San Luis,Centre-Back,24,Mexico,31,8,3,10,303,178,13693,9,1,65,17,18,4,2019,2026
@@ -534,14 +534,14 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 959197,Román Torres,40188,Atlético de San Luis,Right-Back,21,Mexico,2,7,5,12,245,166,13246,3,6,33,9,31,2,2020,2026
 552960,Aldo Cruz,40188,Atlético de San Luis,Left-Back,29,Mexico,18,11,10,15,493,257,18359,3,7,34,6,17,2,2016,2026
 552948,Benjamín Galindo,40188,Atlético de San Luis,Centre-Back,27,Mexico,30,12,7,22,476,241,20608,7,1,12,0,47,1,2015,2026
-1006077,Javier Suárez,40188,Atlético de San Luis,Right-Back,19,Venezuela,29,6,6,20,300,113,8701,6,3,18,6,11,20,2021,2026
+1006077,Javier Suárez,40188,Atlético de San Luis,Right-Back,19,Venezuela,29,6,6,20,309,114,8791,6,3,19,7,11,21,2021,2026
 115333,Juanpe,40188,Atlético de San Luis,Centre-Back,35,Spain,6,18,7,13,761,444,35787,22,10,93,26,109,0,2008,2026
 53180,Julio César Domínguez,40188,Atlético de San Luis,Centre-Back,37,Mexico,4,21,5,33,1235,773,66452,19,17,85,23,65,32,2005,2025
 288251,Sébastien Salles-Lamonge,40188,Atlético de San Luis,Central Midfield,30,France,10,14,9,18,534,372,26981,65,36,255,100,33,6,2013,2026
 370864,Roberto Meraz,40188,Atlético de San Luis,Defensive Midfield,27,Mexico,5,13,5,16,542,275,18490,15,2,66,20,61,4,2014,2026
 936956,Sebastián Pérez-Bouquet,40188,Atlético de San Luis,Attacking Midfield,23,Mexico,26,7,6,15,319,136,7129,18,6,46,16,5,1,2020,2026
 549419,Óscar Macías,40188,Atlético de San Luis,Central Midfield,28,Mexico,21,11,10,20,489,297,21285,33,9,74,25,35,1,2016,2026
-854686,Jahaziel Marchand,40188,Atlético de San Luis,Central Midfield,23,Mexico,16,8,6,18,391,180,12956,12,2,22,5,29,0,2019,2026
+854686,Jahaziel Marchand,40188,Atlético de San Luis,Central Midfield,23,Mexico,16,8,6,18,393,181,13046,12,2,22,5,29,0,2019,2026
 627211,David Rodríguez,40188,Atlético de San Luis,Attacking Midfield,24,United States,11,9,7,22,389,202,14240,45,15,168,64,18,1,2018,2026
 660990,Benjamín Galdames,40188,Atlético de San Luis,Right Winger,25,Mexico,7,10,3,10,320,149,5972,8,7,80,23,12,10,2017,2026
 928648,Anderson Duarte,40188,Atlético de San Luis,Right Winger,22,Uruguay,17,7,4,19,249,157,8416,25,11,83,32,29,20,2020,2026
@@ -561,7 +561,7 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 803608,Carlos Sánchez,4035,CF Pachuca,Right-Back,24,Mexico,14,7,3,14,251,131,7205,5,6,33,12,25,0,2020,2026
 1087253,Jorge Berlanga,4035,CF Pachuca,Centre-Back,23,Mexico,13,9,3,17,322,113,8149,6,2,8,2,26,7,2017,2026
 294804,Eduardo Bauermann,4035,CF Pachuca,Centre-Back,30,Brazil,4,15,10,24,727,374,31629,14,5,135,36,51,10,2012,2026
-833269,René López,4035,CF Pachuca,Right-Back,23,Mexico,21,7,5,19,277,136,9617,6,2,26,7,6,0,2020,2026
+833269,René López,4035,CF Pachuca,Right-Back,23,Mexico,21,7,5,19,279,137,9652,6,2,26,7,6,0,2020,2026
 1011032,Cristóbal Alfaro,6709,CF Atlante,Centre-Back,19,Mexico,14,6,5,18,183,74,5833,6,0,1,0,12,11,2021,2026
 955313,Ari Contreras,6709,CF Atlante,Left-Back,21,Mexico,24,6,5,20,294,119,9443,6,0,5,2,11,9,2021,2026
 1097659,Pedro Martínez,4035,CF Pachuca,Centre-Back,23,Mexico,35,7,6,17,224,78,4969,2,1,0,0,16,0,2019,2025
@@ -571,92 +571,92 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1094383,Alán Bautista,4035,CF Pachuca,Attacking Midfield,24,Mexico,26,6,3,15,261,189,11252,28,5,100,38,18,4,2021,2026
 426324,Christian Rivera,4035,CF Pachuca,Defensive Midfield,30,Colombia,16,12,7,18,485,384,28607,27,14,176,42,82,0,2015,2026
 1096706,Lenin Rodríguez,4035,CF Pachuca,Defensive Midfield,22,Mexico,30,4,3,14,157,84,5432,4,0,6,2,27,0,2022,2026
-955233,Gael Álvarez,4035,CF Pachuca,Attacking Midfield,19,Mexico,0,6,3,19,234,79,3784,14,2,38,7,5,20,2021,2026
+955233,Gael Álvarez,4035,CF Pachuca,Attacking Midfield,19,Mexico,0,6,3,19,234,80,3874,14,2,38,7,5,21,2021,2026
 241391,Oussama Idrissi,4035,CF Pachuca,Left Winger,30,Morocco,11,16,12,37,700,477,31236,101,87,458,204,68,36,2011,2026
 955338,Alexéi Domínguez,4035,CF Pachuca,Right Winger,21,Mexico,8,6,3,17,271,134,7224,18,9,71,25,11,18,2021,2026
-139503,Enner Valencia,4035,CF Pachuca,Centre-Forward,35,Ecuador,10,18,9,36,1008,716,45727,242,87,709,298,79,109,2009,2026
+139503,Enner Valencia,4035,CF Pachuca,Centre-Forward,35,Ecuador,10,18,9,36,1009,717,45761,242,87,710,298,79,109,2009,2026
 271256,Jhonder Cádiz,4035,CF Pachuca,Centre-Forward,29,Venezuela,0,16,14,24,599,363,21063,102,34,630,242,45,19,2011,2026
 80197,Salomón Rondón,4035,CF Pachuca,Centre-Forward,37,Venezuela,23,22,13,37,1073,779,55839,288,65,723,265,72,126,2005,2026
 281404,Kenedy,4035,CF Pachuca,Left Winger,30,Brazil,29,15,10,27,711,315,15472,38,32,315,98,30,16,2012,2026
-227404,Luis Quiñónes,4035,CF Pachuca,Right Winger,34,Colombia,7,15,11,23,770,526,35902,74,91,362,119,116,1,2011,2025
+227404,Luis Quiñónes,4035,CF Pachuca,Right Winger,34,Colombia,7,15,11,23,772,526,35902,74,91,362,119,116,1,2011,2025
 1364524,Cristóbal Hernández,4035,CF Pachuca,Attack,17,Mexico,0,3,3,13,168,75,4827,10,0,0,0,11,1,2024,2026
 1205882,Daniel Méndez,4035,CF Pachuca,Centre-Forward,19,Guatemala,0,4,3,18,204,97,6102,41,3,1,1,12,13,2023,2026
 1435801,Jonatan Ramírez,4035,CF Pachuca,Attack,18,Mexico,0,3,3,10,81,33,1905,6,0,0,0,1,1,2024,2026
 400208,Francisco Venegas,4035,CF Pachuca,Left-Back,28,Mexico,15,13,7,21,507,221,14701,20,5,115,35,43,14,2014,2026
-1059499,Pedro Budib,4035,CF Pachuca,Centre-Back,22,Lebanon,32,6,7,21,288,114,9347,14,0,0,0,28,3,2021,2026
+1059499,Pedro Budib,4035,CF Pachuca,Centre-Back,22,Lebanon,32,6,7,21,290,114,9347,14,0,0,0,28,3,2021,2026
 662458,Andrés Arroyo,4035,CF Pachuca,Attacking Midfield,24,Colombia,28,9,7,15,389,218,10931,36,11,154,57,23,6,2018,2026
 975188,Adrián Alcaraz,4035,CF Pachuca,Centre-Forward,27,Paraguay,9,7,5,9,254,139,7641,28,9,202,78,15,3,2017,2026
 704867,Illian Hernández,4035,CF Pachuca,Centre-Forward,26,Mexico,19,8,7,19,337,158,6633,33,1,84,40,16,0,2019,2026
-401349,José Hernández,4961,Querétaro FC,Goalkeeper,29,Mexico,1,12,4,22,714,164,14616,0,0,0,0,13,15,2015,2026
-73523,Guillermo Allison,4961,Querétaro FC,Goalkeeper,36,Mexico,25,19,7,19,1003,394,35223,1,0,0,0,32,0,2008,2026
+401349,José Hernández,4961,Querétaro FC,Goalkeeper,29,Mexico,1,12,4,22,715,164,14616,0,0,0,0,13,15,2015,2026
+73523,Guillermo Allison,4961,Querétaro FC,Goalkeeper,36,Mexico,25,19,7,19,1004,394,35223,1,0,0,0,32,0,2008,2026
 828257,Luis Villegas,4961,Querétaro FC,Goalkeeper,23,Mexico,0,9,6,11,275,27,2295,0,0,0,0,1,0,2018,2026
-689230,Lucas Abascia,4961,Querétaro FC,Centre-Back,30,Argentina,2,11,7,17,281,196,15103,4,2,63,15,51,0,2016,2026
-370869,Daniel Parra,4961,Querétaro FC,Left-Back,27,Mexico,27,12,8,22,609,231,18140,24,6,83,14,64,3,2014,2026
-131090,Diego Reyes,4961,Querétaro FC,Centre-Back,34,Mexico,13,19,11,43,1008,547,43024,25,5,71,17,70,95,2008,2026
-1186946,Bayron Duarte,4961,Querétaro FC,Right-Back,23,Colombia,24,5,2,11,177,57,3766,0,3,28,7,17,0,2022,2026
+689230,Lucas Abascia,4961,Querétaro FC,Centre-Back,30,Argentina,2,11,7,17,282,196,15103,4,2,63,15,51,0,2016,2026
+370869,Daniel Parra,4961,Querétaro FC,Left-Back,27,Mexico,27,12,8,22,610,231,18140,24,6,83,14,64,3,2014,2026
+131090,Diego Reyes,4961,Querétaro FC,Centre-Back,34,Mexico,13,19,11,43,1009,547,43024,25,5,71,17,70,95,2008,2026
+1186946,Bayron Duarte,4961,Querétaro FC,Right-Back,23,Colombia,24,5,2,11,178,57,3766,0,3,28,7,17,0,2022,2026
 244724,Jaime Gómez,4961,Querétaro FC,Right-Back,31,Mexico,12,15,6,14,653,400,26378,11,12,90,22,62,0,2011,2025
-234242,Carlos Villanueva,4961,Querétaro FC,Centre-Back,32,Mexico,15,15,11,19,767,406,33634,16,3,5,2,41,0,2012,2026
+234242,Carlos Villanueva,4961,Querétaro FC,Centre-Back,32,Mexico,15,15,11,19,768,406,33634,16,3,5,2,41,0,2012,2026
 135851,Omar Mendoza,4961,Querétaro FC,Right-Back,36,Mexico,0,21,5,17,815,492,37956,18,10,45,9,127,0,2005,2025
-895679,Santiago Homenchenko,4961,Querétaro FC,Defensive Midfield,23,Uruguay,5,7,8,22,244,141,7701,16,3,140,48,37,18,2020,2026
+895679,Santiago Homenchenko,4961,Querétaro FC,Defensive Midfield,23,Uruguay,5,7,8,22,245,141,7701,16,3,140,48,37,18,2020,2026
 380996,Lucas Rodríguez,4961,Querétaro FC,Attacking Midfield,28,Argentina,10,13,5,23,425,340,23819,40,31,317,97,40,13,2014,2026
 390926,Jhojan Julio,6709,CF Atlante,Attacking Midfield,28,Ecuador,7,13,5,21,586,336,21528,47,52,325,135,53,9,2014,2026
-627287,Carlo García,4961,Querétaro FC,Central Midfield,25,Spain,4,8,5,17,342,183,12481,8,8,101,29,22,1,2019,2026
+627287,Carlo García,4961,Querétaro FC,Central Midfield,25,Spain,4,8,5,17,343,183,12481,8,8,101,29,22,1,2019,2026
 746209,Michael Carcelén,4961,Querétaro FC,Defensive Midfield,28,Ecuador,55,7,5,13,277,188,9924,20,19,309,96,40,5,2019,2025
 654144,Eduardo Armenta,5662,Puebla FC,Central Midfield,24,Mexico,14,9,8,16,318,162,8190,11,3,30,8,7,6,2018,2026
-792335,Érik Dueñas,4961,Querétaro FC,Central Midfield,22,Mexico,18,8,7,13,360,119,5521,3,6,23,6,22,0,2019,2026
-838925,Álex Alcalá,4961,Querétaro FC,Attacking Midfield,21,Mexico,20,7,5,13,207,57,3045,5,7,8,2,1,3,2020,2026
+792335,Érik Dueñas,4961,Querétaro FC,Central Midfield,22,Mexico,18,8,7,13,361,119,5521,3,6,23,6,22,0,2019,2026
+838925,Álex Alcalá,4961,Querétaro FC,Attacking Midfield,21,Mexico,20,7,5,13,208,57,3045,5,7,8,2,1,3,2020,2026
 1364025,Darío Rodríguez,4961,Querétaro FC,Midfield,17,Mexico,0,3,3,7,102,58,3836,2,0,0,0,5,0,2024,2026
 1086831,Christopher Figueroa,4961,Querétaro FC,Attacking Midfield,21,Mexico,0,6,3,9,177,92,5280,2,0,0,0,4,0,2020,2025
-1182550,Jesús Arellano,4961,Querétaro FC,Attacking Midfield,21,Mexico,28,4,3,9,150,67,4116,3,0,1,0,9,0,2023,2026
-704557,Alí Ávila,4961,Querétaro FC,Centre-Forward,23,Mexico,9,9,8,21,409,200,11167,51,3,111,48,33,17,2018,2026
-685179,Mateo Coronel,4961,Querétaro FC,Centre-Forward,28,Argentina,11,11,6,15,293,214,11807,42,16,289,114,20,0,2016,2026
-668487,Juan Robles,4961,Querétaro FC,Left Winger,23,Mexico,23,8,6,13,244,106,5994,5,2,10,4,14,4,2018,2026
+1182550,Jesús Arellano,4961,Querétaro FC,Attacking Midfield,21,Mexico,28,4,3,9,151,67,4116,3,0,1,0,9,0,2023,2026
+704557,Alí Ávila,4961,Querétaro FC,Centre-Forward,23,Mexico,9,9,8,21,410,200,11167,51,3,111,48,33,17,2018,2026
+685179,Mateo Coronel,4961,Querétaro FC,Centre-Forward,28,Argentina,11,11,6,15,294,214,11807,42,16,289,114,20,0,2016,2026
+668487,Juan Robles,4961,Querétaro FC,Left Winger,23,Mexico,23,8,6,13,247,107,6041,5,2,10,4,14,5,2018,2026
 1067605,Fernando González,4961,Querétaro FC,Left Winger,24,Mexico,21,8,6,19,380,195,13054,33,9,51,18,9,0,2019,2026
 689837,Luis Gutiérrez,4961,Querétaro FC,Left Winger,23,Mexico,33,9,11,19,395,165,10484,37,0,0,0,16,1,2018,2026
-582513,Víctor López,4961,Querétaro FC,Left Winger,22,Mexico,47,9,8,22,335,143,7091,23,2,29,12,11,3,2017,2026
-1055320,Waldo Madrid,4961,Querétaro FC,Right Winger,23,Mexico,29,7,5,14,268,150,9471,21,9,10,5,31,0,2020,2026
-291262,Eduardo Pérez,4961,Querétaro FC,Centre-Forward,33,Mexico,26,16,15,21,714,374,21238,106,17,10,2,29,0,2011,2026
-875511,Paulo Victor,4961,Querétaro FC,Left-Back,25,Brazil,12,8,10,22,346,176,10180,1,5,22,5,37,0,2019,2026
+582513,Víctor López,4961,Querétaro FC,Left Winger,22,Mexico,47,9,8,22,337,143,7091,23,2,29,12,11,3,2017,2026
+1055320,Waldo Madrid,4961,Querétaro FC,Right Winger,23,Mexico,29,7,5,14,269,150,9471,21,9,10,5,31,0,2020,2026
+291262,Eduardo Pérez,4961,Querétaro FC,Centre-Forward,33,Mexico,26,16,15,21,715,374,21238,106,17,10,2,29,0,2011,2026
+875511,Paulo Victor,4961,Querétaro FC,Left-Back,25,Brazil,12,8,10,22,347,177,10214,1,5,22,5,37,0,2019,2026
 1305694,Claudio Robles,4961,Querétaro FC,Attack,19,Mexico,0,3,3,7,142,71,4819,30,0,0,0,4,0,2024,2026
-1364024,Sergio Garcia Brothers,4961,Querétaro FC,Right-Back,19,Mexico,199,3,3,6,135,59,3691,2,0,0,0,6,0,2024,2026
-569088,Enzo Giménez,4961,Querétaro FC,Right Winger,28,Paraguay,16,11,4,14,457,321,20688,25,33,81,24,39,4,2016,2026
-710679,Iker Benito,4961,Querétaro FC,Right Winger,24,Spain,7,7,5,9,298,174,9794,14,11,79,21,15,0,2020,2026
-1244463,Mono Martínez,4961,Querétaro FC,Attacking Midfield,16,Mexico,30,3,1,3,39,26,1282,11,3,0,0,3,17,2024,2026
-1097734,Denilson Muñoz,4961,Querétaro FC,Left Winger,22,Mexico,17,5,3,7,144,67,3287,12,2,13,5,7,0,2022,2026
+1364024,Sergio Garcia Brothers,4961,Querétaro FC,Right-Back,19,Mexico,199,3,3,6,136,59,3691,2,0,0,0,6,0,2024,2026
+569088,Enzo Giménez,4961,Querétaro FC,Right Winger,28,Paraguay,16,11,4,14,458,321,20688,25,33,81,24,39,4,2016,2026
+710679,Iker Benito,4961,Querétaro FC,Right Winger,24,Spain,7,7,5,9,299,175,9849,14,11,81,22,15,0,2020,2026
+1244463,Mono Martínez,4961,Querétaro FC,Attacking Midfield,16,Mexico,30,3,1,3,40,26,1282,11,3,0,0,3,17,2024,2026
+1097734,Denilson Muñoz,4961,Querétaro FC,Left Winger,22,Mexico,17,5,3,7,145,67,3287,12,2,13,5,7,0,2022,2026
 597727,Daniel Gutiérrez,5662,Puebla FC,Goalkeeper,29,Mexico,28,9,6,13,455,129,11328,0,0,1,0,10,0,2018,2026
 222010,Jesús Rodríguez,5662,Puebla FC,Goalkeeper,33,Mexico,33,17,6,14,808,254,22572,0,0,0,0,27,0,2010,2026
-810710,Juan Pablo Gómez,5662,Puebla FC,Goalkeeper,24,Mexico,23,8,6,14,372,93,8317,0,0,0,0,12,0,2018,2026
+810710,Juan Pablo Gómez,5662,Puebla FC,Goalkeeper,24,Mexico,23,8,6,14,374,93,8317,0,0,0,0,12,0,2018,2026
 1150565,Eduardo Navarro,5662,Puebla FC,Centre-Back,22,Mexico,13,4,2,7,183,83,6438,3,0,7,2,23,0,2023,2026
 539067,Nicolás Díaz,5662,Puebla FC,Centre-Back,26,Chile,6,11,7,19,443,254,19993,6,8,96,27,79,17,2016,2026
 644271,Fernando Monárrez,5662,Puebla FC,Left-Back,27,Mexico,7,9,9,19,278,137,9423,14,3,42,13,32,0,2017,2026
 1002127,Íker Moreno,5662,Puebla FC,Right-Back,23,Mexico,12,6,7,14,265,108,5937,4,3,17,4,9,0,2021,2026
 1150567,José Pachuca,5662,Puebla FC,Centre-Back,21,Mexico,20,5,2,12,198,111,6826,2,1,18,5,14,21,2022,2026
-271907,Juan Pablo Vargas,5662,Puebla FC,Centre-Back,31,Costa Rica,4,14,6,34,850,386,32620,22,12,128,41,45,48,2013,2026
-400203,Ulises Torres,5662,Puebla FC,Left-Back,27,Mexico,5,13,9,26,571,293,23011,14,7,5,0,68,14,2014,2026
+271907,Juan Pablo Vargas,5662,Puebla FC,Centre-Back,31,Costa Rica,4,14,6,34,852,388,32800,22,12,128,41,45,50,2013,2026
+400203,Ulises Torres,5662,Puebla FC,Left-Back,27,Mexico,5,13,9,26,573,293,23011,14,7,5,0,68,14,2014,2026
 1100592,Álvaro de la Rosa,5662,Puebla FC,Right-Back,20,Mexico,0,4,3,8,119,64,5291,1,0,1,1,15,0,2021,2026
 560325,Carlos Baltazar,5662,Puebla FC,Attacking Midfield,29,Mexico,22,10,5,14,333,230,13901,28,15,46,18,14,0,2017,2026
 644272,Alejandro Organista,5662,Puebla FC,Attacking Midfield,26,Mexico,24,9,7,16,445,279,19705,30,16,32,7,40,0,2018,2026
-1065383,Ariel Gamarra,5662,Puebla FC,Central Midfield,22,Paraguay,18,5,5,19,201,97,5891,0,3,27,4,13,8,2021,2025
+1065383,Ariel Gamarra,5662,Puebla FC,Central Midfield,22,Paraguay,18,5,5,20,204,100,6082,0,3,27,4,13,8,2021,2025
 663290,Raúl Castillo,5662,Puebla FC,Attacking Midfield,25,Mexico,17,9,6,18,422,174,11323,36,4,61,17,28,0,2018,2026
-403148,Ángelo Araos,5662,Puebla FC,Attacking Midfield,28,Chile,32,11,9,25,607,211,11156,13,14,112,46,33,10,2015,2025
+403148,Ángelo Araos,5662,Puebla FC,Attacking Midfield,28,Chile,32,11,9,25,609,212,11246,14,14,112,46,33,10,2015,2025
 997056,Alonso Ramírez,5662,Puebla FC,Defensive Midfield,25,Mexico,16,8,7,16,298,172,13008,7,2,12,2,34,0,2019,2026
 833270,Eduardo Mustre,5662,Puebla FC,Centre-Forward,23,Mexico,29,5,5,12,181,68,3961,20,1,20,9,7,2,2020,2026
 600857,Kevin Velasco,5662,Puebla FC,Right Winger,29,Colombia,26,11,5,19,442,294,18280,31,32,262,93,44,1,2016,2026
 401311,Brayan Garnica,5662,Puebla FC,Right Winger,30,Mexico,27,13,7,15,566,331,21339,18,24,73,23,19,0,2014,2026
-249789,Alexis Canelo,5662,Puebla FC,Centre-Forward,33,Argentina,25,16,11,21,590,391,25151,94,37,378,146,53,0,2011,2026
 853278,Ignacio Maestro Puch,5662,Puebla FC,Centre-Forward,23,Argentina,19,8,5,16,283,131,4793,16,5,81,29,7,14,2019,2026
+249789,Alexis Canelo,5662,Puebla FC,Centre-Forward,33,Argentina,25,16,11,21,590,391,25151,94,37,378,146,53,0,2011,2026
 1095211,Arez Pérez,5662,Puebla FC,Attack,21,Mexico,0,5,4,9,151,80,4591,5,0,0,0,20,0,2022,2026
 555194,Mathías Tomás,5662,Puebla FC,Attacking Midfield,25,Uruguay,10,9,7,15,244,188,12740,29,37,93,26,35,0,2016,2026
 784509,Óscar Villa,5662,Puebla FC,Left-Back,25,Mexico,15,9,6,20,437,171,11585,3,2,11,1,36,10,2018,2026
 1353890,Sergio Sanabria,5662,Puebla FC,Central Midfield,27,Paraguay,21,3,2,6,90,59,4388,0,0,18,1,14,0,2024,2026
 950874,Heriberto Jurado,5662,Puebla FC,Left Winger,21,Mexico,25,7,4,19,325,130,5647,5,10,69,20,10,20,2020,2026
 1004726,Lucas Camilo,5662,Puebla FC,Defensive Midfield,20,Brazil,34,6,5,18,226,54,2505,3,2,6,4,6,15,2021,2026
-634023,Luifer Hernández,5662,Puebla FC,Centre-Forward,25,Venezuela,9,10,7,18,275,198,11408,55,13,153,71,15,7,2017,2026
+634023,Luifer Hernández,5662,Puebla FC,Centre-Forward,25,Venezuela,9,10,7,18,276,198,11408,55,13,153,71,15,7,2017,2026
 1095302,Roberto Barragán,6709,CF Atlante,Goalkeeper,22,Mexico,22,5,4,12,131,20,1775,0,0,0,0,1,0,2022,2026
 808635,Millan,6709,CF Atlante,Goalkeeper,28,Mexico,32,4,3,4,101,27,2342,0,1,0,0,0,0,2020,2025
 371178,Luis Olivas,6709,CF Atlante,Centre-Back,25,Mexico,4,11,8,27,468,185,14937,15,1,38,8,29,14,2014,2026
 674500,Nico Carrera,6709,CF Atlante,Centre-Back,24,United States,6,9,7,22,322,162,12936,6,7,13,3,33,4,2018,2026
-401944,Diego Cruz,6709,CF Atlante,Right-Back,30,Mexico,3,14,9,17,573,274,21369,23,9,21,12,37,0,2012,2026
+401944,Diego Cruz,6709,CF Atlante,Right-Back,30,Mexico,3,14,9,17,575,275,21459,23,9,21,12,37,0,2012,2026
 448641,Armando Escobar,6709,CF Atlante,Left-Back,33,Mexico,27,15,7,17,559,379,28484,28,9,4,1,97,0,2009,2026
 1026988,Jonathan Tovar,6709,CF Atlante,Right-Back,23,Mexico,20,5,5,6,144,83,5155,3,6,7,1,13,0,2019,2026
 1026941,Emiliano Espinoza,6709,CF Atlante,Defender,20,Mexico,30,5,2,6,144,19,1265,0,0,0,0,3,0,2022,2026
@@ -667,15 +667,15 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 915017,Maximiliano García,6709,CF Atlante,Attacking Midfield,26,Mexico,13,10,3,11,334,158,8802,15,4,0,0,14,0,2016,2026
 690027,Ronaldo González,6709,CF Atlante,Attacking Midfield,25,Mexico,8,8,6,8,271,199,12263,20,12,10,1,42,0,2019,2026
 704553,Eugenio Pizzuto,6709,CF Atlante,Defensive Midfield,24,Mexico,8,9,9,32,438,112,8002,12,2,36,10,10,20,2018,2026
-858916,Johan Alonzo,6709,CF Atlante,Attacking Midfield,26,Mexico,10,10,6,11,328,261,18443,20,6,13,2,33,0,2017,2026
+858916,Johan Alonzo,6709,CF Atlante,Attacking Midfield,26,Mexico,10,10,6,11,330,261,18443,20,6,13,2,33,0,2017,2026
 400188,Javier Ibarra,6709,CF Atlante,Attacking Midfield,28,Mexico,21,13,8,20,523,241,15539,20,8,8,1,24,5,2014,2026
-737129,Marco García,6709,CF Atlante,Central Midfield,25,Mexico,7,9,8,15,391,185,10055,19,10,54,14,17,0,2018,2026
+737129,Marco García,6709,CF Atlante,Central Midfield,25,Mexico,7,9,8,15,393,185,10055,19,10,54,14,17,0,2018,2026
 1100057,Leonardo Mejía,6709,CF Atlante,Central Midfield,25,Mexico,17,6,3,9,189,63,3054,2,1,1,0,9,0,2019,2026
 55303,Christian Bermúdez,6709,CF Atlante,Attacking Midfield,39,Mexico,18,20,10,28,921,630,44085,94,66,1,1,21,10,2006,2026
 1367289,Víctor Estrada,6709,CF Atlante,Midfield,19,Mexico,14,2,4,8,76,2,5,0,0,0,0,0,0,2024,2025
 1503076,Diego Pérez,6709,CF Atlante,Midfield,19,Mexico,29,1,1,2,16,0,0,0,0,0,0,0,0,2025,2025
 1258807,Zamier Muñoz,6709,CF Atlante,Midfield,20,Mexico,37,3,3,4,37,10,463,0,0,0,0,3,0,2023,2026
-668528,Luis Puente,6709,CF Atlante,Centre-Forward,23,Mexico,9,9,7,20,291,138,6603,45,0,41,15,19,9,2018,2026
+668528,Luis Puente,6709,CF Atlante,Centre-Forward,23,Mexico,9,9,7,20,291,138,6590,45,0,41,15,19,9,2018,2026
 725791,Luis Calzadilla,6709,CF Atlante,Left Winger,26,Mexico,19,9,6,16,410,234,16166,36,9,41,16,11,0,2018,2026
 1026942,Edgar Jiménez,6709,CF Atlante,Right Winger,25,Mexico,34,6,2,8,183,127,8972,10,15,9,4,15,0,2019,2026
 1086749,Samuel González,6709,CF Atlante,Centre-Forward,21,Mexico,19,6,6,14,190,129,7654,37,1,9,2,7,0,2021,2026
@@ -684,8 +684,8 @@ player_id,player_name,current_team_id,current_team_name,current_position,current
 1099599,Benedit Bello,6709,CF Atlante,Right Winger,22,Mexico,31,3,2,8,108,11,363,1,1,0,0,3,0,2021,2025
 881010,Aarón Quirós,6709,CF Atlante,Centre-Back,25,Argentina,44,8,4,18,281,147,10763,7,3,30,6,29,9,2019,2026
 1323890,Jeferson Tenorio,6709,CF Atlante,Right Winger,22,Colombia,38,2,1,4,63,10,211,0,0,0,0,3,0,2024,2025
-415843,Walter Clar,6709,CF Atlante,Left-Back,32,Paraguay,37,13,13,19,555,316,25422,33,25,64,30,15,0,2014,2026
 804341,Walter Portales,6709,CF Atlante,Right-Back,22,United States,29,5,6,13,175,85,6337,6,2,16,7,7,0,2019,2026
+415843,Walter Clar,6709,CF Atlante,Left-Back,32,Paraguay,37,13,13,19,555,316,25422,33,25,64,30,15,0,2014,2026
 670341,Martín Fernández,6709,CF Atlante,Defensive Midfield,25,Uruguay,25,9,6,16,318,181,10618,2,3,38,11,40,0,2018,2026
 480892,Eduardo Tercero,6709,CF Atlante,Centre-Back,30,Mexico,4,12,6,17,495,152,10798,3,1,15,2,28,0,2015,2026
 955306,Octavio Vázquez,6709,CF Atlante,Attacking Midfield,21,Mexico,10,6,5,9,138,83,4062,14,2,0,0,4,7,2021,2026

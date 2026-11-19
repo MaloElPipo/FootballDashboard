@@ -174,8 +174,15 @@ construction, le contrôleur vérifie les quatre CSV complets, la dérivation de
 deux CSV de saison courante et le contenu exact des ZIP locaux. Il persiste ces
 empreintes avant déploiement (`publishing`).
 
-Au passage suivant, l'URL publique est lue via l'API Pages GitHub. Les deux ZIP
-publics doivent contenir exactement les mêmes noms et octets CSV. Un ancien ZIP,
+Au passage suivant, les deux ZIP de chaque ligue sont relus dans la branche
+`gh-pages` que le workflow vient de pousser (`TM_PUBLICATION_CHECK: "branch"`,
+réglage par défaut depuis novembre 2026 : un `git fetch --depth=1` de cette
+branche, puis lecture des octets exacts). La page publique peut donc être hors
+ligne — GitHub Pages dépublié ou désactivé — sans bloquer la collecte : la
+branche reste alimentée chaque semaine et la page revient à jour dès qu'on la
+republie. `TM_PUBLICATION_CHECK: "site"` rétablit l'ancienne vérification sur
+l'URL publique (lue via l'API Pages), qui exige alors un site en ligne.
+Les deux ZIP doivent contenir exactement les mêmes noms et octets CSV. Un ancien ZIP,
 un ZIP manquant, un membre supplémentaire ou dupliqué ne vaut pas réussite.
 Une publication retardée reste en attente sans nouvelle collecte. Au bout de
 48 h sans correspondance, elle est suspendue. Les ligues déjà collectées restent

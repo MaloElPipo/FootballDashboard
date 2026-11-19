@@ -7,6 +7,7 @@ Unknown writes/runner interruptions fail closed, never acquire a new session.
 import hashlib
 import io
 import json
+import os
 import re
 import subprocess
 import time
@@ -27,6 +28,42 @@ PROOF_KINDS = ("all", "current")
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
+
+
+PUBLICATION_BRANCH = "gh-pages"
+
+
+def branch_fetcher(branch=PUBLICATION_BRANCH, run=subprocess.run):
+    """Published archives read from the publishing BRANCH, not from the website.
+
+    The workflow pushes the portal and every archive to this branch; reading the
+    exact bytes back from it proves the publication even while the public site
+    is switched off (GitHub Pages unpublished or disabled). One shallow fetch,
+    done lazily for the first archive asked for. Every failure is an OSError,
+    which verify_publication treats as "not verified yet" (retried at the next
+    tick, within PUBLICATION_LIMIT), never as a success.
+    """
+    ref = f"refs/tm-publication/{branch}"
+    fetched = []
+
+    def git(args, timeout):
+        try:
+            return run(["git", *args], capture_output=True, timeout=timeout)
+        except subprocess.TimeoutExpired as error:
+            raise OSError(f"git {args[0]} timed out") from error
+
+    def fetch(path):
+        if not fetched:
+            proc = git(["fetch", "--quiet", "--no-tags", "--depth=1", "origin",
+                        f"+refs/heads/{branch}:{ref}"], 600)
+            if proc.returncode:
+                raise OSError(f"Publishing branch {branch} unavailable")
+            fetched.append(True)
+        proc = git(["show", f"{ref}:{path}"], 120)
+        if proc.returncode:
+            raise OSError(f"{path} absent from {branch}")
+        return proc.stdout
+    return fetch
 
 
 def compact_proofs(proofs):
@@ -266,6 +303,15 @@ class GitHubStore:
         return self.api(f"repos/{{owner}}/{{repo}}/actions/runs/{int(run_id)}")
 
     def public_fetcher(self):
+        """Where published archives are verified, by TM_PUBLICATION_CHECK:
+        "branch" (default): the gh-pages branch the workflow pushed, so the
+        public site can stay offline; "site": the live GitHub Pages site (the
+        behaviour before November 2026, requires the site to be published)."""
+        mode = os.getenv("TM_PUBLICATION_CHECK", "branch").strip().lower()
+        if mode == "branch":
+            return branch_fetcher()
+        if mode != "site":
+            raise ValueError(f"Unknown TM_PUBLICATION_CHECK: {mode!r}")
         # Actual Pages URL, not a guessed owner/repo URL.
         url = self.api("repos/{owner}/{repo}/pages")["html_url"].rstrip("/") + "/"
         if not url.startswith("https://"):

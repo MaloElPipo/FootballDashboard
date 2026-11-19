@@ -56,6 +56,11 @@ jobs:
       # Ce réglage ne peut que BAISSER le plafond absolu codé à 2,0 ;
       # mettre "0.8" fige la collecte au palier initial.
       TM_RATE_CEILING: "2.0"
+      # Publication vérifiée dans la branche gh-pages poussée par ce workflow, et
+      # non sur le site public : la page peut rester hors ligne (Pages dépublié
+      # ou désactivé) sans bloquer la collecte. "site" = ancienne vérification
+      # sur la page publique, qui doit alors être en ligne.
+      TM_PUBLICATION_CHECK: "branch"
       # Collecte par run avant sauvegarde/publication (max 4,5 h, timeout 350 min ;
       # run #102 : 3 h de collecte pour 3 h 06 au total).
       TM_COLLECTION_HOURS: "4.5"

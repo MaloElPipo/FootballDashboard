@@ -2269,14 +2269,15 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 680511,Jonnathan Mina,3523,Barcelona SC Guayaquil,2025,EC1N,0,Left-Back,31,Ecuador,11,7,0,325
 391486,Bryan Carabalí,3523,Barcelona SC Guayaquil,2025,EC1N,18,Right-Back,28,Ecuador,25,21,1,1536
 545547,Jonathan Perlaza,3523,Barcelona SC Guayaquil,2025,EC1N,15,Left-Back,29,Ecuador,28,22,0,1513
-421718,Luca Sosa,3523,Barcelona SC Guayaquil,2025,EC1N,0,Centre-Back,32,Argentina,11,6,0,540
 400961,Byron Castillo,3523,Barcelona SC Guayaquil,2025,EC1N,26,Right-Back,28,Ecuador,28,12,1,457
+421718,Luca Sosa,3523,Barcelona SC Guayaquil,2025,EC1N,0,Centre-Back,32,Argentina,11,6,0,540
 278796,Aníbal Chalá,3523,Barcelona SC Guayaquil,2025,EC1N,0,Left-Back,30,Ecuador,0,0,0,0
 473096,Willian Vargas,3523,Barcelona SC Guayaquil,2025,EC1N,27,Right-Back,29,Ecuador,29,16,0,964
 87360,Javier Báez,3523,Barcelona SC Guayaquil,2025,EC1N,33,Centre-Back,36,Paraguay,29,28,1,2495
 1051820,Jhonnier Chalá,3523,Barcelona SC Guayaquil,2025,EC1N,44,Centre-Back,26,Ecuador,17,5,1,383
 1336314,Neyder Castañeda,3523,Barcelona SC Guayaquil,2025,EC1N,0,Defender,18,Ecuador,2,0,0,0
 1521838,Brian Quintero,3523,Barcelona SC Guayaquil,2025,EC1N,0,Defender,20,Ecuador,1,0,0,0
+1543681,Carlos Medina,3523,Barcelona SC Guayaquil,2025,EC1N,0,Centre-Back,17,Ecuador,3,0,0,0
 310639,Jefferson Intriago,3523,Barcelona SC Guayaquil,2025,EC1N,35,Defensive Midfield,30,Ecuador,21,18,0,1059
 909738,Matías Lugo,3523,Barcelona SC Guayaquil,2025,EC1N,32,Defensive Midfield,25,Argentina,29,29,0,2539
 437842,Jhonny Quiñónez,3523,Barcelona SC Guayaquil,2025,EC1N,28,Defensive Midfield,28,Ecuador,27,26,5,1579
@@ -2305,7 +2306,6 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1161480,Richard Borja,3523,Barcelona SC Guayaquil,2025,EC1N,0,Centre-Forward,22,Ecuador,2,1,0,19
 1143336,Ronald Perlaza,3523,Barcelona SC Guayaquil,2025,EC1N,25,Left Winger,21,Ecuador,13,6,0,273
 1286630,Pedro Preciado,3523,Barcelona SC Guayaquil,2025,EC1N,0,Attack,21,Ecuador,4,0,0,0
-1543681,Carlos Medina,3523,Barcelona SC Guayaquil,2025,EC1N,0,Attack,17,Ecuador,3,0,0,0
 1246951,Yordi Vernaza,3523,Barcelona SC Guayaquil,2025,EC1N,77,Right Winger,25,Ecuador,3,1,0,10
 308226,José Contreras,3523,Barcelona SC Guayaquil,2026,EC1N,1,Goalkeeper,32,Venezuela,0,0,0,0
 591965,José Angulo,3523,Barcelona SC Guayaquil,2026,EC1N,13,Goalkeeper,28,Ecuador,0,0,0,0
@@ -2363,7 +2363,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 367700,Fernando Cornejo,9855,LDU Quito,2025,EC1N,20,Central Midfield,30,Chile,19,18,1,1110
 1074496,Juanse Rodríguez,9855,LDU Quito,2025,EC1N,31,Defensive Midfield,20,Ecuador,9,6,1,346
 556727,Iván Zambrano,9855,LDU Quito,2025,EC1N,26,Defensive Midfield,29,Ecuador,14,9,0,617
-400945,Kevin Minda,9855,LDU Quito,2025,EC1N,0,Defensive Midfield,27,Ecuador,14,11,0,538
+400945,Kevin Minda,9855,LDU Quito,2025,EC1N,0,Defensive Midfield,28,Ecuador,14,11,0,538
 582303,Jesús Pretell,9855,LDU Quito,2025,EC1N,8,Defensive Midfield,27,Peru,29,28,1,1951
 1257418,Ederson Castillo,9855,LDU Quito,2025,EC1N,21,Defensive Midfield,17,Ecuador,15,3,0,51
 903610,Sebastián González,9855,LDU Quito,2025,EC1N,5,Central Midfield,23,Ecuador,9,9,0,409
@@ -2761,7 +2761,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 396869,Germán Rivero,8781,Deportivo Cuenca,2025,EC1N,11,Centre-Forward,34,Argentina,27,24,2,922
 941417,Mathías Solís,8781,Deportivo Cuenca,2025,EC1N,15,Left Winger,22,Ecuador,7,1,0,17
 1528731,Julio Valencia,8781,Deportivo Cuenca,2025,EC1N,0,Attack,19,Ecuador,5,1,0,45
-1533851,Martín Sigüenza,8781,Deportivo Cuenca,2025,EC1N,0,Attack,17,Ecuador,6,1,0,45
+1533851,Martín Sigüenza,8781,Deportivo Cuenca,2025,EC1N,0,Attack,18,Ecuador,6,1,0,45
 267677,Facundo Ferrero,8781,Deportivo Cuenca,2026,EC1N,1,Goalkeeper,31,Argentina,0,0,0,0
 903613,Ethan Minda,8781,Deportivo Cuenca,2026,EC1N,12,Goalkeeper,22,Ecuador,0,0,0,0
 1119445,Josué Méndez,8781,Deportivo Cuenca,2026,EC1N,82,Goalkeeper,20,Ecuador,0,0,0,0
@@ -2884,7 +2884,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1234953,Andrés Chacón,70466,Leones FC,2025,EC1N,33,Midfield,30,Ecuador,7,0,0,0
 1292071,Nestor Caicedo,70466,Leones FC,2025,EC1N,0,Centre-Forward,23,Ecuador,22,16,1,416
 727934,Cristhian Solano,70466,Leones FC,2025,EC1N,99,Left Winger,27,Ecuador,30,29,4,1721
-1277824,Jairo Mairongo,70466,Leones FC,2025,EC1N,0,Centre-Forward,25,Ecuador,9,6,0,221
+1277824,Jairo Mairongo,70466,Leones FC,2025,EC1N,0,Centre-Forward,26,Ecuador,9,6,0,221
 727850,Agustín Mansilla,70466,Leones FC,2025,EC1N,10,Second Striker,28,Argentina,7,3,0,145
 79758,Juan Anangonó,70466,Leones FC,2025,EC1N,40,Centre-Forward,37,Ecuador,30,30,10,2605
 639767,Thomas Amilivia,70466,Leones FC,2025,EC1N,17,Centre-Forward,28,Argentina,8,8,0,154
@@ -2943,7 +2943,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 621171,Edu Pineda,87068,Libertad FC,2025,EC1N,80,Attacking Midfield,27,Ecuador,13,13,1,638
 1519243,Johan Estacio,87068,Libertad FC,2025,EC1N,66,Defensive Midfield,21,Ecuador,23,8,0,310
 1519246,Enrique Caicedo,87068,Libertad FC,2025,EC1N,9,Midfield,23,Ecuador,27,17,2,475
-682083,Vilington Branda,87068,Libertad FC,2025,EC1N,70,Right Winger,24,Ecuador,30,29,9,1986
+682083,Vilington Branda,87068,Libertad FC,2025,EC1N,70,Right Winger,25,Ecuador,30,29,9,1986
 1052846,Antony Chére,87068,Libertad FC,2025,EC1N,33,Centre-Forward,30,Ecuador,30,28,5,1762
 983018,Dany Coronel,87068,Libertad FC,2025,EC1N,49,Centre-Forward,24,Ecuador,26,22,1,1208
 213317,Carlos Orejuela,87068,Libertad FC,2025,EC1N,7,Left Winger,33,Ecuador,11,8,1,171
@@ -2970,7 +2970,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 621171,Edu Pineda,87068,Libertad FC,2026,EC1N,80,Attacking Midfield,27,Ecuador,0,0,0,0
 1519243,Johan Estacio,87068,Libertad FC,2026,EC1N,66,Defensive Midfield,21,Ecuador,0,0,0,0
 1519246,Enrique Caicedo,87068,Libertad FC,2026,EC1N,9,Midfield,23,Ecuador,0,0,0,0
-682083,Vilington Branda,87068,Libertad FC,2026,EC1N,70,Right Winger,24,Ecuador,0,0,0,0
+682083,Vilington Branda,87068,Libertad FC,2026,EC1N,70,Right Winger,25,Ecuador,0,0,0,0
 1052846,Antony Chére,87068,Libertad FC,2026,EC1N,33,Centre-Forward,30,Ecuador,0,0,0,0
 983018,Dany Coronel,87068,Libertad FC,2026,EC1N,49,Centre-Forward,24,Ecuador,0,0,0,0
 213317,Carlos Orejuela,87068,Libertad FC,2026,EC1N,7,Left Winger,33,Ecuador,0,0,0,0
@@ -3130,7 +3130,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 981485,Luis Córdova,19104,Técnico Universitario,2025,EC1N,4,Centre-Back,23,Ecuador,9,7,0,353
 1022668,Mauricio Cagua,19104,Técnico Universitario,2025,EC1N,0,Centre-Back,22,Ecuador,11,10,2,825
 312725,Carlos Cuero,19104,Técnico Universitario,2025,EC1N,19,Left-Back,30,Ecuador,2,2,0,109
-1099020,José Caicedo,19104,Técnico Universitario,2025,EC1N,16,Left-Back,22,Ecuador,23,20,0,780
+1099020,José Caicedo,19104,Técnico Universitario,2025,EC1N,16,Left-Back,23,Ecuador,23,20,0,780
 460895,Stiwar Mena,19104,Técnico Universitario,2025,EC1N,5,Centre-Back,32,Colombia,13,12,1,932
 274901,Marco Carrasco,19104,Técnico Universitario,2025,EC1N,67,Right-Back,33,Ecuador,29,8,0,92
 580636,Matheo Castaño,19104,Técnico Universitario,2025,EC1N,70,Central Midfield,27,Colombia,27,27,4,2172
@@ -3149,7 +3149,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1546189,Andy Pazmiño,19104,Técnico Universitario,2025,EC1N,0,Midfield,20,Ecuador,2,0,0,0
 648172,Luis Estupiñán,19104,Técnico Universitario,2025,EC1N,7,Left Winger,27,Ecuador,26,25,2,1863
 882954,Heuyín Guardia,19104,Técnico Universitario,2025,EC1N,9,Centre-Forward,25,Panama,7,7,1,416
-349600,Bagner Delgado,19104,Técnico Universitario,2025,EC1N,25,Left Winger,30,Ecuador,29,25,3,1298
+349600,Bagner Delgado,19104,Técnico Universitario,2025,EC1N,25,Left Winger,31,Ecuador,29,25,3,1298
 655430,Johan Montes,19104,Técnico Universitario,2025,EC1N,0,Centre-Forward,29,Colombia,13,13,0,777
 901006,Lucas Fernández,19104,Técnico Universitario,2025,EC1N,0,Centre-Forward,25,Uruguay,16,13,0,313
 1417571,Anthony Castillo,19104,Técnico Universitario,2025,EC1N,19,Right Winger,19,Ecuador,29,17,0,589
@@ -3164,7 +3164,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 981485,Luis Córdova,19104,Técnico Universitario,2026,EC1N,4,Centre-Back,23,Ecuador,0,0,0,0
 1022668,Mauricio Cagua,19104,Técnico Universitario,2026,EC1N,0,Centre-Back,22,Ecuador,0,0,0,0
 312725,Carlos Cuero,19104,Técnico Universitario,2026,EC1N,19,Left-Back,30,Ecuador,0,0,0,0
-1099020,José Caicedo,19104,Técnico Universitario,2026,EC1N,16,Left-Back,22,Ecuador,0,0,0,0
+1099020,José Caicedo,19104,Técnico Universitario,2026,EC1N,16,Left-Back,23,Ecuador,0,0,0,0
 460895,Stiwar Mena,19104,Técnico Universitario,2026,EC1N,5,Centre-Back,32,Colombia,0,0,0,0
 274901,Marco Carrasco,19104,Técnico Universitario,2026,EC1N,67,Right-Back,33,Ecuador,0,0,0,0
 580636,Matheo Castaño,19104,Técnico Universitario,2026,EC1N,70,Central Midfield,27,Colombia,0,0,0,0
@@ -3181,7 +3181,7 @@ player_id,player_name,team_id,team_name,season,competition,shirt_number,position
 1052848,Carlos Estupiñán,19104,Técnico Universitario,2026,EC1N,77,Midfield,32,Ecuador,0,0,0,0
 648172,Luis Estupiñán,19104,Técnico Universitario,2026,EC1N,7,Left Winger,27,Ecuador,0,0,0,0
 882954,Heuyín Guardia,19104,Técnico Universitario,2026,EC1N,9,Centre-Forward,25,Panama,0,0,0,0
-349600,Bagner Delgado,19104,Técnico Universitario,2026,EC1N,25,Left Winger,30,Ecuador,0,0,0,0
+349600,Bagner Delgado,19104,Técnico Universitario,2026,EC1N,25,Left Winger,31,Ecuador,0,0,0,0
 1417571,Anthony Castillo,19104,Técnico Universitario,2026,EC1N,19,Right Winger,19,Ecuador,0,0,0,0
 717124,Wagner Caicedo,19104,Técnico Universitario,2026,EC1N,90,Attack,26,Ecuador,0,0,0,0
 264389,Bryan Oña,19104,Técnico Universitario,2026,EC1N,14,Right Winger,32,Ecuador,0,0,0,0

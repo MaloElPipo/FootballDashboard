@@ -6,10 +6,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1430645,Jinhong Liang,2025,ACLE,27190,False,2,0,0,0,0,0,0,0,0
 1430645,Jinhong Liang,2024,CHL3,115122,False,22,0,0,0,0,0,0,0,0
 1430645,Jinhong Liang,2024,CH3R,115122,False,8,8,0,503,0,0,0,0,0
-1509924,Boyang Zhao,2025,CSL,51120,False,16,0,0,0,0,0,0,0,0
-1509924,Boyang Zhao,2025,CL3S,108134,False,8,4,0,100,0,0,0,0,1
-1509924,Boyang Zhao,2025,CHFA,51120,False,1,0,0,0,0,0,0,0,0
-1509924,Boyang Zhao,2025,CH3R,108134,False,8,0,0,0,0,0,0,0,0
 1089665,Daoxin Ye,2025,CSL,17276,False,16,0,0,0,0,0,0,0,0
 1089665,Daoxin Ye,2025,CL3S,107764,False,9,8,0,619,1,0,0,0,3
 1089665,Daoxin Ye,2025,CHFA,17276,False,1,0,0,0,0,0,0,0,0
@@ -24,6 +20,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1089665,Daoxin Ye,2023,ACLQ,17276,False,1,0,0,0,0,0,0,0,0
 1089665,Daoxin Ye,2022,CSL,17276,False,30,0,0,0,0,0,0,0,0
 1089665,Daoxin Ye,2022,CHFA,17276,False,2,0,0,0,0,0,0,0,0
+1509924,Boyang Zhao,2025,CSL,51120,False,16,0,0,0,0,0,0,0,0
+1509924,Boyang Zhao,2025,CL3S,108134,False,8,4,0,100,0,0,0,0,1
+1509924,Boyang Zhao,2025,CHFA,51120,False,1,0,0,0,0,0,0,0,0
+1509924,Boyang Zhao,2025,CH3R,108134,False,8,0,0,0,0,0,0,0,0
 1376884,Zicheng Tang,2025,CSL,65791,False,15,0,0,0,0,0,0,0,0
 1376884,Zicheng Tang,2025,CL3S,125740,False,22,1,0,90,0,0,0,0,0
 1376884,Zicheng Tang,2025,CHFA,65791,False,1,0,0,0,0,0,0,0,0
@@ -218,7 +218,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 340864,Jaume Grau,2025,CSL,3187,False,18,15,0,1281,0,0,11,4,4
 340864,Jaume Grau,2025,CSL,27190,False,12,0,12,0,0,0,0,0,0
 340864,Jaume Grau,2025,CHFA,3187,False,1,0,0,0,0,0,0,0,0
-340864,Jaume Grau,2025,CHFA,27190,False,1,0,0,0,0,0,0,0,0
+340864,Jaume Grau,2025,CHFA,27190,False,2,0,0,0,0,0,0,0,0
 340864,Jaume Grau,2024,PTRL,110302,False,2,2,0,180,0,1,0,0,0
 340864,Jaume Grau,2024,POPO,110302,False,2,1,0,45,0,0,0,0,1
 340864,Jaume Grau,2024,PO1,110302,False,32,29,3,2123,2,2,14,5,13
@@ -402,7 +402,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1396624,Junzhen Xue,2025,CHFA,70662,False,1,0,0,0,0,0,0,0,0
 1396624,Junzhen Xue,2024,CN44,119834,False,4,4,0,303,1,0,0,0,0
 396294,Pavle Vagic,2025,SEC,1059,False,1,1,0,90,0,0,0,0,0
-396294,Pavle Vagic,2025,SE1,1092,False,10,5,0,214,0,0,0,0,0
+396294,Pavle Vagic,2025,SE1,1092,False,11,5,0,214,0,0,0,0,0
 396294,Pavle Vagic,2025,ECLQ,1059,False,4,2,1,23,0,0,0,0,1
 396294,Pavle Vagic,2025,CSL,50973,False,24,12,1,920,0,0,4,1,2
 396294,Pavle Vagic,2025,CHFA,50973,False,1,0,0,0,0,0,0,0,0
@@ -695,7 +695,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1134838,Weijie Mao,2022,CHL3,98080,False,14,12,0,645,0,0,0,0,0
 1134838,Weijie Mao,2022,CHFA,98080,False,2,1,0,45,0,0,0,0,0
 1134838,Weijie Mao,2022,CH3P,98080,False,8,7,0,357,0,0,0,0,1
-407263,Mamadou Traoré,2025,CSL,98080,False,30,26,0,2203,2,1,15,4,3
+407263,Mamadou Traoré,2025,CSL,98080,False,30,26,0,2203,2,1,15,4,4
 407263,Mamadou Traoré,2025,CHFA,98080,False,4,3,0,300,0,0,3,2,0
 407263,Mamadou Traoré,2024,CSL,98080,False,30,21,0,1709,1,0,19,6,3
 407263,Mamadou Traoré,2024,CHFA,98080,False,2,1,0,45,0,0,0,0,0
@@ -970,7 +970,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 148372,Nicolae Stanciu,2025,POWM,3447,True,1,1,0,19,0,0,1,0,0
 148372,Nicolae Stanciu,2025,IT1,252,False,22,4,4,180,0,0,5,0,0
 148372,Nicolae Stanciu,2025,FS,3447,True,5,3,1,205,0,0,5,0,1
-148372,Nicolae Stanciu,2025,CSL,98080,False,30,27,0,2295,10,5,107,41,1
+148372,Nicolae Stanciu,2025,CSL,98080,False,30,27,0,2296,10,5,107,41,1
 148372,Nicolae Stanciu,2025,CIT,252,False,3,3,0,235,1,0,5,3,0
 148372,Nicolae Stanciu,2025,CHFA,98080,False,4,3,0,300,3,0,8,3,1
 148372,Nicolae Stanciu,2024,WMQ6,3447,True,8,4,2,326,0,0,7,3,2
@@ -1069,7 +1069,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 148372,Nicolae Stanciu,2010,19EU,21428,True,3,3,0,270,1,0,0,0,1
 148372,Nicolae Stanciu,2009,RO1,13839,False,34,5,0,298,0,1,0,0,0
 148372,Nicolae Stanciu,2008,RO2B,13839,False,2,1,0,10,0,0,0,0,0
-1428963,Shunjie Peng,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1428963,Shunjie Peng,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1428963,Shunjie Peng,2025,FS,28420,True,3,1,0,45,0,0,0,0,0
 1428963,Shunjie Peng,2025,CSL,98080,False,30,3,0,20,0,0,0,0,0
 1428963,Shunjie Peng,2025,CHL3,137958,False,20,2,0,180,0,0,0,0,1
@@ -1252,7 +1252,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1235856,Shan Huang,2023,FS,28420,True,4,2,0,66,0,0,0,0,0
 1235856,Shan Huang,2023,CLO,98080,False,30,7,0,96,0,0,2,1,0
 1235856,Shan Huang,2023,CHFA,98080,False,1,0,0,0,0,0,0,0,0
-156057,Peng Lü,2025,CSL,98080,False,30,14,0,412,0,0,0,0,1
+156057,Peng Lü,2025,CSL,98080,False,30,14,0,411,0,0,0,0,1
 156057,Peng Lü,2025,CHFA,98080,False,4,4,0,140,0,0,0,0,0
 156057,Peng Lü,2024,CSL,98080,False,30,27,0,1344,0,0,3,1,3
 156057,Peng Lü,2024,CHFA,98080,False,2,1,0,120,0,0,0,0,0
@@ -1459,7 +1459,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1238422,Pengyu Zhu,2023,CLO,98080,False,30,24,0,1256,5,4,24,10,2
 1238422,Pengyu Zhu,2023,CHFA,98080,False,1,1,0,45,0,0,0,0,0
 1125737,Mingrui Yang,2026,FS,5598,True,4,3,0,100,0,0,1,0,0
-1125737,Mingrui Yang,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1125737,Mingrui Yang,2026,FS,28420,True,2,1,0,90,0,0,0,0,0
 1125737,Mingrui Yang,2025,FS,28420,True,8,3,0,194,3,0,8,3,0
 1125737,Mingrui Yang,2025,CSL,98080,False,30,28,0,1511,2,3,16,9,4
 1125737,Mingrui Yang,2025,CHFA,98080,False,4,3,0,203,1,0,2,2,0
@@ -1588,11 +1588,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 211841,Jinhao Bi,2007,SINC,22761,False,1,1,0,90,0,0,0,0,0
 211841,Jinhao Bi,2007,SIN1,22761,False,33,19,1,1286,5,0,0,0,2
 224161,Junling Yan,2026,FS,5598,True,6,2,0,135,0,0,0,0,0
-224161,Junling Yan,2026,ACLE,27190,False,4,4,0,360,0,0,0,0,0
+224161,Junling Yan,2026,ACLE,27190,False,5,5,0,450,0,0,0,0,0
 224161,Junling Yan,2025,FS,5598,True,4,2,0,180,0,0,0,0,0
 224161,Junling Yan,2025,CSL,27190,False,30,30,0,2700,0,0,0,0,3
 224161,Junling Yan,2025,CHSC,27190,False,1,1,0,90,0,0,0,0,0
-224161,Junling Yan,2025,CHFA,27190,False,3,1,0,90,0,0,0,0,0
+224161,Junling Yan,2025,CHFA,27190,False,4,2,0,180,0,0,0,0,0
 224161,Junling Yan,2025,ACLE,27190,False,8,4,0,360,0,0,0,0,0
 224161,Junling Yan,2024,EAFC,5598,True,3,3,0,270,0,0,0,0,0
 224161,Junling Yan,2024,CSL,27190,False,30,27,2,2385,0,0,0,0,3
@@ -1662,10 +1662,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 224161,Junling Yan,2010,CHFA,27190,False,2,0,0,0,0,0,0,0,0
 224161,Junling Yan,2009,CLO,27190,False,24,0,0,0,0,0,0,0,0
 224161,Junling Yan,2007,CLO,27190,False,1,0,0,0,0,0,0,0,0
-363795,Wei Chen,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
+363795,Wei Chen,2026,ACLE,27190,False,5,0,0,0,0,0,0,0,0
 363795,Wei Chen,2025,CSL,27190,False,30,0,0,0,0,0,0,0,0
 363795,Wei Chen,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-363795,Wei Chen,2025,CHFA,27190,False,3,2,0,210,0,0,0,0,0
+363795,Wei Chen,2025,CHFA,27190,False,4,2,0,210,0,0,0,0,0
 363795,Wei Chen,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 363795,Wei Chen,2025,ACLE,27190,False,8,4,0,360,0,0,0,0,0
 363795,Wei Chen,2024,CSL,27190,False,30,4,0,315,0,0,0,0,0
@@ -1715,7 +1715,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1244273,Zhiliang Li,2025,CSL,27190,False,30,0,0,0,0,0,0,0,0
 1244273,Zhiliang Li,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
 1244273,Zhiliang Li,2025,CHL3,115122,False,19,13,0,1170,0,0,0,0,0
-1244273,Zhiliang Li,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+1244273,Zhiliang Li,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 1244273,Zhiliang Li,2025,CH3P,115122,False,8,8,0,720,0,0,0,0,0
 1244273,Zhiliang Li,2025,ACLE,27190,False,8,0,0,0,0,0,0,0,0
 1244273,Zhiliang Li,2024,CSL,27190,False,30,0,0,0,0,0,0,0,0
@@ -1732,7 +1732,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 335744,Miguel Campos,2025,UARP,18303,False,2,2,0,180,0,0,0,0,0
 335744,Miguel Campos,2025,ECLQ,18303,False,2,2,0,180,0,0,0,0,0
 335744,Miguel Campos,2025,CSL,27190,False,12,0,12,0,0,0,0,0,0
-335744,Miguel Campos,2025,CHFA,27190,False,1,0,0,0,0,0,0,0,0
+335744,Miguel Campos,2025,CHFA,27190,False,2,0,0,0,0,0,0,0,0
 335744,Miguel Campos,2024,UKRP,18303,False,2,2,0,165,0,0,0,0,1
 335744,Miguel Campos,2024,UKR1,18303,False,30,27,1,2226,5,0,0,0,5
 335744,Miguel Campos,2023,UKR1,18303,False,14,12,2,916,0,2,0,0,5
@@ -1761,19 +1761,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1430644,Yuhang Zhang,2025,CSL,27190,False,30,0,0,0,0,0,0,0,0
 1430644,Yuhang Zhang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
 1430644,Yuhang Zhang,2025,CHL3,115122,False,22,6,0,533,0,0,0,0,0
-1430644,Yuhang Zhang,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+1430644,Yuhang Zhang,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 1430644,Yuhang Zhang,2025,CH3P,115122,False,2,0,0,0,0,0,0,0,0
 1430644,Yuhang Zhang,2025,ACLE,27190,False,2,0,0,0,0,0,0,0,0
 1430644,Yuhang Zhang,2024,CH3R,115122,False,3,0,0,0,0,0,0,0,0
 1012988,Alex Yang,2026,FS,5598,True,6,2,0,156,0,0,0,0,1
 1012988,Alex Yang,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
-1012988,Alex Yang,2026,ACLE,27190,False,4,3,0,270,0,1,5,0,0
+1012988,Alex Yang,2026,ACLE,27190,False,5,4,0,290,0,1,5,0,1
 1012988,Alex Yang,2025,FS,5598,True,4,4,0,348,0,0,1,0,0
 1012988,Alex Yang,2025,FS,36037,True,2,0,0,0,0,0,0,0,0
 1012988,Alex Yang,2025,FS,35185,True,9,2,0,180,0,0,0,0,0
 1012988,Alex Yang,2025,CSL,27190,False,30,29,0,2339,2,4,14,4,5
 1012988,Alex Yang,2025,CHSC,27190,False,1,1,0,90,0,0,0,0,1
-1012988,Alex Yang,2025,CHFA,27190,False,3,2,0,139,1,1,1,1,0
+1012988,Alex Yang,2025,CHFA,27190,False,4,3,0,229,1,2,3,2,1
 1012988,Alex Yang,2025,AG18,53844,True,6,6,0,540,0,0,0,0,1
 1012988,Alex Yang,2025,ACLE,27190,False,2,1,0,90,0,0,0,0,1
 1012988,Alex Yang,2025,A23Q,35185,True,3,1,0,45,0,0,0,0,0
@@ -1786,11 +1786,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1012988,Alex Yang,2024,A920,7689,True,4,3,0,270,0,0,0,0,2
 1012988,Alex Yang,2022,E4G3,10773,False,1,0,0,0,0,0,0,0,0
 424939,Zhen Wei,2026,FS,5598,True,4,4,0,197,0,0,0,0,0
-424939,Zhen Wei,2026,ACLE,27190,False,4,3,0,270,0,0,1,0,1
+424939,Zhen Wei,2026,ACLE,27190,False,5,4,0,360,0,0,2,1,2
 424939,Zhen Wei,2025,FS,5598,True,4,1,0,45,0,0,1,0,0
 424939,Zhen Wei,2025,CSL,27190,False,30,29,0,2534,4,0,16,5,6
 424939,Zhen Wei,2025,CHSC,27190,False,1,1,0,90,0,0,0,0,0
-424939,Zhen Wei,2025,CHFA,27190,False,3,3,0,231,0,0,0,0,1
+424939,Zhen Wei,2025,CHFA,27190,False,4,4,0,321,0,0,0,0,1
 424939,Zhen Wei,2025,ACLE,27190,False,8,7,0,573,0,1,4,0,0
 424939,Zhen Wei,2024,EAFC,5598,True,3,0,0,0,0,0,0,0,0
 424939,Zhen Wei,2024,CSL,27190,False,30,20,0,1444,0,1,6,3,6
@@ -1842,13 +1842,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 424939,Zhen Wei,2015,AFCL,27190,False,2,0,0,0,0,0,0,0,0
 956819,Umidjan Yusup,2026,FS,5598,True,6,1,0,45,0,0,0,0,0
 956819,Umidjan Yusup,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
-956819,Umidjan Yusup,2026,ACLE,27190,False,4,3,0,194,0,0,0,0,0
+956819,Umidjan Yusup,2026,ACLE,27190,False,5,4,0,284,0,0,1,1,0
 956819,Umidjan Yusup,2025,FS,5598,True,4,2,0,48,0,0,0,0,0
 956819,Umidjan Yusup,2025,FS,36037,True,2,2,0,153,0,0,1,0,0
 956819,Umidjan Yusup,2025,FS,35185,True,9,2,0,180,0,0,0,0,0
 956819,Umidjan Yusup,2025,CSL,27190,False,30,25,4,2125,0,0,3,1,8
 956819,Umidjan Yusup,2025,CHSC,27190,False,1,1,0,90,0,0,1,0,0
-956819,Umidjan Yusup,2025,CHFA,27190,False,3,2,1,185,0,0,0,0,1
+956819,Umidjan Yusup,2025,CHFA,27190,False,4,3,1,275,0,0,0,0,2
 956819,Umidjan Yusup,2025,ACLE,27190,False,8,7,0,585,0,0,1,0,1
 956819,Umidjan Yusup,2025,A23Q,35185,True,3,2,0,180,0,0,0,0,1
 956819,Umidjan Yusup,2025,23AF,35185,True,6,6,0,561,0,0,1,0,1
@@ -1867,7 +1867,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 156934,Tyias Browning,2025,FS,5598,True,4,0,4,0,0,0,0,0,0
 156934,Tyias Browning,2025,CSL,27190,False,30,16,11,1108,1,0,4,1,1
 156934,Tyias Browning,2025,CHSC,27190,False,1,0,1,0,0,0,0,0,0
-156934,Tyias Browning,2025,CHFA,27190,False,3,1,2,90,0,0,0,0,0
+156934,Tyias Browning,2025,CHFA,27190,False,4,2,2,180,0,0,0,0,0
 156934,Tyias Browning,2025,ACLE,27190,False,8,3,4,190,0,0,0,0,0
 156934,Tyias Browning,2024,EAFC,5598,True,3,0,0,0,0,0,0,0,0
 156934,Tyias Browning,2024,CSL,27190,False,30,22,8,1880,0,0,7,0,3
@@ -1948,10 +1948,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 156934,Tyias Browning,2011,GBR,9261,False,22,21,0,1856,0,1,0,0,1
 156934,Tyias Browning,2010,GBR,9261,False,15,10,0,900,0,1,0,0,0
 156934,Tyias Browning,2010,FS,23260,True,2,2,0,104,0,0,0,0,0
-279525,Shuai Li,2026,ACLE,27190,False,4,3,1,198,0,0,4,1,1
+279525,Shuai Li,2026,ACLE,27190,False,5,3,0,198,0,0,4,1,1
 279525,Shuai Li,2025,CSL,27190,False,30,23,7,1536,1,5,15,6,3
 279525,Shuai Li,2025,CHSC,27190,False,1,1,0,90,0,0,0,0,0
-279525,Shuai Li,2025,CHFA,27190,False,3,2,1,170,0,0,1,0,0
+279525,Shuai Li,2025,CHFA,27190,False,4,3,1,260,0,0,1,0,0
 279525,Shuai Li,2025,ACLE,27190,False,8,5,2,376,0,0,1,0,0
 279525,Shuai Li,2024,CSL,27190,False,30,25,0,2054,2,6,13,2,3
 279525,Shuai Li,2024,CHSC,27190,False,1,1,0,90,0,0,0,0,0
@@ -1989,10 +1989,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 279525,Shuai Li,2016,CHFA,33304,False,2,1,0,90,0,0,0,0,0
 279525,Shuai Li,2015,CLO,33304,False,30,17,0,1155,0,2,0,0,4
 279525,Shuai Li,2015,CHFA,33304,False,2,2,0,180,0,0,0,0,1
-527720,Zhen'ao Wang,2026,ACLE,27190,False,4,2,0,153,0,0,1,0,0
+527720,Zhen'ao Wang,2026,ACLE,27190,False,5,3,0,223,0,1,3,1,0
 527720,Zhen'ao Wang,2025,CSL,27190,False,30,13,10,495,0,0,3,2,4
 527720,Zhen'ao Wang,2025,CHSC,27190,False,1,0,1,0,0,0,0,0,0
-527720,Zhen'ao Wang,2025,CHFA,27190,False,3,2,0,120,0,1,0,0,0
+527720,Zhen'ao Wang,2025,CHFA,27190,False,4,3,0,121,0,1,0,0,0
 527720,Zhen'ao Wang,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 527720,Zhen'ao Wang,2025,ACLE,27190,False,8,0,8,0,0,0,0,0,0
 527720,Zhen'ao Wang,2024,CSL,27190,False,30,4,26,280,0,0,3,0,2
@@ -2026,11 +2026,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 527720,Zhen'ao Wang,2017,DKDL,15644,False,10,1,0,18,0,0,0,0,0
 527720,Zhen'ao Wang,2017,DK2,443,False,8,0,0,0,0,0,0,0,0
 288513,Xin Yue,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
-288513,Xin Yue,2026,ACLE,27190,False,4,2,0,79,0,1,1,1,0
+288513,Xin Yue,2026,ACLE,27190,False,5,3,0,169,0,1,1,1,0
 288513,Xin Yue,2025,FS,35185,True,9,0,0,0,0,0,0,0,0
 288513,Xin Yue,2025,CSL,27190,False,30,17,0,485,1,1,5,2,0
 288513,Xin Yue,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-288513,Xin Yue,2025,CHFA,27190,False,3,3,0,171,0,1,0,0,0
+288513,Xin Yue,2025,CHFA,27190,False,4,3,0,171,0,1,0,0,0
 288513,Xin Yue,2025,ACLE,27190,False,2,1,0,8,0,0,0,0,0
 288513,Xin Yue,2025,A23Q,35185,True,3,0,0,0,0,0,0,0,0
 288513,Xin Yue,2025,23AF,35185,True,6,0,0,0,0,0,0,0,0
@@ -2099,10 +2099,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1237516,Shimeng Bao,2023,CSL,27190,False,30,10,0,217,0,0,0,0,2
 1237516,Shimeng Bao,2023,CHSC,27190,False,1,0,0,0,0,0,0,0,0
 1237516,Shimeng Bao,2023,CHFA,27190,False,5,2,0,59,0,0,1,0,0
-250199,Huan Fu,2026,ACLE,27190,False,4,1,0,20,0,0,0,0,0
+250199,Huan Fu,2026,ACLE,27190,False,5,1,0,20,0,0,0,0,0
 250199,Huan Fu,2025,CSL,27190,False,30,10,5,340,0,0,0,0,2
 250199,Huan Fu,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-250199,Huan Fu,2025,CHFA,27190,False,3,2,0,29,0,0,0,0,0
+250199,Huan Fu,2025,CHFA,27190,False,4,2,0,29,0,0,0,0,0
 250199,Huan Fu,2025,ACLE,27190,False,7,5,0,221,0,0,0,0,1
 250199,Huan Fu,2024,CSL,27190,False,30,10,0,260,0,1,0,0,1
 250199,Huan Fu,2024,CHSC,27190,False,1,0,0,0,0,0,0,0,0
@@ -2155,10 +2155,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 250199,Huan Fu,2012,CHFA,27190,False,2,2,0,240,0,0,0,0,1
 250199,Huan Fu,2011,CLO,27190,False,11,0,0,0,0,0,0,0,0
 250199,Huan Fu,2011,CHFA,27190,False,2,2,0,180,1,0,0,0,1
-236672,Shenchao Wang,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
+236672,Shenchao Wang,2026,ACLE,27190,False,5,1,0,1,0,0,0,0,0
 236672,Shenchao Wang,2025,CSL,27190,False,30,16,4,341,1,1,5,2,2
 236672,Shenchao Wang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-236672,Shenchao Wang,2025,CHFA,27190,False,3,2,0,90,0,0,0,0,0
+236672,Shenchao Wang,2025,CHFA,27190,False,4,2,0,90,0,0,0,0,0
 236672,Shenchao Wang,2025,ACLE,27190,False,8,4,0,338,0,0,4,1,0
 236672,Shenchao Wang,2024,CSL,27190,False,30,28,0,1668,4,3,18,5,2
 236672,Shenchao Wang,2024,CHSC,27190,False,1,0,0,0,0,0,0,0,0
@@ -2219,10 +2219,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 236672,Shenchao Wang,2010,CHFA,27190,False,2,2,0,180,1,0,0,0,0
 236672,Shenchao Wang,2009,CLO,27190,False,24,0,0,0,0,0,0,0,0
 236672,Shenchao Wang,2007,CLO,27190,False,1,0,0,0,0,0,0,0,0
-140437,Linpeng Zhang,2026,ACLE,27190,False,4,1,1,76,0,0,0,0,0
+140437,Linpeng Zhang,2026,ACLE,27190,False,5,1,1,76,0,0,0,0,0
 140437,Linpeng Zhang,2025,CSL,27190,False,30,12,9,462,0,0,2,0,0
 140437,Linpeng Zhang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-140437,Linpeng Zhang,2025,CHFA,27190,False,3,2,1,79,1,0,0,0,0
+140437,Linpeng Zhang,2025,CHFA,27190,False,4,3,1,80,1,0,0,0,0
 140437,Linpeng Zhang,2025,ACLE,27190,False,8,6,0,303,0,0,0,0,3
 140437,Linpeng Zhang,2024,CSL,27190,False,30,15,0,636,1,0,4,2,3
 140437,Linpeng Zhang,2024,CHSC,27190,False,1,1,0,27,0,0,0,0,0
@@ -2319,7 +2319,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1382895,Dongcheng Wang,2025,CSL,27190,False,30,0,0,0,0,0,0,0,0
 1382895,Dongcheng Wang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
 1382895,Dongcheng Wang,2025,CHL3,115122,False,22,4,0,245,0,0,0,0,0
-1382895,Dongcheng Wang,2025,CHFA,27190,False,3,1,0,15,0,0,0,0,0
+1382895,Dongcheng Wang,2025,CHFA,27190,False,4,1,0,15,0,0,0,0,0
 1382895,Dongcheng Wang,2025,CH3P,115122,False,8,0,0,0,0,0,0,0,0
 1382895,Dongcheng Wang,2025,ACLE,27190,False,2,0,0,0,0,0,0,0,0
 1382895,Dongcheng Wang,2024,CHL3,115122,False,22,10,0,509,0,0,0,0,1
@@ -2329,10 +2329,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1520572,Yufei Jiang,2025,CHL3,115122,False,21,0,0,0,0,0,0,0,0
 1520572,Yufei Jiang,2025,CH3P,115122,False,8,0,0,0,0,0,0,0,0
 1520572,Yufei Jiang,2025,ACLE,27190,False,2,0,0,0,0,0,0,0,0
-408958,Mateus Vital,2026,ACLE,27190,False,4,4,0,272,0,0,4,2,0
+408958,Mateus Vital,2026,ACLE,27190,False,5,5,0,355,0,0,5,3,0
 408958,Mateus Vital,2025,CSL,27190,False,30,30,0,2584,2,6,52,13,2
 408958,Mateus Vital,2025,CHSC,27190,False,1,1,0,81,0,0,0,0,0
-408958,Mateus Vital,2025,CHFA,27190,False,3,2,0,186,0,1,2,0,0
+408958,Mateus Vital,2025,CHFA,27190,False,4,3,0,276,1,1,3,1,0
 408958,Mateus Vital,2025,ACLE,27190,False,8,8,0,673,1,0,12,3,0
 408958,Mateus Vital,2024,CSL,27190,False,30,30,0,2504,5,10,53,20,2
 408958,Mateus Vital,2024,CHSC,27190,False,1,1,0,90,0,0,1,0,0
@@ -2386,7 +2386,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 448344,Óscar Melendo,2026,ACLE,27190,False,4,4,0,344,0,1,2,0,0
 448344,Óscar Melendo,2025,CSL,27190,False,30,15,15,1268,1,5,9,3,2
 448344,Óscar Melendo,2025,CHSC,27190,False,1,0,1,0,0,0,0,0,0
-448344,Óscar Melendo,2025,CHFA,27190,False,3,2,1,185,0,0,0,0,0
+448344,Óscar Melendo,2025,CHFA,27190,False,4,3,1,275,0,0,0,0,0
 448344,Óscar Melendo,2025,ACLE,27190,False,8,7,0,465,0,0,0,0,0
 448344,Óscar Melendo,2024,ES2,2687,False,40,21,0,790,2,2,11,5,0
 448344,Óscar Melendo,2024,ES2,16795,False,2,0,0,0,0,0,0,0,0
@@ -2412,11 +2412,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 448344,Óscar Melendo,2016,ES1,714,False,27,11,2,297,0,0,0,0,0
 448344,Óscar Melendo,2016,CDR,714,False,2,2,0,135,0,0,0,0,0
 967981,Jean Claude,2026,AFCQ,3815,True,4,3,0,138,0,0,0,0,0
-967981,Jean Claude,2026,ACLE,27190,False,4,3,0,28,0,0,0,0,0
+967981,Jean Claude,2026,ACLE,27190,False,5,3,0,28,0,0,0,0,0
 967981,Jean Claude,2025,FS,3815,True,4,0,2,0,0,0,0,0,0
 967981,Jean Claude,2025,CSL,27190,False,30,16,13,1182,2,2,14,7,2
 967981,Jean Claude,2025,CHSC,27190,False,1,1,0,90,0,0,1,0,0
-967981,Jean Claude,2025,CHFA,27190,False,3,2,0,155,1,0,0,0,0
+967981,Jean Claude,2025,CHFA,27190,False,4,3,0,156,1,0,0,0,0
 967981,Jean Claude,2025,ACLE,27190,False,2,2,0,172,0,0,1,0,0
 967981,Jean Claude,2024,JEMP,3828,False,1,0,1,0,0,0,0,0,0
 967981,Jean Claude,2024,JAPC,3828,False,2,0,0,0,0,0,0,0,0
@@ -2442,13 +2442,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 967981,Jean Claude,2021,UAE1,5432,False,16,10,0,191,0,0,4,0,3
 967981,Jean Claude,2021,AFCQ,3815,True,2,2,0,65,0,0,0,0,0
 1068096,Jiwen Kuai,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
-1068096,Jiwen Kuai,2026,ACLE,27190,False,4,1,1,61,0,0,2,0,0
+1068096,Jiwen Kuai,2026,ACLE,27190,False,5,2,1,68,0,0,2,0,0
 1068096,Jiwen Kuai,2025,FS,5598,True,2,1,0,13,0,0,0,0,0
 1068096,Jiwen Kuai,2025,FS,36037,True,2,1,0,45,0,0,0,0,0
 1068096,Jiwen Kuai,2025,FS,35185,True,9,3,2,135,0,0,0,0,0
 1068096,Jiwen Kuai,2025,CSL,27190,False,30,11,16,480,1,2,8,2,1
 1068096,Jiwen Kuai,2025,CHSC,27190,False,1,1,0,9,0,0,0,0,0
-1068096,Jiwen Kuai,2025,CHFA,27190,False,3,1,2,4,0,0,0,0,0
+1068096,Jiwen Kuai,2025,CHFA,27190,False,4,1,2,4,0,0,0,0,0
 1068096,Jiwen Kuai,2025,AG18,53844,True,6,4,0,131,0,1,0,0,1
 1068096,Jiwen Kuai,2025,ACLE,27190,False,8,5,0,192,0,0,3,1,0
 1068096,Jiwen Kuai,2025,A23Q,35185,True,3,2,0,180,1,2,0,0,0
@@ -2466,7 +2466,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 890691,Yongtao Lu,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 890691,Yongtao Lu,2025,CSL,27190,False,30,15,0,708,0,0,0,0,5
 890691,Yongtao Lu,2025,CHSC,27190,False,1,1,0,73,0,0,0,0,0
-890691,Yongtao Lu,2025,CHFA,27190,False,3,2,0,139,0,0,0,0,0
+890691,Yongtao Lu,2025,CHFA,27190,False,4,2,0,139,0,0,0,0,0
 890691,Yongtao Lu,2025,ACLE,27190,False,2,2,0,163,0,0,1,0,0
 890691,Yongtao Lu,2024,CSL,9982,False,14,9,0,551,2,0,7,4,2
 890691,Yongtao Lu,2024,CSL,3182,False,16,9,0,282,0,0,5,1,3
@@ -2489,10 +2489,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 890691,Yongtao Lu,2020,CL1P,70662,False,2,2,0,171,0,0,0,0,1
 890691,Yongtao Lu,2020,CHFA,70662,False,4,2,0,94,1,0,0,0,0
 890691,Yongtao Lu,2020,CH3P,70662,False,14,10,0,599,3,0,0,0,3
-439768,Yuan Zhang,2026,ACLE,27190,False,4,1,0,1,0,0,1,0,0
+439768,Yuan Zhang,2026,ACLE,27190,False,5,2,0,8,0,0,2,0,0
 439768,Yuan Zhang,2025,CSL,27190,False,30,14,13,660,1,0,5,2,3
 439768,Yuan Zhang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-439768,Yuan Zhang,2025,CHFA,27190,False,3,1,2,90,0,0,0,0,0
+439768,Yuan Zhang,2025,CHFA,27190,False,4,1,2,90,0,0,0,0,0
 439768,Yuan Zhang,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 439768,Yuan Zhang,2025,ACLE,27190,False,2,2,0,13,0,0,0,0,0
 439768,Yuan Zhang,2025,ACL2,3176,False,6,6,0,480,1,1,8,1,0
@@ -2532,7 +2532,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 254621,Shiyuan Yang,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 254621,Shiyuan Yang,2025,CSL,27190,False,30,4,6,75,0,0,0,0,2
 254621,Shiyuan Yang,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
-254621,Shiyuan Yang,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+254621,Shiyuan Yang,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 254621,Shiyuan Yang,2025,ACLE,27190,False,8,3,0,109,0,0,0,0,1
 254621,Shiyuan Yang,2024,CSL,27190,False,30,10,0,172,0,0,4,2,3
 254621,Shiyuan Yang,2024,CHSC,27190,False,1,0,0,0,0,0,0,0,0
@@ -2575,7 +2575,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1382898,Ruilong Li,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1382898,Ruilong Li,2025,CSL,27190,False,15,0,0,0,0,0,0,0,0
 1382898,Ruilong Li,2025,CHL3,115122,False,22,20,0,1549,1,1,0,0,4
-1382898,Ruilong Li,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+1382898,Ruilong Li,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 1382898,Ruilong Li,2025,CH3P,115122,False,8,8,0,609,0,0,0,0,0
 1382898,Ruilong Li,2024,CHL3,115122,False,22,7,0,306,0,0,0,0,0
 1382898,Ruilong Li,2024,CH3R,115122,False,8,5,0,154,0,0,0,0,0
@@ -2583,13 +2583,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1521696,Zhezhe Cao,2025,CSL,27190,False,30,0,0,0,0,0,0,0,0
 1521696,Zhezhe Cao,2025,CHSC,27190,False,1,0,0,0,0,0,0,0,0
 1521696,Zhezhe Cao,2025,CHL3,115122,False,22,13,0,366,0,1,0,0,0
-1521696,Zhezhe Cao,2025,CHFA,27190,False,3,1,0,6,0,0,0,0,0
+1521696,Zhezhe Cao,2025,CHFA,27190,False,4,1,0,6,0,0,0,0,0
 1521696,Zhezhe Cao,2025,CH3P,115122,False,8,3,0,144,0,0,0,0,0
 1521696,Zhezhe Cao,2025,ACLE,27190,False,2,0,0,0,0,0,0,0,0
-546292,Léo Souza,2026,ACLE,27190,False,4,4,0,173,2,1,7,3,0
+546292,Léo Souza,2026,ACLE,27190,False,5,5,0,263,2,3,10,4,0
 546292,Léo Souza,2025,CSL,27190,False,30,26,3,2083,14,5,64,33,3
 546292,Léo Souza,2025,CHSC,27190,False,1,1,0,30,0,0,3,0,1
-546292,Léo Souza,2025,CHFA,27190,False,3,2,0,210,0,1,3,2,0
+546292,Léo Souza,2025,CHFA,27190,False,4,3,0,300,0,1,11,6,0
 546292,Léo Souza,2025,ACLE,27190,False,8,2,4,55,0,0,0,0,0
 546292,Léo Souza,2024,CSL,27190,False,30,30,0,2412,21,8,92,43,3
 546292,Léo Souza,2024,CHSC,27190,False,1,1,0,90,0,1,0,0,0
@@ -2626,7 +2626,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 562734,Prince Ampem,2025,TR1,7160,False,23,20,0,631,2,0,20,7,3
 562734,Prince Ampem,2025,CSL,27190,False,30,24,2,1817,7,7,40,16,0
 562734,Prince Ampem,2025,CHSC,27190,False,1,1,0,73,0,0,1,0,0
-562734,Prince Ampem,2025,CHFA,27190,False,3,2,0,157,1,0,4,3,0
+562734,Prince Ampem,2025,CHFA,27190,False,4,3,0,246,1,0,6,4,0
 562734,Prince Ampem,2024,TRP,7160,False,4,4,0,303,0,0,0,0,1
 562734,Prince Ampem,2024,TR1,7160,False,36,29,1,2164,4,2,32,10,6
 562734,Prince Ampem,2023,TRP,7160,False,2,0,0,0,0,0,0,0,0
@@ -2649,7 +2649,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 523850,Gabrielzinho,2025,PO1,979,False,5,0,0,0,0,0,0,0,0
 523850,Gabrielzinho,2025,CSL,27190,False,30,5,25,367,1,2,7,2,0
 523850,Gabrielzinho,2025,CHSC,27190,False,1,1,0,60,0,0,0,0,0
-523850,Gabrielzinho,2025,CHFA,27190,False,3,0,3,0,0,0,0,0,0
+523850,Gabrielzinho,2025,CHFA,27190,False,4,0,4,0,0,0,0,0,0
 523850,Gabrielzinho,2025,ACLE,27190,False,8,5,2,205,1,0,3,2,0
 523850,Gabrielzinho,2024,POPO,979,False,3,2,0,90,0,0,0,0,0
 523850,Gabrielzinho,2024,POCP,979,False,1,1,0,90,0,0,1,1,0
@@ -2690,11 +2690,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 523850,Gabrielzinho,2015,BRA1,679,False,18,0,0,0,0,0,0,0,0
 523850,Gabrielzinho,2015,BCP1,20132,False,15,6,0,82,0,0,0,0,0
 523850,Gabrielzinho,2014,BCP1,20132,False,7,1,0,5,0,0,0,0,0
-140436,Lei Wu,2026,ACLE,27190,False,4,3,0,187,1,1,6,2,0
+140436,Lei Wu,2026,ACLE,27190,False,5,3,0,187,1,1,6,2,0
 140436,Lei Wu,2025,FS,5598,True,4,2,0,13,0,0,1,0,0
 140436,Lei Wu,2025,CSL,27190,False,30,24,3,609,7,2,29,10,2
 140436,Lei Wu,2025,CHSC,27190,False,1,1,0,17,0,0,0,0,0
-140436,Lei Wu,2025,CHFA,27190,False,3,1,1,20,0,0,0,0,0
+140436,Lei Wu,2025,CHFA,27190,False,4,2,1,97,1,0,3,1,0
 140436,Lei Wu,2025,ACLE,27190,False,8,0,8,0,0,0,0,0,0
 140436,Lei Wu,2024,EAFC,5598,True,3,0,3,0,0,0,0,0,0
 140436,Lei Wu,2024,CSL,27190,False,30,6,24,174,1,1,12,3,1
@@ -2771,10 +2771,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 140436,Lei Wu,2009,EAFC,5598,True,3,1,0,20,0,0,0,0,0
 140436,Lei Wu,2009,CLO,27190,False,24,0,0,0,0,0,0,0,0
 140436,Lei Wu,2007,CLO,27190,False,1,0,0,0,0,0,0,0,0
-589611,Zhurun Liu,2026,ACLE,27190,False,4,4,0,97,0,0,1,0,0
+589611,Zhurun Liu,2026,ACLE,27190,False,5,5,0,167,1,0,3,1,0
 589611,Zhurun Liu,2025,CSL,27190,False,30,26,0,1309,3,4,33,11,4
 589611,Zhurun Liu,2025,CHSC,27190,False,1,1,0,45,0,0,1,0,1
-589611,Zhurun Liu,2025,CHFA,27190,False,3,3,0,280,2,0,6,1,0
+589611,Zhurun Liu,2025,CHFA,27190,False,4,4,0,293,2,0,7,2,0
 589611,Zhurun Liu,2025,ACLE,27190,False,2,2,0,175,0,0,2,0,0
 589611,Zhurun Liu,2024,CSL,98080,False,30,24,0,1541,5,4,29,13,1
 589611,Zhurun Liu,2024,CHSC,27190,False,1,0,0,0,0,0,0,0,0
@@ -2811,7 +2811,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 465128,Ruofan Liu,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 465128,Ruofan Liu,2025,CSL,27190,False,30,11,3,236,0,1,4,3,0
 465128,Ruofan Liu,2025,CHSC,27190,False,1,0,1,0,0,0,0,0,0
-465128,Ruofan Liu,2025,CHFA,27190,False,3,1,0,45,0,0,0,0,0
+465128,Ruofan Liu,2025,CHFA,27190,False,4,1,0,45,0,0,0,0,0
 465128,Ruofan Liu,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 465128,Ruofan Liu,2025,ACLE,27190,False,8,1,5,30,0,0,0,0,0
 465128,Ruofan Liu,2024,CSL,27190,False,30,25,3,1340,5,8,45,18,2
@@ -2859,11 +2859,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 465128,Ruofan Liu,2016,CSL,3183,False,30,3,0,85,0,0,0,0,0
 465128,Ruofan Liu,2016,CHFA,3183,False,8,3,0,133,0,1,0,0,0
 465128,Ruofan Liu,2013,A168,47233,True,3,3,0,171,0,0,0,0,0
-1244269,Xinxiang Li,2026,ACLE,27190,False,4,2,0,15,1,0,1,1,0
+1244269,Xinxiang Li,2026,ACLE,27190,False,5,3,0,35,1,0,1,1,0
 1244269,Xinxiang Li,2025,FS,35185,True,7,4,0,233,1,1,0,0,0
 1244269,Xinxiang Li,2025,CSL,27190,False,30,26,3,1149,5,3,28,9,3
 1244269,Xinxiang Li,2025,CHSC,27190,False,1,1,0,17,0,0,0,0,0
-1244269,Xinxiang Li,2025,CHFA,27190,False,3,3,0,159,0,1,0,0,0
+1244269,Xinxiang Li,2025,CHFA,27190,False,4,4,0,160,0,1,1,0,0
 1244269,Xinxiang Li,2025,AG18,53844,True,6,1,0,19,0,0,0,0,0
 1244269,Xinxiang Li,2025,ACLE,27190,False,8,4,0,188,0,0,3,1,0
 1244269,Xinxiang Li,2025,A23Q,35185,True,3,2,0,74,1,0,0,0,0
@@ -2875,11 +2875,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1244269,Xinxiang Li,2024,ACLE,27190,False,4,1,0,13,0,0,3,0,0
 1244269,Xinxiang Li,2023,CL3S,115122,False,18,15,0,1004,3,2,0,0,1
 1244269,Xinxiang Li,2023,CH3P,115122,False,10,6,0,433,2,1,0,0,0
-605150,Matt Orr,2026,ACLE,27190,False,4,1,0,7,0,0,0,0,0
+605150,Matt Orr,2026,ACLE,27190,False,5,1,0,7,0,0,0,0,0
 605150,Matt Orr,2025,FS,15977,True,5,5,0,420,1,0,4,1,0
 605150,Matt Orr,2025,CSL,27190,False,30,6,5,197,1,0,6,2,0
 605150,Matt Orr,2025,CHSC,27190,False,1,1,0,45,0,0,0,0,0
-605150,Matt Orr,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+605150,Matt Orr,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 605150,Matt Orr,2025,ASD2,15977,True,3,3,0,212,3,0,0,0,0
 605150,Matt Orr,2025,ACLE,27190,False,2,2,0,178,0,0,1,0,0
 605150,Matt Orr,2024,FS,15977,True,8,7,1,567,5,0,0,0,0
@@ -2929,14 +2929,14 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1382897,Junxiang Wen,2026,ACLE,27190,False,4,0,3,0,0,0,0,0,0
 1382897,Junxiang Wen,2025,CSL,27190,False,15,0,3,0,0,0,0,0,0
 1382897,Junxiang Wen,2025,CHL3,115122,False,22,22,0,1728,9,2,0,0,1
-1382897,Junxiang Wen,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+1382897,Junxiang Wen,2025,CHFA,27190,False,4,0,1,0,0,0,0,0,0
 1382897,Junxiang Wen,2025,CH3P,115122,False,4,4,0,246,1,0,0,0,1
 1382897,Junxiang Wen,2024,CHL3,115122,False,22,15,0,666,3,0,0,0,1
 1382897,Junxiang Wen,2024,CH3R,115122,False,8,6,0,261,2,0,0,0,1
 1068100,Junjie Zhang,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1068100,Junjie Zhang,2025,CSL,27190,False,15,0,0,0,0,0,0,0,0
 1068100,Junjie Zhang,2025,CHL3,115122,False,22,19,0,1374,2,5,0,0,1
-1068100,Junjie Zhang,2025,CHFA,27190,False,3,1,0,45,0,0,0,0,0
+1068100,Junjie Zhang,2025,CHFA,27190,False,4,1,0,45,0,0,0,0,0
 1068100,Junjie Zhang,2025,CH3P,115122,False,8,7,0,500,0,1,0,0,2
 1068100,Junjie Zhang,2024,CHL3,115122,False,7,7,0,541,3,1,0,0,1
 1068100,Junjie Zhang,2024,CH3R,115122,False,8,4,0,360,1,0,0,0,0
@@ -2945,7 +2945,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1436253,Juncheng Cui,2026,ACLE,27190,False,4,0,0,0,0,0,0,0,0
 1436253,Juncheng Cui,2025,CSL,27190,False,15,0,0,0,0,0,0,0,0
 1436253,Juncheng Cui,2025,CHL3,115122,False,22,20,0,1240,3,3,0,0,3
-1436253,Juncheng Cui,2025,CHFA,27190,False,3,0,0,0,0,0,0,0,0
+1436253,Juncheng Cui,2025,CHFA,27190,False,4,0,0,0,0,0,0,0,0
 1436253,Juncheng Cui,2025,CH3P,115122,False,8,8,0,302,0,0,0,0,0
 1436253,Juncheng Cui,2024,CH3R,115122,False,8,6,0,285,0,0,0,0,1
 281719,Bo Zhao,2025,CSL,17276,False,30,24,0,2160,0,0,0,0,1
@@ -3266,7 +3266,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 825878,Pengbo Wang,2022,CPSD,50615,False,26,0,0,0,0,0,0,0,0
 825878,Pengbo Wang,2019,CL3P,39266,False,2,0,0,0,0,0,0,0,0
 825878,Pengbo Wang,2019,CHL3,39266,False,9,0,0,0,0,0,0,0,0
-1570097,Yanbin Wang,2025,CSL,17276,False,10,0,0,0,0,0,0,0,0
 349264,Marko Tolic,2025,UCOL,540,False,6,3,2,157,0,0,5,0,2
 349264,Marko Tolic,2025,SLO1,540,False,18,10,6,644,5,1,31,11,3
 349264,Marko Tolic,2025,SKC,540,False,3,1,1,45,1,0,0,0,0
@@ -3315,6 +3314,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 349264,Marko Tolic,2015,KR2,12109,False,14,10,0,559,2,0,0,0,1
 349264,Marko Tolic,2014,KR2,25029,False,14,8,0,200,0,0,0,0,1
 349264,Marko Tolic,2014,KR1,11194,False,1,1,0,2,0,0,0,0,0
+1570097,Yanbin Wang,2025,CSL,17276,False,10,0,0,0,0,0,0,0,0
 557469,Jin-seob Park,2026,FS,3589,True,6,5,0,332,0,0,0,0,1
 557469,Jin-seob Park,2025,FS,3589,True,10,6,0,302,0,0,0,0,0
 557469,Jin-seob Park,2025,FIWC,3589,True,3,2,0,30,0,0,1,1,0
@@ -4401,16 +4401,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 229719,Songyi Li,2012,CHFA,3182,False,2,2,0,180,0,0,0,0,1
 229719,Songyi Li,2012,A192,28420,True,2,2,0,180,0,0,0,0,0
 229719,Songyi Li,2011,CSL,3182,False,2,1,0,4,0,0,0,0,0
+1526623,Shuyi Zhao,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
+1526623,Shuyi Zhao,2025,CSL,3183,False,30,0,0,0,0,0,0,0,0
+1526623,Shuyi Zhao,2025,CHFA,3183,False,3,0,0,0,0,0,0,0,0
+1526623,Shuyi Zhao,2025,ACLE,3183,False,2,0,0,0,0,0,0,0,0
 1396695,Hongyu Jiang,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
 1396695,Hongyu Jiang,2025,CSL,3183,False,30,0,0,0,0,0,0,0,0
 1396695,Hongyu Jiang,2025,CHFA,3183,False,3,0,0,0,0,0,0,0,0
 1396695,Hongyu Jiang,2025,ACLE,3183,False,2,0,0,0,0,0,0,0,0
 1396695,Hongyu Jiang,2024,CN44,107868,False,4,3,0,270,0,0,0,0,0
 1396695,Hongyu Jiang,2024,CN43,107868,False,27,3,0,270,0,0,0,0,0
-1526623,Shuyi Zhao,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
-1526623,Shuyi Zhao,2025,CSL,3183,False,30,0,0,0,0,0,0,0,0
-1526623,Shuyi Zhao,2025,CHFA,3183,False,3,0,0,0,0,0,0,0,0
-1526623,Shuyi Zhao,2025,ACLE,3183,False,2,0,0,0,0,0,0,0,0
 132214,João Carlos Teixeira,2026,ACL2,3183,False,4,4,0,278,0,0,3,1,0
 132214,João Carlos Teixeira,2025,CSL,3183,False,30,20,1,1416,5,6,48,14,5
 132214,João Carlos Teixeira,2025,CHFA,3183,False,3,2,0,156,0,0,0,0,1
@@ -4703,7 +4703,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1237517,Ming Huang,2023,CN43,107868,False,6,5,0,266,1,0,0,0,1
 1237517,Ming Huang,2023,CHSC,3183,False,1,0,0,0,0,0,0,0,0
 1237517,Ming Huang,2023,CHFA,3183,False,4,0,0,0,0,0,0,0,0
-1125733,Qipeng Wu,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1125733,Qipeng Wu,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1125733,Qipeng Wu,2026,ACL2,3183,False,4,1,0,1,0,0,0,0,0
 1125733,Qipeng Wu,2025,FS,28420,True,8,1,2,90,0,0,0,0,0
 1125733,Qipeng Wu,2025,CSL,3183,False,30,11,2,463,0,0,0,0,0
@@ -4839,9 +4839,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 606849,Makhtar Gueye,2018,FR1,618,False,38,5,0,45,1,1,2,1,0
 606849,Makhtar Gueye,2017,FR5K,8515,False,8,8,0,659,3,0,0,0,1
 606849,Makhtar Gueye,2016,ACL,11061,False,1,1,0,45,0,0,0,0,0
-702911,Luis Asué,2026,AFCQ,13485,True,3,0,0,0,0,0,0,0,0
 702911,Luis Asué,2026,ACL2,3183,False,4,4,0,272,0,0,10,4,1
-702911,Luis Asué,2025,FS,13485,True,5,1,0,72,0,0,0,0,1
+702911,Luis Asué,2025,FS,13485,True,2,1,0,72,0,0,0,0,1
 702911,Luis Asué,2025,ES2,1244,False,19,15,0,369,2,0,16,6,0
 702911,Luis Asué,2025,CSL,3183,False,15,15,0,1260,8,3,48,23,2
 702911,Luis Asué,2025,CHFA,3183,False,3,3,0,239,4,0,4,0,1
@@ -5045,13 +5044,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 218247,Pengfei Xie,2012,23AF,36037,True,3,0,0,0,0,0,0,0,0
 218247,Pengfei Xie,2011,CSL,17276,False,30,1,0,34,0,0,0,0,0
 218247,Pengfei Xie,2011,CHFA,17276,False,3,2,0,156,1,0,0,0,0
-1396690,Tianle Cheng,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
-1396690,Tianle Cheng,2025,FS,28420,True,1,0,0,0,0,0,0,0,0
-1396690,Tianle Cheng,2025,CSL,3183,False,30,0,0,0,0,0,0,0,0
-1396690,Tianle Cheng,2025,CHFA,3183,False,3,0,0,0,0,0,0,0,0
-1396690,Tianle Cheng,2025,ACLE,3183,False,2,0,0,0,0,0,0,0,0
-1396690,Tianle Cheng,2024,CN44,107868,False,5,2,0,102,0,0,0,0,0
-1396690,Tianle Cheng,2024,CN43,107868,False,27,2,0,135,2,0,0,0,0
 788159,Jiawen Han,2026,ACL2,3183,False,4,3,0,38,0,0,0,0,0
 788159,Jiawen Han,2025,CSL,3183,False,30,4,0,48,1,1,1,1,0
 788159,Jiawen Han,2025,CHFA,3183,False,3,1,0,31,0,0,0,0,0
@@ -5067,6 +5059,13 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 788159,Jiawen Han,2023,CN43,107868,False,6,6,0,301,8,0,0,0,1
 788159,Jiawen Han,2023,CHSC,3183,False,1,0,0,0,0,0,0,0,0
 788159,Jiawen Han,2023,CHFA,3183,False,1,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2026,ACL2,3183,False,4,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2025,FS,28420,True,1,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2025,CSL,3183,False,30,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2025,CHFA,3183,False,3,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2025,ACLE,3183,False,2,0,0,0,0,0,0,0,0
+1396690,Tianle Cheng,2024,CN44,107868,False,5,2,0,102,0,0,0,0,0
+1396690,Tianle Cheng,2024,CN43,107868,False,27,2,0,135,2,0,0,0,0
 884833,Jinyong Yu,2025,FS,35185,True,7,1,0,90,0,0,0,0,0
 884833,Jinyong Yu,2025,CSL,3182,False,30,8,0,720,0,0,0,0,0
 884833,Jinyong Yu,2025,CHFA,3182,False,3,2,0,210,0,0,0,0,0
@@ -5457,7 +5456,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1127611,Songchen Shi,2022,CSL,3182,False,16,0,0,0,0,0,0,0,0
 1127611,Songchen Shi,2022,CHSC,3182,False,1,0,0,0,0,0,0,0,0
 1127611,Songchen Shi,2022,CHFA,3182,False,1,0,0,0,0,0,0,0,0
-185375,Tong Wang,2025,CSL,3182,False,30,16,0,477,0,0,2,1,1
+185375,Tong Wang,2025,CSL,3182,False,30,16,0,478,0,0,2,1,1
 185375,Tong Wang,2025,CHFA,3182,False,3,2,0,147,0,0,0,0,0
 185375,Tong Wang,2024,FS,7689,True,1,0,0,0,0,0,0,0,0
 185375,Tong Wang,2024,CSL,3182,False,30,13,0,496,1,0,4,1,1
@@ -5889,7 +5888,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 994221,Jiaxi Yin,2021,CSL,3182,False,34,0,0,0,0,0,0,0,0
 994221,Jiaxi Yin,2021,CHFA,3182,False,2,0,0,0,0,0,0,0,0
 994221,Jiaxi Yin,2021,AFCL,3182,False,6,2,0,152,0,0,0,0,0
-373300,Cryzan,2025,CSL,3182,False,30,24,1,1931,20,9,92,39,2
+373300,Cryzan,2025,CSL,3182,False,30,24,1,1931,20,9,92,39,3
 373300,Cryzan,2025,CHFA,3182,False,3,2,0,210,1,0,2,1,1
 373300,Cryzan,2024,CSL,3182,False,30,27,0,2368,11,9,123,35,7
 373300,Cryzan,2024,CHFA,3182,False,2,2,0,133,2,0,0,0,0
@@ -6096,7 +6095,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 824087,Wenneng Xie,2019,CL3P,36654,False,3,3,0,177,1,0,0,0,2
 376597,Pu Chen,2026,FS,5598,True,4,4,0,162,0,1,0,0,0
 376597,Pu Chen,2025,FS,5598,True,4,0,0,0,0,0,0,0,0
-376597,Pu Chen,2025,CSL,3182,False,30,24,0,1396,1,4,21,9,2
+376597,Pu Chen,2025,CSL,3182,False,30,24,0,1395,1,4,21,9,2
 376597,Pu Chen,2025,CHFA,3182,False,3,3,0,167,1,0,0,0,1
 376597,Pu Chen,2024,EAFC,5598,True,3,0,0,0,0,0,0,0,0
 376597,Pu Chen,2024,CSL,3182,False,30,16,0,697,1,1,10,4,2
@@ -6261,11 +6260,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1282891,Yuxuan Wang,2024,ACEQ,3182,False,1,0,0,0,0,0,0,0,0
 1282891,Yuxuan Wang,2023,CSL,3182,False,11,0,0,0,0,0,0,0,0
 1282891,Yuxuan Wang,2023,CHFA,3182,False,4,0,0,0,0,0,0,0,0
-563419,Jiaqi Han,2026,ACLE,3176,False,4,0,2,0,0,0,0,0,0
-563419,Jiaqi Han,2025,CSL,3176,False,30,1,24,1,0,0,0,0,0
+563419,Jiaqi Han,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
+563419,Jiaqi Han,2025,CSL,3176,False,30,1,17,1,0,0,0,0,0
 563419,Jiaqi Han,2025,CHSC,3176,False,1,0,1,0,0,0,0,0,0
-563419,Jiaqi Han,2025,CHFA,3176,False,3,0,2,0,0,0,0,0,0
-563419,Jiaqi Han,2025,AG18,53844,True,6,0,6,0,0,0,0,0,0
+563419,Jiaqi Han,2025,CHFA,3176,False,4,0,1,0,0,0,0,0,0
+563419,Jiaqi Han,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 563419,Jiaqi Han,2025,ACL2,3176,False,6,0,6,0,0,0,0,0,0
 563419,Jiaqi Han,2024,CSL,3176,False,30,6,24,507,0,0,0,0,1
 563419,Jiaqi Han,2024,CHFA,3176,False,5,0,5,0,0,0,0,0,0
@@ -6315,10 +6314,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 690671,Jianzhi Zhang,2019,AFCL,10948,False,4,0,0,0,0,0,0,0,0
 690671,Jianzhi Zhang,2018,CSL,10948,False,10,0,0,0,0,0,0,0,0
 690671,Jianzhi Zhang,2018,AFCL,10948,False,4,0,0,0,0,0,0,0,0
-147782,Sen Hou,2026,ACLE,3176,False,4,4,0,360,0,0,0,0,0
+147782,Sen Hou,2026,ACLE,3176,False,5,5,0,450,0,0,0,0,0
 147782,Sen Hou,2025,CSL,3176,False,30,27,0,2430,0,0,0,0,2
 147782,Sen Hou,2025,CHSC,3176,False,1,1,0,90,0,0,0,0,0
-147782,Sen Hou,2025,CHFA,3176,False,3,2,0,180,0,0,0,0,0
+147782,Sen Hou,2025,CHFA,3176,False,4,3,0,270,0,0,0,0,0
 147782,Sen Hou,2025,ACL2,3176,False,6,0,0,0,0,0,0,0,0
 147782,Sen Hou,2024,CSL,3176,False,30,25,0,2193,0,0,0,0,1
 147782,Sen Hou,2024,CHFA,3176,False,5,4,0,420,0,0,0,0,0
@@ -6371,7 +6370,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 946737,Nureli Abbas,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 946737,Nureli Abbas,2025,CSL,3176,False,30,0,0,0,0,0,0,0,0
 946737,Nureli Abbas,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-946737,Nureli Abbas,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
+946737,Nureli Abbas,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
 946737,Nureli Abbas,2025,ACL2,3176,False,6,2,0,180,0,0,0,0,0
 946737,Nureli Abbas,2024,FS,66786,True,3,0,0,0,0,0,0,0,0
 946737,Nureli Abbas,2024,CSL,3176,False,30,0,0,0,0,0,0,0,0
@@ -6388,7 +6387,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 966946,Shaoziyang Liu,2025,RLB3,28,False,8,0,0,0,0,0,0,0,0
 966946,Shaoziyang Liu,2025,MNP3,102400,False,15,2,0,180,0,0,0,0,0
 966946,Shaoziyang Liu,2025,CSL,3176,False,14,0,0,0,0,0,0,0,0
-966946,Shaoziyang Liu,2025,CHFA,3176,False,2,1,0,90,0,0,0,0,0
+966946,Shaoziyang Liu,2025,CHFA,3176,False,3,1,0,90,0,0,0,0,0
 966946,Shaoziyang Liu,2024,ofb,10044,False,2,1,1,90,0,0,0,0,0
 966946,Shaoziyang Liu,2024,RLB3,28,False,2,0,0,0,0,0,0,0,0
 966946,Shaoziyang Liu,2024,MNP3,102400,False,2,0,0,0,0,0,0,0,0
@@ -6410,7 +6409,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 340521,Gui Ramos,2025,DFB,41,False,3,2,0,154,1,0,6,2,0
 340521,Gui Ramos,2025,CSL,3176,False,30,28,0,2442,3,0,30,9,5
 340521,Gui Ramos,2025,CHSC,3176,False,1,1,0,90,0,0,1,0,1
-340521,Gui Ramos,2025,CHFA,3176,False,3,1,0,90,0,0,0,0,0
+340521,Gui Ramos,2025,CHFA,3176,False,4,2,0,180,0,0,2,1,0
 340521,Gui Ramos,2024,POPO,2423,False,3,3,0,300,0,1,0,0,2
 340521,Gui Ramos,2024,POCP,2423,False,1,1,0,90,0,0,0,0,0
 340521,Gui Ramos,2024,PO1,2423,False,30,6,0,330,0,0,2,1,2
@@ -6440,7 +6439,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 160222,Uros Spajic,2026,ACLE,3176,False,4,2,1,180,0,1,0,0,0
 160222,Uros Spajic,2025,CSL,3176,False,30,6,24,429,0,0,3,0,2
 160222,Uros Spajic,2025,CHSC,3176,False,1,0,1,0,0,0,0,0,0
-160222,Uros Spajic,2025,CHFA,3176,False,3,0,3,0,0,0,0,0,0
+160222,Uros Spajic,2025,CHFA,3176,False,4,0,4,0,0,0,0,0,0
 160222,Uros Spajic,2025,ACL2,3176,False,6,0,6,0,0,0,0,0,0
 160222,Uros Spajic,2024,SERP,159,False,1,1,0,63,0,0,0,0,0
 160222,Uros Spajic,2024,SER1,159,False,23,9,1,675,1,0,9,2,0
@@ -6530,11 +6529,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 160222,Uros Spajic,2010,SER1,159,False,6,0,0,0,0,0,0,0,0
 160222,Uros Spajic,2009,U17Q,21136,True,3,1,0,40,0,0,0,0,0
 160222,Uros Spajic,2009,FS,21136,True,1,1,0,40,0,0,0,0,0
-542228,Tze-Nam Yue,2026,ACLE,3176,False,4,4,0,225,0,0,0,0,0
+542228,Tze-Nam Yue,2026,ACLE,3176,False,5,5,0,315,0,0,1,0,0
 542228,Tze-Nam Yue,2025,FS,15977,True,5,3,2,202,0,0,0,0,0
 542228,Tze-Nam Yue,2025,CSL,3176,False,30,21,6,1278,1,2,17,5,2
 542228,Tze-Nam Yue,2025,CHSC,3176,False,1,1,0,45,0,0,0,0,0
-542228,Tze-Nam Yue,2025,CHFA,3176,False,3,1,0,83,0,0,0,0,0
+542228,Tze-Nam Yue,2025,CHFA,3176,False,4,2,0,173,0,0,3,0,0
 542228,Tze-Nam Yue,2025,ASD2,15977,True,3,2,0,76,0,0,0,0,0
 542228,Tze-Nam Yue,2024,FS,15977,True,8,6,2,337,0,0,0,0,1
 542228,Tze-Nam Yue,2024,EAFC,15977,True,6,3,0,224,0,0,1,0,0
@@ -6582,7 +6581,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 468283,Shaocong Wu,2026,ACLE,3176,False,4,0,4,0,0,0,0,0,0
 468283,Shaocong Wu,2025,CSL,3176,False,30,0,22,0,0,0,0,0,0
 468283,Shaocong Wu,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-468283,Shaocong Wu,2025,CHFA,3176,False,3,0,3,0,0,0,0,0,0
+468283,Shaocong Wu,2025,CHFA,3176,False,4,0,4,0,0,0,0,0,0
 468283,Shaocong Wu,2025,ACL2,3176,False,6,3,0,141,0,0,2,0,1
 468283,Shaocong Wu,2024,TR1,6890,False,5,0,0,0,0,0,0,0,0
 468283,Shaocong Wu,2024,POPU,7154,False,2,0,0,0,0,0,0,0,0
@@ -6631,10 +6630,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 468283,Shaocong Wu,2017,A198,28420,True,1,1,0,45,0,0,0,0,0
 468283,Shaocong Wu,2016,FS,28420,True,3,0,0,0,0,0,0,0,0
 468283,Shaocong Wu,2016,FS,26944,True,6,6,0,540,0,0,0,0,0
-449191,Abduhamit Abdugheni,2026,ACLE,3176,False,4,1,0,22,0,0,0,0,0
+449191,Abduhamit Abdugheni,2026,ACLE,3176,False,5,1,0,22,0,0,0,0,0
 449191,Abduhamit Abdugheni,2025,CSL,3176,False,30,17,0,1058,0,0,3,0,6
 449191,Abduhamit Abdugheni,2025,CHSC,3176,False,1,1,0,90,0,0,0,0,1
-449191,Abduhamit Abdugheni,2025,CHFA,3176,False,3,2,0,180,0,0,2,0,0
+449191,Abduhamit Abdugheni,2025,CHFA,3176,False,4,2,0,180,0,0,2,0,0
 449191,Abduhamit Abdugheni,2024,CSL,4768,False,30,24,0,1746,0,0,8,0,3
 449191,Abduhamit Abdugheni,2024,CHFA,4768,False,1,1,0,90,0,0,0,0,0
 449191,Abduhamit Abdugheni,2023,CSL,4768,False,30,19,1,1012,0,2,6,0,2
@@ -6658,26 +6657,26 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 449191,Abduhamit Abdugheni,2017,CHFA,22219,False,4,0,0,0,0,0,0,0,0
 449191,Abduhamit Abdugheni,2016,CLO,36879,False,30,19,0,1621,4,2,0,0,5
 449191,Abduhamit Abdugheni,2016,CHFA,36879,False,1,0,0,0,0,0,0,0,0
-1130473,Shuangjie Fan,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+1130473,Shuangjie Fan,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 1130473,Shuangjie Fan,2025,CSL,3176,False,30,3,0,64,0,0,0,0,0
 1130473,Shuangjie Fan,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1130473,Shuangjie Fan,2025,CHFA,3176,False,3,2,0,131,0,0,0,0,0
+1130473,Shuangjie Fan,2025,CHFA,3176,False,4,2,0,131,0,0,0,0,0
 1130473,Shuangjie Fan,2025,ACL2,3176,False,6,4,0,217,0,0,0,0,1
 1130473,Shuangjie Fan,2024,CSL,3176,False,30,17,0,832,0,0,4,1,4
 1130473,Shuangjie Fan,2024,CHFA,3176,False,5,2,0,144,0,0,0,0,0
 1130473,Shuangjie Fan,2023,CSL,3176,False,13,1,0,13,0,0,0,0,0
 1130473,Shuangjie Fan,2023,CN44,93911,False,11,10,0,849,1,0,0,0,0
 1130473,Shuangjie Fan,2023,CHFA,3176,False,2,0,0,0,0,0,0,0,0
-1478505,Jiefu Deng,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
-1478505,Jiefu Deng,2026,ACLE,3176,False,4,3,0,143,0,0,1,0,0
+1478505,Jiefu Deng,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
+1478505,Jiefu Deng,2026,ACLE,3176,False,5,4,0,233,0,1,2,0,0
 1478505,Jiefu Deng,2025,FS,28420,True,8,5,0,371,0,0,0,0,0
 1478505,Jiefu Deng,2025,CSL,3176,False,30,22,0,908,1,0,5,3,0
 1478505,Jiefu Deng,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1478505,Jiefu Deng,2025,CHFA,3176,False,3,3,0,198,1,0,1,1,1
-492289,Yang Bai,2026,ACLE,3176,False,4,3,0,217,0,0,0,0,2
+1478505,Jiefu Deng,2025,CHFA,3176,False,4,3,0,198,1,0,1,1,1
+492289,Yang Bai,2026,ACLE,3176,False,5,4,0,262,0,0,0,0,2
 492289,Yang Bai,2025,CSL,3176,False,30,27,0,2163,0,1,8,2,0
 492289,Yang Bai,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-492289,Yang Bai,2025,CHFA,3176,False,3,3,0,252,0,0,2,0,0
+492289,Yang Bai,2025,CHFA,3176,False,4,4,0,342,0,0,2,0,0
 492289,Yang Bai,2025,ACL2,3176,False,6,5,0,366,1,0,1,1,1
 492289,Yang Bai,2024,CSL,3176,False,30,18,1,1327,0,1,6,0,3
 492289,Yang Bai,2024,CHFA,3176,False,5,3,0,136,0,0,0,0,0
@@ -6693,7 +6692,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 527717,Yupeng He,2026,ACLE,3176,False,4,0,4,0,0,0,0,0,0
 527717,Yupeng He,2025,CSL,3176,False,30,3,27,112,0,0,0,0,0
 527717,Yupeng He,2025,CHSC,3176,False,1,0,1,0,0,0,0,0,0
-527717,Yupeng He,2025,CHFA,3176,False,3,0,2,0,0,0,0,0,0
+527717,Yupeng He,2025,CHFA,3176,False,4,0,3,0,0,0,0,0,0
 527717,Yupeng He,2025,AG18,53844,True,6,0,6,0,0,0,0,0,0
 527717,Yupeng He,2025,ACL2,3176,False,6,3,0,255,0,1,2,0,1
 527717,Yupeng He,2024,CSL,3176,False,30,10,16,438,0,1,0,0,1
@@ -6745,10 +6744,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 839306,Wenhao Jiang,2020,AFCL,3176,False,6,5,0,234,1,0,1,1,0
 839306,Wenhao Jiang,2019,CHFA,3176,False,2,2,0,162,0,0,0,0,1
 839306,Wenhao Jiang,2019,AFCL,3176,False,1,0,0,0,0,0,0,0,0
-211060,Lei Li,2026,ACLE,3176,False,4,1,0,22,0,0,0,0,0
+211060,Lei Li,2026,ACLE,3176,False,5,2,0,67,0,0,0,0,0
 211060,Lei Li,2025,CSL,3176,False,30,16,3,530,0,1,2,0,2
 211060,Lei Li,2025,CHSC,3176,False,1,1,0,51,0,0,0,0,0
-211060,Lei Li,2025,CHFA,3176,False,3,1,0,87,0,0,0,0,0
+211060,Lei Li,2025,CHFA,3176,False,4,2,0,117,0,0,0,0,0
 211060,Lei Li,2025,ACL2,3176,False,6,3,0,91,0,0,1,1,0
 211060,Lei Li,2024,CSL,3176,False,30,16,0,697,1,0,3,1,1
 211060,Lei Li,2024,CHFA,3176,False,5,5,0,411,0,0,1,1,0
@@ -6802,10 +6801,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 211060,Lei Li,2010,CSL,17238,False,30,12,0,278,1,0,0,0,1
 211060,Lei Li,2010,CHFA,17238,False,3,2,0,180,0,0,0,0,0
 211060,Lei Li,2009,CSL,17238,False,30,20,0,952,2,0,0,0,5
-61353,Gang Wang,2026,ACLE,3176,False,4,4,0,314,1,0,2,1,1
+61353,Gang Wang,2026,ACLE,3176,False,5,5,0,404,1,0,2,1,1
 61353,Gang Wang,2025,CSL,3176,False,30,24,0,1689,0,2,10,4,2
 61353,Gang Wang,2025,CHSC,3176,False,1,1,0,45,0,0,0,0,1
-61353,Gang Wang,2025,CHFA,3176,False,3,2,0,135,0,0,0,0,0
+61353,Gang Wang,2025,CHFA,3176,False,4,3,0,162,0,0,0,0,0
 61353,Gang Wang,2025,ACL2,3176,False,6,2,0,180,0,0,2,0,1
 61353,Gang Wang,2024,CSL,3176,False,30,24,1,1777,0,1,5,1,6
 61353,Gang Wang,2024,CHFA,3176,False,5,5,0,365,1,0,2,2,0
@@ -6879,16 +6878,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1520566,Hanqi Lin,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1520566,Hanqi Lin,2025,CSL,3176,False,30,0,0,0,0,0,0,0,0
 1520566,Hanqi Lin,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1520566,Hanqi Lin,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
+1520566,Hanqi Lin,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
 1569203,Zixiang Luo,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1569203,Zixiang Luo,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-1569203,Zixiang Luo,2025,CHFA,3176,False,2,0,0,0,0,0,0,0,0
+1569203,Zixiang Luo,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
 329013,Serginho,2026,FS,5598,True,6,0,0,0,0,0,0,0,0
 329013,Serginho,2026,ACLE,3176,False,4,4,0,171,0,0,5,0,1
 329013,Serginho,2025,FS,5598,True,4,2,0,152,1,0,6,2,0
 329013,Serginho,2025,CSL,3176,False,30,27,0,2217,6,8,50,18,1
 329013,Serginho,2025,CHSC,3176,False,1,1,0,90,0,0,1,0,0
-329013,Serginho,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
+329013,Serginho,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
 329013,Serginho,2025,ACL2,3176,False,6,4,0,189,3,0,9,4,0
 329013,Serginho,2024,EAFC,5598,True,3,3,0,119,0,0,3,1,0
 329013,Serginho,2024,CSL,3176,False,30,27,2,1803,7,5,34,13,0
@@ -6941,11 +6940,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 329013,Serginho,2013,BRA1,221,False,38,5,0,162,0,0,0,0,0
 329013,Serginho,2013,BCPF,221,False,4,0,0,0,0,0,0,0,0
 329013,Serginho,2013,BCP1,221,False,15,1,0,15,0,0,0,0,0
-649017,Boubacar Konté,2026,ACLE,3176,False,4,3,0,270,0,0,2,1,1
+649017,Boubacar Konté,2026,ACLE,3176,False,5,4,0,360,0,0,2,1,2
 649017,Boubacar Konté,2025,ECLQ,32017,False,4,4,0,360,0,1,0,0,1
 649017,Boubacar Konté,2025,CSL,3176,False,30,26,0,2338,0,1,22,4,4
 649017,Boubacar Konté,2025,CHSC,3176,False,1,1,0,31,0,0,0,0,0
-649017,Boubacar Konté,2025,CHFA,3176,False,3,1,0,90,0,0,0,0,1
+649017,Boubacar Konté,2025,CHFA,3176,False,4,2,0,180,0,0,0,0,1
 649017,Boubacar Konté,2024,GESC,32017,False,2,2,0,180,0,1,0,0,1
 649017,Boubacar Konté,2024,GEP1,32017,False,4,4,0,374,1,0,0,0,1
 649017,Boubacar Konté,2024,GE1N,32017,False,36,35,0,2976,8,2,0,0,7
@@ -6970,7 +6969,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 649017,Boubacar Konté,2018,NO1,10217,False,20,1,0,6,0,0,0,0,0
 649017,Boubacar Konté,2018,20WC,32441,True,5,5,0,226,2,0,4,3,0
 649017,Boubacar Konté,2018,20AC,32441,True,5,4,0,136,0,0,0,0,0
-147359,Jeremy Dudziak,2026,U19Q,5710,True,3,0,0,0,0,0,0,0,0
+147359,Jeremy Dudziak,2026,U19Q,5710,True,6,0,0,0,0,0,0,0,0
 147359,Jeremy Dudziak,2026,FS,5710,True,3,0,0,0,0,0,0,0,0
 147359,Jeremy Dudziak,2026,ACLE,3176,False,4,4,0,271,2,1,4,2,0
 147359,Jeremy Dudziak,2025,U19Q,5710,True,6,0,0,0,0,0,0,0,0
@@ -6979,7 +6978,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147359,Jeremy Dudziak,2025,FS,5710,True,6,0,0,0,0,0,0,0,0
 147359,Jeremy Dudziak,2025,DFB,44,False,3,1,0,21,0,0,0,0,0
 147359,Jeremy Dudziak,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-147359,Jeremy Dudziak,2025,CHFA,3176,False,1,0,0,0,0,0,0,0,0
+147359,Jeremy Dudziak,2025,CHFA,3176,False,2,0,0,0,0,0,0,0,0
 147359,Jeremy Dudziak,2025,19EU,5710,True,5,0,0,0,0,0,0,0,0
 147359,Jeremy Dudziak,2024,U19Q,5710,True,6,0,6,0,0,0,0,0,0
 147359,Jeremy Dudziak,2024,L2,44,False,34,2,29,112,0,0,1,0,1
@@ -7059,10 +7058,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147359,Jeremy Dudziak,2010,BJ2,21055,False,26,19,0,1067,2,0,0,0,1
 147359,Jeremy Dudziak,2009,FS,27300,True,1,1,0,49,0,0,0,0,0
 147359,Jeremy Dudziak,2009,BJ2,21055,False,8,8,0,550,3,0,0,0,1
-539224,Dawhan,2026,ACLE,3176,False,4,4,0,360,2,0,4,2,0
+539224,Dawhan,2026,ACLE,3176,False,5,5,0,450,2,0,5,2,1
 539224,Dawhan,2025,CSL,3176,False,30,19,5,1655,4,2,24,11,1
 539224,Dawhan,2025,CHSC,3176,False,1,1,0,59,1,0,1,1,0
-539224,Dawhan,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
+539224,Dawhan,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
 539224,Dawhan,2025,ACL2,3176,False,6,3,0,270,0,1,3,0,0
 539224,Dawhan,2024,CSL,3176,False,30,26,2,2183,1,6,17,6,2
 539224,Dawhan,2024,CHFA,3176,False,5,4,0,375,1,0,0,0,1
@@ -7098,10 +7097,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 539224,Dawhan,2016,BRC,18545,False,1,0,0,0,0,0,0,0,0
 539224,Dawhan,2016,BRAL,18545,False,19,14,0,1155,0,0,0,0,4
 539224,Dawhan,2016,BRA3,18545,False,24,22,0,1954,2,0,0,0,9
-150163,Xizhe Zhang,2026,ACLE,3176,False,4,4,0,257,1,2,2,1,0
+150163,Xizhe Zhang,2026,ACLE,3176,False,5,5,0,302,1,3,2,1,0
 150163,Xizhe Zhang,2025,CSL,3176,False,30,27,0,1333,7,3,22,10,3
 150163,Xizhe Zhang,2025,CHSC,3176,False,1,1,0,31,0,0,1,0,0
-150163,Xizhe Zhang,2025,CHFA,3176,False,3,2,0,180,0,2,4,1,0
+150163,Xizhe Zhang,2025,CHFA,3176,False,4,3,0,249,0,2,4,1,0
 150163,Xizhe Zhang,2025,ACL2,3176,False,6,4,0,287,0,1,6,1,0
 150163,Xizhe Zhang,2024,CSL,3176,False,30,17,3,393,4,4,13,7,1
 150163,Xizhe Zhang,2024,CHFA,3176,False,5,4,0,192,2,1,1,1,0
@@ -7170,10 +7169,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 150163,Xizhe Zhang,2009,SIN1,28520,False,19,5,0,394,2,0,0,0,1
 150163,Xizhe Zhang,2009,CSL,3176,False,19,8,0,589,2,0,0,0,1
 150163,Xizhe Zhang,2008,CSL,3176,False,2,1,0,11,0,0,0,0,0
-911064,Yu Wang,2026,ACLE,3176,False,4,1,0,8,0,0,0,0,1
+911064,Yu Wang,2026,ACLE,3176,False,5,2,0,27,0,0,0,0,1
 911064,Yu Wang,2025,CSL,3176,False,30,5,0,143,0,0,0,0,2
 911064,Yu Wang,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-911064,Yu Wang,2025,CHFA,3176,False,3,3,0,103,0,0,1,0,1
+911064,Yu Wang,2025,CHFA,3176,False,4,4,0,163,0,0,1,0,1
 911064,Yu Wang,2024,CSL,4768,False,30,15,0,521,0,0,6,1,2
 911064,Yu Wang,2024,CHFA,4768,False,1,0,0,0,0,0,0,0,0
 911064,Yu Wang,2023,CSL,4768,False,30,18,1,1423,0,0,9,0,7
@@ -7189,7 +7188,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 824089,Feifan Jia,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 824089,Feifan Jia,2025,CSL,3176,False,30,10,0,246,0,1,1,0,2
 824089,Feifan Jia,2025,CHSC,3176,False,1,1,0,39,0,0,0,0,0
-824089,Feifan Jia,2025,CHFA,3176,False,3,3,0,111,1,0,0,0,0
+824089,Feifan Jia,2025,CHFA,3176,False,4,4,0,171,1,0,1,0,0
 824089,Feifan Jia,2024,CSL,8536,False,30,11,0,464,1,0,5,2,3
 824089,Feifan Jia,2024,CHFA,8536,False,3,3,0,139,0,0,0,0,1
 824089,Feifan Jia,2024,ACLE,3182,False,4,0,4,0,0,0,0,0,0
@@ -7214,19 +7213,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 824089,Feifan Jia,2020,CH3R,7689,True,7,3,0,107,0,0,0,0,0
 824089,Feifan Jia,2019,CL3S,36654,False,10,3,0,100,0,0,0,0,0
 824089,Feifan Jia,2019,CL3P,36654,False,3,0,0,0,0,0,0,0,0
-1251747,Jia'ao Wei,2025,CSL,3176,False,10,1,0,8,0,0,0,0,0
-1251747,Jia'ao Wei,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1251747,Jia'ao Wei,2025,CHL3,27839,False,9,8,0,452,0,0,0,0,0
-1251747,Jia'ao Wei,2025,CH3R,27839,False,8,7,0,541,0,0,0,0,0
-1251747,Jia'ao Wei,2025,ACL2,3176,False,6,1,0,29,0,0,0,0,0
-1251747,Jia'ao Wei,2024,CSL,3176,False,15,0,0,0,0,0,0,0,0
-1251747,Jia'ao Wei,2024,CHFA,3176,False,3,0,0,0,0,0,0,0,0
-1251747,Jia'ao Wei,2023,CN44,93911,False,13,9,0,314,0,0,0,0,1
-1251747,Jia'ao Wei,2023,CN43,93911,False,6,2,0,148,0,0,0,0,0
-252282,Zhongguo Chi,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+252282,Zhongguo Chi,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 252282,Zhongguo Chi,2025,CSL,3176,False,30,12,0,158,0,0,3,0,1
 252282,Zhongguo Chi,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-252282,Zhongguo Chi,2025,CHFA,3176,False,3,2,0,173,0,0,0,0,0
+252282,Zhongguo Chi,2025,CHFA,3176,False,4,2,0,173,0,0,0,0,0
 252282,Zhongguo Chi,2025,ACL2,3176,False,6,3,0,231,1,0,2,2,0
 252282,Zhongguo Chi,2024,CSL,3176,False,30,10,0,520,0,0,6,3,1
 252282,Zhongguo Chi,2024,CHFA,3176,False,5,4,0,364,0,0,3,1,0
@@ -7266,28 +7256,37 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 252282,Zhongguo Chi,2013,CLO,8539,False,19,19,0,1710,4,3,0,0,1
 252282,Zhongguo Chi,2013,CHFA,8539,False,3,1,0,90,0,0,0,0,0
 252282,Zhongguo Chi,2010,CHFA,8539,False,1,1,0,90,0,0,0,0,0
+1251747,Jia'ao Wei,2025,CSL,3176,False,10,1,0,8,0,0,0,0,0
+1251747,Jia'ao Wei,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
+1251747,Jia'ao Wei,2025,CHL3,27839,False,9,8,0,452,0,0,0,0,0
+1251747,Jia'ao Wei,2025,CH3R,27839,False,8,7,0,541,0,0,0,0,0
+1251747,Jia'ao Wei,2025,ACL2,3176,False,6,1,0,29,0,0,0,0,0
+1251747,Jia'ao Wei,2024,CSL,3176,False,15,0,0,0,0,0,0,0,0
+1251747,Jia'ao Wei,2024,CHFA,3176,False,3,0,0,0,0,0,0,0,0
+1251747,Jia'ao Wei,2023,CN44,93911,False,13,9,0,314,0,0,0,0,1
+1251747,Jia'ao Wei,2023,CN43,93911,False,6,2,0,148,0,0,0,0,0
 1520568,Size Wang,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1520568,Size Wang,2025,CSL,3176,False,30,0,0,0,0,0,0,0,0
 1520568,Size Wang,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1520568,Size Wang,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
-1520565,Xi Cheng,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+1520568,Size Wang,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
+1520565,Xi Cheng,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 1520565,Xi Cheng,2025,CSL,3176,False,30,3,0,12,0,0,0,0,0
 1520565,Xi Cheng,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1520565,Xi Cheng,2025,CHFA,3176,False,3,2,0,23,0,0,0,0,0
-1569202,Xiaoyu Xia,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+1520565,Xi Cheng,2025,CHFA,3176,False,4,3,0,53,0,0,0,0,0
+1569202,Xiaoyu Xia,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 1569202,Xiaoyu Xia,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
 1569202,Xiaoyu Xia,2025,CN43,93911,False,10,0,0,0,0,0,0,0,0
-1569202,Xiaoyu Xia,2025,CHFA,3176,False,2,1,0,19,0,0,0,0,0
-1484728,Haoran Zhang,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+1569202,Xiaoyu Xia,2025,CHFA,3176,False,3,2,0,40,0,0,0,0,0
+1484728,Haoran Zhang,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 1484728,Haoran Zhang,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-1484728,Haoran Zhang,2025,CHFA,3176,False,2,1,0,4,0,0,0,0,0
+1484728,Haoran Zhang,2025,CHFA,3176,False,3,1,0,4,0,0,0,0,0
 1484728,Haoran Zhang,2024,CN44,93911,False,4,4,0,360,0,0,0,0,1
 1569204,Junze Liu,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1569204,Junze Liu,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-1569204,Junze Liu,2025,CHFA,3176,False,2,0,0,0,0,0,0,0,0
+1569204,Junze Liu,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
 1569205,Kangyue Chen,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1569205,Kangyue Chen,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-1569205,Kangyue Chen,2025,CHFA,3176,False,2,0,0,0,0,0,0,0,0
+1569205,Kangyue Chen,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
 435208,Béni Nkololo,2026,ACLE,3176,False,4,4,0,339,0,0,7,1,0
 435208,Béni Nkololo,2025,ROMS,7769,False,1,0,0,0,0,0,0,0,0
 435208,Béni Nkololo,2025,RO1,7769,False,7,5,0,215,0,1,8,0,1
@@ -7297,7 +7296,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 435208,Béni Nkololo,2025,ECLQ,7769,False,2,2,0,119,0,1,0,0,0
 435208,Béni Nkololo,2025,CSL,3176,False,30,9,9,682,0,2,18,2,3
 435208,Béni Nkololo,2025,CHSC,3176,False,1,1,0,90,0,1,1,1,0
-435208,Béni Nkololo,2025,CHFA,3176,False,3,0,1,0,0,0,0,0,0
+435208,Béni Nkololo,2025,CHFA,3176,False,4,0,1,0,0,0,0,0,0
 435208,Béni Nkololo,2024,ROMP,7769,False,6,4,0,347,2,0,3,2,2
 435208,Béni Nkololo,2024,RO1C,7769,False,10,9,0,339,1,1,8,2,1
 435208,Béni Nkololo,2024,RO1,7769,False,30,20,0,1109,2,6,25,6,1
@@ -7332,7 +7331,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 292398,Fabio Abreu,2026,ACLE,3176,False,4,2,2,38,1,0,2,1,0
 292398,Fabio Abreu,2025,CSL,3176,False,30,23,3,1835,11,6,68,34,3
 292398,Fabio Abreu,2025,CHSC,3176,False,1,1,0,90,0,0,3,1,0
-292398,Fabio Abreu,2025,CHFA,3176,False,3,1,1,83,0,0,0,0,0
+292398,Fabio Abreu,2025,CHFA,3176,False,4,1,2,83,0,0,0,0,0
 292398,Fabio Abreu,2025,ACL2,3176,False,6,5,0,278,1,0,9,3,0
 292398,Fabio Abreu,2024,CSL,3176,False,30,30,0,2606,28,7,106,54,2
 292398,Fabio Abreu,2024,CHFA,3176,False,5,4,0,298,4,0,9,6,0
@@ -7373,7 +7372,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 264429,Yuning Zhang,2025,FS,5598,True,4,4,0,274,2,1,8,4,1
 264429,Yuning Zhang,2025,CSL,3176,False,30,29,0,2300,15,7,87,35,2
 264429,Yuning Zhang,2025,CHSC,3176,False,1,1,0,59,0,0,1,1,1
-264429,Yuning Zhang,2025,CHFA,3176,False,3,3,0,183,2,0,6,2,0
+264429,Yuning Zhang,2025,CHFA,3176,False,4,4,0,252,2,0,7,2,1
 264429,Yuning Zhang,2025,AG18,53844,True,6,6,0,427,2,1,0,0,1
 264429,Yuning Zhang,2025,ACL2,3176,False,6,4,1,216,1,0,11,4,1
 264429,Yuning Zhang,2024,EAFC,5598,True,3,3,0,243,0,1,8,1,0
@@ -7441,11 +7440,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 264429,Yuning Zhang,2014,FS,41743,True,1,1,0,26,1,0,0,0,0
 264429,Yuning Zhang,2014,CSL,17276,False,16,0,0,0,0,0,0,0,0
 264429,Yuning Zhang,2014,CHFA,17276,False,1,1,0,90,1,0,0,0,0
-247459,Chadrac Akolo,2026,ACLE,3176,False,4,4,0,223,2,0,9,4,0
+247459,Chadrac Akolo,2026,ACLE,3176,False,5,5,0,313,3,0,16,6,0
 247459,Chadrac Akolo,2025,VPO1,13950,False,3,1,0,70,1,1,0,0,0
 247459,Chadrac Akolo,2025,VIE1,13950,False,20,11,6,660,4,0,0,0,0
 247459,Chadrac Akolo,2025,CSL,3176,False,12,0,0,0,0,0,0,0,0
-247459,Chadrac Akolo,2025,CHFA,3176,False,1,0,0,0,0,0,0,0,0
+247459,Chadrac Akolo,2025,CHFA,3176,False,2,0,0,0,0,0,0,0,0
 247459,Chadrac Akolo,2025,ASCC,13950,False,6,2,0,117,0,0,0,0,0
 247459,Chadrac Akolo,2025,ACL2,13950,False,4,0,0,0,0,0,0,0,0
 247459,Chadrac Akolo,2024,UCOL,257,False,6,6,0,302,0,0,9,3,1
@@ -7506,11 +7505,11 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 247459,Chadrac Akolo,2012,CH18,14211,False,24,20,0,1613,19,0,0,0,1
 247459,Chadrac Akolo,2011,CH18,14211,False,12,11,0,929,11,0,0,0,0
 359385,Liangming Lin,2026,FS,5598,True,6,2,0,135,0,1,0,0,0
-359385,Liangming Lin,2026,ACLE,3176,False,4,2,0,54,0,1,1,1,0
+359385,Liangming Lin,2026,ACLE,3176,False,5,3,0,55,0,1,1,1,0
 359385,Liangming Lin,2025,FS,5598,True,4,4,0,178,0,0,6,1,0
 359385,Liangming Lin,2025,CSL,3176,False,30,21,0,1296,5,1,30,14,2
 359385,Liangming Lin,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-359385,Liangming Lin,2025,CHFA,3176,False,3,2,0,161,2,0,0,0,0
+359385,Liangming Lin,2025,CHFA,3176,False,4,3,0,182,2,0,1,0,0
 359385,Liangming Lin,2025,ACL2,3176,False,6,5,0,249,1,0,6,2,0
 359385,Liangming Lin,2024,EAFC,5598,True,3,0,0,0,0,0,0,0,0
 359385,Liangming Lin,2024,CSL,3176,False,30,25,0,1765,6,3,36,20,0
@@ -7550,10 +7549,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 359385,Liangming Lin,2015,19YL,41596,False,6,2,0,26,0,0,0,0,1
 359385,Liangming Lin,2014,FS,41743,True,1,1,0,90,1,0,0,0,0
 359385,Liangming Lin,2011,FS,47233,True,1,1,0,80,1,0,0,0,0
-316120,Yongjing Cao,2026,ACLE,3176,False,4,1,0,13,0,0,0,0,0
+316120,Yongjing Cao,2026,ACLE,3176,False,5,2,0,58,0,0,1,1,0
 316120,Yongjing Cao,2025,CSL,3176,False,30,27,0,1446,3,4,32,10,4
 316120,Yongjing Cao,2025,CHSC,3176,False,1,1,0,13,1,0,2,2,0
-316120,Yongjing Cao,2025,CHFA,3176,False,3,3,0,225,1,1,7,1,0
+316120,Yongjing Cao,2025,CHFA,3176,False,4,4,0,294,1,1,13,1,0
 316120,Yongjing Cao,2025,AG18,53844,True,6,0,0,0,0,0,0,0,0
 316120,Yongjing Cao,2025,ACL2,3176,False,6,5,0,237,0,0,1,1,1
 316120,Yongjing Cao,2024,EAFC,5598,True,3,0,0,0,0,0,0,0,0
@@ -7592,7 +7591,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 439771,Liyu Yang,2026,ACLE,3176,False,4,2,0,62,0,0,0,0,0
 439771,Liyu Yang,2025,CSL,3176,False,30,10,0,481,0,0,8,1,0
 439771,Liyu Yang,2025,CHSC,3176,False,1,1,0,77,0,0,0,0,1
-439771,Liyu Yang,2025,CHFA,3176,False,3,2,0,176,0,0,3,1,0
+439771,Liyu Yang,2025,CHFA,3176,False,4,2,0,176,0,0,3,1,0
 439771,Liyu Yang,2025,ACL2,3176,False,6,4,0,199,0,2,1,0,0
 439771,Liyu Yang,2024,CSL,3176,False,30,16,0,510,1,4,9,3,1
 439771,Liyu Yang,2024,CHFA,3176,False,5,3,0,136,0,0,2,1,0
@@ -7640,10 +7639,10 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1520567,Mingyang Ma,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
 1520567,Mingyang Ma,2025,CSL,3176,False,30,0,0,0,0,0,0,0,0
 1520567,Mingyang Ma,2025,CHSC,3176,False,1,0,0,0,0,0,0,0,0
-1520567,Mingyang Ma,2025,CHFA,3176,False,3,0,0,0,0,0,0,0,0
-1484730,Zicheng Jiang,2026,ACLE,3176,False,4,0,0,0,0,0,0,0,0
+1520567,Mingyang Ma,2025,CHFA,3176,False,4,0,0,0,0,0,0,0,0
+1484730,Zicheng Jiang,2026,ACLE,3176,False,5,0,0,0,0,0,0,0,0
 1484730,Zicheng Jiang,2025,CSL,3176,False,12,3,0,49,0,0,0,0,0
-1484730,Zicheng Jiang,2025,CHFA,3176,False,2,2,0,7,0,1,0,0,0
+1484730,Zicheng Jiang,2025,CHFA,3176,False,3,3,0,28,0,1,0,0,0
 1484730,Zicheng Jiang,2024,CN44,93911,False,4,4,0,360,1,0,0,0,0
 945679,Jiabao Ji,2025,CSL,51120,False,30,6,0,540,0,0,0,0,0
 945679,Jiabao Ji,2025,CHFA,51120,False,2,0,0,0,0,0,0,0,0
@@ -7770,6 +7769,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 316027,Ruibao Hu,2016,DK2,443,False,14,0,0,0,0,0,0,0,0
 316027,Ruibao Hu,2015,CSL,10948,False,13,0,0,0,0,0,0,0,0
 316027,Ruibao Hu,2015,CHFA,10948,False,5,0,0,0,0,0,0,0,0
+1238766,Zhijian Xuan,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1238766,Zhijian Xuan,2025,FS,36037,True,2,0,0,0,0,0,0,0,0
 1238766,Zhijian Xuan,2025,FS,35185,True,6,3,0,123,0,0,0,0,0
 1238766,Zhijian Xuan,2025,FS,28420,True,8,0,0,0,0,0,0,0,0
@@ -7826,7 +7826,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 943400,Yifan Tian,2021,CN41,99343,False,5,0,0,0,0,0,0,0,0
 839279,Yujie Zhang,2025,CSL,51120,False,18,1,0,24,0,0,0,0,0
 839279,Yujie Zhang,2025,CLO,45500,False,16,10,0,654,0,0,2,0,0
-839279,Yujie Zhang,2025,CL1P,45500,False,1,0,0,0,0,0,0,0,0
+839279,Yujie Zhang,2025,CL1P,45500,False,2,0,0,0,0,0,0,0,0
 839279,Yujie Zhang,2025,CHFA,51120,False,1,0,0,0,0,0,0,0,0
 839279,Yujie Zhang,2024,CSL,51120,False,30,12,0,781,2,1,5,2,3
 839279,Yujie Zhang,2024,CHFA,51120,False,1,0,0,0,0,0,0,0,0
@@ -8348,7 +8348,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 302080,Xiaobin Zhang,2013,CHFA,22219,False,7,1,0,9,0,0,0,0,0
 1012800,Jiajin Hu,2025,CSL,51120,False,15,0,0,0,0,0,0,0,0
 1012800,Jiajin Hu,2025,CLO,45500,False,19,15,0,883,0,1,8,1,4
-1012800,Jiajin Hu,2025,CL1P,45500,False,1,0,0,0,0,0,0,0,0
+1012800,Jiajin Hu,2025,CL1P,45500,False,2,1,0,45,0,0,0,0,0
 1012800,Jiajin Hu,2025,CHFA,51120,False,1,0,0,0,0,0,0,0,0
 1012800,Jiajin Hu,2024,FS,28420,True,2,1,0,45,0,0,0,0,0
 1012800,Jiajin Hu,2024,CLO,71180,False,30,28,0,2002,2,1,30,12,1
@@ -8770,7 +8770,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1012737,Yiran He,2026,FS,35185,True,1,0,0,0,0,0,0,0,0
 1012737,Yiran He,2025,FS,36037,True,2,2,0,180,0,0,1,0,0
 1012737,Yiran He,2025,FS,35185,True,8,6,0,457,0,0,0,0,1
-1012737,Yiran He,2025,CSL,65791,False,30,30,0,2159,2,1,11,6,2
+1012737,Yiran He,2025,CSL,65791,False,30,30,0,2160,2,1,11,6,2
 1012737,Yiran He,2025,CHFA,65791,False,2,2,0,83,0,1,0,0,0
 1012737,Yiran He,2025,AG18,53844,True,6,4,0,360,0,0,0,0,2
 1012737,Yiran He,2025,ACLE,65791,False,1,0,0,0,0,0,0,0,0
@@ -8787,7 +8787,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1012737,Yiran He,2022,CHFA,4768,False,2,1,0,90,0,0,0,0,0
 1012737,Yiran He,2021,CSL,4768,False,33,11,0,663,0,1,0,0,1
 1012737,Yiran He,2021,CHFA,4768,False,1,1,0,90,0,0,0,0,0
-448475,Dongsheng Wang,2025,CSL,65791,False,30,18,0,581,0,2,2,0,0
+448475,Dongsheng Wang,2025,CSL,65791,False,30,18,0,580,0,2,2,0,0
 448475,Dongsheng Wang,2025,CHFA,65791,False,2,2,0,139,0,0,0,0,0
 448475,Dongsheng Wang,2025,ACLE,65791,False,8,3,0,262,0,0,0,0,1
 448475,Dongsheng Wang,2025,ACEQ,65791,False,1,1,0,4,0,0,0,0,0
@@ -9628,6 +9628,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1382253,Weihao Shuai,2025,CH3R,125740,False,7,5,0,437,1,0,0,0,2
 1382253,Weihao Shuai,2025,A169,26944,True,5,5,0,310,9,0,0,0,0
 1382253,Weihao Shuai,2025,A168,26944,True,6,6,0,454,1,1,19,5,0
+1382253,Weihao Shuai,2025,17WC,26944,True,2,2,0,59,0,0,3,0,0
 1382253,Weihao Shuai,2025,17GC,26944,True,4,0,0,0,0,0,0,0,0
 1382253,Weihao Shuai,2024,FS,47233,True,3,3,0,171,2,0,0,0,1
 1382253,Weihao Shuai,2024,CL3S,125740,False,22,16,0,828,3,0,0,0,0
@@ -10693,7 +10694,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 325655,Zilong Han,2014,CHL3,43433,False,14,6,0,540,1,0,0,0,1
 325655,Zilong Han,2014,CHFA,43433,False,2,1,0,90,1,0,0,0,0
 1299725,Bunyamin Abdusalam,2026,FS,5598,True,6,6,0,284,0,0,4,0,0
-1299725,Bunyamin Abdusalam,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1299725,Bunyamin Abdusalam,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1299725,Bunyamin Abdusalam,2025,FS,39966,True,4,0,0,0,0,0,0,0,0
 1299725,Bunyamin Abdusalam,2025,FS,28420,True,3,2,0,49,0,0,0,0,0
 1299725,Bunyamin Abdusalam,2025,CSL,93753,False,30,21,0,1083,5,4,21,12,0
@@ -10942,7 +10943,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1478507,Mingyu Wu,2025,CLO,45500,False,11,1,0,9,0,0,0,0,0
 1478507,Mingyu Wu,2025,CHFA,45500,False,1,1,0,45,0,0,0,0,0
 1273354,Hongfu Zhang,2025,FS,39966,True,4,0,0,0,0,0,0,0,0
-1273354,Hongfu Zhang,2025,CSL,50973,False,30,12,0,868,1,0,6,2,2
+1273354,Hongfu Zhang,2025,CSL,50973,False,30,12,1,868,1,0,6,2,2
 1273354,Hongfu Zhang,2025,CHFA,50973,False,1,1,0,10,0,0,0,0,0
 1273354,Hongfu Zhang,2024,FS,47233,True,3,0,0,0,0,0,0,0,0
 1273354,Hongfu Zhang,2024,FS,39966,True,4,0,0,0,0,0,0,0,0
@@ -11751,7 +11752,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 156506,Pengxiang Jin,2011,CHFA,33304,False,3,1,0,90,0,0,0,0,0
 156506,Pengxiang Jin,2010,CSL,17276,False,20,19,0,1451,0,0,0,0,3
 156506,Pengxiang Jin,2010,CHFA,17276,False,1,1,0,90,0,0,0,0,0
-1282889,Ruijie Yue,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1282889,Ruijie Yue,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1282889,Ruijie Yue,2025,FS,28420,True,8,5,0,388,0,0,0,0,0
 1282889,Ruijie Yue,2025,CSL,99249,False,30,12,0,851,0,0,0,0,0
 1282889,Ruijie Yue,2025,CHFA,99249,False,3,2,0,135,0,0,0,0,0
@@ -11938,16 +11939,6 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 311489,Landry Dimata,2014,FS,16337,True,2,2,0,150,2,0,0,0,0
 311489,Landry Dimata,2013,U17Q,23219,True,3,2,0,53,1,0,0,0,0
 311489,Landry Dimata,2013,FS,23219,True,3,2,0,160,0,0,0,0,0
-1299726,Jiale Liu,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
-1299726,Jiale Liu,2025,FS,39966,True,4,0,0,0,0,0,0,0,0
-1299726,Jiale Liu,2025,FS,28420,True,8,3,0,136,0,0,0,0,0
-1299726,Jiale Liu,2025,CSL,99249,False,30,8,0,243,0,0,2,0,0
-1299726,Jiale Liu,2025,CHFA,99249,False,3,2,0,148,0,0,0,0,1
-1299726,Jiale Liu,2024,FS,47233,True,3,3,0,168,0,1,0,0,0
-1299726,Jiale Liu,2024,FS,39966,True,4,0,0,0,0,0,0,0,0
-1299726,Jiale Liu,2024,AF15,39966,True,3,0,0,0,0,0,0,0,0
-1299726,Jiale Liu,2024,A168,26944,True,3,3,0,260,0,0,5,1,0
-1299726,Jiale Liu,2022,AF15,39966,True,6,6,0,370,3,0,0,0,0
 687846,Alexandru Cîmpanu,2025,ROMP,8818,False,4,3,0,191,1,0,0,0,0
 687846,Alexandru Cîmpanu,2025,RO1,8818,False,28,16,1,751,4,4,16,9,4
 687846,Alexandru Cîmpanu,2025,CSL,99249,False,30,28,0,1965,7,7,64,25,1
@@ -11987,6 +11978,16 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 687846,Alexandru Cîmpanu,2019,RO1C,8818,False,10,7,0,242,0,0,0,0,1
 687846,Alexandru Cîmpanu,2019,RO1,8818,False,26,10,0,161,2,0,0,0,1
 687846,Alexandru Cîmpanu,2018,ROMP,37245,False,1,0,0,0,0,0,0,0,0
+1299726,Jiale Liu,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
+1299726,Jiale Liu,2025,FS,39966,True,4,0,0,0,0,0,0,0,0
+1299726,Jiale Liu,2025,FS,28420,True,8,3,0,136,0,0,0,0,0
+1299726,Jiale Liu,2025,CSL,99249,False,30,8,0,243,0,0,2,0,0
+1299726,Jiale Liu,2025,CHFA,99249,False,3,2,0,148,0,0,0,0,1
+1299726,Jiale Liu,2024,FS,47233,True,3,3,0,168,0,1,0,0,0
+1299726,Jiale Liu,2024,FS,39966,True,4,0,0,0,0,0,0,0,0
+1299726,Jiale Liu,2024,AF15,39966,True,3,0,0,0,0,0,0,0,0
+1299726,Jiale Liu,2024,A168,26944,True,3,3,0,260,0,0,5,1,0
+1299726,Jiale Liu,2022,AF15,39966,True,6,6,0,370,3,0,0,0,0
 1012801,Yuezheng Du,2026,FS,5598,True,4,1,0,17,0,0,1,0,0
 1012801,Yuezheng Du,2025,FS,35185,True,7,3,0,88,1,0,0,0,0
 1012801,Yuezheng Du,2025,E3G2,12361,False,22,9,0,148,2,0,0,0,1
@@ -12657,45 +12658,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1028333,Zihao Xia,2022,CHFA,70657,False,1,0,0,0,0,0,0,0,0
 1028333,Zihao Xia,2021,CHL3,73392,False,10,5,0,376,0,0,0,0,1
 1028333,Zihao Xia,2021,CH3R,73392,False,5,2,0,49,0,0,0,0,0
-1281972,Zhengpeng Xu,2026,FS,26944,True,4,3,0,218,0,2,1,1,0
-1281972,Zhengpeng Xu,2025,FS,47233,True,3,3,0,225,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,FS,26944,True,5,2,0,115,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,CSL,70657,False,15,0,0,0,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,CL3S,125741,False,11,5,0,358,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,CHFA,70657,False,2,0,0,0,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,CH3R,125741,False,7,5,0,107,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,A169,26944,True,5,4,0,291,0,0,0,0,0
-1281972,Zhengpeng Xu,2025,A168,26944,True,6,5,0,115,0,0,1,1,0
-1281972,Zhengpeng Xu,2025,17GC,26944,True,4,0,0,0,0,0,0,0,0
-1281972,Zhengpeng Xu,2024,FS,47233,True,7,6,0,391,0,0,1,1,1
-1281972,Zhengpeng Xu,2024,FS,39966,True,1,1,0,80,0,0,0,0,0
-608430,Kilian Bevis,2025,SERP,4645,False,1,1,0,90,1,0,0,0,0
-608430,Kilian Bevis,2025,SER1,4645,False,21,19,1,1648,4,7,51,17,4
-608430,Kilian Bevis,2025,ECLQ,4645,False,2,2,0,85,0,0,0,0,0
-608430,Kilian Bevis,2025,CSL,70657,False,30,25,0,1980,7,6,49,19,3
-608430,Kilian Bevis,2025,CHFA,70657,False,2,1,0,49,0,0,0,0,0
-608430,Kilian Bevis,2024,SR1C,4645,False,7,7,0,381,1,1,12,4,0
-608430,Kilian Bevis,2024,SERP,4645,False,2,2,0,160,0,0,0,0,0
-608430,Kilian Bevis,2024,SER1,4645,False,30,29,1,2337,6,7,65,30,4
-608430,Kilian Bevis,2024,GOCU,19755,True,3,1,0,59,0,0,1,0,0
-608430,Kilian Bevis,2024,GCQU,19755,True,2,2,0,80,0,1,1,1,0
-608430,Kilian Bevis,2024,ECLQ,4645,False,2,2,0,157,0,1,0,0,1
-608430,Kilian Bevis,2024,CNNF,19755,True,2,0,0,0,0,0,0,0,0
-608430,Kilian Bevis,2024,CNLA,19755,True,4,3,0,145,0,0,0,0,0
-608430,Kilian Bevis,2023,SR1C,4645,False,7,7,0,428,0,3,7,1,0
-608430,Kilian Bevis,2023,SERP,4645,False,4,4,0,192,1,2,0,0,0
-608430,Kilian Bevis,2023,SER1,4645,False,30,29,0,1924,6,7,50,16,4
-608430,Kilian Bevis,2023,MALC,6335,False,1,0,0,0,0,0,0,0,0
-608430,Kilian Bevis,2023,CNLB,19755,True,6,6,0,239,1,1,0,0,0
-608430,Kilian Bevis,2022,MALC,6335,False,2,2,0,155,1,2,0,0,0
-608430,Kilian Bevis,2022,MAL1,6335,False,26,22,0,1836,6,2,0,0,2
-608430,Kilian Bevis,2021,MALM,10262,False,5,5,0,367,2,0,0,0,0
-608430,Kilian Bevis,2021,MALC,10262,False,3,2,0,178,1,1,0,0,0
-608430,Kilian Bevis,2021,MAL1,10262,False,21,17,0,625,2,0,0,0,1
-608430,Kilian Bevis,2020,IT4I,38995,False,33,27,1,1663,3,3,0,0,6
-608430,Kilian Bevis,2019,ITC4,38995,False,4,4,0,275,1,0,0,0,0
-608430,Kilian Bevis,2019,IT4I,38995,False,26,25,0,1899,5,2,0,0,3
-271256,Jhonder Cádiz,2026,FS,3504,True,3,1,0,21,0,0,1,0,0
+271256,Jhonder Cádiz,2026,FS,3504,True,2,1,0,21,0,0,1,0,0
 271256,Jhonder Cádiz,2025,POMX,4035,False,2,2,0,124,1,0,0,0,0
 271256,Jhonder Cádiz,2025,MEXA,4035,False,17,14,0,610,2,2,32,8,3
 271256,Jhonder Cádiz,2025,MEX1,4035,False,6,4,0,125,0,1,4,0,0
@@ -12765,6 +12728,32 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 271256,Jhonder Cádiz,2012,FS,3504,True,1,0,0,0,0,0,0,0,0
 271256,Jhonder Cádiz,2011,WMQ4,3504,True,5,0,0,0,0,0,0,0,0
 271256,Jhonder Cádiz,2011,VZ1C,29750,False,1,1,0,17,0,1,0,0,0
+608430,Kilian Bevis,2025,SERP,4645,False,1,1,0,90,1,0,0,0,0
+608430,Kilian Bevis,2025,SER1,4645,False,21,19,1,1648,4,7,51,17,4
+608430,Kilian Bevis,2025,ECLQ,4645,False,2,2,0,85,0,0,0,0,0
+608430,Kilian Bevis,2025,CSL,70657,False,30,25,0,1980,7,6,49,19,3
+608430,Kilian Bevis,2025,CHFA,70657,False,2,1,0,49,0,0,0,0,0
+608430,Kilian Bevis,2024,SR1C,4645,False,7,7,0,381,1,1,12,4,0
+608430,Kilian Bevis,2024,SERP,4645,False,2,2,0,160,0,0,0,0,0
+608430,Kilian Bevis,2024,SER1,4645,False,30,29,1,2337,6,7,65,30,4
+608430,Kilian Bevis,2024,GOCU,19755,True,3,1,0,59,0,0,1,0,0
+608430,Kilian Bevis,2024,GCQU,19755,True,2,2,0,80,0,1,1,1,0
+608430,Kilian Bevis,2024,ECLQ,4645,False,2,2,0,157,0,1,0,0,1
+608430,Kilian Bevis,2024,CNNF,19755,True,2,0,0,0,0,0,0,0,0
+608430,Kilian Bevis,2024,CNLA,19755,True,4,3,0,145,0,0,0,0,0
+608430,Kilian Bevis,2023,SR1C,4645,False,7,7,0,428,0,3,7,1,0
+608430,Kilian Bevis,2023,SERP,4645,False,4,4,0,192,1,2,0,0,0
+608430,Kilian Bevis,2023,SER1,4645,False,30,29,0,1924,6,7,50,16,4
+608430,Kilian Bevis,2023,MALC,6335,False,1,0,0,0,0,0,0,0,0
+608430,Kilian Bevis,2023,CNLB,19755,True,6,6,0,239,1,1,0,0,0
+608430,Kilian Bevis,2022,MALC,6335,False,2,2,0,155,1,2,0,0,0
+608430,Kilian Bevis,2022,MAL1,6335,False,26,22,0,1836,6,2,0,0,2
+608430,Kilian Bevis,2021,MALM,10262,False,5,5,0,367,2,0,0,0,0
+608430,Kilian Bevis,2021,MALC,10262,False,3,2,0,178,1,1,0,0,0
+608430,Kilian Bevis,2021,MAL1,10262,False,21,17,0,625,2,0,0,0,1
+608430,Kilian Bevis,2020,IT4I,38995,False,33,27,1,1663,3,3,0,0,6
+608430,Kilian Bevis,2019,ITC4,38995,False,4,4,0,275,1,0,0,0,0
+608430,Kilian Bevis,2019,IT4I,38995,False,26,25,0,1899,5,2,0,0,3
 467486,Antoine Leautey,2025,FRC,1421,False,2,1,0,75,0,0,0,0,0
 467486,Antoine Leautey,2025,FRC,1416,False,3,3,0,220,0,2,0,0,0
 467486,Antoine Leautey,2025,FR2,1421,False,13,8,3,576,1,1,12,4,0
@@ -12795,6 +12784,19 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 467486,Antoine Leautey,2016,FR3,7042,False,34,28,0,2123,3,0,0,0,1
 467486,Antoine Leautey,2015,FR5H,12770,False,26,23,0,1845,6,0,0,0,0
 467486,Antoine Leautey,2014,FR5C,12770,False,26,10,0,827,4,0,0,0,0
+1281972,Zhengpeng Xu,2026,FS,26944,True,4,3,0,218,0,2,1,1,0
+1281972,Zhengpeng Xu,2025,FS,47233,True,3,3,0,225,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,FS,26944,True,5,2,0,115,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,CSL,70657,False,15,0,0,0,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,CL3S,125741,False,11,5,0,358,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,CHFA,70657,False,2,0,0,0,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,CH3R,125741,False,7,5,0,107,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,A169,26944,True,5,4,0,291,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,A168,26944,True,6,5,0,115,0,0,1,1,0
+1281972,Zhengpeng Xu,2025,17WC,26944,True,2,2,0,104,0,0,0,0,0
+1281972,Zhengpeng Xu,2025,17GC,26944,True,4,0,0,0,0,0,0,0,0
+1281972,Zhengpeng Xu,2024,FS,47233,True,7,6,0,391,0,0,1,1,1
+1281972,Zhengpeng Xu,2024,FS,39966,True,1,1,0,80,0,0,0,0,0
 336158,Gustavo Sauer,2025,CSL,70657,False,30,26,0,2249,8,6,57,27,4
 336158,Gustavo Sauer,2025,CHFA,70657,False,2,1,0,59,0,0,0,0,0
 336158,Gustavo Sauer,2024,SCBR,537,False,1,0,0,0,0,0,0,0,0
@@ -13585,6 +13587,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 525911,Weijun Xie,2017,CSL,3187,False,30,15,0,553,2,1,14,5,0
 525911,Weijun Xie,2017,CHFA,3187,False,2,0,0,0,0,0,0,0,0
 525911,Weijun Xie,2016,CL3P,61242,False,2,2,0,180,1,0,0,0,0
+589604,Junxian Liu,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 589604,Junxian Liu,2025,FS,28420,True,8,0,0,0,0,0,0,0,0
 589604,Junxian Liu,2025,CSL,3187,False,30,10,0,103,1,1,9,2,0
 589604,Junxian Liu,2025,CHFA,3187,False,1,1,0,90,0,0,0,0,0
@@ -14282,8 +14285,8 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1520767,Hanyang Chen,2025,CSL,9982,False,30,0,0,0,0,0,0,0,0
 1520767,Hanyang Chen,2025,CHFA,9982,False,2,0,0,0,0,0,0,0,0
 331498,Jordi Mboula,2026,GRP,30120,False,4,4,0,235,1,0,0,0,0
-331498,Jordi Mboula,2026,GR1,30120,False,10,6,0,149,1,1,4,1,0
-331498,Jordi Mboula,2026,AFCQ,3702,True,1,1,0,24,0,0,1,0,1
+331498,Jordi Mboula,2026,GR1,30120,False,11,7,0,179,1,1,4,1,0
+331498,Jordi Mboula,2026,AFCQ,3702,True,2,2,0,69,0,0,1,0,1
 331498,Jordi Mboula,2025,PO1,2424,False,4,0,0,0,0,0,0,0,0
 331498,Jordi Mboula,2025,ES2,4542,False,19,12,0,484,0,1,8,3,0
 331498,Jordi Mboula,2025,CSL,9982,False,17,11,0,709,1,0,22,8,1
@@ -14454,7 +14457,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 361752,Changjie Du,2016,CHFA,9982,False,2,1,0,80,0,0,0,0,0
 361752,Changjie Du,2014,CSL,9982,False,21,0,0,0,0,0,0,0,0
 361752,Changjie Du,2014,CHFA,9982,False,3,1,0,5,0,0,0,0,1
-1077608,Xulin Fan,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1077608,Xulin Fan,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1077608,Xulin Fan,2025,FS,28420,True,8,0,0,0,0,0,0,0,0
 1077608,Xulin Fan,2025,CSL,9982,False,30,3,0,58,0,0,1,0,0
 1077608,Xulin Fan,2025,CHFA,9982,False,2,1,0,62,0,0,0,0,0
@@ -14700,7 +14703,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 238595,Samir Memisevic,2012,SER2,4646,False,17,9,0,704,1,0,0,0,4
 238595,Samir Memisevic,2012,BOS2,5405,False,15,10,0,647,1,0,0,0,3
 1299727,Gengrui Wang,2026,FS,5598,True,4,2,0,68,0,1,0,0,0
-1299727,Gengrui Wang,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1299727,Gengrui Wang,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1299727,Gengrui Wang,2025,FS,39966,True,4,0,0,0,0,0,0,0,0
 1299727,Gengrui Wang,2025,FS,28420,True,8,1,0,45,0,0,0,0,0
 1299727,Gengrui Wang,2025,CSL,70662,False,30,25,0,2134,0,0,8,0,2
@@ -14726,7 +14729,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 812537,Haoyu Song,2021,CHFA,46487,False,1,1,0,14,0,0,0,0,1
 812537,Haoyu Song,2020,CLO,46487,False,34,30,0,2222,0,4,0,0,5
 812537,Haoyu Song,2020,CHFA,46487,False,2,2,0,119,0,0,0,0,0
-218239,Yu Dong,2025,CSL,70662,False,30,22,0,1776,0,2,5,1,6
+218239,Yu Dong,2025,CSL,70662,False,30,22,0,1775,0,2,5,1,6
 218239,Yu Dong,2025,CHFA,70662,False,2,2,0,115,0,0,0,0,0
 218239,Yu Dong,2024,CSL,17276,False,30,0,0,0,0,0,0,0,0
 218239,Yu Dong,2024,CHFA,17276,False,2,0,0,0,0,0,0,0,0
@@ -14760,7 +14763,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 218239,Yu Dong,2013,CHFA,17276,False,2,2,0,26,0,0,0,0,0
 587421,Longhai He,2026,FS,47233,True,3,0,0,0,0,0,0,0,0
 587421,Longhai He,2025,FS,47233,True,9,0,0,0,0,0,0,0,0
-587421,Longhai He,2025,CSL,70662,False,30,18,0,743,0,1,9,0,2
+587421,Longhai He,2025,CSL,70662,False,30,18,0,744,0,1,9,0,2
 587421,Longhai He,2025,CHFA,70662,False,2,1,0,45,0,0,0,0,0
 587421,Longhai He,2024,FS,47233,True,12,0,0,0,0,0,0,0,0
 587421,Longhai He,2024,CSL,70662,False,30,27,0,1560,0,3,11,2,4
@@ -14993,7 +14996,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 147813,Jie Sun,2010,CHFA,4768,False,2,0,0,0,0,0,0,0,0
 147813,Jie Sun,2009,CSL,4768,False,30,7,0,493,0,0,0,0,1
 147813,Jie Sun,2009,AFCL,4768,False,6,0,0,0,0,0,0,0,0
-1299723,Elnizar Lohman,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1299723,Elnizar Lohman,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1299723,Elnizar Lohman,2025,FS,28420,True,8,1,0,79,0,0,0,0,0
 1299723,Elnizar Lohman,2025,CSL,70662,False,12,8,0,207,0,0,3,0,2
 1299723,Elnizar Lohman,2025,CN41,78529,False,4,0,0,0,0,0,0,0,0
@@ -15005,8 +15008,9 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1515779,Zhicheng Liu,2025,CSL,70662,False,30,1,0,8,0,0,0,0,0
 1515779,Zhicheng Liu,2025,CHFA,70662,False,2,0,0,0,0,0,0,0,0
 1515779,Zhicheng Liu,2025,A168,26944,True,6,3,0,68,0,0,0,0,0
+1515779,Zhicheng Liu,2025,17WC,26944,True,2,2,0,15,0,0,0,0,0
 1515779,Zhicheng Liu,2025,17GC,26944,True,4,0,0,0,0,0,0,0,0
-1478504,Zhanpeng Yang,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1478504,Zhanpeng Yang,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1478504,Zhanpeng Yang,2025,FS,28420,True,8,5,0,314,0,0,0,0,2
 1478504,Zhanpeng Yang,2025,CSL,70662,False,30,22,1,835,2,0,22,6,6
 1478504,Zhanpeng Yang,2025,CHFA,70662,False,2,2,0,76,0,0,0,0,0
@@ -15184,7 +15188,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1372279,Shiming Jin,2024,JAPC,20805,False,1,0,0,0,0,0,0,0,0
 1372279,Shiming Jin,2024,JAP3,20805,False,38,0,0,0,0,0,0,0,0
 1372279,Shiming Jin,2023,RKPO,82867,False,1,0,0,0,0,0,0,0,0
-1302329,Alexander Xie,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1302329,Alexander Xie,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1302329,Alexander Xie,2025,FS,28420,True,6,2,0,151,0,0,0,0,0
 1302329,Alexander Xie,2025,DFBJ,2517,False,6,4,0,233,0,0,0,0,0
 1302329,Alexander Xie,2025,CSL,70662,False,13,4,0,44,0,0,2,0,1
@@ -15360,7 +15364,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 996883,Xiaolong Liu,2022,CHFA,27190,False,2,1,0,76,0,0,0,0,0
 996883,Xiaolong Liu,2021,CHL3,73392,False,10,9,0,588,1,0,0,0,0
 996883,Xiaolong Liu,2021,CH3R,73392,False,5,5,0,372,2,0,0,0,0
-1478509,Weiwei Jia,2026,FS,28420,True,1,0,0,0,0,0,0,0,0
+1478509,Weiwei Jia,2026,FS,28420,True,2,0,0,0,0,0,0,0,0
 1478509,Weiwei Jia,2025,FS,28420,True,8,5,0,344,0,0,0,0,0
 1478509,Weiwei Jia,2025,CSL,70662,False,30,11,0,60,0,0,1,0,0
 1478509,Weiwei Jia,2025,CHFA,70662,False,2,2,0,155,0,0,0,0,0
@@ -15450,6 +15454,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 211161,Pengfei Mu,2010,CHFA,8536,False,1,1,0,120,0,0,0,0,0
 1517130,Yuhan Jiang,2025,CSL,8536,False,30,0,0,0,0,0,0,0,0
 1517130,Yuhan Jiang,2025,CHFA,8536,False,2,0,0,0,0,0,0,0,0
+1517130,Yuhan Jiang,2025,17WC,26944,True,2,2,0,180,0,0,0,0,0
 509970,Nemanja Andjelkovic,2025,ELQ,10157,False,2,2,0,180,0,0,0,0,0
 509970,Nemanja Andjelkovic,2025,ECLQ,10157,False,2,2,0,180,0,0,0,0,1
 509970,Nemanja Andjelkovic,2025,CSL,8536,False,30,21,0,1693,1,0,6,1,4
@@ -15593,7 +15598,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 337524,Hailong Li,2015,CSL,3182,False,13,1,0,27,0,0,0,0,0
 337524,Hailong Li,2015,AFCL,3182,False,2,0,0,0,0,0,0,0,0
 337524,Hailong Li,2011,FS,47233,True,1,1,0,80,0,0,0,0,0
-281516,Qiao Wang,2025,CSL,8536,False,30,11,0,442,0,0,0,0,1
+281516,Qiao Wang,2025,CSL,8536,False,30,11,0,441,0,0,0,0,1
 281516,Qiao Wang,2025,CHFA,8536,False,2,2,0,91,0,0,0,0,0
 281516,Qiao Wang,2024,CSL,51120,False,30,15,1,1227,0,0,3,0,4
 281516,Qiao Wang,2024,CHFA,51120,False,1,1,0,90,0,0,0,0,0
@@ -15971,7 +15976,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 832658,Cheuk-Pan Ngan,2014,AFCC,15979,False,2,0,0,0,0,0,0,0,0
 832658,Cheuk-Pan Ngan,2013,A168,87611,True,3,3,0,270,0,0,0,0,1
 1043429,Zixian Wei,2025,FS,35185,True,3,2,0,57,0,0,0,0,0
-1043429,Zixian Wei,2025,CSL,8536,False,30,19,0,1404,0,0,4,0,1
+1043429,Zixian Wei,2025,CSL,8536,False,30,19,0,1405,0,0,4,0,1
 1043429,Zixian Wei,2025,CHFA,8536,False,2,1,0,45,0,0,0,0,0
 1043429,Zixian Wei,2024,CLO,45500,False,30,20,0,913,0,2,2,1,0
 1043429,Zixian Wei,2024,CHFA,45500,False,2,1,0,90,0,0,0,0,0
@@ -15984,7 +15989,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1043429,Zixian Wei,2022,CH3P,56198,False,8,3,0,270,0,0,0,0,0
 1043429,Zixian Wei,2021,CL3C,56198,False,1,0,0,0,0,0,0,0,0
 1043429,Zixian Wei,2021,CH3R,56198,False,5,1,0,24,0,0,0,0,0
-236647,Chuangyi Lin,2025,CSL,8536,False,30,26,0,1720,2,4,22,9,3
+236647,Chuangyi Lin,2025,CSL,8536,False,30,26,0,1719,2,4,22,9,3
 236647,Chuangyi Lin,2025,CHFA,8536,False,2,0,0,0,0,0,0,0,0
 236647,Chuangyi Lin,2024,CSL,8536,False,30,25,1,1294,2,1,25,8,1
 236647,Chuangyi Lin,2024,CHFA,8536,False,3,2,0,135,0,0,0,0,0
@@ -16023,7 +16028,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 236647,Chuangyi Lin,2013,CHFA,27190,False,1,1,0,90,0,0,0,0,0
 236647,Chuangyi Lin,2012,CSL,27190,False,30,17,0,401,0,0,0,0,0
 236647,Chuangyi Lin,2012,CHFA,27190,False,2,2,0,240,1,1,0,0,0
-316122,Shiwei Che,2025,CSL,8536,False,30,6,0,162,0,0,2,1,0
+316122,Shiwei Che,2025,CSL,8536,False,30,6,0,163,0,0,2,1,0
 316122,Shiwei Che,2025,CHFA,8536,False,2,1,0,86,0,0,0,0,1
 316122,Shiwei Che,2024,CSL,8536,False,30,19,0,728,1,0,15,3,3
 316122,Shiwei Che,2024,CHFA,8536,False,3,3,0,170,0,0,0,0,0
@@ -16264,6 +16269,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1281957,Zhaolei Kuang,2025,CDR,92869,False,1,0,0,0,0,0,0,0,0
 1281957,Zhaolei Kuang,2025,A169,26944,True,5,4,0,266,2,1,0,0,0
 1281957,Zhaolei Kuang,2025,A168,26944,True,6,3,0,161,0,1,1,0,1
+1281957,Zhaolei Kuang,2025,17WC,26944,True,2,2,0,110,0,0,4,2,0
 1281957,Zhaolei Kuang,2025,17GC,26944,True,4,0,0,0,0,0,0,0,0
 1281957,Zhaolei Kuang,2024,FS,47233,True,7,5,0,375,0,1,1,0,1
 1281957,Zhaolei Kuang,2024,FS,39966,True,1,1,0,79,1,1,0,0,0
@@ -16284,7 +16290,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 1254614,Cong Yang,2024,CN43,93895,False,21,1,0,68,0,0,0,0,0
 1254614,Cong Yang,2024,CHFA,8536,False,3,0,0,0,0,0,0,0,0
 1254614,Cong Yang,2023,CN43,93895,False,5,1,0,54,0,0,0,0,0
-251188,Xinyu Liu,2025,CSL,8536,False,30,15,0,548,0,0,11,2,0
+251188,Xinyu Liu,2025,CSL,8536,False,30,15,0,549,0,0,11,2,0
 251188,Xinyu Liu,2025,CHFA,8536,False,2,2,0,154,0,0,0,0,0
 251188,Xinyu Liu,2024,CSL,9982,False,30,18,0,543,2,0,6,3,1
 251188,Xinyu Liu,2024,CHFA,9982,False,5,2,0,65,0,0,0,0,0
@@ -16315,7 +16321,7 @@ player_id,player_name,season,competition_id,club_id,is_national_team,matches_tot
 251188,Xinyu Liu,2012,CHFA,28377,False,2,2,0,157,2,0,0,0,0
 251188,Xinyu Liu,2011,CLO,28377,False,8,0,0,0,0,0,0,0,0
 251188,Xinyu Liu,2011,CHFA,28377,False,1,1,0,57,0,0,0,0,0
-211354,Wenjie Song,2025,CSL,8536,False,29,21,0,869,3,4,17,7,1
+211354,Wenjie Song,2025,CSL,8536,False,29,21,0,868,3,4,17,7,1
 211354,Wenjie Song,2025,CHFA,8536,False,2,0,0,0,0,0,0,0,0
 211354,Wenjie Song,2024,CSL,8536,False,30,14,1,759,1,1,11,3,0
 211354,Wenjie Song,2024,CHFA,8536,False,3,1,0,29,0,0,0,0,0
